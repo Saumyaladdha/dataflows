@@ -1,0 +1,120 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "Table 5.2  Typical kinetic energies (K)"
+    },
+    {
+      "n": 2,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [430, 255, 1300, 550],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "object can do by the virtue of its motion. This notion has been intuitively known for a long time. The kinetic energy of a fast flowing stream has been used to grind corn. Sailing ships employ the kinetic energy of the wind. Table 5.2 lists the kinetic energies for various objects.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 5.4  In a ballistics demonstration a police officer fires a bullet of mass 50.0 g with speed 200 m s-1 (see Table 5.2) on soft plywood of thickness 2.00 cm.  The bullet emerges with only 10% of its initial kinetic energy.  What is the emergent speed of the bullet ?"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Answer  The initial kinetic energy of the bullet is mv2/2 = 1000 J.  It has a final kinetic energy of 0.1×1000 = 100 J.  If vf  is the emergent speed of the bullet,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [250, 1260, 560, 1520],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The speed is reduced by approximately 68% (not 90%)."
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "5.5  WORK DONE BY A VARIABLE FORCE"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "A constant force is rare.  It is the variable force, which is more commonly encountered.  Fig. 5.3 is a plot of a varying force in one dimension."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "If the displacement ∆x is small, we can take the force F (x)  as approximately constant and the work done is then"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [350, 1890, 560, 1945],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "This is illustrated in Fig. 5.3(a).  Adding successive rectangular areas in Fig. 5.3(a) we get the total work done as"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [950, 710, 1540, 825],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "where the summation is from the initial position xi  to the final position xf."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "If the displacements are allowed to approach zero, then the number of terms in the sum increases without limit, but the sum approaches a definite value equal to the area under the curve in Fig. 5.3(b). Then the work done is"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1000, 1100, 1540, 1320],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "where ‘lim’ stands for the limit of the sum when ∆x  tends to zero.  Thus, for a varying force the work done can be expressed as a definite integral of force over displacement (see also Appendix 3.1)."
+    },
+    {
+      "n": 18,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [910, 1550, 1530, 1860],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "Fig. 5.3(a)"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "WORK, ENERGY AND POWER",
+    "75",
+    "2024-25"
+  ],
+  "note": "Reading order: the Table 5.2 caption and table span the full page width at the top, so they precede both columns; then the left column, then the right column. The first block in reading order is the table caption, which does not continue from the previous page, so first_block_continues_from_previous is false; however the first body-prose block (n=3, 'object can do by the virtue of its motion...') does start mid-sentence and is marked continues_from_previous: true. previous_page_last_block was null in the input, so that judgement is from the page image alone. Displayed equations (the Example 5.4 working, ∆W = F(x)∆x, and equations 5.6 and 5.7) and the Fig. 5.3(a) graph are marked needs_special with bounding boxes in pixels of the supplied 1825x2176 page image; the in-figure label 'Area = ∆A = F(x)∆ x' lies inside the figure bbox. Table and figure caption lines are emitted as their own blocks because needs_special blocks must carry empty text. Prose characters are copied from the text_layer (so inline maths appears as the layer holds it, e.g. 'mv2/2', 'vf', 'xi', 'xf', '200 m s-1'); the image was used only to fix structure and reading order."
+}

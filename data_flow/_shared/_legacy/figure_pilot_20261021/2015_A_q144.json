@@ -1,0 +1,134 @@
+{
+ "title": "A source moving at Vs, 60 degrees to the line joining it to the observer at rest",
+ "width": 250,
+ "height": 170,
+ "pad": 18,
+ "draw": [
+  {
+   "kind": "line",
+   "from": [
+    10,
+    20
+   ],
+   "to": [
+    240,
+    20
+   ],
+   "colour": "ink"
+  },
+  {
+   "kind": "dot",
+   "centre": [
+    10,
+    20
+   ]
+  },
+  {
+   "kind": "dot",
+   "centre": [
+    240,
+    20
+   ]
+  },
+  {
+   "kind": "line",
+   "from": [
+    10,
+    20
+   ],
+   "to": [
+    85,
+    150
+   ],
+   "colour": "accent",
+   "arrow": "end",
+   "width": 2.1
+  },
+  {
+   "kind": "angle",
+   "vertex": [
+    10,
+    20
+   ],
+   "r": 42,
+   "from_deg": 0,
+   "to_deg": 60,
+   "colour": "muted"
+  },
+  {
+   "kind": "label",
+   "text": "60°",
+   "at": [
+    62,
+    40
+   ],
+   "size": 13,
+   "colour": "muted"
+  },
+  {
+   "kind": "label",
+   "text": "V",
+   "at": [
+    95,
+    152
+   ],
+   "size": 17,
+   "italic": true,
+   "colour": "accent",
+   "anchor": "start"
+  },
+  {
+   "kind": "label",
+   "text": "S",
+   "at": [
+    108,
+    146
+   ],
+   "size": 11,
+   "italic": true,
+   "colour": "accent",
+   "anchor": "start"
+  },
+  {
+   "kind": "label",
+   "text": "source",
+   "at": [
+    10,
+    6
+   ],
+   "size": 11,
+   "colour": "muted",
+   "style": "sans"
+  },
+  {
+   "kind": "label",
+   "text": "observer (at rest)",
+   "at": [
+    240,
+    6
+   ],
+   "size": 11,
+   "colour": "muted",
+   "style": "sans",
+   "anchor": "end"
+  }
+ ],
+ "angles_claimed": [
+  {
+   "degrees": 60,
+   "vertex": [
+    10,
+    20
+   ],
+   "ray_to": [
+    85,
+    150
+   ],
+   "measured_from": [
+    240,
+    20
+   ]
+  }
+ ],
+ "figure_id": "2015_A_q144"
+}

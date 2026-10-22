@@ -1,0 +1,46 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [164, 294, 1493, 861],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "4.2.11.5\nClass – Reptilia"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The class name refers to their creeping or crawling mode of locomotion\n(Latin, repere or reptum, to creep or crawl). They are mostly terrestrial\nanimals and their body is covered by dry and cornified skin, epidermal\nscales or scutes (Fig. 4.22). They do not have external ear openings.\nTympanum represents ear.  Limbs, when present, are two pairs. Heart is\nusually three-chambered, but four-chambered in crocodiles. Reptiles are\npoikilotherms. Snakes and lizards shed their scales as skin cast.  Sexes\nare separate. Fertilisation is internal. They are oviparous and development\nis direct.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Examples: Chelone (Turtle), Testudo (Tortoise), Chameleon (Tree lizard),\nCalotes (Garden lizard), Crocodilus (Crocodile), Alligator (Alligator).\nHemidactylus (Wall lizard), Poisonous snakes – Naja (Cobra), Bangarus\n(Krait), Vipera (Viper)."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "4.2.11.6\nClass – Aves"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The characteristic features of Aves (birds) are the presence of feathers\nand most of them can fly except flightless birds (e.g., Ostrich). They possess\nbeak (Figure 4.23). The forelimbs are modified into wings. The hind limbs\ngenerally have scales and are modified for walking, swimming or clasping\nthe tree branches. Skin is dry without glands except the oil gland at the\nbase of the tail. Endoskeleton is fully ossified (bony) and the long bones\nare hollow with air cavities (pneumatic). The digestive tract of birds has\nadditional chambers, the crop and gizzard. Heart is completely four-\nchambered. They are warm-blooded (homoiothermous) animals, i.e.,\nthey are able to maintain a constant body temperature. Respiration is by"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "ANIMAL KINGDOM",
+    "49",
+    "49",
+    "2024-25"
+  ],
+  "note": "Read from text_layer, cross-checked against the page image for layout and the figure bbox. Single-column page: figure 4.22 across the top, then the prose. The figure's part-labels and caption (\"(a)\", \"(b)\", \"(c)\", \"(d)\", \"Figure 4.22  Reptiles: (a) Chameleon (b) Crocodilus (c) Chelone (d) Naja\") lie inside the needs_special figure bbox and are left untranscribed. The text layer repeats each of the two headings five times, an extraction artifact of the printed bold/shadow overprint; each is printed once and transcribed once. The page number 49 appears twice and both occurrences are listed as removed. previous_page_last_block was null, but I read page 12 myself: it ended on a complete Examples paragraph and this page opens with figure 4.22 and a new section heading, so first_block_continues_from_previous is false. The last block breaks mid-sentence after \"Respiration is by\", so last_block_continues_on_next is true."
+}

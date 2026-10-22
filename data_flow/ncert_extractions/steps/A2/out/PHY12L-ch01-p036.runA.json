@@ -1,0 +1,109 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The flux through the Gaussian surface, calculated as before, is E × 4 p r2. However, in this case, the Gaussian surface encloses no charge. Gauss’s law then gives",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        567,
+        387,
+        1544,
+        456
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "that is, the field due to a uniformly charged thin shell is zero at all points inside the shell*. This important result is a direct consequence of Gauss’s law which follows from Coulomb’s law. The experimental verification of this result confirms the 1/r2 dependence in Coulomb’s law."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 1.12 An early model for an atom considered it to have a positively charged point nucleus of charge Ze, surrounded by a uniform density of negative charge up to a radius R. The atom as a whole is neutral. For this model, what is the electric field at a distance r from the nucleus?"
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        875,
+        826,
+        1204,
+        1199
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Solution  The charge distribution for this model of the atom is as shown in Fig. 1.29. The total negative charge in the uniform spherical charge distribution of radius R must be –Z e, since the atom (nucleus of charge Z e + negative charge) is neutral. This immediately gives us the negative charge density r, since we must have"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        567,
+        1404,
+        772,
+        1458
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        567,
+        1480,
+        799,
+        1544
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "To find the electric field E(r) at a point P which is a distance r away from the nucleus, we use Gauss’s law. Because of the spherical symmetry of the charge distribution, the magnitude of the electric field E(r) depends only on the radial distance, no matter what the direction of r. Its direction is along (or opposite to) the radius vector r from the origin to the point P. The obvious Gaussian surface is a spherical surface centred at the nucleus. We consider two situations, namely, r < R and r > R."
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "(i) r < R : The electric flux f enclosed by the spherical surface is"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        594,
+        1831,
+        837,
+        1868
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "* Compare this with a uniform mass shell discussed in Section 7.5 of Class XI Textbook of Physics."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "36",
+    "Physics",
+    "Reprint 2026-27",
+    "EXAMPLE 1.12"
+  ],
+  "note": "previous_page_last_block was null for this page (page 36), so continuation could only be judged from the page itself; block 1 opens with a complete sentence, so first_block_continues_from_previous is set false, though it may continue a paragraph begun on page 35. last_block_continues_on_next is true because the Example 1.12 box ends mid-worked-solution (case (i) r < R is unfinished and case (ii) r > R has not started). The Example 1.12 box was split into its constituent blocks (4-11) instead of one box block so that the figure and the displayed equations inside it could carry their own needs_special bounding boxes; block 4 carries the example statement and blocks 5-11 are the box's interior in reading order. 'EXAMPLE 1.12' is the vertical side tab printed in the box's left margin and was removed as a running label. Per the inline-mathematics rule, prose text is copied from the text_layer characters, which render pi as 'p', rho as 'r', phi as 'f' and superscripts inline (e.g. 'E × 4 p r2', '1/r2', 'the negative charge density r'); the page image shows these as the proper Greek letters and superscripts. A diagonal '© NCERT not to be republished' watermark crosses the page and was not transcribed. Bounding boxes are in pixels of the 1700x2160 page image."
+}

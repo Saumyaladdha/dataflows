@@ -1,0 +1,190 @@
+{
+  "question_id": "Q-000555",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "merged_into": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E2:57"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E2/neet_2023_code-E2.pdf",
+  "trust": "unsure",
+  "stem_en": "In Lassaigne's extract of an organic compound, both nitrogen and sulphur are present, which gives blood red colour with $\\mathrm{Fe^{3+}}$ due to the formation of -",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$\\mathrm{Fe_4[Fe(CN)_6]_3 \\cdot xH_2O}$",
+    "2": "$\\mathrm{NaSCN}$",
+    "3": "$[\\mathrm{Fe(CN)_5NOS}]^{4-}$",
+    "4": "$[\\mathrm{Fe(SCN)}]^{2+}$"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "57\nIn Lassaigne’s extract of an organic compound, both nitrogen and sulphur are present, which gives\nblood red colour with Fe³⁺ due to the formation of -\n(1)\nFe₄[Fe(CN)₆]₃ · xH₂O\n(2)\nNaSCN\n(3)\n[Fe(CN)₅NOS]⁴⁻\n(4)\n[Fe(SCN)]²⁺\nOrganic Chemistry – Some Basic Principles and Techniques\n",
+  "b4_script_options": {
+    "1": "Fe₄[Fe(CN)₆]₃ · xH₂O",
+    "2": "NaSCN",
+    "3": "[Fe(CN)₅NOS]⁴⁻",
+    "4": "[Fe(SCN)]²⁺\nOrganic Chemistry – Some Basic Principles and Techniques"
+  },
+  "official_answer": "4",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "merged_into": "Q-000082",
+  "subject": "Chemistry",
+  "branch": "organic",
+  "b6_answer": "4",
+  "b6_reason": "With both N and S present the extract contains thiocyanate, and Fe3+ + SCN- gives the blood red [Fe(SCN)]2+ complex.",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

@@ -1,0 +1,119 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        200,
+        200,
+        860,
+        685
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        710,
+        860,
+        980
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "From the principle of superposition and the law of vector addition, the resultant gravitational force FR on (2m) is",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        1080,
+        860,
+        1235
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Alternatively, one expects on the basis of symmetry that the resultant force ought to be zero.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "(b) Now if the mass at vertex A is doubled then",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        1375,
+        860,
+        1640
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "For the gravitational force between an extended object (like the earth) and a point mass, Eq. (7.5) is not directly applicable. Each point mass in the extended object will exert a force on the given point mass and these force will not all be in the same direction. We have to add up these forces vectorially  for all the point masses in the extended object to get the total force. This is easily done using calculus. For two special cases, a  simple law results when you do that :",
+      "continues_from_previous": false
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "(1)\tThe force of attraction between a hollow spherical shell of uniform density and a point mass situated outside is just as if the entire mass of the shell is concentrated at the centre of the shell. Qualitatively this can be understood as follows: Gravitational forces caused by the various regions of the shell have components along the line joining the point mass to the centre as well as along a direction prependicular to this line. The components prependicular to this line cancel out when summing over all regions of the shell leaving only a resultant force along the line joining the point to the centre. The magnitude of this force works out to be as stated above.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "(2)\tThe force of attraction due to a hollow spherical shell of uniform density, on a point mass situated inside it is zero. Qualitatively, we can again understand this result. Various regions of the spherical shell attract the point mass inside it in various directions. These forces cancel each other completely.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 11,
+      "kind": "heading",
+      "text": "7.4  THE GRAVITATIONAL CONSTANT"
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "The value of the gravitational constant G entering the Universal law of gravitation  can be determined experimentally and this was first done by English scientist Henry Cavendish in 1798. The apparatus used by him is schematically shown in Fig.7.6",
+      "continues_from_previous": false
+    },
+    {
+      "n": 13,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        885,
+        1340,
+        1625,
+        1905
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "GRAVITATION",
+    "131",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column first, then right. previous_page_last_block was null, but I read page 4 of this chapter directly before: it ended mid-sentence with the Example 7.2 Answer at '...The individual forces in vector notation are', and this page opens inside that same worked example - so first_block_continues_from_previous is true on that direct evidence. Strictly the first block in reading order is Fig. 7.5 (a figure, which cannot itself be mid-sentence); the text that actually completes page 4's dangling sentence is the display-equation group n=2 (F_GA, F_GB, F_GC), immediately after it. I set the page flag true to match the real continuation rather than the figure's position. Block n=8 is one continuous smaller-type aside that runs from the bottom of the left column ('For the gravitational force between an extended object...') into the top of the right column ('cases, a  simple law results when you do that :'); I kept it as a single block across the column break, then the two bold numbered consequences (1) and (2) follow it. Marked needs_special with pixel bboxes (original 1826x2167): Fig. 7.5 with caption (n=1), the three-line F_GA/F_GB/F_GC group (n=2), the F_R resultant group including the '= 0' line (n=4), the primed F'_GA...F'_R = 2Gm^2 j-hat group for part (b) (n=7), and Fig. 7.6 with its long caption (n=13). Notation discrepancies: the text layer destroys all of these equations (fraction structure lost, tokens reordered, e.g. 'Gm m 2 1 ˆ = F j'), flattens subscripts and superscripts (image prints F_GA, F_GB, F_GC, F_R, S_1, S_2, Gm^2, 2m), writes the unit-vector hats on i and j as stray 'ˆ' glyphs separated from their letters, renders the degree sign of 30 degrees as the Greek omicron-like 'ο' token, and gives the Greek capital delta of 'the Δ ABC' in the Fig. 7.5 caption as '∆'; all equation notation was left to the special transcriber from the image. The small triangular end-of-example marker in the left column is box decoration, not text."
+}

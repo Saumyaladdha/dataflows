@@ -1,0 +1,153 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [211, 205, 853, 745],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 6.7  Show that moment of a couple does not depend on the point about which you take the moments."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "Answer"
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [205, 961, 853, 1237],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Consider a couple as shown in Fig. 6.22 acting on a rigid body. The forces F and -F act respectively at points B and A. These points have position vectors r1 and r2 with respect to origin O. Let us take the moments of the forces about the origin."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The moment of the couple = sum of the moments of the two forces making the couple"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [238, 1504, 626, 1615],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "But r1 + AB = r2, and hence AB = r2 – r1."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The moment of the couple, therefore, is AB × F."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Clearly this is independent of the origin, the point about which we took the moments of the forces."
+    },
+    {
+      "n": 11,
+      "kind": "heading",
+      "text": "6.8.1 Principle of moments"
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "An ideal lever is essentially a light (i.e. of negligible mass) rod pivoted at a point along its length. This point is called the fulcrum. A see-saw on the children’s playground is a typical example of a lever. Two forces F1 and F2, parallel to each other and usually perpendicular to the lever, as shown here, act on the lever at distances d1 and d2 respectively from the fulcrum as shown in Fig. 6.23."
+    },
+    {
+      "n": 13,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [929, 464, 1523, 702],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The lever is a system in mechanical equilibrium. Let R be the reaction of the support at the fulcrum; R is directed opposite to the forces  F1 and F2. For translational equilibrium,"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [934, 905, 1528, 931],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "For considering rotational equilibrium we take the moments about the fulcrum; the sum of moments must be zero,"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [934, 1115, 1528, 1140],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "Normally the anticlockwise (clockwise) moments are taken to be positive (negative). Note R acts at the fulcrum itself and has zero moment about the fulcrum."
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "In the case of the lever force F1 is usually some weight to be lifted. It is called the load and its distance from the fulcrum d1 is called the load arm. Force F2 is the effort applied to lift the load; distance d2 of the effort from the fulcrum is the effort arm."
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "Eq. (ii) can be written as"
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [934, 1456, 1528, 1482],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "or load arm × load = effort arm × effort"
+    },
+    {
+      "n": 23,
+      "kind": "paragraph",
+      "text": "The above equation expresses the principle of moments for a lever. Incidentally the ratio F1/F2 is called the Mechanical Advantage (M.A.);"
+    },
+    {
+      "n": 24,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [934, 1642, 1528, 1712],
+      "text": ""
+    },
+    {
+      "n": 25,
+      "kind": "paragraph",
+      "text": "If the effort arm d2 is larger than the load arm, the mechanical advantage is greater than one. Mechanical advantage greater than one means that a small effort can be used to lift a large load. There are several examples of a lever around you besides the see-saw. The beam of a balance is a lever. Try to find more such"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "111",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null although page is 20; judged first_block_continues_from_previous from the image, where the page opens with a complete figure (Fig. 6.21(b)) and its caption, not mid-sentence. Figure bboxes include each figure's caption, so caption text is left to the special transcriber. The decorative end-of-example marker (shown as a solid triangle on the page, '⊳' in the text layer) after block 10 is omitted as non-content. Block 12 is one paragraph that starts at the foot of the left column and finishes at the top of the right column; it is emitted as a single block. The layered-outline heading repetition artifact does not occur on this page: '6.8.1 Principle of moments' appears once in the text layer."
+}

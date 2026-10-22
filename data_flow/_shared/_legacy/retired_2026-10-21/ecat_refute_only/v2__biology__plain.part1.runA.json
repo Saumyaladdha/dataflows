@@ -1,0 +1,184 @@
+{
+  "group": "v2__biology__plain.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q046",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "process",
+      "concept": "Root pressure: ions actively pumped into the xylem, $\\mathrm{H^+}$ going with them, so the sap is acidic",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "neighbouring_fact",
+          "option": "1",
+          "route": "Reaches for transpiration pull, the other way water rises. It is passive and moves no ions into the xylem, and root pressure shows up at night when transpiration is least."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "Soil osmotic potential sets how fast water enters the root. It puts no $\\mathrm{H^+}$ into the sap, so it cannot make the sap acidic."
+        },
+        {
+          "label": "look_alike_term",
+          "option": "4",
+          "route": "Reads \"passive\" for \"active\". Passive absorption needs no ATP, so it pumps no protons."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which mechanism accounts for a granted fact, demonstrated by the stem's trailing \"Root pressure is usually acidic because\", which grants the acidity and asks only what produces it.",
+      "note": "One doubt for a reviewer, recorded rather than acted on: the keyed option explains how root pressure DEVELOPS, and the link to acidity runs through the protons that accompany active ion uptake. If the booklet's printed solution speaks only of pressure and not of acidity, this becomes a stem-or-key repair under rulebook section 7. I hold only the stem and the options, so the question is tagged as printed. E1 is plain_mcq, not statement_options: the options are short noun phrases, not full statements, even though the stem ends in \"because\"."
+    },
+    {
+      "question_id": "2015_A#q047",
+      "question_type": "statement_options",
+      "format": "pick_correct_statement",
+      "content_shape": "organism_characteristic",
+      "concept": "Zygomycetes: Mucor makes non-motile aplanospores, not flagellated zoospores",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Reads past the word \"wrong\". Brown algae do carry chlorophyll $a$ and $c$ with fucoxanthin."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "Reads past the word \"wrong\". Archegonia do occur in bryophytes, pteridophytes and gymnosperms."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Reads past the word \"wrong\". A gymnosperm's endosperm is haploid and is laid down before fertilisation."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four stored facts adjudicated one at a time, demonstrated by \"Which one is a wrong statement?\" standing over brown-algal pigments, archegonia, Mucor spores and gymnosperm endosperm, no two of which share a fact.",
+      "note": "No statement block is printed above the options and each option is itself a full statement, which is the statement_options reading under rulebook section 1."
+    },
+    {
+      "question_id": "2015_A#q048",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "organism_characteristic",
+      "concept": "Prokaryotic cell: no nuclear envelope, but a plasma membrane, 70S ribosomes and mesosomes",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "A mesosome is a fold of the prokaryotic plasma membrane and exists in no eukaryote, so that one fact clears option 4; the plasma membrane and the ribosome are present too, leaving option 2 alone.",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Reads past the \"not\". Every prokaryote is bounded by a plasma membrane."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "Reads \"ribosome\" as the eukaryotic 80S one. Prokaryotes have ribosomes too, of the 70S kind."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Picks the unfamiliar word. A mesosome is found only in prokaryotes."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored fact about prokaryotic organisation, demonstrated by \"Nuclear envelope\" standing alone among four cell structures as the one a prokaryote lacks.",
+      "note": "Kept single_step against q047's several_independent_checks: one remembered rule - no membrane-bound nucleus - settles all four options at once, whereas q047's four claims share no fact."
+    },
+    {
+      "question_id": "2015_A#q049",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "organism_characteristic",
+      "concept": "Double circulation: fully separate pulmonary and systemic circuits need a four-chambered heart",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Full separation needs a four-chambered heart and the whale is the only mammal in the set, so that one class-level fact strikes out options 1, 2 and 3 together.",
+      "traps": [
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "A shark's two-chambered heart drives one circuit, through the gills and back. There is no second pathway to find."
+        },
+        {
+          "label": "condition_ignored",
+          "option": "2",
+          "route": "Drops the word \"separate\". A frog does have two pathways, but they mix in its single undivided ventricle."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "Borrows the crocodile's four-chambered heart for all reptiles. A lizard's ventricle is only partly divided."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a known criterion applied to four named animals, demonstrated by the stem's \"two separate circulatory pathways\", which holds only where the ventricle is fully divided.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q050",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "classification_hierarchy",
+      "concept": "Trophic position in the deep sea: nothing photosynthesises below the photic zone, so the food chain runs on material sinking from above",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Files the animals one level too low. Primary consumers eat producers, and no producers grow below the photic zone."
+        }
+      ],
+      "verdicts": [
+        "arguable_key"
+      ],
+      "reason": "This question requires the trophic-level scheme applied to a named habitat, demonstrated by the stem's \"deep oceanic waters\", which places the fauna away from the producers.",
+      "note": "Option 1 is defensible on a reasonable reading - the deep-sea floor fauna live on the detritus raining down, and \"detritivore\" is the standard description of them - so the verdict is `arguable_key` and no trap is written against option 1. The key, option 3, is followed as printed under rulebook section 7. Option 4 is left untagged as well: of the mis-steps I tried, counting one level up from the detritus and reading \"deep\" as \"top predator\", neither is a route I can point to in the stem."
+    },
+    {
+      "question_id": "2015_A#q051",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Biotic community: the interacting populations of different species sharing one habitat",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "condition_ignored",
+          "option": "1",
+          "route": "Drops \"of different species\". What is left, individuals in one habitat, is a population."
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "2",
+          "route": "Keys on the word \"functional\" and answers with the role of one species. The stem asks what the assembly of species is called."
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "4",
+          "route": "Goes one level up. An ecosystem is the community plus its non-living surroundings, which the stem never mentions."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires two neighbouring definitions held apart, demonstrated by the stem's \"individuals of different species\", the one phrase that separates a biotic community from a population.",
+      "note": ""
+    }
+  ],
+  "group_note": "All six were grouped on `structure: plain` and all are single-question four-option items, but they are not one E1 shape: q047 prints no statement block and each of its options is a full claim, so it alone is `statement_options`; the other five are `plain_mcq`. On E4 the group is split and the split is stated: q047 is the only member whose four options share no fact, so it alone takes `several_independent_checks`, while q048 - the same negated-set look - takes `single_step`, because one remembered rule about prokaryotic organisation settles all four options at once. Demands follow the same discipline: q047 and q048 are `recall`; q049 and q050 apply a known criterion (four-chambered heart, trophic level) to a named case and are `application`; q051 turns on holding two definitions apart and is `concept_discrimination`; q046 alone asks whether one mechanism accounts for a granted fact and is `explanatory_reasoning`. The two negated members, q047 and q048, carry `true_statement_trap` on every option true of the subject, applied the same way in both. `elimination` is carried only where one named fact strikes options out, q048's mesosome and q049's \"only mammal\". Two members carry recorded doubt rather than a full trap list: q050 has `arguable_key` because its option 1 is defensible, and q046's note flags that the keyed mechanism explains root pressure more directly than it explains the acidity."
+}

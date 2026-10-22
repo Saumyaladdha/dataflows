@@ -1,0 +1,84 @@
+/* NCERT Biology, Class XI — generated from book_design.py. Do not hand-edit:
+   regenerate with  python code/render_from_tree.py --emit-css BIO11
+   Applies to BOTH editions (BIO11L and BIO11O) — they are the same measured
+   design; only the imprint line and the content differ. */
+
+*{box-sizing:border-box}
+html{background:#8f9190}
+body{margin:0;padding:8mm 0;font-family:var(--body-font);color:var(--ink)}
+:root{--body-font:'NcertBody','Bookman Old Style',Bookman,Georgia,serif;
+      --disp-font:'NcertDisplay','Century Gothic',Avenir,sans-serif;
+      --sans:Arial,Helvetica,sans-serif;--ink:#231f20}
+/* One sheet at the book's real trim. Fixed width, growing height -- a page that runs long
+   continues rather than clipping. */
+/* THE SHEET GROWS; IT NEVER CLIPS. A reading view holds a whole chapter in one column, so a
+   fixed height with `overflow:hidden` does not "fit the page" -- it DELETES whatever did not
+   fit. Measured on BIO11O ch02, the last third of the chapter rendered underneath the footer
+   bar and off the bottom of the sheet. Losing a sentence to keep a page count is never the
+   right trade, so the box is a MINIMUM and the footer is flow content at the end of it. */
+/* ONE SHEET PER PRINTED PAGE. The chapter was previously rendered as a single endless column,
+   so the book's own pagination vanished: no folio, no running head, no page break anywhere
+   after the first. The tree is structure-ordered, but every node records which printed page it
+   came from, so the pages can be put back. Height is a MINIMUM, never a clip. */
+.sheet{position:relative;width:215.90mm;min-height:276.58mm;margin:0 auto 7mm;background:#fff;
+       box-shadow:0 1px 5px rgba(0,0,0,.45);overflow:visible;padding-bottom:6mm}
+.sheet::after{content:"";display:block;clear:both}
+.band,.strip,.footbar{position:absolute;left:0;right:0}
+.rhead{position:absolute;display:flex;align-items:center;white-space:nowrap}
+.folio{position:absolute;display:flex;align-items:center;justify-content:center}
+.imprint{position:absolute;left:0;right:0;text-align:center}
+/* The measure: the book's own column, mirrored by page side. Everything flows inside it, so
+   two blocks can never land on top of each other. */
+/* The book's own measure. Absolute only in X -- the column flows down the sheet and the
+   sheet grows to hold it. */
+.measure{position:relative;width:127.00mm;max-width:100%}
+.p{margin:0 0 .34em;text-align:justify;hyphens:auto;line-height:1.27}
+/* HEADINGS AS THE BOOK SETS THEM: small caps in the book's own accent, stepped by level.
+   `2.1 KINGDOM MONERA` is a topic, `2.1.1 Archaebacteria` a subtopic -- the level is the dot
+   count in the printed number, so the hierarchy a reader sees matches the tree a query walks. */
+.h{margin:.9em 0 .32em;font-weight:700;font-variant:small-caps;line-height:1.26;
+   color:#00a9d4;letter-spacing:.012em;clear:both}
+.h.lvl1{font-size:1.12em}
+.h.lvl2{font-size:1.0em;font-variant:small-caps;font-weight:700}
+.h.lvl3{font-size:.94em;font-variant:normal;font-weight:700}
+.h.plain{font-size:1.12em}
+.li{margin:0 0 .25em;text-align:left}
+ul.list{margin:.3em 0 .5em;padding-left:1.1em}
+/* A FIGURE SITS ON THE SIDE THE BOOK PRINTS IT. Every node carries the bbox it was measured
+   at, so the side is known, not guessed: a figure whose box lies in the outer rail is floated
+   there and the prose runs beside it, exactly as the page sets it; one that spans the measure
+   runs full width. Without this every diagram stacked in the middle of the column and the
+   page lost the arrangement that makes it readable. */
+figure{margin:.6em 0;padding:0;max-width:100%}
+figure img{display:block;width:100%;max-width:100%;height:auto}
+figure.rail-left{float:left;margin:.2em 5mm .5em 0;clear:left}
+figure.rail-right{float:right;margin:.2em 0 .5em 5mm;clear:right}
+figure.full{clear:both}
+/* Tables are set as TABLES. The grid is measured from the printed column positions, so the
+   cells line up the way the book sets them without a picture standing in for the data. */
+/* THE TABLE FITS THE MEASURE. `width:100%` alone is not enough: with auto layout a long cell
+   widens its column and pushes the last one off the sheet -- measured, Table 1.1's
+   `Phylum/Division` column was cut in half at the trim. `table-layout:fixed` divides the
+   measure between the columns and lets the text wrap inside them, which is what the book does. */
+table.grid{border-collapse:collapse;table-layout:fixed;width:100%;max-width:100%;
+           margin:.6em 0;font-size:.8em;line-height:1.28;clear:both;
+           word-wrap:break-word;overflow-wrap:break-word}
+table.grid caption{caption-side:top;text-align:left;font-variant:small-caps;font-weight:700;
+                   padding-bottom:.3em;color:#00a9d4}
+/* The rule colour is the book's own, darkened from the measured fill rather than
+   borrowed from the heading colour -- a cyan rule on a peach table is not the page. */
+table.grid th,table.grid td{border:.3mm solid rgba(0,0,0,.28);padding:1mm 1.4mm;
+                            vertical-align:top;text-align:left}
+table.grid thead th{font-weight:700}
+figcaption{font-size:.88em;line-height:1.3;margin-top:.25em;color:#333}
+.box{margin:.4em 0;font-size:.95em;line-height:1.3}
+.b{font-weight:700}.i{font-style:italic}.sc{font-variant:small-caps}
+sup,sub{font-size:.7em;line-height:0}
+.bar{position:sticky;top:0;z-index:50;background:#2f2f2f;color:#eee;padding:6px 14px;
+     font:13px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+     display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.bar .tag{background:#4a4a4a;border-radius:3px;padding:1px 7px}
+.bar .warn{background:#8a4b22}
+@page{size:215.90mm 276.58mm;margin:0}
+@media print{html,body{background:#fff;padding:0}.bar{display:none}
+  .sheet{margin:0;box-shadow:none}}

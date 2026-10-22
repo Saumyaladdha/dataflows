@@ -1,0 +1,190 @@
+{
+  "question_id": "Q-000541",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "merged_into": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E2:43"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E2/neet_2023_code-E2.pdf",
+  "trust": "unsure",
+  "stem_en": "A horizontal bridge is built across a river. A student standing on the bridge throws a small ball vertically upwards with a velocity $4\\,\\mathrm{m\\,s^{-1}}$. The ball strikes the water surface after $4\\,\\mathrm{s}$. The height of bridge above water surface is (Take $g = 10\\,\\mathrm{m\\,s^{-2}}$) :",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$56\\,\\mathrm{m}$",
+    "2": "$60\\,\\mathrm{m}$",
+    "3": "$64\\,\\mathrm{m}$",
+    "4": "$68\\,\\mathrm{m}$"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "43\nA horizontal bridge is built across a river. A student standing on the bridge throws a small ball vertically\nupwards with a velocity 4 m s⁻¹. The ball strikes the water surface after 4 s. The height of bridge\nabove water surface is (Take g = 10 m s⁻²) :\n(1)\n56 m\n(2)\n60 m\n(3)\n64 m\n(4)\n68 m\n\n2\n1\n2\nu = −4 m s−1 t = 4 s\ng =\n10 m s−2\ns = −4 × 4 +\n​ ×\n2\n1\n10 × 4 =\n2\n−16 + 80 = 64 m\n",
+  "b4_script_options": {
+    "1": "56 m",
+    "2": "60 m",
+    "3": "64 m",
+    "4": "68 m\n\n2\n1\n2\nu = −4 m s−1 t = 4 s\ng =\n10 m s−2\ns = −4 × 4 +\n​ ×\n2\n1\n10 × 4 =\n2\n−16 + 80 = 64 m"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "merged_into": "Q-000186",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "3",
+  "b6_reason": "Taking upward as positive, the net downward displacement in 4 s is 64 m.",
+  "b6_working": "s = ut - (1/2)g t^2 = 4(4) - 5(16) = 16 - 80 = -64 m, so height = 64 m",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

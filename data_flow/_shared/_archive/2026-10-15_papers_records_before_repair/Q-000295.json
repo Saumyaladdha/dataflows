@@ -1,0 +1,218 @@
+{
+  "question_id": "Q-000295",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:166"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Match List I with List II : List I List II A. $\\alpha$ –I antitrypsin I. Cotton bollworm B. Cry IAb II. ADA deficiency C. Cry IAc III. Emphysema D Enzyme replacement therapy IV Corn borer Choose the correct answer form the options given below:",
+  "statements": [],
+  "list_i": [
+    {
+      "label": "A",
+      "text": "$\\alpha$ –I antitrypsin"
+    },
+    {
+      "label": "B",
+      "text": "Cry IAb"
+    },
+    {
+      "label": "C",
+      "text": "Cry IAc"
+    },
+    {
+      "label": "D",
+      "text": "Enzyme replacement therapy"
+    }
+  ],
+  "list_ii": [
+    {
+      "label": "I",
+      "text": "Cotton bollworm"
+    },
+    {
+      "label": "II",
+      "text": "ADA deficiency"
+    },
+    {
+      "label": "III",
+      "text": "Emphysema"
+    },
+    {
+      "label": "IV",
+      "text": "Corn borer"
+    }
+  ],
+  "options_en": {
+    "1": "A-II, B-I, C-IV, D-III",
+    "2": "A-III, B-I, C-II, D-IV",
+    "3": "A-III, B-IV, C-I, D-II",
+    "4": "A-II, B-IV, C-I, D-III"
+  },
+  "structure": "match",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "166\nMatch List I with List II : List I List II A. α –I antitrypsin I. Cotton bollworm B. Cry IAb II. ADA deficiency\nC. Cry IAc III. Emphysema D Enzyme replacement therapy IV Corn borer Choose the correct answer\nform the options given below:\n(1)\nA-II, B-I, C-IV, D-III\n(2)\nA-III, B-I, C-II, D-IV\n(3)\nA-III, B-IV, C-I, D-II\n(4)\nA-II, B-IV, C-I, D-III\nBiotechnology and Its Applications\n",
+  "b4_script_options": {
+    "1": "A-II, B-I, C-IV, D-III",
+    "2": "A-III, B-I, C-II, D-IV",
+    "3": "A-III, B-IV, C-I, D-II",
+    "4": "A-II, B-IV, C-I, D-III\nBiotechnology and Its Applications"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "3",
+  "b6_reason": "Alpha-1 antitrypsin deficiency causes emphysema, cryIAb controls corn borer, cryIAc controls cotton bollworm, and enzyme replacement therapy is used for ADA deficiency.",
+  "b6_working": "A-III, B-IV, C-I, D-II",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

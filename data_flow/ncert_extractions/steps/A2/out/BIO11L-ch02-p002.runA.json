@@ -1,0 +1,43 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        169,
+        294,
+        1490,
+        1096
+      ],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "R.H. Whittaker (1969) proposed a Five Kingdom Classification. The kingdoms defined by him were named Monera, Protista, Fungi, Plantae and Animalia. The main criteria for classification used by him include cell structure, body organisation, mode of nutrition, reproduction and phylogenetic relationships. Table 2.1 gives a comparative account of different characteristics of the five kingdoms.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The three-domain system has also been proposed that divides the Kingdom Monera into two domains, leaving the remaining eukaryotic kingdoms in the third domain and thereby a six kingdom classification. You will learn about this system in detail at higher classes.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Let us look at this five kingdom classification to understand the issues and considerations that influenced the classification system. Earlier classification systems included bacteria, blue green algae, fungi, mosses, ferns, gymnosperms and the angiosperms under ‘Plants’. The character that unified this whole kingdom was that all the organisms included had a cell wall in their cells.  This placed together groups which widely differed in other characteristics. It brought together the prokaryotic bacteria and the blue green algae (cyanobacteria) with other groups which were eukaryotic. It also grouped together the unicellular organisms and the multicellular ones, say, for example, Chlamydomonas and Spirogyra were placed together under algae. The classification did not differentiate between the heterotrophic group – fungi, and the autotrophic green plants, though they also showed a characteristic difference in their walls composition – the fungi had chitin",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "BIOLOGICAL CLASSIFICATION",
+    "11",
+    "2024-25"
+  ],
+  "note": "Table 2.1 (with its caption 'TABLE 2.1  Characteristics of the Five Kingdoms') occupies the top of the page and is marked needs_special; its bbox includes the caption line. The text layer emits the table cell contents interleaved before the caption and out of visual reading order, so block order here follows the image (table first, then the three body paragraphs). One text-layer artifact was corrected to match the image: the text layer reads '( cyanobacteria)' with a spurious space; the printed page reads '(cyanobacteria)'. The double space in 'in their cells.  This placed' is kept as printed."
+}

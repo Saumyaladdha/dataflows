@@ -1,0 +1,164 @@
+{
+ "PK": "STYLE#BIO11",
+ "SK": "V1",
+ "kind": "style",
+ "name": "NCERT Biology, Class XI",
+ "applies_to": [
+  "BIO11L"
+ ],
+ "measured": true,
+ "page": {
+  "trim_mm": [
+   215.9,
+   276.58
+  ],
+  "inner_margin_mm": 21.17,
+  "measure_mm": 127.0,
+  "text_top_mm": 31.04,
+  "text_foot_mm": 257.18,
+  "mirrors": true
+ },
+ "type": {
+  "body_pt": 10.5,
+  "leading": 1.27,
+  "ink": "#231f20",
+  "font_body": "\"Bookman Old Style\", Bookman, \"TeX Gyre Bonum\", Georgia, serif",
+  "font_display": "\"Century Gothic\", \"TeX Gyre Adventor\", \"URW Gothic\", Avenir, sans-serif"
+ },
+ "header": {
+  "band": {
+   "fill": "#e1ecb6",
+   "y0_pt": 0.0,
+   "y1_pt": 63.0
+  },
+  "strip": {
+   "fill": "#d1d3d4",
+   "y0_pt": 63.0,
+   "y1_pt": 73.1
+  },
+  "corner": null,
+  "motif": null
+ },
+ "folio": {
+  "style": "tab",
+  "fill": "#ffffff",
+  "ink": "#231f20",
+  "w_pt": 35.0,
+  "h_pt": 36.0,
+  "y0_pt": 50.0,
+  "x_recto_pt": 498.0,
+  "x_verso_pt": 78.0,
+  "radius_pt": 8.0,
+  "font": "display",
+  "size_pt": 13.0,
+  "weight": 700,
+  "radius_corners": "top"
+ },
+ "running_head": {
+  "y_pt": 64.0,
+  "size_pt": 11.0,
+  "smallcaps": true,
+  "ink": "#231f20",
+  "font": "body",
+  "verso": "subject",
+  "recto": "chapter_title",
+  "inset_pt": 78.0
+ },
+ "footer": {
+  "bar": {
+   "fill": "#cbdf7f",
+   "y0_pt": 751.5
+  },
+  "imprint": {
+   "y_pt": 747.0,
+   "size_pt": 8.0,
+   "font": "sans",
+   "ink": "#000000"
+  }
+ },
+ "opener": {
+  "kind": "gradient",
+  "gradient": [
+   "#cbdf7f",
+   "#e1ecb6",
+   "#f6f8e8",
+   "#ffffff"
+  ],
+  "gradient_stops_pt": [
+   0.0,
+   150.0,
+   285.0,
+   345.0
+  ],
+  "qr": {
+   "x_recto_pt": 449.0,
+   "x_verso_pt": 78.0,
+   "y_pt": 86.0,
+   "size_pt": 85.0
+  },
+  "title": {
+   "x_pt": 197.0,
+   "y_pt": 254.0,
+   "chapter_size_pt": 20.0,
+   "title_size_pt": 24.0,
+   "ink": "#1b75bb",
+   "smallcaps": true,
+   "font": "body",
+   "weight": 700,
+   "line_gap_pt": 22.0
+  },
+  "contents": {
+   "x_pt": 60.0,
+   "y_pt": 354.0,
+   "width_pt": 132.0,
+   "size_pt": 10.0,
+   "ink": "#00a9d4",
+   "italic": true,
+   "pitch_pt": 21.2,
+   "panel_fill": null
+  },
+  "body_x_pt": 173.5,
+  "body_top_pt": 354.0
+ },
+ "kinds": {
+  "para": {
+   "size_rel": 1.0,
+   "align": "justify",
+   "color": "#231f20"
+  },
+  "section": {
+   "size_rel": 1.24,
+   "color": "#00a9d4",
+   "variant": "small-caps",
+   "weight": 700,
+   "align": "left"
+  },
+  "list": {
+   "size_rel": 1.0,
+   "align": "left"
+  },
+  "figure": {
+   "render": "image"
+  },
+  "table": {
+   "render": "image"
+  },
+  "box": {
+   "size_rel": 0.95,
+   "align": "left"
+  },
+  "summary": {
+   "size_rel": 1.24,
+   "color": "#00a9d4"
+  },
+  "exercises": {
+   "size_rel": 1.24,
+   "color": "#00a9d4"
+  }
+ },
+ "furniture_assets": "assets/furniture/BIO11/",
+ "imprint_by_edition": {
+  "O": "2022-23",
+  "L": "2024-25"
+ }
+}

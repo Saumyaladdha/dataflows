@@ -1,0 +1,38 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "arise instantaneously. There will be some time delay between the effect (force on q₂) and the cause (motion of q₁). It is precisely here that the notion of electric field (strictly, electromagnetic field) is natural and very useful. The field picture is this: the accelerated motion of charge q₁ produces electromagnetic waves, which then propagate with the speed c, reach q₂ and cause a force on q₂. The notion of field elegantly accounts for the time delay. Thus, even though electric and magnetic fields can be detected only by their effects (forces) on charges, they are regarded as physical entities, not merely mathematical constructs. They have an independent dynamics of their own,  i.e., they evolve according to laws of their own. They can also transport energy. Thus, a source of time-dependent electromagnetic fields, turned on for a short interval of time and then switched off, leaves behind propagating electromagnetic fields transporting energy. The concept of field was first introduced by Faraday and is now among the central concepts in physics.",
+      "fixes": [
+        {"wrong": "force on q2) and the cause (motion of q1)", "right": "force on q₂) and the cause (motion of q₁)"},
+        {"wrong": "the accelerated motion of charge q1 produces", "right": "the accelerated motion of charge q₁ produces"},
+        {"wrong": "reach q2 and cause a force on q2.", "right": "reach q₂ and cause a force on q₂."}
+      ]
+    },
+    {
+      "n": 2,
+      "corrected_text": "Example 1.8 An electron falls through a distance of 1.5 cm in a uniform electric field of magnitude 2.0 × 10⁴ N C⁻¹ [Fig. 1.13(a)]. The direction of the field is reversed keeping its magnitude unchanged and a proton falls through the same distance [Fig. 1.13(b)]. Compute the time of fall in each case. Contrast the situation with that of ‘free fall under gravity’.",
+      "fixes": [
+        {"wrong": "magnitude 2.0 × 104 N C–1 [Fig. 1.13(a)]", "right": "magnitude 2.0 × 10⁴ N C⁻¹ [Fig. 1.13(a)]"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "where mₑ is the mass of the electron.",
+      "fixes": [
+        {"wrong": "where me is the mass", "right": "where mₑ is the mass"}
+      ]
+    },
+    {"n": 7, "no_change": true},
+    {"n": 10, "no_change": true},
+    {
+      "n": 12,
+      "corrected_text": "where mₚ is the mass of the proton; mₚ = 1.67 × 10⁻²⁷ kg. The time of fall for the proton is",
+      "fixes": [
+        {"wrong": "where mp is the mass of the proton; mp = 1.67 × 10–27 kg.", "right": "where mₚ is the mass of the proton; mₚ = 1.67 × 10⁻²⁷ kg."}
+      ]
+    }
+  ],
+  "note": "n=1, 14-continuation had q1/q2 charge subscripts flattened, restored. n=2 had a flattened exponent and minus-exponent (104 N C-1 -> 10⁴ N C⁻¹). n=6, 12 had the mass subscripts me/mp flattened and n=12 also a flattened power of ten (10–27); all restored to Unicode subscript/superscript forms. n=4, 7, 10 already matched the image exactly."
+}

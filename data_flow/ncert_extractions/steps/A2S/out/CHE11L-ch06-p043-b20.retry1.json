@@ -1,0 +1,6 @@
+{
+  "kind": "equation",
+  "latex": "\\text{C (s)} + \\text{CO}_2 \\text{ (g)} \\rightleftharpoons 2\\text{CO (g)}",
+  "number": "",
+  "note": "target_box_in_crop [200,160,543,204] is misaligned upward by about one line height (~40 px): most of its area covers the tail of a prose line, \"...on has 90.55% CO by mass\", and only the clipped TOPS of the display equation's glyphs fall inside its bottom edge. The box's horizontal span (x 200-543) matches the display equation's span (x ~195-535) almost exactly, the equation's top sliver is literally inside the box, and no other block intervenes between the box and it, so the equation printed immediately below -- C (s) + CO2 (g) <=> 2CO (g), with a double half-arrow equilibrium sign -- is transcribed here as this block's content. Stated explicitly so this is not mistaken for text wholly inside the box. No equation number is printed beside it. Excluded as belonging to other blocks: the clipped line at the very top of the crop, the question text \"Kc = 32 at 500 K. If initially pure BrCl is present at a c... mol L-1, what is its molar concentration in the mixture at...\", the lines \"...and 1 atm pressure, a gaseous mixture of CO and CO2 in e... on has 90.55% CO by mass\", and the line below the equation, \"Kc for this reaction at the above temperature.\""
+}

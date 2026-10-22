@@ -1,0 +1,165 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The ladder AB is 3 m long, its foot A is at distance AC = 1 m from the wall. From Pythagoras theorem, BC = 2 2 m. The forces on the ladder are its weight W acting at its centre of gravity D, reaction forces F1 and F2 of the wall and the floor respectively. Force F1 is perpendicular to the wall, since the wall is frictionless. Force F2  is resolved into two components, the normal reaction N and the force of friction F. Note that F prevents the ladder from sliding away from the wall and is therefore directed toward the wall.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "For translational equilibrium, taking the forces in the vertical direction,"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [346, 697, 950, 732],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Taking the forces in the horizontal direction,"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [346, 775, 950, 812],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "For rotational equilibrium, taking the moments of the forces about A,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [346, 888, 950, 948],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [308, 953, 950, 1210],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The force F2 makes an angle α with the horizontal,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [308, 1287, 1145, 1345],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "heading",
+      "text": "6.9  MOMENT OF INERTIA"
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "We have already mentioned that we are developing the study of rotational motion parallel to the study of translational motion with which we are familiar. We have yet to answer one major question in this connection. What is the analogue of mass in rotational motion? We shall attempt to answer this question in the present section. To keep the discussion simple, we shall consider rotation about a fixed axis only. Let us try to get an expression for the kinetic energy of a rotating body. We know that for a body rotating about a fixed axis, each particle of the body moves in a circle with linear velocity given by Eq. (6.19). (Refer to Fig. 6.16). For a particle at a distance from the axis, the linear velocity is i ir υ ω = . The kinetic energy of motion of this particle is"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1015, 308, 1404, 367],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "where mi is the mass of the particle. The total kinetic energy K of the body is then given by the sum of the kinetic energies of individual particles,"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1015, 535, 1350, 605],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Here n is the number of particles in the body. Note ω is the same for all particles. Hence, taking ω out of the sum,"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1015, 751, 1328, 815],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "We define a new parameter characterising the rigid body, called the moment of inertia I , given by"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1015, 956, 1620, 1021],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "With this definition,"
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1015, 1091, 1620, 1150],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "Note that the parameter I is independent of the magnitude of the angular velocity. It is a characteristic of the rigid body and the axis about which it rotates."
+    },
+    {
+      "n": 23,
+      "kind": "paragraph",
+      "text": "Compare Eq. (6.35) for the kinetic energy of a rotating body with the expression for the kinetic energy of a body in linear (translational) motion,"
+    },
+    {
+      "n": 24,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1015, 1442, 1328, 1507],
+      "text": ""
+    },
+    {
+      "n": 25,
+      "kind": "paragraph",
+      "text": "Here, m is the mass of the body and v is its velocity. We have already noted the analogy between angular velocity ω (in respect of rotational motion about a fixed axis) and linear velocity v (in respect of linear motion). It is then evident that the parameter, moment of inertia I, is the desired rotational analogue of mass in linear motion. In rotation (about a fixed axis), the moment of inertia plays a similar role as mass does in linear motion."
+    },
+    {
+      "n": 26,
+      "kind": "paragraph",
+      "text": "We now apply the definition Eq. (6.34), to calculate the moment of inertia in two simple cases."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "114",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null, but the page opens in the middle of a worked example (the ladder problem solution) whose end marker is the blue triangle after the tan α line, so first_block_continues_from_previous is set true. No figures or tables on this page; all needs_special blocks are displayed equations. Block 8 groups the contiguous displayed calculation lines (Now W = 20 g ... through F2 = sqrt(F^2 + N^2) = 199.0 N), including their prose labels 'Now', 'From (i)', 'From (iii)', 'From (ii)', because the fractions and radicals are scrambled in the text layer. Text-layer artifacts kept verbatim rather than re-rendered: 'BC = 2 2 m' in block 1 (radical sign lost for 2 sqrt 2) and 'the linear velocity is i ir υ ω = .' in block 12 (subscripts hoisted onto their own lines). Heading 6.9 MOMENT OF INERTIA is repeated and hoisted out of order in the text layer; transcribed once in its true reading-order position. Paragraph 12 spans the foot of the left column and the head of the right column and is kept as one block."
+}

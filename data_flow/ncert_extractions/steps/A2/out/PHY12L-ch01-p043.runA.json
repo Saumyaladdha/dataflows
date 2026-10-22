@@ -1,0 +1,72 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        313,
+        281,
+        1129,
+        537
+      ],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "1.14 Consider a uniform electric field E = 3 × 103 î N/C. (a)  What is  the flux of this field through a square of 10 cm on a side whose plane is parallel to the yz plane? (b) What is the  flux through the same square if the normal  to its plane makes a 60° angle with the x-axis?"
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "1.15 What is the net flux of the uniform electric field of Exercise 1.14 through a cube of side 20 cm oriented so that its faces are parallel to the coordinate planes?"
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "1.16 Careful measurement of the electric field at the surface of a black box indicates that the net outward flux through the surface of the box is 8.0 × 103 Nm2/C. (a) What is the net charge inside the box? (b) If the net outward flux through the surface of the box were zero, could you conclude that there were no charges inside the box? Why or Why not?"
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "1.17 A point charge +10 µC is a distance 5 cm directly above the centre of a square of side 10 cm, as shown in Fig. 1.31. What is the magnitude of the electric flux through the square? (Hint: Think of the square as one face of a cube with edge 10 cm.)"
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        394,
+        1112,
+        913,
+        1609
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "1.18 A point charge of 2.0 µC is at the centre of a  cubic Gaussian surface 9.0 cm on edge. What is the net electric flux through the surface?"
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "1.19 A point charge causes an electric flux of –1.0 × 103 Nm2/C to pass through a spherical Gaussian surface of 10.0 cm radius centred on the charge. (a)  If the radius of the Gaussian surface were doubled, how much flux would  pass through the surface? (b) What is the value of the point charge?"
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "1.20 A conducting sphere of radius 10 cm has an unknown charge. If the electric field 20 cm from the centre of the sphere is 1.5 × 103 N/C and points radially inward, what is the net charge on the sphere?"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "43",
+    "Reprint 2026-27"
+  ],
+  "note": "Page is part of the chapter's end-of-chapter EXERCISES list; the EXERCISES heading and items 1.1-1.13 are on earlier pages, so this page opens at item 1.14. The page's first block is FIGURE 1.30 (a complete figure, referenced by an exercise on the previous page), and the page ends with the complete sentence of exercise 1.20, so neither continuation flag is set true even though the numbered exercise list itself runs across the page break; previous_page_last_block was null in the input, so this judgement is from the image alone. Figure blocks 1 and 6 include their 'FIGURE 1.30' / 'FIGURE 1.31' captions inside the bbox. Per the source note on superscript scrambling, inline mathematics is copied with the characters the text_layer holds, so exponents are flat: '3 × 103 î N/C', '8.0 × 103 Nm2/C', '-1.0 × 103 Nm2/C' and '1.5 × 103 N/C' are printed on the page as 3 × 10^3, 8.0 × 10^3 Nm^2/C, -1.0 × 10^3 Nm^2/C and 1.5 × 10^3 N/C. The text_layer renders the micro sign as 'm' ('+10 mC', '2.0 mC') because of the symbol font; the page image clearly shows 'µC' in exercises 1.17 and 1.18, so µ was read from the image there. Double spaces inside sentences are from the justified text layer and have been kept as-is."
+}

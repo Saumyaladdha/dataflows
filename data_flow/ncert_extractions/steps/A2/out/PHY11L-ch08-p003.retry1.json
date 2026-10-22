@@ -1,0 +1,25 @@
+{
+  "blocks": [
+    {"n": 1, "kind": "paragraph", "text": "in its volume without any change of its\ngeometrical shape.", "continues_from_previous": true},
+    {"n": 2, "kind": "paragraph", "text": "The body develops internal restoring forces\nthat are equal and opposite to the forces applied\nby the fluid (the body restores its original shape\nand size when taken out from the fluid). The\ninternal restoring force per unit area in this case\nis known as hydraulic stress and in magnitude\nis equal to the hydraulic pressure (applied force\nper unit area)."},
+    {"n": 3, "kind": "paragraph", "text": "The strain produced by a hydraulic pressure\nis called volume strain and is defined as the\nratio of change in volume (∆V) to the original\nvolume (V)."},
+    {"n": 4, "kind": "equation", "needs_special": true, "bbox": [190, 699, 829, 770], "text": ""},
+    {"n": 5, "kind": "paragraph", "text": "Since the strain is a ratio of change in\ndimension to the original dimension, it has no\nunits or dimensional formula."},
+    {"n": 6, "kind": "heading", "text": "8.3  HOOKE’S LAW"},
+    {"n": 7, "kind": "paragraph", "text": "Stress and strain take different forms in the\nsituations depicted in the Fig. (8.1). For small\ndeformations the stress and strain are\nproportional to each other. This is known as\nHooke’s law."},
+    {"n": 8, "kind": "paragraph", "text": "Thus,"},
+    {"n": 9, "kind": "equation", "needs_special": true, "bbox": [238, 1127, 829, 1197], "text": ""},
+    {"n": 10, "kind": "paragraph", "text": "where k is the proportionality constant and is\nknown as modulus of elasticity."},
+    {"n": 11, "kind": "paragraph", "text": "Hooke’s law is an empirical law and is found\nto be valid for most materials. However, there\nare some materials which do not exhibit this\nlinear relationship."},
+    {"n": 12, "kind": "heading", "text": "8.4  STRESS-STRAIN CURVE"},
+    {"n": 13, "kind": "paragraph", "text": "The relation between the stress and the strain\nfor a given material under tensile stress can be\nfound experimentally. In a standard test of\ntensile properties, a test cylinder or a wire is\nstretched by an applied force. The fractional\nchange in length (the strain) and the applied\nforce needed to cause the strain are recorded.\nThe applied force is gradually increased in steps\nand the change in length is noted. A graph is\nplotted between the stress (which is equal in\nmagnitude to the applied force per unit area) and\nthe strain produced. A typical graph for a metal\nis shown in Fig. 8.2. Analogous graphs for\ncompression and shear stress may also be\nobtained. The stress-strain curves vary from\nmaterial to material. These curves help us to\nunderstand how a given material deforms with\nincreasing loads. From the graph, we can see\nthat in the region between O to A, the curve is\nlinear.  In this region, Hooke’s law is obeyed.\nThe body regains its original dimensions when\nthe applied force is removed. In this region, the\nsolid behaves as an elastic body."},
+    {"n": 14, "kind": "figure", "needs_special": true, "bbox": [932, 574, 1609, 1046], "text": ""},
+    {"n": 15, "kind": "paragraph", "text": "Fig. 8.2 A typical stress-strain curve for a metal."},
+    {"n": 16, "kind": "paragraph", "text": "In the region from A to B, stress and strain\nare not proportional. Nevertheless, the body still\nreturns to its original dimension when the load\nis removed. The point B in the curve is known\nas yield point (also known as elastic limit) and\nthe corresponding stress is known as yield\nstrength (σy) of the material."},
+    {"n": 17, "kind": "paragraph", "text": "If the load is increased further, the stress\ndeveloped exceeds the yield strength and strain\nincreases rapidly even for a small change in the\nstress. The portion of the curve between B and\nD shows this. When the load is removed, say at\nsome point C between B and D, the body does\nnot regain its original dimension. In this case,\neven when the stress is zero, the strain is not\nzero. The material is said to have a permanent\nset. The deformation is said to be plastic\ndeformation. The point D on the graph is the\nultimate tensile strength (σu) of the material.\nBeyond this point, additional strain is produced\neven by a reduced applied force and fracture\noccurs at point E. If the ultimate strength and\nfracture points D and E are close, the material\nis said to be brittle. If they are far apart, the\nmaterial is said to be ductile."}
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["MECHANICAL PROPERTIES OF SOLIDS", "169", "2024-25"],
+  "note": "Re-verified against image and text layer; blocks kept essentially as before. Equations (8.5), (8.6) and the Fig. 8.2 stress-strain graph are marked needs_special and excluded from paragraph text, which structurally caps similarity against the whole-page text layer per the known check-script limitation noted in the instructions."
+}

@@ -1,0 +1,188 @@
+{
+  "group": "v2__chemistry__plain.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q002",
+      "question_type": "plain_mcq",
+      "format": "new_format",
+      "content_shape": "structure_chemical",
+      "concept": "Electron configuration of gadolinium: ten electrons beyond [Xe] placed as 6s2 5d1 4f7, the half-filled 4f shell being preserved",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "The electron count strikes nothing out - all four options total ten electrons beyond [Xe] (7+1+2, 6+2+2, 8+2, 9+1). What does strike options out is which subshells are available after [Xe]: 5s is already full inside the [Xe] core, which removes option 4, and 6d lies above both 6s and 5d so it cannot be occupied while 5d is empty, which removes option 3 - leaving only options 1 and 2 to decide between.",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "allots the ten electrons as 6s2, then 5d2, then 4f6 - filling the 5d subshell to two electrons before the 4f shell has reached the half-filled seven. The operation is the mis-ordered filling; it keeps the correct total of ten and differs from the key by one electron moved from 4f to 5d"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "6d has a higher (n+l) value than both 6s and 5d, so no filling order places electrons in 6d while 6s and 5d stand empty; there is no sequence of the Aufbau rule, with or without the half-filled-shell exception, that produces [Xe]4f8 6d2"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "the 5s subshell is already filled inside [Xe], so \"[Xe]4f9 5s1\" describes a shell the core it is written on top of already contains; no filling of ten electrons beyond xenon can place one of them in 5s"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the filling rules, including the stability of the half-filled f subshell, to a stated atomic number, demonstrated by the stem's \"Its atomic number is 64\" and by the keyed \"[Xe]4f7 5d1 6s2\", which differs from option 2 only in which subshell holds the seventh f electron.",
+      "note": "E2 is recorded as `new_format`: the four options are electron configurations - subshell occupancy strings such as \"[Xe]4f7 5d1 6s2\" - and that is not a name or term, a stored or computed value, a symbolic expression, a statement graded true, an order, a code, or a drawn structure. The nearest listed labels all misdescribe it, so the escape hatch is used and the shape is named here for the list to be revised."
+    },
+    {
+      "question_id": "2015_A#q003",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "structure_property",
+      "concept": "Second electron gain enthalpy: adding an electron to an already negative ion costs more in repulsion than the noble-gas configuration returns",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_but_out_of_scope",
+          "option": "1",
+          "route": "oxygen is indeed more electronegative than most elements, and that is what accounts for the printed FIRST step being exothermic at -141 kJ/mol; the stem asks why the overall formation is unfavourable, which is a question about the +780 kJ/mol second step, so the option fails on relevance and not on truth"
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "2",
+          "route": "the anion is larger than the atom, so the claim itself is true; but a size increase is a consequence of adding the electron and not the reason the second addition costs 780 kJ/mol, so it answers what happens rather than the stem's \"It is due to the fact that\""
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "states the size relation backwards: O- carries one more electron than O against the same nuclear charge and is therefore LARGER than the oxygen atom, so the printed words \"comparatively smaller size than oxygen atom\" are the reverse of the true comparison"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which statement accounts for a fact the stem has already granted, demonstrated by the stem's \"Thus process of formation of O2- in gas phase is unfavourable ... It is due to the fact that\", which concedes the unfavourability and puts only the explanation in question.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q004",
+      "question_type": "plain_mcq",
+      "format": "count_qualifying_items",
+      "content_shape": "structure_chemical",
+      "concept": "Structural isomers of C3H9N: two primary amine skeletons, one secondary and one tertiary amine, four in all",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "1",
+          "route": "tallies only the two carbon-skeleton isomers, propan-1-amine and propan-2-amine, and omits from the sum the two isomers that come from moving alkyl groups onto nitrogen, N-methylethylamine and trimethylamine, which gives two instead of four"
+        },
+        {
+          "label": "omitted_contribution",
+          "option": "2",
+          "route": "tallies three by leaving exactly one isomer out of the sum - trimethylamine, the only tertiary amine - which is what happens if the enumeration stops at the primary and secondary classes"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "counts one connectivity twice: N-methylethylamine is tallied once as the N-methyl derivative of ethylamine and again as the N-ethyl derivative of methylamine, giving five entries for four distinct structures"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying valence and connectivity rules to enumerate every distinct structure for a stated formula, demonstrated by the stem's \"molecular formula C3H9N\", from which the four amines must be generated rather than recalled.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q005",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Equilibrium constant under stoichiometric scaling: multiplying an equation by n raises K to the power n, so halving it takes K to K^(1/2)",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "copied_from_stem",
+          "option": "1",
+          "route": "repeats the stem's own symbol: the stem prints \"the equilibrium constant ... is K\" and option 1 is K unchanged, which is the value for the equation as first written and not for the halved one the question goes on to print"
+        },
+        {
+          "label": "wrong_power_of_dependence",
+          "option": "2",
+          "route": "uses the exponent 2 where 1/2 is required: the coefficients are halved, so K must be raised to the power one half, and K^2 is what doubling the coefficients would give"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "applies the factor of one half to K itself instead of to the exponent - divides K by two rather than taking its square root"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the scaling rule for equilibrium constants to a stated change of coefficients, demonstrated by the stem's second equation \"1/2 N2(g) + 1/2 O2(g) <=> NO(g)\", which is the first one halved throughout.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q006",
+      "question_type": "pair_options",
+      "format": "pick_both_parts",
+      "content_shape": "definition_term",
+      "concept": "Acidic buffer: a weak acid together with the salt of that acid; a strong acid and its salt cannot buffer because the acid is fully ionised",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "HClO4 is the only strong acid among the four acids printed; since buffering needs a weak acid, that single fact strikes out options 1, 2 and 4 together and settles the answer on option 3.",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "the task is negated - \"is not an acidic buffer\" - and H2CO3 with Na2CO3 is a weak acid with a salt of that acid, which does buffer, so the option answers the un-negated question"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "the task is negated; H3PO4 with Na3PO4 is again a weak acid with a salt of the same acid, and the mixture buffers once proton transfer has set up the H2PO4-/HPO4(2-) pair, so this too answers the un-negated question"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "the task is negated; CH3COOH with CH3COONa is the textbook acidic buffer itself, so option 4 is the most securely buffering pair of the four and is correct for the question with the \"not\" removed"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the buffer criterion to four printed pairs under a negated task, demonstrated by the stem's \"is not an acidic buffer\" and by option 3's \"HClO4 and NaClO4\", the one pair whose acid is strong.",
+      "note": "Option 2 is the pair on which the key is least comfortable: H3PO4 with Na3PO4 is a weak acid with its own salt and does buffer, though not as the conjugate pair as printed. It is recorded as a true_statement_trap on the same ground as options 1 and 4; the key stands on HClO4 being the only strong acid, which is not in doubt. E1 is `pair_options` and not `plain_mcq`: each option is a PAIR of solutions accepted or rejected whole (\"H2CO3 and Na2CO3\"), and there are no two printed columns to match, which is the rulebook's own test for that label. E2 follows it as `pick_both_parts`, the answer being a pair of species both of which must hold."
+    },
+    {
+      "question_id": "2015_A#q007",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "trend",
+      "concept": "Conductivity of aqueous solutions follows the degree of ionisation: strong electrolyte > weak electrolyte > non-electrolyte",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "HCl is the only strong electrolyte printed; since conductance is carried by ions and only a strong electrolyte is fully ionised, that one fact strikes out options 1, 2 and 3 at once.",
+      "traps": [
+        {
+          "label": "no_derivation_route",
+          "option": "2",
+          "route": "fructose is a molecular sugar that dissolves without ionising at all, so its solution carries no ions beyond those of water itself; its conductance is the lowest of the four and no route makes it the highest"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the ionisation criterion to four named solutes, demonstrated by option 4's \"Hydrochloric acid, HCl\", the only one of the four that is completely ionised in water.",
+      "note": "Options 1 and 3 are left untagged. Ammonia and acetic acid are weak electrolytes that do conduct, just less than HCl, so they are not wrong on a nameable mistake - they are correctly ranked below the key - and no wrong operation turns either into the best conductor. Tagging them would mean asserting a preference rather than a route."
+    }
+  ],
+  "group_note": "All six were read as the same printed shape - one question, four answers, no lettered block or printed list - and q003 is the member that sits least comfortably with the rest, since its stem prints two thermochemical equations with values and so is data-bearing where the other five are not. Three stated rules kept the group consistent. (1) DEMAND: four members are `application` - a stated rule (the filling rules, valence and connectivity, the K-scaling rule, the buffer criterion, the ionisation criterion) applied to the case the stem prints. q003 alone is `explanatory_reasoning`, and the test for that is in its own stem: the fact is conceded (\"the process ... is unfavourable\") and only the causal link remains, whereas in the other five the fact itself is at issue. No member is `recall`: in each of the five, the rule has to be applied to a species or a stoichiometry not given in the books, and under the rebuilt definition applying a rule still requires knowing it. (2) STRUCTURE: `several_independent_checks` where each option or each candidate is adjudicated separately and the verdicts combined (q002 four configurations, q004 four candidate structures enumerated, q006 four pairs, q007 four solutes); `single_step` where one relation or one judgement settles it (q003, q005). Nothing in this packet is multi_step_dependent: no member requires one computed result to be carried into a later step, and four option-checks are not four steps. (3) TRAPS: tagged only where the option and the route can both be named. The two negated questions differ from the rest exactly as their polarity requires - q006's three distractors are all genuine acidic buffers, so each carries `true_statement_trap` with the polarity quoted, while q007, which is not negated, has only one option with a nameable route and so carries one trap. q002's option set is the clearest case of a grid rather than a spread: all four options total ten electrons beyond [Xe], so the count eliminates nothing and the subshell availability has to do the work, which is why the elimination evidence here names what does NOT strike options out as well as what does; its two unreachable options carry `no_derivation_route` with the demonstration given in each route (6d above 6s, 5s inside the core) and never as an assertion. Where no route exists, no label is forced: q007's weak electrolytes are untagged and said to be so in the note. No trap sits on any official answer. ON THE E1/E2/E3 AXES: five are `plain_mcq`, and 2015_A#q006 is NOT - each of its options is a pair of solutions accepted or rejected whole, with no two printed columns to match, which is `pair_options` by the rulebook's own test, so the packet's `structure: plain` grouping key is wrong for that one member. E2 is read from the options alone and is where this packet is most varied: `derive_expression` for q005's four symbolic forms of K, `count_qualifying_items` for q004's bare tally, `pick_cause_or_effect` for q003's rival explanations, `pick_both_parts` for q006's pairs, `name_or_identify` for q007's named compounds, and `new_format` for q002, whose options are electron configurations and fit no listed label - the escape hatch is used and the shape named rather than forced into `name_or_identify`. E3: `structure_chemical` for the two built on electron counts and connectivity (q002, q004), `structure_property` for q003's property that follows from the ion's electron count, `formula_or_law` for q005's scaling relation, `definition_term` for q006's buffer definition and `trend` for q007's comparison between four named cases."
+}

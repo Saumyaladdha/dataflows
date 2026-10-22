@@ -1,0 +1,63 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "the vector sum of the force on  q1 due to q2, the force on q1 due to q3, and so on. For each pair, the force is given by the Coulomb’s law for two charges stated earlier.\n8. The electric field E at a point due to a charge configuration is the force on a small positive test charge q placed at the point divided by the magnitude of the charge. Electric field due to a point charge q has a magnitude |q|/4πε0r 2; it is radially outwards from q, if q is positive, and radially inwards if q is negative. Like Coulomb force, electric field also satisfies superposition principle.\n9. An electric field line is a curve drawn in such a way that the tangent at each point on the curve gives the direction of electric field at that point. The relative closeness of field lines indicates the relative strength of electric field at different points; they crowd near each other in regions of strong electric field and are far apart where the electric field is weak. In regions of constant electric field, the field lines are uniformly spaced parallel straight lines.\n10. Some of the important properties of field lines are: (i) Field lines are continuous curves without any breaks. (ii) Two field lines cannot cross each other. (iii) Electrostatic field lines start at positive charges and end at negative charges —they cannot form closed loops.\n11. An electric dipole is a pair of equal and opposite charges q and –q separated by some distance 2a. Its dipole moment vector p has magnitude 2qa and is in the direction of the dipole axis from –q to q.\n12. Field of an electric dipole in its equatorial plane (i.e., the plane perpendicular to its axis and passing through its centre) at a distance r from the centre:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        256,
+        1161,
+        654,
+        1324
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Dipole electric field on the axis at a distance r from the centre:"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        256,
+        1390,
+        687,
+        1559
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The 1/r3 dependence of dipole electric fields should be noted in contrast to the 1/r 2 dependence of electric field due to a point charge."
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "13. In a uniform electric field E, a dipole experiences a torque τ given by\nτ = p × E\nbut experiences no net force."
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "14. The flux ∆φ of electric field E through a small area element ∆S is given by\n ∆φ  = E.∆S\nThe vector area element ∆S is\n∆S = ∆S ˆn\nwhere ∆S is the magnitude of the area element and ˆn is normal to the area element, which can be considered planar for sufficiently small ∆S.",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "43",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so continuation is judged against the p042 output I had just written: p042 ended mid-sentence in summary point 7 ('the force on any charge, say q1, is') and this page opens 'the vector sum of the force on q1 due to q2...', so first_block_continues_from_previous is true. This is the SUMMARY panel continuing; the numbered points are grouped into list blocks and the two displayed dipole-field equation groups, whose text layer is a scrambled symbol stream, are needs_special (n=2 for the equatorial-plane pair, n=4 for the axial pair). The short display lines that the text layer renders cleanly - 'τ = p × E', '∆φ = E.∆S', '∆S = ∆S ˆn' - are kept as text inside their list blocks. The summary runs on past point 14, so last_block_continues_on_next is true."
+}

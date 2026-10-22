@@ -1,0 +1,77 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Figure 15.3), a patient is connected to the\nmachine  with three electrical leads (one to each\nwrist and to the left ankle) that continuously\nmonitor the heart activity. For a detailed\nevaluation of the heart’s function, multiple\nleads are attached to the chest region. Here,\nwe will talk only about a standard ECG.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Each peak in the ECG is identified with a\nletter from P to T that corresponds to a specific\nelectrical activity of the heart.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        834,
+        283,
+        1488,
+        643
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The P-wave represents the electrical\nexcitation (or depolarisation) of the atria,\nwhich leads to the contraction of both the atria.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The QRS complex represents the depolarisation of the ventricles,\nwhich initiates the ventricular contraction. The contraction starts shortly\nafter Q and marks the beginning of the systole.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The T-wave represents the return of the ventricles from excited to normal\nstate (repolarisation). The end of the T-wave marks the end of systole.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Obviously, by counting the number of QRS complexes that occur in a\ngiven time period, one can determine the heart beat rate of an individual.\nSince the ECGs obtained from different individuals have roughly the same\nshape for a given lead configuration, any deviation from this shape indicates\na possible abnormality or disease. Hence, it is of a great clinical significance.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "15.4 DOUBLE CIRCULATION"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The blood flows strictly by a fixed route through Blood Vessels—the\narteries and veins. Basically, each artery and vein consists of three layers:\nan inner lining of squamous endothelium, the tunica intima, a middle\nlayer of smooth muscle and elastic fibres, the tunica media, and an\nexternal layer of fibrous connective tissue with collagen fibres, the tunica\nexterna. The tunica media is comparatively thin in the veins (Figure\n15.4).",
+      "continues_from_previous": false
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "As mentioned earlier, the blood pumped by the right ventricle enters\nthe pulmonary artery, whereas the left ventricle pumps blood  into the\naorta. The deoxygenated blood pumped into the pulmonary artery is\npassed on to the lungs  from where the oxygenated blood is carried by\nthe pulmonary veins into the left atrium. This pathway constitutes the\npulmonary circulation. The oxygenated blood entering the aorta is\ncarried by a network of arteries, arterioles and capillaries to the tissues\nfrom where the deoxygenated blood is collected by a system of venules,\nveins and vena cava and emptied into the right atrium. This is the\nsystemic circulation (Figure 15.4).  The systemic circulation provides\nnutrients, O2 and other essential substances to the tissues and takes\nCO2 and other harmful substances away for elimination. A unique\nvascular connection exists between the digestive tract and liver called",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "BODY FLUIDS AND CIRCULATION",
+    "201",
+    "2024-25"
+  ],
+  "note": "Used text_layer, plus the page image for layout and the figure bbox. previous_page_last_block was null, but I read page 8 myself: it ended 'To obtain a standard ECG (as shown in the' and this page opens 'Figure 15.3), a patient is connected...', so the first block continues. Figure 15.3 sits top-right with text wrapping to its left; placed at n=3 in reading order, its caption line included in the figure bbox and left untranscribed. The last block ends mid-sentence ('digestive tract and liver called')."
+}

@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on Malus's law applied through three polaroids at 0/45/90 degrees giving I0/8, a polarisation fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Biology\" and the 32-chapter Biology closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180. A Physics question was handed the Biology list, so no correct code exists in it. Expected chapter: 'Wave Optics' (PHYNEETENGWOP: polarisation, Malus's law), not offered. Option fractions are destroyed by the text layer, but 'Polaroids', 'axis perpendicular', 'unpolarised' and '45 degrees' survive."
+}

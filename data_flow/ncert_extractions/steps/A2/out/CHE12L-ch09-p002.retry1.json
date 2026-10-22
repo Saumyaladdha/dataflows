@@ -1,0 +1,16 @@
+{
+  "blocks": [
+    {"n": 1, "kind": "paragraph", "text": "C or H) is less than 109.5°; for instance, it is 108o in case of trimethylamine as shown in Fig. 9.1.", "continues_from_previous": true},
+    {"n": 2, "kind": "figure", "needs_special": true, "bbox": [589, 273, 1428, 867], "text": ""},
+    {"n": 3, "kind": "heading", "text": "9.2 Classification"},
+    {"n": 4, "kind": "paragraph", "text": "Amines are classified as primary (1o), secondary (2o) and tertiary (3o) depending upon the number of hydrogen atoms replaced by alkyl or aryl groups in ammonia molecule.  If one hydrogen atom of ammonia is replaced by R or Ar , we get RNH2 or ArNH2, a primary amine (1o). If two hydrogen atoms of ammonia or one hydrogen atom of R-NH2 are replaced by another alkyl/aryl(R’) group,  what would you get? You get R-NHR’, secondary amine.  The second alkyl/aryl group may be same or different. Replacement of another hydrogen atom by alkyl/aryl group leads to the formation of tertiary amine. Amines are said to be ‘simple’ when all the alkyl or aryl groups are the same, and ‘mixed’ when they are different."},
+    {"n": 5, "kind": "figure", "needs_special": true, "bbox": [621, 1248, 1341, 1384], "text": ""},
+    {"n": 6, "kind": "heading", "text": "9.3 Nomenclature"},
+    {"n": 7, "kind": "paragraph", "text": "In common system, an aliphatic amine is named by prefixing alkyl group to amine, i.e., alkylamine as one word (e.g., methylamine).  In secondary and tertiary amines, when two or more groups are the same, the prefix di or tri is appended before the name of alkyl group.  In IUPAC system, primary amines are named as alkanamines. The name is derived by replacement of ‘e’ of alkane by the word amine. For example, CH3NH2 is named as methanamine. In case, more than one amino group is present at different positions in the parent chain, their positions are specified by giving numbers to the carbon atoms bearing –NH2 groups and suitable prefix such as di, tri, etc. is attached to the amine. The letter ‘e’ of the suffix of the hydrocarbon part is retained. For example, H2N–CH2–CH2–NH2 is named as ethane-1, 2-diamine."},
+    {"n": 8, "kind": "paragraph", "text": "To name secondary and tertiary amines, we use locant N to designate substituent attached to a nitrogen atom. For example, CH3 NHCH2CH3 is", "continues_on_next": true}
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Chemistry", "260", "Reprint 2026-27"],
+  "note": "Previous attempt's 93.3% mismatch is the documented check-script limitation: this page has two diagram blocks (Fig. 9.1 pyramidal-shape figure and the primary/secondary/tertiary structural-formula scheme) marked needs_special with empty text, plus two sidebar headings (9.2, 9.3) whose glyphs are duplicated 5x each in the raw PDF text layer (decorative font artifact) -- none of that figure/duplicate-heading text can appear in paragraph blocks, so paragraph-only text structurally cannot reach 99% similarity against the whole-page text layer. Paragraph blocks were re-verified against the image and text layer and are faithful verbatim copies (including source artifacts like double spaces and non-superscript '108o'/'(1o)' notation); no changes were needed beyond this re-confirmation."
+}

@@ -1,0 +1,82 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "method in solved examples. To handle a typical problem in mechanics systematically, one should use the following steps :",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "(i) Draw a diagram showing schematically the various parts of the assembly of bodies, the links, supports, etc.\n(ii) Choose a convenient part of the assembly as one system.\n(iii) Draw a separate diagram which shows this system and all the forces on the system by the remaining part of the assembly.  Include also the forces on the system by other agencies. Do not include the forces on the environment by the system.  A diagram of this type is known as ‘a free-body diagram’. (Note this does not imply that the system under consideration is without a net force).\n(iv) In a free-body diagram, include information about forces (their magnitudes and directions) that are either given or you are sure of (e.g., the direction of tension in a string along its length).  The rest should be treated as unknowns to be determined using laws of motion.\n(v) If necessary, follow the same procedure for another choice of the system.  In doing so, employ Newton’s third law.  That is, if in the free-body diagram of A, the force on A due to B is shown as F, then in the free-body diagram of B, the force on B due to A should be shown as –F."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The following example illustrates the above procedure :"
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 4.12 See Fig. 4.15. A wooden block of mass 2 kg rests on a soft horizontal floor.  When an iron cylinder of mass 25 kg is placed on top of the block, the floor yields steadily and the block and the cylinder together go down with an acceleration of 0.1 m s–2.  What is the action of the block on the floor (a) before and (b) after the floor yields ? Take g = 10 m s–2. Identify the action-reaction pairs in the problem."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "Answer"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "(a) The block is at rest on the floor. Its free-body diagram shows two forces on the block, the force of gravitational attraction by the earth equal to 2 × 10 = 20 N; and the normal force R of the floor on the block. By the First Law, the net force on the block must be zero i.e., R = 20 N.  Using third law the action of the block (i.e. the force exerted on the floor by the block) is equal to 20 N and directed vertically downwards.\n(b) The system (block + cylinder) accelerates downwards with 0.1 m s-2. The free-body diagram of the system shows two forces on the system : the force of gravity due to the earth (270 N); and the normal force R′ by the floor.  Note, the free-body diagram of the system does not show the internal forces between the block and the cylinder.  Applying the second law to the system,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1037,
+        675,
+        1426,
+        761
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        891,
+        772,
+        1539,
+        1399
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "By the third law, the  action  of the system on the floor is equal to 267.3 N vertically downward."
+    },
+    {
+      "n": 10,
+      "kind": "heading",
+      "text": "Action-reaction pairs"
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "For (a): (i) the force of gravity (20 N) on the block by the earth (say, action); the force of gravity on the earth by the block (reaction) equal to 20 N directed upwards (not shown in the figure).\n(ii) the force on the floor by the block (action); the force on the block by the floor (reaction).\nFor (b): (i) the force of gravity (270 N) on the system by the earth (say, action); the force of gravity on the earth by the system (reaction), equal to 270 N,"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "LAWS  OF  MOTION",
+    "65",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column read fully before right column. The answer item (a) begins in the left column and continues across the column break into the right column, so it is kept as one block. Block 4 is the blue Example box; its decorative ▶ bullet (extracted as a stray '⊳' near the top of the text_layer, out of reading order) is omitted from the text. Block 7 is the displayed equation '270 – R′ = 27 × 0.1N / ie. R′ = 267.3 N' and block 8 is Fig. 4.15 with its free-body diagrams and the caption 'Fig. 4.15'; both left for the special transcriber. bbox values are in pixels of the 1825×2164 page image."
+}

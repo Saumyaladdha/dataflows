@@ -1,0 +1,60 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Problem 2.1\nCalculate the number of protons, neutrons and electrons in 80 35Br .\nSolution\nIn this case, 80 35Br , Z = 35, A = 80, species is neutral\nNumber of protons = number of electrons = Z = 35\nNumber of neutrons = 80 – 35 = 45, (equation 2.4)\nProblem 2.2\nThe number of electrons, protons and neutrons in a species are equal to 18, 16 and 16 respectively. Assign the proper symbol to the species.\nSolution\nThe atomic number is equal to  number of protons = 16. The element is sulphur (S).\nAtomic mass number = number of protons + number of neutrons\n= 16 + 16 = 32\nSpecies is not neutral as the number of protons is not equal to electrons. It is anion (negatively charged) with charge equal to excess electrons = 18 – 16 = 2. Symbol is .\nNote : Before using the notation A Z X, find out whether the species is a neutral atom, a cation or an anion. If it is a neutral atom, equation (2.3) is valid, i.e., number of protons = number of electrons = atomic number. If the species is an ion, determine whether the number of protons are larger (cation, positive ion) or smaller (anion, negative ion) than the number of electrons. Number of neutrons is always given by A–Z, whether the species is neutral or ion.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "2.2.5 Drawbacks of Rutherford Model"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "As you have learnt above, Rutherford nuclear model of an atom is like a small scale solar system with the nucleus playing the role"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "* Classical mechanics is a theoretical science based on Newton’s laws of motion. It specifies the laws of motion of macroscopic objects."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "of the massive sun and the electrons being similar to the lighter planets. When classical mechanics* is applied to the solar system, it shows that the planets describe well-defined orbits around the sun. The gravitational force between the planets is given by the expression"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        890,
+        460,
+        1080,
+        545
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "where m1 and m2 are the masses, r is the distance of separation of the masses and G is the gravitational constant. The theory can also calculate precisely the planetary orbits and these are in agreement with the experimental measurements."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The similarity between the solar system and nuclear model suggests that electrons should move around the nucleus in well defined orbits. Further, the coulomb force (kq1q2/r2 where q1 and q2 are the charges, r is the distance of separation of the charges and k is the proportionality constant) between electron and the nucleus is mathematically similar to the gravitational force. However, when a body is moving in an orbit, it undergoes acceleration even if it is moving with a constant speed in an orbit because of changing direction. So an electron in the nuclear model describing planet like orbits is under acceleration. According to the electromagnetic theory of Maxwell, charged particles when accelerated should emit electromagnetic radiation (This feature does not exist for planets since they are uncharged). Therefore, an electron in an orbit will emit radiation, the energy carried by radiation comes from electronic motion. The orbit will thus continue to shrink. Calculations show that it should take an electron only 10–8 s to spiral into the nucleus. But this does not happen. Thus, the Rutherford model cannot explain the stability of an atom. If the motion of an electron is described on the basis of the classical mechanics and electromagnetic theory, you may ask that since the motion of electrons in orbits is leading to the instability of the atom, then why not consider electrons as stationary"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "36",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the p007 output I wrote in this run, which ended with the complete sentence '...show same chemical behaviour.', and this page opens with the pink problem box, so there is no carry-over. Block n=1 is the whole pink box in the left column, kept as one box block because it is printed as a single box; it holds Problem 2.1, its Solution, Problem 2.2, its Solution and the Note. Two things in that box did not extract into the text layer and are therefore not invented here: the answer symbol after 'Symbol is' (the page prints sulphide-32 with charge 2 minus) and the stacked super/subscripts of the bromine symbol and of 'A Z X', which are given in the text layer's flattened order ('80 35Br', 'A Z X'). Block n=4 is the page-bottom footnote keyed to the asterisk in block n=5; it is placed here because that is where the text layer puts it, between the left column's last line and the right column's first line. Blocks n=3 and n=5 are the two halves of one paragraph split by the column break; block n=6 is the displayed gravitational-force expression (G times m1 m2 over r squared), left for the special transcriber, with the prose on either side keeping the text layer's flattened inline forms ('m1', 'm2', '(kq1q2/r2', '10–8 s'). The last block breaks off at 'why not consider electrons as stationary', so it continues on the next page."
+}

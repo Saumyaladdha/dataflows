@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "APPENDICES",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "APPENDIX  A 1"
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "THE GREEK ALPHABET"
+    },
+    {
+      "n": 4,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        497,
+        905,
+        1155,
+        1180
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "APPENDIX  A 2"
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "COMMON SI PREFIXES AND SYMBOLS FOR MULTIPLES AND SUB-MULTIPLES"
+    },
+    {
+      "n": 7,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        522,
+        1450,
+        1148,
+        1765
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "500",
+    "2022-23"
+  ],
+  "note": "BOOK BACK MATTER, NOT CHAPTER 14 CONTENT. This is printed page 500 and it is the opening page of the book's APPENDICES — a full-width 'APPENDICES' banner, then 'APPENDIX  A 1 / THE GREEK ALPHABET' with its table, then 'APPENDIX  A 2 / COMMON SI PREFIXES AND SYMBOLS FOR MULTIPLES AND SUB-MULTIPLES' with its table. An appendix is back matter and MUST NOT be used as chapter-14 passage text; no appendix heading or reference-table cell may be treated as chapter prose. It is transcribed only because the A2 schema rejects a zero-block page and so the page-coverage check can see the page was deliberately accounted for rather than dropped. previous_page_last_block was null; continuation was judged from the p056 output I wrote immediately before this one, which ended the book's INDEX at its last entry 'Zener / breakdown 485'. This page starts a different back-matter section with its own banner, so first_block_continues_from_previous is false. Note that the PDF's page order is not monotonic in printed-page terms: p054-p056 of this file are printed pages 522-524 (the index) and this page jumps back to printed page 500 (the appendices), so the appendices are bound in the file after the index. The whole page's text layer is just the two appendix headings plus the banner and the furniture; neither table's cell contents appear in the text layer, so both tables are marked needs_special with bounding boxes in image pixels of the 1624x2190 page image, for the special transcriber: n=4 is the Greek alphabet table (Alpha ... Omega) and n=7 the SI multiple/sub-multiple table (10^18 Exa E ... 10^-1 Deca da / 10^-1 deci d). Headings copied exactly as the text layer spells them, including the double space in 'APPENDIX  A 1' and 'APPENDIX  A 2'. The chapter header banner 'Physics', the page number 500 and the reprint year 2022-23 are furniture and are listed as removed. The A 2 table is complete on this page and the bottom third of the page is blank, so last_block_continues_on_next is false. No paragraphs, figures or equations on this page."
+}

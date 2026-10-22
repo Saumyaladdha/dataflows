@@ -1,0 +1,43 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Viroids : In 1971, T.O. Diener discovered a new infectious agent that\nwas smaller than viruses and caused potato spindle tuber disease. It was\nfound to be a free RNA; it lacked the protein coat that is found in viruses,\nhence the name viroid. The RNA of the viroid was of low molecular weight.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Prions : In modern medicine certain infectious neurological diseases\nwere found to be transmitted by an agent consisting of abnormally folded\nprotein. The agent was similar in size to viruses. These agents were called\nprions. The most notable diseases caused by prions are bovine spongiform\nencephalopathy (BSE) commonly called   mad cow disease in cattle and\nits analogous variant Cr–Jacob disease (CJD) in humans."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Lichens : Lichens are symbiotic associations i.e. mutually useful\nassociations, between algae and fungi. The algal component is known as\nphycobiont and fungal component as mycobiont, which are autotrophic\nand heterotrophic, respectively. Algae prepare food for fungi and fungi\nprovide shelter and absorb mineral nutrients and water for its partner.\nSo close is their association that if one saw a lichen in nature one would\nnever imagine that they had two different organisms within them.  Lichens\nare very good pollution indicators – they do not grow in polluted areas."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "SUMMARY"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Biological classification of plants and animals was first proposed by Aristotle on the\nbasis of simple morphological characters. Linnaeus later classified all living organisms\ninto two kingdoms – Plantae and Animalia. Whittaker proposed an elaborate five\nkingdom classification – Monera, Protista, Fungi, Plantae and Animalia. The main\ncriteria of the five kingdom classification were cell structure, body organisation,\nmode of nutrition and reproduction, and phylogenetic relationships."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "In the five kingdom classification, bacteria are included in Kingdom Monera.\nBacteria are cosmopolitan in distribution. These organisms show the most extensive\nmetabolic diversity. Bacteria may be autotrophic or heterotrophic in their mode of\nnutrition. Kingdom Protista includes all single-celled eukaryotes such as\nChrysophytes, Dinoflagellates, Euglenoids, Slime-moulds and Protozoans. Protists\nhave defined nucleus and other membrane bound organelles. They reproduce\nboth asexually and sexually. Members of Kingdom Fungi show a great diversity\nin structures and habitat. Most fungi are saprophytic in their mode of nutrition.\nThey show asexual and sexual reproduction. Phycomycetes, Ascomycetes,\nBasidiomycetes and Deuteromycetes are the four classes under this kingdom.\nThe plantae includes all eukaryotic chlorophyll-containing organisms. Algae,\nbryophytes, pteridophytes, gymnosperms and angiosperms are included in this\ngroup. The life cycle of plants exhibit alternation of generations – gametophytic\nand sporophytic generations. The heterotrophic eukaryotic, multicellular\norganisms lacking a cell wall are included in the Kingdom Animalia. The mode of\nnutrition of these organisms is holozoic. They reproduce mostly by the sexual\nmode. Some acellular organisms like viruses and viroids as well as the lichens are\nnot included in the five kingdom system of classification."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "BIOLOGICAL CLASSIFICATION",
+    "21",
+    "2024-25"
+  ],
+  "note": "Page 21 of the printed book. Reading order taken from the image, NOT from the text layer: the text layer emits the SUMMARY heading and its two paragraphs first, but on the page the Viroids / Prions / Lichens paragraphs occupy the top two-thirds and SUMMARY sits below them; blocks are ordered as printed. Character-level text is copied from the text layer, which matches the image (including its double spaces, e.g. \"commonly called   mad cow disease\" and \"within them.  Lichens\"). I did not read page 11 itself: first_block_continues_from_previous is judged false from the supplied previous_page_last_block tail, which ends in a full stop (\"...dwarfing  and stunted growth.\"), plus block 1 starting a new bold run-in label \"Viroids :\". Bold run-in labels (Viroids, Prions, Lichens, phycobiont, mycobiont) are kept inline as plain text since the shape has no markup field. Nothing follows the summary on this page, so last_block_continues_on_next is false."
+}

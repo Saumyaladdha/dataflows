@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/B6.json",
+  "title": "B6 agent output (b6-blind-solver)",
+  "description": "Section 10/B6 'Agent output' line and the b6-blind-solver agent file (Appendix B), including its worked example. One run, no retry (Rule/Section 10: 'a retry only argues with itself; the disagreement is the signal') -- this agent must never see the key, coaching material or NCERT (Rule 10).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["answer", "reason", "working", "confidence", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "answer": { "type": "string", "enum": ["1", "2", "3", "4", "unsure"] },
+        "reason": { "type": "string", "description": "One line of reason." },
+        "working": {
+          "type": "string",
+          "description": "Shown for a numerical; empty string when not applicable."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": {
+          "type": "string",
+          "description": "Used e.g. to flag a value that looks impossible, or that two options look correct / none does."
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

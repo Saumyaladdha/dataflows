@@ -1,0 +1,47 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "full", "x0": 0.270, "x1": 0.896}
+    ]
+  },
+  "elements": [
+    {"n": 1, "role": "table", "bbox": [0.335, 0.0826, 0.809, 0.1679],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.270, 0.1766, 0.895, 0.3188],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "table_caption", "bbox": [0.269, 0.3372, 0.894, 0.3496],
+     "column": "full", "size_rel": 0.95, "align": "justify", "font": "serif-bold",
+     "text_color": "#6d6e71"},
+    {"n": 3, "role": "table", "bbox": [0.270, 0.3546, 0.894, 0.4784],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif",
+     "fill": "#f48480"},
+    {"n": 4, "role": "paragraph", "bbox": [0.270, 0.4963, 0.896, 0.5574],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "list", "bbox": [0.270, 0.5647, 0.896, 0.7303],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "paragraph", "bbox": [0.269, 0.7390, 0.896, 0.7968],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 7, "role": "paragraph", "bbox": [0.270, 0.8060, 0.896, 0.8830],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.614, 0.9028, 0.656, 0.9174],
+     "column": "full", "size_rel": 0.9, "align": "center", "font": "serif",
+     "fill": "#fecb03", "text_color": "#6d6e71"},
+    {"n": null, "role": "footer_rule", "bbox": [0.614, 0.9156, 1.0, 0.9174],
+     "column": "full", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.677, 0.9028, 0.895, 0.9138],
+     "column": "full", "size_rel": 0.95, "align": "left", "font": "serif",
+     "text_color": "#6d6e71"},
+    {"n": null, "role": "running_header", "bbox": [0.451, 0.9743, 0.549, 0.9835],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "serif",
+     "text_color": "#6d6e71"}
+  ],
+  "note": "Single-column recto body page (printed folio 119). This Chemistry chapter puts its running furniture at the FOOT, not the head: there is no page_header_band anywhere on this page. The foot carries a gold tab behind the folio digits (#fecb03), a thin gold footer_rule running from the folio right to the page edge at y 0.9156-0.9174, and the running chapter name 'Coordination Compounds' in grey serif. The second running_header element at y 0.974 is the publisher's 'Reprint 2026-27' line, furniture rather than content; there is no better role for it in the allowed list. The table_caption 'Table 5.1: ...' is a separate element above table n=3 and was not blocked by A2, so n is null. table n=3 carries fill #f48480, which is the colour of its header ROW only (sampled at x 700-760, y 790-800); the table body below it is white paper inside a #d1d3d4 hairline border. Block n=1 is the unruled 4-line tabulation of mol quantities at the head of the page. A faint diagonal 'not to be republished' watermark crosses the page centre; it is a scan artefact, not printed furniture, so it is not listed."
+}

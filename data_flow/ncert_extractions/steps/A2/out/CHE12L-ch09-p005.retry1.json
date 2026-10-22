@@ -1,0 +1,20 @@
+{
+  "blocks": [
+    {"n": 1, "kind": "equation", "needs_special": true, "bbox": [480, 196, 1155, 327], "text": ""},
+    {"n": 2, "kind": "paragraph", "text": "The free amine can be obtained from the ammonium salt by treatment with a strong base:"},
+    {"n": 3, "kind": "equation", "needs_special": true, "bbox": [480, 441, 1090, 491], "text": ""},
+    {"n": 4, "kind": "paragraph", "text": "Ammonolysis has the disadvantage of yielding a mixture of primary, secondary and tertiary amines and also a quaternary ammonium salt. However, primary amine is obtained as a major product by taking large excess of ammonia."},
+    {"n": 5, "kind": "paragraph", "text": "The order of reactivity of halides with amines is RI > RBr >RCl."},
+    {"n": 6, "kind": "box", "needs_special": true, "bbox": [120, 730, 1482, 1341], "text": ""},
+    {"n": 7, "kind": "heading", "text": "3. Reduction of nitriles"},
+    {"n": 8, "kind": "paragraph", "text": "Nitriles on reduction with lithium aluminium hydride (LiAlH4) or catalytic hydrogenation produce primary amines. This reaction is used for ascent of amine series, i.e., for preparation of amines containing one carbon atom more than the starting amine."},
+    {"n": 9, "kind": "equation", "needs_special": true, "bbox": [480, 1548, 1046, 1613], "text": ""},
+    {"n": 10, "kind": "heading", "text": "4. Reduction of amides"},
+    {"n": 11, "kind": "paragraph", "text": "The amides on reduction with lithium aluminium hydride yield amines."},
+    {"n": 12, "kind": "equation", "needs_special": true, "bbox": [480, 1755, 1046, 1864], "text": ""}
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["263", "Amines", "Reprint 2026-27"],
+  "note": "The Example 9.1 box (block 6) is mostly chemical reaction schemes and compound-name labels rendered as graphics (not present in the text layer at all, unlike the box's own instructional sentence which is in the text layer) -- so the whole box is deferred to the special transcriber rather than partially transcribing it, to avoid guessing at equation content. The text layer shows 'Example 9.1' and 'Solution' repeated five times each inside the box region; this is a duplicate-glyph artifact of the stylized heading font in the PDF, not actual repeated text on the page. Previous attempt's low similarity score is consistent with the known limitation in rule 9 (paragraph-only text compared against the whole page's text layer, which also contains headings/box text/equation-adjacent artifacts) -- paragraph blocks here were re-verified against the image and text layer and are faithful as transcribed."
+}

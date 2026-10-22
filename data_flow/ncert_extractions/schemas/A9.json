@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A9.json",
+  "title": "A9 output files: ncert/change_log.csv and ncert/deleted_topics.csv",
+  "description": "A9 is pure SCRIPT (write_change_log.py), no agent. It writes TWO csv files in one pass (Section 9/A9 Writes; Section 6.4 column lists). Since this project's schemas/<STEP>.json convention is one JSON Schema file per step, this schema models A9's combined output as one JSON object with two arrays — change_log_rows (one per non-identical A7/A8 pair, per Section 6.4's change_log.csv columns) and deleted_topics_rows (one per A6 'removed' passage, per Section 6.4's deleted_topics.csv columns). A build turning this into the actual two CSV files just emits one array per file; this is a design choice of this build, not a literal quote from the spec (which gives column lists, not a JSON shape, for these two csv files).",
+  "type": "object",
+  "required": ["change_log_rows", "deleted_topics_rows"],
+  "additionalProperties": false,
+  "properties": {
+    "change_log_rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "change_id", "chapter_id", "subtopic_id", "old_passage_id", "new_passage_id",
+          "change_type", "old_fact", "new_fact", "could_flip_an_answer",
+          "old_text", "new_text", "affected_questions", "approval"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "change_id": { "type": "string", "pattern": "^CL-[0-9]{4}$" },
+          "chapter_id": { "type": "string" },
+          "subtopic_id": { "type": "string", "description": "The subtopic the changed passage(s) link to, or 'none'." },
+          "old_passage_id": { "type": ["string", "null"] },
+          "new_passage_id": { "type": ["string", "null"] },
+          "change_type": {
+            "type": "string",
+            "enum": ["fact_changed", "fact_removed", "fact_added", "wording_only"],
+            "description": "A8's resolved change_type (Section 17.1); 'unsure' from a raw A8 run must not reach this log unresolved."
+          },
+          "old_fact": { "type": "string" },
+          "new_fact": { "type": "string" },
+          "could_flip_an_answer": { "type": "boolean" },
+          "old_text": { "type": "string", "description": "The older passage's full text (or the relevant span)." },
+          "new_text": { "type": "string", "description": "The latest passage's full text (or the relevant span)." },
+          "affected_questions": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^Q-[0-9]{6}$" },
+            "description": "Empty at A9 write time; filled after Stage D from every question whose D4/D5 evidence cites either passage (Section 9/A9 procedure)."
+          },
+          "approval": {
+            "type": "string",
+            "description": "'pending' when A9 first writes the row (Section 9/A9 Writes line); changed only through a Stage F decision. No fixed enum is given in the spec beyond this, so this build does not invent one."
+          }
+        }
+      }
+    },
+    "deleted_topics_rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["old_passage_id", "chapter_id", "old_pages", "heading", "subtopic_hint"],
+        "additionalProperties": false,
+        "properties": {
+          "old_passage_id": { "type": "string" },
+          "chapter_id": { "type": "string" },
+          "old_pages": { "type": "string", "description": "Page range in the older edition, e.g. '160-161'." },
+          "heading": { "type": "string", "description": "The older edition's own heading text for this passage." },
+          "subtopic_hint": {
+            "type": "string",
+            "description": "Best-guess subtopic name for a removed topic with no latest-edition subtopic id (it was never linked to one, by definition of 'removed')."
+          }
+        }
+      }
+    }
+  }
+}

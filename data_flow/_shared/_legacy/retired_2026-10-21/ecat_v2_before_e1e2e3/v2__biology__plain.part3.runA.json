@@ -1,0 +1,154 @@
+{
+  "group": "v2__biology__plain.part3",
+  "ratings": [
+    {
+      "question_id": "2015_A#q059",
+      "concept": "X-linked recessive inheritance across two generations: an affected father passes his X to every daughter and to no son, so the carrier daughters put each of their sons at one-half risk",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that an affected father transmits his X chromosome to every daughter, so all F1 daughters are carriers, strikes out option 4 ('Nil'), since a carrier mother's sons cannot all be unaffected.",
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "4",
+          "route": "follows only the F1 son's line and leaves the F1 daughters' line out of the account: the colour-blind father gives his sons a Y, so those sons are unaffected and their sons receive an unaffected X, which yields 'Nil'; the omitted term is the carrier daughters, through whom the grandsons are at risk"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "no line in this pedigree yields a certainty of 1: the F1 daughters are heterozygous carriers, so each of their sons is affected with probability one half, and the F1 sons carry their father's Y, so their sons are affected with probability zero; neither one half nor zero can be combined into 1, so no route reaches this option"
+        }
+      ],
+      "verdicts": ["arguable_key"],
+      "reason": "This question requires applying the X-linked transmission rule twice over, to the F1 and then to the F2, demonstrated by the stem's 'a woman with normal sight who has no history of colour blindness in her family', which fixes the mother as homozygous normal and so makes every F1 daughter a carrier.",
+      "note": "arguable_key, not an overturned key: option 1 (0.25) is defensible on a reasonable reading, because 'grandson' can be read over all the grandsons of the couple, in which case the half of the grandsons descended from the unaffected F1 son are at zero risk and the overall figure is 0.25, while reading it as a grandson through the carrier daughter gives the stored key's 0.5. The tag follows the printed key (option 2) and no trap is written on option 1, since the device there would be a reading of the stem rather than an error. Traps are confined to options 3 and 4, neither of which is defensible under either reading. has_figure is true with figure_image at figures_agent/2015_A/q059.png; the stem is complete as text and needs no figure."
+    },
+    {
+      "question_id": "2015_A#q060",
+      "concept": "Ectopic pregnancy: implantation of the embryo at a site other than the uterus, most often in the fallopian tube",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that 'ectopic' names a place and not a cause strikes out options 1, 2 and 4 on the opening words alone - they speak of hormonal imbalance, genetic abnormality and a defective embryo - while option 3 alone names a site, 'at site other than uterus'.",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "keeps the key's sentence frame and reverses its locative: 'Implantation of defective embryo in the uterus' against the key's 'Implantation of embryo at site other than uterus', so the one clause that carries the definition is printed the other way round"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "1",
+          "route": "states the description of an adjacent disorder of pregnancy rather than this one: 'Pregnancies terminated due to hormonal imbalance' is spontaneous abortion, where the failure is hormonal maintenance of the pregnancy, not the site of implantation"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "names another adjacent category, 'Pregnancies with genetic abnormality', which is the chromosomal-disorder group of pregnancy complications; the families differ from ectopic pregnancy, whose defining feature is anatomical site"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored definition, demonstrated by option 3's 'Implantation of embryo at site other than uterus', which is the term's definition stated outright rather than a consequence to be worked out.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q061",
+      "concept": "Membrane-bound versus non-membranous cell components: ribosomes and chromosomes have no membrane, lysosomes, Golgi, mitochondria, nuclei and endoplasmic reticulum do",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that ribosomes have no bounding membrane strikes out options 2, 3 and 4, each of which prints 'ribosomes' inside its bundle, and leaves option 1 as the only bundle without it.",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "'Nuclei, ribosomes and mitochondria' bundles two membrane-bound organelles with one that has none; the claim that fails is ribosomes, and because the stem asks for organelles 'with membranes' the whole bundle falls with it"
+        },
+        {
+          "label": "half_true",
+          "option": "4",
+          "route": "'Endoplasmic reticulum, ribosomes and nuclei' is the same bundle rebuilt from different membrane-bound parts, and fails on the same single member, ribosomes"
+        },
+        {
+          "label": "half_true",
+          "option": "3",
+          "route": "'Chromosomes, ribosomes and endoplasmic reticulum' holds only one membrane-bound member; the two claims that fail are chromosomes, which are condensed DNA and protein with no bounding membrane, and ribosomes"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying one stated criterion to each named component, demonstrated by the stem's 'Cellular organelles with membranes are:' standing over bundles of three, so that every item in a bundle has to satisfy the criterion for the option to stand.",
+      "note": "Structure is several_independent_checks rather than single_step because each option is a bundle of three components and the stem's criterion must hold for all three; the one-fact shortcut about ribosomes is recorded on the strategy axis, where the rulebook puts shortcuts, and does not shorten the demand the question makes."
+    },
+    {
+      "question_id": "2015_A#q062",
+      "concept": "Mycoplasma is the wall-less prokaryote; Nostoc has a mucopeptide wall, Aspergillus a chitin wall and Funaria a cellulose wall",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Nostoc is the other prokaryote on the list, and the route that reaches it is the rule 'the wall-less organism is the prokaryotic one'; Nostoc is a cyanobacterium with a mucopeptide cell wall, so the member of the family named here is the wrong prokaryote rather than the wrong kind of organism"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored fact about one named organism, demonstrated by the stem 'Cell wall is absent in:' having option 4 'Mycoplasma' as its whole content, with nothing in the stem to apply or compute.",
+      "note": "Options 2 ('Aspergillus') and 3 ('Funaria') carry no trap: each is a bare organism name from a different group with a well-known wall, and no route can be named that lands on one rather than the other, so under rule 4 nothing is written for them. Strategy is empty because the question is settled by the single fact that is also the answer; there is no shortcut distinct from the answer itself."
+    },
+    {
+      "question_id": "2015_A#q063",
+      "concept": "Attribution in classical genetics: Morgan coined the term linkage from his Drosophila crosses, while Sutton and Boveri are the chromosomal theory of inheritance",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "scientist_swap",
+          "option": "1",
+          "route": "attributes the coining of 'linkage' to W. Sutton, whose published contribution with Boveri is the chromosomal theory of inheritance; the two names in play are Sutton and Morgan"
+        },
+        {
+          "label": "scientist_swap",
+          "option": "3",
+          "route": "attributes it to T. Boveri, the other half of the Sutton-Boveri chromosomal theory; the two names in play are Boveri and Morgan"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored attribution with no subject reasoning behind it, demonstrated by the stem 'The term linkage was coined by' and by all four options being bare personal names.",
+      "note": "Option 4 is stored as 'G. Mende', a truncation of G. Mendel - the final letter is lost in our record. Per rulebook section 7 I do not tag the damage as the question's shape: no trap is written on option 4, even though an attribution trap is the obvious reading, because the option as stored is not the option as printed. The truncation is a repair task. I did not record source_damage_artifact for it: the name is still uniquely identifiable, the key is option 2 and is not in doubt, and the two traps written are sited on options 1 and 3, which are undamaged, so nothing tagged here rests on the missing letter. The stem also carries the typographic artifact ''linkage'' with doubled apostrophes for quotation marks."
+    },
+    {
+      "question_id": "2015_A#q064",
+      "concept": "Which linkage joins each class of biomolecule: phosphodiester in nucleic acids, ester in glycerides, glycosidic in polysaccharides, peptide in polypeptides",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "offers a true fact about a different member of the same family: amino acids in a polypeptide are joined by peptide bonds, not phosphodiester bonds, so the member named is the wrong biomolecule class for the linkage the stem asks about"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "the same device on another member: monosaccharides in a polysaccharide are joined by glycosidic bonds"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "the same device again: fatty acids in a diglyceride are held by ester bonds to glycerol"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored association between a bond name and a biomolecule class, demonstrated by option 1's 'Nucleic acids in a nucleotide' being the only option naming the nucleic-acid family, whose backbone is the phosphodiester linkage.",
+      "note": "The key option's wording is inverted relative to the other three: it reads 'Nucleic acids in a nucleotide' where the pattern of options 2 to 4 ('X in a Y', monomer in polymer) would give 'nucleotides in a nucleic acid'. The inversion is in the printed option, not in our storage - the other three options are consistent with each other - so the question is tagged as printed and the key is not re-judged; the phosphodiester bond is unambiguous either way."
+    }
+  ],
+  "group_note": "Six questions grouped on the printed shape 'plain', and on inspection they are plain in shape but not uniform in demand, so the group was kept consistent by applying two explicit tests to all six rather than by forcing one label across them. Test one, structure: does reaching the printed answer require a verdict on more than one item? Only where the question forces it. q061's options each bundle three components that must all satisfy 'with membranes', so it is several_independent_checks; q059 is the only one where one result feeds the next - the F1 daughters must be established as carriers before the F2 risk can be stated - so it alone is multi_step_dependent; the remaining four (q060, q062, q063, q064) are settled by one stored fact and are single_step. Shortcuts were deliberately kept off this axis and put on the strategy axis, which is what the rulebook's rebuild was for: q061 has a one-fact shortcut (ribosomes) and is still several_independent_checks, because the shortcut is a strategy, not the demand. Test two, demand: is a criterion applied to the case, or is one stored fact the whole answer? q059 and q061 apply something stated - the X-linked transmission rule, and the criterion 'with membranes' - and are application; q060, q062, q063 and q064 are recall, each decided by one taught association (a definition, an organism's wall, an attribution, a bond name). None is concept_discrimination, because in no case are the wrong options the one neighbouring concept to the key, and none is calculation: q059's arithmetic is a single halving carried by the rule, not a computation, which is why it is application rather than calculation. Elimination was recorded three times and withheld three times, on one consistent rule - name a fact and the options it strikes out, where that fact is not simply the answer. q059 (the father's X reaches every daughter, striking option 4), q060 ('ectopic' names a site, striking the three options that name causes) and q061 (ribosomes have no membrane, striking three bundles) qualify; q062, q063 and q064 do not, because in each the only fact available is the answer itself and striking the others adds nothing. On the trap axis the recurring device in this group is an option that states a true fact about a different member of the same family - other_one_fact on q062's Nostoc and on all three wrong options of q064 - and the second recurring device is a bundle that holds one failing member, half_true on all three wrong options of q061. Devices were written only where the option and the route could both be named: q062 carries one trap and not three, because its options 2 and 3 are bare organism names with no route to distinguish them, and q059 carries two rather than three because its option 1 is a defensible reading of 'grandson' rather than an error, which is recorded as arguable_key instead. q063's option 4 is left untagged because our record truncates 'G. Mendel' to 'G. Mende', and rulebook section 7 forbids tagging our own damage as the question's shape. No trap in this packet is placed on an official answer."
+}

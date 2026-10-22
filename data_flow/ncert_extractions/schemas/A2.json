@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A2.json",
+  "title": "A2 agent output (a2-page-reader)",
+  "description": "Section 9/A2 'Agent output' line and the a2-page-reader agent file (Appendix B), including its worked example.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "blocks", "first_block_continues_from_previous", "last_block_continues_on_next",
+        "running_header_footer_removed", "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "blocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/block" }
+        },
+        "first_block_continues_from_previous": {
+          "type": "boolean",
+          "description": "True when the page starts mid-sentence, mid-table or mid-box, judged against previous_page_last_block."
+        },
+        "last_block_continues_on_next": { "type": "boolean" },
+        "running_header_footer_removed": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "The literal header/footer/page-number strings the agent identified and excluded from block text."
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } }
+    }
+  ],
+  "definitions": {
+    "block": {
+      "type": "object",
+      "required": ["n", "kind", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "n": { "type": "integer", "minimum": 1, "description": "1-based reading order on this page." },
+        "kind": {
+          "type": "string",
+          "enum": ["paragraph", "heading", "table", "figure", "box", "equation", "list"]
+        },
+        "text": {
+          "type": "string",
+          "description": "Copied from the text layer when it matches the image; empty string when needs_special is true (A2S fills it in)."
+        },
+        "needs_special": {
+          "type": "boolean",
+          "default": false,
+          "description": "True for table/figure/equation blocks the special transcriber (A2S) must handle."
+        },
+        "bbox": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 4,
+          "maxItems": 4,
+          "description": "[x0, y0, x1, y1] in image pixels. Required when needs_special is true."
+        },
+        "continues_from_previous": {
+          "type": "boolean",
+          "description": "Set on the first block only, mirroring first_block_continues_from_previous."
+        },
+        "continues_on_next": {
+          "type": "boolean",
+          "description": "Set on the last block only, mirroring last_block_continues_on_next."
+        },
+        "bold_terms": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Every substring of `text` that prints BOLD (boldface weight) in the source, copied character-for-character as it appears in `text`, in reading order, each exactly once even if the same term is bold more than once in this block. NCERT bolds its own key terms deliberately, and those are the terms most likely to be the subject of a question. Omit entirely (or leave empty) when the block has no bold text -- do not invent it for an unbolded term, and never include an ITALIC-only term (species names, book titles) here; it belongs in `italic_terms` instead. Only true bold weight counts."
+        },
+        "italic_terms": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Every substring of `text` that prints in ITALIC (and not bold) in the source, copied character-for-character as it appears in `text`, in reading order, each exactly once even if the same term is italic more than once in this block. NCERT italicises its own definition sentences, its etymologies and its questions to the reader, which is exactly the sentence a PYQ question quotes. Omit entirely (or leave empty) when nothing in the block is italic -- do not invent it for an unitalicised term. EXCLUDE the single-letter italic scalar symbols of physics/maths typesetting (r, q, E, theta): that italic names a typographic convention, not a piece of the book's own text, and is the same carve-out as `bold_terms`' bold-vector exclusion. Exclude anything already listed in `bold_terms` -- a term is bold OR italic here, never both."
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "needs_special": { "const": true } }, "required": ["needs_special"] },
+          "then": { "required": ["bbox"] }
+        }
+      ]
+    }
+  }
+}

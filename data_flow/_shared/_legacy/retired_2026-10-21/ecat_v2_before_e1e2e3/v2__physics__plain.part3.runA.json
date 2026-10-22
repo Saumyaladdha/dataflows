@@ -1,0 +1,132 @@
+{
+  "group": "v2__physics__plain.part3",
+  "ratings": [
+    {
+      "question_id": "2015_A#q148",
+      "concept": "Ideal gas law rearranged as M = ρRT/P: molar mass ratio from a density ratio and a pressure ratio at the same temperature",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "estimation"
+      ],
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "uses M ∝ 1/P alone and drops the density factor, giving P_B/P_A = 1/2"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "uses the density ratio inverted and no pressure factor, giving ρ_B/ρ_A = 1/1.5 = 2/3"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "quotes the pressure ratio itself, P_A/P_B = 2, as the molar mass ratio"
+        }
+      ],
+      "reason": "This question requires one rearrangement of the gas law with the constants cancelling, demonstrated by the stem \"the pressure of a being twice that of B\" and \"the density of A is found to be 1.5 times the density if B\", which give M_A/M_B = 1.5 × 1/2 = 3/4.",
+      "note": "The stem's \"the density if B\" is an obvious typo for \"of B\" in our record; it does not change what is asked. strategy_available carries estimation because R and T cancel and the answer is the product of two given ratios — the rulebook retires the old ratio_based demand to calculation plus this strategy."
+    },
+    {
+      "question_id": "2015_A#q149",
+      "concept": "Consequences of a central gravitational force on an elliptical orbit: acceleration always along the radius to the earth's centre, angular momentum constant in magnitude and direction, total mechanical energy constant, speed and momentum varying",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "\"changes in direction, but its magnitude remains constant\" gets the constant magnitude right and fails on the direction: a central force exerts no torque about the centre, so the angular momentum vector is fixed in direction too"
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "3",
+          "route": "periodic variation belongs to the kinetic and potential energies separately, not to the total mechanical energy, which is conserved — the option answers for the neighbouring quantity"
+        },
+        {
+          "label": "condition_ignored",
+          "option": "4",
+          "route": "drops the stem's stated condition \"moving in an elliptical orbit\": for a circular orbit the speed and so the magnitude of the linear momentum would indeed be constant"
+        }
+      ],
+      "reason": "This question requires a separate verdict on four claims about a central-force orbit, demonstrated by the key option \"The acceleration of S is always directed towards the centre of the earth\", which is the defining property of the gravitational force on the satellite.",
+      "note": "Option 4 is printed in our record as \"remains constant is magnitude\" and is read as \"in magnitude\"; the typo does not change the claim being judged."
+    },
+    {
+      "question_id": "2015_A#q150",
+      "concept": "Forward-biased diode in series with a resistor: subtract the barrier (knee) voltage from the e.m.f. before applying Ohm's law",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "1",
+          "route": "omits the 0.5 V barrier potential from the voltage sum and divides the full e.m.f. by R: 3.5/100 = 35 mA"
+        },
+        {
+          "label": "sign_reversed_magnitude_right",
+          "option": "3",
+          "route": "right method and right magnitudes with the sign of the barrier term inverted — adds 0.5 V instead of subtracting it: 4.0/100 = 40 mA"
+        }
+      ],
+      "reason": "This question requires a net driving voltage before Ohm's law, demonstrated by the stem \"If the barrier potential developed across the diode is 0.5 V\", which gives (3.5 − 0.5)/100 = 30 mA.",
+      "note": "has_figure is true (figures_agent/2015_A/q150.png) and the stem says \"In the given figure\", but R, the e.m.f. and the barrier potential are all printed in the stem, so the question is answerable as stored and is not treated as source_incomplete. Option 4 (20 mA) would need a driving voltage of 2 V, which no combination of the stem's numbers produces; no route could be named, so it carries no trap."
+    },
+    {
+      "question_id": "2015_A#q151",
+      "concept": "Orbital speed from surface gravity: GM = gR², so v = R√(g/(R+h)) for a satellite at height h",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "estimation"
+      ],
+      "traps": [],
+      "reason": "This question requires substituting g and the earth's radius into the orbital-speed relation, demonstrated by the stem's data \"height of 0.25 × 10^6 m above the surface of earth\", \"earth's radius is 6.38 × 10^6 m\" and \"g = 9.8 ms^-2\", which give v = √(gR²/(R+h)) ≈ 7.76 km s^-1.",
+      "note": "traps is empty by decision. The candidate mis-steps were tried and none lands on a printed option: using R instead of R+h gives 7.91 km/s, √(g(R+h)) gives 8.06 km/s, and the escape-velocity form gives 11.2 km/s, while the distractors read 6.67, 8.56 and 9.13 km/s. Since no route could be named for any of them, rule 4 means no tag; unlike q178 in packet v2__physics__plain.part7 the route space here is not small enough to demonstrate that no route exists, so no_derivation_route was not asserted either. (6.67 echoing the digits of G = 6.67 × 10^-11 was noticed but is not a device that could be shown, so it is recorded here only.)"
+    },
+    {
+      "question_id": "2015_A#q152",
+      "concept": "Uniform circular motion read off a parametric position vector: radius A, acceleration along −R of magnitude v²/R, and speed v = ωA = 2π × 4 = 8π m/s",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "\"Patch [path] of the particle is a circle of radius 4 meter\" is true, since the two components give x² + y² = 16, and the task's polarity is \"Which one of the following statements is wrong\", so a true option is the wrong selection"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "\"Acceleration vector is along −R\" is true for circular motion, and the task asks for the wrong statement"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "\"Magnitude of acceleration vector is v²/R\" is true, and the task asks for the wrong statement"
+        }
+      ],
+      "reason": "This question requires applying the circular-motion relations to a given vector and grading four claims, demonstrated by the key option \"Magnitude of the velocity of particle is 8 meter/second\", since ω = 2π rad/s and A = 4 m give v = ωA = 8π ≈ 25.1 m/s.",
+      "note": "Option 1 reads \"Patch of the particle\" in our record, an obvious typo for \"Path\"; it does not change the claim being judged."
+    },
+    {
+      "question_id": "2015_A#q153",
+      "concept": "Harmonics of a string fixed at both ends: consecutive harmonics differ by the fundamental, so f1 = 420 − 315 Hz",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [],
+      "verdicts": [
+        "source_damage_artifact"
+      ],
+      "reason": "This question requires the spacing of consecutive harmonics, demonstrated by the stem's \"resonant frequencies of 420 Hz and 315 Hz\" with no resonance between them, which makes them the 4th and 3rd harmonics of 105 Hz.",
+      "note": "Source damage, so E5 is empty under rulebook rule 5 and no trap is written: options 1 and 4 are both printed as \"105 Hz\" in our record — a duplicated option, which section 5a lists as our own extraction damage and never a trap — and the stem's question sentence is mangled as \"There are no other resonant frequency for this string is:\", which has lost the words that ask for the lowest resonant frequency. E3 and E4 are still filled because the numbers and the relation are intact and the key (option 1, 105 Hz) is the value 420 − 315 gives; the duplicate option and the stem sentence need repair before E5 is attempted."
+    }
+  ],
+  "group_note": "All six were read as structure=plain and all six are plain_mcq on E1, so the grouping holds. One policy was applied so that like items get like labels: every member whose answer is a number computed from the stem's numbers carries calculation (q148, q150, q151, q153), and the two members whose four options are rival claims to be graded carry application, because there a known rule is applied to a stated case rather than a number produced (q149 central-force conservation, q152 the circular-motion relations). solution_structure then separates them honestly: single_step where one relation is substituted once (q148, q153), multi_step_dependent where a second stage needs the first stage's result (q150 net voltage then Ohm's law, q151 GM = gR² then v = √(GM/r)), and several_independent_checks for the two statement-grading items, since four verdicts combined are not four dependent steps. On E5 the two negated items (q149, q152) are treated alike — every true option gets true_statement_trap with the polarity named — except that q149's option 4 earns the more specific condition_ignored, because the stem prints the condition (\"elliptical orbit\") that the option drops, and the tie-break in section 5 prefers the label that says more. Two members end with an empty traps list and say why in their notes: q151 because no named route reaches any distractor, and q153 because it is damaged (duplicated 105 Hz option) and rule 5 forbids a trap there. estimation is carried by the two items where constants cancel or a known benchmark brackets the answer (q148, q151); no member offered a demonstrable elimination shortcut, so that label is used nowhere in this packet."
+}

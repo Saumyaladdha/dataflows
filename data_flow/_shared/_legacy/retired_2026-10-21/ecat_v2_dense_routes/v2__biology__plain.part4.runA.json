@@ -1,0 +1,173 @@
+{
+  "group": "v2__biology__plain.part4",
+  "ratings": [
+    {
+      "question_id": "2015_A#q065",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Human deciduous dentition: the milk set carries incisors, canines and molars but no premolars",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "the task is negated (\"differs from permanent dentition in not having\"); incisors are present in the milk set, so option 1 answers the un-negated question \"which type is present\""
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "the task is negated; canines are present in the milk set, so option 2 is a type that IS there"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "the task is negated; deciduous molars are present and are the very teeth the permanent premolars later replace, so option 4 is true where the absent type is asked for"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored dental formula read under a negated task, demonstrated by the stem's \"in not having one of the following type of teeth\" over four tooth types of which only premolars are missing from the milk set.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q066",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "definition_term",
+      "concept": "Protoplast: what remains of a plant cell once the cell wall is removed",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": [
+        "source_damage_artifact"
+      ],
+      "reason": "This question requires one stored definition of a named cell preparation, demonstrated by the stem \"A protoplast is a cell:\" standing over four one-line completions with no data to work from.",
+      "note": "ARRIVED DAMAGED, tagged only as far as is certain (rulebook section 7). The keyed option 1 as stored reads \"Without division\", which is not a property that defines any named cell preparation, and option 4 reads \"Undergoing division\" - the two are contradictory wordings of one and the same axis, so the stored option set carries one axis twice and the defining property of a protoplast (the absence of the wall) not at all. One of the four options as stored is therefore not the printed text. Because the keyed option's own wording is in doubt, no wrong option can be tied to an option-and-route pair, traps is empty, source_damage_artifact is recorded and a repair against the printed paper is needed. The key is not re-judged."
+    },
+    {
+      "question_id": "2015_A#q067",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "organism_characteristic",
+      "concept": "Diatoms (Chrysophyceae): the silicified wall in two overlapping halves, the frustule, that fits together like a soap box",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "names slime moulds, a different member of the protist series, whose feeding plasmodium has no cell wall at all, so the wall fact that belongs to them is its absence, not two overlapping shells"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "names euglenoids, another member of the same series, whose covering is a proteinaceous pellicle rather than a wall, so the fact attached to them is a flexible pellicle"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "names dinoflagellates, the member whose wall fact is nearest: a stiff cellulose armour of plates, which is a divided wall but of many plates rather than the stem's \"two thin overlapping shells which fit together\""
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored wall fact for a named protist group, demonstrated by the stem's \"two thin overlapping shells which fit together\", the description of the diatom frustule.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q068",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Cloning vector: the DNA molecule into which the gene of interest is ligated so that it can be carried and replicated in a host",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "look_alike_term",
+          "option": "1",
+          "route": "offers \"Carrier\", the plain-English near-synonym of the technical term \"Vector\"; the two words describe the same action but only the second is the chapter's name for the DNA molecule, while \"carrier\" is used in genetics for an individual harbouring a recessive allele"
+        },
+        {
+          "label": "fabricated_term",
+          "option": "2",
+          "route": "offers \"Transformer\", which names no molecule or tool in the gene-cloning vocabulary; the chapter's related word is transformation, the uptake of DNA by a host cell, and no DNA molecule is called a transformer"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "names \"Template\", a different member of the same chapter's vocabulary: the template is the strand that is COPIED during replication or PCR, not the molecule the gene of interest is integrated into"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored term from the recombinant-DNA vocabulary, demonstrated by the stem's \"to which the gene of interest is integrated for cloning\", which is the definition of the vector.",
+      "note": "fabricated_term on option 2 is recorded from the vocabulary of the topic as the question itself presents it; the claim is that no DNA molecule bears this name, not an assertion about any reader."
+    },
+    {
+      "question_id": "2015_A#q069",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "life_cycle",
+      "concept": "Angiosperm male gametophyte: the mature pollen is three-celled - one vegetative cell and two male gametes formed by division of the generative cell",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "counts all three cells of the mature pollen grain as gametes, that is, tallies the vegetative cell among the sperms, which turns two sperms plus one vegetative cell into \"Three sperms\""
+        },
+        {
+          "label": "intermediate_value",
+          "option": "3",
+          "route": "reports the two-celled stage, the correct intermediate: at shedding the pollen holds one vegetative and one generative cell, and option 3's \"Single sperm and a vegetative cell\" is that stage before the generative cell has divided"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "in the male gametophyte only the generative cell divides, and it divides once; no step in the sequence divides the vegetative cell, so no route produces the two vegetative cells option 4 prints"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires the stored cell composition of the mature pollen grain, demonstrated by the keyed option \"Two sperms and a vegetative cell\" against the stem's \"Male gametophyte in angiosperms produces\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q070",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "process",
+      "concept": "Coconut endosperm: the liquid is free-nuclear endosperm and the white kernel is the cellular endosperm formed later",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "names the nucellus, a different tissue of the same seed: persistent nucellus is the perisperm, a solid remnant, and it is not the liquid the stem names"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "names the innermost seed-coat layer, the tegmen, another tissue of the same seed; it is a dry covering and cannot be the fluid contents"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored identification of a seed tissue, demonstrated by the stem's \"Coconut water from a tender coconut\", the free-nuclear stage of the endosperm before it becomes cellular.",
+      "note": "Option 2 (\"Immature embryo\") carries no trap: the embryo of the coconut is a single small body embedded against one of the germ pores and has no bearing on the fluid, so no fact about it makes it the answer and no route can be named. Tagged as printed."
+    }
+  ],
+  "group_note": "All six were read as the same printed shape - one question, four bare answers, no lettered block or list - and were kept consistent by three stated rules. (1) DEMAND: every member is `recall`, because in each one a single stored fact (a dental formula, a wall type, a term, a cell count, a tissue identity) decides the answer and nothing is applied to a new case; no member was given `concept_discrimination`, because in none of them is the decision between two neighbouring concepts rather than between a known and an unknown fact. (2) STRUCTURE: every member is `single_step`. q065 looks like four checks but is not: one fact - that the milk set has no premolars - settles it, and the other three options are not independently verified so much as left standing. (3) TRAPS: tagged only where the specific fact that makes the option wrong can be named. q065 is the one negated member, so its three distractors carry `true_statement_trap` with the polarity quoted; the recall members carry `other_one_fact` wherever the distractor is the correct fact about a different member of the same family, with the member named each time (q067's three protist groups, q070's two seed tissues, q068's template). Two labels are used once each because nothing else fits as tightly: `look_alike_term` for q068's \"Carrier\", a plain-English synonym of the technical term, and `fabricated_term` for \"Transformer\", which names no molecule in the vocabulary. q069 is the member that differs most and the reason is its option set, which is built from counts rather than from names: its three distractors are a miscount (`calculation_slip`), the earlier two-celled stage of the same structure (`intermediate_value`) and an arrangement no division sequence produces (`no_derivation_route`). One member is not tagged on the trap axis at all: 2015_A#q066 arrived damaged - its keyed option reads \"Without division\" while option 4 reads \"Undergoing division\", two contradictory wordings of one axis, so the property that defines a protoplast is not present in the stored option set - and it therefore carries source_damage_artifact with empty traps. Options with no nameable route (q070 option 2) are left untagged and said to be so in the note rather than given a nearest label. No trap sits on any official answer. ON THE E1/E2/E3 AXES: all six are `plain_mcq` with no overlay, so the packet's `structure: plain` grouping key holds throughout. E2 splits on the options alone - `name_or_identify` where each option is a single term (q065, q067, q068, q070) and `pick_correct_statement` where each option is a claim printed in full (q066's completions of the definition, q069's cell compositions). E3 is set from the material: `example_list` for the dental formula (q065), `definition_term` for the two term questions (q066, q068), `organism_characteristic` for the protist wall feature (q067), `life_cycle` for the male gametophyte, which is a named generation with ploidy in it and so takes the more specific label over `process` (q069), and `process` for the free-nuclear stage of endosperm development (q070)."
+}

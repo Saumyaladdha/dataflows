@@ -1,0 +1,16 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 3, "no_change": true},
+    {"n": 5, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "Due to the electron releasing nature of alkyl group, it pushes electrons towards nitrogen and thus makes the unshared electron pair more available for sharing with the proton of the acid. Moreover, the substituted ammonium ion formed from the amine gets stabilised due to dispersal of the positive charge by the +I effect of the alkyl group.  Hence, alkylamines are stronger bases than ammonia. Thus, the basic nature of aliphatic amines should increase with increase in the number of alkyl groups. This trend is followed in the gaseous phase. The order of basicity of amines in the gaseous phase follows the expected order: tertiary amine > secondary amine > primary amine > NH₃. The trend is not regular in the aqueous state as evident by their pKb values given in Table 9.3. In the aqueous phase, the substituted ammonium cations get stabilised not only by electron releasing effect of the alkyl group (+I) but also by solvation with water molecules. The greater the size of the ion, lesser will be the solvation and the less stabilised is the ion. The order of stability of ions are as follows:",
+      "fixes": [
+        {"wrong": "NH3", "right": "NH₃"}
+      ]
+    },
+    {"n": 9, "no_change": true}
+  ],
+  "note": "n=7 had a flattened subscript (NH3 -> NH₃); it also contains pKb which prints with a true subscript b on the page that has no Unicode subscript-letter equivalent (see p009 note), so that part was left as plain text. All other blocks already matched the image exactly."
+}

@@ -1,0 +1,10 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {"kind": "missing", "what": "Example 9.2's worked solution is gone. The book prints under 'Solution' two labelled reaction chains: (i) CH3-CH2-Cl (Chloroethane) --Ethanolic NaCN--> CH3-CH2-C(triple bond)N (Propanenitrile) --reduction--> CH3-CH2-CH2-NH2 (Propan-1-amine), and (ii) C6H5-CH2-Cl (Chlorophenylmethane / Benzyl chloride) --Ethanolic NaCN--> C6H5-CH2-C(triple bond)N (Phenylethanenitrile / Benzyl cyanide) --H2/Ni--> C6H5-CH2-CH2-NH2 (2-Phenylethanamine). The render prints the word 'Solution' and then nothing.", "where": "the Example 9.2 box, lower third of the page"},
+    {"kind": "duplicated", "what": "The folio 'Chemistry 264' is printed twice - once as a line of text inside the Example 9.2 box, set as 'Chemistry264' with no space, and again in its proper place in the yellow-ruled footer at the foot of the page.", "where": "inside the Example 9.2 box, directly under 'Solution'"},
+    {"kind": "misplaced", "what": "That stray 'Chemistry264' folio sits inside the Example 9.2 box where the worked solution belongs, so the box's only content below 'Solution' is a page number.", "where": "bottom left of the Example 9.2 box"},
+    {"kind": "formatting", "what": "The labels 'Example 9.2' and 'Solution' are set in plain black roman type; the book sets both in blue underlined display script, which is what marks the box as a worked example. The blue tab bar down the left of the box is kept but faint.", "where": "the Example 9.2 box"}
+  ],
+  "note": "Compared method 5 (Gabriel phthalimide synthesis) with its two-row scheme, method 6 (Hoffmann bromamide degradation) with its equation, and the Example 9.2 box. The Gabriel scheme is complete - both rows, phthalimide / N-alkylphthalimide labels, the KOH, R-X and NaOH(aq) arrow reagents, the ONa+ product and the '(1 deg amine)' note - and the Hoffmann equation is complete with its Br2 in green and NH2 in magenta, though both are set smaller than the book and enclosed in added frames. All prose of methods 5 and 6 is present and in order. The loss is confined to the Example 9.2 solution; the blank lower half of the page follows from it."
+}

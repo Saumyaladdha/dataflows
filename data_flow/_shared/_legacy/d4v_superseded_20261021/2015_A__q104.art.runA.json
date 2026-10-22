@@ -1,0 +1,31 @@
+{
+  "link_type": "states_answer",
+  "derivation_steps": [],
+  "evidence": [
+    {
+      "for": "rule",
+      "passage_id": "BIO12L-CH04-P10",
+      "exact_line": "Mendel selected 14 true-breeding pea plant varieties, as pairs which were similar except for one character with contrasting traits."
+    },
+    {
+      "for": "answer",
+      "passage_id": "BIO12L-CH04-P10",
+      "exact_line": "Some of the contrasting traits selected were smooth or wrinkled seeds, yellow or green seeds, inflated (full) or constricted green or yellow pods and tall or dwarf plants (Figure 4.1, Table 4.1)."
+    },
+    {
+      "for": "option 4 Seed shape was used",
+      "passage_id": "BIO12L-CH04-P10",
+      "exact_line": "Some of the contrasting traits selected were smooth or wrinkled seeds, yellow or green seeds, inflated (full) or constricted green or yellow pods and tall or dwarf plants (Figure 4.1, Table 4.1)."
+    },
+    {
+      "for": "option 2 Seed colour was used",
+      "passage_id": "BIO12L-CH04-P09",
+      "exact_line": "Mendel investigated characters in the garden pea plant that were manifested as two opposing traits, e.g., tall or dwarf plants, yellow or green seeds."
+    }
+  ],
+  "supports_answer": "partly",
+  "missing": [
+    "option 1 Flower position was one of the characters Mendel used -- the prose never names it; it appears only in Table 4.1, and that table is carried as an image, so its text is absent from the passage layer (BIO12L-CH04-P11, the placeholder where Table 4.1 sits on page 002, has empty text)."
+  ],
+  "note": "Searched 4.1 MENDEL'S LAWS OF INHERITANCE and 4.2 INHERITANCE OF ONE GENE, which is where the subtopic 'Contrasting Traits Studied by Mendel in Pea' is printed, and then searched the whole of ncert/passages/BIO12L.jsonl for 'Axial', 'Terminal', 'Flower position', 'pod length', 'Inflated', 'Constricted' and 'Table 4.1'. The only hits in the entire book are the single 'inflated'/'constricted' pair inside BIO12L-CH04-P10; 'axial', 'flower position' and 'pod length' do not occur anywhere in BIO12L. Table 4.1, which is the only place the full seven character pairs are enumerated, is an image: its placeholder passage BIO12L-CH04-P11 (page 002, section 4.1) carries empty text. So the quoted prose proves that the pod character Mendel used was pod SHAPE (inflated/constricted) and pod COLOUR (green/yellow), never pod LENGTH, and proves seed shape and seed colour were used; what it cannot prove from text is that flower position was used. This is a gap in the extracted book text, not in the book: NCERT does carry flower position (axial/terminal) in Table 4.1 as printed art. A question whose answer depends on a table rendered as an image cannot be fully quoted by this step."
+}

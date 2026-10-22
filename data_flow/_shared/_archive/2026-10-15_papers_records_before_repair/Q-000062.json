@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000062",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:23"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "The temperature of a gas is $-50^\\circ\\mathrm{C}$. To what temperature the gas should be heated so that the rms speed is increased by 3 times?",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$669^\\circ\\mathrm{C}$",
+    "2": "$3295^\\circ\\mathrm{C}$",
+    "3": "$3097\\,\\mathrm{K}$",
+    "4": "$223\\,\\mathrm{K}$"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "23\nThe temperature of a gas is –50° C. To what temperature the gas should be heated so that the rms\nspeed is increased by 3 times?\n(1)\n669° C\n(2)\n3295° C\n(3)\n3097 K\n(4)\n223 K\n\n2\n9\nT\n​ =\n1\n273 −50 = 223 K\nT\n​ =\n2\n9 × 223 = 2007 K\nT\n​ −\n2\n273 = 1734 °C\n3295 °C\n",
+  "b4_script_options": {
+    "1": "669° C",
+    "2": "3295° C",
+    "3": "3097 K",
+    "4": "223 K\n\n2\n9\nT\n​ =\n1\n273 −50 = 223 K\nT\n​ =\n2\n9 × 223 = 2007 K\nT\n​ −\n2\n273 = 1734 °C\n3295 °C"
+  },
+  "official_answer": "2",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "2",
+  "b6_reason": "rms speed increased BY 3 times means new speed = 4x old speed (v_old + 3v_old); since v_rms is proportional to sqrt(T), T scales by 4^2=16.",
+  "b6_working": "T1 = -50+273 = 223 K. v2 = 4 v1 (increased by 3 times = old + 3x old). T2/T1 = (v2/v1)^2 = 16. T2 = 16 x 223 = 3568 K = 3568 - 273 = 3295 degC.",
+  "b6_confidence": "high",
+  "b6_note": "Phrase 'increased by 3 times' is ambiguous (could mean v2=3v1 giving T2=1734 degC, matching no option) vs v2=4v1 (old + 3x increase) giving T2=3295 degC, which matches option 2 exactly, so that is the intended reading.",
+  "b6_agrees_with_key": true
+}

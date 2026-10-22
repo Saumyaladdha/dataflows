@@ -1,0 +1,31 @@
+{
+  "kind": "table",
+  "header": [
+    "First position",
+    "U",
+    "C",
+    "A",
+    "G",
+    "Third position"
+  ],
+  "rows": [
+    ["U", "UUU  Phe", "UCU  Ser", "UAU  Tyr", "UGU  Cys", "U"],
+    ["", "UUC  Phe", "UCC  Ser", "UAC  Tyr", "UGC  Cys", "C"],
+    ["", "UUA  Leu", "UCA  Ser", "UAA  Stop", "UGA  Stop", "A"],
+    ["", "UUG  Leu", "UCG  Ser", "UAG  Stop", "UGG  Trp", "G"],
+    ["C", "CUU  Leu", "CCU  Pro", "CAU  His", "CGU  Arg", "U"],
+    ["", "CUC  Leu", "CCC  Pro", "CAC  His", "CGC  Arg", "C"],
+    ["", "CUA  Leu", "CCA  Pro", "CAA  Gln", "CGA  Arg", "A"],
+    ["", "CUG  Leu", "CCG  Pro", "CAG  Gln", "CGG  Arg", "G"],
+    ["A", "AUU  Ile", "ACU  Thr", "AAU  Asn", "AGU  Ser", "U"],
+    ["", "AUC  Ile", "ACC  Thr", "AAC  Asn", "AGC  Ser", "C"],
+    ["", "AUA  Ile", "ACA  Thr", "AAA  Lys", "AGA  Arg", "A"],
+    ["", "AUG  Met", "ACG  Thr", "AAG  Lys", "AGG  Arg", "G"],
+    ["G", "GUU  Val", "GCU  Ala", "GAU  Asp", "GGU  Gly", "U"],
+    ["", "GUC  Val", "GCC  Ala", "GAC  Asp", "GGC  Gly", "C"],
+    ["", "GUA  Val", "GCA  Ala", "GAA  Glu", "GGA  Gly", "A"],
+    ["", "GUG  Val", "GCG  Ala", "GAG  Glu", "GGG  Gly", "G"]
+  ],
+  "repeated_header": false,
+  "note": "Printed title: \"Table 5.1: The Codons for the Various Amino Acids\". This is the codon grid, not a plain row/column table: the printed header reads \"First position\" (left, with an arrow down the first column), \"Second position\" (a brace spanning the four column heads U, C, A, G) and \"Third position\" (right, with an arrow down the last column); header given as the six effective columns. Each first-position letter (U, C, A, G) is printed once, vertically centred against its block of four lines; it is placed on the first line of its block and the other three cells left empty. Crop over-includes one body line above (\"...s prepared which is given in Table 5.1.\") and one below (\"...nt features of genetic code are as follows:\"), both clipped at the left margin; excluded."
+}

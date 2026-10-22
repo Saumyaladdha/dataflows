@@ -1,0 +1,23 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "Thermonuclear fusion\n456\nThin lens formula\n326\nThreshold frequency\n392\nTokamak\n153\nToroid\n152\nTorque\non a current loop\n157\non a dipole\n31\nTotal internal reflection\n319\nTransformer\n259\nStep-down\n261\nStep-up\n261\nTruth table\n491\nUncertainty Principle\n400\nUnpolarised wave\n377\nUltraviolet rays\n282\nValence band\n469",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "Velocity selector\n140\nVisible rays\n282\nVoltage Regulator\n486\nVoltage sensitivity of a galvanometer\n165\nVoltmeter\n165\nVolume charge density\n32\nWattless current\n252\nWavefront\n353\nplane\n354\nspherical\n354\nWheatstone bridge\n118\nWork function\n394\nX rays\n283\nYoung’s experiment\n362\nZener\ndiode\n485\nbreakdown\n485"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "524",
+    "2022-23"
+  ],
+  "note": "BOOK BACK MATTER, NOT CHAPTER 14 CONTENT. This is printed page 524, the FIFTH AND LAST page of the book's INDEX (the chapter-14 PDF runs on past the chapter's real end into the book's back matter: answers, bibliography, index). An index is publishing furniture and MUST NOT be used as chapter-14 passage text, and no index line may be treated as chapter prose. It is transcribed only because the A2 schema rejects a zero-block page and so the page-coverage check can see the page was deliberately accounted for rather than dropped. previous_page_last_block was null, so continuation was judged from the p055 output I wrote immediately before this one, whose index run ended at 'Thermionic emission 388'; this page resumes the same alphabetical list at 'Thermonuclear fusion', and for an alphabetical index a column running past the page foot counts as a continuation, so first_block_continues_from_previous is true. Two columns, left first, matching the text layer's order: block n=1 is the left column (Thermonuclear fusion 456 ... Valence band 469) and block n=2 the right column (Velocity selector 140 ... breakdown 485). The index finishes here at the last entry 'Zener / breakdown 485' and only the bottom two-thirds of the page is blank below it, so last_block_continues_on_next is false. The chapter header banner 'Physics', the page number 524 and the reprint year 2022-23 are furniture and are listed as removed; note that the text layer emits '524' twice, once as a stray at the very top of the layer and once in list order after 'Valence band 469' (the footer's position in the layer) — both occurrences are the same page number and are covered by the single '524' entry in running_header_footer_removed. Copied exactly as the text layer spells it, including 'Voltage Regulator' and 'Uncertainty Principle' with their printed capitals. No equations, tables or figures on this page."
+}

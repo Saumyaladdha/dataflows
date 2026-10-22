@@ -1,0 +1,128 @@
+{
+  "group": "v2__biology__plain.part11",
+  "ratings": [
+    {
+      "question_id": "2015_A#q109",
+      "concept": "Deuteromycetes, the 'imperfect fungi': only the asexual stage is known, and the group works as saprophytic decomposers in mineral cycling",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Ascomycetes is the neighbouring class of the same table, defined by sexual ascospores in asci — the very stage whose absence defines the imperfect fungi"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "Basidiomycetes is another class of the same table, the mushrooms, rusts and smuts with basidiospores"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Phycomycetes is another class of the same table, the aquatic and moist-habitat fungi with motile zoospores"
+        }
+      ],
+      "reason": "This question requires one stored class-to-description association, demonstrated by the stem \"The imperfect fungi which are decomposers of litter and help in mineral cycling belong to:\" with the four fungal classes as the options.",
+      "note": "All four options are classes from the same NCERT fungal-classification table, so no securely-known fact strikes any of them out and strategy_available is empty."
+    },
+    {
+      "question_id": "2015_A#q110",
+      "concept": "Homology versus analogy and the evolution each implies: analogous structures from different ancestries indicate convergent evolution, homologous structures indicate divergent evolution",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Analogy pairs only with convergence and homology only with divergence, so the pairing itself strikes option 1, which couples \"Homologous structures\" with \"convergent evolution\".",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "1",
+          "route": "\"Homologous structures and represent convergent evolution\" gets convergent evolution right and fails on homologous, so the two halves of the option contradict each other"
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "2",
+          "route": "\"Homologous structures and represent divergent evolution\" is the published, internally consistent answer to the other standard version of this question — the forelimbs of a whale, a bat and a human — not to wings of a bird and an insect"
+        },
+        {
+          "label": "fabricated_term",
+          "option": "4",
+          "route": "\"Phylogenetic structures\" is not a category of structural comparison anywhere in the chapter, which names only homologous and analogous structures; the word phylogenetic occurs there for trees and relationships, never as a structure type"
+        }
+      ],
+      "reason": "This question requires separating analogy from homology and then naming the evolution it implies, demonstrated by each option pairing a structure type with an evolutionary pattern, as in \"Analogous structures and represent convergent evolution\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q111",
+      "concept": "Unisexual (monoecious) flowers: cucurbits such as cucumber bear separate staminate and pistillate flowers, unlike the bisexual flowers of onion, pea and China rose",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [],
+      "reason": "This question requires one stored fact about floral sexuality in a named plant, demonstrated by the stem \"Flower are unisexual in:\" with four familiar plants as the options.",
+      "note": "traps is empty by decision, not by omission: each of the three distractors is simply another taught plant whose flowers are bisexual, and none of them carries a device that can be tied to a specific competing fact or route, so per rulebook rule 4 nothing is written."
+    },
+    {
+      "question_id": "2015_A#q112",
+      "concept": "Biomagnification: the rise in concentration of a non-degradable toxicant at successive trophic levels of a food chain (DDT)",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "look_alike_term",
+          "option": "1",
+          "route": "\"Biogeochemical cycling\" against \"Biomagnification\": same bio- prefix, but it names the circulation of nutrients between the biotic and abiotic worlds, not a rise in concentration"
+        },
+        {
+          "label": "look_alike_term",
+          "option": "3",
+          "route": "\"Biodeterioration\" against \"Biomagnification\": same bio- prefix, but it names the degradation of materials by organisms"
+        },
+        {
+          "label": "look_alike_term",
+          "option": "4",
+          "route": "\"Biotransformation\" against \"Biomagnification\": same bio- prefix, but it names the metabolic conversion of a compound inside an organism"
+        }
+      ],
+      "reason": "This question requires one stored term for a described phenomenon, demonstrated by the stem \"Increase in concentration of the toxicant at successive trophic levels is known as :\" against four bio- prefixed terms.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q113",
+      "concept": "Grey matter of the spinal cord: the anterior (ventral) horn holds motor neuron cell bodies, so its loss removes voluntary motor output, while sensory input enters by the posterior horn",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "wrong_site_or_stage",
+          "option": "2",
+          "route": "sensory impulses enter through the posterior (dorsal) horn and dorsal root, so the option attaches a real function to the wrong horn of the same cord"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "commissural impulses travel in the fibres crossing between the two halves of the cord, a different named pathway of the same structure"
+        }
+      ],
+      "reason": "This question requires applying the known motor role of a named cell group to a lesion, demonstrated by the stem \"Destruction of the anterior horn cells of the spinal cord would result in loss of :-\" and the key \"Voluntary motor impulses\".",
+      "note": "Option 1, \"Integrating impulses\", is not a function named in the source for any one horn, so no competing fact could be pointed at and it carries no trap."
+    },
+    {
+      "question_id": "2015_A#q114",
+      "concept": "Water absorption in free-floating hydrophytes: Pistia takes up water over its whole submerged surface, so roots contribute little",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [],
+      "reason": "This question requires one stored fact about a named aquatic plant's water relations, demonstrated by the stem \"Roots play insignificant role in absorption of water in :\" with Pistia among three terrestrial crops.",
+      "note": "traps is empty by decision: Wheat, Sunflower and Pea are all terrestrial crops that absorb water through roots in the ordinary way, and no one of them carries a device beyond not being a hydrophyte, so per rulebook rule 4 no trap is written. This matches the treatment of q111 in the same packet."
+    }
+  ],
+  "group_note": "All six were read as structure=plain and all six are plain_mcq on E1, so the grouping holds. Four of them (q109, q111, q112, q114) are the same demand — a stem naming a term or property with four same-kind options, one stored association deciding it — and therefore carry identical labels, recall + single_step, as rule 0.7 requires of equal demands. Two differ, and the difference is stated rather than left implicit: q110 is the only item whose options pair two linked verdicts, so the structural verdict (analogous, not homologous) has to be settled before the evolutionary one follows from it, which is why it alone carries concept_discrimination and multi_step_dependent; q113 is the only item that applies a known anatomical fact to a new case (a lesion) rather than looking an association up, which is why it alone carries application. elimination is carried by q110 alone, where the fixed coupling of analogy with convergence names the option it strikes; elsewhere all four options are same-kind chapter terms and no shortcut was demonstrable. On E5, two items end with an empty traps list on purpose (q111, q114): their distractors are other taught plants with no competing fact attached, and inventing a route for them would be the guess the rulebook forbids. Where devices do exist they are option-specific — look-alike bio- terms in q112, the wrong horn of the cord in q113, a real answer to the whale-and-bat version of the question in q110."
+}

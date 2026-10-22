@@ -1,0 +1,97 @@
+{
+ "blocks": [
+  {
+   "n": 1,
+   "kind": "paragraph",
+   "text": "Example 3.5 A network of resistors is connected to a 16 V battery with internal resistance of 1Ω, as shown in Fig. 3.19: (a) Compute the equivalent resistance of the network. (b) Obtain the current in each resistor. (c) Obtain the voltage drops VAB, VBC and VCD.",
+   "continues_from_previous": false,
+   "bold_terms": [
+    "Example 3.5"
+   ],
+   "italic_terms": []
+  },
+  {
+   "n": 2,
+   "kind": "figure",
+   "needs_special": true,
+   "bbox": [
+    780,
+    480,
+    1290,
+    860
+   ],
+   "text": ""
+  },
+  {
+   "n": 3,
+   "kind": "paragraph",
+   "text": "Solution",
+   "bold_terms": [
+    "Solution"
+   ],
+   "italic_terms": []
+  },
+  {
+   "n": 4,
+   "kind": "paragraph",
+   "text": "(a) The network is a simple series and parallel combination of resistors. First the two 4Ω resistors in parallel are equivalent to a resistor = [(4 × 4)/(4 + 4)] Ω = 2 Ω.\nIn the same way, the 12 Ω and 6 Ω resistors in parallel are equivalent to a resistor of\n[(12 × 6)/(12 + 6)] Ω = 4 Ω.\nThe equivalent resistance R of the network is obtained by combining these resistors (2 Ω and 4 Ω) with 1 Ω in series, that is,\nR = 2 Ω + 4 Ω + 1 Ω = 7 Ω.",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 5,
+   "kind": "paragraph",
+   "text": "(b) The total current I in the circuit is",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 6,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    610,
+    1240,
+    880,
+    1330
+   ],
+   "text": ""
+  },
+  {
+   "n": 7,
+   "kind": "paragraph",
+   "text": "Consider the resistors between A and B. If I₁ is the current in one of the 4 Ω resistors and I₂ the current in the other,\nI₁ × 4 = I₂ × 4\nthat is, I₁ = I₂, which is otherwise obvious from the symmetry of the two arms. But I₁ + I₂ = I = 2 A. Thus,\nI₁ = I₂ = 1 A\nthat is, current in each 4 Ω resistor is 1 A. Current in 1 Ω resistor between B and C would be 2 A.\nNow, consider the resistances between C and D. If I₃ is the current in the 12 Ω resistor, and I₄ in the 6 Ω resistor,\nI₃ × 12 = I₄ × 6, i.e., I₄ = 2I₃\nBut, I₃ + I₄ = I = 2 A",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 8,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    610,
+    1740,
+    1015,
+    1820
+   ],
+   "text": ""
+  },
+  {
+   "n": 9,
+   "kind": "paragraph",
+   "text": "that is, the current in the 12 Ω resistor is (2/3) A, while the current in the 6 Ω resistor is (4/3) A.\n(c) The voltage drop across AB is\nVAB = I₁ × 4 = 1 A × 4 Ω = 4 V,\nThis can also be obtained by multiplying the total current between A and B by the equivalent resistance between A and B, that is,",
+   "bold_terms": [],
+   "italic_terms": [],
+   "continues_on_next": true
+  }
+ ],
+ "first_block_continues_from_previous": false,
+ "last_block_continues_on_next": true,
+ "running_header_footer_removed": [
+  "Physics",
+  "112",
+  "2022-23",
+  "EXAMPLE 3.5"
+ ],
+ "note": "Printed page 112. \"EXAMPLE 3.5\" is the vertical side-margin running tab, removed as furniture; the bold \"Example 3.5\" lead-in inside block n=1 is the example's own opening text and is kept. Fig. 3.19 (circuit) deferred whole with its FIGURE 3.19 caption; the two displayed equations (the I = ε/(R+r) line and the stacked-fraction \"Thus, I₃ = (2/3) A, I₄ = (4/3) A\" line) deferred to A2S. Subscripts I₁–I₄ read from the image; the text layer flattens them to I1–I4. V with letter subscripts (VAB, VBC, VCD) has no Unicode subscript form, so it is written flat as the page's text layer has it. Ω is written with the page's own U+2126 OHM SIGN, the character the text layer carries."
+}

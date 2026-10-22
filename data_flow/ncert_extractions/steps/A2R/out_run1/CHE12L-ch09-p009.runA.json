@@ -1,0 +1,21 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {
+      "kind": "formatting",
+      "what": "The book colour-codes the reacting groups in magenta throughout this page (NH3+, X-, NH2 in the NaOH regeneration equation, and every R-NH3+ / R-NH2 term inside the K, K[H2O] and Kb expressions). The render prints all of them in plain black, so the visual link between the acid and base forms is lost.",
+      "where": "the NaOH equation under the first paragraph, and the K / Kb equation block in the middle of the page"
+    },
+    {
+      "kind": "formatting",
+      "what": "The caption 'Table 9.3: pKb Values of Amines in Aqueous Phase' is set bold and centred over the table in the book; the render sets it plain, same size as body text, and left-aligned flush with the paragraph above, so it reads as a continuation of the preceding paragraph rather than a table title.",
+      "where": "immediately above Table 9.3"
+    },
+    {
+      "kind": "formatting",
+      "what": "Inside Table 9.3 the book italicises the locant prefix N in 'N-Methylmethanamine', 'N,N-Dimethylmethanamine', 'N-Ethylethanamine', 'N,N-Diethylethanamine', 'N-Methylaniline' and 'N,N-Dimethylaniline'; the render sets those N's upright. The book also left-aligns the amine names in the first column, the render centres them.",
+      "where": "Table 9.3, 'Name of amine' column"
+    }
+  ],
+  "note": "Compared block by block: the NaOH regeneration equation, both solubility/basicity paragraphs, the five-line K / Kb / pKb derivation, the two paragraphs on pKb values, and all ten rows of Table 9.3. All text, both equations and every table row and pKb number (3.38, 3.27, 4.22, 3.29, 3.00, 3.25, 9.38, 4.70, 9.30, 8.92) are present and correct; the page number 267 and the 'Amines' running foot are present. Only emphasis and colour differ. The bold 'Lewis base' is retained but set in a different (monospace-looking) face in the render; I treated that as the same formatting class rather than a separate finding. The white band below the table is simply the page ending early after reflow, not absent content."
+}

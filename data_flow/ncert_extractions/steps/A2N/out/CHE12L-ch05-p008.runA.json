@@ -1,0 +1,34 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "Intext Questions\n5.1 Write the formulas for the following coordination compounds:\n(i) tetraamminediaquacobalt(III) chloride\n(ii) potassium tetracyanidonickelate(II)\n(iii) tris(ethane–1,2–diamine) chromium(III) chloride\n(iv) amminebromidochloridonitrito-N-platinate(II)\n(v) dichloridobis(ethane–1,2–diamine)platinum(IV) nitrate\n(vi) iron(III) hexacyanidoferrate(II)\n5.2 Write the IUPAC names of the following coordination compounds:\n(i) [Co(NH₃)₆]Cl₃\n(ii) [Co(NH₃)₅Cl]Cl₂\n(iii) K₃[Fe(CN)₆]\n(iv) K₃[Fe(C₂O₄)₃]\n(v) K₂[PdCl₄]\n(vi) [Pt(NH₃)₂Cl(NH₂CH₃)]Cl",
+      "fixes": [
+        {"wrong": "[Co(NH3)6]Cl3", "right": "[Co(NH₃)₆]Cl₃"},
+        {"wrong": "[Co(NH3)5Cl]Cl2", "right": "[Co(NH₃)₅Cl]Cl₂"},
+        {"wrong": "K3[Fe(CN)6]", "right": "K₃[Fe(CN)₆]"},
+        {"wrong": "K3[Fe(C2O4)3]", "right": "K₃[Fe(C₂O₄)₃]"},
+        {"wrong": "K2[PdCl4]", "right": "K₂[PdCl₄]"},
+        {"wrong": "[Pt(NH3)2Cl(NH2CH3)]Cl", "right": "[Pt(NH₃)₂Cl(NH₂CH₃)]Cl"}
+      ]
+    },
+    {"n": 3, "no_change": true},
+    {"n": 4, "no_change": true},
+    {"n": 5, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "This type of isomerism arises in heteroleptic complexes due to different possible geometric arrangements of the ligands. Important examples of this behaviour are found with coordination numbers 4 and 6. In a square planar complex of formula [MX₂L₂] (X and L are unidentate), the two ligands X may be arranged adjacent to each other in a cis isomer, or opposite to each other in a trans isomer as depicted in Fig. 5.2.",
+      "fixes": [
+        {"wrong": "[MX2L2]", "right": "[MX₂L₂]"}
+      ]
+    },
+    {
+      "n": 9,
+      "corrected_text": "Other square planar complex of the type MABXL (where A, B, X, L are unidentates) shows three isomers-two cis and one trans. You may attempt to draw these structures. Such isomerism is not possible for a tetrahedral geometry but similar behaviour is possible in octahedral complexes of formula [MX₂L₄] in which the two ligands X may be oriented cis or trans to each other (Fig. 5.3).",
+      "fixes": [
+        {"wrong": "[MX2L4]", "right": "[MX₂L₄]"}
+      ]
+    }
+  ],
+  "note": "n=1 (the Intext Questions block) had all six Q5.2 formulae flattened; subscripts restored. n=7 and n=9 had the generic formulae [MX₂L₂] and [MX₂L₄] flattened — the 2 and 4 are ligand-count subscripts on X and L, not part of a number. The coordination numbers '4 and 6' in n=7's prose are full size on the page and left alone. n=3, n=4, n=5 carry no notation. No degree symbols, locants or primes on this page; cis/trans are italic, not notation, and were not touched."
+}

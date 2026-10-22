@@ -1,0 +1,6 @@
+{
+  "kind": "equation",
+  "latex": "= \\frac{2.31 \\times 10^{5}\\mathrm{J\\ mol}^{-1}}{6.022 \\times 10^{23}\\ \\mathrm{electrons\\ mol}^{-1}} = 3.84 \\times 10^{-19}\\,\\mathrm{J}",
+  "number": "",
+  "note": "target_box_in_crop [200,260,663,364] opens exactly at the top of the display fraction and extends well past it to take in the result line, so the fraction and '= 3.84 x 10^-19 J' are kept as one computation chain. Measured on the crop (863x436): the numerator band is y 262-288, the fraction bar y 299-300, the denominator y 306-331, and the result line y 348-374; the box's top edge matches the numerator exactly and its bottom edge at 364 reaches into the result line but stops 10 px short of its base, so the result is treated as inside. No other line begins within the box. Excluded as outside the box: '= 3.99 x 10^5 J mol^-1', 'The minimum energy needed to remove one mole of electrons from sodium', '= (3.99 -1.68) 10^5 J mol^-1', '= 2.31 x 10^5 J mol^-1' and 'The minimum energy for one electron' above; 'This corresponds to the wavelength' and the 'h' fragment below; and the left-hand column fragments ('-1)', 'mol^-1)', 'omatic', 'ate the', 'second'). No equation number is printed inside the box."
+}

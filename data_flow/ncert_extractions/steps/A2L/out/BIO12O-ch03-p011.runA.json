@@ -1,0 +1,38 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "full", "x0": 0.146, "x1": 0.884}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.025, 0.068, 0.240, 0.156],
+     "column": "full", "size_rel": 1.0, "fill": "#725221"},
+    {"n": null, "role": "rule_bar", "bbox": [0.242, 0.068, 0.975, 0.108],
+     "column": "full", "size_rel": 1.0, "fill": "#467534"},
+    {"n": null, "role": "running_header", "bbox": [0.827, 0.141, 0.881, 0.148],
+     "column": "full", "size_rel": 0.75, "align": "right", "font": "sans",
+     "text_color": "#212121"},
+    {"n": 1, "role": "paragraph", "bbox": [0.324, 0.168, 0.884, 0.240],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.324, 0.244, 0.884, 0.425],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.324, 0.429, 0.884, 0.470],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "figure", "bbox": [0.246, 0.479, 0.816, 0.823],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.146, 0.829, 0.883, 0.852],
+     "column": "full", "size_rel": 0.95, "align": "center", "font": "serif",
+     "fill": "#fdf0e3"},
+    {"n": null, "role": "page_number", "bbox": [0.025, 0.745, 0.202, 0.779],
+     "column": "full", "size_rel": 1.4, "align": "right", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "rule_bar", "bbox": [0.025, 0.782, 0.202, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.478, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif"}
+  ],
+  "note": "Single-column verso page 52: one `full` column, content envelope x 0.146-0.884 (the prose measure is x 0.324-0.884 and the peach caption band is the widest element at 0.146-0.883). Blocks 1-3 are plain full-measure prose; block 2 ends with two italic lines ('That is why, scientifically it is correct to say that the sex of the baby is determined by the father and not by the mother!') which A2 blocked as part of the same paragraph, so they are not split out. Figure 3.11's bbox spans x 0.246-0.816, y 0.479-0.823 and includes the stage letters (a)-(g), the A-H markers and the 'Blastocyst Implantation' label. The caption carries n: null; A2's single figure block n=4 is matched to the artwork. The bottom-centre '2022-23' edition line is reported as running_header for want of a better allowed role. The diagonal 'not to be republished / (c) NCERT' watermark is a page-wide overlay and is not listed as an element."
+}

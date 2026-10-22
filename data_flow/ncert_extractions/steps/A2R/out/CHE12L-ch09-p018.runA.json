@@ -1,0 +1,9 @@
+{
+  "verdict": "unusable",
+  "findings": [
+    {"kind": "duplicated", "what": "The coupling-reaction figure is printed twice. The book shows it once: benzenediazonium chloride + phenol -> p-Hydroxyazobenzene (orange dye), then + aniline -> p-Aminoazobenzene (yellow dye). The render draws both equations and both captions, then repeats the identical pair in a second panel immediately below.", "where": "middle of the page, under the 'B. Reactions involving retention of diazo group' paragraph"},
+    {"kind": "formatting", "what": "The italic lead-ins of items 5 and 6 ('Replacement by hydroxyl group', 'Replacement by -NO2 group') are set in plain roman in the render; the book italicises them.", "where": "numbered items 5 and 6"},
+    {"kind": "blank_space", "what": "Roughly a fifth of the lower page is empty between 'can be easily obtained from diazonium salt.' and the final line 'Thus, the replacement of diazo group by other groups is helpful in'; in the book those run as consecutive paragraphs. No text is lost -- all three paragraphs of section 9.10 are present -- the gap is left by the 9.10 side heading block.", "where": "lower right, above the last line of the page"}
+  ],
+  "note": "Compared block by block. Both top equations are present and correct, including the ethanol one: ArN2Cl + CH3CH2OH -> ArH + N2 + CH3CHO + HCl, with its charge signs. The phenol-hydrolysis equation, the HBF4/NaNO2-Cu nitro scheme (complete, NaBF4 included), the B heading with 'coupling reactions', and the 9.10 side heading are all present; the folio 'Chemistry 276' sits correctly at the bottom left. The B heading's two book lines are merged into one line, which I treated as reflow."
+}

@@ -1,0 +1,162 @@
+{
+  "group": "v2__chemistry__plain.part2",
+  "ratings": [
+    {
+      "question_id": "2015_A#q008",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Monomer to polymer pairings: caprolactam gives Nylon-6",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "look_alike_term",
+          "option": "2",
+          "route": "Nylon-6,6 is the polyamide met first and named most readily, and the two names differ by one comma and digit. Nylon-6,6 needs two monomers, hexamethylenediamine and adipic acid, where caprolactam is a single one."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "A student who remembers caprolactam only as \"one of the monomers in the table\" reaches for the other famous fibre on it. Terylene comes from ethylene glycol and terephthalic acid."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Teflon is the remaining household polymer on the same table and the one whose monomer is least often revised. It comes from tetrafluoroethene."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored monomer-to-polymer association, demonstrated by the stem naming only the monomer, \"Caprolactum is used for the manufacture of\", with four polymer names as options.",
+      "note": "The record carries `has_figure: true` with `figures_agent/2015_A/q008.png`, but the stem and all four options are complete as text and nothing in them refers to a figure, so the question is answerable as printed and no damage verdict is recorded. The stem spells the monomer \"Caprolactum\"; caprolactam is meant, and the misspelling does not change what is asked."
+    },
+    {
+      "question_id": "2015_A#q009",
+      "question_type": "plain_mcq",
+      "format": "identify_structure_or_compound",
+      "content_shape": "trend",
+      "concept": "Thermal stability of carbonates: the smaller, more polarising the cation, the more easily the carbonate loses CO2",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Alkali-metal carbonates do not decompose on ordinary heating at all, which strikes out options 3 ($\\mathrm{K_2CO_3}$) and 4 ($\\mathrm{Na_2CO_3}$) together and leaves only the two group-2 carbonates to compare.",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "2",
+          "route": "Limestone decomposing to quicklime is the one carbonate decomposition a student has seen written as an equation, so $\\mathrm{CaCO_3}$ is the reaction that comes to mind. It does decompose - just at a higher temperature than $\\mathrm{MgCO_3}$, whose smaller cation goes first."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a known rule to be applied across four named species, demonstrated by the options setting two group-2 carbonates against two group-1 carbonates with no numbers given.",
+      "note": "Options 3 and 4 are left untagged. They are the group-1 pair the elimination fact strikes out, and no half-remembered rule reaches for $\\mathrm{K_2CO_3}$ over $\\mathrm{Na_2CO_3}$ or the other way about, so they are recorded as the strategy's evidence rather than as traps. E2: no reaction is printed, so section 2's tie-break sends four species compared on a criterion to `identify_structure_or_compound`."
+    },
+    {
+      "question_id": "2015_A#q010",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "structure_property",
+      "concept": "Hypophosphorous acid, $\\mathrm{H_3PO_2}$: two P-H bonds make it a strong reducing agent",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "A student who remembers that an oxidising agent holds its element in a high oxidation state reaches for the same phrase without turning it round. A reducing agent needs a low state, and phosphorus here is at $+1$."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Two OH groups with one P-H is the structure of $\\mathrm{H_3PO_3}$, and the oxoacids of phosphorus are learned as one set, so their structures swap easily. $\\mathrm{H_3PO_2}$ has one OH and two P-H."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which structural feature accounts for a granted property, demonstrated by the stem's \"Strong reducing behaviour of $\\mathrm{H_3PO_2}$ is due to\".",
+      "note": "Option 4 is left untagged: \"high electron gain enthalpy of phosphorus\" is neither true of phosphorus nor part of any rule connecting structure to reducing power, so there is no half-remembered rule that reaches for it. Our stored options print the P-H bond with a lowercase p (\"one p - H bond\"); the species are still readable and the chemistry unchanged, so this is noise rather than a `source_damage_artifact`. The record also carries `figures_agent/2015_A/q010.png` although the stem and options are complete as text; if that image turns out to print the structure, a `figure_to_read` overlay would belong here."
+    },
+    {
+      "question_id": "2015_A#q011",
+      "question_type": "arrange_in_order",
+      "format": "pick_order",
+      "content_shape": "structure_property",
+      "concept": "Bond order from molecular orbital filling fixes stability: $\\mathrm{O_2^{+}}$ 2.5, $\\mathrm{O_2}$ 2, $\\mathrm{O_2^{-}}$ 1.5, $\\mathrm{O_2^{2-}}$ 1",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "$\\mathrm{O_2^{+}}$ has the highest bond order, 2.5, so the order must begin with it; that one value strikes out options 1, 2 and 4, which begin with $\\mathrm{O_2}$, $\\mathrm{O_2^{-}}$ and $\\mathrm{O_2^{2-}}$.",
+      "traps": [
+        {
+          "label": "reversed_order",
+          "option": "4",
+          "route": "A student who remembers only that electrons are being added ranks the four by electron count, the fullest first. Those added electrons go into antibonding orbitals, so this prints the correct order backwards."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a known rule to be applied to four species and the results ordered, demonstrated by the stem asking for the \"decreasing order of stability\" of $\\mathrm{O_2}$, $\\mathrm{O_2^{-}}$, $\\mathrm{O_2^{+}}$ and $\\mathrm{O_2^{2-}}$.",
+      "note": "Options 1 and 2 are left untagged. Option 1 would need two separate errors at once - the neutral molecule first, then the dianion above the anion - and option 2 matches no ranking rule I could name: I tried ranking by charge, by electron count, and by bond order with the antibonding electrons left out, and none prints either order. Four bond orders computed separately make this `several_independent_checks`, not `multi_step_dependent`: no step needs the previous step's result."
+    },
+    {
+      "question_id": "2015_A#q012",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "trend",
+      "concept": "The mole: 18 g of water is one mole, so 18 moles is eighteen times as many molecules",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "wrong_quantity",
+          "option": "1",
+          "route": "18 is the molar mass of water, so a student who recognises the familiar number takes 18 g as the mole-sized sample and stops. 18 g is one mole, where the key has eighteen."
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "3",
+          "route": "The stem asks for a number of molecules and this is the only option already written in molecules, so it reads as the one that answers the question in its own terms. 18 molecules is about $3 \\times 10^{-23}$ mole, the smallest sample printed."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires the mole relation to be applied to each printed amount before they can be compared, demonstrated by the options offering the same figure 18 in three different units - \"18 gram\", \"18 moles\", \"18 molecules\".",
+      "note": "Option 4, 1.8 gram, is left untagged: it is a tenth of option 1's mass, so option 1 beats it on any reading, and no rule or half-rule reaches for the smaller mass. E2 is a loose fit: the answer is one of four printed amounts of water, and `name_or_identify` is the nearest in-list label for picking out a named case; the vocabulary has no label for \"pick the largest of four printed quantities\", and a `pick_extreme_case` format would fit better if it is extended. Not recorded as `new_format`, since the answer is still a printed designation the student identifies."
+    },
+    {
+      "question_id": "2015_A#q013",
+      "question_type": "pair_options",
+      "format": "pick_correct_statement",
+      "content_shape": "structure_chemical",
+      "concept": "Isostructural species: $\\mathrm{XeF_4}$ is square planar while $\\mathrm{XeO_4}$ is tetrahedral",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Both are group-15 hydrides and the check comes back pyramidal for each, which is the pair a student is surest about. Confirming that it matches is what pulls the mark onto it under a stem asking which does not."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "Counting pairs gives four bonding pairs and no lone pair on each, so the check returns tetrahedral twice. A confirmed match, and so the wrong answer here."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Diamond and silicon carbide are taught as the same tetrahedral network, so the pair is remembered as a matching one rather than worked out. True again, and so wrong for this stem."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires VSEPR shapes to be worked out for each printed pair separately, demonstrated by the stem asking in which pair \"both the species are not isostructural\" with four pairs offered.",
+      "note": "E1 differs from the rest of the group: each option is a pair of species accepted or rejected whole, which section 1 assigns to `pair_options` rather than `plain_mcq`. Recorded in group_note. The record carries `figures_agent/2015_A/q013.png`, but every species is printed as text and the question is answerable as stored."
+    }
+  ],
+  "group_note": "Six questions grouped on `structure: plain`, and two do not belong on E1. q011 prints four whole orderings as options, which section 1 assigns to `arrange_in_order` (the retired `rank_by_property` maps there as well), and q013 prints four pairs to be accepted or rejected whole, which section 1 assigns to `pair_options`. Both are kept in the group and tagged on their own printed shape; the other four are `plain_mcq`. Three members (q008, q010, q013) carry a `figures_agent` image although their stems and options are complete as text; none is treated as damage, and each note says so. E2 was read off the options alone: polymer names (q008) give `name_or_identify`, four species compared with no reaction printed (q009) give `identify_structure_or_compound` by section 2's tie-break, rival explanations of a granted property (q010) give `pick_cause_or_effect`, whole orderings (q011) give `pick_order`, and pairs judged as claims under a negated stem (q013) give `pick_correct_statement`. q012's E2 is the one loose fit in the packet and its note records why. Demand was kept parallel across the three questions that apply a known rule to several printed cases - q009, q011 and q013 are all `application` - while q010 alone is `explanatory_reasoning`, because there the live decision is whether a structural feature accounts for a stated property rather than what the rule yields; q008 is the only `recall`. Solution structure follows the same reading: `several_independent_checks` wherever each printed case is adjudicated on its own (q011's four bond orders, q012's four amounts, q013's four pairs) and `single_step` where one comparison settles it (q008, q009, q010). Only q009 and q011 carry `elimination`, and in both the evidence names one fact that strikes out specific options without solving the question. Eight of the twenty-four options are left untagged, each with its reason in the question's note, and the packet's recurring honest answer is that an option widens the spread with no half-remembered rule reaching for it. Where a pull does exist it is of two kinds: a name or structure from the same small set swapped for its neighbour (q008's nylons, q010's oxoacids), and the one worked example a student has actually seen - limestone to quicklime in q009, the molar mass 18 in q012."
+}

@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FL-000171 · A2_JOIN_ADJUDICATED</title>
+<style>
+:root { --fg:#14171a; --bg:#fff; --muted:#5b6670; --line:#d8dee3; --hi:#fff3bf;
+        --hi-line:#e0b400; --blocker:#b3261e; --high:#c75300; --normal:#2b6cb0; --low:#5b6670; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+.wrap { max-width:62rem; margin:0 auto; padding:1.5rem 1.25rem 4rem; }
+h1 { font-size:1.4rem; margin:0 0 .25rem; }
+h2 { font-size:1.05rem; margin:2rem 0 .5rem; border-bottom:1px solid var(--line);
+     padding-bottom:.3rem; }
+a { color:#1a5fb4; }
+.meta { color:var(--muted); font-size:.85rem; margin-bottom:1.25rem; }
+.badge { display:inline-block; padding:.1rem .45rem; border-radius:.5rem; font-size:.75rem;
+         font-weight:600; color:#fff; vertical-align:.08em; }
+.badge.blocker{background:var(--blocker)} .badge.high{background:var(--high)}
+.badge.normal{background:var(--normal)} .badge.low{background:var(--low)}
+.card { border:1px solid var(--line); border-radius:.5rem; padding:.9rem 1rem; margin:0 0 1rem; }
+.card h3 { margin:0 0 .5rem; font-size:1rem; }
+.value { background:var(--hi); border:1px solid var(--hi-line); border-radius:.4rem;
+         padding:.7rem .85rem; }
+pre { margin:0; white-space:pre-wrap; word-break:break-word; font:13px/1.5 ui-monospace,
+      SFMono-Regular,Menlo,monospace; }
+table { border-collapse:collapse; width:100%; font-size:.86rem; }
+th,td { border:1px solid var(--line); padding:.35rem .5rem; text-align:left;
+        vertical-align:top; }
+th { background:#f4f6f8; }
+.scroll { overflow-x:auto; }
+label { display:block; font-weight:600; font-size:.85rem; margin:.7rem 0 .2rem; }
+select,input[type=text],textarea { width:100%; font:inherit; padding:.4rem .5rem;
+  border:1px solid var(--line); border-radius:.35rem; background:#fff; color:var(--fg); }
+textarea { font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace; }
+button { font:inherit; font-weight:600; padding:.45rem .9rem; border:1px solid var(--line);
+         border-radius:.35rem; background:#f4f6f8; color:var(--fg); cursor:pointer; }
+.row { display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; margin-top:.7rem; }
+.hint { color:var(--muted); font-size:.82rem; }
+.nav { display:flex; justify-content:space-between; gap:1rem; margin-bottom:1rem;
+       font-size:.86rem; }
+.hidden-note { border-left:3px solid var(--hi-line); background:#fffbe6; padding:.6rem .8rem;
+               font-size:.88rem; }
+</style></head><body><div class="wrap">
+<div class='nav'><div><a href="p5__PHY11-CH06__FL-000165__9708650c.html">&larr; previous</a></div><div><a href='index.html'>index</a></div><div><a href="p5__PHY11-CH08__FL-000096__c70f9c0a.html">next &rarr;</a></div></div>
+<h1>A2_JOIN_ADJUDICATED <span class="badge normal">normal</span></h1>
+<p class="meta">
+  priority 5 · normal ·
+  step A2 ·
+  item <code>PHY11L-ch06-p033|PHY11L-ch06-p034</code> ·
+  chapter PHY11-CH06 ·
+  FL-000171 ·
+  reviewer: faculty of that subject (spec 14/F2) ·
+  pack run 2026-10-12T15:23:27+05:30
+</p>
+
+<h2>What is being asked</h2>
+<div class="card"><p>Page 33&#39;s last_block_continues_on_next=False but page 34&#39;s first_block_continues_from_previous=True -- two independent page reads disagree about this page break; needs adjudication.</p></div>
+
+<h2>The value in question · field <code>passage_cuts</code></h2>
+<div class="value"><pre>{
+  &quot;page_a&quot;: 33,
+  &quot;last_a&quot;: false,
+  &quot;page_b&quot;: 34,
+  &quot;first_b&quot;: true
+}</pre></div>
+
+<h2>What editing this re-runs</h2>
+<div class="card"><p>cascade key `passage_cuts` → chapter: A4, A5, A6, A7, A8, A9; questions in chapter: D3, D4, D5, D6, D7, D8, D9, D10, D11, E3, E4, E5, F4</p>
+<p class="hint">From <code>config/cascade.yaml</code> (spec Section 15). Exact pairs:
+<code>python3 scripts/cascade.py --field passage_cuts --item PHY11L-ch06-p033|PHY11L-ch06-p034 --plan</code></p></div>
+
+<h2>Evidence</h2>
+<div class='scroll'><table><tbody><tr><td><a href='../../steps/A2/out/PHY11L-ch06-p033.runA.json'>steps/A2/out/PHY11L-ch06-p033.runA.json</a><pre style='margin-top:.5rem'>{
+  &quot;blocks&quot;: [
+    {
+      &quot;n&quot;: 1,
+      &quot;kind&quot;: &quot;equation&quot;,
+      &quot;needs_special&quot;: true,
+      &quot;bbox&quot;: [
+        450,
+        220,
+        610,
+        310
+      ],
+      &quot;text&quot;: &quot;&quot;,
+      &quot;continues_from_previous&quot;: true
+    },
+    {
+      &quot;n&quot;: 2,
+      &quot;kind&quot;: &quot;box&quot;,
+      &quot;text&quot;: &quot;11. A rigid body is in mechanical equilibrium if\n(1)\nit is in translational equilibrium, i.e., the total external force on it is zero : \nF\n0\ni =\n∑\n,\nand\n(2)\nit is in rotational equilibrium, i.e. the total external torque on it is zero :\nτi\ni\ni\n=\n×\n=\n∑\n∑r\nF\n0 .\n12. The centre of gravity of an extended body is that point where the total gravitational\ntorque on the body is zero.\n13. The moment of intertia of a rigid body about an axis is defined by the formula  I\nm r\ni i\n=∑\n2\nwhere ri is the perpendicular distance of the ith point of the body from the axis. The\nkinetic energy of rotation is \n2\n1\n2\nK\nIω\n=\n.&quot;,
+      &quot;continues_from_previous&quot;: true
+    },
+    {
+      &quot;n&quot;: 3,
+      &quot;kind&quot;: &quot;table&quot;,
+      &quot;needs_special&quot;: true,
+      &quot;bbox&quot;: [
+        600,
+        800,
+        1400,
+        1115
+      ],
+      &quot;text&quot;: &quot;&quot;
+    },
+    {
+      &quot;n&quot;: 4,
+      &quot;kind&quot;: &quot;box&quot;,
+      &quot;text&quot;: &quot;POINTS TO PONDER\n1.\nTo determine the motion of the centre of mass of a system no knowledge of internal\nforces of the system is required. For this purpose we need to know only the external\nforces on the body.\n2.\nSeparating the motion of a system of particles as the motion of the centre of mass, (i.e.,\nthe translational motion of the system) and motion about (i.e. relative to) the centre of\nmass of the system is a useful technique in dynamics of a system of particles. One\nexample of this technique is separating the kinetic energy of a system of particles K as\nthe kinetic energy of the system about its centre of mass K′ and the kinetic energy of the\ncentre of mass MV2/2,\n      K = K′ + MV2/2\n3.\nNewton’s Second Law for finite sized bodies (or systems of particles) is based in  Newton’s\nSecond Law and also Newton’s Third Law for particles.\n4.\nTo establish that the time rate of change of the total angular momentum of a system of\nparticles is the total external torque in the system, we need not only Newton’s second\nlaw for particles, but also Newton’s third law with the provision that the forces between\nany two particles act along the line joining the particles.\n5.\nThe vanishing of the total external force and the vanishing of the total external torque\nare independent conditions. We can have one without the other. In a couple, total\nexternal force is zero, but total torque is non-zero.\n6.\nThe total torque on a  system is independent of the origin if the total external force is\nzero.\n7.\nThe centre of gravity of a body coincides with its centre of mass only if the gravitational\nfield does not vary from one part of the body to the other.&quot;,
+      &quot;continues_from_previous&quot;: false
+    }
+  ],
+  &quot;first_block_continues_from_previous&quot;: true,
+  &quot;last_block_continues_on_next&quot;: false,
+  &quot;running_header_footer_removed&quot;: [
+    &quot;124&quot;,
+    &quot;PHYSICS&quot;,
+    &quot;2024-25&quot;
+  ],
+  &quot;note&quot;: &quot;`previous_page_last_block` was null even though page is 33; continuation judged from the image: the shaded SUMMARY box opens mid-list with a displayed equation and item 11, so items 1-10 sat on the previous page. The text_layer hoists the whole POINTS TO PONDER box above the summary items and places the &#39;d dt ext L = τ&#39; fragment between them; blocks are listed in true reading order from the image instead. Per the chapter note, inline-math stretches inside the two box blocks are copied as the characters the text_layer actually holds (subscripts/superscripts and summation signs are extracted onto their own lines and scrambled below word level), not re-rendered. The page carries a diagonal &#39;© NCERT not to be republished&#39; watermark across the table and POINTS TO PONDER box; it is a watermark, not page content, and was not transcribed.&quot;
+}</pre></td></tr><tr><td><a href='../../steps/A2/out/PHY11L-ch06-p034.runA.json'>steps/A2/out/PHY11L-ch06-p034.runA.json</a><pre style='margin-top:.5rem'>{
+  &quot;blocks&quot;: [
+    {
+      &quot;n&quot;: 1,
+      &quot;kind&quot;: &quot;box&quot;,
+      &quot;text&quot;: &quot;8. The angular momentum L and the angular velocity ω are not necessarily parallel vectors. However, for the simpler situations discussed in this chapter when rotation is about a fixed axis which is an axis of symmetry of the rigid body, the relation L = Iω holds good, where I is the moment of the inertia of the body about the rotation axis.&quot;,
+      &quot;continues_from_previous&quot;: true
+    },
+    {
+      &quot;n&quot;: 2,
+      &quot;kind&quot;: &quot;heading&quot;,
+      &quot;text&quot;: &quot;EXERCISES&quot;
+    },
+    {
+      &quot;n&quot;: 3,
+      &quot;kind&quot;: &quot;list&quot;,
+      &quot;text&quot;: &quot;6.1 Give the location of the centre of mass of a (i) sphere, (ii) cylinder, (iii) ring, and (iv) cube, each of uniform mass density. Does the centre of mass of a body necessarily lie inside the body ?&quot;
+    },
+    {
+      &quot;n&quot;: 4,
+      &quot;kind&quot;: &quot;list&quot;,
+      &quot;text&quot;: &quot;6.2 In the HCl molecule, the separation between the nuclei of the two atoms is about 1.27 Å (1 Å = 10-10 m). Find the approximate location of the CM of the molecule, given that a chlorine atom is about 35.5 times as massive as a hydrogen atom and nearly all the mass of an atom is concentrated in its nucleus.&quot;
+    },
+    {
+      &quot;n&quot;: 5,
+      &quot;kind&quot;: &quot;list&quot;,
+      &quot;text&quot;: &quot;6.3 A child sits stationary at one end of a long trolley moving uniformly with a speed V on a smooth horizontal floor. If the child gets up and runs about on the trolley in any manner, what is the speed of the CM of the (trolley + child) system ?&quot;
+    },
+    {
+      &quot;n&quot;: 6,
+      &quot;kind&quot;: &quot;list&quot;,
+      &quot;text&quot;: &quot;6.4 Show that the area of the triangle contained between the vectors a and b is one half of the magnitude of a × b.&quot;
+    },
+    {
+      &quot;n&quot;: 7,
+      &quot;kind&quot;: &quot;list&quot;,
+      &quot;text&quot;: &quot;6.5 Show that a.(b × c) is equal in magnitude to the volume of the parallelepiped formed on the three vectors , a, b and c.&quot;
+    },
+    {
+      &quot;n&quot;: 8,
+      &quot;kind&quot;: &quot;list&quot;,
+      &quot;text&quot;: &quot;6.6 Find the components along the x, y, z axes of the angular momentum l of a particle, whose position vector is r with components x, y, z and momentum is p with components px, py and pz. Show that if the particle moves only in the x-y plane the angular momentum has only a z-component.&quot;
+    },
+    {
+      &quot;n&quot;: 9,
+      &quot;kind&quot;: &quot;list&quot;,
+      &quot;text&quot;: &quot;6.7 Two particles, each of mass m and speed v, travel in opposite directions along parallel lines separated by a distance d. Show that the angular momentum vector of the two particle system is the same whatever be the point about which the angular momentum is taken.&quot;
+    },
+    {
+      &quot;n&quot;: 10,
+      &quot;kind&quot;: &quot;list&quot;,
+      &quot;text&quot;: &quot;6.8 A non-uniform bar of weight W is suspended at rest by two strings of negligible weight as shown in Fig.6.33. The angles made by the strings with the vertical are 36.9° and 53.1° respectively. The bar is 2 m long. Calculate the distance d of the centre of gravity of the bar from its left end.&quot;
+    },
+    {
+      &quot;n&quot;: 11,
+      &quot;kind&quot;: &quot;figure&quot;,
+      &quot;needs_special&quot;: true,
+      &quot;bbox&quot;: [
+        578,
+        1328,
+        1172,
+        1820
+      ],
+      &quot;text&quot;: &quot;&quot;
+    },
+    {
+      &quot;n&quot;: 12,
+      &quot;kind&quot;: &quot;list&quot;,
+      &quot;text&quot;: &quot;6.9 A car weighs 1800 kg. The distance between its front and back axles is 1.8 m. Its centre of gravity is 1.05 m behind the front axle. Determine the force exerted by the level ground on each front wheel and each back wheel.&quot;
+    }
+  ],
+  &quot;first_block_continues_from_previous&quot;: true,
+  &quot;last_block_continues_on_next&quot;: false,
+  &quot;running_header_footer_removed&quot;: [
+    &quot;SYSTEMS OF PARTICLES AND ROTATIONAL MOTION&quot;,
+    &quot;125&quot;,
+    &quot;2024-25&quot;
+  ],
+  &quot;note&quot;: &quot;The page opens mid-box: item 8 of the chapter&#39;s numbered &#39;Points to Ponder&#39; list, which began on the previous page (previous_page_last_block was null, so this is judged from the item number 8 and the box rule running on to this page). The text_layer hoists this box text to the very end of the page&#39;s extracted text, out of reading order; it is placed first here to match the page image. Block 11 is F
+… (truncated)</pre></td></tr></tbody></table></div>
+
+
+<h2>Legacy values</h2>
+<p class='hint'>No legacy values recorded for this item. (Spec 2.2: the legacy tags are not usable as truth — they are shown only as a cross-check when they exist.)</p>
+
+
+<h2>Decision</h2>
+<div class="card">
+  <p class="hint">This writes one row of <code>review/decisions.csv</code> (spec 6.5). Columns:
+  <code>flag_id_or_item, field, decision, corrected_value_json, reviewer, comment, decided_at</code>.</p>
+  <input type="hidden" id="f_target" value="FL-000171">
+  <input type="hidden" id="f_field" value="passage_cuts">
+  <label for="f_decision">decision</label>
+  <select id="f_decision"><option value='approve'>approve</option><option value='correct'>correct</option><option value='edit'>edit</option><option value='block'>block</option></select>
+  <label for="f_value">corrected_value_json <span class="hint">— leave as-is to approve the
+    value below; replace it with the corrected value (valid JSON) to correct or edit</span></label>
+  <textarea id="f_value" rows="4">{&quot;page_a&quot;: 33, &quot;last_a&quot;: false, &quot;page_b&quot;: 34, &quot;first_b&quot;: true}</textarea>
+  <label for="f_reviewer">reviewer</label>
+  <input type="text" id="f_reviewer" placeholder="your name">
+  <label for="f_comment">comment</label>
+  <input type="text" id="f_comment" placeholder="why">
+  <label for="f_decided_at">decided_at</label>
+  <input type="text" id="f_decided_at">
+  <label for="f_row">the decisions.csv row this makes</label>
+  <textarea id="f_row" rows="3" readonly></textarea>
+  <div class="row">
+    <button type="button" onclick="saveDecision()">Save in this browser</button>
+    <button type="button" onclick="copyRow()">Copy row</button>
+    <span class="hint" id="f_saved"></span>
+  </div>
+  <p class="hint">The pack is plain files with no server behind it, so nothing here can write to
+  disk by itself. Save decisions here and collect them all from <a href="index.html">index.html</a>,
+  or copy a row and paste it straight into <code>review/decisions.csv</code>. Then run
+  <code>python3 scripts/apply_review.py --apply</code>.</p>
+</div>
+
+<script>
+const KEY = 'pyq_decisions_v1';
+function store() { try { return window.localStorage; } catch (e) { return null; } }
+function allDecisions() {
+  const s = store(); if (!s) return {};
+  try { return JSON.parse(s.getItem(KEY) || '{}'); } catch (e) { return {}; }
+}
+function csvField(v) {
+  v = (v === null || v === undefined) ? '' : String(v);
+  return /[",\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+}
+function buildRow() {
+  const g = id => (document.getElementById(id) || {}).value || '';
+  return [g('f_target'), g('f_field'), g('f_decision'), g('f_value'), g('f_reviewer'),
+          g('f_comment'), g('f_decided_at')].map(csvField).join(',');
+}
+function refresh() {
+  const out = document.getElementById('f_row');
+  if (out) out.value = buildRow();
+}
+function saveDecision() {
+  refresh();
+  const s = store();
+  if (s) {
+    const all = allDecisions();
+    all[document.getElementById('f_target').value] = buildRow();
+    try { s.setItem(KEY, JSON.stringify(all)); } catch (e) {}
+  }
+  const n = document.getElementById('f_saved');
+  if (n) n.textContent = s ? 'Saved in this browser. Collect every saved decision from index.html.'
+                           : 'This browser blocks local storage — use "Copy row" and paste into review/decisions.csv.';
+}
+function copyRow() {
+  refresh();
+  const t = document.getElementById('f_row');
+  t.select();
+  try { document.execCommand('copy'); } catch (e) {}
+  if (navigator.clipboard) { navigator.clipboard.writeText(t.value).catch(() => {}); }
+  const n = document.getElementById('f_saved');
+  if (n) n.textContent = 'Row copied. Paste it as a new line in review/decisions.csv.';
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const d = document.getElementById('f_decided_at');
+  if (d && !d.value) d.value = new Date().toISOString().slice(0, 10);
+  ['f_decision', 'f_value', 'f_reviewer', 'f_comment', 'f_decided_at'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', refresh);
+  });
+  refresh();
+});
+</script>
+</div></body></html>

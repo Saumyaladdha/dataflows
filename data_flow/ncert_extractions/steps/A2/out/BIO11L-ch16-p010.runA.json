@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "composition as that of plasma except the nitrogenous wastes. The porous\ncellophane membrance of the tube allows the passage of molecules based\non concentration gradient. As nitrogenous wastes are absent in the\ndialysing fluid, these substances freely move out, thereby clearing the\nblood. The cleared blood is pumped back to the body through a vein\nafter adding anti-heparin to it. This method is a boon for thousands of\nuremic patients all over the world.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Kidney transplantation is the ultimate method in the correction of\nacute renal failures (kidney failure). A functioning kidney is used in\ntransplantation from a donor, preferably a close relative, to minimise its\nchances of rejection by the immune system of the host. Modern clinical\nprocedures have increased the success rate of such a complicated\ntechnique.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Renal calculi: Stone or insoluble mass of crystallised salts (oxalates,\netc.) formed within the kidney.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Glomerulonephritis: Inflammation of glomeruli of kidney.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "SUMMARY"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Many nitrogen containing substances, ions, CO2, water, etc., that accumulate in\nthe body have to be eliminated. Nature of nitrogenous wastes formed and their\nexcretion vary among animals, mainly depending on the habitat (availability of\nwater). Ammonia, urea and uric acid are the major nitrogenous wastes excreted.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Protonephridia, nephridia, malpighian tubules, green glands and the kidneys are\nthe common excretory organs in animals. They not only eliminate nitrogenous wastes\nbut also help in the maintenance of ionic and acid-base balance of body fluids.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "In humans, the excretory system consists of one pair of kidneys, a pair of ureters,\na urinary bladder and a urethra. Each kidney has over a million tubular structures\ncalled nephrons. Nephron is the functional unit of kidney and has two portions –\nglomerulus and renal tubule. Glomerulus is a tuft of capillaries formed from afferent\narterioles, fine branches of renal artery. The renal tubule starts with a double walled\nBowman’s capsule and is further differentiated into a proximal convoluted tubule\n(PCT), Henle’s loop (HL) and distal convoluted tubule (DCT). The DCTs of many\nnephrons join to a common collecting duct many of which ultimately open into the\nrenal pelvis through the medullary pyramids. The Bowman’s capsule encloses the\nglomerulus to form Malpighian or renal corpuscle.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Urine formation involves three main processes, i.e., filtration, reabsorption and\nsecretion. Filtration is a non-selective process performed by the glomerulus using\nthe glomerular capillary blood pressure. About 1200 ml of blood is filtered by the\nglomerulus per minute to form 125 ml of filtrate in the Bowman’s capsule per",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "214",
+    "BIOLOGY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null, but I read page 9 of this same chapter in this run: it ends \"having the same\", which this page's opening \"composition as that of plasma except the nitrogenous wastes\" continues directly, so first_block_continues_from_previous is true. The text layer for this page is out of visual order: it emits the SUMMARY heading and its first three paragraphs before the top-of-page main-column text (\"composition as that of plasma ...\"). I have ordered the blocks by what the image shows (main column 16.8 text, then the two bold-lead definitions Renal calculi / Glomerulonephritis, then the SUMMARY heading and its paragraphs) while copying the characters from the text layer. The page ends mid-sentence (\"in the Bowman’s capsule per\"), so the last block continues on the next page."
+}

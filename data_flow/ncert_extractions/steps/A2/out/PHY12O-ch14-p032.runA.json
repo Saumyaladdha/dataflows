@@ -1,0 +1,87 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "ADDITIONAL EXERCISES",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "14.8\nThe number of silicon atoms per m3 is 5 × 1028. This is doped\nsimultaneously with 5 × 1022 atoms per m3 of Arsenic and 5 × 1020\nper m3 atoms of Indium. Calculate the number of electrons and holes.\nGiven that ni = 1.5 × 1016 m–3. Is the material n-type or p-type?\n14.9\nIn an intrinsic semiconductor the energy gap Eg is 1.2eV. Its hole\nmobility is much smaller than electron mobility and independent of\ntemperature. What is the ratio between conductivity at 600K and\nthat at 300K? Assume that the temperature dependence of intrinsic\ncarrier concentration ni is given by"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [595, 688, 915, 785],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "where n0 is a constant."
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "14.10 In a p-n junction diode, the current I can be expressed as"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [595, 872, 905, 962],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "where I0 is called the reverse saturation current, V is the voltage\nacross the diode and is positive for forward bias and negative for\nreverse bias, and I is the current through the diode, kB is the\nBoltzmann constant (8.6×10–5 eV/K) and T is the absolute\ntemperature. If for a given diode I0 = 5 × 10–12 A and T = 300 K, then"
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "(a) What will be the forward current at a forward voltage of 0.6 V?\n(b) What will be the increase in the current if the voltage across the\ndiode is increased to 0.7 V?\n(c) What is the dynamic resistance?\n(d) What will be the current if reverse bias voltage changes from 1 V\nto 2 V?"
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "14.11 You are given the two circuits as shown in Fig. 14.36. Show that\ncircuit (a) acts as OR gate while the circuit (b) acts as AND gate."
+    },
+    {
+      "n": 10,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [480, 1440, 1530, 1730],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "14.12 Write the truth table for a NAND gate connected as given in\nFig. 14.37."
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [720, 1800, 1200, 2000],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Hence identify the exact logic operation carried out by this circuit.",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "498",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null, so the continuation judgement rests on my own p031 output: that page broke off at the end of exercise 14.7 with last_block_continues_on_next true, but this page opens with the new section heading ADDITIONAL EXERCISES rather than mid-sentence, so first_block_continues_from_previous is false (the exercise series continues, the sentence does not). Two displayed formulas (the ni = n0 exp(-Eg/2kBT) expression under 14.9 and the diode current expression under 14.10) are absent from the text layer and are deferred to A2S as equation blocks. Fig. 14.36 (both panels with their (a)/(b) labels and the FIGURE 14.36 caption) and Fig. 14.37 (with its caption) are deferred to A2S as figure blocks. Mathematical spellings such as 'm3', '1028', 'm-3' and '8.6x10-5' are copied exactly as the text layer renders the superscripts."
+}

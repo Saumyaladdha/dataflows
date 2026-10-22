@@ -1,0 +1,137 @@
+{
+  "group": "v2__biology__plain.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q046",
+      "concept": "Root pressure: its origin in the active absorption of ions into the root xylem",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires one stored fact about how root pressure arises, demonstrated by the option set \"Increase in transpiration / Active absorption / Low osmotic potential in soil / Passive absorption\", every member of which names a mode of water or ion movement rather than any property of acidity.",
+      "note": "ARRIVED DAMAGED, tagged only as far as is certain (rulebook section 7). The stem as stored reads \"Root pressure is usually acidic because\", and not one of the four options answers that question - a pressure has no pH, and all four options name mechanisms of absorption or transpiration. The predicate also duplicates, word for word, the stem of 2015_A#q091 in packet v2__biology__plain.part8 (\"Human urine is usually acidic because\"), which is where the phrase \"is usually acidic because\" belongs; the likely printed stem here asks what root pressure develops due to, which the keyed option 2 \"Active absorption\" answers. Because the stem's question is not the one the options answer, no wrong option can be tied to an option-and-route pair and traps is empty; source_damage_artifact is recorded and a repair task is needed against the printed paper. The key is not re-judged."
+    },
+    {
+      "question_id": "2015_A#q047",
+      "concept": "Zygomycete reproduction: Mucor disperses by non-motile aplanospores, not by flagellated zoospores",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "the stem's polarity is \"Which one is a wrong statement?\"; option 1 states that brown algae have chlorophyll a and c and fucoxanthin, which is the printed pigment set for Phaeophyceae, so selecting it answers the un-negated question \"which statement is correct\""
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "the stem's polarity is \"Which one is a wrong statement?\"; archegonia do occur in Bryophyta, Pteridophyta and Gymnosperms, so option 2 is a true statement offered where the false one is asked for"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "the stem's polarity is \"Which one is a wrong statement?\"; gymnosperm endosperm is haploid because it is the female gametophyte laid down before fertilisation, so option 4 is true and answers the un-negated question"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four stored facts to be adjudicated one at a time under a negated task, demonstrated by the stem \"Which one is a wrong statement?\" standing over four unrelated claims drawn from four different chapters.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q048",
+      "concept": "Prokaryotic cell organisation: no membrane-bound nucleus, but plasma membrane, 70S ribosomes and mesosomes are present",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "the task is negated (\"is not found in prokaryotic cells\"); the plasma membrane is present in every prokaryote, so option 1 answers the un-negated question"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "the task is negated; ribosomes are present in prokaryotes as the 70S type, so option 3 is a structure that IS found and answers the un-negated question"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "the task is negated; the mesosome is an infolding of the prokaryotic plasma membrane and occurs in prokaryotes alone, so option 4 is the structure most securely present rather than absent"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four stored membership facts checked separately against a negated task, demonstrated by the stem's \"is not found in prokaryotic cells\" over the four structures \"Plasma membrane / Nuclear envelope / Ribosome / Mesosome\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q049",
+      "concept": "Vertebrate circulation: complete double circulation in birds and mammals versus the incompletely separated double circuit of amphibians and reptiles",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "names the frog, a different member of the vertebrate series, about which the neighbouring fact holds: an amphibian has two circuits but a single undivided ventricle, so the pathways are not separate as the stem's \"two separate circulatory pathways\" requires"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "names the lizard, the reptilian member of the same series, whose ventricle is only partially divided; the fact that fits it is incomplete double circulation, not the separation the stem asks for"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires holding complete double circulation apart from the incompletely separated kind, demonstrated by the stem's word \"separate\", which is what divides the whale from the frog and the lizard that also run two circuits.",
+      "note": "Option 1 (Shark) carries no trap: a fish heart is two-chambered and the blood passes through it once per circuit, so there is no reading of \"two separate circulatory pathways\" under which a shark is in contention."
+    },
+    {
+      "question_id": "2015_A#q050",
+      "concept": "Trophic position of deep-sea fauna in an ocean food chain",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": ["arguable_key"],
+      "reason": "This question requires one stored fact about where deep-ocean animals sit in a food chain, demonstrated by the four options \"Detritivores / Primary consumers / Secondary consumers / Tertiary consumers\", which are the rungs of a single trophic ladder with no stem data to compute from.",
+      "note": "arguable_key: the printed key is option 3, and the tag follows it (rulebook section 7), but option 1 is defensible on a reasonable reading - below the photic zone there is no primary production, and the standard account has deep-sea fauna living on detritus sinking from above, which makes \"Detritivores\" a supportable answer. Because which options are wrong depends on which reading the key rests on, no trap is written here: a route to an option can only be named once the answer is settled. Flagged for review against the printed solution rather than overturned."
+    },
+    {
+      "question_id": "2015_A#q051",
+      "concept": "Levels of ecological organisation: population, community, niche and ecosystem distinguished by what each comprises",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "gives the definition of the neighbouring level in the same hierarchy: a population is individuals of ONE species, which contradicts the stem's printed \"individuals of different species\""
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "gives the definition of another member of the same hierarchy: an ecological niche is the functional role and range of a single species, not an assemblage of individuals"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "gives the definition of the next level up: an ecosystem is a community together with its abiotic environment, while the stem names only living individuals and their interactions"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires separating four neighbouring terms of one hierarchy by the strict reading of each definition, demonstrated by the stem's \"different species\" and \"functional interactions\", the two phrases that select community over population and over ecosystem.",
+      "note": ""
+    }
+  ],
+  "group_note": "All six were read as the same printed shape - a single question with four bare answers, no lettered block and no list - and were judged against each other on three stated rules. (1) DEMAND: `recall` where one stored fact decides (q046, q047, q048, q050), `concept_discrimination` where the live decision is between neighbouring terms or categories rather than between a known and an unknown fact (q049 complete versus incomplete double circulation, q051 population/niche/community/ecosystem). That is the only reason two of the six differ on this axis. (2) STRUCTURE: `several_independent_checks` for the two negated questions whose four options are unrelated claims each needing its own verdict (q047, q048); `single_step` for the four where one fact or one definition settles it. Four option-checks are not four dependent steps, and nothing here feeds a later step. (3) TRAPS: the two negated questions carry the same device on every distractor - a true statement offered where the false one is asked for - so each is tagged `true_statement_trap` with the polarity named, and the uniformity is deliberate rather than mechanical: the questions are identical in construction. The definition questions (q049, q051) carry `other_one_fact` on each distractor that is the correct definition of a DIFFERENT member of the same family, with the member named every time; q049's option 1 and q051 have no untagged near-miss left over. Two members do not get tagged at all and this is the point of judging them together: 2015_A#q046 arrived damaged - its stem asks why root pressure \"is usually acidic\", which none of its four options addresses, and the same phrase is the stem of 2015_A#q091 in packet part8 - so it carries source_damage_artifact, empty traps and a repair note; 2015_A#q050's key is in doubt (detritivores is defensible for aphotic-zone fauna), so it carries arguable_key, the printed key is kept, and no route is written because a route can only be named once the answer is settled. No trap sits on any official answer."
+}

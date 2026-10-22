@@ -1,0 +1,122 @@
+{
+ "blocks": [
+  {
+   "n": 1,
+   "kind": "paragraph",
+   "text": "VAB = 2 A × 2 Ω = 4 V\nThe voltage drop across BC is\nVBC = 2 A × 1 Ω = 2 V\nFinally, the voltage drop across CD is",
+   "continues_from_previous": true,
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 2,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    255,
+    495,
+    765,
+    555
+   ],
+   "text": ""
+  },
+  {
+   "n": 3,
+   "kind": "paragraph",
+   "text": "This can alternately be obtained by multiplying total current between C and D by the equivalent resistance between C and D, that is,\nVCD = 2 A × 4 Ω = 8 V\nNote that the total voltage drop across AD is 4 V + 2 V + 8 V = 14 V. Thus, the terminal voltage of the battery is 14 V, while its emf is 16 V. The loss of the voltage (= 2 V) is accounted for by the internal resistance 1 Ω of the battery [2 A × 1 Ω = 2 V].",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 4,
+   "kind": "heading",
+   "text": "3.12  CELLS IN SERIES AND IN PARALLEL"
+  },
+  {
+   "n": 5,
+   "kind": "paragraph",
+   "text": "Like resistors, cells can be combined together in an electric circuit. And like resistors, one can, for calculating currents and voltages in a circuit, replace a combination of cells by an equivalent cell.",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 6,
+   "kind": "figure",
+   "needs_special": true,
+   "bbox": [
+    160,
+    1095,
+    1170,
+    1340
+   ],
+   "text": ""
+  },
+  {
+   "n": 7,
+   "kind": "paragraph",
+   "text": "Consider first  two cells in series (Fig. 3.20), where one terminal of the two cells is joined together leaving the other terminal in either cell free. ε₁, ε₂ are the emf’s of the two cells and r₁, r₂ their internal resistances, respectively.\nLet V (A), V (B), V (C) be the potentials at points A, B and C shown in Fig. 3.20. Then V (A) – V (B) is the potential difference between the positive and negative terminals of the first cell. We have already calculated it in Eq. (3.57) and hence,",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 8,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    210,
+    1640,
+    1170,
+    1695
+   ],
+   "text": ""
+  },
+  {
+   "n": 9,
+   "kind": "paragraph",
+   "text": "Similarly,",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 10,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    210,
+    1750,
+    1170,
+    1810
+   ],
+   "text": ""
+  },
+  {
+   "n": 11,
+   "kind": "paragraph",
+   "text": "Hence, the potential difference between the terminals A and C of the combination is",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 12,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    210,
+    1895,
+    1170,
+    2020
+   ],
+   "text": "",
+   "continues_on_next": false
+  }
+ ],
+ "first_block_continues_from_previous": true,
+ "last_block_continues_on_next": false,
+ "running_header_footer_removed": [
+  "Current Electricity",
+  "113",
+  "2022-23",
+  "EXAMPLE 3.5"
+ ],
+ "note": "Printed page 113. The page opens mid-solution: the shaded Example 3.5 box continues from p020's trailing \"that is,\". \"EXAMPLE 3.5\" is the vertical side-margin running tab. Deferred to A2S: the stacked-fraction V_CD line, Fig. 3.20 with its caption, and the numbered display equations (3.60), (3.61), (3.62). Subscripts ε₁, ε₂, r₁, r₂, I₃ read from the image (the text layer flattens them); V with letter subscripts (VAB, VBC, VCD) has no Unicode subscript form and is written flat as the layer has it. Ω is the page's own U+2126 OHM SIGN, the character the text layer carries. Section 3.12 heading prints in NCERT's small-caps display face."
+}

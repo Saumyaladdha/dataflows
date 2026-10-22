@@ -1,0 +1,42 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        202,
+        289,
+        1450,
+        834
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Plants follow different pathways in response to environment or phases\nof life to form different kinds of structures. This ability is called plasticity,\ne.g., heterophylly in cotton, coriander and larkspur. In such plants, the\nleaves of the juvenile plant are different in shape from those in mature\nplants. On the other hand, difference in shapes of leaves produced in air\nand those produced in water in buttercup also represent the\nheterophyllous development due to environment (Figure 13.9). This\nphenomenon of heterophylly is an example of plasticity.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        371,
+        1183,
+        1264,
+        1995
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "PLANT GROWTH AND DEVELOPMENT",
+    "173",
+    "2024-25"
+  ],
+  "note": "Used text_layer (clean), cross-checked against image. Single-column page: Figure 13.8 flow diagram at the top, one prose paragraph, then Figure 13.9 at the bottom. Judged both continuations from the pages themselves (previous_page_last_block was null): page 7 closed at \"...applicable to tissues/organs.\" and this page opens with Figure 13.8, so nothing continues in; this page's last block is the complete Figure 13.9 with its caption, so nothing continues onto page 9. Figure 13.8's internal labels (Cell Division, Death, Plasmatic growth, Differentiation, Expansion (Elongation), Maturation, MERISTEMATIC CELL, SENESCENCE, MATURE CELL) and Figure 13.9's labels (Juvenile, Adult, (a), Terrestrial habitat, Water habitat, (b)) plus both captions lie inside the declared figure bboxes and are left for the special transcriber. Removed the running header PLANT GROWTH AND DEVELOPMENT, page number 173 and reprint year 2024-25."
+}

@@ -1,0 +1,59 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Hydrochloric acid decomposes salts of weaker acids, e.g., carbonates, hydrogencarbonates, sulphites, etc.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 298, 1148, 416],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Uses: It is used (i) in the manufacture of chlorine, NH4Cl and glucose (from corn starch), (ii) for extracting glue from bones and purifying bone black, (iii) in medicine and as a laboratory reagent."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 7.18 When HCl reacts with finely powdered iron, it forms ferrous chloride and not ferric chloride. Why? Solution Its reaction with iron produces H2. Fe + 2HCl → FeCl2 + H2 Liberation of hydrogen prevents the formation of ferric chloride."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "7.21 Oxoacids of Halogens"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Due to high electronegativity and small size, fluorine forms only one oxoacid, HOF known as fluoric (I) acid or hypofluorous acid. The other halogens form several oxoacids. Most of them cannot be isolated in pure state. They are stable only in aqueous solutions or in the form of their salts. The oxoacids of halogens are given in Table 7.10 and their structures are given in Fig. 7.8."
+    },
+    {
+      "n": 7,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [155, 1120, 1472, 1540],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [150, 1550, 1490, 2010],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "205",
+    "The p-Block Elements",
+    "2020-21"
+  ],
+  "note": "previous_page_last_block was null; continuation chained off the p035 output I wrote in this run, whose last block is the complete aqua regia equation display with last_block_continues_on_next false. This page opens with the new sentence 'Hydrochloric acid decomposes salts of weaker acids...', so first_block_continues_from_previous is false and the pair agrees. THIS PAGE'S TEXT LAYER IS STORED OUT OF PRINTED ORDER: it opens with the Fig. 7.8 caption ('Fig. 7.8' / 'The structures of' / 'oxoacids of chlorine') which is printed at the very BOTTOM LEFT of the page; then the HCl paragraph and its three equations; then the whole of Table 7.10 (caption first, then the rows, with each row's formula line and its parenthetical name line stored as two separate lines); then the Example 7.18 box's prose, followed by the outline-font labels 'Example 7.18' x5 and 'Solution' x5; then the 'Uses' x5 label whose fifth repetition carries the Uses-box body, even though that box is printed ABOVE the Example box; then the Section 7.21 paragraph; and finally the side-heading as '7.21 Oxoacids of' x5 + 'Halogens' x5 at the very end of the stream. Blocks are listed in true printed reading order. Deferred to the special transcriber per this chapter's established pattern (empty text plus a pixel bbox): n=2, the three displayed carbonate/hydrogencarbonate/sulphite decomposition equations; n=7, Table 7.10 'Oxoacids of Halogens', whose bbox deliberately encloses the caption printed above the rules, the row labels and every formula and parenthetical acid name in all four rows; and n=8, Fig. 7.8, whose bbox deliberately encloses the bottom-left caption 'Fig. 7.8 / The structures of / oxoacids of chlorine' as well as every in-diagram atom label (H, O, Cl) and the four structure names printed under the diagrams ('Hypochlorous acid', 'Chlorous acid', 'Chloric acid', 'Perchloric acid'). DELIBERATE EXCEPTION to the defer-every-equation pattern, the same one I flagged on p035 and kept consistent here: the equation 'Fe + 2HCl → FeCl2 + H2' displayed inside the Example 7.18 box (n=4) is kept INLINE in that box's text rather than split out, because this step's rule that a box is its own block takes precedence over cutting a box into three blocks; the layer stores that equation as scrambled single tokens ('2','2','Fe','2HCl','FeCl','H','+','→','+') but its prose-bearing fragments ('2HCl', 'FeCl') survive in the right position, so the inline transcription still matches faithfully and asserts no multi-digit number. NCERT TYPO, inside the deferred table so not transcribed by me but recorded here for A2S: Table 7.10 prints the chlorous/chloric/perchloric formulae with a capital letter I in place of a lower-case l — 'HOCIO', 'HOCIO2', 'HOCIO3' (for HOClO, HOClO2, HOClO3) — and the text layer stores them that way too; they must be preserved verbatim, not silently corrected. Page's last block is the complete Fig. 7.8 display, so last_block_continues_on_next is false."
+}

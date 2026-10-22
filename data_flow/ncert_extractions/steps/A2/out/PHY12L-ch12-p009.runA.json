@@ -1,0 +1,47 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [498, 270, 1400, 732],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 12.4 According to the classical electromagnetic theory,\ncalculate the initial frequency of the light emitted by the electron\nrevolving around a proton in hydrogen atom.\nSolution From Example 12.3 we know that velocity of electron moving\naround a proton in hydrogen atom in an orbit of radius 5.3 × 10⁻¹¹ m\nis 2.2 × 10⁻⁶ m/s. Thus, the frequency of the electron moving around\nthe proton is",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [477, 1082, 830, 1175],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "≈ 6.6 × 10¹⁵ Hz.\nAccording to the classical electromagnetic theory we know that the\nfrequency of the electromagnetic waves emitted by the revolving\nelectrons is equal to the frequency of its revolution around the nucleus.\nThus the initial frequency of the light emitted is 6.6 × 10¹⁵ Hz."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "It was Niels Bohr (1885 – 1962) who made certain modifications in\nthis model by adding the ideas of the newly developing quantum\nhypothesis. Niels Bohr studied in Rutherford’s laboratory for several\nmonths in 1912 and he was convinced about the validity of Rutherford\nnuclear model. Faced with the dilemma as discussed above, Bohr, in\n1913, concluded that in spite of the success of electromagnetic theory in\nexplaining large-scale phenomena, it could not be applied to the processes\nat the atomic scale. It became clear that a fairly radical departure from\nthe established principles of classical mechanics and electromagnetism\nwould be needed to understand the structure of atoms and the relation\nof atomic structure to atomic spectra. Bohr combined classical and early\nquantum concepts and gave his theory in the form of three postulates.\nThese are :"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "(i)\tBohr’s first postulate was that an electron in an atom could revolve\nin certain stable orbits without the emission of radiant energy,\ncontrary to the predictions of electromagnetic theory. According to\nthis postulate, each atom has certain definite stable states in which it"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "298",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read p008 immediately before: it ended with completed sentences (main prose '...explain the atomic structure.' and the Bohr biography box), and this page opens with Fig. 12.6, so nothing continues across the break. Fig. 12.6 (n=1) is needs_special and its bbox includes the labels 'Proton (hydrogen nucleus)', 'Electron e-' and the FIGURE 12.6 caption, so those are not transcribed as blocks. The Example 12.4 grey panel is one logical box split around its display equation (box text n=2 and n=4, equation n=3); its vertical spine tab 'EXAMPLE 12.4' is box decoration, neither blocked nor listed as removed. Text-layer discrepancies corrected from the image: Greek flattened (nu for frequency and the pi in 2πr appear as 'n'/'p'-style Latin in the layer, and the approximately-equal sign appears as '»'; printed ν, π, ≈) and superscripts dropped ('10–11', '10–6', '1015' in the layer; printed 10⁻¹¹, 10⁻⁶, 10¹⁵). Kept as printed, not corrected: the Solution says the orbital velocity 'is 2.2 × 10⁻⁶ m/s' with a negative exponent, which disagrees with the 2.2 × 10⁶ m/s computed on p007 and with the 10⁶ inside the display equation on this page; the image really does print 10⁻⁶ there. Italics in the postulate wording ('an electron in an atom could revolve in certain stable orbits without the emission of radiant energy') are unmarked in the layer. Page ends mid-sentence inside list item (i) ('certain definite stable states in which it')."
+}

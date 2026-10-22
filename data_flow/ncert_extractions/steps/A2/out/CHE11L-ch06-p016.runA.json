@@ -1,0 +1,87 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Solution For the reaction the reaction quotient Qc is given by, Qc = [B][C]/ [A]2 as [A] = [B] = [C] = 3 × 10–4M Qc = (3 ×10–4)(3 × 10–4) / (3 ×10–4)2 = 1 as Qc > Kc so the reaction will proceed in the reverse direction.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "6.6.3 Calculating  Equilibrium Concentrations"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In case of a problem in which we know the initial concentrations but do not know any of the equilibrium concentrations, the following three steps shall be followed:"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Step 1. Write the balanced equation for the reaction."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Step 2. Under the balanced equation, make a table that lists for each substance involved in the reaction:"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "(a) the initial concentration, (b) the change in concentration on going to equilibrium, and (c) the equilibrium concentration."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "In constructing the table, define x as the concentration (mol/L) of one of the substances that reacts on going to equilibrium, then use the stoichiometry of the reaction to determine the concentrations of the other substances in terms of x."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Step 3. Substitute the equilibrium concentrations into the equilibrium equation for the reaction and solve for x. If you are to solve a quadratic equation choose the mathematical solution that makes chemical sense."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Step 4. Calculate the equilibrium concentrations from the calculated value of x."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Step 5. Check your results by substituting them into the equilibrium equation."
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "Problem 6.8 13.8g of N2O4 was placed in a 1L reaction vessel at 400K and allowed to attain equilibrium N2O4 (g) ⇌ 2NO2 (g)"
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "The total pressure at equilbrium was found to be 9.15 bar. Calculate Kc, Kp and partial pressure at equilibrium. Solution We know pV = nRT Total volume (V ) = 1 L Molecular mass of N2O4 = 92 g Number of moles = 13.8g/92 g = 0.15 of the gas (n) Gas constant (R) = 0.083 bar L mol–1K–1 Temperature (T ) = 400 K pV = nRT p × 1L = 0.15 mol × 0.083 bar L mol–1K–1 × 400 K p = 4.98 bar N2O4 ⇌ 2NO2 Initial pressure:   4.98 bar               0 At equilibrium:  (4.98 – x) bar     2x bar Hence, ptotal at equilibrium = pN2O4 + pNO2 9.15 = (4.98 – x)  +  2x 9.15 = 4.98  +  x x = 9.15 – 4.98  =  4.17 bar Partial pressures at equilibrium are, pN2O4 = 4.98 – 4.17 = 0.81bar pNO2 = 2x = 2 × 4.17 = 8.34 bar"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [932, 1363, 1370, 1452],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "box",
+      "text": "Kp   = Kc(RT)∆n 85.87 = Kc(0.083 × 400)1 Kc = 2.586 = 2.6"
+    },
+    {
+      "n": 15,
+      "kind": "box",
+      "text": "Problem 6.9 3.00 mol of PCl5 kept in 1L closed reaction vessel was allowed to attain equilibrium at 380K. Calculate composition of the mixture at equilibrium. Kc= 1.80 Solution PCl5 ⇌ PCl3  +   Cl2 Initial concentration:  3.0        0        0",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["EQUILIBRIUM", "183", "2024-25"],
+  "note": "Two-column page; left column read before right. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 15 output I had just written myself: page 15 ended mid-box with Problem 6.7's question and no solution, and this page opens with that 'Solution', so first_block_continues_from_previous is true. The page carries three pink panels: Problem 6.7's solution (block 1), Problem 6.8 which starts at the foot of the left column (block 11) and fills the top two thirds of the right column (blocks 12-14), and Problem 6.9 which starts at the foot of the right column (block 15). Only one piece of true display maths, the Kp = (pNO2)2/pN2O4 fraction, is pulled out as an equation block (13) for the special transcriber; the rest of the worked lines are linear in the text layer and kept as box text with flattened sub/superscripts. 'equilbrium' in block 12 is the book's own spelling and is copied unchanged. The text layer's order is not reading order: it begins with the right column's Problem 6.8 continuation, then Problem 6.9, and only then the left column's Problem 6.7 solution. last_block_continues_on_next is true because the page ends mid-box: Problem 6.9's worked table breaks off after the initial-concentration line."
+}

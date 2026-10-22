@@ -1,0 +1,34 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 2, "no_change": true},
+    {"n": 3, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "where r′ is the distance between the charge element and P, and  r̂′ is a unit vector in the direction from the charge element to P. By the superposition principle, the total electric field due to the charge distribution is obtained by summing over electric fields due to different volume elements:",
+      "fixes": [
+        {"wrong": "ˆr′", "right": "r̂′"}
+      ]
+    },
+    {
+      "n": 7,
+      "corrected_text": "Note that ρ, r′,  r̂′ all can vary from point to point. In a strict mathematical method, we should let ∆V→0 and the sum then becomes an integral; but we omit that discussion here, for simplicity. In short, using Coulomb’s law and the superposition principle, electric field can be determined for any charge distribution, discrete or continuous or part discrete and part continuous.",
+      "fixes": [
+        {"wrong": "ˆ′r", "right": "r̂′"}
+      ]
+    },
+    {"n": 9, "no_change": true},
+    {"n": 11, "no_change": true},
+    {
+      "n": 13,
+      "corrected_text": "where we have used Coulomb’s law for the electric field due to a single charge q. The unit vector r̂ is along the radius vector from the centre to the area element. Now, since the normal to a sphere at every point is along the radius vector at that point, the area element ∆S and r̂  have the same direction. Therefore,",
+      "fixes": [
+        {"wrong": "ˆr is along the radius vector", "right": "r̂ is along the radius vector"},
+        {"wrong": "∆S and ˆr  have", "right": "∆S and r̂  have"}
+      ]
+    },
+    {"n": 15, "no_change": true},
+    {"n": 16, "no_change": true}
+  ],
+  "note": "n=5, 7 and 13 each had detached hat forms on the unit vector r (ˆr′, ˆ′r, ˆr -> r̂′, r̂′, r̂) -- the hat belongs directly over the r, with any prime after it. n=1, 2, 3, 9, 11, 15, 16 already match the image exactly."
+}

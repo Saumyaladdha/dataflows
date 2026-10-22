@@ -1,0 +1,39 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20,
+    "columns": [
+      {"id": "full", "x0": 0.115, "x1": 0.683}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.025, 0.068, 0.756, 0.108],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435"},
+    {"n": null, "role": "decorative_image", "bbox": [0.756, 0.068, 0.975, 0.158],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.119, 0.140, 0.266, 0.147],
+     "column": "full", "size_rel": 0.75, "align": "left", "font": "sans"},
+    {"n": 1, "role": "box", "bbox": [0.115, 0.165, 0.683, 0.711],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "fill": "#fef7db"},
+    {"n": null, "role": "major_heading", "bbox": [0.346, 0.180, 0.454, 0.190],
+     "column": "full", "size_rel": 1.2, "align": "center", "font": "serif-bold",
+     "fill": "#fef7db"},
+    {"n": null, "role": "decorative_image", "bbox": [0.696, 0.441, 0.740, 0.714],
+     "column": "full", "size_rel": 1.0},
+    {"n": 2, "role": "major_heading", "bbox": [0.287, 0.724, 0.506, 0.748],
+     "column": "full", "size_rel": 2.85, "align": "center", "font": "sans-light",
+     "text_color": "#f7941d"},
+    {"n": 3, "role": "list", "bbox": [0.129, 0.763, 0.657, 0.852],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif"},
+    {"n": null, "role": "page_number", "bbox": [0.800, 0.745, 0.975, 0.779],
+     "column": "full", "size_rel": 1.3, "align": "left", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "footer_rule", "bbox": [0.800, 0.782, 0.975, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.7, "align": "center", "font": "sans"}
+  ],
+  "note": "Recto SUMMARY/EXERCISES page (printed page 55), single full column x=0.115-0.683 with the wide outer margin on the right. No chapter banner and no rule_bar: the coloured opening banner belongs only to page 1, so the only band roles present are page_header_band (dark green strip x=0.025-0.756 at y=0.068-0.108, flat-interior sample #4a7435, matching the chapter reference) and footer_rule (the thin orange rule at y=0.782-0.788 beneath the page-number tab, mean #f7941e, reported #f7941d). Both all-caps headings are major_heading, not chapter_title: \"SUMMARY\" set centred inside the tinted panel, and \"EXERCISES\" in large orange sans beneath it. The summary panel is a single `box` with a flat cream fill sampled #fef7db from its interior (a thin yellow keyline border frames it); A2 gave the whole panel as one block, text_head beginning \"SUMMARY\", so n=1 is carried by the box and the SUMMARY major_heading element inside it takes n: null rather than duplicate the same block -- that heading/box pairing is the one genuinely ambiguous match on this page. The three prose paragraphs inside the panel are not split out separately because A2 blocked them as one box. EXERCISES measures 57 px cap height against a 20 px body, hence size_rel 2.85; its glyph cores sample #f4961a-#f39523, i.e. the chapter orange #f7941d within antialiasing noise, so #f7941d is reported. The orange wheat/leaf motif running down the right of the panel (x=0.696-0.740, y=0.441-0.714) is a decorative_image, as is the brown/orange corner block at the top right. body_text_size_px=20 taken from the exercise list prose (36-37 px leading, ~17-20 px cap-to-baseline depending on glyph); the panel prose is the same type size set on tighter 30 px leading, so it is also size_rel 1.0. The \"2022-23\" imprint at the foot is recorded as a running_header for want of a dedicated role."
+}

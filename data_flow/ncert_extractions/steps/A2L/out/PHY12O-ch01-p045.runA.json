@@ -1,0 +1,33 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.685}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.067],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.5494, 0.0, 0.8729, 0.124],
+     "column": "full", "size_rel": 1.6, "align": "center", "font": "sans",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "box", "bbox": [0.0982, 0.1345, 0.6853, 0.9371],
+     "column": "full", "size_rel": 0.85, "align": "justify", "font": "serif",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": null, "role": "major_heading", "bbox": [0.3153, 0.1625, 0.4976, 0.1722],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif-bold",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "list", "bbox": [0.1294, 0.197, 0.6565, 0.9311],
+     "column": "full", "size_rel": 0.85, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8141, 0.9155, 0.8718, 0.9371],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "sans",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "sans",
+     "text_color": "#221f1f"}
+  ],
+  "note": "Recto page, one full column; the whole body is the 'POINTS TO PONDER' panel, running the full depth y 0.1345-0.9371 across x 0.098-0.685. Unlike the SUMMARY panel on p042-p044 this one is flat GREY #d1d2d4 - the same grey as the running-header panel - with no coloured side ornament and no cyan anywhere, so it should not be read as another instance of the pale blue summary tint. Here A2's block 1 IS the whole panel (its text_head starts with the title 'POINTS TO PONDER' and runs on into numbered item 1), so the box element carries n=1 rather than null. The panel's centred bold title and its ten numbered items are also given as their own elements, both with n: null, so that their differing type sizes and alignments are recorded: the title is body-size (cap height 20px, size_rel 1.0, centred) while the numbered items are set a notch smaller (cap height 17px, size_rel 0.85, justified). IMPORTANT for size_rel: this page prints no ordinary body prose, so page.body_text_size_px is given as 20.0 - the body cap height measured on the neighbouring body pages of this chapter - keeping size_rel comparable page to page. page_header_band is the pale blue #c6eafb strip across the whole page top (y 0-0.067); its #41c7f4 hairline and #00adef foot rule are internal edges of that one band - no rule_bar and no footer_rule on this page. The '2022-23' edition line at the foot is recorded as a second running_header because the allowed role list has no footer-text role. The single A2 block matched by position."
+}

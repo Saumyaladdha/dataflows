@@ -1,0 +1,33 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "full", "x0": 0.314, "x1": 0.903}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.067],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.1271, 0.0, 0.4506, 0.124],
+     "column": "full", "size_rel": 2.25, "align": "center", "font": "sans",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "list", "bbox": [0.3159, 0.135, 0.9029, 0.2236],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "list", "bbox": [0.3159, 0.2305, 0.9024, 0.3471],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "list", "bbox": [0.3159, 0.3554, 0.9018, 0.4123],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.1276, 0.9155, 0.1853, 0.9371],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "sans",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "sans",
+     "text_color": "#221f1f"}
+  ],
+  "note": "Last page of the chapter: a verso ADDITIONAL EXERCISES page, one full column (verso measure x 0.314-0.903). Only three elements of content - blocks 1-3 are exercises 1.32, 1.33 and 1.34, each a numbered item (role list) with its number hanging at x 0.316 and text indented to x 0.373. Everything below y 0.412 is bare paper: the page runs out of copy just over a third of the way down and the remaining 55 per cent carries nothing but the diagonal 'not to be republished' watermark, which is not an element. Block 2 ends with two italic lines ('Compare this motion with motion of a projectile ... Class XI Textbook of Physics.') set at the same measure; they are part of that exercise and are included in its bbox rather than split out. The wide outer margin at left is empty apart from the page-number box. IMPORTANT for size_rel: this page prints no ordinary body prose, so page.body_text_size_px is given as 20.0 - the body cap height measured on the chapter's body pages - keeping size_rel comparable page to page; on that basis the exercise text (cap height 18px) is 0.9. page_header_band is the pale blue #c6eafb strip across the whole page top (y 0-0.067); its #41c7f4 hairline and #00adef foot rule are internal edges of that one band - no rule_bar and no footer_rule on this page. The '2022-23' edition line at the foot is recorded as a second running_header because the allowed role list has no footer-text role. All 3 A2 blocks matched by position."
+}

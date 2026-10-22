@@ -1,0 +1,41 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "C or H) is less than 109.5°; for instance, it is 108° in case of trimethylamine as shown in Fig. 9.1.",
+      "fixes": [
+        {"wrong": "108o", "right": "108°"}
+      ]
+    },
+    {
+      "n": 4,
+      "corrected_text": "Amines are classified as primary (1°), secondary (2°) and tertiary (3°) depending upon the number of hydrogen atoms replaced by alkyl or aryl groups in ammonia molecule.  If one hydrogen atom of ammonia is replaced by R or Ar , we get RNH₂ or ArNH₂, a primary amine (1°). If two hydrogen atoms of ammonia or one hydrogen atom of R-NH₂ are replaced by another alkyl/aryl(R’) group,  what would you get? You get R-NHR’, secondary amine.  The second alkyl/aryl group may be same or different. Replacement of another hydrogen atom by alkyl/aryl group leads to the formation of tertiary amine. Amines are said to be ‘simple’ when all the alkyl or aryl groups are the same, and ‘mixed’ when they are different.",
+      "fixes": [
+        {"wrong": "(1o)", "right": "(1°)"},
+        {"wrong": "(2o)", "right": "(2°)"},
+        {"wrong": "(3o)", "right": "(3°)"},
+        {"wrong": "RNH2", "right": "RNH₂"},
+        {"wrong": "ArNH2", "right": "ArNH₂"},
+        {"wrong": "(1o)", "right": "(1°)"},
+        {"wrong": "R-NH2", "right": "R-NH₂"}
+      ]
+    },
+    {
+      "n": 7,
+      "corrected_text": "In common system, an aliphatic amine is named by prefixing alkyl group to amine, i.e., alkylamine as one word (e.g., methylamine).  In secondary and tertiary amines, when two or more groups are the same, the prefix di or tri is appended before the name of alkyl group.  In IUPAC system, primary amines are named as alkanamines. The name is derived by replacement of ‘e’ of alkane by the word amine. For example, CH₃NH₂ is named as methanamine. In case, more than one amino group is present at different positions in the parent chain, their positions are specified by giving numbers to the carbon atoms bearing –NH₂ groups and suitable prefix such as di, tri, etc. is attached to the amine. The letter ‘e’ of the suffix of the hydrocarbon part is retained. For example, H₂N–CH₂–CH₂–NH₂ is named as ethane-1, 2-diamine.",
+      "fixes": [
+        {"wrong": "CH3NH2", "right": "CH₃NH₂"},
+        {"wrong": "–NH2 groups", "right": "–NH₂ groups"},
+        {"wrong": "H2N–CH2–CH2–NH2", "right": "H₂N–CH₂–CH₂–NH₂"}
+      ]
+    },
+    {
+      "n": 8,
+      "corrected_text": "To name secondary and tertiary amines, we use locant N to designate substituent attached to a nitrogen atom. For example, CH₃ NHCH₂CH₃ is",
+      "fixes": [
+        {"wrong": "CH3 NHCH2CH3", "right": "CH₃ NHCH₂CH₃"}
+      ]
+    }
+  ],
+  "note": "This page carried the real-case degree-symbol bug described in the brief: n=1 and n=4 had bond-angle/classification labels '108o' and '(1o)/(2o)/(3o)' stored with a letter o instead of the degree sign; restored to 108° and (1°)/(2°)/(3°) (five degree-symbol fixes total). n=4, n=7 and n=8 also had multiple flattened subscripts in molecular formulas (RNH2, ArNH2, R-NH2, CH3NH2, NH2, H2N-CH2-CH2-NH2, CH3 NHCH2CH3) restored to proper subscript digits to match the image. No locant superscripts, radicals, hats or modulus bars found on this page."
+}

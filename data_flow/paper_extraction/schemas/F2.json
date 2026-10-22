@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "F2 · one reviewer correction, written as a NEW step output (spec 14/F3 step 3)",
+  "description": "steps/F2/out/<ITEM>.correctionNNN.<field>.json. A correction is recorded as a new F2 output plus a record update; the original step's output file is never modified, so `old` here is the value the agent actually produced.",
+  "type": "object",
+  "required": ["step", "item_id", "field", "new", "reviewer", "decided_at"],
+  "additionalProperties": true,
+  "properties": {
+    "step": {"const": "F2"},
+    "item_id": {"type": "string", "minLength": 1},
+    "item_type": {"type": "string"},
+    "field": {"type": "string", "minLength": 1},
+    "old": {},
+    "new": {},
+    "reviewer": {"type": "string", "minLength": 1},
+    "comment": {"type": ["string", "null"]},
+    "decided_at": {"type": "string", "minLength": 4},
+    "flag_id": {"type": ["string", "null"], "pattern": "^(FL-\\d+)?$"},
+    "prompt_version": {"type": "string"},
+    "note": {"type": "string"}
+  }
+}

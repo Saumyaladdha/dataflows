@@ -1,0 +1,84 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "mechanism is neglected, there is no external torque about the axis of rotation of the chair and hence Iω is constant.  Stretching the arms increases I about the axis of rotation, resulting in decreasing the angular speed ω.  Bringing the arms closer to the body has the opposite effect.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "A circus acrobat and a diver take advantage of this principle.  Also, skaters and classical, Indian or western, dancers performing a pirouette (a spinning about a tip–top) on the toes of one foot display ‘mastery’ over this principle. Can you explain?"
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "SUMMARY"
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "1.\tIdeally, a rigid body is one for which the distances between different particles of the body do not change, even though there are forces on them.\n2.\tA rigid body fixed at one point or along a line can have only rotational motion. A rigid body not fixed in some way can have either pure translational motion or a combination of translational and rotational motions.\n3.\tIn rotation about a fixed axis, every particle of the rigid body moves in a circle which lies in a plane perpendicular to the axis and has its centre on the axis. Every Point in the rotating rigid body has the same angular velocity at any instant of time.\n4.\tIn pure translation, every particle of the body moves with the same velocity at any instant of time.\n5.\tAngular velocity is a vector. Its magnitude is ω = dθ/dt and it is directed along the axis of rotation. For rotation about a fixed axis, this vector ω has a fixed direction.\n6.\tThe vector or cross product of two vector a and b is a vector written as a×b. The magnitude of this vector is absinθ  and its direction is given by the right handed screw or the right hand rule.\n7.\tThe linear velocity of a particle of a rigid body rotating about a fixed axis is given by v = ω × r, where r is the position vector of the particle with respect to an origin along the fixed axis. The relation applies even to more general rotation of a rigid body with one point fixed. In that case r is the position vector of the particle with respect to the fixed point taken as the origin.\n8.\tThe centre of mass of a system of n particles is defined as the point whose position vector is"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        350,
+        1200,
+        545,
+        1300
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "9.\tVelocity of the centre of mass of a system of particles is given by V = P/M, where P is the linear momentum of the system. The centre of mass moves as if all the mass of the system is concentrated at this point and all the external forces act at it. If the total external force on the system is zero, then the total linear momentum of the system is constant.\n10. The angular momentum of a system of n particles about the origin is"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        350,
+        1555,
+        615,
+        1635
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The torque or moment of force on a system of n particles about the origin is"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        350,
+        1710,
+        535,
+        1795
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The force  Fi  acting on the ith particle includes the external as well as internal forces. Assuming Newton’s third law of motion and that forces between any two particles act along the line joining the particles, we can show τint = 0 and"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "123",
+    "2024-25"
+  ],
+  "note": "Blocks 3-10 are all inside one shaded SUMMARY box that runs from mid-page to the bottom; it is split into heading / list / equation / paragraph blocks so the three displayed equations inside it could be marked needs_special rather than transcribed. The text_layer for this page is out of reading order: it lists the header, the whole SUMMARY box, and only then the two-column body text that actually appears at the top of the page; blocks are given in true reading order from the image (left column, then right column, then the box). Input field previous_page_last_block was null even though this is page 32, so the opening continuation was judged from the page itself: the first block starts mid-sentence (\"mechanism is neglected, ...\"). The page ends mid-sentence (\"... we can show τint = 0 and\") inside the SUMMARY box, so the box continues on the next page. Inline mathematics in the list items is copied as the text_layer holds it (e.g. \"ω = dθ/dt\", \"absinθ\", \"v = ω × r\", \"V = P/M\", \"τint = 0\"); subscript/superscript styling shown on the image (Fi, ith, τint) is not reproducible in plain text."
+}

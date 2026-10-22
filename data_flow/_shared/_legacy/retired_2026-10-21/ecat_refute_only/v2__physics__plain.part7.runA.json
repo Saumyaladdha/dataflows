@@ -1,0 +1,155 @@
+{
+  "group": "v2__physics__plain.part7",
+  "ratings": [
+    {
+      "question_id": "2015_A#q174",
+      "question_type": "multi_part_respectively",
+      "format": "pick_both_parts",
+      "content_shape": "formula_or_law",
+      "concept": "Critical velocity by dimensions: $v_c \\propto \\eta/(\\rho r)$, so the exponents are $1, -1, -1$",
+      "cognitive_demand": "dimensional_reasoning",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Only $\\eta$ carries time, $\\mathrm{ML^{-1}T^{-1}}$, and a velocity carries $T^{-1}$, so $x = +1$ at once; that strikes out options 3 and 4.",
+      "traps": [
+        {
+          "label": "sign_reversed_magnitude_right",
+          "option": "1",
+          "route": "All three magnitudes are right and two signs are wrong. $\\rho$ and $r$ divide into $\\eta$, they do not multiply it."
+        },
+        {
+          "label": "sign_reversed_magnitude_right",
+          "option": "3",
+          "route": "Puts $\\eta$ underneath and $r$ on top. Only $\\eta$ carries time, so it has to be on top."
+        },
+        {
+          "label": "complementary_grid",
+          "option": "4",
+          "route": "Every exponent is $-1$, the mirror of option 1. The four options are one magnitude, 1, crossed with sign patterns, so no single slip picks this one out."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires powers to be fixed by matching dimensions, demonstrated by the stem's \"dimensions of critical velocity vc ... are expressed as [eta^x rho^y r^z]\", which supplies no numerical data of any kind.",
+      "note": "E1 is `multi_part_respectively` and E2 `pick_both_parts`, the rulebook's co-occurring pair: the stem asks for three exponents together and each option must get all three right. E4a is `dimensional_reasoning` and not the `dimensional_check` strategy, because dimensions are the only route to the answer here rather than a check on one reached another way."
+    },
+    {
+      "question_id": "2015_A#q175",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Shunted ammeter: coil and shunt in parallel give $19.2\\,\\Omega$, so the loop is $60\\,\\Omega$ and the reading is $30/60$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires one computed resistance to be fed into the next relation, demonstrated by the stem's \"coil of resistance 480 ohm and a shunt of 20 ohm\", which must be combined in parallel before the $40.8\\,\\Omega$ can be added and the current found.",
+      "note": "No trap is written, and that is a finding rather than an omission. The four options are a doubling ladder - $0.25$, $0.5$, $1$, $2\\,\\mathrm{A}$ - and the candidate mis-steps were tried against the stem's numbers: dropping the shunt and using the $480\\,\\Omega$ coil gives $0.058\\,\\mathrm{A}$; putting coil and shunt in series gives $0.055\\,\\mathrm{A}$; dropping the $40.8\\,\\Omega$ gives $1.56\\,\\mathrm{A}$; averaging the two resistances gives $0.10\\,\\mathrm{A}$; and the coil's own branch current is $0.02\\,\\mathrm{A}$. None of those is printed, so no wrong option can be tied to a route. `complementary_grid` does not apply either: a doubling ladder is one axis, not the two the label requires. The figure figures_agent/2015_A/q175.png is present and was read - the $20\\,\\Omega$ shunt drawn across the $480\\,\\Omega$ meter, with the $40.8\\,\\Omega$ and the cell in series - and it adds nothing the stem does not state, so no `figure_to_read` secondary type is recorded. `estimation` is recorded because the shunt is small against the coil, so the pair is close to $20\\,\\Omega$ and the loop close to $60\\,\\Omega$."
+    },
+    {
+      "question_id": "2015_A#q176",
+      "question_type": "statement_options",
+      "format": "pick_cause_or_effect",
+      "content_shape": "formula_or_law",
+      "concept": "Capillary rise: $hr$ is fixed, so in a tube shorter than $h$ the meniscus flattens to a bigger radius and the water stops at the rim",
+      "cognitive_demand": "condition_based_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "wrong_quantity",
+          "option": "1",
+          "route": "Takes the tube's length as what fixes the rise. It is the radius that does."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "2",
+          "route": "A fountain would pour out for ever with no energy supplied. The meniscus flattens instead and nothing overflows."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a stated condition to be carried into the relation, demonstrated by the stem's \"If the length of capillary tube above the surface of water is made less than 'h'\" - remove that clause and the water simply rises to $h$.",
+      "note": "E4a is `condition_based_reasoning` rather than `application` on the rulebook's own test: strike the printed condition out of the stem and a different option becomes correct. Option 4 is left untagged - no relation produces a stop a little below the rim, since the meniscus adjusts to exactly the length available, but that is the same demonstration already made for option 2 and pinning it twice would add nothing."
+    },
+    {
+      "question_id": "2015_A#q177",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Telescope in normal adjustment: the eyepiece images the objective at the eye ring, so the magnification is the objective's size over that image's, $L/I$",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "2",
+          "route": "The \"+1\" belongs to a magnifying glass with the image at the near point, $1 + D/f$, not to a telescope."
+        },
+        {
+          "label": "complementary_grid",
+          "option": "3",
+          "route": "The same ratio with the added 1 turned negative. The options are $L/I$ crossed with $+1$, $-1$ and nothing."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "No telescope relation combines the two lengths as a sum over a difference; the magnification is a plain ratio of them."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a lens relation to be applied to an object the student is not used to treating as one, demonstrated by the stem's \"a straight black line of the length L is drawn on inside part of objective lens\", which makes the objective itself the object for the eyepiece.",
+      "note": "The record carries has_figure true for figures_agent/2015_A/q177.png, which is not in that directory at the time of rating. The stem states the adjustment, the line on the objective and the real image in words, so no figure is needed and the question is tagged as complete. No `dimensional_check` is recorded: all four options are ratios of two lengths and so dimensionless, and dimensions cannot separate them."
+    },
+    {
+      "question_id": "2015_A#q178",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Density against temperature: the fractional fall in density is $\\gamma\\,\\Delta T$, here $5\\times10^{-4}\\times40$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": ["unit_sanity"],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires one relation applied once, demonstrated by the stem's \"coefficient of volume expansion of glycerin is 5 x 10^-4 K^-1\" and \"a rise of 40 C\", which multiply directly.",
+      "note": "No trap is written. The four options are an even arithmetic spread - $0.010$, $0.015$, $0.020$, $0.025$, spaced $0.005$ apart - and the candidate mis-steps do not land on any of them: using the linear coefficient $\\gamma/3$ gives $0.0067$, and converting the $40\\,^{\\circ}\\mathrm{C}$ RISE into $313\\,\\mathrm{K}$ gives $0.157$. Neither is printed, so the three wrong options cannot be tied to a route and are left as spread. `unit_sanity` is recorded for the one real unit point in the question: a rise of $40\\,^{\\circ}\\mathrm{C}$ is a rise of $40\\,\\mathrm{K}$, so the $\\mathrm{K^{-1}}$ coefficient needs no conversion at all."
+    },
+    {
+      "question_id": "2015_A#q179",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Einstein's equation written twice: for $\\lambda$ and $\\lambda/2$ with $K_2 = 3K_1$, the work function comes out as $hc/2\\lambda$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "copied_from_stem",
+          "option": "1",
+          "route": "Carries the stem's \"3 times\" straight into the answer as a $1/3$. The 3 cancels out of the algebra instead."
+        },
+        {
+          "label": "intermediate_value",
+          "option": "3",
+          "route": "That is the first photon's energy, formed on the way. The work function is half of it."
+        },
+        {
+          "label": "intermediate_value",
+          "option": "4",
+          "route": "That is the second photon's energy, for $\\lambda/2$. It is the other quantity formed on the way, not the answer."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one equation's result to be substituted into another, demonstrated by the stem's \"the maximum kinetic energy of the emitted photoelectrons in the second case is 3 times that in the first case\", which can only be used once both photoelectric equations are written out.",
+      "note": "All four options are multiples of $hc/\\lambda$ and so dimensionally identical; no dimensional check separates them, which is why none is recorded."
+    }
+  ],
+  "group_note": "Six questions grouped on `structure` = \"plain\". Two are re-read from the layout: 2015_A#q174 asks for three exponents together, which is `multi_part_respectively` with E2 `pick_both_parts` - the rulebook's co-occurring pair, E1 recording that several things were asked and E2 that all must be right together; and 2015_A#q176, whose stem ends at \"then:\" with each option a standalone outcome, is `statement_options`. E2 separates the rest from the options alone: numbers with units in q175 and q178 are `calculate_value`, symbolic answers in q177 and q179 are `derive_expression`, and q176's rival outcomes of a printed change are `pick_cause_or_effect`. DEMAND: `calculation` for the three that produce a value or an expression by computing (q175, q178, q179); `dimensional_reasoning` for q174, where dimensions are the only route and not a check, which is the distinction the rulebook draws between the demand and the `dimensional_check` strategy; `condition_based_reasoning` for q176, on the rulebook's own test that striking the printed condition out of the stem changes which option is right; `application` for q177, where a standard lens relation is applied to an unusual object - the objective lens itself. STRUCTURE: `multi_step_dependent` for the four where a result is consumed by the next step (q174's exponents solved in sequence, q175's parallel pair then the loop, q177's image of the objective then the ratio, q179's two equations substituted one into the other) and `single_step` for the two that are one multiplication or one reading of a condition (q178, q176). STRATEGY: `elimination` on q174 only, where one dimensional fact - $\\eta$ alone carries time - strikes out two named options, and the shortcut is written out; `estimation` on q175 and `unit_sanity` on q178, each for a nameable reason given in its note. TRAPS: nine in all. Signs inverted with the magnitudes right is `sign_reversed_magnitude_right` (q174); an option that only the grid explains is `complementary_grid`, used twice and in both cases with the two axes named in the route; a real formula belonging to another instrument is `neighbouring_question_answer` (the near-point magnifier's $+1$); a quantity formed on the way printed as the answer is `intermediate_value` (q179's two photon energies); a number lifted from the stem is `copied_from_stem` (q179's 3); a neighbouring physical quantity is `wrong_quantity` (q176's length for radius); and `no_derivation_route` is used twice, each time demonstrated - a capillary fountain would need energy from nowhere, and no telescope relation forms a sum over a difference. TWO NEGATIVE FINDINGS ARE STATED AS SUCH, and they are the same kind: 2015_A#q175 and #q178 carry NO trap, because their option sets are a doubling ladder and an even arithmetic spread around the key, and in both cases the candidate mis-steps were worked through and none lands on a printed option. The two figures in this packet behave differently and both are recorded: q175's is present and was read, adding nothing to the stem, so no overlay type is given; q177's is listed in the record but absent from the directory, and the stem needs none. No trap sits on any official answer."
+}

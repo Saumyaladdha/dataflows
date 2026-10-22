@@ -1,0 +1,362 @@
+# config/_pending_E_entries.yaml
+#
+# NOT LOADED BY ANYTHING. This is a handoff file, written 2026-10-12 by the Stage-E tagging build.
+#
+# WHY IT EXISTS: `config/steps.yaml` and `scripts/step_plugins.py` were both owned by another
+# agent while Stage E was being built, and a concurrent write to either would have been lost. So
+# every change Stage E needs in those two files is written here instead, complete and ready to
+# paste, with a comment on each field explaining what it is for and where the rule comes from.
+#
+# WHAT TO DO WITH IT: replace the seven `E0:` .. `E6:` blocks in `config/steps.yaml` with the
+# seven below (they are complete entries, not fragments -- every field the existing blocks carry
+# is present, and every value that CHANGES from what is in `steps.yaml` today is marked
+# `# CHANGED`). Then read Part 2, which is the plugin-side contract the seven
+# `scripts/checks/E*.py` modules already expect. Then delete this file.
+#
+# WHAT IS ALREADY DONE AND NEEDS NOTHING: `schemas/E0.json`-`E6.json` and
+# `scripts/checks/E0.py`-`E6.py` all exist and are unit-tested (`tests/test_e_checks.py`).
+# `scripts/type_patterns.py` (E1's script half) and `scripts/describe_tags.py` (E6's script half)
+# were already built and real-tested. `scripts/legacy_match.py`, `scripts/e0_category_sheet.py`,
+# `scripts/tag_values.py` and `scripts/codebook_version.py` are new and self-tested.
+
+
+# ===========================================================================================
+# PART 1 -- the seven config/steps.yaml blocks
+# ===========================================================================================
+
+E0:
+  stage: "E"
+  name: "Category discovery"
+  # Spec 13/E0's sample is "~300 questions from the most recent papers available, ~100 per
+  # subject, across many chapters", so the unit of work is a sample, not a question. E0.1 then
+  # fans out one agent call per question inside that sample and E0.2 one per tag.
+  item: "sample"
+  agent: "e0-open-look, e0-category-grouper"
+  runs: 1
+  needs: "D8"
+  # e0-open-look's own Input block: question, answer taught, evidence lines, subject. There is
+  # DELIBERATELY no `allowed` and no `codebook` -- see codebook_file below.
+  input_fields: [question, answer_taught, evidence, subject]
+  output_schema: schemas/E0.json
+  check: scripts/checks/E0.py
+  fallback: []
+  flags:
+    # Spec 16, the only flag spec gives E0: one per tag, so Stage F shows the findings to the
+    # owner. Raised by the plugin after scripts/e0_category_sheet.py has written the sheet.
+    E0_FINDINGS_READY: normal
+  safe_default: null
+  # MUST STAY null, AND THIS ONE null IS LOAD-BEARING -- it is the only one in Stage E that is.
+  # Spec 13/E0 step 1: e0-open-look answers "with NO categories shown". Passing it a codebook (or
+  # an `allowed` list) would destroy the step: a tagger shown the list stops discovering and
+  # starts matching, and E0.2's grouping would then reproduce the list it was fed, which reads to
+  # the owner as confirmation of the taxonomy rather than a test of it. scripts/checks/E0.py
+  # scans the free text for every coined value in config/allowed_values.yaml and fails on a leak.
+  codebook_file: null
+
+E1:
+  stage: "E"
+  name: "Question type"
+  item: "question"
+  # SCRIPT first, AGENT only when no pattern decides (spec 13/E1, verbatim). The script is
+  # scripts/type_patterns.py: 16 patterns in spec's priority order, first match wins, 11 passing
+  # boundary self-tests. On the real bank it decides 9 of the 10 canonical questions and hands
+  # exactly one (Q-000005) to the agent.
+  agent: "script | e1-type-tagger"
+  runs: 1
+  needs: "D7"
+  # e1-type-tagger.md's Input block: the question with its `structure` field, `codebook` (present
+  # only if the file exists), `allowed` (the values with their one-line definitions).
+  input_fields: [question, codebook, allowed]
+  output_schema: schemas/E1.json
+  check: scripts/checks/E1.py
+  # Spec 13/E1's On-failure line gives no adjudicator for E1; one run, one retry, then spec's own
+  # safe default below.
+  fallback: [retry]
+  flags:
+    # Spec 16: E_NEW_CATEGORY, E1-E5, normal, raised on any "new_..." answer, carrying
+    # "new_...:<description>" as the provisional value.
+    E_NEW_CATEGORY: normal
+  safe_default: "retry exhausted -> new_type with the failing check's message as new_description, E_NEW_CATEGORY (normal). This is spec 13/E1's own fallback ('new_type -> E_NEW_CATEGORY (normal) with the description') and is strictly better than a near value: a stretched value is invisible in Stage F, a new_type is reviewed."
+  codebook_file: codebook/E1.md   # CHANGED (was null; the file exists, hash fc7f83bc8355)
+
+E2:
+  stage: "E"
+  name: "Format"
+  item: "question"
+  # The SCRIPT half here is a GUARD on every item, not a path that resolves items without the
+  # agent -- so the field stays a plain agent name, the same precedent as D4 and B8 (whose
+  # plugins also run their own verification in code without a "script |" prefix).
+  agent: "e2-format-tagger"
+  runs: 1
+  needs: "E1"
+  # e2-format-tagger.md's Input block. `negative_words_seen` is B3's field (stored on the record
+  # as `negative_words`) and is what the guard reads -- it must be in the input even when empty,
+  # because an empty value is itself one of the guard's three cases.
+  input_fields: [question, negative_words_seen, codebook, allowed]
+  output_schema: schemas/E2.json
+  check: scripts/checks/E2.py
+  # Spec 13/E2 On failure, verbatim: "guard fails -> retry with 'The stem contains <word>'; then
+  # adjudicator -> E2_NEGATIVE_GUARD (high)". This is the ONE E step that can force an
+  # adjudication, which is why both rungs are present.
+  fallback: [retry, adjudicator]   # CHANGED (was [])
+  flags:
+    E2_NEGATIVE_GUARD: high
+    E_NEW_CATEGORY: normal
+  safe_default: "guard fails, retry fails, adjudicator unsure -> take the guard's own required value, because the guard knows what the format must be even when it cannot know which of two it is: with a negative word and single-item/statement options, `pick_incorrect`; with combination options, `pick_correct_combination`; with match-code options, `pick_match_code`. Raise E2_NEGATIVE_GUARD (high) with the agent's value as the provisional one so Stage F sees both."
+  codebook_file: codebook/E2.md   # CHANGED (was null; the file exists, hash 93037e5887a8)
+
+E3:
+  stage: "E"
+  name: "Content shape"
+  item: "question"
+  agent: "e3-shape-tagger"
+  runs: 1
+  needs: "E2"
+  # e3-shape-tagger.md's Input block: the question, and D4's evidence lines WITH THEIR PASSAGE
+  # KINDS (paragraph / table / figure / equation / box). The kinds are the strongest single signal
+  # in the step and are useless if the plugin flattens them to bare quotes.
+  input_fields: [question, evidence, codebook, allowed]
+  output_schema: schemas/E3.json
+  check: scripts/checks/E3.py
+  fallback: [retry]
+  flags:
+    E_NEW_CATEGORY: normal
+    # Spec 16: E3_MEDIUM, low, raised on medium confidence, carrying the shape. IMPORTANT: this is
+    # a FLAG, never a check failure. scripts/checks/E3.py passes a medium-confidence output and
+    # says so in its message, because codebook/E3.md §4 tells the agent to use medium whenever no
+    # evidence was available -- which is most real questions today, since Stage A has indexed 2 of
+    # 13 Biology chapters and zero Physics/Chemistry chapters. Raise this from the resolved
+    # confidence value, the way D4Plugin raises its own outcome flags, not by parsing a message.
+    E3_MEDIUM: low
+  safe_default: "retry exhausted -> new_shape with the failing check's message as new_description, E_NEW_CATEGORY (normal), same reasoning as E1."
+  codebook_file: codebook/E3.md   # CHANGED (was null; the file exists, hash 776dcf76a04a)
+
+E4:
+  stage: "E"
+  name: "Thinking"
+  item: "question"
+  agent: "e4-thinking-tagger"
+  # Spec 13/E4: 2 runs + adjudicator. Already correct in steps.yaml.
+  runs: 2
+  needs: "E3"
+  # CHANGED, and this is the change that matters most in the whole file. `subject` and `branch`
+  # MUST be in the agent's input. codebook/E4.md §1 is Stage E's most-confirmed rule (10 of 10
+  # real papers, no exceptions): a Chemistry expectation must be conditioned on B7's BRANCH, never
+  # on the word "Chemistry" -- physical chemistry behaves numerically like Physics, organic and
+  # inorganic behave descriptively like Biology, and the split runs 40-60% each way. An agent that
+  # never receives `branch` cannot possibly condition on it, and no check of the OUTPUT could
+  # reveal that. So scripts/checks/E4.py FAILS any item whose input_data has no `branch` key --
+  # present even when its value is null. Pass `branch` as null for Physics; do not omit the key.
+  input_fields: [question, answer_taught, evidence, subject, branch, codebook, codebook_version]
+  output_schema: schemas/E4.json
+  check: scripts/checks/E4.py
+  fallback: [adjudicator]   # CHANGED (was [])
+  flags:
+    # Spec 16: runs disagreed OR low confidence. scripts/checks/E4.py fails a low-confidence run
+    # (spec 13/E4 Checks: "confidence not low"), which routes it here -- the failure IS the
+    # designed escalation, not a complaint about the agent.
+    E4_ADJUDICATED: normal
+    # Spec 13.0 and 16: raised on EVERY E4 output while codebook/E4.md does not exist. Raise it
+    # unconditionally from codebook_version.for_step("E4")[1] == "none", never from a parsed check
+    # message -- same precedent as D4Plugin's unconditional outcome flags. With the codebook_file
+    # line below in place, the file DOES exist, so this flag should stop appearing; if it keeps
+    # appearing after the merge, the codebook is still not reaching the agent.
+    E4_NO_CODEBOOK: low
+  safe_default: "runs disagree on the primary (or on whether a secondary exists), or either run is low-confidence -> adjudicator. Adjudicator unsure -> run A's primary with secondary null, E4_ADJUDICATED (normal), both runs kept as provisional values. Never merge two primaries and never promote a secondary to break a tie: codebook/E4.md §4 is explicit that a secondary is a second KIND of thinking, not a hedge between two readings of the primary."
+  codebook_file: codebook/E4.md   # CHANGED (was null; the file exists, hash b8467783d2ab)
+
+E5:
+  stage: "E"
+  name: "Traps"
+  # ONE WRONG OPTION of one question -- normally 3 items per question, each with 2 runs plus an
+  # adjudicator on disagreement. The item id convention the checks expect is `<QID>#opt<N>`
+  # (e.g. Q-000015#opt2); scripts/checks/E5.py also accepts `<QID>#<N>` so it does not break if
+  # the plugin spells it the shorter way.
+  item: "wrong option"
+  agent: "e5-trap-tagger"
+  runs: 2
+  needs: "E4"
+  # e5-trap-tagger.md's Input block. `wrong_option` is {number, text} -- the ONE option this item
+  # is for; scripts/checks/E5.py checks the output's `option` against it. `change_log_entries` are
+  # the A9 entries on the evidence passages, and they are the HARD PRECONDITION for the
+  # `old_ncert_fact` trap (codebook/E5.md §4): the check fails that value when the list is empty.
+  input_fields: [question, answer_taught, wrong_option, evidence, change_log_entries, codebook, allowed]
+  output_schema: schemas/E5.json
+  check: scripts/checks/E5.py
+  fallback: [adjudicator]   # CHANGED (was [])
+  flags:
+    E5_ADJUDICATED: normal
+    E_NEW_CATEGORY: normal
+  safe_default: "two runs disagree on the trap -> adjudicator. Adjudicator unsure -> run A's trap, E5_ADJUDICATED (normal), both kept as provisional values. HOW MANY ITEMS TO CREATE: 3 is the normal case, not a quota (codebook/E5.md §1). official_status `normal` -> 3 items, one per option that is not the answer taught. `multiple_accepted` -> one item per genuinely wrong option only. `bonus`/`dropped` -> no items at all unless B8 produced a `corrected_answer`, in which case treat that as the answer and create items for the remaining options. NEVER invent a third wrong option to reach three; real Q-000004 is `dropped` with a B8 corrected_answer of 1 and is the live case for that branch."
+  codebook_file: codebook/E5.md   # CHANGED (was null; the file exists, hash bd2bc6188e75)
+
+E6:
+  stage: "E"
+  name: "Descriptive tags"
+  item: "question"
+  # SCRIPT (scripts/describe_tags.py) fills five fields outright and decides `stem_context`
+  # whenever exactly one pattern fires; the AGENT is called for `stem_context` ONLY, and only
+  # when two or more patterns fire at once. On the real bank today exactly one of the 10 canonical
+  # questions reaches the agent (Q-000013, where reaction_given and figure_given both fire).
+  agent: "script | e6-context-tagger"
+  runs: 1
+  needs: "E1"
+  # e6-context-tagger.md's Input block: stem and options, B3's structure, whether a figure exists,
+  # and `codebook`. No `allowed` list is listed in the agent file; the values are in its prompt.
+  input_fields: [question, structure, has_figure, codebook]
+  output_schema: schemas/E6.json
+  check: scripts/checks/E6.py
+  fallback: [retry]
+  flags:
+    # Spec 16: E6_CONTEXT_UNSURE, low, "best guess" as the provisional value. An `unsure` answer
+    # is NOT a check failure -- retrying an agent that honestly could not apply the tie-break just
+    # produces a confident guess. Raise this from the resolved value.
+    E6_CONTEXT_UNSURE: low
+  safe_default: "patterns did not decide and the agent's answer fails the check after one retry -> stem_context `unsure`, E6_CONTEXT_UNSURE (low), the agent's answer kept as the provisional value. Never fall back to `plain`: codebook/E6.md §2 is that `plain` is never a tie-break winner, and the agent only runs when two or more contexts already applied."
+  codebook_file: codebook/E6.md   # CHANGED (was null; the file exists, hash 849e424d09cc)
+
+
+# ===========================================================================================
+# PART 2 -- the scripts/step_plugins.py contract the checks already expect
+# ===========================================================================================
+#
+# Everything in Part 2 is a statement about code, not YAML. It is here because the seven
+# scripts/checks/E*.py modules were written against it and will report a missing piece rather
+# than silently pass.
+#
+# -------------------------------------------------------------------------------------------
+# 2.1  codebook_version -- WHERE IT SHOULD BE COMPUTED
+# -------------------------------------------------------------------------------------------
+# All six codebook/E*.md STATUS sections say "codebook_version is computed and recorded nowhere
+# in the codebase". That is STALE. It already exists: `scripts/step_plugins.py::_d_codebook(name)`
+# computes exactly what spec 13.0 requires -- sha256 of the file's raw bytes, first 12 hex chars,
+# the literal "none" when the file is absent -- and D11Plugin already stamps
+# `d11_codebook_version` on every record it writes. What is actually missing is only the wiring
+# (the `codebook_file:` lines in Part 1) and the E plugins to use it.
+#
+# THE PROPOSAL, in one line: make `_d_codebook` delegate, so there is exactly one hash formula in
+# the repo and a check script can recompute it without importing the 7,000-line plugin module:
+#
+#     def _d_codebook(name):
+#         import codebook_version          # scripts/codebook_version.py
+#         return codebook_version.load(name)
+#
+# `scripts/codebook_version.py` is byte-for-byte the same formula, so the two agree even if the
+# delegation is never merged. It also offers `for_step("E4") -> (text, version)` and a
+# `--check-wiring` CLI that prints, for every codebook spec 13.0 names, whether the file is on
+# disk and whether `steps.yaml` declares it. Its output today:
+#
+#     D4  D4_link_type.md  present  f99e0a160cb3  None          <- not wired (D4Plugin hardcodes
+#                                                                   the path instead; see 2.6)
+#     D11 D11.md           present  62c3616d7fe4  'codebook/D11.md'   <- already wired
+#     E1  E1.md            present  fc7f83bc8355  None          <- Part 1 fixes these six
+#     E2  E2.md            present  93037e5887a8  None
+#     E3  E3.md            present  776dcf76a04a  None
+#     E4  E4.md            present  b8467783d2ab  None
+#     E5  E5.md            present  bd2bc6188e75  None
+#     E6  E6.md            present  849e424d09cc  None
+#
+# WHERE THE VALUE GOES. Two places, both required by spec 13.0 ("records its file hash as
+# codebook_version on every tag it produced"):
+#   (a) INTO THE AGENT INPUT, for E4 only -- its `input_fields` lists `codebook_version` because
+#       spec 13/E4 puts it in the agent's own OUTPUT, so the agent has to be told it.
+#   (b) ONTO THE RECORD, for every E step, as `e1_codebook_version` .. `e6_codebook_version`,
+#       exactly mirroring the existing `d11_codebook_version`. This is what makes the
+#       `codebook_file` cascade (`config/cascade.yaml`:
+#       `rerun_all_questions_of_step_that_reads_it: true, then: [F4]`) auditable after the fact:
+#       without it, nothing records WHICH codebook version a stored tag was made under.
+#
+# scripts/checks/E4.py already recomputes the real hash and FAILS an output claiming
+# `codebook_version: "none"` while codebook/E4.md exists on disk. That is deliberate: it is the
+# one wiring failure that would otherwise satisfy every enum and every structural rule in total
+# silence while mis-tagging the bank at volume.
+#
+# -------------------------------------------------------------------------------------------
+# 2.2  context["input_data"] -- what each check reads
+# -------------------------------------------------------------------------------------------
+# Same pattern as D1/D2/D4/D11: the plugin passes the per-item context the AGENT never sees.
+# Every check degrades to a REPORTED skip rather than a false pass when a key is missing, except
+# where noted as a hard failure.
+#
+#   all E steps : record            the question record dict. Every check falls back to reading
+#                                   papers/records/<QID>.json itself (splitting the item id on
+#                                   "#"), so they are testable against real data before the
+#                                   plugins exist -- but passing it is cheaper and is what the
+#                                   runner should do.
+#   E0 (open-look): answer          the correct option number, so "the answer is not one of the
+#                                   wrong_options" can be checked.
+#   E0 (grouper)  : starting_list   the tag's starting category names (falls back to the real
+#                                   config/allowed_values.yaml list).
+#                   answers         the list the grouper was given, [{question_id, subject, year,
+#                                   text}]. HARD: without it the per-subject counts cannot be
+#                                   reconciled, and the counts are this step's entire output.
+#   E3            : evidence        D4's evidence lines. An EMPTY list is meaningful (it is what
+#                                   makes a `current_affairs` tag a failure), so pass [] rather
+#                                   than omitting the key.
+#   E4            : branch          HARD FAILURE IF THE KEY IS ABSENT. See E4's input_fields note.
+#                   subject         (also read from the record)
+#   E5            : wrong_option    {number, text} -- which option this item is for.
+#                   change_log_entries   the A9 entries on the evidence passages. An empty list is
+#                                   meaningful (it makes `old_ncert_fact` a failure), so pass [].
+#
+# -------------------------------------------------------------------------------------------
+# 2.3  The cross-run checks that cannot live in a check module
+# -------------------------------------------------------------------------------------------
+# A check module sees ONE run's output, so "runs agree" belongs in the plugin's own check(),
+# exactly the split D1/D2/D11/A4 already use.
+#
+#   E4 (spec 13/E4 Checks): the two runs must agree on the PRIMARY and on WHETHER A SECONDARY
+#      EXISTS -- not on which secondary it is. Disagreement -> adjudicator -> E4_ADJUDICATED.
+#      Note the asymmetry: {primary: numerical, secondary: diagram_graph} and
+#      {primary: numerical, secondary: reasoning} AGREE; {primary: numerical, secondary: null}
+#      and {primary: numerical, secondary: reasoning} DISAGREE.
+#   E5 (spec 13/E5): the two runs must agree on the TRAP for that one option. Disagreement ->
+#      adjudicator -> E5_ADJUDICATED. codebook/E5.md §5 expects genuine disagreement to cluster on
+#      three boundaries (calculation_slip/number_near_miss, wrong_pairing/swapped_positions,
+#      opposite_answer/sign_or_direction); that clustering is the signal to tighten the codebook,
+#      not a reason to suppress the adjudicator.
+#
+# -------------------------------------------------------------------------------------------
+# 2.4  E2's retry message is already written for you
+# -------------------------------------------------------------------------------------------
+# Spec 13/E2 names the retry text exactly: "retry with 'The stem contains <word>'". Every
+# E2_NEGATIVE_GUARD segment scripts/checks/E2.py produces has that literal sentence at the HEAD of
+# its detail, followed by what is wrong and the question to answer. So the retry should forward
+# the segment detail unchanged (`retry_input["previous_attempt_failed"] = <the detail>`, the same
+# shape D7Plugin already uses) rather than reconstructing the sentence and risking a different
+# wording than the one spec names.
+#
+# -------------------------------------------------------------------------------------------
+# 2.5  The legacy fields must never reach an agent
+# -------------------------------------------------------------------------------------------
+# Spec Section 13 "Legacy fields": `legacy_chapter`, `legacy_topic`, `legacy_question_type` "are
+# never inputs to any agent". Spec 2.2 is that the legacy tags are NOT USABLE -- the sheets
+# contain confirmed "Assertion-Reason" rows with no assertion in them, and free-form
+# `Question Type` strings ("Numerical + Application", "Diagram-Based + Analytical") that are not
+# this pipeline's taxonomy. If one leaked into an E-step input, the pipeline tag it is meant to be
+# compared against in Stage F would be anchored to it.
+#
+# `scripts/legacy_match.py` exports the mechanism, not just the warning:
+#
+#     import legacy_match
+#     legacy_match.assert_no_legacy(agent_input, where="E4 run A input")
+#
+# It raises on any `legacy_` key at any depth. Call it on every E-step agent input before writing
+# it, the same belt-and-braces B6's coaching guard already uses for the answer key.
+#
+# -------------------------------------------------------------------------------------------
+# 2.6  Two things outside Stage E, found while wiring it, reported not changed
+# -------------------------------------------------------------------------------------------
+# (a) D4's `codebook_file` is null while `D4Plugin` HARDCODES `codebook/D4_link_type.md`. So D4
+#     does read its codebook, but the config does not say so, which means the `codebook_file`
+#     cascade cannot see the dependency: editing codebook/D4_link_type.md would NOT re-run D4.
+#     The fix is one line (`codebook_file: codebook/D4_link_type.md`) plus removing the hardcode,
+#     but D4 is not Stage E's file, so it is reported rather than changed.
+# (b) `scripts/describe_tags.py` returns `plain` on NO pattern match, without consulting the
+#     agent, so a stem whose framing no regex covers is silently `plain` with no flag. Confirmed
+#     on real data: Q-000003 (a football player turning -- arguably `case_scenario`) and Q-000001
+#     (a wire suspended and loaded -- arguably `experiment_setup`) both come out `plain`, and 8 of
+#     10 canonical records read `plain`, which is almost certainly an overcount. The safer change
+#     is to hand NO-match cases to the agent the way multi-match cases are handed over, so `plain`
+#     becomes a decision rather than a default. That changes what a real-tested script produces,
+#     so it is left for the owner to approve rather than done here.

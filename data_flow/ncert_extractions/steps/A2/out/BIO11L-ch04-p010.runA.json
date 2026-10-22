@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [218, 289, 850, 621],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "hollow nerve cord and paired pharyngeal\ngill slits (Figure 4.16). These are bilaterally\nsymmetrical, triploblastic,  coelomate with\norgan-system level of organisation. They\npossess a post anal tail and a closed circulatory\nsystem.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Table 4.1 presents a comparison of salient\nfeatures of chordates and non-chordates."
+    },
+    {
+      "n": 4,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [245, 645, 1510, 1030],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [382, 1155, 763, 1809],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Phylum Chordata is divided into three\nsubphyla: Urochordata or Tunicata,\nCephalochordata and Vertebrata."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Subphyla \nUrochordata \nand\nCephalochordata are often referred to as\nprotochordates (Figure 4.17) and are\nexclusively marine. In Urochordata, notochord\nis present only in larval tail, while in\nCephalochordata, it extends from head to tail\nregion and is persistent throughout their life."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Examples: Urochordata – Ascidia, Salpa,\nDoliolum; Cephalochordata – Branchiostoma\n(Amphioxus or Lancelet)."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The members of subphylum Vertebrata\npossess notochord during the embryonic\nperiod. The notochord is replaced by a\ncartilaginous or bony vertebral column in the\nadult. Thus all vertebrates are chordates but\nall chordates are not vertebrates. Besides the\nbasic chordate characters, vertebrates have a\nventral muscular heart with two, three or four\nchambers, kidneys for excretion and\nosmoregulation and paired appendages which\nmay be fins or limbs."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "46",
+    "BIOLOGY",
+    "2024-25"
+  ],
+  "note": "Read from text_layer, cross-checked against the page image for layout and bboxes. Mixed layout: figure 4.16 top-left with the §4.2.11 prose top-right, full-width Table 4.1 (title line \"TABLE 4.1 Comparison of Chordates and Non-chordates\" and all five rows inside the needs_special table bbox, untranscribed), then figure 4.17 bottom-left with the remaining prose bottom-right. Figure labels and captions (\"Nerve cord\", \"Notochord\", \"Post-anal part\", \"Gill slits\", \"Figure 4.16  Chordata characteristics\", \"Figure 4.17  Ascidia\") lie inside the figure bboxes and are left untranscribed. previous_page_last_block was null, but I read page 9 myself: it ended mid-sentence at \"...a notochord, a dorsal\" and this page opens \"hollow nerve cord and paired pharyngeal gill slits\", so first_block_continues_from_previous is true. Block 7 keeps the text layer's stray line breaks inside \"Subphyla \\nUrochordata \\nand\" exactly as extracted (the printed line is justified across one line)."
+}

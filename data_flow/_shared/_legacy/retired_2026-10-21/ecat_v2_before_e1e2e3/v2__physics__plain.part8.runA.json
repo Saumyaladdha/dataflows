@@ -1,0 +1,34 @@
+{
+  "group": "v2__physics__plain.part8",
+  "ratings": [
+    {
+      "question_id": "2015_A#q180",
+      "concept": "Total internal reflection at the 45 degree face of a right-angled prism: a colour is reflected if its refractive index exceeds 1/sin 45 = 1.414, and transmitted if it falls below",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination", "estimation"],
+      "strategy_evidence": "The one fact that a single face either transmits or totally reflects, so three colours can only be sorted into two groups at it, strikes out option 3, 'Separate all the three colours from one another'.",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "2",
+          "route": "'Separate the blue colour part from the red and green colours' takes the colour with the largest refractive index as the one that leaves the prism, which inverts the condition: n greater than 1/sin 45 is the condition for total internal reflection, so blue (1.47) and green (1.44) are the two that are reflected and red (1.39) is the one separated out"
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "3",
+          "route": "'Separate all the three colours from one another' is the published result for dispersion by a prism - a prism splits white light into its colours - which answers the different question of what an ordinary dispersing prism does to white light; the stem's right-angled geometry makes the hypotenuse a total-internal-reflection face at which each colour is either reflected or transmitted"
+        },
+        {
+          "label": "condition_ignored",
+          "option": "4",
+          "route": "'Not separate the three colours at all' is what the stem gives once the printed 'right angled prism' is set aside: with no 45 degree face there is no critical-angle threshold for the three indices to fall on either side of, and three values as close as 1.39, 1.44 and 1.47 produce no visible separation by refraction alone"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a known criterion applied separately to each of three stated values, demonstrated by the stem's 'refractive index of the material of the prism for the above red, green and blue wavelengths are 1.39,1.44 and 1.47 respectively', which are given only so that each can be compared with the critical-angle threshold.",
+      "note": "The 45 degree angle of incidence at the hypotenuse is not in the stored stem text, which says only 'right angled prism'; it is in the figure at papers_v2/figures_agent/2015_A/q180.png, which shows the three beams entering normally through the vertical face and the 45 degree angle at the base. I read that figure before tagging, so the threshold 1/sin 45 = 1.414 used in every route above is read off the question rather than assumed. A later pass should record this question as needing its figure. Structure is several_independent_checks rather than multi_step_dependent: the threshold is one shared constant, not a per-colour intermediate, and no colour's verdict uses another colour's result."
+    }
+  ],
+  "group_note": "This packet holds one question, so no member could be judged against another; what is recorded here is the rule applied, so the other threshold-comparison items of this subject can be held to it. Structure: three values compared against one shared constant are three independent checks whose verdicts are combined, not three dependent steps - computing 1/sin 45 once is a constant used by all three comparisons, and the rulebook reserves multi_step_dependent for a step that needs the previous step's result, which none of the three comparisons does. Demand: the criterion (total internal reflection above the critical angle) has to be known first and is then applied to the stem's three numbers, which is application; it is not calculation, because nothing is computed from the three indices beyond comparing each with a threshold, and not concept_discrimination, because the question does not turn on holding two neighbouring ideas apart. Strategy carries elimination and estimation together and the division between them is deliberate: elimination names the one structural fact that strikes a named option (a face transmits or reflects, so option 3's three-way split is unavailable), while estimation records that the comparisons need only the magnitude of 1.414 and no exact arithmetic. Dimensional checks are useless here, the options being verbal. On the trap axis each of the three wrong options carries one device and each is tied to the printed numbers: the condition inverted so that the highest index is taken to escape (option 2), the textbook dispersion result offered for a question about a total-internal-reflection face (option 3), and the printed right-angle geometry dropped so that nothing separates at all (option 4). No trap is placed on the official answer, option 1."
+}

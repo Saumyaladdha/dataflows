@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000066",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:27"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "The work functions of Caesium (Cs), Potassium (K) and Sodium (Na) are $2.14\\,\\mathrm{eV}$, $2.30\\,\\mathrm{eV}$ and $2.75\\,\\mathrm{eV}$ respectively. If incident electromagnetic radiation has an incident energy of $2.20\\,\\mathrm{eV}$, which of these photosensitive surfaces may emit photoelectrons?",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Cs only",
+    "2": "Both Na and K",
+    "3": "K only",
+    "4": "Na only"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "27\nThe work functions of Caesium (Cs), Potassium (K) and Sodium (Na) are 2.14 eV, 2.30 eV and 2.75\neV respectively. If incident electromagnetic radiation has an incident energy of 2.20 eV, which of\nthese photosensitive surfaces may emit photoelectrons?\n(1)\nCs only\n(2)\nBoth Na and K\n(3)\nK only\n(4)\nNa only\n",
+  "b4_script_options": {
+    "1": "Cs only",
+    "2": "Both Na and K",
+    "3": "K only",
+    "4": "Na only"
+  },
+  "official_answer": "1",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "1",
+  "b6_reason": "Photoelectrons are emitted only if incident photon energy exceeds the work function; 2.20 eV exceeds only Cs's 2.14 eV work function, not K's 2.30 eV or Na's 2.75 eV.",
+  "b6_working": "Condition: E_photon > work function. Cs: 2.20 > 2.14 -> emits. K: 2.20 < 2.30 -> no. Na: 2.20 < 2.75 -> no.",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

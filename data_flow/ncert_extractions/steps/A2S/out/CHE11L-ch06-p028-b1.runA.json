@@ -1,0 +1,21 @@
+{
+  "kind": "table",
+  "header": [
+    "Name of the Fluid",
+    "pH",
+    "Name of the Fluid",
+    "pH"
+  ],
+  "rows": [
+    ["Saturated solution of NaOH", "~15", "Black Coffee", "5.0"],
+    ["0.1 M NaOH solution", "13", "Tomato juice", "~4.2"],
+    ["Lime water", "10.5", "Soft drinks and vinegar", "~3.0"],
+    ["Milk of magnesia", "10", "Lemon juice", "~2.2"],
+    ["Egg white, sea water", "7.8", "Gastric juice", "~1.2"],
+    ["Human blood", "7.4", "1M HCl solution", "~0"],
+    ["Milk", "6.8", "Concentrated HCl", "~-1.0"],
+    ["Human Saliva", "6.4", "", ""]
+  ],
+  "repeated_header": false,
+  "note": "Table title 'Table 6.5  The pH of Some Common Substances' is printed above the grid inside target_box_in_crop; schema has no table-caption field, so it is recorded here only. The table is printed as two side-by-side 'Name of the Fluid | pH' column pairs sharing one header row; the left list has 8 entries and the right list has 7, so the last row's right-hand cells are left empty (nothing printed there). Transcribed row-by-row in printed left-to-right, top-to-bottom order."
+}

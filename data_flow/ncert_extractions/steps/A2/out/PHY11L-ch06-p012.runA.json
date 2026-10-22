@@ -1,0 +1,143 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "From this follow the results",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [238, 248, 702, 297],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [238, 311, 518, 354],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Note that the magnitude of ˆ ˆ × i j is sin900 or 1, since ˆi and ˆj both have unit magnitude and the angle between them is 900. Thus, ˆ ˆ × i j is a unit vector. A unit vector perpendicular to the plane of ˆi and ˆj and related to them by the right hand screw rule is ˆk . Hence, the above result. You may verify similarly,"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 737, 648, 783],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "From the rule for commutation of the cross product, it follows:"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 859, 713, 905],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Note if ˆ ˆ ˆ , , i j k occur cyclically in the above vector product relation, the vector product is positive. If ˆ ˆ ˆ , , i j k do not occur in cyclic order, the vector product is negative."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Now,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1132, 853, 1280],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "We have used the elementary cross products in obtaining the above relation. The expression for a × b  can be put in a determinant form which is easy to remember."
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [235, 1415, 508, 1582],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "box",
+      "text": "Example 6.4  Find the scalar and vector products of two vectors. a = (3ˆi − 4ˆj + 5ˆk) and b = (−2ˆi + ˆj + 3ˆk)"
+    },
+    {
+      "n": 14,
+      "kind": "heading",
+      "text": "Answer"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [302, 1820, 756, 1949],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [977, 227, 1436, 356],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [934, 383, 1512, 432],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "heading",
+      "text": "6.6 ANGULAR VELOCITY AND ITS RELATION WITH LINEAR VELOCITY"
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "In this section we shall study what is angular velocity and its role in rotational motion. We have seen that every particle of a rotating body moves in a circle. The linear velocity of the particle is related to the angular velocity. The relation between these two quantities involves a vector product which we learnt about in the last section."
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "Let us go back to Fig. 6.4. As said above, in rotational motion of a rigid body about a fixed axis, every particle of the body moves in a circle,"
+    },
+    {
+      "n": 21,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [886, 918, 1528, 1755],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "which lies in a plane perpendicular to the axis and has its centre on the axis. In Fig. 6.16 we redraw Fig. 6.4, showing a typical particle (at a point P) of the rigid body rotating about a fixed axis (taken as the z-axis). The particle describes"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "103",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null even though this is page 12, so continuation was judged from the page itself: block 1 'From this follow the results' is a complete new sentence, hence first_block_continues_from_previous=false. Two columns: blocks 1-15 are the left column, blocks 16-22 the right column. Block 22 continues block 20 mid-sentence across the intervening Fig. 6.16 (within-page continuation, not flagged in continues_from_previous, which this step uses for cross-page continuation only). Inline mathematics in paragraphs 4 and 8 is copied as the characters the text_layer actually holds (hat marks and letters are extracted onto separate lines by the PDF, joined here with single spaces in reading order); no re-rendering was attempted. The Example 6.4 box's two vectors carry no text layer at all (they are graphic), so they were read from the page image and written in the text layer's own 'ˆi' style. Block 17 is the displayed 'Note  b × a = ...' line and includes the blue end-of-example marker at the right margin. The text layer also contains a stray 'u' glyph near the top (watermark/decoration artifact); it was dropped. Bounding boxes are in original image pixels (page image is 1826 x 2163)."
+}

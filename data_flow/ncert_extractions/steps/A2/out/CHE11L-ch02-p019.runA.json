@@ -1,0 +1,96 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Where me is the mass of electron, v is the velocity and r is the radius of the orbit in which electron is moving."
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Thus an electron can move only in those orbits for which its angular momentum is integral multiple of h/2π.  That means angular momentum is quantised. Radiation is emitted or obsorbed only when transition of electron takes place from one quantised value of angular momentum to another. Therefore, Maxwell’s electromagnetic theory does not apply here that is why only certain fixed orbits are allowed."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The details regarding the derivation of energies of the stationary states used by Bohr, are quite complicated and will be discussed in higher classes. However, according to Bohr’s theory for hydrogen atom:"
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "a) The stationary states for electron are numbered n = 1,2,3.......... These integral numbers (Section 2.6.2) are known as Principal quantum numbers."
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "b) The radii of the stationary states are expressed as:"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        272,
+        1099,
+        861,
+        1142
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "where a0 = 52.9 pm. Thus the radius of the first stationary state, called the Bohr orbit, is 52.9 pm. Normally the electron in the hydrogen atom is found in this orbit (that is n=1). As n increases the value of r will increase. In other words the electron will be present away from the nucleus."
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "c) The most important property associated with the electron, is the energy of its stationary state. It is given by the expression."
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        213,
+        1564,
+        861,
+        1652
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "where RH is called Rydberg constant and its value is 2.18×10–18 J. The energy of the lowest state, also called as the ground state, is E1 = –2.18×10–18 ( 1 12 ) = –2.18×10–18 J. The energy of the stationary state for n = 2, will be : E2 = –2.18×10–18J ( 1 22 ) = –0.545×10–18 J."
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "Niels Bohr\n(1885–1962)\nNiels Bohr, a Danish physicist received his Ph.D. from the University of Copenhagen in 1911. He then spent a year with J.J. Thomson and Ernest Rutherford in England. In 1913, he returned to Copenhagen where he remained for the rest of his life. In 1920 he was named Director of the Institute of theoretical Physics. After first World War, Bohr worked energetically for peaceful uses of atomic energy. He received the first Atoms for Peace award in 1957. Bohr was awarded the Nobel Prize in Physics in 1922."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Fig. 2.11 depicts the energies of different stationary states or energy levels of hydrogen atom. This representation is called an energy level diagram."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "When the electron is free from the influence of nucleus, the energy is taken as zero. The electron in this situation is associated with the stationary state of Principal Quantum number = n = ∞ and is called as ionized hydrogen atom. When the electron is attracted by the nucleus and is present in orbit n, the energy is emitted and its energy is lowered. That is the reason"
+    },
+    {
+      "n": 14,
+      "kind": "box",
+      "text": "What does the negative electronic energy (En) for hydrogen atom mean?\nThe energy of the electron in a hydrogen atom has a negative sign for all possible orbits (eq. 2.13). What does this negative sign convey? This negative sign means that the energy of the electron in the atom is lower than the energy of a free electron at rest. A free electron at rest is an electron that is infinitely far away from the nucleus and is assigned the energy value of zero. Mathematically, this corresponds to setting n equal to infinity in the equation (2.13) so that E∞=0. As the electron gets closer to the nucleus (as n decreases), En becomes larger in absolute value and more and more negative. The most negative energy value is given by n=1 which corresponds to the most stable orbit. We call this the ground state."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "47",
+    "STRUCTURE OF ATOM",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p018.runA.json I wrote in this run, which ends with the completed numbered equation (2.11). This page opens 'Where me is the mass of electron', a complete new sentence explaining that equation rather than a continuation of it, so first_block_continues_from_previous is false. Reading order is left column then right column; the green Niels Bohr biography box sits at the top of the right column and is therefore block n=11, ahead of the 'Fig. 2.11 depicts' paragraph, although the text layer stores both boxes at the end of its stream. The portrait photograph in that box is not described. Blocks n=6 and n=9 are the two centred numbered equations left for the special transcriber, (2.12) and (2.13), with their equation numbers inside the bbox; the layer stores (2.13) as the scrambled tokens 'E n n H R 1 2'. By contrast the E1 and E2 values in block n=10 are printed as inline maths inside running prose and the layer stores them in flattened order, so they are transcribed in the layer's own spelling ('E1 = –2.18×10–18 ( 1 12 ) = –2.18×10–18 J', 'E2 = –2.18×10–18J ( 1 22 ) = –0.545×10–18 J'), where '1 12' and '1 22' are the layer's flattening of the printed fractions 1/1² and 1/2². Other inline maths likewise follows the layer ('h/2π', 'a0 = 52.9 pm', 'n=1', '2.18×10–18 J', '= n = ∞', 'E∞=0', 'En'). Spellings 'obsorbed' and 'Neils'/'ionized' are as printed. Block n=13 ends mid-sentence at 'That is the reason' and is completed on p020, so last_block_continues_on_next is true even though the question box is printed below it."
+}

@@ -1,0 +1,214 @@
+{
+  "question_id": "Q-000013",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "figure_path": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_url": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_row": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_match_confidence": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_urls_unused": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "option_map": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "merged_from": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:78",
+    "E2:71"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E2/neet_2023_code-E2.pdf",
+  "trust": "unsure",
+  "stem_en": "Identify product (A) in the following reaction: [Chemical structure of a diketone with a benzene ring attached to a cyclohexane ring, undergoing reduction with $\\mathrm{Zn}$-$\\mathrm{Hg}$ and conc. $\\mathrm{HCl}$ to give (A) + $2\\mathrm{H_2O}$]",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Ethyl group attached to cyclohexane and ethyl group attached to benzene ring",
+    "2": "$\\mathrm{OH}$ attached to cyclohexane and $\\mathrm{OH}$ attached to benzene ring",
+    "3": "$\\mathrm{CH_2OH}$ attached to cyclohexane and $\\mathrm{CH_2OH}$ attached to benzene ring",
+    "4": "$\\mathrm{CH_3}$ attached to cyclohexane and $\\mathrm{CH_3}$ attached to benzene ring"
+  },
+  "structure": "plain",
+  "has_figure": true,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "71\nIdentify product (A) in the following reaction: [Chemical structure of a diketone with a benzene ring\nattached to a cyclohexane ring, undergoing reduction with Zn-Hg and conc. HCl to give (A) + 2H₂O]\n(1)\nEthyl group attached to cyclohexane\nand ethyl group attached to benzene\nring\n(2)\nOH attached to cyclohexane and OH\nattached to benzene ring\n(3)\nCH₂OH attached to cyclohexane and\nCH₂OH attached to benzene ring\n(4)\nCH₃ attached to cyclohexane and CH₃\nattached to benzene ring\nAldehydes Ketones and Carboxylic Acids\n",
+  "b4_script_options": {
+    "1": "Ethyl group attached to cyclohexane\nand ethyl group attached to benzene\nring",
+    "2": "OH attached to cyclohexane and OH\nattached to benzene ring",
+    "3": "CH₂OH attached to cyclohexane and\nCH₂OH attached to benzene ring",
+    "4": "CH₃ attached to cyclohexane and CH₃\nattached to benzene ring\nAldehydes Ketones and Carboxylic Acids"
+  },
+  "official_answer": "1",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "b6_answer": null,
+  "b6_agrees_with_key": null,
+  "subject": "Chemistry",
+  "branch": "organic",
+  "figure_path": "papers/figures/Q-000013.png",
+  "figure_source_url": "https://cdn.mathpix.com/snip/images/l3P6iKTSZxCxRU51ikh7MNGrk1p4BUuVyB-GQNSjDUU.original.fullsize.png",
+  "figure_source_row": "NEET-UG_pyq_2023.xlsx#80",
+  "figure_match_confidence": "high",
+  "figure_source_urls_unused": [
+    "https://cdn.mathpix.com/snip/images/6TNYE7hF6xEAaIl3fwWuPYf-jHeh5sCFUELwNJXGIow.original.fullsize.png"
+  ],
+  "option_map": {
+    "Q-000093": {
+      "1": "1",
+      "2": "2",
+      "4": "3",
+      "3": "4"
+    }
+  },
+  "merged_from": [
+    "Q-000093"
+  ]
+}

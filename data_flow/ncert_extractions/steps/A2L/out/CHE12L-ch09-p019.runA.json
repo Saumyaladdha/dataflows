@@ -1,0 +1,51 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.0, "x1": 0.265},
+      {"id": "right", "x0": 0.271, "x1": 0.898}
+    ]
+  },
+  "elements": [
+    {"n": 1, "role": "paragraph", "bbox": [0.2731, 0.0826, 0.8975, 0.1115],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "decorative_image", "bbox": [0.8719, 0.1532, 0.8956, 0.4422],
+     "column": "right", "size_rel": 1.0, "fill": "#81c4e2"},
+    {"n": null, "role": "major_heading", "bbox": [0.7412, 0.161, 0.8738, 0.1784],
+     "column": "right", "size_rel": 1.6, "align": "right", "text_color": "#00adef"},
+    {"n": 2, "role": "box", "bbox": [0.0806, 0.1495, 0.9006, 0.4459],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "major_heading", "bbox": [0.7412, 0.1968, 0.815, 0.2124],
+     "column": "right", "size_rel": 1.6, "align": "right", "text_color": "#00adef"},
+    {"n": 3, "role": "figure", "bbox": [0.1069, 0.1913, 0.7175, 0.4307],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "decorative_image", "bbox": [0.8656, 0.4734, 0.8925, 0.5693],
+     "column": "right", "size_rel": 1.0, "fill": "#f48480"},
+    {"n": null, "role": "major_heading", "bbox": [0.7006, 0.483, 0.86, 0.5022],
+     "column": "right", "size_rel": 1.6, "align": "right", "text_color": "#6d6e71"},
+    {"n": 4, "role": "box", "bbox": [0.4119, 0.4716, 0.8944, 0.5706],
+     "column": "right", "size_rel": 1.0, "align": "left", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "decorative_image", "bbox": [0.8594, 0.6193, 0.89, 0.8858],
+     "column": "right", "size_rel": 1.0, "fill": "#c8dc5c"},
+    {"n": null, "role": "major_heading", "bbox": [0.7306, 0.6248, 0.87, 0.6546],
+     "column": "right", "size_rel": 1.8, "align": "right", "text_color": "#6d6e71"},
+    {"n": 5, "role": "box", "bbox": [0.0744, 0.6147, 0.8969, 0.8817],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "footer_rule", "bbox": [0.7856, 0.9156, 1.0, 0.9174],
+     "column": "right", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "page_number", "bbox": [0.7856, 0.9069, 0.8269, 0.9174],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71",
+     "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.8356, 0.9028, 0.8981, 0.9128],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.8, "align": "center"}
+  ],
+  "note": "Recto body page (folio 277) carrying THREE differently colour-coded boxes stacked down the page, each with its accent bar on the outer (right) edge - this is the page that shows the chapter's full box palette. Sampled from the flat interior of each bar: Example 9.5 box = pale blue #81c4e2 (x1395-1433px) with cyan #00adef 'Example 9.5' and 'Solution' script labels; Intext Question box = salmon #f48480 (x1385-1428px) with a grey #6d6e71 'Intext Question' label; Summary box = yellow-green #c8dc5c (x1375-1424px) with a grey #6d6e71 'Summary' label over a green underline - the green appears nowhere else in the chapter. All three frames are pale grey rounded borders with white (unfilled) interiors. A2's blocks n=2, n=4 and n=5 each cover a whole box INCLUDING its label text, so the box elements carry those n values and the five labels/bars are listed separately with n:null. Block n=3 is the reaction sequence drawn inside the Example box; the Summary box (n=5) continues onto p020. The Intext Question box is narrower than the others (x 0.412-0.894) and sits wholly inside the right text column; the other two overhang the margin and are 'full'. body_text_size_px=20.5 from the Summary box's body lines. No 9.x section heading falls on this page, so the left margin column is empty."
+}

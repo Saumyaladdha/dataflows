@@ -1,0 +1,16 @@
+{
+  "blocks": [
+    {"n": 2, "no_change": true},
+    {"n": 5, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "Consider a pair of line elements P₁ and P₂ of the wire, as shown. The electric fields produced by the two elements of the pair when summed give a resultant electric field which is radial (the components normal to the radial vector cancel). This is true for any such pair and hence the total field at any point P is radial. Finally, since the wire is infinite, electric field does not depend on the position of P along the length of the wire. In short, the electric field is everywhere radial in the plane cutting the wire normally, and its magnitude depends only on the radial distance r.",
+      "fixes": [
+        {"wrong": "P1", "right": "P₁"},
+        {"wrong": "P2", "right": "P₂"}
+      ]
+    },
+    {"n": 7, "no_change": true}
+  ],
+  "note": "n6 had the line-element labels P1 and P2 restored to subscripted P₁ and P₂ to match the figure. n2, n5 and n7 already matched the image (no exponents, subscripts or radicals needed correction)."
+}

@@ -1,0 +1,106 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "EXAMPLE 3.5",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Solution  The network is not reducible to a simple series and parallel combinations of resistors. There is, however, a clear symmetry in the problem which we can exploit to obtain the equivalent resistance of the network.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The paths AA¢, AD and AB are obviously symmetrically placed in the network. Thus, the current in each must be the same, say, I. Further, at the corners A¢, B and D, the incoming current I must split equally into the two outgoing branches. In this manner, the current in all the 12 edges of the cube are easily written down in terms of I, using Kirchhoff’s first rule and the symmetry in the problem."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Next take a closed loop, say, ABCC¢EA, and apply Kirchhoff’s second rule:\n–IR – (1/2)IR – IR + e = 0\nwhere R is the resistance of each edge and e the emf of battery. Thus,"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        255,
+        745,
+        390,
+        825
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The equivalent resistance Req of the network is"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        258,
+        865,
+        490,
+        945
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "For R = 1 W, Req = (5/6) W and for e = 10 V, the total current (= 3I) in the network is\n3I = 10 V/(5/6) W = 12 A, i.e., I = 4 A\nThe current flowing in each edge can now be read off from the Fig. 3.16."
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "Similation for application of Kirchhoff’s rules:\nhttp://www.phys.hawaii.edu/~teb/optics/java/kirch3/"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "It should be noted that because of the symmetry of the network, the great power of Kirchhoff’s rules has not been very apparent in Example 3.5. In a general network, there will be no such simplification due to symmetry, and only by application of Kirchhoff’s rules to junctions and closed loops (as many as necessary to solve the unknowns in the network) can we handle the problem. This will be illustrated in Example 3.6."
+    },
+    {
+      "n": 11,
+      "kind": "heading",
+      "text": "EXAMPLE 3.6"
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Example 3.6 Determine the current in each branch of the network shown in Fig. 3.17."
+    },
+    {
+      "n": 13,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        395,
+        1500,
+        1020,
+        1915
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "FIGURE 3.17"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Current Electricity",
+    "PHYSICS",
+    "99",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, so continuation was judged from the page itself: the page opens inside the shaded Example 3.5 box with its 'Solution', so the box (and the example) continues from the previous page; it ends inside the shaded Example 3.6 box, whose solution continues on the next page. Blocks 1-8 sit inside the shaded Example 3.5 box and blocks 11-14 inside the shaded Example 3.6 box; they are listed as separate blocks only because displayed equations and the figure inside them must be marked needs_special. Block 9 is the rotated right-margin note (listed after the box it sits beside); its 'Similation' spelling is as printed. Prose characters are copied from text_layer as extracted, so epsilon appears as 'e', ohm as 'W', the prime on A/C as '¢', and subscripts are flattened (e.g. 'Req'); the page image was used only to fix structure and reading order. The two single-line displayed relations ('-IR - (1/2)IR - IR + e = 0' and '3I = 10 V/(5/6) W = 12 A, i.e., I = 4 A') were kept inside their surrounding paragraphs because the text layer holds them cleanly on one line; only the two stacked-fraction equations were sent to the special transcriber. The vertical side tabs 'EXAMPLE 3.5' and 'EXAMPLE 3.6' are recorded as heading blocks at the start of their boxes so no printed text is dropped."
+}

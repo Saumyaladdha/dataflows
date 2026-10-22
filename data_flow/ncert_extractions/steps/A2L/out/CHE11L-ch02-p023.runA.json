@@ -1,0 +1,45 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.124, "x1": 0.486},
+      {"id": "right", "x0": 0.513, "x1": 0.878}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "running_header", "bbox": [0.1263, 0.0876, 0.2697, 0.0940],
+     "column": "full", "size_rel": 0.75, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8629, 0.0872, 0.8754, 0.0936],
+     "column": "full", "size_rel": 0.75, "align": "right", "font": "serif", "text_color": "#221f1f"},
+    {"n": 1, "role": "equation", "bbox": [0.1554, 0.1229, 0.4846, 0.2202],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.1257, 0.2275, 0.4857, 0.4394],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 3, "role": "paragraph", "bbox": [0.1257, 0.4523, 0.4857, 0.7711],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 4, "role": "equation", "bbox": [0.5160, 0.1248, 0.8709, 0.1550],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 5, "role": "paragraph", "bbox": [0.5154, 0.1615, 0.8754, 0.2349],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 6, "role": "section_heading", "bbox": [0.5166, 0.2495, 0.8429, 0.2615],
+     "column": "right", "size_rel": 1.05, "align": "left", "font": "sans", "text_color": "#00adef"},
+    {"n": 7, "role": "paragraph", "bbox": [0.5154, 0.2693, 0.8754, 0.5546],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 8, "role": "paragraph", "bbox": [0.5154, 0.5661, 0.8771, 0.6422],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 9, "role": "paragraph", "bbox": [0.5160, 0.6500, 0.8749, 0.6913],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 10, "role": "equation", "bbox": [0.5440, 0.6959, 0.8663, 0.7679],
+     "column": "right", "size_rel": 1.0, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": 11, "role": "box", "bbox": [0.1263, 0.7904, 0.8743, 0.9138],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif-italic",
+     "fill": "#cbe7d3", "text_color": "#221f1f"},
+    {"n": null, "role": "figure", "bbox": [0.7446, 0.7968, 0.8589, 0.9073],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.4771, 0.9555, 0.5223, 0.9624],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif", "text_color": "#221f1f"}
+  ],
+  "note": "Two-column verso body page, 1750x2180 px (ratio 0.803, not A4). body_text_size_px=20 (cap-to-baseline); left-column leading is 36.4 px, right-column 35 px, but the type size is the same. All eleven A2 blocks placed by position with no ambiguity. Block 4 is the display fragment (p = h/lambda) set inside the opening line of the right column, so its bbox covers that whole line including the prose words beside it, which belong to a paragraph A2 did not block (it continues from the previous page). The bottom Werner Heisenberg biography box (n=11) spans the full measure across both columns, hence column 'full'; its portrait photograph is emitted separately as an unnumbered figure, also 'full' because it sits inside that full-width box. Heading n=6 is bold ITALIC sans in cyan; the allowed font list has no sans-italic so I report 'sans'. No page_header_band, rule_bar or footer_rule on this page: the only furniture is the running head (STRUCTURE OF ATOM left, page number 51 right) and the centred '2024-25' footer line, which I labelled running_header because it is a running footer rather than the page number. A diagonal '(C) NCERT not to be republished' watermark crosses both columns; not emitted as an element."
+}

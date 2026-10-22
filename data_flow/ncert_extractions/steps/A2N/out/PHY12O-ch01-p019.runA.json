@@ -1,0 +1,16 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 3, "no_change": true},
+    {"n": 4, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "Consider a system of charges q₁, q₂, ..., qₙ with  position vectors r₁, r₂, ..., rₙ relative  to some origin O. Like the electric field at a point in space due to a single charge, electric field at a point in space due to the system of charges is defined to be the force experienced by a unit test charge placed at that point, without disturbing the original positions of charges q₁, q₂, ..., qₙ. We can use Coulomb’s law and the superposition principle to determine this field at a point P denoted by position vector r.",
+      "fixes": [
+        {"wrong": "charges q1, q2, ..., qn with  position vectors r1, r2, ..., rn", "right": "charges q₁, q₂, ..., qₙ with  position vectors r₁, r₂, ..., rₙ"},
+        {"wrong": "original positions of charges q1, q2, ..., qn.", "right": "original positions of charges q₁, q₂, ..., qₙ."}
+      ]
+    }
+  ],
+  "note": "n=6 had the charge/position-vector subscript series (q1/q2/qn, r1/r2/rn) flattened in two places; restored to Unicode subscripts. n=1, 3, 4 use only unsubscripted single-letter variables (Q, q, E, F, r) and already matched the image exactly."
+}

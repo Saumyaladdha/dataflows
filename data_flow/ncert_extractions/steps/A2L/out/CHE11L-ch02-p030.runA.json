@@ -1,0 +1,44 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.124, "x1": 0.485},
+      {"id": "right", "x0": 0.514, "x1": 0.876}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.1251, 0.0872, 0.1394, 0.0945],
+     "column": "full", "size_rel": 0.8, "align": "left", "font": "sans", "text_color": "#231f20"},
+    {"n": null, "role": "running_header", "bbox": [0.7989, 0.0872, 0.8766, 0.0945],
+     "column": "full", "size_rel": 0.8, "align": "right", "font": "sans", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.124, 0.1193, 0.4846, 0.1482],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.124, 0.1555, 0.4851, 0.6628],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.124, 0.6734, 0.4851, 0.8275],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "paragraph", "bbox": [0.1246, 0.8376, 0.4846, 0.8665],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "figure", "bbox": [0.5309, 0.1239, 0.848, 0.3532],
+     "column": "right", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.5149, 0.355, 0.8749, 0.4362],
+     "column": "right", "size_rel": 0.9, "align": "justify", "font": "serif-italic"},
+    {"n": 6, "role": "figure", "bbox": [0.5143, 0.4583, 0.8743, 0.722],
+     "column": "right", "size_rel": 1.0, "fill": "#fffbd5"},
+    {"n": null, "role": "figure_caption", "bbox": [0.52, 0.7271, 0.8697, 0.7532],
+     "column": "right", "size_rel": 0.9, "align": "center", "font": "serif-italic"},
+    {"n": null, "role": "paragraph", "bbox": [0.5137, 0.7734, 0.8743, 0.8665],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "footer_rule", "bbox": [0.1251, 0.8812, 0.8754, 0.883],
+     "column": "full", "size_rel": 1.0, "fill": "#ed1c24"},
+    {"n": 7, "role": "marginal_note", "bbox": [0.1274, 0.8844, 0.876, 0.9133],
+     "column": "full", "size_rel": 0.85, "align": "left", "font": "serif-italic"},
+    {"n": null, "role": "footer_rule", "bbox": [0.1251, 0.9156, 0.8754, 0.9174],
+     "column": "full", "size_rel": 1.0, "fill": "#ed1c24"},
+    {"n": null, "role": "running_header", "bbox": [0.4771, 0.9555, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans", "text_color": "#231f20"}
+  ],
+  "note": "Two-column body page, verso (page 58): the folio sits top-left and the running header 'CHEMISTRY' top-right. No chapter banner and no coloured page_header_band - the top strip is plain text on bare paper. Page is 1750x2180 px, aspect 0.803, not A4. body_text_size_px = 20.0, measured as cap-to-baseline on left-column body capitals ('T' of 'Thus, we see that', 'B' of 'Boundary surface diagrams for three'). TWO footer_rule elements print near the foot, both red #ed1c24 and both spanning the full measure (x 0.125-0.875): one above the asterisk footnote at y 0.881-0.883 and one below it at y 0.916-0.917; I kept them as two separate footer_rule elements rather than collapsing them. Block 7 is that footnote; it runs the full measure across both columns, is set smaller (cap 17 px vs body 20) in serif italic, and I gave it role 'marginal_note' because the allowed role list has no footnote value and it is an asterisk-keyed aside rather than body prose. Block 4 breaks across the column gutter: it starts at the foot of the left column (the element carrying n 4) and continues at the foot of the right column below the Fig. 2.14 caption; that continuation is listed as a separate paragraph with n null rather than repeating n 4, since it is the same block in a second region. Fig. 2.13 (block 5) prints on bare paper, so no fill; its dot-cloud edges are faint, so its bbox is the extent of visible ink above a low threshold. Fig. 2.14 (block 6) sits on a yellow panel, fill #fffbd5 sampled from the flat interior well away from the pink lobes. Neither figure caption is covered by an A2 block, so both carry n null. A grey 'NCERT / not to be republished' watermark crosses the page; it is a print artefact and is not listed as an element."
+}

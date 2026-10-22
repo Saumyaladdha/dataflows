@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on how many chloride ions are ionisable outside the coordination sphere in CoCl3.6NH3, CoCl3.5NH3 and CoCl3.4NH3, taught in Coordination Compounds.",
+  "confidence": "high",
+  "note": "SUBJECT MISASSIGNMENT, not a taxonomy gap. This is a Chemistry question, but the item is labelled subject=\"Biology\" and so carries the closed list of 32 Biology chapters; the correct chapter cannot be in it. Expected chapter: Coordination Compounds (CHENEETENGCCP). Root cause is recorded in the item's own source record papers_v2/papers/2017_C.json, which says subject_from = \"position (no heading governs this question; the 179-question layout was assumed)\". The assumed layout (Physics 1-45, Chemistry 46-90, Biology 91-180) does not match 2017_C, whose actual order is Biology q1-q90, Physics q91-q135, Chemistry q136-q180. Every question in this paper is therefore handed the wrong subject's chapter list, and no honest code exists in the supplied list. Fix the subject assignment for 2017_C and re-run QCHAP rather than filing these anywhere."
+}

@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000085",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:57"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Which one is an example of heterogenous catalysis?",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Oxidation of sulphur dioxide into sulphur trioxide in the presence of oxides of nitrogen.",
+    "2": "Hydrolysis of sugar catalysed by $\\mathrm{H^+}$ ions.",
+    "3": "Decomposition of ozone in presence of nitrogen monoxide.",
+    "4": "Combination between dinitrogen and dihydrogen to form ammonia in the presence of finely divided iron."
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "57\nWhich one is an example of heterogenous catalysis?\n(1)\nOxidation of sulphur dioxide into sulphur\ntrioxide in the presence of oxides of\nnitrogen.\n(2)\nHydrolysis of sugar catalysed by H⁺ ions.\n(3)\nDecomposition of ozone in presence of\nnitrogen monoxide.\n(4)\nCombination between dinitrogen and\ndihydrogen to form ammonia in the\npresence of finely divided iron.\n",
+  "b4_script_options": {
+    "1": "Oxidation of sulphur dioxide into sulphur\ntrioxide in the presence of oxides of\nnitrogen.",
+    "2": "Hydrolysis of sugar catalysed by H⁺ ions.",
+    "3": "Decomposition of ozone in presence of\nnitrogen monoxide.",
+    "4": "Combination between dinitrogen and\ndihydrogen to form ammonia in the\npresence of finely divided iron."
+  },
+  "official_answer": "4",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "physical",
+  "b6_answer": "4",
+  "b6_reason": "N2 + H2 to NH3 over finely divided (solid) iron is catalysis where the catalyst phase differs from the gaseous reactants, i.e. heterogeneous catalysis; the other three (NO gas with SO2/O2, NO gas with ozone, H+ ions in solution) are all homogeneous catalysis since catalyst and reactants share one phase.",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

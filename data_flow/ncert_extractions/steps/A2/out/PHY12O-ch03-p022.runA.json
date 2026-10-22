@@ -1,0 +1,220 @@
+{
+ "blocks": [
+  {
+   "n": 1,
+   "kind": "paragraph",
+   "text": "If we wish to replace the combination by a single cell between A and C of emf εeq and internal resistance req, we would have",
+   "continues_from_previous": false,
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 2,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    575,
+    380,
+    1545,
+    420
+   ],
+   "text": ""
+  },
+  {
+   "n": 3,
+   "kind": "paragraph",
+   "text": "Comparing the last two equations, we get",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 4,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    520,
+    465,
+    1545,
+    560
+   ],
+   "text": ""
+  },
+  {
+   "n": 5,
+   "kind": "paragraph",
+   "text": "In Fig.3.20, we had connected the negative electrode of the first to the positive electrode of the second. If instead we connect the two negatives, Eq. (3.61) would change to VBC = –ε₂–Ir₂ and we will get",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 6,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    575,
+    675,
+    1545,
+    715
+   ],
+   "text": ""
+  },
+  {
+   "n": 7,
+   "kind": "paragraph",
+   "text": "The rule for series combination clearly can be extended to any number of cells:",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 8,
+   "kind": "list",
+   "text": "(i) The equivalent emf of a series combination of n cells is just the sum of their individual emf’s, and\n(ii) The equivalent internal resistance of a series combination of n cells is just the sum of their internal resistances.",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 9,
+   "kind": "figure",
+   "needs_special": true,
+   "bbox": [
+    200,
+    955,
+    620,
+    1470
+   ],
+   "text": ""
+  },
+  {
+   "n": 10,
+   "kind": "paragraph",
+   "text": "This is so, when the current leaves each cell from the positive electrode. If in the combination, the current leaves any cell from the negative electrode, the emf of the cell enters the expression for εeq with a negative sign, as in Eq. (3.66).",
+   "bold_terms": [],
+   "italic_terms": [
+    "negative"
+   ]
+  },
+  {
+   "n": 11,
+   "kind": "paragraph",
+   "text": "Next, consider a parallel combination of the cells (Fig. 3.21). I₁ and I₂ are the currents leaving the positive electrodes of the cells. At the point B₁, I₁ and I₂ flow in whereas the current I flows out. Since as much charge flows in as out, we have",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 12,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    695,
+    1220,
+    1545,
+    1265
+   ],
+   "text": ""
+  },
+  {
+   "n": 13,
+   "kind": "paragraph",
+   "text": "Let V (B₁) and V (B₂) be the potentials at B₁ and B₂, respectively. Then, considering the first cell, the potential difference across its terminals is V (B₁) – V (B₂). Hence, from Eq. (3.57)",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 14,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    695,
+    1345,
+    1545,
+    1390
+   ],
+   "text": ""
+  },
+  {
+   "n": 15,
+   "kind": "paragraph",
+   "text": "Points B₁ and B₂ are connected exactly similarly to the second cell. Hence considering the second cell, we also have",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 16,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    695,
+    1495,
+    1545,
+    1545
+   ],
+   "text": ""
+  },
+  {
+   "n": 17,
+   "kind": "paragraph",
+   "text": "Combining the last three equations",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 18,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    580,
+    1575,
+    1545,
+    1740
+   ],
+   "text": ""
+  },
+  {
+   "n": 19,
+   "kind": "paragraph",
+   "text": "Hence, V is given by,",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 20,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    580,
+    1800,
+    1545,
+    1875
+   ],
+   "text": ""
+  },
+  {
+   "n": 21,
+   "kind": "paragraph",
+   "text": "If we want to replace the combination by a single cell, between B₁ and B₂, of emf εeq and internal resistance req, we would have",
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 22,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    575,
+    2000,
+    1545,
+    2050
+   ],
+   "text": "",
+   "continues_on_next": false
+  }
+ ],
+ "first_block_continues_from_previous": false,
+ "last_block_continues_on_next": false,
+ "running_header_footer_removed": [
+  "Physics",
+  "114",
+  "2022-23"
+ ],
+ "note": "Printed page 114. Equation-dense page: every numbered display equation (3.63)-(3.72) and Fig. 3.21 with its caption are deferred to A2S, so block text carries the prose only. Fig. 3.21 sits in the left column beside the text and is placed left-column-first in reading order. Subscripts (ε₁, ε₂, r₁, r₂, I₁, I₂, B₁, B₂) read from the image; the text layer flattens them. The 'eq' subscript of εeq/req has no Unicode subscript form and is written flat as the layer has it. \"negative\" is italic twice in block n=10 and is listed once."
+}

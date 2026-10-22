@@ -1,0 +1,89 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        251,
+        252,
+        852,
+        484
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "where ∆x is the uncertainty in position and ∆px (or ∆vx) is the uncertainty in momentum (or velocity) of the particle. If the position of the electron is known with high degree of accuracy (∆x is small), then the velocity of the electron will be uncertain [∆(vx) is large]. On the other hand, if the velocity of the electron is known precisely (∆(vx ) is small), then the position of the electron will be uncertain (∆x will be large). Thus, if we carry out some physical measurements on the electron’s position or velocity, the outcome will always depict a fuzzy or blur picture."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The uncertainty principle can be best understood with the help of an example. Suppose you are asked to measure the thickness of a sheet of paper with an unmarked metrestick. Obviously, the results obtained would be extremely inaccurate and meaningless. In order to obtain any accuracy, you should use an instrument graduated in units smaller than the thickness of a sheet of the paper. Analogously, in order to determine the position of an electron, we must use a meterstick calibrated in units of smaller than the dimensions of electron (keep in mind that an electron is considered as a point charge and is therefore, dimensionless). To observe an electron, we can illuminate it with “light” or electromagnetic radiation. The “light” used must have a wavelength smaller than the dimensions of an electron. The high momentum photons of such light"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1424,
+        280,
+        1540,
+        342
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "would change the energy of electrons by collisions. In this process we, no doubt, would be able to calculate the position of the electron, but we would know very little about the velocity of the electron after the collision.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "Significance of Uncertainty Principle"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "One of the important implications of the Heisenberg Uncertainty Principle is that it rules out existence of definite paths or trajectories of electrons and other similar particles. The trajectory of an object is determined by its location and velocity at various moments. If we know where a body is at a particular instant and if we also know its velocity and the forces acting on it at that instant, we can tell where the body would be sometime later. We, therefore, conclude that the position of an object and its velocity fix its trajectory. Since for a sub-atomic object such as an electron, it is not possible simultaneously to determine the position and velocity at any given instant to an arbitrary degree of precision, it is not possible to talk of the trajectory of an electron."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The effect of Heisenberg Uncertainty Principle is significant only for motion of microscopic objects and is negligible for that of macroscopic objects. This can be seen from the following examples."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "If uncertainty principle is applied to an object of mass, say about a milligram (10–6 kg), then"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        925,
+        1510,
+        1552,
+        1662
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "Werner Heisenberg (1901 – 1976) Werner Heisenberg (1901 – 1976) received his Ph.D. in physics from the University of Munich in 1923. He then spent a year working with Max Born at Gottingen and three years with Niels Bohr in Copenhagen. He was professor of physics at the University of Leipzig from 1927 to 1941. During World War II, Heisenberg was in charge of German research on the atomic bomb. After the war he was named director of Max Planck Institute for physics in Gottingen. He was also accomplished mountain climber. Heisenberg was awarded the Nobel Prize in Physics in 1932."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "51",
+    "STRUCTURE OF ATOM",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p022.runA.json I wrote immediately before this page, whose last paragraph ends on the complete sentence 'Mathematically, it can be given as in equation (2.23).' This page opens with that displayed equation (2.23) itself, a new block rather than a half-finished sentence, so first_block_continues_from_previous is false, matching p022's last_block_continues_on_next of false. Reading order is the left column then the right column, then the full-width green Werner Heisenberg biography box across the foot of the page; the text layer stores that biography box last, after the right column, which is also where it is printed, so the layer is in printed order on this page. The photograph in the box is not described. Three displayed formulae are left for the special transcriber with pixel bboxes and empty text: n=1 is the three-line uncertainty relation with the equation number (2.23) inside the bbox, n=4 the small parenthesised p = h/λ set inline at the top of the right column, and n=10 the milligram-object evaluation ending in its 10–28 m2 s–1 result. Those are the regions the layer scrambles to bare tokens (for (2.23) it keeps only '(2.23)' and loses the relation entirely; for the inline one it stores 'p h' then '='), so no faithful inline transcription is possible there. Block n=3 is one paragraph that runs over the column break — it ends 'The high' at the foot of the left column and resumes 'momentum photons of such light' at the top of the right column — and is transcribed as the single paragraph it is, stopping where the inline formula interrupts it; block n=5 carries the rest of that same sentence after the formula and is therefore marked continues_from_previous. Inline maths follows the layer's own flattened spelling ('∆px (or ∆vx)', '[∆(vx) is large]', '(∆(vx ) is small)', '(10–6 kg)'). The bold statements of the uncertainty principle's consequence in blocks n=7 and n=8 are printed bold inside their paragraphs and are kept there. The biography text really does print 'Werner Heisenberg (1901 – 1976)' twice in succession, and that duplication is kept as printed; 'Gottingen', 'Leipzig' and 'He was also accomplished mountain climber' are as printed. The page ends with a complete sentence, so last_block_continues_on_next is false."
+}

@@ -1,0 +1,80 @@
+{
+  "page": {
+    "width_px": 1654,
+    "height_px": 2339,
+    "page_kind": "ordinary",
+    "body_text_size_px": 22.0,
+    "text_block": [0.064, 0.098, 0.866, 0.848],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.064, "x1": 0.671},
+      {"id": "right", "x0": 0.804, "x1": 0.957}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.000, 0.000, 0.758, 0.037],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435", "space_before": 0.0},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.772, 0.000, 0.957, 0.091],
+     "column": "right", "size_rel": 1.0, "fill": "#725420"},
+
+    {"n": null, "role": "running_header", "bbox": [0.065, 0.071, 0.379, 0.079],
+     "column": "full", "size_rel": 0.76, "size_pt": 8.2, "align": "left",
+     "font": "sans", "face": "sans", "text_color": "#6c6c6d", "space_before": 0.034},
+
+    {"n": 1, "role": "figure", "bbox": [0.062, 0.098, 0.866, 0.428],
+     "column": "full", "size_rel": 1.0, "align": "center", "space_before": 0.020},
+
+    {"n": null, "role": "figure", "bbox": [0.062, 0.121, 0.229, 0.426],
+     "column": "full", "size_rel": 1.0, "space_before": 0.042},
+
+    {"n": null, "role": "figure", "bbox": [0.124, 0.209, 0.365, 0.428],
+     "column": "full", "size_rel": 1.0},
+
+    {"n": null, "role": "figure", "bbox": [0.376, 0.098, 0.553, 0.426],
+     "column": "full", "size_rel": 1.0},
+
+    {"n": null, "role": "figure", "bbox": [0.500, 0.173, 0.866, 0.426],
+     "column": "full", "size_rel": 1.0},
+
+    {"n": 2, "role": "figure_caption", "bbox": [0.062, 0.452, 0.862, 0.500],
+     "column": "full", "size_rel": 0.86, "size_pt": 9.3, "align": "justify",
+     "font": "serif", "face": "serif", "fill": "#fdf1e1", "text_color": "#281f1a",
+     "indent": 0.102, "space_before": 0.024},
+
+    {"n": 3, "role": "paragraph", "bbox": [0.065, 0.527, 0.671, 0.573],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "text_color": "#202020",
+     "indent": 0.0, "space_before": 0.027},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.064, 0.581, 0.671, 0.726],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "text_color": "#202020",
+     "indent": 0.0, "space_before": 0.008},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.065, 0.730, 0.670, 0.793],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "text_color": "#202020",
+     "indent": 0.030, "space_before": 0.005},
+
+    {"n": 6, "role": "paragraph", "bbox": [0.065, 0.800, 0.671, 0.846],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "text_color": "#202020",
+     "indent": 0.0, "space_before": 0.008},
+
+    {"n": null, "role": "page_number", "bbox": [0.804, 0.727, 0.957, 0.764],
+     "column": "right", "size_rel": 1.38, "size_pt": 14.9, "align": "left",
+     "font": "sans", "face": "sans", "fill": "#f8931f", "text_color": "#ffffff"},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.804, 0.767, 0.957, 0.773],
+     "column": "right", "size_rel": 1.0, "fill": "#f8931f", "space_before": 0.003},
+
+    {"n": null, "role": "running_header", "bbox": [0.431, 0.901, 0.527, 0.910],
+     "column": "full", "size_rel": 0.78, "size_pt": 8.2, "align": "center",
+     "font": "sans", "face": "sans", "text_color": "#1a1a1a", "space_before": 0.055},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.185, 0.282, 0.841, 0.755],
+     "column": "full", "size_rel": 1.0, "text_color": "#d2d2d2"}
+  ],
+  "note": "ORDINARY BODY PAGE of a pure A4 scan (image 1654x2339 px = exactly A4 proportion, 200 dpi); every number below is measured off the image with PIL/numpy, nothing is inherited from a text layer. COLUMNS: one text measure only. Running prose occupies x 0.0641-0.6705 (1003 px); the right 33% of the sheet is an outer margin that carries only the folio. I therefore report column 'full' as the TEXT measure 0.064-0.671 (that is what governs line-breaking) and a second column 'right' 0.804-0.957 for the margin rail that holds the page-number box and its rule. CRITICAL: the figure and its caption deliberately OVERHANG the text measure into that outer margin, out to x 0.866 and 0.862 respectively - a renderer must place them from their measured bbox, NOT clip them to the 0.671 column. page.text_block x1 is therefore 0.866 (widest content), not 0.671. FIGURE 1.7 HAS FOUR PANELS, all four measured and listed (a previous build finding only two was wrong). Group box [0.062, 0.098, 0.866, 0.428] carries n=1; the four panel boxes that follow it in the list are, in order, (a) [0.062,0.121,0.229,0.426], (b) [0.124,0.209,0.365,0.428], (c) [0.376,0.098,0.553,0.426], (d) [0.500,0.173,0.866,0.426], each with n=null because A2 blocked the whole figure as a single block 1. Panel boxes were found by connected-component analysis of the coloured/dark artwork and each INCLUDES that panel's leader-line labels and its (a)-(d) letter beneath; because the labels interleave, adjacent panel boxes overlap horizontally - (a) and (b) overlap in x 0.124-0.229 (panel b's 'Syncarpous ovary' label sits left, below panel a's 'Ovary'/'Thalamus' labels), and (c) and (d) overlap in x 0.500-0.553 (panel c's 'Carpels' label runs over panel d's artwork start). That overlap is the real page, not a measurement error. Panel-letter centres measured at x 0.108, 0.300, 0.433, 0.610 confirm four panels. Panel label text and the (a)-(d) letters are set at size_rel 0.87 (x-height 13 px vs body 15 px); the panel elements themselves carry size_rel 1.0 per the brief's rule for artwork. BODY TYPE: body_text_size_px 22.0 = cap-top-to-baseline of ordinary prose (cap-glyph height 21 px, x-height 15 px, baseline pitch 39 px, measured on four separate lines: 22/21/22/22). All four paragraphs are the same body size, serif, justified, ink #202020, with bold runs inside them (lead-ins 'The Megasporangium (Ovule) :' and 'Megasporogenesis :' are bold but are NOT separate headings - they are run-in to the paragraph, so I did not split them out as section_heading). Block n=3 has no first-line indent because it is the tail of a paragraph continuing from the previous page; n=5 is the only paragraph with a first-line indent (50 px = 0.030 of page width); n=4 and n=6 begin flush because they open with a bold run-in. CAPTION: the tinted box is measured at [0.062,0.452,0.862,0.500] with flat interior fill #fdf1e1 (sampled at y 1060-1068 and y 1150-1165, well clear of edges and glyphs); its text runs x 0.072-0.856 over three lines, justified, with 'Figure 1.7' set bold at x 0.072 and lines 2-3 hanging-indented to x 0.173, so indent is reported as 0.102 relative to the caption text's own left edge. FILLS all sampled from flat interiors: header band #4a7435, caption box #fdf1e1, folio box and folio rule both #f8931f, top-right corner block #725420 (it also carries a narrow #f8931f vertical strip at x 0.846-0.863 and a green leaf + black logo glyph over it; reported as one decorative_image). FOLIO: orange box [0.804,0.727,0.957,0.764] with a white sans-bold '9' at [0.824,0.737,0.835,0.749], and a separate thin orange rule [0.804,0.767,0.957,0.773] directly beneath it - I labelled that rule footer_rule as the nearest allowed role, but note it is a short rule under the folio in the outer margin, NOT a rule across the page foot. The 'Reprint 2026-27' line at the page foot is reported as running_header (there is no allowed footer-text role); it is sans, roughly page-centred at [0.431,0.901,0.527,0.910]. WATERMARK: a diagonal light-grey '(c) NCERT / not to be republished' overprint crosses the whole content area; its measured extent [0.185,0.282,0.841,0.755] is reported as decorative_image so a consumer can ignore it - it is an overlay, not a positioned element, and it is what forced me to use a saturation-aware ink mask rather than a plain grey threshold. TEXT BLOCK AND FILL: text_block [0.064,0.098,0.866,0.848] runs from the top of the figure artwork (y 230 px) to the deepest body descender (y 1978 px); content covers essentially all of it, so fill 0.98. Below 0.848 the sheet is blank down to the footer line at 0.901 - two or three more body lines would physically fit before the footer, so the book's own measure bottom may sit a little lower than 0.848; I report what I could measure rather than guess it. SIZE_PT values are DERIVED, not measured directly: the image is 200 dpi (1654 px / 8.268 in), so 1 px = 0.36 pt, and I converted cap height to em assuming cap height = 0.70 em. size_rel is the measured ratio and is the number to trust. Things I could NOT measure: the exact top/left page trim (the green band and the corner block bleed to x=0 and y=0 while the printed area stops 71 px short of the right edge and 214 px short of the bottom, so the scan is shifted up-left and the true trim edges on those two sides are not visible); and the running head's letterspacing value (it is clearly letterspaced sans bold caps, grey #6c6c6d, but I report only its box and size ratio)."
+}

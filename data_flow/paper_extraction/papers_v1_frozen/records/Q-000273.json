@@ -1,0 +1,218 @@
+{
+ "question_id": "Q-000273",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2024,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:127"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "The type of conservation in which the threatened species are taken out from their natural habitat and placed in special setting where they can be protected and given special care is called",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "in-situ conservation",
+  "2": "Biodiversity conservation",
+  "3": "Semi-conservative method",
+  "4": "Sustainable development"
+ },
+ "structure": "plain",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "127\nThe type of conservation in which the threatened species are taken out from their natural habitat and\nplaced in special setting where they can be protected and given special care is called\n(1)\nin-situ conservation\n(2)\nBiodiversity conservation\n(3)\nSemi-conservative method\n(4)\nSustainable development\nBiodiversity and Conservation\n",
+ "b4_script_options": {
+  "1": "in-situ conservation",
+  "2": "Biodiversity conservation",
+  "3": "Semi-conservative method",
+  "4": "Sustainable development\nBiodiversity and Conservation"
+ },
+ "official_answer": "2",
+ "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+ "status": "normal",
+ "subject": "Biology",
+ "branch": "botany",
+ "b6_answer": "1",
+ "b6_reason": "The described practice (removing threatened species from their habitat into a special protected setting) is ex-situ conservation, which no option states; option 1 is taken as a damaged rendering of 'ex-situ conservation'.",
+ "b6_working": "",
+ "b6_confidence": "low",
+ "b6_note": "Faulty/damaged option set: the stem describes ex-situ conservation, but option 1 reads 'in-situ conservation' and none of the four options names ex-situ. Likely upstream extraction damage to option 1; flagged for human check.",
+ "b6_agrees_with_key": false,
+ "repairs": [
+  {
+   "date": "2026-10-15",
+   "by": "scripts/repair_paper_records.py",
+   "kind": "mechanical",
+   "notes": [
+    "paper_codes normalised to the short form ['Q1:127'] -- the long form splits one booklet across two values in any join"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

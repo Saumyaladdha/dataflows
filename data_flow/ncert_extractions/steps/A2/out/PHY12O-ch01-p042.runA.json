@@ -1,0 +1,85 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "SUMMARY",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "1. Electric and magnetic forces determine the properties of atoms, molecules and bulk matter.\n2. From simple experiments on frictional electricity, one can infer that there are two types of charges in nature; and that like charges repel and unlike charges attract. By convention, the charge on a glass rod rubbed with silk is positive; that on a plastic rod rubbed with fur is then negative.\n3. Conductors allow movement of electric charge through them, insulators do not. In metals, the mobile charges are electrons; in electrolytes both positive and negative ions are mobile.\n4. Electric charge has three basic properties: quantisation, additivity and conservation.\nQuantisation of electric charge means that total charge (q) of a body is always an integral multiple of a basic quantum of charge (e) i.e., q = n e, where n = 0, ±1, ±2, ±3, .... Proton and electron have charges +e, –e, respectively. For macroscopic charges for which n is a very large number, quantisation of charge can be ignored.\nAdditivity of electric charges means that the total charge of a system is the algebraic sum (i.e., the sum taking into account proper signs) of all individual charges in the system.\nConservation of electric charges means that the total charge of an isolated system remains unchanged with time. This means that when bodies are charged through friction, there is a transfer of electric charge from one body to another, but no creation or destruction of charge."
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "5. Coulomb’s Law: The mutual electrostatic force between two point charges q1 and q2 is proportional to the product q1q2 and inversely proportional to the square of the distance r21 separating them. Mathematically,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        632,
+        1335,
+        1101,
+        1400
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "where 21 ˆr  is a unit vector in the direction from q1 to q2 and k ="
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1406,
+        1433,
+        1499,
+        1493
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "is the constant of proportionality.\nIn SI units, the unit of charge is coulomb. The experimental value of the constant ε0 is\nε0 = 8.854 × 10–12 C2 N–1 m–2\nThe approximate value of k is\nk = 9 × 109 N m2 C–2"
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "6. The ratio of electric force and gravitational force between a proton and an electron is"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        632,
+        1722,
+        959,
+        1799
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "7. Superposition Principle: The principle is based on the property that the forces with which two charges attract or repel each other are not affected by the presence of a third (or more) additional charge(s). For an assembly of charges q1, q2, q3, ..., the force on any charge, say q1, is",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "42",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so continuation is judged against the p041 output I had just written: p041 closed the 'ON SYMMETRY OPERATIONS' box, and this page starts the chapter's SUMMARY panel, so first_block_continues_from_previous is false. The SUMMARY is a shaded panel, but it cannot be a single box block because displayed equations whose text layer is a scrambled symbol stream break it apart; it is blocked as its heading (n=1), the numbered summary points as list blocks, and three needs_special equations - the Coulomb's-law formula (n=4), the tall 1/4πε0 fraction that ends the 'k =' line (n=6), and the force-ratio fraction (n=9). In block n=5 I follow the text layer's own spelling of the unit-vector symbol, which extracts as '21 ˆr' rather than r-hat-sub-21; I did not renormalise it. The short display lines for ε0 and k that the text layer renders cleanly are kept as text in n=7. The page ends mid-sentence in summary point 7, so last_block_continues_on_next is true."
+}

@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000204",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_path": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_url": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_row": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_match_confidence": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:97"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Which amongst the following will be most readily dehydrated under acidic conditions?",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Structure with $\\mathrm{NO_2}$, $\\mathrm{OH}$, and $\\mathrm{CH_3}$ groups on adjacent carbons",
+    "2": "Structure with two $\\mathrm{OH}$ groups and a $\\mathrm{CH_3}$ group on adjacent carbons",
+    "3": "Structure with $\\mathrm{NO_2}$, $\\mathrm{H}$, $\\mathrm{OH}$, and $\\mathrm{OH}$ groups on adjacent carbons",
+    "4": "Structure with $\\mathrm{NO_2}$ and $\\mathrm{OH}$ groups on adjacent carbons in a chain"
+  },
+  "structure": "plain",
+  "has_figure": true,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "97\nOrganic Chemistry is not in the list. The question seems to be more related to chemistry than botany. However, fr…\nWhich amongst the following will be most readily dehydrated under acidic conditions?\n(1)\nStructure with NO₂, OH, and CH₃ groups\non adjacent carbons\n(2)\nStructure with two OH groups and a\nCH₃ group on adjacent carbons\n(3)\nStructure with NO₂, H, OH, and OH\ngroups on adjacent carbons\n(4)\nStructure with NO₂ and OH groups on\nadjacent carbons in a chain\n",
+  "b4_script_options": {
+    "1": "Structure with NO₂, OH, and CH₃ groups\non adjacent carbons",
+    "2": "Structure with two OH groups and a\nCH₃ group on adjacent carbons",
+    "3": "Structure with NO₂, H, OH, and OH\ngroups on adjacent carbons",
+    "4": "Structure with NO₂ and OH groups on\nadjacent carbons in a chain"
+  },
+  "official_answer": "2",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "organic",
+  "b6_answer": null,
+  "b6_agrees_with_key": null,
+  "figure_path": "papers/figures/Q-000204.png",
+  "figure_source_url": "https://cdn.mathpix.com/snip/images/ameaH4GZkVA1OfvOUdmJ0DhiAlkOsYF7Mvg8z9xTgXk.original.fullsize.png",
+  "figure_source_row": "NEET-UG_pyq_2023.xlsx#99",
+  "figure_match_confidence": "high"
+}

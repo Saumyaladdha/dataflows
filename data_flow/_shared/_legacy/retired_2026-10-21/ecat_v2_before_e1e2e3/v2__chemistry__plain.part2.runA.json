@@ -1,0 +1,159 @@
+{
+  "group": "v2__chemistry__plain.part2",
+  "ratings": [
+    {
+      "question_id": "2015_A#q008",
+      "concept": "Nylon-6 is made by ring-opening polymerisation of caprolactam, a single cyclic amide monomer, while Nylon-6,6 needs adipic acid plus hexamethylenediamine",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that caprolactam is a single monomer strikes out options 1 and 2: Terylene is made from ethylene glycol with terephthalic acid and Nylon-6,6 from adipic acid with hexamethylenediamine, each needing two different monomers.",
+      "traps": [
+        {
+          "label": "look_alike_term",
+          "option": "2",
+          "route": "\"Nylon-6,6\" against the key \"Nylon-6\": the two polymer names differ only in the repeated digit, and that digit is what records the second monomer the key's polymer does not have"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "'Terylene' is a different member of the same family of named condensation polymers, carrying its own monomer fact (ethylene glycol with terephthalic acid)"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "'Teflon' is a different member of the same family of named commercial polymers, carrying its own monomer fact (tetrafluoroethene, an addition polymer)"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored monomer-to-polymer fact, demonstrated by the stem's \"Caprolactum is used for the manufacture of\" being answered by option 3 'Nylon-6'.",
+      "note": "has_figure is set and a figure file is referenced, but the stem and all four options are complete as text and the item is answerable from the monomer's name alone, so the figure is redundant to the answer rather than missing from it. No damage verdict. The stem spells the monomer \"Caprolactum\" for caprolactam; the term is unambiguous."
+    },
+    {
+      "question_id": "2015_A#q009",
+      "concept": "Thermal stability of carbonates: decomposition becomes easier as the cation's polarising power rises, so MgCO3 releases CO2 at the lowest temperature and the alkali-metal carbonates are the most stable",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "2",
+          "route": "CaCO3 is the published worked example of carbonate decomposition, the answer to \"which carbonate on heating gives quicklime and carbon dioxide\"; the stem asks which of four releases CO2 MOST easily, and Mg2+ is the smaller, more polarising cation"
+        },
+        {
+          "label": "new_trap",
+          "option": "3",
+          "route": "K2CO3 is the opposite extreme of the same trend: K+ is the largest and least polarising of the four cations, so this option is what the correct monotonic trend returns when it is read in the wrong direction, with \"most easily\" taken to mean most ionic"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stated rule applied across four named cases, demonstrated by the stem's \"releases CO2 most easily\" being answered by option 1 MgCO3, the carbonate of the smallest and most strongly polarising of the four cations.",
+      "note": "new_trap on option 3: the device is an option produced by applying a correct monotonic trend in the reversed direction. `reversed_order` covers this only where the ANSWER is an ordering, which it is not here, and `semantic_reversal` requires reversed words to quote, which this option set does not print - the reversal is in the direction of a trend, not in any wording. A label such as reversed_trend_direction would cover it. Option 4 (Na2CO3) is left untagged: it lies on the same reversed route one step short of the extreme, so tagging it would duplicate the device rather than add one."
+    },
+    {
+      "question_id": "2015_A#q010",
+      "concept": "Reducing character of the oxoacids of phosphorus: the P-H bonds are what reduce, and H3PO2 has two of them with only one -OH",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "\"Presence of two -OH groups and one p - H bond\" is the structure of the neighbouring oxoacid H3PO3, a different member of the same family of phosphorus oxoacids; it is offered against the H3PO2 the stem names"
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "\"High oxidation state of phosphorus\" reverses the words of the relation: a reducing agent is itself oxidised, so it needs phosphorus in a LOW oxidation state, which is +1 in H3PO2"
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "\"High electron gain enthalpy\" reverses the direction of electron flow in words: gaining electrons is being reduced, whereas the reducing behaviour the stem grants requires the species to give electrons away"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a stated rule applied to one named species' structure, demonstrated by the stem's \"Strong reducing behaviour of H3PO2\" being accounted for by option 3 \"Presence of one -OH group and two p - H bonds\".",
+      "note": "Options 2 and 3 both allocate exactly three hydrogens, so the molecular formula H3PO2 does not separate them and no elimination label is available: the item turns entirely on which allocation belongs to H3PO2. The options are stored with \"p - H\" in place of the P-H bond; the chemistry is recoverable without ambiguity, so this is a spelling repair rather than a damage verdict."
+    },
+    {
+      "question_id": "2015_A#q011",
+      "concept": "Bond order from molecular orbital filling: each electron added to the pi* antibonding level lowers the bond order, giving O2+ 2.5, O2 2.0, O2- 1.5 and O2^2- 1.0",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that O2^2- has the most antibonding electrons of the four and so the lowest bond order strikes out options 2 and 4, which both place it above O2.",
+      "traps": [
+        {
+          "label": "reversed_order",
+          "option": "4",
+          "route": "option 4 prints the exact reverse of the key's sequence, O2^2- > O2- > O2 > O2+ against O2+ > O2 > O2- > O2^2-; the route reads the antibonding count as raising stability instead of lowering it"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a stated rule applied separately to four named species before their order can be assembled, demonstrated by the stem's \"Decreasing order of stability\" being answered by option 3 with O2+ first, the species with one electron fewer in the antibonding level than O2.",
+      "note": "On the printed shape this member is not a plain single-answer MCQ: the answer itself is an ordering, which the rulebook calls `arrange_in_order` with the answer form `pick_order`. It is in this packet because the grouping used the reader's `structure` field, which read `plain`. Options 1 and 2 are left untagged: each scrambles the sequence without reproducing either the key's reverse or the order in which the stem prints the species (O2, O2-, O2+, O2^2-), so neither `reversed_order` nor `sequence_endpoint_or_adjacency` is demonstrable and no other route can be named."
+    },
+    {
+      "question_id": "2015_A#q012",
+      "concept": "Mole concept: grams, moles and molecule counts must be brought to one representation before amounts can be compared (18 mol of water is 18 x 6.022 x 10^23 molecules)",
+      "cognitive_demand": "calculation",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["estimation", "unit_sanity"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "1",
+          "route": "\"18 gram of water\" is the published answer to \"what mass of water is one mole / contains Avogadro's number of molecules\"; it is one mole against the key's eighteen"
+        },
+        {
+          "label": "unit_or_conversion",
+          "option": "3",
+          "route": "\"18 molecules of water\" repeats the key's number with the unit changed and no conversion performed; eighteen molecules is 18 against the key's 18 x 6.022 x 10^23, so the route is treating a count of molecules as interchangeable with a count of moles"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "no route reaches this option: 1.8 gram is one tenth of option 1's 18 gram, so under the only quantity the stem asks about it is strictly smaller than another printed option and cannot be the maximum; it widens the spread"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires each option to be converted to one common representation and the results compared, demonstrated by the stem's \"number of water molecules is maximum in\" and option 2 \"18 moles of water\", which is 18 times the molecule count of option 1's 18 gram.",
+      "note": "estimation and unit_sanity are both recorded: the four options span three different units (gram, mole, molecule) so reading the unit is what the item turns on, and orders of magnitude settle it without any arithmetic being carried out."
+    },
+    {
+      "question_id": "2015_A#q013",
+      "concept": "Isostructural pairs from VSEPR: XeF4 is square planar with two lone pairs while XeO4 is tetrahedral, so that pair alone differs in shape",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that an isoelectronic pair of the same formula type must have the same shape strikes out options 1 and 3: NH3 with PH3 are both AB3 hydrides of group 15, and SiCl4 with PCl4+ are isoelectronic AB4 species.",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "NH3 and PH3 are both trigonal pyramidal, so the pair IS isostructural and the option fails only the stem's negated task, \"both the species are not isostructural\""
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "SiCl4 and PCl4+ are isoelectronic and both tetrahedral, so the pair is isostructural and the option fails only the task's polarity"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "diamond and silicon carbide are both tetrahedral covalent network solids, so the pair is isostructural and the option fails only the task's polarity"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a stated rule applied separately to each printed pair, demonstrated by the stem's \"both the species are not isostructural\" being answered by option 2 XeF4 with XeO4, where the first carries two lone pairs on xenon and the second none.",
+      "note": "On the printed shape this member is not a plain MCQ: each option is a pair accepted or rejected whole, which the rulebook calls `pair_options`. It sits in this packet because the grouping used the reader's `structure` field, which read `plain`. has_figure is set and a figure file is referenced, but every species is named in text and the item is answerable from the formulae, so the figure is redundant rather than missing."
+    }
+  ],
+  "group_note": "Six chemistry items grouped on the reader's `structure` field, which read `plain`. Three members do not in fact share the printed shape of the other three, and each is flagged in its own note: q011's answer is an ordering (`arrange_in_order`), q013's options are pairs judged whole (`pair_options`), and only q008, q009, q010 and q012 are plain single-answer MCQs. None of those differences changed the judgement axes, because the demands do not depend on the printed shape. The demand axis was set by one test applied to all six: is the answer named by a stored fact, produced by applying a rule to cases, or arrived at by computing? q008 is the only pure `recall` - one monomer-to-polymer fact. q012 is the only `calculation` - the four options must actually be converted to a common representation. The other four are `application`: a stated rule (cation polarising power, the P-H bond as the reducing centre, antibonding electron count, VSEPR) is turned onto named species, and in each the rule has to be known before it can be applied, which is what the rebuilt definition of `application` requires. Solution structure follows a second single test: does each option or each listed species need its own separate determination before the verdicts can be combined? It does in q011 (four bond orders computed one at a time, then ordered), q012 (four conversions) and q013 (eight species, four pair verdicts), so those three are `several_independent_checks` - and none is `multi_step_dependent`, because no one of those determinations needs another's result, which is the distinction the rulebook insists on. q008, q009 and q010 are `single_step`: one remembered trend or one structure-and-rule pairing orders or names everything at once. Elimination was recorded in four members and in each the cited fact is cheaper than the answer and strikes named options: one monomer versus two in q008, the antibonding count of the peroxide ion in q011, isoelectronic pairs in q013, and in q012 the strategy slot carries estimation and unit_sanity instead, because the units rather than any single fact are what separate the options. It was withheld from q009 and q010, where the only shortcut is already knowing the answer, and q010's note records why the molecular formula cannot narrow it. On the trap axis, q013 is the only member with a negated task and is the only one carrying `true_statement_trap`, three times. The recurring device elsewhere is an option that is the published answer to a neighbouring question (CaCO3 and quicklime in q009, 18 g as one mole in q012) or a different member of the same family (Terylene and Teflon in q008, H3PO3 in q010). One `new_trap` was needed, on q009 option 3: an option generated by applying a correct monotonic trend in the reversed direction, which `reversed_order` cannot cover because the answer here is not an ordering and `semantic_reversal` cannot cover because no reversed wording is printed. It is described in that question's note. Three options were left untagged with reasons recorded (q009 option 4, q011 options 1 and 2) rather than given a near-fitting label, and no trap sits on any official answer. Nothing in this packet is damaged: both figure flags are redundant rather than missing, and q010's \"p - H\" and q008's \"Caprolactum\" are recoverable spellings, so no `source_damage_artifact` verdict is recorded."
+}

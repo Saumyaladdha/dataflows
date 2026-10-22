@@ -1,0 +1,45 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.118, "x1": 0.418},
+      {"id": "right", "x0": 0.424, "x1": 0.877}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "rule_bar", "bbox": [0.025, 0.068, 0.756, 0.108],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435"},
+    {"n": null, "role": "decorative_image", "bbox": [0.764, 0.068, 0.975, 0.156],
+     "column": "full", "size_rel": 1.0, "fill": "#6d561c"},
+    {"n": null, "role": "running_header", "bbox": [0.119, 0.140, 0.267, 0.147],
+     "column": "full", "size_rel": 0.75, "align": "left", "font": "sans",
+     "text_color": "#212121"},
+    {"n": 1, "role": "paragraph", "bbox": [0.118, 0.168, 0.677, 0.436],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "box", "bbox": [0.696, 0.165, 0.877, 0.465],
+     "column": "right", "size_rel": 0.85, "align": "left", "font": "serif",
+     "fill": "#fef7db"},
+    {"n": 3, "role": "section_heading", "bbox": [0.119, 0.452, 0.442, 0.462],
+     "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold",
+     "text_color": "#06ac48"},
+    {"n": 4, "role": "paragraph", "bbox": [0.118, 0.475, 0.677, 0.656],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "paragraph", "bbox": [0.118, 0.660, 0.418, 0.840],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "figure", "bbox": [0.424, 0.542, 0.847, 0.822],
+     "column": "right", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.454, 0.832, 0.813, 0.851],
+     "column": "right", "size_rel": 0.95, "align": "center", "font": "serif",
+     "fill": "#fdf0e3"},
+    {"n": null, "role": "page_number", "bbox": [0.800, 0.745, 0.975, 0.779],
+     "column": "full", "size_rel": 1.4, "align": "left", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "rule_bar", "bbox": [0.800, 0.782, 0.975, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.478, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif"}
+  ],
+  "note": "Recto page 51 with two different arrangements stacked. Upper half: block 1 runs at the full text measure x 0.118-0.677 while the cream 'Menstrual Hygiene' sidebar (block 2, fill #fef7db, x 0.696-0.877) stands clear of it in the outer margin - its type is noticeably smaller than body prose, about 0.85. Lower half: block 5 is set narrow in the LEFT column (0.118-0.418) beside Figure 3.10, which occupies the RIGHT column with its peach caption. Block 4 straddles the two arrangements - four full-measure lines then eight narrow left-column lines - so it is marked `full`, as are block 1 and the 3.5 heading. The declared right column 0.424-0.877 is wide enough to hold both the sidebar and the figure. Figure 3.10's bbox includes its leader labels (Sperm / Cells of the corona radiata / Zona pellucida / Ovum / Perivitelline space). The caption carries n: null; A2's single figure block n=6 is matched to the image. The bottom-centre '2022-23' edition line is reported as running_header for want of a better allowed role. The diagonal 'not to be republished / (c) NCERT' watermark is a page-wide overlay and is not listed as an element."
+}

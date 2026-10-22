@@ -1,0 +1,47 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "7. The nuclear mass M is always less than the total mass, Σm, of its constituents. The difference in mass of a nucleus and its constituents is called the mass defect,\n∆M = (Z m_p + (A – Z)m_n) – M\nUsing Einstein’s mass energy relation, we express this mass difference in terms of energy as\n∆E_b = ∆M c²\nThe energy ∆E_b represents the binding energy of the nucleus. In the mass number range A = 30 to 170, the binding energy per nucleon is nearly constant, about 8 MeV/nucleon.\n8. Energies associated with nuclear processes are about a million times larger than chemical process.\n9. The Q-value of a nuclear process is\nQ = final kinetic energy – initial kinetic energy.\nDue to conservation of mass-energy, this is also,\nQ = (sum of initial masses – sum of final masses)c²\n10. Radioactivity is the phenomenon in which nuclei of a given species transform by giving out α or β or γ rays; α-rays are helium nuclei; β-rays are electrons. γ-rays are electromagnetic radiation of wavelengths shorter than X-rays.\n11. Energy is released when less tightly bound nuclei are transmuted into more tightly bound nuclei. In fission, a heavy nucleus like ^235_92 U breaks into two smaller fragments, e.g.,",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        360,
+        1062,
+        1105,
+        1110
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "12. In fusion, lighter nuclei combine to form a larger nucleus. Fusion of hydrogen nuclei into helium nuclei is the source of energy of all stars including our sun."
+    },
+    {
+      "n": 4,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        127,
+        1280,
+        1442,
+        1962
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "319",
+    "Nuclei",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read page 13 of this chapter immediately before: it ended inside the SUMMARY box at item 6, and this page opens with item 7 of the same box — so first_block_continues_from_previous is true on that direct evidence (the page starts mid-box). Blocks 1 and 3 are the continuation of that SUMMARY box (it spans roughly [127, 281, 1125, 1215] on this page and closes after item 12); the fission reaction at the end of item 11 is stacked nuclide notation that cannot be rendered in plain text, so it is split out as block 2, an equation with needs_special and a pixel bbox. Block 4 is the chapter's symbols table (Physical Quantity / Symbol / Dimensions / Units / Remarks, five rows), left to the special transcriber with a bbox. The simple display lines inside the summary ('∆M = ...', '∆E_b = ∆M c²', the two Q lines) are transcribable, so I kept them as text. Text-layer/image notation discrepancies, taken from the image: Greek letters are flattened to Latin or to capitals ('Sm' -> Σm, 'DM' -> ∆M, 'DEb' -> ∆E_b, 'a or b or g rays' -> α or β or γ rays, and in the table 'l' -> λ and 't' -> τ); superscripts/subscripts are dropped or linearised ('c2' -> c², 'mp'/'mn' -> m with subscripts p and n written here as m_p and m_n, 'Eb' -> E with subscript b, 'T1/2' -> T with subscript 1/2, '[T –1]' -> [T⁻¹], 's–1' -> s⁻¹, 'e–1' -> e⁻¹, '12C' -> ¹²C, '1/12th' has a superscript 'th'), and the item-11 reaction arrives as a column of bare digits ('235\\n1\\n133\\n99\\n1\\n92\\n0\\n51\\n41\\n0'). The ^235_92 U notation follows the convention used earlier in this chapter. Italics ('mass defect', 'binding energy', M, A, Q, X) are not preserved. The table and the summary box close on this page, so last_block_continues_on_next is false."
+}

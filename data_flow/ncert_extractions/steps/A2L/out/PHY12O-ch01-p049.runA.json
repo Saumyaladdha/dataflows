@@ -1,0 +1,49 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "full", "x0": 0.1, "x1": 0.687}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.067],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.5494, 0.0, 0.8729, 0.124],
+     "column": "full", "size_rel": 1.6, "align": "center", "font": "sans",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "figure", "bbox": [0.0994, 0.135, 0.6841, 0.287],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.3465, 0.2911, 0.4365, 0.2984],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans",
+     "text_color": "#00adef"},
+    {"n": 2, "role": "list", "bbox": [0.1, 0.3108, 0.6871, 0.3939],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "list", "bbox": [0.1, 0.4031, 0.6859, 0.5032],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "figure", "bbox": [0.2276, 0.528, 0.5694, 0.6455],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.3465, 0.6657, 0.4365, 0.6736],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans",
+     "text_color": "#00adef"},
+    {"n": 5, "role": "list", "bbox": [0.1, 0.6947, 0.6853, 0.7562],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "list", "bbox": [0.1, 0.7617, 0.6871, 0.8035],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 7, "role": "list", "bbox": [0.1, 0.8099, 0.6871, 0.9394],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8141, 0.9155, 0.8718, 0.9371],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "sans",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "sans",
+     "text_color": "#221f1f"}
+  ],
+  "note": "Recto ADDITIONAL EXERCISES page, one full column (printed measure x 0.100-0.687, wide empty outer margin at right carrying only the watermark). Exercise numbers hang at x 0.100 and their text is indented to x 0.157. Block 1 is the remaining parts (d) and (e) of Fig. 1.35 carried over from p048, followed here by the cyan #00adef 'FIGURE 1.35' caption that p048 lacked; block 4 is Fig. 1.36 parts (a) and (b) with its own cyan 'FIGURE 1.36' caption. Neither caption has an A2 block, so both take n: null. Blocks 2, 3, 5, 6 and 7 are exercises 1.27-1.31, each a separate numbered item (role list). No fill is reported for either figure: a naive saturated-row scan flags a light-blue band at y 0.587-0.613, x 0.228-0.379 (#b9e5fa), but that is the pale blue interior of Fig. 1.36's conductor blobs - artwork, NOT a rule_bar or page band. This page's only real coloured band is the page_header_band, the pale blue #c6eafb strip across the whole page top (y 0-0.067), whose #41c7f4 hairline and #00adef foot rule are internal edges of that one band. There is no rule_bar and no footer_rule on this page. IMPORTANT for size_rel: this page prints no ordinary body prose, so page.body_text_size_px is given as 20.0 - the body cap height measured on the chapter's body pages - keeping size_rel comparable page to page; on that basis the exercise text (cap height 18px) is 0.9 and the figure captions (16px) 0.8. The '2022-23' edition line at the foot is recorded as a second running_header because the allowed role list has no footer-text role. All 7 A2 blocks matched by position."
+}

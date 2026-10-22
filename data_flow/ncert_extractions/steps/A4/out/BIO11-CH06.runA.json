@@ -1,0 +1,104 @@
+{
+  "chapter": "BIO11-CH06",
+  "subtopics": [
+    {
+      "n": 1,
+      "name": "The epidermal tissue system: epidermis, cuticle, stomata and epidermal hairs",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH06-P01",
+        "BIO11L-CH06-P02",
+        "BIO11L-CH06-P03",
+        "BIO11L-CH06-P20"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "The ground tissue system: parenchyma, collenchyma and sclerenchyma",
+      "from_heading": "6.1.2 The Ground Tissue System",
+      "passages": [
+        "BIO11L-CH06-P04"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "The vascular tissue system: xylem, phloem and types of vascular bundles",
+      "from_heading": "6.1.3 The Vascular Tissue System",
+      "passages": [
+        "BIO11L-CH06-P05"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Studying dicot and monocot anatomy in transverse sections",
+      "from_heading": "6.2 ANATOMY OF DICOTYLEDONOUS AND MONOCOTYLEDONOUS PLANTS",
+      "passages": [
+        "BIO11L-CH06-P06",
+        "BIO11L-CH06-P21"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Internal structure of the dicotyledonous root",
+      "from_heading": "6.2.1 Dicotyledonous Root",
+      "passages": [
+        "BIO11L-CH06-P07",
+        "BIO11L-CH06-P08",
+        "BIO11L-CH06-P09"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Internal structure of the monocotyledonous root",
+      "from_heading": "6.2.2 Monocotyledonous Root",
+      "passages": [
+        "BIO11L-CH06-P11",
+        "BIO11L-CH06-P10"
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Internal structure of the dicotyledonous stem",
+      "from_heading": "6.2.3 Dicotyledonous Stem",
+      "passages": [
+        "BIO11L-CH06-P12",
+        "BIO11L-CH06-P13"
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Internal structure of the monocotyledonous stem",
+      "from_heading": "6.2.4 Monocotyledonous Stem",
+      "passages": [
+        "BIO11L-CH06-P14"
+      ]
+    },
+    {
+      "n": 9,
+      "name": "Dorsiventral (dicotyledonous) leaf: epidermis, mesophyll and vascular system",
+      "from_heading": "6.2.5 Dorsiventral (Dicotyledonous) Leaf",
+      "passages": [
+        "BIO11L-CH06-P15",
+        "BIO11L-CH06-P16"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Isobilateral (monocotyledonous) leaf and its differences from the dorsiventral leaf",
+      "from_heading": "6.2.6 Isobilateral (Monocotyledonous) Leaf",
+      "passages": [
+        "BIO11L-CH06-P17",
+        "BIO11L-CH06-P19"
+      ]
+    },
+    {
+      "n": 11,
+      "name": "Bulliform cells in grass leaves",
+      "from_heading": "6.2.6 Isobilateral (Monocotyledonous) Leaf",
+      "passages": [
+        "BIO11L-CH06-P18"
+      ]
+    }
+  ],
+  "note": "chapter_title is \"SUMMARY\" rather than a chapter name, and the headings list starts at 6.1.2, so there is no heading in the input for the epidermal tissue system even though passages P01-P03 clearly cover it; from_heading for that subtopic is \"unsure\". Passage P01 begins mid-sentence (\"arranged cells, which form a continuous layer\"), so text before it appears to be missing from the input. P18 (bulliform cells) is short and self-contained and was given its own subtopic rather than folded into the isobilateral-leaf subtopic. Figure passages carry no text, so their placement is inferred from position: P09 with the dicot root and P10 with the monocot root (the two parts of Figure 6.3), P13 with the dicot stem, P16 with the dorsiventral leaf, P02 with the epidermal tissue system. The chapter-wide SUMMARY (P20) was attached to subtopic 1 and the EXERCISES passage (P21, mainly monocot-vs-dicot comparisons) to subtopic 4."
+}

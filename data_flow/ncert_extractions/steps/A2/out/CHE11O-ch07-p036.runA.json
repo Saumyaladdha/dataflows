@@ -1,0 +1,133 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "of known pH can be prepared from the knowledge of pKa of the acid or pKb of base and by controlling the ratio of the salt and acid or salt and base. A mixture of acetic acid and sodium acetate acts as buffer solution around pH 4.75 and a mixture of ammonium chloride and ammonium hydroxide acts as a buffer around pH 9.25. You will learn more about buffer solutions in higher classes.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "7.12.1 Designing Buffer Solution"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Knowledge of pKa, pKb and equilibrium constant help us to prepare the buffer solution of known pH. Let us see how we can do this."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "Preparation of Acidic Buffer"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "To prepare a buffer of  acidic pH we use weak acid and its salt formed with strong base. We develop the equation relating the pH, the equilibrium constant, Ka  of weak acid and ratio of concentration of weak acid and its conjugate base. For the general case where the weak acid HA ionises in water,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [362, 1058, 718, 1102],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "For which we can write the expression"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [372, 1128, 682, 1218],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Rearranging the expression we have,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [352, 1275, 682, 1370],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Taking logarithm on both the sides and rearranging the terms we get —"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 1442, 868, 1815],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The expression (7.40) is known as Henderson–Hasselbalch equation. The quantity [A–]/[HA] is the ratio of concentration of conjugate base (anion) of the acid and the acid present in the mixture. Since acid is a weak acid, it ionises to a very little extent and concentration of [HA] is negligibly different from concentration of acid taken to form buffer. Also, most of the conjugate base, [A—], comes from the ionisation of salt of the acid. Therefore, the concentration of conjugate base will be negligibly different from the concentration of salt. Thus, equation (7.40) takes the form:"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1052, 588, 1372, 668],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "In the equation (7.39), if the concentration of [A—] is equal to the concentration of [HA], then pH = pKa because value of log 1 is zero. Thus if we take molar concentration of acid and salt (conjugate base) same, the pH of the buffer solution will be equal to the pKa of the acid. So for preparing the buffer solution of the required pH we select that acid whose pKa is close to the required pH. For acetic acid pKa value is 4.76, therefore pH of the buffer solution formed by acetic acid and sodium acetate taken in equal molar concentration will be around 4.76."
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "A similar analysis of a buffer made with a weak base and its conjugate acid leads to the result,"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [928, 1202, 1538, 1340],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "pH of the buffer solution can be calculated by using the equation pH + pOH =14."
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "We know that pH + pOH = pKw  and pKa + pKb = pKw. On putting these values in equation (7.41) it takes the form as follows:"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [898, 1528, 1575, 1728],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "If molar concentration of base and its conjugate acid (cation) is same then pH of the buffer solution will be same as pKa for the base. pKa value for ammonia is 9.25; therefore a buffer of pH close to 9.25 can be obtained by taking ammonia solution and ammonium",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "EQUILIBRIUM",
+    "227",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p035 output, whose last block ended '...are called Buffer Solutions. Buffer solutions', and this page opens 'of known pH can be prepared from the knowledge of pKa...', so first_block_continues_from_previous is true. Displayed expressions are needs_special rather than transcribed, as elsewhere in this chapter: blocks 6, 8, 10, 12, 14, 17 and 20. Block 12 groups the derivation display from 'pKa = pH – log [A–]/[HA]' through equations (7.39) and (7.40), the connective line 'Or' and both equation numbers inside the bbox; block 17 is equation (7.41) and block 20 the two-step display ending in equation (7.42), its 'or' line and number inside the bbox. All of these are set as stacked fractions, and the text layer stores them only as scattered fragments ('p / pKa / H= / [Salt] / [Acid] / + log'), which is another reason not to transcribe them. Block 4 is the bold run-in sub-heading 'Preparation of Acidic Buffer', treated as a heading. Block 13 is one paragraph that straddles the column break ('...The quantity ... is the ratio of concentration of / conjugate base (anion) of the acid...'); the text layer stores it contiguously, so I have kept it whole. That paragraph contains an inline stacked fraction between the words 'quantity' and 'is', which the text layer omits entirely; I have transcribed it as [A–]/[HA] in the printed reading order, as was done for the inline (aH+) graphic on p026."
+}

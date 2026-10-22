@@ -1,0 +1,22 @@
+{
+  "blocks": [
+    {"n": 1, "kind": "paragraph", "text": "Answer Total mass of all the performers, tables, plaques etc. = 280 kg Mass of the performer = 60 kg Mass supported by the legs of the performer at the bottom of the pyramid = 280 – 60 = 220 kg Weight of this supported mass = 220 kg wt. = 220 × 9.8 N = 2156 N. Weight supported by each thighbone of the performer = ½ (2156) N = 1078 N. From Table 9.1, the Young’s modulus for bone is given by Y = 9.4 × 109 N m–2. Length of each thighbone L = 0.5 m the radius of thighbone = 2.0 cm Thus the cross-sectional area of the thighbone A = π × (2 × 10-2)2 m2 = 1.26 × 10-3 m2. Using Eq. (9.8), the compression in each thighbone (∆L) can be computed as ∆L = [(F × L)/(Y × A)] = [(1078 × 0.5)/(9.4 × 109 × 1.26 × 10-3)] = 4.55 × 10-5 m or 4.55 × 10-3 cm. This is a very small change! The fractional decrease in the thighbone is ∆L/L = 0.000091 or 0.0091%."},
+    {"n": 2, "kind": "heading", "text": "8.5.2  Shear Modulus"},
+    {"n": 3, "kind": "paragraph", "text": "The ratio of shearing stress to the corresponding shearing strain is called the shear modulus of the material and is represented by G. It is also called the modulus of rigidity."},
+    {"n": 4, "kind": "equation", "needs_special": true, "bbox": [276, 1339, 976, 1420], "text": ""},
+    {"n": 5, "kind": "paragraph", "text": "Similarly, from Eq. (9.4)"},
+    {"n": 6, "kind": "equation", "needs_special": true, "bbox": [276, 1436, 976, 1518], "text": ""},
+    {"n": 7, "kind": "paragraph", "text": "The shearing stress σs can also be expressed as"},
+    {"n": 8, "kind": "equation", "needs_special": true, "bbox": [276, 1534, 976, 1583], "text": ""},
+    {"n": 9, "kind": "paragraph", "text": "SI unit of shear modulus is N m–2 or Pa. The shear moduli of a few common materials are given in Table 9.2. It can be seen that shear modulus (or modulus of rigidity) is generally less than Young’s modulus (from Table 9.1). For most materials G ≈ Y/3."},
+    {"n": 10, "kind": "table", "needs_special": true, "bbox": [1003, 211, 1794, 770], "text": ""},
+    {"n": 11, "kind": "box", "text": "Example 8.4 A square lead slab of side 50 cm and thickness 10 cm is subject to a shearing force (on its narrow face) of 9.0 × 104 N. The lower edge is riveted to the floor. How much will the upper edge be displaced?"},
+    {"n": 12, "kind": "paragraph", "text": "Answer The lead slab is fixed and the force is applied parallel to the narrow face as shown in Fig. 8.6. The area of the face parallel to which this force is applied is A = 50 cm × 10 cm = 0.5 m × 0.1 m = 0.05 m2 Therefore, the stress applied is = (9.4 × 104 N/0.05 m2) = 1.80 × 106 N.m–2"},
+    {"n": 13, "kind": "figure", "needs_special": true, "bbox": [1084, 1312, 1789, 1550], "text": ""},
+    {"n": 14, "kind": "paragraph", "text": "We know that shearing strain = (∆x/L)= Stress /G. Therefore the displacement ∆x = (Stress × L)/G = (1.8 × 106 N m–2 × 0.5m)/(5.6 × 109 N m–2) = 1.6 × 10–4 m = 0.16 mm"}
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["172", "PHYSICS", "2024-25"],
+  "note": "Previous attempt was flagged A2_TEXT_MISMATCH at 83.3%; re-checked blocks against image and text_layer and they are faithful. This page contains a table, a box, a figure and three numbered equations, all marked needs_special with empty text per the task rules, so paragraph-only text necessarily covers a smaller share of the whole-page text layer -- consistent with the documented check limitation, not a transcription error. Kept as before with no invented changes. Text layer itself has internal book inconsistencies, copied verbatim: it labels the shear-moduli table 'Table 9.2' and the Young's-modulus table 'Table 9.1' even though the printed captions on this page read 'Table 8.2'; it references 'Fig. 8.6' in prose though the printed caption is 'Fig. 8.5'; it cites 'Eq. (9.8)' and 'Eq. (9.4)' using old chapter numbering; and the box states the shearing force as 9.0 × 10^4 N while the worked Answer below it uses 9.4 × 10^4 N. Decorative end-of-example glyphs (⊳) were omitted as non-textual markers."
+}

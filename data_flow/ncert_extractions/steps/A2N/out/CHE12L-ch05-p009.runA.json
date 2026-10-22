@@ -1,0 +1,31 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "This type of isomerism also arises when didentate ligands L – L [e.g., NH₂ CH₂ CH₂ NH₂ (en)] are present in complexes of formula [MX₂(L – L)₂] (Fig. 5.4).",
+      "fixes": [
+        {"wrong": "NH2 CH2 CH2 NH2", "right": "NH₂ CH₂ CH₂ NH₂"},
+        {"wrong": "[MX2(L – L)2]", "right": "[MX₂(L – L)₂]"}
+      ]
+    },
+    {
+      "n": 3,
+      "corrected_text": "Another type of geometrical isomerism occurs in octahedral coordination entities of the type [Ma₃b₃] like [Co(NH₃)₃(NO₂)₃]. If three donor atoms of the same ligands occupy adjacent positions at the corners of an octahedral face, we have the facial (fac) isomer. When the positions are around the meridian of the octahedron, we get the meridional (mer) isomer (Fig. 5.5).",
+      "fixes": [
+        {"wrong": "[Ma3b3]", "right": "[Ma₃b₃]"},
+        {"wrong": "[Co(NH3)3(NO2)3]", "right": "[Co(NH₃)₃(NO₂)₃]"}
+      ]
+    },
+    {"n": 5, "no_change": true},
+    {"n": 6, "no_change": true},
+    {"n": 8, "no_change": true},
+    {
+      "n": 10,
+      "corrected_text": "In a coordination entity of the type [PtCl₂(en)₂]²⁺, only the cis-isomer shows optical activity (Fig. 5.7).",
+      "fixes": [
+        {"wrong": "[PtCl2(en)2]2+", "right": "[PtCl₂(en)₂]²⁺"}
+      ]
+    }
+  ],
+  "note": "n=1, n=3 and n=10 had flattened subscripts in the ligand and generic formulae ([MX₂(L – L)₂], [Ma₃b₃], [Co(NH₃)₃(NO₂)₃], NH₂ CH₂ CH₂ NH₂) plus the flattened 2+ charge on [PtCl₂(en)₂]²⁺. The spacing and en dashes in L – L were left exactly as stored. n=5, n=6, n=8 are prose only; the italic dextro (d)/laevo (l) and chiral/enantiomers in n=8 are italics, not notation, so nothing was touched there. No degree symbols, locants or primes on this page."
+}

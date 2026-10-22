@@ -1,0 +1,218 @@
+{
+  "question_id": "Q-000430",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:197"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "",
+  "statements": [],
+  "list_i": [
+    {
+      "label": "(a)",
+      "text": "Bronchioles"
+    },
+    {
+      "label": "(b)",
+      "text": "Goblet Cell"
+    },
+    {
+      "label": "(c)",
+      "text": "Tendons"
+    },
+    {
+      "label": "(d)",
+      "text": "Adipose Tissue"
+    }
+  ],
+  "list_ii": [
+    {
+      "label": "(i)",
+      "text": "Dense Regular Connective Tissue"
+    },
+    {
+      "label": "(ii)",
+      "text": "Loose Connective Tissue"
+    },
+    {
+      "label": "(iii)",
+      "text": "Glandular Tissue"
+    },
+    {
+      "label": "(iv)",
+      "text": "Ciliated Epithelium"
+    }
+  ],
+  "options_en": {
+    "1": ")a (- ) iv(, )b (- ) iii(, )c (- ) i(, )d (- ) ii(",
+    "2": ")a (- ) i(, )b (- ) ii(, )c (- ) iii(, )d (- ) iv(",
+    "3": ")a (- ) ii(, )b (- ) i(, )c (- ) iv(, )d (- ) iii(",
+    "4": ")a (- ) iii(, )b (- ) iv(, )c (- ) ii(, )d (- ) i("
+  },
+  "structure": "match",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "197\nList-I\nList-II\n(a) Bronchioles\n(i) Dense Regular Connective Tissue\n(b) Goblet Cell\n(ii) Loose Connective Tissue\n(c) Tendons\n(iii) Glandular Tissue\n(d) Adipose Tissue\n(iv) Ciliated Epithelium\n(1)\n)a (- ) iv(, )b (- ) iii(, )c (- ) i(, )d (- ) ii(\n(2)\n)a (- ) i(, )b (- ) ii(, )c (- ) iii(, )d (- ) iv(\n(3)\n)a (- ) ii(, )b (- ) i(, )c (- ) iv(, )d (- ) iii(\n(4)\n)a (- ) iii(, )b (- ) iv(, )c (- ) ii(, )d (- ) i(\nStructural Organisation in Animals\n",
+  "b4_script_options": {
+    "1": ")a (- ) iv(, )b (- ) iii(, )c (- ) i(, )d (- ) ii(",
+    "2": ")a (- ) i(, )b (- ) ii(, )c (- ) iii(, )d (- ) iv(",
+    "3": ")a (- ) ii(, )b (- ) i(, )c (- ) iv(, )d (- ) iii(",
+    "4": ")a (- ) iii(, )b (- ) iv(, )c (- ) ii(, )d (- ) i(\nStructural Organisation in Animals"
+  },
+  "official_answer": "1",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "1",
+  "b6_reason": "Bronchioles are lined by ciliated epithelium (iv), goblet cells are glandular tissue (iii), tendons are dense regular connective tissue (i) and adipose tissue is loose connective tissue (ii).",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "The stem text is empty (the 'Match List I with List II' instruction was lost) and the option strings have their parentheses and spacing reversed, e.g. ')a (- ) iv(' for 'a-iv'; the pairings are still unambiguously readable.",
+  "b6_agrees_with_key": true
+}

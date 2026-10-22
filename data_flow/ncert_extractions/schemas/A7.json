@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A7.json",
+  "title": "A7 output file: one line of ncert/diffs/<CHAPTER>.jsonl",
+  "description": "A7 is pure SCRIPT (diff_pairs.py), no agent. Section 6.4 shape: '{pair: [old, new], identical, diff: [{old, new}]}'. The file is JSONL (one such object per line); this schema describes one line/object. Per Section 9/A7 procedure, 'Identical -> drop' — in practice the script should not write a line for an identical pair at all (A8's item is 'one non-identical pair'), so identical:true lines are not expected to occur in the written file even though the field is kept for conformance with the Section 6.4 data contract.",
+  "type": "object",
+  "required": ["pair", "identical", "diff"],
+  "additionalProperties": false,
+  "properties": {
+    "pair": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "[old_passage_id, new_passage_id], both from the A6 pair result."
+    },
+    "identical": {
+      "type": "boolean",
+      "description": "True if the word-level diff after normalise_quote found no difference. A moved page break never counts as a difference (A2 already joined split text)."
+    },
+    "diff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["old", "new"],
+        "additionalProperties": false,
+        "properties": {
+          "old": { "type": "string" },
+          "new": { "type": "string" }
+        }
+      },
+      "description": "Word-level differing spans. Empty when identical is true."
+    }
+  }
+}

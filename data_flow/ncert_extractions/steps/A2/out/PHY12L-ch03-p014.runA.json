@@ -1,0 +1,104 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [205, 275, 600, 855],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "FIGURE 3.12 (a) Sketch of an electrolyte cell with positive terminal P and negative terminal N. The gap between the electrodes is exaggerated for clarity. A and B are points in the electrolyte typically close to P and N. (b) the symbol for a cell, + referring to P and – referring to the N electrode. Electrical connections to the cell are made at P and N."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Fig. 3.12. They are immersed in an electrolytic solution. Dipped in the solution, the electrodes exchange charges with the electrolyte. The positive electrode has a potential difference V+ (V+ > 0) between itself and the electrolyte solution immediately adjacent to it marked A in the figure. Similarly, the negative electrode develops a negative potential  – (V– ) (V– ≥ 0) relative to the electrolyte adjacent to it, marked as B in the figure. When there is no current, the electrolyte has the same potential throughout, so that the potential difference between P and N is V+ – (–V–) = V+ + V– . This difference is called the electromotive force (emf) of the cell and is denoted by e. Thus",
+      "continues_from_previous": true
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [650, 638, 1540, 675],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Note that e is, actually, a potential difference and not a force. The name emf, however, is used because of historical reasons, and was given at a time when the phenomenon was not understood properly."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "To understand the significance of e, consider a resistor R connected across the cell (Fig. 3.12). A current I flows across R from C to D. As explained before, a steady current is maintained because current flows from N to P through the electrolyte. Clearly, across the electrolyte the same current flows through the electrolyte but from N to P, whereas through R, it flows from P to N."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The electrolyte through which a current flows has a finite resistance r, called the internal resistance. Consider first the situation when R is infinite so that I = V/R = 0, where V is the potential difference between P and N. Now,"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [565, 1145, 1540, 1296],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Thus, emf e is the potential difference between the positive and negative electrodes in an open circuit, i.e., when no current is flowing through the cell."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "If however R is finite, I is not zero. In that case the potential difference between P and N is"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [565, 1445, 1540, 1566],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Note the negative sign in the expression (I r) for the potential difference between A and B. This is because the current I flows from B to A in the electrolyte."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "In  practical calculations, internal resistances of cells in the circuit may be neglected when the  current I is such that e >> I r. The actual values of the internal resistances of cells vary from cell to cell. The internal resistance of dry cells, however, is much higher than the common electrolytic cells."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "We also observe that since V is the potential difference across R, we have from Ohm’s law"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [565, 1933, 1540, 1976],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Combining Eqs. (3.38) and (3.39), we get",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "94",
+    "Reprint 2026-27"
+  ],
+  "note": "Left margin column (FIGURE 3.12 panels (a) and (b) plus its caption) listed first per left-column-first reading order; the body prose then follows in a single full-width column. The page's first block is the margin figure, but the page's prose begins mid-sentence (\"Fig. 3.12. They are immersed...\" completes a sentence started on the previous page), so first_block_continues_from_previous is true and block 3 carries continues_from_previous. previous_page_last_block was null in the input even though this is page 14, so the continuation was judged from the page itself. Displayed/numbered equations (3.36), (3.37), (3.38) and (3.39) are marked needs_special with bboxes rather than transcribed; equation (3.37) includes the worded lines \"V = Potential difference between P and A / + Potential difference between A and B / + Potential  difference between B and N / = e\", which are part of that displayed derivation. The text layer renders the Greek epsilon as the Latin letter \"e\" (and subscripts inline as +/–); prose characters were copied from the layer as instructed, so \"e\" in prose stands for the printed epsilon. Watermark text (\"© NCERT not to be republished\") was ignored. bbox values are in pixels of the supplied 1700x2160 page image.\n"
+}

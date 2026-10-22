@@ -1,0 +1,38 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        218,
+        300,
+        1526,
+        1303
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "has 32 permanent teeth which are of four different types (Heterodont dentition), namely, incisors (I), canine (C), premolars (PM) and molars (M). Arrangement of teeth in each half of the upper and lower jaw in the order I, C, PM, M is represented by a dental formula which in human is 2123 2123 . The hard chewing surface of the teeth, made up of enamel, helps in the mastication of food. The tongue is a freely movable muscular organ attached to the floor of the oral cavity by the frenulum. The upper surface of the tongue has small projections called papillae, some of which bear taste buds.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The oral cavity leads into a short pharynx which serves as a common passage for food and air. The oesophagus and the trachea (wind pipe) open into the pharynx. A cartilaginous flap called epiglottis prevents the entry of food into the glottis – opening of the wind pipe – during swallowing. The oesophagus is a thin, long tube which extends posteriorly passing through the neck, thorax and diaphragm and leads to a ‘J’ shaped bag",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "258",
+    "BIOLOGY",
+    "Sigmoid Colon",
+    "Figure 16.1 The human digestive system",
+    "2022-23"
+  ],
+  "note": "Page 3 ended mid-sentence at 'An adult human', and this page opens with 'has 32 permanent teeth', so the first block continues from the previous page. Figure 16.1 (labelled diagram of the human digestive system) is marked for the special transcriber with an empty text field; its caption line and the single callout label the text layer managed to extract ('Sigmoid Colon') both fall inside that figure's bbox and appear in no block's text, so they are listed in running_header_footer_removed for the coverage check. The dental formula is printed as a display fraction (2123 over 2123) inside the sentence; it is kept inline exactly as the text layer renders it rather than split out as a separate equation block, so the sentence stays quotable — the special transcriber may still want the stacked form. Running header '258' / 'BIOLOGY' and reprint year 2022-23 removed. Text layer present and clean apart from the figure's callout labels, which it does not contain; those were read from the image. Page ends mid-sentence at '‘J’ shaped bag'."
+}

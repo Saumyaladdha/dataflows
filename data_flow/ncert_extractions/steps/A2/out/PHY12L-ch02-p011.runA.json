@@ -1,0 +1,101 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "2.6.1  Relation between field and potential"
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Consider two closely spaced equipotential surfaces A and B (Fig. 2.12) with potential values V and V + δV, where δV is the change in V in the direction of the electric field E. Let P be a point on the surface B. δl is the perpendicular distance of the surface A from P. Imagine that a unit positive charge is moved along this perpendicular from the surface B to surface A against the electric field. The work done in this process is |E|δl.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [900, 400, 1520, 990],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "This work equals the potential difference VA–VB."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Thus,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 740, 660, 785],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 805, 935, 885],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Since δV is negative, δV = – |δV|. we can rewrite Eq (2.20) as"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1020, 935, 1120],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "We thus arrive at two important conclusions concerning the relation between electric field and potential:"
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "(i)\tElectric field is in the direction in which the potential decreases steepest.\n(ii) Its magnitude is given by the change in the magnitude of potential per unit displacement normal to the equipotential surface at the point."
+    },
+    {
+      "n": 12,
+      "kind": "heading",
+      "text": "2.7  POTENTIAL ENERGY OF A SYSTEM OF CHARGES"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Consider first the simple case of two charges q1and q2 with position vector r1 and r2 relative to some origin. Let us calculate the work done (externally) in building up this configuration. This means that we consider the charges q1 and q2 initially at infinity and determine the work done by an external agency to bring the charges to the given locations. Suppose, first the charge q1 is brought from infinity to the point r1. There is no external field against which work needs to be done, so work done in bringing q1 from infinity to r1 is zero. This charge produces a potential in space given by"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1710, 530, 1800],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "where r1P is the distance of a point P in space from the location of q1. From the definition of potential, work done in bringing charge q2 from infinity to the point r2 is q2 times the potential at r2 due to q1:"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1965, 650, 2065],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "55", "Reprint 2026-27"],
+  "note": "Section heading 2.6.1 and side-heading 2.7 appear duplicated/scrambled in text_layer; transcribed once each in reading-order position per instruction. The text layer renders the Symbol-font delta as the letter 'd' (e.g. 'd V', 'd l'); the page image clearly shows δV and δl, so δ was taken from the image. Figure 2.12 (with its caption) floats in the right margin beside the opening paragraph; placed after that paragraph in reading order. Five displayed equations marked needs_special, including the two numbered (2.20) and (2.21) whose sub/superscripts are scrambled in the text layer. A diagonal '© NCERT not to be republished' watermark crosses the page and is not page content."
+}

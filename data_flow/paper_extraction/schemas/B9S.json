@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/B9S.json",
+  "title": "B9S agent output (b9s-source-figure-confirmer)",
+  "description": "Step B9S 'Confirm the figure cut from the official booklet' -- an owner-approved EXTENSION beyond the spec's Stage B, with the same standing as B9 and B10; see config/steps.yaml's B9S entry for the measured evidence. Where B9 asks WHICH of several third-party images belongs to a question, B9S asks whether ONE candidate image is that question's figure, whole and free of anything that is not part of it. The candidate is either cut from a printed paper at the place the question appears there, or one of the figures this bank already publishes; `figure_origin` on the input says which, and is a LABEL rather than a verdict -- a crop from the real page can be the wrong region of it, and a legacy figure can be exactly right. The 54 already-published figures are put through this step because none of them has ever been checked, and an unverified figure that happens to be correct is indistinguishable from one that is wrong. The distinction matters downstream: a B9 figure is third-party provenance that nothing may read as verified, while a B9S figure confirmed `belongs_complete` came off the page itself. Shape per .claude/agents/b9s-source-figure-confirmer.md's worked output. The agent file's universal rule 8 (missing/broken input -> {\"error\": \"...\"}) is the second oneOf branch, the same pattern as every other agent schema in this build.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "question_id",
+        "verdict",
+        "shows",
+        "missing",
+        "junk",
+        "panel_map",
+        "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "question_id": {
+          "type": "string",
+          "pattern": "^Q-[0-9]{6}$",
+          "description": "The question this verdict is about. That it is the SAME id the input named is checked by scripts/checks/B9S.py against the input file, not here: a well-formed id for the wrong question is shape-valid and is exactly the error that would attach a confirmed figure to a different record."
+        },
+        "verdict": {
+          "type": "string",
+          "enum": [
+            "belongs_complete",
+            "belongs_clipped",
+            "belongs_with_junk",
+            "panel_order_differs",
+            "wrong_figure",
+            "not_a_figure",
+            "unsure"
+          ],
+          "description": "The one judgement this step exists for. Only `belongs_complete` publishes. `belongs_clipped` and `belongs_with_junk` are deliberately NOT publishable: a diagram missing an axis or carrying the next question's prose answers the question wrongly in a way a reader cannot detect, whereas a visible gap is reviewable (config/steps.yaml's B9S safe_default). `unsure` IS this step's unsure form (universal rule 5); there is no separate confidence field, because a hedged 'belongs' would reintroduce exactly the silent half-trust B9S was added to remove. `panel_order_differs` was added when option-image questions stopped being refused by the script: the codes rotate the options, so a crop from another code may hold the right four panels in the wrong order, and that mapping is a judgement about the page rather than something a script can see. It does not publish the figure as-is either -- the mapping in `panel_map` has to be applied first."
+        },
+        "shows": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One plain sentence naming what is actually drawn in the image. Required for EVERY verdict, including wrong_figure and not_a_figure: for those it is how a person sees at a glance what the cropper or the wording match got wrong, and it is the only reviewable artifact the step leaves behind besides the image."
+        },
+        "missing": {
+          "type": "string",
+          "description": "For `belongs_clipped`, exactly what was cut off (\"the vertical axis and its label\", \"panel (c) of four\"). Empty for every other verdict. That the pairing holds -- non-empty here if and only if the verdict is belongs_clipped -- is enforced by scripts/checks/B9S.py, since JSON Schema draft-07 cannot express it without duplicating all six branches."
+        },
+        "junk": {
+          "type": "string",
+          "description": "For `belongs_with_junk`, exactly what else is in the image (\"the last line of the stem\", \"options (1) to (4)\", \"the publisher's roundel\"). Empty for every other verdict; paired with the verdict by scripts/checks/B9S.py. Named precisely because the cropper can usually be fixed once it is known which kind of furniture leaked in -- a page rule, a watermark, a running head -- rather than re-cut by hand."
+        },
+        "note": {
+          "type": "string",
+          "description": "Only what the fields above cannot carry; usually empty. Universal rule 7's home: if the question text itself looks wrong, it is said here and nowhere else, because B9S judges the picture only and must not silently correct the record."
+        },
+        "panel_map": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "For `panel_order_differs`, which printed panel is which of the record's options, e.g. {\"a\": \"4\", \"b\": \"1\"} means the panel printed as (a) is the record's option 4. Empty for every other verdict; the pairing is enforced by scripts/checks/B9S.py, since draft-07 cannot express it without duplicating all seven verdict branches. This is the field that makes a crop from a DIFFERENT booklet code safe to use: without it the keyed answer selects the wrong picture, which is the defect two outside audits found and which no reader can detect."
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": [
+        "error"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "error": {
+          "type": "string"
+        }
+      },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

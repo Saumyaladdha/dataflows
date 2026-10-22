@@ -1,0 +1,330 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FIGS - a redrawable description of ONE figure",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "figure_id",
+    "title",
+    "width",
+    "height",
+    "draw"
+  ],
+  "properties": {
+    "figure_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 12,
+      "maxLength": 200,
+      "description": "What the figure SHOWS, as a sentence. Becomes the SVG's accessible label, so it is what a screen reader reads instead of the drawing."
+    },
+    "width": {
+      "type": "number",
+      "minimum": 40,
+      "maximum": 1200
+    },
+    "height": {
+      "type": "number",
+      "minimum": 40,
+      "maximum": 1200
+    },
+    "pad": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 60
+    },
+    "scale": {
+      "type": "number",
+      "minimum": 0.2,
+      "maximum": 4
+    },
+    "draw": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 80,
+      "items": {
+        "type": "object",
+        "required": [
+          "kind"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "angle",
+              "band",
+              "block",
+              "cell",
+              "circle",
+              "curve",
+              "diode",
+              "dot",
+              "ellipse",
+              "gate",
+              "label",
+              "line",
+              "meter",
+              "polygon",
+              "resistor",
+              "right_angle",
+              "terminal"
+            ]
+          },
+          "from": {
+            "$ref": "#/definitions/point"
+          },
+          "to": {
+            "$ref": "#/definitions/point"
+          },
+          "centre": {
+            "$ref": "#/definitions/point"
+          },
+          "vertex": {
+            "$ref": "#/definitions/point"
+          },
+          "at": {
+            "$ref": "#/definitions/point"
+          },
+          "points": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 24,
+            "items": {
+              "$ref": "#/definitions/point"
+            }
+          },
+          "r": {
+            "type": "number",
+            "minimum": 1
+          },
+          "from_deg": {
+            "type": "number"
+          },
+          "to_deg": {
+            "type": "number"
+          },
+          "size": {
+            "type": "number"
+          },
+          "width": {
+            "type": "number",
+            "minimum": 0.5,
+            "maximum": 6
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 60
+          },
+          "colour": {
+            "enum": [
+              "ink",
+              "accent",
+              "muted",
+              "blue",
+              "green",
+              "red",
+              "violet",
+              "orange",
+              "yellow"
+            ]
+          },
+          "fill": {
+            "type": "string"
+          },
+          "dashed": {
+            "type": "boolean"
+          },
+          "italic": {
+            "type": "boolean"
+          },
+          "arrow": {
+            "enum": [
+              "end",
+              "start",
+              "both"
+            ]
+          },
+          "anchor": {
+            "enum": [
+              "start",
+              "middle",
+              "end"
+            ]
+          },
+          "baseline": {
+            "type": "string"
+          },
+          "style": {
+            "enum": [
+              "serif",
+              "sans"
+            ]
+          },
+          "towards": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "number"
+            }
+          },
+          "sub": {
+            "type": "string",
+            "maxLength": 6,
+            "description": "A subscript on this label, positioned by the text engine. Use this rather than a second label: hand-placed subscripts drift onto the drawing."
+          },
+          "sup": {
+            "type": "string",
+            "maxLength": 6
+          },
+          "beside": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from",
+              "to"
+            ],
+            "description": "Place this label beside a component instead of at an absolute point: the renderer puts it `offset` away from the midpoint of from-to, perpendicular to it, on `side` (+1 or -1). Use this for every component label -- hand-computed positions land on the drawing.",
+            "properties": {
+              "from": {
+                "$ref": "#/definitions/point"
+              },
+              "to": {
+                "$ref": "#/definitions/point"
+              },
+              "offset": {
+                "type": "number"
+              },
+              "side": {
+                "type": "number",
+                "enum": [
+                  1,
+                  -1
+                ]
+              }
+            }
+          },
+          "gate": {
+            "enum": [
+              "and",
+              "or"
+            ],
+            "description": "Which logic gate to draw. Named `gate` rather than `kind`, which the spec already uses for the primitive itself."
+          },
+          "type": {
+            "type": "string",
+            "maxLength": 12
+          },
+          "w": {
+            "type": "number"
+          },
+          "h": {
+            "type": "number"
+          },
+          "deg": {
+            "type": "number"
+          },
+          "hatch": {
+            "type": "number"
+          },
+          "zigs": {
+            "type": "integer"
+          },
+          "amp": {
+            "type": "number"
+          },
+          "lead": {
+            "type": "number"
+          },
+          "plates": {
+            "type": "integer"
+          },
+          "horizontal": {
+            "type": "boolean"
+          },
+          "long": {
+            "type": "number"
+          },
+          "short": {
+            "type": "number"
+          },
+          "gap": {
+            "type": "number"
+          },
+          "rx": {
+            "type": "number",
+            "minimum": 0.5
+          },
+          "ry": {
+            "type": "number",
+            "minimum": 0.5
+          },
+          "corner": {
+            "$ref": "#/definitions/point"
+          },
+          "closed": {
+            "type": "boolean"
+          },
+          "tension": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "angles_claimed": {
+      "type": "array",
+      "maxItems": 12,
+      "description": "Every angle the figure LABELS, as {degrees, vertex, ray_to}. The checker recomputes each one from the drawn coordinates and fails the output if the drawing and the label disagree.",
+      "items": {
+        "type": "object",
+        "required": [
+          "degrees",
+          "vertex",
+          "ray_to"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "degrees": {
+            "type": "number"
+          },
+          "vertex": {
+            "$ref": "#/definitions/point"
+          },
+          "ray_to": {
+            "$ref": "#/definitions/point"
+          },
+          "measured_from": {
+            "$ref": "#/definitions/point"
+          }
+        }
+      }
+    },
+    "unreadable": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 10
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 800
+    },
+    "out_of_scope": {
+      "type": "boolean",
+      "description": "True when the figure's content IS a picture -- a shaded 3-D solid, a person, an apparatus photograph -- so no redraw can replace the scan. Set it, give the reason in `unreadable`, and draw nothing."
+    }
+  },
+  "definitions": {
+    "point": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number"
+      }
+    }
+  }
+}

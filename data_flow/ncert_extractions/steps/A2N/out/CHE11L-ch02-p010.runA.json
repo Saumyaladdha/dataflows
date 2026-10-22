@@ -1,0 +1,33 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "particles are perpendicular to each other and both are perpendicular to the direction of propagation of the wave. Simplified picture of electromagnetic wave is shown in Fig. 2.6.\n(ii) Unlike sound waves or waves produced in water, electromagnetic waves do not require medium and can move in vacuum.\n(iii) It is now well established that there are many types of electromagnetic radiations, which differ from one another in wavelength (or frequency). These constitute what is called electromagnetic spectrum (Fig. 2.7). Different regions of the spectrum are identified by different names. Some examples are: radio frequency region around 10⁶ Hz, used for broadcasting; microwave region around 10¹⁰ Hz used for radar; infrared region around 10¹³ Hz used for heating; ultraviolet region around 10¹⁶Hz a component of sun’s radiation. The small portion around 10¹⁵ Hz, is what is ordinarily called visible light. It is only this part which our eyes can see (or detect). Special instruments are required to detect non-visible radiation.\n(iv) Different kinds of units are used to represent electromagnetic radiation.",
+      "fixes": [
+        {"wrong": "around 106 Hz", "right": "around 10⁶ Hz"},
+        {"wrong": "around 1010 Hz", "right": "around 10¹⁰ Hz"},
+        {"wrong": "around 1013 Hz", "right": "around 10¹³ Hz"},
+        {"wrong": "around 1016Hz", "right": "around 10¹⁶Hz"},
+        {"wrong": "around 1015 Hz", "right": "around 10¹⁵ Hz"}
+      ]
+    },
+    {"n": 2, "no_change": true},
+    {
+      "n": 3,
+      "corrected_text": "The SI unit for frequency (ν) is hertz (Hz, s⁻¹), after Heinrich Hertz. It is defined as the number of waves that pass a given point in one second.",
+      "fixes": [
+        {"wrong": "(Hz, s–1)", "right": "(Hz, s⁻¹)"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "In vaccum all types of electromagnetic radiations, regardless of wavelength, travel at the same speed, i.e., 3.0 × 10⁸ m s⁻¹ (2.997925 × 10⁸ ms⁻¹, to be precise). This is called speed of light and is given the symbol ‘c’. The frequency (ν ), wavelength (λ) and velocity of light (c) are related by the equation (2.5).",
+      "fixes": [
+        {"wrong": "3.0 × 108 m s–1", "right": "3.0 × 10⁸ m s⁻¹"},
+        {"wrong": "2.997925 × 108 ms–1", "right": "2.997925 × 10⁸ ms⁻¹"}
+      ]
+    }
+  ],
+  "note": "Three blocks corrected, seven flattened exponents in total — this page's numbers were the worst hit in the chapter. n=1(iii) lists the regions of the electromagnetic spectrum, every one of whose frequencies was flattened: the page prints 10⁶, 10¹⁰, 10¹³, 10¹⁶ and 10¹⁵ Hz, stored as \"106\", \"1010\", \"1013\", \"1016\" and \"1015\" Hz — i.e. the radio band was asserted at 106 Hz instead of a million Hz, and visible light at 1015 Hz instead of 10¹⁵. n=3: the hertz definition prints s⁻¹, stored as \"s–1\". n=5: the speed of light prints 3.0 × 10⁸ m s⁻¹ and 2.997925 × 10⁸ ms⁻¹, stored with both the power of ten and the inverse-second exponent flat. n=2 and n=4 needed nothing: the Greek nu (ν) and lambda (λ) are already the real Greek letters wherever they appear, including in n=5."
+}

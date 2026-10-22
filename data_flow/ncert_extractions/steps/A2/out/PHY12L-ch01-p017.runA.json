@@ -1,0 +1,109 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "arise instantaneously. There will be some time delay between the effect (force on q2) and the cause (motion of q1). It is precisely here that the notion of electric field (strictly, electromagnetic field) is natural and very useful. The field picture is this: the accelerated motion of charge q1 produces electromagnetic waves, which then propagate with the speed c, reach q2 and cause a force on q2. The notion of field elegantly accounts for the time delay. Thus, even though electric and magnetic fields can be detected only by their effects (forces) on charges, they are regarded as physical entities, not merely mathematical constructs. They have an independent dynamics of their own,  i.e., they evolve according to laws of their own. They can also transport energy. Thus, a source of time-dependent electromagnetic fields, turned on for a short interval of time and then switched off, leaves behind propagating electromagnetic fields transporting energy. The concept of field was first introduced by Faraday and is now among the central concepts in physics.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 1.7 An electron falls through a distance of 1.5 cm in a uniform electric field of magnitude 2.0 × 104 N C–1 [Fig. 1.10(a)]. The direction of the field is reversed keeping its magnitude unchanged and a proton falls through the same distance [Fig. 1.10(b)]. Compute the time of fall in each case. Contrast the situation with that of ‘free fall under gravity’."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        367,
+        1058,
+        1004,
+        1337
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Solution In Fig. 1.10(a) the field is upward, so the negatively charged electron experiences a downward force of magnitude eE where E is the magnitude of the electric field. The acceleration of the electron is"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        248,
+        1445,
+        448,
+        1482
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "where me is the mass of the electron."
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Starting from rest, the time required by the electron to fall through a distance h is given by"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        524,
+        1590,
+        799,
+        1674
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        211,
+        1687,
+        707,
+        1798
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "In Fig. 1.10 (b), the field is downward, and the positively charged proton experiences a downward force of magnitude eE. The acceleration of the proton is"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        248,
+        1901,
+        454,
+        1939
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "where mp is the mass of the proton; mp = 1.67 × 10–27 kg. The time of fall for the proton is"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "17",
+    "Reprint 2026-27",
+    "EXAMPLE 1.7 (vertical side tab in right margin)"
+  ],
+  "note": "previous_page_last_block was null although this is page 17; the page nonetheless opens mid-sentence (lowercase 'arise instantaneously.'), so block 1 is marked as continuing. Blocks 2 and 4-12 all sit inside the single shaded 'Example 1.7' box; it is split into several blocks only because a figure and four displayed equations interrupt it, so all its text segments are kept with kind 'box'. Displayed equations (a_e = eE/m_e; the t_e square-root formula; the 'For e = ...' given-values block through t_e = 2.9 × 10^-9 s; a_p = eE/m_p) are left to the special transcriber because the text layer flattens their sub/superscripts onto separate lines. Subscripts/superscripts in copied prose appear as the text layer holds them (e.g. 'q2', '10–19', '104'), not re-rendered. A diagonal '© NCERT not to be republished' watermark crosses the page and is not part of the content."
+}

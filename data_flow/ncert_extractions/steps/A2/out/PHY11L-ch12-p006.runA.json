@@ -1,0 +1,135 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "their velocities.  The collisions are considered to be elastic. We can derive an expression for the pressure of a gas based on the kinetic theory.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "We begin with the idea that molecules of a gas are in incessant random motion, colliding against one another and with the walls of the container. All collisions between molecules among themselves or between molecules and the walls are elastic. This implies that  total kinetic energy is conserved. The total momentum is conserved as usual."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "12.4.1 Pressure of an Ideal Gas"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Consider a gas enclosed in a cube of side l. Take the axes to be parallel to the sides of the cube, as shown in Fig. 12.4.  A molecule with velocity (vx, vy, vz ) hits the planar wall parallel to yz-plane of area A (= l2). Since the collision is elastic, the molecule rebounds with the same velocity; its y and z components of velocity do not change in the collision but the x-component reverses sign. That is, the velocity after collision is (-vx, vy, vz ) . The change in momentum of the molecule is:  –mvx – (mvx) = – 2mvx . By the principle of conservation of momentum, the momentum imparted to the wall in the collision = 2mvx ."
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        200,
+        1105,
+        850,
+        1578
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "To calculate the force (and pressure) on the wall, we need to calculate momentum imparted to the wall per unit time. In a small time interval ∆t, a molecule with x-component of velocity vx will hit the wall if it is within the distance vx ∆t from the wall. That is, all molecules within the volume Avx ∆t only can hit the wall in time ∆t. But, on the average, half of these are moving towards the wall and the other half away from the wall. Thus, the number of molecules with velocity (vx, vy, vz )  hitting the wall in time ∆t is ½A vx  ∆t n, where n is the number of molecules per unit volume. The total momentum transferred to the wall by these molecules in time ∆t  is:"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        908,
+        394,
+        1540,
+        438
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The force on the wall is the rate of momentum transfer Q/∆t  and pressure is force per unit area :"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        908,
+        534,
+        1540,
+        580
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Actually, all molecules in a gas do not have the same velocity; there is a distribution in velocities.  The  above equation, therefore, stands for pressure due to the group of molecules with speed vx  in  the x-direction and n stands for the number density of that group of molecules. The total  pressure is obtained by summing over the contribution due to all groups:"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        908,
+        836,
+        1540,
+        886
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "where 2 x v  is the average of  vx2  .  Now the gas is isotropic, i.e. there is no preferred direction of velocity of the molecules in the vessel. Therefore, by symmetry,"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        908,
+        1008,
+        1540,
+        1118
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "where v is the speed and 2 v   denotes the mean of the squared speed. Thus"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        908,
+        1198,
+        1540,
+        1248
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Some remarks on this derivation. First, though we choose the container to be a cube, the shape of the vessel really is immaterial. For a vessel of arbitrary shape, we can always choose a small infinitesimal (planar) area and carry through the steps above. Notice that both A and ∆t do not appear in the final result. By Pascal’s law, given in Ch. 9,  pressure in one portion of the gas  in equilibrium is the same as anywhere else. Second, we have ignored any collisions in the derivation. Though this assumption is difficult to justify rigorously, we can qualitatively see that it will not lead to erroneous results. The number of molecules hitting the wall in time ∆t was found to be ½ n Avx ∆t. Now the collisions are random and the gas is in a steady state. Thus, if a molecule with velocity (vx, vy, vz ) acquires a  different velocity due to collision with some molecule, there will always be some other"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "KINETIC THEORY",
+    "249",
+    "2024-25"
+  ],
+  "note": "Two-column page, left column then right column. previous_page_last_block was null; I read PHY11L-ch12-p005 myself immediately before this page and it ends mid-sentence with '...with the walls and change', so the join to 'their velocities.' here is directly observed, not guessed. Eqs. (12.10), (12.11), (12.12), (12.13) (its two display lines taken as one block) and (12.14), plus Fig. 12.4 with its caption, are marked needs_special with bboxes in the 1825x2160 image pixel space and empty text. The text layer for this page is out of document order: the fragment 'the wall. Thus, the number of molecules...' is extracted near the top and the sentence that begins it, 'To calculate the force (and pressure) on the wall...', is extracted at the very end, after the Fig. 12.4 caption; I reassembled that single left-to-right-column paragraph into block 6 in printed reading order. In blocks 12 and 14 the overbar mean notation is flattened by the text layer into bare '2 x v' / '2 v' tokens (printed as v-bar-x-squared and v-bar-squared); copied as extracted rather than rewritten. Last block ends mid-sentence ('...there will always be some other'), so it continues on the next page."
+}

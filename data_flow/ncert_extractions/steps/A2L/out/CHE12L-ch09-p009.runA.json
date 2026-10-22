@@ -1,0 +1,48 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.0, "x1": 0.265},
+      {"id": "right", "x0": 0.271, "x1": 0.898}
+    ]
+  },
+  "elements": [
+    {"n": 1, "role": "paragraph", "bbox": [0.2712, 0.0872, 0.8956, 0.1161],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "equation", "bbox": [0.3344, 0.1239, 0.65, 0.1454],
+     "column": "right", "size_rel": 1.0, "align": "center"},
+    {"n": 3, "role": "paragraph", "bbox": [0.2712, 0.1518, 0.8962, 0.1968],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "paragraph", "bbox": [0.2719, 0.2023, 0.8962, 0.2821],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "equation", "bbox": [0.2906, 0.2904, 0.65, 0.4927],
+     "column": "right", "size_rel": 1.0, "align": "center"},
+    {"n": 6, "role": "paragraph", "bbox": [0.2712, 0.4968, 0.8956, 0.5271],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 7, "role": "paragraph", "bbox": [0.2712, 0.5312, 0.8962, 0.6087],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 8, "role": "table_caption", "bbox": [0.2344, 0.6216, 0.7181, 0.6362],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold",
+     "text_color": "#6d6e71"},
+    {"n": 9, "role": "table", "bbox": [0.1413, 0.6477, 0.8294, 0.8858],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif",
+     "fill": "#f48480"},
+    {"n": null, "role": "footer_rule", "bbox": [0.7856, 0.9156, 1.0, 0.9174],
+     "column": "right", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "page_number", "bbox": [0.7856, 0.9069, 0.8269, 0.9174],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71",
+     "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.8356, 0.9028, 0.8981, 0.9128],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.8, "align": "center"}
+  ],
+  "note": "Recto body page (folio 267). The chapter's left margin column is declared but prints nothing of its own here - no 9.x section heading falls on this page. All prose and the stacked Kb equilibrium expressions sit in the right text column; Table 9.3 and its caption overhang the margin and are marked 'full'. body_text_size_px=20.5 from this page's body cap heights. A2's block n=5 is ONE equation block covering the whole stack of four displayed expressions (the equilibrium, K, K[H2O], Kb and pKb lines, y 0.290-0.493); it is reported as one element to match, rather than split into lines A2 did not separate. The table's fill #f48480 is its header row only (band y 1416-1467px, sampled inside the flat colour at x=300px); body rows are white with one salmon vertical rule and a pale grey rounded border. Recto foot furniture mirrored right: gold #fecb03 rule to the page edge, folio '267' on a gold tab, running head 'Amines'."
+}

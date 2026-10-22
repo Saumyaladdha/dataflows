@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000428",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:189"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Which one of the following statements is correct?",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "The atrio-ventricular node (AVN) generates an action potential to stimulate atrial contraction",
+    "2": "The tricuspid and the bicuspid valves open due to the pressure exerted by the simultaneous contraction of the atria",
+    "3": "Blood moves freely from atrium to the ventricle during joint diastole.",
+    "4": "Increased ventricular pressure causes closing of the semilunar valves."
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "189\nWhich one of the following statements is correct?\n(1)\nThe atrio-ventricular node (AVN)\ngenerates an action potential to stimulate\natrial contraction\n(2)\nThe tricuspid and the bicuspid valves\nopen due to the pressure exerted by the\nsimultaneous contraction of the atria\n(3)\nBlood moves freely from atrium to\nthe ventricle during joint diastole.\n(4)\nIncreased ventricular pressure causes\nclosing of the semilunar valves.\nChemical Coordination and Integration\n",
+  "b4_script_options": {
+    "1": "The atrio-ventricular node (AVN)\ngenerates an action potential to stimulate\natrial contraction",
+    "2": "The tricuspid and the bicuspid valves\nopen due to the pressure exerted by the\nsimultaneous contraction of the atria",
+    "3": "Blood moves freely from atrium to\nthe ventricle during joint diastole.",
+    "4": "Increased ventricular pressure causes\nclosing of the semilunar valves.\nChemical Coordination and Integration"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "3",
+  "b6_reason": "In joint diastole all chambers are relaxed, the semilunar valves are shut and the tricuspid/bicuspid valves are open, so blood flows freely from atria into ventricles; SAN not AVN is the pacemaker, AV valves open on pressure difference before atrial systole, and rising ventricular pressure opens rather than closes the semilunar valves.",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

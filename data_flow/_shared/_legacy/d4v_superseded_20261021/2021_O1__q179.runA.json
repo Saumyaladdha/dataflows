@@ -1,0 +1,26 @@
+{
+  "link_type": "concept_applied",
+  "derivation_steps": [
+    "Heterozygote x heterozygote for one gene is the same cross as Mendel's self-pollinated F1 (Tt x Tt), whose progeny proportions are quoted.",
+    "Those proportions are 1/4th showing the recessive phenotype and 3/4th showing the dominant phenotype; the heterozygote itself looks like the dominant homozygote, so it is not counted as recessive-phenotype progeny.",
+    "Taking the diseased phenotype to be the homozygous recessive class (this sickle-cell-specific fact is NOT quoted here — see missing), the diseased fraction is 1/4th.",
+    "1/4 = 25%, which is option 1."
+  ],
+  "evidence": [
+    {
+      "for": "rule (a cross between two heterozygotes for one gene gives 1/4th of the progeny in the recessive class)",
+      "passage_id": "BIO12L-CH04-P13",
+      "exact_line": "The proportion of plants that were dwarf were 1/4th of the F2 plants while 3/4th of the F2 plants were tall."
+    },
+    {
+      "for": "rule (the heterozygote shows the dominant phenotype, so heterozygous progeny are not in the recessive class)",
+      "passage_id": "BIO12L-CH04-P19",
+      "exact_line": "As Mendel found the phenotype of the F1 heterozygote Tt to be exactly like the TT parent in appearance, he proposed that in a pair of dissimilar factors, one dominates the other"
+    }
+  ],
+  "supports_answer": "partly",
+  "missing": [
+    "the fact that sickle-cell anaemia is inherited as an autosomal recessive trait, so a heterozygote (Hb-A Hb-S) is an unaffected carrier and only the homozygote Hb-S Hb-S is diseased"
+  ],
+  "note": "The monohybrid machinery the question needs (1/4th recessive class, heterozygote shows the dominant phenotype) is quotable from section 4.2 Inheritance of One Gene, which is in this shortlist. The sickle-cell-specific premise is not: the section I expected, 4.6.2 Mendelian Disorders (sickle-cell anaemia, the Hb-A / Hb-S allele pair and the statement that only Hb-S Hb-S individuals show the diseased phenotype), is absent from the 15 passages supplied — every passage here comes from 4.1 to 4.3. Without that line the 25% can be derived only by assuming the disease is recessive, so this is 'partly', not 'fully'."
+}

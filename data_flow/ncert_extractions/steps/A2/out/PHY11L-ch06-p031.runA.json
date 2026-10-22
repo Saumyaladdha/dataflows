@@ -1,0 +1,114 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "As we have seen in the last section, only those components of the external torques which are along the axis of rotation, need to be taken into account, when we discuss rotation about a fixed axis. This means we can take ˆ τ = k τ . Since z ⊥ = + L L L and the direction of Lz (vector ˆk ) is fixed, it follows that for rotation about a fixed axis,",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [346, 541, 939, 600],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [306, 655, 939, 714],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Thus, for rotation about a fixed axis, the component of angular momentum perpendicular to the fixed axis is constant. As ˆ ω = L k z I , we get from Eq. (6.43a),"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [314, 893, 939, 952],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "If the moment of inertia I does not change with time,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [314, 1039, 563, 1104],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "and we get from Eq. (6.43c),"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [335, 1147, 939, 1185],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [306, 1206, 939, 1921],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "We have already derived this equation using the work - kinetic energy route."
+    },
+    {
+      "n": 12,
+      "kind": "heading",
+      "text": "6.12.1 Conservation of angular momentum"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "We are now in a position to revisit the principle of conservation of angular momentum in the context of rotation about a fixed axis. From Eq. (6.43c), if the external torque is zero,"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1017, 492, 1623, 525],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "For symmetric bodies, from Eq. (6.42d), Lz may be replaced by L .(L and Lz  are respectively the magnitudes of L and Lz.)"
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "This then is the required form, for fixed axis rotation, of Eq. (6.29a), which expresses the general law of conservation of angular momentum of a system of particles.  Eq. (6.44) applies to many situations that we come across in daily life.  You may do this experiment with your friend.  Sit on a swivel chair (a chair with a seat, free to rotate about a pivot) with your arms folded and feet not resting on, i.e., away from, the ground.  Ask your friend to rotate the chair rapidly. While the chair is rotating with considerable angular speed stretch your arms horizontally.  What happens? Your angular speed is reduced.  If you bring back your arms closer to your body, the angular speed increases again.  This is a situation where the principle of conservation of angular momentum is applicable. If friction in the rotational"
+    },
+    {
+      "n": 17,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [990, 1217, 1628, 1910],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "122",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page; listed left column top-to-bottom (blocks 1-9), then the bottom-left Fig 6.32 (a) (block 10), then the right column (blocks 11-16) and the bottom-right Fig 6.32 (b) (block 17). Inline mathematics is copied as the text_layer holds it (subscripts/superscripts are extracted onto separate lines and scrambled below word level), so strings such as 'ˆ τ = k τ', 'z ⊥ = + L L L' and 'ˆ ω = L k z I' are the raw extracted characters for the printed formulae τ = τk̂, L = L_z + L_⊥ and L_z = Iωk̂; they were not re-rendered. Displayed equations (6.43a), (6.43b), (6.43c), the unnumbered d/dt(Iω) = I dω/dt = Iα line, (6.41) and (6.44) are marked needs_special with bboxes instead of being transcribed. The word 'and' printed immediately before Eq. (6.43b) falls inside block 3's bbox. Figure blocks 10 and 17 include their printed captions ('Fig 6.32 (a) ...' and 'Fig 6.32 (b) ...') inside the bbox. Note the page prints Eq. number (6.41) again for τ = Iα (re-use of an earlier number in the book); copied as shown. previous_page_last_block was null even though page is 31, so continuation was judged from the page text itself: the page opens with a complete new sentence. Bounding boxes are in pixels of the supplied page image (1826 x 2163)."
+}

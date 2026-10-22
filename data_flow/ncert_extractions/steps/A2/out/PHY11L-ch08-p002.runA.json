@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {"n": 1, "kind": "paragraph", "text": "elastic behaviour and mechanical properties of solids which would answer many such questions.", "continues_from_previous": true},
+    {"n": 2, "kind": "heading", "text": "8.2  STRESS AND STRAIN"},
+    {"n": 3, "kind": "paragraph", "text": "When  forces are applied on a body in such a manner that the body is still in static equilibrium, it is deformed to a small or large extent depending upon the nature of the material of the body and the magnitude of the deforming force. The deformation may not be noticeable visually in many materials but it is there. When a body is subjected to a deforming force, a restoring force is developed in the body. This restoring force is equal in magnitude but opposite in direction to the applied force. The restoring force per unit area is known as stress.  If F is the force applied normal to the cross–section and A  is the  area of cross section of  the body,"},
+    {"n": 4, "kind": "equation", "needs_special": true, "bbox": [303, 877, 877, 921], "text": ""},
+    {"n": 5, "kind": "paragraph", "text": "The SI unit of stress is  N m–2 or pascal (Pa) and its dimensional formula is [ ML–1T–2 ]. There are three ways in which a solid may change its dimensions when an external force acts on it. These are shown in Fig. 8.1. In Fig.8.1(a), a cylinder is stretched by two equal forces applied normal to its cross-sectional area. The restoring force per unit area  in this case is called tensile stress. If the cylinder is compressed under the action of applied forces, the restoring force per unit area is known as compressive stress. Tensile or compressive stress can also be termed as longitudinal stress."},
+    {"n": 6, "kind": "paragraph", "text": "In both the cases, there is a change in the length of the cylinder. The change in the length ∆L to the original length L of the body (cylinder in this case) is known as longitudinal strain."},
+    {"n": 7, "kind": "equation", "needs_special": true, "bbox": [975, 233, 1549, 287], "text": ""},
+    {"n": 8, "kind": "paragraph", "text": "However, if two equal and opposite  deforming forces are applied parallel to the cross-sectional area of the cylinder, as shown in Fig. 8.1(b), there is relative displacement between the opposite faces of the cylinder.  The restoring force per unit area developed due to the applied tangential force is known as tangential or shearing stress."},
+    {"n": 9, "kind": "paragraph", "text": "As a result of applied tangential force, there is a relative displacement ∆x between opposite faces of the cylinder as shown in the Fig. 8.1(b). The strain so produced is known as shearing strain and it is defined as the ratio of relative displacement of the faces ∆x  to the length of the cylinder L."},
+    {"n": 10, "kind": "equation", "needs_special": true, "bbox": [975, 872, 1549, 926], "text": ""},
+    {"n": 11, "kind": "paragraph", "text": "where θ is the angular displacement of the cylinder from the vertical (original position of the cylinder). Usually  θ is very small, tan θ is nearly equal to angle θ, (if θ = 10°, for example, there is only 1% difference between θ and tan θ)."},
+    {"n": 12, "kind": "paragraph", "text": "It can also be visualised, when a book is pressed with the hand and pushed horizontally, as shown in Fig. 8.2 (c)."},
+    {"n": 13, "kind": "equation", "needs_special": true, "bbox": [975, 1235, 1549, 1278], "text": ""},
+    {"n": 14, "kind": "paragraph", "text": "In Fig. 8.1 (d), a solid sphere placed in the fluid under high pressure is compressed uniformly on all sides. The force applied by the fluid acts in perpendicular direction at each point of the surface and the body is said to be under hydraulic compression. This leads to decrease"},
+    {"n": 15, "kind": "figure", "needs_special": true, "bbox": [303, 1516, 1549, 1949], "text": ""},
+    {"n": 16, "kind": "paragraph", "text": "Fig. 8.1 (a) A cylindrical body under tensile stress elongates by ∆L (b) Shearing stress on a cylinder deforming it by an angle θ (c) A body subjected to shearing stress (d) A solid body under a stress normal to the surface at every point (hydraulic stress). The volumetric strain is ∆V/V, but there is no change in shape."}
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["168", "PHYSICS", "2024-25"],
+  "note": "previous_page_last_block was null even though page=2 (no prior-page context given to judge against), but block 1 clearly starts mid-sentence (lower-case start) so continues_from_previous was set true by internal evidence. Block 14 ('This leads to decrease') ends mid-sentence, so last_block_continues_on_next is true. Text layer says 'Fig. 8.2 (c)' in block 12 where the image shows this refers to part (c) of Fig. 8.1, not Fig. 8.2 -- copied exactly as printed, not corrected."
+}

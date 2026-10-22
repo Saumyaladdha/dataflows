@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "6.10.3 Lewis Acids and Bases",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "G.N. Lewis in 1923 defined an acid as a species which accepts electron pair and base which donates an electron pair. As far as bases are concerned, there is not much difference between Brönsted-Lowry and Lewis concepts, as the base provides a lone pair in both the cases. However, in Lewis concept many acids do not have proton. A typical example is reaction of electron deficient species BF3 with NH3."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "BF3 does not have a proton but still acts as an acid and reacts with NH3 by accepting its lone pair of electrons. The reaction can be represented by,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [360, 790, 712, 840],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Electron deficient species  like AlCl3, Co3+, Mg2+, etc.  can act as Lewis acids while species like H2O, NH3, OH– etc. which can donate a pair of electrons, can act as Lewis bases."
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Problem 6.15 Classify the following species into Lewis acids and Lewis bases and show how these act as such: (a) HO– (b) F – (c) H+ (d) BCl3 Solution (a) Hydroxyl ion is a Lewis base as it can donate an electron lone pair (:OH– ). (b) Flouride ion acts as a Lewis base as it can donate any one of its four electron lone pairs. (c) A proton is a Lewis acid as it can accept a lone pair of electrons from bases like hydroxyl ion and fluoride ion. (d) BCl3 acts as a Lewis acid as it can accept a lone pair of electrons from species like ammonia or amine molecules."
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "6.11 IONIZATION OF ACIDS AND BASES"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Arrhenius concept of acids and bases becomes useful in case of ionization of acids and bases as mostly ionizations in chemical and biological systems occur in aqueous medium. Strong acids like perchloric acid (HClO4), hydrochloric acid (HCl), hydrobromic acid (HBr), hyrdoiodic acid (HI), nitric acid (HNO3) and sulphuric acid (H2SO4) are termed strong because they are almost completely dissociated into their constituent ions in an aqueous medium, thereby acting as proton (H+) donors. Similarly, strong bases like lithium hydroxide (LiOH), sodium hydroxide (NaOH), potassium hydroxide (KOH), caesium hydroxide (CsOH) and barium hydroxide Ba(OH)2 are almost completely dissociated into ions in an aqueous medium giving hydroxyl ions, OH–. According to Arrhenius concept they are strong acids and bases as they are able to completely dissociate and produce H3O+ and OH– ions respectively in the medium. Alternatively, the strength of an acid or base may also be gauged in terms of Brönsted-Lowry concept of acids and bases, wherein a strong acid means a good proton donor and a strong base implies a good proton acceptor. Consider, the acid-base dissociation equilibrium of a weak acid HA,"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [896, 1060, 1534, 1164],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "In section 6.10.2 we saw that acid (or base) dissociation equilibrium is dynamic involving a transfer of proton in forward and reverse directions. Now, the question arises that if the equilibrium is dynamic then with passage of time which direction is favoured? What is the driving force behind it? In order to answer these questions we shall deal into the issue of comparing the strengths of the two acids (or bases) involved in the dissociation equilibrium. Consider the two acids HA and H3O+ present in the above mentioned acid-dissociation equilibrium. We have to see which amongst them is a stronger proton donor. Whichever exceeds in its tendency of donating a proton over the other shall be termed as the stronger acid and the equilibrium will shift in the direction of weaker acid. Say, if HA is a stronger acid than H3O+, then HA will donate protons and not H3O+, and the solution will mainly contain A– and H3O+ ions. The equilibrium moves in the direction of formation of weaker acid",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["CHEMISTRY", "192", "2024-25"],
+  "note": "Two-column page; left column read before right. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 24 output I wrote myself rather than against the input: page 24's prose finished at 'donating a proton.' with a complete problem panel, and this page opens on the new section heading 6.10.3, so first_block_continues_from_previous is false. Block 8 is one paragraph that runs across the column break ('...perchloric acid' / '(HClO4), hydrochloric acid (HCl)...') and the text layer keeps it in that order, so it is kept as a single block. Block 4 is the display reaction BF3 + :NH3 and block 9 is the HA(aq) + H2O(l) dissociation equilibrium together with its 'conjugate acid / conjugate base' labels underneath; both are left for the special transcriber. Block 6 is the pink Problem 6.15 panel with its (a)-(d) question line and its four-part solution, kept as one box because it is one problem. The running header prints as CHEMISTRY on the page though the text layer stores it lower-case. last_block_continues_on_next is true because the page ends mid-sentence at 'the direction of formation of weaker acid'."
+}

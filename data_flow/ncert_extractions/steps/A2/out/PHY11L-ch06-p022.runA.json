@@ -1,0 +1,165 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "free space. We note that this is true because the body being small,  g does not vary from one point of the body to the other. If the body is so extended that g varies from part to part of the body, then the centre of gravity and centre of mass will not coincide. Basically, the two are different concepts. The centre of mass has nothing to do with gravity. It depends only on the distribution of mass of the body.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "In Sec. 6.2 we found out the position of the centre of mass of several regular, homogeneous objects. Obviously the method used there gives us also the centre of gravity of these bodies, if they are small enough."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Figure 6.25 illustrates another way of determining the CG of an irregular shaped body like a cardboard. If you suspend the body from some point like A, the vertical line through A passes through the CG. We mark the vertical AA1. We then suspend the body through other points like B and C. The intersection of the verticals gives the CG. Explain why the method works. Since the body is small enough, the method allows us to determine also its centre of mass."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 6.8   A metal bar 70 cm long and 4.00 kg in mass supported on two knife-edges placed 10 cm from each end. A 6.00 kg load is suspended at 30 cm from one end. Find the reactions at the knife-edges. (Assume the bar to be of uniform cross section and homogeneous.)"
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "Answer"
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        205,
+        1369,
+        853,
+        1618
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Figure 6.26 shows the rod AB, the positions of the knife edges K1 and K2 , the centre of gravity of the rod at G and the suspended load at P."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Note the weight of the rod W acts at its centre of gravity G. The rod is uniform in cross section and homogeneous; hence G is at the centre of the rod; AB = 70 cm. AG = 35 cm, AP = 30 cm, PG = 5 cm, AK1= BK2 = 10 cm and K1G = K2G = 25 cm. Also, W= weight of the rod = 4.00 kg and W 1= suspended load = 6.00 kg; R1 and R2 are the normal reactions of the support at the knife edges."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "For translational equilibrium of the rod,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        934,
+        402,
+        1539,
+        432
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Note W1 and W act vertically down and R1 and R2 act vertically up."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "For considering rotational equilibrium, we take moments of the forces. A convenient point to take moments about is G. The moments of R2 and W1 are anticlockwise (+ve), whereas the moment of R1 is clockwise (-ve)."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "For rotational equilibrium,"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        929,
+        710,
+        1539,
+        740
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "It is given that W = 4.00g N and W1 = 6.00g N, where g = acceleration due to gravity. We take g = 9.8 m/s2."
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "With numerical values inserted, from (i)"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        929,
+        880,
+        1539,
+        967
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        929,
+        974,
+        1539,
+        1093
+      ],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "Thus the reactions of the support are about 55 N at K1 and 43 N at K2.  ⊳"
+    },
+    {
+      "n": 20,
+      "kind": "box",
+      "text": "Example 6.9  A 3m long ladder weighing 20 kg leans on a frictionless wall. Its feet rest on the floor 1 m from the wall as shown in Fig.6.27. Find the reaction forces of the wall and the floor."
+    },
+    {
+      "n": 21,
+      "kind": "heading",
+      "text": "Answer"
+    },
+    {
+      "n": 22,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        929,
+        1423,
+        1361,
+        1895
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "113",
+    "2024-25"
+  ],
+  "note": "Two-column page; read left column then right column. `previous_page_last_block` was null even though this is page 22, so the continuation call was made from the page itself: the first block opens mid-sentence with the lowercase fragment 'free space. We note that this is true because', so first_block_continues_from_previous is true. Block 8 is a single paragraph that runs across the column break (it ends '...AG = 35 cm, AP' at the foot of the left column and resumes '= 30 cm, PG = 5 cm...' at the top of the right column); the text layer holds it contiguously, so it is listed once rather than split. Displayed numbered equations (i)-(iv) and the numeric derivation lines are emitted as equation blocks with bboxes rather than transcribed, per the subscript/superscript scrambling in this book's text layer; bboxes are in pixels of the supplied 1826x2163 page image. Blocks 17 and 18 each cover a contiguous run of displayed lines ((iii) with its '= 98.00 N' line, and (iv) with the 'From (iii) and (iv)' results). The '⊳' at the end of block 19 is the end-of-answer marker carried in the text layer, kept verbatim. Fig. 6.25 is referred to in block 3 but is not printed on this page. last_block_continues_on_next is true: the figure Fig. 6.27 itself is complete, but it sits inside the unfinished 'Answer' to Example 6.9, whose worked solution has not begun and continues on the next page. Two stray 'u' lines appear in the text layer just after the running header and correspond to no visible text on the image; they were dropped. No front or back matter on this page."
+}

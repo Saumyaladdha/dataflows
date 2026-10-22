@@ -1,0 +1,50 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "instrumental in synthesising RNA molecules with defined combinations of bases (homopolymers and copolymers). Marshall Nirenberg’s cell-free system for protein synthesis finally helped the code to be deciphered. Severo Ochoa enzyme (polynucleotide phosphorylase) was also helpful in polymerising RNA with defined sequences in a template independent manner (enzymatic synthesis of RNA). Finally a checker-board for genetic code was prepared which is given in Table 5.1.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        620,
+        510,
+        1390,
+        1200
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The salient features of genetic code are as follows:"
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "(i) The codon is triplet. 61 codons code for amino acids and 3 codons do not code for any amino acids, hence they function as stop codons.\n(ii) Some amino acids are coded by more than one codon, hence the code is degenerate.\n(iii) The codon is read in mRNA in a contiguous fashion. There are no punctuations.\n(iv) The code is nearly universal: for example, from bacteria to human UUU would code for Phenylalanine (phe). Some exceptions to this rule have been found in mitochondrial codons, and in some protozoans.\n(v) AUG has dual functions. It codes for Methionine (met) , and it also act as initiator codon.\n(vi) UAA, UAG, UGA are stop terminator codons."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "If following is the sequence of nucleotides in mRNA, predict the sequence of amino acid coded by it (take help of the checkerboard):"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "-AUG UUU UUC UUC UUU UUU UUC-"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "BIOLOGY",
+    "96",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null for this batch; continuation judged from the page itself — block 1 begins mid-sentence with the lowercase word \"instrumental\". The table caption \"Table 5.1: The Codons for the Various Amino Acids\" is included inside the table bbox (block 2) rather than given as a separate heading block, so the special transcriber captures caption and grid together. Bold emphasis in the list (degenerate, universal, initiator) is not representable in plain text and has been dropped; characters are otherwise exact. Text-layer characters were used for paragraphs where they matched the image; the page carries a diagonal \"© Not to be republished\" watermark over the table and list, which does not belong to the content."
+}

@@ -1,0 +1,27 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 2, "no_change": true},
+    {"n": 4, "no_change": true},
+    {"n": 6, "no_change": true},
+    {"n": 8, "no_change": true},
+    {
+      "n": 9,
+      "corrected_text": "(ii) r > R:  In this case, the total charge enclosed by the Gaussian spherical surface is zero since the atom is neutral. Thus, from Gauss’s law,\nE (r) × 4 π  r² = 0  or  E (r) = 0;    r > R\nAt r = R, both cases give the same result: E = 0.",
+      "fixes": [
+        {"wrong": "4 π  r 2", "right": "4 π  r²"}
+      ]
+    },
+    {
+      "n": 10,
+      "corrected_text": "ON SYMMETRY OPERATIONS\nIn Physics, we often encounter systems with various symmetries. Consideration of these symmetries helps one arrive at results much faster than otherwise by a straightforward calculation. Consider, for example an infinite uniform sheet of charge (surface charge density σ) along the y-z plane. This system is unchanged if (a) translated parallel to the y-z plane in any direction, (b) rotated about the x-axis through any angle. As the system is unchanged under such symmetry operation, so must its properties be. In particular, in this example, the electric field E must be unchanged.\nTranslation symmetry along the y-axis shows that the electric field must be the same at a point (0, y₁, 0) as at (0, y₂, 0). Similarly translational symmetry along the z-axis shows that the electric field at two point (0, 0, z₁) and (0, 0, z₂) must be the same. By using rotation symmetry around the x-axis, we can conclude that E must be perpendicular to the y-z plane, that is, it must be parallel to the x-direction.\nTry to think of a symmetry now which will tell you that the magnitude of the electric field is a constant, independent of the x-coordinate. It thus turns out that the magnitude of the electric field due to a uniformly charged infinite conducting sheet is the same at all points in space. The direction, however, is opposite of each other on either side of the sheet.\nCompare this with the effort needed to arrive at this result by a direct calculation using Coulomb’s law.",
+      "fixes": [
+        {"wrong": "y1", "right": "y₁"},
+        {"wrong": "y2", "right": "y₂"},
+        {"wrong": "z1", "right": "z₁"},
+        {"wrong": "z2", "right": "z₂"}
+      ]
+    }
+  ],
+  "note": "n9 had flattened 'r 2' restored to r². n10 had the coordinate labels y1/y2/z1/z2 restored to subscripted y₁/y₂/z₁/z₂. n1, n2, n4, n6 and n8 already matched the image."
+}

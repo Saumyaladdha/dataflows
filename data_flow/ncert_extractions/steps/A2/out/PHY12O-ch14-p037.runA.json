@@ -1,0 +1,80 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "9.24\n(a)\nMaximum magnifying power is obtained when the image is at\nthe near point (25 cm)\nu =  – 7.14 cm.\n(b)\nMagnitude of magnification = (25/ |u|) = 3.5.\n(c)\nMagnifying power  = 3.5\nYes, the magnifying power (when the image is produced at 25 cm)\nis equal to the magnitude of magnification.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "9.25"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [250, 575, 715, 620],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "v = +2.5u"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [295, 670, 520, 755],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "i.e.,u = – 6 cm\n|v| = 15 cm"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The virtual image is closer than the normal  near point (25 cm) and\ncannot be seen by the eye distinctly."
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "9.26\n(a)\nEven though the absolute image size is bigger than the object\nsize, the angular size of the image is equal to the angular size of\nthe object. The magnifier helps in the following way: without it\nobject would be placed no closer than 25 cm;  with it the object\ncan be placed much closer. The closer object has larger angular\nsize than the same object at 25 cm. It is in this sense that angular\nmagnification is achieved.\n(b)\nYes, it decreases a little because the angle subtended at the eye\nis then slightly less than the angle subtended at the lens. The\neffect is negligible if the image is at a very large distance away.\n[Note: When the eye is separated from the lens, the angles\nsubtended at the eye by the first object and its image are not\nequal.]\n(c)\nFirst, grinding lens of very small focal length is not easy. More\nimportant, if you decrease focal length, aberrations (both spherical\nand chromatic) become more pronounced. So, in practice, you\ncannot  get a magnifying power of more than 3 or so with a simple\nconvex lens. However, using an aberration corrected lens system,\none can increase this limit by a factor of 10 or so."
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "(d)\nAngular magnification of eye-piece is [(25/fe) + 1] ( fe in cm) which\nincreases if fe is smaller. Further, magnification of the objective\nis given by"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [465, 1620, 825, 1725],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "which is large when  |uO| is slightly greater than fO. The micro-\nscope is used for viewing very close object. So |uO| is small, and\nso is fO."
+    },
+    {
+      "n": 12,
+      "kind": "list",
+      "text": "(e)\nThe image of the objective in the eye-piece is known as ‘eye-ring’.\nAll the rays from the object refracted by objective go through the\neye-ring. Therefore, it is an ideal position for our eyes for viewing.\nIf we place our eyes too close to the eye-piece, we shall not collect\nmuch of the light and also reduce our field of view. If we position",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "505",
+    "Answers",
+    "2022-23"
+  ],
+  "note": "BOOK BACK MATTER, NOT CHAPTER 14 CONTENT. Printed page 505, still the book's ANSWERS section (CHAPTER 9 answers 9.24 to 9.26); transcribed only because the A2 schema rejects a zero-block page, and not to be used as chapter-14 passage text. previous_page_last_block was null, so continuation was judged from my own p036 output, which ended with the completed answer 9.23(c); this page opens with 9.24, so no continuation at the top. Answer 9.26(e) breaks off mid-sentence at 'If we position', so last_block_continues_on_next is true. Three printed display expressions are deferred to A2S as equation blocks because the text layer scrambles them: the radical line 'Magnification = sqrt(6.25/1) = 2.5' of 9.25 (n=3, with its item label kept as block n=2), the fraction equation '+1/2.5u - 1/u = 1/10' (n=5), and the objective-magnification fraction in 9.26(d) (n=10)."
+}

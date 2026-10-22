@@ -1,0 +1,114 @@
+{
+ "figure_id": "block_on_incline",
+ "title": "A box resting on a plane inclined at theta, with its weight mg acting downwards",
+ "width": 340,
+ "height": 180,
+ "pad": 18,
+ "draw": [
+  {
+   "kind": "polygon",
+   "points": [
+    [
+     40,
+     156.47661686855147
+    ],
+    [
+     300,
+     24
+    ],
+    [
+     40,
+     24
+    ]
+   ],
+   "width": 2.0
+  },
+  {
+   "kind": "block",
+   "centre": [
+    182.00985749609322,
+    100.95387395973023
+   ],
+   "w": 46,
+   "h": 30,
+   "deg": -27.0,
+   "hatch": 8
+  },
+  {
+   "kind": "line",
+   "from": [
+    182.00985749609322,
+    100.95387395973023
+   ],
+   "to": [
+    182.00985749609322,
+    46.95387395973023
+   ],
+   "arrow": "end",
+   "width": 1.7
+  },
+  {
+   "kind": "label",
+   "text": "mg",
+   "at": [
+    178.00985749609322,
+    30.95387395973023
+   ],
+   "italic": true,
+   "size": 17
+  },
+  {
+   "kind": "line",
+   "from": [
+    226.00985749609322,
+    88.95387395973023
+   ],
+   "to": [
+    266.99615760875815,
+    68.07031097171108
+   ],
+   "arrow": "end",
+   "width": 1.7,
+   "colour": "accent"
+  },
+  {
+   "kind": "angle",
+   "vertex": [
+    300,
+    24
+   ],
+   "r": 44,
+   "from_deg": 180,
+   "to_deg": 153.0,
+   "colour": "muted"
+  },
+  {
+   "kind": "label",
+   "text": "\u03b8",
+   "at": [
+    238,
+    40
+   ],
+   "italic": true,
+   "size": 18
+  }
+ ],
+ "angles_claimed": [
+  {
+   "degrees": 27.0,
+   "vertex": [
+    300,
+    24
+   ],
+   "ray_to": [
+    40,
+    156.47661686855147
+   ],
+   "measured_from": [
+    40,
+    24
+   ]
+  }
+ ],
+ "note": "The slope angle is chosen once and the block's rotation, the slide arrow and the angle mark are all computed from it, so the drawing cannot disagree with its own label."
+}

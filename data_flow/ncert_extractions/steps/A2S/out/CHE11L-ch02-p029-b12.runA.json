@@ -1,0 +1,17 @@
+{
+  "kind": "figure",
+  "caption": "Fig. 2.12 The plots of (a) the orbital wave function ψ(r); (b) the variation of probability density ψ²(r) as a function of distance r of the electron from the nucleus for 1s and 2s orbitals.",
+  "labels": [
+    "(a)",
+    "ψ(r)",
+    "r(nm)",
+    "ψ(r)",
+    "r(nm)",
+    "(b)",
+    "ψ²(r)",
+    "r(nm)",
+    "ψ²(r)",
+    "r(nm)"
+  ],
+  "note": "Four plots in a 2x2 grid; the panel letters (a) and (b) label the two ROWS (top row = wave function, bottom row = probability density) while the left/right columns are the 1s and 2s orbitals - the flat `labels` list cannot represent that grouping, and the two columns carry no printed 1s/2s labels of their own (the orbitals are named only in the caption). Labels listed row by row, left plot then right plot. The superscript 2 in ψ²(r) is printed as a superscript on the page and in the caption. Numeric axis tick values are printed scale marks rather than named labels and are not listed individually: y-axis ticks run 0-160 (top left), -10-50 (top right), 0-5000 (bottom left), 0-300 (bottom right), and every x-axis is marked 0, 0.4, 0.8. Excluded from the grown crop (outside target_box_in_crop): the page number \"57\", the left-hand column text and pink panel fragments, and the \"According to the German physicist, Max Born, ...\" paragraph below the caption."
+}

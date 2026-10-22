@@ -1,0 +1,42 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.123, "x1": 0.486},
+      {"id": "right", "x0": 0.514, "x1": 0.876}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.125, 0.0878, 0.139, 0.0947],
+     "column": "full", "size_rel": 0.73, "align": "left", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.799, 0.0878, 0.876, 0.0947],
+     "column": "full", "size_rel": 0.73, "align": "right", "font": "serif"},
+    {"n": 1, "role": "box", "bbox": [0.123, 0.1206, 0.486, 0.7936],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "fill": "#f8c2d9"},
+    {"n": 2, "role": "section_heading", "bbox": [0.125, 0.8041, 0.446, 0.8133],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-bold",
+     "text_color": "#00aeef"},
+    {"n": 3, "role": "paragraph", "bbox": [0.124, 0.8234, 0.485, 0.8679],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "footer_rule", "bbox": [0.125, 0.8835, 0.875, 0.8839],
+     "column": "full", "size_rel": 1.0, "fill": "#ed1c24"},
+    {"n": 4, "role": "marginal_note", "bbox": [0.127, 0.889, 0.875, 0.9083],
+     "column": "full", "size_rel": 0.76, "align": "left", "font": "serif-italic"},
+    {"n": null, "role": "footer_rule", "bbox": [0.125, 0.9142, 0.875, 0.9147],
+     "column": "full", "size_rel": 1.0, "fill": "#ed1c24"},
+    {"n": 5, "role": "paragraph", "bbox": [0.514, 0.1199, 0.876, 0.213],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "equation", "bbox": [0.5166, 0.2167, 0.602, 0.2488],
+     "column": "right", "size_rel": 1.0, "align": "left", "font": "serif-italic"},
+    {"n": 7, "role": "paragraph", "bbox": [0.514, 0.2167, 0.876, 0.3314],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 8, "role": "paragraph", "bbox": [0.514, 0.3428, 0.876, 0.8685],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.9555, 0.523, 0.9628],
+     "column": "full", "size_rel": 0.78, "align": "center", "font": "serif"}
+  ],
+  "note": "Ordinary two-column body page (left 0.123-0.486, right 0.514-0.876); no page_header_band and no rule_bar are printed. The two thin red rules bracketing the footnote at the page foot (y 0.8835 and 0.9142, both #ed1c24 sampled from the rule interior) are reported as two separate footer_rule elements. Block 4 is the asterisk footnote printed FULL width across both columns below them, so its column is 'full' and its role is marginal_note (the nearest allowed role for a footnote; its block kind in the input is 'paragraph'). The pink problem box (block 1) is one element holding Problem 2.1, its Solution, Problem 2.2, its Solution and the Note; fill #f8c2d9 sampled from the flat interior, grey keyline border at the top and bottom edges. Block 6 is the displayed expression (G.m1m2/r^2) set inline on the line at y 0.2167-0.2488; block 7's first line runs to the RIGHT of it on that same line, so the two bboxes share that band. body_text_size_px 20.5 measured cap-to-baseline on the first right-column prose line. Section heading is body-height bold cyan #00aeef, so size_rel 1.0. Diagonal '(c) NCERT not to be republished' watermark ignored."
+}

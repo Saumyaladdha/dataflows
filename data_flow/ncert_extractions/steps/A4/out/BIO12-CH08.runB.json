@@ -1,0 +1,155 @@
+{
+  "chapter": "BIO12-CH08",
+  "subtopics": [
+    {
+      "n": 1,
+      "name": "Microbes as useful organisms and their diverse habitats",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO12L-CH08-P01",
+        "BIO12L-CH08-P35",
+        "BIO12L-CH08-P36"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "Microbes in household products: curd, dough and cheese",
+      "from_heading": "8.1 MICROBES IN HOUSEHOLD PRODUCTS",
+      "passages": [
+        "BIO12L-CH08-P02",
+        "BIO12L-CH08-P03",
+        "BIO12L-CH08-P36"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "Industrial production of microbial products and fermentors",
+      "from_heading": "8.2 MICROBES IN INDUSTRIAL PRODUCTS",
+      "passages": [
+        "BIO12L-CH08-P04",
+        "BIO12L-CH08-P05",
+        "BIO12L-CH08-P06"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Fermented beverages: wine, beer, whisky, brandy and rum",
+      "from_heading": "8.2.1 Fermented Beverages",
+      "passages": [
+        "BIO12L-CH08-P07"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Antibiotics and the discovery of penicillin",
+      "from_heading": "8.2.2 Antibiotics",
+      "passages": [
+        "BIO12L-CH08-P08",
+        "BIO12L-CH08-P09",
+        "BIO12L-CH08-P10"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Microbial production of organic acids, alcohols and enzymes",
+      "from_heading": "8.2.3 Chemicals, Enzymes and other Bioactive Molecules",
+      "passages": [
+        "BIO12L-CH08-P11",
+        "BIO12L-CH08-P12"
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Bioactive molecules: cyclosporin A and statins",
+      "from_heading": "8.2.3 Chemicals, Enzymes and other Bioactive Molecules",
+      "passages": [
+        "BIO12L-CH08-P13"
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Sewage treatment: primary and secondary (biological) treatment",
+      "from_heading": "8.3 MICROBES IN SEWAGE TREATMENT",
+      "passages": [
+        "BIO12L-CH08-P14",
+        "BIO12L-CH08-P15",
+        "BIO12L-CH08-P16",
+        "BIO12L-CH08-P17",
+        "BIO12L-CH08-P18",
+        "BIO12L-CH08-P19",
+        "BIO12L-CH08-P20"
+      ]
+    },
+    {
+      "n": 9,
+      "name": "Ganga Action Plan and Yamuna Action Plan",
+      "from_heading": "8.3 MICROBES IN SEWAGE TREATMENT",
+      "passages": [
+        "BIO12L-CH08-P21",
+        "BIO12L-CH08-P22",
+        "BIO12L-CH08-P23"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Biogas production and the working of a biogas plant",
+      "from_heading": "8.4 MICROBES IN PRODUCTION OF BIOGAS",
+      "passages": [
+        "BIO12L-CH08-P24",
+        "BIO12L-CH08-P25",
+        "BIO12L-CH08-P26"
+      ]
+    },
+    {
+      "n": 11,
+      "name": "Biocontrol: microbes as an alternative to chemical pesticides",
+      "from_heading": "8.5 MICROBES AS BIOCONTROL AGENTS",
+      "passages": [
+        "BIO12L-CH08-P27"
+      ]
+    },
+    {
+      "n": 12,
+      "name": "Biological control of pests by natural predators and Bacillus thuringiensis",
+      "from_heading": "8.5 MICROBES AS BIOCONTROL AGENTS",
+      "passages": [
+        "BIO12L-CH08-P28",
+        "BIO12L-CH08-P29"
+      ]
+    },
+    {
+      "n": 13,
+      "name": "Trichoderma as a biocontrol agent of plant disease",
+      "from_heading": "8.5 MICROBES AS BIOCONTROL AGENTS",
+      "passages": [
+        "BIO12L-CH08-P30"
+      ]
+    },
+    {
+      "n": 14,
+      "name": "Baculoviruses as species-specific insect biocontrol agents",
+      "from_heading": "8.5 MICROBES AS BIOCONTROL AGENTS",
+      "passages": [
+        "BIO12L-CH08-P31"
+      ]
+    },
+    {
+      "n": 15,
+      "name": "Biofertilisers: nitrogen-fixing bacteria and mycorrhiza",
+      "from_heading": "8.6 MICROBES AS BIOFERTILISERS",
+      "passages": [
+        "BIO12L-CH08-P32",
+        "BIO12L-CH08-P33"
+      ]
+    },
+    {
+      "n": 16,
+      "name": "Cyanobacteria as biofertilisers in paddy fields",
+      "from_heading": "8.6 MICROBES AS BIOFERTILISERS",
+      "passages": [
+        "BIO12L-CH08-P34"
+      ]
+    }
+  ],
+  "note": "chapter_title in the input reads 'EXERCISES', which looks like an extraction error rather than the real chapter title. The chapter opening passage P01 has no heading in the supplied heading list (it starts at 8.1), so subtopic 1 carries from_heading 'unsure'. Sections 8.5 and 8.6 are each a run of short, separately named agents/organisms rather than one block, so Trichoderma (P30), baculoviruses (P31) and cyanobacteria (P34) were given their own named subtopics instead of being folded into the broader biocontrol and biofertiliser subtopics; the Ganga/Yamuna Action Plan passages (P21-P23) were likewise kept apart from the primary/secondary sewage treatment steps. Figure passages P05, P06, P15, P22, P26 have empty text and are placed with the text immediately preceding them. The summary passage P35 and the exercise passage P36 span the whole chapter; P35 is attached to subtopic 1 and P36 to subtopics 1 and 2."
+}

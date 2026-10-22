@@ -1,0 +1,33 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 3, "no_change": true},
+    {"n": 5, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "The mutual electric force between two charges is given by Coulomb’s law. How to calculate the force on a charge where there are not one but several charges around? Consider a system of n stationary charges q₁, q₂, q₃, ..., qₙ in vacuum. What is the force on q₁ due to q₂, q₃, ..., qₙ? Coulomb’s law is not enough to answer this question.  Recall that forces of mechanical origin add according to the parallelogram law of addition. Is the same true for forces of electrostatic origin?",
+      "fixes": [
+        {"wrong": "charges q1, q2, q3, ..., qn in vacuum", "right": "charges q₁, q₂, q₃, ..., qₙ in vacuum"},
+        {"wrong": "force on q1 due to q2, q3, ..., qn?", "right": "force on q₁ due to q₂, q₃, ..., qₙ?"}
+      ]
+    },
+    {"n": 8, "no_change": true},
+    {
+      "n": 9,
+      "corrected_text": "To better understand the concept, consider a system of three charges q₁, q₂ and q₃, as shown in Fig. 1.8(a). The force on one charge, say q₁, due to two other charges q₂, q₃ can therefore be obtained by performing a vector addition of the forces due to each one of these charges. Thus, if the force on q₁ due to q₂ is denoted by F₁₂, F₁₂ is given by Eq. (1.3)  even though other charges are present.",
+      "fixes": [
+        {"wrong": "three charges q1, q2 and q3", "right": "three charges q₁, q₂ and q₃"},
+        {"wrong": "say q1, due to two other charges q2, q3", "right": "say q₁, due to two other charges q₂, q₃"},
+        {"wrong": "force on q1 due to q2 is denoted by F12, F12 is given", "right": "force on q₁ due to q₂ is denoted by F₁₂, F₁₂ is given"}
+      ]
+    },
+    {
+      "n": 11,
+      "corrected_text": "In the same way, the force on q₁ due to q₃, denoted by F₁₃, is given by",
+      "fixes": [
+        {"wrong": "force on q1 due to q3, denoted by F13", "right": "force on q₁ due to q₃, denoted by F₁₃"}
+      ]
+    }
+  ],
+  "note": "n=1, 3, 5, 8 already matched the image exactly (q/2, q'/2 are genuine divisions, not exponents). n=7, 9, 11 had every charge/force subscript (q1/q2/q3/qn, F12/F13) flattened to plain digits; restored to real Unicode subscripts matching the image."
+}

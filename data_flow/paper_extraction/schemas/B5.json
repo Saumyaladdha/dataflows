@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/B5.json",
+  "title": "B5 agent output (b5-key-copier)",
+  "description": "Section 10/B5 'Agent output' line and the b5-key-copier agent file (Appendix B), including its worked examples. This agent is deliberately never given a paper file -- only the key image/text layer -- since the real scraped papers' own embedded 'correct answer' highlighting is measurably unreliable (7%-48% mismatch by subject, Master Plan Section 2.1.1 #2); the key is the sole trustworthy answer source.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["booklet_code", "rows", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "booklet_code": { "type": "string", "description": "The booklet code printed on the key itself." },
+        "rows": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/row" }
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ],
+  "definitions": {
+    "row": {
+      "type": "object",
+      "required": ["qno", "answer", "mark"],
+      "additionalProperties": false,
+      "properties": {
+        "qno": { "type": "integer", "minimum": 1 },
+        "answer": {
+          "type": "string",
+          "pattern": "^$|^[1-4](,[1-4])*$",
+          "description": "'1'-'4', a comma list when more than one option is accepted, or '' when the cell shows only a mark."
+        },
+        "mark": {
+          "oneOf": [{ "type": "string" }, { "type": "null" }],
+          "description": "Printed mark text (e.g. 'Bonus', 'Dropped', '*'), else null."
+        }
+      }
+    }
+  }
+}

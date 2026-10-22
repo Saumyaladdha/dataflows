@@ -1,0 +1,84 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [325, 245, 1540, 672],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "molecules into the gaseous phase inside the box. The rate of evaporation is constant. However, the rate of increase in pressure decreases with time due to condensation of vapour into water. Finally it leads to an equilibrium condition when there is no net evaporation. This implies that the number of water molecules from the gaseous state into the liquid state also increases till the equilibrium is attained i.e.,",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [250, 1042, 868, 1095],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [350, 1095, 765, 1148],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "At equilibrium the pressure exerted by the water molecules at a given temperature remains constant and is called the equilibrium vapour pressure of water (or just vapour pressure of water); vapour pressure of water increases with temperature. If the above experiment is repeated with methyl alcohol, acetone and ether, it is observed that different liquids have different equilibrium vapour pressures at the same temperature, and the liquid which has a higher vapour pressure is more volatile and has a lower boiling point."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "If we expose three watch glasses containing separately 1mL each of acetone, ethyl alcohol, and water to atmosphere and repeat the experiment with different volumes of the liquids in a warmer room, it is observed that in all such cases the liquid eventually disappears and the time taken for complete evaporation depends on (i) the nature of the liquid, (ii) the amount of the liquid and (iii) the temperature. When the watch glass is open to the atmosphere, the rate of evaporation remains constant but the molecules are dispersed into large volume of the room. As a consequence the rate of condensation from vapour to liquid state is much less than the rate of evaporation. These are open systems and it is not possible to reach equilibrium in an open system."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Water and water vapour are in equilibrium position at atmospheric pressure (1.013 bar) and at 100°C in a closed vessel. The boiling point of water is 100°C at 1.013 bar pressure. For any pure liquid at one atmospheric pressure (1.013 bar), the temperature at which the liquid and vapours are at equilibrium is called normal boiling point of the liquid. Boiling point of the liquid depends on the atmospheric pressure. It depends on the altitude of the place; at high altitude the boiling point decreases."
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "7.1.3 Solid – Vapour Equilibrium"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Let us now consider the systems where solids sublime to vapour phase. If we place solid iodine in a closed vessel, after sometime the vessel gets filled up with violet vapour and the intensity of colour increases with time. After certain time the intensity of colour becomes constant and at this stage equilibrium is attained. Hence solid iodine sublimes to give iodine vapour and the iodine vapour condenses to give solid iodine. The equilibrium can be represented as,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [930, 1742, 1262, 1798],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Other examples showing this kind of equilibrium are,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [930, 1832, 1502, 1942],
+      "text": "",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "194",
+    "CHEMISTRY",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so the continuation call rests on my own p002 output, which ended mid-sentence at '...due to addition of water'; this page opens 'molecules into the gaseous phase inside the box.', so it is a continuation. Fig.7.1 spans both columns at the top and is marked needs_special; its caption and the in-figure labels 'Anhydrous calcium chloride' and 'dish of water' are inside the bbox for A2S. Every double-half-arrow equation is marked needs_special because that glyph is missing from the text layer. The page ends on a complete equation line, so last_block_continues_on_next is false."
+}

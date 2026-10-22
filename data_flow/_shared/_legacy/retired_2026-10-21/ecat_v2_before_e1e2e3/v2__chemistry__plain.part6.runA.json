@@ -1,0 +1,148 @@
+{
+  "group": "v2__chemistry__plain.part6",
+  "ratings": [
+    {
+      "question_id": "2015_A#q033",
+      "concept": "Alkaline hydrolysis of esters: the rate rises with electron withdrawal at the acyl carbon and falls with steric bulk around it",
+      "cognitive_demand": "application",
+      "solution_structure": "",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires a reactivity criterion applied to each of four named species, demonstrated by the stem's \"Which one of the following esters gets hydrolyzed most easily under alkaline conditions?\", which fixes both the reaction and the comparison even though the species themselves are not recoverable from our record.",
+      "note": "All four options are stored as the identical placeholder string '[structure diagram]', so no option can be distinguished from any other in our record and the four esters being compared are unknown. Following rulebook section 7, the damage is not tagged as though it were the question's shape: the demand is filled because the stem alone fixes that one reactivity criterion is applied to four esters, but `solution_structure` is left in the unsure form, since whether one glance at the structures orders all four or each needs its own electronic and steric assessment depends entirely on the structures our record does not hold. `traps` is empty as rule 5 requires, and `source_damage_artifact` is recorded with a repair task: the four option structures must be re-extracted from the printed paper. The printed key (option 1) is tagged as printed and not re-judged."
+    },
+    {
+      "question_id": "2015_A#q034",
+      "concept": "Stereochemistry of SN1: the carbocation is attacked from both faces but the departing group shields one, so inversion exceeds retention and racemisation is partial",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "2",
+          "route": "'100% inversion' is the published answer to \"what is the stereochemical outcome of an SN2 reaction at a chiral centre\"; the stem names SN1, which proceeds through a planar cation"
+        },
+        {
+          "label": "overclaiming_quantifier",
+          "option": "3",
+          "route": "the quantifier is '100%' on racemization, and the counter-example is the key itself: because the leaving group shields the face it departs from, the inverted product exceeds the retained one and the mixture is not equimolar, so racemisation is partial rather than complete"
+        },
+        {
+          "label": "overclaiming_quantifier",
+          "option": "1",
+          "route": "the quantifier is '100%' on retention, and the counter-example is that retention is the minor pathway: front-face capture of the cation does occur, so the option is wrong only in asserting it as the whole outcome"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored fact about a named mechanism's stereochemical outcome, demonstrated by the stem's \"In an SN1 reaction on chiral centres\" being answered by option 4 'Inversion more than retention leading to partial racemization'.",
+      "note": "All three wrong options are absolutes quantified '100%', and that shared quantifier is the device on options 1 and 3, each of which describes a pathway that genuinely occurs in part. Option 2 carries the more specific label because its content is the published SN2 result, not merely an overstatement."
+    },
+    {
+      "question_id": "2015_A#q035",
+      "concept": "Zero-order kinetics: the units of the rate constant fix the order, and for a zero-order reaction the product formed is simply k times t",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["unit_sanity"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "multiplies the correct product kt by the stem's concentration of A: 0.6 x 10^-3 x 1200 x 5 = 3.60, which is the printed option, so the operation is treating the zero-order rate constant as if the rate were first order in A"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a rate law to be identified from the units of its constant and then evaluated over a converted time, demonstrated by the stem's \"0.6 x 10^-3 mole per second\" with \"after 20 minutes\" giving 0.6 x 10^-3 x 1200 = 0.72, which is option 2.",
+      "note": "Options 1 and 3 are left untagged. 0.36 and 1.08 are the key halved and the key times one and a half, and together with 0.72 they form an arithmetic spread in steps of 0.36; no operation on the stem's numbers reaches either (dropping the minutes-to-seconds conversion gives 0.012, and halving the rate constant is not an operation the stem offers), so rule 4 forbids a tag. The stem's unit for k, \"mole per second\", omits the volume that a zero-order constant carries (mol L^-1 s^-1); the printed key requires it to be read that way, and the unit is recorded here rather than treated as damage, since the order of the reaction is still recoverable from the unit having a concentration in it."
+    },
+    {
+      "question_id": "2015_A#q036",
+      "concept": "pH after mixing a strong acid with a strong base: take the excess, halve it for the doubled volume, then convert pOH to pH",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that the base is present at ten times the acid's concentration, so hydroxide is in excess and the mixture must be basic, strikes out options 2 and 4, both of which are below 7.",
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "4",
+          "route": "the NaOH term is left out of the mixture altogether: 0.01 M HCl on its own gives pH = -log(0.01) = 2.0, which is the printed option"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "takes the excess 0.1 - 0.01 = 0.09 as a hydrogen-ion concentration and reports -log(0.09) = 1.04, so the operation assigns the excess to the acid and also omits the halving on mixing equal volumes"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "treats the mixture as an exact neutralisation, i.e. takes 0.1 - 0.01 as zero rather than 0.09, and the neutral value 7.0 follows"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires an excess to be computed, diluted and then converted between pOH and pH, demonstrated by the stem's \"equal volumes of 0.1 m NaOH and 0.01 M HCl\" giving an excess hydroxide of 0.045 M, whose pOH of 1.35 makes option 3's 12.65.",
+      "note": "The stem prints \"0.1 m NaOH\" with a lower-case m against \"0.01 M HCl\"; the printed key requires both to be molarities, which is how it is read here. The term is recoverable, so no damage verdict is recorded, but the case of the unit should be repaired."
+    },
+    {
+      "question_id": "2015_A#q037",
+      "concept": "Isomer counting for an octahedral M(en)2X2 complex: cis and trans geometrical isomers, of which only the cis form is chiral, giving three in all",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["symmetry"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "3",
+          "route": "counts only the two geometrical isomers and omits the optical contribution: the cis form has no plane of symmetry and exists as a pair of enantiomers, and dropping that pair's second member yields the printed 2"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "doubles both geometrical isomers for optical activity, 2 x 2 = 4, so the operation treats the trans isomer as chiral although it has a plane of symmetry"
+        },
+        {
+          "label": "omitted_contribution",
+          "option": "4",
+          "route": "omits both contributions: neither the cis/trans distinction nor the optical pair is counted, leaving the single structure the printed 1 reports"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires the geometrical isomers to be enumerated first and then each tested for chirality, demonstrated by the stem's \"[Co(en)2Cl2]Cl\" giving a trans form and a cis form of which only the cis is resolvable, so the count in option 1 is 3.",
+      "note": "`symmetry` is recorded because the plane of symmetry in the trans isomer is what decides whether it contributes an optical pair, and that is exactly the step option 2 gets wrong. has_figure is set and a figure file is referenced, but the complex is given in formula form in the stem and the item is answerable from it, so the figure is redundant rather than missing."
+    },
+    {
+      "question_id": "2015_A#q038",
+      "concept": "Hydrogen bonding between HF molecules as the cause of its anomalously high boiling point, against the van der Waals trend that orders the rest of the halides",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that boiling point is set by the forces BETWEEN molecules strikes out options 1 and 3, which name an intramolecular bond energy and an atomic property respectively.",
+      "traps": [
+        {
+          "label": "true_but_out_of_scope",
+          "option": "1",
+          "route": "'The bond energy of HF molecules is greater than in other hydrogen halides' is true, but bond energy governs thermal stability of the molecule; the stem asks what explains a boiling point, which is set by intermolecular attraction"
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "3",
+          "route": "'The electronegativity of fluorine is much higher than for other elements in the group' is also true, and it is the atomic property that makes hydrogen bonding possible; it stops one step short of naming the intermolecular force the stem asks about"
+        },
+        {
+          "label": "new_trap",
+          "option": "2",
+          "route": "'The effect of nuclear shielding is much reduced in fluorine which polarizes the HF molecule' assembles real chapter vocabulary (nuclear shielding, polarisation) into a mechanism that appears nowhere in the source: reduced shielding is not a stated cause of molecular polarisation, and no step links it to a boiling point"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which stated property accounts for a granted anomaly, demonstrated by the stem's \"What explains the higher boiling point of hydrogen fluoride?\" being answered by option 4 'There is strong hydrogen bonding between HF molecules.'",
+      "note": "new_trap on option 2: the device is a fabricated EXPLANATION rather than a fabricated term. `fabricated_term` requires a term that does not exist, and every word in this option exists; what does not exist is the mechanism they are assembled into. A label such as fabricated_mechanism would cover it, and the distinction matters because the required evidence differs - for a term, that it appears nowhere in the source; for a mechanism, that no step of it is stated."
+    }
+  ],
+  "group_note": "Six chemistry items grouped on the reader's `structure` field, which read `plain`, and the shape holds for all six: each is a single question with four options and no printed statement block, list or pairing. The group splits on the demand axis by one test applied to all six - is the answer named by a stored fact, produced by applying a rule to cases, arrived at by computing, or decided by whether one thing accounts for another? q034 is `recall` (one stored mechanism outcome). q035 and q036 are `calculation` (a number is actually computed from the stem's numbers). q033 and q037 are `application` (a reactivity criterion, an isomer-counting rule). q038 is `explanatory_reasoning`, the only member whose stem asks \"What explains\", and the only one where two wrong options fail on relevance while being true. Solution structure separates `multi_step_dependent` from the rest by the rulebook's strict test, that step two needs step one's RESULT: q035 (identify the order from k's unit, convert 20 minutes to 1200 s, then multiply), q036 (excess, then halving, then pOH to pH) and q037 (enumerate the geometrical isomers, then test each for chirality) all meet it. q034 and q038 are `single_step`. q033's structure is left in the unsure form, which is the one judgement in this packet that the damaged source forced. q033 is also the only member carrying a verdict: all four of its options are stored as the identical placeholder '[structure diagram]', so under rule 5 its `traps` is empty and `source_damage_artifact` is recorded with a repair task, while the demand is still filled from what the stem alone fixes. Three other members carry spelling or unit irregularities (q035's \"mole per second\" for a zero-order constant, q036's lower-case \"0.1 m\", q037's redundant figure flag) and none is given a damage verdict, because in each the intended quantity is recoverable and the printed key reads consistently with it; those are recorded as repairs in the individual notes. Elimination was recorded twice, both times on a fact cheaper than the answer: the tenfold excess of base in q036 (striking the two acidic options) and the intermolecular origin of boiling points in q038 (striking the two intramolecular ones). q035 carries `unit_sanity` instead, because the unit of k is what fixes the rate law, and q037 carries `symmetry`, because the trans isomer's plane of symmetry is what decides whether it doubles. On the trap axis the recurring device across the computational members is a term dropped from a correct route - `omitted_contribution` three times (the NaOH in q036, the optical pair and then both distinctions in q037) - and the recurring device across the conceptual members is a true statement that answers a neighbouring question, labelled `true_but_out_of_scope` where it fails on relevance (q038 options 1 and 3) and `neighbouring_question_answer` where it is the published result for a different mechanism (q034's SN2 option). q034 is the only member built on quantifiers, and `overclaiming_quantifier` is used there twice with both the quantifier ('100%') and the counter-example named, as that label requires. One `new_trap` was needed, on q038 option 2, for a fabricated mechanism assembled from real vocabulary, which `fabricated_term` cannot cover because no single term in it is invented; it is described in that question's note. Options left deliberately untagged are q035's 1 and 3, where the spread cannot be reached by any operation on the stem's numbers, and all of q033's, where the source is damaged. No trap sits on any official answer, and no key is re-judged."
+}

@@ -1,0 +1,57 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "14.13 You are given two circuits as shown in Fig. 14.38, which consist\nof NAND gates. Identify the logic operation carried out by the two\ncircuits.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [170, 425, 1210, 670],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "14.14 Write the truth table for circuit given in Fig. 14.39 below consisting\nof NOR gates and identify the logic operation (OR, AND, NOT) which\nthis circuit is performing."
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [385, 800, 990, 980],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "(Hint: A = 0, B = 1 then A and B inputs of second NOR gate will be 0\nand hence Y=1. Similarly work out the values of Y for other\ncombinations of A and B. Compare with the truth table of OR, AND,\nNOT gates and find the correct one.)"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "14.15 Write the truth table for the circuits given in Fig. 14.40 consisting of\nNOR gates only. Identify the logic operations (OR, AND, NOT) performed\nby the two circuits."
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [160, 1225, 1210, 1535],
+      "text": "",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "499",
+    "Semiconductor Electronics:",
+    "Materials, Devices and",
+    "Simple Circuits",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null, so the continuation judgement rests on my own p032 output, which ended on the complete sentence 'Hence identify the exact logic operation carried out by this circuit.'; this page opens a fresh numbered exercise, so first_block_continues_from_previous is false. Three circuit diagrams (Fig. 14.38, Fig. 14.39, Fig. 14.40) are deferred to A2S as figure blocks, each bounding box including its (a)/(b) panel labels and its FIGURE caption. The lower third of the page below Fig. 14.40 is blank, and the page ends with that figure, so last_block_continues_on_next is false."
+}

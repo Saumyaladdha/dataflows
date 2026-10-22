@@ -1,0 +1,104 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "quantities can be added or subtracted which have the same dimensions.  A thorough understanding of dimensional analysis helps us in deducing certain relations among different physical quantities and checking the derivation, accuracy and dimensional consistency or homogeneity of various mathematical expressions.  When magnitudes of two or more physical quantities are multiplied, their units should be treated in the same manner as ordinary algebraic symbols. We can cancel identical units in the numerator and denominator.  The same is true for dimensions of a physical quantity.  Similarly, physical quantities represented by symbols on both sides of a mathematical equation must have the same dimensions.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "1.6.1 Checking the Dimensional Consistency of Equations"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The magnitudes of physical quantities may be added together or subtracted from one another only if they have the same dimensions.  In other words, we can add or subtract similar physical quantities. Thus, velocity cannot be added to force, or an electric current cannot be subtracted from the thermodynamic temperature. This simple principle called the principle of homogeneity of dimensions in an equation is extremely useful in checking the correctness of an equation.  If the dimensions of all the terms are not same, the equation is wrong.  Hence, if we derive an expression for the length (or distance) of an object, regardless of the symbols appearing in the original mathematical relation, when all the individual dimensions are simplified, the remaining dimension must be that of length.  Similarly, if we derive an equation of speed, the dimensions on both the sides of equation, when simplified, must be of length/time, or [L T–1]."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Dimensions are customarily used as a preliminary test of the consistency of an equation, when there is some doubt about the correctness of the equation. However, the dimensional consistency does not guarantee correct equations. It is uncertain to the extent of dimensionless quantities or functions. The arguments of special functions, such as the trigonometric, logarithmic and exponential functions must be dimensionless. A pure number, ratio of similar physical quantities, such as angle as the ratio (length/length), refractive index as the ratio (speed of light in vacuum/speed of light in medium) etc., has no dimensions."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Now we can test the dimensional consistency or homogeneity of the equation"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1080,
+        420,
+        1425,
+        462
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "for the distance x travelled by a particle or body in time t which starts from the position x0 with an initial velocity v0 at time t = 0 and has uniform acceleration a along the direction of motion."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The dimensions of each term may be written as"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1010,
+        635,
+        1360,
+        830
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "As each term on the right hand side of this equation has the same dimension, namely that of length, which is same as the dimension of left hand side of the equation, hence this equation is a dimensionally correct equation."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "It may be noted that a test of consistency of dimensions tells us no more and no less than a test of consistency of units, but has the advantage that we need not commit ourselves to a particular choice of units, and we need not worry about conversions among multiples and sub-multiples of the units.  It may be borne in mind that if an equation fails this consistency test, it is proved wrong, but if it passes, it is not proved right.  Thus, a dimensionally correct equation need not be actually an exact (correct) equation, but a dimensionally wrong (incorrect) or inconsistent equation must be wrong."
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "Example 1.3 Let us consider an equation\n(1/2) m v2 = m g h\nwhere m is the mass of the body, v its velocity, g  is the acceleration due to gravity and h is the height.  Check whether this equation is dimensionally correct."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Answer  The dimensions of LHS are"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1075,
+        1880,
+        1455,
+        1950
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "8",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Judged first_block_continues_from_previous from page 7, which I read myself in this batch (previous_page_last_block was null): page 7 ends mid-sentence with 'as only those physical' and this page opens 'quantities can be added or subtracted'. Blocks 6, 9 and 14 are display equations left for the special transcriber with bounding boxes. Block 4 runs across the column break. Block 12 is the tinted Example 1.3 box, kept as one box block as the step requires; the stacked fraction in its display line is garbled in the text layer ('1 2 m v m g h 2 =') and is written linearly as '(1/2) m v2 = m g h' from the image. The page ends mid-worked-answer for Example 1.3 - only the LHS dimensions are given and page 9 opens with 'The dimensions of RHS are' - but the final equation block itself is complete ('= [M L2 T-2]'), so last_block_continues_on_next is false. Text layer otherwise matches the image."
+}

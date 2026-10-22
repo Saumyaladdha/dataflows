@@ -1,0 +1,111 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "What factors can be exploited to alter the composition of an equilibrium mixture? The last question in particular is important when choosing conditions for synthesis of industrial chemicals such as H2, NH3, CaO etc.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "To answer these questions, let us consider a general reversible reaction:"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [410, 508, 698, 558],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "where A and B are the reactants, C and D are the products in the balanced chemical equation. On the basis of experimental studies of many reversible reactions, the Norwegian chemists Cato Maximillian Guldberg and Peter Waage proposed in 1864 that the concentrations in an equilibrium mixture are related by the following equilibrium equation,"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [300, 868, 528, 972],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "(7.1) where Kc is the equilibrium constant and the expression on the right side is called the equilibrium constant expression."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The equilibrium equation is also known as the law of mass action because in the early days of chemistry, concentration was called “active mass”. In order to appreciate their work better, let us consider reaction between gaseous H2 and I2 carried out in a sealed vessel at 731K."
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [285, 1325, 718, 1408],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Six sets of experiments with varying initial conditions were performed, starting with only gaseous H2 and I2 in a sealed reaction vessel in first four experiments (1, 2, 3 and 4) and only HI in other two experiments (5 and 6). Experiment 1, 2, 3 and 4 were performed taking different concentrations of H2 and / or I2, and with time it was observed that intensity of the purple colour remained constant and equilibrium was attained. Similarly, for experiments 5 and 6, the equilibrium was attained from the opposite direction."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Data obtained from all six sets of experiments are given in Table 7.2."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "It is evident from the experiments 1, 2, 3 and 4 that number of moles of dihydrogen reacted = number of moles of iodine reacted = ½ (number of moles of HI formed). Also, experiments 5 and 6 indicate that,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1085, 978, 1352, 1032],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Knowing the above facts, in order to establish a relationship between concentrations of the reactants and products, several combinations can be tried. Let us consider the simple expression,"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [935, 1212, 1348, 1268],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "It can be seen from Table 7.3 that if we put the equilibrium concentrations of the reactants and products, the above expression",
+      "continues_on_next": true
+    },
+    {
+      "n": 16,
+      "kind": "heading",
+      "text": "Table 7.2  Initial and Equilibrium Concentrations of H2, I2 and HI"
+    },
+    {
+      "n": 17,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [235, 1452, 1522, 1978],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "EQUILIBRIUM",
+    "199",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p007 output, whose last block was the mid-paragraph §7.3 list of questions, which this page continues with 'What factors can be exploited...'. Blocks are in layout reading order (left column, then right column, then the page-wide Table 7.2 printed below both columns), so the page's last block is the table while the running prose that breaks mid-sentence onto the next page is block 15; last_block_continues_on_next describes that prose flow and the continues_on_next mirror is attached to block 15, not to the trailing table float. Equations containing the double-half-arrow glyph or built as stacked fractions are marked needs_special, as is every other displayed expression line on the page, including the two bracket expressions (blocks 12 and 14) — I use one uniform rule for the chapter: a displayed expression line is always kind equation with needs_special, while an expression sitting inline inside a prose sentence stays in the paragraph text with the ⇌ glyph read from the image."
+}

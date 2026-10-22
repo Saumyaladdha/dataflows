@@ -1,0 +1,2144 @@
+# config/steps.yaml — skeleton. Complete input_fields, output_schema, check, fallback, flags and safe_default from SPEC Sections 8–14.
+
+S0:
+  stage: "0"
+  name: "Intake check"
+  item: "inputs"
+  agent: "script"
+  runs: 1
+  needs: "-"
+  # No agent is ever called for S0 (pure SCRIPT step) — input_fields stays empty per Rule 3
+  # (it lists fields an AGENT call may see; there is no agent call here).
+  input_fields: []
+  output_schema: schemas/S0.json
+  check: scripts/checks/S0.py
+  # No agent → no retry/second-opinion/adjudicator chain. intake_check.py either finds the
+  # item (status pass) or it does not (status blocked, flag raised); there is no judgement
+  # to retry or adjudicate.
+  fallback: []
+  flags:
+    S0_MISSING_INPUT: blocker
+  # "On failure" (8): each missing item is just flagged blocker for that book/sitting; the
+  # rest of the run continues. There is no provisional value to substitute for a file that
+  # was never collected, so there is no safe default — only the blocker flag.
+  safe_default: null
+  codebook_file: null
+
+A1:
+  stage: "A"
+  name: "Register the books"
+  item: "book"
+  agent: "a1-book-registrar"
+  runs: 1
+  needs: "S0"
+  # Matches the a1-book-registrar "Input" block (Appendix B) exactly.
+  input_fields: [file, folder_edition_hint, page_images, text_layer]
+  output_schema: schemas/A1.json
+  check: scripts/checks/A1.py
+  # On failure (9/A1): retry once. No second opinion or adjudicator for this step — a
+  # failed check resolves to a field-level default (see safe_default), not an adjudicated
+  # value.
+  fallback: [retry]
+  flags:
+    A1_REGISTER_DRAFT: low      # every row, always
+    A1_REPRINT_NOT_FOUND: high  # no reprint line found after retry
+    A1_EDITION_MISMATCH: high   # edition_seen != manifest edition, after retry
+  # Two distinct field-level defaults, not one whole-item default:
+  safe_default:
+    reprint_text_exact: "unknown"
+    edition_seen: "<the manifest row's edition>"
+  codebook_file: null
+
+A2:
+  stage: "A"
+  name: "Read the pages"
+  item: "page"
+  agent: "a2-page-reader"
+  runs: 1
+  needs: "A1"
+  # Matches the a2-page-reader "Input" block (Appendix B) exactly. `chapter_num` was added
+  # 2026-10-10 (docs/OPEN_QUESTIONS.md): the real inputs/ncert/ layout is one PDF per chapter, so
+  # a book's pages are no longer uniquely addressed by page number alone once every chapter in a
+  # book is read, not just A1's single representative chapter.
+  input_fields: [book_id, chapter_num, page, image, text_layer, previous_page_last_block]
+  output_schema: schemas/A2.json
+  check: scripts/checks/A2.py
+  # On failure (9/A2): retry once. A continuation (first/last block) disagreement goes to
+  # the adjudicator with both page images. A text-layer mismatch is resolved deterministically
+  # by the script (keep the text layer) — not by an adjudicator. An unreadable page blocks
+  # with no safe default.
+  fallback: [retry, adjudicator]
+  flags:
+    A2_JOIN_ADJUDICATED: normal
+    A2_TEXT_MISMATCH: normal
+    A2_UNREADABLE: blocker
+  safe_default:
+    on_text_layer_mismatch: "keep the text-layer text"
+    on_unreadable_page: null   # blocked; no safe default
+  codebook_file: null
+
+A2S:
+  stage: "A"
+  name: "Transcribe special blocks"
+  item: "block"
+  agent: "a2-special-transcriber"
+  runs: 1
+  needs: "A2"
+  # Matches the a2-special-transcriber "Input" block (Appendix B) exactly.
+  input_fields: [kind, image, text_layer, table_continues_from_previous]
+  output_schema: schemas/A2S.json
+  check: scripts/checks/A2S.py
+  # On failure (9/A2S): retry once; then keep the crop with empty text. No second opinion,
+  # no adjudicator for this step.
+  fallback: [retry]
+  flags:
+    A2_SPECIAL_UNREAD: normal
+  safe_default: "keep the crop image; text left empty"
+  codebook_file: null
+
+
+A2C:
+  stage: A
+  name: Read a drawn chemical structure into SMILES
+  item: an A2 figure/equation block whose artwork is a structural formula or a reaction scheme
+  agent: script | a2c-structure-transcriber
+  runs: 1
+  needs: A2
+  input_fields:
+  - item_id
+  - kind
+  - image
+  - caption
+  - labels
+  output_schema: schemas/A2C.json
+  check: scripts/checks/A2C.py
+  fallback:
+  - retry
+  flags:
+    A2C_INCOMPLETE: normal
+    A2C_UNSURE: normal
+  safe_default: leave the block without SMILES; the export keeps showing the book's own drawing
+  codebook_file: null
+  # NOT in docs/SPEC.md: a deliberate, owner-approved extension beyond Stage A, same standing as
+  # A2S/A2B/A2L/A2N. It exists because the exports can already SHOW a structure faithfully -- the
+  # Chemistry PDFs carry vector artwork, so a ring is extracted as SVG and matches the book
+  # exactly -- but nothing can yet MATCH one. Linking a NEET question to the chapter that draws
+  # the same species needs the structure as data, and reading a drawn ring into SMILES is a
+  # judgement about a picture, which under Section 2 belongs to an agent and not to a script.
+A2B:
+  stage: "A"
+  name: "Backfill bold terms onto already-read pages"
+  item: "A2 page already read, whose blocks have not yet been checked for bold terms"
+  # =========================================================================================
+  # DELIBERATE EXTENSION BEYOND THE SPEC — owner-approved, 2026-10-14.
+  #
+  # NCERT prints its own key vocabulary in bold deliberately -- a glossary built into the
+  # running prose, and exactly the terms a question is likeliest to test. `bold_terms` was added
+  # to A2's own schema so every FUTURE page captures it directly. This step is the backfill for
+  # the ~1,400 pages already read and checked before that field existed.
+  #
+  # It NEVER edits the original A2 output (CLAUDE.md: "never edit an agent's output"). It reads
+  # that file only as read-only reference -- the page's existing blocks, `n`/`kind`/`text`
+  # unchanged -- and writes a SEPARATE file naming which of those blocks have bold words and
+  # what they are. A consumer that wants both reads A2's output and A2B's output side by side,
+  # joined on item_id and block n. Nothing downstream is forced to use this file; nothing it
+  # is missing blocks it.
+  #
+  # Item scope: only blocks of kind paragraph/box/list (the kinds bold prose can live in) on a
+  # page whose A2 read has already PASSED. A page still in A2's own queue is not this step's
+  # business -- it will carry bold_terms directly once A2 reads it.
+  # =========================================================================================
+  agent: "script | a2b-bold-marker"
+  runs: 1
+  needs: "A2"
+  input_fields: ["item_id", "image", "blocks"]
+  output_schema: "schemas/A2B.json"
+  check: "scripts/checks/A2B.py"
+  fallback: ["retry"]
+  flags:
+    A2B_INCOMPLETE: "normal"   # a run that failed to cover every asked block after retry
+  safe_default: "leave bold_terms unbackfilled for this page; raise A2B_INCOMPLETE"
+  codebook_file: null
+
+A2I:
+  stage: "A"
+  name: "Backfill italic terms onto already-read pages"
+  item: "A2 page already read, whose blocks have not yet been checked for italic terms"
+  # =========================================================================================
+  # DELIBERATE EXTENSION BEYOND THE SPEC — owner-approved, 2026-10-15, same standing as A2B.
+  # This step is A2B's twin for the OTHER typesetting NCERT uses deliberately.
+  #
+  # Why it exists. NCERT italicises a different class of thing from what it bolds, and it is
+  # just as intentional: its own one-line definition of the thing a section is about, the
+  # foreign word an English term descends from, a species name, a question put to the reader.
+  # Until now italics were captured NOWHERE and were actively discarded -- three separate agent
+  # briefs told the reader to recognise italics only so it could throw them away, and A2's block
+  # schema is `additionalProperties: false` with no italic field, so an agent could not have
+  # recorded them even if it tried.
+  #
+  # The loss was measured, not hypothesised. steps/A2B/out/PHY12O-ch01-p001.runA.json found no
+  # bold prose on the page at all and wrote into its free-text note: "n=4's closing sentence
+  # (\"Electrostatics deals with...\") is italic, not bold. n=6's \"elektron\" and \"amber\" are
+  # italic, not bold." That is the chapter's own definition of electrostatics and the etymology
+  # of "electricity" -- both correctly judged by the agent, both unrecordable, both lost. The
+  # italicised sentence is very often the exact sentence a PYQ question quotes, which is why
+  # this is worth a step rather than a note.
+  #
+  # `italic_terms` was added to A2's own schema so every FUTURE page captures it directly
+  # (schemas/A2.json). This step is the backfill for the ~1,400 pages already read and checked
+  # before that field existed, so none of them has to be re-read.
+  #
+  # It NEVER edits the original A2 output (CLAUDE.md: "never edit an agent's output"). It reads
+  # that file only as read-only reference -- the page's existing blocks, `n`/`kind`/`text`
+  # unchanged, plus the `bold_terms` already decided for them -- and writes a SEPARATE file
+  # under steps/A2I/out/ naming which of those blocks have italic words and what they are. A
+  # consumer that wants both reads A2's output, A2B's output and A2I's output side by side,
+  # joined on item_id and block n. Nothing downstream is forced to use this file.
+  #
+  # Why `bold_terms` is in the agent's input: bold and italic are mutually exclusive
+  # typesettings of the same characters, so the agent must be able to see what is already
+  # claimed as bold in order not to repeat it, and scripts/checks/A2I.py enforces that -- the
+  # one check A2I has that A2B does not.
+  #
+  # Item scope: only blocks of kind paragraph/box/list (the kinds italic prose can live in) on a
+  # page whose A2 read has reached a usable status (pass or flagged -- see
+  # step_plugins._a2_backfill_pages for exactly why flagged counts).
+  # =========================================================================================
+  agent: "script | a2i-italic-marker"
+  runs: 1
+  needs: "A2"
+  input_fields: ["item_id", "image", "blocks"]
+  output_schema: "schemas/A2I.json"
+  check: "scripts/checks/A2I.py"
+  fallback: ["retry"]
+  flags:
+    A2I_INCOMPLETE: "normal"   # a run that failed to cover every asked block after retry
+  safe_default: "leave italic_terms unbackfilled for this page; raise A2I_INCOMPLETE"
+  codebook_file: null
+
+A2L:
+  stage: "A"
+  name: "Measure the printed layout of an already-read page"
+  item: "A2 page already read, whose printed arrangement has not been measured"
+  # =========================================================================================
+  # DELIBERATE EXTENSION BEYOND THE SPEC — owner-approved, 2026-10-14.
+  #
+  # Every other Stage A step records what a page SAYS. None records how it is ARRANGED, and the
+  # arrangement is real, checkable information printed on the page: NCERT's chapter-opening page
+  # puts the section-contents panel in a LEFT column with the opening prose running beside it on
+  # the RIGHT; a rule bar and a banner span the full width; captions are centred under their
+  # artwork while prose is justified. The review exporter was stacking every block in one flat
+  # column because that arrangement existed nowhere in the data, so a reviewer comparing the
+  # extraction against the real page had to mentally re-map it every time.
+  #
+  # Why an agent and not a script: column structure, type hierarchy and panel colour are things
+  # you SEE. The alternative tried first was hand-sampling pixels from one chapter's opener,
+  # which produced correct colours for that one book and generalises to nothing — there are
+  # ~100 chapters across three subjects, each with its own palette and opener design.
+  #
+  # Why RATIOS and FRACTIONS, not pixels and points: `size_rel` is each element's text size
+  # divided by the page's own body-text size (body = 1.0), and every bbox is a fraction of page
+  # width/height. Both are judgements an agent can actually make reliably from an image, and
+  # both survive a change of render DPI. The check rejects a size_rel outside 0.4–4.0 precisely
+  # because the likeliest misreading is an agent reporting a pixel height instead of a ratio,
+  # and a number is otherwise indistinguishable from a correct one downstream.
+  #
+  # It NEVER edits the original A2 output (CLAUDE.md: "never edit an agent's output"). It reads
+  # the page image plus a read-only block list (n, kind, and a short text_head used ONLY to
+  # match a block to a position — not a transcription) and writes its own file under
+  # steps/A2L/out/ keyed by the same item_id. A consumer joins the two on block n.
+  # =========================================================================================
+  agent: "script | a2l-layout-reader"
+  needs: "A2"
+  flags:
+    A2L_INCOMPLETE: "normal"
+
+A2N:
+  stage: "A"
+  name: "Backfill correct inline notation (exponents, subscripts, radicals)"
+  item: "A2 page already read, whose blocks have not yet been checked for flattened notation"
+  # =========================================================================================
+  # DELIBERATE EXTENSION BEYOND THE SPEC — owner-approved, 2026-10-14, same standing as A2B.
+  #
+  # Real, serious defect found by the owner reviewing a completed chapter: an earlier agent
+  # brief told A2 agents to copy the page's text_layer exactly, but the text_layer itself has
+  # already lost every superscript (NCERT's "2.0 x 10^11 Pa" extracts as "2.0 x 1011 Pa").
+  # Agents then flattened CORRECT transcriptions to match it and pass the check -- storing a
+  # materially wrong number as verified NCERT text that D4 later quotes as fact. Separately,
+  # square-root signs were found silently dropped from running prose with no flag at all
+  # (measured: zero "√" characters anywhere in one 50-page chapter's output). Measured scope at
+  # the time this was added: 106 pages corpus-wide carry the flattened-exponent pattern.
+  #
+  # scripts/checks/A2.py already folds real Unicode superscripts before comparing (so a CORRECT
+  # transcription passes just as well as the broken layer form) -- that half of the fix already
+  # existed in the check; the agent brief just never said so. The brief is now corrected for
+  # every FUTURE page. This step is the backfill for pages already read and checked before that
+  # correction landed.
+  #
+  # It NEVER edits the original A2 output (CLAUDE.md: "never edit an agent's output"). It reads
+  # that file only as read-only reference and writes a SEPARATE file giving corrected text for
+  # whichever blocks needed it, keyed by the same item_id and block n. A consumer that wants the
+  # corrected text reads both files side by side; nothing is forced to use this file.
+  # =========================================================================================
+  agent: "script | a2n-notation-fixer"
+  runs: 1
+  needs: "A2"
+  input_fields: ["item_id", "image", "blocks"]
+  output_schema: "schemas/A2N.json"
+  check: "scripts/checks/A2N.py"
+  fallback: ["retry"]
+  flags:
+    A2N_INCOMPLETE: "normal"   # a run that failed to cover every asked block after retry
+    A2N_CORRECTED: "normal"    # permanent provenance marker: this page's stored text had a real notation defect, now corrected in a sibling file
+  safe_default: "leave notation unbackfilled for this page; raise A2N_INCOMPLETE"
+  codebook_file: null
+A2R:
+  stage: A
+  name: Review a rendered export page against the book page
+  item: one page of one chapter's rendered export
+  agent: script | a2r-render-reviewer
+  runs: 1
+  needs: A2
+  input_fields:
+  - item_id
+  - original_image
+  - rendered_image
+  output_schema: schemas/A2R.json
+  check: scripts/checks/A2R.py
+  fallback:
+  - retry
+  flags:
+    A2R_CONTENT_MISSING: high
+    A2R_DIFFERENCES: normal
+  safe_default: record the page as unreviewed; never treat an unreviewed page as matching
+  codebook_file: null
+  # NOT in docs/SPEC.md: a deliberate, owner-approved extension, same standing as A2S/A2B/A2L/A2N/
+  # A2C. It exists because every other check in this project looks at the INPUT, so defects in the
+  # OUTPUT -- a structure cropped in half, a worked example printed twice, half a page blank where
+  # content should be -- were shipped by builds that reported success and were found only when the
+  # owner read the finished PDF. The scripted checkers (scripts/check_*_export.py) catch what can
+  # be stated as a rule; a cropped benzene ring cannot be, which is why this is an agent.
+A3:
+  stage: "A"
+  name: "Split into passages"
+  item: "section"
+  agent: "a3-passage-splitter"
+  runs: 1
+  needs: "A2S"
+  # Matches the a3-passage-splitter "Input" block (Appendix B) exactly. Each entry of `blocks`
+  # also carries a `page` field (2026-10-10, docs/OPEN_QUESTIONS.md) so the SCRIPT half can compute
+  # page_start/page_end on the passage records it writes; it isn't something the agent acts on.
+  input_fields: [book_id, chapter, section_heading, blocks]
+  output_schema: schemas/A3.json
+  check: scripts/checks/A3.py
+  # On failure (9/A3): retry once; then the safe default "one passage per block". No
+  # second opinion, no adjudicator for this step.
+  fallback: [retry]
+  flags:
+    A3_DEFAULT_CUTS: normal
+    # A section whose blocks span a page A2 never read. A3 cannot tell that gap from a real
+    # page break, so it joins the text either side and the section can acquire content from a
+    # different topic -- along with losing the heading that announced the change, which lived
+    # on the unread page. Blocker, not a warning: the output would not be incomplete, it would
+    # be wrong, and wrong evidence is what Stage D hands an agent as an answer's NCERT basis.
+    A3_SECTION_SPANS_UNREAD_PAGE: blocker
+  safe_default: "one passage per block"
+  codebook_file: null
+
+A4:
+  stage: "A"
+  name: "Write the subtopic list"
+  item: "chapter"
+  agent: "a4-subtopic-writer"
+  runs: 2
+  needs: "A3"
+  # Matches the a4-subtopic-writer "Input" block (Appendix B) exactly.
+  input_fields: [chapter, chapter_title, headings, passages]
+  output_schema: schemas/A4.json
+  check: scripts/checks/A4.py
+  # On failure (9/A4): retry once for a run that fails its own checks; run A and run B are
+  # the step's built-in second opinion (runs: 2); the script merges them by heading/passage
+  # overlap, and a disagreement (or match rate < 70%) goes to the adjudicator.
+  fallback: [retry, second_opinion, adjudicator]
+  # Base severity is "normal"; step_plugins.A4Plugin.check() escalates to "high" in code when
+  # the run A/run B match rate is < 70% (lib/flags.py's raise_flag only accepts a plain severity
+  # literal -- blocker|high|low|normal -- so the "high if match rate < 70%" condition can't live
+  # in this value itself; real bug found and fixed 2026-10-11, see report).
+  flags:
+    A4_SUBTOPICS_DRAFT: normal
+  # Every chapter's list is provisional — Stage F must approve every subtopic list
+  # (approval: "pending" on write) — so there is no "safe" unflagged outcome, only the
+  # adjudicated/merged list, always flagged A4_SUBTOPICS_DRAFT.
+  safe_default: "adjudicator-merged list (always flagged, never silently accepted)"
+  codebook_file: null
+
+A5:
+  stage: "A"
+  name: "Link passages to subtopics"
+  item: "passage"
+  agent: "script | a5-passage-linker"
+  runs: 1
+  needs: "A4"
+  # Matches the a5-passage-linker "Input" block (Appendix B) exactly. Latest-edition
+  # passages never reach the agent at all (SCRIPT copies A4's assignment directly); the
+  # agent is called only for older passages the script's heading match doesn't decide.
+  input_fields: [passage, subtopics]
+  output_schema: schemas/A5.json
+  check: scripts/checks/A5.py
+  # On failure (9/A5): unsure -> adjudicator -> still unsure -> "none" + flag. No retry or
+  # second opinion named for this step.
+  fallback: [adjudicator]
+  flags:
+    A5_UNSURE: normal
+  safe_default: "none"
+  codebook_file: null
+
+A6:
+  stage: "A"
+  name: "Pair old and new passages"
+  item: "chapter"
+  agent: "script + x-adjudicator"
+  runs: 1
+  needs: "A5"
+  # There is no dedicated A6 agent file; pair_passages.py (SCRIPT) does the Jaccard/Hungarian
+  # matching itself and calls the shared x-adjudicator only for weak pairs (similarity
+  # 0.50-0.85). These are the fields that adjudicator call may see — no whole book, no
+  # other chapters.
+  input_fields: [chapter_id, old_passage, new_passage, similarity]
+  output_schema: schemas/A6.json
+  check: scripts/checks/A6.py
+  # On failure (9/A6): weak-and-unsure keeps the candidate as a pair. No retry, no second
+  # opinion — the adjudicator is the only non-script link, and only for weak pairs.
+  fallback: [adjudicator]
+  flags:
+    A6_WEAK_PAIR: normal
+  safe_default: "pair"
+  codebook_file: null
+
+A7:
+  stage: "A"
+  name: "Find the differences"
+  item: "pair"
+  agent: "script"
+  runs: 1
+  needs: "A6"
+  # Pure SCRIPT step (diff_pairs.py); no agent is ever called, so no input_fields apply.
+  input_fields: []
+  output_schema: schemas/A7.json
+  check: scripts/checks/A7.py
+  # Section 9/A7 has no "On failure" text at all, no Checks line and no flag code appears
+  # for A7 in the Section 16 catalogue. A word-level diff after normalise_quote is
+  # deterministic — there is nothing to retry, adjudicate or default.
+  fallback: []
+  flags: {}
+  safe_default: null
+  codebook_file: null
+
+A8:
+  stage: "A"
+  name: "Judge one change"
+  item: "pair"
+  agent: "a8-change-judge"
+  runs: 2
+  needs: "A7"
+  # Matches the a8-change-judge "Input" block (Appendix B) exactly.
+  input_fields: [old_passage, new_passage, diff]
+  output_schema: schemas/A8.json
+  check: scripts/checks/A8.py
+  # On failure (9/A8): the step's built-in second opinion is run A/run B (runs: 2); the
+  # check is "runs A and B agree on change_type"; disagreement goes straight to the
+  # adjudicator (no retry step is named in the A8 text).
+  fallback: [second_opinion, adjudicator]
+  flags:
+    A8_ADJUDICATED: normal     # runs disagreed
+    A8_FACT_CHANGE: normal     # every non-wording change, regardless of adjudication
+    A8_WORDING_RISK: normal    # wording_only with could_flip_an_answer: true
+  # change_type's own allowed values include "unsure" (Agent output line, Section 9/A8);
+  # an adjudicator that still can't decide leaves change_type "unsure", flagged
+  # A8_ADJUDICATED — A8 defines no other safe default.
+  safe_default: "change_type: unsure (flagged A8_ADJUDICATED)"
+  codebook_file: null
+
+A9:
+  stage: "A"
+  name: "Write the change log"
+  item: "chapter"
+  agent: "script"
+  runs: 1
+  needs: "A8"
+  # Pure SCRIPT step (write_change_log.py); no agent is ever called, so no input_fields
+  # apply.
+  input_fields: []
+  output_schema: schemas/A9.json
+  check: scripts/checks/A9.py
+  # Section 9/A9 names no "On failure" text and no flag code appears for A9 in the Section
+  # 16 catalogue. Writing one row per non-identical A8 result (and one deleted_topics row
+  # per removed passage) is deterministic given A8's already-resolved output.
+  fallback: []
+  flags: {}
+  safe_default: null
+  codebook_file: null
+
+B1:
+  stage: "B"
+  name: "Register the paper"
+  item: "file"
+  agent: "b1-paper-registrar"
+  runs: 1
+  needs: "S0"
+  # Matches the b1-paper-registrar "Input" block (.claude/agents/b1-paper-registrar.md) exactly,
+  # which also matches Section 10/B1 "Reads": cover page and first question page images; their
+  # text layer; the manifest row.
+  input_fields: [file, manifest_row, page_images, text_layer]
+  output_schema: schemas/B1.json
+  check: scripts/checks/B1.py
+  # On failure (10/B1): disagreement with the manifest is resolved deterministically by the
+  # SCRIPT using the cover text (printed evidence beats the typed manifest) — no retry, second
+  # opinion or adjudicator is named in the B1 step text, unlike A1's explicit "retry once".
+  fallback: []
+  flags:
+    B1_REGISTER_DRAFT: low        # every row, always
+    B1_MANIFEST_MISMATCH: normal  # cover text disagrees with the manifest row
+  # booklet_code must be confirmed from the page's own printed content, never trusted from a
+  # folder/file name (real fabricated case: 2021's folder/booklet code "GAJAHA-M1" does not
+  # exist in the real key's actual codes M1/N1/O1 — see b1-paper-registrar.md's worked example
+  # and docs/MASTER_PLAN.md Section 2.1.1 #4). When the page itself doesn't independently confirm
+  # a code, the agent sets trust: "unsure" and keeps booklet_code to whatever (if anything) the
+  # page shows — never echoing the folder/manifest value as if confirmed.
+  safe_default:
+    on_mismatch: "use the cover text (printed evidence), not the manifest row"
+    on_unconfirmed_code: "trust: unsure; booklet_code stays whatever the page itself shows (possibly empty); never promote the folder/manifest value"
+  codebook_file: null
+  # DISCREPANCY (flagged, not silently resolved): Section 6.2's register/papers.csv data
+  # contract (SPEC.md line 415) defines `trust (official|memory_based)` — two values. The
+  # b1-paper-registrar.md agent file's own "Allowed values" (refined today) lists a third value:
+  # `trust: official, memory_based, unsure` — and its own worked example sets trust: "unsure" for
+  # the unconfirmed-code case. `config/allowed_values.yaml` has no `trust` key at all (neither
+  # the 2-value nor 3-value form). Followed the agent file (more specific, refined today, and the
+  # only one of the three that actually covers the real GAJAHA-M1 case) — schemas/B1.json's
+  # `trust` enum is ["official", "memory_based", "unsure"]. Section 6.2 and
+  # config/allowed_values.yaml should both be updated to match; not done here since this task's
+  # scope is config/steps.yaml + schemas/B*.json, not SPEC.md or allowed_values.yaml itself.
+
+B2:
+  stage: "B"
+  name: "Find question boundaries"
+  item: "page"
+  agent: "b2-boundary-finder"
+  runs: 1
+  needs: "B1"
+  # Matches the b2-boundary-finder "Input" block exactly.
+  input_fields: [paper_id, page, image, layout, previous_page]
+  output_schema: schemas/B2.json
+  check: scripts/checks/B2.py
+  # On failure (10/B2): retry; a boundary disagreement goes to the adjudicator with both page
+  # images -> B2_BOUNDARY_ADJUDICATED. A missing question number blocks with no safe default —
+  # per the agent file's explicit rule, a numbering gap (confirmed real: 2023 paper missing Q58
+  # between Q57/Q59, no gap marker) must be reported as seen, never silently closed or assumed
+  # to continue from elsewhere.
+  fallback: [retry, adjudicator]
+  flags:
+    B2_BOUNDARY_ADJUDICATED: normal
+    B2_MISSING_QNO: blocker
+  safe_default:
+    on_boundary_disagreement: "adjudicator-decided boundaries, using both page images"
+    on_missing_qno: null   # blocked; no safe default — the gap itself is the finding
+  codebook_file: null
+  # Note for the runner-plugin builder (separate task): Section 10/B2's "Checks" line ("total =
+  # the paper's printed count... 200 for 2021-2024") and figure/option cropping are SCRIPT-side
+  # (the question-crop step after this agent returns boxes), not agent input_fields — no B2-level
+  # flag code exists in the Section 16 catalogue for "figure/image content genuinely absent from
+  # this source" (only B2_BOUNDARY_ADJUDICATED and B2_MISSING_QNO). That real, unfixable-for-now
+  # gap (Master Plan Section 2.1.1 #3 and Section 7 risk #1b) currently has no first-class flag
+  # anywhere in Stage B — B3's has_figure/figure_bbox plus its free-text `note` field are the
+  # only place it can currently be recorded. Worth a dedicated flag code in a future spec
+  # revision; not invented here per Rule 9 (never invent a category not in the list).
+
+B3:
+  stage: "B"
+  name: "Read one question"
+  item: "question"
+  agent: "b3-question-reader"
+  runs: 1
+  needs: "B2"
+  # Matches the b3-question-reader "Input" block exactly: question_image, paper_id, qno. Section
+  # 10/B3's own "Reads" line additionally says "separate figure and option crops" — see the
+  # DISCREPANCY note below; the agent file (refined today) is followed as authoritative.
+  input_fields: [question_image, paper_id, qno]
+  output_schema: schemas/B3.json
+  check: scripts/checks/B3.py
+  # On failure (10/B3): retry. Fewer than four options -> one re-run of B2 for this question
+  # (likely a bad join), not a generic adjudicator. Duplicated options continue "as read",
+  # flagged high (B4 decides). Still broken after both -> blocked, no safe default.
+  fallback: [retry, "re-run B2 once (fewer than four options found)"]
+  flags:
+    B3_DUPLICATE_OPTIONS: high
+    B3_OPTION_COUNT: blocker
+    B3_UNREADABLE: blocker
+  safe_default:
+    on_duplicate_options: "continue with the options as read (B4 decides)"
+    on_option_count_or_unreadable: null   # blocked after retry + one B2 re-run; no safe default
+  codebook_file: null
+  # DISCREPANCY (flagged, not silently resolved): Section 10/B3's "Agent output" line includes
+  # an `option_images` field (`{"1": "<crop path or null>", ...}`), but b3-question-reader.md's
+  # actual worked output example (refined today) has no `option_images` key at all — its Input
+  # is also just question_image/paper_id/qno, with no separate option-crop paths handed to the
+  # agent. Reading: B2's SCRIPT half already crops each image option to
+  # `papers/questions/<PAPER>/<QNO>_opt<k>.png` (folder layout, SPEC.md Section 5.8) before B3
+  # ever runs, so `option_images` in the merged question record is populated by SCRIPT from
+  # those B2-produced crop paths, not echoed back by the B3 agent — the agent only needs to
+  # report image-option placeholder/blank TEXT it sees (per its own "Rules for this step"), not
+  # the crop path itself. schemas/B3.json therefore matches the agent file's actual output shape
+  # (no `option_images` key); flagging this so a human can confirm the SCRIPT-populates-it
+  # reading is correct before Stage B scripts are built.
+  # Also flagged: Section 13/E2 (line 961)'s negative-word guard checks B3's `negative_words_seen`
+  # for NOT, EXCEPT, INCORRECT, FALSE, WRONG, MISMATCH (6 words) — but b3-question-reader.md's own
+  # "Allowed values" line (and Section 10/B3 itself) list only 5: NOT, EXCEPT, INCORRECT, FALSE,
+  # WRONG — MISMATCH is missing from B3's own allowed set. schemas/B3.json's negative_words_seen
+  # enum follows the agent file (5 words, authoritative for what B3 may emit); this is a real gap
+  # for whoever builds E2 later, since E2's guard logic expects a 6th value B3 is never told it's
+  # allowed to produce.
+  # Real-data note for the runner-plugin builder: per scrape_sanitize.py, the correct-option
+  # checkmark is drawn directly ON the option inside the 4-option row, not only in the separate
+  # "Hide solution / CORRECT ANSWER" card after it — a correctly-boxed B2 crop (stem + 4 options
+  # only, ending before that card) still includes the marked option itself. B3 only transcribes
+  # text and is not asked to judge correctness, so this doesn't corrupt B3's own output, but the
+  # runner-plugin builder should know raw (non-grayscale) question_image crops are not a safe
+  # input anywhere independence matters (B6) — see B6's entry below.
+
+B3F:
+  stage: "B"
+  name: "Transcribe one figure"
+  item: "figure"
+  agent: "b3f-figure-transcriber"
+  runs: 1
+  needs: "B3"
+  input_fields: [paper_id, qno, role, image, target_box_in_crop, text_layer]
+  output_schema: schemas/B3F.json
+  check: scripts/checks/B3F.py
+  fallback: [retry]
+  flags:
+    B3F_FIGURE_CLIPPED: normal
+    B3F_NOT_A_FIGURE: normal
+  safe_default: >-
+    THE ITEM IS ONE FIGURE CROP, not one question: a question can carry a stem diagram and a block
+    of option panels, and they are different objects with different jobs
+    (docs/PAPER_EXTRACTION_V2.md section 5). This step is the paper-side twin of A2S for NCERT
+    pages and copies the same two things: the caption and every printed label, exactly. It NEVER
+    describes the drawing -- if a figure cannot be recovered from its labels, that is a fact about
+    the question and goes in the note field. The crop is GROWN outward toward its neighbours, so
+    target_box_in_crop says which part is the subject; anything outside it belongs to another block
+    and must not appear in the caption or labels.
+    ON FAILURE: retry once with the check message. Still failing -> keep what the agent returned as
+    provisional and flag it; never blank the labels to make the check pass.
+    TWO OUTCOMES THAT ARE ANSWERS, NOT FAILURES. First, complete=false when the figure is cut at an
+    edge of the crop: clipping is the commonest real defect in a machine-cut crop, and a clipped
+    figure transcribed as whole is worse than one reported clipped, because nothing downstream can
+    then tell (B3F_FIGURE_CLIPPED, normal). Second, kind=not_a_figure when the crop holds only text,
+    a watermark or page furniture: that means the geometry pass was wrong and wants fixing rather
+    than transcribing around (B3F_NOT_A_FIGURE, normal).
+    A DRAWN CHEMICAL STRUCTURE stops here: set kind=structure and let a2c-structure-transcriber read
+    it as chemistry. A crop holding FOUR OPTION PANELS stops here too: set holds_multiple_panels and
+    let b10-figure-splitter split it, because that is the step that knows a panel printed (2) in
+    this booklet may be option 4 in another code (SPEC Rule 16).
+  codebook_file: null
+
+B3V:
+  stage: "B"
+  name: "Read one question from its image (v2 corpus)"
+  item: "question"
+  agent: "b3-question-reader"
+  runs: 1
+  needs: "B1"
+  input_fields: [paper_id, qno, question_image, text_layer_draft, text_layer_reliable, needs_image_read, needs_image_read_why, figure_images, source_pdf, page]
+  output_schema: schemas/B3.json
+  check: scripts/checks/B3.py
+  fallback: [retry]
+  flags:
+    B3V_DIFFERS_FROM_DRAFT: low
+    B3V_FIGURE_PRESENT: low
+  safe_default: >-
+    THIS IS THE READ THAT COUNTS, and it reads the IMAGE. Stage A reads NCERT by rendering each page
+    and having a2-page-reader read the picture, with the text layer as a cross-check only; that
+    extraction is sound, and this step is the same arrangement for papers.
+    The v2 text parser was built the other way round and is wrong on every question whose content is
+    not linear text. Measured on 2015 Code-A: question 170 prints options 4/9, 9/4, 121/49, 49/121 and
+    the text layer yields "9 9", "4 121", "49 49", "121"; question 173 prints 300 cos(15t + 4pi/3) and
+    the text yields "pi 300 cos (15t + 3)". A stacked fraction is three unrelated objects -- numerator,
+    drawn bar, denominator -- on different rows, and no parse recovers it. The same holds for radicals,
+    matrices, drawn structures and two-line subscripts. 30-45% of questions per booklet carry at least
+    one (`needs_image_read`).
+    So `text_layer_draft` in the input is a CROSS-CHECK and never the answer. Where the image and the
+    draft differ, the image is right, and the difference is REPORTED (B3V_DIFFERS_FROM_DRAFT, low) --
+    never treated as a failure, because on a question the draft could not represent the agent is right
+    by construction. All maths goes into LaTeX, including fractions as \frac{}{}, so what the booklet
+    printed survives.
+    ON FAILURE: retry once with the check message. Still failing -> keep what the agent returned as
+    provisional and flag it; never fall back to the text draft, which is the thing this step exists to
+    correct.
+  codebook_file: null
+
+B4:
+  stage: "B"
+  name: "Read it a second way"
+  item: "question"
+  agent: "script | b4-second-reader"
+  runs: 1
+  needs: "B3"
+  # Matches the b4-second-reader "Input" block exactly: question_image, paper_id, qno. This
+  # agent is called ONLY when the question's PDF box has no text layer (Section 10/B4 procedure
+  # step 2); when a text layer exists, SCRIPT extracts and splits it directly (option_parser.py
+  # + latex_normalise), no agent call at all.
+  input_fields: [question_image, paper_id, qno]
+  output_schema: schemas/B4.json
+  check: scripts/checks/B4.py
+  # On failure (10/B4): a field-by-field mismatch between the text-layer/B3 reading and B4's
+  # independent reading goes straight to the adjudicator (image + both readings, differing spans
+  # highlighted); no separate retry step is named — the SCRIPT-vs-AGENT or B3-vs-B4 pair is
+  # itself the step's built-in second opinion (parallel to A8's 2 runs, but one script path and
+  # one agent path instead of two agent runs).
+  fallback: [adjudicator]
+  flags:
+    B4_MISMATCH_ADJUDICATED: "high (span is a number, unit, sign, option label or negative word) else normal"
+  safe_default: "adjudicated text, chosen span by span"
+  codebook_file: null
+  # Note for the runner-plugin builder: per scrape_sanitize.py (validated against 4 real papers,
+  # ~100% text-layer coverage), the sanitized TEXT path (strip_overlay_text on the page's text
+  # layer, then this step's SCRIPT branch) is B1-B6's PRIMARY source whenever a text layer
+  # exists — it is also the only B4 path that never needs the b4-second-reader agent at all. The
+  # AGENT branch (this entry's input_fields) is the rare no-text-layer fallback and reads a raw
+  # question image; it carries the same residual answer-marking risk described in B3's and B6's
+  # notes (the checkmark on the correct option is a shape, not a color, and survives grayscale).
+  # B4's own mismatch-adjudication is about transcription accuracy (numbers/units/signs), not
+  # answer-independence, so this residual risk doesn't corrupt B4's checks directly — but it is
+  # exactly the kind of image fallback the runner plugin must route to B6 with full awareness of,
+  # since B6 (unlike B4) has no retry/adjudicator safety net at all if independence is quietly lost.
+
+B5:
+  stage: "B"
+  name: "Attach the answer key"
+  item: "key page"
+  agent: "b5-key-copier"
+  runs: 1
+  needs: "B4"
+  # Matches the b5-key-copier "Input" block exactly. Deliberately never given a paper file at
+  # all — per the agent file's own framing, this is what makes the key the sole trustworthy
+  # answer source (Master Plan Section 2.1.1 #2: embedded paper "correct answers" mismatch the
+  # real key 7%-48% of the time by subject).
+  input_fields: [key_image, text_layer, booklet_code_expected]
+  output_schema: schemas/B5.json
+  check: scripts/checks/B5.py
+  # On failure (10/B5): a missing row blocks (no safe default — a question's answer source must
+  # never be silently assumed). A disagreement between the agent's key copy and the key's own
+  # text layer goes to the adjudicator with the key image. No retry is named for this step.
+  fallback: [adjudicator]
+  flags:
+    B5_KEY_ROW_MISSING: blocker
+    B5_KEY_ADJUDICATED: high
+    # A key row with an empty answer whose mark this step cannot read. Real keys print a bare
+    # option id in the cell and define it in a same-page footnote, and agents correctly copy
+    # the printed text, so the same meaning arrives spelled several ways ("5", "Dropped").
+    # Recorded as `dropped`, because a row with no answer cannot be `normal` — but the printed
+    # meaning still needs a human read, so this is not silent.
+    B5_UNRECOGNISED_MARK: high
+  safe_default:
+    on_missing_row: null   # blocked; no safe default
+    on_text_layer_disagreement: "adjudicated key value, using the key image"
+  codebook_file: null
+  # Note: SCRIPT joins on (paper_id, qno) per Section 10/B5 procedure, never qno alone — load-
+  # bearing given confirmed cross-code/cross-paper contamination in the real scraped files
+  # (Master Plan Section 2.1.1 #5). The join itself is a SCRIPT behaviour, not an agent
+  # input_field, so it isn't listed above, but the check script (scripts/checks/B5.py) must
+  # enforce it, not just assume it.
+  # NOTE on the task brief's example flag name: the task brief that commissioned this file names
+  # a flag "B5_KEY_ROW_MISMATCH" as a worked example. No such code exists anywhere in SPEC.md —
+  # Section 10/B5 and the Section 16 flag catalogue both only define B5_KEY_ROW_MISSING (a
+  # missing row, blocker) and B5_KEY_ADJUDICATED (a copy-vs-text-layer disagreement, high). Used
+  # the real spec codes above rather than the brief's example name.
+
+B6:
+  stage: "B"
+  name: "Solve without the key"
+  item: "question"
+  agent: "b6-blind-solver"
+  runs: 1
+  needs: "B5"
+  # Matches the b6-blind-solver "Input" block exactly: stem_en, statements, list_i, list_ii,
+  # options_en, figure_image (if any). Deliberately NEVER the key, coaching material or NCERT
+  # (Rule 10; also this step's own "Your one task" / "Never" sections). Text fields (stem_en,
+  # options_en, ...) are the sanitized output of B3/B4, already stripped of the overlay text by
+  # that point in the pipeline — this step never reads a raw page/question image or text layer
+  # directly.
+  input_fields: [stem_en, statements, list_i, list_ii, options_en, figure_image]
+  output_schema: schemas/B6.json
+  check: scripts/checks/B6.py
+  # "Why no retry" (10/B6, verbatim): "a retry only argues with itself; the disagreement is the
+  # signal." No second opinion or adjudicator either — a single blind run, full stop. Disagreement
+  # with the official key is itself the useful output (B6_DISAGREES_WITH_KEY), not a failure to
+  # fix; the question always continues with the official answer regardless of B6's answer.
+  fallback: []
+  flags:
+    B6_DISAGREES_WITH_KEY: high
+    # Added by the B6 runner-plugin build (2026-10-11), not in the original skeleton: the real,
+    # checkable form of the "CRITICAL note" below this block -- raised by B6Plugin whenever a
+    # question has has_figure=true, instead of ever building a raw image input for it. See
+    # step_plugins.py's B6Plugin module docstring and docs/OPEN_QUESTIONS.md.
+    B6_IMAGE_INPUT_UNSAFE: high
+  safe_default: "continue with the official answer (B5's value); B6's own answer is never substituted for it, only compared against it"
+  codebook_file: null
+  # CRITICAL note for the runner-plugin builder (per Master Plan Section 7 risk #1 / this task's
+  # brief): B6's entire value depends on genuine independence from the answer. `figure_image`
+  # is the one path where this step receives an actual rendered image rather than sanitized text
+  # — per scrape_sanitize.py, grayscale conversion (`render_sanitized_crop`) removes the
+  # color-coded highlight on the correct option but is CONFIRMED NOT sufficient by itself: the
+  # checkmark icon is a distinct shape, not a color, and remains visible after grayscale,
+  # meaning a naive crop could leak the answer directly into this step's one image input and
+  # silently collapse its value. Because B6 has no retry/adjudicator safety net (by design), this
+  # risk cannot be caught downstream within B6 itself. The runner plugin must ensure
+  # `figure_image` is cropped to the figure region ONLY (never the options row, where any
+  # checkmark/highlight actually lives) before ever reaching this agent — B2's figure_bbox
+  # (separate from the options) is the mechanism that should make this safe in practice, but it
+  # is not yet verified end-to-end since Stage B scripts don't exist yet. Treat as unresolved
+  # until a real B6 image-input case is tested, per Master Plan Section 7 risk #1(a).
+  # Also note: option_images (for structure_options/graph_options questions, where the OPTIONS
+  # themselves are images) is not among b6-blind-solver.md's Input fields at all — B6 as
+  # specified cannot see option images, meaning it cannot meaningfully answer a question whose
+  # options are images rather than text. Not resolved here (input_fields mirrors the agent file
+  # exactly, per this task's instructions); flagged as a real functional gap for whoever builds
+  # the B6 runner plugin or revises the agent file.
+
+B6V:
+  stage: "B"
+  name: "Solve one question with no key (v2 corpus)"
+  item: "question"
+  agent: "b6-blind-solver"
+  runs: 1
+  needs: "B3V"
+  input_fields: [stem_en, statements, list_i, list_ii, options_en, figure_image]
+  output_schema: schemas/B6.json
+  check: scripts/checks/B6.py
+  fallback: [retry]
+  flags:
+    B6V_DISAGREES_WITH_BOOKLET: normal
+    B6V_DISAGREES_WITH_OFFICIAL: high
+    B6V_UNSURE: low
+  safe_default: >-
+    THE KEY IS WITHHELD BY CONSTRUCTION. CLAUDE.md forbids passing an answer key to an agent that
+    must not see one, and this input carries only the stem, the statements, the lists, the options
+    and the figure. No official_answer, no booklet answer, no solution text. A solver that has seen
+    the answer is not evidence about the answer.
+    WHY A THIRD ANSWER EXISTS AT ALL. Three sources can tell us a question is answered correctly and
+    they fail differently: the booklet prints the PUBLISHER reading of the paper and publishers get
+    questions wrong; the official NTA key is the authority but is joined in from a separate file per
+    booklet code, and a wrong join is silent; this step has seen neither, so it catches a bad join
+    AND the case where the first two agree and are both wrong. The v1 corpus had only the publisher
+    answer and could not tell a publisher error from a scrape error.
+    ONLY QUESTIONS B3V HAS READ ARE OFFERED. Solving from the text draft would mean solving a
+    question whose fractions are mangled, so the solver would answer a DIFFERENT question from the
+    one printed and its disagreement would say nothing about the key.
+    ON FAILURE: retry once. Still failing -> keep the answer as provisional and flag.
+    A DISAGREEMENT IS A FINDING, NOT A FAILURE. Never reconcile it by changing the stored answer:
+    the three columns stay side by side, and the disagreement is what a reviewer is shown.
+    `unsure` is a real answer (B6V_UNSURE, low) and is better than a guess, because a guess that
+    happens to match the key is indistinguishable from knowledge.
+  codebook_file: null
+
+QSUBJ:
+  stage: "B"
+  name: "Confirm subject where no heading was printed (v2)"
+  item: "question"
+  agent: "q-subject-confirmer"
+  runs: 1
+  needs: "B3V"
+  input_fields: [paper_id, qno, stem_en, statements, list_i, list_ii, options_en, correct_answer, position_guess, question_image]
+  output_schema: schemas/QSUBJ.json
+  check: scripts/checks/QSUBJ.py
+  fallback: [retry]
+  flags:
+    QSUBJ_DISAGREES_WITH_POSITION: normal
+    QSUBJ_UNSURE: low
+  safe_default: >-
+    ONLY UNHEADED QUESTIONS REACH THIS STEP. Where the paper prints a section heading --
+    PHYSICS, CHEMISTRY, BOTANY, ZOOLOGY -- scripts/assign_subject.py reads it and no agent is
+    dispatched, because a measurement that can be reproduced beats a judgement that cannot.
+    WHY THE QUESTION NUMBER IS NOT THE ANSWER. NEET usually runs Physics, then Chemistry, then
+    Biology, and TWO of the ten booklets measured here do not: 2015 Code-A runs Chemistry 1-45,
+    Biology 46-135, Physics 136-192, and 2020 Code-F1 runs Biology 1-90, Physics 91-135,
+    Chemistry 136-180. A positional rule would have labelled those 355 questions confidently and
+    mostly wrongly, which is the failure SPEC Rule 20 exists for. So `position_guess` is a HINT with
+    a known failure rate, never a default, and `agrees_with_position` is recorded on every answer so
+    that rate is measured rather than assumed. A disagreement is how a mislabelled block of a hundred
+    questions gets found (QSUBJ_DISAGREES_WITH_POSITION, normal).
+    `branch` is Biology-only; a branch on a Physics or Chemistry answer fails the check. Ecology,
+    biomolecules, cell biology and biotechnology sit in BOTH branches in NEET, so `unsure` is a real
+    answer there and forcing one makes the record look decided when the syllabus is not.
+    ON FAILURE: retry once. Still failing -> keep the answer as provisional and flag QSUBJ_UNSURE.
+  codebook_file: null
+
+QCHAP:
+  stage: "B"
+  name: "Pick the chapter for one question (v2)"
+  item: "question"
+  agent: "q-chapter-picker"
+  runs: 1
+  needs: "QSUBJ"
+  input_fields: [paper_id, qno, stem_en, statements, list_i, list_ii, options_en, correct_answer, subject, branch, chapters, question_image]
+  output_schema: schemas/QCHAP.json
+  check: scripts/checks/QCHAP.py
+  fallback: [retry]
+  flags:
+    QCHAP_UNSURE: normal
+    QCHAP_TAXONOMY_GAP: normal
+  safe_default: >-
+    THE CHAPTER LIST IS CLOSED. It comes from the product's own ExamChapterTopicMappings taxonomy
+    (114 chapters, 1,242 topics, indexed to papers_v2/mappings/chapter_index.json), and the item
+    carries the exact list its agent may choose from so the check validates against the same list the
+    agent saw rather than a second copy that could drift. A chapter the agent composes is a chapter
+    the product cannot show.
+    A CHAPTER PLAINLY MISSING FROM THE LIST IS A FINDING, not something to work around: answer
+    unsure and name the chapter expected in `note` (QCHAP_TAXONOMY_GAP, normal). A gap reported once
+    gets fixed; a question forced into the nearest chapter is wrong forever and looks right. The
+    check therefore REFUSES an unsure with an empty note.
+    DECIDE BY THE FACT THE CORRECT ANSWER DEPENDS ON, not by what the stem mentions -- a question
+    whose stem describes a circuit but whose answer turns on Ohm's law belongs to the chapter that
+    teaches Ohm's law. Two chapters only where the question genuinely needs both.
+    This step will not run before a subject is settled: a wrong subject cannot be rescued by a good
+    chapter guess, and defaulting here would hide which link in the chain broke.
+    ON FAILURE: retry once, then keep as provisional and flag.
+  codebook_file: null
+
+QTOPIC:
+  stage: "B"
+  name: "Pick the subtopic for one question (v2)"
+  item: "question"
+  agent: "q-subtopic-picker"
+  runs: 1
+  needs: "QCHAP"
+  input_fields: [paper_id, qno, stem_en, statements, list_i, list_ii, options_en, correct_answer, subject, branch, chapter, topics, note_from_runner, question_image]
+  output_schema: schemas/QTOPIC.json
+  check: scripts/checks/QTOPIC.py
+  fallback: [retry]
+  flags:
+    QTOPIC_UNSURE: low
+    QTOPIC_UNSPECIFIED_PLACEHOLDER: normal
+  safe_default: >-
+    THE TOPIC LIST IS ONE CHAPTER'S. The agent may not reach into another chapter: if the real topic
+    lives elsewhere then the CHAPTER choice was wrong, and saying so in `note` is more useful than
+    filing the question under a topic that does not fit. A topic_id from outside the carried list
+    fails the check for exactly that reason.
+    `Unspecified Topic` EXISTS IN 57 CHAPTERS OF THE SOURCE TAXONOMY AND IS A PLACEHOLDER, NOT AN
+    ANSWER. Choosing one is right only when the chapter genuinely has no topic for this question, and
+    `note` should then say what topic was wanted, because using it to avoid deciding hides a gap that
+    would otherwise get fixed (QTOPIC_UNSPECIFIED_PLACEHOLDER, normal).
+    THE PER-TOPIC QUESTION COUNTS ARE CONTEXT, NOT A TARGET. They are supplied so the agent can see
+    the taxonomy's shape; filing a question where the crowd already is makes the crowd grow and tells
+    a student nothing.
+    ON FAILURE: retry once, then keep as provisional and flag QTOPIC_UNSURE.
+  codebook_file: null
+
+B7:
+  stage: "B"
+  name: "Subject and branch"
+  item: "question"
+  agent: "script | b7-chem-branch-sorter"
+  runs: 1
+  needs: "B5"
+  # Matches the b7-chem-branch-sorter "Input" block exactly. Subject and Biology branch
+  # (botany/zoology) are pure SCRIPT, from the paper's section headings (10/B7 procedure) — no
+  # agent call for those; the agent is called only for Chemistry questions.
+  input_fields: [stem_en, options_en, statements]
+  output_schema: schemas/B7.json
+  check: scripts/checks/B7.py
+  # On failure (10/B7): unsure -> adjudicator -> still unsure -> SCRIPT picks the branch whose
+  # NCERT chapters contain the most of the question's key terms (search_index.keyword_rank).
+  fallback: [adjudicator]
+  flags:
+    B7_BRANCH_GUESS: normal
+  safe_default: "branch chosen by search_index.keyword_rank over the question's key terms against NCERT chapters"
+  codebook_file: null
+  # Note: this call is load-bearing well past D1 — Section 17.5 / Master Plan Section 3.4.1
+  # require E4 (thinking) to condition its Chemistry prior on THIS branch output, never on
+  # "Chemistry" as one subject (confirmed 10/10 real papers: physical behaves like Physics,
+  # organic/inorganic like Biology). Not yet encoded in an E4 agent file (Stage E isn't built),
+  # but worth preserving here since B7 is where that distinction first gets made.
+
+B8:
+  stage: "B"
+  name: "Fix bonus/dropped"
+  item: "faulty question"
+  agent: "b8-faulty-fixer"
+  runs: 1
+  needs: "B7"
+  # Matches the b8-faulty-fixer "Input" block exactly: the question (stem, statements, lists,
+  # options), status + key row, notice_text, latest_passages (up to 15).
+  input_fields: [stem_en, statements, list_i, list_ii, options_en, status, key_row, notice_text, latest_passages]
+  output_schema: schemas/B8.json
+  check: scripts/checks/B8.py
+  # Only runs for a question whose status (set by B5 from the real key) is bonus, dropped or
+  # multiple_accepted — never from a paper's own claims (agent file, "Context confirmed..."
+  # paragraph). Section 10/B8 names no retry/second-opinion/adjudicator chain at all for a
+  # failed quote-verification check — unlike its closest analogue, D4 (also quote-verifies
+  # against latest-edition passages), which explicitly says "quote not found -> retry -> still
+  # not found -> drop it". This looks like a real gap in the spec text; per Section 0.3, picked
+  # the safest reading that invents nothing not in the text (no retry assumed) and logged it in
+  # docs/OPEN_QUESTIONS.md (2026-10-11 entry) rather than silently reusing D4's chain for a step
+  # the spec never says uses it.
+  fallback: []
+  flags:
+    B8_CORRECTION: high   # every B8 output, not only failures
+  safe_default: "corrected_answer (and corrected_stem, when present) used provisionally downstream; the original question is never overwritten, only corrected beside it; every output is flagged B8_CORRECTION regardless of confidence"
+  codebook_file: null
+  # Minor note, not a true discrepancy: b8-faulty-fixer.md's "Allowed values" adds `unsure` to
+  # issue_reason (7 values) beyond Section 10/B8's and config/allowed_values.yaml's matching
+  # 6-value lists (both omit unsure). Read as Rule 6 in action ("'unsure' is always allowed and
+  # never forced into a value") rather than a real conflict — schemas/B8.json's issue_reason
+  # enum includes unsure, consistent with every other agent file's pattern of appending it.
+
+B9:
+  stage: "B"
+  name: "Recover the figure"
+  item: "question needing a figure"
+  # =========================================================================================
+  # DELIBERATE EXTENSION BEYOND THE SPEC — owner-approved, 2026-10-12.
+  #
+  # docs/SPEC.md's Stage B is complete at B1–B8: there is no B9 in the spec, and this entry is
+  # not an implementation of any spec line. It is an addition, made on the owner's explicit
+  # instruction, to close a real and measured gap in the data:
+  #
+  #   * B3 marks ~6.5% of questions `has_figure: true`.
+  #   * The scrapes those questions were read from have no image for them. Of 166 scrape files,
+  #     162 contain zero embedded images; only 2025's four sets have real ones. Verified on this
+  #     build's own data: papers/questions/NEET-2023-MAIN-E1/3.png (Q-000002) is a clean crop of
+  #     the stem and all four options with NO circuit diagram on it at all.
+  #   * Cross-booklet-set recovery is impossible: every set of a given year fails identically.
+  #   * The figures DO exist in inputs/legacy_sheets/*.xlsx — 450 Mathpix image URLs across 396
+  #     of 3,920 rows (10.1%), covering every year 2010–2026, confirmed live (HTTP 200,
+  #     image/png) and confirmed by eye to be clean isolated figure crops with no watermark, no
+  #     answer marking and no website furniture.
+  #
+  # Three hard constraints shape everything below, and none of them is negotiable:
+  #
+  #   1. DOWNLOAD ONCE, STORE LOCALLY. Every agent in this project has `tools: Read, Write` and
+  #      no network tool, so an agent physically cannot open a URL. scripts/recover_figures.py
+  #      fetches at ingest into papers/figures/_cache/ and copies the accepted image to
+  #      papers/figures/<QID>.png; `figure_source_url` on the record is provenance only. NO
+  #      PIPELINE STEP EVER FETCHES AT AGENT-RUN TIME. This is a documented exception to
+  #      scripts/CONVENTIONS.md rule 7 ("never make a network call"): the fetch is an ingest,
+  #      not a judgement, it is cached, and therefore every re-run is idempotent and offline, so
+  #      CONVENTIONS rule 4 still holds exactly. See recover_figures.py's module docstring.
+  #      (CONVENTIONS.md is owned by another lane and was not edited; this is the record.)
+  #   2. IMAGE AND LaTeX ONLY — NEVER THE SHEET'S JUDGEMENT COLUMNS. CLAUDE.md forbids passing
+  #      legacy-sheet columns to agents because the sheets put many 2018–19 questions in the
+  #      WRONG chapter under coaching chapter names. The owner authorised the sheets as a FIGURE
+  #      REFERENCE only. So B9 takes the image and the sheet's question TEXT, and never
+  #      `Chapter Name`, `Chapter No`, `Topic` or `Question Type` — and the sheet's `Answer`
+  #      column must never reach any agent, above all never B6, the blind solver, whose entire
+  #      value is not seeing the answer. recover_figures.py enforces this in code
+  #      (_ALLOWED_COLUMNS / _FORBIDDEN_COLUMNS in `_row_cells`), not by convention.
+  #   3. A FLAGGED AMBIGUOUS MATCH BEATS A WRONG FIGURE. `none` and `low` both attach nothing.
+  #
+  # One further judgement call made while building this (see the build report): the agent is NOT
+  # shown our own question crop (papers/questions/<paper_id>/<qno>.png), even though it exists.
+  # Two reasons, both checked against the real file: the crop does not contain the figure (that
+  # is the whole premise of the step), and it DOES contain the correct-option checkmark and a
+  # coaching chapter label — exactly the leakage B6Plugin's docstring documents surviving
+  # grayscale. Showing it would add no signal and import a contamination risk.
+  # =========================================================================================
+  #
+  # Worker shape: SCRIPT + AGENT, the same two-phase shape as C1 and A5/B4/B7 — SCRIPT shortlists
+  # the top 2–3 legacy-sheet rows by full-question-text similarity and downloads each candidate's
+  # figure; AGENT decides which (if any) belongs; SCRIPT attaches or flags. run_step.py's
+  # step_kind() classifies this as `hybrid` on the "script | <agent>" spelling.
+  agent: "script | b9-figure-matcher"
+  runs: 1
+  # has_figure is a B3 field, so B3 is the real producer this step waits on. B9 deliberately does
+  # NOT wait on B5/B8: nothing about recovering a diagram depends on the answer key, and gating on
+  # it would only delay the recovery. A record already absorbed by a C1 merge (`merged_into`) is
+  # skipped, so a question is never worked twice under two booklet codes — but C1 is not required
+  # to have run, since an unmerged duplicate would simply be recovered twice, harmlessly.
+  needs: "B3"
+  # Matches .claude/agents/b9-figure-matcher.md's Input block exactly. `question` is our own
+  # B3 reading; each `candidates` entry carries only candidate_id, similarity, figure_image (a
+  # LOCAL path to an already-downloaded file) and question_text (the sheet's Question column with
+  # its image markdown stripped). No sheet judgement column appears anywhere in it.
+  input_fields: [question, candidates]
+  output_schema: schemas/B9.json
+  check: scripts/checks/B9.py
+  # On failure: retry once (spec 5.5's standard chain — a malformed output is a formatting
+  # failure, which a retry really can fix). There is deliberately NO adjudicator: a second
+  # opinion on "which picture goes with this question" would be arguing from the same evidence,
+  # and this step's safe default (attach nothing, flag it) is already the conservative answer, so
+  # an adjudicator could only ever talk the pipeline INTO a figure it was not sure about.
+  fallback: [retry]
+  flags:
+    B9_FIGURE_RECOVERED: low     # every attached figure, always — provenance, see safe_default
+    B9_FIGURE_UNMATCHED: normal  # nothing attached: no candidate above the floor, or agent said none/low
+    B9_FIGURE_THIN_MARGIN: normal  # attached, but the shortlist gap was thin or confidence was medium
+    B9_FIGURE_EXTRA_IMAGES: low  # the matched sheet row carried more images than the one attached
+    B9_FIGURE_DOWNLOAD_FAILED: high  # a shortlisted figure URL did not return an image
+  # Not a field-level substitute value: the safe default is to attach NOTHING. A question keeps
+  # has_figure: true with no figure_path and a B9_FIGURE_UNMATCHED flag, which is a visible,
+  # reviewable gap. Every figure that IS attached carries B9_FIGURE_RECOVERED (low) forever,
+  # because a recovered figure is third-party provenance, not the original paper: the agent
+  # judged that the figure BELONGS to the question, and no step in this pipeline can verify it
+  # against the original paper. Nothing downstream may read a B9 figure as verified.
+  safe_default: "attach no figure; keep has_figure true and raise B9_FIGURE_UNMATCHED"
+  codebook_file: null
+  # Shortlist thresholds live in scripts/recover_figures.py (MIN_TOP_SIMILARITY = 0.08,
+  # CLEAR_GAP_RATIO = 1.8) with the real measured evidence beside them. Summary: an absolute
+  # similarity rule of the "≥ 0.85" kind rejects every true match in this bank (independent
+  # transcriptions, different option lettering, a figure on one side that is prose on the other);
+  # the GAP to the runner-up is the real signal. Verified true matches: Q-000002 0.4118 vs 0.0851
+  # (4.84x), Q-000013 0.1515 vs 0.0789 (1.92x).
+
+
+B9S:
+  stage: "B"
+  name: "Confirm the figure cut from the official booklet"
+  item: "question whose figure was cut from the original paper"
+  # =========================================================================================
+  # DELIBERATE EXTENSION BEYOND THE SPEC — same standing as B9 and B10, added 2026-10-16.
+  #
+  # B9 exists because the scrapes carry no images, and it recovers a figure from the legacy
+  # sheets' Mathpix URLs. Its own entry above says plainly what that costs: "a recovered figure
+  # is third-party provenance, not the original paper ... Nothing downstream may read a B9
+  # figure as verified." SPEC.md Section 4 states the rule B9 cannot keep — "Always crop figures
+  # from the official PDFs; never depend on a URL" — and two outside audits found the damage it
+  # predicts: 5 of 2022's 10 figures show option panels in an order that contradicts the options
+  # printed beside them, because the wording match landed on another booklet code.
+  #
+  # inputs/papers/ holds the original PDFs, so for some years the figure can now be cut from the
+  # page the question was actually printed on. Measured on this build's own data:
+  #
+  #   * 2024.pdf is the official NEET (UG)-2024 Code T3 booklet (masthead "Test Booklet Code",
+  #     28 pages, a real text layer). 192 of its 200 questions parse; 179 of our 198 records
+  #     match it on wording; 13 figures cut cleanly and 5 were refused as option-image questions.
+  #   * 2023.pdf is NOT an exam booklet. It is a chapter-wise coaching compilation ("Chapter &
+  #     Topicwise NEET PYQ's", options lettered a./b./c./d.), whose diagrams are the publisher's
+  #     redrawings. scripts/paper_source_match.py refuses to crop from it.
+  #   * 2022.pdf and 2021.pdf are pure scans: 18 text characters across 26 and 27 pages. Nothing
+  #     can be matched in them until they are OCR'd, which is the mathpix step.
+  #
+  # This step does NOT replace B9. It supersedes B9's figure for the years where an official
+  # booklet exists, and leaves B9's figure in place everywhere else. The record keeps both:
+  # `figure_path` (B9, third-party) and `figure_path_source` (cut from the paper), so a wrong
+  # supersession is always reversible and the provenance of what is published is never in doubt.
+  # =========================================================================================
+  # --- 2026-10-16, owner's decision: option-image questions are NO LONGER REFUSED -------------
+  # This step originally refused to crop a question whose options are pictures, because the panel
+  # order belongs to one booklet code and a crop from another would contradict the options beside
+  # it -- the defect two audits found. The owner's instruction is to crop them anyway and let the
+  # agent rule on the order, which is sound: the mismatch is visible in the picture, so an agent
+  # comparing panels against the record's own option text catches exactly what the script cannot.
+  # Hence the `panel_order_differs` verdict and `panel_map`. A rotated crop still does not publish;
+  # the mapping has to be applied first.
+  #
+  # The search also widened, on the same instruction, from the question's own year to every printed
+  # paper in inputs/papers/. Two measured facts justify it: the 170 scraped booklet-code PDFs hold
+  # ZERO embedded images between them, so no search of them can return a diagram; and the printed
+  # volumes hold 871 images and reprint questions across years ("AV NEET 35 Years"), so a question
+  # absent from its own year's volume is often printed in another. See
+  # scripts/find_figures_in_papers.py.
+  # -------------------------------------------------------------------------------------------
+  agent: "b9s-source-figure-confirmer"
+  runs: 1
+  # The crop is produced by scripts/paper_source_match.py, which needs only B3's reading of the
+  # question to find it on the page; the key plays no part, so this step does not wait on B5/B8.
+  # It does not wait on B9 either: the two are independent sources for the same question, and
+  # gating on B9 would hold a better figure behind a worse one.
+  needs: "B3"
+  # Matches .claude/agents/b9s-source-figure-confirmer.md's Input block exactly. The agent is given
+  # OUR question text, the LOCAL path of the crop, and the provenance of the cut (which PDF, which
+  # page, which booklet code, and the wording-match score) so it can weigh how much the match is
+  # worth. No answer key and no coaching material appear in it.
+  input_fields: [question_id, stem_en, options_en, figure_file, option_block_file, source_pdf,
+                 source_page, source_booklet_code, our_booklet_code, match_score, why_needed]
+  output_schema: schemas/B9S.json
+  check: scripts/checks/B9S.py
+  # On failure: retry once, and no adjudicator, for B9's reason — a second agent would be judging
+  # the same picture from the same evidence, and the safe default here already refuses the figure.
+  fallback: [retry]
+  flags:
+    B9S_FIGURE_FROM_SOURCE: low      # cut from the official paper and confirmed whole — provenance
+    B9S_FIGURE_CLIPPED: normal       # belongs, but part of the diagram was cut off
+    B9S_FIGURE_WITH_JUNK: normal     # belongs and is whole, but prose/options/watermark came too
+    B9S_FIGURE_WRONG: high           # the crop is a figure, but not this question's
+    B9S_FIGURE_NOT_A_FIGURE: normal  # maths or a table was mistaken for a diagram
+    B9S_PANEL_ORDER_DIFFERS: high    # right four panels, wrong order -- panel_map must be applied
+    B9S_OPTION_BLOCK_CAPTURED: low   # the whole printed option block was cropped — provenance
+    B9S_SOURCE_NOT_OFFICIAL: high    # the only source for this year is a coaching compilation
+    B9S_SOURCE_NO_TEXT_LAYER: high   # the source is a scan; nothing can be matched until it is OCR'd
+  # The safe default attaches NOTHING, exactly as B9's does. A `belongs_clipped` or
+  # `belongs_with_junk` verdict does NOT publish: the crop stays on disk with its flag for a person
+  # to look at, because a figure missing its axis is worse than a visible gap — the gap is
+  # reviewable, the clipped figure silently answers the question wrongly.
+  safe_default: "publish no figure; keep B9's figure if it has one, and raise the matching flag"
+  codebook_file: null
+  # Match thresholds live in scripts/paper_source_match.py with their measured evidence beside
+  # them. Summary: matching is on token CONTAINMENT, not a sequence ratio — the ratio scored
+  # 0.36-0.50 on questions demonstrably present in the paper, because the records hold maths as
+  # LaTeX, hold match-lists in separate fields, and order options differently from the print.
+  # Containment put 171 of 198 at 0.8 or better with no ambiguous pairing at the 0.08 margin.
+
+
+B10:
+  stage: "B"
+  name: "Split the recovered figure into one picture per option"
+  item: "question whose options or list entries are pictures"
+  # =========================================================================================
+  # DELIBERATE EXTENSION BEYOND THE SPEC — same standing as B9, added on the owner's explicit
+  # instruction 2026-10-13.
+  #
+  # B9 recovers A figure for a question whose source dropped it. For many of those questions
+  # that figure is not one picture but SEVERAL in one image: the four option graphs, or the
+  # four reaction drawings of a Match List I column. Their slots read
+  # "(Image option — will be added soon)" or "[missing content — no text printed]" because
+  # nothing was ever printed there — the content is a drawing. A reader sent to the whole sheet
+  # still cannot tell which quadrant is option 3.
+  #
+  # Measured when this was added: 16 questions carry placeholder content across 63 slots; 14
+  # had a recovered figure to cut from, yielding 41 crops over 10 questions.
+  #
+  # THE RULE THAT MATTERS, and the reason this step is not simply "crop four boxes":
+  # a printed panel label is the SOURCE paper's label, and booklet codes shuffle option order.
+  #   * list_i / list_ii / statements slots MAY be filled from the printed label — our record
+  #     already holds entries labelled A–D and I–IV against the same content, so it is
+  #     checkable.
+  #   * opt1–opt4 slots may NEVER be filled. Our option text is empty (that is why the question
+  #     is here), so a printed "(1)" has nothing in our record to agree with. Q-000343 is the
+  #     proof: the official key for our booklet says 4 while the physically correct plot in the
+  #     picture is printed (2). Mapping (1)->opt1 would have mislabelled every option.
+  # Unmapped panels are still cut and kept, named by their printed label, and the sheet states
+  # that the mapping is unverified. Nothing is discarded and nothing is guessed.
+  #
+  # This step writes NO field into papers/records/. The crops live in papers/figures/<QID>/ and
+  # the exporters resolve them from disk, so re-running it cannot corrupt a record.
+  # =========================================================================================
+  agent: "script | b10-figure-splitter"
+  runs: 1
+  needs: "B9"
+  input_fields: ["question_id", "figure_image", "image_width", "image_height", "stem", "slots", "slot_texts"]
+  output_schema: "schemas/B10.json"
+  check: "scripts/checks/B10.py"
+  fallback: ["retry"]
+  flags:
+    B10_SLOTS_UNMAPPED: "normal"      # panels cut but no slot claimed (always so for opt slots)
+    B10_NO_PANELS: "normal"           # the figure is one indivisible picture, or holds no options
+    B10_BOX_UNUSABLE: "high"          # a returned box was empty or degenerate
+  safe_default: "cut nothing; leave the placeholder text and raise B10_NO_PANELS"
+  codebook_file: null
+C1:
+  stage: "C"
+  name: "Merge booklet codes"
+  item: "pair"
+  # DISCREPANCY (found and fixed building this step, see docs/OPEN_QUESTIONS.md /
+  # the build report): this entry was written speculatively before C1 existed, as a plain
+  # agent-driven step ("c1-booklet-matcher"). Spec 11/C1's own Worker line is "SCRIPT + AGENT
+  # c1-booklet-matcher" (SCRIPT normalises+shortlists and runs every post-agent check; AGENT only
+  # decides each shortlisted pair) -- the same two-phase shape step_kind() already recognises via
+  # a "script | <agent>" value for A5/B4/B7 (SCRIPT resolves some items on its own; AGENT decides
+  # the rest). Corrected to that convention so run_step.py's step_kind() classifies C1 as hybrid,
+  # not a bare agent-driven step.
+  agent: "script | c1-booklet-matcher"
+  runs: 1
+  needs: "B8"
+  # Matches the agent file's Input block: one shortlisted pair, each side's paper_id/qno/stem/
+  # statements/lists/options after SCRIPT normalisation (latex_normalise + text_normalise).
+  input_fields: [a, b]
+  output_schema: schemas/C1.json
+  check: scripts/checks/C1.py
+  # On failure (11/C1's own "On failure" line) -- a bespoke multi-stage chain, not the generic
+  # retry-once shape (spec 5.5): not_exact -> SCRIPT re-dispatches B3 (and B4, when B4 used its
+  # own agent branch; a no-op re-run of B4's SCRIPT branch otherwise, since it is a deterministic
+  # text-layer parse) on BOTH copies with note "possible misread" -> SCRIPT re-dispatches
+  # c1-booklet-matcher a second time -> still not_exact -> x-adjudicator (both images, both final
+  # readings) -> C1_READING_FIXED if the adjudicator confirms one reading was the misread (merge
+  # proceeds with an identity-by-option-number map, since the agent itself never produced one
+  # across two not_exact verdicts -- documented judgment call, see report) else C1_UNMATCHED
+  # (keep separate). A key-consistency failure on an otherwise-exact_same pair is a separate,
+  # parallel terminal outcome (C1_KEY_INCONSISTENT), not part of this not_exact chain.
+  # step_plugins.C1Plugin.check() implements this directly (does not call
+  # resolve_single_run_items), the same precedent as B3/A4/A6/B7's own bespoke check()s.
+  fallback: [reread, adjudicator]
+  flags:
+    C1_READING_FIXED: high
+    C1_UNMATCHED: normal
+    C1_KEY_INCONSISTENT: high
+  safe_default: "keep separate (no merge) -- only a verified exact_same, key-consistent pair ever merges"
+  codebook_file: null
+
+D1:
+  stage: "D"
+  name: "Pick the chapter"
+  item: "question"
+  # DISCREPANCY (found and fixed building this step, see the build report / docs/OPEN_QUESTIONS.md):
+  # this entry was written speculatively before D1 existed (empty input_fields/fallback/flags).
+  # agent itself is correct as written (d1-chapter-picker.md really is a plain 2-run agent step,
+  # no SCRIPT-resolved shortcut the way A5/A6/B4/B7/C1 have); everything below it is filled in to
+  # match the real build.
+  agent: "d1-chapter-picker"
+  runs: 2
+  needs: "C1, A9"
+  # Matches the d1-chapter-picker.md Input block: question (stem/statements/lists/options),
+  # correct_answer (= this build's "the answer used in Stage D" rule, spec 12 preamble:
+  # corrected_answer when B8 made one, else official_answer -- D7/latest_answer is out of this
+  # pass's scope, see step_plugins.py's _d_answer_to_support docstring), chapters (id, title,
+  # top-level headings, this subject only -- never narrowed by branch, see D1Plugin's own
+  # judgment-call note: the chapters file carries no branch field, and B7's own branch output is
+  # frequently 'unsure' itself, confirmed real on Q-000015).
+  input_fields: [question, correct_answer, chapters]
+  output_schema: schemas/D1.json
+  check: scripts/checks/D1.py
+  # On failure (12/D1): disagreement or unsure -> adjudicator -> D1_ADJUDICATED (normal).
+  # Adjudicator unsure -> run A's choice if any valid, else search_index.rank's top-ranked chapter,
+  # D1_GUESS (high). No retry is named for this step (same shape as A8: the 2 runs ARE the retry).
+  fallback: [second_opinion, adjudicator]
+  flags:
+    D1_ADJUDICATED: normal
+    D1_GUESS: high
+    # Added by this build (not in spec 12/D1's own catalogue -- same precedent as B6_IMAGE_INPUT_
+    # UNSAFE/B2_MISSING_QNO being added where a real structural gap needed its own flag code): this
+    # build's real data has ncert/chapters/ indexed for Biology ONLY (Stage A hasn't covered
+    # Physics/Chemistry yet, docs/MASTER_PLAN.md). A Physics/Chemistry question therefore has ZERO
+    # candidate chapters -- not a disagreement or an "unsure" judgement, a real upstream sequencing
+    # gap -- so D1 never dispatches the agent at all for it and blocks immediately instead of
+    # guessing from nothing.
+    D1_NO_CHAPTERS: blocker
+  safe_default: "adjudicator unsure -> run A's choice if valid, else search_index.rank's top-ranked chapter (D1_GUESS, high); zero candidate chapters for the question's subject -> blocked, no guess (D1_NO_CHAPTERS, blocker, new code -- see flags note above)"
+  codebook_file: null
+
+D2:
+  stage: "D"
+  name: "Pick the subtopic"
+  item: "question"
+  # DISCREPANCY: same speculative-placeholder situation as D1 above; filled in to match the real
+  # build.
+  agent: "d2-subtopic-picker"
+  runs: 2
+  needs: "D1"
+  # Matches the d2-subtopic-picker.md Input block: question, correct_answer, subtopics (id, name,
+  # one-line description -- this chapter's list, or both chapters' lists for a two-chapter D1
+  # question), note_from_runner (optional, set only on D3's own D2-retry dispatch: "previous
+  # subtopics had no passages").
+  input_fields: [question, correct_answer, subtopics, note_from_runner]
+  output_schema: schemas/D2.json
+  check: scripts/checks/D2.py
+  # On failure (12/D2): identical shape to D1, one level down.
+  fallback: [second_opinion, adjudicator]
+  flags:
+    D2_ADJUDICATED: normal
+    D2_GUESS: high
+    # Added by this build, same precedent as D1_NO_CHAPTERS above: a D1 chapter with no drafted
+    # subtopic list yet (A4 hasn't run for it) leaves D2 with nothing to show the agent.
+    D2_NO_SUBTOPICS: blocker
+  safe_default: "adjudicator unsure -> run A's choice if valid, else search_index.rank's top-ranked subtopic (D2_GUESS, high); the chosen D1 chapter(s) have no drafted subtopic list yet -> blocked, no guess (D2_NO_SUBTOPICS, blocker, new code -- see flags note above)"
+  codebook_file: null
+
+D3:
+  stage: "D"
+  name: "Fetch the passages"
+  item: "question"
+  # DISCREPANCY (found and fixed building this step, see the build report): the placeholder agent
+  # field was plain "script". Spec 12/D3's own Worker line IS "SCRIPT (fetch_passages.py)" with no
+  # agent at all for the main procedure -- but its own "On failure" line names a real agent
+  # dispatch ("zero latest passages -> re-run D2 once"), the same two-phase SCRIPT-mostly-but-
+  # sometimes-an-agent-call shape step_kind() already recognises via a "script + <agent>" value for
+  # A6/D6. Corrected to that convention (same correction C1's own entry documents for the matching
+  # reason) so run_step.py's step_kind() classifies D3 as hybrid, not pure-script.
+  agent: "script + d2-subtopic-picker"
+  runs: 1
+  needs: "D2"
+  # The main SCRIPT procedure takes no agent input_fields at all (spec 12/D3 Worker: SCRIPT reads
+  # the question record's own d2_subtopic_ids plus ncert/links, ncert/passages, ncert/pairs
+  # directly -- scripts/fetch_passages.py, invoked `--item-id <QID>` per scripts/CONVENTIONS.md's
+  # own escape hatch for a step whose item isn't a chapter). The ONE agent call this step can ever
+  # make (its own D2-retry escape hatch) reuses D2's own input_fields exactly (see D2 entry above).
+  input_fields: []
+  output_schema: schemas/D3.json
+  check: scripts/checks/D3.py
+  # On failure (12/D3, verbatim): "zero latest passages -> re-run D2 once with note 'previous
+  # subtopics had no passages'; still zero -> blocked, D3_NO_PASSAGES (blocker)." Free-text
+  # fallback entry (not the generic retry-once shape), same precedent as B3's own
+  # "re-run B2 once (fewer than four options found)" entry.
+  fallback: ["re-run D2 once (zero latest passages)"]
+  flags:
+    D3_NO_PASSAGES: blocker
+  safe_default: "zero latest passages -> re-run D2 once (note: previous subtopics had no passages); still zero -> blocked, no safe default (D3_NO_PASSAGES, blocker)"
+  codebook_file: null
+  # Real-data note for whoever runs this step next: ncert/pairs/ is EMPTY in this project's real
+  # data (A6 has only ever run against hand-built fixture chapters, never BIO12-CH01/CH03 for
+  # real) -- so the 'older' list's steps (b)/(c) (A6-paired partners; unpaired 'none'-tagged older
+  # passages) will genuinely come back empty for every real question tested so far. This is an
+  # honest, expected gap, not a bug; see the build report.
+
+D4:
+  stage: "D"
+  name: "Quote the evidence"
+  item: "question × answer"
+  # DISCREPANCY: same speculative-placeholder situation as D1/D2 above; filled in to match the
+  # real build. agent itself is correct as written (no "script |" prefix -- unlike A5/A6/B4/B7/C1,
+  # the SCRIPT half here is a post-hoc quote-verification CHECK on every item, not a path that lets
+  # the script resolve some items without ever calling the agent at all; same precedent as B8's own
+  # agent field staying plain "b8-faulty-fixer" despite B8Plugin also doing its own quote
+  # verification in code).
+  agent: "d4-evidence-quoter"
+  runs: 1
+  needs: "D3"
+  # Matches the d4-evidence-quoter.md Input block: question, answer_to_support (= the same "answer
+  # used in Stage D" rule as D1/D2 above), passages (D3's `latest` list only, id + full text),
+  # codebook (codebook/D4_link_type.md's text, present ONLY if that file exists -- it does not
+  # exist in this build, confirmed; see the report).
+  input_fields: [question, answer_to_support, passages, codebook]
+  output_schema: schemas/D4.json
+  check: scripts/checks/D4.py
+  # On failure (12/D4, verbatim): "quote not found -> retry with 'Quote N not found in passage P;
+  # copy exactly'; still not found -> drop it, downgrade supports_answer, D4_QUOTE_NOT_FOUND
+  # (high). partly -> D4_PARTLY (normal). not_at_all -> D4_NO_SUPPORT (normal). beyond_ncert_method
+  # -> D4_BEYOND_NCERT (normal)." The generic retry-once resolver (resolve_single_run_items) drives
+  # the structural retry; step_plugins.D4Plugin's own post_assembly re-verifies every quote
+  # independently and does the actual drop+downgrade (never trusts the agent's own claim), and
+  # raises the three always-on outcome flags on the FINAL resolved value regardless of check()
+  # pass/fail -- same precedent as A8/B8's own unconditional outcome flags.
+  fallback: [retry]
+  flags:
+    D4_QUOTE_NOT_FOUND: high
+    D4_PARTLY: normal
+    D4_NO_SUPPORT: normal
+    D4_BEYOND_NCERT: normal
+    # Spec 12/D4 Checks (5): "derivation cross-check (numericals only)... mismatch ->
+    # D4_DERIVATION_MISMATCH (normal)." Implemented (scripts/checks/D4.py) but honestly UNTESTED
+    # against real data in this build -- Q-000015, the only real end-to-end D4 run, is a statement
+    # question with no derivation_steps; see the build report.
+    D4_DERIVATION_MISMATCH: normal
+  safe_default: "quote not found after one retry -> drop it, downgrade supports_answer (D4_QUOTE_NOT_FOUND, high); a legitimate partly/not_at_all/beyond_ncert_method verdict is never a check failure -- always continues, always flagged (D4_PARTLY/D4_NO_SUPPORT/D4_BEYOND_NCERT, normal)"
+  codebook_file: codebook/D4_link_type.md   # CHANGED: the plugin already reads this file,
+  # but a null here hid the dependency from the Section 15 cascade, so editing the codebook
+  # would not have re-run D4. Declaring it is what makes the cascade able to see it.
+
+D5:
+  stage: "D"
+  name: "Older-edition line"
+  item: "question"
+  # DISCREPANCY: this entry was a speculative placeholder (empty input_fields/fallback/flags,
+  # fallback: [] despite spec 12/D5 naming a retry by name). Filled in to match the real build,
+  # same correction D1-D4 needed.
+  agent: "d5-older-line-finder"
+  runs: 1
+  needs: "D4"
+  # Matches the d5-older-line-finder.md Input block: question, answer_to_support (the same "answer
+  # used in Stage D" rule as D1/D2/D4 -- corrected_answer when B8 made one, else official_answer),
+  # latest_evidence (D4's VERIFIED lines, may legitimately be empty), older_passages (D3's `older`
+  # list: A6-paired partners plus unpaired older passages that may be deleted content, id + text).
+  input_fields: [question, answer_to_support, latest_evidence, older_passages]
+  output_schema: schemas/D5.json
+  check: scripts/checks/D5.py
+  # On failure (12/D5, verbatim): "retry; drop, D5_QUOTE_NOT_FOUND (normal)." Driven by the
+  # generic retry-once resolver (step_plugins.resolve_single_run_items); step_plugins.D5Plugin's
+  # own _post_assembly then re-verifies EVERY older line independently against the older book on
+  # disk and does the actual drop, never trusting the agent's claim -- the same belt-and-braces
+  # D4Plugin uses for the latest edition, because spec 4 rule 4 ("a quote that is not found is
+  # rejected") is not satisfied by a check that only gates a retry.
+  fallback: [retry]
+  flags:
+    D5_QUOTE_NOT_FOUND: normal
+    # Added by this build (not in spec 12/D5's catalogue -- same precedent as D1_NO_CHAPTERS /
+    # D2_NO_SUBTOPICS / B6_IMAGE_INPUT_UNSAFE, where a real structural gap needed its own code).
+    # REAL STATE TODAY: no older-edition book is indexed by Stage A and ncert/pairs/ is empty (A6
+    # has only ever run on hand-built fixtures), so D3's `older` list comes back empty for every
+    # real question. D5 then resolves `skipped` with no agent call -- dispatching the agent to say
+    # "none for everything" would be work-shaped noise -- and raises this flag so the gap is
+    # visible on the item. It matters downstream: with no older line, D6's rules 3 and 3b cannot
+    # fire at all, which is what D6_STATUS_UNVERIFIABLE exists to say out loud.
+    D5_NO_OLDER_PASSAGES: low
+    # Shape failures the check reports with their own prefix, so a retry can be told which problem
+    # it had: a self-contradictory label (in both `older` and `none_for`), a repeated entry, a
+    # malformed item.
+    D5_BAD_SHAPE: normal
+    # The agent file's own Never rule ("Never quote the latest edition here") made mechanical: a
+    # passage_id whose book-id letter is L, or that is in D3's `latest` list, is refused outright
+    # and reported separately from "not found" -- the two have different causes and different fixes.
+    D5_LATEST_EDITION_QUOTE: normal
+  safe_default: "older quote not found after one retry -> drop that line, record its `for` label in none_for as '(older quote not found, dropped)' (D5_QUOTE_NOT_FOUND, normal); zero older passages available -> `skipped`, every D4 label recorded as none_for, no agent call (D5_NO_OLDER_PASSAGES, low, new code -- see flags note above)"
+  codebook_file: null
+
+D6:
+  stage: "D"
+  name: "Status and reason note"
+  item: "question"
+  # agent field is correct as written: spec 12/D6's Worker line really is three parts -- "SCRIPT
+  # decides status; AGENT d6-status-note-writer writes the note; SCRIPT verifies" -- which is the
+  # "script + <agent>" hybrid shape step_kind() already recognises (same as A6/D3).
+  agent: "script + d6-status-note-writer"
+  runs: 1
+  needs: "D5"
+  # Matches the d6-status-note-writer.md Input block: syllabus_status (DECIDED BY THE SCRIPT, not
+  # the agent -- see the rule-ladder note below), latest_evidence / older_evidence /
+  # lab_manual_evidence (verified lines only), change_log_entries on those passages. PLUS
+  # allowed_note_types, added by this build (judgement call): the agent file lists all six note
+  # types as allowed, but the status the script already decided rules most of them out, and
+  # passing the legal set is the difference between the agent choosing wrongly and choosing at
+  # all. `answer_changed` is never in that set here -- spec 12/D7 is the only thing that may
+  # produce it, and D7 runs after D6.
+  input_fields: [syllabus_status, allowed_note_types, latest_evidence, older_evidence, lab_manual_evidence, change_log_entries]
+  output_schema: schemas/D6.json
+  check: scripts/checks/D6.py
+  # THE RULE LADDER IS LOAD-BEARING AND ITS ORDER IS THE RULE. step_plugins.D6Plugin._decide_status
+  # walks spec 12/D6's rules 0, 1, 2, 3, 3b, 4 in that literal order, first match wins, and stops:
+  #   0.  D4 link_type in {rule_used, rules_chained, concept_applied} with >= 1 VERIFIED rule
+  #       quote -> latest_ncert          (this is what keeps most of Physics on-syllabus: no NCERT
+  #                                       sentence states a numerical's answer, and SPEC 2.4 is
+  #                                       explicit that this must never make it outside_ncert)
+  #   1.  else D4 has verified latest lines -> latest_ncert
+  #   2.  else a verified lab-manual line exists -> lab_manual
+  #   3.  else a verified D5 older line in a passage on deleted_topics.csv -> deleted_content
+  #   3b. else a verified D5 older line in a passage with a change-log entry -> latest_ncert
+  #       (note type decided by D7)
+  #   4.  else outside_ncert; note type outside_rules if link_type == beyond_ncert_method
+  # Reordering it silently relabels whole families of real questions as off-syllabus, which is a
+  # claim a student sees. Every "verified" above means re-verified by the script against the real
+  # book on disk at decision time, not trusted from D4/D5's stored output.
+  #
+  # GAP WORTH THE OWNER'S ATTENTION, not a bug in this build: RULE 2 CURRENTLY HAS NO PRODUCER.
+  # D6 can only recognise a lab-manual line if some earlier step quoted one, and no step does --
+  # spec 12/D4's Reads line gives D4 "D3 latest passages" only, and D5 is scoped to older
+  # passages. D3 genuinely fetches lab-manual passages (its procedure step (d)) and then nothing
+  # ever quotes them. Rule 2 is implemented correctly here (it looks for a verified quote whose
+  # passage_id is in a lab-manual book, across both quoting steps' evidence) and will fire the
+  # moment a producer exists; it cannot fire today. The spec's own expectation that "salt-analysis
+  # questions (2026 May) are expected lab_manual" therefore cannot currently be met. Deliberately
+  # NOT fixed by widening D4's input, which spec 12/D4 fixes explicitly.
+  #
+  # On failure (12/D6, verbatim): "retry; then SCRIPT fills the template from verified lines,
+  # D6_TEMPLATE_NOTE (low). Note types written_differently, deleted, outside, outside_rules ->
+  # D6_NOTE_APPROVAL (normal)."
+  fallback: [retry, "SCRIPT fills the template from verified lines"]
+  flags:
+    D6_TEMPLATE_NOTE: low
+    D6_NOTE_APPROVAL: normal
+    # Added by this build (new code, same precedent as D1_NO_CHAPTERS). An `outside_ncert` verdict
+    # reached while the question had ZERO older-edition passages is not the same claim as one
+    # reached with the older book in hand: rules 3 and 3b were never evaluated, so
+    # `deleted_content` was never actually ruled out. Telling a reviewer -- and eventually a
+    # student -- that a question is off-syllabus on that basis is exactly the error SPEC 2.4 warns
+    # about and exactly what today's real data would produce for every question, so it is flagged
+    # rather than presented as a finding.
+    D6_STATUS_UNVERIFIABLE: normal
+  safe_default: "the agent's note unusable after one retry -> the SCRIPT fills spec 3.1's template for the decided status from VERIFIED lines only (D6_TEMPLATE_NOTE, low). The script never fills `written_differently` on its own: that note type asserts the older line states the same fact in different words, which spec 12/D6 gives the agent to judge, so with no usable agent note the honest fallback for latest_ncert is `same_both`. If the template needs a line the question has no VERIFIED line for -- which really happens: rule 3b resolves to latest_ncert on the strength of an OLDER line with no verified latest line at all, and rule 2's lab-manual line has no producer today -- the note is left EMPTY for Stage F to write and D6_TEMPLATE_NOTE escalates to `normal`, rather than printing a placeholder a student would read as NCERT's own wording. The syllabus_status itself has no fallback and needs none: it is the script's own decision, made before any agent call."
+  codebook_file: null
+
+D7:
+  stage: "D"
+  name: "Latest-NCERT answer"
+  item: "question"
+  agent: "d7-latest-answer-checker"
+  runs: 1
+  needs: "D6"
+  # INPUT RESTRICTED BY RULE, ENFORCED IN CODE, NOT BY CONVENTION. CLAUDE.md and spec Rule 10:
+  # "B6 never sees the key; B6 and D7 never see coaching material." D7 differs from B6 in that it
+  # IS allowed the official answer (it has to compare against it) but is NOT allowed coaching
+  # material -- and, by the same logic that makes B6 blind, must not see B6's own answer either,
+  # or its "independent" reading of the latest book is anchored on another agent's guess.
+  # step_plugins._guard_d7_input() is an ALLOWLIST (these exact top-level fields, nothing else)
+  # plus a recursive denylist (any b6_* / coaching_* / legacy_* field name at any depth, and
+  # lib/coaching_guard.py's inputs/coaching + inputs/legacy_sheets path check). It RAISES rather
+  # than warns, and it runs on the retry input too -- a leak here is not something to carry on
+  # from. Matches d7-latest-answer-checker.md's Input block exactly.
+  input_fields: [question, options, official_answer, latest_evidence, older_evidence, change_log_entries]
+  output_schema: schemas/D7.json
+  check: scripts/checks/D7.py
+  # RUN GATE (12/D7, verbatim): "Runs for: every question whose D4/D5 passages have a change-log
+  # entry, and every question whose older line differs from its latest line. Others -> `skipped`
+  # with `latest_answer = official answer`." Both limbs implemented in
+  # step_plugins.D7Plugin._should_run. The second limb compares per `for` label after BOTH
+  # normalisations spec 5.7 defines (normalise_quote then latex_normalise.normalise, which 5.7
+  # scopes to exactly this "comparing two readings" use), so "differs" means the editions really
+  # say it differently rather than that one used a thin space. The gate is deliberately broad:
+  # the cost of running D7 once too often is one agent call; the cost of missing a changed answer
+  # is teaching a stale one.
+  #
+  # REAL STATE TODAY: ncert/change_log.csv is HEADER-ONLY (A6-A9 have only ever run on fixtures)
+  # and no older edition is indexed, so BOTH limbs are false for every real question and D7 skips
+  # all of them. That is the spec's own path, not a stub -- but it means the agent-dispatch half
+  # of this step, D7_ANSWER_CHANGED, D7_UNEXPLAINED_CHANGE and the D4 re-run below are all
+  # genuinely untested against real data. No change-log row was fabricated to change that.
+  #
+  # On failure / results (12/D7, verbatim): "same_as_official: false -> always D7_ANSWER_CHANGED
+  # (high), note type becomes answer_changed, sentence appended, and D4 re-runs for latest_answer.
+  # No change-log entry explains it -> D7_UNEXPLAINED_CHANGE (high)." That D4 re-run is dispatched
+  # BY D7 ITSELF, under steps/D7/work|out/<QID>.d4_latest.*, validated with D4's own schema and
+  # check -- the same precedent as D3Plugin owning its own d2-subtopic-picker re-dispatch. D4's
+  # own item is left untouched: its evidence stays the proof of the OFFICIAL answer and the new
+  # evidence is stored separately as d4_latest_answer_evidence, because spec 3 keeps BOTH answers.
+  fallback: [retry, "D4 re-runs for latest_answer when the answer changed"]
+  flags:
+    D7_ANSWER_CHANGED: high
+    D7_UNEXPLAINED_CHANGE: high
+    # Added by this build. The quote is D7's entire authority ("the latest book really says this"),
+    # so a quote that cannot be found in the latest edition -- in D7's own output, or in the D4
+    # re-run it triggers -- is a high-severity failure, not a shape nit.
+    D7_QUOTE_NOT_FOUND: high
+    # Added by this build: the output contradicts itself (same_as_official disagrees with
+    # latest_answer vs the official answer, or change_id names an entry that does not cover any
+    # evidence passage). High because everything downstream of D7 -- what is taught, whether D4
+    # re-runs -- keys off same_as_official.
+    D7_INCONSISTENT: high
+    # Added by this build. Spec 5.5 rung 4: "Unsure / invalid -> the step's safe default + flag,
+    # or blocked + blocker flag if the step has no safe default." D7 has no safe default that
+    # could be invented without making a claim about what students are taught, so the item blocks.
+    D7_UNRESOLVED: blocker
+  safe_default: "neither run-gate limb true -> `skipped` with latest_answer = the official (or B8-corrected) answer, no agent call, no flag (spec 12/D7's own wording; the skipped status is the record). Unusable output after one retry -> no safe default: the item blocks with D7_UNRESOLVED (blocker) and the official answer stands explicitly unchecked, rather than a latest answer being guessed."
+  codebook_file: null
+
+D8:
+  stage: "D"
+  name: "Fact line"
+  item: "question"
+  agent: "d8-fact-line-writer"
+  runs: 1
+  needs: "D7"
+  # Matches the d8-fact-line-writer.md Input block: question; answer_taught; subtopic; evidence.
+  # `answer_taught` is latest_answer (spec 12 preamble: "D8-E5 use latest_answer (what students
+  # are taught)") -- D7's value when D7 changed it, else the corrected/official answer. `evidence`
+  # is the LATEST answer's own evidence (d4_latest_answer_evidence) when D7 changed the answer and
+  # D4 re-ran for it, else D4's original evidence: quoting the official answer's proof underneath
+  # a different taught answer would be a real mismatch, not a formatting detail.
+  input_fields: [question, answer_taught, subtopic, evidence]
+  output_schema: schemas/D8.json
+  check: scripts/checks/D8.py
+  # Spec 12/D8 names only "low confidence -> D8_LOW_CONFIDENCE (low)" and no Checks list, so the
+  # retry here covers the Style rules scripts/checks/D8.py can honestly verify (that file's own
+  # docstring lists exactly which Style rules are NOT mechanically checkable and why -- notably
+  # "no specific numbers" and "never include year", both of which would fail correct output more
+  # often than wrong output; spec's own 2015#180 outside_ncert example is a fact ABOUT a year).
+  fallback: [retry]
+  flags:
+    D8_LOW_CONFIDENCE: low
+    # Added by this build: the cosmetic Style breaches (an option number in the fact line, "which
+    # of the following", a numerical missing its Problem:/Rule: shape). Low -- the line is usable,
+    # it just reads like the question instead of the fact.
+    D8_STYLE: low
+    # Added by this build, and NOT cosmetic: a statement question's fact_line must be the
+    # ' | '-join of its own `facts`, because D9 matches a statement question FACT BY FACT ("Include
+    # a statement question if any one of its facts matches"). A fact_line that disagrees with
+    # `facts` quietly breaks repeat-finding two steps later, which is why this one is `normal`.
+    D8_FACTS_MISMATCH: normal
+  safe_default: "unusable after one retry -> the agent's fact_line is kept as written and flagged (D8_STYLE low / D8_FACTS_MISMATCH normal); a wrongly-styled fact line is still a usable fact line and Stage F is where style is approved. A low-confidence line is never a check failure -- it is kept and flagged D8_LOW_CONFIDENCE."
+  codebook_file: null
+
+D9:
+  stage: "D"
+  name: "Possible repeats"
+  item: "question"
+  agent: "d9-repeat-finder"
+  runs: 1
+  needs: "D8 (all questions of the subtopic)"
+  # Matches the d9-repeat-finder.md Input block: `this` (id, year, fact_line, facts) and `others`
+  # (id, year, sitting, fact_line). The subtopic IDS are deliberately NOT shown to the agent: they
+  # are the script's scoping rule, not a judgement input, and showing them invites grouping by
+  # subtopic name, which the agent file explicitly forbids ("Do not include questions that only
+  # share the subtopic name").
+  input_fields: [this, others]
+  output_schema: schemas/D9.json
+  check: scripts/checks/D9.py
+  #
+  # *** REAL SPEC QUESTION FOR THE OWNER, IMPLEMENTED AS WRITTEN. *** Spec 12/D9's Reads line
+  # scopes the candidate table to questions in the same subtopic "from **other years**". That
+  # makes a repeat between two SITTINGS OF ONE YEAR structurally unfindable -- not merely unlikely
+  # to be found, but impossible to propose, since D10/D11 can only ever see what D9 linked. Real
+  # years with two sittings: 2016 (MAIN/PH2), 2019 (MAIN/REEXAM), 2020 (MAIN/REEXAM), 2024
+  # (MAIN/RETEST), 2026 (CANCELLED 3 May / REEXAM 21 Jun). The 2026 pair is the one that matters:
+  # a cancelled paper and its re-exam are the likeliest place in the whole corpus for one fact to
+  # be asked twice inside a year. Implemented exactly as the spec says rather than silently
+  # widened; codebook/D11.md §6 raises the same question independently. If the owner wants it
+  # widened the change is two lines: the `year` comparison in step_plugins.D9Plugin._others_table
+  # and the matching one in scripts/checks/D9.py (swap year for (year, sitting)).
+  #
+  # Spec 12/D9 names no failure mode at all, so the only fallback is the generic retry for a
+  # malformed output.
+  fallback: [retry]
+  flags:
+    # Added by this build: an id that is not in the candidate table, is this question's own id,
+    # shares no subtopic, or is from the SAME year. Normal, not low -- an invented id would put a
+    # question into a repeat group it has no business in.
+    D9_BAD_CANDIDATE: normal
+  safe_default: "no other question in the same subtopic from another year -> `skipped` with possible_repeats = [], no agent call and NO FLAG. Spec 12/D9 names no flag for this and it is not a doubt: it is the plain, common fact that a subtopic has one year's questions in it. (It is also the state of the entire bank today -- 10 questions, all from one sitting of one year -- so every real D9 currently resolves this way; the skipped status is the record.) Unusable output after one retry -> possible_repeats = [] and flagged; D9 over-including is cheap, so an unreadable answer is treated as 'found nothing' rather than guessed at."
+  codebook_file: null
+
+D10:
+  stage: "D"
+  name: "Candidate groups"
+  item: "subtopic"
+  # Pure SCRIPT, and the only step in Stage D that is. Spec 12/D10's whole text ends "No
+  # judgement." -- there is no threshold, no similarity measure and no tie-break in
+  # scripts/build_groups.py, by design: two questions share a group if and only if D9 linked them,
+  # directly or through a chain.
+  agent: "script"
+  runs: 1
+  needs: "D9"
+  # No agent is ever called, so input_fields stays empty per Rule 3 (it lists what an AGENT call
+  # may see). The script reads each canonical question record's own d9_possible_repeats and
+  # d2_subtopic_ids.
+  input_fields: []
+  output_schema: schemas/D10.json
+  check: scripts/checks/D10.py
+  # Invoked `python3 scripts/build_groups.py --subtopic-id <SUBTOPIC_ID>` (scripts/CONVENTIONS.md's
+  # own escape hatch for a step whose item is not a chapter -- D10's item is a SUBTOPIC; the table
+  # in that file is updated to match). Writes steps/D10/out/<SUBTOPIC_ID>.json. Idempotence (spec
+  # 5.9) needs care here because RG ids are counter-backed and never reused: the script reads its
+  # own previous output first and REUSES the group_id of any component whose member set is exactly
+  # unchanged, so a no-op rerun writes byte-identical output and mints nothing.
+  # No agent -> no retry/second-opinion/adjudicator chain; a union-find has nothing to adjudicate.
+  fallback: []
+  flags:
+    # Added by this build. scripts/checks/D10.py audits the SCRIPT's own output (no qid in two
+    # groups; no qid in both a group and singletons; every D9 link's endpoints in the SAME group --
+    # the classic un-merged-component bug; every group member actually touched by a link). A
+    # failure here is a code defect, not data doubt, and nothing downstream should build repeat
+    # groups on a broken partition, so it blocks the subtopic.
+    D10_PARTITION_INVALID: blocker
+  safe_default: null
+  codebook_file: null
+  # Real-data note: no subtopic has a candidate group today, and none can. D10 forms a group only
+  # from a D9 link, and every real question's D9 resolves `skipped` for want of an other-year
+  # question in the same subtopic (10 questions, all one sitting). build_groups.py correctly
+  # writes nothing rather than inventing a group; tested on clearly-labelled fixtures under
+  # tests/fixtures/ instead (tests/test_d5_d11.py) -- never in the real pipeline paths, per the
+  # 2026-10-10 lesson in docs/OPEN_QUESTIONS.md.
+
+D11:
+  stage: "D"
+  name: "Confirm groups"
+  item: "group"
+  agent: "d11-group-confirmer"
+  runs: 2
+  needs: "D10"
+  # Matches spec 12/D11's Reads line and d11-group-confirmer.md's Input block: `members`, each
+  # with id, year, sitting, the first 300 characters of the stem, the answer text and the fact
+  # line. Plus `codebook` -- codebook/D11.md EXISTS, so spec 13.0 applies: its full text is passed
+  # and its content hash is recorded as `codebook_version` on every record D11 writes
+  # (d11_codebook_version). codebook/D11.md's own STATUS section notes that nothing in this
+  # codebase computed codebook_version anywhere; that is now done, for D11.
+  input_fields: [members, codebook]
+  output_schema: schemas/D11.json
+  check: scripts/checks/D11.py
+  # On failure (12/D11, verbatim): "disagreement -> adjudicator -> D11_ADJUDICATED (normal)."
+  # Two runs plus adjudicator, following D1/D2/A4's real dispatch shape. "Runs agree" is compared
+  # on the WHOLE PARTITION -- which groups exist, which members are in them, WHAT LABEL each
+  # member got, who is related to whom, who was removed -- not just membership: two runs that keep
+  # the same members but disagree about `exact_same` vs `related` have genuinely disagreed about
+  # what the bank will teach (that is spec's own 2013#7 n-type vs 2019#33 p-type boundary).
+  # SPLITS: spec 12/D11 lets one candidate group become two ("if the group holds two different
+  # facts, split it into two groups"). The first output group keeps the candidate's own RG id and
+  # each further group mints a new one; the resolved id map is written to
+  # steps/D11/out/<RG>.resolved.json and reused on a re-resolve, so a rerun does not burn ids.
+  fallback: [second_opinion, adjudicator]
+  flags:
+    D11_ADJUDICATED: normal
+    # Added by this build. Spec 12/D11 names no rung past the adjudicator, and spec 5.5 rung 4 is
+    # explicit: "Unsure / invalid -> the step's safe default + flag, or blocked + blocker flag if
+    # the step has no safe default." A repeat group has no safe default worth having -- inventing
+    # one would either claim repeats nobody confirmed or silently discard D9's real signal -- so
+    # when neither run is usable the candidate group blocks and no repeat is claimed.
+    D11_UNRESOLVED: blocker
+  safe_default: "one run invalid -> use the other, D11_ADJUDICATED (normal). Adjudicator unsure or out of contract -> run A's verdict if it is valid, else run B's, D11_ADJUDICATED (normal) with the fallback named in the message. Neither run usable -> blocked, D11_UNRESOLVED (blocker); a repeat group is never guessed at."
+  codebook_file: codebook/D11.md
+  # Real-data note: no candidate group exists (see D10's note), so D11 has never been dispatched.
+  # Its 2-run/adjudicator/split/blocked paths are exercised on clearly-labelled fixtures only
+  # (tests/test_d5_d11.py), never in real pipeline paths.
+
+E0:
+  stage: E
+  name: Category discovery
+  item: sample
+  agent: e0-open-look, e0-category-grouper
+  runs: 1
+  needs: D8
+  input_fields:
+  - question
+  - answer_taught
+  - evidence
+  - subject
+  output_schema: schemas/E0.json
+  check: scripts/checks/E0.py
+  fallback: []
+  flags:
+    E0_FINDINGS_READY: normal
+  safe_default: null
+  codebook_file: null
+
+ECAT:
+  stage: E
+  name: Category rating (grouped)
+  item: group of similar questions
+  agent: e-category-rater
+  runs: 1
+  needs: E0
+  input_fields:
+  - group
+  - codebook
+  - questions
+  output_schema: schemas/ECAT.json
+  check: scripts/checks/ECAT.py
+  fallback:
+  - retry
+  flags:
+    ECAT_NEW_CATEGORY: normal
+    ECAT_CONCEPT_UNSURE: low
+    ECAT_SOURCE_INCOMPLETE: normal
+  safe_default: 'THE ITEM IS A GROUP, NOT A QUESTION. scripts/build_ecat_packets.py turns the 580
+    rated questions into 45 (subject x E1 type) groups and 120 packets of at most six, because
+    docs/question_categories/RULEBOOK.md rule 0.7 requires similar questions to be judged against
+    each other -- v1 was tagged in paper order and gave one match-list question
+    `check_each_statement` and another `elimination` with no stated reason for the difference, which
+    is the defect this step exists to correct. So `group_note` is required and the check fails a
+    packet that returns fewer ratings than it was given questions. ON FAILURE: retry once with the
+    check message. Still failing -> keep the agent''s answer as provisional, blank only the fields
+    the check named, ECAT_CONCEPT_UNSURE (low). Never fill a field to look complete: a blank with a
+    reason in `note` and a never-judged field must look different (SPEC Rule 19). A question whose
+    `review_status` is `source_incomplete` MUST come back with `traps: []` and the
+    `source_damage_artifact` verdict -- 113 of the 580 are in that state, and the per-subject
+    analyses in exports/discovery/clusters_pass_b/ recorded roughly 98 devices that were our own
+    extraction damage rather than the examiner''s design (rulebook rule 5, section 5a). An
+    unfamiliar label is `new_demand` or `new_trap` WITH a description, never the nearest fit:
+    forcing a near fit is what makes a vocabulary look complete while hiding what did not fit, and
+    every axis has an escape hatch for this reason (SPEC Rule 24).'
+  codebook_file: docs/question_categories/RULEBOOK.md
+
+E1:
+  stage: E
+  name: Question type
+  item: question
+  agent: script | e1-type-tagger
+  runs: 1
+  needs: D7
+  input_fields:
+  - question
+  - codebook
+  - allowed
+  output_schema: schemas/E1.json
+  check: scripts/checks/E1.py
+  fallback:
+  - retry
+  flags:
+    E_NEW_CATEGORY: normal
+  safe_default: 'retry exhausted -> new_type with the failing check''s message as new_description, E_NEW_CATEGORY
+    (normal). This is spec 13/E1''s own fallback (''new_type -> E_NEW_CATEGORY (normal) with the description'')
+    and is strictly better than a near value: a stretched value is invisible in Stage F, a new_type is
+    reviewed.'
+  codebook_file: codebook/E1.md
+
+E2:
+  stage: E
+  name: Format
+  item: question
+  agent: e2-format-tagger
+  runs: 1
+  needs: E1
+  input_fields:
+  - question
+  - negative_words_seen
+  - codebook
+  - allowed
+  output_schema: schemas/E2.json
+  check: scripts/checks/E2.py
+  fallback:
+  - retry
+  - adjudicator
+  flags:
+    E2_NEGATIVE_GUARD: high
+    E_NEW_CATEGORY: normal
+  safe_default: 'guard fails, retry fails, adjudicator unsure -> take the guard''s own required value,
+    because the guard knows what the format must be even when it cannot know which of two it is: with
+    a negative word and single-item/statement options, `pick_incorrect`; with combination options, `pick_correct_combination`;
+    with match-code options, `pick_match_code`. Raise E2_NEGATIVE_GUARD (high) with the agent''s value
+    as the provisional one so Stage F sees both.'
+  codebook_file: codebook/E2.md
+
+E3:
+  stage: E
+  name: Content shape
+  item: question
+  agent: e3-shape-tagger
+  runs: 1
+  needs: E2
+  input_fields:
+  - question
+  - evidence
+  - codebook
+  - allowed
+  output_schema: schemas/E3.json
+  check: scripts/checks/E3.py
+  fallback:
+  - retry
+  flags:
+    E_NEW_CATEGORY: normal
+    E3_MEDIUM: low
+  safe_default: retry exhausted -> new_shape with the failing check's message as new_description, E_NEW_CATEGORY
+    (normal), same reasoning as E1.
+  codebook_file: codebook/E3.md
+
+E4:
+  stage: E
+  name: Thinking
+  item: question
+  agent: e4-thinking-tagger
+  runs: 2
+  needs: E3
+  input_fields:
+  - question
+  - answer_taught
+  - evidence
+  - subject
+  - branch
+  - codebook
+  - codebook_version
+  output_schema: schemas/E4.json
+  check: scripts/checks/E4.py
+  fallback:
+  - adjudicator
+  flags:
+    E4_ADJUDICATED: normal
+    E4_NO_CODEBOOK: low
+  safe_default: 'runs disagree on the primary (or on whether a secondary exists), or either run is low-confidence
+    -> adjudicator. Adjudicator unsure -> run A''s primary with secondary null, E4_ADJUDICATED (normal),
+    both runs kept as provisional values. Never merge two primaries and never promote a secondary to break
+    a tie: codebook/E4.md §4 is explicit that a secondary is a second KIND of thinking, not a hedge between
+    two readings of the primary.'
+  codebook_file: codebook/E4.md
+
+E5:
+  stage: E
+  name: Traps
+  item: wrong option
+  agent: e5-trap-tagger
+  runs: 2
+  needs: E4
+  input_fields:
+  - question
+  - answer_taught
+  - wrong_option
+  - evidence
+  - change_log_entries
+  - codebook
+  - allowed
+  output_schema: schemas/E5.json
+  check: scripts/checks/E5.py
+  fallback:
+  - adjudicator
+  flags:
+    E5_ADJUDICATED: normal
+    E_NEW_CATEGORY: normal
+  safe_default: 'two runs disagree on the trap -> adjudicator. Adjudicator unsure -> run A''s trap, E5_ADJUDICATED
+    (normal), both kept as provisional values. HOW MANY ITEMS TO CREATE: 3 is the normal case, not a quota
+    (codebook/E5.md §1). official_status `normal` -> 3 items, one per option that is not the answer taught.
+    `multiple_accepted` -> one item per genuinely wrong option only. `bonus`/`dropped` -> no items at
+    all unless B8 produced a `corrected_answer`, in which case treat that as the answer and create items
+    for the remaining options. NEVER invent a third wrong option to reach three; real Q-000004 is `dropped`
+    with a B8 corrected_answer of 1 and is the live case for that branch.'
+  codebook_file: codebook/E5.md
+
+E6:
+  stage: E
+  name: Descriptive tags
+  item: question
+  agent: script | e6-context-tagger
+  runs: 1
+  needs: E1
+  input_fields:
+  - question
+  - structure
+  - has_figure
+  - codebook
+  output_schema: schemas/E6.json
+  check: scripts/checks/E6.py
+  fallback:
+  - retry
+  flags:
+    E6_CONTEXT_UNSURE: low
+  safe_default: 'patterns did not decide and the agent''s answer fails the check after one retry -> stem_context
+    `unsure`, E6_CONTEXT_UNSURE (low), the agent''s answer kept as the provisional value. Never fall back
+    to `plain`: codebook/E6.md §2 is that `plain` is never a tie-break winner, and the agent only runs
+    when two or more contexts already applied.'
+  codebook_file: codebook/E6.md
+
+E7V:
+  stage: E
+  name: Difficulty band (per question, papers_v2)
+  item: question
+  agent: e7-difficulty-rater
+  runs: 1
+  needs: B3V
+  input_fields:
+  - stem_en
+  - statements
+  - list_i
+  - list_ii
+  - options_en
+  - structure
+  - subject
+  - figure_image
+  - question_image
+  output_schema: schemas/E7V.json
+  fallback:
+  - retry
+  flags:
+    E7_DIFFICULTY_CONTESTED: normal
+  safe_default: 'THE RATER NEVER SEES AN ANSWER -- not the booklet''s printed answer, not a key, not
+    B6V''s solve. Difficulty is a property of the question, not of which option is correct, and a
+    rater who can see the answer reasons backwards from it: the route to a known answer always looks
+    shorter than the route a candidate has to find. The band is defined by COUNTED WORK (SPEC E7) --
+    easy = 1 step, medium = 2-3, hard = 4+ -- and `steps` must name the steps, because a band with
+    no countable steps behind it cannot be reviewed or overturned. A question that arrived damaged
+    is `unsure`, never `hard`: a broken question is unanswerable, and banding it hard puts a bug in
+    front of a student as a challenge. Distinct from step E7, which is a SCRIPT banding the v1
+    sheet from ECAT''s columns -- different item, different corpus.'
+
+E7:
+  stage: E
+  name: Difficulty band (solution load)
+  item: run
+  agent: script
+  runs: 1
+  needs: ECAT
+  input_fields:
+  - E4a_cognitive_demand
+  - E4b_solution_structure
+  - E1_question_type
+  - task_polarity
+  - E5_traps
+  - review_status
+  output_schema: schemas/E7.json
+  check: scripts/checks/E7.py
+  fallback: []
+  flags:
+    E7_NOT_SCORABLE: low
+  safe_default: 'SCRIPT-ONLY, AND NOT A PREDICTION OF STUDENT PERFORMANCE. scripts/rate_difficulty.py
+    scores SOLUTION LOAD -- how much work the printed question demands -- from drivers that are
+    already decided by earlier steps: ECAT''s `cognitive_demand` and `solution_structure`, the number
+    of items the printed E1 shape forces the student to adjudicate, whether a figure or table must be
+    read first, whether the task is negated, and whether any trap removes the chance of landing on
+    the answer part-way. It is a script and not an agent precisely because every driver is already
+    judged; an agent would re-guess deterministic inputs and make two runs disagree for no reason.
+    WE HOLD NO RESPONSE DATA, so this is never "how hard students find it" (SPEC Rule 22, the rule
+    that retired `obviously_wrong`). Load and difficulty are not the same thing -- a one-step
+    question on an obscure fact is low load and may still be answered badly -- and only item-analysis
+    data could separate them. `E7_difficulty_basis` stores which drivers fired, so a band can be
+    argued with and so this rubric is the thing to validate if response data ever arrives. A question
+    that is `source_incomplete`, or whose ECAT fields are not yet filled, gets NO band and
+    E7_NOT_SCORABLE (low): a band computed from empty inputs would be indistinguishable from a real
+    one (SPEC Rule 19). It therefore cannot run before ECAT -- and note that v1''s single E4 axis
+    cannot supply both sub-axes for ANY row (261 of 580 yield a demand, 161 a structure, 0 both),
+    because its labels map to one or the other and never to both.'
+  codebook_file: codebook/E7.md
+
+F1:
+  stage: F
+  name: Review queue and pack
+  item: run
+  agent: script
+  runs: 1
+  needs: E5, E6, D11
+  input_fields: []
+  output_schema: schemas/F1.json
+  check: scripts/checks/F1.py
+  fallback: []
+  flags: {}
+  safe_default: null
+  codebook_file: null
+
+F2:
+  stage: F
+  name: Review and edit
+  item: item
+  agent: PEOPLE
+  runs: 1
+  needs: F1
+  input_fields: []
+  output_schema: schemas/F2.json
+  check: scripts/checks/F2.py
+  fallback: []
+  flags: {}
+  safe_default: null
+  codebook_file: null
+
+F3:
+  stage: F
+  name: Apply decisions, cascade
+  item: decision
+  agent: script
+  runs: 1
+  needs: F2
+  input_fields: []
+  output_schema: schemas/F3.json
+  check: scripts/checks/F3.py
+  fallback: []
+  flags: {}
+  safe_default: null
+  codebook_file: null
+
+F4:
+  stage: F
+  name: Counts
+  item: subtopic
+  agent: script
+  runs: 1
+  needs: F3
+  input_fields: []
+  output_schema: schemas/F4.json
+  check: scripts/checks/F4.py
+  fallback: []
+  flags: {}
+  safe_default: null
+  codebook_file: null
+
+F5:
+  stage: F
+  name: Release and export
+  item: chapter
+  agent: script
+  runs: 1
+  needs: F4
+  input_fields: []
+  output_schema: schemas/F5.json
+  check: scripts/checks/F5.py
+  fallback: []
+  flags: {}
+  safe_default: null
+  codebook_file: null
+
+F6:
+  stage: F
+  name: Gold set and scoring
+  item: run
+  agent: script
+  runs: 1
+  needs: F3
+  input_fields: []
+  output_schema: schemas/F6.json
+  check: scripts/checks/F6.py
+  fallback: []
+  flags: {}
+  safe_default: null
+  codebook_file: null
+
+QCA:
+  stage: "Q"
+  name: "Concept and approach"
+  item: "a physics or physical-chemistry question B3V has read"
+  agent: "q-concept-approach"
+  runs: 1
+  needs: "QCHAP"
+  # Scoped by the CONFIRMED subject only. QCHAP supplies chemistry's branch, which is how a
+  # physical-chemistry question is told from an organic one -- organic is deliberately out of
+  # scope, because its reactions ARE printed in NCERT and are quoted like any other evidence.
+  input_fields: [question_id, stem_en, statements, list_i, list_ii, options_en, structure,
+                 figure_image, question_image]
+  output_schema: schemas/QCA.json
+  check: scripts/qca_plugin.py
+  # On failure: retry once, then leave the question without a concept. A wrong concept is worse
+  # than none -- it is the line a reader trusts when they stop reading the question.
+  fallback: [retry]
+  flags:
+    QCA_CONCEPT_IS_A_SENTENCE: normal
+    QCA_WRONG_ID: blocker
+  safe_default: "no concept recorded"

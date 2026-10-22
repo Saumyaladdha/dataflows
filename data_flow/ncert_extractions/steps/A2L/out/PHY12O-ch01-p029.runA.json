@@ -1,0 +1,52 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "full", "x0": 0.097, "x1": 0.688}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.067],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.5494, 0.0, 0.8729, 0.124],
+     "column": "full", "size_rel": 1.6, "align": "center", "font": "sans",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.0982, 0.1354, 0.6847, 0.197],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.0976, 0.2006, 0.6859, 0.2622],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "section_heading", "bbox": [0.1006, 0.2764, 0.49, 0.2906],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "sans",
+     "text_color": "#00adef"},
+    {"n": 4, "role": "paragraph", "bbox": [0.0976, 0.2998, 0.6871, 0.4564],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "box", "bbox": [0.0982, 0.4711, 0.7376, 0.8567],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "fill": "#dbdcde", "text_color": "#221f1f"},
+    {"n": 5, "role": "paragraph", "bbox": [0.1276, 0.4793, 0.6659, 0.5652],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "figure", "bbox": [0.2006, 0.573, 0.62, 0.8223],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.3512, 0.831, 0.4412, 0.8384],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans",
+     "text_color": "#00adef"},
+    {"n": null, "role": "footer_rule", "bbox": [0.0976, 0.8687, 0.2906, 0.8701],
+     "column": "full", "size_rel": 1.0, "fill": "#221f1f"},
+    {"n": 7, "role": "paragraph", "bbox": [0.1006, 0.8797, 0.6853, 0.9316],
+     "column": "full", "size_rel": 0.85, "align": "left", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8141, 0.9155, 0.8718, 0.9371],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "sans",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "sans",
+     "text_color": "#221f1f"}
+  ],
+  "note": "Recto body page, one full column (text measure x 0.097-0.688, wide empty outer margin at right). page_header_band is the pale blue #c6eafb strip across the whole page top, y 0-0.067, with its #41c7f4 hairline and #00adef foot rule as internal edges of that one band; there is no rule_bar on this page. The 'Example 1.10' box is emitted once as role box with n: null - A2 split its contents into blocks 5 and 6 and neither of them IS the box, so guessing an n would be wrong. Its bbox is the whole printed panel: a flat grey #dbdcde interior between two solid cyan #00adef vertical bars (left x 0.098-0.112, right x 0.696-0.738), the right bar carrying the reverse-out white vertical label 'EXAMPLE 1.10'. The bars and that vertical label are not emitted as separate elements because no allowed role fits a box side-tab; fill reports the grey interior the text actually sits on. Block 5, typed 'box' by A2, is the Example's statement prose inside that panel and is reported as role paragraph; box prose is set smaller than body prose (cap height 18px vs 20px), hence size_rel 0.9. Figure 1.21 (block 6) and its cyan #00adef 'FIGURE 1.21' caption sit inside that box, so their bboxes lie within the box's. The caption has no A2 block and takes n: null. The thin rule at y 0.8687-0.8701 is the plain BLACK #221f1f footnote separator above the asterisk footnote (block 7), reported as footer_rule because the allowed list has no footnote-rule role - it is NOT a chapter-palette footer ornament and should be excluded when deriving this chapter's colours; this chapter prints no coloured footer rule at all. The '2022-23' edition line at the foot is recorded as a second running_header for the same want-of-a-role reason. All 7 A2 blocks matched by position."
+}

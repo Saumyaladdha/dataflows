@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A2N.json",
+  "title": "A2N agent output (a2n-notation-fixer)",
+  "description": "Backfills correct inline-notation (exponents, subscripts, radicals) onto an A2 page read before the check's superscript-folding behaviour was understood. Never edits the original A2 output -- this is a separate, additive file keyed by the same page id.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["blocks", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "blocks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["n"],
+            "additionalProperties": false,
+            "properties": {
+              "n": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "Must match a block's own `n` in the real A2 output for this page."
+              },
+              "no_change": {
+                "type": "boolean",
+                "description": "True when this block's inline notation was already correct -- nothing to fix. Mutually exclusive with corrected_text."
+              },
+              "corrected_text": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The block's full text, with every flattened exponent restored to a real Unicode superscript/subscript and every dropped radical restored. Every prose word must be identical to the original, in the same order -- only digits and math symbols may differ."
+              },
+              "fixes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["wrong", "right"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "wrong": { "type": "string", "minLength": 1 },
+                    "right": { "type": "string", "minLength": 1 }
+                  }
+                },
+                "description": "What changed and why it's needed, one entry per correction made, e.g. {\"wrong\": \"1011\", \"right\": \"10\\u00b9\\u00b9\"}. Required when corrected_text is given."
+              }
+            }
+          }
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } }
+    }
+  ]
+}

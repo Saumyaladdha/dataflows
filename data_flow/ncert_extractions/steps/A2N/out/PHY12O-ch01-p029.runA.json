@@ -1,0 +1,25 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "Notice the important point that the dipole field at large distances falls off not as 1/r² but as1/r³. Further,  the magnitude and the direction of the dipole field depends not only on the distance r but also on the angle between the position vector r and the dipole moment p.",
+      "fixes": [
+        {"wrong": "1/r 2", "right": "1/r²"},
+        {"wrong": "1/r 3", "right": "1/r³"}
+      ]
+    },
+    {"n": 2, "no_change": true},
+    {
+      "n": 4,
+      "corrected_text": "In most molecules, the centres of positive charges and of negative charges* lie at the same place. Therefore, their dipole moment is zero. CO₂ and CH₄ are of this type of molecules. However, they develop a dipole moment when an electric field is applied. But in some molecules, the centres of negative charges and of positive charges do not coincide. Therefore they have a permanent electric dipole moment, even in the absence of an electric field. Such molecules are called polar molecules. Water molecules, H₂O, is an example of this type. Various materials give rise to interesting properties and important applications in the presence or  absence of electric field.",
+      "fixes": [
+        {"wrong": "CO2", "right": "CO₂"},
+        {"wrong": "CH4", "right": "CH₄"},
+        {"wrong": "H2O", "right": "H₂O"}
+      ]
+    },
+    {"n": 5, "no_change": true},
+    {"n": 7, "no_change": true}
+  ],
+  "note": "n=1 had two flattened superscripts (1/r 2 -> 1/r², 1/r 3 -> 1/r³); the 'as1/r3' word-spacing merge next to it is a prose spacing artifact, not notation, so left untouched. n=4 had three flattened chemical-formula subscripts restored (CO2 -> CO₂, CH4 -> CH₄, H2O -> H₂O). n=7's footnote formula (rcm = (Σi qi ri)/(Σi qi)) uses subscripted variable names like p₂⁰ in the brief's example; Unicode has no subscript 'c' to render 'cm' correctly and converting only qi/ri while leaving rcm unconverted would be an inconsistent partial fix, so left as no_change per the unsure rule. n=2, 5 already match the image exactly."
+}

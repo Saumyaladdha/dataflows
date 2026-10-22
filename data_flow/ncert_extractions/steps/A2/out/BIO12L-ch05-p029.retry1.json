@@ -1,0 +1,42 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        108,
+        227,
+        1469,
+        1413
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        108,
+        1447,
+        1469,
+        1730
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "in determining population and genetic diversities. Currently, many different probes are used to generate DNA fingerprints.",
+      "continues_from_previous": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "MOLECULAR BASIS OF INHERITANCE",
+    "107",
+    "Reprint 2026-27"
+  ],
+  "note": "Re-read of the page image and text layer confirms the previous reading, so nothing in the blocks was changed. The page carries exactly three things: the full-width Figure 5.16 schematic of DNA fingerprinting (block 1), its shaded printed caption box beginning 'Figure 5.16 Schematic representation of DNA fingerprinting :' (block 2), and one two-line paragraph of running text at the foot of the page (block 3). There is no other prose anywhere on the page. Regarding the reported A2_TEXT_MISMATCH (blocks cover only 18.7% of the text layer's prose): the text layer for this page is dominated by the Figure 5.16 caption, which is roughly four fifths of its characters. That caption is printed matter belonging to the figure, so by this step's rules it is left to the special transcriber with needs_special true and empty text, and it must not be copied into a paragraph block merely to raise coverage. The 18.7% figure is therefore the correct outcome for a figure-dominated page, not a wholesale failure to read it: the only non-figure prose on the page is block 3, and that is transcribed in full and character-exact. first_block_continues_from_previous is true because previous_page_last_block is null for this batch but the page's running text plainly resumes mid-sentence in lowercase ('in determining population and genetic diversities.'); the figure itself is not a continuation. The page ends on a completed sentence with blank space below it, so last_block_continues_on_next is false."
+}

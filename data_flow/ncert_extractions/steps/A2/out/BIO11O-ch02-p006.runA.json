@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "2.2.2 Dinoflagellates",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "These organisms are mostly marine and photosynthetic. They appear yellow, green, brown, blue or red depending on the main pigments present in their cells. The cell wall has stiff cellulose plates on the outer surface. Most of them have two flagella; one lies longitudinally and the other transversely in a furrow between the wall plates. Very often, red dinoflagellates (Example: Gonyaulax) undergo such rapid multiplication that they make the sea appear red (red tides). Toxins released by such large numbers may even kill other marine animals such as fishes."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "2.2.3 Euglenoids"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Majority of them are fresh water organisms found in stagnant water. Instead of a cell wall, they have a protein rich layer called pellicle which makes their body flexible. They have two flagella, a short and a long one. Though they are photosynthetic in the presence of sunlight, when deprived of sunlight they behave like heterotrophs by predating on other smaller organisms. Interestingly, the pigments of euglenoids are identical to those present in higher plants. Example: Euglena (Figure 2.4b)."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "2.2.4 Slime Moulds"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Slime moulds are saprophytic protists. The body moves along decaying twigs and leaves engulfing organic material. Under suitable conditions, they form an aggregation called plasmodium which may grow and spread over several feet. During unfavourable conditions, the plasmodium differentiates and forms fruiting bodies bearing spores at their tips. The spores possess true walls. They are extremely resistant and survive for many years, even under adverse conditions. The spores are dispersed by air currents."
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "2.2.5 Protozoans"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "All protozoans are heterotrophs and live as predators or parasites. They are believed to be primitive relatives of animals. There are four major groups of protozoans."
+    },
+    {
+      "n": 9,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1010,
+        285,
+        1486,
+        1930
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Amoeboid protozoans: These organisms live in fresh water, sea water or moist soil. They move and capture"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "BIOLOGICAL CLASSIFICATION",
+    "21",
+    "2022-23"
+  ],
+  "note": "Judging continuation from the page I just read (p005, held in order): p005 ended on a full stop ('...chief producers in the oceans.') and this page opens with the heading 2.2.2 Dinoflagellates, so first_block_continues_from_previous is false. Two-column page: all prose and headings are in the left column, and the whole right column is the four-panel Figure 2.4 (a-d) with its caption at the foot. I kept the left-column prose in order and placed the figure as block 9, level with the bottom of the column where its caption is printed, so the page's final block is the prose that runs over the page break. Figure 2.4 is needs_special with a bbox; the panel letters (a)-(d) and the caption lines 'Figure 2.4 (a) Dinoflagellates / (b) Euglena / (c) Slime mould / (d) Paramoecium' are inside it. Removed furniture: running header 'BIOLOGICAL CLASSIFICATION' (top left), page number 21 (top right tab), reprint-year footer 2022-23. Last block breaks mid-sentence at '...They move and capture' and p007 opens 'their prey by putting out pseudopodia', so last_block_continues_on_next is true. Text layer was clean and matched the image; prose copied from it."
+}

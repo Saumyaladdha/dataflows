@@ -1,0 +1,149 @@
+{
+  "group": "v2__physics__plain.part7",
+  "ratings": [
+    {
+      "question_id": "2015_A#q174",
+      "concept": "Fixing exponents by dimensions: critical velocity v_c = Re·η/(ρr), so [η^1 ρ^-1 r^-1] is the only dimensionally consistent combination",
+      "cognitive_demand": "dimensional_reasoning",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "η is ML^-1T^-1 and ρ is ML^-3, so each carries M^1 and a velocity carries M^0, which forces y = −x; only option 2 (x = 1, y = −1) satisfies that, striking options 1, 3 and 4.",
+      "traps": [
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "no route reaches 1, 1, 1: the product ηρr has dimensions (ML^-1T^-1)(ML^-3)(L) = M^2L^-3T^-1, which is not LT^-1, so the option only widens the spread"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "no route reaches −1, −1, 1 either: η^-1ρ^-1r has dimensions M^-2L^5T, which is not LT^-1"
+        },
+        {
+          "label": "sign_reversed_magnitude_right",
+          "option": "4",
+          "route": "all three exponent magnitudes match the key and the sign of x alone is inverted, putting η in the denominator: v_c ∝ 1/(ηρr) instead of η/(ρr)"
+        }
+      ],
+      "reason": "This question requires equating powers of M, L and T on both sides, demonstrated by the stem \"dimensions of critical velocity v_c ... are expressed as [η^x ρ^y r^z]\", which is settled by dimensions alone and by no other route.",
+      "note": "dimensional_reasoning is the demand, not dimensional_check the strategy, because the question cannot be answered except by comparing dimensions (rulebook section 4c tie-break)."
+    },
+    {
+      "question_id": "2015_A#q175",
+      "concept": "Shunted galvanometer as an ammeter: the coil and shunt in parallel are the meter's resistance, which adds in series to the rest of the circuit",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [],
+      "reason": "This question requires a parallel combination before a series total, demonstrated by the stem \"the ammeter has coil of resistance 480 ohm and a shunt of 20 ohm\", which gives 480 × 20/500 = 19.2 Ω, a total of 40.8 + 19.2 = 60 Ω and so 30/60 = 0.5 A.",
+      "note": "traps is empty by decision. The options are a doubling ladder, 0.25 / 0.5 / 1 / 2 A, and the candidate mis-steps were tried without landing on any of them: adding the shunt in series gives 30/60.8 = 0.49 A, adding the coil in series gives 0.058 A, and ignoring the meter altogether gives 30/40.8 = 0.74 A. Since no operation could be named for 0.25, 1 or 2 A, rule 4 means no tag. has_figure is true (figures_agent/2015_A/q175.png) but every resistance and the e.m.f. are printed in the stem, so the item is not source_incomplete."
+    },
+    {
+      "question_id": "2015_A#q176",
+      "concept": "Capillary rise in a tube shorter than h: the rise height is fixed by hr = 2σcosθ/(ρg), so the meniscus flattens to a larger radius of curvature and the water stops at the top without overflowing",
+      "cognitive_demand": "condition_based_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "\"Water does not rise at all\" reverses the premise the stem grants, that \"Water rises to a height 'h' in capillary tube\""
+        },
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "\"rises upto the tip of capillary tube and then starts overflowing like a fountain\" gets the first claim right — the water does reach the tip — and fails on the second, since the meniscus radius adjusts and no continuous flow results"
+        },
+        {
+          "label": "condition_ignored",
+          "option": "4",
+          "route": "\"rises upto a point a little below the top\" is what you get by dropping the stated condition: in a tube longer than h the water does stand at h, below the top"
+        }
+      ],
+      "reason": "This question requires a rule applied under a printed condition that changes the outcome, demonstrated by the stem \"If the length of capillary tube above the surface of water is made less than 'h'\".",
+      "note": "negative_words_seen records 'not', but the word belongs to option 1 (\"Water does not rise at all\"), not to the task, which is direct."
+    },
+    {
+      "question_id": "2015_A#q177",
+      "concept": "Telescope magnification as a length ratio: the eyepiece images the objective plane with linear magnification I/L = f_e/f_o, so the angular magnification f_o/f_e equals L/I",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "2",
+          "route": "the additive 1 is carried over from the magnifier result m = 1 + D/f for an image at the near point, which answers a different magnification question; a telescope in normal adjustment has no additive term"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "no route reaches L/I − 1: the chain is I/L = f_e/f_o then M = f_o/f_e = L/I, and no step in it introduces an additive constant of either sign"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "no route reaches (L + I)/(L − I): every step of the derivation uses only the ratio of the two lengths, and nothing in it adds or subtracts L and I"
+        }
+      ],
+      "reason": "This question requires relating the eyepiece's linear magnification of the objective to the telescope's angular magnification, demonstrated by the stem \"a straight black line of the length L is drawn on inside part of objective lens. The eye-piece forms a real image of this line. The length of this image is I\".",
+      "note": "has_figure is true (figures_agent/2015_A/q177.png) but the stem defines L and I in words and the options are complete expressions, so nothing is missing. Options 2 and 3 form a ±1 pair around the key; option 2 is tagged with the remembered formula it comes from, and option 3 with the demonstration that the derivation has no additive step, which is the inspectable form of no_derivation_route and a property of the derivation alone."
+    },
+    {
+      "question_id": "2015_A#q178",
+      "concept": "Fractional change in density from volume expansion: ρ ∝ 1/V, so |Δρ/ρ| = γΔT for small changes",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "the stem supplies only γ = 5 × 10^-4 K^-1 and ΔT = 40 K, whose product is 0.020; reaching 0.010 would need ΔT = 20 K or γ = 2.5 × 10^-4 K^-1, neither of which is in the stem"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "2",
+          "route": "reaching 0.015 would need ΔT = 30 K or γ = 3.75 × 10^-4 K^-1; neither number appears in the stem, so the option only widens the spread"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "reaching 0.025 would need ΔT = 50 K or γ = 6.25 × 10^-4 K^-1; neither number appears in the stem"
+        }
+      ],
+      "reason": "This question requires one product of the two quantities given, demonstrated by the stem \"coefficient of volume expansion of glycerin is 5 × 10^-4 K^-1\" and \"a rise of 40 °C\", which give Δρ/ρ = 0.020.",
+      "note": "no_derivation_route is used here and not in q175 because the route space is enumerable: the relation takes exactly two inputs and one multiplication, so the absence of a route to the other three options can be demonstrated rather than asserted. Using the linear coefficient α = γ/3 instead would give 0.0067, which is also not printed."
+    },
+    {
+      "question_id": "2015_A#q179",
+      "concept": "Einstein's photoelectric equation solved for the work function: halving the wavelength doubles the photon energy, and KE2 = 3·KE1 gives φ = hc/2λ",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "divides the first photon's energy by the ratio, φ = (hc/λ)/3, instead of solving the pair of equations 2hc/λ − φ = 3(hc/λ − φ)"
+        },
+        {
+          "label": "intermediate_value",
+          "option": "3",
+          "route": "hc/λ is the first step of the solution, the photon energy for wavelength λ, printed as if it were the work function"
+        },
+        {
+          "label": "intermediate_value",
+          "option": "4",
+          "route": "2hc/λ is the other first-step quantity, the photon energy for wavelength λ/2, printed as if it were the work function"
+        }
+      ],
+      "reason": "This question requires solving two photoelectric equations together, demonstrated by the stem \"the maximum kinetic energy of the emitted photoelectrons in the second case is 3 times that in the first case\", which gives 2hc/λ − φ = 3(hc/λ − φ) and so φ = hc/2λ.",
+      "note": ""
+    }
+  ],
+  "group_note": "All six were read as structure=plain and all six are plain_mcq on E1, so the grouping holds and no member sits apart. The demand was set by what actually decides each item, and the two that could have been given the same label as the rest are separated with a stated reason: q174 carries dimensional_reasoning rather than calculation because it can be answered only by comparing dimensions (section 4c's tie-break between the demand and the dimensional_check strategy), and q176 carries condition_based_reasoning rather than application because removing the printed phrase \"made less than 'h'\" makes a different option correct, which is exactly the test the rulebook gives for that label. The remaining four produce a number from the stem's numbers and so all carry calculation, with solution_structure doing the separating: single_step for the one-multiplication item (q178) and multi_step_dependent where a second stage consumes the first stage's result (q175 parallel combination then Ohm's law, q177 the eyepiece's linear magnification then the angular magnification, q179 two photoelectric equations solved together, q174 dimensions of each quantity then the simultaneous powers). elimination is carried by q174 alone, where the M^0 requirement names the three options it strikes; the other members offer numeric spreads with no fact that strikes a named option. On E5 the packet is deliberately uneven and each unevenness is justified: q178 and q177 use no_derivation_route because their route spaces are small enough to enumerate and the absence is demonstrated in the route text, while q175 is left with an empty traps list because its 0.25/0.5/1/2 ladder admits no operation that could be named — asserting no_derivation_route there would be the unsupported claim rule 5 and the retirement of obviously_wrong were meant to stop."
+}

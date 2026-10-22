@@ -1,0 +1,93 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [527, 275, 1404, 408],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The surface includes charge equal to λ l. Gauss’s law then gives"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [578, 451, 835, 486],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [575, 500, 810, 580],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Vectorially, E at any point is given by"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [575, 635, 1515, 720],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "where n̂ is the radial unit vector in the plane normal to the wire passing through the point. E is directed outward if λ is positive and inward if λ is negative."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Note that when we write a vector A as a scalar multiplied by a unit vector, i.e., as A = A â , the scalar A is  an algebraic number. It can be negative or positive. The direction of A will be the same as that of the unit vector â if A > 0 and opposite to â if A < 0. When we want to restrict to non-negative values, we use the symbol |A| and call it the modulus of A. Thus, |A| ≥ 0 ."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Also note that though only  the charge enclosed by the surface (λl) was included above, the electric field E is due to the charge on the entire wire. Further, the assumption that the wire is infinitely long is crucial. Without this assumption, we cannot take E to be normal to the curved part of the cylindrical Gaussian surface. However, Eq. (1.32) is approximately true for electric field around the central portions of a long wire, where the end effects may be ignored."
+    },
+    {
+      "n": 10,
+      "kind": "heading",
+      "text": "1.14.2  Field due to a uniformly charged infinite plane sheet"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Let σ be the uniform surface charge density of an infinite plane sheet (Fig. 1.27). We take the x-axis normal to the given plane. By symmetry, the electric field will not depend on y and z coordinates and its direction at every point must be parallel to the x-direction."
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [205, 1495, 830, 2040],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "We can take the Gaussian surface to be a rectangular parallelepiped of cross-sectional area A, as shown. (A cylindrical surface will also do.) As seen from the figure, only the two faces 1 and 2 will contribute to the flux; electric field lines are parallel to the other faces and they, therefore, do not contribute to the total flux."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The unit vector normal to surface 1 is in –x direction while  the unit  vector normal to surface 2 is in the +x direction. Therefore, flux  E.ΔS through both the surfaces are equal and add up. Therefore the net flux through the Gaussian surface is 2 EA. The charge enclosed by the closed surface is σA. Therefore by Gauss’s law,"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "34",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null even though page is 34, so continuation from page 33 could not be verified against the previous block; judged from the page itself — the page opens with a complete displayed derivation step (\"Flux through the Gaussian surface = ...\"), not a mid-sentence fragment, so first_block_continues_from_previous is false, though the page does continue section 1.14.1's derivation begun earlier. The text layer encodes Greek symbols from the symbol font as Latin letters (λ→l, π→p, ε→e, σ→s) and drops the modulus bars in |A|; for prose sentences I transcribed the characters actually printed on the page image rather than those corrupted substitutions, since copying the text layer verbatim would yield nonsense like \"Let s be the uniform surface charge density\". All displayed formulae (the flux display, E × 2πrl = λl/ε0, the i.e. fraction, and Eq. 1.32) are left to the special transcriber as equation blocks with empty text. Block 12 covers Figure 1.27 together with its caption. Page 34 of the chapter file; content is this chapter's own, no front/back matter."
+}

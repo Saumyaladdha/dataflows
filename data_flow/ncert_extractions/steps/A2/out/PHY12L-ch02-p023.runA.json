@@ -1,0 +1,60 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "every volume element Δv of the slab has a dipole moment P Δv in the direction of the field. The volume element Δv  is macroscopically small but contains a very large number of molecular dipoles. Anywhere inside the dielectric, the volume element Δv has no net charge (though it has net dipole moment). This is, because, the positive charge of one dipole sits close to the negative charge of the adjacent dipole. However, at the surfaces of the dielectric normal to the electric field, there is evidently a net charge density. As seen in Fig 2.23, the positive ends of the dipoles remain unneutralised at the right surface and the negative ends at the left surface. The unbalanced charges are the induced charges due to the external field.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Thus, the polarised dielectric is equivalent to two charged surfaces with induced surface charge densities, say σp and –σp. Clearly, the field produced by these surface charges opposes the external field. The total field in the dielectric is, thereby, reduced from the case when no dielectric is present. We should note that the surface charge density ±σp arises from bound (not free charges) in the dielectric."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1010, 278, 1508, 1064],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "2.11  CAPACITORS AND CAPACITANCE"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "A capacitor is a system of two conductors separated by an insulator (Fig. 2.24). The conductors have charges, say Q1 and Q2, and potentials V1 and V2. Usually, in practice, the two conductors have charges Q and – Q, with potential difference V = V1 – V2 between them. We shall consider only this kind of charge configuration of the capacitor. (Even a single conductor can be used as a capacitor by assuming the other at infinity.) The conductors may be so charged by connecting them to the two terminals of a battery. Q is called the charge of the capacitor, though this, in fact, is the charge on one of the conductors – the total charge  of the capacitor  is zero."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The electric field in the region between the conductors is proportional to the charge Q. That is, if the charge on the capacitor is, say  doubled, the electric field will also be doubled at every point. (This follows from the direct proportionality between field and charge implied by Coulomb’s law and the superposition principle.) Now, potential difference V is the work done per unit positive charge in taking a small test charge from the conductor 2 to 1 against the field. Consequently, V is also proportional to Q, and the ratio Q/V is a constant:"
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [905, 1478, 1508, 1842],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1928, 855, 2012],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The constant C is called the capacitance of the capacitor. C is independent of Q or V, as stated above. The capacitance C depends only on the"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "67", "Reprint 2026-27"],
+  "note": "text_layer renders Δ as 'D' and σ as 's' (e.g. 'Dv', 'sp'); those characters were taken from the page image instead. Figure captions (FIGURE 2.23, FIGURE 2.24) are included inside the figure bounding boxes rather than transcribed as separate blocks. Subscripts in Q1/Q2/V1/V2 are printed as subscripts on the page; written inline here as in the text layer."
+}

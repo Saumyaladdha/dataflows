@@ -1,0 +1,77 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Eq. (2.54) for the case of a parallel plate capacitor, it holds good for any type of capacitor and can, in fact, be viewed in general as a definition of the dielectric constant of a substance.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 2.8 A slab of material of dielectric constant K has the same area as the plates of a parallel-plate capacitor but has a thickness (3/4)d, where d is the separation of the plates. How is the capacitance changed when the slab is inserted between the plates?\n\nSolution Let  E0 = V0/d be the electric field between the plates when there is no dielectric and the potential difference is V0. If the dielectric is now inserted, the electric field in the dielectric will be E = E0/K. The potential difference will then be"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 690, 545, 850],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "The potential difference decreases by the factor (K + 3)/4K while the free charge Q0 on the plates remains unchanged. The capacitance thus increases"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 930, 615, 1030],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "2.14  COMBINATION OF CAPACITORS"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "We can combine several capacitors of capacitance C1, C2,…, Cn to obtain a system with some effective capacitance C. The effective capacitance depends on the way the individual capacitors are combined. Two simple possibilities are discussed below."
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "2.14.1  Capacitors in series"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Figure 2.26 shows capacitors C1 and C2 combined in series."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The left plate of C1 and the right plate of C2 are connected to two terminals of a battery and have charges Q and –Q , respectively. It then follows that the right plate of C1 has charge –Q and the left plate of C2  has charge Q. If this was not so, the net charge on each capacitor would not be zero. This would result in an electric field in the conductor connecting C1and C2. Charge would flow until the net charge on both C1 and C2 is zero and there is no electric field in the conductor connecting C1 and C2. Thus, in the series combination, charges on the two plates (±Q) are the same on each capacitor. The total"
+    },
+    {
+      "n": 11,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [880, 1145, 1505, 1570],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [850, 1600, 1470, 2040],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "71", "Reprint 2026-27", "EXAMPLE 2.8 (vertical side tab label)", "© NCERT not to be republished (watermark)"],
+  "note": "previous_page_last_block was null even though this is page 27, so the continuation flag for block 1 is judged from the text alone: the page opens mid-sentence (\"Eq. (2.54) for the case of a parallel plate capacitor, it holds good for any ...\"), so continues_from_previous is true. The Example 2.8 box is split into blocks 2-5 so that its two displayed equations keep their true reading-order position while being marked needs_special; blocks 2 and 4 are the two prose parts of that one box. The five-fold outline-font heading duplication described in the instruction does not occur on this page: \"2.14  COMBINATION OF CAPACITORS\" and \"2.14.1  Capacitors in series\" each appear once in the text layer. Inline math is copied as the text layer holds it, so subscripts are flat (E0, V0, Q0, C1, C2, Cn) and the text layer's double spaces (\"Solution Let  E0\", \"C2  has charge Q\") and missing space (\"connecting C1and C2\") are preserved verbatim. Figure bboxes include each FIGURE caption; figure 2.27's bbox is trimmed on the right to avoid the page-number box."
+}

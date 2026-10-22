@@ -1,0 +1,26 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "Similarly the total force on charge –q at C is F₃  = √3 F n̂ , where n̂ is the unit vector along the direction bisecting the ∠BCA.\nIt is interesting to see that the sum of the forces on the three charges is zero, i.e.,",
+      "fixes": [
+        {"wrong": "F3  = 3 F ˆn , where ˆn is", "right": "F₃  = √3 F n̂ , where n̂ is"}
+      ]
+    },
+    {"n": 3, "no_change": true},
+    {"n": 5, "no_change": true},
+    {
+      "n": 8,
+      "corrected_text": "where r̂ = r/r, is a unit vector from the origin to the point r. Thus, Eq.(1.6) specifies the value of the electric field for each value of the position vector r. The word “field” signifies how some distributed quantity (which could be a scalar or a vector) varies with position. The effect of the charge has been incorporated in the existence of the electric field. We obtain the force F exerted by a charge Q on a charge q, as",
+      "fixes": [
+        {"wrong": "where ˆr = r/r, is a unit vector", "right": "where r̂ = r/r, is a unit vector"}
+      ]
+    },
+    {"n": 10, "no_change": true},
+    {"n": 12, "no_change": true},
+    {"n": 13, "no_change": true},
+    {"n": 14, "no_change": true},
+    {"n": 15, "no_change": true}
+  ],
+  "note": "Found the known vanished-radical case described in the task brief: n=1's 'F3 = 3 F ˆn' is the real NCERT line 'F₃ = √3 F n̂' -- the square root before F was dropped entirely and the hat was detached from n; both restored (F3->F₃, 3 F->√3 F, ˆn->n̂, matching the equilateral-triangle force diagram carried over from p016/p017's Example 1.6/1.7). n=8 had a detached hat (ˆr -> r̂). n=3, 5, 10, 12, 13, 14, 15 already matched the image exactly."
+}

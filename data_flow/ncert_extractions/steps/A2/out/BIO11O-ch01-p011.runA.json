@@ -1,0 +1,103 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "decreasing. Lower the taxa, more are the characteristics that the members\nwithin the taxon share. Higher the category, greater is the difficulty of\ndetermining the relationship to other taxa at the same level. Hence, the\nproblem of classification becomes more complex.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Table 1.1 indicates the taxonomic categories to which some common\norganisms like housefly, man, mango and wheat belong.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        166,
+        572,
+        1482,
+        1128
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "1.4 TAXONOMICAL AIDS"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Taxonomic studies of various species of plants, animals and other\norganisms are useful in agriculture, forestry, industry and in general in\nknowing our bio-resources and their diversity. These studies would\nrequire correct classification and identification of organisms. Identification\nof organisms requires intensive laboratory and field studies. The collection\nof actual specimens of plant and animal species is essential and is the\nprime source of taxonomic studies. These are also fundamental to studies\nand essential for training in systematics. It is used for classification of an\norganism, and the information gathered is also stored along with the\nspecimens. In some cases the specimen is preserved for future studies.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Biologists have established certain procedures and techniques to store\nand preserve the information as well as the specimens.  Some of these are\nexplained to help you understand the usage of these aids.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "1.4.1 Herbarium"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Herbarium is a store house of collected plant specimens that are dried,\npressed and preserved on sheets. Further, these sheets are arranged",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "THE LIVING WORLD",
+    "11",
+    "TABLE 1.1  Organisms with their Taxonomic Categories",
+    "Common",
+    "Name",
+    "Biological",
+    " Name",
+    "Genus",
+    "Family",
+    "Order",
+    "Class",
+    "Phylum/",
+    "Division",
+    "Man",
+    "Homo sapiens Homo",
+    "Hominidae",
+    "Primata",
+    "Mammalia",
+    "Chordata",
+    "Housefly",
+    "Musca",
+    "domestica",
+    "Musca",
+    "Muscidae",
+    "Diptera",
+    "Insecta",
+    "Arthropoda",
+    "Mango",
+    "Mangifera",
+    "indica",
+    "Mangifera",
+    "Anacardiaceae",
+    "Sapindales Dicotyledonae",
+    "Angiospermae",
+    "Wheat",
+    "Triticum",
+    "aestivum",
+    "Triticum",
+    "Poaceae",
+    "Poales",
+    "Monocotyledonae Angiospermae",
+    "2022-23"
+  ],
+  "note": "Table 1.1 (its title line, column headers and four data rows) is marked needs_special as block n=3 with a pixel bbox and empty text, per this step's rules. Because its cell text is present in the page text layer but deliberately left untranscribed, every one of its text-layer lines is listed in running_header_footer_removed so the coverage check sees it was handled; none of those strings appears as a block. Note the page's text layer is out of visual order (it puts the 1.4 section before 'decreasing.'); blocks follow the printed visual order. p010 ended mid-sentence at 'the number of common characteristics goes on' and this page opens 'decreasing.', so the first block continues from the previous page; the page ends mid-sentence at 'these sheets are arranged', so the last block continues on the next page. Also removed: running header THE LIVING WORLD, page number 11, reprint year 2022-23."
+}

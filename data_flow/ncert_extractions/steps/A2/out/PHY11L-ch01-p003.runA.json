@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "Table 1.2   Some units retained for general use (Though outside SI)"
+    },
+    {
+      "n": 2,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        360,
+        248,
+        1378,
+        800
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Note that when mole is used, the elementary entities must be specified. These entities may be atoms, molecules, ions, electrons, other particles or specified groups of such particles.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "We employ units for some physical quantities that can be derived from the seven base units (Appendix A 6). Some derived units in terms of the SI base units are given in (Appendix A 6.1). Some SI derived units are given special names (Appendix A 6.2 ) and some derived SI units make use of these units with special names and the seven base units (Appendix A 6.3). These are given in Appendix A 6.2 and A 6.3 for your ready reference. Other units retained for general use are given in Table 1.2."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Common SI prefixes and symbols for multiples and sub-multiples are given in Appendix A2. General guidelines for using symbols for physical quantities, chemical elements and nuclides are given in Appendix A7 and those for SI units and some other units are given in Appendix A8 for your guidance and ready reference."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "1.3 SIGNIFICANT FIGURES"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "As discussed above, every measurement involves errors. Thus, the result of measurement should be reported in a way that indicates the precision of measurement. Normally, the reported result of measurement is a number that includes all digits in the number that are known reliably plus the first digit that is uncertain. The reliable digits plus the first uncertain digit are known as significant digits or significant figures. If we say the period of oscillation of a simple pendulum is 1.62 s, the digits 1 and 6 are reliable and certain, while the digit 2 is uncertain. Thus, the measured value has three significant figures. The length of an object reported after measurement to be 287.5 cm has four significant figures, the digits 2, 8, 7 are certain while the digit 5 is uncertain. Clearly, reporting the result of measurement that includes more digits than the significant digits is superfluous and also misleading since it would give a wrong idea about the precision of measurement."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The rules for determining the number of significant figures can be understood from the following examples. Significant figures indicate, as already mentioned, the precision of measurement which depends on the least count of the measuring instrument. A choice of change of different units does not change the number of significant digits or figures in a measurement. This important remark makes most of the following observations clear:"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "(1) For example, the length 2.308 cm has four significant figures. But in different units, the same value can be written as 0.02308 m or 23.08 mm or 23080 µm."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "All these numbers have the same number of significant figures (digits 2, 3, 0, 8), namely four."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "UNITS AND MEASUREMENT",
+    "3",
+    "2024-25"
+  ],
+  "note": "Judged first_block_continues_from_previous from page 2, which I read myself in this batch (previous_page_last_block was null): page 2's running prose ended at a full stop ('dimensionless quantities.') and this page opens with the Table 1.2 title, so there is no continuation. Table 1.2 left for the special transcriber with a bounding box. Block 7 runs across the column break (left column ends 'The reliable digits plus', right column continues 'the first uncertain digit are known as'), so it is kept as one paragraph. Text layer matches the image."
+}

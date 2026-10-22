@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Each small cube has atoms at alternate corners [Fig. 1(a)]. In all, each small cube has 4 atoms. When joined to each other, they make a regular tetrahedron. Thus, there is one tetrahedral void in each small cube and eight tetrahedral voids in total. Each of the eight small cubes have one void in one unit cell of ccp structure. We know that ccp structure has 4 atoms per unit cell. Thus, the number of tetrahedral voids is twice the number of atoms.",
+      "continues_from_previous": true,
+      "italic_terms": [
+        "ccp"
+      ]
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        330,
+        425,
+        1190,
+        970
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "(b) Locating Octahedral Voids"
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Let us again consider a unit cell of ccp or fcc lattice [Fig. 2(a)]. The body centre of the cube, C is not occupied but it is surrounded by six atoms on face centres. If these face centres are joined, an octahedron is generated. Thus, this unit cell has one octahedral void at the body centre of the cube.",
+      "italic_terms": [
+        "ccp",
+        "fcc"
+      ]
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Besides the body centre, there is one octahedral void at the centre of each of the 12 edges [Fig. 2(b)]. It is surrounded by six atoms, four belonging to the same unit cell (2 on the corners and 2 on face centre) and two belonging to two adjacent unit cells. Since each edge of the cube is shared between four adjacent unit cells, so is the octahedral void located on it. Only 1/4th of each void belongs to a particular unit cell."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        200,
+        1425,
+        1350,
+        1945
+      ],
+      "text": "",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "19",
+    "The Solid State",
+    "2019-20"
+  ],
+  "note": "previous_page_last_block was null; the top continuation was judged from the page image: the whole page sits inside the yellow-tabbed feature box 'Locating Tetrahedral and Octahedral Voids' opened on page 18, and the page's prose blocks are therefore listed as box blocks. The page also ends inside that box (it runs on to page 20), so last_block_continues_on_next is true. Figure blocks n=2 (Fig. 1) and n=6 (Fig. 2) are deferred whole, caption included, with bboxes estimated from the page image in original-image pixels (1700x2280). The inline stacked fraction in n=5 is printed as 1 over 4 with a superscript 'th'; it is transcribed inline as '1/4th', matching how the same book writes '2/3rd' in running prose on page 18."
+}

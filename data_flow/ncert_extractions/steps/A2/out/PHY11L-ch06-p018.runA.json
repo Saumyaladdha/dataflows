@@ -1,0 +1,158 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Answer Let the particle with velocity v  be at point P  at some instant t. We want to calculate the angular momentum of the particle about an arbitrary point O.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        230,
+        360,
+        790,
+        750
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The angular momentum is l = r × mv. Its magnitude is mvr sinθ, where θ is the angle between r and v as shown in Fig. 6.19. Although the particle changes position with time, the line of direction of v remains the same and hence OM = r sin θ. is a constant."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Further, the direction of l is perpendicular to the plane of r and v. It is into the page of the figure.This direction does not change with time."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Thus, l remains the same in magnitude and direction and is therefore conserved. Is there any external torque on the particle? ⊳"
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "6.8  EQUILIBRIUM OF A RIGID BODY"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "We are now going to concentrate on the motion of rigid bodies rather than on the motion of general systems of particles."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "We shall recapitulate what effect the external forces have on a rigid body. (Henceforth we shall omit the adjective ‘external’ because unless stated otherwise, we shall deal with only external forces and torques.) The forces change the translational state of the motion of the rigid body, i.e. they change its total linear momentum in accordance with Eq. (6.17). But this is not the only effect the forces have. The total torque on the body may not vanish. Such a torque changes the rotational state of motion of the rigid body, i.e. it changes the total angular momentum of the body in accordance with Eq. (6.28 b)."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "A rigid body is said to be in mechanical equilibrium, if both its linear momentum and angular momentum are not changing with time, or equivalently, the body has neither linear acceleration nor angular acceleration. This means"
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "(1) the total force, i.e. the vector sum of the forces, on the rigid body is zero;"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        940,
+        305,
+        1540,
+        400
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "If the total force on the body is zero, then the total linear momentum of the body does not change with time. Eq. (6.30a) gives the condition for the translational equilibrium of the body."
+    },
+    {
+      "n": 13,
+      "kind": "list",
+      "text": "(2) The total torque, i.e. the vector sum of the torques on the rigid body is zero,"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        940,
+        645,
+        1540,
+        735
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "If the total torque on the rigid body is zero, the total angular momentum of the body does not change with time. Eq. (6.30 b) gives the condition for the rotational equilibrium of the body."
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "One may raise a question, whether the rotational equilibrium condition [Eq. 6.30(b)] remains valid, if the origin with respect to which the torques are taken is shifted. One can show that if the translational equilibrium condition [Eq. 6.30(a)] holds for a rigid body, then such a shift of origin does not matter, i.e. the rotational equilibrium condition is independent of the location of the origin about which the torques are taken. Example 6.7 gives a proof of this result in a special case of a couple, i.e. two forces acting on a rigid body in translational equilibrium. The generalisation of this result to n forces is left as an exercise."
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Eq. (6.30a) and Eq. (6.30b), both, are vector equations. They are equivalent to three scalar equations each. Eq. (6.30a) corresponds to"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        925,
+        1515,
+        1540,
+        1600
+      ],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "where Fix, Fiy and Fiz are respectively the x, y and z components of the forces Fi. Similarly, Eq. (6.30b) is equivalent to three scalar equations"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        925,
+        1710,
+        1540,
+        1800
+      ],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "where τix, τiy  and  τiz are respectively the x, y and z components of the torque τi ."
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "Eq. (6.31a) and (6.31b) give six independent conditions to be satisfied for mechanical"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "109",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null for this page, so continuation at the top was judged from the page image: the page opens with the 'Answer' to a worked example whose question began on the previous page, and the example's closing marker appears on this page, so first_block_continues_from_previous is true. The marker glyph at the end of the answer is kept at the end of block 5 as the text layer holds it. Side-heading 6.8 is repeated and hoisted out of order by the layered outline font in the text layer; it is transcribed once in its true reading-order position. The five displayed items (one figure with its 'Fig 6.19' caption inside the bbox, and equations 6.30a, 6.30b, 6.31a, 6.31b) are marked needs_special because their subscripts, superscripts and summation limits are scrambled below word level in the text layer. Inline mathematics in blocks 3, 19 and 21 is copied as the text layer holds it (subscripts flattened, e.g. 'Fix', 'τix'), not re-rendered. Block 9 is one paragraph that runs from the bottom of the left column into the top of the right column and is kept as a single block."
+}

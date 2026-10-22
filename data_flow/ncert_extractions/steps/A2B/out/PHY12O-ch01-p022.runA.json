@@ -1,0 +1,11 @@
+{
+  "blocks": [
+    {"n": 2, "bold_terms": []},
+    {"n": 4, "bold_terms": []},
+    {"n": 5, "bold_terms": ["Example 1.9"]},
+    {"n": 7, "bold_terms": ["Solution"]},
+    {"n": 9, "bold_terms": []},
+    {"n": 11, "bold_terms": []}
+  ],
+  "note": "This is a worked-example page (Examples 1.8 and 1.9); it carries no bold vocabulary at all. The only bold weight in running prose is the two structural run-in labels, \"Example 1.9\" (n=5) and \"Solution\" (n=7), reported because they sit inside paragraph blocks rather than heading blocks - they are section labels, not NCERT key terms, so downstream glossary use should filter them. n=2 and n=4 are uniform roman. Bold vector symbols are present but not reported: the E of E₁A (n=7), E₂A (n=9) and EA (n=11) is printed bold-italic as NCERT's vector notation, but only the bare letter is bold (the 1A/2A/A subscripts are plain), so no exact substring of the block text corresponds to the bold run and reporting \"E\" alone would be meaningless. Italic-only, for step A2I: g in n=4; q₁ and q₂ in n=5, n=7 and n=9; and the E of \"total electric field EA at A\" in n=9, which is italic rather than bold. The quoted phrase 'free fall under gravity' in n=2 is roman, neither bold nor italic."
+}

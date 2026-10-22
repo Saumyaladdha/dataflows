@@ -1,0 +1,29 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {
+      "n": 3,
+      "corrected_text": "9.2 (i) Write structures of different isomeric amines corresponding to the molecular formula, C₄H₁₁N.\n(ii) Write IUPAC names of all the isomers.\n(iii) What type of isomerism is exhibited by different pairs of amines?",
+      "fixes": [
+        {"wrong": "C4H11N", "right": "C₄H₁₁N"}
+      ]
+    },
+    {"n": 5, "no_change": true},
+    {"n": 7, "no_change": true},
+    {
+      "n": 9,
+      "corrected_text": "Reduction with iron scrap and hydrochloric acid is preferred because FeCl₂ formed gets hydrolysed to release hydrochloric acid during the reaction. Thus, only a small amount of hydrochloric acid is required to initiate the reaction.",
+      "fixes": [
+        {"wrong": "FeCl2", "right": "FeCl₂"}
+      ]
+    },
+    {
+      "n": 11,
+      "corrected_text": "You have read (Unit 6, Class XII) that the carbon - halogen bond in alkyl or benzyl halides can be easily cleaved by a nucleophile.  Hence, an alkyl or benzyl halide on reaction with an ethanolic solution of ammonia undergoes nucleophilic substitution reaction in which the halogen atom is replaced by an amino (–NH₂) group. This process of cleavage of the C–X bond by ammonia molecule is known as ammonolysis.  The reaction is carried out in a sealed tube at 373 K.  The primary amine thus obtained behaves as a nucleophile and can further react with alkyl halide to form secondary and tertiary amines, and finally quaternary ammonium salt.",
+      "fixes": [
+        {"wrong": "(–NH2)", "right": "(–NH₂)"}
+      ]
+    }
+  ],
+  "note": "n=3, n=9 and n=11 had flattened molecular-formula subscripts (C4H11N, FeCl2, -NH2) restored to match the image. n=1, n=5 and n=7 already matched exactly, no formulas present."
+}

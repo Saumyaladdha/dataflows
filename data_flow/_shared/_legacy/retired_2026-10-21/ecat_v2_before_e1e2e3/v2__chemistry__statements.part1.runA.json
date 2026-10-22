@@ -1,0 +1,34 @@
+{
+  "group": "v2__chemistry__statements.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q043",
+      "concept": "Alcohol to alkyl chloride with HCl: primary and secondary alcohols need anhydrous ZnCl2 (Lucas reagent), a tertiary alcohol reacts with HCl alone",
+      "cognitive_demand": "condition_based_reasoning",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that a tertiary alcohol reacts with HCl without a catalyst, so statement iii qualifies, strikes out options 1 ('IV only') and 4 ('I and II only'), the two that omit III.",
+      "traps": [
+        {
+          "label": "condition_ignored",
+          "option": "4",
+          "route": "'I and II only' accepts statement ii, which is the same substrate and reagent as i with the printed 'Anhyd.ZnCl2' removed; the option is what you get by treating the catalyst over the arrow as decoration, since ethanol with HCl alone does not give the chloride at a useful rate"
+        },
+        {
+          "label": "partial_combination",
+          "option": "2",
+          "route": "'III and IV only' is a true but incomplete subset: it accepts the tertiary alcohol and the ZnCl2-catalysed secondary alcohol and omits statement i, the primary alcohol with the same anhydrous ZnCl2 that makes iv work"
+        },
+        {
+          "label": "partial_combination",
+          "option": "1",
+          "route": "'IV only' is the narrowest true subset, omitting both statement i (primary alcohol with anhydrous ZnCl2) and statement iii (tertiary alcohol with HCl alone)"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a stated condition to decide each printed reaction, demonstrated by statements i and ii being the identical reactants 'CH3CH2OH + HCl' and differing only in the 'Anhyd.ZnCl2' written over the arrow in i, which is what separates a reaction that prepares an alkyl halide from one that does not.",
+      "note": "The four statements are printed as reactants and reagents with no product on the right of the arrow; that is how the question works - it asks whether each reaction 'can be used', not what it yields - so this is not storage damage and no verdict is recorded. The statements are labelled with lower-case roman numerals in the stem block ('i.' to 'iv.') and with capitals in the options ('IV only', 'I, III and IV only'); the correspondence is positional and unambiguous. LaTeX in the statements is transcribed plainly in this record's quotations."
+    }
+  ],
+  "group_note": "This packet holds one question, so no member could be judged against another; what is recorded here instead is the rule applied, so that the other statement-block packets of this subject can be held to the same one. Structure: a printed block of lettered statements whose options select a subset is several_independent_checks by construction - each statement is adjudicated on its own and the verdicts are combined into a subset - and it is not multi_step_dependent, since no statement's verdict needs another's result. Demand: the decision here is a printed condition rather than a remembered reaction, because statements i and ii are the same substrate and the same reagent and differ only in the anhydrous ZnCl2 over the arrow, so removing that phrase changes which subset is correct; that is condition_based_reasoning, not application, and the rulebook's matching trap for it, condition_ignored, is what the option accepting both i and ii carries. Elimination is recorded with the one fact that settles the most options, the tertiary alcohol in iii reacting with HCl unaided, which strikes the two options omitting III. The trap axis separates two devices that a subset question invites being merged: an option that is wrong because it accepts a statement the condition excludes (condition_ignored, option 4) and an option that is wrong only because it stops short (partial_combination, options 1 and 2, with the omitted statement named in each). No trap is placed on the official answer, option 3."
+}

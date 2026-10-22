@@ -1,0 +1,141 @@
+{
+ "figure_id": "PHY11L_CH06_P12",
+ "title": "NCERT Figure 6.3 - rotation about a fixed axis, shown by a ceiling fan (a) and a potter's wheel (b); only the fixed axis of each and the sense of rotation are redrawn.",
+ "width": 300,
+ "height": 500,
+ "pad": 20,
+ "draw": [
+  {
+   "kind": "line",
+   "from": [
+    150,
+    400
+   ],
+   "to": [
+    150,
+    480
+   ],
+   "colour": "ink",
+   "width": 1.5,
+   "dashed": true
+  },
+  {
+   "kind": "angle",
+   "vertex": [
+    150,
+    395
+   ],
+   "r": 13,
+   "from_deg": 200,
+   "to_deg": 330,
+   "colour": "ink",
+   "width": 1.5
+  },
+  {
+   "kind": "line",
+   "from": [
+    161.258,
+    388.5
+   ],
+   "to": [
+    166.758,
+    398.026
+   ],
+   "colour": "ink",
+   "width": 1.5,
+   "arrow": "end"
+  },
+  {
+   "kind": "label",
+   "text": "(a)",
+   "at": [
+    150,
+    350
+   ],
+   "size": 16
+  },
+  {
+   "kind": "line",
+   "from": [
+    150,
+    60
+   ],
+   "to": [
+    150,
+    320
+   ],
+   "colour": "ink",
+   "width": 2.2,
+   "dashed": true,
+   "arrow": "end"
+  },
+  {
+   "kind": "angle",
+   "vertex": [
+    150,
+    285
+   ],
+   "r": 14,
+   "from_deg": 200,
+   "to_deg": 330,
+   "colour": "ink",
+   "width": 1.5
+  },
+  {
+   "kind": "line",
+   "from": [
+    162.124,
+    278.0
+   ],
+   "to": [
+    167.624,
+    287.526
+   ],
+   "colour": "ink",
+   "width": 1.5,
+   "arrow": "end"
+  },
+  {
+   "kind": "angle",
+   "vertex": [
+    150,
+    78
+   ],
+   "r": 14,
+   "from_deg": 200,
+   "to_deg": 330,
+   "colour": "ink",
+   "width": 1.5
+  },
+  {
+   "kind": "line",
+   "from": [
+    162.124,
+    71.0
+   ],
+   "to": [
+    167.624,
+    80.526
+   ],
+   "colour": "ink",
+   "width": 1.5,
+   "arrow": "end"
+  },
+  {
+   "kind": "label",
+   "text": "(b)",
+   "at": [
+    150,
+    28
+   ],
+   "size": 16
+  }
+ ],
+ "angles_claimed": [],
+ "unreadable": [
+  "the ceiling fan of panel (a): four shaded blades, the hub and the down rod, drawn in 3-D perspective with grey gradient fills",
+  "the potter's wheel of panel (b): a shaded disc seen in perspective with a thrown pot standing on it, again all gradient fill and ellipse",
+  "with both bodies gone, the redraw is the two fixed axes and nothing else - this figure belongs to the class that should keep its scan"
+ ],
+ "note": "Both panels are shaded 3-D drawings and essentially nothing in them is a primitive this renderer has. What survives is the fixed axis of each panel, which is the one thing the figure is making a claim about, and the curled arrows that mark rotation about it. Each curl is an arc plus a straight head laid along the arc's own tangent at its end angle, not placed by eye. This spec is recorded so the figure's class is on the record; the card should go on showing the scan."
+}

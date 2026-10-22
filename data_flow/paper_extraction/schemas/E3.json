@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/E3.json",
+  "title": "E3 agent output (e3-shape-tagger)",
+  "description": "Spec 13/E3 'Agent output': {\"content_shape\",\"why\",\"new_description\",\"confidence\"} -- matching .claude/agents/e3-shape-tagger.md's worked example exactly. The `content_shape` enum is config/allowed_values.yaml v0.3's list verbatim, 23 values, generated from docs/question_categories/RULEBOOK.md section 3. E3 judges the NCERT MATERIAL behind the answer (read through D4's evidence lines and their passage kinds), never the question's own layout -- which is why `why` is required and why scripts/checks/E3.py requires it to name the evidence rather than restate the question. Spec 13/E3 'On failure': a `medium` confidence is NOT a check failure, it raises E3_MEDIUM (low) -- the check must never retry an agent for being honest about weak evidence, and today weak evidence is the normal case (Stage A has indexed 2 of 13 Biology chapters and zero Physics/Chemistry, so D4 structurally cannot cite supporting text for most questions -- codebook/E3.md §4). `note` optional per Universal rule 7; `codebook_version` is the runner's to record (see schemas/E1.json).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["content_shape", "why", "new_description", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "content_shape": {
+          "type": "string",
+          "enum": [ "classification_hierarchy", "current_affairs", "definition_term", "diagram", "disease_cause", "example_list", "experimental_observation", "formula_or_law", "graph", "life_cycle", "new_shape", "nomenclature_rule", "organism_characteristic", "practical_procedure", "process", "reaction", "reaction_mechanism", "scientist_history", "structure_chemical", "structure_function", "structure_property", "trend", "value_or_data" ],
+          "description": "What kind of NCERT MATERIAL the question is built on. config/allowed_values.yaml content_shape, v0.3."
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One sentence naming the evidence, checkable in seconds ('Evidence is the ordered stages of mitosis'), never a restatement of the question ('tests process understanding'). scripts/checks/E3.py enforces a minimum substance."
+        },
+        "new_description": {
+          "type": "string",
+          "description": "One line, REQUIRED (non-empty) when content_shape is new_shape -- E_NEW_CATEGORY (normal) carries it to Stage F. Enforced in scripts/checks/E3.py."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": { "type": "string", "description": "Universal rule 7. Optional." }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

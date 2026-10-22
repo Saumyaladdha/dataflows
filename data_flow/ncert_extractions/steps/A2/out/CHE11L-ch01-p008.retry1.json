@@ -1,0 +1,75 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The definitions of the SI base units are given in Table 1.2."
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The SI system allows the use of prefixes to indicate the multiples or submultiples of a unit."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "These prefixes are listed in Table 1.3."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Let us now quickly go through some of the quantities which you will be often using in this book."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "Table 1.2  Definitions of SI Base Units"
+    },
+    {
+      "n": 6,
+      "kind": "table",
+      "needs_special": false,
+      "text": "Unit of length\nmetre\nThe metre, symbol m is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum c to be 299792458 when expressed in the unit ms–1, where the second is defined in terms of the caesium frequencyVCs."
+    },
+    {
+      "n": 7,
+      "kind": "table",
+      "needs_special": false,
+      "text": "Unit of mass\nkilogram\nThe kilogram, symbol kg. is the SI unit of mass. It is defined by taking the fixed numerical value of the planck constant h to be 6.62607015×10–34 when expressed in the unit Js, which is equal to kgm2s–1, where the metre and the second are defined in terms of c and VCs."
+    },
+    {
+      "n": 8,
+      "kind": "table",
+      "needs_special": false,
+      "text": "Unit of time\nsecond\nThe second symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency VCs, the unperturbed ground-state hyperfine transition frequency of the caesium-133 atom, to be 9192631770 when expressed in the unit Hz, which is equal to s–1."
+    },
+    {
+      "n": 9,
+      "kind": "table",
+      "needs_special": false,
+      "text": "Unit of electric current\nampere\nThe ampere, symbol A, is the SI unit of electric current. It is defined by taking the fixed numerical value of the elementary charge e to be 1.602176634×10–19 when expressed in the unit C, which is equal to As, where the second is defined in terms of VCs."
+    },
+    {
+      "n": 10,
+      "kind": "table",
+      "needs_special": false,
+      "text": "Unit of thermodynamic temperature\nkelvin\nThe kelvin, symbol k, is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant k to be 1.380649×10–23 when expressed in the unit JK–1, which is equal to kgm2s–2k–1 where the kilogram, metre and second are defined in terms of h, c and VCs."
+    },
+    {
+      "n": 11,
+      "kind": "table",
+      "needs_special": false,
+      "text": "Unit of amount of substance\nmole\nThe mole, symbol mol, is the SI unit of amount of substance. One mole contains exactly 6.02214076×1023 elementary entities. This number is the fixed numerical value of the Avogadro constant, NA, when expressed in the unit mol–1 and is called the Avogadro number. The amount of substance, symbol n, of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles."
+    },
+    {
+      "n": 12,
+      "kind": "table",
+      "needs_special": false,
+      "text": "Unit of luminous Intensity\nCandela\nThe candela, symbol cd is the SI unit of luminous intensity in a given direction. It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540×1012 Hz, Kcd, to be 683 when expressed in the unit lm·W–1, which is equal to cd·sr·W–1, or cd sr kg–1 m–2s3, where the kilogram, metre and second are defined in terms of h, c and VCs."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["8", "CHEMISTRY", "2024-25"],
+  "note": "Retry fix: Table 1.2 is no longer deferred wholesale. Its caption is now a heading block and each of its seven rows is a table block carrying the row label, the unit name and the full definition text, copied from the text layer (cells separated by newlines). The table contains no non-linear numeric grid, so nothing on this page needs the special transcriber and no block has needs_special true. The text layer flattens superscripts/subscripts and drops the delta sign in the symbol the page prints as the caesium frequency delta-nu-Cs (rendered here as VCs, as the text layer gives it); exponents such as 10–34, 1023 and m–2s3 are likewise flattened in the source text layer and were copied as-is rather than reconstructed."
+}

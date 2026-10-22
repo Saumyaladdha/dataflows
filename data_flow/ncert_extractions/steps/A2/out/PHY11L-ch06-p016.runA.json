@@ -1,0 +1,181 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The physical quantities, moment of a force and angular momentum, have an important relation between them. It is the rotational analogue of the relation between force and linear momentum. For deriving the relation in the context of a single particle, we differentiate l = r × p with respect to time,",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        450,
+        470,
+        525
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Applying the product rule for differentiation to the right hand side,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        595,
+        615,
+        670
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Now, the velocity of the particle is v = dr/dt and p = m v"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Because of this d 0, d m t × = × = r p v v as the vector product of two parallel vectors vanishes. Further, since dp / dt = F,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        900,
+        470,
+        980
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        1000,
+        520,
+        1080
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        1085,
+        780,
+        1165
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Thus, the time rate of change of the angular momentum of a particle is equal to the torque acting on it. This is the rotational analogue of the equation F = dp/dt, which expresses Newton’s second law for the translational motion of a single particle."
+    },
+    {
+      "n": 11,
+      "kind": "heading",
+      "text": "Torque and angular momentum for a system of particles"
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "To get the total angular momentum of a system of particles about a given point we need to add vectorially the angular momenta of individual particles. Thus, for a system of n particles,"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        1590,
+        610,
+        1680
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The angular momentum of the ith particle is given by"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        245,
+        1745,
+        365,
+        1790
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "box",
+      "text": "An experiment with the bicycle rim\n\nTake a bicycle rim and extend its axle on both sides. Tie two strings at both ends A and B, as shown in the adjoining figure. Hold both the strings together in one hand such that the rim is vertical. If you leave one string, the rim will tilt. Now keeping the rim in vertical position with both the strings in one hand, put the wheel in fast rotation around the axle with the other hand. Then leave one string, say B, from your hand, and observe what happens.\n\nThe rim keeps rotating in a vertical plane and the plane of rotation turns around the string A which you are holding. We say that the axis of rotation of the rim or equivalently its angular momentum precesses about the string A.\n\nThe rotating rim gives rise to an angular momentum. Determine the direction of this angular momentum. When you are holding the rotating rim with string A, a torque is generated. (We leave it to you to find out how the torque is generated and what its direction is.) The effect of the torque on the angular momentum is to make it precess around an axis perpendicular to both the angular momentum and the torque. Verify all these statements."
+    },
+    {
+      "n": 17,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        900,
+        285,
+        1315,
+        760
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "where ri is the position vector of the ith particle with respect to a given origin and p = (mivi) is the linear momentum of the particle. (The particle has mass mi and velocity vi) We may write the total angular momentum of a system of particles as"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        925,
+        1610,
+        1510,
+        1710
+      ],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "This is a generalisation of the definition of angular momentum (Eq. 6.25a) for a single particle to a system of particles."
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "Using Eqs. (6.23) and (6.25b), we get"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "107",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column listed first, then the right column from its top (the sidebar box), then the text below it. Block 18 is a single paragraph that starts at the foot of the left column ('...the linear momentum of the particle. (The') and finishes in the right column below the box; it is merged into one block. Block 16 is the sidebar box; block 17 is the bicycle-rim illustration printed inside that box (labels 'Initially' and 'After' belong to the figure and are left to the special transcriber). Inside the box the text layer holds letter-spaced justification artifacts ('s t r i n g s', 'a d j o i n i n g'); these are rendered spacing, not characters, so the real words are transcribed. Block 6 contains an inline displayed fraction whose characters the text layer extracts out of order; per instruction the characters the text layer actually holds for that sentence are copied rather than the formula being re-rendered. Equation numbers (6.27) and (6.25b) sit inside the bboxes of blocks 9 and 19. Page ends with 'Using Eqs. (6.23) and (6.25b), we get', which runs on to the next page."
+}

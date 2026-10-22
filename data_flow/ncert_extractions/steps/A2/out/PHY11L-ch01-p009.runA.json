@@ -1,0 +1,179 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The dimensions of RHS are",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        285,
+        240,
+        655,
+        300
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The dimensions of LHS and RHS are the same and hence the equation is dimensionally correct."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 1.4   The SI unit of energy is J =  kg m2 s–2; that of speed v is  m s–1 and of acceleration a is   m s–2.  Which of the formulae for kinetic energy (K) given below can you rule out on the basis of dimensional arguments (m stands for the mass of the body) :\n(a) K = m2 v3\n(b) K = (1/2)mv2\n(c) K = ma\n(d) K = (3/16)mv2\n(e) K = (1/2)mv2 + ma"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Answer   Every correct formula or equation must have the same dimensions on both sides of the equation.  Also, only quantities with the same physical dimensions can be added or subtracted.  The dimensions of the quantity on the right side are [M2 L3 T–3] for (a);  [M L2 T–2] for (b) and (d); [M L T–2] for (c).  The quantity on the right side of (e) has no proper dimensions since two quantities of different dimensions have been added.  Since the kinetic energy K has the dimensions of [M L2 T–2], formulas (a), (c) and (e) are ruled out.  Note that dimensional arguments cannot tell which of the two, (b) or (d), is the correct formula.  For this, one must turn to the actual definition of kinetic energy (see Chapter 5).  The correct formula for kinetic energy is given by (b)."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "1.6.2 Deducing Relation among the Physical Quantities"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The method of dimensions can sometimes be used to deduce relation among the physical quantities. For this we should know the dependence of the physical quantity on other quantities (upto three physical quantities or linearly independent variables) and consider it as a product type of the dependence. Let us take an example."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Example 1.5 Consider a simple pendulum, having a bob attached to a string, that oscillates under the action of the force of gravity. Suppose that the period of oscillation of the simple pendulum depends on its length  (l), mass of the bob (m) and acceleration due to gravity (g). Derive the expression for its time period using method of dimensions."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Answer  The dependence of time period T on the  quantities l, g and m as a product may be written as :"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        905,
+        585,
+        1075,
+        620
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "where k is dimensionless constant and x, y and z are the exponents."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "By considering dimensions on both sides, we have"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        905,
+        775,
+        1305,
+        860
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "On equating the dimensions on both sides, we have"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        905,
+        928,
+        1250,
+        962
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        880,
+        970,
+        1270,
+        1040
+      ],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        880,
+        1045,
+        1165,
+        1085
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        880,
+        1120,
+        1140,
+        1200
+      ],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "Note that value of constant k can not be obtained by the method of dimensions. Here it does not matter if some number multiplies the right side of this formula, because that does not affect its dimensions."
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        880,
+        1395,
+        1380,
+        1475
+      ],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "Dimensional analysis is very useful in deducing relations among the interdependent physical quantities. However, dimensionless constants cannot be obtained by this method. The method of dimensions can only test the dimensional validity, but not  the exact relationship between physical quantities in any equation. It does not distinguish between the physical quantities having same dimensions."
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "A number of exercises at the end of this chapter will help you develop skill in dimensional analysis."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "UNITS AND MEASUREMENT",
+    "9",
+    "2024-25"
+  ],
+  "note": "Judged first_block_continues_from_previous from page 8, which I read myself in this batch (previous_page_last_block was null): page 8's worked answer to Example 1.3 gives the LHS dimensions and ends with a complete equation line, and this page opens the new sentence 'The dimensions of RHS are', so the opening block is not a continuation (the worked example as a whole does carry over). Examples 1.4 and 1.5 are tinted boxes kept as box blocks with their text copied; the Example 1.5 box itself straddles the column break (it starts at the foot of the left column and finishes at the head of the right column) and is blocked once. Blocks 2, 10, 13, 15, 16, 17, 18 and 20 are display equation lines left for the special transcriber with bounding boxes; several of them (16, 17, 18, 20) begin with a lead-in word printed on the same line ('So that', 'Then,', 'or,', 'Actually, k = 2π so that'), which is inside the crop. The stacked fractions and square roots in those lines are garbled in the text layer, which is why they were not transcribed here. Text layer otherwise matches the image."
+}

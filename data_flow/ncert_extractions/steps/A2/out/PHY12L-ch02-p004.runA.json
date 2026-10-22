@@ -1,0 +1,90 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [205, 275, 810, 783],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "In other words, the electrostatic potential (V ) at any point in a region with electrostatic field is the work done in bringing a unit positive charge (without acceleration) from infinity to that point."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The qualifying remarks made earlier regarding potential energy also apply to the definition of potential. To obtain the work done per unit test charge, we should take an infinitesimal test charge δq, obtain the work done δW in bringing it from infinity to the point and determine the ratio δW/δq. Also, the external force at every point of the path is to be equal and opposite to the electrostatic force on the test charge at that point."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "2.3  POTENTIAL DUE TO A POINT CHARGE"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Consider a point charge Q at the origin (Fig. 2.3). For definiteness, take Q to be positive. We wish to determine the potential at any point P with position vector r from the origin. For that we must calculate the work done in bringing a unit positive test charge from infinity to the point P. For Q > 0, the work done against the repulsive force on the test charge is positive. Since work done is independent of the path, we choose a convenient path – along the radial direction from infinity to the point P."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [205, 1010, 810, 1474],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "At some intermediate point P′ on the path, the electrostatic force on a unit positive charge is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [859, 1328, 1544, 1409],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "where r̂′ is the unit vector along OP′. Work done against this force from  r′ to r′ + Δr′ is"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [567, 1528, 1544, 1604],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The negative sign appears because for Δr′ < 0, ΔW is positive. Total work done (W) by the external force is obtained by integrating Eq. (2.6) from r′ = ∞ to r′ = r,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [567, 1706, 1544, 1804],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "This, by definition is the potential at P due to the charge Q"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 1928, 1544, 2009],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["Physics", "48", "Reprint 2026-27"],
+  "note": "Two-column top region: Figure 2.2 (left) listed before the right-column paragraphs per left-column-first rule. Figure 2.3 sits in the left column alongside the right-column text; it is listed after the paragraph that begins full-width above it. Figure captions (FIGURE 2.2, FIGURE 2.3) are included inside the figure bounding boxes rather than as separate text blocks. Heading 2.3 appears 5x duplicated and scrambled in text_layer; transcribed once in its true reading-order position per the source note. Formula/symbol characters in text_layer are mis-encoded (delta as 'd', prime as '¢', infinity as '¥'), so δq, δW, P′, r′, Δr′ and ∞ were read from the page image. Equation bboxes include the right-margin equation numbers (2.5)-(2.8). Bounding boxes are in original image pixels (1700x2160)."
+}

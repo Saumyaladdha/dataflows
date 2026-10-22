@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/B8.json",
+  "title": "B8 agent output (b8-faulty-fixer)",
+  "description": "Section 10/B8 'Agent output' line and the b8-faulty-fixer agent file (Appendix B), including its worked examples. Minor note: the agent file's 'Allowed values' adds 'unsure' to issue_reason beyond Section 10/B8's and config/allowed_values.yaml's matching 6-value lists -- read as Rule 6 ('unsure is always allowed') rather than a true conflict, so it is included here.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "issue_reason", "notice_says", "proposed_answer", "supporting_quote",
+        "corrected_stem", "corrected_options", "confidence", "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "issue_reason": {
+          "type": "string",
+          "enum": [
+            "two_correct_options", "no_correct_option", "hindi_english_mismatch",
+            "error_in_question", "outdated_ncert", "other", "unsure"
+          ]
+        },
+        "notice_says": {
+          "type": "string",
+          "description": "What the exam body's notice states, if anything; empty string if there is no notice or it says nothing relevant."
+        },
+        "proposed_answer": { "type": "string", "enum": ["1", "2", "3", "4", "unsure"] },
+        "supporting_quote": {
+          "oneOf": [
+            {
+              "type": "object",
+              "required": ["passage_id", "text"],
+              "additionalProperties": false,
+              "properties": {
+                "passage_id": { "type": "string" },
+                "text": { "type": "string", "description": "Copied exactly from one of the latest_passages given." }
+              }
+            },
+            { "type": "null" }
+          ],
+          "description": "Must be verified word for word in the latest edition when present; null when no supporting passage applies (e.g. issue_reason error_in_question with no NCERT angle)."
+        },
+        "corrected_stem": {
+          "oneOf": [{ "type": "string" }, { "type": "null" }],
+          "description": "Only set when choosing an answer cannot fix the question; change as little as possible."
+        },
+        "corrected_options": {
+          "oneOf": [
+            { "type": "object", "additionalProperties": { "type": "string" } },
+            { "type": "null" }
+          ],
+          "description": "Keyed by option number ('1'-'4') for only the option(s) changed; null when not needed."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

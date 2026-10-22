@@ -1,0 +1,35 @@
+{
+  "blocks": [
+    {"n": 2, "no_change": true},
+    {
+      "n": 4,
+      "corrected_text": "which is enormous compared to the value of g (9.8 m s⁻²), the acceleration due to gravity. The acceleration of the electron is even greater. Thus, the effect of acceleration due to gravity can be ignored in this example.",
+      "fixes": [
+        {"wrong": "value of g (9.8 m s–2)", "right": "value of g (9.8 m s⁻²)"}
+      ]
+    },
+    {
+      "n": 5,
+      "corrected_text": "Example 1.9 Two point charges q₁ and q₂, of magnitude +10⁻⁸ C and –10⁻⁸ C, respectively, are placed 0.1 m apart. Calculate the electric fields at points A, B and C shown in Fig. 1.14.",
+      "fixes": [
+        {"wrong": "Two point charges q1 and q2, of magnitude +10–8 C and –10–8 C", "right": "Two point charges q₁ and q₂, of magnitude +10⁻⁸ C and –10⁻⁸ C"}
+      ]
+    },
+    {
+      "n": 7,
+      "corrected_text": "Solution The electric field vector E₁A at A due to the positive charge q₁ points towards the right and has a magnitude",
+      "fixes": [
+        {"wrong": "electric field vector E1A at A due to the positive charge q1", "right": "electric field vector E₁A at A due to the positive charge q₁"}
+      ]
+    },
+    {
+      "n": 9,
+      "corrected_text": "The electric field vector E₂A at A due to the negative charge q₂ points towards the right and has the same magnitude. Hence the magnitude of the total electric field EA at A is",
+      "fixes": [
+        {"wrong": "electric field vector E2A at A due to the negative charge q2", "right": "electric field vector E₂A at A due to the negative charge q₂"}
+      ]
+    },
+    {"n": 11, "no_change": true}
+  ],
+  "note": "n=4, 5 had flattened minus-exponents restored (s–2 -> s⁻²; 10–8 -> 10⁻⁸ twice); n=5, 7, 9 had charge subscripts q1/q2 restored to q₁/q₂, and field subscripts E1A/E2A restored to E₁A/E₂A (digit subscripted; trailing capital A left regular -- no Unicode subscript capital letters exist). n=11's 'EA' is a pure capital-letter subscript (no digit) and cannot be represented in Unicode subscript at all, so it is left unchanged, matching the image's plain-fallback as closely as possible. n=2 already matched exactly."
+}

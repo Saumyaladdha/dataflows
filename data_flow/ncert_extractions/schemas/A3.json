@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A3.json",
+  "title": "A3 agent output (a3-passage-splitter)",
+  "description": "Section 9/A3 'Agent output' line and the a3-passage-splitter agent file (Appendix B): lists of block numbers only, no text (Rule 5 — the script cuts).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["passages", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "passages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "integer", "minimum": 1 }
+          },
+          "description": "Each inner array is the block numbers (in reading order) that make up one passage. Every block number from the input must appear in exactly one passage (the A3 check)."
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } }
+    }
+  ]
+}

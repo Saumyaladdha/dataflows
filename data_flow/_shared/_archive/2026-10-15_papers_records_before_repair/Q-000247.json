@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000247",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:39"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "A ball is projected with a velocity, 10 ms–1, at an angle of $60^\\circ$ with the vertical direction. Its speed at the highest point of its trajectory will be",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Zero",
+    "2": "15 3 ms –",
+    "3": "5 ms–1",
+    "4": "10 ms–1"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "39\nA ball is projected with a velocity, 10 ms–1, at an angle of 60° with the vertical direction. Its speed at\nthe highest point of its trajectory will be\n(1)\nZero\n(2)\n15 3 ms −\n(3)\n5 ms–1\n(4)\n10 ms–1\nMotion in a Plane\n",
+  "b4_script_options": {
+    "1": "Zero",
+    "2": "15 3 ms −",
+    "3": "5 ms–1",
+    "4": "10 ms–1\nMotion in a Plane"
+  },
+  "official_answer": "2",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "2",
+  "b6_reason": "60 deg from vertical = 30 deg from horizontal; speed at apex is the horizontal component 10 sin60 = 5 root 3 ms-1.",
+  "b6_working": "v_x = 10 sin(60) = 10 x (root3/2) = 5 root 3 = 8.66 ms-1; v_y = 0 at highest point, so speed = 5 root 3 ms-1.",
+  "b6_confidence": "medium",
+  "b6_note": "Option 2 text arrived damaged ('15 3 ms -'); read as 5 root3 ms-1 with the superscript -1 displaced. If option 2 is literally 15 root 3 then no option is correct and option 3 (5 ms-1) would only fit an angle measured from the horizontal.",
+  "b6_agrees_with_key": true
+}

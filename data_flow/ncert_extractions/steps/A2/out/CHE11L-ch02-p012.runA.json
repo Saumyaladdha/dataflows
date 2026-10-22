@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "(iv) Line spectra of atoms with special reference to hydrogen.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "These phenomena indicate that the system can take energy only in discrete amounts. All possible energies cannot be taken up or radiated."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "It is noteworthy that the first concrete explanation for the phenomenon of the black body radiation mentioned above was given by Max Planck in 1900. Let us first try to understand this phenomenon, which is  given below:"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Hot objects emit electromagnetic radiations over a wide range of wavelengths. At high temperatures, an appreciable proportion of radiation is in the visible region of the spectrum. As the temperature is raised, a higher proportion of short wavelength (blue light) is generated. For example, when an iron rod is heated in a furnace, it first turns to dull red and then progressively becomes more and more red as the temperature increases. As this is heated further, the radiation emitted becomes white and then becomes blue as the temperature becomes very high. This means that red radiation is most intense at a particular temperature and the blue radiation is more intense at another temperature. This means intensities of radiations of different wavelengths emitted by hot body depend upon its temperature. By late 1850’s it was known that objects made of different material and kept at different temperatures emit different amount of radiation. Also, when the surface of an object is irradiated with light (electromagnetic radiation), a part of radiant energy is generally reflected as such, a part is absorbed and a part of it is transmitted. The reason for incomplete absorption is that ordinary objects are as a rule imperfect absorbers of radiation. An ideal body, which emits and absorbs radiations of all frequencies uniformly, is called a black body and the radiation emitted by such a body is called black body radiation. In practice, no such body exists. Carbon black approximates fairly closely to black body. A good physical approximation to a black body is a cavity with a tiny hole, which has no other opening. Any ray"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "entering the hole will be reflected by the cavity walls and will be eventually absorbed by the walls. A black body is also a perfect radiator of radiant energy. Furthermore, a black body is in thermal equilibrium with its surroundings. It radiates same amount of energy per unit area as it absorbs from its surrounding in any given time. The amount of light emitted (intensity of radiation) from a black body and its spectral distribution depends only on its temperature. At a given temperature, intensity of radiation emitted increases with the increase of wavelength, reaches a maximum value at a given wavelength and then starts decreasing with further increase of wavelength, as shown in Fig. 2.8. Also, as the temperature increases, maxima of the curve shifts to short wavelength. Several attempts were made to predict the intensity of radiation as a function of wavelength."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "But the results of the above experiment could not be explained satisfactorily on the basis of the wave theory of light. Max Planck arrived at a satisfactory relationship"
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        959,
+        1074,
+        1679,
+        1597
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        981,
+        1608,
+        1548,
+        2093
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "40",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p011.runA.json I wrote in this run, whose main text ends with list items (i), (ii) and (iii) of the observations classical physics could not explain. This page opens with item (iv) of that same list, so block n=1 is the list continued across the page break. Reading order is left column then right column. The paragraph beginning 'Hot objects emit electromagnetic radiations' runs off the foot of the left column at 'Any ray' and resumes at the top of the right column with 'entering the hole will be reflected'; it is one printed paragraph but is kept as two blocks (n=4, n=5) because the page's text layer stores the right column stream BEFORE the left column stream, so a single concatenated block could not be matched against the layer in order. Blocks n=7 and n=8 are the two figures in the right column, left for the special transcriber: n=7 is Fig. 2.8, the wavelength-intensity graph, its bbox covering the yellow panel with the T2>T1 and T2, T1 curve labels, the Intensity and 'Wavelength λ (nm)' axis labels, the 1000/2000/3000 tick labels and the italic caption 'Fig. 2.8 Wavelength-intensity relationship'; n=8 is the ray diagram with the caption 'Fig. 2.8(a) Black body'. The text layer stores both captions as a pair between the right and left column streams. Block n=6 is the last prose on the page and breaks mid-sentence after 'arrived at a satisfactory relationship', completed on p013, so last_block_continues_on_next is true even though the two figures are printed below it."
+}

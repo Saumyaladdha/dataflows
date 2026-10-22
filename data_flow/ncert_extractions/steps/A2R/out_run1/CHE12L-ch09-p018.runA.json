@@ -1,0 +1,36 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "The book prints TWO equations for 'Replacement by H' at the top of the page: 'ArN2Cl + H3PO2 + H2O -> ArH + N2 + H3PO3 + HCl' and, directly beneath it, the ethanol variant 'ArN2Cl + CH3CH2OH -> ArH + N2 + CH3CHO + HCl'. The render prints only the first equation; the ethanol equation, which is the half of the reaction that produces ethanal, is absent entirely.",
+      "where": "top of the page, above numbered item 5"
+    },
+    {
+      "kind": "duplicated",
+      "what": "The coupling-reaction figure panel is drawn twice. The book shows it once: the phenol coupling to p-Hydroxyazobenzene (orange dye) above the aniline coupling to p-Aminoazobenzene (yellow dye). The render shows two identical boxed copies of that whole two-reaction panel, stacked one above the other, so both dye reactions appear twice.",
+      "where": "lower middle of the page, between the 'B. Reactions involving retention of diazo group' paragraph and section 9.10"
+    },
+    {
+      "kind": "clipped",
+      "what": "The book's last line of body text, 'Thus, the replacement of diazo group by other groups is helpful in', sits in the right-hand column clear of the folio. In the render that line is pushed down onto the folio rule: the yellow folio bar and the 'Chemistry 276' folio are drawn across it and its descenders are cut at the bottom of the text area, leaving the line half-legible.",
+      "where": "very bottom of the page, on top of the 'Chemistry 276' folio bar"
+    },
+    {
+      "kind": "misplaced",
+      "what": "The first copy of the coupling-reaction figure box starts too high and its top rule is drawn across the final line of the preceding paragraph, 'This is an example of electrophilic substitution reaction.', so the figure frame overlaps running text instead of starting below it.",
+      "where": "immediately under the 'B. Reactions involving retention of diazo group' paragraph"
+    },
+    {
+      "kind": "formatting",
+      "what": "The book sets the lead-in of each numbered reaction in italics -- 'Replacement by hydroxyl group' and 'Replacement by -NO2 group'. The render sets both plain roman, so they no longer read as reaction titles.",
+      "where": "numbered items 5 and 6, right-hand column"
+    },
+    {
+      "kind": "formatting",
+      "what": "The book colour-codes the substituent atoms in the top equations and in the hydrolysis equation (N2, Cl, OH and HCl printed in red/magenta/green). The render prints the H3PO2 equation and the ArN2Cl + H2O -> ArOH + N2 + HCl equation entirely in black. The colour survives inside the ring diagrams but not in the typeset equations.",
+      "where": "the three typeset equations in the right-hand column"
+    }
+  ],
+  "note": "Compared block by block against page 276. Section 9.10's side heading, the 'B. Reactions involving retention of diazo group coupling reactions' heading, the azo-products paragraph, the fluoroborate/NaNO2 ring equation and the two closing paragraphs of 9.10 are all present. The book sets the B heading on two lines and the render on one -- that is reflow, not reported. The NO2 ring equation and both copies of the coupling figure are drawn inside visible rectangular frames that the book does not print; that reads as the render's panel styling rather than lost or added content, so it is noted here rather than filed as a finding. I could not tell from the images whether the duplicated coupling panel is two renders of one figure or two separate figure records fed to the page."
+}

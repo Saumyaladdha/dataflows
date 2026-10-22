@@ -1,0 +1,48 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 21.0,
+    "columns": [
+      {"id": "left", "x0": 0.1235, "x1": 0.5588},
+      {"id": "right", "x0": 0.5806, "x1": 0.9035}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0666],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.1276, 0.0, 0.4506, 0.1212],
+     "column": "left", "size_rel": 2.0, "align": "center", "font": "sans-light",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.5806, 0.1354, 0.9024, 0.2920],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "figure", "bbox": [0.1235, 0.1410, 0.5600, 0.3485],
+     "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.1294, 0.3613, 0.5359, 0.3861],
+     "column": "left", "size_rel": 0.8, "align": "center", "font": "serif",
+     "text_color": "#00adef"},
+    {"n": 3, "role": "paragraph", "bbox": [0.3141, 0.2984, 0.9035, 0.4747],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "paragraph", "bbox": [0.3135, 0.4784, 0.9018, 0.5891],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "paragraph", "bbox": [0.3135, 0.5927, 0.9035, 0.7897],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "paragraph", "bbox": [0.3141, 0.7934, 0.9035, 0.8903],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 7, "role": "paragraph", "bbox": [0.3135, 0.8939, 0.9018, 0.9394],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.1276, 0.9155, 0.1859, 0.9371],
+     "column": "left", "size_rel": 1.1, "align": "center", "font": "serif",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5235, 0.9633],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif",
+     "text_color": "#000000"}
+  ],
+  "note": "Verso body page. The top third is genuinely two-column - Fig. 1.1 and its caption occupy a left column (x 0.123-0.559, reaching out into the wide left margin) while paragraph n=1 runs beside it in a narrow right column (x 0.581-0.904) - so `left` and `right` are declared. From n=3 onward the text returns to the single full measure x 0.314-0.904, and those paragraphs are `full`; n=3 itself starts in the right column and wraps to full measure, so its bbox spans both. The page_header_band is the pale cyan #c6eafb strip across the top; it finishes in a solid cyan #00adef rule at y 0.0624-0.0666 (with a thin lighter #41c7f4 hairline above it over the outer half), reported as one band carrying the band's own #c6eafb fill. There is no footer_rule on this page. The grey #d1d2d4 panel holding the word 'Physics' (and a small two-square cyan/grey device) is the running header. The folio '2' sits in a pale cyan #c6eafb box in the outer bottom margin (page_number); the centred '2022-23' print-year line at the foot is recorded as running_header, the nearest available furniture role. A2 gives the figure as block n=2 with no text, and gives no block for its 'FIGURE 1.1 Rods and pith balls...' caption, so the caption element carries n: null rather than a guessed match. Figure captions in this chapter are printed in cyan #00adef."
+}

@@ -1,0 +1,84 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "different mass unit is used for expressing atomic masses. This unit is the atomic mass unit (u), defined as 1/12th of the mass of the carbon (¹²C) atom. According to this definition",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        170,
+        392,
+        1134,
+        640
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The atomic masses of various elements expressed in atomic mass unit (u) are close to being integral multiples of the mass of a hydrogen atom. There are, however, many striking exceptions to this rule. For example, the atomic mass of chlorine atom is 35.46 u."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Accurate measurement of atomic masses is carried out with a mass spectrometer, The measurement of atomic masses reveals the existence of different types of atoms of the same element, which exhibit the same chemical properties, but differ in mass. Such atomic species of the same element differing in mass are called isotopes. (In Greek, isotope means the same place, i.e. they occur in the same place in the periodic table of elements.) It was found that practically every element consists of a mixture of several isotopes.  The relative abundance of different isotopes differs from element to element. Chlorine, for example, has two isotopes having masses 34.98 u and 36.98 u, which are nearly integral multiples of the mass of a hydrogen atom.  The relative abundances of these isotopes are 75.4 and 24.6 per cent, respectively.  Thus, the average mass of a chlorine atom is obtained by the weighted average of the masses of the two isotopes,  which works out to be"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        148,
+        1292,
+        620,
+        1385
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "which agrees with the atomic mass of chlorine."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Even the lightest element, hydrogen has three isotopes having masses 1.0078 u, 2.0141 u, and 3.0160 u.  The nucleus of the lightest atom of hydrogen, which has a relative abundance of 99.985%, is called the proton.  The mass of a proton is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        180,
+        1598,
+        1134,
+        1645
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "This is equal to the mass of the hydrogen atom (= 1.00783u), minus the mass of a single electron (me = 0.00055 u).  The other two isotopes of hydrogen are called deuterium and tritium. Tritium nuclei, being unstable, do not occur naturally and are produced artificially in laboratories."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The positive charge in the nucleus is that of the protons. A proton carries one unit of fundamental charge and is stable. It was earlier thought that the nucleus may contain electrons, but this was ruled out later using arguments based on quantum theory. All the electrons of an atom are outside the nucleus. We know that the number of these electrons outside the nucleus of the atom is Z, the atomic number. The total charge of the"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "307",
+    "Nuclei",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read page 1 of this chapter immediately before: it ended mid-sentence with '...Kilogram is not a very convenient unit to measure such small quantities. Therefore, a', and this page opens 'different mass unit is used for expressing atomic masses.' — so first_block_continues_from_previous is true on that direct evidence, not a guess. Blocks 2, 5 and 8 are display equations (13.1), the chlorine weighted-average line, and (13.2); left for the special transcriber with pixel bboxes. Text layer flattens them into unusable interleaved fragments (e.g. '26\\n1.992647\\n10\\nkg\\n12'). Text-layer/image notation discrepancies: superscripts are dropped or turned into bare digits/en-dashes ('12C' -> ¹²C, '10–26' -> 10⁻²⁶, '10–27' -> 10⁻²⁷, '1/12th' has a superscript 'th' in the image), and subscripts are lost (image prints m with subscript p and m with subscript e; text layer gives 'p m' and 'me'). In block 9 'me' is printed as m with a subscript e in the image. Italics on 'isotopes' in block 4 are not preserved in plain text."
+}

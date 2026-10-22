@@ -1,0 +1,107 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "handle is brought close to A such that the distance between their centres is 10 cm, as shown in Fig. 1.4(a). The resulting repulsion of A is noted (for example, by shining a beam of light and measuring the deflection of its shadow on a screen). Spheres A and B are touched by uncharged spheres C and D respectively, as shown in Fig. 1.4(b). C and D are then removed and B is brought closer to A to a distance of 5.0 cm between their centres, as shown in Fig. 1.4(c). What is the expected repulsion of A on the basis of Coulomb’s law? Spheres A and C and spheres B and D have identical sizes. Ignore the sizes of A and B in comparison to the separation between their centres.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Solution Let the original charge on sphere A be q and that on B be q¢. At a distance r between their centres, the magnitude of the electrostatic force on each is given by"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        750,
+        420,
+        830
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "neglecting the sizes of spheres A and B in comparison to r. When an identical but uncharged sphere C touches A, the charges redistribute on A and C and, by symmetry, each sphere carries a charge q/2. Similarly, after D touches B, the redistributed charge on each is q¢/2. Now, if the separation between A and B is halved, the magnitude of the electrostatic force on each is"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        1035,
+        660,
+        1120
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Thus the electrostatic force on A, due to B, remains unaltered."
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "1.6  FORCES BETWEEN MULTIPLE CHARGES"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The mutual electric force between two charges is given by Coulomb’s law. How to calculate the force on a charge where there are not one but several charges around? Consider a system of n stationary charges q1, q2, q3, ..., qn in vacuum. What is the force on q1 due to q2, q3, ..., qn? Coulomb’s law is not enough to answer this question.  Recall that forces of mechanical origin add according to the parallelogram law of addition. Is the same true for forces of electrostatic origin?"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Experimentally, it is verified that force on any charge due to a number of other charges is the vector sum of all the forces on that charge due to the other charges, taken one at a time. The individual forces are unaffected due to the presence of other charges. This is termed as the principle of superposition."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "To better understand the concept, consider a system of three charges q1, q2 and q3, as shown in Fig. 1.5(a). The force on one charge, say q1, due to two other charges q2, q3 can therefore be obtained by performing a vector addition of the forces due to each one of these charges. Thus, if the force on q1 due to q2 is denoted by F12, F12 is given by Eq. (1.3)  even though other charges are present."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Thus,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        350,
+        1995,
+        650,
+        2085
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1030,
+        1235,
+        1480,
+        2015
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "11",
+    "EXAMPLE 1.4",
+    "Reprint 2026-27"
+  ],
+  "note": "The page opens inside the shaded Example 1.4 box carried over from the previous page, so first_block_continues_from_previous is true even though previous_page_last_block was supplied as null. The example box is emitted as several blocks (box prose interleaved with its two displayed equations) rather than one block, so that the displayed equations could be marked needs_special for the transcriber; blocks 1-6 are all inside that one box. The text layer renders the prime on q' as the character 'q¢' in the Solution paragraphs; copied as the text layer holds it rather than re-rendered. Inline subscripts (q1, q2, q3, qn, F12, r12) are flattened in the text layer and copied in that flattened form. The right-hand column of the lower half of the page is Figure 1.5 with its caption 'FIGURE 1.5 A system of (a) three charges (b) multiple charges.', emitted as one needs_special figure block covering art plus caption. A diagonal '© NCERT not to be republished' watermark crosses the page and is not part of the content. The vertical margin label 'EXAMPLE 1.4' and the page number 11 (printed inside the caption area, bottom right) were removed as furniture."
+}

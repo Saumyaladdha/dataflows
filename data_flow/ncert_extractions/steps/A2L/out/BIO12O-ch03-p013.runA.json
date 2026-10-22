@@ -1,0 +1,37 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20,
+    "columns": [
+      {"id": "full", "x0": 0.325, "x1": 0.885}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.244, 0.068, 0.975, 0.108],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435"},
+    {"n": null, "role": "decorative_image", "bbox": [0.025, 0.068, 0.241, 0.158],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.827, 0.141, 0.881, 0.147],
+     "column": "full", "size_rel": 0.75, "align": "right", "font": "sans"},
+    {"n": 1, "role": "paragraph", "bbox": [0.326, 0.167, 0.884, 0.240],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.325, 0.244, 0.885, 0.455],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "section_heading", "bbox": [0.327, 0.471, 0.607, 0.481],
+     "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold",
+     "text_color": "#01b14a"},
+    {"n": 4, "role": "paragraph", "bbox": [0.325, 0.494, 0.885, 0.721],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "paragraph", "bbox": [0.326, 0.725, 0.885, 0.843],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "page_number", "bbox": [0.025, 0.745, 0.202, 0.779],
+     "column": "full", "size_rel": 1.3, "align": "center", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "footer_rule", "bbox": [0.025, 0.782, 0.202, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.7, "align": "center", "font": "sans"}
+  ],
+  "note": "Verso body page (printed page 54), single full-measure column x=0.325-0.885 with the wide outer margin on the LEFT -- all the furniture is mirrored relative to recto page 53. No figure and no text wrap, so one column only. page_header_band is the dark green strip x=0.244-0.975 at y=0.068-0.108, sampled #4a7435 from its flat interior (most common value over a 800x50 px patch; matches the chapter reference exactly). footer_rule is the thin orange rule at y=0.782-0.788 sitting under the page-number tab in the left margin, mean #f7941e, reported #f7941d. There is NO rule_bar on this page -- that role belongs only to the chapter-opening page, so the three band roles are kept distinct here. The orange page-number tab (#f7941d with white \"54\") is a page_number, not a band. Section heading 3.7 samples #01b14a in its solid glyph cores, very slightly greener than the chapter reference #06ac48 but within antialiasing noise. Decorative top-left corner (brown panel + orange stripe + leaf and figure motif) is one decorative_image. Blocks split at the line level: block 1 is the five lines y=0.167-0.240, block 2 the paragraph y=0.244-0.455, block 4 the fifteen lines y=0.494-0.721, block 5 the indented paragraph y=0.725-0.843. The \"2022-23\" imprint at the foot has no dedicated allowed role; recorded as a running_header at size_rel 0.7. Nothing on this page was ambiguous."
+}

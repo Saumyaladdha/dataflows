@@ -1,0 +1,95 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "number of electrons travelling in any direction will be equal to the number of electrons travelling in the opposite direction. So, there will be no net electric current.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Let us now see what happens to such a piece of conductor if an electric field is applied. To focus our thoughts, imagine the conductor in the shape of a cylinder of radius R (Fig. 3.1). Suppose we now take two thin circular discs of a dielectric of the same radius and put positive charge +Q distributed over one disc and similarly –Q at the other disc. We attach the two discs on the two flat surfaces of the cylinder. An electric field will be created and is directed from the positive towards the negative charge. The electrons will be accelerated due to this field towards +Q. They will thus move to neutralise the charges. The electrons, as long as they are moving, will constitute an electric current. Hence in the situation considered, there will be a current for a very short while and no current thereafter."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        837,
+        380,
+        1500,
+        525
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "FIGURE 3.1 Charges +Q and –Q put at the ends of a metallic cylinder. The electrons will drift because of the electric field created to neutralise the charges. The current thus will stop after a while unless the charges +Q and –Q are continuously replenished."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "We can also imagine a mechanism where the ends of the cylinder are supplied with fresh charges to make up for any charges neutralised by electrons moving inside the conductor. In that case, there will be a steady electric field in the body of the conductor. This will result in a continuous current rather than a current for a short period of time. Mechanisms, which maintain a steady electric field are cells or batteries that we shall study  later in this chapter. In the next sections, we shall study the steady current that results from a steady electric field in conductors."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "3.4  OHM’S LAW"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "A basic law regarding flow of currents was discovered by G.S. Ohm in 1828, long before the physical mechanism responsible for flow of currents was discovered. Imagine a conductor through which a current I is flowing and let V be the potential difference between the ends of the conductor. Then Ohm’s law states that"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        157,
+        1505,
+        1180,
+        1605
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "where the constant of proportionality R is called the resistance of the conductor. The SI units of resistance is ohm, and is denoted by the symbol W. The resistance R not only depends on the material of the conductor but also on the dimensions of the conductor. The dependence of R on the dimensions of the conductor can easily be determined as follows."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Consider a conductor satisfying Eq. (3.3) to be in the form of a slab of length l and cross sectional area A [Fig. 3.2(a)]. Imagine placing two such identical slabs side by side [Fig. 3.2(b)], so that the length of the combination is 2l. The current flowing through the  combination is the same as that flowing through either of the slabs. If V is the potential difference across the ends of the first slab, then V is also the potential difference across the ends of the second slab since the second slab is"
+    },
+    {
+      "n": 11,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1195,
+        1090,
+        1515,
+        1730
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "FIGURE 3.2 Illustrating the relation R = rl/A for a rectangular slab of length l and area of cross-section A."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Current",
+    "Electricity",
+    "83",
+    "Reprint 2026-27"
+  ],
+  "note": "Block 8 holds the two displayed lines \"V µ I\" and \"or, V = R I\" with equation number (3.3) at the right margin; left as needs_special. Figure captions (blocks 4 and 12) are transcribed as prose from the text layer, with the artwork above/beside them marked needs_special (blocks 3 and 11). Per the source note, prose characters are copied from the text layer as-is, so the ohm sign appears as \"W\" in block 9 and rho as \"r\" in block 12 (image shows Ω and ρ). The sentence that ends block 10 runs on to the next page. A diagonal \"© NCERT not to be republished\" watermark crosses the page; it is not page content and is not transcribed."
+}

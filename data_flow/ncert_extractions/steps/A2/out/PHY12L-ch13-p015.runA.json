@@ -1,0 +1,23 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "POINTS TO PONDER",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "1. The density of nuclear matter is independent of the size of the nucleus. The mass density of the atom does not follow this rule.\n2. The radius of a nucleus determined by electron scattering is found to be slightly different from that determined by alpha-particle scattering. This is because electron scattering senses the charge distribution of the nucleus, whereas alpha and similar particles sense the nuclear matter.\n3. After Einstein showed the equivalence of mass and energy, E = mc², we cannot any longer speak of separate laws of conservation of mass and conservation of energy, but we have to speak of a unified law of conservation of mass and energy. The most convincing evidence that this principle operates in nature comes from nuclear physics. It is central to our understanding of nuclear energy and harnessing it as a source of power. Using the principle, Q of a nuclear process (decay or reaction) can be expressed also in terms of initial and final masses.\n4. The nature of the binding energy (per nucleon) curve shows that exothermic nuclear reactions are possible, when two light nuclei fuse or when a heavy nucleus undergoes fission into nuclei with intermediate mass.\n5. For fusion, the light nuclei must have sufficient initial energy to overcome the coulomb potential barrier. That is why fusion requires very high temperatures.\n6. Although the binding energy (per nucleon) curve is smooth and slowly varying, it shows peaks at nuclides like ⁴He, ¹⁶O etc. This is considered as evidence of atom-like shell structure in nuclei.\n7. Electron and positron are a particle-antiparticle pair. They are identical in mass; their charges are equal in magnitude and opposite. (It is found that when an electron and a positron come together, they annihilate each other giving energy in the form of gamma-ray photons.)\n8. Radioactivity is an indication of the instability of nuclei. Stability requires the ratio of neutron to proton to be around 1:1 for light nuclei. This ratio increases to about 3:2 for heavy nuclei. (More neutrons are required to overcome the effect of repulsion among the protons.) Nuclei which are away from the stability ratio, i.e., nuclei which have an excess of neutrons  or protons are unstable. In fact, only about 10% of knon isotopes (of all elements), are stable. Others have been either artificially produced in the laboratory by bombarding α, p, d, n or other particles on targets of stable nuclear species or identified in astronomical observations of matter in the universe."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "320",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read page 14 of this chapter immediately before: it closed the SUMMARY box after item 12 and then the symbols table, both complete, and this page opens a new shaded 'POINTS TO PONDER' box — so first_block_continues_from_previous is false on that direct evidence. The box spans roughly [445, 281, 1436, 1710] and closes on this page; the lower third of the page is blank apart from the page number and the 'Reprint 2026-27' footer, so last_block_continues_on_next is false. The 'POINTS TO PONDER' title sits inside the box but is kept as its own heading block since it is a title, not body text. No tables, figures or display equations on this page, so no needs_special blocks. Text-layer/image notation discrepancies, taken from the image: superscripts are dropped ('mc 2' -> mc², '4He' -> ⁴He, '16O' -> ¹⁶O); the Greek alpha in item 8 ('α, p, d, n') does survive in this page's text layer, unlike earlier pages of the chapter. Italics (E, mc², Q) are not preserved. The image prints 'knon isotopes' (for 'known') and the double space in 'excess of neutrons  or protons'; copied as printed without correction."
+}

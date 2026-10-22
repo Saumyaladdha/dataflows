@@ -1,0 +1,142 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 252, 858, 308],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Therefore, equilibrium constant for the reaction is equal to Kc n. These findings are summarised in Table 7.4. It should be noted that because the equilibrium constants Kc and K′c have different numerical values, it is important to specify the form of the balanced chemical equation when quoting the value of an equilibrium constant."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "Table 7.4  Relations between Equilibrium Constants for a General Reaction and its Multiples."
+    },
+    {
+      "n": 4,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [200, 712, 858, 965],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Problem 7.1\nThe following concentrations were obtained for the formation of NH3 from N2 and H2 at equilibrium at 500K.\n[N2] = 1.5 × 10–2M. [H2] = 3.0 ×10–2 M and [NH3] = 1.2 ×10–2M. Calculate equilibrium constant.\nSolution\nThe equilibrium constant for the reaction, N2(g) + 3H2(g) ⇌ 2NH3(g) can be written as,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [230, 1442, 692, 1752],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Problem 7.2\nAt equilibrium, the concentrations of\nN2=3.0 × 10–3M, O2 = 4.2 × 10–3M and\nNO= 2.8 × 10–3M in a sealed vessel at"
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "800K. What will be Kc for the reaction"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1028, 302, 1392, 355],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "Solution\nFor the reaction equilibrium constant,\nKc can be written as,"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [925, 498, 1428, 782],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "heading",
+      "text": "7.4 HOMOGENEOUS EQUILIBRIA"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "In a homogeneous system, all the reactants and products are in the same phase. For example, in the gaseous reaction, N2(g) + 3H2(g) ⇌ 2NH3(g), reactants and products are in the homogeneous phase. Similarly, for the reactions,"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [895, 1065, 1540, 1150],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [895, 1158, 1492, 1210],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "all the reactants and products are in homogeneous solution phase. We shall now consider equilibrium constant for some homogeneous reactions."
+    },
+    {
+      "n": 17,
+      "kind": "heading",
+      "text": "7.4.1 Equilibrium Constant in Gaseous Systems"
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "So far we have expressed equilibrium constant of the reactions in terms of molar concentration of the reactants and products, and used symbol, Kc for it. For reactions involving gases, however, it is usually more convenient to express the equilibrium constant in terms of partial pressure."
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "The ideal gas equation is written as,"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [888, 1730, 1058, 1778],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [888, 1790, 1112, 1870],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "Here, p is the pressure in Pa, n is the number of moles of the gas, V is the volume in m3 and T is the temperature in Kelvin",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "EQUILIBRIUM",
+    "201",
+    "2022-23"
+  ],
+  "note": "RETRY 1 fix: the pink Problem 7.2 panel is split across the column gutter — it ends the left column with '...in a sealed vessel at' and resumes at the very top of the right column with '800K. What will be Kc for the reaction'. The previous attempt joined those two fragments into one block (old n=7), but the text layer stores the right-column fragment much EARLIER than the left-column lines, so the joined block could not be matched in order against the text layer (66.7%). I have now kept them as two separate box blocks (n=7 and n=8), each a contiguous run of the text layer, and copied their maths exactly as the text layer spells it ('N2=3.0 × 10–3M, O2 = 4.2 × 10–3M and NO= 2.8 × 10–3M'), keeping the line breaks the text layer has. The displayed expression in the box, N2(g) + O2(g) ⇌ 2NO(g), is left to A2S as n=9 rather than transcribed. Nothing else is changed except block numbering after n=7. previous_page_last_block was null in the input; judged against my own p009 output, which ended 'On multiplying the equation (7.5) by n, we get' — equation (7.11), this page's block 1, completes that sentence, so first_block_continues_from_previous is true. The rest of the worked-example panel is blocked as box text (n=10) with the displayed Kc computation marked needs_special (n=11), because a box block cannot carry a bbox for its own equations. Equation (7.11) as printed reads 'nH2(g) + nI2(g) D ⇌ 2nHI(g)' — the stray 'D' is in the text layer and on the page; I have not corrected it and A2S will see it inside the bbox. Block 22 ends without a full stop in the original ('...in Kelvin'); p011 opens with a fresh 'Therefore,', so last_block_continues_on_next is false."
+}

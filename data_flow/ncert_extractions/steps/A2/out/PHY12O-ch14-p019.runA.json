@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        180,
+        311,
+        1526,
+        725
+      ],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "14.8  SPECIAL PURPOSE p-n JUNCTION DIODES"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In the section, we shall discuss some devices which are basically junction\ndiodes but are developed for different applications."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "14.8.1  Zener diode"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "It is a special purpose semiconductor diode, named after its inventor\nC. Zener. It is designed to operate under reverse bias in the breakdown\nregion and used as a voltage regulator. The symbol for Zener diode is\nshown in Fig. 14.21(a)."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Zener diode is fabricated by heavily doping both p-, and\nn- sides of the junction. Due to this, depletion region formed\nis very thin (<10⁻⁶ m) and the electric field of the junction is\nextremely high (~5×10⁶ V/m) even for a small reverse bias\nvoltage of about 5V. The I-V characteristics of a Zener diode is\nshown in Fig. 14.21(b). It is seen that when the applied reverse\nbias voltage(V) reaches the breakdown voltage (Vz) of the Zener\ndiode, there is a large change in the current. Note that after\nthe breakdown voltage Vz, a large change in the current can\nbe produced by almost insignificant change in the reverse bias\nvoltage. In other words, Zener voltage remains constant, even\nthough current through the Zener diode varies over a wide\nrange. This property of the Zener diode is used for regulating\nsupply voltages so that they are constant."
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1046,
+        1112,
+        1526,
+        1973
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Let us understand how reverse current suddenly increases\nat the breakdown voltage. We know that reverse current is\ndue to the flow of electrons (minority carriers) from p → n and\nholes from n → p. As the reverse bias voltage is increased, the\nelectric field at the junction becomes significant. When the\nreverse bias voltage V =  Vz, then the electric field strength is\nhigh enough to pull valence electrons from the host atoms on\nthe p-side which are accelerated to n-side. These electrons\naccount for high current observed at the breakdown. The\nemission of electrons from the host atoms due to the high\nelectric field is known as internal field emission or field\nionisation. The electric field required for field ionisation is of\nthe order of 10⁶ V/m.",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Semiconductor Electronics:",
+    "Materials, Devices and",
+    "Simple Circuits",
+    "485",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null; judged against my own p018 output, which ended on a complete sentence, and this page opens with Fig. 14.20 at the top. Fig. 14.20 (full width, top, with caption) and Fig. 14.21 (right column, lower half, with caption) are deferred to A2S. Powers of ten in n=6 and n=8 are written as true superscripts (10⁻⁶, 5×10⁶, 10⁶); the text layer flattens them. Page ends on a complete sentence."
+}

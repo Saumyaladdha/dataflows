@@ -1,0 +1,206 @@
+{
+  "question_id": "Q-000181",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "figure_path": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_url": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_row": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_match_confidence": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "option_map": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "merged_from": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:38",
+    "E2:40"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "The x-t graph of a particle performing simple harmonic motion is shown in the figure. The acceleration of the particle at $t=2\\,\\mathrm{s}$ is : [Diagram: A graph of $x$ (m) vs $t$ (s). The curve is a sine wave starting at (0,0), peaking at (2,1), crossing zero at (4,0), reaching a trough at (6,-1), and returning to zero at (8,0).]",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$\\pi^2/8\\ \\mathrm{m\\,s^{-2}}$",
+    "2": "$-\\pi^2/8\\ \\mathrm{m\\,s^{-2}}$",
+    "3": "$-\\pi^2/16\\ \\mathrm{m\\,s^{-2}}$",
+    "4": "$\\pi^2/16\\ \\mathrm{m\\,s^{-2}}$"
+  },
+  "structure": "plain",
+  "has_figure": true,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "38\nNone of the provided chapters are relevant to the question about simple harmonic motion and its x-t graph. Howe…\nThe x-t graph of a particle performing simple harmonic motion is shown in the figure. The\nacceleration of the particle at t=2 s is : [Diagram: A graph of x (m) vs t (s). The curve is a sine wave\nstarting at (0,0), peaking at (2,1), crossing zero at (4,0), reaching a trough at (6,-1), and returning to\nzero at (8,0).]\n(1)\nπ²/8 m s⁻²\n(2)\n-π²/8 m s⁻²\n(3)\n-π²/16 m s⁻²\n(4)\nπ²/16 m s⁻²\n",
+  "b4_script_options": {
+    "1": "π²/8 m s⁻²",
+    "2": "-π²/8 m s⁻²",
+    "3": "-π²/16 m s⁻²",
+    "4": "π²/16 m s⁻²"
+  },
+  "official_answer": "4",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "figure_path": "papers/figures/Q-000181.png",
+  "figure_source_url": "https://cdn.mathpix.com/snip/images/CYMp5TnvBEJH_QqA4Jq-CkTZpXg_S7_TEViwrxA9ARQ.original.fullsize.png",
+  "figure_source_row": "NEET-UG_pyq_2023.xlsx#41",
+  "figure_match_confidence": "high",
+  "b6_answer": null,
+  "b6_agrees_with_key": null,
+  "option_map": {
+    "Q-000538": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4"
+    }
+  },
+  "merged_from": [
+    "Q-000538"
+  ]
+}

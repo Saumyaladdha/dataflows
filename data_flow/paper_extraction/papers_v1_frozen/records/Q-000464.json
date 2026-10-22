@@ -1,0 +1,218 @@
+{
+ "question_id": "Q-000464",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2024,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:20"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "290 82 eeX Y Z P Q $+$ $-$ $-\\alpha\\beta$ [unreadable notation: collapsed decay-chain notation followed by four unlabelled long arrows] In the nuclear emission stated above, the mass number and atomic number of the product Q respectively, are",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "280, 81",
+  "2": "286, 80",
+  "3": "288, 82",
+  "4": "286, 81"
+ },
+ "structure": "plain",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "20\n290 82 eeX Y Z P Q + − −αβ⎯⎯ → ⎯⎯⎯ → ⎯⎯⎯ → ⎯⎯⎯ → In the nuclear emission stated\nabove, the mass number and atomic number of the product Q respectively, are\n(1)\n280, 81\n(2)\n286, 80\n(3)\n288, 82\n(4)\n286, 81\nNuclei\n",
+ "b4_script_options": {
+  "1": "280, 81",
+  "2": "286, 80",
+  "3": "288, 82",
+  "4": "286, 81\nNuclei"
+ },
+ "official_answer": "4",
+ "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+ "status": "normal",
+ "subject": "Physics",
+ "branch": null,
+ "b6_answer": "unsure",
+ "b6_reason": "The decay chain cannot be reconstructed: the sequence of emissions and which nuclide is Q are not recoverable from the damaged text.",
+ "b6_working": "Start appears to be mass 290, Z 82. Only one alpha and one beta symbol survive while four arrows are indicated, so the number and order of emissions reaching Q is undetermined; both 286,80 and 286,81 are reachable depending on the lost ordering.",
+ "b6_confidence": "low",
+ "b6_note": "Input damaged: decay-chain notation collapsed to '290 82 eeX Y Z P Q + - -alpha beta' with four unlabelled arrows; emissions are not matched to steps, so the answer cannot be determined from the given text.",
+ "b6_agrees_with_key": false,
+ "repairs": [
+  {
+   "date": "2026-10-15",
+   "by": "scripts/repair_paper_records.py",
+   "kind": "mechanical",
+   "notes": [
+    "paper_codes normalised to the short form ['Q1:20'] -- the long form splits one booklet across two values in any join"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

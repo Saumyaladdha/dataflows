@@ -1,0 +1,46 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 21.0,
+    "columns": [
+      {"id": "left", "x0": 0.073, "x1": 0.655},
+      {"id": "right", "x0": 0.657, "x1": 0.897}
+    ]
+  },
+  "elements": [
+    {"n": 1, "role": "paragraph", "bbox": [0.3025, 0.0830, 0.8962, 0.1606],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "figure", "bbox": [0.0731, 0.1243, 0.6438, 0.2872],
+     "column": "left", "size_rel": 1.0},
+    {"n": 2, "role": "paragraph", "bbox": [0.6656, 0.1665, 0.8956, 0.2917],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "paragraph", "bbox": [0.2712, 0.3124, 0.8969, 0.4381],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "figure", "bbox": [0.0925, 0.4523, 0.8781, 0.6037],
+     "column": "full", "size_rel": 1.0},
+    {"n": 7, "role": "figure", "bbox": [0.0731, 0.6509, 0.6356, 0.8060],
+     "column": "left", "size_rel": 1.0},
+    {"n": 6, "role": "paragraph", "bbox": [0.6575, 0.6326, 0.8969, 0.8220],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 8, "role": "paragraph", "bbox": [0.2712, 0.8271, 0.8962, 0.8885],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.6150, 0.9032, 0.6556, 0.9170],
+     "column": "full", "size_rel": 0.86, "align": "center", "font": "sans",
+     "fill": "#fecb03", "text_color": "#6d6e71"},
+    {"n": null, "role": "running_header", "bbox": [0.6769, 0.9032, 0.8956, 0.9170],
+     "column": "full", "size_rel": 0.86, "align": "left", "font": "sans",
+     "text_color": "#6d6e71"},
+    {"n": null, "role": "footer_rule", "bbox": [0.6144, 0.9156, 1.0, 0.9174],
+     "column": "full", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif",
+     "text_color": "#000000"}
+  ],
+  "note": "Verso body page of orbital-box diagrams. No page_header_band and no rule_bar anywhere; the only coloured furniture is the yellow footer_rule (#fecb03) at y 0.9156-0.9174 running right-aligned from x 0.614 to the trim edge, plus the folio tab behind '129'. This page's column structure is a TEXT-WRAPS-BESIDE-FIGURE arrangement, not the marginal-heading structure of p010/p011: left = 0.073-0.655 (the three orbital diagrams), right = 0.657-0.897 (the prose that runs alongside them). Blocks 3 and 7 are figures in `left` with blocks 2 and 6 set beside them in `right`; block 5 is a full-width figure; blocks 4 and 8 are full-width paragraphs (text measure 0.271-0.897). Block 1 starts as one full-measure line and then wraps into the narrow right column beside figure 3, so it is `full`. Reading order puts figure 3 before block 2 and figure 7 before block 6, because each diagram is what the adjacent prose points at. The three diagrams carry only internal labels ('3d', '4s', 'Six pairs of electrons from six NH3 molecules') and no numbered 'Fig. 5.x' caption line, so NO figure_caption elements are recorded -- those labels are inside the figure bboxes. body_text_size_px=21 (cap 181 to baseline 202 on the first line). 'Reprint 2026-27' at the foot is recorded as a second running_header."
+}

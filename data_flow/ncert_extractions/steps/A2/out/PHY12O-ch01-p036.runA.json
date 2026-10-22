@@ -1,0 +1,76 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        556,
+        307,
+        1297,
+        501
+      ],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "(b) We can use Gauss’s law to find the total charge q inside the cube. We have φ = q/ε0 or q = φε0. Therefore,\n  q = 1.05 × 8.854 × 10–12 C = 9.27 × 10–12 C."
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Example 1.12 An electric field is uniform, and in the positive x direction for positive x, and uniform with the same magnitude but in the negative x direction for negative x. It is given that E = 200 ˆi  N/C for x > 0 and E = –200 ˆi N/C for x < 0. A right circular cylinder of length 20 cm and radius 5 cm has its centre at the origin and its axis along the x-axis so that one face is at x = +10 cm and the other is at x = –10 cm (Fig. 1.28). (a) What is the net outward flux through each flat face? (b) What is the flux through the side of the cylinder? (c) What is the net outward flux through the cylinder? (d) What is the net charge inside the cylinder?"
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Solution\n(a) We can see from the figure that on the left face E and ∆S are parallel. Therefore, the outward flux is"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        561,
+        1112,
+        1106,
+        1215
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "On the right face, E and ∆S are parallel and therefore\nφR =  E.∆S =  + 1.57 N m2 C–1.\n(b) For any point on the side of the cylinder E is perpendicular to ∆S and hence E.∆S = 0. Therefore, the flux out of the side of the cylinder is zero.\n(c) Net outward flux through the cylinder\nφ = 1.57 + 1.57 + 0 = 3.14 N m2 C–1"
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        752,
+        1450,
+        1319,
+        1831
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "(d) The net charge within the cylinder can be found by using Gauss’s law which gives\nq =  ε0φ\n   =  3.14 × 8.854 × 10–12  C\n   =  2.78 × 10–11 C",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "EXAMPLE 1.11",
+    "36",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so continuation is judged against the p035 output I had just written: p035's Example 1.11 panel ended on 'Net flux through the cube' and this page opens with the displayed working that completes it, so first_block_continues_from_previous is true and sits on equation block n=1. Two example panels on the page: the tail of Example 1.11 (n=1, n=2) and the whole of Example 1.12 (n=3 to n=8). Displayed equation groups whose text layer is a scrambled symbol stream - the top group with the square-root factors, and the φL group with the î·∆S terms - are needs_special (n=1, n=5); the working that the text layer renders cleanly is kept as box text. FIGURE 1.28 sits inside the Example 1.12 panel between part (c) and part (d), which is where block n=7 is placed. The side tab 'EXAMPLE 1.11' is listed as removed furniture because that example's own label is not on this page; the 'EXAMPLE 1.12' tab is not listed, because the label 'Example 1.12' is kept as block text here and the same string must not be both removed and kept. Example 1.12 finishes on this page, so last_block_continues_on_next is false."
+}

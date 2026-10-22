@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000482",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:38"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "If the mass of the bob in a simple pendulum is increased to thrice its original mass and its length is made half its original length, then the new time period of oscillation is $2\\,x$ times its original time period. Then the value of $x$ is:",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$3$",
+    "2": "$2$",
+    "3": "$23$",
+    "4": "$4$"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "38\nIf the mass of the bob in a simple pendulum is increased to thrice its original mass and its length is\nmade half its original length, then the new time period of oscillation is 2 x times its original time period.\nThen the value of x is:\n(1)\n3\n(2)\n2\n(3)\n23\n(4)\n4\nOscillations\n",
+  "b4_script_options": {
+    "1": "3",
+    "2": "2",
+    "3": "23",
+    "4": "4\nOscillations"
+  },
+  "official_answer": "2",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "unsure",
+  "b6_reason": "Physics is clear (T proportional to sqrt(l), mass irrelevant, so T' = T/sqrt(2)), but the stem's relation '2 x times' is damaged so the target for x cannot be fixed.",
+  "b6_working": "T = 2*pi*sqrt(l/g); mass has no effect; l -> l/2 gives T' = T/sqrt(2) = 0.707 T. If the stem means T' = (sqrt(2)/x) T then x = 2; if it means T' = sqrt(2/x) T then x = 4. Both readings are consistent with the flattened text.",
+  "b6_confidence": "low",
+  "b6_note": "Damaged input: fractions/radicals lost in the stem ('is $2\\,x$ times') and in the options ('$23$' is evidently a lost fraction such as 2/3). Two different reconstructions give two different listed options (2 or 4), so no answer can be given safely.",
+  "b6_agrees_with_key": false
+}

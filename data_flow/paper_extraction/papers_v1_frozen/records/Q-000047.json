@@ -1,0 +1,244 @@
+{
+ "question_id": "Q-000047",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  }
+ },
+ "exam": "NEET",
+ "year": 2023,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "E1:151"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+ "trust": "unsure",
+ "stem_en": "Match List I with List II.\nChoose the correct answer from the options given below:",
+ "statements": [],
+ "list_i": [
+  {
+   "label": "A",
+   "text": "Vasectomy"
+  },
+  {
+   "label": "B",
+   "text": "Coitus interruptus"
+  },
+  {
+   "label": "C",
+   "text": "Cervical caps"
+  },
+  {
+   "label": "D",
+   "text": "Saheli"
+  }
+ ],
+ "list_ii": [
+  {
+   "label": "I",
+   "text": "Oral method"
+  },
+  {
+   "label": "II",
+   "text": "Barrier method"
+  },
+  {
+   "label": "III",
+   "text": "Surgical method"
+  },
+  {
+   "label": "IV",
+   "text": "Natural method"
+  }
+ ],
+ "options_en": {
+  "1": "A-III, B-I, C-IV, D-II",
+  "2": "A-III, B-IV, C-II, D-I",
+  "3": "A-II, B-III, C-I, D-IV",
+  "4": "A-IV, B-II, C-I, D-III"
+ },
+ "structure": "match",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "151\nMatch List I with List II.\nList I List II\nA. Vasectomy I. Oral method\nB. Coitus II. Barrier method\ninterruptus\nC. Cervical caps III. Surgical method\nD. Saheli IV. Natural method\nChoose the correct answer from the options given below:\n(1)\nA-III, B-I, C-IV, D-II\n(2)\nA-III, B-IV, C-II, D-I\n(3)\nA-II, B-III, C-I, D-IV\n(4)\nA-IV, B-II, C-I, D-III\nReproductive Health\n",
+ "b4_script_options": {
+  "1": "A-III, B-I, C-IV, D-II",
+  "2": "A-III, B-IV, C-II, D-I",
+  "3": "A-II, B-III, C-I, D-IV",
+  "4": "A-IV, B-II, C-I, D-III\nReproductive Health"
+ },
+ "official_answer": "2",
+ "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+ "status": "normal",
+ "subject": "Biology",
+ "branch": "zoology",
+ "b6_answer": "2",
+ "b6_reason": "Vasectomy is surgical, coitus interruptus is natural, cervical caps are barrier, and Saheli is an oral contraceptive pill.",
+ "b6_working": "",
+ "b6_confidence": "high",
+ "b6_note": "",
+ "b6_agrees_with_key": true,
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for E1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "E1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

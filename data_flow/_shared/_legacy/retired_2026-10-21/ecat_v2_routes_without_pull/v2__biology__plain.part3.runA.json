@@ -1,0 +1,187 @@
+{
+  "group": "v2__biology__plain.part3",
+  "ratings": [
+    {
+      "question_id": "2015_A#q059",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "X-linked recessive inheritance: a colour-blind father gives his $X^c$ to every daughter, so each of her sons has a $\\frac{1}{2}$ chance of being colour blind",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "Multiplies by an extra $\\frac{1}{2}$ for the daughter being a carrier. Every daughter of a colour-blind father is already a carrier, so the answer stays at $0.5$ and does not fall to $0.25$."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "3",
+          "route": "Forgets that the carrier mother passes her normal X to half her sons. That turns $0.5$ into a certainty."
+        },
+        {
+          "label": "intermediate_value",
+          "option": "4",
+          "route": "Stops at the children, none of whom is colour blind, and reads that as the answer for the grandson."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the X-linked rule across two crosses, demonstrated by the stem's \"a woman with normal sight who has no history of colour blindness in her family\", which makes every daughter of the cross a carrier and leaves the grandson's chance at one half.",
+      "note": "The second cross cannot be set up until the daughters' genotype is settled, which is why this is the one multi_step_dependent item in the packet. content_shape is formula_or_law as the nearest fit: an inheritance rule is applied and chained, and the axis has no label for a pedigree or probability calculation. The input flags has_figure true and points at figures_agent/2015_A/q059.png, which is not present in the corpus; the stem is self-contained and needs no figure, so the tags are complete and only the flag needs repair."
+    },
+    {
+      "question_id": "2015_A#q060",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "definition_term",
+      "concept": "Ectopic pregnancy: the embryo implants somewhere other than the uterus, most often in the fallopian tube",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The term is about where implantation happens, and only options 3 and 4 mention implantation at all, so options 1 and 2 fall at once.",
+      "traps": [
+        {
+          "label": "wrong_site_or_stage",
+          "option": "4",
+          "route": "Keeps the implantation but leaves it inside the uterus. An ectopic embryo sits outside it, in the tube, the ovary or the abdomen."
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "1",
+          "route": "Describes a miscarriage brought on by hormone imbalance. That is a different condition; ectopic says nothing about why the pregnancy ends."
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "Reads ectopic as a fault in the embryo. The word is about the site of implantation, not about what is wrong with the embryo."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored definition, demonstrated by option 3's \"Implantation of embryo at site other than uterus\", which is the term's meaning stated in full.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q061",
+      "question_type": "pair_options",
+      "format": "pick_both_parts",
+      "content_shape": "classification_hierarchy",
+      "concept": "Which organelles are membrane-bound: lysosomes, Golgi, mitochondria, ER and nucleus have membranes; ribosomes and chromosomes do not",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Ribosomes have no membrane, and they appear in options 2, 3 and 4, so that one fact leaves option 1 standing alone.",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "Nucleus and mitochondrion are right. Ribosomes have no membrane, so the set fails."
+        },
+        {
+          "label": "half_true",
+          "option": "3",
+          "route": "Endoplasmic reticulum is right. Chromosomes and ribosomes are both bare of any membrane."
+        },
+        {
+          "label": "half_true",
+          "option": "4",
+          "route": "Endoplasmic reticulum and nucleus are right. Ribosomes again carry no membrane."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one membership fact per named organelle, demonstrated by option 1's \"Lysosomes, Golgi apparatus and mitochondria\", a set in which every member is membrane-bound while options 2 to 4 each smuggle in ribosomes.",
+      "note": "Each option is a set of three same-kind items accepted or rejected whole, which is pair_options on E1 and pick_both_parts on E2, even though the packet's measured structure is plain. Solution structure stays several_independent_checks because the written-out solution grades each named organelle; the ribosome shortcut is recorded on the strategy axis, where section 4c puts it."
+    },
+    {
+      "question_id": "2015_A#q062",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "organism_characteristic",
+      "concept": "Mycoplasma: the smallest living cell and the one prokaryote with no cell wall",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Takes the other prokaryote on the list. Nostoc is a cyanobacterium and does have a wall."
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "Reads \"no cellulose in the wall\" as \"no wall\". Aspergillus is a fungus and its wall is made of chitin."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one diagnostic feature of one named organism, demonstrated by option 4's \"Mycoplasma\", whose absence of a cell wall is the feature the group is defined by.",
+      "note": "No trap is written for option 3. Funaria is a moss with an ordinary cellulose wall and no mis-step I could name lands on it: neither the \"prokaryote\" route that reaches Nostoc nor the \"no cellulose\" route that reaches Aspergillus touches a bryophyte, so the option is left untagged rather than given a stretched label."
+    },
+    {
+      "question_id": "2015_A#q063",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "scientist_history",
+      "concept": "Morgan coined the term linkage for genes that sit on the same chromosome and are inherited together",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "scientist_swap",
+          "option": "1",
+          "route": "Gives the term to Sutton. His work, with Boveri, was the chromosomal theory of inheritance."
+        },
+        {
+          "label": "scientist_swap",
+          "option": "3",
+          "route": "Gives it to Boveri, the other half of that same chromosomal theory."
+        },
+        {
+          "label": "scientist_swap",
+          "option": "4",
+          "route": "Gives it to Mendel, whose laws describe genes assorting independently - the opposite of linkage."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one attribution with no subject reasoning behind it, demonstrated by the stem's \"The term linkage was coined by\" and by all four options being names from the same chapter.",
+      "note": "Option 4 is stored as \"G. Mende\" with the final letter lost. The name is unmistakably Mendel and the option set is not made misleading by it, so the question is tagged in full and the missing letter is flagged here as a text repair rather than as source damage."
+    },
+    {
+      "question_id": "2015_A#q064",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "The linkage in each class of biomolecule: phosphodiester in nucleic acids, ester in glycerides, glycosidic in polysaccharides, peptide in proteins",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "A phosphodiester bond needs phosphorus, and only the nucleic-acid option carries a phosphate, so options 2, 3 and 4 fall together.",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Names the diglyceride, where fatty acid and glycerol are joined by an ester bond."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "Names the polysaccharide, where the sugars are joined by a glycosidic bond."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Names the polypeptide, where the amino acids are joined by a peptide bond."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one taught bond-to-polymer pairing, demonstrated by the four options being \"X in a Y\" pairs - \"Fatty acids in a diglyceride\", \"Amino acids in a polypeptide\" - of which only the nucleic-acid pair carries a phosphodiester link.",
+      "note": "Option 1 is printed as \"Nucleic acids in a nucleotide\", with the monomer and the polymer the wrong way round against the pattern of the other three; the intended pairing is nucleotides within a nucleic acid. The key is not affected and is tagged as printed; the inversion is flagged as a text repair."
+    }
+  ],
+  "group_note": "Six questions were grouped on a measured structure of \"plain\", and five of them are plain_mcq. The exception is q061, where each option is a set of three organelles accepted or rejected whole: section 1 sends that to pair_options and section 2 to pick_both_parts, so it is the one member whose printed shape differs from the rest, and it is recorded that way rather than forced to match. Format otherwise follows the options alone: a name or term in q062, q063 and q064, a full claim in q060, a number in q059. Demand was set by one test applied to all six - does one stored fact settle it, or does a rule have to be run? Five are recall; q059 alone is application, because the X-linked rule has to be carried through two crosses, and it is also the only multi_step_dependent member, since the grandson's chance cannot be worked out before the daughters' genotype is fixed. Solution structure is single_step wherever one fact about the keyed option decides the answer (q060, q062, q063, q064) and several_independent_checks only where each option bundles several claims that must each be graded (q061). Elimination was given on named evidence in four members and withheld from q062 and q063, where ruling out the other three options takes three separate facts rather than one shortcut. On the trap axis the devices are deliberately not uniform: q061's three wrong options all carry half_true because each mixes true members with ribosomes; q063's three carry scientist_swap because all are names; q064's three carry other_one_fact because each names a real linkage belonging to a different biomolecule. q062 is the one member where an option is left untagged - no route reaches Funaria - and that is stated in its note rather than covered with a near-fitting label. No trap sits on any printed key."
+}

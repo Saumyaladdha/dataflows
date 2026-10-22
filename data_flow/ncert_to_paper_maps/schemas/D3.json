@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/D3.json",
+  "title": "D3 SCRIPT output (fetch_passages.py)",
+  "description": "Section 12/D3 'Writes' line: steps/D3/out/<QID>.json with three lists: latest, older, lab_manual. D3 is a pure SCRIPT step (no agent, spec 12/D3 Worker line) -- no error/oneOf branch is needed the way agent-output schemas have one, since fetch_passages.py never writes {\"error\": ...} (a genuinely missing/broken D3 input is a hard Python exception surfaced as a non-zero exit code per scripts/CONVENTIONS.md rule 2, not a shape this schema needs to describe). Created as part of the D1-D4 runner-plugin build (2026-10), replacing the empty placeholder schema file.",
+  "type": "object",
+  "required": ["latest", "older", "lab_manual"],
+  "additionalProperties": false,
+  "properties": {
+    "latest": {
+      "type": "array",
+      "maxItems": 15,
+      "items": { "$ref": "#/definitions/passage" },
+      "description": "Latest-edition passages linked to the question's D2 subtopic(s) (step a), ranked by word-trigram overlap with stem+answer and truncated to 15 when there were more."
+    },
+    "older": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/passage" },
+      "description": "Older-edition partners of the latest passages above, from A6's ncert/pairs/<CHAPTER>.json (step b), PLUS every older-edition passage of the same chapter(s) not paired to any latest passage -- possible deleted content (step c). Both feed this one combined list per spec 12/D3's three-list Writes shape. Empty when A6 never ran for this chapter -- a real, honest gap for every chapter this build has real data for (see report), not an error."
+    },
+    "lab_manual": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/passage" },
+      "description": "Lab-manual passages whose words match the question, Physics/Chemistry only (step d). Always empty for a Biology question."
+    }
+  },
+  "definitions": {
+    "passage": {
+      "type": "object",
+      "required": ["passage_id", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "passage_id": { "type": "string" },
+        "text": { "type": "string" }
+      }
+    }
+  }
+}

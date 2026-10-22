@@ -1,0 +1,29 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "1.32 (a) Consider an arbitrary  electrostatic field configuration. A small test charge is placed at a null point (i.e., where E = 0) of the configuration. Show that the equilibrium of the test charge is necessarily unstable.\n(b) Verify this result for the simple configuration of two charges of the same magnitude and sign placed a certain distance apart.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "1.33 A particle of mass m and charge (–q) enters the region between the two charged plates initially moving along x-axis with speed vx (like particle 1 in Fig. 1.33). The length of plate is L and an uniform electric field E is maintained between the plates. Show that the vertical deflection of the particle at the far edge of the plate is qEL2/(2m vx 2).\nCompare this motion with motion of a projectile in gravitational field discussed in Section 4.10 of Class XI Textbook of Physics."
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "1.34 Suppose that the particle in Exercise in 1.33 is an electron projected with velocity vx = 2.0 × 106 m s–1. If E between the plates separated by 0.5 cm is 9.1 × 102 N/C, where will the electron strike the upper plate? (|e|=1.6 × 10–19 C, me = 9.1 × 10–31 kg.)",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "50",
+    "Physics",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so continuation is judged against the p049 output I had just written: p049 ended with exercise 1.31 complete ('...composition of a proton and neutron.'), and this page opens cleanly at exercise 1.32, so first_block_continues_from_previous is false. This is the last page of the chapter: exercises 1.32 to 1.34 occupy only the top third of the page and the rest is blank, so last_block_continues_on_next is false. In exercise 1.33 the deflection formula is set inline in the running sentence with a stacked subscript/superscript on v; the text layer flattens it across a line break as 'qEL2/(2m vx' + '2).' and I kept that token order as 'qEL2/(2m vx 2).' rather than marking it needs_special, since it is part of the sentence and not a displayed equation. The italic 'Compare this motion...' sentence is the second paragraph of exercise 1.33 and is kept inside that block. '2.0 × 106 m s–1', '9.1 × 102 N/C', '1.6 × 10–19 C' and 'me = 9.1 × 10–31 kg' keep the text layer's flattened exponents and inline subscript. The double space in 'an arbitrary  electrostatic field' is the text layer's own."
+}

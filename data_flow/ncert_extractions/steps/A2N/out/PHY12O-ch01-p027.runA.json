@@ -1,0 +1,31 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "projection of area normal to E,  or E⊥ ∆S, i.e., component of E along the normal to the area element times the magnitude of the area element. The unit of electric flux is N C⁻¹ m².",
+      "fixes": [
+        {"wrong": "N C–1 m2", "right": "N C⁻¹ m²"}
+      ]
+    },
+    {"n": 2, "no_change": true},
+    {"n": 4, "no_change": true},
+    {"n": 6, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "The total charge of the electric dipole is obviously zero. This does not mean that the field of the electric dipole is zero. Since the charge q and –q are separated by some distance, the electric fields due to them, when added, do not exactly cancel out. However, at distances much larger than the separation of the two charges forming a dipole (r >> 2a), the fields due to q and –q nearly cancel out. The electric field due to a dipole therefore falls off, at large distance, faster than like 1/r² (the dependence on r of the field due to a single charge q). These qualitative ideas are borne out by the explicit calculation as follows:",
+      "fixes": [
+        {"wrong": "1/r 2", "right": "1/r²"}
+      ]
+    },
+    {"n": 9, "no_change": true},
+    {"n": 11, "no_change": true},
+    {
+      "n": 13,
+      "corrected_text": "where p̂ is the unit vector along the dipole axis (from –q to q). Also",
+      "fixes": [
+        {"wrong": "ˆp is the unit vector", "right": "p̂ is the unit vector"}
+      ]
+    }
+  ],
+  "note": "n=1 had flattened unit exponents (C–1 m2 -> C⁻¹ m²). n=7 had a flattened squared term (1/r 2 -> 1/r²) separated by a stray space. n=13 had a detached hat (ˆp -> p̂). n=9's E–q/E+q are subscript symbol labels (charge names), matching the p₂⁰-style 'already correct' case -- left untouched. n=2, 4, 6, 11 already match the image exactly."
+}

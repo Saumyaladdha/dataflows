@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A5.json",
+  "title": "A5 agent output (a5-passage-linker)",
+  "description": "Section 9/A5 'Checks' line and the a5-passage-linker agent file (Appendix B). Called only for older-edition passages the script's heading match didn't decide (latest-edition passages copy A4's assignment directly, with no agent call).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["passage_id", "subtopic_id", "confidence", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "passage_id": { "type": "string" },
+        "subtopic_id": {
+          "type": "string",
+          "description": "One subtopic ID from the chapter's list, or 'none' (topic not in the latest book), or 'unsure'. Rule 6: 'unsure' is always allowed."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } }
+    }
+  ]
+}

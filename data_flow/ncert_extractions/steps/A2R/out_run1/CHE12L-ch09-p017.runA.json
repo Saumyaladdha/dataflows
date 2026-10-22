@@ -1,0 +1,16 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {
+      "kind": "formatting",
+      "what": "The book colour-codes the substituent atoms in the Sandmeyer/Gatterman/iodide/fluoride equations (Cl, Br, CN, X, F and N2 printed in red, green and magenta, e.g. 'ArN2X -> ArCl + N2'). The render prints every one of those equations entirely in black, so the colour cue that pairs reagent with product is lost.",
+      "where": "the three equation blocks in the right-hand column (Sandmeyer, Gatterman, and the KI / HBF4 equations)"
+    },
+    {
+      "kind": "formatting",
+      "what": "The book sets the lead-in of each numbered reaction in italics -- 'Replacement by halide or cyanide ion', 'Replacement by iodide ion', 'Replacement by fluoride ion', 'Replacement by H' -- with the rest of the sentence roman. The render sets all four lead-ins plain roman, so they no longer read as reaction titles.",
+      "where": "numbered items 1-4 under 'A. Reactions involving displacement of nitrogen'"
+    }
+  ],
+  "note": "Compared block by block against page 275. All text of sections 9.8 and 9.9, heading 'A. Reactions involving displacement of nitrogen', numbered items 1-4, all three equation blocks (Cu2Cl2/HCl, Cu2Br2/HBr, CuCN/KCN brace; Cu/HCl, Cu/HBr brace; ArN2Cl + KI and ArN2Cl + HBF4) and the folio '275 Amines' are present and in the right order. The render leaves about an inch and a half of blank space above the folio, but the book's page also ends with item 4 so nothing appears to be absent there -- it is reflow, not loss. The superscript +/- charge marks on ArN2X render correctly. Could not judge whether the slightly different minus-sign glyph in 'Cl-, Br-, I-, CN-' is a font substitution or an encoding change."
+}

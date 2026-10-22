@@ -1,0 +1,46 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "clipped",
+      "what": "The first acylation equation (ethanamine + acetyl chloride) runs off the right edge of the page. The render stops mid-formula at '... C2H5 - N+(H)(H) - C(CH3) - C' with the rest cut away at the paper edge. The book completes it as the amide product 'C2H5-N(H)-CO-CH3  +  H-Cl', so the entire product side after the tetrahedral intermediate is lost, including the '+ H-Cl'.",
+      "where": "first displayed acylation equation, right edge of the page"
+    },
+    {
+      "kind": "clipped",
+      "what": "The third acylation equation (benzenamine + ethanoic anhydride) is also cut at the right page edge, ending at 'C6H5 - N(H) - C ||O -'. The book continues '- CH3  +  CH3COOH', so the methyl of the acetanilide product and the whole ethanoic acid co-product are lost.",
+      "where": "third displayed acylation equation, right edge of the page"
+    },
+    {
+      "kind": "missing",
+      "what": "The product label 'N-Ethylethanamide' that the book prints under the product of the first acylation equation is absent. The render keeps only the 'Ethanamine' label under the reactant, so the first reaction is left with no name for its product.",
+      "where": "under the first acylation equation, right half"
+    },
+    {
+      "kind": "missing",
+      "what": "The curved mechanism arrows are gone from the first acylation equation. The book draws an arrow from the amine nitrogen lone pair to the carbonyl carbon, an arrow from the C=O pi bond up to the oxygen, and an arrow showing the chloride leaving from the tetrahedral intermediate. The render shows no arrows anywhere in that scheme.",
+      "where": "first displayed acylation equation"
+    },
+    {
+      "kind": "missing",
+      "what": "The page folio is absent: the book prints 'Chemistry  270' over a yellow rule at the bottom left. That whole footer block, number and rule, is blank in the render (only the 'Reprint 2026-27' line at the very foot survives).",
+      "where": "bottom left of the page"
+    },
+    {
+      "kind": "missing",
+      "what": "All subscripts are lost inside the Example 9.4 box. The book prints 'C6H5NH2, C2H5NH2, (C2H5)2NH, NH3' and the answer '(C2H5)2NH > C2H5NH2 > NH3 > C6H5NH2' with proper subscript digits; the render sets them as flat text 'C6H5NH2, C2H5NH2, (C2H5)2NH, NH3' with every digit full size, so the formulae no longer read as chemical formulae. Subscripts are set correctly in the body text outside the box, so this is specific to the example box.",
+      "where": "the Example 9.4 box, both the question line and the answer line"
+    },
+    {
+      "kind": "misplaced",
+      "what": "The 'Example 9.4' and 'Solution' heads are in the wrong place. The book sets both in the blue sidebar at the LEFT of the example box, 'Example 9.4' on the first line and 'Solution' alongside the start of the answer, both in blue script. The render moves 'Example 9.4' to the top RIGHT corner of the box and drops 'Solution' into the body text as an ordinary black line of its own, so the question and the answer no longer read as separate labelled parts.",
+      "where": "the Example 9.4 box at the top of the page"
+    },
+    {
+      "kind": "formatting",
+      "what": "The book's colour coding is lost throughout the page: magenta on the amine N, its H's and the NH/NH2 groups, green on the Cl and C-Cl bonds, and magenta on the carbonyl C and O in all three acylation schemes and in the benzoylation equation (CH3NH2 + C6H5COCl -> CH3NHCOC6H5 + HCl). The render prints every one of them in black.",
+      "where": "all four displayed equations in the lower two-thirds of the page"
+    }
+  ],
+  "note": "Compared block by block: the Example 9.4 box, the '2. Alkylation' and '3. Acylation' headings and their paragraphs, the three acylation schemes with their compound labels, the benzoylation paragraph and equation, and the closing 'What do you think' paragraph. All running text is present and complete, and the benzoylation equation with its three labels (Methanamine, Benzoyl chloride, N-Methylbenzamide) is intact. The two right-edge clips were confirmed at magnification -- the formulae are sheared off at the paper edge, not merely crowded. The second acylation equation (N-ethylethanamine) is complete across its full width, and the 'N,N-Diethylethanamide' label is present. I could not judge whether the clipped material exists off-page or was never laid out."
+}

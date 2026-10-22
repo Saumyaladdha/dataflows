@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on the heterogeneous equilibrium SrCO3 <-> SrO + CO2 capping p(CO2) at Kp = 1.6 atm, so from 0.4 atm in 20 L the volume can be reduced to 5 L before CO2 starts being fixed as carbonate, a chemical-equilibrium fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Biology\" and the 32-chapter Biology closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180. A Chemistry question was handed the Biology list, so no correct code exists in it. Expected chapter: 'Chemical Equilibrium' (CHENEETENGCQL: Kp, heterogeneous equilibria, Le Chatelier's principle), not offered."
+}

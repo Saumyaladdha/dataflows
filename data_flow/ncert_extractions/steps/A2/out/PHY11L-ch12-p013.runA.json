@@ -1,0 +1,173 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "SUMMARY"
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "1. The ideal gas equation connecting pressure (P), volume (V) and absolute temperature (T ) is"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        464,
+        370,
+        1534,
+        408
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "where µ is the number of moles and N is the number of molecules. R and kB are universal constants."
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        464,
+        483,
+        1534,
+        554
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Real gases satisfy the ideal gas equation only approximately, more so at low pressures and high temperatures."
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "2. Kinetic theory of an ideal gas gives the relation"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        464,
+        668,
+        1534,
+        737
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "where n is number density of molecules, m the mass of the molecule and v2  is the mean of squared speed. Combined with the ideal gas equation it yields a kinetic interpretation of temperature."
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        464,
+        872,
+        1534,
+        953
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "This tells us that  the temperature of a gas is a measure of the average kinetic energy of a molecule, independent of the nature of the gas or molecule. In a mixture of gases at a fixed temperature the heavier molecule has the lower average speed."
+    },
+    {
+      "n": 12,
+      "kind": "list",
+      "text": "3. The translational kinetic energy"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        464,
+        1118,
+        1534,
+        1180
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "This leads to a relation"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        464,
+        1210,
+        1534,
+        1278
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "list",
+      "text": "4. The law of equipartition of energy states that if a system is in equilibrium at absolute temperature T, the total energy is distributed equally in different energy modes of absorption, the energy in each mode being equal to ½ kB T. Each translational and rotational degree of freedom corresponds to one energy mode of absorption and has energy ½ kB T. Each vibrational frequency has two modes of energy (kinetic and potential) with corresponding energy equal to"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        464,
+        1492,
+        1534,
+        1537
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "list",
+      "text": "5. Using the law of equipartition of energy, the molar specific heats of gases can be determined and the values are in agreement with the experimental values of specific heats of several gases. The agreement can be improved by including vibrational modes of motion."
+    },
+    {
+      "n": 19,
+      "kind": "list",
+      "text": "6. The mean free path l is the average distance covered by a molecule between two successive collisions :"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        464,
+        1712,
+        1534,
+        1796
+      ],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "where n is the number density and d the diameter of the molecule."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "256",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "The whole page is the chapter's shaded SUMMARY panel, single column, full width. I did not return it as one box block: it carries six display equations that have to reach the special transcriber, so I split it into its heading, its six numbered items (kind list, numbers kept as printed), the unnumbered prose that continues an item (kind paragraph), and seven equation blocks marked needs_special with bboxes on the 1825x2160 image. Text-layer artefacts recorded, not corrected: subscripts and superscripts are flattened throughout (kB for k_B, mol–1 K–1 for mol^-1 K^-1, 10–23 for 10^-23), and the overlined mean-square symbol in item 2's prose arrives as two text-layer lines \"2\" + \"v\", which I rendered inline as \"v2\" to match the printed v-bar-squared. The page is entirely summary matter but it is this chapter's own summary, not book back matter. No substantive text-layer/image disagreement."
+}

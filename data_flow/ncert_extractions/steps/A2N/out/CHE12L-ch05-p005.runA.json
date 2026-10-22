@@ -1,0 +1,40 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {
+      "n": 3,
+      "corrected_text": "The central atom/ion and the ligands attached to it are enclosed in square bracket and is collectively termed as the coordination sphere. The ionisable groups are written outside the bracket and are called counter ions. For example, in the complex K₄[Fe(CN)₆], the coordination sphere is [Fe(CN)₆]⁴⁻ and the counter ion is K⁺.",
+      "fixes": [
+        {"wrong": "K4[Fe(CN)6]", "right": "K₄[Fe(CN)₆]"},
+        {"wrong": "[Fe(CN)6]4–", "right": "[Fe(CN)₆]⁴⁻"},
+        {"wrong": "K+", "right": "K⁺"}
+      ]
+    },
+    {
+      "n": 5,
+      "corrected_text": "The spatial arrangement of the ligand atoms which are directly attached to the central atom/ion defines a coordination polyhedron about the central atom. The most common coordination polyhedra are octahedral, square planar and tetrahedral. For example, [Co(NH₃)₆]³⁺ is octahedral, [Ni(CO)₄] is tetrahedral and [PtCl₄]²⁻ is square planar. Fig. 5.1 shows the shapes of different coordination polyhedra.",
+      "fixes": [
+        {"wrong": "[Co(NH3)6]3+", "right": "[Co(NH₃)₆]³⁺"},
+        {"wrong": "[Ni(CO)4]", "right": "[Ni(CO)₄]"},
+        {"wrong": "[PtCl4]2–", "right": "[PtCl₄]²⁻"}
+      ]
+    },
+    {
+      "n": 8,
+      "corrected_text": "The oxidation number of the central atom in a complex is defined as the charge it would carry if all the ligands are removed along with the electron pairs that are shared with the central atom. The oxidation number is represented by a Roman numeral in parenthesis following the name of the coordination entity. For example, oxidation number of copper in [Cu(CN)₄]³⁻ is +1 and it is written as Cu(I).",
+      "fixes": [
+        {"wrong": "[Cu(CN)4]3–", "right": "[Cu(CN)₄]³⁻"}
+      ]
+    },
+    {
+      "n": 10,
+      "corrected_text": "Complexes in which a metal is bound to only one kind of donor groups, e.g., [Co(NH₃)₆]³⁺, are known as homoleptic. Complexes in which a metal is bound to more than one kind of donor groups, e.g., [Co(NH₃)₄Cl₂]⁺, are known as heteroleptic.",
+      "fixes": [
+        {"wrong": "[Co(NH3)6]3+", "right": "[Co(NH₃)₆]³⁺"},
+        {"wrong": "[Co(NH3)4Cl2]+", "right": "[Co(NH₃)₄Cl₂]⁺"}
+      ]
+    },
+    {"n": 12, "no_change": true}
+  ],
+  "note": "Four blocks (n=3, 5, 8, 10) had complex-ion formulae with flattened ligand-count subscripts and flattened ionic charges; restored to match the image: K₄[Fe(CN)₆], [Fe(CN)₆]⁴⁻, K⁺, [Co(NH₃)₆]³⁺, [Ni(CO)₄], [PtCl₄]²⁻, [Cu(CN)₄]³⁻, [Co(NH₃)₄Cl₂]⁺. The oxidation-state value '+1' in n=8 is printed full size on the page and was left alone, as was the Roman numeral Cu(I). n=1 and n=12 are pure prose. No degree symbols, locants or primes on this page."
+}

@@ -1,0 +1,38 @@
+{
+  "group": "v2__physics__plain.part8",
+  "ratings": [
+    {
+      "question_id": "2015_A#q180",
+      "question_type": "plain_mcq",
+      "secondary_type": "figure_to_read",
+      "format": "pick_cause_or_effect",
+      "content_shape": "formula_or_law",
+      "concept": "Total internal reflection at a $45^\\circ$ face: a colour is turned back only if its refractive index is above $\\sqrt{2}=1.41$, so that its critical angle falls below $45^\\circ$",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "Each index only has to be compared with $\\sqrt{2}=1.41$: red at 1.39 is below it, green at 1.44 and blue at 1.47 above, so no critical angle need be worked out.",
+      "traps": [
+        {
+          "label": "sign_reversed_magnitude_right",
+          "option": "2",
+          "route": "Turns the comparison round and picks the colour with the highest index. Blue at 1.47 is reflected along with green; red at 1.39 is the one below $\\sqrt{2}=1.41$ that goes straight through."
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "3",
+          "route": "Gives the answer for a dispersing prism, which spreads white light into all its colours. At the $45^\\circ$ face only red is transmitted, so green and blue stay together."
+        },
+        {
+          "label": "intermediate_value",
+          "option": "4",
+          "route": "Stops at the entry face, where the light goes in square-on and nothing bends. The colours part at the $45^\\circ$ face, which red alone passes through."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the critical-angle condition to three given indices, demonstrated by the stem's \"1.39,1.44 and 1.47 respectively\" straddling $\\sqrt{2}$ and by option 1 separating exactly the one index that lies below it.",
+      "note": "Secondary type is figure_to_read because the stem says only \"a right angled prism\": the figure supplies the $45^\\circ$ angle and shows the three beams entering perpendicular to the vertical face, which is what fixes the angle of incidence at the hypotenuse at $45^\\circ$. Format is pick_cause_or_effect - the stem is \"The prism will:\" and the four options are rival outcomes of the setup; pick_correct_statement was the near miss and was not used because nothing is being graded as a free-standing claim."
+    }
+  ],
+  "group_note": "This packet holds one question, so no member had to be reconciled with another. The tests applied are the ones used across the physics plain packets in this run: the primary type comes from the printed shape (a stem with four text options, so plain_mcq) and the figure is recorded as a secondary overlay only where the stem alone leaves something undefined - here it does, since the right angle's $45^\\circ$ orientation and the perpendicular entry exist only in the figure. Demand is application rather than calculation because the whole of the work is comparing three given indices against one threshold, and that threshold comparison is also why estimation is the strategy recorded. Each of the three wrong options carries a different device and all three are tagged: the inverted comparison on option 2, a remembered result for a different prism question on option 3, and the correct state of affairs after the first face only on option 4. No trap sits on option 1, the printed key."
+}

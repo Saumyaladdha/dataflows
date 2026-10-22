@@ -1,0 +1,96 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Now, consider a different surface, which has the same boundary. This is a pot like surface [Fig. 8.1(b)] which nowhere touches the current, but has its bottom between the capacitor plates; its mouth is the circular loop mentioned above. Another such surface is shaped like a tiffin box (without the lid) [Fig. 8.1(c)]. On applying Ampere’s circuital law to such surfaces with the same perimeter, we find that the left hand side of Eq. (8.1) has not changed but the right hand side is zero and not μ0i, since no current passes through the surface of Fig. 8.1(b) and (c). So we have a contradiction; calculated one way, there is a magnetic field at a point P; calculated another way, the magnetic field at P is zero.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Since the contradiction arises from our use of Ampere’s circuital law, this law must be missing something. The missing term must be such that one gets the same magnetic field at point P,  no matter what surface is used."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "We can actually guess the missing term by looking carefully at Fig. 8.1(c). Is there anything passing through the surface S between the plates of the capacitor? Yes, of course, the electric field! If the plates of the capacitor have an area A, and a total charge Q, the magnitude of the electric field E between the plates is (Q/A)/ε0 (see Eq. 2.41). The field is perpendicular to the surface S of Fig. 8.1(c). It has the same magnitude over the area A of the capacitor plates, and vanishes outside it. So what is the electric flux Φ_E through the surface S ? Using Gauss’s law, it is"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        184,
+        1069,
+        1177,
+        1156
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Now if the charge Q on the capacitor plates changes with time, there is a current i = (dQ/dt), so that using Eq. (8.3), we have"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        184,
+        1242,
+        756,
+        1328
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "This implies that for consistency,"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        184,
+        1393,
+        1177,
+        1469
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "This is the missing term in Ampere’s circuital law. If we generalise this law by adding to the total current carried by conductors through the surface, another term which is ε0 times the rate of change of electric flux through the same surface, the total has the same value of current i for all surfaces. If this is done, there is no contradiction in the value of B obtained anywhere using the generalised Ampere’s law. B at the point P is non-zero no matter which surface is used for calculating it. B at a point P outside the plates [Fig. 8.1(a)] is the same as at a point M just inside, as it should be. The current carried by conductors due to flow of charges is called conduction current. The current, given by Eq. (8.4), is a new term, and is due to changing electric field (or electric displacement, an old term still used sometimes). It is, therefore, called displacement current or Maxwell’s displacement current. Figure 8.2 shows the electric and magnetic fields inside the parallel plate capacitor discussed above."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The generalisation made by Maxwell then is the following. The source of a magnetic field is not just the conduction electric current due to flowing"
+    },
+    {
+      "n": 11,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1188,
+        275,
+        1534,
+        2063
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electromagnetic Waves",
+    "203",
+    "Reprint 2026-27"
+  ],
+  "note": "FIGURE 8.1 (three diagrams a, b, c plus its caption) sits in the right-hand margin spanning the whole page; it is listed last as block 11 so the body flow stays unbroken, and its bbox includes the caption text for the special transcriber. last_block_continues_on_next refers to the final running-text block (block 10), which ends mid-sentence at 'due to flowing'. Page 2 ended with Eq. (8.2) and this page opens a new sentence, so the first block does not continue; judged from page 2, which I read myself in this batch (previous_page_last_block was null). TEXT LAYER vs IMAGE: the text layer substitutes Latin letters for Greek (m0i for μ0i, e0 for ε0, FE for Φ_E) and scrambles the displayed equations into loose tokens; Greek letters were taken from the image and the equations were left to the special transcriber."
+}

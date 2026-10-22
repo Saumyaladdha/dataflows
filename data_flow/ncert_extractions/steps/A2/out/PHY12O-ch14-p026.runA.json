@@ -1,0 +1,95 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        545,
+        425,
+        1450,
+        692
+      ],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        1145,
+        300,
+        1444,
+        600
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Apart from carrying out the above mathematical logic operation, this\ngate can be used for modifying the pulse waveform as explained in the\nfollowing example."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 14.8 Justify the output waveform (Y) of the OR gate for the\nfollowing inputs A and B given in Fig. 14.30.\nSolution Note the following:\n• At t < t1; A = 0, B = 0; Hence Y = 0\n• For t1 to t2; A = 1, B = 0; Hence Y = 1\n• For t2 to t3; A = 1, B = 1; Hence Y = 1\n• For t3 to t4; A = 0, B = 1; Hence Y = 1\n• For t4 to t5; A = 0, B = 0; Hence Y = 0\n• For t5 to t6; A = 1, B = 0; Hence Y = 1\n• For t > t6; A = 0, B = 1; Hence Y = 1\nTherefore the waveform Y will be as shown in the Fig. 14.30."
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        763,
+        1243,
+        1308,
+        1635
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "(iii) AND Gate"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "An AND gate has two or more inputs and one output. The output Y of\nAND gate is 1 only when input A and input B are both 1. The logic\nsymbol and truth table for this gate are given in Fig. 14.31",
+      "continues_on_next": false
+    },
+    {
+      "n": 8,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        180,
+        1690,
+        474,
+        2006
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        578,
+        1831,
+        1407,
+        2065
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "492",
+    "2022-23",
+    "EXAMPLE 14.8"
+  ],
+  "note": "previous_page_last_block was null; judged against my own p025 output, which ended on a complete sentence, and this page opens with the two panels of Fig. 14.29. Following the split used on p025, each gate figure is deferred to A2S as a figure block for the logic-symbol panel (which also carries the shared FIGURE caption) plus a table block for the truth-table panel: Fig. 14.29 as n=1/n=2 and Fig. 14.31 as n=9/n=8. Fig. 14.30 (the waveform diagram printed inside the Example 14.8 box) is deferred as n=5, with the box itself kept whole as n=4. 'EXAMPLE 14.8' vertical tab is listed as removed furniture. The AND-gate truth table is printed to the left of the '(iii) AND Gate' heading, but the text flow is listed first so the heading and its paragraph stay together."
+}

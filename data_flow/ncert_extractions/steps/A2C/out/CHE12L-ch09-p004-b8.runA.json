@@ -1,0 +1,6 @@
+{
+  "kind": "reaction",
+  "reaction_smiles": "O=[N+]([O-])c1ccccc1>[H][H].[Pd].CCO>Nc1ccccc1",
+  "confidence": "probable",
+  "note": "Section 9.4.1 'Reduction of nitro compounds'. The block draws the SAME transformation twice, nitrobenzene to aniline, differing only in the reagent over the arrow: (i) H2/Pd with 'Ethanol' written under the arrow, (ii) 'Sn+HCl or Fe+HCl'. The record carries scheme (i); scheme (ii) is the identical reactant and product and could not be folded into the same agents field, because listing H2/Pd and Sn+HCl together would read as one reaction using all of them, which the book does not draw. The alternative reagents of (ii) are therefore recorded only here in the note and not in the SMILES. Both rings are drawn as plain Kekule hexagons with the substituent in a single position, written aromatic; the nitro group is printed condensed as NO2 and is written in the charge-separated form because that is the only valid SMILES for it, not because the drawing shows charges. Confidence is probable solely because one of the two drawn schemes is not representable in a single record."
+}

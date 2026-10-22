@@ -1,0 +1,105 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 276, 430, 352],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Vectorically,"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 390, 1175, 468],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "where ˆn is a unit vector normal to the plane and going away from it."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "E is directed away from the plate if s  is positive and toward the plate if s is negative. Note that the above application of the Gauss’ law has brought out an additional fact: E is independent of x also."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "For a finite large planar sheet, Eq. (1.33) is approximately true in the middle regions of the planar sheet, away from the ends."
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "1.14.3  Field due to a uniformly charged thin spherical shell"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Let s be the uniform surface charge density of a thin spherical shell of radius R (Fig. 1.28). The situation has obvious spherical symmetry. The field at any point P, outside or inside, can depend only on r (the radial distance from the centre of the shell to the point) and must be radial (i.e., along the radius vector)."
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "(i) Field outside the shell: Consider a point P outside the shell with radius vector r. To calculate E at P, we take the Gaussian surface to be a sphere of radius r and with centre O, passing through P. All points on this sphere are equivalent relative to the given charged configuration. (That is what we mean by spherical symmetry.) The electric field at each point of the Gaussian surface, therefore, has the same magnitude E and is along the radius vector at each point. Thus, E and DS at every point are parallel and the flux through each element is E DS. Summing over all DS, the flux through the Gaussian surface is E × 4 p r 2. The charge enclosed is s × 4 p R 2. By Gauss’s law"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 1412, 532, 1488],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 1524, 565, 1600],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "where q  =  4 p R2 s is the total charge on the spherical shell. Vectorially,"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1714, 1040, 1786],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The electric field is directed outward if q > 0 and inward if q < 0. This, however, is exactly the field produced by a charge q placed at the centre O. Thus for points outside the shell, the field due to a uniformly charged shell is as if  the entire charge of the shell is concentrated at its centre."
+    },
+    {
+      "n": 15,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1050, 955, 1505, 1945],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "list",
+      "text": "(ii) Field inside the shell: In Fig. 1.28(b), the point P is inside the shell. The Gaussian surface is again a sphere through P centred at O."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "35",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null although this is page 35; judged first_block_continues_from_previous true from the page itself, which opens mid-derivation with the displayed line '2 EA = sA/e0'. Last block (list item (ii) 'Field inside the shell') ends on a complete sentence but the item/derivation is plainly unfinished at the page break, so last_block_continues_on_next is true. Displayed equations and Fig. 1.28 (both panels (a), (b) plus its caption, right column) are left to the special transcriber with bboxes in image pixels (page image 1700x2160). Inline mathematics is copied with the characters the text_layer actually holds (e.g. 's' for sigma, 'p' for pi, 'DS' for delta-S), not re-rendered."
+}

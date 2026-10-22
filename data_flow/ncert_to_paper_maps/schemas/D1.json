@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/D1.json",
+  "title": "D1 agent output (d1-chapter-picker)",
+  "description": "Section 12/D1 'Agent output' line and .claude/agents/d1-chapter-picker.md's worked output shape (authoritative over the spec's prose per this project's standing precedence rule, spec 0.3): {\"chapter_ids\": [...] | [\"unsure\"], \"why\": str, \"confidence\": high|medium|low}. This schema does not exist yet in the original build (D1-D4 placeholder, config/steps.yaml) -- created as part of the D1-D4 runner-plugin build (2026-10). Cross-referencing the ids against the real chapter list given to the agent (and the 'unsure never mixed with real ids'/'at most two ids' rules) needs the per-item input context, so it lives in scripts/checks/D1.py, not here -- same split as schemas/C1.json's option_map bijection check.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["chapter_ids", "why", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "chapter_ids": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": { "type": "string" },
+          "description": "One or two real chapter ids from the list given, or exactly [\"unsure\"]. A second id only when the question truly needs two (agent file's own rule)."
+        },
+        "why": { "type": "string" },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": {
+          "type": "string",
+          "description": "Optional. Not in d1-chapter-picker.md's own worked output example, but Universal rule 7 ('if the input looks wrong, keep to your task and say so in the note field') applies to every agent in this project including this one -- confirmed real: the first real D1 run A dispatch (Q-000015) legitimately used it to flag that neither candidate chapter actually covers the question's real content. Omitted (not required) so the two no-note worked examples stay valid too; see the build report."
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

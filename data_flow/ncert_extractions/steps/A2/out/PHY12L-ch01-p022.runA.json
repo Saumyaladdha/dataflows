@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [246, 270, 859, 929],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "we place a small planar element of area DS normal to E at a point, the number of field lines crossing it is proportional* to E DS. Now suppose we tilt the area element by angle q. Clearly, the number of field lines crossing the area element will be smaller. The projection of the area element normal to E is DS cosq. Thus, the number of field lines crossing DS is proportional to E DS cosq. When q = 90°, field lines will be parallel to DS and will not cross it at all (Fig. 1.15).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The orientation of area element and not merely its magnitude is important in many contexts. For example, in a stream, the amount of water flowing through a ring will naturally depend on how you hold the ring. If you hold it normal to the flow, maximum water will flow through it than if you hold it with some other orientation. This shows that an area element should be treated as a vector. It has a magnitude and also a direction. How to specify the direction of a planar area? Clearly, the normal to the plane specifies the orientation of the plane. Thus the direction of a planar area vector is along its normal."
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [240, 1058, 518, 1945],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "How to associate a vector to the area of a curved surface? We imagine dividing the surface into a large number of very small area elements. Each small area element may be treated as planar and a vector associated with it, as explained before."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Notice one ambiguity here. The direction of an area element is along its normal. But a normal can point in two directions. Which direction do we choose as the direction of the vector associated with the area element? This problem is resolved by some convention appropriate to the given context. For the case of a closed surface, this convention is very simple. The vector associated with every area element of a closed surface is taken to be in the direction of the outward normal. This is the convention used in Fig. 1.16. Thus, the area element vector DS at a point on a closed surface equals DS ˆn where DS is the magnitude of the area element and ˆn is a unit vector in the direction of outward normal at that point."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "We now come to the definition of electric flux. Electric flux Df through an area element DS is defined by"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 1674, 1555, 1723],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "which, as seen before, is proportional to the number of field lines cutting the area element. The angle q here is the angle between E and DS. For a closed surface, with the convention stated already, q is the angle between E and the outward normal   to the area element. Notice we could look at the expression E DS cosq  in two ways:  E (DS cosq ) i.e., E times the"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "* It will not be proper to say that the number of field lines is equal to EDS. The number of field lines is after all, a matter of how many field lines we choose to draw. What is physically significant is the relative number of field lines crossing a given area at different points."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Physics", "22", "Reprint 2026-27"],
+  "note": "Reading order: figures sit in the left column/margin, so by the left-column-first rule Fig. 1.15 is block 1 (its caption is inside its bbox for the special transcriber) and Fig. 1.16 is placed at the vertical point where it starts. The page-level first_block_continues_from_previous is true because the page's running text opens mid-sentence (\"we place a small planar element...\"), i.e. block 2, not block 1 (a figure); previous_page_last_block was supplied as null even though this is page 22. Likewise last_block_continues_on_next is true because the main text column ends mid-sentence (\"...i.e., E times the\"); block 10 is the page's asterisk footnote, which is physically last on the page and is itself complete. Inline mathematics is copied with the characters the text layer actually holds (DS for the area-element delta-S, q for theta, Df for delta-phi, ˆn for n-hat) rather than re-rendered. In block 9 the text layer has a gap (\"the outward normal   to the area element\") where a dropped symbol appears on the page; the spacing is preserved as extracted. Wrapped lines within a paragraph were joined with single spaces; no wording was altered."
+}

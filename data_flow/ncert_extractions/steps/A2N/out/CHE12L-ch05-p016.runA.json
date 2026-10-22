@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {
+      "n": 2,
+      "corrected_text": "In tetrahedral coordination entity formation, the d orbital splitting (Fig. 5.9) is inverted and is smaller as compared to the octahedral field splitting. For the same metal, the same ligands and metal-ligand distances, it can be shown that Δₜ = (4/9) Δ₀. Consequently, the orbital splitting energies are not sufficiently large for forcing pairing and, therefore, low spin configurations are rarely observed. The ‘g’ subscript is used for the octahedral and square planar complexes which have centre of symmetry. Since tetrahedral complexes lack symmetry, ‘g’ subscript is not used with energy levels.",
+      "fixes": [
+        {"wrong": "Δt = (4/9) Δ0", "right": "Δₜ = (4/9) Δ₀"}
+      ]
+    },
+    {"n": 5, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "The colour in the coordination compounds can be readily explained in terms of the crystal field theory. Consider, for example, the complex [Ti(H₂O)₆]³⁺, which is violet in colour. This is an octahedral complex where the single electron (Ti³⁺ is a 3d¹ system) in the metal d orbital is in the t₂g level in the ground state of the complex. The next higher state available for the electron is the empty eg level. If light corresponding to the energy of blue-green region is absorbed by the complex, it would excite the electron from t₂g level to the eg level (t₂g¹eg⁰ → t₂g⁰eg¹). Consequently, the complex appears violet in colour (Fig. 5.10). The crystal field theory attributes the colour of the coordination compounds to d-d transition of the electron.",
+      "fixes": [
+        {"wrong": "[Ti(H2O)6]3+", "right": "[Ti(H₂O)₆]³⁺"},
+        {"wrong": "Ti3+ is a 3d1 system", "right": "Ti³⁺ is a 3d¹ system"},
+        {"wrong": "in the t2g level", "right": "in the t₂g level"},
+        {"wrong": "from t2g level", "right": "from t₂g level"},
+        {"wrong": "(t2g1eg0 → t2g0eg1)", "right": "(t₂g¹eg⁰ → t₂g⁰eg¹)"}
+      ]
+    }
+  ],
+  "note": "Two blocks corrected. n=2: the splitting-parameter subscripts were flattened — the page prints Δₜ (tetrahedral) and Δ₀, so both were subscripted; I kept the stored character '0' rather than swapping it for a letter o, since a subscript zero and a subscript o are visually indistinguishable here and changing the character would be a guess. n=7: the Ti(III) example — [Ti(H₂O)₆]³⁺ and Ti³⁺ charges, the configuration 3d¹ (flattened '3d1' reads as the number 31), and the electronic transition (t₂g¹eg⁰ → t₂g⁰eg¹), where the occupancy superscripts 1/0 and 0/1 are the whole content of the statement. As on earlier pages, Unicode has no subscript g so the g of eg/t₂g is left full size. n=5 is prose only. The [ML]ⁿ⁺ formulae in Table 5.3 are in a table block not given to me. No degree symbols, locants, primes or radicals on this page."
+}

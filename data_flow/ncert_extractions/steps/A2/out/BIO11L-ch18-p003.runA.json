@@ -1,0 +1,40 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        207,
+        289,
+        810,
+        1315
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "contain Nissl’s granules and are called dendrites. These fibres transmit impulses towards the cell body.   The axon is a long fibre, the distal end of which is branched. Each branch terminates as a bulb-like structure called synaptic knob which possess synaptic vesicles containing chemicals called neurotransmitters. The axons transmit nerve impulses away from the cell body to a synapse or to a neuro-muscular junction. Based on the number of axon and dendrites, the neurons are divided into three types, i.e., multipolar (with one axon and two or more dendrites; found in the cerebral cortex), bipolar (with one axon and one dendrite, found in the retina of eye) and unipolar (cell body with one axon only; found usually in the embryonic stage). There are two types of axons, namely, myelinated and non-myelinated. The myelinated nerve fibres are enveloped with Schwann cells, which form a myelin sheath around the axon. The gaps between two adjacent myelin sheaths are called nodes of Ranvier. Myelinated nerve fibres are found in spinal and cranial nerves. Unmyelinated nerve fibre is enclosed by a Schwann cell that does not form a myelin sheath around the axon, and is commonly found in autonomous and the somatic neural systems.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "18.3.1 Generation and Conduction of Nerve Impulse"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Neurons are excitable cells because their membranes are in a polarised state. Do you know why the membrane of a neuron is polarised? Different types of ion channels are present on the neural membrane. These ion channels are selectively permeable to different ions. When a neuron is not conducting any impulse, i.e., resting, the axonal membrane is comparatively more permeable to potassium ions (K+) and nearly impermeable to sodium ions (Na+). Similarly, the membrane is impermeable to negatively charged proteins present in the axoplasm. Consequently, the axoplasm inside the axon contains high concentration of K+ and negatively charged proteins and low concentration of Na+. In contrast, the fluid outside the axon contains a low concentration of K+, a high concentration of Na+ and thus form a concentration gradient. These ionic gradients across the resting membrane are maintained by the active transport of ions by the sodium-potassium pump which transports 3 Na+ outwards for 2 K+ into the cell. As a result, the outer surface of the axonal membrane possesses a positive charge while its inner surface"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "232",
+    "BIOLOGY",
+    "2024-25"
+  ],
+  "note": "first_block_continues_from_previous judged from BIO11L-ch18-p002, which I read myself earlier in this batch (previous_page_last_block was null): p002 breaks off at '...project out of the cell body also' and this page's text resumes with 'contain Nissl's granules and are called dendrites.', so the continuation is certain. The figure plate is in the LEFT column, so per the left-column-first rule it is block 1; the continuing text is block 2, which carries continues_from_previous: true. Block 1 is the labelled neuron diagram (labels Dendrites, Nissl's granules, Cell body, Nucleus, Schwan cell, Axon, Myelin sheath, Node of Ranvier, Axon terminal, Synaptic knob) with the caption 'Figure 18.1 Structure of a neuron'; note the diagram label prints 'Schwan cell' while the body text spells it 'Schwann cells'. Block 4 ends mid-sentence at '...while its inner surface', hence last_block_continues_on_next true. Superscript ion charges are written inline (K+, Na+); the text layer splits them across lines (e.g. '(K' then '+)'). Text layer and image agree."
+}

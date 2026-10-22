@@ -1,0 +1,86 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 5.5\nDraw structures of geometrical isomers of [Fe(NH3)2(CN)4]–"
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        450,
+        265,
+        1105,
+        535
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Example 5.6\nOut of the following two coordination entities which is chiral (optically active)?\n(a) cis-[CrCl2(ox)2]3–\n(b) trans-[CrCl2(ox)2]3–"
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Solution\nThe two entities are represented as"
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        450,
+        725,
+        1180,
+        1090
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Out of the two, (a) cis - [CrCl2(ox)2]3- is chiral (optically active)."
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "5.4.3 Linkage Isomerism"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Linkage isomerism arises in a coordination compound containing ambidentate ligand. A simple example is provided by complexes containing the thiocyanate ligand, NCS–, which may bind through the nitrogen to give M–NCS or through sulphur to give M–SCN. Jørgensen discovered such behaviour in the complex [Co(NH3)5(NO2)]Cl2, which is obtained as the red form, in which the nitrite ligand is bound through oxygen (–ONO), and as the yellow form, in which the nitrite ligand is bound through nitrogen (–NO2)."
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "5.4.4 Coordination Isomerism"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "This type of isomerism arises from the interchange of ligands between cationic and anionic entities of different metal ions present in a complex. An example is provided by [Co(NH3)6][Cr(CN)6], in which the NH3 ligands are bound to Co3+ and the CN– ligands to Cr3+. In its coordination isomer [Cr(NH3)6][Co(CN)6], the NH3 ligands are bound to Cr3+ and the CN– ligands to Co3+."
+    },
+    {
+      "n": 11,
+      "kind": "heading",
+      "text": "5.4.5 Ionisation Isomerism"
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "This form of isomerism arises when the counter ion in a complex salt is itself a potential ligand and can displace a ligand which can then become the counter ion. An example is provided by the ionisation isomers [Co(NH3)5(SO4)]Br and [Co(NH3)5Br]SO4."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "127",
+    "Coordination Compounds",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read CHE12L-ch05-p009 myself earlier in this batch and its body text ends with the complete sentence '...only the cis-isomer shows optical activity (Fig. 5.7).', so first_block_continues_from_previous is false. The Example 5.5 Solution is nothing but drawn octahedral structures (cis and trans of [Fe(NH3)2(CN)4]–), so it is block 2, a figure marked special — there is no prose to transcribe for it. Example 5.6's Solution is split into its lead-in line (block 4), the two drawn Cr structures with their (a) cis / (b) trans labels (block 5, marked special), and the concluding answer line (block 6). TEXT-LAYER / IMAGE ORDER DISAGREEMENT: the text layer emits the 5.4.3-5.4.5 section prose before the Example 5.5/5.6 material and emits none of the structure drawings; the blocks here follow the image's actual top-to-bottom reading order (the two example boxes first, then the three numbered subsections). Subscripts and superscript charges are flattened in the text layer and transcribed flat; the inconsistent charge forms in block 6 ('3-' with a hyphen) are as printed."
+}

@@ -1,0 +1,104 @@
+{
+  "group": "v2__chemistry__plain.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q002",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "structure_chemical",
+      "concept": "Gadolinium's configuration: the half-filled $4f^7$ is kept and the next electron goes into $5d$, giving $[\\mathrm{Xe}]4f^75d^16s^2$",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "calculation_slip", "option": "2", "route": "Moves one electron out of $4f$ into $5d$. That gives $4f^65d^2$, and gadolinium holds its $4f$ half-filled at seven."},
+        {"label": "ignores_exception", "option": "3", "route": "Keeps filling $4f$ straight through to $4f^8$ as the plain order says. Gadolinium is the lanthanide that stops at $4f^7$ and starts $5d$."},
+        {"label": "no_derivation_route", "option": "4", "route": "The $5s$ shell is already full inside $[\\mathrm{Xe}]$, so no filling order can leave a single electron sitting in it."}
+      ],
+      "reason": "This question requires the filling order plus the half-filled-shell exception to be applied to one atom, demonstrated by the stem \"Its atomic number is 64. Which of the following is the correct electronic configuration of gadolinium?\"",
+      "note": "All four options total 64 electrons ($54+7+1+2$, $54+6+2+2$, $54+8+2$, $54+9+1$), so counting electrons strikes out nothing and no elimination is recorded. Format was a close call: the options are symbolic configurations rather than prose, and pick_correct_statement was chosen on the strength of its \"a balanced equation\" clause, which already admits non-prose claims graded as correct. If a format for notation answers is wanted, this is the question that argues for it."
+    },
+    {
+      "question_id": "2015_A#q003",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "structure_property",
+      "concept": "Second electron gain enthalpy: pushing a second electron onto $\\mathrm{O^-}$ costs energy because the charge already there repels it",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "true_but_out_of_scope", "option": "1", "route": "Answers for the first step instead of the second. Oxygen's electronegativity is why that step gives out $141\\,\\mathrm{kJ}$; the stem asks about the $+780\\,\\mathrm{kJ}$ one."},
+        {"label": "true_but_out_of_scope", "option": "2", "route": "Gives a true consequence instead of the cause. The ion is larger, but growing is not what costs the $+780\\,\\mathrm{kJ}$; the repulsion is."},
+        {"label": "semantic_reversal", "option": "4", "route": "Has the sizes the wrong way round. $\\mathrm{O^-}$ is larger than the oxygen atom, not smaller."}
+      ],
+      "reason": "This question requires deciding which account explains a granted fact, demonstrated by the stem \"Thus process of formation of $\\mathrm{O^{2-}}$ in gas phase is unfavourable ... It is due to the fact that,\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q004",
+      "question_type": "plain_mcq",
+      "format": "count_qualifying_items",
+      "content_shape": "structure_chemical",
+      "concept": "Isomers of $\\mathrm{C_3H_9N}$: two primary amines, one secondary and one tertiary, four in all",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "partial_combination", "option": "1", "route": "Counts only the two primary amines. The secondary amine $\\mathrm{CH_3NHC_2H_5}$ and the tertiary $\\mathrm{(CH_3)_3N}$ are two more."},
+        {"label": "partial_combination", "option": "2", "route": "Counts three of the four. The one left out is the tertiary amine $\\mathrm{(CH_3)_3N}$."},
+        {"label": "calculation_slip", "option": "4", "route": "Counts $\\mathrm{CH_3NHC_2H_5}$ twice by writing it from either end. There are four distinct skeletons, not five."}
+      ],
+      "reason": "This question requires every structure a formula allows to be built and tallied, demonstrated by the stem \"The number of structural isomers possible from the molecular formula $\\mathrm{C_3H_9N}$ is:\" with the integers 2, 3, 4 and 5 as the options.",
+      "note": "count_qualifying_items is used although nothing is printed to count: the items are generated from the formula and then tallied, and nothing is computed from the stem's numbers. This is the boundary case for that label, whose definition in section 2 speaks of listed items."
+    },
+    {
+      "question_id": "2015_A#q005",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Scaling an equilibrium: halve every coefficient and $K$ becomes $K^{1/2}$",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "wrong_power_of_dependence", "option": "2", "route": "Doubles the exponent instead of halving it. Halving the coefficients gives $K^{1/2}$, not $K^{2}$."},
+        {"label": "calculation_slip", "option": "4", "route": "Halves $K$ itself instead of its exponent. The rule moves the power, so the answer is $K^{1/2}$."},
+        {"label": "copied_from_stem", "option": "1", "route": "Hands back the $K$ the stem printed. Halving the coefficients does change it."}
+      ],
+      "reason": "This question requires one stated rule to be applied to a rewritten equation, demonstrated by the stem \"If the equilibrium constant for $\\mathrm{N_2(g)}+\\mathrm{O_2(g)}\\rightleftharpoons 2\\mathrm{NO(g)}$ is $\\mathrm{K}$\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q006",
+      "question_type": "pair_options",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Acidic buffer: a weak acid together with its own salt - a strong acid such as $\\mathrm{HClO_4}$ cannot buffer at all",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {"label": "true_statement_trap", "option": "1", "route": "Reads past the \"not\". Carbonic acid is weak, so with its salt it does buffer."},
+        {"label": "true_statement_trap", "option": "2", "route": "Reads past the \"not\". Phosphoric acid is weak, so with its salt it does buffer."},
+        {"label": "true_statement_trap", "option": "4", "route": "Reads past the \"not\". Acetic acid with sodium acetate is the textbook acidic buffer."}
+      ],
+      "reason": "This question requires the buffer criterion to be applied to four mixtures, demonstrated by the stem \"Which one of the following pairs of solution is not an acidic buffer?\"",
+      "note": "Printed shape differs from the rest of the packet: each option is a pair of solutions accepted or rejected whole, which is pair_options rather than plain_mcq."
+    },
+    {
+      "question_id": "2015_A#q007",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "trend",
+      "concept": "Strong against weak electrolytes: $\\mathrm{HCl}$ ionises completely, ammonia and acetic acid only partly, and a sugar not at all",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [],
+      "reason": "This question requires four solutes to be compared on degree of ionisation, demonstrated by the stem \"Aqueous solution of which of the following compounds is the best conductor of electric current?\"",
+      "note": "No trap recorded. The three wrong options are simply the weaker conductors the comparison is about - ammonia and acetic acid are weak electrolytes, fructose is a non-electrolyte - and naming a weaker member is the content of the question rather than a device laid over it."
+    }
+  ],
+  "group_note": "Five of the six are printed as one question with four short text options and are tagged plain_mcq; q006 does not belong with them on shape, as each of its options is a pair of solutions judged whole, so it is tagged pair_options and flagged in its own note. Solution structure follows one rule across the group: where the stem's criterion has to be tested against every option (q006's buffer test, q007's conductivity comparison) the label is several_independent_checks, and where one rule is applied once to produce the answer (q002, q004, q005) it is single_step. q003 is the only member whose options are rival causes of a granted fact, so it alone carries pick_cause_or_effect with explanatory_reasoning. Only q006 is a negated task, which is why true_statement_trap appears there and nowhere else. q007 is the one member with an empty trap list: its wrong options carry no device beyond being the weaker electrolytes. q002 and q004 are the two format boundary cases in the packet, both recorded in their notes rather than resolved with an escape hatch."
+}

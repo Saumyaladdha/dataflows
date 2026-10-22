@@ -1,0 +1,48 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.098, "x1": 0.47},
+      {"id": "right", "x0": 0.5, "x1": 0.87}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.067],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.5494, 0.0, 0.8729, 0.124],
+     "column": "full", "size_rel": 1.6, "align": "center", "font": "sans",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "major_heading", "bbox": [0.1012, 0.1364, 0.5159, 0.1511],
+     "column": "full", "size_rel": 1.5, "align": "left", "font": "serif",
+     "text_color": "#6d6e71"},
+    {"n": 2, "role": "paragraph", "bbox": [0.0971, 0.1653, 0.6847, 0.3085],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "section_heading", "bbox": [0.1006, 0.3228, 0.4629, 0.3742],
+     "column": "left", "size_rel": 1.15, "align": "left", "font": "sans",
+     "text_color": "#00adef"},
+    {"n": 4, "role": "figure", "bbox": [0.5, 0.2388, 0.87, 0.8421],
+     "column": "right", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.5129, 0.8503, 0.84, 0.9059],
+     "column": "right", "size_rel": 0.9, "align": "center", "font": "sans",
+     "text_color": "#00adef"},
+    {"n": 5, "role": "paragraph", "bbox": [0.0976, 0.3838, 0.4629, 0.5592],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "paragraph", "bbox": [0.0982, 0.5629, 0.4629, 0.7713],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 7, "role": "paragraph", "bbox": [0.0982, 0.7755, 0.4635, 0.9371],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8141, 0.9155, 0.8718, 0.9371],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "sans",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "sans",
+     "text_color": "#221f1f"}
+  ],
+  "note": "Recto body page, TWO columns from y 0.239 down: a tall Figure 1.29 (parts a and b as one graphic, block 4) with its cyan caption fills the OUTER (right) column x 0.500-0.870, and the running text is set in a narrow left column x 0.098-0.470; a clean empty gutter separates them at x 0.464-0.499. Blocks 1 and 2 sit above the figure and are set to the FULL measure (x 0.097-0.685), crossing the gutter into the right column's span, so they are column 'full'; block 2 is one paragraph whose first three lines take the full measure and whose remaining six narrow to the left column as the figure begins, which is why its bbox is wider than the left column. Blocks 3, 5, 6 and 7 are entirely in the narrow left column. The figure caption has no A2 block and takes n: null; it is printed entirely in the chapter cyan #00adef. No fill is reported for the figure: a naive saturated-row scan flags two strong cyan bands inside it (y 0.330-0.333 and y 0.342-0.413) but those are the blue of the wire and the disc in the artwork, NOT a rule_bar or any page band - this page's only coloured band is the page_header_band, the pale blue #c6eafb strip across the whole page top (y 0-0.067), whose #41c7f4 hairline and #00adef foot rule are internal edges of that one band. There is no rule_bar and no footer_rule on this page. '1.15 APPLICATIONS OF GAUSS'S LAW' is flat grey #6d6e71 small-caps serif (the chapter's major-heading colour); the three-line sub-heading '1.15.1 Field due to an infinitely long straight uniformly charged wire' is cyan #00adef sans, its continuation lines hanging-indented to x 0.182. The '2022-23' edition line at the foot is recorded as a second running_header because the allowed role list has no footer-text role. All 7 A2 blocks matched by position."
+}

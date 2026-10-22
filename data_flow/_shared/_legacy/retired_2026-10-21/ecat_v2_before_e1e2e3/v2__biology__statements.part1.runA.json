@@ -1,0 +1,30 @@
+{
+  "group": "v2__biology__statements.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q077",
+      "concept": "Order of prophase-I events in meiosis: synapsis (zygotene) → crossing over (pachytene) → terminalisation of chiasmata (diakinesis) → disappearance of the nucleolus",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Synapsis must precede crossing over, since the exchange happens between already-paired homologues; the pair (b) then (a) appears in options 2 and 3 only, striking option 1 ((b),(c),…) and option 4 ((a),(b),…).",
+      "traps": [
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "4",
+          "route": "reproduces the printed list order (a),(b),(c),(d) exactly as the statements are lettered in the stem, which puts crossing over before synapsis"
+        },
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "2",
+          "route": "keeps the opening adjacency (b) synapsis → (a) crossing over and swaps the single final adjacency, putting (d) disappearance of the nucleolus before (c) terminalisation of chiasmata"
+        }
+      ],
+      "reason": "This question requires sequencing four meiotic events on one timeline, demonstrated by the stem \"Arrange the following events of meiosis in correct sequence\" over the items \"(a) Crossing over\", \"(b) Synapsis\", \"(c) Terminalisation of chaismata\", \"(d) Disappearance of nucleolus\".",
+      "note": "Option 3's text in our record reads \"Terminalisation of chaismata\"; the word is chiasmata. A single transposed-letter spelling in a list item does not make the question incomplete, so it is recorded here rather than as source_damage_artifact, and the item is tagged as printed. Option 1 ((b),(c),(d),(a)) keeps only the opening item and loses both the key's final item and its endpoint, so it matches neither the endpoint-and-adjacency device nor the printed order; per rulebook rule 4 no trap is written for it."
+    }
+  ],
+  "group_note": "Single-member packet, and the structure it was grouped on does not fit: it was read from the page as structure=statements, but no block of claims is printed to be judged — four lettered events are printed to be put in order, so on E1 it is arrange_in_order, not list_of_statements. It was therefore judged against the run's other ordering item (2015_A#q118, packet v2__biology__list.part1) and carries identical labels: application (sequence_based is retired to application), single_step (one timeline is laid down; this is not four independent checks), elimination justified by one securely-known adjacency, and sequence_endpoint_or_adjacency for distractors that either reproduce the printed list order or swap exactly one adjacency. The only difference from q118 is that this item offers two such distractors and q118 offers one, which is why this rating carries two traps."
+}

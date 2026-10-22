@@ -1,0 +1,121 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Hence,",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        322,
+        1012,
+        406
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "where t is the average collision time for electrons."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "3.6  LIMITATIONS OF OHM’S LAW"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Although Ohm’s law has been found valid over a large class of materials, there do exist materials and devices used in electric circuits where the proportionality of V and I does not hold. The deviations broadly are one or more of the following types:"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "(a) V ceases to be proportional to I (Fig. 3.5).\n(b) The relation between V and I depends on the sign of V. In other words, if I is the current for a certain V, then reversing the direction of V keeping its magnitude fixed, does not produce a current of the same magnitude as I in the opposite direction (Fig. 3.6). This happens, for example, in a diode which we will study in Chapter 14."
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1040,
+        276,
+        1500,
+        646
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "FIGURE 3.5 The dashed line represents the linear Ohm’s law. The solid line is the voltage V versus current I for a good conductor."
+    },
+    {
+      "n": 9,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        170,
+        998,
+        672,
+        1416
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "FIGURE 3.6 Characteristic curve of a diode. Note the different scales for negative and positive values of the voltage and current."
+    },
+    {
+      "n": 11,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        928,
+        1100,
+        1500,
+        1428
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "FIGURE 3.7 Variation of current versus voltage for GaAs."
+    },
+    {
+      "n": 13,
+      "kind": "list",
+      "text": "(c) The relation between V and I is not unique, i.e., there is more than one value of V for the same current I (Fig. 3.7). A material exhibiting such behaviour is GaAs."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Materials and devices not obeying Ohm’s law in the form of Eq. (3.3) are actually widely used in electronic circuits. In this and a few subsequent chapters, however, we will study the electrical currents in materials that obey Ohm’s law."
+    },
+    {
+      "n": 15,
+      "kind": "heading",
+      "text": "3.7  RESISTIVITY OF VARIOUS MATERIALS"
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "The materials are classified as conductors, semiconductors and insulators depending on their resistivities, in an increasing order of their values."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Current Electricity",
+    "89",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null for this page (page 9), so continuation was judged from the image: the page opens with the new sentence 'Hence,' and ends with a completed sentence, hence both booleans false. Figure 3.5 sits in the right margin alongside blocks 1-6; it is listed after them following left-column-first reading order. Figure captions are emitted as their own paragraph blocks (figure blocks keep empty text per spec). Greek-letter extraction artifact: the text layer renders tau as 't' in 'where t is the average collision time for electrons.' (image shows the Greek letter); the layer's characters were copied as instructed. Eq. (3.25) and the three graphs are marked needs_special; in-figure axis labels (e.g. 'Non-linear region', 'Negative resistance region', 'Voltage V (V)') are part of the figure images, not separate prose blocks."
+}

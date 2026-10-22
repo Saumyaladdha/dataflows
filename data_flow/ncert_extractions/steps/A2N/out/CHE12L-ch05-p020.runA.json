@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "For example, impure nickel is converted to [Ni(CO)₄], which is decomposed to yield pure nickel.",
+      "fixes": [
+        {"wrong": "[Ni(CO)4]", "right": "[Ni(CO)₄]"}
+      ]
+    },
+    {
+      "n": 2,
+      "corrected_text": "• Coordination compounds are of great importance in biological systems. The pigment responsible for photosynthesis, chlorophyll, is a coordination compound of magnesium. Haemoglobin, the red pigment of blood which acts as oxygen carrier is a coordination compound of iron. Vitamin B₁₂, cyanocobalamine, the anti–pernicious anaemia factor, is a coordination compound of cobalt. Among the other compounds of biological importance with coordinated metal ions are the enzymes like, carboxypeptidase A and carbonic anhydrase (catalysts of biological systems).\n• Coordination compounds are used as catalysts for many industrial processes. Examples include rhodium complex, [(Ph₃P)₃RhCl], a Wilkinson catalyst, is used for the hydrogenation of alkenes.\n• Articles can be electroplated with silver and gold much more smoothly and evenly from solutions of the complexes, [Ag(CN)₂]⁻ and [Au(CN)₂]⁻ than from a solution of simple metal ions.\n• In black and white photography, the developed film is fixed by washing with hypo solution which dissolves the undecomposed AgBr to form a complex ion, [Ag(S₂O₃)₂]³⁻.\n• There is growing interest in the use of chelate therapy in medicinal chemistry. An example is the treatment of problems caused by the presence of metals in toxic proportions in plant/animal systems. Thus, excess of copper and iron are removed by the chelating ligands D–penicillamine and desferrioxime B via the formation of coordination compounds. EDTA is used in the treatment of lead poisoning. Some coordination compounds of platinum effectively inhibit the growth of tumours. Examples are: cis–platin and related compounds.",
+      "fixes": [
+        {"wrong": "Vitamin B12", "right": "Vitamin B₁₂"},
+        {"wrong": "[(Ph3P)3RhCl]", "right": "[(Ph₃P)₃RhCl]"},
+        {"wrong": "[Ag(CN)2]–", "right": "[Ag(CN)₂]⁻"},
+        {"wrong": "[Au(CN)2]–", "right": "[Au(CN)₂]⁻"},
+        {"wrong": "[Ag(S2O3)2]3–", "right": "[Ag(S₂O₃)₂]³⁻"}
+      ]
+    },
+    {"n": 3, "no_change": true}
+  ],
+  "note": "n=1 and n=2 corrected. Note that 'Vitamin B12' is printed as B₁₂ — the 12 is a subscript on B, so flattened it reads as the number twelve attached to a letter rather than the vitamin's designation; also fixed [(Ph₃P)₃RhCl] (Wilkinson's catalyst), the electroplating anions [Ag(CN)₂]⁻ and [Au(CN)₂]⁻, and the thiosulphato complex [Ag(S₂O₃)₂]³⁻. The en dashes in anti–pernicious, D–penicillamine and cis–platin are as printed and were left alone. n=3 (the Summary) is pure prose with no notation. No degree symbols, locants, primes or radicals on this page."
+}

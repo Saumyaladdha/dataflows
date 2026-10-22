@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The correct answer turns on graft rejection being a cell-mediated (T-lymphocyte) immune response rather than a humoral one.",
+  "confidence": "high",
+  "note": "The chapter list this item carries is from the wrong subject: papers_v2/papers/2017_C.json records subject_from = 'position (no heading governs this question; the 179-question layout was assumed)' for all 179 questions, but 2017_C actually runs Biology q1-q90, Physics q91-q135, Chemistry q136-q180 -- so this question was labelled Physics and handed the Physics taxonomy. The chapter the correct answer depends on is Biology / Human Health and Disease, which is genuinely absent from the supplied list. FIX: re-derive subject for 2017_C (headings are not printed in this booklet, so the positional fallback in scripts/assign_subject.py mislabels every question) and re-issue these items with the Biology taxonomy."
+}

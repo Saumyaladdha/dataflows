@@ -1,0 +1,8503 @@
+{
+ "generated_for": [
+  "2015_A",
+  "2016_X"
+ ],
+ "inputs": {
+  "chapters_needed": "ncert_book_mapping/chapters_needed.json",
+  "a2_out": "steps/A2/out",
+  "a3_out": "steps/A3/out",
+  "a4_out": "steps/A4/out",
+  "book_register": "register/books.csv"
+ },
+ "method": "Chapter titles and numbers for all 12 registered books were read from the PDFs themselves (pdftotext page 1-2) or from A2 page-1 headings; extraction status is a count of steps/A2/out/<BOOK>-ch<NN>-p*.runA.json files actually on disk. A4 subtopic files are keyed without an edition letter and every one of them references latest-edition passage ids, so a4_subtopics is reported only under `latest`.",
+ "chapters": [
+  {
+   "subject": "Biology",
+   "chapter": "Biological Classification",
+   "chapter_code": "BIONEETENGBCS",
+   "questions": 12,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 2,
+    "chapter_title": "Biological Classification",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 2,
+      "chapter_title": "Biological Classification"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 13,
+    "a3_passages": 22,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 2,
+    "chapter_titles": [
+     "Biological Classification"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch02"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 2,
+      "chapter_title": "Biological Classification",
+      "pages": 13,
+      "a3_passages": 22,
+      "a4_subtopics": 20
+     }
+    ],
+    "a4_subtopics": 20
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 13,
+    "a3_passages": 21,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 2,
+    "chapter_titles": [
+     "Biological Classification"
+    ],
+    "chapters_with_pages": [
+     "BIO11O-ch02"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 2,
+      "chapter_title": "Biological Classification",
+      "pages": 13,
+      "a3_passages": 21
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same printed title in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Cell: The Unit of Life",
+   "chapter_code": "BIONEETENGCUL",
+   "questions": 12,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 8,
+    "chapter_title": "Cell: The Unit of Life",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 8,
+      "chapter_title": "Cell: The Unit of Life"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "Cell: The Unit of Life"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11L-ch08"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 8,
+      "chapter_title": "Cell: The Unit of Life",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "Cell - The Unit of Life"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch08"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 8,
+      "chapter_title": "Cell - The Unit of Life",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "NCERT prints 'Cell: The Unit of Life' (latest) / 'Cell - The Unit of Life' (older).",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Principles of Inheritance and Variation",
+   "chapter_code": "BIONEETENGPIV",
+   "questions": 12,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 4,
+    "chapter_title": "Principles of Inheritance and Variation",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 4,
+      "chapter_title": "Principles of Inheritance and Variation"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 26,
+    "a3_passages": 25,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 4,
+    "chapter_titles": [
+     "Principles of Inheritance and Variation"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch04"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 4,
+      "chapter_title": "Principles of Inheritance and Variation",
+      "pages": 26,
+      "a3_passages": 25,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 5,
+    "chapter_titles": [
+     "Principles of Inheritance and Variation"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO12O-ch05"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 5,
+      "chapter_title": "Principles of Inheritance and Variation",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 5 -> 4 when 'Reproduction in Organisms' was dropped.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Sexual Reproduction in Flowering Plants",
+   "chapter_code": "BIONEETENGSRF",
+   "questions": 11,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 1,
+    "chapter_title": "Sexual Reproduction in Flowering Plants",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 1,
+      "chapter_title": "Sexual Reproduction in Flowering Plants"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 23,
+    "a3_passages": 14,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 1,
+    "chapter_titles": [
+     "Sexual Reproduction in Flowering Plants"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch01"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 1,
+      "chapter_title": "Sexual Reproduction in Flowering Plants",
+      "pages": 23,
+      "a3_passages": 14,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 2,
+    "chapter_titles": [
+     "Sexual Reproduction in Flowering Plants"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO12O-ch02"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 2,
+      "chapter_title": "Sexual Reproduction in Flowering Plants",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 2 -> 1 in the latest edition.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Morphology of Flowering Plants",
+   "chapter_code": "BIONEETENGMFP",
+   "questions": 9,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 5,
+    "chapter_title": "Morphology of Flowering Plants",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 5,
+      "chapter_title": "Morphology of Flowering Plants"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 5,
+    "chapter_titles": [
+     "Morphology of Flowering Plants"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11L-ch05"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 5,
+      "chapter_title": "Morphology of Flowering Plants",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 5,
+    "chapter_titles": [
+     "Morphology of Flowering Plants"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch05"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 5,
+      "chapter_title": "Morphology of Flowering Plants",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "The p–Block Elements",
+   "chapter_code": "CHENEETENGPBB",
+   "questions": 9,
+   "locally_minted": false,
+   "ncert": {
+    "book": [
+     "CHE11O",
+     "CHE12O"
+    ],
+    "chapter_number": [
+     11,
+     7
+    ],
+    "chapter_title": [
+     "The p-Block Elements",
+     "The p-Block Elements"
+    ],
+    "books": [
+     "CHE11O",
+     "CHE12O"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 11,
+      "chapter_title": "The p-Block Elements"
+     },
+     {
+      "book": "CHE12O",
+      "chapter_number": 7,
+      "chapter_title": "The p-Block Elements"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": true,
+    "pages": 45,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O",
+     "CHE12O"
+    ],
+    "chapter_numbers": [
+     11,
+     7
+    ],
+    "chapter_titles": [
+     "The p-Block Elements",
+     "The p-Block Elements"
+    ],
+    "chapters_with_pages": [
+     "CHE12O-ch07"
+    ],
+    "chapters_without_pages": [
+     "CHE11O-ch11"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 11,
+      "chapter_title": "The p-Block Elements",
+      "pages": 0,
+      "a3_passages": 0
+     },
+     {
+      "book": "CHE12O",
+      "chapter_number": 7,
+      "chapter_title": "The p-Block Elements",
+      "pages": 45,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Both p-block chapters were deleted in the 2023 rationalisation: CHE11L has only 9 units and CHE12L only 10, neither containing a p-block chapter. Older edition spans two books - CHE11O ch11 (groups 13-14: boron family, oxides of carbon) and CHE12O ch7 (groups 15-18: phosphorus oxyacids, halogens, xenon).",
+   "note": "Largest Chemistry dependency in the two papers (9 questions) and it has no latest-edition home at all."
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Environmental Issues",
+   "chapter_code": "BIONEETENGENV",
+   "questions": 8,
+   "locally_minted": true,
+   "ncert": {
+    "book": "BIO12O",
+    "chapter_number": 16,
+    "chapter_title": "Environmental Issues",
+    "books": [
+     "BIO12O"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 16,
+      "chapter_title": "Environmental Issues"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 16,
+    "chapter_titles": [
+     "Environmental Issues"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO12O-ch16"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 16,
+      "chapter_title": "Environmental Issues",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'Environmental Issues' was deleted outright in the 2023 rationalisation, so only the older edition has it.",
+   "note": "All 8 questions (pollution, eutrophication, biomagnification, ozone, deforestation, global warming) can only be evidenced from BIO12O ch16."
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Human Health and Disease",
+   "chapter_code": "BIONEETENGHHD",
+   "questions": 8,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 7,
+    "chapter_title": "Human Health and Disease",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 7,
+      "chapter_title": "Human Health and Disease"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Human Health and Disease"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO12L-ch07"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 7,
+      "chapter_title": "Human Health and Disease",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "Human Health and Disease"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO12O-ch08"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 8,
+      "chapter_title": "Human Health and Disease",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Older ch8 title read from the PDF; latest ch7 is image-only, resolved by elimination against the other 12 verified BIO12L titles.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Human Reproduction",
+   "chapter_code": "BIONEETENGHRR",
+   "questions": 8,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 2,
+    "chapter_title": "Human Reproduction",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 2,
+      "chapter_title": "Human Reproduction"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 15,
+    "a3_passages": 12,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 2,
+    "chapter_titles": [
+     "Human Reproduction"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch02"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 2,
+      "chapter_title": "Human Reproduction",
+      "pages": 15,
+      "a3_passages": 12,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 15,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 3,
+    "chapter_titles": [
+     "Human Reproduction"
+    ],
+    "chapters_with_pages": [
+     "BIO12O-ch03"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 3,
+      "chapter_title": "Human Reproduction",
+      "pages": 15,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 3 -> 2.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Molecular Basis of Inheritance",
+   "chapter_code": "BIONEETENGMBI",
+   "questions": 8,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 5,
+    "chapter_title": "Molecular Basis of Inheritance",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 5,
+      "chapter_title": "Molecular Basis of Inheritance"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 31,
+    "a3_passages": 30,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 5,
+    "chapter_titles": [
+     "Molecular Basis of Inheritance"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch05"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 5,
+      "chapter_title": "Molecular Basis of Inheritance",
+      "pages": 31,
+      "a3_passages": 30,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Molecular Basis of Inheritance"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO12O-ch06"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 6,
+      "chapter_title": "Molecular Basis of Inheritance",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 6 -> 5.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Modern Physics",
+   "chapter_code": "PHYNEETENGMOP",
+   "questions": 8,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY12L",
+    "chapter_number": [
+     11,
+     12,
+     13
+    ],
+    "chapter_title": [
+     "Dual Nature of Radiation and Matter",
+     "Atoms",
+     "Nuclei"
+    ],
+    "books": [
+     "PHY12L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 11,
+      "chapter_title": "Dual Nature of Radiation and Matter"
+     },
+     {
+      "book": "PHY12L",
+      "chapter_number": 12,
+      "chapter_title": "Atoms"
+     },
+     {
+      "book": "PHY12L",
+      "chapter_number": 13,
+      "chapter_title": "Nuclei"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 49,
+    "a3_passages": 0,
+    "books": [
+     "PHY12L"
+    ],
+    "chapter_numbers": [
+     11,
+     12,
+     13
+    ],
+    "chapter_titles": [
+     "Dual Nature of Radiation and Matter",
+     "Atoms",
+     "Nuclei"
+    ],
+    "chapters_with_pages": [
+     "PHY12L-ch11",
+     "PHY12L-ch12",
+     "PHY12L-ch13"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 11,
+      "chapter_title": "Dual Nature of Radiation and Matter",
+      "pages": 16,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     },
+     {
+      "book": "PHY12L",
+      "chapter_number": 12,
+      "chapter_title": "Atoms",
+      "pages": 16,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     },
+     {
+      "book": "PHY12L",
+      "chapter_number": 13,
+      "chapter_title": "Nuclei",
+      "pages": 17,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12O"
+    ],
+    "chapter_numbers": [
+     11,
+     12,
+     13
+    ],
+    "chapter_titles": [
+     "Dual Nature of Radiation and Matter",
+     "Atoms",
+     "Nuclei"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12O-ch11",
+     "PHY12O-ch12",
+     "PHY12O-ch13"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12O",
+      "chapter_number": 11,
+      "chapter_title": "Dual Nature of Radiation and Matter",
+      "pages": 0,
+      "a3_passages": 0
+     },
+     {
+      "book": "PHY12O",
+      "chapter_number": 12,
+      "chapter_title": "Atoms",
+      "pages": 0,
+      "a3_passages": 0
+     },
+     {
+      "book": "PHY12O",
+      "chapter_number": 13,
+      "chapter_title": "Nuclei",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Coaching umbrella over three NCERT chapters: Dual Nature of Radiation and Matter (11), Atoms (12), Nuclei (13); the 8 questions split across photoelectric effect, hydrogen spectral lines, de Broglie, alpha/beta/gamma decay and closest approach.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Animal Kingdom",
+   "chapter_code": "BIONEETENGAKK",
+   "questions": 7,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 4,
+    "chapter_title": "Animal Kingdom",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 4,
+      "chapter_title": "Animal Kingdom"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 13,
+    "a3_passages": 19,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 4,
+    "chapter_titles": [
+     "Animal Kingdom"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch04"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 4,
+      "chapter_title": "Animal Kingdom",
+      "pages": 13,
+      "a3_passages": 19,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 4,
+    "chapter_titles": [
+     "Animal Kingdom"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch04"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 4,
+      "chapter_title": "Animal Kingdom",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Chemical Bonding and Molecular Structure",
+   "chapter_code": "CHENEETENGCBM",
+   "questions": 7,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE11L",
+    "chapter_number": 4,
+    "chapter_title": "Chemical Bonding and Molecular Structure",
+    "books": [
+     "CHE11L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 4,
+      "chapter_title": "Chemical Bonding and Molecular Structure"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11L"
+    ],
+    "chapter_numbers": 4,
+    "chapter_titles": [
+     "Chemical Bonding and Molecular Structure"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11L-ch04"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 4,
+      "chapter_title": "Chemical Bonding and Molecular Structure",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 4,
+    "chapter_titles": [
+     "Chemical Bonding and Molecular Structure"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch04"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 4,
+      "chapter_title": "Chemical Bonding and Molecular Structure",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": "2016_X#q012 (xenon compounds) is double-mapped with The p-Block Elements and its evidence is in CHE12O ch7."
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Kinematics",
+   "chapter_code": "PHYNEETENGKIN",
+   "questions": 7,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": [
+     2,
+     3
+    ],
+    "chapter_title": [
+     "Motion in a Straight Line",
+     "Motion in a Plane"
+    ],
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 2,
+      "chapter_title": "Motion in a Straight Line"
+     },
+     {
+      "book": "PHY11L",
+      "chapter_number": 3,
+      "chapter_title": "Motion in a Plane"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": true,
+    "pages": 14,
+    "a3_passages": 0,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": [
+     2,
+     3
+    ],
+    "chapter_titles": [
+     "Motion in a Straight Line",
+     "Motion in a Plane"
+    ],
+    "chapters_with_pages": [
+     "PHY11L-ch02"
+    ],
+    "chapters_without_pages": [
+     "PHY11L-ch03"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 2,
+      "chapter_title": "Motion in a Straight Line",
+      "pages": 14,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     },
+     {
+      "book": "PHY11L",
+      "chapter_number": 3,
+      "chapter_title": "Motion in a Plane",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": [
+     3,
+     4
+    ],
+    "chapter_titles": [
+     "Motion in a Straight Line",
+     "Motion in a Plane"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch03",
+     "PHY11O-ch04"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 3,
+      "chapter_title": "Motion in a Straight Line",
+      "pages": 0,
+      "a3_passages": 0
+     },
+     {
+      "book": "PHY11O",
+      "chapter_number": 4,
+      "chapter_title": "Motion in a Plane",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Coaching umbrella over Motion in a Straight Line and Motion in a Plane; the vector items (dot product, vector addition) and circular-motion items sit in Motion in a Plane, the equations of motion in Motion in a Straight Line.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Biotechnology: Principles and Processes",
+   "chapter_code": "BIONEETENGBPP",
+   "questions": 6,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 9,
+    "chapter_title": "Biotechnology : Principles and Processes",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 9,
+      "chapter_title": "Biotechnology : Principles and Processes"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 14,
+    "a3_passages": 7,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Biotechnology : Principles and Processes"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch09"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 9,
+      "chapter_title": "Biotechnology : Principles and Processes",
+      "pages": 14,
+      "a3_passages": 7,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 11,
+    "chapter_titles": [
+     "Biotechnology : Principles and Processes"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO12O-ch11"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 11,
+      "chapter_title": "Biotechnology : Principles and Processes",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 11 -> 9.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Ecosystem",
+   "chapter_code": "BIONEETENGECO",
+   "questions": 6,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 12,
+    "chapter_title": "Ecosystem",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 12,
+      "chapter_title": "Ecosystem"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 11,
+    "a3_passages": 8,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 12,
+    "chapter_titles": [
+     "Ecosystem"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch12"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 12,
+      "chapter_title": "Ecosystem",
+      "pages": 11,
+      "a3_passages": 8,
+      "a4_subtopics": 13
+     }
+    ],
+    "a4_subtopics": 13
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 14,
+    "chapter_titles": [
+     "Ecosystem"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO12O-ch14"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 14,
+      "chapter_title": "Ecosystem",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 14 -> 12.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Magnetic Effect of Electric Current",
+   "chapter_code": "PHYNEETENGMCM",
+   "questions": 6,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY12L",
+    "chapter_number": [
+     4,
+     5
+    ],
+    "chapter_title": [
+     "Moving Charges and Magnetism",
+     "Magnetism and Matter"
+    ],
+    "books": [
+     "PHY12L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 4,
+      "chapter_title": "Moving Charges and Magnetism"
+     },
+     {
+      "book": "PHY12L",
+      "chapter_number": 5,
+      "chapter_title": "Magnetism and Matter"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12L"
+    ],
+    "chapter_numbers": [
+     4,
+     5
+    ],
+    "chapter_titles": [
+     "Moving Charges and Magnetism",
+     "Magnetism and Matter"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12L-ch04",
+     "PHY12L-ch05"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 4,
+      "chapter_title": "Moving Charges and Magnetism",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     },
+     {
+      "book": "PHY12L",
+      "chapter_number": 5,
+      "chapter_title": "Magnetism and Matter",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12O"
+    ],
+    "chapter_numbers": [
+     4,
+     5
+    ],
+    "chapter_titles": [
+     "Moving Charges and Magnetism",
+     "Magnetism and Matter"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12O-ch04",
+     "PHY12O-ch05"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12O",
+      "chapter_number": 4,
+      "chapter_title": "Moving Charges and Magnetism",
+      "pages": 0,
+      "a3_passages": 0
+     },
+     {
+      "book": "PHY12O",
+      "chapter_number": 5,
+      "chapter_title": "Magnetism and Matter",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "medium",
+   "why": "Mostly Moving Charges and Magnetism (4) - torque on a loop, Ampere's law, magnetic force - but 2016_X#q150 is diamagnetism, which NCERT teaches in Magnetism and Matter (5).",
+   "note": "2015_A#q175 is double-mapped with Current Electricity and its evidence is in ch3, not ch4/5."
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Rotational Motion",
+   "chapter_code": "PHYNEETENGROM",
+   "questions": 6,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 6,
+    "chapter_title": "Systems of Particles and Rotational Motion",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 6,
+      "chapter_title": "Systems of Particles and Rotational Motion"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 35,
+    "a3_passages": 33,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Systems of Particles and Rotational Motion"
+    ],
+    "chapters_with_pages": [
+     "PHY11L-ch06"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 6,
+      "chapter_title": "Systems of Particles and Rotational Motion",
+      "pages": 35,
+      "a3_passages": 33,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Systems of Particles and Rotational Motion"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch07"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 7,
+      "chapter_title": "Systems of Particles and Rotational Motion",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "NCERT 'Systems of Particles and Rotational Motion'; renumbered 7 -> 6 when 'Physical World' was dropped.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Thermodynamics",
+   "chapter_code": "PHYNEETENGTHR",
+   "questions": 6,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 11,
+    "chapter_title": "Thermodynamics",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 11,
+      "chapter_title": "Thermodynamics"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 11,
+    "chapter_titles": [
+     "Thermodynamics"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11L-ch11"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 11,
+      "chapter_title": "Thermodynamics",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 12,
+    "chapter_titles": [
+     "Thermodynamics"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch12"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 12,
+      "chapter_title": "Thermodynamics",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "NCERT Thermodynamics; renumbered 12 -> 11. Carnot engine and refrigerator verified present in both editions.",
+   "note": "2015_A#q148 is the ideal gas equation, which NCERT develops in Kinetic Theory (PHY11L ch12 / PHY11O ch13) rather than in Thermodynamics."
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Biomolecules",
+   "chapter_code": "BIONEETENGBML",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 9,
+    "chapter_title": "Biomolecules",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 9,
+      "chapter_title": "Biomolecules"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Biomolecules"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11L-ch09"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 9,
+      "chapter_title": "Biomolecules",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Biomolecules"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch09"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 9,
+      "chapter_title": "Biomolecules",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Class 11 Biology ch9 in both editions; the Class 12 Chemistry Biomolecules chapter is tracked separately as CHENEETENGBML.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Body Fluids and Circulation",
+   "chapter_code": "BIONEETENGBFC",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 15,
+    "chapter_title": "Body Fluids and Circulation",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 15,
+      "chapter_title": "Body Fluids and Circulation"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 12,
+    "a3_passages": 16,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 15,
+    "chapter_titles": [
+     "Body Fluids and Circulation"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch15"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 15,
+      "chapter_title": "Body Fluids and Circulation",
+      "pages": 12,
+      "a3_passages": 16,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 12,
+    "a3_passages": 19,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 18,
+    "chapter_titles": [
+     "Body Fluids and Circulation"
+    ],
+    "chapters_with_pages": [
+     "BIO11O-ch18"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 18,
+      "chapter_title": "Body Fluids and Circulation",
+      "pages": 12,
+      "a3_passages": 19
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 18 -> 15.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Cell Cycle and Cell Division",
+   "chapter_code": "BIONEETENGCCD",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 10,
+    "chapter_title": "Cell Cycle and Cell Division",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 10,
+      "chapter_title": "Cell Cycle and Cell Division"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 11,
+    "a3_passages": 12,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 10,
+    "chapter_titles": [
+     "Cell Cycle and Cell Division"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch10"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 10,
+      "chapter_title": "Cell Cycle and Cell Division",
+      "pages": 11,
+      "a3_passages": 12,
+      "a4_subtopics": 13
+     }
+    ],
+    "a4_subtopics": 13
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 11,
+    "a3_passages": 14,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 10,
+    "chapter_titles": [
+     "Cell Cycle and Cell Division"
+    ],
+    "chapters_with_pages": [
+     "BIO11O-ch10"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 10,
+      "chapter_title": "Cell Cycle and Cell Division",
+      "pages": 11,
+      "a3_passages": 14
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Evolution",
+   "chapter_code": "BIONEETENGEVL",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 6,
+    "chapter_title": "Evolution",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 6,
+      "chapter_title": "Evolution"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 17,
+    "a3_passages": 12,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Evolution"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch06"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 6,
+      "chapter_title": "Evolution",
+      "pages": 17,
+      "a3_passages": 12,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Evolution"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO12O-ch07"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 7,
+      "chapter_title": "Evolution",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 7 -> 6.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Organisms and Populations",
+   "chapter_code": "BIONEETENGOPP",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 11,
+    "chapter_title": "Organisms and Populations",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 11,
+      "chapter_title": "Organisms and Populations"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 15,
+    "a3_passages": 0,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 11,
+    "chapter_titles": [
+     "Organisms and Populations"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch11"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 11,
+      "chapter_title": "Organisms and Populations",
+      "pages": 15,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 13,
+    "chapter_titles": [
+     "Organisms and Populations"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO12O-ch13"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 13,
+      "chapter_title": "Organisms and Populations",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 13 -> 11.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Photosynthesis in Higher Plants",
+   "chapter_code": "BIONEETENGPHP",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 11,
+    "chapter_title": "Photosynthesis in Higher Plants",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 11,
+      "chapter_title": "Photosynthesis in Higher Plants"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 11,
+    "chapter_titles": [
+     "Photosynthesis in Higher Plants"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11L-ch11"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 11,
+      "chapter_title": "Photosynthesis in Higher Plants",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 13,
+    "chapter_titles": [
+     "Photosynthesis in Higher Plants"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch13"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 13,
+      "chapter_title": "Photosynthesis in Higher Plants",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Same title; renumbered 13 -> 11.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Coordination Compounds – Practice",
+   "chapter_code": "CHENEETENGCCP",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE12L",
+    "chapter_number": 5,
+    "chapter_title": "Coordination Compounds",
+    "books": [
+     "CHE12L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 5,
+      "chapter_title": "Coordination Compounds"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 23,
+    "a3_passages": 0,
+    "books": [
+     "CHE12L"
+    ],
+    "chapter_numbers": 5,
+    "chapter_titles": [
+     "Coordination Compounds"
+    ],
+    "chapters_with_pages": [
+     "CHE12L-ch05"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 5,
+      "chapter_title": "Coordination Compounds",
+      "pages": 23,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Coordination Compounds"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch09"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 9,
+      "chapter_title": "Coordination Compounds",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "NCERT 'Coordination Compounds'; renumbered 9 -> 5. The '- Practice' suffix is a product-side label, not an NCERT distinction.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Hydrocarbons",
+   "chapter_code": "CHENEETENGHYD",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE11L",
+    "chapter_number": 9,
+    "chapter_title": "Hydrocarbons",
+    "books": [
+     "CHE11L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 9,
+      "chapter_title": "Hydrocarbons"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11L"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Hydrocarbons"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11L-ch09"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 9,
+      "chapter_title": "Hydrocarbons",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 13,
+    "chapter_titles": [
+     "Hydrocarbons"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch13"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 13,
+      "chapter_title": "Hydrocarbons",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "NCERT 'Hydrocarbons'; renumbered 13 -> 9.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Current Electricity",
+   "chapter_code": "PHYNEETENGCEE",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY12L",
+    "chapter_number": 3,
+    "chapter_title": "Current Electricity",
+    "books": [
+     "PHY12L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 3,
+      "chapter_title": "Current Electricity"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 26,
+    "a3_passages": 26,
+    "books": [
+     "PHY12L"
+    ],
+    "chapter_numbers": 3,
+    "chapter_titles": [
+     "Current Electricity"
+    ],
+    "chapters_with_pages": [
+     "PHY12L-ch03"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 3,
+      "chapter_title": "Current Electricity",
+      "pages": 26,
+      "a3_passages": 26,
+      "a4_subtopics": 14
+     }
+    ],
+    "a4_subtopics": 14
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12O"
+    ],
+    "chapter_numbers": 3,
+    "chapter_titles": [
+     "Current Electricity"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12O-ch03"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12O",
+      "chapter_number": 3,
+      "chapter_title": "Current Electricity",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Ray Optics",
+   "chapter_code": "PHYNEETENGROO",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY12L",
+    "chapter_number": 9,
+    "chapter_title": "Ray Optics and Optical Instruments",
+    "books": [
+     "PHY12L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 9,
+      "chapter_title": "Ray Optics and Optical Instruments"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12L"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Ray Optics and Optical Instruments"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12L-ch09"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 9,
+      "chapter_title": "Ray Optics and Optical Instruments",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12O"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Ray Optics and Optical Instruments"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12O-ch09"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12O",
+      "chapter_number": 9,
+      "chapter_title": "Ray Optics and Optical Instruments",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "NCERT 'Ray Optics and Optical Instruments'; same number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Semiconductor Electronics",
+   "chapter_code": "PHYNEETENGSEM",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY12L",
+    "chapter_number": 14,
+    "chapter_title": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+    "books": [
+     "PHY12L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 14,
+      "chapter_title": "Semiconductor Electronics: Materials, Devices and Simple Circuits"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12L"
+    ],
+    "chapter_numbers": 14,
+    "chapter_titles": [
+     "Semiconductor Electronics: Materials, Devices and Simple Circuits"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12L-ch14"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 14,
+      "chapter_title": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 58,
+    "a3_passages": 0,
+    "books": [
+     "PHY12O"
+    ],
+    "chapter_numbers": 14,
+    "chapter_titles": [
+     "Semiconductor Electronics: Materials, Devices and Simple Circuits"
+    ],
+    "chapters_with_pages": [
+     "PHY12O-ch14"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY12O",
+      "chapter_number": 14,
+      "chapter_title": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+      "pages": 58,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": "The latest chapter was heavily cut: 'logic gate', 'zener' and 'photodiode' all return 0 hits in the latest PDF and 'transistor' only 4. 2016_X#q137 (logic gates), 2016_X#q162 (transistor action) and 2015_A#q173 (CE amplifier gain) can only be evidenced from PHY12O ch14."
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Waves",
+   "chapter_code": "PHYNEETENGWVS",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 14,
+    "chapter_title": "Waves",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 14,
+      "chapter_title": "Waves"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 14,
+    "chapter_titles": [
+     "Waves"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11L-ch14"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 14,
+      "chapter_title": "Waves",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 15,
+    "chapter_titles": [
+     "Waves"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch15"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 15,
+      "chapter_title": "Waves",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Same title; renumbered 15 -> 14.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Work, Energy and Power",
+   "chapter_code": "PHYNEETENGWEP",
+   "questions": 5,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 5,
+    "chapter_title": "Work, Energy and Power",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 5,
+      "chapter_title": "Work, Energy and Power"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 21,
+    "a3_passages": 22,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 5,
+    "chapter_titles": [
+     "Work, Energy and Power"
+    ],
+    "chapters_with_pages": [
+     "PHY11L-ch05"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 5,
+      "chapter_title": "Work, Energy and Power",
+      "pages": 21,
+      "a3_passages": 22,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Work, Energy and Power"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch06"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 6,
+      "chapter_title": "Work, Energy and Power",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 6 -> 5.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Breathing and Exchange of Gases",
+   "chapter_code": "BIONEETENGBEG",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 14,
+    "chapter_title": "Breathing and Exchange of Gases",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 14,
+      "chapter_title": "Breathing and Exchange of Gases"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 12,
+    "a3_passages": 12,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 14,
+    "chapter_titles": [
+     "Breathing and Exchange of Gases"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch14"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 14,
+      "chapter_title": "Breathing and Exchange of Gases",
+      "pages": 12,
+      "a3_passages": 12,
+      "a4_subtopics": 13
+     }
+    ],
+    "a4_subtopics": 13
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 10,
+    "a3_passages": 14,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 17,
+    "chapter_titles": [
+     "Breathing and Exchange of Gases"
+    ],
+    "chapters_with_pages": [
+     "BIO11O-ch17"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 17,
+      "chapter_title": "Breathing and Exchange of Gases",
+      "pages": 10,
+      "a3_passages": 14
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 17 -> 14.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Chemical Coordination and Integration",
+   "chapter_code": "BIONEETENGCCI",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 19,
+    "chapter_title": "Chemical Coordination and Integration",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 19,
+      "chapter_title": "Chemical Coordination and Integration"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 14,
+    "a3_passages": 17,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 19,
+    "chapter_titles": [
+     "Chemical Coordination and Integration"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch19"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 19,
+      "chapter_title": "Chemical Coordination and Integration",
+      "pages": 14,
+      "a3_passages": 17,
+      "a4_subtopics": 15
+     }
+    ],
+    "a4_subtopics": 15
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 22,
+    "chapter_titles": [
+     "Chemical Coordination and Integration"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch22"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 22,
+      "chapter_title": "Chemical Coordination and Integration",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 22 -> 19.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Digestion and Absorption",
+   "chapter_code": "BIONEETENGDIG",
+   "questions": 4,
+   "locally_minted": true,
+   "ncert": {
+    "book": "BIO11O",
+    "chapter_number": 16,
+    "chapter_title": "Digestion and Absorption",
+    "books": [
+     "BIO11O"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 16,
+      "chapter_title": "Digestion and Absorption"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 13,
+    "a3_passages": 12,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 16,
+    "chapter_titles": [
+     "Digestion and Absorption"
+    ],
+    "chapters_with_pages": [
+     "BIO11O-ch16"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 16,
+      "chapter_title": "Digestion and Absorption",
+      "pages": 13,
+      "a3_passages": 12
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'Digestion and Absorption' was deleted in the 2023 rationalisation; older edition only.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Structural Organisation in Animals",
+   "chapter_code": "BIONEETENGSOA",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 7,
+    "chapter_title": "Structural Organisation in Animals",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 7,
+      "chapter_title": "Structural Organisation in Animals"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 6,
+    "a3_passages": 6,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Structural Organisation in Animals"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch07"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 7,
+      "chapter_title": "Structural Organisation in Animals",
+      "pages": 6,
+      "a3_passages": 6,
+      "a4_subtopics": 12
+     }
+    ],
+    "a4_subtopics": 12
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Structural Organisation in Animals"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch07"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 7,
+      "chapter_title": "Structural Organisation in Animals",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": "Latest ch7 keeps only the frog: 'earthworm' and 'cockroach' return 0 hits in the latest PDF, so 2015_A#q081 (anatomy of cockroach) must be evidenced from BIO11O ch7."
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Transport in Plants",
+   "chapter_code": "BIONEETENGTRA",
+   "questions": 4,
+   "locally_minted": true,
+   "ncert": {
+    "book": "BIO11O",
+    "chapter_number": 11,
+    "chapter_title": "Transport in Plants",
+    "books": [
+     "BIO11O"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 11,
+      "chapter_title": "Transport in Plants"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 11,
+    "chapter_titles": [
+     "Transport in Plants"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch11"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 11,
+      "chapter_title": "Transport in Plants",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'Transport in Plants' was deleted in the 2023 rationalisation; older edition only.",
+   "note": "Root pressure, ascent of sap and transpiration-pull evidence exists only in BIO11O ch11."
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Alcohols, Phenols and Ethers",
+   "chapter_code": "CHENEETENGAPE",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE12L",
+    "chapter_number": 7,
+    "chapter_title": "Alcohols, Phenols and Ethers",
+    "books": [
+     "CHE12L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 7,
+      "chapter_title": "Alcohols, Phenols and Ethers"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12L"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Alcohols, Phenols and Ethers"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12L-ch07"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 7,
+      "chapter_title": "Alcohols, Phenols and Ethers",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 11,
+    "chapter_titles": [
+     "Alcohols, Phenols and Ethers"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch11"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 11,
+      "chapter_title": "Alcohols, Phenols and Ethers",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "NCERT 'Alcohols, Phenols and Ethers'; renumbered 11 -> 7.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Aldehydes, Ketones, and Carboxylic Acids",
+   "chapter_code": "CHENEETENGAKC",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE12L",
+    "chapter_number": 8,
+    "chapter_title": "Aldehydes, Ketones and Carboxylic Acids",
+    "books": [
+     "CHE12L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 8,
+      "chapter_title": "Aldehydes, Ketones and Carboxylic Acids"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12L"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "Aldehydes, Ketones and Carboxylic Acids"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12L-ch08"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 8,
+      "chapter_title": "Aldehydes, Ketones and Carboxylic Acids",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 12,
+    "chapter_titles": [
+     "Aldehydes, Ketones and Carboxylic Acids"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch12"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 12,
+      "chapter_title": "Aldehydes, Ketones and Carboxylic Acids",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "NCERT 'Aldehydes, Ketones and Carboxylic Acids'; renumbered 12 -> 8.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Amines",
+   "chapter_code": "CHENEETENGAMN",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE12L",
+    "chapter_number": 9,
+    "chapter_title": "Amines",
+    "books": [
+     "CHE12L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 9,
+      "chapter_title": "Amines"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 22,
+    "a3_passages": 45,
+    "books": [
+     "CHE12L"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Amines"
+    ],
+    "chapters_with_pages": [
+     "CHE12L-ch09"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 9,
+      "chapter_title": "Amines",
+      "pages": 22,
+      "a3_passages": 45,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 13,
+    "chapter_titles": [
+     "Amines"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch13"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 13,
+      "chapter_title": "Amines",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "NCERT 'Amines'; renumbered 13 -> 9.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Isomerism in Organic Compounds",
+   "chapter_code": "CHENEETENGISO",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE11L",
+    "chapter_number": [
+     8,
+     9
+    ],
+    "chapter_title": [
+     "Organic Chemistry – Some Basic Principles and Techniques",
+     "Hydrocarbons"
+    ],
+    "books": [
+     "CHE11L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 8,
+      "chapter_title": "Organic Chemistry – Some Basic Principles and Techniques"
+     },
+     {
+      "book": "CHE11L",
+      "chapter_number": 9,
+      "chapter_title": "Hydrocarbons"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11L"
+    ],
+    "chapter_numbers": [
+     8,
+     9
+    ],
+    "chapter_titles": [
+     "Organic Chemistry – Some Basic Principles and Techniques",
+     "Hydrocarbons"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11L-ch08",
+     "CHE11L-ch09"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 8,
+      "chapter_title": "Organic Chemistry – Some Basic Principles and Techniques",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     },
+     {
+      "book": "CHE11L",
+      "chapter_number": 9,
+      "chapter_title": "Hydrocarbons",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": [
+     12,
+     13
+    ],
+    "chapter_titles": [
+     "Organic Chemistry – Some Basic Principles and Techniques",
+     "Hydrocarbons"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch12",
+     "CHE11O-ch13"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 12,
+      "chapter_title": "Organic Chemistry – Some Basic Principles and Techniques",
+      "pages": 0,
+      "a3_passages": 0
+     },
+     {
+      "book": "CHE11O",
+      "chapter_number": 13,
+      "chapter_title": "Hydrocarbons",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "medium",
+   "why": "NCERT has no 'Isomerism' chapter: structural/stereo isomerism is section 8.6 of 'Organic Chemistry - Some Basic Principles and Techniques' (CHE11L ch8 / CHE11O ch12), and cis-trans isomerism of alkenes is taught in Hydrocarbons (CHE11L ch9 / CHE11O ch13, 4 'geometrical isom' hits).",
+   "note": "Optical isomerism (2015_A#q029, 2016_X#q042) is thin in Class 11 - only 1 hit for 'optical isom' in CHE11L ch8; the fuller treatment is in Class 12 Haloalkanes (ch6/ch10) and Coordination Compounds (ch5/ch9). Extraction should not rely on ch8 alone for those two items."
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "The Solid State",
+   "chapter_code": "CHENEETENGSOL",
+   "questions": 4,
+   "locally_minted": true,
+   "ncert": {
+    "book": "CHE12O",
+    "chapter_number": 1,
+    "chapter_title": "The Solid State",
+    "books": [
+     "CHE12O"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 1,
+      "chapter_title": "The Solid State"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 1,
+    "chapter_titles": [
+     "The Solid State"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch01"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 1,
+      "chapter_title": "The Solid State",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'The Solid State' was deleted in the 2023 rationalisation; it is CHE12O ch1 and has no latest-edition counterpart.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Gravitation",
+   "chapter_code": "PHYNEETENGGRV",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 7,
+    "chapter_title": "Gravitation",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 7,
+      "chapter_title": "Gravitation"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 17,
+    "a3_passages": 0,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Gravitation"
+    ],
+    "chapters_with_pages": [
+     "PHY11L-ch07"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 7,
+      "chapter_title": "Gravitation",
+      "pages": 17,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "Gravitation"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch08"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 8,
+      "chapter_title": "Gravitation",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 8 -> 7.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Laws of Motion",
+   "chapter_code": "PHYNEETENGNLM",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 4,
+    "chapter_title": "Laws of Motion",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 4,
+      "chapter_title": "Laws of Motion"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 22,
+    "a3_passages": 24,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 4,
+    "chapter_titles": [
+     "Laws of Motion"
+    ],
+    "chapters_with_pages": [
+     "PHY11L-ch04"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 4,
+      "chapter_title": "Laws of Motion",
+      "pages": 22,
+      "a3_passages": 24,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 5,
+    "chapter_titles": [
+     "Laws of Motion"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch05"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 5,
+      "chapter_title": "Laws of Motion",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "NCERT 'Laws of Motion'; renumbered 5 -> 4.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Mechanical Properties of Fluids",
+   "chapter_code": "PHYNEETENGMPF",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 9,
+    "chapter_title": "Mechanical Properties of Fluids",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 9,
+      "chapter_title": "Mechanical Properties of Fluids"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Mechanical Properties of Fluids"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11L-ch09"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 9,
+      "chapter_title": "Mechanical Properties of Fluids",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 10,
+    "chapter_titles": [
+     "Mechanical Properties of Fluids"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch10"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 10,
+      "chapter_title": "Mechanical Properties of Fluids",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Same title; renumbered 10 -> 9.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Thermal Properties of Matter",
+   "chapter_code": "PHYNEETENGTMP",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 10,
+    "chapter_title": "Thermal Properties of Matter",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 10,
+      "chapter_title": "Thermal Properties of Matter"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 10,
+    "chapter_titles": [
+     "Thermal Properties of Matter"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11L-ch10"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 10,
+      "chapter_title": "Thermal Properties of Matter",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 11,
+    "chapter_titles": [
+     "Thermal Properties of Matter"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch11"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 11,
+      "chapter_title": "Thermal Properties of Matter",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Same title; renumbered 11 -> 10.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Wave Optics",
+   "chapter_code": "PHYNEETENGWOP",
+   "questions": 4,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY12L",
+    "chapter_number": 10,
+    "chapter_title": "Wave Optics",
+    "books": [
+     "PHY12L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 10,
+      "chapter_title": "Wave Optics"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12L"
+    ],
+    "chapter_numbers": 10,
+    "chapter_titles": [
+     "Wave Optics"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12L-ch10"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 10,
+      "chapter_title": "Wave Optics",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12O"
+    ],
+    "chapter_numbers": 10,
+    "chapter_titles": [
+     "Wave Optics"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12O-ch10"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12O",
+      "chapter_number": 10,
+      "chapter_title": "Wave Optics",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Biodiversity and Conservation",
+   "chapter_code": "BIONEETENGBCC",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 13,
+    "chapter_title": "Biodiversity and Conservation",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 13,
+      "chapter_title": "Biodiversity and Conservation"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 13,
+    "a3_passages": 10,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 13,
+    "chapter_titles": [
+     "Biodiversity and Conservation"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch13"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 13,
+      "chapter_title": "Biodiversity and Conservation",
+      "pages": 13,
+      "a3_passages": 10,
+      "a4_subtopics": 12
+     }
+    ],
+    "a4_subtopics": 12
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 12,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 15,
+    "chapter_titles": [
+     "Biodiversity and Conservation"
+    ],
+    "chapters_with_pages": [
+     "BIO12O-ch15"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 15,
+      "chapter_title": "Biodiversity and Conservation",
+      "pages": 12,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 15 -> 13.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Locomotion and Movement",
+   "chapter_code": "BIONEETENGLMM",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 17,
+    "chapter_title": "Locomotion and Movement",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 17,
+      "chapter_title": "Locomotion and Movement"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 13,
+    "a3_passages": 9,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 17,
+    "chapter_titles": [
+     "Locomotion and Movement"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch17"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 17,
+      "chapter_title": "Locomotion and Movement",
+      "pages": 13,
+      "a3_passages": 9,
+      "a4_subtopics": 12
+     }
+    ],
+    "a4_subtopics": 12
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 13,
+    "a3_passages": 11,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 20,
+    "chapter_titles": [
+     "Locomotion and Movement"
+    ],
+    "chapters_with_pages": [
+     "BIO11O-ch20"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 20,
+      "chapter_title": "Locomotion and Movement",
+      "pages": 13,
+      "a3_passages": 11
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 20 -> 17.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Microbes in Human Welfare",
+   "chapter_code": "BIONEETENGMHW",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 8,
+    "chapter_title": "Microbes in Human Welfare",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 8,
+      "chapter_title": "Microbes in Human Welfare"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 12,
+    "a3_passages": 11,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "Microbes in Human Welfare"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch08"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 8,
+      "chapter_title": "Microbes in Human Welfare",
+      "pages": 12,
+      "a3_passages": 11,
+      "a4_subtopics": 11
+     }
+    ],
+    "a4_subtopics": 11
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 12,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 10,
+    "chapter_titles": [
+     "Microbes in Human Welfare"
+    ],
+    "chapters_with_pages": [
+     "BIO12O-ch10"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 10,
+      "chapter_title": "Microbes in Human Welfare",
+      "pages": 12,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 10 -> 8.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Neural Control and Coordination",
+   "chapter_code": "BIONEETENGNCC",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 18,
+    "chapter_title": "Neural Control and Coordination",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 18,
+      "chapter_title": "Neural Control and Coordination"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 9,
+    "a3_passages": 11,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 18,
+    "chapter_titles": [
+     "Neural Control and Coordination"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch18"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 18,
+      "chapter_title": "Neural Control and Coordination",
+      "pages": 9,
+      "a3_passages": 11,
+      "a4_subtopics": 12
+     }
+    ],
+    "a4_subtopics": 12
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 21,
+    "chapter_titles": [
+     "Neural Control and Coordination"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch21"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 21,
+      "chapter_title": "Neural Control and Coordination",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 21 -> 18.",
+   "note": "Sense organs were cut from the latest chapter ('cornea' and 'cochlea' return 0 hits in the latest PDF, 4 and 10 in the older), so the two eye/ear items (2015_A#q055, 2016_X#q095) need BIO11O ch21."
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Reproductive Health",
+   "chapter_code": "BIONEETENGRHE",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 3,
+    "chapter_title": "Reproductive Health",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 3,
+      "chapter_title": "Reproductive Health"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 10,
+    "a3_passages": 8,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 3,
+    "chapter_titles": [
+     "Reproductive Health"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch03"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 3,
+      "chapter_title": "Reproductive Health",
+      "pages": 10,
+      "a3_passages": 8,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 10,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 4,
+    "chapter_titles": [
+     "Reproductive Health"
+    ],
+    "chapters_with_pages": [
+     "BIO12O-ch04"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 4,
+      "chapter_title": "Reproductive Health",
+      "pages": 10,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 4 -> 3.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Basic Concepts of Chemistry",
+   "chapter_code": "CHENEETENGBCC",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE11L",
+    "chapter_number": 1,
+    "chapter_title": "Some Basic Concepts of Chemistry",
+    "books": [
+     "CHE11L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 1,
+      "chapter_title": "Some Basic Concepts of Chemistry"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 28,
+    "a3_passages": 61,
+    "books": [
+     "CHE11L"
+    ],
+    "chapter_numbers": 1,
+    "chapter_titles": [
+     "Some Basic Concepts of Chemistry"
+    ],
+    "chapters_with_pages": [
+     "CHE11L-ch01"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 1,
+      "chapter_title": "Some Basic Concepts of Chemistry",
+      "pages": 28,
+      "a3_passages": 61,
+      "a4_subtopics": 18
+     }
+    ],
+    "a4_subtopics": 18
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 1,
+    "chapter_titles": [
+     "Some Basic Concepts of Chemistry"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch01"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 1,
+      "chapter_title": "Some Basic Concepts of Chemistry",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "NCERT 'Some Basic Concepts of Chemistry', ch1 in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Biomolecules",
+   "chapter_code": "CHENEETENGBML",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE12L",
+    "chapter_number": 10,
+    "chapter_title": "Biomolecules",
+    "books": [
+     "CHE12L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 10,
+      "chapter_title": "Biomolecules"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 22,
+    "a3_passages": 0,
+    "books": [
+     "CHE12L"
+    ],
+    "chapter_numbers": 10,
+    "chapter_titles": [
+     "Biomolecules"
+    ],
+    "chapters_with_pages": [
+     "CHE12L-ch10"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 10,
+      "chapter_title": "Biomolecules",
+      "pages": 22,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 14,
+    "chapter_titles": [
+     "Biomolecules"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch14"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 14,
+      "chapter_title": "Biomolecules",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Class 12 Chemistry 'Biomolecules'; renumbered 14 -> 10. Nucleic acids, proteins and disaccharides all verified present in the latest PDF.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Chemical Kinetics",
+   "chapter_code": "CHENEETENGCKT",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE12L",
+    "chapter_number": 3,
+    "chapter_title": "Chemical Kinetics",
+    "books": [
+     "CHE12L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 3,
+      "chapter_title": "Chemical Kinetics"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12L"
+    ],
+    "chapter_numbers": 3,
+    "chapter_titles": [
+     "Chemical Kinetics"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12L-ch03"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 3,
+      "chapter_title": "Chemical Kinetics",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 4,
+    "chapter_titles": [
+     "Chemical Kinetics"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch04"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 4,
+      "chapter_title": "Chemical Kinetics",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "NCERT 'Chemical Kinetics'; renumbered 4 -> 3.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "General Organic Chemistry",
+   "chapter_code": "CHENEETENGGOC",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE11L",
+    "chapter_number": 8,
+    "chapter_title": "Organic Chemistry – Some Basic Principles and Techniques",
+    "books": [
+     "CHE11L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 8,
+      "chapter_title": "Organic Chemistry – Some Basic Principles and Techniques"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11L"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "Organic Chemistry – Some Basic Principles and Techniques"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11L-ch08"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 8,
+      "chapter_title": "Organic Chemistry – Some Basic Principles and Techniques",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 12,
+    "chapter_titles": [
+     "Organic Chemistry – Some Basic Principles and Techniques"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch12"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 12,
+      "chapter_title": "Organic Chemistry – Some Basic Principles and Techniques",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "NCERT 'Organic Chemistry - Some Basic Principles and Techniques'; renumbered 12 -> 8. Electrophile/nucleophile and reaction mechanisms verified in the latest PDF.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Ionic Equilibrium",
+   "chapter_code": "CHENEETENGIQL",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE11L",
+    "chapter_number": 6,
+    "chapter_title": "Equilibrium",
+    "books": [
+     "CHE11L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 6,
+      "chapter_title": "Equilibrium"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 47,
+    "a3_passages": 0,
+    "books": [
+     "CHE11L"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Equilibrium"
+    ],
+    "chapters_with_pages": [
+     "CHE11L-ch06"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 6,
+      "chapter_title": "Equilibrium",
+      "pages": 47,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 47,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Equilibrium"
+    ],
+    "chapters_with_pages": [
+     "CHE11O-ch07"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 7,
+      "chapter_title": "Equilibrium",
+      "pages": 47,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Ionic equilibrium is the second half of NCERT 'Equilibrium' (CHE11L ch6 / CHE11O ch7); NCERT does not split it out.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Solutions",
+   "chapter_code": "CHENEETENGSLT",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE12L",
+    "chapter_number": 1,
+    "chapter_title": "Solutions",
+    "books": [
+     "CHE12L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 1,
+      "chapter_title": "Solutions"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 30,
+    "a3_passages": 31,
+    "books": [
+     "CHE12L"
+    ],
+    "chapter_numbers": 1,
+    "chapter_titles": [
+     "Solutions"
+    ],
+    "chapters_with_pages": [
+     "CHE12L-ch01"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 1,
+      "chapter_title": "Solutions",
+      "pages": 30,
+      "a3_passages": 31,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 2,
+    "chapter_titles": [
+     "Solutions"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch02"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 2,
+      "chapter_title": "Solutions",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "NCERT 'Solutions'; renumbered 2 -> 1 when 'The Solid State' was dropped.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "The D- and F-Block Elements – Practice",
+   "chapter_code": "CHENEETENGDFB",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE12L",
+    "chapter_number": 4,
+    "chapter_title": "The d- and f-Block Elements",
+    "books": [
+     "CHE12L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 4,
+      "chapter_title": "The d- and f-Block Elements"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12L"
+    ],
+    "chapter_numbers": 4,
+    "chapter_titles": [
+     "The d- and f-Block Elements"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12L-ch04"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 4,
+      "chapter_title": "The d- and f-Block Elements",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "The d- and f-Block Elements"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch08"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 8,
+      "chapter_title": "The d- and f-Block Elements",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "NCERT 'The d- and f-Block Elements'; renumbered 8 -> 4. Dichromate/permanganate and lanthanoid/actinoid content verified present in the latest PDF.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Alternating Current",
+   "chapter_code": "PHYNEETENGALC",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY12L",
+    "chapter_number": 7,
+    "chapter_title": "Alternating Current",
+    "books": [
+     "PHY12L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 7,
+      "chapter_title": "Alternating Current"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12L"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Alternating Current"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12L-ch07"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 7,
+      "chapter_title": "Alternating Current",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12O"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Alternating Current"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12O-ch07"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12O",
+      "chapter_number": 7,
+      "chapter_title": "Alternating Current",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Capacitance",
+   "chapter_code": "PHYNEETENGCPC",
+   "questions": 3,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY12L",
+    "chapter_number": 2,
+    "chapter_title": "Electrostatic Potential and Capacitance",
+    "books": [
+     "PHY12L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 2,
+      "chapter_title": "Electrostatic Potential and Capacitance"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 36,
+    "a3_passages": 37,
+    "books": [
+     "PHY12L"
+    ],
+    "chapter_numbers": 2,
+    "chapter_titles": [
+     "Electrostatic Potential and Capacitance"
+    ],
+    "chapters_with_pages": [
+     "PHY12L-ch02"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 2,
+      "chapter_title": "Electrostatic Potential and Capacitance",
+      "pages": 36,
+      "a3_passages": 37,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12O"
+    ],
+    "chapter_numbers": 2,
+    "chapter_titles": [
+     "Electrostatic Potential and Capacitance"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12O-ch02"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12O",
+      "chapter_number": 2,
+      "chapter_title": "Electrostatic Potential and Capacitance",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Capacitance is the second half of NCERT 'Electrostatic Potential and Capacitance' (ch2 in both editions).",
+   "note": "2015_A#q162 pairs an RC circuit with impedance, which NCERT treats in Alternating Current (ch7)."
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Anatomy of Flowering Plants",
+   "chapter_code": "BIONEETENGAFP",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 6,
+    "chapter_title": "Anatomy of Flowering Plants",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 6,
+      "chapter_title": "Anatomy of Flowering Plants"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 8,
+    "a3_passages": 12,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Anatomy of Flowering Plants"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch06"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 6,
+      "chapter_title": "Anatomy of Flowering Plants",
+      "pages": 8,
+      "a3_passages": 12,
+      "a4_subtopics": 11
+     }
+    ],
+    "a4_subtopics": 11
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Anatomy of Flowering Plants"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch06"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 6,
+      "chapter_title": "Anatomy of Flowering Plants",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Biotechnology and Its Applications",
+   "chapter_code": "BIONEETENGBAA",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12L",
+    "chapter_number": 10,
+    "chapter_title": "Biotechnology and its Applications",
+    "books": [
+     "BIO12L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 10,
+      "chapter_title": "Biotechnology and its Applications"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 11,
+    "a3_passages": 10,
+    "books": [
+     "BIO12L"
+    ],
+    "chapter_numbers": 10,
+    "chapter_titles": [
+     "Biotechnology and its Applications"
+    ],
+    "chapters_with_pages": [
+     "BIO12L-ch10"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12L",
+      "chapter_number": 10,
+      "chapter_title": "Biotechnology and its Applications",
+      "pages": 11,
+      "a3_passages": 10,
+      "a4_subtopics": 15
+     }
+    ],
+    "a4_subtopics": 15
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 10,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 12,
+    "chapter_titles": [
+     "Biotechnology and its Applications"
+    ],
+    "chapters_with_pages": [
+     "BIO12O-ch12"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 12,
+      "chapter_title": "Biotechnology and its Applications",
+      "pages": 10,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 12 -> 10.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Excretory Products and Their Elimination",
+   "chapter_code": "BIONEETENGEPE",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 16,
+    "chapter_title": "Excretory Products and their Elimination",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 16,
+      "chapter_title": "Excretory Products and their Elimination"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 12,
+    "a3_passages": 11,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 16,
+    "chapter_titles": [
+     "Excretory Products and their Elimination"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch16"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 16,
+      "chapter_title": "Excretory Products and their Elimination",
+      "pages": 12,
+      "a3_passages": 11,
+      "a4_subtopics": 14
+     }
+    ],
+    "a4_subtopics": 14
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 12,
+    "a3_passages": 12,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 19,
+    "chapter_titles": [
+     "Excretory Products and their Elimination"
+    ],
+    "chapters_with_pages": [
+     "BIO11O-ch19"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 19,
+      "chapter_title": "Excretory Products and their Elimination",
+      "pages": 12,
+      "a3_passages": 12
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 19 -> 16.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Mineral Nutrition",
+   "chapter_code": "BIONEETENGMIN",
+   "questions": 2,
+   "locally_minted": true,
+   "ncert": {
+    "book": "BIO11O",
+    "chapter_number": 12,
+    "chapter_title": "Mineral Nutrition",
+    "books": [
+     "BIO11O"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 12,
+      "chapter_title": "Mineral Nutrition"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 12,
+    "a3_passages": 17,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 12,
+    "chapter_titles": [
+     "Mineral Nutrition"
+    ],
+    "chapters_with_pages": [
+     "BIO11O-ch12"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 12,
+      "chapter_title": "Mineral Nutrition",
+      "pages": 12,
+      "a3_passages": 17
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'Mineral Nutrition' was deleted in the 2023 rationalisation; older edition only.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Plant Growth and Development",
+   "chapter_code": "BIONEETENGPGD",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 13,
+    "chapter_title": "Plant Growth and Development",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 13,
+      "chapter_title": "Plant Growth and Development"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 15,
+    "a3_passages": 19,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 13,
+    "chapter_titles": [
+     "Plant Growth and Development"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch13"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 13,
+      "chapter_title": "Plant Growth and Development",
+      "pages": 15,
+      "a3_passages": 19,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 15,
+    "chapter_titles": [
+     "Plant Growth and Development"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch15"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 15,
+      "chapter_title": "Plant Growth and Development",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 15 -> 13.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Plant Kingdom",
+   "chapter_code": "BIONEETENGPKK",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 3,
+    "chapter_title": "Plant Kingdom",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 3,
+      "chapter_title": "Plant Kingdom"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 14,
+    "a3_passages": 13,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 3,
+    "chapter_titles": [
+     "Plant Kingdom"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch03"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 3,
+      "chapter_title": "Plant Kingdom",
+      "pages": 14,
+      "a3_passages": 13,
+      "a4_subtopics": 10
+     }
+    ],
+    "a4_subtopics": 10
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 3,
+    "chapter_titles": [
+     "Plant Kingdom"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO11O-ch03"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 3,
+      "chapter_title": "Plant Kingdom",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Chemical Equilibrium",
+   "chapter_code": "CHENEETENGCQL",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE11L",
+    "chapter_number": 6,
+    "chapter_title": "Equilibrium",
+    "books": [
+     "CHE11L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 6,
+      "chapter_title": "Equilibrium"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 47,
+    "a3_passages": 0,
+    "books": [
+     "CHE11L"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Equilibrium"
+    ],
+    "chapters_with_pages": [
+     "CHE11L-ch06"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 6,
+      "chapter_title": "Equilibrium",
+      "pages": 47,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 47,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Equilibrium"
+    ],
+    "chapters_with_pages": [
+     "CHE11O-ch07"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 7,
+      "chapter_title": "Equilibrium",
+      "pages": 47,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Chemical equilibrium is the first half of NCERT 'Equilibrium' (CHE11L ch6 / CHE11O ch7).",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Classification of Elements and Periodicity in Properties",
+   "chapter_code": "CHENEETENGCEP",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE11L",
+    "chapter_number": 3,
+    "chapter_title": "Classification of Elements and Periodicity in Properties",
+    "books": [
+     "CHE11L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 3,
+      "chapter_title": "Classification of Elements and Periodicity in Properties"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11L"
+    ],
+    "chapter_numbers": 3,
+    "chapter_titles": [
+     "Classification of Elements and Periodicity in Properties"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11L-ch03"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 3,
+      "chapter_title": "Classification of Elements and Periodicity in Properties",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 3,
+    "chapter_titles": [
+     "Classification of Elements and Periodicity in Properties"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch03"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 3,
+      "chapter_title": "Classification of Elements and Periodicity in Properties",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Electrochemistry",
+   "chapter_code": "CHENEETENGELC",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE12L",
+    "chapter_number": 2,
+    "chapter_title": "Electrochemistry",
+    "books": [
+     "CHE12L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 2,
+      "chapter_title": "Electrochemistry"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12L"
+    ],
+    "chapter_numbers": 2,
+    "chapter_titles": [
+     "Electrochemistry"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12L-ch02"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 2,
+      "chapter_title": "Electrochemistry",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 3,
+    "chapter_titles": [
+     "Electrochemistry"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch03"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 3,
+      "chapter_title": "Electrochemistry",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "NCERT 'Electrochemistry'; renumbered 3 -> 2.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "General Principles and Processes of Isolation of Elements",
+   "chapter_code": "CHENEETENGGPPI",
+   "questions": 2,
+   "locally_minted": true,
+   "ncert": {
+    "book": "CHE12O",
+    "chapter_number": 6,
+    "chapter_title": "General Principles and Processes of Isolation of Elements",
+    "books": [
+     "CHE12O"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 6,
+      "chapter_title": "General Principles and Processes of Isolation of Elements"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "General Principles and Processes of Isolation of Elements"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch06"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 6,
+      "chapter_title": "General Principles and Processes of Isolation of Elements",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'General Principles and Processes of Isolation of Elements' (metallurgy) was deleted in the 2023 rationalisation; CHE12O ch6 only.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Haloalkanes and Haloarenes",
+   "chapter_code": "CHENEETENGHHH",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE12L",
+    "chapter_number": 6,
+    "chapter_title": "Haloalkanes and Haloarenes",
+    "books": [
+     "CHE12L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 6,
+      "chapter_title": "Haloalkanes and Haloarenes"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12L"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Haloalkanes and Haloarenes"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12L-ch06"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12L",
+      "chapter_number": 6,
+      "chapter_title": "Haloalkanes and Haloarenes",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 10,
+    "chapter_titles": [
+     "Haloalkanes and Haloarenes"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch10"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 10,
+      "chapter_title": "Haloalkanes and Haloarenes",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "NCERT 'Haloalkanes and Haloarenes'; renumbered 10 -> 6.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Polymers",
+   "chapter_code": "CHENEETENGPOL",
+   "questions": 2,
+   "locally_minted": true,
+   "ncert": {
+    "book": "CHE12O",
+    "chapter_number": 15,
+    "chapter_title": "Polymers",
+    "books": [
+     "CHE12O"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 15,
+      "chapter_title": "Polymers"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 14,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 15,
+    "chapter_titles": [
+     "Polymers"
+    ],
+    "chapters_with_pages": [
+     "CHE12O-ch15"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 15,
+      "chapter_title": "Polymers",
+      "pages": 14,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'Polymers' was deleted in the 2023 rationalisation; CHE12O ch15 only.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "States of Matter",
+   "chapter_code": "CHENEETENGSTA",
+   "questions": 2,
+   "locally_minted": true,
+   "ncert": {
+    "book": "CHE11O",
+    "chapter_number": 5,
+    "chapter_title": "States of Matter",
+    "books": [
+     "CHE11O"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 5,
+      "chapter_title": "States of Matter"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 5,
+    "chapter_titles": [
+     "States of Matter"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch05"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 5,
+      "chapter_title": "States of Matter",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'States of Matter' was deleted in the 2023 rationalisation; CHE11O ch5 only.",
+   "note": "Physics 'Kinetic Theory' (PHY11L ch12) covers real-gas deviation and gas laws in part, but the chemistry treatment the two items assume (Graham's law, van der Waals) exists only in CHE11O ch5."
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Structure of Atom",
+   "chapter_code": "CHENEETENGSAA",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE11L",
+    "chapter_number": 2,
+    "chapter_title": "Structure of Atom",
+    "books": [
+     "CHE11L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 2,
+      "chapter_title": "Structure of Atom"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 45,
+    "a3_passages": 0,
+    "books": [
+     "CHE11L"
+    ],
+    "chapter_numbers": 2,
+    "chapter_titles": [
+     "Structure of Atom"
+    ],
+    "chapters_with_pages": [
+     "CHE11L-ch02"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 2,
+      "chapter_title": "Structure of Atom",
+      "pages": 45,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 2,
+    "chapter_titles": [
+     "Structure of Atom"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch02"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 2,
+      "chapter_title": "Structure of Atom",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title and number in both editions; Balmer/hydrogen-spectrum content verified present in the latest PDF.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Surface Chemistry",
+   "chapter_code": "CHENEETENGSUR",
+   "questions": 2,
+   "locally_minted": true,
+   "ncert": {
+    "book": "CHE12O",
+    "chapter_number": 5,
+    "chapter_title": "Surface Chemistry",
+    "books": [
+     "CHE12O"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 5,
+      "chapter_title": "Surface Chemistry"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 5,
+    "chapter_titles": [
+     "Surface Chemistry"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch05"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 5,
+      "chapter_title": "Surface Chemistry",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'Surface Chemistry' was deleted in the 2023 rationalisation; CHE12O ch5 only.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "The s-Block Elements",
+   "chapter_code": "CHENEETENGSBE",
+   "questions": 2,
+   "locally_minted": true,
+   "ncert": {
+    "book": "CHE11O",
+    "chapter_number": 10,
+    "chapter_title": "The s-Block Elements",
+    "books": [
+     "CHE11O"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 10,
+      "chapter_title": "The s-Block Elements"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 10,
+    "chapter_titles": [
+     "The s-Block Elements"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch10"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 10,
+      "chapter_title": "The s-Block Elements",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'The s-Block Elements' was deleted in the 2023 rationalisation; CHE11O ch10 (printed as Unit 10 in Part II) only.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Thermodynamics",
+   "chapter_code": "CHENEETENGTHR",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE11L",
+    "chapter_number": 5,
+    "chapter_title": "Thermodynamics",
+    "books": [
+     "CHE11L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 5,
+      "chapter_title": "Thermodynamics"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11L"
+    ],
+    "chapter_numbers": 5,
+    "chapter_titles": [
+     "Thermodynamics"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11L-ch05"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 5,
+      "chapter_title": "Thermodynamics",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Thermodynamics"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch06"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 6,
+      "chapter_title": "Thermodynamics",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Chemistry Thermodynamics: CHE11L ch5 / CHE11O ch6. Not to be confused with Physics Thermodynamics (PHYNEETENGTHR).",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Electromagnetic Induction",
+   "chapter_code": "PHYNEETENGEII",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY12L",
+    "chapter_number": 6,
+    "chapter_title": "Electromagnetic Induction",
+    "books": [
+     "PHY12L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 6,
+      "chapter_title": "Electromagnetic Induction"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12L"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Electromagnetic Induction"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12L-ch06"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 6,
+      "chapter_title": "Electromagnetic Induction",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12O"
+    ],
+    "chapter_numbers": 6,
+    "chapter_titles": [
+     "Electromagnetic Induction"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12O-ch06"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12O",
+      "chapter_number": 6,
+      "chapter_title": "Electromagnetic Induction",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Electromagnetic Waves",
+   "chapter_code": "PHYNEETENGEWW",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY12L",
+    "chapter_number": 8,
+    "chapter_title": "Electromagnetic Waves",
+    "books": [
+     "PHY12L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 8,
+      "chapter_title": "Electromagnetic Waves"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 14,
+    "a3_passages": 0,
+    "books": [
+     "PHY12L"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "Electromagnetic Waves"
+    ],
+    "chapters_with_pages": [
+     "PHY12L-ch08"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 8,
+      "chapter_title": "Electromagnetic Waves",
+      "pages": 14,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY12O"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "Electromagnetic Waves"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY12O-ch08"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12O",
+      "chapter_number": 8,
+      "chapter_title": "Electromagnetic Waves",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Electrostatics",
+   "chapter_code": "PHYNEETENGECF",
+   "questions": 2,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY12L",
+    "chapter_number": [
+     1,
+     2
+    ],
+    "chapter_title": [
+     "Electric Charges and Fields",
+     "Electrostatic Potential and Capacitance"
+    ],
+    "books": [
+     "PHY12L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 1,
+      "chapter_title": "Electric Charges and Fields"
+     },
+     {
+      "book": "PHY12L",
+      "chapter_number": 2,
+      "chapter_title": "Electrostatic Potential and Capacitance"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 80,
+    "a3_passages": 72,
+    "books": [
+     "PHY12L"
+    ],
+    "chapter_numbers": [
+     1,
+     2
+    ],
+    "chapter_titles": [
+     "Electric Charges and Fields",
+     "Electrostatic Potential and Capacitance"
+    ],
+    "chapters_with_pages": [
+     "PHY12L-ch01",
+     "PHY12L-ch02"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY12L",
+      "chapter_number": 1,
+      "chapter_title": "Electric Charges and Fields",
+      "pages": 44,
+      "a3_passages": 35,
+      "a4_subtopics": 0
+     },
+     {
+      "book": "PHY12L",
+      "chapter_number": 2,
+      "chapter_title": "Electrostatic Potential and Capacitance",
+      "pages": 36,
+      "a3_passages": 37,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": true,
+    "pages": 50,
+    "a3_passages": 0,
+    "books": [
+     "PHY12O"
+    ],
+    "chapter_numbers": [
+     1,
+     2
+    ],
+    "chapter_titles": [
+     "Electric Charges and Fields",
+     "Electrostatic Potential and Capacitance"
+    ],
+    "chapters_with_pages": [
+     "PHY12O-ch01"
+    ],
+    "chapters_without_pages": [
+     "PHY12O-ch02"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY12O",
+      "chapter_number": 1,
+      "chapter_title": "Electric Charges and Fields",
+      "pages": 50,
+      "a3_passages": 0
+     },
+     {
+      "book": "PHY12O",
+      "chapter_number": 2,
+      "chapter_title": "Electrostatic Potential and Capacitance",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Coaching 'Electrostatics' spans Electric Charges and Fields (1) and Electrostatic Potential and Capacitance (2); 2015_A#q169 is the field-potential relation, which is in ch2, and 2016_X#q168 is Coulomb's law, in ch1.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Reproduction in Organisms",
+   "chapter_code": "BIONEETENGREP",
+   "questions": 1,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO12O",
+    "chapter_number": 1,
+    "chapter_title": "Reproduction in Organisms",
+    "books": [
+     "BIO12O"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 1,
+      "chapter_title": "Reproduction in Organisms"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 1,
+    "chapter_titles": [
+     "Reproduction in Organisms"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "BIO12O-ch01"
+    ],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 1,
+      "chapter_title": "Reproduction in Organisms",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "'Reproduction in Organisms' was deleted in the 2023 rationalisation - older edition only - even though it is a product-taxonomy chapter, not one of the locally minted ones.",
+   "note": "BIO12L ch1 is 'Sexual Reproduction in Flowering Plants'; do not send the extraction run there for this chapter."
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Strategies for Enhancement in Food Production",
+   "chapter_code": "BIONEETENGSEFP",
+   "questions": 1,
+   "locally_minted": true,
+   "ncert": {
+    "book": "BIO12O",
+    "chapter_number": 9,
+    "chapter_title": "Strategies for Enhancement in Food Production",
+    "books": [
+     "BIO12O"
+    ],
+    "chapters": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 9,
+      "chapter_title": "Strategies for Enhancement in Food Production"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 14,
+    "a3_passages": 0,
+    "books": [
+     "BIO12O"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Strategies for Enhancement in Food Production"
+    ],
+    "chapters_with_pages": [
+     "BIO12O-ch09"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO12O",
+      "chapter_number": 9,
+      "chapter_title": "Strategies for Enhancement in Food Production",
+      "pages": 14,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'Strategies for Enhancement in Food Production' was deleted in the 2023 rationalisation; older edition only.",
+   "note": ""
+  },
+  {
+   "subject": "Biology",
+   "chapter": "The Living World",
+   "chapter_code": "BIONEETENGLWW",
+   "questions": 1,
+   "locally_minted": false,
+   "ncert": {
+    "book": "BIO11L",
+    "chapter_number": 1,
+    "chapter_title": "The Living World",
+    "books": [
+     "BIO11L"
+    ],
+    "chapters": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 1,
+      "chapter_title": "The Living World"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 9,
+    "a3_passages": 11,
+    "books": [
+     "BIO11L"
+    ],
+    "chapter_numbers": 1,
+    "chapter_titles": [
+     "The Living World"
+    ],
+    "chapters_with_pages": [
+     "BIO11L-ch01"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11L",
+      "chapter_number": 1,
+      "chapter_title": "The Living World",
+      "pages": 9,
+      "a3_passages": 11,
+      "a4_subtopics": 10
+     }
+    ],
+    "a4_subtopics": 10
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 15,
+    "a3_passages": 3,
+    "books": [
+     "BIO11O"
+    ],
+    "chapter_numbers": 1,
+    "chapter_titles": [
+     "The Living World"
+    ],
+    "chapters_with_pages": [
+     "BIO11O-ch01"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "BIO11O",
+      "chapter_number": 1,
+      "chapter_title": "The Living World",
+      "pages": 15,
+      "a3_passages": 3
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title and number in both editions.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Chemistry in Everyday Life",
+   "chapter_code": "CHENEETENGCEL",
+   "questions": 1,
+   "locally_minted": true,
+   "ncert": {
+    "book": "CHE12O",
+    "chapter_number": 16,
+    "chapter_title": "Chemistry in Everyday Life",
+    "books": [
+     "CHE12O"
+    ],
+    "chapters": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 16,
+      "chapter_title": "Chemistry in Everyday Life"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE12O"
+    ],
+    "chapter_numbers": 16,
+    "chapter_titles": [
+     "Chemistry in Everyday Life"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE12O-ch16"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE12O",
+      "chapter_number": 16,
+      "chapter_title": "Chemistry in Everyday Life",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'Chemistry in Everyday Life' was deleted in the 2023 rationalisation; CHE12O ch16 only.",
+   "note": ""
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Hydrogen",
+   "chapter_code": "CHENEETENGHYD2",
+   "questions": 1,
+   "locally_minted": true,
+   "ncert": {
+    "book": "CHE11O",
+    "chapter_number": 9,
+    "chapter_title": "Hydrogen",
+    "books": [
+     "CHE11O"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 9,
+      "chapter_title": "Hydrogen"
+     }
+    ],
+    "edition_of_primary": "older"
+   },
+   "latest": {
+    "present_in_edition": false,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "a4_subtopics": 0,
+    "books": [],
+    "chapter_numbers": null,
+    "chapter_titles": [],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [],
+    "per_chapter": []
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Hydrogen"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch09"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 9,
+      "chapter_title": "Hydrogen",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "older_only",
+   "confidence": "high",
+   "why": "Locally minted chapter: 'Hydrogen' was deleted in the 2023 rationalisation; CHE11O ch9 (printed as Unit 9 in Part II) only.",
+   "note": "Distinct from CHENEETENGHYD (Hydrocarbons)."
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Redox Reactions",
+   "chapter_code": "CHENEETENGRRR",
+   "questions": 1,
+   "locally_minted": false,
+   "ncert": {
+    "book": "CHE11L",
+    "chapter_number": 7,
+    "chapter_title": "Redox Reactions",
+    "books": [
+     "CHE11L"
+    ],
+    "chapters": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 7,
+      "chapter_title": "Redox Reactions"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 21,
+    "a3_passages": 0,
+    "books": [
+     "CHE11L"
+    ],
+    "chapter_numbers": 7,
+    "chapter_titles": [
+     "Redox Reactions"
+    ],
+    "chapters_with_pages": [
+     "CHE11L-ch07"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "CHE11L",
+      "chapter_number": 7,
+      "chapter_title": "Redox Reactions",
+      "pages": 21,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "CHE11O"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "Redox Reactions"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "CHE11O-ch08"
+    ],
+    "per_chapter": [
+     {
+      "book": "CHE11O",
+      "chapter_number": 8,
+      "chapter_title": "Redox Reactions",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "NCERT 'Redox Reactions'; renumbered 8 -> 7.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Kinetic Theory of Gases",
+   "chapter_code": "PHYNEETENGKTG",
+   "questions": 1,
+   "locally_minted": true,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 12,
+    "chapter_title": "Kinetic Theory",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 12,
+      "chapter_title": "Kinetic Theory"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 15,
+    "a3_passages": 0,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 12,
+    "chapter_titles": [
+     "Kinetic Theory"
+    ],
+    "chapters_with_pages": [
+     "PHY11L-ch12"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 12,
+      "chapter_title": "Kinetic Theory",
+      "pages": 15,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 13,
+    "chapter_titles": [
+     "Kinetic Theory"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch13"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 13,
+      "chapter_title": "Kinetic Theory",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "NCERT 'Kinetic Theory' - PHY11L ch12 and PHY11O ch13.",
+   "note": "This is a locally minted chapter but, unlike the other 14, it was NOT dropped in the rationalisation: PHY11L Chapter_12.pdf is 'KINETIC THEORY' and has 15 page reads on disk. It was minted because the product taxonomy folds the topic elsewhere, not because the latest book lacks it."
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Mechanical Properties of Solids",
+   "chapter_code": "PHYNEETENGMPS",
+   "questions": 1,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 8,
+    "chapter_title": "Mechanical Properties of Solids",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 8,
+      "chapter_title": "Mechanical Properties of Solids"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 13,
+    "a3_passages": 14,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 8,
+    "chapter_titles": [
+     "Mechanical Properties of Solids"
+    ],
+    "chapters_with_pages": [
+     "PHY11L-ch08"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 8,
+      "chapter_title": "Mechanical Properties of Solids",
+      "pages": 13,
+      "a3_passages": 14,
+      "a4_subtopics": 14
+     }
+    ],
+    "a4_subtopics": 14
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 9,
+    "chapter_titles": [
+     "Mechanical Properties of Solids"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch09"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 9,
+      "chapter_title": "Mechanical Properties of Solids",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "Same title; renumbered 9 -> 8.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Oscillations",
+   "chapter_code": "PHYNEETENGOSC",
+   "questions": 1,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 13,
+    "chapter_title": "Oscillations",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 13,
+      "chapter_title": "Oscillations"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 13,
+    "chapter_titles": [
+     "Oscillations"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11L-ch13"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 13,
+      "chapter_title": "Oscillations",
+      "pages": 0,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 14,
+    "chapter_titles": [
+     "Oscillations"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch14"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 14,
+      "chapter_title": "Oscillations",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "none",
+   "confidence": "high",
+   "why": "Same title; renumbered 14 -> 13.",
+   "note": ""
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Units and Measurements",
+   "chapter_code": "PHYNEETENGUND",
+   "questions": 1,
+   "locally_minted": false,
+   "ncert": {
+    "book": "PHY11L",
+    "chapter_number": 1,
+    "chapter_title": "Units and Measurement",
+    "books": [
+     "PHY11L"
+    ],
+    "chapters": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 1,
+      "chapter_title": "Units and Measurement"
+     }
+    ],
+    "edition_of_primary": "latest"
+   },
+   "latest": {
+    "present_in_edition": true,
+    "extracted": true,
+    "partial": false,
+    "pages": 12,
+    "a3_passages": 0,
+    "books": [
+     "PHY11L"
+    ],
+    "chapter_numbers": 1,
+    "chapter_titles": [
+     "Units and Measurement"
+    ],
+    "chapters_with_pages": [
+     "PHY11L-ch01"
+    ],
+    "chapters_without_pages": [],
+    "per_chapter": [
+     {
+      "book": "PHY11L",
+      "chapter_number": 1,
+      "chapter_title": "Units and Measurement",
+      "pages": 12,
+      "a3_passages": 0,
+      "a4_subtopics": 0
+     }
+    ],
+    "a4_subtopics": 0
+   },
+   "older": {
+    "present_in_edition": true,
+    "extracted": false,
+    "partial": false,
+    "pages": 0,
+    "a3_passages": 0,
+    "books": [
+     "PHY11O"
+    ],
+    "chapter_numbers": 2,
+    "chapter_titles": [
+     "Units and Measurement"
+    ],
+    "chapters_with_pages": [],
+    "chapters_without_pages": [
+     "PHY11O-ch02"
+    ],
+    "per_chapter": [
+     {
+      "book": "PHY11O",
+      "chapter_number": 2,
+      "chapter_title": "Units and Measurement",
+      "pages": 0,
+      "a3_passages": 0
+     }
+    ]
+   },
+   "evidence_edition": "either",
+   "confidence": "high",
+   "why": "NCERT 'Units and Measurement'; renumbered 2 -> 1 because the older edition's ch1 'Physical World' was dropped.",
+   "note": ""
+  }
+ ],
+ "missing_by_question_load": [
+  {
+   "subject": "Biology",
+   "chapter": "Cell: The Unit of Life",
+   "chapter_code": "BIONEETENGCUL",
+   "questions": 12,
+   "latest_target": [
+    "BIO11L-ch08"
+   ],
+   "older_target": [
+    "BIO11O-ch08"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Morphology of Flowering Plants",
+   "chapter_code": "BIONEETENGMFP",
+   "questions": 9,
+   "latest_target": [
+    "BIO11L-ch05"
+   ],
+   "older_target": [
+    "BIO11O-ch05"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Environmental Issues",
+   "chapter_code": "BIONEETENGENV",
+   "questions": 8,
+   "latest_target": null,
+   "older_target": [
+    "BIO12O-ch16"
+   ],
+   "edition_required": "older only - chapter does not exist in the latest edition"
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Human Health and Disease",
+   "chapter_code": "BIONEETENGHHD",
+   "questions": 8,
+   "latest_target": [
+    "BIO12L-ch07"
+   ],
+   "older_target": [
+    "BIO12O-ch08"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Chemical Bonding and Molecular Structure",
+   "chapter_code": "CHENEETENGCBM",
+   "questions": 7,
+   "latest_target": [
+    "CHE11L-ch04"
+   ],
+   "older_target": [
+    "CHE11O-ch04"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Magnetic Effect of Electric Current",
+   "chapter_code": "PHYNEETENGMCM",
+   "questions": 6,
+   "latest_target": [
+    "PHY12L-ch04",
+    "PHY12L-ch05"
+   ],
+   "older_target": [
+    "PHY12O-ch04",
+    "PHY12O-ch05"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Thermodynamics",
+   "chapter_code": "PHYNEETENGTHR",
+   "questions": 6,
+   "latest_target": [
+    "PHY11L-ch11"
+   ],
+   "older_target": [
+    "PHY11O-ch12"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Biomolecules",
+   "chapter_code": "BIONEETENGBML",
+   "questions": 5,
+   "latest_target": [
+    "BIO11L-ch09"
+   ],
+   "older_target": [
+    "BIO11O-ch09"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Photosynthesis in Higher Plants",
+   "chapter_code": "BIONEETENGPHP",
+   "questions": 5,
+   "latest_target": [
+    "BIO11L-ch11"
+   ],
+   "older_target": [
+    "BIO11O-ch13"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Hydrocarbons",
+   "chapter_code": "CHENEETENGHYD",
+   "questions": 5,
+   "latest_target": [
+    "CHE11L-ch09"
+   ],
+   "older_target": [
+    "CHE11O-ch13"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Ray Optics",
+   "chapter_code": "PHYNEETENGROO",
+   "questions": 5,
+   "latest_target": [
+    "PHY12L-ch09"
+   ],
+   "older_target": [
+    "PHY12O-ch09"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Waves",
+   "chapter_code": "PHYNEETENGWVS",
+   "questions": 5,
+   "latest_target": [
+    "PHY11L-ch14"
+   ],
+   "older_target": [
+    "PHY11O-ch15"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Transport in Plants",
+   "chapter_code": "BIONEETENGTRA",
+   "questions": 4,
+   "latest_target": null,
+   "older_target": [
+    "BIO11O-ch11"
+   ],
+   "edition_required": "older only - chapter does not exist in the latest edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Alcohols, Phenols and Ethers",
+   "chapter_code": "CHENEETENGAPE",
+   "questions": 4,
+   "latest_target": [
+    "CHE12L-ch07"
+   ],
+   "older_target": [
+    "CHE12O-ch11"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Aldehydes, Ketones, and Carboxylic Acids",
+   "chapter_code": "CHENEETENGAKC",
+   "questions": 4,
+   "latest_target": [
+    "CHE12L-ch08"
+   ],
+   "older_target": [
+    "CHE12O-ch12"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Isomerism in Organic Compounds",
+   "chapter_code": "CHENEETENGISO",
+   "questions": 4,
+   "latest_target": [
+    "CHE11L-ch08",
+    "CHE11L-ch09"
+   ],
+   "older_target": [
+    "CHE11O-ch12",
+    "CHE11O-ch13"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "The Solid State",
+   "chapter_code": "CHENEETENGSOL",
+   "questions": 4,
+   "latest_target": null,
+   "older_target": [
+    "CHE12O-ch01"
+   ],
+   "edition_required": "older only - chapter does not exist in the latest edition"
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Mechanical Properties of Fluids",
+   "chapter_code": "PHYNEETENGMPF",
+   "questions": 4,
+   "latest_target": [
+    "PHY11L-ch09"
+   ],
+   "older_target": [
+    "PHY11O-ch10"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Thermal Properties of Matter",
+   "chapter_code": "PHYNEETENGTMP",
+   "questions": 4,
+   "latest_target": [
+    "PHY11L-ch10"
+   ],
+   "older_target": [
+    "PHY11O-ch11"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Wave Optics",
+   "chapter_code": "PHYNEETENGWOP",
+   "questions": 4,
+   "latest_target": [
+    "PHY12L-ch10"
+   ],
+   "older_target": [
+    "PHY12O-ch10"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Chemical Kinetics",
+   "chapter_code": "CHENEETENGCKT",
+   "questions": 3,
+   "latest_target": [
+    "CHE12L-ch03"
+   ],
+   "older_target": [
+    "CHE12O-ch04"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "General Organic Chemistry",
+   "chapter_code": "CHENEETENGGOC",
+   "questions": 3,
+   "latest_target": [
+    "CHE11L-ch08"
+   ],
+   "older_target": [
+    "CHE11O-ch12"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "The D- and F-Block Elements – Practice",
+   "chapter_code": "CHENEETENGDFB",
+   "questions": 3,
+   "latest_target": [
+    "CHE12L-ch04"
+   ],
+   "older_target": [
+    "CHE12O-ch08"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Alternating Current",
+   "chapter_code": "PHYNEETENGALC",
+   "questions": 3,
+   "latest_target": [
+    "PHY12L-ch07"
+   ],
+   "older_target": [
+    "PHY12O-ch07"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Classification of Elements and Periodicity in Properties",
+   "chapter_code": "CHENEETENGCEP",
+   "questions": 2,
+   "latest_target": [
+    "CHE11L-ch03"
+   ],
+   "older_target": [
+    "CHE11O-ch03"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Electrochemistry",
+   "chapter_code": "CHENEETENGELC",
+   "questions": 2,
+   "latest_target": [
+    "CHE12L-ch02"
+   ],
+   "older_target": [
+    "CHE12O-ch03"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "General Principles and Processes of Isolation of Elements",
+   "chapter_code": "CHENEETENGGPPI",
+   "questions": 2,
+   "latest_target": null,
+   "older_target": [
+    "CHE12O-ch06"
+   ],
+   "edition_required": "older only - chapter does not exist in the latest edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Haloalkanes and Haloarenes",
+   "chapter_code": "CHENEETENGHHH",
+   "questions": 2,
+   "latest_target": [
+    "CHE12L-ch06"
+   ],
+   "older_target": [
+    "CHE12O-ch10"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "States of Matter",
+   "chapter_code": "CHENEETENGSTA",
+   "questions": 2,
+   "latest_target": null,
+   "older_target": [
+    "CHE11O-ch05"
+   ],
+   "edition_required": "older only - chapter does not exist in the latest edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Surface Chemistry",
+   "chapter_code": "CHENEETENGSUR",
+   "questions": 2,
+   "latest_target": null,
+   "older_target": [
+    "CHE12O-ch05"
+   ],
+   "edition_required": "older only - chapter does not exist in the latest edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "The s-Block Elements",
+   "chapter_code": "CHENEETENGSBE",
+   "questions": 2,
+   "latest_target": null,
+   "older_target": [
+    "CHE11O-ch10"
+   ],
+   "edition_required": "older only - chapter does not exist in the latest edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Thermodynamics",
+   "chapter_code": "CHENEETENGTHR",
+   "questions": 2,
+   "latest_target": [
+    "CHE11L-ch05"
+   ],
+   "older_target": [
+    "CHE11O-ch06"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Electromagnetic Induction",
+   "chapter_code": "PHYNEETENGEII",
+   "questions": 2,
+   "latest_target": [
+    "PHY12L-ch06"
+   ],
+   "older_target": [
+    "PHY12O-ch06"
+   ],
+   "edition_required": "either edition"
+  },
+  {
+   "subject": "Biology",
+   "chapter": "Reproduction in Organisms",
+   "chapter_code": "BIONEETENGREP",
+   "questions": 1,
+   "latest_target": null,
+   "older_target": [
+    "BIO12O-ch01"
+   ],
+   "edition_required": "older only - chapter does not exist in the latest edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Chemistry in Everyday Life",
+   "chapter_code": "CHENEETENGCEL",
+   "questions": 1,
+   "latest_target": null,
+   "older_target": [
+    "CHE12O-ch16"
+   ],
+   "edition_required": "older only - chapter does not exist in the latest edition"
+  },
+  {
+   "subject": "Chemistry",
+   "chapter": "Hydrogen",
+   "chapter_code": "CHENEETENGHYD2",
+   "questions": 1,
+   "latest_target": null,
+   "older_target": [
+    "CHE11O-ch09"
+   ],
+   "edition_required": "older only - chapter does not exist in the latest edition"
+  },
+  {
+   "subject": "Physics",
+   "chapter": "Oscillations",
+   "chapter_code": "PHYNEETENGOSC",
+   "questions": 1,
+   "latest_target": [
+    "PHY11L-ch13"
+   ],
+   "older_target": [
+    "PHY11O-ch14"
+   ],
+   "edition_required": "either edition"
+  }
+ ],
+ "extraction_queue": [
+  {
+   "rank": 1,
+   "chapter": "Cell: The Unit of Life",
+   "subject": "Biology",
+   "chapter_code": "BIONEETENGCUL",
+   "questions": 12,
+   "targets": [
+    "BIO11L-ch08"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 2,
+   "chapter": "Morphology of Flowering Plants",
+   "subject": "Biology",
+   "chapter_code": "BIONEETENGMFP",
+   "questions": 9,
+   "targets": [
+    "BIO11L-ch05"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 3,
+   "chapter": "Environmental Issues",
+   "subject": "Biology",
+   "chapter_code": "BIONEETENGENV",
+   "questions": 8,
+   "targets": [
+    "BIO12O-ch16"
+   ],
+   "edition": "older (only edition that has this chapter)"
+  },
+  {
+   "rank": 4,
+   "chapter": "Human Health and Disease",
+   "subject": "Biology",
+   "chapter_code": "BIONEETENGHHD",
+   "questions": 8,
+   "targets": [
+    "BIO12L-ch07"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 5,
+   "chapter": "Chemical Bonding and Molecular Structure",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGCBM",
+   "questions": 7,
+   "targets": [
+    "CHE11L-ch04"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 6,
+   "chapter": "Magnetic Effect of Electric Current",
+   "subject": "Physics",
+   "chapter_code": "PHYNEETENGMCM",
+   "questions": 6,
+   "targets": [
+    "PHY12L-ch04",
+    "PHY12L-ch05"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 7,
+   "chapter": "Thermodynamics",
+   "subject": "Physics",
+   "chapter_code": "PHYNEETENGTHR",
+   "questions": 6,
+   "targets": [
+    "PHY11L-ch11"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 8,
+   "chapter": "Biomolecules",
+   "subject": "Biology",
+   "chapter_code": "BIONEETENGBML",
+   "questions": 5,
+   "targets": [
+    "BIO11L-ch09"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 9,
+   "chapter": "Photosynthesis in Higher Plants",
+   "subject": "Biology",
+   "chapter_code": "BIONEETENGPHP",
+   "questions": 5,
+   "targets": [
+    "BIO11L-ch11"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 10,
+   "chapter": "Hydrocarbons",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGHYD",
+   "questions": 5,
+   "targets": [
+    "CHE11L-ch09"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 11,
+   "chapter": "Ray Optics",
+   "subject": "Physics",
+   "chapter_code": "PHYNEETENGROO",
+   "questions": 5,
+   "targets": [
+    "PHY12L-ch09"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 12,
+   "chapter": "Waves",
+   "subject": "Physics",
+   "chapter_code": "PHYNEETENGWVS",
+   "questions": 5,
+   "targets": [
+    "PHY11L-ch14"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 13,
+   "chapter": "Transport in Plants",
+   "subject": "Biology",
+   "chapter_code": "BIONEETENGTRA",
+   "questions": 4,
+   "targets": [
+    "BIO11O-ch11"
+   ],
+   "edition": "older (only edition that has this chapter)"
+  },
+  {
+   "rank": 14,
+   "chapter": "Alcohols, Phenols and Ethers",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGAPE",
+   "questions": 4,
+   "targets": [
+    "CHE12L-ch07"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 15,
+   "chapter": "Aldehydes, Ketones, and Carboxylic Acids",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGAKC",
+   "questions": 4,
+   "targets": [
+    "CHE12L-ch08"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 16,
+   "chapter": "Isomerism in Organic Compounds",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGISO",
+   "questions": 4,
+   "targets": [
+    "CHE11L-ch08",
+    "CHE11L-ch09"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 17,
+   "chapter": "The Solid State",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGSOL",
+   "questions": 4,
+   "targets": [
+    "CHE12O-ch01"
+   ],
+   "edition": "older (only edition that has this chapter)"
+  },
+  {
+   "rank": 18,
+   "chapter": "Mechanical Properties of Fluids",
+   "subject": "Physics",
+   "chapter_code": "PHYNEETENGMPF",
+   "questions": 4,
+   "targets": [
+    "PHY11L-ch09"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 19,
+   "chapter": "Thermal Properties of Matter",
+   "subject": "Physics",
+   "chapter_code": "PHYNEETENGTMP",
+   "questions": 4,
+   "targets": [
+    "PHY11L-ch10"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 20,
+   "chapter": "Wave Optics",
+   "subject": "Physics",
+   "chapter_code": "PHYNEETENGWOP",
+   "questions": 4,
+   "targets": [
+    "PHY12L-ch10"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 21,
+   "chapter": "Chemical Kinetics",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGCKT",
+   "questions": 3,
+   "targets": [
+    "CHE12L-ch03"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 22,
+   "chapter": "General Organic Chemistry",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGGOC",
+   "questions": 3,
+   "targets": [
+    "CHE11L-ch08"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 23,
+   "chapter": "The D- and F-Block Elements – Practice",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGDFB",
+   "questions": 3,
+   "targets": [
+    "CHE12L-ch04"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 24,
+   "chapter": "Alternating Current",
+   "subject": "Physics",
+   "chapter_code": "PHYNEETENGALC",
+   "questions": 3,
+   "targets": [
+    "PHY12L-ch07"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 25,
+   "chapter": "Classification of Elements and Periodicity in Properties",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGCEP",
+   "questions": 2,
+   "targets": [
+    "CHE11L-ch03"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 26,
+   "chapter": "Electrochemistry",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGELC",
+   "questions": 2,
+   "targets": [
+    "CHE12L-ch02"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 27,
+   "chapter": "General Principles and Processes of Isolation of Elements",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGGPPI",
+   "questions": 2,
+   "targets": [
+    "CHE12O-ch06"
+   ],
+   "edition": "older (only edition that has this chapter)"
+  },
+  {
+   "rank": 28,
+   "chapter": "Haloalkanes and Haloarenes",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGHHH",
+   "questions": 2,
+   "targets": [
+    "CHE12L-ch06"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 29,
+   "chapter": "States of Matter",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGSTA",
+   "questions": 2,
+   "targets": [
+    "CHE11O-ch05"
+   ],
+   "edition": "older (only edition that has this chapter)"
+  },
+  {
+   "rank": 30,
+   "chapter": "Surface Chemistry",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGSUR",
+   "questions": 2,
+   "targets": [
+    "CHE12O-ch05"
+   ],
+   "edition": "older (only edition that has this chapter)"
+  },
+  {
+   "rank": 31,
+   "chapter": "The s-Block Elements",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGSBE",
+   "questions": 2,
+   "targets": [
+    "CHE11O-ch10"
+   ],
+   "edition": "older (only edition that has this chapter)"
+  },
+  {
+   "rank": 32,
+   "chapter": "Thermodynamics",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGTHR",
+   "questions": 2,
+   "targets": [
+    "CHE11L-ch05"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 33,
+   "chapter": "Electromagnetic Induction",
+   "subject": "Physics",
+   "chapter_code": "PHYNEETENGEII",
+   "questions": 2,
+   "targets": [
+    "PHY12L-ch06"
+   ],
+   "edition": "latest"
+  },
+  {
+   "rank": 34,
+   "chapter": "Reproduction in Organisms",
+   "subject": "Biology",
+   "chapter_code": "BIONEETENGREP",
+   "questions": 1,
+   "targets": [
+    "BIO12O-ch01"
+   ],
+   "edition": "older (only edition that has this chapter)"
+  },
+  {
+   "rank": 35,
+   "chapter": "Chemistry in Everyday Life",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGCEL",
+   "questions": 1,
+   "targets": [
+    "CHE12O-ch16"
+   ],
+   "edition": "older (only edition that has this chapter)"
+  },
+  {
+   "rank": 36,
+   "chapter": "Hydrogen",
+   "subject": "Chemistry",
+   "chapter_code": "CHENEETENGHYD2",
+   "questions": 1,
+   "targets": [
+    "CHE11O-ch09"
+   ],
+   "edition": "older (only edition that has this chapter)"
+  },
+  {
+   "rank": 37,
+   "chapter": "Oscillations",
+   "subject": "Physics",
+   "chapter_code": "PHYNEETENGOSC",
+   "questions": 1,
+   "targets": [
+    "PHY11L-ch13"
+   ],
+   "edition": "latest"
+  }
+ ],
+ "summary": {
+  "needed": 91,
+  "questions_total": 373,
+  "latest_extracted": 47,
+  "latest_partial": 1,
+  "older_extracted": 19,
+  "older_partial": 2,
+  "any_pages": 54,
+  "no_pages_either_edition": 37,
+  "questions_with_no_pages": 147,
+  "absent_from_latest_edition": 15,
+  "unresolved": 0,
+  "a2_distinct_pages_on_disk": 1339,
+  "a2_files_on_disk": 1412,
+  "a2_file_count_note": "steps/A2/out holds 1412 book-chapter-page files: 1339 distinct pages read as *.runA.json plus 73 *.retry1.json re-reads of pages that already have a runA (no orphans). Per-edition file counts are {'latest': 998, 'older': 414}; per-edition DISTINCT pages are {'latest': 928, 'older': 411}. `pages` throughout this file counts distinct pages.",
+  "by_subject": {
+   "Biology": {
+    "needed": 37,
+    "questions": 187,
+    "latest_extracted": 26,
+    "older_extracted": 15,
+    "no_pages": 8,
+    "absent_from_latest": 6
+   },
+   "Chemistry": {
+    "needed": 30,
+    "questions": 92,
+    "latest_extracted": 9,
+    "older_extracted": 3,
+    "no_pages": 19,
+    "absent_from_latest": 9
+   },
+   "Physics": {
+    "needed": 24,
+    "questions": 94,
+    "latest_extracted": 12,
+    "older_extracted": 1,
+    "no_pages": 10,
+    "absent_from_latest": 0
+   }
+  }
+ }
+}

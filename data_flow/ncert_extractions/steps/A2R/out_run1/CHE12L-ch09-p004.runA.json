@@ -1,0 +1,26 @@
+{
+  "verdict": "unusable",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "The ammonolysis equation is absent. The book closes the page with the reaction NH3 (lone pair shown) + R-X, a curved arrow from the nitrogen to the carbon-halogen bond, giving R-NH3(+) X(-), with 'Nucleophile' under the ammonia and 'Substituted ammonium salt' under the product, set in magenta and green. The render leaves that whole space empty -- the bottom third of the page is blank after 'and finally quaternary ammonium salt.'",
+      "where": "bottom of the page, under the ammonolysis paragraph"
+    },
+    {
+      "kind": "duplicated",
+      "what": "The Intext Questions box is drawn twice. The first box contains only the heading 'Intext Questions' and the line '9.1 Classify the following amines as primary, secondary or tertiary:'; a second, taller box immediately below repeats the heading 'Intext Questions' and the label '9.1' again, this time carrying the four structures. The book has one box.",
+      "where": "top of the page"
+    },
+    {
+      "kind": "missing",
+      "what": "Inside the second box, question 9.1's stem is gone -- the label '9.1' stands alone above the four structures with no 'Classify the following amines as primary, secondary or tertiary:' -- and question 9.2 is reduced to the label '9.2' followed by the orphan fragment 'formula, C4H11N.'; the words '(i) Write structures of different isomeric amines corresponding to the molecular' that precede it are not in the box.",
+      "where": "the second Intext Questions box"
+    },
+    {
+      "kind": "misplaced",
+      "what": "Question 9.2's three parts are printed outside the Intext Questions box as ordinary body text below it ('9.2 (i) Write structures ... C4H11N.', '(ii) Write IUPAC names of all the isomers.', '(iii) What type of isomerism is exhibited by different pairs of amines?'), so the same question text appears both as the stranded fragment inside the box and in full outside it. In the book all of 9.2 sits inside the box, indented under the 9.2 label.",
+      "where": "between the Intext Questions box and section 9.4"
+    }
+  ],
+  "note": "Compared the Intext Questions box, section 9.4 Preparation of Amines, method 1 (reduction of nitro compounds) with its two-reaction scheme, the FeCl2 paragraph, method 2 (ammonolysis of alkyl halides) and the closing equation. The 9.4 prose, the heading and the (i)/(ii) nitrobenzene-to-aniline scheme with its H2/Pd-Ethanol and Sn+HCl / Fe+HCl conditions are all present and correctly coloured. The damage is confined to the Intext Questions box, which is duplicated and has its question text split across the box boundary, and to the missing ammonolysis equation at the foot of the page. Verdict is 'unusable' rather than 'content_missing' because the page is both missing the equation and visibly duplicated/garbled at the top; the missing equation alone would already be content_missing. Baseline digits in place of subscripts (C4H11N, FeCl2, -NH2) also occur in the body text, as on the earlier pages, but are not listed separately given the severity of the above."
+}

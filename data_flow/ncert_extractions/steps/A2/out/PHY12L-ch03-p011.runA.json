@@ -1,0 +1,117 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Unlike metals, the resistivities of semiconductors decrease with increasing temperatures. A typical dependence is shown in Fig. 3.10.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "We can qualitatively understand the temperature dependence of resistivity, in the light of our derivation of Eq. (3.23). From this equation, resistivity of a material is given by"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        470,
+        1170,
+        555
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "r thus depends inversely both on the number n of free electrons per unit volume and on the average time t between collisions. As we increase temperature, average speed of the electrons, which act as the carriers of current, increases resulting in more frequent collisions. The average time of collisions t, thus decreases with temperature."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "In a metal, n is not dependent on temperature to any appreciable extent and thus the decrease in the value of t with rise in temperature causes r to increase as we have observed."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "For insulators and semiconductors, however, n increases with temperature. This increase more than compensates any decrease in t in Eq.(3.23) so that for such materials, r decreases with temperature."
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Example 3.3 An electric toaster uses nichrome for its heating element. When a negligibly small current passes through it, its resistance at room temperature (27.0 °C) is found to be 75.3 W. When the toaster is connected to a 230 V supply, the current settles, after a few seconds, to a steady value of 2.68 A. What is the steady temperature of the nichrome element? The temperature coefficient of resistance of nichrome averaged over the temperature range involved, is 1.70 × 10–4 °C–1."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Solution  When the current through the element is very small, heating effects can be ignored and the temperature T1 of the element is the same as room temperature. When the toaster is connected to the supply, its initial current will be slightly higher than its steady value of 2.68 A. But due to heating effect of the current, the temperature will rise. This will cause an increase in resistance and a slight decrease in current. In a few seconds, a steady state will be reached when temperature will rise no further, and both the resistance of the element and the current drawn will achieve steady values. The resistance R2 at the steady temperature T2 is"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        1610,
+        590,
+        1675
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Using the relation"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        265,
+        1715,
+        595,
+        1760
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "with a = 1.70 × 10–4 °C–1, we get"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        1810,
+        740,
+        1880
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "that is,  T2 = (820 + 27.0) °C = 847 °C"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Thus, the steady temperature of the heating element (when heating effect due to the current equals heat loss to the surroundings) is 847 °C."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Current Electricity",
+    "91",
+    "EXAMPLE 3.3",
+    "Reprint 2026-27"
+  ],
+  "note": "Blocks 7-15 are all inside the single grey 'Example 3.3' box; the box is opened as block 7 (the example statement) and its Solution prose and three displayed equations are listed as separate following blocks so the equations can be marked needs_special rather than transcribed from the scrambled text layer. Greek letters in prose are copied as the text layer holds them (rho as 'r', tau as 't', alpha as 'a', ohm as 'W'); the image shows the true symbols. 'EXAMPLE 3.3' is the vertical side tab in the right margin, removed as a running marginal label. No numbered section heading appears on this page, so no outline-font heading repeats needed collapsing. Page 11 but previous_page_last_block was null in the input; the page opens with an indented new sentence, so first_block_continues_from_previous is false."
+}

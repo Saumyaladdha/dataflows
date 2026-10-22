@@ -1,0 +1,146 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "12. Field of an electric dipole in its equatorial plane (i.e., the plane perpendicular to its axis and passing through its centre) at a distance r from the centre:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 430, 560, 510],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 545, 620, 610],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Dipole electric field on the axis at a distance r from the centre:"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 685, 535, 760],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 790, 650, 850],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The 1/r3 dependence of dipole electric fields should be noted in contrast to the 1/r 2 dependence of electric field due to a point charge."
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "13. In a uniform electric field E, a dipole experiences a torque τ given by"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [460, 975, 600, 1010],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "but experiences no net force."
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "14. The flux Δφ of electric field E through a small area element ΔS is given by"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [480, 1120, 615, 1155],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The vector area element ΔS is"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [480, 1205, 620, 1240],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "where ΔS is the magnitude of the area element and n̂ is normal to the area element, which can be considered planar for sufficiently small ΔS."
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "For an area element of a closed surface, n̂ is taken to be the direction of outward normal, by convention."
+    },
+    {
+      "n": 17,
+      "kind": "list",
+      "text": "15. Gauss’s law: The flux of electric field through any closed surface S is 1/ε0 times the total charge enclosed by S. The law is especially useful in determining electric field E, when the source distribution has simple symmetry:"
+    },
+    {
+      "n": 18,
+      "kind": "list",
+      "text": "(i) Thin infinitely long straight wire of uniform linear charge density λ"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 1595, 470, 1670],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "where r is the perpendicular distance of the point from the wire and n̂ is the radial unit vector in the plane normal to the wire passing through the point."
+    },
+    {
+      "n": 21,
+      "kind": "list",
+      "text": "(ii) Infinite thin plane sheet of uniform surface charge density σ"
+    },
+    {
+      "n": 22,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 1855, 435, 1930],
+      "text": ""
+    },
+    {
+      "n": 23,
+      "kind": "paragraph",
+      "text": "where n̂ is a unit vector normal to the plane, outward on either side."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "39",
+    "Reprint 2026-27"
+  ],
+  "note": "Whole page sits inside the chapter's shaded SUMMARY panel, which begins on an earlier page and runs on past this one; the numbered list opens at item 12 and ends mid-list at item 15(ii), so both continuation flags are true. The panel was not emitted as a single box block because that would have hidden the nine displayed equations that need the special transcriber; the blocks listed are its contents in reading order. The text layer renders Symbol-font characters with wrong code points (Δ as 'D', φ as 'f', ε as 'e', λ as 'l', σ as 's', and the hat placed before its letter as 'ˆn'); those stretches are clearly garbled, so they were read from the page image instead (Δφ, ΔS, ε0, λ, σ, n̂). Superscript artifacts inside running prose were kept exactly as the text layer holds them ('1/r3', '1/r 2'). Bounding boxes are in pixels of the supplied 1700x2160 page image."
+}

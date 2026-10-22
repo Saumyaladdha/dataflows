@@ -1,0 +1,186 @@
+{
+  "question_id": "Q-000612",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:172"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Which of the following statements with respect to Endoplasmic Reticulum is incorrect?",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "RER has ribosomes attached to ER",
+    "2": "SER is devoid of ribosomes",
+    "3": "In prokaryotes only RER are present",
+    "4": "SER are the sites for lipid synthesis"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [
+    "INCORRECT"
+  ],
+  "b4_text_layer_sanitized": "172\nWhich of the following statements with respect to Endoplasmic Reticulum is incorrect?\n(1)\nRER has ribosomes attached to ER\n(2)\nSER is devoid of ribosomes\n(3)\nIn prokaryotes only RER are present\n(4)\nSER are the sites for lipid synthesis\nCell The Unit of Life\n",
+  "b4_script_options": {
+    "1": "RER has ribosomes attached to ER",
+    "2": "SER is devoid of ribosomes",
+    "3": "In prokaryotes only RER are present",
+    "4": "SER are the sites for lipid synthesis\nCell The Unit of Life"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "3",
+  "b6_reason": "Prokaryotes have no endomembrane system at all, so saying only RER is present in prokaryotes is the incorrect statement; the other three descriptions of RER and SER are correct.",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

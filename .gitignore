@@ -1,0 +1,59 @@
+# ---------------------------------------------------------------------------------------
+# WHAT IS NOT IN THIS REPOSITORY, AND WHY
+#
+# The working tree is ~4.6 GB. GitHub rejects any file over 100 MB and degrades badly past
+# about 1 GB per repository, so the bulk below is excluded. Everything excluded is either
+# REGENERABLE from what IS here, or is third-party material that should not be redistributed.
+# ---------------------------------------------------------------------------------------
+
+# Agent working files and rendered page images: 2.5 GB, and every byte is reproducible by
+# re-running the pipeline. `steps/*/out/*.json` are the agents' actual ANSWERS and are kept.
+data_flow/*/steps/*/work/
+data_flow/*/steps/*/tmp/
+data_flow/*/steps/*/*.png
+data_flow/*/steps/**/*.png
+
+# NCERT source PDFs (766 MB). Copyright NCERT -- not ours to redistribute. The pipeline reads
+# them from here; a new clone must supply its own copies at the same paths.
+data_flow/*/source_pdfs/
+
+# Question-paper sources and their extractions (1 GB) -- same reasoning: third-party papers.
+data_flow/paper_extraction/papers/
+data_flow/paper_extraction/steps/
+data_flow/ncert_to_paper_maps/steps/
+
+# Cropped figures ARE kept (~130 MB). They are on the CDN as well, but a CDN URL is a
+# pointer to someone else's server: if that bucket is cleared or the account changes, the
+# artwork is gone and nothing in this repo can rebuild it -- several of these crops exist
+# only because an agent measured a region no other tool could find (Figure 1.1's vector
+# flowchart, the Ernst Mayr portrait). They are the work product, so they are committed.
+data_flow/*/figures_rendered/
+data_flow/*/reference_pages/
+
+# Superseded and parked output
+data_flow/*/legacy_exports/
+data_flow/*/ncert_index/
+data_flow/*/_parked/
+data_flow/*/x/
+
+# ---------------------------------------------------------------------------------------
+# Secrets. Nothing here has ever held a credential -- `upload_assets.py` reads the CDN token
+# from the environment and never writes it anywhere -- and these rules keep it that way.
+# ---------------------------------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+**/cdn.json
+**/credentials*.json
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store

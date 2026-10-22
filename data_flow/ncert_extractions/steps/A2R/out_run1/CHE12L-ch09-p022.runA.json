@@ -1,0 +1,41 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "Two of the three answer lines under 'Answers to Some Intext Questions' are gone. The book prints answer 9.4 as three ordered lines: '(i) C6H5NH2 < NH3 < C6H5CH2NH2 < C2H5NH2 < (C2H5)2NH', '(ii) C6H5NH2 < C2H5NH2 < (C2H5)3N < (C2H5)2NH' and '(iii) C6H5NH2 < C6H5CH2NH2 < (CH3)3N < CH3NH2 < (CH3)2NH'. The render prints only line (i); lines (ii) and (iii) are absent entirely, so two of the chapter's three published answers are lost.",
+      "where": "under the 'Answers to Some Intext Questions' heading, lower third of the page"
+    },
+    {
+      "kind": "missing",
+      "what": "The surviving answer has lost its identifiers: the book labels the block '9.4' in bold in the left margin with '(i)' before the first ordering. The render prints the bare inequality with neither the question number 9.4 nor the numeral (i), so the reader cannot tell which exercise the answer belongs to.",
+      "where": "the single answer line under 'Answers to Some Intext Questions'"
+    },
+    {
+      "kind": "missing",
+      "what": "Exercise 9.11's seven equations have lost their item labels. The book numbers them (i) through (vii) -- '(i) C6H5NH2 + CHCl3 + alc.KOH ->' down to '(vii) C6H5N2Cl --(i)HBF4 / (ii)NaNO2/Cu,delta-->'. The render prints all seven equations unnumbered, so a student has no way to identify which reaction is which.",
+      "where": "the exercise 9.11 equation block, upper half of the page"
+    },
+    {
+      "kind": "missing",
+      "what": "The page folio is absent. The book prints 'Chemistry 280' bottom left on a yellow rule running across the foot of the page. The render prints neither the word 'Chemistry', nor the number 280, nor the rule -- only the 'Reprint 2026-27' line below the text area.",
+      "where": "bottom left of the page"
+    },
+    {
+      "kind": "misplaced",
+      "what": "The exercise stems are detached from their lists and their numbers no longer hang in the margin. The book sets '9.11  Complete the following reactions:' with the bold number in a hanging left margin and the numbered equations indented beneath. The render runs '9.11 Complete the following reactions:' as an indented standalone line followed by an unlabelled equation block. Worse, the turnover lines of 9.12 and 9.13 are set flush at the left margin, so the stray words 'synthesis?' and 'acid.' start their own lines to the LEFT of the question numbers they belong to.",
+      "where": "exercises 9.10 to 9.14, left margin"
+    },
+    {
+      "kind": "formatting",
+      "what": "Word spaces are dropped after the numerals in exercise 9.14: the render prints '(i)Why are amines less acidic...', '(ii)Why do primary amines...', '(iii)Why are aliphatic amines...' where the book sets a space after each numeral.",
+      "where": "exercise 9.14, sub-parts (i)-(iii)"
+    },
+    {
+      "kind": "formatting",
+      "what": "The exercise numbers 9.10 through 9.14 are set in plain roman in the render; the book sets all of them in bold.",
+      "where": "left margin of the exercise block"
+    }
+  ],
+  "note": "Compared block by block against page 280. The text of exercises 9.10, 9.11 (all seven equations, with the correct reagents including the two-line (i)HBF4 / (ii)NaNO2/Cu,delta arrow label), 9.12, 9.13 and 9.14 with all three sub-parts is present and in order, and subscripts in every formula match. The 'Answers to Some Intext Questions' heading is present and correctly centred and bold. The book also runs a pink vertical bar down the left edge of the exercise block; the render omits it, but that is page decoration rather than content so it is noted here rather than filed as a finding. The book's page is itself half empty below the answers, so the render's blank lower half is not by itself evidence of further loss -- the missing answer lines (ii) and (iii) are reported above on the strength of the book's own text, not of the blank space."
+}

@@ -1,0 +1,55 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "is not limited by the magnitude of the applied voltage but is\nlimited due to the concentration of the minority carrier on either\nside of the junction.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The current under reverse bias is essentially voltage\nindependent upto a critical reverse bias voltage, known as\nbreakdown voltage (Vbr ). When V = Vbr, the diode reverse current\nincreases sharply. Even a slight increase in the bias voltage causes\nlarge change in the current. If the reverse current is not limited by\nan external circuit below the rated value (specified by the\nmanufacturer) the p-n junction will get destroyed. Once it exceeds\nthe rated value, the diode gets destroyed due to overheating. This\ncan happen even for the diode under forward bias, if the forward\ncurrent exceeds the rated value."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1090,
+        311,
+        1526,
+        965
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The circuit arrangement for studying the V-I characteristics\nof a diode, (i.e., the variation of current as a function of applied\nvoltage) are shown in Fig. 14.16(a) and (b). The battery is connected\nto the diode through a potentiometer (or reheostat) so that the\napplied voltage to the diode can be changed. For different values\nof voltages, the value of the current is noted. A graph between V\nand I is obtained as in Fig. 14.16(c). Note that in forward bias\nmeasurement, we use a milliammeter since the expected current is large\n(as explained in the earlier section) while a micrometer is used in reverse\nbias to measure the current. You can see in Fig. 14.16(c) that in forward",
+      "continues_on_next": true
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        191,
+        1183,
+        1526,
+        2082
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Semiconductor Electronics:",
+    "Materials, Devices and",
+    "Simple Circuits",
+    "481",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null, so the continuation judgement rests on my own p014 output: p014 ended mid-sentence at 'The current' and this page opens 'is not limited by the magnitude of the applied voltage'. Fig. 14.15 (top right) and Fig. 14.16(a)/(b)/(c) (full width, bottom half), each with caption, are deferred to A2S. The page's running text ends mid-sentence at 'that in forward' even though Fig. 14.16 is printed below it, so last_block_continues_on_next is true and the carry-over flag sits on the prose block n=4."
+}

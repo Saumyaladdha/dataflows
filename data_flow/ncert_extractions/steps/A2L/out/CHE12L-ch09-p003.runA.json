@@ -1,0 +1,35 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.0, "x1": 0.265},
+      {"id": "right", "x0": 0.271, "x1": 0.898}
+    ]
+  },
+  "elements": [
+    {"n": 1, "role": "paragraph", "bbox": [0.2712, 0.0867, 0.8969, 0.1151],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.2712, 0.1202, 0.8981, 0.2248],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "table_caption", "bbox": [0.1869, 0.2422, 0.7837, 0.2546],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold",
+     "text_color": "#6d6e71"},
+    {"n": 4, "role": "table", "bbox": [0.08, 0.2651, 0.8912, 0.8844],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif",
+     "fill": "#f48480"},
+    {"n": null, "role": "footer_rule", "bbox": [0.7863, 0.9156, 1.0, 0.9174],
+     "column": "right", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "page_number", "bbox": [0.7863, 0.9069, 0.8269, 0.9174],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71",
+     "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.8356, 0.9028, 0.8981, 0.9128],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.8, "align": "center"}
+  ],
+  "note": "Recto body page (folio 261). The chapter's constant two-column grid is declared, but on this page the narrow left margin column prints nothing of its own - the two paragraphs sit in the right text column (x 0.271-0.898) and Table 9.1 together with its caption overhang into the margin, so both are marked 'full'. body_text_size_px=20.5 from the cap-to-baseline height of 'I' in 'In arylamines...' (y263-283px). The table's fill #f48480 is the colour of its HEADER ROW only (sampled at [300,600] well inside the flat salmon band); the table body is white paper with salmon vertical column rules at x=631px and x=1007px and a pale grey rounded outer border. On a recto page the footer furniture mirrors to the right edge: thin gold #fecb03 footer_rule from x 0.786 to the page edge, the folio '261' on a gold tab at its left end, and the running head 'Amines' beside it. No page_header_band anywhere in this chapter."
+}

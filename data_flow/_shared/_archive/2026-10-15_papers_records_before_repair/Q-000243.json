@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000243",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:41"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "From Ampere's circuital law for a long straight wire of circular cross -section carrying a steady current, the variation of magnetic field in the inside and outside region of the wire is",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Uniform and remains constant for both the regions.",
+    "2": "A linearly increasing function of distance upto the boundary of the wire and then linearly decreasing for the outside region.",
+    "3": "A linearly increasing function of distance $r$ upto the boundary of the wire and then decreasing one with 1 r dependence for the outside region.",
+    "4": "A linearly decreasing function of distance upto the boundary of the wire and then a linearly increasing one for the outside region."
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "41\nFrom Ampere’s circuital law for a long straight wire of circular cross -section carrying a steady\ncurrent, the variation of magnetic field in the inside and outside region of the wire is\n(1)\nUniform and remains constant for both\nthe regions.\n(2)\nA linearly increasing function of distance\nupto the boundary of the wire and then\nlinearly decreasing for the outside region.\n(3)\nA linearly increasing function of\ndistance r upto the boundary of the\nwire and then decreasing one with 1 r\ndependence for the outside region.\n(4)\nA linearly decreasing function of distance\nupto the boundary of the wire and then a\nlinearly increasing one for the outside\nregion.\nMoving Charges and Magnetism\n",
+  "b4_script_options": {
+    "1": "Uniform and remains constant for both\nthe regions.",
+    "2": "A linearly increasing function of distance\nupto the boundary of the wire and then\nlinearly decreasing for the outside region.",
+    "3": "A linearly increasing function of\ndistance r upto the boundary of the\nwire and then decreasing one with 1 r\ndependence for the outside region.",
+    "4": "A linearly decreasing function of distance\nupto the boundary of the wire and then a\nlinearly increasing one for the outside\nregion.\nMoving Charges and Magnetism"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "3",
+  "b6_reason": "Inside a uniform current-carrying wire the enclosed current grows as r^2 so B grows linearly with r; outside, the full current is enclosed and B falls as 1/r.",
+  "b6_working": "Inside (r<R): B(2*pi*r) = mu0*I*(r^2/R^2) -> B = mu0*I*r/(2*pi*R^2), proportional to r. Outside (r>R): B(2*pi*r) = mu0*I -> B = mu0*I/(2*pi*r), proportional to 1/r.",
+  "b6_confidence": "high",
+  "b6_note": "Option 3 text has a minor extraction blemish ('1 r dependence' instead of 1/r), but the intended meaning is unambiguous.",
+  "b6_agrees_with_key": true
+}

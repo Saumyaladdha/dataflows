@@ -1,0 +1,192 @@
+{
+  "question_id": "Q-000205",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_path": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_url": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_row": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_match_confidence": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_urls_unused": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:99"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Consider the following reaction :\n\n[Chemical structure of diphenyl ether] $\\xrightarrow{\\mathrm{HI},\\ \\Delta}$ A + B\n\nIdentify products A and B.",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "A = toluene and B = phenol",
+    "2": "A = benzyl alcohol and B = iodobenzene",
+    "3": "A = benzyl iodide and B = phenol",
+    "4": "A = toluene and B = iodobenzene"
+  },
+  "structure": "plain",
+  "has_figure": true,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "99\nConsider the following reaction :\n[Chemical structure of diphenyl ether] →[HI, Δ] A + B\nIdentify products A and B.\n(1)\nA = toluene and B = phenol\n(2)\nA = benzyl alcohol and B = iodobenzene\n(3)\nA = benzyl iodide and B = phenol\n(4)\nA = toluene and B = iodobenzene\n",
+  "b4_script_options": {
+    "1": "A = toluene and B = phenol",
+    "2": "A = benzyl alcohol and B = iodobenzene",
+    "3": "A = benzyl iodide and B = phenol",
+    "4": "A = toluene and B = iodobenzene"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "b6_answer": null,
+  "b6_agrees_with_key": null,
+  "figure_path": "papers/figures/Q-000205.png",
+  "figure_source_url": "https://cdn.mathpix.com/snip/images/cQ3e9LWRZlv8a7AxGE5eN8zsQSgKLPeMrtKpBkHcIQ0.original.fullsize.png",
+  "figure_source_row": "NEET-UG_pyq_2023.xlsx#98",
+  "figure_match_confidence": "high",
+  "figure_source_urls_unused": [
+    "https://cdn.mathpix.com/snip/images/aSqx1k-ApGjcTjflFyqq1FUGmFUQwA6JHY8MQBFzkEg.original.fullsize.png"
+  ],
+  "subject": "Chemistry",
+  "branch": "organic"
+}

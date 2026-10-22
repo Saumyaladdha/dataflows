@@ -1,0 +1,172 @@
+{
+  "group": "v2__biology__plain.part4",
+  "ratings": [
+    {
+      "question_id": "2015_A#q065",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Milk dentition: incisors, canines and molars are present, premolars are not",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Reads past the \"not\". Children have incisors from the first set onwards."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "Reads past the \"not\". Milk canines are present and are later replaced."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Mixes up which teeth replace which. Milk molars are present, and premolars are what replace them."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored fact from the dental formula, demonstrated by the stem's \"not having one of the following type of teeth\" over the four named tooth types.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q066",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Protoplast: a cell stripped of its wall, with the plasma membrane and contents intact",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [],
+      "verdicts": [
+        "source_damage_artifact"
+      ],
+      "reason": "This question requires one stored definition, demonstrated by the stem \"A protoplast is a cell:\", which asks for nothing but what the term means.",
+      "note": "Damaged as we stored it, so no trap is written. The keyed option 1 reads \"Without division\", which says nothing about a cell wall and does not define a protoplast, while option 4 reads \"Undergoing division\" - so \"division\" appears twice in the option set and \"wall\" nowhere. A protoplast is a cell without its WALL, which is almost certainly what option 1 printed. The axes above are filled from the stem alone, which is intact; E5 is empty under rulebook rule 5, and the option set needs re-extracting before any trap can be written."
+    },
+    {
+      "question_id": "2015_A#q067",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "organism_characteristic",
+      "concept": "Diatom frustule: a silica wall in two overlapping halves that fit like a soap-box",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "A slime-mould plasmodium is a naked mass of protoplasm. With no wall there are no shells to overlap."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "Euglenoids have a protein pellicle rather than a cell wall. Again there is nothing that could split into two halves."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Reaches for the stiff cellulose plates of dinoflagellates. Those are many small plates, not two halves that fit together."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored diagnostic feature, demonstrated by the stem's \"two thin overlapping shells which fit together\", which describes the diatom frustule and nothing else.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q068",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Cloning vector: the DNA molecule that carries the gene of interest into a host cell",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "look_alike_term",
+          "option": "1",
+          "route": "Uses the everyday word for what a vector does. \"Carrier\" describes the job but is not the term for the molecule."
+        },
+        {
+          "label": "fabricated_term",
+          "option": "2",
+          "route": "Builds a word out of \"transformation\", the step that puts recombinant DNA into the host. No molecule called a transformer appears in the chapter."
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "4",
+          "route": "Answers for DNA replication instead. A template is the strand that gets copied, not the molecule a gene is inserted into."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored definition, demonstrated by the stem's \"to which the gene of interest is integrated for cloning\", which is the defining description of a vector.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q069",
+      "question_type": "plain_mcq",
+      "format": "pick_both_parts",
+      "content_shape": "life_cycle",
+      "concept": "Male gametophyte of angiosperms: the pollen grain gives two sperms and one vegetative cell",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "Counts all three cells of the pollen grain as sperms. Gives three instead of two sperms and one vegetative cell."
+        },
+        {
+          "label": "intermediate_value",
+          "option": "3",
+          "route": "Stops at the two-celled pollen grain as it is shed. The generative cell has not yet divided into the two sperms at that stage."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "A pollen grain carries one vegetative cell at every stage. Two of them never occur."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored composition recalled whole, demonstrated by the option \"Single sperm and a vegetative cell\" failing on its first half alone while its second half matches the key.",
+      "note": "E2 is pick_both_parts rather than name_or_identify because the four options vary the sperm count and the vegetative-cell count independently - 3 and 0, 2 and 1, 1 and 1, 1 and 2 - so both halves of the answer have to hold."
+    },
+    {
+      "question_id": "2015_A#q070",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Coconut water is free-nuclear endosperm; the white kernel is the cellular endosperm formed later",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Reaches for perisperm, the leftover nucellus. That is the dry tissue of beet and black pepper, not a liquid."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "2",
+          "route": "The embryo is a small solid body sitting in the kernel. It is never the liquid the stem asks about."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "The seed coat is the thin brown layer against the shell. Nothing about it is liquid."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored example, demonstrated by the stem's \"Coconut water from a tender coconut\", the textbook instance of free-nuclear endosperm.",
+      "note": ""
+    }
+  ],
+  "group_note": "All six are `plain_mcq` on E1 and `recall` with `single_step` on E4, and they are kept that way on a stated test: each is settled by one taught fact - the milk dental formula, the definition of a protoplast, the diatom frustule, the definition of a vector, the composition of the pollen grain, what coconut water is. None is `concept_discrimination`, because in no member are two neighbouring concepts set against each other; the wrong options are other members of the same family rather than the key's near twin, which is what separates this packet from part1's q051. q066 is the member that does not belong with the rest: as stored, its keyed option reads \"Without division\" and no option mentions a cell wall, so it carries `source_damage_artifact` with an empty trap list while the other five carry traps. E2 is `name_or_identify` throughout except q069, whose options pair two counts that must both hold, which is `pick_both_parts`. No member offers a demonstrable one-fact shortcut across its option set, so `strategy_available` is empty for all six - unlike part1, where q048 and q049 each had one."
+}

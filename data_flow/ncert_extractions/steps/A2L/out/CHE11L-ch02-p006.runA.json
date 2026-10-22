@@ -1,0 +1,48 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.123, "x1": 0.486},
+      {"id": "right", "x0": 0.514, "x1": 0.876}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.125, 0.0876, 0.139, 0.0945],
+     "column": "full", "size_rel": 0.73, "align": "left", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.799, 0.0876, 0.876, 0.0945],
+     "column": "full", "size_rel": 0.73, "align": "right", "font": "serif"},
+    {"n": 1, "role": "box", "bbox": [0.123, 0.1197, 0.485, 0.2518],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "fill": "#cbe7d3"},
+    {"n": 2, "role": "section_heading", "bbox": [0.125, 0.2812, 0.482, 0.2908],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-bold",
+     "text_color": "#00adef"},
+    {"n": 3, "role": "paragraph", "bbox": [0.124, 0.3014, 0.485, 0.3619],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "figure", "bbox": [0.123, 0.38, 0.485, 0.511],
+     "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.169, 0.5225, 0.441, 0.5339],
+     "column": "left", "size_rel": 0.95, "align": "center", "font": "serif-italic"},
+    {"n": 5, "role": "figure", "bbox": [0.123, 0.575, 0.485, 0.7794],
+     "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.149, 0.8, 0.462, 0.8115],
+     "column": "left", "size_rel": 0.95, "align": "center", "font": "serif-italic"},
+    {"n": null, "role": "figure_caption", "bbox": [0.125, 0.8321, 0.485, 0.9133],
+     "column": "left", "size_rel": 0.95, "align": "left", "font": "serif-italic"},
+    {"n": 6, "role": "paragraph", "bbox": [0.514, 0.1197, 0.876, 0.2307],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 7, "role": "paragraph", "bbox": [0.514, 0.2422, 0.876, 0.5376],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 8, "role": "list", "bbox": [0.514, 0.5491, 0.876, 0.6454],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 9, "role": "paragraph", "bbox": [0.515, 0.656, 0.876, 0.6821],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 10, "role": "list", "bbox": [0.515, 0.6885, 0.876, 0.9179],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.9555, 0.523, 0.9628],
+     "column": "full", "size_rel": 0.78, "align": "center", "font": "serif"}
+  ],
+  "note": "Ordinary two-column body page (left 0.123-0.486, right 0.514-0.876); no coloured page_header_band, no rule_bar and no footer_rule are printed on this page. body_text_size_px 20.5 measured cap-to-baseline on a line of right-column prose (line pitch 36 px). The green tinted box (block 1) is filled #cbe7d3 sampled from its flat interior; its dark-green bottom edge (#00a550) is that box's own border, not a separate band element. Blocks 4 and 5 are matched to the two figure drawings by position; the three italic captions ('A. ...', 'B. ...' and the 'Fig. 2.5' legend) have no block of their own in the input, so they are given n: null. The '2.2.2' section heading is body-height (21 px cap-to-baseline) but bold and printed cyan #00adef, so size_rel is 1.0. Faint diagonal '(c) NCERT not to be republished' watermark across the page is ignored."
+}

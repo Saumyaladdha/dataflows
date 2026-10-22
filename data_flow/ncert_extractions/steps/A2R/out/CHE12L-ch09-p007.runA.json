@@ -1,0 +1,11 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {"kind": "missing", "what": "The answer structure for Example 9.3 part (ii) is absent. The book draws a benzene ring carrying a magenta -NH2 to the left of the words 'Aniline or benzenamine'. The render prints the caption 'Aniline or benzenamine' alone, with nothing to its left.", "where": "bottom of the Example 9.3 box"},
+    {"kind": "duplicated", "what": "The sentence '(ii) Benzamide is an aromatic amide containing seven carbon atoms...' appears twice: once baked into the bottom of the butanamide structure image as an oversized line reading 'ii) Benzamide is an aromati', and again correctly as a body paragraph two lines below.", "where": "under the CH3-CH2-CH2-C(=O)-NH2 structure, inside the Example 9.3 box"},
+    {"kind": "clipped", "what": "That duplicated 'ii) Benzamide is an aromati' line is cut in two ways - sheared horizontally through the letters at the image's lower edge, and truncated at the right edge mid-word ('aromati').", "where": "lower edge of the butanamide structure image"},
+    {"kind": "formatting", "what": "The Intext Question box has lost its frame. The book sets question 9.3 inside a rounded box with a pink rule and a pink tab, under a blue script heading 'Intext Question'; the render sets the heading as a small bold-italic run-in and the question as ordinary unboxed body lines, with '9.3' stranded on a line of its own above 'How will you convert'.", "where": "between the Example 9.3 box and the 9.5 Physical Properties heading"},
+    {"kind": "misplaced", "what": "The label 'Butanamide', which the book sets on the same line as and to the right of the butanamide structure, is dropped to its own line below the structure image.", "where": "middle of the Example 9.3 box"}
+  ],
+  "note": "Compared the Example 9.3 box (question, Solution, both parts), Intext Question 9.3 with its three sub-parts, and the three paragraphs of 9.5 Physical Properties. All running prose is present and in order and the page ends at the same point as the book ('...boiling points of isomeric amines is as follows:'). Example 9.3's blue tab and blue 'Example 9.3' / 'Solution' labels are preserved, unlike the plain labels on page 264. The loss is the aniline ring structure; I could not tell whether its figure file is missing or simply failed to place."
+}

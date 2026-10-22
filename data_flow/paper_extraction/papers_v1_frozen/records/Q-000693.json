@@ -1,0 +1,152 @@
+{
+ "question_id": "Q-000693",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "figure_path": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_url": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_row": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_match_confidence": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_urls_unused": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2023,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "E2:85"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E2/neet_2023_code-E2.pdf",
+ "trust": "unsure",
+ "stem_en": "Consider the following reaction and identify the product (P). $\\mathrm{CH_3 - CH - CH - CH_3}$ (with $\\mathrm{CH_3}$ below first CH and OH below second CH) $+\\ \\mathrm{HBr} \\rightarrow$ Product (P) 3 - Methylbutan - 2 - ol",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "$\\mathrm{CH_3 - CH - CH - CH_3}$ (with $\\mathrm{CH_3}$ below first CH and Br below second CH)",
+  "2": "$\\mathrm{CH_3CH = CH - CH_3}$",
+  "3": "$\\mathrm{CH_3 - C - CH_2Br}$ (with $\\mathrm{CH_3}$ above and below C)",
+  "4": "$\\mathrm{CH_3 - C - CH_2 - CH_3}$ (with Br above C and $\\mathrm{CH_3}$ below C)"
+ },
+ "structure": "plain",
+ "has_figure": true,
+ "negative_words": [],
+ "figure_path": "papers/figures/Q-000693.png",
+ "figure_source_url": "https://cdn.mathpix.com/snip/images/BHqhJ5YMMfGY-9WsXCW__ACDtahmbavvTHbzz-34a58.original.fullsize.png",
+ "figure_source_row": "NEET-UG_pyq_2023.xlsx#78",
+ "figure_match_confidence": "high",
+ "figure_source_urls_unused": [
+  "https://cdn.mathpix.com/snip/images/hS97c52x6WSY4UrJKr4VWdDAZ9sQU86NHN1q0CUskH8.original.fullsize.png"
+ ],
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merged_duplicate",
+   "notes": [
+    "this row is the same question as Q-000198, read from code E2; it is marked merged so that per-question counts stop double-counting it. Nothing was deleted: the row stays as the evidence of what that code printed, which is the only record of its option order"
+   ]
+  }
+ ],
+ "merged_into": "Q-000198"
+}

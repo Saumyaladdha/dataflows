@@ -1,0 +1,52 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "5.3.1 Formulas of Mononuclear Coordination Entities"
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The formula of a compound is a shorthand tool used to provide basic information about the constitution of the compound in a concise and convenient manner. Mononuclear coordination entities contain a single central metal atom. The following rules are applied while writing the formulas:"
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "(i) The central atom is listed first.\n(ii) The ligands are then listed in alphabetical order. The placement of a ligand in the list does not depend on its charge.\n(iii) Polydentate ligands are also listed alphabetically. In case of abbreviated ligand, the first letter of the abbreviation is used to determine the position of the ligand in the alphabetical order.\n(iv) The formula for the entire coordination entity, whether charged or not, is enclosed in square brackets. When ligands are polyatomic, their formulas are enclosed in parentheses. Ligand abbreviations are also enclosed in parentheses.\n(v) There should be no space between the ligands and the metal within a coordination sphere.\n(vi) When the formula of a charged coordination entity is to be written without that of the counter ion, the charge is indicated outside the square brackets as a right superscript with the number before the sign. For example, [Co(CN)6]3–, [Cr(H2O)6]3+, etc.\n(vii) The charge of the cation(s) is balanced by the charge of the anion(s)."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Note: The 2004 IUPAC draft recommends that ligands will be sorted alphabetically, irrespective of charge."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "5.3.2 Naming of Mononuclear Coordination Compounds"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The names of coordination compounds are derived by following the principles of additive nomenclature. Thus, the groups that surround the central atom must be identified in the name. They are listed as prefixes to the name of the central atom along with any appropriate multipliers. The following rules are used when naming coordination compounds:"
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "(i) The cation is named first in both positively and negatively charged coordination entities.\n(ii) The ligands are named in an alphabetical order before the name of the central atom/ion. (This procedure is reversed from writing formula).\n(iii) Names of the anionic ligands end in –o, those of neutral and cationic ligands are the same except aqua for H2O, ammine for NH3, carbonyl for CO and nitrosyl for NO. While writing the formula of coordination entity, these are enclosed in brackets ( ).\n(iv) Prefixes mono, di, tri, etc., are used to indicate the number of the individual ligands in the coordination entity. When the names of the ligands include a numerical prefix, then the terms, bis, tris, tetrakis are used, the ligand to which they refer being placed in parentheses. For example, [NiCl2(PPh3)2] is named as dichloridobis(triphenylphosphine)nickel(II).\n(v) Oxidation state of the metal in cation, anion or neutral coordination entity is indicated by Roman numeral in parenthesis.\n(vi) If the complex ion is a cation, the metal is named same as the element. For example, Co in a complex cation is called cobalt and Pt is called platinum. If the complex ion is an anion, the name of the metal ends with the suffix – ate. For example, Co in a complex anion, [Co(SCN)4]2– is called cobaltate. For some metals, the Latin names are used in the complex anions, e.g., ferrate for Fe."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Note: The 2004 IUPAC draft recommends that anionic ligands will end with–ido so that chloro would become chlorido, etc."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "123",
+    "Coordination Compounds",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read CHE12L-ch05-p005 myself earlier in this batch and it ends with the complete sentence '...recommendations of the International Union of Pure and Applied Chemistry (IUPAC).', so first_block_continues_from_previous is false. Blocks 4 and 8 are the two italic 'Note: The 2004 IUPAC draft...' side notes printed in the left margin; each is given its own box block, placed at the vertical point in the text it sits beside rather than ahead of all the right-column prose. TEXT-LAYER / IMAGE DISAGREEMENT (minor): in list item (vi) of block 7 the formula for the tetrathiocyanatocobaltate anion is set as a math object and comes through the text layer as garbage ('\\n\\n2\\n4\\nCo SCN\\n\\n\\n\\n'); the image clearly prints [Co(SCN)4]2–, which is what is transcribed. It is a simple inline formula, not a display equation, so it is kept in the list text rather than marked special. Subscripts and superscript charges are flattened in the text layer and transcribed flat. The printed 'end with–ido' (missing space) is kept as-is."
+}

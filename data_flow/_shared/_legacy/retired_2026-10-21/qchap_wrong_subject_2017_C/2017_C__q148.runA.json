@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on the acidity order set by the s-character of the C-H bond, HC=CH (sp) > CH3-C=CH > CH2=CH2 (sp2) > CH3-CH3 (sp3), a hydrocarbon-acidity fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Biology\" and the 32-chapter Biology closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180. A Chemistry question was handed the Biology list, so no correct code exists in it. Expected chapter: 'Hydrocarbons' (CHENEETENGHYD: acidic character of terminal alkynes); 'General Organic Chemistry' (CHENEETENGGOC, hybridisation and acidity) is a fair second. Neither was offered."
+}

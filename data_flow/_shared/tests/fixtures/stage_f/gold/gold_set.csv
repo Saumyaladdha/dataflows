@@ -1,0 +1,14 @@
+question_id,subject,year,field,gold_value,note
+Q-990001,Biology,2019,stem_en,Fixture stem for Q-990001.,matches
+Q-990001,Biology,2019,official_answer,2,matches
+Q-990001,Biology,2019,chapter_ids,"[""BIO12-CH91""]",matches
+Q-990001,Biology,2019,subtopic_ids,"[""BIO12-CH91-ST02""]",MISMATCH on purpose
+Q-990001,Biology,2019,category_primary,recall,matches
+Q-990002,Biology,2022,official_answer,3,MISMATCH on purpose
+Q-990002,Biology,2022,chapter_ids,BIO12-CH91,"matches (bare, not a list)"
+Q-990002,Biology,2022,repeat_group_id,RG-9901,matches
+Q-990002,Biology,2022,category_primary,recall,matches
+Q-990004,Physics,2024,chapter_ids,"[""BIO12-CH92""]",matches
+Q-990004,Physics,2024,category_primary,recall,MISMATCH on purpose
+Q-990005,Chemistry,2023,category_primary,process,matches
+Q-990099,Biology,2023,official_answer,1,no record exists on purpose

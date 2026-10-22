@@ -1,0 +1,55 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "(that is orbital energy) decreases (that is more negative) with the increase of atomic number (Z ).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Both the attractive and repulsive interactions depend upon the shell and shape of the orbital in which the electron is present. For example electrons present in spherical shaped, s orbital shields the outer electrons from the nucleus more effectively as compared to electrons present in p orbital. Similarly electrons present in p orbitals shield the outer electrons from the nucleus more than the electrons present in d orbitals, even though all these orbitals are present in the same shell. Further within a shell, due to spherical shape of s orbital, the s orbital electron spends more time close to the nucleus in comparison to p orbital electron which spends more time in the vicinity of nucleus in comparison to d orbital electron. In other words, for a given shell (principal quantum number), the Zeff experienced by the electron decreases with increase of azimuthal quantum number (l), that is, the s orbital electron will be more tightly bound to the nucleus than p orbital electron which in turn will be better tightly bound than the d orbital electron. The energy of electrons in s orbital will be lower (more negative) than that of p orbital electron which will have less energy than that of d orbital electron and so on. Since the extent of shielding from the nucleus is different for electrons in different orbitals, it leads to the splitting of energy levels within the same shell (or same principal quantum number), that is, energy of electron in an orbital, as mentioned earlier, depends upon the values of n and l. Mathematically, the dependence of energies of the orbitals on n and l are quite complicated but one simple rule is that, the lower the value of (n + l) for an orbital, the lower is its energy. If two orbitals have the same value of (n + l), the orbital with lower value of n will have the lower energy. The Table 2.5 illustrates the (n + l ) rule and Fig. 2.16 depicts the energy levels of multi-electrons atoms. It may be noted that different subshells of a particular shell have different energies in case of multi-electrons atoms. However, in hydrogen atom, these have the same energy. Lastly it may be mentioned here that energies of the orbitals in the same subshell decrease with increase in the atomic number (Zeff). For example, energy of 2s orbital of hydrogen atom is greater than that of 2s orbital of lithium and that of lithium is greater than that of sodium and so on, that is, E2s(H) > E2s(Li) > E2s(Na) > E2s(K)."
+    },
+    {
+      "n": 3,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        905,
+        251,
+        1548,
+        1286
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "2.6.4 Filling of Orbitals in Atom"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The filling of electrons into the orbitals of different atoms takes place according to the aufbau principle which is based on the Pauli’s exclusion principle, the Hund’s rule of maximum multiplicity and the relative energies of the orbitals."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "Aufbau Principle"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The word ‘aufbau’ in German means ‘building up’. The building up of orbitals means the"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "STRUCTURE OF ATOM",
+    "61",
+    "2024-25"
+  ],
+  "note": "Seam judged against CHE11L-ch02-p032.runA.json, written immediately before this page (the instruction's named anchor p030 has no output on disk). p032 ends mid-sentence at 'the energy of interaction between, the nucleus and electron' with last_block_continues_on_next true; this page opens '(that is orbital energy) decreases (that is more negative) ...', the continuation of that same sentence, so first_block_continues_from_previous is true and the two pages agree. input's previous_page_last_block was null. Reading order is the left column then the right column; the printed paragraph that begins 'Both the attractive and repulsive' runs from the left column across to the right column BELOW Table 2.5 — the left column ends 'However, in hydrogen atom, these have the' and the right column resumes 'same energy. Lastly it may be mentioned here' — so it is transcribed as the single paragraph block n=2, which is also how the text layer stores it; Table 2.5, which interrupts it at the top of the right column, is therefore listed after it as block n=3. Block n=3 defers Table 2.5 whole to the special transcriber, and deferring the WHOLE table is right here rather than the partial-transcription workaround for tabular pages: the page's text layer contains ONLY the table's blue caption ('Table 2.5  Arrangement of Orbitals with Increasing Energy on the Basis of (n+l) Rule') and not one character of the table's body — no 'Orbital', no 'Value of n', none of the 1s/2s/2p/3s/3p/4s/3d/4p rows, none of the '1 + 0 = 1'-style sums, none of the '2p (n=2) has lower energy than' right-hand notes — so the body is image-only and there is nothing in the layer to transcribe in its own order. The bbox covers the caption and the whole ruled grid including its header row and that right-hand commentary column. It is the only deferral on this page. Inline notation follows the layer's flattened spelling rather than the printed italics and subscripts: 'atomic number (Z )' with the printed space before the bracket, 'the Zeff experienced', 'atomic number (Zeff)' for Z-sub-eff, 'the (n + l ) rule' with its printed space, and 'E2s(H) > E2s(Li) > E2s(Na) > E2s(K)' for the printed E-sub-2s series. 'multi-electrons atoms' (as printed, not 'multi-electron'), and the layer's line-break hyphen in 'multi-\\nelectrons' is closed up. The bold runs ('the lower the value of (n + l) for an orbital, the lower is its energy. If two orbitals have the same value of (n + l), the orbital with lower value of n will have the lower energy.' and 'energies of the orbitals in the same subshell decrease with increase in the atomic number (Zeff)') and the italics ('s orbital electron will be more tightly bound ...', 'aufbau') are printed emphasis and kept inline. 'Aufbau Principle' is a blue italic side-heading printed once here, so it is a heading block, not a running header. Block n=7 breaks off at 'The building up of orbitals means the' and is completed on p034, so last_block_continues_on_next is true. bboxes are original-image pixels (1750x2180); the image renders at 1606x2000, so displayed coordinates were scaled by 1.09."
+}

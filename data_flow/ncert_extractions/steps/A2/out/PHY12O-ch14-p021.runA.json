@@ -1,0 +1,54 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "(i) Photodiode",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "A Photodiode is again a special purpose p-n\njunction diode fabricated with a transparent\nwindow to allow light to fall on the diode. It is\noperated under reverse bias. When the photodiode\nis illuminated with light (photons) with energy (hν)\ngreater than the energy gap (Eg) of the\nsemiconductor, then electron-hole pairs are\ngenerated due to the absorption of photons. The\ndiode is fabricated such that the generation of\ne-h pairs takes place in or near the depletion region\nof the diode. Due to electric field of the junction,\nelectrons and holes are separated before they\nrecombine. The direction of the electric field is such\nthat electrons reach n-side and holes reach p-side.\nElectrons are collected on n-side and holes are\ncollected on p-side giving rise to an emf. When an\nexternal load is connected, current flows. The\nmagnitude of the photocurrent depends on the\nintensity of incident light (photocurrent is\nproportional to incident light intensity)."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "It is easier to observe the change in the current\nwith change in the light intensity, if a reverse bias\nis applied. Thus photodiode can be used as a\nphotodetector to detect optical signals. The circuit\ndiagram used for the measurement of I-V\ncharacteristics of a photodiode is shown in\nFig. 14.23(a) and a typical I-V characteristics in\nFig. 14.23(b)."
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        894,
+        305,
+        1526,
+        1346
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Example 14.6 The current in the forward bias is known to be more\n(~mA) than the current in the reverse bias (~µA). What is the reason\nthen to operate the photodiodes in reverse bias?\nSolution Consider the case of an n-type semiconductor. Obviously,\nthe majority carrier density (n) is considerably larger than the minority\nhole density p (i.e., n >> p). On illumination, let the excess electrons\nand holes generated be ∆n and ∆p, respectively:\nn′ = n + ∆n\n  p′ = p + ∆p\nHere n′ and p′ are the electron and hole concentrations* at any\nparticular illumination and n and p are carriers concentration when\nthere is no illumination. Remember ∆n = ∆p and n >> p. Hence, the",
+      "continues_on_next": true
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "* Note that, to create an e-h pair, we spend some energy (photoexcitation, thermal\nexcitation, etc.). Therefore when an electron and hole recombine the energy is\nreleased in the form of light (radiative recombination) or heat (non-radiative\nrecombination). It depends on semiconductor and the method of fabrication of\nthe p-n junction. For the fabrication of LEDs, semiconductors like GaAs, GaAs-\nGaP are used in which radiative recombination dominates."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Semiconductor Electronics:",
+    "Materials, Devices and",
+    "Simple Circuits",
+    "487",
+    "2022-23",
+    "EXAMPLE 14.6"
+  ],
+  "note": "previous_page_last_block was null; judged against my own p020 output, which closed its three-item list, and this page opens the '(i) Photodiode' sub-heading. Fig. 14.23(a)/(b) with caption occupies the right column and is deferred to A2S. The Example 14.6 box breaks off mid-sentence at 'Hence, the' and continues on p022, so last_block_continues_on_next is true and the flag sits on the box (n=5); the starred footnote (n=6), printed below the box, is real content and is transcribed as a paragraph rather than treated as furniture. 'EXAMPLE 14.6' vertical tab is listed as removed furniture."
+}

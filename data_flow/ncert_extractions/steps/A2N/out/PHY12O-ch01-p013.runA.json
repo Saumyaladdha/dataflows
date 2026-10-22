@@ -1,0 +1,35 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "Example 1.4 Coulomb’s law for electrostatic force between two point charges and Newton’s law for gravitational force between two stationary point masses, both have inverse-square dependence on the distance between the charges and masses respectively.\n(a) Compare the strength of these forces by determining the ratio of their magnitudes (i) for an electron and a proton and (ii) for two protons. (b) Estimate the accelerations of electron and proton due to the electrical force of their mutual attraction when they are 1 Å (= 10⁻¹⁰ m) apart? (mₚ = 1.67 × 10⁻²⁷ kg, mₑ = 9.11 × 10⁻³¹ kg)",
+      "fixes": [
+        {"wrong": "1 Å (= 10-10 m) apart?", "right": "1 Å (= 10⁻¹⁰ m) apart?"},
+        {"wrong": "(mp = 1.67 × 10–27 kg, me = 9.11 × 10–31 kg)", "right": "(mₚ = 1.67 × 10⁻²⁷ kg, mₑ = 9.11 × 10⁻³¹ kg)"}
+      ]
+    },
+    {"n": 2, "no_change": true},
+    {"n": 4, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "where mₚ and mₑ are the masses of a proton and an electron respectively.",
+      "fixes": [
+        {"wrong": "where mp and me are the masses", "right": "where mₚ and mₑ are the masses"}
+      ]
+    },
+    {"n": 8, "no_change": true},
+    {
+      "n": 10,
+      "corrected_text": "However, it may be mentioned here that the signs of the two forces are different. For two protons,  the gravitational force is attractive in nature and the Coulomb force is repulsive. The actual values of these forces between two protons inside a nucleus (distance between two protons is ~ 10⁻¹⁵ m inside a nucleus) are Fₑ ~ 230 N, whereas, FG ~ 1.9 × 10⁻³⁴ N.\nThe (dimensionless) ratio of the two forces shows that electrical forces are enormously stronger than the gravitational forces.\n(b) The electric force F exerted by a proton on an electron is same in magnitude to the force exerted by an electron on a proton; however, the masses of an electron and a proton are different. Thus, the magnitude of force is",
+      "fixes": [
+        {"wrong": "distance between two protons is ~ 10-15 m", "right": "distance between two protons is ~ 10⁻¹⁵ m"},
+        {"wrong": "are Fe ~ 230 N", "right": "are Fₑ ~ 230 N"},
+        {"wrong": "FG ~ 1.9 × 10–34 N.", "right": "FG ~ 1.9 × 10⁻³⁴ N."}
+      ]
+    },
+    {"n": 12, "no_change": true},
+    {"n": 14, "no_change": true},
+    {"n": 16, "no_change": true}
+  ],
+  "note": "n=1, 6, 10 had flattened exponents (10-10, 10–27, 10–31, 10-15, 10–34) restored to superscript minus/digits, and subscript masses mp/me restored to mₚ/mₑ, Fe to Fₑ. FG in n=10 is left as-is: Unicode has no subscript capital G, so the G cannot be rendered as a true subscript without guessing a wrong form; only its exponent neighbour (10–34) was fixed. n=2, 4, 8, 12, 14, 16 (including the URL) already matched the image exactly."
+}

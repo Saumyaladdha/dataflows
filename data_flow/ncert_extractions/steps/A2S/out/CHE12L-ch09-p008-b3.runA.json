@@ -1,0 +1,23 @@
+{
+  "kind": "figure",
+  "caption": "",
+  "labels": [
+    "H",
+    "R",
+    "H",
+    "R",
+    "N",
+    "H",
+    "N",
+    "H",
+    "N",
+    "R",
+    "H",
+    "H",
+    "H",
+    "N",
+    "R",
+    "H"
+  ],
+  "note": "`caption` is left empty because the printed caption line sits OUTSIDE target_box_in_crop (the box ends at y=450; the caption is printed at about y=488) and is in any case cut by the crop's right edge -- it reads 'Fig. 9.2 Intermolecular hydrogen bonding in primary ami' with the rest of the word missing. It is recorded here rather than guessed at or placed in `caption`. The figure itself is a cluster of four primary-amine molecules joined by dashed hydrogen bonds; it has no word labels at all, only the atom symbols of the structural formulas, which are what `labels` lists, read row by row: top row 'H  R  H'; the central row 'R-N-H ---- N-H ---- N-R'; the row beneath it 'H  H'; the lower molecule 'H-N-R'; and its terminal 'H'. The flat list cannot show the bonds, the dashed hydrogen bonds, or which atoms form which molecule -- that structure is lost. Also over-included by the crop and excluded: the line 'Primary > Secondary > Tertiary', the sentence 'Intermolecular hydrogen bonding in primary amines is [shown in] Fig. 9.2.' above the figure, and below it 'Boiling points of amines, alcohols and alkanes of almost [the same] molar mass are shown in Table 9.2.' plus the Table 9.2 title; all of these are clipped at the right edge of the crop as well."
+}

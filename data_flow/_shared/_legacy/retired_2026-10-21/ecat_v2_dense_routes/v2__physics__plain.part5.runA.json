@@ -1,0 +1,162 @@
+{
+  "group": "v2__physics__plain.part5",
+  "ratings": [
+    {
+      "question_id": "2015_A#q160",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Photoelectric effect into de Broglie wavelength: the maximum kinetic energy fixes the SHORTEST wavelength, so the emitted electrons' wavelength is at or above it",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "elimination",
+        "estimation"
+      ],
+      "strategy_evidence": "An electron carrying a few tenths of an electronvolt has a de Broglie wavelength of nanometre order, since lambda in nanometres is about 1.23 divided by the square root of the energy in volts; that one estimate fixes the exponent at 10^-9 and strikes out options 1 (10^-12 m) and 2 (10^-10 m) together, leaving only the two options that differ by the inequality sign.",
+      "traps": [
+        {
+          "label": "complementary_grid",
+          "option": "2",
+          "route": "the option set is one mantissa, 2.8, crossed with two axes: three exponents (10^-12, 10^-10, 10^-9) and two senses of the inequality (less-than against greater-than-or-equal). Option 2 is the member only the grid explains - it carries the correct mantissa at an exponent no named operation on 500 nm and 2.258 eV produces, so it exists to make the exponent itself part of the choice"
+        },
+        {
+          "label": "sign_reversed_magnitude_right",
+          "option": "3",
+          "route": "the magnitude and the method are the key's own - 2.8 x 10^-9 m - and only the inequality is inverted: the photoelectrons leave with kinetic energies from zero up to the maximum, so their wavelengths run from the computed value UPWARDS, and \"<\" in place of the key's \"≥\" is the one thing wrong with it"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires computing a kinetic energy and then feeding it into a second relation, demonstrated by the stem's \"work function 2.258 eV\" subtracted from the 500 nm photon's energy before the de Broglie wavelength can be formed at all.",
+      "note": "The record carries no figure for this question and the arithmetic needs none: the stem supplies the incident wavelength and the work function in full."
+    },
+    {
+      "question_id": "2015_A#q163",
+      "question_type": "multi_part_respectively",
+      "format": "pick_both_parts",
+      "content_shape": "formula_or_law",
+      "concept": "Friction on an incline: the angle of repose gives the static coefficient as tan of that angle, and the sliding acceleration gives the kinetic one",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "The box slips at 30 degrees, so the static coefficient is tan 30 = 0.58, which rounds to 0.6 and strikes out option 1 (0.4); and the box then accelerates down the plank, which requires the kinetic coefficient to be SMALLER than the static one, striking out options 2 (equal) and 4 (kinetic larger).",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "the first of its two values is right - 0.6 is tan 30 - and the second fails: taking the kinetic coefficient to equal the static one leaves no net force down the plank, which contradicts the printed \"slides 4.0 m down the plank in 4.0 s\"; the printed sliding data is what makes 0.5 and not 0.6 the second value"
+        },
+        {
+          "label": "reversed_order",
+          "option": "4",
+          "route": "prints the two keyed values in the opposite order to the stem's \"static and kinetic ... respectively\": 0.5 and 0.6 against the key's 0.6 and 0.5"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires an acceleration computed from the kinematics to be carried into the force equation, demonstrated by the stem's \"slides 4.0 m down the plank in 4.0 s\", which gives a = 2s/t^2 = 0.5 m/s^2 before the kinetic coefficient can be found.",
+      "note": "The figure, figures_agent/2015_A/q163.png, was read: it is a crop from the printed solution showing the inclined plank with the box, the weight mg and the angle theta marked. It adds nothing the stem does not state, so the question is answerable from its text and is tagged as complete. E1 is `multi_part_respectively`: the stem asks for two coefficients \"respectively\" and every option carries two values, so the shape on the page is the several-blanks one; E2 is `pick_both_parts`, since half of an option right scores nothing. The two axes co-occur as the rulebook says they usually do."
+    },
+    {
+      "question_id": "2015_A#q164",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Centripetal force F = mv^2/r: equal forces fix the speed ratio from the mass and radius ratios",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "estimation"
+      ],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "multiplies by the radius where the relation divides by it: setting 2m v_h^2 (r/2) equal to m v_l^2 r makes the mass and radius factors cancel exactly and gives v_l = v_h, that is n = 1"
+        },
+        {
+          "label": "intermediate_value",
+          "option": "4",
+          "route": "prints the correct intermediate before the last step: equating the two centripetal forces gives v_l^2 / v_h^2 = 4, and 4 is that ratio of squares reported as the answer without the square root that turns it into n = 2"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires equating one relation written for two bodies and solving for a speed ratio, demonstrated by the stem's \"when they experience same centripetal forces\", under which m and r cancel to leave only the ratio.",
+      "note": "The stem as stored reads \"Two stones of masses ma and 2 m\", where \"ma\" carries a stray character; the two masses are recoverable as m and 2m from the rest of the sentence and from the ratio the options ask for, so the question is tagged as read. Option 3 (n = 3) is left untagged: no operation on the printed masses and radii yields 3, and asserting that it reaches nothing would require demonstrating the absence of a route through an integer option set, which cannot be done here."
+    },
+    {
+      "question_id": "2015_A#q165",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Coefficient of performance of a refrigerator: COP = T_cold/(T_hot - T_cold), with both temperatures absolute",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "unit_sanity"
+      ],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires a temperature difference computed from one relation to be converted back into the stem's own scale, demonstrated by the stem's \"temperature inside freezer is -20 C\", which must become 253 K before COP = 5 can be solved and the result returned to degrees Celsius.",
+      "note": "No trap is written, and that is a positive finding rather than an omission. The four options are 21, 31, 41 and 11 degrees Celsius - the key plus or minus ten and plus or minus twenty - an evenly spaced arithmetic spread, and for none of the three wrong options can a named operation on 253 K and COP = 5 be shown to produce it. The one substitution that can be named, using the heat-pump form COP = T_hot/(T_hot - T_cold) in place of the refrigerator's, gives 316 K or 43 degrees Celsius, which is not printed; naming option 3 as its destination would be a nearest-value claim and not a route. The record carries has_figure true and points at figures_agent/2015_A/q165.png, which is not present in that directory at the time of rating; the stem supplies the COP and the freezer temperature in full, so the arithmetic needs no figure and the question is tagged as complete."
+    },
+    {
+      "question_id": "2015_A#q166",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "trend",
+      "concept": "Work in P-V processes: for the same volume change the area under the adiabat exceeds the area under the isotherm, which exceeds that under the isobar",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [
+        "estimation"
+      ],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "an isochoric process holds the volume fixed, so it cannot carry out the stem's \"compressed to half its initial volume\" at all, and the work it does is identically zero; against the other three, which for a halving give 0.80 PV adiabatically, 0.69 PV isothermally and 0.50 PV isobarically, zero is the least and no route makes it the greatest"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires separating four neighbouring process types by the work each performs over one stated volume change, demonstrated by the stem's \"compressed to half its initial volume by means of several processes\", which holds the volume change fixed and leaves only the path to decide.",
+      "note": "Options 1 and 3 are deliberately untagged. For the stem's halving they are the ordered runners-up - the isotherm at 0.69 PV and the isobar at 0.50 PV against the adiabat's 0.80 PV - so each is correctly ranked BELOW the key rather than reached by a named wrong operation, and no arithmetic slip turns either into the maximum. The figure, figures_agent/2015_A/q166.png, was read at the time of rating and is a crop from the printed solution: its top line reads \"Solution: (2)\" and it shows P-V curves labelled adiabatic and isobaric. It therefore discloses the answer and is not part of the question, which is answerable from its text alone; the file is no longer present in that directory. The mis-attached crop should be repaired, but the question itself is complete and is tagged as such."
+    },
+    {
+      "question_id": "2015_A#q167",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Energy conservation with a fractional loss at impact: half the pre-impact energy must equal the potential energy at the rebound height",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "complementary_grid",
+          "option": "1",
+          "route": "the four options are two magnitudes crossed with the factor root two - 10 with 14 (10 root 2) and 20 with 28 (20 root 2) - and option 1 is the member only that grid explains: no named operation on 20 m, 50 percent and g = 10 m/s^2 produces 10 m/s, which is instead the half of the keyed value needed to complete the pattern"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "halves the potential energy instead of halving the total pre-impact energy: setting (1/2)v0^2 = (1/2)gh gives v0 = root(gh) = root 200 = 14 m/s"
+        },
+        {
+          "label": "omitted_contribution",
+          "option": "4",
+          "route": "leaves the mgh of the 20 m drop out of the pre-impact energy sum: with the pre-impact energy taken as (1/2)mv0^2 alone, half of it equal to mgh gives v0 = root(4gh) = 28 m/s"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one computed energy to be carried into the next relation, demonstrated by the stem's \"loses 50 percent of its energy in collision and rebounds to the same height\", which can only be applied once the pre-impact energy (1/2)mv0^2 + mgh has been formed.",
+      "note": "The record carries has_figure true and points at figures_agent/2015_A/q167.png, which is not present in that directory at the time of rating. The stem supplies the height, the fractional loss and the value of g, so no figure is needed and the question is tagged as complete."
+    }
+  ],
+  "group_note": "All six were read as the same printed shape - one question, four answers, no lettered block or printed list - and all six are numerically or categorically decided from stem data, so no member is out of place on that axis. Four of the six carry has_figure true in the record and none of those figures is needed: the two that could be read (q163, q166) are crops of the printed SOLUTION region, q166's even showing the line \"Solution: (2)\" and the labelled P-V curves, and the files for q165 and q167 are not present in papers_v2/figures_agent/2015_A at all at the time of rating. Each is recorded in its own note; none of the six questions is treated as incomplete, because every one is answerable from its text. Three stated rules kept the group consistent. (1) DEMAND: five of the six are `calculation` - a number reached by computing from the stem's own numbers. 2015_A#q166 is the single exception and carries `concept_discrimination`, because its options are four named process types rather than values and the volume change is held fixed, so what is decided is which concept applies and not what a quantity comes to. (2) STRUCTURE: `multi_step_dependent` wherever a computed result is consumed by a later relation - q160 (photon energy minus work function, then the de Broglie relation), q163 (the kinematic acceleration, then the force equation), q165 (the kelvin conversion, then the COP relation, then back to Celsius) and q167 (the pre-impact energy, then the halving). q164 is the one `single_step` member, because the two force expressions are equated once and solved with nothing carried forward, and that is why it sits apart from the other numericals. q166 is `several_independent_checks`: the work for each of the four processes is found separately and the verdicts compared, which is not a chain. (3) STRATEGY: only where the shortcut can be named. q160's order-of-magnitude estimate strikes out two options and is written out; q163's two monotonicity facts (tan 30, and kinetic below static) strike out three; q164 and q166 carry `estimation` because the constants cancel or only a comparison of areas is needed, which the rulebook treats as a strategy rather than a demand; q165 carries `unit_sanity` because the whole arithmetic turns on the Celsius-to-kelvin conversion. (4) TRAPS: labelled by the operation that reaches the option - a dropped term (`omitted_contribution` on q167 option 4, naming the omitted mgh), a wrong operation (`calculation_slip` on q164 option 1 and q167 option 2, naming it), a correct intermediate reported early (`intermediate_value` on q164 option 4, the ratio of squares before the root), the keyed value with one inequality turned round (`sign_reversed_magnitude_right`, used only on q160 option 3 where the magnitude matches exactly), and the two keyed values swapped in a respectively question (`reversed_order` on q163 option 4). `complementary_grid` is used twice, on q160 option 2 and q167 option 1, and in both cases the two axes of the grid are named in the route; it is used only for the option that the grid alone explains, never as a description of the whole set. Two findings on this axis are negative and are stated as such: 2015_A#q165 carries NO trap, because its options are an even ten-degree spread around the key and the one substitution that can be named produces 43 degrees, which is not printed; and q166's options 1 and 3 are untagged because they are the correctly ranked runners-up rather than the product of any error. No trap sits on any official answer. ON THE E1/E2/E3 AXES: five are `plain_mcq` and 2015_A#q163 is `multi_part_respectively` - its stem asks for the static and kinetic coefficients \"respectively\" and every option carries two values - so the packet's `structure: plain` key does not describe that member. None of the six takes a figure overlay: the two figures that could be read are solution-region crops and the other two files are absent, and every question is answerable from its text. E2: `calculate_value` for the four whose options are values (q160, q164, q165, q167), `pick_both_parts` for q163, where half an option right scores nothing, and `name_or_identify` for q166, whose options are the names of four processes. E3 is `formula_or_law` for five and `trend` for q166, whose material is a comparison between named cases rather than a relation applied to numbers."
+}

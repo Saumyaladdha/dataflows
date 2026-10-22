@@ -1,0 +1,161 @@
+{
+  "group": "v2__physics__plain.part4",
+  "ratings": [
+    {
+      "question_id": "2015_A#q154",
+      "question_type": "plain_mcq",
+      "secondary_type": "figure_to_read",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Least work to spin a dumb-bell is about its centre of mass, which sits $x=\\frac{m_2L}{m_1+m_2}$ from $m_1$",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["symmetry", "elimination"],
+      "strategy_evidence": "With $m_1=m_2$ the axis must sit at the middle, $x=L/2$; options 3 and 4 both give $L$ there, so both fall on that one check.",
+      "traps": [
+        {
+          "label": "wrong_quantity",
+          "option": "2",
+          "route": "Measures from the other end of the rod. $\\frac{m_1L}{m_1+m_2}$ is the distance of P from $m_2$, while the figure measures $x$ from $m_1$."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "3",
+          "route": "Divides by $m_2$ alone instead of by $m_1+m_2$, and puts $m_1$ on top. The result can come out longer than the rod."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "Divides by $m_1$ instead of by $m_1+m_2$. Again the answer can exceed $L$."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the rule that the moment of inertia is least about the centre of mass, demonstrated by the stem's \"the work required to set the rod rotating with angular velocity $\\omega_0$ is minimum\", since $W=\\frac{1}{2}I\\omega_0^2$ is smallest exactly where $I$ is.",
+      "note": "Secondary type is figure_to_read because the options are written in $x$ and the stem never says what $x$ measures from; the figure is where $x$ and $(L-x)$ are marked, running from $m_1$. That is also what makes option 2 a wrong_quantity rather than a correct alternative reading. The work expression has to be reduced to a statement about $I$ before the position can be written down, so the structure is multi_step_dependent; the differentiation route would read as calculation, and application is recorded because the centre-of-mass criterion settles it without differentiating."
+    },
+    {
+      "question_id": "2015_A#q155",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "First single-slit minimum: the wavelet from the edge and the one from the midpoint are $\\frac{\\lambda}{2}$ apart, a phase difference of $\\pi$",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "3",
+          "route": "Turns the $\\frac{\\lambda}{2}$ path difference into phase with $\\frac{\\pi}{\\lambda}$ instead of $\\frac{2\\pi}{\\lambda}$. Gives $\\frac{\\pi}{2}$ instead of $\\pi$."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "2",
+          "route": "$\\frac{\\pi}{4}$ needs a path difference of $\\frac{\\lambda}{8}$, and the question divides the slit only in half."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "$\\frac{\\pi}{8}$ needs a path difference of $\\frac{\\lambda}{16}$; no pairing in the question is that close together."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the first-minimum condition to a named pair of wavelets, demonstrated by the stem's \"the wavelet from the edge of the slit and the wavelet from the midpoint of the slit\", which are half a slit apart and so differ by $\\frac{\\lambda}{2}$ when the whole slit gives $\\lambda$.",
+      "note": "The path difference has to be fixed at $\\frac{\\lambda}{2}$ before it can be turned into a phase, so the structure is multi_step_dependent. Format is calculate_value rather than recall_value: the number is produced from the printed condition rather than stored, even though the stem supplies no numerals. The input flags has_figure true and names figures_agent/2015_A/q155.png, which is not in the corpus; the stem is self-contained, so only the flag needs repair."
+    },
+    {
+      "question_id": "2015_A#q156",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Angular momentum is conserved when the torque $\\vec{r}\\times\\vec{F}$ vanishes, which needs $\\vec{F}$ parallel to $\\vec{r}$",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires applying the condition that conserved angular momentum means zero torque, demonstrated by the stem's \"The value of $\\alpha$ for which angular momentum about origin is conserved\", which is met when $\\vec{F}$ and $\\vec{r}$ are parallel.",
+      "note": "Option 1 is stored as a bare \"$-$\": its value has been lost in extraction, so the option set as we hold it is incomplete and no trap is written. The candidate I tried and could not place is option 4, \"Zero\", which would follow from reading the condition as $\\vec{r}\\cdot\\vec{F}=0$ or as $\\vec{F}=0$; that route is worth writing once option 1 is restored, because until then there is no way to tell whether option 1 holds the same value under a different sign. The key, option 2, is consistent with the printed vectors: $\\frac{\\alpha}{2}=\\frac{3}{-6}=\\frac{6}{-12}$ gives $\\alpha=-1$."
+    },
+    {
+      "question_id": "2015_A#q157",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Two particles collide if the relative velocity points along the line joining them, so the unit vectors of $\\vec{r}_1-\\vec{r}_2$ and $\\vec{v}_2-\\vec{v}_1$ are equal",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires writing the collision condition as a relation between the relative position and the relative velocity, demonstrated by option 2's $\\frac{\\vec{r}_1-\\vec{r}_2}{|\\vec{r}_1-\\vec{r}_2|} = \\frac{\\vec{v}_2-\\vec{v}_1}{|\\vec{v}_2-\\vec{v}_1|}$, which says the closing velocity lies along the joining line.",
+      "note": "Options 1 and 4 are stored as the same expression, $\\vec{r}_1 \\times \\vec{v}_1 = \\vec{r}_2 \\times \\vec{v}_2$, character for character, so one of the two has lost whatever distinguished it in the paper - most likely a dot for a cross or a sign. With a duplicated option the set is incomplete and no trap is written. The candidate I tried is option 3, the dot-product form, which is reached by writing the condition with the wrong vector product; it should be written once the duplicate is resolved, since the resolved option may well carry the same device."
+    },
+    {
+      "question_id": "2015_A#q158",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "formula_or_law",
+      "concept": "Decay from rest: the two fragments carry equal and opposite momentum, and $KE=\\frac{p^2}{2m}$ is then larger for the lighter one",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The nucleus decays at rest, so the two momenta are equal in magnitude; that one fact strikes out options 3 and 4, which both make one momentum bigger than the other.",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "Gives the heavier fragment the larger share. With equal momentum, $KE=\\frac{p^2}{2m}$ is bigger for the lighter helium nucleus."
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "3",
+          "route": "Ties momentum to mass, so the heavy thorium gets more of it. The two momenta are equal and opposite whatever the masses."
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "4",
+          "route": "Carries the kinetic-energy answer over to momentum. The energies differ, but the momenta are equal."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying momentum conservation and then the relation between momentum and kinetic energy, demonstrated by the stem's \"decays at rest\", which fixes the two momenta as equal and leaves the mass to decide the energies.",
+      "note": "The momenta have to be equated before the energies can be compared, so the structure is multi_step_dependent. Format is pick_cause_or_effect: the stem states the decay and the four options are rival outcomes of it."
+    },
+    {
+      "question_id": "2015_A#q159",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Two identical wires in series: the resistivities add over twice the length, so the effective conductivity is $\\frac{2\\sigma_1\\sigma_2}{\\sigma_1+\\sigma_2}$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["symmetry", "elimination", "dimensional_check"],
+      "strategy_evidence": "Setting $\\sigma_1=\\sigma_2=\\sigma$ must return $\\sigma$: option 1 gives $\\frac{\\sigma}{2}$, options 3 and 4 give $\\frac{1}{\\sigma}$ and $\\frac{2}{\\sigma}$, so only option 2 survives; options 3 and 4 also carry the dimensions of a resistivity rather than a conductivity.",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "Drops the factor 2 that comes from the current crossing two wires' worth of length. Gives half the right conductivity."
+        },
+        {
+          "label": "inverted_ratio",
+          "option": "3",
+          "route": "Stops at the total resistivity and never turns it over. This option is exactly $\\frac{1}{\\sigma_\\mathrm{eff}}$."
+        },
+        {
+          "label": "inverted_ratio",
+          "option": "4",
+          "route": "Leaves the answer upside down and loses the 2 as well, giving a resistivity rather than a conductivity."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires chaining the series resistance rule with the link between resistivity and conductivity, demonstrated by the stem's \"identical dimensions\" and \"connected in series\", which make the two resistivities add over a doubled length.",
+      "note": "Each step consumes the one before - resistances from conductivities, then the sum, then back to an effective conductivity - so the structure is multi_step_dependent, and the demand is calculation because the work is executing that chain rather than choosing a rule. The stem names the conductivities $v_1$ and $v_2$ while the options use $\\sigma_1$ and $\\sigma_2$; the mapping is unambiguous and is flagged as a symbol repair. The input flags has_figure true and names figures_agent/2015_A/q159.png, which is not in the corpus; the stem is self-contained, so only the flag needs repair."
+    }
+  ],
+  "group_note": "All six are plain_mcq: four text or symbolic options under a stem, with no lettered items. Only q154 takes a secondary type, figure_to_read, and it earns it - the options are written in $x$ and nothing in the stem says where $x$ is measured from, which the figure alone supplies. Three other members (q155, q159 and q154) arrive flagged has_figure true, and for q155 and q159 the named file is not in the corpus at all; both stems are self-contained, so those two are tagged in full and the flag is recorded for repair rather than treated as a missing figure. Format follows the options alone: symbolic expressions in q154, q157 and q159 (derive_expression), a number in q155 and q156 (calculate_value), and rival outcomes of a stated event in q158 (pick_cause_or_effect). Demand was set by one test across the six - is the work choosing and applying a relation, or executing a computation? Five are application; q159 alone is calculation, because its answer comes out of a three-stage chain that has to be carried through rather than a rule that has to be picked. Five are multi_step_dependent on the same test, that a later step consumes an earlier result; q157 is the exception at single_step, since its condition is written down in one move. Two members carry no trap at all, and both are our own damage rather than the examiner's design: q156 stores option 1 as a bare \"$-$\" with its value gone, and q157 stores options 1 and 4 as the same expression character for character. Both record source_damage_artifact, both leave traps empty as rule 5 requires, and both notes name the candidate device I would have written (option 4 in q156, option 3 in q157) so the tag can be finished once the option set is repaired. Among the four intact members, every wrong option is tagged and the labels are not uniform: q154 separates measuring from the wrong end (wrong_quantity) from dividing by the wrong denominator (calculation_slip), q158 separates reversing the energy comparison from carrying it onto momentum, and q159 separates the dropped factor of 2 from the two options printed upside down. no_derivation_route is used twice, in q155, and each time it is demonstrated by the path difference the option would need - $\\frac{\\lambda}{8}$ and $\\frac{\\lambda}{16}$ - against a question that divides the slit only in half. No trap sits on any printed key."
+}

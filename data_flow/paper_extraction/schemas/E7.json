@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/E7.json",
+  "title": "E7 output (script: scripts/rate_difficulty.py) -- one report per run",
+  "description": "E7 is SCRIPT-ONLY, so this schema describes the script's REPORT, not an agent answer -- the same arrangement as F3, whose report is its output. The report exists so that the banding can be checked without re-reading 580 rows. WHAT A BAND IS: solution load counted from the printed page -- ECAT's cognitive_demand and solution_structure, how many items the E1 shape forces the student to adjudicate, whether a figure or table gates the question, whether the task is negated, and whether a trap removes any part-way shortcut. WHAT IT IS NOT: a prediction of how students perform. We hold no response data, and SPEC Rule 22 forbids asserting student behaviour -- it is the rule that retired `obviously_wrong`. `not_scorable` is a first-class outcome, not a failure: a question that is source_incomplete, or whose ECAT fields are unfilled, must have NO band, because a band computed from empty inputs is indistinguishable from a real one (SPEC Rule 19).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["questions", "bands", "not_scorable"],
+      "additionalProperties": false,
+      "properties": {
+        "questions": { "type": "integer", "minimum": 0, "description": "Rows in docs/question_categories/SHEET_V2.csv." },
+        "bands": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "How many questions landed in each band. config/allowed_values.yaml `difficulty_band`.",
+          "properties": {
+            "easy": { "type": "integer", "minimum": 0, "description": "0-2 load points." },
+            "medium": { "type": "integer", "minimum": 0, "description": "3-5 load points." },
+            "hard": { "type": "integer", "minimum": 0, "description": "6+ load points." }
+          }
+        },
+        "not_scorable": { "type": "integer", "minimum": 0, "description": "No band assigned, deliberately: source_incomplete, or ECAT has not filled cognitive_demand and solution_structure. scripts/checks/E7.py requires questions == easy + medium + hard + not_scorable, so a row can never be silently dropped." },
+        "reasons": { "type": "object", "additionalProperties": { "type": "integer" }, "description": "Why rows were not scorable, counted by reason. Optional." }
+      }
+    },
+    { "type": "object", "required": ["error"], "additionalProperties": false, "properties": { "error": { "type": "string" } } }
+  ]
+}

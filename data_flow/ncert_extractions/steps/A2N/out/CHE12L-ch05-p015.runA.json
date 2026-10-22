@@ -1,0 +1,50 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "degenerate levels due to the presence of ligands in a definite geometry is termed as crystal field splitting and the energy separation is denoted by Δₒ (the subscript o is for octahedral) (Fig.5.8). Thus, the energy of the two eg orbitals will increase by (3/5) Δₒ and that of the three t₂g will decrease by (2/5)Δₒ.",
+      "fixes": [
+        {"wrong": "Δo", "right": "Δₒ"},
+        {"wrong": "t2g", "right": "t₂g"}
+      ]
+    },
+    {
+      "n": 2,
+      "corrected_text": "The crystal field splitting, Δₒ, depends upon the field produced by the ligand and charge on the metal ion. Some ligands are able to produce strong fields in which case, the splitting will be large whereas others produce weak fields and consequently result in small splitting of d orbitals.",
+      "fixes": [
+        {"wrong": "Δo", "right": "Δₒ"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "Such a series is termed as spectrochemical series. It is an experimentally determined series based on the absorption of light by complexes with different ligands. Let us assign electrons in the d orbitals of metal ion in octahedral coordination entities. Obviously, the single d electron occupies one of the lower energy t₂g orbitals. In d² and d³ coordination entities, the d electrons occupy the t₂g orbitals singly in accordance with the Hund’s rule. For d⁴ ions, two possible patterns of electron distribution arise: (i) the fourth electron could either enter the t₂g level and pair with an existing electron, or (ii) it could avoid paying the price of the pairing energy by occupying the eg level. Which of these possibilities occurs, depends on the relative magnitude of the crystal field splitting, Δₒ and the pairing energy, P (P represents the energy required for electron pairing in a single orbital). The two options are:",
+      "fixes": [
+        {"wrong": "energy t2g orbitals", "right": "energy t₂g orbitals"},
+        {"wrong": "d2 and d3", "right": "d² and d³"},
+        {"wrong": "the t2g orbitals", "right": "the t₂g orbitals"},
+        {"wrong": "d4 ions", "right": "d⁴ ions"},
+        {"wrong": "the t2g level", "right": "the t₂g level"},
+        {"wrong": "Δo", "right": "Δₒ"}
+      ]
+    },
+    {
+      "n": 7,
+      "corrected_text": "(i) If Δₒ < P, the fourth electron enters one of the eg orbitals giving the configuration t₂g³eg¹. Ligands for which Δₒ < P are known as weak field ligands and form high spin complexes.\n(ii) If Δₒ > P, it becomes more energetically favourable for the fourth electron to occupy a t₂g orbital with configuration t₂g⁴eg⁰. Ligands which produce this effect are known as strong field ligands and form low spin complexes.",
+      "fixes": [
+        {"wrong": "Δo", "right": "Δₒ"},
+        {"wrong": "t2g3eg1", "right": "t₂g³eg¹"},
+        {"wrong": "a t2g orbital", "right": "a t₂g orbital"},
+        {"wrong": "t2g4eg0", "right": "t₂g⁴eg⁰"}
+      ]
+    },
+    {
+      "n": 8,
+      "corrected_text": "Calculations show that d⁴ to d⁷ coordination entities are more stable for strong field as compared to weak field cases.",
+      "fixes": [
+        {"wrong": "d4 to d7", "right": "d⁴ to d⁷"}
+      ]
+    }
+  ],
+  "note": "Five blocks corrected. The materially important fixes are the electron-occupancy configurations: 't2g3eg1' is really t₂g³eg¹ and 't2g4eg0' is t₂g⁴eg⁰ — flattened they read as the meaningless strings t2g3eg1/t2g4eg0 instead of 'three electrons in t2g, one in eg'; likewise d², d³, d⁴, d⁷ are d-electron counts, not the numbers 2/3/4/7 glued to a letter. Two judgment calls, both flagged: (1) the Δₒ subscript — the page prints a SUBSCRIPT letter o (the text itself explains 'the subscript o is for octahedral'), so this is a genuine flattened subscript, NOT the degree-symbol-for-o defect, and I restored it as Δₒ while leaving the full-size prose 'the subscript o' alone; (2) Unicode has no subscript g, so the g of eg / t₂g cannot be reproduced — I restored only the digits that are available (the 2 of t₂g) rather than invent an encoding. n=4 is a one-line prose lead-in; the spectrochemical series formula line itself (I⁻ < Br⁻ < ... < CO) is a separate equation block not given to me. No locants, primes or radicals on this page."
+}

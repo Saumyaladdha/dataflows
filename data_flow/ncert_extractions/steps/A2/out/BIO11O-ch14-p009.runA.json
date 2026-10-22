@@ -1,0 +1,49 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "transport system is utilised in synthesising ATP\nwith the help of ATP synthase (complex V).  This\ncomplex consists of two major components, F1\nand F0 (Figure 14.5).  The F1 headpiece is a\nperipheral membrane protein complex and\ncontains the site for synthesis of ATP from ADP\nand inorganic phosphate. F0 is an integral\nmembrane protein complex that forms the\nchannel through which protons cross the inner\nmembrane.  The passage of protons through the\nchannel is coupled to the catalytic site of the F1\ncomponent for the production of ATP.  For each\nATP produced, 4H+ passes through F0 from the\nintermembrane space to the matrix down the\nelectrochemical proton gradient.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [213, 354, 861, 916],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "14.5 THE RESPIRATORY BALANCE SHEET",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "It is possible to make calculations of the net gain of ATP for every glucose\nmolecule  oxidised; but in reality this can remain only a theoretical exercise.\nThese calculations can be made only on certain assumptions that:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "•\nThere is a sequential, orderly pathway functioning, with one\nsubstrate forming the next and with glycolysis, TCA cycle and ETS\npathway following one after another.\n•\nThe NADH synthesised in glycolysis is transferred into the\nmitochondria and undergoes oxidative phosphorylation.\n•\nNone of the intermediates in the pathway are utilised to synthesise\nany other compound.\n•\nOnly glucose is being respired – no other alternative substrates are\nentering in the pathway at any of the intermediary stages.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "But this kind of assumptions are not really valid in a living system; all\npathways work simultaneously and do not take place one after another;\nsubstrates enter the pathways and are withdrawn from it as and when\nnecessary; ATP is utilised as and when needed;  enzymatic rates are\ncontrolled by multiple means.  Yet, it is useful to do this exercise to\nappreciate the beauty and efficiency of the living system in extraction\nand storing energy. Hence, there can be a net gain of 38 ATP molecules\nduring aerobic respiration of one molecule of glucose.",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "234",
+    "BIOLOGY",
+    "2022-23"
+  ],
+  "note": "`previous_page_last_block` was null in the input, so I read the already-finished page 8 output (steps/A2/out/BIO11O-ch14-p008.runA.json) to judge the lead-in: page 8's last prose block ends mid-sentence at '...the energy released during the electron', and this page opens 'transport system is utilised in synthesising ATP', so block 1 continues it (first_block_continues_from_previous true) and every later block starts fresh (continues_from_previous false on each). Layout is a single text column with Figure 14.5 floated at the top left and the opening paragraph wrapping to its right; I kept the prose continuation as block 1 so the cross-page sentence stays first in reading order, then the figure, which sits above the 14.5 heading. Block 2's bbox covers the diagram, its in-figure labels (Outer side, ATP, 2H+, F0, F1, ADP, Pi, Matrix, Inner mitochondrial membrane) and the 'Figure 14.5 Diagramatic presentation of ATP synthesis in mitochondria' caption, so the caption is handled by the special transcriber rather than listed as removed furniture - same treatment as page 8. The page ends on a completed sentence, so last_block_continues_on_next is false. Prose copied from the text layer, which matches the image; the image was used for reading order and the bbox."
+}

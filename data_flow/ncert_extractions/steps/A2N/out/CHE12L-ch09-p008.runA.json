@@ -1,0 +1,17 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 2, "no_change": true},
+    {"n": 4, "no_change": true},
+    {"n": 5, "no_change": true},
+    {
+      "n": 9,
+      "corrected_text": "Difference in electronegativity between nitrogen and hydrogen atoms and the presence of unshared pair of electrons over the nitrogen atom makes amines reactive. The number of hydrogen atoms attached to nitrogen atom also decides the course of reaction of amines; that is why primary (–NH₂), secondary N H and tertiary amines N differ in many reactions.  Moreover, amines behave as nucleophiles due to the presence of unshared electron pair.  Some of the reactions of amines are described below:",
+      "fixes": [
+        {"wrong": "(–NH2)", "right": "(–NH₂)"}
+      ]
+    },
+    {"n": 11, "no_change": true}
+  ],
+  "note": "n=9: fixed the flattened subscript (-NH2) -> (-NH₂). That same block's phrase 'secondary N H and tertiary amines N' reflects a small bonded structure drawn on the page (two bond lines into N forming >N-H and >N-) that the text layer flattened into bare letters; this is not an exponent/subscript/radical/hat/modulus/degree/locant, so per scope it was left untouched and is flagged here rather than guessed at. All other blocks already matched the image exactly."
+}

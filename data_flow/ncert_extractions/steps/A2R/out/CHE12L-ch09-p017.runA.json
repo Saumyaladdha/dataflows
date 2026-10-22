@@ -1,0 +1,9 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {"kind": "duplicated", "what": "The Sandmeyer figure panel carries a stray oversized line of body text across its top -- 'sence of Cu(I) ion. This reaction is called S' -- which is a re-drawn fragment of the paragraph already set correctly just above it ('...in the presence of Cu(I) ion. This reaction is called Sandmeyer reaction.'). The book shows only the ArN2X / Cu2Cl2-Cu2Br2-CuCN scheme inside that space.", "where": "top of the ArN2X -> ArCl/ArBr/ArCN figure, just under item 1"},
+    {"kind": "misplaced", "what": "The folio footer '275 Amines' and its yellow rule are printed in the middle of item 4's second line instead of on their own line at the bottom right; the badge sits on top of 'themselves get oxidised to', which becomes unreadable where 'Amines' overprints it.", "where": "bottom, across item 4 'Replacement by H'"},
+    {"kind": "formatting", "what": "The book italicises each numbered lead-in ('Replacement by halide or cyanide ion', 'Replacement by iodide ion', 'Replacement by fluoride ion', 'Replacement by H'); the render sets all four in plain roman. 'Sandmeyer reaction' and 'Gatterman reaction' do keep their bold.", "where": "numbered items 1-4, right column"}
+  ],
+  "note": "Compared block by block: both section heads (9.8 Physical Properties, 9.9 Chemical Reactions), the A-heading, the four numbered items, the Sandmeyer scheme, the Gattermann scheme, the KI equation and the HBF4/fluoride equation are all present and in the right order. The two schemes are drawn much larger than in the book; I treated the enlargement itself as scale and did not report it, but it is what pushes item 4 into the folio. Superscript charge signs on ArN2X read correctly."
+}

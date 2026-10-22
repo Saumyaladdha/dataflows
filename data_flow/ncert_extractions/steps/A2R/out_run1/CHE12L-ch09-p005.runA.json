@@ -1,0 +1,21 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "The whole Example 9.1 worked-example box is absent. The book prints a blue-ruled box headed 'Example 9.1' containing the question 'Write chemical equations for the following reactions: (i) Reaction of ethanolic NH3 with C2H5Cl. (ii) Ammonolysis of benzyl chloride and reaction of amine so formed with two moles of CH3Cl.', the word 'Solution', and two full reaction sequences: (i) C2H5-Cl -> C2H5-NH2 -> C2H5-NH-C2H5 -> C2H5-N(C2H5)-C2H5 -> (C2H5)4N+Cl- labelled Chloroethane / Ethanamine / N-Ethylethanamine / N,N-Diethylethanamine / Quaternary ammonium Salt, and (ii) C6H5-CH2-Cl -> C6H5-CH2NH2 -> C6H5-CH2-N(CH3)CH3 labelled Benzylchloride / Benzylamine / N,N-Dimethylphenylmethanamine. The render shows none of it: the text runs straight from 'RI > RBr >RCl.' into '3. Reduction of nitriles', and the lower 40 percent of the page is empty.",
+      "where": "centre of the page, between 'The order of reactivity of halides...' and heading 3"
+    },
+    {
+      "kind": "formatting",
+      "what": "All functional-group colour coding is lost on this page. The book sets NH2/NH/N in magenta, the halogens Cl and X in green, and the reagent labels RX and NH3 over the arrows in magenta; the render prints every equation -- the RNH2/R2NH/R3N/R4N+X- series, R-NH3+X- + NaOH, the nitrile reduction R-C(triple)N and the amide reduction R-CO-NH2 -- entirely in black.",
+      "where": "every equation on the page"
+    },
+    {
+      "kind": "formatting",
+      "what": "In the amide reduction the carbonyl oxygen is set plain black and small; the book prints the O of the C=O in magenta above the double bar. Same loss in the nitrile structure, where C(triple)N is magenta in the book.",
+      "where": "the equation under heading 4, Reduction of amides"
+    }
+  ],
+  "note": "Compared the quaternary-salt series at the top, the free-amine-from-salt equation, the two ammonolysis paragraphs, the Example 9.1 box, and methods 3 and 4 with their equations. All of the running prose is present and correct, and the two reduction equations are structurally right (reagents H2/Ni over Na(Hg)/C2H5OH, and (i) LiAlH4 / (ii) H2O). The blank lower part of the page is accounted for by the absent Example 9.1 box, so it is reported as missing content, not as blank space. Line breaks and the removed watermark were ignored."
+}

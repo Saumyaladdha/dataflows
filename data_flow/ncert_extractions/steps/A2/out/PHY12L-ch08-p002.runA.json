@@ -1,0 +1,89 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "the speed of light( 3 ×10^8 m/s), obtained from optical measurements. This led to the remarkable conclusion that light is an electromagnetic wave. Maxwell’s work thus unified the domain of electricity, magnetism and light. Hertz, in 1885, experimentally demonstrated the existence of electromagnetic waves. Its technological use by Marconi and others led in due course to the revolution in communication that we are witnessing today.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "In this chapter, we first discuss the need for displacement current and its consequences. Then we present a descriptive account of electromagnetic waves. The broad spectrum of electromagnetic waves, stretching from γ rays (wavelength ~10^–12 m) to long radio waves (wavelength ~10^6 m) is described."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "8.2  DISPLACEMENT CURRENT"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "We have seen in Chapter 4 that an electrical current produces a magnetic field around it. Maxwell showed that for logical consistency, a changing electric field must also produce a magnetic field. This effect is of great importance because it explains the existence of radio waves, gamma rays and visible light, as well as all other forms of electromagnetic waves."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "To see how a changing electric field gives rise to a magnetic field, let us consider the process of charging of a capacitor and apply Ampere’s circuital law given by (Chapter 4)"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        767,
+        1339,
+        1544,
+        1404
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "to find magnetic  field at a point outside the capacitor. Figure 8.1(a)  shows a parallel plate capacitor C which is a part of circuit through which a time-dependent current i (t) flows . Let us find the magnetic field at a point such as P, in a region outside the parallel plate capacitor.  For this, we consider a plane circular loop of radius r whose plane is perpendicular to the direction of the current-carrying wire, and which is centred symmetrically with respect to the wire [Fig. 8.1(a)]. From symmetry, the magnetic field is directed along the circumference of the circular loop and is the same in magnitude at all points on the loop so that if B is the magnitude of the field, the left side of Eq. (8.1) is B (2π r). So we have"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        767,
+        2014,
+        1544,
+        2074
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "JAMES CLERK MAXWELL (1831–1879)"
+    },
+    {
+      "n": 10,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        376,
+        316,
+        639,
+        713
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "James Clerk Maxwell (1831 – 1879) Born in Edinburgh, Scotland, was among the greatest physicists of the nineteenth century. He derived the thermal velocity distribution of molecules in a gas and was among the first to obtain reliable estimates of molecular parameters from measurable quantities like viscosity, etc. Maxwell’s greatest acheivement was the unification of the laws of electricity and magnetism (discovered by Coulomb, Oersted, Ampere and Faraday) into a consistent set of equations now called Maxwell’s equations. From these he arrived at the most important conclusion that light is an electromagnetic wave. Interestingly, Maxwell did not agree with the idea (strongly suggested by the Faraday’s laws of electrolysis) that electricity was particulate in nature."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "202",
+    "Reprint 2026-27"
+  ],
+  "note": "The left-hand column is a full-height marginal side box (vertical tab label JAMES CLERK MAXWELL (1831–1879), portrait photograph, biography prose), not a text column of the body, so the body flow is listed first and the side box last; this keeps the running-text continuation flags meaningful. Page 1 ended 'turned out to be very close to' and this page's body opens 'the speed of light(...)', so block 1 continues from the previous page — judged from page 1, which I read myself in this batch (previous_page_last_block was null). TEXT LAYER vs IMAGE DISAGREEMENT: the text layer loses superscripts and substitutes Greek letters with Latin ones ('3 ×108' for 3 ×10^8, '~10–12 m' for ~10^-12 m, 'g rays' for γ rays, 'm0' for μ0, '2p r' for 2π r). Superscripts are written with ^ and Greek letters taken from the image. 'acheivement' is NCERT's own spelling in the side box and was left uncorrected."
+}

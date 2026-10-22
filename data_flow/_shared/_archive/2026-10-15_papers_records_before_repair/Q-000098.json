@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000098",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:82"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Which amongst the following options is correct graphical representation of Boyle's Law?",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Graph of $P$ vs $V$ with three curves labeled $T_1$, $T_2$, $T_3$ where $T_3 > T_2 > T_1$",
+    "2": "Graph of $P$ vs $1/V$ with three lines labeled $T_1$, $T_2$, $T_3$ where $T_3 > T_2 > T_1$",
+    "3": "Graph of $P$ vs $1/V$ with three curves labeled $T_1$, $T_2$, $T_3$ where $T_3 > T_2 > T_1$",
+    "4": "Graph of $P$ vs $T$ with three lines labeled $V_1$, $V_2$, $V_3$ where $V_1 < V_2 < V_3$"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "82\nWhich amongst the following options is correct graphical representation of Boyle’s Law?\n(1)\nGraph of P vs V with three curves\nlabeled T₁, T₂, T₃ where T₃ > T₂ > T₁\n(2)\nGraph of P vs 1/V with three lines\nlabeled T₁, T₂, T₃ where T₃ > T₂ > T₁\n(3)\nGraph of P vs 1/V with three curves\nlabeled T₁, T₂, T₃ where T₃ > T₂ > T₁\n(4)\nGraph of P vs T with three lines labeled\nV₁, V₂, V₃ where V₁ < V₂ < V₃\nStates of Matter\n",
+  "b4_script_options": {
+    "1": "Graph of P vs V with three curves\nlabeled T₁, T₂, T₃ where T₃ > T₂ > T₁",
+    "2": "Graph of P vs 1/V with three lines\nlabeled T₁, T₂, T₃ where T₃ > T₂ > T₁",
+    "3": "Graph of P vs 1/V with three curves\nlabeled T₁, T₂, T₃ where T₃ > T₂ > T₁",
+    "4": "Graph of P vs T with three lines labeled\nV₁, V₂, V₃ where V₁ < V₂ < V₃\nStates of Matter"
+  },
+  "official_answer": "2",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "physical",
+  "b6_answer": "2",
+  "b6_reason": "Boyle's law (PV = const at fixed T) gives P directly proportional to 1/V, so the correct plot is a straight line (not a curve) of P vs 1/V, and slope = nRT increases with temperature so T3 (highest T) has the steepest line.",
+  "b6_working": "P = (nRT) * (1/V) -> linear in (1/V) with slope nRT; higher T => larger slope, consistent with T3 > T2 > T1 ordering of the lines.",
+  "b6_confidence": "medium",
+  "b6_note": "Option 1 (P vs V hyperbolas, T3>T2>T1) is also a textbook-valid isotherm representation of Boyle's law; from text alone (no actual curve positions seen) I cannot fully rule it out, but option 2 is the cleaner/standard 'verifying Boyle's law' linear plot, and option 3 is wrong because P vs 1/V must be straight lines, not curves.",
+  "b6_agrees_with_key": true
+}

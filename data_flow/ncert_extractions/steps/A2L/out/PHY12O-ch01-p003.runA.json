@@ -1,0 +1,38 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 21.0,
+    "columns": [
+      {"id": "full", "x0": 0.0976, "x1": 0.8729}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0666],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.55, 0.0, 0.8729, 0.1212],
+     "column": "full", "size_rel": 2.0, "align": "center", "font": "sans-light",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.0976, 0.1354, 0.6876, 0.2792],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "box", "bbox": [0.0982, 0.2874, 0.8724, 0.8214],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "major_heading", "bbox": [0.2547, 0.2874, 0.7118, 0.3177],
+     "column": "full", "size_rel": 1.15, "align": "center", "font": "serif-bold",
+     "fill": "#00adef", "text_color": "#ffffff"},
+    {"n": null, "role": "decorative_image", "bbox": [0.7976, 0.8039, 0.8447, 0.8393],
+     "column": "full", "size_rel": 1.0, "fill": "#00adef"},
+    {"n": 3, "role": "paragraph", "bbox": [0.0976, 0.8448, 0.6876, 0.9389],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8141, 0.9155, 0.8724, 0.9371],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "serif",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5235, 0.9633],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif",
+     "text_color": "#000000"}
+  ],
+  "note": "Recto body page, single column. Margins mirror the verso: running prose occupies the inner measure x 0.098-0.688 and the outer 0.688-0.873 is a wide margin holding display boxes, the grey running-header panel and the folio, so the declared `full` column is the whole live area 0.098-0.873. page_header_band is the pale cyan #c6eafb strip at y 0-0.0666, closing with a solid cyan #00adef rule at y 0.0624-0.0666 and a thin lighter #41c7f4 hairline at y 0.0510-0.0551 over the inner half; no footer_rule anywhere on the page. The grey #d1d2d4 panel at top-right carries the running head 'Electric Charges and Fields'. Block n=2 is the 'UNIFICATION OF ELECTRICITY AND MAGNETISM' display box: a pale cyan #c6eafb rounded panel whose own title sits on a solid cyan #00adef bar with white type. The box carries n=2 for the whole panel, so the title bar is listed separately as major_heading with n: null to avoid two elements claiming one block. The small cyan/grey square device at the box's bottom-right corner is decorative. '2022-23' at the foot is the print-year furniture (role running_header); the folio '3' sits in a pale cyan box in the outer margin."
+}

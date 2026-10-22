@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/E4.json",
+  "title": "E4 agent output (e4-thinking-tagger), 2 runs + adjudicator",
+  "description": "Spec 13/E4 'Agent output': {\"primary\",\"secondary\",\"why\",\"confidence\",\"codebook_version\"}. The `primary`/`secondary` enum is config/allowed_values.yaml's `thinking_draft` -- the EIGHT draft categories, which spec 13.0 says E4 runs on until codebook/E4.md replaces them. The nine `thinking_candidates_for_owner` values beside them in the same YAML (trend_ranking, classification, proportional_reasoning, estimation, symbolic_derivation, spatial_structural, data_interpretation, experimental_reasoning, multi_concept) are DELIBERATELY NOT in this enum: spec 17.5 says they are 'for E0 and the owner, not for E4 until a codebook includes them', and codebook/E4.md §6 gives the mapping to use instead. There is no `new_thinking` value in this step, by design. ONE DELIBERATE ADDITION TO SPEC'S FIELD LIST -- `branch_used`, required: codebook/E4.md §1 is that the single most-confirmed E4 rule (10 of 10 real papers, no exceptions) is that a Chemistry expectation must be conditioned on B7's BRANCH and never on the word 'Chemistry', because physical chemistry behaves numerically like Physics while organic/inorganic behave descriptively like Biology. Nothing in spec's five-field output records whether the agent ever looked at the branch, so a branch-blind tagging would pass every schema and every value check in total silence -- which is exactly the failure this field exists to make impossible. It must equal the record's own `branch` verbatim ('none' when the record has no branch, as for Physics), cross-checked in scripts/checks/E4.py. Reverting to spec's exact five fields means deleting this one property here and its matching block in .claude/agents/e4-thinking-tagger.md. `note` optional per Universal rule 7.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["primary", "secondary", "why", "confidence", "codebook_version", "branch_used"],
+      "additionalProperties": false,
+      "properties": {
+        "primary": {
+          "type": "string",
+          "enum": [ "application", "calculation", "concept_discrimination", "condition_based_reasoning", "dimensional_check", "dimensional_reasoning", "elimination", "estimation", "explanatory_reasoning", "multi_step_dependent", "recall", "representation_translation", "several_independent_checks", "single_step", "symmetry", "unit_sanity" ],
+          "description": "The kind of thinking whose failure loses the mark (spec 13/E4 tie-break: 'primary = whatever makes the question hard'). config/allowed_values.yaml thinking_draft."
+        },
+        "secondary": {
+          "type": ["string", "null"],
+          "enum": [ "application", "calculation", "concept_discrimination", "condition_based_reasoning", "dimensional_check", "dimensional_reasoning", "elimination", "estimation", "explanatory_reasoning", "multi_step_dependent", "recall", "representation_translation", "several_independent_checks", "single_step", "symmetry", "unit_sanity", null ],
+          "description": "At most ONE secondary, and null is the normal case, not a deficiency (codebook/E4.md §4). Never a hedge between two readings of the primary -- use confidence: medium for that. Must differ from primary, and {recall, secondary elimination} (in either order) is forbidden because those are two points on one scale, not two kinds of thinking (codebook/E4.md §4). Both enforced in scripts/checks/E4.py."
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One sentence naming the specific hard step, checkable by a reviewer in seconds. 'Must judge four statements' is checkable; 'requires conceptual understanding' is not. scripts/checks/E4.py enforces a minimum substance, and more of it when the tag contradicts the branch prior (codebook/E4.md §1: 'if your tag contradicts the prior, that is normal -- say why in one clause and keep your tag')."
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "Spec 13/E4 Checks: 'confidence not low'. A low confidence is a check failure that routes the item to the adjudicator (E4_ADJUDICATED, normal) -- it is not an error by the agent, it is the designed escalation."
+        },
+        "codebook_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Spec 13.0: the content hash of codebook/E4.md as the runner passed it, or the literal 'none' when the file is absent. scripts/checks/E4.py recomputes the real hash (scripts/codebook_version.py) and FAILS a 'none' claimed while codebook/E4.md exists -- a wiring failure that would otherwise be invisible. config/steps.yaml still has codebook_file: null for E4, so 'none' is what a run today would honestly produce; the YAML to fix it is in config/_pending_E_entries.yaml."
+        },
+        "branch_used": {
+          "type": "string",
+          "enum": ["physical", "organic", "inorganic", "botany", "zoology", "unsure", "none"],
+          "description": "The branch the agent actually conditioned on, copied verbatim from the record's own `branch` field; 'none' when the record has no branch at all (Physics -- the taxonomy defines no Physics branch). config/allowed_values.yaml branch values for Chemistry (physical/organic/inorganic) and Biology (botany/zoology), plus B7's real 'unsure' output and the 'none' marker. NOTE a real taxonomy gap, reported not worked around: no step ever assigns botany/zoology -- B7 is the chem-branch sorter -- so every Biology record reads 'unsure' today (real Q-000015, the female reproductive cycle, should be 'zoology'). The two Biology values are in this enum so a future Biology sorter needs no schema change."
+        },
+        "note": { "type": "string", "description": "Universal rule 7. Optional." }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

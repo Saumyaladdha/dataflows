@@ -1,0 +1,42 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [127, 270, 890, 1023],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Fig. 12.1, they directed a beam of\n5.5 MeV α-particles emitted from a\n²¹⁴₈₃Bi radioactive source at a thin metal\nfoil made of gold. Figure 12.2 shows a\nschematic diagram of this experiment.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Alpha-particles emitted by a ²¹⁴₈₃Bi\nradioactive source were collimated into\na narrow beam by their passage\nthrough lead bricks. The beam was\nallowed to fall on a thin foil of gold of\nthickness 2.1 × 10⁻⁷ m. The scattered\nalpha-particles were observed through\na rotatable detector consisting of zinc\nsulphide screen and a microscope. The\nscattered alpha-particles on striking\nthe screen produced brief light flashes\nor scintillations. These flashes may be\nviewed through a microscope and the\ndistribution of the number of scattered\nparticles may be studied as a function\nof angle of scattering."
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [456, 1071, 1452, 1700],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "A typical graph of the total number of α-particles scattered at different\nangles, in a given interval of time, is shown in Fig. 12.3. The dots in this\nfigure represent the data points and the solid curve is the theoretical\nprediction based on the assumption that the target atom has a small,\ndense, positively charged nucleus. Many of the α-particles pass through\nthe foil. It means that they do not suffer any collisions. Only about 0.14%\nof the incident α-particles scatter by more than 1°; and about 1 in 8000\ndeflect by more than 90°. Rutherford argued that, to deflect the α-particle\nbackwards, it must experience a large repulsive force. This force could"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "292",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read p002 immediately before: it ended 'In one of their experiments, as shown in', and this page's right column opens 'Fig. 12.1, they directed a beam of', so the first prose block continues from the previous page. Reading order: left column (Fig. 12.1 with its caption, n=1) before the right column prose. Both figures are blocked needs_special with their captions inside the bbox (FIGURE 12.1 'Geiger-Marsden scattering experiment. The entire apparatus is placed in a vacuum chamber (not shown in this figure).' and FIGURE 12.2 'Schematic arrangement of the Geiger-Marsden experiment.'), so those caption strings are not transcribed as separate text blocks. Text-layer discrepancies corrected from the image: Greek alpha is flattened to Latin 'a' throughout ('5.5 MeV a-particles', 'a-particles'), and super/subscripts are dropped or broken onto separate lines — the text layer gives '214\\n83Bi' for the bismuth isotope and '10–7' for the power of ten; I have written ²¹⁴₈₃Bi and 10⁻⁷ as printed in the image. Page ends mid-sentence ('This force could')."
+}

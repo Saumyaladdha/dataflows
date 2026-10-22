@@ -1,0 +1,52 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [207, 327, 850, 1145],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [272, 1221, 850, 1962],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "4.2.7\nPhylum – Arthropoda"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "This is the largest phylum of Animalia which\nincludes insects. Over two-thirds of all named\nspecies on earth are arthropods (Figure 4.12).\nThey have organ-system level of organisation.\nThey are bilaterally symmetrical, triploblastic,\nsegmented and coelomate animals. The body\nof arthropods is covered by chitinous\nexoskeleton. The body consists of head, thorax\nand abdomen. They have jointed appendages\n(arthros-joint, poda-appendages). Respiratory\norgans are gills, book gills, book lungs or\ntracheal system. Circulatory system is of open\ntype. Sensory organs like antennae, eyes\n(compound and simple), statocysts or\nbalancing organs are present.  Excretion takes\nplace through malpighian tubules. They are\nmostly dioecious. Fertilisation is usually\ninternal. They are mostly oviparous.\nDevelopment may be direct or indirect.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "Examples: Economically important insects –\nApis (Honey bee), Bombyx (Silkworm), Laccifer\n(Lac insect)\nVectors – Anopheles, Culex and Aedes\n(Mosquitoes)\nGregarious pest – Locusta (Locust)\nLiving fossil – Limulus (King crab)."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "4.2.8\nPhylum – Mollusca"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "This is the second largest animal phylum\n(Figure 4.13). Molluscs are terrestrial or aquatic\n(marine or fresh water) having an organ-system\nlevel of organisation. They are bilaterally\nsymmetrical, triploblastic and coelomate\nanimals. Body is covered by a calcareous shell\nand is unsegmented with a distinct head,\nmuscular foot and visceral hump. A soft and\nspongy layer of skin forms a mantle over the\nvisceral hump. The space between the hump\nand the mantle is called the mantle cavity in\nwhich feather like gills are present. They have\nrespiratory and excretory functions. The\nanterior head region has sensory tentacles. The\nmouth contains a file-like rasping organ for\nfeeding, called radula."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "44",
+    "BIOLOGY",
+    "2024-25"
+  ],
+  "note": "Read from text_layer, cross-checked against the page image for layout and figure bboxes. Two-column page: the left column holds only the two figures (taken first per left-column-first reading order), the right column holds all the prose. Figure part-labels and captions (\"(a)\" \"(b)\" \"(c)\" \"(d)\", \"Figure 4.12 Examples of Arthropoda : (a) Locust (b) Butterfly (c) Scorpion (d) Prawn\", \"Figure 4.13 Examples of Mollusca : (a) Pila (b) Octopus\") fall inside the needs_special figure bboxes and are left untranscribed. previous_page_last_block was null; the page's text begins with heading 4.2.7, a clear section start, so first_block_continues_from_previous is false on this page's own evidence. The last block ends on a complete sentence (\"...called radula.\"), so last_block_continues_on_next is false, though section 4.2.8 itself plainly runs on to the next page."
+}

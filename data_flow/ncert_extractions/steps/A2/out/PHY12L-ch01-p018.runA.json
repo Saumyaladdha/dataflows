@@ -1,0 +1,80 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [567, 300, 1015, 376],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Thus, the heavier particle (proton) takes a greater time to fall through the same distance. This is in basic contrast to the situation of ‘free fall under gravity’ where the time of fall is independent of the mass of the body. Note that in this example we have ignored the acceleration due to gravity in calculating the time of fall. To see if this is justified, let us calculate the acceleration of the proton in the given electric field:"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [567, 624, 1150, 864],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "which is enormous compared to the value of g (9.8 m s–2), the acceleration due to gravity. The acceleration of the electron is even greater. Thus, the effect of acceleration due to gravity can be ignored in this example."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Example 1.8 Two point charges q1 and q2, of magnitude +10–8 C and –10–8 C, respectively, are placed 0.1 m apart. Calculate the electric fields at points A, B and C shown in Fig. 1.11."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [745, 1177, 1307, 1685],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Solution The electric field vector E1A at A due to the positive charge q1 points towards the right and has a magnitude"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [564, 1766, 1177, 1841],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The electric field vector E2A at A due to the negative charge q2 points towards the right and has the same magnitude. Hence the magnitude of the total electric field EA at A is"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [564, 1960, 983, 1993],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "EA is directed toward the right."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "18",
+    "Reprint 2026-27",
+    "EXAMPLE 1.7",
+    "EXAMPLE 1.8"
+  ],
+  "note": "Input gave previous_page_last_block as null even though this is page 18; judged continuation from the page image itself — the page opens mid-derivation inside the shaded 'Example 1.7' box (the top equation finishes the time-of-fall calculation begun on the previous page). Page ends mid-box: Example 1.8 has computed only the field at A, so fields at B and C continue on the next page. 'EXAMPLE 1.7' and 'EXAMPLE 1.8' are vertical side-tab labels in the left margin (they appear hoisted to the top of the text layer, out of reading order); listed as removed marginalia rather than as content blocks. Blocks 1-4 belong to the Example 1.7 shaded box and blocks 5-11 to the Example 1.8 shaded box; they are listed as their constituent paragraph/equation/figure blocks because the boxes span pages and contain a figure and displayed equations needing special transcription. Displayed equations and Fig. 1.11 (with its 'FIGURE 1.11' caption, included in the figure bbox) are marked needs_special; their text layer is scrambled below word level as expected. Bounding boxes are in pixels of the supplied 1700x2160 page image."
+}

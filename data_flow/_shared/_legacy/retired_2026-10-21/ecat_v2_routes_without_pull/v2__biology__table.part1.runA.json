@@ -1,0 +1,63 @@
+{
+  "group": "v2__biology__table.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q054",
+      "question_type": "pair_options",
+      "format": "pick_both_parts",
+      "content_shape": "classification_hierarchy",
+      "concept": "Gaseous versus sedimentary nutrient cycles: carbon and nitrogen have an atmospheric reservoir, sulphur and phosphorus a crustal one",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Carbon belongs to a gaseous cycle; that one fact strikes out options 1 and 4, which both file carbon under the sedimentary cycle.",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "Swaps the two cycles round. Carbon and nitrogen go to the sedimentary cycle and sulphur and phosphorus to the gaseous one, which is the keyed option backwards."
+        },
+        {
+          "label": "half_true",
+          "option": "3",
+          "route": "Gets carbon right in the gaseous cycle but moves sulphur up with it. Sulphur's reservoir is rock, so it belongs with phosphorus in the sedimentary cycle."
+        },
+        {
+          "label": "half_true",
+          "option": "4",
+          "route": "Gets nitrogen right in the gaseous cycle but puts carbon in the sedimentary one. Carbon's reservoir is the atmosphere."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires telling two neighbouring cycle types apart by where the reservoir sits, demonstrated by the stem's \"both pairs have correct combination\" and option 2's \"Gaseous nutrient cycle - Carbon and Nitrogen / Sedimentary nutrient cycle - Sulphur and Phosphorus\".",
+      "note": "Four elements are filed one at a time and the two halves of the chosen option must both hold, which is why format is pick_both_parts rather than pick_correct_statement."
+    },
+    {
+      "question_id": "2015_A#q134",
+      "question_type": "pair_options",
+      "format": "pick_correct_statement",
+      "content_shape": "example_list",
+      "concept": "Standard examples of asexual and vegetative reproduction: rhizome in banana, conidia in Penicillium, offset in water hyacinth, binary fission in Amoeba and Paramecium",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Conidia are the asexual spores of Penicillium, the pairing printed in option 3, so that one taught fact strikes option 3 out.",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Answers the question without its \"not\". Banana's underground stem is a rhizome, so the pair is correctly matched."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "Answers the question without its \"not\". Penicillium does reproduce by conidia."
+        }
+      ],
+      "verdicts": ["arguable_key"],
+      "reason": "This question requires grading four taught mode-to-example pairs, demonstrated by option 3's \"Conidia - Penicillium\" and option 1's \"Rhizome - Banana\", each of which is a printed textbook pairing.",
+      "note": "The printed key is option 4, \"Offset - Water hyacinth\", and the tag follows it. On the subject matter that pairing is the one NCERT gives for offsets, while option 2, \"Binary fission - Sargassum\", is the pair the book does not support: Sargassum reproduces by fragmentation and binary fission is taught for Amoeba and Paramecium. arguable_key records that doubt; the key is not overturned here. No trap is written on option 2 for that reason - if the booklet answer is option 2 rather than option 4, a trap there would sit on the answer. The option block is printed as a table headed \"Mode of eproduction | Example\" (the paper's own or our typo for \"reproduction\"), and the primary shape is still pair_options because each row is one pair accepted or rejected whole."
+    }
+  ],
+  "group_note": "Both members print their options as rows of a table and each option is a pairing graded whole, so both take pair_options as the primary type. Neither takes table_based as a secondary: section 1 defines that overlay as a table IN THE STEM that must be read across rows, and in both of these the table IS the option block, which the pair_options label already covers. That is also why the packet's measured structure of \"table\" is not itself the E1 answer. The two differ in how much each option asserts, and format follows that: q054 bundles two pairings per option and says \"both pairs\", so half right scores nothing and the answer form is pick_both_parts; q134 offers one pairing per option to be graded true or false, so it is pick_correct_statement. Demand differs for the same reason - q054 turns on telling the gaseous cycle from the sedimentary one, a discrimination between two neighbouring classes, whereas q134 is four separate remembered pairings. Both are several_independent_checks, not multi-step: no check needs the result of another. Traps were written only where a route can be named against the printed key. q054's three wrong options are a clean set - one full swap and two half-swaps - and all three are tagged. q134 is negated, so its wrong options are true pairings offered where the task wants the false one, which is true_statement_trap by definition; only options 1 and 3 carry it, because option 2's pairing is the one the subject matter does not support and tagging it would risk placing a trap on the real answer. That doubt is recorded as arguable_key instead."
+}

@@ -1,0 +1,18 @@
+{
+  "blocks": [
+    {"n": 2, "no_change": true},
+    {"n": 5, "no_change": true},
+    {"n": 6, "no_change": true},
+    {"n": 8, "no_change": true},
+    {"n": 9, "no_change": true},
+    {
+      "n": 12,
+      "corrected_text": "Like ammonia, nitrogen atom of amines is trivalent and carries an unshared pair of electrons.  Nitrogen orbitals in amines are therefore, sp³ hybridised and the geometry of amines is pyramidal. Each of  the three sp³ hybridised orbitals of nitrogen overlap with orbitals of hydrogen or carbon depending upon the composition of the amines. The fourth orbital of nitrogen in all amines contains an unshared pair of electrons.  Due to the presence of unshared pair of electrons, the angle C–N–E, (where E is",
+      "fixes": [
+        {"wrong": "sp3", "right": "sp³"},
+        {"wrong": "sp3", "right": "sp³"}
+      ]
+    }
+  ],
+  "note": "n=12 had two flattened exponents (sp3 -> sp³, hybridisation notation) restored to match the image. All other blocks on this page (objectives list, intro prose, amine definition) already matched the image exactly; no formulas appear in them."
+}

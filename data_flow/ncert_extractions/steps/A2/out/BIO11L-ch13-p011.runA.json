@@ -1,0 +1,80 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        213,
+        289,
+        867,
+        970
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Auxins also induce parthenocarpy, e.g., in\ntomatoes. They are widely used as herbicides.\n2, 4-D, widely used to kill dicotyledonous\nweeds, \ndoes \nnot \naffect \nmature\nmonocotyledonous plants. It is used to prepare\nweed-free lawns by gardeners. Auxin also\ncontrols xylem differentiation and helps in cell\ndivision.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "13.4.3.2 Gibberellins"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Gibberellins are another kind of promotory\nPGR. There are more than 100 gibberellins\nreported from widely different organisms such\nas fungi and higher plants. They are denoted\nas GA1, GA2, GA3 and so on. However,\nGibberellic acid (GA3) was one of the first\ngibberellins to be discovered and remains the\nmost intensively studied form. All GAs are\nacidic. They produce a wide range of physiological responses in the plants.\nTheir ability to cause an increase in length of axis is used to increase the\nlength of grapes stalks. Gibberellins, cause fruits like apple to elongate\nand improve its shape. They also delay senescence. Thus, the fruits can\nbe left on the tree longer so as to extend the market period. GA3 is used to\nspeed up the malting process in brewing industry.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Sugarcane stores carbohydrate as sugar in their stems. Spraying\nsugarcane crop with gibberellins increases the length of the stem, thus\nincreasing the yield by as much as 20 tonnes per acre.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Spraying juvenile conifers with GAs hastens the maturity period, thus\nleading to early seed production. Gibberellins also promotes bolting\n(internode elongation just prior to flowering) in beet, cabbages and many\nplants with rosette habit.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "13.4.3.3 Cytokinins"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Cytokinins have specific effects on cytokinesis, and were discovered as\nkinetin (a modified form of adenine, a purine) from the autoclaved herring\nsperm DNA. Kinetin does not occur naturally in plants. Search for natural\nsubstances with cytokinin-like activities led to the isolation of zeatin from\ncorn-kernels and coconut milk. Since the discovery of zeatin, several\nnaturally occurring cytokinins, and some synthetic compounds with cell\ndivision promoting activity, have been identified. Natural cytokinins are",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "176",
+    "BIOLOGY",
+    "13.4.3.2",
+    "13.4.3.2",
+    "13.4.3.2",
+    "13.4.3.2",
+    "Gibberellins",
+    "Gibberellins",
+    "Gibberellins",
+    "Gibberellins",
+    "13.4.3.3",
+    "13.4.3.3",
+    "13.4.3.3",
+    "13.4.3.3",
+    "Cytokinins",
+    "Cytokinins",
+    "Cytokinins",
+    "Cytokinins",
+    "2024-25"
+  ],
+  "note": "Used text_layer, cross-checked against image. Mixed layout: the top of the page is two columns (narrow left column holding Figure 13.11, wide right column holding prose), so the figure is read first; below the figure the text reverts to full page width, and the Gibberellins paragraph (block 4) starts in the narrow right column and runs on into the full-width lines, so it is one paragraph. Judged both continuations from the pages themselves (previous_page_last_block was null): page 10 closed at \"Can you explain why?\", so nothing continues in; this page ends mid-sentence (\"...Natural cytokinins are\"), so the last block continues onto page 12. Same text-layer defect as page 10: the italic sub-headings 13.4.3.2 Gibberellins and 13.4.3.3 Cytokinins are each printed ONCE but the layer emits each five times as a faux-bold overprint (four bare number lines, then the full heading, then four bare word lines). I kept one real heading each (blocks 3 and 7) and listed the sixteen duplicate artefact lines in running_header_footer_removed so the coverage check can discount them; no listed string is identical to any block's text. Figure 13.11's panel letters ((a), (b)) and its caption lie inside the declared figure bbox and are left for the special transcriber. GA1, GA2, GA3 are printed with subscripts, flattened in the layer and copied as given. Also removed page number 176, running header BIOLOGY and reprint year 2024-25."
+}

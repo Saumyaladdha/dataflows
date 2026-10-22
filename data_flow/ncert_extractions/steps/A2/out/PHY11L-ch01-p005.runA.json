@@ -1,0 +1,102 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "or 2.0000 as required. Similarly, in T = t/n, n is an exact number.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "1.3.1 Rules for Arithmetic Operations with Significant Figures"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The result of a calculation involving approximate measured values of quantities (i.e. values with limited number of significant figures) must reflect the uncertainties in the original measured values. It cannot be more accurate than the original measured values themselves on which the result is based. In general, the final result should not have more significant figures than the original data from which it was obtained. Thus, if mass of an object is measured to be, say, 4.237 g (four significant figures) and its volume is measured to be 2.51 cm3, then its density, by mere arithmetic division, is 1.68804780876 g/cm3 upto 11 decimal places. It would be clearly absurd and irrelevant to record the calculated value of density to such a precision when the measurements on which the value is based, have much less precision. The following rules for arithmetic operations with significant figures ensure that the final result of a calculation is shown with the precision that is consistent with the precision of the input measured values :"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "(1)  In multiplication or division, the final result should retain as many significant figures as are there in the original number with the least significant figures."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Thus, in the example above, density should be reported to three significant figures."
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        230,
+        1390,
+        715,
+        1460
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Similarly, if the speed of light is given as 3.00 × 108 m s-1 (three significant figure) and one year (1y = 365.25 d) has 3.1557 × 107 s (five significant figures), the light year is 9.47 × 1015 m (three significant figures)."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "(2) In addition or subtraction, the final result should retain as many decimal places as are there in the number with the least decimal places."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "For example, the sum of the numbers 436.32 g, 227.2 g and 0.301 g by mere arithmetic addition, is 663.821 g. But the least precise measurement (227.2 g) is correct to only one decimal place. The final result should, therefore, be rounded off to 663.8 g."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Similarly, the difference in length can be expressed as :"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        880,
+        352,
+        1420,
+        390
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Note that we should not use the rule (1) applicable for multiplication and division and write 664 g as the result in the example of addition and 3.00 × 10–3 m in the example of subtraction. They do not convey the precision of measurement properly. For addition and subtraction, the rule is in terms of decimal places."
+    },
+    {
+      "n": 13,
+      "kind": "heading",
+      "text": "1.3.2   Rounding off the Uncertain Digits"
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The result of computation with approximate numbers, which contain more than one uncertain digit, should be rounded off. The rules for rounding off numbers to the appropriate significant figures are obvious in most cases. A number 2.746 rounded off to three significant figures is 1.75, while the number 1.743 would be 1.74. The rule by convention is that the preceding digit is raised by 1 if the insignificant digit to be dropped (the underlined digit in this case) is more than 5, and is left unchanged if the latter is less than 5. But what if the number is 2.745 in which the insignificant digit is 5. Here, the convention is that if the preceding digit is even, the insignificant digit is simply dropped and, if it is odd, the preceding digit is raised by 1. Then, the number 2.745 rounded off to three significant figures becomes 1.74. On the other hand, the number 2.735 rounded off to three significant figures becomes 1.74 since the preceding digit is odd."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "In any involved or complex multi-step calculation, you should retain, in intermediate steps, one digit more than the significant digits and round off to proper significant figures at the end of the calculation. Similarly, a number known to be within many significant figures, such as in 1.99792458 × 108 m/s for the speed of light in vacuum, is rounded off to an approximate value 3 × 108 m/s , which is often employed in computations. Finally, remember that exact numbers that appear in formulae like 2 π in T = 2π√(L/g), have a large (infinite) number"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "UNITS AND MEASUREMENT",
+    "5",
+    "2024-25"
+  ],
+  "note": "Judged first_block_continues_from_previous from page 4, which I read myself in this batch (previous_page_last_block was null): page 4 ends mid-sentence with 'it can be written as 2.0, 2.00' and this page opens 'or 2.0000 as required'. Blocks 6 and 11 are the two display equations, left for the special transcriber with bounding boxes. Two inline formulae are garbled in the text layer (the stacked fraction in block 1, printed as 'T = t/n', and the square root in block 15, printed as 'T = 2π√(L/g)'); both were read from the image and written linearly inside their sentences rather than split out, since they sit mid-sentence. Block 9 runs across the column break. The printed text carries what look like NCERT typos that I have copied unchanged: '2.746 rounded off to three significant figures is 1.75', '2.745 ... becomes 1.74', '2.735 ... becomes 1.74', and '1.99792458 × 108 m/s' for the speed of light; the image and the text layer agree on all of them."
+}

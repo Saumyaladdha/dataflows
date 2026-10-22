@@ -1,0 +1,57 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "Example 5.5\nDraw structures of geometrical isomers of [Fe(NH₃)₂(CN)₄]⁻",
+      "fixes": [
+        {"wrong": "[Fe(NH3)2(CN)4]–", "right": "[Fe(NH₃)₂(CN)₄]⁻"}
+      ]
+    },
+    {
+      "n": 3,
+      "corrected_text": "Example 5.6\nOut of the following two coordination entities which is chiral (optically active)?\n(a) cis-[CrCl₂(ox)₂]³⁻\n(b) trans-[CrCl₂(ox)₂]³⁻",
+      "fixes": [
+        {"wrong": "cis-[CrCl2(ox)2]3–", "right": "cis-[CrCl₂(ox)₂]³⁻"},
+        {"wrong": "trans-[CrCl2(ox)2]3–", "right": "trans-[CrCl₂(ox)₂]³⁻"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "Out of the two, (a) cis - [CrCl₂(ox)₂]³⁻ is chiral (optically active).",
+      "fixes": [
+        {"wrong": "[CrCl2(ox)2]3-", "right": "[CrCl₂(ox)₂]³⁻"}
+      ]
+    },
+    {
+      "n": 8,
+      "corrected_text": "Linkage isomerism arises in a coordination compound containing ambidentate ligand. A simple example is provided by complexes containing the thiocyanate ligand, NCS⁻, which may bind through the nitrogen to give M–NCS or through sulphur to give M–SCN. Jørgensen discovered such behaviour in the complex [Co(NH₃)₅(NO₂)]Cl₂, which is obtained as the red form, in which the nitrite ligand is bound through oxygen (–ONO), and as the yellow form, in which the nitrite ligand is bound through nitrogen (–NO₂).",
+      "fixes": [
+        {"wrong": "NCS–", "right": "NCS⁻"},
+        {"wrong": "[Co(NH3)5(NO2)]Cl2", "right": "[Co(NH₃)₅(NO₂)]Cl₂"},
+        {"wrong": "(–NO2)", "right": "(–NO₂)"}
+      ]
+    },
+    {
+      "n": 10,
+      "corrected_text": "This type of isomerism arises from the interchange of ligands between cationic and anionic entities of different metal ions present in a complex. An example is provided by [Co(NH₃)₆][Cr(CN)₆], in which the NH₃ ligands are bound to Co³⁺ and the CN⁻ ligands to Cr³⁺. In its coordination isomer [Cr(NH₃)₆][Co(CN)₆], the NH₃ ligands are bound to Cr³⁺ and the CN⁻ ligands to Co³⁺.",
+      "fixes": [
+        {"wrong": "[Co(NH3)6][Cr(CN)6]", "right": "[Co(NH₃)₆][Cr(CN)₆]"},
+        {"wrong": "NH3 ligands", "right": "NH₃ ligands"},
+        {"wrong": "Co3+", "right": "Co³⁺"},
+        {"wrong": "CN–", "right": "CN⁻"},
+        {"wrong": "Cr3+", "right": "Cr³⁺"},
+        {"wrong": "[Cr(NH3)6][Co(CN)6]", "right": "[Cr(NH₃)₆][Co(CN)₆]"}
+      ]
+    },
+    {
+      "n": 12,
+      "corrected_text": "This form of isomerism arises when the counter ion in a complex salt is itself a potential ligand and can displace a ligand which can then become the counter ion. An example is provided by the ionisation isomers [Co(NH₃)₅(SO₄)]Br and [Co(NH₃)₅Br]SO₄.",
+      "fixes": [
+        {"wrong": "[Co(NH3)5(SO4)]Br", "right": "[Co(NH₃)₅(SO₄)]Br"},
+        {"wrong": "[Co(NH3)5Br]SO4", "right": "[Co(NH₃)₅Br]SO₄"}
+      ]
+    }
+  ],
+  "note": "Six of the seven blocks needed notation repair: flattened ligand-count subscripts throughout, flattened complex-ion charges ([Fe(NH₃)₂(CN)₄]⁻, [CrCl₂(ox)₂]³⁻ in three places) and flattened oxidation-state/ion charges (Co³⁺, Cr³⁺, CN⁻, NCS⁻). n=6 stored the charge with an ASCII hyphen ('3-') where the page prints a raised minus; corrected to ³⁻. The bridging/bonding dashes in M–NCS, M–SCN, (–ONO), (–NO₂) are en dashes on the page and were left as stored. n=4 is a one-line prose lead-in with nothing to fix. No degree symbols, locants or primes on this page."
+}

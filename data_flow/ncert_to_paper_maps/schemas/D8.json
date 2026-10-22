@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/D8.json",
+  "title": "D8 agent output (d8-fact-line-writer)",
+  "description": "Section 12/D8 'Agent output' line and .claude/agents/d8-fact-line-writer.md's worked output shape: {\"fact_line\", \"facts\": [...], \"confidence\"}. The style rules (present tense, subject first, no option numbers, no 'which of the following'; 'Problem: ... Rule: ...' for numericals; ' | '-joined true-statement facts for statement questions) are checked as far as a script honestly can in scripts/checks/D8.py — that file's docstring says exactly which of them are NOT mechanically checkable and why. `note` is optional, carrying Universal rule 7 (added deliberately: its absence from schemas/D1.json/D2.json was a real bug, docs/OPEN_QUESTIONS.md 2026-10-12).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["fact_line", "facts", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "fact_line": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One line stating the fact this question tests, in the standard wording. For a numerical: 'Problem: <setup in general terms>. Rule: <formula>.' with no specific numbers."
+        },
+        "facts": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "For a statement question, the fact of each TRUE statement, in the same order as fact_line joins them with ' | '. Empty for a single-fact question or a numerical (the agent file's own numerical example has facts: [])."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

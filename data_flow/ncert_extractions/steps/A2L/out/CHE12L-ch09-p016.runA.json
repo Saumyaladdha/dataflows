@@ -1,0 +1,50 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.0, "x1": 0.285},
+      {"id": "right", "x0": 0.304, "x1": 0.933}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.1088, 0.0904, 0.135, 0.3606],
+     "column": "left", "size_rel": 1.0, "fill": "#f48480"},
+    {"n": null, "role": "rule_bar", "bbox": [0.1438, 0.1147, 0.2988, 0.1157],
+     "column": "left", "size_rel": 1.0, "fill": "#f48480"},
+    {"n": 1, "role": "box", "bbox": [0.1031, 0.0867, 0.9231, 0.3638],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "major_heading", "bbox": [0.3038, 0.3803, 0.5131, 0.3899],
+     "column": "right", "size_rel": 1.0, "align": "left", "font": "serif-bold",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "paragraph", "bbox": [0.3031, 0.4005, 0.9287, 0.5624],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "paragraph", "bbox": [0.3038, 0.5679, 0.9287, 0.6427],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "figure", "bbox": [0.3887, 0.6518, 0.8037, 0.7491],
+     "column": "right", "size_rel": 1.0},
+    {"n": 6, "role": "section_heading", "bbox": [0.1013, 0.7615, 0.2794, 0.8413],
+     "column": "left", "size_rel": 1.6, "align": "right", "text_color": "#6d6e71"},
+    {"n": null, "role": "rule_bar", "bbox": [0.0, 0.8468, 0.2794, 0.8491],
+     "column": "left", "size_rel": 1.0, "fill": "#f48480"},
+    {"n": 7, "role": "paragraph", "bbox": [0.3038, 0.7633, 0.9287, 0.8569],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 8, "role": "equation", "bbox": [0.3381, 0.8651, 0.8906, 0.8839],
+     "column": "right", "size_rel": 1.0, "align": "center"},
+    {"n": null, "role": "running_header", "bbox": [0.1025, 0.9028, 0.19, 0.9128],
+     "column": "left", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71"},
+    {"n": null, "role": "page_number", "bbox": [0.2006, 0.9069, 0.2412, 0.9174],
+     "column": "left", "size_rel": 1.0, "align": "right", "text_color": "#6d6e71",
+     "fill": "#fecb03"},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9156, 0.2412, 0.9174],
+     "column": "left", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.8, "align": "center"}
+  ],
+  "note": "Two-column body page (verso, folio 274) opening with a large Intext Questions box (questions 9.4-9.8). A2's block n=1 is the whole box including the words 'Intext Questions', so the box element carries n=1 over the printed frame (pale grey rounded border x 0.1031-0.9231, y 0.0867-0.3638, white interior); the salmon #f48480 bar down its left edge (sampled x174-215px) and the 2px salmon rule under the words 'Intext Questions' (y 250-252px, x 0.1438-0.2988) are separate furniture with n:null. This box's accent is SALMON, as on p004 and p007, not the blue used for the worked-example boxes. Block n=2 ('II. DIAZONIUM SALTS') is the chapter's second top-level roman heading, set in bold serif near-black #221f1f inside the text column - the same treatment as 'I. AMINES' on p001, hence major_heading rather than section_heading. Section heading n=6 ('9.7 Method of Preparation of Diazoniun Salts') sets on FOUR lines in the left margin column, the longest margin heading in the chapter, with the salmon rule beneath; it shares its first baseline with paragraph n=7 beside it. body_text_size_px=20.5 from this page's body cap heights."
+}

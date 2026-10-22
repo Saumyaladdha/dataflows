@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000381",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_path": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_url": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_row": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_match_confidence": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:90"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "The correct IUPAC name of the following compound is",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "1-bromo-5-chloro-4-methylhexan-3-ol",
+    "2": "6-bromo-2-chloro-4-methythexan-4-ol",
+    "3": "1-bromo-4-methyl-5-chlorohexan-3-ol",
+    "4": "6-bromo-4-methyl-2-chlorohexan-4-ol"
+  },
+  "structure": "plain",
+  "has_figure": true,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "90\nThe correct IUPAC name of the following compound is\n(1)\n1-bromo-5-chloro-4-methylhexan-3-\nol\n(2)\n6-bromo-2-chloro-4-methythexan-4-ol\n(3)\n1-bromo-4-methyl-5-chlorohexan-3-ol\n(4)\n6-bromo-4-methyl-2-chlorohexan-4-ol\nOrganic Chemistry Basic Principles\n",
+  "b4_script_options": {
+    "1": "1-bromo-5-chloro-4-methylhexan-3-\nol",
+    "2": "6-bromo-2-chloro-4-methythexan-4-ol",
+    "3": "1-bromo-4-methyl-5-chlorohexan-3-ol",
+    "4": "6-bromo-4-methyl-2-chlorohexan-4-ol\nOrganic Chemistry Basic Principles"
+  },
+  "figure_path": "papers/figures/Q-000381.png",
+  "figure_source_url": "https://cdn.mathpix.com/snip/images/6zijawZQfhuIQTMP0XHayEvDsmQDemm4MnHI7h5FY1I.original.fullsize.png",
+  "figure_source_row": "NEET-UG_pyq_2022.xlsx#90",
+  "figure_match_confidence": "high",
+  "official_answer": "1",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "organic",
+  "b6_answer": null,
+  "b6_agrees_with_key": null
+}

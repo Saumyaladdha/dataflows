@@ -1,0 +1,57 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [175, 288, 1129, 328],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Since both nf and ni are integers, this immediately shows that  in\ntransitions between different atomic levels, light is radiated in various\ndiscrete frequencies."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The various lines in the atomic spectra are produced when electrons\njump from higher energy state to a lower energy state and photons are\nemitted. These spectral lines are called emission lines. But when an atom\nabsorbs a photon that has precisely the same energy needed by the\nelectron in a lower energy state to make transitions to a higher energy\nstate, the process is called absorption. Thus if photons with a continuous\nrange of frequencies pass through a rarefied gas and then are analysed\nwith a spectrometer, a series of dark spectral absorption lines appear in\nthe continuous spectrum. The dark lines indicate the frequencies that\nhave been absorbed by the atoms of the gas."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The explanation of the hydrogen atom spectrum provided by Bohr’s\nmodel was a brilliant achievement, which greatly stimulated progress\ntowards the modern quantum theory. In 1922, Bohr was awarded Nobel\nPrize in Physics."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "12.6 DE BROGLIE’S EXPLANATION OF BOHR’S SECOND POSTULATE OF QUANTISATION"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Of all the postulates, Bohr made in his model of the atom,\nperhaps the most puzzling is his second postulate. It states\nthat the angular momentum of the electron orbiting around\nthe nucleus is quantised (that is, Ln = nh/2π; n  = 1, 2, 3 …).\nWhy should the angular momentum have only those values\nthat are integral multiples of h/2π? The French physicist Louis\nde Broglie explained this puzzle in 1923, ten years after Bohr\nproposed his model."
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [996, 1092, 1442, 1760],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "We studied, in Chapter 11, about the de Broglie’s\nhypothesis that material particles, such as electrons, also\nhave a wave nature. C. J. Davisson and L. H. Germer later\nexperimentally verified the wave nature of electrons in 1927.\nLouis de Broglie argued that the electron in its circular orbit,\nas proposed by Bohr, must be seen as a particle wave. In\nanalogy to waves travelling on a string, particle waves too\ncan lead to standing waves under resonant conditions. From\nChapter 14 of Class XI Physics  textbook, we know that when\na string is plucked, a vast number of wavelengths are excited.\nHowever only those wavelengths survive which have nodes\nat the ends and form the standing wave in the string. It means\nthat in a string, standing waves are formed when the total distance\ntravelled by a wave down the string and back is one wavelength, two\nwavelengths, or any integral number of wavelengths. Waves with other\nwavelengths interfere with themselves upon reflection and their\namplitudes quickly drop to zero. For an electron moving in nth circular\norbit of radius rn, the total distance is the circumference of the orbit,\n2πrn. Thus"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Atoms",
+    "301",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read p011 immediately before: its body text ended 'carried away by a photon of frequency νif such that', and this page opens with the display equation hνif = Eni – Enf numbered (12.11), which completes that sentence — so block 1 continues from the previous page. n=1 is needs_special with empty text, bbox drawn full column width so the '(12.11)' number is inside it. Fig. 12.8 (n=7, needs_special) is the right-column standing-wave diagram; its bbox includes the labels λ, 'Nucleus', r and the FIGURE 12.8 caption, so those are not transcribed. It is placed after the paragraph it sits level with, leaving the running prose (n=8) last. Text-layer discrepancies corrected from the image: pi is flattened to 'p' in the layer ('nh/2p', 'h/2p', '2prn'; printed π), the figure's lambda label is absent from the layer, and subscripts/superscripts are dropped (νif, Eni, Enf, nf, ni, Ln, rn and the 'th' in nth) — kept in flat form here as the page's own letters. The 12.6 heading is printed in small caps across two lines ('DE BROGLIE’S EXPLANATION OF BOHR’S' / 'SECOND POSTULATE OF QUANTISATION') and is joined here. Page ends mid-sentence ('2πrn. Thus')."
+}

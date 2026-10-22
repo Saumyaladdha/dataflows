@@ -1,0 +1,21 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {
+      "kind": "formatting",
+      "what": "The Table 9.1 caption 'Table 9.1: Nomenclature of Some Alkylamines and Arylamines' is set wrongly: the book centres it in bold dark serif above the table; the render prints it small, plain and salmon-pink, flush left and butted straight against the preceding paragraph with no space.",
+      "where": "immediately above Table 9.1"
+    },
+    {
+      "kind": "formatting",
+      "what": "Chemical subscripts are lost in the running text above the table: the book sets (CH3CH2)3N, -NH2, C6H5NH2 and C6H5-NH2 with lowered subscripts; the render prints the digits on the baseline. The structures inside the table keep their subscripts, so only the paragraph text is affected.",
+      "where": "the two paragraphs at the top of the page"
+    },
+    {
+      "kind": "formatting",
+      "what": "Table 9.1's header band is washed out: the book prints 'Amine / Common name / IUPAC name' as white type on a solid salmon bar; the render uses a pale pink bar on which the white heading text is barely legible.",
+      "where": "the header row of Table 9.1"
+    }
+  ],
+  "note": "Checked all thirteen rows of Table 9.1 one by one against the book -- ethylamine, n-propylamine, isopropylamine, ethylmethylamine, trimethylamine, N,N-diethylbutylamine, allylamine, hexamethylenediamine, aniline, o-toluidine, p-bromoaniline and N,N-dimethylaniline -- and every structure, common name and IUPAC name is present, in the same order, with the magenta NH2/N colour coding and the green Br preserved, and the chain-numbering digits (1,2,3,4) intact. The two paragraphs above the table are complete. The table is drawn smaller than in the book, which makes the structure drawings coarse but still readable; that is scale, not content."
+}

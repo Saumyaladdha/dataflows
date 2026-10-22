@@ -1,0 +1,193 @@
+{
+  "question_id": "Q-000312",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:186"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Given below are two statements:\nIn the light of the above statements, choose the correct answer from the options given below :",
+  "statements": [
+    {
+      "label": "Statement I",
+      "text": "Gause's competitive exclusion principle states that two closely related species competing for different resources cannot exist indefinitely."
+    },
+    {
+      "label": "Statement II",
+      "text": "According to Gause's principle, during competition, the inferior will be eliminated. This may be true if resources are limiting."
+    }
+  ],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Both Statement I and Statement II are true.",
+    "2": "Both Statement I and Statement II are false.",
+    "3": "Statement I is true but Statement II is false.",
+    "4": "Statement I is false but Statement II is true."
+  },
+  "structure": "statement_i_ii",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "186\nGiven below are two statements: Statement I: Gause's competitive exclusion principle states that\ntwo closely related species competing for different resources cannot exist indefinitely. Statement II:\nAccording to Gause's principle, during competition, the inferior will be eliminated. This may be true if\nresources are limiting. In the light of the above statements, choose the correct answer from the\noptions given below :\n(1)\nBoth Statement I and Statement II are\ntrue.\n(2)\nBoth Statement I and Statement II are\nfalse.\n(3)\nStatement I is true but Statement II is\nfalse.\n(4)\nStatement I is false but Statement II\nis true.\nOrganisms and Populations\n",
+  "b4_script_options": {
+    "1": "Both Statement I and Statement II are\ntrue.",
+    "2": "Both Statement I and Statement II are\nfalse.",
+    "3": "Statement I is true but Statement II is\nfalse.",
+    "4": "Statement I is false but Statement II\nis true.\nOrganisms and Populations"
+  },
+  "official_answer": "4",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "4",
+  "b6_reason": "Statement I misstates the principle: competitive exclusion applies to two closely related species competing for the SAME limited resources, not different ones. Statement II correctly states that the inferior competitor is eliminated when resources are limiting.",
+  "b6_working": "I false ('different resources' should be 'same resources'); II true -> option 4.",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

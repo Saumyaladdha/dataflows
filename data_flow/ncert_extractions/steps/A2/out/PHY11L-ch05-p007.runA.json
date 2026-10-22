@@ -1,0 +1,138 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "not available explicitly. Another observation is that Newton’s second law for two or three dimensions is in vector form whereas the work-energy theorem is in scalar form. In the scalar form, information with respect to directions contained in Newton’s second law is not present.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 5.6  A block of mass m  = 1 kg, moving on a horizontal surface with speed vi = 2 m s–1 enters a rough patch ranging from x = 0.10 m to x = 2.01 m. The retarding force Fr on the block in this range is inversely proportional  to x  over this range,\nF\nk\nx\nr = −\n for 0.1 < x < 2.01 m\n= 0 for x < 0.1m and x > 2.01 m\nwhere k = 0.5 J.  What is the final kinetic energy and speed vf  of the block as it crosses this patch ?"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Answer  From Eq. (5.8a)"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        950,
+        660,
+        1410
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Here, note that ln is a symbol for the natural logarithm to the base e and not the logarithm to the base 10 [ln X = loge X = 2.303 log10 X]."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "5.7  THE CONCEPT OF POTENTIAL ENERGY"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The word potential suggests possibility or capacity for action. The term potential energy brings to one’s mind ‘stored’ energy. A stretched bow-string possesses potential energy. When it is released, the arrow flies off at a great speed. The earth’s crust is not uniform, but has discontinuities and dislocations that are called fault lines. These fault lines in the earth’s crust are like ‘compressed springs’. They possess a large amount of potential energy. An earthquake results when these fault lines readjust. Thus, potential energy is the ‘stored energy’ by virtue of the position or configuration of a body. The body left to itself releases this stored energy in the form of kinetic energy. Let us make our notion of potential energy more concrete."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The gravitational force on a ball of mass m is mg . g may be treated as a constant near the earth surface. By ‘near’ we imply that the height h  of the ball above the earth’s surface is very small compared to the earth’s radius RE (h <<RE) so that we can ignore the variation of g near the earth’s surface*. In what follows we have taken the upward direction to be positive. Let us raise the ball up to a height h. The work done by the external agency against the gravitational force is mgh. This work gets stored as potential energy. Gravitational potential energy of an object, as a function of the height h, is denoted by V(h) and it is the negative of work done by the gravitational force in raising the object to that height."
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        900,
+        980,
+        1090,
+        1020
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "If h is taken as a variable, it is easily seen that the gravitational force F equals the negative of the derivative of V(h) with respect to h. Thus,"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        960,
+        1140,
+        1270,
+        1210
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "The negative sign indicates that the gravitational force is downward. When released, the ball comes down with an increasing speed. Just before it hits the ground, its speed is given by the kinematic relation,"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        910,
+        1360,
+        1030,
+        1395
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "This equation can be written as"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1035,
+        1445,
+        1300,
+        1530
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "which shows that the gravitational potential energy of the object at height h, when the object is released, manifests itself as kinetic energy of the object on reaching the ground."
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Physically, the notion of potential energy is applicable only to the class of forces where work done against the force gets ‘stored up’ as energy. When external constraints are removed, it manifests itself as kinetic energy. Mathematically, (for simplicity, in one dimension) the potential"
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "* The variation of g with height is discussed in Chapter 7 on Gravitation."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "WORK, ENERGY AND POWER",
+    "77",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null although this is page 7; block 1 clearly opens mid-sentence (\"not available explicitly.\"), so first_block_continues_from_previous is set true from the page image alone. The shaded Example 5.6 box is kept as one box block per the box rule; the displayed formula inside it is reproduced with the text layer's own scrambled characters (\"F / k / x / r = −\") rather than re-rendered, so no prose inside the box is lost. Blocks 4, 9, 11, 13 and 15 are displayed equations left to the special transcriber. Block 18 is the page footnote marked by the asterisk in block 8. Decorative ⊳/◀ example markers were not transcribed. The page's running text ends mid-sentence (\"the potential\"), hence last_block_continues_on_next true, even though the footnote is physically the last item on the page."
+}

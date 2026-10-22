@@ -1,0 +1,42 @@
+{
+  "link_type": "rules_chained",
+  "derivation_steps": [
+    "the two true-breeding parents are therefore TT (tall) and tt (dwarf), and the F1 of TT x tt is the heterozygote Tt",
+    "selfing Tt x Tt: each parent passes on T or t, so the four equally likely allele combinations in F2 are TT, Tt, tT and tt (this step uses the law of segregation - one allele per gamete, 50 per cent chance of each - which is NOT quotable from the passages given; see note)",
+    "collecting identical genotypes: TT = 1/4, Tt (Tt plus tT) = 2/4, tt = 1/4, so TT : Tt : tt = 1 : 2 : 1",
+    "T is dominant over t, so TT is tall homozygous, Tt is tall heterozygous and tt is dwarf, giving tall homozygous : tall heterozygous : dwarf = 1 : 2 : 1"
+  ],
+  "evidence": [
+    {
+      "for": "rule",
+      "passage_id": "BIO12L-CH04-P18",
+      "exact_line": "Mendel also proposed that in a true breeding, tall or dwarf pea variety the allelic pair of genes for height are identical or homozygous, TT and tt, respectively."
+    },
+    {
+      "for": "rule",
+      "passage_id": "BIO12L-CH04-P19",
+      "exact_line": "In this case T (for tallness) is dominant over t (for dwarfness), that is recessive."
+    },
+    {
+      "for": "F1 of the cross is the heterozygote Tt and looks tall",
+      "passage_id": "BIO12L-CH04-P19",
+      "exact_line": "As Mendel found the phenotype of the F1 heterozygote Tt to be exactly like the TT parent in appearance, he proposed that in a pair of dissimilar factors, one dominates the other (as in the F1 ) and hence is called the dominant factor while the other factor is recessive ."
+    },
+    {
+      "for": "the three genotypes among which the ratio is asked (TT, Tt, tt) and that TT/tt are genotypes while tall/dwarf are phenotypes",
+      "passage_id": "BIO12L-CH04-P18",
+      "exact_line": "TT and tt are called the genotype of the plant while the descriptive terms tall and dwarf are the phenotype."
+    },
+    {
+      "for": "that the ratio asked for is a genotypic ratio obtained by probability",
+      "passage_id": "BIO12L-CH04-P27",
+      "exact_line": "the genotypic ratios can be calculated using mathematical probability"
+    }
+  ],
+  "supports_answer": "partly",
+  "missing": [
+    "the law of segregation (the alleles of the parental pair separate so that only one allele goes to a gamete, with a 50 per cent chance of each) - the one rule that actually produces the 1 : 2 : 1 split",
+    "a line or Punnett square stating the F2 genotypic ratio 1 : 2 : 1 itself"
+  ],
+  "note": "The 15 passages given cover 4.1 and the first part of 4.2 (up to P19) plus P27 and P48, but stop short of the segregation paragraph of 4.2 and of Figure 4.4's Punnett square, which is where NCERT states that only one allele is transmitted to a gamete and enumerates the F2 genotypes TT : Tt : tt. P13 (F2 is 3/4 tall, 1/4 dwarf) is a phenotypic ratio and cannot by itself split the tall 3/4 into 1 TT and 2 Tt, so it is not quoted as if it did. Everything else the answer needs (TT and tt parents, dominance of T, F1 = Tt, genotype vs phenotype) is quoted, hence partly rather than not_at_all. I expected the 4.2 segregation/Punnett Square passage (NCERT page 5 in this edition)."
+}

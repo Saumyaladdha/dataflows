@@ -1,0 +1,135 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "approximately true.  Yet they are very useful in practical calculations in mechanics.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Thus, when two bodies are in contact, each experiences a contact force by the other. Friction, by definition, is the component of the contact force parallel to the surfaces in contact, which opposes impending or actual relative motion between the two surfaces. Note that it is not motion, but relative motion that the frictional force opposes. Consider a box lying in the compartment of a train that is accelerating.  If the box is stationary relative to the train, it is in fact accelerating along with the train. What forces cause the acceleration of the box?  Clearly, the only conceivable force in the horizontal direction is the force of friction. If there were no friction, the floor of the train would slip by and the box would remain at its initial position due to inertia (and hit the back side of the train). This impending relative motion is opposed by the static friction fs. Static friction provides the same acceleration to the box as that of the train, keeping it stationary relative to the train."
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Example 4.7 Determine the maximum acceleration of the train in which a box lying on its floor will remain stationary, given that the co-efficient of static friction between the box and the train’s floor is 0.15."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Answer  Since the acceleration of the box is due to the static friction,"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        259,
+        1287,
+        832,
+        1409
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Example 4.8  See Fig. 4.11. A mass of 4 kg rests on a horizontal plane. The plane is gradually inclined until at an angle θ  =  15° with the horizontal, the mass just begins to slide. What is the coefficient of static friction between the block and the surface ?"
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        205,
+        1658,
+        826,
+        1957
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Answer  The forces acting on a block of mass m at rest on an inclined plane are (i) the weight mg acting vertically downwards (ii) the normal force N of the plane on the block, and (iii) the static frictional force fs opposing the impending motion. In equilibrium, the resultant of these forces must be zero.  Resolving the weight mg along the two directions shown, we have"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        961,
+        454,
+        1415,
+        497
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "As θ  increases, the self-adjusting frictional force fs increases until at θ = θmax,  fs achieves its maximum value, (fs)max = µs N."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Therefore,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        961,
+        700,
+        1480,
+        747
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "When  θ  becomes just a little more than  θmax , there is a small net force on the block and it begins to slide.  Note that  θmax depends only on µs and is  independent of the mass of the block."
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        880,
+        898,
+        1361,
+        999
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "box",
+      "text": "Example 4.9  What is the acceleration of the block  and  trolley system shown in a Fig. 4.12(a), if the coefficient of kinetic friction between the trolley and the surface is 0.04? What is the tension in the string? (Take g = 10 m s-2).  Neglect the mass of the string."
+    },
+    {
+      "n": 16,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        913,
+        1247,
+        1539,
+        1957
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "LAWS OF MOTION",
+    "61",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column read first. No numbered section side-headings appear on this page, so artifact (a) (repeated outline headings) did not arise; the only stray text-layer glyphs were the decorative example start/end markers (\"⊳\" / \"◀\"), which were dropped as ornaments. Displayed mathematics (the Example 4.7 answer working, m g sin θ / m g cos θ, tan θmax, and the For θmax = 15° working) is emitted as equation blocks with needs_special rather than transcribed, per artifact (b). Inline math inside paragraphs was kept as the text layer's own characters re-joined in reading order (e.g. \"(fs)max = µs N.\"), with the scrambled sub/superscript line breaks removed. `previous_page_last_block` is null although page is 13, so the continuation flag for block 1 is judged from the page itself: it opens mid-sentence with \"approximately true.\". The Example 4.9 answer is not on this page (it continues after Fig. 4.12 on the next page), but the last block on this page, Fig. 4.12, is itself complete, so last_block_continues_on_next is false. Bounding boxes are in pixels of the 1825x2164 page image."
+}

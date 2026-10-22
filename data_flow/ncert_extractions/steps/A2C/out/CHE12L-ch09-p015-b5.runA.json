@@ -1,0 +1,6 @@
+{
+  "kind": "reaction",
+  "reaction_smiles": "Nc1ccccc1>CC(=O)OC(C)=O.c1ccncc1.O=[N+]([O-])O.OS(=O)(=O)O.[OH-].[H+]>Nc1ccc([N+](=O)[O-])cc1",
+  "confidence": "probable",
+  "note": "Three-arrow scheme on one line, written here as a single overall reaction because the record format allows one reaction: aniline --(CH3CO)2O / pyridine--> Acetanilide CC(=O)Nc1ccccc1 --HNO3, H2SO4, 288K--> p-Nitroacetanilide CC(=O)Nc1ccc([N+](=O)[O-])cc1 --(-)OH or H+--> p-Nitroaniline. Every reagent over the three arrows is placed in the agents field, so their order is not recoverable from the SMILES; the two drawn intermediates are given above in this note. 'Pyridine' is drawn as a word under the first arrow and is written as its SMILES; 288 K is a condition with no SMILES form. Side chains drawn as text labels (NHCOCH3, NO2, NH2) on plain Kekule rings."
+}

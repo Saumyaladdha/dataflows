@@ -1,0 +1,267 @@
+{
+ "question_id": "Q-000015",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "d1_chapter_ids": {
+   "step": "D1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "d1_why": {
+   "step": "D1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "d1_confidence": {
+   "step": "D1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "d2_subtopic_ids": {
+   "step": "D2",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "d2_why": {
+   "step": "D2",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "d2_confidence": {
+   "step": "D2",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2023,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "E1:172"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+ "trust": "unsure",
+ "stem_en": "Which of the following statements are correct regarding female reproductive cycle? Choose the most appropriate answer from the options given below:",
+ "statements": [
+  {
+   "label": "A",
+   "text": "In non-primate mammals cyclical changes during reproduction are called oestrus cycle."
+  },
+  {
+   "label": "B",
+   "text": "First menstrual cycle begins at puberty and is called menopause."
+  },
+  {
+   "label": "C",
+   "text": "Lack of menstruation may be indicative of pregnancy."
+  },
+  {
+   "label": "D",
+   "text": "Cyclic menstruation extends between menarche and menopause."
+  }
+ ],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "A and D only",
+  "2": "A and B only",
+  "3": "A, B and C only",
+  "4": "A, C and D only"
+ },
+ "structure": "statements",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "172\nWhich of the following statements are correct regarding female reproductive cycle? A. In non-\nprimate mammals cyclical changes during reproduction are called oestrus cycle. B. First menstrual\ncycle begins at puberty and is called menopause. C. Lack of menstruation may be indicative of\npregnancy. D. Cyclic menstruation extends between menarche and menopause. Choose the most\nappropriate answer from the options given below:\n(1)\nA and D only\n(2)\nA and B only\n(3)\nA, B and C only\n(4)\nA, C and D only\nHuman Reproduction\n",
+ "b4_script_options": {
+  "1": "A and D only",
+  "2": "A and B only",
+  "3": "A, B and C only",
+  "4": "A, C and D only\nHuman Reproduction"
+ },
+ "official_answer": "4",
+ "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+ "status": "normal",
+ "b6_answer": "4",
+ "b6_reason": "A is correct (oestrus cycle in non-primates), B is false (the first cycle at puberty is menarche, not menopause), C and D are correct, so A, C and D only.",
+ "b6_working": "",
+ "b6_confidence": "high",
+ "b6_note": "",
+ "b6_agrees_with_key": true,
+ "subject": "Biology",
+ "branch": "zoology",
+ "d1_chapter_ids": [
+  "BIO12-CH02"
+ ],
+ "d1_why": "All four statements test facts of the menstrual/oestrus cycle (menarche, menopause, lack of menstruation in pregnancy), and the correct answer A, C and D only turns on those facts, which belong to Human Reproduction heading 2.4 MENSTRUAL CYCLE.",
+ "d1_confidence": "high",
+ "d2_subtopic_ids": [
+  "BIO12-CH03-ST15"
+ ],
+ "d2_why": "search_index.rank keyword fallback (no valid run A choice)",
+ "d2_confidence": "low",
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for E1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "E1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

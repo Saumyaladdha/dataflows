@@ -1,0 +1,117 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "ion. In dilute solutions (< 0.01 M), activity of hydrogen ion (H+) is equal in magnitude to molarity represented by [H+]. It should be noted that activity has no units and is defined as:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [248, 438, 592, 482],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "From the definition of pH, the following can be written,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 580, 788, 618],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Thus, an acidic solution of HCl (10–2 M) will have a pH = 2. Similarly, a basic solution of NaOH having [OH–] =10–4 M and [H3O+] = 10–10 M will have a pH = 10. At 25 °C, pure water has a concentration of hydrogen ions, [H+] = 10–7 M. Hence, the pH of pure water is given as:"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 885, 528, 924],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Acidic solutions possess a concentration of hydrogen ions, [H+] > 10–7 M, while basic solutions possess a concentration of hydrogen ions, [H+] < 10–7 M. thus, we can summarise that"
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "Acidic solution has pH < 7 Basic solution has pH > 7 Neutral solution has pH = 7"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Now again, consider the equation (6.28) at 298 K"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [248, 1305, 638, 1345],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Taking negative logarithm on both sides of equation, we obtain"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [248, 1448, 852, 1585],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Note that although Kw may change with temperature the variations in pH with temperature are so small that we often ignore it."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "pKw is a very important quantity for aqueous solutions and controls the relative concentrations of hydrogen and hydroxyl ions as their product is a constant. It should be noted that as the pH scale is logarithmic, a change in pH by just one unit also means change in [H+] by a factor of 10. Similarly, when the hydrogen ion concentration, [H+] changes by a factor of 100, the value of pH changes by 2 units. Now you can realise why the change in pH with temperature is often ignored."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Measurement of pH of a solution is very essential as its value should be known when dealing with biological and cosmetic applications. The pH of a solution can be found roughly with the help of pH paper that has different colour in solutions of different pH. Now-a-days pH paper is available with four strips on it. The different strips have different colours (Fig. 6.11) at the same pH. The pH in the range of 1-14 can be determined with an accuracy of ~0.5 using pH paper."
+    },
+    {
+      "n": 16,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [896, 862, 1538, 1164],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "For greater accuracy pH meters are used. pH meter is a device that measures the pH-dependent electrical potential of the test solution within 0.001 precision. pH meters of the size of a writing pen are now available in the market. The pH of some very common substances are given in Table 6.5 (page 195)."
+    },
+    {
+      "n": 18,
+      "kind": "box",
+      "text": "Problem 6.16 The concentration of hydrogen ion in a sample of soft drink is 3.8 × 10–3M. what is its pH ? Solution pH = – log[3.8 × 10–3] = – {log[3.8] + log[10–3]} = – {(0.58) + (– 3.0)} = – { – 2.42} = 2.42 Therefore, the pH of the soft drink is 2.42 and it can be inferred that it is acidic."
+    },
+    {
+      "n": 19,
+      "kind": "box",
+      "text": "Problem 6.17 Calculate pH of a 1.0 × 10 –8 M solution of HCl.",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["CHEMISTRY", "194", "2024-25"],
+  "note": "Two-column page; left column read before right. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 26 output I wrote myself rather than against the input: page 26 ended mid-sentence at 'the negative logarithm to base 10 of the activity aH of hydrogen', and this page opens 'ion. In dilute solutions (< 0.01 M)...', so first_block_continues_from_previous is true. The display equations are left for the special transcriber: block 2 (the activity definition, whose left-hand symbol is the stylised aH+ glyph), block 4 (pH = -log aH+), block 6, block 10, and block 12, which is the whole four-line -log Kw derivation ending in the numbered line pKw = pH + pOH = 14 (6.29). Block 16 is the Fig. 6.11 pH-paper colour chart with its 0-14 scale and its two-line caption. Block 14 is one paragraph running across the column break ('...by a factor of 10. Similarly,' / 'when the hydrogen ion concentration...') and the text layer keeps it in that order, so it is one block. The arithmetic inside the pink Problem 6.16 panel is left in the box text rather than split out, because it is set as plain lines inside the panel and the text layer stores it that way. last_block_continues_on_next is true because Problem 6.17 is printed with only its question; its solution begins on page 28."
+}

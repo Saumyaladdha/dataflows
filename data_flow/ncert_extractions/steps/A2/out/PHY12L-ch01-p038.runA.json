@@ -1,0 +1,116 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "bodies are charged through friction, there is a transfer of electric charge from one body to another, but no creation or destruction of charge.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "5. Coulomb’s Law: The mutual electrostatic force between two point charges q1 and q2 is proportional to the product q1q2 and inversely proportional to the square of the distance r21 separating them. Mathematically,"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        626,
+        540,
+        1200,
+        634
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "where 21 ˆr is a unit vector in the direction from q1 to q2 and k = 0 1 4 ε π is the constant of proportionality."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "In SI units, the unit of charge is coulomb. The experimental value of the constant e0 is"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        812,
+        806,
+        1180,
+        840
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The approximate value of k is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        775,
+        878,
+        1098,
+        912
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "6. The ratio of electric force and gravitational force between a proton and an electron is"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        645,
+        990,
+        965,
+        1068
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "7. Superposition Principle: The principle is based on the property that the forces with which two charges attract or repel each other are not affected by the presence of a third (or more) additional charge(s). For an assembly of charges q1, q2, q3, ..., the force on any charge, say q1, is the vector sum of the force on  q1 due to q2, the force on q1 due to q3, and so on. For each pair, the force is given by the Coulomb’s law for two charges stated earlier."
+    },
+    {
+      "n": 12,
+      "kind": "list",
+      "text": "8. The electric field E at a point due to a charge configuration is the force on a small positive test charge q placed at the point divided by the magnitude of the charge. Electric field due to a point charge q has a magnitude |q|/4pe0r2; it is radially outwards from q, if q is positive, and radially inwards if q is negative. Like Coulomb force, electric field also satisfies superposition principle."
+    },
+    {
+      "n": 13,
+      "kind": "list",
+      "text": "9. An electric field line is a curve drawn in such a way that the tangent at each point on the curve gives the direction of electric field at that point. The relative closeness of field lines indicates the relative strength of electric field at different points; they crowd near each other in regions of strong electric field and are far apart where the electric field is weak. In regions of constant electric field, the field lines are uniformly spaced parallel straight lines."
+    },
+    {
+      "n": 14,
+      "kind": "list",
+      "text": "10. Some of the important properties of field lines are: (i) Field lines are continuous curves without any breaks. (ii) Two field lines cannot cross each other. (iii) Electrostatic field lines start at positive charges and end at negative charges —they cannot form closed loops."
+    },
+    {
+      "n": 15,
+      "kind": "list",
+      "text": "11. An electric dipole is a pair of equal and opposite charges q and –q separated by some distance 2a. Its dipole moment vector p has magnitude 2qa and is in the direction of the dipole axis from –q to q."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "38",
+    "Reprint 2026-27"
+  ],
+  "note": "Whole page sits inside the chapter SUMMARY box, which began on the previous page and continues on the next; it is listed as its numbered list items plus displayed equations rather than one box block so the equations can be marked needs_special. previous_page_last_block was null, but the page opens mid-sentence inside summary point 4, so first_block_continues_from_previous is true. Inline mathematics in blocks 4, 5 and 12 is copied from the text layer as-is, where subscripts/Greek are scrambled or substituted (e.g. 'e0' for the epsilon-nought symbol, '|q|/4pe0r2', 'where 21 ˆr ... k = 0 1 4 ε π'); the four displayed formulae are marked needs_special instead. Page ends after point 11 with a complete sentence but mid-list/mid-box, so last_block_continues_on_next is true."
+}

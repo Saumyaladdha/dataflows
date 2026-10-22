@@ -1,0 +1,142 @@
+{
+  "chapter": "BIO11-CH17",
+  "subtopics": [
+    {
+      "n": 1,
+      "name": "Types of movement in humans: amoeboid, ciliary and muscular",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH17-P01",
+        "BIO11L-CH17-P02",
+        "BIO11L-CH17-P03",
+        "BIO11L-CH17-P41",
+        "BIO11L-CH17-P50"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "Types of muscle: skeletal, visceral and cardiac",
+      "from_heading": "17.2",
+      "passages": [
+        "BIO11L-CH17-P04",
+        "BIO11L-CH17-P05",
+        "BIO11L-CH17-P06",
+        "BIO11L-CH17-P07",
+        "BIO11L-CH17-P42",
+        "BIO11L-CH17-P49"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "Structure of skeletal muscle: fascicles, myofibrils and the sarcomere",
+      "from_heading": "17.2",
+      "passages": [
+        "BIO11L-CH17-P08",
+        "BIO11L-CH17-P09",
+        "BIO11L-CH17-P10",
+        "BIO11L-CH17-P43"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Structure of contractile proteins",
+      "from_heading": "17.2.1",
+      "passages": [
+        "BIO11L-CH17-P11",
+        "BIO11L-CH17-P12",
+        "BIO11L-CH17-P13",
+        "BIO11L-CH17-P47",
+        "BIO11L-CH17-P48"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Mechanism of muscle contraction and the sliding filament theory",
+      "from_heading": "17.2.2",
+      "passages": [
+        "BIO11L-CH17-P14",
+        "BIO11L-CH17-P15",
+        "BIO11L-CH17-P16",
+        "BIO11L-CH17-P17",
+        "BIO11L-CH17-P18",
+        "BIO11L-CH17-P46"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Muscle fatigue and red versus white muscle fibres",
+      "from_heading": "17.2.2",
+      "passages": [
+        "BIO11L-CH17-P44"
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Skeletal system: bones, cartilages and its two divisions",
+      "from_heading": "17.3",
+      "passages": [
+        "BIO11L-CH17-P19",
+        "BIO11L-CH17-P45"
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Axial skeleton: skull, vertebral column, sternum and ribs",
+      "from_heading": "17.3",
+      "passages": [
+        "BIO11L-CH17-P20",
+        "BIO11L-CH17-P21",
+        "BIO11L-CH17-P22",
+        "BIO11L-CH17-P23",
+        "BIO11L-CH17-P52"
+      ]
+    },
+    {
+      "n": 9,
+      "name": "Appendicular skeleton: bones of the limbs",
+      "from_heading": "17.3",
+      "passages": [
+        "BIO11L-CH17-P24",
+        "BIO11L-CH17-P25",
+        "BIO11L-CH17-P26",
+        "BIO11L-CH17-P27",
+        "BIO11L-CH17-P28"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Pectoral and pelvic girdles",
+      "from_heading": "17.3",
+      "passages": [
+        "BIO11L-CH17-P29",
+        "BIO11L-CH17-P30"
+      ]
+    },
+    {
+      "n": 11,
+      "name": "Types of joints: fibrous, cartilaginous and synovial",
+      "from_heading": "17.4",
+      "passages": [
+        "BIO11L-CH17-P31",
+        "BIO11L-CH17-P32",
+        "BIO11L-CH17-P33",
+        "BIO11L-CH17-P34",
+        "BIO11L-CH17-P51"
+      ]
+    },
+    {
+      "n": 12,
+      "name": "Disorders of the muscular and skeletal system",
+      "from_heading": "17.5",
+      "passages": [
+        "BIO11L-CH17-P35",
+        "BIO11L-CH17-P36",
+        "BIO11L-CH17-P37",
+        "BIO11L-CH17-P38",
+        "BIO11L-CH17-P39",
+        "BIO11L-CH17-P40"
+      ]
+    }
+  ],
+  "note": "chapter_title in the input is \"SUMMARY\", which looks like an extraction artifact rather than the chapter's real title. The headings list starts at 17.2, so the opening passages P01-P03 (amoeboid, ciliary and muscular movement) have no heading in the input; from_heading is \"unsure\" for that subtopic. P04 is a mixed passage that carries the \"17.2 MUSCLE\" heading but whose visible text is about cilia and flagella, i.e. it straddles the unheaded opening section and 17.2; it is placed under the muscle-types subtopic because of the heading it carries. Summary passages (P41-P45) and exercise passages (P46-P52) are attached to the content subtopic they most directly test, so that every passage is covered; several exercise passages touch more than one subtopic and were assigned to the single best fit. Red/white fibres and muscle fatigue are given their own subtopic on the strength of summary passage P44; the main-text passage for them could not be identified from the 200-character previews."
+}

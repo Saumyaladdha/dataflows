@@ -1,0 +1,35 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {
+      "n": 2,
+      "corrected_text": "The surface includes charge equal to λ l. Gauss’s law then gives\nE × 2πrl = λl/ε₀",
+      "fixes": [
+        {"wrong": "λl/ε0", "right": "λl/ε₀"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "where n̂ is the radial unit vector in the plane normal to the wire passing through the point. E is directed outward if λ is positive and inward if λ is negative.",
+      "fixes": [
+        {"wrong": "ˆn", "right": "n̂"}
+      ]
+    },
+    {
+      "n": 7,
+      "corrected_text": "Note that when we write a vector A as a scalar multiplied by a unit vector, i.e., as A = A â , the scalar A is  an algebraic number. It can be negative or positive. The direction of A will be the same as that of the unit vector â if A > 0 and opposite to â if A < 0. When we want to restrict to non-negative values, we use the symbol |A| and call it the modulus of A. Thus, |A| ≥ 0 .",
+      "fixes": [
+        {"wrong": "A ˆa ,", "right": "A â ,"},
+        {"wrong": "unit vector ˆa if A > 0 and opposite to ˆa if A < 0", "right": "unit vector â if A > 0 and opposite to â if A < 0"},
+        {"wrong": "the symbol A and call it the modulus of A", "right": "the symbol |A| and call it the modulus of A"},
+        {"wrong": "Thus, 0 ≥ A .", "right": "Thus, |A| ≥ 0 ."}
+      ]
+    },
+    {"n": 8, "no_change": true},
+    {"n": 10, "no_change": true},
+    {"n": 12, "no_change": true},
+    {"n": 13, "no_change": true}
+  ],
+  "note": "n2 and n6 had flattened ε0 and a detached hat restored (ε₀, n̂). n7 had the detached hat on â restored (twice), and — the exact bug pattern this step targets — the modulus bars around A were dropped and the inequality was reversed: stored text read 'the symbol A ... Thus, 0 ≥ A .' where the image prints 'the symbol |A| ... Thus, |A| ≥ 0 .'; both restored. All other listed blocks already matched the image."
+}

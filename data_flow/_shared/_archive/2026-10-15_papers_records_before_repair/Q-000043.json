@@ -1,0 +1,193 @@
+{
+  "question_id": "Q-000043",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:148"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Given below are two statements :\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+  "statements": [
+    {
+      "label": "I",
+      "text": "Gause's 'Competitive Exclusion Principle' states that two closely related species competing for the same resources cannot co-exist indefinitely and competitively inferior one will be eliminated eventually."
+    },
+    {
+      "label": "II",
+      "text": "In general, carnivores are more adversely affected by competition than herbivores."
+    }
+  ],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Both Statement I and Statement II are true.",
+    "2": "Both Statement I and Statement II are false.",
+    "3": "Statement I is correct but Statement II is false.",
+    "4": "Statement I is incorrect but Statement II is true."
+  },
+  "structure": "statement_i_ii",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "148\nGiven below are two statements :\nStatement I : Gause’s ‘Competitive Exclusion Principle’ states that two closely related species\ncompeting for the same resources cannot co-exist indefinitely and competitively inferior one will be\neliminated eventually.\nStatement II : In general, carnivores are more adversely affected by competition than herbivores.\nIn the light of the above statements, choose the correct answer from the options given below :\n(1)\nBoth Statement I and Statement II are\ntrue.\n(2)\nBoth Statement I and Statement II are\nfalse.\n(3)\nStatement I is correct but Statement\nII is false.\n(4)\nStatement I is incorrect but Statement II\nis true.\nAnimal Kingdom\n",
+  "b4_script_options": {
+    "1": "Both Statement I and Statement II are\ntrue.",
+    "2": "Both Statement I and Statement II are\nfalse.",
+    "3": "Statement I is correct but Statement\nII is false.",
+    "4": "Statement I is incorrect but Statement II\nis true.\nAnimal Kingdom"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "botany",
+  "b6_answer": "1",
+  "b6_reason": "Statement I correctly states Gause's Competitive Exclusion Principle; Statement II matches the general ecological finding that carnivores (competing for less abundant, harder-to-catch prey) suffer more from interspecific competition than herbivores (whose plant food, though limited, is more readily available).",
+  "b6_working": "",
+  "b6_confidence": "medium",
+  "b6_note": "Statement II relies on a specific textbook generalisation about herbivore vs carnivore competition intensity that I recall but am not fully certain of verbatim, hence medium rather than high confidence.",
+  "b6_agrees_with_key": false
+}

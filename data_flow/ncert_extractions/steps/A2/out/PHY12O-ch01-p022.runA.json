@@ -1,0 +1,117 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        545,
+        295,
+        1040,
+        390
+      ],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Thus, the heavier particle (proton) takes a greater time to fall through the same distance. This is in basic contrast to the situation of ‘free fall under gravity’ where the time of fall is independent of the mass of the body. Note that in this example we have ignored the acceleration due to gravity in calculating the time of fall. To see if this is justified, let us calculate the acceleration of the proton in the given electric field:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        545,
+        630,
+        1155,
+        885
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "which is enormous compared to the value of g (9.8 m s⁻²), the acceleration due to gravity. The acceleration of the electron is even greater. Thus, the effect of acceleration due to gravity can be ignored in this example.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Example 1.9 Two point charges q₁ and q₂, of magnitude +10⁻⁸ C and –10⁻⁸ C, respectively, are placed 0.1 m apart. Calculate the electric fields at points A, B and C shown in Fig. 1.14.",
+      "continues_from_previous": false,
+      "bold_terms": [
+        "Example 1.9"
+      ]
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        735,
+        1180,
+        1325,
+        1712
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Solution The electric field vector E₁A at A due to the positive charge q₁ points towards the right and has a magnitude",
+      "continues_from_previous": false,
+      "bold_terms": [
+        "Solution"
+      ]
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        545,
+        1785,
+        1300,
+        1885
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The electric field vector E₂A at A due to the negative charge q₂ points towards the right and has the same magnitude. Hence the magnitude of the total electric field EA at A is",
+      "continues_from_previous": false
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        545,
+        1995,
+        995,
+        2055
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "EA is directed toward the right.",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "EXAMPLE 1.8",
+    "EXAMPLE 1.9",
+    "22",
+    "2022-23"
+  ],
+  "note": "Page 22 is entirely the grey EXAMPLE panels: the tail of Example 1.8 (top panel) and the start of Example 1.9 (lower panel). I split each panel into its constituent paragraph/equation/figure blocks rather than emitting one 'box' block per panel, because the step rule requires every equation and figure to be deferred with its own bbox and a whole-panel box block would leave Fig. 1.14 and five displayed equations with no bbox for A2S. The previous page's last block was labelled kind 'box' for the same Example 1.8 panel, so block n=1 here is the direct continuation of that panel ('The time of fall for the proton is' -> t_p = sqrt(2h/a_p) = ...). last_block_continues_on_next is true because the Example 1.9 panel runs to the foot of the page mid-box: the question asks for the fields at A, B and C and only A has been solved. Bounding boxes were measured against the image at its native 1700x2178 and each was checked to sit on the printed glyphs, not on the margin below them: n=1 is the t_p radical chain at the very top of the upper panel, n=3 covers the whole a_p calculation (a_p = eE/m_p, the substituted fraction, and the = 1.9 x 10^12 m s^-2 result) as one chain, n=8 is the E_1A fraction, n=10 is the one-line E_A = E_1A + E_2A result. n=6 includes the 'FIGURE 1.14' caption inside the figure bbox. Superscripts, subscripts and the superscript minus were read from the image, not the text_layer, which flattens them (e.g. layer '9.8 m s-2' -> printed 9.8 m s⁻², layer 'q1'/'q2' -> printed q₁/q₂, layer '+10-8 C' -> printed +10⁻⁸ C). The subscript on 'EA' and the 'A' of 'E₁A'/'E₂A' is a capital letter with no Unicode subscript form, so it is written on the line as the page's own text layer has it. The margin side-tabs print as small-caps 'EXAMPLE 1.8'/'EXAMPLE 1.9' and are listed as removed furniture; the inline bold 'Example 1.9' inside block n=5 is the example's own opening label, a different string, and is kept as content."
+}

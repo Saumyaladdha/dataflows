@@ -1,0 +1,201 @@
+{
+  "question_id": "Q-000506",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:84"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "In which of the following processes entropy increases? Choose the correct answer from the options given below:",
+  "statements": [
+    {
+      "label": "A",
+      "text": "A liquid evaporates to vapour."
+    },
+    {
+      "label": "B",
+      "text": "Temperature of a crystalline solid lowered from $130\\,\\mathrm{K}$ to $0\\,\\mathrm{K}$."
+    },
+    {
+      "label": "C",
+      "text": "$\\mathrm{2NaHCO3(s)} \\rightarrow \\mathrm{Na2CO3(s)} + \\mathrm{CO2(g)} + \\mathrm{H2O(g)}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\mathrm{Cl2(g)} \\rightarrow \\mathrm{2Cl(g)}$"
+    }
+  ],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "A and C",
+    "2": "A, B and D",
+    "3": "A, C and D",
+    "4": "C and D"
+  },
+  "structure": "statements",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "84\nIn which of the following processes entropy increases? A. A liquid evaporates to vapour. B.\nTemperature of a crystalline solid lowered from 130 K to 0 K. C. 2NaHCO3(s) → Na2CO3(s) +\nCO2(g) + H2O(g) D. Cl2(g) → 2Cl(g) Choose the correct answer from the options given below:\n(1)\nA and C\n(2)\nA, B and D\n(3)\nA, C and D\n(4)\nC and D\nThermodynamics\n",
+  "b4_script_options": {
+    "1": "A and C",
+    "2": "A, B and D",
+    "3": "A, C and D",
+    "4": "C and D\nThermodynamics"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "physical",
+  "b6_answer": "3",
+  "b6_reason": "Evaporation (A), solid decomposing to two gases (C) and Cl2 splitting into 2 Cl atoms (D) all raise disorder; cooling a crystal to 0 K (B) lowers entropy.",
+  "b6_working": "A: liquid to vapour, dS > 0. B: dS = -q/T on cooling, entropy falls toward zero at 0 K, so dS < 0. C: 1 mol solid gives 1 mol solid + 2 mol gas, dn(gas) = +2, dS > 0. D: 1 mol gas gives 2 mol gas, dn(gas) = +1, dS > 0. So A, C, D.",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

@@ -1,0 +1,87 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "electric field normal to the surface exists; this means potential will be different for the surface and a point just outside the surface.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "In a system of conductors of arbitrary size, shape and charge configuration, each conductor is characterised by a constant value of potential, but this constant may differ from one conductor to the other."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "5. Electric field at the surface of a charged conductor"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 562, 1172, 643],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "where σ is the surface charge density and n̂ is a unit vector normal to the surface in the outward direction."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "To derive the result, choose a pill box (a short cylinder) as the Gaussian surface about any point P on the surface, as shown in Fig. 2.17. The pill box is partly inside and partly outside the surface of the conductor. It has a small area of cross section δS and negligible height."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Just inside the surface, the electrostatic field is zero; just outside, the field is normal to the surface with magnitude E. Thus, the contribution to the total flux through the pill box comes only from the outside (circular) cross-section of the pill box. This equals ± EδS (positive for σ > 0, negative for σ < 0), since over the small area δS, E may be considered constant and E and δS are parallel or antiparallel. The charge enclosed by the pill box is σδS."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "By Gauss’s law"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [214, 1253, 389, 1334],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [214, 1366, 1172, 1442],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Including the fact that electric field is normal to the surface, we get the vector relation, Eq. (2.35), which is true for both signs of σ. For σ > 0, electric field is normal to the surface outward; for σ < 0, electric field is normal to the surface inward."
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [934, 967, 1501, 1593],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "heading",
+      "text": "6. Electrostatic shielding"
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Consider a conductor with a cavity, with no charges inside the cavity. A remarkable result is that the electric field inside the cavity is zero, whatever be the size and shape of the cavity and whatever be the charge on the conductor and the external fields in which it might be placed. We have proved a simple case of this result already: the electric field inside a charged spherical shell is zero. The proof of the result for the shell makes use of the spherical symmetry of the shell (see Chapter 1). But the vanishing of electric field in the (charge-free) cavity of a conductor is, as mentioned above, a very general result. A related result is that even if the conductor"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "63", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null, but the page visibly opens mid-sentence (lowercase 'electric field normal to the surface exists'), so first_block_continues_from_previous is true. The text layer renders Greek letters as Latin look-alikes (σ as 's', δ as 'd', e.g. 'EdS', 'sdS', 'd S'); the page image was used for those characters. The right-hand figure (Fig. 2.17, with its caption) sits alongside the narrowed middle text column; it is listed after the last text block that wraps around it. Three display equations (Eq. 2.35; the unnumbered EδS line; Eq. 2.36) are marked needs_special. The 'NCERT not to be republished' watermark across the page was ignored."
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/S0.json",
+  "title": "S0 intake record",
+  "description": "S0 has no agent (pure SCRIPT, scripts/intake_check.py) and its human-facing output, register/intake_report.md, is markdown, not JSON — Section 8/S0 names no JSON output shape. This schema is this build's own design for the structured record intake_check.py should assemble per required item (one of: an NCERT book/lab-manual cell of the subject x class x edition grid, a year x sitting paper+key pair, or a legacy sheet) before it is rendered into intake_report.md and before S0_MISSING_INPUT flags are written. Field names follow inputs/manifest.csv's columns (Section 8/S0 Reads) plus the status this step computes.",
+  "type": "object",
+  "required": ["item_type", "status", "note"],
+  "additionalProperties": false,
+  "properties": {
+    "item_type": {
+      "type": "string",
+      "enum": ["ncert_book", "lab_manual", "paper", "key", "legacy_sheet"],
+      "description": "Which required-input check (procedure step 2, 3 or 5) produced this record."
+    },
+    "subject": {
+      "type": ["string", "null"],
+      "enum": ["Physics", "Chemistry", "Biology", null],
+      "description": "Set for item_type ncert_book / lab_manual."
+    },
+    "class": {
+      "type": ["integer", "null"],
+      "enum": [11, 12, null],
+      "description": "Set for item_type ncert_book / lab_manual."
+    },
+    "edition": {
+      "type": ["string", "null"],
+      "enum": ["latest", "older", "lab_manual", null],
+      "description": "Set for item_type ncert_book / lab_manual; from the manifest row's edition column."
+    },
+    "year": {
+      "type": ["integer", "null"],
+      "description": "Set for item_type paper / key. 2016-2026 per procedure step 3; 2013-2015 are tracked too but marked in_scope=no (step 4)."
+    },
+    "sitting": {
+      "type": ["string", "null"],
+      "enum": ["MAIN", "PH2", "REEXAM", "RETEST", "CANCELLED", null],
+      "description": "Set for item_type paper / key."
+    },
+    "booklet_code": {
+      "type": ["string", "null"],
+      "description": "Set for item_type paper / key, when the sitting's papers are coded."
+    },
+    "file": {
+      "type": ["string", "null"],
+      "description": "Path under inputs/ to the file this record resolved to, or null when missing."
+    },
+    "in_scope": {
+      "type": ["boolean", "null"],
+      "description": "false for papers/keys outside 2016-2026 pending the owner's 2013-2015 decision (Section 2.7, Section 20); null when not applicable (e.g. ncert_book, legacy_sheet)."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["present", "missing", "out_of_scope"],
+      "description": "present: exactly one manifest row and one file found. missing: required combination has no file -> S0_MISSING_INPUT (blocker). out_of_scope: found but excluded from Stage B onward by procedure step 4."
+    },
+    "note": {
+      "type": "string",
+      "description": "e.g. 'provisional key, not final' or 'covers all booklet codes'. May be empty."
+    }
+  }
+}

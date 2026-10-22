@@ -1,0 +1,21 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {
+      "kind": "formatting",
+      "what": "Word spaces are dropped at many line joins and after every roman numeral, producing run-together words the book does not print. In the Summary panel: 'unshared pairof electrons', 'nitrogen atomon the', 'identification anddistinction', 'sulphonyl chlorideis used', 'Presence ofamino group', 'controlled by acylationprocess', 'treating with acetylchloride', 'used as insectattractants', 'replacement ofthe diazoniumgroup', 'advantageous methodsfor', 'removal of thediazo group', 'arylamines giverise'. In the exercises every list marker is glued to its item: '(i)(CH3)2CHNH2', '(ii)CH3(CH2)2NH2', '(i)Methylamine and dimethylamine', '(iii)Ethylamine and aniline', '(i)pKb of aniline', '(vii)Gabriel phthalimide synthesis', '(a)Aniline'. The book sets a space in every one of these.",
+      "where": "throughout the Summary panel and all four exercise lists"
+    },
+    {
+      "kind": "formatting",
+      "what": "The 'Exercises' heading is demoted. The book sets it as a large red script display heading at the left margin with a red underline rule and a red vertical bar running down the left edge of the whole exercise block. The render sets it as a small bold black roman word centred on the measure, with no rule and no side bar, so it reads as a minor subhead rather than the start of the chapter's exercises.",
+      "where": "between the Summary panel and exercise 9.1"
+    },
+    {
+      "kind": "formatting",
+      "what": "The Summary panel's bold key terms are set in light grey roman instead of bold black: 'acylation', 'trimethylamine', 'Aryldiazonium salts' and 'azo dyes' all lose their emphasis.",
+      "where": "the Summary panel, both paragraphs"
+    }
+  ],
+  "note": "Compared block by block against page 278. All content is present and in order: the two closing Summary paragraphs, the Exercises heading, and exercises 9.1 (sub-parts i-vii, including the three-column layout of the formulae), 9.2 (i-v), 9.3 (i-vii) and 9.4 (i), (ii) and (iii)(a), with every formula -- C2H5NH2, C6H5NHCH3, (C2H5)2NH, C6H5NH2, C6H5N(CH3)2, CH3NH2, m-BrC6H4NH2 -- matching the book, subscripts included. Italics on o-, p-, m-, pKb and the folio '278 Amines' are correct. The bottom third of the rendered page is blank, but the book's page also ends at 9.4(iii)(a), so nothing is absent there; it is reflow. The Summary panel's green left tab survives but is drawn thinner than the book's."
+}

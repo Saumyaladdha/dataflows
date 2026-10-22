@@ -1,0 +1,76 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Thus,",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        355,
+        1150,
+        595
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "The resultant of forces F2 and F3 is 3/4πε0 Qq/l2 along OA, by the parallelogram law. Therefore, the total force on Q = 3/4πε0 Qq/l2 (ˆr – ˆr) = 0, where ˆr is the unit vector along OA.\nIt is clear also by symmetry that the three forces will sum to zero. Suppose that the resultant force was non-zero but in some direction. Consider what would happen if the system was rotated through 60° about O."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 1.7 Consider the charges q, q, and –q placed at the vertices of an equilateral triangle, as shown in Fig. 1.10. What is the force on each charge?"
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        385,
+        1095,
+        1050,
+        1640
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Solution  The forces acting on charge q at A due to charges q at B and –q at C are F12 along BA and F13 along AC respectively, as shown in Fig. 1.10. By the parallelogram law, the total force F1 on the charge q at A is given by\nF1 = F ˆr1 where ˆr1 is a unit vector along BC.\nThe force of attraction or repulsion for each pair of charges has the same magnitude"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        450,
+        1905,
+        620,
+        1970
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "The total force F2 on charge q at B is thus F2 = F ˆr 2, where ˆr 2 is a unit vector along AC.",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "EXAMPLE 1.6",
+    "17",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p016 output, which ended mid-box inside the Example 1.6 panel, so this page's opening 'Thus,' box block continues it. Two panels on the page: the tail of Example 1.6 and the start of Example 1.7. The three set-off 'Force F1/F2/F3 on Q due to charge q at A/B/C = ... along AO/BO/CO' lines are one needs_special equation group (n=2), as is the magnitude F = q2/(4 pi e0 l2) line (n=7); sentences that merely carry an inline fraction are kept as box prose with the fraction written linearly from the image, because the text layer garbles every fraction. The sideways 'EXAMPLE 1.6' margin label IS listed as removed - unlike on earlier pages, the words 'Example 1.6' appear in no block here, since that panel's header was on p016. 'EXAMPLE 1.7' is not listed, because block n=4 carries those words. The page ends MID-BOX (Example 1.7 continues on p018)."
+}

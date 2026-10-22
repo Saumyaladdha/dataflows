@@ -1,0 +1,57 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "evolutionary time for species diversification, (b) Tropical environments, unlike temperate ones, are less seasonal, relatively more constant and predictable. Such constant environments promote niche specialisation and lead to a greater species diversity and (c) There is more solar energy available in the tropics, which contributes to higher productivity; this in turn might contribute indirectly to greater diversity.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "(ii) Species-Area relationships: During his pioneering and extensive explorations in the wilderness of South American jungles, the great German naturalist and geographer Alexander von Humboldt observed that within a region species richness increased with increasing explored area, but only up to a limit.  In fact, the relation between species richness and area for a wide variety of taxa (angiosperm plants, birds, bats, freshwater fishes) turns out to be a rectangular hyperbola (Figure13.2). On a logarithmic scale, the relationship is a straight line described by the equation"
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [157, 643, 902, 1377],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [967, 1020, 1300, 1060],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "where\nS= Species richness    A= Area\nZ = slope of the line (regression\n     coefficient)\nC = Y-intercept"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Ecologists have discovered that the value of Z lies in the range of 0.1 to 0.2, regardless of the taxonomic group or the region (whether it is the plants in Britain, birds in California or molluscs in New York state, the slopes of the regression line are amazingly similar).  But, if you analyse the species-area relationships among very large areas like the entire continents, you will find that the slope of the line to be much steeper (Z values in the range of 0.6 to 1.2).  For example, for frugivorous (fruit-eating) birds and mammals in the tropical forests of different continents, the slope is found to be 1.15. What do steeper slopes mean in this context?"
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "13.1.3 The importance of  Species Diversity to the Ecosystem"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Does the number of species in a community really matter to the functioning of the ecosystem?This is a question for which ecologists have not been able to give a definitive answer.  For many decades, ecologists believed that communities with more species,  generally, tend to be more stable than those with less species.  What exactly is stability for a biological"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "BIOLOGY",
+    "220",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read page 4 of this chapter immediately before: it ended mid-sentence with 'tropical latitudes have remained relatively undisturbed for millions of years and thus, had a long', completed here by 'evolutionary time for species diversification', so first_block_continues_from_previous is true on that evidence. Figure 13.2 sits in the left half with text wrapping around it; it is placed at the point its top edge falls in the flow (n=3). The displayed equation 'log S =  log C + Z log A' is marked needs_special (n=4) and the symbol definitions following it are kept as a list block (n=5) since they are plain text. Page ends mid-sentence at 'What exactly is stability for a biological'."
+}

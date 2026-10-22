@@ -1,0 +1,48 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 22.5,
+    "columns": [
+      {"id": "left", "x0": 0.125, "x1": 0.488},
+      {"id": "right", "x0": 0.512, "x1": 0.877}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.124, 0.086, 0.143, 0.096],
+     "column": "left", "size_rel": 0.9, "align": "left", "font": "serif", "text_color": "#231f20"},
+    {"n": null, "role": "running_header", "bbox": [0.803, 0.085, 0.877, 0.095],
+     "column": "right", "size_rel": 0.85, "align": "right", "font": "serif", "text_color": "#231f20"},
+    {"n": null, "role": "table_caption", "bbox": [0.255, 0.119, 0.744, 0.131],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "text_color": "#29abe2"},
+    {"n": 1, "role": "table", "bbox": [0.187, 0.137, 0.809, 0.193],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif", "fill": "#fce0b2"},
+    {"n": 2, "role": "paragraph", "bbox": [0.125, 0.212, 0.488, 0.378],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.125, 0.392, 0.488, 0.450],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "box", "bbox": [0.126, 0.462, 0.486, 0.650],
+     "column": "left", "size_rel": 0.95, "align": "justify", "font": "serif-italic", "fill": "#c8ecd3"},
+    {"n": null, "role": "figure", "bbox": [0.369, 0.470, 0.470, 0.563],
+     "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.370, 0.567, 0.468, 0.583],
+     "column": "left", "size_rel": 0.85, "align": "center", "font": "serif-bold"},
+    {"n": 5, "role": "paragraph", "bbox": [0.125, 0.665, 0.488, 0.901],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "paragraph", "bbox": [0.512, 0.212, 0.877, 0.325],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 7, "role": "equation", "bbox": [0.512, 0.330, 0.877, 0.356],
+     "column": "right", "size_rel": 1.1, "align": "left", "font": "serif-italic"},
+    {"n": 8, "role": "paragraph", "bbox": [0.512, 0.357, 0.877, 0.468],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 9, "role": "section_heading", "bbox": [0.512, 0.485, 0.877, 0.516],
+     "column": "right", "size_rel": 1.15, "align": "justify", "font": "serif-italic", "text_color": "#29abe2"},
+    {"n": 10, "role": "paragraph", "bbox": [0.512, 0.520, 0.877, 0.901],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "decorative_image", "bbox": [0.21, 0.32, 0.84, 0.81],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.473, 0.972, 0.526, 0.981],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "serif", "text_color": "#231f20"}
+  ],
+  "note": "Ordinary two-column body page; no chapter banner, no page_header_band and no footer_rule are printed on this page. Page aspect is 1750x2180 (ratio 0.803), not A4. body_text_size_px measured on the right-column prose (line pitch ~36.5 px in page pixels). Columns measured from the text block edges: left 0.125-0.488, right 0.512-0.877; the Table 2.2 caption, the table itself and the diagonal watermark span the measure and are 'full'. Table 2.2 has two fills - the peach body cells reported here (#fce0b2) and a lavender first column (~#dcdcf0); only one fill field is available so the lavender is recorded here instead. The Einstein box (block 4) contains its own portrait and portrait caption, listed as separate figure / figure_caption elements inside the box's bbox. The last element is the bottom-centre edition line '2024-25', recorded as running_header because no footer-text role exists in the allowed list. The decorative_image is the diagonal 'not to be republished' watermark, which runs corner-to-corner so its bbox is the enclosing box of a rotated object, not a printed rectangle. All blocks 1-10 matched by position with no ambiguity."
+}

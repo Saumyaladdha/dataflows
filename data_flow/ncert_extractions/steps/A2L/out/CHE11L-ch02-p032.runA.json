@@ -1,0 +1,32 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.124, "x1": 0.486},
+      {"id": "right", "x0": 0.513, "x1": 0.876}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.1251, 0.0876, 0.1394, 0.0945],
+     "column": "full", "size_rel": 0.8, "align": "left", "font": "sans", "text_color": "#231f20"},
+    {"n": null, "role": "running_header", "bbox": [0.7989, 0.0872, 0.8766, 0.0945],
+     "column": "full", "size_rel": 0.8, "align": "right", "font": "sans", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.1246, 0.1197, 0.4846, 0.1491],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "equation", "bbox": [0.1246, 0.1564, 0.4851, 0.1858],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.124, 0.1899, 0.4851, 0.3849],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "figure", "bbox": [0.1251, 0.4028, 0.4806, 0.7358],
+     "column": "left", "size_rel": 1.0, "fill": "#fffbd5"},
+    {"n": null, "role": "figure_caption", "bbox": [0.124, 0.7537, 0.4863, 0.9101],
+     "column": "left", "size_rel": 0.9, "align": "justify", "font": "serif-italic"},
+    {"n": 5, "role": "paragraph", "bbox": [0.5131, 0.1197, 0.876, 0.9161],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.4771, 0.9555, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans", "text_color": "#231f20"}
+  ],
+  "note": "Two-column body page, verso (page 60): folio top-left, running header 'CHEMISTRY' top-right, both plain text on bare paper. No chapter banner, no coloured page_header_band and no footer_rule on this page; the foot carries only the centred edition line '2024-25', recorded as a second running_header because the role list has no footer-text value. Page is 1750x2180 px, aspect 0.803, not A4. body_text_size_px = 20.0, cap-to-baseline measured on body capitals in both columns ('h' ascender/cap of 'hydrogen atom, as said earlier' in the left column and 'T' of 'The energy of an electron' in the right). Block 2 is the displayed orbital-energy inequality '1s < 2s = 2p < ...' with its right-flush equation number (2.23) on the second line; it sits inside the left column only, not across the measure, so its column is 'left' and align is 'left' (the number is flush right within that same measure). Block 4 is the Fig. 2.16 energy-level diagram on a yellow panel, fill #fffbd5 sampled from the flat interior away from the red level bars and black axes; the panel measures x 219-841 px, y 878-1604 px. Its twelve-line italic caption below it has no matching A2 block, so n is null. Block 5 is a single paragraph filling the entire right column from the first text line to the last, with several bold runs inside it; it is one block and one element. Left and right columns do not share any block on this page - block 1's paragraph ends in the left column and the right column begins a new block. A grey 'NCERT / not to be republished' watermark crosses the page; it is a print artefact and is not listed as an element."
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "table",
+  "header": [],
+  "rows": [
+    ["HX(aq) + H2O(l) ⇌ H3O+(aq) + X-(aq)"],
+    ["Initial concentration (M)"],
+    ["c", "0", "0"],
+    ["Let α be the extent of ionization"],
+    ["Change (M)"],
+    ["-cα", "+cα", "+cα"]
+  ],
+  "repeated_header": false,
+  "note": "This is an ICE-style layout printed as stacked labelled lines rather than a ruled grid, so there is no distinct header row (header left empty). Row 1 is the equilibrium equation itself (printed above the labelled lines); row 2 'Initial concentration (M)' is a label line followed by its three values (c, 0, 0) for HX, H3O+ and X- respectively (H2O's concentration is omitted, consistent with it being a pure liquid, as in the preceding page's K_w derivation); 'Let α be the extent of ionization' is a sentence printed between the Initial and Change blocks, kept as its own row to preserve exact line order; 'Change (M)' labels the final value row (-cα, +cα, +cα). The crop (and target_box_in_crop) ends right after this last value row; the following 'Equilibrium concentration (M)' label and its value row (c-cα, cα, cα), visible lower in the full page image, fall outside target_box_in_crop and belong to a different block, so they are excluded here."
+}

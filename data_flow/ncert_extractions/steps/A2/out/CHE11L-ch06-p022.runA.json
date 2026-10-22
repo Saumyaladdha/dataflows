@@ -1,0 +1,48 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "that in weak electrolytes, equilibrium is established between ions and the unionized molecules. This type of equilibrium involving ions in aqueous solution is called ionic equilibrium. Acids, bases and salts come under the category of electrolytes and may act as either strong or weak electrolytes.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "6.10 ACIDS, BASES AND SALTS"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Acids, bases and salts find widespread occurrence in nature. Hydrochloric acid present in the gastric juice is secreted by the lining of our stomach in a significant amount of 1.2-1.5 L/day and is essential for digestive  processes. Acetic acid is known to be the main constituent of vinegar. Lemon and orange juices contain citric and ascorbic acids, and tartaric acid is found in tamarind paste. As most of the acids taste sour, the word “acid” has been derived from a latin word “acidus” meaning sour. Acids are known to turn blue litmus paper into red and liberate dihydrogen on reacting with some metals. Similarly, bases are known to turn red litmus paper blue, taste bitter and feel soapy. A common example of a base is washing soda used for washing purposes. When acids and bases are mixed in the right proportion they react with each other to give salts. Some commonly known examples of salts are sodium chloride, barium sulphate, sodium nitrate.  Sodium chloride (common salt) is an important component of our diet and is formed by reaction between hydrochloric acid and sodium hydroxide. It exists in solid state as a cluster of positively charged sodium ions and negatively charged chloride ions which are held together due to electrostatic interactions between oppositely charged species (Fig.6.10). The electrostatic forces between two charges are inversely proportional to dielectric constant of the medium. Water, a universal solvent, possesses a very high dielectric constant of 80. Thus, when sodium chloride is dissolved in water, the electrostatic interactions are reduced by a factor of 80 and this facilitates the ions to move freely in the solution. Also, they are well-separated due to hydration with water molecules."
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [899, 760, 1550, 1300],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Comparing, the ionization of hydrochloric acid with that of acetic acid in water we find that though both of them are polar covalent"
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Faraday was born near London into a family of very limited means. At the age of 14 he was an apprentice to a kind bookbinder who allowed Faraday to read the books he was binding. Through a fortunate chance he became laboratory assistant to Davy, and during 1813-4, Faraday accompanied him to the Continent.  During this trip he gained much from the experience of coming into contact with many of the leading scientists of the time.  In 1825, he succeeded Davy as Director of the Royal Institution laboratories, and in 1833 he also became the first Fullerian Professor of Chemistry. Faraday’s first important work was on analytical chemistry. After 1821 much of his work was on electricity and magnetism and different electromagnetic phenomena. His ideas have led to the establishment of modern field theory. He discovered his two laws of electrolysis in 1834. Faraday was a very modest and kind hearted person.  He declined all honours and avoided scientific controversies. He preferred to work alone and never had any assistant. He disseminated science in a variety of ways including his Friday evening discourses, which he founded at the Royal Institution.  He has been very famous for his Christmas lecture on the ‘Chemical History of a Candle’.  He published nearly 450 scientific papers."
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1289, 1458, 1525, 1758],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["EQUILIBRIUM", "189", "2024-25"],
+  "note": "Two-column page with a full-width green biography box across the bottom; left column read before right, the box last. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 21 output I had just written myself: page 21 ended mid-sentence at 'It should be noted', and this page opens 'that in weak electrolytes, equilibrium is established...', so first_block_continues_from_previous is true. Block 3 is one paragraph that runs across the column break. Block 4's bbox covers the Fig. 6.10 molecular picture, its Na+ / Cl– / water-molecule labels and the three-line 'Fig.6.10' caption; block 7's bbox covers the Faraday portrait inside the green box together with its 'Michael Faraday (1791–1867)' label. Both left for the special transcriber. last_block_continues_on_next is true because the page's running prose is cut off mid-sentence at 'both of them are polar covalent' (block 5); the blocks that physically end the page, the biography box and the portrait, are complete, which is why no block here carries a continues_on_next flag."
+}

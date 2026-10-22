@@ -1,0 +1,127 @@
+{
+  "group": "v2__biology__plain.part13",
+  "ratings": [
+    {
+      "question_id": "2015_A#q123",
+      "concept": "Reading a human pedigree: inferring the mode of inheritance from affected individuals in every generation and from an affected father having an affected son",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "In the supplied chart the generation I male is filled and so is one of his sons in generation II; a father passes no X chromosome to a son, so that one relationship strikes out option 1, \"X-linked dominant\", on its own.",
+      "traps": [],
+      "verdicts": ["arguable_key"],
+      "reason": "This question requires applying each inheritance criterion to a supplied chart, demonstrated by the stem's \"the filled symbols represent the affected individuals\" together with the chart's four generations, in which affected individuals of both sexes appear in each.",
+      "note": "arguable_key, and the printed key is kept (rulebook section 7). The figure referenced by the record, figures_agent/2015_A/q123.png, is present and legible: it shows four generations with filled symbols in every one, an affected male in generation I married to an unaffected female, and affected offspring of both sexes. Affected individuals in every generation with no unaffected intervening carrier is the dominant pattern, and an affected father with an affected son excludes X-linkage, which together point to option 2 rather than to the stored key of option 4. The key is NOT overturned here and the doubt is recorded as a flag instead. No trap is written: which options are wrong depends on which answer is right, so no route can be named while the key is in question."
+    },
+    {
+      "question_id": "2015_A#q124",
+      "concept": "Balbiani rings of polytene chromosomes: puffed regions where transcription, and hence protein synthesis, is active",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires one stored fact about a named chromosomal structure, demonstrated by the stem \"Balbiani rings are sites of :\" standing over four bare synthetic activities with no data to reason from.",
+      "note": "No trap is written. The three wrong options vary one word only - they are \"Lipid\", \"Nucleotide\" and \"Polysaccharide\" in place of \"RNA and protein\" - and no specific fact about Balbiani rings or about polytene chromosomes attaches to any of them, so no option can be given a route. An empty traps list is the honest answer here rather than a nearest label."
+    },
+    {
+      "question_id": "2015_A#q125",
+      "concept": "Emphysema: destruction of the alveolar walls reduces the surface area available for gas exchange",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "names asthma, another disorder of the same system, whose lesion is inflammation and spasm of the bronchi and bronchioles - an airway problem, not the loss of alveolar wall the stem describes"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "names pleurisy, another member of the same family, whose lesion is inflammation of the pleural membranes outside the lung tissue, so no alveolar surface is lost"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "names pneumonia, the closest member: it does involve the alveoli, but by filling them with fluid and inflammatory cells, which is reversible congestion rather than the stem's \"damage in the alveolar walls\""
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored disorder-to-lesion pairing, demonstrated by the stem's \"alveolar surface area involved in gas exchange is drastically reduced due to damage in the alveolar walls\", which is the definition of emphysema.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q126",
+      "concept": "Lichens as bioindicators: their sensitivity to sulphur dioxide makes their absence the standard indicator of SO2 pollution",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "partial_combination",
+          "option": "1",
+          "route": "names the fungal partner alone; a lichen is the symbiosis of a fungus with an alga, so option 1 is a true but incomplete half of the keyed answer, with the photobiont omitted"
+        },
+        {
+          "label": "partial_combination",
+          "option": "4",
+          "route": "names the algal partner alone, the other half of the same symbiosis, with the mycobiont omitted; neither partner on its own is the indicator the stem asks for"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored pairing of an organism with a pollutant it indicates, demonstrated by the stem's \"most suitable indicator of SO2 pollution\" against the keyed \"Lichens\", whose two component partners are themselves printed as options 1 and 4.",
+      "note": "Option 3 (Conifers) is left untagged: conifers are genuinely sulphur-dioxide sensitive, so the option is not reached by a nameable mistake about the subject matter, only by preferring a less specific indicator; no route can be named and nothing is tagged."
+    },
+    {
+      "question_id": "2015_A#q127",
+      "concept": "Satellite DNA: non-coding repetitive sequence whose polymorphism is high between individuals and heritable, which is what makes DNA fingerprinting possible",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The single fact that satellite DNA is non-coding repetitive sequence strikes out options 1 and 2 together, since both assign it a coding function (\"Codes for enzymes needed for DNA replication\", \"Codes for proteins needed in cell cycle\"), leaving only options 3 and 4.",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "4",
+          "route": "the option makes two claims and the first holds: satellite DNA indeed \"Does not code for proteins\". The claim that fails is the second, \"is same in all members of the population\" - it is the most polymorphic part of the genome, which is the property option 3 states and the basis of fingerprinting"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored property of a named sequence class, demonstrated by option 4's \"Does not code for proteins and is same in all members of the population\", whose first half is the fact that strikes out options 1 and 2 and whose second half is the point at issue.",
+      "note": "Options 1 and 2 are not tagged separately. Both fail on one and the same fact - that satellite DNA is non-coding - and that fact is recorded as the elimination shortcut rather than written twice as a device; a single device is not two traps."
+    },
+    {
+      "question_id": "2015_A#q128",
+      "concept": "Industrial melanism as the documented example of natural selection acting on an existing variant",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_fact",
+          "option": "1",
+          "route": "names Neo-Lamarckism, the adjacent explanatory framework, under which the dark colour would be acquired in response to soot and then inherited; the melanic variant was present before industrialisation and was selected, not acquired"
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "2",
+          "route": "Neo-Darwinism is correct subject matter and is not false - it is the synthesis within which natural selection sits - but the stem asks what the case is an example OF, and the example illustrates the mechanism, which option 3 names, rather than the framework containing it"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "4",
+          "route": "names mutation, the adjacent process that supplies the variant; mutation produced the melanic allele before the soot, and what the industrial period changed was its frequency, which is selection and not mutation"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires separating a mechanism from the framework that contains it and from the process that precedes it, demonstrated by the stem's \"is an example of\" over \"Neo Darwinism\" and \"Natural selection\", which are not rivals but a whole and its part.",
+      "note": "Option 2 is recorded as true_but_out_of_scope rather than as a wrong fact, because natural selection is a component of Neo-Darwinism and the option is therefore not false, only less specific than the question asks for."
+    }
+  ],
+  "group_note": "All six were read as the same printed shape - one question with four bare answers - with one member, 2015_A#q123, differing: it cannot be answered without reading the supplied pedigree chart, so the shape it belongs with on the E1 axis is a figure-gated one and not the plain five. That is recorded here as the grouping note asks. Consistency rules applied across the six. (1) DEMAND: four are `recall`, one stored fact deciding each (q124, q125, q126, q127). q123 is `application`, because inheritance criteria are applied to a chart supplied in this question rather than recalled. q128 is `concept_discrimination`, because its options are not rivals of equal standing - Neo-Darwinism contains natural selection - so the work is separating a mechanism from the framework around it; that containment is the single reason it differs from the four recall members. (2) STRUCTURE: `single_step` for the five settled by one fact or one definition; `several_independent_checks` for q123 alone, where each of the four inheritance modes is tested separately against the chart and the verdicts combined. (3) TRAPS: written only where the fact that makes the option wrong can be named with the option. q125 carries `other_one_fact` three times, one per rival disorder, with each disorder's actual lesion named - the construction is uniform so the labels are. q126's two tagged distractors are the two halves of the keyed symbiosis offered separately, which is `partial_combination` with the omitted partner named, and is a different device from q125's even though both are recall questions. q127 carries one trap only: option 4 is the long almost-correct statement whose first clause is true and whose second fails, which is `half_true`; options 1 and 2 fail on a single shared fact and that fact is recorded once, as the elimination shortcut, rather than as two devices. q128 separates the false adjacent framework and the adjacent process (`neighbouring_fact`) from the one distractor that is not false at all, only less specific (`true_but_out_of_scope`). Two members carry no trap and each for a stated reason that is not the same reason: 2015_A#q124's three distractors vary only the biomolecule class and no fact attaches to any of them, so there is nothing to name; 2015_A#q123's key is in doubt against its own figure - the chart shows affected individuals in all four generations and an affected father with an affected son, which excludes X-linkage and indicates a dominant pattern, while the stored key is option 4 - so it carries arguable_key, keeps the printed key untouched, and gets no trap, because a route cannot be named while the answer is unsettled. No trap sits on any official answer."
+}

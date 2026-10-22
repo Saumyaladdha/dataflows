@@ -1,0 +1,131 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "in good agreement with experimental values of specific heats of several gases given in Table 12.2. Of course, there are discrepancies between predicted and actual values of specific heats of several other gases (not shown in the table), such as Cl2, C2H6 and many other polyatomic gases. Usually, the experimental values for specific heats of these gases are greater than the predicted values as given in Table12.1 suggesting that the agreement can be improved by including vibrational modes of motion in the calculation. The  law of equipartition of energy is, thus, well verified experimentally at ordinary temperatures.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        302,
+        680,
+        945,
+        1026
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        302,
+        1096,
+        945,
+        1669
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 12.8 A cylinder of fixed capacity 44.8 litres contains helium gas at standard temperature and pressure. What is the amount of heat needed to raise the temperature of the gas in the cylinder by 15.0 °C ? (R = 8.31 J mo1–1 K–1)."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Answer Using the gas law PV = µRT, you can easily show that 1 mol of any (ideal) gas at standard temperature (273 K) and pressure (1 atm = 1.01 × 105 Pa) occupies a volume of  22.4 litres. This universal volume is called molar volume. Thus the cylinder in this example contains 2 mol of helium. Further, since helium is monatomic, its predicted (and observed) molar specific heat at constant volume, Cv = (3/2) R, and molar specific heat at constant pressure, Cp = (3/2) R + R = (5/2) R.  Since the volume of the cylinder is fixed, the heat required is determined by Cv. Therefore,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        983,
+        630,
+        1620,
+        768
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "12.6.4   Specific Heat Capacity of Solids"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "We can use the law of equipartition of energy to determine specific heats of solids. Consider a solid of N atoms, each vibrating about its mean position. An oscillation in one dimension has average energy of 2 × ½ kBT = kBT . In three dimensions, the average energy is 3 kBT. For a mole of solid, N = NA, and the total energy is"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1000,
+        1113,
+        1620,
+        1155
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Now at constant pressure ∆Q = ∆U + P∆V = ∆U,  since for a solid  ∆V is negligible. Hence,"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1000,
+        1210,
+        1620,
+        1280
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        983,
+        1283,
+        1620,
+        1672
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "As Table 12.3 shows the prediction generally agrees with experimental values at ordinary temperature (Carbon is an exception)."
+    },
+    {
+      "n": 14,
+      "kind": "heading",
+      "text": "12.7  MEAN FREE PATH"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Molecules in a gas have rather large speeds of the order of the speed of sound. Yet a gas leaking",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "254",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page; blocks 1-4 are the left column, 5-15 the right, in left-then-right reading order. previous_page_last_block was null, but the page opens mid-sentence (\"in good agreement with experimental values of\"), which is an unambiguous continuation, so first_block_continues_from_previous is true. Three tables are marked needs_special with bboxes on the 1825x2160 image, each bbox including its \"Table 12.1 / Table12.2 / Table 12.3\" caption. Block 6 is the display calculation \"Heat required = no. of moles × molar specific heat × rise in temperature / = 2 × 1.5 R × 15.0 = 45 R / = 45 × 8.31 = 374 J.\" — marked as an equation because it is set as display math. The Example 12.8 shaded box (block 4) is transcribed as a box since boxes are not special-transcriber items. Text-layer artefacts recorded, not corrected: subscripts/superscripts are flattened (kBT for k_B T, Cl2, 105 Pa for 10^5 Pa, mol-1 K-1), the table-12.1 gamma column header comes through as \"g\", and the Example 12.8 unit reads \"J mo1–1 K–1\" with a digit 1 in place of the l in mol; the image shows the correctly typeset forms. Decorative \"⊳\"/\"◄\" example-start and example-end markers in the text layer were dropped as furniture. No substantive text-layer/image disagreement."
+}

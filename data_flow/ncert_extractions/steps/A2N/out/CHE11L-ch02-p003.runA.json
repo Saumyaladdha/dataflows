@@ -1,0 +1,37 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 2, "no_change": true},
+    {
+      "n": 4,
+      "corrected_text": "In 1897, British physicist J.J. Thomson measured the ratio of electrical charge (e) to the mass of electron (mₑ ) by using cathode ray tube and applying electrical and magnetic field perpendicular to each other as well as to the path of electrons (Fig. 2.2). When only electric field is applied, the electrons deviate from their path and hit the cathode ray tube at point A (Fig. 2.2). Similarly when only magnetic field is applied, electron strikes the cathode ray tube at point C. By carefully balancing the electrical and magnetic field strength, it is possible to bring back the electron to the path which is followed in the absence of electric or magnetic field and they hit the screen at point B. Thomson argued that the amount of deviation of the particles from their path in the presence of electrical or magnetic field depends upon:",
+      "fixes": [
+        {"wrong": "(me )", "right": "(mₑ )"}
+      ]
+    },
+    {"n": 5, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "By carrying out accurate measurements on the amount of deflections observed by the electrons on the electric field strength or magnetic field strength, Thomson was able to determine the value of e/mₑ as:",
+      "fixes": [
+        {"wrong": "e/me as:", "right": "e/mₑ as:"}
+      ]
+    },
+    {
+      "n": 8,
+      "corrected_text": "Where mₑ is the mass of the electron in kg and e is the magnitude of the charge on the electron in coulomb (C). Since electrons are negatively charged, the charge on electron is –e.",
+      "fixes": [
+        {"wrong": "Where me is", "right": "Where mₑ is"}
+      ]
+    },
+    {"n": 10, "corrected_text": "R.A. Millikan (1868-1953) devised a method known as oil drop experiment (1906-14), to determine the charge on the electrons. He found the charge on the electron to be – 1.6 × 10⁻¹⁹ C. The present accepted value of electrical charge is – 1.602176 × 10⁻¹⁹ C. The mass of the  electron (mₑ) was determined by combining these results with Thomson’s value of e/mₑ ratio.",
+      "fixes": [
+        {"wrong": "1.6 × 10–19 C", "right": "1.6 × 10⁻¹⁹ C"},
+        {"wrong": "1.602176 × 10–19 C", "right": "1.602176 × 10⁻¹⁹ C"},
+        {"wrong": "electron (me)", "right": "electron (mₑ)"},
+        {"wrong": "e/me ratio", "right": "e/mₑ ratio"}
+      ]
+    }
+  ],
+  "note": "Four blocks corrected. The electron-mass symbol is printed throughout as m with a subscript e (mₑ); the stored text had it flattened to the two plain letters \"me\" in n=4, n=6, n=8 and n=10, restored with U+2091 LATIN SUBSCRIPT SMALL LETTER E. n=10 also had two flattened powers of ten: the page prints – 1.6 × 10⁻¹⁹ C and – 1.602176 × 10⁻¹⁹ C, stored as 10–19 (which reads as the number 1019 / minus nineteen), restored to superscript-minus-nineteen. n=1, n=2 and n=5 carry no notation and are already correct. The displayed equations (2.1) and (2.2), which hold e/mₑ = 1.758820 × 10¹¹ C kg⁻¹ and mₑ = 9.1094×10⁻³¹ kg, are equation blocks not in this block list."
+}

@@ -1,0 +1,59 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "7. A cavity inside a conductor is shielded from outside electrical influences. It is worth noting that electrostatic shielding does not work the other way round; that is, if you put charges inside the cavity, the exterior of the conductor is not shielded from the fields by the inside charges.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "EXERCISES"
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "2.1 Two charges 5 × 10–8 C and –3 × 10–8 C are located 16 cm apart. At what point(s) on the line joining the two charges is the electric potential zero? Take the potential at infinity to be zero."
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "2.2 A regular hexagon of side 10 cm has a charge 5 μC at each of its vertices. Calculate the potential at the centre of the hexagon."
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "2.3 Two charges 2 μC and –2 μC are placed at points A and B 6 cm apart.\n(a) Identify an equipotential surface of the system.\n(b) What is the direction of the electric field at every point on this surface?"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "2.4 A spherical conductor of radius 12 cm has a charge of 1.6 × 10–7C distributed uniformly on its surface. What is the electric field\n(a) inside the sphere\n(b) just outside the sphere\n(c) at a point 18 cm from the centre of the sphere?"
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "2.5 A parallel plate capacitor with air between the plates has a capacitance of 8 pF (1pF = 10–12 F). What will be the capacitance if the distance between the plates is reduced by half, and the space between them is filled with a substance of dielectric constant 6?"
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "2.6 Three capacitors each of capacitance 9 pF are connected in series.\n(a) What is the total capacitance of the combination?\n(b) What is the potential difference across each capacitor if the combination is connected to a 120 V supply?"
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "2.7 Three capacitors of capacitances 2 pF, 3 pF and 4 pF are connected in parallel.\n(a) What is the total capacitance of the combination?\n(b) Determine the charge on each capacitor if the combination is connected to a 100 V supply."
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "2.8 In a parallel plate capacitor with air between the plates, each plate has an area of 6 × 10–3 m2 and the distance between the plates is 3 mm. Calculate the capacitance of the capacitor. If this capacitor is connected to a 100 V supply, what is the charge on each plate of the capacitor?"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "79", "Reprint 2026-27"],
+  "note": "input `previous_page_last_block` is null although page is 35, so continuation was judged from the page itself: the grey box opens at numbered item \"7.\", i.e. mid-box from the previous page. Block 10 (exercise 2.8) is a complete sentence, so last_block_continues_on_next is false, but the EXERCISES list itself carries on to the next page. Text layer renders the micro sign as \"m\" in 2.2 and 2.3 (\"5 mC\", \"2 mC\"); the image clearly shows μC, so those were read from the image. Superscripts are flattened in the text layer (e.g. \"10–8\", \"m2\") and were copied as the text layer holds them. A small decorative blue/grey square above the EXERCISES heading is page decoration, not a figure, so no block was emitted for it."
+}

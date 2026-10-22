@@ -1,0 +1,172 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 5.11  Slowing down of neutrons: In a nuclear reactor a neutron of high speed (typically 107 m s–1) must be slowed to 103 m s–1 so that it can have a high probability of interacting with isotope 92 235U and causing it to fission. Show that a neutron can lose most of its kinetic energy in an elastic collision with a light nuclei like deuterium or carbon which has a mass of only a few times the neutron mass.  The material making up the light nuclei, usually heavy water (D2O) or graphite, is called a moderator.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Answer  The initial kinetic energy of the neutron is"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        294,
+        812,
+        500,
+        876
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "while its final kinetic energy from Eq. (5.26)"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        202,
+        938,
+        766,
+        1022
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The fractional kinetic energy lost is"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        262,
+        1124,
+        700,
+        1212
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "while the fractional kinetic energy gained by the moderating nuclei K2f /K1i  is"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        202,
+        1298,
+        515,
+        1420
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "One can also verify this result by substituting from Eq. (5.27)."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "For deuterium m2 = 2m1 and we obtain f1 = 1/9  while f2 = 8/9.  Almost 90% of the neutron’s energy is transferred to deuterium. For carbon f1 = 71.6% and f2 = 28.4%.  In practice, however, this number is smaller since head-on collisions are rare."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "If the initial velocities and final velocities of both the bodies are along the same straight line, then it is called a one-dimensional collision, or head-on collision. In the case of small spherical bodies, this is possible if the direction of travel of body 1 passes through the centre of body 2 which is at rest. In general, the collision is two-dimensional, where the initial velocities and the final velocities lie in a plane."
+    },
+    {
+      "n": 13,
+      "kind": "heading",
+      "text": "5.11.3  Collisions in Two Dimensions"
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Fig. 5.10 also depicts the collision of a moving mass m1 with the stationary mass m2. Linear momentum is conserved in such a collision. Since momentum is a vector this implies three equations for the three directions {x, y, z}. Consider the plane determined by the final velocity directions of m1 and m2 and choose it to be the x-y plane. The conservation of the z-component of the linear momentum implies that the entire collision is in the x-y plane. The x- and y-component equations are"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        894,
+        732,
+        1540,
+        842
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "One knows {m1, m2, v1i} in most situations.  There are thus four unknowns {v1f, v2f , θ1 and θ2}, and only two equations. If θ 1 = θ 2 = 0, we regain Eq. (5.23) for one dimensional collision."
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "If, further the collision is elastic,"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        944,
+        1046,
+        1540,
+        1118
+      ],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "We obtain an additional equation. That still leaves us one equation short.  At least one of the four unknowns, say θ 1, must be made known for the problem to be solvable. For example, θ1 can be determined by moving a detector in an angular fashion from the x  to the y  axis. Given {m1, m2, v1i , θ1} we can determine {v1f , v2f, θ2} from Eqs. (5.28)-(5.30)."
+    },
+    {
+      "n": 20,
+      "kind": "box",
+      "text": "Example 5.12  Consider the collision depicted in Fig. 5.10 to be between two billiard balls with equal masses m1 = m2. The first  ball  is  called the cue while the second ball is called the target. The billiard player wants to ‘sink’ the target ball in a corner pocket, which is at an angle θ2 = 37°. Assume that the collision is elastic and that friction and rotational motion are not important.  Obtain θ 1."
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "Answer   From momentum conservation, since the masses are equal"
+    },
+    {
+      "n": 22,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        894,
+        1752,
+        1420,
+        1932
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "WORK, ENERGY AND POWER",
+    "85",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column read fully before right column. Block 12 is a single paragraph that runs from the bottom of the left column ('...the collision is two-') into the top of the right column ('dimensional, where...'); it is emitted once as one block. The decorative triangle markers (⊳ / ◄) that open and close the worked examples are not prose and are omitted. Per the source note, inline mathematics is copied with the characters the text layer actually holds (e.g. 'typically 107 m s–1', 'isotope 92 235U', 'D2O'), where subscripts/superscripts are extracted onto separate lines; displayed formulae, including the numbered equations (5.28), (5.29) and (5.30) and the unfinished vector derivation at the foot of the right column, are marked needs_special with bounding boxes instead of being transcribed. Bounding boxes are in pixels of the 1825x2176 page image. The page ends mid-derivation in Example 5.12's answer, so last_block_continues_on_next is true. previous_page_last_block was null for this page, so the opening Example 5.11 box was judged from the image alone; it begins a fresh example and does not continue from the previous page."
+}

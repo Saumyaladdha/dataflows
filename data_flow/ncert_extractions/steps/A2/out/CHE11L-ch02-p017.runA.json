@@ -1,0 +1,91 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        218,
+        253,
+        1542,
+        1117
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "that if spectral lines are expressed in terms of wavenumber ( ), then the visible lines of the hydrogen spectrum obey the following formula:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        272,
+        1308,
+        861,
+        1379
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "where n is an integer equal to or greater than 3 (i.e., n = 3,4,5,....)"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The series of lines described by this formula are called the Balmer series. The Balmer series of lines are the only lines in the hydrogen spectrum which appear in the visible region of the electromagnetic spectrum. The Swedish spectroscopist, Johannes Rydberg, noted that all series of lines in the hydrogen spectrum could be described by the following expression :"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        213,
+        1744,
+        861,
+        1815
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "where n1=1,2........\nn2 = n1 + 1, n1 + 2......"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The value 109,677 cm–1 is called the Rydberg constant for hydrogen. The first five series of lines that correspond to n1 = 1, 2, 3, 4, 5 are known as Lyman, Balmer, Paschen, Bracket and Pfund series, respectively, Table 2.3 shows these series of transitions in the hydrogen spectrum. Fig. 2.11 (page, 46) shows the Lyman, Balmer and Paschen series of transitions for hydrogen atom."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Of all the elements, hydrogen atom has the simplest line spectrum. Line spectrum"
+    },
+    {
+      "n": 10,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        899,
+        1597,
+        1537,
+        1962
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "45",
+    "STRUCTURE OF ATOM",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p016.runA.json I wrote in this run, whose main text ends 'Balmer showed in 1885 on the basis of experimental observations'. This page's first prose block opens 'that if spectral lines are expressed in terms of wavenumber', the continuation of that sentence, so first_block_continues_from_previous is true. Reading order: the full-width Fig. 2.10 occupies the top third of the page and is listed first, then the left column, then the right column; the text layer instead stores the figure labels and caption and then Table 2.3 at the end of its stream. Block n=1 is Fig. 2.10, left for the special transcriber, its bbox covering both panels with their (a) and (b) labels and all in-diagram labels (Excited sample, Film or detector, Prism, Increasing wavelength, Emission spectrum, White light source, Absorbing sample, Absorption spectrum) together with the eleven-line italic caption below the panel. Block n=10 is Table 2.3, also left for the special transcriber, its bbox covering the blue caption 'Table 2.3 The Spectral Lines for Atomic Hydrogen' and the Series / n1 / n2 / Spectral Region grid for the Lyman, Balmer, Paschen, Brackett and Pfund series. Blocks n=3 and n=6 are the two displayed formulae, equations (2.8) and (2.9), whose stacked 1/2² – 1/n² fractions the text layer does not store at all (it keeps only the bare equation numbers), so they are marked needs_special with their equation numbers inside the bbox. Block n=7 keeps the two subscripted definition lines in the layer's own flattened spelling ('where n1=1,2........' and 'n2 = n1 + 1, n1 + 2......'), as does block n=8 ('109,677 cm–1', 'n1 = 1, 2, 3, 4, 5'); 'Bracket' in that sentence is as printed, although the table spells it Brackett. The right column prose ends mid-sentence at 'Line spectrum' and is completed on p018, so last_block_continues_on_next is true even though the table is printed below it."
+}

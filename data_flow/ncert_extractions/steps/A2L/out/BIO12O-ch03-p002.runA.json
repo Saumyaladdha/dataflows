@@ -1,0 +1,44 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.118, "x1": 0.383},
+      {"id": "right", "x0": 0.395, "x1": 0.860}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "rule_bar", "bbox": [0.025, 0.068, 0.756, 0.107],
+     "column": "full", "size_rel": 1.0, "fill": "#497334"},
+    {"n": null, "role": "decorative_image", "bbox": [0.764, 0.068, 0.975, 0.156],
+     "column": "full", "size_rel": 1.0, "fill": "#735221"},
+    {"n": null, "role": "running_header", "bbox": [0.119, 0.140, 0.267, 0.147],
+     "column": "full", "size_rel": 0.75, "align": "left", "font": "sans",
+     "text_color": "#212121"},
+    {"n": 1, "role": "paragraph", "bbox": [0.118, 0.167, 0.383, 0.394],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.118, 0.398, 0.383, 0.701],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "figure", "bbox": [0.395, 0.166, 0.860, 0.354],
+     "column": "right", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.400, 0.365, 0.841, 0.397],
+     "column": "right", "size_rel": 0.95, "align": "center", "font": "serif",
+     "fill": "#fef2e2"},
+    {"n": 4, "role": "figure", "bbox": [0.401, 0.427, 0.855, 0.630],
+     "column": "right", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.401, 0.653, 0.840, 0.686],
+     "column": "right", "size_rel": 0.95, "align": "center", "font": "serif",
+     "fill": "#fef2e2"},
+    {"n": 5, "role": "paragraph", "bbox": [0.118, 0.705, 0.683, 0.855],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "page_number", "bbox": [0.800, 0.745, 0.975, 0.779],
+     "column": "full", "size_rel": 1.4, "align": "left", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "rule_bar", "bbox": [0.800, 0.782, 0.975, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.478, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif"}
+  ],
+  "note": "Two-column body page. Left column 0.118-0.383 carries the running prose (blocks 1 and 2); right column 0.395-0.860 carries Figure 3.1(a) and 3.1(b) with their peach-tinted captions. Block 5 is set to the full text measure across both columns (x 0.118-0.683) and is therefore `full`. The two A2 `figure` blocks have empty text, so I matched n=3 and n=4 to the two figure IMAGES by position (upper = 3, lower = 4) and gave the two captions n: null; if A2 intended those blocks to be the caption text instead, the n's belong on the caption elements. The green header band, the brown/orange corner ornament with its leaf-and-figure glyph, the orange folio badge '43' (page_number) and the thin orange rule under it are layout furniture A2 never blocked. The bottom-centre '2022-23' edition line has no better role in the allowed list, so it is reported as running_header, same as the chapter-name line at the top. The diagonal 'not to be republished / (c) NCERT' watermark is a page-wide overlay and is not listed as an element."
+}

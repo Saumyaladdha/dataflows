@@ -1,0 +1,80 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Addition of hydrogen at equilibrium results in value of Qc being less than Kc . Thus, in order to attain equilibrium again reaction moves in the forward direction. Similarly, we can say that removal of a product also boosts the forward reaction and increases the concentration of the products and this has great commercial application in cases of reactions, where the product is a gas or a volatile substance. In case of manufacture of ammonia, ammonia is liquified and removed from the reaction mixture so that reaction keeps moving in forward direction. Similarly, in the large scale production of CaO (used as important building material) from CaCO3, constant removal of CO2 from the kiln drives the reaction to completion. It should be remembered that continuous removal of a product maintains Qc at a value less than Kc and reaction continues to move in the forward direction.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "Effect of Concentration – An experiment"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "This can be demonstrated by the following reaction:"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1118, 858, 1200],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1200, 858, 1330],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "A reddish colour appears on adding two drops of 0.002 M potassium thiocynate solution to 1 mL of 0.2 M iron(III) nitrate solution due to the formation of [Fe(SCN)]2+. The intensity of the red colour becomes constant on attaining equilibrium. This equilibrium can be shifted in either forward or reverse directions depending on our choice of adding a reactant or a product. The equilibrium can be shifted in the opposite direction by adding reagents that remove Fe3+ or SCN – ions. For example, oxalic acid (H2C2O4), reacts with Fe3+ ions to form the stable complex ion [Fe(C 2O 4) 3] 3–, thus decreasing the concentration of free Fe3+(aq). In accordance with the Le Chatelier’s principle, the concentration stress of removed Fe3+ is relieved by dissociation of [Fe(SCN)]2+ to replenish the Fe 3+ ions. Because the concentration of [Fe(SCN)]2+ decreases, the intensity of red colour decreases."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Addition of aq. HgCl2 also decreases red colour because Hg2+ reacts with SCN– ions to form stable complex ion [Hg(SCN)4]2–. Removal of free SCN– (aq) shifts the equilibrium in equation (7.24) from right to left to replenish SCN – ions.  Addition of potassium thiocyanate on the other hand increases the colour intensity of the solution as it shift the equilibrium to right."
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "7.8.2 Effect of Pressure Change"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "A pressure change obtained by changing the volume can affect the yield of products in case of a gaseous reaction where the total number of moles of gaseous reactants and total number of moles of gaseous products are different. In applying Le Chatelier’s principle to a heterogeneous equilibrium the effect of pressure changes on solids and liquids can be ignored because the volume (and concentration) of a solution/liquid is nearly independent of pressure."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Consider the reaction,"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [940, 1178, 1425, 1225],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Here, 4 mol of gaseous reactants (CO + 3H2) become 2 mol of gaseous products (CH4 + H2O).  Suppose equilibrium mixture (for above reaction) kept in a cylinder fitted with a piston at constant temperature is compressed to one half of its original volume. Then, total pressure will be doubled (according to pV = constant). The partial pressure and therefore, concentration of reactants and products have changed and the mixture is no longer at equilibrium. The direction in which the reaction goes to re-establish equilibrium can be predicted by applying the Le Chatelier’s principle. Since pressure has doubled, the equilibrium now shifts in the forward direction, a direction in which the number of moles of the gas or pressure decreases (we know pressure is proportional to moles of the gas). This can also be understood by using reaction quotient, Qc. Let [CO], [H2], [CH4] and [H2O] be the molar concentrations at equilibrium for methanation reaction. When",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "210",
+    "CHEMISTRY",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p018 output, which ended with the displayed Qc = [HI]2/ [H2][I2] after 'The same point can be explained in terms of the reaction quotient, Qc,'. This page opens with a fresh sentence, 'Addition of hydrogen at equilibrium results...', but it is the same argument continuing, and the text layer confirms no mid-sentence break; I have still set first_block_continues_from_previous true because p018's last prose sentence introduced the quotient that this sentence immediately evaluates — the block is a continuation of that paragraph, not a new one. Block 4 is the displayed equation (7.24); its bbox also covers the species-label line 'yellow colourless deep red' printed directly under it, because those words label the three species in that displayed equation rather than forming a prose line of their own, so A2S will transcribe them with it. Block 5 is the displayed equation (7.25). Both are needs_special rather than transcribed, as elsewhere in this chapter. Block 6 is one paragraph that straddles the column break ('...dissociation of [Fe(SCN)]2+ to / replenish the Fe 3+ ions...'); the text layer stores it contiguously, so I have kept it whole. Superscript ion charges are spelled as the text layer spells them, including its stray spaces ('Fe 3+', 'SCN – ions', '[Fe(C 2O 4) 3] 3–')."
+}

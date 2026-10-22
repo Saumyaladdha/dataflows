@@ -1,0 +1,152 @@
+{
+  "group": "v2__chemistry__plain.part3",
+  "ratings": [
+    {
+      "question_id": "2015_A#q014",
+      "concept": "Markovnikov addition of HCl worked backwards: which alkene puts the chlorine on the tertiary carbon to give 1-chloro-1-methylcyclohexane",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [],
+      "verdicts": [
+        "source_damage_artifact"
+      ],
+      "reason": "This question requires applying a named addition rule to candidate alkenes, demonstrated by the stem \"an alkene reacts in accordance with the Markovnikov's rule, to give a product 1-chloro-1-methylcyclohexane\".",
+      "note": "Source damage, so E5 is empty under rulebook rule 5 and nothing key-dependent was judged: all four options are placeholders in our record — \"[structure diagram]\", with option 3 reading \"[structure diagram] and [structure diagram]\", which suggests the printed option combined two structures. The structures themselves are missing, so no trap can be named and none is written; the labels above come only from the stem, which names the rule and the product and so fixes the demand (apply Markovnikov to each candidate) and the structure (each candidate alkene adjudicated separately). The option images need repair before this question is tagged on E5."
+    },
+    {
+      "question_id": "2015_A#q015",
+      "concept": "Electrons supplied per mole in a permanganate titration: count the oxidation-state change of the cation AND of the anion (Fe2+ → Fe3+, oxalate → CO2, sulphite → sulphate, nitrite → nitrate)",
+      "cognitive_demand": "calculation",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Sulphate is already the fully oxidised sulphur anion, so FeSO4 can give only the single Fe2+ → Fe3+ electron while every other salt also has an oxidisable anion; that one fact strikes options 1, 2 and 4.",
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "1",
+          "route": "leaves out the two electrons from oxalate → 2CO2 and counts only Fe2+ → Fe3+, which makes FeC2O4 (really 3 electrons per mole) tie with the key at 1 electron"
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "2",
+          "route": "Fe(NO2)2 needs the most permanganate, not the least: 1 electron for Fe2+ → Fe3+ plus 2 electrons for each NO2− → NO3− is 5 per mole, so the option answers the stem with \"least amount\" read as greatest"
+        },
+        {
+          "label": "omitted_contribution",
+          "option": "4",
+          "route": "leaves out the two electrons from SO3^2− → SO4^2− and counts only Fe2+ → Fe3+, which makes FeSO3 (really 3 electrons per mole) tie with the key"
+        }
+      ],
+      "reason": "This question requires computing and comparing the electron demand of four salts, demonstrated by the stem \"same moles of which of the following compounds will require the least amount of acidified KMnO4 for complete oxidation?\" with FeSO4, whose anion cannot be oxidised further, as the key.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q016",
+      "concept": "Reimer–Tiemann reaction: chloroform in dilute alkali generates dichlorocarbene and ends by introducing a −CHO group ortho to the phenolic −OH",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "intermediate_value",
+          "option": "1",
+          "route": "−CHCl2 is the genuine intermediate of this reaction, the ortho-(dichloromethyl)phenol formed by dichlorocarbene attack, printed as an option for a route that stops before the alkaline hydrolysis step the stem's word \"finally\" asks about"
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "3",
+          "route": "−CH2Cl is the remembered product of chloromethylation of an arene (HCHO/HCl), which is a different reaction from chloroform in alkali"
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "4",
+          "route": "−COOH is the remembered answer to the Kolbe–Schmitt question — phenol with CO2 and alkali giving salicylic acid — not to the chloroform question"
+        }
+      ],
+      "reason": "This question requires one stored reagent-to-functional-group mapping, demonstrated by the stem \"Reaction of phenol with chloroform in presence of dilute sodium hydroxide finally introduces which one of the following functional group?\" and the key \"−CHO\".",
+      "note": "has_figure is true (figures_agent/2015_A/q016.png), but the stem and all four options are complete text formulae, so nothing is missing and the item is not source_incomplete; the figure reference appears incidental to this printing."
+    },
+    {
+      "question_id": "2015_A#q017",
+      "concept": "Packing efficiency of the body-centred cubic unit cell: 68% of the cell is occupied, so 32% is void",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "new_trap",
+          "option": "1",
+          "route": "digit-reversal decoy: 23% is the key's 32% with its two digits transposed, and no packing calculation yields it — the closest live labels do not fit, since calculation_slip needs a wrong operation and none produces 23%"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "26% is the void fraction of the close-packed (ccp/hcp) lattice, whose packing efficiency is 74% — a different member of the same set of unit cells"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "48% is the void fraction of the simple cubic lattice, whose packing efficiency is 52.4% — another member of the same set of unit cells"
+        }
+      ],
+      "reason": "This question requires one stored packing fraction and its complement, demonstrated by the stem \"The vacant space in bcc lattice unit cell is:\" with 32% as the key against the void fractions of the other two cubic lattices.",
+      "note": "new_trap is used for option 1 and named in the route as a digit-reversal decoy; it is recorded so the label can be added if the device recurs."
+    },
+    {
+      "question_id": "2015_A#q018",
+      "concept": "The more electronegative element is named as the anion, so OF2 is oxygen difluoride and not an oxide of fluorine; with it, isoelectronic counting, acid anhydrides and the bent shape of O3",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "\"ONF is isoelectronic with O2N−\" is true — both have 18 valence electrons — and the task's polarity is \"Which of the statements given below is incorrect?\", so a true option is the wrong selection"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "\"Cl2O7 is an anhydride of perchloric acid\" is true, and the task asks for the incorrect statement"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "\"O3 molecule is bent\" is true, and the task asks for the incorrect statement"
+        }
+      ],
+      "reason": "This question requires applying the electronegativity convention for naming binary compounds to one printed claim, demonstrated by the key option \"OF2 is an oxide of fluorine\", which inverts the roles because fluorine is the more electronegative element.",
+      "note": "has_figure is true (figures_agent/2015_A/q018.png), but all four statements are complete text, so nothing is missing and the item is not source_incomplete."
+    },
+    {
+      "question_id": "2015_A#q019",
+      "concept": "IUPAC naming of an anionic coordination complex: ligand count prefix, the 2004 'cyanido' ligand name, the Latin stem with the -ate ending for an anion, and oxidation state in brackets",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "wrong_quantity",
+          "option": "1",
+          "route": "\"Tricyanoferrate (III)\" reads the complex's 3− charge as the number of ligands, naming three cyanido groups where the formula [Fe(CN)6]3− shows six — the charge and the coordination number are two different quantities of the same problem"
+        },
+        {
+          "label": "look_alike_term",
+          "option": "3",
+          "route": "\"Hexacyanoiron (III) ion\" against \"Hexacyanidoferrate (III) ion\": it keeps the count but uses the English metal name and drops the -ate ending that an anionic complex requires"
+        },
+        {
+          "label": "fabricated_term",
+          "option": "4",
+          "route": "\"cyanito\" in \"Hexacyanitoferrate (III)\" is not a ligand name in any IUPAC table — the names are cyanido (or cyano) and, for the unrelated NO2 ligand, nitrito — so the term reads as chapter vocabulary while appearing nowhere in the source"
+        }
+      ],
+      "reason": "This question requires applying the naming conventions for coordination compounds to one formula, demonstrated by the stem \"The name of complex ion, [Fe(CN)6]3− is :\" and the key \"Hexacyanidoferrate (III) ion\".",
+      "note": ""
+    }
+  ],
+  "group_note": "The packet was grouped on structure=plain and four members are plain_mcq, but two do not belong with the rest and it matters: q014 and q041-style items are structure-option questions — in q014 every option is a drawn alkene — and they were read as \"plain\" only because our record replaced each option image with the text \"[structure diagram]\". q014 is therefore recorded with the verdict source_damage_artifact and an empty traps list, and its E4 labels are taken from the stem alone, which names both the rule and the product; the damage is described in its note rather than tagged as the question's shape (rulebook section 7). Among the six, consistency was kept by demand rather than by appearance: the two naming/convention items get application because a stated convention decides them (q018 electronegativity decides \"oxide of fluorine\", q019 the IUPAC rules decide the name), the two reagent-and-value items get recall because one stored fact decides them (q016 the Reimer–Tiemann product, q017 the 68% bcc packing fraction), and q015 alone gets calculation because electron counts are computed and compared. solution_structure follows the same discipline: several_independent_checks where every option must be adjudicated before one can be chosen (q014, q015, q018), single_step where one stored fact or one naming act settles it (q016, q017, q019) — four options adjudicated are not four dependent steps. elimination is carried only by q015, where a named fact (sulphate cannot be oxidised further) strikes three options; the others offer four same-kind options and no shortcut was demonstrable. On E5 the negated item q018 gets true_statement_trap on each true statement with the polarity named, while the rest carry option-specific devices; new_trap is used once, for the 23%/32% digit-reversal decoy in q017, because no live label covers a transposed-digit option."
+}

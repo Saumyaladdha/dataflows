@@ -1,0 +1,30 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "3.\nPhotoelectric current depends on (i) the intensity of incident light, (ii)\nthe potential difference applied between the two electrodes, and (iii)\nthe nature of the emitter material.\n4.\nThe stopping potential (Vo) depends on (i) the frequency of incident\nlight, and (ii) the nature of the emitter material. For a given frequency\nof incident light, it is independent of its intensity. The stopping potential\nis directly related to the maximum kinetic energy of electrons emitted:\ne V0 = (1/2) m v2\nmax = Kmax.\n5.\nBelow a certain frequency (threshold frequency) n 0, characteristic of\nthe metal, no photoelectric emission takes place, no matter how large\nthe intensity may be.\n6.\nThe classical wave theory could not explain the main features of\nphotoelectric effect. Its picture of continuous absorption of energy\nfrom radiation could not explain the independence of Kmax on\nintensity, the existence of no and the instantaneous nature of the\nprocess. Einstein explained these features on the basis of photon\npicture of light. According to this, light is composed of discrete\npackets of energy called quanta or photons. Each photon carries an\nenergy E (= h n) and momentum p (= h/l), which depend on the\nfrequency (n ) of incident light and not on its intensity. Photoelectric\nemission from the metal surface occurs due to absorption of a photon\nby an electron.\n7.\nEinstein’s photoelectric equation is in accordance with the energy\nconservation law as applied to the photon absorption by an electron in\nthe metal. The maximum kinetic energy (1/2)m v2\nmax is equal to\nthe photon energy (hn ) minus the work function f0 (= hn0) of the\ntarget metal:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [348, 1192, 810, 1278],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "This photoelectric equation explains all the features of the photoelectric\neffect. Millikan’s first precise measurements confirmed the Einstein’s\nphotoelectric equation and obtained an accurate value of Planck’s\nconstant h . This led to the acceptance of particle or photon description\n(nature) of electromagnetic radiation, introduced by Einstein.\n8.\nRadiation has dual nature: wave and particle. The nature of experiment\ndetermines whether a wave or particle description is best suited for\nunderstanding the experimental result. Reasoning that radiation and\nmatter should be symmetrical in nature, Louis Victor de Broglie\nattributed a wave-like character to matter (material particles). The waves\nassociated with the moving material particles are called matter waves\nor de Broglie waves.\n 9. The de Broglie wavelength (l) associated with a moving particle is\nrelated to its momentum p as:  l = h/p. The dualism of matter is\ninherent in the de Broglie relation which contains a wave concept\n(l) and a particle concept (p). The de Broglie wavelength is\nindependent of the charge and nature of the material  particle. It is\nsignificantly measurable (of the order of the atomic-planes spacing\nin crystals) only in case of sub-atomic particles like electrons,\nprotons, etc. (due to smallness of their masses and hence, momenta).\nHowever, it is indeed very small, quite beyond measurement, in case\nof macroscopic objects, commonly  encountered in everyday life."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "287",
+    "Dual Nature of Radiation\nand Matter",
+    "Reprint 2026-27"
+  ],
+  "note": "The whole page is the chapter SUMMARY box continuing from page 13 (which I read myself; it ended inside the same box at summary item 2). previous_page_last_block was null. The summary ends here with item 9: page 15's text layer opens a new box, POINTS TO PONDER, so last_block_continues_on_next is false. The display equation in summary item 7 (one-half m v squared max = V0 e = hn – f0 = h (n – n0)) is split out as a needs_special block. Text-layer notation losses vs image: \"n\"/\"n 0\"/\"no\" are Greek nu and nu-sub-0 (item 6's \"the existence of no\" is nu-sub-o in print, not the word \"no\"), \"f0\" is Greek phi subscript 0, \"l\" is Greek lambda, and superscripts/subscripts are flattened (\"m v2\\nmax\" is m times v-squared with subscript max, Kmax is K-sub-max, Vo/V0 are V-sub-o)."
+}

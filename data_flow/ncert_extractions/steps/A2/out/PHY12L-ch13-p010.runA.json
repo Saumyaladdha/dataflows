@@ -1,0 +1,150 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "13.7.1  Fission",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "New possibilities emerge when we go beyond natural radioactive decays and study nuclear reactions by bombarding nuclei with other nuclear particles such as proton, neutron, α-particle, etc."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "A most important neutron-induced nuclear reaction is fission. An example of fission is when a uranium isotope ^235_92 U bombarded with a neutron breaks into two intermediate mass nuclear fragments"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        180,
+        578,
+        1124,
+        622
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The same reaction can produce other pairs of intermediate mass fragments"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        180,
+        705,
+        1124,
+        750
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Or, as another example,"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        180,
+        800,
+        1124,
+        845
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The fragment products are radioactive nuclei; they emit β particles in succession to achieve stable end products."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The energy released (the Q value ) in the fission reaction of nuclei like uranium is of the order of 200 MeV per fissioning nucleus. This is estimated as follows:"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Let us take a nucleus with A = 240 breaking into two fragments each of A = 120. Then"
+    },
+    {
+      "n": 12,
+      "kind": "list",
+      "text": "E_bn for A = 240 nucleus is about 7.6 MeV,\nE_bn for the two A = 120 fragment nuclei is about 8.5 MeV.\n∴   Gain in binding energy for nucleon is about 0.9 MeV.\nHence the total gain in binding energy is 240×0.9 or 216 MeV."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The disintegration energy in fission events first appears as the kinetic energy of the fragments and neutrons. Eventually it is transferred to the surrounding matter appearing as heat. The source of energy in nuclear reactors, which produce electricity, is nuclear fission. The enormous energy released in an atom bomb comes from uncontrolled nuclear fission."
+    },
+    {
+      "n": 14,
+      "kind": "heading",
+      "text": "13.7.2  Nuclear fusion – energy generation in stars"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "When two light nuclei fuse to form a larger nucleus, energy is released, since the larger nucleus is more tightly bound, as seen from the binding energy curve in Fig.13.1. Some examples of such energy liberating nuclear fusion reactions are :"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        180,
+        1800,
+        1124,
+        1844
+      ],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        180,
+        1856,
+        1124,
+        1900
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        180,
+        1913,
+        1124,
+        1957
+      ],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "In the first reaction, two protons combine to form a deuteron and a positron with a release of 0.42 MeV energy. In reaction [13.13(b)], two"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "315",
+    "Nuclei",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read page 9 of this chapter immediately before: it ended with a complete sentence ('...burning of 1 kg of coal that gives 10⁷ J.') and this page opens with the new sub-section heading '13.7.1  Fission', so first_block_continues_from_previous is false on that direct evidence. Blocks 4, 6 and 8 are the numbered fission reactions (13.10), (13.11) and (13.12); blocks 16, 17 and 18 are the fusion reactions [13.13(a)], [13.13(b)] and [13.13(c)]. All six are display equations left to the special transcriber with pixel bboxes — the text layer flattens each into an unusable column of bare digits and symbols (e.g. '1\\n235\\n236\\n144\\n89\\n1\\n0\\n92\\n92\\n56\\n36\\n0\\nn\\nU\\nU\\nBa\\nKr\\n3 n'). Block 12 holds the four indented estimation lines; they are ordinary prose with symbols, so I transcribed them rather than marking them special. Text-layer/image notation discrepancies, taken from the image: Greek letters are flattened to Latin ('a-particle' -> α-particle, 'b particles' -> β particles) and the neutrino ν in [13.13(a)] is emitted as a plain 'n', which collides with the neutron 'n' in [13.13(b)] — the image clearly distinguishes them; the therefore sign ∴ before 'Gain in binding energy' is emitted as a backslash '\\\\'; superscripts/subscripts are dropped or linearised ('Ebn' -> E with subscript bn written here as E_bn, '235\\n92 U' -> superscript 235 / subscript 92 before U, written here as ^235_92 U per the convention used earlier in this chapter, and the positron e⁺ loses its superscript plus). Italics (A, Q, the reaction symbols) are not preserved."
+}

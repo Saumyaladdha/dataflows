@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on o-nitrophenol being intramolecularly H-bonded and therefore steam-volatile while the p-isomer is intermolecularly associated, i.e. on steam distillation as a purification method, and no chapter in the supplied list teaches that.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Biology\" and the 32-chapter Biology closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180. A Chemistry question was handed the Biology list, so no correct code exists in it. Expected chapter: 'Basic Principles and Techniques of Organic Compounds' (CHENEETENGPOC: purification - steam distillation, sublimation, crystallisation, chromatography), which exists in the product's Chemistry taxonomy but was not offered."
+}

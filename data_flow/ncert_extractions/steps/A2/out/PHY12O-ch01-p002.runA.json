@@ -1,0 +1,56 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "on rubbing could attract light objects like straw, pith balls and bits of papers. You can perform the following activity at home to experience such an effect. Cut out long thin strips of white paper and lightly iron them. Take them near a TV screen or computer monitor. You will see that the strips get attracted to the screen. In fact they remain stuck to the screen for a while.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        205,
+        275,
+        945,
+        850
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "It was observed that if two glass rods rubbed with wool or silk cloth are brought close to each other, they repel each other [Fig. 1.1(a)]. The two strands of wool or two pieces of silk cloth, with which the rods were rubbed, also repel each other. However, the glass rod and wool attracted each other. Similarly, two plastic rods rubbed with cat’s fur repelled each other [Fig. 1.1(b)] but attracted the fur. On the other hand, the plastic rod attracts the glass rod [Fig. 1.1(c)] and repel the silk or wool with which the glass rod is rubbed. The glass rod repels the fur."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "If a plastic rod rubbed with fur is made to touch two small pith balls (now-a-days we can use polystyrene balls) suspended by silk or nylon thread, then the balls repel each other [Fig. 1.1(d)] and are also repelled by the rod. A similar effect is found if the pith balls are touched with a glass rod rubbed with silk [Fig. 1.1(e)]. A dramatic observation is that a pith ball touched with glass rod attracts another pith ball touched with plastic rod [Fig. 1.1(f )]."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "These seemingly simple facts were established from years of efforts and careful experiments and their analyses. It was concluded, after many careful studies by different scientists, that there were only two kinds of an entity which is called the electric charge. We say that the bodies like glass or plastic rods, silk, fur and pith balls are electrified. They acquire an electric charge on rubbing. The experiments on pith balls suggested that there are two kinds of electrification and we find  that (i) like charges repel and (ii) unlike charges attract each other. The experiments also demonstrated that the charges are transferred from the rods to the pith balls on  contact. It is said that the pith balls are electrified or are charged by  contact. The property which differentiates the two kinds of charges is called the polarity of charge."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "When a glass rod is rubbed with silk, the rod acquires one kind of charge and the silk acquires the second kind of charge. This is true for any pair of objects that are rubbed to be electrified. Now if the electrified glass rod is brought in contact with silk, with which it was rubbed, they no longer attract each other. They also do not attract or repel other light objects as they did on being electrified."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Thus, the charges acquired after rubbing are lost when the charged bodies are brought in contact. What can you conclude from these observations? It just tells us that unlike charges acquired by the objects",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "2",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so the continuation judgement rests on my own p001 output, which ended '...Many such pairs of materials were known which'; this page opens 'on rubbing could attract light objects', so the first block continues. Figure 1.1 (six panels a-f plus its caption) is a floated inset in the top-left; it is marked needs_special with a bbox and its caption text is left for A2S, per the step rules. Main prose runs top-right then full width, so it is blocked as the continuous flow with the figure placed at its vertical position."
+}

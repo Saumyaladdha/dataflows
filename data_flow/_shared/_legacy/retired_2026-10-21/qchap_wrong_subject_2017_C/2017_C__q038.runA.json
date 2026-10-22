@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on a pharynx with gill slits being the character Hemichordata shares with Chordata, a phylum-characteristics fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Physics\" and a 29-chapter Physics closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180 (verified: q001-q090 are Biology stems, q091 is a spring-constant item, q136 is an equilibrium-constant item). A Biology question was therefore handed the wrong subject's list, so no correct code exists in it. Expected chapter: 'Animal Kingdom' (Phylum Hemichordata and Chordata, chordate characteristics), not offered."
+}

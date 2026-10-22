@@ -1,0 +1,152 @@
+{
+ "figure_id": "logic_or_and",
+ "title": "An OR gate taking A and B, its output and C feeding an AND gate, giving Y",
+ "width": 430,
+ "height": 150,
+ "pad": 18,
+ "draw": [
+  {
+   "kind": "terminal",
+   "centre": [
+    24,
+    112
+   ]
+  },
+  {
+   "kind": "terminal",
+   "centre": [
+    24,
+    84
+   ]
+  },
+  {
+   "kind": "terminal",
+   "centre": [
+    24,
+    36
+   ]
+  },
+  {
+   "kind": "label",
+   "text": "A",
+   "at": [
+    8,
+    112
+   ],
+   "anchor": "end",
+   "size": 17,
+   "italic": true
+  },
+  {
+   "kind": "label",
+   "text": "B",
+   "at": [
+    8,
+    84
+   ],
+   "anchor": "end",
+   "size": 17,
+   "italic": true
+  },
+  {
+   "kind": "label",
+   "text": "C",
+   "at": [
+    8,
+    36
+   ],
+   "anchor": "end",
+   "size": 17,
+   "italic": true
+  },
+  {
+   "kind": "line",
+   "from": [
+    28,
+    112
+   ],
+   "to": [
+    108,
+    112
+   ]
+  },
+  {
+   "kind": "line",
+   "from": [
+    28,
+    84
+   ],
+   "to": [
+    108,
+    84
+   ]
+  },
+  {
+   "kind": "gate",
+   "at": [
+    108,
+    98
+   ],
+   "gate": "or"
+  },
+  {
+   "kind": "line",
+   "from": [
+    168,
+    98
+   ],
+   "to": [
+    248,
+    98
+   ]
+  },
+  {
+   "kind": "line",
+   "from": [
+    28,
+    36
+   ],
+   "to": [
+    248,
+    36
+   ]
+  },
+  {
+   "kind": "gate",
+   "at": [
+    248,
+    67
+   ],
+   "gate": "and"
+  },
+  {
+   "kind": "line",
+   "from": [
+    304,
+    67
+   ],
+   "to": [
+    392,
+    67
+   ]
+  },
+  {
+   "kind": "terminal",
+   "centre": [
+    396,
+    67
+   ]
+  },
+  {
+   "kind": "label",
+   "text": "Y",
+   "at": [
+    396,
+    44
+   ],
+   "size": 17,
+   "italic": true
+  }
+ ],
+ "note": "The AND gate's two inputs are the OR gate's output and C, so the figure asserts Y = (A + B) . C -- a claim a checker can verify from the netlist rather than from the drawing."
+}

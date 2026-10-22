@@ -1,0 +1,96 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "initial velocity increases the stopping distance by a factor of 4 (for the same deceleration).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "For  the car of a particular make, the braking distance was found to be 10 m, 20 m, 34 m and 50 m corresponding to velocities of 11, 15, 20 and 25 m/s which are nearly consistent with the above formula."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Stopping distance is an important factor considered in setting speed limits, for example, in school zones."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 2.7  Reaction time :  When a situation demands our immediate action, it takes some time before we really respond. Reaction time is the time a person takes to observe, think and act.  For example, if a person is driving and suddenly a boy appears on the road, then the time elapsed before he slams the brakes of the car is the reaction time. Reaction time depends on complexity of the situation and on an individual.\nYou can measure your reaction time by a simple experiment. Take a ruler and ask your friend to drop it vertically through the gap between your thumb and forefinger (Fig. 2.8). After you catch it, find the distance d travelled by the ruler. In a particular case, d was found to be 21.0 cm. Estimate reaction time."
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1020,
+        205,
+        1395,
+        795
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Answer  The ruler drops under free fall. Therefore, vo = 0, and a = – g = –9.8 m s–2. The distance travelled d and the reaction time tr are related by"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        985,
+        980,
+        1210,
+        1060
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        885,
+        1070,
+        1190,
+        1165
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Given d = 21.0 cm and g = 9.8 m s–2  the reaction time is"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        975,
+        1215,
+        1350,
+        1300
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "SUMMARY\n1. An object is said to be in motion if its position changes with time.  The position of the object can be specified with reference to a conveniently chosen origin.  For motion in a straight line, position to the right of the origin is taken as positive and to the left as negative.\nThe average speed of an object is greater or equal to the magnitude of the average velocity over a given time interval.\n2. Instantaneous velocity or simply velocity is defined as the limit of the average velocity as the time interval ∆t becomes infinitesimally small :\nv = lim(∆t→0) v = lim(∆t→0) ∆x/∆t = dx/dt\nThe velocity at a particular instant is equal to the slope of the tangent drawn on position-time graph at that instant."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "MOTION IN A STRAIGHT LINE",
+    "21",
+    "2024-25"
+  ],
+  "note": "Judged first_block_continues_from_previous from page 8, which I read myself in this batch (previous_page_last_block was null): page 8's prose breaks at 'Doubling the' and this page opens 'initial velocity increases the stopping distance'. Example 2.7 is a tinted box kept as a box block; Fig. 2.8 is a photograph, left for the special transcriber with a bounding box (not described in words), as are the three reaction-time equations. Block 11 is the chapter's SUMMARY box, which starts on this page and runs on to the next, so last_block_continues_on_next is true (mid-box). Inside that box the displayed definition of instantaneous velocity is garbled in the text layer, so it is written linearly as 'v = lim(∆t→0) v = lim(∆t→0) ∆x/∆t = dx/dt'; the printed second v carries an overbar (average velocity) that plain text cannot show. Text layer otherwise matches the image."
+}

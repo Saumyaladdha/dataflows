@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [138, 281, 575, 815],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "on the emitter C. The intensity of light is varied by changing\nthe distance of the light source from the emitter.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "11.4.1  Effect of intensity of light on photocurrent"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The collector A is maintained at a positive potential with\nrespect to emitter C so that electrons ejected from C are\nattracted towards collector A. Keeping the frequency of the\nincident radiation and the potential fixed, the intensity of\nlight is varied and the resulting photoelectric current is\nmeasured each time. It is found that the photocurrent\nincreases linearly with intensity of incident light as shown\ngraphically in Fig. 11.2. The photocurrent is directly\nproportional to the number of photoelectrons emitted per\nsecond. This implies that the number of photoelectrons\nemitted per second is directly proportional to the intensity\nof incident radiation."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "11.4.2  Effect of potential on photoelectric current"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "We first keep the plate A at some positive potential with respect to the\nplate C and illuminate the plate C with light of fixed frequency n  and fixed\nintensity I1. We next vary the positive potential of plate A gradually and\nmeasure the resulting photocurrent each time. It is found that the\nphotoelectric current increases with increase in positive (accelerating)\npotential. At some stage, for a certain positive potential of plate A, all the\nemitted electrons are  collected by the plate A and the photoelectric current\nbecomes maximum or  saturates. If we increase the accelerating potential\nof plate A further, the photocurrent does not increase. This maximum\nvalue of the photoelectric current is called  saturation current. Saturation\ncurrent corresponds to the case when all the photoelectrons emitted by\nthe emitter plate C reach the collector plate A."
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [138, 1357, 848, 2010],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "We now apply a negative (retarding)\npotential to the plate A with respect to the\nplate C and make it increasingly negative\ngradually. When the polarity is reversed,\nthe electrons are repelled and only the\nsufficiently energetic electrons are able to\nreach the collector A. The photocurrent\nis found to decrease rapidly until it drops\nto zero at a certain sharply defined,\ncritical value of the negative potential V0\non the plate A. For a particular frequency\nof incident radiation, the minimum\nnegative (retarding) potential V0 given to\nthe plate A for which the photocurrent\nstops or becomes zero is called the cut-\noff or stopping potential."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The interpretation of the observation\nin \nterms \nof \nphotoelectrons \nis\nstraightforward. All the photoelectrons\nemitted from the metal do not have the"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "278",
+    "FIGURE 11.2 Variation of\nPhotoelectric current with\nintensity of light.",
+    "FIGURE 11.3 Variation of  photocurrent with\ncollector plate potential for different\nintensity of incident radiation.",
+    "Reprint 2026-27"
+  ],
+  "note": "first_block_continues_from_previous judged from page 4, which I read myself (it ended \"...in the path of light falling\"); previous_page_last_block was null. Text-layer notation losses vs image: \"fixed frequency n\" in block 6 is the Greek nu in print, and subscripts are flattened (I1 = I-sub-1, V0 = V-sub-0). Blocks kept text-layer characters. Figure 11.2 placed first as the left-column item at the top of the page; its caption and Fig. 11.3's are listed as removed since they belong to the figure blocks."
+}

@@ -1,0 +1,73 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The flux through the Gaussian surface, calculated as before, is E × 4 π r2. However, in this case, the Gaussian surface encloses no charge. Gauss’s law then gives\nE × 4 π r2 =  0\ni.e., E = 0          (r < R )",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "that is, the field due to a uniformly charged thin shell is zero at all points inside the shell*. This important result is a direct consequence of Gauss’s law which follows from Coulomb’s law. The experimental verification of this result confirms the 1/r2 dependence in Coulomb’s law."
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Example 1.13 An early model for an atom considered it to have a positively charged point nucleus of charge Ze, surrounded by a uniform density of negative charge up to a radius R. The atom as a whole is neutral. For this model, what is the electric field at a distance r from the nucleus?"
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        867,
+        834,
+        1226,
+        1210
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Solution  The charge distribution for this model of the atom is as shown in Fig. 1.32. The total negative charge in the uniform spherical charge distribution of radius R must be –Z e, since the atom (nucleus of charge Z e + negative charge) is neutral. This immediately gives us the negative charge density ρ, since we must have"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        561,
+        1390,
+        785,
+        1559
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "To find the electric field E(r) at a point P which is a distance r away from the nucleus, we use Gauss’s law. Because of the spherical symmetry of the charge distribution, the magnitude of the electric field E(r) depends only on the radial distance, no matter what the direction of r. Its direction is along (or opposite to) the radius vector r from the origin to the point P. The obvious Gaussian surface is a spherical surface centred at the nucleus. We consider two situations, namely, r < R and r > R."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "(i) r < R : The electric flux φ enclosed by the spherical surface is\n    φ  =  E (r) × 4 π r 2\nwhere E (r)  is the magnitude of the electric field at r. This is because",
+      "continues_on_next": true
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "* Compare this with a uniform mass shell discussed in Section 8.5 of Class XI Textbook of Physics."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "40",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so continuation is judged against the p039 output I had just written: p039 ended inside part (ii) of section 1.15.3 ('The Gaussian surface is again a sphere through P centred at O.') and this page opens with 'The flux through the Gaussian surface, calculated as before...', the same argument continuing, so first_block_continues_from_previous is true. The short clean display lines in blocks n=1 and n=8 are kept as text because the text layer renders them exactly; only the genuinely scrambled displayed group for the charge density (n=6, both the '4πR3/3 ρ = 0 – Ze' line and the 'or ρ = –3Ze/4πR3' line) is needs_special, as is FIGURE 1.32 inside the example panel. Bare equation labels '(1.35)' and the connecting word 'or' inside the display are not transcribed. The rule-ruled footnote about the uniform mass shell is block n=9: it sits physically last but is an aside, so continues_on_next is marked on n=8, the Example 1.13 panel that runs on to p041. The side tab 'EXAMPLE 1.13' is not listed as removed furniture because the label 'Example 1.13' is kept as block text here."
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "table",
+  "header": [
+    "Type of stress",
+    "Stress",
+    "Strain",
+    "Change in shape",
+    "Change in volume",
+    "Elastic Modulus",
+    "Name of Modulus",
+    "State of Matter"
+  ],
+  "rows": [
+    [
+      "Tensile or compressive (σ = F/A)",
+      "Two equal and opposite forces perpendicular to opposite faces",
+      "Elongation or compression parallel to force direction (ΔL/L) (longitudinal strain)",
+      "Yes",
+      "No",
+      "Y = (F L)/(A ΔL)",
+      "Young's modulus",
+      "Solid"
+    ],
+    [
+      "Shearing (σs = F/A)",
+      "Two equal and opposite forces parallel to oppoiste surfaces forces in each case such that total force and total torque on the body vanishes",
+      "Pure shear, θ",
+      "Yes",
+      "No",
+      "G = F/(A θ)",
+      "Shear modulus or modulus of rigidity",
+      "Solid"
+    ],
+    [
+      "Hydraulic",
+      "Forces perpendicular everywhere to the surface, force per unit area (pressure) same everywhere.",
+      "Volume change (compression or elongation) (ΔV/V)",
+      "No",
+      "Yes",
+      "B = −p/(ΔV/V)",
+      "Bulk modulus",
+      "Solid, liquid and gas"
+    ]
+  ],
+  "repeated_header": false,
+  "note": "Header has a merged cell 'Change in' spanning two sub-columns 'shape' and 'volume'; these are flattened to 'Change in shape' and 'Change in volume'. The crop is clipped at the left edge: the first column's left border and the very start of the leftmost cell text are cut off (e.g. 'Tensile', 'compressive', '(σ = F/A)', 'Shearing', 'Hydraulic' touch the image edge), though the words appear complete as printed. 'oppoiste' in the Shearing row is as printed in the source. No table title or table number is visible in the crop."
+}

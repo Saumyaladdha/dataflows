@@ -1,0 +1,100 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Flux through the Gaussian surface = flux through the curved cylindrical part of the surface = E × 2πrl",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The surface includes charge equal to λ l. Gauss’s law then gives\nE × 2πrl = λl/ε0"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        578,
+        523,
+        850,
+        583
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Vectorially, E at any point is given by"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        578,
+        660,
+        1537,
+        725
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "where ˆn is the radial unit vector in the plane normal to the wire passing through the point. E is directed outward if λ is positive and inward if λ is negative."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Note that when we write a vector A as a scalar multiplied by a unit vector, i.e., as A = A ˆa , the scalar A is  an algebraic number. It can be negative or positive. The direction of A will be the same as that of the unit vector ˆa if A > 0 and opposite to ˆa if A < 0. When we want to restrict to non-negative values, we use the symbol A and call it the modulus of A. Thus, 0 ≥ A ."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Also note that though only  the charge enclosed by the surface (λl) was included above, the electric field E is due to the charge on the entire wire. Further, the assumption that the wire is infinitely long is crucial. Without this assumption, we cannot take E to be normal to the curved part of the cylindrical Gaussian surface. However, Eq. (1.32) is approximately true for electric field around the central portions of a long wire, where the end effects may be ignored."
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "1.15.2  Field due to a uniformly charged infinite plane sheet"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Let σ be the uniform surface charge density of an infinite plane sheet (Fig. 1.30). We take the x-axis normal to the given plane. By symmetry, the electric field will not depend on y and z coordinates and its direction at every point must be parallel to the x-direction."
+    },
+    {
+      "n": 11,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        218,
+        1521,
+        774,
+        1973
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "We can take the Gaussian surface to be a rectangular parallelepiped of cross-sectional area A, as shown. (A cylindrical surface will also do.) As seen from the figure, only the two faces 1 and 2 will contribute to the flux; electric field lines are parallel to the other faces and they, therefore, do not contribute to the total flux."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The unit vector normal to surface 1 is in –x direction while  the unit  vector normal to surface 2 is in the +x direction. Therefore, flux  E.∆S through both the surfaces are equal and add up. Therefore the net flux through the Gaussian surface is 2 EA. The charge enclosed by the closed surface is σA. Therefore by Gauss’s law,",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "38",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so continuation is judged against the p037 output I had just written: p037 ended on a complete sentence and this page opens with a fresh displayed derivation line, not mid-sentence, so first_block_continues_from_previous is false. The two displayed fractions - 'i.e., E = λ/2πε0r' (n=3) and Eq. (1.32) (n=5) - are needs_special; their text layer is a scrambled symbol stream. In block n=7 I follow the text layer's own spelling of the modulus statement, which drops the vertical bars and orders the final inline expression as '0 ≥ A' (the image prints '|A| ≥ 0'); I did not renormalise it. Figure 1.30 is a bottom-left figure with its caption; it is placed at its vertical position, right after the paragraph that cites it, even though the text layer puts its caption last. The page ends on 'Therefore by Gauss's law,' so last_block_continues_on_next is true."
+}

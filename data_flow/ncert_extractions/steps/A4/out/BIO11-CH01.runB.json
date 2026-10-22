@@ -1,0 +1,104 @@
+{
+  "chapter": "BIO11-CH01",
+  "subtopics": [
+    {
+      "n": 1,
+      "name": "Diversity in the living world and the need to classify",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH01-P17",
+        "BIO11L-CH01-P14",
+        "BIO11L-CH01-P36"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "Nomenclature and the rules of binomial nomenclature",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH01-P18",
+        "BIO11L-CH01-P19",
+        "BIO11L-CH01-P20",
+        "BIO11L-CH01-P21"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "Classification, taxonomy and systematics",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH01-P22",
+        "BIO11L-CH01-P23",
+        "BIO11L-CH01-P24",
+        "BIO11L-CH01-P25",
+        "BIO11L-CH01-P26",
+        "BIO11L-CH01-P16",
+        "BIO11L-CH01-P15",
+        "BIO11L-CH01-P37"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Family as a taxonomic category",
+      "from_heading": "1.2.3 Family",
+      "passages": [
+        "BIO11L-CH01-P27"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Order as a taxonomic category",
+      "from_heading": "1.2.4 Order",
+      "passages": [
+        "BIO11L-CH01-P28"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Class as a taxonomic category",
+      "from_heading": "1.2.5 Class",
+      "passages": [
+        "BIO11L-CH01-P29"
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Phylum as a taxonomic category",
+      "from_heading": "1.2.6 Phylum",
+      "passages": [
+        "BIO11L-CH01-P30"
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Kingdom as a taxonomic category",
+      "from_heading": "1.2.7 Kingdom",
+      "passages": [
+        "BIO11L-CH01-P10",
+        "BIO11L-CH01-P32"
+      ]
+    },
+    {
+      "n": 9,
+      "name": "The taxonomic hierarchy from species to kingdom",
+      "from_heading": "1.2 TAXONOMIC CATEGORIES",
+      "passages": [
+        "BIO11L-CH01-P11",
+        "BIO11L-CH01-P33",
+        "BIO11L-CH01-P12",
+        "BIO11L-CH01-P34",
+        "BIO11L-CH01-P31"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Taxonomic categories of common organisms (housefly, man, mango, wheat)",
+      "from_heading": "1.2 TAXONOMIC CATEGORIES",
+      "passages": [
+        "BIO11L-CH01-P13",
+        "BIO11L-CH01-P35"
+      ]
+    }
+  ],
+  "note": "Input looks damaged: passage ids start at P10 (P01-P09 absent), and six passages are exact duplicates of six others (P10=P32, P11=P33, P12=P34, P13=P35, P14=P36, P15=P37); each duplicate pair is kept in one subtopic. chapter_title is given as 'SUMMARY'. The headings list contains only 1.2 and 1.2.1-1.2.7, so there is no heading for the diversity, nomenclature or taxonomy/systematics passages and from_heading is 'unsure' for those three; conversely headings 1.2.1 Species and 1.2.2 Genus have no passages in the input, so no subtopic was written for them. The SUMMARY (P14/P36) and EXERCISES (P15/P37) passages span the whole chapter; they were attached to the nearest broad subtopic rather than given a page-named subtopic. The Ernst Mayr box (P16) was placed with taxonomy/systematics."
+}

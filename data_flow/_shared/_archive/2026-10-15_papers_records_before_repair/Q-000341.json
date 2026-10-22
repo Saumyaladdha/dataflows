@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000341",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:64"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "A compound with a molecular formula of $\\mathrm{C6H14}$ has two tertiary carbons. Its IUPAC name is :",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "n-hexane",
+    "2": "2-methylpentane",
+    "3": "2,3-dimethylbutane",
+    "4": "2,2-dimethylbutane"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "64\nA compound with a molecular formula of C6H14 has two tertiary carbons. Its IUPAC name is :\n(1)\nn-hexane\n(2)\n2-methylpentane\n(3)\n2,3-dimethylbutane\n(4)\n2,2-dimethylbutane\nOrganic Chemistry: Basic Principles\n",
+  "b4_script_options": {
+    "1": "n-hexane",
+    "2": "2-methylpentane",
+    "3": "2,3-dimethylbutane",
+    "4": "2,2-dimethylbutane\nOrganic Chemistry: Basic Principles"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "organic",
+  "b6_answer": "3",
+  "b6_reason": "In 2,3-dimethylbutane both C2 and C3 are bonded to three carbons each, giving exactly two tertiary carbons.",
+  "b6_working": "n-hexane: 0 tertiary. 2-methylpentane: C2 only -> 1 tertiary. 2,2-dimethylbutane: C2 bonded to 4 C -> quaternary, 0 tertiary. 2,3-dimethylbutane: C2 and C3 each bonded to 3 C -> 2 tertiary.",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

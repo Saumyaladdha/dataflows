@@ -1,0 +1,168 @@
+{
+ "figure_id": "PHY11L_CH06_P16",
+ "title": "NCERT Figure 6.5(b) - an oscillating table fan: the blades' horizontal axis of rotation and the vertical axis of oscillation cross at the fixed pivot O.",
+ "width": 350,
+ "height": 250,
+ "pad": 20,
+ "draw": [
+  {
+   "kind": "line",
+   "from": [
+    280,
+    20
+   ],
+   "to": [
+    280,
+    210
+   ],
+   "colour": "ink",
+   "width": 1.6,
+   "dashed": true
+  },
+  {
+   "kind": "line",
+   "from": [
+    90,
+    114
+   ],
+   "to": [
+    330,
+    114
+   ],
+   "colour": "ink",
+   "width": 1.6,
+   "dashed": true
+  },
+  {
+   "kind": "dot",
+   "centre": [
+    280,
+    114
+   ],
+   "r": 4.0,
+   "colour": "accent"
+  },
+  {
+   "kind": "label",
+   "text": "O",
+   "at": [
+    293,
+    127
+   ],
+   "size": 15,
+   "italic": true
+  },
+  {
+   "kind": "angle",
+   "vertex": [
+    280,
+    198
+   ],
+   "r": 13,
+   "from_deg": 200,
+   "to_deg": 330,
+   "colour": "ink",
+   "width": 1.5
+  },
+  {
+   "kind": "line",
+   "from": [
+    291.258,
+    191.5
+   ],
+   "to": [
+    296.758,
+    201.026
+   ],
+   "colour": "ink",
+   "width": 1.5,
+   "arrow": "end"
+  },
+  {
+   "kind": "angle",
+   "vertex": [
+    120,
+    114
+   ],
+   "r": 13,
+   "from_deg": 200,
+   "to_deg": 330,
+   "colour": "ink",
+   "width": 1.5
+  },
+  {
+   "kind": "line",
+   "from": [
+    131.258,
+    107.5
+   ],
+   "to": [
+    136.758,
+    117.026
+   ],
+   "colour": "ink",
+   "width": 1.5,
+   "arrow": "end"
+  },
+  {
+   "kind": "label",
+   "text": "Axis of oscillation",
+   "at": [
+    280,
+    232
+   ],
+   "size": 15
+  },
+  {
+   "kind": "label",
+   "text": "Axis of",
+   "at": [
+    0,
+    134
+   ],
+   "anchor": "start",
+   "size": 15
+  },
+  {
+   "kind": "label",
+   "text": "rotation",
+   "at": [
+    0,
+    114
+   ],
+   "anchor": "start",
+   "size": 15
+  },
+  {
+   "kind": "label",
+   "text": "from blades",
+   "at": [
+    0,
+    94
+   ],
+   "anchor": "start",
+   "size": 15
+  }
+ ],
+ "angles_claimed": [
+  {
+   "degrees": 90,
+   "vertex": [
+    280,
+    114
+   ],
+   "ray_to": [
+    280,
+    210
+   ],
+   "measured_from": [
+    330,
+    114
+   ]
+  }
+ ],
+ "unreadable": [
+  "the fan itself: three shaded blades inside a tilted elliptical guard ring, the conical stand and the elliptical base, drawn in 3-D perspective with grey gradient fills. There is no ellipse and no gradient in this renderer, so none of it is faked"
+ ],
+ "note": "What the figure is ABOUT is the pair of axes and the fixed point where they cross, and that is what is redrawn: the vertical axis of oscillation and the horizontal axis of rotation of the blades, both dashed as NCERT draws them, meeting at O. The 90 degrees between them is NOT marked in the original - it is claimed here so the checker confirms the two axes really are perpendicular in these coordinates. Each curved arrow is an arc plus a straight head laid along the arc's own tangent, computed from the end angle; NCERT's are freehand curls and the sense they show is not part of what the figure asserts."
+}

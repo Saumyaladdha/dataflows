@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "It is the relative density of lines in different regions which is important.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        205,
+        290,
+        680,
+        870
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "We draw the figure on the plane of paper, i.e., in two-dimensions but we live in three-dimensions. So if one wishes to estimate the density of field lines, one has to consider the number of lines per unit cross-sectional area, perpendicular to the lines.  Since the electric field decreases as the square of the distance from a point charge and the area enclosing the charge increases as the square of the distance, the number of field lines crossing the enclosing area remains constant, whatever may be the distance of the area from the charge."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "We started by saying that the field lines carry information about the direction of electric field at different points in space. Having drawn a certain set of field lines, the relative density (i.e., closeness) of the field lines at different points indicates the relative strength of electric field at those points. The field lines crowd where the field is strong and are spaced apart where it is weak. Figure 1.16 shows a set of field lines. We can imagine two equal and small elements of area placed at points R and S normal to the field lines there. The number of field lines in our picture cutting the area elements is proportional to the magnitude of field at these points. The picture shows that the field at R is stronger than at S."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "To understand the dependence of the field lines on the area, or rather the solid angle subtended by an area element, let us try to relate the area with the solid angle, a generalisation of angle to three dimensions. Recall how a (plane) angle is defined in two-dimensions. Let a small transverse line element ∆l be placed at a distance r from a point O. Then the angle subtended by ∆l  at O can be approximated as ∆θ = ∆l/r. Likewise, in three-dimensions the solid angle* subtended by a small perpendicular plane area ∆S, at a distance r, can be written as ∆Ω = ∆S/r2. We know that in a given solid angle the number of radial field lines is the same. In Fig. 1.16, for two points P1 and P2 at distances r1 and r2 from the charge, the element of area subtending the solid angle ∆Ω is 2 1r ∆Ω at P1 and an element of area 2 2r ∆Ω at P2, respectively. The number of lines (say n) cutting these area elements are the same. The number of field lines, cutting unit area element is therefore n/( 2 1r ∆Ω) at P1 and n/( 2 2r ∆Ω) at P2, respectively. Since n and ∆Ω are common, the strength of the field clearly has a 1/r 2 dependence."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The picture of field lines was invented by Faraday to develop an intuitive non-mathematical way of visualising electric fields around charged configurations. Faraday called them lines of force. This term is somewhat misleading, especially in case of magnetic fields. The more appropriate term is field lines (electric or magnetic) that we have adopted in this book."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Electric field lines are thus a way of pictorially mapping the electric field around a configuration of charges. An electric field line is, in general,",
+      "continues_on_next": true
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "* Solid angle is a measure of a cone. Consider the intersection of the given cone with a sphere of radius R. The solid angle ∆Ω of the cone is defined to be equal to ∆S/R 2, where ∆S is the area on the sphere cut out by the cone."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "24",
+    "2022-23"
+  ],
+  "note": "Retry 1. Fixed exactly the reported A2_TEXT_MISMATCH: my first attempt normalised the inline sub/superscripted symbols r-sub-1-squared and r-sub-2-squared into 'r12' and 'r22', which invented the numbers 12 and 22 that are nowhere in the text layer. The text layer spells these broken across lines as '2' then '1r' (superscript, then subscript+base), so block n=5 now follows that text-layer spelling exactly: '∆Ω is 2 1r ∆Ω at P1', 'an element of area 2 2r ∆Ω at P2', 'n/( 2 1r ∆Ω) at P1 and n/( 2 2r ∆Ω) at P2'. Same for the footnote's '∆S/R 2'. These are all inline symbols inside running prose, not set-off displayed expressions, so they stay in the paragraph rather than becoming needs_special equation blocks; the only needs_special item on the page is Figure 1.16. Everything else is unchanged from the first attempt: previous_page_last_block was null in the input, judged against my own p023 output - p023's last block ended with a complete sentence, but this page's first line is set flush left with no paragraph indent, so it is the SAME paragraph continuing and continues_from_previous is true on the ground of mid-paragraph continuation. Figure 1.16 is a top-left inset placed at its vertical position (n=2). The rule-ruled footnote about solid angle is block n=8; it sits physically last but is an aside, so continues_on_next is marked on n=7, the main-flow paragraph that runs on to p025."
+}

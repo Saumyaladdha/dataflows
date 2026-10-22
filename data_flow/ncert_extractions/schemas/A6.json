@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A6.json",
+  "title": "A6 output file: ncert/pairs/<CHAPTER>.json",
+  "description": "A6 has no dedicated agent (SCRIPT pair_passages.py + shared x-adjudicator for weak pairs only). This schema is the output FILE shape per Section 6.4: 'list of {old_passage_id, new_passage_id, similarity, result: pair|removed|added, adjudicated}'. The file itself is a JSON array at top level, one entry per older passage, per latest passage, or per matched pair (every passage of the chapter is exactly one of pair/removed/added, per the A6 check).",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["old_passage_id", "new_passage_id", "similarity", "result", "adjudicated"],
+    "additionalProperties": false,
+    "properties": {
+      "old_passage_id": {
+        "type": ["string", "null"],
+        "description": "null when result is 'added' (no older-edition partner)."
+      },
+      "new_passage_id": {
+        "type": ["string", "null"],
+        "description": "null when result is 'removed' (no latest-edition partner)."
+      },
+      "similarity": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "description": "Jaccard similarity on word 3-grams after normalise_quote. >= 0.85 pair; 0.50-0.85 weak (goes to adjudicator); < 0.50 for all candidates -> removed/added."
+      },
+      "result": {
+        "type": "string",
+        "enum": ["pair", "removed", "added"]
+      },
+      "adjudicated": {
+        "type": "boolean",
+        "description": "True when a weak pair (0.50-0.85) went to x-adjudicator. On-failure default: weak + unsure still keeps 'pair' (A6_WEAK_PAIR, normal)."
+      }
+    },
+    "allOf": [
+      { "if": { "properties": { "result": { "const": "pair" } } },
+        "then": { "required": ["old_passage_id", "new_passage_id"],
+                  "properties": { "old_passage_id": { "type": "string" }, "new_passage_id": { "type": "string" } } } },
+      { "if": { "properties": { "result": { "const": "removed" } } },
+        "then": { "properties": { "new_passage_id": { "const": null } } } },
+      { "if": { "properties": { "result": { "const": "added" } } },
+        "then": { "properties": { "old_passage_id": { "const": null } } } }
+    ]
+  }
+}

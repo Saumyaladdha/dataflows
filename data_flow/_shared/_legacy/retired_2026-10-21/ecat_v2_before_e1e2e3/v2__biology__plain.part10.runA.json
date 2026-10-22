@@ -1,0 +1,159 @@
+{
+  "group": "v2__biology__plain.part10",
+  "ratings": [
+    {
+      "question_id": "2015_A#q103",
+      "concept": "Layers of the antral (Graafian) follicle: the zona pellucida is the acellular glycoprotein coat round the oocyte, while granulosa, theca and stroma are cell layers",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that granulosa and theca interna are named cell layers of the follicle wall strikes out options 2 and 3, leaving only the zona pellucida and the stroma to separate.",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "names the granulosa, the layer whose cells together with the oocyte deposit the zona pellucida, so the fact belonging to the neighbouring member of the same follicle is transferred to the stem's criterion; the granulosa is itself cellular"
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "4",
+          "route": "the ovarian stroma is a real ovarian layer, but the stem asks for a layer \"in an antral follicle\"; the stroma is the connective tissue the follicle sits in, not a layer of it, and it is cellular"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored fact about a named follicular layer, demonstrated by the stem asking which layer \"is acellular\" and option 1 \"Zona pellucida\" being the glycoprotein coat rather than a cell layer.",
+      "note": "No trap on option 3: theca interna is a third cell layer of the same wall and the route to it is the same as for option 2, so writing a second entry would add no device."
+    },
+    {
+      "question_id": "2015_A#q104",
+      "concept": "Mendel's seven pea characters: the two pod characters are pod shape (inflated/constricted) and pod colour, so pod length is not among them",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that flower position, seed colour and seed shape are three of the seven characters strikes out options 1, 2 and 4 together.",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "flower position (axial/terminal) is one of the seven characters, so the option is true of the list and fails only the stem's negated task, \"did not use\""
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "seed colour (yellow/green) is one of the seven characters, so the option is true of the list and fails only the stem's negated task"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "seed shape (round/wrinkled) is one of the seven characters, so the option is true of the list and fails only the stem's negated task"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires each option to be checked against one memorised list, demonstrated by the stem's \"did not use\" together with option 3 \"Pod length\", which the list of seven characters does not contain while the other three are on it.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q105",
+      "concept": "Parthenocarpy: fruit set without fertilisation, banana being the taught example",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "3",
+          "route": "apple is the standard worked example of a false fruit, i.e. the published answer to \"which of these is a false fruit, developing from the thalamus\"; the stem asks which fruit develops without fertilisation"
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "4",
+          "route": "jackfruit is the standard worked example of a composite (multiple) fruit formed from a whole inflorescence, i.e. the published answer to a fruit-classification question, not to a question about fruit set without fertilisation"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored example of a defined term, demonstrated by the stem's \"is parthenocarpic\" being answered by option 1 \"Banana\", the seedless fruit the term is taught on.",
+      "note": "Option 2 (brinjal) carries no device that can be named: it is a seeded true berry and no published result makes it an answer to another question the stem resembles."
+    },
+    {
+      "question_id": "2015_A#q106",
+      "concept": "Sporogenesis in angiosperms: both microsporogenesis (in the anther) and megasporogenesis (in the ovule) are meiotic divisions that form spores, not gametes",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that the stem conjoins a process in the anther with a process in the ovule strikes out options 1 and 2, since a single site cannot be true of both named processes.",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "1",
+          "route": "\"Occur in ovule\" is true of megasporogenesis and false of microsporogenesis, so the option holds for one of the two processes the stem names and fails for the other"
+        },
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "\"Occur in anther\" is true of microsporogenesis and false of megasporogenesis, the mirror of option 1"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "3",
+          "route": "\"Form gametes without furthers divisions\" is a fact about the adjacent process, gametogenesis; sporogenesis ends at the spore, and the gametophyte's mitotic divisions follow"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored definition applied to each of two named processes, demonstrated by the stem naming \"microsporogenesis and megasporogenesis\" together while option 4 \"Involve meiosis\" is the only property both share.",
+      "note": "several_independent_checks rather than single_step because the chosen option must hold separately for each of the two processes the stem conjoins, and that is exactly what options 1 and 2 fail."
+    },
+    {
+      "question_id": "2015_A#q107",
+      "concept": "Codominance: in the heterozygote both alleles are expressed independently, as in the IA IB blood group, so neither is recessive",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "\"One allele dominant on the other\" is the definition of the adjacent term, complete dominance; it is the inheritance pattern codominance is defined against"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "3",
+          "route": "\"Alleles tightly linked on the same chromosome\" is the definition of linkage, an adjacent concept about two different genes, while the stem's codominance concerns two alleles of one gene"
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "\"Alleles that are recessive to each other\" reverses the words of the relation: codominance means neither allele is recessive, i.e. both are expressed, which is what option 1 states"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored definition, demonstrated by the stem's \"shows codominance\" being answered by option 1 \"Both alleles independently expressed in the heterozygote\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q108",
+      "concept": "Chitin is a polymer of N-acetylglucosamine, the acetylated amino sugar, and forms the arthropod exoskeleton",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "look_alike_term",
+          "option": "3",
+          "route": "\"D-glucosamine\" against the key \"N-acetyl glucosamine\": the two names share the whole sugar stem and differ only by the N-acetyl group, which is the part the monomer of chitin carries"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "keratan sulphate and chondroitin sulphate are the glycosaminoglycans of vertebrate connective tissue and cartilage matrix, an adjacent family of amino-sugar polymers in a different group of animals from the stem's arthropods"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored monomer-to-polymer fact, demonstrated by the stem's \"chitinous exoskeleton ... formed by the polymerisation of\" and option 4 \"N-acetyl glucosamine\".",
+      "note": "Option 1 (\"Lipoglycans\") is left untagged: it is a real class of bacterial cell-envelope molecules, but no route from the stem's chitin reaches it, and no route can be demonstrated rather than asserted."
+    }
+  ],
+  "group_note": "All six are single-question biology items with four short text options and no printed statement block, list or figure, so the packet's grouping on structure `plain` holds for every member and no member had to be set aside. The demand axis was decided by one test applied to all six: does one stored fact name the answer without the options having to be weighed against each other? It does in all six, so all six are `recall` and none is `concept_discrimination` - the rulebook's `concept_discrimination` excludes \"recalling one\", and in q107 and q106 the stored definition (codominance; sporogenesis is meiotic) names its option directly even though the distractors are neighbouring definitions. That the distractors are neighbouring concepts is recorded where it belongs, as `neighbouring_fact` on the trap axis, not as a second kind of thinking. Solution structure follows a second single test: `several_independent_checks` only where the task forces a separate verdict on each option or on each of two named subjects - q104, whose negated task \"did not use\" sends every option back to the list of seven characters, and q106, whose option must hold for both microsporogenesis and megasporogenesis. The other four are `single_step`, since one stored fact names the option and the rest need no adjudication. Elimination was recorded only where one named fact strikes out named options and that fact is cheaper than the answer itself: the cell-layer names in q103, the three Mendelian characters in q104, the two-site conjunction in q106. It was withheld from q105, q107 and q108, where the only available shortcut is already knowing the answer. On the trap axis the recurring device across the group is an option carrying a true fact about a neighbour - another follicular layer (q103), the adjacent process gametogenesis (q106), complete dominance and linkage (q107), vertebrate matrix glycosaminoglycans (q108) - and it is labelled by what kind of neighbour it is, following the rulebook's tie-break: `other_one_fact` where a different member of the same family is named (the granulosa, in the same follicle as the key), `neighbouring_fact` where the families themselves differ (linkage, gametogenesis, cartilage matrix). q104 is the only member whose task is negated, and it is also the only one carrying `true_statement_trap`, three times, which is the correct consequence of that polarity rather than a difference in judgement. Four options across the group were deliberately left untagged (q103 option 3, q105 option 2, q108 option 1, and no second entry on any answer option) because no option-and-route pair could be named for them, which rule 4 requires. No trap is placed on any official answer, and no `new_*` escape was needed in this packet."
+}

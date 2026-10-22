@@ -1,0 +1,55 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "function is zero on the plane where the two lobes touch each other. The size, shape and energy of the three orbitals are identical. They differ however, in the way the lobes are oriented. Since the lobes may be considered to lie along the x, y or z axis, they are given the designations 2px, 2py, and 2pz. It should be understood, however, that there is no simple relation between the values of ml (–1, 0 and +1) and the x, y and z directions. For our purpose, it is sufficient to remember that, because there are three possible values of ml, there are, therefore, three p orbitals whose axes are mutually perpendicular. Like s orbitals, p orbitals increase in size and energy with increase in the principal quantum number and hence the order of the energy and size of various p orbitals is 4p > 3p > 2p. Further, like s orbitals, the probability density functions for p-orbital also pass through value zero, besides at zero and infinite distance, as the distance from the nucleus increases. The number of nodes are given by the n –2, that is number of radial node is 1 for 3p orbital, two for 4p orbital and so on.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        218,
+        676,
+        867,
+        1967
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "For l = 2, the orbital is known as d-orbital and the minimum value of principal quantum number (n) has to be 3. as the value of l cannot be greater than n–1. There are five ml values (–2, –1, 0, +1 and +2) for l = 2 and thus there are five d orbitals. The boundary surface diagram of d orbitals are shown in Fig. 2.15."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The five d-orbitals are designated as dxy, dyz, dxz, dx2–y2 and dz2. The shapes of the first four d-orbitals are similar to each other, where as that of the fifth one, dz2, is different from others, but all five 3d orbitals are equivalent in energy. The d orbitals for which n is greater than 3 (4d, 5d...) also have shapes similar to 3d orbital, but differ in energy and size."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Besides the radial nodes (i.e., probability density function is zero), the probability density functions for the np and nd orbitals are zero at the plane (s), passing through the nucleus (origin). For example, in case of pz orbital, xy-plane is a nodal plane, in case of dxy orbital, there are two nodal planes passing through the origin and bisecting the xy plane containing z-axis. These are called angular nodes and number of angular nodes are given by ‘l’, i.e., one angular node for p orbitals, two angular nodes for ‘d’ orbitals and so on. The total number of nodes are given by (n–1), i.e., sum of l angular nodes and (n – l – 1) radial nodes."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "2.6.3 Energies of Orbitals"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The energy of an electron in a hydrogen atom is determined solely by the principal quantum"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "STRUCTURE OF ATOM",
+    "59",
+    "2024-25"
+  ],
+  "note": "Continuation anchor: the instruction named steps/A2/out/CHE11L-ch02-p030.runA.json, but that file DOES NOT EXIST (p030 has an input in steps/A2/work but no output yet, so the chapter's out/ run stops at p029). I therefore judged the seam from this page itself plus the nearest written page, CHE11L-ch02-p029.runA.json, whose last_block_continues_on_next is true. This page opens 'function is zero on the plane where the two lobes touch each other.' — a bare sentence tail with no subject, the completion of a sentence about the 2p orbital wave function that must have begun on p030 — so first_block_continues_from_previous is true. When p030 is read, its last_block_continues_on_next must be set true to agree with this. input's previous_page_last_block was null, so it gave no help. Reading order is the left column (the paragraph tail, then Fig. 2.15) and then the right column; the printed paragraph that begins 'function is zero' runs across the column break — the left column ends 'For our purpose,' and the right column resumes 'it is sufficient to remember that, because' — so it is transcribed as the single paragraph block n=1 rather than split at the column boundary, which is also how the text layer stores it. Block n=2 is Fig. 2.15, deferred to the special transcriber: its bbox covers the yellow panel of the five 3d boundary-surface diagrams with the in-diagram labels (dxy, dxz, dyz, dx2–y2, dz2, the x/y/z axis letters and the (a)–(e) sub-labels) together with the two-line italic caption below it ('Fig. 2.15  Boundary surface diagrams of the five 3d orbitals.'); the diagrams are not described. Deferring it is the only deferral on the page. Orbital notation and quantum numbers follow the layer's own flattened spelling rather than the printed subscripts and superscripts: '2px, 2py, and 2pz', 'the values of ml (–1, 0 and +1)', 'five ml values', 'dxy, dyz, dxz, dx2–y2 and dz2', 'in case of pz orbital', 'in case of dxy orbital'. 'has to be 3. as the value of l cannot' (full stop mid-sentence), 'where as that of the fifth one', '(4d, 5d...)' and 'the n –2' are as printed, not corrected. The bold run at the end of block n=5 ('The total number of nodes are given by (n–1), i.e., sum of l angular nodes and (n – l – 1) radial nodes.') and the italics inside block n=1 are printed emphasis and are kept inline. Block n=7 breaks off at 'solely by the principal quantum' mid-phrase and is completed on p032, so last_block_continues_on_next is true. bboxes are original-image pixels (1750x2180); the image renders at 1606x2000, so displayed coordinates were scaled by 1.09."
+}

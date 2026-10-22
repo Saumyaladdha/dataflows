@@ -1,0 +1,26 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {
+      "kind": "formatting",
+      "what": "In the 'For example:' formula line the book colour-codes every amino group in magenta (CH3-NH2, C6H5-NH2, CH3-NH-CH3, CH3-N(CH3)2); the render prints the whole line in plain black, so the functional-group highlighting that the example exists to show is gone.",
+      "where": "centre right, the 'For example:' line above 9.1 Structure of Amines"
+    },
+    {
+      "kind": "formatting",
+      "what": "The unit banner title is nearly illegible: the book sets 'Amines' as a bold white display title with a drop shadow over the purple band and 'Unit' as a clear script above the numeral 9; the render sets both in a washed-out ghost grey on purple with almost no contrast.",
+      "where": "top right banner"
+    },
+    {
+      "kind": "misplaced",
+      "what": "The yellow panel behind 'Unit 9' sits in the wrong place: the book runs it from the top edge of the sheet down into the purple band, overlapping the word 'Unit' and the numeral 9; the render shifts it right and clear of the numeral, so it overlaps nothing.",
+      "where": "top right, behind the unit number"
+    },
+    {
+      "kind": "misplaced",
+      "what": "The heading 'I. AMINES' is pulled out of the body column into the left gutter and set small italic; the book prints it as a bold heading flush with the left edge of the body text column.",
+      "where": "middle of the page, above 'Amines can be considered as derivatives of ammonia'"
+    }
+  ],
+  "note": "Compared block by block: QR code, Objectives box and all seven bullets, unit banner, the opening quotation, the introductory paragraph, section I. AMINES, the four example formulas, the 9.1 heading and the closing paragraph ending 'the angle C-N-E, (where E is'. No text is missing; every sentence of the book appears in the render. Line breaks, hyphenation and the removed watermark were ignored as instructed. The exact hue of the purple band may be a rendering artefact rather than a content difference, so it is not reported."
+}

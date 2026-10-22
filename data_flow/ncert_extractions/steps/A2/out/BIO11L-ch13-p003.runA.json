@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        207,
+        289,
+        861,
+        1226
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        213,
+        1406,
+        861,
+        1908
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "the primary growth of the plants and principally\ncontribute to the elongation of the plants along\ntheir axis. You also know that in dicotyledonous\nplants and gymnosperms, the lateral meristems,\nvascular cambium and cork-cambium appear\nlater in life. These are the meristems that cause\nthe increase in the girth of the organs in which\nthey are active. This is known as secondary\ngrowth of the plant (see Figure 13.2).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "13.1.2 Growth is Measurable"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Growth, at a cellular level, is principally a\nconsequence of increase in the amount of\nprotoplasm. Since increase in protoplasm is\ndifficult to measure directly, one generally\nmeasures some quantity which is more or less\nproportional to it. Growth is, therefore,\nmeasured by a variety of parameters some of\nwhich are: increase in fresh weight, dry weight,\nlength, area, volume and cell number. You may\nfind it amazing to know that one single maize\nroot apical mersitem can give rise to more than\n17,500 new cells per hour, whereas cells in a\nwatermelon may increase in size by upto\n3,50,000 times. In the former, growth is\nexpressed as increase in cell number; the latter\nexpresses growth as increase in size of the cell.\nWhile the growth of a pollen tube is measured\nin terms of its length, an increase in surface area\ndenotes the growth in a dorsiventral leaf.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "13.1.3 Phases of Growth"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The period of growth is generally divided into\nthree phases, namely, meristematic, elongation\nand maturation (Figure 13.3). Let us\nunderstand this by looking at the root tips. The\nconstantly dividing cells, both at the root apex\nand the shoot apex, represent the meristematic\nphase of growth. The cells in this region are rich\nin protoplasm, possess large conspicuous\nnuclei. Their cell walls are primary in nature,\nthin \nand \ncellulosic \nwith \nabundant\nplasmodesmatal connections. The cells\nproximal (just next, away from the tip) to the",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "168",
+    "BIOLOGY",
+    "2024-25"
+  ],
+  "note": "Used text_layer (clean), cross-checked against image. Two-column page: the narrow left column holds Figure 13.2 and Figure 13.3 only, the wide right column holds all the prose, so reading order is left column (both figures) then right column. Because of that the page's FIRST block is a figure, which does not continue from page 2 - hence first_block_continues_from_previous is false - but the first prose block (n=3) does continue page 2's sentence (page 2 ended \"...they are responsible for\", this page's prose opens \"the primary growth of the plants...\"), and it is flagged continues_from_previous: true. Judged from the page 2 I read myself, not guessed; previous_page_last_block was null. Figure callout labels and the Figure 13.2 / 13.3 captions lie inside the declared figure bboxes and are left for the special transcriber per the step rules. Removed page number 168, running header BIOLOGY and reprint year 2024-25. Page ends mid-sentence (\"...proximal (just next, away from the tip) to the\")."
+}

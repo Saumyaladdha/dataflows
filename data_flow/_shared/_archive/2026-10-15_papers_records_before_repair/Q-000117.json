@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000117",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:17"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "When two monochromatic lights of frequency, $\\nu$ and $2\\,\\nu$ are incident on a photoelectric metal, their stopping potential becomes 2 sV and Vs respectively. The threshold frequency for this metal is",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$2\\nu$",
+    "2": "$3\\nu$",
+    "3": "2 3 $\\nu$",
+    "4": "3 2 $\\nu$"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "17\nWhen two monochromatic lights of frequency, ν and 2 ν are incident on a photoelectric metal, their\nstopping potential becomes 2 sV and Vs respectively. The threshold frequency for this metal is\n(1)\n2ν\n(2)\n3ν\n(3)\n2 3 ν\n(4)\n3 2 ν\nDual Nature of Radiation and Matter\n",
+  "b4_script_options": {
+    "1": "2ν",
+    "2": "3ν",
+    "3": "2 3 ν",
+    "4": "3 2 ν\nDual Nature of Radiation and Matter"
+  },
+  "official_answer": "4",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "2",
+  "b6_reason": "Taking the stopping potentials as 2Vs for frequency nu and Vs for 2nu, Einstein's equation gives work function 3h(nu), so threshold frequency = 3nu.",
+  "b6_working": "h(nu) = phi + e(2Vs); h(2nu) = phi + e(Vs). Subtract: h(nu) = -e(Vs), so e(Vs) = -h(nu). Then phi = h(nu) - 2e(Vs) = h(nu) + 2h(nu) = 3h(nu); nu0 = phi/h = 3nu.",
+  "b6_confidence": "low",
+  "b6_note": "Stem is damaged by extraction: 'their stopping potential becomes 2 sV and Vs' is scrambled. Read as 2Vs and Vs it yields 3nu (option 2); read as Vs/2 and Vs it yields nu0 = 0, which is not among the options. The question is also physically inconsistent as stated - stopping potential decreasing with increasing frequency, and nu0 = 3nu exceeds both incident frequencies so no photoemission could occur. Options 3 and 4 are also damaged ('2 3 nu' and '3 2 nu', presumably 2nu/3 and 3nu/2). Needs human check of the original stem.",
+  "b6_agrees_with_key": false
+}

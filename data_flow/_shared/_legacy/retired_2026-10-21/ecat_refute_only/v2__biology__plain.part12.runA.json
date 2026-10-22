@@ -1,0 +1,192 @@
+{
+  "group": "v2__biology__plain.part12",
+  "ratings": [
+    {
+      "question_id": "2015_A#q116",
+      "question_type": "arrange_in_order",
+      "format": "pick_order",
+      "content_shape": "definition_term",
+      "concept": "Levels of genetic material: the genome is all the chromosomes, a chromosome carries many genes, and a gene is a run of nucleotides",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The genome is the largest of the four, so the order must open with it; that one fact strikes out options 1 and 2, which both start from the chromosome.",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "Puts the genome inside the chromosome. The genome is the whole set of chromosomes, so it comes first, not second."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "2",
+          "route": "No reading of the four terms puts the genome between a gene and a nucleotide, since the genome contains both."
+        },
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "3",
+          "route": "Opens correctly but swaps the last pair, putting the nucleotide above the gene. A gene is made of nucleotides, so the gene is the larger."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying what each of four terms means to put them in size order, demonstrated by the stem's \"from largest to smallest\" and option 4's \"Genome, chromosome, gene, nucleotide\".",
+      "note": "Section 4's retirement table sends sequence questions to application plus the pick_order answer form, which is what is recorded. Solution structure is single_step because the nesting is read off once, not built from four separate verdicts. content_shape is definition_term - what each term means is what decides the order; classification_hierarchy was the near miss and was not used because these are nested levels of one molecule rather than boxes that entities are filed into. The input flags has_figure true and names figures_agent/2015_A/q116.png, which is not in the corpus; the stem needs no figure, so only the flag needs repair."
+    },
+    {
+      "question_id": "2015_A#q117",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "The posterior pituitary stores and releases ADH and oxytocin, both of which are made in the hypothalamus",
+      "cognitive_demand": "condition_based_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "condition_ignored",
+          "option": "1",
+          "route": "Drops \"synthesised elsewhere\" and names a pituitary hormone. MSH is made in the pituitary itself."
+        },
+        {
+          "label": "condition_ignored",
+          "option": "3",
+          "route": "Drops \"synthesised elsewhere\". LH is made in the anterior pituitary, not stored there from somewhere else."
+        },
+        {
+          "label": "condition_ignored",
+          "option": "4",
+          "route": "Drops \"synthesised elsewhere\". Prolactin is an anterior pituitary product too."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a rule read under a printed condition, demonstrated by the stem's \"though synthesis elsewhere, is stored and released by the master gland\": all four options are hormones the pituitary handles, and only the condition separates them.",
+      "note": "Remove the clause about being synthesised elsewhere and three options become defensible, which is why the demand is condition_based_reasoning and all three wrong options carry its matching trap. The stem is stored as \"though synthesis elsewhere\" for \"though synthesised elsewhere\"; the sense is clear and the key is unaffected, so it is flagged as a wording repair."
+    },
+    {
+      "question_id": "2015_A#q119",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "structure_function",
+      "concept": "Joints by the movement they allow: fibrous joints such as skull sutures are immovable, cartilaginous slightly movable, synovial freely movable",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "A ball-and-socket joint is one kind of synovial joint, so options 1 and 4 say the same thing and neither can be the single answer; both fall together.",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "Takes the next class along. A cartilaginous joint, like the one between two vertebrae, allows a little movement rather than none."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "The shoulder and hip are ball-and-socket joints and the term is defined by free movement, so no fact reaches \"no movement\"."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "Synovial is the class ball-and-socket belongs to, and a synovial cavity is what lets a joint move, so this option cannot reach \"no movement\" either."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored structure-to-movement pairing, demonstrated by option 2's \"Fibrous joint\", the class whose sutures hold the skull bones immovably.",
+      "note": "Options 1 and 4 are not mutually exclusive - a ball-and-socket joint is a synovial joint - and that overlap is recorded as the elimination shortcut as well as behind both no_derivation_route tags."
+    },
+    {
+      "question_id": "2015_A#q120",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "structure_chemical",
+      "concept": "RNA is single-stranded, so Chargaff's equivalence does not hold for it, although base pairing, 5' and 3' ends and nitrogenous bases all do",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "Answers without the \"not\". RNA does pair bases with itself, as in the hairpin arms of tRNA."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "Answers without the \"not\". An RNA chain has a 5' phosphate and a 3' hydroxyl just as DNA does."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Answers without the \"not\". RNA's adenine, guanine, cytosine and uracil are all heterocyclic bases."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires separating what belongs to DNA from what belongs to both nucleic acids, demonstrated by option 1's \"Chargaff's rule\", an equivalence that needs the two complementary strands RNA does not have.",
+      "note": "content_shape is structure_chemical because every option is a feature of the molecule itself; trend was the near miss, since the question is in effect a DNA-to-RNA comparison, and it was not used because no quantity moves across a series."
+    },
+    {
+      "question_id": "2015_A#q121",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "process",
+      "concept": "Heart sounds: the first is the AV valves shutting at the start of systole, the second the semilunar valves shutting at its end",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "wrong_site_or_stage",
+          "option": "2",
+          "route": "Puts the sound at the AV valves. Their closing makes the first sound and their opening makes no sound at all."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "Describes the third heart sound, made by blood rushing into the ventricle as it fills."
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "1",
+          "route": "True of the conducting system, but the stem asks what makes a sound and nodal signals move no blood and shut no valve."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires naming the event behind a granted observation, demonstrated by the stem's \"The second sound is heard when\" and option 4's \"Semilunar valves close down after the blood flows into vessels from ventricles\".",
+      "note": "Format is pick_cause_or_effect because the sound is granted by the stem and the four options are rival causes of it."
+    },
+    {
+      "question_id": "2015_A#q122",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "process",
+      "concept": "Ecological succession: species composition changes gradually and predictably until the climax community sits in equilibrium with the environment",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "single_word_substitution",
+          "option": "1",
+          "route": "Calls the end community the pioneer community. The community in equilibrium with its environment is the climax community; the pioneer is the first one to arrive."
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "3",
+          "route": "Makes primary succession fast. It is the slowest phase, because soil has to form before much can grow."
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "Holds the species list still. Succession is that list changing."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires grading four claims about one process, demonstrated by option 2's \"The gradual and predictable change in species composition occurs in a given area\", which is the taught description, while option 1 attaches it to the wrong community.",
+      "note": ""
+    }
+  ],
+  "group_note": "Five members are plain_mcq. q116 is the exception: the answer form is an ordering, and section 1's tie-break lets the answer's form decide, so it is arrange_in_order with pick_order, which is also the one place in this packet where the measured structure of \"plain\" understates the shape. Format elsewhere follows the options alone - a bare name or term in q117, q119 and q120, a full claim in q122, and a rival cause of a granted fact in q121, where the stem itself supplies the second heart sound and the options compete to explain it. Demand was set by asking what the question actually turns on. Three are recall (q119, q121, q122), because a stored pairing settles them. q120 is concept_discrimination, because its whole option set turns on telling RNA from DNA. q117 is condition_based_reasoning, and it is the clearest case in the packet: all four options are pituitary hormones, so only the printed clause \"though synthesis elsewhere\" separates them, and its matching trap, condition_ignored, is accordingly the device on all three wrong options. q116 is application, as section 4's retirement table requires for a sequence question. Solution structure is single_step wherever one fact or one remembered nesting decides it, and several_independent_checks only where every option has to be graded in turn (q120, q122); none of the six is multi_step_dependent, since no step in any of them needs another step's result. Traps are uniform within a question only where the question's construction makes them so - the three condition_ignored tags in q117 and the three true_statement_trap tags in the negated q120. Elsewhere the labels differ by option, as in q116 and q121. Elimination was given twice on named evidence and withheld from the other four, where no single fact strikes out an option. Nothing is tagged on a printed key."
+}

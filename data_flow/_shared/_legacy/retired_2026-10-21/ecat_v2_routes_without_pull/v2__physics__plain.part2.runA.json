@@ -1,0 +1,177 @@
+{
+  "group": "v2__physics__plain.part2",
+  "ratings": [
+    {
+      "question_id": "2015_A#q142",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "SHM: maximum acceleration is $\\omega^2 A$ and maximum speed is $\\omega A$, so their ratio gives $\\omega$ and hence the period",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "dimensional_check"
+      ],
+      "traps": [
+        {
+          "label": "intermediate_value",
+          "option": "3",
+          "route": "Stops at $\\alpha/\\beta$, which is $\\omega$. That is the first step; the period still needs $2\\pi/\\omega$."
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "4",
+          "route": "$\\beta^2/\\alpha$ is the amplitude $A$, not a time. It answers for the wrong quantity in the same problem."
+        },
+        {
+          "label": "wrong_power_of_dependence",
+          "option": "2",
+          "route": "Squares the ratio instead of taking it once. $\\beta^2/\\alpha^2$ varies as the square of a time, so it cannot be a period."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires two relations to be combined to eliminate a symbol, demonstrated by the stem supplying \"maximum acceleration is $\\alpha$ and maximum velocity is $\\beta$\" and asking for the time period, which neither gives on its own.",
+      "note": "`dimensional_check` is the strategy and not the demand: the intended route is algebraic, and dimensions merely confirm it. They do confirm it completely here - $\\beta/\\alpha$ is a time while $\\beta^2/\\alpha^2$ is a time squared, $\\alpha/\\beta$ an inverse time and $\\beta^2/\\alpha$ a length - which is why the strategy is recorded on this member and not on the others."
+    },
+    {
+      "question_id": "2015_A#q143",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Two vectors are perpendicular when their dot product is zero; $\\cos\\omega t\\cos\\frac{\\omega t}{2} + \\sin\\omega t\\sin\\frac{\\omega t}{2}$ collapses to $\\cos\\frac{\\omega t}{2}$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "At $t = 0$ both vectors reduce to $\\hat{i}$, so their dot product is 1 and not 0; that single substitution strikes out option 1 without doing the algebra.",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "3",
+          "route": "Sets $\\omega t = \\pi/2$ instead of $\\omega t/2 = \\pi/2$. Gives $t = \\pi/2\\omega$, half the correct time."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "At $t = 0$ the two vectors lie on top of each other along $\\hat{i}$, and $\\cos 0 = 1$. No route makes the dot product vanish there."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a dot product to be formed and then solved for a time, demonstrated by the stem printing both vectors as \"functions of times\" and asking for \"the value of $t$ at which they are orthogonal\".",
+      "note": "E2 read from the options alone: each prints a value of $t$, so the answer is a computed quantity (`calculate_value`) even though $\\omega$ keeps it symbolic; `derive_expression` is for an answer that is itself a relation. Option 2 is left untagged - I tried adding the two angles, subtracting them and halving each, and none of those lands on $\\pi/4\\omega$."
+    },
+    {
+      "question_id": "2015_A#q144",
+      "question_type": "plain_mcq",
+      "secondary_type": "figure_to_read",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Doppler effect with motion at an angle: only the component of the source's velocity along the source-observer line shifts the frequency",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "elimination",
+        "estimation"
+      ],
+      "strategy_evidence": "The component along the line is towards the observer, so the apparent frequency must be above 100 Hz; that strikes out options 1 (97 Hz) and 2 (100 Hz) together. The shift is then about $9.7/330$, roughly 3 per cent of 100 Hz, which picks 103 Hz without the full division.",
+      "traps": [
+        {
+          "label": "sign_reversed_magnitude_right",
+          "option": "1",
+          "route": "Puts the source moving away instead of closer: $330/(330+9.7)$. The 3 Hz shift is the right size, with the sign flipped."
+        },
+        {
+          "label": "copied_from_stem",
+          "option": "2",
+          "route": "Takes the motion as purely across the line, so nothing approaches. Hands back the 100 Hz printed in the stem."
+        },
+        {
+          "label": "condition_ignored",
+          "option": "4",
+          "route": "Drops the $60^{\\circ}$ and uses the whole $19.4\\,\\mathrm{m/s}$. Gives 106 Hz, which is the right answer only for a source moving straight at the observer."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a velocity component to be resolved before the Doppler relation can be used, demonstrated by the stem's \"moving with a speed of $19.4\\,\\mathrm{ms^{-1}}$ at an angle of $60^{\\circ}$ with the source observer line\".",
+      "note": "`secondary_type: figure_to_read` is recorded because the stem defers to the figure for the geometry (\"as shown in the figure\") and whether the component points towards or away from the observer is settled there, not in the text. The primary shape stays `plain_mcq` under section 1's tie-break, since the options are four numbers."
+    },
+    {
+      "question_id": "2015_A#q145",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Braking torque on a wheel: rolling gives $\\omega = v/r$, braking gives $\\alpha = \\omega/t$, and the torque is $I\\alpha$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "unit_sanity"
+      ],
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires three relations to be chained, each on the previous result, demonstrated by the stem giving only a road speed, a radius, a moment of inertia and a time - \"brought to rest in $15\\,\\mathrm{s}$\" - with the torque several steps away.",
+      "note": "`traps` is empty, and that is the finding. The three wrong options are 0.43, 1.29 and 1.63 times the key's $6.66$, and I tried the mis-steps that usually print: taking $0.45\\,\\mathrm{m}$ as a diameter (gives 13.3), leaving $54$ unconverted (gives 24), multiplying by the radius instead of dividing (gives 2.03), and dropping the time conversion. None of them lands on 2.86, 8.58 or 10.86, so no route can be named for any of the three and no label is written. `unit_sanity` is recorded because the speed is printed in $\\mathrm{km\\,h^{-1}}$ while every other quantity is in SI, and the options' $\\mathrm{kg\\,m^{2}\\,s^{-2}}$ is a newton-metre written out."
+    },
+    {
+      "question_id": "2015_A#q146",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Torque on a current loop, $\\tau = NIAB\\sin\\theta$ with $\\theta$ measured from the normal: a plane at $30^{\\circ}$ to the field puts the normal at $60^{\\circ}$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "$NIAB$ is $0.24\\,\\mathrm{Nm}$ and that is the largest torque the coil can feel, reached only when the field lies in the plane of the coil; since the plane is tilted at $30^{\\circ}$, the answer must be below it, which strikes out option 4.",
+      "traps": [
+        {
+          "label": "condition_ignored",
+          "option": "4",
+          "route": "Drops the $30^{\\circ}$ tilt and uses $NIAB$ as it stands. $0.24\\,\\mathrm{Nm}$ is right only when the field lies in the plane of the coil."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "Feeds the $30^{\\circ}$ straight into the sine, as though it were measured from the normal. Gives $0.12\\,\\mathrm{Nm}$ instead of $0.24\\cos 30^{\\circ} = 0.20\\,\\mathrm{Nm}$."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires an area and a magnetic moment to be built before the angle can be applied, demonstrated by the stem giving the coil's \"length $0.12\\,\\mathrm{m}$ and width $0.1\\,\\mathrm{m}$\" rather than its area.",
+      "note": "Option 2 is left untagged: $0.15\\,\\mathrm{Nm}$ is $0.625$ of $NIAB$, and neither $\\sin 30^{\\circ}$, $\\cos 30^{\\circ}$, $\\tan 30^{\\circ}$ nor any dropped factor of the area produces it. The record carries `figures_agent/2015_A/q146.png`, but the stem prints every dimension and the angle, so no `figure_to_read` overlay is recorded here - unlike q144, whose text defers to its figure."
+    },
+    {
+      "question_id": "2015_A#q147",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Force between capacitor plates: each plate sits in half the field, so $F = \\frac{1}{2}CV^2/d$, the stored energy divided by the separation",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "dimensional_check"
+      ],
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "Puts the charge $CV$ in the full field $V/d$. Gives twice the key, because each plate feels only the other plate's half of the field."
+        },
+        {
+          "label": "wrong_power_of_dependence",
+          "option": "1",
+          "route": "Carries $C$ squared and $d$ squared. The force goes as $C$ once and as $1/d$ once."
+        },
+        {
+          "label": "wrong_power_of_dependence",
+          "option": "2",
+          "route": "Carries $C$ squared with the right power of $d$. One factor of $C$ too many."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires the stored energy to be formed and then turned into a force, demonstrated by the stem supplying only \"capacity C\", the separation \"d\" and the potential difference \"V\" with no field or charge given.",
+      "note": "`dimensional_check` is a real shortcut here: $CV^2$ is an energy, so $CV^2/d$ is a force, while options 1 and 2 carry $(CV)^2$, which is a charge squared and cannot be a force without a factor of $1/\\varepsilon_0$. The four options are laid out as the two powers of $C$ crossed with the two powers of $d$; that grid is why options 1 and 2 both take `wrong_power_of_dependence` rather than one of them being called a near miss."
+    }
+  ],
+  "group_note": "All six print as `plain_mcq`: a worded stem and four options, with no lettered statements, lists or schemes, so the reader's grouping on `structure: plain` holds. One overlay is recorded: q144 alone takes `secondary_type: figure_to_read`, because its text says \"as shown in the figure\" and the direction of the velocity component is settled only there; q146 also carries a figure path but prints every dimension and angle in the text, and its note says so. E2 splits on the options alone and not on the work: q142 and q147 print symbolic relations (`derive_expression`), while q143, q144, q145 and q146 print values of a named quantity (`calculate_value`) - q143 included, whose options are values of $t$ that stay symbolic only because $\\omega$ does. Every member is `calculation` and `multi_step_dependent`, and that uniformity is the point of judging them together: in each one a first result is consumed by a second relation ($\\omega$ from the ratio, then the period; the velocity component, then the Doppler ratio; $\\omega$, then $\\alpha$, then $\\tau$; the area, then the moment, then the angle; the energy, then the force). Strategies were recorded only where the evidence is specific, and they differ across members for stated reasons: `dimensional_check` on q142 and q147, the two symbolic-answer members, where the dimensions of the printed options separate them; `elimination` on q143, q144 and q146, where one substitution or one bound strikes out named options; `estimation` on q144, where a 3 per cent shift settles it; `unit_sanity` on q145, where the only non-SI quantity in the packet is printed. q145 is the one member with no trap at all. Its three wrong options are simple multiples of the key, and the note lists the four mis-steps I tried and the values they actually give, none of which is printed - an empty `traps` list is the honest answer there, not a gap."
+}

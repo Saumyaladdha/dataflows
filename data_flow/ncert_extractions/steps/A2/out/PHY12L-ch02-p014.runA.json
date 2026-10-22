@@ -1,0 +1,55 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Add the work done in steps (i), (ii), (iii) and (iv). The total work required is",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [562, 388, 1078, 556],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "The work done depends only on the arrangement of the charges, and not how they are assembled. By definition, this is the total electrostatic energy of the charges.\n(Students may try calculating same work/energy by taking charges in any other order they desire and convince themselves that the energy will remain the same.)\n(b) The extra work necessary to bring a charge q0 to the point E when the four charges are at A, B, C and D is q0 × (electrostatic potential at E due to the charges at A, B, C and D). The electrostatic potential at E is clearly zero since potential due to A and C is cancelled by that due to B and D. Hence, no work is required to bring any charge to point E.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "2.8  POTENTIAL ENERGY IN AN EXTERNAL FIELD"
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "2.8.1  Potential energy of a single charge"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "In Section 2.7, the source of the electric field was specified – the charges and their locations - and the potential energy of the system of those charges was  determined. In this section, we ask a related but a distinct question. What is the potential energy of a charge q in a given field? This question was, in fact, the starting point that led us to the notion of the electrostatic potential (Sections 2.1 and 2.2). But here we address this question again to clarify in what way it is different from the discussion in Section 2.7.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The main difference is that we are now concerned with the potential energy of a charge (or charges) in an external field. The external field E is not produced by the given charge(s) whose potential energy we wish to calculate. E is produced by sources external to the given charge(s).The external sources may be known, but often they are unknown or unspecified; what is specified is the electric field E or the electrostatic potential V due to the external sources. We assume that the charge q does not significantly affect the sources producing the external field. This is true if q is very small, or the external sources are held fixed by other unspecified forces. Even if q is finite, its influence on the external sources may still be ignored in the situation when very strong sources far away at infinity produce a finite field E in the region of interest. Note again that we are interested in determining the potential energy of a given charge q (and later, a system of charges) in the external field; we are not interested in the potential energy of the sources producing the external electric field.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The external electric field E and the corresponding external potential V may vary from point to point. By definition, V at a point P is the work done in bringing a unit positive charge from infinity to the point P.",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["Physics", "58", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null even though this is page 14; the image shows the page opening mid-box (the Example 2.4 shaded box carried over from the previous page), so first_block_continues_from_previous is set true on that evidence. The Example box is split into blocks 1-3 so that the displayed equation inside it could be marked needs_special with a bbox; blocks 1 and 3 are the two prose halves of the one box. The box's vertical side label 'EXAMPLE 2.4' (printed sideways in the blue bar at the left of the box) is not included in any block text. Subscripts are flattened as in the text layer (q0 = q with subscript zero). The last paragraph ends on a complete sentence ('...to the point P.') at the foot of the page, so last_block_continues_on_next is false per the mid-sentence rule, but the paragraph itself may well run on to the next page."
+}

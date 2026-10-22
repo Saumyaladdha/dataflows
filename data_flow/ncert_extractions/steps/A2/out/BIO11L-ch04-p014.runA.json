@@ -1,0 +1,47 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [196, 305, 1537, 856],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "lungs. Air sacs connected to lungs supplement respiration. Sexes are\nseparate. Fertilisation is internal. They are oviparous and development is\ndirect.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Examples : Corvus (Crow), Columba (Pigeon), Psittacula (Parrot), Struthio\n(Ostrich), Pavo (Peacock), Aptenodytes (Penguin), Neophron (Vulture)."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "4.2.11.7\nClass – Mammalia"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "They are found in a variety of habitats – polar ice caps, deserts, mountains,\nforests, grasslands and dark caves. Some of them have adapted to fly or\nlive in water. The most unique mammalian characteristic is the presence\nof milk producing glands (mammary glands) by which the young ones\nare nourished. They have two pairs of limbs, adapted for walking, running,\nclimbing, burrowing, swimming or flying (Figure 4.24). The skin of"
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [218, 1406, 1526, 1962],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "50",
+    "BIOLOGY",
+    "2024-25"
+  ],
+  "note": "Read from text_layer, cross-checked against the page image for layout and figure bboxes. Page order: figure 4.23 across the top, then the prose, then figure 4.24 across the bottom. Figure part-labels and captions (\"(a)\" \"(b)\" \"(c)\" \"(d)\", \"Figure 4.23  Some birds : (a) Neophron (b) Struthio (c) Psittacula (d) Pavo\", \"Figure 4.24 Some mammals : (a) Ornithorhynchus (b) Macropus (c) Pteropus (d) Balaenoptera\") lie inside the two needs_special figure bboxes and are left untranscribed. The text layer repeats the heading five times, an extraction artifact of the printed bold/shadow overprint; it is printed once and transcribed once. previous_page_last_block was null, but I read page 13 myself: it broke mid-sentence at \"Respiration is by\" and this page's prose resumes \"lungs. Air sacs connected to lungs...\", so first_block_continues_from_previous is true — note that block n=1 is itself a figure, and it is the page's first prose block (n=2) that carries the continuation. The last prose block breaks mid-sentence after \"The skin of\", so last_block_continues_on_next is true (the page's final block in reading order is figure 4.24)."
+}

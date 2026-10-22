@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/E7V.json",
+  "title": "E7V agent output (e7-difficulty-rater) -- the difficulty band of ONE question",
+  "description": "ITEM GRANULARITY: one question of the papers_v2 corpus. Distinct from schemas/E7.json, which describes a SCRIPT REPORT over the 580-question v1 sheet and bands from ECAT's already-filled columns. This one is the judgement itself, per SPEC Section E7: the band is defined by the WORK a question takes, counted and named in `steps`, never by feel -- a band with no countable steps behind it cannot be reviewed, so it is not an answer. The rater is never shown the answer key or the booklet's printed answer: difficulty is a property of the question, not of which option is correct, and a rater who sees the key reasons backwards from it, because the route to a known answer always looks shorter than the route a candidate must find. `unsure` is a first-class outcome for a question that arrived damaged -- a blank option, a [structure diagram] with no figure, a fraction missing its numerator. Such a question is UNANSWERABLE, not hard, and banding it hard would put a bug in front of a student as a challenge.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["difficulty", "steps_to_solve", "steps", "why", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "difficulty": {
+          "type": "string",
+          "enum": ["easy", "medium", "hard", "unsure"],
+          "description": "easy = one recall or one substitution into a formula the chapter states. medium = two or three linked steps, or a recall plus one application. hard = four or more steps, a non-obvious insight or choice of method, synthesis across chapters, or distractors that are the exact result of a plausible wrong route."
+        },
+        "steps_to_solve": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20,
+          "description": "How many steps were counted. Must agree with the band -- 1 for easy, 2-3 for medium, 4+ for hard -- UNLESS `what_makes_it_hard` names a factor that overrides the count, in which case `note` must say so. Checked in scripts/checks/E7V.py."
+        },
+        "steps": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "The steps themselves, in order ('find the equivalent capacitance', 'then the charge', 'then the energy'). This is the spine of the verdict: it is what a reviewer overturns or agrees with. Empty only when difficulty is unsure."
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One sentence naming what the work CONSISTS OF. Must not restate the band -- 'this is hard because it is difficult' is not an answer."
+        },
+        "what_makes_it_hard": {
+          "type": "string",
+          "description": "The factor OTHER than step count, when there is one: a trap option, an unstated assumption, a unit conversion that moves the order of magnitude, content outside the current NCERT. Empty when step count is the whole story -- an invented extra reason is worse than none."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": {
+          "type": "string",
+          "description": "Used to say what is missing when difficulty is unsure, or to justify a band whose step count does not match it."
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "clipped",
+      "what": "The second Hinsberg scheme (6(b), benzenesulphonyl chloride + diethylamine) is cropped along its top edge. Both sulphonyl double-bonded oxygens that sit ABOVE the S are gone -- on the reactant and on the N,N-diethylbenzenesulphonamide product the render shows only the bare '=' double-bond strokes with no 'O' above them, while the book prints 'O' on both. As drawn, both sulphur atoms are missing an oxygen.",
+      "where": "the 6(b) reaction scheme, above each S"
+    },
+    {
+      "kind": "clipped",
+      "what": "The same 6(b) scheme is cut at its right edge: the co-product reads '+ HC' with the final 'l' sheared off. The book prints '+ HCl'.",
+      "where": "right end of the 6(b) reaction scheme"
+    },
+    {
+      "kind": "formatting",
+      "what": "The book colour-codes the carbylamine and nitrous-acid equations -- magenta on R-NH2, on the R-NC isocyanide, on the diazonium N2 and on HNO2's product groups, and green on CHCl3's Cl3, on KCl's Cl, on the diazonium Cl and on the HCl. The render prints all four of those body equations ('R-NH2 + CHCl3 + 3KOH -> R-NC + 3KCl + 3H2O', the aliphatic diazonium line and the aniline line) entirely in black. Colour is retained inside the two Hinsberg figures, so the loss is specific to the typeset equations.",
+      "where": "the carbylamine equation under heading 4 and the two nitrous-acid equations under heading 5"
+    },
+    {
+      "kind": "formatting",
+      "what": "In the aniline diazotisation equation the book sets the compound labels 'Aniline' and 'Benzenediazonium chloride' centred under their formulae, the latter on two lines. The render shrinks both to tiny inline labels tucked against the formulae on the same baseline, with 'Benzenediazonium chloride' squeezed onto one line at roughly half body size.",
+      "where": "under the 5(b) aniline equation"
+    }
+  ],
+  "note": "Compared block by block: headings 4, 5 and 6 with all their paragraphs, the carbylamine equation, both nitrous-acid equations with their labels, and both Hinsberg reaction figures. All running text is present and complete, including the bold 'carbylamine reaction', 'isocyanide test' and 'Hinsberg's reagent' and the italic 'in situ'. The first Hinsberg figure 6(a) was checked at magnification and is complete -- both sulphonyl oxygens, the N-H, the '+ HCl' and the two-line 'N-Ethylbenzenesulphonamide (soluble in alkali)' label all present. The 6(b) defects were confirmed at magnification against the book: the render's panel is cropped, not merely small. The page folio 271 and 'Amines' running foot are present. I could not tell whether the missing oxygens exist above the crop line in the source figure or were never drawn."
+}

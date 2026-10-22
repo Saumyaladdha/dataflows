@@ -1,0 +1,9 @@
+{
+  "blocks": [
+    {"n": 1, "bold_terms": ["ovulation", "corpus luteum", "menopause"]},
+    {"n": 2, "bold_terms": []},
+    {"n": 4, "bold_terms": []},
+    {"n": 5, "bold_terms": ["fertilisation"]}
+  ],
+  "note": "n=2 is a box block; its first line 'Menstrual Hygiene' is a large bold title heading the box (a heading's own bold type, not a term inside running prose), so it is not reported; the rest of the box's hygiene instructions are plain weight with no bold terms. n=4 is plain prose with no bold terms. n=5: 'zona pellucida' appears italic (not bold) at its first mention here and plain (not bold) at its second mention on this page, so it is excluded from bold_terms; only 'fertilisation' is bold, at its defining sentence."
+}

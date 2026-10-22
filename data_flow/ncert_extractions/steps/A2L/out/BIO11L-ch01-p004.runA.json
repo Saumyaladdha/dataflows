@@ -1,0 +1,52 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "text_block": [0.3135, 0.1364, 0.9018, 0.9096],
+    "fill": 0.99,
+    "columns": [
+      {"id": "full", "x0": 0.3135, "x1": 0.9018}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0822],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0822, 1.0, 0.0950],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "decorative_image", "bbox": [0.1276, 0.0657, 0.1847, 0.0950],
+     "column": "full", "size_rel": 1.0, "fill": "#ffffff"},
+    {"n": null, "role": "page_number", "bbox": [0.1429, 0.0845, 0.1535, 0.0941],
+     "column": "full", "size_rel": 1.05, "align": "center", "font": "serif-bold",
+     "text_color": "#221f1f", "fill": "#ffffff"},
+    {"n": null, "role": "running_header", "bbox": [0.8394, 0.0845, 0.8994, 0.0941],
+     "column": "full", "size_rel": 1.05, "align": "right", "font": "serif",
+     "text_color": "#221f1f", "fill": "#d1d2d4"},
+    {"n": 1, "role": "paragraph", "bbox": [0.3135, 0.1364, 0.9018, 0.1846],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.0414},
+    {"n": 2, "role": "paragraph", "bbox": [0.3135, 0.1901, 0.9018, 0.2911],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.0055, "indent": 0.029},
+    {"n": 3, "role": "paragraph", "bbox": [0.3135, 0.2966, 0.9018, 0.3797],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.0055, "indent": 0.029},
+    {"n": 4, "role": "paragraph", "bbox": [0.3135, 0.3852, 0.9018, 0.5569],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.0055, "indent": 0.029},
+    {"n": 5, "role": "paragraph", "bbox": [0.3135, 0.5625, 0.9018, 0.7521],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.0056, "indent": 0.030},
+    {"n": 6, "role": "list", "bbox": [0.3535, 0.7654, 0.9018, 0.9119],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.0133, "indent": 0.040},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9578, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.0459},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5235, 0.9633],
+     "column": "full", "size_rel": 0.8, "align": "center",
+     "text_color": "#000000", "fill": "#cadf7f"},
+    {"n": null, "role": "decorative_image", "bbox": [0.2188, 0.3122, 0.8459, 0.8099],
+     "column": "full", "size_rel": 1.0, "text_color": "#e8e8e8"}
+  ],
+  "note": "Verso body page, single full column. Measure runs x 533-1533 px = 0.588 of the sheet, set toward the gutter (right) with the wide outer margin at LEFT blank on this page; the white rounded folio tab carrying '4' sits in that outer margin on the grey strip. body_text_size_px = 20.0, measured cap-to-baseline on the capitals 'A' (y 415-434) and 'H' (y 647-666) of the body prose; line pitch is 39 px. The top furniture is TWO stacked bands, so both carry role page_header_band: pale-green #e0ebb6 (y 0-0.0822) closed by a grey strip #d1d2d4 (0.0822-0.0950) that holds the folio tab and the 'BIOLOGY' running head. The running head is set in small caps - its cap B is 21 px (size_rel 1.05) while the small caps are 15 px. The foot line '2024-25' printed on the green bar is reported as running_header because the allowed role list has no running_footer. No size_pt is reported anywhere: this page has no heading or caption, and the brief's Never rule forbids absolute pt sizes; for conversion, the image is 200 DPI (1 pt = 2.778 px), so the sheet is 612 x 784 pt. space_before is omitted on the five elements that overlap or sit on top of their predecessor (folio tab, page number, running head, foot line, watermark) rather than reporting a negative gap. Paragraphs 2-5 carry a 50 px (0.029) first-line indent; paragraph 1 is the continuation of a paragraph from the previous page and is flush. The list's indent 0.040 is its markers' inset from the column; its item text hangs at 0.079 from the column left edge. The last element is the diagonal '(c) NCERT not to be republished' watermark (ink #e8e8e8); its bbox is approximate where it crosses the dark body text. A 1 px dark line at the very top-left (y=1, x 0-39) is scan noise and is not reported as an element. All six A2 blocks matched by position with no ambiguity; no figure, table, heading or marginal note appears on this page."
+}

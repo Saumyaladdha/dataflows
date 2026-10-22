@@ -1,0 +1,187 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "particles. The centre of mass of the system is that   point C which is at a distance X from O, where X is given by",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [346, 319, 934, 394],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In Eq. (6.1), X can be regarded as the mass-weighted mean of  x1 and x2. If the two particles have the same mass m1 = m2 = m, then"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [356, 518, 702, 578],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Thus, for two particles of equal mass the centre of mass lies exactly midway between them."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "If we have n particles of masses m1, m2, ...mn respectively, along a straight line taken as the x- axis, then by definition the position of the centre of the mass of the system of particles is given by."
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [300, 875, 950, 988],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "where  x1, x2,...xn are the distances of the particles from the origin; X is also measured from the same origin. The symbol ∑ (the Greek letter sigma) denotes summation, in this case over n particles. The sum"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [356, 1199, 605, 1247],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "is the total mass of the system."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Suppose that we have three particles, not lying in a straight line. We may define x– and y– axes in the plane in which the particles lie and represent the positions of the three particles by coordinates (x1,y1), (x2,y2) and (x3,y3) respectively. Let the masses of the three particles be m1, m2 and m3 respectively. The centre of mass C of the system of the three particles is defined and located by the coordinates (X, Y) given by"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [356, 1561, 934, 1631],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [356, 1647, 934, 1717],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "For the particles of equal mass m = m1 = m2 = m3,"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [356, 1814, 821, 1885],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1021, 211, 1490, 286],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Thus, for three particles of equal mass, the centre of mass coincides with the centroid of the triangle formed by the particles."
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "Results of Eqs. (6.3a) and (6.3b) are generalised easily to a system of n particles, not necessarily lying in a plane, but distributed in space. The centre of mass of such a system is at (X, Y, Z ), where"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1021, 589, 1620, 653],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1021, 675, 1620, 745],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1004, 772, 1620, 842],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "Here M = ∑ mi is the total mass of the system. The index i runs from 1 to n; mi is the mass of the ith particle and the position of the ith particle is given by (xi, yi, zi)."
+    },
+    {
+      "n": 23,
+      "kind": "paragraph",
+      "text": "Eqs. (6.4a), (6.4b) and (6.4c) can be combined into one equation using the notation of position vectors. Let  ri be the position vector of the ith particle and R be the position vector of the centre of mass:"
+    },
+    {
+      "n": 24,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1021, 1204, 1296, 1253],
+      "text": ""
+    },
+    {
+      "n": 25,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1004, 1258, 1296, 1307],
+      "text": ""
+    },
+    {
+      "n": 26,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1004, 1328, 1620, 1404],
+      "text": ""
+    },
+    {
+      "n": 27,
+      "kind": "paragraph",
+      "text": "The sum on the right hand side is a vector sum."
+    },
+    {
+      "n": 28,
+      "kind": "paragraph",
+      "text": "Note the economy of expressions we achieve by use of vectors. If the origin of the frame of reference (the coordinate system) is chosen to be the centre of mass then  ∑ miri = 0 for the given system of particles."
+    },
+    {
+      "n": 29,
+      "kind": "paragraph",
+      "text": "A rigid body, such as a metre stick or a flywheel, is a system of closely packed particles; Eqs. (6.4a), (6.4b), (6.4c) and (6.4d) are therefore, applicable to a rigid body. The number of particles (atoms or molecules) in such a body is so large that it is impossible to carry out the summations over individual particles in these equations. Since the spacing of the particles is",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "96",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column transcribed first. previous_page_last_block was null, but the page opens mid-sentence (\"particles. The centre of mass ...\"), so first_block_continues_from_previous is true. No numbered section side-heading occurs on this page, so the layered-outline-font repetition artifact did not arise. All displayed formulae, including the unnumbered ones and the two unit-vector lines in the right column, are emitted as equation blocks with needs_special:true; inline mathematics inside paragraphs was kept as the characters the text layer holds (subscripts rendered inline, e.g. m1, x1, mi, ri). A diagonal \"© NCERT not to be republished\" watermark crosses the page and was not transcribed. bbox values are in original-image pixels (1826x2163)."
+}

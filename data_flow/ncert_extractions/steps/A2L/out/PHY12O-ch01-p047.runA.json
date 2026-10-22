@@ -1,0 +1,39 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 23.0,
+    "columns": [
+      {"id": "full", "x0": 0.097, "x1": 0.881}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.064],
+     "column": "full", "size_rel": 1.0, "fill": "#cde9f7"},
+    {"n": null, "role": "running_header", "bbox": [0.551, 0.0, 0.874, 0.123],
+     "column": "full", "size_rel": 1.4, "align": "center", "font": "sans-light",
+     "fill": "#c8c8c8", "text_color": "#1a1a1a"},
+    {"n": 1, "role": "list", "bbox": [0.097, 0.131, 0.690, 0.320],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "figure", "bbox": [0.160, 0.330, 0.641, 0.424],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.344, 0.437, 0.442, 0.449],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans",
+     "text_color": "#0094d2"},
+    {"n": 3, "role": "list", "bbox": [0.097, 0.457, 0.690, 0.708],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "figure", "bbox": [0.238, 0.722, 0.557, 0.938],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.344, 0.962, 0.442, 0.974],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans",
+     "text_color": "#0094d2"},
+    {"n": null, "role": "page_number", "bbox": [0.818, 0.936, 0.881, 0.963],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans",
+     "fill": "#cde9f7"},
+    {"n": null, "role": "running_header", "bbox": [0.475, 0.986, 0.524, 0.996],
+     "column": "full", "size_rel": 0.8, "align": "center"},
+    {"n": null, "role": "decorative_image", "bbox": [0.130, 0.270, 0.880, 0.870],
+     "column": "full", "size_rel": 1.0}
+  ],
+  "note": "Single-column EXERCISES body page (recto, p.47). All four input blocks matched confidently by position AND by text_head: n=1 is the top list (1.12 continuation through 1.14), n=2 is the Fig. 1.33 particle-track diagram, n=3 is the 1.15-1.18 list, n=4 is the Fig. 1.34 square/point-charge diagram. The two 'FIGURE 1.33'/'FIGURE 1.34' captions are separate elements A2 did not block, so they carry n: null. body_text_size_px measured cap-to-baseline on the justified serif exercise prose (~30 px leading in the rendered image, scaled to the 1700x2178 original). The printed text measure is much narrower than the page: prose runs x 0.097-0.690 with a wide outer margin that holds only the grey running-header panel and the page-number tint box; the 'full' column is reported as 0.097-0.881 so it encloses that furniture. page_header_band spans y 0-0.064 and includes the two thin cyan rules at its lower edge (pale blue fill sampled from the flat interior at the top left); it passes behind the grey running-header panel, whose fill was sampled from flat grey beside the type. The '2022-23' edition line at the page foot has no exact role in the allowed list; recorded as running_header because it is the running publication line, though it sits at the foot, not the head. The diagonal '(c) NCERT not to be republished' watermark is recorded as decorative_image with an approximate bbox for its rotated extent."
+}

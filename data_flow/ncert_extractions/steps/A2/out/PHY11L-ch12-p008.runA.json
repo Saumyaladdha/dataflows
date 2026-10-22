@@ -1,0 +1,118 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "of a molecule of the gas. Therefore,",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        248,
+        785,
+        352
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "where M denotes the molecular mass of the gas. (For argon, a molecule is just an atom of argon.) Taking square root of both sides,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        486,
+        480,
+        590
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "You should note that the composition of the mixture by mass is quite irrelevant to the above calculation. Any other proportion by mass of argon and chlorine would give the same answers to (i) and (ii), provided the temperature remains unaltered."
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Example 12.6   Uranium has two isotopes of masses 235 and 238 units. If both are present in Uranium hexafluoride gas which would have the  larger average speed ? If atomic mass of fluorine is 19 units, estimate the percentage difference in speeds at any temperature."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Answer  At a fixed temperature the average energy  = ½ m <v2 > is constant. So  smaller the mass of the molecule, faster will be the speed. The ratio of speeds is inversely proportional to the square root of the ratio of the masses. The masses are 349 and 352 units. So"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        212,
+        1234,
+        795,
+        1284
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        212,
+        1286,
+        795,
+        1358
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "[235U is the isotope needed for nuclear fission. To separate it from the more abundant isotope 238U,  the mixture  is surrounded by a  porous cylinder. The porous cylinder must be thick and narrow, so that the molecule wanders through individually, colliding with the walls of the long pore. The faster molecule will leak out more than the slower one and so there is more of the lighter molecule (enrichment) outside the porous cylinder (Fig. 12.5). The method is not very efficient and has to be repeated several times for sufficient enrichment.]."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "When gases diffuse, their rate of diffusion is inversely proportional to square root of the masses (see Exercise 12.12 ). Can you guess the explanation from the above answer?"
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        890,
+        200,
+        1540,
+        772
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "box",
+      "text": "Example 12.7  (a)  When a molecule (or an elastic ball) hits a ( massive) wall, it rebounds with the same speed. When a ball hits a massive bat held firmly, the same thing happens. However, when the bat is moving towards the ball, the ball rebounds with a different speed. Does the ball move faster or slower? (Ch.5 will refresh your memory on elastic collisions.)\n(b) When gas in a cylinder is compressed by pushing in a piston, its temperature rises. Guess at an explanation of this in terms of kinetic theory using (a) above.\n(c) What happens when a compressed gas pushes a piston out and expands. What would you observe ?\n(d) Sachin Tendulkar used a heavy cricket bat while playing. Did it help him in anyway ?"
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Answer  (a)  Let the speed of the ball be u  relative to the wicket behind the bat. If the bat is moving towards the ball with a speed V  relative to the wicket, then the relative speed of the ball to bat is V + u  towards the bat. When the ball rebounds (after hitting the massive bat) its speed,  relative to bat,  is V + u  moving away from the bat. So relative to the wicket the speed of the rebounding ball is V + (V + u) = 2V + u, moving away from the wicket. So the ball speeds up after the collision with the bat. The rebound speed will be less than u if the bat is not massive. For a molecule this would imply an increase in temperature."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "KINETIC THEORY",
+    "251",
+    "2024-25"
+  ],
+  "note": "Two-column page, left column then right column. previous_page_last_block was null; I read PHY11L-ch12-p007 myself immediately before this page and its item (ii) breaks off at '...where m is the mass', which this page completes with 'of a molecule of the gas. Therefore,', so the join is directly observed, not guessed. Marked needs_special with bboxes in the 1825x2160 image pixel space and empty text: the (v_rms^2)Ar/(v_rms^2)Cl = ... = 1.77 display (block 2), the (v_rms)Ar/(v_rms)Cl = 1.33 display (block 4), the v349/v352 line (block 8), the 'Hence difference dV/V = 0.44 %' display line, which carries a built-up fraction (block 9), and Fig. 12.5 with its caption (block 12). Shaded Example 12.6 and 12.7 question boxes are blocked as box; the unshaded 'Answer' text is body prose and blocked as paragraph. The last block answers only part (a) of Example 12.7; parts (b), (c) and (d) are still unanswered at the page break, so last_block_continues_on_next is true (mid-example) even though the final printed sentence is itself complete. The repeated '⊳' glyphs in the text layer are the decorative triangle markers at the start of Example boxes and the end of Answers, not text. Superscripts are flattened in the text layer ('235U', '238U', '<v2 >', '(352/349)1/2'); copied as extracted. The text layer places the Fig. 12.5 caption and the Example 12.7 box between the left-column paragraphs; I blocked them in printed reading order instead."
+}

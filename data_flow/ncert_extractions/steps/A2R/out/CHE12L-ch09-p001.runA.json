@@ -1,0 +1,9 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {"kind": "duplicated", "what": "The line 'For example:' is printed twice: once as the last line of the running text after the 'I. AMINES' paragraph, and again baked into the top of the structures figure image, where it sits on top of the figure's frame.", "where": "centre of the page, at the top edge of the CH3-NH2 / C6H5-NH2 structures box"},
+    {"kind": "clipped", "what": "In the CH3-N(CH3)CH3 structure at the right of the 'For example' line, the lower CH3 branch is cut off by the bottom edge of the figure box - the book shows 'CH3' with its subscript, the render shows only 'CH' with the subscript sliced through. The duplicated 'For example:' at the top of the same box is likewise cut through mid-letter.", "where": "right end of the structures box, mid page"},
+    {"kind": "formatting", "what": "The unit banner's title 'Amines' is set in the book as large bold white outlined display lettering over the purple band; the render sets it in the same faint italic script as 'Unit', so it no longer reads as the chapter title. The yellow panel that sits behind 'Unit 9' in the book is offset up and to the right in the render, clear of the numeral.", "where": "top right banner"}
+  ],
+  "note": "Compared block by block: QR code, Objectives list (all seven bullets present and in order), the banner, the opening quotation, the introductory paragraph, the 'I. AMINES' heading and paragraph, the four example structures, the '9.1 Structure of Amines' side heading and its paragraph. All text is present and ends at the same point as the book ('...the angle C-N-E, (where E is'), so the empty lower third is the normal page break, not lost content. Colour coding of the NH2/NH/N groups is preserved. I could not judge whether the clipped lower CH3 is cut in the source crop or by the box, only that it is cut."
+}

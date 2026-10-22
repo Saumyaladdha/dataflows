@@ -1,0 +1,6 @@
+{
+  "kind": "reaction",
+  "reaction_smiles": "Cc1ccc([N+](=O)[O-])cc1>BrBr.[Sn].Cl.[Na+].[O-]N=O.O.O[PH2]=O.[K+].[O-][Mn](=O)(=O)=O.[OH-]>OC(=O)c1ccccc1Br",
+  "confidence": "probable",
+  "note": "Example 9 worked solution: 'How will you convert 4-nitrotoluene to 2-bromobenzoic acid?' drawn as a five-arrow scheme, written here as one overall reaction because the record format holds one reaction, so arrow order is not recoverable from the SMILES. The drawn steps and intermediates are: 4-nitrotoluene --Br2--> 2-bromo-4-nitrotoluene Cc1ccc([N+](=O)[O-])cc1Br --Sn/HCl--> 2-bromo-4-methylaniline Cc1ccc(N)cc1Br --NaNO2/HCl, 273-278 K--> the diazonium salt Cc1ccc([N+]#N)cc1Br.[Cl-] (page writes it as the label N2Cl) --H2O / H3PO2 (arrow drawn downward)--> o-bromotoluene Cc1ccccc1Br --KMnO4 / (-)OH (arrow drawn right-to-left)--> 2-bromobenzoic acid. Every reagent over the five arrows is in the agents field; 273-278 K is a condition with no SMILES form. H3PO2 is written as O[PH2]=O to keep its two P-H hydrogens explicit."
+}

@@ -1,0 +1,104 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "In general, metallic oxides are basic.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Some metallic oxides exhibit a dual behaviour. They show characteristics of both acidic as well as basic oxides. Such oxides are known as amphoteric oxides. They react with acids as well as alkalies. For example, Al2O3 reacts with acids as well as alkalies."
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [581, 422, 1476, 513],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "There are some oxides which are neither acidic nor basic. Such oxides are known as neutral oxides. Examples of neutral oxides are CO, NO and N2O."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "7.13 Ozone"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Ozone is an allotropic form of oxygen. It is too reactive to remain for long in the atmosphere at sea level. At a height of about 20 kilometres, it is formed from atmospheric oxygen in the presence of sunlight. This ozone layer protects the earth’s surface from an excessive concentration of ultraviolet (UV) radiations."
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "Preparation"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "When a slow dry stream of oxygen is passed through a silent electrical discharge, conversion of oxygen to ozone (10%) occurs. The product is known as ozonised oxygen."
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [576, 986, 1186, 1020],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Since the formation of ozone from oxygen is an endothermic process, it is necessary to use a silent electrical discharge in its preparation to prevent its decomposition."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "If concentrations of ozone greater than 10 per cent are required, a battery of ozonisers can be used, and pure ozone (b.p. 101.1K) can be condensed in a vessel surrounded by liquid oxygen."
+    },
+    {
+      "n": 12,
+      "kind": "heading",
+      "text": "Properties"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Pure ozone is a pale blue gas, dark blue liquid and violet-black solid. Ozone has a characteristic smell and in small concentrations it is harmless. However, if the concentration rises above about 100 parts per million, breathing becomes uncomfortable resulting in headache and nausea."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Ozone is thermodynamically unstable with respect to oxygen since its decomposition into oxygen results in the liberation of heat (∆H is negative) and an increase in entropy (∆S is positive). These two effects reinforce each other, resulting in large negative Gibbs energy change (∆G) for its conversion into oxygen. It is not really surprising, therefore, high concentrations of ozone can be dangerously explosive."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Due to the ease with which it liberates atoms of nascent oxygen (O3 → O2 + O), it acts as a powerful oxidising agent. For example, it oxidises lead sulphide to lead sulphate and iodide ions to iodine."
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [513, 1767, 1248, 1835],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "When ozone reacts with an excess of potassium iodide solution buffered with a borate buffer (pH 9.2), iodine is liberated which can be titrated against a standard solution of sodium thiosulphate. This is a quantitative method for estimating O3 gas."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "191",
+    "The p-Block Elements",
+    "2020-21"
+  ],
+  "note": "previous_page_last_block was null; continuation judged against the p021 output I wrote in this run, which ends with the displayed CaO + H2O equation after a completed sentence, and this page opens with the new sentence 'In general, metallic oxides are basic.', so first_block_continues_from_previous is false. Displayed reaction equations deferred to the special transcriber: n=3 covers the two Al2O3 amphoteric reactions (the layer scrambles them into isolated bracket/digit tokens), n=9 the ozone-formation equation whose enthalpy value and exponent the layer splits as '3O2 → 2O3 ∆H' / 'V (298 K) = +142 kJ mol' / '–1', and n=16 the two ozone oxidation reactions (PbS and iodide). Section side-heading '7.13 Ozone' is extracted five times over in the outline font at the very end of the text layer, so the layer is partly out of printed order there; blocks follow true printed reading order. Page ends with a completed sentence, so last_block_continues_on_next is false."
+}

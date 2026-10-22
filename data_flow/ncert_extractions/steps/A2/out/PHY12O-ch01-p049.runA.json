@@ -1,0 +1,63 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        142,
+        289,
+        1188,
+        654
+      ],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "1.27 In a certain region of space, electric field is along the z-direction throughout. The magnitude of electric field is, however, not constant but increases uniformly along the positive z-direction, at the rate of 105 NC–1 per metre. What are the force and torque experienced by a system having a total dipole moment equal to 10–7 Cm in the negative z-direction ?"
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "1.28 (a) A conductor A with  a cavity as shown in Fig. 1.36(a) is given a charge Q. Show that the entire charge must appear on the  outer surface of the conductor. (b)  Another conductor B with charge q is inserted into the cavity keeping B insulated from A. Show that the total charge on the outside surface of A is Q + q [Fig. 1.36(b)]. (c)  A sensitive instrument is to be shielded from the strong electrostatic fields in its environment. Suggest a possible way."
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        371,
+        1134,
+        1003,
+        1472
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "1.29 A hollow charged conductor has a tiny hole cut into its surface. Show that the electric field in the hole is (σ/2ε0) ˆn , where ˆn is the unit vector in the outward normal direction, and σ is the surface charge density near the hole."
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "1.30 Obtain the formula for the electric field due to a long thin wire of uniform linear charge density E without using Gauss’s law. [Hint: Use Coulomb’s law directly and evaluate the necessary integral.]"
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "1.31 It is now established that protons and neutrons (which constitute nuclei of ordinary matter) are themselves built out of more elementary units called quarks. A proton and a neutron consist of three quarks each. Two types of quarks, the so called ‘up’ quark (denoted by u) of charge + (2/3) e, and the ‘down’ quark (denoted by d) of charge (–1/3) e, together with electrons build up ordinary matter. (Quarks of other types have also been found which give rise to different unusual varieties of matter.)  Suggest a possible quark composition of a proton and neutron.",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "49",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so continuation is judged against the p048 output I had just written: p048 ended with panels (a), (b), (c) of Fig. 1.35 still unfinished, and this page opens with panels (d) and (e) plus the 'FIGURE 1.35' caption line, so first_block_continues_from_previous is true and n=1 is the tail of that figure (bbox covers both panels, their (d)/(e) labels and the caption). n=4 is the two-panel conductor-with-cavity diagram of FIGURE 1.36, also needs_special, bbox covering both panels, their Q / Q+q / A / B / q labels, the (a)/(b) labels and the caption; the only text of these figures in the text layer is the two caption lines, which sit inside the bounding boxes and are left for the special transcriber. Exercises 1.27 to 1.31 are one list block each. Exercise 1.29's displayed field expression is given inline in the text layer as '(σ/2ε0) ˆn' and is copied in that spelling rather than marked needs_special, since it is set in the running line of the exercise, not as a display equation; likewise '105 NC–1' and '10–7 Cm' keep the text layer's flattened exponents, and exercise 1.30's 'uniform linear charge density E' is the text layer's and the page's own reading (printed where lambda would be expected) and is left uncorrected per the copy-exactly rule. The double spaces in 'A conductor A with  a cavity', 'on the  outer surface', '(b)  Another conductor', '[Fig. 1.36(b)]. (c)  A sensitive' and 'of matter.)  Suggest' are the text layer's own. Exercise 1.31 ends mid-page with a full stop and no further text follows, so last_block_continues_on_next is false."
+}

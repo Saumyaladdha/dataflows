@@ -1,0 +1,70 @@
+{
+  "kind": "table",
+  "header": [
+    "Physical quantity",
+    "Symbol",
+    "Dimensions",
+    "Unit",
+    "Remarks"
+  ],
+  "rows": [
+    [
+      "Vector area element",
+      "Δ S",
+      "[L²]",
+      "m²",
+      "ΔS = ΔS n̂"
+    ],
+    [
+      "Electric field",
+      "E",
+      "[MLT⁻³A⁻¹]",
+      "V m⁻¹",
+      ""
+    ],
+    [
+      "Electric flux",
+      "φ",
+      "[ML³ T⁻³A⁻¹]",
+      "V m",
+      "Δφ = E·ΔS"
+    ],
+    [
+      "Dipole moment",
+      "p",
+      "[LTA]",
+      "C m",
+      "Vector directed from negative to positive charge"
+    ],
+    [
+      "Charge density:",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "linear",
+      "λ",
+      "[L⁻¹ TA]",
+      "C m⁻¹",
+      "Charge/length"
+    ],
+    [
+      "surface",
+      "σ",
+      "[L⁻² TA]",
+      "C m⁻²",
+      "Charge/area"
+    ],
+    [
+      "volume",
+      "ρ",
+      "[L⁻³ TA]",
+      "C m⁻³",
+      "Charge/volume"
+    ]
+  ],
+  "repeated_header": false,
+  "note": "text_layer null; read from the image. Superscript exponents are copied with Unicode superscript characters; bold vector symbols and hats are copied as plain characters (n̂, r̂). \"Charge density:\" is a printed sub-heading row inside the Physical quantity column with no entries in the other four columns; empty cells are given as empty strings to keep a consistent column count. The Electric field row has no Remarks entry. The crop also contains the tail of the blue SUMMARY panel above (\"The electric field outside the shell is as though...\") and the page footer \"2022-23\" below; both lie outside target_box_in_crop and were excluded. The table is complete and not clipped."
+}

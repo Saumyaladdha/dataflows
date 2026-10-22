@@ -1,0 +1,186 @@
+{
+  "question_id": "Q-000142",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:136"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Which one of the following statements is NOT correct?",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "The micro-organisms involved in biodegradation of organic matter in a sewage polluted water body consume a lot of oxygen causing the death of aquatic organisms.",
+    "2": "Algal blooms caused by excess of organic matter in water improve water quality and promote fisheries.",
+    "3": "Water hyacinth grows abundantly in eutrophic water bodies and leads to an imbalance in the ecosystem dynamics of the water body.",
+    "4": "The amount of some toxic substances of industrial waste water increases in the organisms at successive trophic levels."
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [
+    "NOT"
+  ],
+  "b4_text_layer_sanitized": "136\nWhich one of the following statements is NOT correct?\n(1)\nThe micro-organisms involved in\nbiodegradation of organic matter in a\nsewage polluted water body consume a\nlot of oxygen causing the death of\naquatic organisms.\n(2)\nAlgal blooms caused by excess of\norganic matter in water improve\nwater quality and promote fisheries.\n(3)\nWater hyacinth grows abundantly in\neutrophic water bodies and leads to an\nimbalance in the ecosystem dynamics of\nthe water body.\n(4)\nThe amount of some toxic substances of\nindustrial waste water increases in the\norganisms at successive trophic levels.\nHuman Health and Disease\n",
+  "b4_script_options": {
+    "1": "The micro-organisms involved in\nbiodegradation of organic matter in a\nsewage polluted water body consume a\nlot of oxygen causing the death of\naquatic organisms.",
+    "2": "Algal blooms caused by excess of\norganic matter in water improve\nwater quality and promote fisheries.",
+    "3": "Water hyacinth grows abundantly in\neutrophic water bodies and leads to an\nimbalance in the ecosystem dynamics of\nthe water body.",
+    "4": "The amount of some toxic substances of\nindustrial waste water increases in the\norganisms at successive trophic levels.\nHuman Health and Disease"
+  },
+  "official_answer": "2",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "botany",
+  "b6_answer": "2",
+  "b6_reason": "Algal blooms from eutrophication deplete dissolved oxygen and release toxins, degrading water quality and harming fisheries rather than improving them.",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

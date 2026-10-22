@@ -1,0 +1,42 @@
+{
+  "kind": "table",
+  "header": [
+    "Salt",
+    "*Values of i — 0.1 m",
+    "*Values of i — 0.01 m",
+    "*Values of i — 0.001 m",
+    "van't Hoff Factor i for complete dissociation of solute"
+  ],
+  "rows": [
+    [
+      "NaCl",
+      "1.87",
+      "1.94",
+      "1.97",
+      "2.00"
+    ],
+    [
+      "KCl",
+      "1.85",
+      "1.94",
+      "1.98",
+      "2.00"
+    ],
+    [
+      "MgSO4",
+      "1.21",
+      "1.53",
+      "1.82",
+      "2.00"
+    ],
+    [
+      "K2SO4",
+      "2.32",
+      "2.70",
+      "2.84",
+      "3.00"
+    ]
+  ],
+  "repeated_header": false,
+  "note": "Header is two-level: a spanning cell \"*Values of i\" over the three molality columns 0.1 m, 0.01 m, 0.001 m; flattened into the header row as \"*Values of i — <molality>\". No table number or title is inside the crop."
+}

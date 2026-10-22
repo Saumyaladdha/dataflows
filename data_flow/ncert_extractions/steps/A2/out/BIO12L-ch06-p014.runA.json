@@ -1,0 +1,30 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        151,
+        211,
+        1426,
+        1728
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "first amphibians that lived on both land and water. There are no specimens of these left with us. However, these were ancestors of modern day frogs and salamanders. The amphibians evolved into reptiles. They lay thick-shelled eggs which do not dry up in sun unlike those of amphibians. Again we only see their modern day descendents, the turtles, tortoises and crocodiles. In the next 200 millions years or so, reptiles of different",
+      "continues_from_previous": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "EVOLUTION",
+    "123",
+    "Reprint 2026-27"
+  ],
+  "note": "Page opens with the full-page Figure 6.10 diagram (bbox includes its caption bar 'Figure 6.10 Representative evolutionary history of vertebrates through geological periods'), so the first block itself is not a continuation; the body paragraph that follows it does continue mid-sentence from the previous page and is flagged with continues_from_previous: true. previous_page_last_block was null, as expected for this batch; continuation judged from the lowercase mid-sentence opening 'first amphibians that lived...'."
+}

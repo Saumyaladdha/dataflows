@@ -1,0 +1,105 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "can exist, and each possible state has definite total energy. These are\ncalled the stationary states of the atom.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "(ii)\tBohr’s second postulate defines these stable orbits. This postulate\nstates that the electron revolves around the nucleus only in those\norbits for which the angular momentum is some integral multiple of\nh/2π where h is the Planck’s constant (= 6.6 × 10⁻³⁴ J s). Thus the\nangular momentum (L) of the orbiting electron is quantised. That is"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [175, 548, 1129, 596],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "(iii)\tBohr’s third postulate incorporated into atomic theory the early\nquantum concepts that had been developed by Planck and Einstein.\nIt states that an electron might make a transition from one of its\nspecified non-radiating orbits to another of lower energy. When it\ndoes so, a photon is emitted having energy equal to the energy\ndifference between the initial and final states. The frequency of the\nemitted photon is then given by"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [175, 858, 1129, 906],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "where Ei and Ef are the energies of the initial and final states and Ei > Ef."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "For a hydrogen atom, Eq. (12.4) gives the expression to determine\nthe energies of different energy states. But then this equation requires\nthe radius r of the electron orbit. To calculate r, Bohr’s second postulate\nabout the angular momentum of the electron–the quantisation\ncondition – is used."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The radius of nth possible orbit thus found is"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [175, 1168, 1129, 1253],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The total energy of the electron in the stationary states of the hydrogen\natom can be obtained by substituting the value of orbital radius in\nEq. (12.4) as"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [175, 1396, 1129, 1588],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Substituting values, Eq. (12.8) yields"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [175, 1640, 1129, 1720],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Atomic energies are often expressed in electron volts (eV) rather than\njoules. Since 1 eV = 1.6 × 10⁻¹⁹ J, Eq. (12.9) can be rewritten as"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [175, 1788, 1129, 1869],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "The negative sign of the total energy of an electron moving in an orbit\nmeans that the electron is bound with the nucleus. Energy will thus be\nrequired to remove the electron from the hydrogen atom to a distance\ninfinitely far away from its nucleus (or proton in hydrogen atom)."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Atoms",
+    "299",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read p009 immediately before: it ended mid-sentence inside Bohr's first postulate, list item (i), with 'each atom has certain definite stable states in which it', and this page opens 'can exist, and each possible state has definite total energy', so block 1 is the tail of that list item and continues from the previous page (kind kept as list for that reason). Six needs_special equation blocks: n=3 (12.5), n=5 (12.6), n=9 (12.7), n=11 — which covers both display lines of the energy derivation, the bracketed form and the 'or Eₙ = –me⁴/8n²ε₀²h²' line carrying the number (12.8) — n=13 (12.9) and n=15 (12.10); each bbox is drawn full column width so the right-margin equation number is inside it. Text-layer discrepancies corrected from the image: Greek flattened (pi to 'p', epsilon-zero to 'e0', nu in 'hν' given as 'ν' in one place but the layer breaks the display equations into token streams) and super/subscripts dropped — layer '10–34', '10–19', '10–18' for printed 10⁻³⁴, 10⁻¹⁹, 10⁻¹⁸, and the subscripts on Eᵢ, E_f, Eₙ, rₙ and the superscript in 'nth' are flat; I kept those symbol names in flat form (Ei, Ef, En, nth) as the page's own letters. Italic postulate wording is unmarked in the layer. Page ends with a completed sentence."
+}

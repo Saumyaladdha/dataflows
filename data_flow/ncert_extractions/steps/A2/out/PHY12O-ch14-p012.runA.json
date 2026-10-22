@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "14.5  p-n JUNCTION",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "A p-n junction is the basic building block of many semiconductor devices\nlike diodes, transistor, etc. A clear understanding of the junction behaviour\nis important to analyse the working of other semiconductor devices.\nWe will now try to understand how a junction is formed and how the\njunction behaves under the influence of external applied voltage (also\ncalled bias)."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "14.5.1  p-n junction formation"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Consider a thin p-type silicon (p-Si) semiconductor wafer. By adding\nprecisely a small quantity of pentavelent impurity, part of the p-Si wafer\ncan be converted into n-Si. There are several processes by which a\nsemiconductor can be formed. The wafer now contains p-region and\nn-region and a metallurgical junction between p-, and n- region."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Two important processes occur during the formation of a p-n junction:\ndiffusion and drift. We know that in an n-type semiconductor, the\nconcentration of electrons (number of electrons per unit volume) is more\ncompared to the concentration of holes. Similarly, in a p-type\nsemiconductor, the concentration of holes is more than the concentration\nof electrons. During the formation of p-n junction, and due to the\nconcentration gradient across p-, and n- sides, holes diffuse from p-side\nto n-side (p → n) and electrons diffuse from n-side to p-side (n → p). This\nmotion of charge carries gives rise to diffusion current across the junction."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "When an electron diffuses from n → p, it leaves behind an ionised\ndonor on n-side. This ionised donor (positive charge) is immobile as it is\nbonded to the surrounding atoms. As the electrons continue to diffuse\nfrom n → p, a layer of positive charge (or positive space-charge region) on\nn-side of the junction is developed."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Similarly, when a hole diffuses from p → n due to the concentration\ngradient, it leaves behind an ionised acceptor (negative charge) which is\nimmobile. As the holes continue to diffuse, a layer of negative charge (or\nnegative space-charge region) on the p-side of the junction is developed.\nThis space-charge region on either side of the junction together is known\nas depletion region as the electrons and holes  taking part in the initial\nmovement across the junction depleted the region of its\nfree charges (Fig. 14.10). The thickness of depletion region\nis of the order of one-tenth of a micrometre. Due to the\npositive space-charge region on n-side of the junction and\nnegative space charge region on p-side of the junction,\nan electric field directed from positive charge towards\nnegative charge develops. Due to this field, an electron on\np-side of the junction moves to n-side and a hole on n-\nside of the junction moves to p-side. The motion of charge\ncarriers due to the electric field is called drift.  Thus a\ndrift current, which is opposite in direction to the diffusion\ncurrent (Fig. 14.10) starts."
+    },
+    {
+      "n": 8,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        174,
+        1662,
+        687,
+        2055
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "478",
+    "2022-23",
+    "Formation and working of p-n junction diode",
+    "http://hyperphysics.phy-astr.gsu.edu/hbase/solids/pnjun.html"
+  ],
+  "note": "previous_page_last_block was null; judged against my own p011 output, whose last block (the Example 14.2 box) closed on that page, and this page opens a new section heading. The left margin carries a sideways web-link pointer ('Formation and working of p-n junction diode' plus a hyperphysics URL) and a small 'PHYSICS' logo graphic — navigational furniture, listed as removed; the URL and logo text do not appear in the text layer at all. Fig. 14.10 with its caption sits at the bottom left; the paragraph beside it is kept whole and the figure follows. Page ends on a complete sentence."
+}

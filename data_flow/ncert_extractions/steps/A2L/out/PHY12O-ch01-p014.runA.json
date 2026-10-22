@@ -1,0 +1,37 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 21.0,
+    "columns": [
+      {"id": "full", "x0": 0.1276, "x1": 0.9035}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0666],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.1276, 0.0, 0.4506, 0.1212],
+     "column": "full", "size_rel": 2.0, "align": "center", "font": "sans-light",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": null, "role": "major_heading", "bbox": [0.2618, 0.1377, 0.3041, 0.9371],
+     "column": "full", "size_rel": 0.9, "align": "center", "font": "serif-bold",
+     "fill": "#00adef", "text_color": "#ffffff"},
+    {"n": 1, "role": "box", "bbox": [0.3329, 0.1501, 0.8729, 0.3365],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "fill": "#dbdcde", "text_color": "#221f1f"},
+    {"n": 2, "role": "figure", "bbox": [0.3653, 0.3760, 0.8782, 0.8939],
+     "column": "full", "size_rel": 1.0, "fill": "#dbdcde"},
+    {"n": null, "role": "figure_caption", "bbox": [0.5371, 0.9183, 0.6200, 0.9265],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "serif-bold",
+     "fill": "#dbdcde", "text_color": "#00adef"},
+    {"n": null, "role": "decorative_image", "bbox": [0.8876, 0.1377, 0.9018, 0.9371],
+     "column": "full", "size_rel": 1.0, "fill": "#00adef"},
+    {"n": null, "role": "page_number", "bbox": [0.1276, 0.9155, 0.1859, 0.9371],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "serif",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5235, 0.9633],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif",
+     "text_color": "#000000"}
+  ],
+  "note": "Verso page holding one full-height worked-example panel and nothing else. The grey panel measures [0.3141, 0.1377, 0.8871, 0.9371] and its interior samples #dbdcde, the same panel grey as p007/p010/p013. A2 gives only two blocks: n=1, the Example 1.5 question text at the top of the panel, and n=2, the three-part Fig. 1.7 below it. As on the other verso example pages the WIDE cyan #00adef label bar carrying 'EXAMPLE 1.5' in white sideways type is on the OUTER (left) edge at x 0.262-0.304 (recorded as major_heading) and the thin plain cyan bar on the inner (right) edge at x 0.888-0.902 (recorded as decorative_image). A2 gives no block for the 'FIGURE 1.7' caption, so that element carries n: null; like every caption in the chapter it is cyan #00adef, here sitting on the panel grey rather than on paper. Because the panel starts at x 0.314 and the page carries no running prose at all, a single `full` column spanning the live area 0.128-0.904 is declared. No footer_rule. Folio '14' in a pale cyan box in the outer bottom margin; '2022-23' recorded as running_header."
+}

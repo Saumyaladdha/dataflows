@@ -1,0 +1,28 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 3, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "The resultant electric field at P due to the two charges at A and B is\n=  2.7 × 10⁵  N C⁻¹  along BP.\nIn this example, the ratio OP/OB is quite large (= 60). Thus, we can expect to get approximately the same result as above by directly using the formula for electric field at a far-away point on the axis of a dipole. For a dipole consisting of charges ± q, 2a distance apart, the electric field at a distance r from the centre on the axis of the dipole has a magnitude",
+      "fixes": [
+        {"wrong": "2.7 × 105", "right": "2.7 × 10⁵"},
+        {"wrong": "N C–1", "right": "N C⁻¹"}
+      ]
+    },
+    {
+      "n": 7,
+      "corrected_text": "where p = 2a q is the magnitude of the dipole moment.\nThe direction of electric field on the dipole axis is always along the direction of the dipole moment vector (i.e., from –q to q). Here,\np =10⁻⁵ C × 5 × 10⁻³ m  = 5 × 10⁻⁸ C m\nTherefore,",
+      "fixes": [
+        {"wrong": "10–5", "right": "10⁻⁵"},
+        {"wrong": "10–3", "right": "10⁻³"},
+        {"wrong": "10–8", "right": "10⁻⁸"}
+      ]
+    },
+    {"n": 9, "no_change": true},
+    {"n": 11, "no_change": true},
+    {"n": 13, "no_change": true},
+    {"n": 15, "no_change": true}
+  ],
+  "note": "n=5 had a flattened power of ten and flattened unit exponent (2.7 × 105 -> 2.7 × 10⁵, N C–1 -> N C⁻¹). n=7 had three flattened powers of ten (10–5, 10–3, 10–8 -> 10⁻⁵, 10⁻³, 10⁻⁸). All other blocks (1, 3, 9, 11, 13, 15) already match the image exactly."
+}

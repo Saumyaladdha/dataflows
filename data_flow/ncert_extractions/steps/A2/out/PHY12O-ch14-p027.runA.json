@@ -1,0 +1,79 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 14.9 Take A and B input waveforms similar to  that in\nExample 14.8. Sketch the output waveform obtained from AND gate.\nSolution\n• For t ≤ t1; A = 0, B = 0; Hence Y = 0\n• For t1 to t2; A = 1, B = 0; Hence Y = 0\n• For t2 to t3; A = 1, B = 1; Hence Y = 1\n• For t3 to t4; A = 0, B = 1; Hence Y = 0\n• For t4 to t5; A = 0, B = 0; Hence Y = 0\n• For t5 to t6; A = 1, B = 0; Hence Y = 0\n• For t > t6; A = 0, B = 1; Hence Y = 0\nBased on the above, the output waveform for AND gate can be drawn\nas given below.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        382,
+        752,
+        981,
+        1068
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "(iv) NAND Gate"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "This is an AND gate followed by a NOT gate. If inputs A and B are both\n‘1’, the output Y is not ‘1’. The gate gets its name from this NOT  AND\nbehaviour. Figure 14.33 shows the symbol and truth table of NAND gate."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "NAND gates are also called Universal Gates since by using these\ngates you can realise other basic gates like OR, AND and NOT (Exercises\n14.12 and 14.13)."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        240,
+        1504,
+        1199,
+        1744
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        834,
+        1373,
+        1128,
+        1640
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Example 14.10 Sketch the output Y from a NAND gate having inputs\nA and B given below:\nSolution\n• For t < t1; A = 1, B = 1; Hence Y = 0\n• For t1 to t2; A = 0, B = 0; Hence Y = 1\n• For t2 to t3; A = 0, B = 1; Hence Y = 1\n• For t3 to t4; A = 1, B = 0; Hence Y = 1",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Semiconductor Electronics:",
+    "Materials, Devices and",
+    "Simple Circuits",
+    "493",
+    "2022-23",
+    "EXAMPLE 14.9",
+    "EXAMPLE 14.10"
+  ],
+  "note": "previous_page_last_block was null; judged against my own p026 output, which ended on a complete sentence, and this page opens with the Example 14.9 box. Fig. 14.32 sits inside that box and is deferred separately (n=2). Fig. 14.33 is split as on p025-p026: the logic-symbol panel plus the shared caption as a figure (n=6) and the truth-table panel as a table (n=7). Two 'EXAMPLE 14.x' vertical tabs are listed as removed furniture. The Example 14.10 box breaks off part-way through its bullet list and continues on p028, so last_block_continues_on_next is true."
+}

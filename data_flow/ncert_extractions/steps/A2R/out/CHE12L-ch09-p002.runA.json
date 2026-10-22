@@ -1,0 +1,9 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {"kind": "missing", "what": "Fig. 9.1 'Pyramidal shape of trimethylamine' has lost almost all of its content. The book draws four pale-blue sp3 orbital lobes around a central nitrogen, a black pyramidal wireframe, three 'CH3' labels on the bonds, the 'unshared electron pair' label with its lobe at the top, and the '108 degrees' bond-angle annotation with its two curved arrows. The render shows only a bare blue letter 'N' with three plain straight lines and one vertical line - no lobes, no pyramid, no labels, no angle annotation.", "where": "Fig. 9.1, upper centre of the page"},
+    {"kind": "formatting", "what": "The primary/secondary/tertiary classification scheme (NH3 -> RNH2 -> R(R')N-H -> R(R')N-R'') is printed at roughly half the book's size and is enclosed in a thin rectangular frame the book does not draw; its labels 'Primary(1 deg)', 'Secondary(2 deg)', 'Tertiary(3 deg)' are near the limit of legibility at this size.", "where": "between the 9.2 Classification paragraph and the 9.3 Nomenclature heading"},
+    {"kind": "formatting", "what": "Subscripts in the running text (RNH2, ArNH2, CH3NH2, H2N-CH2-CH2-NH2, CH3 NHCH2CH3, -NH2) are set as small full-height digits on the baseline rather than lowered subscripts as in the book.", "where": "9.2 Classification and 9.3 Nomenclature paragraphs"}
+  ],
+  "note": "Compared the carry-over line, Fig. 9.1, the 9.2 Classification heading and paragraph, the classification scheme figure, the 9.3 Nomenclature heading and both its paragraphs, and the 'Chemistry 260' folio. All running text is present, in the same order and with 'alkanamines' still bold, and the page ends at the same point as the book ('...CH3 NHCH2CH3 is'), so the empty lower half is the normal page break. The loss is confined to Fig. 9.1; I cannot tell from the image whether the figure file itself is a stub or whether its layers failed to draw."
+}

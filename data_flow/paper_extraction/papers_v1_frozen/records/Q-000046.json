@@ -1,0 +1,275 @@
+{
+ "question_id": "Q-000046",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "issue_reason": {
+   "step": "B8",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "corrected_answer": {
+   "step": "B8",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "corrected_stem": {
+   "step": "B8",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "corrected_options": {
+   "step": "B8",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b8_notice_says": {
+   "step": "B8",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b8_supporting_quote": {
+   "step": "B8",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b8_confidence": {
+   "step": "B8",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b8_note": {
+   "step": "B8",
+   "prompt_version": "v1",
+   "status": "pass"
+  }
+ },
+ "exam": "NEET",
+ "year": 2023,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "E1:150"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+ "trust": "unsure",
+ "stem_en": "Main steps in the formation of Recombinant DNA are given below. Arrange these steps in a correct sequence.",
+ "statements": [
+  {
+   "label": "A",
+   "text": "Insertion of recombinant DNA into the host cell."
+  },
+  {
+   "label": "B",
+   "text": "Cutting of DNA at specific location by restriction enzyme."
+  },
+  {
+   "label": "C",
+   "text": "Isolation of desired DNA fragment."
+  },
+  {
+   "label": "D",
+   "text": "Amplification of gene of interest using PCR."
+  }
+ ],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "B, C, D, A",
+  "2": "C, A, B, D",
+  "3": "C, B, D, A",
+  "4": "B, D, A, C"
+ },
+ "structure": "list",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "150\nNone of the provided chapters directly match the topic of Recombinant DNA formation. However, the closest rele…\nMain steps in the formation of Recombinant DNA are given below. Arrange these steps in a correct\nsequence.\nA. Insertion of recombinant DNA into the host cell.\nB. Cutting of DNA at specific location by restriction enzyme.\nC. Isolation of desired DNA fragment.\nD. Amplification of gene of interest using PCR.\n(1)\nB, C, D, A\n(2)\nC, A, B, D\n(3)\nC, B, D, A\n(4)\nB, D, A, C\n",
+ "b4_script_options": {
+  "1": "B, C, D, A",
+  "2": "C, A, B, D",
+  "3": "C, B, D, A",
+  "4": "B, D, A, C"
+ },
+ "official_answer": "1,3",
+ "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+ "status": "multiple_accepted",
+ "subject": "Biology",
+ "branch": "botany",
+ "b6_answer": "3",
+ "b6_reason": "Correct order: isolate the desired DNA fragment, cut it out with restriction enzyme, amplify by PCR, then insert into host cell -> C, B, D, A.",
+ "b6_working": "",
+ "b6_confidence": "high",
+ "b6_note": "",
+ "b6_agrees_with_key": true,
+ "issue_reason": "two_correct_options",
+ "corrected_answer": "unsure",
+ "corrected_stem": null,
+ "corrected_options": null,
+ "b8_notice_says": "",
+ "b8_supporting_quote": null,
+ "b8_confidence": "low",
+ "b8_note": "key_row marks this multiple_accepted with answer '1,3' (options B,C,D,A and C,B,D,A both accepted); notice_text is empty, so no stated reason. None of the 15 supplied latest-edition passages address recombinant DNA technology steps (isolation of DNA fragment, restriction-enzyme cutting, PCR amplification, insertion into host) -- the passages given cover unrelated topics (sexual reproduction in flowering plants, human reproduction/reproductive health, DNA fingerprinting, human genome project, electrostatics, elasticity). With no supplied passage supporting a choice between option 1 and option 3 as the NCERT-correct sequence, proposed_answer is left unsure rather than inventing a supporting quote.",
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for E1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "E1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

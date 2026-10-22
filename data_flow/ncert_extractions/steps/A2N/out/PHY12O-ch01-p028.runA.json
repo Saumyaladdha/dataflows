@@ -1,0 +1,21 @@
+{
+  "blocks": [
+    {"n": 2, "no_change": true},
+    {"n": 4, "no_change": true},
+    {"n": 7, "no_change": true},
+    {"n": 10, "no_change": true},
+    {
+      "n": 11,
+      "corrected_text": "The directions of  E+q and E–q are as shown in Fig. 1.20(b). Clearly, the components normal to the dipole axis cancel away. The components along the dipole axis add up. The total electric field is opposite to p̂. We have",
+      "fixes": [
+        {"wrong": "opposite to ˆp", "right": "opposite to p̂"}
+      ]
+    },
+    {"n": 13, "no_change": true},
+    {"n": 15, "no_change": true},
+    {"n": 17, "no_change": true},
+    {"n": 18, "no_change": true},
+    {"n": 20, "no_change": true}
+  ],
+  "note": "n=11 had a detached hat (ˆp -> p̂, matching the bold dipole-direction unit vector in the image). E+q/E–q subscript labels (n=7, 11) are symbol names, left untouched. All other blocks already match the image exactly -- no inline formulas with exponents/radicals appear in this page's prose blocks (the numbered equations themselves are not part of these text blocks)."
+}

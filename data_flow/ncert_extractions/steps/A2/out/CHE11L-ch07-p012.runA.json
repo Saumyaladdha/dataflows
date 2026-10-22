@@ -1,0 +1,80 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Problem 7.7\nWhy do the following reactions proceed differently ?\nPb3O4 + 8HCl → 3PbCl2 + Cl2 + 4H2O   and\nPb3O4 + 4HNO3 → 2Pb(NO3)2 + PbO2 + 2H2O\nSolution\nPb3O4  is actually a stoichiometric mixture of 2 mol of PbO and 1 mol of PbO2. In PbO2, lead is present in +4 oxidation state, whereas the stable oxidation state of lead in PbO is +2. PbO2 thus can act as an oxidant (oxidising agent) and, therefore, can oxidise Cl– ion of HCl into chlorine. We may also keep in mind that PbO is a basic oxide. Therefore, the reaction\nPb3O4 + 8HCl → 3PbCl2 + Cl2 + 4H2O\ncan be splitted into two reactions namely:\n2PbO + 4HCl → 2PbCl2 + 2H2O\n(acid-base reaction)",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [245, 1104, 840, 1208],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Since HNO3 itself is an oxidising agent therefore, it is unlikely that the reaction may occur between PbO2 and HNO3. However, the acid-base reaction occurs between PbO and HNO3 as:\n2PbO + 4HNO3 → 2Pb(NO3)2 + 2H2O\nIt is the passive nature of PbO2 against HNO3 that makes the reaction different from the one that follows with HCl."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "7.3.2 Balancing of Redox Reactions"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Two methods are used to balance chemical equations for redox processes. One of these methods is based on the change in the oxidation number of reducing agent and the oxidising agent and the other method is based on splitting the redox reaction into two half reactions — one involving oxidation and the other involving reduction. Both these methods are in use and the choice of their use rests with the individual using them."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "(a) Oxidation Number Method: In writing equations for oxidation-reduction reactions, just as for other reactions, the compositions and formulas must be known for the substances that react and for the products that are formed. The oxidation number method is now best illustrated in the following steps:"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Step 1: Write the correct formula for each reactant and product."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Step 2: Identify atoms which undergo change in oxidation number in the reaction by assigning the oxidation number to all elements in the reaction."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Step 3: Calculate the increase or decrease in the oxidation number per atom and for the entire molecule/ion in which it occurs. If these are not equal then multiply by suitable number so that these become equal. (If you realise that two substances are reduced and nothing is oxidised or vice-versa, something is wrong. Either the formulas of reactants or products are wrong or the oxidation numbers have not been assigned properly)."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Step 4: Ascertain the involvement of ions if the reaction is taking place in water, add H+ or OH– ions to the expression on the appropriate side so that the total ionic charges of reactants and products are equal. If the reaction is carried out in acidic solution, use H+ ions in the equation; if in basic solution, use OH– ions."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Step 5 :  Make the numbers of hydrogen atoms in the expression on the two sides equal by adding water (H2O) molecules to the reactants or products. Now, also check the number of oxygen atoms. If there are the same number of oxygen atoms in the reactants and products, the equation then represents the balanced redox reaction."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Let us now explain the steps involved in the method with the help of a few problems given below:"
+    },
+    {
+      "n": 13,
+      "kind": "box",
+      "text": "Problem 7.8\nWrite the net ionic equation for the reaction of potassium dichromate(VI), K2Cr2O7 with sodium sulphite, Na2SO3, in an acid solution to give chromium(III) ion and the sulphate  ion."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "246",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "Judged against page 11, which I read myself: p011 closed a complete green box, and this page opens a fresh \"Problem 7.7\" box, so no continuation. Blocks 1-3 are one pink Problem 7.7 box, split so the PbO2 + 4HCl display reaction that carries oxidation numbers above the species (block 2, with its \"(redox reaction)\" label) is marked needs_special and not lost; the box's other reactions are plain inline text and are transcribed. Reading order follows the printed two-column layout: left column (Problem 7.7 box, heading 7.3.2, its paragraph) then right column; note the text layer lists these in a different order (Problem 7.8 first, section 7.3.2 last), so the layer's sequence disagrees with the page - I used the page. Steps 1-5 are kept as five separate paragraph blocks, as printed. Problem 7.8 gives only the question; its solution is not on this page, so last_block_continues_on_next is true. Subscripts and superscript charges appear as inline characters in the text layer (e.g. Pb3O4, H+, OH–); kept as given."
+}

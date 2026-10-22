@@ -1,0 +1,89 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "Multiplication and Division"
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "These two operations follow the same rules which are there for exponential numbers, i.e."
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        220,
+        315,
+        855,
+        885
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "Addition and Subtraction"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "For these two operations, first the numbers are written in such a way that they have the same exponent. After that, the coefficients (digit terms) are added or subtracted as the case may be."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Thus, for  adding  6.65×104  and  8.95×103, exponent is made same for both the numbers. Thus, we get (6.65×104) + (0.895×104)"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Then, these numbers can be added as follows (6.65 + 0.895)×104 = 7.545×104"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Similarly, the subtraction of two numbers can be done as shown below:"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "(2.5 × 10–2) – (4.8 ×10–3) = (2.5 × 10–2) – (0.48 × 10–2) = (2.5 – 0.48)×10–2 = 2.02 × 10–2"
+    },
+    {
+      "n": 10,
+      "kind": "heading",
+      "text": "1.4.2 Significant Figures"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Every experimental measurement has some amount of uncertainty associated with it because of limitation of measuring instrument and the skill of the person making the measurement. For example, mass of an object is obtained using a platform balance and it comes out to be 9.4g. On measuring the mass of this object on an analytical balance, the mass obtained is 9.4213g. The mass obtained by an analytical balance is slightly higher than the mass obtained by using a platform balance. Therefore, digit 4 placed after decimal in the measurement by platform balance is uncertain."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "The uncertainty in the experimental or the calculated values is indicated by mentioning the number of significant figures. Significant figures are meaningful digits which are known with certainty plus one which is estimated or uncertain. The uncertainty is indicated by writing the certain digits and the last uncertain digit. Thus, if we write a result as 11.2 mL, we say the 11 is certain and 2 is uncertain and the uncertainty would be +1 in the last digit. Unless otherwise stated, an uncertainty of +1 in the last digit is always understood."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "There are certain rules for determining the number of significant figures. These are stated below:"
+    },
+    {
+      "n": 14,
+      "kind": "list",
+      "text": "(1) All non-zero digits are significant. For example in 285 cm, there are three significant figures and in 0.25 mL, there are two significant figures.\n(2) Zeros preceding to first non-zero digit are not significant. Such zero indicates the position of decimal point. Thus, 0.03 has one significant figure and 0.0052 has two significant figures.\n(3) Zeros between two non-zero digits are significant. Thus, 2.005 has four significant figures.\n(4) Zeros at the end or right of a number are significant, provided they are on the right side of the decimal point. For example, 0.200 g has three significant figures. But, if otherwise, the terminal zeros are not significant if there is no decimal point. For example, 100 has only one significant figure, but 100 has three significant figures and 100.0 has four significant figures. Such numbers are better represented in scientific notation. We can express the number 100 as 1×102 for one significant figure, 1.0×102 for two significant figures and 1.00×102 for three significant figures."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "12",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null even though page is 12, so the first-block judgement was made from the page itself: the page opens with the side-heading 'Multiplication and Division', so it does not continue a sentence. The large display-maths block in the left column (the 5.6x10^5 x 6.9x10^8, 9.8x10^-2 x 2.5x10^-6 and 2.7x10^-3 / 5.5x10^4 worked examples) is badly garbled in the text layer, so it is left to the special transcriber as block 3. The smaller arithmetic lines (blocks 6, 7 and 9) are set in ordinary body type and are clean in the text layer, so they are kept as paragraph text. Per the exactness rule, prose blocks copy the text layer's own characters: superscript exponents appear flat (e.g. '6.65x104' for 6.65x10^4, '10–2' for 10^-2), and the plus-minus sign is held as '+' ('would be +1 in the last digit'). In rule (4) the text layer gives '100 has only one significant figure, but 100 has three significant figures' with no distinguishing mark; the image shows the second 100 with an overbar on the zeros, but the text layer characters were copied as held. The page ends with the numbered list cut after item (4) and the column filled to the bottom margin, so the list block is flagged as continuing on the next page."
+}

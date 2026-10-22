@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "of the dots in a region represents electron probability density in that region.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Boundary surface diagrams of constant probability density for different orbitals give a fairly good representation of the shapes of the orbitals. In this representation, a boundary surface or contour surface is drawn in space for an orbital on which the value of probability density |ψ|2 is constant. In principle many such boundary surfaces may be possible. However, for a given orbital, only that boundary surface diagram of constant probability density* is taken to be good representation of the shape of the orbital which encloses a region or volume in which the probability of finding the electron is very high, say, 90%. The boundary surface diagram for 1s and 2s orbitals are given in Fig. 2.13(b). One may ask a question : Why do we not draw a boundary surface diagram, which bounds a region in which the probability of finding the electron is, 100 %? The answer to this question is that the probability density |ψ|2 has always some value, howsoever small it may be, at any finite distance from the nucleus. It is therefore, not possible to draw a boundary surface diagram of a rigid size in which the probability of finding the electron is 100%. Boundary surface diagram for a s orbital is actually a sphere centred on the nucleus. In two dimensions, this sphere looks like a circle. It encloses a region in which probability of finding the electron is about 90%."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Thus, we see that 1s and 2s orbitals are spherical in shape. In reality all the s-orbitals are spherically symmetric, that is, the probability of finding the electron at a given distance is equal in all the directions. It is also observed that the size of the s orbital increases with increase in n, that is, 4s > 3s > 2s > 1s and the electron is located further away from the nucleus as the principal quantum number increases."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Boundary surface diagrams for three 2p orbitals (l = 1) are shown in Fig. 2.14. In these diagrams, the nucleus is at the origin. Here, unlike s-orbitals, the boundary surface diagrams are not spherical. Instead each p orbital consists of two sections called lobes that are on either side of the plane that passes through the nucleus. The probability density"
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        897,
+        248,
+        1546,
+        954
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        897,
+        976,
+        1546,
+        1644
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "* If probability density |ψ|2 is constant on a given surface, |ψ| is also constant over the surface. The boundary surface for |ψ|2 and |ψ| are identical."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "58",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p029.runA.json I wrote immediately before this page, whose last paragraph breaks off at 'visualised in terms of charge cloud diagrams [Fig. 2.13(a)]. In these diagrams, the density'. This page opens 'of the dots in a region represents electron probability density in that region.', the completion of that sentence, so first_block_continues_from_previous is true, matching p029's last_block_continues_on_next of true. Reading order is the left column then the right column, with the full-width asterisk footnote across the foot of the page last; the text layer stores that footnote BEFORE both figure captions and stores Fig. 2.14's caption BEFORE Fig. 2.13's, although Fig. 2.13 is printed above Fig. 2.14 and the footnote is printed below everything, so this page's text layer is stored out of printed order. Block n=4 is one paragraph that runs over the column break — it ends 'are shown in Fig. 2.14. In' at the foot of the left column and resumes 'these diagrams, the nucleus is at the origin.' at the bottom of the right column, below both figures — and is transcribed as the single paragraph it is, which is why it is listed ahead of the two figure blocks. Blocks n=5 and n=6 are Fig. 2.13 and Fig. 2.14, both left for the special transcriber with pixel bboxes and empty text; n=5's bbox covers the two rows of sphere diagrams with their (a) and (b) labels and their 1s and 2s labels together with the six-line italic caption below them, and n=6's bbox covers the yellow panel of three p-orbital diagrams with their red 2px, 2py and 2pz labels and their x, y and z axis labels together with the two-line italic caption below it. The diagrams themselves are not described. Block n=7 is the asterisk footnote keyed to 'constant probability density*' in block n=2 and is recorded as its own paragraph at the end, the same way the footnote on p016 was. Inline maths follows the text layer's own flattened spelling: '|ψ|2' for the printed modulus-squared of psi and plain '|ψ|' where the printed form carries no exponent, '4s > 3s > 2s > 1s', '2p orbitals (l = 1)'. The bold 'Boundary surface diagrams' opening block n=2 is printed bold inside that sentence and is kept there; 'is, 100 %?' with its space before the per-cent sign is as printed. The running prose of the right column breaks off mid-sentence at 'The probability density' in block n=4 and is completed on p031, so last_block_continues_on_next is true even though the footnote, which ends on a complete sentence, is printed below it."
+}

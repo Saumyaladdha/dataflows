@@ -1,0 +1,89 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "examples and identify the fulcrum, the effort and effort arm, and the load and the load arm of the lever in each case.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "You may easily show that the principle of moment holds even when the parallel forces  F1 and F2 are not perpendicular, but act at some angle, to the lever."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "6.8.2 Centre of gravity"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Many of you may have the experience of balancing your notebook on the tip of a finger. Figure 6.24 illustrates a similar experiment that you can easily perform. Take an irregular-shaped cardboard having mass M and a narrow tipped object like a pencil. You can locate by trial and error a point G on the cardboard where it can be balanced on the tip of the pencil. (The cardboard remains horizontal in this position.) This point of balance is the centre of gravity (CG) of the cardboard. The tip of the pencil provides a vertically upward force due to which the cardboard is in mechanical equilibrium. As shown in the Fig. 6.24, the reaction of the tip is equal and opposite to Mg and hence the cardboard is in translational equilibrium. It is also in rotational equilibrium; if it were not so, due to the unbalanced torque it would tilt and fall. There are torques on the card board due to the forces of gravity like m1g, m2g ….  etc, acting on the individual particles that make up the cardboard."
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        302,
+        1242,
+        945,
+        1944
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The CG of the cardboard is so located that the total torque on it due to the forces m1g, m2g ….  etc. is zero."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "If  ri is the position vector of the ith particle of an extended body with respect to its CG, then the torque about the CG, due to the force of gravity on the particle  is τi = ri × mi g. The total gravitational torque about the CG is zero, i.e."
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1015,
+        475,
+        1620,
+        529
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "We may therefore, define the CG of a body as that point where the total gravitational torque on the body is zero."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "We notice that in Eq. (6.33), g is the same for all particles, and hence it comes out of the summation. This gives, since g is non-zero, ∑mi ir = 0. Remember that the position vectors (ri) are taken with respect to the CG. Now, in accordance with the reasoning given below Eq. (6.4a) in Sec. 6.2, if the sum is zero, the origin must be the centre of mass of the body. Thus, the centre of gravity of the body coincides with the centre of mass in uniform gravity or gravity-"
+    },
+    {
+      "n": 11,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        983,
+        1080,
+        1631,
+        1944
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "112",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null, but the page's first line begins mid-sentence ('examples and identify the fulcrum...'), so continuation is marked true from the page itself. Blocks 5 and 11 are the Fig. 6.24 and Fig. 6.25 line drawings together with their printed captions; bboxes are in pixels of the supplied 1826x2163 page image. Block 8 is displayed Eq. (6.33); the text layer renders it with scrambled sub/superscripts, so it is left to the special transcriber. Inline mathematics in blocks 2, 4, 6, 7 and 10 (e.g. 'F1', 'm1g', 'τi = ri × mi g', '∑mi ir = 0') is copied as the text layer holds it, including its scrambled subscript ordering, rather than re-rendered. Prose last block ends mid-word ('gravity-'), hence last_block_continues_on_next is true even though a figure is the final block in reading order."
+}

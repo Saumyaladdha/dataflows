@@ -1,0 +1,141 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "in pairs.  This is an important fact that enables the second law to be applicable to a body or a system of particles (See Chapter 6).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 4.5  Two identical billiard balls strike a rigid wall with the same speed but at different angles, and get reflected without any change in speed,  as shown in Fig. 4.6. What is (i) the direction of the force on the wall due to each ball? (ii) the ratio of the magnitudes of impulses imparted to the balls by the wall ?"
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        215,
+        610,
+        840,
+        980
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Answer  An instinctive answer to (i) might be that the force on the wall in case (a) is normal to the wall, while that in case (b) is inclined at 30° to the normal. This answer is wrong.  The force on the wall is normal to the wall in both cases."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "How to find the force on the wall? The trick is to consider the force (or impulse) on  the ball due to  the wall using the second law, and then use the third law to answer (i). Let u be the speed of each ball before and after collision with the wall, and m the mass of each ball. Choose the x and y axes as shown in the figure, and consider the change in momentum of the ball in each case :"
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "Case (a)"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        225,
+        1515,
+        745,
+        1660
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Impulse is the change in momentum vector. Therefore,"
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "x-component of impulse  =  – 2 m u\ny-component of impulse  =   0"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Impulse and force are in the same direction. Clearly, from above, the force on the ball due to the wall is normal to the wall, along the negative x-direction.  Using Newton’s third law of motion, the force on the wall due to the ball is normal to the wall along the positive x-direction. The magnitude of force cannot be ascertained since the small time taken for the collision has not been specified in the problem."
+    },
+    {
+      "n": 11,
+      "kind": "heading",
+      "text": "Case (b)"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        900,
+        425,
+        1535,
+        585
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Note,  while px changes sign  after collision,  py does not.  Therefore,"
+    },
+    {
+      "n": 14,
+      "kind": "list",
+      "text": "x-component of impulse = –2 m u  cos  30°\ny-component of impulse = 0"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "The direction of impulse (and force) is the same as in (a) and is normal to the wall along the negative x direction.  As before, using Newton’s third law, the force on the wall due to the ball is normal to the wall along the positive x direction."
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "The ratio of the magnitudes  of the impulses imparted to the balls in (a) and (b) is"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        915,
+        985,
+        1440,
+        1070
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "heading",
+      "text": "4.7  CONSERVATION OF MOMENTUM"
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "The second and third laws of motion lead to an important consequence: the law of conservation of momentum.  Take a familiar example. A bullet is fired  from a gun. If the force on the bullet by the gun is F, the force on the gun by the bullet is – F, according to the third law. The two forces act for a common interval of time ∆t.  According to the second law, F ∆t is the change in momentum of the bullet and – F ∆t is the change in momentum of the gun. Since initially, both are at rest, the change in momentum equals the final momentum for each. Thus if pb is the momentum of the bullet after firing and pg is the recoil momentum of the gun, pg = – pb  i.e. pb + pg = 0.  That is, the total momentum of the (bullet + gun) system is conserved."
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "Thus in an isolated system (i.e. a system with no external force), mutual forces between pairs of particles in the system can cause momentum change in individual particles, but since the mutual forces for each pair are equal and opposite, the momentum changes cancel in pairs and the total momentum remains unchanged. This fact is known as the law of conservation of momentum :"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "LAWS OF MOTION",
+    "57",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was supplied as null, but the page opens mid-sentence (\"in pairs.\") so first_block_continues_from_previous is set true from the page itself. The \"⊳\" and \"◄\" glyphs in the text layer are the typographic markers that open and close Example 4.5 and were dropped, not transcribed. Subscripts/superscripts are scrambled below word level in the text layer, so inline symbols (px, py, pb, pg, F ∆t) were copied as the characters the text layer holds for those sentences; the three displayed formula groups (Case (a) momentum components, Case (b) momentum components, and the impulse-ratio result) are emitted as equation blocks with needs_special and image-pixel bboxes. The text within blocks 1-20 is a two-column page read left column first; block 10 spans the column break and is kept as one paragraph. Text-layer \"30°\" is kept where the printed page shows \"30\" without the degree sign (blocks 4 and 14)."
+}

@@ -1,0 +1,68 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Notice the important point that the dipole field at large distances falls off not as 1/r 2 but as1/r 3. Further,  the magnitude and the direction of the dipole field depends not only on the distance r but also on the angle between the position vector r and the dipole moment p.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "We can think of the limit when the dipole size 2a approaches zero, the charge q approaches infinity in such a way that the product p = q × 2a is finite. Such a dipole is referred to as a point dipole. For a point dipole, Eqs. (1.20) and (1.21) are exact, true for any r."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "1.10.2  Physical significance of dipoles"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "In most molecules, the centres of positive charges and of negative charges* lie at the same place. Therefore, their dipole moment is zero. CO2 and CH4 are of this type of molecules. However, they develop a dipole moment when an electric field is applied. But in some molecules, the centres of negative charges and of positive charges do not coincide. Therefore they have a permanent electric dipole moment, even in the absence of an electric field. Such molecules are called polar molecules. Water molecules, H2O, is an example of this type. Various materials give rise to interesting properties and important applications in the presence or  absence of electric field."
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Example 1.9 Two charges ±10 μC are placed 5.0 mm apart. Determine the electric field at (a) a point P on the axis of the dipole 15 cm away from its centre O on the side of the positive charge, as shown in Fig. 1.18(a), and (b) a point Q, 15 cm away from O on a line passing through O and normal to the axis of the dipole, as shown in Fig. 1.18(b)."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        324,
+        1264,
+        1091,
+        1836
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "* Centre of a collection of positive point charges is defined much the same way as the centre of mass:"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        475,
+        1971,
+        648,
+        2090
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "EXAMPLE 1.9",
+    "25",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null although page is 25; first block is an indented new paragraph beginning a complete sentence, so continuation judged false from the image. last_block_continues_on_next is true because the Example 1.9 box gives only the problem statement and Fig. 1.18 — its solution runs onto the next page (the vertical 'EXAMPLE 1.9' side tab continues). Text-layer artifacts handled: the numbered side-heading 1.10.2 is transcribed once in reading order; inline math characters (\"1/r 2\", \"1/r 3\", \"H2O\", \"CO2\", \"CH4\") are copied as the text layer holds them, since sub/superscripts are extracted onto separate lines. One place where the text layer is clearly garbled and the image was used instead: the text layer reads \"±10 mC\" in Example 1.9, but the page image plainly shows \"±10 μC\" (symbol-font mu extracted as 'm'); transcribed as μC. Block 7 is the page footnote marked by the asterisk in block 4; its displayed centre-of-mass fraction is emitted separately as equation block 8 because the text layer scrambles it (\"r / r / cm = / ∑ / ∑ / q / q / i i / i / i / i / .\"). The 'FIGURE 1.18' caption and the (a)/(b) panel labels fall inside the figure bbox."
+}

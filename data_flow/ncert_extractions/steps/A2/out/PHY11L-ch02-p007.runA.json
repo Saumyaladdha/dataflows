@@ -1,0 +1,211 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        195,
+        205,
+        870,
+        930
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "FIRST METHOD :  In the first method, we split the path in two parts : the upward motion  (A to B) and the downward motion (B to C) and calculate the corresponding time taken t1 and t2.  Since the velocity  at B is zero, we have :",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        195,
+        1095,
+        620,
+        1200
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "This is the time in going from A to B.  From B, or the point of  the maximum height, the ball falls freely under the acceleration due to gravity.  The ball is moving in negative y direction.  We use equation"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        310,
+        1385,
+        620,
+        1445
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "We have, y0 = 45 m, y = 0, v0 = 0, a = – g  = –10 m s–2"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        310,
+        1490,
+        560,
+        1535
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Solving, we get t2 = 3 s"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Therefore, the total time taken by the ball before it hits the ground = t1 +   t2  =  2  s + 3 s = 5 s."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "SECOND METHOD : The total time taken can also be calculated by noting the coordinates of initial and final positions of the ball with respect to the origin chosen and using equation"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        300,
+        1835,
+        580,
+        1895
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        195,
+        1900,
+        815,
+        1970
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        885,
+        205,
+        1370,
+        285
+      ],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Solving this quadratic equation for t, we get"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        960,
+        340,
+        1090,
+        385
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Note that the second method is better since we do not have to worry about the path of the motion as the motion is under constant acceleration."
+    },
+    {
+      "n": 17,
+      "kind": "box",
+      "text": "Example 2.4  Free-fall : Discuss the motion of an object under free  fall.  Neglect air resistance."
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "Answer  An object released near the surface of the Earth is accelerated downward under the influence of the force of gravity. The magnitude of acceleration due to gravity is represented by g.  If air resistance is neglected, the object is said to be in free fall. If the height through which the object falls is small compared to the earth’s radius, g can be taken to be constant, equal to   9.8 m s–2. Free fall is thus a case of motion with uniform acceleration."
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "We assume that the motion is in y-direction, more correctly in –y-direction because we choose upward direction as positive. Since the acceleration due to gravity is always downward, it is in the negative direction and we have"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        900,
+        1215,
+        1210,
+        1260
+      ],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "The object is released from rest at y = 0. Therefore, v0 = 0 and the equations of motion become:"
+    },
+    {
+      "n": 22,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        910,
+        1335,
+        1370,
+        1445
+      ],
+      "text": ""
+    },
+    {
+      "n": 23,
+      "kind": "paragraph",
+      "text": "These equations give the velocity and the distance travelled as a function of time and also the variation of velocity with distance. The variation of acceleration, velocity, and distance, with time have been plotted in Fig.  2.7(a), (b) and (c)."
+    },
+    {
+      "n": 24,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1020,
+        1630,
+        1425,
+        1925
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "MOTION IN A STRAIGHT LINE",
+    "19",
+    "2024-25"
+  ],
+  "note": "Judged first_block_continues_from_previous from page 6, which I read myself in this batch (previous_page_last_block was null): page 6 ends at a full stop ('Note carefully the methods used.') and this page opens with Fig. 2.6 and the FIRST METHOD paragraph. Fig. 2.6, every display calculation line and the data lines of the worked answers are left for the special transcriber with bounding boxes; blocks 12 and 13 are the two halves of the same substitution, split by the column break. Example 2.4 is a tinted box kept as a box block. Block 24 is panel (a) of Fig. 2.7 only - panels (b) and (c) of the same figure fall on the next page, which is why last_block_continues_on_next is true. Text layer matches the image."
+}

@@ -1,0 +1,102 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        213,
+        300,
+        790,
+        1068
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        213,
+        1259,
+        790,
+        1962
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The growth rate shows an increase that may be\narithmetic or geometrical (Figure 13.4).",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "In arithmetic growth, following mitotic cell\ndivision, only one daughter cell continues to divide\nwhile the other differentiates and matures. The\nsimplest expression of arithmetic growth is\nexemplified by a root elongating at a constant rate.\nLook at Figure 13.5. On plotting the length of the\norgan against time, a linear curve is obtained.\nMathematically, it is expressed as",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        834,
+        690,
+        1010,
+        732
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "Lt = length at time ‘t’\nL0 = length at time ‘zero’\nr    = growth rate / elongation per unit time.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Let us now see what happens in geometrical\ngrowth. In most systems, the initial growth is slow\n(lag phase), and it increases rapidly thereafter – at\nan exponential rate (log or exponential phase). Here,\nboth the progeny cells following mitotic cell division\nretain the ability to divide and continue to do so.\nHowever, with limited nutrient supply, the growth\nslows down leading to a stationary phase. If we plot\nthe parameter of growth against time, we get a typical\nsigmoid or S-curve (Figure 13.6). A sigmoid curve\nis a characteristic of living organism growing in a\nnatural environment. It is typical for all cells, tissues\nand organs of a plant. Can you think of more similar\nexamples? What kind of a curve can you expect in\na tree showing seasonal activities?",
+      "continues_from_previous": false
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The exponential growth can be expressed as",
+      "continues_from_previous": false
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        834,
+        1496,
+        1016,
+        1540
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "W1 = final size (weight, height, number etc.)\nW0 = initial size at the beginning of the period\nr     = growth rate\nt     = time of growth\ne    = base of natural logarithms",
+      "continues_from_previous": false
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Here, r is the relative growth rate and is also the\nmeasure of the ability of the plant to produce new\nplant material, referred to as efficiency index. Hence,\nthe final size of W1 depends on the initial size, W0.",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "170",
+    "BIOLOGY",
+    "2024-25"
+  ],
+  "note": "Used text_layer (clean), cross-checked against image. Two-column page: narrow left column carries Figure 13.5 and Figure 13.6 only, the wide right column carries all prose, so reading order is left column figures then right column. Judged the opening continuation from page 4, which I read myself (previous_page_last_block was null): page 4 ended with the complete Figure 13.4 caption and its last prose sentence closed at \"...in a variety of ways.\", so nothing continues in; and this page's last sentence closes at \"...the initial size, W0.\", so nothing continues onto page 6. The two display equations (Lt = L0 + rt and W1 = W0 ert) are marked needs_special with bboxes and empty text; the lines that define each symbol are ordinary text, so they are kept as list blocks. Subscripts are flattened in the text layer (Lt, L0, W1, W0 are printed with subscript t/0/1), copied as the layer gives them without correction. Figure callout labels (Height of the plant, Time, Stationary phase, Exponential phase, Lag phase, Size/weight of the organ) and both figure captions lie inside the declared figure bboxes and are left for the special transcriber. Removed page number 170, running header BIOLOGY and reprint year 2024-25."
+}

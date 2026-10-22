@@ -1,0 +1,107 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [240, 275, 765, 995],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "9 × 109 N. One coulomb is evidently too big a unit to be used. In practice, in electrostatics, one uses smaller units like 1 mC or 1 mC.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The constant k in Eq. (1.1) is usually put as k = 1/4pe0 for later convenience, so that Coulomb’s law is written as"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [855, 540, 1545, 630],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "e0 is called the permittivity of free space . The value of e0 in SI units is"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [860, 740, 1280, 795],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Since force is a vector, it is better to write Coulomb’s law in the vector notation. Let the position vectors of charges q1 and q2 be r1 and r2 respectively [see Fig.1.3(a)]. We denote force on q1 due to q2 by F12 and force on q2 due to q1 by F21. The two point charges q1 and q2 have been numbered 1 and 2 for convenience and the vector leading from 1 to 2 is denoted by r21:"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 1100, 760, 1150],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "In the same way, the vector leading from 2 to 1 is denoted by r12:"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 1195, 805, 1245],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The magnitude of the vectors r21 and r12 is denoted by r21 and r12, respectively (r12 = r21). The direction of a vector is specified by a unit vector along the vector. To denote the direction from 1 to 2 (or from 2 to 1), we define the unit vectors:"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 1395, 980, 1480],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Coulomb’s force law between two point charges q1 and q2 located at r1 and r2, respectively is then expressed as"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 1605, 1545, 1700],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Some remarks on Eq. (1.3) are relevant:"
+    },
+    {
+      "n": 16,
+      "kind": "list",
+      "text": "Equation (1.3) is valid for any sign of q1 and q2 whether positive or negative. If q1 and q2 are of the same sign (either both positive or both negative), F21 is along ˆr 21, which denotes repulsion, as it should be for like charges. If q1 and q2 are of opposite signs, F21 is along – ɵr 21(= ɵr 12), which denotes attraction, as expected for unlike charges. Thus, we do not have to write separate equations for the cases of like and unlike charges. Equation (1.3) takes care of both cases correctly [Fig. 1.3(b)]."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "8",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null although this is page 8, so continuation was judged from the page itself: the top-right column opens mid-sentence (\"9 × 109 N. One coulomb is evidently too big a unit to be used.\"), the tail of a computed value from the previous page, so first_block_continues_from_previous is true. Fig. 1.3 (panels (a), (b) and its caption) is a float occupying the top-left; following the left-column-first rule it is listed as block 1, so the continuing prose is block 2, which carries continues_from_previous: true. Inline mathematics is copied as the text_layer holds it rather than re-rendered: the text layer drops superscripts/subscripts (\"9 × 109 N\" for 9 × 10^9 N, \"q1\", \"r21\") and renders symbol-font Greek as Latin (\"e0\" for the epsilon-nought printed on the page, \"1/4pe0\" for 1/4*pi*epsilon0, \"1 mC or 1 mC\" where the image shows 1 mC or 1 microC). The displayed epsilon-nought value line, the two displayed vector-difference lines, the unit-vector definition line and numbered Eqs. (1.2) and (1.3) are emitted as equation blocks with needs_special rather than transcribed. The bulleted \"Some remarks on Eq. (1.3)\" list very likely continues with further bullets on the next page, but the last bullet on this page ends on a complete sentence, so last_block_continues_on_next is false. A diagonal \"© NCERT not to be republished\" watermark crosses the page and was not transcribed."
+}

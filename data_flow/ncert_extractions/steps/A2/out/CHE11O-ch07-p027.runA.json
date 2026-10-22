@@ -1,0 +1,121 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "ion. In dilute solutions (< 0.01 M), activity of hydrogen ion (H+) is equal in magnitude to molarity represented by [H+]. It should be noted that activity has no units and is defined as:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [320, 450, 580, 500],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "From the definition of pH, the following can be written,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [255, 580, 790, 628],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Thus, an acidic solution of HCl (10–2 M) will have a pH = 2. Similarly, a basic solution of NaOH having [OH–] =10–4 M and [H3O+] = 10–10 M will have a pH = 10. At 25 °C, pure water has a concentration of hydrogen ions, [H+] = 10–7 M. Hence, the pH of pure water is given as:"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [258, 908, 520, 955],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Acidic solutions possess a concentration of hydrogen ions, [H+] > 10–7 M, while basic solutions possess a concentration of hydrogen ions, [H+] < 10–7 M. thus, we can summarise that"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Acidic solution has pH < 7\nBasic solution has pH > 7\nNeutral solution has pH = 7"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Now again, consider the equation (7.28) at 298 K"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [245, 1328, 578, 1375],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Taking negative logarithm on both sides of equation, we obtain"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [245, 1450, 868, 1682],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Note that although Kw may change with temperature the variations in pH with temperature are so small that we often ignore it."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "pKw is a very important quantity for aqueous solutions and controls the relative concentrations of hydrogen and hydroxyl ions as their product is a constant. It should be noted that as the pH scale is logarithmic, a change in pH by just one unit also means change in [H+] by a factor of 10. Similarly, when the hydrogen ion concentration, [H+] changes by a factor of 100, the value of pH changes by 2 units. Now you can realise why the change in pH with temperature is often ignored."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Measurement of pH of a solution is very essential as its value should be known when dealing with biological and cosmetic applications. The pH of a solution can be found roughly with the help of pH paper that has different colour in solutions of different pH. Now-a-days pH paper is available with four strips on it. The different strips have different colours (Fig. 7.11) at the same pH. The pH in the range of 1-14 can be determined with an accuracy of ~0.5 using pH paper."
+    },
+    {
+      "n": 16,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [898, 888, 1538, 1160],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "For greater accuracy pH meters are used. pH meter is a device that measures the pH-dependent electrical potential of the test solution within 0.001 precision. pH meters of the size of a writing pen are now available in the market. The pH of some very common substances are given in Table 7.5 (page 212)."
+    },
+    {
+      "n": 18,
+      "kind": "box",
+      "text": "Problem 7.16\nThe concentration of hydrogen ion in a sample of soft drink is 3.8 × 10–3M. what is its pH ?\nSolution\npH = – log[3.8 × 10–3]\n      = – {log[3.8] + log[10–3]}\n      = – {(0.58) + (– 3.0)} = – { – 2.42} = 2.42\nTherefore, the pH of the soft drink is 2.42 and it can be inferred that it is acidic."
+    },
+    {
+      "n": 19,
+      "kind": "box",
+      "text": "Problem 7.17\nCalculate pH of a 1.0 × 10–8 M solution of HCl.",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "218",
+    "CHEMISTRY",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p026 output, whose last block ended '...the negative logarithm to base 10 of the activity (aH+) of hydrogen', and this page opens 'ion. In dilute solutions...', so first_block_continues_from_previous is true. Displayed expressions are needs_special rather than transcribed, as elsewhere in this chapter: block 2 (the activity definition line), block 4 (pH = – log aH+ = ...), block 6, block 10 (the restatement of equation 7.28), and block 12, which groups the four display lines of the negative-logarithm derivation down to 'pKw = pH + pOH = 14' with its equation number (7.29) inside the bbox. Block 8 is the three flush summary lines ('Acidic solution has pH < 7' / 'Basic ...' / 'Neutral ...'); they are sentences in words rather than displayed notation, so they are transcribed, as printed, one per line. Block 14 is one paragraph that straddles the column break ('...the pH scale is logarithmic, a / change in pH by just one unit...'); the text layer stores it contiguously, so I have kept it whole. Block 16 is Fig. 7.11, its bbox covering the pH-paper colour strips, the 0-14 scale numbers printed above them and the caption beneath. The pink panel holds two problems: block 18 is Problem 7.16 complete with its solution, and block 19 is Problem 7.17, whose question text breaks off at the foot of the page, so last_block_continues_on_next is true."
+}

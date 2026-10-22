@@ -1,0 +1,218 @@
+{
+  "question_id": "Q-000353",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "figure_path": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_url": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_source_row": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "figure_match_confidence": {
+      "step": "B9",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:75"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Match List I with List II. List I (Reaction) List II (Reagents/Condition) Choose the correct answer from the options given below:",
+  "statements": [],
+  "list_i": [
+    {
+      "label": "A",
+      "text": "[missing content — no text printed]"
+    },
+    {
+      "label": "B",
+      "text": "[missing content — no text printed]"
+    },
+    {
+      "label": "C",
+      "text": "[missing content — no text printed]"
+    },
+    {
+      "label": "D",
+      "text": "[missing content — no text printed]"
+    }
+  ],
+  "list_ii": [
+    {
+      "label": "I",
+      "text": "[missing content — no text printed]"
+    },
+    {
+      "label": "II",
+      "text": "$\\mathrm{CrO3}$"
+    },
+    {
+      "label": "III",
+      "text": "$\\mathrm{KMnO4/KOH}$, $\\Delta$"
+    },
+    {
+      "label": "IV",
+      "text": "(i) $\\mathrm{O3}$ (ii) $\\mathrm{Zn}$-$\\mathrm{H2O}$"
+    }
+  ],
+  "options_en": {
+    "1": "A-IV, B-I, C-III, D-II",
+    "2": "A-III, B-I, C-II, D-IV",
+    "3": "A-IV, B-I, C-II, D-III",
+    "4": "A-I, B-IV, C-II, D-III"
+  },
+  "structure": "match",
+  "has_figure": true,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "75\nMatch List I with List II. List I List II (Reaction) (Reagents/Condition) A. I. B. II. CrO3 C. III.\nKMnO4/KOH, Δ D. IV. (i) O3 (ii) Zn-H2O Choose the correct answer from the options given below:\n(1)\nA-IV, B-I, C-III, D-II\n(2)\nA-III, B-I, C-II, D-IV\n(3)\nA-IV, B-I, C-II, D-III\n(4)\nA-I, B-IV, C-II, D-III\nAldehydes, Ketones and Carboxylic Acids\n",
+  "b4_script_options": {
+    "1": "A-IV, B-I, C-III, D-II",
+    "2": "A-III, B-I, C-II, D-IV",
+    "3": "A-IV, B-I, C-II, D-III",
+    "4": "A-I, B-IV, C-II, D-III\nAldehydes, Ketones and Carboxylic Acids"
+  },
+  "figure_path": "papers/figures/Q-000353.png",
+  "figure_source_url": "https://cdn.mathpix.com/snip/images/_OVR8_sPB8kalkWmJr3g4HByA7PCrojPqKHcmYRSVAI.original.fullsize.png",
+  "figure_source_row": "NEET-UG_pyq_2024.xlsx#68",
+  "figure_match_confidence": "high",
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "organic",
+  "b6_answer": null,
+  "b6_agrees_with_key": null
+}

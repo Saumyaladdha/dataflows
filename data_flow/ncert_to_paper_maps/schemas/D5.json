@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/D5.json",
+  "title": "D5 agent output (d5-older-line-finder)",
+  "description": "Section 12/D5 'Agent output' line and .claude/agents/d5-older-line-finder.md's worked output shape: {\"older\": [{\"for\",\"passage_id\",\"exact_line\"}], \"none_for\": [...], \"note\"}. The `for` labels are the same labels D4 used (spec 12/D5 Agent output: 'same `for` labels as D4'). Every cross-check that needs the per-item input context — exact_line found WORD FOR WORD in the OLDER edition (spec 12/D5 Checks), passage_id among the older passages actually handed over, and the agent file's own 'Never quote the latest edition here' rule — lives in scripts/checks/D5.py, the same split as every other agent-output schema in this build (schemas/D4.json, schemas/C1.json).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["older", "none_for", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "older": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["for", "passage_id", "exact_line"],
+            "additionalProperties": false,
+            "properties": {
+              "for": {
+                "type": "string",
+                "minLength": 1,
+                "description": "What this older line covers, using the SAME label D4 used for that part (e.g. 'answer', 'rule', 'statement B', 'statement C is false', 'List I-P matches List II-2')."
+              },
+              "passage_id": {
+                "type": "string",
+                "minLength": 1,
+                "description": "An OLDER-edition passage id from the input's older_passages only (book-id letter 'O'). checks/D5.py rejects a latest-edition ('L') id outright."
+              },
+              "exact_line": {
+                "type": "string",
+                "minLength": 1,
+                "description": "One continuous span copied character-for-character from that passage. No ellipses (quote_verify.find rejects '...' and '…' outright)."
+              }
+            }
+          }
+        },
+        "none_for": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "The `for` labels for which the older book has no such line at all. A label must not appear in both `older` and `none_for` (checked in scripts/checks/D5.py)."
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

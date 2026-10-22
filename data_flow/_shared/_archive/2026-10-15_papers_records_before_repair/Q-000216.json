@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000216",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:30"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "When light propagates through a material medium of relative permittivity $\\varepsilon$r and relative permeability $\\mu$r, the velocity of light, v is given by (c-velocity of light in vacuum)",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "v = c",
+    "2": "r r v $\\mu$= $\\varepsilon$",
+    "3": "r r v $\\varepsilon$= $\\mu$",
+    "4": "rr cv = $\\varepsilon\\mu$"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "30\nWhen light propagates through a material medium of relative permittivity εr and relative permeability\nµr, the velocity of light, v is given by (c-velocity of light in vacuum)\n(1)\nv = c\n(2)\nr r v µ= ε\n(3)\nr r v ε= µ\n(4)\nrr cv = εµ\nRay Optics and Optical Instruments\n",
+  "b4_script_options": {
+    "1": "v = c",
+    "2": "r r v µ= ε",
+    "3": "r r v ε= µ",
+    "4": "rr cv = εµ\nRay Optics and Optical Instruments"
+  },
+  "official_answer": "4",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "4",
+  "b6_reason": "The correct relation is v = c/sqrt(epsilon_r mu_r), and option 4 is the only choice whose surviving symbols contain c together with both epsilon_r and mu_r.",
+  "b6_working": "v = 1/sqrt(epsilon mu) = 1/sqrt(epsilon_0 epsilon_r mu_0 mu_r) = c/sqrt(epsilon_r mu_r)",
+  "b6_confidence": "low",
+  "b6_note": "Options 2, 3 and 4 arrived badly damaged - the LaTeX fractions and square roots collapsed into fragments like 'rr cv = $\\varepsilon\\mu$', so none can be read as written. Choice made structurally: option 1 (v = c) is wrong in a medium, options 2 and 3 retain no c and so cannot be dimensionally right, leaving option 4. Needs human re-extraction of the option text before this is trusted.",
+  "b6_agrees_with_key": true
+}

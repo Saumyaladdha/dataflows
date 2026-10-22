@@ -1,0 +1,6 @@
+{
+  "kind": "equation",
+  "latex": "\\mathbf{E}(\\mathbf{r}) = \\mathbf{E}_1(\\mathbf{r}) + \\mathbf{E}_2(\\mathbf{r}) + \\ldots + \\mathbf{E}_n(\\mathbf{r}) \\\\ = \\dfrac{1}{4\\pi\\varepsilon_0}\\dfrac{q_1}{r_{1P}^2}\\hat{\\mathbf{r}}_{1P} + \\dfrac{1}{4\\pi\\varepsilon_0}\\dfrac{q_2}{r_{2P}^2}\\hat{\\mathbf{r}}_{2P} + \\ldots + \\dfrac{1}{4\\pi\\varepsilon_0}\\dfrac{q_n}{r_{nP}^2}\\hat{\\mathbf{r}}_{nP} \\\\ \\mathbf{E}(\\mathbf{r}) = \\dfrac{1}{4\\pi\\varepsilon_0}\\sum_{i=1}^{n}\\dfrac{q_i}{r_{iP}^2}\\hat{\\mathbf{r}}_{iP}",
+  "number": "(1.10)",
+  "note": "This crop shows a three-line derivation (the vector sum, its expansion, then the final summation form); all three lines copied in order, separated by line breaks in latex. Only the final line carries the printed equation number (1.10). Trailing text below ('E is a vector quantity...', heading '1.8.2 Physical significance...') falls outside target_box_in_crop and belongs to another block, so excluded."
+}

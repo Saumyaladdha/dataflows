@@ -1,0 +1,75 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [211, 286, 1177, 362],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "We thus see that a very simple picture of electrical conduction reproduces Ohm’s law. We have, of course, made assumptions that t and n are constants, independent of E. We shall, in the next section, discuss the limitations of Ohm’s law."
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Example 3.1 (a) Estimate the average drift speed of conduction electrons in a copper wire of cross-sectional area 1.0 × 10–7 m2 carrying a current of 1.5 A. Assume that each copper atom contributes roughly one conduction electron. The density of copper is 9.0 × 103 kg/m3, and its atomic mass is 63.5 u. (b) Compare the drift speed obtained above with, (i) thermal speeds of copper atoms at ordinary temperatures, (ii) speed of propagation of electric field along the conductor which causes the drift motion."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "Solution"
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "(a) The direction of drift velocity of conduction electrons is opposite to the electric field direction, i.e., electrons drift in the direction of increasing potential. The drift speed vd is given by Eq. (3.18)\nvd  = (I/neA)\nNow, e = 1.6 × 10–19 C, A = 1.0 × 10–7m2, I = 1.5 A. The density of conduction electrons, n is equal to the number of atoms per cubic metre (assuming one conduction electron per Cu atom as is reasonable from its valence electron count of one). A cubic metre of copper has a mass of 9.0 × 103 kg. Since 6.0 × 1023 copper atoms have a mass of 63.5 g,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [265, 1172, 767, 1312],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "which gives,"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [265, 1372, 767, 1496],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "(b) (i) At a temperature T, the thermal speed* of a copper atom of mass M is obtained from [<(1/2) Mv2 > = (3/2) kBT ] and is thus typically of the order of / B k T M , where kB is the Boltzmann constant. For copper at 300 K, this is about 2 × 102 m/s. This figure indicates the random vibrational speeds of copper atoms in a conductor. Note that the drift speed of electrons is much smaller, about 10–5 times the typical thermal speed at ordinary temperatures."
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "(ii) An electric field travelling along the conductor has a speed of an electromagnetic wave, namely equal to 3.0 × 108 m s–1 (You will learn about this in Chapter 8). The drift speed is, in comparison, extremely small; smaller by a factor of 10–11."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "* See Eq. (12.23) of Chapter 12 from Class XI book."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Current Electricity",
+    "87",
+    "EXAMPLE 3.1",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null even though this is page 7; the page opens with numbered displayed equation (3.23), which completes the derivation carried over from the previous page, so first_block_continues_from_previous is set true on that evidence. The shaded Example 3.1 box spans blocks 3-10; it is split so the three displayed/fraction equations inside it can be marked needs_special for the special transcriber, rather than emitted as one box block containing scrambled formula characters. Blocks 1, 6 and 8 are: Eq. (3.23); the n = ... fraction together with its '= 8.5 × 1028 m–3' result line; and the vd = ... fraction together with its '= 1.1 × 10–3 m s–1  = 1.1 mm s–1' result line. Per the source note, Greek letters are extracted as Latin look-alikes: block 2 shows 't' where the image prints tau, and block 9 shows the inline square-root of kB T/M as the layer's scrambled fragments '/ B k T M'; characters were copied from the text layer as instructed rather than re-rendered. The vertical margin tab 'EXAMPLE 3.1' running down the right edge of the box was treated as a running label and removed."
+}

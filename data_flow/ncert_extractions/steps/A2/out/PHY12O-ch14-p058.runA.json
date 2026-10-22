@@ -1,0 +1,53 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "APPENDIX  A 3",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "SOME IMPORTANT CONSTANTS"
+    },
+    {
+      "n": 3,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        370,
+        400,
+        1248,
+        1420
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "OTHER USEFUL CONSTANTS"
+    },
+    {
+      "n": 5,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        376,
+        1512,
+        1236,
+        1925
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Appendices",
+    "Answers",
+    "501",
+    "2022-23"
+  ],
+  "note": "BOOK BACK MATTER, NOT CHAPTER 14 CONTENT. This is printed page 501, the second page of the book's APPENDICES: 'APPENDIX  A 3 / SOME IMPORTANT CONSTANTS' with its table, then 'OTHER USEFUL CONSTANTS' with its table. An appendix is back matter and MUST NOT be used as chapter-14 passage text; no appendix heading or constants-table cell may be treated as chapter prose. It is transcribed only because the A2 schema rejects a zero-block page and so the page-coverage check can see the page was deliberately accounted for rather than dropped. previous_page_last_block was null; continuation was judged from the p057 output I wrote immediately before this one, which ended with the completed APPENDIX  A 2 table. This page opens a new numbered appendix with its own heading, so first_block_continues_from_previous is false. This is the LAST page of the PHY12O chapter-14 page range, and the whole stretch p045-p058 is back matter: p045-p049 answers, p050-p051 bibliography, p052-p056 index (printed 520-524), p057-p058 appendices (printed 500-501) - so the file's printed-page order is not monotonic, the appendices being bound in the file after the index. Neither table's cell contents appear in the text layer, so both tables are marked needs_special with bounding boxes in image pixels of the 1624x2190 page image, for the special transcriber: n=3 is the 'Some important constants' table (Speed of light in vacuum c 2.9979 x 10^8 m s^-1 ... Permeability of free space) and n=5 the 'Other useful constants' table (Mechanical equivalent of heat ... Acceleration due to gravity (sea level, at equator) g 9.78049 m s^-2). Headings copied as the text layer spells them, including the double space in 'APPENDIX  A 3'; the printed heading sets 'OTHER  USEFUL  CONSTANTS' with wide word spacing, which the text layer renders with single spaces and which is what I copied. The header banner 'Appendices', the page number 501 and the reprint year 2022-23 are furniture and are listed as removed, as is the string 'Answers', which the text layer emits between the page number and 'Appendices' but which is not visible anywhere on the page - it is a leftover from the book's back-matter banner template, furniture either way, and is listed so page coverage can see it was dealt with deliberately. Nothing continues onto a next page; the bottom of the page below the second table is blank. No paragraphs, figures or equations on this page."
+}

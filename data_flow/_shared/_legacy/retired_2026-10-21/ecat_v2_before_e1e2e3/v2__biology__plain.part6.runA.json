@@ -1,0 +1,160 @@
+{
+  "group": "v2__biology__plain.part6",
+  "ratings": [
+    {
+      "question_id": "2015_A#q079",
+      "concept": "Leghaemoglobin as the oxygen scavenger of the root nodule, keeping free O2 away from oxygen-sensitive nitrogenase",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "cytochrome is the other haem protein of the same chapter: it binds and passes electrons to O2 in respiration instead of sequestering it in the nodule"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "3",
+          "route": "xanthophyll is a fact from the adjacent topic of accessory photosynthetic pigments, offered where a coloured O2-binding nodule protein is wanted"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "4",
+          "route": "carotene is likewise an accessory photosynthetic pigment from the adjacent pigment topic, with no role in the nodule"
+        }
+      ],
+      "reason": "This question requires one stored protective function inside the root nodule, demonstrated by the stem \"inactivation of nitrogenase by oxygen poisoning prevented by :\" with Leghaemoglobin among four pigment or haem names.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q080",
+      "concept": "Graft rejection as a T-lymphocyte (cell-mediated) response, distinguished from the humoral, innate and passive arms of immunity",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "names the innate response, the non-specific first line of defence, which is a different member of the same set of immune-response categories"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "names the humoral response, the antibody-mediated half of acquired immunity, the nearest other member of the same set"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "names passive immunity, which is ready-made antibody transferred from outside rather than any response the recipient mounts"
+        }
+      ],
+      "reason": "This question requires one stored assignment of a clinical event to an immune mechanism, demonstrated by the stem \"Grafted kidney may be rejected in a patient due to\" with four named immune-response categories as the options.",
+      "note": "All four options are real immune-response categories from the same NCERT chapter, so no securely-known fact strikes any of them out; that is why strategy_available is empty here."
+    },
+    {
+      "question_id": "2015_A#q081",
+      "concept": "Uricotelic excretion in cockroach: nitrogenous waste travels in the haemolymph as potassium urate and is removed by the Malpighian tubules",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "ammonia is the excretory form of the ammonotelic animals (bony fishes, aquatic invertebrates), a different member of the same excretory-pattern set"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "urea is the excretory form of the ureotelic animals (mammals, terrestrial amphibians), another member of the same set"
+        }
+      ],
+      "reason": "This question requires one stored excretory product for a named animal, demonstrated by the stem \"The body cells in cockroach discharge their nitrogenous waste in the haemolymph mainly in the Form of :\" with Potassium urate among three other nitrogenous or mineral products.",
+      "note": "Option 1, Calcium carbonate, could not be tied to a named competing fact in this context, so per rulebook rule 4 it carries no trap rather than a guessed one."
+    },
+    {
+      "question_id": "2015_A#q082",
+      "concept": "Filiform apparatus: the thickened cell-wall projections of the synergids that guide the pollen tube into the embryo sac",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "the generative cell is a cell of the male gametophyte inside the pollen grain, which divides to give the two male gametes — a different named cell of the same reproduction chapter"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "the nucellar embryo is the apomictic embryo arising from nucellar tissue, another named structure of the same chapter"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "the aleurone cell is the protein-rich outer endosperm layer of a cereal grain, another named cell of the same chapter"
+        }
+      ],
+      "reason": "This question requires one stored structure-to-cell association, demonstrated by the stem \"Filiform apparatus is characteristic feature of:\" with Synergids among three other named cells of the embryo sac and seed.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q083",
+      "concept": "Acid rain: SO2 and NO2 dissolve and oxidise to sulphuric and nitric acid, lowering rainwater pH",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "A sulphur oxide must be present for sulphuric acid to form, and that one fact strikes options 1 (O3 and dust) and 4 (CO2 and CO), which contain no sulphur.",
+      "traps": [
+        {
+          "label": "neighbouring_fact",
+          "option": "1",
+          "route": "names ozone and dust, the pollutants of the adjacent topics of ozone depletion and particulate pollution rather than of rainwater acidity"
+        },
+        {
+          "label": "half_true",
+          "option": "3",
+          "route": "\"SO3 and CO\" gets an acid-forming sulphur oxide right and fails on carbon monoxide, which forms no acid in rainwater"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "4",
+          "route": "names the CO2/CO pair of the adjacent topic of greenhouse warming and incomplete combustion"
+        }
+      ],
+      "reason": "This question requires the stored identity of the two acid-forming atmospheric oxides, demonstrated by the stem \"Acid rain is caused by increase in the atmospheric concentration of :\" and the key option \"SO2 and NO2\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q084",
+      "concept": "Parts of a monocot (wheat) embryo: the scutellum is the shield-shaped single cotyledon, against coleoptile, coleorrhiza and epiblast",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "the coleoptile is the protective sheath enclosing the plumule of the same embryo, a different named part of the same structure"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "the epiblast is the small vestigial projection opposite the scutellum, another named part of the same embryo"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "the coleorrhiza is the sheath enclosing the radicle, another named part of the same embryo"
+        }
+      ],
+      "reason": "This question requires one stored name for a named embryo part, demonstrated by the stem \"The wheat grain has an embryo with one large, shield-shaped cotyledon known as :\" with the other three monocot-embryo sheaths as the options.",
+      "note": "Option 4, the key, is printed in our record as \"Scatellum\"; the term is scutellum. A single transposed vowel in the key option does not stop the question being answered or the key being identified, so it is recorded here rather than as source_damage_artifact, and the question is tagged as printed."
+    }
+  ],
+  "group_note": "All six were read as structure=plain and all six are plain_mcq on E1, so the grouping holds and no member sits apart. Every one of them is the same demand on the same reading: a stem naming a term, event or effect, with four options that are other named members of the same taught set, so all six carry recall + single_step and the reasons differ only in which association is stored. This uniformity is deliberate — v1's failure was giving equal demands unequal labels — and the one field that does vary is justified item by item: elimination is carried by q083 alone, where a single securely-known fact (a sulphur oxide must be present) strikes two named options, while q079, q080, q081, q082 and q084 offer four same-kind terms from the same chapter, so no shortcut could be demonstrated and the label was withheld rather than asserted. On E5 the common device across the packet is other_one_fact, and its entries always name the member the distractor belongs to; neighbouring_fact is used instead where the distractor comes from a different family altogether (the photosynthetic pigments in q079, the ozone and greenhouse topics in q083), and half_true where one half of a printed pair holds (q083 option 3). One distractor (q081 option 1, Calcium carbonate) could not be tied to a route and was left untagged on purpose."
+}

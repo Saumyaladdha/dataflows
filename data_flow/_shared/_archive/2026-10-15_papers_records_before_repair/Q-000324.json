@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000324",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:198"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Identify the correct option (A), (B), (C), (D) with respect to spermatogenesis.",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "FSH, Leydig cells, Sertoli cells, spermiogenesis.",
+    "2": "ICSH, Interstitial cells, Leydig cells, spermiogenesis.",
+    "3": "FSH, Sertoli cells, Leydig cells, spermatogenesis.",
+    "4": "ICSH, Leydig cells, Sertoli cells, spermatogenesis."
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "198\nIdentify the correct option (A), (B), (C), (D) with respect to spermatogenesis.\n(1)\nFSH, Leydig cells, Sertoli cells,\nspermiogenesis.\n(2)\nICSH, Interstitial cells, Leydig cells,\nspermiogenesis.\n(3)\nFSH, Sertoli cells, Leydig cells,\nspermatogenesis.\n(4)\nICSH, Leydig cells, Sertoli cells,\nspermatogenesis.\nHuman Reproduction\n",
+  "b4_script_options": {
+    "1": "FSH, Leydig cells, Sertoli cells,\nspermiogenesis.",
+    "2": "ICSH, Interstitial cells, Leydig cells,\nspermiogenesis.",
+    "3": "FSH, Sertoli cells, Leydig cells,\nspermatogenesis.",
+    "4": "ICSH, Leydig cells, Sertoli cells,\nspermatogenesis.\nHuman Reproduction"
+  },
+  "official_answer": "1",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "unsure",
+  "b6_reason": "The stem asks to identify labels (A), (B), (C), (D) but the labelled flowchart/diagram that defines those blanks is not present in the input, so there is nothing to match the option strings against.",
+  "b6_working": "",
+  "b6_confidence": "low",
+  "b6_note": "Damaged by upstream extraction: the referenced figure is absent and the stem carries no statements or lists. All four options are plausible hormone/cell/term sequences in isolation; which one is correct depends entirely on the missing diagram's label order. Not solvable as given.",
+  "b6_agrees_with_key": false
+}

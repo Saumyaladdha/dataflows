@@ -1,0 +1,160 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/B3.json",
+  "title": "B3 agent output (b3-question-reader)",
+  "description": "Section 10/B3 'Agent output' line and the b3-question-reader agent file (Appendix B), including its worked examples (excluded page-footer/watermark fragments, placeholder image-option text, unreadable scrambled notation). DISCREPANCY: Section 10/B3's own 'Agent output' line includes an `option_images` field (`{\"1\": \"<crop path or null>\", ...}`), but the agent file's actual worked output example (refined 2026-10-11) has no `option_images` key and its Input section receives no separate option-crop paths either. Read as: B2's SCRIPT half already crops image options to papers/questions/<PAPER>/<QNO>_opt<k>.png (SPEC.md Section 5.8) before B3 runs, so `option_images` on the merged question record is populated by SCRIPT from those paths, not echoed by this agent. This schema matches the agent file's actual shape (no `option_images` key) as the more authoritative, recently-refined source -- see config/steps.yaml's B3 entry for the full note. Also note: `negative_words_seen` here is restricted to the agent file's own 5-word list (NOT, EXCEPT, INCORRECT, FALSE, WRONG); Section 13/E2's negative-word guard expects a 6th word, MISMATCH, that B3 is never told it may emit -- a separate flagged gap, also noted in config/steps.yaml.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "stem_en",
+        "statements",
+        "list_i",
+        "list_ii",
+        "options_en",
+        "structure",
+        "has_figure",
+        "figure_bbox",
+        "negative_words_seen",
+        "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "stem_en": {
+          "type": "string"
+        },
+        "statements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/labelled_text"
+          }
+        },
+        "list_i": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/labelled_text"
+          }
+        },
+        "list_ii": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/labelled_text"
+          }
+        },
+        "options_en": {
+          "type": "object",
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "description": "Each option has text (possibly a placeholder like '(Image option -- will be added soon)' for an unpreserved image option) -- never both empty."
+        },
+        "structure": {
+          "type": "string",
+          "enum": [
+            "plain",
+            "statements",
+            "list",
+            "match",
+            "table",
+            "assertion_reason",
+            "statement_i_ii"
+          ]
+        },
+        "has_figure": {
+          "type": "boolean"
+        },
+        "figure_bbox": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 4,
+              "maxItems": 4
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Box of the figure inside the image, if any; null when has_figure is false."
+        },
+        "negative_words_seen": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^(?:[Nn][Oo][Tt]|[Ee][Xx][Cc][Ee][Pp][Tt]|[Ii][Nn][Cc][Oo][Rr][Rr][Ee][Cc][Tt]|[Ff][Aa][Ll][Ss][Ee]|[Ww][Rr][Oo][Nn][Gg])$"
+          },
+          "description": "Agent file's 5-word allowed set (see schema description re: the Section 13/E2 MISMATCH gap), accepted in ANY case. Case-insensitive since 2026-10-13: this was a strict uppercase enum, while the agent file told the agent to list the words '(as printed)' -- and NEET prints them lowercase in the statement_i_ii shells ('Statement I is correct but Statement II is false.'). The agent obeyed its instruction, the schema rejected it, and two correct real outputs sat blocked (NEET-2023-MAIN-E1-q0152 and -q0160). Case carries no information here: this is a controlled vocabulary, and both consumers -- checks/E2.py field_negatives and describe_tags.py negation -- already upper-case before comparing, so nothing downstream can tell the difference. The agent file now says 'whatever case it is printed in' rather than '(as printed)'."
+        },
+        "note": {
+          "type": "string"
+        },
+        "option_boxes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "propertyNames": {
+            "pattern": "^[1-4]$"
+          },
+          "description": "WHERE EACH PICTURE OPTION SITS, as {\"1\": [x0,y0,x1,y1], ...} in the question crop's pixel space -- the same space as `figure_bbox`. Fill this ONLY when the options themselves are drawings and `options_en` therefore carries `[structure diagram]` placeholders. One box enclosing all four is not enough: the export then shows a tall strip of four structures above four placeholder lines, and a reader has to count down the strip to work out which drawing is option 3. Boxed per option, each drawing is printed beside its own number. Where one option holds two structures joined by 'and', box them together as that single option."
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": [
+        "error"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "error": {
+          "type": "string"
+        }
+      },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ],
+  "definitions": {
+    "labelled_text": {
+      "type": "object",
+      "required": [
+        "label",
+        "text"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_fixture": "HAND-BUILT TEST DATA, not a real bank record. See tests/fixtures/stage_e/README.md. Exists only because no real canonical record is a match-the-lists question at all, so spec 13/E2's guard row for match-code options is otherwise untested.",
+  "question_id": "FIXTURE-E2-MATCH",
+  "year": 2099,
+  "sitting": "MAIN",
+  "subject": "Biology",
+  "branch": "unsure",
+  "structure": "match",
+  "has_figure": false,
+  "negative_words": ["INCORRECT"],
+  "stem_en": "Match List-I with List-II and select the INCORRECT option from those given below.",
+  "statements": [],
+  "list_i": ["A. Mitochondria", "B. Chloroplast", "C. Ribosome", "D. Lysosome"],
+  "list_ii": ["i. Protein synthesis", "ii. Photosynthesis", "iii. Respiration", "iv. Digestion"],
+  "options_en": {
+    "1": "A-iii, B-ii, C-i, D-iv",
+    "2": "A-ii, B-iii, C-i, D-iv",
+    "3": "A-iii, B-ii, C-iv, D-i",
+    "4": "A-i, B-ii, C-iii, D-iv"
+  },
+  "official_answer": "1",
+  "status": "normal"
+}

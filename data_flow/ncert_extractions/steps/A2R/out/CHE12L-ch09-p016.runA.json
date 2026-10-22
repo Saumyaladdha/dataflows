@@ -1,0 +1,31 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "The benzenediazonium resonance figure has lost almost all of itself. The book draws FOUR canonical structures, each a full benzene ring carrying the diazonium group, joined by three double-headed resonance arrows, with the ring + charge on the ortho, meta and para carbons and curved arrows showing the delocalisation. The render shows NONE of the four rings, none of the three resonance arrows and none of the ring charges - only the four N(+)=N(-) head groups survive as a row of tiny magenta fragments floating in white space, and even those are sliced through along their baselines so the N letters print as half-height stubs. Everything below the nitrogens is white.",
+      "where": "the resonance figure between 'The stability of arenediazonium ion is explained on the basis of resonance.' and the 9.7 section heading"
+    },
+    {
+      "kind": "duplicated",
+      "what": "The folio prints the page number twice: 'Chemistry 274' in grey followed by the yellow boxed '274'. The book prints 'Chemistry' and the number once, in the box.",
+      "where": "folio, bottom left"
+    },
+    {
+      "kind": "formatting",
+      "what": "The diazonium formulas in the body text lose their superscripts and subscripts and are set flat: the book prints R-N2+X- with subscript 2 and superscript charges as a display fragment, and likewise N2+ group, C6H5N2+Cl-. The render prints 'R-N2+X-', 'N2+ group' and 'C6H5N2+Cl-' as plain inline text, although the later 'C6H5N2+HSO4-' in the same sentence does keep its subscripts - so the setting is inconsistent within one paragraph.",
+      "where": "the 'II. DIAZONIUM SALTS' paragraph"
+    },
+    {
+      "kind": "misplaced",
+      "what": "In the Intext Questions box the part labels (i), (ii) and (iii) of 9.4 and (i), (ii) of 9.5 are pulled out to the left margin and set bold in the same column as the question numbers 9.4-9.8, so each part reads as a question in its own right rather than as a part indented beneath its stem. The book indents them under the stem in plain type. The two parts of 9.5, printed side by side on one line in the book, are also split onto separate lines.",
+      "where": "Intext Questions box, top of page"
+    },
+    {
+      "kind": "formatting",
+      "what": "The 'Intext Questions' heading is set as plain bold roman; the book sets it in the chapter's blue script display face with a rule beneath. The 'II. DIAZONIUM SALTS' heading is likewise set as a small grey italic subhead where the book sets it bold roman and larger.",
+      "where": "top of the Intext Questions box and above the diazonium salts paragraph"
+    }
+  ],
+  "note": "Compared the Intext Questions box question by question, the two diazonium paragraphs, the resonance figure, the 9.7 section heading and the diazotisation equation. On the specific question asked: the benzenediazonium resonance figure does NOT show all four rings - it shows no rings at all, only the clipped nitrogen head groups, and this is the worst defect on the eight pages reviewed. All five Intext Questions (9.4-9.8) are present with their full text and all their parts, the 9.7 'Method of Preparation of Diazoniun Salts' marginal heading is present in its script face (spelling 'Diazoniun' as in the book), the diazotisation equation C6H5NH2 + NaNO2 + 2HCl -> C6H5N2+Cl- + NaCl + 2H2O is complete with its 273-278K arrow label, and the folio is present though doubled. I could not tell whether the figure was cropped at render time or the ring artwork failed to load, since what remains is a clean horizontal slice."
+}

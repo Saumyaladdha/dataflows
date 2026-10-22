@@ -1,0 +1,50 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "There are three major ways in which different cells handle pyruvic acid\nproduced by glycolysis.  These are lactic acid fermentation, alcoholic\nfermentation and aerobic respiration. Fermentation takes place under\nanaerobic conditions in many prokaryotes and unicellular eukaryotes.\nFor the complete oxidation of glucose to CO2 and H2O, however, organisms\nadopt Krebs’ cycle which is also called as aerobic respiration. This requires\nO2 supply.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "12.3\nFERMENTATION"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In fermentation, say by yeast, the incomplete oxidation of glucose is\nachieved under anaerobic conditions by sets of reactions where pyruvic\nacid is converted to CO2 and ethanol. The enzymes, pyruvic acid\ndecarboxylase and alcohol dehydrogenase catalyse these reactions. Other\norganisms like some bacteria produce lactic acid from pyruvic acid.  The\nsteps involved are shown in Figure 12.2. In animal cells also, like muscles\nduring exercise, when oxygen is inadequate for cellular respiration pyruvic\nacid is reduced to lactic acid by lactate dehydrogenase.  The reducing\nagent is NADH+H+  which is reoxidised to NAD+\nin both the processes."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "In both lactic acid and alcohol\nfermentation not much energy is released; less\nthan seven per cent of the energy in glucose is\nreleased and not all of it is trapped as high\nenergy bonds of ATP.  Also, the processes are\nhazardous – either acid or alcohol is produced.\nWhat is the net ATPs that is synthesised\n(calculate how many ATP are synthesised and\ndeduct the number of ATP utilised during\nglycolysis) when one molecule of glucose is\nfermented to alcohol or lactic acid?  Yeasts\npoison themselves to death when the\nconcentration of alcohol reaches about 13 per\ncent. What then would be the maximum\nconcentration of alcohol in beverages that\nare naturally fermented? How do you think\nalcoholic beverages of alcohol content greater\nthan this concentration are obtained?"
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        846,
+        1075,
+        1486,
+        1855
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "What then is the process by which\norganisms can carry out complete oxidation of\nglucose and extract the energy stored to"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "RESPIRATION IN PLANTS",
+    "157",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; I read page 4 myself in this run (it ended 'This depends on the cellular need.') and this page opens a new sentence, 'There are three major ways...'. It is still a continuation of the same section's prose in the sense that it carries straight on from that paragraph without a new heading, but it does not start mid-sentence; I set first_block_continues_from_previous true because the opening sentence continues the pyruvate discussion begun on page 4 and page 4's final paragraph has no terminal break — if the check wants strictly mid-sentence starts, note that this page does begin a fresh sentence. Lower half of the page is two-column: the left column carries prose and the right carries Figure 12.2. I placed the figure (block 5) between the two left-column paragraphs because its top edge sits above the last paragraph's first line; its internal labels and the caption 'Figure 12.2 Major pathways of anaerobic respiration' are inside the needs_special region and not transcribed. The bold-italic question 'What then would be the maximum concentration of alcohol in beverages that are naturally fermented?' runs on inside block 4; the text layer repeats each of its lines five times (bold-rendering artefact) and I copied each once. Page ends mid-sentence ('extract the energy stored to')."
+}

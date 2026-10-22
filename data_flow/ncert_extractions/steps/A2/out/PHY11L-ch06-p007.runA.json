@@ -1,0 +1,136 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "With the x–and y–axes chosen as shown in Fig. 6.9, the coordinates of points O, A and B forming the equilateral triangle are respectively (0,0), (0.5,0), (0.25,0.25 3 ). Let the masses 100 g, 150g and 200g be located at O, A and B be respectively. Then,",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        308,
+        449,
+        860,
+        714
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        308,
+        730,
+        866,
+        898
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The centre of mass C is shown in the figure. Note that it is not the geometric centre of the triangle OAB. Why?"
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Example 6.2  Find the centre of mass of a triangular lamina."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Answer  The lamina (∆LMN) may be subdivided into narrow strips each parallel to the base (MN) as shown in Fig. 6.10"
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        314,
+        1304,
+        941,
+        1672
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "By symmetry each strip has its centre of mass at its midpoint. If we join the midpoint of all the strips we get the median LP. The centre of mass of the triangle as a whole therefore, has to lie on the median LP. Similarly, we can argue that it lies on the median MQ and NR. This means the centre of mass lies on the point of"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "concurrence of the medians, i.e. on the centroid G of the triangle.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "Example 6.3 Find the centre of mass of a uniform L-shaped lamina (a thin flat plate) with dimensions as shown. The mass of the lamina is 3 kg."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Answer  Choosing the X and Y axes as shown in Fig. 6.11 we have the coordinates of the vertices of the L-shaped lamina as given in the figure. We can think of the L-shape to consist of 3 squares each of length 1m. The mass of each square is 1kg, since the lamina is uniform. The centres of mass C1, C2 and C3 of the squares are, by symmetry, their geometric centres and have coordinates (1/2,1/2), (3/2,1/2), (1/2,3/2) respectively. We take the masses of the squares to be concentrated at these points. The centre of mass of the whole L shape (X, Y) is the centre of mass of these mass points."
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        974,
+        974,
+        1601,
+        1493
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Hence"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        985,
+        1596,
+        1623,
+        1688
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        985,
+        1699,
+        1623,
+        1791
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "The centre of mass of the L-shape lies on the line OD. We could have guessed this without calculations. Can you tell why? Suppose, the three squares that make up the L shaped lamina"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "98",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null, so continuation was judged from the page itself: the page is a continuation of the Answer to Example 6.1 begun on the previous page, but its first block opens with a complete new sentence (\"With the x–and y–axes chosen as shown in Fig. 6.9, ...\"), so first_block_continues_from_previous is false by the mid-sentence/mid-table/mid-box test. No numbered section side-headings occur on this page, so the layered-outline-font heading duplication artifact did not arise. The decorative blue end-of-example and start-of-example triangle markers (extracted as \"⊳\") were treated as ornament and omitted from block text. Inline mathematics in block 1 is copied as the text layer holds it: \"(0.25,0.25 3 )\" is printed on the page as (0.25, 0.25√3). Subscripts in block 11 are extracted flat, so C1, C2, C3 are printed on the page as C with subscripts 1, 2, 3. Justified-text line padding in the text layer (e.g. \"figure.  We  can  think  of  the\") was normalised to single spaces. Image dimensions used for bboxes: 1826 x 2163 pixels. Figure bboxes include the \"Fig. 6.10\" / \"Fig. 6.11\" captions. Pages carry an © NCERT \"not to be republished\" watermark, which produced the stray \"u u\" characters near the start of the text layer; these were not transcribed."
+}

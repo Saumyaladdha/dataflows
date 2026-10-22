@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on cyclohexanone self-aldol giving the beta-hydroxy ketone which dehydrates on heating to the alpha,beta-unsaturated cyclohexylidene-cyclohexanone, an aldol-condensation fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Biology\" and the 32-chapter Biology closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180. A Chemistry question was handed the Biology list, so no correct code exists in it. Expected chapter: 'Aldehydes, Ketones, and Carboxylic Acids' (CHENEETENGAKC: aldol condensation), not offered. The options are drawn structures and are almost entirely lost in the text layer, but the stem names cyclohexanone and aldol condensation explicitly."
+}

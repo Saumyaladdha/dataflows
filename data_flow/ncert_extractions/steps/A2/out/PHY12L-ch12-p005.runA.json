@@ -1,0 +1,57 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The magnitude of this force is",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [487, 312, 1442, 395],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "where r is the distance between the α-particle and the nucleus. The force\nis directed along the line joining the α-particle and the nucleus. The\nmagnitude and direction of the force on an α-particle continuously\nchanges as it approaches the nucleus and recedes away from it."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "12.2.1  Alpha-particle trajectory"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The trajectory traced by an α-particle depends on the impact parameter,\nb of collision. The impact parameter is the perpendicular distance of the\ninitial velocity vector of the α-particle from the centre of the nucleus (Fig.\n12.4). A given beam of α-particles has a\ndistribution of impact parameters b, so that\nthe beam is scattered in various directions\nwith different probabilities (Fig. 12.4). (In\na beam, all particles have nearly same\nkinetic energy.) It is seen that an α-particle\nclose to the nucleus (small impact\nparameter) suffers large scattering. In case\nof head-on collision, the impact parameter\nis minimum and the α-particle rebounds\nback (θ ≅ π). For a large impact parameter,\nthe α-particle goes nearly undeviated and\nhas a small deflection (θ ≅ 0)."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [148, 763, 837, 1325],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The fact that only a small fraction of the\nnumber of incident particles rebound back\nindicates that the number of α-particles\nundergoing head on collision is small. This,\nin turn, implies that the mass and positive charge of the atom is\nconcentrated in a small volume. Rutherford scattering therefore, is a\npowerful way to determine an upper limit to the size of the nucleus."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Example 12.1 In the Rutherford’s nuclear model of the atom, the\nnucleus (radius about 10⁻¹⁵ m) is analogous to the sun about which\nthe electron move in orbit (radius ≈ 10⁻¹⁰ m) like the earth orbits\naround the sun. If the dimensions of the solar system had the same\nproportions as those of the atom, would the earth be closer to or\nfarther away from the sun than actually it is? The radius of earth’s\norbit is about 1.5 × 10¹¹ m. The radius of sun is taken as 7 × 10⁸ m.\nSolution The ratio of the radius of electron’s orbit to the radius of\nnucleus is (10⁻¹⁰ m)/(10⁻¹⁵ m) = 10⁵, that is, the radius of the electron’s\norbit is 10⁵ times larger than the radius of nucleus. If the radius of\nthe earth’s orbit around the sun were 10⁵ times larger than the radius\nof the sun, the radius of the earth’s orbit would be 10⁵ × 7 × 10⁸ m =\n7 × 10¹³ m. This is more than 100 times greater than the actual\norbital radius of earth. Thus, the earth would be much farther away\nfrom the sun.\nIt implies that an atom contains a much greater fraction of empty\nspace than our solar system does."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "294",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read p004 immediately before: it ended with a completed sentence and paragraph ('...positively charged nucleus.'), and this page opens a fresh sentence ('The magnitude of this force is'), so block 1 does not continue. Eq. (12.1) is needs_special at n=2 (its number '(12.1)' sits in the right margin inside the bbox). Fig. 12.4 with its FIGURE 12.4 caption is one needs_special block at n=6, placed where the left-column art interrupts the prose that wraps around it. The Example 12.1 grey panel is one box block (n=8), including its 'Solution' part; the vertical blue spine tab reading 'EXAMPLE 12.1' is box decoration, transcribed neither as a block nor as a removed header. Text-layer discrepancies corrected from the image: Greek letters are flattened to Latin — alpha to 'a' throughout, theta to 'q', pi to 'p', and '»' stands for the approximately-equal sign (printed α, θ, π, ≅/≈); powers of ten lose superscripts ('10–15', '105', '1011', '108', '1013' in the layer; printed 10⁻¹⁵, 10⁵, 10¹¹, 10⁸, 10¹³); the multiplication sign appears as '´' in the layer (printed ×); and the displayed Eq. 12.1 is flattened to a broken token stream, which is why it is left to the special transcriber. Page ends with a completed sentence."
+}

@@ -1,0 +1,71 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 12.2 In a Geiger-Marsden experiment, what is the distance\nof closest approach to the nucleus of a 7.7 MeV α-particle before it\ncomes momentarily to rest and reverses its direction?\nSolution The key idea here is that throughout the scattering process,\nthe total mechanical energy of the system consisting of an α-particle\nand a gold nucleus is conserved. The system’s initial mechanical\nenergy is Ei, before the particle and nucleus interact, and it is equal\nto its mechanical energy Ef when the α-particle momentarily stops.\nThe initial energy Ei is just the kinetic energy K of the incoming\nα- particle. The final energy Ef is just the electric potential energy U\nof the system. The potential energy U can be calculated from\nEq. (12.1).\nLet d be the centre-to-centre distance between the α-particle and\nthe gold nucleus when the α-particle is at its stopping point. Then\nwe can write the conservation of energy Ei = Ef as",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [170, 818, 560, 895],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Thus the distance of closest approach d is given by"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [170, 940, 360, 1010],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "The maximum kinetic energy found in α-particles of natural origin is\n7.7 MeV or 1.2 × 10⁻¹² J. Since 1/4πε₀ = 9.0 × 10⁹ N m²/C². Therefore\nwith e = 1.6 × 10⁻¹⁹ C, we have,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [170, 1140, 730, 1215],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "   = 3.84 × 10⁻¹⁶ Z m\nThe atomic number of foil material gold is Z = 79, so that\nd (Au) = 3.0 × 10⁻¹⁴ m = 30 fm. (1 fm (i.e. fermi) = 10⁻¹⁵ m.)\nThe radius of gold nucleus is, therefore, less than 3.0 × 10⁻¹⁴ m. This\nis not in very good agreement with the observed result as the actual\nradius of gold nucleus is 6 fm. The cause of discrepancy is that the\ndistance of closest approach is considerably larger than the sum of\nthe radii of the gold nucleus and the α-particle. Thus, the α-particle\nreverses its motion without ever actually touching the gold nucleus."
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "12.2.2  Electron orbits"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The Rutherford nuclear model of the atom which involves classical\nconcepts, pictures the atom as an electrically neutral sphere consisting\nof a very small, massive and positively charged nucleus at the centre\nsurrounded by the revolving electrons in their respective dynamically\nstable orbits. The electrostatic force of attraction, Fe between the revolving\nelectrons and the nucleus provides the requisite centripetal force  (Fc)  to\nkeep them in their orbits. Thus, for a  dynamically stable orbit in a\nhydrogen atom"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [175, 1935, 1130, 2055],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Atoms",
+    "295",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read p005 immediately before: it ended with the completed Example 12.1 box ('...than our solar system does.'), and this page opens a new worked example, so nothing continues across the break. The Example 12.2 grey panel is one logical box but contains three display equations, so I split it into alternating box-text blocks (n=1, 3, 5, 7) and needs_special equation blocks (n=2, 4, 6) rather than discarding its prose; the vertical blue spine tab 'EXAMPLE 12.2' is box decoration, neither blocked nor listed as a removed header. n=10 covers both the 'Fe = Fc' line and the numbered display Eq. (12.2) beneath it, whose number sits in the right margin inside the bbox. Text-layer discrepancies corrected from the image: Greek letters flattened to Latin (alpha to 'a', pi to 'p', epsilon-zero to 'e0'; printed α, π, ε₀) and all super/subscripts dropped — the layer gives '10–12', '109', 'm2/C2', '10–19', '10–16', '10–14', '10–15' for the printed 10⁻¹², 10⁹, m²/C², 10⁻¹⁹, 10⁻¹⁶, 10⁻¹⁴, 10⁻¹⁵, and italic subscripts on Ei, Ef, Fe, Fc are not marked; I kept those symbol names in their flat form as printed letters. Display equations in the layer are broken token streams, left to the special transcriber. Page ends with the completed numbered Eq. (12.2)."
+}

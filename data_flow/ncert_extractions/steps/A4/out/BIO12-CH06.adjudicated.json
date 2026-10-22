@@ -1,0 +1,171 @@
+{
+  "choice": "combined",
+  "value": {
+    "subtopics": [
+      {
+        "name": "What is evolution? Evolutionary biology",
+        "from_heading": "",
+        "passages": [
+          "BIO12L-CH06-P01",
+          "BIO12L-CH06-P02",
+          "BIO12L-CH06-P03",
+          "BIO12L-CH06-P04"
+        ]
+      },
+      {
+        "name": "Origin of life: origin of the universe and early theories",
+        "from_heading": "6.1",
+        "passages": [
+          "BIO12L-CH06-P05",
+          "BIO12L-CH06-P06",
+          "BIO12L-CH06-P07"
+        ]
+      },
+      {
+        "name": "Chemical evolution and the first forms of life",
+        "from_heading": "6.1",
+        "passages": [
+          "BIO12L-CH06-P08",
+          "BIO12L-CH06-P09",
+          "BIO12L-CH06-P10"
+        ]
+      },
+      {
+        "name": "Theory of special creation and Darwin's theory of evolution",
+        "from_heading": "6.2",
+        "passages": [
+          "BIO12L-CH06-P11"
+        ]
+      },
+      {
+        "name": "Palaeontological evidence: fossils",
+        "from_heading": "6.3",
+        "passages": [
+          "BIO12L-CH06-P12"
+        ]
+      },
+      {
+        "name": "Embryological support for evolution",
+        "from_heading": "6.3",
+        "passages": [
+          "BIO12L-CH06-P13"
+        ]
+      },
+      {
+        "name": "Homologous and analogous organs and biochemical similarities",
+        "from_heading": "6.3",
+        "passages": [
+          "BIO12L-CH06-P14",
+          "BIO12L-CH06-P15",
+          "BIO12L-CH06-P16"
+        ]
+      },
+      {
+        "name": "Artificial selection in domesticated plants and animals",
+        "from_heading": "6.3",
+        "passages": [
+          "BIO12L-CH06-P17",
+          "BIO12L-CH06-P18"
+        ]
+      },
+      {
+        "name": "Industrial melanism in moths and resistance to pesticides and antibiotics",
+        "from_heading": "6.3",
+        "passages": [
+          "BIO12L-CH06-P19",
+          "BIO12L-CH06-P20",
+          "BIO12L-CH06-P21",
+          "BIO12L-CH06-P22"
+        ]
+      },
+      {
+        "name": "Adaptive radiation: Darwin's finches and Australian marsupials",
+        "from_heading": "6.4",
+        "passages": [
+          "BIO12L-CH06-P23",
+          "BIO12L-CH06-P24",
+          "BIO12L-CH06-P25",
+          "BIO12L-CH06-P26"
+        ]
+      },
+      {
+        "name": "Biological evolution: natural selection and branching descent",
+        "from_heading": "6.5",
+        "passages": [
+          "BIO12L-CH06-P27",
+          "BIO12L-CH06-P28",
+          "BIO12L-CH06-P29",
+          "BIO12L-CH06-P31",
+          "BIO12L-CH06-P32"
+        ]
+      },
+      {
+        "name": "Lamarck's theory of use and disuse of organs",
+        "from_heading": "6.5",
+        "passages": [
+          "BIO12L-CH06-P30"
+        ]
+      },
+      {
+        "name": "Mechanism of evolution: variation, mutation, genetic drift and speciation",
+        "from_heading": "6.6",
+        "passages": [
+          "BIO12L-CH06-P33"
+        ]
+      },
+      {
+        "name": "Hardy-Weinberg principle, gene pool and allele frequencies",
+        "from_heading": "6.7",
+        "passages": [
+          "BIO12L-CH06-P34",
+          "BIO12L-CH06-P35",
+          "BIO12L-CH06-P36"
+        ]
+      },
+      {
+        "name": "Factors affecting Hardy-Weinberg equilibrium and types of natural selection",
+        "from_heading": "6.7",
+        "passages": [
+          "BIO12L-CH06-P37",
+          "BIO12L-CH06-P38"
+        ]
+      },
+      {
+        "name": "A brief account of evolution: life forms on the geological time scale",
+        "from_heading": "6.8",
+        "passages": [
+          "BIO12L-CH06-P39",
+          "BIO12L-CH06-P40",
+          "BIO12L-CH06-P41",
+          "BIO12L-CH06-P42",
+          "BIO12L-CH06-P44"
+        ]
+      },
+      {
+        "name": "Aquatic mammals and the special evolutionary stories of horse, elephant and dog",
+        "from_heading": "6.8",
+        "passages": [
+          "BIO12L-CH06-P43"
+        ]
+      },
+      {
+        "name": "Origin and evolution of man",
+        "from_heading": "6.9",
+        "passages": [
+          "BIO12L-CH06-P45",
+          "BIO12L-CH06-P46"
+        ]
+      },
+      {
+        "name": "Chapter summary and exercises",
+        "from_heading": "",
+        "passages": [
+          "BIO12L-CH06-P47",
+          "BIO12L-CH06-P48"
+        ]
+      }
+    ]
+  },
+  "why": "Both runs already partition the identical passage universe BIO12L-CH06-P01..P48 (48 passages, contiguous, no duplicates, no empty subtopic in either run), so the failed check is purely about granularity, not coverage. Each run is the finer and better one in different places, so neither alone is right. Taken from A: section 6.1 split into origin of the universe/earth and early theories (P05-P07) versus chemical evolution and the first life forms (P08-P10), and section 6.3 evidence split into fossils (P12), embryology (P13) and homologous/analogous organs plus biochemical similarity (P14-P16) -- these are separately testable items that run B had fused into one block each. Taken from B: section 6.7 split into the Hardy-Weinberg principle/gene pool/allele frequencies (P34-P36) versus the factors that disturb equilibrium and the types of natural selection (P37-P38), and section 6.8 split so that the aquatic-mammal and horse/elephant/dog evolutionary stories (P43) are separate from the geological time scale narrative (P39-P42, P44) -- again separately testable, and run A had fused them. Names are kept verbatim from whichever run contributed the split. from_heading is left as \"\" for the chapter-intro and summary subtopics because the evidence headings list contains only 6.1-6.9, so run A's \"6\" and \"SUMMARY\" assert headings the evidence does not show; every other from_heading is one of the nine listed heading numbers. Verified on the merged list: 19 subtopics, 48 passage references, all unique, exactly equal to the union of both runs' passages (P01-P48 complete, nothing added or dropped), and no subtopic has an empty passage list.",
+  "confidence": "medium"
+}

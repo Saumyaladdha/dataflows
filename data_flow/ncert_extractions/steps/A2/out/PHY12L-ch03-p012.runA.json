@@ -1,0 +1,126 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 3.4 The resistance of the platinum wire of a platinum\nresistance thermometer at the ice point is 5 W and at steam point is\n5.23 W. When the thermometer is inserted in a hot bath, the resistance\nof the platinum wire is 5.795 W. Calculate the temperature of the\nbath.\nSolution R0 = 5 W, R100 = 5.23 W and Rt = 5.795 W\nNow,",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        572,
+        572,
+        1210,
+        826
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "3.9  ELECTRICAL ENERGY, POWER"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Consider a conductor with end points A and B, in which a current I is\nflowing from A to B. The electric potential at A and B are denoted by V(A)\nand V(B) respectively. Since current is flowing from A to B, V(A) > V(B)\nand the potential difference across  AB is V = V(A) – V(B) > 0."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "In a time interval Dt, an amount of charge DQ = I Dt travels from A to\nB. The potential energy of the charge at A, by definition, was Q V(A) and\nsimilarly at B, it is Q V(B). Thus, change in its potential energy DUpot is"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        540,
+        1177,
+        1544,
+        1285
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "If charges moved without collisions through the conductor, their\nkinetic energy would also change so that the total energy is unchanged.\nConservation of total energy would then imply that,"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        572,
+        1407,
+        1544,
+        1447
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "that is,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        572,
+        1503,
+        1544,
+        1542
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Thus, in case charges were moving freely through the conductor under\nthe action of electric field, their kinetic energy would increase as they\nmove. We have, however, seen earlier that on the average, charge carriers\ndo not move with acceleration but with a steady drift velocity. This is\nbecause of the collisions with ions and atoms during transit. During\ncollisions, the energy gained by the charges thus is shared with the atoms.\nThe atoms vibrate more vigorously, i.e., the conductor heats up. Thus,\nin an actual conductor, an amount of energy dissipated as heat in the\nconductor during the time interval Dt is,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        572,
+        1871,
+        1544,
+        1907
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The energy dissipated per unit time is the power dissipated\nP = DW/Dt  and we have,"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        572,
+        1974,
+        1544,
+        2013
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "92",
+    "EXAMPLE 3.4",
+    "Reprint 2026-27"
+  ],
+  "note": "Prose copied character-for-character from text_layer as instructed, so Greek letters appear as the layer's Latin look-alikes (Omega as 'W', Delta as 'D', alpha omitted from the scrambled formula lines); the page image shows the true symbols. Block 1 is the Example 3.4 grey box, whose displayed worked solution (the lines from the fraction after 'Now,' down to '= 345.65 degrees C') is emitted separately as equation block 2 with needs_special, since the text layer scrambles its sub/superscripts below word level. Numbered displayed equations (3.28)-(3.32) are likewise marked needs_special with bboxes in image pixels (image 1700x2160). The 'EXAMPLE 3.4' vertical side tab in the blue margin bar was treated as a running marginal label and removed."
+}

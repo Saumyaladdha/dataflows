@@ -1,0 +1,104 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "At equilibrium:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [382, 308, 772, 355],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [238, 358, 468, 460],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [238, 465, 598, 678],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [238, 690, 830, 1010],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "The equilibrium partial pressures are,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [238, 1048, 818, 1152],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "7.6 APPLICATIONS OF EQUILIBRIUM CONSTANTS"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Before considering the applications of equilibrium constants, let us summarise the important features of equilibrium constants as follows:"
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "1. Expression for equilibrium constant is applicable only when concentrations of the reactants and products have attained constant value at equilibrium state.\n2. The value of equilibrium constant is independent of initial concentrations of the reactants and products.\n3. Equilibrium constant is temperature dependent having one unique value for a particular reaction represented by a balanced equation at a given temperature.\n4. The equilibrium constant for the reverse reaction is equal to the inverse of the equilibrium constant for the forward reaction.\n5. The equilibrium constant K for a reaction is related to the equilibrium constant of the corresponding reaction, whose equation is obtained by multiplying or dividing the equation for the original reaction by a small integer."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Let us consider applications of equilibrium constant to:"
+    },
+    {
+      "n": 12,
+      "kind": "list",
+      "text": "• predict the extent of a reaction on the basis of its magnitude,\n• predict the direction of the reaction, and\n• calculate equilibrium concentrations."
+    },
+    {
+      "n": 13,
+      "kind": "heading",
+      "text": "7.6.1 Predicting the Extent of a Reaction"
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The numerical value of the equilibrium constant for a reaction indicates the extent of the reaction. But it is important to note that an equilibrium constant does not give any information about the rate at which the equilibrium is reached. The magnitude of Kc or Kp is directly proportional to the concentrations of products (as these appear in the numerator of equilibrium constant expression) and inversely proportional to the concentrations of the reactants (these appear in the denominator). This implies that a high value of K is suggestive of a high concentration of products and vice-versa."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "We can make the following generalisations concerning the composition of equilibrium mixtures:"
+    },
+    {
+      "n": 16,
+      "kind": "list",
+      "text": "• If Kc > 103, products predominate over reactants, i.e., if Kc is very large, the reaction proceeds nearly to completion. Consider the following examples:\n(a) The reaction of H2 with O2 at 500 K has a very large equilibrium constant, Kc = 2.4 × 1047.\n(b) H2(g) + Cl2(g) ⇌ 2HCl(g) at 300K has Kc = 4.0 × 1031.\n(c) H2(g) + Br2(g) ⇌ 2HBr (g) at 300 K, Kc = 5.4 × 1018\n• If Kc < 10–3, reactants predominate over products, i.e., if Kc is very small, the reaction proceeds rarely. Consider the following examples:",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "EQUILIBRIUM",
+    "205",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p013 output, which ended inside the pink Problem 7.6 box, and this page opens mid-box with 'At equilibrium:', so first_block_continues_from_previous is true. The pink box closes partway down the left column (blocks 1-7, its display maths marked needs_special); §7.6 then starts in the same column. The numbered features list runs 1-4 in the left column and continues with item 5 at the top of the right column, so I have kept it as one list block (block 10) in printed order, the same way a paragraph straddling a column break is kept whole. In block 16 item (a) the text layer letterspaces 'c o n s t a n t ,' as a justification artifact; I have transcribed it as 'constant,'. The page ends mid-list (block 16's generalisations run on to p015)."
+}

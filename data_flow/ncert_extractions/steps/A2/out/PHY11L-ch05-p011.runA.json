@@ -1,0 +1,141 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "external force F does work + kxc 2 / 2. If the block is moved from an initial displacement xi  to a final displacement xf , the work done by the spring force Ws is",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [245, 382, 839, 458],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Thus the work done by the spring force depends only on the end points.  Specifically, if the block is pulled from xi  and allowed to return to xi ;"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [245, 594, 839, 732],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The work done by the spring force in a cyclic process is zero.  We have explicitly demonstrated that the spring force (i) is position dependent only as first stated by Hooke, (Fs = − kx); (ii) does work which only depends on the initial and final positions, e.g. Eq. (5.17).  Thus, the spring force is a conservative force."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "We define the potential energy V(x) of the spring to be zero when block and spring system is in the equilibrium position.  For an extension (or compression) x  the above analysis suggests that"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [245, 1117, 839, 1183],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "You may easily verify that − dV/dx = −k x, the spring force.  If the block of mass m in Fig. 5.7 is extended to xm and released from rest, then its total mechanical energy at any arbitrary point x, where x lies between – xm  and + xm, will be given by"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [245, 1357, 654, 1428],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "where we have invoked the conservation of mechanical energy.  This suggests that the speed and the kinetic energy will be maximum at the equilibrium position, x = 0, i.e.,"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [245, 1624, 654, 1695],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "where vm is the maximum speed."
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1738, 567, 1820],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Note that k/m has the dimensions of [T-2] and our equation is dimensionally correct. The kinetic energy gets converted to potential energy and vice versa, however, the total mechanical energy remains constant. This is graphically depicted in Fig. 5.8."
+    },
+    {
+      "n": 15,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [927, 338, 1526, 687],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Fig. 5.8 Parabolic plots of the potential energy V and kinetic energy K of a block attached to a spring obeying Hooke’s law. The two plots are complementary, one decreasing as the other increases. The total mechanical energy E = K + V remains constant."
+    },
+    {
+      "n": 17,
+      "kind": "box",
+      "text": "Example 5.8  To simulate car accidents, auto manufacturers study the collisions of moving cars with mounted springs of different spring constants.  Consider a typical simulation with a car of mass 1000 kg moving with a speed 18.0 km/h on a smooth road and colliding with a horizontally mounted spring of spring constant 5.25 × 103 N m–1. What is the maximum compression of the spring ?"
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "Answer   At maximum compression the kinetic energy of the car is converted entirely into the potential energy of the spring."
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "The kinetic energy of the moving car is"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [981, 1401, 1363, 1657],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "where we have converted 18 km h–1 to 5 m s–1  [It is useful to remember that 36 km h–1 = 10 m s–1]. At maximum compression xm, the potential energy V of the spring is equal to the kinetic energy K of the moving car from the principle of conservation of mechanical energy."
+    },
+    {
+      "n": 22,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1036, 1951, 1232, 2027],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "WORK, ENERGY AND POWER",
+    "81",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column read first. The paragraph beginning \"Note that k/m has the dimensions of [T-2]\" runs from the foot of the left column into the top of the right column and is kept as one block (the text layer also holds it contiguously). No numbered section side-headings appear on this page, so the layered-outline heading repetition artifact did not arise. The Fig. 5.8 caption is given its own paragraph block (block 16) so its prose is covered, while the plot itself is block 15 with needs_special. Displayed-math stretches, including the unnumbered equations and the \"or\" line carrying vm = sqrt(k/m) xm, are emitted as equation blocks with image-pixel bboxes rather than transcribed, since the text layer scrambles sub/superscripts onto separate lines. Line breaks inside paragraphs were joined with a single space; all other characters, including double spaces and the layer's en-dash/minus forms, are copied as the layer holds them. Page ends mid-worked-example (Example 5.8 Answer), so the last block continues on the next page."
+}

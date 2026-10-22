@@ -1,0 +1,40 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {
+      "n": 2,
+      "corrected_text": "In the diamagnetic octahedral complex, [Co(NH₃)₆]³⁺, the cobalt ion is in +3 oxidation state and has the electronic configuration 3d⁶. The hybridisation scheme is as shown in diagram.",
+      "fixes": [
+        {"wrong": "[Co(NH3)6]3+", "right": "[Co(NH₃)₆]³⁺"},
+        {"wrong": "3d6", "right": "3d⁶"}
+      ]
+    },
+    {
+      "n": 4,
+      "corrected_text": "Six pairs of electrons, one from each NH₃ molecule, occupy the six hybrid orbitals. Thus, the complex has octahedral geometry and is diamagnetic because of the absence of unpaired electron. In the formation of this complex, since the inner d orbital (3d) is used in hybridisation, the complex, [Co(NH₃)₆]³⁺ is called an inner orbital or low spin or spin paired complex. The paramagnetic octahedral complex, [CoF₆]³⁻ uses outer orbital (4d ) in hybridisation (sp³d²). It is thus called outer orbital or high spin or spin free complex. Thus:",
+      "fixes": [
+        {"wrong": "each NH3 molecule", "right": "each NH₃ molecule"},
+        {"wrong": "[Co(NH3)6]3+", "right": "[Co(NH₃)₆]³⁺"},
+        {"wrong": "[CoF6]3–", "right": "[CoF₆]³⁻"},
+        {"wrong": "(sp3d2)", "right": "(sp³d²)"}
+      ]
+    },
+    {
+      "n": 6,
+      "corrected_text": "In tetrahedral complexes one s and three p orbitals are hybridised to form four equivalent orbitals oriented tetrahedrally. This is illustrated below for [NiCl₄]²⁻. Here nickel is in +2 oxidation state and the ion has the electronic configuration 3d⁸. The hybridisation scheme is as shown in diagram.",
+      "fixes": [
+        {"wrong": "[NiCl4]2-", "right": "[NiCl₄]²⁻"},
+        {"wrong": "3d8", "right": "3d⁸"}
+      ]
+    },
+    {
+      "n": 8,
+      "corrected_text": "Each Cl⁻ ion donates a pair of electrons. The compound is paramagnetic since it contains two unpaired electrons. Similarly, [Ni(CO)₄] has tetrahedral geometry but is diamagnetic since nickel is in zero oxidation state and contains no unpaired electron.",
+      "fixes": [
+        {"wrong": "Cl–", "right": "Cl⁻"},
+        {"wrong": "[Ni(CO)4]", "right": "[Ni(CO)₄]"}
+      ]
+    }
+  ],
+  "note": "Four blocks corrected. Two distinct classes of flattening here: complex-ion formulae/charges ([Co(NH₃)₆]³⁺, [CoF₆]³⁻, [NiCl₄]²⁻, [Ni(CO)₄], Cl⁻) and — more materially — electron-configuration and hybridisation exponents, where '3d6' was really 3d⁶, '3d8' was 3d⁸ and '(sp3d2)' was (sp³d²); flattened, those read as the numbers 36/38 and the string sp3d2 instead of electron counts. Oxidation states written '+3', '+2' and the bare orbital labels (3d), (4d ) are printed full size and were already correct; n=1 is prose. No degree symbols, locants or primes on this page."
+}

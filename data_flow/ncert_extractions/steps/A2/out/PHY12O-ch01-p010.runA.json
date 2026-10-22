@@ -1,0 +1,61 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "quantisation of charge cannot be ignored. It is the magnitude of scale involved that is very important.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 1.2 If 109 electrons move out of a body to another body every second, how much time is required to get a total charge of 1 C on the other body?\n\nSolution In one second 109 electrons move out of the body. Therefore the charge given out in one second is 1.6 × 10–19 × 109 C = 1.6 × 10–10 C. The time required to accumulate a charge of 1 C can then be estimated to be 1 C ÷ (1.6 × 10–10 C/s) = 6.25 × 109 s = 6.25 × 109 ÷ (365  × 24 × 3600) years = 198 years. Thus to collect a charge of one coulomb, from a body from which 109 electrons move out every second, we will need approximately 200 years. One coulomb is, therefore, a very large unit for many practical purposes.\nIt is, however, also important to know what is roughly the number of electrons contained in a piece of one cubic centimetre of a material. A cubic piece of copper of side 1 cm contains about 2.5 × 1024 electrons."
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Example 1.3 How much positive and negative charge is there in a cup of water?\n\nSolution Let us assume that the mass of one cup of water is 250 g. The molecular mass of water is 18g. Thus, one mole (= 6.02 × 1023 molecules) of water is 18 g. Therefore the number of molecules in one cup of water is (250/18) × 6.02 × 1023.\nEach molecule of water contains two hydrogen atoms and one oxygen atom, i.e., 10 electrons and 10 protons. Hence the total positive and total negative charge has the same magnitude. It is equal to (250/18) × 6.02 × 1023 × 10 × 1.6 × 10–19 C = 1.34 × 107 C."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "1.6  COULOMB’S LAW"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Coulomb’s law is a quantitative statement about the force between two point charges. When the linear size of charged bodies are much smaller than the distance separating them, the size may be ignored and the charged bodies are treated as point charges. Coulomb measured the force between two point charges and found that it varied inversely as the square of the distance between the charges and was directly proportional to the product of the magnitude of the two charges and acted along the line joining the two charges. Thus, if two point charges q1, q2 are separated by a distance r in vacuum, the magnitude of the force (F) between them is given by"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        575,
+        1725,
+        1550,
+        1825
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "How did Coulomb arrive at this law from his experiments? Coulomb used a torsion balance*  for measuring the force between two charged metallic",
+      "continues_on_next": true
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "* A torsion balance is a sensitive device to measure force. It was also used later by Cavendish to measure the very feeble gravitational force between two objects, to verify Newton’s Law of Gravitation."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "10",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p009 output, which ended '...they appear in discrete lumps and', matching this page's opening 'quantisation of charge cannot be ignored.'. Examples 1.2 and 1.3 are two grey panels, each one box block. The display equation (1.1) is marked needs_special with a bbox that includes its equation number. The rule-ruled footnote about the torsion balance is page content, so it is block n=8; because it sits physically last but is an aside, continues_on_next is marked on n=7, the main-flow paragraph that actually runs on to p011, and the page-level flag describes that main flow. The sideways margin labels 'EXAMPLE 1.2'/'EXAMPLE 1.3' are decoration whose words already appear inside the box blocks, so they are not listed as removed."
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/D7.json",
+  "title": "D7 agent output (d7-latest-answer-checker)",
+  "description": "Section 12/D7 'Agent output' line and .claude/agents/d7-latest-answer-checker.md's worked output shape: {\"latest_answer\", \"same_as_official\", \"quote\", \"change_id\", \"sentence_for_note\", \"note\"}. Checks that need the per-item input context — the quote verified in the LATEST edition, change_id existing and covering an evidence passage (spec 12/D7 Checks), same_as_official agreeing with latest_answer vs the official answer, and the sentence_for_note template — live in scripts/checks/D7.py. D7's INPUT is restricted by spec Rule 10 ('B6 never sees the key; B6 and D7 never see coaching material'); that restriction is enforced in code by step_plugins.D7Plugin._build_input's explicit allowlist plus lib/coaching_guard.guard_d7_input, not by convention.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["latest_answer", "same_as_official", "quote", "change_id", "sentence_for_note", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "latest_answer": {
+          "type": "string",
+          "enum": ["1", "2", "3", "4", "unsure"],
+          "description": "The option the LATEST NCERT supports, decided only from the latest lines given (d7-latest-answer-checker.md Allowed values)."
+        },
+        "same_as_official": {
+          "type": "boolean",
+          "description": "Whether that is the same option as the official answer. false always raises D7_ANSWER_CHANGED (high) and re-runs D4 for the new answer (spec 12/D7 On failure)."
+        },
+        "quote": {
+          "type": "string",
+          "description": "The latest-edition line that decides it, copied exactly. Verified word-for-word against the latest passages in scripts/checks/D7.py; may be empty only when latest_answer is 'unsure'."
+        },
+        "change_id": {
+          "type": ["string", "null"],
+          "description": "The change-log entry that explains a changed answer, from the entries given. null when none of them explains it — in which case `note` must say so (the agent file's own rule) and the plugin raises D7_UNEXPLAINED_CHANGE (high)."
+        },
+        "sentence_for_note": {
+          "type": "string",
+          "description": "The extra sentence appended to D6's reason note, in the agent file's own template: 'By the older NCERT the answer was (<official>); by the latest NCERT it is (<latest>).' Empty string when same_as_official is true."
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

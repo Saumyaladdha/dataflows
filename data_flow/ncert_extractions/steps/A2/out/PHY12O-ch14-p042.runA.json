@@ -1,0 +1,80 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "where the following formulae are valid:\nRelativistic momentum p = m v\nTotal energy E = m c 2\nKinetic energy K = m c 2 – m 0 c 2,",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "where the relativistic mass m is given by"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1190, 495, 1450, 575],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "m0 is called the rest mass of the particle. These relations also\nimply:"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [630, 645, 940, 690],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Note that in the relativisitc domain when v/c is comparable to 1, K\nor energy ≥ m 0c 2 (rest mass energy). The rest mass energy of electron\nis about 0.51 MeV. Thus a kinetic energy of 10 MeV, being much\ngreater than electron’s rest mass energy, implies relativistic domain.\nUsing relativistic formulas, v (for 10 MeV kinetic energy) = 0.999 c."
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "11.21 (a)\n22.7 cm\n(b)\nNo. As explained above, a 20 MeV electron moves at relativistic\nspeed. Consequently, the non-relativistic formula R = (m0v/e B )\nis not valid. The relativistic formula is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [630, 1010, 1365, 1070],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "11.22 We have e V = (m v2/2) and R = (m v/e B) which gives (e/m) =\n(2V/R 2 B 2 ); using the given data (e/m) = 1.73 × 1011 C kg –1.\n11.23 (a) 27.6 keV        (b) of the order of 30 kV\n11.24 Use λ = (hc/E) with E = 5.1 × 1.602 × 10–10J to get  λ = 2.43 × 10–16 m."
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "11.25 (a)\nFor  λ = 500 m, E = (h c/ λ) = 3.98 × 10–28J. Number of photons\nemitted per second\n= 104J s–1/3.98 × 10–28J ∼ 3 × 1031 s–1\nWe see that the energy of a radiophoton is exceedingly small,\nand the number of photons emitted per second in a radio beam\nis enormously large. There is, therefore, negligible error involved\nin ignoring the existence of a minimum quantum of energy\n(photon) and treating the total energy of a radio wave as\ncontinuous.\n(b)\nFor ν =  6 × 1014 Hz, E ∼ 4 × 10–19J. Photon flux corresponding to\nminimum intensity\n= 10–10 W m–2/4×10–19J = 2.5 × 108 m–2 s–1\nNumber of photons entering the pupil per second = 2.5 × 108 ×\n0.4 × 10–4 s–1 = 104 s–1. Though this number is not as large as in\n(a) above, it is large enough for us never to ‘sense’ or ‘count’\nindividual photons by our eye."
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "11.26 φ0 = h ν – e V0 = 6.7 × 10–19 J = 4.2 eV; ν0 = φ0/h = 1.0 × 1015 Hz; λ = 6328Å\ncorresponds to ν = 4.7 × 1014 Hz < ν0. The photo-cell will not respond\nhowsoever high be the intensity of laser light."
+    },
+    {
+      "n": 12,
+      "kind": "list",
+      "text": "11.27 Use e V0 = h ν – φ0  for both sources. From the data on the first source,\nφ0 = 1.40 eV. Use this value to obtain for the second source V0 = 1.50 V.",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "510",
+    "Physics",
+    "2022-23"
+  ],
+  "note": "BOOK BACK MATTER, NOT CHAPTER 14 CONTENT. Printed page 510, CHAPTER 11 answers (the relativistic-formula note that finishes 11.20(b), then 11.21 to 11.27) inside the book's ANSWERS section; transcribed only because the A2 schema rejects a zero-block page, and not to be used as chapter-14 passage text. previous_page_last_block was null, so the continuation was judged from my own p041 output, which broke off at 'we come to the relativistic domain'; block n=1 completes that sentence, so first_block_continues_from_previous is true. 11.27 ends complete and the rest of the page is blank, so nothing continues on. Three printed display expressions are deferred to A2S: the relativistic-mass formula m = m0(1 - v2/c2)^-1/2 (n=3), the E = (p2c2 + m02c4)1/2 line (n=5) and the R = p/eB = mv/eB display line of 11.21(b) (n=8). The small phi0/h fraction inside 11.26 is written inline as 'φ0/h' because the rest of that printed line is the answer's own numbered text."
+}

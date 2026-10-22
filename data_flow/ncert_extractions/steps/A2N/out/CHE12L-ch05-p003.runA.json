@@ -1,0 +1,21 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 3, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "Both double salts as well as complexes are formed by the combination of two or more stable compounds in stoichiometric ratio. However, they differ in the fact that double salts such as carnallite, KCl.MgCl₂.6H₂O, Mohr’s salt, FeSO₄.(NH₄)₂SO₄.6H₂O, potash alum, KAl(SO₄)₂.12H₂O, etc. dissociate into simple ions completely when dissolved in water. However, complex ions such as [Fe(CN)₆]⁴⁻ of K₄[Fe(CN)₆] do not dissociate into Fe²⁺ and CN⁻ ions.",
+      "fixes": [
+        {"wrong": "KCl.MgCl2.6H2O", "right": "KCl.MgCl₂.6H₂O"},
+        {"wrong": "FeSO4.(NH4)2SO4.6H2O", "right": "FeSO₄.(NH₄)₂SO₄.6H₂O"},
+        {"wrong": "KAl(SO4)2.12H2O", "right": "KAl(SO₄)₂.12H₂O"},
+        {"wrong": "[Fe(CN)6]4–", "right": "[Fe(CN)₆]⁴⁻"},
+        {"wrong": "K4[Fe(CN)6]", "right": "K₄[Fe(CN)₆]"},
+        {"wrong": "Fe2+", "right": "Fe²⁺"},
+        {"wrong": "CN–", "right": "CN⁻"}
+      ]
+    },
+    {"n": 7, "no_change": true}
+  ],
+  "note": "n=5 had seven flattened formulae restored: atom-count subscripts in the double salts (hydrate coefficients 6 and 12 stay full size, as printed), and the complex-ion notation [Fe(CN)₆]⁴⁻, K₄[Fe(CN)₆], Fe²⁺, CN⁻ with raised charges. n=1, n=3 and n=7 carry no formulae or symbols and were already correct. No degree symbols, locants or primes on this page; the Example 5.1 table formulae are in a table block not given to me."
+}

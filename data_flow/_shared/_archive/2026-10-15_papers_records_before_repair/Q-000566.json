@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000566",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:157"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A): Osteoporosis is characterised by decreased bone mass and increased chance of fractures. Reason (R): Common cause of osteoporosis is increased levels of estrogen. In the light of the above statements, choose the most appropriate answer from the options given below.",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Both ) A ( and ) R ( are correct and ) R ( is the correct explanation of ) A(",
+    "2": "Both (A) and (R) are correct but (R) is not the correct explanation of (A)",
+    "3": ") A ( is correct but ) R ( is not correct",
+    "4": "(A) is not correct but (R) is correct"
+  },
+  "structure": "assertion_reason",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "157\nGiven below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason\n(R). Assertion (A): Osteoporosis is characterised by decreased bone mass and increased chance of\nfractures. Reason (R): Common cause of osteoporosis is increased levels of estrogen. In the light of\nthe above statements, choose the most appropriate answer from the options given below.\n(1)\nBoth ) A ( and ) R ( are correct and ) R (\nis the correct explanation of ) A(\n(2)\nBoth (A) and (R) are correct but (R) is\nnot the correct explanation of (A)\n(3)\n)A ( is correct but ) R ( is not correct\n(4)\n(A) is not correct but (R) is correct\nChemical Coordination and Integration\n",
+  "b4_script_options": {
+    "1": "Both ) A ( and ) R ( are correct and ) R (\nis the correct explanation of ) A(",
+    "2": "Both (A) and (R) are correct but (R) is\nnot the correct explanation of (A)",
+    "3": ")A ( is correct but ) R ( is not correct",
+    "4": "(A) is not correct but (R) is correct\nChemical Coordination and Integration"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "3",
+  "b6_reason": "Osteoporosis does involve reduced bone mass and more fractures, but the usual cause is decreased (not increased) estrogen, so R is wrong.",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "Options 1, 3 have scrambled parentheses in the source rendering, e.g. ') A ( is correct but ) R ( is not correct'; the intended wording is still unambiguous.",
+  "b6_agrees_with_key": true
+}

@@ -1,0 +1,30 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [162, 235, 1474, 1361],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "to accumulation of a dark coloured amorphous substance called humus that is highly resistant to microbial action and undergoes decomposition at an extremely slow rate. Being colloidal in nature it serves as a reservoir of nutrients. The humus is further degraded by some microbes and release of inorganic nutrients occur by the process  known as mineralisation.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Decomposition is largely an oxygen-requiring process. The rate of decomposition is controlled by chemical composition of detritus and climatic factors. In a particular climatic condition, decomposition rate is slower if detritus is rich in lignin and chitin, and quicker, if detritus is rich in nitrogen and water-soluble substances like sugars. Temperature and soil moisture are the most important climatic factors that regulate decomposition through their effects on the activities of soil microbes. Warm and moist environment favour decomposition whereas low temperature and anaerobiosis inhibit decomposition resulting in build up of organic materials."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "BIOLOGY",
+    "208",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null in the input, but BIO12L-ch12-p003 is earlier in my own page list and I read it myself: it ends \"...Humification leads\" and the running prose on this page opens \"to accumulation of a dark coloured amorphous substance called humus\", so the continuation is real; the figure sits above that prose in reading order, so I set first_block_continues_from_previous true to describe the page's text continuation and marked block 2 (the first text block) continues_from_previous true. TEXT LAYER / IMAGE DISAGREEMENT (minor): the figure's many in-diagram labels (\"A tree grows in the soil\", \"A green leaf falls to the ground\", \"Some are eaten by insects and other animals...\", \"Leaves partially consumed by decomposers...\", \"Some nutrients leach into soil by chemical action\", \"Further decomposition by earthworms,bacteria, soil,mites,fungi,etc.\", \"Organic rich soil\") are not in the text layer at all, only the Figure 12.1 caption is; they are inside the figure bbox and left for the special transcriber. The caption also appears at the end of the text layer, out of visual order. Decorative corner graphic at top left is page furniture. The last paragraph ends with a complete sentence and the page has blank space below it."
+}

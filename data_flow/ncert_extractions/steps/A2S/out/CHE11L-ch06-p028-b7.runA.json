@@ -1,0 +1,6 @@
+{
+  "kind": "equation",
+  "latex": "K_a = c^2\\alpha^2 / c(1-\\alpha) = c\\alpha^2 /",
+  "number": null,
+  "note": "target_box_in_crop is [200,98,558,136]; verified by overlaying the box on the full crop (892x... image is 758x286) that the right edge at x=558 cuts through the final '/' of the printed line 'K_a = c^2\\alpha^2 / c(1-\\alpha) = c\\alpha^2 / 1-\\alpha', excluding the trailing denominator '1-α'. Per the task rule, only content inside target_box_in_crop is transcribed, so '1-α' is omitted here even though it is part of the same printed equation; no other block in the crop appears to capture it. No equation number is printed on this line."
+}

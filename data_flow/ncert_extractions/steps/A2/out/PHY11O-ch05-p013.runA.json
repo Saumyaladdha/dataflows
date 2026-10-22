@@ -1,0 +1,114 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "since we are talking of uncharged and non-magnetic bodies in mechanics. At the microscopic level, all bodies are made of charged constituents (nuclei and electrons) and the various contact forces arising due to elasticity of bodies, molecular collisions and impacts, etc. can ultimately be traced to the electrical forces between the charged constituents of different bodies. The detailed microscopic origin of these forces is, however, complex and not useful for handling problems in mechanics at the macroscopic scale.  This is why they are treated as different types of forces with their characteristic properties determined empirically.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "5.9.1  Friction"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Let us return to the example of a body of mass m at rest on a horizontal table. The force of gravity (mg)  is cancelled by the normal reaction force (N) of the table. Now suppose a force F is applied horizontally to the body.  We know from experience that a small  applied force may not be enough to move the body.  But if the applied force F were the only external force on the body, it must move with acceleration F/m, however small. Clearly, the body remains at rest because some other force comes into play in the horizontal direction and opposes the applied force F, resulting in zero net force on the body. This force fₛ parallel to the surface of the body in contact with the table is known as frictional force, or simply friction (Fig. 5.10(a)).  The subscript stands for static friction to distinguish it from kinetic friction fₖ that we consider later (Fig. 5.10(b)).  Note that  static friction does not exist by itself.  When there is no applied force, there is no static friction. It comes into play the moment there is an applied force. As the applied force F increases, fₛ also increases, remaining equal and opposite to the applied force (up to a certain limit), keeping the body at rest. Hence, it is called static friction.  Static friction opposes impending motion. The term impending motion means motion that would take place (but does not actually take place) under the applied force, if friction were absent.",
+      "bold_terms": [
+        "static friction",
+        "impending motion"
+      ]
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        210,
+        1405,
+        840,
+        1618
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Fig. 5.10 Static and sliding friction: (a)  Impending motion of the body is opposed by static friction. When external force exceeds the maximum limit of static friction, the body begins to move.  (b) Once the body is in motion, it is subject to sliding or kinetic friction which opposes relative motion between the two surfaces in contact. Kinetic friction is usually less than the maximum value of static friction.",
+      "bold_terms": [
+        "Fig. 5.10"
+      ]
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "We know from experience that as the applied force exceeds a certain limit, the body begins to move.  It is found experimentally that the limiting value of static friction (fₛ)ₘₐₓ is independent of the area of contact and varies with the normal force(N)  approximately as :"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        890,
+        795,
+        1530,
+        858
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "where μₛ is a constant of proportionality depending only on the nature of the surfaces in contact. The constant μₛ  is called the coefficient of static friction.  The law of static friction may thus be written as"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        890,
+        1002,
+        1530,
+        1055
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "If the applied force F exceeds (fₛ)ₘₐₓ the body begins to slide on the surface. It is found experimentally that when relative motion has started, the frictional force decreases from the static maximum value (fₛ)ₘₐₓ. Frictional force that opposes relative motion between surfaces in contact is called kinetic or sliding friction and is denoted by fₖ .  Kinetic friction, like static friction, is found to be independent of the area of contact.  Further, it is nearly independent of the velocity. It satisfies a law similar to that for static friction:"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        890,
+        1488,
+        1530,
+        1542
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "where μₖ, the coefficient of kinetic friction, depends only on the surfaces in contact. As mentioned above, experiments show that μₖ is less than μₛ. When relative motion has begun, the acceleration of the body according to the second law is ( F – fₖ )/m.  For a body moving with constant velocity, F = fₖ. If the applied force on the body is removed, its acceleration is – fₖ /m and it eventually comes to a stop."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The laws of friction given above do not have the status of fundamental laws like those for gravitational, electric and magnetic forces. They are empirical relations that are only",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "LAWS OF MOTION",
+    "101",
+    "2022-23"
+  ],
+  "note": "Printed page 101. previous_page_last_block was null, so continuation at the top was judged from the image: the page opens mid-sentence ('since we are talking of uncharged and non-magnetic bodies'), and it ends mid-sentence ('that are only'). The chapter printed in this file is LAWS OF MOTION (sections 5.9.1 Friction, 5.10 Circular Motion, 5.11 Solving Problems in Mechanics), not Work, Energy and Power as the runner's item description said; transcribed exactly as printed. Block n=3 is one paragraph that runs from the foot of the left column into the head of the right column; it is kept as a single block so the sentence 'Note that static friction does not exist by itself.' is not split, which is why Fig. 5.10 (n=4) and its caption (n=5) follow it. Display equations (5.13), (5.14) and (5.15) are left to the special transcriber; the text layer scrambles all three ('( )max s s f N = µ'). Subscripts are written as the real Unicode subscripts the image prints (fₛ, fₖ, μₛ, μₖ, (fₛ)ₘₐₓ) where the text layer flattens them, and Greek mu is written μ where the layer holds the micro sign µ. The text layer renders 'where μₖ,' as 'where µk′'; the image plainly prints a comma low beside the subscript k, not a prime, so a comma is written. The caption block n=5 is set wholly in italic, which is the caption's own typeface rather than NCERT's own emphasis, so no italic_terms are recorded for it; its bold blue 'Fig. 5.10' label is."
+}

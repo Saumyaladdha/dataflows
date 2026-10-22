@@ -1,0 +1,46 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.0, "x1": 0.285},
+      {"id": "right", "x0": 0.304, "x1": 0.933}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.1175, 0.0858, 0.1481, 0.2986],
+     "column": "left", "size_rel": 1.0, "fill": "#c8dc5c"},
+    {"n": 1, "role": "box", "bbox": [0.11, 0.0858, 0.9319, 0.3033],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "section_heading", "bbox": [0.1512, 0.3399, 0.2706, 0.3642],
+     "column": "left", "size_rel": 1.8, "align": "left", "text_color": "#e11a22"},
+    {"n": null, "role": "rule_bar", "bbox": [0.1375, 0.367, 0.2838, 0.3693],
+     "column": "left", "size_rel": 1.0, "fill": "#f48480"},
+    {"n": null, "role": "decorative_image", "bbox": [0.1369, 0.3734, 0.1606, 0.889],
+     "column": "left", "size_rel": 1.0, "fill": "#f48480"},
+    {"n": 3, "role": "list", "bbox": [0.1869, 0.3849, 0.9294, 0.467],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "list", "bbox": [0.1869, 0.4725, 0.9294, 0.5399],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "list", "bbox": [0.1869, 0.5459, 0.9325, 0.745],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "list", "bbox": [0.1869, 0.7509, 0.6781, 0.8729],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.1025, 0.9028, 0.19, 0.9128],
+     "column": "left", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71"},
+    {"n": null, "role": "page_number", "bbox": [0.2006, 0.9069, 0.2412, 0.9174],
+     "column": "left", "size_rel": 1.0, "align": "right", "text_color": "#6d6e71",
+     "fill": "#fecb03"},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9156, 0.2412, 0.9174],
+     "column": "left", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.8, "align": "center"}
+  ],
+  "note": "Two-column body page (verso, folio 278). Top half is the continuation of the Summary box begun on p019: its frame has left, right and bottom borders but NO top border (it is cut at the page top, y 0.0858), and on this verso page its yellow-green #c8dc5c bar is on the LEFT edge (sampled x188-237px) where on p019 it was on the right. Bottom half opens the chapter's Exercises: the word 'Exercises' is set in the same brick red #e11a22 script as 'Objectives' on p001 - the only two places that red appears as TEXT in the chapter - with a 5px salmon #f48480 rule under it (y 0.367-0.3693) and a salmon vertical bar running down the left of the whole exercise list (x 0.1369-0.1606, y 0.3734-0.889), structurally the same furniture as the Objectives box on p001. The four exercise blocks (n=3..n=6) are hanging-indent numbered lists that start at x 0.187, left of the normal text measure, so they are marked 'full'. body_text_size_px=20.5 from the Summary box's body lines. NOTE ON size_rel FOR SCRIPT HEADINGS: the display scripts used for 'Exercises', 'Summary', 'Objectives' and the 9.x margin headings have swash capitals far taller than their lowercase (here cap 53px = 2.6x body, lowercase 28px = 1.37x body); the reported ratio is a judged middle of that range, not a single glyph measurement."
+}

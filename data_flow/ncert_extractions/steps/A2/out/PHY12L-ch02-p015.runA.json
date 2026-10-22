@@ -1,0 +1,104 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "(We continue to take potential at infinity to be zero.) Thus, work done in bringing a charge q from infinity to the point P in the external field is qV. This work is stored in the form of potential energy of q. If the point P has position vector r relative to some origin, we can write:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Potential energy of q at r in an external field"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 460, 1170, 505],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "where V(r) is the external potential at the point r."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Thus, if an electron with charge q = e = 1.6×10⁻¹⁹ C is accelerated by a potential difference of ΔV = 1 volt, it would gain energy of qΔV = 1.6 × 10⁻¹⁹J. This unit of energy is defined as 1 electron volt or 1eV, i.e., 1 eV=1.6 × 10⁻¹⁹J. The units based on eV are most commonly used in atomic, nuclear and particle physics, (1 keV = 10³eV = 1.6 × 10⁻¹⁶J, 1 MeV = 10⁶eV = 1.6 × 10⁻¹³J, 1 GeV = 10⁹eV = 1.6 × 10⁻¹⁰J and 1 TeV = 10¹²eV = 1.6 × 10⁻⁷J). [This has already been defined on Page 117, XI Physics Part I, Table 6.1.]"
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "2.8.2  Potential energy of a system of two charges in an external field"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Next, we ask: what is the potential energy of a system of two charges q1 and q2 located at r1and r2, respectively, in an external field? First, we calculate the work done in bringing the charge q1 from infinity to r1. Work done in this step is q1 V(r1), using Eq. (2.27). Next, we consider the work done in bringing q2 to r2. In this step, work is done not only against the external field E but also against the field due to q1."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Work done on q2 against the external field"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1190, 400, 1230],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Work done on q2 against the field due to q1"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 1275, 380, 1345],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "where  r12 is the distance between q1 and q2. We have made use of Eqs. (2.27) and (2.22). By the superposition principle for fields, we add up the work done on q2 against the two fields (E and that due to q1):"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Work done in bringing q2 to r2"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 1500, 1170, 1580],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Thus,\n Potential energy of the system\n= the total work done in assembling the configuration"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 1690, 1170, 1770],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "box",
+      "text": "Example 2.5\n(a) Determine the electrostatic potential energy of a system consisting of  two charges 7 μC and –2 μC (and with no external field) placed at (–9 cm, 0, 0) and (9 cm, 0, 0) respectively.\n(b) How much work is required to separate the two charges infinitely away from each other?"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "59", "Reprint 2026-27", "EXAMPLE 2.5"],
+  "note": "previous_page_last_block was null although this is page 15; the page opens with a complete new sentence, so first_block_continues_from_previous is set false on the evidence of the page itself. The outline-font side heading 2.8.2 is duplicated 5x and split in the text layer; transcribed once in its true reading-order position from the image. Exponents in the text layer are flattened and scrambled (e.g. \"103eV\", \"1.6×10-19\"), so superscripts were read from the image and written with Unicode superscript characters; baseline subscript names (q1, q2, r1, r2, r12) are kept in the text layer's plain form. The text layer renders the Symbol-font characters as \"DV\" and \"mC\"; the image shows ΔV and μC, which is what was transcribed. Spacing oddities present in the source (\"r1and r2\", double space in \"where  r12\" and \"consisting of  two charges\") were left uncorrected. The vertical side tab \"EXAMPLE 2.5\" in the right margin is a running marginal label and was removed, not listed as a block. The Example 2.5 box ends with its questions only; its solution runs onto the next page."
+}

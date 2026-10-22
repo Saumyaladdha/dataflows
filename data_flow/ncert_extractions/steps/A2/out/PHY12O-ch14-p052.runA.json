@@ -1,0 +1,29 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "INDEX",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "Absorption spectra\n421\nAC current\n233\nAC Generator\n224\nAC voltage\n233\napplied to a capacitor\n241\napplied to a resistor\n234\napplied to an inductor\n237\napplied to a series LCR circuit\n244\nAccelerators in India\n142\nActivity of radioactive substances\n447\nAdditivity of charges\n8\nAlpha decay\n449\nAlpha particle scattering\n415\nAmmeter\n165\nAmpere\n155\nAmperes circuital law\n147\nAnalog signal\n491\nAND gate\n492\nAndre, Ampere\n148\nAngle\nof deviation\n330\nof incidence\n355\nof reflection\n357\nof refraction\n355\nAngular magnification\n339\nApparent depth\n318\nArea element vector\n26\nAtomic\nmass unit\n439\nnumber\n440\nspectra\n420\nAurora Borealis\n139\nBand gap\n471\nBar magnet\n174\nas solenoid\n176\nBarrier potential\n479\nBecquerel\n448\nBeta decay\n450\nBinding energy per nucleon\n444"
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "Biot-Savart law\n143\nBohr magneton\n163\nBohr radius\n425\nBohr’s model of atom\n422\nBohr’s postulates\n424\nBrewster’s angle\n380\nBrewster’s law\n381\nC.A. Volta\n53\nCapacitance\n73\nCapacitive reactance\n241\nCapacitive circuit\n252\nCapacitor\nparallel plate\n74\nin parallel\n79\nin series\n78\nCartesian sign convention\n311\nCassegrain telescope\n341\nCells\n110\nin parallel\n114\nin series\n113\nChain reaction\n453\nCharging by induction\n6\nCharles August de Coulomb\n11\nChromatic aberration\n332\nCoercivity\n195\nCoherent source\n360\nColour code of resistors\n103\nCombination of lenses\n328\nCombination of resistors\nseries\n107\nparallel\n108\nComposition of nucleus\n438\nConcave mirror\n312\nConduction band\n469\nConductivity\n97, 468\nConductors\n5\nConservation of charge\n8\nConservative force\n51\nContinuous charge distribution\n32",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "520",
+    "2022-23"
+  ],
+  "note": "BOOK BACK MATTER, NOT CHAPTER 14 CONTENT. Printed page 520 is the first page of the book's INDEX: the banner heading plus two columns of alphabetical index entries with their page numbers. An index is publishing furniture / back matter and must not be used as chapter-14 passage text; transcribed only because the A2 schema rejects a zero-block page and so the page-coverage check can see the page was accounted for. previous_page_last_block was null, so continuation was judged from my own p051 output, which ended with the GENERAL BOOKS bibliography list complete and the lower half of the page blank; this page opens a new banner heading, so first_block_continues_from_previous is false. Reading order is left column then right column, which is also the order the text layer uses: block n=2 is the left column (Absorption spectra ... Binding energy per nucleon) and block n=3 the right column (Biot-Savart law ... Continuous charge distribution). Each entry's page reference follows its label on the next text-layer line, and the two-reference entry 'Conductivity 97, 468' is kept as printed. The alphabetical index runs on to the next page, so the last block is marked continues_on_next and last_block_continues_on_next is true. No equations, tables or figures on this page."
+}

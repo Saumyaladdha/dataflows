@@ -1,0 +1,114 @@
+{
+  "chapter": "BIO11-CH03",
+  "subtopics": [
+    {
+      "n": 1,
+      "name": "Systems of plant classification: artificial, natural and phylogenetic",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH03-P20",
+        "BIO11L-CH03-P21"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "Algae: general characters, habitat, form and economic importance",
+      "from_heading": "3.1 ALGAE",
+      "passages": [
+        "BIO11L-CH03-P32",
+        "BIO11L-CH03-P33",
+        "BIO11L-CH03-P35",
+        "BIO11L-CH03-P15",
+        "BIO11L-CH03-P39",
+        "BIO11L-CH03-P28",
+        "BIO11L-CH03-P44",
+        "BIO11L-CH03-P30",
+        "BIO11L-CH03-P45"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "Vegetative, asexual and sexual reproduction in algae",
+      "from_heading": "3.1 ALGAE",
+      "passages": [
+        "BIO11L-CH03-P34"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Basis of classification of algae: pigments, stored food, cell wall and flagella",
+      "from_heading": "3.1 ALGAE",
+      "passages": [
+        "BIO11L-CH03-P09"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Phaeophyceae: the brown algae",
+      "from_heading": "3.1.2 Phaeophyceae",
+      "passages": [
+        "BIO11L-CH03-P36",
+        "BIO11L-CH03-P37"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Rhodophyceae: the red algae",
+      "from_heading": "3.1.3 Rhodophyceae",
+      "passages": [
+        "BIO11L-CH03-P06",
+        "BIO11L-CH03-P07",
+        "BIO11L-CH03-P08"
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Mosses and the bryophyte life cycle",
+      "from_heading": "3.2.2 Mosses",
+      "passages": [
+        "BIO11L-CH03-P13",
+        "BIO11L-CH03-P14",
+        "BIO11L-CH03-P16",
+        "BIO11L-CH03-P40"
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Pteridophytes: sporophyte body, heterospory and the four classes",
+      "from_heading": "3.3 PTERIDOPHYTES",
+      "passages": [
+        "BIO11L-CH03-P22",
+        "BIO11L-CH03-P23",
+        "BIO11L-CH03-P24",
+        "BIO11L-CH03-P17",
+        "BIO11L-CH03-P41"
+      ]
+    },
+    {
+      "n": 9,
+      "name": "Gymnosperms: naked seeds and their characteristics",
+      "from_heading": "3.4 GYMNOSPERMS",
+      "passages": [
+        "BIO11L-CH03-P25",
+        "BIO11L-CH03-P18",
+        "BIO11L-CH03-P42",
+        "BIO11L-CH03-P29",
+        "BIO11L-CH03-P31",
+        "BIO11L-CH03-P46"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Angiosperms: flowering plants, dicotyledons and monocotyledons",
+      "from_heading": "3.5 ANGIOSPERMS",
+      "passages": [
+        "BIO11L-CH03-P26",
+        "BIO11L-CH03-P38",
+        "BIO11L-CH03-P27",
+        "BIO11L-CH03-P19",
+        "BIO11L-CH03-P43"
+      ]
+    }
+  ],
+  "note": "Input looks damaged. Passage ids start at P06, with gaps (no P01-P05, no P10-P12), and nine passages are exact duplicates of nine others (P15=P39, P16=P40, P17=P41, P18=P42, P19=P43, P26=P38, P28=P44, P30=P45, P31=P46); each duplicate pair is kept in one subtopic. chapter_title is given as 'SUMMARY'. Headings 3.1.1 Chlorophyceae, 3.2 BRYOPHYTES and 3.2.1 Liverworts are listed but no passage in the input covers them, so no subtopic was written for green algae, bryophyte general characters or liverworts; conversely P20 and P21 (classification systems, Bentham and Hooker, phylogenetic/numerical/cyto/chemo-taxonomy) belong to the chapter introduction before 3.1, which is not in the headings list, hence from_heading 'unsure'. The SUMMARY (P15/P39, P16/P40, P17/P41, P18/P42, P19/P43) and EXERCISES (P28/P44, P29, P30/P45, P31/P46) passages each span a group or the whole chapter; each was attached to the subtopic its content chiefly targets rather than given a page-named subtopic of its own."
+}

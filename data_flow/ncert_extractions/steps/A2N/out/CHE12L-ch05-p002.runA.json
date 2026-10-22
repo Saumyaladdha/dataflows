@@ -1,0 +1,26 @@
+{
+  "blocks": [
+    {"n": 2, "no_change": true},
+    {
+      "n": 4,
+      "corrected_text": "Note that the last two compounds in Table 5.1 have identical empirical formula, CoCl₃.4NH₃, but distinct properties. Such compounds are termed as isomers. Werner in 1898, propounded his theory of coordination compounds. The main postulates are:",
+      "fixes": [
+        {"wrong": "CoCl3.4NH3", "right": "CoCl₃.4NH₃"}
+      ]
+    },
+    {"n": 5, "no_change": true},
+    {"n": 6, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "He further postulated that octahedral, tetrahedral and square planar geometrical shapes are more common in coordination compounds of transition metals. Thus, [Co(NH₃)₆]³⁺, [CoCl(NH₃)₅]²⁺ and [CoCl₂(NH₃)₄]⁺ are octahedral entities, while [Ni(CO)₄] and [PtCl₄]²⁻ are tetrahedral and square planar, respectively.",
+      "fixes": [
+        {"wrong": "[Co(NH3)6]3+", "right": "[Co(NH₃)₆]³⁺"},
+        {"wrong": "[CoCl(NH3)5]2+", "right": "[CoCl(NH₃)₅]²⁺"},
+        {"wrong": "[CoCl2(NH3)4]+", "right": "[CoCl₂(NH₃)₄]⁺"},
+        {"wrong": "[Ni(CO)4]", "right": "[Ni(CO)₄]"},
+        {"wrong": "[PtCl4]2–", "right": "[PtCl₄]²⁻"}
+      ]
+    }
+  ],
+  "note": "n=4 and n=7 had flattened subscripts and charges restored to match the image: CoCl₃.4NH₃ (the 4 is a stoichiometric coefficient, left full size), and the five complex-ion formulae [Co(NH₃)₆]³⁺, [CoCl(NH₃)₅]²⁺, [CoCl₂(NH₃)₄]⁺, [Ni(CO)₄], [PtCl₄]²⁻ where ligand counts are subscripts and the ionic charges are raised. n=2, n=5 and n=6 are pure prose with no notation and were already correct; no degree symbols, locants, primes or radicals on this page."
+}

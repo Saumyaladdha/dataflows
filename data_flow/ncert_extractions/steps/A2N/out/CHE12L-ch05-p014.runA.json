@@ -1,0 +1,39 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "Example 5.7\nThe spin only magnetic moment of [MnBr₄]²⁻ is 5.9 BM. Predict the geometry of the complex ion ?",
+      "fixes": [
+        {"wrong": "[MnBr4]2–", "right": "[MnBr₄]²⁻"}
+      ]
+    },
+    {
+      "n": 2,
+      "corrected_text": "Solution\nSince the coordination number of Mn²⁺ ion in the complex ion is 4, it will be either tetrahedral (sp³ hybridisation) or square planar (dsp² hybridisation). But the fact that the magnetic moment of the complex ion is 5.9 BM, it should be tetrahedral in shape rather than square planar because of the presence of five unpaired electrons in the d orbitals.",
+      "fixes": [
+        {"wrong": "Mn2+", "right": "Mn²⁺"},
+        {"wrong": "sp3", "right": "sp³"},
+        {"wrong": "dsp2", "right": "dsp²"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {"n": 5, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "The crystal field theory (CFT) is an electrostatic model which considers the metal-ligand bond to be ionic arising purely from electrostatic interactions between the metal ion and the ligand. Ligands are treated as point charges in case of anions or point dipoles in case of neutral molecules. The five d orbitals in an isolated gaseous metal atom/ion have same energy, i.e., they are degenerate. This degeneracy is maintained if a spherically symmetrical field of negative charges surrounds the metal atom/ion. However, when this negative field is due to ligands (either anions or the negative ends of dipolar molecules like NH₃ and H₂O) in a complex, it becomes asymmetrical and the degeneracy of the d orbitals is lifted. It results in splitting of the d orbitals. The pattern of splitting depends upon the nature of the crystal field. Let us explain this splitting in different crystal fields.",
+      "fixes": [
+        {"wrong": "NH3 and H2O", "right": "NH₃ and H₂O"}
+      ]
+    },
+    {
+      "n": 9,
+      "corrected_text": "In an octahedral coordination entity with six ligands surrounding the metal atom/ion, there will be repulsion between the electrons in metal d orbitals and the electrons (or negative charges) of the ligands. Such a repulsion is more when the metal d orbital is directed towards the ligand than when it is away from the ligand. Thus, the dx²–y² and dz² orbitals which point towards the axes along the direction of the ligand will experience more repulsion and will be raised in energy; and the dxy, dyz and dxz orbitals which are directed between the axes will be lowered in energy relative to the average energy in the spherical crystal field. Thus, the degeneracy of the d orbitals has been removed due to ligand electron-metal electron repulsions in the octahedral complex to yield three orbitals of lower energy, t₂g set and two orbitals of higher energy, eg set. This splitting of the",
+      "fixes": [
+        {"wrong": "dx2–y2", "right": "dx²–y²"},
+        {"wrong": "dz2", "right": "dz²"},
+        {"wrong": "t2g", "right": "t₂g"}
+      ]
+    }
+  ],
+  "note": "Four blocks corrected: [MnBr₄]²⁻ and Mn²⁺ charges, the hybridisation labels sp³ and dsp², the molecular subscripts in NH₃ and H₂O, and in n=9 the d-orbital labels. Judgment call on n=9: the page prints these as d with a SUBSCRIPTED label that itself carries superscripts — d(x²–y²) and d(z²) — and Unicode has no subscript 'y' or 'z' to reproduce that nesting faithfully, so I restored the exponents (dx²–y², dz²) and left the orbital letters at full size rather than guess a different encoding; the flattened '2's were the actual defect. Similarly t₂g's subscripted 2 restored; eg and dxy/dyz/dxz carry no digits so nothing to restore there. n=4 and n=5 are prose. No degree symbols, locants, primes or radicals on this page."
+}

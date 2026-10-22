@@ -1,0 +1,137 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        260,
+        305,
+        725,
+        375
+      ],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        390,
+        870,
+        515
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "The direction of electric field in this case is opposite to the direction of the dipole moment vector. Again, the result agrees with that obtained before."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "1.12  DIPOLE IN A UNIFORM EXTERNAL FIELD"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Consider a permanent dipole of dipole moment p in a uniform external field E, as shown in Fig. 1.22. (By permanent dipole, we mean that p exists  irrespective of E; it has not been induced by E.)"
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1115,
+        730,
+        1530,
+        1050
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "There is a force qE on q and a force –qE on –q. The net force on the dipole is zero, since E is uniform. However, the charges are separated, so the forces act at different points, resulting in a torque on the dipole. When the net force is zero, the torque (couple) is independent of the origin. Its magnitude equals the magnitude of each force multiplied by the arm of the couple (perpendicular distance between the two antiparallel forces)."
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        1090,
+        770,
+        1155
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Its direction is normal to the plane of the paper, coming out of it."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The magnitude of p × E is also p E sinθ and its direction is normal to the paper, coming out of it. Thus,"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        1245,
+        990,
+        1290
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "This torque will tend to align the dipole with the field E. When p is aligned with E, the torque is zero."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "What happens if the field is not uniform? In that case, the net force will evidently be non-zero. In addition there will, in general, be a torque on the system as before. The general case is involved, so let us consider the simpler situations when p is parallel to E or antiparallel to E. In either case, the net torque is zero, but there is a net force on the dipole if E is not uniform."
+    },
+    {
+      "n": 14,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        985,
+        1165,
+        1530,
+        1975
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Figure 1.23 is self-explanatory. It is easily seen that when p is parallel to E, the dipole has a net force in the direction of increasing field. When p is antiparallel to E, the net force on the dipole is in the direction of decreasing field. In general, the force depends on the orientation of p with respect to E."
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "This brings us to a common observation in frictional electricity. A comb run through dry hair attracts pieces of paper. The comb, as we know, acquires charge through friction. But the paper is not charged. What then explains the attractive force? Taking the clue from the preceding",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "EXAMPLE 1.10",
+    "31",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p030 output, which ended mid-box with '...the formula for dipole field at a point on the normal to the axis of the dipole:', so this page opens mid-box with that formula (needs_special equation n=1) and its substitution (n=2). Below the panel, section 1.12 runs in a left prose column beside Figures 1.22 and 1.23 in the right column; each figure is placed at its vertical position in the flow (n=6 and n=14, the latter immediately before the paragraph that discusses it). The sideways 'EXAMPLE 1.10' margin label IS listed as removed because the words 'Example 1.10' appear in no block here."
+}

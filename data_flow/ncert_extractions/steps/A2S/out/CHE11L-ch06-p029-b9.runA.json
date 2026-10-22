@@ -1,0 +1,11 @@
+{
+  "kind": "table",
+  "header": ["", "HF", "H3O+", "F-"],
+  "rows": [
+    ["Initial concentration (M)", "0.02", "0", "0"],
+    ["Change (M)", "–0.02α", "+0.02α", "+0.02α"],
+    ["Equilibrium concentration (M)", "0.02 – 0.02 α", "0.02 α", "0.02α"]
+  ],
+  "repeated_header": false,
+  "note": "ICE table is printed as aligned text, not a ruled grid; the reaction 'HF + H2O ⇌ H3O+ + F–' (printed just above, inside target_box_in_crop) gives the three tracked species used as header labels here (H2O itself is the solvent and carries no tracked value, so it is not a column). Numbers and row labels copied exactly."
+}

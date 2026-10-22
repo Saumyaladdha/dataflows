@@ -1,0 +1,27 @@
+{
+  "kind": "structure",
+  "species": [
+    {
+      "smiles": "NC1=CC=CC=C1",
+      "label": "I"
+    },
+    {
+      "smiles": "[NH2+]=C1[CH-]C=CC=C1",
+      "label": "II"
+    },
+    {
+      "smiles": "[NH2+]=C1C=C[CH-]C=C1",
+      "label": "III"
+    },
+    {
+      "smiles": "[NH2+]=C1[CH-]C=CC=C1",
+      "label": "IV"
+    },
+    {
+      "smiles": "NC1=CC=CC=C1",
+      "label": "V"
+    }
+  ],
+  "confidence": "unsure",
+  "note": "The five resonating structures of aniline, numbered I-V beneath the drawings and joined by double-headed (resonance) arrows, not reaction arrows. This is NOT five substances: the text above says aniline is a resonance hybrid of these five, so the block draws one molecule in five contributing forms. The species list is the only way the schema can hold them, so each drawn contributor is transcribed separately and the reader must not treat them as discrete compounds -- that is why confidence is unsure. As drawn: I is neutral aniline with the nitrogen lone pair shown as a colon and a curved arrow into the ring; V is the same neutral aniline with the lone pair shown as two dots, so I and V give the same SMILES. II, III and IV are the charge-separated quinonoid forms: the nitrogen carries a plus and an exocyclic C=N to the ipso carbon, and the ring carries a minus at the ortho carbon (II), the para carbon (III) and the other ortho carbon (IV). II and IV are drawn at the two different ortho positions, which are equivalent, so they give the same SMILES as well. The rings are drawn Kekule (alternating lines, no circle), so the SMILES are written Kekule rather than aromatic. Curved electron-pushing arrows are drawn on I, II, III and IV; they are annotation and carry no atoms."
+}

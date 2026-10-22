@@ -1,0 +1,81 @@
+[
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0005",
+  "cat_ids": [
+   "C01"
+  ],
+  "question_text": "A biconvex lens has radii of curvature, $20\\,\\mathrm{cm}$ each. If the refractive index of the material of the lens is $1.5$, the power of the lens is",
+  "options": "(1) $+2\\,\\mathrm{D}$ | (2) $+20\\,\\mathrm{D}$ | (3) $+5\\,\\mathrm{D}$ | (4) Infinity",
+  "e1_type": "Single-fact recall",
+  "e2_format": "prose options (4 text statements)",
+  "e3_shape": "stem + options[4]"
+ },
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0003",
+  "cat_ids": [
+   "C03"
+  ],
+  "question_text": "The angular speed of a fly wheel moving with uniform angular acceleration changes from $1200\\,\\mathrm{rpm}$ to $3120\\,\\mathrm{rpm}$ in $16$ seconds. The angular acceleration in $\\mathrm{rad/s2}$ is",
+  "options": "(1) $2\\pi$ | (2) $4\\pi$ | (3) $12\\pi$ | (4) $104\\pi$",
+  "e1_type": "Numeric calculation",
+  "e2_format": "numeric options",
+  "e3_shape": "stem + options[4]"
+ },
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0067",
+  "cat_ids": [
+   "C05"
+  ],
+  "question_text": "Which of the following sequence of reactions is suitable to synthesize chlorobenzene?",
+  "options": "(1) Benzene, $\\mathrm{Cl_2}$, anhydrous $\\mathrm{FeCl_3}$ | (2) Phenol, $\\mathrm{NaNO_2}$, $\\mathrm{HCl}$, $\\mathrm{CuCl}$ | (3) , $\\mathrm{HCl}$ | (4) , $\\mathrm{HCl}$, Heating",
+  "e1_type": "Symbolic / formula",
+  "e2_format": "symbolic / formula options",
+  "e3_shape": "stem + options[4]"
+ },
+ {
+  "question_id": "NEET-2023-MAIN-E1-q0086",
+  "cat_ids": [
+   "C07"
+  ],
+  "question_text": "Match List - I with List - II :\nList I:\n(A) Peroxodisulphuric acid\n(B) Sulphuric acid\n(C) Pyrosulphuric acid\n(D) Sulphurous acid\nList II:\n(I) Two S-OH, Four S=O, One S-O-S\n(II) Two S-OH, One S=O\n(III) Two S-OH, Four S=O, One S-O-O-S\n(IV) Two S-OH, Two S=O",
+  "options": "(1) A-I, B-III, C-II, D-IV | (2) A-III, B-IV, C-I, D-II | (3) A-I, B-III, C-IV, D-II | (4) A-III, B-IV, C-II, D-I",
+  "e1_type": "Match near-miss (one swap apart)",
+  "e2_format": "permutation options (A-I, B-II, ...)",
+  "e3_shape": "stem + list_i[4] + list_ii[4] + options[4]"
+ },
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0102",
+  "cat_ids": [
+   "C09"
+  ],
+  "question_text": "Identify the correct set of statements : Choose the correct answer from the options given below :\n(a) The leaflets are modified into pointed hard thorns in Citrus and Bougainvillea\n(b) Axillary buds form slender and spirally coiled tendrils in cucumber and pumpkin\n(c) Stem is flattened and fleshy in Opuntia and modified to perform the function of leaves\n(d) Rhizophora shows vertically upward growing roots that help to get oxygen for respiration\n(e) Subaerially growing stems in grasses and strawberry help in vegetative propagation",
+  "options": "(1) (b) and (c) Only | (2) (a) and (d) Only | (3) (b), (c), (d) and (e) Only | (4) (a), (b), (d) and (e) Only",
+  "e1_type": "Multi-statement combination",
+  "e2_format": "combination options ('A and C only')",
+  "e3_shape": "stem + statements[5] + options[4]"
+ },
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0090",
+  "cat_ids": [
+   "C11",
+   "C03"
+  ],
+  "question_text": "The correct IUPAC name of the following compound is",
+  "options": "(1) 1-bromo-5-chloro-4-methylhexan-3-ol | (2) 6-bromo-2-chloro-4-methythexan-4-ol | (3) 1-bromo-4-methyl-5-chlorohexan-3-ol | (4) 6-bromo-4-methyl-2-chlorohexan-4-ol",
+  "e1_type": "Figure-dependent (also: Numeric calculation)",
+  "e2_format": "numeric options",
+  "e3_shape": "stem + options[4] + figure"
+ },
+ {
+  "question_id": "NEET-2023-MAIN-E1-q0065",
+  "cat_ids": [
+   "C13",
+   "C03"
+  ],
+  "question_text": "The correct order of energies of molecular orbitals of $\\mathrm{N_2}$ molecule, is :",
+  "options": "(1) $\\sigma 1s < \\sigma^*1s < \\sigma 2s < \\sigma^*2s < (\\pi 2p_x = \\pi 2p_y) < (\\pi^*2p_x = \\pi^*2p_y) < \\sigma 2p_z < \\sigma^*2p_z$ | (2) $\\sigma 1s < \\sigma^*1s < \\sigma 2s < \\sigma^*2s < \\sigma 2p_z < (\\pi 2p_x = \\pi 2p_y) < (\\pi^*2p_x = \\pi^*2p_y) < \\sigma^*2p_z$ | (3) $\\sigma 1s < \\sigma^*1s < \\sigma 2s < \\sigma^*2s < \\sigma 2p_z < \\sigma^*2p_z < (\\pi 2p_x = \\pi 2p_y) < (\\pi^*2p_x = \\pi^*2p_y)$ | (4) $\\sigma 1s < \\sigma^*1s < \\sigma 2s < \\sigma^*2s < (\\pi 2p_x = \\pi 2p_y) < \\sigma 2p_z < (\\pi^*2p_x = \\pi^*2p_y) < \\sigma^*2p_z$",
+  "e1_type": "Order / sequence (also: Numeric calculation)",
+  "e2_format": "numeric options",
+  "e3_shape": "stem + options[4]"
+ }
+]

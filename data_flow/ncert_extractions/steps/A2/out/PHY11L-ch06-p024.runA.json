@@ -1,0 +1,111 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "(a) Consider a thin ring of radius R and mass M, rotating in its own plane around its centre with angular velocity ω. Each mass element of the ring is at a distance R from the axis, and moves with a speed Rω.  The kinetic energy is therefore,",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        400,
+        580,
+        490
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Comparing with Eq. (6.35) we get I = MR 2 for the ring."
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        195,
+        570,
+        860,
+        1130
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "(b) Next, take a rigid rod of negligible mass of length of length l with a pair of small masses, rotating about an axis through the centre of mass perpendicular to the rod (Fig. 6.28). Each mass M/2 is at a distance l/2 from the axis. The moment of inertia of the masses is therefore given by"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        340,
+        1378,
+        750,
+        1422
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Thus, for the pair of masses, rotating about the axis through the centre of mass perpendicular to the rod"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        252,
+        1505,
+        470,
+        1552
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Table 6.1 simply gives the moment of inertia of various familiar regular shaped bodies about specific axes. (The derivations of these expressions are beyond the scope of this textbook and you will study them in higher classes.)"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "As the mass of a body resists a change in its state of linear motion, it is a measure of its inertia in linear motion. Similarly, as the moment of inertia about a given axis of rotation resists a change in its rotational motion, it can be regarded as a measure of rotational inertia of the body; it is a measure of the way in which different parts of the body are distributed at different distances from the axis. Unlike the mass of a body, the moment of inertia is not a fixed quantity but depends on distribution of mass about the axis of rotation, and the orientation and position of the axis of rotation with respect to the body as a whole. As a measure of the way in which the mass of a rotating rigid body is distributed with respect to the axis of rotation, we can define a new parameter, the radius of gyration. It is related to the moment of inertia and the total mass of the body."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Notice from the Table 6.1 that in all cases, we can write I = Mk2, where k has the dimension of length. For a rod, about the perpendicular axis at its midpoint, i.e. 2 2 12, k L =   = 12 k L . Similarly, k = R/2 for the circular disc about its diameter. The length k is a geometric property of the body and axis of rotation. It is called the radius of gyration. The radius of gyration of a body about an axis may be defined as the distance from the axis of a mass point whose mass is equal to the mass of the whole body and whose moment of inertia is equal to the moment of inertia of the body about the axis."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Thus, the moment of inertia of a rigid body depends on the mass of the body, its shape and size; distribution of mass about the axis of rotation, and the position and orientation of the axis of rotation."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "From the definition, Eq. (6.34), we can infer that the dimensions of moments of inertia are ML2 and its SI units are kg m2."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The property of this extremely important quantity I, as a measure of rotational inertia of the body, has been put to a great practical use. The machines, such as steam engine and the automobile engine, etc., that produce rotational motion have a disc with a large moment of inertia, called a flywheel. Because of its large moment of inertia, the flywheel resists the sudden increase or decrease of the speed of the vehicle. It allows a gradual change in the speed and prevents jerky motions, thereby ensuring a smooth ride for the passengers on the vehicle."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "115",
+    "2024-25"
+  ],
+  "note": "`previous_page_last_block` was null even though this is page 24, so continuation was judged from the page itself: the page opens with a complete new sentence, item (a) of an enumerated list whose lead-in sentence is on the previous page, so first_block_continues_from_previous is false (list structure continues, but no sentence/table/box is cut). The right column ends with a complete sentence well above the page foot, so last_block_continues_on_next is false. Blocks 2, 6 and 8 are displayed formulae (K = 1/2 Mv^2 = 1/2 MR^2 w^2; the (M/2)(l/2)^2 + (M/2)(l/2)^2 line; the I = Ml^2 / 4 line) marked needs_special rather than transcribed. Block 4 is Fig. 6.28 (rod-with-two-masses diagram); its bbox includes the printed caption, left for the special transcriber. Inline mathematics was copied as the text layer holds it, per the source note: block 3 keeps 'I = MR 2', block 11 keeps the scrambled run 'i.e. 2 2 12, k L =   = 12 k L .' (on the page this reads k^2 = L^2/12, i.e. k = L/sqrt(12)), and blocks 11/13 keep 'Mk2', 'ML2', 'kg m2' where superscripts were flattened by extraction. Page 24 of the file is page 115 of the book; no layered-outline numbered side-heading occurs on this page."
+}

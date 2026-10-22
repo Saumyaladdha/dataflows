@@ -1,0 +1,157 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "You  should be able to answer (b) (c) and (d) based on the answer to (a).\n(Hint: Note the correspondence, piston→ bat, cylinder → wicket, molecule → ball.)",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "12.5  LAW OF EQUIPARTITION OF ENERGY"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The kinetic energy of a single molecule is"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        318,
+        486,
+        950,
+        546
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "For a gas in thermal equilibrium at temperature T  the average value of energy denoted by   < tε > is"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        684,
+        955,
+        758
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Since there is no preferred direction, Eq. (12.23) implies"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        826,
+        955,
+        1010
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "A molecule free to move in space needs three coordinates to specify its location. If it is constrained to move in a plane it needs two; and if constrained to move along a line, it needs just one coordinate to locate it. This can also be expressed in another way. We say that it has one degree of freedom for motion in a line, two for motion in a plane and three for motion in space. Motion of a body as a whole from one point to another is called translation. Thus, a molecule free to move in space has three translational degrees of freedom. Each translational degree of freedom contributes a term that contains square of some variable of motion, e.g., ½ mvx2  and similar terms in vy and vz. In, Eq. (12.24) we see that in thermal equilibrium, the average of each such term is ½ kBT ."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Molecules of a monatomic gas like argon have only translational degrees of freedom. But what about a diatomic gas such as O2 or N2? A molecule of O2 has three translational degrees of freedom. But in addition it can also rotate about its centre of mass. Figure 12.6 shows the two independent axes of rotation 1 and 2, normal to the axis joining the two oxygen atoms about which the molecule can rotate*. The molecule thus has two rotational degrees of freedom, each of which contributes a term to the total energy consisting of translational energy tε and rotational energy εr."
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        978,
+        426,
+        1625,
+        482
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        978,
+        512,
+        1635,
+        968
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "where ω1 and ω2  are the angular speeds about the axes 1 and 2 and I1, I2 are the corresponding moments of inertia. Note that each rotational degree of freedom contributes a term to the energy that contains square of a rotational variable of motion."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "We have assumed above that the O2 molecule is a ‘rigid rotator’, i.e., the molecule does not vibrate. This assumption, though found to be true (at moderate temperatures) for O2, is not always valid. Molecules, like CO, even at moderate temperatures have a mode of vibration, i.e., its atoms oscillate along the interatomic axis like a one-dimensional oscillator, and contribute a vibrational energy term εv to the total energy:"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1008,
+        1504,
+        1350,
+        1580
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1008,
+        1602,
+        1625,
+        1648
+      ],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "where k is the force constant of the oscillator and y the vibrational co-ordinate."
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "Once again the vibrational energy terms in Eq. (12.26) contain squared terms of vibrational variables of motion y and dy/dt ."
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "* Rotation along the line joining the atoms has very small moment of inertia and does not come into play for quantum mechanical reasons. See end of section 12.6."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "252",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page, left column then right column. previous_page_last_block was null; I read PHY11L-ch12-p008 myself immediately before this page — it answers only part (a) of Example 12.7 — and this page opens with 'You should be able to answer (b) (c) and (d) based on the answer to (a).', so the continuation is directly observed, not guessed. TEXT LAYER / IMAGE DISAGREEMENT in block 1: the printed page shows rightwards arrows ('piston-> bat, cylinder -> wicket, molecule -> ball'), but the PDF text layer renders each arrow as the letter 'a-grave' ('pistonà bat, cylinder à wicket, molecule à ball'). The text layer is clearly garbled there, so I transcribed the arrows from the image as '→'. Eqs. (12.22), (12.23), (12.24) (its two display lines as one block), (12.25), the epsilon_v = 1/2 m (dy/dt)^2 + 1/2 ky^2 display, and (12.26), plus Fig. 12.6 with its caption, are marked needs_special with bboxes in the 1825x2160 image pixel space and empty text. Block 19 is the rule-separated footnote printed full width at the foot of the page, below both columns; it is page content (the footnote to the asterisk in block 10), not a running footer, and is placed last because that is where it sits. The body text ends with a complete sentence ('...variables of motion y and dy/dt .') and the footnote is self-contained, so nothing continues onto the next page. The text layer flattens sub/superscripts and the angle-bracket mean notation ('mvx2', 'tε' for epsilon-t, 'kBT'); copied as extracted."
+}

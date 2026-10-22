@@ -1,0 +1,158 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "We shall now define another product of two vectors. This product is a vector. Two important quantities in the study of rotational motion, namely, moment of a force and angular momentum, are defined as vector products.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "Definition of Vector Product"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "A vector product of two vectors a and b is a vector c such that"
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "(i) magnitude of c = c = ab sin θ where a and b are magnitudes of  a and b and θ is the angle between the two vectors.\n(ii) c is perpendicular to the plane containing a and b.\n(iii) if we take a right handed screw with its head lying in the plane of  a and b and the screw perpendicular to this plane, and if we turn the head in the direction from  a to b, then the tip of the screw advances in the direction of c. This right handed screw rule is illustrated in Fig. 6.15a."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Alternately, if one curls up the fingers of right hand around a line perpendicular to the plane of the vectors  a and b and if the fingers are curled up in the direction from a to b, then the stretched thumb points in the direction of c, as shown in Fig. 6.15b."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        308,
+        1172,
+        950,
+        1890
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "A simpler version of the right hand rule is the following : Open up your right hand palm and curl the fingers pointing from  a to b. Your stretched thumb points in the direction of c."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "It should be remembered that there are two angles between any two vectors  a and b . In Fig. 6.15 (a) or (b) they correspond to θ (as shown) and (3600– θ). While applying either of the above rules, the rotation should be taken through the smaller angle (<1800) between  a and b. It is θ here."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Because of the cross (×) used to denote the vector product, it is also referred to as cross product."
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "• Note that scalar product of two vectors is commutative as said earlier, a.b = b.a"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The vector product, however, is not commutative, i.e. a × b ≠ b × a"
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "The magnitude of both a × b and b × a is the same ( ab sin θ ); also, both of them are perpendicular to the plane of  a and b. But the rotation of the right-handed screw in case of a × b  is from  a to b, whereas in case of  b × a it is from b to a. This means the two vectors are in opposite directions. We have"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1166,
+        1017,
+        1415,
+        1056
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "list",
+      "text": "• Another interesting property of a vector product is its behaviour under reflection. Under reflection (i.e. on taking the plane mirror image) we have x → −x, y → −y and z → −z . As a result all the components of a vector change sign and thus a → −a, b → −b . What happens to a × b under reflection?"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1166,
+        1363,
+        1512,
+        1402
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Thus, a × b does not change sign under reflection."
+    },
+    {
+      "n": 17,
+      "kind": "list",
+      "text": "• Both scalar and vector products are distributive with respect to vector addition. Thus,"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1172,
+        1582,
+        1453,
+        1620
+      ],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1172,
+        1633,
+        1469,
+        1672
+      ],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "list",
+      "text": "• We may write c = a × b in the component form. For this we first need to obtain some elementary cross products:"
+    },
+    {
+      "n": 21,
+      "kind": "list",
+      "text": "(i) a × a = 0 (0 is a null vector, i.e. a vector with zero magnitude)"
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "This follows since magnitude of a × a  is a2 sin 0° = 0 ."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "102",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null even though page is 11, so continuation was judged from the page image alone: the first block opens a new sentence, so first_block_continues_from_previous is false. The right column's last block is a complete sentence, but the enumerated list of elementary cross products it belongs to (item (i) only) plainly carries on to the next page. Superscript digits are flattened in the text layer (\"3600\" for 360 degrees, \"<1800\" for <180 degrees, \"a2\" for a squared); these were copied as the text layer holds them, per the step's inline-mathematics rule. Inline formula fragments that the text layer hoists onto separate lines (e.g. \"sin / ab / theta\", \"x x y y z z\" with the arrows) were reassembled into the reading order shown on the page image using only the characters the text layer contains. Fig. 6.15 parts (a) and (b) plus their shared caption are marked as one figure block."
+}

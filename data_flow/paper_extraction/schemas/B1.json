@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/B1.json",
+  "title": "B1 agent output (b1-paper-registrar)",
+  "description": "Section 10/B1 'Agent output' line and the b1-paper-registrar agent file (Appendix B), including its worked examples. DISCREPANCY: Section 6.2's register/papers.csv data contract (SPEC.md line 415) defines `trust (official|memory_based)` -- two values -- but b1-paper-registrar.md's own 'Allowed values' (refined 2026-10-11) lists a third value, 'unsure', and its own worked example sets trust: \"unsure\" for the confirmed-real GAJAHA-M1 fabricated-booklet-code case. config/allowed_values.yaml has no `trust` key at all. This schema follows the agent file (three values) as authoritative; Section 6.2 and allowed_values.yaml should be reconciled separately.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "file_kind", "exam", "year", "sitting", "booklet_code", "language",
+        "trust", "cover_text_exact", "agrees_with_manifest", "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "file_kind": { "type": "string", "enum": ["paper", "key"] },
+        "exam": { "type": "string", "enum": ["NEET", "other"] },
+        "year": { "type": "integer", "minimum": 2012, "maximum": 2026 },
+        "sitting": {
+          "type": "string",
+          "enum": ["MAIN", "PH2", "REEXAM", "RETEST", "CANCELLED", "unsure"],
+          "description": "Follows the printed cover; if the cover doesn't say, use the manifest and say so in note (Rule 6: 'unsure' always allowed)."
+        },
+        "booklet_code": {
+          "type": "string",
+          "description": "Exactly as printed on the page's own content -- never copied forward from a folder/file name or the manifest just because they agree with what was expected. May be empty string when the page itself shows no confirmable code (see 'trust': 'unsure')."
+        },
+        "language": { "type": "string", "enum": ["English", "Hindi", "other"] },
+        "trust": {
+          "type": "string",
+          "enum": ["official", "memory_based", "unsure"],
+          "description": "Agent file's three-value list (see schema description re: Section 6.2 discrepancy). 'unsure' set when the page content does not independently confirm the code."
+        },
+        "cover_text_exact": {
+          "type": "object",
+          "required": ["code", "date"],
+          "additionalProperties": false,
+          "properties": {
+            "code": { "type": "string", "description": "The exact printed code line, or empty string if none found." },
+            "date": { "type": "string", "description": "Exact text copied from the input." }
+          }
+        },
+        "agrees_with_manifest": { "type": "boolean" },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

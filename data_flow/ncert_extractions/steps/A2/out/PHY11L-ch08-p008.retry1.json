@@ -1,0 +1,27 @@
+{
+  "blocks": [
+    {"n": 1, "kind": "paragraph", "text": "Thus, solids are the least compressible, whereas, gases are the most compressible. Gases are about a million times more compressible than solids! Gases have large compressibilities, which vary with pressure and temperature. The incompressibility of the solids is primarily due to the tight coupling between the neighbouring atoms. The molecules in liquids are also bound with their neighbours but not as strong as in solids. Molecules in gases are very poorly coupled to their neighbours."},
+    {"n": 2, "kind": "paragraph", "text": "Table 8.4 shows the various types of stress, strain, elastic moduli, and the applicable state of matter at a glance."},
+    {"n": 3, "kind": "box", "text": "Example 8.5 The average depth of Indian Ocean is about 3000 m. Calculate the fractional compression, ∆V/V, of water at the bottom of the ocean, given that the bulk modulus of water is 2.2 × 109 N m–2. (Take g  = 10 m s–2)"},
+    {"n": 4, "kind": "paragraph", "text": "Answer   The pressure exerted by a  3000 m column of water on the bottom layer"},
+    {"n": 5, "kind": "equation", "needs_special": true, "bbox": [293, 1057, 932, 1155], "text": ""},
+    {"n": 6, "kind": "paragraph", "text": "Fractional compression ∆V/V, is"},
+    {"n": 7, "kind": "equation", "needs_special": true, "bbox": [293, 1214, 932, 1295], "text": ""},
+    {"n": 8, "kind": "heading", "text": "8.5.4 POISSON’S RATIO"},
+    {"n": 9, "kind": "paragraph", "text": "The strain perpendicular to the applied force is called lateral strain. Simon Poisson pointed out that within the elastic limit, lateral strain is directly proportional to the longitudinal strain. The ratio of the lateral strain to the longitudinal strain in a stretched wire is called Poisson’s ratio. If the original diameter of the wire is d and the contraction of the diameter under stress is ∆d, the lateral strain is ∆d/d. If the original length of the wire is L and the elongation under stress is ∆L, the longitudinal strain is ∆L/L. Poisson’s ratio is then (∆d/d)/(∆L/L) or (∆d/∆L) × (L/d). Poisson’s ratio is a ratio of two strains; it is a pure number and has no dimensions or units. Its value depends only on the nature of material. For steels the value is between 0.28 and 0.30, and for aluminium alloys it is about 0.33."},
+    {"n": 10, "kind": "heading", "text": "8.5.5 Elastic Potential Energy in a Stretched Wire"},
+    {"n": 11, "kind": "paragraph", "text": "When a wire is put under a tensile stress, work is done against the inter-atomic forces. This work is stored in the wire in the form of elastic potential energy. When a wire of original length L and area of cross-section A is subjected to a deforming force F along the length of the wire, let the length of the wire be elongated by l. Then from Eq. (8.8), we have F = YA × (l/L). Here Y is the Young’s modulus of the material of the wire. Now for a further elongation of infinitesimal small length dl, work done dW is F × dl or YAldl/L. Therefore, the amount of work done (W) in increasing the length of the wire from L to L + l, that is from l = 0 to l = l is"},
+    {"n": 12, "kind": "equation", "needs_special": true, "bbox": [981, 802, 1604, 905], "text": ""},
+    {"n": 13, "kind": "equation", "needs_special": true, "bbox": [981, 916, 1604, 1030], "text": ""},
+    {"n": 14, "kind": "equation", "needs_special": true, "bbox": [981, 1030, 1604, 1127], "text": ""},
+    {"n": 15, "kind": "equation", "needs_special": true, "bbox": [981, 1122, 1604, 1214], "text": ""},
+    {"n": 16, "kind": "paragraph", "text": "This work is stored in the wire in the form of elastic potential energy (U). Therefore the elastic potential energy per unit volume of the wire (u) is"},
+    {"n": 17, "kind": "equation", "needs_special": true, "bbox": [981, 1344, 1604, 1420], "text": ""},
+    {"n": 18, "kind": "heading", "text": "8.6 APPLICATIONS OF ELASTIC BEHAVIOUR OF MATERIALS"},
+    {"n": 19, "kind": "paragraph", "text": "The elastic behaviour of materials plays an important role in everyday life. All engineering designs require precise knowledge of the elastic behaviour of materials. For example while designing a building, the structural design of the columns, beams and supports require knowledge of strength of materials used. Have you ever thought why the beams used in construction of bridges, as supports etc. have a cross-section of the type I? Why does a heap of sand or a hill have a pyramidal shape? Answers to these questions can be obtained from the study of structural engineering which is based on concepts developed here."}
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["174", "PHYSICS", "2024-25"],
+  "note": "Multi-line displayed equations (the W=∫...dl derivation, the W=½Y(l/L)²AL step, the two ½×...×volume lines, and u=½σε (8.14)) are marked needs_special rather than transcribed as paragraph text, since their text-layer extraction is out-of-order/garbled (stacked fractions and integral read top-to-bottom instead of left-to-right) and cannot be faithfully copied as linear text; this is almost certainly why the previous attempt's similarity score was low. A stray single-character 'u' appears in the raw text_layer between the header and the first paragraph; it does not correspond to any visible text at that position on the page image (it is a misplaced extraction of the 'u' from the u=½σε equation lower on the page) and was not included as a block."
+}

@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000289",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:15"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "If 5sin m 3 $\\pi$(|= $\\pi$ + ||| ) xt [unreadable notation — the sine argument/expression is collapsed and scrambled in the source] represents the motion of a particle executing simple harmonic motion, the amplitude and time period of motion, respectively, are",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$5\\,\\mathrm{cm}$, $2\\,\\mathrm{s}$",
+    "2": "$5\\,\\mathrm{m}$, $2\\,\\mathrm{s}$",
+    "3": "$5\\,\\mathrm{cm}$, $1\\,\\mathrm{s}$",
+    "4": "$5\\,\\mathrm{m}$, $1\\,\\mathrm{s}$"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "15\nIf 5sin m 3 π⎛⎞= π + ⎜⎟⎝⎠ xt represents the motion of a particle executing simple harmonic motion, the\namplitude and time period of motion, respectively, are\n(1)\n5 cm, 2 s\n(2)\n5 m, 2 s\n(3)\n5 cm, 1 s\n(4)\n5 m, 1 s\nOscillations\n",
+  "b4_script_options": {
+    "1": "5 cm, 2 s",
+    "2": "5 m, 2 s",
+    "3": "5 cm, 1 s",
+    "4": "5 m, 1 s\nOscillations"
+  },
+  "official_answer": "2",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "unsure",
+  "b6_reason": "The displacement equation is destroyed in extraction, so the angular frequency cannot be recovered and the time period cannot be computed.",
+  "b6_working": "Stem reads '5sin m 3 pi(|= pi + ||| ) xt' with the marker '[unreadable notation - the sine argument/expression is collapsed and scrambled in the source]'. T = 2pi/omega requires the coefficient of t, which is unreadable: 'pi' would give T = 2 s, '2pi' or '3pi' a different value.",
+  "b6_confidence": "low",
+  "b6_note": "Upstream extraction damage. The stray 'm' just after '5sin' hints the amplitude is in metres (options 2 or 4), but the coefficient of t is unrecoverable, so the period half of the answer would be a guess. Needs re-extraction of the equation from the source image.",
+  "b6_agrees_with_key": false
+}

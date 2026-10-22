@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "called biological nitrogen fixation. The enzyme, nitrogenase which is\ncapable of nitrogen reduction is present exclusively in prokaryotes. Such\nmicrobes are called N2- fixers.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        534,
+        420,
+        1537,
+        490
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The nitrogen-fixing microbes could be free-living or symbiotic. Examples\nof free-living nitrogen-fixing aerobic microbes are Azotobacter and\nBeijerinckia while Rhodospirillum is anaerobic and free-living. In addition,\na number of cyanobacteria such as Anabaena and Nostoc are also free-\nliving nitrogen-fixers."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "Symbiotic biological nitrogen fixation"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Several types of symbiotic biological nitrogen fixing associations are known.\nThe most prominent among them is the legume-bacteria relationship.\nSpecies of rod-shaped Rhizobium has such relationship with the roots of\nseveral legumes such as alfalfa, sweet clover, sweet pea, lentils, garden pea,\nbroad bean, clover beans, etc.  The most common association on roots is\nas nodules. These nodules are small outgrowths on the roots. The microbe,\nFrankia, also produces nitrogen-fixing nodules on the roots of non-\nleguminous plants (e.g., Alnus). Both Rhizobium and Frankia are free-\nliving in soil, but as symbionts, can fix atmospheric nitrogen."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Uproot any one plant of a common pulse, just before flowering. You\nwill see near-spherical outgrowths on the roots. These are nodules. If\nyou cut through them you will notice that the central portion is red or\npink. What makes the nodules pink? This is due to the presence of\nleguminous haemoglobin or leg-haemoglobin."
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "Nodule Formation"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Nodule formation involves a sequence of multiple interactions between\nRhizobium and roots of the host plant. Principal stages in the nodule\nformation are summarised as follows:"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Rhizobia multiply and colonise the surroundings of roots and get attached\nto epidermal and root hair cells. The root-hairs curl and the bacteria invade\nthe root-hair. An infection thread is produced carrying the bacteria into\nthe cortex of the root, where they initiate the nodule formation in the cortex\nof the root. Then the bacteria are released from the thread into the cells\nwhich leads to the differentiation of specialised nitrogen fixing cells. The\nnodule thus formed, establishes a direct vascular connection with the host\nfor exchange of nutrients. These events are depicted in Figure 12.4."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The nodule contains all the necessary biochemical components, such\nas the enzyme nitrogenase and leghaemoglobin. The enzyme nitrogenase\nis a Mo-Fe protein and catalyses the conversion of atmospheric nitrogen\nto ammonia, (Figure 12.5) the first stable product of nitrogen fixation."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "202",
+    "BIOLOGY",
+    "2022-23"
+  ],
+  "note": "Used the text layer for prose (matches the image); image used for layout and the equation bbox. Single-column page. The boxed nitrogenase equation (N ≡ N --Nitrogenase--> NH3) is block 2, marked needs_special with text left empty per spec; its text layer rendering is garbled. 'Uproot any one plant of a common pulse...' is ordinary unboxed prose on the image, so it is a paragraph, not a box. previous_page_last_block was null, but page 8 was read in this run and ends '...Reduction of nitrogen to ammonia by living organisms is', continued here by 'called biological nitrogen fixation.' - judged from a predecessor actually read. The page's last paragraph ends with a full stop at the foot of the page, so last_block_continues_on_next is false."
+}

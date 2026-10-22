@@ -1,0 +1,186 @@
+{
+  "question_id": "Q-000595",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:72"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Which one is not correct mathematical equation for Dalton’s Law of partial pressure? Here p = total pressure of gaseous mixture",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$p = p_1 + p_2 + p_3$",
+    "2": "1 2 3 RT RT RTp = n + n + nVVV",
+    "3": "pi = $\\chi$ip, where pi = partial pressure of ith gas $\\chi$i = mole fraction of ith gas in gaseous mixture",
+    "4": "i i ip = p °$\\chi$ , where $\\chi$i = mole fraction of ith gas in gaseous mixture pi ° = pressure of ith gas in pure state"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [
+    "NOT"
+  ],
+  "b4_text_layer_sanitized": "72\nWhich one is not correct mathematical equation for Dalton’s Law of partial pressure? Here p = total\npressure of gaseous mixture\n(1)\np = p1 + p2 + p3\n(2)\n1 2 3 RT RT RTp = n + n + nVVV\n(3)\npi = χip, where pi = partial pressure of\nith gas χi = mole fraction of ith gas in\ngaseous mixture\n(4)\ni i ip = p °χ , where χi = mole fraction\nof ith gas in gaseous mixture pi ° =\npressure of ith gas in pure state\nStates of Matter\n",
+  "b4_script_options": {
+    "1": "p = p1 + p2 + p3",
+    "2": "1 2 3 RT RT RTp = n + n + nVVV",
+    "3": "pi = χip, where pi = partial pressure of\nith gas χi = mole fraction of ith gas in\ngaseous mixture",
+    "4": "i i ip = p °χ , where χi = mole fraction\nof ith gas in gaseous mixture pi ° =\npressure of ith gas in pure state\nStates of Matter"
+  },
+  "official_answer": "4",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "physical",
+  "b6_answer": "4",
+  "b6_reason": "pi = pi(pure) x mole fraction is Raoult's law, not Dalton's law of partial pressures.",
+  "b6_working": "Dalton: p = sum pi = sum ni RT/V, and pi = chi_i * p",
+  "b6_confidence": "medium",
+  "b6_note": "Source damage: options 2 and 4 have scrambled LaTeX/subscripts; read as p = n1RT/V + n2RT/V + n3RT/V and pi = pi(deg)*chi_i. Confidence lowered.",
+  "b6_agrees_with_key": true
+}

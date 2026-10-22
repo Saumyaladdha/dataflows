@@ -1,0 +1,36 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "In emerald [Fig.5.12(b)], Cr³⁺ ions occupy octahedral sites in the mineral beryl (Be₃Al₂Si₆O₁₈). The absorption bands seen in the ruby shift to longer wavelength, namely yellow-red and blue, causing emerald to transmit light in the green region.",
+      "fixes": [
+        {"wrong": "Cr3+", "right": "Cr³⁺"},
+        {"wrong": "(Be3Al2Si6O18)", "right": "(Be₃Al₂Si₆O₁₈)"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "Intext Questions\n5.5 Explain on the basis of valence bond theory that [Ni(CN)₄]²⁻ ion with square planar structure is diamagnetic and the [NiCl₄]²⁻ ion with tetrahedral geometry is paramagnetic.\n5.6 [NiCl₄]²⁻ is paramagnetic while [Ni(CO)₄] is diamagnetic though both are tetrahedral. Why?\n5.7 [Fe(H₂O)₆]³⁺ is strongly paramagnetic whereas [Fe(CN)₆]³⁻ is weakly paramagnetic. Explain.\n5.8 Explain [Co(NH₃)₆]³⁺ is an inner orbital complex whereas [Ni(NH₃)₆]²⁺ is an outer orbital complex.\n5.9 Predict the number of unpaired electrons in the square planar [Pt(CN)₄]²⁻ ion.\n5.10 The hexaquo manganese(II) ion contains five unpaired electrons, while the hexacyanoion contains only one unpaired electron. Explain using Crystal Field Theory.",
+      "fixes": [
+        {"wrong": "[Ni(CN)4]2–", "right": "[Ni(CN)₄]²⁻"},
+        {"wrong": "[NiCl4]2–", "right": "[NiCl₄]²⁻"},
+        {"wrong": "[Ni(CO)4]", "right": "[Ni(CO)₄]"},
+        {"wrong": "[Fe(H2O)6]3+", "right": "[Fe(H₂O)₆]³⁺"},
+        {"wrong": "[Fe(CN)6]3–", "right": "[Fe(CN)₆]³⁻"},
+        {"wrong": "[Co(NH3)6]3+", "right": "[Co(NH₃)₆]³⁺"},
+        {"wrong": "[Ni(NH3)6]2+", "right": "[Ni(NH₃)₆]²⁺"},
+        {"wrong": "[Pt(CN)4]2–", "right": "[Pt(CN)₄]²⁻"}
+      ]
+    },
+    {"n": 7, "no_change": true},
+    {
+      "n": 8,
+      "corrected_text": "Decacarbonyldimanganese(0) is made up of two square pyramidal Mn(CO)₅ units joined by a Mn – Mn bond. Octacarbonyldicobalt(0) has a Co – Co bond bridged by two CO groups (Fig.5.13).",
+      "fixes": [
+        {"wrong": "Mn(CO)5", "right": "Mn(CO)₅"}
+      ]
+    }
+  ],
+  "note": "Three blocks corrected: Cr³⁺ and the beryl formula Be₃Al₂Si₆O₁₈ in n=1, all nine complex-ion formulae and charges across Intext Questions 5.5–5.9 in n=5 (the same [NiCl₄]²⁻ appears in both 5.5 and 5.6 and is listed once), and Mn(CO)₅ in n=8. The oxidation-state zeros in the carbonyl names — Tetracarbonylnickel(0), pentacarbonyliron(0), Decacarbonyldimanganese(0) — are full-size parenthesised zeros on the page, not notation, and were left alone; the Mn – Mn and Co – Co bond dashes likewise. n=4 and n=7 are prose. No degree symbols, locants, primes or radicals on this page."
+}

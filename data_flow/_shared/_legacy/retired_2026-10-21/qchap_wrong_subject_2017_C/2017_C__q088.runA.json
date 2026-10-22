@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on Down's syndrome arising from primary non-disjunction of AUTOSOME 21 (Klinefelter's and Turner's are sex-chromosome aneuploidies), a chromosomal-disorder fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Chemistry\" and a 27-chapter Chemistry closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180 (verified: q001-q090 are Biology stems, q091 is a spring-constant item, q136 is an equilibrium-constant item). A Biology question was therefore handed the wrong subject's list, so no correct code exists in it. Expected chapter: 'Principles of Inheritance and Variation' (chromosomal disorders: trisomy 21, aneuploidy), not offered."
+}

@@ -1,0 +1,16 @@
+{
+  "blocks": [
+    {"n": 2, "no_change": true},
+    {"n": 4, "no_change": true},
+    {"n": 5, "no_change": true},
+    {
+      "n": 8,
+      "corrected_text": "Nitriles on reduction with lithium aluminium hydride (LiAlH₄) or catalytic hydrogenation produce primary amines. This reaction is used for ascent of amine series, i.e., for preparation of amines containing one carbon atom more than the starting amine.",
+      "fixes": [
+        {"wrong": "LiAlH4", "right": "LiAlH₄"}
+      ]
+    },
+    {"n": 11, "no_change": true}
+  ],
+  "note": "n=8 had a flattened subscript in LiAlH4 (reagent name), restored to LiAlH₄ to match the image. All other blocks (n=2, n=4, n=5, n=11) already matched exactly; n=5's 'RI > RBr >RCl' spacing is printed that way on the page and was left untouched."
+}

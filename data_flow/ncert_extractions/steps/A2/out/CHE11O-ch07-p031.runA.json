@@ -1,0 +1,165 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "nicotine all behave as very weak bases due to their very small Kb. Ammonia produces OH– in aqueous solution:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 362, 815, 408],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The pH scale for the hydrogen ion concentration has been extended to get:"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [212, 482, 858, 528],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Problem 7.21\nThe pH of 0.004M hydrazine solution is 9.7. Calculate its ionization constant Kb and pKb."
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Solution"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [225, 755, 815, 802],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "From the pH we can calculate the hydrogen ion concentration. Knowing hydrogen ion concentration and the ionic product of water we can calculate the concentration of hydroxyl ions. Thus we have:"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [225, 1015, 842, 1210],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "The concentration of the corresponding hydrazinium ion is also the same as that of hydroxyl ion. The concentration of both these ions is very small so the concentration of the undissociated base can be taken equal to 0.004M."
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "Thus,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [225, 1455, 838, 1595],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "box",
+      "text": "Problem 7.22\nCalculate the pH of the solution in which 0.2M NH4Cl and 0.1M NH3 are present. The pKb of ammonia solution is 4.75."
+    },
+    {
+      "n": 14,
+      "kind": "box",
+      "text": "Solution"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [225, 1832, 832, 1882],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "box",
+      "text": "The ionization constant of NH3,"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [225, 1938, 578, 1982],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [918, 252, 1522, 748],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "box",
+      "text": "As Kb is small, we can neglect x in comparison to 0.1M and 0.2M. Thus,"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [918, 812, 1352, 965],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "heading",
+      "text": "7.11.5 Relation between Ka and Kb"
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "As seen earlier in this chapter, Ka and Kb represent the strength of an acid and a base, respectively. In case of a conjugate acid-base pair, they are related in a simple manner so that if one is known, the other can be deduced. Considering the example of NH4+ and NH3 we see,"
+    },
+    {
+      "n": 23,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [918, 1278, 1538, 1528],
+      "text": ""
+    },
+    {
+      "n": 24,
+      "kind": "paragraph",
+      "text": "Where, Ka represents the strength of NH4+ as an acid and Kb represents the strength of NH3 as a base."
+    },
+    {
+      "n": 25,
+      "kind": "paragraph",
+      "text": "It can be seen from the net reaction that the equilibrium constant is equal to the product of equilibrium constants Ka and Kb for the reactions added. Thus,"
+    },
+    {
+      "n": 26,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [898, 1832, 1538, 2022],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "222",
+    "CHEMISTRY",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p030 output, whose last block ended '...For example, methylamine, codeine, quinine and', and this page opens 'nicotine all behave as very weak bases due to...', so first_block_continues_from_previous is true. Displayed expressions are needs_special rather than transcribed, as elsewhere in this chapter: blocks 2, 4 (equation 7.34, its number inside the bbox), 7, 9, 12, 15, 17, 18, 20, 23 and 26. The pink panel runs from the left column into the top of the right column and holds Problem 7.21, its solution, and Problem 7.22 with its solution; its prose lines are kept as box blocks (6, 8, 10, 11, 13, 14, 16, 19) so the panel is split only where a display interrupts it. Block 18 is the right-column continuation of the Problem 7.22 solution: 'Kb = 10–4.75 = 1.77 × 10–5 M', the displayed NH3 equilibrium and its 'Initial concentration (M) / Change to reach equilibrium (M) / At equilibrium (M)' label and concentration rows, down to 'Kb = [NH4+][OH–] / [NH3] = (0.20 + x)(x) / (0.1 – x) = 1.77 × 10–5', the label rows being inside the bbox as with equation (7.24) on p019. Block 23 groups the six display lines of the NH4+/NH3 conjugate-pair scheme including the 'Net:' line. The page's last block is block 26, the completed Ka × Kb derivation ending '= (5.6x10–10) × (1.8 × 10–5) = 1.0 × 10–14 M', which closes on a result, so last_block_continues_on_next is false."
+}

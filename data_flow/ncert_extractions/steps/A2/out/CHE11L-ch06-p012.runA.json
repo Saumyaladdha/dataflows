@@ -1,0 +1,88 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Calculate Kc for the reaction, PCl5 ⇌ PCl3 + Cl2 Solution The equilibrium constant Kc for the above reaction can be written as,",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [294, 471, 792, 536],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Problem 6.4 The value of Kc = 4.24 at 800K for the reaction, CO (g) + H2O (g) ⇌ CO2 (g) + H2 (g) Calculate equilibrium concentrations of CO2, H2, CO and H2O at 800 K, if only CO and H2O are present initially at concentrations of 0.10M each. Solution For the reaction, CO (g)  +    H2O (g) ⇌ CO2 (g) + H2 (g) Initial concentration: 0.1M        0.1M           0        0 Let x mole per litre of each of the product be formed. At equilibrium: (0.1-x) M     (0.1-x) M      x M     x M where x is the amount of CO2 and H2 at equilibrium. Hence, equilibrium constant can be written as, Kc = x2/(0.1-x)2 = 4.24 x2 = 4.24(0.01 + x2-0.2x) x2 = 0.0424 + 4.24x2-0.848x 3.24x2 – 0.848x + 0.0424 = 0 a = 3.24, b = – 0.848, c = 0.0424 (for quadratic equation ax2 + bx + c = 0,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [294, 1632, 640, 1735],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "x =  0.848±√(0.848)2– 4(3.24)(0.0424)/ (3.24×2) x = (0.848 ± 0.4118)/ 6.48 x1 = (0.848 – 0.4118)/6.48 = 0.067 x2 = (0.848 + 0.4118)/6.48  = 0.194"
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "the value 0.194 should be neglected because it will give concentration of the reactant which is more than initial concentration. Hence the equilibrium concentrations are, [CO2] = [H2-] = x = 0.067 M [CO] = [H2O] = 0.1 – 0.067 = 0.033 M"
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Problem 6.5 For the equilibrium, 2NOCl(g) ⇌ 2NO(g)  +  Cl2(g) the value of the equilibrium constant, Kc is 3.75 × 10–6 at 1069 K. Calculate the Kp for the reaction at this temperature? Solution We know that, Kp = Kc(RT)∆n For the above reaction, ∆n = (2+1) – 2 = 1 Kp = 3.75 ×10–6 (0.0831 × 1069) Kp = 0.033"
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "6.5 HETEROGENEOUS EQUILIBRIA"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Equilibrium in a system having more than one phase is called heterogeneous equilibrium. The equilibrium between water vapour and liquid water in a closed container is an example of heterogeneous equilibrium."
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [943, 1350, 1229, 1397],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "In this example, there is a gas phase and a liquid phase. In the same way, equilibrium between a solid and its saturated solution,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [899, 1518, 1530, 1563],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "is a heterogeneous equilibrium."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Heterogeneous equilibria often involve pure solids or liquids. We can simplify equilibrium expressions for the heterogeneous equilibria involving a pure liquid or a pure solid, as the molar concentration of a pure solid or liquid is constant (i.e., independent of the amount present). In other words if a substance ‘X’ is involved, then [X(s)] and [X(l)] are constant, whatever the amount of ‘X’ is taken. Contrary to this, [X(g)] and [X(aq)] will",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["EQUILIBRIUM", "179", "2024-25"],
+  "note": "Two-column page; left column read before right. The pink Problem panel fills the whole left column and the top of the right column. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 11 output I had just written myself: page 11 ended mid-box inside Problem 6.3 (data given, question still to come), and this page opens 'Calculate Kc for the reaction,' — so first_block_continues_from_previous is true. Within the panel I split out the two pieces of true display maths as equation blocks for the special transcriber (block 2, the Kc = [PCl3][Cl2]/[PCl5] = (1.59)2/(1.41) = 1.79 fraction; block 4, the quadratic-formula fraction); the remaining box blocks keep the worked-solution lines as the text layer holds them, with flattened superscripts (x2 for x squared, 10–6 for 10 to the minus 6). Block 6 copies the printed '[CO2] = [H2-]' exactly, including the stray hyphen inside the second bracket, which looks like a typesetting error in the book but is left as printed. Blocks 10 and 12 are the displayed equilibria H2O(l) ⇌ H2O(g) and Ca(OH)2 (s) + (aq) ⇌ Ca2+ (aq) + 2OH–(aq). Page ends mid-sentence at 'will'."
+}

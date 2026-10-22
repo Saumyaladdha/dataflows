@@ -1,0 +1,24 @@
+# config/cascade.yaml — SPEC Section 15
+book_register:        {rerun_book: [A2, A2S, A3, A4, A5, A6, A7, A8, A9], rerun_questions_citing: [D3, D4, D5, D6, D7, E3, E5]}
+passage_cuts:         {rerun_chapter: [A4, A5, A6, A7, A8, A9], rerun_questions_in_chapter: [D3, D4, D5, D6, D7, D8, D9, D10, D11, E3, E4, E5, F4]}
+subtopic_list:        {rerun_chapter: [A5], rerun_questions_in_chapter: [D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, E3, E4, E5, F4]}
+passage_link:         {rerun_chapter: [A6, A7], rerun_questions_in_subtopic: [D3, D4, D5, D6, D7, D8, D9, D10, D11, E3, E4, E5, F4]}
+pair:                 {rerun_pair: [A7, A8, A9], rerun_questions_citing: [D5, D6, D7]}
+change_log_row:       {rerun_affected_questions: [D6, D7, E5, F4]}
+paper_register:       {rerun_paper: [B5, B6, B7, B8, C1, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, E1, E2, E3, E4, E5, E6, F4]}
+question_boundaries:  {rerun_question: [B3, B4, B5, B6, B7, B8, C1, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, E1, E2, E3, E4, E5, E6, F4]}
+question_text:        {rerun_question: [B6, B7, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, E1, E2, E3, E4, E5, E6, F4]}
+official_answer:      {rerun_question: [B6, B8, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, E4, E5, F4]}
+b8_correction:        {rerun_question: [D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, E1, E2, E3, E4, E5, E6, F4]}
+subject_branch:       {rerun_question: [D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, E3, E4, E5, F4]}
+chapter:              {rerun_question: [D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, E3, E4, E5, F4]}
+subtopic:             {rerun_question: [D3, D4, D5, D6, D7, D8, E3, E4, E5], rerun_old_and_new_subtopic: [D9, D10, D11, F4]}
+evidence:             {rerun_question: [D5, D6, D7, D8, E3, E4, E5], rerun_subtopic: [D9, D10, D11, F4]}
+older_line:           {rerun_question: [D6, D7]}
+status_note:          {rerun_question: [D7]}
+latest_answer:        {rerun_question: [D4, D8, E4, E5], rerun_subtopic: [D9, D10, D11, F4]}
+fact_line:            {rerun_subtopic: [D9, D10, D11, F4]}
+repeat_groups:        {rerun_subtopic: [F4]}
+codebook_file:        {rerun_all_questions_of_step_that_reads_it: true, then: [F4]}
+allowed_value_change: {rerun_affected_questions_of_that_tag_step: true, then: [F4]}
+any_e_tag:            {rerun_subtopic: [F4]}

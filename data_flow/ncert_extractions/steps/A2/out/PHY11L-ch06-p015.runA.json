@@ -1,0 +1,133 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [308, 205, 950, 945],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "If a force acts on a single particle at a point P whose position with respect to the origin O is given by the position vector r (Fig. 6.18), the moment of the force acting on the particle with respect to the origin O is defined as the vector product"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [340, 1175, 945, 1215],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The moment of force (or torque) is a vector quantity. The symbol τ stands for the Greek letter tau. The magnitude of τ is"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [340, 1318, 945, 1358],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "where r is the magnitude of the position vector r, i.e. the length OP, F is the magnitude of force F and θ is the angle between r and F as shown."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Moment of force has dimensions M L2 T -2. Its dimensions are the same as those of work or energy. It is, however, a very different physical quantity than work. Moment of a force is a vector, while work is a scalar. The SI unit of moment of force is newton metre (N m). The magnitude of the moment of force may be written"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [340, 1718, 945, 1762],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [340, 1785, 945, 1830],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "where r⊥ = r sinθ is the perpendicular distance of the line of action of F from the origin and ( sin ) F F θ ⊥= is the component of F in the direction perpendicular to r. Note that τ = 0 if r = 0, F = 0 or θ = 00 or 1800 . Thus, the moment of a force vanishes if either the magnitude of the force is zero, or if the line of action of the force passes through the origin."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "One may note that since  r × F is a vector product, properties of a vector product of two vectors apply to it. If the direction of F is reversed, the direction of the moment of force is reversed. If directions of both r and F are reversed, the direction of the moment of force remains the same."
+    },
+    {
+      "n": 12,
+      "kind": "heading",
+      "text": "6.7.2 Angular momentum of a particle"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Just as the moment of a force is the rotational analogue of force in linear motion, the quantity angular momentum is the rotational analogue of linear momentum. We shall first define angular momentum for the special case of a single particle and look at its usefulness in the context of single particle motion. We shall then extend the definition of angular momentum to systems of particles including rigid bodies."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Like moment of a force, angular momentum is also a vector product. It could also be referred to as moment of (linear) momentum. From this term one could guess how angular momentum is defined."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Consider a particle of mass m and linear momentum p at a position r relative to the origin O. The angular momentum l of the particle with respect to the origin O is defined to be"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [983, 1340, 1620, 1382],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "The magnitude of the angular momentum vector is"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [983, 1448, 1620, 1492],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "where p is the magnitude of p and θ is the angle between r and p. We may write"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [983, 1550, 1620, 1596],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "where r⊥ (= r sinθ) is the perpendicular distance of the directional line of  p from the origin and ( sin ) p p θ ⊥= is the component of p in a direction perpendicular to r. We expect the angular momentum to be zero (l = 0), if the linear momentum vanishes (p = 0), if the particle is at the origin (r = 0), or if the directional line of  p passes through the origin θ = 00 or 1800."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "106",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null even though page is 15; judged continuation from the page image alone - the left column opens with Fig. 6.18 and the first text block starts a new indented sentence, and the page ends with a completed sentence. Layered-outline-font repeats in the text layer were collapsed to one occurrence (e.g. the bold tau extracted as 'τ τ τ τ τ' appears once, as printed). Inline mathematics is copied with the characters the text layer actually holds (e.g. '( sin ) F F θ ⊥=' for F⊥(= F sinθ)), per the source-artifact instruction; displayed equations (6.23), (6.24a), (6.24b), (6.24c), (6.25a), (6.26a), (6.26b) are left to the special transcriber. The paragraph beginning 'where r⊥ = r sinθ is the perpendicular distance' runs across the column break and is listed as one block. Fig. 6.18 and its caption are covered by one figure block."
+}

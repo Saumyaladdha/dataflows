@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "B10 figure splitter output",
+  "description": "Where each picture sits inside a recovered figure, and the label printed beside it. `slot` may name an opt/list/statement slot ONLY for list and statement slots; option slots are always \"unknown\", because our option text is empty and a printed label is the source paper's option order.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["panels", "labels_match_our_slots", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "panels": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "required": ["slot", "printed_label", "box"],
+            "additionalProperties": false,
+            "properties": {
+              "slot": {
+                "type": "string",
+                "pattern": "^(unknown|opt[1-9]|(list_i|list_ii|statements):[A-Za-z0-9]{1,4})$"
+              },
+              "printed_label": {
+                "type": "string",
+                "maxLength": 12,
+                "description": "Copied exactly as printed, or \"\" when the picture carries no label."
+              },
+              "box": {
+                "type": "array",
+                "minItems": 4,
+                "maxItems": 4,
+                "items": {"type": "number", "minimum": 0, "maximum": 1},
+                "description": "[x0, y0, x1, y1] as fractions of the figure's width and height."
+              }
+            }
+          }
+        },
+        "labels_match_our_slots": {"type": "boolean"},
+        "note": {"type": "string", "minLength": 1}
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": {"error": {"type": "string", "minLength": 1}}
+    }
+  ]
+}

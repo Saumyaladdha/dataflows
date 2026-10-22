@@ -1,0 +1,30 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "3. Average acceleration is the change in velocity divided by the time interval during which the change occurs :\na = ∆v/∆t\n4. Instantaneous acceleration is defined as the limit of the average acceleration as the time interval ∆t goes to zero :\na = lim(∆t→0) a = lim(∆t→0) ∆v/∆t = dv/dt\nThe acceleration of an object at a particular time is the slope of the velocity-time graph at that instant of time.  For uniform motion, acceleration is zero and the x-t graph is a straight line inclined to the time axis and the v-t graph is a straight line parallel to the time axis. For motion with uniform acceleration, x-t graph is a parabola while the v-t graph is a straight line inclined to the time axis.\n5. The area under the velocity-time curve between times t1 and t2 is equal to the displacement of the object during that interval of time.\n6. For objects in uniformly accelerated rectilinear motion, the five quantities, displacement x, time taken t, initial velocity v0, final velocity v and acceleration a are related by a set of simple equations called kinematic equations of motion :\nv = v0 +  at\nx = v0t + (1/2)at2\nv2 = v02 + 2ax\nif the position of the object at time t = 0 is 0.  If the particle starts at x = x0 , x in above equations is replaced by (x – x0).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        355,
+        1195,
+        1555,
+        1770
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "22",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Judged first_block_continues_from_previous from page 9, which I read myself in this batch (previous_page_last_block was null): the SUMMARY box opens on page 9 with points 1 and 2 and continues here with points 3 to 6, so this page starts mid-box. The box's display equations (average and instantaneous acceleration, and the three kinematic equations) are garbled in the text layer and are written linearly inside the box text; the overbars printed on the average-velocity and average-acceleration symbols cannot be shown in plain text. TEXT LAYER AND IMAGE DISAGREE on this page: the image carries a full-width five-column table (Physical quantity / Symbol / Dimensions / Unit / Remarks, rows for Path length, Displacement and Velocity) below the summary box, and that table is entirely absent from the text layer. It is blocked as a table for the special transcriber from the image. The table is cut off at the foot of the page and continues on page 11, which is why last_block_continues_on_next is true (mid-table)."
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A2L.json",
+  "title": "A2L agent output (a2l-layout-reader)",
+  "description": "Per-page PRINTED LAYOUT of an NCERT page, measured from the page image: page geometry, column structure, and one entry per visible element giving its region, its column, how its text is set, and any panel fill colour. Added 2026-10-14 so the HTML review exporter can reproduce a page's real arrangement (contents panel in the left column with prose beside it, banner, rule bar, figure placement, relative type sizes) instead of stacking every block in one flat column. Sizes are RELATIVE to the page's own body text, never absolute points: a ratio is what an agent can actually judge reliably from an image, and it survives any render DPI. This step reads ONLY the page image and never edits A2's output.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["page", "elements", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "page": {
+          "type": "object",
+          "required": ["width_px", "height_px", "body_text_size_px", "columns"],
+          "additionalProperties": false,
+          "properties": {
+            "width_px": { "type": "integer", "minimum": 1, "description": "Width of the page image you were given, in pixels." },
+            "height_px": { "type": "integer", "minimum": 1, "description": "Height of the page image you were given, in pixels." },
+            "body_text_size_px": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "description": "Cap-to-baseline height of ONE line of ordinary body prose on this page, in pixels. Every size_rel elsewhere is measured against this, so it is the page's unit of type."
+            },
+            "columns": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 3,
+              "description": "The page's text columns, left to right, as fractions of page width. A single full-width column is [{id:'full',x0:..,x1:..}].",
+              "items": {
+                "type": "object",
+                "required": ["id", "x0", "x1"],
+                "additionalProperties": false,
+                "properties": {
+                  "id": { "type": "string", "enum": ["full", "left", "right"] },
+                  "x0": { "type": "number", "minimum": 0, "maximum": 1 },
+                  "x1": { "type": "number", "minimum": 0, "maximum": 1 }
+                }
+              }
+            }
+          }
+        },
+        "elements": {
+          "type": "array",
+          "description": "Every element printed on the page, in reading order.",
+          "items": {
+            "type": "object",
+            "required": ["role", "bbox", "column", "size_rel"],
+            "additionalProperties": false,
+            "properties": {
+              "n": {
+                "type": ["integer", "null"],
+                "description": "The A2 block number this element corresponds to, when you were given one that matches it; null for an element A2 did not block (a rule bar, a decorative image, the page number)."
+              },
+              "role": {
+                "type": "string",
+                "enum": [
+                  "chapter_banner", "chapter_title", "rule_bar", "page_header_band", "footer_rule", "contents_panel",
+                  "section_heading", "major_heading", "paragraph", "list",
+                  "figure", "figure_caption", "table", "table_caption",
+                  "equation", "box", "decorative_image", "qr_code",
+                  "page_number", "running_header", "marginal_note", "epigraph"
+                ],
+                "description": "What the element IS on the printed page. `decorative_image` and `qr_code` are publishing furniture carrying no subject content. Three band-like roles are deliberately distinct and were split after agents collapsed them into one: `rule_bar` is the thick divider the chapter-OPENING page prints between its banner and its contents panel; `page_header_band` is the coloured strip across the top of every ordinary body page (it often alternates left/right between recto and verso); `footer_rule` is the thin rule near the page foot. Reporting all three as `rule_bar` made a chapter's palette unusable -- the summary picked one fill and listed the others as disagreement, when in truth they are different elements that each have their own correct colour."
+              },
+              "bbox": {
+                "type": "array",
+                "minItems": 4,
+                "maxItems": 4,
+                "items": { "type": "number", "minimum": 0, "maximum": 1 },
+                "description": "[x0, y0, x1, y1] as FRACTIONS of page width/height (0-1), so the layout is resolution-independent."
+              },
+              "column": { "type": "string", "enum": ["full", "left", "right"] },
+              "size_rel": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "description": "This element's text size divided by page.body_text_size_px. Body prose is 1.0 by definition; a chapter title might be 2.4, a caption 0.9. Use 1.0 for an element with no text of its own (a rule bar, a figure)."
+              },
+              "align": {
+                "type": "string",
+                "enum": ["left", "right", "center", "justify"],
+                "description": "How the element's text is set. NCERT justifies running prose and centres figure captions."
+              },
+              "font": {
+                "type": "string",
+                "enum": ["serif", "serif-italic", "serif-bold", "sans", "sans-light", "mono"],
+                "description": "The typeface class as printed. NCERT sets body prose in a serif and chapter titles in a light geometric sans."
+              },
+              "fill": {
+                "type": ["string", "null"],
+                "pattern": "^(#[0-9a-fA-F]{6}|)$",
+                "description": "Background fill of a panel/band element as a #rrggbb hex read from the image, or null when the element sits on bare paper."
+              },
+              "text_color": {
+                "type": ["string", "null"],
+                "pattern": "^(#[0-9a-fA-F]{6}|)$",
+                "description": "Colour of the element's text as a #rrggbb hex read from the image; null when it has no text."
+              }
+            }
+          }
+        },
+        "note": {
+          "type": "string",
+          "description": "Required. What you measured, anything you could not, and any element whose role was ambiguous."
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": {
+        "error": { "type": "string" }
+      }
+    }
+  ]
+}

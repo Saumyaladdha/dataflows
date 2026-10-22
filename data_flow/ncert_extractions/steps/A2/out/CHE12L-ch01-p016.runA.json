@@ -1,0 +1,71 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The expression on the left hand side of the equation as mentioned earlier is called relative lowering of vapour pressure and is equal to the mole fraction of the solute. The above equation can be written as:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [523, 305, 1488, 392],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Here n1 and n2 are the number of moles of solvent and solute respectively present in the solution. For dilute solutions n2 < < n1, hence neglecting n2 in the denominator we have"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [567, 529, 1488, 600],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [480, 616, 1488, 698],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Here w1 and w2 are the masses and M1 and M2 are the molar masses of the solvent and solute respectively."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "From this equation (1.28), knowing all other quantities, the molar mass of solute (M2) can be calculated."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "needs_special": true,
+      "bbox": [164, 892, 1488, 1395],
+      "text": "Example 1.6\nThe vapour pressure of pure benzene at a certain temperature is 0.850 bar. A non-volatile, non-electrolyte solid weighing 0.5 g when added to 39.0 g of benzene (molar mass 78 g mol-1). Vapour pressure of the solution, then, is 0.845 bar. What is the molar mass of the solid substance?\nSolution\nThe various quantities known to us are as follows:\np1^0 = 0.850 bar;  p = 0.845 bar;  M1 = 78 g mol–1;  w2 = 0.5 g;  w1 = 39 g\nSubstituting these values in equation (2.28), we get\nTherefore, M2 = 170 g mol–1"
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "1.6.2 Elevation of Boiling Point"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The vapour pressure of a liquid increases with increase of temperature. It boils at the temperature at which its vapour pressure is equal to the atmospheric pressure. For example, water boils at 373.15 K (100° C) because at this temperature the vapour pressure of water is 1.013 bar (1 atmosphere). We have also learnt in the last section that vapour pressure of the solvent decreases in the presence of non-volatile solute. Fig. 1.7 depicts the variation of vapour pressure of the pure solvent and solution as a function of temperature. For example, the vapour pressure of an aqueous solution of sucrose is less than 1.013 bar at 373.15 K. In order to make this solution boil, its vapour pressure must be increased to 1.013 bar by raising the temperature above the boiling temperature of the pure solvent (water). Thus, the boiling point of a solution is"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Chemistry",
+    "16",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null even though page is 16, so the continuation judgement for block 1 was made from the page image alone: block 1 begins an indented new sentence (\"The expression on the left hand side...\"), so continues_from_previous is false. Block 8 is the Example 1.6 / Solution box; it is kept as one box block with its prose copied exactly, but it also contains one display equation (the 0.850 bar - 0.845 bar fraction) plus superscripts/subscripts the text layer flattens, so it is marked needs_special with a bbox for the special transcriber. In that box's text, superscripts and subscripts are written inline (e.g. \"p1^0\", \"M2\") because the text layer breaks them onto separate lines. The original text inside the box refers to \"equation (2.28)\" where the equation on this page is numbered (1.28); this is as printed and has not been corrected. Equation blocks 2, 4 and 5 are equations (1.26), (1.27) and (1.28); block 5's bbox includes the leading \"or\". Image is 1600x2180 px and all bboxes are in those original pixel coordinates."
+}

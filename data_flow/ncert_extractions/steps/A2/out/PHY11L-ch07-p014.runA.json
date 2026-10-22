@@ -1,0 +1,174 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        330,
+        210,
+        1515,
+        300
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "(b) at depth d below the earth’s surface is",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        330,
+        345,
+        1515,
+        428
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "5. The gravitational force is a conservative force, and therefore a potential energy function can be defined. The gravitational potential energy associated with two particles separated by a distance r is given by",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        655,
+        532,
+        870,
+        600
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "where V is taken to be zero at r → ∞. The total potential energy for a system of particles is the sum of energies for all pairs of particles, with each pair represented by a term of the form given by above equation. This prescription follows from the principle of superposition.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "6. If an isolated system consists of a particle of mass m moving with a speed v in the vicinity of a massive body of mass M, the total mechanical energy of the particle is given by",
+      "continues_from_previous": false
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        655,
+        765,
+        930,
+        832
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "That is, the total mechanical energy is the sum of the kinetic and potential energies. The total energy is a constant of motion.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "7. If m moves in a circular orbit of radius a about M, where M >> m, the total energy of the system is",
+      "continues_from_previous": false
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        655,
+        935,
+        860,
+        1000
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "with the choice of the arbitrary constant in the potential energy given in the point 5., above. The total energy is negative for any bound system, that is, one in which the orbit is closed, such as an elliptical orbit. The kinetic and potential energies are",
+      "continues_from_previous": false
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        655,
+        1100,
+        860,
+        1240
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "list",
+      "text": "8. The escape speed from the surface of the earth is",
+      "continues_from_previous": false
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        655,
+        1290,
+        990,
+        1375
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "and has a value of 11.2 km s–1.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 17,
+      "kind": "list",
+      "text": "9. If a particle is outside a uniform spherical shell or solid sphere with a spherically symmetric internal mass distribution, the sphere attracts the particle as though the mass of the sphere or shell were concentrated at the centre of the sphere.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 18,
+      "kind": "list",
+      "text": "10. If a particle is inside a uniform spherical shell, the gravitational force on the particle is zero. If a particle is inside a homogeneous solid sphere, the force on the particle acts toward the centre of the sphere. This force is exerted by the spherical mass interior to the particle.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 19,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        500,
+        1612,
+        1410,
+        1948
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "140",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Single-column page: the full-width blue SUMMARY panel continues from page 13, followed by a free-standing five-row summary table. previous_page_last_block was null, but I read page 13 of this chapter directly before: its SUMMARY panel was cut off inside item 4, sub-item (a), after the g(h) display, and this page opens with the further g(h) = g(0)(1 - 2h/R_E) form that belongs to that same sub-item - so first_block_continues_from_previous is true on that direct evidence. The summary panel closes on this page at item 10 and the table below it is complete and bordered, so last_block_continues_on_next is false. As on page 13 I did not collapse the summary panel into a single box block, because it contains display equations that must be left to the special transcriber; its numbered items are list blocks and its displays are needs_special equation blocks. IMPORTANT text-layer gap: the summary TABLE at the bottom (columns 'Physical Quantity | Symbol | Dimensions | Unit | Remarks', rows Gravitational Constant, Gravitational Potential Energy, Gravitational Potential, Gravitational Intensity) is absent from the text layer entirely - the text layer jumps from summary item 10 to the '2024-25' footer - so it exists only in the image; marked needs_special as block n=19 with its pixel bbox. Marked needs_special with pixel bboxes (original 1826x2167): the g(h)/g(0) display (n=1), the g(d) display (n=3), V = -Gm_1m_2/r (n=5), E = 1/2 mv^2 - GMm/r (n=8), E = -GMm/2a (n=11), the two-line K and V displays (n=13), the escape-speed root display v_e = root(2GM_E/R_E) = root(2gR_E) (n=15) and the table (n=19). Notation discrepancies: the text layer flattens all subscripts and superscripts (image prints R_E, M_E, m_1, m_2, v_e, R_E^2, v^2, and in the table [M^-1 L^3 T^-2], [M L^2 T^-2], [L^2 T^-2], [LT^-2], N m^2 kg^-2, J kg^-1, m s^-2, 6.67x10^-11) and destroys fractions and square roots - the text layer's rendering of these displays is token soup (e.g. 'g h g ( ) 1 2 = ( ) − ( ) = 0 2 h R g G M R E E E'), so all equation notation was taken from the image. The arrow and infinity symbol in block n=6 ('zero at r -> infinity') do survive in the text layer as 'r → ∞' and match the image. The table's Remarks column contains stacked fractions and a unit-vector hat on r, and its Symbol column prints bold E and bold g - left to the special transcriber."
+}

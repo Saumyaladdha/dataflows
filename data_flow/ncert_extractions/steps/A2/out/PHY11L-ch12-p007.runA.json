@@ -1,0 +1,245 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "molecule with a different initial velocity which after a collision acquires the velocity  (vx, vy, vz ). If this were not so, the distribution of velocities would not remain steady. In any case we are finding 2 x v . Thus, on the whole, molecular collisions (if they are not too frequent and the time spent in a collision is negligible compared to time between collisions)  will not affect the calculation above.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "12.4.2 Kinetic Interpretation of Temperature"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Equation (13.14) can be written as"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        318,
+        588,
+        945,
+        682
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "where N (= nV) is the number of molecules in the sample."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The quantity in the bracket is the average translational kinetic energy of the molecules in the gas. Since the internal energy E of an ideal gas is purely kinetic*,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        318,
+        864,
+        945,
+        922
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Equation (12.15) then gives :"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        318,
+        936,
+        945,
+        984
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "We are now ready for a kinetic interpretation of temperature. Combining Eq. (12.17) with the ideal gas Eq. (12.3), we get"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        318,
+        1072,
+        945,
+        1120
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        298,
+        1130,
+        945,
+        1180
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "i.e., the average kinetic energy of a molecule is proportional to the absolute temperature of the gas; it is independent of pressure, volume or the nature of the ideal gas. This is a fundamental result relating temperature, a macroscopic measurable parameter of a gas (a thermodynamic variable as it is called) to a molecular quantity, namely the average kinetic energy of a molecule. The two domains are connected by the Boltzmann constant. We note in passing that Eq. (12.18) tells us that internal energy of an ideal gas depends only on temperature, not on pressure or volume. With this interpretation of temperature, kinetic theory of an ideal gas is completely consistent with the ideal gas equation and the various gas laws based on it."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "For a mixture of non-reactive ideal gases, the total pressure gets contribution from each gas in the mixture. Equation (12.14) becomes"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1008,
+        194,
+        1625,
+        244
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "In equilibrium, the average kinetic energy of the molecules of different gases will be equal. That is,"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        995,
+        344,
+        1625,
+        398
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "so that"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        995,
+        424,
+        1625,
+        474
+      ],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "which is Dalton’s law of partial pressures."
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "From Eq. (12.19), we can get an idea of the typical speed of molecules in a gas. At a temperature T = 300 K, the mean square speed of a molecule in nitrogen gas is :"
+    },
+    {
+      "n": 22,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        982,
+        642,
+        1625,
+        736
+      ],
+      "text": ""
+    },
+    {
+      "n": 23,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        982,
+        740,
+        1625,
+        786
+      ],
+      "text": ""
+    },
+    {
+      "n": 24,
+      "kind": "paragraph",
+      "text": "The square root of 2 v is known as root mean square (rms) speed and is denoted by vrms,"
+    },
+    {
+      "n": 25,
+      "kind": "paragraph",
+      "text": "( We can also write    2 v    as   < v2 >.)"
+    },
+    {
+      "n": 26,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        982,
+        900,
+        1625,
+        946
+      ],
+      "text": ""
+    },
+    {
+      "n": 27,
+      "kind": "paragraph",
+      "text": "The speed is of the order of the speed of sound in air. It follows from Eq. (12.19) that at the same temperature, lighter molecules have greater rms speed."
+    },
+    {
+      "n": 28,
+      "kind": "box",
+      "text": "Example 12.5 A flask contains argon and chlorine in the ratio of 2:1 by mass.  The temperature of the mixture is 27 °C. Obtain the ratio of  (i) average kinetic energy per molecule, and (ii) root mean square speed vrms of the molecules of the two gases. Atomic mass of argon = 39.9 u; Molecular mass of chlorine = 70.9 u."
+    },
+    {
+      "n": 29,
+      "kind": "paragraph",
+      "text": "Answer The important point to remember is that the average kinetic energy (per molecule) of any (ideal) gas (be it monatomic like argon, diatomic like chlorine or polyatomic) is always equal to (3/2) kBT. It depends only on temperature, and is independent of the nature of the gas."
+    },
+    {
+      "n": 30,
+      "kind": "list",
+      "text": "(i) Since argon and chlorine both have the same temperature in the flask, the ratio of average kinetic energy (per molecule) of the two gases is 1:1.\n(ii) Now  ½ m vrms2  =  average kinetic energy per molecule =  (3/2) ) kBT where m is the mass"
+    },
+    {
+      "n": 31,
+      "kind": "paragraph",
+      "text": "* E denotes the translational part of the internal energy U that may include energies due to other degrees of freedom also. See section 12.5."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "250",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page, left column then right column. previous_page_last_block was null; I read PHY11L-ch12-p006 myself immediately before this page and it ends mid-sentence with '...there will always be some other', so the join to 'molecule with a different initial velocity...' here is directly observed, not guessed. Eqs. (12.15a)+(12.15b) (one block, two display lines), (12.16), (12.17), (12.18), (12.19), (12.20), (12.21), the unnumbered '1/2 m1 v1-bar-squared = 1/2 m2 v2-bar-squared = (3/2) kB T' line, the m = M_N2/N_A display, the v-bar-squared = 3 kB T/m display, and the vrms = 516 m s^-1 line are marked needs_special with bboxes in the 1825x2160 image pixel space and empty text. Block 31 is the rule-separated footnote printed full width at the foot of the page, below both columns; it is page content (a footnote to the asterisk in block 6), not a running footer, so it is blocked, and it is placed last because that is where it sits on the page. Consequently the block that actually continues onto the next page is block 30, item (ii), which breaks off at '...where m is the mass'; last_block_continues_on_next is set true to keep that chain, with the caveat that the continuing block is 30 rather than 31. Overbar mean notation is flattened by the text layer into bare '2 x v' / '2 v' tokens, and super/subscripts are flattened ('vrms2', 'kBT'); copied as extracted. The printed Example 12.5 box shows the degree sign for '27 °C' faintly; the text layer gives '27 °C' and I used that."
+}

@@ -1,0 +1,25 @@
+{
+  "blocks": [
+    {
+      "n": 2,
+      "corrected_text": "1.27 In a certain region of space, electric field is along the z-direction throughout. The magnitude of electric field is, however, not constant but increases uniformly along the positive z-direction, at the rate of 10⁵ NC⁻¹ per metre. What are the force and torque experienced by a system having a total dipole moment equal to 10⁻⁷ Cm in the negative z-direction ?",
+      "fixes": [
+        {"wrong": "105 NC–1", "right": "10⁵ NC⁻¹"},
+        {"wrong": "10–7 Cm", "right": "10⁻⁷ Cm"}
+      ]
+    },
+    {"n": 3, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "1.29 A hollow charged conductor has a tiny hole cut into its surface. Show that the electric field in the hole is (σ/2ε₀) n̂ , where n̂ is the unit vector in the outward normal direction, and σ is the surface charge density near the hole.",
+      "fixes": [
+        {"wrong": "2ε0", "right": "2ε₀"},
+        {"wrong": "(σ/2ε0) ˆn", "right": "(σ/2ε₀) n̂"},
+        {"wrong": "ˆn is the unit vector", "right": "n̂ is the unit vector"}
+      ]
+    },
+    {"n": 6, "no_change": true},
+    {"n": 7, "no_change": true}
+  ],
+  "note": "n2 had two flattened powers of ten restored (10⁵, 10⁻⁷). n5 had flattened ε0 and a detached hat restored (ε₀, n̂, twice). n3, n6 and n7 already matched the image; n6's 'charge density E' is printed that way on the page itself (not a transcription flattening), so it was left untouched per the notation-only scope of this step."
+}

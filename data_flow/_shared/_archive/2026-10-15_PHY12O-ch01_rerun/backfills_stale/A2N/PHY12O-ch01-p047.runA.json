@@ -1,0 +1,30 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "electrostatic repulsion if the charge on each is 6.5 × 10⁻⁷ C? The radii of A and B are negligible compared to the distance of separation.\n(b) What is the force of repulsion if each sphere is charged double the above amount, and the distance between them is halved?",
+      "fixes": [
+        {"wrong": "10–7", "right": "10⁻⁷"}
+      ]
+    },
+    {"n": 2, "no_change": true},
+    {"n": 3, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "1.15 Consider a uniform electric field E = 3 × 10³ î N/C. (a)  What is  the flux of this field through a square of 10 cm on a side whose plane is parallel to the yz plane? (b) What is the  flux through the same square if the normal  to its plane makes a 60° angle with the x-axis?",
+      "fixes": [
+        {"wrong": "103", "right": "10³"}
+      ]
+    },
+    {"n": 6, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "1.17 Careful measurement of the electric field at the surface of a black box indicates that the net outward flux through the surface of the box is 8.0 × 10³ Nm²/C. (a) What is the net charge inside the box? (b) If the net outward flux through the surface of the box were zero, could you conclude that there were no charges inside the box? Why or Why not?",
+      "fixes": [
+        {"wrong": "103 Nm2/C", "right": "10³ Nm²/C"}
+      ]
+    },
+    {"n": 8, "no_change": true}
+  ],
+  "note": "n1, n5 and n7 had flattened powers of ten/units restored (10⁻⁷, 10³, Nm²). n2, n3, n6 and n8 already matched the image."
+}

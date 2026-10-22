@@ -1,0 +1,50 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 22.5,
+    "columns": [
+      {"id": "left", "x0": 0.125, "x1": 0.488},
+      {"id": "right", "x0": 0.512, "x1": 0.877}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.124, 0.086, 0.143, 0.096],
+     "column": "left", "size_rel": 0.9, "align": "left", "font": "serif", "text_color": "#231f20"},
+    {"n": null, "role": "running_header", "bbox": [0.803, 0.085, 0.877, 0.095],
+     "column": "right", "size_rel": 0.85, "align": "right", "font": "serif", "text_color": "#231f20"},
+    {"n": 1, "role": "major_heading", "bbox": [0.125, 0.120, 0.488, 0.160],
+     "column": "left", "size_rel": 1.15, "align": "justify", "font": "sans", "text_color": "#29abe2"},
+    {"n": 2, "role": "paragraph", "bbox": [0.125, 0.170, 0.488, 0.648],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "section_heading", "bbox": [0.125, 0.662, 0.425, 0.675],
+     "column": "left", "size_rel": 1.05, "align": "left", "font": "serif-italic", "text_color": "#29abe2"},
+    {"n": 4, "role": "paragraph", "bbox": [0.125, 0.680, 0.488, 0.815],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "paragraph", "bbox": [0.125, 0.822, 0.488, 0.850],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "paragraph", "bbox": [0.512, 0.120, 0.877, 0.205],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "paragraph", "bbox": [0.512, 0.214, 0.877, 0.423],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 7, "role": "paragraph", "bbox": [0.512, 0.432, 0.877, 0.643],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 8, "role": "paragraph", "bbox": [0.512, 0.650, 0.877, 0.730],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 9, "role": "section_heading", "bbox": [0.512, 0.745, 0.760, 0.757],
+     "column": "right", "size_rel": 1.05, "align": "left", "font": "serif-italic", "text_color": "#29abe2"},
+    {"n": 10, "role": "paragraph", "bbox": [0.512, 0.762, 0.877, 0.850],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "footer_rule", "bbox": [0.125, 0.858, 0.877, 0.860],
+     "column": "full", "size_rel": 1.0, "fill": "#ed1c24"},
+    {"n": 11, "role": "marginal_note", "bbox": [0.125, 0.865, 0.877, 0.876],
+     "column": "full", "size_rel": 0.85, "align": "left", "font": "serif-italic"},
+    {"n": null, "role": "footer_rule", "bbox": [0.125, 0.879, 0.877, 0.881],
+     "column": "full", "size_rel": 1.0, "fill": "#ed1c24"},
+    {"n": null, "role": "decorative_image", "bbox": [0.21, 0.32, 0.84, 0.81],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.473, 0.972, 0.526, 0.981],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "serif", "text_color": "#231f20"}
+  ],
+  "note": "Ordinary two-column body page, 1750x2180 (ratio 0.803), not A4. No chapter banner and no page_header_band; the page DOES carry two thin red footer rules, one above and one below the asterisk footnote, reported as two separate footer_rule elements with fill #ed1c24 sampled from the flat middle of each rule. body_text_size_px measured on the left-column prose. UNSURE / most important caveat: block 5 ('An absorption spectrum is like the photographic negative of an emission spectrum...') is a single block that BREAKS ACROSS the column gutter - two lines at the foot of the left column and five more at the head of the right column. n:5 is placed on the left-column portion where the block begins; the right-column continuation is reported as the following element with n:null rather than repeating n:5, because a duplicated n would make a consumer render the same text twice. Heading levels: block 1 is the numbered sub-section '2.3.3', the highest-level heading on this page, so it is major_heading; blocks 3 and 9 are the unnumbered italic blue headings below it, so they are section_heading. Block 11 is the page-foot asterisk footnote; marginal_note is the nearest allowed role for a footnote (the input calls it a paragraph) and it spans the full measure, not one column. The last element is the bottom-centre edition line '2024-25', recorded as running_header for want of a footer-text role. The decorative_image is the diagonal 'NCERT / not to be republished' watermark; its bbox encloses a rotated object. Blocks 1-4 and 6-11 matched by position with no ambiguity."
+}

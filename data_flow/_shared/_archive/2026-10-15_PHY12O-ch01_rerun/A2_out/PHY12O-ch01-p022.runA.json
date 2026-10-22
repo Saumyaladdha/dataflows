@@ -1,0 +1,105 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        555,
+        305,
+        1020,
+        385
+      ],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Thus, the heavier particle (proton) takes a greater time to fall through the same distance. This is in basic contrast to the situation of ‘free fall under gravity’ where the time of fall is independent of the mass of the body. Note that in this example we have ignored the acceleration due to gravity in calculating the time of fall. To see if this is justified, let us calculate the acceleration of the proton in the given electric field:"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        555,
+        645,
+        1160,
+        870
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "which is enormous compared to the value of g (9.8 m s–2), the acceleration due to gravity. The acceleration of the electron is even greater. Thus, the effect of acceleration due to gravity can be ignored in this example."
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Example 1.9 Two point charges q1 and q2, of magnitude +10–8 C and –10–8 C, respectively, are placed 0.1 m apart. Calculate the electric fields at points A, B and C shown in Fig. 1.14."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        745,
+        1190,
+        1310,
+        1715
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Solution The electric field vector E1A at A due to the positive charge q1 points towards the right and has a magnitude"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        555,
+        1740,
+        1240,
+        1815
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "The electric field vector E2A at A due to the negative charge q2 points towards the right and has the same magnitude. Hence the magnitude of the total electric field EA at A is"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        555,
+        2020,
+        990,
+        2065
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "EA is directed toward the right.",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "EXAMPLE 1.8",
+    "22",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p021 output, which ended mid-box with '...The time of fall for the proton is', so this page opens mid-box with that very display equation (block n=1, needs_special). Two panels: the tail of Example 1.8 and the start of Example 1.9. Block n=3 groups the ap = eE/mp expression with its two substitution lines as one equation region. The sideways 'EXAMPLE 1.8' margin label IS listed as removed because the words 'Example 1.8' appear in no block here; 'EXAMPLE 1.9' is not listed, since block n=5 carries those words. The page ends MID-BOX - the Example 1.9 Solution continues on p023."
+}

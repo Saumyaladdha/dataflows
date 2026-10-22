@@ -1,0 +1,125 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The bar AB has two small lead spheres attached at its ends.  The bar is suspended from a rigid support by a fine wire.  Two large lead spheres are brought close to the small ones but on opposite sides as shown.  The big spheres attract the nearby small ones by equal and opposite force as shown.  There is no net force on the bar but only a torque which is clearly equal to F times the length of the bar,where F is the force of attraction between a big sphere and its neighbouring small sphere.  Due to this torque, the suspended wire  gets twisted till such time as the restoring torque of the wire equals the gravitational torque .  If θ is the angle of twist of the suspended wire, the restoring torque is proportional to θ, equal to τθ. Where τ is the restoring couple per unit angle of twist. τ can be measured independently e.g. by applying a known torque and measuring the angle of twist. The gravitational force between the spherical balls is the same as if their masses are concentrated at their centres.  Thus if d is the separation between the centres of the big and its neighbouring small ball, M and m their masses, the gravitational force between the big sphere and its neighouring small ball is.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        302,
+        1115,
+        945,
+        1190
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "If   L  is the length of  the bar AB , then the torque arising out of F  is  F  multiplied by L. At equilibrium, this is equal to the restoring torque and hence",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        302,
+        1335,
+        945,
+        1412
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Observation of θ thus enables one to calculate G from this equation.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Since Cavendish’s  experiment, the measurement of G has been refined and the currently accepted value is",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        302,
+        1528,
+        945,
+        1580
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "7.5 ACCELERATION DUE TO GRAVITY OF THE EARTH"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The earth can be imagined to be a sphere made of a large number of concentric spherical shells with the smallest one at the centre and the largest one at its surface.  A point outside the earth  is obviously outside all the shells.  Thus, all the shells exert a gravitational force at the point outside just as if their masses are concentrated at their common centre according to the result stated in section 7.3. The total mass of all the shells combined is just the mass of the earth.  Hence, at a point outside the earth, the gravitational force is just as if its entire mass of the earth is concentrated at its centre.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "For a point inside the earth, the situation is different.  This is illustrated in Fig. 7.7.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 11,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        977,
+        560,
+        1625,
+        1100
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Again consider the earth  to be made up of concentric shells as before and a point mass m situated at a distance r from the centre.  The point  P lies outside the sphere of radius r.  For the shells of radius greater than r, the point P lies inside.  Hence according to result stated in the last section, they exert no gravitational force on mass m kept at P.  The shells with radius ≤r make up a sphere of radius r for which the point P lies on the surface.  This smaller sphere therefore exerts a force on a mass m at P as if its mass Mr is concentrated at the centre.  Thus the force on the mass m at P has a magnitude",
+      "continues_from_previous": false
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        977,
+        1532,
+        1625,
+        1608
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "We assume that the entire earth is of uniform density and hence its mass is ME = 4π/3 RE3 ρ where ME is the mass of the earth RE is its radius and ρ is the density.  On the other hand the mass of the sphere Mr of radius r is 4π/3 ρr3 and",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "132",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column first. previous_page_last_block was null, but I read page 5 of this chapter directly before: its last prose ended complete at '...is schematically shown in Fig.7.6' followed by Fig. 7.6, and this page opens with a fresh indented paragraph 'The bar AB has two small lead spheres...', so first_block_continues_from_previous is false on that evidence. The page ends mid-sentence ('...mass of the sphere Mr of radius r is 4(pi)/3 (rho)r^3 and'), so last_block_continues_on_next is true. Block n=9 is a single paragraph that runs from the bottom of the left column into the top of the right column; kept as one block across the column break. Marked needs_special with pixel bboxes (original 1826x2167): Eq. (7.6) (n=2), Eq. (7.7) (n=4), the numbered display value G = 6.67x10^-11 N m^2/kg^2, Eq. (7.8) (n=7), Fig. 7.7 with its caption (n=11), and Eq. (7.9) (n=13). Notation discrepancies: the text layer flattens every subscript and superscript (image prints M_E, R_E, M_r, d^2, r^2, 10^-11, m^2/kg^2, R_E^3, r^3) and destroys the fraction structure of the equations; the Greek letters theta, tau, pi and rho do survive as 'θ', 'τ', 'π', 'ρ' in the text layer and match the image, so they were kept as copied. In the inline expressions of block n=14 the image prints M_E = (4(pi)/3) R_E^3 (rho) and (4(pi)/3)(rho)r^3 as stacked fractions with superscripts; the flat forms '4π/3 RE3 ρ' and '4π/3 ρr3' in the block text are what the text layer yields - notation there should be read from the image. The stray 'Mr' near the top of the text layer is the Fig. 7.7 internal label, not a block."
+}

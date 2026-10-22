@@ -1,0 +1,35 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2190,
+    "body_text_size_px": 20.0,
+    "text_block": [0.098, 0.448, 0.874, 0.9],
+    "fill": 0.65,
+    "columns": [
+      {"id": "left", "x0": 0.098, "x1": 0.3},
+      {"id": "right", "x0": 0.324, "x1": 0.874}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.46, 0.0, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cde084", "space_before": 0.0},
+    {"n": 1, "role": "decorative_image", "bbox": [0.415, 0.091, 0.581, 0.445],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0},
+    {"n": null, "role": "chapter_title", "bbox": [0.329, 0.448, 0.471, 0.486],
+     "column": "full", "size_rel": 4.1, "size_pt": 41.0, "align": "left",
+     "font": "sans-light", "text_color": "#1e1c1c", "space_before": 0.004},
+    {"n": null, "role": "major_heading", "bbox": [0.324, 0.513, 0.711, 0.528],
+     "column": "full", "size_rel": 1.65, "size_pt": 16.5, "align": "left",
+     "font": "sans-light", "text_color": "#1e1c1c", "space_before": 0.027},
+    {"n": null, "role": "contents_panel", "bbox": [0.098, 0.571, 0.286, 0.76],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif",
+     "text_color": "#1e1c1c", "space_before": 0.043},
+    {"n": 2, "role": "paragraph", "bbox": [0.324, 0.571, 0.874, 0.902],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#1e1c1c", "space_before": 0.043},
+    {"n": null, "role": "page_number", "bbox": [0.477, 0.956, 0.523, 0.963],
+     "column": "full", "size_rel": 0.8, "size_pt": 8.0, "align": "center",
+     "font": "sans", "text_color": "#1e1c1c", "space_before": 0.054}
+  ],
+  "note": "Unit-opening page, two columns in its lower half. The green panel is a FULL-BLEED WEDGE, not a rectangle: it runs the whole page height and off the right edge, and its left boundary is a curve that sits at x=0.491 at the top, bows out to its leftmost x=0.460 at y=0.38-0.41, then falls back right to x=0.691 at the foot. Its bbox [0.46,0,1,1] is therefore the bounding box of that shape, not its outline; fill #cde084 sampled from flat interior at several points (x=0.80,y=0.50 and x=0.70,y=0.20 both read 205,224,132). body_text_size_px=20 measured cap-to-baseline on the first line of the right-column prose (cap top y=1250px, baseline y=1270px); the left rail is set at the same 20px cap height, so size_rel 1.0 there too. The rail's four 'Chapter n' labels are serif-bold and the four chapter names serif regular; reported as ONE contents_panel element with font 'serif' since it is a single list, not eight elements. contents_panel sits on bare paper (the wedge edge is at x=0.52 at that height), so no fill. The paragraph straddles the wedge edge -- its left half is on white paper and its right half on green -- so it has no single panel fill and none is reported. 'UNIT' is set in small caps: the U cap is 82px (size_rel 4.1) and the NIT small caps 57px; size_rel reports the full cap height. paragraph space_before 0.043 is measured against the major_heading above it IN ITS OWN COLUMN, not against the contents_panel, which is beside it rather than above it. size_pt values assume the page was rendered at 200 dpi (1700x2190 px = 612x788 pt, giving 2.778 px/pt); if the render DPI differs, size_rel is the reliable figure. No rule_bar, page_header_band or footer_rule is printed on this page. A faint diagonal '(c) NCERT not to be republished' watermark is visible across the sheet; it is a PDF overlay rather than printed layout and has no allowed role, so it is excluded from elements. A2 blocked only two items: n=1 (figure) matched to the seahorse and n=2 to the right-column prose; the chapter rail and page number were never blocked and carry n=null."
+}

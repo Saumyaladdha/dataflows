@@ -1,0 +1,56 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Notice the important point that the dipole field at large distances falls off not as 1/r 2 but as1/r 3. Further,  the magnitude and the direction of the dipole field depends not only on the distance r but also on the angle between the position vector r and the dipole moment p.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "We can think of the limit when the dipole size 2a approaches zero, the charge q approaches infinity in such a way that the product p = q × 2a is finite. Such a dipole is referred to as a point dipole. For a point dipole, Eqs. (1.20) and (1.21) are exact, true for any r."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "1.11.2  Physical significance of dipoles"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "In most molecules, the centres of positive charges and of negative charges* lie at the same place. Therefore, their dipole moment is zero. CO2 and CH4 are of this type of molecules. However, they develop a dipole moment when an electric field is applied. But in some molecules, the centres of negative charges and of positive charges do not coincide. Therefore they have a permanent electric dipole moment, even in the absence of an electric field. Such molecules are called polar molecules. Water molecules, H2O, is an example of this type. Various materials give rise to interesting properties and important applications in the presence or  absence of electric field."
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Example 1.10 Two charges ±10 µC are placed 5.0 mm apart. Determine the electric field at (a) a point P on the axis of the dipole 15 cm away from its centre O on the side of the positive charge, as shown in Fig. 1.21(a), and (b) a point Q, 15 cm away from O on a line passing through O and normal to the axis of the dipole, as shown in Fig. 1.21(b)."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        320,
+        1225,
+        1095,
+        1800
+      ],
+      "text": "",
+      "continues_on_next": true
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "* Centre of a collection of positive point charges is defined much the same way as the centre of mass: rcm = (Σi qi ri)/(Σi qi) ."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "29",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p028 output, which ended with the complete display equation (1.21), and this page's first prose line is indented as a new paragraph, so there is no continuation. The grey Example 1.10 panel (box n=5 plus Figure 1.21 as needs_special n=6) ends MID-BOX - its Solution continues on p030 - so last_block_continues_on_next is true and the flag sits on n=6, the last element of that continuing panel, rather than on the footnote. The rule-ruled footnote about the centre of positive charge is block n=7; its displayed fraction is written linearly from the image because the text layer garbles it. The sideways 'EXAMPLE 1.10' margin label duplicates words in block n=5 and is not listed as removed."
+}

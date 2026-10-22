@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on inbreeding - mating of closely related individuals within the same breed - being the route to homozygous purelines, an animal-breeding fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Physics\" and a 29-chapter Physics closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180 (verified: q001-q090 are Biology stems, q091 is a spring-constant item, q136 is an equilibrium-constant item). A Biology question was therefore handed the wrong subject's list, so no correct code exists in it. Expected chapter: 'Strategies for Enhancement in Food Production' (animal husbandry, inbreeding/outbreeding). SECOND, REAL TAXONOMY GAP: that chapter is also absent from the 32-chapter Biology list used elsewhere in this paper, so even with the subject fixed this item would have no home."
+}

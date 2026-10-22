@@ -1,0 +1,132 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "The electric field vector E1B at B due to the positive charge q1 points towards the left and has a magnitude",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        385,
+        870,
+        460
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "The electric field vector E2B at B due to the negative charge q2 points towards the right and has a magnitude"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        555,
+        870,
+        625
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "The magnitude of the total electric field at B is"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        665,
+        660,
+        710
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "EB is directed towards the left.\nThe magnitude of each electric field vector at point C, due to charge q1 and q2 is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        260,
+        810,
+        990,
+        890
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "The directions in which these two vectors point are indicated in Fig. 1.14. The resultant of these two vectors is"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        975,
+        795,
+        1050
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "EC points towards the right."
+    },
+    {
+      "n": 12,
+      "kind": "heading",
+      "text": "1.9  ELECTRIC FIELD LINES"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "We have studied electric field in the last section. It is a vector quantity and can be represented as we represent vectors. Let us try to represent E due to a point charge pictorially. Let the point charge be placed at the origin. Draw vectors pointing along the direction of the electric field with their lengths proportional to the strength of the field at each point. Since the magnitude of electric field at a point decreases inversely as the square of the distance of that point from the charge, the vector gets shorter as one goes away from the origin, always pointing radially outward. Figure 1.15 shows such a picture.  In this figure, each arrow indicates the electric field, i.e., the force acting on a unit positive charge, placed at the tail of that arrow.  Connect the arrows pointing in one direction and the resulting figure represents a field line. We thus get many field lines, all pointing outwards from the point charge. Have we lost the information about the strength or magnitude of the field now, because it was contained in the length of the arrow? No. Now the magnitude of the field is represented by the density of field lines. E is strong near the charge, so the density of field lines is more near the charge and the lines are closer. Away from the charge, the field gets weaker and the density of field lines is less, resulting in well-separated lines."
+    },
+    {
+      "n": 14,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        970,
+        1355,
+        1495,
+        1915
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Another person may draw more lines. But the number of lines is not important. In fact, an infinite number of lines can be drawn in any region.",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "EXAMPLE 1.9",
+    "23",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p022 output, which ended mid-box with 'EA is directed toward the right.' inside the Example 1.9 panel, so the first box block here continues that box. Five display equations in the panel are needs_special; the text layer garbles every fraction. Below the panel, section 1.9 runs in a left column beside Figure 1.15 in the right column, so the figure follows the left-column paragraph (n=14). The sideways 'EXAMPLE 1.9' margin label IS listed as removed because the words 'Example 1.9' appear in no block on this page (that panel's header was on p022). The page's last sentence is complete, so no run-on is flagged even though the discussion continues on p024."
+}

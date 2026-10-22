@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/B9.json",
+  "title": "B9 agent output (b9-figure-matcher)",
+  "description": "Step B9 'Recover the figure' -- an owner-approved EXTENSION beyond the spec's Stage B (the spec's Stage B ends at B8); see config/steps.yaml's B9 entry for why it exists. The agent is shown our question's text, one to three candidate figure images already downloaded to disk by the SCRIPT half, and each candidate's own sheet question TEXT (never the sheet's Chapter Name / Chapter No / Topic / Question Type / Answer columns, per CLAUDE.md). It answers one question only: which candidate figure, if any, BELONGS to our question. Shape per .claude/agents/b9-figure-matcher.md's worked output: {\"match\": \"cand_1\"|\"cand_2\"|\"cand_3\"|\"none\", \"confidence\": high|medium|low, \"why\": \"...\"}. The agent file's universal rule 8 (missing/broken input -> {\"error\": \"...\"}) is the second oneOf branch, the same pattern as every other agent schema in this build (schemas/C1.json, schemas/B3.json).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["match", "confidence", "why"],
+      "additionalProperties": false,
+      "properties": {
+        "match": {
+          "type": "string",
+          "enum": ["cand_1", "cand_2", "cand_3", "none"],
+          "description": "The candidate_id of the figure that belongs to this question, or \"none\". The enum is the maximum shortlist width (recover_figures.MAX_CANDIDATES = 3); that the id named here was actually OFFERED on this item's input file is checked by scripts/checks/B9.py against the input, not by this shape-only schema -- a 'cand_3' answer to a two-candidate item is shape-valid but a real content error, and surfaces as a diagnosable check failure rather than a schema dead end."
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "How sure the agent is of its own verdict. 'low' is treated by step_plugins.B9Plugin exactly like 'none' -- nothing is attached and B9_FIGURE_UNMATCHED is raised -- because attaching the wrong diagram is worse than attaching none. There is deliberately no 'unsure' value: match=\"none\" IS this step's unsure form (universal rule 5)."
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One or two sentences naming the concrete thing in the image that ties it to (or rules it out of) this question -- the component values in a circuit, the groups in a structure, the axis labels on a graph. Required and non-empty for every verdict including 'none': the reason a figure was NOT attached is as much a review artifact as the figure itself."
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

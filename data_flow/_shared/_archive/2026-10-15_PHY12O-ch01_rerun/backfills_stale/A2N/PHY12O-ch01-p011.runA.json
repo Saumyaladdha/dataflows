@@ -1,0 +1,45 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {
+      "n": 2,
+      "corrected_text": "Coulomb’s law, a simple mathematical statement, was initially experimentally arrived at  in the manner described above. While the original experiments established it at a macroscopic scale, it has also been established down to subatomic level  (r ~ 10⁻¹⁰ m).",
+      "fixes": [
+        {"wrong": "10–10", "right": "10⁻¹⁰"}
+      ]
+    },
+    {
+      "n": 3,
+      "corrected_text": "Coulomb discovered his law without knowing the explicit magnitude of the charge. In fact, it is the other way round: Coulomb’s law can now be employed to furnish a definition for a unit of charge. In the relation, Eq. (1.1), k is so far arbitrary. We can choose any positive value of k. The choice of k determines the size of the unit of charge. In SI units, the value of k is about 9 × 10⁹ Nm²/C². The unit of charge that results from this choice is called a coulomb which we defined earlier in Section 1.4. Putting this value of k in Eq. (1.1), we see that for q₁ = q₂ = 1 C, r = 1 m",
+      "fixes": [
+        {"wrong": "9 × 109 Nm2/C2.", "right": "9 × 10⁹ Nm²/C²."},
+        {"wrong": "for q1 = q2 = 1 C, r = 1 m", "right": "for q₁ = q₂ = 1 C, r = 1 m"}
+      ]
+    },
+    {
+      "n": 5,
+      "corrected_text": "That is, 1 C is the charge that when placed at a distance of 1 m from another charge of the same magnitude in vacuum experiences an electrical force of repulsion of magnitude 9 × 10⁹ N. One coulomb is evidently too big a unit to be used. In practice, in electrostatics, one uses smaller units like 1 mC or 1 µC.",
+      "fixes": [
+        {"wrong": "9 × 109 N.", "right": "9 × 10⁹ N."}
+      ]
+    },
+    {"n": 7, "no_change": true},
+    {
+      "n": 8,
+      "corrected_text": "The constant k in Eq. (1.1) is usually put as k = 1/4πε₀ for later convenience, so that Coulomb’s law is written as",
+      "fixes": [
+        {"wrong": "k = 1/4πε0 for later convenience", "right": "k = 1/4πε₀ for later convenience"}
+      ]
+    },
+    {
+      "n": 10,
+      "corrected_text": "ε₀ is called the permittivity of free space . The value of ε₀ in SI units is",
+      "fixes": [
+        {"wrong": "ε0 is called", "right": "ε₀ is called"},
+        {"wrong": "The value of ε0 in SI units", "right": "The value of ε₀ in SI units"}
+      ]
+    },
+    {"n": 12, "no_change": true}
+  ],
+  "note": "Several flattened exponents/subscripts restored: n=2's '10–10' to 10⁻¹⁰; n=3's '9 × 109 Nm2/C2' to 9 × 10⁹ Nm²/C² and 'q1 = q2' to q₁ = q₂; n=5's '9 × 109 N' to 9 × 10⁹ N; n=8 and n=10's detached 'ε0' (permittivity symbol) restored to ε₀ in all four occurrences. n=1, 7, 12 (including the q/2 fraction and Coulomb biography) already matched the image exactly -- q/2 is a genuine division, not a notation defect."
+}

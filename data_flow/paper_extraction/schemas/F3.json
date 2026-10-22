@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "F3 · apply-decisions report (spec 14/F3)",
+  "type": "object",
+  "required": ["rows_total", "rows_new", "applied", "errors", "cascade", "dry_run"],
+  "additionalProperties": true,
+  "properties": {
+    "rows_total": {"type": "integer", "minimum": 0},
+    "rows_new": {"type": "integer", "minimum": 0},
+    "dry_run": {"type": "boolean"},
+    "applied": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target", "decision", "item_id"],
+        "additionalProperties": true,
+        "properties": {
+          "target": {"type": "string"},
+          "decision": {"enum": ["approve", "correct", "edit", "block"]},
+          "item_id": {"type": ["string", "null"]},
+          "field": {"type": ["string", "null"]},
+          "reviewer": {"type": "string", "minLength": 1},
+          "decided_at": {"type": "string", "minLength": 4},
+          "f2_output": {"type": "string", "pattern": "^steps/F2/out/"}
+        }
+      }
+    },
+    "skipped": {"type": "array"},
+    "errors": {"type": "array"},
+    "cascade": {
+      "type": "object",
+      "required": ["pairs", "steps"],
+      "additionalProperties": true,
+      "properties": {
+        "pairs": {"type": "integer", "minimum": 0},
+        "steps": {"type": "array", "items": {"type": "string"}},
+        "marked_stale": {"type": "integer", "minimum": 0}
+      }
+    }
+  }
+}

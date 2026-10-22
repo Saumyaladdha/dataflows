@@ -1,0 +1,36 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {
+      "n": 2,
+      "corrected_text": "Example 1.2 If 10⁹ electrons move out of a body to another body every second, how much time is required to get a total charge of 1 C on the other body?\n\nSolution In one second 10⁹ electrons move out of the body. Therefore the charge given out in one second is 1.6 × 10⁻¹⁹ × 10⁹ C = 1.6 × 10⁻¹⁰ C. The time required to accumulate a charge of 1 C can then be estimated to be 1 C ÷ (1.6 × 10⁻¹⁰ C/s) = 6.25 × 10⁹ s = 6.25 × 10⁹ ÷ (365  × 24 × 3600) years = 198 years. Thus to collect a charge of one coulomb, from a body from which 10⁹ electrons move out every second, we will need approximately 200 years. One coulomb is, therefore, a very large unit for many practical purposes.\nIt is, however, also important to know what is roughly the number of electrons contained in a piece of one cubic centimetre of a material. A cubic piece of copper of side 1 cm contains about 2.5 × 10²⁴ electrons.",
+      "fixes": [
+        {"wrong": "If 109 electrons", "right": "If 10⁹ electrons"},
+        {"wrong": "In one second 109 electrons", "right": "In one second 10⁹ electrons"},
+        {"wrong": "1.6 × 10–19 × 109 C = 1.6 × 10–10 C.", "right": "1.6 × 10⁻¹⁹ × 10⁹ C = 1.6 × 10⁻¹⁰ C."},
+        {"wrong": "(1.6 × 10–10 C/s) = 6.25 × 109 s = 6.25 × 109 ÷", "right": "(1.6 × 10⁻¹⁰ C/s) = 6.25 × 10⁹ s = 6.25 × 10⁹ ÷"},
+        {"wrong": "from which 109 electrons move out", "right": "from which 10⁹ electrons move out"},
+        {"wrong": "about 2.5 × 1024 electrons.", "right": "about 2.5 × 10²⁴ electrons."}
+      ]
+    },
+    {
+      "n": 3,
+      "corrected_text": "Example 1.3 How much positive and negative charge is there in a cup of water?\n\nSolution Let us assume that the mass of one cup of water is 250 g. The molecular mass of water is 18g. Thus, one mole (= 6.02 × 10²³ molecules) of water is 18 g. Therefore the number of molecules in one cup of water is (250/18) × 6.02 × 10²³.\nEach molecule of water contains two hydrogen atoms and one oxygen atom, i.e., 10 electrons and 10 protons. Hence the total positive and total negative charge has the same magnitude. It is equal to (250/18) × 6.02 × 10²³ × 10 × 1.6 × 10⁻¹⁹ C = 1.34 × 10⁷ C.",
+      "fixes": [
+        {"wrong": "(= 6.02 × 1023 molecules)", "right": "(= 6.02 × 10²³ molecules)"},
+        {"wrong": "one cup of water is (250/18) × 6.02 × 1023.", "right": "one cup of water is (250/18) × 6.02 × 10²³."},
+        {"wrong": "(250/18) × 6.02 × 1023 × 10 × 1.6 × 10–19 C = 1.34 × 107 C.", "right": "(250/18) × 6.02 × 10²³ × 10 × 1.6 × 10⁻¹⁹ C = 1.34 × 10⁷ C."}
+      ]
+    },
+    {
+      "n": 5,
+      "corrected_text": "Coulomb’s law is a quantitative statement about the force between two point charges. When the linear size of charged bodies are much smaller than the distance separating them, the size may be ignored and the charged bodies are treated as point charges. Coulomb measured the force between two point charges and found that it varied inversely as the square of the distance between the charges and was directly proportional to the product of the magnitude of the two charges and acted along the line joining the two charges. Thus, if two point charges q₁, q₂ are separated by a distance r in vacuum, the magnitude of the force (F) between them is given by",
+      "fixes": [
+        {"wrong": "charges q1, q2 are separated", "right": "charges q₁, q₂ are separated"}
+      ]
+    },
+    {"n": 7, "no_change": true},
+    {"n": 8, "no_change": true}
+  ],
+  "note": "Heavy flattening throughout the worked examples: n=2 had six instances of 10-power exponents (10⁹, 10⁻¹⁹, 10⁻¹⁰, 10²⁴) flattened into plain digits, restored. n=3 had 10²³/10⁷ similarly flattened, restored; the '10 electrons and 10 protons' in n=3 are genuine plain counts in the image, left untouched. n=5 had the Coulomb's-law point charges q1, q2 flattened, restored to q₁, q₂. n=1, 7, 8 already matched the image exactly."
+}

@@ -1,0 +1,25 @@
+{
+  "group": "v2__biology__list.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q118",
+      "concept": "Secondary growth in a woody dicot stem: the outer-to-inner order phellem → secondary cortex → secondary phloem → wood (secondary xylem)",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Phellem is the outermost product of the cork cambium, so the order must open with (d); that one fact strikes options 2 and 3, which open with (c) Secondary phloem and (a) Secondary cortex.",
+      "traps": [
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "1",
+          "route": "keeps both endpoints of the key — (d) Phellem outermost and (b) Wood innermost — and interchanges the single interior adjacency, placing (c) Secondary phloem outside (a) Secondary cortex"
+        }
+      ],
+      "reason": "This question requires placing four secondary tissues on the radial axis of a woody dicot stem, demonstrated by the stem's instruction to give the order \"with reference to their arrangement from outer side to inner side in a woody dicot stem\" over the printed items \"(a) Secondary cortex\", \"(b) Wood\", \"(c) Secondary phloem\", \"(d) Phellem\".",
+      "note": "has_figure is true (figures_agent/2015_A/q118.png) but the stem and the four lettered items are complete and self-contained, so the figure is decorative for this printing and the item is not treated as source_incomplete. Options 2 and 3 carry no nameable route: neither is the reverse of the key (that would be (b),(c),(a),(d)) nor the printed list order (a),(b),(c),(d), so per rulebook rule 4 no trap is written for them."
+    }
+  ],
+  "group_note": "Single-member packet. It was grouped on structure=list, and the printed shape is in fact an ordering item — a lettered list of four tissues with an order as the answer — so on E1 it belongs with arrange_in_order rather than with list_of_statements; it was judged against the other ordering item in this run (2015_A#q077, packet v2__biology__statements.part1) and carries the same labels as that one: application (the retirement of sequence_based sends ordering to application), single_step (one radial/temporal axis is laid down, not four independent checks), elimination where one securely-known endpoint strikes options, and sequence_endpoint_or_adjacency for the distractor that keeps the endpoints and swaps one interior adjacency."
+}

@@ -1,0 +1,135 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "and the potential difference  V0 is",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 306, 756, 340],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The capacitance C0 in this case is"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 397, 1539, 475],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Consider next a dielectric inserted between the plates fully occupying the intervening region. The dielectric is polarised by the field and, as explained in Section 2.10, the effect is equivalent to two charged sheets (at the surfaces of the dielectric normal to the field) with surface charge densities sp and –sp. The electric field in the dielectric then corresponds to the case when the net surface charge density on the plates is ±(s – sp). That is,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 756, 1539, 826],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "so that the potential difference across the plates is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 886, 1539, 961],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "For linear dielectrics, we expect sp to be proportional to E0, i.e., to s. Thus, (s – sp) is proportional to s  and we can write"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 1058, 1539, 1134],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "where K is a constant characteristic of the dielectric. Clearly,  K > 1. We then have"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 1220, 1539, 1296],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The capacitance C, with dielectric between the plates, is then"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 1345, 1539, 1420],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "The product e0K is called the permittivity of the medium and is denoted by e"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 1571, 1539, 1604],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "For vacuum K = 1 and e = e0; e0 is called the permittivity of the vacuum. The dimensionless ratio"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 1669, 1539, 1744],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "is called the dielectric constant of the substance. As remarked before, from Eq. (2.49), it is clear that K is greater than 1. From Eqs. (2.46) and (2. 51)"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [570, 1895, 1539, 1976],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "Thus, the dielectric constant of a substance is the factor (>1) by which the capacitance increases from its vacuum value, when the dielectric is inserted fully between the plates of a capacitor. Though we arrived at",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Physics", "70", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null, but the page opens mid-sentence (\"and the potential difference V0 is\"), so first_block_continues_from_previous is set true from the page itself. Inline mathematics is copied as the text_layer holds it: the outline/symbol font renders Greek sigma as \"s\"/\"sp\" and epsilon as \"e\" (e.g. \"densities sp and -sp\", \"e = e0 K\"), so those letters in the paragraph text are the layer's characters, not the printed Greek glyphs. All eleven displayed formulas (the unnumbered V0 = E0d line plus numbered Eqs. 2.46-2.54) are marked needs_special with bounding boxes in original image pixels (1700x2160). No headings, tables, figures, lists or boxes on this page; the diagonal \"(C) NCERT not to be republished\" watermark is not a block."
+}

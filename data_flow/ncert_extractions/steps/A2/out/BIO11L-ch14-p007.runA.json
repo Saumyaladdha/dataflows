@@ -1,0 +1,83 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Residual Volume (RV): Volume of air remaining in the lungs even after a forcible expiration. This averages 1100 mL to 1200 mL.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "By adding up a few respiratory volumes described above, one can derive various pulmonary capacities, which can be used in clinical diagnosis.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Inspiratory Capacity (IC): Total volume of air a person can inspire after a normal expiration. This includes tidal volume and inspiratory reserve volume ( TV+IRV).",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Expiratory Capacity (EC): Total volume of air a person can expire after a normal inspiration. This includes tidal volume and expiratory reserve volume (TV+ERV).",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Functional Residual Capacity (FRC): Volume of air that will remain in the lungs after a normal expiration. This includes ERV+RV.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Vital Capacity (VC): The maximum volume of air a person can breathe in after a forced expiration. This includes ERV, TV and IRV or the maximum volume of air a person can breathe out after a forced inspiration.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Total Lung Capacity (TLC): Total volume of air accommodated in the lungs at the end of a forced inspiration. This includes RV, ERV, TV and IRV or vital capacity + residual volume.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "14.3 EXCHANGE OF GASES"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Alveoli are the primary sites of exchange of gases. Exchange of gases also occur between blood and tissues. O2 and CO2 are exchanged in these sites by simple diffusion mainly based on pressure/concentration gradient. Solubility of the gases as well as the thickness of the membranes involved in diffusion are also some important factors that can affect the rate of diffusion.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Pressure contributed by an individual gas in a mixture of gases is called partial pressure and is represented as pO2 for oxygen and pCO2 for carbon dioxide. Partial pressures of these two gases in the atmospheric air and the two sites of diffusion are given in Table 14.1 and in Figure 14.3. The data given in the table clearly indicates a concentration gradient for oxygen from alveoli to blood and blood to tissues. Similarly,",
+      "continues_from_previous": false
+    },
+    {
+      "n": 11,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        163,
+        1694,
+        1496,
+        1980
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "BREATHING AND EXCHANGE OF GASES",
+    "187",
+    "2024-25"
+  ],
+  "note": "Judged from p006, which I read myself: p006 ended with the complete sentence 'This averages 1000 mL to 1100 mL.' and this page opens a fresh definition, 'Residual Volume (RV): ...', so first_block_continues_from_previous is false (the respiratory-volume definition series carries on, but no sentence is split). The running text breaks off at '...blood to tissues. Similarly,', so last_block_continues_on_next is true - the block that runs on is n=10; Table 14.1 (n=11) sits below it and is complete. The table (caption plus its header row and the O2/CO2 rows) is left to the special transcriber. Subscripts are flattened in the text layer and transcribed as given (O2, CO2, pO2, pCO2); the space inside '( TV+IRV)' is reproduced from the text layer."
+}

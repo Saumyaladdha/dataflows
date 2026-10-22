@@ -1,0 +1,100 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Thus the relation between the orbit radius and the electron\nvelocity is",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [498, 372, 1442, 442],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The kinetic energy (K) and electrostatic potential energy (U) of the electron\nin hydrogen atom are"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [498, 548, 1030, 622],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "(The negative sign in U signifies that the electrostatic force is in the –r\ndirection.) Thus the total energy E of the electron in a hydrogen atom is"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [498, 728, 1442, 915],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The total energy of the electron is negative. This implies the fact that\nthe electron is bound to the nucleus. If E were positive, an electron will\nnot follow a closed orbit around the nucleus."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Example 12.3 It is found experimentally that 13.6 eV energy is\nrequired to separate a hydrogen atom into a proton and an electron.\nCompute the orbital radius and the velocity of the electron in a\nhydrogen atom.\nSolution Total energy of the electron in hydrogen atom is –13.6 eV =\n–13.6 × 1.6 × 10⁻¹⁹ J = –2.2 ×10⁻¹⁸ J. Thus from Eq. (12.4), we have"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [477, 1316, 915, 1382],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "This gives the orbital radius"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [477, 1416, 1105, 1498],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "    = 5.3 × 10⁻¹¹ m.\nThe velocity of the revolving electron can be computed from Eq. (12.3)\nwith m = 9.1 × 10⁻³¹ kg,"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [477, 1666, 915, 1742],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "heading",
+      "text": "12.3  ATOMIC SPECTRA"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "As mentioned in Section 12.1, each element has a characteristic spectrum\nof radiation, which it emits. When an atomic gas or vapour is excited at\nlow pressure, usually by passing an electric current through it, the emitted\nradiation has a spectrum which contains certain specific wavelengths\nonly. A spectrum of this kind is termed as emission line spectrum and it"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "296",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read p006 immediately before: it ended with the completed numbered Eq. (12.2), and this page opens a fresh sentence ('Thus the relation between the orbit radius...'), so block 1 does not continue mid-sentence. All five display equations in the main column and the three inside the Example 12.3 panel are needs_special with empty text; n=6 covers both lines of the E = K + U derivation together with its number (12.4), and n=2's bbox includes the '(12.3)' number in the right margin. The Example 12.3 grey panel is one logical box split into box-text blocks (n=8, 10, 12) around its display equations (n=9, 11, 13) so its prose is preserved; the vertical spine tab 'EXAMPLE 12.3' is box decoration, neither blocked nor listed as removed. Text-layer discrepancies corrected from the image: Greek letters flattened (pi to 'p', epsilon-zero to 'e0', nu/upsilon for speed rendered as 'v'; printed π, ε₀, υ) and super/subscripts dropped — layer '10–19', '10–18', '10–11', '10–31', '106', 'm2/C2', '109' for printed 10⁻¹⁹, 10⁻¹⁸, 10⁻¹¹, 10⁻³¹, 10⁶, m²/C², 10⁹; italics on K, U, E, r, m are unmarked. The section heading is printed in small caps as '12.3 ATOMIC SPECTRA'. Page ends mid-sentence ('emission line spectrum and it')."
+}

@@ -1,0 +1,193 @@
+{
+  "question_id": "Q-000064",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:25"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "For Young's double slit experiment, two statements are given below:\nStatement I: If screen is moved away from the plane of slits, angular separation of the fringes remains constant.\nStatement II: If the monochromatic source is replaced by another monochromatic source of larger wavelength, the angular separation of fringes decreases.\nIn the light of the above statements, choose the correct answer from the options given below:",
+  "statements": [
+    {
+      "label": "I",
+      "text": "If screen is moved away from the plane of slits, angular separation of the fringes remains constant."
+    },
+    {
+      "label": "II",
+      "text": "If the monochromatic source is replaced by another monochromatic source of larger wavelength, the angular separation of fringes decreases."
+    }
+  ],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Both Statement I and Statement II are true.",
+    "2": "Both Statement I and Statement II are false.",
+    "3": "Statement I is true but Statement II is false.",
+    "4": "Statement I is false but Statement II is true."
+  },
+  "structure": "statement_i_ii",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "25\nFor Young’s double slit experiment, two statements are given below:\nStatement I: If screen is moved away from the plane of slits, angular separation of the fringes remains\nconstant.\nStatement II: If the monochromatic source is replaced by another monochromatic source of larger\nwavelength, the angular separation of fringes decreases.\nIn the light of the above statements, choose the correct answer from the options given below:\n(1)\nBoth Statement I and Statement II are\ntrue.\n(2)\nBoth Statement I and Statement II are\nfalse.\n(3)\nStatement I is true but Statement II is\nfalse.\n(4)\nStatement I is false but Statement II is\ntrue.\nWave Optics\n",
+  "b4_script_options": {
+    "1": "Both Statement I and Statement II are\ntrue.",
+    "2": "Both Statement I and Statement II are\nfalse.",
+    "3": "Statement I is true but Statement II is\nfalse.",
+    "4": "Statement I is false but Statement II is\ntrue.\nWave Optics"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "3",
+  "b6_reason": "Angular fringe separation = lambda/d, independent of screen distance D, so Statement I is true; it increases (not decreases) with larger wavelength, so Statement II is false.",
+  "b6_working": "Angular separation theta = fringe width / D = (lambda*D/d)/D = lambda/d. This has no D dependence, so moving the screen does not change it (Statement I true). Since theta is proportional to lambda, a larger wavelength gives larger theta, not smaller (Statement II false).",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

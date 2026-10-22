@@ -1,0 +1,112 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        205,
+        300,
+        725,
+        910
+      ],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Electric field E1 at r due to q1 at r1 is given by"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        790,
+        350,
+        990,
+        420
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "where ˆr1P is a unit vector in the direction from q1 to P, and r1P is the distance between q1 and P."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "In the same manner, electric field E2 at r due to q2 at r2 is"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        790,
+        610,
+        990,
+        680
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "where ˆr2P is a unit vector in the direction from q2 to P and r2P is the distance between q2 and P. Similar expressions hold good for fields E3, E4, ..., En due to charges q3, q4, ..., qn."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "By the superposition principle, the electric field E at r due to the system of charges is (as shown in Fig. 1.12)"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        530,
+        910,
+        1550,
+        1155
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "E is a vector quantity that varies from one point to another point in space and is determined from the positions of the source charges."
+    },
+    {
+      "n": 11,
+      "kind": "heading",
+      "text": "1.8.2  Physical significance of electric field"
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "You may wonder why the notion of electric field has been introduced here at all. After all, for any system of charges, the measurable quantity is the force on a charge which can be directly determined using Coulomb’s law and the superposition principle [Eq. (1.5)]. Why then introduce this intermediate quantity called the electric field?"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "For electrostatics, the concept of electric field is convenient, but not really necessary. Electric field is an elegant way of characterising the electrical environment of a system of charges. Electric field at a point in the space around a system of charges tells you the force a unit positive test charge would experience if placed at that point (without disturbing the system). Electric field is a characteristic of the system of charges and is independent of the test charge that you place at a point to determine the field. The term field in physics generally refers to a quantity that is defined at every point in space and may vary from point to point. Electric field is a vector field, since force is a vector quantity."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The true physical significance of the concept of electric field, however, emerges only when we go beyond electrostatics and deal with time-dependent electromagnetic phenomena. Suppose we consider the force between two distant charges q1, q2 in accelerated motion. Now the greatest speed with which a signal or information can go from one point to another is c, the speed of light. Thus, the effect of any motion of q1 on q2 cannot",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "20",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p019 output, which ended with the complete sentence '...denoted by position vector r.', and this page's first prose line is indented as a new paragraph, so there is no continuation. The upper part of the page is two columns, so Figure 1.12 with its caption (left column) is read first as block n=1. Equation (1.10) spans three display lines of one derivation and is covered by a single bbox; the E1 and E2 expressions are separate needs_special equations. The text layer garbles every fraction and unit-vector hat, so A2S must transcribe the equation regions."
+}

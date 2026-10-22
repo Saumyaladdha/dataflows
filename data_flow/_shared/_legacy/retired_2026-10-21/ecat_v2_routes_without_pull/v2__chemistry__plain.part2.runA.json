@@ -1,0 +1,172 @@
+{
+  "group": "v2__chemistry__plain.part2",
+  "ratings": [
+    {
+      "question_id": "2015_A#q008",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Monomer to polymer pairings: caprolactam gives nylon-6",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Names the polyester instead. Terylene is made from ethylene glycol and terephthalic acid."
+        },
+        {
+          "label": "look_alike_term",
+          "option": "2",
+          "route": "Reads nylon-6 as nylon-6,6, whose names differ by one comma and digit. Nylon-6,6 comes from hexamethylenediamine and adipic acid, two monomers rather than one."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Names the fluoropolymer. Teflon is made from tetrafluoroethene."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored monomer-to-polymer pairing, demonstrated by option 3 \"Nylon-6\" being the only option whose single monomer is the caprolactam the stem names.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q009",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "trend",
+      "concept": "Thermal stability of carbonates: the smaller, more polarising cation decomposes first, and alkali metal carbonates barely decompose at all",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Alkali metal carbonates are thermally stable and melt rather than decompose, which strikes out option 3 and option 4 and leaves only the two group-2 carbonates to compare.",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "2",
+          "route": "Calcium carbonate is the textbook example of a carbonate decomposing on heating, the answer to \"how is quicklime made\". Magnesium's smaller ion makes $\\mathrm{MgCO_3}$ go first."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the cation-polarising-power rule across four named carbonates, demonstrated by option 1 $\\mathrm{MgCO_3}$ carrying the smallest cation of the four.",
+      "note": "No tag on options 3 and 4. They are the group-1 pair that the elimination fact strikes out, and I could not name a mis-step that selects either as the easiest to decompose, so they are recorded as the strategy's evidence rather than as traps."
+    },
+    {
+      "question_id": "2015_A#q010",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "structure_property",
+      "concept": "Oxoacids of phosphorus: P-H bonds make the acid a reducing agent, and $\\mathrm{H_3PO_2}$ has two of them",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "States the oxidation state the wrong way round. Phosphorus is $+1$ in $\\mathrm{H_3PO_2}$, its lowest, which is why the acid gives electrons away."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Gives $\\mathrm{H_3PO_3}$'s structure. That acid has two $-\\mathrm{OH}$ groups and one P-H bond, so it reduces less strongly."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "Reducing means handing electrons over. A tendency to take electrons in would make the acid an oxidising agent, so no route from this property reaches reducing behaviour."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which structural feature accounts for a granted property, demonstrated by the stem's \"is due to\" and option 3 \"one -OH group and two p - H bonds\".",
+      "note": "The options print the P-H bond as \"p - H\"; the species is identifiable, so this is a case slip rather than damage. A figure path is attached to this question. The printed stem names the species, so the shape was read as plain_mcq from the text; if the figure turns out to print the structure of $\\mathrm{H_3PO_2}$, a secondary_type of figure_to_read belongs here and the demand would need re-reading."
+    },
+    {
+      "question_id": "2015_A#q011",
+      "question_type": "arrange_in_order",
+      "format": "pick_order",
+      "content_shape": "structure_chemical",
+      "concept": "Bond order from molecular orbital filling: $\\mathrm{O_2^{+}}$ 2.5, $\\mathrm{O_2}$ 2, $\\mathrm{O_2^{-}}$ 1.5, $\\mathrm{O_2^{2-}}$ 1",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Every electron added goes into an antibonding orbital, so $\\mathrm{O_2^{2-}}$ has the lowest bond order and must come last; that one fact strikes out options 1, 2 and 4, which place it second, second and first.",
+      "traps": [
+        {
+          "label": "reversed_order",
+          "option": "4",
+          "route": "Ranks the four by charge, most negative first. That prints the correct order backwards."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the bond-order rule to four species and then ordering them, demonstrated by option 3 placing $\\mathrm{O_2^{+}}$ first, which is the only species of the four with a bond order above 2.",
+      "note": "No tag on options 1 and 2. Option 1 is the key with the first two and the last two members swapped, and option 2 puts the two anions first; I tried ranking by charge, by electron count and by bond order computed with the antibonding count dropped, and none of those lands on either printed order, so neither is tagged."
+    },
+    {
+      "question_id": "2015_A#q012",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "formula_or_law",
+      "concept": "Mole concept: 18 g of water is one mole, so 18 moles holds 18 times as many molecules",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "wrong_quantity",
+          "option": "1",
+          "route": "Reads the mass as an amount. 18 g of water is one mole, $6.02\\times10^{23}$ molecules, against 18 moles in the key."
+        },
+        {
+          "label": "unit_or_conversion",
+          "option": "3",
+          "route": "Treats a count of molecules as if it were a count of moles. Without multiplying by $6.02\\times10^{23}$ this is the smallest sample on the list, not the largest."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "1.8 g is a tenth of option 1's 18 g, so option 1 beats it on any reading. No route makes the smaller mass hold more molecules."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires converting four differently expressed amounts to a common count, demonstrated by the same figure 18 appearing with three different units across options 1, 2 and 3.",
+      "note": "E2 is name_or_identify because the four options are named samples of water rather than values to compute; nothing is calculated and reported, one sample is picked. estimation is recorded because the four amounts differ by orders of magnitude, so no exact count is needed."
+    },
+    {
+      "question_id": "2015_A#q013",
+      "question_type": "pair_options",
+      "format": "pick_both_parts",
+      "content_shape": "structure_chemical",
+      "concept": "Isostructural species from VSEPR: $\\mathrm{XeF_4}$ is square planar while $\\mathrm{XeO_4}$ is tetrahedral",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "$\\mathrm{NH_3}$ and $\\mathrm{PH_3}$ are both $\\mathrm{AX_3E}$ and so both trigonal pyramidal, which strikes out option 1 at once.",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Answers \"which pair is isostructural\". $\\mathrm{NH_3}$ and $\\mathrm{PH_3}$ are both trigonal pyramidal."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "Answers \"which pair is isostructural\". $\\mathrm{SiCl_4}$ and $\\mathrm{PCl_4^{+}}$ are both tetrahedral."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Answers \"which pair is isostructural\". Diamond and silicon carbide share the same tetrahedral network."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four pairs each checked for a shared shape under a negated task, demonstrated by the stem's \"both the species are not isostructural\" and option 2 pairing a square planar $\\mathrm{XeF_4}$ with a tetrahedral $\\mathrm{XeO_4}$.",
+      "note": "E1 is pair_options, not plain_mcq: each option is a pair of species accepted or rejected whole, with no two printed columns to match. E2 is pick_both_parts for the same reason, since half a pair right scores nothing. A figure path is attached; the stem and options are complete without it."
+    }
+  ],
+  "group_note": "The packet was grouped on structure=plain, and four of the six are plain_mcq, but two members do not belong with the rest on E1 and are tagged for what is printed. q011 prints four rival orderings of the same four species, which is arrange_in_order with E2 pick_order. q013 prints four pairs to be accepted or rejected whole, which is pair_options with E2 pick_both_parts. Those two differences carry straight into the solution axis: both are several_independent_checks, because each species or pair is judged separately and the verdicts are then combined, and the rulebook's warning that independent checks are not dependent steps is exactly this case. q012 is several_independent_checks too, since each of the four samples is converted to a molecule count on its own. The three remaining are single_step. On demand, q009, q011, q012 and q013 all carry application: each applies one stated rule (cation polarising power, bond order from MO filling, 18 g is one mole, VSEPR) to printed cases, and in each the rule has to be known first. q008 is recall of a single pairing, and q010 is explanatory_reasoning because its stem grants the reducing behaviour and asks which structural feature accounts for it. Elimination is recorded three times and each time one named fact strikes out named options: the thermal stability of group-1 carbonates in q009, the lowest bond order of $\\mathrm{O_2^{2-}}$ in q011, and the shared pyramidal shape of $\\mathrm{NH_3}$ and $\\mathrm{PH_3}$ in q013. It was withheld from q008, q010 and q012, where no single fact strikes an option out. q013 is the only negated task and carries the packet's only true_statement_trap entries, one per isostructural pair. Where an option carried a true fact about a neighbouring species or polymer, the label is other_one_fact ($\\mathrm{H_3PO_3}$'s structure in q010, terylene and teflon in q008). no_derivation_route is used twice and demonstrated both times by a comparison the printed options fix, never asserted. Five wrong options are deliberately left untagged, with the candidate mis-steps I tried recorded in q009's and q011's notes. Three members carry a figure path that the printed text does not require; q010's note flags the one case where a figure, if it prints the structure, would add a secondary_type. No trap sits on an official answer, and no option carries two traps."
+}

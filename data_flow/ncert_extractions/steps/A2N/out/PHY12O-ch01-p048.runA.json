@@ -1,0 +1,52 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {
+      "n": 2,
+      "corrected_text": "1.20 A point charge causes an electric flux of –1.0 × 10³ Nm²/C to pass through a spherical Gaussian surface of 10.0 cm radius centred on the charge. (a)  If the radius of the Gaussian surface were doubled, how much flux would  pass through the surface? (b) What is the value of the point charge?",
+      "fixes": [
+        {"wrong": "103 Nm2/C", "right": "10³ Nm²/C"}
+      ]
+    },
+    {
+      "n": 3,
+      "corrected_text": "1.21 A conducting sphere of radius 10 cm has an unknown charge. If the electric field 20 cm from the centre of the sphere is 1.5 × 10³ N/C and points radially inward, what is the net charge on the sphere?",
+      "fixes": [
+        {"wrong": "103", "right": "10³"}
+      ]
+    },
+    {
+      "n": 4,
+      "corrected_text": "1.22 A uniformly charged conducting sphere of 2.4 m diameter has a surface charge density of 80.0 µC/m². (a) Find the charge on the sphere. (b) What is the total electric flux leaving the surface of the sphere?",
+      "fixes": [
+        {"wrong": "µC/m2", "right": "µC/m²"}
+      ]
+    },
+    {
+      "n": 5,
+      "corrected_text": "1.23 An infinite line charge produces a field of 9 × 10⁴ N/C at a distance of 2 cm. Calculate the linear charge density.",
+      "fixes": [
+        {"wrong": "104", "right": "10⁴"}
+      ]
+    },
+    {
+      "n": 6,
+      "corrected_text": "1.24 Two large, thin metal plates are parallel and close to each other. On their inner faces, the plates have surface charge densities of opposite signs and of magnitude 17.0 × 10⁻²² C/m². What is E: (a) in the outer region of the first plate, (b) in the outer region of the second plate, and (c) between the plates?",
+      "fixes": [
+        {"wrong": "10–22 C/m2", "right": "10⁻²² C/m²"}
+      ]
+    },
+    {
+      "n": 8,
+      "corrected_text": "1.25 An oil drop of 12 excess electrons is held stationary under a constant electric field of 2.55 × 10⁴ NC⁻¹ (Millikan’s oil drop experiment). The density of the oil is 1.26 g cm⁻³. Estimate the radius of the drop. (g = 9.81 m s⁻²; e = 1.60 × 10⁻¹⁹ C).",
+      "fixes": [
+        {"wrong": "104 NC–1", "right": "10⁴ NC⁻¹"},
+        {"wrong": "cm–3", "right": "cm⁻³"},
+        {"wrong": "s–2", "right": "s⁻²"},
+        {"wrong": "10–19", "right": "10⁻¹⁹"}
+      ]
+    },
+    {"n": 9, "no_change": true}
+  ],
+  "note": "n2, n3, n4, n5, n6 and n8 had flattened powers of ten and squared/cubed units restored to true superscript form. n1 and n9 already matched the image."
+}

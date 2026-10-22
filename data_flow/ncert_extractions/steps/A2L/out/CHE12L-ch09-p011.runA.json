@@ -1,0 +1,45 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.0, "x1": 0.265},
+      {"id": "right", "x0": 0.271, "x1": 0.898}
+    ]
+  },
+  "elements": [
+    {"n": 1, "role": "paragraph", "bbox": [0.2762, 0.0862, 0.9025, 0.2922],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "equation", "bbox": [0.3088, 0.2982, 0.6481, 0.3124],
+     "column": "right", "size_rel": 1.0, "align": "left"},
+    {"n": 3, "role": "equation", "bbox": [0.3088, 0.3165, 0.6294, 0.3307],
+     "column": "right", "size_rel": 1.0, "align": "left"},
+    {"n": 4, "role": "major_heading", "bbox": [0.2769, 0.3385, 0.5938, 0.3514],
+     "column": "right", "size_rel": 1.05, "align": "left", "text_color": "#6d6e71"},
+    {"n": 5, "role": "paragraph", "bbox": [0.3081, 0.3573, 0.9006, 0.467],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "figure", "bbox": [0.295, 0.4872, 0.8862, 0.5908],
+     "column": "right", "size_rel": 1.0},
+    {"n": 7, "role": "paragraph", "bbox": [0.3063, 0.6156, 0.8981, 0.6445],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 8, "role": "figure", "bbox": [0.3063, 0.656, 0.4756, 0.744],
+     "column": "right", "size_rel": 1.0},
+    {"n": 9, "role": "paragraph", "bbox": [0.2744, 0.7541, 0.8988, 0.878],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "footer_rule", "bbox": [0.7856, 0.9156, 1.0, 0.9174],
+     "column": "right", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "page_number", "bbox": [0.7856, 0.9069, 0.8269, 0.9174],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71",
+     "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.8356, 0.9028, 0.8981, 0.9128],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.8, "align": "center"}
+  ],
+  "note": "Recto body page (folio 269). The declared left margin column is empty on this page - no 9.x section heading falls here and nothing overhangs the margin, so every content element is in the right text column. body_text_size_px=20.5 from this page's body cap heights. The two resonance schemes (n=6, n=8) are figures whose bboxes include their roman-numeral labels (I-V and I-II), which A2 did not block separately. Block n=4 is an in-flow grey #6d6e71 sub-heading inside the text column (major_heading). Recto foot furniture mirrored right: gold #fecb03 rule to the page edge, folio '269' on a gold tab, running head 'Amines'. No page_header_band and no coloured panels on this page - it is all bare paper apart from the magenta/green reaction-scheme inks."
+}

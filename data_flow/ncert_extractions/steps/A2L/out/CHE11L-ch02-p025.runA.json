@@ -1,0 +1,46 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.124, "x1": 0.486},
+      {"id": "right", "x0": 0.513, "x1": 0.878}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "running_header", "bbox": [0.1263, 0.0876, 0.2697, 0.0940],
+     "column": "full", "size_rel": 0.75, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8629, 0.0872, 0.8760, 0.0936],
+     "column": "full", "size_rel": 0.75, "align": "right", "font": "serif", "text_color": "#221f1f"},
+    {"n": 1, "role": "box", "bbox": [0.1263, 0.1206, 0.4846, 0.4106],
+     "column": "left", "size_rel": 0.9, "align": "justify", "font": "serif-italic",
+     "fill": "#cbe7d3", "text_color": "#221f1f"},
+    {"n": null, "role": "figure", "bbox": [0.3320, 0.1330, 0.4703, 0.2647],
+     "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.3200, 0.2748, 0.4731, 0.2987],
+     "column": "left", "size_rel": 0.9, "align": "center", "font": "serif-italic",
+     "fill": "#cbe7d3", "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.1257, 0.4303, 0.4857, 0.5528],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 3, "role": "major_heading", "bbox": [0.1263, 0.5716, 0.4857, 0.5963],
+     "column": "left", "size_rel": 1.1, "align": "left", "font": "sans", "text_color": "#00adef"},
+    {"n": 4, "role": "paragraph", "bbox": [0.1257, 0.6069, 0.4857, 0.8275],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 5, "role": "paragraph", "bbox": [0.1263, 0.8394, 0.4857, 0.9156],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "paragraph", "bbox": [0.5154, 0.1197, 0.8749, 0.1936],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 6, "role": "paragraph", "bbox": [0.5154, 0.2041, 0.8771, 0.4257],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 7, "role": "paragraph", "bbox": [0.5154, 0.4339, 0.8771, 0.6505],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 8, "role": "section_heading", "bbox": [0.5160, 0.6628, 0.8771, 0.6908],
+     "column": "right", "size_rel": 1.05, "align": "left", "font": "sans", "text_color": "#00adef"},
+    {"n": 9, "role": "paragraph", "bbox": [0.5154, 0.6986, 0.8771, 0.9156],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4771, 0.9555, 0.5223, 0.9624],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif", "text_color": "#221f1f"}
+  ],
+  "note": "Two-column verso body page, 1750x2180 px (ratio 0.803, not A4). body_text_size_px=20 (cap-to-baseline; body line pitch 35 px, green-box italic pitch 33 px hence size_rel 0.9). All nine A2 blocks placed. ONE UNCERTAINTY: block 5 is a single paragraph that runs across the column break -- its first five lines sit at the foot of the LEFT column and its last five lines ('these objects obey. When quantum mechanics is applied...') open the RIGHT column. I put n=5 on the left-column region and n=null on the right-column continuation region rather than repeat the same n twice, so a consumer does not render that text in both places; the null element is the tail of block 5, not an unmatched block. The Erwin Schroedinger box (n=1, green #cbe7d3) contains a portrait photograph and its two-line bold-italic caption, both emitted separately as unnumbered elements with the box's fill behind the caption. Heading n=3 ('2.6 QUANTUM MECHANICAL MODEL OF ATOM', two lines, cyan #00adef, all caps) is a numbered top-level section so I used major_heading; n=8 is a sub-heading so section_heading. Both are bold sans (n=8 italic); the allowed font list has no sans-italic so I report 'sans'. No page_header_band, rule_bar or footer_rule: furniture is the running head (STRUCTURE OF ATOM left, page number 53 right) and the centred '2024-25' footer line, labelled running_header because it is a running footer rather than the page number. A diagonal '(C) NCERT not to be republished' watermark crosses both columns; not emitted as an element."
+}

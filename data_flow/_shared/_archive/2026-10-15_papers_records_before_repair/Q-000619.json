@@ -1,0 +1,112 @@
+{
+  "question_id": "Q-000619",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:160"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Given below are two statements: Statement I: RNA mutates at a faster rate. Statement II: Viruses having RNA genome and shorter life span mutate and evolve faster. In the light of the above statements, choose the correct answer from the options given below:",
+  "statements": [
+    {
+      "label": "I",
+      "text": "RNA mutates at a faster rate."
+    },
+    {
+      "label": "II",
+      "text": "Viruses having RNA genome and shorter life span mutate and evolve faster."
+    }
+  ],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Both Statement I and Statement II are true.",
+    "2": "Both Statement I and Statement II are false.",
+    "3": "Statement I is true but Statement II is false.",
+    "4": "Statement I false but Statement II is true."
+  },
+  "structure": "statement_i_ii",
+  "has_figure": false,
+  "negative_words": [
+    "false"
+  ]
+}

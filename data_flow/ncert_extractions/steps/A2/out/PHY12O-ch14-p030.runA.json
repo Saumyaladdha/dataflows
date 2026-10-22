@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "10. There are two distinct band of energies (called valence band and\nconduction band) in which the electrons in a material lie. Valence\nband energies are low as compared to conduction band energies. All\nenergy levels in the valence band are filled while energy levels in the\nconduction band may be fully empty or partially filled. The electrons in\nthe conduction band are free to move in a solid and are responsible for\nthe conductivity. The extent of conductivity depends upon the energy\ngap (Eg) between the top of valence band (EV) and the bottom of the\nconduction band EC. The electrons from valence band can be excited by\nheat, light or electrical energy to the conduction band and thus, produce\na change in the current flowing in a semiconductor.\n11. For insulators Eg > 3 eV, for semiconductors Eg is 0.2 eV to 3 eV, while\nfor metals Eg ≈ 0.\n12. p-n junction is the ‘key’ to all semiconductor devices. When such a\njunction is made, a ‘depletion layer’ is formed consisting of immobile\nion-cores devoid of their electrons or holes. This is responsible for a\njunction potential barrier.\n13. By changing the external applied voltage, junction barriers can be\nchanged. In forward bias (n-side is connected to negative terminal of the\nbattery and p-side is connected to the positive), the barrier is decreased\nwhile the barrier increases in reverse bias. Hence, forward bias current\nis more (mA) while it is very small (µA) in a p-n junction diode.\n14. Diodes can be used for rectifying an ac voltage (restricting the ac voltage\nto one direction). With the help of a capacitor or a suitable filter, a dc\nvoltage can be obtained.\n15. There are some special purpose diodes.\n16. Zener diode is one such special purpose diode. In reverse bias, after a\ncertain voltage, the current suddenly increases (breakdown voltage) in\na Zener diode. This property has been used to obtain voltage regulation.\n17. p-n junctions have also been used to obtain many photonic or\noptoelectronic devices where one of the participating entity is ‘photon’:\n(a) Photodiodes in which photon excitation results in a change of reverse\nsaturation current which helps us to measure light intensity; (b) Solar\ncells which convert photon energy into electricity; (c) Light Emitting\nDiode and Diode Laser in which electron excitation by a bias voltage\nresults in the generation of light.\n18. There are some special circuits which handle the digital data consisting\nof 0 and 1 levels. This forms the subject of Digital Electronics.\n19. The important digital circuits performing special logic operations are\ncalled logic gates. These are: OR, AND, NOT, NAND, and NOR gates.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "POINTS TO PONDER\n1. The energy bands (EC or EV) in the semiconductors are space delocalised\nwhich means that these are not located in any specific place inside the\nsolid. The energies are the overall averages. When you see a picture in\nwhich EC or EV are drawn as straight lines, then they should be\nrespectively taken simply as the bottom of conduction band energy levels\nand top of valence band energy levels.\n2. In elemental semiconductors (Si or Ge), the n-type or p-type\nsemiconductors are obtained by introducing ‘dopants’ as defects. In\ncompound semiconductors, the change in relative stoichiometric ratio\ncan also change the type of semiconductor. For example, in ideal GaAs",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "496",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null, so the continuation judgement rests on my own p029 output: the SUMMARY box ran to item 9 there and this page's first block is items 10-19 of that same box. The POINTS TO PONDER box begins at the foot of this page and breaks off mid-sentence at 'For example, in ideal GaAs', so last_block_continues_on_next is true. Nothing on this page is deferred to A2S."
+}

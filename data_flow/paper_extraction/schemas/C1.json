@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/C1.json",
+  "title": "C1 agent output (c1-booklet-matcher)",
+  "description": "Section 11/C1 'Agent output' line and .claude/agents/c1-booklet-matcher.md's worked output shape (authoritative over the spec's prose per this project's standing precedence rule, spec 0.3): {\"verdict\": exact_same|not_exact, \"option_map\": {\"A1\":\"B2\",...}|null, \"differences\":[{\"a\",\"b\"}]}. The agent file's own universal rule 8 (missing/broken input -> {\"error\": \"...\"}) is covered by the second oneOf branch, same pattern as every other agent schema in this build (e.g. schemas/B3.json, schemas/A6.json's sibling agent files).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["verdict", "option_map", "differences"],
+      "additionalProperties": false,
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": ["exact_same", "not_exact"],
+          "description": "Agent file 'Allowed values': verdict: exact_same, not_exact. No 'unsure' form is offered for this field in the agent file itself -- the agent is told to answer one or the other; genuine doubt surfaces as a 'not_exact' verdict with the doubtful span listed in differences (per universal rule 7, 'say so in the note field' has no note field here, so a doubtful call is expected to fall to not_exact and let the SCRIPT-side reread/adjudicator chain resolve it)."
+        },
+        "option_map": {
+          "description": "Required (never omitted) but nullable: non-null exactly when verdict is exact_same (worked example), null when not_exact (agent file's own not_exact example sets option_map: null).",
+          "oneOf": [
+            {
+              "type": "object",
+              "propertyNames": { "pattern": "^A[1-4]$" },
+              "additionalProperties": { "type": "string", "pattern": "^B[1-4]$" },
+              "description": "Maps each A option to the B option with the same content, e.g. {\"A1\":\"B2\"}. A full bijection (all four A1-A4 keys, values a permutation of B1-B4) is enforced by scripts/checks/C1.py, not by this shape-only schema, so a partial/malformed map still reaches the check as a diagnosable failure rather than a schema-validation dead end."
+            },
+            { "type": "null" }
+          ]
+        },
+        "differences": {
+          "type": "array",
+          "description": "Exact differing spans from each side (agent file example: {\"a\": \"0.2 m\", \"b\": \"2 m\"}). Empty when verdict is exact_same; expected non-empty when not_exact (checked, not schema-enforced, since a not_exact verdict with zero differences is a shape-valid but suspicious output -- scripts/checks/C1.py flags it rather than this schema silently accepting it).",
+          "items": {
+            "type": "object",
+            "required": ["a", "b"],
+            "additionalProperties": false,
+            "properties": {
+              "a": { "type": "string" },
+              "b": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

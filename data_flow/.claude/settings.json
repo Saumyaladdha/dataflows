@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(./**)",
+      "Write(./**)"
+    ],
+    "deny": [
+      "Bash",
+      "WebFetch",
+      "WebSearch",
+      "Task",
+      "NotebookEdit",
+      "Read(/**)",
+      "Write(/**)"
+    ]
+  }
+}

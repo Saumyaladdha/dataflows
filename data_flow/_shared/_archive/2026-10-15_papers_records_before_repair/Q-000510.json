@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000510",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:88"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Identify the major product C formed in the following reaction sequence: NaCN 3 2 2CH CH CH I A$-$ $-$ $-$ $\\longrightarrow$ 2 OH NaOH Partial hydrolysis Br (major) BC $-$ $\\longrightarrow$ $\\longrightarrow$ [unreadable notation]",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "propylamine",
+    "2": "butylamine",
+    "3": "butanamide",
+    "4": "$\\alpha$–bromobutanoic acid"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "88\nIdentify the major product C formed in the following reaction sequence: NaCN 3 2 2CH CH CH I A− −\n− ⎯⎯⎯ ⎯ → 2 OH NaOH Partial hydrolysis Br (major) BC − ⎯⎯⎯⎯⎯⎯⎯ → ⎯⎯⎯ ⎯ →\n(1)\npropylamine\n(2)\nbutylamine\n(3)\nbutanamide\n(4)\nα–bromobutanoic acid\nHaloalkanes and Haloarenes\n",
+  "b4_script_options": {
+    "1": "propylamine",
+    "2": "butylamine",
+    "3": "butanamide",
+    "4": "α–bromobutanoic acid\nHaloalkanes and Haloarenes"
+  },
+  "official_answer": "1",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "organic",
+  "b6_answer": "1",
+  "b6_reason": "Propyl iodide + NaCN gives butanenitrile, partial hydrolysis gives butanamide, and Br2/NaOH (Hofmann bromamide) degrades it to propylamine.",
+  "b6_working": "CH3CH2CH2I + NaCN -> CH3CH2CH2CN (A, butanenitrile). Partial hydrolysis -> CH3CH2CH2CONH2 (B, butanamide). Br2 + NaOH (Hofmann bromamide degradation) removes one carbon as carbonate: CH3CH2CH2CONH2 -> CH3CH2CH2NH2 (C, propylamine).",
+  "b6_confidence": "low",
+  "b6_note": "Source text is damaged: the reagents and intermediates are run together as scrambled fragments ('NaCN 3 2 2CH CH CH I A', '2 OH NaOH Partial hydrolysis Br (major) BC') and the stem ends in '[unreadable notation]'. The starting halide and the step order had to be inferred, so confidence is low rather than a reconstruction being asserted.",
+  "b6_agrees_with_key": true
+}

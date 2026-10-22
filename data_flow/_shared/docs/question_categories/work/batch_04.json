@@ -1,0 +1,81 @@
+[
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0009",
+  "cat_ids": [
+   "C01"
+  ],
+  "question_text": "The dimensions [MLT−2A−2] belong to the",
+  "options": "(1) Magnetic flux | (2) Self inductance | (3) Magnetic permeability | (4) Electric permittivity",
+  "e1_type": "Single-fact recall",
+  "e2_format": "prose options (4 text statements)",
+  "e3_shape": "stem + options[4]"
+ },
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0013",
+  "cat_ids": [
+   "C03"
+  ],
+  "question_text": "Two objects of mass $10\\,\\mathrm{kg}$ and $20\\,\\mathrm{kg}$ respectively are connected to the two ends of a rigid rod of length $10\\,\\mathrm{m}$ with negligible mass. The distance of the center of mass of the system from the $10\\,\\mathrm{kg}$ mass is",
+  "options": "(1) $10\\,\\mathrm{m}3$ | (2) $20\\,\\mathrm{m}3$ | (3) $10\\,\\mathrm{m}$ | (4) $5\\,\\mathrm{m}$",
+  "e1_type": "Numeric calculation",
+  "e2_format": "numeric options",
+  "e3_shape": "stem + options[4]"
+ },
+ {
+  "question_id": "NEET-2023-MAIN-E1-q0019",
+  "cat_ids": [
+   "C05"
+  ],
+  "question_text": "The minimum wavelength of X-rays produced by an electron accelerated through a potential difference of V volts is proportional to:",
+  "options": "(1) $V^2$ | (2) $1/V$ | (3) $1/\\sqrt{V}$ | (4) $\\sqrt{V}$",
+  "e1_type": "Symbolic / formula",
+  "e2_format": "symbolic / formula options",
+  "e3_shape": "stem + options[4]"
+ },
+ {
+  "question_id": "NEET-2023-MAIN-E1-q0142",
+  "cat_ids": [
+   "C07"
+  ],
+  "question_text": "Match List I with List II :\n\nChoose the correct answer from the options given below :\nList I:\n(A) Cohesion\n(B) Adhesion\n(C) Surface tension\n(D) Guttaion\nList II:\n(I) More attraction in liquid phase\n(II) Mutual attraction among water molecules\n(III) Water loss in liquid phase\n(IV) Attraction towards polar surfaces",
+  "options": "(1) A-II, B-IV, C-I, D-III | (2) A-IV, B-III, C-II, D-I | (3) A-III, B-I, C-IV, D-II | (4) A-II, B-I, C-IV, D-III",
+  "e1_type": "Match near-miss (one swap apart)",
+  "e2_format": "permutation options (A-I, B-II, ...)",
+  "e3_shape": "stem + list_i[4] + list_ii[4] + options[4]"
+ },
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0126",
+  "cat_ids": [
+   "C09"
+  ],
+  "question_text": "The flowers are Zygomorphic in: (a) Mustard (b) Gulmohar (c) Cassia (d) Datura (e) Chilly Choose the correct answer from the options given below:\n((a)) Mustard\n((b)) Gulmohar\n((c)) Cassia\n((d)) Datura\n((e)) Chilly",
+  "options": "(1) (a), (b), (c) Only | (2) (b), (c) Only | (3) (d), (e) Only | (4) (c), (d), (e) Only",
+  "e1_type": "Multi-statement combination",
+  "e2_format": "combination options ('A and C only')",
+  "e3_shape": "stem + statements[5] + options[4]"
+ },
+ {
+  "question_id": "NEET-2023-MAIN-E1-q0007",
+  "cat_ids": [
+   "C11",
+   "C03"
+  ],
+  "question_text": "If the galvanometer G does not show any deflection in the circuit shown, the value of R is given by : [Diagram: A circuit with a $10\\,\\text{V}$ battery, a $400\\,\\Omega$ resistor, a resistor R, a galvanometer G, and a $2\\,\\text{V}$ battery arranged in a bridge-like configuration.]",
+  "options": "(1) $200\\,\\Omega$ | (2) $50\\,\\Omega$ | (3) $100\\,\\Omega$ | (4) $400\\,\\Omega$",
+  "e1_type": "Figure-dependent (also: Numeric calculation)",
+  "e2_format": "numeric options",
+  "e3_shape": "stem + options[4] + figure"
+ },
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0083",
+  "cat_ids": [
+   "C14",
+   "C03"
+  ],
+  "question_text": "The pH of the solution containing $50\\,\\mathrm{mL}$ each of $0.10\\,\\mathrm{M}$ sodium acetate and $0.01\\,\\mathrm{M}$ acetic acid is [Given pKa of CH3COOH =  4.57]",
+  "options": "(1) $5.57$ | (2) $57$ | (3) $57$ | (4) $57$",
+  "e1_type": "Defective options (duplicate) (also: Numeric calculation)",
+  "e2_format": "numeric options",
+  "e3_shape": "stem + options[4]"
+ }
+]

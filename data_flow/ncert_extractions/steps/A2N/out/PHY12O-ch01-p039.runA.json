@@ -1,0 +1,39 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "2 EA = σA/ε₀\nor,  E = σ/2ε₀\nVectorically,",
+      "fixes": [
+        {"wrong": "σA/ε0", "right": "σA/ε₀"},
+        {"wrong": "σ/2ε0", "right": "σ/2ε₀"}
+      ]
+    },
+    {
+      "n": 3,
+      "corrected_text": "where n̂ is a unit vector normal to the plane and going away from it.",
+      "fixes": [
+        {"wrong": "ˆn", "right": "n̂"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {"n": 5, "no_change": true},
+    {
+      "n": 9,
+      "corrected_text": "(i) Field outside the shell: Consider a point P outside the shell with radius vector r. To calculate E at P, we take the Gaussian surface to be a sphere of radius r and with centre O, passing through P. All points on this sphere are equivalent relative to the given charged configuration. (That is what we mean by spherical symmetry.) The electric field at each point of the Gaussian surface, therefore, has the same magnitude E and is along the radius vector at each point. Thus, E and ∆S at every point are parallel and the flux through each element is E ∆S. Summing over all ∆S, the flux through the Gaussian surface is E × 4 π r². The charge enclosed is σ × 4 π R². By Gauss’s law",
+      "fixes": [
+        {"wrong": "4 π r 2", "right": "4 π r²"},
+        {"wrong": "4 π R 2", "right": "4 π R²"}
+      ]
+    },
+    {
+      "n": 12,
+      "corrected_text": "where q  =  4 π R² σ is the total charge on the spherical shell.\nVectorially,",
+      "fixes": [
+        {"wrong": "R2", "right": "R²"}
+      ]
+    },
+    {"n": 14, "no_change": true},
+    {"n": 15, "no_change": true}
+  ],
+  "note": "n1 and n3 had flattened ε0 and a detached hat restored. n9 and n12 had flattened 'r 2'/'R 2'/'R2' restored to true superscript r²/R². n4, n5, n14, n15 already matched the image."
+}

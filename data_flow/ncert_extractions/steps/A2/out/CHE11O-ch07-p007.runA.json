@@ -1,0 +1,72 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [215, 250, 862, 932],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "(H2, N2, NH3 and D2, N2, ND3) are mixed together and left for a while. Later, when this mixture is analysed, it is found that the concentration of ammonia is just the same as before. However, when this mixture is analysed by a mass spectrometer, it is found that ammonia and all deuterium containing forms of ammonia (NH3, NH2D, NHD2 and ND3) and dihydrogen and its deutrated forms (H2, HD and D2) are present. Thus one can conclude that scrambling of H and D atoms in the molecules must result from a continuation of the forward and reverse reactions in the mixture. If the reaction had simply stopped when they reached equilibrium, then there would have been no mixing of isotopes in this way."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Use of isotope (deuterium) in the formation of ammonia clearly indicates that chemical reactions reach a state of dynamic equilibrium in which the rates of forward and reverse reactions are equal and there is no net change in composition."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Equilibrium can be attained from both sides, whether we start reaction by taking, H2(g) and N2(g) and get NH3(g) or by taking NH3(g) and decomposing it into N2(g) and H2(g)."
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [265, 2052, 645, 2102],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [935, 252, 1308, 308],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Similarly let us consider the reaction, H2(g) + I2(g) ⇌ 2HI(g). If we start with equal initial concentration of H2 and I2, the reaction proceeds in the forward direction and the concentration of H2 and I2 decreases while that of HI increases, until all of these become constant at equilibrium (Fig. 7.5). We can also start with HI alone and make the reaction to proceed in the reverse direction; the concentration of HI will decrease and concentration of H2 and I2 will increase until they all become constant when equilibrium is reached (Fig.7.5). If total number of H and I atoms are same in a given volume, the same equilibrium mixture is obtained whether we start it from pure reactants or pure product."
+    },
+    {
+      "n": 8,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [895, 882, 1532, 1552],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "7.3 LAW OF CHEMICAL EQUILIBRIUM AND EQUILIBRIUM CONSTANT"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "A mixture of reactants and products in the equilibrium state is called an equilibrium mixture. In this section we shall address a number of important questions about the composition of equilibrium mixtures: What is the relationship between the concentrations of reactants and products in an equilibrium mixture? How can we determine equilibrium concentrations from initial concentrations?",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "198",
+    "CHEMISTRY",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p006 output, which is a single self-contained activity box, so the page does not continue it and first_block_continues_from_previous is false. Note however that block 2 ('(H2, N2, NH3 and D2, N2, ND3) are mixed together...') resumes the §7.2 sentence left hanging on p005 ('After equilibrium is attained, these two mixtures'); the full-page box on p006 interrupted it. Reading order is left column then right column, which places Fig 7.4 first and puts the two ammonia equations (blocks 5 and 6) on either side of the column break. Fig 7.4's caption and the displayed reaction that completes it are inside the figure bbox; Fig 7.5's caption likewise. The inline arrow in block 7 is transcribed as ⇌ from the image because the glyph is missing from the text layer. last_block_continues_on_next is true because block 10's paragraph (the list of questions) runs on into p008's opening 'What factors can be exploited...' — it ends mid-paragraph rather than mid-sentence."
+}

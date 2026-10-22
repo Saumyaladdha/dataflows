@@ -1,0 +1,76 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "1.5  BASIC PROPERTIES OF ELECTRIC CHARGE",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "We have seen that there are two types of charges, namely positive and negative and their effects tend to cancel each other. Here,  we shall now describe some other properties of the electric charge."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "If the sizes of charged bodies are very small as compared to the distances between them, we treat them as point charges. All the charge content of the body is assumed to be concentrated at one point in space."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "1.5.1  Additivity of charges"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "We have not as yet given a quantitative definition of a charge; we shall follow it up in the next section. We shall tentatively assume that this can be done and proceed. If a system contains two point charges q1 and q2, the total charge of the system is obtained simply by adding algebraically q1 and q2 , i.e., charges add up like real numbers or they are scalars like the mass of a body. If a system contains n charges q1, q2, q3, …, qn, then the total charge of the system is q1 + q2 + q3 + … + qn .  Charge has magnitude but no direction, similar to mass. However, there is one difference between mass and charge. Mass of a body is always positive whereas a charge can be either positive or negative. Proper signs have to be used while adding the charges in a system. For example, the total charge of a system containing five charges +1, +2, –3, +4 and –5, in some arbitrary unit, is (+1) + (+2) + (–3) + (+4) + (–5) = –1 in the same unit."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "1.5.2  Charge is conserved"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "We have already  hinted to the fact that when bodies are charged by rubbing, there is transfer of electrons from one body to the other; no new charges are either created or destroyed. A picture of particles of electric charge enables us to understand the idea of conservation of charge. When we rub two bodies, what one body gains in charge the other body loses. Within an isolated system consisting of many charged bodies, due to interactions among the bodies, charges may get redistributed but it is found that the total charge of the isolated system is always conserved. Conservation of charge has been established experimentally."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "It is not possible to create or destroy net charge carried by any isolated system although the charge carrying particles may be created or destroyed in a process. Sometimes nature creates charged particles: a neutron turns into a proton and an electron. The proton and electron thus created have equal and opposite charges and the total charge is zero before and after the creation."
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "1.5.3  Quantisation of charge"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Experimentally it is established that all free charges are integral multiples of a basic unit of charge denoted by e. Thus charge q on a body is always given by"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        560,
+        2035,
+        760,
+        2090
+      ],
+      "text": "",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "8",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p007 output, whose last blocks were complete. This page opens with the section heading 1.5, so there is no continuation. The display equation q = ne is the last element; it is marked needs_special with a bbox and empty text per the step rules. The page does not end mid-sentence (the display equation closes the sentence), so last_block_continues_on_next is false, although the surrounding paragraph resumes on p009 after the equation. Subscripts in the text layer are flattened (q1, q2, qn) and are copied as the text layer gives them."
+}

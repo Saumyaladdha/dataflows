@@ -1,0 +1,76 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "• For t4 to t5; A = 1, B = 1; Hence Y = 0\n• For t5 to t6; A = 0, B = 0; Hence Y = 1\n• For t > t6; A = 0, B = 1; Hence Y = 1",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        741,
+        447,
+        1308,
+        921
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "(v)  NOR  Gate"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "It has two or more inputs and one output. A NOT- operation applied\nafter OR gate gives a NOT-OR gate (or simply NOR gate). Its output Y is\n‘1’ only when both inputs A and B are ‘0’, i.e., neither one input nor the\nother is ‘1’. The symbol and truth table for NOR gate is given in\nFig. 14.35."
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        534,
+        1297,
+        1417,
+        1537
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        1145,
+        1166,
+        1439,
+        1439
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "NOR gates are considered as universal gates because you can obtain\nall the gates like AND, OR, NOT by using only NOR gates (Exercises 14.14\nand 14.15)."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "FASTER AND SMALLER: THE FUTURE OF COMPUTER TECHNOLOGY\nThe Integrated Chip (IC) is at the heart of all computer systems. In fact ICs are found in\nalmost all electrical devices like cars, televisions, CD players, cell phones etc. The\nminiaturisation that made the modern personal computer possible could never have\nhappened without the IC. ICs are electronic devices that contain many transistors, resistors,\ncapacitors, connecting wires – all in one package. You must have heard of the",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "494",
+    "2022-23",
+    "EXAMPLE 14.10"
+  ],
+  "note": "previous_page_last_block was null, so the continuation judgement rests on my own p027 output: the Example 14.10 box broke off part-way through its bullet list and this page's first block is the remaining three bullets of that box. Fig. 14.34 sits inside that box and is deferred separately (n=2); Fig. 14.35 is split into the logic-symbol figure plus shared caption (n=5) and the truth-table panel (n=6). The 'FASTER AND SMALLER' shaded box at the bottom breaks off mid-sentence at 'You must have heard of the' and continues on p029, so last_block_continues_on_next is true. 'EXAMPLE 14.10' vertical tab is listed as removed furniture."
+}

@@ -1,0 +1,192 @@
+{
+  "group": "v2__chemistry__plain.part4",
+  "ratings": [
+    {
+      "question_id": "2015_A#q020",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "definition_term",
+      "concept": "The mole is defined as $N_A$ particles, so molar mass depends on $N_A$ while the atom ratios in a formula or a balanced equation do not",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Options 1 and 2 are both ratios of particle counts, so they stand or fall together and neither can be the single answer; that one observation strikes out both.",
+      "traps": [
+        {
+          "label": "wrong_quantity",
+          "option": "3",
+          "route": "Moves the change onto the gram instead of onto the mole. The gram is fixed independently, so what shifts is the mass of one mole of carbon, from 12 g to 0.012 g."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "A balanced equation counts particles on both sides, so $N_A$ cancels and no value of it changes the ratio."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "2",
+          "route": "The atoms per formula unit are fixed by the formula itself. $N_A$ never enters, so changing it cannot reach this option."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the definition of the mole to four candidate quantities, demonstrated by option 4's \"The mass of one mole of carbon\", the only one in which $N_A$ appears without cancelling.",
+      "note": "Format is pick_cause_or_effect: the stem states a change, \"If Avogadro number $N_A$, is changed\", and the options are rival things that would follow from it."
+    },
+    {
+      "question_id": "2015_A#q021",
+      "question_type": "statement_options",
+      "format": "pick_correct_statement",
+      "content_shape": "definition_term",
+      "concept": "A nucleophile donates an electron pair, so it is a Lewis base and attacks electron-poor centres",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Answers without the \"not\". A nucleophile does go for the site of low electron density."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "Answers without the \"not\". The double negative is true: a nucleophile is not electron-seeking, because it supplies electrons rather than wanting them."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Answers without the \"not\". Ammonia's lone pair makes it a nucleophile."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires holding two neighbouring definitions apart, demonstrated by option 3's \"Nucleophile is a Lewis acid\", which swaps the electron-pair donor for the acceptor while the other three statements hold.",
+      "note": "The stem is an instruction and each option is a standalone claim with no lettered block printed, so the type is statement_options. The keyed option carries the question's real device - Lewis acid for Lewis base - but it is the answer and so takes no trap."
+    },
+    {
+      "question_id": "2015_A#q022",
+      "question_type": "plain_mcq",
+      "format": "pick_both_parts",
+      "content_shape": "formula_or_law",
+      "concept": "Real gases come closest to ideal at high temperature and low pressure, where molecular volume and intermolecular attraction stop mattering",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Low pressure appears in options 2 and 3 only, so knowing that one half of the answer strikes out options 1 and 4.",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "1",
+          "route": "Gets the high temperature right and the pressure the wrong way round. Squeezed together, the molecules' own volume stops being negligible."
+        },
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "Gets the low pressure right but cools the gas. At low temperature the attractions take hold and the gas moves towards condensing."
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "Takes the opposite of both halves. Low temperature with high pressure is how a gas is liquefied, not how it behaves ideally."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires the boundary conditions under which a stated law holds, demonstrated by option 3's \"High temperatures and low pressures\", the pair of conditions under which the two assumptions behind the ideal gas law hold.",
+      "note": "Both halves of the chosen option must be right, so the format is pick_both_parts; the type stays plain_mcq rather than pair_options because the two items are different quantities, not a set of same-kind items. The four options are the full two-by-two grid of high and low against temperature and pressure, and each wrong option is tagged for the half it gets wrong instead of the grid being tagged as one device."
+    },
+    {
+      "question_id": "2015_A#q023",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "structure_chemical",
+      "concept": "Square planar $[\\mathrm{Ni(CN)_4}]^{2-}$: cyanide is a strong field ligand, so the $3d^8$ electrons pair up and free one $3d$ orbital for $dsp^2$ hybridisation",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Four ligands need four hybrid orbitals; option 1's $d^2sp^2$ offers five and option 2's $d^2sp^3$ six, so both fall on that one count.",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "4",
+          "route": "Gives the tetrahedral answer that belongs to $[\\mathrm{NiCl_4}]^{2-}$. Cyanide is a strong field ligand, so this complex is square planar instead."
+        },
+        {
+          "label": "look_alike_term",
+          "option": "2",
+          "route": "Uses the octahedral set $d^2sp^3$, which has six orbitals. Only four ligands are attached, and the four-orbital set is $dsp^2$."
+        },
+        {
+          "label": "fabricated_term",
+          "option": "1",
+          "route": "$d^2sp^2$ is not a hybridisation scheme at all - no complex is built from five such orbitals."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the strong-field rule to a given electron count, demonstrated by the stem's \"(Atomic number of Ni = 28)\" with the $\\mathrm{CN^-}$ ligands, from which $\\mathrm{Ni^{2+}}$ is $3d^8$ and one $3d$ orbital is vacated.",
+      "note": "Three steps each need the one before it - oxidation state, then pairing of the $3d^8$ electrons, then counting the orbitals - which is why this is multi_step_dependent while the other recall-like members are single_step."
+    },
+    {
+      "question_id": "2015_A#q024",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Scaling a molar enthalpy: moles from mass, then $q = n\\,\\Delta H$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "35.2 g is a little under one mole of $\\mathrm{CO_2}$, so the heat must be a little under 393.5 kJ, which places it at 315 kJ and nowhere near 630 kJ or 3.15 kJ.",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "Doubles the mole count, using 1.6 mol in place of 0.8 mol. Gives 630 kJ instead of 315 kJ."
+        },
+        {
+          "label": "wrong_exponent",
+          "option": "2",
+          "route": "Slips the decimal point two places, giving 3.15 kJ for 315 kJ."
+        },
+        {
+          "label": "sign_reversed_magnitude_right",
+          "option": "4",
+          "route": "Right number, wrong sign. Combustion gives heat out, so the value is $-315$ kJ."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires turning a mass into moles and scaling a given enthalpy by it, demonstrated by the stem's \"35.2 g\" of $\\mathrm{CO_2}$, which is 0.8 mol against the molar mass 44, and $0.8 \\times 393.5 = 315$ kJ.",
+      "note": "The mole count has to be found before the enthalpy can be scaled, so the structure is multi_step_dependent."
+    },
+    {
+      "question_id": "2015_A#q026",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Molality to mole fraction: 1 mol of solute sits in 1000 g of water, which is 55.5 mol, so $x = \\frac{1}{1+55.5} = 0.0177$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["estimation", "unit_sanity"],
+      "strategy_evidence": "1 part in about 56 is roughly 0.018, which picks out 0.0177 from the decimal shifts; and a mole fraction cannot exceed 1, which rules out option 4 on sight.",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "Doubles the solute, as though 1 molal gave 2 mol in the 1000 g of water. Gives 0.0354 instead of 0.0177."
+        },
+        {
+          "label": "wrong_exponent",
+          "option": "3",
+          "route": "Moves the decimal point one place, giving 0.177 for 0.0177."
+        },
+        {
+          "label": "wrong_exponent",
+          "option": "4",
+          "route": "Moves it two places, giving 1.770 - a mole fraction cannot be larger than 1."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires converting a concentration unit into a mole fraction, demonstrated by the stem's \"$1.00\\,\\mathrm{m}$ aqueous solution\", which fixes 1 mol of solute against 1000 g of water, that is 55.5 mol.",
+      "note": "The moles of water have to be worked out before the fraction can be formed, so the structure is multi_step_dependent."
+    }
+  ],
+  "group_note": "Five of the six are plain_mcq; q021 is the exception, because its stem is only the instruction \"Which of the following statements is not correct for a nucleophile?\" with four standalone claims below it and no lettered block printed, which section 1 sends to statement_options. Format follows the options alone and gives three different answers: two numbers (q024, q026 - calculate_value), a term (q023 - name_or_identify, since a hybridisation symbol is notation), a graded claim (q021), a pair of conditions that must both hold (q022 - pick_both_parts), and a rival consequence of a stated change (q020 - pick_cause_or_effect). Demand splits the packet cleanly in two. q024 and q026 are calculation: the setup is given and the work is the arithmetic. q020 and q023 are application: a definition or a strong-field rule has to be selected and run. q021 is concept_discrimination, where the whole option set turns on Lewis acid against Lewis base. q022 is recall - one stored line about high temperature and low pressure settles both halves at once - and it is the only one of the six without a derivation behind it. Solution structure follows the same division: the three members whose later steps consume an earlier result are multi_step_dependent (q023, q024, q026), q022 is single_step, and q020 and q021 are several_independent_checks, since each of their four options is graded on its own. Traps were written per option, never per question. Two members are negated or grid-shaped and so carry repeated labels - the three true_statement_trap tags in q021, the two half_true halves of q022's grid - while q023 and q024 carry three different labels each, because each wrong option there is reached by a different operation. no_derivation_route was used twice, in q020, and in both cases it is demonstrated by $N_A$ cancelling out of a ratio of counts rather than asserted. No trap sits on any printed key."
+}

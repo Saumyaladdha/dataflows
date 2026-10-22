@@ -1,0 +1,72 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "is characteristic of the present state of configuration, and not the way the state is achieved.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 2.4 Four charges are arranged at the corners of a square ABCD of side d, as shown in Fig. 2.15.(a) Find the work required to put together this arrangement. (b) A charge q0 is brought to the centre E of the square, the four charges being held fixed at its corners. How much extra work is needed to do this?"
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [459, 556, 929, 1031],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "Solution"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "(a) Since the work done depends on the final arrangement of the charges, and not on how they are put together, we calculate work needed for one way of putting the charges at A, B, C and D. Suppose, first the charge +q is brought to A, and then the charges –q, +q, and –q are brought to B, C and D, respectively. The total work needed can be calculated in steps:"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "(i) Work needed to bring charge +q to A when no charge is present elsewhere: this is zero.\n(ii) Work needed to bring –q to B when +q is at A. This is given by (charge at B) × (electrostatic potential at B due to charge +q at A)"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [265, 1420, 756, 1485],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "(iii) Work needed to bring charge +q to C when +q is at A and –q is at B. This is given by (charge at C) × (potential at C due to charges at A and B)"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [265, 1588, 605, 1739],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "(iv) Work needed to bring –q to D when +q at A,–q at B, and +q at C. This is given by (charge at D) × (potential at D due to charges at A, B and C)"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [265, 1841, 702, 1998],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "57", "Reprint 2026-27", "EXAMPLE 2.4"],
+  "note": "previous_page_last_block was null although page is 13, but block 1 plainly starts mid-sentence (\"is characteristic of ...\"), so first_block_continues_from_previous is true. The whole page below block 1 is one shaded Example 2.4 box; it is listed as its component blocks in reading order (box statement, figure, Solution heading, paragraph, list items, display equations) so that the figure and the three display equations could be marked needs_special. The box is unfinished at the page bottom: part (b) of the example is not yet answered, so last_block_continues_on_next is true. The text layer scrambles the display formulae (sub/superscripts on separate lines and out of order), so those are left to the special transcriber with bboxes read from the image; \"q0\" in block 2 is a subscript zero in the image."
+}

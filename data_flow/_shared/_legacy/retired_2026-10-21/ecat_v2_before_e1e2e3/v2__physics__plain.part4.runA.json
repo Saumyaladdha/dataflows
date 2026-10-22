@@ -1,0 +1,132 @@
+{
+  "group": "v2__physics__plain.part4",
+  "ratings": [
+    {
+      "question_id": "2015_A#q154",
+      "concept": "Work to spin a two-mass rod is least about the axis of minimum moment of inertia, which is the centre of mass, at m2L/(m1+m2) from m1",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination", "symmetry"],
+      "strategy_evidence": "The one fact that equal masses must by symmetry put P at the midpoint strikes out options 3 and 4, both of which give x = L when m1 = m2 instead of L/2.",
+      "traps": [
+        {
+          "label": "wrong_quantity",
+          "option": "2",
+          "route": "x = m1L/(m1+m2) is the distance of the same centre of mass from m2 rather than from m1, the two masses being interchanged in the numerator; the figure measures x from m1, so the option answers for the distance to the other end"
+        },
+        {
+          "label": "omitted_contribution",
+          "option": "4",
+          "route": "x = (m2/m1)L is the moment balance m1x = m2(L - x) solved with the m2x term dropped from the right-hand side: keeping it gives x(m1 + m2) = m2L and the key, while omitting it gives m1x = m2L and this option"
+        },
+        {
+          "label": "omitted_contribution",
+          "option": "3",
+          "route": "x = (m1/m2)L is the same dropped term with the two masses interchanged - the balance written from the other end as m2x = m1L - so it combines the omission of option 4 with the interchange of option 2"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires carrying one result into the next - the work expression into the moment of inertia, and that into its minimum - demonstrated by the stem's 'the work required to set the rod rotating with angular velocity omega_0 is minimum', which is a condition on I(x) and not on x itself.",
+      "note": "The stored stem never says from which end x is measured; the figure at papers_v2/figures_agent/2015_A/q154.png does, labelling the segment from m1 to P as x and the rest as (L - x), which is what separates the key from option 2. I read that figure before tagging, so the traps above do not rest on a convention I supplied. A later pass should record this question as needing its figure, since the text alone cannot distinguish options 1 and 2."
+    },
+    {
+      "question_id": "2015_A#q155",
+      "concept": "Single-slit diffraction: at the first minimum the two halves of the slit cancel in pairs, so the edge-to-midpoint path difference is lambda/2 and the phase difference is pi",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "3",
+          "route": "pi/2 radian is half the key, the result of converting the path difference with phase = (pi/lambda) x path instead of (2pi/lambda) x path, or equivalently of taking the edge-to-midpoint separation as a/4 rather than a/2"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires the first-minimum condition to be converted into a phase in two dependent steps, demonstrated by the stem asking for 'the phase difference between the Huygen's wavelet from the edge of the slit and the wavelet from the midpoint', which can only be found after the path difference between those two points is fixed at lambda/2.",
+      "note": "Options 1 and 2 (pi/8 and pi/4 radian) are left untagged. The four options form a halving ladder down from the key, and while option 3 is reached by one named factor-of-two error in the phase conversion, no further operation in this problem is identified that produces pi/4 or pi/8 rather than the other, so under rule 4 those two carry no device. Strategy is empty: the options are a geometric ladder with no named fact striking any of them out, and estimation cannot separate exact multiples of pi."
+    },
+    {
+      "question_id": "2015_A#q156",
+      "concept": "Angular momentum about a point is conserved when the torque r x F vanishes, which for non-zero r and F means F is parallel or antiparallel to r",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires forming the cross product and then solving it for the unknown, demonstrated by the stem's 'the value of alpha for which angular momentum about origin is conserved', which fixes the torque components of r = 2i - 6j - 12k with F = alpha i + 3j + 6k at zero and yields alpha = -1 from the j component, -12 alpha - 12 = 0.",
+      "note": "Option 1 is stored as '$-$' alone: the numeral is lost and only the minus sign survives, so one of the four options is not recoverable from our record. Rulebook rule 5 and section 7 both apply - the damage must not be tagged as the question's shape - so no trap is written on any option here, source_damage_artifact is recorded, and the repair is to recover option 1 from the printed paper. The demand and structure axes are still filled, because the stem, the key and the route to it are complete and readable; what is missing is an option, not the question. Devices are identifiable on options 3 and 4 (the sign-free 'Zero' and '2'), but writing them while a fourth option is unknown would be a trap set inferred from an incomplete option set."
+    },
+    {
+      "question_id": "2015_A#q157",
+      "concept": "Collision condition for two particles in uniform motion: the relative position must point along the relative velocity, so the unit vector of r1 - r2 equals that of v2 - v1",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires applying the relative-motion condition for a collision to two stated constant velocities, demonstrated by the stem's 'The condition for particles A and B for their collision is', whose answer is the statement that the separation vector and the relative velocity are antiparallel.",
+      "note": "Options 1 and 4 are stored identically, both reading r1 x v1 = r2 x v2. A duplicated option is named in rulebook section 5a as source damage in our record rather than a device of the paper, and it makes the option set unusable for the trap axis: no device can be sited on option 1 or option 4 while the two cannot be told apart, and tagging the duplicate itself as the device would be tagging our own damage. traps is therefore empty, source_damage_artifact is recorded, and the repair is to recover the printed wording of options 1 and 4 - in the printed paper these two differ, one being a cross product and one a dot or a difference form. Demand and structure are filled from the stem and the key, which are intact."
+    },
+    {
+      "question_id": "2015_A#q158",
+      "concept": "Two-body decay from rest: the fragments carry equal and opposite momenta, so with KE = p^2/2m the lighter fragment takes the larger share of the kinetic energy",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "'The helium nucleus has less kinetic energy than the thorium nucleus' is the key's inequality printed the other way round; with equal momentum magnitudes, KE = p^2/2m makes the lighter helium's energy the larger, and the reversed word is 'less' for 'more'"
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "4",
+          "route": "'The helium nucleus has more momentum than the thorium nucleus' answers for momentum instead of kinetic energy: conservation from rest makes the two momenta equal in magnitude, so neither fragment has more of that quantity, however their energies compare"
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "3",
+          "route": "the same substitution of momentum for kinetic energy in the other direction, 'less momentum then the thorium nucleus'; the two momenta are equal in magnitude, so the comparison has no answer in this quantity"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one conservation law applied and then used, demonstrated by the stem's 'A nucleus of uranium decays at rest', which fixes the two momenta as equal and opposite before any energy comparison can be made.",
+      "note": "The option set is the two comparison directions crossed with the two quantities, kinetic energy and momentum, which is the complementary_grid pattern; that label describes an option set as a whole while a trap entry names one option, so the grid is recorded here and each option carries what it actually gets wrong. Option 3 is printed with 'then' for 'than'."
+    },
+    {
+      "question_id": "2015_A#q159",
+      "concept": "Series combination of two identical wires: resistances add while the length doubles, so the effective conductivity is the harmonic mean 2 sigma1 sigma2/(sigma1 + sigma2)",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "inverted_ratio",
+          "option": "3",
+          "route": "(sigma1 + sigma2)/(2 sigma1 sigma2) is the exact reciprocal of the key: the route stops at the effective resistivity, which is the arithmetic mean of the two resistivities, and reports it without inverting back to a conductivity"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "sigma1 sigma2/(sigma1 + sigma2) is the key with the factor 2 dropped, the result of adding the two resistances but keeping the original length l for the combination instead of the 2l the series pair actually spans"
+        },
+        {
+          "label": "complementary_grid",
+          "option": "4",
+          "route": "(sigma1 + sigma2)/(sigma1 sigma2) completes the two axes on which this option set is built - product-over-sum against sum-over-product, crossed with the factor 2 present or absent - by taking both deviations at once, so no single error is self-evident from the printed set"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one result carried into the next, demonstrated by the stem's 'connected in series', from which the resistances must first be added before the combination's conductivity can be formed from its total length 2l and common area.",
+      "note": "The stem names the quantities 'v1 and v2 are the conductivities' while all four options are written in sigma1 and sigma2 - our record has lost the sigma glyph in the stem text. The mismatch is a transcription repair, not a loss of content: the stem names the quantity in words ('conductivities') and the options are self-consistent in sigma, so the question is fully determined and no damage verdict is recorded. The stem also prints 'the effective conductivity if the combination' for 'of the combination'. has_figure is true with figure_image at figures_agent/2015_A/q159.png; the two wires in series need no figure to be read."
+    }
+  ],
+  "group_note": "Six questions grouped on the printed shape 'plain' and all six are plain in shape, but the packet spans four chapters, so the group was kept consistent by applying the same tests rather than by expecting the same physics. Demand: does the answer come from arithmetic or algebra on the stem's own quantities, or from a rule yielding a qualitative verdict? q154, q155, q156 and q159 compute - an expression minimised, a phase converted, an unknown solved from a cross product, a combination formed - and are calculation. q157 and q158 reach a stated condition and a comparison with no computation, and are application. That one line is what separates the two labels across the packet, and nothing was assigned on how hard the item looks. Structure: five of the six are multi_step_dependent and each was checked against the rulebook's test that step 2 must need step 1's RESULT - the moment of inertia before its minimum (q154), the path difference before the phase (q155), the cross product before alpha (q156), the momentum equality before the energy comparison (q158), the added resistances before the conductivity (q159). q157 alone is single_step: the collision condition follows from one application of relative motion, with nothing feeding forward. None is several_independent_checks, since no member asks for item-by-item verdicts. Strategy was recorded once and withheld five times, on the rule that elimination must name a fact and the options it strikes out. q154 qualifies twice over - the equal-mass limit must put P at the midpoint, which strikes options 3 and 4 - and is the one member carrying symmetry, because the limiting case is what does the striking. Nowhere else does a named fact strike an option: q155's options are a halving ladder, q159's are a product-over-sum grid in which every entry is dimensionally admissible, q158's are two directions crossed with two quantities, and dimensional_check in particular is useless across this packet because every option in q154, q157 and q159 is dimensionally correct. The trap axis divides the packet in two, and the division is damage, not design. Two of the six carry no trap and the source_damage_artifact verdict: q156 stores option 1 as a bare '$-$' with the numeral lost, and q157 stores options 1 and 4 identically. In both the stem, the key and the route are intact, so the demand and structure axes are filled, but rule 5 forbids a device inferred from an option set that is not all there, and in q157's case the duplicate is itself our damage rather than the paper's device. The other four carry one trap per wrong option, labelled by what the arithmetic shows: an inequality printed the other way round (q158 option 1), a neighbouring physical quantity substituted (q158's momentum for energy, q154's distance from the other end), a term dropped from a balance (q154 options 3 and 4, where the omitted m2x term is named), an exact reciprocal of the key (q159 option 3), a factor of two lost to the doubled length (q159 option 1), and one named factor-of-two error in a phase conversion (q155 option 3). q155 is the one member where two wrong options are left bare, because no operation in the problem was identified that lands on pi/4 rather than pi/8. complementary_grid is used once, on q159's option 4, as the cell that takes both deviations of the grid at once; where the same pattern appears in q158 it is recorded in the note instead, because there each option already has a more specific label. No trap in this packet is placed on an official answer, and no option carries two traps."
+}

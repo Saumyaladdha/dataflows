@@ -1,0 +1,28 @@
+{
+  "_fixture": "HAND-BUILT TEST DATA, not a real bank record. See tests/fixtures/stage_e/README.md. Exists only because no real canonical record has a negative word AND combination options at the same time, which is the second row of spec 13/E2's negative-word guard.",
+  "question_id": "FIXTURE-E2-COMBO",
+  "year": 2099,
+  "sitting": "MAIN",
+  "subject": "Biology",
+  "branch": "unsure",
+  "structure": "statements",
+  "has_figure": false,
+  "negative_words": ["NOT"],
+  "stem_en": "Given below are four statements about enzymes. Which of the combinations given below is NOT correct?",
+  "statements": [
+    {"label": "A", "text": "Enzymes lower the activation energy required."},
+    {"label": "B", "text": "Enzymes change the equilibrium constant."},
+    {"label": "C", "text": "Enzymes are highly substrate specific."},
+    {"label": "D", "text": "Enzymes are consumed entirely once used."}
+  ],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "A and C only",
+    "2": "B and D only",
+    "3": "A, B and C only",
+    "4": "A, C and D only"
+  },
+  "official_answer": "1",
+  "status": "normal"
+}

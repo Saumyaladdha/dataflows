@@ -1,0 +1,23 @@
+{
+  "kind": "structure",
+  "species": [
+    {
+      "smiles": "N",
+      "label": "NH3"
+    },
+    {
+      "smiles": "[*]N",
+      "label": "Primary(1°)"
+    },
+    {
+      "smiles": "[*]N([*])[H]",
+      "label": "Secondary(2°)"
+    },
+    {
+      "smiles": "[*]N([*])[*]",
+      "label": "Tertiary(3°)"
+    }
+  ],
+  "confidence": "probable",
+  "note": "A classification scheme, not a transformation: NH3 -> RNH2 -> R(R')N-H -> R(R')N-R'' drawn left to right with three bare arrows. The arrows carry no reagent and nothing is consumed or produced; they mark successive replacement of a hydrogen of ammonia, so the block is recorded as the four discrete species it draws rather than as a reaction. R, R' and R'' are printed as letters with no structure attached, so each is a wildcard [*]; nothing in the drawing says whether they are alike or different, and the text beside it says explicitly that they may be the same or different. The secondary amine is drawn with its N-H bond written out, which is why the hydrogen is explicit in that SMILES. The third and fourth species are drawn as flat three-bond nitrogens with no wedge or dash, so no stereochemistry is written; confidence is probable only because of the choice to list species instead of an arrow-joined reaction."
+}

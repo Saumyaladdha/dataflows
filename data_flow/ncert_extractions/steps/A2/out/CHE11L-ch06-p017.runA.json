@@ -1,0 +1,115 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Let x mol per litre of PCl5 be dissociated, At equilibrium: (3-x)        x        x Kc = [PCl3][Cl2]/[PCl5] 1.8 = x2/ (3 – x) x2 + 1.8x – 5.4 = 0 x = [–1.8 ± √(1.8)2 – 4(–5.4)]/2 x = [–1.8 ± √3.24 + 21.6]/2 x = [–1.8 ± 4.98]/2 x = [–1.8 + 4.98]/2 = 1.59 [PCl5] = 3.0 – x = 3 –1.59 = 1.41 M [PCl3] = [Cl2] = x = 1.59 M",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "6.7 RELATIONSHIP BETWEEN EQUILIBRIUM CONSTANT K, REACTION QUOTIENT Q AND GIBBS ENERGY G"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The value of Kc for a reaction does not depend on the rate of the reaction. However, as you have studied in Unit 5, it is directly related to the thermodynamics of the reaction and in particular, to the change in Gibbs energy, ∆G. If,"
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "• ∆G is negative, then the reaction is spontaneous and proceeds in the forward direction. • ∆G is positive, then reaction is considered non-spontaneous. Instead, as reverse reaction would have a negative ∆G, the products of the forward reaction shall be converted to the reactants. • ∆G is 0, reaction has achieved equilibrium; at this point, there is no longer any free energy left to drive the reaction."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "A mathematical expression of this thermodynamic view of equilibrium can be described by the following equation:"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [245, 1671, 872, 1709],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "where, G⊖ is standard Gibbs energy."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "At equilibrium, when ∆G = 0 and Q = Kc, the equation (6.21) becomes,"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [249, 1833, 872, 1877],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [249, 1879, 872, 1923],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [249, 1926, 872, 1970],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Taking antilog of both sides, we get,"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [934, 281, 1530, 325],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Hence, using the equation (6.23), the reaction spontaneity can be interpreted in terms of the value of ∆G⊖."
+    },
+    {
+      "n": 15,
+      "kind": "list",
+      "text": "• If ∆G⊖ < 0, then –∆G⊖/RT is positive, and e–∆DG⊖/RT>1, making K >1, which implies a spontaneous reaction or the reaction which proceeds in the forward direction to such an extent that the products are present predominantly. • If ∆G⊖ > 0, then –∆G⊖/RT is negative, and e–∆G⊖</RT 1, that is , K < 1, which implies a non-spontaneous reaction or a reaction which proceeds in the forward direction to such a small degree that only a very minute quantity of product is formed."
+    },
+    {
+      "n": 16,
+      "kind": "box",
+      "text": "Problem 6.10 The value of ∆G⊖ for the phosphorylation of glucose in glycolysis is 13.8 kJ/mol. Find the value of Kc at 298 K. Solution ∆G⊖ = 13.8 kJ/mol = 13.8 × 103J/mol Also, ∆G⊖ = – RT lnKc Hence, ln Kc = –13.8 × 103J/mol (8.314 J mol–1K–1 × 298 K) ln Kc = – 5.569 Kc = e–5.569 Kc = 3.81 × 10–3"
+    },
+    {
+      "n": 17,
+      "kind": "box",
+      "text": "Problem 6.11 Hydrolysis of sucrose gives, Sucrose + H2O ⇌ Glucose + Fructose Equilibrium constant Kc for the reaction is 2 ×1013 at 300K. Calculate ∆G⊖ at 300K. Solution ∆G⊖ = – RT lnKc ∆G⊖ = – 8.314J mol–1K–1× 300K × ln(2×1013) ∆G⊖ = – 7.64 ×104 J mol–1"
+    },
+    {
+      "n": 18,
+      "kind": "heading",
+      "text": "6.8 FACTORS AFFECTING EQUILIBRIA"
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "One of the principal goals of chemical synthesis is to maximise the conversion of the",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["184", "CHEMISTRY", "chemistry", "2024-25"],
+  "note": "Two-column page; left column read before right. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 16 output I had just written myself: page 16 ended mid-box inside Problem 6.9 at the initial-concentration line, and this page's pink panel opens 'Let x mol per litre of PCl5 be dissociated,', so first_block_continues_from_previous is true. The 6.7 heading is printed in capitals but the text layer holds it in mixed case ('Relationship between Equilibrium Constant K, ...') because of the small-caps display font; transcribed as the image prints it. The standard-state symbol ⊖ in ∆G⊖ and G⊖ is dropped entirely by the text layer (it leaves a bare '∆G ' with a space), so it is read from the image and written as ⊖. Two printed slips are copied unchanged rather than corrected: 'e–∆DG⊖/RT>1' carries a stray D, and 'e–∆G⊖</RT 1' has the '<' misplaced where the book means e to the minus ∆G⊖/RT is less than 1. Blocks 6, 9, 10, 11 and 13 are the displayed Gibbs-energy equations ((6.21), (6.22), (6.23) and the intermediate lines) and are left for the special transcriber; worked lines inside the pink Problem panels are kept as box text, since the text layer holds them linearly. Page ends mid-sentence at 'the conversion of the'."
+}

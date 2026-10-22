@@ -1,0 +1,186 @@
+{
+  "question_id": "Q-000221",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:197"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Which one of the following is NOT an advantage of inbreeding?",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "It decreases homozygosity.",
+    "2": "It exposes harmful recessive genes that are eliminated by selection.",
+    "3": "Elimination of less desirable genes and accumulation of superior genes takes place due to it.",
+    "4": "It decreases the productivity of inbred population, after continuous inbreeding."
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [
+    "NOT"
+  ],
+  "b4_text_layer_sanitized": "197\nWhich one of the following is NOT an advantage of inbreeding?\n(1)\nIt decreases homozygosity.\n(2)\nIt exposes harmful recessive genes that\nare eliminated by selection.\n(3)\nElimination of less desirable genes and\naccumulation of superior genes takes\nplace due to it.\n(4)\nIt decreases the productivity of\ninbred population, after continuous\ninbreeding.\nReproductive Health\n",
+  "b4_script_options": {
+    "1": "It decreases homozygosity.",
+    "2": "It exposes harmful recessive genes that\nare eliminated by selection.",
+    "3": "Elimination of less desirable genes and\naccumulation of superior genes takes\nplace due to it.",
+    "4": "It decreases the productivity of\ninbred population, after continuous\ninbreeding.\nReproductive Health"
+  },
+  "official_answer": "4",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "4",
+  "b6_reason": "Inbreeding's real advantages are raising homozygosity so harmful recessives are exposed and eliminated and superior genes accumulate; decreased productivity after continuous inbreeding is inbreeding depression, a disadvantage, not an advantage.",
+  "b6_working": "",
+  "b6_confidence": "medium",
+  "b6_note": "Option 1 says inbreeding 'decreases' homozygosity, which is also factually wrong (inbreeding increases homozygosity), so it too could be read as not-an-advantage; flagging this overlap as a possible faulty/ambiguous question.",
+  "b6_agrees_with_key": true
+}

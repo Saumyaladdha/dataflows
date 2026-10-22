@@ -1,0 +1,23 @@
+{
+  "kind": "structure",
+  "species": [
+    {
+      "smiles": "[*]N",
+      "label": ""
+    },
+    {
+      "smiles": "[*]N",
+      "label": ""
+    },
+    {
+      "smiles": "[*]N",
+      "label": ""
+    },
+    {
+      "smiles": "[*]N",
+      "label": ""
+    }
+  ],
+  "confidence": "certain",
+  "note": "Fig. 9.2, 'Intermolecular hydrogen bonding in primary amines'. Four separate molecules are drawn around a central one and linked by dotted lines; every one of them is the same primary amine R-NH2 (each nitrogen carries one R and two H by solid bonds, counted on the drawing: left R-NH2, centre with R above and H right and H below, right with R and two H, bottom with R and two H). They are recorded as four discrete species because four molecules are drawn, not because they differ. The point of the figure is the dotted N-H...N hydrogen bonds between them; SMILES has no way to write an intermolecular hydrogen bond, so that association, which is the whole content of the figure, is not encoded and the record keeps only the molecules. R is printed as a bare letter with no structure attached and the caption says only 'primary amines', so it is a wildcard, never a methyl. No wedge or dash, so no stereochemistry."
+}

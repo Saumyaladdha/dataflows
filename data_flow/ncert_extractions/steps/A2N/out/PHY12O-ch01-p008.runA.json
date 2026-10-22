@@ -1,0 +1,20 @@
+{
+  "blocks": [
+    {"n": 2, "no_change": true},
+    {"n": 3, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "We have not as yet given a quantitative definition of a charge; we shall follow it up in the next section. We shall tentatively assume that this can be done and proceed. If a system contains two point charges q₁ and q₂, the total charge of the system is obtained simply by adding algebraically q₁ and q₂ , i.e., charges add up like real numbers or they are scalars like the mass of a body. If a system contains n charges q₁, q₂, q₃, …, qₙ, then the total charge of the system is q₁ + q₂ + q₃ + … + qₙ .  Charge has magnitude but no direction, similar to mass. However, there is one difference between mass and charge. Mass of a body is always positive whereas a charge can be either positive or negative. Proper signs have to be used while adding the charges in a system. For example, the total charge of a system containing five charges +1, +2, –3, +4 and –5, in some arbitrary unit, is (+1) + (+2) + (–3) + (+4) + (–5) = –1 in the same unit.",
+      "fixes": [
+        {"wrong": "charges q1 and q2,", "right": "charges q₁ and q₂,"},
+        {"wrong": "algebraically q1 and q2 ,", "right": "algebraically q₁ and q₂ ,"},
+        {"wrong": "n charges q1, q2, q3, …, qn, then", "right": "n charges q₁, q₂, q₃, …, qₙ, then"},
+        {"wrong": "system is q1 + q2 + q3 + … + qn .", "right": "system is q₁ + q₂ + q₃ + … + qₙ ."}
+      ]
+    },
+    {"n": 7, "no_change": true},
+    {"n": 8, "no_change": true},
+    {"n": 10, "no_change": true}
+  ],
+  "note": "n=5 had the subscripts on q1/q2/q3/qn flattened into the digit (image clearly prints q₁, q₂, q₃, qₙ as subscripts); restored. The +1, +2, –3, +4, –5 example values later in n=5 are plain inline numbers in the image, not notation, so left as-is. n=10's 'q = ne' line and all other blocks already match the image; no other changes."
+}

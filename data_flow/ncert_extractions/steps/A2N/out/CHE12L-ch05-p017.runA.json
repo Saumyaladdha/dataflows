@@ -1,0 +1,25 @@
+{
+  "blocks": [
+    {
+      "n": 2,
+      "corrected_text": "It is important to note that in the absence of ligand, crystal field splitting does not occur and hence the substance is colourless. For example, removal of water from [Ti(H₂O)₆]Cl₃ on heating renders it colourless. Similarly, anhydrous CuSO₄ is white, but CuSO₄.5H₂O is blue in colour. The influence of the ligand on the colour of a complex may be illustrated by considering the [Ni(H₂O)₆]²⁺ complex, which forms when nickel(II) chloride is dissolved in water. If the didentate ligand, ethane-1,2-diamine(en) is progressively added in the molar ratios en:Ni, 1:1, 2:1, 3:1, the following series of reactions and their associated colour changes occur:",
+      "fixes": [
+        {"wrong": "[Ti(H2O)6]Cl3", "right": "[Ti(H₂O)₆]Cl₃"},
+        {"wrong": "CuSO4 is white", "right": "CuSO₄ is white"},
+        {"wrong": "CuSO4.5H2O", "right": "CuSO₄.5H₂O"},
+        {"wrong": "[Ni(H2O)6]2+", "right": "[Ni(H₂O)₆]²⁺"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "Colour of Some Gem Stones\nThe colours produced by electronic transitions within the d orbitals of a transition metal ion occur frequently in everyday life. Ruby [Fig.5.12(a)] is aluminium oxide (Al₂O₃) containing about 0.5-1% Cr³⁺ ions (d³), which are randomly distributed in positions normally occupied by Al³⁺. We may view these chromium(III) species as octahedral chromium(III) complexes incorporated into the alumina lattice; d–d transitions at these centres give rise to the colour.",
+      "fixes": [
+        {"wrong": "(Al2O3)", "right": "(Al₂O₃)"},
+        {"wrong": "Cr3+ ions (d3)", "right": "Cr³⁺ ions (d³)"},
+        {"wrong": "Al3+", "right": "Al³⁺"}
+      ]
+    }
+  ],
+  "note": "n=2 and n=6 corrected: flattened formula subscripts ([Ti(H₂O)₆]Cl₃, CuSO₄, CuSO₄.5H₂O, Al₂O₃), flattened ion charges ([Ni(H₂O)₆]²⁺, Cr³⁺, Al³⁺) and the d-electron count (d³) in the ruby box. The hydrate coefficient 5 in CuSO₄.5H₂O and the ratios 1:1, 2:1, 3:1 and '0.5-1%' are full size on the page and were already correct. n=4 is a one-line cross-reference. The reaction series itself ([Ni(H₂O)₆]²⁺ + en = ...) sits in equation blocks not given to me. No degree symbols, locants, primes or radicals on this page."
+}

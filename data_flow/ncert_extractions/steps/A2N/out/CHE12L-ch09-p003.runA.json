@@ -1,0 +1,21 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "named as N-methylethanamine and (CH₃CH₂)₃N is named as N, N-diethylethanamine. More examples are given in Table 9.1.",
+      "fixes": [
+        {"wrong": "(CH3CH2)3N", "right": "(CH₃CH₂)₃N"}
+      ]
+    },
+    {
+      "n": 2,
+      "corrected_text": "In arylamines, –NH₂ group is directly attached to the benzene ring. C₆H₅NH₂ is the simplest example of arylamine.  In common system, it is known as aniline. It is also an accepted IUPAC name. While naming arylamines according to IUPAC system, suffix ‘e’ of arene is replaced by ‘amine’. Thus in IUPAC system, C₆H₅–NH₂ is named as benzenamine. Common and IUPAC names of some alkylamines and arylamines are given in Table 9.1.",
+      "fixes": [
+        {"wrong": "–NH2 group", "right": "–NH₂ group"},
+        {"wrong": "C6H5NH2", "right": "C₆H₅NH₂"},
+        {"wrong": "C6H5–NH2", "right": "C₆H₅–NH₂"}
+      ]
+    }
+  ],
+  "note": "Both blocks had flattened molecular-formula subscripts ((CH3CH2)3N, NH2, C6H5NH2, C6H5-NH2) restored to match the image. No degree symbols, locants, radicals, hats or modulus bars on this page."
+}

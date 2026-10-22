@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/D10.json",
+  "title": "D10 SCRIPT output (build_groups.py)",
+  "description": "Section 12/D10: 'Item: one subtopic · Worker: SCRIPT (build_groups.py): union-find over D9 links; one candidate group per connected component; each question in at most one group per subtopic. No judgement.' Spec names no output path for D10, so this build writes steps/D10/out/<SUBTOPIC_ID>.json (the ordinary steps/<STEP>/out/<ITEM>.json shape of spec 5.8, with no run label — the same choice D3 made for its own script-written output). D10 is a pure SCRIPT step: no {\"error\": ...} branch is needed, since a genuinely broken input is a non-zero exit code per scripts/CONVENTIONS.md rule 2, not an output shape. `singletons` and `links_used` are not required by spec — they are recorded so the union-find is auditable (a reader can see which questions were considered and why a component formed) and so a question D9 linked to nothing is visibly accounted for rather than silently absent.",
+  "type": "object",
+  "required": ["subtopic_id", "groups", "singletons", "links_used"],
+  "additionalProperties": false,
+  "properties": {
+    "subtopic_id": { "type": "string", "minLength": 1 },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["group_id", "members"],
+        "additionalProperties": false,
+        "properties": {
+          "group_id": {
+            "type": "string",
+            "pattern": "^RG-[0-9]{4}$",
+            "description": "A real repeat-group id minted by lib/ids.py::next_repeat_group_id (spec 6.1, RG-{4 digits}, counter-backed and never reused). build_groups.py reuses the id already on disk for an unchanged member set so a rerun mints nothing new (spec 5.9 idempotence)."
+          },
+          "members": {
+            "type": "array",
+            "minItems": 2,
+            "items": { "type": "string", "minLength": 1 },
+            "description": "Every question in this connected component, sorted. A component of one is NOT a group (spec 12/D11 Checks: 'groups >= 2 members'); it goes to `singletons`."
+          }
+        }
+      }
+    },
+    "singletons": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Questions in this subtopic that D9 linked to nothing (or whose only links were to questions outside this subtopic). Not a group, not an error — recorded so the subtopic's question set is fully accounted for."
+    },
+    "links_used": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": { "type": "string", "minLength": 1 }
+      },
+      "description": "The D9 links that actually fed the union-find for this subtopic, each as a sorted [qid, qid] pair, deduplicated. A spec 12/D9 one-sided link is kept (both directions are the same undirected edge here)."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "passages": [
+    [
+      1,
+      2,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "note": "INPUT PROBLEM: page 009 appears to have been extracted twice, so three blocks are verbatim duplicates - block 3 duplicates block 2, block 5 duplicates block 4, and block 7 duplicates block 6 (same text, only line wrapping differs). No block may be dropped, so the first rendering is grouped as heading + list-introducing sentence + list (1,2,4) and the duplicate pair (3,5) and duplicate paragraph (7) are kept as their own passages; a later step should treat 3, 5 and 7 as duplicates rather than new evidence. Blocks 8 and 9 are the sentence introducing the fermentation/aerobic-respiration comparison and that list, kept together. No page-split paragraphs in this section."
+}

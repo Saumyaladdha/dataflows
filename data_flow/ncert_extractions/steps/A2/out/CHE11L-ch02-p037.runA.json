@@ -1,0 +1,34 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "Causes of Stability of Completely Filled and Half-filled Subshells"
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "The completely filled and completely half-filled subshells are stable due to the following reasons:\n1. Symmetrical distribution of electrons: It is well known that symmetry leads to stability. The completely filled or half filled subshells have symmetrical distribution of electrons in them and are therefore more stable. Electrons in the same subshell (here 3d) have equal energy but different spatial distribution. Consequently, their shielding of one-another is relatively small and the electrons are more strongly attracted by the nucleus.\n2. Exchange Energy : The stabilizing effect arises whenever two or more electrons with the same spin are present in the degenerate orbitals of a subshell. These electrons tend to exchange their positions and the energy released due to this exchange is called exchange energy. The number of exchanges that can take place is maximum when the subshell is either half filled or completely filled (Fig. 2.18). As a result the exchange energy is maximum and so is the stability.\nYou may note that the exchange energy is at the basis of Hund’s rule that electrons which enter orbitals of equal energy have parallel spins as far as possible. In other words, the extra stability of half-filled and completely filled subshell is  due to: (i) relatively small shielding, (ii) smaller coulombic repulsion energy, and (iii) larger exchange energy. Details about the exchange energy will be dealt with in higher classes."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        937,
+        365,
+        1570,
+        1613
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "STRUCTURE OF ATOM",
+    "65",
+    "2024-25"
+  ],
+  "note": "Seam judged against CHE11L-ch02-p036.runA.json, written immediately before this page (the instruction's named anchor p030 has no output on disk). p036's last block ended on a complete sentence, 'extra stability associated with these electronic configurations.', with the lower third of that page blank, and its last_block_continues_on_next is false; this page starts with a fresh green panel carrying its own bold title, so first_block_continues_from_previous is false and the two pages agree. input's previous_page_last_block was null. The whole printed content of this page is ONE green-tinted box — 'Causes of Stability of Completely Filled and Half-filled Subshells' — occupying the upper half of the sheet, with its prose in the box's left column and Fig. 2.18 in its right; the lower half of the page is blank. The box's bold centred title is given as its own heading block (n=1) rather than kept as the first line of the box block, and that is a deliberate correction I made after running the real gate: the text layer stores that title line LAST, after the figure caption and after every line of the box's prose, so this page's layer is badly out of printed order, and with the title inside the box block the check's within-block order limb failed the box's opening sentence at 63.6% (want >= 75%). Split out, each block matches the layer in its own order and the page passes. The title is NOT treated as furniture: it is printed once, inside the panel, and names the panel, so it is a heading block and is not listed in running_header_footer_removed. The box's prose is block n=2. Block n=3 defers Fig. 2.18 to the special transcriber. Its bbox covers all four rows of five boxed orbitals with their up-spin arrows and red curved exchange arrows, the small electron-number labels 1, 2, 3 and 4 beside the rows, the four row captions beneath them ('4 exchange by electron 1', '3 exchange by electron 2', '2 exchange by electron 3', '1 exchange by electron 4') and the italic figure caption ('Fig. 2.18  Possible exchange for a d5 configuration'). Deferring is clearly right here: of all of that, the text layer holds ONLY the figure caption — not one of the four row captions and none of the in-diagram numbers is present — so there is nothing in the layer to transcribe them from; the diagrams are not described. The box's two numbered reasons are run-in italic bold side-labels, not separate list items, so they stay inline at the head of their paragraphs as the layer also stores them ('1. Symmetrical distribution of electrons:' and '2. Exchange Energy :' with its printed space before the colon). 'one-another' closes up the layer's line-break hyphen ('one-\\nanother'); the doubled space in 'subshell is  due to:' is as printed. '(here 3d)' follows the layer's flattened spelling of the printed italic 3d, and 'a d5 configuration' inside the deferred caption is likewise the layer's flattening of the printed d-to-the-5 — it is inside the bbox and left to A2S. The box ends on the complete sentence 'dealt with in higher classes.' with nothing printed after it, so last_block_continues_on_next is false. bboxes are original-image pixels (1750x2180); the image renders at 1606x2000, so displayed coordinates were scaled by 1.09."
+}

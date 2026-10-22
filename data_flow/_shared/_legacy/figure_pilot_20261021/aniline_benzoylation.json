@@ -1,0 +1,32 @@
+{
+ "title": "Aniline + benzoyl chloride, NaOH → N-phenylbenzamide (benzoylation)",
+ "row": [
+  {
+   "mol": "Nc1ccccc1",
+   "name": "Aniline",
+   "w": 200,
+   "h": 160
+  },
+  {
+   "plus": true
+  },
+  {
+   "mol": "O=C(Cl)c1ccccc1",
+   "name": "Benzoyl chloride",
+   "w": 220,
+   "h": 170
+  },
+  {
+   "arrow": {
+    "above": "NaOH",
+    "len": 110
+   }
+  },
+  {
+   "mol": "O=C(Nc1ccccc1)c1ccccc1",
+   "name": "N-Phenylbenzamide",
+   "w": 300,
+   "h": 180
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "table",
+      "text": "Dinitrogen trioxide\nN2O3\n+ 3\nblue solid,\n[Nitrogen(III) oxide]\nacidic\nNitrogen dioxide\nNO2\n+ 4\nbrown gas,\n[Nitrogen(IV) oxide]\nacidic\nDinitrogen tetroxide\nN2O4\n+ 4\ncolourless solid/\nliquid, acidic\n[Nitrogen(IV) oxide]\nDinitrogen pentoxide\nN2O5\n+5\ncolourless solid,\n[Nitrogen(V) oxide]\nacidic",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [885, 255, 1250, 295],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [885, 345, 1200, 425],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [885, 480, 1140, 525],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [885, 605, 1200, 685],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Lewis dot main resonance structures and bond parameters of oxides are given in Table 7.4."
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "Table 7.4: Structures of Oxides of Nitrogen"
+    },
+    {
+      "n": 8,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [235, 890, 1515, 1965],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "178",
+    "Chemistry",
+    "2020-21"
+  ],
+  "note": "previous_page_last_block was null, so continuation was judged against the p008 output I wrote in this run: p008 ended inside Table 7.3 and this page opens with the rest of that table (dinitrogen trioxide through dinitrogen pentoxide), so block n=1 continues. Block n=1 holds only the plain-text cells of those four rows, copied in the text layer's own order (name, formula, oxidation state, physical appearance / chemical nature); the four 'common methods of preparation' cells are displayed reaction equations and are deferred to A2S separately as n=2 to n=5, because the text layer scrambles them below word level (e.g. '2NO / N O / 2N O / + / →'). Table 7.4 is drawn entirely as Lewis-dot artwork and bond-parameter diagrams with no reliable text layer, so it is deferred whole as n=8; its pm distances and bond angles are part of the artwork. Table 7.4 closes on this page, so nothing continues onto the next."
+}

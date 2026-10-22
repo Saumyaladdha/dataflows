@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000333",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:57"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "The energy of an electron in the ground state ($n = 1$) for $\\mathrm{He}^{+}$ ion is $-x\\,\\mathrm{J}$, then that for an electron in $n = 2$ state for $\\mathrm{Be}^{3+}$ ion in J is",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$-x$",
+    "2": "$x\\,9-$ [mangled notation]",
+    "3": "$-4x$",
+    "4": "$4\\times 9-$ [mangled notation]"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "57\nThe energy of an electron in the ground state (n = 1) for He + ion is –x J, then that for an electron in n\n= 2 state for Be3+ ion in J is\n(1)\n–x\n(2)\nx 9−\n(3)\n–4x\n(4)\n4 x9−\nAtoms\n",
+  "b4_script_options": {
+    "1": "–x",
+    "2": "x 9−",
+    "3": "–4x",
+    "4": "4 x9−\nAtoms"
+  },
+  "official_answer": "1",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "physical",
+  "b6_answer": "1",
+  "b6_reason": "E is proportional to -Z^2/n^2; He+ at n=1 gives -4 units and Be3+ at n=2 gives -16/4 = -4 units, so the two energies are identical, i.e. -x.",
+  "b6_working": "E_n = -13.6 Z^2/n^2 eV. He+ (Z=2, n=1): -13.6 x 4/1 = -54.4 eV = -x J. Be3+ (Z=4, n=2): -13.6 x 16/4 = -54.4 eV. Same value, so E = -x J.",
+  "b6_confidence": "medium",
+  "b6_note": "Options 2 and 4 arrived mangled by extraction ('$x\\,9-$' and '$4\\times 9-$', likely -x/9 and -4x/9). Option 1 is intact and matches the computed value exactly, so the answer does not depend on repairing them, but the option list should be re-extracted before the key is trusted.",
+  "b6_agrees_with_key": true
+}

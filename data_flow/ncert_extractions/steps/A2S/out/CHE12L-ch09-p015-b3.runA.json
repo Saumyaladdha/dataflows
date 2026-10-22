@@ -1,0 +1,20 @@
+{
+  "kind": "figure",
+  "caption": "",
+  "labels": [
+    "NH2",
+    "HNO3, H2SO4, 288K",
+    "NH2",
+    "NO2",
+    "(51%)",
+    "+",
+    "NH2",
+    "NO2",
+    "(47%)",
+    "+",
+    "NH2",
+    "NO2",
+    "(2%)"
+  ],
+  "note": "No caption is printed: NCERT gives this nitration-of-aniline scheme as a displayed reaction with no 'Figure 9.x' line, so `caption` is left empty rather than invented. Structures are drawn benzene rings with no typed formula; only the substituent labels actually printed are listed. Order follows the reaction left to right rather than strict spatial top-left-to-bottom-right, grouping each product ring's substituents with the yield printed beneath it (para 51%, meta 47%, ortho 2%) -- the flat `labels` list cannot show that NH2/NO2/(51%) belong to one structure, which is the structure lost here. The two printed '+' signs separating the three products are kept as entries to mark that separation. The crop over-includes the preceding paragraph ('products in addition to the nitro derivatives. Moreover, ... is also formed.') and the following one ('However, by protecting the -NH2 group ... as the major product.'); both sit outside target_box_in_crop and are excluded."
+}

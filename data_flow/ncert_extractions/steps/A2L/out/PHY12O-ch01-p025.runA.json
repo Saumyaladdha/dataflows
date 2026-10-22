@@ -1,0 +1,48 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 21.0,
+    "columns": [
+      {"id": "left", "x0": 0.0953, "x1": 0.5600},
+      {"id": "right", "x0": 0.5800, "x1": 0.8871}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0666],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.55, 0.0, 0.8729, 0.1212],
+     "column": "right", "size_rel": 2.0, "align": "center", "font": "sans-light",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.0982, 0.1354, 0.5600, 0.2287],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.0976, 0.2342, 0.5600, 0.4279],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "list", "bbox": [0.0994, 0.4316, 0.5600, 0.6088],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "section_heading", "bbox": [0.1018, 0.6272, 0.3482, 0.6419],
+     "column": "left", "size_rel": 1.45, "align": "left", "font": "serif-bold",
+     "text_color": "#6d6e71"},
+    {"n": 5, "role": "paragraph", "bbox": [0.0953, 0.6575, 0.5600, 0.8733],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "paragraph", "bbox": [0.0976, 0.8765, 0.5600, 0.9385],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 7, "role": "figure", "bbox": [0.5800, 0.1433, 0.8871, 0.8659],
+     "column": "right", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.5853, 0.8825, 0.8665, 0.9091],
+     "column": "right", "size_rel": 0.8, "align": "center", "font": "serif",
+     "text_color": "#00adef"},
+    {"n": null, "role": "page_number", "bbox": [0.8141, 0.9155, 0.8724, 0.9371],
+     "column": "right", "size_rel": 1.1, "align": "center", "font": "serif",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5235, 0.9633],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif",
+     "text_color": "#000000"}
+  ],
+  "note": "Recto page that is two-column for its whole depth. Fig. 1.17 (block n=7) is a four-panel stack of field-line diagrams running almost the full page height in a RIGHT column x 0.580-0.887, which pushes every text block into a narrow LEFT column x 0.095-0.560 - noticeably narrower than this chapter's usual recto measure of 0.097-0.687. The figure's own cyan caption sits under it in the right column and has no A2 block, so it carries n: null. Block n=3 is the four-item roman list of field-line properties, one `list` element with markers at x 0.099 and turned lines at x 0.128. Section heading '1.10 ELECTRIC FLUX' (n=4) is grey #6d6e71 at 1.45x body, the chapter's standard x.y treatment. The field-line diagrams are drawn in the chapter accent cyan #00adef with grey charge dots; no tinted panel appears on this page. Furniture is the standard recto set: pale cyan #c6eafb header band to y 0.0666 with its #00adef closing rule and inner-side #41c7f4 hairline, grey #d1d2d4 running-header panel at top right, pale cyan folio box, '2022-23' recorded as running_header. No footer_rule."
+}

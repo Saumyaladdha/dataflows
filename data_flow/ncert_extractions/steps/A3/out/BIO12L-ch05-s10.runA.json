@@ -1,0 +1,33 @@
+{
+  "passages": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      7
+    ],
+    [
+      8
+    ],
+    [
+      9
+    ],
+    [
+      10
+    ],
+    [
+      11,
+      12
+    ]
+  ],
+  "note": "Blocks 2-3 and 11-12 are each a single paragraph left split across a page break in the input (2 ends mid-sentence with 'it subsequently became clear that'; 11 ends with 'both RNA and DNA can function as'), so each pair is kept as one passage. Heading block 1 joined to the passage that follows. Block 4 ('Can you recall...') is a self-contained recall prompt, given its own passage. Block 5 is the sentence introducing the criteria list in block 6, so they are one passage. Blocks 7, 8, 9, 10 each treat one criterion/sub-topic (replication, stability, thymine-vs-uracil stability, mutation) and are kept separate."
+}

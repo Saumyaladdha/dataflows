@@ -1,0 +1,34 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "full", "x0": 0.180, "x1": 0.884}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.025, 0.068, 0.240, 0.156],
+     "column": "full", "size_rel": 1.0, "fill": "#725221"},
+    {"n": null, "role": "rule_bar", "bbox": [0.242, 0.068, 0.975, 0.108],
+     "column": "full", "size_rel": 1.0, "fill": "#467534"},
+    {"n": null, "role": "running_header", "bbox": [0.827, 0.141, 0.881, 0.148],
+     "column": "full", "size_rel": 0.75, "align": "right", "font": "sans",
+     "text_color": "#212121"},
+    {"n": 1, "role": "figure", "bbox": [0.180, 0.165, 0.853, 0.596],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.186, 0.611, 0.836, 0.629],
+     "column": "full", "size_rel": 0.95, "align": "center", "font": "serif",
+     "fill": "#fef2e2"},
+    {"n": 2, "role": "paragraph", "bbox": [0.322, 0.642, 0.884, 0.850],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "page_number", "bbox": [0.025, 0.745, 0.202, 0.779],
+     "column": "full", "size_rel": 1.4, "align": "right", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "rule_bar", "bbox": [0.025, 0.782, 0.202, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.478, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif"}
+  ],
+  "note": "Single-column verso page 50 dominated by one full-width figure: one `full` column, content envelope x 0.180-0.884. Figure 3.9's bbox (0.180-0.853, y 0.165-0.596) includes the framed chart, its left-hand axis captions (Pituitary Hormone levels / Ovarian events / Ovarian Hormone levels / Uterine events / Days), the day-number scale and the phase labels (Menstruation, Follicular phase, Luteal phase, Next cycle begins) printed beneath it - all part of the artwork. The peach caption band below it carries n: null; A2's single figure block n=1 is matched to the chart. The prose (block 2) is set to the verso text measure x 0.322-0.884, which starts further right than the figure. The bottom-centre '2022-23' edition line is reported as running_header for want of a better allowed role. The diagonal 'not to be republished / (c) NCERT' watermark is a page-wide overlay and is not listed as an element."
+}

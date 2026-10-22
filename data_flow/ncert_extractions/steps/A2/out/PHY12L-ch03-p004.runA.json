@@ -1,0 +1,120 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "GEORG SIMON OHM (1787–1854)\nGeorg Simon Ohm  (1787–1854) German physicist, professor at Munich. Ohm was led to his law by an analogy between the conduction of heat: the electric field is analogous to the temperature gradient, and the electric current is analogous to the heat flow."
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [362, 340, 626, 734],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "identical to the first and the same current I flows through both. The potential difference across the ends of the combination is clearly sum of the potential difference across the two individual slabs and hence equals 2V. The current through the combination is I and the resistance of the combination RC is [from Eq. (3.3)],",
+      "continues_from_previous": true
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [756, 505, 1544, 575],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "since V/I = R, the resistance of either of the slabs. Thus, doubling the length of a conductor doubles the resistance. In general, then resistance is proportional to length,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [805, 729, 1534, 764],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Next, imagine dividing the slab into two by cutting it lengthwise so that the slab can be considered as a combination of two identical slabs of length l, but each having a cross sectional  area of A/2 [Fig. 3.2(c)]."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "For a given voltage V across the slab, if I is the current through the entire slab, then clearly the current flowing through each of the two half-slabs is I/2. Since the potential difference across the ends of the half-slabs is V, i.e., the same as across the full slab, the resistance of each of the half-slabs R1 is"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [810, 1148, 1534, 1206],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Thus, halving the area of the cross-section of a conductor doubles the resistance. In general, then the resistance R is inversely proportional to the cross-sectional area,"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [578, 1343, 1534, 1406],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Combining Eqs. (3.5) and (3.7), we have"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [578, 1467, 1534, 1530],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "and hence for a given conductor"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [578, 1607, 1534, 1674],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "where the constant of proportionality r depends on the material of the conductor but not on its dimensions. r is called resistivity."
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Using the last equation, Ohm’s law reads"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [578, 1769, 1534, 1838],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "Current per unit area (taken normal to the current), I/A, is called current density and is denoted by j. The SI units of the current density are A/m2. Further, if E is the magnitude of uniform electric field in the conductor whose length is l, then the potential difference V across its ends is El. Using these, the last equation reads"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Physics", "84", "Reprint 2026-27"],
+  "note": "Left margin sidebar box (Georg Simon Ohm) is listed first as it occupies the left column; its portrait photograph is block 2 (needs_special) and the box's vertical side-title plus caption prose are kept together in block 1. The page's running text (block 3) starts mid-sentence, so first_block_continues_from_previous is true even though block 1 is the self-contained sidebar box; previous_page_last_block was null in the input. All displayed formulae (3.4)-(3.10) are emitted as equation blocks with needs_special, since the text layer scrambles their sub/superscripts onto separate lines. Per the source note, prose characters were copied from the text layer, so Greek rho appears as the Latin look-alike 'r' in block 16 and 'A/m2' in block 19 lacks its superscript. Bounding boxes are in original image pixels (1700x2160)."
+}

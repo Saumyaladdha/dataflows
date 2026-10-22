@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        507,
+        174,
+        1363,
+        670
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "(ii) Cellulose: Cellulose occurs exclusively in plants and it is the most abundant organic substance in plant kingdom. It is a predominant constituent of cell wall of plant cells. Cellulose is a straight chain"
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        610,
+        818,
+        1286,
+        1406
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "polysaccharide composed only of β-D-glucose units which are joined by glycosidic linkage between C1 of one glucose unit and C4 of the next glucose unit.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "(iii) Glycogen: The carbohydrates are stored in animal body as glycogen. It is also known as animal starch because its structure is similar to amylopectin and is rather more highly branched. It is present in liver, muscles and brain. When the body needs glucose, enzymes break the glycogen down to glucose. Glycogen is also found in yeast and fungi."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "10.1.5 Importance of Carbohydrates"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Carbohydrates are essential for life in both plants and animals. They form a major portion of our food. Honey has been used for a long time as an instant source of energy by ‘Vaids’ in ayurvedic system of medicine. Carbohydrates are used as storage molecules as starch in plants and glycogen in animals. Cell wall of bacteria and plants is made up of cellulose. We build furniture, etc. from cellulose in the form"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "289",
+    "Biomolecules",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null; I read p008 myself immediately before this page — it ended with the complete labelled 'Amylose' figure and this page opens with a separate 'Amylopectin' structure figure, so nothing is split at the break and first_block_continues_from_previous is false. Within the page the cellulose list item (block 2) is interrupted by the full-page cellulose structure and resumes in block 4, which is flagged continues_from_previous for that reason: blocks 2 and 4 are one sentence ('...a straight chain polysaccharide composed only of β-D-glucose units...'). Text layer writes 'b-D-glucose' where the image prints β-D-glucose; the Greek letter is taken from the image. The amylopectin and cellulose structures are left to the special transcriber."
+}

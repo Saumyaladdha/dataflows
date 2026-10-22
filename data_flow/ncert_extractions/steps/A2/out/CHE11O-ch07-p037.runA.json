@@ -1,0 +1,122 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "chloride solution of same molar concentration. For a buffer solution formed by ammonium chloride and ammonium hydroxide, equation (7.42) becomes:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [218, 405, 810, 505],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "pH of the buffer solution is not affected by dilution because ratio under the logarithmic term remains unchanged."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "7.13 SOLUBILITY EQUILIBRIA OF SPARINGLY SOLUBLE SALTS"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "We have already known that the solubility of ionic solids in water varies a great deal. Some of these (like calcium chloride) are so soluble that they are hygroscopic in nature and even absorb water vapour from atmosphere. Others (such as lithium fluoride) have so little solubility that they are commonly termed as insoluble. The solubility depends on a number of factors important amongst which are the lattice enthalpy of the salt and the solvation enthalpy of the ions in a solution. For a salt to dissolve in a solvent the strong forces of attraction between its ions (lattice enthalpy) must be overcome by the ion-solvent interactions. The solvation enthalpy of ions is referred to in terms of solvation which is always negative i.e. energy is released in the process of solvation. The amount of solvation enthalpy depends on the nature of the solvent. In case of a non-polar (covalent) solvent, solvation enthalpy is small and hence, not sufficient to overcome lattice enthalpy of the salt. Consequently, the salt does not dissolve in non-polar solvent. As a general rule , for a salt to be able to dissolve in a particular solvent its solvation enthalpy must be greater than its lattice enthalpy so that the latter may be overcome by former. Each salt has its characteristic solubility which depends on temperature. We classify salts on the basis of their solubility in the following three categories."
+    },
+    {
+      "n": 6,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [212, 1685, 855, 1998],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "We shall now consider the equilibrium between the sparingly soluble ionic salt and its saturated aqueous solution."
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "7.13.1 Solubility Product Constant"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Let us now have a solid like barium sulphate in contact with its saturated aqueous solution. The equilibrium between the undisolved solid and the ions in a saturated solution can be represented by the equation:"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [893, 612, 1540, 685],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The equilibrium constant is given by the equation:"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [935, 775, 1325, 815],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "For a pure solid substance the concentration remains constant and we can write"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [935, 928, 1540, 972],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "We call Ksp the solubility product constant or simply solubility product. The experimental value of Ksp in above equation at 298K is 1.1 × 10 –10. This means that for solid barium sulphate in equilibrium with its saturated solution, the product of the concentrations of barium and sulphate ions is equal to its solubility product constant. The concentrations of the two ions will be equal to the molar solubility of the barium sulphate. If molar solubility is S, then"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [893, 1330, 1378, 1425],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Thus, molar solubility of barium sulphate will be equal to 1.05 × 10–5 mol L–1."
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "A salt may give on dissociation two or more than two anions and cations carrying different charges. For example, consider a salt like zirconium phosphate of molecular formula (Zr4+)3(PO4 3–)4. It dissociates into 3 zirconium cations of charge +4 and 4 phosphate anions of charge –3. If the molar solubility of zirconium phosphate is S, then it can be seen from the stoichiometry of the compound that"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [935, 1838, 1520, 1998],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "228",
+    "CHEMISTRY",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so I read steps/A2/out/CHE11O-ch07-p036.runA.json to judge the break: p036's last block ended '...can be obtained by taking ammonia solution and ammonium', and this page opens 'chloride solution of same molar concentration.', so first_block_continues_from_previous is true. Displayed expressions are needs_special with a pixel bbox and empty text, as throughout this chapter: blocks 2, 10, 12, 14, 16 and 19. Equation number (7.43) is inside block 14's bbox. Block 16 holds the two-line display '1.1 × 10-10 = (S)(S) = S2' and its 'or  S = 1.05 × 10-5.' line; block 19 holds the three stacked displays for zirconium phosphate ([Zr4+] = 3S ..., and Ksp = ..., or S = ...). Block 6 is the three-row Category I/II/III solubility table, left as needs_special; its row text ('Category I  Soluble  Solubility > 0.1M' etc.) sits inside the bbox. In the text layer the three-column table is serialised column-wise and out of visual order (all 'Category' cells, then the Soluble/Slightly/Sparingly cells interleaved with the solubility ranges), which is another reason not to transcribe it. In paragraph 15 the text layer breaks '1.1 x 10' and '-10' across a line, so I kept a space between them rather than joining into a number the layer does not hold; likewise '(PO4 3-)4' in paragraph 18. The page ends with a complete display equation and p038 begins a new sentence ('A solid salt of the general formula'), so last_block_continues_on_next is false."
+}

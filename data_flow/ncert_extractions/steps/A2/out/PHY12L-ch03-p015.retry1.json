@@ -1,0 +1,164 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        268,
+        470,
+        312
+      ],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        335,
+        1170,
+        398
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The maximum current that can be drawn from a cell is for R = 0\nand it is Imax = e/r. However, in most cells the maximum allowed current\nis much lower than this to prevent permanent damage to the cell."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "3.11  \n3.11  \n3.11  \n3.11  \n3.11  CELLS\nELLS\nELLS\nELLS\nELLS IN\nIN\nIN\nIN\nIN S\n S\n S\n S\n SERIES\nERIES\nERIES\nERIES\nERIES AND\nAND\nAND\nAND\nAND IN\nIN\nIN\nIN\nIN P\n P\n P\n P\n PARALLEL\nARALLEL\nARALLEL\nARALLEL\nARALLEL"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Like resistors, cells can be combined together in an electric circuit. And\nlike resistors, one can, for calculating currents and voltages in a circuit,\nreplace a combination of cells by an equivalent cell."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        330,
+        735,
+        1020,
+        850
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "FIGURE\nFIGURE\nFIGURE\nFIGURE\nFIGURE 3.13\n 3.13\n 3.13\n 3.13\n 3.13 Two cells of emf’s e1 and e2 in the series. r1, r2 are their\ninternal resistances. For connections across A and C, the combination\ncan be considered as one cell of emf eeq and an internal resistance req."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Consider first  two cells in series (Fig. 3.13), where one terminal of the\ntwo cells is joined together leaving the other terminal in either cell free.\ne1, e2 are the emf’s of the two cells and r1, r2 their internal resistances,\nrespectively."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Let V (A), V (B), V (C) be the potentials at points A, B and C shown in\nFig. 3.13. Then V (A) – V (B) is the potential difference between the positive\nand negative terminals of the first cell. We have already calculated it in\nEq. (3.38) and hence,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        210,
+        1298,
+        1170,
+        1398
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Similarly,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        210,
+        1455,
+        1170,
+        1518
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Hence, the potential difference between the terminals A and C of\nthe combination is"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        210,
+        1598,
+        1170,
+        1732
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "If we wish to replace the combination by a single cell between A and\nC of emf eeq and internal resistance req, we would have"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        210,
+        1800,
+        1170,
+        1852
+      ],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Comparing the last two equations, we get"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        162,
+        1880,
+        1170,
+        1985
+      ],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "In Fig.3.13, we had connected the negative electrode of the first to the\npositive electrode of the second. If instead we connect the two negatives,"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Current Electricity",
+    "95",
+    "Reprint 2026-27"
+  ],
+  "note": "Outline-font side-heading 3.11 and the Fig. 3.13 caption are repeated up to 5x and hoisted in the text layer; their text is copied verbatim from the layer (repeats included) so the characters match the layer exactly, and they are placed once each in true reading order. Displayed equations (3.40)-(3.46), including the unnumbered opening line, are marked needs_special because the layer scrambles their sub/superscripts."
+}

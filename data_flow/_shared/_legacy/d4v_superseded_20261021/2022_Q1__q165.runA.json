@@ -1,0 +1,36 @@
+{
+  "link_type": "rules_chained",
+  "derivation_steps": [
+    "The i gene product is the repressor, so the mutant i gene still makes a repressor; by the given mutation that repressor cannot bind the inducer.",
+    "Lactose (the inducer) is in the medium, but the only quoted route to switching the operon on is inactivation of the repressor by interaction with the inducer, and that interaction is exactly what the mutant repressor cannot do.",
+    "So the repressor stays bound to the operator region even in the presence of lactose, and RNA polymerase is prevented from transcribing the operon: the polycistronic z, y, a transcript is never made.",
+    "With no z, y, a transcript made, there is nothing for the cell to translate, so the z, y and a genes will not be translated (option 3); this also rules out options 1, 2 and 4, all of which require transcription to start."
+  ],
+  "evidence": [
+    {
+      "for": "rule",
+      "passage_id": "BIO12L-CH05-P120",
+      "exact_line": "The i gene codes for the repressor of the lac operon."
+    },
+    {
+      "for": "rule",
+      "passage_id": "BIO12L-CH05-P122",
+      "exact_line": "Lactose is the substrate for the enzyme beta-galactosidase and it regulates switching on and off of the operon. Hence, it is termed as inducer."
+    },
+    {
+      "for": "rule",
+      "passage_id": "BIO12L-CH05-P123",
+      "exact_line": "The repressor protein binds to the operator region of the operon and prevents RNA polymerase from transcribing the operon."
+    },
+    {
+      "for": "rule",
+      "passage_id": "BIO12L-CH05-P123",
+      "exact_line": "In the presence of an inducer, such as lactose or allolactose, the repressor is inactivated by interaction with the inducer. This allows RNA polymerase access to the promoter and transcription proceeds (Figure 5.14)."
+    }
+  ],
+  "supports_answer": "partly",
+  "missing": [
+    "The last step -- that genes which are not transcribed cannot be translated -- needs the NCERT statement that a polypeptide is translated from the mRNA transcript. No passage in this chapter shortlist says that; the line is in section 5.7 Translation, which was not included."
+  ],
+  "note": "Everything up to 'the operon is not transcribed' is quoted word for word: i gene -> repressor, lactose = inducer, repressor on the operator blocks RNA polymerase, and inducer binding is the only quoted way to lift that block. Only the final transcription -> translation link is unquoted here (expected from 5.7 Translation), hence 'partly' rather than 'fully'. NCERT's own wording would make the conclusion 'z, y, a will not be transcribed'; option 3 states the downstream consequence."
+}

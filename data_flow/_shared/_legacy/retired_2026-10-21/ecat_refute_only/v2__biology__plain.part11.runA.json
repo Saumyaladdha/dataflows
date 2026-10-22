@@ -1,0 +1,168 @@
+{
+  "group": "v2__biology__plain.part11",
+  "ratings": [
+    {
+      "question_id": "2015_A#q109",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "classification_hierarchy",
+      "concept": "Fungal classes: Deuteromycetes are the \"imperfect fungi\", known only in their asexual stage, and work as litter decomposers",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Ascomycetes, Basidiomycetes and Phycomycetes are each named after the sexual spore they produce, so none of them can be the class whose sexual stage is unknown; that strikes out options 1, 3 and 4.",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Jumps to the class most imperfect fungi are moved into once their sexual stage is found. The stem asks for the class they sit in while that stage is still unknown."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "Names the class of mushrooms and rusts, which is defined by its basidia. The fungi in the stem have no known sexual stage at all."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Names the algal fungi, which live in water or on damp wood. They are not the class defined by a missing sexual stage."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires recall of which fungal class the term \"imperfect fungi\" names, demonstrated by the stem's \"The imperfect fungi which are decomposers of litter\" and option 2 \"Deuteromycetes\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q110",
+      "question_type": "plain_mcq",
+      "format": "pick_both_parts",
+      "content_shape": "definition_term",
+      "concept": "Homology versus analogy: similar function built from different ancestry is analogous, and that is what convergent evolution produces",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "A bird's wing is a modified forelimb and an insect's wing is an outgrowth of the body wall, so they share no ancestral structure; that one fact strikes out options 1 and 2, the two that say \"Homologous\".",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "1",
+          "route": "Gets convergent evolution right and still calls the wings homologous. The two wings are built from different body parts, so they cannot be homologous."
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "2",
+          "route": "Gives the answer to the bird-wing-and-whale-flipper question. Those two are homologous and divergent; a bird and an insect are neither."
+        },
+        {
+          "label": "fabricated_term",
+          "option": "4",
+          "route": "Offers \"phylogenetic structures\", which is not a category of similarity in the chapter. The two categories on offer are homologous and analogous."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires holding homology and analogy apart, demonstrated by option 3 pairing \"Analogous structures\" with \"convergent evolution\" while option 1 attaches the same evolution label to \"Homologous structures\".",
+      "note": "E2 is pick_both_parts: each option carries two claims, the kind of similarity and the kind of evolution, and both must hold. E1 stays plain_mcq rather than pair_options, because the two halves of an option are different sorts of claim, not a set of same-kind items. single_step rather than multi_step_dependent: analogous-with-convergent and homologous-with-divergent is one memorised link, so deciding the ancestry settles both halves at once."
+    },
+    {
+      "question_id": "2015_A#q111",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Unisexual flowers: cucurbits such as cucumber carry separate staminate and pistillate flowers on one plant, while onion, pea and China rose are bisexual",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires recall of which named plant bears unisexual flowers, demonstrated by the stem \"Flower are unisexual in:\" and by all four options being named plants.",
+      "note": "No trap. The three wrong options are three interchangeable instances of the single alternative, a bisexual flower, so no mis-step picks onion rather than pea rather than China rose, and a trap that cannot name the option it lands on is not written down. The device that is present sits on the option set rather than on any one option: all four are stock NCERT example plants of the same kind, which is what no_elimination_route describes, and that label cannot be recorded here because the schema requires one option number per trap. No elimination either, for the same reason - the only fact that strikes an option out is the fact that answers the question."
+    },
+    {
+      "question_id": "2015_A#q112",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Biomagnification: a non-degradable toxicant such as DDT becomes more concentrated at each higher trophic level",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Picks the other named \"bio-\" process from the same chapter. Biogeochemical cycling is the path a nutrient takes through the ecosystem, not a build-up along the food chain."
+        },
+        {
+          "label": "look_alike_term",
+          "option": "3",
+          "route": "Reads biodeterioration for biomagnification. Biodeterioration is the breaking down of materials by organisms."
+        },
+        {
+          "label": "look_alike_term",
+          "option": "4",
+          "route": "Reads biotransformation for biomagnification. Biotransformation is the chemical change an organism makes to a compound it takes in."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires recall of the term for a rising toxicant concentration up the food chain, demonstrated by the stem's \"at successive trophic levels\" and option 2 \"Biomagnification\".",
+      "note": "No elimination: all four options are real \"bio-\" terms from the same chapter, so no fact short of the definitions themselves strikes any of them out."
+    },
+    {
+      "question_id": "2015_A#q113",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "structure_function",
+      "concept": "Spinal cord grey matter: motor neurons sit in the anterior horn and sensory fibres enter at the posterior horn, so the anterior horn carries voluntary motor output",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Sensory fibres enter through the dorsal root into the posterior horn, not the anterior horn, so that one fact strikes out option 2.",
+      "traps": [
+        {
+          "label": "wrong_site_or_stage",
+          "option": "2",
+          "route": "Gives the posterior horn's job to the anterior horn. Sensory fibres come in at the back of the cord."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Names the fibres that cross between the two halves of the cord. Those run in the commissure, not through the anterior horn cells."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Gives a job of the cord's interneurons rather than of its motor neurons. The anterior horn cells are the last relay out to the muscle."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the known position of the motor neurons to a stated lesion, demonstrated by the stem's \"Destruction of the anterior horn cells\" and option 3 \"Voluntary motor impulses\" being the output those cells carry.",
+      "note": "This is the only member whose stem states a change and asks for its consequence, which is why E2 is pick_cause_or_effect and the demand is application rather than recall: the position of the motor neurons has to be known first and then applied to the destruction the stem describes."
+    },
+    {
+      "question_id": "2015_A#q114",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Water uptake in hydrophytes: a free-floating plant such as Pistia takes in water over its whole surface, so its roots count for little",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Wheat, sunflower and pea are all land crops that can take up water only through roots; Pistia is the one aquatic plant in the list, and that one fact about habitat strikes out options 1, 2 and 4.",
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires recall of which named plant absorbs water other than through its roots, demonstrated by the stem's \"Roots play insignificant role in absorption of water\" and option 3 \"Pistia\", a free-floating hydrophyte.",
+      "note": "No trap. The three wrong options fail for one and the same reason - each is a terrestrial plant - so there is no mis-step that lands on wheat rather than sunflower rather than pea, and a trap that cannot name its option is omitted. Unlike q111, elimination is still available here, because habitat is a fact separate from the answer and strikes all three out at once."
+    }
+  ],
+  "group_note": "Six questions grouped on structure \"plain\" and all six are plain_mcq on E1, so this packet needed no member flagged as out of shape. Four are single-fact recall items settled in one step. Two differ and the difference is stated: 2015_A#q110 is concept_discrimination, because its options cross two kinds of similarity with two kinds of evolution and the live decision is holding homology and analogy apart; 2015_A#q113 is application, because the stem states a lesion and the known position of the motor neurons has to be applied to it, which is also why it is one of only two members whose format is not name_or_identify. q110 is the only member whose answer has two parts that must both hold, so it alone is pick_both_parts; q113 is the only one whose options are rival outcomes of a stated change, so it alone is pick_cause_or_effect. Nothing is multi_step_dependent: q110 looks two-dimensional, but the analogous-with-convergent pairing is one memorised link, so one decision settles both halves. The trap axis was levelled by one test applied to all six - is there a mis-step that lands on THAT option rather than on its neighbour? Where each wrong option is a different named thing the test passes and routes were written: a different fungal class in q109, a different \"bio-\" process or a look-alike term in q112, a different horn or tract of the cord in q113, and in q110 a half-right option, the published answer to the bird-and-whale question, and a term that is not in the chapter. Where the wrong options are interchangeable instances of one complement the test fails, and q111 and q114 therefore carry no traps at all: nothing selects onion over pea over China rose, or wheat over sunflower over pea. q111's note records the set-level device actually present (all four are stock example plants, which is what no_elimination_route describes) and why the schema's one-option-per-trap rule leaves it unrecordable. Elimination was granted only on a fact separate from the answer: the spore names in q109, the two different body parts in q110, the dorsal root in q113, habitat in q114. It was withheld from q111 and q112, where every option is a real term of the same kind from the same paragraph. No trap is placed on any official answer."
+}

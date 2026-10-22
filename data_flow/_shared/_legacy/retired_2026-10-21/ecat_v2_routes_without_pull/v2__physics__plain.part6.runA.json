@@ -1,0 +1,141 @@
+{
+  "group": "v2__physics__plain.part6",
+  "ratings": [
+    {
+      "question_id": "2015_A#q168",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Elastic collision of equal masses: kinetic energy is conserved, so $v_2=\\sqrt{v^2-(v/3)^2}=\\frac{2\\sqrt{2}}{3}v$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The second block cannot leave faster than the first arrived, and $3v/\\sqrt{2}=2.12v$ is above $v$, which strikes out option 4.",
+      "traps": [
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "At $2.12v$ the second block would carry more energy than the first one brought in. No route reaches a speed above $v$."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one conservation equation solved for the missing speed, demonstrated by the stem's \"collides elastically\" and \"has a speed $\\frac{v}{3}$\", which fix $v_2^2=v^2-v^2/9$.",
+      "note": "No tag on options 1 and 3. $\\frac{\\sqrt{3}}{2}v$ is what $\\sqrt{v^2-(v/2)^2}$ gives, which needs the first block's speed read as $v/2$ rather than the printed $v/3$, and that is a misreading of the stem rather than a wrong operation on it. For $\\frac{3}{4}v$ I tried conserving momentum as a scalar sum (gives $2v/3$), halving and taking the root of $8/9$ wrongly, and none lands on it. A figure is attached; the stem prints the masses, the speed and the fraction, so no secondary_type of figure_to_read is recorded. Kept single_step: energy conservation alone answers it, with no result carried into a second relation."
+    },
+    {
+      "question_id": "2015_A#q169",
+      "question_type": "plain_mcq",
+      "format": "pick_both_parts",
+      "content_shape": "formula_or_law",
+      "concept": "Field from a potential: $\\vec{E}=-\\nabla V$, one partial derivative per component",
+      "cognitive_demand": "calculation",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The $z$ component is the quickest to get, $-\\partial V/\\partial z=-2y=-2$ at the given point, and only option 3 carries a $2$ there.",
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires three separate derivatives of one printed function, demonstrated by $V=6xy-y+2yz$ giving $\\partial V/\\partial x=6y$, $\\partial V/\\partial y=6x-1+2z$ and $\\partial V/\\partial z=2y$, which are evaluated independently of one another.",
+      "note": "traps is empty, and that is the finding. Each wrong option keeps at most one correct component - option 1 the $x$ component $6$, option 2 the $y$ component $5$ - and no single mis-step produces the rest of either. The routes I tried were: substituting the point $(1,1,0)$ before differentiating, which gives $(6,0,0)$; dropping the coefficient in $2yz$, which gives $1$ for the $z$ component but leaves option 1's $9$ unexplained; and evaluating at $(1,1,1)$, which gives $(6,7,2)$. Since no option can be tied to one route, none is tagged."
+    },
+    {
+      "question_id": "2015_A#q170",
+      "question_type": "plain_mcq",
+      "format": "pick_ratio",
+      "content_shape": "formula_or_law",
+      "concept": "Interference maxima and minima: amplitudes go as $\\sqrt{I}$, so widths $1:25$ give amplitudes $1:5$ and $\\frac{I_{max}}{I_{min}}=\\left(\\frac{5+1}{5-1}\\right)^2$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The brightest point cannot be dimmer than the darkest, so the ratio must exceed 1; that strikes out option 1 ($4/9$) and option 4 ($49/121$).",
+      "traps": [
+        {
+          "label": "inverted_ratio",
+          "option": "1",
+          "route": "Writes the ratio the other way up. $4/9$ is the reciprocal of $9/4$."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires widths turned into intensities, then into amplitudes, before the ratio can be formed, demonstrated by the stem's \"widths in the ratio $1 : 25$\" becoming amplitudes $1:5$ and then $36/16$.",
+      "note": "No tag on options 3 and 4. They are a second value printed both ways up ($121/49$ and $49/121$), which completes a grid alongside $9/4$ and $4/9$, but I could not derive $11/7$ from the printed $1:25$: using the widths as amplitudes gives $(26/24)^2$, and taking the root once more gives neither. Rather than tag the grid as a device on a single option, it is recorded here."
+    },
+    {
+      "question_id": "2015_A#q171",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Power as pressure times volume flow rate: the pressure is $h\\rho g$ and the flow is the 5 litres per minute turned into $\\mathrm{m^3/s}$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["unit_sanity"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "new_trap",
+          "option": "1",
+          "route": "The option reprints the stem's own figure 150 with the decimal point moved, as 1.50, next to a correct answer of 1.70 that it closely resembles. The pressure 150 mm of mercury is $0.15\\times13.6\\times10^3\\times10=2.04\\times10^4\\,\\mathrm{Pa}$, and with $8.33\\times10^{-5}\\,\\mathrm{m^3/s}$ of flow the power is 1.70 W."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires two conversions before one multiplication, demonstrated by the stem's \"150 mm of mercury\" and \"5 litres ... per minute\", neither of which can be used in SI as printed.",
+      "note": "new_trap on option 1: the device is a digit echo, an option built from the digits of a number printed in the stem with the decimal point shifted. `copied_from_stem` is defined for a repeated phrase rather than a repeated numeral, and `calculation_slip` would need an operation on $2.04\\times10^4\\,\\mathrm{Pa}$ and $8.33\\times10^{-5}\\,\\mathrm{m^3/s}$ that yields 1.50, which I could not produce. Section 5b records a `digit_echo` device discovered in the per-subject clusters with no live label, and this is a case of it. Options 3 and 4 are left untagged: using $g=9.8$ gives 1.67, leaving the 150 unconverted gives 1700 W, and treating the flow as $5\\times10^{-3}\\,\\mathrm{m^3/s}$ gives 102 W, so nothing lands on 2.35 or 3.0."
+    },
+    {
+      "question_id": "2015_A#q172",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Radius of a charged particle in a magnetic field: $r=\\frac{\\sqrt{2mK}}{qB}$, so equal radii need $K\\propto q^2/m$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "Doubles the energy for the doubled charge and keeps the proton's mass. Gives 4 MeV; the alpha particle's four times larger mass cancels that back to 1 MeV."
+        },
+        {
+          "label": "wrong_power_of_dependence",
+          "option": "3",
+          "route": "Uses the charge to the first power instead of squared. $2/4$ gives 0.5 MeV where $2^2/4$ gives 1 MeV."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires the energy to be expressed from the radius before the two particles can be compared, demonstrated by the stem's \"radius of circular orbits for both the particles is equal\" with the alpha particle carrying twice the charge and four times the mass.",
+      "note": "No tag on option 4. 1.5 MeV needs a factor of $3/2$, and no combination of the charge ratio 2 and the mass ratio 4 produces it, so it is left untagged."
+    },
+    {
+      "question_id": "2015_A#q173",
+      "question_type": "plain_mcq",
+      "format": "pick_both_parts",
+      "content_shape": "formula_or_law",
+      "concept": "Common-emitter amplifier: the output is the gain times the input and is inverted, so the phase gains $\\pi$",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "2",
+          "route": "Multiplies the amplitude by 150 and leaves the phase untouched. The $\\pi$ from the inversion is missing, so $\\pi/3$ stays instead of becoming $4\\pi/3$."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "3",
+          "route": "Divides the gain by the input amplitude instead of multiplying. Gives 75 in place of $150\\times2=300$."
+        },
+        {
+          "label": "copied_from_stem",
+          "option": "4",
+          "route": "Copies the input amplitude straight through. The 2 of $V_i=2\\cos(15t+\\pi/3)$ is reprinted and the gain of 150 is never applied."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires the amplitude and the phase settled separately, demonstrated by the stem's gain of \"$150$\" fixing $300$ while the common-emitter stage fixes the phase at $\\pi/3+\\pi$, as options 1 and 2 differ only in the second of these.",
+      "note": "Demand is application rather than calculation: the multiplication $150\\times2$ is trivial and what the question turns on is the inversion rule for this stage being applied to the printed phase."
+    }
+  ],
+  "group_note": "All six are plain_mcq and all six are built on formula_or_law, so E1 and E3 are uniform and the reader's grouping on structure=plain holds for every member. The solution axis is where they separate, and the test applied to all six was the rulebook's: does a later step need an earlier one's result? q170, q171 and q172 do (widths to intensities to amplitudes; two unit conversions before one product; the energy expressed from the radius before the two particles are compared) and are multi_step_dependent. q168 is single_step, because one energy equation answers it outright. q169 and q173 are several_independent_checks, and this is the distinction the rulebook says v1's single `multi_step` label could not express: q169's three partial derivatives are taken independently of one another, and q173's amplitude and phase are settled separately, so neither is a chain of dependent steps however many numbers it involves. Demand is calculation for five. q173 alone is application, because its multiplication is trivial and the question turns on applying the inversion rule of the common-emitter stage. E2 follows the options alone and splits four ways, which is why it is the axis that most distinguishes this packet: a symbolic expression in q168, a vector whose three components must all hold in q169, a ratio printed as a ratio in q170, numbers with units in q171 and q172, and a signal whose amplitude and phase must both hold in q173. Elimination is recorded three times, each with the struck options named: an impossible speed in q168, the quickest component in q169, and a ratio that must exceed 1 in q170. q171 carries unit_sanity, because neither printed quantity can be used in SI as it stands. Restraint on the trap axis is the other thing to record. Nine wrong options across the packet carry no tag, and in every case the mis-steps I tried are written into that question's note rather than resolved into a near-fitting label: q169 carries an empty traps list despite three wrong options, because each keeps at most one correct component and no single route produces the rest of it. One escape hatch was needed, new_trap on q171 option 1, for a digit echo of the stem's 150 printed as 1.50, a device section 5b records from the per-subject clusters with no live label; it is described in that question's note. No trap sits on an official answer, and no option carries two traps."
+}

@@ -1,0 +1,218 @@
+{
+  "question_id": "Q-000155",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:167"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Match List I with List II.",
+  "statements": [],
+  "list_i": [
+    {
+      "label": "A",
+      "text": "A Leopard and a Lion in a forest/grassland"
+    },
+    {
+      "label": "B",
+      "text": "A Cuckoo laying egg in a Crow's nest"
+    },
+    {
+      "label": "C",
+      "text": "Fungi and root of a higher plant in Mycorrtizae"
+    },
+    {
+      "label": "D",
+      "text": "A cattle egret and a Cattle in a field"
+    }
+  ],
+  "list_ii": [
+    {
+      "label": "I",
+      "text": "Competition"
+    },
+    {
+      "label": "II",
+      "text": "Brood parasitism"
+    },
+    {
+      "label": "III",
+      "text": "Mutualism"
+    },
+    {
+      "label": "IV",
+      "text": "Commensalism"
+    }
+  ],
+  "options_en": {
+    "1": "A-I, B-II, C-III, D-IV",
+    "2": "A-I, B-II, C-IV, D-III",
+    "3": "A-III, B-IV, C-I, D-II",
+    "4": "A-II, B-III, C-I, D-IV"
+  },
+  "structure": "match",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "167\nMatch List I with List II.\nInteracting species\nName of Interaction\nA. A Leopard and a Lion in a forest/grassland\nI. Competition\nB. A Cuckoo laying egg in a Crow’s nest\nII. Brood parasitism\nC. Fungi and root of a higher plant in Mycorrtizae\nIII. Mutualism\nD. A cattle egret and a Cattle in a field\nIV. Commensalism\nChoose the correct answer from the options given below:\n(1)\nA-I, B-II, C-III, D-IV\n(2)\nA-I, B-II, C-IV, D-III\n(3)\nA-III, B-IV, C-I, D-II\n(4)\nA-II, B-III, C-I, D-IV\nAnimal Kingdom\n",
+  "b4_script_options": {
+    "1": "A-I, B-II, C-III, D-IV",
+    "2": "A-I, B-II, C-IV, D-III",
+    "3": "A-III, B-IV, C-I, D-II",
+    "4": "A-II, B-III, C-I, D-IV\nAnimal Kingdom"
+  },
+  "official_answer": "1",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "1",
+  "b6_reason": "Leopard-Lion compete for prey (Competition), Cuckoo-Crow is Brood parasitism, Mycorrhizae is Mutualism, Cattle egret-Cattle is Commensalism, matching A-I, B-II, C-III, D-IV.",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

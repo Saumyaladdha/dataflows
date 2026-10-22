@@ -1,0 +1,36 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "clipped",
+      "what": "The benzenediazonium ion resonance figure is destroyed. The book prints four resonance structures, each a benzene ring carrying the diazonium group, with the positive ring charge moving ortho/para around the ring and three double-headed arrows between them. The render keeps only a 5 mm horizontal sliver of the very top of that figure -- the four pink N(+)=N(-) labels and the one curved arrow, sheared off mid-letter so even the N's are cut in half. All four benzene rings, all four ring charges and all three double-headed resonance arrows are gone, leaving a band of white where the figure should be. Nothing in the figure is legible.",
+      "where": "centre of the page, between the 'Primary aliphatic amines' paragraph and the '9.7 Method of Preparation of Diazonium Salts' side head"
+    },
+    {
+      "kind": "missing",
+      "what": "The page folio is absent: the book prints 'Chemistry  274' over a yellow rule at the bottom left. That whole footer block, number and rule, is blank in the render; only the 'Reprint 2026-27' line at the foot survives.",
+      "where": "bottom left of the page"
+    },
+    {
+      "kind": "misplaced",
+      "what": "In the Intext Questions box the sub-parts of questions 9.4 and 9.5 are promoted to question level. The book indents '(i)', '(ii)' and '(iii)' under 9.4 in ordinary roman type; the render sets them bold, in the same left-hand number column as '9.4' and '9.5', so the box reads as eight separate numbered questions rather than 9.4 with three parts and 9.5 with two.",
+      "where": "the Intext Questions box, items 9.4 and 9.5"
+    },
+    {
+      "kind": "formatting",
+      "what": "Chemical formulae in the opening DIAZONIUM SALTS paragraph lose their subscripts and charge superscripts. The book sets the general formula as a displayed 'R-N2+ X-' with subscript 2 and the charges raised, and likewise 'Cl-, Br-, HSO4-, BF4-', 'the N2+ group' and 'C6H5N2+Cl-'. The render flattens all of these to flat inline text ('R-N2+X-', 'Cl-, Br-, HSO4-, BF4-', 'The N2+ group', 'C6H5N2+Cl- is named'), while setting the very next formula C6H5N2+HSO4- correctly -- so the loss is inconsistent within one paragraph.",
+      "where": "the paragraph beginning 'The diazonium salts have the general formula'"
+    },
+    {
+      "kind": "formatting",
+      "what": "The 'Intext Questions' head loses its styling: the book sets it in blue decorative script with an underline rule; the render sets it as plain black bold text. The 'II. DIAZONIUM SALTS' head likewise drops from bold black capitals at heading size to small grey bold italic capitals at body size or below.",
+      "where": "top of the Intext Questions box, and the section head beneath it"
+    },
+    {
+      "kind": "formatting",
+      "what": "The final diazotisation equation loses the book's colour coding: magenta on aniline's NH2 and on the diazonium N2+, green on the 2HCl, on the diazonium Cl- and on NaCl. The render prints 'C6H5NH2 + NaNO2 + 2HCl -(273-278K)-> C6H5N2+Cl- + NaCl + 2H2O' entirely in black.",
+      "where": "the displayed equation at the foot of the text"
+    }
+  ],
+  "note": "Compared block by block: the Intext Questions box (9.4 to 9.8), the 'II. DIAZONIUM SALTS' head and its two paragraphs, the resonance figure, the '9.7 Method of Preparation of Diazoniun Salts' side head, the diazotisation paragraph and the closing equation. All running text is present and correct, including every one of questions 9.4-9.8 with their formulae (subscripts are correct inside the box), the bold 'diazotisation', and the side head with its red rule in the left margin -- the book's own spelling 'Diazoniun' is reproduced, which is right. The resonance figure's destruction was confirmed at 4x magnification: what remains is a cropped top edge, not a small-but-complete figure. I could not judge whether the rest of that figure exists below the crop line in the source asset or was never placed."
+}

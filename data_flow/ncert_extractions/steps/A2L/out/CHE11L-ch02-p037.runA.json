@@ -1,0 +1,35 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 19.0,
+    "columns": [
+      {"id": "left", "x0": 0.175, "x1": 0.473},
+      {"id": "right", "x0": 0.544, "x1": 0.832}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "running_header", "bbox": [0.126, 0.0867, 0.270, 0.094],
+     "column": "left", "size_rel": 0.84, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.862, 0.0867, 0.876, 0.094],
+     "column": "right", "size_rel": 0.84, "align": "right", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "box", "bbox": [0.1246, 0.1193, 0.8777, 0.7491],
+     "column": "full", "size_rel": 1.0, "fill": "#cbe7d3"},
+    {"n": 1, "role": "major_heading", "bbox": [0.240, 0.1349, 0.771, 0.1468],
+     "column": "full", "size_rel": 1.05, "align": "center", "font": "serif-bold",
+     "text_color": "#221f1f", "fill": "#cbe7d3"},
+    {"n": 2, "role": "paragraph", "bbox": [0.175, 0.1729, 0.473, 0.7353],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "fill": "#cbe7d3"},
+    {"n": 3, "role": "figure", "bbox": [0.571, 0.1743, 0.803, 0.6844],
+     "column": "right", "size_rel": 1.0, "fill": "#cbe7d3"},
+    {"n": null, "role": "figure_caption", "bbox": [0.544, 0.7050, 0.832, 0.7312],
+     "column": "right", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "text_color": "#221f1f", "fill": "#cbe7d3"},
+    {"n": null, "role": "decorative_image", "bbox": [0.223, 0.306, 0.842, 0.813],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.9555, 0.522, 0.9624],
+     "column": "full", "size_rel": 0.84, "align": "center", "text_color": "#221f1f"}
+  ],
+  "note": "The whole page body is one tinted, green-ruled panel: fill #cbe7d3 sampled from the flat interior, 1.5 px rule in #00a550 at its edge, spanning x 0.1246-0.8777 and y 0.1193-0.7491 - exactly the page's normal text measure. The panel is given n:null; A2's block 2 (kind 'box') is the panel's PROSE, so n:2 sits on the left-column prose region, because putting it on the panel would make a renderer flood block 2's text over the figure as well. Below the panel the page is empty white paper to the foot. Columns are the panel's INNER columns (prose left x 0.175-0.473, figure right x 0.544-0.832), which are inset from the page's own measure of 0.124-0.878 seen on the surrounding body pages. body_text_size_px 19.0 is the cap-to-baseline of 'T' in 'The completely filled' (y 377-395); line pitch inside the panel is 32.5 px, slightly tighter than the 35.7 px of ordinary body pages. The panel's centred bold-serif title (block 1) measures 20 px cap height, size_rel 1.05; it is the title of a boxed feature rather than a numbered section, and 'major_heading' is the closest allowed role. Block 3 (figure, empty text_head) is the stack of FOUR orbital-box diagrams with red exchange arrows plus their four one-line labels ('4 exchange by electron 1' ... '1 exchange by electron 4'); it is reported as ONE figure region covering the whole stack, since n:3 is one block and could not honestly be put on just one of the four panels. The separate 'Fig. 2.18 Possible exchange for a d5 configuration' line below it is a figure_caption with n:null. Running head and folio are mirrored from the previous page (header left, folio right), so this is the recto. The diagonal grey NCERT watermark crosses both the tint and the white paper below it; its bbox is the measured glyph envelope and is approximate where body text overprints it. The centred '2024-25' at the foot is a running footer; the allowed role list has no running_footer, so running_header is used, with font omitted as unsure."
+}

@@ -1,0 +1,147 @@
+{
+  "group": "v2__chemistry__plain.part7",
+  "ratings": [
+    {
+      "question_id": "2015_A#q039",
+      "concept": "Precipitate mass from percentage-strength solutions: percentage and volume → grams → moles → limiting reagent → mass of AgCl (143.5 g/mol)",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "estimation"
+      ],
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "takes the percentage figures as the whole amount present — 16.9 g AgNO3 and 5.8 g NaCl, i.e. 0.1 mol each — instead of the 50 mL portions actually mixed, doubling the answer to 0.1 × 143.5 ≈ 14 g"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "divides the 0.05 mol by two again, as if the 50 mL of each solution were first diluted into the 100 mL of mixture, giving 0.025 × 143.5 ≈ 3.5 g"
+        }
+      ],
+      "reason": "This question requires chaining percentage strength, moles and the limiting reagent to a precipitate mass, demonstrated by the stem \"50 mL of 16.9% solution of AgNO3 is mixed with 50 mL of 5.8% NaCl solution\", which gives 0.05 mol of each and so 0.05 × 143.5 ≈ 7 g of AgCl.",
+      "note": "The four options are a doubling ladder, 3.5 / 7 / 14 / 28 g. Options 2 and 4 are tagged because a single named operation reaches each; option 3 (28 g, four times the key) needs two compounded errors and no single operation was found that lands on it, so per rulebook rule 4 it is left untagged."
+    },
+    {
+      "question_id": "2015_A#q040",
+      "concept": "Catalytic air oxidation of benzene over V2O5 breaks the ring and gives maleic anhydride, not a side-chain oxidation product",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "1",
+          "route": "benzoic acid is the remembered product of oxidising toluene's side chain with KMnO4, which answers a different substrate's question"
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "2",
+          "route": "benzaldehyde is the remembered product of the controlled (partial) oxidation of toluene, again a different substrate"
+        },
+        {
+          "label": "look_alike_term",
+          "option": "3",
+          "route": "\"Benzoic anhydride\" against the key \"Maleic anhydride\": the anhydride half of the right name is kept and the acid half exchanged for the one matching the stem's benzene"
+        }
+      ],
+      "reason": "This question requires one stored reagent-to-product mapping, demonstrated by the stem \"The oxidation of benzene by V2O5 in the presence of air produces:\" and the key \"Maleic anhydride\".",
+      "note": "has_figure is true (figures_agent/2015_A/q040.png), but the stem and all four options are complete text, so nothing is missing and the item is not source_incomplete."
+    },
+    {
+      "question_id": "2015_A#q041",
+      "concept": "Acid-catalysed dehydration: which of four printed alkenes is NOT among the products of the given substrate",
+      "cognitive_demand": "",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [],
+      "verdicts": [
+        "source_damage_artifact"
+      ],
+      "reason": "This question requires a product-by-product verdict against a dehydration, demonstrated by the stem \"Which of the following is not the product of dehydration of [structure] ?\", whose negated form makes every option a separate check.",
+      "note": "Source damage, so E5 is empty under rulebook rule 5. Both the substrate in the stem and all four options are placeholders in our record — the stem reads \"dehydration of [structure]\" and each option reads \"[structure diagram]\" — so the only certain things are the task's negated form and that the options are candidate dehydration products. cognitive_demand is left as the unsure empty string on purpose: without the substrate it cannot be decided whether the question turns on Zaitsev selectivity, on carbocation rearrangement or on simple product enumeration, and filling it would be a guess. The stem structure and the option images need repair before this question is tagged further."
+    },
+    {
+      "question_id": "2015_A#q042",
+      "concept": "Scope of the standard amine preparations: the Gabriel phthalimide synthesis fails with aryl halides, so it cannot make aniline, while nitro reduction, isocyanide hydrolysis and Hofmann bromamide degradation all can",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "\"Reduction of nitrobenzene with H2/Pd in ethanol\" is a genuine aniline preparation, and the task asks for the method that CANNOT be used, so a working method is the wrong selection"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "\"Hydrolysis of phenylisocyanide with acidic solution\" is a genuine aniline preparation, and the task asks for the method that cannot be used"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "\"Degradation of benzamide with bromine in alkaline solution\" is the Hofmann bromamide reaction and a genuine aniline preparation, and the task asks for the method that cannot be used"
+        }
+      ],
+      "reason": "This question requires applying the known substrate scope of four named preparations to one target amine, demonstrated by the key option \"Potassium salt of phthalimide treated with chlorobenzene followed by hydrolysis\", since the Gabriel synthesis needs an SN2-reactive alkyl halide and chlorobenzene is an aryl halide.",
+      "note": "negative_words_seen is empty in our record although the stem reads \"Method by which Aniline cannot be prepared is:\"; the task is negated, which is what the three true_statement_trap entries above rest on. has_figure is true (figures_agent/2015_A/q042.png) but all four options are complete text, so nothing is missing."
+    },
+    {
+      "question_id": "2015_A#q044",
+      "concept": "(n+l) rule for orbital energies: 3s (3) < 3p (4) < 4s (4, higher n breaks the tie) < 3d (5), which is why 4s fills before 3d",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Within one shell energy rises with l, so 3s must come before 3p; that single fact strikes options 3 (3s 4s 3p 3d) and 4 (4s 3s 3p 3d), which both interpose 4s before 3p.",
+      "traps": [
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "1",
+          "route": "keeps 3s < 3p and swaps the single final adjacency to \"3d 4s\", which is the order given by the principal quantum number alone instead of by (n+l)"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "no filling rule reaches 3s 4s 3p 3d: by (n+l) the values are 3s = 3, 3p = 4, 4s = 4, 3d = 5, and the tie between 3p and 4s is broken in favour of the lower n, so 4s can never precede 3p; by n alone 4s is last. The option widens the spread"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "no filling rule reaches 4s 3s 3p 3d either: 4s has (n+l) = 4 against 3s's 3, so it cannot be lowest on (n+l), and it is highest on n alone"
+        }
+      ],
+      "reason": "This question requires applying the (n+l) rule to four named orbitals, demonstrated by the key order \"3s 3p 4s 3d\", in which 4s (n+l = 4) precedes 3d (n+l = 5).",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q045",
+      "concept": "Self-reduction (Bessemerisation) in copper extraction: Cu2S reduces Cu2O, 2Cu2O + Cu2S → 6Cu + SO2",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "iron (II) sulphide is the matte impurity removed earlier as slag in the same extraction, not the reductant of cuprous oxide"
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "4",
+          "route": "carbon monoxide is the remembered reductant of the blast-furnace question (iron oxides), which this stem superficially resembles"
+        }
+      ],
+      "verdicts": [
+        "arguable_key"
+      ],
+      "reason": "This question requires one stored step of a named extraction, demonstrated by the stem \"the metal is finally obtained by the reduction of cuprous oxide with:\", the step written 2Cu2O + Cu2S → 6Cu + SO2.",
+      "note": "The key is recorded here as printed and is NOT overturned (rulebook section 7), but it is flagged: our record gives correct_answer = 2, \"Sulphur dioxide\", while in the reaction named by the stem sulphur dioxide is the product and copper (I) sulphide (option 1) is the reductant. Either the stored key or the stored option order needs checking against the printed paper. Because of that doubt no trap is written on option 1 or option 2 — a trap must not land on the official answer, and which of the two the answer is cannot be settled from our record; only options 3 and 4, which are wrong either way, carry devices."
+    }
+  ],
+  "group_note": "The packet was grouped on structure=plain and five members are plain_mcq, but q041 does not belong with the rest: it is a structure-option question — the stem's substrate and all four options are drawn structures — and was read as \"plain\" only because our record replaced each image with a \"[structure]\" placeholder. It therefore carries the verdict source_damage_artifact, an empty traps list, and the one E4 field that the stem cannot settle (cognitive_demand) left as the unsure empty string, with the damage described in its note instead of being tagged as the question's shape. Across the rest, labels were set by demand and kept equal where the demand is equal: q040 and q045 are single stored reagent-to-product or reagent-to-step mappings, so both get recall + single_step; q042 and q044 both apply a known rule or scope to a case and so both get application, differing only in solution_structure, because q042's four named preparations must each be adjudicated (several_independent_checks) while q044's one (n+l) rule produces the whole order in one act (single_step); q039 is the only item that computes a number through dependent stages and is the only multi_step_dependent member. elimination is carried by q044 (3s before 3p strikes two options) and withheld elsewhere, since no other member offered a nameable fact that strikes a named option; q039 carries estimation instead, because both reagents come to ≈ 0.05 mol and the product mass can be read off as ≈ 7 g. On E5: q042 is the negated item and gets true_statement_trap on each working method with the polarity named; q044's options 3 and 4 get no_derivation_route, which is demonstrated rather than asserted by listing the (n+l) values — this packet is where that label is defensible because the rule set is small and enumerable; q045 carries arguable_key with the discrepancy spelled out and traps restricted to the two options that are wrong on either reading of the key."
+}

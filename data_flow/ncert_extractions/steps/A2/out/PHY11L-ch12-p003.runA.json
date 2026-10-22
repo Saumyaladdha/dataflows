@@ -1,0 +1,152 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "is misleading. The gas is full of activity and the equilibrium is a dynamic one. In dynamic equilibrium, molecules collide and change their speeds during the collision. Only the average properties are constant.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Atomic theory is not the end of our quest, but the beginning. We now know that atoms are not indivisible or elementary. They consist of a nucleus and electrons. The nucleus itself is made up of protons and neutrons. The protons and neutrons are again made up of quarks. Even quarks may not be the end of the story. There may be string like elementary entities. Nature always has surprises for us, but the search for truth is often enjoyable and the discoveries beautiful. In this chapter, we shall limit ourselves to understanding the behaviour of gases (and a little bit of solids), as a collection of moving molecules in incessant motion."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "12.3   BEHAVIOUR OF GASES"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Properties of gases are easier to understand than those of solids and liquids. This is mainly because in a gas, molecules are far from each other and their mutual interactions are negligible except when two molecules collide. Gases at low pressures and high temperatures much above that at which they liquefy (or solidify) approximately satisfy a simple relation between their pressure, temperature and volume given by (see Chapter 10)"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        310,
+        1296,
+        945,
+        1348
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "for a given sample of the gas. Here T is the temperature in kelvin or (absolute)  scale. K is  a constant for the given sample but varies with the volume of the gas. If we now  bring in  the idea of atoms or molecules, then K is proportional to the number of molecules, (say) N in the sample. We can write K = N k . Observation tells us that this k is same for all gases. It is called Boltzmann constant and is denoted by kB."
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        300,
+        1640,
+        945,
+        1730
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "if P, V and T are same, then N is also same for all gases. This is Avogadro’s hypothesis, that  the number of molecules per unit volume is the same for all gases at a fixed temperature and pressure. The number in 22.4 litres of any gas is 6.02 × 1023. This is known as Avogadro number and is denoted by NA. The mass of 22.4 litres of any gas is equal to its molecular weight in grams at S.T.P (standard temperature 273 K and pressure 1 atm). This amount of substance is called a mole (see Chapter 1 for a more precise definition). Avogadro had guessed the equality of numbers in equal volumes of gas at a fixed temperature and pressure from chemical reactions.  Kinetic  theory justifies this hypothesis."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The perfect gas equation can be written as"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        970,
+        592,
+        1625,
+        644
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "where  µ   is the number of moles and R  = NA kB is a universal constant. The temperature T is absolute temperature.  Choosing kelvin scale for absolute temperature, R = 8.314 J mol–1K–1. Here"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        985,
+        818,
+        1625,
+        898
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "where M is the mass of the gas containing N molecules, M0 is the molar mass and NA the Avogadro’s number. Using  Eqs. (12.4) and (12.3) can also be written as"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        980,
+        1034,
+        1455,
+        1082
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        998,
+        1086,
+        1635,
+        1610
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "where  n is the number density, i.e. number of molecules per unit volume. kB is  the Boltzmann constant introduced above. Its value in SI units is 1.38 × 10–23 J K–1."
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Another useful form of Eq. (12.3) is"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        980,
+        1818,
+        1625,
+        1908
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "246",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page, left column then right column. previous_page_last_block was null, but I read PHY11L-ch12-p002 myself immediately before this page and it ends mid-sentence with '...The static appearance of a gas'; this page's first block begins 'is misleading.', so the continuation is directly observed, not guessed. Numbered equations (12.1), (12.2), (12.3), (12.4), the unnumbered 'PV = kB NT or P = kB nT' line, (12.5) and Fig.12.1 (graph plus its caption) are marked needs_special with bounding boxes in the 1825x2160 image pixel space, text left empty. Left-column paragraph that began 'if P, V and T are same...' runs on into the right column and is blocked as one paragraph. The text layer carries the Fig.12.1 y-axis label fragments ('( ) –1 –1 J mol K pV T µ') out of order at the very top of the extraction; they belong to the figure and are not blocked as text. Superscripts are flattened in the text layer (e.g. '6.02 × 1023' for 6.02 x 10^23, 'mol–1K–1'), copied as extracted. Page ends with the complete Eq. (12.5), so nothing continues onto the next page."
+}

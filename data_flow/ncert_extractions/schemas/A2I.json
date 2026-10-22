@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A2I.json",
+  "title": "A2I agent output (a2i-italic-marker)",
+  "description": "Backfills italic_terms onto an A2 page already read before that field existed. Identical in shape to schemas/A2B.json with bold_terms renamed to italic_terms. Never edits the original A2 output -- this is a separate, additive file keyed by the same page id.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["blocks", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "blocks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["n", "italic_terms"],
+            "additionalProperties": false,
+            "properties": {
+              "n": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "Must match a paragraph/box/list block's own `n` in the real A2 output for this page."
+              },
+              "italic_terms": {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 },
+                "description": "Every substring of that block's `text` that prints in italic (and not bold) in the source image, copied character-for-character, in reading order, each once. Empty array when nothing in the block is italic."
+              }
+            }
+          }
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } }
+    }
+  ]
+}

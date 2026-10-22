@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        490,
+        165,
+        1325,
+        375
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "These observations, together with the results of conductivity measurements in solution can be explained if (i) six groups in all, either chloride ions or ammonia molecules or both, remain bonded to the cobalt ion during the reaction and (ii) the compounds are formulated as shown in Table 5.1, where the atoms within the square brackets form a single entity which does not dissociate under the reaction conditions. Werner proposed the term secondary valence for the number of groups bound directly to the metal ion; in each of these examples the secondary valences are six.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        430,
+        725,
+        1435,
+        1040
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Note that the last two compounds in Table 5.1 have identical empirical formula, CoCl3.4NH3, but distinct properties. Such compounds are termed as isomers. Werner in 1898, propounded his theory of coordination compounds. The main postulates are:"
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "1. In coordination compounds metals show two types of linkages (valences)-primary and secondary.\n2. The primary valences are normally ionisable and are satisfied by negative ions.\n3. The secondary valences are non ionisable. These are satisfied by neutral molecules or negative ions. The secondary valence is equal to the coordination number and is fixed for a metal.\n4. The ions/groups bound by the secondary linkages to the metal have characteristic spatial arrangements corresponding to different coordination numbers."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "In modern formulations, such spatial arrangements are called coordination polyhedra. The species within the square bracket are coordination entities or complexes and the ions outside the square bracket are called counter ions."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "He further postulated that octahedral, tetrahedral and square planar geometrical shapes are more common in coordination compounds of transition metals. Thus, [Co(NH3)6]3+, [CoCl(NH3)5]2+ and [CoCl2(NH3)4]+ are octahedral entities, while [Ni(CO)4] and [PtCl4]2– are tetrahedral and square planar, respectively."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "119",
+    "Coordination Compounds",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null in the input, but I read CHE12L-ch05-p001 myself earlier in this batch: it ends with the complete sentence '...adding excess silver nitrate solution in cold but some remained in solution.', so the first block here (the aligned display of the four CoCl3.nNH3 / AgCl observations) starts a new block rather than continuing one — first_block_continues_from_previous is false. That observation display is set out in aligned columns, so it is marked as a table for the special transcriber. Table 5.1 and its caption are inside block 3's bbox. Superscript charges and subscripts are flattened in the text layer and transcribed flat in the prose (e.g. [Co(NH3)6]3+ is printed with subscript 3, 6 and superscript 3+)."
+}

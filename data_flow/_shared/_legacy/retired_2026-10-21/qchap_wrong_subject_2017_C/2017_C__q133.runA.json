@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on knowing that the centre of mass coincides with the centre of gravity only in a uniform gravitational field (so (a) is false) and that a couple gives pure rotation (so (c) is false), leaving (b) and (d) - a centre-of-gravity/torque fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Biology\" and the 32-chapter Biology closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180. A Physics question was handed the Biology list, so no correct code exists in it. Expected chapter: 'Rotational Motion' (PHYNEETENGROM: couple, torque, mechanical advantage/levers); 'Center of Mass' (PHYNEETENGCOM, topic 'Center of Gravity') is a genuine second. Neither was offered."
+}

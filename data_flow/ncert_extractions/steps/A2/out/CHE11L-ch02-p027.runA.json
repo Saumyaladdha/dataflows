@@ -1,0 +1,85 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "be distinguished by their size, shape and orientation. An orbital of smaller size means there is more chance of finding the electron near the nucleus. Similarly shape and orientation mean that there is more probability of finding the electron along certain directions than along others. Atomic orbitals are precisely distinguished by what are known as quantum numbers. Each orbital is designated by three quantum numbers labelled as n, l and ml.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The principal quantum number ‘n’ is a positive integer with value of n = 1,2,3....... The principal quantum number determines the size and to large extent the energy of the orbital. For hydrogen atom and hydrogen like species (He+, Li2+, .... etc.) energy and size of the orbital depends only on ‘n’."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The principal quantum number also identifies the shell. With the increase in the value of ‘n’, the number of allowed orbital increases and are given by ‘n2’ All the orbitals of a given value of ‘n’ constitute a single shell of atom and are represented by the following letters"
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "n =  1   2   3   4   ............\nShell =   K  L  M  N ............"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Size of an orbital increases with increase of principal quantum number ‘n’. In other words the electron will be located away from the nucleus. Since energy is required in shifting away the negatively charged electron from the positively charged nucleus, the energy of the orbital will increase with increase of n."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Azimuthal quantum number. ‘l’ is also known as orbital angular momentum or subsidiary quantum number. It defines the three-dimensional shape of the orbital. For a given value of n, l  can have n values ranging from 0 to n – 1, that is, for a given value of n, the possible value of l are : l = 0, 1, 2, .......... (n–1)"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "For example, when n = 1, value of l is only 0. For n = 2, the possible value of l can be 0 and 1. For n = 3, the possible l values are 0, 1 and 2."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Each shell consists of one or more sub-shells or sub-levels. The number of sub-shells in a principal shell is equal to the value of n. For example in the first shell (n = 1), there is only one sub-shell which corresponds to l = 0. There are two sub-shells (l = 0, 1) in the second shell (n = 2), three (l = 0, 1, 2) in third shell (n = 3) and so on. Each sub-shell is assigned an azimuthal quantum number (l). Sub-shells corresponding to different values of l are represented by the following symbols."
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "Value for l :  0   1  2   3  4   5  ............\nnotation for   s   p  d   f  g   h  ............\nsub-shell"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Table 2.4 shows the permissible values of ‘l ’ for a given principal quantum number and the corresponding sub-shell notation."
+    },
+    {
+      "n": 11,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        940,
+        826,
+        1492,
+        1434
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Magnetic orbital quantum number. ‘ml’ gives information about the spatial orientation of the orbital with respect to standard set of co-ordinate axis. For any sub-shell (defined by ‘l’ value) 2l+1 values of ml are possible and these values are given by :\nml  = – l, – (l–1), – (l–2)... 0,1... (l–2), (l–1), l"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Thus for l = 0, the only permitted value of ml = 0, [2(0)+1 = 1, one s orbital]. For l = 1, ml can be –1, 0 and +1 [2(1)+1 = 3, three p orbitals]. For l = 2, ml = –2, –1, 0, +1 and +2, [2(2)+1 = 5, five d orbitals]. It should be noted that the values of ml are derived from l and that the value of l are derived from n."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "55",
+    "STRUCTURE OF ATOM",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p026.runA.json I wrote immediately before this page, whose last paragraph breaks off at 'A large number of orbitals are possible in an atom. Qualitatively these orbitals can'. This page opens 'be distinguished by their size, shape and orientation.', the completion of that sentence, so first_block_continues_from_previous is true, matching p026's last_block_continues_on_next of true. Reading order is the left column then the right column; the text layer stores Table 2.4 at the very END of its stream although the table is printed in the middle of the right column, so this page's text layer is stored out of printed order. Block n=11 is Table 2.4, left for the special transcriber, its bbox covering the blue caption 'Table 2.4  Subshell Notations' and the whole n / l / Subshell notation grid down to the 4f row; the layer stores that grid column-major (all ten n values, then all ten l values, then all ten notations), so it cannot be transcribed faithfully from the layer. It is the only block deferred on this page: the rest of the page, including the two small centred symbol listings, is ordinary text the layer stores flat and in order, so blocks n=4 and n=9 transcribe them as list blocks rather than deferring them — n=4 the 'n = 1 2 3 4 ...' / 'Shell = K L M N ...' pair, n=9 the 'Value for l : 0 1 2 3 4 5 ...' / 'notation for s p d f g h ...' / 'sub-shell' triple, whose tab-separated columns the layer groups in pairs. Quantum-number and orbital notation follows the layer's own token split rather than the printed superscripts and subscripts throughout: 'labelled as n, l and ml.', 'with value of n = 1,2,3.......', 'are given by ‘n2’' for the printed n-squared, '(He+, Li2+, .... etc.)', '‘ml’', '2l+1 values of ml', 'l = 0, 1, 2, .......... (n–1)' and the ml definition line 'ml  = – l, – (l–1), – (l–2)... 0,1... (l–2), (l–1), l', which the layer stores flat and in full and which is therefore kept as the last line of block n=12 rather than deferred. The bold and italic runs in blocks n=2, n=3, n=6, n=8 and n=12 are printed that way inside their sentences and are kept there. The doubled spaces in 'For a given value of n, l  can have', '‘l ’ for a given principal' and 'ml  = – l' are as printed. The page ends on a complete sentence, so last_block_continues_on_next is false."
+}

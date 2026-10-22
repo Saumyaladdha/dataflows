@@ -1,0 +1,164 @@
+{
+  "group": "v2__biology__plain.part5",
+  "ratings": [
+    {
+      "question_id": "2015_A#q071",
+      "concept": "Endemic species: a species restricted to one geographical area, held apart from rare (low abundance), alien (introduced) and keystone (disproportionate role)",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "3",
+          "route": "\"Alien\" reverses the words of the stem's relation: the stem reads \"confined to a particular region and not found elsewhere\", while an alien species is one brought in from elsewhere and not native to the region"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "1",
+          "route": "\"Rare\" is the adjacent conservation term, defined by low population size rather than by restricted range"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "\"Keystone\" is the adjacent ecological term, defined by a disproportionate effect on community structure rather than by distribution"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored definition, demonstrated by the stem's \"confined to a particular region and not found elsewhere\" being answered by option 4 \"Endemic\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q072",
+      "concept": "Metagenesis: alternation of an asexual and a sexual generation in one organism, as between polyp and medusa in coelenterates",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "look_alike_term",
+          "option": "4",
+          "route": "\"Occurrence of a drastic change in form during post-embryonic development\" is the definition of metamorphosis against the stem's metagenesis; the two terms share the meta- stem and differ only in the second element"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "\"Presence of different morphic forms\" is the definition of polymorphism, the adjacent coelenterate concept taught in the same paragraph as metagenesis"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored definition, demonstrated by the stem's \"Metagenesis refers to\" being answered by option 3 \"Alternation of generation between asexual and sexual phases of an organism\".",
+      "note": "Option 1 is left untagged: it bundles a segmented body with parthenogenesis, and neither clause is a partially correct account of metagenesis, so the rulebook's `half_true` (one of two claims right) is not met and no other route can be named."
+    },
+    {
+      "question_id": "2015_A#q073",
+      "concept": "Composition of succus entericus: nucleosidases and nucleotidases are intestinal enzymes, while nucleases are supplied by pancreatic juice",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that lipase and maltase are both listed constituents of succus entericus strikes out options 1 and 2, leaving only the nuclease/nucleosidase pair to separate.",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "lipase is a listed constituent of succus entericus, so the option is true of the juice and fails only the stem's negated task, \"is not present\""
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "maltase is a listed constituent of succus entericus, so the option fails only the task's polarity"
+        },
+        {
+          "label": "look_alike_term",
+          "option": "4",
+          "route": "\"Nucleosidase\" against the key \"Nucleases\": the two names share the nucleo- stem and differ by one element, and the route that reads them as the same word selects the enzyme that is in fact present in the juice"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires each named enzyme to be checked separately against one stored list, demonstrated by the stem's \"is not present in succus entericus\" and option 3 \"Nucleases\", which pancreatic juice rather than intestinal juice supplies.",
+      "note": "Option 4 satisfies `true_statement_trap` as well, since nucleosidase is present in the juice, but the more specific device is recorded: the pair of near-identical names is what the option set is built on, and one entry per option is kept."
+    },
+    {
+      "question_id": "2015_A#q074",
+      "concept": "Eutrophication: decomposition of an algal bloom raises biological oxygen demand and the resulting oxygen depletion kills the fish",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "\"Essential minerals\" reverses the stated cause in words: eutrophication is nutrient enrichment of the water body, so a shortage of minerals is the opposite of the condition the stem grants"
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "3",
+          "route": "a bloom does cut light penetration, but that consequence falls on submerged vegetation; the stem asks what the \"killing of fishes\" is mainly due to"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which shortage accounts for a granted outcome, demonstrated by the stem's \"leading to killing of fishes is mainly due to non-availability of\" being answered by option 1 \"Oxygen\".",
+      "note": "Option 2 (\"Food\") is left untagged: no published result and no step of eutrophication makes food shortage the proximate cause of a fish kill, and the absence of a route is not the same as a demonstrated one."
+    },
+    {
+      "question_id": "2015_A#q075",
+      "concept": "The three cell junctions and what each does: gap junctions connect adjoining cytoplasms for transfer of ions and small molecules, tight junctions seal, adhering junctions cement",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_fact",
+          "option": "1",
+          "route": "\"Stop substance from leaking across a tissue\" is the function of the adjacent junction type, the tight junction"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "\"Performing cementing to keep neighbouring cells together\" is the function of the adjacent junction type, the adhering junction"
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "\"Separate two cells from each other\" reverses the words of the key's function, \"connecting the cytoplasm\" of adjoining cells"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored structure-to-function fact, demonstrated by the stem's \"function of the gap junction\" being answered by option 3 \"Facilitate communication between adjoining cells by connecting the cytoplasm for rapid transfer of ions, small molecules and some large molecules\".",
+      "note": "The option set is the three junction types' functions plus one reversal, so every wrong option carries a device; this is the group's cleanest case of neighbouring definitions sitting on the trap axis rather than on the demand axis."
+    },
+    {
+      "question_id": "2015_A#q078",
+      "concept": "Restriction endonucleases cut DNA at specific recognition sequences; ligases perform the opposite operation of joining",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "\"Ligases\" names the enzyme that performs the reverse operation: the stem reads \"cutting of DNA at specific locations\", and ligases join cut ends"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "3",
+          "route": "\"Probes\" are the adjacent tool of the same chapter, used to detect a sequence by hybridisation rather than to cut it"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "4",
+          "route": "\"Selectable markers\" are the adjacent tool of the same chapter, used to identify transformants rather than to cut DNA"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored enzyme-to-function fact, demonstrated by the stem's \"cutting of DNA at specific locations\" being answered by option 2 \"Restriction enzymes\".",
+      "note": ""
+    }
+  ],
+  "group_note": "Six biology items, all four-option single questions with no printed statement block, list, table or figure, so the grouping on `structure: plain` holds for every member of this packet. The demand axis was decided by one test applied to all six: does the stem ask WHICH FACT or ask WHY? q074 asks \"is mainly due to\" and is the only member where the live decision is whether a stated shortage accounts for a granted outcome, so it alone is `explanatory_reasoning`. The other five are `recall`: one stored definition or one stored enzyme-to-function fact names the option. Four of those five (q071, q072, q075, q078) print rival definitions of neighbouring concepts as the wrong options, and that did NOT move them to `concept_discrimination`, because the rulebook's definition of that label excludes \"recalling one\" and in each case the stored definition names its option without the others having to be weighed. Where the neighbours matter they are recorded on the trap axis instead, as `neighbouring_fact` - the tight and adhering junctions in q075, polymorphism in q072, rare and keystone in q071, probes and selectable markers in q078. Solution structure is `single_step` in five and `several_independent_checks` only in q073, whose negated task (\"is not present\") sends each of the four enzymes separately back to the stored list before the absent one can be chosen; that is the same test applied in this subject's other packets and is the one reason q073 differs. Elimination likewise appears once, in q073, where the single fact that lipase and maltase are both intestinal enzymes strikes out two options and narrows the item to the nuclease/nucleosidase pair; elsewhere the only available shortcut is already knowing the answer, so the label was withheld rather than claimed. On the trap axis the group has one strongly recurring device, an option that is the verbal reverse of the key's relation, and it carries `semantic_reversal` four times with the reversed words quoted each time: alien for endemic (q071), mineral shortage for nutrient enrichment (q074), separate for connect (q075), ligase for restriction enzyme (q078). The second recurring device is the near-identical name, `look_alike_term`, used where the two terms share a stem and differ by one element: metagenesis/metamorphosis (q072) and nucleases/nucleosidase (q073). q073 is the only member with a negated task and the only one carrying `true_statement_trap`. Where an option carries a true fact that answers something the stem did not ask, `true_but_out_of_scope` is used (q074's light penetration, which is true of a bloom but falls on submerged plants rather than on the fish). Three options were left untagged (q072 option 1, q074 option 2, q073 and q075 carry a device on every wrong option) because no option-and-route pair could be named, which rule 4 requires. No trap sits on an official answer, no source damage was found in this packet, and no `new_*` escape was needed."
+}

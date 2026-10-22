@@ -1,0 +1,39 @@
+{
+  "group": "v2__biology__list.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q118",
+      "question_type": "arrange_in_order",
+      "format": "pick_order",
+      "content_shape": "diagram",
+      "concept": "Woody dicot stem in section: tissue order from the bark inwards - phellem, secondary cortex, secondary phloem, wood",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Phellem is the outermost layer, and only options 1 and 4 begin with (d) Phellem, so that one fact strikes out options 2 and 3.",
+      "traps": [
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "1",
+          "route": "Swaps the two middle layers, putting secondary phloem outside the secondary cortex. Gets phellem first and wood last, like the key."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "2",
+          "route": "Puts phellem between secondary phloem and wood. Reading the stem outwards-in gives (d), (a), (c), (b) and inwards-out gives (b), (c), (a), (d); neither is this order."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "Puts wood second from the outside, above phellem. Neither reading direction, outwards-in or inwards-out, produces this order."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires recall of where each secondary tissue sits in a woody dicot stem, demonstrated by the stem's \"from outer side to inner side in a woody dicot stem\" and by option 4 placing \"(d) Phellem\" outermost and \"(b) Wood\" innermost.",
+      "note": "The input carries has_figure true with figures_agent/2015_A/q118.png, but the stem says \"Read the different components from (a) to (d) in the list given below\" and the four items are all present as text, so the figure is not needed to answer and no figure_to_read secondary type is recorded. Nothing is missing from stem, list or options, so this is not source damage."
+    }
+  ],
+  "group_note": "This packet holds one question, so there is no cross-member difference to explain; what is recorded instead is the test used, so the other ordering packets can be held to the same one. E1 was read off the layout alone: a lettered list (a)-(d) with the four options being orders of those letters is arrange_in_order, and the attached figure does not change the printed shape. Solution structure is single_step because one stored picture of the stem settles all four positions at once - there is no step whose result the next step needs. Elimination was granted only because one securely known fact (phellem outermost) strikes out two named options; the same standard is applied to the trap axis, where option 1 gets a named interior swap and options 2 and 3 are demonstrated unreachable by counting the only two readings of the list rather than asserted implausible. No trap is placed on option 4, the official answer."
+}

@@ -1,0 +1,82 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Thus,",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Force F1 on Q due to charge q at A  = \n3\n4\n0\n2\nπε\nQq\nl\n along AO"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Force F2 on Q due to charge q at B  = \n3\n4\n0\n2\nπε\nQq\nl\n along BO"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Force F3 on Q due to charge q at C  = \n3\n4\n0\n2\nπε\nQq\nl\n along CO"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The resultant of forces F2 and F3 is \n3\n4\n0\n2\nπε\nQq\nl\n along OA, by the parallelogram law. Therefore, the total force on Q = \n3\n4\n0\n2\nπε\nQq\nl\nˆ\nˆ\nr\nr\n−\n(\n)\n = 0, where ˆr is the unit vector along OA."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "It is clear also by symmetry that the three forces will sum to zero. Suppose that the resultant force was non-zero but in some direction. Consider what would happen if the system was rotated through 60° about O."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Example 1.6 Consider the charges q, q, and –q placed at the vertices of an equilateral triangle, as shown in Fig. 1.7. What is the force on each charge?"
+    },
+    {
+      "n": 8,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        324,
+        1075,
+        1080,
+        1739
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Solution  The forces acting on charge q at A due to charges q at B and –q at C are F12 along BA and F13 along AC respectively, as shown in Fig. 1.7. By the parallelogram law, the total force F1 on the charge q at A is given by"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "F1 = F \n1ˆr where \n1ˆr is a unit vector along BC."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The force of attraction or repulsion for each pair of charges has the same magnitude F\nq\n=\n2\n0\n2\n4 π ε l"
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "The total force F2 on charge q at B is thus F2 = F ˆr 2, where ˆr 2 is a unit vector along AC."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "13",
+    "Reprint 2026-27",
+    "EXAMPLE 1.5",
+    "EXAMPLE 1.6"
+  ],
+  "note": "previous_page_last_block was null although this is page 13; judged from the image: the page opens inside the shaded Example 1.5 solution box (no 'Example 1.5' heading appears on this page, only the vertical margin tab), so first_block_continues_from_previous is true. Blocks 1-6 are the tail of Example 1.5; blocks 7-12 are Example 1.6, which is still unfinished at the foot of the page (force on charge -q at C not yet given), so last_block_continues_on_next is true. The vertical margin tabs 'EXAMPLE 1.5' and 'EXAMPLE 1.6' are marginal running labels, not body text, and were removed and listed above. No numbered section side-heading appears on this page, so the layered-outline duplication artifact did not arise here. Soft line wraps inside running prose were joined with a single space; the scrambled sub/superscript token stacks that the text layer holds for the inline fractions were copied verbatim, newlines included, rather than re-rendered. There are no standalone displayed equations on this page - every formula sits inline inside a sentence - so only Figure 1.7 is marked needs_special; its bbox is in original-image pixels (1700x2160) and covers the diagram with its force annotations and the 'FIGURE 1.7' caption."
+}

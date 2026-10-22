@@ -1,0 +1,55 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2190,
+    "body_text_size_px": 21.0,
+    "text_block": [0.1012, 0.4534, 0.8724, 0.8735],
+    "fill": 0.84,
+    "columns": [
+      {"id": "left", "x0": 0.1012, "x1": 0.2600},
+      {"id": "right", "x0": 0.2829, "x1": 0.8724}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.0, 0.0, 1.0, 0.4333],
+     "column": "full", "size_rel": 1.0, "fill": "#cee082", "space_before": 0.0},
+
+    {"n": null, "role": "qr_code", "bbox": [0.7335, 0.1142, 0.8724, 0.2215],
+     "column": "full", "size_rel": 1.0, "fill": "#ffffff", "space_before": 0.1142},
+
+    {"n": 1, "role": "chapter_title", "bbox": [0.3176, 0.3260, 0.6218, 0.4037],
+     "column": "full", "size_rel": 2.74, "size_pt": 30, "align": "left",
+     "font": "serif-bold", "text_color": "#0073bd", "space_before": 0.1046},
+
+    {"n": null, "role": "contents_panel", "bbox": [0.1012, 0.4543, 0.2600, 0.5918],
+     "column": "left", "size_rel": 0.9, "size_pt": 10, "align": "left",
+     "font": "serif-italic", "text_color": "#00adef", "space_before": 0.0507},
+
+    {"n": 2, "role": "paragraph", "bbox": [0.2835, 0.4534, 0.8724, 0.6790],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.0498},
+
+    {"n": 3, "role": "section_heading", "bbox": [0.2865, 0.7055, 0.5047, 0.7164],
+     "column": "right", "size_rel": 1.19, "size_pt": 13, "align": "left",
+     "font": "serif-bold", "text_color": "#00adef", "space_before": 0.0265},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.2829, 0.7402, 0.8712, 0.8411],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.0237},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.2841, 0.8470, 0.8712, 0.8767],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.0059, "indent": 0.0282},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9557, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.079},
+
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9557, 0.5229, 0.963],
+     "column": "full", "size_rel": 0.76, "size_pt": 8, "align": "center",
+     "font": "sans", "text_color": "#000000", "fill": "#cadf7f", "space_before": 0.0},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.1935, 0.2936, 0.8771, 0.8365],
+     "column": "full", "size_rel": 1.0}
+  ],
+  "note": "Two-column chapter-opening page, 1700x2190 px. COLUMNS: a narrow left rail (x 0.1012-0.2600, measured 172-442 px) holding only the section-contents list, and a wider right column (x 0.2829-0.8724, 481-1483 px) holding the opening prose, the 1.1 heading and the prose under it; the gutter between them is 39 px (0.023). Both the chapter banner and the foot band are full-bleed, so they are 'full'. body_text_size_px = 21.0, measured cap-top-to-baseline on the right-column prose (e.g. the line at y 1621-1641 px); the same 21 px holds for every prose line on the page and the line pitch is 39 px. BANNER: a full-bleed green panel with no hard lower edge - it is a vertical gradient from #cee082 at the very top fading to pure white; the last non-white pixel at the page edge is y=948, so the bbox bottom 0.4333 is where the gradient reaches white, not a printed rule. There is NO rule_bar on this page: this chapter opens with the gradient alone, unlike BIO12O-ch03 p001. FOOT: the green band at y 0.9557-1.0 is reported as footer_rule for want of a closer role - it is a thick full-bleed band (97 px, 4.4% of page height), not a thin rule; flat interior sampled at (100,2150) and (1500,2180) is #cadf7f. The '2022-23' line centred inside it is reported as running_header - it is a reprint-year imprint, not a page number; NO page number is printed anywhere on this page. CONTENTS PANEL: reported as ONE element per the brief's example. It holds four entries set over seven lines - 1.1 (y 995-1019 px), 1.2 (1050-1074 and 1089-1113), 1.3 (1145-1163 and 1183-1207), 1.4 (1239-1257 and 1278-1296). Entry first lines are flush at x=172 px; wrapped continuation lines hang-indent to x=223 px, i.e. 0.030 of page width. No tint box sits behind the panel - it prints on bare white paper, so no fill is given. CHAPTER TITLE: two lines, 'CHAPTER 1' (y 714-772) and 'THE LIVING WORLD' (y 828-884), set as one block (block n=1) in blue serif small caps - large initial caps 57-58 px cap-to-baseline, small caps 24-29 px. size_rel 2.74 is the large-cap height over body. QR CODE: the white card including the '11080CH01' identifier printed under the code (that label, 10 px tall, is folded into this element rather than listed separately); its right edge aligns exactly with the right column's right edge at 1483 px. BLOCK 5 runs on from block 4 with no paragraph space (space_before 0.0059 is just the normal line gap) but takes a first-line indent of 48 px = 0.0282. WATERMARK: the diagonal grey '(c) NCERT / not to be republished' stamp is reported as decorative_image; its bbox is the union of the part over the banner (y 643-949) and the part over the white paper (y 955-1832), x 329-1491. It is an overlay, not in the flow, so space_before is omitted. SPACE_BEFORE is measured against the previous element in the READING-ORDER FLOW, with background panels (banner, foot band, watermark) excluded from that flow - so the QR code's space_before is measured from the page top edge, and contents_panel and block 2 both measure from the bottom of the chapter title since they start side by side. TEXT_BLOCK is the rectangle the body type actually occupies: left column left edge to right column right edge, top of the first printed line (y=993) to the baseline of the last (y=1913); the chapter title above it sits inside the banner and is excluded. FILL 0.84 = the printed content depth (993-1920 px, 927 px) over the depth available between the first printed line and the top of the foot band (993-2093 px, 1100 px) - the page stops about four body lines short of the band, mid-sentence, and the text continues on the next page. SIZE_PT is derived, not read directly: the page is 1700 px over an 8.5 in trim, i.e. a 200 dpi render, so 1 pt = 2.778 px, and an em is estimated from cap height assuming cap height = 0.70 em (this puts body text at ~11 pt, which matches NCERT's setting). Treat every size_pt as approximate to about +/-0.5 pt; size_rel is the measured figure. Note also that the brief's 'Rules for this step' asks for size_pt on headings and captions while its 'Never' list forbids absolute point sizes - size_pt is supplied here per the runner's explicit instruction, and size_rel is always present as the measured ratio. All five A2 blocks were matched by position with confidence; no n was guessed. 11 elements."
+}

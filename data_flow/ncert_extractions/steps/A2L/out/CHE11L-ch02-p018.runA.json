@@ -1,0 +1,48 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 22.5,
+    "columns": [
+      {"id": "left", "x0": 0.125, "x1": 0.489},
+      {"id": "right", "x0": 0.512, "x1": 0.877}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.124, 0.086, 0.143, 0.096],
+     "column": "left", "size_rel": 0.9, "align": "left", "font": "serif", "text_color": "#231f20"},
+    {"n": null, "role": "running_header", "bbox": [0.803, 0.085, 0.877, 0.095],
+     "column": "right", "size_rel": 0.85, "align": "right", "font": "serif", "text_color": "#231f20"},
+    {"n": 1, "role": "figure", "bbox": [0.125, 0.120, 0.489, 0.470],
+     "column": "left", "size_rel": 1.0, "fill": "#fadfc3"},
+    {"n": null, "role": "figure_caption", "bbox": [0.125, 0.479, 0.488, 0.530],
+     "column": "left", "size_rel": 0.9, "align": "justify", "font": "serif-italic"},
+    {"n": 2, "role": "paragraph", "bbox": [0.125, 0.548, 0.488, 0.745],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "major_heading", "bbox": [0.125, 0.759, 0.488, 0.786],
+     "column": "left", "size_rel": 1.2, "align": "justify", "font": "sans", "text_color": "#29abe2"},
+    {"n": 4, "role": "paragraph", "bbox": [0.125, 0.795, 0.488, 0.910],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "paragraph", "bbox": [0.512, 0.120, 0.877, 0.160],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "list", "bbox": [0.512, 0.170, 0.877, 0.430],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 7, "role": "box", "bbox": [0.512, 0.439, 0.877, 0.645],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "fill": "#cfe7d3"},
+    {"n": 8, "role": "list", "bbox": [0.512, 0.660, 0.877, 0.710],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 9, "role": "equation", "bbox": [0.512, 0.720, 0.877, 0.750],
+     "column": "right", "size_rel": 1.1, "align": "left", "font": "serif-italic"},
+    {"n": 10, "role": "paragraph", "bbox": [0.512, 0.757, 0.877, 0.810],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 11, "role": "list", "bbox": [0.512, 0.820, 0.877, 0.865],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 12, "role": "equation", "bbox": [0.512, 0.877, 0.877, 0.905],
+     "column": "right", "size_rel": 1.1, "align": "left", "font": "serif-italic"},
+    {"n": null, "role": "decorative_image", "bbox": [0.21, 0.32, 0.84, 0.81],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.473, 0.972, 0.526, 0.981],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "serif", "text_color": "#231f20"}
+  ],
+  "note": "Ordinary two-column body page, 1750x2180 (ratio 0.803), not A4. No chapter banner, no page_header_band and no footer_rule on this page. body_text_size_px measured on the right-column prose. Left column: the Fig. 2.11 energy-level diagram occupies the top 35% of the page, its panel tinted pale peach #fadfc3 sampled from the flat interior between the Lyman and Balmer bands, well away from the transition arrows and the n-level rules. Its 'Fig. 2.11 Transitions of the electron...' caption is a separate figure_caption element with n:null, since the input has no block for it (block 1 is the figure itself). Block 3 is the numbered top-level section heading '2.4 BOHR'S MODEL FOR HYDROGEN ATOM', set in blue bold caps and recorded as major_heading at size_rel 1.2. Right column: block 7 is the green-ruled 'Angular Momentum' side box, fill #cfe7d3 sampled from the flat green interior; its own bold centred title and its two displayed expressions are left inside the box's single region rather than split out, because the input models the whole box as one block. The displayed equations 2.10 (block 9) and 2.11 (block 12) each get their own region as instructed; both sit in the right column, not full width. The last element is the bottom-centre edition line '2024-25', recorded as running_header for want of a footer-text role. The decorative_image is the diagonal 'NCERT / not to be republished' watermark; its bbox encloses a rotated object. All twelve blocks matched by position with no nulls and no ambiguity; reading order is left column top-to-bottom then right column, which is also this page's prose order (block 5 continues block 4)."
+}

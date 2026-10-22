@@ -1,0 +1,16 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {
+      "kind": "formatting",
+      "what": "The colour coding of the two basicity-order lines is lost. The book sets the amine functional groups in magenta - (C2H5)2NH > (C2H5)3N > C2H5NH2 > NH3 and (CH3)2NH > CH3NH2 > (CH3)3N > NH3, with the NH / N / NH2 picked out in colour so the eye follows the degree of substitution. The render prints both lines entirely in black.",
+      "where": "the two display lines just above the '(b) Arylamines versus ammonia' subhead"
+    },
+    {
+      "kind": "formatting",
+      "what": "Both resonance figures are set at roughly half the book's linear size, so the + and - charges, the lone-pair dots and the curved arrows are drawn much finer than the surrounding body text. They are legible when enlarged and nothing is lost, but they no longer read at the same weight as in the book, where the five-structure row spans the full measure.",
+      "where": "the aniline five-structure figure and the anilinium two-structure figure, middle of page"
+    }
+  ],
+  "note": "Compared text block by block and structure by structure, enlarging both resonance figures to check their detail. All content is present: the long opening paragraph, both basicity-order display lines with the same species in the same order, the '(b) Arylamines versus ammonia' subhead, the aniline paragraph, and the closing paragraph down to '-NO2, -SO3H, -COOH, -X decrease it.' The five aniline resonance structures I-V are all drawn, each with its curved arrows, its + on nitrogen, and the ring - charges on II, III and IV; structure V keeps its lone-pair dots. The anilinium figure shows both kekule structures I and II with NH3+. The folio '269 Amines' with its rule is present. The blank lower third of the render is the reflowed text ending early, not missing content - I accounted for every sentence in the book page."
+}

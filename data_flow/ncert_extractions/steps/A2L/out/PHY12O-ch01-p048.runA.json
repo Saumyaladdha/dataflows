@@ -1,0 +1,53 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "full", "x0": 0.314, "x1": 0.903}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.067],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.1271, 0.0, 0.4506, 0.124],
+     "column": "full", "size_rel": 2.25, "align": "center", "font": "sans",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "list", "bbox": [0.3159, 0.1354, 0.9012, 0.1758],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "list", "bbox": [0.3159, 0.186, 0.9012, 0.2622],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "list", "bbox": [0.3159, 0.2713, 0.9029, 0.3145],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "list", "bbox": [0.3159, 0.3232, 0.9018, 0.382],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "list", "bbox": [0.3159, 0.3893, 0.9012, 0.4187],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "list", "bbox": [0.3159, 0.4279, 0.9018, 0.5018],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 7, "role": "major_heading", "bbox": [0.4382, 0.5528, 0.7753, 0.567],
+     "column": "full", "size_rel": 1.5, "align": "center", "font": "serif-bold",
+     "text_color": "#00adef"},
+    {"n": 8, "role": "list", "bbox": [0.3159, 0.5882, 0.9018, 0.646],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 9, "role": "list", "bbox": [0.3159, 0.6538, 0.9018, 0.6804],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 10, "role": "figure", "bbox": [0.3047, 0.6919, 0.9006, 0.9371],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "page_number", "bbox": [0.1276, 0.9155, 0.1853, 0.9371],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "sans",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "sans",
+     "text_color": "#221f1f"}
+  ],
+  "note": "Verso EXERCISES page, one full column (verso measure x 0.314-0.903, wide empty outer margin at left carrying only the watermark). Exercise numbers hang at x 0.316 and their text is indented to x 0.373. Blocks 1-6 are exercises 1.19-1.24; block 7 is the centred bold 'ADDITIONAL EXERCISES' heading, printed in the chapter cyan #00adef like the 'EXERCISES' heading on p046 (not grey like the numbered in-chapter section headings), and reported as major_heading; blocks 8-9 are exercises 1.25-1.26. Block 10 is Fig. 1.35, a full-measure three-part graphic (a)(b)(c) whose part labels are included in its bbox; this figure has NO caption printed on the page, so no figure_caption element is emitted - the absence is real, not a missed match. No fill is reported for the figure: its cyan field lines are artwork, not a panel tint. IMPORTANT for size_rel: this page prints no ordinary body prose, so page.body_text_size_px is given as 20.0 - the body cap height measured on the chapter's body pages - keeping size_rel comparable page to page; on that basis the exercise text (cap height 18px) is 0.9. page_header_band is the pale blue #c6eafb strip across the whole page top (y 0-0.067); its #41c7f4 hairline and #00adef foot rule are internal edges of that one band - no rule_bar and no footer_rule on this page. The '2022-23' edition line at the foot is recorded as a second running_header because the allowed role list has no footer-text role. All 10 A2 blocks matched by position."
+}

@@ -1,0 +1,63 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 3.2\n(a) In Example 3.1, the electron drift speed is estimated to be only a\nfew mm s–1 for currents in the range of a few amperes? How then\nis current established almost the instant a circuit is closed?\n(b) The electron drift arises due to the force experienced by electrons\nin the electric field inside the conductor. But force should cause\nacceleration. Why then do the electrons acquire a steady average\ndrift speed?\n(c) If the electron drift speed is so small, and the electron’s charge is\nsmall, how can we still obtain large amounts of current in a\nconductor?\n(d) When electrons drift in a metal from lower to higher potential,\ndoes it mean that all the ‘free’ electrons of the metal are moving\nin the same direction?\n(e) Are the paths of electrons straight lines between successive\ncollisions (with the positive ions of the metal) in the (i) absence of\nelectric field, (ii) presence of electric field?\nSolution\n(a) Electric field is established throughout the circuit, almost instantly\n(with the speed of light) causing at every point a local electron\ndrift. Establishment of a current does not have to wait for electrons\nfrom one end of the conductor travelling to the other end. However,\nit does take a little while for the current to reach its steady value.\n(b) Each ‘free’ electron does accelerate, increasing its drift speed until\nit collides with a positive ion of the metal. It loses its drift speed\nafter collision but starts to accelerate and increases its drift speed\nagain only to suffer a collision again and so on. On the average,\ntherefore, electrons acquire only a drift speed.\n(c) Simple, because the electron number density is enormous,\n~1029 m–3.\n(d) By no means. The drift velocity is superposed over the large\nrandom velocities of electrons.\n(e) In the absence of electric field, the paths are straight lines; in the\npresence of electric field, the paths are, in general, curved.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "3.5.1  Mobility"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "As we have seen, conductivity arises from mobile charge carriers. In\nmetals, these mobile charge carriers are electrons; in an ionised gas, they\nare electrons and positive charged ions; in an electrolyte, these can be\nboth positive and negative ions."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "An important quantity is the mobility m defined as the magnitude of\nthe drift velocity per unit electric field:"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        567,
+        1712,
+        1555,
+        1804
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The SI unit of mobility is m2/Vs and is 104 of the mobility in practical\nunits (cm2/Vs). Mobility is positive. From Eq. (3.17), we have"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        567,
+        2022,
+        760,
+        2106
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "88",
+    "EXAMPLE 3.2",
+    "Reprint 2026-27"
+  ],
+  "note": "Block 1 is the shaded Example 3.2 box (question parts (a)-(e), the word Solution, and solution parts (a)-(e)) kept as one box block. The vertical side tab 'EXAMPLE 3.2' in the left margin duplicates the box heading and was removed as a running marginal label. Known text-layer artifacts copied as-is rather than re-rendered: the Greek mu appears as the Latin letter 'm' in block 4 ('the mobility m defined as'), and superscripts are flattened in block 1 ('~1029 m–3' = ~10^29 m^-3) and block 6 ('m2/Vs', '104', 'cm2/Vs' = m^2/Vs, 10^4, cm^2/Vs). Equation (3.24) (block 5, including its right-margin number) and the displayed v_d = eτE/m (block 7) are marked needs_special. The page ends on that displayed equation with the sentence 'From Eq. (3.17), we have' resolved only by material continuing on the next page."
+}

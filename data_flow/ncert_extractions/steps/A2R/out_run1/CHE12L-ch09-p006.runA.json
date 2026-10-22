@@ -1,0 +1,36 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "The whole Solution to Example 9.2 is absent. The book prints two labelled sequences under 'Solution': (i) CH3-CH2-Cl --Ethanolic NaCN--> CH3-CH2-C(triple)N --reduction--> CH3-CH2-CH2-NH2 with the captions Chloroethane / Propanenitrile / Propan-1-amine, and (ii) C6H5-CH2-Cl --Ethanolic NaCN--> C6H5-CH2-C(triple)N --H2/Ni--> C6H5-CH2-CH2-NH2 with the captions Chlorophenylmethane (Benzyl chloride) / Phenylethanenitrile (Benzyl cyanide) / 2-Phenylethanamine. The render prints the word 'Solution' and then nothing at all -- the box ends and the bottom half of the page is empty.",
+      "where": "the Example 9.2 box, under the word Solution"
+    },
+    {
+      "kind": "clipped",
+      "what": "The Hoffmann bromamide equation is cut off at the right page edge: the book ends '... + Na2CO3 + 2NaBr + 2H2O'; the render stops mid-character at '+ 2H2(' with the final O sliced by the sheet edge.",
+      "where": "the equation under heading 6, Hoffmann bromamide degradation"
+    },
+    {
+      "kind": "duplicated",
+      "what": "The running folio is printed twice. 'Chemistry264' appears inside the Example 9.2 box, below the word 'Solution', as if it were a line of the example; the correct folio 'Chemistry 264' also appears in its proper place at the foot of the page.",
+      "where": "inside the Example 9.2 box, last line"
+    },
+    {
+      "kind": "formatting",
+      "what": "'Example 9.2' and 'Solution' lose their styling: the book sets both in blue italic script with a blue rule under them; the render sets both in plain black roman with no rule.",
+      "where": "the Example 9.2 box"
+    },
+    {
+      "kind": "formatting",
+      "what": "The render draws horizontal rules across the Gabriel synthesis artwork -- one through the top of the first scheme, cutting across the phthalimide and N-alkylphthalimide structures at the level of the C=O bonds, and another below the second scheme. The book prints both schemes with no rules or frame.",
+      "where": "the two Gabriel synthesis schemes, upper half of the page"
+    },
+    {
+      "kind": "formatting",
+      "what": "The Hoffmann bromamide equation loses its colour coding: the book sets the carbonyl O and C and both NH2 groups in magenta and Br2/NaBr's bromine in green; the render prints the entire equation in black.",
+      "where": "the equation under heading 6"
+    }
+  ],
+  "note": "Compared heading 5 and its paragraph, both Gabriel synthesis schemes with their Phthalimide and N-Alkylphthalimide captions and the KOH, R-X and NaOH(aq) reagents, heading 6 and its paragraph, the Hoffmann equation, and the Example 9.2 box. The Gabriel artwork itself is complete and still coloured correctly, and the prose of both methods is present word for word. The question text of Example 9.2 ((i) and (ii)) is present; only its solution is gone. The horizontal rules across the artwork may be a figure-frame artefact of the renderer rather than content, but they overlap the structures and are reported for that reason."
+}

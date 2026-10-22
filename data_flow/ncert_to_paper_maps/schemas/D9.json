@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/D9.json",
+  "title": "D9 agent output (d9-repeat-finder)",
+  "description": "Section 12/D9 'Agent output' line and .claude/agents/d9-repeat-finder.md's worked output shape: {\"possible_repeats\": [...], \"none\": true|false}. Spec 12/D9's Checks — 'ids exist, same subtopic, other year' — all need the per-item candidate table and live in scripts/checks/D9.py. D9 is deliberately INCLUSIVE ('if unsure, include'); a false candidate costs nothing because D11 removes it, while a missed repeat is lost forever. `note` is optional, carrying Universal rule 7 (added deliberately: its absence from schemas/D1.json/D2.json was a real bug, docs/OPEN_QUESTIONS.md 2026-10-12).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["possible_repeats", "none"],
+      "additionalProperties": false,
+      "properties": {
+        "possible_repeats": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Question ids from the input's `others` table only — same subtopic, OTHER year. Never this question's own id (the agent file's own Never rule). Must be empty exactly when `none` is true."
+        },
+        "none": {
+          "type": "boolean",
+          "description": "true when no other question in the table might test the same fact or problem. Must agree with possible_repeats being empty (checked in scripts/checks/D9.py)."
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

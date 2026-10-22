@@ -1,0 +1,102 @@
+{
+  "group": "v2__physics__plain.part5",
+  "ratings": [
+    {
+      "question_id": "2015_A#q160",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "de Broglie wavelength of a photoelectron: the fastest electron carries $h\\nu-\\phi$, and every slower one has a longer wavelength",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {"label": "sign_reversed_magnitude_right", "option": "3", "route": "Gets $2.8\\times10^{-9}\\,\\mathrm{m}$ and then reads it as a ceiling. Electrons leave with at most $0.22\\,\\mathrm{eV}$, so that wavelength is the shortest, not the longest."},
+        {"label": "wrong_exponent", "option": "2", "route": "Shifts the answer one power of ten, to $2.8\\times10^{-10}\\,\\mathrm{m}$."}
+      ],
+      "reason": "This question requires a photon energy, a kinetic energy and a wavelength to be chained, demonstrated by the stem \"Light of wavelength 500 nm is incident on a metal with work function 2.258 eV.\"",
+      "note": "Option 1 is left untagged: $2.8\\times10^{-12}\\,\\mathrm{m}$ is three decades from the computed value, and no single step of the calculation - using the photon energy $2.48\\,\\mathrm{eV}$ in place of the kinetic energy gives $7.8\\times10^{-10}\\,\\mathrm{m}$ - lands on it."
+    },
+    {
+      "question_id": "2015_A#q163",
+      "question_type": "multi_part_respectively",
+      "format": "pick_both_parts",
+      "content_shape": "formula_or_law",
+      "concept": "Friction on an incline: the angle at which slipping starts gives $\\mu_s=\\tan\\theta$, and the sliding acceleration gives $\\mu_k$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {"label": "half_true", "option": "2", "route": "Stops after the slipping angle and reuses $0.6$ for sliding as well. The $4.0\\,\\mathrm{m}$ in $4.0\\,\\mathrm{s}$ gives $a=0.5\\,\\mathrm{m/s^2}$ and $\\mu_k=0.5$."},
+        {"label": "reversed_order", "option": "4", "route": "Puts the two answers in the other order, kinetic first. Gives $0.5$ and $0.6$ where the stem asks for static then kinetic."},
+        {"label": "no_derivation_route", "option": "1", "route": "Neither $0.4$ nor $0.3$ comes out of $\\tan 30^\\circ=0.58$ or of $a=0.5\\,\\mathrm{m/s^2}$."}
+      ],
+      "reason": "This question requires two coefficients to be found and reported together, demonstrated by the stem \"The coefficients of static and kinetic friction between the box and the plank will be, respectively:\".",
+      "note": "Printed shape differs from the rest of the packet: the stem asks for two values \"respectively\", so the shape is multi_part_respectively rather than plain_mcq, and the answer must get both right at once. The record's figure flag points at the free-body sketch printed under the solution, not at anything the question needs."
+    },
+    {
+      "question_id": "2015_A#q164",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Equal centripetal forces: setting $\\frac{mv^2}{r}$ equal for the two stones turns the mass and radius ratios into a speed ratio",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "The common factors cancel when the two expressions for $\\frac{mv^2}{r}$ are set equal, leaving $v_l^2=4v_h^2$ with no arithmetic in it.",
+      "traps": [
+        {"label": "intermediate_value", "option": "4", "route": "Stops at the ratio of the squares. $v_l^2=4v_h^2$, so $n=2$ and not $4$."},
+        {"label": "calculation_slip", "option": "1", "route": "Divides by $\\frac{r}{2}$ as though it were $2r$, so the mass and radius factors look as if they cancel. Gives $n=1$."},
+        {"label": "no_derivation_route", "option": "3", "route": "The masses and radii in the stem only ever give factors of $1$, $2$ or $4$; nothing in them produces $3$."}
+      ],
+      "reason": "This question requires one condition to be turned into a speed ratio, demonstrated by the stem \"the tangential speed of lighter stone is n times that of the value of heavier stone when they experience same centripetal forces\".",
+      "note": "The stem as stored reads \"masses ma and 2 m\", with a stray letter on the first mass. The reading is not in doubt - the stem itself names the heavier stone as the one in radius $\\frac{r}{2}$ and the lighter in $r$ - so no damage verdict is recorded, but the typo should be repaired."
+    },
+    {
+      "question_id": "2015_A#q165",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Coefficient of performance of a refrigerator: $\\frac{T_C}{T_H-T_C}$, with both temperatures in kelvin",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [],
+      "reason": "This question requires one relation to be rearranged and converted back, demonstrated by the stem \"The coefficient of performance of a refrigerator is 5. If the temperature inside freezer is $-20^\\circ\\mathrm{C}$\".",
+      "note": "No trap recorded, and the candidate mis-steps are worth stating. The four options are a ladder of $11$, $21$, $31$ and $41^\\circ\\mathrm{C}$ around the keyed value. Using the heat-pump form $\\frac{T_H}{T_H-T_C}=5$ gives $316\\,\\mathrm{K}$, which is $43^\\circ\\mathrm{C}$; using $\\mathrm{COP}+1=6$ in place of $5$ gives $295\\,\\mathrm{K}$, which is $22^\\circ\\mathrm{C}$; keeping the temperatures in Celsius gives $-24^\\circ\\mathrm{C}$. None of the three is printed, so no option can be tied to a route."
+    },
+    {
+      "question_id": "2015_A#q166",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "trend",
+      "concept": "Work done in compressing a gas: the adiabat is the steepest $P$-$V$ curve, so it encloses the most area between the same two volumes",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {"label": "no_derivation_route", "option": "4", "route": "At constant volume the gas is not compressed at all and no work is done on it, so its $0$ is the smallest of the four, not the largest."}
+      ],
+      "reason": "This question requires the work of each process to be weighed against the others, demonstrated by the stem \"Which of the process results in the maximum work done on the gas?\"",
+      "note": "Options 1 and 3 are left untagged. For a halving of the volume the work runs adiabatic $>$ isothermal $\\;(nRT\\ln 2=0.69\\,nRT)>$ isobaric $(0.5\\,nRT)$, so picking either is getting the comparison itself the wrong way round, which is the content of the question rather than a device laid over it."
+    },
+    {
+      "question_id": "2015_A#q167",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Losing half the energy in a bounce: the speed drops by $\\sqrt{2}$, not by half",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {"label": "calculation_slip", "option": "1", "route": "Halves the speed instead of the energy. Gives $10\\,\\mathrm{m/s}$, half the correct $20\\,\\mathrm{m/s}$."},
+        {"label": "intermediate_value", "option": "4", "route": "Stops at the speed the ball hits the ground with, $20\\sqrt{2}\\approx 28\\,\\mathrm{m/s}$, instead of going back to $v_0$."},
+        {"label": "no_derivation_route", "option": "2", "route": "No step from $20\\,\\mathrm{m}$, $50$ per cent and $g=10\\,\\mathrm{m/s^2}$ gives $10\\sqrt{2}$. It sits in the set as the $\\sqrt{2}$ partner of option 1."}
+      ],
+      "reason": "This question requires an impact speed, an energy loss and a rebound height to be chained, demonstrated by the stem \"loses 50 percent of its energy in collision and rebounds to the same height\".",
+      "note": ""
+    }
+  ],
+  "group_note": "Five of the six are numerical and share calculation as their demand; q166 does not belong with them in that respect, as it compares four named processes with no number in the stem, so it carries application with several_independent_checks while the other five carry single_step or multi_step_dependent. Structure follows one rule held across the run: where a later step consumes an earlier numeric result the label is multi_step_dependent (q160, q163, q165, q167), and where one equation is set up and solved it is single_step (q164). q163 also differs in printed shape, asking for two coefficients \"respectively\", so it alone is multi_part_respectively with pick_both_parts. q164 is the one ratio question and carries estimation, following the rulebook's retirement of ratio_based to calculation plus that strategy. Trap density differs by option set, not by treatment: q165 carries none, because its options form a ten-degree ladder that no mis-step lands on, and its note lists the three routes tried. Four of the figure flags in this packet point at drawings under the printed solutions rather than at question content, so no secondary type is recorded anywhere in the group."
+}

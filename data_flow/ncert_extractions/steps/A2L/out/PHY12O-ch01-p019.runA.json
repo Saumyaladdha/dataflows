@@ -1,0 +1,42 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 21.0,
+    "columns": [
+      {"id": "full", "x0": 0.0971, "x1": 0.8729}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0666],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.55, 0.0, 0.8729, 0.1212],
+     "column": "full", "size_rel": 2.0, "align": "center", "font": "sans-light",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "list", "bbox": [0.1276, 0.1359, 0.6865, 0.2691],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "equation", "bbox": [0.1306, 0.2792, 0.6835, 0.3145],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "paragraph", "bbox": [0.0971, 0.3251, 0.6859, 0.4380],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "list", "bbox": [0.0982, 0.4458, 0.6865, 0.7686],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "section_heading", "bbox": [0.1006, 0.7828, 0.5629, 0.7975],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "sans",
+     "text_color": "#00adef"},
+    {"n": 6, "role": "paragraph", "bbox": [0.0982, 0.8067, 0.6865, 0.9403],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8141, 0.9155, 0.8724, 0.9371],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "serif",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5235, 0.9633],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif",
+     "text_color": "#000000"}
+  ],
+  "note": "Recto body page, single column, no figures or panels. Running prose and lists set in the inner measure x 0.097-0.687; the outer 0.687-0.873 is an empty wide margin apart from the grey running-header panel and the folio, so `full` is declared over the live area 0.097-0.873. Block n=1 is the turned part of remark (i), carried over from p018, so it has no marker of its own and its whole bbox sits at the list's turned-line indent x 0.128; block n=4 holds remarks (ii), (iii) and (iv) as one list element with markers at x 0.098 and turned lines at x 0.128. Block n=2 is Eq. (1.9) with its right-ranged number, hence the bbox out to x 0.684. Block n=5 is the x.y.z level sub-heading '1.8.1 Electric field due to a system of charges', cyan #00adef bold sans at 1.15x body - the same treatment as 1.5.1/1.5.2/1.5.3 on p008, and distinct from the grey #6d6e71 1.45x used for the x.y level headings. page_header_band pale cyan #c6eafb at y 0-0.0666 with the #00adef closing rule and the lighter #41c7f4 hairline on the inner (left) half. No footer_rule. '2022-23' recorded as running_header."
+}

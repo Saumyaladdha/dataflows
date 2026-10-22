@@ -1,0 +1,30 @@
+{
+  "group": "v2__biology__match.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q076",
+      "concept": "Industrial microbiology: which microbe yields which product - yeast for ethanol, Monascus purpureus for blood-cholesterol lowering statins, Trichoderma polysporum for the immunosuppressant cyclosporin A, Propionibacterium shermanii for Swiss-cheese ripening",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The single pair Saccharomyces cerevisiae - (iii) 'Commercial production of ethanol' is printed as (a)(iii) in options 1 and 2 only, so that one stored association strikes out options 3 and 4, which both open (a)(iv).",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires four separate stored microbe-to-product associations, none of which can be rebuilt from how the organism works, demonstrated by List II's entries 'Production of immunosuppressive agents', 'Ripening of Swiss cheese', 'Commercial production of ethanol' and 'Production of blood-cholesterol lowering agents', each of which is a taught membership fact rather than a derivable one.",
+      "note": "Our record carries correct_answer: null for this question, so no option is identified as the printed key. Rule 4 requires a trap to name an option, and the schema requires that option not to be the answer; with the key absent, any option named would be named against an answer I had supplied myself, which rule 7 of the brief forbids. traps is therefore empty and source_damage_artifact records the gap. The repair is to recover the printed answer: for this corpus the answer is printed under the question, so it was lost in extraction, not absent from the paper. Second damage item: has_figure is false while figure_image points at figures/2015_A/q076_option_panels_1.png; that file is a crop of the stem's two-column table, not an option panel and not a figure the question needs, so the pointer is mislabelled debris. The elimination shortcut above is a property of the printed option layout and does not depend on the missing key."
+    },
+    {
+      "question_id": "2015_A#q115",
+      "concept": "Cell organelles: which membrane compartment each name denotes - thylakoid in the chloroplast stroma, crista as a mitochondrial infolding, cisterna in the Golgi, chromatin as condensed DNA",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The single pair Cisternae - (i) 'Disc-Shaped sacs in Golgi apparatus' sits in third position in options 2 and 3 only, so that one stored association strikes out options 1 and 4, whose third entries are (ii) and (iv).",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires four separate stored name-to-compartment associations, demonstrated by List II's 'Flat membranous sacs in stroma' and 'Infoldings in mitochondria', which are definitions of the printed terms rather than consequences of any process.",
+      "note": "Our record carries correct_answer: null, so the printed key is absent and no trap can be sited on an option without my first supplying the answer; traps is empty and source_damage_artifact records the gap, exactly as for 2015_A#q076. A second, milder storage difference: the four options are stored as bare code strings - '(iii) (iv) (ii) (i)' - with the (a)-(d) labels dropped, so the mapping is recoverable only by position. The order of List I is printed in the stem, so position is unambiguous and this did not block the demand, structure or strategy axes. has_figure is false while figure_image points at an option-panel crop, as in q076."
+    }
+  ],
+  "group_note": "Both members are two-column match-lists answered by a pairing code, and both were judged by the same two tests. Test one, the demand: can any pair be rebuilt from how the thing works, or is the pairing itself the fact? In both questions every List II entry is a taught association - a product for a microbe, a compartment for an organelle name - so both are recall, and neither is application, since no stated criterion is applied to the items. Test two, the structure: does any pair need another pair's verdict? Neither does; the four pairings are adjudicated separately and the verdicts combined, so both are several_independent_checks and neither is multi_step_dependent, which would require step 2 to consume step 1's result. Both carry elimination, and for the same reason: in each, one securely stored pair is printed in only two of the four codes, so naming that pair halves the option set - Saccharomyces-ethanol in q076, Cisternae-Golgi in q115. In both cases the shortcut narrows to two options but does not settle the item, so neither is given a stronger strategy than the other. The two differ from each other in nothing on these axes. The one thing both share on the trap axis is also the reason neither carries a trap: our record holds correct_answer: null for both, so the printed answer was lost in extraction for the whole packet, and a trap would have to be sited against an answer I supplied rather than one the paper printed. Both therefore carry empty traps and the source_damage_artifact verdict, with the specific gap named in each note. No member is out of place in this packet: both are genuinely match-the-lists in shape."
+}

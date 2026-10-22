@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/B3F.json",
+  "title": "B3F agent output (b3f-figure-transcriber) -- ONE figure crop of one question, 1 run",
+  "description": "ITEM GRANULARITY: one FIGURE crop, not one question. A question can carry a stem diagram and a block of option panels, and they are different objects with different jobs -- see docs/PAPER_EXTRACTION_V2.md section 5. This step is the paper-side twin of A2S (a2-special-transcriber) for NCERT pages, and the shape deliberately mirrors it: caption and labels copied exactly, never a description of the drawing. NOTHING in this pipeline writes prose about a picture; if a figure's meaning cannot be recovered from its printed labels, that is a fact about the question and belongs in `note`. The crop is GROWN outward from the figure's own box toward its neighbours, so `target_box_in_crop` (supplied in the input) tells the agent which part of the image is actually its subject -- a tight crop loses the caption, a loose one imports the next figure, and Stage A settled this trade-off the same way.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["paper_id", "qno", "kind", "labels", "complete", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "paper_id": { "type": "string", "description": "Copied from the input, e.g. \"2024_Q2\"." },
+        "qno": { "type": "integer", "minimum": 1, "maximum": 200, "description": "The printed question number this figure belongs to, copied from the input." },
+        "kind": {
+          "type": "string",
+          "enum": ["diagram", "graph", "table", "structure", "apparatus", "circuit", "map", "not_a_figure"],
+          "description": "`structure` means a DRAWN chemical structure: set it and stop, because a2c-structure-transcriber is the only step allowed to read a structure as chemistry (it writes SMILES, and `not_a_structure` is a real answer there too). `not_a_figure` is likewise a real answer here -- a crop holding only text, a watermark or page furniture is reported as such with empty labels, never forced into another kind. Saying so is how a geometry bug is found; transcribing it anyway is how one survives."
+        },
+        "caption": {
+          "type": "string",
+          "description": "The caption exactly as printed. Usually \"\" -- exam papers rarely caption a diagram the way a textbook does, so an empty caption is correct and not a miss."
+        },
+        "labels": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Every label printed ON the figure, copied character for character, ordered top-left to bottom-right as a reader meets them. One label is one entry even when its printed text wraps across two lines. These labels are the figure's whole content for everything downstream: a ray diagram's N/S/B, a graph's axis names, a seed diagram's A/B/C/D are what the question actually tests, and they exist nowhere in the question's text."
+        },
+        "table_header": { "type": "array", "items": { "type": "string" }, "description": "Header row, cell by cell. Empty unless `kind` is `table`." },
+        "table_rows": { "type": "array", "items": { "type": "array", "items": { "type": "string" } }, "description": "Data rows, cell by cell. Empty unless `kind` is `table`. A NEET match-list IS a table: List I in the first column with its printed A-D labels, List II in the second with I-IV." },
+        "complete": {
+          "type": "boolean",
+          "description": "false when the figure is cut at any edge of the crop -- a curve running off the side, an axis with no end, a label sliced in half. CLIPPING IS THE COMMONEST REAL DEFECT in a cropped figure; a2r-render-reviewer rule 3 says the same of NCERT renders. A clipped crop transcribed as if whole is worse than one reported as clipped, because nothing downstream can then tell."
+        },
+        "holds_multiple_panels": {
+          "type": "boolean",
+          "description": "true when the crop holds SEVERAL pictures -- the four option graphs, the structures of a match list. Do not split them and do not say which is option 1: b10-figure-splitter does that, because it is the step that knows the booklet-code trap, which is that a panel printed (2) in this booklet may be option 4 in another code (SPEC Rule 16)."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": { "type": "string", "description": "Universal rule 7. Also where to record anything excluded because it fell outside target_box_in_crop." }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

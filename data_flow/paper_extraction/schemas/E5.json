@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/E5.json",
+  "title": "E5 agent output (e5-trap-tagger) -- ONE WRONG OPTION of one question, 2 runs + adjudicator",
+  "description": "ITEM GRANULARITY, STATED HERE BECAUSE IT IS THE THING MOST EASILY GOT WRONG: spec 13/E5's item is 'one wrong option of one question (3 per question)', each tagged by TWO runs plus an adjudicator on disagreement. One file of this shape describes exactly ONE option of ONE question -- never the question's trap, and never a list of traps. Three wrong options of one real question routinely carry three DIFFERENT traps, and that difference is the whole point of the tag: it is what lets a generated practice test reproduce the distractor profile of a real paper. Hence `option` is required, is a single option number '1'-'4', and `trap` is a single value, not an array. config/steps.yaml's E5 entry already says item: 'wrong option'; the item-id convention that makes the per-option items addressable (<QID>#opt<N>) is proposed in config/_pending_E_entries.yaml. THE 3-PER-QUESTION COUNT IS THE NORMAL CASE, NOT A QUOTA: a `multiple_accepted` question has fewer genuinely wrong options, and a `bonus`/`dropped` question is broken (codebook/E5.md §1). Never invent a third wrong option to reach three. Spec 13/E5 'Agent output': {\"option\",\"trap\",\"why\",\"new_description\",\"confidence\"}, matching .claude/agents/e5-trap-tagger.md's worked example exactly. The `trap` enum is config/allowed_values.yaml v0.3, generated from docs/question_categories/RULEBOOK.md by scripts/build_allowed_values.py. `note` optional per Universal rule 7; `codebook_version` is the runner's to record (see schemas/E1.json).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["option", "trap", "why", "new_description", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "option": {
+          "type": "string",
+          "pattern": "^[1-4]$",
+          "description": "The ONE wrong option this file is about, as the option number the record's options_en uses ('1'-'4'). It must be the very option the runner gave this item, and it must NOT be the correct answer -- 'never tag the correct option; there is no trap on the answer' (codebook/E5.md §1). Both enforced in scripts/checks/E5.py, which compares against latest/corrected/official answer in that order (spec 12's rule for the answer students are taught)."
+        },
+        "trap": {
+          "type": "string",
+          "enum": [ "calculation_slip", "complementary_grid", "condition_ignored", "copied_from_stem", "fabricated_term", "false_explanatory_link", "format_reflex_option", "half_true", "ignores_exception", "intermediate_value", "inverted_ratio", "look_alike_term", "neighbouring_fact", "neighbouring_question_answer", "new_trap", "no_derivation_route", "no_elimination_route", "old_ncert_fact", "omitted_contribution", "other_one_fact", "overclaiming_quantifier", "parallel_order_decoy", "partial_combination", "reversed_order", "scientist_swap", "semantic_reversal", "sequence_endpoint_or_adjacency", "sign_reversed_magnitude_right", "single_word_substitution", "true_but_out_of_scope", "true_statement_trap", "unit_or_conversion", "wrong_exponent", "wrong_pairing", "wrong_power_of_dependence", "wrong_quantity", "wrong_site_or_stage" ],
+          "description": "Why THIS wrong option attracts a prepared student -- an attraction, not merely an error. config/allowed_values.yaml trap, v0.3. Two values carry preconditions scripts/checks/E5.py enforces: `old_ncert_fact` needs a real change-log entry on an evidence passage showing the option was right by the older book (and ncert/change_log.csv holds only its header row today, so it should essentially never appear -- codebook/E5.md §4), and `calculation_slip` needs `why` to name the actual slip."
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One sentence naming the mechanism concretely. 'Forgot to square the length ratio: 4 x 2 = 8' is checkable; 'looks plausible' is not. For `calculation_slip` it must name the slip (scripts/checks/E5.py requires arithmetic substance in the sentence)."
+        },
+        "new_description": {
+          "type": "string",
+          "description": "One line, REQUIRED (non-empty) when trap is new_trap -- E_NEW_CATEGORY (normal) carries it to Stage F. Enforced in scripts/checks/E5.py."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": { "type": "string", "description": "Universal rule 7. Optional." }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["option", "verdict", "why", "confidence"],
+      "additionalProperties": false,
+      "description": "THE OPTION CANNOT CARRY A TRAP. docs/question_categories/RULEBOOK.md section 5a names two verdicts that are deliberately NOT traps, and without this branch an agent meeting either one has no way to say so and must invent a trap instead. `source_damage_artifact` was the single commonest device recorded across the four per-subject analyses in exports/discovery/clusters_pass_b/, and it is OUR extraction damage, not the examiner's design -- recording it as a trap is how roughly 98 of the corpus's recorded devices came to describe our own data quality. Note what this branch does NOT have: no `trap` key, because `additionalProperties` is false, so a file cannot carry both a verdict and a trap. Rule 5 of the rulebook (no trap or mechanism label where the source is incomplete) is therefore enforced by the shape of the output rather than by a reviewer noticing.",
+      "properties": {
+        "option": {
+          "type": "string",
+          "pattern": "^[1-4]$",
+          "description": "The option this file is about, exactly as in the trap branch."
+        },
+        "verdict": {
+          "type": "string",
+          "enum": ["source_damage_artifact", "arguable_key"],
+          "description": "config/allowed_values.yaml `trap_verdict`, v0.3. `source_damage_artifact`: the option set AS WE STORED IT misleads for reasons the paper never intended -- lost digits, placeholder images, duplicated options, OCR debris. It sets `review_status: source_incomplete` on the question and raises a repair task; it is never a statement about the question as printed. `arguable_key`: this wrong option is defensible on a reasonable reading and the key rests on a textbook convention. Per the rulebook's section 7 worked example the tag still follows the PRINTED key -- the verdict records the doubt, it does not overturn the answer."
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What is damaged, or what makes the rival option defensible. For `source_damage_artifact` name the damage concretely ('options 2 and 4 are byte-identical in the record'), because that sentence is what the repair pass acts on."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": { "type": "string", "description": "Universal rule 7. Optional." }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

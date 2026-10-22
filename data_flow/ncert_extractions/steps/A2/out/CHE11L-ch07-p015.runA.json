@@ -1,0 +1,82 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "the resultant equation is:\nMnO4– (aq) + 2H2O (l) → MnO2 (s) + 4 OH– (aq)\nStep 5 : In this step we balance the charges of the two half-reactions in the manner depicted as:\n2I– (aq) → I2 (s) + 2e–\nMnO4–(aq) + 2H2O(l) + 3e– → MnO2(s) + 4OH–(aq)\nNow to equalise the number of electrons, we multiply the oxidation half-reaction by 3 and the reduction half-reaction by 2.\n6I–(aq) → 3I2 (s) + 6e–\n2 MnO4– (aq) + 4H2O (l) +6e– → 2MnO2(s) + 8OH– (aq)\nStep 6: Add two half-reactions to obtain the net reactions after cancelling electrons on both sides.\n6I–(aq) + 2MnO4–(aq) + 4H2O(l) → 3I2(s) + 2MnO2(s) +8 OH–(aq)\nStep 7: A final verification shows that the equation is balanced in respect of the number of atoms and charges on both sides.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "7.3.3 Redox Reactions as the Basis  for Titrations"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In acid-base systems we come across with a titration method for finding out the strength of one solution against the other using a pH sensitive indicator. Similarly, in redox systems, the titration method can be adopted to determine the strength of a reductant/oxidant using a redox sensitive indicator. The usage of indicators in redox titration is illustrated below:"
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "(i) In one situation, the reagent itself is intensely coloured, e.g., permanganate ion, MnO4–. Here MnO4– acts as the self indicator. The visible end point in this case is achieved after the last of the reductant (Fe2+ or C2O42–) is oxidised and the first lasting tinge of pink colour appears at MnO4– concentration as low as 10–6 mol dm–3 (10–6 mol L–1). This ensures a minimal ‘overshoot’ in colour beyond the equivalence point, the point where the reductant and the oxidant are equal in terms of their mole stoichiometry.\n(ii) If there is no dramatic auto-colour change (as with MnO4– titration), there are indicators which are oxidised immediately after the last bit of the reactant is consumed, producing a dramatic colour change. The best example is afforded by Cr2O72–, which is not a self-indicator, but oxidises the indicator substance diphenylamine just after the equivalence point to produce an intense blue colour, thus signalling the end point.\n(iii) There is yet another method which is interesting and quite common. Its use is restricted to those reagents which are able to oxidise I– ions, say, for example, Cu(II):"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [921, 786, 1526, 838],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "This method relies on the facts that iodine itself gives an intense blue colour with starch and has a very specific reaction with thiosulphate ions (S2O32–), which too is a redox reaction:"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [921, 1020, 1526, 1072],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "I2, though insoluble in water, remains in solution containing KI as KI3."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "On addition of starch after the liberation of iodine from the reaction of Cu2+ ions on iodide ions, an intense blue colour appears. This colour disappears as soon as the iodine is consumed by the thiosulphate ions. Thus, the end-point can easily be tracked and the rest is the stoichiometric calculation only."
+    },
+    {
+      "n": 10,
+      "kind": "heading",
+      "text": "7.3.4 Limitations of Concept of Oxidation Number"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "As you have observed in the above discussion, the concept of redox processes has been evolving with time. This process of evolution is continuing. In fact, in recent past the oxidation process is visualised as a decrease in electron density and reduction process as an increase in electron density around the atom(s) involved in the reaction."
+    },
+    {
+      "n": 12,
+      "kind": "heading",
+      "text": "7.4 Redox Reactions and Electrode Processes"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The experiment corresponding to reaction (7.15), can also be observed if zinc rod is dipped in copper sulphate solution. The redox reaction takes place and during the"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "REDOX REACTIONS",
+    "249",
+    "2024-25"
+  ],
+  "note": "Judged against page 14, which I read myself: p014's Problem 7.10 box ended mid-sentence (\"Replacing the H+ and OH– ions with water,\") and this page opens inside the same pink box with \"the resultant equation is:\", so block 1 continues mid-box. The equations inside that box carry no oxidation numbers above them and are plain inline text, so the box is one transcribed block with no needs_special part. Block 4 is one list, items (i)-(iii), that runs across the left/right column break; item (iii) ends at its colon and the display reaction that follows it is block 5. Equations (7.59) and (7.60) marked needs_special. Section head 7.4 is printed in small caps on the page (\"REDOX REACTIONS AND ELECTRODE PROCESSES\"); I used the text layer's mixed case, which is the underlying character data. Subscripts, superscript charges and exponents appear as inline characters in the text layer (e.g. MnO4–, 10–6 mol dm–3); kept as given."
+}

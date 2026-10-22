@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "degenerate levels due to the presence of ligands in a definite geometry is termed as crystal field splitting and the energy separation is denoted by Δo (the subscript o is for octahedral) (Fig.5.8). Thus, the energy of the two eg orbitals will increase by (3/5) Δo and that of the three t2g will decrease by (2/5)Δo.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The crystal field splitting, Δo, depends upon the field produced by the ligand and charge on the metal ion. Some ligands are able to produce strong fields in which case, the splitting will be large whereas others produce weak fields and consequently result in small splitting of d orbitals."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        105,
+        175,
+        1040,
+        880
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "In general, ligands can be arranged in a series in the order of increasing field strength as given below:"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        575,
+        985,
+        1485,
+        1070
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Such a series is termed as spectrochemical series. It is an experimentally determined series based on the absorption of light by complexes with different ligands. Let us assign electrons in the d orbitals of metal ion in octahedral coordination entities. Obviously, the single d electron occupies one of the lower energy t2g orbitals. In d2 and d3 coordination entities, the d electrons occupy the t2g orbitals singly in accordance with the Hund’s rule. For d4 ions, two possible patterns of electron distribution arise: (i) the fourth electron could either enter the t2g level and pair with an existing electron, or (ii) it could avoid paying the price of the pairing energy by occupying the eg level. Which of these possibilities occurs, depends on the relative magnitude of the crystal field splitting, Δo and the pairing energy, P (P represents the energy required for electron pairing in a single orbital). The two options are:"
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "(i) If Δo < P, the fourth electron enters one of the eg orbitals giving the configuration t2g3eg1. Ligands for which Δo < P are known as weak field ligands and form high spin complexes.\n(ii) If Δo > P, it becomes more energetically favourable for the fourth electron to occupy a t2g orbital with configuration t2g4eg0. Ligands which produce this effect are known as strong field ligands and form low spin complexes."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Calculations show that d4 to d7 coordination entities are more stable for strong field as compared to weak field cases."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "132",
+    "Chemistry",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read CHE12L-ch05-p014 myself earlier in this batch: it ends mid-sentence with 'This splitting of the', and this page's first block begins 'degenerate levels due to the presence of ligands...', which completes that sentence — so first_block_continues_from_previous is true on evidence I actually read, not a guess. TEXT-LAYER / IMAGE DISAGREEMENT (systematic on this page): every crystal-field splitting symbol that the image prints as the Greek capital delta, Δo, comes through the text layer as a plain Latin 'D' ('Do', '(3/5) Do', 'Do < P'). This is a font-encoding fault in the PDF, not what the page says; I have transcribed the printed Δo throughout. Block 3 is Fig. 5.8, the coloured d-orbital splitting diagram (free metal ion -> spherical field -> octahedral field, with the energy axis, barycentre, 3/5Δo and 2/5Δo gaps, eg and t2g labels and the M/L sphere drawings); its bbox includes the 'Fig.5.8: d orbital splitting in an octahedral crystal field' caption. The figure occupies the top-left two-thirds of the page while the continuing prose runs in a narrow right-hand column; blocks 1 and 2 are placed before it so the sentence carried over from p014 stays contiguous. Block 5 is the two-line centred spectrochemical series display (I– < Br– < SCN– < ... < CN– < CO), marked special because its charge superscripts and subscripts carry the meaning and the text layer flattens them. The inline configuration symbols in block 7 are also math objects garbled in the text layer; the image prints t2g3eg1 and t2g4eg0, transcribed flat here as inline text since they are not display equations."
+}

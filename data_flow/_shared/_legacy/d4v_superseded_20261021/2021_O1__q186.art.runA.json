@@ -1,0 +1,21 @@
+{
+  "link_type": "states_answer",
+  "derivation_steps": [],
+  "evidence": [
+    {
+      "for": "statement I is false",
+      "passage_id": "BIO12L-CH05-P98",
+      "exact_line": "AUG has dual functions. It codes for Methionine (met) , and it also act as initiator codon."
+    },
+    {
+      "for": "statement I is false",
+      "passage_id": "BIO12L-CH05-P98",
+      "exact_line": "from bacteria to human UUU would code for Phenylalanine (phe)"
+    }
+  ],
+  "supports_answer": "partly",
+  "missing": [
+    "statement II (AAA and AAG both code for lysine): no running text in BIO12L assigns any codon to lysine. The only place codon-to-amino-acid assignments are printed is Table 5.1, which is passage BIO12L-CH05-P97, and that passage is stored as a cropped image (ncert/figures/BIO12L-CH05-P97.png) with text '' and text_status 'no text extracted; image cropped from the page. Still NOT quotable -- A2S must transcribe it before it can be cited.'"
+  ],
+  "note": "Statement I is settled outright by 5.6's salient feature (v): NCERT states AUG's two functions as coding methionine and acting as initiator, and separately gives phenylalanine's codon as UUU, so 'AUG codes for methionine AND phenylalanine' is false. Statement II needs a lookup in the codon checkerboard. I read chapter_index, saw BIO12L-CH05-P97 (kind 'table', the Table 5.1 the text points to in P96) was absent from the shortlist, fetched it from search_this_file, and found it carries no text at all -- it is a figure crop awaiting transcription by step A2S. I then searched the whole of BIO12L case-sensitively for 'lysine', 'Lysine', 'Lys', 'AAA' and 'AAG': the only hit is 'lysine' in 5.1.2 Packaging of DNA Helix, about the amino acid composition of histones, which is nothing to do with codons. So this is partly for a mechanical reason, not a search failure: the evidence exists on page 18 of the chapter but only inside an untranscribed table image. If BIO12L-CH05-P97 is ever transcribed, this question becomes fully supported with no other change. Every codon-table question in this chapter will hit the same wall."
+}

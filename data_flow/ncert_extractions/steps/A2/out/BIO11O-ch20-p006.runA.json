@@ -1,0 +1,36 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Muscle contraction is initiated by a signal sent by the central nervous system (CNS) via a motor neuron. A motor neuron alongwith the muscle fibres connected to it constitute a motor unit. The junction between a motor neuron and the sarcolemma of the muscle fibre is called the neuromuscular junction or motor-end plate. A neural signal reaching this junction releases a neurotransmitter (Acetyl choline) which generates an action potential in the sarcolemma. This spreads through the muscle fibre and causes the release of calcium ions into the sarcoplasm. Increase in Ca++ level leads to the binding of calcium with a subunit of troponin on actin filaments and thereby remove the masking of active sites for myosin. Utilising the energy from ATP hydrolysis, the myosin head now binds to the exposed active sites on actin to form a cross bridge (Figure 20.4). This",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        185,
+        850,
+        1482,
+        1581
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "pulls the attached actin filaments towards the centre of ‘A’ band. The ‘Z’ line attached to these actins are also pulled inwards thereby causing a shortening of the sarcomere, i.e., contraction. It is clear from the above steps, that during shortening of the muscle, i.e., contraction, the ‘I’ bands get reduced, whereas the ‘A’ bands retain the length (Figure 20.5). The myosin, releasing the ADP and P1 goes back to its relaxed state. A new ATP binds and the cross-bridge is broken (Figure 20.4). The ATP is again hydrolysed by the myosin head and the cycle of cross bridge formation",
+      "continues_from_previous": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "LOCOMOTION AND MOVEMENT",
+    "307",
+    "2022-23"
+  ],
+  "note": "Text layer clean and matched the image; it omitted Figure 20.4's callout labels (Actin filament, Myosin filament, P, ADP, ATP, Cross bridge, Myosin head, (Breaking of cross bridge), (Formation of cross bridge), Sliding/rotation), which with the caption 'Figure 20.4 Stages in cross bridge formation, rotation of head and breaking of cross bridge' sit inside block 2's bbox and are left for the special transcriber, not removed furniture. The text layer writes 'P1' where the image prints a subscript P, and I copied the text layer as-is. previous_page_last_block was null, so I judged from page 5, which I had just read: p5 ended on the complete sentence '...over the thick filaments.' and this page opens a new paragraph, so first_block_continues_from_previous is false. Block 1 breaks mid-sentence at 'This' and resumes in block 3 after the figure; the page ends mid-sentence at '...the cycle of cross bridge formation' so last_block_continues_on_next is true. Removed the running header LOCOMOTION AND MOVEMENT, page number 307 and reprint-year footer 2022-23."
+}

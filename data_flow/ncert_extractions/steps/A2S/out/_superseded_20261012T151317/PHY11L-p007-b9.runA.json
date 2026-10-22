@@ -1,0 +1,47 @@
+{
+  "kind": "table",
+  "header": [
+    "Type of stress",
+    "Stress",
+    "Strain",
+    "Change in shape",
+    "Change in volume",
+    "Elastic Modulus",
+    "Name of Modulus",
+    "State of Matter"
+  ],
+  "rows": [
+    [
+      "Tensile or compressive (σ = F/A)",
+      "Two equal and opposite forces perpendicular to opposite faces",
+      "Elongation or compression parallel to force direction (ΔL/L) (longitudinal strain)",
+      "Yes",
+      "No",
+      "Y = (F L)/(A ΔL)",
+      "Young’s modulus",
+      "Solid"
+    ],
+    [
+      "Shearing (σs = F/A)",
+      "Two equal and opposite forces parallel to oppoiste surfaces forces in each case such that total force and total torque on the body vanishes",
+      "Pure shear, θ",
+      "Yes",
+      "No",
+      "G = F/(A θ)",
+      "Shear modulus or modulus of rigidity",
+      "Solid"
+    ],
+    [
+      "Hydraulic",
+      "Forces perpendicular everywhere to the surface, force per unit area (pressure) same everywhere.",
+      "Volume change (compression or elongation) (ΔV/V)",
+      "No",
+      "Yes",
+      "B = −p/(ΔV/V)",
+      "Bulk modulus",
+      "Solid, liquid and gas"
+    ]
+  ],
+  "repeated_header": false,
+  "note": "The printed header is two-level: a single cell \"Change in\" spans two sub-columns \"shape\" and \"volume\"; flattened here to \"Change in shape\" and \"Change in volume\". In row 2 the printed word is \"oppoiste\" (spelt that way in the source) and σ carries a subscript s, written here as \"σs\". The crop's left edge sits tight against the first column with no visible cell border, but the text of \"Tensile\", \"Shearing\" and \"Hydraulic\" is fully legible; no character appears cut off."
+}

@@ -1,0 +1,59 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [205, 200, 859, 610],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "block sliding down an inclined plane without any sidewise movement.  The block is taken as a rigid body.  Its motion down the plane is such that all the particles of the body are moving together, i.e. they have the same velocity at any instant of time. The rigid body here is in pure translational motion (Fig. 6.1).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In pure translational motion at any instant of time, all particles of the body have the same velocity."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Consider now the rolling motion of a solid metallic or wooden cylinder down the same inclined plane (Fig. 6.2). The rigid body in this problem, namely the cylinder, shifts from the top to the bottom of the inclined plane, and thus, seems to have translational motion.  But as Fig. 6.2 shows, all its particles are not moving with the same velocity at any instant. The body, therefore, is not in pure translational motion. Its motion is translational plus ‘something else.’"
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [205, 1323, 859, 1793],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "In order to understand what this ‘something else’ is, let us take a rigid body so constrained that it cannot have translational motion.  The most common way to constrain a rigid body so that it does not have translational motion is to fix it along a straight line. The only possible motion of such a rigid body is rotation. The line or fixed axis about which the body is rotating is its axis of rotation. If you look around, you will come across many examples of rotation about an axis, a ceiling fan, a potter’s wheel, a giant wheel in a fair, a merry-go-round and so on (Fig 6.3(a) and (b))."
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [886, 540, 1539, 1798],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Let us try to understand what rotation is, what characterises rotation.  You may notice that in rotation of a rigid body about a fixed axis,"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "93",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column listed first. Block 1 is the Fig. 6.1 figure, but the page's text begins mid-sentence (\"block sliding down an inclined plane...\") with no heading, so first_block_continues_from_previous is true and the flag is carried on block 2, the first text block; previous_page_last_block was null. Block 6 is one paragraph that starts at the foot of the left column (\"...translational motion.  The\") and finishes at the top of the right column (\"most common way...\"); it is emitted as a single block. Figure bboxes include each figure's caption (Fig 6.1, Fig. 6.2, Fig. 6.3 with its (a)/(b) panel labels). No numbered section heading appears on this page, so no layered-outline heading repeats were present; no displayed equations or tables on this page."
+}

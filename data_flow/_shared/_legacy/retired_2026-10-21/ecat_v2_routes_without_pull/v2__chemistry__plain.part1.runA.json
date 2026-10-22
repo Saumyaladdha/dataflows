@@ -1,0 +1,192 @@
+{
+  "group": "v2__chemistry__plain.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q002",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "structure_chemical",
+      "concept": "Lanthanide configurations: gadolinium keeps a half-filled $4f^{7}$ shell and puts the extra electron in $5d$",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "Moves two electrons into $5d$ instead of one. Leaves $4f^{6}$ rather than the half-filled $4f^{7}$."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "Puts the last two electrons in $6d$ while leaving $6s$ empty. No filling rule reaches $6d$ before $6s$ in a lanthanide."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "Adds an electron to $5s$, which is already full inside the $[\\mathrm{Xe}]$ core. There is no vacancy there to fill."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires the filling rules applied to one named atom, demonstrated by the stem supplying \"Its atomic number is 64\" and asking which arrangement of those electrons is correct.",
+      "note": "No electron-count shortcut exists here: all four options total 64 electrons ($54+7+1+2$, $54+6+2+2$, $54+8+2$, $54+9+1$), so `strategy_available` is empty. E2 is read as pick_correct_statement because each option is a whole formal expression graded correct or incorrect, in the way the rulebook's \"a balanced equation\" is."
+    },
+    {
+      "question_id": "2015_A#q003",
+      "question_type": "statement_options",
+      "format": "pick_cause_or_effect",
+      "content_shape": "structure_property",
+      "concept": "Second electron gain enthalpy is positive: the incoming electron is pushed away by the charge already on $\\mathrm{O^-}$",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "true_but_out_of_scope",
+          "option": "1",
+          "route": "Oxygen is indeed electronegative, but that is why the FIRST electron is taken up easily. The stem asks about the $+780\\,\\mathrm{kJ\\,mol^{-1}}$ second step."
+        },
+        {
+          "label": "false_explanatory_link",
+          "option": "2",
+          "route": "The ion is larger, so the statement is true - but the growth in size is a result of adding the electron, not the reason adding it costs energy."
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "Gets the size change backwards. Adding an electron makes $\\mathrm{O^-}$ bigger than $\\mathrm{O}$, not smaller."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which statement accounts for a granted fact, demonstrated by the stem's \"It is due to the fact that,\" following the two printed enthalpies, which grants that the second step costs $+780\\,\\mathrm{kJ\\,mol^{-1}}$ and asks only why.",
+      "note": "`false_explanatory_link` is used outside an Assertion-Reason layout: the rulebook's tie-break notes that label usually sits on A/R items, and this is a trailing-\"due to\" item, but the device is the same - a true, topically adjacent statement taken to explain the one granted."
+    },
+    {
+      "question_id": "2015_A#q004",
+      "question_type": "plain_mcq",
+      "format": "count_qualifying_items",
+      "content_shape": "structure_chemical",
+      "concept": "Isomers of $\\mathrm{C_3H_9N}$: two primary amines, one secondary and one tertiary, four in all",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "partial_combination",
+          "option": "1",
+          "route": "Counts only the two primary amines and stops. The secondary and tertiary amines are left out."
+        },
+        {
+          "label": "partial_combination",
+          "option": "2",
+          "route": "Finds the two primary amines and trimethylamine, but misses the secondary amine $\\mathrm{CH_3NHC_2H_5}$."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "Counts one structure twice, writing $\\mathrm{CH_3NHC_2H_5}$ and $\\mathrm{C_2H_5NHCH_3}$ as two molecules. Gives 5 instead of 4."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires every structure consistent with one formula to be generated and tallied, demonstrated by the options being the bare integers 2, 3, 4 and 5, with nothing in the stem to compute from.",
+      "note": "E2 is count_qualifying_items, not calculate_value: nothing is computed from the stem's numbers, and the integer is a tally of structures the student draws."
+    },
+    {
+      "question_id": "2015_A#q005",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Multiplying a balanced equation by $n$ raises its equilibrium constant to the power $n$; halving it takes the square root",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "copied_from_stem",
+          "option": "1",
+          "route": "Gives back the stem's own $\\mathrm{K}$. Treats the halved coefficients as leaving the constant alone."
+        },
+        {
+          "label": "wrong_power_of_dependence",
+          "option": "2",
+          "route": "Squares where it should take the root. $\\mathrm{K}^2$ belongs to $2\\mathrm{N_2}+2\\mathrm{O_2}\\rightleftharpoons 4\\mathrm{NO}$, the doubled equation."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "Multiplies $\\mathrm{K}$ by $\\frac{1}{2}$ instead of raising it to the power $\\frac{1}{2}$. Gives $\\frac{1}{2}\\mathrm{K}$ in place of $\\sqrt{\\mathrm{K}}$."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stated rule applied to a rewritten equation, demonstrated by the stem halving every coefficient of \"$\\mathrm{N_2(g)} + \\mathrm{O_2(g)} \\rightleftharpoons 2\\mathrm{NO(g)}$\" and asking what happens to $\\mathrm{K}$.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q006",
+      "question_type": "pair_options",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Acidic buffer: a weak acid together with the salt of that acid - a strong acid cannot make one",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "$\\mathrm{HClO_4}$ is the only strong acid among the four, and the other three pairs are each a weak acid with its own salt, so that single fact leaves option 3 standing alone.",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "This pair is an acidic buffer. Carbonic acid is weak and $\\mathrm{Na_2CO_3}$ is its salt, and the stem wants the pair that is NOT one."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "This pair is an acidic buffer too. Phosphoric acid is weak and $\\mathrm{Na_3PO_4}$ is its salt."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "This is the textbook acidic buffer itself, acetic acid with sodium acetate."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one definition applied to four systems in turn, demonstrated by each option printing an acid beside the salt of that acid, so the only thing that separates them is whether the acid is weak.",
+      "note": "E1 is pair_options, not match_the_lists: no two columns are printed, and each option is one acid-and-salt set accepted or rejected whole."
+    },
+    {
+      "question_id": "2015_A#q007",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "trend",
+      "concept": "Strong, weak and non-electrolytes: conductivity follows how completely the solute ionises in water",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Fructose does not ionise at all and ammonia and acetic acid ionise only slightly, so the single fact that $\\mathrm{HCl}$ is fully ionised strikes out options 1, 2 and 3 together.",
+      "traps": [
+        {
+          "label": "condition_ignored",
+          "option": "1",
+          "route": "Drops the word \"best\" from the stem. Ammonia does conduct, but as a weak base only a small fraction of it ionises."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "2",
+          "route": "Fructose dissolves without ionising. Its solution carries no current at all, so it cannot be any kind of conductor."
+        },
+        {
+          "label": "condition_ignored",
+          "option": "3",
+          "route": "Drops the word \"best\" again. Acetic acid conducts weakly, about one molecule in a hundred being ionised."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one criterion applied to four named solutes, demonstrated by the stem's \"best conductor of electric current\", which ranks them by how completely each ionises.",
+      "note": ""
+    }
+  ],
+  "group_note": "Grouped on `structure: plain`, the six turn out to carry three E1 shapes, and each departure is stated: q003 and q007 differ in that q003's rival content lives entirely in its four full sentences after a trailing \"It is due to the fact that,\" so q003 is `statement_options`; q006's options are each an acid-and-salt set accepted or rejected whole, which is `pair_options`; the remaining four are `plain_mcq`. E4a is `application` for five of the six - a known rule (orbital filling, the $\\mathrm{K}^n$ rule, the buffer definition, the ionisation criterion) or an exhaustive enumeration applied to the printed case - and `explanatory_reasoning` for q003 alone, which is the only member where the live decision is whether one true statement accounts for another. On structure the group splits on a single test: where every option must be adjudicated separately the label is `several_independent_checks` (q004's four isomers, q006's four acid-salt pairs) and where one rule settles the whole set at once it is `single_step` (q002, q005, q007); none is `multi_step_dependent`, because in no member does a second step need the first one's result. `elimination` is carried only by q006 and q007, where one named fact strikes out three options; it is deliberately NOT carried by q002, because all four of its options total 64 electrons and so no count discriminates them."
+}

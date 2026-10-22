@@ -1,0 +1,103 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [200, 272, 770, 860],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "bit, so that at the end, conductor 1 gets charge Q. By charge conservation, conductor 2 has charge –Q at the end (Fig 2.30 ).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In transferring positive charge from conductor 2 to conductor 1, work will be done externally, since at any stage conductor 1 is at a higher potential than conductor 2. To calculate the total work done, we first calculate the work done in a small step involving transfer of an infinitesimal (i.e., vanishingly small) amount of charge. Consider the intermediate situation when the conductors 1 and 2 have charges Q¢ and –Q¢ respectively. At this stage, the potential difference V¢ between conductors 1 to 2 is Q¢/C, where C is the capacitance of the system. Next imagine that a small charge d Q¢ is transferred from conductor 2 to 1. Work done in this step (d W), resulting in charge Q¢ on conductor 1 increasing to Q¢+ d Q¢, is given by"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [575, 920, 1545, 990],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Integrating eq. (2.68)"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [575, 1060, 1190, 1155],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "We can write the final result, in different ways"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [575, 1220, 1545, 1290],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Since electrostatic force is conservative, this work is stored in the form of potential energy of the system. For the same reason, the final result for potential energy [Eq. (2.69)] is independent of the manner in which the charge configuration of the capacitor is built up. When the capacitor discharges, this stored-up energy is released. It is possible to view the potential energy of the capacitor as ‘stored’ in the electric field between the plates. To see this, consider for simplicity, a parallel plate capacitor [of area A (of each plate) and separation d between the plates]."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Energy stored in the capacitor"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [575, 1660, 1545, 1735],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "The surface charge density s is related to the electric field E between the plates,"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [575, 1810, 1545, 1885],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "From Eqs. (2.70) and (2.71) , we get"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Energy stored in the capacitor"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [575, 2000, 1545, 2055],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["Physics", "74", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null even though page is 30, so continuation was judged from the page itself: the running text opens mid-sentence (\"bit, so that at the end, conductor 1 gets charge Q.\"), hence first_block_continues_from_previous is true. In reading order the left column's floated figure (FIGURE 2.30 with its caption) is block 1; the continuing text is block 2, which carries continues_from_previous: true. Inline mathematics was copied as the text_layer holds it, per instruction: the Symbol-font characters render primes as \"¢\" (Q¢, V¢), delta as \"d\" (d Q¢, d W) and sigma as \"s\" (\"surface charge density s\"); the page image shows these as Q', V', δQ', δW and σ. Displayed equations (2.68), the unnumbered integral for W, (2.69), (2.70), (2.71) and (2.72) are marked needs_special with empty text; the lead-in fragments \"= \" (before 2.70) and \"U = \" (before 2.72) are treated as part of those equation blocks. Page ends with the complete equation (2.72)."
+}

@@ -1,0 +1,162 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "character of momentum has not been evident. In the examples so far, momentum and change in momentum both have the same direction. But this is not always the case.  Suppose a stone is rotated with uniform speed in a horizontal plane by means of a string, the magnitude of momentum is fixed, but its direction changes (Fig. 4.4). A force is needed to cause this change in momentum vector. This force is provided by our hand through the string.  Experience suggests that our hand needs to exert a greater force if the stone is rotated at greater speed or in a circle of smaller radius, or both. This corresponds to greater acceleration or equivalently a greater rate of change in momentum vector. This suggests that the greater the rate of change in momentum vector the greater is the force applied.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        308,
+        853,
+        940,
+        1512
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "These qualitative observations lead to the second law of motion expressed by Newton as follows :"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The rate of change of momentum of a body is directly proportional to the applied force and takes place in the direction in which the force acts."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Thus, if under the action of a force F for time interval ∆t, the velocity of a body of mass m changes from v to v + ∆v i.e. its initial momentum p = m v changes by m ∆ = ∆ p v . According to the Second Law,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1102,
+        211,
+        1458,
+        286
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "where k  is a constant of proportionality.  Taking the limit ∆t → 0,  the term t ∆ ∆p becomes the derivative or differential co-efficient of p with respect to t, denoted by d dt p .  Thus"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1177,
+        556,
+        1620,
+        616
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "For a body of fixed mass m,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1080,
+        680,
+        1620,
+        745
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "i.e the Second Law can also be written as"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1177,
+        794,
+        1620,
+        826
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "which shows that force is proportional to the product of mass m and acceleration a."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The unit of force has not been defined so far. In fact, we use Eq. (4.4) to define the unit of force. We, therefore, have the liberty to choose any constant value for k.  For simplicity, we choose k = 1. The second law then is"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1177,
+        1123,
+        1620,
+        1177
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "In SI unit force is one that causes an acceleration of 1 m s-2 to a mass of 1 kg. This unit is known as newton : 1 N = 1 kg m s-2."
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Let us note at this stage some important points about the second law :"
+    },
+    {
+      "n": 18,
+      "kind": "list",
+      "text": "1. In the second law, F = 0 implies a = 0. The second law is obviously  consistent with the first law.\n2. The second law of motion is a vector law. It is equivalent to three equations, one for each component of the vectors :"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1080,
+        1593,
+        1620,
+        1793
+      ],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "This means that if a force is not parallel to the velocity of the body, but makes some angle with it, it changes only the component of velocity along the direction of force. The"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "54",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null, but the page opens mid-sentence (lowercase 'character of momentum...'), so continuation is flagged true. Two-column page: left column (blocks 1-5) read before right column (blocks 6-20). The Fig. 4.4 illustration and its italic caption are covered by one figure block's bbox (needs_special) rather than transcribed. Displayed/numbered equations (the unnumbered F ∝ ∆p/∆t line and Eqs. 4.2-4.6) are marked needs_special with bboxes. Inline mathematics inside paragraphs 5 and 7 is copied verbatim from the text_layer, where subscript/superscript fragments are extracted onto separate lines and scrambled (e.g. 'changes by m ∆ = ∆ p v', 'the term t ∆ ∆p'); these are artifacts of extraction, not the printed text. Superscripts in 'm s-2' are likewise flattened by the extractor. No numbered section side-heading appears on this page, so the repeated-outline-heading artifact did not arise."
+}

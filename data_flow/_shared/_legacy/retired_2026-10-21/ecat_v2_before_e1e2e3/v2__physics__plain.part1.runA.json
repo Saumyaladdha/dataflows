@@ -1,0 +1,164 @@
+{
+  "group": "v2__physics__plain.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q136",
+      "concept": "Rydberg formula: the longest wavelength of a hydrogen series comes from its smallest jump, n+1 to n, so Lyman gives 4/3R and Balmer 36/5R",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination", "estimation"],
+      "strategy_evidence": "Every Lyman line is shorter in wavelength than every Balmer line, so the ratio asked for must be less than one; that single fact strikes out options 3 (9/4) and 4 (27/5) without any arithmetic, leaving only options 1 and 2. The Rydberg constant cancels in the ratio, which is why no value of R is supplied.",
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "2",
+          "route": "drops the 1/n1^2 term from each series' Rydberg difference, leaving 1/lambda proportional to 1/n2^2 alone; the longest Lyman line then scales as 2^2 and the longest Balmer line as 3^2, giving the ratio 4/9"
+        },
+        {
+          "label": "complementary_grid",
+          "option": "3",
+          "route": "the four options are two magnitudes each crossed with its own reciprocal - 5/27 with 27/5, and 4/9 with 9/4 - and option 3 is the member that only the grid explains: it is the reciprocal of the omitted-term result of option 2, not of the key, so no single operation on the correct method reaches it"
+        },
+        {
+          "label": "inverted_ratio",
+          "option": "4",
+          "route": "27/5 is the exact reciprocal of the keyed 5/27, and it is what is printed if the Rydberg differences are compared directly as wavelengths - 3/4 against 5/36 - without taking the reciprocal that converts 1/lambda to lambda"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires computing two wavelengths from one relation and then their quotient, demonstrated by the stem's \"the ratio of the longest wavelength in the Lyman series to the longest wavelength in the Balmer series\", where the quotient cannot be formed until both wavelengths exist.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q137",
+      "concept": "Placing a photon energy in the electromagnetic spectrum: a kiloelectronvolt photon is of X-ray energy, around 0.8 angstrom",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "names gamma rays, the band immediately above X-rays in the same tabulated series; gamma photons are of MeV order, two to three powers of ten above the stem's 15 keV, so the option shifts the reading one row up the band table"
+        },
+        {
+          "label": "unit_or_conversion",
+          "option": "4",
+          "route": "drops the kilo prefix and reads 15 keV as 15 eV; hc/E then gives 1240/15 = 83 nm, which lies in the far ultraviolet, so this option is the exact band that the un-converted number selects"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the photon energy-to-wavelength relation to place one magnitude in a tabulated band, demonstrated by the stem's \"energy of the em waves is of the order of 15 keV\", which fixes the wavelength near 0.8 angstrom.",
+      "note": "Option 3 (infra-red) is left untagged: reaching it needs the prefix to be misread by two steps rather than one, and no single named operation on 15 keV produces an infrared wavelength, so no route can be named for it."
+    },
+    {
+      "question_id": "2015_A#q138",
+      "concept": "Lenz's law applied to a passing charge: the flux its field sends through the coil first grows and then shrinks, so the induced current reverses as it passes",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["symmetry"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "1",
+          "route": "leaves the moving charge's own magnetic field out of the flux through the coil; the electron travels in the plane of the page and its field at the coil is perpendicular to that plane, so the flux is non-zero and changing, and option 1 is what dropping that contribution gives"
+        },
+        {
+          "label": "intermediate_value",
+          "option": "2",
+          "route": "reports the result of the first half of the passage only: while the electron approaches, the into-the-page flux through the coil is increasing, so the induced current opposes it and runs anticlockwise, which is a to b to c to d; the second half is then not evaluated"
+        },
+        {
+          "label": "intermediate_value",
+          "option": "3",
+          "route": "reports the second half only: once the electron has passed, the into-the-page flux is decreasing and the induced current runs clockwise, a to d to c to b; taken alone it is as incomplete as option 2, and the two together are what makes the key correct"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying Lenz's law twice over one passage and combining the verdicts, demonstrated by option 4's \"the current will reverse its direction as the electron goes past the coil\" against a figure in which the straight path XY runs beneath the coil abcd.",
+      "note": "The figure, figures_agent/2015_A/q138.png, is present and legible: a circular coil labelled a at the top, b at the left, c at the bottom and d at the right, with a dotted straight path beneath it carrying an arrow to the right. The sense of each half of the passage is read from that geometry and the labels, which is why the two phase options can be told apart. `symmetry` is recorded as the available strategy because the approach and recession halves are mirror images about the coil's vertical axis, which forces the reversal without either sense being computed."
+    },
+    {
+      "question_id": "2015_A#q139",
+      "concept": "Equation of continuity: the volume flow in a tube of radius R equals the total flow through n holes of radius r, so v = V R^2 / (n r^2)",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": ["dimensional_check", "elimination"],
+      "strategy_evidence": "Option 1 is V^2 R/(nr), which has the dimensions of a velocity squared and cannot be a speed at all; the dimensional check alone therefore strikes out option 1, leaving only the three options of the form V R^2/(n^k r^2).",
+      "traps": [
+        {
+          "label": "wrong_power_of_dependence",
+          "option": "1",
+          "route": "uses the radii themselves where their squares are required: continuity equates areas, which carry R^2 and r^2, and option 1 carries R^1 and r^1 (with a stray second power on V instead), so the two powers are 1 where they should be 2"
+        },
+        {
+          "label": "wrong_power_of_dependence",
+          "option": "2",
+          "route": "applies the squaring to the hole count as well as to the hole radius, giving n^2 r^2 where the total exit area is n times r^2; the two powers at issue are n^1 in the correct total area and n^2 as printed"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "n enters the derivation exactly once, as the number of holes multiplying the single-hole area pi r^2; no step in equating pi R^2 V with n pi r^2 v introduces a second or third power of n, so n^3 is reachable by no route"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying one conservation relation to a stated geometry and rearranging it, demonstrated by the stem's \"one end of which has n fine holes, each of radius r\", which fixes the exit area as n times pi r squared.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q140",
+      "concept": "Young's modulus: for identical wires stretched to the same extension the load is proportional to Y, since extension equals FL/AY",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "1",
+          "route": "leaves Y out of the extension relation altogether: with the stem's stated equal length and equal area, dropping the 1/Y factor from FL/AY makes equal loads give equal extensions, which is the 1:1 of option 1"
+        },
+        {
+          "label": "inverted_ratio",
+          "option": "2",
+          "route": "1:2 is the exact reciprocal of the keyed 2:1, and it is what is printed if the load is taken as inversely proportional to Y - that is, if F = YA(extension)/L is read with Y in the denominator"
+        }
+      ],
+      "verdicts": ["arguable_key"],
+      "reason": "This question requires computing a load ratio from a proportionality in which length and area cancel, demonstrated by the stem's \"Two wires of same length and of same area of cross section\" and \"the lower ends of the wires to be at the same level\", which sets the two extensions equal.",
+      "note": "arguable_key, and the printed key is kept (rulebook section 7). Option 4 reads \"4 : 2\", which is the same ratio as the keyed option 3, \"2 : 1\" - an unreduced form of the correct answer - so as stored the paper offers the right ratio twice and option 4 is defensible on a reasonable reading. No trap is written on option 4 for that reason: it is not a wrong option, it is the key written differently. Recorded as a review flag, not as a correction. The figure, figures_agent/2015_A/q140.png, is a crop from the printed SOLUTION region - its top line reads \"Solution: (3)\" and it shows the two suspended wires labelled brass and steal (sic) - so it is decorative here and in fact discloses the answer; the question is answerable from its text alone and is tagged as complete, but the mis-attached crop should be repaired."
+    },
+    {
+      "question_id": "2015_A#q141",
+      "concept": "Potentiometer: the wire's potential gradient is set by the driving circuit, E0 r/((r+r1)L), and the unknown e.m.f. is that gradient times the balancing length",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The balancing condition makes E grow with the balancing length l, so l must appear in the numerator; that single monotonicity fact strikes out options 1 and 2, in both of which l sits in the denominator.",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "divides by the length ratio instead of multiplying by it: the gradient E0 r/((r+r1)L) must be multiplied by l, and option 1 is exactly the key with l and L interchanged"
+        },
+        {
+          "label": "omitted_contribution",
+          "option": "2",
+          "route": "leaves the potentiometer wire's own resistance r out of the series sum, putting r1 alone in the denominator where (r + r1) belongs, and carries the same inverted length ratio as option 1"
+        },
+        {
+          "label": "omitted_contribution",
+          "option": "4",
+          "route": "leaves the external resistance r1 out of the circuit entirely, so the whole driving e.m.f. E0 is taken to fall across the wire; E0 l/L is the correct expression only in the case r1 = 0, which the stem does not state"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires carrying a computed potential gradient into a second step, demonstrated by the stem's \"a resistance r are connected in series with a battery of e.m.f. E0 and a resistance r1\", which fixes the gradient before the balancing length l can be used at all.",
+      "note": ""
+    }
+  ],
+  "group_note": "All six were read as the same printed shape - one question, four answers, no lettered block or printed list - and three (q138, q140, q141) involve a figure, of which only q138's is needed to answer; q140's is a crop of the printed solution and q141 has none, so on the E1 axis only q138 belongs with the figure-gated shapes. Three stated rules kept the group consistent. (1) DEMAND: the test applied throughout was whether the answer is a number or ratio arrived at by computing (`calculation`) or a stated relation applied to a stated arrangement (`application`). q136 and q140 are `calculation`, and both are ratio questions in which the constant cancels - the rulebook's own instruction is that cancelling constants is a strategy rather than a demand, so both carry `estimation` on the strategy axis instead of a demand of their own. q137, q138, q139 and q141 are `application`. q137 is the member nearest a recall label, since a reader who has memorised the band energies needs no relation; it is `application` because the stem supplies the magnitude and the band must be selected by placing it, which is a rule applied to this case. (2) STRUCTURE: `multi_step_dependent` only where a computed result is consumed by a later step - q136 (two wavelengths, then their quotient) and q141 (gradient, then gradient times length). q139 and q140 are one relation written and rearranged, so `single_step`; q137 is one placement. q138 alone is `several_independent_checks`: the approach half and the recession half are each evaluated separately and the two verdicts combined into \"it reverses\", which is not two dependent steps because neither half needs the other's result. (3) STRATEGY: given only where the shortcut can be named with the options it strikes out. q136's is the one-line fact that Lyman lies below Balmer, which removes both of the greater-than-one options; q139's is dimensional, and `dimensional_check` is recorded as the strategy rather than `dimensional_reasoning` as the demand because dimensions confirm rather than produce the answer, which is the rulebook's distinction between the two; q141's is monotonicity in l; q138's is the mirror symmetry of the two halves of the passage, which forces the reversal without either sense being computed. (4) TRAPS: the recurring device across the numeric members is an option produced by one named operation on the correct method, and it is labelled by which operation - a dropped term (`omitted_contribution`, used on q139 option 1's un-squared radii, q140 option 1, q141 options 2 and 4, each naming what was dropped), a reciprocal (`inverted_ratio`, used only where the option is the exact reciprocal of the key, which is why q136 option 4 and q140 option 2 carry it and q141 option 1 does not), a mis-ordered operation (`calculation_slip`), or a power error (`wrong_power_of_dependence`). `no_derivation_route` is used once, on q139's n^3, and demonstrated from the derivation rather than asserted. `intermediate_value` appears twice in q138 because its two sense-options are each a correct half of the answer. One option is explicitly NOT tagged although it is wrong: q137 option 3, for which no single conversion error can be named. One question carries a verdict instead of a trap on its fourth option: q140's option 4 reads \"4 : 2\", which is the keyed 2:1 unreduced, so arguable_key is recorded and the printed key is kept. No trap sits on any official answer."
+}

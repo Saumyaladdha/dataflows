@@ -1,0 +1,135 @@
+{
+  "chapter": "BIO11-CH14",
+  "subtopics": [
+    {
+      "n": 1,
+      "name": "Human respiratory system: conducting part and respiratory part",
+      "from_heading": "14.1.1 Human Respiratory System",
+      "passages": [
+        "BIO11L-CH14-P01",
+        "BIO11L-CH14-P03",
+        "BIO11L-CH14-P04",
+        "BIO11L-CH14-P05"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "The steps of respiration",
+      "from_heading": "14.1.1 Human Respiratory System",
+      "passages": [
+        "BIO11L-CH14-P06",
+        "BIO11L-CH14-P32"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "Mechanism of breathing: inspiration, expiration and the muscles involved",
+      "from_heading": "14.2 MECHANISM OF BREATHING",
+      "passages": [
+        "BIO11L-CH14-P07",
+        "BIO11L-CH14-P08",
+        "BIO11L-CH14-P33",
+        "BIO11L-CH14-P34"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Respiratory volumes: tidal volume, IRV, ERV and residual volume",
+      "from_heading": "14.2.1 Respiratory Volumes and Capacities",
+      "passages": [
+        "BIO11L-CH14-P09",
+        "BIO11L-CH14-P10",
+        "BIO11L-CH14-P11",
+        "BIO11L-CH14-P12"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Pulmonary capacities: inspiratory, expiratory, functional residual, vital and total lung capacity",
+      "from_heading": "14.2.1 Respiratory Volumes and Capacities",
+      "passages": [
+        "BIO11L-CH14-P13",
+        "BIO11L-CH14-P14",
+        "BIO11L-CH14-P15",
+        "BIO11L-CH14-P16",
+        "BIO11L-CH14-P17",
+        "BIO11L-CH14-P38"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Exchange of gases at the alveoli and tissues: partial pressures and factors affecting diffusion",
+      "from_heading": "14.3 EXCHANGE OF GASES",
+      "passages": [
+        "BIO11L-CH14-P18",
+        "BIO11L-CH14-P19",
+        "BIO11L-CH14-P20",
+        "BIO11L-CH14-P21",
+        "BIO11L-CH14-P22",
+        "BIO11L-CH14-P35"
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Blood as the medium of transport for oxygen and carbon dioxide",
+      "from_heading": "14.4 TRANSPORT OF GASES",
+      "passages": [
+        "BIO11L-CH14-P23"
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Transport of oxygen: oxyhaemoglobin and the oxygen dissociation curve",
+      "from_heading": "14.4.1 Transport of Oxygen",
+      "passages": [
+        "BIO11L-CH14-P24",
+        "BIO11L-CH14-P25",
+        "BIO11L-CH14-P36"
+      ]
+    },
+    {
+      "n": 9,
+      "name": "Transport of carbon dioxide: carbamino-haemoglobin, bicarbonate and carbonic anhydrase",
+      "from_heading": "14.4.2 Transport of Carbon dioxide",
+      "passages": [
+        "BIO11L-CH14-P26",
+        "BIO11L-CH14-P27"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Regulation of respiration: respiratory centre, pneumotaxic centre and chemosensitive area",
+      "from_heading": "14.5 REGULATION OF RESPIRATION",
+      "passages": [
+        "BIO11L-CH14-P28",
+        "BIO11L-CH14-P37"
+      ]
+    },
+    {
+      "n": 11,
+      "name": "Asthma and emphysema",
+      "from_heading": "14.6 DISORDERS OF RESPIRATORY SYSTEM",
+      "passages": [
+        "BIO11L-CH14-P29",
+        "BIO11L-CH14-P30"
+      ]
+    },
+    {
+      "n": 12,
+      "name": "Occupational respiratory disorders caused by dust",
+      "from_heading": "14.6 DISORDERS OF RESPIRATORY SYSTEM",
+      "passages": [
+        "BIO11L-CH14-P31"
+      ]
+    },
+    {
+      "n": 13,
+      "name": "Alfonso Corti and the mammalian auditory system",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH14-P02"
+      ]
+    }
+  ],
+  "note": "P02 does not belong to respiration at all: it is a biography box on Alfonso Corti and the mammalian auditory system, with no heading in this chapter's headings list. Rather than fold it into a respiratory subtopic it was given its own precisely named subtopic (13) and from_heading 'unsure'; this looks like an extraction error in the input and is worth checking upstream. The headings list has 14.1.1 but not 14.1, so P06 (the numbered steps of respiration) is attributed to 14.1.1. P31 (occupational respiratory disorders from dust) is short and self-contained and was kept apart from asthma and emphysema. Blank figure/table passages P01, P04, P08, P20, P21, P22, P25 were placed with the text they sit in. The SUMMARY splits cleanly across P32-P37 and each part went to the matching subtopic; EXERCISES (P38, vital capacity and residual volume) was attached to subtopic 5."
+}

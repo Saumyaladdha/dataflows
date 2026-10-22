@@ -1,0 +1,60 @@
+{
+  "page": {
+    "page_kind": "body",
+    "width_px": 1654,
+    "height_px": 2339,
+    "body_text_size_px": 21.0,
+    "text_block": [0.065, 0.102, 0.670, 0.837],
+    "fill": 0.95,
+    "columns": [
+      {"id": "full", "x0": 0.065, "x1": 0.670}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 0.756, 0.036],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435", "space_before": 0.0},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.772, 0.0, 0.957, 0.091],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0},
+
+    {"n": null, "role": "running_header", "bbox": [0.065, 0.071, 0.378, 0.078],
+     "column": "full", "size_rel": 0.81, "size_pt": 8.6, "align": "left", "font": "sans",
+     "text_color": "#6f6e70", "fill": null, "indent": 0.0, "space_before": 0.035},
+
+    {"n": 1, "role": "paragraph", "bbox": [0.065, 0.102, 0.671, 0.394],
+     "column": "full", "size_rel": 1.0, "size_pt": 10.8, "align": "justify", "font": "serif",
+     "text_color": "#232323", "fill": null, "indent": 0.0, "space_before": 0.024},
+
+    {"n": 2, "role": "paragraph", "bbox": [0.065, 0.399, 0.669, 0.483],
+     "column": "full", "size_rel": 1.0, "size_pt": 10.8, "align": "justify", "font": "serif",
+     "text_color": "#232323", "fill": null, "indent": 0.0, "space_before": 0.006},
+
+    {"n": 3, "role": "paragraph", "bbox": [0.064, 0.489, 0.669, 0.608],
+     "column": "full", "size_rel": 1.0, "size_pt": 10.8, "align": "justify", "font": "serif",
+     "text_color": "#232323", "fill": null, "indent": 0.0, "space_before": 0.006},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.065, 0.614, 0.670, 0.768],
+     "column": "full", "size_rel": 1.0, "size_pt": 10.8, "align": "justify", "font": "serif",
+     "text_color": "#232323", "fill": null, "indent": 0.0, "space_before": 0.006},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.064, 0.774, 0.670, 0.840],
+     "column": "full", "size_rel": 1.0, "size_pt": 10.8, "align": "justify", "font": "serif",
+     "text_color": "#232323", "fill": null, "indent": 0.0, "space_before": 0.006},
+
+    {"n": null, "role": "page_number", "bbox": [0.804, 0.727, 0.957, 0.764],
+     "column": "full", "size_rel": 1.38, "size_pt": 14.6, "align": "left", "font": "sans",
+     "text_color": "#ffffff", "fill": "#f8931f", "indent": 0.022, "space_before": 0.636},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.804, 0.767, 0.957, 0.773],
+     "column": "full", "size_rel": 1.0, "fill": "#f8931f", "space_before": 0.003},
+
+    {"n": null, "role": "running_header", "bbox": [0.431, 0.901, 0.527, 0.910],
+     "column": "full", "size_rel": 0.76, "size_pt": 8.1, "font": "sans",
+     "text_color": "#202020", "fill": null, "indent": 0.0, "space_before": 0.062},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.193, 0.282, 0.834, 0.752],
+     "column": "full", "size_rel": 1.0, "text_color": "#e6e6e6", "fill": null,
+     "space_before": 0.0}
+  ],
+  "note": "PURE A4 SCAN, no text layer: every number here is measured from the image with PIL/numpy. Image is 1654x2339 px = A4 595.32x841.92pt at exactly 200 DPI (1654/595.32*72 = 200.05), so 1 px = 0.36 pt. ORDINARY BODY PAGE, recto (folio 17). Not an opener: no chapter banner, no rule_bar, no contents panel, no headings, no figures, no tables on this sheet - it is five prose paragraphs only. COLUMNS: one text column, x 107-1108 px = 0.065-0.670, measure 1001 px = 360 pt. The whole outer (right) margin 0.670-1.000 is bare paper except the folio tab and the footer rule; nothing else is printed there, so there is no second column. The green header band is flush to the INNER (left) edge and stops at 0.756; on a verso it would be mirrored. BODY TEXT SIZE: body_text_size_px = 21.0, measured cap-to-baseline on the capital 'A' of 'A breeder' (cap top y=1144, baseline y=1165) and confirmed on three other lines (ascender top to baseline 21 px throughout). PARAGRAPH RHYTHM (the point of this page): leading is dead uniform at 41.5 px = 0.01774 of page height = 14.9 pt - all 42 body lines sit on a 41.5 px grid with no deviation. There is NO extra space between paragraphs: the measured gap from one paragraph's last descender to the next paragraph's first ascender is 13-15 px (space_before 0.006), which is the same gap found between two lines inside a paragraph. Paragraphs are marked ONLY by a first-line indent of 49 px = 0.030 of page width = 17.6 pt (first lines start at x=156-158 px vs the column edge at x=106-108 px). Because the indent is on the first LINE and not on the block, every paragraph element's own left edge is flush with the column and indent is reported as 0.0; the 0.030 first-line indent is recorded here instead, so a renderer must apply it as a text-indent, not a block inset. Paragraph 1 is a continuation from the previous page and has NO first-line indent (its first line starts flush at x=108). Line counts: p1 17 lines, p2 5, p3 7, p4 9, p5 4; all set justified, last line of each paragraph short. BLOCK MATCHING: all five A2 blocks matched confidently and in order to the five paragraphs by their opening words; no nulls guessed. INLINE TYPE (not separate elements, so the paragraph font stays 'serif'): bold run-in terms 'Artificial hybridisation' (p3), 'emasculation' and 'bagging' (p4) are inline serif-bold; 'Crotalaria' and 'Vinca' (p2) are inline serif-italic. COLOURS, all sampled from flat interiors: header band #4a7435 (74,116,53, sampled at several points well inside the band); folio tab and footer rule #f8931f (248,147,31); folio digits white #ffffff; running head grey #6f6e70; body ink #232323 and the 'Reprint 2026-27' line #202020 - these two are the median of the darkest 5-20 per cent of their pixels on a scan, so the true press ink is almost certainly solid black and the measured value carries the scan's anti-aliasing. FILL for the corner logo is omitted on purpose: it is a multi-colour mark (brown #725420 block, orange #f8931f stripe, green leaf, black human figure), not a panel with one fill. WATERMARK: the last element is the diagonal '(c) NCERT not to be republished' overlay printed across the body text in pale grey (#e6e6e6); its bbox 0.193-0.834 x 0.282-0.752 was measured only where the overlay is clear of body ink (dark ink dilated 9 px and excluded), so the true extent may run a few px further at the lower-left where it crosses dense text. It is an overlay with no position in the flow, hence space_before 0.0; it is furniture a consumer should drop. REPRINT LINE: 'Reprint 2026-27' is a running FOOT, not a head; there is no footer-text role in the allowed list so role 'running_header' is used. Its align is omitted rather than guessed: its centre is at x 0.479 of page width, 2 per cent left of the page centre (0.500) and far from the text-column centre (0.367), so it is neither cleanly page-centred nor column-centred. SPACE_BEFORE for the folio tab (0.636) is measured from the corner logo above it in the same right-margin rail, since the element preceding it in reading order (paragraph 5) is in the body column and sits lower on the sheet; the running head's 0.035 is measured from the bottom of the green band. TEXT_BLOCK is the measured body type: left column edge 0.065, top of the first line 0.102 (y=238), right edge of the justified measure 0.670, baseline of the last line 0.837 (y=1958). PAGE.FILL 0.95 = measured text depth (238-1958 px = 1720 px) over the depth the page makes available (238 to about 2040 px = 1802 px); that 2040 px frame bottom is INFERRED, not printed - it is two further 41.5 px line slots past the last baseline, which is as far as another line could go before the 'Reprint 2026-27' line at y=2108. The page is near-full: a text-dense sheet with roughly two spare lines at the foot. SIZE_PT is DERIVED, not measured directly: it is cap-height px converted at the known 200 DPI assuming a cap-height/em ratio of 0.70 for the serif body and 0.715 for the sans furniture (body 21 px cap -> ~10.8 pt on 14.9 pt leading, running head 17 px -> ~8.6 pt, folio digits 29 px -> ~14.6 pt, reprint line 16 px -> ~8.1 pt). SIZE_REL is the measured ratio and is the number to trust. Folio detail: the orange tab box is 0.804-0.957 x 0.727-0.764 and the white digits '17' sit inside it at 0.826-0.847 x 0.737-0.749, left-aligned with a 36 px (0.022) inset, hence the indent on that element."
+}

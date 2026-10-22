@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000248",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:42"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "A series LCR circuit with inductance $10\\,\\mathrm{H}$, capacitance $10\\,\\mathrm{F}\\mu$ , resistance $50\\,\\Omega$ is connected to an ac source of voltage, $V = 200\\sin(100t)$ volt. If the resonant frequency of the LCR circuit is $0\\nu$ and the frequency of the ac source is $\\nu$ , then",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$0$ $50\\,\\mathrm{Hz}\\nu = \\nu =$",
+    "2": "$0$ $50\\,\\mathrm{Hz}\\nu = \\nu = \\pi$",
+    "3": "$0$ $50\\,\\mathrm{Hz}$, $50\\,\\mathrm{Hz}\\nu = \\nu = \\pi$",
+    "4": "$0$ $100100\\,\\mathrm{Hz}$; $\\mathrm{Hz}\\nu = \\nu = \\pi$"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "42\nA series LCR circuit with inductance 10 H, capacitance 10 Fµ , resistance 50 Ω is connected to an ac\nsource of voltage, V = 200sin(100t) volt. If the resonant frequency of the LCR circuit is 0ν and the\nfrequency of the ac source is ν , then\n(1)\n0 50 Hzν =ν=\n(2)\n0 50 Hzν =ν= π\n(3)\n0 50 Hz, 50 Hzν = ν=π\n(4)\n0 100100 Hz; Hzν= ν = π\nAlternating Current\n",
+  "b4_script_options": {
+    "1": "0 50 Hzν =ν=",
+    "2": "0 50 Hzν =ν= π",
+    "3": "0 50 Hz, 50 Hzν = ν=π",
+    "4": "0 100100 Hz; Hzν= ν = π\nAlternating Current"
+  },
+  "official_answer": "2",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "2",
+  "b6_reason": "Resonant and source frequencies coincide: both equal 50/pi Hz.",
+  "b6_working": "omega_0 = 1/sqrt(LC) = 1/sqrt(10 x 10e-6) = 1/sqrt(1e-4) = 100 rad/s, so nu_0 = 100/(2pi) = 50/pi Hz. Source V = 200 sin(100t) gives omega = 100 rad/s, so nu = 100/(2pi) = 50/pi Hz. Hence nu_0 = nu = 50/pi Hz.",
+  "b6_confidence": "medium",
+  "b6_note": "Stem and options arrived with scrambled LaTeX (capacitance printed as '10 F mu', subscripts/fractions displaced). Options were read as: (1) nu_0 = nu = 50 Hz, (2) nu_0 = nu = 50/pi Hz, (3) nu_0 = 50 Hz and nu = 50/pi Hz, (4) nu_0 = 100 Hz and nu = 100/pi Hz. Answer depends on that reconstruction.",
+  "b6_agrees_with_key": true
+}

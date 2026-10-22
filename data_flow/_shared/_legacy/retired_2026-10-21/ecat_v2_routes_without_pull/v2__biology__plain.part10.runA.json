@@ -1,0 +1,177 @@
+{
+  "group": "v2__biology__plain.part10",
+  "ratings": [
+    {
+      "question_id": "2015_A#q103",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "structure_function",
+      "concept": "Graafian follicle layers: the zona pellucida is an acellular glycoprotein coat around the oocyte",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Names the next layer out. The granulosa is a sheet of living cells, so it is not the acellular one."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "Names the outer wall of the same follicle. The theca interna is a cell layer too."
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "4",
+          "route": "Names the ovarian tissue the follicle sits in. Stroma is not one of the follicle's own layers."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored fact about follicle anatomy, demonstrated by option 1 \"Zona pellucida\" being the only one of the four that is not a cell layer.",
+      "note": "content_shape is structure_function because what is tested is a property (acellular, glycoprotein) that follows from the structure, and section 3's tie-break assigns biology's structure-to-property move to structure_function. No elimination recorded: the only fact that strikes options out is the answer itself."
+    },
+    {
+      "question_id": "2015_A#q104",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Mendel's seven pea characters: pod shape and pod colour are on the list, pod length is not",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Answers \"which did he use\". Flower position (axial or terminal) is one of the seven characters."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "Answers \"which did he use\". Seed colour (yellow or green) is one of the seven characters."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Answers \"which did he use\". Seed shape (round or wrinkled) is one of the seven characters."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored list checked against a negated task, demonstrated by the stem's \"did not use\" with options 1, 2 and 4 all naming characters from Mendel's seven.",
+      "note": "The pod character Mendel used was its shape, inflated or constricted; the key swaps that for pod length."
+    },
+    {
+      "question_id": "2015_A#q105",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Parthenocarpy: fruit set without fertilisation, with banana as the standard example",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "3",
+          "route": "Apple is the textbook answer to \"which is a false fruit\". That is about the thalamus forming the flesh, not about fruit set without fertilisation."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored example, demonstrated by option 1 \"Banana\" being the fruit the source names for parthenocarpy.",
+      "note": "No tag on options 2 and 4. Brinjal is simply another seeded fruit and I could not name a device for it; jackfruit is the stock example of a composite fruit in some editions, which would make it the same device as option 3, but I could not confirm that wording from the question alone, so it is left untagged rather than tagged on a guess."
+    },
+    {
+      "question_id": "2015_A#q106",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "process",
+      "concept": "Micro- and megasporogenesis: both are meiotic divisions, one in the anther and one in the ovule",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "1",
+          "route": "True of megasporogenesis only. Microsporogenesis happens in the anther, not the ovule."
+        },
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "True of microsporogenesis only. Megasporogenesis happens in the ovule, not the anther."
+        },
+        {
+          "label": "wrong_site_or_stage",
+          "option": "3",
+          "route": "Stops at the spore and calls it a gamete. Gametes come later, after the spore divides into a gametophyte."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires the one fact shared by both named processes, demonstrated by the stem joining \"microsporogenesis and megasporogenesis\" so that option 1 \"Occur in ovule\" and option 2 \"Occur in anther\" each hold for only one of them.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q107",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "definition_term",
+      "concept": "Codominance: both alleles are expressed in the heterozygote, as in the AB blood group",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Gives the definition of complete dominance. That is the case where one allele masks the other, not where both show."
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "3",
+          "route": "Describes linkage, which is about where genes sit on a chromosome. The stem asked how two alleles of one gene behave."
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "Turns \"both expressed\" into \"both recessive\". Codominance is the opposite: neither allele is hidden."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires separating codominance from the neighbouring allele relationships, demonstrated by option 2 \"One allele dominant on the other\" being the definition of complete dominance offered alongside it.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q108",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "structure_chemical",
+      "concept": "Chitin is a polymer of N-acetyl glucosamine",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Names the sugar polymers of cartilage. Keratan and chondroitin sulphate build vertebrate matrix, not arthropod cuticle."
+        },
+        {
+          "label": "look_alike_term",
+          "option": "3",
+          "route": "Drops the acetyl group from the name. Chitin's unit is N-acetyl glucosamine, not plain D-glucosamine."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored fact about a biomolecule's repeating unit, demonstrated by option 4 \"N-acetyl glucosamine\" differing from option 3 \"D-glucosamine\" only by the acetyl group.",
+      "note": "No tag on option 1. Lipoglycans are a real class of molecule, but I could not name a route from the stem's chitin to them, so it is left untagged."
+    }
+  ],
+  "group_note": "All six are plain_mcq: a question with four short answers, no lettered block, no list and no scheme, so E1 is the same across the group and the reader's grouping on structure=plain holds for every member. All six are also single_step, because each turns on one fact or one claim with no result carried forward. The demand axis is recall for five of them; q107 alone is concept_discrimination, and the stated difference is that its three wrong options are the definitions of three neighbouring allele relationships (complete dominance, linkage, mutual recessiveness), so the live decision is between concepts rather than retrieval of one fact. E2 splits on the options alone, not on the subject matter: q103, q104, q105 and q108 offer single names or terms (name_or_identify), while q106 and q107 offer whole claims to be graded (pick_correct_statement). Content shapes differ because the material differs, and each is paired with a concept a student could revise. Traps were written only where one option can be tied to one named mis-step. The recurring device is an option carrying a true fact about a neighbouring member of the same family: another follicle layer in q103, another allele relationship in q107, another structural polysaccharide in q108. q104 is the only negated task and therefore the only one carrying true_statement_trap, once per true character. Three options were deliberately left untagged (q105 options 2 and 4, q108 option 1) because no mis-step I could name lands on them; each is recorded in that question's note. No trap sits on an official answer, and no option carries two traps."
+}

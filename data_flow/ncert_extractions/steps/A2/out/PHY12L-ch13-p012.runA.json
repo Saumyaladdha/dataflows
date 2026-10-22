@@ -1,0 +1,33 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The age of the sun is about 5×10⁹ y and it is estimated that there is enough hydrogen in the sun to keep it going for another 5 billion years. After that, the hydrogen burning will stop and the sun will begin to cool and will start to collapse under gravity, which will raise the core temperature. The outer envelope of the sun will expand, turning it into the so called red giant.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "13.7.3  Controlled thermonuclear fusion"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The natural thermonuclear fusion process in a star is replicated in a thermonuclear fusion device. In controlled fusion reactors, the aim is to generate steady power by heating the nuclear fuel to a temperature in the range of 10⁸ K. At these temperatures, the fuel is a mixture of positive ions and electrons (plasma). The challenge is to confine this plasma, since no container can stand such a high temperature. Several countries around the world including India are developing techniques in this connection. If successful, fusion reactors will hopefully supply almost unlimited power to humanity."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 13.4 Answer the following questions:\n(a) Are the equations of nuclear reactions (such as those given in Section 13.7) ‘balanced’ in the sense a chemical equation (e.g., 2H₂ + O₂→ 2 H₂O)  is? If not, in what sense are they balanced on both sides?\n(b) If both the number of protons and the number of neutrons are conserved in each nuclear reaction, in what way is mass converted into energy (or vice-versa) in a nuclear reaction?\n(c) A general impression exists that  mass-energy interconversion takes place only in nuclear reaction and never in chemical reaction. This is strictly speaking, incorrect. Explain.\nSolution\n(a) A chemical equation is balanced in the sense that the number of atoms of each element is the same on both sides of the equation. A chemical reaction merely alters the original combinations of atoms. In a nuclear reaction, elements may be transmuted. Thus, the number of atoms of each element is not necessarily conserved in a nuclear reaction. However, the number of protons and the number of neutrons are both separately conserved in a nuclear reaction. [Actually, even this is not strictly true in the realm of very high energies – what is strictly conserved is the total charge and total ‘baryon number’. We need not pursue this matter here.]\nIn nuclear reactions (e.g., Eq. 13.10), the number of protons and the number of neutrons are the same on the two sides of the equation.\n(b) We know that the binding energy of a nucleus gives a negative contribution to the mass of the nucleus (mass defect). Now, since proton number and neutron number are conserved in a nuclear reaction, the total rest mass of neutrons and protons is the same on either side of a reaction. But the total binding energy of nuclei on the left side need not be the same as that on the right hand side. The difference in these binding energies appears as energy released or absorbed in a nuclear reaction. Since binding energy"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "317",
+    "Nuclei",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read page 11 of this chapter immediately before: it ended with a complete sentence ('...in Fig. 13.1 cannot be so produced.') and this page opens a new indented paragraph ('The age of the sun is about 5×10⁹ y...'), so first_block_continues_from_previous is false on that direct evidence. The shaded Example 13.4 box runs from roughly [127, 906, 1208, 2030] to the foot of the page and breaks mid-sentence at 'Since binding energy', so last_block_continues_on_next is true and block 4 carries on at the top of page 13. The box contains no display equations — the chemical equation 2H₂ + O₂→ 2 H₂O is set inline — so it is transcribed in full rather than marked needs_special; there are no tables or figures on this page. The vertical blue side tab reading 'EXAMPLE 13.4' is box decoration, not prose, and is not blocked (it is not a running header, so it is not in the removed list); the text layer emits it out of order, near the very end. Text-layer/image notation discrepancies, taken from the image: subscripts and superscripts are dropped ('5×109' -> 5×10⁹, '108 K' -> 10⁸ K, '2H2 + O2' -> 2H₂ + O₂, '2 H2O' -> 2 H₂O) and the reaction arrow → is emitted as '®'. Italics ('red giant', the bold 'Example'/'Solution' labels) are not preserved."
+}

@@ -1,0 +1,228 @@
+{
+  "question_id": "Q-000005",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "option_map": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "merged_from": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "d1_chapter_ids": {
+      "step": "D1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "d1_why": {
+      "step": "D1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "d1_confidence": {
+      "step": "D1",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:51",
+    "E2:72"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Which of the following reactions will NOT give primary amine as the product?",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$\\mathrm{CH_3CONH_2} \\rightarrow \\mathrm{Br_2}\\,/\\,\\mathrm{KOH}$ Product",
+    "2": "$\\mathrm{CH_3CN} \\rightarrow$ (i) $\\mathrm{LiAlH_4}$, (ii) $\\mathrm{H_3O^+}$ Product",
+    "3": "$\\mathrm{CH_3NC} \\rightarrow$ (i) $\\mathrm{LiAlH_4}$, (ii) $\\mathrm{H_3O^+}$ Product",
+    "4": "$\\mathrm{CH_3CONH_2} \\rightarrow$ (i) $\\mathrm{LiAlH_4}$, (ii) $\\mathrm{H_3O^+}$ Product"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [
+    "NOT"
+  ],
+  "b4_text_layer_sanitized": "51\nWhich of the following reactions will NOT give primary amine as the product?\n(1)\nCH₃CONH₂ → Br₂ / KOH Product\n(2)\nCH₃CN →(i) LiAlH₄, (ii) H₃O⁺ Product\n(3)\nCH₃NC →(i) LiAlH₄, (ii) H₃O⁺ Product\n(4)\nCH₃CONH₂ →(i) LiAlH₄, (ii) H₃O⁺ Product\n",
+  "b4_script_options": {
+    "1": "CH₃CONH₂ → Br₂ / KOH Product",
+    "2": "CH₃CN →(i) LiAlH₄, (ii) H₃O⁺ Product",
+    "3": "CH₃NC →(i) LiAlH₄, (ii) H₃O⁺ Product",
+    "4": "CH₃CONH₂ →(i) LiAlH₄, (ii) H₃O⁺ Product"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "b6_answer": "3",
+  "b6_reason": "LiAlH4 reduction of an isocyanide (CH3NC) gives a secondary amine (CH3NHCH3), not a primary amine; the other three routes (Hofmann degradation of the amide, and LiAlH4 reduction of the nitrile or the amide) all give primary amines.",
+  "b6_working": "1: CH3CONH2 --Br2/KOH--> CH3NH2 (primary, Hofmann degradation). 2: CH3CN --LiAlH4/H3O+--> CH3CH2NH2 (primary). 3: CH3NC --LiAlH4/H3O+--> CH3NHCH3 (secondary amine, via isocyanide reduction mechanism inserting the carbon between the two N-bound carbons). 4: CH3CONH2 --LiAlH4/H3O+--> CH3CH2NH2 (primary). Only option 3 fails to give a primary amine.",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true,
+  "subject": "Chemistry",
+  "branch": "organic",
+  "option_map": {
+    "Q-000014": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4"
+    }
+  },
+  "merged_from": [
+    "Q-000014"
+  ],
+  "d1_chapter_ids": [
+    "CHE12-CH09"
+  ],
+  "d1_why": "Tests preparation of amines: Hofmann bromamide reaction, reduction of nitriles and amides give primary amines, while reduction of the isocyanide CH3NC (the correct answer) gives a secondary amine.",
+  "d1_confidence": "high"
+}

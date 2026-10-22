@@ -1,0 +1,141 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Therefore, n/V is concentration expressed  in mol/m3",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "If concentration c, is in mol/L or mol/dm3, and p is in bar then p = cRT,"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "We can also write p = [gas]RT."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Here, R= 0.0831 bar litre/mol K"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "At constant temperature, the pressure of the gas is proportional to its concentration i.e., p ∝ [gas]"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "For reaction in equilibrium H2(g) +  I2(g) ⇌ 2HI(g)"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "We can write either"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 750, 875, 972],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 984, 875, 1163],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Therefore,"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1208, 875, 1419],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "In this example, Kp = Kc i.e., both equilibrium constants are equal. However, this is not always the case. For example in reaction N2(g)  +  3H2(g) ⇌ 2NH3(g)"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1622, 875, 1915],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [899, 284, 1550, 451],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Similarly, for a general reaction"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [899, 513, 1289, 549],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [899, 554, 1550, 923],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "where ∆n = (number of moles of gaseous products) – (number of moles of gaseous reactants) in the balanced chemical equation."
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "It is necessary that while calculating the value of Kp, pressure should be expressed in bar because standard state for pressure is 1 bar. We know from Unit 1 that :"
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "1pascal, Pa=1Nm–2, and 1bar = 105 Pa"
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "Kp values for a few selected reactions at different temperatures are  given in Table 6.5"
+    },
+    {
+      "n": 22,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [899, 1330, 1550, 1724],
+      "text": ""
+    },
+    {
+      "n": 23,
+      "kind": "box",
+      "text": "Problem 6.3 PCl5, PCl3 and Cl2 are at equilibrium at 500 K and having concentration 1.59M PCl3, 1.59M Cl2 and 1.41 M PCl5.",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["178", "CHEMISTRY", "chemistry", "2024-25"],
+  "note": "Two-column page; left column read before right. This is the most equation-dense page of the chapter: the text layer for all the displayed Kc/Kp derivations is reduced to loose fragments of digits and symbols ('Kc HI g H g I g = ( ) 2 2 2 or K p p p c HI H I ...'), so every displayed derivation is given as an equation block with a bbox and left for the special transcriber rather than guessed at. Block 9's bbox opens with the printed words 'Further, since' because the first of its three pressure relations is set on the same line; likewise block 14 covers the right column's continuation '=' line together with the numbered result (6.14). previous_page_last_block was absent from the input (null), so I judged continuation against the page 10 output I had just written myself: page 10 ended with the complete sentence naming the ideal-gas symbols, and this page opens with a fresh 'Therefore,', so first_block_continues_from_previous is false. Block 22's bbox includes the Table 6.5 caption. last_block_continues_on_next is true because the page ends mid-box: the pink Problem 6.3 panel breaks off after the data, with the question and solution still to come."
+}

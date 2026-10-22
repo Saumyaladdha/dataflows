@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/D6.json",
+  "title": "D6 agent output (d6-status-note-writer)",
+  "description": "Section 12/D6 'Agent output' line and .claude/agents/d6-status-note-writer.md's worked output shape: {\"syllabus_status\", \"note_type\", \"reason_note\", \"quoted_lines\": [{\"edition\",\"passage_id\",\"text\"}]}. IMPORTANT split of responsibility (spec 12/D6 Worker line): the SCRIPT decides `syllabus_status` by the rule ladder 0/1/2/3/3b/4 and hands it to the agent in the work input; the agent only WRITES THE NOTE. So `syllabus_status` here must echo the script's decision unchanged — scripts/checks/D6.py fails the output if it does not. `note_type` is constrained by the status (the script passes the legal set as `allowed_note_types`), the template-shape check and the 'every quoted line exists in the edition it names' check also live in scripts/checks/D6.py, since both need the per-item input context. `note` is optional and carries Universal rule 7's 'if the input looks wrong, say so in note' — added deliberately because its absence from schemas/D1.json/D2.json was a real bug that silently rejected the very first real D1 run (docs/OPEN_QUESTIONS.md, 2026-10-12).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["syllabus_status", "note_type", "reason_note", "quoted_lines"],
+      "additionalProperties": false,
+      "properties": {
+        "syllabus_status": {
+          "type": "string",
+          "enum": ["latest_ncert", "lab_manual", "deleted_content", "outside_ncert"],
+          "description": "Must equal the status the SCRIPT already decided and passed in the input (config/allowed_values.yaml syllabus_status)."
+        },
+        "note_type": {
+          "type": "string",
+          "enum": ["same_both", "written_differently", "answer_changed", "deleted", "outside", "outside_rules", "lab_manual"],
+          "description": "One of the seven reason-note templates (spec 3.1, config/allowed_values.yaml note_type). The agent file's own Allowed values list omits `answer_changed` because only D7 can produce it (spec 12/D7: 'note type becomes answer_changed'); it is allowed here so the same schema validates a D7-rewritten note."
+        },
+        "reason_note": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The student-facing note, in its note_type's exact template from spec 3.1, quoting lines exactly. Template shape is checked in scripts/checks/D6.py."
+        },
+        "quoted_lines": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["edition", "passage_id", "text"],
+            "additionalProperties": false,
+            "properties": {
+              "edition": {
+                "type": "string",
+                "enum": ["L", "O", "M"],
+                "description": "Which edition this line is copied from: L = latest (reprint 2026-27), O = the last edition before rationalisation, M = lab manual (spec 3 Core concepts / 6.1 book-id letters)."
+              },
+              "passage_id": { "type": "string", "minLength": 1 },
+              "text": { "type": "string", "minLength": 1 }
+            }
+          },
+          "description": "Every line quoted anywhere in reason_note, each tagged with the edition it came from. May legitimately be empty only for note_type `outside` (whose template quotes nothing)."
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

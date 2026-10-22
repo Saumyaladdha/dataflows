@@ -1,0 +1,154 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "POINTS TO PONDER"
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "1. In considering motion of an object under the gravitational influence of another object the following quantities are conserved:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "(a)  Angular momentum",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "(b)  Total mechanical energy",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Linear momentum is not conserved",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "2. Angular momentum conservation leads to Kepler’s second law. However, it is not special to the inverse square law of gravitation. It holds for any central force.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "3. In Kepler’s third law (see Eq. (7.1) and  T2 = KS R3. The constant KS is the same for all planets in circular orbits. This applies to satellites orbiting the Earth [(Eq. (7.38)].",
+      "continues_from_previous": false
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "4. An astronaut experiences weightlessness in a space satellite. This is not because the gravitational force is small at that location in space. It is because both the astronaut and the satellite are in “free fall” towards the Earth.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "5. The gravitational potential energy associated with two particles separated by a distance r is given by",
+      "continues_from_previous": false
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        500,
+        718,
+        870,
+        785
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The constant can be given any value. The simplest choice is to take it to be zero. With this choice",
+      "continues_from_previous": false
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        500,
+        858,
+        710,
+        928
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "This choice implies that V →  0 as r →  ∞.  Choosing location of zero of the gravitational energy is the same as choosing the arbitrary constant in the potential energy. Note that the gravitational force is not altered by the choice of this constant.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 14,
+      "kind": "list",
+      "text": "6. The total mechanical energy of an object is the sum of its kinetic energy (which is always positive) and the potential energy. Relative to infinity (i.e. if we presume that the potential energy of the object at infinity is zero), the gravitational potential energy of an object is negative. The total energy of a satellite is negative.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 15,
+      "kind": "list",
+      "text": "7. The commonly encountered expression m g h for the potential energy is actually an approximation to the difference in the gravitational potential energy discussed in the point 6, above.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 16,
+      "kind": "list",
+      "text": "8. Although the gravitational force between two particles is central, the force between two finite rigid bodies is not necessarily along the line joining their centre of mass. For a spherically symmetric body however the force on a particle external to the body is as if the mass is concentrated at the centre and this force is therefore central.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 17,
+      "kind": "list",
+      "text": "9. The gravitational force on a particle inside a spherical shell is zero. However, (unlike a metallic shell which shields electrical forces) the shell does not shield other bodies outside it from exerting gravitational forces on a particle inside. Gravitational shielding is not possible.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 18,
+      "kind": "heading",
+      "text": "EXERCISES"
+    },
+    {
+      "n": 19,
+      "kind": "list",
+      "text": "7.1\tAnswer the following :",
+      "continues_from_previous": false
+    },
+    {
+      "n": 20,
+      "kind": "list",
+      "text": "(a) You can shield a charge from electrical forces by putting it inside a hollow conductor. Can you shield a body from the gravitational influence of nearby matter by putting it inside a hollow sphere or by some other means ?",
+      "continues_from_previous": false
+    },
+    {
+      "n": 21,
+      "kind": "list",
+      "text": "(b) An astronaut inside a small space ship orbiting around the earth cannot detect gravity. If the space station orbiting around the earth has a large size, can he hope to detect gravity ?",
+      "continues_from_previous": false
+    },
+    {
+      "n": 22,
+      "kind": "list",
+      "text": "(c) If you compare the gravitational force on the earth due to the sun to that due to the moon, you would find that the Sun’s pull is greater than the moon’s pull. (you can check this yourself using the data available in the succeeding exercises). However, the tidal effect of the moon’s pull is greater than the tidal effect of sun. Why ?",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "GRAVITATION",
+    "141",
+    "2024-25"
+  ],
+  "note": "Single-column page: a bordered POINTS TO PONDER panel, then the start of the EXERCISES section. previous_page_last_block was null, but I read page 14 of this chapter directly before: its SUMMARY panel closed at item 10 and the summary table below it was complete, and this page opens a new POINTS TO PONDER panel, so first_block_continues_from_previous is false on that evidence. The page's last block, exercise 7.1(c), ends complete at 'Why ?', so last_block_continues_on_next is false even though the EXERCISES section itself carries on overleaf with 7.2. As on pages 13-14 I did not collapse the POINTS TO PONDER panel into a single box block, because it contains two display equations that must be left to the special transcriber; its heading, numbered items and sub-items are separate blocks and the displays are needs_special equation blocks (n=10 and n=12, both V = -Gm_1m_2/r forms, the first with '+ constant'), with pixel bboxes on the original 1826x2167 image. Notation discrepancies: the text layer flattens subscripts and superscripts - in block n=7 'T2 = KS R3' is the image's T^2 = K_S R^3 with a subscript S and superscripts 2 and 3, and the equation displays print m_1 m_2 with subscripts; take that notation from the image. The arrow and infinity symbols in block n=13 do survive in the text layer as 'V →  0 as r →  ∞' and match the image. Italic emphasis ('gravitational potential energy' in item 5, 'Gravitational shielding is not possible.' in item 9) and the bold 'not' in block n=5 are lost in plain text but the characters are exact."
+}

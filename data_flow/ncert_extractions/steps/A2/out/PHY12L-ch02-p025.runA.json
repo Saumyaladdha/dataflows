@@ -1,0 +1,120 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Outer region II (region below the plate 2),",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 329, 1166, 400],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In the inner region between the plates 1 and 2, the electric fields due to the two charged plates add up, giving"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 502, 1166, 578],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The direction of electric field is from the positive to the negative plate."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Thus, the electric field is localised between the two plates and is uniform throughout. For plates with finite area, this will not be true near the outer boundaries of the plates. The field lines bend outward at the edges — an effect called ‘fringing of the field’. By the same token, σ will not be strictly uniform on the entire plate. [E and σ are related by Eq. (2.35).] However, for d2 << A, these effects can be ignored in the regions sufficiently far from the edges, and the field there is given by Eq. (2.41). Now for uniform electric field, potential difference is simply the electric field times the distance between the plates, that is,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 972, 1166, 1053],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The capacitance C of the parallel plate capacitor is then"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1107, 1166, 1183],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "which, as expected, depends only on the geometry of the system. For typical values like A = 1 m2, d = 1 mm, we get"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1274, 1166, 1355],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "(You can check that if 1F= 1C V–1 = 1C (NC–1m)–1 = 1 C2 N–1m–1.) This shows that 1F is too big a unit in practice, as remarked earlier. Another way of seeing the ‘bigness’ of 1F is to calculate the area of the plates needed to have C = 1F for a separation of, say 1 cm:"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1512, 1166, 1598],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "which is a plate about 30 km in length and breadth!"
+    },
+    {
+      "n": 15,
+      "kind": "heading",
+      "text": "2.13  EFFECT OF DIELECTRIC ON CAPACITANCE"
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "With the understanding of the behaviour of dielectrics in an external field developed in Section 2.10, let us see how the capacitance of a parallel plate capacitor is modified when a dielectric is present. As before, we have two large plates, each of area A, separated by a distance d. The charge on the plates is ±Q, corresponding to the charge density ±σ (with σ = Q/A). When there is vacuum between the plates,"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1944, 340, 2036],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1285, 648, 1409, 718],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "box",
+      "text": "Factors affecting capacitance, capacitors in action\nInteractive Java tutorial\nhttp://micro.magnet.fsu.edu/electromag/java/capacitance/"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "69", "Reprint 2026-27"],
+  "note": "Blocks 18-19 are the rotated right-margin feature (small 'PHYSICS' logo mark plus its weblink caption); listed after the main text column per left-column-first reading order. Block 18 is the logo graphic, marked needs_special. The text layer encodes the Symbol-font sigma as the Latin letter 's'; where the page image plainly shows the Greek letter (blocks 6 and 16) I transcribed sigma as seen on the image. Superscripts are flattened in the text layer and kept as plain characters (e.g. 'd2 << A' is d-squared, 'A = 1 m2' is square metres, '1 C2 N–1m–1' carries superscripts on the page); the special transcriber should re-read these from the image if exact notation matters. previous_page_last_block was null even though this is page 25, so first_block_continues_from_previous was judged from the page itself: it opens a new sentence ('Outer region II ...'), so false, although the Outer-region enumeration itself begins on the previous page. last_block_continues_on_next is true because the final main-column block is an unnumbered displayed equation (E0 = sigma/epsilon0) ending the sentence 'When there is vacuum between the plates,' with no terminating punctuation and no equation number, so the sentence runs on to the next page. A faint diagonal '(c) NCERT not to be republished' watermark overlays the page and was not transcribed."
+}

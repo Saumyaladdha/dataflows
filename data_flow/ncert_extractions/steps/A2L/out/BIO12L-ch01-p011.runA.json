@@ -1,0 +1,73 @@
+{
+  "page_kind": "ordinary",
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1654,
+    "height_px": 2339,
+    "body_text_size_px": 20.0,
+    "text_block": [0.0641, 0.1018, 0.6705, 0.8427],
+    "fill": 0.94,
+    "columns": [
+      {"id": "full", "x0": 0.0641, "x1": 0.6705},
+      {"id": "left", "x0": 0.0641, "x1": 0.4407},
+      {"id": "right", "x0": 0.4758, "x1": 0.8628}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 0.7563, 0.0359],
+     "column": "full", "size_rel": 1.0, "align": "left", "indent": 0.0,
+     "space_before": 0.0, "fill": "#4a7435", "text_color": null, "face": null, "font": null},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.7721, 0.0, 0.9571, 0.0906],
+     "column": "right", "size_rel": 1.0, "indent": 0.0,
+     "space_before": 0.0, "fill": "#725420", "text_color": null, "face": null, "font": null},
+
+    {"n": null, "role": "running_header", "bbox": [0.0653, 0.0714, 0.3785, 0.0782],
+     "column": "full", "size_rel": 0.8, "size_pt": 8.0, "align": "left", "indent": 0.0,
+     "space_before": 0.0355, "fill": null, "text_color": "#707072",
+     "face": "sans", "font": "sans"},
+
+    {"n": 1, "role": "paragraph", "bbox": [0.0641, 0.1018, 0.4407, 0.3664],
+     "column": "left", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.0235, "fill": null, "text_color": "#1f1f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": 3, "role": "figure", "bbox": [0.477, 0.1013, 0.8615, 0.4703],
+     "column": "right", "size_rel": 1.0, "align": "center", "indent": 0.0,
+     "space_before": 0.0107, "fill": null, "text_color": null, "face": null, "font": null},
+
+    {"n": 4, "role": "figure_caption", "bbox": [0.4758, 0.487, 0.8628, 0.5327],
+     "column": "right", "size_rel": 0.9, "size_pt": 9.3, "align": "justify", "indent": 0.0,
+     "space_before": 0.0167, "fill": "#fdf1e1", "text_color": "#1f1f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": 2, "role": "paragraph", "bbox": [0.0641, 0.3745, 0.6705, 0.8115],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.0081, "fill": null, "text_color": "#1f1f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.0647, 0.8166, 0.6699, 0.8427],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.0051, "fill": null, "text_color": "#1f1f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": null, "role": "page_number", "bbox": [0.8041, 0.7268, 0.9571, 0.7644],
+     "column": "right", "size_rel": 1.45, "size_pt": 14.9, "align": "left", "indent": 0.0206,
+     "space_before": 0.1941, "fill": "#f8931f", "text_color": "#ffffff",
+     "face": "sans", "font": "sans"},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.8041, 0.7678, 0.9571, 0.773],
+     "column": "right", "size_rel": 1.0, "indent": 0.0,
+     "space_before": 0.0034, "fill": "#f8931f", "text_color": null, "face": null, "font": null},
+
+    {"n": null, "role": "running_header", "bbox": [0.4317, 0.9012, 0.5266, 0.9102],
+     "column": "full", "size_rel": 0.75, "size_pt": 7.5, "align": "center", "indent": 0.0,
+     "space_before": 0.0586, "fill": null, "text_color": "#000000",
+     "face": "sans", "font": "sans"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.1953, 0.4241, 0.6094, 0.7469],
+     "column": "full", "size_rel": 1.0, "indent": 0.0,
+     "space_before": 0.0, "fill": null, "text_color": null, "face": null, "font": null}
+  ],
+  "note": "PURE A4 SCAN, no text layer; every number here is measured off the 1654x2339 px PNG (200 dpi embedded) with PIL/numpy, so this file is the only source of geometry for this page. page_kind is an ORDINARY body page (recto, folio 13), not an opener. MEASURE: the page's body measure is x 107-1108 px = 0.0647-0.6700 (column 'full', 1001 px / 5.01 in wide). Beside Figure 1.10 the measure NARROWS to x 106-728 px = 0.0641-0.4401 (column 'left', 622 px / 3.11 in) - a 62% measure - and it WIDENS back to the full 1001 px below the caption. The narrow measure runs y 0.102-0.553; the wide measure resumes at y 0.561 (first wide line top y=1313 px) and runs to the foot. The figure column ('right', x 787-1426 px = 0.4758-0.8628) OVERHANGS the body measure by 318 px into the wide outer margin - the figure and its caption are 0.19 of page width wider on the right than any line of prose. FIGURE: artwork ink box x 789-1424, y 237-1099 px; CAPTION: tinted panel x 787-1426, y 1139-1245 px, fill #fdf1e1 sampled from its flat interior at (1400,1180); the gap between artwork foot and caption top is 40 px = 0.017 of page height. The caption is NOT a free-floating label: its tint panel is flush with the artwork's left and right edges and sits immediately below it. Caption sets 'Figure 1.10' in bold serif flush at x=0.485 with its two continuation lines HANGING-INDENTED to x=0.593; element-level indent is therefore reported 0.0. BLOCK 2 SPANS BOTH MEASURES: A2 block n=2 ('Pollination by water...') starts in the narrow 'left' measure (y 0.3745-0.5533, 11 lines) and continues in the 'full' measure (y 0.5613-0.8115, 15 lines); it is listed once with column 'full' and a bbox covering both, because the allowed column values cannot express a wrap. A renderer must wrap it around the right-hand figure, not set it at one width. All three paragraphs (n=1,2,5) are flush-left at the column edge with a FIRST-LINE indent of 52 px = 0.031 of page width; element indent is 0.0 because the block's left edge is not inset. body_text_size_px=20.0 is the cap-to-baseline height measured on four body lines (tops 238/278/318/955, baselines 258/298/338/975); body leading is 39.8 px (0.0170 of page height). size_pt values are DERIVED from the embedded 200 dpi assuming cap-height = 0.70 em (0.72 for the sans faces) - size_rel is the measured, trusted number; body type derives to about 10.3 pt. FURNITURE: dark-green header band #4a7435 bleeds off the left edge, x 0-1251 px, y 0-84 px (it sits at the very top of this scan, higher than the 0.07-0.11 band of other chapters). Top-right corner device (brown panel #725420 x 1429-1582, orange stripe #f4941f x 1400-1426, bright-green leaf #9fc33e and black human-figure mark x 1277-1461) is reported as ONE decorative_image at x 1277-1583, y 0-212 with the brown panel's fill. Folio '13' is white sans-bold inside an orange #f8931f box x 1330-1582, y 1700-1787, with a separate thin orange bar x 1330-1582, y 1796-1807 reported as footer_rule; both sit in the outer margin BEYOND every text column, assigned column 'right' only because that is the nearest allowed value. 'Reprint 2026-27' at x 714-870, y 2108-2128 is a sans running FOOT line, reported with role running_header because the allowed-value list has no footer-text role. The last element is NCERT's faint diagonal 'not to be republished' WATERMARK: the bbox given (0.1953,0.4241,0.6094,0.7469) is only the dense core that could be separated from text antialiasing; its faint tails extend further up-right and down-left and could not be measured - it is an overlay, not in the vertical flow, so its space_before is 0.0 and a consumer should drop it. SPACE_BEFORE for side-by-side elements is measured against the element vertically above it in its own column, not against the previous entry in reading order. page.fill 0.94 is AREA coverage of the text block (prose + the parts of figure and caption that fall inside it); vertical coverage is 0.99 - the page is set full to the foot of its block, with the only real break the 18 px between the narrow and wide measures. text_block is the body-type rectangle only; the figure and caption overhang it to x=0.8628. Both 'face' and 'font' keys carry the same value (the brief names it 'font', the instruction named it 'face'). No element could not be placed; all five A2 blocks were matched by position with high confidence (n=4 is the caption, which A2 kinded 'paragraph')."
+}

@@ -1,0 +1,49 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 21.5,
+    "columns": [
+      {"id": "left", "x0": 0.123, "x1": 0.488},
+      {"id": "right", "x0": 0.513, "x1": 0.878}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "running_header", "bbox": [0.1263, 0.0862, 0.2703, 0.0950],
+     "column": "left", "size_rel": 0.75, "align": "left", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8623, 0.0862, 0.8766, 0.0950],
+     "column": "right", "size_rel": 0.75, "align": "right", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "table_caption", "bbox": [0.2983, 0.1197, 0.7029, 0.1326],
+     "column": "full", "size_rel": 1.05, "align": "center", "font": "sans",
+     "text_color": "#00adef"},
+    {"n": 1, "role": "table", "bbox": [0.1251, 0.1399, 0.8754, 0.2766],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif",
+     "fill": "#ffe4b8", "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.1257, 0.2890, 0.4863, 0.3954],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "section_heading", "bbox": [0.1257, 0.4096, 0.3880, 0.4197],
+     "column": "left", "size_rel": 1.05, "align": "left", "font": "sans",
+     "text_color": "#00adef"},
+    {"n": 4, "role": "paragraph", "bbox": [0.1251, 0.4294, 0.4863, 0.5706],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "figure", "bbox": [0.1509, 0.5766, 0.4617, 0.6995],
+     "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.1903, 0.7055, 0.4229, 0.7170],
+     "column": "left", "size_rel": 0.9, "align": "center", "font": "serif-italic",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "paragraph", "bbox": [0.1234, 0.7271, 0.4874, 0.9165],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 7, "role": "box", "bbox": [0.5149, 0.2890, 0.8771, 0.9151],
+     "column": "right", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "fill": "#cbe7d3", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4771, 0.9550, 0.5229, 0.9633],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif",
+     "text_color": "#221f1f"}
+  ],
+  "note": "Two-column body page with a FULL-WIDTH table across the top: Table 2.1 (block 1) spans both columns at y 0.1399-0.2766, with its cyan caption 'Table 2.1 Properties of Fundamental Particles' centred above it at 0.1197-0.1326. The caption gets n: null because A2 blocked the table with empty text and recorded no caption block. The table is two-toned: header row (y 0.1399-0.1872) is lavender #e0deef and the three data rows (y 0.1872-0.2766) are peach #ffe4b8; `fill` reports the data-row colour, the dominant body fill. Grid rules are thin black at x 0.1257/0.2194/0.3023/0.4560/0.5474/0.6963/0.7846/0.8749. Below the table the page returns to two columns: left holds blocks 2-6 with Fig. 2.4 and its centred caption inside the left column (text resumes beneath, so the figure does not span), right holds the green side box (block 7, fill #cbe7d3) closed by a #00a550 rule at its TOP only (y 0.2890-0.2922) -- the panel runs off the foot of the text area because the box continues onto p006, so there is no closing rule here. No page_header_band, no footer_rule, no rule_bar. Box text is set smaller than the main body (cap height ~19 px vs 21.5), hence size_rel 0.9. The centred '2024-25' at the foot is the reprint stamp, recorded as a running_header."
+}

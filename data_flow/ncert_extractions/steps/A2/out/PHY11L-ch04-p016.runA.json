@@ -1,0 +1,142 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [306, 205, 940, 245],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "From Eq. (4.20a), we obtain"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [306, 300, 680, 370],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Substituting value of N in Eq. (4.20b), we get"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [306, 425, 710, 500],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [306, 545, 940, 645],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Comparing this with Eq. (4.18) we see that maximum possible speed of a car on a banked road is greater than that on a flat road."
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [306, 780, 940, 855],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "At this speed, frictional force is not needed at all to provide the necessary centripetal force. Driving at this speed on a banked road will cause little wear and tear of the tyres. The same equation also tells you that for v < vo, frictional force will be up the slope and that a car can be parked only if tan θ  ≤  µs."
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "Example  4.10  A cyclist speeding at 18 km/h on a level road takes a sharp circular turn of radius 3 m without reducing the speed. The co-efficient of static friction between the tyres and the road is 0.1. Will the cyclist slip while taking the turn?"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Answer   On an unbanked road, frictional force alone can provide the centripetal force needed to keep the cyclist moving on a circular turn without  slipping. If the speed is too large, or if the turn is too sharp (i.e. of too small a radius) or both, the frictional force is not sufficient to provide the necessary centripetal force, and the cyclist slips. The condition for the cyclist not to slip is given by Eq. (4.18) :"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [385, 1615, 610, 1665],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Now, R = 3 m,  g = 9.8 m s-2,  µs = 0.1.  That is, µs R g = 2.94 m2 s-2. v = 18  km/h = 5  m s-1; i.e., v2 = 25  m2 s-2.  The condition is not obeyed. The cyclist will slip while taking the circular  turn."
+    },
+    {
+      "n": 14,
+      "kind": "box",
+      "text": "Example 4.11 A circular racetrack of radius 300 m is banked at an angle of 15°. If the coefficient of friction between the wheels of a race-car and the road is 0.2, what is the (a) optimum speed of the race-car to avoid wear and tear on its tyres, and (b) maximum permissible speed to avoid slipping ?"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Answer  On a banked road, the horizontal component of the normal force and the frictional force contribute to provide centripetal force to keep the car moving on a circular turn without slipping.  At the optimum speed, the normal reaction’s component is enough to provide the needed centripetal force, and the frictional force is not needed.  The optimum speed vo is given by Eq.  (4.22):"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1075, 810, 1345, 845],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Here R  =  300 m,  θ  =  15°,  g  =  9.8  m s-2;  we have"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1075, 925, 1300, 960],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "The maximum permissible speed vmax is given by Eq. (4.21):"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [985, 1060, 1535, 1140],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "heading",
+      "text": "4.11  SOLVING PROBLEMS IN MECHANICS"
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "The three laws of motion that you have learnt in this chapter are the foundation of mechanics. You should now be able to handle a large variety of problems in mechanics.  A typical problem in mechanics usually does not merely involve a single body under the action of given forces. More often, we will need to consider an assembly of different bodies exerting forces on each other. Besides, each body in the assembly experiences the force of gravity.  When trying to solve a problem of this type, it is useful to remember the fact that we can choose any part of the assembly and apply the laws of motion to that part provided  we include all forces on the chosen part due to the  remaining parts of the assembly. We may call the chosen part of the assembly as the system and the remaining part of the assembly (plus any other agencies of forces) as the environment. We have followed the same",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "64",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null even though page is 16, so continuation was judged from the page itself: it opens with displayed equation (4.20b) and the next line reads 'From Eq. (4.20a), we obtain', so the derivation starts on the previous page; first_block_continues_from_previous set true. Decorative example start markers (the solid triangle '⊳' before each Example) and the end-of-answer triangle after blocks 13 and 20 were dropped as ornament, not transcribed as text. Both worked Examples are set in blue tinted boxes and are listed as 'box' blocks; their 'Answer' bodies run outside the tint and are listed as separate paragraph blocks, matching the page layout. Displayed/numbered formulae (4.20b), N = mg/(...), the mg(sinθ+µs cosθ) fraction, (4.21), the For µs = 0 / (4.22) pair, v² ≤ µs R g, vO = (R g tanθ)^1/2, vO = 28.1 m s-1, and the final vmax = ... = 38.1 m s-1 are marked needs_special with bboxes rather than transcribed, because the text layer scrambles their subscripts and superscripts onto separate lines. Inline mathematics inside paragraphs (e.g. 'µs R g = 2.94 m2 s-2') is copied as the text layer holds it, so sub/superscripts appear flattened. Bounding boxes are in pixels of the 1825x2164 page image. The section side-heading '4.11  SOLVING PROBLEMS IN MECHANICS' appears once in the text layer on this page (no outline-font repetition here) and is placed in its true reading-order position in the right column."
+}

@@ -1,0 +1,29 @@
+{
+  "blocks": [
+    {
+      "n": 2,
+      "corrected_text": "This form of isomerism is known as ‘hydrate isomerism’ in case where water is involved as a solvent. This is similar to ionisation isomerism. Solvate isomers differ by whether or not a solvent molecule is directly bonded to the metal ion or merely present as free solvent moleculesin the crystal lattice. An example is provided by the aqua complex [Cr(H₂O)₆]Cl₃ (violet) and its solvate isomer [Cr(H₂O)₅Cl]Cl₂.H₂O (grey-green).",
+      "fixes": [
+        {"wrong": "[Cr(H2O)6]Cl3", "right": "[Cr(H₂O)₆]Cl₃"},
+        {"wrong": "[Cr(H2O)5Cl]Cl2.H2O", "right": "[Cr(H₂O)₅Cl]Cl₂.H₂O"}
+      ]
+    },
+    {
+      "n": 3,
+      "corrected_text": "Intext Questions\n5.3 Indicate the types of isomerism exhibited by the following complexes and draw the structures for these isomers:\n(i) K[Cr(H₂O)₂(C₂O₄)₂\n(ii) [Co(en)₃]Cl₃\n(iii) [Co(NH₃)₅(NO₂)](NO₃)₂\n(iv) [Pt(NH₃)(H₂O)Cl₂]\n5.4 Give evidence that [Co(NH₃)₅Cl]SO₄ and [Co(NH₃)₅(SO₄)]Cl are ionisation isomers.",
+      "fixes": [
+        {"wrong": "K[Cr(H2O)2(C2O4)2", "right": "K[Cr(H₂O)₂(C₂O₄)₂"},
+        {"wrong": "[Co(en)3]Cl3", "right": "[Co(en)₃]Cl₃"},
+        {"wrong": "[Co(NH3)5(NO2)](NO3)2", "right": "[Co(NH₃)₅(NO₂)](NO₃)₂"},
+        {"wrong": "[Pt(NH3)(H2O)Cl2]", "right": "[Pt(NH₃)(H₂O)Cl₂]"},
+        {"wrong": "[Co(NH3)5Cl]SO4", "right": "[Co(NH₃)₅Cl]SO₄"},
+        {"wrong": "[Co(NH3)5(SO4)]Cl", "right": "[Co(NH₃)₅(SO₄)]Cl"}
+      ]
+    },
+    {"n": 5, "no_change": true},
+    {"n": 6, "no_change": true},
+    {"n": 7, "no_change": true},
+    {"n": 9, "no_change": true}
+  ],
+  "note": "n=2 and n=3 had flattened subscripts in eight formulae, now restored. Judgment call worth flagging: Intext Question 5.3(i) is printed on the page as 'K[Cr(H₂O)₂(C₂O₄)₂' with no closing square bracket — that is how NCERT prints it, so the missing bracket was left exactly as stored rather than 'corrected'. n=9's '(n-1)d, ns, np or ns, np, nd' carries no superscripts on the page (the orbital letters are italic, which is not this step's concern) and is already correct; n=5, n=6, n=7 are prose. The sp³/dsp²/sp³d/sp³d²/d²sp³ exponents on this page are all inside Table 5.2, a table block not given to me. No degree symbols, locants or primes."
+}

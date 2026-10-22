@@ -1,0 +1,72 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "very high input of energy (8 ATP for each NH3 produced). The energy required,\nthus, is obtained from the  respiration of the host cells.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Fate of ammonia: At physiological pH, the ammonia is protonated to form\nNH4\n+ (ammonium) ion. While most of the plants can assimilate nitrate as well\nas ammonium ions, the latter is quite toxic to plants and hence cannot\naccumulate in them. Let us now see how the NH4\n+ is used to synthesise\namino acids in plants. There are two main ways in which this can take place:"
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "(i) Reductive amination : In these processes, ammonia reacts with\nα-ketoglutaric acid and forms glutamic acid as indicated in the\nequation given below :"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        392,
+        698,
+        1526,
+        754
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "(ii) Transamination : It involves the transfer of amino group from one\namino acid to the keto group of a keto acid. Glutamic acid is the main\namino acid from which the transfer of NH2, the amino group takes\nplace and other amino acids are formed through transamination. The\nenzyme transaminase catalyses all such reactions. For example,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        392,
+        968,
+        1526,
+        1177
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The two most important amides – asparagine and glutamine – found in\nplants are a structural part of proteins. They are formed from two amino\nacids, namely aspartic acid and glutamic acid, respectively, by addition\nof another amino group to each. The hydroxyl part of the acid is replaced\nby another NH2\n– radicle. Since amides contain more nitrogen than the\namino acids, they are transported to other parts of the plant via xylem\nvessels. In addition, along  with the transpiration stream the nodules of\nsome plants (e.g., soyabean) export the fixed nitrogen as ureides. These\ncompounds also have a particularly high nitrogen to carbon ratio."
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "SUMMARY"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Plants obtain their inorganic nutrients from air, water and soil. Plants absorb a\nwide variety of mineral elements. Not all the mineral elements that they absorb are\nrequired by plants. Out of the more than 105 elements discovered so far, less than\n21 are essential and beneficial for normal plant growth and development. The\nelements required in large quantities are called macronutrients while those required\nin less quantities or in trace are termed as micronutrients. These elements are\neither essential constituents of proteins, carbohydrates, fats, nucleic acid etc.,"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "204",
+    "BIOLOGY",
+    "2022-23"
+  ],
+  "note": "Used the text layer for prose (matches the image); image used for layout, reading order and equation bboxes. Two boxed equations are needs_special with text left empty per spec: block 4 is the glutamate-dehydrogenase reductive-amination equation, block 6 is the transamination structural equation (its in-figure labels 'Amino-donor' and 'Amino-acceptor' sit inside that bbox). Both render garbled in the text layer, which also lists them out of printed order - the image order was used. Numbered points (i) and (ii) are kind 'list'. The chapter SUMMARY heading starts on this page and its first paragraph runs on to page 12. previous_page_last_block was null, but page 10 was read in this run and its prose ends mid-sentence at '...the ammonia synthesis by nitrogenease requires a', continued here by 'very high input of energy' - judged from a predecessor actually read."
+}

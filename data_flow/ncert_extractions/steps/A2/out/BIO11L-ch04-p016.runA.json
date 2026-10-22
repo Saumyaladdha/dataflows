@@ -1,0 +1,38 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "SUMMARY",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The basic fundamental features such as level of organisation, symmetry,\ncell organisation, coelom, segmentation, notochord, etc., have enabled us\nto broadly classify the animal kingdom. Besides the fundamental features,\nthere are many other distinctive characters which are specific for each\nphyla or class."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Porifera includes multicellular animals which exhibit cellular level of\norganisation and have characteristic flagellated choanocytes. The\ncoelenterates have tentacles and bear cnidoblasts. They are mostly aquatic,\nsessile or free-floating. The ctenophores are marine animals with comb\nplates. The platyhelminths have flat body and exhibit bilateral symmetry.\nThe parasitic forms show distinct suckers and hooks. Aschelminthes are\npseudocoelomates and  include parasitic as well as non-parasitic\nroundworms."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Annelids are metamerically segmented animals with a true coelom.\nThe arthropods are the most abundant group of animals characterised\nby the presence of jointed appendages. The molluscs have a soft body\nsurrounded by an external calcareous shell. The body is covered with\nexternal skeleton made of chitin. The echinoderms possess a spiny skin.\nTheir most distinctive feature is the presence of water vascular system.\nThe hemichordates are a small group of worm-like marine animals. They\nhave a cylindrical body with proboscis, collar and trunk."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Phylum Chordata includes animals which possess a notochord either\nthroughout or during early embryonic life. Other common features\nobserved in the chordates are the dorsal, hollow nerve cord and paired\npharyngeal gill slits. Some of the vertebrates do not possess jaws (Agnatha)\nwhereas most of them possess jaws (Gnathostomata). Agnatha is\nrepresented by the class, Cyclostomata. They are the most primitive\nchordates and are ectoparasites on fishes. Gnathostomata has two super\nclasses, Pisces and Tetrapoda. Classes Chondrichthyes and Osteichthyes\nbear fins for locomotion and are grouped under Pisces. The\nChondrichthyes are fishes with cartilaginous endoskeleton and are marine.\nClasses, Amphibia, Reptilia, Aves and Mammalia have two pairs of limbs\nand are thus grouped under Tetrapoda. The amphibians have adapted\nto live both on land and water. Reptiles are characterised by the presence"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "52",
+    "BIOLOGY",
+    "2024-25"
+  ],
+  "note": "Read from text_layer, cross-checked against the page image. Single-column page, all prose: the SUMMARY heading and four paragraphs, no figures or tables. The chapter summary here is set as plain running text under a centred heading rather than inside a ruled box, so it is blocked as a heading plus paragraphs rather than as a box. previous_page_last_block was null, but I read page 15 myself: it ended with the completed Table 4.2 and this page opens the SUMMARY section, so first_block_continues_from_previous is false. The last block breaks mid-sentence after \"characterised by the presence\", so last_block_continues_on_next is true."
+}

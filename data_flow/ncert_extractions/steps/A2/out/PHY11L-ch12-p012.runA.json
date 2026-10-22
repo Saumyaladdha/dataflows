@@ -1,0 +1,147 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "from a cylinder in a kitchen takes considerable time to diffuse to the other corners of the room. The top of a cloud of smoke holds together for hours. This happens because molecules in a gas have a finite though small size, so they are bound to undergo collisions. As a result, they cannot move straight unhindered; their paths keep getting incessantly deflected.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        211,
+        473,
+        853,
+        1086
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Suppose the molecules of a gas are spheres of diameter d. Focus on a single molecule with the average speed <v>. It will suffer collision with any molecule that comes within a distance d between the centres. In time ∆t, it sweeps a volume πd2 <v> ∆t wherein any other molecule will collide with it (see Fig. 12.7). If n is the number of molecules per unit volume, the molecule suffers nπd2 <v> ∆t  collisions in time ∆t. Thus the rate of collisions is  nπd2 <v> or the time between two successive collisions is on the average,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        216,
+        1528,
+        853,
+        1570
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The average distance between two successive collisions, called the mean free path l, is :"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        216,
+        1625,
+        853,
+        1666
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "In this derivation, we imagined the other molecules to be at rest. But actually all molecules are moving and the collision rate is determined by the average relative velocity of the molecules. Thus we need to replace <v> by <vr> in Eq. (12.38). A more exact treatment gives"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        925,
+        345,
+        1534,
+        397
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Let us estimate l and τ  for air molecules with average speeds  <v> = ( 485m/s). At STP"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        920,
+        478,
+        1534,
+        710
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "As expected, the mean free path given by Eq. (12.40) depends inversely on the number density and the size of the molecules. In a highly evacuated tube n is rather small and the mean free path can be as large as the length of the tube."
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "Example 12.9 Estimate the mean free path for a water molecule in water vapour at 373 K. Use information from Exercises 12.1 and Eq. (12.41) above."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Answer The d for water vapour is same as that of air. The number density is inversely proportional to absolute temperature."
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        925,
+        1228,
+        1534,
+        1288
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        925,
+        1312,
+        1534,
+        1358
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Note that the mean free path is 100 times the interatomic distance ~ 40 Å = 4 × 10-9 m calculated earlier. It is this large value of mean free path that leads to the typical gaseous behaviour. Gases can not be confined without a container."
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Using, the kinetic theory of gases, the bulk measurable properties like viscosity, heat conductivity and diffusion can be related to the microscopic parameters like molecular size. It is through such relations that the molecular sizes were first estimated."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "KINETIC THEORY",
+    "255",
+    "2024-25"
+  ],
+  "note": "Two-column page; blocks 1-6 are the left column, 8-17 the right. Block 7 is one paragraph that breaks across the column boundary (\"...But actually all molecules\" / \"are moving and the collision rate...\") and is joined into a single block, since a column break is not a page break. Fig. 12.7 (block 2) is marked needs_special with a bbox that includes its italic caption; its in-figure labels (v∆t, d, d) are left to the special transcriber. Display equations (12.38)-(12.41) and the two Example 12.9 working lines are marked needs_special; block 10 covers the whole n = ... / Taking, d = ... / τ = ... / and l = ... (12.41) display group, and block 15 is the line \"Hence, mean free path l = 4 × 10^-7 m\" whose lead-in words are inseparable from the display math. Example 12.9's shaded question box is transcribed as a box. Text-layer artefacts recorded, not corrected: superscripts/subscripts flattened (πd2, 10-9, 10 25 m -3), and \"<v_r>\" arrives split across two text-layer lines as \"<v\" + \"r>\", which I joined without a space as \"<vr>\" to match the printed symbol. Stray \"⊳\"/\"◄\" example markers and the trailing figure-label characters \"t d d v\" in the text layer were dropped as figure/furniture. The lower third of the page is blank and the last paragraph ends a complete sentence, so last_block_continues_on_next is false. No substantive text-layer/image disagreement."
+}

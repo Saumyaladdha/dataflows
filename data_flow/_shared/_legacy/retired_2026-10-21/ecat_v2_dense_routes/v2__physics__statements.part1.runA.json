@@ -1,0 +1,39 @@
+{
+  "group": "v2__physics__statements.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q162",
+      "question_type": "statement_i_ii",
+      "format": "pick_correct_statement",
+      "content_shape": "formula_or_law",
+      "concept": "Series R-C circuit on a.c.: a dielectric raises the capacitance, which lowers the reactance 1/(omega C), so the voltage across the capacitor falls and the current rises",
+      "cognitive_demand": "condition_based_reasoning",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "The single fact that inserting mica in place of air raises the capacitance means the two situations cannot behave identically; that strikes out option 1, \"V_a = V_b\", on its own and leaves the three options that assert a difference.",
+      "traps": [
+        {
+          "label": "condition_ignored",
+          "option": "1",
+          "route": "is what you get by dropping the printed condition that distinguishes the two situations - \"When capacitor is air filled\" against \"When capacitor is mica filled\". With the same medium in both, V_a = V_b is exactly right; it is wrong only because the stem specifies different dielectrics"
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "2",
+          "route": "states the comparison the wrong way round: mica raises C, which LOWERS the reactance 1/(omega C) and so lowers the capacitor's share of the voltage, giving V_a greater than V_b. Option 2's \"V_a < V_b\" is what follows if the reactance is taken to rise with capacitance rather than to fall"
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "reverses the comparison for the other quantity the stem names: with mica the impedance is smaller, so the current is LARGER in the mica case, i_a < i_b. The printed \"i_a > i_b\" is the exact reverse of the true current comparison, and the stem's own \"Current through resistor is i\" makes the quantity itself admissible"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a rule applied under a stated condition that changes the outcome, demonstrated by the stem's two printed situations \"When capacitor is air filled\" and \"When capacitor is mica filled\", with the dielectric as the only difference between them.",
+      "note": "A labelling mismatch in our record, recorded rather than tagged (rulebook section 7): the two situations are stored with the labels \"i.\" and \"ii.\" while all four options use the subscripts a and b, so the correspondence between the labels and the subscripts is not printed anywhere in the stored question. It is recoverable - a is the first situation (air) and b the second (mica) - and the printed key, option 3's \"V_a > V_b\", agrees with that reading, since the air-filled capacitor is the one with the larger reactance. The tags are written on that reading and the key is not re-judged; the labels should be repaired to match the options. The figure, figures_agent/2015_A/q162.png, was read: it draws the series R-C loop with an a.c. source and prints \"X_c = 1/c-omega\" above the capacitor. The circuit adds nothing the stem does not state and the printed reactance formula is a solution aid rather than question content, so the figure is decorative here and the question is answerable from its text. E1 is `statement_i_ii`, the two-labelled-item shape; E2 is NOT `judge_two_statements`, because the four options are not the two-statement verdicts but four rival claims about V and i, which is what E2 being read from the options alone requires."
+    }
+  ],
+  "group_note": "This packet holds one question, so there is no second member to judge it against; what the group note can still record is the basis on which it was judged, so that it stays consistent with the other packets of this corpus. (1) The printed shape is two labelled items over four options, which is the two-statement family and not the plain shape - and the two items are SITUATIONS to be reasoned from, not statements to be graded true or false, which is why none of the four options is a truth verdict on item i or item ii. The grouping key for this packet, `structure: statements`, is therefore right about the printing and would be misread if taken to mean a statement-judging question. (2) DEMAND: `condition_based_reasoning` rather than `application`, on the rulebook's own test - remove the phrase \"When capacitor is mica filled\" and a different option (the equality of option 1) becomes correct, which is exactly the case the label is for, and its matching trap, `condition_ignored`, is what option 1 carries. (3) STRUCTURE: `multi_step_dependent`, because each step consumes the one before it - the dielectric raises C, the raised C lowers the reactance, the lowered reactance lowers the capacitor's voltage and raises the current - and none of those can be checked independently of the others. (4) TRAPS: all three wrong options carry a device and each is named with its route. Two of them are the same label, `semantic_reversal`, applied to different quantities: option 2 reverses the voltage comparison and option 4 reverses the current comparison, and the second is not recorded as `wrong_quantity` because the stem itself names the current (\"Current through resistor is i\"), so answering in current is admissible and only the direction of the inequality is wrong. Option 1 is the condition-dropping option. No trap sits on the official answer, option 3. ON THE E1/E2/E3 AXES: E1 is `statement_i_ii`, the exactly-two-labelled-items shape, which is what the packet's `structure: statements` key points at - but the two items are situations to reason from and not statements to grade, so E2 is NOT `judge_two_statements`: read from the options alone, the four are rival claims about V and i, which is `pick_correct_statement`. The figure is decorative and no overlay is recorded. E3 is `formula_or_law`, the reactance relation applied under the stated change of medium."
+}

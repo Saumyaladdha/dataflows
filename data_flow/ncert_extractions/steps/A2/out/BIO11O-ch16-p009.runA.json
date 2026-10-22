@@ -1,0 +1,102 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Proteins, proteoses and peptones (partially hydrolysed proteins) in\nthe chyme reaching the intestine are acted upon by the proteolytic\nenzymes of pancreatic juice as given below:"
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        168,
+        424,
+        1167,
+        552
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Carbohydrates in the chyme are hydrolysed by pancreatic amylase\ninto disaccharides."
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        168,
+        686,
+        1167,
+        780
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Fats are broken down by lipases with the help of bile into di-and\nmonoglycerides."
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        168,
+        893,
+        1167,
+        982
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Nucleases in the pancreatic juice acts on nucleic acids to form\nnucleotides and nucleosides"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        168,
+        1094,
+        1167,
+        1189
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The enzymes  in the succus entericus act on the end products of the\nabove reactions to form the respective simple absorbable forms. These\nfinal steps in digestion occur very close to the mucosal epithelial cells of\nthe intestine."
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        168,
+        1378,
+        1167,
+        1768
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The breakdown of biomacromolecules mentioned above occurs in the\nduodenum region of the small intestine. The simple substances thus\nformed are absorbed in the jejunum and ileum regions of the small\nintestine. The undigested and unabsorbed substances are passed on to\nthe large intestine."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "DIGESTION AND ABSORPTION",
+    "263",
+    "2022-23"
+  ],
+  "note": "Text layer present and matched the image for the prose; copied from the text layer, including the double space the text layer prints in 'The enzymes  in the succus entericus' (block n=9), which I have not normalised. Single-column page. I read page 8 in this run: it ended on the complete sentence 'Sub-mucosal glands (Brunner's glands) also help in this.', and this page opens a new sentence, so first_block_continues_from_previous is false on direct evidence. Five yellow-banded reaction schemes are marked as equation blocks (n=2, 4, 6, 8, 10) with needs_special and empty text; n=10 is the single band holding six reactions (dipeptides, maltose, lactose, sucrose, nucleotides, di/monoglycerides) and is given one bounding box because it is printed as one band. The text layer renders all of these schemes as scrambled fragments with stray arrows and split words (e.g. 'Carboxyp \\n eptidase', 'Glucose +\\nalactose ... G'); that scrambled text all falls inside the equation bounding boxes and so is left to the special transcriber rather than being put in any block text or in the removed list."
+}

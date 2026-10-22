@@ -1,0 +1,66 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "same energy. Photoelectric current is zero when the stopping potential is\nsufficient to repel even the most energetic photoelectrons, with the\nmaximum kinetic energy (Kmax), so that",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [175, 390, 1115, 428],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "We can now repeat this experiment with incident radiation of the same\nfrequency but of higher intensity I2 and I3 (I3 > I2 > I1). We note that the\nsaturation currents are now found to be at higher values. This shows\nthat more electrons are being emitted per second, proportional to the\nintensity of incident radiation. But the stopping potential remains the\nsame as that for the incident radiation of intensity I1, as shown graphically\nin Fig. 11.3. Thus, for a given frequency of the incident radiation, the\nstopping potential is independent of its intensity. In other words, the\nmaximum kinetic energy of photoelectrons depends on the light source\nand the emitter plate material, but is independent of intensity of incident\nradiation."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "11.4.3 Effect of frequency of incident radiation on\nstopping potential"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "We now study the relation between the frequency\nn of the incident radiation and the stopping\npotential V0. We suitably adjust the same\nintensity of light radiation at various frequencies\nand study the variation of photocurrent with\ncollector plate potential. The resulting variation\nis shown in Fig. 11.4. We obtain different values\nof stopping potential but the same value of the\nsaturation current for incident radiation of\ndifferent frequencies. The energy of the emitted\nelectrons depends on the frequency of the\nincident radiations. The stopping potential is\nmore negative for higher frequencies of incident\nradiation. Note from Fig. 11.4  that the stopping\npotentials are in the order V03 > V02 > V01 if the\nfrequencies are in the order n3 > n2 > n1 . This\nimplies that greater the frequency of incident\nlight, greater is the maximum kinetic energy of\nthe photoelectrons. Consequently, we need\ngreater retarding potential to stop them\ncompletely. If we plot a graph between the\nfrequency of incident radiation and the\ncorresponding stopping potential for different\nmetals we get a straight line, as shown in Fig. 11.5."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [795, 960, 1465, 1435],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The graph shows that"
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "(i)\nthe stopping potential V0 varies linearly with\nthe frequency of incident radiation for a given\nphotosensitive material.\n(ii) there exists a certain minimum cut-off\nfrequency n0 for which the stopping potential\nis zero."
+    },
+    {
+      "n": 9,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [795, 1470, 1465, 2005],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "279",
+    "Dual Nature of Radiation\nand Matter",
+    "FIGURE 11.4 Variation of photoelectric current\nwith collector plate potential for different\nfrequencies of incident radiation.",
+    "FIGURE 11.5 Variation of stopping potential V0\nwith frequency n of incident radiation for a\ngiven photosensitive material.",
+    "Reprint 2026-27"
+  ],
+  "note": "first_block_continues_from_previous judged from page 5, which I read myself (it ended \"...emitted from the metal do not have the\"); previous_page_last_block was null. Text-layer notation losses vs image: every \"n\" standing for frequency is the Greek nu in print (n, n0, n1, n2, n3 = nu, nu-sub-0 etc.), and subscripts are flattened (Kmax = K-sub-max, V0/V01/V02/V03, I1/I2/I3). Blocks keep the text-layer characters. Display equation (11.1) \"Kmax = e V0\" is marked needs_special with its equation number. Figure captions are listed as removed since they belong to the figure blocks. The text layer places both figure captions before the section 11.4.3 body text; I placed them with their figures in reading order instead."
+}

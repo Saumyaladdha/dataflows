@@ -1,0 +1,58 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [216, 279, 948, 1183],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "In an external electric field, the positive and negative charges of a non-polar molecule are displaced in opposite directions. The displacement stops when the external force on the constituent charges of the molecule is balanced by the restoring force (due to internal fields in the molecule). The non-polar molecule thus develops an induced dipole moment. The dielectric is said to be polarised by the external field. We consider only the simple situation when the induced dipole moment is in the direction of the field and is proportional to the field strength. (Substances for which this assumption is true are called linear isotropic dielectrics.) The induced dipole moments of different molecules add up giving a net dipole moment of the dielectric in the presence of the external field.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "A dielectric with polar molecules also develops a net dipole moment in an external field, but for a different reason. In the absence of any external field, the different permanent dipoles are oriented randomly due to thermal agitation; so the total dipole moment is zero. When an external field is applied, the individual dipole moments tend  to align with the field. When summed overall the molecules, there is then a net dipole moment in the direction of the external field, i.e., the dielectric is polarised. The extent of polarisation depends on the relative strength of two mutually opposite factors: the dipole potential energy in the external field tending to align the dipoles with the field and thermal energy tending to disrupt the alignment. There may be, in addition, the  ‘induced dipole moment’ effect as for non-polar molecules, but generally the alignment effect is more important for polar molecules.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Thus in either case, whether polar or non-polar, a dielectric develops a net dipole moment in the presence of an external field. The dipole moment per unit volume is called polarisation and is denoted by P. For linear isotropic dielectrics,",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [567, 1663, 1550, 1717],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "where χe is a constant characteristic of the dielectric and is known as the electric susceptibility of the dielectric medium.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "It is possible to relate χe to the molecular properties of the substance, but we shall not pursue that here.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The question is: how does the polarised dielectric modify the original external field inside it? Let us consider, for simplicity, a rectangular dielectric slab placed in a uniform external field E0 parallel to two of its faces. The field causes a uniform polarisation P of the dielectric. Thus",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Physics", "66", "Reprint 2026-27"],
+  "note": "Two-column top section: the FIGURE 2.22 artwork and its caption occupy the left column while body text runs in the right column, so the figure is listed first per left-column-first reading order; the figure bbox covers both panels (a) and (b) plus the caption. Equation (2.37) is marked needs_special; its bbox includes the equation number. The text layer renders the Greek chi of the susceptibility symbol as \"c\" (e.g. \"ce\"); the page image clearly shows χe, so χe was transcribed from the image. previous_page_last_block was null even though page is 22, so continuation from the previous page could not be cross-checked; the first text block begins with a paragraph indent and a fresh sentence, so it was marked as not continuing. A diagonal \"© NCERT not to be republished\" watermark crosses the page; it was not transcribed."
+}

@@ -1,0 +1,56 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "a curve drawn in such a way that the tangent to it at each point is in the direction of the net field at that point. An arrow on the curve is obviously necessary to specify the direction of electric field from the two possible directions indicated by a tangent to the curve. A field line is a space curve, i.e., a curve in three dimensions.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Figure 1.17 shows the field lines around some simple charge configurations. As mentioned earlier, the field lines are in 3-dimensional space, though the figure shows them only in a plane. The field lines of a single positive charge are radially outward while those of a single negative charge are radially inward. The field lines around a system of two positive charges (q, q) give a vivid pictorial description of their mutual repulsion, while those around the configuration of two equal and opposite charges (q, –q), a dipole, show clearly the mutual attraction between the charges. The field lines follow some important general properties:"
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "(i) Field lines start from positive charges and end at negative charges. If there is a single charge, they may start or end at infinity.\n(ii) In a charge-free region, electric field lines can be taken to be continuous curves without any breaks.\n(iii) Two field lines can never cross each other. (If they did, the field at the point of intersection will not have a unique direction, which is absurd.)\n(iv) Electrostatic field lines do not form any closed loops. This follows from the conservative nature of electric field (Chapter 2)."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "1.10  ELECTRIC FLUX"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Consider flow of a liquid with velocity v, through a small flat surface dS, in a direction normal to the surface. The rate of flow of liquid is given by the volume crossing the area per unit time  v dS and represents the flux of liquid flowing across the plane. If the normal to the surface is not parallel to the direction of flow of liquid, i.e., to v, but makes an angle θ with it, the projected area in a plane perpendicular to v is δ dS cos θ. Therefore, the flux going out of the surface dS is v. ˆn dS. For the case of  the electric field, we define an analogous quantity and call it electric flux. We should, however, note that there is no flow of a physically observable quantity unlike the case of liquid flow."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "In the picture of electric field lines described above, we saw that the number of field lines crossing a unit area, placed normal to the field at a point is a measure of the strength of electric field at that point. This means that if",
+      "continues_on_next": true
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        975,
+        290,
+        1530,
+        2000
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "25",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p024 output, which ended '...An electric field line is, in general,', matching this page's opening 'a curve drawn in such a way...', so the first block continues. The page is two columns: all the prose is in the left column and Figure 1.17 (panels a-d with caption) fills the right column top to bottom, so it is read last (n=7). The main prose flow runs on to p026, so the page-level last_block_continues_on_next is true and the flag sits on n=6, the paragraph that is actually cut."
+}

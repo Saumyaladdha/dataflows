@@ -1,0 +1,40 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.124, "x1": 0.485},
+      {"id": "right", "x0": 0.514, "x1": 0.876}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.125, 0.0876, 0.139, 0.0945],
+     "column": "full", "size_rel": 0.73, "align": "left", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.799, 0.0876, 0.876, 0.0945],
+     "column": "full", "size_rel": 0.73, "align": "right", "font": "serif"},
+    {"n": 1, "role": "list", "bbox": [0.125, 0.1193, 0.484, 0.1477],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.124, 0.155, 0.485, 0.2128],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.124, 0.2225, 0.484, 0.311],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "paragraph", "bbox": [0.124, 0.3216, 0.485, 0.9133],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "paragraph", "bbox": [0.514, 0.1197, 0.875, 0.4298],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "paragraph", "bbox": [0.514, 0.4372, 0.874, 0.4963],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 7, "role": "figure", "bbox": [0.552, 0.5032, 0.8354, 0.7073],
+     "column": "right", "size_rel": 1.0, "fill": "#fffbd5"},
+    {"n": null, "role": "figure_caption", "bbox": [0.538, 0.7142, 0.855, 0.7257],
+     "column": "right", "size_rel": 0.95, "align": "center", "font": "serif-italic"},
+    {"n": 8, "role": "figure", "bbox": [0.583, 0.7362, 0.805, 0.8986],
+     "column": "right", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.61, 0.9037, 0.783, 0.9151],
+     "column": "right", "size_rel": 0.95, "align": "center", "font": "serif-italic"},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.9555, 0.523, 0.9628],
+     "column": "full", "size_rel": 0.78, "align": "center", "font": "serif"}
+  ],
+  "note": "Ordinary two-column body page (left 0.124-0.485, right 0.514-0.876); no page_header_band, no rule_bar and no footer_rule are printed on this page. No block runs over the column break here - block 4 ends at the foot of the left column and A2 gave the right column's continuation its own number (block 5), so every block maps to exactly one region. body_text_size_px 20.5 measured cap-to-baseline on left-column prose. Block 7 (the Fig. 2.8 wavelength-intensity graph) is printed on a pale yellow tint panel, fill #fffbd5 sampled from the flat interior well inside the plot frame; its bbox is that panel. Block 8 (the Fig. 2.8(a) black-body circle diagram) is on bare paper, so no fill. The two italic legends ('Fig. 2.8 Wavelength-intensity relationship' and 'Fig. 2.8(a) Black body') have no block of their own in the input, so they are given n: null. Block 4 contains an italic definition passage ('An ideal body, which emits and absorbs...') inside otherwise roman prose; font is reported as the block's dominant serif. Diagonal '(c) NCERT not to be republished' watermark ignored."
+}

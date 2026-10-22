@@ -1,0 +1,137 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 1.1\nCalculate the mole fraction of ethylene glycol (C2H6O2) in a solution containing 20% of C2H6O2 by mass.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Solution\nAssume that we have 100 g of solution (one can start with any amount of solution because the results obtained will be the same). Solution will contain 20 g of ethylene glycol and 80 g of water.\nMolar mass of C2H6O2 = 12 × 2 + 1 × 6 + 16 × 2 = 62 g mol–1."
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        445,
+        474,
+        1046,
+        545
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        445,
+        578,
+        1019,
+        648
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        445,
+        676,
+        1035,
+        855
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        445,
+        877,
+        1155,
+        950
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Mole fraction of water can also be calculated as: 1 – 0.068 = 0.932"
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "(vi) Molarity: Molarity (M) is defined as number of moles of solute dissolved in one litre (or one cubic decimetre) of solution,"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        583,
+        1155,
+        1485,
+        1232
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "For example, 0.25 mol L–1 (or 0.25 M) solution of NaOH means that 0.25 mol of NaOH has been dissolved in one litre (or one cubic decimetre)."
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "Example 1.2\nCalculate the molarity of a solution containing 5 g of NaOH in 450 mL solution."
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "Solution"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        447,
+        1508,
+        1028,
+        1583
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "box",
+      "text": "Volume of the solution in litres = 450 mL / 1000 mL L-1\nUsing equation (2.8),"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        447,
+        1668,
+        1135,
+        1845
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Chemistry",
+    "4",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null even though this is page 4, so continuation at the top was judged from the page image alone: the page opens with a fresh 'Example 1.1' box, so first_block_continues_from_previous is false. Block 8 is list item (vi) of an enumeration of concentration terms that began on an earlier page; the item itself is complete on this page. Blocks 1-7 are the Example 1.1 box and blocks 11-15 the Example 1.2 box; because the step requires equations to be marked for the special transcriber, each box is listed as consecutive box blocks (prose, copied exactly) interleaved with equation blocks (needs_special, bbox) in reading order rather than as a single block. Equation bboxes are estimated from the page image in original-image pixels (1600x2180). Subscripts/superscripts are flattened in the text layer (e.g. 'C2H6O2', 'g mol–1') and were copied as they appear there."
+}

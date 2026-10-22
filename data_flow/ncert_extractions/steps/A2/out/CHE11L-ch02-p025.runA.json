@@ -1,0 +1,57 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Erwin Schrödinger, an Austrian physicist received his Ph.D. in theoretical physics from the University of Vienna in 1910. In 1927 Schrödinger succeeded Max Planck at the  University of Berlin at Planck’s request. In 1933, Schrödinger left Berlin because of his opposition to Hitler and Nazi policies and returned to Austria in 1936. After the invasion of Austria by Germany, Schrödinger was forcibly removed from his professorship. He then moved to Dublin, Ireland where he remained for seventeen years. Schrödinger shared the Nobel Prize for Physics with P.A.M. Dirac in 1933.\nErwin Schrödinger\n(1887–1961)"
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "In view of these inherent weaknesses in the Bohr model, there was no point in extending Bohr model to other atoms. In fact an insight into the structure of the atom was needed which could account for wave-particle duality of matter and be consistent with Heisenberg uncertainty principle. This came with the advent of quantum mechanics."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "2.6 Quantum Mechanical Model of Atom"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Classical mechanics, based on Newton’s laws of motion, successfully describes the motion of all macroscopic objects such as a falling stone, orbiting planets etc., which have essentially a particle-like behaviour as shown in the previous section. However it fails when applied to microscopic objects like electrons, atoms, molecules etc. This is mainly because of the fact that classical mechanics ignores the concept of dual behaviour of matter especially for sub-atomic particles and the uncertainty principle. The branch of science that takes into account  this dual behaviour of matter is called quantum mechanics."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Quantum mechanics is a theoretical science that deals with the study of the motions of the microscopic objects that have both observable wave like and particle like properties. It specifies the laws of motion that these objects obey. When quantum mechanics is applied to macroscopic objects (for which wave like properties are insignificant) the results are the same as those from the classical mechanics."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Quantum mechanics was developed independently in 1926 by Werner Heisenberg and Erwin Schrödinger. Here, however, we shall be discussing the quantum mechanics which is based on the ideas of wave motion. The fundamental equation of quantum mechanics was developed by Schrödinger and it won him the Nobel Prize in Physics in 1933. This equation which incorporates wave-particle duality of matter as proposed by de Broglie is quite complex and knowledge of higher mathematics  is needed to solve it. You will learn its solutions for different systems in higher classes."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "For a system (such as an atom or a molecule whose energy does not change with time) the Schrödinger equation is written as ĤΨ = EΨ where Ĥ is a mathematical operator called Hamiltonian. Schrödinger gave a recipe of constructing this operator from the expression for the total energy of the system. The total energy of the system takes into account the kinetic energies of all the sub-atomic particles (electrons, nuclei), attractive potential between the electrons and nuclei and repulsive potential among the electrons and nuclei individually. Solution of this equation gives E and ψ."
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "Hydrogen Atom and the Schrödinger Equation"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "When Schrödinger equation is solved for hydrogen atom, the solution gives the possible energy levels the electron can occupy and the corresponding wave function(s) (ψ) of the electron associated with each energy level. These quantized energy states and corresponding wave functions which are characterized by a set of three quantum numbers (principal quantum number n, azimuthal quantum number l and magnetic quantum number ml ) arise as a natural consequence in the solution of the Schrödinger equation. When an electron is in any energy state, the wave function"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "53",
+    "STRUCTURE OF ATOM",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p024.runA.json I wrote immediately before this page, whose last paragraph ends on the complete sentence 'but also contradicts Heisenberg uncertainty principle.' This page's first block in reading order is the green Erwin Schrödinger biography box, a new block, so first_block_continues_from_previous is false, matching p024's last_block_continues_on_next of false. Reading order is the left column then the right column; the text layer stores the green biography box LAST, after the whole right column, although it is printed at the top of the left column, so this page's text layer is stored out of printed order. The photograph in the green box is not described; the box's own name-and-dates caption ('Erwin Schrödinger' / '(1887–1961)') is printed beside and below that photograph, after the italic biography prose has begun, and is kept at the end of the box's text, which is also where the text layer stores it. This page carries no displayed equation, table or figure of its own, so nothing is deferred to the special transcriber and every line of the page's prose is transcribed. The only maths on the page is inline: the Schrödinger equation written as 'ĤΨ = EΨ where Ĥ' inside block n=7, which the text layer does not store at all (it keeps 'as ' then ' where ' then ' is a mathematical operator called Hamiltonian.'), so those two symbols are read from the page image and set in the running sentence as printed rather than deferred, since the surrounding sentence is ordinary prose. Other inline symbols likewise follow the layer ('gives E and ψ.', 'wave function(s) (ψ)', 'principal quantum number n', 'azimuthal quantum number l', 'magnetic quantum number ml )'). The bold runs in blocks n=4, n=7 and n=9 are printed bold inside their paragraphs and are kept there. The doubled spaces in 'takes into account  this dual behaviour', 'higher mathematics  is needed' and 'at the  University of Berlin' are as printed. Block n=9 ends mid-sentence at 'the wave function' and is completed on p026, so last_block_continues_on_next is true."
+}

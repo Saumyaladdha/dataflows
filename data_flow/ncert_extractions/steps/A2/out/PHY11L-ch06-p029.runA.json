@@ -1,0 +1,158 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "therefore, not dissipated and goes on to increase the kinetic energy of the body. The rate at which work is done on the body is given by Eq. (6.40). This is to be equated to the rate at which kinetic energy increases. The rate of increase of kinetic energy is",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [340, 415, 650, 510],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "We assume that the moment of inertia does not change with time. This means that the mass of the body does not change, the body remains rigid and also the axis does not change its position with respect to the body."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Since  α = dω/dt,  we get"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [340, 765, 655, 845],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Equating rates of work done and of increase in kinetic energy,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [330, 925, 470, 970],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [330, 978, 950, 1025],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Eq. (6.41) is similar to Newton’s second law for linear motion expressed symbolically as"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [330, 1080, 445, 1120],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Just as force produces acceleration, torque produces angular acceleration in a body. The angular acceleration is directly proportional to the applied torque and is inversely proportional to the moment of inertia of the body. In this respect, Eq.(6.41) can be called Newton’s second law for rotational motion about a fixed axis."
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "Example 6.12  A cord of negligible mass is wound round the rim of a fly wheel of mass 20 kg and radius 20 cm. A steady pull of 25 N is applied on the cord as shown in Fig. 6.31. The flywheel is mounted on a horizontal axle with frictionless bearings.\n(a) Compute the angular acceleration of the wheel.\n(b) Find the work done by the pull, when 2m of the cord is unwound.\n(c) Find also the kinetic energy of the wheel at this point. Assume that the wheel starts from rest.\n(d) Compare answers to parts (b) and (c)."
+    },
+    {
+      "n": 13,
+      "kind": "heading",
+      "text": "Answer"
+    },
+    {
+      "n": 14,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [965, 235, 1630, 830],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "(a) We use  I α = τ\nthe torque  τ = F R\n= 25 × 0.20 Nm (as R = 0.20m)\n= 5.0 Nm"
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "I = Moment of inertia of flywheel about its axis"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1020, 1040, 1430, 1200],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "α = angular acceleration\n= 5.0 N m/0.4 kg m2 = 12.5 s–2"
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "(b) Work done by the pull unwinding 2m of the cord\n= 25 N × 2m = 50 J"
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "(c) Let ω be the final angular velocity. The kinetic energy gained =  1/2 Iω2 , since the wheel starts from rest. Now,"
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [960, 1545, 1380, 1600],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "The angular displacement θ = length of unwound string / radius of wheel\n= 2m/0.2 m = 10 rad"
+    },
+    {
+      "n": 23,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [960, 1715, 1510, 1770],
+      "text": ""
+    },
+    {
+      "n": 24,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [980, 1800, 1520, 1875],
+      "text": ""
+    },
+    {
+      "n": 25,
+      "kind": "paragraph",
+      "text": "(d) The answers are the same, i.e. the kinetic energy gained by the wheel = work   done by the force. There is no loss of energy due to friction."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "120",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column read first. previous_page_last_block was null although this is page 29, so the continuation flag is judged from the page itself: the first block opens mid-sentence (\"therefore, not dissipated and goes on to increase the kinetic energy of the body\"), so first_block_continues_from_previous is true. Block 20: the text layer scrambles the inline fraction (the superscript 2 of omega is hoisted onto its own line before the numerals), so the one-half factor is written inline as \"1/2 Iω2\" using the characters present; the solidus is the only character added. Blocks 18, 19 and 22 keep the text layer's flat forms (\"kg m2\", \"s–2\", \"2m/0.2 m\") rather than typeset super/subscripts. Block 24 (the \"K.E. gained\" line) is absent from the text layer entirely apart from the \"∴\" symbol, so it is marked needs_special. Decorative example markers (the solid triangle before Example 6.12 and the closing triangle after block 25) were not transcribed. A diagonal \"© NCERT not to be republished\" watermark crosses the page; it is not page content and was not transcribed. Bounding boxes are in pixels of the supplied 1826 x 2163 page image."
+}

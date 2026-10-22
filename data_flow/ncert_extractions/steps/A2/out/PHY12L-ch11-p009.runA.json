@@ -1,0 +1,81 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [254, 315, 570, 692],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "ALBERT EINSTEIN (1879 – 1955)\nAlbert Einstein (1879 –\n1955) Einstein, one of the\ngreatest physicists of all\ntime, was born in Ulm,\nGermany. In 1905, he\npublished three path-\nbreaking papers.  In the\nfirst paper, he introduced\nthe notion of light quanta\n(now called photons) and\nused it to explain the\nfeatures of photoelectric\neffect.  In the second paper,\nhe developed a theory of\nBrownian \nmotion,\nconfirmed experimentally a\nfew years later and provided\na convincing evidence of\nthe atomic picture of matter.\nThe third paper gave birth\nto the special theory of\nrelativity. In 1916, he\npublished the general\ntheory of relativity. Some of\nEinstein’s most significant\nlater contributions are: the\nnotion \nof \nstimulated\nemission introduced in an\nalternative derivation of\nPlanck’s \nblackbody\nradiation law, static model\nof the universe which\nstarted modern cosmology,\nquantum statistics of a gas\nof massive bosons, and a\ncritical analysis of the\nfoundations of quantum\nmechanics. In 1921, he was\nawarded the Nobel Prize in\nphysics for his contribution\nto theoretical physics and\nthe photoelectric effect.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "·\nAccording to Eq. (11.2), Kmax depends linearly on n,\nand is independent of intensity of radiation, in\nagreement with observation. This has happened\nbecause in Einstein’s picture, photoelectric effect arises\nfrom the absorption of a single quantum of radiation\nby a single electron. The intensity of radiation (that is\nproportional to the number of energy quanta per unit\narea per unit time) is irrelevant to this basic process."
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "·\nSince Kmax must be non-negative, Eq. (11.2 ) implies\nthat photoelectric emission is possible only if"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [710, 625, 1452, 780],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Equation (11.3) shows that the greater the work\nfunction f0, the higher the minimum or threshold\nfrequency n0 needed to emit photoelectrons. Thus,\nthere exists a threshold frequency n0 (= f0/h) for the\nmetal surface, below which no photoelectric  emission\nis possible, no matter how intense the incident\nradiation may be or how long it falls on the surface."
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "·\nIn this picture, intensity of radiation as noted above,\nis proportional to the number of energy quanta per\nunit area per unit time. The greater the number of\nenergy quanta available, the greater is the number of\nelectrons absorbing the energy quanta  and greater,\ntherefore, is the number of electrons coming out of\nthe metal (for n > n0). This explains why, for n > n0,\nphotoelectric current is proportional to intensity."
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "·\nIn Einstein’s picture, the basic elementary process\ninvolved in photoelectric effect is the absorption of a\nlight quantum by an electron. This process is\ninstantaneous. Thus, whatever may be the intensity\ni.e., the number of quanta of radiation per unit area\nper unit time, photoelectric emission is instantaneous.\nLow intensity does not mean delay in emission, since\nthe basic elementary process is the same. Intensity\nonly determines how many electrons are able to\nparticipate in the elementary process (absorption of a\nlight quantum by a single electron) and, therefore, the\nphotoelectric current."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Using Eq. (11.1), the photoelectric equation, Eq. (11.2),\ncan be written as"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [710, 1950, 1452, 1998],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [710, 2002, 1455, 2055],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "This is an important result. It predicts that the V0\nversus n  curve is a straight line with slope = (h/e),"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "282",
+    "Reprint 2026-27"
+  ],
+  "note": "first_block_continues_from_previous judged from page 8, which I read myself (it ended with the complete sentence \"...sub-section 11.4.3.\"); previous_page_last_block was null. Left column is a biographical box on Albert Einstein with a portrait photograph; I kept its vertical tab title \"ALBERT EINSTEIN (1879 – 1955)\" as the first line of the box text, since it is real text in the text layer, and read the box before the right-hand bullets per the left-column-first rule. Equation blocks n=5, n=10 and n=11 cover the display-math text-layer lines \"h n > f0 / or n > n0 , where / n0 = f0/h (11.3)\", \"e V0 = h n  – f 0;  for n >= n0\" and \"or V0 = (h/e)n – f0/e (11.4)\" respectively; the text layer renders these badly (stray \"0\", \"h\", \"φ\" fragments and a vertical pile for the fraction), which is why they are marked needs_special. Text-layer notation losses vs image: \"n\" is Greek nu throughout (n, n0 = nu, nu-sub-0), \"f0\" is Greek phi with subscript 0, Kmax is K-sub-max, and V0 is V-sub-0."
+}

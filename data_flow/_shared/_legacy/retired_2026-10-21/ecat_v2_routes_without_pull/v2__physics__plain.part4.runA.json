@@ -1,0 +1,105 @@
+{
+  "group": "v2__physics__plain.part4",
+  "ratings": [
+    {
+      "question_id": "2015_A#q154",
+      "question_type": "plain_mcq",
+      "secondary_type": "figure_to_read",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Least work means least moment of inertia, which is about the centre of mass",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination", "symmetry"],
+      "strategy_evidence": "With $m_1 = m_2$ the axis has to sit at $L/2$; options 3 and 4 both give $L$, so that one check strikes both out.",
+      "traps": [
+        {"label": "wrong_quantity", "option": "2", "route": "Gives the distance from $m_2$ instead of from $m_1$."},
+        {"label": "calculation_slip", "option": "4", "route": "From $m_1x = m_2(L-x)$, replaces $(L-x)$ with $L$. Gives $(m_2/m_1)L$."},
+        {"label": "calculation_slip", "option": "3", "route": "The same replacement with the two masses swapped. Gives $(m_1/m_2)L$."}
+      ],
+      "reason": "This question requires applying the rule that the moment of inertia is least about the centre of mass, demonstrated by the stem's 'the work required to set the rod rotating with angular velocity $\\omega_0$ is minimum'.",
+      "note": "Which end $x$ is measured from is fixed only by the figure, which the packet supplies as figures_agent/2015_A/q154.png and this step does not read; options 1 and 2 differ by exactly that choice, which is why `figure_to_read` is recorded as the secondary shape. The printed key, option 1, is consistent with $x$ measured from $m_1$."
+    },
+    {
+      "question_id": "2015_A#q155",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Single-slit first minimum: edge to midpoint is $\\lambda/2$, so the phase is $\\pi$",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {"label": "calculation_slip", "option": "3", "route": "Uses $\\Delta\\phi = (\\pi/\\lambda)\\Delta x$ in place of $(2\\pi/\\lambda)\\Delta x$. Gives $\\pi/2$."},
+        {"label": "no_derivation_route", "option": "2", "route": "$\\pi/4$ needs a path difference of $\\lambda/8$, which no part of the slit supplies."},
+        {"label": "no_derivation_route", "option": "1", "route": "$\\pi/8$ needs $\\lambda/16$, which no part of the slit supplies."}
+      ],
+      "reason": "This question requires applying the first-minimum condition to half of the slit, demonstrated by the stem's 'the wavelet from the edge of the slit and the wavelet from the midpoint of the slit'.",
+      "note": "The four options are a ladder of halvings from $\\pi$ down to $\\pi/8$. Only the first halving has a named route, which is why options 1 and 2 are recorded as having none. The stored figure (figures_agent/2015_A/q155.png) is a crop of the question; the answer comes from the slit condition, not from the figure. The structure is `multi_step_dependent` because the phase cannot be formed until the path difference is."
+    },
+    {
+      "question_id": "2015_A#q156",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Angular momentum is conserved when $\\vec{r}\\times\\vec{F} = 0$",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires applying the condition that zero torque conserves angular momentum, demonstrated by the stem's '$\\vec{F} = \\alpha\\hat{i} + 3\\hat{j} + 6\\hat{k}$' acting at '$\\vec{r} = 2\\hat{i} - 6\\hat{j} - 12\\hat{k}$'.",
+      "note": "Option 1 is stored as '$-$', a bare minus sign with no value, so the option set as we hold it is incomplete and no trap is written (rulebook rule 5). E1 to E4 are filled from the stem and the three intact options, which is what is certain. The printed key, option 2 ($-1$), is consistent with $\\vec{r}$ parallel to $\\vec{F}$: $2/\\alpha = -6/3 = -12/6 = -2$. The lost option needs restoring from a printed paper."
+    },
+    {
+      "question_id": "2015_A#q157",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Two particles collide when the relative velocity points along the relative position",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires applying the collision condition for two constant velocities, demonstrated by option 2 setting the unit vector of $\\vec{r}_1-\\vec{r}_2$ equal to that of $\\vec{v}_2-\\vec{v}_1$.",
+      "note": "Options 1 and 4 are stored as the same expression, $\\vec{r}_1 \\times \\vec{v}_1 = \\vec{r}_2 \\times \\vec{v}_2$, so one of the four printed options has been lost in our record and the set is a duplicate rather than four rivals. No trap is written (rulebook rule 5); E1 to E4 are filled from the stem and the intact options. The printed key, option 2, is the standard condition. The duplicated option needs restoring from a printed paper."
+    },
+    {
+      "question_id": "2015_A#q158",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "formula_or_law",
+      "concept": "Decay at rest: equal momenta, so $KE = p^2/2m$ is larger for the lighter piece",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Momentum conservation makes the two momenta equal in size, which strikes out options 3 and 4 together.",
+      "traps": [
+        {"label": "semantic_reversal", "option": "1", "route": "Reverses the comparison. With equal momenta, $KE = p^2/2m$ is larger for the lighter helium."},
+        {"label": "wrong_quantity", "option": "3", "route": "Answers for momentum, not kinetic energy. The two momenta are equal in size."},
+        {"label": "wrong_quantity", "option": "4", "route": "Answers for momentum, not kinetic energy. The two momenta are equal in size."}
+      ],
+      "reason": "This question requires applying momentum conservation and then $KE = p^2/2m$, demonstrated by the stem's 'nucleus of uranium decays at rest into nuclei of thorium and helium'.",
+      "note": "The four options are two quantities, kinetic energy and momentum, crossed with more and less, which is the `complementary_grid` layout; that describes the set, so the two momentum options are tagged on the quantity they answer for instead."
+    },
+    {
+      "question_id": "2015_A#q159",
+      "question_type": "plain_mcq",
+      "format": "derive_expression",
+      "content_shape": "formula_or_law",
+      "concept": "Two identical wires in series: $\\sigma_{\\mathrm{eff}} = 2\\sigma_1\\sigma_2/(\\sigma_1+\\sigma_2)$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {"label": "calculation_slip", "option": "1", "route": "Forgets that the combined wire is $2L$ long. Gives $\\sigma_1\\sigma_2/(\\sigma_1+\\sigma_2)$, half the answer."},
+        {"label": "inverted_ratio", "option": "3", "route": "The reciprocal of the answer, which is the effective resistivity."},
+        {"label": "intermediate_value", "option": "4", "route": "Stops at $1/\\sigma_1 + 1/\\sigma_2$ and never inverts it."}
+      ],
+      "reason": "This question requires adding two resistances and converting back to a conductivity, demonstrated by the stem's 'Two metal wires of identical dimensions are connected in series'.",
+      "note": "The stem names the conductivities '$v_1$ and $v_2$' while the options use $\\sigma_1$ and $\\sigma_2$: the sigmas have been read as v's somewhere in extraction. The mapping is unambiguous and the option set is intact, so the question is tagged on that reading rather than recorded as damaged, but the stem needs repair. The stored figure (figures_agent/2015_A/q159.png) is a crop of the question; two wires in series need no figure."
+    }
+  ],
+  "group_note": "All six are `plain_mcq` on E1 and belong together; q154 alone carries a secondary shape, `figure_to_read`, because which mass $x$ is measured from is fixed only by its figure. Two members are damaged in our own record and are treated identically: q156 has lost option 1 (stored as a bare '$-$') and q157 holds options 1 and 4 as the same expression, so both carry the `source_damage_artifact` verdict with no trap, and E1 to E4 filled only from the stem and the intact options. Demand follows the live work and the split is stated rather than left implicit: `application` where the task is recognising which relation governs, with the arithmetic trivial or absent (q154 to q158), and `calculation` for q159, where the expression has to be built by algebra. `multi_step_dependent` is used only where the second step needs the first one's result -- the centre of mass after the minimum-inertia rule, the phase after the path difference, $KE = p^2/2m$ after equal momenta, the conductivity after the resistances -- and `single_step` for q156 and q157, where one condition is recognised and read off. Elimination is recorded only where one named fact strikes out options: the $m_1 = m_2$ check in q154 and momentum conservation in q158."
+}

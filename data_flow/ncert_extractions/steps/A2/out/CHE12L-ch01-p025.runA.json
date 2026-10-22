@@ -1,0 +1,42 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Table 1.4 depicts values of the factor, i for several strong electrolytes. For KCl, NaCl and MgSO4, i values approach 2 as the solution becomes very dilute. As expected, the value of i gets close to 3 for K2SO4.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        431,
+        308,
+        1433,
+        787
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "needs_special": true,
+      "bbox": [
+        114,
+        823,
+        1417,
+        1842
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "25",
+    "Solutions",
+    "Reprint 2026-27"
+  ],
+  "note": "Block 2 is Table 1.4; its bbox includes the bold caption line above the grid and the '* represent i values for incomplete dissociation.' footnote below it, since both belong to the table. Block 3 is the boxed worked example labelled 'Example 1.12' / 'Solution' in the side margin; it is kept as one box block but marked needs_special with a bbox because it is built around several display equations and stacked fractions (the M2 expression, the dimerisation equilibrium, the 1 - x + x/2 line, and the i = Normal molar mass / Abnormal molar mass ratio) that the PDF text layer renders out of order and that cannot be copied as plain text without corrupting them. The box runs off the bottom of the page mid-derivation, so last_block_continues_on_next is true. A diagonal '(c) NCERT not to be republished' watermark overlays the page; it is not page content and was not transcribed. previous_page_last_block was null, so the opening paragraph was judged on its own text, which begins a complete new sentence."
+}

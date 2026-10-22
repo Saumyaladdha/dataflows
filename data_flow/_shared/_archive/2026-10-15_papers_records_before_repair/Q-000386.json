@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000386",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:95"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "The order of energy absorbed which is responsible for the color of complexes (A) $\\mathrm{[Ni(H2O)2(en)2]2+}$ (B) $\\mathrm{[Ni(H2O)4(en)]2+}$ and (C) $\\mathrm{[Ni(en)3]2+}$ is",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "(A) > (B) > (C)",
+    "2": "(C) > (B) > (A)",
+    "3": "(C) > (A) > (B)",
+    "4": "(B) > (A) > (C)"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "95\nThe order of energy absorbed which is responsible for the color of complexes (A)\n[Ni(H2O)2(en)2]2+ (B) [Ni(H2O)4(en)]2+ and (C) [Ni(en)3]2+ is\n(1)\n(A) > (B) > (C)\n(2)\n(C) > (B) > (A)\n(3)\n(C) > (A) > (B)\n(4)\n(B) > (A) > (C)\nCoordination Compounds\n",
+  "b4_script_options": {
+    "1": "(A) > (B) > (C)",
+    "2": "(C) > (B) > (A)",
+    "3": "(C) > (A) > (B)",
+    "4": "(B) > (A) > (C)\nCoordination Compounds"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "inorganic",
+  "b6_answer": "3",
+  "b6_reason": "Energy absorbed equals the crystal field splitting, and en is a stronger field ligand than water, so splitting rises with the number of en: 3 en > 2 en > 1 en.",
+  "b6_working": "(C) [Ni(en)3]2+ has 3 en, (A) [Ni(H2O)2(en)2]2+ has 2 en, (B) [Ni(H2O)4(en)]2+ has 1 en, so delta and hence absorbed energy order is C > A > B",
+  "b6_confidence": "high",
+  "b6_note": "Subscripts and charges in the formulas are flattened (Ni(H2O)2(en)2 2+ etc.) but the complexes are still unambiguous.",
+  "b6_agrees_with_key": true
+}

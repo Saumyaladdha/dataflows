@@ -1,0 +1,58 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "(iv) The surface that we choose for the application of Gauss’s law is called the Gaussian surface. You may choose any Gaussian surface and apply Gauss’s law. However, take care not to let the Gaussian surface pass through any discrete charge. This is because electric field due to a system of discrete charges is not well defined at the location of any charge. (As you go close to the charge, the field grows without any bound.) However, the Gaussian surface can pass through a continuous charge distribution.\n(v) Gauss’s law is often useful towards a much easier calculation of the electrostatic field when the system has some symmetry. This is facilitated by the choice of a suitable Gaussian surface.\n(vi) Finally, Gauss’s law is based on the inverse square dependence on distance contained in the Coulomb’s law. Any violation of Gauss’s law will indicate departure from the inverse square law.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 1.11 The electric field components in Fig. 1.27 are Ex = αx1/2, Ey = Ez = 0, in which α = 800 N/C m1/2. Calculate (a) the flux through the cube, and (b) the charge within the cube. Assume that a = 0.1 m."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        409,
+        997,
+        1008,
+        1455
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Solution\n(a) Since the electric field has only an x component, for faces perpendicular to x direction, the angle between E and ∆S is ± π/2. Therefore, the flux  φ = E.∆S is separately zero for each face of the cube except the two shaded ones. Now the magnitude of the electric field at the left face is\nEL = αx1/2 = αa1/2\n(x = a at the left face).\nThe magnitude of electric field at the right face is\nER = α x1/2 = α (2a)1/2\n(x = 2a at the right face).\nThe corresponding fluxes are"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        256,
+        1837,
+        1057,
+        2006
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Net flux through the cube",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "35",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so continuation is judged against the p034 output I had just written: p034 ended with the numbered points (i)-(iii) of Gauss's law and this page opens with (iv), so the list continues and first_block_continues_from_previous is true. Points (iv)-(vi) are one list block. The Example 1.11 panel is split only where it has to be: the example statement (n=2), FIGURE 1.27 inside the panel (n=3, needs_special), the solution prose with its clean inline working (n=4), the displayed flux equations whose text layer is a scrambled symbol stream (n=5, needs_special), and the panel's last line 'Net flux through the cube' (n=6), which runs on to p036. The vertical side tab 'EXAMPLE 1.11' is not listed as removed furniture because the example's own label 'Example 1.11' is kept as block text on this page, and the same string must not be both removed and kept; this follows what was done on p007, p013, p021 and p029, where the example begins on the page."
+}

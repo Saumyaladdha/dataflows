@@ -1,0 +1,37 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 2, "no_change": true},
+    {"n": 3, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "Thus, there are about 6 × 10¹⁸ electrons in a charge of  –1C. In electrostatics, charges of this large magnitude are seldom encountered and hence we use smaller units 1 µC (micro coulomb) = 10⁻⁶ C or 1 mC (milli coulomb) = 10⁻³ C.",
+      "fixes": [
+        {"wrong": "1018", "right": "10¹⁸"},
+        {"wrong": "10–6", "right": "10⁻⁶"},
+        {"wrong": "10–3", "right": "10⁻³"}
+      ]
+    },
+    {
+      "n": 6,
+      "corrected_text": "If the protons and electrons are the only basic charges in the universe, all the observable charges have to be integral multiples of e. Thus, if a body contains n₁ electrons and n₂ protons, the total amount of charge on the body is n₂ × e + n₁ × (–e) = (n₂ – n₁) e. Since n₁ and n₂ are integers, their difference is also an integer. Thus the charge on any body is always an integral multiple of e and can be increased or decreased also in steps of e.",
+      "fixes": [
+        {"wrong": "n1 electrons", "right": "n₁ electrons"},
+        {"wrong": "n 2 protons", "right": "n₂ protons"},
+        {"wrong": "n 2 × e + n1 × (–e) = (n 2 – n1) e.", "right": "n₂ × e + n₁ × (–e) = (n₂ – n₁) e."},
+        {"wrong": "Since n1 and n2 are integers", "right": "Since n₁ and n₂ are integers"}
+      ]
+    },
+    {"n": 7, "no_change": true},
+    {"n": 8, "no_change": true},
+    {
+      "n": 9,
+      "corrected_text": "At the macroscopic level, one deals with charges that are enormous compared to the magnitude of charge e. Since e = 1.6 × 10⁻¹⁹ C, a charge of magnitude, say 1 µC, contains something like 10¹³ times the electronic charge. At this scale, the fact that charge can increase or decrease only in units of e is not very different from saying that charge can take continuous values. Thus, at the macroscopic level, the quantisation of charge has no practical consequence and can be ignored. However, at the microscopic level, where the charges involved are of the order of a few tens or hundreds of e, i.e., they can be counted, they appear in discrete lumps and",
+      "fixes": [
+        {"wrong": "10–19", "right": "10⁻¹⁹"},
+        {"wrong": "1013", "right": "10¹³"}
+      ]
+    }
+  ],
+  "note": "This page had the known flattened-exponent and detached-subscript defects: n=5's '1018' electrons and the '10–6'/'10–3' unit definitions restored to 10¹⁸/10⁻⁶/10⁻³; n=6's n1/n2 (one even split with a stray space as 'n 2') restored to proper subscripts n₁/n₂ throughout the charge-counting sentence; n=9's '10–19' and '1013' restored to 10⁻¹⁹/10¹³. Blocks n=1,2,3,7,8 already matched the image exactly (plain 'e', '+e', '–e', '1 s', '1 A' are correct as printed, not exponents)."
+}

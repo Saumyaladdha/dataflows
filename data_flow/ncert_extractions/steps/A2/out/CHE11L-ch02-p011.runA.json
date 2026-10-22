@@ -1,0 +1,132 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The other commonly used quantity specially in spectroscopy, is the wavenumber ( ). It is defined as the number of wavelengths per unit length. Its units are reciprocal of wavelength unit, i.e., m–1. However commonly used unit is cm–1 (not SI unit)."
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Problem 2.3\nThe Vividh Bharati station of All India Radio, Delhi, broadcasts on a frequency of 1,368 kHz (kilo hertz). Calculate the wavelength of the electromagnetic radiation emitted by transmitter. Which part of the electromagnetic spectrum does it belong to?\nSolution\nThe wavelength, λ, is equal to c/ν, where c is the speed of electromagnetic radiation in vacuum and ν is the frequency. Substituting the given values, we have"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        943,
+        578,
+        1259
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "This is a characteristic radiowave wavelength."
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Problem 2.4\nThe wavelength range of the visible spectrum extends from violet (400 nm) to red (750 nm). Express these wavelengths in frequencies (Hz). (1nm = 10–9 m)\nSolution\nUsing equation 2.5, frequency of violet light"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        240,
+        1690,
+        610,
+        1842
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Frequency of red light"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        927,
+        332,
+        1526,
+        409
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "The range of visible spectrum is from 4.0 × 1014 to 7.5 × 1014 Hz in terms of frequency units."
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "Problem 2.5\nCalculate (a) wavenumber and (b) frequency of yellow radiation having wavelength 5800 Å.\nSolution\n(a) Calculation of wavenumber ( )\nλ=5800Å = 5800 × 10–8 cm\n= 5800 × 10–10 m"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        927,
+        834,
+        1526,
+        1030
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "(b) \t Calculation of the frequency (ν )"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        927,
+        1079,
+        1542,
+        1166
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "heading",
+      "text": "2.3.2 Particle Nature of Electromagnetic Radiation: Planck’s Quantum Theory"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Some of the experimental phenomenon such as diffraction* and interference** can be explained by the wave nature of the electromagnetic radiation. However, following are some of the observations which could not be explained with the help of even the electromagentic theory of 19th century physics (known as classical physics):"
+    },
+    {
+      "n": 16,
+      "kind": "list",
+      "text": "(i) the nature of emission of radiation from hot bodies (black-body radiation)\n(ii) ejection of electrons from metal surface when radiation strikes it (photoelectric effect)\n(iii) variation of heat capacity of solids as a function of temperature"
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "* Diffraction is the bending of wave around an obstacle.\n** Interference is the combination of two waves of the same or different frequencies to give a wave whose distribution at each point in space is the algebraic or vector sum of disturbances at that  point resulting from each interfering wave."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "39",
+    "STRUCTURE OF ATOM",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the existing steps/A2/out/CHE11L-ch02-p010.runA.json, whose last block is Fig. 2.7 and whose prose ends a complete sentence, so this page starts a fresh paragraph and first_block_continues_from_previous is false. The wavenumber symbol is absent from the text layer (it stores a bare '( )'), so blocks n=1 and n=10 follow the layer's spelling rather than transcribing the overbarred nu printed on the page; powers of ten in prose likewise follow the layer's flattened spelling ('m–1', 'cm–1', '10–9 m', '4.0 × 1014', '7.5 × 1014', '5800 × 10–8 cm', '5800 × 10–10 m'). The pink panel spanning both columns is one printed box containing Problems 2.3, 2.4 and 2.5 with their Solutions; its prose is kept in box blocks (n=2, 4, 5, 7, 9, 10, 12) and its five displayed derivations are left to the special transcriber as needs_special equation blocks (n=3, 6, 8, 11, 13) with pixel bboxes covering each fraction, its substituted values and its result. Block n=17 is the two starred footnotes printed below the rule at the foot of the page; the text layer stores them between the left and right column streams, but they are listed last because that is their position on the page. Reading order is left column then right column. The main text ends with list item (iii) and item (iv) of the same list is printed at the top of p012, so the page's running text continues across the break and last_block_continues_on_next is true even though the footnote block printed below it is itself complete."
+}

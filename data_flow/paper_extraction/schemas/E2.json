@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/E2.json",
+  "title": "E2 agent output (e2-format-tagger)",
+  "description": "Spec 13/E2 'Agent output': {\"format\",\"new_description\",\"confidence\"} -- matching .claude/agents/e2-format-tagger.md's worked example exactly. The `format` enum is config/allowed_values.yaml v0.3's list verbatim, 19 values, generated from docs/question_categories/RULEBOOK.md section 2. THE SCHEMA DELIBERATELY DOES NOT CONSTRAIN format AGAINST THE STEM'S NEGATIVE WORDS -- that is spec 13/E2's negative-word guard, which needs B3's `negative_words_seen` and the parsed options, so it lives in scripts/checks/E2.py and is the one E check that can force an adjudication (E2_NEGATIVE_GUARD, high). A schema cannot express it: the same `format` value is correct or wrong depending on the question's options. `note` optional per Universal rule 7; `codebook_version` is the runner's to record, not the agent's (see schemas/E1.json).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["format", "new_description", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": [ "calculate_value", "count_qualifying_items", "derive_expression", "identify_structure_or_compound", "judge_assertion_reason", "judge_two_statements", "name_or_identify", "new_format", "pick_both_parts", "pick_cause_or_effect", "pick_correct_combination", "pick_correct_statement", "pick_direction", "pick_graph_or_label", "pick_match_code", "pick_order", "pick_ratio", "predict_product", "recall_value" ],
+          "description": "What the student must PICK. Spec 13/E2's key test: look at the OPTIONS -- what kind of thing differs between them? Never how the question is built (that is E1). config/allowed_values.yaml format, v0.3."
+        },
+        "new_description": {
+          "type": "string",
+          "description": "One line, REQUIRED (non-empty) when format is new_format -- E_NEW_CATEGORY (normal) carries it to Stage F. Enforced in scripts/checks/E2.py."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": { "type": "string", "description": "Universal rule 7. Optional." }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "deuterons combine to form the light isotope of helium. In reaction (13.13c), two deuterons combine to form a triton and a proton. For fusion to take place, the two nuclei must come close enough so that attractive short-range nuclear force is able to affect them. However, since they are both positively charged particles, they experience coulomb repulsion. They, therefore, must have enough energy to overcome this coulomb barrier. The height of the barrier depends on the charges and radii of the two interacting nuclei. It can be shown, for example, that the barrier height for two protons is ~ 400 keV, and is higher for nuclei with higher charges. We can estimate the temperature at which two protons in a proton gas would (averagely) have enough energy to overcome the coulomb barrier:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        493,
+        678,
+        1265,
+        716
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "When fusion is achieved by raising the temperature of the system so that particles have enough kinetic energy to overcome the coulomb repulsive behaviour, it is called thermonuclear fusion."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Thermonuclear fusion is the source of energy output in the interior of stars. The interior of the sun has a temperature of 1.5×10⁷ K, which is considerably less than the estimated temperature required for fusion of particles of average energy. Clearly, fusion in the sun involves protons whose energies are much above the average energy."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The fusion reaction in the sun is a multi-step process in which the hydrogen is burned into helium. Thus, the fuel in the sun is the hydrogen in its core. The proton-proton (p, p) cycle by which this occurs is represented by the following sets of reactions:"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        488,
+        1120,
+        1458,
+        1340
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "For the fourth reaction to occur, the first three reactions must occur twice, in which case two light helium nuclei unite to form ordinary helium nucleus. If we consider the combination 2(i) + 2(ii) + 2(iii) +(iv), the net effect is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        445,
+        1498,
+        1458,
+        1602
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Thus, four hydrogen atoms combine to form an ^4_2 He atom with a release of 26.7 MeV of energy."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Helium is not the only element that can be synthesized in the interior of a star. As the hydrogen in the core gets depleted and becomes  helium, the core starts to cool. The star begins to collapse under its own gravity which increases the temperature of the core. If this temperature increases to about 10⁸ K, fusion takes place again, this time of helium nuclei into carbon. This kind of process can generate through fusion higher and higher mass number elements. But elements more massive than those near the peak of the binding energy curve in Fig. 13.1 cannot be so produced."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "316",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read page 10 of this chapter immediately before: it ended mid-sentence with '...In reaction [13.13(b)], two' and this page opens 'deuterons combine to form the light isotope of helium.' — so first_block_continues_from_previous is true on that direct evidence. Display equations left to the special transcriber with pixel bboxes: block 2 is the unnumbered estimation line '(3/2)k T = K ≃ 400 keV, which gives T ~ 3 × 10⁹ K.'; block 6 is the four-line proton-proton cycle labelled (i)-(iv) and numbered (13.14); block 8 is the two-line net reaction numbered (13.15). Text-layer/image notation discrepancies, taken from the image: Greek letters are flattened to Latin in the reaction lines ('g + g' -> γ + γ, and the neutrino ν is emitted as 'n', colliding with the neutron symbol), the reaction arrow → is emitted as '®' in line (ii), and the nuclide/charge indices are dropped or arrive as bare digits on separate lines ('109' -> 10⁹, '1.5×107' -> 1.5×10⁷, '108 K' -> 10⁸ K, 'e+' / 'e –' -> e with superscript plus / minus, '4\\n2He' -> superscript 4 / subscript 2 before He, written here as ^4_2 He per the convention used earlier in this chapter). In equations (13.15) the text layer does carry 'ν' and 'γ' correctly, unlike the (i)-(iv) block. Italics ('thermonuclear fusion', 'proton-proton', 'cycle', k, K, T) are not preserved. Last paragraph ends with a complete sentence at the foot of the page, so last_block_continues_on_next is false."
+}

@@ -1,0 +1,138 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [200, 275, 745, 1177],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The total field at P is",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [755, 335, 1545, 502],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "For r >> a"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [790, 562, 1545, 621],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "(ii) For points on the equatorial plane"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The magnitudes of the electric fields due to the two charges +q and –q are given by"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [850, 805, 1535, 864],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [850, 889, 1535, 948],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "and are equal."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The directions of  E+q and E–q are as shown in Fig. 1.17(b). Clearly, the components normal to the dipole axis cancel away. The components along the dipole axis add up. The total electric field is opposite to ˆp. We have"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [583, 1166, 1545, 1296],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "At large distances (r >> a), this reduces to"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [578, 1366, 1545, 1431],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "From Eqs. (1.15) and (1.18), it is clear that the dipole field at large distances does not involve q and a separately; it depends on the product qa. This suggests the definition of dipole moment. The dipole moment vector p of an electric dipole is defined by"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [578, 1590, 1545, 1629],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "that is, it is a vector whose magnitude is charge q times the separation 2a (between the pair of charges q, –q) and the direction is along the line from –q to q. In terms of p, the electric field of a dipole at large distances takes simple forms:"
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "At a point on the dipole axis"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [578, 1814, 1545, 1881],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "At a point on the equatorial plane"
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [578, 1971, 1545, 2041],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "24",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null even though page is 24, so continuation from the previous page was judged from the page itself: the page's first text block begins a complete new sentence ('The total field at P is'), so first_block_continues_from_previous is false. Reading order: the left-column figure (Fig. 1.17 (a) and (b) with its caption, one figure block) precedes the right-column text; from block 13 onward the text runs full width. All displayed formulae, including the short ones at (1.19), were emitted as equation blocks with needs_special because the text layer scrambles sub/superscripts onto separate lines. Inline mathematics inside paragraphs was copied as the text layer holds it (e.g. 'ˆp'). The page carries an 'NCERT / not to be republished' watermark across the middle; it is not transcribed."
+}

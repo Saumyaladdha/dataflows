@@ -1,0 +1,195 @@
+{
+  "question_id": "Q-000495",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:5"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R. In the light of the above statements, choose the correct answer from the options given below:",
+  "statements": [
+    {
+      "label": "A",
+      "text": "The potential ( V) at any axial point, at $2\\,\\mathrm{m}$ distance ( r) from the centre of the dipole of dipole moment vector P of magnitude, $4 \\times 10{-}6\\,\\mathrm{C\\,m}$, is $\\pm\\,9 \\times 103\\,\\mathrm{V}$. (Take [unreadable notation: \"0 1 4\\pi\\in\"] $= 9 \\times 109$ SI units)"
+    },
+    {
+      "label": "R",
+      "text": "[unreadable notation: \"2 0 2 , 4 = \\pm \\pi\\in PV r\"] where r is the distance of any axial point, situated at $2\\,\\mathrm{m}$ from the centre of the dipole."
+    }
+  ],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Both A and R are true and R is the correct explanation of A.",
+    "2": "Both A and R are true and R is NOT the correct explanation of A.",
+    "3": "A is true but R is false.",
+    "4": "A is false but R is true."
+  },
+  "structure": "assertion_reason",
+  "has_figure": false,
+  "negative_words": [
+    "NOT"
+  ],
+  "b4_text_layer_sanitized": "5\nGiven below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: The potential ( V) at any axial point, at 2 m distance ( r) from the centre of the dipole of\ndipole moment vector P of magnitude, 4 × 10–6 C m, is ± 9 × 103 V. (Take 0 1 4π∈ = 9 × 109 SI units)\nReason R: 2 0 2 , 4 =± π∈ PV r where r is the distance of any axial point, situated at 2 m from the\ncentre of the dipole. In the light of the above statements, choose the correct answer from the\noptions given below:\n(1)\nBoth A and R are true and R is the correct\nexplanation of A.\n(2)\nBoth A and R are true and R is NOT the\ncorrect explanation of A.\n(3)\nA is true but R is false.\n(4)\nA is false but R is true.\nElectric Charges and Fields\n",
+  "b4_script_options": {
+    "1": "Both A and R are true and R is the correct\nexplanation of A.",
+    "2": "Both A and R are true and R is NOT the\ncorrect explanation of A.",
+    "3": "A is true but R is false.",
+    "4": "A is false but R is true.\nElectric Charges and Fields"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "1",
+  "b6_reason": "The axial potential works out to exactly 9 x 10^3 V, so A is true, and R as far as it can be read is the correct axial-dipole formula V = P/(4*pi*eps0*r^2), which explains A.",
+  "b6_working": "V_axial = (1/(4*pi*eps0)) * P/r^2 = 9e9 * (4e-6)/(2^2) = 9e9 * 1e-6 = 9e3 V, with sign depending on which pole is faced, i.e. +/- 9 x 10^3 V. A true. R's fragment reads as V = +/- P/(4*pi*eps0*r^2), the formula actually used, so R is true and explains A.",
+  "b6_confidence": "medium",
+  "b6_note": "Reason R's formula arrived scrambled ('2 0 2 , 4 = \\pm \\pi\\in PV r'), as did the constant in A. I reconstructed R as the standard axial formula with r^2; if the printed R actually has r^1 or another defect, the correct choice would be option 3 instead. Needs a look at the original text.",
+  "b6_agrees_with_key": false
+}

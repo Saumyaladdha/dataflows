@@ -1,0 +1,119 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "of common ion effect. It can be defined as a shift in equilibrium on adding a substance that provides more of an ionic species already present in the dissociation equilibrium. Thus, we can say that common ion effect is a phenomenon based on the Le Chatelier’s principle discussed in section 6.8.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "In order to evaluate the pH of the solution resulting on addition of 0.05M acetate ion to 0.05M acetic acid solution, we shall consider the acetic acid dissociation equilibrium once again,"
+    },
+    {
+      "n": 3,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [260, 698, 830, 822],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Let x be the extent of ionization of acetic acid."
+    },
+    {
+      "n": 5,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [260, 910, 830, 1066],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Therefore,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [216, 1120, 848, 1160],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "As Ka is small for a very weak acid, x<<0.05. Hence, (0.05 + x) ≈ (0.05 – x) ≈  0.05"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Thus,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [216, 1296, 868, 1432],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "Problem 6.24 Calculate the pH of a 0.10M ammonia solution. Calculate the pH after 50.0 mL of this solution is treated with 25.0 mL of 0.10M HCl. The dissociation constant of ammonia, Kb = 1.77 × 10–5 Solution"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [227, 1676, 848, 1758],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "box",
+      "text": "Before neutralization, [NH4 +] = [OH–] = x [NH3] = 0.10 – x   0.10 x2 / 0.10 = 1.77 × 10–5 Thus, x = 1.33 × 10–3 = [OH–] Therefore, [H+] = Kw / [OH–] = 10–14 / (1.33 × 10–3) = 7.51 × 10–12 pH = –log (7.5 × 10–12) = 11.12 On addition of 25 mL of 0.1M HCl solution (i.e., 2.5 mmol of HCl) to 50 mL of 0.1M ammonia solution (i.e., 5 mmol of NH3), 2.5 mmol of ammonia molecules are neutralized. The resulting 75 mL solution contains the remaining unneutralized 2.5 mmol of NH3 molecules and 2.5 mmol of NH4 +."
+    },
+    {
+      "n": 14,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [906, 734, 1468, 896],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "box",
+      "text": "The resulting 75 mL of solution contains 2.5 mmol of NH4 + ions (i.e.,  0.033 M) and 2.5 mmol (i.e.,  0.033 M ) of uneutralised NH3 molecules. This NH3 exists in the following equilibrium:"
+    },
+    {
+      "n": 16,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [906, 1068, 1424, 1144],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "box",
+      "text": "where, y  =  [OH–]  =  [NH4 +] The final 75 mL solution after neutralisation already contains 2.5 m mol NH4 + ions (i.e. 0.033M), thus total concentration of NH4 + ions is given as: [NH4 +] = 0.033 + y As y is small, [NH4OH]  0.033 M and [NH4 +]  0.033M. We know, Kb = [NH4 +][OH–] / [NH4OH] = y (0.033)/(0.033) = 1.77 × 10–5 M Thus, y = 1.77 × 10–5 = [OH–] [H+] = 10–14 / 1.77 × 10–5 = 0.56 × 10–9 Hence, pH = 9.24"
+    },
+    {
+      "n": 18,
+      "kind": "heading",
+      "text": "6.11.9 Hydrolysis of Salts and the pH of their Solutions"
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "Salts formed by the reactions between acids and bases in definite proportions, undergo ionization in water. The cations/anions",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["EQUILIBRIUM", "201", "2024-25"],
+  "note": "Two-column page; left column read before right. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 33 output I wrote myself rather than against the input: page 33 ended mid-sentence at 'This phenomenon is an example', and this page opens 'of common ion effect. It can be defined as...', so first_block_continues_from_previous is true. The acetic-acid worked calculation in the body text is split so the aligned concentration rows go to the special transcriber as two table blocks (block 3, the HAc reaction with its Initial concentration row; block 5, the Change and Equilibrium concentration rows) with the printed prose line 'Let x be the extent of ionization of acetic acid.' kept as a paragraph between them, where the page prints it. Blocks 7 and 10 are the display Ka expression and the three-line numerical finish. Inside the pink Problem 6.24 panel, block 12 is the NH3 + H2O reaction with its Kb line, block 14 the NH3 + HCl stoichiometry rows and block 16 the NH4OH equilibrium with its concentration row; the surrounding panel prose is blocks 11, 13, 15 and 17, and block 13 runs from the foot of the left column into the top of the right column, which is how the text layer stores it too. Where the text layer puts a superscript charge on its own line it is reproduced detached ('NH4 +'), and the approximately-equal signs printed in the panel are absent from the text layer, so those lines are copied as the text layer has them. last_block_continues_on_next is true because the page ends mid-sentence at 'The cations/anions'."
+}

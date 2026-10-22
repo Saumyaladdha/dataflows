@@ -1,0 +1,131 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [356, 205, 1397, 730],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Figure 6.30 shows a cross-section of a rigid body rotating about a fixed axis, which is taken as the z-axis (perpendicular to the plane of the page; see Fig. 6.29). As said above we need to consider only those forces which lie in planes perpendicular to the axis. Let F1 be one such typical force acting as shown on a particle of the body at point P1 with its line of action in a plane perpendicular to the axis. For convenience we call  this to be the x′–y′ plane (coincident with the plane of the page). The particle at P1 describes a circular path of radius r1 with centre C on the axis; CP1 = r1."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In time ∆t, the point moves to the position P1′. The displacement of the particle ds1, therefore, has magnitude ds1 = r1dθ and direction tangential at P1 to the circular path as shown. Here dθ is the angular displacement of the particle, dθ = ∠P1CP1′ .The work done by the force on the particle is"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [246, 1477, 821, 1515],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "where φ1 is the angle between F1 and the tangent at P1, and α1 is the angle between  F1 and the radius vector OP1; φ1 + α1 = 90°."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The torque due to F1 about the origin is OP1 × F1. Now OP1 = OC + OP1. [Refer to Fig. 6.17(b).] Since OC is along the axis, the torque resulting from it is excluded from our consideration. The effective torque due to F1 is τ1= CP × F1; it is directed along the axis of rotation and has a magnitude τ1= r1F1 sinα , Therefore,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [246, 1852, 425, 1890],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "If there are more than one forces acting on the body, the work done by all of them can be added to give the total work done on the body. Denoting the magnitudes of the torques due to the different forces as τ1, τ2, …  etc,"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [921, 948, 1185, 986],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Remember, the forces giving rise to the torques act on different particles, but the angular displacement dθ is the same for all particles. Since all the torques considered are parallel to the fixed axis, the magnitude τ of the total torque is just the algebraic sum of the magnitudes of the torques, i.e., τ = τ1 + τ2 + ..... We, therefore, have"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [921, 1274, 1523, 1312],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "This expression gives the work done by the total (external) torque τ which acts on the body rotating about a fixed axis. Its similarity with the corresponding expression"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [911, 1450, 1082, 1484],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "for linear (translational) motion is obvious."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Dividing both sides of Eq. (6.39) by dt gives"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [921, 1553, 1276, 1633],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [916, 1650, 1523, 1688],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "This is the instantaneous power. Compare this expression for power in the case of rotational motion about a fixed axis with that of power in the case of linear motion,"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [911, 1810, 1012, 1846],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "In a perfectly rigid body there is no internal motion. The work done by external torques is"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "119",
+    "2024-25"
+  ],
+  "note": "Two-column page with a full-width table at the top; reading order is table, then left column, then right column. Block 1 is Table 6.2 (caption 'Table 6.2 Comparison of Translational and Rotational Motion' is included inside the table bbox); it begins with its own caption and header row and ends with row 9, so it neither continues from the previous page nor onto the next. The text_layer places the whole table at the end of its stream, out of reading order. `previous_page_last_block` was null even though this is page 28, so first_block_continues_from_previous was judged from the page image alone (the table starts fresh with its caption). Displayed formulae were emitted as equation blocks with needs_special rather than transcribed, because the text layer scrambles sub/superscripts onto separate lines; inline maths in paragraphs was copied as the text layer holds it (e.g. 'F1', 'r1dθ', '∠P1CP1′'), reassembled into visual reading order. Spacing oddities present in the text layer were kept verbatim ('we call  this', 'between  F1')."
+}

@@ -1,0 +1,157 @@
+{
+  "chapter": "BIO11-CH19",
+  "subtopics": [
+    {
+      "n": 1,
+      "name": "The human endocrine system: endocrine glands and hormone-producing tissues",
+      "from_heading": "19.2",
+      "passages": [
+        "BIO11L-CH19-P01",
+        "BIO11L-CH19-P02",
+        "BIO11L-CH19-P37",
+        "BIO11L-CH19-P39",
+        "BIO11L-CH19-P40",
+        "BIO11L-CH19-P42",
+        "BIO11L-CH19-P43",
+        "BIO11L-CH19-P45"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "The hypothalamus and its releasing and inhibiting hormones",
+      "from_heading": "19.2.1",
+      "passages": [
+        "BIO11L-CH19-P03"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "The pituitary gland and its hormones",
+      "from_heading": "19.2.2",
+      "passages": [
+        "BIO11L-CH19-P04",
+        "BIO11L-CH19-P05",
+        "BIO11L-CH19-P41"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Disorders of pituitary secretion: gigantism, dwarfism, acromegaly and diabetes insipidus",
+      "from_heading": "19.2.2",
+      "passages": [
+        "BIO11L-CH19-P06",
+        "BIO11L-CH19-P07",
+        "BIO11L-CH19-P08"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "The pineal gland and melatonin",
+      "from_heading": "19.2.3",
+      "passages": [
+        "BIO11L-CH19-P09"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Thyroid gland: thyroid hormones, their functions and thyroid disorders",
+      "from_heading": "19.2.4",
+      "passages": [
+        "BIO11L-CH19-P10",
+        "BIO11L-CH19-P11",
+        "BIO11L-CH19-P12"
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Parathyroid gland and parathyroid hormone",
+      "from_heading": "19.2.5",
+      "passages": [
+        "BIO11L-CH19-P13",
+        "BIO11L-CH19-P14"
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Thymus and thymosins",
+      "from_heading": "19.2.6",
+      "passages": [
+        "BIO11L-CH19-P15"
+      ]
+    },
+    {
+      "n": 9,
+      "name": "Adrenal gland: medullary catecholamines, corticoids and Addison's disease",
+      "from_heading": "19.2.7",
+      "passages": [
+        "BIO11L-CH19-P16",
+        "BIO11L-CH19-P17",
+        "BIO11L-CH19-P18",
+        "BIO11L-CH19-P19",
+        "BIO11L-CH19-P20",
+        "BIO11L-CH19-P21"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Endocrine pancreas: islets of Langerhans, insulin and glucagon",
+      "from_heading": "19.2.8",
+      "passages": [
+        "BIO11L-CH19-P22",
+        "BIO11L-CH19-P23",
+        "BIO11L-CH19-P24"
+      ]
+    },
+    {
+      "n": 11,
+      "name": "Diabetes mellitus",
+      "from_heading": "19.2.8",
+      "passages": [
+        "BIO11L-CH19-P25",
+        "BIO11L-CH19-P44"
+      ]
+    },
+    {
+      "n": 12,
+      "name": "Testis: androgens and their functions",
+      "from_heading": "19.2.9",
+      "passages": [
+        "BIO11L-CH19-P26",
+        "BIO11L-CH19-P27",
+        "BIO11L-CH19-P38"
+      ]
+    },
+    {
+      "n": 13,
+      "name": "Ovary: estrogen and progesterone",
+      "from_heading": "19.2.10",
+      "passages": [
+        "BIO11L-CH19-P28",
+        "BIO11L-CH19-P29",
+        "BIO11L-CH19-P30"
+      ]
+    },
+    {
+      "n": 14,
+      "name": "Hormones of the heart, kidney and gastrointestinal tract",
+      "from_heading": "19.3",
+      "passages": [
+        "BIO11L-CH19-P31",
+        "BIO11L-CH19-P32",
+        "BIO11L-CH19-P33"
+      ]
+    },
+    {
+      "n": 15,
+      "name": "Mechanism of hormone action: receptors and second messengers",
+      "from_heading": "19.4",
+      "passages": [
+        "BIO11L-CH19-P34",
+        "BIO11L-CH19-P35",
+        "BIO11L-CH19-P36",
+        "BIO11L-CH19-P46"
+      ]
+    }
+  ],
+  "note": "chapter_title in the input is \"SUMMARY\", which looks like an extraction artifact rather than the chapter's real title. The headings list starts at 19.2, so there is no heading for an introductory section; P01 is an unlabelled figure before 19.2 and is placed in the endocrine-system overview subtopic. P46 is a bare heading passage whose text is only \"NOTE\" with no content (an extraction artifact); it is attached to the last content subtopic (19.4) so that it is covered. Disorder passages were mostly kept with their gland; the pituitary disorders (P06-P08) and diabetes mellitus (P25) were given their own subtopics because they are self-contained and testable on their own, while Addison's disease (P17) and exophthalmic goitre (P11) are single sentences kept inside the adrenal and thyroid subtopics respectively. Summary passages P37-P38 and exercise passages P39-P45 are attached to the content subtopic they most directly match; several exercise passages span many glands and were assigned to the overview subtopic."
+}

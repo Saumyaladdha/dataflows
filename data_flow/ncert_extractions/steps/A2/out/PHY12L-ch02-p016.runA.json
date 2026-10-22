@@ -1,0 +1,98 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "(c) Suppose that the same system of charges is now placed in an external electric field E = A (1/r²); A = 9 × 10⁵ NC⁻¹ m². What would the electrostatic energy of the configuration be?\nSolution",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [545, 462, 1231, 521],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "(b) W = U₂ – U₁ = 0 – U = 0 – (–0.7) = 0.7 J.\n(c) The mutual interaction energy of the two charges remains unchanged. In addition, there is the energy of interaction of the two charges with the external electric field. We find,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [594, 675, 1210, 745],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "and the net electrostatic energy is"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [589, 794, 1507, 918],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "2.8.3  Potential energy of a dipole in an external field"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Consider a dipole with charges q₁ = +q and q₂ = –q placed in a uniform electric field E, as shown in Fig. 2.16."
+    },
+    {
+      "n": 9,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [211, 1123, 767, 1652],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "As seen in the last chapter, in a uniform electric field, the dipole experiences no net force; but experiences a torque τ given by"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [810, 1231, 1544, 1280],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "which will tend to rotate it (unless p is parallel or antiparallel to E). Suppose an external torque τext is applied in such a manner that it just neutralises this torque and rotates it in the plane of paper from angle θ₀ to angle θ₁ at an infinitesimal angular speed and without angular acceleration. The amount of work done by the external torque will be given by"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [810, 1539, 1544, 1690],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "This work is stored as the potential energy of the system. We can then associate potential energy U(θ) with an inclination θ of the dipole. Similar to other potential energies, there is a freedom in choosing the angle where the potential energy U is taken to be zero. A natural choice is to take θ₀ = π / 2. (An explanation for it is provided towards the end of discussion.)  We can then write,"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [567, 2003, 1544, 2090],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["Physics", "60", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null even though page is 16; judged continuation from the page itself, which opens mid-box with item (c) of a worked example whose parts (a) and (b) are not on this page. Blocks 1-6 are all inside the single shaded worked-example box; the box carries a vertical side tab reading 'EXAMPLE 2.5', which is not transcribed as a block. The box's internal display equations are split out as separate needs_special equation blocks so they can be transcribed properly, so the box is represented by blocks 1-6 rather than one block. Reading order for the lower half follows the left-column-first rule, so the Fig. 2.16 illustration (block 9, bbox includes its 'FIGURE 2.16 Potential energy of a dipole in a uniform external field.' caption) is listed before the right-column text it sits beside. Block 13 covers both the W = integral expression and the numbered result (2.31). Side-heading duplication in the text layer was collapsed to a single occurrence (block 7); sub/superscripts were taken from the page image, not the scrambled text layer."
+}

@@ -1,0 +1,6 @@
+{
+  "kind": "equation",
+  "latex": "\\text{Answers to Some Intext Questions}",
+  "number": null,
+  "note": "unsure: the crop does show this block, but what sits inside target_box_in_crop is not an equation -- it is the bold centred section heading 'Answers to Some Intext Questions'. There is no mathematical or chemical expression inside the target box, so the heading text is given verbatim in `latex` wrapped in \\text{}. The exercise 9.14 text above and the answer line '9.4 (i) C6H5NH2 < NH3 < ...' below lie outside target_box_in_crop and belong to other blocks, so they are excluded. Upstream classification of this block as `equation` appears wrong."
+}

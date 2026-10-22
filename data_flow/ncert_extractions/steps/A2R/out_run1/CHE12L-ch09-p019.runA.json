@@ -1,0 +1,41 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "The whole worked solution of Example 9.5 is gone. The book prints a six-structure synthesis scheme inside the example box: 4-nitrotoluene -> (Br2) 2-bromo-4-nitrotoluene -> (Sn/HCl) the amine -> (NaNO2/HCl, 273-278 K) the diazonium chloride -> (H2O, H3PO2) 2-bromotoluene -> (KMnO4, -OH) 2-bromobenzoic acid, with every ring, every substituent label (CH3, NO2, Br, NH2, N2Cl, COOH) and every reagent over its arrow. The render's example box contains only the question line 'How will you convert 4-nitrotoluene to 2-bromobenzoic acid ?' and the bare words 'Example 9.5' and 'Solution' -- the box is a narrow empty strip with no chemistry in it at all.",
+      "where": "the Example 9.5 box, upper third of the page"
+    },
+    {
+      "kind": "missing",
+      "what": "The Summary panel is cut off part-way through its second paragraph. The book's second paragraph reads 'Amines are usually formed from nitro compounds, halides, amides, imides, etc. They exhibit hydrogen bonding which influence their physical properties. In alkylamines, a combination of electron releasing, steric and H-bonding factors influence the stability of the substituted ammonium cations in protic polar solvents and thus affect the basic nature of amines. Alkyl amines are found to be stronger bases than ammonia. In aromatic amines, electron releasing and withdrawing groups, respectively increase and decrease their basic character. Aniline is a weaker base...'. The render stops dead after 'nitro compounds, halides, amides, imides, etc.' -- everything from 'They exhibit hydrogen bonding' onward is absent, and the panel simply closes.",
+      "where": "the Summary panel, second paragraph"
+    },
+    {
+      "kind": "missing",
+      "what": "The book prints the general formulae of secondary and tertiary amines as R2NH or R-NHR', and R3N, RNR'R'' or R2NR'. In the render the primed formulae are replaced by mojibake -- 'R3N,RNR(c)R(c)(c)(c)(c)(c)(c)' and 'R2NR(c).(c).(c).(c).(c)' with repeated cent-sign glyphs -- so the reader cannot tell what the tertiary-amine formulae are. The prime marks that distinguish R' from R'' are lost outright.",
+      "where": "Summary panel, first paragraph, third and fourth lines"
+    },
+    {
+      "kind": "misplaced",
+      "what": "The Intext Question panel has lost its frame and its structure. The book sets it as a rounded box with a red side tab reading 'Intext Question', the number 9.9 and 'Convert' on one line, and the two sub-parts indented beneath: '(i) 3-Methylaniline into 3-nitrotoluene.' and '(ii) Aniline into 1,3,5 - tribromobenzene.' The render drops the box and the tab and stacks five unindented left-aligned lines -- 'Intext Question', '9.9', 'Convert', '(i) ...', '(ii) ...' -- so the stem '9.9 Convert' is detached from the list it introduces and the panel no longer reads as an intext question.",
+      "where": "middle of the page, between the Example box and the Summary"
+    },
+    {
+      "kind": "formatting",
+      "what": "Word spaces are dropped at several line joins in the Summary, producing run-together words that are not in the book: 'replacement ofhydrogen', 'one hydrogen atom ofammonia', 'primary amine.Secondary amines', 'tertiaryamines', 'known assimple amines', 'if thegroups are different', 'one unsharedelectron pair'.",
+      "where": "Summary panel, first paragraph"
+    },
+    {
+      "kind": "formatting",
+      "what": "The Summary's bold key terms are set in light grey roman instead of bold black: 'Amines', 'R-NH2', 'primary amine', 'Secondary amines', 'tertiary amines', 'Lewis bases' and 'alkylamines' all lose their emphasis, so the panel no longer flags its defined terms.",
+      "where": "throughout the Summary panel"
+    },
+    {
+      "kind": "formatting",
+      "what": "The 'Example 9.5' and 'Solution' labels are set as plain roman body text inside the box instead of the book's blue script display labels, and the example box's blue side tab is reduced to a thin bar.",
+      "where": "right side of the Example 9.5 box"
+    }
+  ],
+  "note": "Compared block by block against page 277. The opening two lines of carry-over text, the question line of Example 9.5, the text of Intext Question 9.9 with both sub-parts, the Summary heading and the folio '277 Amines' are present. Roughly the bottom half of the rendered page is blank; that is the symptom of the two missing blocks above (the Example 9.5 scheme and the tail of the Summary), not a separate finding. I could not judge from the images whether the Summary truncation is a text-extraction cut or a panel overflow clip, and the mojibake glyphs render as cent signs at this resolution so I am reporting what they replaced rather than their exact codepoint."
+}

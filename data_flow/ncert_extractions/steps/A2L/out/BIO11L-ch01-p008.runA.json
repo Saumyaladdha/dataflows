@@ -1,0 +1,79 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.5,
+    "text_block": [0.127, 0.137, 0.902, 0.907],
+    "fill": 0.98,
+    "columns": [
+      {"id": "left", "x0": 0.127, "x1": 0.362},
+      {"id": "right", "x0": 0.378, "x1": 0.901}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+
+    {"n": null, "role": "rule_bar", "bbox": [0.0, 0.082, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.066, 0.184, 0.095],
+     "column": "full", "size_rel": 1.0, "size_pt": 11.0, "align": "left",
+     "font": "serif-bold", "fill": "#ffffff", "text_color": "#221f1f",
+     "space_before": 0.0},
+
+    {"n": null, "role": "running_header", "bbox": [0.841, 0.084, 0.900, 0.094],
+     "column": "full", "size_rel": 1.0, "size_pt": 11.0, "align": "right",
+     "font": "serif", "text_color": "#221f1f", "space_before": 0.0},
+
+    {"n": 1, "role": "figure", "bbox": [0.128, 0.190, 0.362, 0.496],
+     "column": "left", "size_rel": 1.0, "align": "center", "fill": "#fffac1",
+     "text_color": "#221f1f", "space_before": 0.053},
+
+    {"n": null, "role": "figure_caption", "bbox": [0.148, 0.511, 0.340, 0.606],
+     "column": "left", "size_rel": 0.85, "size_pt": 9.5, "align": "justify",
+     "font": "serif", "text_color": "#6d6e71", "indent": 0.021,
+     "space_before": 0.014},
+
+    {"n": 2, "role": "paragraph", "bbox": [0.378, 0.137, 0.901, 0.203],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.0},
+
+    {"n": 3, "role": "section_heading", "bbox": [0.382, 0.223, 0.537, 0.237],
+     "column": "right", "size_rel": 1.05, "size_pt": 11.5, "align": "left",
+     "font": "serif-bold", "text_color": "#00adef", "space_before": 0.019},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.378, 0.250, 0.901, 0.353],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.013},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.378, 0.359, 0.901, 0.443],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "indent": 0.030, "space_before": 0.006},
+
+    {"n": 6, "role": "paragraph", "bbox": [0.378, 0.450, 0.901, 0.589],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "indent": 0.030, "space_before": 0.006},
+
+    {"n": 7, "role": "paragraph", "bbox": [0.379, 0.602, 0.901, 0.632],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.013},
+
+    {"n": null, "role": "table_caption", "bbox": [0.287, 0.649, 0.746, 0.662],
+     "column": "full", "size_rel": 0.95, "size_pt": 10.5, "align": "center",
+     "font": "serif-bold", "text_color": "#221f1f", "space_before": 0.017},
+
+    {"n": 8, "role": "table", "bbox": [0.127, 0.670, 0.902, 0.907],
+     "column": "full", "size_rel": 0.85, "size_pt": 9.5, "align": "left",
+     "font": "serif", "fill": "#fedab4", "text_color": "#221f1f",
+     "space_before": 0.008},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.051},
+
+    {"n": null, "role": "running_header", "bbox": [0.476, 0.956, 0.523, 0.963],
+     "column": "full", "size_rel": 0.75, "size_pt": 8.0, "align": "center",
+     "font": "serif", "text_color": "#000000", "space_before": 0.0}
+  ],
+  "note": "Body page, 1700x2178 px, laid out as a narrow LEFT marginal rail plus a wide RIGHT text column, with two full-width elements at the foot. LEFT RAIL: Figure 1.1 (the Kingdom-to-Species hierarchy) prints on a pale-yellow panel, flat interior sampled #fffac1, x 218-616 px, y 414-1081 px; its caption is a SEPARATE box beneath the panel (x 251-578, y 1112-1320), set grey #6d6e71 at 0.85x body, with a hanging bold 'Figure 1.1' label on line 1 and the continuation lines indented further to x=410 (indent 0.021 reported is the element's own inset from the column; the deeper hanging indent of lines 2-7 is not separately representable). RIGHT COLUMN: all prose, measure x 643-1531 px, justified, line pitch 39.4 px. FULL WIDTH: Table 1.1 at the foot, outer rule x 216-1533, y 1459-1976, fill sampled at many flat interior points as #fedab4 with an orange outer border #fcbb75 and white inner gridlines. MEASURED DISAGREEMENT WITH THE BRIEFING: the table's header row is NOT a darker ground. Sampling the flat interior of the header band (y 1463-1547) and of every data row returns the identical #fedab4; the header reads darker only because its type is bold and dense. Reporting the measurement, not the expectation. TOP FURNITURE: two stacked bands, a pale-green one y 0-178 (#e0ebb6) reported as page_header_band and a grey strip y 179-206 (#d1d2d4) reported as rule_bar because the allowed role list has no second header-band value; both span the full sheet edge to edge. The page number sits in a white rounded tab (#ffffff) that straddles both bands, and the running header 'BIOLOGY' is small caps in the grey strip (large cap 20.5 px = 1.0x body, small caps 14 px). FOOT: the green band y 2087-2178 (#cadf7f) is reported as footer_rule though it is a deep band, not a thin rule; the '2024-25' line inside it is reported as running_header, the nearest allowed role for a running foot. body_text_size_px measured cap-to-baseline on the right-column prose (C of 'Chordata' y 376-396, T of 'Table' y 1310-1330, ascender-to-baseline y 298-318). size_pt is derived, not directly readable: the sheet is 1700 px wide at a 612 pt page width (200 DPI, 2.78 px/pt), giving a body cap height of 7.4 pt and a body face of about 11 pt, so size_pt = size_rel x 11. Note this step's 'Rules' ask for size_pt on headings and captions while its 'Never' list forbids absolute point sizes; size_pt is supplied per the explicit instruction, and size_rel remains the primary measure. space_before is the gap above an element measured from the bottom of the preceding element IN THE SAME COLUMN, and from the top of the text block for the first element of a column (so block 2 and the figure both start their columns). page.fill 0.98 = 1643 of 1678 rows inside the text block carry ink or panel colour; this page is set nearly solid from the first body line to the foot of the table. Every A2 block matched a position confidently; no nulls were guessed. Element count 16, which includes 6 furniture items A2 never blocked (two top bands, page number, running header, foot band, foot line)."
+}

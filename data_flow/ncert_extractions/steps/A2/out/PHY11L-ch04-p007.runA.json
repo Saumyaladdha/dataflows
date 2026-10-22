@@ -1,0 +1,179 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "component of velocity normal to the force remains unchanged. For example, in the motion of a projectile under the vertical gravitational force, the horizontal component of velocity remains unchanged (Fig. 4.5).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "3. The second law of motion given by Eq. (4.5) is applicable to a single point particle. The force F in the law stands for the net external force on the particle and a stands for acceleration of the particle. It turns out, however, that the law in the same form applies to a rigid body or, even more generally, to a system of particles. In that case, F refers to the total external force on the system and a refers to the acceleration of the system as a whole.  More precisely, a is the acceleration of the centre of mass of the system about which we shall study in detail in Chapter 6. Any internal forces in the system are not to be included in F."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        200,
+        871,
+        849,
+        1383
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "4. The second law of motion is a local relation which means that force F at a point in space (location of the particle) at a certain instant of time is related to a at that point at that instant. Acceleration here and now is determined by the force here and now, not by any history of the motion of the particle (See Fig. 4.5)."
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Example 4.2  A bullet of mass 0.04 kg moving with a speed of 90 m s–1 enters a heavy wooden block and is stopped after a distance of 60 cm. What is the average resistive force exerted by the block on  the bullet?"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Answer  The retardation ‘a’ of the bullet (assumed constant) is given by"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        909,
+        294,
+        1542,
+        377
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The retarding force, by the second law of motion, is"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        947,
+        474,
+        1407,
+        503
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The actual resistive force, and therefore, retardation of the bullet may not be uniform.  The answer therefore, only indicates the average resistive force."
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "Example 4.3  The motion of a particle of mass m is described by y =  + 2 1 2 ut gt . Find the force acting on the particle."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Answer  We know"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1082,
+        876,
+        1407,
+        958
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Now,"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1120,
+        1004,
+        1353,
+        1077
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        920,
+        1109,
+        1336,
+        1179
+      ],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Then the force is given by Eq.  (4.5)"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1017,
+        1214,
+        1223,
+        1242
+      ],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "Thus the given equation describes the motion of a particle under acceleration due to gravity and y is the position coordinate in the direction of g."
+    },
+    {
+      "n": 20,
+      "kind": "heading",
+      "text": "Impulse"
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "We sometimes encounter examples where a large force acts for a very short duration producing a finite change in momentum of the body. For example, when a ball hits a wall and bounces back, the force on the ball by the wall acts for a very short time when the two are in contact, yet the force is large enough to reverse the momentum of the ball. Often, in these situations, the force and the time duration are difficult to ascertain separately. However, the product of force and time, which is the change in momentum of the body remains a measurable quantity. This product is called impulse:"
+    },
+    {
+      "n": 22,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        920,
+        1989,
+        1526,
+        2056
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "LAWS OF MOTION",
+    "55",
+    "2024-25"
+  ],
+  "note": "Two-column page; blocks listed left column top-to-bottom then right column top-to-bottom, so the Example 4.2 box (bottom of left column) precedes its Answer (top of right column). The Fig. 4.5 block bbox covers the illustration together with its italic caption, left for the special transcriber. Example 4.3's statement contains an inline formula whose sub/superscripts the text layer scrambles below word level ('y = + 2 1 2 ut gt'); the text-layer characters were copied as-is rather than re-rendered. The stray '⊳'/'◄' example-start and example-end markers in the text layer were treated as decorative and not transcribed. No numbered section side-heading appears on this page, so no duplicate-heading artifact arose."
+}

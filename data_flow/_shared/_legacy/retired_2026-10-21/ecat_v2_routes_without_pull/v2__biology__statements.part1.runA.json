@@ -1,0 +1,39 @@
+{
+  "group": "v2__biology__statements.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q077",
+      "question_type": "arrange_in_order",
+      "format": "pick_order",
+      "content_shape": "process",
+      "concept": "Substages of prophase I in order: synapsis (zygotene), crossing over (pachytene), then terminalisation of chiasmata and loss of the nucleolus (diakinesis)",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Chromosomes must pair before they can exchange segments, so synapsis cannot follow crossing over; option 4 is the only one that begins with (a) Crossing over, and that one fact strikes it out.",
+      "traps": [
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "4",
+          "route": "Keeps the events in the order they are printed, (a) to (d). Puts crossing over before synapsis."
+        },
+        {
+          "label": "wrong_site_or_stage",
+          "option": "1",
+          "route": "Puts crossing over last, after the chiasmata have terminalised. Crossing over happens in pachytene, two substages earlier."
+        },
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "2",
+          "route": "Swaps the last two events, losing the nucleolus before the chiasmata terminalise. The first two events are in the right order."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires recall of the order of prophase I substages, demonstrated by the stem's \"Arrange the following events of meiosis in correct sequence\" and by option 3 placing \"(b) Synapsis\" before \"(a) Crossing over\".",
+      "note": "The stem as stored spells \"chaismata\" for chiasmata; the item is still readable and the spelling does not affect any label, so no source damage is recorded. On option 2 the device is the swapped final adjacency (terminalisation before the nucleolus goes) rather than a wrong endpoint, which is the half of sequence_endpoint_or_adjacency it is tagged under."
+    }
+  ],
+  "group_note": "This packet holds one question. It was grouped on structure \"statements\", but the printed shape is not a statement block to be judged - it is four lettered events whose order the options give, so E1 is arrange_in_order and this member does not belong with statement-type packets. That is recorded here rather than left as a silent disagreement with the grouping field. The labels were set by the same tests used on the other ordering item in this run: single_step because one stored sequence fixes all four positions with no step depending on another's result, recall because the sequence is stored rather than derived, and elimination only where one named fact strikes out a named option. On the trap axis each wrong option carries a route naming what moved: the printed list order in option 4, crossing over relocated to the wrong substage in option 1, and a swapped final adjacency in option 2. No trap is placed on option 3, the official answer."
+}

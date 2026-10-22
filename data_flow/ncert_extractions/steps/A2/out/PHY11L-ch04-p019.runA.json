@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "In simple terms, the law can be stated thus :\nForces in nature always occur between pairs of bodies.  Force on a body A by body\nB is equal and opposite to the force on the body B by A.\nAction and reaction forces are simultaneous forces.  There is no cause-effect\nrelation between action and reaction.  Any of the two mutual forces can be\ncalled action and the other reaction.  Action and reaction act on different\nbodies and so they cannot be cancelled out.  The internal action and reaction\nforces between different parts of a body do, however, sum to zero.\n7.\nLaw of Conservation of Momentum\nThe total momentum of an isolated system of particles is conserved.  The law\nfollows from the second and third law of motion.\n8.\nFriction\nFrictional force opposes (impending or actual) relative motion between two\nsurfaces in contact.  It is the component of the contact force along the common\ntangent to the surface in contact.  Static friction fs opposes impending relative\nmotion; kinetic friction fk opposes actual relative motion. They are independent\nof the area of contact and satisfy the following approximate laws :",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        650,
+        725,
+        940,
+        800
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        650,
+        810,
+        890,
+        880
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "µs (co-efficient of static friction) and µk (co-efficient of kinetic friction) are\nconstants characteristic of the pair of surfaces in contact.  It is found\nexperimentally that µk is less than µs .",
+      "continues_from_previous": true
+    },
+    {
+      "n": 5,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        295,
+        1020,
+        1455,
+        1360
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "POINTS TO PONDER\n1.\nForce is not always in the direction of motion.  Depending on the situation, F\nmay be along v, opposite to v, normal to v or may make some other angle with\nv.  In every case, it is parallel to acceleration.\n2.\nIf v = 0 at an instant, i.e. if a body is momentarily at rest, it does not mean that\nforce or acceleration are necessarily zero at that instant.  For example, when a\nball thrown upward reaches its maximum height, v = 0 but the force continues\nto be its weight mg and the acceleration is not zero but g.\n3.\nForce on a body at a given time is determined by the situation at the location of\nthe body at that time.  Force is not ‘carried’ by the body from its earlier history of\nmotion.  The moment after a stone is released out of an accelerated train, there is\nno horizontal force (or acceleration) on the stone, if the effects of the surrounding\nair are neglected.  The stone then has only the vertical force of gravity.\n4.\nIn the second law of motion F = m a, F stands for the net force due to all\nmaterial agencies external to the body.  a is the effect of the force.  ma should\nnot be regarded as yet another force, besides F."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "LAWS  OF  MOTION",
+    "67",
+    "2024-25"
+  ],
+  "note": "Page is the tail of the chapter SUMMARY box, a symbols/units table, and the start of the POINTS TO PONDER box. `previous_page_last_block` was null even though page is 19, so continuation at the top was judged from the page itself: the summary box opens mid-list (numbered items 7 and 8) and mid-sentence flow, so first_block_continues_from_previous is true. Blocks 1 and 4 are two prose runs of the SAME summary box, split only so the two displayed friction equations between them could be marked needs_special. The POINTS TO PONDER box frame is not closed at the bottom of the page and its numbered list stops at item 4, so it continues on the next page. Inline subscripts in the summary prose (fs, fk, µs, µk) are copied as the text layer holds them, unrendered."
+}

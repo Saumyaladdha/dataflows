@@ -1,0 +1,34 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "Table 2.6  Electronic Configurations of the Elements"
+    },
+    {
+      "n": 2,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        253,
+        318,
+        1488,
+        1809
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "* Elements with exceptional electronic configurations"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "66",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "Seam judged against CHE11L-ch02-p037.runA.json, written immediately before this page (the instruction's named anchor p030 has no output on disk). p037 ended with a complete green box and a blank lower half, last_block_continues_on_next false; this page starts with a fresh table title, so first_block_continues_from_previous is false and the two pages agree. last_block_continues_on_next is TRUE because the page ends MID-TABLE, not mid-sentence: Table 2.6 is cut off after Xe, Z = 54, and the remaining elements run on to p039 (whose text layer I can see carries only the table's second footnote, '** Elements with atomic number 112 and above have been reported but not yet fully authenticated and named.', confirming p039 is the continuation sheet of the same table). p039 must therefore set first_block_continues_from_previous true. input's previous_page_last_block was null. The ENTIRE printed content of this page is Table 2.6, a 24-column electronic-configuration grid running H (Z=1) to Xe (Z=54), plus its blue title above and its asterisk footnote below; the lower quarter of the sheet is blank. The table body is 100% image-only: the page's whole text layer is five lines — the page number, the running header, the table title, the footnote and the reprint year — and holds NOT ONE character of the grid (no 'Element Z' header, none of the 1s/2s/2p/3s/3p/3d/4s/4p/4d/4f/5s/5p/5d/5f/6s/6p/6d/7s column labels, none of the 54 element symbols or atomic numbers, none of the occupancy digits, and not the asterisks that mark Cr*, Cu*, Nb*, Mo*, Ru*, Rh*, Pd* and Ag*). So block n=2 defers the whole grid with a bbox and empty text, and the grid is not described. I deliberately did NOT put the title and footnote inside that bbox, which departs from this chapter's usual 'caption inside the figure bbox' pattern, and the reason is the documented instruction/check tension for an almost-entirely-tabular page: those two lines are the only prose the text layer has, so sweeping them into the bbox too would leave the page with zero block text and score 0% recall — below even the 0.50 deferred bar — and fail. Transcribing them as blocks n=1 and n=3 and deferring only the pure-artwork grid is the resolution this step's own guidance prescribes, and it accounts for every word of the layer. The title is printed once, as the table's own title, so it is a heading block and not furniture; the footnote keeps its leading asterisk as printed. bboxes are original-image pixels (1750x2180); the image renders at 1606x2000, so displayed coordinates were scaled by 1.09."
+}

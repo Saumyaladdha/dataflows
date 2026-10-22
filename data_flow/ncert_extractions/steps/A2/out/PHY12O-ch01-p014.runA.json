@@ -1,0 +1,31 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 1.5 A charged metallic sphere A is suspended by a nylon thread. Another charged metallic sphere B held by an insulating handle is brought close to A such that the distance between their centres is 10 cm, as shown in Fig. 1.7(a). The resulting repulsion of A is noted (for example, by shining a beam of light and measuring the deflection of its shadow on a screen). Spheres A and B are touched by uncharged spheres C and D respectively, as shown in Fig. 1.7(b). C and D are then removed and B is brought closer to A to a distance of 5.0 cm between their centres, as shown in Fig. 1.7(c). What is the expected repulsion of A on the basis of Coulomb’s law? Spheres A and C and spheres B and D have identical sizes. Ignore the sizes of A and B in comparison to the separation between their centres.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        530,
+        795,
+        1530,
+        2110
+      ],
+      "text": "",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "14",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p013 output, which ended a complete Example 1.4 panel, so this page's fresh 'Example 1.5' panel does not continue. The page is almost entirely one grey Example 1.5 panel: the question text (box, n=1) then Figure 1.7 with panels (a), (b), (c) and its caption (needs_special figure, n=2, which is all this page's lower two-thirds). The page ends MID-BOX - the panel's 'Solution' continues on p014's successor - so last_block_continues_on_next is true; the flag on n=2 records that the enclosing Example panel runs on, not that the figure itself is cut. The sideways 'EXAMPLE 1.5' margin label duplicates words already in block n=1, so it is not listed as removed."
+}

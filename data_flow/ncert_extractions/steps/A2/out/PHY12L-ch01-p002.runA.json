@@ -1,0 +1,41 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [540, 275, 1517, 683],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "elektron meaning amber. Many such pairs of materials were known which on rubbing could attract light objects like straw, pith balls and bits of papers.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "It was observed that if two glass rods rubbed with wool or silk cloth are brought close to each other, they repel each other [Fig. 1.1(a)]. The two strands of wool or two pieces of silk cloth, with which the rods were rubbed, also repel each other. However, the glass rod and wool attracted each other. Similarly, two plastic rods rubbed with cat’s fur repelled each other [Fig. 1.1(b)] but attracted the fur. On the other hand, the plastic rod attracts the glass rod [Fig. 1.1(c)] and repel the silk or wool with which the glass rod is rubbed. The glass rod repels the fur."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "These seemingly simple facts  were established from years of efforts and careful experiments and their analyses. It was concluded, after many careful studies by different scientists, that there were only two kinds of an entry which is called the electric charge. We say that the bodies like glass or plastic rods, silk, fur and pith balls are electrified. They acquire an electric charge on rubbing. There are two kinds of electrification and we find  that (i) like charges repel and (ii) unlike charges attract each other. The property which differentiates the two kinds of charges is called the polarity of charge."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "When a glass rod is rubbed with silk, the rod acquires one kind of charge and the silk acquires the second kind of charge. This is true for any pair of objects that are rubbed to be electrified. Now if the electrified glass rod is brought in contact with silk, with which it was rubbed, they no longer attract each other. They also do not attract or repel other light objects as they did on being electrified."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Thus, the charges acquired after rubbing are lost when the charged bodies are brought in contact. What can you conclude from these observations? It just tells us that unlike charges acquired by the objects neutralise or nullify each other’s effect. Therefore, the charges were named as positive and negative by the American scientist Benjamin Franklin. By convention, the charge on glass rod or cat’s fur is called positive and that on plastic rod or silk is termed negative. If an object possesses an electric charge, it is said to be electrified or charged. When it has no charge it is said to be electrically neutral."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["2", "Physics", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null although page is 2, so continuation was judged from the page itself: the prose opens mid-sentence with lowercase \"elektron meaning amber.\", so first_block_continues_from_previous is true. Strictly, block 1 in reading order is the top-of-page figure (Figure 1.1 with its caption), which does not itself continue; the continuing text is block 2, flagged continues_from_previous. The text_layer places the Figure 1.1 caption line at the end of the page text, but on the image the figure and caption sit above all body text, so they are listed first in reading order; the caption text is left empty per the needs_special rule. Double spaces inside block 4 (\"facts  were\", \"we find  that\") are copied as they appear in the text_layer. No headings, tables or displayed equations on this page."
+}

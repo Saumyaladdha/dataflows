@@ -1,0 +1,193 @@
+{
+  "question_id": "Q-000314",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:188"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Given below are two statements: In the light of the above statements, choose the most appropriate answer from the options given below:",
+  "statements": [
+    {
+      "label": "Statement I",
+      "text": "The cerebral hemispheres are connected by nerve tract known as corpus callosum."
+    },
+    {
+      "label": "Statement II",
+      "text": "The brain stem consists of the medulla oblongata, pons and cerebrum."
+    }
+  ],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Both Statement I and Statement II are correct.",
+    "2": "Both Statement I and Statement II are incorrect.",
+    "3": "Statement I is correct but Statement II is incorrect.",
+    "4": "Statement I is incorrect but Statement II is correct."
+  },
+  "structure": "statement_i_ii",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "188\nGiven below are two statements: Statement I: The cerebral hemispheres are connected by nerve\ntract known as corpus callosum. Statement II: The brain stem consists of the medulla oblongata, pons\nand cerebrum. In the light of the above statements, choose the most appropriate answer from the\noptions given below:\n(1)\nBoth Statement I and Statement II are\ncorrect.\n(2)\nBoth Statement I and Statement II are\nincorrect.\n(3)\nStatement I is correct but Statement\nII is incorrect.\n(4)\nStatement I is incorrect but Statement II\nis correct.\nNeural Control and Coordination\n",
+  "b4_script_options": {
+    "1": "Both Statement I and Statement II are\ncorrect.",
+    "2": "Both Statement I and Statement II are\nincorrect.",
+    "3": "Statement I is correct but Statement\nII is incorrect.",
+    "4": "Statement I is incorrect but Statement II\nis correct.\nNeural Control and Coordination"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "3",
+  "b6_reason": "The corpus callosum does connect the two cerebral hemispheres, but the brain stem comprises the midbrain, pons and medulla oblongata; the cerebrum is not part of it.",
+  "b6_working": "I correct; II incorrect (cerebrum should be midbrain) -> option 3.",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

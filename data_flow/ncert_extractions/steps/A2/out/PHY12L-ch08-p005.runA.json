@@ -1,0 +1,55 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "a consequence of the displacement current being a source of a magnetic field. Thus, time- dependent electric and magnetic fields give rise to each other! Faraday’s law of electromagnetic induction and Ampere-Maxwell law give a quantitative expression of this statement, with the current being the total current, as in Eq. (8.5). One very important consequence of this symmetry is the existence of electromagnetic waves, which we discuss qualitatively in the next section.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "MAXWELL’S EQUATIONS IN VACUUM"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        194,
+        648,
+        1145,
+        981
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "8.3  ELECTROMAGNETIC WAVES"
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "8.3.1  Sources of electromagnetic waves"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "How are electromagnetic waves produced? Neither stationary charges nor charges in uniform motion (steady currents) can be sources of electromagnetic waves. The former produces only electrostatic fields, while the latter produces magnetic fields that, however, do not vary with time. It is an important result of Maxwell’s theory that accelerated charges radiate electromagnetic waves. The proof of this basic result is beyond the scope of this book, but we can accept it on the basis of rough, qualitative reasoning. Consider a charge oscillating with some frequency. (An oscillating charge is an example of accelerating charge.)   This produces an oscillating electric field in space, which produces an oscillating magnetic field, which in turn, is a source of oscillating electric field, and so on. The oscillating electric and magnetic fields thus regenerate each other, so to speak, as the wave propagates through the space. The frequency of the electromagnetic wave naturally equals the frequency of oscillation of the charge. The energy associated with the propagating wave comes at the expense of the energy of the source – the accelerated charge."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "From the preceding discussion, it might appear easy to test the prediction that light is an electromagnetic wave. We might think that all we needed to do was to set up an ac circuit in which the current oscillate at the frequency of visible light, say, yellow light. But, alas, that is not possible. The frequency of yellow light is about 6 × 10^14 Hz, while the frequency that we get even with modern electronic circuits is hardly about 10^11 Hz. This is why the experimental demonstration of electromagnetic"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electromagnetic Waves",
+    "205",
+    "Reprint 2026-27"
+  ],
+  "note": "Blocks 2 and 3 are the tinted box 'MAXWELL’S EQUATIONS IN VACUUM': its banner title is given as a heading and its whole content (the four numbered displayed equations with their law names in brackets) is one equation block for the special transcriber, since the box contains nothing but equations. Page 4 ended 'the symmetrical counterpart, and is' and this page opens 'a consequence of the displacement current...', so block 1 continues from it; judged from page 4, which I read myself in this batch (previous_page_last_block was null). TEXT LAYER vs IMAGE: the text layer loses superscripts (6 × 1014 for 6 × 10^14 Hz, 1011 for 10^11 Hz) and renders ε0 as '✒0', and it scrambles the boxed equations; superscripts are written with ^ and Greek letters taken from the image. 'time- dependent' keeps NCERT's own stray space."
+}

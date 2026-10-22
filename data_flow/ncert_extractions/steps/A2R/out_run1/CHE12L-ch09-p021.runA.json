@@ -1,0 +1,36 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "Exercise 9.9's six reaction schemes have lost their item labels. The book numbers them (i) through (vi) down the left of the block -- '(i) CH3CH2I ...', '(ii) C6H5N2Cl ...', '(iii) CH3CH2Br ...', '(iv) C6H5NO2 ...', '(v) CH3COOH ...', '(vi) C6H5NO2 ...'. The render prints the six schemes with no numerals at all, so a student answering 9.9 has no way to say which reaction is which.",
+      "where": "the exercise 9.9 block, lower half of the page"
+    },
+    {
+      "kind": "missing",
+      "what": "The page folio is absent. The book prints '279 Amines' bottom right on a yellow rule running across the foot of the page. The render prints neither the number 279, nor the word 'Amines', nor the rule -- only the 'Reprint 2026-27' line below the text area.",
+      "where": "bottom right of the page"
+    },
+    {
+      "kind": "misplaced",
+      "what": "Every exercise stem is detached from the list it introduces. The book sets the exercise number in bold in a hanging left margin ('9.5  How will you convert:') with its sub-parts indented beneath it. In the render the stems '9.5 How will you convert:', '9.7 Write short notes on the following:' and '9.8 Accomplish the following conversions:' are each set as an indented standalone paragraph, while their sub-parts (i), (ii), (iii)... start flush at the left margin in bold -- so the sub-parts sit further left and read heavier than the exercise they belong to, and the stem looks like an unrelated inserted line. 9.6's stem is likewise run as an indented paragraph with its continuation flush left.",
+      "where": "exercises 9.5 through 9.9, left margin"
+    },
+    {
+      "kind": "formatting",
+      "what": "The emphasis hierarchy is inverted: the book sets the exercise numbers 9.5-9.9 in bold and the sub-part numerals (i), (ii), (iii)... in plain roman. The render sets the sub-part numerals in bold and the exercise numbers 9.5-9.9 in plain roman.",
+      "where": "exercises 9.4(b)-(vi), 9.5, 9.8"
+    },
+    {
+      "kind": "formatting",
+      "what": "Italic locant prefixes are lost. The book sets the m- and p- prefixes in italics in 'Benzene to m-bromophenol', 'Chlorobenzene to p-chloroaniline' and 'Aniline to p-bromoaniline'. The render prints all three plain roman.",
+      "where": "exercise 9.8, sub-parts (ii), (vi) and (vii)"
+    },
+    {
+      "kind": "formatting",
+      "what": "Word spaces are dropped after the numerals in exercise 9.7, producing '(i)Carbylamine reaction', '(ii)Diazotisation', '(iii)Hofmann's bromamide reaction', '(iv)Coupling reaction', '(v)Ammonolysis', '(vi)Acetylation' and '(vii)Gabriel phthalimide synthesis.' The book sets a space after each numeral.",
+      "where": "exercise 9.7, the two-column list"
+    }
+  ],
+  "note": "Compared block by block against page 279. All exercise text is present and in order: 9.4(b) and (iv)-(vi), 9.5 (i)-(viii), 9.6, 9.7 (i)-(vii) in its two-column arrangement, 9.8 (i)-(ix), and all six reaction schemes of 9.9 with every reagent above and below its arrow (NaCN / OH- Partial hydrolysis / NaOH+Br2; CuCN / H2O/H+ / NH3 delta; KCN / LiAlH4 / HNO2 0 C; Fe/HCl / NaNO2+HCl 273 K / H2O/H+ delta; NH3 delta / NaOBr / NaNO2/HCl; Fe/HCl / HNO2 273 K / C6H5OH), all matching. The book also runs a pink vertical bar down the right edge of the exercise block; the render omits it, but that is page decoration rather than content so it is noted here rather than filed. The bottom sixth of the rendered page is blank, which is consistent with the book's page ending at 9.9(vi) -- nothing appears lost there beyond the folio reported above."
+}

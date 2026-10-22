@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [240, 270, 455, 570],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Svante Arrhenius\n(1859-1927)\nArrhenius was born near Uppsala, Sweden.  He presented his thesis, on the conductivities of electrolyte solutions, to the University of Uppsala in 1884.  For the next five years he travelled extensively and visited a number of research centers in Europe. In 1895 he was appointed professor of physics at the newly formed University of Stockholm, serving its rector from 1897 to 1902.  From 1905 until his death he was Director of physical chemistry at the Nobel Institute in Stockholm.  He continued to work for many years on electrolytic solutions.  In 1899 he discussed the temperature dependence of reaction rates on the basis of an equation, now usually known as Arrhenius equation.\nHe worked in a variety of fields, and made important contributions to immunochemistry, cosmology, the origin of life, and the causes of ice age. He was the first to discuss the ‘green house effect’ calling by that name. He received Nobel Prize in Chemistry in 1903 for his theory of electrolytic dissociation and its use in the development of chemistry."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "base, respectively. In the reverse reaction, H+ is transferred from NH4+ to OH–. In this case, NH4+ acts as a Bronsted acid while OH– acted as a Brönsted base. The acid-base pair that differs only by one proton is called a conjugate acid-base pair. Therefore, OH– is called the conjugate base of an acid H2O and NH4+ is called conjugate acid of the base NH3. If Brönsted acid is a strong acid then its conjugate base is a weak base and vice-versa. It may be noted that conjugate acid has one extra proton and each conjugate base has one less proton."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Consider the example of ionization of hydrochloric acid in water. HCl(aq) acts as an acid by donating a proton to H2O molecule which acts as a base."
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1310, 858, 1590],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "It can be seen in the above equation, that water acts as a base because it accepts the proton. The species H3O+ is produced when water accepts a proton from HCl. Therefore, Cl– is a conjugate base of HCl and HCl is the conjugate acid of base Cl–. Similarly, H2O is a conjugate base of an acid H3O+ and H3O+ is a conjugate acid of base H2O."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "It is interesting to observe the dual role of water as an acid and a base. In case of reaction with HCl water acts as a base while in case of"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "ammonia it acts as an acid by donating a proton."
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "Problem 7.12\nWhat will be the conjugate bases for the following Brönsted acids: HF, H2SO4  and HCO3– ?\nSolution\nThe conjugate bases should have one proton less in each case and therefore the corresponding conjugate bases are: F–, HSO4– and CO32– respectively.\nProblem 7.13\nWrite the conjugate acids for the following Brönsted bases: NH2–, NH3 and HCOO–.\nSolution\nThe conjugate acid should have one extra proton in each case and therefore the corresponding conjugate acids are: NH3, NH4+ and HCOOH respectively.\nProblem 7.14\nThe species: H2O, HCO3–, HSO4– and NH3 can act both as Bronsted acids and bases. For each case give the corresponding conjugate acid and conjugate base.\nSolution\nThe answer is given in the following Table:"
+    },
+    {
+      "n": 10,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [915, 1855, 1535, 2080],
+      "text": "",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "EQUILIBRIUM",
+    "215",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p023 output, which ended '...called Lowry-Brönsted acid and'. The sentence is completed on this page by 'base, respectively.' — but that is block 3, NOT the page's first block: the green Svante Arrhenius biography box spans the full width of the sheet above both columns, so the page opens with the portrait and that box, which do not continue anything, and first_block_continues_from_previous is therefore false. Flagging this here because the continuation into block 3 is real even though the page-level flag cannot express it. The portrait's caption, 'Svante Arrhenius / (1859-1927)', is printed under the photograph and the text layer stores it at the head of the box text; I have transcribed it there (block 2) rather than leaving it to A2S, and left the photograph itself as block 1. Block 5 is the annotated HCl(aq) + H2O(l) ⇌ H3O+(aq) + Cl–(aq) scheme; its red 'adds proton' / 'loses proton' arrows and the 'acid / base / conjugate acid / conjugate base' labels are drawn rather than in the text layer and lie inside its bbox, so the whole scheme is needs_special, as with every displayed expression in this chapter. The pink panel holds Problems 7.12-7.14 (block 9); the three-column answer table of Problem 7.14 is left to A2S as block 10. Superscript charges and the panel's double spaces are spelled as the text layer spells them."
+}

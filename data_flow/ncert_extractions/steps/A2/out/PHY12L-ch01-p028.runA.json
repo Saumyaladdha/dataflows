@@ -1,0 +1,106 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "discussion, the charged comb ‘polarises’ the piece of paper, i.e., induces a net dipole moment in the direction of field. Further, the electric field due to the comb is not uniform. This non-uniformity of the field makes a dipole to experience a net force on it. In this situation, it is easily seen that the paper should move in the direction of the comb!",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "1.12  CONTINUOUS CHARGE DISTRIBUTION"
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        216,
+        605,
+        512,
+        1735
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "We have so far dealt with charge configurations involving discrete charges q1, q2, ..., qn. One reason why we restricted to discrete charges is that the mathematical treatment is simpler and does not involve calculus. For many purposes, however, it is impractical to work in terms of discrete charges and we need to work with continuous charge distributions. For example, on the surface of a charged conductor, it is impractical to specify the charge distribution in terms of the locations of the microscopic charged constituents. It is more feasible to consider an area element DS (Fig. 1.21) on the surface of the conductor (which is very small on the macroscopic scale but big enough to include a very large number of electrons) and specify the charge DQ on that element. We then define a surface charge density s at the area element by"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        535,
+        972,
+        1546,
+        1064
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "We can do this at different points on the conductor and thus arrive at a continuous function s, called the surface charge density. The surface charge density s  so defined ignores the quantisation of charge and the discontinuity in charge distribution at the microscopic level*. s  represents macroscopic surface charge density, which in a sense, is a smoothed out average of the microscopic charge density over an area element DS which, as said before, is large microscopically but small macroscopically. The units for s are C/m2."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Similar considerations apply for a line charge distribution and a volume charge distribution. The linear charge density l of a wire is defined by"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        535,
+        1415,
+        1546,
+        1509
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "where Dl is a small line element of wire on the macroscopic scale that, however, includes a large number of microscopic charged constituents, and DQ is the charge contained in that line element. The units for l are C/m. The volume charge density (sometimes simply called charge density) is defined in a similar manner:"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        535,
+        1674,
+        1546,
+        1757
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "where DQ is the charge included in the macroscopically small volume element DV that includes a large number of microscopic charged constituents. The units for r are C/m3."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "The notion of continuous charge distribution is similar to that we adopt for continuous mass distribution in mechanics. When we refer to"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "*\nAt the microscopic level, charge distribution is discontinuous, because they are discrete charges separated by intervening space where there is no charge."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "28",
+    "Reprint 2026-27"
+  ],
+  "note": "Input gave previous_page_last_block as null although page is 28; first block is nonetheless plainly mid-sentence (begins 'discussion, the charged comb ...'), so first_block_continues_from_previous is true on the evidence of the page itself. Block 3 is the left-margin figure (three diagrams for line, surface and volume charge) together with its 'FIGURE 1.21' caption; it is placed in reading order at the vertical level where it begins on the page. Equation blocks 5, 8 and 10 are the displayed definitions numbered (1.23), (1.24) and (1.25); their equation numbers are inside the bounding boxes. The text layer renders Greek/symbol characters as Roman letters (sigma as 's', lambda as 'l', rho as 'r', Delta as 'D') and puts superscripts on their own lines; per instruction the characters held by the text layer are copied as-is rather than re-rendered (e.g. 'C/m2' and 'C/m3' are superscript 2 and 3 on the page). Block 13 is the page footnote marked '*', kept because it is chapter content, not a running footer; it is itself complete, but last_block_continues_on_next is true because the main column ends mid-sentence at 'When we refer to'."
+}

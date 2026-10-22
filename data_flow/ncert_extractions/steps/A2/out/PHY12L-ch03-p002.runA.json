@@ -1,0 +1,63 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "and the quotient",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [565, 320, 1545, 400],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "is defined to be the current across the area in the forward direction. (If it turn out to be a negative number, it implies a current in the backward direction.)"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Currents are not always steady and hence more generally, we define the current as follows. Let DQ be the net charge flowing across a cross-section of a conductor during the time interval Dt [i.e., between times t and (t + Dt)]. Then, the current at time t across the cross-section of the conductor is defined as the value of the ratio of DQ to Dt in the limit of Dt tending to zero,"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [565, 730, 1545, 825],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "In SI units, the unit of current is ampere. An ampere is defined through magnetic effects of currents that we will study in the following chapter. An ampere is typically the order of magnitude of currents in domestic appliances. An average lightning carries currents of the order of tens of thousands of amperes and at the other extreme, currents in our nerves are in microamperes."
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "3.3 ELECTRIC CURRENTS IN CONDUCTORS"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "An electric charge will experience a force if an electric field is applied. If it is free to move, it will thus move contributing to a current. In nature, free charged particles do exist like in upper strata of atmosphere called the ionosphere. However, in atoms and molecules, the negatively charged electrons and the positively charged nuclei are bound to each other and are thus not free to move. Bulk matter is made up of many molecules, a gram of water, for example, contains approximately 1022 molecules. These molecules are so closely packed that the electrons are no longer attached to individual nuclei. In some materials, the electrons will still be bound, i.e., they will not accelerate even if an electric field is applied. In other materials, notably metals, some of the electrons are practically free to move within the bulk material. These materials, generally called conductors, develop electric currents in them when an electric field is applied."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "If we consider solid conductors, then of course the atoms are tightly bound to each other so that the current is carried by the negatively charged electrons. There are, however, other types of conductors like electrolytic solutions where positive and negative charges both can move. In our discussions, we will focus only on solid conductors so that the current is carried by the negatively charged electrons in the background of fixed positive ions."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Consider first the case when no electric field is present. The electrons will be moving due to thermal motion during which they collide with the fixed ions. An electron colliding with an ion emerges with the same speed as before the collision. However, the direction of its velocity after the collision is completely random. At a given time, there is no preferential direction for the velocities of the electrons. Thus on the average, the"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Physics", "82", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null, but the page opens with the lowercase fragment 'and the quotient', so the first block is marked as continuing from the previous page. Displayed equations (3.1) and (3.2) are emitted as equation blocks with needs_special; bboxes are in original image pixels (1700x2160). Per the text-layer artifact rules, prose keeps the layer's characters: the Greek capital Delta is extracted as Latin 'D' ('DQ', 'Dt') and the superscript in 10^22 is flattened to '1022' in the 'gram of water' sentence."
+}

@@ -1,0 +1,42 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.125, "x1": 0.487},
+      {"id": "right", "x0": 0.513, "x1": 0.877}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.1251, 0.0876, 0.1389, 0.0945],
+     "column": "full", "size_rel": 0.8, "align": "left", "font": "sans", "text_color": "#231f20"},
+    {"n": null, "role": "running_header", "bbox": [0.7989, 0.0872, 0.8766, 0.0945],
+     "column": "full", "size_rel": 0.8, "align": "right", "font": "sans", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.1246, 0.1193, 0.4863, 0.3326],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.1251, 0.3436, 0.4863, 0.3725],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "list", "bbox": [0.1257, 0.3757, 0.4834, 0.4041],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif"},
+    {"n": 4, "role": "paragraph", "bbox": [0.1251, 0.4161, 0.4851, 0.4454],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "figure", "bbox": [0.1937, 0.4683, 0.4526, 0.8899],
+     "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.1743, 0.8986, 0.4354, 0.9101],
+     "column": "left", "size_rel": 0.9, "align": "center", "font": "serif-italic"},
+    {"n": null, "role": "paragraph", "bbox": [0.5137, 0.1197, 0.8749, 0.3972],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "section_heading", "bbox": [0.5143, 0.4087, 0.7366, 0.4216],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#00adef"},
+    {"n": 7, "role": "paragraph", "bbox": [0.5131, 0.4289, 0.8766, 0.8225],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 8, "role": "section_heading", "bbox": [0.5137, 0.8353, 0.8434, 0.8482],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#00adef"},
+    {"n": 9, "role": "paragraph", "bbox": [0.5131, 0.8555, 0.8766, 0.9165],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.4771, 0.9555, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans", "text_color": "#231f20"}
+  ],
+  "note": "Two-column body page, verso (page 62): folio top-left, running header 'CHEMISTRY' top-right, plain text on bare paper. No chapter banner, no coloured page_header_band, no footer_rule; the foot carries only the centred edition line '2024-25', recorded as a second running_header because the role list has no footer-text value. Page is 1750x2180 px, aspect 0.803, not A4. body_text_size_px = 20.0, cap-to-baseline measured on body capitals in both columns ('T' of 'The order may be remembered' and 'T' of 'This rule deals with'). Block 4 breaks across the gutter: its two lines sit at the middle of the left column (the element carrying n 4) and it continues for seventeen lines at the head of the right column, starting 'the top, the direction of the arrows gives the'; that continuation is a separate element with n null. Block 3 is the displayed orbital-order sequence '1s, 2s, 2p, 3s, ...' set flush left on two lines; I kept role 'list' rather than 'equation' because it is a comma-separated sequence of orbital labels, not a formula. Block 5 is the Fig. 2.17 arrow diagram and prints on BARE PAPER with no tinted panel, so no fill is reported; the pale blue #a7dff9 of the orbital bubbles is drawing content inside the figure, not a panel background, so it is not reported as a fill. Its centred italic caption 'Fig.2.17 Order of filling of orbitals' has no matching A2 block and carries n null. Blocks 6 and 8 ('Pauli Exclusion Principle', 'Hund's Rule of Maximum Multiplicity') are subordinate cyan #00adef bold-ITALIC headings, cap 20 px, the same level as 'Aufbau Principle' on the preceding page; both are given role section_heading since the allowed list has no second-level heading role, and 'font' is OMITTED on both because their bold-italic face matches no allowed value (there is no sans-italic and I am not confident whether the face is serif or sans). Blocks 7 and 9 contain several bold runs, but each is one block and one element. A grey 'NCERT / not to be republished' watermark crosses the page; it is a print artefact and is not listed as an element."
+}

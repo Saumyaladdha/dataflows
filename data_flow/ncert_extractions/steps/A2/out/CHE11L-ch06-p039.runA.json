@@ -1,0 +1,82 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Ksp =  [Ag+][CN–] = 6 × 10–17 Ni(OH)2 Ni2+ + 2OH– Ksp = [Ni2+][OH–]2 = 2 × 10–15 Let [Ag+] = S1, then [CN-] = S1 Let [Ni2+] = S2, then [OH–] = 2S2 S1 2 = 6 × 10–17 , S1 = 7.8 × 10–9 (S2)(2S2)2 = 2 × 10–15, S2 = 0.58 × 10–4 Ni(OH)2 is more soluble than AgCN.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "6.13.2 Common Ion Effect on Solubility of Ionic Salts"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "It is expected from Le Chatelier’s principle that if we increase the concentration of any one of the ions, it should combine with the ion of its opposite charge and some of the salt will be precipitated till once again Ksp = Qsp. Similarly, if the concentration of one of the ions is decreased, more salt will dissolve to increase the concentration of both the ions till once again Ksp = Qsp. This is applicable even to soluble salts like sodium chloride except that due to higher concentrations of the ions, we use their activities instead of their molarities in the expression for Qsp. Thus if we take a saturated solution of sodium chloride and pass HCl gas through it, then sodium chloride is precipitated due to increased concentration (activity) of chloride ion available from the dissociation of HCl. Sodium chloride thus obtained is of very high purity and we can get rid of impurities like sodium and magnesium sulphates. The common ion effect is also used for almost complete precipitation of a particular ion as its sparingly soluble salt, with very low value of solubility product for gravimetric estimation. Thus we can precipitate silver ion as silver chloride, ferric ion as its hydroxide (or hydrated ferric oxide) and barium ion as its sulphate for quantitative estimations."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Problem 6.28 Calculate the molar solubility of Ni(OH)2 in 0.10 M NaOH. The ionic product of Ni(OH)2 is 2.0 × 10–15. Solution Let the solubility of Ni(OH)2 be equal to S.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Dissolution of S mol/L of Ni(OH)2 provides S mol/L of Ni2+ and 2S mol/L of OH–, but the total concentration of OH– = (0.10 + 2S) mol/L because the solution already contains 0.10 mol/L of OH– from NaOH. Ksp = 2.0 × 10–15 = [Ni2+] [OH–]2 = (S) (0.10 + 2S)2 As Ksp is small, 2S << 0.10, thus, (0.10 + 2S) ≈ 0.10 Hence, 2.0 × 10–15 = S (0.10)2 S = 2.0 × 10–13 M = [Ni2+]",
+      "continues_from_previous": true
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The solubility of salts of weak acids like phosphates increases at lower pH. This is because at lower pH the concentration of the anion decreases due to its protonation. This in turn increase the solubility of the salt so that Ksp = Qsp. We have to satisfy two equilibria simultaneously i.e.,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [223, 1074, 1548, 1308],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Taking inverse of both side and adding 1 we get"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 1390, 1548, 1615],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Now, again taking inverse, we get"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "[X–] / {[X–] + [HX]} = f = Ka/(Ka + [H+]) and it can be seen that ‘f’ decreases as pH decreases. If S is the solubility of the salt at a given pH then"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 1805, 1548, 1900],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Thus solubility S increases with increase in [H+] or decrease in pH."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["206", "CHEMISTRY", "2024-25"],
+  "note": "Two-column page; left column read first. previous_page_last_block was null in the input, so I judged the opening continuation against the page 38 output file I read myself: page 38 ended mid-solution of Problem 6.27 (its AgCN equilibrium, block 8), and this page opens with the rest of that same pink solution box (Ksp = [Ag+][CN–] ... 'Ni(OH)2 is more soluble than AgCN.'), so first_block_continues_from_previous is true and block 1 carries continues_from_previous. Problem 6.28's box is split across the two columns: the statement and 'Solution Let the solubility of Ni(OH)2 be equal to S.' sit at the foot of the left column (block 4) and the rest of the working ('Dissolution of S mol/L ...') sits at the top of the right column (block 5). They are listed as two blocks, each matching one contiguous run of the text layer, rather than merged, because the text layer prints the right-column half before the left-column half. Left for the special transcriber: the HX(aq) dissociation equilibrium with the displayed Ka fraction (block 7, whose first line 'Ksp = [M+] [X–],' and last line '[X–] / [HX] = Ka/[H+]' are in the text layer but whose middle lines are not), the two stacked fractions of the 'taking inverse' derivation (block 9, whose characters arrive in the text layer as a scrambled column of single symbols), and the numbered equation (6.46) with the Ksp = [S] [f S] line above it (block 12). In block 1 the printed 'S1 squared' is written 'S1 2' because the text layer breaks that superscript onto its own line. last_block_continues_on_next is false: the page closes on the complete sentence 'Thus solubility S increases with increase in [H+] or decrease in pH.'"
+}

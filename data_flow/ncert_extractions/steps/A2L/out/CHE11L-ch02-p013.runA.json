@@ -1,0 +1,50 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.126, "x1": 0.487},
+      {"id": "right", "x0": 0.514, "x1": 0.877}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "running_header", "bbox": [0.126, 0.0876, 0.27, 0.0945],
+     "column": "full", "size_rel": 0.73, "align": "left", "font": "serif"},
+    {"n": null, "role": "page_number", "bbox": [0.862, 0.0872, 0.875, 0.094],
+     "column": "full", "size_rel": 0.73, "align": "right", "font": "serif"},
+    {"n": 1, "role": "paragraph", "bbox": [0.126, 0.1197, 0.487, 0.3812],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "equation", "bbox": [0.177, 0.3894, 0.485, 0.4014],
+     "column": "left", "size_rel": 1.0, "align": "center", "font": "serif-italic"},
+    {"n": 3, "role": "paragraph", "bbox": [0.126, 0.4087, 0.485, 0.4505],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "paragraph", "bbox": [0.126, 0.4606, 0.486, 0.5211],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "paragraph", "bbox": [0.126, 0.5284, 0.486, 0.6321],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "equation", "bbox": [0.155, 0.6427, 0.39, 0.6679],
+     "column": "left", "size_rel": 1.0, "align": "center", "font": "serif-italic"},
+    {"n": 7, "role": "figure", "bbox": [0.13, 0.6954, 0.48, 0.8197],
+     "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.126, 0.828, 0.487, 0.9161],
+     "column": "left", "size_rel": 0.95, "align": "left", "font": "serif-italic"},
+    {"n": 8, "role": "box", "bbox": [0.5137, 0.1193, 0.8766, 0.3312],
+     "column": "right", "size_rel": 0.88, "align": "justify", "font": "serif-italic",
+     "fill": "#cbe7d3"},
+    {"n": null, "role": "decorative_image", "bbox": [0.5297, 0.1325, 0.6337, 0.243],
+     "column": "right", "size_rel": 1.0, "fill": "#cbe7d3"},
+    {"n": 9, "role": "section_heading", "bbox": [0.515, 0.3376, 0.687, 0.35],
+     "column": "right", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "text_color": "#00adef"},
+    {"n": 10, "role": "paragraph", "bbox": [0.515, 0.3569, 0.875, 0.4766],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 11, "role": "list", "bbox": [0.515, 0.4872, 0.875, 0.7803],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 12, "role": "paragraph", "bbox": [0.514, 0.7913, 0.877, 0.9161],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.9555, 0.523, 0.9628],
+     "column": "full", "size_rel": 0.78, "align": "center", "font": "serif"}
+  ],
+  "note": "Ordinary two-column body page (left 0.126-0.487, right 0.514-0.877); running header 'STRUCTURE OF ATOM' top LEFT and page number '41' top RIGHT. No page_header_band, no rule_bar and no footer_rule are printed. No block runs over the column break: block 1 closes at 'equation (2.6).' inside the left column. body_text_size_px 20.5 measured cap-to-baseline on the first left-column prose line. Block 8 is the green Max Planck biography panel at the head of the right column, fill #cbe7d3 sampled from the flat interior (the same green as the box on p006), with a darker green keyline #00a550 around it; its italic text measures 18 px cap-to-baseline, so size_rel 0.88. The portrait photograph inside that panel, at its top left, has no block of its own in the input; it is reported as a separate decorative_image with n: null because it carries no subject content. Blocks 2 and 6 are the two displayed equations, each with its own region; block 2 carries the number (2.6) set flush right on the same line, so its bbox spans to the measure edge. The italic 'Fig.2.9' legend under the apparatus drawing has no block of its own, so n: null. Block 9 ('Photoelectric Effect') is an unnumbered sub-head set in bold italic cyan #00adef at body cap-height, so section_heading with size_rel 1.0. Diagonal '(c) NCERT not to be republished' watermark ignored."
+}

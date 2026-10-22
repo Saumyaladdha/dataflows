@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/B4.json",
+  "title": "B4 output (script text-layer extraction, or b4-second-reader agent)",
+  "description": "Section 10/B4 procedure: when the question's PDF box has a text layer, SCRIPT extracts and splits it (option_parser.py + latex_normalise) with no agent call; only when there is no text layer does the b4-second-reader AGENT independently transcribe the image. SPEC.md defines a JSON shape only for the agent branch (b4-second-reader.md's worked example, which adds a `lines` field over B3's shape and omits `figure_bbox`); the SCRIPT branch's output shape is not spelled out anywhere in SPEC.md as its own contract. This schema therefore models both as alternatives: the agent branch (with `lines`), and a script branch carrying the same assembled fields without `lines` (since the script never transcribes line-by-line) -- this script-branch shape is an inferred, not spec-quoted, reading, flagged here rather than asserted as given.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "lines", "stem_en", "statements", "list_i", "list_ii", "options_en",
+        "structure", "has_figure", "negative_words_seen", "note"
+      ],
+      "additionalProperties": false,
+      "description": "AGENT branch (b4-second-reader, used only when no text layer exists).",
+      "properties": {
+        "lines": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Every printed line in order, exactly, before fields are assembled from them."
+        },
+        "stem_en": { "type": "string" },
+        "statements": { "type": "array", "items": { "$ref": "#/definitions/labelled_text" } },
+        "list_i": { "type": "array", "items": { "$ref": "#/definitions/labelled_text" } },
+        "list_ii": { "type": "array", "items": { "$ref": "#/definitions/labelled_text" } },
+        "options_en": {
+          "type": "object",
+          "required": ["1", "2", "3", "4"],
+          "additionalProperties": false,
+          "properties": {
+            "1": { "type": "string" }, "2": { "type": "string" },
+            "3": { "type": "string" }, "4": { "type": "string" }
+          }
+        },
+        "structure": {
+          "type": "string",
+          "enum": ["plain", "statements", "list", "match", "table", "assertion_reason", "statement_i_ii"]
+        },
+        "has_figure": { "type": "boolean" },
+        "negative_words_seen": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["NOT", "EXCEPT", "INCORRECT", "FALSE", "WRONG"] }
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": [
+        "stem_en", "statements", "list_i", "list_ii", "options_en",
+        "structure", "has_figure", "negative_words_seen", "note"
+      ],
+      "additionalProperties": false,
+      "description": "SCRIPT branch (text-layer extraction, no agent call). Inferred shape -- not a quoted spec contract; see top-level description.",
+      "properties": {
+        "stem_en": { "type": "string" },
+        "statements": { "type": "array", "items": { "$ref": "#/definitions/labelled_text" } },
+        "list_i": { "type": "array", "items": { "$ref": "#/definitions/labelled_text" } },
+        "list_ii": { "type": "array", "items": { "$ref": "#/definitions/labelled_text" } },
+        "options_en": {
+          "type": "object",
+          "required": ["1", "2", "3", "4"],
+          "additionalProperties": false,
+          "properties": {
+            "1": { "type": "string" }, "2": { "type": "string" },
+            "3": { "type": "string" }, "4": { "type": "string" }
+          }
+        },
+        "structure": {
+          "type": "string",
+          "enum": ["plain", "statements", "list", "match", "table", "assertion_reason", "statement_i_ii"]
+        },
+        "has_figure": { "type": "boolean" },
+        "negative_words_seen": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["NOT", "EXCEPT", "INCORRECT", "FALSE", "WRONG"] }
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ],
+  "definitions": {
+    "labelled_text": {
+      "type": "object",
+      "required": ["label", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string" },
+        "text": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "group": "v2__biology__plain.part2",
+  "ratings": [
+    {
+      "question_id": "2015_A#q052",
+      "question_type": "pair_options",
+      "format": "pick_both_parts",
+      "content_shape": "example_list",
+      "concept": "Mineral roles in photosynthesis: Mn and Cl are both needed for the water-splitting reaction that evolves oxygen at PS II",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Manganese is the element NCERT names for splitting water; only options 2 and 3 contain it, so that one fact strikes out options 1 and 4.",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "3",
+          "route": "Gets manganese right and pairs it with potassium. The second element is chlorine; potassium's role is in stomatal opening and solute balance."
+        },
+        {
+          "label": "half_true",
+          "option": "1",
+          "route": "Gets chlorine right and swaps manganese for magnesium. Magnesium sits at the centre of chlorophyll and takes no part in splitting water."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Pairs two elements that belong to other jobs. Magnesium holds the centre of chlorophyll and molybdenum works in nitrogen metabolism."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires recall of which two mineral elements the water-splitting step needs, demonstrated by the stem asking for a \"pair of elements\" and option 2 naming \"Manganese and Chlorine\" together.",
+      "note": "E1 is pair_options, not plain_mcq: each option is two element names accepted or rejected whole, and half an option right scores zero. This is the one member of the packet whose printed shape differs from the rest."
+    },
+    {
+      "question_id": "2015_A#q053",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Placentation types and their stock examples: axile in lemon and tomato, parietal in Argemone, free central in Dianthus, marginal in pea",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Gives the example for parietal placentation. Argemone has a one-chambered ovary with ovules on the wall."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Gives the example for free central placentation. In Dianthus the ovules sit on a central axis with no septa."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Gives the example for marginal placentation. Pea has a single ovary chamber with ovules in a row along the suture."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires recall of which plant is the taught example of axile placentation, demonstrated by the stem \"Axile placentation is present in :\" and by all four options being named plants rather than descriptions.",
+      "note": "No elimination: all four options are the stock NCERT examples of four different placentation types, so the only fact that strikes any of them out is the same fact that answers the question."
+    },
+    {
+      "question_id": "2015_A#q055",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "structure_function",
+      "concept": "Retina: the fovea is packed with cones and carries no rods, which is what makes it the point of sharpest vision",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "The optic nerve leaves the eye at the optic disc, not the fovea, so that one fact strikes out option 3.",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "Turns the key inside out, printing \"only rods\" where the fovea has only cones. The two receptor types are swapped."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Uses the fact that holds for the peripheral retina, where rods outnumber cones. At the fovea the ratio runs the other way."
+        },
+        {
+          "label": "wrong_site_or_stage",
+          "option": "3",
+          "route": "Describes the blind spot instead of the fovea. The optic nerve leaves at the optic disc, a separate point on the retina."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires recall of which photoreceptors the fovea holds, demonstrated by the stem's \"the 'fovea' is the center of the visual field, where :\" and option 2's \"High density of cones occur, but has no rods\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q056",
+      "question_type": "statement_options",
+      "format": "pick_correct_statement",
+      "content_shape": "example_list",
+      "concept": "Economic importance of fungi: yeast in fermentation, Penicillium for antibiotics, Neurospora in biochemical genetics, morels and truffles as edible ascocarps",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Answers as if the stem asked for a correct statement. Yeast really is unicellular and really is used in fermentation."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "Answers as if the stem asked for a correct statement. Penicillium really is multicellular and really is the source of penicillin."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "Answers as if the stem asked for a correct statement. Neurospora really is the organism used in biochemical genetics."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires checking four separate fungal facts and reporting the one that fails, demonstrated by the stem \"Choose the wrong statement:\" and option 4's \"Morels and truffles are poisonous mushrooms\", which reverses their status as edible delicacies.",
+      "note": "This is the only member whose stem is purely an instruction, with each option a standalone claim, so it alone is statement_options. It is also the only member whose task requires a verdict on every option, which is why it alone is several_independent_checks."
+    },
+    {
+      "question_id": "2015_A#q057",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Which cell organelles have a membrane: ribosomes are bare ribonucleoprotein particles, while mesosomes, vacuoles and lysosomes are all membrane-bound",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "look_alike_term",
+          "option": "1",
+          "route": "Takes mesosome for ribosome; the two names differ by one syllable. Mesosomes are infoldings of the plasma membrane, so they are made of membrane."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Answers the question without the \"not\". Lysosomes are membrane-bound sacs of digestive enzymes."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "Answers the question without the \"not\". A vacuole is bounded by the tonoplast."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires recall of which listed organelle lacks a membrane, demonstrated by the stem's \"are not membrane-bound\" and option 3 \"Ribosomes\" being the only listed particle with no bounding membrane.",
+      "note": "single_step rather than several_independent_checks: one stored fact about ribosomes settles the answer, and no verdict on the other three is needed to reach it."
+    },
+    {
+      "question_id": "2015_A#q058",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Population interactions by their signs: competition is the only one that is (-, -); mutualism is (+, +) and predation and parasitism are (+, -)",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Mutualism benefits both partners, the opposite of the stem's criterion, so that one fact strikes out option 1.",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "Reads the stem as asking who benefits rather than who is harmed. Mutualism helps both partners, which is the exact opposite."
+        },
+        {
+          "label": "half_true",
+          "option": "3",
+          "route": "Stops after checking one partner. The prey is harmed but the predator gains, so only one of the two is adversely affected."
+        },
+        {
+          "label": "half_true",
+          "option": "4",
+          "route": "Stops after checking one partner. The host is harmed but the parasite gains, so only one of the two is adversely affected."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires holding four neighbouring interaction types apart on one criterion, demonstrated by the stem's \"both partners are adversely affected\" against options 3 and 4, which are both one-sided (+, -) interactions.",
+      "note": "This is the only member where the stem supplies the criterion and the options are rival technical terms separated by exactly that criterion, which is why it alone carries concept_discrimination instead of recall. On options 3 and 4 half_true is used for an option that meets one half of the stem's two-part condition; the failing half (the predator's or parasite's gain) is named in each route."
+    }
+  ],
+  "group_note": "Six questions grouped on structure \"plain\". Five are plain_mcq or statement_options with single-term or single-claim options and were judged together; two members are flagged as not belonging with the rest. 2015_A#q052 is pair_options, because each option is two element names accepted or rejected whole, and its format is pick_both_parts rather than name_or_identify. 2015_A#q056 is statement_options, because its stem is only the instruction \"Choose the wrong statement:\" and the content lives entirely in the four options. That same question is the only one scored several_independent_checks: one test was applied to all six - does reaching the answer need a verdict on every option, or does one stored fact settle it? Only q056 needs all four verdicts; q057 is also an odd-one-out item but one fact (ribosomes have no membrane) settles it, so it is single_step. Demand is recall for five of the six, since each turns on one stored association, and q058 alone is concept_discrimination because its stem supplies a criterion (\"both partners are adversely affected\") that separates four rival terms. Elimination was granted only where one named fact strikes out named options: manganese in q052, the optic disc in q055, mutualism's sign in q058. It was withheld from q053, where all four options are the stock examples of four different placentation types, so the only fact that strikes one out is the fact that answers the question - that is recorded in q053's note. On the trap axis the recurring device in this packet is an option that is a true fact about a neighbour: a different mineral's job (q052), a different placentation type (q053), a different retinal region (q055), a different organelle (q057). Each is labelled by what moved - other_one_fact where the family is the same and the member differs, wrong_site_or_stage where the event is right and the place is wrong, half_true where one of two claims or one half of the criterion holds, true_statement_trap only where the option is true and fails a printed NOT. No trap is placed on any official answer."
+}

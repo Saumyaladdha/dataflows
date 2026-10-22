@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [493, 285, 1442, 320],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Figure 12.8 illustrates a standing particle wave on a circular orbit\nfor n = 4, i.e., 2πrn = 4λ, where λ is the de Broglie wavelength of the electron\nmoving in nth orbit. From Chapter 11, we have λ = h/p, where p is the\nmagnitude of the electron’s momentum. If the speed of the electron is\nmuch less than the speed of light, the momentum is mvn. Thus, λ = h/\nmvn. From Eq. (12.12), we have"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [493, 556, 1105, 594],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "This is the quantum condition proposed by Bohr for the angular\nmomentum of the electron [Eq. (12.15)]. In Section 12.5, we saw that\nthis equation is the basis of explaining the discrete orbits and energy\nlevels in hydrogen atom. Thus de Broglie hypothesis provided an\nexplanation for Bohr’s second postulate for the quantisation of angular\nmomentum of the orbiting electron. The quantised electron orbits and\nenergy states are due to the wave nature of the electron and only resonant\nstanding waves can persist."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Bohr’s model, involving classical trajectory picture (planet-like electron\norbiting the nucleus), correctly predicts the gross features of the\nhydrogenic atoms*, in particular, the frequencies of the radiation emitted\nor selectively absorbed. This model however has many limitations.\nSome are:"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "(i)\tThe Bohr model is applicable to hydrogenic atoms. It cannot be\nextended even to mere two electron atoms such as helium. The analysis\nof atoms with more than one electron was attempted on the lines of\nBohr’s model for hydrogenic atoms but did not meet with any success.\nDifficulty lies in the fact that each electron interacts not only with the\npositively charged nucleus but also with all other electrons.\nThe formulation of Bohr model involves electrical force between\npositively charged nucleus and electron. It does not include the\nelectrical forces between electrons which necessarily appear in\nmulti-electron atoms."
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "(ii)\tWhile the Bohr’s model correctly predicts the frequencies of the light\nemitted by hydrogenic atoms, the model is unable to explain the\nrelative intensities of the frequencies in the spectrum. In emission\nspectrum of hydrogen, some of the visible frequencies have weak\nintensity, others strong. Why? Experimental observations depict that\nsome transitions are more favoured than others. Bohr’s model is\nunable to account for the intensity variations."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Bohr’s model presents an elegant picture of an atom and cannot be\ngeneralised to complex atoms. For complex atoms we have to use a new\nand radical theory based on Quantum Mechanics, which provides a more\ncomplete picture of the atomic structure."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "*\tHydrogenic atoms are the atoms consisting of a nucleus with positive charge\n+Ze and a single electron, where Z is the proton number. Examples are hydrogen\natom, singly ionised helium, doubly ionised lithium, and so forth. In these\natoms more complex electron-electron interactions are nonexistent."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "302",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read p012 immediately before: it ended 'the total distance is the circumference of the orbit, 2πrn. Thus', and this page opens with the display equation 2π rn = nλ, n = 1, 2, 3... numbered (12.12), which completes that sentence — so block 1 continues from the previous page. Two needs_special display equations: n=1 (numbered 12.12, bbox spans the column so the number is inside) and n=3 (the unnumbered '2π rn = n h/mvn or m vn rn = nh/2π' line). n=9 is the rule-separated footnote keyed to the asterisk in n=5 — chapter content, so blocked rather than removed. Kept as printed, not corrected: n=4 cites '[Eq. (12.15)]' although the quantisation condition is Eq. (12.5) on p010 and this chapter has no Eq. (12.15); both the image and the text layer print 12.15. Text-layer discrepancies corrected from the image: Greek flattened throughout the layer (pi to 'p', lambda to 'l' — 'nl' and '4l' for printed nλ and 4λ, upsilon/v for the speed) and subscripts/superscripts dropped (rn, vn, mvn, and the 'th' in nth), kept in flat form here as the page's own letters. Both the body text and the footnote end in completed sentences, so no continuation."
+}

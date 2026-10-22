@@ -1,0 +1,70 @@
+{
+  "page": {
+    "page_kind": "ordinary_page",
+    "width_px": 1654,
+    "height_px": 2339,
+    "body_text_size_px": 21.0,
+    "text_block": [0.2866, 0.1013, 0.8936, 0.8487],
+    "fill": 0.99,
+    "columns": [
+      {"id": "full", "x0": 0.2866, "x1": 0.8936}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.2007, 0.0004, 0.9565, 0.0359],
+     "column": "full", "size_rel": 1.0, "indent": 0.0, "space_before": 0.0004,
+     "fill": "#4a7435"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.0004, 0.1844, 0.0902],
+     "column": "full", "size_rel": 1.0, "indent": 0.0, "space_before": 0.0004,
+     "fill": "#725420"},
+
+    {"n": null, "role": "running_header", "bbox": [0.8331, 0.0710, 0.8918, 0.0778],
+     "column": "full", "size_rel": 0.76, "align": "right", "indent": 0.0,
+     "space_before": 0.0351, "fill": null, "text_color": "#6d6d6d", "font": "sans"},
+
+    {"n": 1, "role": "paragraph", "bbox": [0.2866, 0.1013, 0.8936, 0.1629],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.0235, "fill": null, "text_color": "#202020", "font": "serif"},
+
+    {"n": 2, "role": "box", "bbox": [0.2872, 0.1680, 0.8924, 0.2129],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.0051, "fill": null, "text_color": "#202020", "font": "serif-italic"},
+
+    {"n": 3, "role": "section_heading", "bbox": [0.2896, 0.2317, 0.3954, 0.2416],
+     "column": "full", "size_rel": 1.1, "align": "left", "indent": 0.0,
+     "space_before": 0.0188, "fill": null, "text_color": "#6c6b6e", "font": "sans"},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.2866, 0.2565, 0.8936, 0.4681],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.0150, "fill": null, "text_color": "#202020", "font": "serif"},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.2866, 0.4733, 0.8936, 0.6015],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.0051, "fill": null, "text_color": "#202020", "font": "serif"},
+
+    {"n": 6, "role": "paragraph", "bbox": [0.2872, 0.6067, 0.8930, 0.7507],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.0051, "fill": null, "text_color": "#202020", "font": "serif"},
+
+    {"n": 7, "role": "paragraph", "bbox": [0.2872, 0.7563, 0.8924, 0.8512],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.0056, "fill": null, "text_color": "#202020", "font": "serif"},
+
+    {"n": null, "role": "page_number", "bbox": [0.0, 0.7268, 0.1554, 0.7644],
+     "column": "full", "size_rel": 1.33, "align": "right", "indent": 0.0,
+     "space_before": 0.6366, "fill": "#f8931f", "text_color": "#ffffff", "font": "sans"},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.7674, 0.1548, 0.7730],
+     "column": "full", "size_rel": 1.0, "indent": 0.0, "space_before": 0.0030,
+     "fill": "#f8931f"},
+
+    {"n": null, "role": "running_header", "bbox": [0.4317, 0.9012, 0.5260, 0.9098],
+     "column": "full", "size_rel": 0.71, "align": "center", "indent": 0.0,
+     "space_before": 0.0500, "fill": null, "text_color": "#0d0d0d", "font": "sans"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.1995, 0.2869, 0.8337, 0.7495],
+     "column": "full", "size_rel": 1.0, "fill": null}
+  ],
+  "note": "Pure A4 scan (595.32x841.92pt), 1654x2339px => 200.07 DPI; no text layer, so every number here is measured off pixels. Ordinary BODY page, verso: one single text column (x 0.2866-0.8936, i.e. 474-1478px) with a wide OUTER (left) margin that carries all the furniture - the brown/orange corner block with the leaf device, and the orange folio tab '20' with its short rule. That furniture sits OUTSIDE the text measure; because the page has only one column, every element is tagged column 'full' and its bbox is the authoritative position. body_text_size_px = 21.0 is cap/ascender-top to baseline, measured on three separate body lines (600-621, 639-660, 315-336), all identical; baseline-to-baseline leading is 39px (0.0167 of page height). SIZE_PT IS DELIBERATELY OMITTED on every element: with no text layer the typeface is unknown, so converting a measured 21px cap height into a font point size would require guessing the face's cap-height ratio - that is a guess, not a measurement. The scan resolution (200.07 DPI, 2.0008 px/pt) is given above so a consumer can convert any px figure itself. ACTIVITY BLOCK (n=2, 'Soak a few seeds in water...'): measured separately from the prose around it, 3 justified lines at y 393-498. It is set entirely in serif ITALIC at the SAME type size as body prose (size_rel 1.0, cap-to-baseline 21px) and carries NO tint, NO border and NO rule - fill is null. It is also set at normal leading with NO extra space above or below (its first baseline is exactly 39px after the previous paragraph's last baseline); the only thing that marks it off is the italic face and the first-line indent. I used role 'box' because that is what the element IS (an NCERT do-it-yourself activity callout) and it is the nearest allowed role, but a renderer must NOT draw a frame or panel for it. INDENT: no element on this page is block-indented from the column, so indent is 0.0 throughout. Separately, every paragraph except n=1 carries a FIRST-LINE indent of 51px = 0.031 of page width (first line starts at x=526 instead of 474); n=1 is flush because it is a paragraph continued from the previous page. n=2 and n=7 also carry that first-line indent. HEADING n=3 '1.4.3 Seed': cap-to-baseline 23px vs body 21px => size_rel 1.10; grey #6c6b6e sans, set BOLD (the allowed font list has no 'sans-bold', so 'sans' is reported and the weight is recorded here). Element 11 is the folio tab: the orange panel is x 0-257, y 1700-1788 and the white digits '20' sit inside it at [0.1070, 0.7366, 0.1306, 0.7486], cap height 28px => size_rel 1.33, set toward the panel's right end. Element 12 is NOT a full-width footer rule - it is a short orange rule (x 0-256) directly under the folio tab in the outer margin; 'footer_rule' is the nearest allowed role. Element 13 is the centred 'Reprint 2026-27' line at the page foot; 'running_header' is the only allowed role for a running line, so it is used here for a running FOOT. Element 14 is the diagonal '(c) NCERT not to be republished' watermark printed across the middle of the sheet - a very light grey overlay (not in the reading flow), reported as decorative_image with its measured extent; space_before is omitted for it because it has no position in the flow. SPACE_BEFORE is the gap from the bottom of the preceding element to the top of this one, as a fraction of page height, measured against the element listed before it; for the margin furniture (page_number, footer_rule) it is measured against the furniture above it in the same margin, which is why page_number shows a large 0.6366. The page is set SOLID: no figures, no tables, no blank bands - 47 text lines run from y=237 to y=1991 at uniform 39px leading and paragraph n=7 breaks mid-sentence onto the next page, so fill is 0.99. (Ink coverage within the text block is 70% of rows / 12.6% of pixels, but that measures glyph density, not how full the page is.) All seven A2 blocks were matched to a position with high confidence by reading order and line count: n=1 four lines, n=2 three lines, n=3 the heading, n=4 thirteen lines, n=5 eight lines, n=6 nine lines, n=7 six lines. No block is unmatched and no n is guessed. Colours sampled from flat interiors well away from edges and glyphs: header band #4a7435 (y 20-70, x 700-1400), corner block #725420, the orange strip inside the corner device #f7921e, folio tab and its rule #f8931f. Nothing on this page was unmeasurable apart from absolute point sizes, noted above."
+}

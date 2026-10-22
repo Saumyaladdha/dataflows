@@ -1,0 +1,218 @@
+{
+  "question_id": "Q-000170",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:186"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Match List I with List II.",
+  "statements": [],
+  "list_i": [
+    {
+      "label": "A",
+      "text": "Logistic growth"
+    },
+    {
+      "label": "B",
+      "text": "Exponential growth"
+    },
+    {
+      "label": "C",
+      "text": "Expanding age pyramid"
+    },
+    {
+      "label": "D",
+      "text": "Stable age pyramid"
+    }
+  ],
+  "list_ii": [
+    {
+      "label": "I",
+      "text": "Unlimited resource availability condition"
+    },
+    {
+      "label": "II",
+      "text": "Limited resource availability condition"
+    },
+    {
+      "label": "III",
+      "text": "The percent individuals of pre-reproductive age is largest followed by reproductive and post reproductive age groups"
+    },
+    {
+      "label": "IV",
+      "text": "The percent individuals of pre-reproductives and reproductive age group are same"
+    }
+  ],
+  "options_en": {
+    "1": "A-II, B-I, C-III, D-IV",
+    "2": "A-II, B-III, C-I, D-IV",
+    "3": "A-II, B-IV, C-I, D-III",
+    "4": "A-II, B-IV, C-III, D-I"
+  },
+  "structure": "match",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "186\nReproduction in Organisms\nMatch List I with List II.\nList-I\nList-II\nA. Logistic growth\nI. Unlimited resource availability condition\nB. Exponential\ngrowth\nII. Limited resource availability condition\nC. Expanding age\npyramid\nIII. The percent individuals of pre-reproductive age is largest followed by\nreproductive and post reproductive age groups\nD. Stable age\npyramid\nIV. The percent individuals of pre-reproductives and reproductive age\ngroup are same\n(1)\nA-II, B-I, C-III, D-IV\n(2)\nA-II, B-III, C-I, D-IV\n(3)\nA-II, B-IV, C-I, D-III\n(4)\nA-II, B-IV, C-III, D-I\n",
+  "b4_script_options": {
+    "1": "A-II, B-I, C-III, D-IV",
+    "2": "A-II, B-III, C-I, D-IV",
+    "3": "A-II, B-IV, C-I, D-III",
+    "4": "A-II, B-IV, C-III, D-I"
+  },
+  "official_answer": "1",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "1",
+  "b6_reason": "Logistic growth needs limited resources (II); exponential growth needs unlimited resources (I); expanding age pyramid has pre-reproductive > reproductive > post-reproductive (III); stable age pyramid has pre-reproductive and reproductive roughly equal (IV).",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

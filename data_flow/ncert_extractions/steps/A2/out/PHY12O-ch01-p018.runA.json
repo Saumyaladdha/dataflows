@@ -1,0 +1,125 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Similarly the total force on charge –q at C is F3  = 3 F ˆn , where ˆn is the unit vector along the direction bisecting the ∠BCA.\nIt is interesting to see that the sum of the forces on the three charges is zero, i.e.,",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        560,
+        445,
+        760,
+        485
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "The result is not at all surprising. It follows straight from the fact that Coulomb’s law is consistent with Newton’s third law. The proof is left to you as an exercise."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "1.8  ELECTRIC FIELD"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Let us consider a point charge Q placed in vacuum, at the origin O. If we place another point charge q at a point P, where OP = r, then the charge Q will exert a force on q as per Coulomb’s law. We may ask the question: If charge q is removed, then what is left in the surrounding? Is there nothing? If there is nothing at the point P, then how does a force act when we place the charge q at P. In order to answer such questions, the early scientists introduced the concept of field. According to this, we say that the charge Q produces an electric field everywhere in the surrounding. When another charge q is brought at some point P, the field there acts on it and produces a force. The electric field produced by the charge Q  at a point r is given as"
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        205,
+        1075,
+        520,
+        2000
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        575,
+        1105,
+        1550,
+        1180
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "where ˆr = r/r, is a unit vector from the origin to the point r. Thus, Eq.(1.6) specifies the value of the electric field for each value of the position vector r. The word “field” signifies how some distributed quantity (which could be a scalar or a vector) varies with position. The effect of the charge has been incorporated in the existence of the electric field. We obtain the force F exerted by a charge Q on a charge q, as"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        575,
+        1400,
+        1550,
+        1475
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Note that the charge q also exerts an equal and opposite force on the charge Q. The electrostatic force between the charges Q and q can be looked upon as an interaction between charge q and the electric field of Q and vice versa. If we denote the position of charge q by the vector r, it experiences a force F equal to the charge q multiplied by the electric field E at the location of q. Thus,"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        575,
+        1700,
+        1550,
+        1745
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Equation (1.8) defines the SI unit of electric field as N/C*."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Some important remarks may be made here:"
+    },
+    {
+      "n": 14,
+      "kind": "list",
+      "text": "(i) From Eq. (1.8), we can infer that if q is unity, the electric field due to a charge Q is numerically equal to the force exerted by it. Thus, the electric field due to a charge Q at a point in space may be defined as the force that a unit positive charge would experience if placed",
+      "continues_on_next": true
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "* An alternate unit V/m will be introduced in the next chapter."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "EXAMPLE 1.7",
+    "18",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p017 output, which ended mid-box inside the Example 1.7 panel, so the first box block here continues it. Equations (1.6), (1.7), (1.8) and the F1 + F2 + F3 = 0 line are needs_special. Figure 1.11 (panels a and b with caption) is a left-margin inset, placed at its vertical position in the prose flow (n=6). The sideways 'EXAMPLE 1.7' margin label IS listed as removed because the words 'Example 1.7' appear in no block on this page (that panel's header was on p017). The rule-ruled footnote about the V/m unit is block n=15; it sits physically last but is an aside, so continues_on_next is marked on n=14, the main-flow list item that actually runs on to p019, and the page-level flag describes that main flow."
+}

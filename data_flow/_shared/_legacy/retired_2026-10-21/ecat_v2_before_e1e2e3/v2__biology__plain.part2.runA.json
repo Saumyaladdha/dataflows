@@ -1,0 +1,165 @@
+{
+  "group": "v2__biology__plain.part2",
+  "ratings": [
+    {
+      "question_id": "2015_A#q052",
+      "concept": "Photolysis of water in photosystem II: manganese and chloride are the elements of the oxygen-evolving complex (Mn, Ca, Cl)",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Manganese is the metal of the water-splitting complex, and that one fact strikes options 1 and 4, which offer Magnesium instead.",
+      "traps": [
+        {
+          "label": "look_alike_term",
+          "option": "1",
+          "route": "offers \"Magnesium and Chlorine\" — magnesium is the central atom of chlorophyll, and its name differs from manganese by two letters, so the correct chloride partner is kept and the metal exchanged for its look-alike"
+        },
+        {
+          "label": "half_true",
+          "option": "3",
+          "route": "\"Manganese and Potassium\" gets manganese right and fails on potassium, whose photosynthetic role is stomatal opening, not water splitting"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "pairs magnesium with molybdenum, the micronutrient that is a cofactor of nitrogenase and nitrate reductase rather than a member of the oxygen-evolving complex"
+        }
+      ],
+      "reason": "This question requires the stored membership of the oxygen-evolving complex, demonstrated by the stem asking which \"pairs of elements is involved in this reaction\" after granting that \"The oxygen evolved during photosynthesis comes from water molecules\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q053",
+      "concept": "Placentation types and their standard examples: axile placentation in a multilocular ovary (lemon, tomato), against parietal, free central and marginal",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Argemone is the taught example of the neighbouring row of the same table, parietal placentation"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Dianthus is the taught example of free central placentation"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Pea is the taught example of marginal placentation"
+        }
+      ],
+      "reason": "This question requires one stored plant-to-placentation association, demonstrated by the stem \"Axile placentation is present in :\" with four plants as the options.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q055",
+      "concept": "Fovea: the cone-packed, rod-free point of maximum visual acuity, held apart from the rod-dominated peripheral retina and from the optic disc",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "wrong_site_or_stage",
+          "option": "1",
+          "route": "states the photoreceptor composition of the peripheral retina — more rods than cones — at the fovea, which is the wrong site for that true fact"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "gives the defining fact of the optic disc, the other named landmark of the same retina, where \"The optic nerve leaves the eye\""
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "\"Only rods are present\" is the printed reversal of the fovea's composition, which is cones with no rods"
+        }
+      ],
+      "reason": "This question requires the stored photoreceptor composition of one named retinal region, demonstrated by the key option \"High density of cones occur, but has no rods\" against the stem's \"in mammalian eye, the 'fovea' is the center of the visual field\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q056",
+      "concept": "Fungal examples and their uses: morels and truffles are edible ascomycete fruit bodies, against yeast in fermentation, Penicillium as an antibiotic source and Neurospora in biochemical genetics",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "\"Yeast is unicellular and useful in fermentation\" is true, and the task's polarity is \"Choose the wrong statement\", so a true option is the wrong selection"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "\"Penicillium is multicellular and produces antibiotics\" is true, and the task asks for the wrong statement"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "\"Neurospora is used in the study of biochemical genetics\" is true, and the task asks for the wrong statement"
+        }
+      ],
+      "reason": "This question requires a separate true/false verdict on four unrelated fungal claims, demonstrated by the stem \"Choose the wrong statement:\" and by the key option \"Morels and truffles are poisonous mushrooms\", which reverses their status as edible delicacies.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q057",
+      "concept": "Membrane-bound versus non-membranous cell structures: ribosomes are ribonucleoprotein particles with no bounding membrane",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "mesosomes are infoldings of the bacterial plasma membrane and so are membrane-bound; the option is the answer to this stem with its \"not\" dropped"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "vacuoles are bounded by the tonoplast and so are membrane-bound; the option is correct only against the un-negated stem"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "lysosomes are single-membrane vesicles and so are membrane-bound; the option is correct only against the un-negated stem"
+        }
+      ],
+      "reason": "This question requires a membrane verdict on each of four named structures, demonstrated by the stem \"Which of the following are not membrane-bound?\" with Mesosomes, Vacuoles, Ribosomes and Lysosomes as the options.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q058",
+      "concept": "Signs of population interactions for each partner: competition is (−,−), against mutualism (+,+), predation (+,−) and parasitism (+,−)",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "mutualism affects both partners, but positively: (+,+) is the sign-reverse of the (−,−) the stem asks for"
+        },
+        {
+          "label": "half_true",
+          "option": "3",
+          "route": "in predation only the prey is adversely affected and the predator benefits, so one half of the stem's two-sided requirement holds and the other fails"
+        },
+        {
+          "label": "half_true",
+          "option": "4",
+          "route": "in parasitism only the host is adversely affected and the parasite benefits, so again only half of \"both partners\" holds"
+        }
+      ],
+      "reason": "This question requires the stored sign pair of one named interaction, demonstrated by the stem \"In which of the following interactions both partners are adversely affected?\" against the four interaction names.",
+      "note": ""
+    }
+  ],
+  "group_note": "All six were read from the page as structure=plain and all six are plain_mcq on E1, so the grouping holds; q056 is a borderline case whose four options are each a full claim, but a single plain stem is printed above them, so it stays plain_mcq. One rule was applied across the packet to keep E4 consistent, because these items look alike and v1 split such pairs without saying why: where the stem names a term or criterion and each option is an item whose association with it is one tabulated fact, the demand is recall and the structure is single_step (q052, q053, q055, q058 — the fact 'competition is the (−,−) interaction' decides q058 exactly as 'lemon is axile' decides q053, so the two carry the same labels); where the stem is negated and every option must be graded true or false before one can be chosen, the verdicts are combined and the structure is several_independent_checks (q056, q057). The demand stays recall throughout, since each individual verdict is a stored fact and no rule is applied to a new case. elimination is carried by q052 alone, because only there could one securely-known fact (manganese, not magnesium) be named together with the options it strikes; the other five offer four same-kind options from the same chapter paragraph, so no shortcut was demonstrable and the label was withheld. On E5 the two negated items get true_statement_trap on every true option, naming the polarity as the rulebook requires, while the four direct items get option-specific devices (look-alike metal names, half-true pairs, the wrong retinal site, another table row)."
+}

@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {
+      "n": 2,
+      "corrected_text": "Example 1.11 The electric field components in Fig. 1.27 are Eₓ = αx¹⁄², Ey = Ez = 0, in which α = 800 N/C m¹⁄². Calculate (a) the flux through the cube, and (b) the charge within the cube. Assume that a = 0.1 m.",
+      "fixes": [
+        {"wrong": "Ex", "right": "Eₓ"},
+        {"wrong": "αx1/2", "right": "αx¹⁄²"},
+        {"wrong": "m1/2", "right": "m¹⁄²"}
+      ]
+    },
+    {
+      "n": 4,
+      "corrected_text": "Solution\n(a) Since the electric field has only an x component, for faces perpendicular to x direction, the angle between E and ∆S is ± π/2. Therefore, the flux  φ = E.∆S is separately zero for each face of the cube except the two shaded ones. Now the magnitude of the electric field at the left face is\nEₗ = αx¹⁄² = αa¹⁄²\n(x = a at the left face).\nThe magnitude of electric field at the right face is\nER = α x¹⁄² = α (2a)¹⁄²\n(x = 2a at the right face).\nThe corresponding fluxes are",
+      "fixes": [
+        {"wrong": "EL = αx1/2 = αa1/2", "right": "Eₗ = αx¹⁄² = αa¹⁄²"},
+        {"wrong": "ER = α x1/2 = α (2a)1/2", "right": "ER = α x¹⁄² = α (2a)¹⁄²"}
+      ]
+    },
+    {"n": 6, "no_change": true}
+  ],
+  "note": "n2 and n4 had the 1/2 power exponents flattened to plain '1/2' after the base (x1/2, m1/2, a1/2); restored as superscript ¹⁄². Ex and the E-subscript-L case were restored to Eₓ and Eₗ (true Unicode subscript letters exist for x and l). Ey, Ez and ER could not be given a true subscript letter — Unicode has no subscript form for y, z or r — so those were left as plain capital letters, matching the printed meaning but not the exact glyph height; only the exponents and the x/l subscripts were corrected there. n1 and n6 already matched the image."
+}

@@ -1,0 +1,37 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.124, "x1": 0.486},
+      {"id": "right", "x0": 0.513, "x1": 0.875}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.1251, 0.0876, 0.1389, 0.0940],
+     "column": "full", "size_rel": 0.75, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.7989, 0.0876, 0.8760, 0.0940],
+     "column": "full", "size_rel": 0.75, "align": "right", "font": "serif", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.1246, 0.1197, 0.4857, 0.3885],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.1246, 0.4005, 0.4840, 0.6858],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 3, "role": "box", "bbox": [0.1240, 0.6922, 0.4840, 0.9119],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "fill": "#cbe7d3", "text_color": "#221f1f"},
+    {"n": null, "role": "section_heading", "bbox": [0.1554, 0.7050, 0.4514, 0.7289],
+     "column": "left", "size_rel": 1.0, "align": "center", "font": "serif-bold",
+     "fill": "#cbe7d3", "text_color": "#221f1f"},
+    {"n": null, "role": "box", "bbox": [0.5137, 0.1197, 0.8743, 0.8555],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "fill": "#cbe7d3", "text_color": "#221f1f"},
+    {"n": 4, "role": "section_heading", "bbox": [0.5143, 0.8651, 0.8434, 0.8771],
+     "column": "right", "size_rel": 1.05, "align": "left", "font": "sans", "text_color": "#00adef"},
+    {"n": 5, "role": "paragraph", "bbox": [0.5137, 0.8849, 0.8731, 0.9128],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4771, 0.9555, 0.5223, 0.9624],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif", "text_color": "#221f1f"}
+  ],
+  "note": "Two-column recto body page, 1750x2180 px (ratio 0.803, not A4). body_text_size_px=20 (cap-to-baseline; line pitch 35 px). ONE UNCERTAINTY, the same kind as p025: block 3 ('Important Features of the Quantum Mechanical Model of Atom') is a single pale-green panel (#cbe7d3) that runs across the column break -- it opens at the foot of the LEFT column (y 0.692-0.912, with a dark green #00a550 top rule at y 0.6922-0.6945 that I folded into its bbox, holding the centred bold title, the intro paragraph and numbered item 1) and continues down the whole RIGHT column (y 0.120-0.856, items 2-5, closed by a dark green #00a550 bottom rule at y 0.8528-0.8555, also folded in). I put n=3 on the left-column region and n=null on the right-column continuation region rather than repeat the same n twice; the null box is the tail of block 3, not an unmatched block. The panel's centred bold title is also emitted as a nested unnumbered section_heading because it is visually distinct, although its text is part of block 3. Those two green rules are the box's own borders, NOT a rule_bar (that role belongs only to the chapter-opening divider) and not a footer_rule, so I did not emit them as band elements. Paragraph break between blocks 1 and 2 confirmed by the extra 17 px of leading and the first-line indent at x=0.1526. No page_header_band, rule_bar or footer_rule on this page: furniture is the running head (page number 54 left, CHEMISTRY right) and the centred '2024-25' footer line, labelled running_header because it is a running footer rather than the page number. A diagonal '(C) NCERT not to be republished' watermark crosses both columns; not emitted as an element."
+}

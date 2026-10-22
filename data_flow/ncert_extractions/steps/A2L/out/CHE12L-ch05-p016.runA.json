@@ -1,0 +1,51 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 21.0,
+    "columns": [
+      {"id": "left", "x0": 0.073, "x1": 0.490},
+      {"id": "right", "x0": 0.498, "x1": 0.897}
+    ]
+  },
+  "elements": [
+    {"n": 1, "role": "section_heading", "bbox": [0.2719, 0.0830, 0.8644, 0.0950],
+     "column": "full", "size_rel": 0.9, "align": "center", "font": "mono",
+     "text_color": "#6d6e71"},
+    {"n": 3, "role": "figure", "bbox": [0.0938, 0.1119, 0.4806, 0.2725],
+     "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.0731, 0.2849, 0.4738, 0.3110],
+     "column": "left", "size_rel": 0.9, "align": "left", "font": "serif-italic",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.4981, 0.1014, 0.8969, 0.3220],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "section_heading", "bbox": [0.0744, 0.3385, 0.2500, 0.3830],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-bold",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "paragraph", "bbox": [0.2712, 0.3381, 0.8969, 0.4761],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "table_caption", "bbox": [0.1406, 0.4972, 0.8275, 0.5202],
+     "column": "full", "size_rel": 0.9, "align": "center", "font": "mono",
+     "text_color": "#6d6e71"},
+    {"n": 6, "role": "table", "bbox": [0.0744, 0.5275, 0.8969, 0.6963],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif",
+     "fill": "#f48480"},
+    {"n": 7, "role": "paragraph", "bbox": [0.2706, 0.7174, 0.8962, 0.8853],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.6150, 0.9032, 0.6556, 0.9170],
+     "column": "full", "size_rel": 0.86, "align": "center", "font": "sans",
+     "fill": "#fecb03", "text_color": "#6d6e71"},
+    {"n": null, "role": "running_header", "bbox": [0.6769, 0.9032, 0.8956, 0.9170],
+     "column": "full", "size_rel": 0.86, "align": "left", "font": "sans",
+     "text_color": "#6d6e71"},
+    {"n": null, "role": "footer_rule", "bbox": [0.6144, 0.9156, 1.0, 0.9174],
+     "column": "full", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif",
+     "text_color": "#000000"}
+  ],
+  "note": "Verso body page. No page_header_band, no rule_bar; only the yellow footer_rule (#fecb03, y 0.9156-0.9174) right-aligned from x 0.614 to the trim, with the folio tab behind '133'. This page mixes BOTH of the chapter's column habits, so the declared columns are the widest honest reading: left 0.073-0.490 doubles as the figure zone (Fig.5.9) in the top third AND the hanging-heading margin (block 4, '5.5.5 Colour in Coordination Compounds') lower down; right 0.498-0.897 is the narrow measure block 2 runs in beside the figure. Everything set to the full verso measure 0.271-0.897 (blocks 1, 5, 7, the table and its caption) is `full`. Fig.5.9's printed caption, 'Fig.5.9: d orbital splitting in a tetrahedral crystal field.', is two lines with TOP edge y=0.2849 (cap top pixel row 621, baseline 640) and bottom 0.3110, x 0.0731-0.4738, in #221f1f at 0.9x body; it sits BELOW the figure bbox (which ends 0.2725), not inside it. Table 5.3's `fill` #f48480 is its HEADER ROW only (y 0.5312-0.5761, white reversed type); the body rows are white and the small colour swatches inside the cells (yellow, blue, red, violet, etc.) are cell content, not panel tint. Table and sub-heading captions print grey #6d6e71 in a bold typewriter/mono face; the figure caption prints #221f1f bold-italic serif -- a real difference the exporter should keep. Block 1, '( b ) Crystal field splitting in tetrahedral coordination entities', is the same ambiguous lettered sub-heading type as p014's block 8: recorded as section_heading, font mono, centred across the full measure."
+}

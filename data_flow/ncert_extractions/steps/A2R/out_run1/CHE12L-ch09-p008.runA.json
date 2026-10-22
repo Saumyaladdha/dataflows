@@ -1,0 +1,36 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "The two benzene-ring structures in the aniline/HCl equation are gone. The book draws aniline as a ring carrying a magenta NH2 with its lone pair, and anilinium chloride as a ring carrying NH3(+)Cl(-), either side of '+ HCl' and the equilibrium arrows. The render replaces both drawings with the flat text C6H5 - NH2 + HCl = C6H5 - NH3Cl, so the structures the figure exists to show are absent.",
+      "where": "bottom of the page, under '1. Basic character of amines'"
+    },
+    {
+      "kind": "missing",
+      "what": "The inline structure drawings for secondary and tertiary amines are gone, leaving garbled text. The book prints '...that is why primary (-NH2), secondary [structure: >N-H] and tertiary amines [structure: >N-] differ in many reactions'; the render prints 'that is why primary (-NH2), secondary N H and tertiary amines N differ in many reactions', with the bracketed structures reduced to stray letters.",
+      "where": "the first paragraph of 9.6 Chemical Reactions"
+    },
+    {
+      "kind": "clipped",
+      "what": "Fig. 9.2 is cut off at the right edge of its frame. The book shows a central amine hydrogen-bonded to three neighbours -- one on the left (R-N-H), one on the right (H above, N-R, H below) and one below (H-N-R). In the render the frame cuts straight through the right-hand neighbour: the sequence stops at 'N-H' with trailing dots at the frame edge, and that molecule's upper H, its N-R and its lower H are not drawn.",
+      "where": "Fig. 9.2, upper part of the page"
+    },
+    {
+      "kind": "missing",
+      "what": "The curved electron-pushing arrow in the salt-formation equation is absent: the book draws an arrow from the lone pair on the amine nitrogen to the H of H-X; the render keeps the lone-pair dots but draws no arrow.",
+      "where": "the R-NH2 + HX equation under '1. Basic character of amines'"
+    },
+    {
+      "kind": "formatting",
+      "what": "Colour coding is lost in both equations under '1. Basic character of amines': the book sets NH2/NH3 in magenta and the halogen X and Cl in green; the render prints both equations entirely in black. Fig. 9.2 does keep its magenta, so the loss is confined to the equations.",
+      "where": "the two equations at the foot of the page"
+    },
+    {
+      "kind": "formatting",
+      "what": "The Table 9.2 caption is set wrongly: the book prints 'Table 9.2:' bold with the title 'Comparison of Boiling Points of Amines, Alcohols and Alkanes of Similar Molecular Masses' bold on a hanging indent; the render runs it in as ordinary unbolded body text butted against the preceding paragraph.",
+      "where": "immediately above Table 9.2"
+    }
+  ],
+  "note": "Compared the 'Primary > Secondary > Tertiary' line, Fig. 9.2 and its caption, all five rows of Table 9.2 (n-C4H9NH2 73 350.8; (C2H5)2NH 73 329.3; C2H5N(CH3)2 73 310.5; C2H5CH(CH3)2 72 300.8; n-C4H9OH 74 390.3 -- all correct, with headers Sl. No. / Compound / Molar mass / b.p./K), the 9.6 opening paragraph and the basic-character section. The table is complete and accurate and the prose is otherwise word for word. The hydrogen-bond dotted lines inside Fig. 9.2 are drawn very faintly at this scale but are present, so only the clipped right-hand molecule is reported."
+}

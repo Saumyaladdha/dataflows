@@ -1,0 +1,167 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "EXAMPLE 3.6"
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Solution  Each branch of the network is assigned an unknown current to be determined by the application of Kirchhoff’s rules. To reduce the number of unknowns at the outset, the first rule of Kirchhoff is used at every junction to assign the unknown current in each branch. We then have three unknowns I1, I2 and I3 which can be found by applying the second rule of Kirchhoff to three different closed loops. Kirchhoff’s second rule for the closed loop ADCA gives,",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        605,
+        528,
+        1495,
+        558
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "that is, 7I1– 6I2 – 2I3 = 10"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "For the closed loop ABCA, we get"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        605,
+        642,
+        980,
+        672
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "that is, I1 + 6I2 + 2I3 =10  [3.61(b)]"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "For the closed loop BCDEB, we get"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        605,
+        752,
+        1020,
+        782
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "that is, 2I1 – 4I2 – 4I3 = –5  [3.61(c)]"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Equations (3.61 a, b, c) are three simultaneous equations in three unknowns. These can be solved by the usual method to give"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        600,
+        912,
+        1075,
+        976
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The currents in the various branches of the network are"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        600,
+        1006,
+        1130,
+        1072
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        600,
+        1076,
+        1120,
+        1142
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "It is easily verified that Kirchhoff’s second rule applied to the remaining closed loops does not provide any additional independent equation, that is, the above values of currents satisfy the second rule for every closed loop of the network. For example, the total voltage drop over the closed loop BADEB"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        600,
+        1308,
+        1160,
+        1376
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "equal to zero, as required by Kirchhoff’s second rule."
+    },
+    {
+      "n": 19,
+      "kind": "heading",
+      "text": "3.13  WHEATSTONE BRIDGE"
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "As an application of Kirchhoff’s rules consider the circuit shown in Fig. 3.18, which is called the Wheatstone bridge. The bridge has four resistors R1, R2, R3 and R4. Across one pair of diagonally opposite points (A and C in the figure) a source is connected. This (i.e., AC) is called the battery arm. Between the other two vertices, B and D, a galvanometer G (which is a device to detect currents) is connected. This line, shown as BD in the figure, is called the galvanometer arm."
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "For simplicity, we assume that the cell has no internal resistance. In general there will be currents flowing across all the resistors as well as a current Ig through G. Of special interest, is the case of a balanced bridge where the resistors are such that Ig = 0. We can easily get the balance condition, such that there is no current through G. In this case, the Kirchhoff’s junction rule applied to junctions D and B (see the figure)"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "100",
+    "Reprint 2026-27"
+  ],
+  "note": "The shaded Example 3.6 solution box (blocks 1-18) was emitted as a sequence of blocks rather than one box block, because it contains seven displayed equations/fraction lines that must carry needs_special with their own bboxes; blocks 1-18 together are that single box. Block 1 is the rotated margin tab label 'EXAMPLE 3.6' in the blue side bar, kept as a heading so no prose is lost. previous_page_last_block was null even though this is page 20, so the continuation judgement for block 2 was made from the image alone: the box text starts with a fresh 'Solution' sentence, so first_block_continues_from_previous is false; the worked example's question statement itself is on the previous page. Inline mathematics in paragraph blocks is copied as the text layer holds it (subscripts flattened, e.g. 'I1', 'R4', 'Ig'); displayed stacked fractions are left to the special transcriber. No figure appears on this page: Fig. 3.18 is referenced in block 20 but is printed elsewhere. A diagonal '(c) NCERT not to be republished' watermark crosses the page and was not transcribed."
+}

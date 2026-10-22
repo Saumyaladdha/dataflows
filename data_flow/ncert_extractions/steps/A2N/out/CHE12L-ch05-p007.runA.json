@@ -1,0 +1,55 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 2, "no_change": true},
+    {
+      "n": 3,
+      "corrected_text": "1. [Cr(NH₃)₃(H₂O)₃]Cl₃ is named as:\ntriamminetriaquachromium(III) chloride",
+      "fixes": [
+        {"wrong": "[Cr(NH3)3(H2O)3]Cl3", "right": "[Cr(NH₃)₃(H₂O)₃]Cl₃"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "2. [Co(H₂NCH₂CH₂NH₂)₃]₂(SO₄)₃ is named as:\ntris(ethane-1,2–diamine)cobalt(III) sulphate",
+      "fixes": [
+        {"wrong": "[Co(H2NCH2CH2NH2)3]2(SO4)3", "right": "[Co(H₂NCH₂CH₂NH₂)₃]₂(SO₄)₃"}
+      ]
+    },
+    {"n": 6, "no_change": true},
+    {"n": 7, "no_change": true},
+    {
+      "n": 8,
+      "corrected_text": "3. [Ag(NH₃)₂][Ag(CN)₂] is named as:\ndiamminesilver(I)dicyanidoargentate(I)",
+      "fixes": [
+        {"wrong": "[Ag(NH3)2][Ag(CN)2]", "right": "[Ag(NH₃)₂][Ag(CN)₂]"}
+      ]
+    },
+    {"n": 9, "no_change": true},
+    {
+      "n": 10,
+      "corrected_text": "Solution\n(a) [Co(NH₃)₄(H₂O)Cl]Cl₂\n(b) K₂[Zn(OH)₄]\n(c) K₃[Al(C₂O₄)₃]\n(d) [CoCl₂(en)₂]⁺\n(e) [Ni(CO)₄]",
+      "fixes": [
+        {"wrong": "[Co(NH3)4(H2O)Cl]Cl2", "right": "[Co(NH₃)₄(H₂O)Cl]Cl₂"},
+        {"wrong": "K2[Zn(OH)4]", "right": "K₂[Zn(OH)₄]"},
+        {"wrong": "K3[Al(C2O4)3]", "right": "K₃[Al(C₂O₄)₃]"},
+        {"wrong": "[CoCl2(en)2]+", "right": "[CoCl₂(en)₂]⁺"},
+        {"wrong": "[Ni(CO)4]", "right": "[Ni(CO)₄]"}
+      ]
+    },
+    {
+      "n": 11,
+      "corrected_text": "Example 5.3\nWrite the IUPAC names of the following coordination compounds:\n(a) [Pt(NH₃)₂Cl(NO₂)]\n(b) K₃[Cr(C₂O₄)₃]\n(c) [CoCl₂(en)₂]Cl\n(d) [Co(NH₃)₅(CO₃)]Cl\n(e) Hg[Co(SCN)₄]",
+      "fixes": [
+        {"wrong": "[Pt(NH3)2Cl(NO2)]", "right": "[Pt(NH₃)₂Cl(NO₂)]"},
+        {"wrong": "K3[Cr(C2O4)3]", "right": "K₃[Cr(C₂O₄)₃]"},
+        {"wrong": "[CoCl2(en)2]Cl", "right": "[CoCl₂(en)₂]Cl"},
+        {"wrong": "[Co(NH3)5(CO3)]Cl", "right": "[Co(NH₃)₅(CO₃)]Cl"},
+        {"wrong": "Hg[Co(SCN)4]", "right": "Hg[Co(SCN)₄]"}
+      ]
+    },
+    {"n": 12, "no_change": true}
+  ],
+  "note": "Five blocks (n=3, 5, 8, 10, 11) are formula lines whose atom-count subscripts had been flattened; all restored to match the image, including the charge on [CoCl₂(en)₂]⁺. Oxidation-state numbers written '+3' in the explanatory prose (n=4, n=6) are printed full size on the page and were correctly stored, as were all the Roman numerals in the IUPAC names (n=9, n=12). No degree symbols, locants, primes or radicals on this page."
+}

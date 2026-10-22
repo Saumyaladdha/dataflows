@@ -1,0 +1,106 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "atomic electrons is thus (–Ze), and since the atom is neutral, the charge of the nucleus is (+Ze). The number of protons in the nucleus of the atom is, therefore, exactly Z, the atomic number.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "Discovery of Neutron"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Since the nuclei of deuterium and tritium are isotopes of hydrogen, they must contain only one proton each.  But the masses of the nuclei of hydrogen, deuterium and tritium are in the ratio of 1:2:3.  Therefore, the nuclei of deuterium and tritium must contain,  in addition to a proton, some neutral matter.  The amount of neutral matter present in the nuclei of these isotopes, expressed in units of mass of a proton, is approximately equal to one and two, respectively.  This fact indicates that the nuclei of atoms contain, in addition to protons, neutral matter in multiples of a basic unit.  This hypothesis was verified in 1932 by James Chadwick who observed emission of neutral radiation when beryllium nuclei were bombarded with alpha-particles (α-particles are helium nuclei, to be discussed in a later section). It was found that this neutral radiation could knock out protons from light nuclei such as those of helium, carbon and nitrogen. The only neutral radiation known at that time was photons (electromagnetic radiation). Application of the principles of conservation of energy and momentum showed that if the neutral radiation consisted of photons, the energy of photons would have to be much higher than is available from the bombardment of beryllium nuclei with α-particles. The clue to this puzzle, which Chadwick satisfactorily solved, was to assume that the neutral radiation consists of a new type of neutral particles called neutrons.  From conservation of energy and momentum, he was able to determine the mass of new particle ‘as very nearly the same as mass of proton’."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The mass of a neutron is now known to a high degree of accuracy. It is"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        498,
+        1318,
+        1455,
+        1368
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Chadwick was awarded the 1935 Nobel Prize in Physics for his discovery of the neutron."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "A free neutron, unlike a free proton, is unstable.  It decays into a proton, an electron and a antineutrino (another elementary particle), and has a mean life of about 1000s.  It is, however, stable inside the nucleus."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The composition of a nucleus can now be described using the following terms and symbols:"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        498,
+        1620,
+        1458,
+        1655
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        498,
+        1664,
+        1458,
+        1700
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        498,
+        1708,
+        1458,
+        1795
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "One also uses the term nucleon for a proton or a neutron. Thus the number of nucleons in an atom is its mass number A."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Nuclear species or nuclides are shown by the notation ^A_Z X where X is the chemical symbol of the species.  For example, the nucleus of gold is denoted by ^197_79 Au .  It contains 197 nucleons, of which 79 are protons and the rest118 are neutrons."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "308",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read page 2 of this chapter immediately before: it ended mid-sentence with '...the atomic number. The total charge of the', and this page opens 'atomic electrons is thus (–Ze)' — so first_block_continues_from_previous is true on that direct evidence. Blocks 5 and 9-11 are display equations: (13.3), and the three numbered definition lines [13.4(a)], [13.4(b)] and [13.4(c)] (the (c) entry runs over two lines and its bbox covers both); left for the special transcriber. Text-layer/image notation discrepancies, taken from the image: Greek alpha is flattened to Latin 'a' ('a-particles' -> 'α-particles', twice in block 3); superscripts and subscripts are dropped or linearised ('m n' -> m with subscript n, '10–27' -> 10⁻²⁷ with a true minus sign, 'X\\nA\\nZ' -> the nuclide symbol with superscript A and subscript Z, '197\\n79 Au' -> superscript 197 / subscript 79). Stacked left-indices cannot be rendered in plain text, so block 13 writes them as '^A_Z X' and '^197_79 Au'; earlier pages of this chapter used Unicode superscripts for simple exponents. Italics (the 'Discovery of Neutron' heading, 'neutrons', the term names in 13.4) are not preserved. The image prints 'the rest118' with no space, as the text layer also has; copied as printed. Last paragraph ends with a complete sentence at the foot of the page, so last_block_continues_on_next is false."
+}

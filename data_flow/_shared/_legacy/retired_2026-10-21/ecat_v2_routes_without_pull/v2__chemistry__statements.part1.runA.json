@@ -1,0 +1,37 @@
+{
+  "group": "v2__chemistry__statements.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q043",
+      "question_type": "list_of_statements",
+      "format": "pick_correct_combination",
+      "content_shape": "reaction",
+      "concept": "Alcohols to alkyl chlorides with HCl: primary and secondary alcohols need anhydrous $\\mathrm{ZnCl_2}$ (Lucas reagent), a tertiary alcohol reacts with HCl alone",
+      "cognitive_demand": "condition_based_reasoning",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Reaction i, ethanol with HCl and anhydrous $\\mathrm{ZnCl_2}$, is a printed preparation of ethyl chloride; accepting i alone strikes out options 1 and 2, which both leave i out.",
+      "traps": [
+        {
+          "label": "partial_combination",
+          "option": "1",
+          "route": "Keeps only the secondary alcohol in iv. Reactions i and iii work as well, so the answer is three reactions, not one."
+        },
+        {
+          "label": "partial_combination",
+          "option": "2",
+          "route": "Leaves i out, treating a primary alcohol as unreactive. Ethanol does give ethyl chloride once anhydrous $\\mathrm{ZnCl_2}$ is there."
+        },
+        {
+          "label": "condition_ignored",
+          "option": "4",
+          "route": "Reads i and ii as the same reaction because both are ethanol plus HCl. Without the anhydrous $\\mathrm{ZnCl_2}$ written over the arrow in i, reaction ii does not go."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the reagent rule under the condition printed over each arrow, demonstrated by i and ii being the same ethanol-plus-HCl pair separated only by \"Anhyd.ZnCl2\", with just one of them keyed as a preparation.",
+      "note": "The lettered block is printed as four reactions rather than four prose statements, which is still list_of_statements: three or more lettered items above the options, and the options select a subset of them. The block is labelled i. to iv. in lower case while the options read \"I, III and IV only\" in upper case; the mapping is unambiguous and is noted only as a tidy-up."
+    }
+  ],
+  "group_note": "This packet holds one question, so consistency across members was not at stake; the test applied was the one the other statement-block packets use - the primary type is set by whether a lettered block is printed above the options (it is, so list_of_statements rather than statement_options), and the format by whether the options select from that block (they do, so pick_correct_combination). Demand is condition_based_reasoning rather than plain application because reactions i and ii differ in nothing but the anhydrous $\\mathrm{ZnCl_2}$ over the arrow: remove that printed condition and option 4 becomes defensible. Its matching trap, condition_ignored, is therefore the device on option 4, while options 1 and 2 are true-but-short subsets and carry partial_combination with the omitted reaction named. No trap is placed on option 3, the printed key."
+}

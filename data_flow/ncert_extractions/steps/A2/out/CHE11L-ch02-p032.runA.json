@@ -1,0 +1,52 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "number. Thus the energy of the orbitals in hydrogen atom  increases as follows :",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        218,
+        327,
+        867,
+        409
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "and is depicted in Fig. 2.16. Although the shapes of 2s and 2p orbitals are different, an electron has the same energy when it is in the 2s orbital as when it is present in 2p orbital. The orbitals having the same energy are called degenerate. The 1s orbital in a hydrogen atom, as said earlier, corresponds to the most stable condition and is called the ground state and an electron residing in this orbital is most strongly held by the nucleus. An electron in the 2s, 2p or higher orbitals in a hydrogen atom is in excited state."
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        218,
+        867,
+        867,
+        2038
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The energy of an electron in a multi-electron atom, unlike that of the hydrogen atom, depends not only on its principal quantum number (shell), but also on its azimuthal quantum number (subshell). That is, for a given principal quantum number, s, p, d, f ... all have different energies. Within a given principal quantum number, the energy of orbitals increases in the order s<p<d<f. For higher energy levels, these differences are sufficiently pronounced and straggering of orbital energy may result, e.g., 4s<3d and 6s<5d; 4f<6p. The main reason for having different energies of the subshells is the mutual repulsion among the electrons in multi-electron atoms. The only electrical interaction present in hydrogen atom is the attraction between the negatively charged electron and the positively charged nucleus. In multi-electron atoms, besides the presence of attraction between the electron and nucleus, there are repulsion terms between every electron and other electrons present in the atom. Thus the stability of an electron in a multi-electron atom is because total attractive interactions are more than the repulsive interactions. In general, the repulsive interaction of the electrons in the outer shell with the electrons in the inner shell are more important. On the other hand, the attractive interactions of an electron increases with increase of positive charge (Ze) on the nucleus. Due to the presence of electrons in the inner shells, the electron in the outer shell will not experience the full positive charge of the nucleus (Ze). The effect will be lowered due to the partial screening of positive charge on the nucleus by the inner shell electrons. This is known as the shielding of the outer shell electrons from the nucleus  by the inner shell electrons, and the net positive charge experienced by the outer electrons is known as effective nuclear charge (Zeff e). Despite the shielding of the outer electrons from the nucleus by the inner shell electrons, the attractive force experienced by the outer shell electrons increases with increase of nuclear charge. In other words, the energy of interaction between, the nucleus and electron"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "60",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "Seam judged against CHE11L-ch02-p031.runA.json, the page I wrote immediately before this one (the instruction's named anchor, p030's output, does not exist on disk). p031 ends mid-phrase at 'is determined solely by the principal quantum' with last_block_continues_on_next true; this page opens 'number. Thus the energy of the orbitals in hydrogen atom  increases as follows :', the completion of 'principal quantum number', so first_block_continues_from_previous is true and the two pages agree. input's previous_page_last_block was null. Reading order is the left column (the paragraph tail, equation 2.23, the 'and is depicted in Fig. 2.16' paragraph, then Fig. 2.16) and then the single right-column paragraph; the text layer stores Fig. 2.16's caption last, after all of the right column's prose, so the layer is out of printed order here. Two blocks are deferred to the special transcriber, following this chapter's established pattern. Block n=2 is the centred numbered equation (2.23), the hydrogen-atom orbital energy order: the layer scrambles it into '1s < 2s = 2p < 3s = 3p = 3d <4s = 4p = 4d' / '= 4f <' with a long tab run before the tag '(2.23)', and the printed line trails off after '= 4f <' with nothing following it, so it is given a bbox with empty text rather than transcribed; the bbox spans the whole two printed lines including the right-hand equation tag. Block n=4 is Fig. 2.16: its bbox covers the yellow panel with the two energy-level diagrams and all their in-diagram labels (the 1s/2s/2p/3s/3p/3d level labels of (a), the 1s/2s/2p/3s/3p/4s/3d labels of (b), and the (a) and (b) sub-labels) together with the nine-line italic caption below it ('Fig. 2.16  Energy level diagrams for the few electronic shells of (a) hydrogen atom and (b) multi-electronic atoms. Note that ...'); the diagrams are not described. Inline notation follows the layer's own flattened spelling rather than the printed italics and subscripts: 's<p<d<f', 'e.g., 4s<3d and 6s<5d; 4f<6p', 'positive charge (Ze)', 'effective nuclear charge (Zeff e)' for the printed Z-sub-eff. The bold runs ('degenerate.', 'ground state', 'excited state.', 'shielding of the outer shell electrons from the nucleus  by the inner shell electrons,', 'effective nuclear charge') are printed emphasis and kept inline. 'straggering of orbital energy' (for staggering), the comma in 'interaction between, the nucleus', and the doubled spaces in 'hydrogen atom  increases' and 'from the nucleus  by the' are as printed and not corrected. The line-break hyphen in the layer's 'multi- / electron' is closed up to 'multi-electron', the printed word. Block n=5 breaks off at 'the nucleus and electron' and is completed on p033, so last_block_continues_on_next is true. bboxes are original-image pixels (1750x2180); the image renders at 1606x2000, so displayed coordinates were scaled by 1.09."
+}

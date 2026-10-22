@@ -1,0 +1,81 @@
+[
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0007",
+  "cat_ids": [
+   "C01"
+  ],
+  "question_text": "As the temperature increases, the electrical resistance",
+  "options": "(1) Increases for both conductors and semiconductors | (2) Decreases for both conductors and semiconductors | (3) Increases for conductors but decreases for semiconductors | (4) Decreases for conductors but increases for semiconductors",
+  "e1_type": "Single-fact recall",
+  "e2_format": "prose options (4 text statements)",
+  "e3_shape": "stem + options[4]"
+ },
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0011",
+  "cat_ids": [
+   "C14",
+   "C03"
+  ],
+  "question_text": "If the initial tension on a stretched string is doubled, then the ratio of the initial and final speeds of a transverse wave along the string is",
+  "options": "(1) $1 : 1$ | (2) $2 : 1$ | (3) $1 : 2$ | (4) $1 : 2$",
+  "e1_type": "Defective options (duplicate) (also: Numeric calculation)",
+  "e2_format": "numeric options",
+  "e3_shape": "stem + options[4]"
+ },
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0138",
+  "cat_ids": [
+   "C05"
+  ],
+  "question_text": "Which part of the fruit, labelled in the given figure makes it a false fruit?",
+  "options": "(1) A $\\rightarrow$ Mesocarp | (2) B $\\rightarrow$ Endocarp | (3) C $\\rightarrow$ Thalamus | (4) D $\\rightarrow$ Seed",
+  "e1_type": "Symbolic / formula",
+  "e2_format": "symbolic / formula options",
+  "e3_shape": "stem + options[4]"
+ },
+ {
+  "question_id": "NEET-2023-MAIN-E1-q0139",
+  "cat_ids": [
+   "C07"
+  ],
+  "question_text": "Match List I with List II :\nList I:\n(A) Oxidative decarboxylation\n(B) Glycolysis\n(C) Oxidative phosphorylation\n(D) Tricarboxylic acid cycle\nList II:\n(I) Citrate synthase\n(II) Pyruvate dehydrogenase\n(III) Electron transport system\n(IV) EMP pathway",
+  "options": "(1) A-III, B-IV, C-II, D-I | (2) A-II, B-IV, C-I, D-III | (3) A-III, B-I, C-II, D-IV | (4) A-II, B-IV, C-III, D-I",
+  "e1_type": "Match near-miss (one swap apart)",
+  "e2_format": "permutation options (A-I, B-II, ...)",
+  "e3_shape": "stem + list_i[4] + list_ii[4] + options[4]"
+ },
+ {
+  "question_id": "NEET-2022-MAIN-Q1-q0124",
+  "cat_ids": [
+   "C09"
+  ],
+  "question_text": "Read the following statements and choose the set of correct statements : ... Choose the correct answer from the options given below :\n((a)) Euchromatin is loosely packed chromatin\n((b)) Heterochromatin is transcriptionally active\n((c)) Histone octomer is wrapped by negatively charged DNA in nucleosome\n((d)) Histones are rich in lysine and arginine\n((e)) A typical nucleosome contains $400\\,\\mathrm{bp}$ of DNA helix",
+  "options": "(1) (b), (d), (e) Only | (2) (a), (c), (d) Only | (3) (b), (e) Only | (4) (a), (c), (e) Only",
+  "e1_type": "Multi-statement combination",
+  "e2_format": "combination options ('A and C only')",
+  "e3_shape": "stem + statements[5] + options[4]"
+ },
+ {
+  "question_id": "NEET-2023-MAIN-E1-q0003",
+  "cat_ids": [
+   "C11",
+   "C03"
+  ],
+  "question_text": "The equivalent capacitance of the system shown in the following circuit is :",
+  "options": "(1) $2\\,\\mu F$ | (2) $3\\,\\mu F$ | (3) $6\\,\\mu F$ | (4) $9\\,\\mu F$",
+  "e1_type": "Figure-dependent (also: Numeric calculation)",
+  "e2_format": "numeric options",
+  "e3_shape": "stem + options[4] + figure"
+ },
+ {
+  "question_id": "NEET-2023-MAIN-E1-q0150",
+  "cat_ids": [
+   "C13"
+  ],
+  "question_text": "Main steps in the formation of Recombinant DNA are given below. Arrange these steps in a correct sequence.\n(A) Insertion of recombinant DNA into the host cell.\n(B) Cutting of DNA at specific location by restriction enzyme.\n(C) Isolation of desired DNA fragment.\n(D) Amplification of gene of interest using PCR.",
+  "options": "(1) B, C, D, A | (2) C, A, B, D | (3) C, B, D, A | (4) B, D, A, C",
+  "e1_type": "Order / sequence",
+  "e2_format": "prose options (4 text statements)",
+  "e3_shape": "stem + statements[4] + options[4]"
+ }
+]

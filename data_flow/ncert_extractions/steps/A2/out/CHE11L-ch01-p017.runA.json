@@ -1,0 +1,144 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "And 1 amu = 1.66056×10–24 g",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Mass of an atom of hydrogen = 1.6736×10–24 g"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Thus, in terms of amu, the mass of hydrogen atom ="
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        500,
+        360,
+        800,
+        450
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "= 1.0078 amu = 1.0080 amu"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Similarly, the mass of oxygen - 16 (16O) atom would be 15.995 amu."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "At present, ‘amu’ has been replaced by ‘u’, which is known as unified mass."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "When we use atomic masses of elements in calculations, we actually use average atomic masses of elements, which are explained below."
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "1.7.2 Average Atomic Mass"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Many naturally occurring elements exist as more than one isotope. When we take into account the existence of these isotopes and their relative abundance (per cent occurrence), the average atomic mass of that element can be computed. For example, carbon has the following three isotopes with relative abundances and masses as shown against each of them."
+    },
+    {
+      "n": 11,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        210,
+        1265,
+        850,
+        1510
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "From the above data, the average atomic mass of carbon will come out to be: (0.98892) (12 u) + (0.01108) (13.00335 u) + (2 × 10–12) (14.00317 u) = 12.011 u"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Similarly, average atomic masses for other elements can be calculated. In the periodic table of elements, the atomic masses mentioned for different elements actually represent their average atomic masses."
+    },
+    {
+      "n": 14,
+      "kind": "heading",
+      "text": "1.7.3 Molecular Mass"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Molecular mass is the sum of atomic masses of the elements present in a molecule. It is obtained by multiplying the atomic mass of each element by the number of its atoms and adding them together. For example, molecular mass of methane, which contains one carbon atom and four hydrogen atoms, can be obtained as follows:"
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Molecular mass of methane, (CH4) = (12.011 u) + 4 (1.008 u) = 16.043 u"
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Similarly, molecular mass of water (H2O) = 2 × atomic mass of hydrogen + 1× atomic mass of oxygen = 2 (1.008 u) + 16.00 u = 18.02 u"
+    },
+    {
+      "n": 18,
+      "kind": "heading",
+      "text": "1.7.4 Formula Mass"
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "Some substances, such as sodium chloride, do not contain discrete molecules as their constituent units. In such compounds, positive (sodium ion) and negative (chloride ion) entities are arranged in a three-dimensional structure, as shown in Fig. 1.10."
+    },
+    {
+      "n": 20,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        950,
+        1180,
+        1480,
+        1590
+      ],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "It may be noted that in sodium chloride, one Na+ ion is surrounded by six Cl– ion and vice-versa."
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "The formula, such as NaCl, is used to calculate the formula mass instead of molecular mass as in the solid state sodium chloride does not exist as a single entity."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "SOME BASIC CONCEPTS OF CHEMISTRY",
+    "17",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null even though page is 17, so the opening flag was judged from the page itself: the page opens with a complete capitalised line (\"And 1 amu = 1.66056×10–24 g\"), not mid-sentence, so first_block_continues_from_previous is false, though the wording does follow on from a derivation on the previous page. The displayed fraction after \"of hydrogen atom =\" is absent from the text layer and is marked as an equation for the special transcriber; the Fig. 1.10 caption text appears at the very end of the text layer but the figure is placed in visual reading order (between blocks 19 and 21) and its caption is left to the special transcriber. Superscripts/subscripts are flattened in the text layer (16O, CH4, H2O, 10–24, 10–12) and are copied as the text layer holds them. The page carries a diagonal \"© NCERT not to be republished\" watermark, not listed as a block."
+}

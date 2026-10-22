@@ -1,0 +1,174 @@
+{
+  "group": "v2__chemistry__plain.part5",
+  "ratings": [
+    {
+      "question_id": "2015_A#q027",
+      "concept": "Point defects in ionic solids: Frenkel is a dislocation defect that leaves the density unchanged, Schottky is a vacancy defect that lowers it",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The single fact that a Frenkel defect displaces an ion to an interstitial site WITHIN the crystal, removing nothing, fixes the density as unchanged for Frenkel and lowered for Schottky; that one fact strikes out options 3 and 4 together, since each attaches the other defect's density behaviour to its own.",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "attaches to Frenkel the host that belongs to the other member of the pair: alkali halides such as NaCl and KCl show SCHOTTKY defects, while Frenkel defects are shown by silver halides and ZnS, where the cation is much smaller than the anion"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "attaches to Schottky the density behaviour that belongs to Frenkel: it is the Frenkel defect that has no effect on density, because nothing leaves the crystal, whereas Schottky removes a cation-anion pair and so lowers the density"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "the mirror image of option 3 - attaches to Frenkel the density decrease that belongs to Schottky; the Frenkel ion is relocated and not removed, so the mass and the volume are both unchanged"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires holding two neighbouring defect types apart on three separate counts, demonstrated by the four options, which pair the words Frenkel and Schottky with density, host lattice and dislocation in every combination but one.",
+      "note": "Option 2 as stored reads \"halides of alkaline metals\"; alkali metals are meant. The term as printed does not change the verdict, since neither alkali nor alkaline-earth halides are the Frenkel hosts, but it is recorded because it is a wording defect rather than a chemistry one."
+    },
+    {
+      "question_id": "2015_A#q028",
+      "concept": "Inert pair effect in group 13: the stability of the +1 oxidation state increases down the group, from Al to Tl",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Two single facts settle it between them: Tl has the most stable +1 state, which strikes out options 1 and 2 because neither places Tl at the stable end; and Al has the least stable +1 state, which strikes out option 3 because it places Al third rather than first.",
+      "traps": [
+        {
+          "label": "reversed_order",
+          "option": "1",
+          "route": "prints the exact reverse of the keyed sequence - Tl < In < Ga < Al against Al < Ga < In < Tl - which is what the inert pair effect gives if the trend is read up the group instead of down it"
+        },
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "2",
+          "route": "is the reversed sequence of option 1 with one interior adjacency altered: In and Tl are swapped, so it reads In < Tl < Ga < Al. Both ends are still wrong on the key's reading, and the adjacency that differs from option 1 is the In-Tl one"
+        },
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "3",
+          "route": "gets the stable endpoint right - Tl is last - and fails on Al's position, which it places third instead of first, so the order breaks on the In-Al adjacency while the end of the series is correct"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying one monotonic group trend to order four named elements, demonstrated by the stem's \"stability of +1 oxidation state among Al, Ga, In and TI increases in the sequence\", which asks for the ordering itself and not for any value.",
+      "note": "Thallium is stored as \"TI\" with a capital letter I in both the stem and the options, in place of the symbol Tl. The element is unambiguous from the group named in the stem, so the question is tagged as read; recorded as a character-level defect in our record."
+    },
+    {
+      "question_id": "2015_A#q029",
+      "concept": "Enantiomers: the two non-superimposable mirror images produced by a single chiral centre, which are the optically active pair",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The stem's species, CH3-CHOH-COOH, has exactly one chiral centre, so only two stereoisomers can exist and they must be mirror images; that one fact strikes out option 3 (diastereomers require two or more chiral centres) and option 2 (a meso form likewise requires at least two).",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "names the other member of the stereoisomer-pair vocabulary: diastereomers are stereoisomers that are NOT mirror images, which requires at least two chiral centres, and lactic acid has one"
+        },
+        {
+          "label": "look_alike_term",
+          "option": "2",
+          "route": "offers \"Mesomers\" against the key \"Enantiomers\": the real neighbouring words are the meso compound, which needs two chiral centres and is optically INACTIVE, and mesomerism, which is the resonance vocabulary of a different chapter; neither describes an optically active pair"
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "4",
+          "route": "atropisomers are a genuine class of stereoisomers, but they arise from restricted rotation about a single bond in hindered biaryls; the stem prints a species with a tetrahedral chiral centre and two mirror-image projections, so the option is correct subject matter answering a different question"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires separating four neighbouring names for stereoisomer relationships, demonstrated by the stem's \"Two possible stereo-structures ... which are optically active\", the two conditions that select enantiomers over a meso form and over diastereomers.",
+      "note": "The figure referenced by the record, figures_agent/2015_A/q029.png, is present and shows the two Fischer projections side by side with COOH at the top and the H and OH interchanged between them; the lower substituent is cut off by the crop, but the mirror relationship - which is the whole content - is legible, so the question is tagged in full."
+    },
+    {
+      "question_id": "2015_A#q030",
+      "concept": "Schotten-Baumann reaction: benzoylation of an amine with benzoyl chloride in aqueous alkali",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The printed reagent set - an acid chloride with an amine in NaOH - is the one fact needed: it strikes out option 3, since a Friedel-Crafts acylation requires anhydrous AlCl3 and an arene and cannot be run in aqueous NaOH, and option 4, since a Perkin reaction requires an aromatic aldehyde with an acid anhydride and its sodium salt.",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "names acetylation, a different member of the same acylation family: acetylation transfers CH3CO- from acetyl chloride or acetic anhydride, while the scheme prints C6H5COCl, so the acyl group named is the wrong one"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "3",
+          "route": "names an adjacent reaction of a different family: Friedel-Crafts is electrophilic substitution ON an aromatic ring with a Lewis acid catalyst, whereas the printed reaction is nucleophilic acyl substitution at the amine nitrogen"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "4",
+          "route": "names another adjacent named reaction of a different family: the Perkin reaction is the condensation of an aromatic aldehyde with an anhydride to give a cinnamic acid, which shares nothing with the printed amine plus acid chloride"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored name for a printed reagent-to-product mapping, demonstrated by the scheme's aniline plus benzoyl chloride with NaOH giving the N-phenylbenzamide the figure draws.",
+      "note": "The stem as stored carries a placeholder, \"The following reaction [reaction scheme] is known by the name:\", so the reaction is absent from the text. The figure it points to, figures_agent/2015_A/q030.png, is present and legible and supplies it in full: aniline (NH2 on a benzene ring) plus benzoyl chloride, over NaOH, giving N-phenylbenzamide. The question is therefore complete once the figure is read and is tagged as such rather than as damaged; the placeholder is recorded so that the text-only rendering is repaired. Option 2's printed spelling is \"Schotten-Baumen\"; the key is unaffected."
+    },
+    {
+      "question_id": "2015_A#q031",
+      "concept": "Coordination number from denticity (en and oxalate are both bidentate) and oxidation state from charge balance including the ionisable counter-ion",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Two bidentate en ligands and one bidentate oxalate give a coordination number of six on their own, so the sum asked for must exceed six; that single fact strikes out option 4, which prints 6.",
+      "traps": [
+        {
+          "label": "intermediate_value",
+          "option": "4",
+          "route": "prints the coordination number by itself: 6 is the correct result of the first of the two determinations, and the oxidation number is then not added to it"
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "1",
+          "route": "adds the wrong quantity to the coordination number: 7 is 6 + 1, where 1 is the charge on the complex ION [M(en)2(C2O4)]+, not the oxidation number of the metal; the two quantities differ by the oxalate's -2"
+        },
+        {
+          "label": "omitted_contribution",
+          "option": "2",
+          "route": "8 is 6 + 2, which is what the charge balance gives when the ionisable chloride outside the coordination sphere is left out of the sum; without that -1 the metal comes out as +2 instead of +3"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying two separate conventions to one printed formula, demonstrated by the stem's \"[M(en)2(C2O4)]Cl (Where en is ethylenediamine)\", from which the denticities give six and the chloride outside the brackets gives +3.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q032",
+      "concept": "Addition-elimination of carbonyl compounds with ammonia derivatives: hydrazine adds and then loses water to give a hydrazone, while HCN, bisulphite and Grignard reagents stop at the addition product",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Only the nitrogen nucleophiles of the ammonia-derivative family lose water after adding to a carbonyl group; hydrazine is the only such reagent printed, so that one fact strikes out options 1, 2 and 3 together.",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "1",
+          "route": "the stem names two requirements and hydrocyanic acid meets the first: it does add nucleophilically to the carbonyl carbon. The requirement that fails is the second - the cyanohydrin retains its OH group and no water is eliminated"
+        },
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "sodium hydrogen sulphite likewise satisfies \"nucleophilic addition\", giving the crystalline bisulphite adduct, and fails on \"elimination of water\": the adduct keeps both the OH and the SO3- group"
+        },
+        {
+          "label": "half_true",
+          "option": "3",
+          "route": "a Grignard reagent satisfies the addition half and fails the elimination half: the alkoxide formed is protonated on work-up to an alcohol, so water is added rather than eliminated"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying a two-part mechanistic criterion to four reagents, demonstrated by the stem's \"nucleophilic addition followed by elimination of water\", where every option satisfies the first clause and only hydrazine satisfies the second.",
+      "note": ""
+    }
+  ],
+  "group_note": "All six were read as the same printed shape - one question, four answers, no lettered block or printed list - and two members carry figures that the text alone does not reproduce: 2015_A#q030, whose stem is a bare \"[reaction scheme]\" placeholder, and 2015_A#q029. Both figures are present and legible, so both questions are complete once read with the figure and neither is treated as damaged; that is said in each note so the text-only rendering gets repaired. Three stated rules kept the group consistent. (1) DEMAND: four members are `application` or `concept_discrimination` on the same test - is the work applying a stated rule to this case, or separating two neighbouring concepts? q028 (one group trend applied to four elements), q031 (two conventions applied to one formula) and q032 (a two-part criterion applied to four reagents) are `application`; q027 (Frenkel against Schottky) and q029 (enantiomers against diastereomers and meso forms) are `concept_discrimination`, because their option sets pair the same two or three concepts with different attributes and nothing is applied to a new case. 2015_A#q030 is the only `recall` member and the reason is specific: a named reaction has to be matched to a printed reagent set, and no rule is applied or concept separated - knowing the name is the whole of it. (2) STRUCTURE: `several_independent_checks` where each option or each requirement is adjudicated separately and the verdicts combined (q027 three defect claims, q031 two separate determinations then summed, q032 four reagents); `single_step` where one fact or one ordering settles it (q028, q029, q030). q031 is the closest call and is deliberately NOT multi_step_dependent: the coordination number and the oxidation state are found independently of each other and only then added, which the rulebook distinguishes from step 2 needing step 1's result. (3) STRATEGY: five of the six carry `elimination`, and each has its one named fact and the options it strikes out written out; q027's shortcut strikes two options with one density fact, q032's strikes three with one family fact. (4) TRAPS: every tagged option names what makes it wrong. The repeated device in q027 is one and the same - a true fact about the OTHER defect - so all three distractors carry `other_one_fact` with the member named, and the uniformity is the construction's, not a default. q028 is the one ordering question and its devices are ordering devices: the exact reverse (`reversed_order`) separated from the two that get an end or an adjacency right (`sequence_endpoint_or_adjacency`), which is precisely the distinction the two labels exist to draw. q032's three distractors share a single structure - each meets the stem's first clause and fails its second - which is `half_true` three times over with the failing clause named. q031 is the member whose numeric options allow three different devices (the bare intermediate, the wrong quantity, the omitted term) and that is why it differs from the rest. No trap sits on any official answer."
+}

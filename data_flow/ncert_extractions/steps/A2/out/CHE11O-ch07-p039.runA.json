@@ -1,0 +1,120 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [222, 260, 798, 565],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Ni(OH)2 is more soluble than AgCN."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "7.13.2 Common Ion Effect on Solubility of Ionic Salts"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "It is expected from Le Chatelier’s principle that if we increase the concentration of any one of the ions, it should combine with the ion of its opposite charge and some of the salt will be precipitated till once again Ksp = Qsp. Similarly, if the concentration of one of the ions is decreased, more salt will dissolve to increase the concentration of both the ions till once again Ksp = Qsp. This is applicable even to soluble salts like sodium chloride except that due to higher concentrations of the ions, we use their activities instead of their molarities in the expression for Qsp. Thus if we take a saturated solution of sodium chloride and pass HCl gas through it, then sodium chloride is precipitated due to increased concentration (activity) of chloride ion available from the dissociation of HCl. Sodium chloride thus obtained is of very high purity and we can get rid of impurities like sodium and magnesium sulphates. The common ion effect is also used for almost complete precipitation of a particular ion as its sparingly soluble salt, with very low value of solubility product for gravimetric estimation. Thus we can precipitate silver ion as silver chloride, ferric ion as its hydroxide (or hydrated ferric oxide) and barium ion as its sulphate for quantitative estimations."
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Dissolution of S mol/L of Ni(OH)2 provides S mol/L of Ni2+ and 2S mol/L of OH–, but the total concentration of OH– = (0.10 + 2S) mol/L because the solution already contains 0.10 mol/L of OH– from NaOH."
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [925, 478, 1528, 548],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "As Ksp is small, 2S << 0.10, thus, (0.10 + 2S) ≈ 0.10 Hence,"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [925, 685, 1290, 765],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The solubility of salts of weak acids like phosphates increases at lower pH. This is because at lower pH the concentration of the anion decreases due to its protonation. This in turn increase the solubility of the salt so that Ksp = Qsp. We have to satisfy two equilibria simultaneously i.e.,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [930, 1055, 1540, 1310],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Taking inverse of both side and adding 1 we get"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [940, 1398, 1312, 1615],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Now, again taking inverse, we get"
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "[X–] / {[X–] + [HX]} = f = Ka / (Ka + [H+]) and it can be seen that ‘f’ decreases as pH decreases. If S is the solubility of the salt at a given pH then"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [940, 1805, 1528, 1885],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Thus solubility S increases with increase in [H+] or decrease in pH."
+    },
+    {
+      "n": 17,
+      "kind": "box",
+      "text": "Problem 7.28 Calculate the molar solubility of Ni(OH)2 in 0.10 M NaOH. The ionic product of Ni(OH)2 is 2.0 × 10–15."
+    },
+    {
+      "n": 18,
+      "kind": "box",
+      "text": "Solution"
+    },
+    {
+      "n": 19,
+      "kind": "box",
+      "text": "Let the solubility of Ni(OH)2 be equal to S."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "230",
+    "CHEMISTRY",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; chained off my own p038 output, whose last block was the pink panel's display 'AgCN <=> Ag+ + CN-' for Problem 7.27, and this page opens in the same pink panel with 'Ksp = [Ag+][CN-] = 6 x 10-17', so first_block_continues_from_previous is true. THIS PAGE'S TEXT LAYER IS OUT OF VISUAL READING ORDER: the Problem 7.28 statement panel printed at the foot of the LEFT column ('Problem 7.28 / Calculate the molar solubility ... / Solution / Let the solubility of Ni(OH)2 be equal to S.') is stored LAST in the layer, after the whole right column, while the right-column pink panel that continues that very solution ('Dissolution of S mol/L of Ni(OH)2 provides ...') is stored earlier, immediately after the left-column paragraph. I have kept the text layer's order (blocks 5-8 before blocks 17-19) so that block prose stays in layer order; visually the correct sequence is blocks 1-4, then 17-19, then 5-8, then 9-16. Displayed expressions are needs_special with a pixel bbox and empty text, as throughout this chapter: blocks 1, 6, 8, 10, 12 and 15. Block 1 groups the seven solution display lines of Problem 7.27 from 'Ksp = [Ag+][CN-] = 6 x 10-17' through '(S2)(2S2)2 = 2 x 10-15, S2 = 0.58 x 10-4', with the 'Let ... then ...' lines inside the bbox; the panel's closing prose sentence is block 2. Equation number (7.46) is inside block 15's bbox. The two pink panels are split into box prose blocks (2, 5, 7, 17, 18, 19) interleaved with needs_special displays so that no box block is maths-only. Block 14 is set as running prose in the text layer (an indented paragraph opening with the expression [X-] / {[X-] + [HX]} = f = Ka / (Ka + [H+]) and flowing straight into 'and it can be seen that ...'), not as a centred display, so I transcribed it rather than marking it needs_special. The page ends with a complete sentence and p040 opens the chapter SUMMARY, so last_block_continues_on_next is false."
+}

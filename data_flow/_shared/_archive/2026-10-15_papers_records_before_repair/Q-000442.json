@@ -1,0 +1,218 @@
+{
+  "question_id": "Q-000442",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:145"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Match List I with List II\nList I (Types of Stamens)\nList II (Example)\nChoose the correct answer from the options given below:",
+  "statements": [],
+  "list_i": [
+    {
+      "label": "A",
+      "text": "Monoadelphous"
+    },
+    {
+      "label": "B",
+      "text": "Diadelphous"
+    },
+    {
+      "label": "C",
+      "text": "Polyadelphous"
+    },
+    {
+      "label": "D",
+      "text": "Epiphyllous"
+    }
+  ],
+  "list_ii": [
+    {
+      "label": "I",
+      "text": "Citrus"
+    },
+    {
+      "label": "II",
+      "text": "Pea"
+    },
+    {
+      "label": "III",
+      "text": "Lily"
+    },
+    {
+      "label": "IV",
+      "text": "China-rose"
+    }
+  ],
+  "options_en": {
+    "1": "A-IV, B-II, C-I, D-III",
+    "2": "A-IV, B-I, C-II, D-III",
+    "3": "A-I, B-II, C-IV, D-III",
+    "4": "A-III, B-I, C-IV, D-II"
+  },
+  "structure": "match",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "145\nMatch List I with List II List I (Types of Stamens) List II (Example) A. Monoadelphous I. Citrus B.\nDiadelphous II. Pea C. Polyadelphous III. Lily D. Epiphyllous IV. China-rose Choose the correct answer\nfrom the options given below:\n(1)\nA-IV, B-II, C-I, D-III\n(2)\nA-IV, B-I, C-II, D-III\n(3)\nA-I, B-II, C-IV, D-III\n(4)\nA-III, B-I, C-IV, D-II\nMorphology of Flowering Plants\n",
+  "b4_script_options": {
+    "1": "A-IV, B-II, C-I, D-III",
+    "2": "A-IV, B-I, C-II, D-III",
+    "3": "A-I, B-II, C-IV, D-III",
+    "4": "A-III, B-I, C-IV, D-II\nMorphology of Flowering Plants"
+  },
+  "official_answer": "1",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "botany",
+  "b6_answer": "1",
+  "b6_reason": "Monoadelphous = China-rose (single staminal tube), diadelphous = pea (two bundles), polyadelphous = Citrus (many bundles), epiphyllous = lily (stamens attached to perianth).",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

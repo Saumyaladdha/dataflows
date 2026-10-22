@@ -1,0 +1,118 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "For example, 10% ethanol solution in water means that 10 mL of ethanol is dissolved in water such that the total volume of the solution is 100 mL. Solutions containing liquids are commonly expressed in this unit. For example, a 35% (v/v) solution of ethylene glycol, an antifreeze, is used in cars for cooling the engine. At this concentration the antifreeze lowers the freezing point of water to 255.4K (–17.6°C).",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "(iii) Mass by volume percentage (w/V): Another unit which is commonly used in medicine and pharmacy is mass by volume percentage. It is the mass of solute dissolved in 100 mL of the solution."
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "(iv) Parts per million: When a solute is present in trace quantities, it is convenient to express concentration in parts per million (ppm) and is defined as:"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        496,
+        670,
+        1428,
+        796
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "As in the case of percentage, concentration in parts per million can also be expressed as mass to mass, volume to volume and mass to volume. A litre of sea water (which weighs 1030 g) contains about 6 × 10^–3 g of dissolved oxygen (O2). Such a small concentration is also expressed as 5.8 g per 10^6 g (5.8 ppm) of sea water. The concentration of pollutants in water or atmosphere is often expressed in terms of µg mL^–1 or ppm."
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "(v) Mole fraction: Commonly used symbol for mole fraction is x and subscript used on the right hand side of x denotes the component. It is defined as:"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        496,
+        1172,
+        1439,
+        1303
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "For example, in a binary mixture, if the number of moles of A and B are nA and nB respectively, the mole fraction of A will be"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        518,
+        1401,
+        1439,
+        1482
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "For a solution containing i number of components, we have:"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        512,
+        1548,
+        1439,
+        1635
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "It can be shown that in a given solution sum of all the mole fractions is unity, i.e."
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        518,
+        1717,
+        1439,
+        1760
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Mole fraction unit is very useful in relating some physical properties of solutions, say vapour pressure with the concentration of the solution and quite useful in describing the calculations involving gas mixtures."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "3",
+    "Solutions",
+    "Reprint 2026-27"
+  ],
+  "note": "Fixed the reported A2_TEXT_MISMATCH: the previous attempt flattened the printed superscript in '5.8 g per 10^6 g' into the literal number '106', which does not occur in the text layer (the text layer carries base and exponent separately as '10' then '6'). Superscript exponents in block 5 are now written with a caret ('10^6', '10^–3', 'µg mL^–1') so base and exponent stay distinct, matching the text layer. The text layer renders the micro sign as 'mg mL' in that same sentence; the page image clearly shows 'µg mL', so the image reading was used there. Equation numbers (1.3)–(1.7) sit inside the equation blocks and are left to the special transcriber. previous_page_last_block was null for this page, so the continuation judgement for block 1 was made from the page image alone: it opens a complete new sentence ('For example, ...'), so it is not marked as continuing, though it does sit inside the numbered list of concentration units carried over from the previous page."
+}

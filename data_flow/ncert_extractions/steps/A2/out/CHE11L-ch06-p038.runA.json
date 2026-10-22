@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "A solid salt of the general formula Mx p+ Xy q– with molar solubility S in equilibrium with its saturated solution may be represented by the equation:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [216, 402, 768, 480],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "And its solubility product constant is given by:"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 562, 864, 740],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The term Ksp in equation is given by Qsp (section 6.6.2) when the concentration of one or more species is not the concentration under equilibrium. Obviously under equilibrium conditions Ksp = Qsp but otherwise it gives the direction of the processes of precipitation or dissolution. The solubility product constants of a number of common salts at 298K are given in Table 6.9."
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Problem 6.26 Calculate the solubility of A2X3 in pure water, assuming that neither kind of ion reacts with water. The solubility product of A2X3, Ksp = 1.1 × 10–23. Solution A2X3 → 2A3+ + 3X2– Ksp = [A3+]2 [X2–]3 = 1.1 × 10–23 If  S = solubility of A2X3, then [A3+] = 2S;  [X2–] = 3S therefore, Ksp = (2S)2(3S)3 = 108S5 = 1.1 × 10–23 thus, S5 = 1 × 10–25 S = 1.0 × 10–5 mol/L."
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Problem 6.27 The values of Ksp of two sparingly soluble salts Ni(OH)2 and AgCN are 2.0 × 10–15 and 6 × 0–17 respectively. Which salt is more soluble? Explain. Solution"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [221, 1892, 552, 1940],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [894, 250, 1542, 1930],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["EQUILIBRIUM", "205", "2024-25"],
+  "note": "Two-column page; left column read before right, so Table 6.9, which fills the whole right-hand column, is block 9 and comes last in reading order even though it starts at the top of the page. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 37 output I wrote myself rather than against the input: page 37 finished on a complete display line and this page opens the fresh sentence 'A solid salt of the general formula...', so first_block_continues_from_previous is false. Left for the special transcriber: the MxXy dissolution equilibrium with its '(where x x p+ = y x q-)' condition line (block 2), the four-line Ksp derivation containing the numbered equations (6.44) and (6.45) (block 4), the AgCN equilibrium that the page breaks off on (block 8) and Table 6.9 with its blue three-line caption (block 9) - the table's rows are not in the text layer at all, only its caption is. In block 1 the inline general formula is written 'Mx p+ Xy q–'; the text layer has its characters scattered as separate fragments ('M', 'X', 'x', 'p', 'y', 'q'), so this is the printed reading rather than a copy of the text layer. last_block_continues_on_next is true because the running content is cut off: Problem 6.27's solution gets only as far as the AgCN equilibrium (block 8) and continues on page 39. The block that physically ends the page, Table 6.9, is complete, which is why no block here carries a continues_on_next flag - the same treatment page 22's output gave its bottom-of-page biography box."
+}

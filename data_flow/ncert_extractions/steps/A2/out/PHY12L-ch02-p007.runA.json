@@ -1,0 +1,111 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "where r̂ is the unit vector along the position vector OP.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The electric potential of a dipole is then given by"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 365, 1170, 445],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Equation (2.15) is, as indicated, approximately true only for distances large compared to the size of the dipole, so that higher order terms in a/r are negligible. For a point dipole p at the origin, Eq. (2.15) is, however, exact."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "From Eq. (2.15), potential on the dipole axis (θ = 0, π ) is given by"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 645, 1170, 730],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "(Positive sign for θ = 0, negative sign for θ = π.) The potential in the equatorial plane (θ = π/2) is zero."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The important contrasting features of electric potential of a dipole from that due to a single charge are clear from Eqs. (2.8) and (2.15):"
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "(i)\tThe potential due to a dipole depends not just on r but also on the angle between the position vector  r and the dipole moment vector p. (It is, however, axially symmetric about p. That is, if you rotate the position vector r  about  p, keeping θ fixed, the points corresponding to P on the cone so generated will have the same potential as at P.)\n(ii) The electric dipole potential falls off, at large distance, as 1/r 2, not as 1/r, characteristic of the potential due to a single charge. (You can refer to the Fig. 2.5 for graphs of 1/r 2 versus r and 1/r versus r, drawn there in another context.)"
+    },
+    {
+      "n": 10,
+      "kind": "heading",
+      "text": "2.5  POTENTIAL DUE TO A SYSTEM OF CHARGES"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Consider a system of charges q1, q2,…, qn with position vectors r1, r2,…, rn relative to some origin (Fig. 2.6). The potential V1 at P due to the charge q1 is"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 1415, 470, 1495],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "where r1P is the distance between q1 and P."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Similarly, the potential V2 at P due to q2 and V3 due to q3 are given by"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 1610, 670, 1705],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "where r2P and r3P are the distances of P from charges q2 and q3, respectively; and so on for the potential due to other charges. By the superposition principle, the potential V at P due to the total charge configuration is the algebraic sum of the potentials due to the individual charges"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 1985, 850, 2045],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [860, 1485, 1510, 1935],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "51", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null, but the page opens with the lowercase clause 'where r̂ is the unit vector…', which is a continuation of an equation on the previous page, so continues_from_previous is true. Text layer renders the side-heading 2.5 five times out of order; transcribed once in its true position. Text layer also maps the Symbol-font letters θ and π to 'q' and 'p' (e.g. '(q = 0, p )') and splits sub/superscripts onto separate lines; those were taken from the page image instead. Figure 2.6 sits in the right column alongside blocks 14-17; it is listed last per left-column-first reading order. Equations 2.15, 2.16, 2.17 and the three unnumbered V expressions are marked needs_special."
+}

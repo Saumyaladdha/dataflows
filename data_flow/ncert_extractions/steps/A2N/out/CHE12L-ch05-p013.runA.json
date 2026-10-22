@@ -1,0 +1,45 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "In the square planar complexes, the hybridisation involved is dsp². An example is [Ni(CN)₄]²⁻. Here nickel is in +2 oxidation state and has the electronic configuration 3d⁸. The hybridisation scheme is as shown in diagram:",
+      "fixes": [
+        {"wrong": "dsp2", "right": "dsp²"},
+        {"wrong": "[Ni(CN)4]2–", "right": "[Ni(CN)₄]²⁻"},
+        {"wrong": "3d8", "right": "3d⁸"}
+      ]
+    },
+    {"n": 3, "no_change": true},
+    {"n": 4, "no_change": true},
+    {"n": 6, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "A critical study of the magnetic data of coordination compounds of metals of the first transition series reveals some complications. For metal ions with upto three electrons in the d orbitals, like Ti³⁺ (d¹); V³⁺ (d²); Cr³⁺ (d³); two vacant d orbitals are available for octahedral hybridisation with 4s and 4p orbitals. The magnetic behaviour of these free ions and their coordination entities is similar. When more than three 3d electrons are present, the required pair of 3d orbitals for octahedral hybridisation is not directly available (as a consequence of Hund’s rule). Thus, for d⁴ (Cr²⁺, Mn³⁺), d⁵ (Mn²⁺, Fe³⁺), d⁶ (Fe²⁺, Co³⁺) cases, a vacant pair of d orbitals results only by pairing of 3d electrons which leaves two, one and zero unpaired electrons, respectively.",
+      "fixes": [
+        {"wrong": "Ti3+ (d1)", "right": "Ti³⁺ (d¹)"},
+        {"wrong": "V3+ (d2)", "right": "V³⁺ (d²)"},
+        {"wrong": "Cr3+ (d3)", "right": "Cr³⁺ (d³)"},
+        {"wrong": "d4 (Cr2+, Mn3+)", "right": "d⁴ (Cr²⁺, Mn³⁺)"},
+        {"wrong": "d5 (Mn2+, Fe3+)", "right": "d⁵ (Mn²⁺, Fe³⁺)"},
+        {"wrong": "d6 (Fe2+, Co3+)", "right": "d⁶ (Fe²⁺, Co³⁺)"}
+      ]
+    },
+    {
+      "n": 8,
+      "corrected_text": "The magnetic data agree with maximum spin pairing in many cases, especially with coordination compounds containing d⁶ ions. However, with species containing d⁴ and d⁵ ions there are complications. [Mn(CN)₆]³⁻ has magnetic moment of two unpaired electrons while [MnCl₆]³⁻ has a paramagnetic moment of four unpaired electrons. [Fe(CN)₆]³⁻ has magnetic moment of a single unpaired electron while [FeF₆]³⁻ has a paramagnetic moment of five unpaired electrons. [CoF₆]³⁻ is paramagnetic with four unpaired electrons while [Co(C₂O₄)₃]³⁻ is diamagnetic. This apparent anomaly is explained by valence bond theory in terms of formation of inner orbital and outer orbital coordination entities. [Mn(CN)₆]³⁻, [Fe(CN)₆]³⁻ and [Co(C₂O₄)₃]³⁻ are inner orbital complexes involving d²sp³ hybridisation, the former two complexes are paramagnetic and the latter diamagnetic. On the other hand, [MnCl₆]³⁻, [FeF₆]³⁻ and [CoF₆]³⁻ are outer orbital complexes involving sp³d² hybridisation and are paramagnetic corresponding to four, five and four unpaired electrons.",
+      "fixes": [
+        {"wrong": "containing d6 ions", "right": "containing d⁶ ions"},
+        {"wrong": "d4 and d5 ions", "right": "d⁴ and d⁵ ions"},
+        {"wrong": "[Mn(CN)6]3–", "right": "[Mn(CN)₆]³⁻"},
+        {"wrong": "[MnCl6]3–", "right": "[MnCl₆]³⁻"},
+        {"wrong": "[Fe(CN)6]3–", "right": "[Fe(CN)₆]³⁻"},
+        {"wrong": "[FeF6]3–", "right": "[FeF₆]³⁻"},
+        {"wrong": "[CoF6]3–", "right": "[CoF₆]³⁻"},
+        {"wrong": "[Co(C2O4)3]3–", "right": "[Co(C₂O₄)₃]³⁻"},
+        {"wrong": "d2sp3", "right": "d²sp³"},
+        {"wrong": "sp3d2", "right": "sp³d²"}
+      ]
+    }
+  ],
+  "note": "Three blocks corrected, 19 individual notation fixes. The heaviest damage on this page is to d-electron-count superscripts: 'd1', 'd2', 'd3', 'd4', 'd5', 'd6' and '3d8' are all dⁿ configuration labels, and flattened they read as two-digit numbers; likewise the hybridisation labels dsp², d²sp³ and sp³d². Every metal-ion and complex-ion charge (Ti³⁺, V³⁺, Cr³⁺, Cr²⁺, Mn³⁺, Mn²⁺, Fe³⁺, Fe²⁺, Co³⁺, and the eight [ML₆]³⁻ ions) was flattened too. Orbital labels printed full size (4s, 4p, 3d) and the oxidation state '+2' were already correct. n=3, n=4, n=6 are prose with no notation. No degree symbols, locants or primes on this page."
+}

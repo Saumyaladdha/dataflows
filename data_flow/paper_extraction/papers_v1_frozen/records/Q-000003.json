@@ -1,0 +1,259 @@
+{
+ "question_id": "Q-000003",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "C1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "option_map": {
+   "step": "C1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "merged_from": {
+   "step": "C1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "d1_chapter_ids": {
+   "step": "D1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "d1_why": {
+   "step": "D1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "d1_confidence": {
+   "step": "D1",
+   "prompt_version": "v1",
+   "status": "pass"
+  }
+ },
+ "exam": "NEET",
+ "year": 2023,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "E1:4",
+  "E2:26"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+ "trust": "unsure",
+ "stem_en": "A football player is moving southward and suddenly turns eastward with the same speed to avoid an opponent. The force that acts on the player while turning is :",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "along eastward",
+  "2": "along northward",
+  "3": "along north-east",
+  "4": "along south-west"
+ },
+ "structure": "plain",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "4\nA football player is moving southward and suddenly turns eastward with the same speed to avoid an\nopponent. The force that acts on the player while turning is :\n(1)\nalong eastward\n(2)\nalong northward\n(3)\nalong north-east\n(4)\nalong south-west\nLaws of Motion\n",
+ "b4_script_options": {
+  "1": "along eastward",
+  "2": "along northward",
+  "3": "along north-east",
+  "4": "along south-west\nLaws of Motion"
+ },
+ "official_answer": "3",
+ "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+ "status": "normal",
+ "b6_answer": "3",
+ "b6_reason": "Force is along change in velocity: taking south=(0,-v) and east=(v,0), delta v = (v,v), which points north-east.",
+ "b6_working": "v_i = v south = (0,-v); v_f = v east = (v,0); delta_v = v_f - v_i = (v,0)-(0,-v) = (v,v) -> direction north-east",
+ "b6_confidence": "high",
+ "b6_note": "",
+ "b6_agrees_with_key": true,
+ "subject": "Physics",
+ "branch": null,
+ "option_map": {
+  "Q-000010": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ },
+ "merged_from": [
+  "Q-000010"
+ ],
+ "d1_chapter_ids": [
+  "PHY11-CH04"
+ ],
+ "d1_why": "Force direction follows the change in velocity vector (Newton's second law): turning from southward to eastward motion gives a change in velocity, and hence a force, along north-east, which is the correct answer.",
+ "d1_confidence": "high",
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "paper_codes now lists every code this question was printed in (E1, E2); each code's own option order is recorded in option_order_by_code",
+    "option_order_by_code recorded for E1, E2: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "E1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  },
+  "E2": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

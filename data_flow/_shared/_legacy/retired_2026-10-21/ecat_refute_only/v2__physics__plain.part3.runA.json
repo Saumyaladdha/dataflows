@@ -1,0 +1,161 @@
+{
+  "group": "v2__physics__plain.part3",
+  "ratings": [
+    {
+      "question_id": "2015_A#q148",
+      "question_type": "plain_mcq",
+      "format": "pick_ratio",
+      "content_shape": "formula_or_law",
+      "concept": "Ideal gas law written with density: $M = \\rho RT/P$, so the molar-mass ratio is the density ratio divided by the pressure ratio",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "Keeps the pressures only: $P_B/P_A = 1/2$. The density ratio is dropped."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "Keeps the densities only, and upside down: $1/1.5 = 2/3$."
+        },
+        {
+          "label": "copied_from_stem",
+          "option": "4",
+          "route": "Repeats the stem's own \"the pressure of a being twice that of B\". The 2 is the pressure ratio, not the mass ratio."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one relation to be rearranged and the constants cancelled, demonstrated by the stem's \"at the same temperature\", which removes $R$ and $T$ and leaves $M \\propto \\rho/P$.",
+      "note": "`estimation` is recorded on the rulebook's own ground that the cancelling of constants in a ratio question is a strategy and not a demand; $1.5/2$ needs no arithmetic beyond that."
+    },
+    {
+      "question_id": "2015_A#q149",
+      "question_type": "statement_options",
+      "format": "pick_correct_statement",
+      "content_shape": "formula_or_law",
+      "concept": "Elliptical orbit under a central force: acceleration always points at the earth, angular momentum is constant in size and direction, total energy is constant, speed is not",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "The magnitude really is constant. The direction is not: angular momentum keeps a fixed direction too, perpendicular to the orbit."
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "3",
+          "route": "Kinetic and potential energy do vary over the orbit. Their total does not."
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "4",
+          "route": "It is the ANGULAR momentum that holds its magnitude. Linear momentum changes with the speed, fastest at perigee."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one property of a central force to be applied to four rival claims, demonstrated by the option \"The acceleration of S is always directed towards the centre of the earth\", which is true for every point of the ellipse because gravity acts along the line to the earth.",
+      "note": "E1 is `statement_options`: the stem ends at \"Then,\" and each option is a standalone claim, with no lettered block printed. Option 4 as stored reads \"remains constant is magnitude\" for \"in magnitude\"; the claim is still readable, so the question is tagged as read and the slip flagged for repair."
+    },
+    {
+      "question_id": "2015_A#q150",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Forward-biased diode in series: take the barrier potential off the emf first, then Ohm's law - $I = (3.5-0.5)/100$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["unit_sanity"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "1",
+          "route": "Leaves the $0.5\\,\\mathrm{V}$ barrier out of the voltage sum. $3.5/100$ gives $35\\,\\mathrm{mA}$."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "3",
+          "route": "Adds the barrier instead of subtracting it. $4.0/100$ gives $40\\,\\mathrm{mA}$."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a net voltage to be formed before the current can be found, demonstrated by the stem's \"the barrier potential developed across the diode is 0.5 V\", which must be taken off the $3.5\\,\\mathrm{V}$ emf before the $100\\,\\Omega$ divides into it.",
+      "note": "The figure figures_agent/2015_A/q150.png is present and was read: it shows the diode forward-biased in series with the $100\\,\\Omega$ resistor and the cell, which is what the stem already states in words. The question is therefore answerable from its text, and no `figure_to_read` secondary type is recorded - the rulebook reserves that for a question that CANNOT be answered without the figure. `unit_sanity` is recorded because the computed $0.03\\,\\mathrm{A}$ has to be read against options printed in milliamperes. Option 4 is left untagged: no named operation on $3.5\\,\\mathrm{V}$, $0.5\\,\\mathrm{V}$ and $100\\,\\Omega$ produces $20\\,\\mathrm{mA}$, and naming it would be a nearest-value claim rather than a route."
+    },
+    {
+      "question_id": "2015_A#q151",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Orbital speed from surface gravity: $v = \\sqrt{gR^2/(R+h)}$, because $GM = gR^2$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "new_trap",
+          "option": "1",
+          "route": "Prints the digits of the gravitational constant, $6.67\\times10^{-11}$, which the stem never supplies. No operation on $g$, $R$ and $h$ gives $6.67\\,\\mathrm{km/s}$."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one computed quantity to be carried into the next relation, demonstrated by the stem's \"at a height of 0.25 x 10^6 m above the surface of earth\", which must be added to the radius before $gR^2$ is divided by it.",
+      "note": "NEW TRAP, option 1: a digit echo - the option reproduces the digits of a remembered physical constant that the question does not use. The current list has no label for it; `copied_from_stem` needs the phrase to come from the stem, and `no_derivation_route` names only the absence of a route, not the source of the digits. Options 3 and 4 are left untagged, and the candidates were tried: $\\sqrt{gR}$ gives $7.91$, $\\sqrt{g(R+h)}$ gives $8.06$, and the escape speed $\\sqrt{2}v$ gives $10.97$ - none of them is printed, so $8.56$ and $9.13$ cannot be tied to an operation and are left as spread. `estimation` is recorded because the height is under $4\\%$ of the radius, so the answer must sit just below $\\sqrt{gR} = 7.9\\,\\mathrm{km/s}$."
+    },
+    {
+      "question_id": "2015_A#q152",
+      "question_type": "statement_options",
+      "format": "pick_correct_statement",
+      "content_shape": "formula_or_law",
+      "concept": "Reading circular motion off a position vector: $\\vec R = 4\\sin(2\\pi t)\\hat i + 4\\cos(2\\pi t)\\hat j$ gives $r = 4\\,\\mathrm{m}$, $\\omega = 2\\pi$, so the speed is $8\\pi\\,\\mathrm{m/s}$",
+      "cognitive_demand": "representation_translation",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "True as printed: $x^2+y^2 = 16$, a circle of radius $4\\,\\mathrm{m}$. The stem asks for the wrong statement."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "True as printed: the acceleration points back along $-\\vec R$, towards the centre. The stem asks for the wrong statement."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "True as printed: for circular motion the acceleration is $v^2/R$. The stem asks for the wrong statement."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires an equation to be read as a motion, demonstrated by the stem's \"$\\bar{R} = 4\\sin(2\\pi t)\\,\\hat{i} + 4\\cos(2\\pi t)\\,\\hat{j}$\", from which the radius, the angular frequency and the direction of the acceleration are all read off the form itself.",
+      "note": "E4a is `representation_translation` rather than `calculation`: three of the four claims are settled by reading the equation as a circle, and only the keyed one needs the product $\\omega r$. Option 1 as stored reads \"Patch of the particle\" for \"Path\"; the claim is still readable, so the question is tagged as read and the slip flagged for repair. The keyed option is wrong because it drops the factor $\\pi$: the speed is $2\\pi \\times 4 = 8\\pi \\approx 25\\,\\mathrm{m/s}$, not $8\\,\\mathrm{m/s}$."
+    },
+    {
+      "question_id": "2015_A#q153",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Harmonics on a string fixed at both ends: successive resonances differ by the fundamental, so $420$ and $315\\,\\mathrm{Hz}$ give $f_1 = 105\\,\\mathrm{Hz}$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires the fundamental to be recovered from two successive resonances, demonstrated by the stem's \"resonant frequencies of 420 Hz and 315 Hz\", whose difference is the spacing of the harmonic series.",
+      "note": "SOURCE DAMAGE, on two counts. First, options 1 and 4 are stored with the SAME value, $105\\,\\mathrm{Hz}$, so the stored key of 1 cannot be told from option 4; a duplicated option is the rulebook's own example of our extraction damage. Second, the stem's last sentence has lost words - \"There are no other resonant frequency for this string is:\" - so what is being asked has to be reconstructed from the numbers and the key. No trap is written, as rule 5 requires. E4 IS filled, because the arithmetic itself is determinate: $420-315 = 105$, and $420 = 4f_1$ with $315 = 3f_1$ fixes the fundamental whatever wording the stem lost. A reviewer who reads rule 5 as emptying E4 on any damaged question should blank those two fields; the ground for filling them is recorded here rather than left silent. The repair needed is the fourth option's real value and the stem's missing clause."
+    }
+  ],
+  "group_note": "Six questions grouped on `structure` = \"plain\". Two are re-read from the layout as `statement_options` - 2015_A#q149, whose stem ends at \"Then,\", and 2015_A#q152, whose stem is an equation followed by \"Which one of the following statements is wrong\" - because in both the content lives entirely in four standalone claims with no lettered block printed. The other four are `plain_mcq`. E2 separates them further and is read from the options alone: fractions in q148 make it `pick_ratio` even though the work is gas-law algebra, which is the rulebook's point that a ratio question can still ask for something else; numbers with units in q150, q151 and q153 make those `calculate_value`; whole claims in q149 and q152 make those `pick_correct_statement`. DEMAND: `calculation` for the four that produce a number (q148, q150, q151, q153); `application` for q149, where one property of a central force is applied to four rival claims and no number is formed; `representation_translation` for q152 alone, because three of its four claims are read off the form of the printed position vector rather than computed. STRUCTURE: `multi_step_dependent` where a computed result is consumed by the next relation - q150 (net voltage, then Ohm's law) and q151 ($R+h$, then the square root) - against `single_step` for q148, where one rearrangement cancels the constants in a single move, and q153, whose whole arithmetic is one difference. `several_independent_checks` for q149 and q152, where four claims are judged separately and the verdicts combined; the rulebook is explicit that this is not a chain. STRATEGY: only where the shortcut is nameable. `estimation` on q148 (the constants cancel) and q151 (the height is under 4% of the radius, so the answer must sit just below $\\sqrt{gR}$); `unit_sanity` on q150, where amperes must be read against options in milliamperes. No `elimination` anywhere in this packet: none of the six has a single fact that strikes out named options, and the label is withheld rather than asserted without evidence. TRAPS: labelled by the operation. A whole term dropped from a sum is `omitted_contribution` (q150's missing barrier potential); a wrong operation on the terms present is `calculation_slip` (q150's added barrier, q148's dropped factors); a stem phrase repeated as the answer is `copied_from_stem` (q148's \"2\"); a neighbouring physical quantity is `wrong_quantity` (q149's total energy for the parts of it, and linear momentum for angular); a two-part claim with one part right is `half_true`; and true statements under a negated stem are `true_statement_trap` (q152, where `negative_words_seen` records \"wrong\"). ONE ESCAPE HATCH IS USED: `new_trap` on q151 option 1, a digit echo of the gravitational constant, described in that question's note. Two restraints are recorded: q150 option 4 and q151 options 3 and 4 are untagged because the candidate operations were tried and none lands on them. One member carries a verdict instead of traps: 2015_A#q153 is `source_damage_artifact` on two counts - options 1 and 4 both store $105\\,\\mathrm{Hz}$, and the stem has lost the words naming what is asked. Its E4 is filled and q041-style blanking was not applied, because the arithmetic is determinate whatever the lost wording; that reading of rule 5 is stated in the note so it can be overturned. No trap sits on any official answer."
+}

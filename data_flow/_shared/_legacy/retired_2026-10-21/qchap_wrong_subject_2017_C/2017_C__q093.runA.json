@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on charge redistribution between two identical capacitors at constant total charge halving the stored energy (U = Q^2/2C with C doubled), a capacitance fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Biology\" and the 32-chapter Biology closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180. A Physics question was handed the Biology list, so no correct code exists in it. Expected chapter: 'Capacitance' (PHYNEETENGCPC, topics 'Redistribution of Charges' and 'Energy Stored in a Capacitor'), which exists in the product's Physics taxonomy but was not offered to this item."
+}

@@ -1,0 +1,49 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.0, "x1": 0.285},
+      {"id": "right", "x0": 0.304, "x1": 0.933}
+    ]
+  },
+  "elements": [
+    {"n": 1, "role": "paragraph", "bbox": [0.3019, 0.0872, 0.9269, 0.1294],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "list", "bbox": [0.3287, 0.1376, 0.9269, 0.2307],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "major_heading", "bbox": [0.3038, 0.2399, 0.5794, 0.2528],
+     "column": "right", "size_rel": 1.05, "align": "left", "text_color": "#6d6e71"},
+    {"n": 4, "role": "paragraph", "bbox": [0.3269, 0.2587, 0.9269, 0.3362],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "list", "bbox": [0.3281, 0.3454, 0.9269, 0.3743],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "figure", "bbox": [0.4006, 0.3835, 0.8387, 0.4858],
+     "column": "right", "size_rel": 1.0},
+    {"n": 7, "role": "paragraph", "bbox": [0.3581, 0.4991, 0.9263, 0.6239],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 8, "role": "figure", "bbox": [0.3425, 0.6294, 0.9256, 0.7761],
+     "column": "right", "size_rel": 1.0},
+    {"n": 9, "role": "paragraph", "bbox": [0.3581, 0.7894, 0.9256, 0.8193],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 10, "role": "equation", "bbox": [0.4138, 0.833, 0.775, 0.8817],
+     "column": "right", "size_rel": 1.0, "align": "center"},
+    {"n": null, "role": "running_header", "bbox": [0.1025, 0.9028, 0.19, 0.9128],
+     "column": "left", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71"},
+    {"n": null, "role": "page_number", "bbox": [0.2006, 0.9069, 0.2412, 0.9174],
+     "column": "left", "size_rel": 1.0, "align": "right", "text_color": "#6d6e71",
+     "fill": "#fecb03"},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9156, 0.2412, 0.9174],
+     "column": "left", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.8, "align": "center"}
+  ],
+  "note": "Two-column body page (verso, folio 272); the left margin column prints only the footer furniture since no 9.x section heading falls here, so all ten content blocks sit in the right text column. body_text_size_px=20.5 from this page's body cap heights. Block n=3 is an in-flow grey #6d6e71 sub-heading (major_heading). The bbox of figure n=8 (the acetylation/bromination/hydrolysis sequence) deliberately extends down to y 0.7761 to take in its four compound-name labels ('Aniline', 'N-Phenylethanamide (Acetanilide)', '(Major)', '4-Bromoaniline'), which A2 did not block separately - without them the figure would be cut off above its own captions. Likewise figure n=6 includes 'Aniline' and '2,4,6-Tribromoaniline'. No coloured panels, boxes or header band on this page - bare paper apart from the magenta/green scheme inks."
+}

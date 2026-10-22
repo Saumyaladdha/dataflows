@@ -1,0 +1,21 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "The acetanilide resonance pair at the foot of the page loses its curved mechanism arrows. The book draws two red curved arrows on the left-hand structure -- one from the nitrogen lone pair into the N-C bond and one from the C=O pi bond up onto the oxygen -- which is what shows how the right-hand charge-separated structure arises. The render prints both structures with no arrows at all, so the delocalisation the paragraph above describes is not shown.",
+      "where": "the two-structure resonance scheme at the bottom, under 'The lone pair of electrons on nitrogen of acetanilide interacts with oxygen'"
+    },
+    {
+      "kind": "formatting",
+      "what": "The same resonance pair loses the book's colour: the book sets the N, the C and the N=C bond in magenta and the curved arrows in red. The render prints the whole scheme in black. Colour is retained in the two bromination figures above, so the loss is specific to this typeset scheme.",
+      "where": "the acetanilide resonance scheme at the bottom"
+    },
+    {
+      "kind": "formatting",
+      "what": "Both bromination figures are set as reduced bitmap panels inside a thin ruled box and flush left in the column; the book prints them unframed and centred at roughly twice the size. In the first figure the labels 'Aniline' and '2,4,6-Tribromoaniline' drop to about half body-text size.",
+      "where": "the 2,4,6-tribromoaniline figure and the acetanilide/4-bromoaniline sequence figure"
+    }
+  ],
+  "note": "Compared block by block: the opening paragraph, item (c), the '7. Electrophilic substitution' heading and paragraph, '(a) Bromination' and its figure, the 'main problem' paragraph, the four-step protection/bromination/hydrolysis figure, and the closing resonance scheme. Both figures were checked at magnification and are complete and unclipped: the first keeps NH2, +3Br2, the Br2/H2O arrow, all three Br substituents on the product and '+ 3HBr'; the second keeps all four structures with (CH3CO)2O/Pyridine, Br2/CH3COOH and 'OH- or H+' over the arrows, the Br on both bromo structures, the ring positions 2 and 3 on 4-bromoaniline, and the labels Aniline, N-Phenylethanamide (Acetanilide), (Major) and 4-Bromoaniline. All running text is present and complete, with ortho/para italics retained. The folio 272 and 'Chemistry' running foot are present. The blank lower third is the page ending early after reflow."
+}

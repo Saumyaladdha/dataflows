@@ -1,0 +1,36 @@
+{
+  "group": "v2__biology__match.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q076",
+      "question_type": "match_the_lists",
+      "format": "pick_match_code",
+      "content_shape": "example_list",
+      "concept": "Microbes in human welfare: which microbe gives which product - yeast for ethanol, Monascus for cholesterol-lowering statins, Trichoderma for cyclosporin A, Propionibacterium for Swiss cheese",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "(a) Sacharomyces cerevisiae paired with (iii) \"Commercial production of ethanol\" appears in options 1 and 2 only, so that one pair strikes out options 3 and 4.",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires four stored microbe-to-product associations, demonstrated by List II's \"Commercial production of ethanol\" and \"Ripening of Swiss cheese\", each of which is the taught fact about one named microbe and cannot be rebuilt from how the organism works.",
+      "note": "Our record carries correct_answer as null: the booklet's printed answer did not survive extraction. Every trap is defined against the key, so none is written here and source_damage_artifact is recorded as a repair task. The printed lists do fix the pairing - (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii), which is the code in option 2 - and each wrong option is one swap away from it: option 1 swaps Monascus and Trichoderma, option 3 swaps the ethanol and cholesterol rows, option 4 swaps Monascus and Propionibacterium. Those are the wrong_pairing entries to write once the key is restored. \"Sacharomyces\" is printed with one c in our record; the organism is unmistakable and the option set is not affected."
+    },
+    {
+      "question_id": "2015_A#q115",
+      "question_type": "match_the_lists",
+      "format": "pick_match_code",
+      "content_shape": "diagram",
+      "concept": "Where each membrane sub-structure sits: thylakoids in the chloroplast stroma, cristae as mitochondrial infoldings, cisternae in the Golgi, chromatin as condensed DNA",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "(b) Cristae paired with (iv) \"Infoldings in mitochondria\" appears in options 1 and 3 only, so that one pair strikes out options 2 and 4.",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires four stored part-to-place associations, demonstrated by List II's \"Flat membranous sacs in stroma\" and \"Infoldings in mitochondria\", which locate a named part inside a larger organelle.",
+      "note": "correct_answer is null in our record, so the printed key is missing and no trap is written; source_damage_artifact flags the repair. The lists fix the pairing as (iii)(iv)(i)(ii), the code in option 3, and each wrong option is exactly one swap from it: option 1 swaps cisternae and chromatin, option 2 swaps thylakoids and cristae, option 4 swaps cristae and cisternae. Those three are the wrong_pairing entries to write once the key is restored. content_shape is diagram rather than example_list because every List II entry is a position inside a larger structure, which section 3 puts under diagram."
+    }
+  ],
+  "group_note": "Both members are two printed columns answered with a pairing code, so both are match_the_lists / pick_match_code, and both are recall of taught associations checked one pair at a time - four independent checks, not four dependent steps. Both also arrived with correct_answer null, so neither carries a trap: a trap must name an option that is not the key, and with no key stored any such tag would be inventing one. Both therefore record source_damage_artifact, and each note sets out the pairing the printed lists support and the one-swap device each wrong option carries, so the tags can be completed in one pass once the booklet answer is restored. The two differ on content_shape and that is the only difference: q076's List II entries are products tied to organisms, which is an example_list, while q115's are positions inside a larger organelle, which section 3 files under diagram. Elimination was given to both, each with its own named one-pair shortcut; the shortcut in q076 strikes out two options from the ethanol row, and in q115 from the cristae row."
+}

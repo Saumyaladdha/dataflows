@@ -1,0 +1,15 @@
+{
+  "kind": "structure",
+  "species": [
+    {
+      "smiles": "[NH3+]C1=CC=CC=C1",
+      "label": "I"
+    },
+    {
+      "smiles": "[NH3+]C1=CC=CC=C1",
+      "label": "II"
+    }
+  ],
+  "confidence": "unsure",
+  "note": "The two resonating structures of the anilinium ion, numbered I and II and joined by a double-headed (resonance) arrow, not a reaction arrow. The text calls them the only two resonating structures (kekule) of the anilinium ion, so this is one cation drawn twice, not two substances; the schema can only hold them as a species list, which is why confidence is unsure. Each drawing is a benzene ring bearing +NH3 at the ipso carbon, drawn Kekule with three alternating ring double bonds and no circle. The two differ only in which ring bonds are drawn as the double bonds -- the two Kekule forms -- which SMILES cannot distinguish, so both entries are identical. No charge is drawn anywhere on the ring and there is no exocyclic C=N: unlike aniline, the protonated nitrogen has no lone pair to delocalise, and the drawing shows none. No stereochemistry is drawn."
+}

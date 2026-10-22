@@ -1,0 +1,143 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Eq. (3.42) would change to VBC = –e2–Ir2 and we will get",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 318, 1550, 368],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The rule for series combination clearly can be extended to any number of cells:"
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "(i)\tThe equivalent emf of a series combination of n cells is just the sum of their individual emf’s, and\n(ii) The equivalent internal resistance of a series combination of n cells is just the sum of their internal resistances."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "This is so, when the current leaves each cell from the positive electrode. If in the combination, the current leaves any cell from the negative electrode, the emf of the cell enters the expression for eeq with a negative sign, as in Eq. (3.47)."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [216, 596, 624, 1138],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Next, consider a parallel combination of the cells (Fig. 3.14). I1 and I2 are the currents leaving the positive electrodes of the cells. At the point B1, I1 and I2 flow in whereas the current I flows out. Since as much charge flows in as out, we have"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 872, 1550, 915],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Let V (B1) and V (B2) be the potentials at B1 and B2, respectively. Then, considering the first cell, the potential difference across its terminals is V (B1) – V (B2). Hence, from Eq. (3.38)"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 1028, 1550, 1078],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Points B1 and B2 are connected exactly similarly to the second cell. Hence considering the second cell, we also have"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 1155, 1550, 1202],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Combining the last three equations"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [560, 1255, 1550, 1396],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Hence, V is given by,"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 1472, 1550, 1564],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "If we want to replace the combination by a single cell, between B1 and B2, of emf eeq and internal resistance req, we would have"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 1630, 1550, 1672],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "The last two equations should be the same and hence"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 1710, 1550, 1800],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 1828, 1550, 1922],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "We can put these equations in a simpler way,"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "96",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null even though this is page 16, so continuation at the top was judged from the page image alone: the first line begins a new sentence (\"Eq. (3.42) would change to ...\"), so first_block_continues_from_previous is false. The FIGURE 3.14 caption text sits inside the figure block's bbox (block 6) and is left for the special transcriber rather than typed out here. Greek letters are mangled in the text layer (epsilon extracted as \"e\"), so prose sentences keep the layer's characters as instructed; all displayed/numbered equations (3.47)–(3.55) are marked needs_special because the layer scrambles their sub/superscripts."
+}

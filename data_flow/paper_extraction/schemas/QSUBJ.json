@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/QSUBJ.json",
+  "title": "QSUBJ agent output (q-subject-confirmer) -- ONE question whose paper printed no section heading",
+  "description": "ITEM GRANULARITY: one question. Only questions the paper left unheaded reach this step -- where a section heading is printed, scripts/assign_subject.py reads it and no agent is dispatched, because a measurement that can be reproduced beats a judgement that cannot. WHY THE QUESTION NUMBER IS NOT THE ANSWER: NEET usually runs Physics, then Chemistry, then Biology, but TWO of the ten booklets measured here print their sections in a different order -- 2015 Code-A runs Chemistry 1-45, Biology 46-135, Physics 136-192, and 2020 Code-F1 runs Biology 1-90, Physics 91-135, Chemistry 136-180. So `position_guess` in the input is a weak hint with a known failure rate, and `agrees_with_position` is recorded on every answer so that rate can be measured rather than assumed.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["subject", "branch", "why", "agrees_with_position", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "subject": { "type": "string", "enum": ["Physics", "Chemistry", "Biology", "unsure"] },
+        "branch": {
+          "type": ["string", "null"],
+          "enum": ["botany", "zoology", "unsure", null],
+          "description": "Biology only; null for Physics and Chemistry. `unsure` is a REAL answer for ecology, biomolecules, cell biology and biotechnology, which sit in both branches in NEET -- forcing one makes the record look decided when the syllabus is not. Chemistry's physical/organic/inorganic branch is b7-chem-branch-sorter's job, not this step's."
+        },
+        "why": { "type": "string", "minLength": 1, "description": "One sentence naming the fact that decides it. Vocabulary appearing in the stem is not a reason: a Biology question about osmotic pressure is still Biology, a Physics question mentioning a cell is still Physics." },
+        "agrees_with_position": { "type": "boolean", "description": "Whether this matches `position_guess`. Recorded so the positional fallback's error rate is measured rather than assumed; a disagreement is how a mislabelled block of a hundred questions gets found." },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": { "type": "string" }
+      }
+    },
+    { "type": "object", "required": ["error"], "additionalProperties": false, "properties": { "error": { "type": "string" } } }
+  ]
+}

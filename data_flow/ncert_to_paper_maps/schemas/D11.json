@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/D11.json",
+  "title": "D11 agent output (d11-group-confirmer)",
+  "description": "Section 12/D11 'Agent output' line and .claude/agents/d11-group-confirmer.md's worked output shape: {\"groups\": [{\"fact_line\",\"first\",\"members\": [{\"id\",\"label\"}]}], \"related\": [{\"id\",\"related_to\"}], \"removed\": [...]}. Spec 12/D11's Checks — every input member exactly once, first = earliest year/sitting, groups >= 2 members, runs agree — need the candidate group's own member table; the first three live in scripts/checks/D11.py and 'runs agree' is cross-run logic in step_plugins.D11Plugin.check() (the same split as D1/D2/A4). Note that `same_concept_different_fact` and `different` are NOT repeat_label values (config/allowed_values.yaml repeat_label has five): those two outcomes are expressed by WHERE a member goes — `related` or `removed` — exactly as codebook/D11.md §3 states. `note` is optional, carrying Universal rule 7 (added deliberately: its absence from schemas/D1.json/D2.json was a real bug, docs/OPEN_QUESTIONS.md 2026-10-12).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["groups", "related", "removed"],
+      "additionalProperties": false,
+      "properties": {
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["fact_line", "first", "members"],
+            "additionalProperties": false,
+            "properties": {
+              "fact_line": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The group's shared fact — the fact, not the longest member's stem (codebook/D11.md §4 step 5)."
+              },
+              "first": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The id of the earliest member (earliest year; earliest sitting within a year). Every label in `members` is relative to THIS member, never to the member before it."
+              },
+              "members": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "object",
+                  "required": ["id", "label"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": { "type": "string", "minLength": 1 },
+                    "label": {
+                      "type": "string",
+                      "enum": ["first", "exact_same", "reworded", "same_fact_new_format", "same_problem_new_numbers"],
+                      "description": "config/allowed_values.yaml repeat_label. Exactly one member of each group carries `first`, and it must be the member named by the group's own `first` field (checked in scripts/checks/D11.py)."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "related": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "related_to"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "related_to": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The group's first member this one is related to (same concept, DIFFERENT fact — spec's own 2013#7 n-type vs 2019#33 p-type boundary case)."
+              }
+            }
+          }
+        },
+        "removed": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Members D9 over-collected that are not the same concept at all. Removing is a correct outcome, not a failure (codebook/D11.md §3)."
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

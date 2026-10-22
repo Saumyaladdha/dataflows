@@ -1,0 +1,32 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "Problem 2.1\nCalculate the number of protons, neutrons and electrons in ⁸⁰₃₅Br .\nSolution\nIn this case, ⁸⁰₃₅Br , Z = 35, A = 80, species is neutral\nNumber of protons = number of electrons = Z = 35\nNumber of neutrons = 80 – 35 = 45, (equation 2.4)\nProblem 2.2\nThe number of electrons, protons and neutrons in a species are equal to 18, 16 and 16 respectively. Assign the proper symbol to the species.\nSolution\nThe atomic number is equal to  number of protons = 16. The element is sulphur (S).\nAtomic mass number = number of protons + number of neutrons\n= 16 + 16 = 32\nSpecies is not neutral as the number of protons is not equal to electrons. It is anion (negatively charged) with charge equal to excess electrons = 18 – 16 = 2. Symbol is ³²₁₆S²⁻ .\nNote : Before using the notation A Z X, find out whether the species is a neutral atom, a cation or an anion. If it is a neutral atom, equation (2.3) is valid, i.e., number of protons = number of electrons = atomic number. If the species is an ion, determine whether the number of protons are larger (cation, positive ion) or smaller (anion, negative ion) than the number of electrons. Number of neutrons is always given by A–Z, whether the species is neutral or ion.",
+      "fixes": [
+        {"wrong": "electrons in 80 35Br .", "right": "electrons in ⁸⁰₃₅Br ."},
+        {"wrong": "In this case, 80 35Br , Z = 35", "right": "In this case, ⁸⁰₃₅Br , Z = 35"},
+        {"wrong": "Symbol is .", "right": "Symbol is ³²₁₆S²⁻ ."}
+      ]
+    },
+    {"n": 3, "no_change": true},
+    {"n": 4, "no_change": true},
+    {"n": 5, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "where m₁ and m₂ are the masses, r is the distance of separation of the masses and G is the gravitational constant. The theory can also calculate precisely the planetary orbits and these are in agreement with the experimental measurements.",
+      "fixes": [
+        {"wrong": "where m1 and m2 are the masses", "right": "where m₁ and m₂ are the masses"}
+      ]
+    },
+    {
+      "n": 8,
+      "corrected_text": "The similarity between the solar system and nuclear model suggests that electrons should move around the nucleus in well defined orbits. Further, the coulomb force (kq₁q₂/r² where q₁ and q₂ are the charges, r is the distance of separation of the charges and k is the proportionality constant) between electron and the nucleus is mathematically similar to the gravitational force. However, when a body is moving in an orbit, it undergoes acceleration even if it is moving with a constant speed in an orbit because of changing direction. So an electron in the nuclear model describing planet like orbits is under acceleration. According to the electromagnetic theory of Maxwell, charged particles when accelerated should emit electromagnetic radiation (This feature does not exist for planets since they are uncharged). Therefore, an electron in an orbit will emit radiation, the energy carried by radiation comes from electronic motion. The orbit will thus continue to shrink. Calculations show that it should take an electron only 10⁻⁸ s to spiral into the nucleus. But this does not happen. Thus, the Rutherford model cannot explain the stability of an atom. If the motion of an electron is described on the basis of the classical mechanics and electromagnetic theory, you may ask that since the motion of electrons in orbits is leading to the instability of the atom, then why not consider electrons as stationary",
+      "fixes": [
+        {"wrong": "(kq1q2/r2 where q1 and q2 are the charges", "right": "(kq₁q₂/r² where q₁ and q₂ are the charges"},
+        {"wrong": "only 10–8 s", "right": "only 10⁻⁸ s"}
+      ]
+    }
+  ],
+  "note": "Three blocks corrected, the heaviest notation page so far. n=1: the isotope symbol is printed as Br with mass number 80 raised and atomic number 35 lowered in a stacked pair, stored flat as \"80 35Br\" in both places — restored to ⁸⁰₃₅Br; and the sulphide-ion symbol was DROPPED ENTIRELY from the stored text, which read \"Symbol is .\" where the page prints ³²₁₆S²⁻ — restored (mass number 32 superscript, atomic number 16 subscript, 2– charge superscript), since a missing species symbol is the whole answer to Problem 2.2. JUDGMENT CALL / UNICODE LIMIT in the same block: the general notation the page prints as X with a raised A and a lowered Z is left as the stored \"A Z X\", because Unicode has no subscript capital Z (no subscript Z of any case exists), so the lowered Z cannot be written; restoring only the ᴬ would have produced a half-correct, inconsistent symbol, so the block keeps the flat form here and it is flagged instead of guessed. n=7: the planetary masses print as m₁ and m₂ with real subscripts, stored as \"m1 and m2\". n=8: the Coulomb force prints as kq₁q₂/r² with subscripted charges and a squared separation, stored as \"kq1q2/r2\" (which reads as the number 12 and a radius 2), and the spiral-in time prints as 10⁻⁸ s, stored as \"10–8 s\". n=3, n=4 and n=5 carry no notation and are already correct; the displayed gravitational expression (G.m₁m₂/r²) is an equation block not in this list."
+}

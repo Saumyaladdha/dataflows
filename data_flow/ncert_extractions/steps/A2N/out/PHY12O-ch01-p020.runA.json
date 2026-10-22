@@ -1,0 +1,46 @@
+{
+  "blocks": [
+    {
+      "n": 2,
+      "corrected_text": "Electric field E₁ at r due to q₁ at r₁ is given by",
+      "fixes": [
+        {"wrong": "Electric field E1 at r due to q1 at r1", "right": "Electric field E₁ at r due to q₁ at r₁"}
+      ]
+    },
+    {
+      "n": 4,
+      "corrected_text": "where r̂₁P is a unit vector in the direction from q₁ to P, and r₁P is the distance between q₁ and P.",
+      "fixes": [
+        {"wrong": "where ˆr1P is a unit vector in the direction from q1 to P, and r1P is the distance between q1 and P.", "right": "where r̂₁P is a unit vector in the direction from q₁ to P, and r₁P is the distance between q₁ and P."}
+      ]
+    },
+    {
+      "n": 5,
+      "corrected_text": "In the same manner, electric field E₂ at r due to q₂ at r₂ is",
+      "fixes": [
+        {"wrong": "electric field E2 at r due to q2 at r2", "right": "electric field E₂ at r due to q₂ at r₂"}
+      ]
+    },
+    {
+      "n": 7,
+      "corrected_text": "where r̂₂P is a unit vector in the direction from q₂ to P and r₂P is the distance between q₂ and P. Similar expressions hold good for fields E₃, E₄, ..., Eₙ due to charges q₃, q₄, ..., qₙ.",
+      "fixes": [
+        {"wrong": "where ˆr2P is a unit vector in the direction from q2 to P and r2P is the distance between q2 and P.", "right": "where r̂₂P is a unit vector in the direction from q₂ to P and r₂P is the distance between q₂ and P."},
+        {"wrong": "fields E3, E4, ..., En due to charges q3, q4, ..., qn.", "right": "fields E₃, E₄, ..., Eₙ due to charges q₃, q₄, ..., qₙ."}
+      ]
+    },
+    {"n": 8, "no_change": true},
+    {"n": 10, "no_change": true},
+    {"n": 12, "no_change": true},
+    {"n": 13, "no_change": true},
+    {
+      "n": 14,
+      "corrected_text": "The true physical significance of the concept of electric field, however, emerges only when we go beyond electrostatics and deal with time-dependent electromagnetic phenomena. Suppose we consider the force between two distant charges q₁, q₂ in accelerated motion. Now the greatest speed with which a signal or information can go from one point to another is c, the speed of light. Thus, the effect of any motion of q₁ on q₂ cannot",
+      "fixes": [
+        {"wrong": "distant charges q1, q2 in accelerated motion", "right": "distant charges q₁, q₂ in accelerated motion"},
+        {"wrong": "effect of any motion of q1 on q2 cannot", "right": "effect of any motion of q₁ on q₂ cannot"}
+      ]
+    }
+  ],
+  "note": "n=2, 5, 7, 14 had charge/field subscripts (E1/E2/E3/E4/En, q1/q2/q3/q4/qn) flattened; restored to Unicode subscripts. n=4 and n=7 also had detached hats on r1P/r2P (ˆr1P -> r̂₁P), with the digit subscripted but the trailing capital P left as a regular character attached directly after -- Unicode has no subscript form for capital letters (only a lowercase subset), so the P/A/B/C-style point labels cannot be fully subscripted; this is a hard Unicode limitation, not a guess. n=8, 10, 12, 13 already matched the image exactly."
+}

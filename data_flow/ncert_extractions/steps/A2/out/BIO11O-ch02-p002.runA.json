@@ -1,0 +1,41 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        169,
+        298,
+        1490,
+        1100
+      ],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "R.H. Whittaker (1969) proposed a Five Kingdom Classification. The kingdoms defined by him were named Monera, Protista, Fungi, Plantae and Animalia. The main criteria for classification used by him include cell structure, body organisation, mode of nutrition, reproduction and phylogenetic relationships. Table 2.1 gives a comparative account of different characteristics of the five kingdoms.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The three-domain system has also been proposed that divides the Kingdom Monera into two domains, leaving the remaining eukaryotic kingdoms in the third domain and thereby a six kingdom classification. You will learn about this system in detail at higher classes."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Let us look at this five kingdom classification to understand the issues and considerations that influenced the classification system. Earlier classification systems included bacteria, blue green algae, fungi, mosses, ferns, gymnosperms and the angiosperms under ‘Plants’. The character that unified this whole kingdom was that all the organisms included had a cell wall in their cells.  This placed together groups which widely differed in other characteristics. It brought together the prokaryotic bacteria and the blue green algae ( cyanobacteria) with other groups which were eukaryotic. It also grouped together the unicellular organisms and the multicellular ones, say, for example, Chlamydomonas and Spirogyra were placed together under algae. The classification did not differentiate between the heterotrophic group – fungi, and the autotrophic green plants, though they also showed a characteristic difference in their walls composition – the fungi had chitin"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "BIOLOGICAL CLASSIFICATION",
+    "17",
+    "2022-23"
+  ],
+  "note": "Reading order taken from the image, which differs from the text layer's order: TABLE 2.1 sits at the TOP of the page and the three prose paragraphs run below it, whereas the text layer emits the prose first and the table last. Block 1 is the whole table including its caption line 'TABLE 2.1  Characteristics of the Five Kingdoms' and all cell text, marked needs_special with a bbox in image pixels. Removed furniture: running header 'BIOLOGICAL CLASSIFICATION' (small caps, top left), page number 17 (top right tab), reprint-year footer 2022-23. Judging continuation from the page I just read (p001, which I have in order): p001's last paragraph ended on a full stop, and this page opens with the table and then a fresh paragraph, so first_block_continues_from_previous is false. This page's last paragraph breaks mid-sentence at '...the fungi had chitin', so last_block_continues_on_next is true. Text layer was clean and matched the image; prose copied from it."
+}

@@ -1,0 +1,141 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Step 2: Separate the equation into half-reactions:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 338, 861, 400],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 408, 861, 500],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Step 3: Balance the atoms other than O and H in each half reaction individually. Here the oxidation half reaction is already balanced with respect to Fe atoms. For the reduction half reaction, we multiply the Cr3+ by 2 to balance Cr atoms."
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 720, 861, 778],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Step 4: For reactions occurring in acidic medium, add H2O to balance O atoms and H+ to balance H atoms."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Thus, we get :"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 900, 861, 1008],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Step 5: Add electrons to one side of the half reaction to balance the charges. If need be, make the number of electrons equal in the two half reactions by multiplying one or both half reactions by appropriate number."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The oxidation half reaction is thus rewritten to balance the charge:"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1248, 861, 1308],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Now in the reduction half reaction there are net twelve positive charges on the left hand side and only six positive charges on the right hand side. Therefore, we add six electrons on the left side."
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1510, 861, 1602],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "To equalise the number of electrons in both the half reactions, we multiply the oxidation half reaction by 6 and write as :"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1722, 861, 1782],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Step 6: We add the two half reactions to achieve the overall reaction and cancel the electrons on each side. This gives the net ionic equation as :"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1886, 861, 1978],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "Step 7: Verify that the equation contains the same type and number of atoms and the same charges on both sides of the equation. This last check reveals that the equation is fully balanced with respect to number of atoms and the charges."
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "For the reaction in a basic medium, first balance the atoms as is done in acidic medium. Then for each H+ ion, add an equal number of OH– ions to both sides of the equation. Where H+ and OH– appear on the same side of the equation, combine these to give H2O."
+    },
+    {
+      "n": 20,
+      "kind": "box",
+      "text": "Problem 7.10\nPermanganate(VII) ion, MnO4– in basic solution oxidises iodide ion, I– to produce molecular iodine (I2) and manganese (IV) oxide (MnO2). Write a balanced ionic equation to represent this redox reaction.\nSolution\nStep 1: First we write the skeletal ionic equation, which is\nMnO4– (aq) + I– (aq) → MnO2(s) + I2(s)\nStep 2: The two half-reactions are:"
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [921, 1150, 1526, 1258],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "box",
+      "text": "Step 3: To balance the I atoms in the oxidation half reaction, we  rewrite it as:\n2I– (aq) → I2 (s)\nStep 4: To balance the O atoms in the reduction half reaction, we add two water molecules on the right:\nMnO4– (aq) → MnO2 (s) + 2 H2O (l)\nTo balance the H atoms, we add four H+ ions on the left:\nMnO4 – (aq) + 4 H+ (aq) → MnO2(s) + 2H2O (l)\nAs the reaction takes place in a basic solution, therefore, for four H+ ions, we add four OH– ions to both sides of the equation:\nMnO4– (aq) + 4H+ (aq) + 4OH–(aq)  → MnO2 (s) + 2 H2O(l)  + 4OH– (aq)\nReplacing the H+ and OH– ions with water,"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "248",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "Judged against page 13, which I read myself: p013 ended with \"Step 1: Produce unbalanced equation...\" and equation (7.50); this page opens with \"Step 2: Separate the equation into half-reactions:\", a new complete sentence, so continues_from_previous is false even though it carries on the same numbered walkthrough. All numbered display reactions (7.51-7.58) marked needs_special; several carry oxidation numbers printed above the species. Blocks 20-22 are one pink Problem 7.10 box, split so the two labelled half-reactions with oxidation numbers above them (block 21) are not lost. The box ends mid-sentence (\"Replacing the H+ and OH– ions with water,\"), so last_block_continues_on_next is true. Subscripts and superscript charges appear as inline characters in the text layer (e.g. MnO4–, Fe2+, Cr2O72–); kept as given."
+}

@@ -1,0 +1,83 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "They are usually dioecious and oviparous with indirect\ndevelopment.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Examples: Pila (Apple snail), Pinctada (Pearl oyster), Sepia\n(Cuttlefish), Loligo (Squid), Octopus (Devil fish), Aplysia (Sea-\nhare), Dentalium (Tusk shell) and Chaetopleura (Chiton)."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "4.2.9\nPhylum – Echinodermata"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "These animals have an endoskeleton of calcareous ossicles\nand, hence, the name Echinodermata (Spiny bodied, Figure\n4.14). All are marine with organ-system level of organisation.\nThe adult echinoderms are radially symmetrical but larvae\nare bilaterally symmetrical. They are triploblastic and\ncoelomate animals. Digestive system is complete with mouth\non the lower (ventral) side and anus on the upper (dorsal)\nside. The most distinctive feature of echinoderms is the\npresence of water vascular system which helps in\nlocomotion, capture and transport of food and respiration.\nAn excretory system is absent. Sexes are separate.\nReproduction is sexual. Fertilisation is usually external.\nDevelopment is indirect with free-swimming larva."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Examples: Asterias (Star fish), Echinus (Sea urchin), Antedon\n(Sea lily), Cucumaria (Sea cucumber) and Ophiura (Brittle star)."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "4.2.10\nPhylum – Hemichordata"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Hemichordata was earlier considered as a sub-phylum under\nphylum Chordata. But now it is placed as a separate phylum\nunder non-chordata. Hemichordates have a rudimentary\nstructure in the collar region called stomochord, a structure\nsimilar to notochord."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "This phylum consists of a small group of worm-like\nmarine animals with organ-system level of organisation. They\nare bilaterally symmetrical, triploblastic and coelomate\nanimals. The body is cylindrical and is composed of an\nanterior proboscis, a collar and a long trunk (Figure 4.15).\nCirculatory system is of  open type. Respiration takes place\nthrough gills. Excretory organ is proboscis gland. Sexes are\nseparate. Fertilisation is external. Development is indirect."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Examples: Balanoglossus and Saccoglossus."
+    },
+    {
+      "n": 10,
+      "kind": "heading",
+      "text": "4.2.11\nPhylum – Chordata"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Animals belonging to phylum Chordata are fundamentally\ncharacterised by the presence of a notochord, a dorsal"
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1025, 289, 1461, 1052],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1057, 1210, 1450, 1918],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "ANIMAL KINGDOM",
+    "45",
+    "45",
+    "2024-25"
+  ],
+  "note": "Read from text_layer, cross-checked against the page image for layout and figure bboxes. Two-column page: left text column transcribed first, then the two right-hand figures. Figure part-labels and captions (\"(a)\", \"(b)\", \"Figure 4.14 Examples of Echinodermata : (a) Asterias (b) Ophiura\", \"Proboscis\", \"Collar\", \"Trunk\", \"Figure 4.15 Balanoglossus\") lie inside the needs_special figure bboxes and are left untranscribed. The page number 45 appears twice in the text layer; both occurrences are listed as removed. previous_page_last_block was null, but I read page 8 myself: it ended the Mollusca paragraph with \"...called radula.\" and block 1 here (\"They are usually dioecious and oviparous with indirect development.\", set flush left with no indent) is the rest of that same paragraph, so first_block_continues_from_previous is true — a same-paragraph continuation, not a mid-sentence break. The last block breaks mid-sentence after \"a dorsal\", so last_block_continues_on_next is true."
+}

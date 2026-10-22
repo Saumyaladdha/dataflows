@@ -1,0 +1,143 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "3. Law of periods : The square of the time period of revolution of a planet is proportional to the cube of the semi-major axis of the ellipse traced out by  the planet.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Table 7.1 gives the approximate time periods of revolution of eight* planets around the sun along with values of their semi-major axes.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        205,
+        455,
+        845,
+        1045
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The law of areas can be understood as a consequence of  conservation of angular momentum whch is valid for any central force . A central force is such that  the force on the planet is along the vector joining the Sun and the planet. Let the Sun be at the origin and let the position and momentum of the planet be denoted by r and p respectively. Then the area swept out by the planet of mass m in time interval ∆t is (Fig. 7.2) ∆A given by",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        1415,
+        845,
+        1470
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Hence",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        1510,
+        845,
+        1600
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "where v is the velocity,  L is the angular momentum equal  to   ( r  ×  p).  For a central force, which is directed along r, L is  a constant as the planet goes around. Hence,  ∆A /∆t is a constant according to the last equation. This is the law of areas. Gravitation is a central force and hence the law of areas follows.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "Example 7.1  Let  the speed of the planet at  the  perihelion P in Fig. 7.1(a) be vP  and the Sun-planet distance SP be rP. Relate {rP, vP} to the corresponding quantities at the aphelion {rA, vA}. Will the planet take equal times to traverse BAC and CPB ?",
+      "continues_from_previous": false
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Answer  The magnitude of the angular momentum at P is Lp =  mp rp vp, since inspection tells us that rp and v p are mutually perpendicular. Similarly, LA = mp rA vA. From angular momentum conservation",
+      "continues_from_previous": false
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        975,
+        680,
+        1540,
+        850
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Since rA   > rp, vp > vA .",
+      "continues_from_previous": false
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The area SBAC bounded by the ellipse and the radius vectors SB and SC is larger than SBPC in Fig. 7.1. From Kepler’s second law, equal areas are swept in equal times. Hence the planet will take a longer time to traverse BAC than CPB.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 14,
+      "kind": "heading",
+      "text": "7.3  UNIVERSAL LAW OF GRAVITATION"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Legend has it that observing an apple falling from a tree, Newton was inspired to arrive at an universal law of gravitation that led to an explanation of terrestrial  gravitation as well as of Kepler’s laws.  Newton’s reasoning was that the moon revolving in an orbit of radius Rm was subject to a centripetal acceleration due to earth’s gravity of magnitude",
+      "continues_from_previous": false
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        975,
+        1385,
+        1540,
+        1480
+      ],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "where V is the speed of the moon related to the time period T by the relation V = 2πRm / T. The time period T is about 27.3 days and Rm was already known then to be about 3.84 × 108m.  If we substitute these numbers in Eq. (7.3), we get a value of am much smaller than the value of acceleration due to gravity g on the surface of the earth, arising also due to earth’s gravitational attraction.",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "GRAVITATION",
+    "129",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column first. previous_page_last_block was null, but I read page 2 of this chapter directly before: it ended with the complete '2. Law of areas' item and Fig. 7.2, so this page's '3. Law of periods' starts a new item and first_block_continues_from_previous is false on that evidence. 'GRAVITATION' here is the running header in the page margin (it also appears as the chapter heading on page 1 only), so it is removed here and is not a block. Marked needs_special with pixel bboxes (original 1826x2167): Table 7.1 (n=3, bbox includes the 'Table 7.1' caption, the a/T/Q legend in parentheses and the eight-planet grid), display equations (7.1) (n=5), (7.2) (n=7), the two unnumbered display lines 'mp rp vp = mp rA vA' and the 'or vp/vA = rA/rp' fraction (n=11), and numbered Eq. (7.3) (n=16). Notation discrepancies between image and text layer: subscripts are flattened throughout (image shows v_P, r_P, L_p, m_p, r_A, v_A, R_m, a_m; text layer gives vP, rP, Lp, mp, rA, vA, Rm, am), superscripts flattened (image 10^10, 10^-34, y^2, m^-3, T^2/a^3, 3.84 x 10^8 m -> text layer '1010', '10 -34', 'y2', 'm-3', 'T2/a3', '108m'), and Greek pi and capital delta appear as bare 'π'/'∆' tokens with the surrounding structure destroyed in the text layer's rendering of Eq. (7.3) and the inline V = 2(pi)Rm/T - notation for those was taken from the image. In the printed image the multiplication sign in '3.84 x 10^8 m' does not render visibly though the text layer has it; text layer kept. The asterisk on 'eight*' refers to a footnote that is not printed on this page. The small triangular markers around the Example box ('|>' / '<|' glyphs in the text layer) are box decoration, not text."
+}

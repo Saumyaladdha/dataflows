@@ -1,0 +1,46 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "[This happens even when the light object is not a conductor. The mechanism for how this happens is explained later in Sections 1.10 and 2.10.] The centres of the two types of charges are slightly separated. We know that opposite charges attract while similar charges repel. However, the magnitude of force depends on the distance between the charges and in this case the force of attraction overweighs the force of repulsion. As a result the particles like bits of paper or pith balls, being light, are pulled towards the rods.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 1.1 How can you charge a metal sphere positively without touching it?\n\nSolution Figure 1.5(a) shows an uncharged metallic sphere on an insulating metal stand. Bring a negatively charged rod close to the metallic sphere, as shown in Fig. 1.5(b). As the rod is brought close to the sphere, the free electrons in the sphere move away due to repulsion and start piling up at the farther end. The near end becomes positively charged due to deficit of electrons. This process of charge distribution stops when the net force on the free electrons inside the metal is zero. Connect the sphere to the ground by a conducting wire. The electrons will flow to the ground while the positive charges at the near end will remain held there due to the attractive force of the negative charges on the rod, as shown in Fig. 1.5(c). Disconnect the sphere from the ground. The positive charge continues to be held at the near end [Fig. 1.5(d)]. Remove the electrified rod. The positive charge will spread uniformly over the sphere as shown in Fig. 1.5(e)."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        280,
+        1195,
+        1050,
+        1815
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "In this experiment, the metal sphere gets charged by the process of induction and the rod does not lose any of its charge.\n\nSimilar steps are involved in charging a metal sphere negatively by induction, by bringing a positively charged rod near it. In this case the electrons will flow from the ground to the sphere when the sphere is connected to the ground with a wire. Can you explain why?"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Interactive animation on charging a two-sphere system by induction: http://www.physicsclassroom.com/mmedia/estatics/itsn.cfm",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "7",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; continuation judged against my own p006 output. Note the nuance: p006 ended with a complete sentence ('...the farther side of the object.'), but this page's first line is set flush left with no paragraph indent, so it is the SAME paragraph continuing across the break — I therefore set continues_from_previous true on the ground of mid-paragraph continuation rather than mid-sentence. The grey panel is Example 1.1; its prose is two box blocks with Figure 1.5 (panels a-e) between them as a needs_special figure. The sideways blue margin label 'EXAMPLE 1.1' and the 'PHYSICS' logo are decoration; the label's words are already present inside block n=2 as 'Example 1.1', so it is not listed as removed (listing it would claim the same string both removed and kept). The rotated right-margin weblink line is real text, kept as block n=5."
+}

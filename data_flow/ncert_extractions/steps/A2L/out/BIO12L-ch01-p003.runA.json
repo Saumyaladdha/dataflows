@@ -1,0 +1,86 @@
+{
+  "page": {
+    "width_px": 1654,
+    "height_px": 2339,
+    "page_kind": "body",
+    "body_text_size_px": 21.5,
+    "text_block": [0.065, 0.101, 0.670, 0.841],
+    "fill": 0.94,
+    "columns": [
+      {"id": "full",  "x0": 0.065, "x1": 0.670},
+      {"id": "left",  "x0": 0.065, "x1": 0.480},
+      {"id": "right", "x0": 0.487, "x1": 0.862}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.000, 0.000, 0.758, 0.037],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0, "fill": "#4a7435"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.773, 0.000, 0.957, 0.091],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0, "fill": "#725420"},
+
+    {"n": null, "role": "running_header", "bbox": [0.065, 0.071, 0.378, 0.078],
+     "column": "full", "size_rel": 0.79, "size_pt": 8.7, "align": "left",
+     "font": "sans", "face": "sans", "space_before": 0.034, "text_color": "#6f6f6f"},
+
+    {"n": 1, "role": "section_heading", "bbox": [0.068, 0.101, 0.576, 0.115],
+     "column": "full", "size_rel": 1.12, "size_pt": 12.3, "align": "left",
+     "font": "serif-bold", "face": "serif-bold", "space_before": 0.023,
+     "text_color": "#636366"},
+
+    {"n": 2, "role": "paragraph", "bbox": [0.065, 0.126, 0.670, 0.335],
+     "column": "left", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "space_before": 0.011,
+     "text_color": "#212121"},
+
+    {"n": 3, "role": "paragraph", "bbox": [0.065, 0.343, 0.480, 0.518],
+     "column": "left", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "space_before": 0.008,
+     "text_color": "#212121"},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.065, 0.525, 0.480, 0.587],
+     "column": "left", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "space_before": 0.007,
+     "text_color": "#212121"},
+
+    {"n": 5, "role": "figure", "bbox": [0.499, 0.160, 0.860, 0.548],
+     "column": "right", "size_rel": 1.0, "space_before": 0.006},
+
+    {"n": null, "role": "figure_caption", "bbox": [0.487, 0.562, 0.862, 0.605],
+     "column": "right", "size_rel": 0.88, "size_pt": 9.7, "align": "left",
+     "font": "serif", "face": "serif", "space_before": 0.014,
+     "fill": "#fdf1e1", "text_color": "#271f1c"},
+
+    {"n": 6, "role": "paragraph", "bbox": [0.065, 0.592, 0.670, 0.741],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "space_before": 0.004,
+     "text_color": "#212121"},
+
+    {"n": 7, "role": "paragraph", "bbox": [0.065, 0.746, 0.670, 0.791],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "space_before": 0.005,
+     "text_color": "#212121"},
+
+    {"n": 8, "role": "paragraph", "bbox": [0.065, 0.799, 0.671, 0.844],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "space_before": 0.008,
+     "text_color": "#212121"},
+
+    {"n": null, "role": "page_number", "bbox": [0.804, 0.727, 0.957, 0.765],
+     "column": "full", "size_rel": 1.35, "size_pt": 14.9, "align": "left",
+     "font": "sans", "face": "sans", "space_before": 0.121,
+     "fill": "#f8931f", "text_color": "#ffffff"},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.804, 0.767, 0.957, 0.773],
+     "column": "full", "size_rel": 1.0, "space_before": 0.003, "fill": "#f8931f"},
+
+    {"n": null, "role": "running_header", "bbox": [0.432, 0.901, 0.527, 0.910],
+     "column": "full", "size_rel": 0.74, "size_pt": 8.2, "align": "center",
+     "font": "serif", "face": "serif", "space_before": 0.057,
+     "text_color": "#141414"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.192, 0.287, 0.833, 0.730],
+     "column": "full", "size_rel": 1.0, "text_color": "#e6e6e6"}
+  ],
+  "note": "ORDINARY BODY PAGE (page_kind body) of a pure A4 scan; image is 1654x2339 px = A4 at exactly 200 dpi, so 1 px = 0.36 pt. All bboxes are fractions of the IMAGE (1654 x 2339). SHEET POSITION: the printed sheet bleeds off the left edge (x=0) and ends at x=1583 px (0.957); the strip 0.957-1.000 is blank filler added to pad the scan to A4 - no content anywhere in it. MEASURE: body prose is justified between x=108 and x=1108 px (0.065-0.670) - verified by the right edge of 20 justified lines landing at 1107-1109 px. The region 0.670-0.957 is a wide OUTER MARGIN that carries the figure overflow, the folio device and the top-right corner device; it is not text measure. FIGURE SLOT (the thing a previous build got wrong): the Figure 1.2 artwork measures x 826-1422 px, y 375-1282 px = 0.499-0.860 x 0.160-0.548, i.e. 596 px wide = 214.6 pt = 75.7 mm. Its tinted caption box measures x 806-1425 px = 0.487-0.862 = 619 px = 222.8 pt = 78.7 mm wide. The whole right column is therefore ~79 mm, NOT 7 mm. The prose column beside it measures x 108-794 px = 0.065-0.480 = 686 px = 246.9 pt = 87.1 mm (justified right edge confirmed at 791-794 px on 13 lines). TEXT WRAP: the page runs ONE measure that narrows beside the figure, so two blocks straddle both widths. Block 2: its first 2 lines (y 294-361) run the full 0.065-0.670 measure above the figure, its remaining 11 lines run the narrow 0.065-0.480 measure beside it; column reported as left (11 of 13 lines) but its bbox x1 is 0.670 because of those first two lines. Block 6: its first 2 lines (y 1384-1460) run narrow beside the caption box, its remaining 7 lines run full measure; column reported as full (7 of 9 lines). Blocks 3 and 4 are entirely in the narrow column; blocks 7 and 8 entirely full measure. SPACE_BEFORE is measured as the gap between an element's top and the bottom of whatever is directly above it IN ITS OWN COLUMN, not the previous element in reading order - the figure sits beside blocks 2-4, so its 0.006 is measured from the last full-measure line above it (y 362), and the caption's 0.014 from the figure's foot. FIRST-LINE INDENTS, not reported as `indent` because no block is inset as a whole: blocks 3, 4 and 7 begin their first line 48-49 px (0.029 of page width, ~17 pt) in from the column edge; blocks 2, 6 and 8 have no first-line indent. The figure caption has a hanging indent - its line 1 starts at x=814 px and its lines 2-3 at x=972/974 px, under the '(a)'. TYPE SIZES: body_text_size_px 21.5 is the cap-to-baseline height measured on three separate body lines (y 1588-1609, 1627-1647, 1869-1890 -> 22, 21, 22 px); baseline-to-baseline pitch is 39.3 px (14.2 pt). Every size_rel is a ratio to that 21.5. size_pt values are DERIVED, not read: px * 72/200 gives cap height, divided by an assumed cap-height of 0.70 em - treat size_rel as the trusted number. Measured cap-to-baseline heights: heading 24 px, caption 19 px, running head 17 px (all-caps, so this is its cap height), footer 16 px, folio digit 29 px. COLOURS, all sampled from flat interiors: green header band #4a7435 (x 0-1253, y 0-86); corner device brown #725420 with an orange stripe #f7941c at x 1400-1426 (reported fill is the brown, which is the bulk of it); caption box #fdf1e1; folio box and the rule under it #f8931f; folio digit is reversed white (sampled #fffde7, which is the scan's warm cast on white). The 1.2.1 heading really is printed MID-GREY, not black - its darkest stroke pixels are #636363-#696969 against body ink of #202020-#222222, so this is the printed colour, not a thin-stroke artefact (the heading is bold). FOOTER_RULE: the thin orange rule at y 0.767-0.773 spans only the folio device's width (0.804-0.957) in the outer margin, not the full page - it is the bar under the folio box, not a page-wide rule. The 'Reprint 2026-27' line at the page foot is reported as role running_header because the allowed role list has no running-FOOT value; it is centred on the sheet (its centre x=792 px = half of the 1584 px sheet), not on the text measure. WATERMARK: the last element is NCERT's diagonal '(c) NCERT / not to be republished' overprint, light grey #e6e6e6, reported as decorative_image so a consumer can drop it. Its bbox (0.192, 0.287, 0.833, 0.730) is measured only from the parts NOT overlapped by text or artwork, so the true extent is slightly larger; it is an overlay, so no space_before is given. BLOCK MATCHING: all eight A2 blocks matched by position with no ambiguity - 1 heading, 2/3/4 the three paragraphs beside the figure, 5 the figure, 6/7/8 the three paragraphs below it. A2 carries no caption block, so figure_caption is n:null. FILL: 44 lines of type are printed (y 236 to last baseline 1967); roughly 3 more lines of the 39.3 px pitch would fit before the 'Reprint 2026-27' foot line at y 2108, giving 44/47 = 0.94. text_block is the literally measured body-type rectangle (top of the heading at y 236 to the last baseline at y 1967); the DESIGNED frame bottom cannot be determined from a single scanned page, so I report the measured extent rather than guess it."
+}

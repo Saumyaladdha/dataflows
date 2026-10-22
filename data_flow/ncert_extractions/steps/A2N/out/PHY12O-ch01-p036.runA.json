@@ -1,0 +1,39 @@
+{
+  "blocks": [
+    {
+      "n": 2,
+      "corrected_text": "(b) We can use Gauss’s law to find the total charge q inside the cube. We have φ = q/ε₀ or q = φε₀. Therefore,\n  q = 1.05 × 8.854 × 10⁻¹² C = 9.27 × 10⁻¹² C.",
+      "fixes": [
+        {"wrong": "q/ε0", "right": "q/ε₀"},
+        {"wrong": "φε0", "right": "φε₀"},
+        {"wrong": "10–12", "right": "10⁻¹²"}
+      ]
+    },
+    {
+      "n": 3,
+      "corrected_text": "Example 1.12 An electric field is uniform, and in the positive x direction for positive x, and uniform with the same magnitude but in the negative x direction for negative x. It is given that E = 200 î  N/C for x > 0 and E = –200 î N/C for x < 0. A right circular cylinder of length 20 cm and radius 5 cm has its centre at the origin and its axis along the x-axis so that one face is at x = +10 cm and the other is at x = –10 cm (Fig. 1.28). (a) What is the net outward flux through each flat face? (b) What is the flux through the side of the cylinder? (c) What is the net outward flux through the cylinder? (d) What is the net charge inside the cylinder?",
+      "fixes": [
+        {"wrong": "200 ˆi  N/C", "right": "200 î  N/C"},
+        {"wrong": "–200 ˆi N/C", "right": "–200 î N/C"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "On the right face, E and ∆S are parallel and therefore\nφR =  E.∆S =  + 1.57 N m² C⁻¹.\n(b) For any point on the side of the cylinder E is perpendicular to ∆S and hence E.∆S = 0. Therefore, the flux out of the side of the cylinder is zero.\n(c) Net outward flux through the cylinder\nφ = 1.57 + 1.57 + 0 = 3.14 N m² C⁻¹",
+      "fixes": [
+        {"wrong": "N m2 C–1", "right": "N m² C⁻¹"}
+      ]
+    },
+    {
+      "n": 8,
+      "corrected_text": "(d) The net charge within the cylinder can be found by using Gauss’s law which gives\nq =  ε₀φ\n   =  3.14 × 8.854 × 10⁻¹²  C\n   =  2.78 × 10⁻¹¹ C",
+      "fixes": [
+        {"wrong": "ε0φ", "right": "ε₀φ"},
+        {"wrong": "10–12", "right": "10⁻¹²"},
+        {"wrong": "10–11", "right": "10⁻¹¹"}
+      ]
+    }
+  ],
+  "note": "n2 and n8 had flattened ε0 and powers of ten (10–12, 10–11) restored to ε₀ and 10⁻¹²/10⁻¹¹. n3 had the hat detached from the unit vector in both occurrences of 'ˆi', restored to î (both unit-vector occurrences fixed, surrounding spacing left untouched). n6 had 'N m2 C–1' restored to 'N m² C⁻¹' in both of its two occurrences; the subscript on φR was left as plain R since Unicode has no subscript r. n4 already matched the image."
+}

@@ -1,0 +1,174 @@
+{
+  "choice": "A",
+  "value": {
+    "subtopics": [
+      {
+        "n": 1,
+        "name": "Overview of reproductive events in humans",
+        "from_heading": "Chapter 2 introduction",
+        "passages": [
+          "BIO12L-CH02-P01",
+          "BIO12L-CH02-P02",
+          "BIO12L-CH02-P03",
+          "BIO12L-CH02-P04",
+          "BIO12L-CH02-P51",
+          "BIO12L-CH02-P52"
+        ]
+      },
+      {
+        "n": 2,
+        "name": "Testes, scrotum and seminiferous tubules",
+        "from_heading": "2.1",
+        "passages": [
+          "BIO12L-CH02-P05",
+          "BIO12L-CH02-P06",
+          "BIO12L-CH02-P07",
+          "BIO12L-CH02-P08",
+          "BIO12L-CH02-P09",
+          "BIO12L-CH02-P11"
+        ]
+      },
+      {
+        "n": 3,
+        "name": "Male accessory ducts, glands and external genitalia",
+        "from_heading": "2.1",
+        "passages": [
+          "BIO12L-CH02-P10",
+          "BIO12L-CH02-P12",
+          "BIO12L-CH02-P13"
+        ]
+      },
+      {
+        "n": 4,
+        "name": "Ovaries, oviducts, uterus and female external genitalia",
+        "from_heading": "2.2",
+        "passages": [
+          "BIO12L-CH02-P14",
+          "BIO12L-CH02-P15",
+          "BIO12L-CH02-P16",
+          "BIO12L-CH02-P17",
+          "BIO12L-CH02-P18",
+          "BIO12L-CH02-P19",
+          "BIO12L-CH02-P20"
+        ]
+      },
+      {
+        "n": 5,
+        "name": "Structure of the mammary gland",
+        "from_heading": "2.2",
+        "passages": [
+          "BIO12L-CH02-P21",
+          "BIO12L-CH02-P22"
+        ]
+      },
+      {
+        "n": 6,
+        "name": "Spermatogenesis and its hormonal control",
+        "from_heading": "2.3",
+        "passages": [
+          "BIO12L-CH02-P23",
+          "BIO12L-CH02-P24",
+          "BIO12L-CH02-P25"
+        ]
+      },
+      {
+        "n": 7,
+        "name": "Structure of a sperm and composition of semen",
+        "from_heading": "2.3",
+        "passages": [
+          "BIO12L-CH02-P26",
+          "BIO12L-CH02-P27",
+          "BIO12L-CH02-P28"
+        ]
+      },
+      {
+        "n": 8,
+        "name": "Oogenesis and ovarian follicle development",
+        "from_heading": "2.3",
+        "passages": [
+          "BIO12L-CH02-P29",
+          "BIO12L-CH02-P30",
+          "BIO12L-CH02-P31",
+          "BIO12L-CH02-P32"
+        ]
+      },
+      {
+        "n": 9,
+        "name": "Phases and hormonal events of the menstrual cycle",
+        "from_heading": "2.4",
+        "passages": [
+          "BIO12L-CH02-P33",
+          "BIO12L-CH02-P34",
+          "BIO12L-CH02-P35",
+          "BIO12L-CH02-P36"
+        ]
+      },
+      {
+        "n": 10,
+        "name": "Menstrual hygiene",
+        "from_heading": "2.4",
+        "passages": [
+          "BIO12L-CH02-P37"
+        ]
+      },
+      {
+        "n": 11,
+        "name": "Insemination and fertilisation",
+        "from_heading": "2.5",
+        "passages": [
+          "BIO12L-CH02-P38",
+          "BIO12L-CH02-P39",
+          "BIO12L-CH02-P40"
+        ]
+      },
+      {
+        "n": 12,
+        "name": "Determination of the sex of the baby at fertilisation",
+        "from_heading": "2.5",
+        "passages": [
+          "BIO12L-CH02-P41"
+        ]
+      },
+      {
+        "n": 13,
+        "name": "Cleavage, blastocyst formation and implantation",
+        "from_heading": "2.5",
+        "passages": [
+          "BIO12L-CH02-P42",
+          "BIO12L-CH02-P43"
+        ]
+      },
+      {
+        "n": 14,
+        "name": "Placenta and hormones of pregnancy",
+        "from_heading": "2.6",
+        "passages": [
+          "BIO12L-CH02-P44",
+          "BIO12L-CH02-P45",
+          "BIO12L-CH02-P46"
+        ]
+      },
+      {
+        "n": 15,
+        "name": "Embryonic development during pregnancy",
+        "from_heading": "2.6",
+        "passages": [
+          "BIO12L-CH02-P47",
+          "BIO12L-CH02-P48"
+        ]
+      },
+      {
+        "n": 16,
+        "name": "Parturition and lactation",
+        "from_heading": "2.7",
+        "passages": [
+          "BIO12L-CH02-P49",
+          "BIO12L-CH02-P50"
+        ]
+      }
+    ]
+  },
+  "why": "Both runs cover all 52 passages (P01-P52) exactly once, so coverage does not separate them; the disagreement is only how finely three sections are split, plus where the two closing passages go. In 2.3 run A separates spermatogenesis and its hormonal control (P23-P25) from sperm structure and semen (P26-P28); in 2.5 it separates fertilisation (P38-P40) from cleavage, blastocyst and implantation (P42-P43); in 2.6 it separates the placenta and pregnancy hormones (P44-P46) from the month-by-month embryonic development (P47-P48). Each of those three pairs is a place where a single question can target one half and not the other, so the split is the unit a question links to and run B's merges would put two distinct question families under one name. Run B's remaining difference, a subtopic named 'Chapter summary and exercises' for P51-P52, names a location rather than an idea; run A's placement of those two chapter-level passages with the chapter-overview subtopic keeps every subtopic an idea while still covering them. Nothing in run B is right where run A is wrong, so A is correct as-is and no merge is needed.",
+  "note": "The adjudication input's evidence block contains only chapter, chapter_title and headings (2.1-2.7); it does not include the passage list with ids, kinds and first 200 characters that the step's agents saw. This decision therefore rests on the section structure, the contiguous passage-id ranges, and the two runs' own groupings and names, not on passage text. The one difference where passage text would have mattered is the placement of P51-P52: both runs treat them as chapter-closing material, and they are covered either way, so the choice between them does not affect coverage. from_heading values for the chapter-level subtopic ('Chapter 2 introduction' in A, '2' in B) are not among the seven headings supplied in the evidence.",
+  "confidence": "medium"
+}

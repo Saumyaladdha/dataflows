@@ -1,0 +1,86 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Initially, diffusion current is large and drift current is small.\nAs the diffusion process continues, the space-charge regions\non either side of the junction extend, thus increasing the electric\nfield strength  and hence drift current. This process continues\nuntil the diffusion current equals the drift current. Thus a p-n\njunction is formed. In a p-n junction under equilibrium there\nis no net current.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The loss of electrons from the n-region and the gain of\nelectron by the p-region causes a  difference of potential across\nthe junction of the two regions. The polarity of this potential is\nsuch as to oppose further flow of carriers so that a condition of\nequilibrium exists. Figure 14.11 shows the p-n junction at\nequilibrium and the potential across the junction. The\nn-material has lost electrons, and p material has acquired\nelectrons. The n material is thus positive relative to the p\nmaterial. Since this potential tends to prevent the movement of\nelectron from the n region into the p region, it is often called a\nbarrier potential."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1068,
+        327,
+        1526,
+        959
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 14.3  Can we take one slab of p-type semiconductor and\nphysically join it to another n-type semiconductor to get p-n junction?\nSolution  No! Any slab, howsoever flat, will have roughness much\nlarger than the inter-atomic crystal spacing (~2 to 3 Å) and hence\ncontinuous contact at the atomic level will not be possible. The junction\nwill behave as a discontinuity for the flowing charge carriers."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "14.6  SEMICONDUCTOR DIODE"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "A semiconductor diode [Fig. 14.12(a)] is basically a\np-n junction with metallic contacts provided at the\nends for the application of an external voltage. It is a\ntwo terminal device. A p-n junction diode is\nsymbolically represented as shown in Fig. 14.12(b)."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The direction of arrow indicates the conventional\ndirection of current (when the diode is under forward\nbias). The equilibrium barrier potential can be altered\nby applying an external voltage V across the diode.\nThe situation of p-n junction diode under equilibrium\n(without bias) is shown in Fig. 14.11(a) and (b)."
+    },
+    {
+      "n": 8,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        937,
+        1264,
+        1526,
+        1700
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "14.6.1  p-n junction diode under forward bias"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "When an external voltage V is applied across a semiconductor diode such\nthat p-side is connected to the positive terminal of the battery and n-side\nto the negative terminal [Fig. 14.13(a)], it is said to be forward biased."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The applied voltage mostly drops across the depletion region and the\nvoltage drop across the p-side and n-side of the junction is negligible.\n(This is because the resistance of the depletion region – a region where\nthere are no charges – is very high compared to the resistance of  n-side\nand p-side.) The direction of the applied voltage (V ) is opposite to the",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Semiconductor Electronics:",
+    "Materials, Devices and",
+    "Simple Circuits",
+    "479",
+    "2022-23",
+    "EXAMPLE 14.3"
+  ],
+  "note": "previous_page_last_block was null; judged against my own p012 output, which ended on a complete sentence, and this page opens a fresh indented paragraph. Figures 14.11 and 14.12 (each with caption) occupy the right-hand column and are deferred to A2S; the stray 'n' / 'p' lines at the end of the text layer are figure labels belonging to those deferred figures. 'EXAMPLE 14.3' vertical tab beside the worked-example box is listed as removed furniture. Page ends mid-sentence at 'is opposite to the'."
+}

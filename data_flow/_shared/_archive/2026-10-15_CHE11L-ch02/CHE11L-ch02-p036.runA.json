@@ -1,0 +1,36 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.124, "x1": 0.485},
+      {"id": "right", "x0": 0.513, "x1": 0.878}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.125, 0.0872, 0.139, 0.094],
+     "column": "left", "size_rel": 0.80, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.799, 0.0872, 0.876, 0.094],
+     "column": "right", "size_rel": 0.80, "align": "right", "font": "serif", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.124, 0.1197, 0.485, 0.3096],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.124, 0.3174, 0.485, 0.6505],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 3, "role": "paragraph", "bbox": [0.124, 0.6583, 0.485, 0.8486],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 3, "role": "paragraph", "bbox": [0.513, 0.1197, 0.878, 0.2307],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 4, "role": "paragraph", "bbox": [0.513, 0.2385, 0.878, 0.5138],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 5, "role": "section_heading", "bbox": [0.513, 0.5252, 0.878, 0.5509],
+     "column": "right", "size_rel": 1.0, "align": "left", "font": "sans", "text_color": "#00adef"},
+    {"n": 6, "role": "paragraph", "bbox": [0.513, 0.5615, 0.878, 0.8486],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "decorative_image", "bbox": [0.26, 0.31, 0.86, 0.78],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.9555, 0.522, 0.9624],
+     "column": "full", "size_rel": 0.80, "align": "center", "text_color": "#221f1f"}
+  ],
+  "note": "Ordinary two-column body page on bare white paper: no chapter banner, no page_header_band, no footer_rule, no tint. Left column x 0.124-0.485, right column x 0.513-0.878, gutter 0.485-0.513. body_text_size_px 20.0 measured as cap-to-baseline of three capitals on this page: 'W' in 'With the saturation' (left col, y 1436-1455), 'A' in 'A new pattern' (left col, y 693-712) and 'T' in 'The ground state' (right col, y 1225-1244); line pitch is 35.7 px. Block 3 spans the column break: it fills the foot of the left column (y 0.6583-0.8486) and continues at the head of the right column (y 0.1197-0.2307), so it is reported as TWO regions both carrying n:3 - they are one block printed in two places, not a guessed match. Heading 2.6.6 (block 5) measures the same cap height as body text (20 px, size_rel 1.0); it is set apart by bold sans face and cyan #00adef, not by size - 'sans' is reported because the allowed font list has no sans-bold. The two-line heading's second line is indented to x 0.571 under the first line's text, hanging off the '2.6.6'. The diagonal grey NCERT watermark ('(c) NCERT / not to be republished') is reported as decorative_image; its bbox is an estimate of the glyph envelope because parts of it are overprinted by body text and cannot be isolated. The centred '2024-25' at the page foot is a running footer line; the allowed role list has no running_footer, so running_header is used for it, with font omitted as unsure. All six A2 blocks were placed by position."
+}

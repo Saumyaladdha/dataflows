@@ -1,0 +1,135 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "EXAMPLE 3.7"
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "A galvanometer of 15W resistance is connected across BD. Calculate the current through the galvanometer when a potential difference of 10 V is maintained across AC.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Solution  Considering the mesh BADB, we have"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        562,
+        441,
+        1501,
+        537
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Considering the mesh BCDB, we have"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        562,
+        589,
+        1501,
+        726
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Considering the mesh ADCEA,"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        562,
+        783,
+        1501,
+        918
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Multiplying Eq. (3.65b) by 10"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        562,
+        981,
+        1501,
+        1024
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "From Eqs. (3.65d) and (3.65a) we have"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        562,
+        1080,
+        1501,
+        1166
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Substituting the value of I2 into Eq. [3.65(c)], we get"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        562,
+        1226,
+        1501,
+        1366
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "heading",
+      "text": "SUMMARY"
+    },
+    {
+      "n": 16,
+      "kind": "list",
+      "text": "1. Current through a given area of a conductor is the net charge passing per unit time through the area.\n2. To maintain a steady current, we must have a closed circuit in which an external agency moves electric charge from lower to higher potential energy. The work done per unit charge by the source in taking the charge from lower to higher potential energy (i.e., from one terminal of the source to the other) is called the electromotive force, or emf, of the source. Note that the emf is not a force; it is the voltage difference between the two terminals of a source in open circuit.\n3. Ohm’s law: The electric current I flowing through a substance is proportional to the voltage V across its ends, i.e., V µ I or V = RI, where R is called the resistance of the substance. The unit of resistance is ohm: 1W = 1 V A–1."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "102",
+    "Reprint 2026-27"
+  ],
+  "note": "`previous_page_last_block` was null even though this is page 22, so continuation was judged from the page itself: the page opens inside the grey Example 3.7 box (the vertical side label 'EXAMPLE 3.7' runs beside it and the text refers to BD/AC defined by the circuit on the earlier page), so first_block_continues_from_previous is set true. Block 1 is that vertical left-margin label, placed first in reading order. The SUMMARY box's numbered list ends at item 3 at the foot of the page and clearly runs on, so last_block_continues_on_next is true. Per instruction, prose characters are copied from the text layer even where it renders Greek letters as Latin look-alikes: omega appears as 'W' ('15W resistance', '1W = 1 V A–1') and the proportional sign appears as 'µ' ('V µ I'). All displayed equation lines, including their [3.65(a)]–[3.65(e)] tags, are emitted as equation blocks with needs_special and image-pixel bboxes rather than transcribed; consecutive displayed lines between two prose lines are grouped into one equation block. Wrapped lines within a paragraph were joined with single spaces."
+}

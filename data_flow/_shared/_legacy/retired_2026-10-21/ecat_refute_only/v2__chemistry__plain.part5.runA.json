@@ -1,0 +1,109 @@
+{
+  "group": "v2__chemistry__plain.part5",
+  "ratings": [
+    {
+      "question_id": "2015_A#q027",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "definition_term",
+      "concept": "Frenkel against Schottky defects: Frenkel displaces an ion inside the crystal and leaves the density alone, Schottky removes an ion pair and lowers it",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {"label": "other_one_fact", "option": "2", "route": "Gives the Schottky defect's examples. Alkali metal halides like $\\mathrm{NaCl}$ show Schottky; Frenkel turns up in silver halides and $\\mathrm{ZnS}$."},
+        {"label": "other_one_fact", "option": "3", "route": "Gives the Frenkel defect's property. Leaving the density unchanged is Frenkel's; Schottky takes ion pairs out and lowers it."},
+        {"label": "other_one_fact", "option": "4", "route": "Gives the Schottky defect's property. Lowering the density is Schottky's; in a Frenkel defect the ion stays in the crystal."}
+      ],
+      "reason": "This question requires two neighbouring defect types to be held apart, demonstrated by option 4, \"Frenkel defects decrease the density of crystalline solids\", which states the other defect's behaviour.",
+      "note": "All three wrong options are built the same way, by attaching one defect's property or example set to the other, which is why all three carry the same label with different content named."
+    },
+    {
+      "question_id": "2015_A#q028",
+      "question_type": "plain_mcq",
+      "format": "pick_order",
+      "content_shape": "trend",
+      "concept": "Inert pair effect in group 13: the $+1$ state grows more stable down the group, from Al to Tl",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Tl at the stable end appears in options 3 and 4 only; adding that Al is the least stable in $+1$ then leaves option 4 alone.",
+      "traps": [
+        {"label": "reversed_order", "option": "1", "route": "Reads the group the other way up, as if $+1$ were most stable at the top. Prints the right sequence backwards."},
+        {"label": "sequence_endpoint_or_adjacency", "option": "3", "route": "Keeps Tl at the stable end but moves Al into the middle. Al is the least stable in $+1$, so it comes first."},
+        {"label": "no_derivation_route", "option": "2", "route": "No reading of the group puts In below Tl below Ga: the sequence is neither the group order nor its reverse."}
+      ],
+      "reason": "This question requires one group trend to be read off in order, demonstrated by the stem \"The stability of +1 oxidation state among Al, Ga, In and TI increases in the sequence:\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q029",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Enantiomers: one chiral carbon gives a pair of non-superimposable mirror images, both optically active",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "other_one_fact", "option": "2", "route": "Names the inactive member of the family. A meso form has an internal mirror plane and rotates nothing, and the stem says both structures are active."},
+        {"label": "other_one_fact", "option": "3", "route": "Names the stereoisomers that need more than one centre. Diastereomers require at least two chiral carbons; $\\mathrm{CH_3CHOH\\cdot COOH}$ has one."}
+      ],
+      "reason": "This question requires neighbouring stereochemistry terms to be held apart, demonstrated by the stem \"Two possible stereo-structures of $\\mathrm{CH_3CHOH\\cdot COOH}$, which are optically active, are called:\".",
+      "note": "The record carries has_figure = true pointing at figures_agent/2015_A/q029.png, but no such file exists and the booklet's only drawing for this question sits under its printed solution, as two Fischer projections. The question is complete in text, so no secondary type is recorded. Option 4, atropisomers, is left untagged: the term is real stereochemistry but concerns hindered rotation about a single bond, which has no footing in this syllabus."
+    },
+    {
+      "question_id": "2015_A#q030",
+      "question_type": "plain_mcq",
+      "secondary_type": "figure_to_read",
+      "format": "name_or_identify",
+      "content_shape": "reaction",
+      "concept": "Schotten-Baumann reaction: aniline benzoylated by benzoyl chloride in $\\mathrm{NaOH}$ to give N-phenylbenzamide",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "other_one_fact", "option": "1", "route": "Names the acetyl version. Acetylation uses acetyl chloride or acetic anhydride; the drawn reagent is benzoyl chloride."},
+        {"label": "other_one_fact", "option": "3", "route": "Names the ring reaction. Friedel-Crafts acylation needs $\\mathrm{AlCl_3}$ and attaches the acyl group to carbon, not to the $-\\mathrm{NH_2}$."},
+        {"label": "other_one_fact", "option": "4", "route": "Names a condensation of a different kind. Perkin's reaction joins an aromatic aldehyde to an anhydride to make cinnamic acid."}
+      ],
+      "reason": "This question requires one name reaction to be recalled from its drawn scheme, demonstrated by the stem \"The following reaction [reaction scheme] is known by the name:\".",
+      "note": "The stem's \"[reaction scheme]\" is a pointer, not a loss: the scheme is attached as figures_agent/2015_A/q030.png and is legible - aniline plus benzoyl chloride over $\\mathrm{NaOH}$ giving N-phenylbenzamide. The question is therefore complete and no damage verdict is recorded, but the figure must be read, hence the secondary type. One arrow only, so this is not reaction_scheme."
+    },
+    {
+      "question_id": "2015_A#q031",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "structure_chemical",
+      "concept": "Coordination number and oxidation state from a formula: en and oxalate are both bidentate, and the chloride outside the brackets fixes the charge",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {"label": "wrong_quantity", "option": "1", "route": "Uses the complex ion's charge as the metal's oxidation number. With oxalate at $2-$, the metal is $+3$, so the sum is $6+3$."},
+        {"label": "omitted_contribution", "option": "2", "route": "Leaves the chloride outside the brackets out of the charge balance. That makes the metal $+2$ and the sum $8$."},
+        {"label": "wrong_quantity", "option": "4", "route": "Counts three ligands instead of six donor atoms. Two en and one oxalate are all bidentate, so the coordination number is $6$."}
+      ],
+      "reason": "This question requires two counts to be worked out from a formula and then added, demonstrated by the stem \"The sum of coordination number and oxidation number of metal M in the complex $\\mathrm{[M(en)_{2}(C_{2}O_{4})]Cl}$\".",
+      "note": "Structure is multi_step_dependent on the reading used across this run: the final figure is an arithmetic result built from two earlier numeric results. several_independent_checks is reserved for verdicts combined item by item, as in q027 and q032."
+    },
+    {
+      "question_id": "2015_A#q032",
+      "question_type": "plain_mcq",
+      "format": "predict_product",
+      "content_shape": "reaction",
+      "concept": "Addition-elimination at a carbonyl: ammonia derivatives such as hydrazine add and then lose water, giving a $>\\mathrm{C=N-}$ product",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {"label": "partial_combination", "option": "1", "route": "Meets the addition half and stops. Hydrocyanic acid gives a cyanohydrin with no water lost."},
+        {"label": "partial_combination", "option": "2", "route": "Meets the addition half and stops. Sodium hydrogen sulphite gives the bisulphite adduct with no water lost."},
+        {"label": "partial_combination", "option": "3", "route": "Meets the addition half and stops. A Grignard reagent adds and is worked up to an alcohol, so nothing is eliminated."}
+      ],
+      "reason": "This question requires a two-part criterion to be tested against four reagents, demonstrated by the stem \"involves nucleophilic addition followed by elimination of water\".",
+      "note": "All three wrong options fail on the same half of the stem's criterion, the elimination of water, which is why they share one label with the product named in each route."
+    }
+  ],
+  "group_note": "All six are printed as one question with four short options, so all six are plain_mcq; q030 alone adds a secondary type, as its reaction has to be read from the attached scheme. Demands were set against each other: q027 and q029 both turn on holding two neighbouring terms apart and so share concept_discrimination with definition_term, while q031 and q032 both apply a stated criterion and share application. q028 and q030 are the two straight retrievals and are both recall. Structure splits on one rule held across the run: verdicts combined item by item give several_independent_checks (q027's four claims, q032's four reagents), a numeric result built from earlier numeric results gives multi_step_dependent (q031), and one rule applied once gives single_step. Elimination is recorded only for q028, where the shortcut can be shown. Two figure flags in this packet point at drawings under the printed solutions rather than at question content; q029's is recorded as such in its note, and only q030's figure is genuinely part of the question."
+}

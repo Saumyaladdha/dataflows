@@ -1,0 +1,68 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "11.28 Obtain V0 versus ν plot. The slope of the plot is (h/e) and its intercept\non the ν-axis is ν0. The first four points lie nearly on a straight line\nwhich intercepts the ν-axis at ν0 = 5.0 × 1014  Hz (threshold frequency).\nThe fifth point corresponds to ν < ν0; there is no photoelectric\nemission and therefore no stopping voltage is required to stop the\ncurrent. Slope of the plot is found to be 4.15 × 10–15 V s. Using e = 1.6 ×\n10–19 C, h = 6.64 × 10–34 J s (standard value h = 6.626 × 10–34 J s), φ0  =\nh ν0 = 2.11 V.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "11.29 It is found that the given incident frequency ν is greater than ν0\n(Na), and ν0 (K); but less than ν0 (Mo), and ν0 (Ni). Therefore, Mo and\nNi will not give photoelectric emission. If the laser is brought closer,\nintensity of radiation increases, but this does not affect the result\nregarding Mo and Ni. However, photoelectric current from Na and K\nwill increase in proportion to intensity."
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "11.30 Assume one conduction electron per atom. Effective atomic area\n~10–20 m2\nNumber of electrons in 5 layers"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [250, 925, 550, 1005],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "Incident power\n= 10–5 W m–2 × 2 × 10–4 m2 = 2 × 10–9 W\nIn the wave picture, incident power is uniformly absorbed by all the\nelectrons continuously. Consequently, energy absorbed per second\nper electron\n=2 × 10–9/1017 = 2 × 10–26 W\nTime required for photoelectric emission\n=2 × 1.6 × 10–19J/2 × 10–26 W  = 1.6 × 107 s\nwhich is about 0.5 year."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Implication: Experimentally, photoelectric emission is observed nearly\ninstantaneously (∼10–9 s): Thus, the wave picture is in gross\ndisagreement with experiment. In the photon-picture, energy of the\nradiation is not continuously shared by all the electrons in the top\nlayers. Rather, energy comes in discontinuous ‘quanta’. and\nabsorption of energy does not take place gradually. A photon is either\nnot absorbed, or absorbed by an electron nearly instantly."
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "11.31 For  λ = 1 Å, electron’s energy = 150 eV; photon’s energy = 12.4 keV.\nThus, for the same wavelength, a photon has much greater energy\nthan an electron."
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "11.32 (a)"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [310, 1695, 550, 1765],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "Thus, for same K, λ decreases with m as\n(1/√m). Now (mn/me) = 1838.6; therefore for the same energy,\n(150 eV) as in Ex. 11.31, wavelength of neutron = (1/√1838.6) ×\n10–10 m = 2.33×10–12 m. The interatomic spacing is about a\nhundred times greater. A neutron beam of 150 eV energy is\ntherefore not suitable for diffraction experiments.",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "511",
+    "Answers",
+    "2022-23"
+  ],
+  "note": "BOOK BACK MATTER, NOT CHAPTER 14 CONTENT. Printed page 511, CHAPTER 11 answers 11.28 to 11.32(a) inside the book's ANSWERS section; transcribed only because the A2 schema rejects a zero-block page, and not to be used as chapter-14 passage text. previous_page_last_block was null, so the continuation was judged from my own p042 output, which ended with the completed answer 11.27; this page opens with a fresh numbered answer and ends with 11.32(a) complete, so neither edge continues mid-sentence (11.32(b) begins on the next page as a new sub-item). Two printed display expressions are deferred to A2S because the text layer scrambles them: the (5 x 2 x 10-4 m2)/(10-20 m2) = 1017 fraction in 11.30 (n=4) and the lambda = h/p = h/sqrt(2 m K) formula that opens 11.32(a) (n=9, with its item label kept as block n=8). The two radicals that stay inline, (1/sqrt m) and (1/sqrt 1838.6), are written with the digits the text layer carries."
+}

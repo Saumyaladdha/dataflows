@@ -1,0 +1,96 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        295,
+        205,
+        955,
+        1150
+      ],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 2.5 Galileo’s law of odd numbers : “The distances traversed, during equal intervals    of time, by a body falling from rest, stand to one another in the same ratio as the odd numbers beginning with unity [namely, 1: 3: 5: 7…...].”  Prove it."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Answer  Let us divide the time interval of motion of an object under free fall into many equal intervals τ  and find out the distances traversed during successive intervals of time. Since initial velocity is zero, we have"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1180,
+        290,
+        1395,
+        355
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Using this equation, we can calculate the position of the object after different time intervals, 0, τ, 2τ,  3τ… which are given in second column of Table 2.2. If we take (–1/2) gτ2 as y0 — the position coordinate after first time interval τ, then third column gives the positions in the unit of yo. The fourth column gives the distances traversed in successive τs. We find that the distances are in the simple ratio 1: 3: 5: 7: 9: 11… as  shown in the last column. This  law was established by Galileo Galilei (1564-1642) who was the first to make quantitative studies of free fall."
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Example 2.6  Stopping distance of vehicles : When brakes are applied to a moving vehicle, the distance it travels before stopping is called stopping distance.  It is an important factor for road safety and depends on the initial velocity (v0) and the braking capacity, or deceleration, –a that is caused by the braking. Derive an expression for stopping distance of a vehicle in terms of vo and a."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Answer  Let the distance travelled by the vehicle before it stops be ds. Then, using equation of motion  v2 = vo2 + 2 ax, and noting that  v = 0, we have the stopping distance"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        980,
+        1350,
+        1210,
+        1435
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Thus, the stopping distance is proportional to the square of the initial velocity. Doubling the"
+    },
+    {
+      "n": 10,
+      "kind": "heading",
+      "text": "Table 2.2"
+    },
+    {
+      "n": 11,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        370,
+        1540,
+        1520,
+        1905
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "20",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Judged first_block_continues_from_previous from page 7, which I read myself in this batch (previous_page_last_block was null): page 7 ends with panel (a) of Fig. 2.7, and this page opens with panels (b) and (c) of the same figure plus its caption, so the opening block continues a figure begun on the previous page. Examples 2.5 and 2.6 are tinted boxes kept as box blocks. Block 3 runs across the column break (left column ends 'find out the distances', right column continues 'traversed during successive intervals of time'). The free-fall equation and the stopping-distance expression are left for the special transcriber with bounding boxes, as is Table 2.2. On last_block_continues_on_next: the last block in reading order is Table 2.2, which is complete, but the page's prose (block 9) breaks mid-sentence at 'Doubling the' and carries on to page 9, which is why the flag is true. Text layer matches the image."
+}

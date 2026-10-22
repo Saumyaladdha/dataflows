@@ -1,0 +1,66 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Reference Standard\nAfter defining a unit of measurement such as the kilogram or the metre, scientists agreed on reference standards that make it possible to calibrate all measuring devices. For getting reliable measurements, all devices such as metre sticks and analytical balances have been calibrated by their manufacturers to give correct readings. However, each of these devices is standardised or calibrated against some reference. The mass standard is the kilogram since 1889. It has been defined as the mass of platinum-iridium (Pt-Ir) cylinder that is stored in an airtight jar at International Bureau of Weights and Measures in Sevres, France. Pt-Ir was chosen for this standard because it is highly resistant to chemical attack and its mass will not change for an extremely long time.\nScientists are in search of a new standard for mass. This is being attempted through accurate determination of Avogadro constant. Work on this new standard focuses on ways to measure accurately the number of atoms in a well-defined mass of sample. One such method, which uses X-rays to determine the atomic density of a crystal of ultrapure silicon, has an accuracy of about 1 part in 106  but has not yet been adopted to serve as a standard. There are other methods but none of them are presently adequate to replace the Pt-Ir cylinder. No doubt, changes are expected within this decade.\nThe metre was originally defined as the length between two marks on a Pt-Ir bar kept at a temperature of 0°C (273.15 K).  In 1960 the length of the metre was defined as 1.65076373 × 106 times the wavelength of light emitted by a krypton laser. Although this was a cumbersome number, it preserved the length of the metre at its agreed value. The metre was redefined in 1983 by CGPM as the length of path travelled by light in vacuum during a time interval of 1/299 792 458 of a second. Similar to the length and the mass, there are reference standards for other physical quantities.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "present the data realistically with certainty to the extent possible. These ideas are discussed below in detail.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "1.4.1 Scientific Notation",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "As chemistry is the study of atoms and molecules, which have extremely low masses and are present in extremely large numbers, a chemist has to deal with numbers as large as 602, 200,000,000,000,000,000,000 for the molecules of 2 g of hydrogen gas or as small as 0.00000000000000000000000166 g mass of a H atom. Similarly, other constants such as Planck’s constant, speed of light, charges on particles, etc., involve numbers of the above magnitude.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "It may look funny for a moment to write or count numbers involving so many zeros but it offers a real challenge to do simple mathematical operations of addition, subtraction, multiplication or division with such numbers. You can write any two numbers of the above type and try any one of the operations you like to accept as a challenge, and then, you will really appreciate the difficulty in handling such numbers.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "This problem is solved by using scientific notation for such numbers, i.e., exponential notation in which any number can be represented in the form N × 10n, where n is an exponent having positive or negative values and N is a number (called digit term) which varies between 1.000... and 9.999....",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Thus, we can write 232.508 as 2.32508 × 102 in scientific notation. Note that while writing it, the decimal had to be moved to the left by two places and same is the exponent (2) of 10 in the scientific notation.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Similarly, 0.00016 can be written as 1.6 × 10–4. Here, the decimal has to be moved four places to the right and (–4) is the exponent in the scientific notation.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "While performing mathematical operations on numbers expressed in scientific notations, the following points are to be kept in mind.",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "SOME BASIC CONCEPTS OF CHEMISTRY",
+    "11",
+    "2024-25"
+  ],
+  "note": "Two-column page: the whole left column is the green 'Reference Standard' box, so by the left-column-first reading order it is block 1 and first_block_continues_from_previous is false. The running prose of the chapter resumes in the right column at block 2, which does start mid-sentence and is flagged continues_from_previous: true (the input's previous_page_last_block was null, so this was judged from the lowercase mid-sentence opening). Superscript exponents are copied as the text layer holds them (flat digits: '10n', '102', '10–4', '106'); the image renders them as superscripts. The text layer's double spaces in '1 part in 106  but' and '(273.15 K).  In' were preserved verbatim. No tables, figures or display equations on this page."
+}

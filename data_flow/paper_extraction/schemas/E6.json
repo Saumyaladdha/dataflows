@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/E6.json",
+  "title": "E6 agent output (e6-context-tagger) -- stem_context ONLY",
+  "description": "Spec 13/E6 is explicit that the SCRIPT (scripts/describe_tags.py) fills answer_form, negation, item_count, constants_given, figure_role and stem_context-by-patterns, and that the AGENT is called for `stem_context` ONLY, and only when the patterns do not decide. So this schema covers exactly the agent's output, {\"stem_context\",\"why\",\"confidence\"} -- the same agent-output-only convention as every other schema in this build. The five script-owned fields are not here because no agent ever writes them; they are written into the record by the step itself from describe_tags.describe(), whose real values for all 10 canonical records are recorded in codebook/E6.md §3. `unsure` is in the enum although config/allowed_values.yaml's stem_context list has only ten values: it is an 'I could not decide' marker rather than a category (Universal rule 5, .claude/agents/e6-context-tagger.md's own allowed list, and spec 16's E6_CONTEXT_UNSURE (low) all name it). scripts/checks/E6.py adds the two rules a schema cannot express: the agent must only be running at all when describe_tags.stem_context() returned None, and `plain` can never win a tie-break (codebook/E6.md §2 -- if two patterns fired, something applies, so `plain` is wrong by construction). `note` optional per Universal rule 7; `codebook_version` is the runner's to record (see schemas/E1.json).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["stem_context", "why", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "stem_context": {
+          "type": "string",
+          "enum": [
+            "plain",
+            "case_scenario",
+            "experiment_setup",
+            "real_world",
+            "data_given",
+            "table_given",
+            "figure_given",
+            "reaction_given",
+            "equation_given",
+            "historical",
+            "unsure"
+          ],
+          "description": "How the stem is FRAMED. Spec 13/E6's tie-break: if two apply, choose the one the question cannot be answered without ('A biologist studied rats... natality 250...' is data_given, not case_scenario). codebook/E6.md §2 makes that decidable as material-beats-framing. Never what the student must pick (E2)."
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One sentence. When two or more contexts applied -- which is the only situation in which this agent runs -- it must say which were in play and why the chosen one is the one the question cannot be answered without. Enforced in scripts/checks/E6.py."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": { "type": "string", "description": "Universal rule 7. Optional." }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

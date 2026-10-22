@@ -1,0 +1,27 @@
+{
+  "step": "A6",
+  "task": "Decide whether these two NCERT passages (one per edition) describe the same idea closely enough to be treated as the same passage across editions.",
+  "allowed_values": {
+    "choice": [
+      "A",
+      "B",
+      "unsure"
+    ],
+    "A": "same idea -- pair old_passage with new_passage",
+    "B": "not the same idea -- do not pair them (each is removed/added instead)"
+  },
+  "evidence": {
+    "old_passage": {
+      "passage_id": "BIO12O-CH06-P04",
+      "text": "Darwin's finches, a group of fourteen closely related species of birds collected by Darwin from Galapagos Islands, provide a good example of adaptive radiation, where a group of closely related species arises from a common ancestor and evolves different structures suited to the different needs, in this case different beaks for different eating habits."
+    },
+    "new_passage": {
+      "passage_id": "BIO12L-CH06-P04",
+      "text": "Darwin's finches, a group of fourteen closely related species of birds collected by Darwin from the Galapagos Islands, are a good example of adaptive radiation, where a group of closely related species arises from a common ancestor and evolves different structures suited to different needs, in this case different beaks for different feeding habits."
+    },
+    "similarity": 0.6667
+  },
+  "run_a": null,
+  "run_b": null,
+  "failed_check": "A6_WEAK_PAIR: similarity 0.6667 is between 0.50 and 0.85"
+}

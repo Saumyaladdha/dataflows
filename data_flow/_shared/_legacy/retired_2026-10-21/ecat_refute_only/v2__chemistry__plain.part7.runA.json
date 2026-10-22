@@ -1,0 +1,160 @@
+{
+  "group": "v2__chemistry__plain.part7",
+  "ratings": [
+    {
+      "question_id": "2015_A#q039",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Precipitation stoichiometry: percentage strength to moles, then the limiting reagent fixes the mass of AgCl",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "Uses the full $100\\,\\mathrm{mL}$ masses, $16.9\\,\\mathrm{g}$ and $5.8\\,\\mathrm{g}$, instead of the half in $50\\,\\mathrm{mL}$. That is $0.1$ mol of AgCl, $14\\,\\mathrm{g}$."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "3",
+          "route": "Adds the two reagents' moles together as well as using the full $100\\,\\mathrm{mL}$ masses. That is $0.2$ mol, $28\\,\\mathrm{g}$."
+        },
+        {
+          "label": "unit_or_conversion",
+          "option": "4",
+          "route": "Applies the dilution twice, reading the percentages against the mixed $100\\,\\mathrm{mL}$. That gives $0.025$ mol, $3.5\\,\\mathrm{g}$."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires each result to feed the next, demonstrated by the stem's \"50 mL of 16.9% solution of AgNO3 is mixed with 50 mL of 5.8% NaCl solution\", which must become grams, then moles, then the limiting reagent, before any mass can be given.",
+      "note": "`estimation` is recorded because both reagents come to almost exactly $0.05$ mol - $8.45/170$ and $2.9/58.5$ - so the arithmetic can be carried on round numbers. The percentages have to be read as grams per $100\\,\\mathrm{mL}$ for the question to work at all; that reading is assumed here and is what the two conversion traps turn on."
+    },
+    {
+      "question_id": "2015_A#q040",
+      "question_type": "plain_mcq",
+      "format": "predict_product",
+      "content_shape": "reaction",
+      "concept": "Benzene over $\\mathrm{V_2O_5}$ in air: the ring is broken open to maleic anhydride",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "1",
+          "route": "Benzoic acid is what oxidising toluene's side chain gives, a different starting material."
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "2",
+          "route": "Benzaldehyde also comes from toluene, stopped part way. Benzene has no side chain to oxidise."
+        },
+        {
+          "label": "look_alike_term",
+          "option": "3",
+          "route": "Blends the key's \"anhydride\" with \"benzoic\". The anhydride formed here is maleic, from the opened ring."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored reagent-to-product mapping, demonstrated by the stem's \"The oxidation of benzene by V2O5 in the presence of air produces:\", which names the catalyst and the conditions and asks only for the product.",
+      "note": "The record carries has_figure true for figures_agent/2015_A/q040.png, which is not in that directory at the time of rating. The stem and all four options are text, so no figure is needed and the question is tagged as complete."
+    },
+    {
+      "question_id": "2015_A#q041",
+      "question_type": "structure_options",
+      "format": "predict_product",
+      "content_shape": "reaction",
+      "concept": "Dehydration of an alcohol gives alkenes, so the option that is not an alkene at all cannot be a product",
+      "cognitive_demand": "",
+      "solution_structure": "",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires the products of a dehydration to be judged against a drawn substrate, demonstrated by the stem's \"Which of the following is not the product of dehydration of [structure] ?\", in which the substrate itself is a placeholder in our record.",
+      "note": "SOURCE DAMAGE. The stem's substrate is stored as the literal string \"[structure]\" and is not recoverable: figures_agent/2015_A/q041.png is present but is a crop of the OPTIONS only - it shows options (1) to (4) under a stem line itself cut off at \"Which of the following is n\" - and option (4)'s ring is clipped by the right-hand edge of the crop. Without the alcohol, which carbocation forms and which alkenes it can give cannot be established, so E4 is left blank and `traps` is empty under rulebook rule 5 rather than inferred from the option set. What IS certain is recorded: the four options are drawn structures (E1), the stem names a reaction and asks which species it does not give (E2), and three of the four options are alkene isomers of one cyclohexyl-butene skeleton while the fourth carries no double bond, which is consistent with the printed key of 4. The repair needed is the substrate structure and an uncropped option image."
+    },
+    {
+      "question_id": "2015_A#q042",
+      "question_type": "statement_options",
+      "format": "pick_correct_statement",
+      "content_shape": "reaction",
+      "concept": "Gabriel phthalimide synthesis cannot make aromatic amines, because aryl halides do not undergo nucleophilic substitution",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "This really does give aniline: $\\mathrm{H_2/Pd}$ reduces nitrobenzene straight to it. The stem asks which method fails."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "This really does give aniline: acid hydrolysis of phenyl isocyanide gives the amine and formic acid. The stem asks which method fails."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "This really does give aniline: Hofmann bromamide degradation takes benzamide to it. The stem asks which method fails."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four named preparations to be checked one by one, demonstrated by the stem's \"Method by which Aniline cannot be prepared is:\", which can only be answered once each of the four has been judged.",
+      "note": "The task polarity is negative - the stem reads \"cannot be prepared\" - but `negative_words_seen` is recorded as empty for this question, so the polarity would be missed by anything reading that field alone; this is flagged for repair. The record also carries has_figure true for figures_agent/2015_A/q042.png, which is not present at the time of rating; all four methods are described in text, so no figure is needed."
+    },
+    {
+      "question_id": "2015_A#q044",
+      "question_type": "plain_mcq",
+      "format": "pick_order",
+      "content_shape": "formula_or_law",
+      "concept": "Aufbau by the $(n+l)$ rule: 4s has $n+l = 4$ and fills before 3d, which has 5",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Within one shell s fills before p, so 3s must be followed by 3p; option 3 inserts 4s between them and option 4 puts 4s ahead of 3s, which strikes out both.",
+      "traps": [
+        {
+          "label": "ignores_exception",
+          "option": "1",
+          "route": "Orders purely by the shell number, which works for 3s, 3p, 3d and then fails: 4s comes below 3d, not above it."
+        },
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "3",
+          "route": "Right at both ends, wrong in the middle: 4s is put ahead of 3p, though 3p also has $n+l = 4$ and the smaller $n$ goes first."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "Puts 4s below 3s. No ordering gives that: 3s has $n+l = 3$ against 4s's 4, and the shell number says the same."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a filling rule to be applied to four named orbitals, demonstrated by the stem's \"the correct order of increasing energy of the listed orbitals in the atom of titanium\", which supplies the orbitals and asks only for their order.",
+      "note": "E3 is `formula_or_law` because the ordering is produced by a rule - $(n+l)$, with the lower $n$ first on a tie - and not read off a stored table."
+    },
+    {
+      "question_id": "2015_A#q045",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "reaction",
+      "concept": "Self-reduction in copper extraction: cuprous oxide and cuprous sulphide react together to give copper and sulphur dioxide",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": ["arguable_key"],
+      "reason": "This question requires one stored metallurgical equation, demonstrated by the stem's \"the metal is finally obtained by the reduction of cuprous oxide with\", which names the species being reduced and asks for what reduces it.",
+      "note": "KEY FLAGGED, NOT OVERTURNED. Our record stores `correct_answer` as 2, sulphur dioxide. In the self-reduction step as NCERT prints it, 2Cu2O + Cu2S gives 6Cu + SO2: the reductant is cuprous sulphide - option 1 - and sulphur dioxide is the by-product, which makes option 1 defensible on the subject itself. The tags here follow the printed key as rule 7 requires, and that is why `traps` is empty: a trap on option 1 would assert that the reaction NCERT prints is the mistake, and a trap on option 2 is forbidden because it is the stored key. The question needs its key checked against the printed booklet before any trap is written for it. Everything else about the question is complete - stem and four text options all present."
+    }
+  ],
+  "group_note": "Six questions grouped on `structure` = \"plain\". Three are not plain on the page and are re-read from the layout: 2015_A#q041's options are drawn structures (`structure_options`), and 2015_A#q042's stem is only an instruction with each option a described method (`statement_options`). DEMAND: `recall` for the three that one stored item closes (q040's named oxidation, q042's four named preparations, q045's metallurgical equation), `calculation` for q039 where a number must be produced, `application` for q044 where the $(n+l)$ rule is applied to named orbitals, and blank for q041, whose damage is described below. STRUCTURE: `multi_step_dependent` for q039 alone - percentage to grams to moles to the limiting reagent, each step needing the one before it - against `several_independent_checks` for q042 and q044, where four methods or four orbitals are judged separately and the verdicts combined, and `single_step` for q040 and q045. That contrast is the packet's main consistency decision: four independent checks are not a chain, which the rulebook states outright. STRATEGY: `elimination` on q044 only, where one securely known rule strikes out two named options, with the shortcut written out; `estimation` on q039, where both reagents come to almost exactly $0.05$ mol. TWO QUESTIONS CARRY VERDICTS AND NO TRAPS, for different reasons, and both are the point of this axis. 2015_A#q041 is `source_damage_artifact`: the stem's substrate is stored as the string \"[structure]\" and the attached figure crops the options only, so the alcohol cannot be recovered; E4 is left blank and no trap is inferred, per rule 5, while E1, E2 and E3 are filled from what is certain. 2015_A#q045 is `arguable_key`: the stored key is sulphur dioxide, but NCERT's own self-reduction equation makes cuprous sulphide the reductant, so option 1 is defensible; the key is tagged as printed, not overturned, and no trap is written in either direction. TRAPS elsewhere are labelled by the operation or the fact that reaches the option: a named wrong operation (`calculation_slip` on q039's 14 g and 28 g), a conversion applied twice (`unit_or_conversion` on 3.5 g), a real result belonging to toluene rather than benzene (`neighbouring_question_answer`), a term blended from the key and its neighbours (`look_alike_term`), true methods under a negated stem (`true_statement_trap` on q042), the shell-number rule carried past its exception (`ignores_exception`), one interior adjacency wrong with both ends right (`sequence_endpoint_or_adjacency`), and one option demonstrated unreachable by both ordering rules (`no_derivation_route`). No trap sits on any official answer."
+}

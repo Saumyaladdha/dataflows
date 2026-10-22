@@ -1,0 +1,6 @@
+{
+  "kind": "equation",
+  "latex": "\\mathrm{C_2H_5} - \\overset{\\cdot\\cdot}{\\mathrm{N}}(\\mathrm{H}) - \\mathrm{H} + \\underset{||}{\\overset{\\mathrm{CH_3}}{\\mathrm{C}}} - \\mathrm{Cl} \\ \\xrightarrow{\\text{Base}}\\ \\mathrm{C_2H_5} - \\overset{+}{\\mathrm{N}}(\\mathrm{H})(\\mathrm{H}) - \\overset{\\mathrm{CH_3}}{\\mathrm{C}}(\\mathrm{Cl}) - \\mathrm{O}^- \\ \\longrightarrow\\ \\mathrm{C_2H_5} - \\mathrm{N}(\\mathrm{H}) - \\mathrm{C}(\\mathrm{O}) - \\mathrm{CH_3} + \\mathrm{H} - \\mathrm{Cl}",
+  "number": "",
+  "note": "Input `kind` is \"figure\" but the crop is a drawn reaction mechanism, so it is given in LaTeX as one reaction; the structures are printed as 2-D formulae with substituents above and below each centre and with curved electron-movement arrows, which cannot be reproduced in linear notation. Printed atoms/groups, top-left to bottom-right: CH3, C2H5, N with a lone pair (two dots), H, H, C, Cl, O; the label 'Base' over the first arrow; then H, CH3, C2H5, N with a '+' charge, H, C, Cl, O with a '-' charge; then C2H5, N, H, C, O, CH3, and '+ H-Cl'. Compound names are printed under the structures but are clipped off by the bottom edge of the crop, with only the tops of the letters visible ('Ethanamine' under the first structure, 'N-Ethylethanamide' under the product)."
+}

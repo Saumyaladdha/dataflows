@@ -1,0 +1,159 @@
+{
+  "group": "v2__chemistry__plain.part6",
+  "ratings": [
+    {
+      "question_id": "2015_A#q033",
+      "question_type": "structure_options",
+      "format": "identify_structure_or_compound",
+      "content_shape": "structure_property",
+      "concept": "Rate of alkaline ester hydrolysis and how the ester's own structure changes it",
+      "cognitive_demand": "",
+      "solution_structure": "",
+      "strategy_available": [],
+      "traps": [],
+      "verdicts": [
+        "source_damage_artifact"
+      ],
+      "reason": "This question requires four printed ester structures to be compared on one criterion, demonstrated by the stem's \"gets hydrolyzed most easily under alkaline conditions\" with each option standing in the slot where a structure was drawn.",
+      "note": "All four options as we stored them read \"[structure diagram]\": the structures themselves are not in the record. Section 7 and rule 5 apply - the damage is ours, not the examiner's design, so `source_damage_artifact` is recorded, `traps` is empty, and only what is certain is filled. What is certain comes from the stem and the option slots: the printed shape is four structures as options (E1), the answer is one chemical species with no reaction printed (E2), and the material is a property that follows from structure (E3). `cognitive_demand` and `solution_structure` are left as the unsure form, because whether the comparison turns on an electronic effect, a steric one or a leaving-group difference cannot be read without the structures."
+    },
+    {
+      "question_id": "2015_A#q034",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "reaction_mechanism",
+      "concept": "Stereochemistry of $\\mathrm{S_N}1$: the flat carbocation is attacked from both faces, with inversion slightly ahead of retention",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "Says the configuration is kept. The front face is the one the departing group shields, so retention is the smaller share, not the whole of it."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Gives the $\\mathrm{S_N}2$ result. Complete inversion needs backside attack on the intact molecule, which is the other mechanism."
+        },
+        {
+          "label": "overclaiming_quantifier",
+          "option": "3",
+          "route": "The \"100%\" is the only thing wrong with it. The departing group screens one face while it leaves, so the two faces are not attacked equally and the racemisation is partial."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one mechanism's stereochemical outcome to be held apart from its neighbour's, demonstrated by option 2 \"100% inversion\" printing the $\\mathrm{S_N}2$ result beside the $\\mathrm{S_N}1$ one.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q035",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Zero-order kinetics: the amount formed is the rate constant times the time, and the concentration of A does not enter",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "unit_sanity"
+      ],
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "Multiplies by the 5 M of A as well, as if the rate were $k[\\mathrm{A}]$. Gives $3.6\\,\\mathrm{M}$, five times the correct $0.72\\,\\mathrm{M}$."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one product of a rate constant and a time, demonstrated by the stem giving the constant \"$0.6 \\times 10^{-3}$ mole per second\" and the interval \"20 minutes\" with no order to establish.",
+      "note": "Kept `single_step`: converting 20 minutes to 1200 s is a unit change inside the one multiplication, not a step whose result a second relation then needs. `unit_sanity` is recorded because the constant is printed per second while the time is printed in minutes, so the units themselves force the conversion. Options 1 and 3 are left untagged: they are half and one and a half times the key, and no named operation on $0.6 \\times 10^{-3}$ and 1200 s produces either. The printed constant also carries no volume in its unit (\"mole per second\" rather than per litre per second); the arithmetic and the key are unaffected, so this is recorded here rather than as a damage verdict."
+    },
+    {
+      "question_id": "2015_A#q036",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "formula_or_law",
+      "concept": "Mixing a strong base with less strong acid: find the leftover OH- after halving both concentrations, then pH = 14 - pOH",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "No route reaches 7. The base is ten times the acid, so equal volumes always leave base over and the mixture cannot come out neutral."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "Forgets that mixing equal volumes halves both concentrations, then reports the figure as an acidic pH. $-\\log(0.09) = 1.04$ instead of $14 - 1.35 = 12.65$."
+        },
+        {
+          "label": "omitted_contribution",
+          "option": "4",
+          "route": "Leaves the NaOH out of the sum. $0.01\\,\\mathrm{M}$ HCl on its own has pH 2."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires an excess concentration to be found before a pH can be taken from it, demonstrated by the stem mixing \"equal volumes of 0.1 m NaOH and 0.01 M HCl\" so that the leftover hydroxide is what the logarithm is then applied to.",
+      "note": "The NaOH molarity is printed with a lowercase m (\"0.1 m NaOH\") against the capital M on the acid. Read as molar, since the arithmetic that yields the key's 12.65 requires it; noted rather than treated as damage because the key confirms the reading. `multi_step_dependent` because the pH step needs the excess-hydroxide result from the first step."
+    },
+    {
+      "question_id": "2015_A#q037",
+      "question_type": "plain_mcq",
+      "format": "count_qualifying_items",
+      "content_shape": "structure_chemical",
+      "concept": "Isomers of $[\\mathrm{Co(en)_2Cl_2}]\\mathrm{Cl}$: cis and trans, and the cis form is chiral, so three in all",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "3",
+          "route": "Counts the geometric isomers only. Gives 2, leaving out the mirror image of the cis form."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "Doubles both geometric isomers for chirality. Gives 4, but the trans form sits on its own mirror image and has no partner."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires isomerism rules to be applied to a named formula and the results tallied, demonstrated by the stem asking for the \"number of possible isomers\" of $[\\mathrm{Co(en)_2Cl_2}]\\mathrm{Cl}$ with four integers as options.",
+      "note": "E2: the answer is an integer arrived at by enumerating and tallying structures, not by computing from numbers in the stem, so `count_qualifying_items` is used rather than `calculate_value` - section 2 draws that line at whether anything is computed. The items tallied are structures the student generates rather than species printed in the stem, which is a stretch of the label worth recording. `multi_step_dependent` because the chirality test is applied to the geometric isomers found in the first step. Option 4 is left untagged: a single isomer follows from no rule I can name. The record carries `figures_agent/2015_A/q037.png`, but the formula and all four options are complete as text."
+    },
+    {
+      "question_id": "2015_A#q038",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "trend",
+      "concept": "Why HF breaks the boiling-point trend of the hydrogen halides: intermolecular hydrogen bonding",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "1",
+          "route": "HF really does have the strongest H-X bond, which answers a different question. Boiling pulls molecules apart from each other, not the H from the F."
+        },
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "Fluorine's shielding is poor and HF is polarised, so the first half stands. Polarity cannot be the reason - HCl is polar too and boils lowest of the four."
+        },
+        {
+          "label": "false_explanatory_link",
+          "option": "3",
+          "route": "Fluorine's electronegativity really is the highest, and the option stops there. High electronegativity raises the boiling point only through the hydrogen bonds it allows, which is what option 4 names."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which true statement about fluorine accounts for a printed anomaly, demonstrated by the stem supplying the order \"$\\mathrm{HF} > \\mathrm{HI} > \\mathrm{HBr} > \\mathrm{HCl}$\" and asking what \"explains the higher boiling point of hydrogen fluoride\".",
+      "note": "`false_explanatory_link` is used on option 3 outside an Assertion-Reason item. The device is the one the label defines - a true statement taken to explain another because the two share a topic - and section 5's tie-break mentions A/R only when separating this label from `format_reflex_option`."
+    }
+  ],
+  "group_note": "Six questions grouped on `structure: plain`, and one does not belong on E1: q033's four options are the slots where structures were drawn, which section 1 assigns to `structure_options`. It is also the packet's one damaged question - every option in our record reads \"[structure diagram]\" - so it carries `source_damage_artifact`, an empty `traps` list and the unsure form on both E4 fields, with only the stem-certain axes filled. The other five are `plain_mcq`. E2 was read off the options alone and splits four ways: two whole-claim sets (q034, q038 - and q038 is `pick_cause_or_effect` because its options are rival explanations of a granted trend, while q034's are rival outcomes), two numeric sets (q035, q036 - `calculate_value`), one tally (q037), one species (q033). Demand was kept parallel for parallel work: q035 and q036 are both `calculation`, q034 is `concept_discrimination` because rival mechanisms' outcomes are printed side by side, q038 is `explanatory_reasoning` because the decision is whether a true statement accounts for the printed anomaly, and q037 is `application` of isomerism rules. Solution structure separates the two numericals for a stated reason: q036 is `multi_step_dependent`, since the pH step consumes the excess-hydroxide result, while q035 is `single_step`, since its unit conversion sits inside one multiplication and nothing downstream needs it as a result. q037 is also `multi_step_dependent`, because the chirality test runs on the isomers found first. Only q035 carries a strategy, `unit_sanity`, and the reason is printed in the stem itself: the constant is per second and the interval is in minutes. No member carries `elimination`, because in none of them does one fact strike out options short of doing the work. Six of the twenty-four options are left untagged with the reason in each note, and the recurring one is a value that is a simple multiple of the key with no operation on the printed numbers producing it."
+}

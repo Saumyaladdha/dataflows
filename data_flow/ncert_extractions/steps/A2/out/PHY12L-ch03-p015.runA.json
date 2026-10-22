@@ -1,0 +1,131 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 270, 460, 315],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 330, 1175, 405],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The maximum current that can be drawn from a cell is for R = 0 and it is Imax = e/r. However, in most cells the maximum allowed current is much lower than this to prevent permanent damage to the cell."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "3.11  CELLS IN SERIES AND IN PARALLEL"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Like resistors, cells can be combined together in an electric circuit. And like resistors, one can, for calculating currents and voltages in a circuit, replace a combination of cells by an equivalent cell."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [320, 730, 1040, 860],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "FIGURE 3.13 Two cells of emf’s e1 and e2 in the series. r1, r2 are their internal resistances. For connections across A and C, the combination can be considered as one cell of emf eeq and an internal resistance req."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Consider first  two cells in series (Fig. 3.13), where one terminal of the two cells is joined together leaving the other terminal in either cell free. e1, e2 are the emf’s of the two cells and r1, r2 their internal resistances, respectively."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Let V (A), V (B), V (C) be the potentials at points A, B and C shown in Fig. 3.13. Then V (A) – V (B) is the potential difference between the positive and negative terminals of the first cell. We have already calculated it in Eq. (3.38) and hence,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1310, 1180, 1395],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Similarly,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1455, 1180, 1525],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Hence, the potential difference between the terminals A and C of the combination is"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1600, 1180, 1735],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "If we wish to replace the combination by a single cell between A and C of emf eeq and internal resistance req, we would have"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1810, 1180, 1860],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Comparing the last two equations, we get"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1910, 1180, 1960],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [160, 1955, 1180, 2010],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "In Fig.3.13, we had connected the negative electrode of the first to the positive electrode of the second. If instead we connect the two negatives,"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Current Electricity",
+    "95",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but the page opens with the displayed equation I R = e – I r and the numbered result (3.40), which is mid-derivation carried over from the previous page, so first_block_continues_from_previous is set true. The text layer repeats the side-heading and the figure-caption word FIGURE five times in outline-font layers and out of reading order; each is transcribed once in its true position. Greek letters in prose are copied as the text layer holds them (epsilon extracted as 'e'), e.g. 'Imax = e/r' and 'emf's e1 and e2'. The figure caption (block 7) is kept as its own prose block so its text is not lost under the needs_special figure block; blocks 1-2 and 10, 12, 14, 16, 18, 19 are displayed equations (3.40)-(3.46) left for the special transcriber. Equation (3.46) block includes the leading word 'and' on the same line. A diagonal '(c) NCERT not to be republished' watermark crosses the page; it is not transcribed and is not listed as a header/footer."
+}

@@ -1,0 +1,39 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "full", "x0": 0.118, "x1": 0.820}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "rule_bar", "bbox": [0.025, 0.068, 0.756, 0.108],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435"},
+    {"n": null, "role": "decorative_image", "bbox": [0.764, 0.068, 0.975, 0.156],
+     "column": "full", "size_rel": 1.0, "fill": "#6d561c"},
+    {"n": null, "role": "running_header", "bbox": [0.119, 0.140, 0.267, 0.147],
+     "column": "full", "size_rel": 0.75, "align": "left", "font": "sans",
+     "text_color": "#212121"},
+    {"n": 1, "role": "figure", "bbox": [0.119, 0.168, 0.819, 0.429],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.118, 0.430, 0.672, 0.472],
+     "column": "full", "size_rel": 0.95, "align": "left", "font": "serif",
+     "fill": "#fef2e2"},
+    {"n": 2, "role": "paragraph", "bbox": [0.118, 0.495, 0.677, 0.581],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "figure", "bbox": [0.120, 0.608, 0.710, 0.809],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.118, 0.829, 0.685, 0.852],
+     "column": "full", "size_rel": 0.95, "align": "left", "font": "serif",
+     "fill": "#fef2e2"},
+    {"n": null, "role": "page_number", "bbox": [0.800, 0.745, 0.975, 0.779],
+     "column": "full", "size_rel": 1.4, "align": "left", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "rule_bar", "bbox": [0.800, 0.782, 0.975, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.478, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif"}
+  ],
+  "note": "Single-column body page (recto: green band and running header 'HUMAN REPRODUCTION' at the left, corner ornament and folio badge '45' at the right). One `full` column declared as the printed content envelope x 0.118-0.820; the prose measure itself is narrower (x 0.118-0.677) and the two figures and their captions run wider than the prose, out towards the outer margin. Figure bboxes include the leader labels, which are part of the artwork. The two peach-tinted captions carry n: null; A2's two figure blocks (n=1, n=3) are matched to the two figure IMAGES by position, upper = 1, lower = 3. The bottom-centre '2022-23' edition line is reported as running_header for want of a better allowed role. The diagonal 'not to be republished / (c) NCERT' watermark is a page-wide overlay and is not listed as an element."
+}

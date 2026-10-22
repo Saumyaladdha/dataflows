@@ -1,0 +1,34 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {
+      "n": 3,
+      "corrected_text": "We have so far dealt with charge configurations involving discrete charges q₁, q₂, ..., qₙ. One reason why we restricted to discrete charges is that the mathematical treatment is simpler and does not involve calculus. For many purposes, however, it is impractical to work in terms of discrete charges and we need to work with continuous charge distributions. For example, on the surface of a charged conductor, it is impractical to specify the charge distribution in terms of the locations of the microscopic charged constituents. It is more feasible to consider an area element ∆S (Fig. 1.24) on the surface of the conductor (which is very small on the macroscopic scale but big enough to include a very large number of electrons) and specify the charge ∆Q on that element. We then define a surface charge density σ at the area element by",
+      "fixes": [
+        {"wrong": "q1, q2, ..., qn", "right": "q₁, q₂, ..., qₙ"}
+      ]
+    },
+    {
+      "n": 6,
+      "corrected_text": "We can do this at different points on the conductor and thus arrive at a continuous function σ, called the surface charge density. The surface charge density σ  so defined ignores the quantisation of charge and the discontinuity in charge distribution at the microscopic level*. σ  represents macroscopic surface charge density, which in a sense, is a smoothed out average of the microscopic charge density over an area element ∆S which, as said before, is large microscopically but small macroscopically. The units for σ are C/m².",
+      "fixes": [
+        {"wrong": "C/m2", "right": "C/m²"}
+      ]
+    },
+    {"n": 7, "no_change": true},
+    {
+      "n": 9,
+      "no_change": true
+    },
+    {
+      "n": 11,
+      "corrected_text": "where ∆Q is the charge included in the macroscopically small volume element ∆V that includes a large number of microscopic charged constituents. The units for ρ are C/m³.",
+      "fixes": [
+        {"wrong": "C/m3", "right": "C/m³"}
+      ]
+    },
+    {"n": 12, "no_change": true},
+    {"n": 13, "no_change": true}
+  ],
+  "note": "n=3 had flattened subscripts on a list of charge labels (q1, q2, ..., qn -> q₁, q₂, ..., qₙ), matching how they're typeset in the image. n=6 and n=11 had flattened unit exponents (C/m2 -> C/m², C/m3 -> C/m³). n=1, 7, 9, 12, 13 already match the image exactly."
+}

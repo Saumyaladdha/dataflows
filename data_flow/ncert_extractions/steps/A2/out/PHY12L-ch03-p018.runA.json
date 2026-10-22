@@ -1,0 +1,73 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        200,
+        265,
+        795,
+        670
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "FIGURE 3.15 At junction a the current leaving is I1 + I2 and current entering is I3. The junction rule says I3 = I1 + I2. At point h current entering is I1. There is only one current leaving h and by junction rule that will also be I1. For the loops ‘ahdcba’ and ‘ahdefga’, the loop rules give –30I1 – 41 I3 + 45 = 0 and –30I1 + 21 I2 – 80 = 0."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "This applies equally well if instead of a junction of several lines, we consider a point in a line.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The proof of this rule follows from the fact that when currents are steady, there is no accumulation of charges at any junction or at any point in a line. Thus, the total current flowing in, (which is the rate at which charge flows into the junction), must equal the total current flowing out."
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "(b) Loop rule: The algebraic sum of changes in potential around any closed loop involving resistors and cells in the loop is zero (Fig. 3.15)."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "This rule is also obvious, since electric potential is dependent on the location of the point. Thus starting with any point if we come back to the same point, the total change must be zero. In a closed loop, we do come back to the starting point and hence the rule."
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Example 3.5 A battery of 10 V and negligible internal resistance is connected across the diagonally opposite corners of a cubical network consisting of 12 resistors each of resistance 1 W (Fig. 3.16). Determine the equivalent resistance of the network and the current along each edge of the cube."
+    },
+    {
+      "n": 8,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        560,
+        1185,
+        1510,
+        1950
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "FIGURE 3.16"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "98",
+    "Reprint 2026-27",
+    "EXAMPLE 3.5"
+  ],
+  "note": "Two-column page at top: left column holds Figure 3.15 and its caption, right column holds the running prose; listed left column first. previous_page_last_block was null, so continuation was judged from the page itself: the first text on the page begins a complete new sentence, so first_block_continues_from_previous is false (the prose is nevertheless a thematic continuation of the junction-rule discussion). last_block_continues_on_next is true because the Example 3.5 box is only the question statement; its solution runs onto the next page. 'EXAMPLE 3.5' is the vertical marginal tab printed on the box's side rule, recorded as a removed marginal label rather than as content. In block 7 the text layer renders the ohm sign as 'W' ('resistance 1 W'); characters copied as the layer holds them per the inline-mathematics rule. Figure 3.16 contains the stray bold node label 'z' that appears in the text layer; it falls inside the figure bbox and was left to the special transcriber."
+}

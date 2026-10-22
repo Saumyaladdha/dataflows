@@ -1,0 +1,122 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        223,
+        283,
+        725,
+        545
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        795,
+        310,
+        1130,
+        380
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Since each area element of the sphere is at the same distance r from the charge,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        795,
+        475,
+        1180,
+        550
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Now S, the total area of the sphere, equals 4πr². Thus,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        795,
+        610,
+        1550,
+        690
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Equation (1.30) is a simple illustration of a general result of electrostatics called Gauss’s law."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "We state Gauss’s law without proof:"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Electric flux through a closed surface S\n= q/ε₀\n(1.31)\nq = total charge enclosed by S."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The law implies that the total electric flux through a closed surface is zero if no charge is enclosed by the surface. We can see that explicitly in the simple situation of Fig. 1.26."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Here the electric field is uniform and we are considering a closed cylindrical surface, with its axis parallel to the uniform field E. The total flux φ  through the surface is  φ = φ₁ + φ₂ + φ₃, where φ₁ and φ₂ represent the flux through the surfaces 1 and 2 (of circular cross-section) of the cylinder and φ₃ is the flux through the curved cylindrical part of the closed surface. Now the normal to the surface 3 at every point is perpendicular to E, so by definition of flux, φ₃ = 0. Further, the outward normal to 2 is along E while the outward normal to 1 is opposite to E. Therefore,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        570,
+        1355,
+        950,
+        1440
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "where S is the area of circular cross-section. Thus, the total flux is zero, as expected by Gauss’s law. Thus, whenever you find that the net electric flux through a closed surface is zero, we conclude that the total charge contained in the closed surface is zero."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The great significance of Gauss’s law Eq. (1.31), is that it is true in general, and not only for the simple cases we have considered above. Let us note some important points regarding this law:"
+    },
+    {
+      "n": 15,
+      "kind": "list",
+      "text": "(i) Gauss’s law is true for any closed surface, no matter what its shape or size.\n(ii) The term q on the right side of Gauss’s law, Eq. (1.31), includes the sum of all charges enclosed by the surface. The charges may be located anywhere inside the surface.\n(iii) In the situation when the surface is so chosen that there are some charges inside and some outside, the electric field [whose flux appears on the left side of Eq. (1.31)] is due to all the charges, both inside and outside S. The term q on the right side of Gauss’s law, however, represents only the total charge inside S."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "34",
+    "2022-23"
+  ],
+  "note": "Two equation numbers are printed on this page, both standing alone at the right-hand margin: (1.30) beside the display equation that is deferred as block n=6 (its bbox includes the margin number), and (1.31) beside the statement of Gauss's law. Because an equation block must carry empty text, (1.31) is not inside a deferred block: the law statement is printed as left-aligned italic prose lines, not centred display maths, so it is transcribed as paragraph block n=9 with the number copied exactly as printed, (1.31), on its own line as the text layer also has it. Superscripts and subscripts (4πr², ε₀, φ₁, φ₂, φ₃) were read from the image; the text layer flattens them. The margin figure (cylinder diagram plus its FIGURE 1.26 caption) is block n=1 because it is the left column at the top of the page; the display equation in block n=2 completes the sentence that ended the previous page with a colon, but the page's own first block is the figure and no text starts mid-sentence, so first_block_continues_from_previous is false. last_block_continues_on_next is true because the enumerated list of points about Gauss's law runs to the bottom margin at item (iii) with no closing text, i.e. the page ends mid-list, even though item (iii) itself ends with a complete sentence."
+}

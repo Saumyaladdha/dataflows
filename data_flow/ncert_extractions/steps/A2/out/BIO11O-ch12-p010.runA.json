@@ -1,0 +1,59 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        164,
+        278,
+        1526,
+        965
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The reaction is as follows:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        164,
+        1059,
+        1150,
+        1110
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The enzyme nitrogenase is highly sensitive to the molecular oxygen; it\nrequires anaerobic conditions. The nodules have adaptations that ensure\nthat the enzyme is protected from oxygen. To protect these enzymes, the\nnodule contains an oxygen scavenger called leg-haemoglobin. It is interesting\nto note that these microbes live as aerobes under free-living conditions (where\nnitrogenase is not operational), but during nitrogen-fixing events, they become\nanaerobic (thus protecting the nitrogenase enzyme). You must have noticed\nin the above reaction that the ammonia synthesis by nitrogenease requires a"
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        164,
+        1401,
+        1526,
+        1951
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "MINERAL NUTRITION",
+    "203",
+    "2022-23"
+  ],
+  "note": "Used the text layer for prose (matches the image); image used for layout and bounding boxes. Mostly a figure page. Block 1 is Figure 12.4 (four-part root-nodule development diagram) with its caption and all its internal labels ('Soil particles', 'Root hair', 'Bacteria', 'Hook', 'Inner cortex and pericycle cells under division', 'Infection thread containing bacteria', 'Mature nodule', '(a)') inside the bbox for the transcriber; block 3 is the boxed nitrogen-fixation equation; block 5 is Figure 12.5 with its caption and internal labels ('Substrate [nitrogen gas (N2)]', 'Enzyme (nitrogenase)', 'Binding of substrate', 'Reduction', '+2 H', 'Product [ammonia (NH3)]', 'Release of products', 'Free nitrogenase can bind another molecule of N2'). All three are needs_special, so their text is left empty per spec. Both figure captions and the equation render garbled or label-scrambled in the text layer. previous_page_last_block was null, but page 9 was read in this run: it ends with a complete sentence ('...the first stable product of nitrogen fixation.') and this page opens with Figure 12.4 and a new sentence, so first_block_continues_from_previous is false - judged from a predecessor actually read. last_block_continues_on_next is set true for the page's running prose: paragraph n=4 ends mid-sentence at '...requires a' and continues on page 11; the last block in reading order is the floated Figure 12.5, which is itself complete."
+}

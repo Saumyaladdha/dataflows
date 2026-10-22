@@ -1,0 +1,16 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {
+      "kind": "formatting",
+      "what": "Chemical subscripts are lost in the running text: the book sets RNH2, ArNH2, R-NH2, CH3NH2, H2N-CH2-CH2-NH2 and CH3 NHCH2CH3 with lowered subscript digits; the render prints the digits on the baseline (RNH2, CH3NH2, H2N-CH2-CH2-NH2), so the formulas read as ordinary text. The pink classification scheme keeps its subscripts correctly, so the loss is confined to body text.",
+      "where": "section 9.2 and throughout section 9.3"
+    },
+    {
+      "kind": "formatting",
+      "what": "The render draws a thin rectangular frame around Fig. 9.1 and a second frame around the NH3 -> RNH2 -> secondary -> tertiary classification scheme; the book prints both without any border.",
+      "where": "the Fig. 9.1 orbital diagram and the classification scheme under 9.2"
+    }
+  ],
+  "note": "Compared the opening sentence, Fig. 9.1 with all four labels (unshared electron pair, three CH3 and the 108 degree arc) and its caption, the whole of 9.2 Classification, the pink NH3/RNH2/Secondary/Tertiary scheme with its Primary(1), Secondary(2), Tertiary(3) captions, the whole of 9.3 Nomenclature ending at 'CH3 NHCH2CH3 is', and the 'Chemistry 260' folio. Nothing is missing and the magenta colour coding in the scheme is preserved. The lower third of the render is blank, but that is only because the reflowed text is more compact -- the page ends on the same sentence as the book, so no content is absent there."
+}

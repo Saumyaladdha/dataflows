@@ -1,0 +1,49 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [242, 287, 1518, 1365],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "14.7\nRESPIRATORY QUOTIENT"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Let us now look at another aspect of respiration. As you know, during\naerobic respiration, O2 is consumed and CO2 is released. The ratio of the\nvolume of CO2 evolved to the volume of O2 consumed in respiration is\ncalled the respiratory quotient (RQ) or respiratory ratio.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [780, 1628, 1290, 1720],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The respiratory quotient depends upon the type of respiratory\nsubstrate used during respiration.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "When carbohydrates are used as substrate and are completely\noxidised, the RQ will be 1, because equal amounts of CO2 and O2 are\nevolved and consumed, respectively, as shown in the equation below :",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "236",
+    "BIOLOGY",
+    "2022-23"
+  ],
+  "note": "Figure 14.6 fills the top of the page (block 1, needs_special, bbox covers the flow chart and its two-line 'Figure 14.6 Interrelationship among metabolic pathways...' caption and in-figure labels), then section 14.7. Block 4 is the boxed RQ ratio, needs_special: its text layer is scrambled ('RQ / volumeof CO evolved / volumeof O consumed / = / 2 / 2'). Page 10 ended cleanly at 'rather than as a catabolic one.' and this page opens a new section, so nothing continues in; judged from the page I just read. The last paragraph ends with a complete sentence ('as shown in the equation below :'), so last_block_continues_on_next is false, although the equation that sentence introduces is printed at the top of page 12. Used the text layer for prose, the image for layout and bboxes."
+}

@@ -1,0 +1,104 @@
+{
+  "chapter": "BIO11-CH01",
+  "subtopics": [
+    {
+      "n": 1,
+      "name": "Diversity of living organisms and the need for classification",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH01-P17",
+        "BIO11L-CH01-P14",
+        "BIO11L-CH01-P36",
+        "BIO11L-CH01-P15",
+        "BIO11L-CH01-P37"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "Local names and the need for standardised nomenclature",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH01-P18",
+        "BIO11L-CH01-P19"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "Binomial nomenclature and its rules of writing scientific names",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH01-P20",
+        "BIO11L-CH01-P21"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Classification, taxa and the processes basic to taxonomy",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH01-P22",
+        "BIO11L-CH01-P23",
+        "BIO11L-CH01-P24"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Early classification efforts and systematics",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH01-P25",
+        "BIO11L-CH01-P26",
+        "BIO11L-CH01-P16"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Family, order and class as taxonomic categories",
+      "from_heading": "1.2.3 Family / 1.2.4 Order / 1.2.5 Class",
+      "passages": [
+        "BIO11L-CH01-P27",
+        "BIO11L-CH01-P28",
+        "BIO11L-CH01-P29"
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Phylum, division and kingdom as the highest taxonomic categories",
+      "from_heading": "1.2.6 Phylum / 1.2.7 Kingdom",
+      "passages": [
+        "BIO11L-CH01-P30",
+        "BIO11L-CH01-P10",
+        "BIO11L-CH01-P32"
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Ascending order of the taxonomic hierarchy and its sub-categories",
+      "from_heading": "1.2 TAXONOMIC CATEGORIES",
+      "passages": [
+        "BIO11L-CH01-P31",
+        "BIO11L-CH01-P11",
+        "BIO11L-CH01-P33"
+      ]
+    },
+    {
+      "n": 9,
+      "name": "Change in number of shared characters on moving up the hierarchy",
+      "from_heading": "1.2 TAXONOMIC CATEGORIES",
+      "passages": [
+        "BIO11L-CH01-P12",
+        "BIO11L-CH01-P34"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Taxonomic categories of common organisms (housefly, man, mango, wheat)",
+      "from_heading": "1.2 TAXONOMIC CATEGORIES",
+      "passages": [
+        "BIO11L-CH01-P13",
+        "BIO11L-CH01-P35"
+      ]
+    }
+  ],
+  "note": "Input looks partly broken but was usable: chapter_title is \"SUMMARY\" rather than a chapter name; passage ids start at P10 (P01-P09 absent); and six passages are exact duplicates of six others (P10=P32, P11=P33, P12=P34, P13=P35, P14=P36, P15=P37) - each duplicate pair is kept together in one subtopic. The headings list covers only 1.2 and its sub-headings, while passages P16-P26 are clearly pre-1.2 chapter-opening text (diversity, nomenclature, taxonomy, systematics); from_heading is \"unsure\" for those five subtopics because no heading for them appears in the input. No passage corresponds to headings 1.2.1 Species or 1.2.2 Genus, so no subtopic was written for them. The chapter-wide SUMMARY (P14/P36) and EXERCISES (P15/P37) passages were attached to subtopic 1, the broadest idea they open with."
+}

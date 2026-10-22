@@ -1,0 +1,23 @@
+{
+  "group": "v2__physics__statements.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q162",
+      "question_type": "statement_i_ii",
+      "format": "pick_cause_or_effect",
+      "content_shape": "formula_or_law",
+      "concept": "Series R-C circuit with a dielectric: mica raises $C$, so $X_C=\\frac{1}{\\omega C}$ falls, the capacitor's share of the voltage drops and the current rises",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "traps": [
+        {"label": "condition_ignored", "option": "1", "route": "Treats the capacitor's voltage as fixed by the source, so the filling makes no difference. Mica raises $C$, and $V_C=\\frac{V}{\\sqrt{(R C\\omega)^2+1}}$ falls with it."},
+        {"label": "sign_reversed_magnitude_right", "option": "2", "route": "Has the inequality the wrong way round. The mica-filled capacitor holds the smaller voltage, so $V_a>V_b$."},
+        {"label": "sign_reversed_magnitude_right", "option": "4", "route": "Switches to the current but reverses it. Mica lowers the impedance, so the current is larger with mica, $i_b>i_a$."}
+      ],
+      "reason": "This question requires one relation to be applied to a stated change, demonstrated by the stem \"Consider two situations\" with an air-filled and then a mica-filled capacitor, and options that set one situation's voltage against the other's.",
+      "note": "The two situations are printed as \"i.\" and \"ii.\" while the options are written with subscripts a and b, so the correspondence has to be taken from the order: i is air, which is a, and ii is mica, which is b. Checked against the booklet, which prints the same mismatch, so this is the source's and not an extraction loss; the printed solution confirms option 3. No damage verdict is recorded, since nothing is missing and the order fixes the reading, but the labels should be made to agree. The record's figure flag points at the circuit drawn under the printed solution; the stem describes the circuit in words, so no secondary type is recorded."
+    }
+  ],
+  "group_note": "This packet holds one question, so there is no second member to judge it against; what the group note can record is how it was kept consistent with the rest of the run. Its printed shape is two labelled statements above four options, which is statement_i_ii, but the options are not the four Statement I and II verdicts - they are rival outcomes of the change from air to mica - so the format is pick_cause_or_effect rather than judge_two_statements, following the section 2 tie-break that a quantity moving up or down as a consequence of a stated change is a cause-or-effect answer. Structure is multi_step_dependent on the rule used across this run, since the voltage conclusion consumes the capacitance and reactance results in order. Both reversed inequalities, options 2 and 4, carry the same label with the quantity named in each route, as elsewhere in the run where one device appears on more than one option."
+}

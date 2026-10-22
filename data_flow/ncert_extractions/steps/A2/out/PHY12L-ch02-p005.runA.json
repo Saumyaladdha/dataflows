@@ -1,0 +1,54 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Equation (2.8) is true for any sign of the charge Q, though we considered Q > 0 in its derivation. For Q < 0, V < 0, i.e., work done (by the external force) per unit positive test charge in bringing it from infinity to the point is negative. This is equivalent to saying that work done by the electrostatic force in bringing the unit positive charge form infinity to the point P is positive. [This is as it should be, since for Q < 0, the force on a unit positive test charge is attractive, so that the electrostatic force and the displacement (from infinity to P) are in the same direction.] Finally, we note that Eq. (2.8) is consistent with the choice that potential at infinity be zero.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [675, 279, 1496, 907],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Figure (2.4) shows how the electrostatic potential (∝ 1/r) and the electrostatic field (∝ 1/r²) varies with r."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Example 2.1\n(a) Calculate the potential at a point P due to a charge of 4 × 10⁻⁷C located 9 cm away.\n(b) Hence obtain the work done in bringing a charge of 2 × 10⁻⁹ C from infinity to the point P. Does the answer depend on the path along which the charge is brought?\nSolution"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [211, 1345, 1156, 1555],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "No, work done will be path independent. Any arbitrary infinitesimal path can be resolved into two perpendicular displacements: One along r and another perpendicular to r. The work done corresponding to the later will be zero.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "2.4  POTENTIAL DUE TO AN ELECTRIC DIPOLE"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "As we learnt in the last chapter, an electric dipole consists of two charges q and  –q separated by a (small) distance 2a. Its total charge is zero. It is characterised by a dipole moment vector p whose magnitude is q × 2a and which points in the direction from –q to q (Fig. 2.5). We also saw that the electric field of a dipole at a point with position vector r depends not just on the magnitude r, but also on the angle between r and p. Further,"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "49", "Reprint 2026-27", "EXAMPLE 2.1 (vertical side tab in right margin)"],
+  "note": "previous_page_last_block was null even though this is page 5, so the opening block was judged from the page itself: it is indented and begins a complete sentence (\"Equation (2.8) is true for any sign of the charge Q...\"), so it is treated as not continuing mid-sentence. The shaded Example 2.1 box is split across blocks 4-6 because its Solution contains display equations: the display math (the two-line (a) V = ... = 4 × 10⁴ V and (b) W = qV = ... = 8 × 10⁻⁵ J) is marked needs_special as block 5 rather than transcribed, per the rule for equations, and block 6 is the same box's prose continuing after it. Per the source note, the outline-font side heading 2.4 is 5x duplicated and scrambled in the text layer; it is transcribed once here in its reading-order position from the image. Sub/superscripts (10⁻⁷, 10⁻⁹, 1/r²) and the ∝ symbol are flattened or dropped in the text layer and were taken from the page image. The original typo \"form infinity to the point P\" (for \"from\") in block 1 is kept as printed."
+}

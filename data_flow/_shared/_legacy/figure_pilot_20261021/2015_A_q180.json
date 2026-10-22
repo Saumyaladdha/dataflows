@@ -1,0 +1,204 @@
+{
+ "title": "Blue, green and red rays striking the face of a right-angled prism at 45 degrees",
+ "width": 320,
+ "height": 190,
+ "pad": 18,
+ "draw": [
+  {
+   "kind": "polygon",
+   "points": [
+    [
+     140,
+     170
+    ],
+    [
+     140,
+     20
+    ],
+    [
+     290,
+     20
+    ]
+   ],
+   "width": 2.0
+  },
+  {
+   "kind": "label",
+   "text": "A",
+   "at": [
+    140,
+    182
+   ],
+   "italic": true
+  },
+  {
+   "kind": "right_angle",
+   "vertex": [
+    140,
+    20
+   ],
+   "size": 11,
+   "towards": [
+    1,
+    1
+   ]
+  },
+  {
+   "kind": "angle",
+   "vertex": [
+    290,
+    20
+   ],
+   "r": 36,
+   "from_deg": 180,
+   "to_deg": 136,
+   "colour": "muted"
+  },
+  {
+   "kind": "label",
+   "text": "45°",
+   "at": [
+    244,
+    44
+   ],
+   "size": 13,
+   "colour": "muted"
+  },
+  {
+   "kind": "line",
+   "from": [
+    56,
+    136
+   ],
+   "to": [
+    136,
+    136
+   ],
+   "colour": "blue",
+   "arrow": "end",
+   "width": 2.1
+  },
+  {
+   "kind": "line",
+   "from": [
+    56,
+    104
+   ],
+   "to": [
+    136,
+    104
+   ],
+   "colour": "green",
+   "arrow": "end",
+   "width": 2.1
+  },
+  {
+   "kind": "line",
+   "from": [
+    56,
+    72
+   ],
+   "to": [
+    136,
+    72
+   ],
+   "colour": "red",
+   "arrow": "end",
+   "width": 2.1
+  },
+  {
+   "kind": "label",
+   "text": "Blue",
+   "at": [
+    50,
+    136
+   ],
+   "anchor": "end",
+   "size": 14,
+   "colour": "blue"
+  },
+  {
+   "kind": "label",
+   "text": "Green",
+   "at": [
+    50,
+    104
+   ],
+   "anchor": "end",
+   "size": 14,
+   "colour": "green"
+  },
+  {
+   "kind": "label",
+   "text": "Red",
+   "at": [
+    50,
+    72
+   ],
+   "anchor": "end",
+   "size": 14,
+   "colour": "red"
+  },
+  {
+   "kind": "right_angle",
+   "vertex": [
+    140,
+    136
+   ],
+   "size": 10,
+   "towards": [
+    1,
+    -1
+   ]
+  }
+ ],
+ "angles_claimed": [
+  {
+   "degrees": 45,
+   "vertex": [
+    290,
+    20
+   ],
+   "ray_to": [
+    140,
+    170
+   ],
+   "measured_from": [
+    140,
+    20
+   ]
+  },
+  {
+   "degrees": 90,
+   "vertex": [
+    140,
+    20
+   ],
+   "ray_to": [
+    140,
+    170
+   ],
+   "measured_from": [
+    290,
+    20
+   ]
+  },
+  {
+   "degrees": 90,
+   "vertex": [
+    140,
+    136
+   ],
+   "ray_to": [
+    140,
+    170
+   ],
+   "measured_from": [
+    56,
+    136
+   ]
+  }
+ ],
+ "figure_id": "2015_A_q180",
+ "note": "The three rays are LABELLED Blue, Green and Red in the original and drawn in identical black ink, because a photocopy has no colour -- on a question about which colour emerges, the one thing that matters is the one thing the scan cannot show. The redraw colours them."
+}

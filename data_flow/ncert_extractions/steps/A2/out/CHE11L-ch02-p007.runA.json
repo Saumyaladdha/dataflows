@@ -1,0 +1,87 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "a cricket ball represents a nucleus, then the radius of atom would be about 5 km.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "On the basis of above observations and conclusions, Rutherford proposed the nuclear model of atom. According to this model:"
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "(i) The positive charge and most of the mass of the atom was densely concentrated in extremely small region. This very small portion of the atom was called nucleus by Rutherford.\n(ii) The nucleus is surrounded by electrons that move around the nucleus with a very high speed in circular paths called orbits. Thus, Rutherford’s model of atom resembles the solar system in which the nucleus plays the role of sun and the electrons that of revolving planets.\n(iii) Electrons and the nucleus are held together by electrostatic forces of attraction."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "2.2.3 Atomic Number and Mass Number"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The presence of positive charge on the nucleus is due to the protons in the nucleus. As established earlier, the charge on the proton is equal but opposite to that of electron. The number of protons present in the nucleus is equal to atomic number (Z ). For example, the number of protons in the hydrogen nucleus is 1, in sodium atom it is 11, therefore their atomic numbers are 1 and 11 respectively. In order to keep the electrical neutrality, the number of electrons in an atom is equal to the number of protons (atomic number, Z ). For example, number of electrons in hydrogen atom and sodium atom are 1 and 11 respectively."
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        218,
+        1630,
+        861,
+        1760
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "While the positive charge of the nucleus is due to protons, the mass of the nucleus, due to protons and neutrons. As discussed earlier protons and neutrons present in the nucleus are collectively known as nucleons. The total number of nucleons is termed as mass number (A) of the atom."
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        899,
+        332,
+        1543,
+        452
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "2.2.4 Isobars and Isotopes"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The composition of any atom can be represented by using the normal element symbol (X) with super-script on the left hand side as the atomic mass number (A) and subscript (Z) on the left hand side as the atomic number (i.e., A Z X)."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Isobars are the atoms with same mass number but different atomic number for example, 6 14C and 7 14N. On the other hand, atoms with identical atomic number but different atomic mass number are known as Isotopes. In other words (according to equation 2.4), it is evident that difference between the isotopes is due to the presence of different number of neutrons present in the nucleus. For example, considering of hydrogen atom again, 99.985% of hydrogen atoms contain only one proton. This isotope is called protium (1 1H). Rest of the percentage of hydrogen atom contains two other isotopes, the one containing 1 proton and 1 neutron is called deuterium (1 2D, 0.015%) and the other one possessing 1 proton and 2 neutrons is called tritium (1 3T ). The latter isotope is found in trace amounts on the earth. Other examples of commonly occuring isotopes are: carbon atoms containing 6, 7 and 8 neutrons besides 6 protons ( 6 12 6 13 6 14 C, C, C ); chlorine atoms containing 18 and 20 neutrons besides 17 protons ( 17 35 17 37 Cl, Cl )."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Lastly an important point to mention regarding isotopes is that chemical properties of atoms are controlled by the number of electrons, which are determined by the number of protons in the nucleus. Number of neutrons present in the nucleus have very little effect on the chemical properties of an element. Therefore, all the isotopes of a given element show same chemical behaviour."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "STRUCTURE OF ATOM",
+    "35",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the p006 output I wrote in this run, whose last block was the list of Rutherford's conclusions, breaking off at '...by realising that if'. This page opens 'a cricket ball represents a nucleus, then the radius of atom would be about 5 km.', the tail of that same list item (iii), so block n=1 is kept as kind 'list' with continues_from_previous true. Blocks n=6 (equation 2.3, the definition of atomic number Z) and n=8 (equation 2.4, mass number A = protons + neutrons) are displayed, multi-line expressions with their equation numbers, so they are left for the special transcriber. Block n=7 is one paragraph that runs from the foot of the left column into the top of the right column, so it is kept whole. Inline isotope symbols are written in the text layer's own flattened order (subscript then superscript then element, e.g. '6 14C and 7 14N', 'protium (1 1H)', '( 6 12 6 13 6 14 C, C, C )', '( 17 35 17 37 Cl, Cl )') rather than the stacked super/subscript form printed on the page. The page ends with a complete sentence, so nothing continues onto the next page."
+}

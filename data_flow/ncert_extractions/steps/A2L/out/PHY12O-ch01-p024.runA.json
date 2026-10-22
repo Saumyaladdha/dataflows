@@ -1,0 +1,47 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 21.0,
+    "columns": [
+      {"id": "left", "x0": 0.122, "x1": 0.392},
+      {"id": "right", "x0": 0.410, "x1": 0.905}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.064],
+     "column": "full", "size_rel": 1.0, "fill": "#cce9f8"},
+    {"n": null, "role": "running_header", "bbox": [0.128, 0.0, 0.453, 0.1225],
+     "column": "full", "size_rel": 1.6, "font": "sans-light",
+     "fill": "#c9c9c9", "text_color": "#262626"},
+    {"n": 1, "role": "figure", "bbox": [0.122, 0.1325, 0.392, 0.325],
+     "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.136, 0.340, 0.382, 0.395],
+     "column": "left", "size_rel": 0.9, "align": "center", "font": "sans",
+     "text_color": "#29abe2"},
+    {"n": 2, "role": "paragraph", "bbox": [0.410, 0.136, 0.905, 0.163],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.410, 0.170, 0.905, 0.307],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "paragraph", "bbox": [0.311, 0.314, 0.905, 0.485],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "paragraph", "bbox": [0.311, 0.4975, 0.905, 0.731],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 8, "role": "paragraph", "bbox": [0.311, 0.740, 0.905, 0.829],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 9, "role": "paragraph", "bbox": [0.311, 0.838, 0.905, 0.870],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "footer_rule", "bbox": [0.311, 0.880, 0.512, 0.8825],
+     "column": "full", "size_rel": 1.0, "fill": "#000000"},
+    {"n": 10, "role": "paragraph", "bbox": [0.311, 0.894, 0.905, 0.941],
+     "column": "full", "size_rel": 0.85, "align": "justify", "font": "serif"},
+    {"n": null, "role": "page_number", "bbox": [0.127, 0.911, 0.188, 0.939],
+     "column": "left", "size_rel": 1.1, "align": "center", "font": "sans",
+     "fill": "#cce9f8", "text_color": "#262626"},
+    {"n": null, "role": "running_header", "bbox": [0.471, 0.966, 0.525, 0.9775],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans"},
+    {"n": null, "role": "decorative_image", "bbox": [0.086, 0.350, 0.762, 0.810],
+     "column": "full", "size_rel": 1.0}
+  ],
+  "note": "Ordinary body page with a two-column upper zone: the Fig. 1.16 diagram and its blue sans caption occupy a narrow LEFT column (x 0.122-0.392, y 0.13-0.40) with the opening prose (blocks 2-3) set beside it in the narrower RIGHT column (x 0.410-0.905). Below the caption the measure widens: block 4 begins in the right column and its last six lines run the full text measure, so it is marked 'full' with a bbox covering both; every element after it is full-measure. The full-measure text block is x 0.311-0.905 (left of the right column's x0 but inside the left column's horizontal span), so 'full' here means the wide single measure, not edge-to-edge paper; only page_header_band spans the whole sheet. Blocks 6 (equation) and 7 are NOT in elements: the printed page shows one continuous justified paragraph from 'To understand the dependence...' to '...has a 1/r2 dependence.' (reported once as n=5) and A2 split it at inline-math boundaries - block 6's equation is inline, not a display line, and block 7 is that paragraph's closing sentence starting mid-line; neither has a printed region of its own, and guessing one would place text in the wrong spot. body_text_size_px measured on the right-column prose of block 3 (line pitch ~31 px at this render). The grey 'Physics' plate at top-left is reported as the running_header element including its grey fill; the two thin blue rules under the light-blue top strip are included in page_header_band's extent. The final decorative_image is the diagonal '(c) NCERT not to be republished' watermark across the page centre - furniture, droppable. The centred '2022-23' at the page foot is given the running_header role as the closest allowed value; there is no page_footer role."
+}

@@ -1,0 +1,182 @@
+{
+  "group": "v2__biology__plain.part5",
+  "ratings": [
+    {
+      "question_id": "2015_A#q071",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Endemic species: one whose whole range is a single region",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Picks the term for small numbers. Being restricted to one place is about range, not how many individuals there are."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Picks the term for a species the whole community depends on. That says nothing about where it lives."
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "3",
+          "route": "Reverses the direction of travel. An alien species came from somewhere else; an endemic one is found nowhere else."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires holding four neighbouring ecological terms apart, demonstrated by the stem's \"confined to a particular region and not found elsewhere\" matching option 4 while options 1, 2 and 3 are the definitions of the other three terms.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q072",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "definition_term",
+      "concept": "Metagenesis: alternation of an asexual polyp generation with a sexual medusa generation",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Gives the definition of polymorphism. Having several body forms at once is not the same as alternating two generations."
+        },
+        {
+          "label": "look_alike_term",
+          "option": "4",
+          "route": "Defines metamorphosis, whose name differs from metagenesis by three letters. That is a change of form within one animal's life, not an alternation of generations."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires separating one term from its neighbours, demonstrated by option 4 \"a drastic change in form during post-embryonic development\" being the definition of metamorphosis offered against option 3.",
+      "note": "No tag on option 1. It bundles segmentation with parthenogenesis, two real features of other groups, but neither is a near-definition of metagenesis and I could not name the mis-step that lands on the pair, so it is left untagged."
+    },
+    {
+      "question_id": "2015_A#q073",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Succus entericus enzymes: nucleases come with pancreatic juice, nucleosidases with intestinal juice",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Answers \"which is present\". Lipase is on the succus entericus list."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "Answers \"which is present\". Maltase is on the succus entericus list."
+        },
+        {
+          "label": "look_alike_term",
+          "option": "4",
+          "route": "Reads nucleosidase as the same word as nuclease. Nucleosidases are in intestinal juice; the nucleases arrive with pancreatic juice."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored list checked against a negated task, demonstrated by the stem's \"is not present in succus entericus\" and option 4 \"Nucleosidase\" sitting one syllable away from the key.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q074",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "process",
+      "concept": "Eutrophication: decaying algal blooms raise the oxygen demand and the water runs out of dissolved oxygen",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "false_explanatory_link",
+          "option": "3",
+          "route": "A surface bloom really does cut the light below it. Fish die of suffocation, not of darkness."
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "Reverses the cause. Eutrophication is a flood of nutrients, not a shortage of them."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires choosing which consequence of a named process kills the fish, demonstrated by the stem's \"mainly due to non-availability of\" and option 1 \"Oxygen\".",
+      "note": "No tag on option 2. Food shortage is not a step the source puts in the eutrophication chain and no mis-step I tried reaches it, so it is left untagged. false_explanatory_link is used here on a \"due to\" stem rather than an Assertion-Reason item; the device is the one the label defines, a true topical fact offered as the cause."
+    },
+    {
+      "question_id": "2015_A#q075",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "structure_function",
+      "concept": "Cell junctions: gap junctions link the cytoplasm of adjacent cells so ions and small molecules can pass",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Gives the job of a tight junction. Sealing a sheet against leaks is a different junction's work."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Gives the job of an adhering junction. Cementing neighbours together is a different junction's work."
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "Turns connecting into separating. A gap junction opens a channel between two cells rather than keeping them apart."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires separating three named junction types by what each does, demonstrated by option 1 \"Stop substance from leaking across a tissue\" being the tight junction's role offered against option 3.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q078",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Tools of recombinant DNA technology: restriction endonucleases cut DNA at specific recognition sequences",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "Swaps cutting for joining. A ligase seals two DNA ends together."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "Names the tool that finds a sequence rather than the one that cuts it. A probe hybridises to DNA, it does not break it."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Names the tool that picks out transformed cells. A selectable marker reports success, it does nothing to the DNA."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored tool-to-job association, demonstrated by the stem's \"cutting of DNA at specific locations\" and option 2 \"Restriction enzymes\" against three other tools of the same toolkit.",
+      "note": ""
+    }
+  ],
+  "group_note": "All six are plain_mcq and all six are single_step: each stem asks one question with four short answers, no lettered block, no list and no scheme, and no answer needs a result carried from one step to the next. The reader's grouping on structure=plain holds for every member. The demand axis splits three ways and the split is stated by what the wrong options are made of. q071, q072 and q075 carry concept_discrimination, because in each the three wrong options are the definitions of neighbouring terms (rare, keystone and alien; polymorphism and metamorphosis; tight and adhering junctions), so the decision is between concepts. q073 and q078 carry recall, because one stored list or one tool-to-job pairing settles them. q074 alone carries explanatory_reasoning, because the stem grants that fish die and asks which consequence of the process does it. E2 was set from the options alone: bare terms in q071, q073 and q078 (name_or_identify), whole claims in q072 and q075 (pick_correct_statement), and rival causes of a granted fact in q074 (pick_cause_or_effect) on the strength of its \"mainly due to\". Two devices recur and are labelled the same way each time: a fact about another member of the same family (other_one_fact, five options across four questions) and a relationship stated backwards (semantic_reversal, used for alien in q071, nutrient shortage in q074, separating in q075 and joining in q078). q073 is the only negated task in the packet and is therefore the only one carrying true_statement_trap. Two options were left untagged (q072 option 1, q074 option 2) with the reason in each question's note, rather than reaching for a label that no printed mis-step supports. No trap sits on an official answer, and no option carries two traps."
+}

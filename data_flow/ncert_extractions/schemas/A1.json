@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A1.json",
+  "title": "A1 agent output (a1-book-registrar)",
+  "description": "Section 9/A1 'Agent output' line and the a1-book-registrar agent file (Appendix B), including its worked examples.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "subject", "class", "language", "part", "edition_seen",
+        "reprint_text_exact", "reprint_page", "is_lab_manual", "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "subject": { "type": "string", "enum": ["Physics", "Chemistry", "Biology"] },
+        "class": { "type": "integer", "enum": [11, 12] },
+        "language": { "type": "string", "enum": ["English", "Hindi", "other"] },
+        "part": {
+          "enum": [null, 1, 2],
+          "description": "null when the book is not split into parts."
+        },
+        "edition_seen": {
+          "type": "string",
+          "enum": ["latest", "older", "lab_manual", "unsure"],
+          "description": "What the book itself shows, not the folder_edition_hint. Rule 6: 'unsure' is always allowed."
+        },
+        "reprint_text_exact": {
+          "type": "string",
+          "description": "The imprint/reprint line copied exactly. Empty string when none was found (see 'note')."
+        },
+        "reprint_page": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "maximum": 6,
+          "description": "1-based page number among the 6 rendered page_images. null when reprint_text_exact is empty."
+        },
+        "is_lab_manual": { "type": "boolean" },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": {
+        "error": { "type": "string" }
+      },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

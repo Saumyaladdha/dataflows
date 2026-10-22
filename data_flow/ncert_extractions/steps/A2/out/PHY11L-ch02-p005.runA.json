@@ -1,0 +1,212 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        200,
+        205,
+        870,
+        545
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The v-t curve is a straight line parallel to the time axis and the area under it between t = 0 and t = T is the area of the rectangle of height u and base T. Therefore, area = u × T = uT which is the displacement in this time interval.  How come in this case an area is equal to a distance? Think!  Note the dimensions of quantities on the two coordinate axes, and you will arrive at the answer.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Note that the x-t, v-t, and a-t graphs shown in several figures in this chapter have sharp kinks at some points implying that the functions are not differentiable at these points. In any realistic situation, the functions will be differentiable at all points and the graphs will be smooth."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "What this means physically is that acceleration and velocity cannot change values abruptly at an instant. Changes are always continuous."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "2.4 KINEMATIC EQUATIONS FOR UNIFORMLY ACCELERATED MOTION"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "For uniformly accelerated motion, we can derive some simple equations that relate displacement (x), time taken (t), initial velocity (v0), final velocity (v) and acceleration (a). Equation (2.4) already obtained gives a relation between final and initial velocities v and  v0  of an object moving with uniform acceleration a :"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        320,
+        1590,
+        870,
+        1640
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "This relation is graphically represented in Fig. 2.5. The area under this curve is : Area between instants 0 and t = Area of triangle ABC + Area of rectangle OACD"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        385,
+        1770,
+        665,
+        1840
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        975,
+        205,
+        1640,
+        735
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "As explained in the previous section, the area under v-t curve represents the displacement. Therefore, the displacement x of the object is :"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        975,
+        915,
+        1530,
+        975
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        885,
+        990,
+        1230,
+        1035
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        885,
+        1050,
+        1240,
+        1110
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        885,
+        1115,
+        1530,
+        1180
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Equation (2.5) can also be written as"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        975,
+        1235,
+        1530,
+        1300
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "where,"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        910,
+        1360,
+        1530,
+        1495
+      ],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "Equations (2.7a) and  (2.7b) mean that the object has undergone displacement x with an average velocity equal to the arithmetic average of the initial and final velocities."
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "From Eq. (2.4), t = (v – v0)/a. Substituting this in Eq. (2.7a), we get"
+    },
+    {
+      "n": 22,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        950,
+        1680,
+        1470,
+        1770
+      ],
+      "text": ""
+    },
+    {
+      "n": 23,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        885,
+        1780,
+        1530,
+        1840
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "MOTION IN A STRAIGHT LINE",
+    "17",
+    "2024-25"
+  ],
+  "note": "Judged first_block_continues_from_previous from page 4, which I read myself in this batch (previous_page_last_block was null): page 4 ends at a full stop ('...as shown in Fig. 2.4.') and this page opens with Fig. 2.4 itself followed by a new sentence. Figures 2.4 and 2.5 (each with caption) and every display equation on the page - (2.4), the area expression, (2.5), (2.6), (2.7a), (2.7b), (2.8) and the two intermediate steps - are left for the special transcriber with bounding boxes; several of those lines carry a printed lead-in word on the same line ('But', 'Therefore,', 'or,') which is inside the crop. Blocks 7 and 9 sit at the foot of the left column and the right column continues with Fig. 2.5. Text layer matches the image."
+}

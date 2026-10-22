@@ -1,0 +1,84 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 2.9 A network of four 10 µF capacitors is connected to a 500 V supply, as shown in Fig. 2.29. Determine (a) the equivalent capacitance of the network and (b) the charge on each capacitor. (Note, the charge on a capacitor is the charge on the plate with higher potential, equal and opposite to the charge on the plate with lower potential.)",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [437, 470, 940, 929],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "Solution"
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "(a) In the given network, C1, C2 and C3 are connected in series. The effective capacitance C′ of these three capacitors is given by"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 1068, 465, 1140],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "For C1 = C2 = C3 = 10 µF,  C′ = (10/3) µF. The network has  C′ and C4 connected in parallel. Thus, the equivalent capacitance C of the network is"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 1250, 675, 1315],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "(b) Clearly, from the figure, the charge on each of the capacitors, C1, C2 and C3 is the same, say Q. Let the charge on C4 be Q′. Now, since the potential difference across AB is  Q/C1, across BC is Q/C2, across CD is  Q/C3 , we have"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [215, 1445, 505, 1520],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "Also, Q′/C4 = 500 V.\nThis gives for the given value of the capacitances,"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [215, 1610, 695, 1720],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "heading",
+      "text": "2.15  ENERGY STORED IN A CAPACITOR"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "A capacitor, as we have seen above, is a system of two conductors with charge Q and –Q. To determine the energy stored in this configuration, consider initially two uncharged conductors 1 and 2. Imagine next a process of transferring charge from conductor 2 to conductor 1 bit by"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "73", "Reprint 2026-27", "EXAMPLE 2.9 (vertical side label)"],
+  "note": "The text_layer renders symbol-font characters incorrectly (µ appears as 'm', the prime ′ appears as '¢') and flattens the displayed fractions into separate numerator/denominator lines out of order. Where the text_layer was garbled in that way I read the characters from the page image (µF, C′, Q′); the wording is otherwise copied verbatim. Subscripts are written inline (C1, C2, C3, C4) as in the text_layer. The whole top half of the page is one shaded worked-example box with the sidebar label 'EXAMPLE 2.9'; its prose, figure and four displayed equations are listed as separate blocks so the displayed maths can be transcribed separately. Caption 'FIGURE 2.29' is included inside the figure bbox rather than as its own block. Input field previous_page_last_block was null even though page is 29, so continuation from the previous page was judged from the page content alone (the page opens cleanly with 'Example 2.9')."
+}

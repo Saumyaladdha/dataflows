@@ -1,0 +1,104 @@
+{
+  "group": "v2__biology__plain.part4",
+  "ratings": [
+    {
+      "question_id": "2015_A#q065",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Milk dentition: incisors, canine and molars only - premolars arrive with the permanent set",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {"label": "true_statement_trap", "option": "1", "route": "Reads past the \"not having\". Incisors are in the milk set as well as the permanent one."},
+        {"label": "true_statement_trap", "option": "2", "route": "Reads past the \"not having\". The canine is in the milk set too, one on each side of each jaw."},
+        {"label": "true_statement_trap", "option": "4", "route": "Reads past the \"not having\". Milk molars are present, and the permanent premolars are the teeth that later replace them."}
+      ],
+      "reason": "This question requires each tooth type to be checked against both dentitions, demonstrated by the stem \"primary dentition in human differs from permanent dentition in not having one of the following type of teeth\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q066",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Protoplast: a plant cell with its wall stripped off, leaving the plasma membrane and everything inside it",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires one term's definition, demonstrated by the stem \"A protoplast is a cell:\" with four one-line descriptions as the options.",
+      "note": "Damaged as printed. The source's own solution reads \"Plant cell - Cell wall = Protoplast\", but no option says \"without cell wall\": the four printed options are \"Without division\", \"Without plasma membrane\", \"Without nucleus\" and \"Undergoing division\", and the printed key points at \"Without division\". Our record matches the booklet character for character, so the loss is in the source. The key is left as printed (rulebook section 7, do not re-judge the key) and traps are empty under rule 5. The concept above is taken from the source's own solution line, which is the only part of the question that is certain."
+    },
+    {
+      "question_id": "2015_A#q067",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "organism_characteristic",
+      "concept": "Diatoms (chrysophytes): a silica wall in two overlapping halves that fit like a soap-box and its lid",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "other_one_fact", "option": "1", "route": "Gives the group with no wall at all. A slime mould's feeding plasmodium is a naked mass of protoplasm."},
+        {"label": "other_one_fact", "option": "3", "route": "Gives the group with a pellicle instead of a wall. Euglenoids have a flexible protein covering, in one piece."},
+        {"label": "other_one_fact", "option": "4", "route": "Gives the group with stiff plates. Dinoflagellates carry many cellulose plates, not two overlapping halves."}
+      ],
+      "reason": "This question requires one group to be named from a diagnostic wall feature, demonstrated by the stem \"the cells walls form two thin overlapping shells which fit together\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q068",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Cloning vector: the DNA molecule a gene of interest is joined to so that the host will replicate it",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "look_alike_term", "option": "1", "route": "Uses the everyday word for the job. \"Carrier\" says exactly what a vector does, but the chapter's term is vector."},
+        {"label": "fabricated_term", "option": "2", "route": "Builds a noun from a real process. The chapter has transformation, but no molecule called a transformer."},
+        {"label": "true_but_out_of_scope", "option": "4", "route": "Answers a different question. A template is the strand a polymerase copies, not the DNA a gene is joined to."}
+      ],
+      "reason": "This question requires one term to be recalled from its definition, demonstrated by the stem \"The DNA molecules to which the gene of interest is integrated for cloning is called:\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q069",
+      "question_type": "plain_mcq",
+      "format": "pick_both_parts",
+      "content_shape": "process",
+      "concept": "Male gametophyte of angiosperms: the generative cell divides to give two male gametes, beside one vegetative cell",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "wrong_quantity", "option": "1", "route": "Counts cells instead of gametes. The mature pollen has three cells, but only two of them are sperms."},
+        {"label": "intermediate_value", "option": "3", "route": "Stops at the two-celled pollen grain, before the generative cell has divided into the two male gametes."}
+      ],
+      "reason": "This question requires both the number of sperms and the number of vegetative cells to be right together, demonstrated by option 2, \"Two sperms and a vegetative cell\", differing from option 3 only in the first count.",
+      "note": "Option 4, \"Single sperm and two vegetative cells\", is left untagged: no stage of pollen development has two vegetative cells, and nothing in the chapter produces that pair of counts."
+    },
+    {
+      "question_id": "2015_A#q070",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "process",
+      "concept": "Free-nuclear endosperm: coconut water is endosperm at its nuclear stage, the white kernel the cellular stage that follows",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "other_one_fact", "option": "1", "route": "Names the other leftover tissue. A persisting nucellus is perisperm, as in black pepper."},
+        {"label": "other_one_fact", "option": "2", "route": "Names the wrong occupant of the cavity. The embryo sits in the kernel; the liquid around it is endosperm."},
+        {"label": "other_one_fact", "option": "4", "route": "Names a coat layer. The inner seed coat, the tegmen, is a dry membrane, not a liquid."}
+      ],
+      "reason": "This question requires one seed tissue to be identified, demonstrated by the stem \"Coconut water from a tender coconut is:\" with four seed tissues as the options.",
+      "note": ""
+    }
+  ],
+  "group_note": "All six are printed as one question with four short text options, so all six are plain_mcq, and five of them are straight retrieval of one taught fact, hence recall with single_step. q065 is the only negated task: its criterion has to be tested against all four tooth types, which is why it alone carries several_independent_checks and why all three of its wrong options carry the same true_statement_trap. q069 is the only member whose answer has two parts that must both hold, so it alone carries pick_both_parts, and its two traps turn on the two different counts. q066 does not belong with the rest as it stands: the option that its own printed solution requires is missing from the option set, so it carries source_damage_artifact with an empty trap list and only the certain fields filled. Where a wrong option is just another member of the same family (q067, q070) the label is other_one_fact across the board; q068 differs and is reasoned option by option, because its three wrong options fail in three different ways - a synonym, an invented noun and a real term from another job."
+}

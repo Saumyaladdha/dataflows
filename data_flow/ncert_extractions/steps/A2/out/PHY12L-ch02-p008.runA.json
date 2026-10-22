@@ -1,0 +1,98 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [565, 290, 1520, 380],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "If we have a continuous charge distribution characterised by a charge density ρ (r), we divide it, as before, into small volume elements each of size Δυ and carrying a charge ρΔυ. We then determine the potential due to each volume element and sum (strictly speaking , integrate) over all such contributions, and thus determine the potential due to the entire distribution."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "We have seen in Chapter 1 that for a uniformly charged spherical shell, the electric field outside the shell is as if the entire charge is concentrated at the centre. Thus, the potential outside the shell is given by"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [565, 730, 1520, 820],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "where q is the total charge on the shell and R its radius. The electric field inside the shell is zero. This implies (Section 2.6) that potential is constant inside the shell (as no work is done in moving a charge inside the shell), and, therefore, equals its value at the surface, which is"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [565, 970, 1520, 1060],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Example 2.2 Two charges 3 × 10–8 C and –2 × 10–8 C are located 15 cm apart. At what point on the line joining the two charges is the electric potential zero? Take the potential at infinity to be zero."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Solution Let us take the origin O at the location of the positive charge. The line joining the two charges is taken to be the x-axis;  the negative charge is taken to be on the right side of the origin (Fig. 2.7)."
+    },
+    {
+      "n": 9,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [685, 1305, 1370, 1480],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "Let P be the required point on the x-axis where the potential is zero. If x is the x-coordinate of P, obviously x must be positive. (There is no possibility of potentials due to the two charges adding up to zero for x < 0.) If x lies between O and A, we have"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [555, 1660, 1045, 1740],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "where x is in cm. That is,"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [555, 1775, 810, 1855],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "box",
+      "text": "which gives x  =  9 cm. If x lies on the extended line OA, the required condition is"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [555, 1885, 765, 1965],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Physics", "52", "EXAMPLE 2.2", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null even though this is page 8, so the continuation flag is judged from the page image alone: the page opens with a display equation beginning '=' that is numbered (2.18), i.e. the tail of an expression started on the previous page. Blocks 7-15 all sit inside one shaded 'Example 2.2' box that spans the lower half of the page and is not finished when the page ends; the box's running text is kept as 'box' blocks in reading order while the figure and the display equations inside it are split out with needs_special so they can be transcribed separately. The text layer renders the Greek letters in block 2 as Latin ('r (r)', 'Dv', 'rDv'); the image clearly shows rho (r), Delta-upsilon and rho-Delta-upsilon, so those were read from the image. 'EXAMPLE 2.2' is a vertical side tab in the left margin of the example box, removed as a running label. Double spaces in 'x-axis;  the negative' and 'x  =  9 cm' are as printed."
+}

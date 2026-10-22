@@ -1,0 +1,38 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.125, "x1": 0.487},
+      {"id": "right", "x0": 0.515, "x1": 0.876}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "running_header", "bbox": [0.1263, 0.0872, 0.2703, 0.0945],
+     "column": "full", "size_rel": 0.8, "align": "left", "font": "sans", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.8623, 0.0872, 0.876, 0.094],
+     "column": "full", "size_rel": 0.8, "align": "right", "font": "sans", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.1263, 0.1193, 0.4857, 0.1647],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.1251, 0.1716, 0.4874, 0.9156],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "table_caption", "bbox": [0.5154, 0.1193, 0.8771, 0.1642],
+     "column": "right", "size_rel": 1.05, "align": "left", "font": "sans", "text_color": "#00adef"},
+    {"n": 3, "role": "table", "bbox": [0.5166, 0.1725, 0.876, 0.5922],
+     "column": "right", "size_rel": 1.0, "align": "center", "font": "serif", "fill": "#ffe4b8"},
+    {"n": null, "role": "paragraph", "bbox": [0.5154, 0.6041, 0.8777, 0.7294],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "section_heading", "bbox": [0.516, 0.739, 0.7926, 0.7518],
+     "column": "right", "size_rel": 1.05, "align": "left", "font": "sans", "text_color": "#00adef"},
+    {"n": 5, "role": "paragraph", "bbox": [0.5149, 0.7587, 0.8777, 0.8518],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "section_heading", "bbox": [0.5149, 0.867, 0.6634, 0.8798],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#00adef"},
+    {"n": 7, "role": "paragraph", "bbox": [0.5149, 0.8867, 0.876, 0.9156],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.4771, 0.9555, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans", "text_color": "#231f20"}
+  ],
+  "note": "Two-column body page, recto (page 61): running header 'STRUCTURE OF ATOM' top-left, folio top-right, plain text on bare paper. No chapter banner, no coloured page_header_band, no footer_rule; the foot carries only the centred edition line '2024-25', recorded as a second running_header because the role list has no footer-text value. Page is 1750x2180 px, aspect 0.803, not A4. body_text_size_px = 20.0, cap-to-baseline measured on body capitals in both columns ('B' of 'Both the attractive and repulsive', 'T' of 'The filling of electrons'). Block 3 is Table 2.5, bordered in near-black (#231f1f) at x 904-1533 px, y 376-1291 px. It has TWO fills: a lavender header row #e0def0 occupying y 380-477 px (page-fraction y 0.174-0.219) and a peach body #ffe4b8 for all the data rows; both were sampled from flat interiors. I report the table as one element carrying the dominant body fill #ffe4b8 and record the header-row colour here, because the role list has no value for a table header band and splitting one table into two elements would misrepresent it. The cyan table title 'Table 2.5 Arrangement of Orbitals with Increasing Energy on the Basis of (n+l) Rule' above it has no matching A2 block, so it is a table_caption with n null. Block 2 breaks across the gutter: it fills the whole left column below block 1 (the element carrying n 2) and continues in the right column below the table, starting 'same energy. Lastly it may be mentioned here'; that continuation is a separate element with n null. Two heading levels print in cyan #00adef: block 4 '2.6.4 Filling of Orbitals in Atom' is bold sans with cap 21 px (size_rel 1.05) and block 6 'Aufbau Principle' is a subordinate bold ITALIC heading with cap 20 px (size_rel 1.0); both are given role section_heading since the allowed list offers no second subordinate heading role, and for block 6 the 'font' field is OMITTED because its bold-italic face matches no allowed value (there is no sans-italic and I am not confident whether it is serif or sans). A grey 'NCERT / not to be republished' watermark crosses the page, including over the table; it is a print artefact and is not listed as an element."
+}

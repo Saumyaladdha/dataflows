@@ -1,0 +1,149 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The value of ∆v∆x obtained is extremely small and is insignificant. Therefore, one may say that in dealing with milligram-sized or heavier objects, the associated uncertainties are hardly of any real consequence."
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "In the case of a microscopic object like an electron on the other hand. ∆v.∆x obtained is much larger and such uncertainties are of real consequence. For example, for an electron whose mass is 9.11×10–31 kg., according to Heisenberg uncertainty principle"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        243,
+        705,
+        766,
+        920
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "It, therefore, means that if one tries to find the exact location of the electron, say to an uncertainty of only 10–8 m, then the uncertainty ∆v in velocity would be"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        243,
+        1080,
+        625,
+        1176
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "which is so large that the classical picture of electrons moving in Bohr’s orbits (fixed) cannot hold good. It, therefore, means that the precise statements of the position and momentum of electrons have to be replaced by the statements of probability, that the electron has at a given position and momentum. This is what happens in the quantum mechanical model of atom."
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Problem 2.15\nA microscope using suitable photons is employed to locate an electron in an atom within a distance of 0.1 Å. What is the uncertainty involved in the measurement of its velocity?"
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Solution"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        243,
+        1826,
+        658,
+        1900
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        918,
+        268,
+        1546,
+        450
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "= 0.579×107 m s–1 (1J = 1 kg m2 s–2)\n= 5.79×106 m s–1"
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "Problem 2.16\nA golf ball has a mass of 40g, and a speed of 45 m/s. If the speed can be measured within accuracy of 2%, calculate the uncertainty in the position."
+    },
+    {
+      "n": 13,
+      "kind": "box",
+      "text": "Solution\nThe uncertainty in the speed is 2%, i.e.,"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        918,
+        846,
+        1236,
+        925
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "box",
+      "text": "Using the equation (2.22)"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        918,
+        966,
+        1546,
+        1158
+      ],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "box",
+      "text": "= 1.46×10–33 m\nThis is nearly ~ 1018 times smaller than the diameter of a typical atomic nucleus. As mentioned earlier for large particles, the uncertainty principle sets no meaningful limit to the precision of measurements."
+    },
+    {
+      "n": 18,
+      "kind": "heading",
+      "text": "Reasons for the Failure of the Bohr Model"
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "One can now understand the reasons for the failure of the Bohr model. In  Bohr model, an electron is regarded as a charged particle moving  in well defined circular orbits about the nucleus. The wave character of the electron is not considered in  Bohr model. Further, an orbit is a clearly defined path and this path can completely be defined only if both the position and the velocity of the electron are known exactly at the same time. This is not possible according to the Heisenberg uncertainty principle. Bohr model of the hydrogen atom, therefore, not only ignores dual behaviour of matter but also contradicts Heisenberg uncertainty principle."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "52",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p023.runA.json I wrote immediately before this page, which ends with the full-width green Werner Heisenberg biography box on a complete sentence. This page opens with the fresh sentence 'The value of ∆v∆x obtained is extremely small and is insignificant.', which comments on the equation printed at the foot of p023 but is not a continuation of a broken sentence, so first_block_continues_from_previous is false, matching p023's last_block_continues_on_next of false. Reading order is the left column top to bottom (prose, two displayed evaluations, then the pink Problem 2.15 box that begins at the foot of the column) and then the right column (the pink box carrying the rest of Problem 2.15's solution and all of Problem 2.16, then the 'Reasons for the Failure of the Bohr Model' section); the text layer stores this page badly out of printed order — it holds the left column's prose first, then the right-hand pink box's result lines and Problem 2.16, then 'Reasons for the Failure of the Bohr Model', and only at the very END of the stream the Problem 2.15 box printed at the foot of the LEFT column, so this is one of the pages whose text layer is stored out of printed order. Six displayed formulae are left for the special transcriber with pixel bboxes and empty text: n=3 the ∆v.∆x evaluation for the electron ending in 10–4 m2 s–1, n=5 the ratio giving roughly 104 m s–1, n=9 the uncertainty relation opening Problem 2.15's solution (the layer keeps only the bare tokens '∆ x ∆p = ' and ' or ∆ x m ∆ v ' and loses both h/4π fractions), n=10 the ∆v evaluation for Problem 2.15, n=14 the 45 × 2/100 speed-uncertainty evaluation and n=16 the ∆x evaluation for the golf ball. The flat result lines that the layer does store in running order are transcribed in the layer's own flattened spelling rather than deferred — '= 0.579×107 m s–1 (1J = 1 kg m2 s–2)', '= 5.79×106 m s–1' and '= 1.46×10–33 m' — as is the inline '~ 1018 times smaller' in block n=17, which is the layer's flattening of the printed 10 to the eighteenth power. Other inline maths likewise follows the layer ('9.11×10–31 kg.', '10–8 m', '0.1 Å', '40g', '45 m/s', '2%'). The bold statements in blocks n=1 and n=6 and the italic closing sentence in block n=19 are printed that way inside their paragraphs and are kept there. The doubled spaces in 'In  Bohr model', 'moving  in well defined' and 'considered in  Bohr model.' are as printed. The page ends on a complete sentence, so last_block_continues_on_next is false."
+}

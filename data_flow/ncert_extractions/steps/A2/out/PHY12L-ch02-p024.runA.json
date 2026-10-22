@@ -1,0 +1,53 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "geometrical configuration (shape, size, separation) of the system of two conductors. [As we shall see later, it also depends on the nature of the insulator (dielectric) separating the two conductors.]  The SI unit of capacitance is 1 farad (=1 coulomb volt⁻¹) or 1 F = 1 C V⁻¹. A capacitor with fixed capacitance is symbolically shown as ---||---, while the one with variable capacitance is shown as .",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Equation (2.38) shows that for large C, V is small for a given Q. This means a capacitor with large capacitance can hold large amount of charge Q at a relatively small V. This is of practical importance. High potential difference implies strong electric field around the conductors. A strong electric field can ionise the surrounding air and accelerate the charges so produced to the oppositely charged plates, thereby neutralising the charge on the capacitor plates, at least partly. In other words, the charge of the capacitor leaks away due to the reduction in insulating power of the intervening medium."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The maximum electric field that a dielectric medium can withstand without break-down (of its insulating property) is called its dielectric strength; for air it is about 3 × 10⁶ Vm⁻¹. For a separation between conductors of the order of 1 cm or so, this field corresponds to a potential difference of 3 × 10⁴ V between the conductors. Thus, for a capacitor to store a large amount of charge without  leaking, its capacitance should be high enough so that the potential difference and hence the electric field do not exceed the break-down limits. Put differently, there is a limit to the amount of charge that can be stored on a given capacitor without significant leaking. In practice, a farad is a very big unit; the most common units are its sub-multiples 1 μF = 10⁻⁶ F, 1 nF = 10⁻⁹ F, 1 pF = 10⁻¹² F, etc. Besides its use in storing charge, a capacitor is a key element of most ac circuits with important functions, as described in Chapter 7."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "2.12  THE PARALLEL PLATE CAPACITOR"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "A parallel plate capacitor consists of two large plane parallel conducting plates separated by a small distance (Fig. 2.25). We first take the intervening medium between the plates to be vacuum. The effect of a dielectric medium between the plates is discussed in the next section. Let A be the area of each plate and d the separation between them. The two plates have charges Q and –Q. Since d is much smaller than the linear dimension of the plates (d² << A), we can use the result on electric field by an infinite plane sheet of uniform surface charge density (Section 1.15). Plate 1 has surface charge density σ = Q/A and plate 2 has a surface charge density –σ. Using Eq. (1.33), the electric field in different regions is:"
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [213, 1480, 805, 1966],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Outer region I (region  above the plate 1),"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [875, 1933, 1539, 2025],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["Physics", "68", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null even though this is page 24, not page 1; continuation was judged from the page itself, which opens mid-sentence ('geometrical configuration ... of the system of two conductors.'). Block 1 contains two small inline circuit symbols (the fixed-capacitor symbol and the variable-capacitor symbol); the text layer renders the first as '---||---' and gives nothing for the second, so the sentence ends with a gap before the full stop. Superscripts/subscripts are flattened in the text layer (e.g. '3 x 106 Vm-1', '1 mF = 10-6 F', 'd2 << A'); these were read from the page image and written with Unicode super/subscript characters, and the micro sign in 'microF' was restored from the image. The outline-font side-heading 2.12 appears duplicated and out of order in the text layer; it is transcribed once here in its true reading-order position. The figure block includes the FIGURE 2.25 caption. Last block is equation (2.39), which is complete on this page, so last_block_continues_on_next is false, although the enumeration of regions begun by block 5 continues onto the next page."
+}

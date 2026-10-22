@@ -1,0 +1,100 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "possible and electrons are filled in those orbitals in order of increasing energy in accordance with Pauli exclusion principle (no two electrons in an atom can have the same set of four quantum numbers) and Hund’s rule of maximum multiplicity (pairing of electrons in the orbitals belonging to the same subshell does not take place until each orbital belonging to that subshell has got one electron each, i.e., is singly occupied). This forms the basis of the electronic structure of atoms.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "EXERCISES"
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "2.1\t(i)\t Calculate the number of electrons which will together weigh one gram.\n\t(ii)\t Calculate the mass and charge of one mole of electrons."
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "2.2\t(i)\t Calculate the total number of electrons present in one mole of methane.\n\t(ii)\t Find (a) the total number and (b) the total  mass of neutrons in 7 mg of 14C.\n\t(Assume that mass of a neutron = 1.675 × 10–27 kg).\n\t(iii) \tFind (a) the total number and (b) the total mass of protons in 34 mg of NH3\n\tat STP.\n\t\tWill the answer change if the temperature and pressure are changed ?"
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "2.3\tHow many neutrons and protons are there in the following nuclei ?"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        392,
+        946,
+        763,
+        1003
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "2.4\tWrite the complete symbol for the atom with the given atomic number (Z) and atomic mass (A)\n\t(i)\t Z = 17,  A = 35.\n\t(ii) \t Z = 92,  A = 233.\n\t(iii)\t Z =  4,   A =  9."
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "2.5\tYellow light emitted from a sodium lamp has a wavelength (λ) of 580 nm. Calculate the frequency (ν) and wavenumber ( ) of the yellow light."
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "2.6\tFind energy of each of the photons which\n\t(i)\t correspond to light of frequency 3×1015 Hz.\n\t(ii)\t have wavelength of 0.50 Å."
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "2.7\tCalculate the wavelength, frequency and wavenumber of a light wave whose period is 2.0 × 10–10 s."
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "2.8\tWhat is the number of photons of light with a wavelength of 4000 pm that provide 1J of energy?"
+    },
+    {
+      "n": 12,
+      "kind": "list",
+      "text": "2.9\tA photon of wavelength 4 × 10–7 m strikes on metal surface, the work function of the metal being 2.13 eV. Calculate (i) the energy of the photon (eV), (ii) the kinetic energy of the emission, and (iii) the velocity of the photoelectron (1 eV= 1.6020 × 10–19 J)."
+    },
+    {
+      "n": 13,
+      "kind": "list",
+      "text": "2.10 \tElectromagnetic radiation of wavelength 242 nm is just sufficient to ionise the sodium atom. Calculate the ionisation energy of sodium in kJ mol–1."
+    },
+    {
+      "n": 14,
+      "kind": "list",
+      "text": "2.11\tA 25 watt bulb emits monochromatic yellow light of wavelength of 0.57µm. Calculate the rate of emission of quanta per second."
+    },
+    {
+      "n": 15,
+      "kind": "list",
+      "text": "2.12\tElectrons are emitted with zero velocity from a metal surface when it is exposed to radiation of wavelength 6800 Å. Calculate threshold frequency (ν0 ) and work function (W0 ) of the metal."
+    },
+    {
+      "n": 16,
+      "kind": "list",
+      "text": "2.13\tWhat is the wavelength of light emitted when the electron in a hydrogen atom undergoes transition from an energy level with n = 4 to an energy level with n = 2?"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "STRUCTURE OF ATOM",
+    "69",
+    "2024-25"
+  ],
+  "note": "Seam judged against CHE11L-ch02-p040.runA.json, written immediately before this page (the instruction's named anchor p030 has no output on disk). p040's Summary box runs off its panel mid-sentence at 'In an atom many such orbitals are' with last_block_continues_on_next true; this page opens with the rest of that same green panel, 'possible and electrons are filled in those orbitals ...', so first_block_continues_from_previous is true and the two pages agree. input's previous_page_last_block was null. Block n=1 is the tail of the Summary box; block n=2 is the boxed EXERCISES title, printed once at the head of the exercise section, so it is a heading and not furniture. Blocks n=3 onward are the exercise items 2.1 to 2.13, one block per numbered exercise with its roman sub-parts kept inside it, in the printed order the text layer also uses. Block n=6 is the ONLY deferral and it is the important one on this page: the display line of nuclide symbols belonging to exercise 2.3 (carbon-13, oxygen-16, magnesium-24, iron-56 and strontium-88, each with its mass number above and atomic number below the element symbol). The text layer has scrambled it below the word level, hoisting every sub- and superscript out of position — verbatim it stores '6' / '13C' / 'O' / 'Mg' / 'Fe' / 'Sr' / ',' / ',' / ',' / ',' / four blank lines / '8' / '16' / '12' / '24' / '26' / '56' / '38' / '88' — so no faithful transcription of that line can match the layer, and it gets a bbox with empty text instead. Everywhere else the inline physical quantities follow the layer's own flattened spelling rather than the printed superscripts, which is what both keeps them faithful and keeps them matchable: 'neutrons in 7 mg of 14C', 'mass of a neutron = 1.675 × 10–27 kg', '34 mg of NH3', 'frequency 3×1015 Hz' (the layer's flattening of the printed 3 × 10-to-the-15), 'wavelength of 0.50 Å', 'period is 2.0 × 10–10 s', 'wavelength 4 × 10–7 m', '2.13 eV', '(1 eV= 1.6020 × 10–19 J)' with the printed missing space after 'eV', 'sodium in kJ mol–1', 'wavelength of 0.57µm' with no space before the mu, 'wavelength 6800 Å', and 'threshold frequency (ν0 ) and work function (W0 )' keeping the layer's space before each closing bracket. In exercise 2.5 the wavenumber symbol is ABSENT from the text layer, which stores the phrase as 'wavenumber ( ) of the yellow light' — the printed nu-with-overbar did not extract — so block n=8 transcribes the bare '( )' exactly as the layer has it rather than inventing the glyph; the printed symbol itself is nu with an overbar. The doubled spaces in 'the total  mass of neutrons', 'Z = 17,  A = 35.' , 'Z = 92,  A = 233.' and 'Z =  4,   A =  9.' are as printed, as are the tabs the layer uses to indent the sub-parts. The bold runs 'Pauli exclusion principle' and 'Hund's rule of maximum multiplicity' in block n=1 are printed emphasis and kept inline. last_block_continues_on_next is false: exercise 2.13 ends on a complete question mark, and p042 opens with a fresh item, 2.14 ('How much energy is required to ionise a H atom ...'), not with the remainder of 2.13 — so p042 must set first_block_continues_from_previous false. bboxes are original-image pixels (1750x2180); the image renders at 1606x2000, so displayed coordinates were scaled by 1.09."
+}

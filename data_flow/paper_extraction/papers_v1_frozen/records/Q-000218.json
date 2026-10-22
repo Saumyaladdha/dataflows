@@ -1,0 +1,210 @@
+{
+ "question_id": "Q-000218",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  }
+ },
+ "exam": "NEET",
+ "year": 2022,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:32"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "A copper wire of length $10\\,\\mathrm{m}$ and radius 210 m – [unreadable notation] $\\pi$[unreadable notation] has electrical resistance of $10\\,\\Omega$ . The current density in the wire for an electric field strength of $10\\,\\mathrm{(V/m)}$ is",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "104 $\\mathrm{A/m2}$",
+  "2": "106 $\\mathrm{A/m2}$",
+  "3": "10–5 $\\mathrm{A/m2}$",
+  "4": "105 $\\mathrm{A/m2}$"
+ },
+ "structure": "plain",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "32\nA copper wire of length 10 m and radius 210 m −\u0000  π has electrical resistance of 10 Ω . The\ncurrent density in the wire for an electric field strength of 10 (V/m) is\n(1)\n104 A/m2\n(2)\n106 A/m2\n(3)\n10–5 A/m2\n(4)\n105 A/m2\nCurrent Electricity\n",
+ "b4_script_options": {
+  "1": "104 A/m2",
+  "2": "106 A/m2",
+  "3": "10–5 A/m2",
+  "4": "105 A/m2\nCurrent Electricity"
+ },
+ "official_answer": "4",
+ "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+ "status": "normal",
+ "subject": "Physics",
+ "branch": null,
+ "b6_answer": "4",
+ "b6_reason": "Current density J = E/rho = E*L/(R*A); with cross-section area 1e-4 m^2 this gives 1e5 A/m^2.",
+ "b6_working": "I = V/R = (E*L)/R = (10*10)/10 = 10 A. J = I/A = 10/A. The radius in the stem is unreadable but contains a pi factor, so A = pi*r^2 comes out a clean power of ten; A = 1e-4 m^2 gives J = 1e5 A/m^2.",
+ "b6_confidence": "low",
+ "b6_note": "Stem damaged by extraction: radius reads 'radius 210 m - [unreadable notation] pi[unreadable notation]', so the exponent/root on the radius is lost and A cannot be computed with certainty. Option exponents are also stripped of superscripts (104, 106, 10-5, 105). The chain J = E*L/(R*A) is certain; only A is in doubt, and a radius one decade larger would instead give ~1e6 (option 2). Answer given at low confidence for this reason.",
+ "b6_agrees_with_key": true,
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "3"
+  }
+ }
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A2S.json",
+  "title": "A2S agent output (a2-special-transcriber)",
+  "description": "Section 9/A2S and the a2-special-transcriber agent file (Appendix B): table -> header/rows/repeated_header; figure -> caption/labels; equation -> latex/number; box -> text (+ optional latex/number). `box` is a fourth kind added 2026-10-13: SPEC 9/A2S names only the first three, but A2's own kind enum includes `box` and A2 agents do mark boxes needs_special when a worked example's display equations would be lost. Six such blocks exist in the real corpus (CHE12L ch1 p005/p008/p016, ch9 p005/p006, PHY11L ch6 p017) and FOUR of them carry text:\"\" -- so the prose was never captured anywhere and the box is unquotable. Five separate A2S workers hit these and each improvised a different shape (two relabelled them `equation`, three kept `box` and invented a `text` field), which is why the kind is now defined rather than left to chance.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["kind", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "type": "string", "enum": ["table", "figure", "equation", "box"] },
+        "header": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Table only: the header row, cells copied exactly."
+        },
+        "rows": {
+          "type": "array",
+          "items": { "type": "array", "items": { "type": "string" } },
+          "description": "Table only: data rows, cells copied exactly, consistent column count per the A2S check."
+        },
+        "repeated_header": {
+          "type": "boolean",
+          "description": "Table only: true if this table continues from the previous page and its header row repeats."
+        },
+        "caption": {
+          "type": "string",
+          "description": "Figure only: copied exactly, e.g. 'Figure 10.2 ...'. Non-empty per the A2S check."
+        },
+        "labels": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Figure only: every label word/line on the figure, top-left to bottom-right. No description of the drawing."
+        },
+        "latex": {
+          "type": "string",
+          "description": "Equation only: copied exactly as printed. Must parse per the A2S check."
+        },
+        "number": {
+          "type": ["string", "null"],
+          "description": "Equation only: the printed equation number, e.g. '(3.16)', or null if unnumbered. Box: the box's printed label, e.g. 'Example 1.4'."
+        },
+        "text": {
+          "type": "string",
+          "description": "Box only: the box's prose copied exactly as printed. This is the field that makes the box quotable -- quote_verify.find matches a citation word-for-word against passage text, so a box with no text can never be cited."
+        },
+        "note": { "type": "string" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "table" } } },
+          "then": { "required": ["header", "rows", "repeated_header"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "figure" } } },
+          "then": { "required": ["caption", "labels"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "equation" } } },
+          "then": { "required": ["latex"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "box" } } },
+          "then": { "required": ["text"] }
+        }
+      ]
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } }
+    }
+  ]
+}

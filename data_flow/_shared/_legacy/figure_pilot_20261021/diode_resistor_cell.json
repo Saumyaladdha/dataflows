@@ -1,0 +1,155 @@
+{
+ "figure_id": "diode_resistor_cell",
+ "title": "A junction diode D in series with a 100 ohm resistor R and a cell",
+ "width": 330,
+ "height": 190,
+ "pad": 18,
+ "draw": [
+  {
+   "kind": "line",
+   "from": [
+    20,
+    160
+   ],
+   "to": [
+    96,
+    160
+   ]
+  },
+  {
+   "kind": "diode",
+   "from": [
+    96,
+    160
+   ],
+   "to": [
+    150,
+    160
+   ],
+   "size": 15
+  },
+  {
+   "kind": "line",
+   "from": [
+    150,
+    160
+   ],
+   "to": [
+    176,
+    160
+   ]
+  },
+  {
+   "kind": "resistor",
+   "from": [
+    176,
+    160
+   ],
+   "to": [
+    272,
+    160
+   ],
+   "zigs": 5,
+   "amp": 9,
+   "lead": 0.06
+  },
+  {
+   "kind": "line",
+   "from": [
+    272,
+    160
+   ],
+   "to": [
+    310,
+    160
+   ]
+  },
+  {
+   "kind": "line",
+   "from": [
+    310,
+    160
+   ],
+   "to": [
+    310,
+    24
+   ]
+  },
+  {
+   "kind": "line",
+   "from": [
+    310,
+    24
+   ],
+   "to": [
+    196,
+    24
+   ]
+  },
+  {
+   "kind": "cell",
+   "centre": [
+    165,
+    24
+   ],
+   "plates": 2,
+   "horizontal": true,
+   "long": 24,
+   "short": 13,
+   "gap": 10
+  },
+  {
+   "kind": "line",
+   "from": [
+    134,
+    24
+   ],
+   "to": [
+    20,
+    24
+   ]
+  },
+  {
+   "kind": "line",
+   "from": [
+    20,
+    24
+   ],
+   "to": [
+    20,
+    160
+   ]
+  },
+  {
+   "kind": "label",
+   "text": "D",
+   "at": [
+    123,
+    178
+   ],
+   "italic": true,
+   "size": 16
+  },
+  {
+   "kind": "label",
+   "text": "100 \u03a9",
+   "at": [
+    224,
+    180
+   ],
+   "size": 15,
+   "style": "sans"
+  },
+  {
+   "kind": "label",
+   "text": "R",
+   "at": [
+    224,
+    140
+   ],
+   "italic": true,
+   "size": 16
+  }
+ ],
+ "note": "The resistance is printed above the resistor and its name below, as NCERT and the booklet both set it."
+}

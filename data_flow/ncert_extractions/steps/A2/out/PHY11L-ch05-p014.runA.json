@@ -1,0 +1,175 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "5.11.1  Elastic and  Inelastic Collisions",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "In all collisions the total linear momentum is conserved; the initial momentum of the system is equal to the final momentum of the system. One can argue this as follows.  When two objects collide, the mutual impulsive forces acting over the collision time ∆t cause a change in their respective momenta :"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [360, 483, 654, 575],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "where F12 is  the force exerted on the first particle by the second particle. F21 is likewise the force exerted on the second particle by the first particle. Now from Newton’s third law, F12 = − F21.  This implies"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [360, 750, 580, 797],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The above conclusion is true even though the forces vary in a complex fashion during the collision time ∆t. Since the third law is true at every instant, the total impulse on the first object is equal and opposite to that on the second."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "On the other hand, the total kinetic energy of the system is not necessarily conserved. The impact and deformation during collision may generate heat and sound. Part of the initial kinetic energy is transformed into other forms of energy. A useful way to visualise the deformation during collision is in terms of a ‘compressed spring’. If the ‘spring’ connecting the two masses regains its original shape without loss in energy, then the initial kinetic energy is equal to the final kinetic energy but the kinetic energy during the collision time ∆t is not constant. Such a collision is called an elastic collision. On the other hand the deformation may not be relieved and the two bodies could move together after the collision. A collision in which the two particles move together after the collision is called a completely inelastic collision. The intermediate case where the deformation is partly relieved and some of the initial kinetic energy is lost is more common and is appropriately called an inelastic collision."
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "5.11.2  Collisions in One Dimension"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Consider first a completely inelastic collision in one dimension. Then,  in Fig. 5.10,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [320, 1748, 952, 1828],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [320, 1833, 922, 1928],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "The loss in kinetic energy on collision is"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1008, 258, 1562, 682],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "which is a positive quantity as expected."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Consider next an elastic collision.  Using the above nomenclature with θ1 = θ2 = 0, the momentum and kinetic energy conservation equations are"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1028, 868, 1632, 988],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "From  Eqs. (5.23)  and (5.24) it follows that,"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [978, 1053, 1552, 1222],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [978, 1228, 1632, 1288],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "Substituting this in Eq. (5.23), we obtain"
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [978, 1338, 1632, 1532],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "Thus, the ‘unknowns’ {v1f, v2f} are obtained in terms of the ‘knowns’ {m1, m2, v1i}. Special cases of our analysis are interesting."
+    },
+    {
+      "n": 23,
+      "kind": "paragraph",
+      "text": "Case I : If the two masses are equal"
+    },
+    {
+      "n": 24,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1078, 1688, 1372, 1762],
+      "text": ""
+    },
+    {
+      "n": 25,
+      "kind": "paragraph",
+      "text": "The first mass comes to rest and pushes off the second mass with its initial speed on collision."
+    },
+    {
+      "n": 26,
+      "kind": "paragraph",
+      "text": "Case II : If one mass dominates, e.g. m2 > > m1"
+    },
+    {
+      "n": 27,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1058, 1948, 1422, 2002],
+      "text": ""
+    },
+    {
+      "n": 28,
+      "kind": "paragraph",
+      "text": "The heavier mass is undisturbed while the lighter mass reverses its velocity."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "84",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column transcribed first. All displayed mathematics (the Δp impulse pair, Δp1+Δp2=0, the θ/momentum-conservation group, Eq. 5.22, the ΔK loss derivation including its bracketed '[using Eq. (5.22)]' annotation, Eqs. 5.23-5.24, the elastic-collision derivation chain including the inline connector 'or,', the 'Hence' line with Eq. 5.25, Eqs. 5.26-5.27 with the connector 'and', and the Case I and Case II result lines) is marked needs_special with bboxes rather than transcribed, because the text layer scrambles subscripts and superscripts onto separate lines below word level. Prose was copied from the text layer; subscripts in prose (F12, F21, v1f, v2f, m1, m2, v1i) therefore appear inline as the layer holds them. previous_page_last_block was null even though this is page 14, so continuation from the previous page was judged from the image alone: the page opens with section heading 5.11.1, so it does not continue mid-sentence."
+}

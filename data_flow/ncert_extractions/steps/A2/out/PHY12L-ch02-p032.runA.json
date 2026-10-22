@@ -1,0 +1,90 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "charge on each capacitor is then Q′ = CV′. By charge conservation, Q′  = Q/2. This implies V′  = V/2. The total energy of the system is",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [605, 378, 961, 432],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Thus in going from (a) to (b), though no charge is lost; the final energy is only half the initial energy. Where has the remaining energy gone?\nThere is a transient period before the system settles to the situation (b). During this period, a transient current flows from the first capacitor to the second. Energy is lost during this time in the form of heat and electromagnetic radiation.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "SUMMARY"
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "1. Electrostatic force is a conservative force. Work done by an external force (equal and opposite to the electrostatic force) in bringing a charge q from a point R to a point P is q(VP–VR), which is the difference in potential energy of charge q between the final and initial points."
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "2. Potential at a point is the work done per unit charge (by an external agency) in bringing a charge from infinity to that point. Potential at a point is arbitrary to within an additive constant, since it is the potential difference between two points which is physically significant. If potential at infinity is chosen to be zero; potential at a point with position vector r due to a point charge Q placed at the origin is given is given by"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [610, 1253, 756, 1312],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "3. The electrostatic potential at a point with position vector r due to a point dipole of dipole moment p placed at the origin is"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [610, 1431, 805, 1496],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "The result is true also for a dipole (with charges –q and q separated by 2a)  for r >> a.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "4. For a charge configuration q1, q2, ..., qn with position vectors r1, r2, ... rn, the potential at a point P is given by the superposition principle"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [605, 1676, 913, 1755],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "list",
+      "text": "where r1P is the distance between q1 and P, as and so on.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 14,
+      "kind": "list",
+      "text": "5. An equipotential surface is a surface over which potential has a constant value. For a point charge, concentric spheres centred at a location of the charge are equipotential surfaces. The electric field E at a point is perpendicular to the equipotential surface through the point. E is in the direction of the steepest decrease of potential."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Physics", "76", "Reprint 2026-27"],
+  "note": "Blocks 1-3 are one grey Example box carrying the vertical margin label 'EXAMPLE 2.10'; it is split only so the displayed equation can be its own needs_special block. Blocks 4-14 are one light-blue SUMMARY box whose numbered list runs past the bottom of the page. The text_layer encodes the prime sign as '¢' (e.g. 'Q¢ = CV¢'); the page image clearly prints a prime, so the prime character was taken from the image for that glyph only. Displayed equations appear in the text_layer as scrambled out-of-order fragments, so their text is left empty for the special transcriber. A diagonal '© NCERT not to be republished' watermark crosses the page and was not transcribed."
+}

@@ -1,0 +1,63 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "9.21\n(a)\n(i) Let a parallel beam be the incident from the left on the convex\nlens first.\nf1 = 30 cm and u1 = – ∞, give  v1 = + 30 cm. This image becomes\na virtual object for the second lens.\nf2 = –20 cm, u 2 = + (30 – 8) cm = + 22 cm which gives,\nv2 = – 220 cm. The parallel incident beam appears to diverge\nfrom a point 216 cm from the centre of the two-lens system.\n(ii) Let the parallel beam be incident from the left on the concave\nlens  first: f1 = – 20 cm, u1 = – ∞, give v1 = – 20 cm. This image\nbecomes a real object for the second lens: f2 = + 30 cm, u2 =\n– (20 + 8) cm = – 28 cm which gives, v2 = – 420 cm. The parallel\nincident beam appears to diverge from a point 416 cm on the\nleft of the centre of the two-lens system.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Clearly, the answer depends on which side of the lens system\nthe parallel beam is incident. Further we do not have a simple lens\nequation true for all u (and v) in terms of a definite constant of the\nsystem  (the constant being determined by f1 and f2, and the separation\nbetween the lenses). The notion of effective focal length, therefore,\ndoes not seem to be meaningful for this system."
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "(b)\nu1 = – 40 cm, f1 = 30 cm, gives v1= 120 cm.\nMagnitude of magnification due to the first (convex) lens is 3.\nu 2 = + (120 – 8) cm = +112 cm (object virtual);"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [625, 1070, 1210, 1135],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "Magnitude of magnification due to the second (concave)\nlens = 20/92.\nNet magnitude of magnification = 0.652\nSize of the image = 0.98 cm"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "9.22\nIf the refracted ray in the prism is incident on the second face at the\ncritical angle ic, the angle of refraction r at the first face is (60°–ic).\nNow, ic = sin–1 (1/1.524) ~ 41°\nTherefore, r = 19°\nsin i =  0.4962; i  ~ 30°"
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "9.23\n(a)"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [620, 1480, 780, 1545],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "i.e.,\nv = – 90 cm,\nMagnitude of magnification = 90/9 = 10.\nEach square in the virtual image  has an area 10 × 10 × 1 mm2\n= 100 mm2 = 1 cm2\n(b)\nMagnifying power = 25/9 = 2.8\n(c)\nNo, magnification of an image by a lens and angular magnification\n(or magnifying power) of an optical instrument are two separate\nthings. The latter is the ratio of the angular size of the object\n(which is equal to the angular size of the image even if the image\nis magnified) to the angular size of the object if placed at the near\npoint (25 cm). Thus, magnification magnitude is |(v/u)| and\nmagnifying power is (25/ |u|). Only when the image is located at\nthe near point |v| = 25 cm, are the two quantities equal.",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "504",
+    "Physics",
+    "2022-23"
+  ],
+  "note": "BOOK BACK MATTER, NOT CHAPTER 14 CONTENT. Printed page 504, still the book's ANSWERS section (CHAPTER 9 answers 9.21 to 9.23); nothing on it belongs to Semiconductor Electronics, and it is transcribed only because the A2 schema rejects a zero-block page. previous_page_last_block was null, so continuation was judged from my own p035 output, which ended with the completed answer 9.20 ('21.4 cm'); this page opens with 9.21 and closes with the end of 9.23(c), so neither edge continues mid-sentence. Two printed display fractions are deferred to A2S as equation blocks: the '112 x 20 / 92' fraction in 9.21(b) (n=4, whose line also carries the words 'f2 = - 20 cm which gives v2 ... cm') and the '1/v + 1/9 = 1/10' line that opens 9.23(a) (n=8); both are scrambled in the text layer. Block n=7 holds only the printed item label '9.23 (a)' that sits to the left of that fraction."
+}

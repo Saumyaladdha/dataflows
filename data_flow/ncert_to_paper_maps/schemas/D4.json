@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/D4.json",
+  "title": "D4 agent output (d4-evidence-quoter)",
+  "description": "Section 12/D4 'Agent output' line and .claude/agents/d4-evidence-quoter.md's worked output shape: {\"link_type\", \"derivation_steps\", \"evidence\": [{\"for\",\"passage_id\",\"exact_line\"}], \"supports_answer\", \"missing\", \"note\"}. Created as part of the D1-D4 runner-plugin build (2026-10), replacing the empty placeholder schema file. Cross-checks that need the per-item input context (exact_line found word-for-word in its passage via quote_verify.find; passage_id among the latest passages actually given; rule_used needs >=1 quote for:'rule', rules_chained needs >=2; states_answer needs empty derivation_steps; a statement question marked fully needs one quote per statement; the numerical derivation cross-check) live in scripts/checks/D4.py, same split as every other agent-output schema in this build (e.g. schemas/C1.json, schemas/B8.json).",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["link_type", "derivation_steps", "evidence", "supports_answer", "missing", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "link_type": {
+          "type": "string",
+          "enum": ["states_answer", "rule_used", "rules_chained", "concept_applied", "beyond_ncert_method"]
+        },
+        "derivation_steps": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Short algebra/arithmetic/unit-conversion/logic steps only, in words or LaTeX. Must be empty when link_type is states_answer."
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["for", "passage_id", "exact_line"],
+            "additionalProperties": false,
+            "properties": {
+              "for": { "type": "string" },
+              "passage_id": { "type": "string" },
+              "exact_line": { "type": "string" }
+            }
+          }
+        },
+        "supports_answer": { "type": "string", "enum": ["fully", "partly", "not_at_all"] },
+        "missing": { "type": "array", "items": { "type": "string" } },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

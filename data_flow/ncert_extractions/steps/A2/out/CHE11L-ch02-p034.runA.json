@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "filling up of orbitals with electrons. The principle states : In the ground state of the atoms, the orbitals are filled in order of their increasing energies. In other words, electrons first occupy the lowest energy orbital available to them and enter into higher energy orbitals only after the lower energy orbitals are filled. As you have learnt above, energy of a given orbital depends upon effective nuclear charge and different type of orbitals are affected to different extent. Thus, there is no single ordering of energies of orbitals which will be universally correct for all atoms.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "However, following order of  energies of the orbitals is extremely useful:"
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 4f, 5d, 6p, 7s..."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The order may be remembered by using the method given in Fig. 2.17. Starting from the top, the direction of the arrows gives the order of filling of orbitals, that is starting from right top to bottom left. With respect to placement of outermost valence electrons, it is remarkably accurate for all atoms. For example, valence electron in potassium must choose between 3d and 4s orbitals and as predicted by this sequence, it is found in 4s orbital. The above order should be assumed to be a rough guide to the filling of energy levels. In many cases, the orbitals are similar in energy and small changes in atomic structure may bring about a change in the order of filling. Even then, the above series is a useful guide to the building of the electronic structure of an atom provided that it is remembered that exceptions may occur."
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        294,
+        1003,
+        812,
+        2006
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "Pauli Exclusion Principle"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The number of electrons to be filled in various orbitals is restricted by the exclusion principle, given by the Austrian scientist Wolfgang Pauli (1926). According to this principle : No two electrons in an atom can have the same set of four quantum numbers. Pauli exclusion principle can also be stated as : “Only two electrons may exist in the same orbital and these electrons must have opposite spin.” This means that the two electrons can have the same value of three quantum numbers n, l and ml, but must have the opposite spin quantum number. The restriction imposed by Pauli’s exclusion principle on the number of electrons in an orbital helps in calculating the capacity of electrons to be present in any subshell. For example, subshell 1s comprises one orbital and thus the maximum number of electrons present in 1s subshell can be two, in p and d subshells, the maximum number of electrons can be 6 and 10 and so on. This can be summed up as : the maximum number of electrons in the shell with principal quantum number n is equal to 2n2."
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "Hund’s Rule of Maximum Multiplicity"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "This rule deals with the filling of electrons into the orbitals belonging to the same subshell (that is, orbitals of equal energy, called degenerate orbitals). It states : pairing of"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "62",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "Seam judged against CHE11L-ch02-p033.runA.json, written immediately before this page (the instruction's named anchor p030 has no output on disk). p033 ends mid-sentence at 'The building up of orbitals means the' with last_block_continues_on_next true; this page opens 'filling up of orbitals with electrons.', the completion of that sentence, so first_block_continues_from_previous is true and the two pages agree. input's previous_page_last_block was null. Reading order is the left column then the right column; the printed paragraph that begins 'The order may be remembered' runs across the column break — the left column ends 'Fig. 2.17. Starting from' and the right column resumes 'the top, the direction of the arrows gives the' — so it is one paragraph block (n=4), as the text layer also stores it, and Fig. 2.17, which occupies the rest of the left column, is listed after it as block n=5. Block n=5 is the only deferral: its bbox covers the arrow diagram with every one of its in-diagram orbital labels (1s; 2s, 2p; 3s, 3p, 3d; 4s, 4p, 4d, 4f; 5s, 5p, 5d, 5f; 6s, 6p, 6d; 7s, 7p) and the diagonal filling arrows, together with the caption below it ('Fig.2.17  Order of filling of orbitals'); the diagram is not described. Block n=3 is the flush-left display line of the orbital energy order, which the text layer stores clean and unscrambled ('1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 4f,' / '5d, 6p, 7s...'), so it is transcribed as a list rather than deferred; it is not a numbered equation. Inline notation follows the layer's flattened spelling rather than the printed italics and subscripts: 'quantum numbers n, l and ml', and in particular 'is equal to 2n2.' at the end of block n=7, which is the layer's flattening of the printed 2n-squared — written the layer's way deliberately, since a superscript there would fold to the number '2n2'/'22' and assert a number the page does not print. One departure from the layer: the layer renders the printed 'For example, valence electron in potassium' with a lowercase 'for example' (it breaks the line there, 'for all atoms. for' / 'example,'); the page image plainly prints a capital F at the start of that sentence, so block n=4 keeps 'For example'. The bold runs ('In the ground state of the atoms, the orbitals are filled in order of their increasing energies.', 'No two electrons in an atom can have the same set of four quantum numbers.', the quoted 'Only two electrons may exist in the same orbital and these electrons must have opposite spin.', 'the maximum number of electrons in the shell with principal quantum number n is equal to 2n2.', 'degenerate orbitals).', 'pairing of') are printed emphasis and kept inline. 'Pauli Exclusion Principle' and 'Hund's Rule of Maximum Multiplicity' are blue italic side-headings printed once each, so they are heading blocks, not running headers. The doubled space in 'following order of  energies' is as printed. Block n=9 breaks off at 'It states : pairing of' and is completed on p035, so last_block_continues_on_next is true. bboxes are original-image pixels (1750x2180); the image renders at 1606x2000, so displayed coordinates were scaled by 1.09."
+}

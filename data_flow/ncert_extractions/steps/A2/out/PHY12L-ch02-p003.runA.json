@@ -1,0 +1,82 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "(ii) Equation (2.2) defines potential energy difference in terms of the physically meaningful quantity work. Clearly, potential energy so defined is undetermined to within an additive constant.What this means is that the actual value of potential energy is not physically significant; it is only the difference of potential energy that is significant. We can always add an arbitrary constant α to potential energy at every point, since this will not change the potential energy difference:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [210, 615, 615, 660],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Put it differently, there is a freedom in choosing the point where potential energy is zero. A convenient choice is to have electrostatic potential energy zero at infinity. With this choice, if we take the point R at infinity, we get from Eq. (2.2)"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 825, 1010, 875],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Since the point P is arbitrary, Eq. (2.3) provides us with a definition of potential energy of a charge q at any point. Potential energy of charge q at a point (in the presence of field due to any charge configuration) is the work done by the external force (equal and opposite to the electric force) in bringing the charge q from infinity to that point."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "2.2  ELECTROSTATIC POTENTIAL"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Consider any general static charge configuration. We define potential energy of a test charge q in terms of the work done on the charge q. This work is obviously proportional to q, since the force at any point is qE, where E is the electric field at that point due to the given charge configuration. It is, therefore, convenient to divide the work by the amount of charge q, so that the resulting quantity is independent of q. In other words, work done per unit test charge is characteristic of the electric field associated with the charge configuration. This leads to the idea of electrostatic potential V due to a given charge configuration. From Eq. (2.1), we get:"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Work done by external force in bringing a unit positive charge from point R to P"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 1655, 1195, 1750],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "where VP and VR are the electrostatic potentials at P and R, respectively. Note, as before, that it is not the actual value of potential but the potential difference that is physically significant. If, as before, we choose the potential to be zero at infinity, Eq. (2.4) implies:"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Work done by an external force in bringing a unit positive charge from infinity to a point = electrostatic potential (V ) at that point."
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1093, 324, 1436, 737],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "box",
+      "text": "COUNT ALESSANDRO VOLTA (1745 –1827)\nCount Alessandro Volta (1745 – 1827) Italian physicist, professor at Pavia. Volta established that the animal electricity observed by Luigi Galvani, 1737–1798, in experiments with frog muscle tissue placed in contact with dissimilar metals, was not due to any exceptional property of animal tissues but was also generated whenever any wet body was sandwiched between dissimilar metals. This led him to develop the first voltaic pile, or battery, consisting of a large stack of moist disks of cardboard (electrolyte) sandwiched between disks of metal (electrodes)."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "47", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null even though page is 3, so continuation could not be cross-checked; block 1 begins a complete new sentence but is item (ii) of an enumeration that evidently began on the previous page, so first_block_continues_from_previous is set false on the stated mid-sentence/table/box test. Main (left) column listed first, then the right-hand side box; the box is laid out alongside the main column, not after it. Text layer renders the Greek letter in block 1 as 'a'; the page image clearly shows alpha, so the image was trusted. Line-break hyphens inside the side box ('electri-city', 'electro-lyte') were joined. The rotated sidebar title 'COUNT ALESSANDRO VOLTA (1745 –1827)' is kept as the first line of the box block. A diagonal watermark reading '© NCERT not to be republished' crosses the page and was not transcribed."
+}

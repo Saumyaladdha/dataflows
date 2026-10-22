@@ -1,0 +1,130 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "where ρ is the mass density of the gas.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "A gas that satisfies Eq. (12.3) exactly at all pressures and temperatures is defined to be an ideal gas. An ideal gas is a simple theoretical model of a gas. No real gas is truly ideal. Fig. 12.1 shows departures from ideal gas behaviour for a real gas at three different temperatures. Notice that all curves approach the ideal gas behaviour for low  pressures and high temperatures."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "At low pressures or high temperatures the molecules are far apart and molecular interactions are negligible. Without interactions the gas behaves like an ideal one."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "If we fix µ and T in Eq. (12.3), we get"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        228,
+        712,
+        848,
+        756
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "i.e., keeping temperature constant, pressure of a given mass of gas varies inversely with volume. This is the famous Boyle’s law. Fig. 12.2  shows comparison between experimental P-V curves and the theoretical curves predicted by Boyle’s law. Once again you see that the  agreement is good at high temperatures and  low pressures. Next, if you fix P, Eq. (12.1) shows that V ∝  T i.e., for a fixed pressure, the volume of a gas is proportional to its absolute temperature T (Charles’ law). See Fig. 12.3."
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        200,
+        1128,
+        848,
+        1820
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Finally, consider a mixture of non-interacting ideal  gases: µ1  moles of gas 1, µ2 moles of gas 2, etc. in a vessel of volume V at temperature T and pressure P. It is then found that the equation  of state of the mixture is :"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        908,
+        302,
+        1540,
+        352
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        896,
+        372,
+        1540,
+        438
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        908,
+        448,
+        1540,
+        492
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Clearly P1 =    µ1 R T/V   is the pressure that gas 1 would  exert at the same conditions of volume and  temperature if no other gases were present. This is called the partial pressure of the gas. Thus, the total pressure of a mixture of ideal gases is the sum of partial pressures. This is Dalton’s law of partial pressures."
+    },
+    {
+      "n": 13,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        880,
+        750,
+        1540,
+        1400
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "We next consider some examples which give us information about the volume occupied by the molecules and the volume of a single molecule."
+    },
+    {
+      "n": 15,
+      "kind": "box",
+      "text": "Example 12.1 The density of water is  1000 kg m–3. The density of water vapour at 100 °C and 1 atm pressure is 0.6 kg m–3. The volume of a molecule multiplied by the total number gives ,what is called, molecular volume. Estimate the ratio (or fraction) of the molecular volume  to the total volume occupied by the water vapour under the above conditions of temperature and pressure."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "KINETIC THEORY",
+    "247",
+    "2024-25"
+  ],
+  "note": "Two-column page, left column then right column. previous_page_last_block was null; I read PHY11L-ch12-p003 myself immediately before this page and it ends with the complete Eq. (12.5), while this page opens with the complete sentence 'where ρ is the mass density of the gas.' — so no mid-sentence join, though that sentence does gloss Eq. (12.5) on the previous page. Eqs. (12.6), (12.7), (12.8), (12.9) and Figs. 12.2 and 12.3 (each graph together with its caption) are marked needs_special with bboxes in the 1825x2160 image pixel space, text left empty. The left-column paragraph beginning 'Finally, consider a mixture...' runs on into the right column and is blocked as one paragraph. The 'Example 12.1' box ends with the question statement and its worked solution continues on the next page, so last_block_continues_on_next is true. The lone '⊳' near the top of the text layer is the decorative triangle marker printed at the left of the Example box, not text. Superscripts are flattened in the text layer ('kg m–3'), copied as extracted. Text layer matched the image."
+}

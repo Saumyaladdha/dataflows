@@ -1,0 +1,17 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 2, "no_change": true},
+    {"n": 4, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "Summary\nAmines can be considered as derivatives of ammonia obtained by replacement of\nhydrogen atoms with alkyl or aryl groups. Replacement of one hydrogen atom of\nammonia gives rise to structure of the type R-NH2, known as primary amine.\nSecondary amines are characterised by the structure R2NH or R-NHR′ and tertiary\namines by R3N, RNR′R″ or R2NR′.  Secondary and tertiary amines are known as\nsimple amines if the alkyl or aryl groups are the same and mixed amines if the\ngroups are different. Like ammonia, all the three types of amines have one unshared\nelectron pair on nitrogen atom due to which they behave as Lewis bases.\nAmines are usually formed from nitro compounds, halides, amides, imides, etc.\nThey exhibit hydrogen bonding which influence their physical properties. In\nalkylamines, a combination of electron releasing, steric and H-bonding factors\ninfluence the stability of the substituted ammonium cations in protic polar solvents\nand thus affect the basic nature of amines. Alkyl amines are found to be stronger\nbases than ammonia. In aromatic amines, electron releasing and withdrawing groups,\nrespectively increase and decrease their basic character. Aniline is a weaker base",
+      "fixes": [
+        {"wrong": "R-NHR¢", "right": "R-NHR′"},
+        {"wrong": "RNR¢R¢¢¢¢¢¢¢¢¢", "right": "RNR′R″"},
+        {"wrong": "R2NR¢.¢.¢.¢.¢.", "right": "R2NR′."}
+      ]
+    }
+  ],
+  "note": "Blocks n=1, n=2, n=4 match the image exactly, no changes. Block n=5 (Summary) had the chemistry prime/double-prime symbols denoting distinct substituent groups (R-NHR′, RNR′R″, R2NR′) corrupted into repeated cent-sign characters ('¢') by the text layer -- the image clearly prints 'R-NHR’', 'RNR’R\"' and 'R2NR’.' Restored to the real prime/double-prime marks; no other wording changed. This is the same category of symbol-flattening bug as the brief's hat/modulus/degree-symbol cases, just affecting prime marks instead."
+}

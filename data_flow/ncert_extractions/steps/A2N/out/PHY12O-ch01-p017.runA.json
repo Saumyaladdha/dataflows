@@ -1,0 +1,31 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {
+      "n": 3,
+      "corrected_text": "The resultant of forces F₂ and F₃ is 3/4πε₀ Qq/l² along OA, by the parallelogram law. Therefore, the total force on Q = 3/4πε₀ Qq/l² (r̂ – r̂) = 0, where r̂ is the unit vector along OA.\nIt is clear also by symmetry that the three forces will sum to zero. Suppose that the resultant force was non-zero but in some direction. Consider what would happen if the system was rotated through 60° about O.",
+      "fixes": [
+        {"wrong": "resultant of forces F2 and F3", "right": "resultant of forces F₂ and F₃"},
+        {"wrong": "3/4πε0 Qq/l2 along OA", "right": "3/4πε₀ Qq/l² along OA"},
+        {"wrong": "total force on Q = 3/4πε0 Qq/l2 (ˆr – ˆr) = 0, where ˆr is", "right": "total force on Q = 3/4πε₀ Qq/l² (r̂ – r̂) = 0, where r̂ is"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "Solution  The forces acting on charge q at A due to charges q at B and –q at C are F₁₂ along BA and F₁₃ along AC respectively, as shown in Fig. 1.10. By the parallelogram law, the total force F₁ on the charge q at A is given by\nF₁ = F r̂₁ where r̂₁ is a unit vector along BC.\nThe force of attraction or repulsion for each pair of charges has the same magnitude",
+      "fixes": [
+        {"wrong": "are F12 along BA and F13 along AC", "right": "are F₁₂ along BA and F₁₃ along AC"},
+        {"wrong": "the total force F1 on the charge q at A is given by\nF1 = F ˆr1 where ˆr1 is a unit vector", "right": "the total force F₁ on the charge q at A is given by\nF₁ = F r̂₁ where r̂₁ is a unit vector"}
+      ]
+    },
+    {
+      "n": 8,
+      "corrected_text": "The total force F₂ on charge q at B is thus F₂ = F r̂₂, where r̂₂ is a unit vector along AC.",
+      "fixes": [
+        {"wrong": "total force F2 on charge q at B is thus F2 = F ˆr 2, where ˆr 2 is", "right": "total force F₂ on charge q at B is thus F₂ = F r̂₂, where r̂₂ is"}
+      ]
+    }
+  ],
+  "note": "n=3, 6, 8 had flattened force subscripts (F2/F3/F1/F12/F13), a flattened permittivity subscript (ε0), flattened exponent (l2 -> l²), and detached hats (ˆr, ˆr1, ˆr 2) all restored to match the image's r̂, r̂₁, r̂₂. n=1, 4 already matched exactly."
+}

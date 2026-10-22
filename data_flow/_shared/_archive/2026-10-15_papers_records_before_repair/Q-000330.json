@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000330",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:54"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "For the reaction $2\\mathrm{A}$ $\\mathrm{B} + \\mathrm{C}$, $\\mathrm{KC} = 4 \\times 10{-}3$. At a given time, the composition of reaction mixture is: $[\\mathrm{A}] = [\\mathrm{B}] = [\\mathrm{C}] = 2 \\times 10{-}3\\,\\mathrm{M}$. Then, which of the following is correct?",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Reaction is at equilibrium.",
+    "2": "Reaction has a tendency to go in forward direction.",
+    "3": "Reaction has a tendency to go in backward direction.",
+    "4": "Reaction has gone to completion in forward direction."
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "54\nFor the reaction 2A B + C, KC = 4 × 10–3. At a given time, the composition of reaction mixture is: [A]\n= [B] = [C] = 2 × 10–3 M. Then, which of the following is correct?\n(1)\nReaction is at equilibrium.\n(2)\nReaction has a tendency to go in forward\ndirection.\n(3)\nReaction has a tendency to go in\nbackward direction.\n(4)\nReaction has gone to completion in\nforward direction.\nEquilibrium\n",
+  "b4_script_options": {
+    "1": "Reaction is at equilibrium.",
+    "2": "Reaction has a tendency to go in forward\ndirection.",
+    "3": "Reaction has a tendency to go in\nbackward direction.",
+    "4": "Reaction has gone to completion in\nforward direction.\nEquilibrium"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "physical",
+  "b6_answer": "3",
+  "b6_reason": "Q = [B][C]/[A]^2 = 1, which is far greater than Kc = 4 x 10^-3, so the reaction must shift backward to reach equilibrium.",
+  "b6_working": "Q = (2e-3)(2e-3)/(2e-3)^2 = 1 (equal concentrations cancel exactly, so Q = 1 regardless of the numeric value). Kc = 4 x 10^-3 = 0.004. Q > Kc => net reverse reaction.",
+  "b6_confidence": "high",
+  "b6_note": "Minor extraction damage: the reaction arrow is missing ('2A  B + C') and exponents lost their superscript markup ('4 x 10{-}3', '2 x 10{-}3'). The conclusion is robust to this because Q = 1 for any equal concentrations and Kc is far below 1 on any reading of the exponent sign.",
+  "b6_agrees_with_key": true
+}

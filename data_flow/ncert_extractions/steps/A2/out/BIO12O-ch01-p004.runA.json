@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [240, 255, 1530, 1955],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Figure 1.1 Approximate life spans of some organisms",
+      "bold_terms": ["Figure 1.1"],
+      "italic_terms": [],
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["BIOLOGY", "4", "2022-23"],
+  "note": "Whole page is a single full-page illustration panel (Figure 1.1), deferred to A2S with a bbox; its organism labels and fill-in-the-blank spans (e.g. 'Elephant( _______ )', 'Butter fly ( 1-2 weeks)', 'Crow ( 15 years)', 'Parrot ( 140 years)', 'Crocodile ( 60 years)', 'Tortoise (100-150 years)') are drawn as image text and appear nowhere in the text layer, so they are left for the special transcriber rather than transcribed here. The caption line is emitted as its own block because it is the only prose the text layer carries. Page furniture removed: the 'BIOLOGY' running header, the folio '4' (in the orange side tab; it appears twice in the text layer) and the '2022-23' reprint line; the decorative top banner and leaf/logo artwork carry no text. previous_page_last_block was null even though this is page 4, so the opening continuation flag was judged from the page itself: it opens with a figure panel, not mid-sentence."
+}

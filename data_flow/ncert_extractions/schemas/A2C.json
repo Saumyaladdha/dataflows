@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A2C.json",
+  "title": "A2C agent output (a2c-structure-transcriber)",
+  "description": "One drawn CHEMICAL STRUCTURE, read into machine-readable notation. Item = one A2 figure/equation block whose artwork is a structural formula or a reaction scheme. This is a transcription, not a rendering decision: the exports keep showing NCERT's own drawing, because an RDKit depiction is a standard drawing and would match the book less. What SMILES buys is the other half of this project -- a question's structure can be matched against a chapter's by substructure rather than by words. Reading a drawn ring into SMILES is a judgement about a picture, which is why it is an agent step and not a script.",
+  "type": "object",
+  "required": ["kind", "note"],
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "type": "string",
+      "enum": ["structure", "reaction", "not_a_structure"],
+      "description": "`structure` = one or more discrete species drawn; `reaction` = reactants/products joined by an arrow; `not_a_structure` = the block is a photograph, a graph, an orbital diagram or anything else that has no SMILES. Choosing `not_a_structure` is a correct and expected answer, never a failure."
+    },
+    "species": {
+      "type": "array",
+      "description": "structure only: every discrete species drawn in the block, in reading order.",
+      "items": {
+        "type": "object",
+        "required": ["smiles"],
+        "additionalProperties": false,
+        "properties": {
+          "smiles": { "type": "string", "description": "SMILES for this species, as drawn. Do not normalise, re-aromatise or 'correct' what the book draws." },
+          "label": { "type": "string", "description": "The name printed beside it in the book, copied exactly, e.g. 'Aniline'. Empty if none is printed." }
+        }
+      }
+    },
+    "reaction_smiles": {
+      "type": "string",
+      "description": "reaction only: reactants>agents>products. Agents (the reagent written over the arrow) go in the middle field, not with the reactants."
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["certain", "probable", "unsure"],
+      "description": "`unsure` is the honest answer for a structure drawn with an implicit or ambiguous group, and is preferred to a confident guess -- a wrong SMILES is worse than a missing one, because it will silently mis-match questions."
+    },
+    "note": {
+      "type": "string",
+      "description": "What was read and anything that constrained it: an R group left unspecified, a bond whose stereochemistry the drawing does not fix, a species drawn only as a label. Required."
+    }
+  }
+}

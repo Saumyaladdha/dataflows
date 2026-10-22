@@ -1,0 +1,21 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "The degree labels under the three solvated ammonium ions are gone. The book prints '1 degree' under the left (primary) ion, '2 degrees' under the centre (secondary) ion and '3 degrees' under the right (tertiary) ion - these are what make the decreasing-order figure readable, since the caption only says 'Decreasing order of extent of H-bonding'. The render shows the three structures with nothing beneath them.",
+      "where": "directly below the three solvation structures, above the 'Decreasing order of...' caption"
+    },
+    {
+      "kind": "duplicated",
+      "what": "The clause 'order of stability of ions are as follows:' is printed twice - once correctly as the last line of the body paragraph ('The order of stabili-/ty of ions are as follows:') and again immediately over it as a stray oversized display band reading 'order of stability of ions are as follows:' in the large maths face, overlapping and partly obscuring the real line.",
+      "where": "between the long body paragraph and the solvation figure, centre of page"
+    },
+    {
+      "kind": "clipped",
+      "what": "The tertiary (right-hand) solvated ion is cut off at the right frame edge: the book shows 'N-H...OH2', the render shows 'N-H...OH' with the subscript 2 sliced away at the margin. The stray oversized band above the figure is also clipped along its top and bottom by the figure rule.",
+      "where": "right edge of the solvation figure, lower third"
+    }
+  ],
+  "note": "Compared paragraph by paragraph and structure by structure. Both curved mechanism arrows in the protonation schemes ARE present and correctly drawn - the lone pair on N curves down to H+ in both the alkanamine and the ammonia equation, with the colon, the plus charge on nitrogen and the equilibrium arrows all intact; both product cations show all their H substituents. The 'Structure-basicity relationship of amines' and '(a) Alkanamines versus ammonia' subheads, the full body text including the tertiary > secondary > primary > NH3 order, and the folio 'Chemistry 268' with its rule are all present. The left and centre solvation structures are complete (OH2 above and below for the primary ion, two H...OH2 for the secondary); only the right-hand one loses its final subscript. The blank lower third of the render mirrors the book's own short page and is not reported."
+}

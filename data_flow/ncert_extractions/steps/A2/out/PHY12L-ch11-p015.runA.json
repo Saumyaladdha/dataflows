@@ -1,0 +1,35 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [443, 278, 1445, 802],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "POINTS TO PONDER\n1.\nFree electrons in a metal are free in the sense that they move inside the\nmetal in a constant potential (This is only an approximation). They are\nnot free to move out of the metal. They need additional energy to get\nout of the metal.\n2.\nFree electrons in a metal do not all have the same energy. Like molecules\nin a gas jar, the electrons have a certain energy distribution at a given\ntemperature. This distribution is different from the usual Maxwell’s\ndistribution that you have learnt in the study of kinetic theory of gases.\nYou will learn about it in later courses, but the difference has to do\nwith the fact that electrons obey Pauli’s exclusion principle.\n3.\nBecause of the energy distribution of free electrons in a metal, the energy\nrequired by an electron to come out of the metal is different for different\nelectrons. Electrons with higher energy require less additional energy to\ncome out of the metal than those with lower energies. Work function is\nthe least energy required by an electron to come out of the metal.\n4.\nObservations on photoelectric effect imply that in the event of matter-\nlight interaction, absorption of energy takes place in discrete units of hn.\nThis is not quite the same as saying that light consists of particles,\neach of energy hn.\n5.\nObservations on the stopping potential (its independence of intensity\nand dependence on frequency) are the crucial discriminator between\nthe wave-picture and photon-picture of photoelectric effect.\n6.\nThe wavelength of a matter wave given by \nh\np\nλ =\n  has physical\nsignificance; its phase velocity  vp has no physical significance. However,\nthe group velocity of the matter wave is physically meaningful and\nequals the velocity of the particle."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "EXERCISES"
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "11.1\nFind the\n(a) maximum frequency, and\n(b) minimum wavelength of X-rays produced by 30 kV electrons."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "288",
+    "Reprint 2026-27"
+  ],
+  "note": "first_block_continues_from_previous judged from page 14, which I read myself (its SUMMARY box closed with item 9, a complete sentence, and this page opens a new quantities table); previous_page_last_block was null. Reading order on the page is: the five-row quantities table (Physical Quantity / Symbol / Dimensions / Unit / Remarks), then the POINTS TO PONDER box, then the EXERCISES heading and exercise 11.1. The table is marked needs_special with its bbox; the text layer flattens it to a column-wise run of cells (\"Physical\\nSymbol\\nDimensions\\nUnit\\nRemarks\\nQuantity\\nPlanck’s\\nh\\n[ML2T –1]...\"), and in the image the exponents are superscripts (ML^2 T^-1, ML^2 T^-3 A^-1, ML^2 T^-2, T^-1) and the symbols are Greek (phi-sub-0 for the work function, nu-sub-0 for the threshold frequency, lambda for the de Broglie wavelength). In point 6 the printed text sets lambda = h/p as a stacked fraction inside the running sentence; I kept the text-layer characters (\"\\nh\\np\\nλ =\\n\") in the box text rather than splitting the sentence, so the fraction is transcribed in place, not marked needs_special. Other notation losses: \"hn\" is h times Greek nu, \"vp\" is v with subscript p. last_block_continues_on_next is true because the EXERCISES list runs on to the next page (exercise 11.1 itself ends as a complete sentence)."
+}

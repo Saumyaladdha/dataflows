@@ -1,0 +1,52 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 22.5,
+    "columns": [
+      {"id": "left", "x0": 0.125, "x1": 0.489},
+      {"id": "right", "x0": 0.512, "x1": 0.877}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "running_header", "bbox": [0.126, 0.087, 0.272, 0.096],
+     "column": "left", "size_rel": 0.85, "align": "left", "font": "serif", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.860, 0.086, 0.874, 0.096],
+     "column": "right", "size_rel": 0.9, "align": "right", "font": "serif", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.125, 0.119, 0.489, 0.160],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.125, 0.171, 0.489, 0.330],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.125, 0.339, 0.489, 0.398],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "list", "bbox": [0.125, 0.406, 0.489, 0.473],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "list", "bbox": [0.125, 0.483, 0.489, 0.510],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "equation", "bbox": [0.145, 0.518, 0.489, 0.533],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-italic"},
+    {"n": 7, "role": "list", "bbox": [0.145, 0.539, 0.489, 0.648],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 8, "role": "list", "bbox": [0.125, 0.659, 0.489, 0.715],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 9, "role": "equation", "bbox": [0.125, 0.728, 0.489, 0.760],
+     "column": "left", "size_rel": 1.1, "align": "left", "font": "serif-italic"},
+    {"n": 10, "role": "paragraph", "bbox": [0.125, 0.765, 0.489, 0.898],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 11, "role": "box", "bbox": [0.512, 0.116, 0.877, 0.359],
+     "column": "right", "size_rel": 0.95, "align": "justify", "font": "serif-italic", "fill": "#cfe7d2"},
+    {"n": null, "role": "figure", "bbox": [0.532, 0.129, 0.607, 0.240],
+     "column": "right", "size_rel": 1.0},
+    {"n": 12, "role": "paragraph", "bbox": [0.512, 0.380, 0.877, 0.435],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 13, "role": "paragraph", "bbox": [0.512, 0.450, 0.877, 0.558],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 14, "role": "box", "bbox": [0.512, 0.590, 0.877, 0.903],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "fill": "#cfe7d2"},
+    {"n": null, "role": "decorative_image", "bbox": [0.21, 0.32, 0.84, 0.81],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.473, 0.972, 0.526, 0.981],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "serif", "text_color": "#231f20"}
+  ],
+  "note": "Ordinary two-column body page, 1750x2180 (ratio 0.803), not A4. No chapter banner, no page_header_band and no footer_rule on this page. body_text_size_px measured on the left-column prose. The left column carries the whole argument (blocks 1-10, including the displayed equations 2.12 and 2.13 as their own regions); the right column carries two green panels with two short prose blocks between them. Both green boxes - the 'Niels Bohr (1885-1962)' biography box (block 11) and the 'What does the negative electronic energy...' box (block 14) - print the same pale green, sampled from the flat interior as #cfe7d2; the Bohr box is fully ruled while box 14 has heavy green rules only at top and bottom, but the fill is the same. The Bohr portrait inside block 11 is listed as a separate figure element with n:null (the input has no block for it) and sits inside block 11's bbox. Block 10 is prose that embeds two further displayed expressions for E1 and E2 on their own lines; the input models them as part of block 10, so they are not split into separate equation regions here. Blocks 6 and 7 are indented under list item b), hence their x0 of 0.145 rather than the column edge. Elements are listed in reading order: left column top-to-bottom, then the right column starting with the Bohr box, matching the input's own block order. The last element is the bottom-centre edition line '2024-25', recorded as running_header for want of a footer-text role. The decorative_image is the diagonal 'NCERT / not to be republished' watermark; its bbox encloses a rotated object. All fourteen blocks matched by position with no nulls and no ambiguity."
+}

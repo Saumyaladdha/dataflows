@@ -1,0 +1,40 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "18.3.2 Transmission of Impulses"
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "A nerve impulse is transmitted from one neuron to another through junctions called synapses. A synapse is formed by the membranes of a pre-synaptic neuron and a post-synaptic neuron, which may or may not be separated by a gap called synaptic cleft. There are two types of synapses, namely, electrical synapses and chemical synapses. At electrical synapses, the membranes of pre- and post-synaptic neurons are in very close proximity. Electrical current can flow directly from one neuron into the other across these synapses. Transmission of an impulse across electrical synapses is very similar to impulse conduction along a single axon. Impulse transmission across an electrical synapse is always faster than that across a chemical synapse. Electrical synapses are rare in our system.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "At a chemical synapse, the membranes of the pre- and post-synaptic neurons are separated by a fluid-filled space called synaptic cleft (Figure 18.3). Do you know how the pre-synaptic neuron transmits an impulse (action potential) across the synaptic cleft to the post-synaptic neuron? Chemicals called neurotransmitters are involved in the transmission of impulses at these synapses. The axon terminals contain vesicles filled with these neurotransmitters. When an impulse (action potential) arrives at the axon terminal, it stimulates the movement of the synaptic vesicles towards the membrane where they fuse with the plasma"
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        480,
+        1210,
+        1395,
+        1995
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "234",
+    "BIOLOGY",
+    "2024-25"
+  ],
+  "note": "first_block_continues_from_previous judged from BIO11L-ch18-p004, which I read myself earlier in this batch (previous_page_last_block was null): p004 ends with the complete sentence '...once more responsive to further stimulation.' and this page opens with heading 18.3.2, so no continuation. The figure sits below the text on the page, so it is block 4 in reading order; the page's running text, however, breaks off mid-sentence at '...where they fuse with the plasma', which is why last_block_continues_on_next is true - it is block 3, the last text block, that runs on to p006. Block 4 is the labelled axon-terminal/synapse diagram (labels Axon, Axon terminal, Synaptic vesicles, Pre-synaptic membrane, Synaptic cleft, Post-synaptic membrane, Receptors, Neurotransmitters, Synapse) with the caption 'Figure 18.3 Diagram showing axon terminal and synapse'. Text layer and image agree."
+}

@@ -1,0 +1,37 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "For an area element of a closed surface, n̂ is taken to be the direction of outward normal, by convention.\n15. Gauss’s law: The flux of electric field through any closed surface S is 1/ε₀ times the total charge enclosed by S. The law is especially useful in determining electric field E, when the source distribution has simple symmetry:\n(i) Thin infinitely long straight wire of uniform linear charge density λ",
+      "fixes": [
+        {"wrong": "ˆn is taken", "right": "n̂ is taken"},
+        {"wrong": "1/ε0", "right": "1/ε₀"}
+      ]
+    },
+    {
+      "n": 3,
+      "corrected_text": "where r is the perpendicular distance of the point from the wire and n̂ is the radial unit vector in the plane normal to the wire passing through the point.",
+      "fixes": [
+        {"wrong": "ˆn is the radial", "right": "n̂ is the radial"}
+      ]
+    },
+    {"n": 4, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "where n̂ is a unit vector normal to the plane, outward on either side.",
+      "fixes": [
+        {"wrong": "ˆn is a unit vector", "right": "n̂ is a unit vector"}
+      ]
+    },
+    {"n": 7, "no_change": true},
+    {
+      "n": 9,
+      "corrected_text": "where r is the distance of the point from the centre of the shell and R the radius of the shell. q is the total charge of the shell:  q = 4πR²σ.",
+      "fixes": [
+        {"wrong": "4πR2σ", "right": "4πR²σ"}
+      ]
+    },
+    {"n": 10, "no_change": true}
+  ],
+  "note": "n1, n3 and n6 had the hat detached from n̂ restored. n1 also had flattened ε0 restored to ε₀. n9 had flattened R2 restored to R². n4, n7 and n10 already matched the image."
+}

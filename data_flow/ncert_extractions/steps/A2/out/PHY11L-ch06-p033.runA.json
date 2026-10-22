@@ -1,0 +1,49 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        450,
+        220,
+        610,
+        310
+      ],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "11. A rigid body is in mechanical equilibrium if\n(1)\nit is in translational equilibrium, i.e., the total external force on it is zero : \nF\n0\ni =\n∑\n,\nand\n(2)\nit is in rotational equilibrium, i.e. the total external torque on it is zero :\nτi\ni\ni\n=\n×\n=\n∑\n∑r\nF\n0 .\n12. The centre of gravity of an extended body is that point where the total gravitational\ntorque on the body is zero.\n13. The moment of intertia of a rigid body about an axis is defined by the formula  I\nm r\ni i\n=∑\n2\nwhere ri is the perpendicular distance of the ith point of the body from the axis. The\nkinetic energy of rotation is \n2\n1\n2\nK\nIω\n=\n.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        600,
+        800,
+        1400,
+        1115
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "POINTS TO PONDER\n1.\nTo determine the motion of the centre of mass of a system no knowledge of internal\nforces of the system is required. For this purpose we need to know only the external\nforces on the body.\n2.\nSeparating the motion of a system of particles as the motion of the centre of mass, (i.e.,\nthe translational motion of the system) and motion about (i.e. relative to) the centre of\nmass of the system is a useful technique in dynamics of a system of particles. One\nexample of this technique is separating the kinetic energy of a system of particles K as\nthe kinetic energy of the system about its centre of mass K′ and the kinetic energy of the\ncentre of mass MV2/2,\n      K = K′ + MV2/2\n3.\nNewton’s Second Law for finite sized bodies (or systems of particles) is based in  Newton’s\nSecond Law and also Newton’s Third Law for particles.\n4.\nTo establish that the time rate of change of the total angular momentum of a system of\nparticles is the total external torque in the system, we need not only Newton’s second\nlaw for particles, but also Newton’s third law with the provision that the forces between\nany two particles act along the line joining the particles.\n5.\nThe vanishing of the total external force and the vanishing of the total external torque\nare independent conditions. We can have one without the other. In a couple, total\nexternal force is zero, but total torque is non-zero.\n6.\nThe total torque on a  system is independent of the origin if the total external force is\nzero.\n7.\nThe centre of gravity of a body coincides with its centre of mass only if the gravitational\nfield does not vary from one part of the body to the other.",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "124",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "`previous_page_last_block` was null even though page is 33; continuation judged from the image: the shaded SUMMARY box opens mid-list with a displayed equation and item 11, so items 1-10 sat on the previous page. The text_layer hoists the whole POINTS TO PONDER box above the summary items and places the 'd dt ext L = τ' fragment between them; blocks are listed in true reading order from the image instead. Per the chapter note, inline-math stretches inside the two box blocks are copied as the characters the text_layer actually holds (subscripts/superscripts and summation signs are extracted onto their own lines and scrambled below word level), not re-rendered. The page carries a diagonal '© NCERT not to be republished' watermark across the table and POINTS TO PONDER box; it is a watermark, not page content, and was not transcribed."
+}

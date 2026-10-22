@@ -1,0 +1,120 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Louis de Broglie\n(1892 – 1987)\nLouis de Broglie, a French physicist, studied history as an undergraduate in the early 1910’s. His interest turned to science as a result of his assignment to radio communications in World War I. He received his Dr. Sc. from the University of Paris in 1924. He was professor of theoretical physics at the University of Paris from 1932 untill his retirement in 1962. He was awarded the Nobel Prize in Physics in 1929."
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        251,
+        830,
+        852,
+        902
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "where m is the mass of the particle, v its velocity and p its momentum. de Broglie’s prediction was confirmed experimentally when it was found that an electron beam undergoes diffraction, a phenomenon characteristic of waves. This fact has been put to use in making an electron microscope, which is based on the wavelike behaviour of electrons just as an ordinary microscope utilises the wave nature of light. An electron microscope is a powerful tool in modern scientific research because it achieves a magnification of about 15 million times."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "It needs to be noted that according to de Broglie, every object in motion has a wave character. The wavelengths associated with ordinary objects are so short (because of their large masses) that their wave properties cannot be detected. The wavelengths associated with electrons and other subatomic particles (with very small mass) can however be detected experimentally. Results obtained from the following problems prove these points qualitatively."
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Problem 2.12\nWhat will be the wavelength of a ball of mass 0.1 kg moving with a velocity of 10 m s–1 ?"
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Solution\nAccording to de Brogile equation (2.22)"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        925,
+        385,
+        1420,
+        537
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Problem 2.13\nThe mass of an electron is 9.1×10–31 kg. If its K.E. is 3.0×10–25 J, calculate its wavelength."
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "Solution\nSince K.E. = ½ mv2"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        925,
+        808,
+        1540,
+        1104
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "Problem 2.14\nCalculate the mass of a photon with wavelength 3.6 Å."
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "Solution\nλ = 3.6 Å = 3.6  × 10–10 m\nVelocity of photon = velocity of light"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        925,
+        1400,
+        1540,
+        1540
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "heading",
+      "text": "2.5.2 Heisenberg’s Uncertainty Principle"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Werner Heisenberg a German physicist in 1927, stated uncertainty principle which is the consequence of dual behaviour of matter and radiation. It states that it is impossible to determine simultaneously, the exact position and exact momentum (or velocity) of an electron."
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Mathematically, it can be given as in equation (2.23)."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "50",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p021.runA.json I wrote immediately before this page, whose last paragraph ends on the complete sentence 'between wavelength (λ) and momentum (p) of a material particle.' This page's first block in reading order is the green Louis de Broglie biography box, a new block, so first_block_continues_from_previous is false (and it matches that page's last_block_continues_on_next of false). Reading order is the left column top to bottom (green biography box, displayed equation (2.22), the two prose paragraphs, the pink Problem 2.12 box that begins at the foot of the column) and then the right column (the pink box holding the solution to Problem 2.12 and all of Problems 2.13 and 2.14, then section 2.5.2); the text layer instead stores the right-hand pink box FIRST, then equation (2.22) and the left-column prose, then 2.5.2, and finally the green biography box at the very end of its stream, so this page's text layer is held out of printed reading order. The photograph in the green box is not described. Four displayed formulae are left for the special transcriber with pixel bboxes and empty text: n=2 is equation (2.22) with its equation number inside the bbox, n=7 the de Broglie evaluation for the 0.1 kg ball including its '= 6.626 × 10–34 m (J = kg m2 s–2)' result line, n=10 the velocity and wavelength evaluation for the electron including its '= 812 m s–1' and '= 8967 × 10–10 m = 896.7 nm' result lines, and n=13 the photon-mass evaluation including its '= 6.135 × 10–29 kg' result line. Those are exactly the regions the layer scrambles into bare tokens ('6 626', '10 34', '1 2', '9 1', '34 10 8 1'), so no faithful inline transcription is possible there. Inline maths kept in running prose follows the layer's own flattened spelling ('0.1 kg', '10 m s–1', '9.1×10–31 kg', '3.0×10–25 J', '½ mv2', '3.6 Å = 3.6  × 10–10 m'). The bold statement of the uncertainty principle is printed in bold inside the paragraph that introduces it and is kept in that paragraph rather than split out. The spelling 'Brogile' in block n=6 and 'untill' in block n=1 are as printed. The last paragraph ends on a complete sentence whose equation (2.23) is printed on p023, so last_block_continues_on_next is false."
+}

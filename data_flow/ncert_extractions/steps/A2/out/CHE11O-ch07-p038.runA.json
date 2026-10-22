@@ -1,0 +1,95 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "A solid salt of the general formula Mx p+ Xy q– with molar solubility S in equilibrium with its saturated solution may be represented by the equation:"
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [215, 410, 862, 490],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "And its solubility product constant is given by:"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [215, 570, 848, 732],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The term Ksp in equation is given by Qsp (section 7.6.2) when the concentration of one or more species is not the concentration under equilibrium. Obviously under equilibrium conditions Ksp = Qsp but otherwise it gives the direction of the processes of precipitation or dissolution. The solubility product constants of a number of common salts at 298K are given in Table 7.9."
+    },
+    {
+      "n": 6,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [897, 255, 1540, 1975],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Problem 7.26 Calculate the solubility of A2X3 in pure water, assuming that neither kind of ion reacts with water. The solubility product of A2X3, Ksp = 1.1 × 10–23."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Solution"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [222, 1325, 765, 1420],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "If  S = solubility of A2X3, then"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [222, 1462, 810, 1675],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "Problem 7.27 The values of Ksp of two sparingly soluble salts Ni(OH)2 and AgCN are 2.0 × 10–15 and 6 × 0–17 respectively. Which salt is more soluble? Explain."
+    },
+    {
+      "n": 13,
+      "kind": "box",
+      "text": "Solution"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [252, 1905, 615, 1955],
+      "text": "",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "EQUILIBRIUM",
+    "229",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; chained off my own p037 output, whose last block was a complete display equation (or S = {Ksp / (33 x 44)}1/7), while this page opens a new sentence 'A solid salt of the general formula', so first_block_continues_from_previous is false. Block order follows the text layer's own order, which puts the Table 7.9 title (right column) after the left column's prose and before the pink Problem panel at the foot of the left column; that is also the sensible reading order, since paragraph 5 ends '...are given in Table 7.9.' and the panel's Problem 7.27 solution runs on to p039. Displayed expressions are needs_special with a pixel bbox and empty text, as throughout this chapter: blocks 2, 4, 9, 11 and 14. Equation numbers (7.44) and (7.45) are inside block 4's bbox, and the qualifier line '(where x x p+ = y x q-)' is inside block 2's bbox. Block 11 groups the contiguous solution displays from '[A3+] = 2S;  [X2-] = 3S' through 'therefore, Ksp = (2S)2(3S)3 = 108S5', '= 1.1 x 10-23', 'thus, S5 = 1 x 10-25' and 'S = 1.0 x 10-5 mol/L.', with the connective words therefore/thus inside the bbox. The pink panel is split into box prose blocks (7, 8, 10, 12, 13) interleaved with those needs_special displays so that no block is maths-only. Block 6 is Table 7.9; its title lines ('Table 7.9 The Solubility Product Constants, Ksp of Some Common Ionic Salts at 298K.') and column heads are inside the bbox, and the table body (Silver Bromide ... Zinc Sulphide with formulae and Ksp values) is absent from the text layer altogether, so it must go to the special transcriber. Paragraph 1 contains the large inline formula M(x,p+) X(y,q-) set at the head of the second line; the text layer stores it only as the scattered fragments 'M / X / x / p / y / q / + / -', and I transcribed it inline as 'Mx p+ Xy q-' in printed reading order, following the treatment of the inline graphic in p036 block 13. Problem 7.27 prints '6 x 0-17', apparently a typo for 6 x 10-17; kept verbatim as the text layer has it."
+}

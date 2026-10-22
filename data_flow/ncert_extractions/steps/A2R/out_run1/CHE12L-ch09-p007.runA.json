@@ -1,0 +1,26 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "The aniline structure in the answer to Example 9.3 (ii) is gone. The book draws a benzene ring with a magenta NH2 on it, alongside the label 'Aniline or benzenamine'; the render prints the words 'Aniline or benzenamine' alone with no structure, so the answer to 'write structures and IUPAC names' has lost its structure.",
+      "where": "bottom of the Example 9.3 box"
+    },
+    {
+      "kind": "misplaced",
+      "what": "The double-bond bars in the butanamide structure sit in the wrong place: the render puts the '||' above the carbonyl carbon and the O below it, so the bond is drawn between the C and nothing. The book puts the '||' between the C and the O underneath it.",
+      "where": "the CH3-CH2-CH2-C(=O)-NH2 structure in the Example 9.3 box"
+    },
+    {
+      "kind": "misplaced",
+      "what": "Intext Question 9.3 has lost its panel. The book encloses 'Intext Question' and question 9.3 with its three parts in a rounded box with a salmon bar down the right side; the render prints the heading and the question as ordinary unboxed body text between the Example box and section 9.5, so it no longer reads as an intext question.",
+      "where": "between the Example 9.3 box and section 9.5"
+    },
+    {
+      "kind": "formatting",
+      "what": "The butanamide structure loses its colour coding: the book sets the carbonyl C, the O and the NH2 in magenta; the render prints the whole formula in black. The 'Intext Question' heading likewise loses the book's blue/script styling and underline and is set small bold italic.",
+      "where": "the Example 9.3 box and the intext question heading"
+    }
+  ],
+  "note": "Compared the Example 9.3 box (question parts (i) and (ii), Solution, the butanamide answer and the aniline answer), Intext Question 9.3 with all three conversions including Cl-(CH2)4-Cl into hexan-1,6-diamine, and the whole of 9.5 Physical Properties down to 'the order of boiling points of isomeric amines is as follows:'. All of the prose is present and complete; the loss is the aniline ring drawing and the intext-question panel. The Example 9.3 box keeps its blue heading and rules correctly. Subscripts in the running text ((CH2)4) are again set on the baseline."
+}

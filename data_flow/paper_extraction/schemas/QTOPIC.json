@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/QTOPIC.json",
+  "title": "QTOPIC agent output (q-subtopic-picker) -- the topic ONE question tests, inside its chosen chapter",
+  "description": "ITEM GRANULARITY: one question, and the topic list is ONE CHAPTER'S. The agent may not reach into another chapter: if the real topic lives elsewhere the CHAPTER choice was wrong, and saying so in `note` is more useful than filing the question under a topic that does not fit. `Unspecified Topic` rows exist in 57 chapters of the source taxonomy and are PLACEHOLDERS, not answers -- choosing one is only right when the chapter genuinely has no topic for this question, and `note` should then say what topic was wanted, because using it to avoid deciding hides a gap that would otherwise get fixed. The per-topic question counts are supplied so the agent can see the taxonomy's shape, NOT so it can follow it: filing a question where the crowd already is makes the crowd grow and tells a student nothing.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "topic_ids",
+        "why",
+        "confidence"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "topic_ids": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "type": "string"
+          },
+          "description": "`topic_id` values from the supplied chapter's list, or exactly [\"unsure\"]. Validated against the list the item carried."
+        },
+        "topic_names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One sentence naming the fact the correct answer depends on."
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "note": {
+          "type": "string"
+        },
+        "proposed_topic": {
+          "type": "string",
+          "description": "The topic you wanted and could not find, named as it should appear in the taxonomy (for example \"Transport in Plants\", or \"Doppler Effect\"). Fill this WHENEVER you answer unsure, pick \"Unspecified Topic\", or settle for a near neighbour you are not happy with. It is how a gap becomes a fix: scripts/collect_taxonomy_gaps.py gathers these into one list with the questions that wanted each, so a missing topic is added once rather than worked around for ever."
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": [
+        "error"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "error": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

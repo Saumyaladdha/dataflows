@@ -1,0 +1,86 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "the field at any point on the spherical Gaussian surface has the same direction as the normal to the surface there,  and has the same magnitude at all points on the surface.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "The charge q enclosed by the Gaussian surface is the positive nuclear charge and the negative charge within the sphere of radius r,"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        213,
+        485,
+        523,
+        545
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Substituting for the charge density ρ  obtained earlier, we have"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        213,
+        616,
+        425,
+        681
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Gauss’s law then gives,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        213,
+        736,
+        643,
+        807
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "The electric field is directed radially outward."
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "(ii) r > R:  In this case, the total charge enclosed by the Gaussian spherical surface is zero since the atom is neutral. Thus, from Gauss’s law,\nE (r) × 4 π  r 2 = 0  or  E (r) = 0;    r > R\nAt r = R, both cases give the same result: E = 0."
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "ON SYMMETRY OPERATIONS\nIn Physics, we often encounter systems with various symmetries. Consideration of these symmetries helps one arrive at results much faster than otherwise by a straightforward calculation. Consider, for example an infinite uniform sheet of charge (surface charge density σ) along the y-z plane. This system is unchanged if (a) translated parallel to the y-z plane in any direction, (b) rotated about the x-axis through any angle. As the system is unchanged under such symmetry operation, so must its properties be. In particular, in this example, the electric field E must be unchanged.\nTranslation symmetry along the y-axis shows that the electric field must be the same at a point (0, y1, 0) as at (0, y2, 0). Similarly translational symmetry along the z-axis shows that the electric field at two point (0, 0, z1) and (0, 0, z2) must be the same. By using rotation symmetry around the x-axis, we can conclude that E must be perpendicular to the y-z plane, that is, it must be parallel to the x-direction.\nTry to think of a symmetry now which will tell you that the magnitude of the electric field is a constant, independent of the x-coordinate. It thus turns out that the magnitude of the electric field due to a uniformly charged infinite conducting sheet is the same at all points in space. The direction, however, is opposite of each other on either side of the sheet.\nCompare this with the effort needed to arrive at this result by a direct calculation using Coulomb’s law.",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "EXAMPLE 1.13",
+    "41",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input, so continuation is judged against the p040 output I had just written: p040's Example 1.13 panel ended on 'This is because' and this page opens with 'the field at any point on the spherical Gaussian surface...', mid-sentence, so first_block_continues_from_previous is true. Blocks n=1 to n=9 are the tail of the Example 1.13 panel; its three displayed expressions, whose text layer is a scrambled symbol stream, are needs_special (n=3, n=5, n=7), while the short display lines the text layer renders cleanly stay as box text in n=9. The blue 'ON SYMMETRY OPERATIONS' panel is one box block (n=10) including its own title, per the rule that a box is its own block. The side tab 'EXAMPLE 1.13' is listed as removed furniture here because the example's own label is not printed on this page. Both panels close on this page, so last_block_continues_on_next is false."
+}

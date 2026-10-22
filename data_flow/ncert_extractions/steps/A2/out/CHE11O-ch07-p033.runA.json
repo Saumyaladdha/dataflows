@@ -1,0 +1,109 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [238, 250, 578, 300],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Here, Ka1and Ka2are called the first and second ionization constants respectively of the acid H2 X. Similarly, for tribasic acids like H3PO4 we have three ionization constants. The values of the ionization constants for some common polyprotic acids are given in Table 7.8."
+    },
+    {
+      "n": 3,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [212, 525, 850, 895],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "It can be seen that higher order ionization constants (Ka2, Ka3) are smaller than the lower order ionization constant (Ka1) of a polyprotic acid. The reason for this is that it is more difficult to remove a positively charged proton from a negative ion due to electrostatic forces. This can be seen in the case of removing a proton from the uncharged H 2CO3 as compared from a negatively charged HCO3–. Similarly, it is more difficult to remove a proton from a doubly charged HPO4 2– anion as compared to H2PO4–."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Polyprotic acid solutions contain a mixture of acids like H2A, HA– and A 2– in case of a diprotic acid. H2A being a strong acid, the primary reaction involves the dissociation of H2 A, and H3O+ in the solution comes mainly from the first dissociation step."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "7.11.7 Factors Affecting Acid Strength"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Having discussed quantitatively the strengths of acids and bases, we come to a stage where we can calculate the pH of a given acid solution. But, the curiosity rises about why should some acids be stronger than others? What factors are responsible for making them stronger? The answer lies in its being a complex phenomenon. But, broadly speaking we can say that the extent of dissociation of an acid depends on the strength and polarity of the H-A bond."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "In general, when strength of H-A bond decreases, that is, the energy required to break the bond decreases, HA becomes a stronger acid. Also, when the H-A bond becomes more polar i.e., the electronegativity difference between the atoms H and A increases and there is marked charge separation, cleavage of the bond becomes easier thereby increasing the acidity."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "But it should be noted that while comparing elements in the same group of the periodic table, H-A bond strength is a more important factor in determining acidity than its polar nature. As the size of A increases down the group, H-A bond strength decreases and so the acid strength increases. For example,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [942, 858, 1458, 1002],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Similarly, H2S is stronger acid than H2O."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "But, when we discuss elements in the same row of the periodic table, H-A bond polarity becomes the deciding factor for determining the acid strength. As the electronegativity of A increases, the strength of the acid also increases. For example,"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [942, 1232, 1468, 1405],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "heading",
+      "text": "7.11.8 Common Ion Effect in the Ionization of Acids and Bases"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Consider an example of acetic acid dissociation equilibrium represented as:"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [932, 1538, 1538, 1692],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Addition of acetate ions to an acetic acid solution results in decreasing the concentration of hydrogen ions, [H+]. Also, if H+ ions are added from an external source then the equilibrium moves in the direction of undissociated acetic acid i.e., in a direction of reducing the concentration of hydrogen ions, [H+]. This phenomenon is an example of",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "224",
+    "CHEMISTRY",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p032 output, whose last block was the displayed first ionization constant ending with the dangling word 'and', and this page opens with the second one, 'Ka2 = {[H+][X2-]} / [HX-]', so first_block_continues_from_previous is true and block 1 carries continues_from_previous. Blocks are in visual reading order (left column top to bottom, then right column); note that this page's text layer stores them in a different order - the left column's opening paragraph, then the whole right column, then Table 7.8, then the rest of the left column including the 7.11.7 heading - so the blocks here will not line up with the layer's own sequence. Displayed expressions are needs_special rather than transcribed, as elsewhere in this chapter: block 1, block 10 ('Size increases' / 'HF << HCl << HBr << HI' / 'Acid strength increases', the two arrows and their captions inside the bbox), block 13 (the matching 'Electronegativity of A increases' / 'CH4 < NH3 < H2O < HF' / 'Acid strength increases' display) and block 16 (the three lines of the acetic acid dissociation equilibrium and its Ka expression). Block 3 is Table 7.8 with its title inside the bbox. Section 7.11.7's heading and first paragraph end the left column and the discussion continues at the top of the right column with 'In general, when strength of H-A bond...', which is a fresh sentence, so it is kept as its own block 8 rather than merged. In blocks 4 and 5 the text layer breaks some formulae across lines ('HCO3' + '–.', 'HPO4' + '2–', 'A' + '2–'); I have transcribed them as printed, keeping a space inside 'HPO4 2–' and 'A 2–' so no two digits are run together."
+}

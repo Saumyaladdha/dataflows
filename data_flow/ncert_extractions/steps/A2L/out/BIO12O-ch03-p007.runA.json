@@ -1,0 +1,43 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.147, "x1": 0.514},
+      {"id": "right", "x0": 0.521, "x1": 0.885}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.025, 0.068, 0.240, 0.156],
+     "column": "full", "size_rel": 1.0, "fill": "#725221"},
+    {"n": null, "role": "rule_bar", "bbox": [0.242, 0.068, 0.975, 0.108],
+     "column": "full", "size_rel": 1.0, "fill": "#467534"},
+    {"n": null, "role": "running_header", "bbox": [0.827, 0.141, 0.881, 0.148],
+     "column": "full", "size_rel": 0.75, "align": "right", "font": "sans",
+     "text_color": "#212121"},
+    {"n": 1, "role": "figure", "bbox": [0.147, 0.167, 0.502, 0.453],
+     "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.146, 0.467, 0.514, 0.486],
+     "column": "left", "size_rel": 0.95, "align": "center", "font": "serif",
+     "fill": "#fef2e2"},
+    {"n": 2, "role": "paragraph", "bbox": [0.522, 0.167, 0.883, 0.194],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.521, 0.197, 0.885, 0.460],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "paragraph", "bbox": [0.324, 0.466, 0.885, 0.567],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "paragraph", "bbox": [0.324, 0.570, 0.885, 0.746],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "paragraph", "bbox": [0.324, 0.749, 0.885, 0.852],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "page_number", "bbox": [0.025, 0.745, 0.202, 0.779],
+     "column": "full", "size_rel": 1.4, "align": "right", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "rule_bar", "bbox": [0.025, 0.782, 0.202, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.478, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif"}
+  ],
+  "note": "Verso page 48, two-column in its upper half: Figure 3.6 with its peach caption occupies the LEFT column (0.147-0.514) down to y 0.486, while blocks 2 and 3 run beside it in the RIGHT column (0.521-0.885). From y 0.466 the text reverts to the full measure x 0.324-0.885: block 4 starts with two right-column lines and then widens, so it is marked `full`, as are blocks 5 and 6. Elements are listed left column before right column (following the brief's worked example); note that in strict text flow the right-column prose is the continuation of page 47 and the figure is an aside. Figure 3.6's bbox includes its leader labels (Head / Plasma membrane / Acrosome / Nucleus / Neck / Middle piece / Mitochondria / Tail). The caption carries n: null; A2's single figure block n=1 is matched to the image. The bottom-centre '2022-23' edition line is reported as running_header for want of a better allowed role. The diagonal 'not to be republished / (c) NCERT' watermark is a page-wide overlay and is not listed as an element."
+}

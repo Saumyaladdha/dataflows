@@ -1,0 +1,191 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "motion. This section is limited only to kinematics. We shall turn to dynamics in later sections.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "We recall that for specifying the angular displacement of the rotating body we take any particle like P (Fig.6.29) of the body. Its angular displacement θ in the plane it moves is the angular displacement of the whole body; θ is measured from a fixed direction in the plane of motion of P, which we take to be the x′-axis, chosen parallel to the x-axis. Note, as shown, the axis of rotation is the z – axis and the plane of the motion of the particle is the x - y plane. Fig. 6.29 also shows θ0, the angular displacement at t = 0."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "We also recall that the angular velocity is the time rate of change of angular displacement, ω = dθ/dt. Note since the axis of rotation is fixed, there is no need to treat angular velocity as a vector. Further, the angular acceleration, α = dω/dt."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The kinematical quantities in rotational motion, angular displacement (θ), angular velocity (ω) and angular acceleration (α) respectively are analogous to kinematic quantities in linear motion, displacement (x), velocity (v) and acceleration (a). We know the kinematical equations of linear motion with uniform (i.e. constant) acceleration:"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        238,
+        1177,
+        842,
+        1217
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        238,
+        1228,
+        842,
+        1288
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        238,
+        1306,
+        842,
+        1358
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "where x0 = initial displacement and v0= initial velocity. The word ‘initial’ refers to values of the quantities at t = 0"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The corresponding kinematic equations for rotational motion with uniform angular acceleration are:"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        238,
+        1636,
+        842,
+        1682
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        238,
+        1692,
+        842,
+        1752
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        238,
+        1772,
+        842,
+        1822
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "where θ0= initial angular displacement of the rotating body, and ω0 = initial angular velocity of the body."
+    },
+    {
+      "n": 14,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        886,
+        203,
+        1539,
+        866
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "box",
+      "text": "Example 6.10 Obtain Eq. (6.36) from first principles."
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Answer   The angular acceleration is uniform, hence"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        929,
+        1070,
+        1534,
+        1142
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "Integrating this equation,"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        929,
+        1186,
+        1534,
+        1300
+      ],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "At t = 0,  ω = ω0 (given) From (i) we get at t = 0, ω = c = ω0 Thus, ω = αt + ω0  as required."
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "With the definition of ω = dθ/dt we may integrate Eq. (6.36) to get Eq. (6.37). This derivation and the derivation of Eq. (6.38) is left as an exercise."
+    },
+    {
+      "n": 22,
+      "kind": "box",
+      "text": "Example 6.11  The angular speed of a motor wheel is increased from 1200 rpm to 3120 rpm in 16 seconds. (i) What is its angular acceleration, assuming the acceleration to be uniform? (ii) How many revolutions does the engine make during this time?"
+    },
+    {
+      "n": 23,
+      "kind": "paragraph",
+      "text": "Answer\n(i) We shall use ω = ω0 + αt\nω0 =  initial angular speed in rad/s"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "117",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column transcribed first, then right column. previous_page_last_block was null, but the page opens with the lowercase fragment 'motion. This section is limited only to kinematics.', so first_block_continues_from_previous is set true from the page image itself. Displayed equations labelled (a), (b), (c), (6.36), (6.37), (6.38), (i) and the integration step are left to the special transcriber because the text layer scrambles their subscripts/superscripts onto separate lines. Inline mathematics inside paragraphs was copied as the text layer holds it, so subscripts appear as baseline digits (θ0, ω0, x0, v0). The text layer contains two stray 'u' tokens just after the running header; they belong to the Fig.6.29 artwork and were dropped. Paragraph line wraps from the column layout were joined with single spaces; no characters were otherwise altered. Page ends mid-solution of Example 6.11."
+}

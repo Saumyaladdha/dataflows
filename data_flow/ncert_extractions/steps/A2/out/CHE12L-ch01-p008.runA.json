@@ -1,0 +1,52 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        164,
+        169,
+        1482,
+        567
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "increases with decrease of temperature. It is due to this reason that\naquatic species are more comfortable in cold waters rather than in\nwarm waters.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "needs_special": true,
+      "bbox": [
+        164,
+        730,
+        1482,
+        1472
+      ],
+      "text": "Example 1.4\nIf N2 gas is bubbled through water at 293 K, how many millimoles of N2\ngas would dissolve in 1 litre of water? Assume that N2 exerts a partial\npressure of 0.987 bar. Given that Henry’s law constant for N2 at 293 K is\n76.48 kbar.\nSolution\nThe solubility of gas is related to the mole fraction in aqueous solution.\nThe mole fraction of the gas in the solution is calculated by applying\nHenry’s law. Thus:\nAs 1 litre of water contains 55.5 mol of it, therefore if n represents\nnumber of moles of N2 in solution,\n(n in denominator is neglected as it is < < 55.5)\nThus n = 1.29 × 10–5 × 55.5 mol = 7.16 × 10–4 mol"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Henry’s law finds several applications in industry and explains some\nbiological phenomena. Notable among these are:"
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "· To increase the solubility of CO2 in soft drinks and soda water, the\nbottle is sealed under high pressure.\n· Scuba divers must cope with high concentrations of dissolved gases\nwhile breathing air at high pressure underwater. Increased pressure\nincreases the solubility of atmospheric gases in blood. When the\ndivers come towards surface, the pressure gradually decreases. This\nreleases the dissolved gases and leads to the formation of bubbles\nof nitrogen in the blood. This blocks capillaries and creates a medical\ncondition known as bends, which are painful and dangerous to life."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Chemistry",
+    "8",
+    "Reprint 2026-27"
+  ],
+  "note": "Reading order on the image differs from the text_layer order: the image places Table 1.2 (with its caption 'Table 1.2: Values of Henry's Law Constant for Some Selected Gases in Water') at the top of the page, while the text_layer lists it last; the image order is used. Block 1 (the table) is a complete, self-contained table starting on this page, so first_block_continues_from_previous is false; however block 2, the first running-text block, does begin mid-sentence ('increases with decrease of temperature...') and is marked continues_from_previous: true. previous_page_last_block was null in the input, so this was judged from the lower-case mid-sentence start. Block 3 is the 'Example 1.4 / Solution' box; it is kept as one box block and marked needs_special because it contains three display equations (the x(Nitrogen) = p(nitrogen)/K_H expression, the x(Nitrogen) = n mol/(n mol + 55.5 mol) expression, and the final '= 7.16x10^-4 mol x 1000 mmol / 1 mol = 0.716 mmol' expression) that the special transcriber must handle; its 'text' holds only the exactly copied prose of the box, with those display equations omitted. Bullet markers in the list block are copied as the text_layer's '·' character; the image prints them as round bullets. The page carries a diagonal '© NCERT not to be republished' watermark, which is not transcribed."
+}

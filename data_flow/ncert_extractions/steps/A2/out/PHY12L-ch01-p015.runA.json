@@ -1,0 +1,53 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "at that point. The charge Q, which is producing the electric field, is called a source charge and the charge q, which tests the effect of a source charge, is called a test charge. Note that the source charge Q must remain at its original location. However, if a charge q is brought at any point around Q, Q itself is bound to experience an electrical force due to q and will tend to move. A way out of this difficulty is to make q negligibly small. The force F is then negligibly small but the ratio F/q is finite and defines the electric field:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        585,
+        1165,
+        675
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "A practical way to get around the problem (of keeping Q undisturbed in the presence of q) is to hold Q to its location by unspecified forces! This may look strange but actually this is what happens in practice. When we are considering the electric force on a test charge q due to a charged planar sheet (Section 1.14), the charges on the sheet are held to their locations by the forces due to the unspecified charged constituents inside the sheet.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "(ii) Note that the electric field E due to Q, though defined operationally in terms of some test charge q, is independent of q. This is because F is proportional to q, so the ratio F/q does not depend on q. The force F on the charge q due to the charge Q depends on the particular location of charge q which may take any value in the space around the charge Q. Thus, the electric field E due to Q is also dependent on the space coordinate r. For different positions of the charge q all over the space, we get different values of electric field E. The field exists at every point in three-dimensional space.\n(iii) For a positive charge, the electric field will be directed radially outwards from the charge. On the other hand, if the source charge is negative, the electric field vector, at each point, points radially inwards.\n(iv) Since the magnitude of the force F on charge q due to charge Q depends only on the distance r of the charge q from charge Q, the magnitude of the electric field E will also depend only on the distance r. Thus at equal distances from the charge Q, the magnitude of its electric field E is same. The magnitude of electric field E due to a point charge is thus same on a sphere with the point charge at its centre; in other words, it has a spherical symmetry.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "1.7.1  Electric field due to a system of charges"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Consider a system of charges q1, q2, ..., qn with  position vectors r1, r2, ..., rn relative  to some origin O. Like the electric field at a point in space due to a single charge, electric field at a point in space due to the system of charges is defined to be the force experienced by a unit test charge placed at that point, without disturbing the original positions of charges q1, q2, ..., qn. We can use Coulomb’s law and the superposition principle to determine this field at a point P denoted by position vector r.",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "15",
+    "Reprint 2026-27"
+  ],
+  "note": "Page opens mid-item: the first paragraph completes a sentence begun on the previous page (point (i) of a numbered list that starts earlier), so continues_from_previous is true even though previous_page_last_block was null in the input. Displayed equation (1.9) (E = lim_{q->0}(F/q)) is emitted as an equation block with needs_special; its text layer is scrambled below word level ('E\\nF\\n=\\n\\u2192\\nlim\\nq\\nq\\n0'). Items (ii), (iii), (iv) are grouped as one list block; item (i) began on the previous page. Subscripts in q1, q2, qn and r1, r2, rn are printed as subscripts on the page and were copied from the text layer flat; double spaces in 'with  position vectors' and 'relative  to' are as in the text layer. A diagonal '© NCERT not to be republished' watermark crosses the page and was not transcribed. The last sentence on the page ends cleanly, but section 1.7.1 continues onto the next page."
+}

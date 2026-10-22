@@ -1,0 +1,58 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "bias, the current first increases very slowly, almost negligibly, till the\nvoltage across the diode crosses a certain value. After the characteristic\nvoltage, the diode current increases significantly (exponentially), even for\na very small increase in the diode bias voltage. This voltage is called the\nthreshold voltage or cut-in voltage (~0.2V for germanium diode and\n~0.7 V for silicon diode).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "For the diode in reverse bias, the current is very small (~µA) and almost\nremains constant with change in bias. It is called reverse saturation\ncurrent. However, for special cases, at very high reverse bias (break down\nvoltage), the current suddenly increases. This special action of the diode\nis discussed later in Section 14.8. The general purpose diode are not\nused beyond the reverse saturation current region."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The above discussion shows that the p-n junction diode primerly\nallows the flow of current only in one direction (forward bias). The forward\nbias resistance is low as compared to the reverse bias resistance. This\nproperty is used for rectification of ac voltages as discussed in the next\nsection. For diodes, we define a quantity called dynamic resistance as\nthe ratio of small change in voltage ∆V to a small change in current ∆I:"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        545,
+        976,
+        1515,
+        1041
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Example 14.4 The V-I characteristic of a silicon diode is shown in\nthe Fig. 14.17. Calculate the resistance of the diode at (a) ID = 15 mA\nand (b) VD  = –10 V.\nSolution Considering the diode characteristics as a straight line\nbetween I = 10 mA to I = 20 mA passing through the origin, we can\ncalculate the resistance using Ohm’s law.\n(a) From the curve, at I = 20 mA, V = 0.8 V; I = 10 mA, V = 0.7 V\nrfb = ∆V/∆I = 0.1V/10 mA = 10 Ω\n(b) From the curve at V = –10 V, I = –1 µA,\nTherefore,\nrrb = 10 V/1µA= 1.0 × 10⁷ Ω"
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        709,
+        1221,
+        1286,
+        1766
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "482",
+    "2022-23",
+    "EXAMPLE 14.4"
+  ],
+  "note": "previous_page_last_block was null, so the continuation judgement rests on my own p015 output: p015's prose ended mid-sentence at 'that in forward' and this page opens 'bias, the current first increases very slowly'. Numbered equation (14.6) is deferred to A2S. Fig. 14.17 is printed inside the Example 14.4 box between the question and the solution; the box is kept as one block (n=5) and the graph is deferred separately (n=6). 'EXAMPLE 14.4' vertical tab is listed as removed furniture. '1.0 × 10⁷ Ω' is written with a true superscript; the text layer flattens it to '107'."
+}

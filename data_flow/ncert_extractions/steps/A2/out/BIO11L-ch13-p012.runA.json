@@ -1,0 +1,68 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "synthesised in regions where rapid cell division occurs, for example, root\napices, developing shoot buds, young fruits etc. It helps to produce new\nleaves, chloroplasts in leaves, lateral shoot growth and adventitious shoot\nformation. Cytokinins help overcome the apical dominance. They promote\nnutrient mobilisation which helps in the delay of leaf senescence.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "13.4.3.4 Ethylene"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Ethylene is a simple gaseous PGR. It is synthesised in large amounts\nby tissues undergoing senescence and ripening fruits. Influences of\nethylene on plants include horizontal growth of seedlings, swelling of\nthe axis and apical hook formation in dicot seedlings. Ethylene promotes\nsenescence and abscission of plant organs especially of leaves and\nflowers. Ethylene is highly effective in fruit ripening. It enhances the\nrespiration rate during ripening of the fruits. This rise in rate of\nrespiration is called respiratory climactic.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Ethylene breaks seed and bud dormancy, initiates germination in\npeanut seeds, sprouting of potato tubers. Ethylene promotes rapid\ninternode/petiole elongation in deep water rice plants. It helps leaves/\nupper parts of the shoot to remain above water. Ethylene also promotes\nroot growth and root hair formation, thus helping the plants to increase\ntheir absorption surface.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Ethylene is used to initiate flowering and for synchronising fruit-set\nin pineapples. It also induces flowering in mango. Since ethylene regulates\nso many physiological processes, it is one of the most widely used PGR in\nagriculture. The most widely used compound as source of ethylene is\nethephon. Ethephon in an aqueous solution is readily absorbed and\ntransported within the plant and releases ethylene slowly. Ethephon\nhastens fruit ripening in tomatoes and apples and accelerates abscission\nin flowers and fruits (thinning of cotton, cherry, walnut). It promotes female\nflowers in cucumbers thereby increasing the yield.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "13.4.3.5 Abscisic acid"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "As mentioned earlier, abscisic acid (ABA) was discovered for its role in\nregulating abscission and dormancy. But like other PGRs, it also has\nother wide ranging effects on plant growth and development. It acts as a\ngeneral plant growth inhibitor and an inhibitor of plant metabolism.\nABA inhibits seed germination. ABA stimulates the closure of stomata\nand increases the tolerance of plants to various kinds of stresses.\nTherefore, it is also called the stress hormone. ABA plays an important",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "PLANT GROWTH AND DEVELOPMENT",
+    "177",
+    "13.4.3.4",
+    "13.4.3.4",
+    "13.4.3.4",
+    "13.4.3.4",
+    "Ethylene",
+    "Ethylene",
+    "Ethylene",
+    "Ethylene",
+    "13.4.3.5",
+    "13.4.3.5",
+    "13.4.3.5",
+    "13.4.3.5",
+    "Abscisic acid",
+    "Abscisic acid",
+    "Abscisic acid",
+    "Abscisic acid",
+    "2024-25"
+  ],
+  "note": "Used text_layer, cross-checked against image. All-prose page, single full-width column, no tables, figures or equations. Judged both continuations from the pages themselves (previous_page_last_block was null): page 11 ended mid-sentence at \"...Natural cytokinins are\" and this page opens \"synthesised in regions where rapid cell division occurs...\", so block 1 continues it; this page ends mid-sentence (\"...ABA plays an important\"), so the last block continues onto page 13. Same text-layer defect as pages 10 and 11: the italic sub-headings 13.4.3.4 Ethylene and 13.4.3.5 Abscisic acid are each printed ONCE but the layer emits each five times as a faux-bold overprint (four bare number lines, then the full heading, then four bare word lines). I kept one real heading each (blocks 2 and 6) and listed the sixteen duplicate artefact lines in running_header_footer_removed so the coverage check can discount them; no listed string is identical to any block's text. Also removed the running header PLANT GROWTH AND DEVELOPMENT, page number 177 and reprint year 2024-25."
+}

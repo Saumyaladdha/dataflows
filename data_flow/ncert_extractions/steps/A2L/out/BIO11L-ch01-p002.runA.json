@@ -1,0 +1,98 @@
+{
+  "page_kind": "biography_page",
+  "page": {
+    "page_kind": "biography_page",
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "text_block": [0.1271, 0.3825, 0.9035, 0.668],
+    "fill": 0.84,
+    "columns": [
+      {"id": "left", "x0": 0.1271, "x1": 0.3941},
+      {"id": "right", "x0": 0.4212, "x1": 0.9035}
+    ]
+  },
+  "elements": [
+    {
+      "n": 1,
+      "role": "figure",
+      "bbox": [0.1271, 0.3825, 0.3941, 0.6359],
+      "column": "left",
+      "size_rel": 1.0,
+      "align": "left",
+      "indent": 0.0,
+      "space_before": 0.3825,
+      "fill": null,
+      "text_color": null,
+      "font": null,
+      "face": null
+    },
+    {
+      "n": null,
+      "role": "figure_caption",
+      "bbox": [0.2059, 0.6419, 0.31, 0.668],
+      "column": "left",
+      "size_rel": 0.95,
+      "size_pt": 10.0,
+      "align": "center",
+      "indent": 0.0,
+      "space_before": 0.006,
+      "fill": "#f7faeb",
+      "text_color": "#221f1f",
+      "font": "serif-bold",
+      "face": "serif-bold"
+    },
+    {
+      "n": 2,
+      "role": "paragraph",
+      "bbox": [0.4212, 0.3875, 0.9035, 0.6295],
+      "column": "right",
+      "size_rel": 1.0,
+      "size_pt": 10.5,
+      "align": "justify",
+      "indent": 0.0,
+      "space_before": 0.3875,
+      "fill": null,
+      "text_color": "#221f1f",
+      "font": "serif",
+      "face": "serif"
+    },
+    {
+      "n": null,
+      "role": "decorative_image",
+      "bbox": [0.22, 0.3108, 0.8471, 0.8095],
+      "column": "full",
+      "size_rel": 1.0,
+      "indent": 0.0,
+      "space_before": 0.3108,
+      "fill": null,
+      "text_color": "#e8e8e8"
+    },
+    {
+      "n": null,
+      "role": "decorative_image",
+      "bbox": [0.0, 0.5762, 1.0, 1.0],
+      "column": "full",
+      "size_rel": 1.0,
+      "indent": 0.0,
+      "space_before": 0.5762,
+      "fill": "#cde084"
+    },
+    {
+      "n": null,
+      "role": "page_number",
+      "bbox": [0.4765, 0.9559, 0.5235, 0.9633],
+      "column": "full",
+      "size_rel": 0.8,
+      "size_pt": 8.4,
+      "align": "center",
+      "indent": 0.0,
+      "space_before": 0.2879,
+      "fill": "#d0e28c",
+      "text_color": "#000000",
+      "font": "sans",
+      "face": "sans"
+    }
+  ],
+  "note": "PAGE KIND. Not an ordinary body page and not a chapter/unit opener: it is a full-page scientist-biography plate. It prints NO page_header_band, NO running_header, NO footer_rule and NO folio; it carries no chapter title, banner, rule bar or contents panel, so none of {unit_opener, chapter_opener, ordinary} fits and page_kind is reported as 'biography_page' (given both at top level and inside 'page' so either consumer finds it). LAYOUT. Two columns set SIDE BY SIDE: a left column 0.1271-0.3941 holding the portrait and its caption, a right column 0.4212-0.9035 holding the biography prose; gutter 0.0271 of page width (x 670-716 px). The portrait (x 216-669, y 833-1384 px) and the prose first line (y 844 px) start at virtually the same height, which is what makes the pair read as one side-by-side block. TOP WHITE SPACE. The top 38.25% of the sheet (y 0 to 833 px) is deliberately blank - nothing is printed above the portrait; that is why the first element in each column carries space_before measured from the page top (0.3825 for the figure, 0.3875 for the prose) rather than from a preceding element. GREEN GRADIENT. A pale-green vertical gradient washes the lower part of the sheet, full width. First detectable tint at y=1255 px (0.5762) at both margins; it is a smooth ramp with NO flat interior, so the single hex reported is the foot colour. Measured ramp at x=1640: y0.576 #fefefb, y0.643 #f7faee, y0.735 #edf3d2, y0.826 #dfebb4, y0.918 #d5e597, y1.000 #cde084. It is reported as decorative_image because it is a background wash, not a rule_bar, header band or footer rule. TEXT BLOCK AND FILL. page.text_block is the rectangle the printed content actually occupies: x 216-1536 px, y 833 px (top of the portrait / first prose line) to 1455 px (baseline+descender of the caption's second line). Its left and right edges coincide with the page's measure - the portrait's left edge and the prose's justified right edge - so the horizontal measure is trustworthy. The page's DESIGN vertical live area is NOT measurable from this sheet, because it prints no header band, no footer rule and no folio to bound it; only the occupied depth is given, and page.fill = 0.84 is the fraction of that occupied rectangle covered by the three content boxes, not a fraction of a design block. Separately, for the 'fuller or emptier' judgement: printed content covers only 0.286 of page height (y 0.3825-0.668); above it 0.3825 of the page is blank and below it 0.288 is blank down to the edition line. This page is far EMPTIER than an ordinary body page. BODY TEXT SIZE. body_text_size_px = 20.0, measured as cap/ascender-top to baseline on the biography prose (e.g. line 1 top y=844, baseline y=863; line 7 top y=1044, baseline y=1063; line 11 top y=1177, baseline y=1196 - all 20 px). Baseline-to-baseline leading is 33.33 px (844 to 1344 over 15 line advances). SIZE_PT IS DERIVED, NOT MEASURED DIRECTLY: the PNG carries dpi=(200.0, 200.0), giving a trim of 612.0 x 784.1 pt, so 20 px cap height = 7.2 pt cap and the leading = 12.0 pt; the nominal body size is therefore taken as ~10.5 pt and the other size_pt values are that figure scaled by the measured size_rel. size_rel is the measured ratio and is the number to trust. CAPTION. Reported as ONE element though it is two lines: 'Ernst Mayr' (x 360-516, y 1398-1422 px, cap-to-baseline 19 px, serif BOLD) and '(1904 - 2004)' (x 350-526, y 1431-1454 px, cap-to-baseline 19 px, serif REGULAR). font/face is given as serif-bold for the element because the first line is bold; the second line is plain serif - a renderer that needs both faces must split it. Both lines are centred on x=438 px against a portrait centre of x=442.5 px, so align is center and indent is reported as 0.0: the caption's 0.079 left inset from the column edge is a product of centring, not an indent, and reporting it as an indent would make a renderer left-indent the caption. The caption's background is the very onset of the green gradient, sampled flat at (y=1410, x=620) and (y=1440, x=300) as #f7faeb - effectively near-white paper. BLOCK MATCHING. A2 block 1 (kind 'figure', empty text_head) is matched to the portrait photograph; A2 block 2 (kind 'paragraph', 'Born on 5 July 1904...') is matched to the right-hand prose - both confident by position. The caption has n: null because A2 listed no block carrying its text (block 1's text_head is empty), so there is nothing to match it to. The watermark, the gradient and the edition line have n: null because A2 blocked none of them. PROSE DETAIL. 16 justified lines; left edge 716-718 px and right edge 1530-1535 px on every full line, last line short (ends x=1138), and NO first-line indent, hence indent 0.0 and align justify. Ink sampled as median of sub-60-luminance pixels: #221f1f for both the prose and the caption. WATERMARK. The diagonal '(c) not to be republished' overprint is reported as decorative_image at [0.22, 0.3108, 0.8471, 0.8095]; it is rotated roughly 40 degrees so align and font/face are OMITTED rather than guessed, and its space_before (0.3108) is simply its distance from the page top since it is an overlay with no element above it. Its stroke colour #e8e8e8 was sampled only where it crosses white paper (y<1250); where it crosses the green gradient it blends to about #cfd8ad and that blend is not its own colour. EDITION LINE. The foot prints '2024-25' (x 810-889, y 2082-2097 px) in a sans face, centred, black, on the gradient at #d0e28c. It is recorded under role 'page_number' because that is the nearest allowed role for a centred mark in the foot margin, but it is the EDITION YEAR, not a folio - this page prints no page number at all. KEY NAMES. The instruction asked for 'face' while the brief's allowed-values list names the key 'font'; both keys are emitted with identical values so either consumer works. Fields that are genuinely not applicable (align/font on the two decorative elements, text_color on the figure and the gradient) are omitted or null per the step's unsure form rather than guessed. Nothing on this page was left out of 'elements'."
+}

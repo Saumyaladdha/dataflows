@@ -1,0 +1,103 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [211, 275, 707, 592],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "where r12 is the distance between points 1 and 2.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Since electrostatic force is conservative, this work gets stored in the form of potential energy of the system. Thus, the potential energy of a system of two charges q1 and q2 is"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [772, 437, 1550, 513],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Obviously, if q2 was brought first to its present location and q1 brought later, the potential energy U would be the same. More generally, the potential energy expression, Eq. (2.22), is unaltered whatever way the charges are brought to the specified locations, because of path-independence of work for electrostatic force."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Equation (2.22) is true for any sign of  q1 and q2. If q1q2 > 0, potential energy is positive. This is as expected, since for like charges (q1q2 > 0), electrostatic force is repulsive and a positive amount of work is needed to be done against this force to bring the charges from infinity to a finite distance apart. For unlike charges (q1 q2 < 0), the electrostatic force is attractive. In that case, a positive amount of work is needed against this force to take the charges from the given location to infinity. In other words, a negative amount of work is needed for the reverse path (from infinity to the present locations), so the potential energy is negative."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Equation (2.22) is easily generalised for a system of any number of point charges. Let us calculate the potential energy of a system of three charges q1, q2 and q3 located at r1, r2, r3, respectively. To bring q1 first from infinity to r1, no work is required. Next we bring q2 from infinity to r2. As before, work done in this step is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 1210, 1550, 1280],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The charges q1 and q2 produce a potential, which at any point P is given by"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [572, 1372, 1550, 1447],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Work done next in bringing q3 from infinity to the point r3 is  q3 times V1, 2 at r3"
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [205, 1598, 778, 1879],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [815, 1598, 1550, 1674],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The total work done in assembling the charges at the given locations is obtained by adding the work done in different steps [Eq. (2.23) and Eq. (2.25)],"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [815, 1760, 1550, 1836],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Again, because of the conservative nature of the electrostatic force (or equivalently, the path independence of work done), the final expression for U, Eq. (2.26), is independent of the manner in which the configuration is assembled. The potential energy"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Physics", "56", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null even though page is 12; continuation judged from the page itself, which opens mid-explanation with 'where r12 is the distance between points 1 and 2.' referring to an equation on the previous page. Reading order places the left-column figures (2.13 at top, 2.14 lower) before the right-column material at the same vertical level; each figure block's bbox includes its caption. Subscripts in the text layer are extracted without spacing (e.g. 'q1and q2'); the page image was used for those. The five numbered equations (2.22-2.26) are marked needs_special because the text layer renders them scrambled onto separate lines."
+}

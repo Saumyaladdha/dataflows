@@ -1,0 +1,48 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 21.0,
+    "columns": [
+      {"id": "full", "x0": 0.0971, "x1": 0.8729}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0666],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.55, 0.0, 0.8729, 0.1212],
+     "column": "full", "size_rel": 2.0, "align": "center", "font": "sans-light",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.0971, 0.1354, 0.6853, 0.2461],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "decorative_image", "bbox": [0.0982, 0.2704, 0.1124, 0.9371],
+     "column": "full", "size_rel": 1.0, "fill": "#00adef"},
+    {"n": 2, "role": "box", "bbox": [0.1129, 0.2704, 0.6859, 0.5358],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "fill": "#dbdcde", "text_color": "#221f1f"},
+    {"n": 3, "role": "figure", "bbox": [0.1688, 0.5523, 0.6118, 0.7934],
+     "column": "full", "size_rel": 1.0, "fill": "#dbdcde"},
+    {"n": null, "role": "figure_caption", "bbox": [0.3553, 0.8099, 0.4382, 0.8177],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "serif-bold",
+     "fill": "#dbdcde", "text_color": "#00adef"},
+    {"n": 4, "role": "box", "bbox": [0.1129, 0.8320, 0.6859, 0.9371],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "fill": "#dbdcde", "text_color": "#221f1f"},
+    {"n": null, "role": "major_heading", "bbox": [0.6959, 0.2704, 0.7376, 0.9371],
+     "column": "full", "size_rel": 0.9, "align": "center", "font": "serif-bold",
+     "fill": "#00adef", "text_color": "#ffffff"},
+    {"n": null, "role": "decorative_image", "bbox": [0.7729, 0.2709, 0.8394, 0.3090],
+     "column": "full", "size_rel": 1.0},
+    {"n": 5, "role": "marginal_note", "bbox": [0.79, 0.3228, 0.8476, 0.9311],
+     "column": "full", "size_rel": 0.85, "align": "left", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8141, 0.9155, 0.8724, 0.9371],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "serif",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5235, 0.9633],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif",
+     "text_color": "#000000"}
+  ],
+  "note": "Recto body page, single column (text measure x 0.097-0.685), dominated by the Example 1.1 worked-example panel. Note the panel grey is #dbdcde - a LIGHTER grey than the #d1d2d4 of the running-header panel; they are two different fills and sampling the panel interior (not its edge) is what separates them. A2 splits the panel's prose into two `box` blocks, n=2 (the question and the Solution) and n=4 (the two closing paragraphs), with Fig. 1.5 (n=3) between them; both box elements therefore carry the panel's #dbdcde fill and their own vertical extent inside it. The panel is flanked by two solid cyan #00adef vertical bars: the plain left bar (x 0.098-0.112) is recorded as decorative_image, and the right bar (x 0.696-0.738) carries the box's label 'EXAMPLE 1.1' in white type set sideways, so it is recorded as major_heading - the same role given to the cyan title bar of the display box on p003. The outer margin holds a 'PHYSICS' roundel (decorative_image) above block n=5, a sideways-set marginal note whose URL is printed cyan #00adef. The panel's prose sets about 0.9x body size. No footer_rule on this page."
+}

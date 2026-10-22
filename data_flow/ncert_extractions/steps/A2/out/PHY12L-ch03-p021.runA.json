@@ -1,0 +1,115 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "immediately gives us the relations I1 = I3 and I2 = I4. Next, we apply\nKirchhoff’s loop rule to closed loops ADBA and CBDC. The first\nloop gives",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 387, 1080, 432],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "and the second loop gives, upon using I3 = I1, I4 = I2"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 495, 1080, 537],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "From Eq. (3.62), we obtain,"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 574, 545, 648],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "whereas from Eq. (3.63), we obtain,"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 698, 545, 772],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Hence, we obtain the condition"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 813, 1080, 888],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1100, 268, 1536, 855],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "This last equation relating the four resistors is called the balance\ncondition for the galvanometer to give zero or null deflection."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The Wheatstone bridge and its balance condition provide a practical\nmethod for determination of an unknown resistance. Let us suppose we\nhave an unknown resistance, which we insert in the fourth arm; R4 is\nthus not known. Keeping known resistances R1 and R2 in the first and\nsecond arm of the bridge, we go on varying R3 till the galvanometer shows\na null deflection. The bridge then is balanced, and from the balance\ncondition the value of the unknown resistance R4 is given by,"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 1197, 1080, 1276],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "A practical device using this principle is called the meter bridge."
+    },
+    {
+      "n": 16,
+      "kind": "box",
+      "text": "Example 3.7 The four arms of a Wheatstone bridge (Fig. 3.19) have\nthe following resistances:\nAB = 100W, BC = 10W, CD = 5W, and DA = 60W."
+    },
+    {
+      "n": 17,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [248, 1480, 1158, 1908],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Current Electricity",
+    "101",
+    "EXAMPLE 3.7",
+    "Reprint 2026-27"
+  ],
+  "note": "Figure 3.18 is a right-hand float spanning the top of the page; it is listed at block 11, the point where its vertical extent ends, rather than at the very top, so the left-column sentences it sits beside stay in order. The caption lines 'FIGURE 3.18' and 'FIGURE 3.19' fall inside the bboxes of blocks 11 and 17 respectively and are left to the special transcriber. Example 3.7 (block 16) is unfinished on this page - the question and solution continue on the next page - and the figure for it (block 17) sits inside the same shaded example box. In the box text the ohm sign is extracted by the text layer as the Latin letter 'W' ('100W', '10W', '5W', '60W'); the page image shows the Greek capital omega, but per instruction the text layer's characters are copied verbatim for prose. No numbered section side-heading appears on this page, so the repeated-outline-heading artifact did not arise here. Displayed equations (3.62), (3.63), the two ratio equations, [3.64(a)] and [3.64(b)] are all marked needs_special with bboxes in original image pixels (1700x2160)."
+}

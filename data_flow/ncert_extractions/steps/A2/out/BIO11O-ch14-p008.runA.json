@@ -1,0 +1,37 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "produced in the mitochondrial matrix\nduring citric acid cycle are oxidised by an\nNADH dehydrogenase (complex I), and\nelectrons are then transferred to\nubiquinone located\nwithin the inner membrane. Ubiquinone\nalso receives reducing equivalents via\nFADH2 (complex II) that is generated\nduring oxidation of succinate in the citric\nacid cycle. The reduced ubiquinone\n(ubiquinol) is then oxidised with the\ntransfer of electrons to cytochrome c via\ncytochrome bc1 complex (complex III).\nCytochrome c is a small protein attached\nto the outer surface of the inner\nmembrane and acts as a mobile carrier\nfor transfer of electrons between complex\nIII and IV.  Complex IV refers to\ncytochrome c oxidase complex containing\ncytochromes a and a3, and two copper\ncentres.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "When the electrons pass from one\ncarrier to another via complex I to IV in\nthe electron transport chain, they are\ncoupled to ATP synthase (complex V) for\nthe production of ATP from ADP and\ninorganic phosphate. The number of ATP\nmolecules synthesised depends on the\nnature of the electron donor. Oxidation of\none molecule of NADH gives rise to 3\nmolecules of ATP, while that of one\nmolecule of FADH2 produces 2 molecules\nof ATP. Although the aerobic process of\nrespiration takes place only in the\npresence of oxygen, the role of oxygen is\nlimited to the terminal stage of the\nprocess.  Yet, the presence of oxygen is vital, since it drives the whole\nprocess by removing hydrogen from the system.  Oxygen acts as the final\nhydrogen acceptor. Unlike photophosphorylation where it is the light\nenergy that is utilised for the production of proton gradient required for\nphosphorylation, in respiration it is the energy of oxidation-reduction\nutilised for the same process. It is for this reason that the process is called\noxidative phosphorylation.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "You have already studied about the mechanism of membrane-linked\nATP synthesis as explained by chemiosmotic hypothesis in the earlier\nchapter.  As mentioned earlier, the energy released during the electron",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [758, 275, 1495, 1530],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "RESPIRATION IN PLANTS",
+    "233",
+    "2022-23"
+  ],
+  "note": "Left text column read first, then the right-hand Figure 14.4 ETS diagram (block 4, needs_special, bbox covers the diagram and its 'Figure 14.4 Electron Transport System (ETS)' caption and all in-figure labels). Page 7 ended mid-sentence at 'Electrons from NADH', so block 1 continues it; judged from the page I just read. The page's final prose block (n=3) ends mid-sentence at 'during the electron' and runs onto page 9, which is what last_block_continues_on_next records; the figure that follows it in reading order is self-contained. Used the text layer for prose, the image for layout and the figure bbox."
+}

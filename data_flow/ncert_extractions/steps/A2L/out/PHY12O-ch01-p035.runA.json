@@ -1,0 +1,47 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "full", "x0": 0.097, "x1": 0.688}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.067],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.5494, 0.0, 0.8729, 0.124],
+     "column": "full", "size_rel": 1.6, "align": "center", "font": "sans",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "list", "bbox": [0.0988, 0.135, 0.6871, 0.36],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "box", "bbox": [0.0982, 0.3774, 0.7376, 0.9371],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "fill": "#dbdcde", "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.1276, 0.388, 0.6653, 0.4412],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "figure", "bbox": [0.2218, 0.4651, 0.5741, 0.6442],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.3512, 0.6552, 0.4418, 0.6625],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans",
+     "text_color": "#00adef"},
+    {"n": 4, "role": "paragraph", "bbox": [0.1276, 0.669, 0.6676, 0.8434],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "equation", "bbox": [0.1576, 0.8508, 0.6071, 0.9192],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "paragraph", "bbox": [0.1571, 0.9233, 0.3618, 0.9348],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8141, 0.9155, 0.8718, 0.9371],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "sans",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "sans",
+     "text_color": "#221f1f"}
+  ],
+  "note": "Recto body page, one full column (text measure x 0.097-0.688, wide empty outer margin at right holding only the diagonal watermark). The page is the numbered list (iv)-(vi) continuing from p034, then the 'Example 1.11' box, which runs from y 0.377 to the foot. The box is emitted once as role box with n: null - A2 split its contents into blocks 2-6 and none of them IS the box - with its flat grey #dbdcde interior as fill, flanked by cyan #00adef vertical bars (left x 0.098-0.112, right x 0.696-0.738 carrying the reverse-out white vertical label 'EXAMPLE 1.11'); the bars and that vertical label get no separate element because no allowed role fits a box side-tab. Blocks 2, 4 and 6, typed 'box' by A2, are that box's running prose and are reported as role paragraph; box prose is set smaller than body prose (cap height 18px vs 20px), hence size_rel 0.9 for everything inside the box, while the list above it is full body size. Figure 1.27 and its cyan 'FIGURE 1.27' caption sit inside the box, so their bboxes lie within the box's; the caption has no A2 block and takes n: null. No fill is reported for the figure - the blue shading of the cube faces is artwork, not a panel tint. page_header_band is the pale blue #c6eafb strip across the whole page top (y 0-0.067); its #41c7f4 hairline and #00adef foot rule are internal edges of that one band, so no rule_bar is reported, and this page has no footer_rule of any kind. The '2022-23' edition line at the foot is recorded as a second running_header because the allowed role list has no footer-text role. All 6 A2 blocks matched by position."
+}

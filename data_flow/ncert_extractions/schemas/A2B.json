@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A2B.json",
+  "title": "A2B agent output (a2b-bold-marker)",
+  "description": "Backfills bold_terms onto an A2 page already read before that field existed. Never edits the original A2 output -- this is a separate, additive file keyed by the same page id.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["blocks", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "blocks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["n", "bold_terms"],
+            "additionalProperties": false,
+            "properties": {
+              "n": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "Must match a paragraph/box/list block's own `n` in the real A2 output for this page."
+              },
+              "bold_terms": {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 },
+                "description": "Every substring of that block's `text` that prints bold in the source image, copied character-for-character, in reading order, each once. Empty array when nothing in the block is bold."
+              }
+            }
+          }
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } }
+    }
+  ]
+}

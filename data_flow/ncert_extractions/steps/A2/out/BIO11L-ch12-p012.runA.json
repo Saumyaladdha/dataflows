@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        542,
+        303,
+        1538,
+        465
+      ],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "When fats are used in respiration, the RQ is less than 1. Calculations\nfor a fatty acid, tripalmitin, if used as a substrate is shown:"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        542,
+        576,
+        1538,
+        785
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "When proteins are respiratory substrates the ratio would be about\n0.9."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "What is important to recognise is that in living organisms respiratory\nsubstrates are often more than one; pure proteins or fats are never used\nas respiratory substrates."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "SUMMARY"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Plants unlike animals have no special systems for breathing or gaseous exchange.\nStomata and lenticels allow gaseous exchange by diffusion. Almost all living cells\nin a plant have their surfaces exposed to air."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The breaking of C-C bonds of complex organic molecules by oxidation cells\nleading to the release of a lot of energy is called cellular respiration. Glucose is the\nfavoured substrate for respiration. Fats and proteins can also be broken down to\nyield energy. The initial stage of cellular respiration takes place in the cytoplasm.\nEach glucose molecule is broken through a series of enzyme catalysed reactions\ninto two molecules of pyruvic acid. This process is called glycolysis. The fate of the\npyruvate depends on the availability of oxygen and the organism. Under anaerobic\nconditions either lactic acid fermentation or alcohol fermentation occurs.\nFermentation takes place under anaerobic conditions in many prokaryotes,\nunicellular eukaryotes and in germinating seeds. In eukaryotic organisms aerobic\nrespiration occurs  in the presence of oxygen. Pyruvic acid is transported into the\nmitochondria where it is converted into acetyl CoA with the release of CO2. Acetyl\nCoA then enters the tricarboxylic acid pathway or Krebs’ cycle operating in the\nmatrix of the mitochondria. NADH + H+ and FADH2 are generated in the Krebs’\ncycle. The energy in these molecules as well as that in the NADH + H+ synthesised\nduring glycolysis are used to synthesise ATP. This is accomplished through a"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "164",
+    "BIOLOGY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; I read page 11 myself in this run and it ended with a complete sentence and a colon ('...as shown in the equation below :'). This page opens with the display equation that colon introduces, but that equation is a fresh block rather than the continuation of a block broken across the break, so I set first_block_continues_from_previous false — consistent with the false I recorded for page 11's last_block_continues_on_next. Blocks 1 and 3 are the two yellow equation bands (glucose RQ = 6CO2/6O2 = 1.0, and the tripalmitin equation with RQ = 102CO2/145O2 = 0.7, including the 'Tripalmitin' label beneath it); both are marked needs_special with empty text and their characters arrive scrambled in the text layer because of subscript ordering. SUMMARY is the chapter's own end-of-chapter summary section, part of this chapter's content, not book back matter, so I kept it as a heading plus its paragraphs. Page ends mid-sentence ('This is accomplished through a')."
+}

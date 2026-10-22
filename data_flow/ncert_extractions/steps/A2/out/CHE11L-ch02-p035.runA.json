@@ -1,0 +1,104 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "electrons in the orbitals belonging to the same subshell (p, d or f) does not take place until each orbital belonging to that subshell has got one electron each i.e., it is singly occupied.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Since there are three p, five d and seven f orbitals, therefore, the pairing of electrons will start in the p, d and f orbitals with the entry of 4th, 6th and 8th electron, respectively. It has been observed that half filled and fully filled degenerate set of orbitals acquire extra stability due to their symmetry (see Section, 2.6.7)."
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "2.6.5 Electronic Configuration of Atoms"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The distribution of electrons into orbitals of an atom is called its electronic configuration. If one keeps in mind the basic rules which govern the filling of different atomic orbitals, the electronic configurations of different atoms can be written very easily."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The electronic configuration of different atoms can be represented in two ways. For example :"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "(i)   sa pbdc ...... notation\n(ii)  Orbital diagram"
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        218,
+        1219,
+        867,
+        1308
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "In the first notation, the subshell is represented by the respective letter symbol and the number of electrons present in the subshell is depicted, as the super script, like a, b, c, ... etc. The similar subshell represented for different shells is differentiated by writing the principal quantum number before the respective subshell. In the second notation each orbital of the subshell is represented by a box and the electron is represented by an arrow (↑) a positive spin or an arrow (↓) a negative spin. The advantage of second notation over the first is that it represents all the four quantum numbers."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The hydrogen atom has only one electron which goes in the orbital with the lowest energy, namely 1s. The electronic configuration of the hydrogen atom is 1s1 meaning that it has one electron in the 1s orbital. The second electron in helium (He) can also occupy the 1s orbital. Its configuration is, therefore, 1s2. As mentioned above, the two electrons differ from each other with opposite spin, as can be seen from the orbital diagram."
+    },
+    {
+      "n": 10,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        1014,
+        403,
+        1373,
+        485
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The third electron of lithium (Li) is not allowed in the 1s orbital because of Pauli exclusion principle. It, therefore, takes the next available choice, namely the 2s orbital. The electronic configuration of Li is 1s22s1. The 2s orbital can accommodate one more electron. The configuration of beryllium (Be) atom is, therefore, 1s2 2s2 (see Table 2.6, page 66 for the electronic configurations of elements)."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "In the next six elements—boron (B, 1s22s22p1), carbon (C, 1s22s22p2), nitrogen (N, 1s22s22p3), oxygen (O, 1s22s22p4), fluorine (F, 1s22s22p5) and neon (Ne, 1s22s22p6), the 2p orbitals get progressively filled. This process is completed with the neon atom. The orbital picture of these elements can be represented as follows :"
+    },
+    {
+      "n": 13,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        899,
+        1155,
+        1543,
+        1602
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The electronic configuration of the elements sodium (Na,1s22s22p63s1) to argon (Ar,1s22s22p63s23p6), follow exactly the same pattern as the elements from lithium to neon with the difference that the 3s and 3p orbitals are getting filled now. This process can be simplified if we represent the total number of  electrons in the first two shells by the name of element neon (Ne). The electronic configuration of the elements from sodium to"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "STRUCTURE OF ATOM",
+    "63",
+    "2024-25"
+  ],
+  "note": "Seam judged against CHE11L-ch02-p034.runA.json, written immediately before this page (the instruction's named anchor p030 has no output on disk). p034 ends mid-statement at 'It states : pairing of' with last_block_continues_on_next true; this page opens 'electrons in the orbitals belonging to the same subshell (p, d or f) does not take place ...', the completion of Hund's rule statement begun there, so first_block_continues_from_previous is true and the two pages agree. input's previous_page_last_block was null. Reading order is the left column then the right column; the printed paragraph that begins 'The hydrogen atom has only one electron' runs across the column break — the left column ends 'can also occupy the' and the right column resumes '1s orbital. Its configuration is, therefore, 1s2.' — so it is one paragraph block (n=9), as the text layer also stores it. Three blocks are deferred to the special transcriber, which is what keeps this configuration-dense page safe. Block n=7 is the s / p / d row of empty orbital boxes illustrating notation (ii); the text layer keeps only its scrambled label debris (' s\\t                   p\\t' / '                      d'), so the boxes and their s, p and d labels are given a bbox with empty text. Block n=10 is the H and He orbital diagram (two boxed cells with their spin arrows, the element labels H and He and the 1s labels beneath each box) — NOT ONE CHARACTER of it is in the text layer. Block n=13 is the eight-row Li to Ne orbital diagram — again entirely absent from the text layer: none of the row labels (Li, Be, B, C, N, O, F, Ne), none of the 1s / 2s / 2p column labels and none of the up/down spin arrows in its 40 boxes appear there, so the whole grid including its labels is given a bbox with empty text and is not described. Electronic configurations follow the text layer's flattened spelling throughout, exactly as printed-superscript forms must be spelled here, never as superscripts: 'is 1s1 meaning', 'therefore, 1s2.', 'of Li is 1s22s1.', 'therefore, 1s2 2s2 (see Table 2.6,', '(B, 1s22s22p1)', '(C, 1s22s22p2)', '(N, 1s22s22p3)', '(O, 1s22s22p4)', '(F, 1s22s22p5)', '(Ne, 1s22s22p6)', '(Na,1s22s22p63s1)' and '(Ar,1s22s22p63s23p6)' — the last two keeping the layer's and the page's missing space after the comma. Written as superscripts these would fold to numbers that appear nowhere on the page; written flat they match the layer token for token. Block n=6 transcribes the two notation items as the layer splits them: the printed s-to-the-a p-to-the-b d-to-the-c reaches the layer as '(i)\\t  sa' / ' pbdc ...... notation', its superscripts hoisted onto the neighbouring letters, so it is spelled 'sa pbdc ...... notation' rather than reconstructed. The bold runs (block n=1 entirely, 'electronic configuration' in n=4) and the italics are printed emphasis and kept inline; the up and down arrow glyphs in block n=8 are as printed. The doubled space in 'the total number of  electrons' is as printed. Block n=14 breaks off at 'the elements from sodium to' and is completed on p036, so last_block_continues_on_next is true. bboxes are original-image pixels (1750x2180); the image renders at 1606x2000, so displayed coordinates were scaled by 1.09."
+}

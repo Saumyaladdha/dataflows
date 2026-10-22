@@ -1,0 +1,121 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        246,
+        203,
+        840,
+        324
+      ],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The vector ω × CP is perpendicular to ω, i.e. to the z-axis and also to CP, the radius of the circle described by the particle at P. It is therefore, along the tangent to the circle at P. Also, the magnitude of  ω × CP is ω (CP) since ω and CP are perpendicular to each other. We shall denote CP by ⊥r and not by r, as we did earlier."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Thus, ω × r is a vector of magnitude ωr⊥ and is along the tangent to the circle described by the particle at P. The linear velocity vector v at P has the same magnitude and direction. Thus,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        246,
+        815,
+        842,
+        862
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "In fact, the relation, Eq. (6.20), holds good even for rotation of a rigid body with one point fixed, such as the rotation of the top [Fig. 6.6(a)]. In this case r represents the position vector of the particle with respect to the fixed point taken as the origin."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "We note that for rotation about a fixed axis, the direction of the vector ω does not change with time. Its magnitude may, however, change from instant to instant. For the more general rotation, both the magnitude and the direction of ω may change from instant to instant."
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "6.6.1 Angular acceleration"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "You may have noticed that we are developing the study of rotational motion along the lines of the study of translational motion with which we are already familiar. Analogous to the kinetic variables of linear displacement (s) and velocity (v) in translational motion, we have angular displacement (θ) and angular velocity (ω) in rotational motion. It is then natural to define in rotational motion the concept of angular acceleration in analogy with linear acceleration defined as the time rate of change of velocity in translational motion. We define angular acceleration α as the time rate of change of angular velocity. Thus,"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        243,
+        1832,
+        842,
+        1908
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "If the axis of rotation is fixed, the direction of ω and hence, that of α is fixed. In this case the vector equation reduces to a scalar equation"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        925,
+        325,
+        1530,
+        392
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "heading",
+      "text": "6.7  TORQUE AND ANGULAR MOMENTUM"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "In this section, we shall acquaint ourselves with two physical quantities (torque and angular momentum) which are defined as vector products of two vectors. These as we shall see, are especially important in the discussion of motion of systems of particles, particularly rigid bodies."
+    },
+    {
+      "n": 14,
+      "kind": "heading",
+      "text": "6.7.1 Moment of force (Torque)"
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "We have learnt that the motion of a rigid body, in general, is a combination of rotation and translation. If the body is fixed at a point or along a line, it has only rotational motion. We know that force is needed to change the translational state of a body, i.e. to produce linear acceleration. We may then ask, what is the analogue of force in the case of rotational motion? To look into the question in a concrete situation let us take the example of opening or closing of a door. A door is a rigid body which can rotate about a fixed vertical axis passing through the hinges. What makes the door rotate? It is clear that unless a force is applied the door does not rotate. But any force does not do the job. A force applied to the hinge line cannot produce any rotation at all, whereas a force of given magnitude applied at right angles to the door at its outer edge is most effective in producing rotation. It is not the force alone, but how and where the force is applied is important in rotational motion."
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "The rotational analogue of force in linear motion is moment of force. It is also referred to as torque or couple. (We shall use the words moment of force and torque interchangeably.) We shall first define the moment of force for the special case of a single particle. Later on we shall extend the concept to systems of particles including rigid bodies. We shall also relate it to a change in the state of rotational motion, i.e. is angular acceleration of a rigid body."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "105",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null even though page is 14, so the opening continuation was judged from the image alone: the page opens with the displayed line 'Now  ω × r = ω × OP = ω × (OC + CP)', a fresh displayed statement rather than a mid-sentence run-on, so first_block_continues_from_previous is false. Block 1 groups the three displayed relations labelled Now / But / Hence as one equation block for the special transcriber. Displayed equations (6.20), (6.21) and (6.22) are blocks 4, 9 and 11, left for the special transcriber. The text layer repeats bold ω up to five times in a row (layered outline font artifact) in the 'as ω is along OC' line, in block 6 ('the direction of ω may change') and in block 10 ('of ω and hence'); each was transcribed once in reading order. In block 2 the subscript of r⊥ is extracted ahead of its base, so the text layer holds 'CP by ⊥r'; those characters were copied as-is per the inline-maths rule. The double space in 'the magnitude of  ω × CP' is from the text layer and was kept. The page has no figures or tables; the lower third of both columns is blank."
+}

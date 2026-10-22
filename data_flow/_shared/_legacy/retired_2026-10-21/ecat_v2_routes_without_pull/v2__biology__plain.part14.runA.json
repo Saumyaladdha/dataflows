@@ -1,0 +1,182 @@
+{
+  "group": "v2__biology__plain.part14",
+  "ratings": [
+    {
+      "question_id": "2015_A#q129",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "process",
+      "concept": "Cohesion-tension theory: hydrogen bonding gives the xylem water column its tensile strength",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_but_out_of_scope",
+          "option": "1",
+          "route": "Names what pushes water up from below. The stem asked what stops the column from snapping, not what lifts it."
+        },
+        {
+          "label": "wrong_site_or_stage",
+          "option": "2",
+          "route": "Brings phloem's sugar solution into the xylem. Xylem sap is almost pure water."
+        },
+        {
+          "label": "false_explanatory_link",
+          "option": "4",
+          "route": "Lignin really does strengthen the vessel wall. It is the water that is being pulled, and lignin adds nothing to the water's own cohesion."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which of four true-sounding facts accounts for a granted observation, demonstrated by the stem's \"does not break under its weight because of\" and option 3 \"Tensile strength of water\".",
+      "note": "false_explanatory_link is used outside an Assertion-Reason item here. The device is the one the label defines: option 4 is a true statement about xylem offered as the cause because it shares the topic. Section 5's tie-break mentions A/R only when separating it from format_reflex_option, so the label is read as written."
+    },
+    {
+      "question_id": "2015_A#q130",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "practical_procedure",
+      "concept": "Agrobacterium tumefaciens as a natural vector: its Ti plasmid t-DNA enters the plant during infection",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "3",
+          "route": "Borrows the heat-shock step used to make bacteria take up a plasmid. That is how E. coli is transformed, not how t-DNA reaches a plant."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored fact about a named vector, demonstrated by option 2 \"Infection of the plant by Agrobacterium tumefaciens\".",
+      "note": "No tag on options 1 and 4. Standing roots in water and a brief cold exposure are not steps in any transfer method the source describes, and I could not name a mis-step that lands on either, so neither is tagged."
+    },
+    {
+      "question_id": "2015_A#q131",
+      "question_type": "statement_options",
+      "format": "pick_correct_statement",
+      "content_shape": "classification_hierarchy",
+      "concept": "Five-kingdom features: Monera is prokaryotic, so it has no nuclear membrane",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "Answers \"pick the correct statement\". Animal cells really do lack a cell wall."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "Answers \"pick the correct statement\". Protists really do include both photosynthetic and heterotrophic forms."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Answers \"pick the correct statement\". Mushrooms really are edible fungi."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four kingdom-level facts checked one at a time against a negated task, demonstrated by the stem \"Pick up the wrong statement\" and option 1 \"Nuclear membrane is present in Monera\".",
+      "note": "E1 is statement_options, not plain_mcq: nothing is printed between the stem and the options, the stem is only the instruction \"Pick up the wrong statement\", and each option is a full claim to be judged. This is the one member of the packet whose printed shape differs from the rest."
+    },
+    {
+      "question_id": "2015_A#q132",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "process",
+      "concept": "Photosynthesis: the light reactions run on the thylakoid, the Calvin cycle in the stroma",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "wrong_site_or_stage",
+          "option": "2",
+          "route": "Puts the dark reactions inside the thylakoid. The lumen is where protons collect during the light reactions."
+        },
+        {
+          "label": "wrong_site_or_stage",
+          "option": "3",
+          "route": "Names a pigment complex instead of a compartment. Photosystem I sits in the thylakoid membrane and runs a light reaction."
+        },
+        {
+          "label": "wrong_site_or_stage",
+          "option": "4",
+          "route": "Names the other pigment complex. Photosystem II splits water, which is a light reaction."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored fact about where a stage runs, demonstrated by option 1 \"Stromal matrix\" against three sites that all belong to the light reactions.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q133",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Immunoglobulin classes and where each is found: IgA is the antibody of colostrum and milk",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "1",
+          "route": "IgG is the textbook answer to \"which antibody is most abundant in blood\" and \"which crosses the placenta\". The stem asked about milk."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "IgD sits on the surface of B cells. That is a different class's location."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "IgM is the first antibody made in a primary response. That is a different class's claim to fame."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored class-to-site association, demonstrated by option 4 \"IgA\" being the class the source ties to colostrum.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q135",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "current_affairs",
+      "concept": "Climate-change Conference of Parties venues: the 2012 meeting (COP18) was held at Doha",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_fact",
+          "option": "1",
+          "route": "Picks the next year's host. Warsaw held the 2013 meeting."
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "Picks the previous year's host. Durban held the 2011 meeting."
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "4",
+          "route": "Picks a later host. Lima held the 2014 meeting."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a dated venue held in memory, demonstrated by all four options being real host cities of the same annual conference so that only the year separates them.",
+      "note": "content_shape is current_affairs, not scientist_history: the source records the 1992 Rio summit and the Kyoto Protocol, but a 2012 venue is a year-to-year fact that no edition carries. Section 3 warns that this label carries an invariant, so flagging it here: if D6 records syllabus_status as latest_ncert for this question, the two statements contradict each other and scripts/checks/E3.py will fail it; the question is outside NCERT and that is why the label was chosen."
+    }
+  ],
+  "group_note": "Five of the six are plain_mcq; q131 is the exception and does not belong with the rest on E1, because no statement block is printed, the stem is only the instruction \"Pick up the wrong statement\" and each option is a full claim, which is statement_options. It is also the only member with several_independent_checks on the solution axis, for the same reason: four separate kingdom facts are each graded and the verdicts combined, while every other member turns on one fact and is single_step. The demand axis is recall for five; q129 alone is explanatory_reasoning, and the stated difference is that its stem grants the observation and asks which of four true-sounding facts accounts for it, so nothing is retrieved until the causal link is judged. E2 was set from the options alone: q129 offers rival causes for a granted fact (pick_cause_or_effect), q130 and q131 offer whole claims (pick_correct_statement), and q132, q133 and q135 offer bare names (name_or_identify). Content shapes differ by material, and q135 is the only current_affairs in the packet, flagged in its note because that label carries a cross-check against D6. Traps were tied to one option and one named mis-step each. Two devices repeat: a true statement failing a negated task, which only q131 can carry since it is the only negated member, and a fact about a neighbouring member of the same family, used in q132 (other sites in the chloroplast), q133 (other immunoglobulin classes) and q135 (other years' host cities). Three options are left untagged with the reason recorded in their question's note. No trap sits on an official answer, and no option carries two traps."
+}

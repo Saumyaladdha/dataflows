@@ -1,0 +1,109 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "arise instantaneously. There will be some time delay between the effect (force on q2) and the cause (motion of q1). It is precisely here that the notion of electric field (strictly, electromagnetic field) is natural and very useful. The field picture is this: the accelerated motion of charge q1 produces electromagnetic waves, which then propagate with the speed c, reach q2 and cause a force on q2. The notion of field elegantly accounts for the time delay. Thus, even though electric and magnetic fields can be detected only by their effects (forces) on charges, they are regarded as physical entities, not merely mathematical constructs. They have an independent dynamics of their own,  i.e., they evolve according to laws of their own. They can also transport energy. Thus, a source of time-dependent electromagnetic fields, turned on for a short interval of time and then switched off, leaves behind propagating electromagnetic fields transporting energy. The concept of field was first introduced by Faraday and is now among the central concepts in physics.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 1.8 An electron falls through a distance of 1.5 cm in a uniform electric field of magnitude 2.0 × 104 N C–1 [Fig. 1.13(a)]. The direction of the field is reversed keeping its magnitude unchanged and a proton falls through the same distance [Fig. 1.13(b)]. Compute the time of fall in each case. Contrast the situation with that of ‘free fall under gravity’."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        375,
+        1070,
+        990,
+        1340
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Solution In Fig. 1.13(a) the field is upward, so the negatively charged electron experiences a downward force of magnitude eE where E is the magnitude of the electric field. The acceleration of the electron is"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        225,
+        1455,
+        445,
+        1495
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "where me is the mass of the electron."
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Starting from rest, the time required by the electron to fall through a distance h is given by"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        515,
+        1595,
+        795,
+        1670
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        205,
+        1685,
+        770,
+        1810
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "In Fig. 1.13 (b), the field is downward, and the positively charged proton experiences a downward force of magnitude eE. The acceleration of the proton is"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        225,
+        1945,
+        445,
+        1990
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "where mp is the mass of the proton; mp = 1.67 × 10–27 kg. The time of fall for the proton is",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "21",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p020 output, which ended '...the effect of any motion of q1 on q2 cannot', matching this page's opening 'arise instantaneously.'. The lower two-thirds is the Example 1.8 grey panel, recorded as alternating box and needs_special equation blocks because display formulas interrupt its prose. Block n=9 is the three-line substitution group ('For e = ...', 'E = ...', 'te = 2.9 × 10–9s') taken as one equation region. The page ends MID-BOX - the Example 1.8 Solution continues on p022. The sideways 'EXAMPLE 1.8' margin label duplicates words in block n=2 and is not listed as removed."
+}

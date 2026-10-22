@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/B7.json",
+  "title": "B7 agent output (b7-chem-branch-sorter)",
+  "description": "Section 10/B7's Procedure line ('AGENT chooses physical/organic/inorganic or unsure') and the b7-chem-branch-sorter agent file (Appendix B), including its worked example. MINOR DISCREPANCY (noted, not resolved): unlike every other B-step agent file, b7-chem-branch-sorter.md's own worked output example has no 'note' field at all (just branch, confidence, why) -- this schema matches that actual example exactly (additionalProperties: false, no note) rather than assuming the universal 'note' field applies uniformly.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["branch", "confidence", "why"],
+      "additionalProperties": false,
+      "properties": {
+        "branch": { "type": "string", "enum": ["physical", "organic", "inorganic", "unsure"] },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "why": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

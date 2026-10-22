@@ -1,0 +1,19 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 3, "no_change": true},
+    {"n": 6, "no_change": true},
+    {"n": 7, "no_change": true},
+    {"n": 8, "no_change": true},
+    {"n": 9, "no_change": true},
+    {
+      "n": 10,
+      "corrected_text": "(i) Most of the space in the atom is empty as most of the α–particles passed through the foil undeflected.\n(ii) A few positively charged α–particles were deflected. The deflection must be due to enormous repulsive force showing that the positive charge of the atom is not spread throughout the atom as Thomson had presumed. The positive charge has to be concentrated in a very small volume that repelled and deflected the positively charged α–particles.\n(iii) Calculations by Rutherford showed that the volume occupied by the nucleus is negligibly small as compared to the total volume of the atom. The radius of the atom is about 10⁻¹⁰ m, while that of nucleus is 10⁻¹⁵ m. One can appreciate this difference in size by realising that if",
+      "fixes": [
+        {"wrong": "about 10–10 m", "right": "about 10⁻¹⁰ m"},
+        {"wrong": "nucleus is 10–15 m", "right": "nucleus is 10⁻¹⁵ m"}
+      ]
+    }
+  ],
+  "note": "One block corrected: n=10(iii) prints the atomic radius as 10⁻¹⁰ m and the nuclear radius as 10⁻¹⁵ m, both stored flattened as \"10–10 m\" and \"10–15 m\" — a five-orders-of-magnitude contrast destroyed by the flattening — restored to superscript powers of ten. Checked the rest specifically: the degree symbol in n=8(iii) \"deflected by nearly 180°\" is already present (the page prints a raised circle, not a letter o), every α, β and γ is already the real Greek letter, and the approximation signs in \"thickness ∼ 100 nm\" (n=6) and \"(∼1 in 20,000)\" (n=8) already match the page's ~. Nothing else needed changing."
+}

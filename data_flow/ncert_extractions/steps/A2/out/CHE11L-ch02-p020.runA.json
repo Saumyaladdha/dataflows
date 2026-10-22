@@ -1,0 +1,186 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "for the presence of negative sign in equation (2.13) and depicts its stability relative to the reference state of zero energy and n = ∞.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "d) Bohr’s theory can also be applied to the ions containing only one electron, similar to that present in hydrogen atom. For example, He+ Li2+, Be3+ and so on. The energies of the stationary states associated with these kinds of ions (also known as hydrogen like species) are given by the expression."
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        272,
+        638,
+        861,
+        692
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "and radii by the expression"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        245,
+        763,
+        861,
+        839
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "where Z is the atomic number and has values 2,3 for the helium and lithium atoms respectively. From the above equations, it is evident that the value of energy becomes more negative and that of radius becomes smaller with increase of Z. This means that electron will be tightly bound to the nucleus."
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "e) It is also possible to calculate the velocities of electrons moving in these orbits. Although the precise equation is not given here, qualitatively the magnitude of velocity of electron increases with increase of positive charge on the nucleus and decreases with increase of principal quantum number."
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "2.4.1 Explanation of Line Spectrum of Hydrogen"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Line spectrum observed in case of hydrogen atom, as mentioned in section 2.3.3, can be explained quantitatively using Bohr’s model. According to assumption 2, radiation (energy) is absorbed if the electron moves from the orbit of smaller Principal quantum number to the orbit of higher Principal quantum number, whereas the radiation (energy) is emitted if the electron moves from higher orbit to lower orbit. The energy gap between the two orbits is given by equation (2.16)"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        251,
+        1826,
+        861,
+        1869
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Combining equations (2.13) and (2.16)"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        932,
+        278,
+        1226,
+        354
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "(where ni and nf stand for initial orbit and final orbits)"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        899,
+        403,
+        1543,
+        551
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "The frequency (ν) associated with the absorption and emission of the photon can be evaluated by using equation           (2.18)"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        927,
+        676,
+        1548,
+        861
+      ],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        927,
+        899,
+        1548,
+        959
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "and in terms of wavenumbers ( )"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        927,
+        1046,
+        1548,
+        1123
+      ],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        927,
+        1134,
+        1548,
+        1324
+      ],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "In case of absorption spectrum, nf > ni and the term in the parenthesis is positive and energy is absorbed. On the other hand in case of emission spectrum ni > nf , ∆ E is negative and energy is released."
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "The expression (2.17) is similar to that used by Rydberg (2.9) derived empirically using the experimental data available at that time. Further, each spectral line, whether in absorption or emission spectrum, can be associated to the particular transition in hydrogen atom. In case of large number of hydrogen atoms, different possible transitions can be observed and thus leading to large number of spectral lines. The brightness or intensity of spectral lines depends  upon the number of photons of same wavelength or frequency absorbed or emitted."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "48",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p019.runA.json I wrote in this run, whose last prose block ends 'and its energy is lowered. That is the reason'. This page opens 'for the presence of negative sign in equation (2.13)', the continuation of that sentence, so first_block_continues_from_previous is true. Reading order is left column then right column, which is also the text layer's order on this page. The page is dominated by displayed maths: blocks n=3, 5, 10, 12, 14, 16, 17, 19 and 20 are all left for the special transcriber with pixel bboxes and empty text, each bbox including the equation number printed beside or below it — n=3 is (2.14), n=5 is (2.15), n=10 is (2.16), n=12 is the first ∆E difference of the two –RH/n² terms (its bbox stops short of the parenthetical text printed to its right), n=14 is the (2.17) group, n=16 is the (2.18) group down to the 2.18×10–18 J over 6.626×10–34 J s fraction, n=17 is (2.19), n=19 is (2.20) and n=20 is the 3.29×1015 s–1 over 3×108 m s–s fraction through '= 1.09677×107 (…) m–1' and (2.21). The text layer stores every one of these as scrambled token runs (for example 'E Z n n J 2 18 10 18 2 2 .' for (2.14) and 'r pm n = 52 9 2 . ( ) n Z' for (2.15)), with the wavenumber and nf/ni subscripts broken out of order, so transcribing them would not match. Prose kept around them follows the layer's own flattened spelling ('n = ∞', 'He+ Li2+, Be3+', 'nf > ni', 'ni > nf', '∆ E'), and block n=18 keeps the layer's bare '( )' where the overbarred nu is printed. Blocks n=13 and n=15 are prose printed inside the run of equations and the layer stores them cleanly, so they are transcribed. The page ends with the completed sentence 'frequency absorbed or emitted.' and the right column has blank space below it, so last_block_continues_on_next is false."
+}

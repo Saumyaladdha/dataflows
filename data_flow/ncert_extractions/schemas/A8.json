@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A8.json",
+  "title": "A8 agent output (a8-change-judge)",
+  "description": "Section 9/A8 'Agent output' line and the a8-change-judge agent file (Appendix B), including its worked examples. Note change_type here includes 'unsure' (the agent's own allowed value) — Section 17.1's change_type list (fact_changed/removed/added/wording_only, no 'unsure') describes the RESOLVED value A9 writes to ncert/change_log.csv after retry/second-opinion/adjudication, not this raw per-run output.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["change_type", "old_fact", "new_fact", "could_flip_an_answer", "why", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "change_type": {
+          "type": "string",
+          "enum": ["fact_changed", "fact_removed", "fact_added", "wording_only", "unsure"]
+        },
+        "old_fact": { "type": "string", "description": "One line describing what the older book said." },
+        "new_fact": { "type": "string", "description": "One line describing what the latest book says." },
+        "could_flip_an_answer": {
+          "type": "boolean",
+          "description": "True if an always/only/all, NOT, count or matching question could have a different answer because of this change."
+        },
+        "why": { "type": "string" },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } }
+    }
+  ]
+}

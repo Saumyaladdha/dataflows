@@ -1,0 +1,44 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.0, "x1": 0.265},
+      {"id": "right", "x0": 0.268, "x1": 0.898}
+    ]
+  },
+  "elements": [
+    {"n": 1, "role": "paragraph", "bbox": [0.3269, 0.0867, 0.8944, 0.1335],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.2956, 0.1408, 0.8944, 0.2321],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "figure", "bbox": [0.3219, 0.245, 0.8544, 0.3505],
+     "column": "right", "size_rel": 1.0},
+    {"n": 4, "role": "paragraph", "bbox": [0.3262, 0.3688, 0.8944, 0.4138],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "figure", "bbox": [0.2681, 0.4349, 0.8938, 0.544],
+     "column": "right", "size_rel": 1.0},
+    {"n": 6, "role": "paragraph", "bbox": [0.2956, 0.561, 0.8938, 0.6225],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 7, "role": "figure", "bbox": [0.3113, 0.6385, 0.8838, 0.7683],
+     "column": "right", "size_rel": 1.0},
+    {"n": 8, "role": "paragraph", "bbox": [0.3256, 0.7858, 0.8962, 0.8633],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "footer_rule", "bbox": [0.7856, 0.9156, 1.0, 0.9174],
+     "column": "right", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "page_number", "bbox": [0.7856, 0.9069, 0.8269, 0.9174],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71",
+     "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.8356, 0.9028, 0.8981, 0.9128],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.8, "align": "center"}
+  ],
+  "note": "Recto body page (folio 273); the declared left margin column is empty - no 9.x section heading falls here. body_text_size_px=20.5 from this page's body cap heights. All three reaction schemes have their yield figures or compound names printed beneath them and those labels are inside each figure's bbox, since A2 blocked them as part of the (untexted) figure blocks: n=3 takes in '(51%) (47%) (2%)', n=5 takes in 'Acetanilide / p-Nitroacetanilide / p-Nitroaniline', n=7 takes in 'Anilinium hydrogensulphate / Sulphanilic acid / Zwitter ion'. Figure n=5 starts 4px left of the nominal text-column edge (x 0.2681 vs 0.271) so the right column's x0 is reported as 0.268 for this page. A2 typed blocks n=2 and n=6 as paragraphs although they open with the run-in labels '(b) Nitration:' and '(c) Sulphonation:'; they are kept as paragraph because the label is set inline with the prose rather than as a separate heading line. No coloured panels, boxes or header band on this page."
+}

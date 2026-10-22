@@ -1,0 +1,29 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 18.0,
+    "columns": [
+      {"id": "full", "x0": 0.124, "x1": 0.875}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.125, 0.0872, 0.139, 0.094],
+     "column": "full", "size_rel": 0.89, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.799, 0.0872, 0.876, 0.094],
+     "column": "full", "size_rel": 0.89, "align": "right", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "box", "bbox": [0.124, 0.1225, 0.875, 0.9115],
+     "column": "full", "size_rel": 1.0, "fill": "#d7ecdd"},
+    {"n": 1, "role": "major_heading", "bbox": [0.4469, 0.1261, 0.5486, 0.1427],
+     "column": "full", "size_rel": 1.06, "align": "center", "font": "serif-bold",
+     "text_color": "#221f1f", "fill": "#dbeee0"},
+    {"n": 2, "role": "paragraph", "bbox": [0.1651, 0.1596, 0.8309, 0.8821],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "decorative_image", "bbox": [0.23, 0.31, 0.84, 0.79],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.9555, 0.522, 0.9624],
+     "column": "full", "size_rel": 0.89, "align": "center", "text_color": "#221f1f"}
+  ],
+  "note": "The chapter's SUMMARY page: the whole page body is printed on a tint, so it is measured as a full-width 'box' spanning x 0.124-0.875 and y 0.1225-0.9115 - exactly the page's text measure, with no rule or border of any kind, and a hard edge straight onto white paper (no tint above y 0.1225 or below y 0.9115). The tint is NOT flat: it is a soft green gradient that is pure #ffffff down the centre of the page and deepens symmetrically outward to both edges. There is no flat interior to sample, so the fill reported, #d7ecdd, is the gradient's DEEPEST value, taken 2 px inside the left edge at mid-height; its most common value across the panel is a lighter #dbeee0. The same edge sample on page 041's summary tail gives the identical #d7ecdd, while the exercises tint on pages 041-042 is a shade paler at #d9edde. Because the gradient is white where the prose actually sits, 'fill' is OMITTED on the prose element rather than guessed. 'SUMMARY' (block 1) is set as bold caps on its own small chip of #dbeee0 tint, which reads as a panel only because the gradient behind it is white there; the bbox given is the CHIP (x 0.4469-0.5486, y 0.1261-0.1427) - the lettering itself occupies x 0.4549-0.5411, y 0.1280-0.1362. Its cap height is 19 px against the body's 18 px, hence size_rel 1.06. body_text_size_px 18.0 is the cap-to-baseline of 'T' in 'Thomson in 1898' (crossbar at y 539 to baseline at y 556); line pitch is 31.7 px, tighter than the 35.7 px of an ordinary body page, and the prose is inset to x 0.1651-0.8309 inside the panel rather than running to the measure. A2 gave the whole summary as ONE block (n:2, kind 'box'); it is in fact FOUR justified paragraphs, whose first lines begin at y 0.1596 (unindented, opening on bold 'Atoms'), 0.2468, 0.5661 and 0.7697 - they are reported as one element because only one of them could honestly carry n:2. Single full-width column; no page_header_band, no rule_bar, no footer_rule, no figure or table. The diagonal grey NCERT watermark crosses the tint; the green ground defeats automatic grey sampling, so its bbox is an honest visual estimate consistent with the measured envelopes on pages 036-037 and 041, not a precise measurement. The centred '2024-25' at the foot sits on white paper below the panel and is a running footer; the allowed role list has no running_footer, so running_header is used, font omitted as unsure."
+}

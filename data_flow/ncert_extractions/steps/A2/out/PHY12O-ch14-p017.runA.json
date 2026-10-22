@@ -1,0 +1,53 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "14.7  APPLICATION OF JUNCTION DIODE AS A RECTIFIER",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "From the V-I characteristic of a junction diode we see that it allows current\nto pass only when it is forward biased. So if an alternating voltage is\napplied across a diode the current flows only in that part of the cycle\nwhen the diode is forward biased. This property\nis used to rectify alternating voltages and the\ncircuit used for this purpose is called a rectifier."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "If an alternating voltage is applied across a\ndiode in series with a load, a pulsating voltage will\nappear across the load only during the half cycles\nof the ac input during which the diode is forward\nbiased. Such rectifier circuit, as shown in\nFig. 14.18, is called a half-wave rectifier. The\nsecondary of a transformer supplies the desired\nac voltage across terminals A and B. When the\nvoltage at A is positive, the diode is forward biased\nand it conducts. When A is negative, the diode is\nreverse-biased and it does not conduct. The reverse\nsaturation current of a diode is negligible and can\nbe considered equal to zero for practical purposes.\n(The reverse breakdown voltage of the diode must\nbe sufficiently higher than the peak ac voltage at\nthe secondary of the transformer to protect the\ndiode from reverse breakdown.)"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Therefore, in the positive half-cycle of ac there\nis a current through the load resistor RL and we\nget an output voltage, as shown in Fig. 14.18(b),\nwhereas there is no current in the negative half-\ncycle. In the next positive half-cycle, again we get\nthe output voltage. Thus, the output voltage, though still varying, is\nrestricted to only one direction and is said to be rectified. Since the\nrectified output of this circuit is only for half of the input ac wave it is\ncalled as half-wave rectifier."
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        894,
+        550,
+        1526,
+        1313
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The circuit using two diodes, shown in Fig. 14.19(a), gives output\nrectified voltage corresponding to both the positive as well as negative\nhalf of the ac cycle. Hence, it is known as full-wave rectifier. Here the\np-side of the two diodes are connected to the ends of the secondary of the\ntransformer. The n-side of the diodes are connected together and the\noutput is taken between this common point of diodes and the midpoint\nof the secondary of the transformer. So for a full-wave rectifier the\nsecondary of the transformer is provided with a centre tapping and so it\nis called centre-tap transformer. As can be seen from Fig.14.19(c) the\nvoltage rectified by each diode is only half the total secondary voltage.\nEach diode rectifies only for half the cycle, but the two do so for alternate\ncycles. Thus, the output between their common terminals and the centre-\ntap of the transformer becomes a full-wave rectifier output. (Note that\nthere is another circuit of full wave rectifier which does not need a centre-\ntap transformer but needs four diodes.) Suppose the input voltage to A",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Semiconductor Electronics:",
+    "Materials, Devices and",
+    "Simple Circuits",
+    "483",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null; judged against my own p016 output, whose last block (the Example 14.4 box) closed on that page, and this page opens the 14.7 section heading. Fig. 14.18(a)/(b) with its caption occupies the upper right quadrant and is deferred to A2S; the left-column text flow is kept unbroken and the figure placed after the paragraph it sits beside. Page ends mid-sentence at 'Suppose the input voltage to A'."
+}

@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        191,
+        305,
+        1046,
+        877
+      ],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "An intrinsic semiconductor\nwill behave like an insulator at\nT = 0 K as shown in Fig. 14.6(a).\nIt is the thermal energy at\nhigher temperatures (T > 0K),\nwhich excites some electrons\nfrom the valence band to the\nconduction band. These\nthermally excited electrons at\nT > 0 K, partially occupy the\nconduction band. Therefore,\nthe energy-band diagram of an\nintrinsic semiconductor will be\nas shown in Fig. 14.6(b). Here,\nsome electrons are shown in\nthe conduction band. These\nhave come from the valence\nband leaving equal number of\nholes there."
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Example 14.1 C, Si and Ge have same lattice structure. Why is C\ninsulator while Si and Ge intrinsic semiconductors?\nSolution  The 4 bonding electrons of C, Si or Ge lie, respectively, in\nthe second, third and fourth orbit.  Hence, energy required to take\nout an electron from these atoms (i.e., ionisation energy Eg) will be\nleast for Ge, followed by Si and highest for C. Hence, number of free\nelectrons for conduction in Ge and Si are significant but negligibly\nsmall for C."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "14.4  EXTRINSIC SEMICONDUCTOR"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The conductivity of an intrinsic semiconductor depends on its\ntemperature, but at room temperature its conductivity is very low. As\nsuch, no important electronic devices can be developed using these\nsemiconductors. Hence there is a necessity of improving their\nconductivity. This can be done by making use of impurities."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "When a small amount, say, a few parts per million (ppm), of a suitable\nimpurity is added to the pure semiconductor, the conductivity of the\nsemiconductor is increased manifold. Such materials are known as\nextrinsic semiconductors or impurity semiconductors. The deliberate\naddition of a desirable impurity is called doping and the impurity atoms\nare called dopants. Such a material is also called a doped semiconductor.\nThe dopant has to be such that it does not distort the original pure\nsemiconductor lattice. It occupies only a very few of the original\nsemiconductor atom sites in the crystal. A necessary condition to attain\nthis is that the sizes of the dopant and the semiconductor atoms should\nbe nearly the same."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "There are two types of dopants used in doping the tetravalent Si\nor Ge:"
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "(i) Pentavalent (valency 5); like Arsenic (As), Antimony (Sb), Phosphorous\n(P), etc.",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "474",
+    "2022-23",
+    "EXAMPLE 14.1"
+  ],
+  "note": "previous_page_last_block was null; judged against my own p007 output, whose prose ended on a complete sentence and whose last element was a figure, so this page does not continue mid-sentence. Fig. 14.6(a)/(b) with its caption fills the top left two-thirds and is deferred to A2S; the narrow right-hand column paragraph is read after it. The 'EXAMPLE 14.1' vertical tab in the left margin of the worked-example box is a marginal label, listed as removed furniture; the box's own 'Example 14.1' opening words are kept inside the box block. The page ends part-way through the two-item dopant list — item (ii) follows on p009 — so last_block_continues_on_next is true."
+}

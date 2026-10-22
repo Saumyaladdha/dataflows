@@ -1,0 +1,163 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "A dot B) is defined as",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [365, 248, 950, 285],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "where θ  is the angle between the two vectors as shown in Fig. 5.1(a). Since A, B and cos θ are scalars, the dot product of A and B is a scalar quantity. Each vector, A and B, has a direction but their scalar product does not have a direction."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "From Eq. (5.1a), we have"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [365, 565, 770, 645],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Geometrically, B cos θ is the projection of B onto A in Fig.5.1 (b) and A cos θ  is the projection of A onto B in Fig. 5.1 (c). So, A.B is the product of the magnitude of A and the component of B along A. Alternatively, it is the product of the magnitude of B and the component of A along B."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Equation (5.1a) shows that the scalar product follows the commutative law :"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [365, 938, 685, 978],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Scalar product obeys the distributive law:"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [365, 1055, 705, 1095],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Further,\nA. (λ B) = λ (A.B)\nwhere λ is a real number."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "The proofs  of the above equations are left to you as an exercise."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "For unit vectors ɵ ɵ ɵ\ni, j,k we have"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [360, 1328, 685, 1420],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Given two vectors"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1015, 218, 1370, 332],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "their scalar product is"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [982, 376, 1632, 482],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "From the definition of scalar product and (Eq. 5.1b) we have :"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [982, 562, 1632, 658],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "since A.A = |A ||A| cos 0 = A2."
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "(ii)\nA.B = 0, if A and B are perpendicular."
+    },
+    {
+      "n": 23,
+      "kind": "box",
+      "text": "Example 5.1  Find the angle between force\nF = (3 + 4 -5\n)\nˆ\nˆ\nˆ\ni\nj\nk unit and displacement\nd = (5 + 4 +3\n)\nˆ\nˆ\nˆ\ni\nj\nk unit. Also find the\nprojection of F on d."
+    },
+    {
+      "n": 24,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [982, 942, 1548, 1462],
+      "text": ""
+    },
+    {
+      "n": 25,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [303, 1522, 1612, 1852],
+      "text": ""
+    },
+    {
+      "n": 26,
+      "kind": "paragraph",
+      "text": "Fig. 5.1\n(a) The scalar product of two vectors A and B is a scalar : A.B = A B cos θ.  (b) B cos θ is the projection\nof B onto A. (c) A cos θ is the projection of A onto B."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "72",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column transcribed first, then right column, then the full-width figure and its caption. Prose copied character-for-character from text_layer; displayed equations (5.1a, the A.B = A(B cos θ) pair, A.B = B.A, the distributive-law line, the unit-vector identities, the component forms of A and B, 5.1b, the (i)/Or pair with 5.1c) and the whole math-dense worked solution following the word 'Answer' are left to the special transcriber with bboxes in original-image pixels (1825x2176). Block 24 covers the entire Answer solution from 'Answer F.d' down to 'θ = cos–1  0.32' because its subscripts and superscripts are extracted onto separate lines and scrambled below word level. Block 11 keeps the inline 'A. (λ B) = λ (A.B)' as the text_layer holds it rather than re-rendering. Block 23 (Example 5.1, shaded box) is copied verbatim from the text_layer, which interleaves the unit-vector hats and letters out of order; a stray 'u' glyph in the text_layer is the solid triangle bullet drawn before 'Example 5.1' and was not transcribed. The diagonal '© NCERT / not to be republished' watermark and the figure's own (a)/(b)/(c) sub-labels were not transcribed as text blocks; the sub-labels fall inside the figure bbox. Greek letters appear as proper θ and λ in this page's text_layer, so no Latin look-alike substitution was needed."
+}

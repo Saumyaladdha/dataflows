@@ -1,0 +1,185 @@
+{
+  "group": "v2__chemistry__plain.part5",
+  "ratings": [
+    {
+      "question_id": "2015_A#q027",
+      "question_type": "statement_options",
+      "format": "pick_correct_statement",
+      "content_shape": "definition_term",
+      "concept": "Frenkel and Schottky defects: Frenkel moves an ion to an interstitial site and leaves the density alone, Schottky removes an ion pair and lowers it",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Swaps which family shows which defect. Alkali metal halides show Schottky defects; Frenkel defects turn up in silver halides and ZnS."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "Gives Schottky the density behaviour that belongs to Frenkel. Schottky takes a cation and an anion out of the crystal, so the density falls."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Gives Frenkel the density behaviour that belongs to Schottky. In a Frenkel defect the ion only shifts to an interstitial site, so mass and volume are unchanged."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires two neighbouring defects held apart, demonstrated by three of the four options naming \"Frenkel defect\" and \"Schottky defects\" with each other's properties attached.",
+      "note": "All three distractors work the same way - a property is moved from one defect type to the other - which is why all three carry the same label with the swap named in each route."
+    },
+    {
+      "question_id": "2015_A#q028",
+      "question_type": "arrange_in_order",
+      "format": "pick_order",
+      "content_shape": "trend",
+      "concept": "Inert pair effect: the $+1$ state grows more stable down group 13, so $\\mathrm{Tl}$ is the most stable and $\\mathrm{Al}$ the least",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "$\\mathrm{Tl}$ must stand at the stable end and $\\mathrm{Al}$ at the other: options 1 and 2 put $\\mathrm{Al}$ at the stable end, and option 3 moves $\\mathrm{Al}$ above $\\mathrm{In}$, leaving option 4.",
+      "traps": [
+        {
+          "label": "reversed_order",
+          "option": "1",
+          "route": "Prints the key's sequence backwards, $\\mathrm{Tl}$ first and $\\mathrm{Al}$ last. Reads the effect as weakening down the group."
+        },
+        {
+          "label": "sequence_endpoint_or_adjacency",
+          "option": "3",
+          "route": "Keeps $\\mathrm{Tl}$ at the stable end but lifts $\\mathrm{Al}$ above $\\mathrm{In}$. $\\mathrm{Al}$ has the least stable $+1$ state of the four and belongs at the bottom."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one taught group trend recalled and read off in order, demonstrated by the stem's \"increases in the sequence\" over the four group-13 metals.",
+      "note": "Option 2 is left untagged. The only route I can name for it - reading the trend backwards - lands exactly on option 1, which already carries `reversed_order`, and option 2's extra swap of $\\mathrm{In}$ and $\\mathrm{Tl}$ has no mis-step behind it that I can point to. E1 is `arrange_in_order` rather than `plain_mcq`, even though the packet was grouped on `structure: plain`: every option is a four-item sequence."
+    },
+    {
+      "question_id": "2015_A#q029",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "One chiral carbon gives exactly two stereoisomers, non-superimposable mirror images, which are enantiomers",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "condition_ignored",
+          "option": "2",
+          "route": "Drops \"which are optically active\" from the stem. A meso form is optically inactive, and it needs two chiral centres to exist at all."
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "3",
+          "route": "Reaches for the neighbouring class. Diastereomers need at least two chiral centres; lactic acid has one."
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "4",
+          "route": "Names a real class of stereoisomers that comes from hindered rotation about a single bond, not from a chiral carbon."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four stereochemical terms held apart by their definitions, demonstrated by the stem's \"Two possible stereo-structures ... which are optically active\", which fixes both the count and the activity before any term is chosen.",
+      "note": "The input marks has_figure true and names figures_agent/2015_A/q029.png, but no such file is in the store. The stem is self-contained - it gives the formula $\\mathrm{CH_3CHOH\\cdot COOH}$, which has one chiral carbon, and states that the two structures are optically active - so the question can be answered without the figure and is not treated as source_incomplete. The missing file is a repair task for the extraction step."
+    },
+    {
+      "question_id": "2015_A#q030",
+      "question_type": "plain_mcq",
+      "secondary_type": "figure_to_read",
+      "format": "pick_correct_statement",
+      "content_shape": "reaction",
+      "concept": "Schotten-Baumann reaction: an amine or phenol benzoylated by benzoyl chloride in aqueous alkali",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "look_alike_term",
+          "option": "1",
+          "route": "Reads the acyl chloride as acetyl chloride. The reagent in the figure is benzoyl chloride, so the product is a benzamide, not an acetamide."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "Sees an acyl chloride and thinks of Friedel-Crafts. That needs anhydrous $\\mathrm{AlCl_3}$ and joins the acyl group to a ring carbon, not to nitrogen."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Names another reaction built on aromatic starting materials. Perkin's reaction needs an aromatic aldehyde and an acid anhydride, and neither is present."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored reaction name recalled from a drawn transformation, demonstrated by the figure showing aniline and benzoyl chloride going to N-phenylbenzamide over $\\mathrm{NaOH}$.",
+      "note": "The stem as stored reads \"The following reaction [reaction scheme] is known by the name:\". I read the attached figure, papers_v2/figures_agent/2015_A/q030.png: it prints the scheme in full - aniline plus benzoyl chloride, $\\mathrm{NaOH}$ over the arrow, N-phenylbenzamide as product. I therefore treat \"[reaction scheme]\" as the extractor's pointer to that figure rather than as lost content, and tag the question normally. A reviewer who reads the placeholder as damage should set `source_damage_artifact` and clear the traps; the call is recorded here so it is cheap to overturn. E1 is plain_mcq with figure_to_read as the overlay, not `reaction_scheme`, because the figure shows one arrow, not a multi-step scheme."
+    },
+    {
+      "question_id": "2015_A#q031",
+      "question_type": "plain_mcq",
+      "format": "calculate_value",
+      "content_shape": "structure_chemical",
+      "concept": "Coordination number from denticity and oxidation state from charge balance: two bidentate en plus bidentate oxalate give six, and one ionisable $\\mathrm{Cl^-}$ makes the metal $+3$",
+      "cognitive_demand": "calculation",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "wrong_quantity",
+          "option": "1",
+          "route": "Uses the charge on the complex ion, $+1$, in place of the metal's oxidation number. Gives $6+1=7$."
+        },
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "Takes the metal as $+2$, forgetting that oxalate carries $-2$ and one chloride sits outside the bracket. Gives $6+2=8$."
+        },
+        {
+          "label": "intermediate_value",
+          "option": "4",
+          "route": "Stops at the coordination number, 6, and never adds the oxidation number to it."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires two quantities computed from one formula and then added, demonstrated by the stem's \"sum of coordination number and oxidation number\" over $\\mathrm{[M(en)_{2}(C_{2}O_{4})]Cl}$.",
+      "note": "Structure is several_independent_checks, not multi_step_dependent: the oxidation number is found from the charge balance without using the coordination number, so neither sub-result feeds the other - they are only added at the end."
+    },
+    {
+      "question_id": "2015_A#q032",
+      "question_type": "plain_mcq",
+      "format": "predict_product",
+      "content_shape": "reaction_mechanism",
+      "concept": "Nucleophilic addition-elimination at a carbonyl: only an $\\mathrm{-NH_2}$ nucleophile such as hydrazine loses water to give a $>\\mathrm{C=N-}$ bond",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "condition_ignored",
+          "option": "1",
+          "route": "Drops the stem's \"followed by elimination of water\". HCN adds and stops there, and the cyanohydrin keeps its OH group."
+        },
+        {
+          "label": "condition_ignored",
+          "option": "2",
+          "route": "Drops the same phrase. Bisulphite forms an addition product that holds on to both the OH and the $\\mathrm{SO_3H}$ group."
+        },
+        {
+          "label": "semantic_reversal",
+          "option": "3",
+          "route": "Gets the direction of the water backwards. A Grignard adduct is hydrolysed, so water is taken IN, not eliminated."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a stated mechanism matched to the reagent that follows it, demonstrated by the stem's \"nucleophilic addition followed by elimination of water\", which admits only a nucleophile carrying $\\mathrm{-NH_2}$.",
+      "note": ""
+    }
+  ],
+  "group_note": "The packet was grouped on `structure: plain`, and three members are not plain in the E1 sense, each noted on its own row: q027 prints no statement block and each option is a full claim, so it is `statement_options`; q028's four options are four-item sequences, so it is `arrange_in_order`; q030 is `plain_mcq` with `figure_to_read` as its overlay, because its reaction lives in an attached figure. On E4a the group separates on what the live decision is, and the separation is stated rather than assumed: q027 and q029 set two neighbouring terms against each other and are `concept_discrimination`; q028 reads off one recalled group trend and is `recall`, as is q030, which recalls a reaction name from a drawn transformation; q031 computes and is `calculation`; q032 applies a printed mechanism to four reagents and is `application`. On structure, every member whose option set must be adjudicated item by item is `several_independent_checks` (q027's four claims, q031's two independent quantities, q032's four reagents) and the rest are `single_step`; none is `multi_step_dependent`, and q031's note says exactly why it is not. `elimination` is carried by q028 alone, where the two endpoints of the trend strike out three sequences. Two members carry deliberate reservations rather than labels: q028 leaves option 2 untagged, and q029's declared figure is absent from the store - the stem carries the question without it, so no damage verdict is set."
+}

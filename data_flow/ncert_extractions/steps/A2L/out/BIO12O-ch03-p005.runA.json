@@ -1,0 +1,38 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "full", "x0": 0.279, "x1": 0.882}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.025, 0.068, 0.240, 0.156],
+     "column": "full", "size_rel": 1.0, "fill": "#725221"},
+    {"n": null, "role": "rule_bar", "bbox": [0.242, 0.068, 0.975, 0.108],
+     "column": "full", "size_rel": 1.0, "fill": "#467534"},
+    {"n": null, "role": "running_header", "bbox": [0.827, 0.141, 0.881, 0.148],
+     "column": "full", "size_rel": 0.75, "align": "right", "font": "sans",
+     "text_color": "#212121"},
+    {"n": 1, "role": "paragraph", "bbox": [0.322, 0.167, 0.880, 0.195],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.322, 0.198, 0.882, 0.348],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.320, 0.352, 0.882, 0.548],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "figure", "bbox": [0.350, 0.562, 0.853, 0.816],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.279, 0.828, 0.766, 0.851],
+     "column": "full", "size_rel": 0.95, "align": "center", "font": "serif",
+     "fill": "#fef2e2"},
+    {"n": null, "role": "page_number", "bbox": [0.025, 0.745, 0.202, 0.779],
+     "column": "full", "size_rel": 1.4, "align": "right", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "rule_bar", "bbox": [0.025, 0.782, 0.202, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.478, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif"}
+  ],
+  "note": "Single-column verso page (page 46): one `full` column, content envelope x 0.279-0.882; the prose measure is x 0.320-0.882 and the peach caption band under Figure 3.4 is the one element that reaches further left. Corner ornament, folio badge '46' and its orange rule are on the LEFT; green header band and the 'BIOLOGY' running header are on the RIGHT. Block 3 ends in a six-line italic passage ('However, it can also be broken by a sudden fall...'); A2 blocked it as part of the same paragraph, so it is reported as one paragraph element here rather than split. Figure 3.4's bbox includes its leader labels. The bottom-centre '2022-23' edition line is reported as running_header for want of a better allowed role. The diagonal 'not to be republished / (c) NCERT' watermark is a page-wide overlay and is not listed as an element."
+}

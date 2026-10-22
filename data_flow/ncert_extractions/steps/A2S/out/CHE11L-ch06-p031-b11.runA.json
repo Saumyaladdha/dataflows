@@ -1,0 +1,15 @@
+{
+  "kind": "table",
+  "header": [],
+  "rows": [
+    ["NH3 + H2O ⇌ NH4+ + OH-"],
+    ["Initial concentration (M)"],
+    ["0.10", "0.20", "0"],
+    ["Change to reach equilibrium (M)"],
+    ["-x", "+x", "+x"],
+    ["At equilibrium (M)"],
+    ["0.10 - x", "0.20 + x", "x"]
+  ],
+  "repeated_header": false,
+  "note": "ICE-style layout printed as stacked labelled lines rather than a ruled grid (same style as the p028 table in this chapter), so there is no distinct header row (left empty). Row 1 is the equilibrium equation; each following label line ('Initial concentration (M)', 'Change to reach equilibrium (M)' -- printed over two lines, joined here, 'At equilibrium (M)') is kept as its own single-cell row, immediately followed by its row of three values for NH3, NH4+ and OH- respectively (H2O's value is omitted as it is a pure liquid). Table is complete within target_box_in_crop."
+}

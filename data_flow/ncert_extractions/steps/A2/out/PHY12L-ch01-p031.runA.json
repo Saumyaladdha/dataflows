@@ -1,0 +1,109 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "(iv) The surface that we choose for the application of Gauss’s law is called the Gaussian surface. You may choose any Gaussian surface and apply Gauss’s law. However, take care not to let the Gaussian surface pass through any discrete charge. This is because electric field due to a system of discrete charges is not well defined at the location of any charge. (As you go close to the charge, the field grows without any bound.) However, the Gaussian surface can pass through a continuous charge distribution.\n(v) Gauss’s law is often useful towards a much easier calculation of the electrostatic field when the system has some symmetry. This is facilitated by the choice of a suitable Gaussian surface.\n(vi) Finally, Gauss’s law is based on the inverse square dependence on distance contained in the Coulomb’s law. Any violation of Gauss’s law will indicate departure from the inverse square law.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 1.10 The electric field components in Fig. 1.24 are Ex = ax1/2, Ey = Ez = 0, in which a = 800 N/C m1/2. Calculate (a) the flux through the cube, and (b) the charge within the cube. Assume that a = 0.1 m."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        367,
+        988,
+        1058,
+        1442
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "Solution"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "(a) Since the electric field has only an x component, for faces perpendicular to x direction, the angle between E and DS is ± p/2. Therefore, the flux  f = E.DS is separately zero for each face of the cube except the two shaded ones. Now the magnitude of the electric field at the left face is"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        259,
+        1623,
+        464,
+        1658
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "(x = a at the left face). The magnitude of electric field at the right face is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        259,
+        1719,
+        497,
+        1755
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "(x = 2a at the right face). The corresponding fluxes are"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        257,
+        1834,
+        1037,
+        1924
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        257,
+        1937,
+        886,
+        2011
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Net flux through the cube"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Electric Charges and Fields",
+    "31",
+    "EXAMPLE 1.10",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null even though this is page 31; judged from the page itself that block 1 continues a numbered list begun on the previous page (it opens at item (iv)), so first_block_continues_from_previous is true. The page ends mid-sentence inside the Example 1.10 box at 'Net flux through the cube'. Blocks 2-12 all sit inside the single grey 'Example 1.10' box; it is split into sub-blocks so the figure and the displayed equations can be marked needs_special. Displayed equations (E_L, E_R, phi_L, phi_R lines) are left to the special transcriber because the text layer scrambles their subscripts/superscripts onto separate lines; inline mathematics in prose blocks is copied as the text layer holds it (Greek alpha appears as 'a', pi as 'p', Delta as 'D'). A diagonal '© NCERT not to be republished' watermark crosses the page and is not part of the content. No section side-heading appears on this page, so artifact (a) did not arise."
+}

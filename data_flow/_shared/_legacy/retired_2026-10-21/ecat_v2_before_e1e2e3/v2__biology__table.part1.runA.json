@@ -1,0 +1,46 @@
+{
+  "group": "v2__biology__table.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q054",
+      "concept": "Nutrient cycles: gaseous cycles (carbon, nitrogen) have an atmospheric reservoir, sedimentary cycles (sulphur, phosphorus) have a rock or sediment reservoir",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that carbon's reservoir is atmospheric CO2, so carbon belongs to the gaseous cycle, strikes out options 1 and 4, which both print 'Sedimentary nutrient cycle - Carbon'.",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "prints the key's two groups with the two cycle names exchanged - 'Gaseous nutrient cycle - Sulphur and Phosphorus / Sedimentary nutrient cycle - Carbon and Nitrogen' against the key's 'Gaseous nutrient cycle - Carbon and Nitrogen / Sedimentary nutrient cycle - Sulphur and Phosphorus'; the content of the two groups is correct and the relation to the names that classify them is reversed"
+        },
+        {
+          "label": "half_true",
+          "option": "3",
+          "route": "each of its two bundled pairs has one correct member and one that fails: 'Gaseous nutrient cycle - Carbon and sulphur' is right about carbon and wrong about sulphur, whose reservoir is rock; 'Sedimentary nutrient cycle - Nitrogen and phosphorus' is right about phosphorus and wrong about nitrogen, whose reservoir is the atmosphere. The claim that fails in the first pair is sulphur, in the second nitrogen"
+        },
+        {
+          "label": "half_true",
+          "option": "4",
+          "route": "the same device on the other diagonal: 'Gaseous nutrient cycle - Nitrogen and sulphur' is right about nitrogen and fails on sulphur, and 'Sedimentary nutrient cycle - Carbon and Phosphorus' is right about phosphorus and fails on carbon. The failing claims are sulphur filed as gaseous and carbon filed as sedimentary"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires holding two neighbouring categories of the same scheme apart by their reservoir, demonstrated by the stem's 'In which of the following both pairs have correct combination?' and by option 2 printing 'Gaseous nutrient cycle - Carbon and Nitrogen / Sedimentary nutrient cycle - Sulphur and Phosphorus', where the two cycle names are the only thing separating it from option 1.",
+      "note": "Each option bundles four element assignments into two pairs and the stem requires both pairs to hold, so every option is adjudicated item by item; that is why the structure is several_independent_checks and not single_step. has_figure is true and figure_image points at figures_agent/2015_A/q054.png, but the stem and all four options are complete as text and nothing in them needs a figure, so no damage verdict is recorded on that account."
+    },
+    {
+      "question_id": "2015_A#q134",
+      "concept": "Modes of vegetative and asexual reproduction tied to named organisms: rhizome in banana, conidia in Penicillium, offset in water hyacinth, fragmentation rather than binary fission in Sargassum",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": ["arguable_key"],
+      "reason": "This question requires four separate stored structure-to-organism associations judged under a negated task, demonstrated by the stem's 'Which of the following pairs is not correctly matched?' standing over four single pairs, 'Rhizome - Banana', 'Binary fission - Sargassum', 'Conidia - Penicillium' and 'Offset - Water hyacinth'.",
+      "note": "The key as stored is option 4, 'Offset - Water hyacinth'. That pairing is the standard one: Eichhornia spreads by offsets. Option 2, 'Binary fission - Sargassum', is the pairing that does not hold, since Sargassum is a brown alga that multiplies by fragmentation while binary fission is the protistan mode. I do not overturn the key (rulebook section 7): the question is tagged as printed and arguable_key records the doubt, the repair being a check of this item against the printed paper and of our stored correct_answer. Two consequences follow for the axes. No trap is written: siting a trap requires naming an option that is not the answer, and the only option here with a nameable device is the one the subject matter indicates is the answer, so any trap would be a trap on the answer. No elimination either: the one available shortcut - the three secure pairings strike out options 1, 3 and 4 - lands on option 2 and so contradicts the stored key, which is the doubt itself rather than a strategy the question offers. has_figure is true with figure_image at figures_agent/2015_A/q134.png; all four options are complete as text and need no figure."
+    }
+  ],
+  "group_note": "The packet was grouped on structure 'table' as read from the page, but neither member prints a table of features or measurements to be read across rows: each is one question whose four options are bundled pairs accepted or rejected whole, q054 bundling two pairs per option and q134 one. They do belong together as a group - both are decided by taught structure-to-item pairings rather than by any stated criterion applied to data - but a later pass should expect the table overlay not to apply to either. Both were judged by the same two tests. Structure: does the task require a verdict on more than one item? Both yes, by different routes - q054 because each option carries two pairs that must both hold ('both pairs have correct combination'), q134 because the task is negated ('not correctly matched'), which cannot be settled without adjudicating every option - so both are several_independent_checks. Demand: is there a criterion to apply, or are the pairings themselves the facts? They differ here, and this is the one axis on which the two part company. q054 turns on one criterion, where the reservoir sits, applied to four elements across two rival category names, which is concept_discrimination; q134 has no criterion at all, only four unrelated stored pairings from four different chapters, which is recall. The trap axis separates them too, and the reason is the key rather than the questions: q054's key is present and secure, so each of its three wrong options is tied to an option and a route, with the exact reversal on option 1 and the one-right-one-wrong bundle on options 3 and 4 labelled by what is printed. q134 carries arguable_key instead, because the elimination route the question offers lands on option 2 while our record's key is option 4; under rulebook section 7 the tag follows the printed key and the doubt is recorded, which leaves its traps empty and its strategy empty rather than asserting a device against an answer that is itself in question. No trap in this packet is placed on an official answer."
+}

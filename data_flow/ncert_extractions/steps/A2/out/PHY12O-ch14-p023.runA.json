@@ -1,0 +1,79 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "(iii) Solar cell",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "A solar cell is basically a p-n junction which\ngenerates emf when solar radiation falls on the\np-n junction. It works on the same principle\n(photovoltaic effect) as the photodiode, except that\nno external bias is applied and the junction area\nis kept much larger for solar radiation to be\nincident because we are interested in more power."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "A simple p-n junction solar cell is shown in\nFig. 14.24."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "A p-Si wafer of about 300 µm is taken over\nwhich a thin layer (~0.3 µm) of n-Si is grown on\none-side by diffusion process. The other side of\np-Si is coated with a metal (back contact). On the\ntop of n-Si layer, metal finger electrode (or metallic\ngrid) is deposited. This acts as a front contact. The\nmetallic grid occupies only a very small fraction\nof the cell area (<15%) so that light can be incident\non the cell from the top."
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        894,
+        360,
+        1526,
+        888
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The generation of emf by a solar cell, when light falls on, it is due to\nthe following three basic processes: generation, separation and collection—\n(i) generation of e-h pairs due to light (with hν > Eg)\nclose to the junction; (ii) separation of electrons and\nholes due to electric field of the depletion region.\nElectrons are swept to n-side and holes to p-side;\n(iii) the electrons reaching the n-side are collected by\nthe front contact and holes reaching p-side are collected\nby the back contact. Thus p-side becomes positive and\nn-side becomes negative giving rise to photovoltage."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "When an external load is connected as shown in\nthe Fig. 14.25(a) a photocurrent IL flows through the\nload. A typical I-V characteristics of a solar cell is shown\nin the Fig. 14.25(b)."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Note that the I – V characteristics of solar cell is\ndrawn in the fourth quadrant of the coordinate axes.\nThis is because a solar cell does not draw current but\nsupplies the same to the load."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Semiconductors with band gap close to 1.5 eV are\nideal materials for solar cell fabrication. Solar cells are\nmade with semiconductors like  Si (Eg = 1.1 eV), GaAs\n(Eg = 1.43 eV), CdTe (Eg = 1.45 eV), CuInSe2 (Eg = 1.04\neV), etc. The important criteria for the selection of a\nmaterial for solar cell fabrication are (i) band gap (~1.0\nto 1.8 eV), (ii) high optical absorption (~10⁴ cm⁻¹), (iii)\nelectrical conductivity, (iv) availability of the raw\nmaterial, and (v) cost. Note that sunlight is not always\nrequired for a solar cell. Any light with photon energies\ngreater than the bandgap will do. Solar cells are used\nto power electronic devices in satellites and space\nvehicles and also as power supply to some calculators. Production of\nlow-cost photovoltaic cells for large-scale solar energy is a topic\nfor research."
+    },
+    {
+      "n": 10,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        959,
+        1068,
+        1526,
+        1951
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Semiconductor Electronics:",
+    "Materials, Devices and",
+    "Simple Circuits",
+    "489",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null; judged against my own p022 output, which closed its advantages list, and this page opens the '(iii) Solar cell' sub-heading. Figures 14.24 and 14.25, each with caption, occupy the right column and are deferred to A2S; the left-column text flow is kept unbroken. '~10⁴ cm⁻¹' is written with true superscripts; the text layer flattens it to '104 cm–1'. Page ends on a complete sentence."
+}

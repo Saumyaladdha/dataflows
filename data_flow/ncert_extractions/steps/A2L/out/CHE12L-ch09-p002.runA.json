@@ -1,0 +1,50 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.0, "x1": 0.285},
+      {"id": "right", "x0": 0.304, "x1": 0.933}
+    ]
+  },
+  "elements": [
+    {"n": 1, "role": "paragraph", "bbox": [0.305, 0.0867, 0.9325, 0.1161],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "figure", "bbox": [0.3944, 0.1243, 0.7906, 0.3711],
+     "column": "right", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.4138, 0.3817, 0.7762, 0.3936],
+     "column": "right", "size_rel": 0.95, "align": "center", "font": "serif-italic",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "section_heading", "bbox": [0.1, 0.3991, 0.2756, 0.4188],
+     "column": "left", "size_rel": 1.6, "align": "right", "text_color": "#6d6e71"},
+    {"n": null, "role": "rule_bar", "bbox": [0.0, 0.4216, 0.285, 0.4239],
+     "column": "left", "size_rel": 1.0, "fill": "#f48480"},
+    {"n": 4, "role": "paragraph", "bbox": [0.3044, 0.4032, 0.9313, 0.5771],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "figure", "bbox": [0.3837, 0.5812, 0.825, 0.6509],
+     "column": "right", "size_rel": 1.0},
+    {"n": 6, "role": "section_heading", "bbox": [0.0956, 0.6651, 0.2831, 0.6844],
+     "column": "left", "size_rel": 1.6, "align": "right", "text_color": "#6d6e71"},
+    {"n": null, "role": "rule_bar", "bbox": [0.0, 0.6867, 0.285, 0.689],
+     "column": "left", "size_rel": 1.0, "fill": "#f48480"},
+    {"n": 7, "role": "paragraph", "bbox": [0.305, 0.6661, 0.9313, 0.8537],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 8, "role": "paragraph", "bbox": [0.3056, 0.8555, 0.93, 0.8853],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.1025, 0.9028, 0.19, 0.9128],
+     "column": "left", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71"},
+    {"n": null, "role": "page_number", "bbox": [0.2006, 0.9069, 0.2412, 0.9174],
+     "column": "left", "size_rel": 1.0, "align": "right", "text_color": "#6d6e71",
+     "fill": "#fecb03"},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9156, 0.2412, 0.9174],
+     "column": "left", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.8, "align": "center"}
+  ],
+  "note": "Two-column body page (verso, folio 260). The narrow left column carries only the numbered section headings, set right-aligned in grey #6d6e71 script with a salmon #f48480 rule beneath each; all prose, figures and equations sit in the wide right column. body_text_size_px=20.5 from the cap-to-baseline height of 'A' in 'Amines are classified...' (y957-978px). Headings n=3 ('9.2 Classification') and n=6 ('9.3 Nomenclature') share a baseline with the first line of the paragraph beside them, which is why each paragraph's bbox starts slightly above its own second line. The 'Fig. 9.1 Pyramidal shape of trimethylamine' caption is not in A2's block list, so it is reported with n:null. No page_header_band is printed in this chapter - body pages carry no coloured strip at the top. The thin gold #fecb03 rule at the page foot is the footer_rule and the folio '260' sits on a gold tab at its right end; the salmon marginal rules under the section headings are reported as rule_bar, which is the only allowed role for a plain coloured rule that is neither a top band nor the foot rule."
+}

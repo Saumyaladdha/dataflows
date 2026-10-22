@@ -1,0 +1,129 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "(5) Counting the numbers of object, for example, 2 balls or 20 eggs, have infinite significant figures as these are exact numbers and can be represented by writing infinite number of zeros after placing a decimal i.e., 2 = 2.000000 or 20 = 20.000000.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "In numbers written in scientific notation, all digits are significant e.g., 4.01×102 has three significant figures, and 8.256×10–3 has four significant figures."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "However, one would always like the results to be precise and accurate. Precision and accuracy are often referred to while we talk about the measurement."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Precision refers to the closeness of various measurements for the same quantity. However, accuracy is the agreement of a particular value to the true value of the result. For example, if the true value for a result is 2.00 g and student ‘A’ takes two measurements and reports the results as 1.95 g and 1.93 g. These values are precise as they are close to each other but are not accurate. Another student ‘B’ repeats the experiment and obtains 1.94 g and 2.05 g as the results for two measurements. These observations are neither precise nor accurate. When the third student ‘C’ repeats these measurements and reports 2.01 g and 1.99 g as the result, these values are both precise and accurate. This can be more clearly understood from the data given in Table 1.4."
+    },
+    {
+      "n": 5,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        216,
+        1326,
+        857,
+        1620
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "Addition and Subtraction of Significant Figures"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The result cannot have more digits to the right of the decimal point than either of the original numbers."
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        383,
+        1748,
+        537,
+        1907
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Here, 18.0 has only one digit after the decimal point and the result should be reported only up to one digit after the decimal point, which is 31.1."
+    },
+    {
+      "n": 10,
+      "kind": "heading",
+      "text": "Multiplication and Division of Significant Figures"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "In these operations, the result must be reported with no more significant figures as in the measurement with the few significant figures."
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        946,
+        604,
+        1201,
+        635
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Since 2.5 has two significant figures, the result should not have more than two significant figures, thus, it is 3.1."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "While limiting the result to the required number of significant figures as done in the above mathematical operation, one has to keep in mind the following points for rounding off the numbers"
+    },
+    {
+      "n": 15,
+      "kind": "list",
+      "text": "1. If the rightmost digit to be removed is more than 5, the preceding number is increased by one. For example, 1.386. If we have to remove 6, we have to round it to 1.39.\n2. If the rightmost digit to be removed is less than 5, the preceding number is not changed. For example, 4.334 if 4 is to be removed, then the result is rounded upto 4.33.\n3. If the rightmost digit to be removed is 5, then the preceding number is not changed if it is an even number but it is increased by one if it is an odd number. For example, if 6.35 is to be rounded by removing 5, we have to increase 3 to 4 giving 6.4 as the result. However, if 6.25 is to be rounded off it is rounded off to 6.2."
+    },
+    {
+      "n": 16,
+      "kind": "heading",
+      "text": "1.4.3 Dimensional Analysis"
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Often while calculating, there is a need to convert units from one system to the other. The method used to accomplish this is called factor label method or unit factor method or dimensional analysis. This is illustrated below."
+    },
+    {
+      "n": 18,
+      "kind": "heading",
+      "text": "Example"
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "A piece of metal is 3 inch (represented by in) long. What is its length in cm?"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "SOME BASIC CONCEPTS OF CHEMISTRY",
+    "13",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null although this is page 13, so continuation was judged from the page itself: block 1 is numbered list item (5) whose list began on the previous page, but it starts a fresh complete sentence, so first_block_continues_from_previous is false. Last block is the statement of a worked Example whose solution is not on this page, so last_block_continues_on_next is true. Prose follows the text layer's glyph encoding (e.g. '4.01×102', '8.256×10–3') rather than the image's superscripts. Two display-maths items are left to the special transcriber: the stacked addition column (12.11 / 18.0 / 1.012 / 31.122) and the line '2.5×1.25 = 3.125'. bbox values are in original image pixels (1750×2125)."
+}

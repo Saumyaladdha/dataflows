@@ -1,0 +1,103 @@
+{
+  "group": "v2__biology__plain.part1",
+  "ratings": [
+    {
+      "question_id": "2015_A#q046",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "process",
+      "concept": "Root pressure: ions pumped into the root xylem draw water in behind them",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [],
+      "verdicts": ["source_damage_artifact"],
+      "reason": "This question requires choosing the cause of a granted fact, demonstrated by the stem ending \"Root pressure is usually acidic because\" with four rival mechanisms as the options.",
+      "note": "Damaged as printed. The stem asks why root pressure is ACIDIC, but the source's own solution reads \"As various ions from the soil are actively transported into the vascular tissues of the roots, water follows and increases the pressure inside the xylem i.e., root pressure (positive pressure)\" - an answer to how root pressure DEVELOPS, not to why it is acidic. Our record reproduces the booklet exactly, so the corruption is in the source, not in extraction. Tags cover only what is certain from the layout and the printed solution; traps left empty under rulebook rule 5."
+    },
+    {
+      "question_id": "2015_A#q047",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "organism_characteristic",
+      "concept": "Diagnostic features of plant and fungal groups: brown-algal pigments, where archegonia occur, Mucor's non-motile spores, gymnosperm endosperm ploidy",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {"label": "true_statement_trap", "option": "1", "route": "Reads past the word \"wrong\". Brown algae do carry chlorophyll $a$ and $c$ along with fucoxanthin."},
+        {"label": "true_statement_trap", "option": "2", "route": "Reads past the word \"wrong\". Archegonia really do occur in bryophytes, pteridophytes and gymnosperms."},
+        {"label": "true_statement_trap", "option": "4", "route": "Reads past the word \"wrong\". A gymnosperm's endosperm is haploid, laid down before fertilisation."}
+      ],
+      "reason": "This question requires four separate recalled facts to be checked against each other, demonstrated by the stem \"Which one is a wrong statement?\" over four unrelated claims.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q048",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "organism_characteristic",
+      "concept": "Prokaryotic cell: no nuclear envelope, but a plasma membrane, 70S ribosomes and mesosomes",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {"label": "true_statement_trap", "option": "1", "route": "Reads past the \"not\". A plasma membrane bounds every prokaryotic cell."},
+        {"label": "true_statement_trap", "option": "3", "route": "Reads past the \"not\". Prokaryotes carry 70S ribosomes."},
+        {"label": "true_statement_trap", "option": "4", "route": "Reads past the \"not\". A mesosome is an infolding of the prokaryotic plasma membrane, found nowhere else."}
+      ],
+      "reason": "This question requires each named structure to be tested against the prokaryotic cell, demonstrated by the stem \"Which of the following structures is not found in prokaryotic cells?\"",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q049",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "organism_characteristic",
+      "concept": "Complete double circulation: only birds and mammals keep the pulmonary and systemic circuits fully separate",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The whale is the only mammal among the four, and full separation of the two circuits belongs to mammals and birds, so that one fact settles it without examining any heart.",
+      "traps": [
+        {"label": "condition_ignored", "option": "2", "route": "Drops the word \"separate\". A frog does have two circuits, but its single ventricle mixes the blood."},
+        {"label": "condition_ignored", "option": "3", "route": "Drops the word \"separate\". A lizard's incompletely divided ventricle lets the two circuits mix."},
+        {"label": "other_one_fact", "option": "1", "route": "Gives the cartilaginous fishes' arrangement. A shark has a two-chambered heart and one circuit."}
+      ],
+      "reason": "This question requires one recalled group-level fact, demonstrated by the stem \"Which one of the following animals has two separate circulatory pathways?\" naming one animal from each of four vertebrate classes.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q050",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "classification_hierarchy",
+      "concept": "Trophic position in the deep sea: nothing photosynthesises below the photic zone, so the food chain runs on material sinking from above",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [],
+      "verdicts": ["arguable_key"],
+      "reason": "This question requires the trophic-level scheme to be applied to a habitat with no producers, demonstrated by the stem \"Most animals that live in deep oceanic waters are :\" with four trophic categories as the options.",
+      "note": "The source's own key and solution disagree. It prints \"Answer Key: (3)\" and then \"Solution: Detritivores are an important aspect of many ecosystem. They can live on any soil with organic component, including marine ecosystem\" - which argues for option 1. The key is followed as printed (rulebook section 7) and the doubt is recorded as a verdict. No trap is written, because option 1 cannot be treated as a wrong option while the source itself defends it."
+    },
+    {
+      "question_id": "2015_A#q051",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "definition_term",
+      "concept": "Biotic community: the interacting populations of different species sharing one habitat",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "other_one_fact", "option": "1", "route": "Takes the level below. A population is the individuals of one species, and the stem says different species."},
+        {"label": "other_one_fact", "option": "4", "route": "Takes the level above. An ecosystem is the community plus its physical surroundings."},
+        {"label": "neighbouring_fact", "option": "2", "route": "Swaps a group of organisms for a role. A niche is the job a species does, not an assembly of individuals."}
+      ],
+      "reason": "This question requires four neighbouring ecological terms to be held apart, demonstrated by the stem \"An association of individuals of different species living in the same habitat and having functional interactions is :\", whose every clause matches one term and not another.",
+      "note": "Options 1 and 4 are the levels of organisation directly below and above the keyed one, so they carry other_one_fact; option 2 is a different kind of concept altogether, which is why it carries neighbouring_fact instead."
+    }
+  ],
+  "group_note": "All six are a single question with four short text options and no lettered block, so all six are plain_mcq. Solution structure was set by one rule applied across the group: where the stem's criterion has to be tested against every option (q047 \"wrong statement\", q048 \"not found\") the label is several_independent_checks, and where one stored fact names the answer outright (q049, q051) it is single_step. q046 does not belong with the rest as it stands: its stem is corrupted in the source and it is the only member carrying source_damage_artifact and an empty trap list. q050 is the only member with a verdict on its key, and the only one given application rather than recall, because no single stored fact decides it - which is also why the source's key and its own solution disagree. q047 and q048 carry true_statement_trap on every wrong option because a negated task gives all three the same device; q049 and q051 carry distinct devices per option and are reasoned individually."
+}

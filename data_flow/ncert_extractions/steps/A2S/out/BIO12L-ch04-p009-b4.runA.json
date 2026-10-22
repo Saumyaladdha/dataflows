@@ -1,0 +1,20 @@
+{
+  "kind": "table",
+  "header": [
+    "Allele from Parent 1",
+    "Allele from Parent 2",
+    "Genotype of offspring",
+    "Blood types of offspring"
+  ],
+  "rows": [
+    ["I^A", "I^A", "I^A I^A", "A"],
+    ["I^A", "I^B", "I^A I^B", "AB"],
+    ["I^A", "i", "I^A i", "A"],
+    ["I^B", "I^A", "I^A I^B", "AB"],
+    ["I^B", "I^B", "I^B I^B", "B"],
+    ["I^B", "i", "I^B i", "B"],
+    ["i", "i", "i i", "O"]
+  ],
+  "repeated_header": false,
+  "note": "Printed caption above the table: \"Table 4.2: Table Showing the Genetic Basis of Blood Groups in Human Population\". Superscript allele symbols are written with ^ (printed as italic I with superscript A/B). The crop over-includes one neighbouring body line above the caption, clipped at the left margin (\"ble 4.2). How many phenotypes are possible?\"); excluded, it is not part of the table."
+}

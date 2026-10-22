@@ -1,0 +1,176 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [324, 205, 945, 305],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "where τi is the torque acting on the ith particle;"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [365, 362, 515, 398],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The force Fi on the ith particle is the vector sum of external forces Fi ext acting on the particle and the internal forces Fi int exerted on it by the other particles of the system. We may therefore separate the contribution of the external and the internal forces to the total torque"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [305, 655, 640, 722],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [490, 748, 700, 790],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [345, 808, 730, 872],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [345, 888, 730, 952],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "We shall assume not only Newton’s third law of motion, i.e. the forces between any two particles of the system are equal and opposite, but also that these forces are directed along the line joining the two particles. In this case the contribution of the internal forces to the total torque on the system is zero, since the torque resulting from each action-reaction pair of forces is zero. We thus have, τint = 0 and therefore τ = τext."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Since τ = ∑ τi, it follows from Eq. (6.28a) that"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [324, 1350, 945, 1430],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Thus, the time rate of the total angular momentum of a system of particles about a point (taken as the origin of our frame of reference) is equal to the sum of the external torques (i.e. the torques due to external forces) acting on the system taken about the same point. Eq. (6.28 b) is the generalisation of the single particle case of Eq. (6.23) to a system of particles. Note that when we have only one particle, there are no internal forces or torques. Eq.(6.28 b) is the rotational analogue of"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [324, 1820, 945, 1905],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Note that like Eq.(6.17), Eq.(6.28b) holds good for any system of particles, whether it is a rigid body or its individual particles have all kinds of internal motion."
+    },
+    {
+      "n": 15,
+      "kind": "heading",
+      "text": "Conservation of angular momentum"
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "If τext = 0, Eq. (6.28b) reduces to"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1010, 470, 1625, 580],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "Thus, if the total external torque on a system of particles is zero, then the total angular momentum of the system is conserved, i.e. remains constant. Eq. (6.29a) is equivalent to three scalar equations,"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1000, 745, 1625, 792],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "Here K1, K2 and K3 are constants; Lx, Ly and Lz are the components of the total angular momentum vector L along the x,y and z axes respectively. The statement that the total angular momentum is conserved means that each of these three components is conserved."
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "Eq. (6.29a) is the rotational analogue of Eq. (6.18a), i.e. the conservation law of the total linear momentum for a system of  particles. Like Eq. (6.18a), it has applications in many practical situations. We shall look at a few of the interesting applications later on in this chapter."
+    },
+    {
+      "n": 22,
+      "kind": "box",
+      "needs_special": true,
+      "bbox": [985, 1228, 1630, 1338],
+      "text": ""
+    },
+    {
+      "n": 23,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [985, 1362, 1520, 1458],
+      "text": ""
+    },
+    {
+      "n": 24,
+      "kind": "paragraph",
+      "text": "We shall use the determinant rule to find the torque τ = r × F"
+    },
+    {
+      "n": 25,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1000, 1550, 1625, 1690],
+      "text": ""
+    },
+    {
+      "n": 26,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1010, 1698, 1625, 1755],
+      "text": ""
+    },
+    {
+      "n": 27,
+      "kind": "box",
+      "text": "Example 6.6  Show that the angular momentum about any point of a single particle moving with constant velocity remains constant throughout the motion."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "108",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null, but the page opens directly with the numbered displayed equation (6.28a) with no preceding sentence start, so it continues a derivation begun on the previous page; flagged as continuing. Image is 1826x2163 px; all bboxes are in those image pixels. Two-column page: left column read first (blocks 1-13), then right column (blocks 14-27). Superscript/subscript extraction artifact: the text layer puts sub/superscripts on their own lines and scrambles them (e.g. 'int' before 'iF'); in blocks 4 and 9 the symbols are written in reading order as plain tokens with a space ('Fi ext', 'Fi int') using only characters present, no invented notation. Block 9: the text layer repeats the outline-font tau five times ('τ τ τ τ τext'); transcribed once as 'τ = τext.'. Displayed/numbered equations are left to the special transcriber: block 5 also covers the trailing connective word 'as' on that line, block 6 the trailing comma, blocks 7 and 8 the leading connectives 'where' and 'and', block 17 covers both the dL/dt = 0 line and the 'or L = constant. (6.29a)' line. Block 22 is the boxed statement of Example 6.5; its vector symbols (7i+3j-5k, i-j+k with hats) are entirely absent from the text layer, so it is marked needs_special rather than guessed. Block 23 is the Answer line 'Answer Here r = ... and F = ...' whose hats and coefficients are scrambled in the text layer; it carries the bold 'Answer' label at its left. Block 26 includes the blue end-of-answer marker. A diagonal '© NCERT not to be republished' watermark crosses the page; it is not a header/footer and was not listed. Example 6.6 (block 27) is a closed box ending in a complete sentence, so last_block_continues_on_next is false, although its Answer presumably follows on the next page."
+}

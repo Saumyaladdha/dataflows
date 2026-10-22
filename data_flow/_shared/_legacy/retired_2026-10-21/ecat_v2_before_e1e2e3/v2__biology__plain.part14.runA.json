@@ -1,0 +1,164 @@
+{
+  "group": "v2__biology__plain.part14",
+  "ratings": [
+    {
+      "question_id": "2015_A#q129",
+      "concept": "Cohesion-tension theory of ascent of sap: the tensile strength of water, from cohesion between its molecules, is what keeps the xylem column unbroken under tension",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "1",
+          "route": "root pressure is the published answer to \"what causes guttation / what re-establishes a broken water column at night\"; it is a push from below and so does not address the stem's \"does not break under its weight\""
+        },
+        {
+          "label": "wrong_site_or_stage",
+          "option": "2",
+          "route": "dissolved sugars are the solutes of phloem sap, not of xylem sap; the option moves a phloem property into the xylem the stem names"
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "4",
+          "route": "lignification is a true property of xylem vessels and explains why the vessel wall resists collapse; the stem asks why the \"column of water\" does not break, which is a property of the water, not of the wall"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which of four stated properties accounts for a granted fact, demonstrated by the stem's \"does not break under its weight because of\" being answered by option 3 \"Tensile strength of water\" rather than by a property of the vessel.",
+      "note": "The \"not\" recorded in negative_words_seen sits inside the biological premise (\"does not break\"), not in the task, so the task is a direct \"because of\" question."
+    },
+    {
+      "question_id": "2015_A#q130",
+      "concept": "Agrobacterium tumefaciens and its Ti plasmid as the natural vector that delivers T-DNA into the plant genome",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "3",
+          "route": "heat shock after a divalent-cation treatment is the published answer to \"how is recombinant DNA introduced into a bacterial cell\"; the stem asks how T-DNA enters a plant"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored fact naming a vector organism, demonstrated by the stem's \"introduction of t-DNA into plants\" being answered by option 2 \"Infection of the plant by Agrobacterium tumefaciens\".",
+      "note": "Options 1 and 4 are left untagged. \"Allowing the plant roots to stand in water\" and \"Exposing the plants to cold for a brief period\" correspond to no published transformation or physiological result that the stem resembles, and a route cannot be named for either."
+    },
+    {
+      "question_id": "2015_A#q131",
+      "concept": "Diagnostic features of the five kingdoms: Monera are prokaryotic and so have no nuclear membrane",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "\"Cell wall is absent in Animalia\" is a true kingdom feature, so the option fails only the stem's negated task, \"Pick up the wrong statement\""
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "\"Protista have photosynthetic and heterotrophic modes of nutrition\" is true of the kingdom, so the option fails only the task's polarity"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "\"Some fungi are edible\" is true, so the option fails only the task's polarity"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires each printed claim to be graded separately for truth, demonstrated by the stem's \"Pick up the wrong statement\" and option 1 \"Nuclear membrane is present in Monera\", which contradicts the prokaryotic organisation of that kingdom.",
+      "note": "On the printed shape this member is not a plain MCQ: no statement block is printed above the options and each option is itself a full statement to be graded, which the rulebook calls `statement_options`. It is recorded here because the packet was grouped on the reader's `structure` field, which read `plain`. Nothing else about the rating depends on that difference."
+    },
+    {
+      "question_id": "2015_A#q132",
+      "concept": "Sites of the two phases of photosynthesis: the light-independent (Calvin) reactions run in the stroma, the light reactions on and in the thylakoids",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that Photosystem I and Photosystem II are the pigment assemblies of the light reactions strikes out options 3 and 4 without any knowledge of where the dark reactions run.",
+      "traps": [
+        {
+          "label": "wrong_site_or_stage",
+          "option": "2",
+          "route": "the thylakoid lumen is the real site of water splitting and of the proton pool of the light reactions; the option moves the light-independent reactions to the compartment of the light-dependent ones"
+        },
+        {
+          "label": "wrong_site_or_stage",
+          "option": "3",
+          "route": "Photosystem I is the real site of NADP+ reduction in the light reactions; the option places a light-independent process at a light-harvesting complex"
+        },
+        {
+          "label": "wrong_site_or_stage",
+          "option": "4",
+          "route": "Photosystem II is the real site of photolysis of water in the light reactions; the option again places a light-independent process at a light-harvesting complex"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored site-to-process fact, demonstrated by the stem's \"light-independent reactions take place at\" being answered by option 1 \"Stromal matrix\" while the other three options name thylakoid compartments.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q133",
+      "concept": "Immunoglobulin classes and where each acts: IgA is the secretory antibody of colostrum and milk",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_question_answer",
+          "option": "1",
+          "route": "IgG is the published answer to \"which immunoglobulin is most abundant in serum / which one crosses the placenta\"; the stem asks about human milk"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "IgM is a different member of the same family of five classes, carrying its own fact (the pentameric antibody of the primary response), which the option substitutes for the milk fact the stem asks for"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "IgD is a different member of the same family, carrying its own fact (the class found on the B-lymphocyte surface)"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored class-to-site fact, demonstrated by the stem's \"largest percentage in human milk\" being answered by option 4 \"IgA\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q135",
+      "concept": "Venues and years of the UNFCCC Conference of Parties meetings: the 2012 meeting (COP 18) was at Doha",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "Durban hosted the Conference of Parties of the adjacent year, 2011; the option carries the right kind of fact about the neighbouring event"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "1",
+          "route": "Warsaw hosted the Conference of Parties of the following year, 2013, again the neighbouring event in the same annual series"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "4",
+          "route": "Lima hosted the Conference of Parties of 2014, two years after the year the stem names"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored venue-and-year attribution with no subject reasoning available to fall back on, demonstrated by the stem's \"in the year 2012\" and option 3 \"Doha\", all four options being venues of meetings in the same annual series.",
+      "note": "All four options are real venues of consecutive meetings of the same series, so there is no fact about the subject matter that strikes any of them out; the item turns entirely on the year-to-city pairing. No elimination label is therefore recorded."
+    }
+  ],
+  "group_note": "Six biology items grouped on the reader's `structure` field, which read `plain` for all of them. One member does not belong on the printed shape: q131, \"Pick up the wrong statement\", prints no statement block and makes each option a full claim to be graded, which the rulebook calls `statement_options`; that is recorded in its own note and changes nothing in its judgement, because the demand is still one stored fact and the structure is still a per-option adjudication. The demand axis splits two ways, and the test applied to all six was whether the stem asks WHICH FACT or asks WHY. q129 asks \"does not break ... because of\" and so is `explanatory_reasoning`: the live decision is whether a stated property accounts for a granted fact, and option 4 fails on relevance rather than on truth. The other five are `recall` - one stored fact (vector organism, kingdom feature, site of the Calvin cycle, immunoglobulin class, COP venue) names the option, so the rulebook's exclusion of \"recalling one\" keeps them off `concept_discrimination`. Solution structure is `single_step` in five and `several_independent_checks` only in q131, where the negated task \"Pick up the wrong statement\" forces a separate truth verdict on each printed claim before the false one can be selected; that is the same test used in this subject's other packets and is the only reason q131 differs. Elimination was recorded once, in q132, where the single fact that Photosystem I and II are light-reaction assemblies strikes out two options without settling the answer. It was withheld everywhere else, and explicitly from q135, whose four options are venues of consecutive meetings of one series so that no subject fact strikes any of them out. The trap axis is where this group is most varied, and each label follows the rulebook's own tie-break. q131 is the only member with a negated task and is the only one carrying `true_statement_trap`, three times. Where an option carries a true fact belonging to a neighbour, the label records what kind of neighbour: `other_one_fact` for a different member of the same family (IgD, IgM among the five classes), `neighbouring_fact` where the families differ (the adjacent year's Conference of Parties in q135), `wrong_site_or_stage` where the right process is moved to the wrong compartment (q132's three thylakoid options, q129's phloem solutes in the xylem), and `neighbouring_question_answer` where the option is the published answer to a different question the stem resembles (root pressure and guttation in q129, bacterial heat shock in q130, IgG and serum abundance in q133). q129 option 4 is the group's one `true_but_out_of_scope`: lignification is true of xylem vessels and fails only because the stem asks about the water column. Three options were left untagged (q130 options 1 and 4, and no second device on q131) because no option-and-route pair could be named, as rule 4 requires. No trap is placed on any official answer, no verdict was needed - nothing in this packet is damaged - and no `new_*` escape was used."
+}

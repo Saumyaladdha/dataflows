@@ -1,0 +1,73 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "(b)\nλ = 1.45 × 10–10 m [Use  λ =(h/√3 m k T) ] which is comparable\nto interatomic spacing in a crystal.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Clearly, from (a) and (b) above, thermal neutrons are a suitable\nprobe for diffraction experiments; so a high energy neutron beam\nshould be first thermalised before using it for diffraction."
+    },
+    {
+      "n": 3,
+      "kind": "list",
+      "text": "11.33 λ = 5.5 × 10–12 m\nλ (yellow light) = 5.9 × 10–7m\nResolving Power (RP) is inversely proportional to wavelength. Thus,\nRP of an electron microscope is about 105 times that of an optical\nmicroscope. In practice, differences in other (geometrical) factors\ncan change this comparison somewhat."
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "11.34"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [565, 725, 1245, 805],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "Use the relativistic formula for energy:\nE 2 = c2p 2 + m 0 2 c4 = 9 × (6.63)2 × 10–22 + (0.511 × 1.6)2 × 10–26\n    ∼ 9 × (6.63)2 × 10–22,\nthe second term (rest mass energy) being negligible.\nTherefore, E = 1.989 × 10–10 J = 1.24 BeV. Thus, electron energies\nfrom the accelerator must have been of the order of a few BeV."
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "11.35 Use"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [345, 1045, 1145, 1130],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "This gives  λ = 0.73 × 10–10 m. Mean separation\nr = (V/N)1/3 = (kT/p)1/3\nFor T = 300 K, p = 1.01 × 105 Pa, r = 3.4 × 10–9 m. We find r >> λ."
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "11.36 Using the same formula as in Exercise 11.35, λ = 6.2 × 10–9 m which\nis much greater than the given inter-electron separation."
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "11.37 (a)\nQuarks are thought to be confined within a proton or neutron\nby forces which grow stronger if one tries to pull them apart. It,\ntherefore, seems that though fractional charges may exist in\nnature, observable charges are still integral multiples of e.\n(b)\nBoth the basic relations e V = (1/2) m v 2 or e E = m a and\ne B v =m v 2/r, for electric and magnetic fields, respectively, show\nthat the dynamics of electrons is determined not by e, and m\nseparately but by the combination e/m.\n(c)\nAt low pressures, ions have a chance to reach their respective\nelectrodes and constitute a current. At ordinary pressures, ions\nhave no chance to do so because of collisions with gas molecules\nand recombination.\n(d)\nWork function merely indicates the minimum energy required\nfor the electron in the highest level of the conduction band to\nget out of the metal. Not all electrons in the metal belong to this\nlevel. They occupy a continuous band of levels. Consequently,\nfor the same incident radiation, electrons knocked off from\ndifferent levels come out with different energies.\n(e)\nThe absolute value of energy E (but not momentum p) of any\nparticle is arbitrary to within an additive constant. Hence, while\nλ  is physically significant, absolute value of ν of a matter wave of\nan electron has no direct physical meaning. The phase speed νλ",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "512",
+    "Physics",
+    "2022-23"
+  ],
+  "note": "BOOK BACK MATTER, NOT CHAPTER 14 CONTENT. Printed page 512, CHAPTER 11 answers (11.32(b) through 11.37) inside the book's ANSWERS section; transcribed only because the A2 schema rejects a zero-block page, and not to be used as chapter-14 passage text. previous_page_last_block was null, so the continuation was judged from my own p043 output, which ended with 11.32(a) complete; this page opens with the new sub-item '(b)', not mid-sentence, so first_block_continues_from_previous is false. Answer 11.37(e) breaks off at 'The phase speed', so last_block_continues_on_next is true. Two printed display expressions are deferred to A2S: the p = h/lambda = (6.63 x 10-34 Js)/(10-15 m) line of 11.34 (n=5, its item label kept as block n=4) and the lambda = h/sqrt(3 m k T) ; mHe = (4x10-3)/(6x1023) kg line of 11.35 (n=8, with 'Use' kept in block n=7). The radical inside 11.32(b) stays inline because it is printed inside the sentence's square brackets."
+}

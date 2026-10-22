@@ -1,0 +1,83 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Residual Volume (RV): Volume of air remaining in the lungs even after a forcible expiration. This averages 1100 mL to 1200 mL.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "By adding up a few respiratory volumes described above, one can derive various pulmonary capacities, which can be used in clinical diagnosis.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Inspiratory Capacity (IC): Total volume of air a person can inspire after a normal expiration. This includes tidal volume and inspiratory reserve volume ( TV+IRV).",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Expiratory Capacity (EC): Total volume of air a person can expire after a normal inspiration. This includes tidal volume and expiratory reserve volume (TV+ERV).",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Functional Residual Capacity (FRC): Volume of air that will remain in the lungs after a normal expiration. This includes ERV+RV.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Vital Capacity (VC): The maximum volume of air a person can breathe in after a forced expiration. This includes ERV, TV and IRV or the maximum volume of air a person can breathe out after a forced inspiration.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Total Lung Capacity (TLC): Total volume of air accommodated in the lungs at the end of a forced inspiration. This includes RV, ERV, TV and IRV or vital capacity + residual volume.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "17.3 EXCHANGE OF GASES"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Alveoli are the primary sites of exchange of gases. Exchange of gases also occur between blood and tissues. O2 and CO2 are exchanged in these sites by simple diffusion mainly based on pressure/concentration gradient. Solubility of the gases as well as the thickness of the membranes involved in diffusion are also some important factors that can affect the rate of diffusion.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Pressure contributed by an individual gas in a mixture of gases is called partial pressure and is represented as pO2 for oxygen and pCO2 for carbon dioxide. Partial pressures of these two gases in the atmospheric air and the two sites of diffusion are given in Table 17.1 and in Figure 17.3. The data given in the table clearly indicates a concentration gradient for oxygen from alveoli to blood and blood to tissues. Similarly,",
+      "continues_from_previous": false
+    },
+    {
+      "n": 11,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        210,
+        1635,
+        1540,
+        1880
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "272",
+    "BIOLOGY",
+    "2022-23"
+  ],
+  "note": "Text layer present and clean; used as the source and cross-checked against the image. Removed furniture: page number (272), the running header 'BIOLOGY', and the reprint-year footer (2022-23); a diagonal '(c) NCERT not to be republished' watermark overlays the page and is not transcribed. previous_page_last_block was null, but I hold the chapter in page order: page 4's prose ended with the complete sentence '...This averages 1000 mL to 1100 mL.' and this page opens a new defined term 'Residual Volume (RV):', so first_block_continues_from_previous is false (observed, not guessed). The table 17.1 block (needs_special) carries its caption 'TABLE 17.1 Partial Pressures (in mm Hg) of Oxygen and Carbon dioxide at Different Parts Involved in Diffusion in Comparison to those in Atmosphere' plus the header row (Respiratory Gas / Atmospheric Air / Alveoli / Blood (Deoxygenated) / Blood (Oxygenated) / Tissues) and the O2 and CO2 data rows, left untranscribed per the step rule for tables; its bbox covers caption and grid. last_block_continues_on_next is true because the page's prose stream ends mid-sentence at '...blood to tissues. Similarly,' and resumes on page 6; the table below it is an inset, so the flag refers to that unfinished paragraph (n=10)."
+}

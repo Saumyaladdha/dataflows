@@ -1,0 +1,78 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "built-in potential V0. As a result, the depletion layer width\ndecreases and the barrier height is reduced [Fig. 14.13(b)]. The\neffective barrier height under forward bias is (V0 – V ).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "If the applied voltage is small, the barrier potential will be\nreduced only slightly below the equilibrium value, and only a\nsmall number of carriers in the material—those that happen to\nbe in the uppermost energy levels—will possess enough energy\nto cross the junction. So the current will be small. If we increase\nthe applied voltage significantly, the barrier height will be reduced\nand more number of carriers will have the required energy. Thus\nthe current increases."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Due to the applied voltage, electrons from n-side cross the\ndepletion region and reach p-side (where they are minority\ncarries). Similarly, holes from p-side cross the junction and reach\nthe n-side (where they are minority carries). This process under\nforward bias is known as minority carrier injection. At the\njunction boundary, on each side, the minority carrier\nconcentration increases significantly compared to the locations\nfar from the junction."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Due to this concentration gradient, the injected electrons on\np-side diffuse from the junction edge of p-side to the other end\nof p-side. Likewise, the injected holes on n-side diffuse from the\njunction edge of n-side to the other end of n-side\n(Fig. 14.14). This motion of charged carriers on either side\ngives rise to current. The total diode forward current is sum\nof hole diffusion current and conventional current due to\nelectron diffusion. The magnitude of this current is usually\nin mA."
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        180,
+        316,
+        600,
+        1036
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        180,
+        1052,
+        600,
+        1390
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "14.6.2  p-n junction diode under reverse bias"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "When an external voltage (V ) is applied across the diode such\nthat n-side is positive and p-side is negative, it is said to be\nreverse biased [Fig.14.15(a)]. The applied voltage mostly\ndrops across the depletion region. The direction of applied voltage is same\nas the direction of barrier potential. As a result, the barrier height increases\nand the depletion region widens due to the change in the electric field.\nThe effective barrier height under reverse bias is (V0 + V ), [Fig. 14.15(b)].\nThis suppresses the flow of electrons from n → p and holes from p → n.\nThus, diffusion current, decreases enormously compared to the diode\nunder forward bias."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The electric field direction of the junction is such that if electrons on\np-side or holes on n-side in their random motion come close to the\njunction, they will be swept to its majority zone. This drift of carriers\ngives rise to current. The drift current is of the order of a few µA. This is\nquite low because it is due to the motion of carriers from their minority\nside to their majority side across the junction. The drift current is also\nthere under forward bias but it is negligible (µA) when compared with\ncurrent due to injected carriers which is usually in mA."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The diode reverse current is not very much dependent on the applied\nvoltage. Even a small voltage is sufficient to sweep the minority carriers\nfrom one side of the junction to the other side of the junction. The current",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "480",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null, so the continuation judgement rests on my own p013 output: p013 ended mid-sentence at 'The direction of the applied voltage (V ) is opposite to the' and this page opens 'built-in potential V0.'. Figures 14.13 and 14.14 (each with caption) sit in the left margin column parallel to the first four paragraphs; the right-column text flow is kept unbroken and the two figures are placed after it. Page ends mid-sentence at 'The current'."
+}

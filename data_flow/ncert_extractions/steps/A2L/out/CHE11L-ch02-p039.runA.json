@@ -1,0 +1,27 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 15.0,
+    "columns": [
+      {"id": "full", "x0": 0.125, "x1": 0.877}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "running_header", "bbox": [0.126, 0.0867, 0.270, 0.094],
+     "column": "full", "size_rel": 1.07, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.862, 0.0867, 0.877, 0.094],
+     "column": "full", "size_rel": 1.07, "align": "right", "font": "serif", "text_color": "#221f1f"},
+    {"n": 1, "role": "table", "bbox": [0.1251, 0.1197, 0.8549, 0.8550],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif",
+     "text_color": "#221f1f", "fill": "#eae9f5"},
+    {"n": 2, "role": "paragraph", "bbox": [0.1309, 0.8610, 0.8034, 0.8702],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "decorative_image", "bbox": [0.23, 0.30, 0.85, 0.79],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.9555, 0.522, 0.9624],
+     "column": "full", "size_rel": 1.07, "align": "center", "text_color": "#221f1f"}
+  ],
+  "note": "Single full-width column; the page is the CONTINUATION of Table 2.6 from page 038 (Cs 55 to Rg 111) and therefore carries no caption of its own - block 1 is the table, block 2 the italic footnote under it. Same WARNING as page 038 on body_text_size_px: there is NO ordinary body prose on this page, so 15.0 is the cap-to-baseline of the page's only running type - the 'C' of 'Cs' in the first data row (y 361-375) and the 'E' of 'Elements' in the footnote (y 1878-1892) both measure 15 px. Ordinary body prose on pages 036/040 measures about 20.5 px, so every size_rel here is referenced to a base 0.73x smaller and must be rescaled before any chapter-wide comparison. The tint is the same soft lavender gradient as page 038 rather than a flat fill; #eae9f5 is the dominant flat-interior value (sampled at y 700-760 x 300-340, away from rules and digits), with the header row a shade deeper at about #e6e5f2. Table rules run across at y 0.1197 (top), 0.1578 (under the 'Element Z / 1s / 2s ...' header row), 0.5505 (between period 6 ending at Rn 86 and period 7 beginning at Fr 87) and 0.8550 (foot); the right-hand '7s' column is ruled off separately. The table ends at x 0.8549, just short of the page measure of 0.877 set by the running head. No chapter banner, no page_header_band, no footer_rule, no full-page tint. The diagonal grey NCERT watermark lies over the tint; the gradient defeats automatic sampling, so its bbox is an honest visual estimate matching the measured envelopes on pages 036-037, not a precise measurement. The centred '2024-25' at the foot is a running footer; the allowed role list has no running_footer, so running_header is used, font omitted as unsure. Both A2 blocks were placed by position."
+}

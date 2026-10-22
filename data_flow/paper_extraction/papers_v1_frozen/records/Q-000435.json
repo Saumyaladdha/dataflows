@@ -1,0 +1,252 @@
+{
+ "question_id": "Q-000435",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  }
+ },
+ "exam": "NEET",
+ "year": 2024,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:104"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "Match List I with List II List I List II A. Two or more alternative forms of a gene I. Back cross B. Cross of F1 progeny with homozygous II. Ploidy recessive parent C. Cross of F1 progeny with any of the parents III. Allele D. Number of chromosome sets in plant IV. Test cross Choose the correct answer from the options given below:",
+ "statements": [],
+ "list_i": [
+  {
+   "label": "A",
+   "text": "Two or more alternative forms of a gene"
+  },
+  {
+   "label": "B",
+   "text": "Cross of F1 progeny with homozygous [List II entry \"II. Ploidy\" printed here in source] recessive parent"
+  },
+  {
+   "label": "C",
+   "text": "Cross of F1 progeny with any of the parents"
+  },
+  {
+   "label": "D",
+   "text": "Number of chromosome sets in plant"
+  }
+ ],
+ "list_ii": [
+  {
+   "label": "I",
+   "text": "Back cross"
+  },
+  {
+   "label": "II",
+   "text": "Ploidy"
+  },
+  {
+   "label": "III",
+   "text": "Allele"
+  },
+  {
+   "label": "IV",
+   "text": "Test cross"
+  }
+ ],
+ "options_en": {
+  "1": "A-I, B-II, C-III, D-IV",
+  "2": "A-II, B-I, C-III, D-IV",
+  "3": "A-III, B-IV, C-I, D-II",
+  "4": "A-IV, B-III, C-II, D-I"
+ },
+ "structure": "match",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "104\nMatch List I with List II List I List II A. Two or more alternative forms of a gene I. Back cross B. Cross\nof F1 progeny with homozygous II. Ploidy recessive parent C. Cross of F1 progeny with any of the\nparents III. Allele D. Number of chromosome sets in plant IV. Test cross Choose the correct answer\nfrom the options given below:\n(1)\nA-I, B-II, C-III, D-IV\n(2)\nA-II, B-I, C-III, D-IV\n(3)\nA-III, B-IV, C-I, D-II\n(4)\nA-IV, B-III, C-II, D-I\nPrinciples of Inheritance and Variation\n",
+ "b4_script_options": {
+  "1": "A-I, B-II, C-III, D-IV",
+  "2": "A-II, B-I, C-III, D-IV",
+  "3": "A-III, B-IV, C-I, D-II",
+  "4": "A-IV, B-III, C-II, D-I\nPrinciples of Inheritance and Variation"
+ },
+ "official_answer": "3",
+ "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+ "status": "normal",
+ "subject": "Biology",
+ "branch": "botany",
+ "b6_answer": "3",
+ "b6_reason": "Alternative forms of a gene are alleles (III), a cross of F1 with the homozygous recessive parent is a test cross (IV), a cross of F1 with either parent is a back cross (I) and the number of chromosome sets is ploidy (II).",
+ "b6_working": "",
+ "b6_confidence": "high",
+ "b6_note": "The stem is a flattened run-on of both lists and the List I entry B has a List II fragment interleaved into it in the source; the intended pairings are still recoverable.",
+ "b6_agrees_with_key": true,
+ "repairs": [
+  {
+   "date": "2026-10-15",
+   "by": "scripts/repair_paper_records.py",
+   "kind": "mechanical",
+   "notes": [
+    "paper_codes normalised to the short form ['Q1:104'] -- the long form splits one booklet across two values in any join"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

@@ -1,0 +1,217 @@
+{
+  "question_id": "Q-000084",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "option_map": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "merged_from": {
+      "step": "C1",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:56",
+    "E2:52"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R: In the light of the above statements, choose the correct answer from the options given below:",
+  "statements": [
+    {
+      "label": "A",
+      "text": "A reaction can have zero activation energy."
+    },
+    {
+      "label": "R",
+      "text": "The minimum extra amount of energy absorbed by reactant molecules so that their energy becomes equal to threshold value, is called activation energy."
+    }
+  ],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Both A and R are true and R is the correct explanation of A.",
+    "2": "Both A and R are true and R is NOT the correct explanation of A.",
+    "3": "A is true but R is false.",
+    "4": "A is false but R is true."
+  },
+  "structure": "assertion_reason",
+  "has_figure": false,
+  "negative_words": [
+    "NOT"
+  ],
+  "b4_text_layer_sanitized": "56\nGiven below are two statements: one is labelled as Assertion A and the other is labelled as Reason R:\nAssertion A: A reaction can have zero activation energy.\nReasons R: The minimum extra amount of energy absorbed by reactant molecules so that their\nenergy becomes equal to threshold value, is called activation energy.\nIn the light of the above statements, choose the correct answer from the options given below:\n(1)\nBoth A and R are true and R is the correct\nexplanation of A.\n(2)\nBoth A and R are true and R is NOT the\ncorrect explanation of A.\n(3)\nA is true but R is false.\n(4)\nA is false but R is true.\n",
+  "b4_script_options": {
+    "1": "Both A and R are true and R is the correct\nexplanation of A.",
+    "2": "Both A and R are true and R is NOT the\ncorrect explanation of A.",
+    "3": "A is true but R is false.",
+    "4": "A is false but R is true."
+  },
+  "official_answer": "4",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "physical",
+  "b6_answer": "2",
+  "b6_reason": "Some reactions (e.g. combination of free radicals/atoms) can indeed have zero activation energy, so A is true; R only states the general definition of activation energy (threshold energy minus average energy of reactants) and does not explain why A can be zero, so R is true but not the correct explanation.",
+  "b6_working": "",
+  "b6_confidence": "medium",
+  "b6_note": "",
+  "b6_agrees_with_key": false,
+  "option_map": {
+    "Q-000550": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4"
+    }
+  },
+  "merged_from": [
+    "Q-000550"
+  ]
+}

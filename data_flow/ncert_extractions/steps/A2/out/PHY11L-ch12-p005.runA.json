@@ -1,0 +1,104 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Answer For  a given mass of water molecules, the density is less if volume is large. So the volume of the vapour is  1000/0.6  = 1/(6 × 10 -4 ) times larger.  If densities of bulk water and water molecules are same, then the fraction of molecular volume to the total volume in liquid state is 1. As volume in vapour state has increased, the fractional volume is less by the same amount, i.e.  6×10-4.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 12.2   Estimate the volume of a water molecule using the data in Example 12.1."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Answer In the liquid (or solid) phase, the molecules of water are quite closely packed. The density of water molecule may therefore, be regarded as roughly equal to the density of bulk water = 1000 kg m–3. To estimate the volume of a water molecule, we need to know the mass of a single water molecule. We know that 1 mole of water has a mass approximately equal to"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        320,
+        890,
+        960,
+        938
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Since 1 mole   contains  about   6 × 1023 molecules   (Avogadro’s  number),   the mass of a molecule of water is  (0.018)/(6 × 1023) kg  = 3 × 10–26 kg. Therefore, a rough estimate of the volume of a water  molecule is as follows :"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        320,
+        1070,
+        960,
+        1248
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Example 12.3   What is the average distance between atoms (interatomic distance) in water? Use the data given in Examples 12.1 and 12.2."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Answer :   A given mass of water in vapour state has 1.67×103 times the volume of the same mass of water in liquid state (Ex. 12.1). This is also the increase in the amount of volume available for each molecule of water. When volume increases by 103 times the radius increases by V1/3 or 10 times, i.e., 10 × 2 Å  = 20 Å. So the average distance is 2 × 20 = 40  Å."
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "Example 12.4 A vessel contains two non-reactive gases : neon (monatomic) and oxygen (diatomic). The ratio of their partial pressures is 3:2. Estimate the ratio of  (i) number of molecules and (ii) mass density of neon and oxygen in the vessel. Atomic mass of Ne = 20.2 u, molecular mass of O2 = 32.0 u."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Answer Partial pressure of a gas in a mixture is the pressure it would have for the same volume and temperature if it alone occupied the vessel. (The total pressure of a mixture of non-reactive gases is the sum of partial pressures due to its constituent gases.) Each gas (assumed ideal) obeys the gas law. Since V and T are common to the two gases,  we  have  P1V = µ 1 RT and P2V = µ2 RT, i.e. (P1/P2) = (µ1 / µ2). Here 1 and 2 refer to neon and oxygen respectively. Since (P1/P2) = (3/2) (given), (µ1/ µ2) = 3/2."
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "(i) By definition µ1 = (N1/NA ) and µ2 = (N2/NA) where N1 and N2 are the number of molecules of 1 and 2, and NA is the Avogadro’s number. Therefore, (N1/N2) = (µ1 / µ2)  = 3/2.\n(ii) We can also write µ1 = (m1/M1) and µ2 = (m2/M2) where m1 and m2 are the masses of 1 and 2; and M1 and M2 are their molecular masses. (Both m1 and M1; as well as m2 and M2 should be expressed in the same units). If ρ1 and ρ2  are the mass densities of 1 and 2 respectively,  we have"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        985,
+        1080,
+        1630,
+        1270
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "heading",
+      "text": "12.4 KINETIC THEORY OF AN IDEAL GAS"
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Kinetic theory of gases is based on the molecular picture of matter. A given amount of gas is a collection of a large number of molecules (typically of the order of Avogadro’s number) that are in incessant random motion. At ordinary pressure and temperature, the average distance between molecules is a factor of 10 or more than the typical size of a molecule (2 Å). Thus, interaction between molecules is negligible and we can assume that they move freely in straight lines according to Newton’s first law. However, occasionally, they come close to each other, experience intermolecular forces and their velocities change.  These interactions are called collisions. The molecules collide incessantly against each other or with the walls and change"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "248",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page, left column then right column. previous_page_last_block was null; I read PHY11L-ch12-p004 myself immediately before this page — it ends with the Example 12.1 question box, and this page opens with that example's 'Answer', so the continuation is directly observed, not guessed. Display equations are marked needs_special with bboxes in the 1825x2160 image pixel space and empty text: block 4 is the '(2 + 16)g = 18 g = 0.018 kg.' line, block 6 is the multi-line 'Volume of a water molecule = ... Hence, Radius = 2 x 10^-10 m = 2 A' display, block 12 is the rho1/rho2 ratio display ending '= 0.947'. The shaded Example 12.2/12.3/12.4 question boxes are blocked as box; their unshaded 'Answer' text is ordinary body text and is blocked as paragraph. The Example 12.4 box starts at the bottom of the left column and finishes at the top of the right column; it is blocked once, as one box. The repeated solid-triangle glyphs in the text layer ('⊳') are the decorative markers printed at the start of each Example box and at the end of each Answer, not text. Superscripts and subscripts are flattened in the text layer ('6 × 1023', '10–26', 'V1/3', 'µ1'), copied as extracted. Last block ends mid-sentence ('...with the walls and change'), so it continues on the next page."
+}

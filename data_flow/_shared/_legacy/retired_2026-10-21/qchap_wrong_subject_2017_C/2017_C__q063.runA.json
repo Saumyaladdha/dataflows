@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on the vascular cambium cutting off secondary xylem to the inside (periderm and phelloderm come from the cork cambium, primary phloem from the procambium), a secondary-growth fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Chemistry\" and a 27-chapter Chemistry closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180 (verified: q001-q090 are Biology stems, q091 is a spring-constant item, q136 is an equilibrium-constant item). A Biology question was therefore handed the wrong subject's list, so no correct code exists in it. Expected chapter: 'Anatomy of Flowering Plants' (secondary growth: vascular cambium, cork cambium), not offered."
+}

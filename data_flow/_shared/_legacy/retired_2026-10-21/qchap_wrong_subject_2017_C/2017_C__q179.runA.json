@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on Li+ having the largest hydrated radius of the alkali metal ions and therefore the lowest ionic mobility in aqueous solution, a hydration-enthalpy fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Biology\" and the 32-chapter Biology closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180. A Chemistry question was handed the Biology list, so no correct code exists in it. Expected chapter: 'The s-Block Elements' (alkali metals: hydration enthalpy, hydrated ionic radii, ionic mobility). SECOND, REAL TAXONOMY GAP: that chapter is also absent from the 27-chapter Chemistry list used elsewhere in this paper; the nearest listed home, 'Classification of Elements and Periodicity in Properties', teaches periodic trends but not hydrated-ion mobility."
+}

@@ -1,0 +1,199 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [500, 200, 760, 248],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "We obtain"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [495, 288, 710, 332],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "We note that we have idealised the situation. The spring is considered to be massless. The surface has been considered to possess negligible friction."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "We conclude this section by making a few remarks on conservative forces."
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "(i) Information on time is absent from the above discussions. In the example considered above, we can calculate the compression, but not the time over which the compression occurs.  A solution of Newton’s Second Law for this system is required for temporal information.\n(ii) Not all forces are conservative. Friction, for example, is a non-conservative force. The principle of conservation of energy will have to be modified in this case. This is illustrated in Example 5.9.\n(iii) The zero of the potential energy is arbitrary. It is set according to convenience.  For the spring force we took V(x) = 0, at x = 0, i.e. the unstretched spring had zero potential energy.  For the constant gravitational force mg, we took V = 0  on the earth’s surface.  In a later chapter we shall see that for the force due to the universal law of gravitation, the zero is best defined at an infinite distance from the gravitational source. However, once the zero of the potential energy is fixed in a given discussion, it must be consistently adhered to throughout the discussion. You cannot change horses in midstream !"
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Example 5.9   Consider Example 5.8 taking the coefficient of friction, µ, to be 0.5 and calculate the  maximum compression of the spring."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Answer  In presence of friction, both the spring force and the frictional force act so as to oppose the compression of the spring as shown in Fig. 5.9."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "We invoke the work-energy theorem, rather than the conservation of mechanical energy."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The change in kinetic energy is"
+    },
+    {
+      "n": 11,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [980, 198, 1630, 495],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Fig. 5.9  The forces acting on the car."
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1065, 568, 1425, 638],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The work done by the net force is"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1080, 688, 1370, 758],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Equating we have"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1090, 818, 1445, 888],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "Now  µmg  = 0.5 × 103 × 10 = 5 × 103 N (taking g =10.0 m s-2). After rearranging the above equation we obtain the following quadratic equation in the unknown xm."
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1055, 1050, 1405, 1100],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1055, 1112, 1555, 1198],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "where we take the positive square root since xm is positive. Putting in numerical values we obtain"
+    },
+    {
+      "n": 22,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1275, 1305, 1390, 1352],
+      "text": ""
+    },
+    {
+      "n": 23,
+      "kind": "paragraph",
+      "text": "which, as expected, is less than the result in Example 5.8."
+    },
+    {
+      "n": 24,
+      "kind": "paragraph",
+      "text": "If the two forces on the body consist of a conservative force Fc and a non-conservative force  Fnc , the conservation of mechanical energy formula will have to be modified. By the WE theorem"
+    },
+    {
+      "n": 25,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1185, 1592, 1390, 1632],
+      "text": ""
+    },
+    {
+      "n": 26,
+      "kind": "paragraph",
+      "text": "But"
+    },
+    {
+      "n": 27,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1210, 1630, 1375, 1668],
+      "text": ""
+    },
+    {
+      "n": 28,
+      "kind": "paragraph",
+      "text": "Hence,"
+    },
+    {
+      "n": 29,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1185, 1666, 1390, 1738],
+      "text": ""
+    },
+    {
+      "n": 30,
+      "kind": "paragraph",
+      "text": "where E  is the total mechanical energy. Over the path this assumes the form"
+    },
+    {
+      "n": 31,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1080, 1818, 1315, 1868],
+      "text": ""
+    },
+    {
+      "n": 32,
+      "kind": "paragraph",
+      "text": "where Wnc  is the total work done by the non-conservative forces over the path. Note that"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "82",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null, but the page opens with a bare continuation line of a calculation (\"= 1.25 x 10^4 J\") with no preceding left-hand side, so first_block_continues_from_previous is set true on that evidence. Two blue end-of-example triangle glyphs (extracted as the character U+22B3) appear in the text layer, one after \"negligible friction.\" and one at the start of the Example 5.9 box; they are typographic markers, not prose, so they are not transcribed. In the right column the derivation lines \"(Fc+ Fnc) dx = dK\", \"Fc dx = - dV\", \"d(K + V) = Fnc dx\" and \"dE = Fnc dx\" are displayed equations, so they are emitted as needs_special equation blocks (n=25, 27, 29); the connective words \"But\" and \"Hence,\" that sit on the same baselines are prose and are kept as their own small paragraph blocks (n=26, 28) so no prose is dropped. The figure caption line \"Fig. 5.9  The forces acting on the car.\" is given as a paragraph block (n=12) because the figure block itself must carry empty text. Prose was copied from the text layer; wrapped lines were joined with a single space, and the text layer's own spacing (including its double spaces) and its scrambled sub/superscript renderings (e.g. \"103\", \"m s-2\", \"xm\", \"Fnc\") were left exactly as extracted rather than re-rendered. Bounding boxes are in pixels of the supplied page image (1825 x 2176) and are approximate to the nearest few pixels."
+}

@@ -1,0 +1,100 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [211, 286, 945, 356],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [211, 400, 945, 470],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In Fig. (3.14), we had joined the positive terminals together and similarly the two negative ones, so that the currents I1, I2 flow out of positive terminals. If the negative terminal of the second is connected to positive terminal of the first, Eqs. (3.56) and (3.57) would still be valid with e 2 ® –e2"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Equations (3.56) and (3.57) can be extended easily. If there are n cells of emf e1, . . . en and of internal resistances r1,... rn respectively, connected in parallel, the combination is equivalent to a single cell of emf eeq and internal resistance req, such that"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [211, 896, 945, 972],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [211, 1015, 945, 1091],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "GUSTAV ROBERT KIRCHHOFF (1824 –"
+    },
+    {
+      "n": 8,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1064, 335, 1296, 778],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "Gustav Robert Kirchhoff (1824 – 1887) German physicist, professor at Heidelberg and at Berlin. Mainly known for his development of spectroscopy, he also made many important contributions to mathe-matical physics, among them, his first and second rules for circuits."
+    },
+    {
+      "n": 10,
+      "kind": "heading",
+      "text": "3.12  KIRCHHOFF’S RULES"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Electric circuits generally consist of a number of resistors and cells interconnected sometimes in a complicated way. The formulae we have derived earlier for series and parallel combinations of resistors are not always sufficient to determine all the currents and potential differences in the circuit. Two rules, called Kirchhoff’s rules, are very useful for analysis of electric circuits."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Given a circuit, we start by labelling currents in each resistor by a symbol, say I, and a directed arrow to indicate that a current I flows along the resistor in the direction indicated. If ultimately I is determined to be positive, the actual current in the resistor is in the direction of the arrow. If I turns out to be negative, the current actually flows in a direction opposite to the arrow. Similarly, for each source (i.e., cell or some other source of electrical power) the positive and negative electrodes are labelled, as well as, a directed arrow with a symbol for the current flowing through the cell. This will tell us the potential difference, V = V (P) – V (N) = e – I r [Eq. (3.38) between the positive terminal P and the negative terminal N; I here is the current flowing from N to P through the cell]. If, while labelling the current I through the cell one goes from P to N, then of course"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [211, 1755, 1166, 1793],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Having clarified labelling, we now state the rules and the proof:"
+    },
+    {
+      "n": 15,
+      "kind": "list",
+      "text": "(a) Junction rule: At any junction, the sum of the currents entering the junction is equal to the sum of currents leaving the junction (Fig. 3.15)."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Current Electricity",
+    "97",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null even though this is page 17, so continuation at the top was judged from the page itself: the page opens with numbered displayed equations (3.56) and (3.57) that complete a derivation begun on the previous page, so first_block_continues_from_previous is true. The right-hand sidebar (rotated margin label, Kirchhoff portrait, biography box) floats beside the narrow left column; it is placed after the equations of that column and before heading 3.12, which is where the main text becomes full width. The rotated margin label is truncated at the box edge in both the image and the text layer, so it is copied as it appears: 'GUSTAV ROBERT KIRCHHOFF (1824 –'. Inline mathematics in blocks 3, 4 and 12 is copied with the characters the text layer actually holds (Greek epsilon extracted as 'e', the arrow as '®', subscripts flattened); displayed equations (3.56)–(3.60) are left to the special transcriber. In block 9 the printed line-break hyphen of 'mathe-matical' is kept. The last block is list item (a); item (b) of Kirchhoff's rules continues on the next page, so last_block_continues_on_next is true."
+}

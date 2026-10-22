@@ -1,0 +1,220 @@
+# config/_pending_F_entries.yaml
+#
+# PENDING MERGE INTO config/steps.yaml — written by the Stage F build (2026-10-12).
+#
+# I was asked not to edit config/steps.yaml (a sibling agent owns it and a concurrent write would
+# be lost), so the completed Stage F step entries live here. Merge them by REPLACING the existing
+# skeleton F1-F5 blocks in config/steps.yaml with the `steps:` blocks below, and APPENDING the new
+# F6 block. Nothing else in steps.yaml needs to change.
+#
+# What changed from the skeletons already in steps.yaml:
+#   * F1-F5 gained real `input_fields`, `flags`, `safe_default`, `codebook_file` values and
+#     per-step comments, in the style of the A/B/C/D entries.
+#   * F6 is NEW: Section 14 defines it (`score_gold.py`, the gold set and scoring) but
+#     config/steps.yaml has no F6 entry at all.
+#   * Every `output_schema` and `check` path now exists: schemas/F1.json-F6.json and
+#     scripts/checks/F1.py-F6.py were written as part of this build.
+#
+# Scripts built, and the file each step's entry points at:
+#   F1  scripts/build_review_pack.py
+#   F2  (people — no script; its OUTPUT files are written by apply_review.py on their behalf)
+#   F3  scripts/apply_review.py + scripts/cascade.py
+#   F4  scripts/compute_counts.py
+#   F5  scripts/export_tables.py
+#   F6  scripts/score_gold.py
+#   —   scripts/f_common.py (shared helpers for all six; not a step)
+
+steps:
+
+  F1:
+    stage: "F"
+    name: "Review queue and pack"
+    item: "run"
+    agent: "script"
+    runs: 1
+    needs: "E5, E6, D11"
+    # No agent is ever called for F1 (pure SCRIPT step), so input_fields stays empty per the
+    # same Rule-3 reasoning as S0/A7/A9: it lists fields an AGENT call may see, and there is no
+    # agent call here. F1 reads flags/flags.jsonl, every steps/*/status/, papers/records/,
+    # ncert/subtopics/, ncert/change_log.csv and review/approvals.jsonl, and writes only under
+    # review/.
+    input_fields: []
+    output_schema: schemas/F1.json
+    check: scripts/checks/F1.py
+    # No agent -> no retry/second-opinion/adjudicator chain. F1 either builds the pack or it
+    # fails; there is no judgement to adjudicate.
+    fallback: []
+    # F1 raises NO flags. It is the step that COLLECTS flags; raising its own would mean the
+    # review queue could never empty. The AUDIT_SAMPLE items spec Section 16 lists as a flag code
+    # are recorded in review/audit_sample.jsonl instead of flags/flags.jsonl — see
+    # build_review_pack.collect_audit_sample's docstring for the three reasons (F1 is not the
+    # step that judged the item; "min 20 per step per run" would grow the one real flag file
+    # without bound; flags.jsonl is appended concurrently by every other stage). If the owner
+    # would rather have them in the single flag file, that is a one-line change there.
+    flags: {}
+    safe_default: null
+    codebook_file: null
+    # Invocation (scripts/CONVENTIONS.md): F1's item is the whole RUN, not a chapter, so like S0
+    # it takes no item argument:
+    #   python3 scripts/build_review_pack.py [--chapters X,Y] [--steps X,Y] [--new-only]
+    #                                        [--first-full-review] [--no-audit] [--dry-run]
+    # The audit sample's FIXED seed is build_review_pack.AUDIT_SEED = 20261013. `--seed` exists
+    # for testing only; changing the default would silently redraw every future sample.
+
+  F2:
+    stage: "F"
+    name: "Review and edit"
+    item: "item"
+    agent: "PEOPLE"
+    runs: 1
+    needs: "F1"
+    # PEOPLE, not an agent: reviewers approve or correct any flag and may edit any field of any
+    # item even if it passed (Section 14/F2). Who reviews what: registers and intake -> Ekta;
+    # subtopic lists, change log, passage cuts, answers, misreads, corrections, evidence, notes,
+    # changed answers, repeat groups, tags -> faculty of that subject. Each pack page names the
+    # expected reviewer.
+    input_fields: []
+    output_schema: schemas/F2.json
+    check: scripts/checks/F2.py
+    fallback: []
+    flags: {}
+    safe_default: null
+    codebook_file: null
+    # F2's outputs are steps/F2/out/<ITEM>.correctionNNN.<field>.json, written by
+    # apply_review.py on the reviewer's behalf when a decision is `correct` or `edit`. That is
+    # the mechanism that keeps "never edit an agent's output" true: the corrected value becomes a
+    # NEW F2 output plus a record update, and the original step's output file is never modified.
+    # The sequence number always increases, so successive corrections to one field all survive.
+    # steps/F2/prompt_version.txt holds the reviewer-process version (v1); there is no prompt.
+
+  F3:
+    stage: "F"
+    name: "Apply decisions, cascade"
+    item: "decision"
+    agent: "script"
+    runs: 1
+    needs: "F2"
+    input_fields: []
+    output_schema: schemas/F3.json
+    check: scripts/checks/F3.py
+    fallback: []
+    # F3 raises no flags of its own. It CLOSES flags (approve/correct -> `closed`,
+    # block -> `blocked_by_reviewer`) and the cascade sets flags that no longer apply to
+    # `auto_closed`. A re-run whose output is byte-identical to the previous output raises no
+    # flag and has its previous status restored.
+    flags: {}
+    # No safe default: a decision row that cannot be resolved (unknown flag id, unknown decision
+    # word, no reviewer named, a correct/edit with no corrected value) is REJECTED and reported,
+    # never applied with a guessed value. Accepted rows in the same file still apply, and the
+    # rejected ones can be fixed and re-run — apply_review.py remembers applied rows by digest in
+    # review/applied_decisions.jsonl, so re-running never double-applies.
+    safe_default: null
+    codebook_file: null
+    # Invocation: python3 scripts/apply_review.py [--apply] [--run] [--rebuild-pack]
+    #                                             [--no-transitive] [--decisions PATH]
+    # Without --apply it is a dry run that changes nothing. --run re-runs the stale script-only
+    # steps in stage order through the normal runner; agent-driven stale steps are REPORTED for a
+    # person to dispatch, because a script must never call a subagent (CONVENTIONS.md rule 7).
+    #
+    # Cascade engine: scripts/cascade.py, driven by config/cascade.yaml (Section 15).
+    # `python3 scripts/cascade.py --verify-map` compares cascade.yaml with what steps.yaml's
+    # `input_fields` imply (Section 15's closing note / test T25). The two CANNOT agree yet: many
+    # steps still have empty input_fields, and input_fields does not distinguish a field a step
+    # READS from one it PRODUCES. cascade.yaml stays authoritative; --verify-map prints the gap,
+    # and its "implied by input_fields only" lines are candidate omissions in cascade.yaml worth a
+    # human look (as of 2026-10-12: B8 reads question text but `question_text` does not list B8;
+    # D6 reads syllabus_status but `status_note` lists only D7).
+
+  F4:
+    stage: "F"
+    name: "Counts"
+    item: "subtopic"
+    agent: "script"
+    runs: 1
+    needs: "F3"
+    input_fields: []
+    output_schema: schemas/F4.json
+    check: scripts/checks/F4.py
+    fallback: []
+    # F4 raises no flags. Its self-check is not a flag but a REFUSAL: if the subtopic totals do
+    # not equal the number of question-subtopic links, counted in a separate pass, it writes
+    # nothing and exits 2. A wrong count is worse than no count, and Section 14/F4 plus Rule 11
+    # forbid ever editing a count by hand.
+    flags: {}
+    safe_default: null
+    codebook_file: null
+    # Invocation: python3 scripts/compute_counts.py [--chapters X,Y] [--dry-run]
+    # Writes steps/F4/out/<SUBTOPIC>.json and steps/F4/out/_all.json. It does NOT write to data/;
+    # only export_tables.py may (Section 6.6), and only past the release gate.
+    # "Recent" means year >= 2021 (Section 14/F4: "primary thinking since 2021").
+
+  F5:
+    stage: "F"
+    name: "Release and export"
+    item: "chapter"
+    agent: "script"
+    runs: 1
+    needs: "F4"
+    input_fields: []
+    output_schema: schemas/F5.json
+    check: scripts/checks/F5.py
+    fallback: []
+    # F5 raises no flags and has NO safe default, deliberately: there is no value it could fall
+    # back to, because the only two outcomes are "release this chapter" and "refuse". It refuses
+    # loudly by default and writes nothing at all for a refused chapter. There is no --force,
+    # --skip-gate or any other argument that bypasses the sign-off requirement (a test asserts
+    # those strings do not appear in the file).
+    flags: {}
+    safe_default: null
+    codebook_file: null
+    # Invocation: python3 scripts/export_tables.py --gate-report          (report only)
+    #             python3 scripts/export_tables.py --chapters <ID>        (release one chapter)
+    #             python3 scripts/export_tables.py --all-eligible
+    # Gate (Section 14/F5), all six required: queue empty for the chapter; subtopic list
+    # approved; every change-log row for it approved; audit sample decided and at or above
+    # --audit-target (default 0.95, the lowest content target in Section 1.1 — the spec says
+    # "meets the targets" without naming a number, so this is a documented choice, recorded in
+    # data/_release_log.jsonl on every release so a loose threshold is always visible); a real
+    # sign-off row in review/releases.csv with a non-empty signed_by AND released_at; and nothing
+    # blocked by a reviewer.
+    #
+    # JUDGEMENT CALL the owner should know about: Section 6.4 puts an `approval` field inside
+    # ncert/subtopics/<CHAPTER>.json (an A4 AGENT output) and an `approval` column in
+    # ncert/change_log.csv (an A9 script output). Writing a reviewer's approval into those files
+    # would be Stage F editing an agent's output, which CLAUDE.md forbids without qualification.
+    # So approvals are recorded in review/approvals.jsonl, and THAT ledger — not the `approval`
+    # field in the agent's file — is what this gate reads. Consequence: ncert/subtopics/*.json
+    # will keep saying "approval": "pending" forever, and that field is now informational only.
+    # If the owner would rather have the agent files updated, it is a small change in
+    # apply_review.record_approval plus the two gate conditions.
+
+  F6:
+    stage: "F"
+    name: "Gold set and scoring"
+    item: "run"
+    agent: "script"
+    runs: 1
+    needs: "F3"
+    # NEW ENTRY — Section 14/F6 defines this step but config/steps.yaml has no F6 block.
+    # `needs: F3` rather than F5: scoring measures the reviewed pilot (Section 18.2 step 3 runs it
+    # after apply-review, before anything is released), and Section 18.3 re-runs it after every
+    # fix, so it must not wait on a release.
+    input_fields: []
+    output_schema: schemas/F6.json
+    check: scripts/checks/F6.py
+    fallback: []
+    # F6 raises no flags: a missed target is not a defect in an item, it is a report for M7
+    # (Section 18.3) to act on. It refuses (exit 2, writes nothing) when gold/gold_set.csv does
+    # not exist, rather than scoring against an invented gold set.
+    flags: {}
+    safe_default: null
+    codebook_file: null
+    # Invocation: python3 scripts/score_gold.py [--gold PATH] [--out PATH]
+    #                                           [--fail-under-target] [--dry-run]
+    # Writes gold/scores.md: one row per Section 1.1 criterion against its target, a per-step
+    # table, and every mismatch. gold/gold_set.csv is accepted in either shape — LONG
+    # (question_id,field,gold_value) or WIDE (question_id plus one column per field) — because
+    # Section 14/F6 fixes the gold set's contents (90 questions, 30 per subject, every field
+    # reviewer-confirmed) but not its columns. A gold set that is short of 90, or unbalanced
+    # across subjects, is scored anyway with the shortfall stated at the top of scores.md rather
+    # than silently.

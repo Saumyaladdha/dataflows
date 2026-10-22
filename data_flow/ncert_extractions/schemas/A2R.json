@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/A2R.json",
+  "title": "A2R agent output (a2r-render-reviewer)",
+  "description": "A judgement on ONE rendered page against the book page it reproduces. Item = one page of one chapter's export. This step exists because every other check in this project looks at the INPUT: A2 judges what the page says, A2S what a figure contains, A2L how it is laid out. Nothing judged the OUTPUT, so defects that were obvious to a person looking at the page -- a structure cropped in half, a worked example printed twice, a heading broken mid-word, half a page blank where content should be -- were shipped by builds that reported success, and were found only when the owner read the PDF. The scripted checks catch what can be stated as a rule; this catches what has to be seen.",
+  "type": "object",
+  "required": ["verdict", "findings", "note"],
+  "additionalProperties": false,
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "enum": ["matches", "minor_differences", "content_missing", "unusable"],
+      "description": "`content_missing` whenever anything printed in the book is absent from the render -- that outranks any number of cosmetic differences, because a reader cannot recover what is not there. `unusable` for a page that is garbled, duplicated or out of order."
+    },
+    "findings": {
+      "type": "array",
+      "description": "One entry per difference, most serious first. An empty list is only valid with verdict `matches`.",
+      "items": {
+        "type": "object",
+        "required": ["kind", "what"],
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": ["missing", "duplicated", "clipped", "misplaced", "formatting", "blank_space"],
+            "description": "`clipped` = present but cut off at an edge. `misplaced` = present but in the wrong column, order or panel. `formatting` = present and correct but set wrongly (lost italics, lost colour, wrong face)."
+          },
+          "what": {
+            "type": "string",
+            "description": "What the BOOK shows and what the render shows instead, concretely enough to find: name the figure, equation or heading. 'Fig 9.2's right-hand molecule is cut off at the frame edge', not 'a figure is wrong'."
+          },
+          "where": {
+            "type": "string",
+            "description": "Where on the page, in plain words: 'top left', 'the worked example box', 'under Table 9.1'."
+          }
+        }
+      }
+    },
+    "note": {
+      "type": "string",
+      "description": "Required. What you compared and anything that limited the comparison -- a region too small to judge, a colour difference that may be rendering rather than content."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on combining e^2/(4*pi*epsilon0), G and c into a quantity of dimension length, i.e. on dimensional analysis, and no chapter in the supplied list teaches that.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Biology\" and the 32-chapter Biology closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180. A Physics question was handed the Biology list, so no correct code exists in it. Expected chapter: 'Units and Measurements' (PHYNEETENGUND: dimensional analysis / dimensional formulae), not offered. Stem and options are badly mangled by the two-column text layer (fractions and roots lost), but the phrase 'physical quantity of the dimensions of length that can be formed out of c, G and e' survives intact and fixes the chapter."
+}

@@ -1,0 +1,73 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 11.1 Monochromatic light of frequency 6.0 ´1014 Hz is\nproduced by a laser. The power emitted is 2.0 ´10–3 W. (a) What is the\nenergy of a photon in the light beam? (b) How many photons per second,\non an average, are emitted by the source?\nSolution\n(a) Each photon has an energy",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [519, 512, 1170, 575],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "(b) If N is the number of photons emitted by the source per second,\nthe power P transmitted in the beam equals N times the energy\nper photon E, so that P = N E. Then"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [525, 685, 1170, 810],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Example 11.2 The work function of caesium is 2.14 eV. Find (a) the\nthreshold frequency for caesium, and (b) the wavelength of the incident\nlight if the photocurrent is brought to zero by a stopping potential of\n0.60 V.\nSolution\n(a) For the cut-off or threshold frequency, the energy h n0 of  the incident\nradiation must be equal to work function f0, so that"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [525, 1098, 1065, 1255],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Thus, for frequencies less than this threshold frequency, no\nphotoelectrons are ejected.\n(b) Photocurrent reduces to zero, when maximum kinetic energy of\nthe emitted photoelectrons equals the potential energy e V0 by the\nretarding potential V0. Einstein’s Photoelectric equation is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [515, 1410, 1070, 1790],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "11.8  WAVE NATURE OF MATTER"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The dual (wave-particle) nature of light (electromagnetic radiation, in\ngeneral) comes out clearly from what we have learnt in this and the\npreceding chapters. The wave nature of light shows up in the phenomena\nof interference, diffraction and polarisation. On the other hand, in"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "284",
+    " EXAMPLE 11.1",
+    " EXAMPLE 11.2",
+    "Reprint 2026-27"
+  ],
+  "note": "first_block_continues_from_previous judged from page 10, which I read myself (it ended with the complete sentence \"...a new photon may be created.\"); previous_page_last_block was null. The page is two worked-example boxes (Example 11.1, Example 11.2) followed by section 11.8. Each box's prose is kept as box blocks and the display maths inside them is split out as needs_special equation blocks (n=2 the photon-energy calculation, n=4 the N = P/E fraction, n=6 the threshold-frequency fraction chain, n=8 the eV0 = hn – f0 = hc/l – f0 chain down to \"= 454 nm\"); the text layer renders those piles as broken vertical fragments (stray exponents, numerators and denominators on separate lines), which is why they go to the special transcriber. The vertical side tabs \" EXAMPLE 11.1\" and \" EXAMPLE 11.2\" are listed as removed furniture. Text-layer notation losses vs image: \"n\"/\"n0\" are Greek nu, \"f0\"/\"f 0\" are Greek phi subscript 0, \"l\" is Greek lambda, \"´\" stands for the multiplication sign, and exponents are flattened (\"10–34\" is 10 to the power minus 34, \"1014\" is 10 to the power 14, \"1015\" is 10 to the power 15)."
+}

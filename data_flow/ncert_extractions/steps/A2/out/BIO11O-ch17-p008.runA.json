@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "of CO2 from carbamino-haemoglobin takes place, i.e., CO2 which is bound to haemoglobin from the tissues is delivered at the alveoli. RBCs contain a very high concentration of the enzyme, carbonic anhydrase and minute quantities of the same is present in the plasma too. This enzyme facilitates the following reaction in both directions.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        160,
+        495,
+        1170,
+        600
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "At the tissue site where partial pressure of CO2 is high due to catabolism, CO2 diffuses into blood (RBCs and plasma) and forms HCO3– and H+,. At the alveolar site where pCO2 is low, the reaction proceeds in the opposite direction leading to the formation of CO2 and H2O. Thus, CO2 trapped as bicarbonate at the tissue level and transported to the alveoli is released out as CO2 (Figure 17.4). Every 100 ml of deoxygenated blood delivers approximately 4 ml of CO2 to the alveoli.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "17.5 REGULATION OF RESPIRATION"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Human beings have a significant ability to maintain and moderate the respiratory rhythm to suit the demands of the body tissues. This is done by the neural system. A specialised centre present in the medulla region of the brain called respiratory rhythm centre is primarily responsible for this regulation. Another centre present in the pons region of the brain called pneumotaxic centre can moderate the functions of the respiratory rhythm centre. Neural signal from this centre can reduce the duration of inspiration and thereby alter the respiratory rate. A chemosensitive area is situated adjacent to the rhythm centre which is highly sensitive to CO2 and hydrogen ions. Increase in these substances can activate this centre, which in turn can signal the rhythm centre to make necessary adjustments in the respiratory process by which these substances can be eliminated. Receptors associated with aortic arch and carotid artery also can recognise changes in CO2 and H+ concentration and send necessary signals to the rhythm centre for remedial actions. The role of oxygen in the regulation of respiratory rhythm is quite insignificant.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "17.6 DISORDERS OF RESPIRATORY SYSTEM"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Asthma is a difficulty in breathing causing wheezing due to inflammation of bronchi and bronchioles.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Emphysema is a chronic disorder in which alveolar walls are damaged due to which respiratory surface is decreased. One of the major causes of this is cigarette smoking.",
+      "continues_from_previous": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "275",
+    "BREATHING AND EXCHANGE OF GASES",
+    "2022-23"
+  ],
+  "note": "Text layer present and clean for the prose; the carbonic-anhydrase reaction is garbled in the text layer ('CO H O H CO Carbonic anhydrase ... se HCO H') because it is set as an equation graphic, so it is marked needs_special with a bbox and no text, and the surrounding prose was taken from the text layer. Removed furniture: page number (275), the running header 'BREATHING AND EXCHANGE OF GASES', and the reprint-year footer (2022-23); a diagonal '(c) NCERT not to be republished' watermark overlays the page and is not transcribed. previous_page_last_block was null, but I hold the chapter in page order: page 7 ended mid-sentence at '...as in the alveoli, dissociation' and this page opens 'of CO2 from carbamino-haemoglobin takes place...', so first_block_continues_from_previous is true (observed, not guessed). Block n=3 keeps the text layer's printed oddity 'and H+,.' as-is. The page ends with the complete sentence '...this is cigarette smoking.', so last_block_continues_on_next is false."
+}

@@ -1,0 +1,31 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "The electric field vector E₁B at B due to the positive charge q₁ points towards the left and has a magnitude",
+      "fixes": [
+        {"wrong": "electric field vector E1B at B due to the positive charge q1", "right": "electric field vector E₁B at B due to the positive charge q₁"}
+      ]
+    },
+    {
+      "n": 3,
+      "corrected_text": "The electric field vector E₂B at B due to the negative charge q₂ points towards the right and has a magnitude",
+      "fixes": [
+        {"wrong": "electric field vector E2B at B due to the negative charge q2", "right": "electric field vector E₂B at B due to the negative charge q₂"}
+      ]
+    },
+    {"n": 5, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "EB is directed towards the left.\nThe magnitude of each electric field vector at point C, due to charge q₁ and q₂ is",
+      "fixes": [
+        {"wrong": "due to charge q1 and q2 is", "right": "due to charge q₁ and q₂ is"}
+      ]
+    },
+    {"n": 9, "no_change": true},
+    {"n": 11, "no_change": true},
+    {"n": 13, "no_change": true},
+    {"n": 15, "no_change": true}
+  ],
+  "note": "n=1, 3 had field subscripts E1B/E2B restored to E₁B/E₂B (digit subscripted, trailing capital B left regular -- no Unicode subscript capital letters exist). n=7 had charge subscripts q1/q2 restored to q₁/q₂; 'EB' in the same block is a pure capital-letter subscript with no digit component and cannot be rendered in Unicode subscript at all, so left unchanged. n=11's 'EC' is the same case, left unchanged. n=5, 9, 13, 15 already matched the image exactly."
+}

@@ -1,0 +1,89 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "proposed a definitive model in which the planets moved in circles around a fixed central sun.  His theory was discredited by the church, but notable amongst its supporters was Galileo who had to face prosecution from the state for his beliefs.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "It was around the same time as Galileo, a nobleman called Tycho Brahe (1546-1601) hailing from Denmark, spent his entire lifetime recording observations of the planets with the naked eye.  His compiled data were analysed later by his assistant Johannes Kepler (1571-1640). He could extract from the data three elegant laws that now go by the name of Kepler’s laws.  These laws were known to Newton and enabled him to make a great scientific leap in proposing his universal law of gravitation.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "7.2  KEPLER’S LAWS"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The three laws of Kepler can be stated as follows:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "1.  Law of orbits : All planets move in elliptical orbits with the Sun situated at one of the  foci of the ellipse (Fig. 7.1a). This law was a deviation from the Copernican model which allowed only circular orbits. The ellipse, of which the circle is a special case, is a closed curve which can be drawn very simply as follows.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        302,
+        965,
+        940,
+        1405
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        302,
+        1478,
+        940,
+        1890
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Select two points F1 and F2.  Take a length of a string and  fix its ends at F1 and F2 by pins.  With the tip of a pencil  stretch the string taut and then draw a curve by moving the pencil keeping the string taut throughout.(Fig. 7.1(b))  The closed curve you get is called an ellipse. Clearly for any point T on the ellipse, the sum of the distances from F1 and F2 is a constant.  F1, F2 are called the focii. Join the points F1 and  F2  and extend   the line to intersect the ellipse at points P and A as shown in Fig. 7.1(b). The midpoint of the line PA is the centre of the ellipse O and the length PO = AO  is called the semi-major axis of the ellipse. For a circle, the two focii  merge into one  and the semi-major axis becomes the radius of the circle.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "2. Law of areas : The line that joins any planet to the sun sweeps  equal areas in equal intervals of time (Fig. 7.2).  This law comes from the observations that planets appear to move slower when they are  farther from the sun than when they are nearer.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 10,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        983,
+        1270,
+        1625,
+        1845
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "128",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column first, then right. previous_page_last_block was supplied as null, but I read page 1 of this chapter immediately before: it ended mid-sentence at 'a Polish monk named Nicolas Copernicus (1473-1543)' and this page opens 'proposed a definitive model...', so first_block_continues_from_previous is true on that direct evidence, not a guess. Block n=5 ('1. Law of orbits') is one continuous sentence that runs from the bottom of the left column into the top of the right column across the two figures; I kept it as a single block in prose order rather than splitting it at the column break. Figures 7.1(a), 7.1(b) and 7.2 are marked needs_special with pixel bboxes (original 1826x2167 image) and empty text; each bbox includes the diagram plus its italic caption line. Text-layer artefacts: the stray diagram labels 'B A C P S S' 2b 2a' appear at the top of the text layer out of place - they are figure-internal labels, left to the special transcriber, not blocks and not headers. Notation discrepancies: the image prints subscripts in F1/F2 (and in the captions) which the text layer flattens to baseline 'F1'/'F2'; the text layer renders the figure-7.2 caption's Greek capital delta as '∆A'/'∆t' while the image shows an upright Greek Δ, and the in-figure labels v, r, F are bold vectors in the image. §7.2 prose ends complete at 'than when they are nearer.', so the page does not end mid-sentence."
+}

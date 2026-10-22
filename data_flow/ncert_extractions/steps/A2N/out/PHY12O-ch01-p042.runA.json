@@ -1,0 +1,41 @@
+{
+  "blocks": [
+    {"n": 2, "no_change": true},
+    {
+      "n": 3,
+      "corrected_text": "5. Coulomb’s Law: The mutual electrostatic force between two point charges q₁ and q₂ is proportional to the product q₁q₂ and inversely proportional to the square of the distance r₂₁ separating them. Mathematically,",
+      "fixes": [
+        {"wrong": "q1 and q2", "right": "q₁ and q₂"},
+        {"wrong": "q1q2", "right": "q₁q₂"},
+        {"wrong": "r21", "right": "r₂₁"}
+      ]
+    },
+    {
+      "n": 5,
+      "corrected_text": "where r̂₂₁  is a unit vector in the direction from q₁ to q₂ and k =",
+      "fixes": [
+        {"wrong": "21 ˆr", "right": "r̂₂₁"},
+        {"wrong": "q1 to q2", "right": "q₁ to q₂"}
+      ]
+    },
+    {
+      "n": 7,
+      "corrected_text": "is the constant of proportionality.\nIn SI units, the unit of charge is coulomb. The experimental value of the constant ε₀ is\nε₀ = 8.854 × 10⁻¹² C² N⁻¹ m⁻²\nThe approximate value of k is\nk = 9 × 10⁹ N m² C⁻²",
+      "fixes": [
+        {"wrong": "ε0", "right": "ε₀"},
+        {"wrong": "ε0 = 8.854 × 10–12 C2 N–1 m–2", "right": "ε₀ = 8.854 × 10⁻¹² C² N⁻¹ m⁻²"},
+        {"wrong": "k = 9 × 109 N m2 C–2", "right": "k = 9 × 10⁹ N m² C⁻²"}
+      ]
+    },
+    {"n": 8, "no_change": true},
+    {
+      "n": 10,
+      "corrected_text": "7. Superposition Principle: The principle is based on the property that the forces with which two charges attract or repel each other are not affected by the presence of a third (or more) additional charge(s). For an assembly of charges q₁, q₂, q₃, ..., the force on any charge, say q₁, is",
+      "fixes": [
+        {"wrong": "q1, q2, q3", "right": "q₁, q₂, q₃"},
+        {"wrong": "say q1, is", "right": "say q₁, is"}
+      ]
+    }
+  ],
+  "note": "n3, n5, n7 and n10 had flattened digit subscripts (q1/q2/q3/r21) restored to subscript form. n5 also had the hat detached from and reordered before its letter — stored '21 ˆr' restored to 'r̂₂₁' (the hat-detachment pattern this step targets). n7 had flattened ε0 and several flattened powers of ten/units restored (ε₀, 10⁻¹², C², N⁻¹, m⁻², 10⁹, m², C⁻²). n2 and n8 already matched the image."
+}

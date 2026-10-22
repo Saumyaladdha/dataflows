@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Each orbital in an atom, therefore, is defined by a set of values for n, l and ml. An orbital described by the quantum numbers n = 2, l = 1, ml = 0 is an orbital in the p sub-shell of the second shell. The following chart gives the relation between the subshell and the number of orbitals associated with it."
+    },
+    {
+      "n": 2,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        221,
+        503,
+        848,
+        646
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Electron spin ‘s’ : The three quantum numbers labelling an atomic orbital can be used equally well to define its energy, shape and orientation. But all these quantum numbers are not enough to explain the line spectra observed in the case of multi-electron atoms, that is, some of the lines actually occur in doublets (two lines closely spaced), triplets (three lines, closely spaced) etc. This suggests the presence of a few more energy levels than predicted by the three quantum numbers."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "In 1925, George Uhlenbeck and Samuel Goudsmit proposed the presence of the fourth quantum number known as the electron spin quantum number (ms). An electron spins around its own axis, much in a similar way as earth spins around its own axis while revolving around the sun. In other words, an electron has, besides charge and mass, intrinsic spin angular quantum number. Spin angular momentum of the electron — a vector quantity, can have two orientations relative to the chosen axis. These two orientations are distinguished by the spin quantum numbers ms which can take the values of +½ or –½. These are called the two spin states of the electron and are normally represented by two arrows, ↑ (spin up) and ↓ (spin down). Two electrons that have different ms values (one +½ and the other –½) are said to have opposite spins. An orbital cannot hold more than two electrons and these two electrons should have opposite spins."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "To sum up, the four quantum numbers provide the following information :"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "i) n defines the shell,  determines the size of the orbital and also to a large extent the energy of the orbital."
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "ii) There are n subshells in the nth shell. l identifies the subshell and determines the shape of the orbital (see section 2.6.2). There are (2l+1) orbitals of each type in a subshell, that is, one s orbital (l = 0), three p orbitals (l = 1) and five d orbitals (l = 2) per subshell. To some extent l also determines the energy of the orbital in a multi-electron atom."
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "iii) ml designates the orientation of the orbital. For a given value of l, ml has (2l+1) values, the same as the number of orbitals per subshell. It means that"
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "Orbit, orbital and its importance\nOrbit and orbital are not synonymous. An orbit, as proposed by Bohr, is a circular path around the nucleus in which an electron moves. A precise description of this path of the electron is impossible according to Heisenberg uncertainty principle. Bohr orbits, therefore, have no real meaning and their existence can never be demonstrated experimentally. An atomic orbital, on the other hand, is a quantum mechanical concept and refers to the one electron wave function ψ in an atom. It is characterized by three quantum numbers (n, l and ml) and its value depends upon the coordinates of the electron. ψ has, by itself, no physical meaning. It is the square of the wave function i.e., |ψ|2 which has a physical meaning. |ψ|2 at any point in an atom gives the value of probability density at that point. Probability density (|ψ|2) is the probability per unit volume and the product of |ψ|2 and a small volume (called a volume element) yields the probability of finding the electron in that volume (the reason for specifying a small volume element is that |ψ|2 varies from one region to another in space but its value can be assumed to be constant within a small volume element). The total probability of finding the electron in a given volume can then be calculated by the sum of all the products of |ψ|2 and the corresponding volume elements. It is thus possible to get the probable distribution of an electron in an orbital."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "56",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p027.runA.json I wrote immediately before this page, whose last paragraph ends on the complete sentence 'that the value of l are derived from n.' This page opens with the fresh sentence 'Each orbital in an atom, therefore, is defined by a set of values for n, l and ml.', so first_block_continues_from_previous is false, matching p027's last_block_continues_on_next of false. Reading order is the left column, then the right column, then the full-width green 'Orbit, orbital and its importance' box across the foot of the page, which is also the order the text layer uses, so the layer is in printed order on this page. Block n=2 is the small unnumbered Value of l / Subshell notation / number of orbitals chart, left for the special transcriber with a pixel bbox and empty text; the layer does store its eighteen cells one per line in row order, but it is a grid rather than prose and is deferred whole for the same reason Table 2.4 was on p027, and it is the only block deferred on this page. Block n=4 is one paragraph that runs over the column break — it ends 'intrinsic spin angular quantum number. Spin' at the foot of the left column and resumes 'angular momentum of the electron' at the top of the right column — and is transcribed as the single paragraph it is. Quantum-number notation follows the layer's own token split rather than the printed subscripts and superscripts: 'for n, l and ml.', 'n = 2, l = 1, ml = 0', 'spin quantum number (ms)', 'ms which can take the values of +½ or –½', 'in the nth shell' for the printed n-superscript-th, '(2l+1) orbitals', and '|ψ|2' in the green box for the printed modulus-squared of psi. The spin arrows '↑ (spin up) and ↓ (spin down)' are kept as the layer stores them. The bold and bold-italic runs in blocks n=3, n=4, n=6, n=7 and n=8 are printed that way inside their sentences and are kept there; the doubled space in 'defines the shell,  determines the size' is as printed. The running prose of the right column breaks off mid-sentence at 'It means that' in block n=8 and is completed on p029, so last_block_continues_on_next is true even though the green box, which ends on a complete sentence, is printed below it."
+}

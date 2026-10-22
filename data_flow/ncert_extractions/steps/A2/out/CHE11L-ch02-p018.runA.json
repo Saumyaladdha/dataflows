@@ -1,0 +1,94 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        213,
+        253,
+        861,
+        1150
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "becomes more and more complex for heavier atom. There are, however, certain features which are common to all line spectra, i.e., (i) line spectrum of element is unique and (ii) there is regularity in the line spectrum of each element. The questions which arise are: What are the reasons for these similarities? Is it something to do with the electronic structure of atoms? These are the questions need to be answered. We shall find later that the answers to these questions provide the key in understanding electronic structure of these elements.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "2.4 Bohr’s Model for Hydrogen Atom"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Neils Bohr (1913) was the first to explain quantitatively the general features of the structure of hydrogen atom and its spectrum. He used Planck’s concept of quantisation of energy. Though the theory is not the modern quantum mechanics, it can still be used to rationalize many points in the"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "atomic structure and spectra. Bohr’s model for hydrogen atom is based on the following postulates:"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "i) The electron in the hydrogen atom can move around the nucleus in a circular path of fixed radius and energy. These paths are called orbits, stationary states or allowed energy states. These orbits are arranged concentrically around the nucleus.\nii) The energy of an electron in the orbit does not change with time. However, the electron will move from a lower stationary state to a higher stationary state when required amount of energy is absorbed by the electron or energy is emitted when electron moves from higher stationary state to lower stationary state (equation 2.16). The energy change does not take place in a continuous manner."
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Angular Momentum\nJust as linear momentum is the product of mass (m) and linear velocity (v), angular momentum is the product of moment of inertia (I) and angular velocity (ω). For an electron of mass me, moving in a circular path of radius r around the nucleus,\nangular momentum = I × ω\nSince I = mer2, and  ω = v/r where v is the linear velocity,\n∴angular momentum =  mer2 × v/r = mevr"
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "iii) The frequency of radiation absorbed or emitted when transition occurs between two stationary states that differ in energy by ∆E, is given by:"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        970,
+        1564,
+        1537,
+        1635
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Where E1 and E2 are the energies of the lower and higher allowed energy states respectively. This expression is commonly known as Bohr’s frequency rule."
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "iv) The angular momentum of an electron is quantised. In a given stationary state it can be expressed as in equation (2.11)"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        970,
+        2000,
+        1537,
+        2071
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "46",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p017.runA.json I wrote in this run, whose last prose block ends 'the simplest line spectrum. Line spectrum'. This page's first prose block opens 'becomes more and more complex for heavier atom', the continuation of that sentence, so first_block_continues_from_previous is true. Reading order is left column then right column. Block n=1 is Fig. 2.11, which fills the top of the left column; its bbox covers the energy-level diagram with every in-diagram label (0, n =∞, n =6, n =5, n =4, n =3, n=2, n=1, Energy, Red, Green, Blue, Violet, 'Paschen series (infrared)', 'Balmer series (visible)', 'Lyman series (ultraviolet)') and the four-line italic caption below it; the text layer stores that caption in the middle of its stream. The paragraph beginning 'Neils Bohr (1913)' breaks at the foot of the left column after 'many points in the' and is completed by block n=5 at the top of the right column on this same page; they are kept as two blocks because the layer stores the figure caption between them. Block n=7 is the green 'Angular Momentum' box, whose two displayed one-line results the layer stores cleanly, so they are transcribed in the layer's own flattened spelling ('angular momentum = I × ω', 'Since I = mer2, and  ω = v/r', '∴angular momentum =  mer2 × v/r = mevr'). Blocks n=9 and n=12 are displayed equations (2.10) and (2.11), left for the special transcriber with their equation numbers inside the bbox, because the layer keeps only the bare equation number for (2.10) and the scrambled tokens 'm r n h e v .2' for (2.11). The heading in block n=3 follows the layer's mixed-case spelling; it is printed in capitals. The page ends with the completed numbered equation (2.11), so last_block_continues_on_next is false."
+}

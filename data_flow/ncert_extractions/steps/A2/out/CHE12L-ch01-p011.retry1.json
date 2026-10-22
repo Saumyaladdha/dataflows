@@ -1,0 +1,95 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "components 1 and 2 respectively in the vapour phase then, using Dalton’s law of partial pressures:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [523, 258, 1440, 345],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In general"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [523, 400, 1440, 445],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Example 1.5\nVapour pressure of chloroform (CHCl3) and dichloromethane (CH2Cl2) at 298 K are 200 mm Hg and 415 mm Hg respectively. (i) Calculate the vapour pressure of the solution prepared by mixing 25.5 g of CHCl3 and 40 g of CH2Cl2 at 298 K and, (ii) mole fractions of each component in vapour phase."
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Solution\n(i) Molar mass of CH2Cl2 = 12 × 1 + 1 × 2 + 35.5 × 2 = 85 g mol–1\nMolar mass of CHCl3 = 12 × 1 + 1 × 1 + 35.5 × 3 = 119.5 g mol-1"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 852, 985, 1016],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Total number of moles = 0.47 + 0.213 = 0.683 mol"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1064, 700, 1148],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "xCHCl3 = 1.00 – 0.688 = 0.312\nUsing equation (2.16),"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [267, 1244, 1115, 1344],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "(ii) Using the relation (2.19), yi = pi/ptotal, we can calculate the mole fraction of the components in gas phase (yi)."
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [267, 1436, 962, 1638],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "box",
+      "text": "Note: Since, CH2Cl2 is a more volatile component than CHCl3, [p0CH2Cl2 = 415 mm Hg and p0CHCl3 = 200 mm Hg] and the vapour phase is also richer in CH2Cl2 [yCH2Cl2 = 0.82 and yCHCl3 = 0.18], it may thus be concluded that at equilibrium, vapour phase will be always rich in the component which is more volatile."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "11",
+    "Solutions",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null although page is 11; the page visibly opens mid-sentence (\"components 1 and 2 respectively...\"), so first_block_continues_from_previous is set true from the image. The Example 1.5 / Solution box is split: readable prose and single-line expressions are transcribed as box blocks, while stacked fractions and display equations are left to the special transcriber as separate equation blocks. The side-margin labels \"Example 1.5\" and \"Solution\" are rendered five times each in the text layer (drop-shadow effect); each is kept once."
+}

@@ -1,0 +1,137 @@
+{
+  "group": "v2__biology__plain.part7",
+  "ratings": [
+    {
+      "question_id": "2015_A#q085",
+      "concept": "Ovary position in the flower: hypogynous flowers have a superior ovary (china rose, mustard, brinjal, potato, onion, tulip), epigynous flowers an inferior one (guava, cucumber)",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires applying one stated criterion to each of eight named plants and tallying the verdicts, demonstrated by the stem's 'Among china rose, mustard, brinjal, potato, guava, cucumber, onion and tulip, how many plants have superior ovary?', where nothing is computed and every listed plant has to be adjudicated.",
+      "note": "No trap is written. The three wrong options are the bare integers 'Four', 'Five' and 'Three', neighbours of the key's 'Six', and no particular wrong adjudication of the eight plants can be tied to one of them rather than another: a miscount of any single plant lands on 'Five', and nothing in the option set fixes which plant that would be. Under rule 4 a device that cannot name its option is omitted, so traps is empty rather than filled with a count-off-by-one asserted three times."
+    },
+    {
+      "question_id": "2015_A#q086",
+      "concept": "Functions of the skeletal system: support and locomotion, haematopoiesis in red marrow, mineral storage - heat production belongs to muscle, not bone",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "'Locomotion' is a true function of the skeletal system and fails the negated task, the stem's 'is not a function of the skeletal system'"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "'Production of erythrocytes' is true - red bone marrow is the site of haematopoiesis - and so fails the stem's 'not' polarity"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "'Storage of minerals' is true, bone being the body's calcium and phosphate reserve, and fails the same negated polarity"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a separate true-or-false verdict on each listed function under a negated task, demonstrated by the stem's 'Which of the following is not a function of the skeletal system?' with three true functions printed against one, 'Production of body heat', that belongs to muscular activity.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q087",
+      "concept": "Golden rice: a transgenic carrying carotenoid-pathway genes so the grain accumulates beta-carotene, the precursor of vitamin A",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "names another member of the same family, 'Vitamin B', in place of vitamin A; golden rice's inserted genes build beta-carotene, which is provitamin A and has no part in B-group synthesis"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "the same device on a third member, 'Vitamin C', which is synthesised by rice already and is not the target of the transgene"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "'Omega 3' is a fatty acid and no gene in golden rice touches fatty-acid synthesis or desaturation: the construct carries the carotenoid-pathway genes, whose product is a C40 isoprenoid, so no factual route from this crop's modification reaches a fatty acid; it widens the spread of an otherwise all-vitamin option set"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored fact about one named transgenic crop, demonstrated by the stem's 'the incorporated gene is meant for biosynthesis of' and option 1's bare 'Vitamin A'.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q088",
+      "concept": "Chromatophores: the pigment-bearing membranous structures that carry out photosynthesis in prokaryotes such as cyanobacteria and purple bacteria",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires one stored fact about one named structure, demonstrated by the stem 'Chromatophores take part in :' standing over four bare process names, of which option 2 'Photosynthesis' is the function the pigment-bearing structure performs.",
+      "note": "No trap is written. The three wrong options are single process words - 'Respiration', 'Growth', 'Movement' - and none can be tied to a route that lands on it rather than on its neighbours: nothing in the stem or the options points respiration at the bacterial mesosome or movement at the animal pigment cell, so any such reading would be supplied by me rather than read off the page. Under rule 4 and the brief's instruction that an empty traps list is a real answer, nothing is recorded here."
+    },
+    {
+      "question_id": "2015_A#q089",
+      "concept": "History of virology: Ivanowski's work was on tobacco mosaic virus, Beijerinck coined contagium vivum fluidum, Stanley crystallised the virus, and viroids were discovered by T.O. Diener",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "'Mosaic disease in tobacco and AIDS in human being are caused by viruses' is true and so fails the stem's polarity, which asks for the wrong statement"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "'W.M. Stanley showed that viruses could be crystallized' is true and fails the same negated task"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "'The term contagium vivum fluidum was coined by M.W. Beijerinek' is true and fails the same negated task"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a separate true-or-false verdict on four independent historical claims under a negated task, demonstrated by the stem 'Select the wrong statement:' standing over three true attributions and option 2's 'The viroids were discovered by D.J. Ivanowski', where the discovery belongs to T.O. Diener and Ivanowski's work was on tobacco mosaic virus.",
+      "note": "The scientist-swap device sits on option 2, which is the official answer, so it is not written as a trap: there is no trap on the answer. It is recorded here instead, because the device is what makes the question work. Option 4 stores 'Beijerinek' for Beijerinck; the misspelling does not affect the verdict on that option and is noted as a transcription repair."
+    },
+    {
+      "question_id": "2015_A#q090",
+      "concept": "Pleiotropy: one gene affecting several unrelated phenotypic traits, as phenylketonuria affects pigmentation and mental development",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that the prefix pleio- means many, so the definition must mention a plurality of traits, strikes out options 2, 3 and 4, none of which names more than one trait, and leaves option 1's 'Controls multiple traits in an individual'.",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "prints the relation the other way round: 'Controls a trait only in combination with another gene' is many genes acting on one trait, which is complementary gene interaction, against pleiotropy's one gene acting on many traits; the reversed words are 'a trait ... with another gene' against the key's 'multiple traits in an individual'"
+        },
+        {
+          "label": "look_alike_term",
+          "option": "3",
+          "route": "'Is a gene evolved during Pliocene' sets the term Pliocene against the term pleiotropic, which it resembles letter for letter in its first syllable; Pliocene is a geological epoch and has no bearing on how many traits a gene affects"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored definition, demonstrated by option 1's 'Controls multiple traits in an individual', which states what the term means rather than a consequence to be worked out.",
+      "note": "Option 2, 'Is expressed only in primitive plants', is left untagged: it carries the quantifier 'only', but overclaiming_quantifier requires the option to be wrong ONLY because of the quantifier plus a counter-example falsifying it, and this option would be wrong with or without 'only', since pleiotropy is not confined to plants of any kind. No other device can be named on it, so nothing is written."
+    }
+  ],
+  "group_note": "Six questions grouped on the printed shape 'plain'. Two of the six are not plain single-claim items and the difference is recorded rather than smoothed over: q085 is a counting question over eight named plants, and q089 prints four rival full statements with no statement block above them, so a later pass should expect q085's answer form to be a tally and q089's shape to be rival statements. The group was kept consistent by one test on each axis. Structure: does the task force a verdict on more than one item? Three do - q085 because the answer is a count of eight adjudications, q086 and q089 because their tasks are negated ('not a function', 'Select the wrong statement') and a negated task cannot be settled without judging every option - so those three are several_independent_checks. The other three (q087, q088, q090) are settled by one stored fact and are single_step. None is multi_step_dependent: nowhere does one result feed the next. Demand: is a criterion applied, or is one stored fact the answer? Only q085 applies a stated criterion ('superior ovary') to named cases, so it alone is application; the other five are recall of one taught fact each - a transgene's product, a structure's function, an attribution set, a definition, a list of organ-system functions. q090 is recall and not concept_discrimination even though its option 4 states the mirror concept, because the key is reached by knowing the definition, not by holding two neighbours apart; the mirror option is recorded on the trap axis instead, where it belongs. Elimination appears once, on q090, where the prefix pleio- strikes three options; it is withheld from the five others on a uniform rule - on q086 and q089 striking the true options IS the negated task's method rather than a shortcut over it, and on q085, q087 and q088 the only fact available is the answer itself. The trap axis splits the group cleanly in two and the split is a property of the task polarity. The two negated questions, q086 and q089, carry true_statement_trap on each of their three wrong options, which is the device the polarity itself creates: every non-key option is a true claim that fails the stem's 'not'. The direct-polarity questions carry devices only where an option and a route could both be named - other_one_fact on q087's two other vitamins, no_derivation_route on its omega-3 (demonstrated from the carotenoid-pathway construct, not asserted), semantic_reversal and look_alike_term on q090. Two questions carry no trap at all, and that is a finding rather than an omission: q085's wrong options are three neighbouring integers with no identifiable miscount behind any one of them, and q088's are three bare process words with no route that lands on one rather than another. The scientist-swap device in q089 sits on the official answer and so is recorded in that question's note instead of as a trap. No trap in this packet is placed on an official answer."
+}

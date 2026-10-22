@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {
+      "n": 2,
+      "corrected_text": "1.33 A particle of mass m and charge (–q) enters the region between the two charged plates initially moving along x-axis with speed vₓ (like particle 1 in Fig. 1.33). The length of plate is L and an uniform electric field E is maintained between the plates. Show that the vertical deflection of the particle at the far edge of the plate is qEL²/(2m vₓ²).\nCompare this motion with motion of a projectile in gravitational field discussed in Section 4.10 of Class XI Textbook of Physics.",
+      "fixes": [
+        {"wrong": "speed vx", "right": "speed vₓ"},
+        {"wrong": "qEL2/(2m vx 2)", "right": "qEL²/(2m vₓ²)"}
+      ]
+    },
+    {
+      "n": 3,
+      "corrected_text": "1.34 Suppose that the particle in Exercise in 1.33 is an electron projected with velocity vₓ = 2.0 × 10⁶ m s⁻¹. If E between the plates separated by 0.5 cm is 9.1 × 10² N/C, where will the electron strike the upper plate? (|e|=1.6 × 10⁻¹⁹ C, mₑ = 9.1 × 10⁻³¹ kg.)",
+      "fixes": [
+        {"wrong": "vx = 2.0 × 106 m s–1", "right": "vₓ = 2.0 × 10⁶ m s⁻¹"},
+        {"wrong": "9.1 × 102 N/C", "right": "9.1 × 10² N/C"},
+        {"wrong": "1.6 × 10–19 C", "right": "1.6 × 10⁻¹⁹ C"},
+        {"wrong": "me = 9.1 × 10–31 kg", "right": "mₑ = 9.1 × 10⁻³¹ kg"}
+      ]
+    }
+  ],
+  "note": "n2 and n3 had the subscript on vx restored to vₓ (Unicode has a subscript x), flattened exponents L2/vx 2 restored to L²/vₓ², me restored to mₑ (Unicode has a subscript e), and flattened powers of ten restored throughout. n1 already matched the image."
+}

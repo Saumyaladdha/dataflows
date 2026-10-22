@@ -1,0 +1,43 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "full", "x0": 0.313, "x1": 0.888}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.025, 0.068, 0.240, 0.156],
+     "column": "full", "size_rel": 1.0, "fill": "#735221"},
+    {"n": null, "role": "rule_bar", "bbox": [0.242, 0.068, 0.975, 0.108],
+     "column": "full", "size_rel": 1.0, "fill": "#4c7435"},
+    {"n": null, "role": "running_header", "bbox": [0.827, 0.141, 0.881, 0.148],
+     "column": "full", "size_rel": 0.75, "align": "right", "font": "sans",
+     "text_color": "#212121"},
+    {"n": 1, "role": "figure", "bbox": [0.313, 0.178, 0.857, 0.444],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.368, 0.462, 0.834, 0.478],
+     "column": "full", "size_rel": 0.95, "align": "center", "font": "serif",
+     "fill": "#fef2e2"},
+    {"n": 2, "role": "paragraph", "bbox": [0.324, 0.493, 0.883, 0.548],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.324, 0.555, 0.883, 0.628],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "section_heading", "bbox": [0.326, 0.645, 0.703, 0.656],
+     "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold",
+     "text_color": "#06ac48"},
+    {"n": 5, "role": "paragraph", "bbox": [0.324, 0.670, 0.883, 0.786],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "paragraph", "bbox": [0.324, 0.793, 0.883, 0.851],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "page_number", "bbox": [0.025, 0.745, 0.202, 0.779],
+     "column": "full", "size_rel": 1.4, "align": "right", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "rule_bar", "bbox": [0.025, 0.782, 0.202, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.478, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif"}
+  ],
+  "note": "Single-column body page: one `full` column, text measure x 0.313-0.888. This is a verso page, so the furniture mirrors p002 - the brown/orange corner ornament, the folio badge '44' and its orange rule sit on the LEFT, the green header band runs to the right edge, and the running header reads 'BIOLOGY' flush right. Figure 3.2's bbox includes its leader labels (Interstitial cells / Spermatogonia / Spermatozoa / Sertoli cells), which are part of the artwork; the peach-tinted 'Figure 3.2 ...' caption below it is a separate figure_caption with n: null, since A2 blocked only one figure on this page (n=1) and I matched it to the image. The bottom-centre '2022-23' edition line is reported as running_header for want of a better allowed role. The diagonal 'not to be republished / (c) NCERT' watermark is a page-wide overlay and is not listed as an element."
+}

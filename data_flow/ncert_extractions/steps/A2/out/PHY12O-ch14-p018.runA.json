@@ -1,0 +1,40 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "with respect to the centre tap at any instant\nis positive. It is clear that, at that instant,\nvoltage at B being out of phase will be\nnegative as shown in Fig.14.19(b). So, diode\nD1 gets forward biased and conducts (while\nD2 being reverse biased is not conducting).\nHence, during this positive half cycle we get\nan output current (and a output voltage\nacross the load resistor RL) as shown in\nFig.14.19(c). In the course of the ac cycle\nwhen the voltage at A becomes negative with\nrespect to centre tap, the voltage at B would\nbe positive. In this part of the cycle diode\nD1 would not conduct but diode D2 would,\ngiving an output current and output\nvoltage (across RL) during the negative half\ncycle of the input ac. Thus, we get output\nvoltage during both the positive as well as\nthe negative half of the cycle. Obviously,\nthis is a more efficient circuit for getting\nrectified voltage or current than the half-\nwave rectifier.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "The rectified voltage is in the form of\npulses of the shape of half sinusoids.\nThough it is unidirectional it does not have\na steady value. To get steady dc output\nfrom the pulsating voltage normally a\ncapacitor is connected across the output\nterminals (parallel to the load RL). One can\nalso use an inductor in series with RL for\nthe same purpose. Since these additional\ncircuits appear to filter out the ac ripple\nand give a pure dc voltage, so they are\ncalled filters."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Now we shall discuss the role of\ncapacitor in filtering. When the voltage\nacross the capacitor is rising, it gets\ncharged. If there is no external load, it remains charged to the peak voltage\nof the rectified output. When there is a load, it gets discharged through\nthe load and the voltage across it begins to fall. In the next half-cycle of\nrectified output it again gets charged to the peak value (Fig. 14.20). The\nrate of fall of the voltage across the capacitor depends inversely upon the\nproduct of capacitance C and the effective resistance RL used in the circuit\nand is called the time constant.  To make the time constant large value of\nC should be large. So capacitor input filters use large capacitors. The\noutput voltage obtained by using capacitor input filter is nearer to the\npeak voltage of the rectified voltage. This type of filter is most widely\nused in power supplies."
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        185,
+        311,
+        872,
+        1597
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "484",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null, so the continuation judgement rests on my own p017 output: p017 ended mid-sentence at 'Suppose the input voltage to A' and this page opens 'with respect to the centre tap at any instant is positive.'. Fig. 14.19(a)/(b)/(c) with its caption fills the whole left column; the right-column text flow is kept unbroken and the figure placed last. Page ends on a complete sentence."
+}

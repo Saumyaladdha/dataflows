@@ -1,0 +1,65 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "The subphylum Vertebrata is further divided as follows:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [360, 338, 1319, 905],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "4.2.11.1\nClass – Cyclostomata"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "All living members of the class Cyclostomata are\nectoparasites on some fishes. They have an\nelongated body bearing 6-15 pairs of gill slits\nfor respiration. Cyclostomes have a sucking and\ncircular mouth without jaws (Fig. 4.18). Their\nbody is devoid of scales and paired fins.\nCranium and vertebral column are\ncartilaginous. Circulation is of closed type.\nCyclostomes are marine but migrate for\nspawning to fresh water. After spawning, within\na few days, they die. Their larvae, after\nmetamorphosis, return to the ocean."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Examples: Petromyzon (Lamprey) and Myxine\n(Hagfish)."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "4.2.11.2\nClass – Chondrichthyes"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "They are marine animals with streamlined body\nand have cartilaginous endoskeleton\n(Figure 4.19). Mouth is located ventrally.\nNotochord is persistent throughout life. Gill\nslits are separate and without operculum (gill\ncover). The skin is tough, containing minute\nplacoid scales. Teeth are modified placoid\nscales which are backwardly directed. Their\njaws are very powerful. These animals are\npredaceous.  Due to the absence of air bladder,\nthey have to swim constantly to avoid sinking."
+    },
+    {
+      "n": 8,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [839, 1101, 1493, 1324],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [850, 1493, 1493, 1918],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "ANIMAL KINGDOM",
+    "47",
+    "47",
+    "2024-25"
+  ],
+  "note": "Read from text_layer, cross-checked against the page image for layout and bboxes. Page order: full-width lead-in line, the Vertebrata classification chart (treated as a figure, needs_special — its text \"Vertebrata / Division / Agnatha (lacks jaw) / Gnathostomata (bears jaw) / Super Class / Pisces (bear fins) / Tetrapoda (bear limbs) / Class 1. Cyclostomata / Class 1. Chondrichthyes 2. Osteichthyes / Class 1. Amphibia 2. Reptilia 3. Aves 4. Mammals\" sits inside its bbox and is left untranscribed), then the left text column, then figures 4.18 and 4.19 on the right. Figure captions (\"Figure 4.18 A jawless vertebrate - Petromyzon\", \"(a)\", \"(b)\", \"Figure 4.19 Example of Cartilaginous fishes : (a) Scoliodon (b) Pristis\") are inside those figure bboxes. The text layer repeats each of the two headings five times, an extraction artifact of the printed bold/shadow overprint; each heading is printed once on the page and is transcribed once. The page number 47 likewise appears twice and both occurrences are listed as removed. previous_page_last_block was null, but I read page 10 myself: it ended on a complete sentence (\"...may be fins or limbs.\") and this page opens a new sentence, so first_block_continues_from_previous is false. The last block ends on a complete sentence, so last_block_continues_on_next is false, though section 4.2.11.2 runs on past this page."
+}

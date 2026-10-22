@@ -1,0 +1,43 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "argon can be written as (Na, [Ne]3s1) to (Ar, [Ne] 3s23p6). The electrons in the completely filled shells are known as core electrons and the electrons that are added to the electronic shell with the highest principal quantum number are called valence electrons. For example, the electrons in Ne are the core electrons and the electrons from Na to Ar are the valence electrons. In potassium (K) and calcium (Ca), the 4s orbital, being lower in energy than the 3d orbitals, is occupied by one and two electrons respectively.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "A new pattern is followed beginning with scandium (Sc). The 3d orbital, being lower in energy than the 4p orbital, is filled first. Consequently, in the next ten elements, scandium (Sc), titanium (Ti), vanadium (V), chromium (Cr), manganese (Mn), iron (Fe), cobalt (Co), nickel (Ni), copper (Cu) and zinc (Zn), the five 3d orbitals are progressively occupied. We may be puzzled by the fact that chromium and copper have five and ten electrons in 3d orbitals rather than four and nine as their position would have indicated with two-electrons in the 4s orbital. The reason is that fully filled orbitals and half-filled orbitals have extra stability (that is, lower energy). Thus p3, p6, d5, d10,f 7, f14 etc. configurations, which are either half-filled or fully filled, are more stable. Chromium and copper therefore adopt the d5 and d10 configuration (Section 2.6.7)[caution: exceptions do exist]"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "With the saturation of the 3d orbitals, the filling of the 4p orbital starts at gallium (Ga) and is complete at krypton (Kr). In the next eighteen elements from rubidium (Rb) to xenon (Xe), the pattern of filling the 5s, 4d and 5p orbitals are similar to that of 4s, 3d and 4p orbitals as discussed above. Then comes the turn of the 6s orbital. In caesium (Cs) and the barium (Ba), this orbital contains one and two electrons, respectively. Then from lanthanum (La) to mercury (Hg), the filling up of electrons takes place in 4f and 5d orbitals. After this, filling of 6p, then 7s and finally 5f and 6d orbitals takes place. The elements after uranium (U) are all short-lived and all of them are produced artificially. The electronic configurations of the known elements (as determined by spectroscopic methods) are tabulated in Table 2.6 (page 66)."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "One may ask what is the utility of knowing the electron configuration? The modern approach to the chemistry, infact, depends almost entirely on electronic distribution to understand and explain chemical behaviour. For example, questions like why two or more atoms combine to form molecules, why some elements are metals while others are non-metals, why elements like helium and argon are not reactive but elements like the halogens are reactive, find simple explanation from the electronic configuration. These questions have no answer in the Daltonian model of atom. A detailed understanding of the electronic structure of atom is, therefore, very essential for getting an insight into the various aspects of modern chemical knowledge."
+    },
+    {
+      "n": 5,
+      "kind": "heading",
+      "text": "2.6.6 Stability of Completely Filled and Half Filled Subshells"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The ground state electronic configuration of the atom of an element always corresponds to the state of the lowest total electronic energy. The electronic configurations of most of the atoms follow the basic rules given in Section 2.6.5. However, in certain elements such as Cu, or Cr, where the two subshells (4s and 3d) differ slightly in their energies, an electron shifts from a subshell of lower energy (4s) to a subshell of higher energy (3d), provided such a shift results in all orbitals of the subshell of higher energy getting either completely filled or half filled. The valence electronic configurations of Cr and Cu, therefore, are 3d5 4s1 and 3d10 4s1 respectively and not 3d4 4s2 and 3d9 4s2. It has been found that there is extra stability associated with these electronic configurations."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "64",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "Seam judged against CHE11L-ch02-p035.runA.json, written immediately before this page (the instruction's named anchor p030 has no output on disk). p035 ends mid-sentence at 'The electronic configuration of the elements from sodium to' with last_block_continues_on_next true; this page opens 'argon can be written as (Na, [Ne]3s1) to (Ar, [Ne] 3s23p6).', the completion of that sentence, so first_block_continues_from_previous is true and the two pages agree. input's previous_page_last_block was null. This page defers NOTHING: it is continuous two-column prose with no figure, table or displayed equation anywhere on it, so every line of the text layer is transcribed and the strict coverage bar applies rather than the deferred one. The lower third of the page is blank white space, which is why section 2.6.6's opening paragraph ends cleanly at 'associated with these electronic configurations.' — a complete sentence with nothing printed after it — so last_block_continues_on_next is false and p037 must be read as starting fresh. Reading order is the left column then the right column; the printed paragraph that begins 'With the saturation of the 3d orbitals' runs across the column break — the left column ends 'takes place in 4f and 5d orbitals.' and the right column resumes 'After this, filling of 6p, then 7s and finally 5f' — so it is one paragraph block (n=3), as the text layer also stores it. Electronic configurations and subshell notation follow the text layer's flattened spelling rather than the printed superscripts and italics: '(Na, [Ne]3s1) to (Ar, [Ne] 3s23p6)' with the layer's and the page's inconsistent space after [Ne], 'Thus p3, p6, d5, d10,f 7, f14 etc.' keeping the layer's missing space after 'd10,' and its space inside 'f 7', 'adopt the d5 and d10 configuration', and 'are 3d5 4s1 and 3d10 4s1 respectively and not 3d4 4s2 and 3d9 4s2.'. Spelled as superscripts these would fold into numbers the page never prints; spelled flat they match the layer token for token. 'infact' (as printed, one word), 'two-electrons', and the bracketed '(Section 2.6.7)[caution: exceptions do exist]' with no closing full stop are as printed and not corrected; 'non-metals' and 'half-filled' close up the layer's line-break hyphens ('non-\\nmetals', 'half-\\nfilled'). The bold run 'valence electrons.' in block n=1 and the italic '[caution: exceptions do exist]' are printed emphasis and kept inline. Block n=5 is the two-line blue section heading printed once here, so it is a heading block and not a running header."
+}

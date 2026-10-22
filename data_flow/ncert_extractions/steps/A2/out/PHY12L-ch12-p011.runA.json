@@ -1,0 +1,55 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [127, 286, 625, 1400],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "12.4.1  Energy levels"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The energy of an atom is the least (largest negative value)\nwhen its electron is revolving in an orbit closest to the\nnucleus i.e., the one for which n = 1. For n = 2, 3, ... the\nabsolute value of the energy E is smaller, hence the energy\nis progressively larger in the outer orbits. The lowest state\nof the atom, called the ground state, is that of the lowest\nenergy, with the electron revolving in the orbit of smallest\nradius, the Bohr radius, a 0. The energy of this state (n = 1),\nE1 is –13.6 eV. Therefore, the minimum energy required to\nfree the electron from the ground state of the hydrogen atom\nis 13.6 eV. It is called the ionisation energy of the hydrogen\natom. This prediction of the Bohr’s model is in excellent\nagreement with the experimental value of ionisation energy.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "At room temperature, most of the hydrogen atoms are\nin ground state. When a hydrogen atom receives energy\nby processes such as electron collisions, the atom may\nacquire sufficient energy to raise the electron to higher\nenergy states. The atom is then said to be in an excited\nstate. From Eq. (12.10), for n = 2; the energy E2 is\n–3.40 eV. It means that the energy required to excite an\nelectron in hydrogen atom to its first excited state, is an\nenergy equal to E2 – E1 = –3.40 eV – (–13.6) eV = 10.2 eV.\nSimilarly, E3 = –1.51 eV and E3 – E1 = 12.09 eV, or to excite\nthe hydrogen atom from its ground state (n = 1) to second\nexcited state (n = 3), 12.09 eV energy is required, and so\non. From these excited states the electron can then fall back\nto a state of lower energy, emitting a photon in the process.\nThus, as the excitation of hydrogen atom increases (that is\nas n increases) the value of minimum energy required to\nfree the electron from the excited atom decreases."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The energy level diagram* for the stationary states of a\nhydrogen atom, computed from Eq. (12.10), is given in\nFig. 12.7. The principal quantum number n labels the stationary\nstates in the ascending order of energy. In this diagram, the highest\nenergy state corresponds to n =∞ in Eq, (12.10) and has an energy\nof 0 eV. This is the energy of the atom when the electron is\ncompletely removed (r = ∞) from the nucleus and is at rest. Observe how\nthe energies of the excited states come closer and closer together as\nn increases."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "12.5  THE LINE SPECTRA OF THE HYDROGEN ATOM"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "According to the third postulate of Bohr’s model, when an atom makes a\ntransition from the higher energy state with quantum number ni to the\nlower energy state with quantum number nf (nf < ni), the difference of\nenergy is carried away by a photon of frequency νif such that"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "*\tAn electron can have any total energy above E = 0 eV. In such situations the\nelectron is free. Thus there is a continuum of energy states above E = 0 eV, as\nshown in Fig. 12.7."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "300",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read p010 immediately before: it ended with a completed sentence ('...infinitely far away from its nucleus (or proton in hydrogen atom).'), and this page starts a new section, so nothing continues into block 1. Reading order puts the left-column Fig. 12.7 (n=1, needs_special) first; its bbox includes the axis label 'Total energy, E (eV)', the level labels (0, –0.85, –1.51, –3.40, –13.6, n = 1..5, 'Excited states', 'Unbound (ionised) atom', 'Ground state') and the FIGURE 12.7 caption, so none of those are transcribed as text. n=8 is the rule-separated footnote keyed to the asterisk in n=5; it is chapter content, not a running footer, so it is blocked rather than removed. Continuation: the page's body text ends mid-sentence at 'a photon of frequency νif such that' (block n=7), which is what runs on to the next page; the footnote n=8, printed below it, is self-contained page-bottom apparatus. I set last_block_continues_on_next true for the page's running text. Text-layer discrepancies corrected from the image: infinity is flattened to '¥' in the layer (printed ∞), the photon frequency nu is flattened to 'n' ('frequency nif'; printed νif), and subscripts are dropped on E1, E2, E3, a0, ni, nf, νif — kept in flat form here as the page's own letters. Italics ('least', 'lowest', 'ground state', 'ionisation energy', 'excited state') are unmarked in the layer; the 12.5 heading is printed in small caps."
+}

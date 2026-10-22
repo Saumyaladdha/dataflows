@@ -1,0 +1,140 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "quantities. Thus, we have:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 298, 868, 342],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Knowing the ionization constant, Ka of an acid and its initial concentration, c, it is possible to calculate the equilibrium concentration of all species and also the degree of ionization of the acid and the pH of the solution."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "A general step-wise approach can be adopted to evaluate the pH of the weak electrolyte as follows:"
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "Step 1. The species present before dissociation are identified as Brönsted-Lowry acids / bases.\nStep 2. Balanced equations for all possible reactions i.e., with a species acting both as acid as well as base are written.\nStep 3. The reaction with the higher Ka is identified as the primary reaction whilst the other is a subsidiary reaction.\nStep 4.  Enlist in a tabular form the following values for each of the species in the primary reaction\n(a) Initial concentration, c.\n(b) Change in concentration on proceeding to equilibrium in terms of α, degree of ionization.\n(c) Equilibrium concentration.\nStep 5. Substitute equilibrium concentrations into equilibrium constant equation for principal reaction and solve for α.\nStep 6.  Calculate the concentration of species in principal reaction.\nStep 7.  Calculate pH = – log[H3O+]"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The above mentioned methodology has been elucidated in the following examples."
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Problem 7.18\nThe ionization constant of HF is 3.2 × 10–4. Calculate the degree of dissociation of HF in its 0.02 M solution. Calculate the concentration of all species present (H3O+, F– and HF) in the solution and its pH."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Solution\nThe following proton transfer reactions are possible:"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [918, 398, 1522, 550],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "As Ka >> Kw, [1] is the principle reaction."
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [918, 575, 1522, 905],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "Substituting equilibrium concentrations in the equilibrium reaction for principal reaction gives:"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [918, 1010, 1352, 1098],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "box",
+      "text": "We obtain the following quadratic equation:"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [918, 1178, 1358, 1220],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "box",
+      "text": "The quadratic equation in α can be solved and the two values of the roots are:"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [918, 1300, 1252, 1342],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "box",
+      "text": "The negative root is not acceptable and hence,"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [918, 1425, 1055, 1468],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "box",
+      "text": "This means that the degree of ionization, α = 0.12, then equilibrium concentrations of other species viz., HF, F – and H3O+ are given by:"
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [918, 1615, 1492, 1795],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "box",
+      "text": "Problem 7.19\nThe pH of 0.1M monobasic acid is 4.50. Calculate the concentration of species H+,",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "220",
+    "CHEMISTRY",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p028 output, whose last block ended '...it has been extended to other species and', and this page opens 'quantities. Thus, we have:', so first_block_continues_from_previous is true. Displayed expressions are needs_special rather than transcribed, as elsewhere in this chapter: block 2 (equation 7.31, its number inside the bbox) and, inside the pink Solution panel of Problem 7.18, blocks 9, 11, 13, 15, 17, 19 and 21. Block 9 covers the two numbered proton-transfer reactions together with the 'Ka = 3.2 × 10–4' and 'Kw = 1.0 × 10–14' values set beneath them, and block 11 the displayed HF ionization equilibrium together with its 'Initial concentration (M) / Change (M) / Equilibrium concentration (M)' label and concentration rows, since those lines label those displays, as with equation (7.24) on p019. The panel's prose lines between the displays are kept as box blocks 8, 10, 12, 14, 16, 18 and 20, so the panel is split only where a display interrupts it. Block 5 keeps the seven numbered steps and their (a)-(c) sub-items together as one list, as printed in the left column. Block 7 is the pink Problem 7.18 panel at the foot of the left column, whose solution is the right-column panel; block 22 is Problem 7.19, whose question text breaks off at 'the concentration of species H+,' at the foot of the page, so last_block_continues_on_next is true."
+}

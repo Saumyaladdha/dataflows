@@ -1,0 +1,152 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 8.1 A plane electromagnetic wave of frequency 25 MHz travels in free space along the x-direction. At a particular point in space and time, E = 6.3 ĵ V/m. What is B at this point?",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Solution Using Eq. (8.10), the magnitude of B is"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        562,
+        454,
+        1000,
+        578
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "To find the direction, we note that E is along y-direction and the wave propagates along x-axis. Therefore, B should be in a direction perpendicular to both x- and y-axes. Using vector algebra, E × B should be along  x-direction. Since, (+ ĵ ) × (+ k̂ ) = î , B is along the z-direction. Thus,"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        562,
+        745,
+        1000,
+        778
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Example 8.2 The magnetic field in a plane electromagnetic wave is given by B_y = (2 × 10^–7) T sin (0.5×10^3x+1.5×10^11t)."
+    },
+    {
+      "n": 7,
+      "kind": "list",
+      "text": "(a) What is the wavelength and frequency of the wave?\n(b) Write an expression for the electric field."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Solution\n(a) Comparing the given equation with"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        562,
+        1091,
+        1512,
+        1166
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        605,
+        1188,
+        1512,
+        1253
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        605,
+        1264,
+        1512,
+        1323
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        562,
+        1331,
+        1512,
+        1363
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "box",
+      "text": "The electric field component is perpendicular to the direction of propagation and the direction of magnetic field. Therefore, the electric field component along the z-axis is obtained as"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        562,
+        1480,
+        1512,
+        1512
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "heading",
+      "text": "8.4  ELECTROMAGNETIC SPECTRUM"
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "At the time Maxwell predicted the existence of electromagnetic waves, the only familiar electromagnetic waves were the visible light waves. The existence of ultraviolet and infrared waves was barely established. By the end of the nineteenth century, X-rays and gamma rays had also been discovered.  We now know that, electromagnetic waves include visible light waves, X-rays, gamma rays, radio waves, microwaves, ultraviolet and infrared waves. The classification of em waves according to frequency is the electromagnetic spectrum (Fig. 8.4). There is no sharp division between one kind of wave and the next. The classification is based roughly on how the waves are produced and/or detected."
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "We briefly describe these different types of electromagnetic waves, in order of decreasing wavelengths."
+    },
+    {
+      "n": 18,
+      "kind": "box",
+      "text": "Electromagnetic spectrum\nhttp://www.fnal.gov/pub/inquiring/more/light\nhttp://imagine.gsfc.nasa.gov/docs/science/"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "208",
+    "Reprint 2026-27"
+  ],
+  "note": "Two grey worked-example boxes fill the top two thirds of the page. Each box is carried as several blocks in reading order (box prose interleaved with equation blocks) because its displayed mathematics has to go to the special transcriber: blocks 1-5 are Example 8.1, blocks 6-14 are Example 8.2. The vertical blue side tabs 'EXAMPLE 8.1' and 'EXAMPLE 8.2' are just labels for those boxes and are not repeated as blocks (their text already opens each box). Block 18 is the left-margin web-link side note with the PHYSICS globe logo. Page 7 ended with a complete sentence ('...making life possible on the earth.'), so the first block does not continue; judged from page 7, which I read myself in this batch (previous_page_last_block was null). TEXT LAYER vs IMAGE: the text layer carries the stray strings ' EXAMPLE 8.2' and ' EXAMPLE 8.1' at the top (the vertical tabs, out of position), loses superscripts (10–7, 103, 1011 for 10^–7, 10^3, 10^11), renders the unit vector hats as 'ˆj'/'ˆk', and breaks the displayed equations into loose tokens; superscripts are written with ^, hats taken from the image (ĵ, k̂, î), and the equations left to the special transcriber. Note the equation in Example 8.2 is printed in NCERT with '2p' where 2π is meant; that is left to the transcriber, not corrected."
+}

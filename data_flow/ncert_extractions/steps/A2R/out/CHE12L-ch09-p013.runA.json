@@ -1,0 +1,31 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "In the second Hinsberg scheme (reaction with a secondary amine) the UPPER sulphonyl oxygen is gone from both sulphur atoms. The book draws S with O above and O below on the benzenesulphonyl chloride and again on the N,N-diethylbenzenesulphonamide. The render keeps only the lower O on each; above each S there is a bare double-bond stub with no atom label, because the figure is cut off along its top edge. The lower oxygens and the S itself survive, so the loss reads as a drawing error rather than an omission.",
+      "where": "scheme (b) under 'In the reaction with secondary amine', lower third"
+    },
+    {
+      "kind": "clipped",
+      "what": "The by-product of the same secondary-amine scheme is cut: the book ends '... -C2H5 + HCl', the render ends '+ HC' with the final 'l' sliced away by the figure's right-hand rule. So this scheme does NOT carry a complete '+ HCl'. (The first Hinsberg scheme, with the primary amine, does - its '+ HCl' is complete and both its sulphonyl oxygens are present.)",
+      "where": "right edge of scheme (b), lower third"
+    },
+    {
+      "kind": "clipped",
+      "what": "The 'Heat' label above the arrow of the carbylamine equation is sliced horizontally by the top rule of the equation panel - only the bottom halves of the letters print, so it reads as 'neat'. The equation itself (R-NH2 + CHCl3 + 3KOH -> R-NC + 3KCl + 3H2O) is complete.",
+      "where": "carbylamine equation, below section 4, upper quarter"
+    },
+    {
+      "kind": "clipped",
+      "what": "The product caption of the aniline diazotisation equation loses its second line: the book prints 'Benzenediazonium' over 'chloride', the render prints 'Benzenediazonium' in full and 'chloride' cut through the middle by the panel's bottom rule.",
+      "where": "under the C6H5-NH2 + NaNO2/HCl equation, middle of page"
+    },
+    {
+      "kind": "formatting",
+      "what": "Both arylsulphonyl chloride schemes are drawn at roughly 40 per cent of the book's size - markedly smaller than the nitrous-acid equations on the same page - so their atom labels and the captions 'N-Ethylbenzenesulphonamide / (soluble in alkali)' and 'N,N-Diethylbenzenesulphonamide' are set far below caption size.",
+      "where": "both schemes under section 6, lower half"
+    }
+  ],
+  "note": "Compared section by section and equation by equation, enlarging both Hinsberg schemes to inspect the sulphonyl groups and the by-product. On the specific questions asked: scheme (a) is sound - both S=O oxygens on both sulphurs and a complete '+ HCl'; scheme (b) is not - both upper oxygens are gone and its HCl loses the 'l'. The folio '271 Amines' with its rule is present. All body text, the carbylamine, primary-aliphatic and aromatic nitrous-acid equations, and both subsection labels are present and in the right order, with their magenta/green colour coding intact. One thing I could not judge: in scheme (b) a faint grey horizontal line runs through both benzene rings at bond height; it may be an overlong bond stroke or a render artefact, and since it adds rather than removes content I have not listed it as a finding."
+}

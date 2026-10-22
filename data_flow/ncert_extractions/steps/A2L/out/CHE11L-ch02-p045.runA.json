@@ -1,0 +1,35 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 18.0,
+    "columns": [
+      {"id": "full", "x0": 0.125, "x1": 0.876}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "running_header", "bbox": [0.126, 0.0867, 0.270, 0.094],
+     "column": "full", "size_rel": 0.89, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.862, 0.0867, 0.876, 0.094],
+     "column": "full", "size_rel": 0.89, "align": "right", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "box", "bbox": [0.1251, 0.1211, 0.8766, 0.3624],
+     "column": "full", "size_rel": 1.0, "fill": "#d9edde"},
+    {"n": 1, "role": "list", "bbox": [0.2343, 0.1239, 0.4863, 0.1913],
+     "column": "full", "size_rel": 1.0, "font": "serif", "text_color": "#221f1f"},
+    {"n": 2, "role": "list", "bbox": [0.1709, 0.1972, 0.8366, 0.2372],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 3, "role": "list", "bbox": [0.1709, 0.2445, 0.8366, 0.2702],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 4, "role": "list", "bbox": [0.1709, 0.2775, 0.8366, 0.3032],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": 5, "role": "list", "bbox": [0.1709, 0.3106, 0.8354, 0.3216],
+     "column": "full", "size_rel": 1.0, "font": "serif", "text_color": "#221f1f"},
+    {"n": 6, "role": "list", "bbox": [0.1709, 0.3289, 0.8366, 0.3555],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "decorative_image", "bbox": [0.223, 0.332, 0.842, 0.813],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.9555, 0.522, 0.9624],
+     "column": "full", "size_rel": 0.89, "align": "center", "text_color": "#221f1f"}
+  ],
+  "note": "Last page of the chapter and the end of the EXERCISES (questions 2.63 to 2.67). Single full-width column. The tint continues from page 044 but STOPS with the text: the panel is a full-width 'box' at x 0.1251-0.8766, y 0.1211-0.3624 - only the top quarter of the page - and everything below y 0.3624 is bare white paper down to the footer, so roughly the lower two thirds of the page are empty. It is the same green gradient as pages 041-044 with no flat interior (pure #ffffff down the middle of the measure), so the fill reported, #d9edde, is the gradient's DEEPEST value taken 2 px inside the left edge at mid-height, identical to pages 041-044; on the page it reads only as two short faint strips at the extreme left and right. 'fill' is OMITTED on every text element because the gradient is white where the text actually sits. body_text_size_px 18.0 is the cap-to-baseline of 'T' in 'The bromine atom' (y 431-448) and 'A' in 'Among the following' (y 534-551); line pitch within an item is about 31.7 px, matching every exercises page in this batch. Question numbers hang at x 0.1709 and the text runs from x 0.2326 out to x 0.8366, mirrored right of page 044's as expected for a recto. Block 1 is NOT a numbered question: it is the tail of question 2.62 carried over from page 044 - its four tabulated rows 3. to 6. sit indented at x 0.2343-0.4863, y 0.1239-0.1913, past the number column; 'align' is omitted on it because it is a tabular arrangement of short lines, as it is on block 5 whose single line cannot be judged. The other four blocks are visibly justified. No displayed reaction scheme or standalone equation is on this page: all the quantum-number expressions are set inline. No page_header_band, no rule_bar, no footer_rule, no figure, no table, no summary panel. The diagonal grey NCERT watermark is almost entirely over bare white paper here, so its bbox is the most reliable measurement of it in this batch: x 0.223-0.842, y 0.332-0.813. The centred '2024-25' at the foot is a running footer; the allowed role list has no running_footer, so running_header is used, font omitted as unsure. All six A2 blocks were placed by position."
+}

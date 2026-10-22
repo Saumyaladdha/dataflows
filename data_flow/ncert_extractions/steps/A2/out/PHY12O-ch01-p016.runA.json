@@ -1,0 +1,90 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "which again is the Coulomb force on q1 due to q3, even though other charge q2 is present.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Thus the total force F1 on q1 due to the two charges q2 and q3 is given as"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        575,
+        445,
+        1550,
+        530
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The above calculation of force can be generalised to a system of charges more than three, as shown in Fig. 1.8(b)."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The principle of superposition says that in a system of charges q1, q2, ..., qn, the force on q1 due to q2 is the same as given by Coulomb’s law, i.e., it is unaffected by the presence of the other charges q3, q4, ..., qn. The total force F1 on the charge q1, due to all other charges, is then given by the vector sum of the forces F12, F13, ...,  F1n:"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "i.e.,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        575,
+        845,
+        1550,
+        1035
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The vector sum is obtained as usual by the parallelogram law of addition of vectors. All of electrostatics is basically a consequence of Coulomb’s law and the superposition principle."
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "Example 1.6 Consider three charges q1, q2, q3 each equal to q at the vertices of an equilateral triangle of side l. What is the force on a charge Q (with the same sign as q) placed at the centroid of the triangle, as shown in Fig. 1.9?"
+    },
+    {
+      "n": 10,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        755,
+        1380,
+        1345,
+        1845
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "Solution In the given equilateral triangle ABC of sides of length l, if we draw a perpendicular AD to the side BC,\nAD = AC cos 30º = ( 3 /2 ) l  and the distance AO of the centroid O from A is (2/3) AD = (1/ 3 ) l. By symmatry AO = BO = CO.",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "16",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null in the input; judged against my own p015 output, which ended with the display equation for F13, and this page opens mid-sentence ('which again is the Coulomb force on q1 due to q3'), so the first block continues. Equations (1.4) and (1.5) are needs_special; (1.5) runs over two display lines and is covered by one bbox since it is a single numbered equation. The page ends MID-BOX: the Example 1.6 panel's Solution carries on to p017, so last_block_continues_on_next is true. The printed spelling 'symmatry' in block n=11 is kept as-is, as are the square-root signs that the text layer renders as bare '3'. The sideways 'EXAMPLE 1.6' margin label duplicates words in block n=9 and is not listed as removed."
+}

@@ -1,0 +1,92 @@
+{
+ "figure_id": "PHY12L_CH01_P129",
+ "title": "NCERT Figure 1.16 - the convention for an area element: the vector delta-S is its area delta-S times the unit normal n-hat drawn out of the plane.",
+ "width": 320,
+ "height": 360,
+ "pad": 20,
+ "draw": [
+  {
+   "kind": "polygon",
+   "points": [
+    [
+     20,
+     150
+    ],
+    [
+     230,
+     150
+    ],
+    [
+     290,
+     260
+    ],
+    [
+     80,
+     260
+    ]
+   ],
+   "colour": "ink",
+   "width": 1.8
+  },
+  {
+   "kind": "dot",
+   "centre": [
+    155.0,
+    205.0
+   ],
+   "r": 4.0,
+   "colour": "ink"
+  },
+  {
+   "kind": "line",
+   "from": [
+    155.0,
+    205.0
+   ],
+   "to": [
+    195.172,
+    328.637
+   ],
+   "colour": "ink",
+   "width": 1.8,
+   "arrow": "end"
+  },
+  {
+   "kind": "label",
+   "text": "n̂",
+   "at": [
+    178.172,
+    339.637
+   ],
+   "size": 18,
+   "italic": true
+  },
+  {
+   "kind": "label",
+   "text": "ΔS",
+   "at": [
+    62,
+    172
+   ],
+   "size": 17,
+   "italic": true
+  },
+  {
+   "kind": "label",
+   "text": "ΔS = ΔS n̂",
+   "at": [
+    155.0,
+    112
+   ],
+   "size": 17,
+   "italic": true
+  }
+ ],
+ "angles_claimed": [],
+ "unreadable": [
+  "the lower half of the figure: an arbitrary closed surface drawn as a freeform blob with a small patch delta-S raised on it and a leader arrow pointing at the patch. There is no path or curve primitive here, so the blob is not attempted",
+  "the cyan gradient fill of both the area element and the blob, which is shading and carries nothing",
+  "NCERT sets the VECTOR delta-S and the unit vector n-hat in bold and the scalar area delta-S in plain italic; the renderer has no bold weight, so the equation delta-S = delta-S n-hat loses the one distinction it is printed to make"
+ ],
+ "note": "The area element is a TRUE parallelogram, built from one corner A = (20,150) and two edge vectors (210,0) and (60,110), so both pairs of opposite sides are equal by construction and the dot sits at the diagonals' common midpoint - (A+C)/2 and (B+D)/2 agree only if it really is a parallelogram. The normal is drawn at 72 degrees over a length of 130 and its tip is computed from those two numbers; no angle is CLAIMED for it, because the figure draws a 3-D normal in projection and the angle it makes on the page is an artefact of the viewpoint, not a quantity NCERT labels. NCERT prints the caption FIGURE 1.16 beneath; following the pilot's convention the redraw carries the drawing only."
+}

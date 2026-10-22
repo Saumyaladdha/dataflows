@@ -1,0 +1,77 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        322,
+        251,
+        1433,
+        431
+      ],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "of electrons ejected does depend upon the brightness of light, the kinetic energy of the ejected electrons does not. For example, red light [ν = (4.3 to 4.6) × 1014 Hz] of any brightness (intensity) may shine on a piece of potassium metal for hours but no photoelectrons are ejected. But, as soon as even a very weak yellow light (ν = 5.1–5.2 × 1014 Hz) shines on the potassium metal, the photoelectric effect is observed. The threshold frequency (ν0) for potassium metal is 5.0×1014 Hz.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Einstein (1905) was able to explain the photoelectric effect using Planck’s quantum theory of electromagnetic radiation as a starting point."
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Albert Einstein, a German born American physicist, is regarded by many as one of the two great physicists the world has known (the other is Isaac Newton). His three research papers (on special relativity, Brownian motion and the photoelectric effect) which he published in 1905, while he was employed as a technical assistant in a Swiss patent office in Berne have profoundly influenced the development of physics. He received the Nobel Prize in Physics in 1921 for his explanation of the photoelectric effect.\nAlbert Einstein\n(1879–1955)"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Shining a beam of light on to a metal surface can, therefore, be viewed as shooting a beam of particles, the photons. When a photon of sufficient energy strikes an electron in the atom of the metal, it transfers its energy instantaneously to the electron during the collision and the electron is ejected without any time lag or delay. Greater the energy possessed by the photon, greater will be transfer of energy to the electron and greater the kinetic energy of the ejected electron. In other words, kinetic energy of the ejected electron is proportional to the frequency of the electromagnetic radiation. Since the striking photon has energy equal to hν  and"
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "the minimum energy required to eject the electron is hν0 (also called work function, W0; Table 2.2), then the difference in energy (hν – hν0 ) is transferred as the kinetic energy of the photoelectron. Following the conservation of energy principle, the kinetic energy of the ejected electron is given by the equation 2.7."
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        899,
+        719,
+        1537,
+        779
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "where me is the mass of the electron and v is the velocity associated with the ejected electron. Lastly, a more intense beam of light consists of larger number of photons, consequently the number of electrons ejected is also larger as compared to that in an experiment in which a beam of weaker intensity of light is employed."
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "Dual Behaviour of Electromagnetic Radiation"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The particle nature of light posed a dilemma for scientists. On the one hand, it could explain the black body radiation and  photoelectric effect satisfactorily but on the other hand, it was not consistent with the known wave behaviour of light which could account for the phenomena of interference and diffraction. The only way to resolve the dilemma was to accept the idea that light possesses both particle and wave-like properties, i.e., light has dual behaviour. Depending on the experiment, we find that light behaves either as a wave or as a stream of particles. Whenever radiation interacts with matter, it displays particle like properties in contrast to the wavelike properties (interference and diffraction), which it exhibits when it propagates. This concept was totally alien to the way the scientists thought about matter and radiation and it took them a long time to become convinced of its validity. It turns out, as you shall see later, that some microscopic particles like electrons also exhibit this wave-particle duality."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "42",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p013.runA.json I wrote in this run, whose last block ends 'It has been observed that though the number'. This page's first prose block opens 'of electrons ejected does depend upon the brightness of light', the continuation of that sentence, so first_block_continues_from_previous is true. Reading order: Table 2.2 spans the full page width above both columns and is listed first, then the left column, then the right column; the text layer instead stores the table and the Einstein box at the end of its stream. Block n=1 is Table 2.2, left for the special transcriber, its bbox covering the blue caption 'Table 2.2 Values of Work Function (W0) for a Few Metals' together with the Metal / W0 /eV grid (Li, Na, K, Mg, Cu, Ag and 2.42, 2.3, 2.25, 3.7, 4.8, 4.3). Block n=7 is displayed equation (2.7) with its equation number, also left for the special transcriber; the portrait photograph in block n=4 is not described, and that box's name-and-dates label is placed after its paragraph because that is the layer's order. Maths in prose follows the layer's flattened spelling ('(4.3 to 4.6) × 1014 Hz', '5.1–5.2 × 1014 Hz', 'ν0', '5.0×1014 Hz', 'hν0', 'W0', '(hν – hν0 )', 'me'). Block n=5 is the lower left column paragraph, which breaks at 'equal to hν  and' and is completed by block n=6 at the top of the right column on this same page. The right column ends with a complete sentence, so last_block_continues_on_next is false."
+}

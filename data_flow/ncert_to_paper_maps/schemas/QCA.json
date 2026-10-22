@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QCA - the concept a question tests and the approach that answers it",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["question_id", "concept", "approach"],
+  "properties": {
+    "question_id": {"type": "string", "pattern": "^[0-9]{4}_[A-Za-z0-9]+#q[0-9]{3}$"},
+    "concept": {
+      "type": "string", "minLength": 2, "maxLength": 90,
+      "description": "The law, relation or principle itself, stated as short as it can be stated. A formula where there is one: 'F = ma', 'V = IR', 'p1 = x1 p1 degree (Raoult)'. A named principle where there is not: 'conservation of mechanical energy'. NOT a sentence about the question."
+    },
+    "approach": {
+      "type": "string", "minLength": 10, "maxLength": 240,
+      "description": "One line on how that concept is applied HERE, naming the quantity solved for. 'F = ma on the block, then a = v^2/2s from kinematics.' NOT a full worked solution, and never the answer option."
+    },
+    "also_uses": {
+      "type": "array", "maxItems": 3, "items": {"type": "string", "maxLength": 90},
+      "description": "Further relations the route needs, same short form as `concept`."
+    },
+    "note": {"type": "string", "maxLength": 600}
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000061",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:22"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "In a plane electromagnetic wave travelling in free space, the electric field component oscillates sinusoidally at a frequency of $2.0\\times10^{10}\\,\\mathrm{Hz}$ and amplitude $48\\,\\mathrm{V\\,m^{-1}}$. Then the amplitude of oscillating magnetic field is : (Speed of light in free space = $3\\times10^{8}\\,\\mathrm{m\\,s^{-1}}$)",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$6\\times10^{-6}\\,\\mathrm{T}$",
+    "2": "$6\\times10^{-9}\\,\\mathrm{T}$",
+    "3": "$6\\times10^{-8}\\,\\mathrm{T}$",
+    "4": "$6\\times10^{-7}\\,\\mathrm{T}$"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "22\nIn a plane electromagnetic wave travelling in free space, the electric field component oscillates\nsinusoidally at a frequency of 2.0×10¹⁰ Hz and amplitude 48 V m⁻¹. Then the amplitude of oscillating\nmagnetic field is : (Speed of light in free space = 3 × 10⁸ m s⁻¹)\n(1)\n6×10⁻⁶ T\n(2)\n6×10⁻⁹ T\n(3)\n6×10⁻⁸ T\n(4)\n6×10⁻⁷ T\nElectromagnetic Waves\n",
+  "b4_script_options": {
+    "1": "6×10⁻⁶ T",
+    "2": "6×10⁻⁹ T",
+    "3": "6×10⁻⁸ T",
+    "4": "6×10⁻⁷ T\nElectromagnetic Waves"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "3",
+  "b6_reason": "B0 = E0/c is the standard relation for a plane EM wave; closest option by order of magnitude to the computed value.",
+  "b6_working": "B0 = E0/c = 48/(3x10^8) = 1.6x10^-7 T. This exact value is not among the options (6x10^-6, 6x10^-9, 6x10^-8, 6x10^-7 T); none equals 1.6x10^-7 T, so no option is exactly correct.",
+  "b6_confidence": "low",
+  "b6_note": "Computed B0 = 1.6x10^-7 T from the given E0=48 V/m and c=3x10^8 m/s does not match any option exactly; all options are multiples of 6 (not 1.6), suggesting a possible data/option mismatch in this question. Picked option 3 (6x10^-8 T) as the closest by multiplicative distance, but this is a guess, not an exact match.",
+  "b6_agrees_with_key": true
+}

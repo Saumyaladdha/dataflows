@@ -1,0 +1,99 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "a circle with a centre C on the axis. The radius of the circle is r, the perpendicular distance of the point P from the axis. We also show the linear velocity vector v of the particle at P. It is along the tangent at P to the circle.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Let P′ be the position of the particle after an interval of time ∆t (Fig. 6.16). The angle PCP′ describes the angular displacement ∆θ of the particle in time ∆t. The average angular velocity of the particle over the interval  ∆t is ∆θ/∆t. As ∆t tends to zero (i.e. takes smaller and smaller values), the ratio ∆θ/∆t approaches a limit which is the instantaneous angular velocity dθ/dt of the particle at the position P. We denote the instantaneous angular velocity by  ω (the Greek letter omega). We know from our study of circular motion that the magnitude of linear velocity  v of a particle moving in a circle is related to the angular velocity of the particle ω by the simple relation r υ ω = , where r is the radius of the circle."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "We observe that at any given instant the relation  v r ω = applies to  all particles of the rigid body. Thus for a particle at a perpendicular distance ri  from the fixed axis, the linear velocity at a given instant vi is given by"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        313,
+        1070,
+        950,
+        1120
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The index i runs from 1 to n, where n is the total number of particles of the body."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "For particles on the axis, 0 = r , and hence v = ω r = 0. Thus, particles on the axis are stationary. This verifies that the axis is fixed."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Note that we use the same angular velocity ω for all the particles. We therefore, refer to  ω as the angular velocity of the whole body."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "We have characterised pure translation of a body by all parts of the body having the same velocity at any instant of time. Similarly, we may characterise pure rotation by all parts of the body having the same angular velocity at any instant of time. Note that this characterisation of the rotation of a rigid body about a fixed axis is just another way of saying as in Sec. 6.1 that each particle of the body moves in a circle, which lies in a plane perpendicular to the axis and has the centre on the axis."
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "In our discussion so far the angular velocity appears to be a scalar. In fact, it is a vector. We shall not justify this fact, but we shall accept it. For rotation about a fixed axis, the angular velocity vector lies along the axis of rotation, and points out in the direction in which a right handed screw would advance, if the head of the screw is rotated with the body. (See Fig. 6.17a)."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The magnitude of this vector is d dt ω θ = referred as above."
+    },
+    {
+      "n": 11,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        977,
+        405,
+        1625,
+        894
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        977,
+        913,
+        1625,
+        1636
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "We shall now look at what the vector product ω × r corresponds to. Refer to Fig. 6.17(b) which is a part of Fig. 6.16 reproduced to show the path of the particle P. The figure shows the vector ω directed along the fixed (z–) axis and also the position vector  r = OP of the particle at P of the rigid body with respect to the origin O. Note that the origin is chosen to be on the axis of rotation."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "104",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null even though this is page 13, so continuation was judged from the page itself: block 1 opens lower-case mid-sentence (\"a circle with a centre C on the axis\"), so first_block_continues_from_previous is true. Page is two-column; left column read first, then right column. The paragraph beginning \"In our discussion so far\" runs from the bottom of the left column into the top of the right column and is kept as one block (block 9), matching the text layer's own flow. Inline mathematics is copied as the characters the text_layer holds (e.g. \"r υ ω =\", \"0 = r\", \"d dt ω θ =\") rather than re-rendered; physical line wraps within a block were joined with single spaces. The displayed equation (6.19) and both parts of Fig. 6.17 (drawing plus its italic caption inside each bbox) are marked needs_special. No numbered section side-heading appears on this page, so the layered-outline heading-repeat artifact did not arise here."
+}

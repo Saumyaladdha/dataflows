@@ -1,0 +1,179 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Problem 2.10\nWhat are the frequency and wavelength of a photon emitted during a transition from n = 5 state to the n = 2 state in the hydrogen atom?"
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Solution\nSince ni = 5 and nf = 2, this transition gives rise to a spectral line in the visible region of the Balmer series. From equation (2.17)"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        251,
+        670,
+        680,
+        800
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "It is an emission energy"
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "The frequency of the photon (taking energy in terms of magnitude)  is given by"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        251,
+        932,
+        810,
+        1216
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Problem 2.11\nCalculate the energy associated with the first orbit of He+. What is the radius of this orbit?"
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Solution"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        251,
+        1440,
+        745,
+        1512
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "For He+, n = 1, Z = 2"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        251,
+        1582,
+        832,
+        1660
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "The radius of the orbit is given by equation (2.15)"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        251,
+        1766,
+        548,
+        1844
+      ],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "box",
+      "text": "Since n = 1, and Z = 2"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        251,
+        1914,
+        756,
+        1998
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "heading",
+      "text": "2.4.2 Limitations of Bohr’s Model"
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Bohr’s model of the hydrogen atom was no doubt an improvement over Rutherford’s nuclear model, as it could account for the stability and line spectra of hydrogen atom and hydrogen like ions (for example, He+, Li2+, Be3+, and so on). However, Bohr’s model was too simple to account for the following points."
+    },
+    {
+      "n": 18,
+      "kind": "list",
+      "text": "i) It fails to account for the finer details (doublet, that is two closely spaced lines) of the hydrogen atom spectrum observed by using sophisticated spectroscopic techniques. This model is also unable to explain the spectrum of atoms other than hydrogen, for example, helium atom which possesses only two electrons. Further, Bohr’s theory was also unable to explain the splitting of spectral lines in the presence of magnetic field (Zeeman effect) or an electric field (Stark effect)."
+    },
+    {
+      "n": 19,
+      "kind": "list",
+      "text": "ii) It could not explain the ability of atoms to form molecules by chemical bonds."
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "In other words, taking into account the points mentioned above, one needs a better theory which can explain the salient features of the structure of complex atoms."
+    },
+    {
+      "n": 21,
+      "kind": "heading",
+      "text": "2.5 Towards Quantum Mechanical Model of the Atom"
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "In view of the shortcoming of the Bohr’s model, attempts were made to develop a more suitable and general model for atoms. Two important developments which contributed significantly in the formulation of such a model were:"
+    },
+    {
+      "n": 23,
+      "kind": "list",
+      "text": "1.  Dual behaviour of matter,\n2.  Heisenberg uncertainty principle."
+    },
+    {
+      "n": 24,
+      "kind": "heading",
+      "text": "2.5.1 Dual Behaviour of Matter"
+    },
+    {
+      "n": 25,
+      "kind": "paragraph",
+      "text": "The French physicist, de Broglie, in 1924 proposed that matter, like radiation, should also exhibit dual behaviour i.e., both particle and wavelike properties. This means that just as the photon has momentum as well as wavelength, electrons should also have momentum as well as wavelength, de Broglie, from this analogy, gave the following relation between wavelength (λ) and momentum (p) of a material particle."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "49",
+    "STRUCTURE OF ATOM",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null and no steps/A2/out/CHE11L-ch02-p020.runA.json existed, so I used the documented substitute anchor: steps/A2/work/CHE11L-ch02-p020.runA.input.json, whose text_layer prose ends with the completed sentence 'The brightness or intensity of spectral lines depends  upon the number of photons of same wavelength or frequency absorbed or emitted.' This page's first block in reading order is the start of a fresh pink worked-example box ('Problem 2.10'), so first_block_continues_from_previous is false. Reading order is the left column (the full-height pink Problem 2.10 / Problem 2.11 box) then the right column; the text layer stores the page in the same order here. The six centred displayed formulae inside the pink box are left for the special transcriber with pixel bboxes and empty text: n=3 is the delta-E evaluation for the n = 5 to n = 2 transition, n=6 the nu = delta-E/h and lambda = c/nu evaluation (its '= 6.91×1014 Hz', '3.0 × 108 m s–1' and '= 434 nm' lines fall inside the bbox), n=9 the general E_n expression with its 'atom–1' unit, n=11 the E_1 evaluation for He+, n=13 the general r_n expression and n=15 the r_n evaluation giving 0.02645 nm. Those regions are exactly where the layer scrambles the stacked fractions and the superscripts into bare tokens ('2 18', '10 18', '0 0529', '2 2'), so no faithful inline transcription of them is possible. Inline maths kept in running prose follows the layer's own flattened spelling and token split ('ni = 5 and nf = 2', 'He+, Li2+, Be3+', 'For He+, n = 1, Z = 2', 'Since n = 1, and Z = 2'). The two section headings are given in the text layer's title case ('2.5 Towards Quantum Mechanical Model of the Atom'), although the page prints 2.5 in full capitals, matching how 2.1-2.4 were recorded earlier in this chapter. The last paragraph ends on a complete sentence ('a material particle.') whose promised relation is printed on p022, so last_block_continues_on_next is false."
+}

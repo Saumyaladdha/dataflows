@@ -1,0 +1,241 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "6.12 ANGULAR MOMENTUM IN CASE OF ROTATION ABOUT A FIXED AXIS"
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "We have studied in section 6.7, the angular momentum of a system of particles. We already know from there that the time rate of total angular momentum of a system of particles about a point is equal to the total external torque on the system taken about the same point. When the total external torque is zero, the total angular momentum of the system is conserved."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "We now wish to study the angular momentum in the special case of rotation about a fixed axis. The general expression for the total angular momentum of the system of n particles is"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        691,
+        853,
+        756
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "We first consider the angular momentum of a typical particle of the rotating rigid body. We then sum up the contributions of individual particles to get L of the whole body."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "For a typical particle l = r × p. As seen in the last section r = OP = OC + CP [Fig. 6.17(b)]. With p = m v ,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        1007,
+        648,
+        1045
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The magnitude of the linear velocity v of the particle at P is given by v = ωr⊥ where r⊥ is the length of CP or the perpendicular distance of P from the axis of rotation. Further, v is tangential at P to the circle which the particle describes. Using the right-hand rule one can check that CP × v is parallel to the fixed axis. The unit vector along the fixed axis (chosen as the z-axis) is ˆk . Hence"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        1346,
+        660,
+        1430
+      ],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Similarly, we can check that OC × v is perpendicular to the fixed axis. Let us denote the part of  l along the fixed axis (i.e. the z-axis) by lz, then"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        1578,
+        675,
+        1622
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        200,
+        1634,
+        675,
+        1676
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "We note that lz is parallel to the fixed axis, but l is not. In general, for a particle, the angular momentum l is not along the axis of rotation, i.e. for a particle, l and ω are not necessarily parallel. Compare this with the corresponding fact in translation. For a particle, p and v are always parallel to each other."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "For computing the total angular momentum of the whole rigid body, we add up the contribution of each particle of the body."
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        891,
+        311,
+        1534,
+        348
+      ],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "We denote by ⊥L and zL the components of L respectively perpendicular to the z-axis and along the z-axis;"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        929,
+        479,
+        1534,
+        520
+      ],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "where mi and vi are respectively the mass and the velocity of the ith particle and Ci is the centre of the circle described by the particle;"
+    },
+    {
+      "n": 19,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        891,
+        650,
+        1534,
+        780
+      ],
+      "text": ""
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "The last step follows since the perpendicular distance of the ith particle from the axis is ri; and by definition the moment of inertia of the body about the axis of rotation is I m r i i =∑ 2 ."
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        891,
+        948,
+        1534,
+        990
+      ],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "The rigid bodies which we have mainly considered in this chapter are symmetric about the axis of rotation, i.e. the axis of rotation is one of their symmetry axes. For such bodies, for a given OCi, for every particle which has a velocity vi , there is another particle of velocity –vi  located diametrically opposite on the circle with centre Ci described by the particle. Together such pairs will contribute zero to ⊥L and as a result for symmetric bodies ⊥L is zero, and hence"
+    },
+    {
+      "n": 23,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        929,
+        1352,
+        1534,
+        1402
+      ],
+      "text": ""
+    },
+    {
+      "n": 24,
+      "kind": "paragraph",
+      "text": "For bodies, which are not symmetric about the axis of rotation, L is not equal to Lz and hence L does not lie along the axis of rotation."
+    },
+    {
+      "n": 25,
+      "kind": "paragraph",
+      "text": "Referring to Table 6.1, can you tell in which cases L = Lz will not apply?"
+    },
+    {
+      "n": 26,
+      "kind": "paragraph",
+      "text": "Let us differentiate Eq. (6.42b). Since ˆk is a fixed (constant) vector, we get"
+    },
+    {
+      "n": 27,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        929,
+        1676,
+        1355,
+        1762
+      ],
+      "text": ""
+    },
+    {
+      "n": 28,
+      "kind": "paragraph",
+      "text": "Now, Eq. (6.28b) states"
+    },
+    {
+      "n": 29,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        929,
+        1828,
+        1190,
+        1904
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "121",
+    "2024-25"
+  ],
+  "note": "Two-column page; left column transcribed first. Section side-heading 6.12 appears repeated and out of order in the text layer (layered outline font); transcribed once in its true reading-order position. All displayed formulae, including the lead-in words 'Thus', 'and', 'or' and 'Note' that sit on the same display lines, are emitted as equation blocks with needs_special rather than transcribed. Inline mathematics in blocks 16, 20 and 22 is copied as the text layer holds it, so subscripts appear hoisted before their symbols (e.g. '⊥L', 'zL', 'I m r i i =∑ 2'). The '© NCERT / not to be republished' watermark across the page is not transcribed. No tables or figures on this page; Fig. 6.17(b) and Table 6.1 are only referred to, not printed here."
+}

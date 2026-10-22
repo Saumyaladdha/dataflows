@@ -1,0 +1,102 @@
+{
+  "group": "v2__biology__plain.part13",
+  "ratings": [
+    {
+      "question_id": "2015_A#q123",
+      "question_type": "plain_mcq",
+      "secondary_type": "figure_to_read",
+      "format": "name_or_identify",
+      "content_shape": "diagram",
+      "concept": "Reading a pedigree: unaffected parents with affected children means recessive, and an affected mother with unaffected sons rules out the X",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "In generation III an unaffected couple have affected sons, which strikes out both dominant options, 1 and 2, in one move.",
+      "traps": [
+        {"label": "half_true", "option": "3", "route": "Gets recessive right and then puts the gene on the X. The affected woman in generation II has unaffected sons, and an affected mother passes an X-linked recessive allele to every son."},
+        {"label": "half_true", "option": "2", "route": "Gets autosomal right and then reads affected individuals in every generation as dominance. Two unaffected parents in generation III have affected sons, which a dominant allele cannot do."}
+      ],
+      "reason": "This question requires the rules of pedigree inheritance to be applied to a drawn chart, demonstrated by the stem \"In the following human pedigree, the filled symbols represent the affected individuals. Identify the type of given pedigree.\"",
+      "note": "Option 1 fails on both halves at once - dominant and X-linked - so no single device is recorded for it. The figure is needed to answer, hence the secondary type; the primary shape is still four plain text options."
+    },
+    {
+      "question_id": "2015_A#q124",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "structure_function",
+      "concept": "Balbiani rings: puffs on polytene chromosomes where RNA, and then protein, is made",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [],
+      "reason": "This question requires one stored structure-to-function association, demonstrated by the stem \"Balbiani rings are sites of :\" with four kinds of synthesis as the options.",
+      "note": "No trap recorded. The three wrong options name other biosynthetic activities (lipid, nucleotide, polysaccharide), but the chapter ties none of them to any chromosomal puff, and no mis-step of the Balbiani-ring fact produces any of them. An option set that merely lists alternatives is not a device."
+    },
+    {
+      "question_id": "2015_A#q125",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "disease_cause",
+      "concept": "Emphysema: the alveolar walls break down, so the surface available for gas exchange collapses",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "other_one_fact", "option": "1", "route": "Names the other common breathing disorder. Asthma narrows the bronchioles and leaves the alveolar walls intact."},
+        {"label": "other_one_fact", "option": "2", "route": "Moves to the lining instead of the air sacs. Pleurisy is inflammation of the pleural membranes."},
+        {"label": "other_one_fact", "option": "4", "route": "Keeps the alveoli but changes what happens in them. Pneumonia fills them with fluid rather than destroying their walls."}
+      ],
+      "reason": "This question requires one disorder to be named from its described lesion, demonstrated by the stem \"alveolar surface area involved in gas exchange is drastically reduced due to damage in the alveolar walls\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q126",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Lichens as pollution indicators: they die back where sulphur dioxide is high, so their absence marks polluted air",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "other_one_fact", "option": "1", "route": "Offers the fungal partner on its own. It is the lichen, fungus and alga together, that the book names as the indicator."},
+        {"label": "other_one_fact", "option": "4", "route": "Offers the algal partner on its own. Free-living algae are not the named indicator; the partnership is."}
+      ],
+      "reason": "This question requires one taught organism-to-role pairing, demonstrated by the stem \"most suitable indicator of $\\mathrm{SO_2}$ pollution in the environment\".",
+      "note": "Options 1 and 4 are the lichen's own two partners, which is the device recorded. Option 3 (conifers) carries nothing comparable - conifers are damaged by polluted air but the chapter names no indicator role for them - so it is left untagged."
+    },
+    {
+      "question_id": "2015_A#q127",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "definition_term",
+      "concept": "Satellite DNA: non-coding repeats whose copy number differs between people and is inherited, which is what makes DNA fingerprinting work",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {"label": "half_true", "option": "4", "route": "Keeps the first half and inverts the second. Satellite DNA does not code for protein, but its repeat number differs from person to person rather than being the same in everyone."}
+      ],
+      "reason": "This question requires four whole claims about one sequence class to be graded, demonstrated by option 3, \"Shows high degree of polymorphism in population and also the same degree of polymorphism in an individual, which is heritable from parents to children\".",
+      "note": "Options 1 and 2 simply give satellite DNA a protein-coding role, which the chapter denies outright; there is no closer device than the flat contradiction, so neither is tagged. The \"not\" recorded in the reader's negative words sits inside option 4's own text, not in the task, so the task polarity is direct."
+    },
+    {
+      "question_id": "2015_A#q128",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Industrial melanism: soot-blackened trees favoured the dark peppered moths already present - natural selection in a single human lifetime",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "other_one_fact", "option": "1", "route": "Uses the rival theory's mechanism. Lamarck would have the soot darkening the moths themselves and that darkening being passed on."},
+        {"label": "other_one_fact", "option": "4", "route": "Stops at where the dark form came from. Mutation made the allele, but the blackened trees are what spread it."},
+        {"label": "true_but_out_of_scope", "option": "2", "route": "Names the wider framework instead of the mechanism. Neo-Darwinism is selection plus genetics; the moths are the plain demonstration of selection."}
+      ],
+      "reason": "This question requires one taught example to be matched to the right evolutionary mechanism, demonstrated by the stem \"Industrial melanism is an example of:\" with four rival mechanisms as the options.",
+      "note": ""
+    }
+  ],
+  "group_note": "All six are printed as one question with four short text options, so all six are plain_mcq; q123 alone adds a secondary type, because its pedigree chart must be read before anything can start. Demands were set against each other: q124, q125, q126 are straight retrieval of one stored association and are all recall with single_step, while q128 differs in asking which of four neighbouring mechanisms an example illustrates, so it carries concept_discrimination. q123 and q127 are the only two whose answer is built rather than retrieved - q123 by applying the pedigree rules in a fixed order (recessive first, then location), q127 by grading four whole claims - which is why they alone carry multi_step_dependent and several_independent_checks. q123 is also the only member with a demonstrated shortcut, so elimination appears there and nowhere else. q124 carries no trap at all: its three wrong options are unrelated biosynthetic processes with no route into them, and an empty list is the honest answer."
+}

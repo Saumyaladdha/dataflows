@@ -1,0 +1,45 @@
+{
+  "page": {
+    "width_px": 1600,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.0, "x1": 0.285},
+      {"id": "right", "x0": 0.304, "x1": 0.933}
+    ]
+  },
+  "elements": [
+    {"n": 1, "role": "paragraph", "bbox": [0.3031, 0.0858, 0.9269, 0.1757],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "major_heading", "bbox": [0.305, 0.1844, 0.7194, 0.1972],
+     "column": "right", "size_rel": 1.05, "align": "left", "text_color": "#6d6e71"},
+    {"n": 3, "role": "paragraph", "bbox": [0.3038, 0.2023, 0.9287, 0.2596],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "major_heading", "bbox": [0.3056, 0.2697, 0.6375, 0.2817],
+     "column": "right", "size_rel": 1.05, "align": "left", "text_color": "#6d6e71"},
+    {"n": 5, "role": "paragraph", "bbox": [0.3356, 0.2876, 0.9263, 0.3161],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "equation", "bbox": [0.4537, 0.3252, 0.7762, 0.4541],
+     "column": "right", "size_rel": 1.0, "align": "center"},
+    {"n": 7, "role": "paragraph", "bbox": [0.3344, 0.4583, 0.9269, 0.7161],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 8, "role": "equation", "bbox": [0.3362, 0.7234, 0.9031, 0.8523],
+     "column": "right", "size_rel": 1.0, "align": "center"},
+    {"n": 9, "role": "figure_caption", "bbox": [0.3025, 0.8624, 0.9281, 0.8908],
+     "column": "right", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71"},
+    {"n": null, "role": "running_header", "bbox": [0.1025, 0.9028, 0.19, 0.9128],
+     "column": "left", "size_rel": 1.0, "align": "left", "text_color": "#6d6e71"},
+    {"n": null, "role": "page_number", "bbox": [0.2006, 0.9069, 0.2412, 0.9174],
+     "column": "left", "size_rel": 1.0, "align": "right", "text_color": "#6d6e71",
+     "fill": "#fecb03"},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9156, 0.2412, 0.9174],
+     "column": "left", "size_rel": 1.0, "fill": "#fecb03"},
+    {"n": null, "role": "running_header", "bbox": [0.4512, 0.9743, 0.5494, 0.9839],
+     "column": "full", "size_rel": 0.8, "align": "center"}
+  ],
+  "note": "Two-column body page (verso, folio 268) whose left margin column prints nothing but the footer furniture - no 9.x section heading falls here, so every content element sits in the right text column. body_text_size_px=20.5 from this page's body cap heights. ONE GENUINELY AMBIGUOUS ROLE: A2's block n=9 ('Decreasing order of extent of H-bonding in water and order of stability of ions by solvation.') is blocked as a paragraph, but it is printed in the same grey #6d6e71 bold face the book uses for figure and table captions and it describes the displayed scheme immediately above it, so it is reported here as figure_caption; a consumer that trusts A2's kind instead should read it as a paragraph. Blocks n=2 and n=4 are in-flow grey #6d6e71 sub-headings inside the text column (major_heading); n=6 and n=8 are each one equation block covering a two-row displayed scheme, reported as single elements to match A2's blocking."
+}

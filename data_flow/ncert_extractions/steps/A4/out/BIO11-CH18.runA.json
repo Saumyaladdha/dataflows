@@ -1,0 +1,114 @@
+{
+  "chapter": "BIO11-CH18",
+  "subtopics": [
+    {
+      "n": 1,
+      "name": "Neural system across animals: from Hydra to vertebrates",
+      "from_heading": "18.1",
+      "passages": [
+        "BIO11L-CH18-P01",
+        "BIO11L-CH18-P02"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "Organisation of the human neural system: CNS and PNS",
+      "from_heading": "18.2",
+      "passages": [
+        "BIO11L-CH18-P03",
+        "BIO11L-CH18-P04",
+        "BIO11L-CH18-P23"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "Somatic and autonomic divisions of the peripheral neural system",
+      "from_heading": "18.2",
+      "passages": [
+        "BIO11L-CH18-P05"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Visceral nervous system",
+      "from_heading": "18.2",
+      "passages": [
+        "BIO11L-CH18-P06"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Neuron as the structural and functional unit of the neural system",
+      "from_heading": "18.3",
+      "passages": [
+        "BIO11L-CH18-P07",
+        "BIO11L-CH18-P08",
+        "BIO11L-CH18-P22"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Generation and conduction of a nerve impulse: resting and action potential",
+      "from_heading": "18.3.1",
+      "passages": [
+        "BIO11L-CH18-P09",
+        "BIO11L-CH18-P10",
+        "BIO11L-CH18-P11"
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Transmission of impulses across electrical and chemical synapses",
+      "from_heading": "18.3.2",
+      "passages": [
+        "BIO11L-CH18-P12",
+        "BIO11L-CH18-P13",
+        "BIO11L-CH18-P14"
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Central neural system: the brain and its meninges",
+      "from_heading": "18.4",
+      "passages": [
+        "BIO11L-CH18-P15",
+        "BIO11L-CH18-P16",
+        "BIO11L-CH18-P17",
+        "BIO11L-CH18-P24"
+      ]
+    },
+    {
+      "n": 9,
+      "name": "Forebrain: cerebrum, thalamus and hypothalamus",
+      "from_heading": "18.4.1",
+      "passages": [
+        "BIO11L-CH18-P18"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Midbrain",
+      "from_heading": "18.4.2",
+      "passages": [
+        "BIO11L-CH18-P19"
+      ]
+    },
+    {
+      "n": 11,
+      "name": "Hindbrain: pons, cerebellum and medulla",
+      "from_heading": "18.4.3",
+      "passages": [
+        "BIO11L-CH18-P20"
+      ]
+    },
+    {
+      "n": 12,
+      "name": "Brain stem",
+      "from_heading": "18.4",
+      "passages": [
+        "BIO11L-CH18-P21"
+      ]
+    }
+  ],
+  "note": "chapter_title in the input is \"SUMMARY\", which looks like an extraction artifact rather than the chapter's real title. Two short, self-contained passages were given their own named subtopics rather than folded into neighbours: P06 on the visceral nervous system (it sits after the somatic/autonomic paragraph under 18.2 but reads apart from it) and P21 on the brain stem (it follows 18.4.3 Hindbrain but spans midbrain, pons and medulla, so from_heading is given as the parent 18.4). Summary passages P22-P23 and exercise passage P24 are attached to the content subtopic they most directly match so that every passage is covered; P24 lists exercises on several ideas and was assigned to its single best fit (structure of the brain)."
+}

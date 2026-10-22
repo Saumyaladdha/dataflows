@@ -1,0 +1,32 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "the vector sum of the force on  q₁ due to q₂, the force on q₁ due to q₃, and so on. For each pair, the force is given by the Coulomb’s law for two charges stated earlier.\n8. The electric field E at a point due to a charge configuration is the force on a small positive test charge q placed at the point divided by the magnitude of the charge. Electric field due to a point charge q has a magnitude |q|/4πε₀r²; it is radially outwards from q, if q is positive, and radially inwards if q is negative. Like Coulomb force, electric field also satisfies superposition principle.\n9. An electric field line is a curve drawn in such a way that the tangent at each point on the curve gives the direction of electric field at that point. The relative closeness of field lines indicates the relative strength of electric field at different points; they crowd near each other in regions of strong electric field and are far apart where the electric field is weak. In regions of constant electric field, the field lines are uniformly spaced parallel straight lines.\n10. Some of the important properties of field lines are: (i) Field lines are continuous curves without any breaks. (ii) Two field lines cannot cross each other. (iii) Electrostatic field lines start at positive charges and end at negative charges —they cannot form closed loops.\n11. An electric dipole is a pair of equal and opposite charges q and –q separated by some distance 2a. Its dipole moment vector p has magnitude 2qa and is in the direction of the dipole axis from –q to q.\n12. Field of an electric dipole in its equatorial plane (i.e., the plane perpendicular to its axis and passing through its centre) at a distance r from the centre:",
+      "fixes": [
+        {"wrong": "q1 due to q2", "right": "q₁ due to q₂"},
+        {"wrong": "q1 due to q3", "right": "q₁ due to q₃"},
+        {"wrong": "4πε0r 2", "right": "4πε₀r²"}
+      ]
+    },
+    {"n": 3, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "The 1/r³ dependence of dipole electric fields should be noted in contrast to the 1/r² dependence of electric field due to a point charge.",
+      "fixes": [
+        {"wrong": "1/r3", "right": "1/r³"},
+        {"wrong": "1/r 2", "right": "1/r²"}
+      ]
+    },
+    {"n": 6, "no_change": true},
+    {
+      "n": 7,
+      "corrected_text": "14. The flux ∆φ of electric field E through a small area element ∆S is given by\n ∆φ  = E.∆S\nThe vector area element ∆S is\n∆S = ∆S n̂\nwhere ∆S is the magnitude of the area element and n̂ is normal to the area element, which can be considered planar for sufficiently small ∆S.",
+      "fixes": [
+        {"wrong": "∆S ˆn", "right": "∆S n̂"},
+        {"wrong": "ˆn is normal", "right": "n̂ is normal"}
+      ]
+    }
+  ],
+  "note": "n1 had flattened digit subscripts (q1/q2/q3) and a flattened ε0/r 2 restored. n5 had 1/r3 and 1/r 2 restored to true superscripts 1/r³, 1/r². n7 had the hat detached from n̂ restored (twice). n3 and n6 already matched the image."
+}

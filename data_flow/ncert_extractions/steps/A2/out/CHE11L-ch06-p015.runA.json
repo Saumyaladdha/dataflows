@@ -1,0 +1,130 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "(a) The decomposition of H2O into H2 and O2 at 500 K has a very small equilibrium constant, Kc = 4.1 × 10–48 (b) N2(g)  +  O2(g) ⇌ 2NO(g),  at 298 K has Kc = 4.8 ×10–31. • If Kc is in the range of 10 – 3 to 103, appreciable concentrations of both reactants and products are present. Consider the following examples: (a) For reaction of H2 with I2 to give HI, Kc = 57.0 at 700K. (b) Also, gas phase decomposition of N2O4 to NO2 is another reaction with a value of Kc = 4.64 × 10 –3 at 25°C which is neither too small nor too large. Hence, equilibrium mixtures contain appreciable concentrations of both N2O4 and NO2.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "These generarlisations are illustrated in Fig. 6.6"
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [213, 995, 875, 1208],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "6.6.2 Predicting the Direction of the Reaction"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The equilibrium constant helps in predicting the direction in which a given reaction will proceed at any stage. For this purpose, we calculate the reaction quotient Q. The reaction quotient, Q (Qc with molar concentrations and QP with partial pressures) is defined in the same way as the equilibrium constant Kc except that the concentrations in Qc are not necessarily equilibrium values. For a general reaction:"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1681, 875, 1724],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [213, 1726, 875, 1768],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "Then,"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "If Qc > Kc, the reaction will proceed in the direction of reactants (reverse reaction)."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "If Qc < Kc, the reaction will proceed in the direction of the products (forward reaction)."
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "If Qc = Kc, the reaction mixture is already at equilibrium."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "Consider the gaseous reaction of H2 with I2,"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "H2(g) + I2(g) ⇌ 2HI(g); Kc = 57.0 at 700 K."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "Suppose we have molar concentrations [H2]t=0.10M, [I2]t = 0.20 M and [HI]t = 0.40 M. (the subscript t on the concentration symbols means that the concentrations were measured at some arbitrary time t, not necessarily at equilibrium)."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Thus, the reaction quotient, Qc at this stage of the reaction is given by,"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [899, 727, 1550, 814],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "Now, in this case, Qc (8.0) does not equal Kc (57.0), so the mixture of H2(g), I2(g) and HI(g) is not at equilibrium; that is, more H2(g) and I2(g) will react to form more HI(g) and their concentrations will decrease till Qc = Kc."
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "The reaction quotient, Qc is useful in predicting the direction of reaction by comparing the values of Qc and Kc."
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "Thus, we can make the following generalisations concerning the direction of the reaction (Fig. 6.7) :"
+    },
+    {
+      "n": 20,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [899, 1181, 1550, 1552],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "list",
+      "text": "• If Qc < Kc, net reaction goes from left to right • If Qc > Kc, net reaction goes from right to left. • If Qc = Kc, no net reaction occurs."
+    },
+    {
+      "n": 22,
+      "kind": "box",
+      "text": "Problem 6.7 The value of Kc for the reaction 2A ⇌ B + C is 2 × 10–3. At a given time, the composition of reaction mixture is  [A] = [B] = [C] = 3 × 10–4 M. In which direction the reaction will proceed?",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["182", "CHEMISTRY", "chemistry", "2024-25"],
+  "note": "Two-column page; left column read before right. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 14 output I had just written myself: page 14 ended mid-list on 'Consider the following examples:' with no examples printed, and this page opens with those examples '(a) The decomposition of H2O ...', so first_block_continues_from_previous is true. Block 3's bbox covers the Fig. 6.6 arrow diagram with all its labels ('Negligible', '10–3 1 103', 'Extremely large', 'Reaction hardly proceeds', etc.) and the 'Fig.6.6' caption; block 20's bbox covers the Fig. 6.7 bar charts, their Qc/Kc and axis labels and the 'Fig. 6.7' caption. Blocks 6, 7 and 16 are displayed equations ((6.19), (6.20) and the Qc worked value) left for the special transcriber; indented lines that the text layer holds cleanly as one line of running text, such as block 13, are kept as paragraphs. 'generarlisations' in block 2 is the book's own spelling and is copied unchanged. The three Qc-vs-Kc sentences are split across the column break (blocks 9 and 10 at the foot of the left column, block 11 at the head of the right). last_block_continues_on_next is true because the page ends mid-box: the pink Problem 6.7 panel stops at the question, with its solution on page 16."
+}

@@ -1,0 +1,30 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        218,
+        259,
+        1493,
+        1842
+      ],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "** Elements with atomic number 112 and above have been reported but not yet fully authenticated and named."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "STRUCTURE OF ATOM",
+    "67",
+    "2024-25"
+  ],
+  "note": "Seam judged against CHE11L-ch02-p038.runA.json, written immediately before this page (the instruction's named anchor p030 has no output on disk). p038 ends MID-TABLE: Table 2.6 is cut there after Xe, Z = 54, and its last_block_continues_on_next is true. This page is that table's continuation sheet — it opens straight into the same grid with the same repeated 'Element Z / 1s / 2s / 2p / ... / 7s' column header and the very next row, Cs, Z = 55, and it carries no table title of its own — so first_block_continues_from_previous is true and the two pages agree. input's previous_page_last_block was null. The ENTIRE printed content of this page is that continuation of Table 2.6, running Cs (Z=55) to Rg** (Z=111), plus the double-asterisk footnote below it; the lower quarter of the sheet is blank. The table body is 100% image-only: the page's whole text layer is four lines — the page number, the running header, the footnote and the reprint year — and holds NOT ONE character of the grid (no repeated 'Element Z' header, none of the 1s/2s/2p/3s/3p/3d/4s/4p/4d/4f/5s/5p/5d/5f/6s/6p/6d/7s column labels, none of the 57 element symbols or atomic numbers, none of the occupancy digits, and not the asterisks marking La*, Ce*, Gd*, Pt*, Au* or the double asterisk on Rg**). So block n=1 defers the whole grid with a bbox and empty text, and the grid is not described. As on p038, I deliberately kept the footnote OUT of that bbox rather than sweeping it in with the caption-inside-the-bbox pattern: it is the only prose this page's layer has, and deferring it too would leave the page with zero block text and 0% recall, below even the 0.50 deferred bar. Transcribing it as block n=2 accounts for every word of the layer. The footnote keeps its leading double asterisk as printed, and the number 112 in it is the page's own. last_block_continues_on_next is false: Rg, Z = 111, is the final row of Table 2.6 — the footnote itself says elements of atomic number 112 and above are not yet named, so the table has nothing left to run on to — the footnote is a complete sentence, and the rest of the sheet is blank. bboxes are original-image pixels (1750x2180); the image renders at 1606x2000, so displayed coordinates were scaled by 1.09."
+}

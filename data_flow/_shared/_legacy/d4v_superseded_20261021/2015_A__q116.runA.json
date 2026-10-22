@@ -1,0 +1,27 @@
+{
+  "link_type": "concept_applied",
+  "derivation_steps": [
+    "DNA is a nucleic acid and a nucleic acid is a polymer of nucleotides, so the nucleotide is the monomer unit and is the smallest of the four items listed",
+    "a largest-to-smallest order must therefore end in nucleotide; options 1 and 3 end in gene and are eliminated",
+    "options 2 and 4 both end in nucleotide and differ only in where genome sits: option 2 puts genome between gene and nucleotide, option 4 puts genome first",
+    "ranking genome above chromosome above gene is what selects option 4, Genome, chromosome, gene, nucleotide; no passage supplied here states that ranking, so the quoted lines reach the answer only by eliminating options 1 and 3"
+  ],
+  "evidence": [
+    {
+      "for": "rule",
+      "passage_id": "BIO12L-CH05-P13",
+      "exact_line": "In class XI you have learnt that nucleic acids are polymers of nucleotides."
+    },
+    {
+      "for": "rule",
+      "passage_id": "BIO12L-CH05-P16",
+      "exact_line": "DNA is a long polymer of deoxyribonucleotides."
+    }
+  ],
+  "supports_answer": "partly",
+  "missing": [
+    "that a genome is the complete DNA content, i.e. the whole set of chromosomes, of an organism, and so is larger than a single chromosome",
+    "that a chromosome carries many genes, and so is larger than a single gene"
+  ],
+  "note": "Expected section 5.1.2 Packaging of DNA Helix, for DNA to chromatin to chromosome, and section 5.9 Human Genome Project, for what a genome is and how many genes and chromosomes it spans. Neither is among the 15 passages: all 15 are section 5.1 DNA structure, section 5.2 the search for the genetic material, and the genetic-code and central-dogma openers. The lines quoted fix only the bottom of the hierarchy, the nucleotide as monomer, which rules out options 1 and 3 but cannot separate option 2 from option 4. Hence partly, not fully."
+}

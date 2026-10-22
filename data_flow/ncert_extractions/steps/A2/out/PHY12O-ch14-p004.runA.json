@@ -1,0 +1,36 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "completely occupied by the 4N valence electrons at temperature of absolute\nzero is the valence band.  The other band consisting of 4N energy states,\ncalled the conduction band, is completely empty at absolute zero.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        213,
+        512,
+        905,
+        1030
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "BAND THEORY OF SOLIDS\nConsider that the Si or Ge crystal\ncontains N atoms. Electrons of each\natom will have discrete energies in\ndifferent orbits. The electron energy\nwill be same if all the atoms are\nisolated, i.e., separated from each\nother by a large distance. However,\nin a crystal, the atoms are close to\neach other (2 to 3 Å) and therefore\nthe electrons interact with each\nother and also with the\nneighbouring atomic cores. The\noverlap (or interaction) will be more\nfelt by the electrons in the\noutermost orbit while the inner\norbit or core electron energies may\nremain unaffected. Therefore, for understanding electron energies in Si or Ge crystal, we\nneed to consider the changes in the energies of the electrons in the outermost orbit only.\nFor Si, the outermost orbit is the third orbit (n = 3), while  for Ge it is the fourth orbit\n(n = 4). The number of electrons in the outermost orbit is 4 (2s and 2p electrons). Hence,\nthe total number of outer electrons in the crystal is 4N. The maximum possible number of\nouter electrons in the orbit is 8 (2s + 6p electrons). So, out of the 4N electrons, 2N electrons\nare in the 2N s-states (orbital quantum number l = 0) and 2N electrons are in the available\n6N p-states. Obviously, some p-electron states are empty as shown in the extreme right of\nFigure. This is the case of well separated or isolated atoms [region A of Figure].\nSuppose these atoms start coming nearer to each other to form a solid. The energies\nof these electrons in the outermost orbit may change (both increase and decrease) due to\nthe interaction between the electrons of different atoms. The 6N states for l = 1, which\noriginally had identical energies in the isolated atoms, spread out and form an energy\nband [region B in Figure]. Similarly, the 2N states for l = 0, having identical energies in\nthe isolated atoms, split into a second band (carefully see the region B of Figure) separated\nfrom the first one by an energy gap.\nAt still smaller spacing, however, there comes a region in which the bands merge with\neach other. The lowest energy state that is a split from the upper atomic level appears to\ndrop below the upper state that has come from the lower atomic level. In this region (region\nC in Figure), no energy gap exists where the upper and lower energy states get mixed.\nFinally, if the distance between the atoms further decreases, the energy bands again\nsplit apart and are separated by an energy gap Eg (region D in Figure). The total number\nof available energy states 8N has been re-apportioned between the two bands (4N states\neach in the lower and upper energy bands). Here the significant point is that there are\nexactly as many states in the lower band (4N) as there are available valence electrons\nfrom the  atoms (4N).\nTherefore, this band (called the valence band) is completely filled while the upper\nband is completely empty. The upper band is called the conduction band.",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "470",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null, so the continuation judgement rests on my own p003 output: p003 ended mid-sentence at 'The lower band which is' and this page opens 'completely occupied by the 4N valence electrons...'. Most of the page is one shaded box titled 'BAND THEORY OF SOLIDS'; its title is kept at the head of the box block (n=3). The unlabelled band-spacing diagram fills the box's left half and is deferred to A2S as n=2 because the box prose runs down the right-hand column beside it (left column read first). The box ends on a complete sentence, so the page does not run on."
+}

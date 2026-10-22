@@ -1,0 +1,117 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Problem 2.6\nCalculate energy of one mole of photons of radiation whose frequency is 5 ×1014 Hz.\nSolution\nEnergy (E) of one photon is given by the expression\nE = hν\nh = 6.626 ×10–34 J s\nν = 5×1014 s–1 (given)\nE = (6.626 ×10–34 J s) × (5 ×1014 s–1)\n= 3.313 ×10–19 J\nEnergy of one mole of photons\n= (3.313 ×10–19 J) × (6.022 × 1023 mol–1)\n= 199.51 kJ mol–1"
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Problem 2.7\nA 100 watt bulb emits monochromatic light of wavelength 400 nm. Calculate the number of photons emitted per second by the bulb.\nSolution\nPower of the bulb = 100 watt\n= 100 J s–1\nEnergy of one photon E = hν = hc/λ"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        251,
+        1346,
+        796,
+        1499
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Number of photons emitted"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        262,
+        1548,
+        763,
+        1635
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Problem 2.8\nWhen electromagnetic radiation of wavelength 300 nm falls on the surface of sodium, electrons are emitted with a kinetic energy of 1.68 ×105 J mol–1. What is the minimum energy needed to remove an electron from sodium? What is the maximum wavelength that will cause a photoelectron to be emitted?"
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Solution\nThe energy (E) of a 300 nm photon is given by"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        927,
+        420,
+        1526,
+        583
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "The energy of one mole of photons\n= 6.626 ×10–19 J × 6.022 × 1023 mol–1\n= 3.99 × 105 J mol–1\nThe minimum energy needed to remove one mole of electrons from sodium\n= (3.99 –1.68) 105 J mol–1\n= 2.31 × 105 J mol–1\nThe minimum energy for one electron"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        921,
+        932,
+        1384,
+        1036
+      ],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "box",
+      "text": "This corresponds to the wavelength"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        921,
+        1112,
+        1548,
+        1270
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "box",
+      "text": "(This corresponds to green light)"
+    },
+    {
+      "n": 14,
+      "kind": "box",
+      "text": "Problem 2.9\nThe threshold frequency ν0 for a metal is 7.0 ×1014 s–1. Calculate the kinetic energy of an electron emitted when radiation of frequency ν =1.0 ×1015 s–1 hits the metal.\nSolution\nAccording to Einstein’s equation\nKinetic energy = ½ mev2=h(ν – ν0 )\n= (6.626 × 10–34 J s) (1.0 × 1015 s–1 – 7.0 ×1014 s–1)\n= (6.626 × 10–34 J s) (10.0 × 1014 s–1 – 7.0 ×1014 s–1)\n= (6.626 × 10–34 J s) × (3.0 × 1014 s–1)\n= 1.988 × 10–19 J"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "43",
+    "STRUCTURE OF ATOM",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p014.runA.json I wrote in this run, which ends with the completed sentence '...also exhibit this wave-particle duality.' This page opens a fresh box with 'Problem 2.6', so first_block_continues_from_previous is false. The whole page is two pink panels of worked problems, Problems 2.6 and 2.7 plus the statement of 2.8 in the left column and the Solution to 2.8 and all of Problem 2.9 in the right column; reading order is left column then right column, which is also the text layer's order. The problems' prose and their single-line substitutions are transcribed in box blocks, following the layer's flattened spelling throughout ('5 ×1014 Hz', '6.626 ×10–34 J s', '3.313 ×10–19 J', '6.022 × 1023 mol–1', '199.51 kJ mol–1', '1.68 ×105 J mol–1', 'ν0', '½ mev2=h(ν – ν0 )'). The five stacked fractions are left for the special transcriber as needs_special equation blocks because the text layer stores them scrambled or not at all: n=3 is the hc/λ fraction for Problem 2.7 down to '= 4.969 × 10–19 J' (layer tokens '6.626 10 J s 3 10 m s 34 8 1 400 10 9m'); n=5 is the 100 J s–1 / 4.969×10–19 J quotient giving 2.012×1020 s–1 (layer tokens '100 4 969 10 2 012 10 1 19 20 1'); n=8 is the printed 'hn = hc / λ' line with its fraction and '= 6.626 × 10–19 J', of which only the result is in the layer; n=10 is the 2.31×105 J mol–1 over 6.022×1023 electrons mol–1 quotient and '= 3.84×10–19 J', absent from the layer; n=12 is the '∴ λ = hc/E' fraction through '= 517 nm'. The page ends with the completed result '= 1.988 × 10–19 J' inside the closed box, so last_block_continues_on_next is false."
+}

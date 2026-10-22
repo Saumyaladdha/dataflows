@@ -1,0 +1,78 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Case II: In this case, as shown in Fig. 14.2(b), a large band gap Eg exists\n(Eg > 3 eV). There are no electrons in the conduction band, and therefore\nno electrical conduction is possible. Note that the energy gap is so large\nthat electrons cannot be excited from the valence band  to the conduction\nband by thermal excitation. This is the case of insulators.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Case III: This situation is shown in Fig. 14.2(c). Here a finite but small\nband gap (Eg < 3 eV) exists. Because of the small band gap, at room\ntemperature some electrons from valence band can acquire enough\nenergy to cross the energy gap and enter the  conduction band. These\nelectrons (though small in numbers) can move in the conduction band.\nHence, the resistance of semiconductors is not as high as that of the\ninsulators."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In this section we have made a broad classification of metals,\nconductors and semiconductors. In the section which follows you will\nlearn the conduction process in semiconductors."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "14.3  INTRINSIC SEMICONDUCTOR"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "We shall take the most common case of Ge and Si whose lattice structure\nis shown in Fig. 14.3. These structures are called the  diamond-like\nstructures. Each atom is surrounded by four nearest neighbours. We\nknow that Si and Ge have four valence electrons. In its crystalline\nstructure, every Si or Ge atom tends to share one of its four valence\nelectrons with each of its four nearest neighbour atoms, and also to take\nshare of one electron from each such neighbour. These shared electron\npairs are referred to as forming a  covalent bond or simply a valence\nbond. The two shared electrons can be assumed to shuttle back-and-\nforth between the associated atoms holding them together strongly.\nFigure 14.4 schematically shows the 2-dimensional representation of Si\nor Ge structure shown in Fig. 14.3 which overemphasises the covalent\nbond. It shows an idealised picture in which no bonds are broken (all\nbonds are intact). Such a situation arises at low\ntemperatures. As the temperature increases, more\nthermal energy becomes available to these electrons\nand some of these electrons may break–away\n(becoming free electrons contributing to conduction).\nThe thermal energy effectively ionises only a few atoms\nin the crystalline lattice and creates a vacancy in the\nbond as shown in Fig. 14.5(a). The neighbourhood,\nfrom which the free electron (with charge –q) has come\nout leaves a vacancy with an effective charge (+q). This\nvacancy with the effective positive electronic charge is\ncalled a hole. The hole behaves as an apparent free\nparticle with effective positive charge."
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        191,
+        1379,
+        741,
+        2027
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "In intrinsic semiconductors, the number of free\nelectrons, ne is equal to the number of holes, nh.  That is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        790,
+        1908,
+        1525,
+        1955
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "where ni is called intrinsic carrier concentration."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Semiconductors posses the unique property in\nwhich, apart from electrons, the holes also move.",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "472",
+    "2022-23"
+  ],
+  "note": "previous_page_last_block was null; judged against my own p005 output, whose prose ended on a complete sentence ('is low or the conductivity is high.'), and this page opens a new 'Case II:' paragraph. Fig. 14.3 with its caption occupies the bottom-left quadrant; the paragraph beginning 'We shall take the most common case' runs full width and then narrows into the right-hand column beside the figure, so it is kept as a single block and the figure follows it. Numbered equation (14.1), n_e = n_h = n_i, is deferred to A2S. The page's last sentence ('the holes also move.') is complete, so the page does not break mid-sentence even though the discussion continues overleaf."
+}

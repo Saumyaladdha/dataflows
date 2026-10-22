@@ -1,0 +1,133 @@
+{
+  "group": "v2__physics__plain.part6",
+  "ratings": [
+    {
+      "question_id": "2015_A#q168",
+      "concept": "Elastic collision between equal masses in two dimensions: kinetic energy conservation alone fixes the second speed, since v^2 = (v/3)^2 + u^2",
+      "cognitive_demand": "calculation",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that in an elastic collision neither block can end faster than the incident block strikes out option 4, whose 3/sqrt(2) v is 2.12 v.",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "sqrt(3)/2 v is sqrt(1 - 1/4) v, so the operation squares v/2 in the energy equation in place of the stem's stated v/3"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "4",
+          "route": "3/sqrt(2) v is 2.12 v, greater than the incident speed v; since the total kinetic energy is conserved and the first block retains (v/3)^2 of it, no route - correct or erroneous - in the energy equation can give the second block more than v, so this option only widens the spread"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one conservation equation to be solved for one unknown, demonstrated by the stem's \"has a speed v/3\" giving u^2 = v^2 - v^2/9 = 8v^2/9 and option 2's 2 sqrt(2) v / 3.",
+      "note": "`single_step` because the printed angle theta is not needed: energy conservation alone settles the speed, and no step requires the momentum components. Option 3 (3/4 v) is left untagged - it is neither sqrt(1 - 1/9) nor sqrt(1 - 1/4) nor any linear combination of the stem's speeds - so no operation can be named for it. has_figure is set and a figure file is referenced, but the stem states the masses, the speed and the angle, so the figure is redundant to the answer."
+    },
+    {
+      "question_id": "2015_A#q169",
+      "concept": "Electric field as the negative gradient of potential: each component of E is minus the partial derivative of V with respect to that coordinate, evaluated at the point",
+      "cognitive_demand": "calculation",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that the x-component is -dV/dx = -6y, which is -6 at the given point, strikes out options 2 and 4, whose first components are 3 and 2.",
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires three partial derivatives to be taken separately and assembled, demonstrated by the stem's \"V(x, y, z) = 6xy - y + 2yz\" at (1, 1, 0) giving dV/dx = 6y = 6, dV/dy = 6x - 1 + 2z = 5 and dV/dz = 2y = 2, which is option 3.",
+      "note": "No trap is written, and that is a finding rather than an omission. Each wrong triple differs from the key in one or two components, but no single differentiation or substitution error reproduces a whole printed triple: taking the sign of the -y term as positive gives (6, 7, 2), not option 1's (6, 9, 1); evaluating at z = 1 instead of z = 0 also gives (6, 7, 2); and neither (3, 5, 3) nor (2, 3, 1) is any scalar multiple of the correct gradient. Rule 4 therefore leaves all three untagged rather than naming a device that cannot name its route. `several_independent_checks` rather than `multi_step_dependent`: the three components are computed in any order and none needs another's result."
+    },
+    {
+      "question_id": "2015_A#q170",
+      "concept": "Intensity ratio at the maxima and minima of interference: intensity is proportional to slit width, amplitudes go as the square root, and I_max/I_min = ((a1 + a2)/(a1 - a2))^2",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that I_max cannot be smaller than I_min, so the printed ratio must exceed 1, strikes out options 1 and 4, which are 4/9 and 49/121.",
+      "traps": [
+        {
+          "label": "inverted_ratio",
+          "option": "1",
+          "route": "4/9 is the exact reciprocal of the key's 9/4, so the option is the ratio I_min/I_max printed where the stem asks for I_max/I_min"
+        },
+        {
+          "label": "complementary_grid",
+          "option": "4",
+          "route": "the two axes of the grid are the magnitude (9/4 against 121/49) and which way up it is printed (max over min against min over max); option 4 is the second magnitude inverted, so the four options are two values each printed both ways and no single error is self-evident from the layout"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires widths to be carried into intensities, intensities into amplitudes and amplitudes into the fringe ratio, demonstrated by the stem's \"widths in the ratio 1 : 25\" giving amplitudes 1 : 5 and (5 + 1)^2/(5 - 1)^2 = 36/16, which is option 2's 9/4.",
+      "note": "Option 3 (121/49) is left untagged. The routes available were tried and none reaches it: treating the widths themselves as amplitudes gives 169/144, using (w1 + w2)^2/(w1 - w2)^2 gives 676/576, and 121/49 would require amplitudes of 9 and 2, which neither the widths nor their roots supply. It is recorded in option 4's entry as the grid's second magnitude rather than tagged separately, since the grid is a property of the option set."
+    },
+    {
+      "question_id": "2015_A#q171",
+      "concept": "Power of a pump as pressure times volume flow rate, with the pressure of a mercury column read as rho g h",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["unit_sanity"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "copied_from_stem",
+          "option": "1",
+          "route": "1.50 reproduces the stem's own printed figure \"150 mm of mercury\" with the decimal point moved two places and the unit changed to watts; no operation on the stem's quantities produces 1.50 W"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires three conversions to be chained before one product is formed, demonstrated by the stem's \"150 mm of mercury\" with density 13.6 x 10^3 kg/m^3 giving 20400 Pa, and \"5 litres of blood ... per minute\" giving 8.33 x 10^-5 m^3/s, whose product is option 2's 1.70 W.",
+      "note": "`copied_from_stem` on option 1 is used for a repeated NUMERAL rather than a repeated phrase, which is how the rulebook words that label. Section 5b records digit_echo as a device the per-subject analyses found, and no live label carries it, so the nearest live label is used here with the echoed figure named rather than inventing a second escape; `wrong_exponent` would be wrong, because no correct route passes through 150. Options 3 (2.35) and 4 (3.0) are left untagged: using g = 9.8 instead of 10 gives 1.67, and no combination of the printed conversions reaches either, so rule 4 forbids a tag. `unit_sanity` is recorded because three separate conversions (mm to m, litres to m^3, per minute to per second) are what the item turns on."
+    },
+    {
+      "question_id": "2015_A#q172",
+      "concept": "Radius of a charged particle in a magnetic field: r = sqrt(2mK)/qB, so at equal radii the kinetic energy goes as q^2/m and the alpha particle's doubled charge is cancelled by its quadrupled mass",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "omitted_contribution",
+          "option": "2",
+          "route": "4 MeV keeps the charge factor q^2, which is 4 for the alpha particle, and omits the 1/m factor, whose value of 1/4 is what cancels it"
+        },
+        {
+          "label": "wrong_power_of_dependence",
+          "option": "3",
+          "route": "the two powers are q^1 against the required q^2: taking K as proportional to q/m gives 2/4 = 0.5, which is the printed option"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a stated relation to be rearranged for the energy and then applied as a ratio between two particles, demonstrated by the stem's \"radius of circular orbits for both the particles is equal\" giving K proportional to q^2/m, so the alpha particle's factor of 4 in charge and 4 in mass leave option 1's 1 MeV.",
+      "note": "`estimation` is recorded in the sense the rulebook gives it when retiring `ratio_based`: the constants B, r and the numerical factors all cancel, so the answer is reached by comparing factors rather than by evaluating either energy. Option 4 (1.5 MeV) is left untagged - no power of q over any power of m gives 3/2 for a doubled charge and a quadrupled mass - so no route can be named."
+    },
+    {
+      "question_id": "2015_A#q173",
+      "concept": "Common-emitter amplifier: the output amplitude is the voltage gain times the input amplitude, and the output is 180 degrees out of phase with the input",
+      "cognitive_demand": "application",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that the amplitude must be the gain times the input, 150 x 2 = 300, strikes out options 3 and 4, whose amplitudes are 75 and 2.",
+      "traps": [
+        {
+          "label": "sign_reversed_magnitude_right",
+          "option": "2",
+          "route": "the magnitude 300 and the method are right and the inversion is not applied: the printed phase is the input's pi/3 rather than pi/3 + pi, so the one thing wrong is the sign the common-emitter stage puts on the output"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "3",
+          "route": "75 is 150/2, so the operation divides the gain by the input amplitude instead of multiplying the two"
+        },
+        {
+          "label": "copied_from_stem",
+          "option": "4",
+          "route": "the amplitude 2 is the stem's own input amplitude from \"V_i = 2 cos(15t + pi/3)\" reprinted unchanged, so the gain is never applied"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires two stored properties of a named circuit to be applied to a given signal, demonstrated by the stem's \"voltage gain of 150\" and option 1's 300 cos(15t + 4 pi/3), which carries both the multiplied amplitude and the pi phase shift.",
+      "note": "`application` rather than `calculation`, and this is the one member of the packet that differs on the demand axis: the arithmetic (2 x 150, and pi/3 + pi) is not what decides the item, since options 1 and 2 share the amplitude and differ only in whether the common-emitter stage's phase inversion is applied, which is a stored property turned onto this signal. `several_independent_checks` for the same reason: the amplitude and the phase are settled separately and both must hold, and neither needs the other's result."
+    }
+  ],
+  "group_note": "Six physics items grouped on the reader's `structure` field, which read `plain`, and that shape holds for all six: one question, four options, no statement block, list or pairing. Five are `calculation` on the demand axis, and the test applied throughout was whether the answer is arrived at by computing from the stem's quantities. q173 is the single exception and is `application`: its options 1 and 2 carry the SAME computed amplitude and differ only in whether the common-emitter stage's phase inversion is applied, so the decision rests on a stored property of the circuit being turned onto this signal rather than on arithmetic. Solution structure was set by the rulebook's strict test, that step two needs step one's RESULT, and it divides the group three ways rather than uniformly. `multi_step_dependent` covers q170 (widths to intensities to amplitudes to ratio), q171 (three conversions before one product) and q172 (rearrange for K, then form the ratio). `several_independent_checks` covers q169 and q173, and in both the point is that nothing is dependent: q169's three partial derivatives are computed in any order and assembled, q173's amplitude and phase are settled separately and must both hold. q168 is the one `single_step` member, because the printed angle theta is not needed at all - one energy equation gives the speed - and that is recorded in its note. Elimination was recorded in four members and in each the fact cited is cheaper than the answer and strikes named options: no post-collision speed may exceed the incident speed (q168, striking option 4), the x-component of the gradient (q169, striking options 2 and 4), I_max/I_min must exceed 1 (q170, striking options 1 and 4), and the amplitude must be 300 (q173, striking options 3 and 4). q171 and q172 carry `unit_sanity` and `estimation` instead: q171 turns on three conversions, and q172 is the ratio case the rulebook names when retiring `ratio_based`, where the constants cancel and factors are compared rather than energies evaluated. On the trap axis the group's recurring device is a factor or a term dropped from a correct route, and each entry prints the arithmetic that lands on the option: `omitted_contribution` (q172's missing 1/m), `wrong_power_of_dependence` (q172's q^1 for q^2), `calculation_slip` (q168's v/2 for v/3, q173's 150/2), `inverted_ratio` (q170's exact reciprocal), `sign_reversed_magnitude_right` (q173's correct 300 with the inversion not applied), `copied_from_stem` twice (q171's 1.50 echoing \"150 mm\", q173's amplitude 2 reprinted from the input signal) and `complementary_grid` once (q170, whose four options are two magnitudes each printed both ways up). Two members differ sharply from the rest and both differences are argued rather than assumed. q169 carries NO trap: each wrong triple differs from the key in one or two components, but the candidate slips were worked through and none reproduces a whole printed triple, so rule 4 leaves all three untagged. q168's option 4 is the packet's only `no_derivation_route`, and it is demonstrated rather than asserted - 3/sqrt(2) v is 2.12 v, and energy conservation caps the struck block at v - which is the inspectable form the rulebook requires of that label in place of the behavioural justification it retired. Five further options were left untagged with the arithmetic tried recorded in their notes (q168 option 3, q169 all three, q170 option 3, q171 options 3 and 4, q172 option 4). q171's `copied_from_stem` is the one label used slightly outside its wording, for a repeated numeral rather than a repeated phrase, and its note explains why that was preferred to an escape hatch, section 5b having recorded digit_echo as a device with no live label. No trap sits on an official answer, no key is re-judged, no `new_*` escape was needed in this packet, and no damage verdict was recorded - q168's figure flag is redundant to a stem that states every quantity."
+}

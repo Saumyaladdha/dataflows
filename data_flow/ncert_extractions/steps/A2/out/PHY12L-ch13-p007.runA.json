@@ -1,0 +1,67 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "in the process.  The energy E_b is called the binding energy of the nucleus. If we separate a nucleus into its nucleons, we would have to supply a total energy equal to E_b, to those particles.  Although we cannot tear apart a nucleus in this way, the nuclear binding energy is still a convenient measure of how well a nucleus is held together.  A more useful measure of the binding between the constituents of the nucleus is the binding energy per nucleon, E_bn, which is the ratio of the binding energy E_b of a nucleus to the number of the nucleons, A, in that nucleus:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        493,
+        570,
+        1452,
+        612
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "We can think of binding energy per nucleon as the average energy per nucleon needed to separate a nucleus into its individual nucleons."
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        138,
+        735,
+        968,
+        1275
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Figure 13.1 is a plot of the binding energy per nucleon E_bn versus the mass number A for a large number of nuclei. We notice the following main features of the plot:"
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "(i) the binding energy per nucleon, E_bn, is practically constant, i.e. practically independent of the atomic number for nuclei of middle mass number ( 30 < A < 170). The curve has a maximum of about 8.75 MeV for A = 56 and has a value of 7.6 MeV for A = 238.\n(ii) E_bn is lower for both light nuclei (A<30) and heavy nuclei (A>170)."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "We can draw some conclusions from these two observations:"
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "(i) The force is attractive and sufficiently strong to produce a binding energy of a few MeV per nucleon.\n(ii) The constancy of the binding energy in the range 30 < A < 170 is a consequence of the fact that the nuclear force is short-ranged. Consider a particular nucleon inside a sufficiently large nucleus. It will be under the influence of only some of its neighbours, which come within the range of the nuclear force. If any other nucleon is at a distance more than the range of the nuclear force from the particular nucleon it will have no influence on the binding energy of the nucleon under consideration. If a nucleon can have a maximum of p neighbours within the range of nuclear force, its binding energy would be proportional to p. Let the binding energy of the nucleus be pk, where k is a constant having the dimensions of energy. If we increase A by adding nucleons they will not change the binding energy of a nucleon inside. Since most of the nucleons in a large nucleus reside inside it and not on the surface, the change in binding energy per nucleon would be small. The binding energy per nucleon is a constant and is approximately equal to pk. The property that a given nucleon"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "312",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read page 6 of this chapter immediately before: it ended mid-sentence with '...an energy Eb will be released' and this page opens 'in the process.  The energy E_b is called the binding energy of the nucleus.' — so first_block_continues_from_previous is true on that direct evidence. Block 2 is display equation (13.9); block 4 is the Figure 13.1 graph, whose bbox includes its caption 'FIGURE 13.1 The binding energy per nucleon as a function of mass number.' (the caption text is therefore left to the special transcriber rather than duplicated as a block). The middle of the page is two-column: the Figure 13.1 graph occupies the left column while the 'Figure 13.1 is a plot of the...' paragraph and list items (i)-(ii) run down the right column; I ordered left column first per the reading-order rule, though the right-column paragraph's first line actually sits a little above the top of the graph. Text-layer/image notation discrepancies, taken from the image: subscripts are dropped ('Eb' -> E with subscript b, 'Ebn' -> E with subscript bn; written here as E_b and E_bn), and the nuclide labels on the graph axis (12C, 16O, 56Fe, 238U etc.) carry superscript mass numbers that the text layer does not emit at all. Italics ('binding energy', 'binding energy per nucleon', p, k, pk, A) are not preserved. The graph label reading '197An' appears to be a misprint for gold (Au) in the printed figure; it sits inside the figure bbox and is left to the special transcriber, not corrected here."
+}

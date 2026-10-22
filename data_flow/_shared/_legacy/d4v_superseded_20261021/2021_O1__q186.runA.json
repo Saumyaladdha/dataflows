@@ -1,0 +1,26 @@
+{
+  "link_type": "states_answer",
+  "derivation_steps": [],
+  "evidence": [
+    {
+      "for": "statement I is false (AUG codes for methionine and acts as the initiator codon, not for phenylalanine)",
+      "passage_id": "BIO12L-CH05-P98",
+      "exact_line": "AUG has dual functions. It codes for Methionine (met) , and it also act as initiator codon."
+    },
+    {
+      "for": "statement I is false (phenylalanine is coded by UUU, not by AUG)",
+      "passage_id": "BIO12L-CH05-P98",
+      "exact_line": "The code is nearly universal: for example, from bacteria to human UUU would code for Phenylalanine (phe)."
+    },
+    {
+      "for": "statement II (partial: one amino acid may have more than one codon)",
+      "passage_id": "BIO12L-CH05-P98",
+      "exact_line": "Some amino acids are coded by more than one codon, hence the code is degenerate."
+    }
+  ],
+  "supports_answer": "partly",
+  "missing": [
+    "statement II is true: that AAA and AAG specifically both code for lysine"
+  ],
+  "note": "Statement I is shown false twice over by the salient-features list (AUG = methionine + initiator; phenylalanine = UUU), which already rules out options 1, 3 and 4 and leaves option 2. Statement II can only be half-supported: degeneracy says an amino acid may have several codons, but the AAA / AAG -> lysine assignment lives in Table 5.1, the genetic code checker-board. The passages reference that table (\"Finally a checker-board for genetic code was prepared which is given in Table 5.1.\") but none of them carries its contents, so no codon-to-amino-acid assignment other than UUU -> Phe and AUG -> Met is quotable here."
+}

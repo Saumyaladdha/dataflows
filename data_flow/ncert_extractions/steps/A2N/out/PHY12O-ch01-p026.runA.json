@@ -1,0 +1,19 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 3, "no_change": true},
+    {"n": 5, "no_change": true},
+    {
+      "n": 6,
+      "corrected_text": "Notice one ambiguity here. The direction of an area element is along its normal. But a normal can point in two directions. Which direction do we choose as the direction of the vector associated with the area element? This problem is resolved by some convention appropriate to the given context. For the case of a closed surface, this convention is very simple. The vector associated with every area element of a closed surface is taken to be in the direction of the outward normal. This is the convention used in Fig. 1.19. Thus, the area element vector ∆S at a point on a closed surface equals ∆S n̂ where ∆S is the magnitude of the area element and n̂ is a unit vector in the direction of outward normal at that point.",
+      "fixes": [
+        {"wrong": "∆S ˆn", "right": "∆S n̂"},
+        {"wrong": "ˆn is a unit vector", "right": "n̂ is a unit vector"}
+      ]
+    },
+    {"n": 7, "no_change": true},
+    {"n": 9, "no_change": true},
+    {"n": 10, "no_change": true}
+  ],
+  "note": "n=6 had two detached hat forms (ˆn) that belong directly over the letter; restored to n̂ matching the image. All other blocks on this page (1, 3, 5, 7, 9, 10) already match the image exactly -- no flattened exponents, radicals, or other notation issues found."
+}

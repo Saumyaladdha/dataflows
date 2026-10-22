@@ -1,0 +1,36 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.124, "x1": 0.485},
+      {"id": "right", "x0": 0.513, "x1": 0.878}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.124, 0.087, 0.143, 0.096],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.822, 0.087, 0.879, 0.095],
+     "column": "full", "size_rel": 0.85, "align": "right", "font": "serif"},
+    {"n": 1, "role": "paragraph", "bbox": [0.124, 0.116, 0.485, 0.311],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.124, 0.315, 0.485, 0.636],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.124, 0.644, 0.485, 0.824],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "paragraph", "bbox": [0.513, 0.116, 0.878, 0.229],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "paragraph", "bbox": [0.513, 0.238, 0.878, 0.500],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "section_heading", "bbox": [0.513, 0.508, 0.878, 0.541],
+     "column": "right", "size_rel": 1.1, "align": "left", "font": "sans"},
+    {"n": 6, "role": "paragraph", "bbox": [0.513, 0.546, 0.878, 0.829],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.487, 0.956, 0.524, 0.965],
+     "column": "full", "size_rel": 0.85, "align": "center"},
+    {"n": null, "role": "decorative_image", "bbox": [0.262, 0.278, 0.878, 0.755],
+     "column": "full", "size_rel": 1.0}
+  ],
+  "note": "Ordinary two-column body page (verso, page 64): no banner, rule bar, header band or footer rule; every element sits on bare paper, so no fill is reported. body_text_size_px measured as the cap-to-baseline height of ordinary serif body prose in the left column. Block 3 ('With the saturation of the 3d orbitals...') is ONE A2 block printed as TWO regions: it starts at the foot of the left column and its remainder ('After this, filling of 6p...' through '...Table 2.6 (page 66).') runs at the head of the right column. The element carrying n: 3 is the region where the block STARTS (left column); the element immediately after it with n: null is the CONTINUATION (tail) of that same block 3 at the head of the right column — it is NOT an unmatched element and must not be read as one. This keeps every block n unique while still recording both printed regions, matching the convention used elsewhere in this chapter. The remaining n: null elements are genuine non-block furniture A2 never blocked: the page number '64', the running header 'CHEMISTRY', the '2024-25' edition line at the page foot (reported as running_header, there being no footer-text role), and the diagonal '(c) NCERT not to be republished' watermark (reported as decorative_image; its bbox is the diagonal text's bounding box, so the box is larger than the inked area). text_color is omitted for the section heading: it prints in a cyan-blue, but the strokes are too thin to sample a reliable flat interior, so per the step's unsure form no hex is claimed. size_rel 1.1 for the heading is judged from its cap height against body prose."
+}

@@ -1,0 +1,51 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 21.0,
+    "columns": [
+      {"id": "full", "x0": 0.0971, "x1": 0.8729}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0666],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.55, 0.0, 0.8729, 0.1212],
+     "column": "full", "size_rel": 2.0, "align": "center", "font": "sans-light",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.0976, 0.1359, 0.6947, 0.1988],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.0976, 0.2025, 0.6953, 0.2957],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 3, "role": "paragraph", "bbox": [0.0971, 0.3030, 0.6965, 0.4160],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "equation", "bbox": [0.1282, 0.4233, 0.3176, 0.4362],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "text_color": "#221f1f"},
+    {"n": 5, "role": "paragraph", "bbox": [0.0982, 0.4463, 0.6947, 0.5115],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "paragraph", "bbox": [0.0976, 0.5165, 0.6965, 0.6143],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 7, "role": "paragraph", "bbox": [0.0982, 0.6185, 0.6965, 0.6827],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 8, "role": "paragraph", "bbox": [0.0982, 0.6869, 0.6953, 0.7819],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 9, "role": "paragraph", "bbox": [0.0976, 0.7893, 0.6947, 0.9389],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.8141, 0.9155, 0.8724, 0.9371],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "serif",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5235, 0.9633],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif",
+     "text_color": "#000000"}
+  ],
+  "note": "Recto body page, all prose, single column. Running text sets in the inner measure x 0.097-0.697; the outer 0.697-0.873 is an empty wide margin apart from the grey running-header panel and the folio, so `full` is declared as the live area 0.097-0.873. Nine blocks all fall in that one measure: eight paragraphs plus block n=4, the displayed equation 'e = 1.602192 x 10^-19 C', indented to x 0.128. Several paragraph bboxes are a line or two taller than their neighbours because superscript exponents (10^18, 10^-6) and subscripted symbols push the ink box above and below the normal line; the size_rel stays 1.0 because the running type is unchanged. page_header_band is the pale cyan #c6eafb strip at y 0-0.0666 with the solid cyan #00adef closing rule at y 0.0624-0.0666 and the lighter #41c7f4 hairline on the inner (left) half of this recto. No figures, no boxes, no footer_rule on this page. The folio '9' sits in a pale cyan box in the outer bottom margin; the centred '2022-23' line is recorded as running_header."
+}

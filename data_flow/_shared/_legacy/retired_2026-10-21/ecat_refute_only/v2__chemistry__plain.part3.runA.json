@@ -1,0 +1,170 @@
+{
+  "group": "v2__chemistry__plain.part3",
+  "ratings": [
+    {
+      "question_id": "2015_A#q014",
+      "question_type": "structure_options",
+      "format": "predict_product",
+      "content_shape": "reaction_mechanism",
+      "concept": "Markovnikov addition run backwards: HCl puts Cl on the more substituted carbon, so 1-chloro-1-methylcyclohexane must come from an alkene whose double bond reaches the methyl-bearing carbon",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": [
+        "source_damage_artifact"
+      ],
+      "reason": "This question requires applying a named regiochemical rule backwards from the product to the substrate, demonstrated by the stem's \"in accordance with the Markovnikov's rule, to give a product 1-chloro-1-methylcyclohexane\".",
+      "note": "All four options are stored as the placeholder \"[structure diagram]\", with option 3 stored as \"[structure diagram] and [structure diagram]\". No option can be told from any other in our record, so no wrong option can be named and no route can land on one; traps is empty and source_damage_artifact is recorded, per rulebook rule 5 and section 7. The stem names the rule and the product, so E1 (the options are drawn structures), E2, E3 and the two E4 fields are filled from what is certain. The key is tagged as printed. The figure figures_agent/2015_A/q014.png is where the four structures live and is needed to repair the item."
+    },
+    {
+      "question_id": "2015_A#q015",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "reaction",
+      "concept": "Redox equivalents against acidified $\\mathrm{KMnO_4}$: count the electrons each mole gives up - $\\mathrm{FeSO_4}$ 1, $\\mathrm{FeC_2O_4}$ 3, $\\mathrm{FeSO_3}$ 3, $\\mathrm{Fe(NO_2)_2}$ 5 - so the salt whose anion is already fully oxidised needs least",
+      "cognitive_demand": "calculation",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "2",
+          "route": "Answers \"most\" where the stem asks \"least\". $\\mathrm{Fe(NO_2)_2}$ gives up 5 electrons per mole, the largest of the four, against the key's 1."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires working out the electrons each compound loses and comparing the four totals, demonstrated by the stem's \"same moles\" and \"least amount of acidified $\\mathrm{KMnO_4}$\" and by option 3 $\\mathrm{FeSO_4}$, whose sulphur is already at $+6$.",
+      "note": "Only one trap is written, and the reason is worth recording. Options 1 and 4 both need exactly 3 electrons per mole ($\\mathrm{Fe^{2+}}$ one, plus two for oxalate to $\\mathrm{CO_2}$ or sulphite to sulphate), so nothing can select one of them rather than the other. Two candidate mis-steps were tried against them and neither lands: counting only the iron gives 1 electron for all four and separates nothing, and counting only the anion still leaves sulphate lowest at zero. No elimination either - the fact that sulphate cannot be oxidised further is the fact that answers the question."
+    },
+    {
+      "question_id": "2015_A#q016",
+      "question_type": "plain_mcq",
+      "format": "predict_product",
+      "content_shape": "reaction",
+      "concept": "Reimer-Tiemann reaction: phenol with $\\mathrm{CHCl_3}$ and dilute NaOH gains a -CHO group ortho to the -OH, giving salicylaldehyde",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "intermediate_value",
+          "option": "1",
+          "route": "Stops at the benzal chloride stage. The $-\\mathrm{CHCl_2}$ group is the intermediate, and the alkali hydrolyses it to -CHO."
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "4",
+          "route": "Gives the answer for carbon tetrachloride, which turns phenol into salicylic acid. The stem prints chloroform."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "Reaching $-\\mathrm{CH_2Cl}$ would need one of the carbene's two chlorines replaced by hydrogen. Neither chloroform nor dilute alkali does that."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires recall of what one named reagent pair does to phenol, demonstrated by the stem's \"chloroform in presence of dilute sodium hydroxide\" and option 2 \"$-\\mathrm{CHO}$\".",
+      "note": "The stem's word \"finally\" is what separates the key from option 1, which is the group present before hydrolysis. E2 is predict_product because a reaction is printed and the option names what it makes, even though each option is a group rather than a whole compound. The figure figures_agent/2015_A/q016.png is not needed: the stem and all four options are complete as text."
+    },
+    {
+      "question_id": "2015_A#q017",
+      "question_type": "plain_mcq",
+      "format": "recall_value",
+      "content_shape": "value_or_data",
+      "concept": "Packing efficiency: bcc is 68% filled, so 32% of the cell is empty; close packing (fcc, hcp) is 74% filled and simple cubic 52%",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "3",
+          "route": "Gives the empty space in a close-packed cell, fcc or hcp, which is 26%. bcc leaves 32%."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Gives the figure for simple cubic, which is only 52% filled. bcc is 68% filled."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "No cubic lattice leaves 23% empty; the three standard figures are 32%, 26% and 48%. It is 32 with its digits swapped."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires recall of a stored percentage, demonstrated by the stem \"The vacant space in bcc lattice unit cell is:\" supplying no numbers to compute from and option 2 \"$32\\%$\".",
+      "note": "E2 is recall_value rather than calculate_value: the figure is derivable from the cell geometry, but the stem gives nothing to substitute, so as printed the value is stored. On option 1 the device is a digit transposition of the key, and no_derivation_route is the nearest live label - it is true that no lattice gives 23%, but a label such as transposed_digits would name what the option actually is, and it is worth adding."
+    },
+    {
+      "question_id": "2015_A#q018",
+      "question_type": "statement_options",
+      "format": "pick_correct_statement",
+      "content_shape": "definition_term",
+      "concept": "What makes a compound an oxide: oxygen has to be the more electronegative partner, so $\\mathrm{OF_2}$ is oxygen difluoride - a fluoride of oxygen, not an oxide of fluorine",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Answers as if the stem asked for a correct statement. ONF and $\\mathrm{O_2N^-}$ both carry 24 electrons, so the claim holds."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "Answers as if the stem asked for a correct statement. Taking one water out of two $\\mathrm{HClO_4}$ really does leave $\\mathrm{Cl_2O_7}$."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Answers as if the stem asked for a correct statement. Ozone really is bent, near $117^\\circ$, because the central oxygen holds a lone pair."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires holding two neighbouring terms apart and checking three further claims, demonstrated by the stem \"Which of the statements given below is incorrect?\" and option 2's \"$\\mathrm{OF_2}$ is an oxide of fluorine\", where fluorine is the more electronegative of the two.",
+      "note": "This is the one member whose stem is only an instruction with each option a standalone claim, so it alone is statement_options, and the one whose task needs a verdict on every option, so it alone is several_independent_checks. The figure figures_agent/2015_A/q018.png is not needed: all four statements are complete as text."
+    },
+    {
+      "question_id": "2015_A#q019",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "nomenclature_rule",
+      "concept": "IUPAC naming of an anionic complex: six ligands give hexa, $\\mathrm{CN^-}$ as a ligand is cyanido, and a negative complex takes the Latin stem with -ate, so hexacyanidoferrate(III)",
+      "cognitive_demand": "application",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "The formula prints six CN groups, so the prefix has to be hexa; that one fact strikes out option 1, the only \"Tri\" name.",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "Takes the 3 of the $3-$ charge as the number of ligands. The formula shows six CN groups, so the prefix is hexa."
+        },
+        {
+          "label": "condition_ignored",
+          "option": "3",
+          "route": "Ignores the $3-$ charge printed on the ion. A negative complex takes the Latin stem and -ate, so ferrate rather than iron."
+        },
+        {
+          "label": "look_alike_term",
+          "option": "4",
+          "route": "Writes cyanito for cyanido, one letter apart. Cyanido is the ligand name for $\\mathrm{CN^-}$; nitrito is the one that ends in -ito."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the coordination naming convention to one formula, demonstrated by the stem's \"$[\\mathrm{Fe(CN)_6}]^{3-}$\" and option 2 \"Hexacyanidoferrate (III) ion\", which carries the count, the ligand form and the -ate ending for an anion.",
+      "note": ""
+    }
+  ],
+  "group_note": "Six questions grouped on structure \"plain\", and two members do not belong with the rest on E1: 2015_A#q014 is structure_options, because its four options are drawn structures, and 2015_A#q018 is statement_options, because its stem is only \"Which of the statements given below is incorrect?\" and the content lives in the options. q018 is also the only member scored several_independent_checks on the evidence of its task, which needs a verdict on each of four unrelated claims; q015 is scored the same way for a different reason, that the four electron totals are worked out separately and then compared, and that is stated here so the two are not read as one pattern. The other four are single_step. Demand was set by what the student actually does: recall where one stored item decides it (q016's named reaction, q017's stored percentage), application where a stated rule or convention is applied to this case (q014's Markovnikov rule, q019's naming rules), calculation where numbers are produced and compared (q015), and concept_discrimination where the live decision is a definition boundary (q018's oxide against fluoride). q014 is the one damaged member: all four of its options are stored as the placeholder \"[structure diagram]\", so it carries source_damage_artifact with empty traps and only the certain fields filled, and no trap is inferred from a question we cannot see. Elimination was granted once, to q019, on a fact separate from the answer (six printed CN groups force hexa). It was withheld from q015 and q017, where the only fact that strikes an option out is the fact that answers the question. On the trap axis each route names an option and a mis-step, and three members carry a device drawn from a neighbour rather than from an error: the intermediate before hydrolysis and the carbon-tetrachloride product in q016, and the close-packed and simple-cubic figures in q017. Two options are reached by no route and both are demonstrated rather than asserted - q016 option 3 would need a chlorine swapped for hydrogen that no printed reagent performs, and q017 option 1 matches none of the three standard packing figures and is the key's digits reversed, a device no live label names precisely, which q017's note records. q015 carries only one trap of three wrong options, and its note says which mis-steps were tried against the other two and why none lands on one option rather than the other. No trap is placed on any official answer."
+}

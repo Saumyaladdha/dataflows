@@ -1,0 +1,47 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "consists of bright lines on a\ndark background. The\nspectrum emitted by atomic\nhydrogen is shown in\nFig. 12.5. Study of emission\nline spectra of a material can\ntherefore serve as a type of\n“fingerprint” for identification\nof the gas. When white light\npasses through a gas and we\nanalyse the transmitted light\nusing a spectrometer we find\nsome dark lines in the\nspectrum. These dark lines\ncorrespond precisely to those wavelengths which were found in the\nemission line spectrum of the gas. This is called the absorption spectrum\nof the material of the gas.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [578, 274, 1442, 742],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "12.4  BOHR MODEL OF THE HYDROGEN ATOM"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The model of the atom proposed by Rutherford assumes\nthat the atom, consisting of a central nucleus and\nrevolving electron is stable much like sun-planet system\nwhich the model imitates. However, there are some\nfundamental differences between the two situations.\nWhile the planetary system is held by gravitational\nforce, the nucleus-electron system being charged\nobjects, interact by Coulomb’s Law of force. We know\nthat an object which moves in a circle is being\nconstantly accelerated – the acceleration being\ncentripetal in nature. According to classical\nelectromagnetic theory, an accelerating charged particle\nemits radiation in the form of electromagnetic waves.\nThe energy of an accelerating electron should therefore,\ncontinuously decrease. The electron would spiral\ninward and eventually fall into the nucleus (Fig. 12.6).\nThus, such an atom can not be stable. Further,\naccording to the classical electromagnetic theory, the\nfrequency of the electromagnetic waves emitted by the\nrevolving electrons is equal to the frequency of\nrevolution. As the electrons spiral inwards, their angular\nvelocities and hence their frequencies would change\ncontinuously, and so will the frequency of the light\nemitted. Thus, they would emit a continuous spectrum,\nin contradiction to the line spectrum actually observed.\nClearly Rutherford model tells only a part of the story\nimplying that the classical ideas are not sufficient to\nexplain the atomic structure."
+    },
+    {
+      "n": 5,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1034, 1071, 1304, 1442],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "Niels Henrik David Bohr\n(1885 – 1962) Danish\nphysicist who explained the\nspectrum of hydrogen atom\nbased on quantum ideas.\nHe gave a theory of nuclear\nfission based on the liquid-\ndrop model of nucleus.\nBohr contributed to the\nclarification of conceptual\nproblems in quantum\nmechanics, in particular by\nproposing the comple-\nmentary principle."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Atoms",
+    "297",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read p007 immediately before: it ended 'termed as emission line spectrum and it', and this page opens 'consists of bright lines on a dark background', so block 1 continues from the previous page. Fig. 12.5 (n=2) is needs_special and its bbox includes the rotated wavelength labels (91 nm, 122 nm, 365 nm, 656 nm, 820 nm, 1875 nm), the 'Lyman series / Balmar series / Paschen series' brackets and the FIGURE 12.5 caption, so none of those strings are transcribed as text blocks. The right-hand sidebar is the Bohr photograph (n=5, needs_special) plus his biography box (n=6); its vertically rotated spine label 'NIELS HENRIK DAVID BOHR (1885 – 1962)' is box decoration, neither blocked nor listed as removed. Text-layer discrepancies: the figure's Greek lambda in 'Wavelength, λ' is absent from the layer entirely, and italics in the image ('absorption spectrum') are unmarked; the 12.4 heading is printed in small caps over two lines ('BOHR MODEL OF THE HYDROGEN' / 'ATOM') and is joined here. Both the main prose and the box end in completed sentences, so no continuation onto the next page."
+}

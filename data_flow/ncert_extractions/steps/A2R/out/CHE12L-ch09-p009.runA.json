@@ -1,0 +1,31 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {
+      "kind": "duplicated",
+      "what": "The sentence 'Larger the value of Kb or smaller the value of pKb, stronger is the base' appears twice: once as a stray oversized display line glued to the bottom of the Kb equation block (set in the same large maths face as the equations, cut off at the right edge after 'or smaller the val' and sliced in half along its baseline by the block's lower rule), and again correctly as the first line of the body paragraph directly beneath. The book prints it only once, as body text.",
+      "where": "centre of the page, immediately below the 'pKb = -log Kb' line and above the body paragraph"
+    },
+    {
+      "kind": "clipped",
+      "what": "That same stray display line is clipped on two edges - its descenders/lower half are cut by the equation block's bottom rule and its text runs off the right margin mid-word ('the val'). Nothing is lost to the reader because the sentence is repeated in full below, but the fragment is drawn as a cropped band.",
+      "where": "bottom edge of the equation block, centre of page"
+    },
+    {
+      "kind": "formatting",
+      "what": "Table 9.3's caption is set as plain running-size text ('Table 9.3: pKb Values of Amines in Aqueous Phase'); the book sets it bold and noticeably larger than the body, as a titled caption. The table body is also centred in each column where the book left-aligns the amine names.",
+      "where": "caption and body of Table 9.3, lower third"
+    },
+    {
+      "kind": "formatting",
+      "what": "The italic 'N' locants are lost throughout Table 9.3 - the book prints N-Methylmethanamine, N,N-Dimethylmethanamine, N-Methylaniline etc. with an italic N; the render prints them upright.",
+      "where": "left column of Table 9.3"
+    },
+    {
+      "kind": "formatting",
+      "what": "'Lewis base.' is set in a monospaced typewriter face in the render; the book sets it in bold roman within the running text.",
+      "where": "third body paragraph, upper half"
+    }
+  ],
+  "note": "Compared block by block: the NaOH regeneration equation, the three body paragraphs, the R-NH2 + H2O equilibrium, the K / K[H2O] / Kb expressions and pKb line, Table 9.3's ten rows and both columns, and the folio. All content is present - every table row and value matches (3.38, 3.27, 4.22, 3.29, 3.00, 3.25, 9.38, 4.70, 9.30, 8.92) - and the folio '267 Amines' with its rule is in place. The colour coding of NH2/NH3+/X in the equations is preserved. The one real defect is the duplicated, clipped oversized 'Larger the value of Kb...' line hanging off the bottom of the equation block; I could not tell from the image whether it is a stray crop of the source page baked into the equation graphic or a layout overflow, so I report what is visible. Horizontal rules framing the equation block are a render convention and are not reported."
+}

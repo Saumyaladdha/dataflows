@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000361",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2022,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "Q1:45"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "A big circular coil of 1000 turns and average radius $10\\,\\mathrm{m}$ is rotating about its horizontal diameter at $2\\ \\mathrm{rad\\ s}\\ {-1}$. If the vertical component of earth's magnetic field at that place is $2 \\times 10\\ {-5}\\ \\mathrm{T}$ and electrical resistance of the coil is $12.56\\,\\Omega$, then the maximum induced current in the coil will be",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$0.25\\,\\mathrm{A}$",
+    "2": "$5\\,\\mathrm{A}$",
+    "3": "$1\\,\\mathrm{A}$",
+    "4": "$2\\,\\mathrm{A}$"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "45\nA big circular coil of 1000 turns and average radius 10 m is rotating about its horizontal diameter at 2\nrad s –1. If the vertical component of earth’s magnetic field at that place is 2 × 10 –5 T and electrical\nresistance of the coil is 12.56 Ω, then the maximum induced current in the coil will be\n(1)\n0.25 A\n(2)\n5 A\n(3)\n1 A\n(4)\n2 A\nMoving Charges and Magnetism\n",
+  "b4_script_options": {
+    "1": "0.25 A",
+    "2": "5 A",
+    "3": "1 A",
+    "4": "2 A\nMoving Charges and Magnetism"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+  "status": "normal",
+  "subject": "Physics",
+  "branch": null,
+  "b6_answer": "3",
+  "b6_reason": "Peak emf = N B A omega = 12.57 V, and dividing by R = 12.56 ohm gives a maximum current of about 1 A.",
+  "b6_working": "A = pi r^2 = pi x 10^2 = 314.16 m2. e_max = N B_v A omega = 1000 x 2e-5 x 314.16 x 2 = 12.566 V. I_max = e_max / R = 12.566 / 12.56 = 1.0004 A, i.e. 1 A.",
+  "b6_confidence": "high",
+  "b6_note": "Exponent markup lost in the stem ('2 rad s -1', '2 x 10 -5 T'); read as 2 rad/s and 2 x 10^-5 T, the only values that make the arithmetic land on an option.",
+  "b6_agrees_with_key": true
+}

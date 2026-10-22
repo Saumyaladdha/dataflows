@@ -1,0 +1,112 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "but only identified (e.g., RnF2) by radiotracer technique. No true compounds of Ar, Ne or He are yet known.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "(a) Xenon-fluorine compounds"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Xenon forms three binary fluorides, XeF2, XeF4 and XeF6 by the direct reaction of elements under appropriate experimental conditions."
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [575, 422, 1185, 645],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "XeF6 can also be prepared  by the interaction of XeF4 and O2F2 at 143K."
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [625, 692, 1010, 740],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "XeF2, XeF4 and XeF6 are colourless crystalline solids and sublime readily at 298 K. They are powerful fluorinating agents. They are readily hydrolysed even by traces of water. For example, XeF2 is hydrolysed to give Xe, HF and O2."
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [620, 885, 1350, 932],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The structures of the three xenon fluorides can be deduced from VSEPR and these are shown in Fig. 7.9. XeF2 and XeF 4 have linear and square planar structures respectively. XeF6 has seven electron pairs (6 bonding pairs and one lone pair) and would, thus, have a distorted octahedral structure as found experimentally in the gas phase."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Xenon fluorides react with fluoride ion acceptors to form cationic species and fluoride ion donors to form fluoroanions."
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [620, 1138, 1475, 1226],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "heading",
+      "text": "(b) Xenon-oxygen compounds"
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Hydrolysis of XeF4 and XeF6 with water gives Xe03."
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [890, 1358, 1605, 1438],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Partial hydrolysis of XeF6 gives oxyfluorides, XeOF4 and XeO2F2."
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [895, 1518, 1390, 1600],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [155, 1282, 1500, 1990],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "210",
+    "Chemistry",
+    "2020-21"
+  ],
+  "note": "previous_page_last_block was null; continuation chained off the p040 output I wrote in this run, whose last paragraph breaks off at '...Compounds of radon have not been isolated' with last_block_continues_on_next true. This page opens mid-sentence with 'but only identified (e.g., RnF2) by radiotracer technique.', so first_block_continues_from_previous is true and the pair agrees. THIS PAGE'S TEXT LAYER IS STORED OUT OF PRINTED ORDER: it OPENS with the whole of Fig. 7.9 — first the caption ('Fig. 7.9' / 'The structures of' / '(a) XeF2 (b) XeF4' / '(c) XeF6 (d) XeOF4' / 'and (e) XeO3'), then every in-diagram atom label as its own line ('F','F','Xe','F','F','F','F','Xe','Xe','F','O',...) interleaved with the five panel captions ('(a) Linear', '(b) Square planar', '(c) Distorted octahedral', '(d) Square pyramidal', '(e) Pyramidal') — even though all of that is printed in the LOWER HALF of the page; only after it does the body prose begin, in printed order from 'but only identified...' onwards. No 5x outline-font duplication on this page, since its two headings are the ordinary bold-italic run-in labels '(a) Xenon-fluorine compounds' and '(b) Xenon-oxygen compounds'. Blocks are listed in true printed reading order. READING-ORDER DECISION recorded for audit: Fig. 7.9 is an L-shaped float whose (a) and (b) panels sit to the LEFT of the section-(b) prose while its (c), (d) and (e) panels and its caption run along the BOTTOM, below all of the page's text. A strict left-column-first reading would place it before the '(b) Xenon-oxygen compounds' heading; I have instead listed it LAST, as n=17, because the left-hand area is an illustration float rather than a text column and keeping the section-(b) prose contiguous is what later passage-cutting needs. Its single bbox necessarily overlaps the right-hand column's section-(b) text for the same L-shape reason — A2S should transcribe only figure content inside it. Also deferred to the special transcriber per this chapter's established pattern: n=4, the three binary-fluoride preparation equations, whose bbox encloses the over-arrow condition labels '673 K, 1 bar', '873 K, 7 bar' and '573 K, 60–70 bar' and the under-equation ratio labels '(xenon in excess)', '(1:5 ratio)' and '(1:20 ratio)'; n=6, XeF4 + O2F2 → XeF6 + O2, which the layer stores as the bare token run '4','2','2','6','2','XeF','O F','XeF','O','+','→','+'; n=8, the XeF2 hydrolysis equation; n=11, the four fluoroanion/cation equations including the '(M = Na, K, Rb or Cs)' qualifier printed inside the display; n=14, the two XeO3-forming hydrolysis equations; and n=16, the two partial-hydrolysis equations. NCERT TYPO PRESERVED VERBATIM: n=13 reads 'with water gives Xe03.' — NCERT prints a ZERO instead of the letter O in that formula (Xe03 for XeO3), the text layer stores it the same way, and the same zero recurs inside the deferred equation at n=14 ('2Xe03'); I have copied it exactly and have not corrected it. Also kept as printed: the double space in 'can also be prepared  by the interaction' (n=5) and the stray space in 'XeF 4' (n=9), both exactly as the layer stores them. Page's last prose is the complete partial-hydrolysis display, so last_block_continues_on_next is false."
+}

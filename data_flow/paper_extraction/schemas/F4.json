@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "F4 · one subtopic's counts, computed twice (spec 14/F4)",
+  "description": "steps/F4/out/<SUBTOPIC>.json. Every number is computed; none may be typed.",
+  "type": "object",
+  "required": ["subtopic_id", "chapter_id", "all", "released_only"],
+  "additionalProperties": true,
+  "properties": {
+    "subtopic_id": {"type": "string", "pattern": "^[A-Z]{3}\\d{2}-CH\\d{2}-ST\\d{2}$"},
+    "chapter_id": {"type": ["string", "null"], "pattern": "^([A-Z]{3}\\d{2}-CH\\d{2})?$"},
+    "computed_at": {"type": "string"},
+    "all": {"$ref": "#/definitions/stats"},
+    "released_only": {"$ref": "#/definitions/stats"}
+  },
+  "definitions": {
+    "stats": {
+      "type": "object",
+      "required": ["questions_total", "unique_questions", "years_asked", "last_asked",
+                   "repeat_groups", "category_mix_recent", "format_mix_recent",
+                   "question_type_mix_recent"],
+      "additionalProperties": true,
+      "properties": {
+        "questions_total": {"type": "integer", "minimum": 0},
+        "unique_questions": {"type": "integer", "minimum": 0},
+        "years_asked": {"type": "array", "items": {"type": "integer"}},
+        "last_asked": {"type": ["integer", "null"]},
+        "repeat_groups": {"type": "array", "items": {"type": "string"}},
+        "repeat_group_count": {"type": "integer", "minimum": 0},
+        "category_mix_recent": {"type": "object", "additionalProperties": {"type": "integer"}},
+        "format_mix_recent": {"type": "object", "additionalProperties": {"type": "integer"}},
+        "question_type_mix_recent": {"type": "object", "additionalProperties": {"type": "integer"}},
+        "recent_since": {"type": "integer"},
+        "question_ids": {"type": "array", "items": {"type": "string", "pattern": "^Q-\\d{6}$"}}
+      }
+    }
+  }
+}

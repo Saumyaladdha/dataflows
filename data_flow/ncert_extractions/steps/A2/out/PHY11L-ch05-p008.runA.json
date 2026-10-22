@@ -1,0 +1,167 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "energy V(x) is defined if the force F(x) can be written as",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [446, 294, 680, 364],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "This implies that"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [326, 408, 762, 506],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The work done by a conservative force such as gravity depends on the initial and final positions only. In the previous chapter we have worked on examples dealing with inclined planes. If an object of mass m is released from rest, from the top of a smooth (frictionless) inclined plane of height h, its speed at the bottom is gh 2 irrespective of the angle of inclination. Thus, at the bottom of the inclined plane it acquires a kinetic energy, mgh. If the work done or the kinetic energy did depend on other factors such as the velocity or the particular path taken by the object, the force would be called non-conservative."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The  dimensions  of  potential  energy are [ML2T –2] and the unit is joule (J), the same as kinetic energy or work. To reiterate, the change in potential energy, for a conservative force, ∆V  is equal to the negative of the work done by the force"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [359, 1213, 941, 1251],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "In the example of the falling ball considered in this section we saw how potential energy was converted to kinetic energy. This hints at an important principle of conservation in mechanics, which we now proceed to examine."
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "5.8 THE CONSERVATION OF MECHANICAL ENERGY"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "For simplicity we demonstrate this important principle for one-dimensional motion. Suppose that a body undergoes displacement ∆x under the action of a conservative force F. Then from the WE theorem we have,"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [359, 1736, 609, 1768],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "If the force is conservative, the potential energy function V(x) can be defined such that"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [359, 1834, 631, 1866],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The above equations imply that"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [359, 1932, 941, 2013],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "which means that K + V, the sum of the kinetic and potential energies of the body is a constant. Over the whole path, xi to xf, this means that"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1045, 326, 1632, 359],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "The quantity K +V(x), is called the total mechanical energy of the system.  Individually the kinetic energy K  and the potential energy V(x) may vary from point to point,  but the sum is a constant. The aptness of the term ‘conservative force’ is now clear."
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "Let us consider some of  the definitions of a conservative force."
+    },
+    {
+      "n": 20,
+      "kind": "list",
+      "text": "A force F(x) is conservative if it can be derived from a scalar quantity V(x) by the relation given by Eq. (5.9). The three-dimensional generalisation requires the use of a vector derivative, which is outside the scope of this book.\nThe work done by the conservative force depends only on the end points. This can be seen from the relation,"
+    },
+    {
+      "n": 21,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [1066, 947, 1480, 980],
+      "text": ""
+    },
+    {
+      "n": 22,
+      "kind": "list",
+      "text": "which depends on the end points.\nA third definition states that the work done by this force in a closed path is zero.  This is once  again apparent from Eq. (5.11) since xi  = xf .",
+      "continues_from_previous": true
+    },
+    {
+      "n": 23,
+      "kind": "paragraph",
+      "text": "Thus, the principle of conservation of total mechanical energy can be stated as"
+    },
+    {
+      "n": 24,
+      "kind": "paragraph",
+      "text": "The total mechanical energy of a system is conserved if the forces, doing work on it, are conservative."
+    },
+    {
+      "n": 25,
+      "kind": "paragraph",
+      "text": "The above discussion can be made more concrete by considering the example of the gravitational force once again and that of the spring force in the next section. Fig. 5.5 depicts a ball of mass m being dropped from a cliff of height H."
+    },
+    {
+      "n": 26,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1012, 1551, 1589, 1855],
+      "text": ""
+    },
+    {
+      "n": 27,
+      "kind": "paragraph",
+      "text": "Fig. 5.5 The conversion of potential energy to kinetic energy for a ball of mass m dropped from a height H."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "78",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null although page is 8; continuation judged from the page itself, which opens mid-sentence (\"energy V(x) is defined...\"). Displayed/numbered equations (5.9), (5.10), (5.11) and the two unnumbered display lines are left to the special transcriber with bboxes; bboxes are in pixels of the 1825x2176 page image. Inline radical in block 5 is copied as the text layer holds it (\"is gh 2 irrespective\"), not re-rendered. Bullet glyphs of the list (extracted as \"l\" in the text layer) are omitted; each bullet item is on its own line in blocks 20 and 22, which are split by the displayed relation W = Kf - Ki = V(xi) - V(xf). Block 24 is set in bold on the page (the stated conservation principle). The Fig. 5.5 caption is kept as its own text block so no prose is lost inside the figure bbox."
+}

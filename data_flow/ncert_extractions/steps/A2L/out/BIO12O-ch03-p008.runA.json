@@ -1,0 +1,45 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.116, "x1": 0.436},
+      {"id": "right", "x0": 0.445, "x1": 0.857}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "rule_bar", "bbox": [0.025, 0.068, 0.756, 0.108],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435"},
+    {"n": null, "role": "decorative_image", "bbox": [0.764, 0.068, 0.975, 0.156],
+     "column": "full", "size_rel": 1.0, "fill": "#6d561c"},
+    {"n": null, "role": "running_header", "bbox": [0.119, 0.140, 0.267, 0.147],
+     "column": "full", "size_rel": 0.75, "align": "left", "font": "sans",
+     "text_color": "#212121"},
+    {"n": 1, "role": "paragraph", "bbox": [0.116, 0.168, 0.678, 0.440],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "figure", "bbox": [0.445, 0.166, 0.855, 0.366],
+     "column": "right", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.447, 0.377, 0.855, 0.395],
+     "column": "right", "size_rel": 0.95, "align": "center", "font": "serif",
+     "fill": "#fef2e2"},
+    {"n": 3, "role": "figure", "bbox": [0.120, 0.450, 0.857, 0.696],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.118, 0.703, 0.713, 0.721],
+     "column": "full", "size_rel": 0.95, "align": "center", "font": "serif",
+     "fill": "#fef2e2"},
+    {"n": 4, "role": "section_heading", "bbox": [0.119, 0.741, 0.334, 0.752],
+     "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold",
+     "text_color": "#06ac48"},
+    {"n": 5, "role": "paragraph", "bbox": [0.117, 0.767, 0.676, 0.854],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "page_number", "bbox": [0.800, 0.745, 0.975, 0.779],
+     "column": "full", "size_rel": 1.4, "align": "left", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "rule_bar", "bbox": [0.800, 0.782, 0.975, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.478, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif"}
+  ],
+  "note": "Recto page 49, two-column in its upper third then full measure. Figure 3.7 and its peach caption sit in the RIGHT column (0.445-0.857); block 1 runs beside them in the LEFT column (0.116-0.436) for sixteen lines and then widens to the full measure x 0.118-0.678 for its last two lines, so it is marked `full`. Figure 3.8 below is full width: a three-band coloured panel (pink #fee8dd at the left, olive-green #d6de8f in the middle, pale blue #c6eafa at the right) spanning x 0.120-0.857, y 0.450-0.682, with the '(a)' and '(b)' labels under it included in its bbox; I left `fill` off that element because no single colour describes it. Both captions carry n: null; A2's figure blocks n=2 and n=3 are matched to the two figure IMAGES by position. The bottom-centre '2022-23' edition line is reported as running_header for want of a better allowed role. The diagonal 'not to be republished / (c) NCERT' watermark is a page-wide overlay and is not listed as an element."
+}

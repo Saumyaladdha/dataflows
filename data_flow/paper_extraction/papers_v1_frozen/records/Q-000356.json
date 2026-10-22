@@ -1,0 +1,277 @@
+{
+ "question_id": "Q-000356",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "figure_path": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_url": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_row": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_match_confidence": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2024,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:9"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "Consider the following statements A and B and identify the correct answer:",
+ "statements": [
+  {
+   "label": "A",
+   "text": "For a solar-cell, the I-V characteristics lies in the IV quadrant of the given graph."
+  },
+  {
+   "label": "B",
+   "text": "In a reverse biased pn junction diode, the current measured in ($\\mu\\mathrm{A}$), is due to majority charge carriers."
+  }
+ ],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "A is correct but B is incorrect",
+  "2": "A is incorrect but B is correct",
+  "3": "Both A and B are correct",
+  "4": "Both A and B are incorrect"
+ },
+ "structure": "statements",
+ "has_figure": true,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "9\nConsider the following statements A and B and identify the correct answer: A. For a solar-cell, the I-V\ncharacteristics lies in the IV quadrant of the given graph. B. In a reverse biased pn junction diode, the\ncurrent measured in (μA), is due to majority charge carriers.\n(1)\nA is correct but B is incorrect\n(2)\nA is incorrect but B is correct\n(3)\nBoth A and B are correct\n(4)\nBoth A and B are incorrect\nSemiconductor Electronics\n",
+ "b4_script_options": {
+  "1": "A is correct but B is incorrect",
+  "2": "A is incorrect but B is correct",
+  "3": "Both A and B are correct",
+  "4": "Both A and B are incorrect\nSemiconductor Electronics"
+ },
+ "figure_path": "papers/figures/Q-000356.png",
+ "figure_source_url": "https://cdn.mathpix.com/snip/images/Krx0fz7maYT5CSsjnaQyyxZWDPX6vclrL6IeIU3g4AE.original.fullsize.png",
+ "figure_source_row": "NEET-UG_pyq_2024.xlsx#15",
+ "figure_match_confidence": "high",
+ "official_answer": "1",
+ "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+ "status": "normal",
+ "subject": "Physics",
+ "branch": null,
+ "b6_answer": null,
+ "b6_agrees_with_key": null,
+ "repairs": [
+  {
+   "date": "2026-10-15",
+   "by": "scripts/repair_paper_records.py",
+   "kind": "mechanical",
+   "notes": [
+    "paper_codes normalised to the short form ['Q1:9'] -- the long form splits one booklet across two values in any join"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 3 (booklet code T3, question 14), matched to this record at score 0.864; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 3 (booklet code T3, question 14), matched to this record at score 0.864; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 3 (booklet code T3, question 14), matched to this record at score 0.864; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 3 (booklet code T3, question 14), matched to this record at score 0.864; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 3 (booklet code T3, question 14), matched to this record at score 0.864; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_unsure",
+   "notes": [
+    "the B9S agent could not decide whether this candidate is the right figure, and said so rather than guessing: a pair of axes labelled I (vertical) and V (horizontal) with the four quadrants marked (I), (II), (III) and (IV). The drawing itself is a complete, clean I-V quadrant diagram with both axis labels and all four quadrant numerals, but our record's stem stops at 'Consider the following statements A and B and identify the correct answer:' and statements A and B are absent, so the record names no subject to check the picture against; the options are the generic A/B correctness set and carry no clue either. Nothing in the record confirms or denies that this figure belongs, so I cannot decide. The stem looks truncated by the scrape. It is not published, and the question stays a visible gap for a person to settle"
+   ]
+  }
+ ],
+ "figure_path_source": "papers/figures/2024/source_T3/Q-000356.png",
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ },
+ "figure_verified": false
+}

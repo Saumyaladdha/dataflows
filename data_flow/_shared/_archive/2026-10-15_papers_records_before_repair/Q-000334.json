@@ -1,0 +1,218 @@
+{
+  "question_id": "Q-000334",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:58"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Match List I with List II. List I List II (Molecule) (Number and types of bond/s between two carbon atoms) Choose the correct answer from the options given below:",
+  "statements": [],
+  "list_i": [
+    {
+      "label": "A",
+      "text": "ethane"
+    },
+    {
+      "label": "B",
+      "text": "ethene"
+    },
+    {
+      "label": "C",
+      "text": "carbon molecule, $\\mathrm{C_2}$"
+    },
+    {
+      "label": "D",
+      "text": "ethyne"
+    }
+  ],
+  "list_ii": [
+    {
+      "label": "I",
+      "text": "one $\\sigma$-bond and two $\\pi$-bonds"
+    },
+    {
+      "label": "II",
+      "text": "two $\\pi$-bonds"
+    },
+    {
+      "label": "III",
+      "text": "one $\\sigma$-bond"
+    },
+    {
+      "label": "IV",
+      "text": "one $\\sigma$-bond and one $\\pi$-bond"
+    }
+  ],
+  "options_en": {
+    "1": "A-I, B-IV, C-II, D-III",
+    "2": "A-IV, B-III, C-II, D-I",
+    "3": "A-III, B-IV, C-II, D-I",
+    "4": "A-III, B-IV, C-I, D-II"
+  },
+  "structure": "match",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "58\nMatch List I with List II. List I List II (Molecule) (Number and types of bond/s between two carbon\natoms) A. ethane I. one σ-bond and two π-bonds B. ethene II. two π-bonds C. carbon molecule, C2\nIII. one σ-bond D. ethyne IV. one σ-bond and one π-bond Choose the correct answer from the\noptions given below:\n(1)\nA-I, B-IV, C-II, D-III\n(2)\nA-IV, B-III, C-II, D-I\n(3)\nA-III, B-IV, C-II, D-I\n(4)\nA-III, B-IV, C-I, D-II\nOrganic Chemistry: Basic Principles\n",
+  "b4_script_options": {
+    "1": "A-I, B-IV, C-II, D-III",
+    "2": "A-IV, B-III, C-II, D-I",
+    "3": "A-III, B-IV, C-II, D-I",
+    "4": "A-III, B-IV, C-I, D-II\nOrganic Chemistry: Basic Principles"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "inorganic",
+  "b6_answer": "3",
+  "b6_reason": "C-C bonding: ethane one sigma (III), ethene one sigma + one pi (IV), diatomic C2 has two pi bonds and no sigma (II), ethyne one sigma + two pi (I).",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

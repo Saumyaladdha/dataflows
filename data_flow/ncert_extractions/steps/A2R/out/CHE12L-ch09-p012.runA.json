@@ -1,0 +1,31 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {
+      "kind": "duplicated",
+      "what": "The folio prints the page number twice: the render reads 'Chemistry 270' in grey followed immediately by the yellow boxed '270'. The book prints 'Chemistry' in grey and the number once, in the yellow box.",
+      "where": "folio, bottom left"
+    },
+    {
+      "kind": "clipped",
+      "what": "The second line of the third equation's product caption, 'or Acetanilide', is sliced horizontally by the bottom rule of the equation panel - only the top halves of the letters survive. The book prints 'N-Phenylethanamide' and 'or Acetanilide' on two clear lines.",
+      "where": "bottom of the third acylation equation panel (benzenamine + ethanoic anhydride)"
+    },
+    {
+      "kind": "misplaced",
+      "what": "The Example 9.4 box is restructured. The book sets 'Example 9.4' and 'Solution' as blue display labels in the box's left rail, each beside the text it introduces. The render moves 'Example 9.4' to the top right corner of the box and demotes 'Solution' to an unstyled body line wedged between the question's formula line and the answer paragraph, where it reads as part of the running text.",
+      "where": "worked-example box, top of page"
+    },
+    {
+      "kind": "formatting",
+      "what": "Every formula inside the Example 9.4 box has lost its subscripts and its colour: the book prints C6H5NH2, C2H5NH2, (C2H5)2NH, NH3 with subscript digits and the amine groups in magenta, in both the question and the answer line. The render prints them as flat baseline text in black ('C6H5NH2, C2H5NH2, (C2H5)2NH, NH3' and '(C2H5)2NH > C2H5NH2 > NH3 > C6H5NH2').",
+      "where": "both formula lines inside the Example 9.4 box"
+    },
+    {
+      "kind": "formatting",
+      "what": "The benzoylation equation has lost its colour coding and its labels are set much smaller than in the book. The book prints CH3NH2 with NH2 magenta, COCl magenta, NHCO magenta and the leaving Cl green, with 'Methanamine', 'Benzoyl chloride' and 'N - Methylbenzamide' as readable captions; the render prints the whole equation in black with captions at roughly half caption size.",
+      "where": "benzoylation equation, lower third"
+    }
+  ],
+  "note": "Compared the Example box, both numbered subsections, all three acylation equations with their reactant/product captions, the benzoylation equation and the closing question. Nothing is missing - every equation, caption and paragraph on the book page is present. On the specific question of page width: the acylation equations DO fit, with no characters lost, but the second and third run flush against the right frame rule ('H-Cl' and 'CH3COOH' touch it with no margin), so they fit only just. All three equations keep their curved arrows, lone-pair dots, charges and 'Base' arrow labels, and the magenta/green colour coding survives inside the equation graphics (it is only the Example box and the benzoylation line that lost it). I could not judge whether the 'or Acetanilide' clipping is a crop of the source figure or a panel-height overflow."
+}

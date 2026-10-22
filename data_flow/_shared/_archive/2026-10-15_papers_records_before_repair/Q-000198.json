@@ -1,0 +1,184 @@
+{
+  "question_id": "Q-000198",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "flagged"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E1:73"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+  "trust": "unsure",
+  "stem_en": "Consider the following reaction and identify the product (P). $\\mathrm{CH_3-CH-CH-CH_3}$ (with $\\mathrm{CH_3}$ below first CH and $\\mathrm{OH}$ below second CH) + $\\mathrm{HBr}$ $\\rightarrow$ Product (P) 3 - Methylbutan - 2 - ol",
+  "statements": [],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "$\\mathrm{CH_3-C-CH_2-CH_3}$ (with $\\mathrm{Br}$ above C and $\\mathrm{CH_3}$ below C)",
+    "2": "$\\mathrm{CH_3CH=CH-CH_3}$",
+    "3": "$\\mathrm{CH_3-CH-CH-CH_3}$ (with $\\mathrm{CH_3}$ below first CH and $\\mathrm{Br}$ below second CH)",
+    "4": "$\\mathrm{CH_3-C-CH_2Br}$ (with $\\mathrm{CH_3}$ above and below C)"
+  },
+  "structure": "plain",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "73\nConsider the following reaction and identify the product (P). CH₃ - CH - CH - CH₃ (with CH₃ below\nfirst CH and OH below second CH) + HBr → Product (P) 3 - Methylbutan - 2 - ol\n(1)\nCH₃ - C - CH₂ - CH₃ (with Br above C\nand CH₃ below C)\n(2)\nCH₃CH = CH - CH₃\n(3)\nCH₃ - CH - CH - CH₃ (with CH₃ below\nfirst CH and Br below second CH)\n(4)\nCH₃ - C - CH₂Br (with CH₃ above and\nbelow C)\n\n3\nC −CH\n​ −\n2\nCH\n​3\nBr\nC\nCH\n​3\nC\n",
+  "b4_script_options": {
+    "1": "CH₃ - C - CH₂ - CH₃ (with Br above C\nand CH₃ below C)",
+    "2": "CH₃CH = CH - CH₃",
+    "3": "CH₃ - CH - CH - CH₃ (with CH₃ below\nfirst CH and Br below second CH)",
+    "4": "CH₃ - C - CH₂Br (with CH₃ above and\nbelow C)\n\n3\nC −CH\n​ −\n2\nCH\n​3\nBr\nC\nCH\n​3\nC"
+  },
+  "official_answer": "1",
+  "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+  "status": "normal",
+  "subject": "Chemistry",
+  "branch": "organic",
+  "b6_answer": "1",
+  "b6_reason": "Protonated secondary alcohol loses water to give a secondary carbocation; a 1,2-hydride shift from the adjacent CH(CH3) carbon converts it to the more stable tertiary carbocation, which Br- traps to give 2-bromo-2-methylbutane.",
+  "b6_working": "CH3-CH(CH3)-CH(OH)-CH3 + HBr -> CH3-CH(CH3)-CH(+)-CH3 (2 degree cation) -> hydride shift -> CH3-CH2-C(+)(CH3)-CH3 (3 degree cation) -> + Br- -> CH3-CH2-C(Br)(CH3)-CH3",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

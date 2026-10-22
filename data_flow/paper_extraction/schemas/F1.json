@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "F1 · review pack run summary (spec 14/F1)",
+  "description": "What one build_review_pack.py run produced: review/review_pack/_manifest.json, and the same object build_review_pack.build() returns.",
+  "type": "object",
+  "required": ["run_id", "seed", "queue_size", "pack_ids"],
+  "additionalProperties": true,
+  "properties": {
+    "run_id": {"type": "string", "minLength": 1},
+    "seed": {"type": "integer", "description": "The FIXED audit-sample seed. Required so the sample is reproducible (spec 14/F1)."},
+    "queue_size": {"type": "integer", "minimum": 0},
+    "chapters": {"type": ["array", "null"], "items": {"type": "string"}},
+    "pack_ids": {"type": "array", "items": {"type": "string"}},
+    "pages": {"type": "object", "additionalProperties": {"type": "string", "pattern": "\\.html$"}}
+  }
+}

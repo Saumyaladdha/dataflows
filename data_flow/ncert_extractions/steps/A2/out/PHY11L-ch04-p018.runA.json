@@ -1,0 +1,72 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "directed upwards (not shown in the figure).",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "(ii) the force on the floor by the system (action); the force on the system by the floor (reaction).  In addition, for (b), the force on the block by the cylinder and the force on the cylinder by the block also constitute an action-reaction pair."
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The important thing to remember is that an action-reaction pair consists of mutual forces which are always equal and opposite between two bodies.  Two forces on the same body which happen to be equal and opposite can never constitute an action-reaction pair. The force of gravity on the mass in (a) or (b) and the normal force on the mass by the floor are not action-reaction pairs. These forces happen to be equal and opposite for (a) since the mass is at rest. They are not so for case (b), as seen already. The weight of the system is 270 N, while the normal force R′ is 267.3 N."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The practice of drawing free-body diagrams is of great help in solving problems in mechanics. It allows you to clearly define your system and consider all forces on the system due to objects that are not part of the system itself.  A number of exercises in this and subsequent chapters will help you cultivate this practice."
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "SUMMARY\n1. Aristotle’s view that a force is necessary to keep a body in uniform motion is wrong.  A force is necessary in practice to counter the opposing force of friction.\n2. Galileo extrapolated simple observations on motion of bodies on inclined planes, and arrived at the law of inertia.  Newton’s first law of motion is the same law rephrased thus: “Everybody continues to be in its state of rest or of uniform motion in a straight line, unless compelled by some external force to act otherwise”.  In simple terms, the First Law is “If external force on a body is zero, its acceleration is zero”.\n3. Momentum (p ) of a body is the product of its mass (m) and velocity (v) :\np  =  m v\n4. Newton’s second law of motion :\nThe rate of change of momentum of a body is proportional to the applied force and takes place in the direction in which the force acts.  Thus"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        580,
+        1198,
+        862,
+        1292
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "where F is the net external force on the body and a its acceleration. We set the constant of proportionality k = 1 in SI units.  Then"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        580,
+        1378,
+        852,
+        1470
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "box",
+      "text": "The SI unit of force is newton : 1 N = 1 kg m s-2.\n(a) The second law is consistent with the First Law (F = 0 implies a = 0)\n(b) It is a vector equation\n(c) It is applicable to a particle, and also to a body or a system of particles, provided  F is the total external force on the system and a  is the acceleration of the system as a whole.\n(d) F at a point at a certain instant determines a at the same point at that instant. That is the Second Law is a local law; a at an instant does not depend on the history of motion.\n4. Impulse is the product of force and time which equals change in momentum.\nThe notion of impulse is useful when a large force acts for a short time to produce a measurable change in momentum. Since the time of action of the force is very short, one can assume that there is no appreciable change in the position of the body during the action of the impulsive force.\n6. Newton’s third law of motion:\nTo every action, there is always an equal and opposite reaction"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "66",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Two-column page at top (left column read first), then a full-width SUMMARY box. The SUMMARY box is one visual box, but it contains two displayed equations whose text layer is scrambled below word level (F = k dp/dt = k m a, and F = dp/dt = m a); per the step rule for displayed equations these are emitted as separate equation blocks with needs_special, so blocks 5, 7 and 9 are consecutive fragments of that single box in reading order. Block 3 ends with a solid left-pointing triangle glyph (end-of-example marker, shown as the stray '⊳' line in the text layer); it was dropped as typography, not text. The book's own SUMMARY numbering is irregular (1, 2, 3, 4, then 4 again, then 6) and was copied exactly as printed, not corrected. Inline unit in block 9 copied as the text layer holds it ('1 kg m s-2'; printed on the page with a superscript -2). The page carries a diagonal 'not to be republished' NCERT watermark, which was ignored. The SUMMARY list is visually closed at the bottom of this page only because the box cannot cross the page break; the summary content itself continues on the next page, hence last_block_continues_on_next is true."
+}

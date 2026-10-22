@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "is available in soil. Thus, nitrogen is\na limiting nutrient for both natural\nand agricultural eco-systems.\nNitrogen exists as two nitrogen atoms\njoined by a very strong triple covalent\nbond (N ≡ N). The process of\nconversion of nitrogen (N 2) to\nammonia is termed as nitrogen-\nfixation. In nature, lightning and\nultraviolet radiation provide enough\nenergy to convert nitrogen to nitrogen\noxides (NO, NO2, N2O). Industrial\ncombustions, forest fires, automobile\nexhausts and power -generating\nstations are also sources of\natmospheric \nnitrogen \noxides.\nDecomposition of organic nitrogen of\ndead plants and animals into\nammonia is called ammonification.\nSome of this ammonia volatilises and\nre-enters the atmosphere but most of\nit is converted into nitrate by soil\nbacteria in the following steps:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        752,
+        286,
+        1488,
+        1226
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        161,
+        1232,
+        1166,
+        1363
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Ammonia is first oxidised to nitrite by the bacteria Nitrosomonas and/or\nNitrococcus. The nitrite is further oxidised to nitrate with the help of the\nbacterium Nitrobacter. These steps are called nitrification (Figure 12.3).\nThese nitrifying bacteria are chemoautotrophs."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The nitrate thus formed is absorbed by plants and is transported to\nthe leaves. In leaves, it is reduced to form ammonia that finally forms the\namine group of amino acids. Nitrate present in the soil is also reduced to\nnitrogen by the process of denitrification. Denitrification is carried by\nbacteria Pseudomonas and Thiobacillus."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "12.6.2 Biological Nitrogen Fixation"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Very few living organisms can utilise the nitrogen in the form N2, available\nabundantly in the air. Only certain prokaryotic species are capable of\nfixing nitrogen. Reduction of nitrogen to ammonia by living organisms is"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "MINERAL NUTRITION",
+    "201",
+    "2022-23"
+  ],
+  "note": "Used the text layer for prose (matches the image); image used for layout, two-column reading order and bounding boxes. Two-column upper half: left-column prose is block 1, the right-column Figure 12.3 diagram plus its caption is block 2 (needs_special, so text left empty per spec - the caption lines 'Figure 12.3 / The nitrogen cycle showing relationship between the three main nitrogen pools - atmospheric soil, and biomass' and the diagram's internal labels sit inside that bbox for the transcriber). The two nitrification equations (i) and (ii) in the yellow panel are block 3 (needs_special); their text layer rendering is garbled, which is why it was not copied. previous_page_last_block was null, but page 7 was read in this run and ends '...Plants compete with microbes for the limited nitrogen that', continued here by 'is available in soil.' - judged from a predecessor actually read."
+}

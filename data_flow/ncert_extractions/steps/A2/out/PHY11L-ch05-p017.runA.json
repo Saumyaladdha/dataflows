@@ -1,0 +1,49 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [354, 214, 1365, 786],
+      "text": "",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "POINTS TO PONDER\n1.\nThe phrase ‘calculate the work done’ is incomplete. We should refer (or imply\nclearly by context) to the work done by a specific force or a group of forces on a\ngiven  body over a certain displacement.\n2.\nWork done is a scalar quantity. It can be positive or negative unlike mass and\nkinetic energy which are positive scalar quantities. The work done by the friction\nor viscous force on a moving body is negative.\n3.\nFor two bodies, the sum of the mutual forces exerted between them is zero from\nNewton’s Third Law,"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [745, 1085, 945, 1135],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "But the sum of the work done by the two forces need not always cancel, i.e."
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [755, 1170, 940, 1215],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "However, it may sometimes be true.\n4.\nThe work done by a force can be calculated sometimes even if the exact nature of\nthe force is not known. This is clear from Example 5.2 where the WE theorem is\nused in such a situation.\n5.\nThe WE theorem is not independent of Newton’s Second Law. The WE theorem\nmay be viewed as a scalar form of the Second Law. The principle of conservation\nof mechanical energy may be viewed as a consequence of the  WE theorem for\nconservative forces.\n5.\nThe WE theorem holds in all inertial frames. It can also be extended to non-\ninertial frames provided we include the pseudoforces in the calculation of the\nnet force acting on the body under consideration.\n7.\nThe potential energy of a body subjected to a conservative force is always\nundetermined upto a constant. For example, the point where the potential\nenergy is zero is a matter of choice. For the gravitational  potential energy mgh,\nthe zero of the potential energy is chosen to be the ground. For the spring\npotential energy kx2/2 , the zero of the potential energy is the equilibrium position\nof the oscillating mass.\n8.\nEvery force encountered in mechanics does not have an associated potential\nenergy. For example, work done by friction over a closed path is not zero and no\npotential energy can be associated with friction.\n9.\nDuring a collision : (a) the total linear momentum is conserved at each instant of\nthe collision ; (b) the kinetic energy conservation (even if the collision is  elastic)\napplies after the collision is over and does not hold at every instant of the collision.\nIn fact the two colliding objects are deformed and may be momentarily at rest\nwith respect to each other."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "WORK, ENERGY AND POWER",
+    "87",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null although page is 17; judged continuation from the page image: the top table carries its own header row (Physical Quantity / Symbol / Dimensions / Units / Remarks), so it starts on this page. The table's cells hold only formulae and symbols and are absent from text_layer, so it is marked needs_special. The POINTS TO PONDER box is one box interrupted by two displayed, centred equations (F12 + F21 = 0 and W12 + W21 != 0), which are emitted as separate equation blocks per instruction; blocks 2, 4 and 6 are the prose of that single box in reading order. The printed list numbering in the box runs 1,2,3,4,5,5,7,8,9 - item 6 is printed as a second '5.' in the source; copied as printed, not corrected. Prose copied from text_layer exactly, including its double spaces and line breaks. The lower third of the page is blank."
+}

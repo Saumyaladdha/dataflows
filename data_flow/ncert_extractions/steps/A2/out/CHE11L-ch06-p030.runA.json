@@ -1,0 +1,95 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "and HA at equilibrium. Also, determine the value of Ka and pKa of the monobasic acid. Solution pH = – log [H+] Therefore, [H+] = 10 –pH = 10–4.50 = 3.16 × 10–5 [H+] = [A–] = 3.16 × 10–5 Thus, Ka = [H+][A-] / [HA] [HA]eqlbm = 0.1 – (3.16 × 10-5)   0.1 Ka = (3.16 × 10–5)2 / 0.1 = 1.0 × 10–8 pKa = – log(10–8) = 8 Alternatively, “Percent dissociation” is another useful method for measure of strength of a weak acid and is given as: Percent dissociation = [HA]dissociated/[HA]initial × 100%            (6.32)",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Problem 6.20 Calculate the pH of 0.08M solution of hypochlorous acid, HOCl. The ionization constant of the acid is 2.5 × 10–5. Determine the percent dissociation of HOCl."
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Solution HOCl(aq) + H2O (l) H3O+(aq) + ClO–(aq)"
+    },
+    {
+      "n": 4,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [216, 1350, 852, 1654],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Ka = {[H3O+][ClO–] / [HOCl]} =  x2 / (0.08 –x) As x << 0.08, therefore 0.08 – x  0.08 x2 / 0.08 = 2.5 × 10–5 x2 = 2.0 × 10–6, thus, x = 1.41 × 10–3 [H+] = 1.41 × 10–3 M. Therefore, Percent dissociation = {[HOCl]dissociated / [HOCl]initial }× 100 = 1.41 × 10–3 × 102/ 0.08 = 1.76 %. pH = –log(1.41 × 10–3) = 2.85."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "6.11.4 Ionization of Weak Bases"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The ionization of base MOH can be represented by equation:"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [934, 602, 1292, 642],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "In a weak base there is partial ionization of MOH into M+ and OH–, the case is similar to that of acid-dissociation equilibrium. The equilibrium constant for base ionization is called base ionization constant and is represented by Kb. It can be expressed in terms of concentration in molarity of various species in equilibrium by the following equation:"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [896, 978, 1528, 1016],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Alternatively, if c = initial concentration of base and α = degree of ionization of base i.e. the extent to which the base ionizes. When equilibrium is reached, the equilibrium constant can be written as:"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [896, 1192, 1292, 1230],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "The values of the ionization constants of some selected weak bases, Kb are given in Table 6.7."
+    },
+    {
+      "n": 14,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [896, 1356, 1540, 1750],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Many organic compounds like amines are weak bases. Amines are derivatives of ammonia in which one or more hydrogen atoms are replaced by another group. For example, methylamine, codeine, quinine and",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["EQUILIBRIUM", "197", "2024-25"],
+  "note": "Two-column page; left column read before right. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 29 output I wrote myself rather than against the input: page 29 ended with Problem 6.19 broken off at 'Calculate the concentration of species H+, A–', and this page's pink panel opens 'and HA at equilibrium. Also, determine the value of Ka and pKa...', so first_block_continues_from_previous is true. Blocks 1-5 are the pink problem panel: the rest of Problem 6.19 with its solution (block 1), Problem 6.20's question (block 2), and its solution, which is split so the aligned Initial / Change / equilibrium concentration rows (block 4) can go to the special transcriber. Block 5 runs from the foot of the left column into the top of the right column, which is how the text layer stores it too. Blocks 8, 10 and 12 are the display expressions for the MOH ionization and for Kb, block 10 including its equation number (6.33), and block 14 is Table 6.7 with its blue caption; all are left for the special transcriber. Equilibrium arrows are not reproduced inside box text because the text layer does not contain that glyph, and the approximately-equal signs printed in the panel are likewise absent from the text layer, so the surrounding figures are copied as the text layer has them. The text layer stores Table 6.7's contents first, which is not reading order; as it is a needs_special block that affects nothing. last_block_continues_on_next is true because the page ends mid-sentence at 'methylamine, codeine, quinine and'."
+}

@@ -1,0 +1,26 @@
+{
+  "verdict": "content_missing",
+  "findings": [
+    {
+      "kind": "missing",
+      "what": "Both protonation schemes under '(a) Alkanamines versus ammonia' lose their curved mechanism arrows. The book draws a curved arrow from the nitrogen lone pair over to the H+ in each equation (amine line and ammonia line), which is what shows the lone pair attacking the proton. The render prints only 'R-N: + H+ <=> R-N+-H' with no arrow at all, so the mechanism being taught is gone.",
+      "where": "the two protonation equations in the upper middle of the page"
+    },
+    {
+      "kind": "missing",
+      "what": "The 1 deg / 2 deg / 3 deg labels beneath the three solvated ammonium-ion structures are absent. The book prints '1°', '2°' and '3°' under the left, middle and right structures respectively; the render shows the three structures and the '>' signs but nothing underneath, so the reader cannot tell which structure is the primary, secondary and tertiary ion that the caption below is ordering.",
+      "where": "under the order-of-stability structure row, just above the 'Decreasing order of extent of H-bonding' caption"
+    },
+    {
+      "kind": "formatting",
+      "what": "The three solvated-ion structures are drawn at a much reduced scale with their substituents set as tiny superscript-sized labels crowded onto the N (e.g. the 2 deg ion's two 'H...OH2' water contacts are printed one above the other at roughly half body-text size, and the 3 deg ion's two R groups are stacked touching each other). In the book these are full-size displayed structures with clear bond lines to each H...OH2 and each R. As rendered the H-bond contacts are at the limit of legibility.",
+      "where": "the order-of-stability structure row, lower third of the page"
+    },
+    {
+      "kind": "formatting",
+      "what": "The book colour-codes the nitrogen, its hydrogens, the incoming H+ and the H...OH2 hydrogen bonds in magenta across both protonation equations and all three solvated-ion structures; the render prints everything in black, losing the cue that marks which atoms are involved.",
+      "where": "the two protonation equations and the order-of-stability structures"
+    }
+  ],
+  "note": "Compared paragraph by paragraph: the opening discrepancies paragraph, the 'Structure-basicity relationship of amines' heading, its paragraph, the '(a) Alkanamines versus ammonia' heading, the lead-in line, both protonation equations, the long 'Due to the electron releasing nature' paragraph, the three solvated-ion structures and the closing caption. All running text is present and complete, including the basicity order 'tertiary amine > secondary amine > primary amine > NH3' and the reference to Table 9.3; both italic sub-headings keep their italics. The page number 268 and 'Chemistry' running foot are present. The three solvated structures do each carry the right number of water contacts (three, two, one), so they are reduced and crowded rather than incomplete -- the missing items are the curved arrows and the 1/2/3 degree labels. The blank lower third of the page is just the page ending early after reflow."
+}

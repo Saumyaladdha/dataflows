@@ -1,0 +1,113 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "nicotine all behave as very weak bases due to their very small Kb. Ammonia produces OH– in aqueous solution:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 368, 816, 408],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "The pH scale for the hydrogen ion concentration has been extended to get:"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [216, 494, 852, 530],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Problem 6.21 The pH of 0.004M hydrazine solution is 9.7. Calculate its ionization constant Kb and pKb. Solution"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [227, 792, 766, 831],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "From the pH we can calculate the hydrogen ion concentration. Knowing hydrogen ion concentration and the ionic product of water we can calculate the concentration of hydroxyl ions. Thus we have: [H+] = antilog (–pH) =  antilog (–9.7) = 1.67 ×10–10 [OH–] = Kw / [H+] = 1 × 10–14 / 1.67 × 10–10 = 5.98 × 10–5 The concentration of the corresponding hydrazinium ion is also the same as that of hydroxyl ion. The concentration of both these ions is very small so the concentration of the undissociated base can be taken equal to 0.004M. Thus, Kb = [NH2NH3 +][OH–] / [NH2NH2] = (5.98 × 10–5)2 / 0.004 = 8.96 × 10–7 pKb = –logKb = –log(8.96 × 10–7) = 6.04."
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Problem 6.22 Calculate the pH of the solution in which 0.2M NH4Cl and 0.1M NH3 are present. The pKb of ammonia solution is 4.75. Solution"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [227, 1734, 766, 1774],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "box",
+      "text": "The ionization constant of NH3, Kb = antilog (–pKb) i.e. Kb = 10–4.75 = 1.77 × 10–5 M"
+    },
+    {
+      "n": 11,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [906, 316, 1540, 658],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "Kb = [NH4 +][OH–] / [NH3] = (0.20 + x)(x) / (0.1 – x) = 1.77 × 10–5 As Kb is small, we can neglect x in comparison to 0.1M and 0.2M. Thus, [OH–] = x = 0.88 × 10–5 Therefore, [H+] = 1.12 × 10–9 pH = – log[H+] = 8.95."
+    },
+    {
+      "n": 13,
+      "kind": "heading",
+      "text": "6.11.5 Relation between Ka and Kb"
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "As seen earlier in this chapter, Ka and Kb represent the strength of an acid and a base, respectively. In case of a conjugate acid-base pair, they are related in a simple manner so that if one is known, the other can be deduced. Considering the example of NH4 + and NH3 we see,"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [896, 1284, 1540, 1500],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Where, Ka represents the strength of NH4 + as an acid and Kb represents the strength of NH3 as a base."
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "It can be seen from the net reaction that the equilibrium constant is equal to the product of equilibrium constants Ka and Kb for the reactions added. Thus,"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [896, 1762, 1540, 1922],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["CHEMISTRY", "198", "2024-25"],
+  "note": "Two-column page; left column read before right. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 30 output I wrote myself rather than against the input: page 30 ended mid-sentence at 'For example, methylamine, codeine, quinine and', and this page opens 'nicotine all behave as very weak bases...', so first_block_continues_from_previous is true. Seven pieces of display maths are left for the special transcriber: the ammonia ionization (block 2), the numbered pKb equation (6.34) (block 4), the hydrazine and ammonia reaction lines printed on their own centred lines inside the pink panels (blocks 6 and 9), the aligned Initial / Change / At equilibrium rows for NH3 + H2O with the reaction line that heads them (block 11), the stacked Ka / Kb / Net block for the NH4+ and NH3 pair (block 15), and the final Ka x Kb product (block 18). The pink problem panels are therefore split into box blocks around them: Problem 6.21 and its solution are blocks 5-7, Problem 6.22 and its solution are blocks 8-12, and block 10 runs from the foot of the left column into the top of the right column, which is how the text layer stores it too. Where the text layer puts a superscript charge on its own line, the box text reproduces it detached (e.g. 'NH4 +', '[NH2NH3 +]'), since that is literally what the text layer contains. last_block_continues_on_next is false: the page finishes on a complete display line, '= (5.6 x10-10) x (1.8 x 10-5) = 1.0 x 10-14 M'."
+}

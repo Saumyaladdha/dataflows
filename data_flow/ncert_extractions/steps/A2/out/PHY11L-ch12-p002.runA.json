@@ -1,0 +1,34 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Atomic Hypothesis in Ancient India and Greece\nThough John Dalton is credited with the introduction of atomic viewpoint in modern science, scholars in ancient India and Greece conjectured long before the existence of atoms and molecules.  In the Vaiseshika school of thought in India founded by Kanada (Sixth century B.C.) the atomic picture was developed in considerable detail. Atoms were thought to be eternal, indivisible, infinitesimal and ultimate parts of matter. It was argued that if matter could be subdivided without an end, there would be no difference between a mustard seed and the Meru mountain.  The four kinds of atoms (Paramanu — Sanskrit word for the smallest particle) postulated were Bhoomi (Earth), Ap (water), Tejas (fire) and Vayu (air) that have characteristic mass and other attributes, were propounded. Akasa (space) was thought to have no atomic structure and was continuous and inert. Atoms combine to form different molecules (e.g. two atoms combine to form a diatomic molecule dvyanuka, three atoms form a tryanuka or a triatomic molecule), their properties depending upon the nature and ratio of the constituent atoms.  The size of the atoms was also estimated, by conjecture or by methods that are not known to us.  The estimates vary. In Lalitavistara, a famous biography of the Buddha written mainly in the second century B.C., the estimate is close to the modern estimate of atomic size, of the order of 10 –10 m.\n   In ancient Greece, Democritus (Fourth century B.C.) is best known for his atomic hypothesis. The word ‘atom’ means ‘indivisible’ in Greek. According to him, atoms differ from each other physically, in shape, size and other properties and this resulted in the different properties of the substances formed by their combination.  The atoms of water were smooth and round and unable to ‘hook’ on to each other, which is why liquid /water flows easily.   The atoms of earth were rough and jagged, so they held together to form hard substances.  The atoms of fire were thorny which is why it caused painful burns. These fascinating ideas, despite their ingenuity, could not evolve much further, perhaps because they were intuitive conjectures and speculations not tested and modified by quantitative experiments - the hallmark of modern science.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "in Greece had suggested that matter may consist of indivisible constituents. The scientific ‘Atomic Theory’  is usually credited to John Dalton. He proposed the atomic  theory to explain the laws of definite and multiple proportions obeyed by elements when they combine into compounds. The first law says that any given compound has, a fixed proportion by mass of its constituents. The second law says that when two elements form more than one compound, for a fixed mass of one element, the masses of the other elements are in ratio of small integers.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "To explain the laws Dalton suggested, about 200 years ago,  that the smallest constituents of an element are atoms. Atoms of one element are identical but differ from those of other elements.  A small number of atoms of each element combine to form a molecule of the compound. Gay Lussac’s law, also given in early 19th century, states:  When gases combine chemically to yield another gas, their volumes are in the ratios of small integers.  Avogadro’s law  (or hypothesis) says: Equal volumes of all gases at equal temperature and pressure have the same number of molecules.  Avogadro’s law, when combined with Dalton’s theory explains Gay  Lussac’s law.  Since the elements are often in the form of molecules, Dalton’s atomic theory can also be referred to as the molecular theory of matter. The theory is now well accepted by scientists. However even at the end of the nineteenth century there were famous scientists who did not believe in atomic theory !"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "From many observations, in recent times we now know that  molecules (made up of one or more atoms) constitute matter. Electron microscopes  and scanning tunnelling microscopes enable us to even see them. The size of an atom is about an angstrom (10 -10   m). In solids, which are tightly packed, atoms are spaced about a few  angstroms (2 Å) apart. In liquids the separation between atoms is also about the same.  In liquids the atoms  are not as rigidly fixed as in solids, and can move around. This enables a liquid to flow.  In gases the interatomic distances are in tens of angstroms.  The average distance a molecule can travel without colliding is called the  mean free path. The mean free path, in gases, is of the order of thousands of angstroms. The atoms are much freer in gases and can travel long distances without colliding. If they are not enclosed, gases disperse away. In solids and liquids the closeness makes the interatomic force important. The force has a long range attraction and a short range repulsion. The atoms attract when they are at a few angstroms but repel when they come closer. The static appearance of a gas"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "KINETIC THEORY",
+    "245",
+    "2024-25"
+  ],
+  "note": "Blocks are in visual top-to-bottom order, so the full-width blue box printed at the top of the page is block 1. The body-text flow resumed from the previous page is block 2 ('in Greece had suggested...'), which I marked continues_from_previous: true; previous_page_last_block was null in my input, but I read PHY11L-ch12-p001 myself immediately before this page and it ends mid-sentence with '...Kanada in India and Democritus', so the join is directly observed, not guessed. I set first_block_continues_from_previous: true to keep that prose chain intact, with the caveat that the continuing block is block 2 rather than block 1 (block 1 being a floating box). Last block ends 'The static appearance of a gas' which is mid-sentence and continues on the next page; last_block_continues_on_next is set accordingly. Text-layer superscripts are flattened in the PDF text ('10 –10 m', '10 -10   m', '19th'), copied as extracted. Text layer otherwise matched the image."
+}

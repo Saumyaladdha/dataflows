@@ -1,0 +1,6 @@
+{
+  "kind": "reaction",
+  "reaction_smiles": "NC1=CC=CC=C1.BrBr.BrBr.BrBr>BrBr.O>NC1=C(Br)C=C(Br)C=C1Br.Br.Br.Br",
+  "confidence": "probable",
+  "note": "Bromination of aniline: aniline + 3Br2, with 'Br2/H2O' written over the arrow, giving 2,4,6-tribromoaniline + 3HBr. Transcribed exactly as drawn, which means Br2 appears twice -- three equivalents are written as a reactant to the left of the arrow AND bromine water is written over the arrow -- so BrBr occurs in both the reactants field and the agents field; a reader should not add them up. Water from the 'Br2/H2O' label is the O in the agents field. Stoichiometric coefficients (3Br2, 3HBr) are written as repeated components since SMILES has no coefficients. The product's three bromines are read from the drawing as the two ortho positions and the para position, matching the printed caption '2,4,6-Tribromoaniline'; the reactant is captioned 'Aniline'. Both rings are drawn Kekule (alternating inner lines, no circle), so both are written Kekule. No stereochemistry is drawn. Confidence is probable only because of the duplicated Br2, not because any atom was unclear."
+}

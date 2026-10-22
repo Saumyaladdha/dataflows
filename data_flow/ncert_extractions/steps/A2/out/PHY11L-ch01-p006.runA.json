@@ -1,0 +1,217 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "of significant figures. The value of π = 3.1415926.... is known to a large number of significant figures. You may take the value as 3.142 or 3.14 for π, with limited number of significant figures as required in specific cases.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "box",
+      "text": "Example 1.1  Each side of a cube is measured to be 7.203 m.  What are the total surface area and the volume of the cube to appropriate significant figures?"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Answer   The number of significant figures in the measured length is 4.  The calculated area and the volume should therefore be rounded off to 4 significant figures."
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        300,
+        748,
+        930,
+        995
+      ],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Example 1.2  5.74 g of a substance occupies 1.2 cm3.  Express its density by keeping the significant figures in view."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Answer  There are 3 significant figures in the measured mass whereas there are only 2 significant figures in the measured volume. Hence the density should be expressed to only 2 significant figures."
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        375,
+        1290,
+        710,
+        1420
+      ],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "heading",
+      "text": "1.3.3 Rules for Determining the Uncertainty in the Results of Arithmetic Calculations"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "The rules for determining the uncertainty or error in the number/measured quantity in arithmetic operations can be understood from the following examples."
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "(1) If the length and breadth of a thin rectangular sheet are measured, using a metre scale as 16.2 cm and, 10.1 cm respectively, there are three significant figures in each measurement.  It means that the length l may be written as"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        470,
+        2080,
+        740,
+        2115
+      ],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1215,
+        215,
+        1475,
+        250
+      ],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Similarly, the breadth b may be written as"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1160,
+        305,
+        1455,
+        378
+      ],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "Then, the error of the product of two (or more) experimental values, using the combination of errors rule, will be"
+    },
+    {
+      "n": 16,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1045,
+        510,
+        1390,
+        610
+      ],
+      "text": ""
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "This leads us to quote the final result as"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1085,
+        675,
+        1335,
+        712
+      ],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "Here 3 cm2 is the uncertainty or error in the estimation of area of rectangular sheet."
+    },
+    {
+      "n": 20,
+      "kind": "paragraph",
+      "text": "(2) If a set of experimental data is specified to n significant figures, a result obtained by combining the data will also be valid to n significant figures."
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "However, if data are subtracted, the number of significant figures can be reduced."
+    },
+    {
+      "n": 22,
+      "kind": "paragraph",
+      "text": "For example, 12.9 g – 7.06 g, both specified to three significant figures, cannot properly be evaluated as 5.84 g but only as 5.8 g, as uncertainties in subtraction or addition combine in a different fashion (smallest number of decimal places rather than the number of significant figures in any of the number added or subtracted)."
+    },
+    {
+      "n": 23,
+      "kind": "paragraph",
+      "text": "(3) The relative error of a value of number specified to significant figures depends not only on n but also on the number itself."
+    },
+    {
+      "n": 24,
+      "kind": "paragraph",
+      "text": "For example, the accuracy in measurement of mass 1.02 g is ± 0.01 g whereas another measurement 9.89 g is also accurate to ± 0.01 g. The relative error in 1.02 g is"
+    },
+    {
+      "n": 25,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1130,
+        1530,
+        1475,
+        1600
+      ],
+      "text": ""
+    },
+    {
+      "n": 26,
+      "kind": "paragraph",
+      "text": "Similarly, the relative error in 9.89 g  is"
+    },
+    {
+      "n": 27,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        1130,
+        1610,
+        1475,
+        1680
+      ],
+      "text": ""
+    },
+    {
+      "n": 28,
+      "kind": "paragraph",
+      "text": "Finally, remember that intermediate results in a multi-step computation should be calculated to one more significant figure in every measurement than the number of digits in the least precise measurement. These should be justified by the data and then the arithmetic operations may be carried out;"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "6",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Judged first_block_continues_from_previous from page 5, which I read myself in this batch (previous_page_last_block was null): page 5 ends mid-sentence with 'have a large (infinite) number' and this page opens 'of significant figures.'. Examples 1.1 and 1.2 are tinted boxes, each blocked as a box with its text copied; the small triangular markers that open and close each worked example are decoration and were not transcribed. All the worked-out calculation lines and error expressions are left for the special transcriber as equation blocks with bounding boxes. Blocks 11 and 12 are the two halves of the same displayed expression for l, split by the column break (l = 16.2 ± 0.1 cm at the foot of the left column, '= 16.2 cm ± 0.6 %.' at the head of the right column). Text layer matches the image."
+}

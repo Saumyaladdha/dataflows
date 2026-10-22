@@ -1,0 +1,20 @@
+{
+  "blocks": [
+    {"n": 2, "no_change": true},
+    {"n": 4, "no_change": true},
+    {"n": 6, "no_change": true},
+    {"n": 7, "no_change": true},
+    {"n": 9, "no_change": true},
+    {
+      "n": 11,
+      "corrected_text": "9.3\nHow will you convert\n(i) Benzene into aniline  (ii) Benzene into N, N-dimethylaniline\n(iii) Cl–(CH₂)₄–Cl into hexan-1,6-diamine?",
+      "fixes": [
+        {"wrong": "Cl–(CH2)4–Cl", "right": "Cl–(CH₂)₄–Cl"}
+      ]
+    },
+    {"n": 13, "no_change": true},
+    {"n": 14, "no_change": true},
+    {"n": 15, "no_change": true}
+  ],
+  "note": "n=11 had a flattened subscript in Cl-(CH2)4-Cl, restored to Cl–(CH₂)₄–Cl. All other blocks on this page (worked example prose, physical-properties prose) already matched the image exactly, with no formulas requiring correction."
+}

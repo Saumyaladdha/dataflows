@@ -1,0 +1,95 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "the number of orbitals is equal to the number of ways in which they are oriented.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "iv) ms refers to orientation of the spin of the electron."
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Problem 2.17\nWhat is the total number of orbitals associated with the principal quantum number n = 3 ?"
+    },
+    {
+      "n": 4,
+      "kind": "box",
+      "text": "Solution\nFor n = 3, the possible values of l are 0, 1 and 2. Thus there is one 3s orbital  (n = 3, l = 0 and ml = 0); there are three 3p orbitals (n = 3, l = 1 and ml = –1, 0, +1); there are five 3d orbitals (n = 3, l = 2 and ml = –2, –1, 0, +1+, +2)."
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Therefore, the total number of orbitals is 1+3+5 = 9"
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "text": "The same value can also be obtained by using the relation; number of orbitals  = n2, i.e.  32 = 9."
+    },
+    {
+      "n": 7,
+      "kind": "box",
+      "text": "Problem 2.18\nUsing s, p, d, f notations, describe the orbital with the following quantum numbers\n(a) n = 2, l = 1, (b) n = 4, l = 0, (c) n = 5,  l = 3, (d) n = 3, l = 2"
+    },
+    {
+      "n": 8,
+      "kind": "box",
+      "text": "Solution"
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "        n     l     orbital\n    a)  2     1       2p\n    b)  4     0       4s\n    c)  5     3       5f\n    d)  3     2       3d"
+    },
+    {
+      "n": 10,
+      "kind": "heading",
+      "text": "2.6.2 Shapes of Atomic Orbitals"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The orbital wave function or ψ for an electron in an atom has no physical meaning. It is simply a mathematical function of the coordinates of the electron. However, for different orbitals the plots of corresponding wave functions as a function of r (the distance from the nucleus) are different. Fig. 2.12(a), gives such plots for 1s (n = 1, l = 0) and 2s (n = 2, l = 0) orbitals."
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        897,
+        248,
+        1546,
+        1006
+      ],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "According to the German physicist, Max Born, the square of the wave function (i.e.,ψ 2) at a point gives the probability density of the electron at that point. The variation of ψ 2 as a function of r for 1s and 2s orbitals is given in Fig. 2.12(b). Here again, you may note that the curves for 1s and 2s orbitals are different."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "It may be noted that for 1s orbital the probability density is maximum at the nucleus and it decreases sharply as we move away from it. On the other hand, for 2s orbital the probability density first decreases sharply to zero and again starts increasing. After reaching a small maxima it decreases again and approaches zero as the value of r increases further. The region where this probability density function reduces to zero is called nodal surfaces or simply nodes. In general, it has been found that ns-orbital has (n – 1) nodes, that is, number of nodes increases with increase of principal quantum number n. In other words, number of nodes for 2s orbital is one, two for 3s and so on."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "These probability density variation can be visualised in terms of charge cloud diagrams [Fig. 2.13(a)]. In these diagrams, the density"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "57",
+    "STRUCTURE OF ATOM",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p028.runA.json I wrote immediately before this page, whose numbered point iii) breaks off at 'For a given value of l, ml has (2l+1) values, the same as the number of orbitals per subshell. It means that'. This page opens 'the number of orbitals is equal to the number of ways in which they are oriented.', the completion of that sentence, so first_block_continues_from_previous is true, matching p028's last_block_continues_on_next of true. Reading order is the left column top to bottom (the tail of point iii), point iv), the pink Problem 2.17 / Problem 2.18 box, then section 2.6.2 and its paragraph) and then the right column (Fig. 2.12 with its caption, then the three paragraphs); the text layer stores Fig. 2.12's caption and the right column's prose BEFORE the pink box and before section 2.6.2, and it puts the caption ahead of the 'According to the German physicist' paragraph that the caption follows on the page, so this page's text layer is stored out of printed order. Block n=12 is Fig. 2.12, left for the special transcriber, its bbox covering the yellow panel of four plots with their (a) and (b) labels, their axis labels (ψ(r), ψ2(r), r(nm)) and tick values, together with the five-line italic caption below it ('Fig. 2.12  The plots of (a) the orbital wave function ψ(r); (b) the variation of probability density ψ2(r) as a function of distance r of the electron from the nucleus for 1s and 2s orbitals.'); the plots are not described. It is the only block deferred on this page: the small n / l / orbital answer listing inside the Problem 2.18 solution is stored flat and in row order by the layer, so block n=9 transcribes it as a list rather than deferring it. Quantum-number and orbital notation follows the layer's own token split rather than the printed subscripts and superscripts: 'ms refers to orientation', 'ml = –1, 0, +1', 'is 1+3+5 = 9', and in particular '= n2, i.e.  32 = 9.' in block n=6, which is the layer's flattening of the printed n-squared and 3-squared, and '(i.e.,ψ 2)' and 'of ψ 2 as a function of r' in block n=13, where the layer keeps a space before the flattened exponent. The '+1+' inside block n=4's list of ml values is as printed. The bold runs in blocks n=2 and n=14 and the italic figure caption are printed that way and are kept or deferred accordingly; the doubled spaces in 'one 3s orbital  (n = 3', 'number of orbitals  = n2', 'i.e.  32 = 9.' and '(c) n = 5,  l = 3' are as printed. Block n=15 ends mid-sentence at 'In these diagrams, the density' and is completed on p030, so last_block_continues_on_next is true."
+}

@@ -1,0 +1,15 @@
+{
+  "blocks": [
+    {"n": 2, "no_change": true},
+    {
+      "n": 4,
+      "corrected_text": "J. J. Thomson, in 1898, proposed that an atom possesses a spherical shape (radius approximately 10⁻¹⁰ m) in which the positive charge is uniformly distributed. The electrons are embedded into it in such a manner as to give the most stable electrostatic arrangement (Fig. 2.4). Many different names are given to this model, for example, plum pudding, raisin pudding or watermelon. This model",
+      "fixes": [
+        {"wrong": "10–10 m", "right": "10⁻¹⁰ m"}
+      ]
+    },
+    {"n": 6, "no_change": true},
+    {"n": 7, "no_change": true}
+  ],
+  "note": "One block corrected: n=4's atomic radius is printed as 10⁻¹⁰ m and was stored flattened as \"10–10 m\", which reads as ten minus ten rather than a power of ten; restored with superscript minus and superscript one-zero. n=7 (the X-rays / radioactivity box) needed nothing — its Greek letters α, β and γ are already the real Greek characters as printed, the approximation sign in (∼0.1 nm) is already a tilde-operator matching the page's ~, and the year ranges are plain text. n=2 and n=6 carry no notation. Table 2.1's exponents (1.602176×10⁻¹⁹, 9.109382×10⁻³¹, 1.6726216×10⁻²⁷, 1.674927×10⁻²⁷) sit in a table block that is not in this block list."
+}

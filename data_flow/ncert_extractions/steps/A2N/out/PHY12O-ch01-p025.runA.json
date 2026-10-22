@@ -1,0 +1,16 @@
+{
+  "blocks": [
+    {"n": 1, "no_change": true},
+    {"n": 2, "no_change": true},
+    {"n": 3, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "Consider flow of a liquid with velocity v, through a small flat surface dS, in a direction normal to the surface. The rate of flow of liquid is given by the volume crossing the area per unit time  v dS and represents the flux of liquid flowing across the plane. If the normal to the surface is not parallel to the direction of flow of liquid, i.e., to v, but makes an angle θ with it, the projected area in a plane perpendicular to v is δ dS cos θ. Therefore, the flux going out of the surface dS is v. n̂ dS. For the case of  the electric field, we define an analogous quantity and call it electric flux. We should, however, note that there is no flow of a physically observable quantity unlike the case of liquid flow.",
+      "fixes": [
+        {"wrong": "the flux going out of the surface dS is v. ˆn dS.", "right": "the flux going out of the surface dS is v. n̂ dS."}
+      ]
+    },
+    {"n": 6, "no_change": true}
+  ],
+  "note": "n=5 had a detached hat on the unit normal (ˆn -> n̂); restored attached to its letter. All other digits/symbols in n=5 (v, dS, δ dS cos θ) already matched the image exactly. n=1, 2, 3, 6 had no subscripts/exponents/radicals and already matched the image exactly."
+}

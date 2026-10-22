@@ -1,0 +1,77 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Note that Ad is the volume of the region between the plates (where electric field alone exists). If we define energy density as energy stored per unit volume of space, Eq (2.72) shows that",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Energy density of electric field,"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [205, 432, 1177, 486],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Though we derived Eq. (2.73) for the case of a parallel plate capacitor, the result on energy density of an electric field is, in fact, very general and holds true for electric field due to any configuration of charges."
+    },
+    {
+      "n": 5,
+      "kind": "box",
+      "text": "Example 2.10 (a) A 900 pF capacitor is charged by 100 V battery [Fig. 2.31(a)]. How much electrostatic energy is stored by the capacitor? (b) The capacitor is disconnected from the battery and connected to another 900 pF capacitor [Fig. 2.31(b)]. What is the electrostatic energy stored by the system?"
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [464, 913, 1080, 1512],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "heading",
+      "text": "Solution"
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "(a) The charge on the capacitor is"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [270, 1652, 853, 1696],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "The energy stored by the capacitor is"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [248, 1760, 907, 1852],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "(b) In the steady situation, the two capacitors have their positive plates at the same potential, and their negative plates at the same potential. Let the common potential difference be V′. The"
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "75", "EXAMPLE 2.10", "Reprint 2026-27"],
+  "note": "previous_page_last_block was null even though page is 31; the page opens with a complete new sentence (indented paragraph start), so first_block_continues_from_previous is false. The Example 2.10 shaded box spans blocks 5-12 (its enclosed figure and displayed equations are listed separately so they can be marked needs_special). In block 12 the text layer holds the garbled character sequence 'V¢'; the image clearly shows V-prime, so V′ was transcribed. Block 11 covers two consecutive displayed equation lines of the same derivation."
+}

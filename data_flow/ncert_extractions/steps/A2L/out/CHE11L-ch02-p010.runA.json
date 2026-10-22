@@ -1,0 +1,38 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.5,
+    "columns": [
+      {"id": "left", "x0": 0.125, "x1": 0.484},
+      {"id": "right", "x0": 0.514, "x1": 0.876}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.125, 0.0878, 0.139, 0.0947],
+     "column": "full", "size_rel": 0.73, "align": "left", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.799, 0.0878, 0.876, 0.0947],
+     "column": "full", "size_rel": 0.73, "align": "right", "font": "serif"},
+    {"n": 1, "role": "list", "bbox": [0.125, 0.1199, 0.484, 0.5867],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "list", "bbox": [0.514, 0.1199, 0.876, 0.1502],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "paragraph", "bbox": [0.514, 0.1635, 0.876, 0.2121],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "paragraph", "bbox": [0.514, 0.2213, 0.876, 0.285],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "paragraph", "bbox": [0.514, 0.2974, 0.876, 0.436],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "paragraph", "bbox": [0.514, 0.4461, 0.876, 0.569],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "equation", "bbox": [0.5714, 0.5777, 0.8726, 0.5896],
+     "column": "right", "size_rel": 1.0, "align": "center", "font": "serif"},
+    {"n": 7, "role": "figure", "bbox": [0.1251, 0.6014, 0.8737, 0.8797],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.1246, 0.8898, 0.8737, 0.9155],
+     "column": "full", "size_rel": 0.95, "align": "left", "font": "serif-italic"},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.9559, 0.523, 0.9632],
+     "column": "full", "size_rel": 0.78, "align": "center", "font": "serif"}
+  ],
+  "note": "Mixed page: two text columns (left 0.125-0.484, right 0.514-0.876) down to y 0.59, then the Fig. 2.7 spectrum artwork and its legend run FULL width across the measure below, so those two elements are column 'full'. No page_header_band, no rule_bar and no footer_rule are printed, and no tinted panel sits behind any text element, so no fill is reported; the grey band inside panel (a) of the figure (#e6e7e8) and the rainbow strip in panel (b) are internal to the artwork, not a panel behind an element. body_text_size_px 20.5 measured cap-to-baseline on the first right-column prose line. Block 1 RUNS OVER the column break: items (i)-(iii) fill the whole left column (the element with n:1) and item '(iv) Different kinds of units...' at the top of the right column (y 0.1199-0.1502) is the SAME block 1 continued; that continuation is given n: null rather than repeating n:1, so no block number appears twice, and it must not be treated as a separate block. Block 6 is the displayed equation c = nu*lambda with its number (2.5) set flush right on the same line; the bbox spans both. The italic 'Fig. 2.7' legend has no block of its own, so n: null. Diagonal '(c) NCERT not to be republished' watermark ignored."
+}

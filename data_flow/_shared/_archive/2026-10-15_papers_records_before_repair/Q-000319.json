@@ -1,0 +1,218 @@
+{
+  "question_id": "Q-000319",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_text_layer_sanitized": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b4_script_options": {
+      "step": "B4",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "official_answer": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "answer_source": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "status": {
+      "step": "B5",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "subject": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "branch": {
+      "step": "B7",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "b6_answer": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_reason": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_working": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_confidence": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_note": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "b6_agrees_with_key": {
+      "step": "B6",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2024,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "NEET-2024-MAIN-Q1:193"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+  "trust": "unsure",
+  "stem_en": "Match List I with List II:\nChoose the correct answer from the options given below:",
+  "statements": [],
+  "list_i": [
+    {
+      "label": "A",
+      "text": "Unicellular glandular epithelium"
+    },
+    {
+      "label": "B",
+      "text": "Compound epithelium"
+    },
+    {
+      "label": "C",
+      "text": "Multicellular glandular epithelium"
+    },
+    {
+      "label": "D",
+      "text": "Endocrine glandular epithelium"
+    }
+  ],
+  "list_ii": [
+    {
+      "label": "I",
+      "text": "Salivary glands"
+    },
+    {
+      "label": "II",
+      "text": "Pancreas"
+    },
+    {
+      "label": "III",
+      "text": "Goblet cells of alimentary canal"
+    },
+    {
+      "label": "IV",
+      "text": "Moist surface of buccal cavity"
+    }
+  ],
+  "options_en": {
+    "1": "A-II, B-I, C-III, D-IV",
+    "2": "A-IV, B-III, C-I, D-II",
+    "3": "A-III, B-IV, C-I, D-II",
+    "4": "A-II, B-I, C-IV, D-III"
+  },
+  "structure": "match",
+  "has_figure": false,
+  "negative_words": [],
+  "b4_text_layer_sanitized": "193\nMatch List I with List II: List I List II A. Unicellular glandular epithelium I. Salivary glands B. Compound\nepithelium II. Pancreas C. Multicellular glandular epithelium III. Goblet cells of alimentary canal D.\nEndocrine glandular epithelium IV. Moist surface of buccal cavity Choose the correct answer from\nthe options given below:\n(1)\nA-II, B-I, C-III, D-IV\n(2)\nA-IV, B-III, C-I, D-II\n(3)\nA-III, B-IV, C-I, D-II\n(4)\nA-II, B-I, C-IV, D-III\nStructural Organisation in Animals\n",
+  "b4_script_options": {
+    "1": "A-II, B-I, C-III, D-IV",
+    "2": "A-IV, B-III, C-I, D-II",
+    "3": "A-III, B-IV, C-I, D-II",
+    "4": "A-II, B-I, C-IV, D-III\nStructural Organisation in Animals"
+  },
+  "official_answer": "3",
+  "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+  "status": "normal",
+  "subject": "Biology",
+  "branch": "zoology",
+  "b6_answer": "3",
+  "b6_reason": "Unicellular gland = goblet cells (III); compound epithelium lines moist buccal cavity (IV); multicellular gland = salivary gland (I); endocrine gland = pancreas (II).",
+  "b6_working": "",
+  "b6_confidence": "high",
+  "b6_note": "",
+  "b6_agrees_with_key": true
+}

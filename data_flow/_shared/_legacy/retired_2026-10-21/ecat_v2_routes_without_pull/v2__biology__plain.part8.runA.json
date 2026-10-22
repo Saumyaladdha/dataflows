@@ -1,0 +1,189 @@
+{
+  "group": "v2__biology__plain.part8",
+  "ratings": [
+    {
+      "question_id": "2015_A#q091",
+      "question_type": "statement_options",
+      "format": "pick_cause_or_effect",
+      "content_shape": "process",
+      "concept": "Tubular secretion: $\\mathrm{H^+}$ pumped from the tubule cells into the filtrate, which is what makes urine acidic",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "wrong_site_or_stage",
+          "option": "2",
+          "route": "Puts the sodium-hydrogen exchange in the peritubular capillaries. It happens across the tubule wall, into the filtrate, not inside the blood vessel."
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "Normal urine contains no plasma protein. Protein in urine is a sign of kidney damage, not the reason urine is acidic."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "Swaps in the potassium-sodium exchange. That exchange moves no $\\mathrm{H^+}$, so it adds no acid."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which mechanism accounts for a granted fact, demonstrated by the stem's \"Human urine is usually acidic because:\", which grants the acidity and asks only for its cause.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q092",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "practical_procedure",
+      "concept": "Avena coleoptile curvature test: the standard bioassay for auxin",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "Picks the bioassay for a different hormone. Lettuce hypocotyl elongation is used for gibberellin."
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "3",
+          "route": "Names a way of growing plants in nutrient solution without soil. It measures no hormone at all."
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "4",
+          "route": "Names the instrument for measuring transpiration rate. It tells you nothing about auxin."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored procedure, demonstrated by the stem's \"can be bioassayed by\", which asks for the named test and not for what auxin does.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q093",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "process",
+      "concept": "Ovulation: estradiol peaks and triggers the LH surge, so estradiol rises rather than falls at that point",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Names an event that does go with ovulation. The LH surge is what triggers it."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "Names an event that does go with ovulation. The Graafian follicle is fully mature just before the egg is shed."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Names an event that does go with ovulation. Ovulation is the release of the secondary oocyte."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four separate facts about one phase checked one at a time, demonstrated by \"Decrease in estradiol\" being a hormone-level fact that none of the other three options settles.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q094",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "organism_characteristic",
+      "concept": "Porifera: choanocytes line the canal system and filter food, with a larval (indirect) development",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "Flagellated collar cells lining internal cavities are choanocytes, which occur in sponges alone, so that one feature strikes out options 1, 2 and 4 together.",
+      "traps": [
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "Protozoa are single cells. There is no meshwork of cells and no internal canal system to describe."
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "Keys on \"internal cavities\" and thinks of the coelenteron. Cnidarians have one central cavity and no collar cells filtering food."
+        },
+        {
+          "label": "partial_combination",
+          "option": "4",
+          "route": "Matches only the last of the three features. Molluscs do develop through a larva, but they have no collar cells and no canal system."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored diagnostic feature, demonstrated by the stem's \"internal cavities lined with food filtering flagellated cells\", which describes choanocytes.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q095",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Aldosterone acts on $\\mathrm{Na^+}$ and $\\mathrm{K^+}$ balance, not on blood sugar",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "Names a hormone that does act on blood sugar. Glucagon raises it."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "Names a hormone that does act on blood sugar. Cortisone is a glucocorticoid and drives gluconeogenesis."
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "Names a hormone that does act on blood sugar. Insulin lowers it."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four hormone-to-role facts checked one at a time, demonstrated by the four options naming four different hormones, no one of which settles another.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q096",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "disease_cause",
+      "concept": "Babesiosis is a protozoan (Babesia) infection carried by ticks",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {
+          "label": "neighbouring_fact",
+          "option": "1",
+          "route": "Picks the other unfamiliar name on the list. Blastomycosis is fungal, as its ending -mycosis says."
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "Names a disease with a bacterial cause. Syphilis is caused by Treponema."
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "3",
+          "route": "Names a disease with a viral cause. Influenza is caused by a virus."
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four disease-to-agent facts checked one at a time, demonstrated by the four options naming four diseases whose agents are of four different kinds.",
+      "note": ""
+    }
+  ],
+  "group_note": "Five of the six are `plain_mcq`; q091 is the exception and is `statement_options`, because its stem is only the trailing \"because:\" and each option is a full sentence to be judged. That also sets q091's E2 apart - `pick_cause_or_effect`, a rival cause for a granted fact - where the other five are `name_or_identify`. On E4 the group splits on a stated test: where the four options are four unrelated facts that must each be checked, the structure is `several_independent_checks` (q093 four events against one phase, q095 four hormones, q096 four disease agents); where one named feature or mechanism settles the whole option set, it is `single_step` (q091's $\\mathrm{H^+}$ secretion, q092's named bioassay, q094's choanocytes). q091 alone is `explanatory_reasoning` because it asks what accounts for what; the rest are `recall` of taught associations. The two negated members, q093 and q095, each carry `true_statement_trap` on every option that is true of the subject, applied the same way in both. `elimination` is carried only by q094, where one printed feature - the collar cells - strikes out three options by itself."
+}

@@ -1,0 +1,113 @@
+{
+  "question_id": "Q-000625",
+  "field_sources": {
+    "exam": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "year": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "sitting": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "paper_codes": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "source_file": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "trust": {
+      "step": "B1",
+      "prompt_version": "v2",
+      "status": "pass"
+    },
+    "question_id": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "stem_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "statements": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_i": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "list_ii": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "options_en": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "structure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "has_figure": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    },
+    "negative_words": {
+      "step": "B3",
+      "prompt_version": "v1",
+      "status": "pass"
+    }
+  },
+  "exam": "NEET",
+  "year": 2023,
+  "sitting": "MAIN",
+  "paper_codes": [
+    "E2:103"
+  ],
+  "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E2/neet_2023_code-E2.pdf",
+  "trust": "unsure",
+  "stem_en": "Given below are two statements : One is labelled as Assertion A and the other is labelled as Reason R : In the light of the above statements, choose the most appropriate answer from the options given below :",
+  "statements": [
+    {
+      "label": "Assertion A",
+      "text": "The first stage of gametophyte in the life cycle of moss is protonema stage."
+    },
+    {
+      "label": "Reason R",
+      "text": "Protonema develops directly from spores produced in capsule."
+    }
+  ],
+  "list_i": [],
+  "list_ii": [],
+  "options_en": {
+    "1": "Both A and R are correct and R is the correct explanation of A.",
+    "2": "Both A and R are correct but R is NOT the correct explanation of A.",
+    "3": "A is correct but R is not correct.",
+    "4": "A is not correct but R is correct."
+  },
+  "structure": "assertion_reason",
+  "has_figure": false,
+  "negative_words": [
+    "NOT",
+    "not"
+  ]
+}

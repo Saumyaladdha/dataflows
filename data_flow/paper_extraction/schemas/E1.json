@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/E1.json",
+  "title": "E1 agent output (e1-type-tagger)",
+  "description": "Spec 13/E1 'Agent output': {\"question_type\",\"new_description\",\"confidence\"} -- matching .claude/agents/e1-type-tagger.md's worked example exactly, the same convention as every other agent-output schema in this build (schemas/B7.json, schemas/D4.json). THIS SCHEMA IS ONLY FOR THE AGENT HALF OF E1. Spec 13/E1 says the agent runs ONLY when no pattern in scripts/type_patterns.py decides, so most real questions never produce a file of this shape at all; scripts/checks/E1.py re-runs that classifier and fails an output whose question whose shape the script could have settled on its own. The `question_type` enum is config/allowed_values.yaml v0.3's list verbatim, 20 values, generated from docs/question_categories/RULEBOOK.md section 1. `note` is optional per Universal rule 7 ('if the input looks wrong ... say so in the note field'), following schemas/D11.json's precedent -- schemas/B7.json omits it, and that inconsistency is reported rather than copied. `codebook_version` is NOT part of this output: spec 13.0 makes recording it the RUNNER's job ('records its file hash as codebook_version on every tag it produced'), and only E4's output carries it because spec 13/E4 names it explicitly in the agent's own output shape.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["question_type", "new_description", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "question_type": {
+          "type": "string",
+          "enum": [ "arrange_in_order", "assertion_reason", "diagram_labelled", "experiment_based", "figure_to_read", "fill_in_blank", "graph_options", "list_of_statements", "list_of_structures", "match_the_lists", "multi_part_respectively", "new_type", "pair_options", "plain_mcq", "reaction_options", "reaction_scheme", "statement_i_ii", "statement_options", "structure_options", "table_based" ],
+          "description": "How the question is BUILT -- structure only. Never what the student must pick (that is E2/format), never the NCERT material (E3), never the thinking (E4). config/allowed_values.yaml question_type, v0.3."
+        },
+        "new_description": {
+          "type": "string",
+          "description": "One line, REQUIRED (non-empty) when question_type is new_type -- that is what E_NEW_CATEGORY (normal) carries to Stage F. Otherwise normally empty; codebook/E1.md §2 also uses it to record a legitimate SECOND E1 tag (e.g. 'also figure_to_read') because this output shape holds only one question_type, which is an open question for the owner (codebook/E1.md §5.1). Enforced in scripts/checks/E1.py."
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "note": {
+          "type": "string",
+          "description": "Universal rule 7. Optional."
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

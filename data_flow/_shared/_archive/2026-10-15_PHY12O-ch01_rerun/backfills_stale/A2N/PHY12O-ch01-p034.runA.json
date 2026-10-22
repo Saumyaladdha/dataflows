@@ -1,0 +1,36 @@
+{
+  "blocks": [
+    {"n": 3, "no_change": true},
+    {
+      "n": 5,
+      "corrected_text": "Now S, the total area of the sphere, equals 4πr². Thus,",
+      "fixes": [
+        {"wrong": "4πr 2", "right": "4πr²"}
+      ]
+    },
+    {"n": 7, "no_change": true},
+    {"n": 8, "no_change": true},
+    {
+      "n": 9,
+      "corrected_text": "Electric flux through a closed surface S = q/ε₀",
+      "fixes": [
+        {"wrong": "q/ε0", "right": "q/ε₀"}
+      ]
+    },
+    {"n": 10, "no_change": true},
+    {"n": 11, "no_change": true},
+    {
+      "n": 12,
+      "corrected_text": "Here the electric field is uniform and we are considering a closed cylindrical surface, with its axis parallel to the uniform field E. The total flux φ  through the surface is  φ = φ₁ + φ₂ + φ₃, where φ₁ and φ₂ represent the flux through the surfaces 1 and 2 (of circular cross-section) of the cylinder and φ₃ is the flux through the curved cylindrical part of the closed surface. Now the normal to the surface 3 at every point is perpendicular to E, so by definition of flux, φ₃ = 0. Further, the outward normal to 2 is along E while the outward normal to 1 is opposite to E. Therefore,",
+      "fixes": [
+        {"wrong": "φ1", "right": "φ₁"},
+        {"wrong": "φ2", "right": "φ₂"},
+        {"wrong": "φ3", "right": "φ₃"}
+      ]
+    },
+    {"n": 14, "no_change": true},
+    {"n": 15, "no_change": true},
+    {"n": 16, "no_change": true}
+  ],
+  "note": "n5 had a detached '4πr 2' restored to the superscript '4πr²'. n9 had the flattened 'ε0' restored to 'ε₀'. n12 had every occurrence of φ1/φ2/φ3 restored to subscripted φ₁/φ₂/φ₃ (the plain numbers labelling surfaces 1, 2, 3 themselves were left untouched, since those are surface labels, not subscripts on φ). All other listed blocks already matched the image."
+}

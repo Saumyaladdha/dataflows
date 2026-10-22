@@ -1,0 +1,84 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "charges, but also the time rate of change of electric field. More precisely, the total current i is the sum of the conduction current denoted by i_c, and the displacement current denoted by i_d (= ε0 (dΦ_E/dt)). So we have",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        616,
+        432,
+        1544,
+        508
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "In explicit terms, this means that outside the capacitor plates, we have only conduction current i_c = i, and no displacement current, i.e., i_d = 0. On the other hand, inside the capacitor, there is no conduction current, i.e., i_c = 0, and there is only displacement current, so that i_d = i."
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "The generalised (and correct) Ampere’s circuital law has the same form as Eq. (8.1), with one difference: “the total current passing through any surface of which the closed loop is the perimeter” is the sum of the conduction current and the displacement current. The generalised law is"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        616,
+        886,
+        1544,
+        961
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "and is known as Ampere-Maxwell law."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "In all respects, the displacement current has the same physical effects as the conduction current. In some cases, for example, steady electric fields in a conducting wire, the displacement current may be zero since the electric field E does not change with time. In other cases, for example, the charging capacitor above, both conduction and displacement currents may be present in different regions of space. In most of the cases, they both may be present in the same region of space, as there exist no perfectly conducting or perfectly insulating medium. Most interestingly, there may be large regions of space where there is no conduction current, but there is only a displacement current due to time-varying electric fields. In such a region, we expect a magnetic field, though there is no (conduction) current source nearby! The prediction of such a displacement current can be verified experimentally. For example, a magnetic field (say at point M) between the plates of the capacitor in Fig. 8.2(a) can be measured and is seen to be the same as that just outside (at P)."
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "The displacement current has (literally) far reaching consequences. One thing we immediately notice is that the laws of electricity and magnetism are now more symmetrical*. Faraday’s law of induction states that there is an induced emf equal to the rate of change of magnetic flux. Now, since the emf between two points 1 and 2 is the work done per unit charge in taking it from 1 to 2, the existence of an emf implies the existence of an electric field. So, we can rephrase Faraday’s law of electromagnetic induction by saying that a magnetic field, changing with time, gives rise to an electric field. Then, the fact that an electric field changing with time gives rise to a magnetic field, is the symmetrical counterpart, and is"
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "* They are still not perfectly symmetrical; there are no known sources of magnetic field (magnetic monopoles) analogous to electric charges which are sources of electric field."
+    },
+    {
+      "n": 10,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        216,
+        275,
+        562,
+        1312
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Physics",
+    "204",
+    "Reprint 2026-27"
+  ],
+  "note": "Block 9 is the page's rule-separated footnote (marked by the * in block 8), kept as a paragraph because there is no footnote kind in the allowed list. FIGURE 8.2 (parts a and b plus caption) occupies the upper left margin and is listed last as block 10 so the body flow stays unbroken; its bbox includes the caption. last_block_continues_on_next refers to the final running-text block (block 8), which ends mid-sentence at 'and is'. Page 3 ended 'due to flowing' and this page opens 'charges, but also the time rate of change...', so block 1 continues from it; judged from page 3, which I read myself in this batch (previous_page_last_block was null). TEXT LAYER vs IMAGE: the text layer renders ε0 as '✒0' and Φ_E as '✂E' and scrambles the displayed equations; Greek letters were taken from the image, subscripts written with _, and the equations left to the special transcriber."
+}

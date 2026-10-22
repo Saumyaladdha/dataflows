@@ -1,0 +1,11 @@
+{
+  "chapter_codes": [
+    "unsure"
+  ],
+  "chapter_names": [
+    "unsure"
+  ],
+  "why": "The answer depends on the photoelectric equation, (1/2)mv^2 = hc(1/lambda - 1/lambda0), to get the ejected electron's speed, a photoelectric-effect fact that no chapter in the supplied list teaches.",
+  "confidence": "high",
+  "note": "SECTION-ORDER BUG upstream, not a taxonomy gap: this input carries subject \"Biology\" and the 32-chapter Biology closed list, but paper 2017_C runs Biology Q1-90, Physics Q91-135, Chemistry Q136-180. A Physics question was handed the Biology list, so no correct code exists in it. Expected chapter: 'Modern Physics' (PHYNEETENGMOP: photoelectric effect, threshold wavelength, Einstein's equation), not offered. Note the source marks this item as having two accepted keys ('Answer (2 & 3)') and correct_answer is null in the input."
+}

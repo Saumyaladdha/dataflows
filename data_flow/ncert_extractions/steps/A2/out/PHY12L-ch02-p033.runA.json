@@ -1,0 +1,111 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "6. Potential energy stored in a system of charges is the work done (by an external agency) in assembling the charges at their locations. Potential energy of two charges q1, q2 at r1, r2 is given by",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 420, 455, 492],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "where r12 is distance between q1 and q2."
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "7. The potential energy of a charge q in an external potential V(r) is qV(r). The potential energy of a dipole moment p in a uniform electric field E is  –p.E."
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "8. Electrostatics field E is zero in the interior of a conductor; just outside the surface of a charged conductor, E is normal to the surface given by"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 745, 360, 820],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "where ˆn is the unit vector along the outward normal to the surface and σ is the surface charge density. Charges in a conductor can reside only at its surface. Potential is constant within and on the surface of a conductor. In a cavity within a conductor (with no charges), the electric field is zero."
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "9.  A capacitor is a system of two conductors separated by an insulator. Its capacitance is defined by C = Q/V, where Q and –Q are the charges on the two conductors and V is the potential difference between them. C is determined purely geometrically, by the shapes, sizes and relative positions of the two conductors. The unit of capacitance is farad:, 1 F = 1 C V –1. For a parallel plate capacitor (with vacuum between the plates),"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 1205, 395, 1280],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "where A is the area of each plate and d the separation between them."
+    },
+    {
+      "n": 11,
+      "kind": "list",
+      "text": "10. If the medium between the plates of a capacitor is filled with an insulating substance (dielectric), the electric field due to the charged plates induces a net dipole moment in the dielectric. This effect, called polarisation, gives rise to a field in the opposite direction. The net electric field inside the dielectric and hence the potential difference between the plates is thus reduced. Consequently, the capacitance C increases from its value C0 when there is no medium (vacuum),"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 1625, 345, 1665],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "where K is the dielectric constant of the insulating substance."
+    },
+    {
+      "n": 14,
+      "kind": "list",
+      "text": "11. For capacitors in the series combination, the total capacitance C is given by"
+    },
+    {
+      "n": 15,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 1745, 515, 1820],
+      "text": ""
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "In the parallel combination, the total capacitance C is:"
+    },
+    {
+      "n": 17,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [240, 1860, 460, 1900],
+      "text": ""
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "where C1, C2, C3... are individual capacitances."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": ["Electrostatic Potential and Capacitance", "77", "Reprint 2026-27"],
+  "note": "Whole page is the continuation of the chapter SUMMARY box (shaded box, numbered points 6-11); points 1-5 are on the previous page. previous_page_last_block was null in the input even though page is 33, so the continuation flag was judged from the page image (box starts mid-list at item 6). The shaded box visibly closes above the page number, so the summary does not run onto the next page. The six built-up/displayed formulas are marked needs_special with empty text; bboxes are estimates in pixels of the 1700x2160 page image. Inline math kept as the text layer holds it (e.g. '1 F = 1 C V –1', 'ˆn'); one exception: the text layer renders the surface charge density symbol as 's' where the image clearly shows 'σ', so 'σ' was used. Oddities left uncorrected as printed: 'The unit of capacitance is farad:,' and the double space in 'is  –p.E.'"
+}

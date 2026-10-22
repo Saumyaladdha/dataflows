@@ -1,0 +1,43 @@
+{
+  "page": {
+    "width_px": 1653,
+    "height_px": 2339,
+    "body_text_size_px": 20,
+    "columns": [
+      {"id": "left", "x0": 0.118, "x1": 0.356},
+      {"id": "right", "x0": 0.363, "x1": 0.797}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.025, 0.068, 0.756, 0.108],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435"},
+    {"n": null, "role": "decorative_image", "bbox": [0.756, 0.068, 0.975, 0.158],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.119, 0.140, 0.266, 0.147],
+     "column": "full", "size_rel": 0.75, "align": "left", "font": "sans"},
+    {"n": 1, "role": "paragraph", "bbox": [0.118, 0.167, 0.677, 0.317],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 2, "role": "section_heading", "bbox": [0.119, 0.334, 0.551, 0.345],
+     "column": "full", "size_rel": 1.25, "align": "left", "font": "serif-bold",
+     "text_color": "#00b14d"},
+    {"n": 3, "role": "paragraph", "bbox": [0.117, 0.359, 0.676, 0.432],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "paragraph", "bbox": [0.118, 0.436, 0.678, 0.801],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "paragraph", "bbox": [0.119, 0.804, 0.346, 0.847],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "figure", "bbox": [0.363, 0.570, 0.797, 0.823],
+     "column": "right", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.389, 0.829, 0.785, 0.852],
+     "column": "right", "size_rel": 0.9, "align": "center", "font": "serif",
+     "fill": "#fff2e2"},
+    {"n": null, "role": "page_number", "bbox": [0.800, 0.745, 0.975, 0.779],
+     "column": "full", "size_rel": 1.35, "align": "left", "font": "sans",
+     "fill": "#f7941d", "text_color": "#ffffff"},
+    {"n": null, "role": "footer_rule", "bbox": [0.800, 0.782, 0.975, 0.788],
+     "column": "full", "size_rel": 1.0, "fill": "#f7941d"},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.893, 0.522, 0.900],
+     "column": "full", "size_rel": 0.7, "align": "center", "font": "sans"}
+  ],
+  "note": "Recto body page (printed page 53), mixed measure. Blocks 1-4 run at the full text measure x=0.118-0.678; from y~0.56 the prose narrows to a left column (x=0.118-0.356) beside Figure 3.12, which occupies a right column (x=0.363-0.797) and bleeds into the outer margin. Paragraph boundaries were set from first-line indents (block 4 starts at the indented line y=0.436, block 6 at the indented line y=0.804). Block 4 is the genuinely ambiguous one: it BEGINS at full measure (eight lines) and then wraps into the narrow left column for its remaining sixteen lines, so it is recorded as column \"full\" with a bbox covering both. Elements are listed left-column-complete (blocks 4 then 6) before the right-column figure and caption. body_text_size_px=20 measured as ascender-to-baseline on the full-measure prose (36px leading). Band roles kept distinct: page_header_band is the dark green strip at the top, sampled #4a7435 from its flat interior at y~200 (agrees with the chapter reference); footer_rule is the thin orange rule at y=0.782-0.788 under the page-number tab, sampled mean #f7941e, reported #f7941d; there is NO rule_bar on this page (that belongs only to the chapter-opening page). The orange page-number tab (#f7941d, white \"53\") is a separate page_number element, not a band. Section heading 3.6 samples #00b14d in its solid glyph cores, marginally greener than the chapter reference #06ac48 but within antialiasing noise of it. Figure caption sits on a pale peach band #fff2e2. Block 5 (A2's figure block) is matched to the figure artwork; the caption line carries n: null because no A2 block holds its text. The decorative top-right corner (orange stripe + brown panel + leaf/figure motif) is one decorative_image. The \"2022-23\" imprint at the page foot has no dedicated role in the allowed list; recorded as a running_header, size_rel 0.7."
+}

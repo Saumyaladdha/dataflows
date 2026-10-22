@@ -1,0 +1,30 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 15.0,
+    "columns": [
+      {"id": "full", "x0": 0.125, "x1": 0.876}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_number", "bbox": [0.125, 0.0872, 0.139, 0.094],
+     "column": "full", "size_rel": 1.07, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.799, 0.0872, 0.876, 0.094],
+     "column": "full", "size_rel": 1.07, "align": "right", "font": "serif", "text_color": "#221f1f"},
+    {"n": 1, "role": "table_caption", "bbox": [0.270, 0.1197, 0.727, 0.1317],
+     "column": "full", "size_rel": 1.33, "align": "center", "font": "serif-bold",
+     "text_color": "#00adef"},
+    {"n": 2, "role": "table", "bbox": [0.1457, 0.1477, 0.848, 0.8500],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif",
+     "text_color": "#221f1f", "fill": "#e9eaf5"},
+    {"n": 3, "role": "paragraph", "bbox": [0.1486, 0.8560, 0.4663, 0.8651],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "decorative_image", "bbox": [0.23, 0.30, 0.85, 0.79],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.477, 0.9555, 0.522, 0.9624],
+     "column": "full", "size_rel": 1.07, "align": "center", "text_color": "#221f1f"}
+  ],
+  "note": "Single full-width column: the whole page is one table (Table 2.6, elements H to Xe) with its cyan caption above and a one-line italic footnote below. WARNING on body_text_size_px: this page carries NO ordinary body prose at all, so there is nothing on it to measure the brief's reference height on. The 15.0 reported is the cap-to-baseline of the footnote line '* Elements with exceptional...' (y 1867-1881), which is also the cap height of the table's own cell text (the 'H' of the first data row, y 381-395) - i.e. the page's whole running type. For comparison, ordinary body prose on the neighbouring pages 036/039 measures about 20.5 px, so every size_rel on THIS page is referenced to a base 0.73x smaller than on those pages and must be rescaled before any chapter-wide comparison. The table's tint is not flat: it is a very soft lavender gradient. #e9eaf5 is the dominant flat-interior value, sampled twice (y 700-760 x 300-340 and y 1600-1640 x 1200-1300); the header row is a fraction darker at about #e4e3f1. The table is ruled in near-black and is inset from the page measure, spanning x 0.1457-0.848 against the running head's 0.125-0.876; its horizontal rules fall at y 0.1477 (top), 0.1706 (under the header row), 0.1972, 0.3014, 0.5495 and 0.8500 (foot), grouping the periods. No chapter banner, no page_header_band, no footer_rule, no full-page tint on this page. Block 3's footnote is given role 'paragraph' rather than table_caption, since block 1 is the table's actual caption. The diagonal grey NCERT watermark lies over the tint; automatic detection was defeated by the gradient, so its bbox here is an honest visual estimate consistent with the measured envelopes on pages 036-037, not a precise measurement. The centred '2024-25' at the foot is a running footer; the allowed role list has no running_footer, so running_header is used, font omitted as unsure. All three A2 blocks were placed by position."
+}

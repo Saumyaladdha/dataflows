@@ -1,0 +1,50 @@
+{
+  "page": {
+    "width_px": 1750,
+    "height_px": 2180,
+    "body_text_size_px": 20.0,
+    "columns": [
+      {"id": "left", "x0": 0.125, "x1": 0.489},
+      {"id": "right", "x0": 0.515, "x1": 0.878}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "running_header", "bbox": [0.1263, 0.0872, 0.2703, 0.0945],
+     "column": "full", "size_rel": 0.8, "align": "left", "font": "sans", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.8623, 0.0872, 0.8766, 0.094],
+     "column": "full", "size_rel": 0.8, "align": "right", "font": "sans", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.1257, 0.1193, 0.4851, 0.1963],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif-bold"},
+    {"n": 2, "role": "paragraph", "bbox": [0.1263, 0.2073, 0.4891, 0.3321],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 3, "role": "section_heading", "bbox": [0.1263, 0.3436, 0.4806, 0.3564],
+     "column": "left", "size_rel": 1.05, "align": "left", "font": "sans", "text_color": "#00adef"},
+    {"n": 4, "role": "paragraph", "bbox": [0.1251, 0.3633, 0.4857, 0.4564],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 5, "role": "paragraph", "bbox": [0.1263, 0.4674, 0.4857, 0.5119],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 6, "role": "list", "bbox": [0.1269, 0.5188, 0.3126, 0.556],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif"},
+    {"n": 7, "role": "figure", "bbox": [0.1251, 0.5633, 0.4874, 0.595],
+     "column": "left", "size_rel": 1.0},
+    {"n": 8, "role": "paragraph", "bbox": [0.1257, 0.6028, 0.4857, 0.8197],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 9, "role": "paragraph", "bbox": [0.1257, 0.8271, 0.4851, 0.9183],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "paragraph", "bbox": [0.5154, 0.1193, 0.876, 0.1798],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 10, "role": "figure", "bbox": [0.5914, 0.1885, 0.7709, 0.2174],
+     "column": "right", "size_rel": 1.0},
+    {"n": 11, "role": "paragraph", "bbox": [0.5149, 0.2266, 0.8777, 0.3835],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 12, "role": "paragraph", "bbox": [0.5154, 0.3913, 0.8766, 0.5151],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 13, "role": "figure", "bbox": [0.5177, 0.5344, 0.8743, 0.7463],
+     "column": "right", "size_rel": 1.0},
+    {"n": 14, "role": "paragraph", "bbox": [0.5154, 0.7569, 0.876, 0.9165],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": null, "role": "running_header", "bbox": [0.4771, 0.9555, 0.5229, 0.9628],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans", "text_color": "#231f20"}
+  ],
+  "note": "Two-column body page, recto (page 63): running header 'STRUCTURE OF ATOM' top-left, folio top-right, plain text on bare paper. No chapter banner, no coloured page_header_band, no footer_rule; the foot carries only the centred edition line '2024-25', recorded as a second running_header because the role list has no footer-text value. Page is 1750x2180 px, aspect 0.803, not A4. body_text_size_px = 20.0, cap-to-baseline measured on body capitals in both columns ('S' of 'Since there are three p', 'T' of 'The hydrogen atom has only one electron'). Every element on this page sits on BARE PAPER - there is no tinted panel, coloured band or table fill anywhere, so no 'fill' is reported on any element. Block 9 breaks across the gutter: it starts six lines from the foot of the left column (the element carrying n 9) and continues for four lines at the head of the right column, starting '1s orbital. Its configuration is, therefore, 1s2.'; that continuation is a separate element with n null. Block 1 is set entirely in bold serif (font serif-bold), being the continuation of the Hund's-rule statement begun on the previous page. Block 3 '2.6.5 Electronic Configuration of Atoms' is a bold sans heading in cyan #00adef, cap 21 px (size_rel 1.05); 'sans' is the nearest allowed font value since there is no sans-bold. Blocks 7, 10 and 13 are the three orbital-box diagrams (the empty s/p/d box row with its s, p, d labels; the H and He 1s boxes; and the Li-to-Ne 1s/2s/2p array with its element labels down the left and subshell labels along the foot). A2 blocked all three as figures and I kept role 'figure' for each, including block 13, because they are drawn box-and-arrow diagrams rather than ruled tables; none of the three carries a printed 'Fig. 2.x' caption, so no figure_caption element accompanies them. Block 6 is the two-item (i)/(ii) list. No displayed equation or reaction scheme prints on this page; all configurations are inline superscript notation inside paragraphs. A grey 'NCERT / not to be republished' watermark crosses the page; it is a print artefact and is not listed as an element."
+}

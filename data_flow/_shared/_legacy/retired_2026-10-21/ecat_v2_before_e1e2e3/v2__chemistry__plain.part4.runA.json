@@ -1,0 +1,174 @@
+{
+  "group": "v2__chemistry__plain.part4",
+  "ratings": [
+    {
+      "question_id": "2015_A#q020",
+      "concept": "What Avogadro's number fixes: the mole is a count of particles, so molar mass scales with N_A, while formula ratios and the gram are defined without it",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that the ratios in a balanced equation and in a compound's formula are fixed by the formulae themselves, with no counting constant entering them, strikes out options 1 and 2.",
+      "traps": [
+        {
+          "label": "wrong_quantity",
+          "option": "3",
+          "route": "'The definition of mass in units of grams' names the other quantity in the pair grams-per-mole: N_A defines the mole, the amount unit, while the gram is defined independently of how many particles are counted, so the option answers for the unit of mass where the question turns on the unit of amount"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "'The ratio of chemical species to each other in a balanced equation' is fixed by conservation of atoms, and N_A appears nowhere in a stoichiometric coefficient; changing the constant by a factor of 10^-3 leaves every coefficient unchanged, so no route from the stem's change reaches this option"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "2",
+          "route": "'The ratio of elements to each other in a compound' is fixed by the compound's formula, again with no N_A in it, so the stem's change cannot reach this option either; it widens the spread of an option set in which only one quantity is defined by the constant"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires separating the one quantity that N_A defines from three that are defined without it, demonstrated by option 4's 'The mass of one mole of carbon', one mole being by definition N_A atoms, so that cutting N_A by a factor of a thousand cuts that mass by the same factor.",
+      "note": "Structure is single_step: one stored relation, that a mole is N_A particles so molar mass is N_A times the atomic mass, identifies option 4 without any of the other options having to be worked through. The elimination shortcut is recorded on the strategy axis."
+    },
+    {
+      "question_id": "2015_A#q021",
+      "concept": "A nucleophile is an electron-pair donor, that is a Lewis base, and attacks electron-poor sites",
+      "cognitive_demand": "concept_discrimination",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "'Nucleophiles attack low e- density sites' is correct for a nucleophile and so fails the stem's negated task, 'is not correct for a nucleophile'"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "'Nucleophiles are not electron seeking' is correct - the electron-seeking species is the electrophile - and fails the same negated polarity"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "'Ammonia is a nucleophile' is correct, the nitrogen lone pair being the donor, and fails the same negated polarity"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires holding two neighbouring definitions apart under a negated task, demonstrated by option 3's 'Nucleophile is a Lewis acid', where a Lewis acid accepts the electron pair that a nucleophile by definition donates.",
+      "note": "Option 2 is printed as a negative claim ('are not electron seeking') inside a negated task, so judging it means resolving a double negative. Rulebook section 6 records NOT in the task only; the 'not' inside option 2 is part of a statement being judged, not part of the task, and does not change the task polarity."
+    },
+    {
+      "question_id": "2015_A#q022",
+      "concept": "Deviation from ideal gas behaviour: a real gas approaches the ideal gas law at high temperature and low pressure, where molecular volume and intermolecular attraction are both negligible",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that a gas approaches ideality as the pressure falls, molecules then being far enough apart for attractions and their own volume to be negligible, strikes out options 1 and 4, which both print 'high pressures'.",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "4",
+          "route": "'Low temperatures and high pressures' is the key printed with both conditions inverted - these are the conditions under which a real gas deviates most and liquefies, the exact reverse of 'High temperatures and low pressures'"
+        },
+        {
+          "label": "half_true",
+          "option": "1",
+          "route": "'High temperatures and high pressures' carries two claims of which one holds: the temperature condition is right and the pressure condition fails, since at high pressure the molecules' own volume is no longer negligible against the container's"
+        },
+        {
+          "label": "half_true",
+          "option": "2",
+          "route": "'Low temperatures and low pressures' is the complementary half-right option: the pressure condition is right and the temperature condition fails, since at low temperature the kinetic energy no longer overcomes intermolecular attraction"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires two independent stored conditions to be held together, demonstrated by the four options being the two values of temperature crossed with the two values of pressure, so that an option is correct only if both halves are.",
+      "note": "The option set is the two conditions crossed with each other, which is the complementary_grid pattern; that label describes a whole option set while a trap entry must name one option, so the grid is recorded here and each option carries the label for what it actually gets wrong - both conditions inverted on option 4, one of the two on options 1 and 2. Structure is several_independent_checks because temperature and pressure are judged separately and the verdicts combined."
+    },
+    {
+      "question_id": "2015_A#q023",
+      "concept": "Valence bond treatment of a four-coordinate nickel(II) complex: the strong-field CN- ligand pairs the 3d8 electrons, freeing a 3d orbital for dsp2 hybridisation and square planar geometry",
+      "cognitive_demand": "application",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that the complex is four-coordinate, so exactly four hybrid orbitals are needed, strikes out option 1 (d2sp2, five orbitals) and option 2 (d2sp3, six orbitals) by counting the letters in the labels alone.",
+      "traps": [
+        {
+          "label": "condition_ignored",
+          "option": "4",
+          "route": "sp3 is what the stem gives once the identity of the printed ligand is dropped: with a weak-field ligand nickel(II) keeps its two unpaired 3d electrons and hybridises sp3 to a tetrahedral complex, which is correct for a nickel(II) halide complex but not for the cyanide the stem prints"
+        },
+        {
+          "label": "neighbouring_question_answer",
+          "option": "2",
+          "route": "d2sp3 is the standard published hybridisation for an octahedral complex, the answer to the same question asked about a six-coordinate species; the stem prints a four-coordinate ion"
+        },
+        {
+          "label": "look_alike_term",
+          "option": "1",
+          "route": "'d2sp2' differs from the key 'dsp2' by one superscript and names a set of five hybrid orbitals, which matches no coordination number in the stem; the two terms are d2sp2 and dsp2"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires applying the valence bond scheme to a named complex in order - oxidation state, then d-electron count, then the effect of the ligand's field - demonstrated by the stem supplying 'Atomic number of Ni = 28', which is needed only to reach the d8 configuration that the hybridisation then follows from.",
+      "note": "Structure is multi_step_dependent because the hybridisation cannot be named until the d8 count has been established from the oxidation state, and that count is the input to the pairing step; this is step 2 needing step 1's result, not four independent checks."
+    },
+    {
+      "question_id": "2015_A#q024",
+      "concept": "Scaling a molar enthalpy by amount of substance: moles from mass divided by molar mass, then heat equals n times the molar enthalpy change",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination", "estimation"],
+      "strategy_evidence": "The one fact that the printed enthalpy is negative, heat being released, strikes out option 4, '+315 kJ', the only positive value in the set.",
+      "traps": [
+        {
+          "label": "sign_reversed_magnitude_right",
+          "option": "4",
+          "route": "'+315 kJ' carries the correct magnitude by the correct method - 35.2/44 = 0.8 mol, times 393.5 kJ/mol - with the sign inverted, although the stem prints the heat of combustion as -393.5 kJ/mol and asks for heat released"
+        },
+        {
+          "label": "wrong_exponent",
+          "option": "2",
+          "route": "'-3.15 kJ' is the key's digits with the decimal point moved two places, a factor of 10^2 below the -315 kJ that 0.8 x 393.5 gives"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "'-630 kJ' is 393.5 x 1.6, the result of dividing 35.2 g by 22 rather than by the molar mass 44 g/mol, which doubles the amount of substance to 1.6 mol"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires computing a number in two dependent steps, demonstrated by the stem's '35.2 g of CO2' having to be converted to moles before the printed '-393.5 kJ/mol' can be applied to it.",
+      "note": "estimation is recorded because 0.8 of 393.5 is close enough to 315 to separate the options without exact arithmetic; the elimination evidence names the sign fact and the option it strikes, as rule 4c requires."
+    },
+    {
+      "question_id": "2015_A#q026",
+      "concept": "Converting molality to mole fraction: 1 kg of water is 55.5 mol, so one molal gives x_solute = 1/(1 + 55.5)",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination", "estimation"],
+      "strategy_evidence": "The one fact that a mole fraction cannot exceed 1 strikes out option 4, '1.770'; the further fact that the solute is 1 mol against 1000/18 = 55.5 mol of water, so the fraction is of order one in fifty, strikes out option 3, '0.177'.",
+      "traps": [
+        {
+          "label": "wrong_exponent",
+          "option": "4",
+          "route": "'1.770' is the key's digits with the decimal point moved two places, a factor of 10^2 above 0.0177, and the value exceeds unity, which no mole fraction can"
+        },
+        {
+          "label": "wrong_exponent",
+          "option": "3",
+          "route": "'0.177' is the same digit string with the point moved one place, ten times the 1/56.5 the stem's one molal gives"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "'0.0354' is exactly twice the key, 2/56.5, the result of doubling the solute term in the numerator while leaving the total of 56.5 mol unchanged"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires computing a number in two dependent steps, demonstrated by the stem's '1.00 m aqueous solution' fixing 1 mol of solute in 1000 g of water, whose own amount in moles has to be found before any fraction can be formed.",
+      "note": "The stem prints molality as the lower-case 'm' and gives no molar mass; 18 g/mol for water is supplied by the student, which is standard for this question and not a gap in our record. estimation is recorded because 1 in 56.5 is separable from the other three values without exact division."
+    }
+  ],
+  "group_note": "Six questions grouped on the printed shape 'plain', and the packet is genuinely mixed: q024 and q026 are numerical items whose options are quantities, while the other four are conceptual items whose options are claims or labels. That difference is real and is recorded rather than flattened - the two numericals are the only members carrying the demand 'calculation' and the structure multi_step_dependent, and a later pass should expect their answer form to be a computed value. The axes were set by the same tests across all six. Demand: what is the live decision? q024 and q026 compute a number from the stem's own numbers, which is calculation. q023 applies a known scheme to a named species in a fixed order, which is application. q020 and q021 each turn on separating two neighbouring ideas - what the counting constant defines against what the gram and the formula define, and a Lewis base against a Lewis acid - which is concept_discrimination. q022 is a single stored condition pair from the text, which is recall; it is not application because nothing in the stem is applied to data. None needed condition_based_reasoning here, unlike this subject's statement packet. Structure: does the task force a verdict on more than one item, or does one result feed the next? q021 is negated ('is not correct') and so has to be judged option by option; q022's answer is two conditions judged separately and combined; both are several_independent_checks. q023, q024 and q026 each have a step that consumes the previous step's result - the d8 count before the hybridisation, moles before the enthalpy, moles of water before the fraction - and are multi_step_dependent. q020 alone is single_step, settled by the single relation that a mole is N_A particles. Elimination was recorded on five of the six and withheld from q021, on one rule: name a fact and the options it strikes out, where striking is a shortcut rather than the task itself. On q021 the task IS to strike the true options, so no shortcut exists over it. The five recorded shortcuts are each a counting or sign fact rather than the answer - stoichiometric ratios carry no N_A (q020), gases ideal at low pressure (q022), four coordination sites need four hybrid orbitals (q023), heat released is negative (q024), a mole fraction cannot exceed 1 (q026). estimation was added only to the two numericals, where the arithmetic is separable by magnitude alone. On the trap axis the devices were labelled by what is printed. The two numericals carry the numeric family: one sign inverted with the magnitude intact (q024 option 4), decimal-point shifts (q024 option 2, q026 options 3 and 4), and one named wrong operation each (q024 option 1 dividing by 22, q026 option 1 doubling the numerator). The conceptual items carry the verbal family: true_statement_trap three times on q021, where the negated polarity makes every non-key option a true claim; half_true twice and semantic_reversal once on q022, whose option set is the two conditions crossed with each other; and on q023 one option that is right once the printed ligand's field strength is ignored, one that is the published answer for an octahedral complex, and one whose label differs from the key by a single superscript. no_derivation_route was used twice, on q020's options 1 and 2, and in both cases demonstrated by N_A not appearing in a stoichiometric ratio rather than asserted. No trap in this packet is placed on an official answer, and no option carries two traps."
+}

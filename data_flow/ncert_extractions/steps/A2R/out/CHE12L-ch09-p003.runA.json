@@ -1,0 +1,8 @@
+{
+  "verdict": "minor_differences",
+  "findings": [
+    {"kind": "formatting", "what": "The caption 'Table 9.1: Nomenclature of Some Alkylamines and Arylamines' is set bold and centred over the table in the book; the render sets it in plain body-weight type, left-aligned and butted straight against the table's top edge with no space, so it reads as a trailing line of the preceding paragraph rather than a table title.", "where": "immediately above Table 9.1"},
+    {"kind": "formatting", "what": "Subscripts in the running text are set as small full-height digits on the baseline instead of lowered subscripts: (CH3CH2)3N, C6H5NH2, -NH2, C6H5-NH2. Inside the Table 9.1 image the same subscripts are correctly lowered, so the two do not match.", "where": "the two paragraphs above Table 9.1"}
+  ],
+  "note": "Compared the two carry-over paragraphs and all twelve rows of Table 9.1. Every row is present and in the book's order - ethylamine, n-propylamine, isopropylamine, ethylmethylamine, trimethylamine, N,N-diethylbutylamine, allylamine, hexamethylenediamine, aniline, o-toluidine, p-bromoaniline, N,N-dimethylaniline - with all three columns filled, the structures intact (benzene rings complete, carbon-numbering 1-2-3-4 present, the green Br and magenta NH2/N colour coding preserved) and the two-line '4-Bromobenzenamine / or / 4-Bromoaniline' entry complete. Nothing is clipped at the table's edges. The table is drawn as one image narrower than the book's measure, which I treated as scale rather than a defect; the empty lower third is the normal page break."
+}

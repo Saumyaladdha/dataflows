@@ -1,0 +1,45 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "13.7 The fission properties of ^239_94 Pu are very similar to those of ^235_92 U . The average energy released per fission is 180 MeV. How much energy, in MeV, is released if all the atoms in 1 kg of pure ^239_94 Pu undergo fission?",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "13.8 How long can an electric lamp of 100W be kept glowing by fusion of 2.0 kg of deuterium? Take the fusion reaction as"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        546,
+        512,
+        882,
+        554
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "13.9 Calculate the height of the potential barrier for a head on collision of two deuterons. (Hint: The height of the potential barrier is given by the Coulomb repulsion between the two deuterons when they just touch each other. Assume that they can be taken as hard spheres of radius 2.0 fm.)"
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "13.10 From the relation R = R₀A^1/3, where R₀ is a constant and A is the mass number of a nucleus, show that the nuclear matter density is nearly constant (i.e. independent of A)."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "322",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read page 16 of this chapter immediately before: it ended with exercise 13.6 complete and blank space below, and this page opens with exercise 13.7 — a new numbered item, not a mid-sentence continuation — so first_block_continues_from_previous is false on that direct evidence, even though the exercise list itself carries over. These are the chapter's own end-of-chapter exercises, so they are blocked as content, not treated as back matter. Block 3 is the display fusion reaction in exercise 13.8, left to the special transcriber with a pixel bbox (the text layer flattens it to '2\\n2\\n3\\n1\\n1\\n2\\nH+ H\\nHe+n+3.27 MeV'). The exercise 13.10 relation is set inline, so it is kept as text. This is the last page of the chapter: exercise 13.10 ends with a complete sentence and the bottom two-thirds of the page carries only the watermark, the page number and the footer, so last_block_continues_on_next is false. Text-layer/image notation discrepancies, taken from the image: nuclide symbols arrive as bare digits split across lines ('239\\n94 Pu' -> superscript 239 / subscript 94 before Pu, '235\\n92 U', '2\\n1 H', '3\\n2 He'), written here as ^239_94 Pu etc. per the convention used throughout this chapter, and superscripts/subscripts are dropped ('R0A1/3' -> R with subscript 0 and A with superscript 1/3, written here as R₀A^1/3). Italics (R, A) are not preserved."
+}

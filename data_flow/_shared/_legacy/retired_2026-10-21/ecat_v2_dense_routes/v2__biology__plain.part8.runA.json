@@ -1,0 +1,189 @@
+{
+  "group": "v2__biology__plain.part8",
+  "ratings": [
+    {
+      "question_id": "2015_A#q091",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "process",
+      "concept": "Tubular secretion of hydrogen ions by the nephron, and why it makes the urine acidic",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "wrong_site_or_stage",
+          "option": "2",
+          "route": "moves a real event to the wrong place: the sodium-hydrogen exchange does occur, but at the apical membrane of the tubule cell, where the hydrogen ion is put INTO the filtrate; option 2 sites it \"in peritubular capillaries\", which is the blood side, where it would acidify the blood and not the urine"
+        },
+        {
+          "label": "no_derivation_route",
+          "option": "3",
+          "route": "the glomerular filter retains plasma proteins, so normal urine contains none; with no protein excreted there is no quantity in the stem's situation for option 3's acidity to come from"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "4",
+          "route": "names the wrong one of two exchanges: sodium-potassium exchange moves no proton at all, while the exchange that acidifies the filtrate is sodium-hydrogen; the fact in option 4 belongs to potassium balance, not to urine pH"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires deciding which of four mechanisms accounts for a granted fact, demonstrated by the stem's \"Human urine is usually acidic because\", which concedes the acidity and puts the causal link itself in question.",
+      "note": "The phrase \"is usually acidic because\" also appears as the whole predicate of 2015_A#q046 in packet v2__biology__plain.part1, where it fits none of that question's options; this question is where it belongs, and that one is where the damage is."
+    },
+    {
+      "question_id": "2015_A#q092",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "practical_procedure",
+      "concept": "Auxin bioassay: the Avena coleoptile curvature test",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "other_one_fact",
+          "option": "1",
+          "route": "names the bioassay of a different hormone of the same family: lettuce hypocotyl elongation is the gibberellin assay, not the auxin one"
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "3",
+          "route": "hydroponics is correct subject matter - soil-less culture for establishing essential mineral requirements - but it answers how nutrient essentiality is tested, not the stem's \"Auxin can be bioassayed by\""
+        },
+        {
+          "label": "true_but_out_of_scope",
+          "option": "4",
+          "route": "a potometer is a real instrument that measures the rate of transpiration; it assays water loss, not hormone activity, so it answers a different question from the one the stem asks"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one stored pairing of a hormone with its named bioassay, demonstrated by the stem's \"Auxin can be bioassayed by\" over four named procedures, only one of which is a hormone assay for auxin.",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q093",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "process",
+      "concept": "Hormonal events of the ovulatory phase: oestradiol peaks and triggers the LH surge, so it rises rather than falls at ovulation",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "the task is negated (\"is not associated with ovulation\"); the LH surge is the defining event of ovulation, so option 1 answers the un-negated question"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "3",
+          "route": "the task is negated; full development of the Graafian follicle immediately precedes and accompanies ovulation, so option 3 is an associated event offered where the unassociated one is asked for"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "the task is negated; release of the secondary oocyte IS ovulation, so option 4 is the event most securely associated rather than not"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four events checked separately against one phase of the cycle under a negated task, demonstrated by the stem's \"is not associated with ovulation in human female\" over \"LH surge / Decrease in estradiol / Full development of Graafian follicle / Release of secondary oocyte\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q094",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "organism_characteristic",
+      "concept": "Diagnostic features of Porifera: a canal system lined with food-filtering choanocytes, and indirect development through a larva",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [
+        "elimination"
+      ],
+      "strategy_evidence": "\"food filtering flagellated cells\" - the choanocytes - occur in sponges alone among the four phyla printed, so that one feature settles the answer on option 3 without the other two features being used; and the stem's \"meshwork of cells\" strikes out option 1 by itself, Protozoa being unicellular.",
+      "traps": [
+        {
+          "label": "no_derivation_route",
+          "option": "1",
+          "route": "the stem prints \"Body having meshwork of cells\", and protozoans are unicellular, so the stem's own first feature excludes option 1 before any other feature is considered; no reading reaches it"
+        },
+        {
+          "label": "other_one_fact",
+          "option": "2",
+          "route": "names Coelenterata, the adjacent member of the same series, which does have an internal cavity and indirect development, so two of the stem's three features fit it; the fact that separates it is that its cavity is lined with gastrodermal cells and nematocysts, not with food-filtering collar cells"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires matching a stored diagnostic feature set to a phylum, demonstrated by the stem's \"internal cavities lined with food filtering flagellated cells\", which is the sponge choanocyte and nothing else.",
+      "note": "Option 4 (Mollusca) carries no trap: none of the stem's three features - cellular meshwork, choanocyte-lined cavities, indirect development through a larva - picks out molluscs over the other three options, so no specific fact can be named as the route to it."
+    },
+    {
+      "question_id": "2015_A#q095",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Hormonal control of blood sugar: glucagon, glucocorticoids and insulin act on carbohydrate metabolism while aldosterone acts on mineral balance",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "true_statement_trap",
+          "option": "1",
+          "route": "the task is negated (\"is not involved in sugar metabolism\"); glucagon is the glycogenolytic and gluconeogenic hormone, so option 1 answers the un-negated question"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "2",
+          "route": "the task is negated; cortisone is a glucocorticoid and glucocorticoids are named for their action on glucose metabolism, so option 2 is involved rather than not"
+        },
+        {
+          "label": "true_statement_trap",
+          "option": "4",
+          "route": "the task is negated; insulin is the hypoglycaemic hormone of carbohydrate metabolism, so option 4 is the most securely involved of the four"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four hormones checked one at a time against one metabolic role under a negated task, demonstrated by the stem's \"is not involved in sugar metabolism\" over three hormones that are and one, aldosterone, that governs sodium and potassium instead.",
+      "note": "Option 2 is printed as \"Cortisone\" rather than cortisol; cortisone is the 11-keto form of the same glucocorticoid, so the option still falls on the sugar-metabolism side and the tag is unaffected. Recorded because the wording differs from the usual textbook name."
+    },
+    {
+      "question_id": "2015_A#q096",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "disease_cause",
+      "concept": "Causal agents of named human diseases: Babesia as a protozoan, set against fungal, bacterial and viral examples",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "neighbouring_fact",
+          "option": "1",
+          "route": "blastomycosis is a real disease whose agent belongs to an adjacent family of pathogens - it is a fungal infection caused by Blastomyces - so the disease is correctly named and the agent class is the wrong one"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "2",
+          "route": "syphilis is caused by the bacterium Treponema pallidum, again an adjacent pathogen family rather than a different protozoan"
+        },
+        {
+          "label": "neighbouring_fact",
+          "option": "3",
+          "route": "influenza is caused by a virus, a third adjacent pathogen family, so the option is a true disease paired with the wrong class of agent"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires four disease-to-agent pairings checked separately, demonstrated by the stem's \"caused by a protozoan\" over four real diseases whose agents are a fungus, a bacterium, a virus and a protozoan respectively.",
+      "note": ""
+    }
+  ],
+  "group_note": "All six were read as the same printed shape - one question, four bare answers, no lettered block - and were kept consistent by three stated rules. (1) DEMAND: five are `recall`, one stored fact or pairing deciding each. 2015_A#q091 is the single exception and carries `explanatory_reasoning`, because its stem concedes the fact (\"Human urine is usually acidic\") and puts only the causal link in question, which is the rulebook's test for that label; the other five put the fact itself in question. (2) STRUCTURE: `several_independent_checks` for the three questions whose four options are separate claims each needing its own verdict (q093, q095, q096); `single_step` for the three settled by one fact (q091, q092, q094). q094 is the member where this call is closest - the stem prints three features - but one of them, the food-filtering flagellated cells, settles it alone, so it is single_step and that shortcut is recorded as its elimination evidence instead. It is the only member carrying a strategy, and only because a single named feature strikes out named options. (3) TRAPS: the three negated questions (q093, q095 and, in the group sense, nothing else) carry the identical device on every distractor - a true statement offered where the exception is asked for - and are tagged `true_statement_trap` with the polarity quoted each time; the uniformity reflects identical construction, not a default. The non-negated members differ, and the differences are what the trap axis is for: q091 carries three distinct devices (`wrong_site_or_stage` for a real exchange put on the blood side of the tubule, `no_derivation_route` for an acidity source the glomerular filter excludes, `other_one_fact` for the sodium-potassium exchange in place of sodium-hydrogen); q092 separates the one distractor that is another hormone's assay (`other_one_fact`) from the two that are real procedures measuring something else entirely (`true_but_out_of_scope`); q096's three distractors are real diseases of adjacent pathogen families, which by the rulebook's tie-break is `neighbouring_fact` rather than `other_one_fact`, since the families differ and not the members. Options with no nameable route are left untagged and said to be so (q094 option 4). No trap sits on any official answer. ON THE E1/E2/E3 AXES: all six are `plain_mcq` with no overlay and the `structure: plain` grouping key holds. E2 is `pick_cause_or_effect` for q091 alone, whose stem concedes the fact and asks for its cause, and `name_or_identify` for the other five, whose options are single terms or event names. E3 is set from the material and is the axis on which this packet is most varied: `process` for the two that turn on an ordered physiological sequence (q091 tubular secretion, q093 the events of the ovulatory phase), `practical_procedure` for the named bioassay (q092), `organism_characteristic` for the phylum's diagnostic features (q094), `example_list` for the hormone-to-role list (q095) and `disease_cause` for the disorder-to-agent pairing (q096), which is the label's own tie-break case."
+}

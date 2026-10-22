@@ -1,0 +1,76 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1654,
+    "height_px": 2339,
+    "body_text_size_px": 18.0,
+    "text_block": [0.2956, 0.1146, 0.8954, 0.8410],
+    "fill": 0.93,
+    "columns": [
+      {"id": "left", "x0": 0.0, "x1": 0.2650},
+      {"id": "right", "x0": 0.2956, "x1": 0.8954}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.2007, 0.0004, 0.9565, 0.0359],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0004, "fill": "#4a7435"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.0004, 0.1850, 0.0902],
+     "column": "left", "size_rel": 1.0, "space_before": 0.0},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.2104, 0.2664, 0.2588, 0.5622],
+     "column": "left", "size_rel": 1.0, "space_before": 0.1761},
+
+    {"n": null, "role": "running_header", "bbox": [0.8331, 0.0710, 0.8918, 0.0778],
+     "column": "right", "size_rel": 0.94, "size_pt": 8.5, "align": "right", "font": "sans",
+     "text_color": "#696a6a", "space_before": 0.0351},
+
+    {"n": 1, "role": "box", "bbox": [0.2775, 0.1009, 0.8936, 0.5605],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "fill": "#fcf6dc", "text_color": "#221a11", "space_before": 0.0231},
+
+    {"n": 2, "role": "major_heading", "bbox": [0.4728, 0.5866, 0.7128, 0.6131],
+     "column": "right", "size_rel": 3.44, "size_pt": 31.0, "align": "center", "font": "sans",
+     "text_color": "#f59420", "space_before": 0.0261},
+
+    {"n": 3, "role": "list", "bbox": [0.2975, 0.6413, 0.8954, 0.6657],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#1d1d1d", "space_before": 0.0286},
+
+    {"n": null, "role": "list", "bbox": [0.2956, 0.6734, 0.8954, 0.7088],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#1d1d1d", "space_before": 0.0077},
+
+    {"n": null, "role": "list", "bbox": [0.2956, 0.7187, 0.8742, 0.7298],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#1d1d1d", "space_before": 0.0098},
+
+    {"n": null, "role": "paragraph", "bbox": [0.3271, 0.7375, 0.8942, 0.7614],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#1d1d1d", "indent": 0.0314, "space_before": 0.0073},
+
+    {"n": null, "role": "list", "bbox": [0.2956, 0.7691, 0.8954, 0.7909],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#1d1d1d", "space_before": 0.0077},
+
+    {"n": null, "role": "list", "bbox": [0.2963, 0.8008, 0.8694, 0.8119],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#1d1d1d", "space_before": 0.0098},
+
+    {"n": null, "role": "list", "bbox": [0.2956, 0.8192, 0.8954, 0.8440],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#1d1d1d", "space_before": 0.0073},
+
+    {"n": null, "role": "page_number", "bbox": [0.0, 0.7268, 0.1554, 0.7644],
+     "column": "left", "size_rel": 1.61, "size_pt": 14.5, "align": "right", "font": "sans",
+     "fill": "#f8931f", "text_color": "#ffffff", "space_before": 0.1646},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.7674, 0.1548, 0.7726],
+     "column": "left", "size_rel": 1.0, "fill": "#f8931f", "space_before": 0.0030},
+
+    {"n": null, "role": "running_header", "bbox": [0.4311, 0.9008, 0.5260, 0.9098],
+     "column": "right", "size_rel": 0.94, "size_pt": 8.5, "align": "center", "font": "sans",
+     "text_color": "#050505", "space_before": 0.0569}
+  ],
+  "note": "Ordinary body page (verso, folio 24) of a PURE A4 SCAN with no text layer; every number here is measured off the 1654x2339 px PNG (= 200 dpi for A4 595.32x841.92pt), so px/200*72 converts to pt. SINGLE body column with a very wide DECORATED OUTER (left) MARGIN: I declare two columns because the margin is not empty -- 'right' (x 0.2956-0.8954, i.e. px 489-1481) is the body measure that the exercises set and the only place running text flows; 'left' (x 0.0-0.2650) is the margin rail that holds the top-left corner mark, the orange wheat/leaf decoration and the folio tab, which must be drawn at their measured boxes and NOT poured into the body flow. The green top band crosses both and is 'full'. body_text_size_px = 18.0: cap-to-baseline measured on four capitals (N/D/A/W at the start of questions 1-4) and on the summary prose's capitals, all 18-19 px; line pitch is 31.6 px throughout, and the summary prose and the exercise text are the SAME size, so both are size_rel 1.0. SUMMARY PANEL: it is the END of a panel that runs on from the previous page -- there is NO top border rule on this page, the cream fill simply starts at y 0.1009 where the sheet's text area begins, and only the left, right and bottom borders are printed. Fill sampled from the flat interior at several points, modal and median both exactly rgb(252,246,220) = #fcf6dc. Its border is a thin DOUBLE gold rule (two ~1px lines about 9px apart), left outer edge x=459px/0.2775, right outer edge x=1478px/0.8936, bottom outer edge y=1311px/0.5605; the rule is 1px so every sample is blended with the cream, best estimate #f5df56 -- treat that colour as approximate. The bbox I give is the panel's OUTER border box; its internal type measure is x 502-1435 px (0.3035-0.8676), i.e. ~43px padding each side, and its paragraphs carry a 51px (0.031 of page width) first-line indent. Note the panel OUTDENTS ~30px to the LEFT of the body column (0.2775 vs 0.2956) -- that is real, not an error, so I have omitted 'indent' rather than report a negative one. EXERCISES HEADING: large centred sans in NCERT orange, cap-to-baseline 62 px = 3.44x body, colour sampled from the saturated core of the glyphs as rgb(245,148,32) = #f59420. It is centred on the BODY COLUMN (glyph centre x=980.5 px vs column centre 985), not on the page (page centre 827) -- centring it on the sheet would put it ~155px too far left. QUESTIONS: measured as SIX separate boxes as instructed, so they cannot stack on one position. Markers 1.-6. sit flush at the column left (x=489px); the question text hangs at x=542px, a 53px (0.032) hanging indent that I have NOT put in 'indent' because the element's own left edge is the marker. Question 3 is two parts: the question line (0.7187-0.7298) and then a SEPARATE indented paragraph of terms ('Pollen grain, sporogenous tissue, ...') at 0.7375-0.7614 inset 0.0314 from the column -- I have reported it as its own 'paragraph' element so it is not rendered as a fourth question, and its space_before (0.0073) is larger than a line gap but smaller than an inter-question gap. BLOCK MATCHING: A2 gave three blocks. n=1 (box) is the summary panel, matched on its first line 'the egg apparatus consisting of two synergids...'. n=2 is the EXERCISES heading. n=3 is a SINGLE list block whose text_head is question 1, so I put n=3 on the FIRST question element only and left questions 2-6 and the Q3 terms paragraph as null rather than guess a split -- a consumer must understand that A2 block 3 holds the text of ALL SIX questions and spans the whole region [0.2956, 0.6413, 0.8954, 0.8440]. UNMATCHED / EXTRA elements (A2 blocked none of these): the green header band #4a7435 (y 0.0004-0.0359, x 0.2007-0.9565), the top-left corner mark (brown #725420 block + orange #f6911f strip + green leaf + black sprig, reported as one decorative_image because they are one printed device), the orange wheat/leaf rail in the left margin (line art on bare paper, ink ~#fcb316, so no 'fill'), the running head 'BIOLOGY' in grey #696a6a, the folio tab (orange #f8931f, bleeding off the left page edge so its box starts at x=0; the white '24' glyphs are at 0.1070-0.1307 x / 0.7366-0.7486 y, cap height 29px), the thin orange footer_rule under the tab, and the foot-of-page reprint line 'Reprint 2026-27' -- I have given that last one role 'running_header' because the allowed-role list has no footer-text role; it is at the page FOOT, not the head. Its glyph centre is x=791.5 px against a page centre of 827, so it is page-centred but sits ~35px left of true centre on this scan (likely a scan skew/offset, not design). SPACE_BEFORE: all gaps are measured vertical fractions between the previous element's bottom and this element's top in the order listed. Two are measured against a non-adjacent predecessor because the element is margin furniture running alongside body content: the wheat rail (measured from the corner mark's bottom, 0.1761) and the folio tab (measured from the rail's bottom, 0.1646). FILL = 0.93: the text block spans y 0.1146-0.8410 (1699 px); content covers the panel (1043 px), the heading (62 px) and the six questions (467 px) = 1572 px, so 0.925 of the block height is inked and the rest is the two deliberate gaps around the EXERCISES heading. The sheet itself is essentially full -- the last question ends at 0.844 and the only thing below it is the footer line at 0.901. SIZE_PT values are DERIVED, not measured directly: cap-height px / 200 * 72 to get cap height in pt, then divided by an assumed cap/em ratio (0.72 for the sans faces). size_rel is the measured, trustworthy number; treat size_pt as indicative only. Derived body size for reference: 18px cap = 6.48pt cap, about 9.8pt serif type on 11.4pt leading. NOT MEASURABLE: the 'NCERT / not to be republished' diagonal watermark is present across the whole sheet but is too light (min channel > 235) to bound reliably and is not a layout element, so it is omitted; the exact gold of the panel's hairline border cannot be isolated at this resolution."
+}

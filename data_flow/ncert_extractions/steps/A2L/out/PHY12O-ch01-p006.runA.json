@@ -1,0 +1,47 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 21.0,
+    "columns": [
+      {"id": "full", "x0": 0.1265, "x1": 0.9035}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0666],
+     "column": "full", "size_rel": 1.0, "fill": "#c6eafb"},
+    {"n": null, "role": "running_header", "bbox": [0.1276, 0.0, 0.4506, 0.1212],
+     "column": "full", "size_rel": 2.0, "align": "center", "font": "sans-light",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.3141, 0.1354, 0.9024, 0.2461],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 2, "role": "section_heading", "bbox": [0.3176, 0.2608, 0.6447, 0.2755],
+     "column": "full", "size_rel": 1.45, "align": "left", "font": "serif-bold",
+     "text_color": "#6d6e71"},
+    {"n": 3, "role": "paragraph", "bbox": [0.3129, 0.2902, 0.9024, 0.4008],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 4, "role": "figure", "bbox": [0.1265, 0.2957, 0.2965, 0.8535],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.1353, 0.8705, 0.2965, 0.8949],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "serif",
+     "text_color": "#00adef"},
+    {"n": 5, "role": "list", "bbox": [0.3147, 0.4040, 0.9035, 0.8411],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 6, "role": "paragraph", "bbox": [0.3141, 0.8444, 0.9024, 0.8861],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": 7, "role": "paragraph", "bbox": [0.3141, 0.8926, 0.9035, 0.9385],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.1276, 0.9155, 0.1859, 0.9371],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "serif",
+     "fill": "#c6eafb", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5235, 0.9633],
+     "column": "full", "size_rel": 0.75, "align": "center", "font": "serif",
+     "text_color": "#000000"}
+  ],
+  "note": "Verso body page, single column. Unlike p002 and p004 the figure does NOT intrude into the text measure: Fig. 1.4 (block n=4, its five panels (a)-(e) stacked vertically) and its caption sit entirely in the wide outer margin x 0.127-0.297, while every paragraph and the (i)-(iv) list keep the standard verso measure x 0.314-0.904. The text therefore never splits, so one `full` column covering the live area 0.127-0.904 is declared and the margin figure is assigned to it too. page_header_band is the pale cyan #c6eafb strip at y 0-0.0666 closing with a solid cyan #00adef rule at y 0.0624-0.0666; the thin lighter #41c7f4 hairline sits on the inner (right) half of this verso. No footer_rule on this page. Block n=5 is the four-item roman list, set with a hanging indent at x 0.3147 for the markers and 0.3435 for the turned lines; it is one `list` element. A2 gives no block for the 'FIGURE 1.4 Charging by induction.' caption, so it carries n: null; captions are cyan #00adef. Section heading '1.4 CHARGING BY INDUCTION' (n=2) is grey #6d6e71. The folio '6' sits in a pale cyan box in the outer bottom margin and the centred '2022-23' print-year line is recorded as running_header."
+}

@@ -1,0 +1,130 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "list",
+      "text": "4. The resistance R of a conductor depends on its length l and cross-sectional area A through the relation,",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [268, 373, 356, 432],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "where r, called resistivity is a property of the material and depends on temperature and pressure."
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "5. Electrical resistivity of substances varies over a very wide range. Metals have low resistivity, in the range of 10–8 W m to 10–6 W m. Insulators like glass and rubber have 1022 to 1024 times greater resistivity. Semiconductors like Si and Ge lie roughly in the middle range of resistivity on a logarithmic scale."
+    },
+    {
+      "n": 5,
+      "kind": "list",
+      "text": "6. In most substances, the carriers of current are electrons; in some cases, for example, ionic crystals and electrolytic liquids, positive and negative ions carry the electric current."
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "7. Current density j gives the amount of charge flowing per second per unit area normal to the flow,"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [268, 840, 394, 877],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "where n is the number density (number per unit volume) of charge carriers each of charge q, and vd is the drift velocity of the charge carriers. For electrons q = – e. If j is normal to a cross-sectional area A and is constant over the area, the magnitude of the current I through the area is nevd A."
+    },
+    {
+      "n": 9,
+      "kind": "list",
+      "text": "8. Using E = V/l, I = nevd A, and Ohm’s law, one obtains"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [268, 1078, 467, 1143],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "The proportionality between the force eE on the electrons in a metal due to the external field E and the drift velocity vd (not acceleration) can be understood, if we assume that the electrons suffer collisions with ions in the metal, which deflect them randomly. If such collisions occur on an average at a time interval t,"
+    },
+    {
+      "n": 12,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [268, 1318, 456, 1352],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "where a is the acceleration of the electron. This gives"
+    },
+    {
+      "n": 14,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [268, 1386, 387, 1456],
+      "text": ""
+    },
+    {
+      "n": 15,
+      "kind": "list",
+      "text": "9. In the temperature range in which resistivity increases linearly with temperature, the temperature coefficient of resistivity a is defined as the fractional increase in resistivity per unit increase in temperature."
+    },
+    {
+      "n": 16,
+      "kind": "list",
+      "text": "10. Ohm’s law is obeyed by many substances, but it is not a fundamental law of nature. It fails if"
+    },
+    {
+      "n": 17,
+      "kind": "list",
+      "text": "(a) V depends on I non-linearly.\n(b) the relation between V and I depends on the sign of V for the same absolute value of V.\n(c) The relation between V and I is non-unique."
+    },
+    {
+      "n": 18,
+      "kind": "paragraph",
+      "text": "An example of (a) is when r increases with I (even if temperature is kept fixed). A rectifier combines features (a) and (b). GaAs shows the feature (c)."
+    },
+    {
+      "n": 19,
+      "kind": "list",
+      "text": "11. When a source of emf e is connected to an external resistance R, the voltage Vext across R is given by"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [268, 1901, 508, 1968],
+      "text": ""
+    },
+    {
+      "n": 21,
+      "kind": "paragraph",
+      "text": "where r is the internal resistance of the source."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "Current Electricity",
+    "103",
+    "Reprint 2026-27"
+  ],
+  "note": "Whole page is the continuation of the chapter SUMMARY box (shaded panel), numbered points 4 to 11; the numbering starts at 4 and the box has no closing edge on this page, so it continues both from the previous page and onto the next. The input gave previous_page_last_block as null even though this is page 23, so the opening continuation was judged from the page image (list resumes at item 4 inside an open box). Prose copied character-for-character from the text layer, which renders several Greek letters as Latin look-alikes and flattens super/subscripts: rho appears as 'r' (points 4 and 10), ohm as 'W' and exponents as plain digits in point 5 ('10–8 W m', '1022'), tau as 't' (point 8), alpha as 'a' (point 9), epsilon as 'e' and the subscript of V_ext as plain 'ext' (point 11), and v_d as 'vd'. The six displayed equations (R=rho l/A; j = nq v_d; eE/m = rho ne^2/m v_d; v_d = a tau = eE tau/m; rho = m/ne^2 tau; V_ext = IR = eR/(R+r)) are left to the special transcriber with bounding boxes in image pixels. No tables or figures on this page."
+}

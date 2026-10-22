@@ -1,0 +1,31 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "The flux through the Gaussian surface, calculated as before, is E × 4 π r². However, in this case, the Gaussian surface encloses no charge. Gauss’s law then gives\nE × 4 π r² =  0\ni.e., E = 0          (r < R )",
+      "fixes": [
+        {"wrong": "4 π r2.", "right": "4 π r²."},
+        {"wrong": "E × 4 π r2 =", "right": "E × 4 π r² ="}
+      ]
+    },
+    {
+      "n": 2,
+      "corrected_text": "that is, the field due to a uniformly charged thin shell is zero at all points inside the shell*. This important result is a direct consequence of Gauss’s law which follows from Coulomb’s law. The experimental verification of this result confirms the 1/r² dependence in Coulomb’s law.",
+      "fixes": [
+        {"wrong": "1/r2", "right": "1/r²"}
+      ]
+    },
+    {"n": 3, "no_change": true},
+    {"n": 5, "no_change": true},
+    {"n": 7, "no_change": true},
+    {
+      "n": 8,
+      "corrected_text": "(i) r < R : The electric flux φ enclosed by the spherical surface is\n    φ  =  E (r) × 4 π r²\nwhere E (r)  is the magnitude of the electric field at r. This is because",
+      "fixes": [
+        {"wrong": "4 π r 2", "right": "4 π r²"}
+      ]
+    },
+    {"n": 9, "no_change": true}
+  ],
+  "note": "n1, n2 and n8 had flattened 'r2'/'r 2' restored to true superscript r². n3, n5, n7 and n9 already matched the image."
+}

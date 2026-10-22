@@ -1,0 +1,126 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "This can be extended to make a generalisation. The equilibrium constant for a net reaction obtained after adding two (or more) reactions equals the product of the equilibrium constants for individual reactions:",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 478, 852, 514],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Similarly, in case of a conjugate acid-base pair,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 598, 852, 634],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Knowing one, the other can be obtained. It should be noted that a strong acid will have a weak conjugate base and vice-versa."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Alternatively, the above expression Kw = Ka × Kb, can also be obtained by considering the base-dissociation equilibrium reaction:"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [248, 882, 820, 984],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "As the concentration of water remains constant it has been omitted from the denominator and incorporated within the dissociation constant. Then multiplying and dividing the above expression by [H+], we get:"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [248, 1186, 830, 1326],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "It may be noted that if we take negative logarithm of both sides of the equation, then pK values of the conjugate acid and base are related to each other by the equation:"
+    },
+    {
+      "n": 11,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [260, 1502, 745, 1540],
+      "text": ""
+    },
+    {
+      "n": 12,
+      "kind": "box",
+      "text": "Problem 6.23 Determine the degree of ionization and pH of a 0.05M of ammonia solution. The ionization constant of ammonia can be taken from Table 6.7. Also, calculate the ionization constant of the conjugate acid of ammonia. Solution The ionization of NH3 in water is represented by equation:"
+    },
+    {
+      "n": 13,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [930, 264, 1408, 308],
+      "text": ""
+    },
+    {
+      "n": 14,
+      "kind": "box",
+      "text": "We use equation (6.33) to calculate hydroxyl ion concentration, [OH–] = c α = 0.05 α Kb = 0.05 α2 / (1 – α) The value of α is small, therefore the quadratic equation can be simplified by neglecting α in comparison to 1 in the denominator on right hand side of the equation, Thus, Kb = c α2  or   α = √ (1.77 × 10–5 / 0.05) = 0.018. [OH–] = c α = 0.05 × 0.018 = 9.4 × 10–4M. [H+] = Kw / [OH–] = 10–14 / (9.4 × 10–4) = 1.06 × 10–11 pH = –log(1.06 × 10–11) = 10.97. Now, using the relation for conjugate acid-base pair, Ka × Kb = Kw using the value of Kb of NH3 from Table 6.7. We can determine the concentration of conjugate acid NH4 + Ka = Kw / Kb = 10–14 / 1.77 × 10–5 = 5.64 × 10–10."
+    },
+    {
+      "n": 15,
+      "kind": "heading",
+      "text": "6.11.6 Di- and Polybasic Acids and Di- and Polyacidic Bases"
+    },
+    {
+      "n": 16,
+      "kind": "paragraph",
+      "text": "Some of the acids like oxalic acid, sulphuric acid and phosphoric acids have more than one ionizable proton per molecule of the acid. Such acids are known as polybasic or polyprotic acids."
+    },
+    {
+      "n": 17,
+      "kind": "paragraph",
+      "text": "The ionization reactions for example for a dibasic acid H2X are represented by the equations:"
+    },
+    {
+      "n": 18,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [934, 1670, 1366, 1752],
+      "text": ""
+    },
+    {
+      "n": 19,
+      "kind": "paragraph",
+      "text": "And the corresponding equilibrium constants are given below:"
+    },
+    {
+      "n": 20,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [934, 1840, 1366, 1882],
+      "text": "",
+      "continues_on_next": true
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": ["EQUILIBRIUM", "199", "2024-25"],
+  "note": "Two-column page; left column read before right. previous_page_last_block was absent from the input (null), so I judged the opening continuation against the page 31 output I wrote myself rather than against the input: page 31 finished on a complete display line (the Ka x Kb product), and this page opens a fresh sentence, 'This can be extended to make a generalisation.', so first_block_continues_from_previous is false. Nine pieces of display maths are left for the special transcriber: the numbered equations (6.35) and (6.36) (blocks 2 and 4), the base-dissociation reaction with its Kb expression (block 7), the four-line derivation ending 'or Ka x Kb = Kw' (block 9), the pKa + pKb line (block 11), the NH3 + H2O reaction that opens the right-hand half of the pink panel (block 13), the two H2X ionization equations (block 18) and the Ka1 expression that the page breaks off on (block 20). The pink Problem 6.23 panel is therefore blocks 12-14, and it runs from the foot of the left column into the top of the right column, which is how the text layer stores it too. Inside the panel the superscript charge of 'conjugate acid NH4 +' is reproduced detached because that is what the text layer contains. last_block_continues_on_next is true because the page breaks off inside the pair of equilibrium-constant expressions: the printed line ends 'Ka1 = {[H+][HX–]} / [H2X] and', with Ka2 beginning on page 33."
+}

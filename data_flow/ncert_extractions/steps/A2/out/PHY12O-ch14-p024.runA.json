@@ -1,0 +1,42 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "box",
+      "text": "Example 14.7 Why are Si and GaAs are preferred materials for\nsolar cells?\nSolution  The solar radiation spectrum received by us is shown in\nFig. 14.26.\nThe maxima is near 1.5 eV. For photo-excitation, hν > Eg. Hence,\nsemiconductor with band gap ~1.5 eV or lower is likely to give better\nsolar conversion efficiency. Silicon has Eg ~ 1.1 eV while for GaAs it is\n~1.53 eV. In fact, GaAs is better (in spite of its higher band gap) than\nSi because of its relatively higher absorption coefficient. If we choose\nmaterials like CdS or CdSe (Eg ~ 2.4 eV), we can use only the high\nenergy component of the solar energy for photo-conversion and a\nsignificant part of energy will be of no use.\nThe question arises: why we do not use material like PbS (Eg ~ 0.4 eV)\nwhich satisfy the condition hν > Eg for ν maxima corresponding to the\nsolar radiation spectra? If we do so, most of the solar radiation will be\nabsorbed on the top-layer of solar cell and will not reach in or near\nthe depletion region. For effective electron-hole separation, due to\nthe junction field, we want the photo-generation to occur in the\njunction region only.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        763,
+        480,
+        1308,
+        1123
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "heading",
+      "text": "14.9  DIGITAL ELECTRONICS AND LOGIC GATES"
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "In electronics circuits like amplifiers, oscillators, introduced to you in\nearlier sections, the signal (current or voltage) has been in the form of\ncontinuous, time-varying voltage or current. Such signals are called\ncontinuous or analog signals. A typical analog signal is shown in Figure.\n14.27(a). Fig. 14.27(b) shows a pulse waveform in which only discrete\nvalues of voltages are possible. It is convenient to use binary numbers\nto represent such signals. A binary number has only two digits ‘0’ (say,\n0V) and ‘1’ (say, 5V). In digital electronics we use only these two levels of\nvoltage as shown in Fig. 14.27(b). Such signals are called Digital Signals.",
+      "continues_on_next": false
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Physics",
+    "490",
+    "2022-23",
+    "EXAMPLE 14.7"
+  ],
+  "note": "previous_page_last_block was null; judged against my own p023 output, which ended on a complete sentence, and this page opens with the Example 14.7 box. The solar-irradiance graph labelled FIGURE 14.26 is printed inside that box between the 'Solution' line and the rest of the solution; the box is kept as one block (n=1) and the graph deferred separately (n=2). 'EXAMPLE 14.7' vertical tab is listed as removed furniture. Page ends on a complete sentence."
+}

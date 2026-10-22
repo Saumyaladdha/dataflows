@@ -1,0 +1,148 @@
+{
+  "group": "v2__physics__plain.part2",
+  "ratings": [
+    {
+      "question_id": "2015_A#q142",
+      "concept": "SHM: maximum acceleration is omega^2 A and maximum speed is omega A, so their ratio gives omega and hence the period T = 2 pi beta / alpha",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["dimensional_check", "elimination"],
+      "strategy_evidence": "The one fact that the answer must have the dimension of time strikes out options 2, 3 and 4: beta^2/alpha^2 is a time squared, alpha/beta is a reciprocal time, and beta^2/alpha is a length.",
+      "traps": [
+        {
+          "label": "wrong_power_of_dependence",
+          "option": "2",
+          "route": "beta^2/alpha^2 is 1/omega^2, i.e. the square of the period up to the factor 4 pi^2: the two powers are the squared ratio printed where the first power of the ratio is required, so the root is not taken"
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "3",
+          "route": "alpha/beta is omega itself, so the option answers for the angular frequency where the stem asks for the time period; the two quantities are reciprocal up to 2 pi"
+        },
+        {
+          "label": "wrong_quantity",
+          "option": "4",
+          "route": "beta^2/alpha is (omega A)^2/(omega^2 A) = A, so the option answers for the amplitude where the stem asks for the time period"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires one unknown to be eliminated between two stated relations and the result carried into a third, demonstrated by the stem's \"maximum acceleration is alpha and maximum velocity is beta\" giving alpha/beta = omega, which option 1 turns into T = 2 pi beta / alpha.",
+      "note": "Options 3 and 4 are the only other quantities that can be built from alpha and beta - the angular frequency and the amplitude - which is why both carry `wrong_quantity` rather than any arithmetic label."
+    },
+    {
+      "question_id": "2015_A#q143",
+      "concept": "Orthogonality by dot product: for two unit vectors at angles omega t and omega t / 2 the dot product reduces to cos(omega t / 2), which must vanish",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "The one fact that at t = 0 both vectors reduce to i-hat, so their dot product is 1 rather than 0, strikes out option 1 without any algebra.",
+      "traps": [
+        {
+          "label": "semantic_reversal",
+          "option": "1",
+          "route": "t = 0 is the time at which the two vectors coincide and the dot product is at its maximum of 1; the stem's word \"orthogonal\" is reversed into its opposite, the condition cos = 1 being solved in place of cos = 0"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "3",
+          "route": "t = pi/(2 omega) is the solution of cos(omega t) = 0, so the operation sets the angle of A alone to a right angle instead of the angle BETWEEN the two vectors, omega t / 2"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a dot product to be formed, reduced by the cosine-difference identity and then solved for the time, demonstrated by the stem's two vectors giving cos(omega t) cos(omega t / 2) + sin(omega t) sin(omega t / 2) = cos(omega t / 2), which vanishes at option 4's t = pi / omega.",
+      "note": "Option 2 is left untagged: t = pi/(4 omega) puts the angle between the vectors at pi/8, and no step of the solution (solving cos(omega t / 2) = 0 gives omega t / 2 = pi / 2) reaches it, so no operation can be named. The four options are 0, a quarter, a half and one times pi / omega, i.e. a spread, and the spread itself is not a device the rulebook tags on a single option."
+    },
+    {
+      "question_id": "2015_A#q144",
+      "concept": "Doppler effect with an obliquely moving source: only the component of the source velocity along the source-observer line, v cos 60 degrees, enters the formula",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["estimation"],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "sign_reversed_magnitude_right",
+          "option": "1",
+          "route": "97 Hz is 100 x 330/(330 + 9.7) = 97.1: the method and the magnitude of the shift are right, and the sign of the component in the denominator is inverted, i.e. the source is taken as receding along the line instead of approaching"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "106 Hz is 100 x 330/(330 - 19.4) = 106.2: the operation uses the full source speed in place of its component along the line, so the cos 60 degrees factor is not applied"
+        },
+        {
+          "label": "omitted_contribution",
+          "option": "2",
+          "route": "the velocity term is omitted from the denominator altogether, 100 x 330/330 = 100, which is what the printed option reports; the route treats motion at an angle as producing no radial component at all"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a velocity to be resolved along a line and the result substituted into a stated relation, demonstrated by the stem's \"19.4 ms^-1 at an angle of 60 degrees with the source observer line\" giving 9.7 ms^-1 and 100 x 330/320.3 = 103 Hz, which is option 3.",
+      "note": "The stem says \"as shown in the figure\" and a figure file is referenced; the figure is what fixes whether the resolved component is towards or away from the observer. The stored stem supplies every number needed (100 Hz, 19.4 ms^-1, 60 degrees, 330 ms^-1) and the printed key, 103 Hz, is above the source frequency, which is consistent with an approaching component. The question is therefore tagged as printed, with the approach direction taken from the key rather than asserted; option 1 is the receding result and is tagged as the sign-inverted option on that basis."
+    },
+    {
+      "question_id": "2015_A#q145",
+      "concept": "Braking torque on a wheel: convert the road speed to an angular speed with omega = v/r, divide by the stopping time for the angular deceleration, then take tau = I alpha",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [],
+      "verdicts": [],
+      "reason": "This question requires three relations to be chained, each on the previous result, demonstrated by the stem's \"54 km h^-1\" and \"radius of its wheels is 0.45 m\" giving omega = 15/0.45 = 33.3 rad s^-1, then alpha = 33.3/15 = 2.22 rad s^-2 and tau = 3 x 2.22 = 6.66, which is option 2.",
+      "note": "No trap is written for this question, and that is a finding rather than an omission. The named wrong routes were worked through and none of them lands on a printed option: skipping the km/h to m/s conversion gives 24, taking 0.45 m as the diameter gives 13.3, and dropping the moment of inertia gives 2.22 against the printed 2.86. Options 1, 3 and 4 (2.86, 8.58, 10.86) therefore cannot be tied to an option-and-route pair, and rule 4 requires them to be left untagged rather than given a label that cannot name its route."
+    },
+    {
+      "question_id": "2015_A#q146",
+      "concept": "Torque on a current-carrying coil: tau = N I A B sin(theta) with theta measured between the coil's NORMAL and the field, so a plane inclined at 30 degrees gives sin 60 degrees",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": [],
+      "strategy_evidence": "",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "1",
+          "route": "0.12 Nm is 50 x 2 x 0.012 x 0.2 x sin 30 degrees = 0.24 x 0.5: the operation substitutes the printed 30 degrees directly as the angle between the normal and the field instead of converting it to the normal's 60 degrees"
+        },
+        {
+          "label": "condition_ignored",
+          "option": "4",
+          "route": "the stated condition is \"the plane of the coil is inclined at an angle of 30 degrees with the direction of the field\"; dropping it gives N I A B = 50 x 2 x 0.012 x 0.2 = 0.24 Nm, which is the printed option and is the correct torque only when the field lies in the plane of the coil"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires an area to be formed, a stated inclination to be converted to the angle at the normal, and the result substituted into a relation, demonstrated by the stem's \"0.12 m\" and \"0.1 m\" giving A = 0.012 m^2 and 50 x 2 x 0.012 x 0.2 x sin 60 degrees = 0.21, which the options round to option 3's 0.20 Nm.",
+      "note": "Option 2 (0.15 Nm) is left untagged: it is not 0.24 times any of sin 30, sin 45, sin 60 or tan 30, and no operation on the stem's numbers reaches it, so rule 4 forbids a tag. has_figure is set and a figure file is referenced, but the stem supplies every quantity including the 30 degree inclination, so the figure is redundant to the answer rather than missing from it."
+    },
+    {
+      "question_id": "2015_A#q147",
+      "concept": "Force between the plates of a charged capacitor as the gradient of its stored energy: F = C V^2 / 2d, which is half the naive charge-times-field product",
+      "cognitive_demand": "calculation",
+      "solution_structure": "multi_step_dependent",
+      "strategy_available": ["dimensional_check", "elimination"],
+      "strategy_evidence": "The one fact that C V^2 is an energy, so a force must carry C V^2 divided by one length, strikes out options 1 and 2, both of which carry C^2 V^2 and so an extra factor of capacitance.",
+      "traps": [
+        {
+          "label": "calculation_slip",
+          "option": "4",
+          "route": "C V^2 / d is the product of the plate charge C V with the full field V/d between the plates, so the operation applies the whole field to the plate that is itself producing half of it, which doubles the correct force"
+        },
+        {
+          "label": "calculation_slip",
+          "option": "2",
+          "route": "C^2 V^2 / 2d results from substituting Q = C V into Q^2 / (2 epsilon_0 A) while leaving epsilon_0 A in place of its equal C d, so one factor of capacitance is not cancelled"
+        },
+        {
+          "label": "wrong_power_of_dependence",
+          "option": "1",
+          "route": "the two powers are 1/d^2 against the required 1/d: the option is option 2's uncancelled capacitance with the separation squared as well, as though the force followed an inverse-square law in the plate separation"
+        }
+      ],
+      "verdicts": [],
+      "reason": "This question requires a stored energy to be differentiated with respect to the plate separation and the result expressed in the stem's symbols, demonstrated by the stem's \"capacity 'C', distance of separation between plates is 'd' and potential difference 'V'\" giving option 3's C V^2 / 2d, which is half of the charge-times-field product.",
+      "note": "Options 3 and 4 differ only by the factor of two, so the dimensional shortcut narrows the item to that pair but does not settle it; that is why `dimensional_check` sits in the strategy slot and `calculation` remains the demand, as the rulebook's tie-break between the two roles requires."
+    }
+  ],
+  "group_note": "Six physics items grouped on the reader's `structure` field, which read `plain`, and the printed shape holds for all six: a single question, four options, no statement block, list or pairing. Every member is `calculation` on the demand axis, and that uniformity is the result of applying one test rather than of not asking the question: in each, the answer - a number in q144, q145, q146 and an expression in q142, q143, q147 - is arrived at by computing from the stem's own quantities, and the rulebook's `calculation` explicitly covers arriving at an expression. Nothing here is `application` (no rule is applied without computing), `dimensional_reasoning` (in q142 and q147 dimensions settle the answer, but the relations also reach it, which the rulebook's tie-break assigns to the strategy slot) or `representation_translation`. Solution structure is `multi_step_dependent` in all six and each reason names the chain, because in every one step two needs step one's result: a ratio before a period (q142), a reduced dot product before a solved time (q143), a resolved component before the Doppler formula (q144), an angular speed before a deceleration before a torque (q145), an area and a converted angle before a substitution (q146), an energy before its gradient (q147). None of them is `several_independent_checks`, which in this packet would have been the wrong label - no member combines separately-reached verdicts. The strategy axis is where the group genuinely differs, and it is populated only where the shortcut is demonstrable: `dimensional_check` with `elimination` in q142, where the time dimension alone leaves one option standing, and in q147, where it strikes the two options carrying C^2 and narrows the item to a factor of two; `elimination` alone in q143, where substituting t = 0 into the printed vectors strikes option 1; `estimation` in q144, where 9.7 against 330 is a three per cent shift and the options are spaced three apart. It is empty in q145 and q146, where no inspectable shortcut exists. On the trap axis the recurring device is an option produced by one named operation on the stem's numbers, and each entry prints that arithmetic: `calculation_slip` five times (the half-angle in q143, the unresolved speed in q144, sin 30 for sin 60 in q146, the uncancelled capacitance and the doubled force in q147), `omitted_contribution` once (q144's missing velocity term giving exactly 100 Hz), `condition_ignored` once (q146 option 4, which is the correct torque with the stem's stated 30 degree inclination dropped), `sign_reversed_magnitude_right` once (q144's 97 Hz, the same shift the other way), `wrong_power_of_dependence` twice and `wrong_quantity` twice (q142's options 3 and 4 are the only other quantities, omega and A, constructible from alpha and beta). The one member differing sharply from the rest is q145: it carries NO trap, because the named wrong routes were worked through (no speed conversion gives 24, diameter for radius gives 13.3, dropping I gives 2.22 against the printed 2.86) and none reaches a printed option, so under rule 4 its three wrong options stay untagged. Two further options were left untagged on the same ground, q143's option 2 and q146's option 2, with the arithmetic tried recorded in their notes. q144 is the only member whose answer depends on something our text does not state - whether the resolved component approaches or recedes, which its figure fixes - and it is tagged as printed, with the key rather than any assumption fixing the direction. No trap sits on an official answer, no key is re-judged, no `new_*` escape was needed, and no damage verdict was recorded: the two figure flags in this packet (q144, q146) are redundant to stems that supply every quantity."
+}

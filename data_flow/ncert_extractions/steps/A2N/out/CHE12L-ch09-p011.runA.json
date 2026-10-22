@@ -1,0 +1,33 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "corrected_text": "Greater is the stability of the substituted ammonium cation, stronger\nshould be the corresponding amine as a base. Thus, the order of basicity\nof aliphatic amines should be: primary > secondary > tertiary, which\nis opposite to the inductive effect based order.   Secondly, when the\nalkyl group is small, like –CH₃ group, there is no steric hindrance to\nH-bonding. In case the alkyl group is bigger than CH₃ group, there will\nbe steric hinderance to H-bonding. Therefore,  the change of nature of\nthe alkyl group, e.g., from –CH₃ to –C₂H₅ results in change of the order\nof basic strength. Thus, there is a subtle interplay of the inductive\neffect, solvation effect and steric hinderance of the alkyl group which\ndecides the basic strength of alkyl amines in the aqueous state.  The\norder of basic strength in case of methyl substituted amines and ethyl\nsubstituted amines in aqueous solution is as follows:",
+      "fixes": [
+        {"wrong": "–CH3 group", "right": "–CH₃ group"},
+        {"wrong": "than CH3 group", "right": "than CH₃ group"},
+        {"wrong": "–CH3 to", "right": "–CH₃ to"},
+        {"wrong": "–C2H5", "right": "–C₂H₅"}
+      ]
+    },
+    {
+      "n": 5,
+      "corrected_text": "pKb value of aniline is quite high.  Why is it so?  It is because in\naniline or other arylamines, the -NH₂ group is attached directly to\nthe benzene ring. It results in the unshared electron pair on nitrogen\natom to be in conjugation with the benzene ring and thus making\nit less available for protonation.  If you write different resonating\nstructures of aniline,  you will find that aniline is a resonance\nhybrid of the following five structures.",
+      "fixes": [
+        {"wrong": "-NH2 group", "right": "-NH₂ group"}
+      ]
+    },
+    {"n": 7, "no_change": true},
+    {
+      "n": 9,
+      "corrected_text": "We know that greater the number of resonating structures, greater\nis the stability. Thus you can infer that aniline (five resonating\nstructures) is more stable than anilinium ion. Hence, the proton\nacceptability or the basic nature of aniline or other aromatic amines\nwould be less than that of ammonia.  In case of substituted aniline, it\nis observed that electron releasing groups like –OCH₃, –CH₃ increase\nbasic strength whereas electron withdrawing groups like  –NO₂, –SO₃H,\n–COOH, –X decrease it.",
+      "fixes": [
+        {"wrong": "–OCH3", "right": "–OCH₃"},
+        {"wrong": "–CH3 increase", "right": "–CH₃ increase"},
+        {"wrong": "–NO2", "right": "–NO₂"},
+        {"wrong": "–SO3H", "right": "–SO₃H"}
+      ]
+    }
+  ],
+  "note": "n=1, n=5 and n=9 had multiple flattened molecular-formula subscripts (CH3, C2H5, NH2, OCH3, NO2, SO3H) restored to match the image. n=5 and n=9 also contain pKb with a true subscript b that has no Unicode subscript-letter equivalent (see p009 note) and was left as plain text. n=7 already matched exactly."
+}

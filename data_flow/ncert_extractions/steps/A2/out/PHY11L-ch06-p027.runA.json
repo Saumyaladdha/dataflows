@@ -1,0 +1,105 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [357, 206, 898, 492],
+      "text": "",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Similarly ω = final angular speed in rad/s"
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [498, 546, 898, 709],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "∴Angular acceleration"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [487, 822, 887, 876],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The angular acceleration of the engine = 4π rad/s2"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "(ii) The angular displacement in time t is given by"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [357, 1055, 822, 1304],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [306, 1326, 855, 1390],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "heading",
+      "text": "6.11 DYNAMICS OF ROTATIONAL MOTION ABOUT A FIXED AXIS"
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Table 6.2 lists quantities associated with linear motion and their analogues in rotational motion. We have already compared kinematics of the two motions. Also, we know that in rotational motion moment of inertia and torque play the same role as mass and force respectively in linear motion. Given this we should be able to guess what the other analogues indicated in the table are. For example, we know that in linear motion, work done is given by F dx, in rotational motion about a fixed axis it should be d τ θ , since we already know the correspondence d d x θ → and F τ → ."
+    },
+    {
+      "n": 12,
+      "kind": "paragraph",
+      "text": "It is, however, necessary that these correspondences are established on sound dynamical considerations. This is what we now turn to."
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Before we begin, we note a simplification that arises in the case of rotational motion about a fixed axis. Since the axis is fixed, only those components of torques, which are along the direction of the fixed axis need to be considered in our discussion. Only these components can cause the body to rotate about the axis. A component of the torque perpendicular to the axis of rotation will tend to turn the axis from its position. We specifically assume that there will arise necessary forces of constraint to cancel the effect of the perpendicular components of the (external) torques, so that the fixed position of the axis will be maintained. The perpendicular components of the torques, therefore need not be taken into account. This means that for our calculation of torques on a rigid body:"
+    },
+    {
+      "n": 14,
+      "kind": "list",
+      "text": "(1) We need to consider only those forces that lie in planes perpendicular to the axis. Forces which are parallel to the axis will give torques perpendicular to the axis and need not be taken into account.\n(2) We need to consider only those components of the position vectors which are perpendicular to the axis. Components of position vectors along the axis will result in torques perpendicular to the axis and need not be taken into account."
+    },
+    {
+      "n": 15,
+      "kind": "heading",
+      "text": "Work done by a torque"
+    },
+    {
+      "n": 16,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [990, 1401, 1628, 1945],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "118",
+    "PHYSICS",
+    "2024-25"
+  ],
+  "note": "Page opens mid-way through the solution of a worked example (first line begins with '='), so first_block_continues_from_previous is true even though previous_page_last_block was null in the input. Displayed equation chains in the left column (worked-example solution) are emitted as equation blocks with needs_special, per the scrambled sub/superscript extraction in this book. Inline mathematics inside paragraphs (e.g. 'd τ θ', 'd d x θ →') is copied verbatim as the text_layer holds it, not re-rendered. The section side-heading 6.11 appeared only once in the text layer here, so no outline-font de-duplication was needed. The heading 'Work done by a torque' has no body text on this page; its section text begins on the next page."
+}

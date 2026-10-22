@@ -1,0 +1,38 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "corresponding to that energy state contains all information about the electron. The wave function is a mathematical function whose value depends upon the coordinates of the electron in the atom and does not carry any physical meaning. Such wave functions of hydrogen or hydrogen like species with one electron are called atomic orbitals. Such wave functions pertaining to one-electron species are called one-electron systems. The probability of finding an electron at a point within an atom is proportional to the |ψ|2 at that point.  The quantum mechanical results of the hydrogen atom successfully predict all aspects of the hydrogen atom spectrum including some phenomena that could not be explained by the Bohr model.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Application of  Schrödinger equation to multi-electron atoms presents a difficulty: the Schrödinger equation cannot be solved exactly for a multi-electron atom. This difficulty can be overcome by using approximate methods. Such calculations with the aid of modern computers show that orbitals in atoms other than hydrogen do not differ in any radical way from the hydrogen orbitals discussed above. The principal difference lies in the consequence of increased nuclear charge. Because of this  all the orbitals are somewhat contracted. Further, as you shall see later (in subsections 2.6.3 and 2.6.4), unlike orbitals of hydrogen or hydrogen like species, whose energies depend only on the quantum number n, the energies of the orbitals in multi-electron atoms depend on quantum numbers n and l."
+    },
+    {
+      "n": 3,
+      "kind": "box",
+      "text": "Important Features of the Quantum Mechanical Model of Atom\nQuantum mechanical model of atom is the picture of the structure of the atom, which emerges from the application of the Schrödinger equation to atoms. The following are the important features of the quantum-mechanical model of atom:\n1. The energy of electrons in atoms is quantized (i.e., can only have certain specific values), for example when electrons are bound to the nucleus in atoms.\n2. The existence of quantised electronic energy levels is a direct result of the wave like properties of electrons and are allowed solutions of Schrödinger wave equation.\n3. Both the exact position and exact velocity of an electron in an atom cannot be determined simultaneously (Heisenberg uncertainty principle). The path of an electron in an atom  therefore, can never be determined or known accurately. That is why, as you shall see later on, one talks of only probability of finding the electron at different points in  an atom.\n4. An atomic orbital is the wave function ψ for an electron in an atom. Whenever an electron is described by a wave function, we say that the electron occupies that orbital. Since many such wave functions are possible for an electron, there are many atomic orbitals in an atom. These “one electron orbital wave functions” or orbitals form the basis of the electronic structure of atoms. In each orbital, the electron has a definite energy. An orbital cannot contain more than two electrons. In a multi-electron atom, the electrons are filled in various orbitals in the order of increasing energy. For each electron of a multi-electron atom, there shall, therefore, be an orbital wave function characteristic of the orbital it occupies. All the information about the electron in an atom is stored in its orbital wave function ψ and quantum mechanics makes it possible to extract this information out of ψ.\n5. The probability of finding an electron at a point within an atom is proportional to the square of the orbital wave function i.e., |ψ|2 at that point. |ψ|2 is known as probability density and is always positive. From the value of |ψ|2 at different points within an atom, it is possible to predict the region around the nucleus where electron will most probably be found."
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "2.6.1 Orbitals and Quantum Numbers"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "A large number of orbitals are possible in an atom. Qualitatively these orbitals can"
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "54",
+    "CHEMISTRY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null; judged against the CHE11L-ch02-p025.runA.json I wrote immediately before this page, whose last paragraph breaks off at 'When an electron is in any energy state, the wave function'. This page opens 'corresponding to that energy state contains all information about the electron.', the completion of that sentence, so first_block_continues_from_previous is true, matching p025's last_block_continues_on_next of true. Reading order is the left column then the right column, and the text layer stores this page in printed order. The green 'Important Features of the Quantum Mechanical Model of Atom' box spans the column break — its own heading, its introductory paragraph and numbered point 1 are printed at the foot of the left column and points 2 to 5 continue at the top of the right column — and it is recorded as the single box block n=3 that it is, with its internal heading as that block's first line and its five numbered points in printed order. This page carries no displayed equation, figure or table, so nothing is deferred to the special transcriber and every line of the page's prose is transcribed. The only maths is inline and is kept in the text layer's own flattened spelling: '|ψ|2' for the printed modulus-squared of psi (the layer stores it as '|ψ|2', with the superscript 2 flattened onto the bar), 'function ψ', 'out of ψ.', 'the quantum number n', 'quantum numbers n and l'. The bold and bold-italic runs inside box points 4 and 5 and the bold 'atomic orbitals' and 'probability density' are printed that way inside their sentences and are kept there. The doubled spaces in 'Application of  Schrödinger equation', 'Because of this  all the orbitals', 'at that point.  The quantum mechanical results', 'in an atom  therefore,' and 'at different points in  an atom' are as printed. Block n=5 ends mid-sentence at 'Qualitatively these orbitals can' and is completed on p027, so last_block_continues_on_next is true."
+}

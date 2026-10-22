@@ -1,0 +1,117 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "small, we can treat the body as a continuous distribution of mass. We subdivide the body into n small elements of mass;  ∆m1, ∆m2... ∆mn; the ith element  ∆mi is taken to be located about the point  (xi, yi, zi). The coordinates of the centre of mass are then approximately given by",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 416, 821, 508],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "As we make n bigger and bigger and each ∆mi smaller and smaller, these expressions become exact. In that case, we denote the sums over i by integrals. Thus,"
+    },
+    {
+      "n": 4,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [248, 653, 670, 913],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Here M is the total mass of the body. The coordinates of the centre of mass now are"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 988, 853, 1053],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The vector expression equivalent to these three scalar expressions is"
+    },
+    {
+      "n": 8,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [238, 1134, 853, 1199],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "If we choose, the centre of mass as the origin of our coordinate system,"
+    },
+    {
+      "n": 10,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [200, 1280, 853, 1447],
+      "text": ""
+    },
+    {
+      "n": 11,
+      "kind": "paragraph",
+      "text": "Often we have to calculate the centre of mass of homogeneous bodies of regular shapes like rings, discs, spheres, rods etc. (By a homogeneous body we mean a body with uniformly distributed mass.) By using symmetry consideration, we can easily show that the centres of mass of these bodies lie at their geometric centres."
+    },
+    {
+      "n": 12,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [200, 1717, 853, 1901],
+      "text": ""
+    },
+    {
+      "n": 13,
+      "kind": "paragraph",
+      "text": "Let us consider a thin rod, whose width and breath (in case the cross section of the rod is rectangular) or radius (in case the cross section of the rod is cylindrical) is much smaller than its length. Taking the origin to be at the geometric centre of the rod and x-axis to be along the length of the rod, we can say that on account of reflection symmetry, for every element dm of the rod at x, there is an element of the same mass dm located at –x (Fig. 6.8)."
+    },
+    {
+      "n": 14,
+      "kind": "paragraph",
+      "text": "The net contribution of every such pair to the integral and hence the integral  itself is zero.  From Eq. (6.6), the point for which the integral  itself is zero, is the centre of mass. Thus, the centre of mass of a homogenous thin rod coincides with its geometric centre. This can be understood on the basis of reflection symmetry."
+    },
+    {
+      "n": 15,
+      "kind": "paragraph",
+      "text": "The same symmetry argument will apply to homogeneous rings, discs, spheres, or even thick rods of circular or rectangular cross section. For all such bodies you will realise that for every element dm at a point (x, y, z) one can always take an element of the same mass at the point (–x, –y, –z). (In other words, the origin is a point of reflection symmetry for these bodies.) As a result, the integrals in Eq. (6.5 a) all are zero. This means that for all the above bodies, their centre of mass coincides with their geometric centre."
+    },
+    {
+      "n": 16,
+      "kind": "box",
+      "text": "Example 6.1 Find the centre of mass of three particles at the vertices of an equilateral triangle. The masses of the particles are 100g, 150g, and 200g respectively. Each side of the equilateral triangle is 0.5m long."
+    },
+    {
+      "n": 17,
+      "kind": "heading",
+      "text": "Answer"
+    },
+    {
+      "n": 18,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [886, 1512, 1528, 1901],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "SYSTEMS OF PARTICLES AND ROTATIONAL MOTION",
+    "97",
+    "2024-25"
+  ],
+  "note": "Block 14: the text_layer holds no characters for the inline integral symbol that appears twice in this paragraph on the image (printed as an inline math image); per instruction the text_layer characters were copied as-is, so two gaps of whitespace stand where the inline integrals are. Displayed equations (6.5a), (6.5b), (6.6), the X/Y/Z summation formula and the four summation-to-integral lines are marked needs_special rather than transcribed, because the text_layer scrambles their sub/superscripts onto separate lines. Block 17 'Answer' labels the solution to Example 6.1; the worked answer text itself is not on this page and continues on the next page, so last_block_continues_on_next is true. previous_page_last_block was null although this is page 6; the page plainly opens mid-sentence ('small, we can treat the body as a continuous...'), so continuation was judged from the text itself."
+}

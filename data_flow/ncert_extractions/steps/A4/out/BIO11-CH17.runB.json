@@ -1,0 +1,158 @@
+{
+  "chapter": "BIO11-CH17",
+  "subtopics": [
+    {
+      "n": 1,
+      "name": "Types of movement in humans: amoeboid, ciliary and muscular",
+      "from_heading": "unsure",
+      "passages": [
+        "BIO11L-CH17-P01",
+        "BIO11L-CH17-P02",
+        "BIO11L-CH17-P03",
+        "BIO11L-CH17-P41",
+        "BIO11L-CH17-P50"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "Muscle as a specialised contractile tissue",
+      "from_heading": "17.2 MUSCLE",
+      "passages": [
+        "BIO11L-CH17-P04"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "Three types of muscle: skeletal, visceral and cardiac",
+      "from_heading": "17.2 MUSCLE",
+      "passages": [
+        "BIO11L-CH17-P05",
+        "BIO11L-CH17-P06",
+        "BIO11L-CH17-P07",
+        "BIO11L-CH17-P42",
+        "BIO11L-CH17-P49"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Structure of a skeletal muscle fibre and the sarcomere",
+      "from_heading": "17.2 MUSCLE",
+      "passages": [
+        "BIO11L-CH17-P08",
+        "BIO11L-CH17-P09",
+        "BIO11L-CH17-P10",
+        "BIO11L-CH17-P43",
+        "BIO11L-CH17-P46"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Structure of contractile proteins: actin and myosin filaments",
+      "from_heading": "17.2.1 Structure of Contractile Proteins",
+      "passages": [
+        "BIO11L-CH17-P11",
+        "BIO11L-CH17-P12",
+        "BIO11L-CH17-P13",
+        "BIO11L-CH17-P47",
+        "BIO11L-CH17-P48"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Neural control of contraction: motor unit and neuromuscular junction",
+      "from_heading": "17.2.2 Mechanism of Muscle Contraction",
+      "passages": [
+        "BIO11L-CH17-P15",
+        "BIO11L-CH17-P16"
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Sliding filament theory and the cross-bridge cycle",
+      "from_heading": "17.2.2 Mechanism of Muscle Contraction",
+      "passages": [
+        "BIO11L-CH17-P14",
+        "BIO11L-CH17-P17",
+        "BIO11L-CH17-P18"
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Muscle fatigue and red versus white muscle fibres",
+      "from_heading": "17.2.2 Mechanism of Muscle Contraction",
+      "passages": [
+        "BIO11L-CH17-P17",
+        "BIO11L-CH17-P44"
+      ]
+    },
+    {
+      "n": 9,
+      "name": "Skeletal system: bones and cartilages, axial and appendicular divisions",
+      "from_heading": "17.3 SKELETAL SYSTEM",
+      "passages": [
+        "BIO11L-CH17-P19",
+        "BIO11L-CH17-P45"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Axial skeleton: skull, vertebral column, sternum and ribs",
+      "from_heading": "17.3 SKELETAL SYSTEM",
+      "passages": [
+        "BIO11L-CH17-P20",
+        "BIO11L-CH17-P21",
+        "BIO11L-CH17-P22",
+        "BIO11L-CH17-P23",
+        "BIO11L-CH17-P52"
+      ]
+    },
+    {
+      "n": 11,
+      "name": "Appendicular skeleton: bones of the fore limb and hind limb",
+      "from_heading": "17.3 SKELETAL SYSTEM",
+      "passages": [
+        "BIO11L-CH17-P24",
+        "BIO11L-CH17-P25",
+        "BIO11L-CH17-P26",
+        "BIO11L-CH17-P27",
+        "BIO11L-CH17-P28"
+      ]
+    },
+    {
+      "n": 12,
+      "name": "Pectoral and pelvic girdles",
+      "from_heading": "17.3 SKELETAL SYSTEM",
+      "passages": [
+        "BIO11L-CH17-P29",
+        "BIO11L-CH17-P30",
+        "BIO11L-CH17-P48"
+      ]
+    },
+    {
+      "n": 13,
+      "name": "Types of joints: fibrous, cartilaginous and synovial",
+      "from_heading": "17.4 JOINTS",
+      "passages": [
+        "BIO11L-CH17-P31",
+        "BIO11L-CH17-P32",
+        "BIO11L-CH17-P33",
+        "BIO11L-CH17-P34",
+        "BIO11L-CH17-P51"
+      ]
+    },
+    {
+      "n": 14,
+      "name": "Disorders of the muscular and skeletal system",
+      "from_heading": "17.5 DISORDERS OF MUSCULAR AND SKELETAL SYSTEM",
+      "passages": [
+        "BIO11L-CH17-P35",
+        "BIO11L-CH17-P36",
+        "BIO11L-CH17-P37",
+        "BIO11L-CH17-P38",
+        "BIO11L-CH17-P39",
+        "BIO11L-CH17-P40"
+      ]
+    }
+  ],
+  "note": "chapter_title in the input reads 'SUMMARY', which looks like an extraction error rather than the real chapter title. No heading is supplied for the opening section on amoeboid/ciliary/muscular movement (passages P01-P03; the heading list starts at 17.2), so subtopic 1 has from_heading 'unsure'. Figure passages P09, P10, P13, P16, P18, P21, P25-P28 have empty text, so they are placed by document position only; P25-P28 sit between the appendicular-skeleton text and the girdle text and are assigned to the appendicular skeleton. Red/white fibres and fatigue are visible only in the summary (P44) and in the truncated tail of P17, so P17 is shared between subtopics 7 and 8. Summary paragraphs (P41-P45) and exercise passages (P46-P52) are attached to the content subtopics they summarise or test; P48 (actin vs myosin, red vs white, pectoral vs pelvic) spans subtopics 5 and 12."
+}

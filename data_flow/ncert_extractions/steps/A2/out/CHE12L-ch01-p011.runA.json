@@ -1,0 +1,71 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "components 1 and 2 respectively in the vapour phase then, using Dalton’s law of partial pressures:",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        523,
+        259,
+        1444,
+        303
+      ],
+      "text": ""
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        523,
+        305,
+        1444,
+        347
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "In general"
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        523,
+        401,
+        1444,
+        441
+      ],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "box",
+      "needs_special": true,
+      "bbox": [
+        140,
+        504,
+        1428,
+        1902
+      ],
+      "text": ""
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "11",
+    "Solutions",
+    "Reprint 2026-27"
+  ],
+  "note": "Block 6 is the shaded \"Example 1.5 / Solution\" worked-example box (side labels \"Example 1.5\" and \"Solution\" are part of the box). Its body is almost entirely stacked fractions, subscripts and superscripts that the text layer flattens into garbled line fragments, so the whole box is marked needs_special rather than transcribed here. In the printed source that box cites \"equation (2.16)\" and \"the relation (2.19)\" although this is chapter 1 and the equations on this page are numbered (1.17)–(1.19); left as printed. `previous_page_last_block` was null even though this is page 11, so the continuation flag was judged from the page itself: the first line begins mid-sentence (\"components 1 and 2 respectively...\")."
+}

@@ -1,0 +1,71 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "heading",
+      "text": "SUMMARY"
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "1.\tAtom, as a whole, is electrically neutral and therefore contains equal\namount of positive and negative charges.\n2.\tIn Thomson’s model, an atom is a spherical cloud of positive charges\nwith electrons embedded in it.\n3.\tIn Rutherford’s model, most of the mass of the atom and all its positive\ncharge are concentrated in a tiny nucleus (typically one by ten thousand\nthe size of an atom), and the electrons revolve around it.\n4.\tRutherford nuclear model has two main difficulties in explaining the\nstructure of atom: (a) It predicts that atoms are unstable because the\naccelerated electrons revolving around the nucleus must spiral into\nthe nucleus. This contradicts the stability of matter. (b) It cannot\nexplain the characteristic line spectra of atoms of different elements.\n5.\tAtoms of most of the elements are stable and emit characteristic\nspectrum. The spectrum consists of a set of isolated parallel lines\ntermed as line spectrum. It provides useful information about the\natomic structure.\n6.\tTo explain the line spectra emitted by atoms, as well as the stability\nof atoms, Niel’s Bohr proposed a model for hydrogenic (single elctron)\natoms. He introduced three postulates and laid the foundations of\nquantum mechanics:\n(a)\tIn a hydrogen atom, an electron revolves in certain stable orbits\n(called stationary orbits) without the emission of radiant energy.\n(b)\tThe stationary orbits are those for which the angular momentum\nis some integral multiple of h/2π. (Bohr’s quantisation condition.)\nThat is L = nh/2π, where n is an integer called the principal\nquantum number.\n(c)\tThe third postulate states that an electron might make a transition\nfrom one of its specified non-radiating orbits to another of lower\nenergy. When it does so, a photon is emitted having energy equal\nto the energy difference between the initial and final states. The\nfrequency (ν) of the emitted photon is then given by",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [270, 1350, 535, 1385],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "list",
+      "text": "An atom absorbs radiation of the same frequency the atom emits,\nin which case the electron is transferred to an orbit with a higher\nvalue of n."
+    },
+    {
+      "n": 5,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [270, 1498, 545, 1534],
+      "text": ""
+    },
+    {
+      "n": 6,
+      "kind": "list",
+      "text": "7.\tAs a result of the quantisation condition of angular momentum, the\nelectron orbits the nucleus at only specific radii. For a hydrogen atom\nit is given by"
+    },
+    {
+      "n": 7,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [217, 1636, 565, 1730],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "list",
+      "text": "The total energy is also quantised:"
+    },
+    {
+      "n": 9,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [217, 1774, 605, 1900],
+      "text": ""
+    },
+    {
+      "n": 10,
+      "kind": "list",
+      "text": "The n = 1 state is called ground state. In hydrogen atom the ground\nstate energy is  –13.6 eV. Higher values of n correspond to excited\nstates (n > 1). Atoms are excited to these higher states by collisions\nwith other atoms or electrons or by absorption of a photon of right\nfrequency."
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "Atoms",
+    "303",
+    "Reprint 2026-27"
+  ],
+  "note": "previous_page_last_block was null, but I read p013 immediately before: it ended with completed sentences (body '...complete picture of the atomic structure.' and its footnote), and this page starts the chapter's end-matter SUMMARY, so nothing continues into block 1. The whole page is one pale-blue SUMMARY panel: I kept its title as the heading n=1 and its numbered points as list blocks, split around the four display equations (n=3 hν = Ei – Ef, n=5 Ei + hν = Ef, n=7 the orbit radius rn, n=9 the quantised total energy with its '= –13.6 eV/n²' second line), all needs_special with empty text. The grey/blue vertical bars at the right edge are decoration with no text. Text-layer discrepancies corrected from the image: Greek flattened (pi to 'p' in 'h/2p' and 'nh/2p', nu to 'n' in 'frequency (n)' and 'hn = Ei – Ef'; printed π and ν) and super/subscripts dropped (Ei, Ef, En, rn, n² in '–13.6 eV/n2'). Kept as printed, not corrected: point 6 reads 'Niel’s Bohr' and misspells 'single elctron'. Italics ('Thomson’s model', 'Rutherford’s model', 'line spectrum') are unmarked in the layer. The summary's last sentence is complete; its numbered list continues onto the next page, but no block ends mid-sentence."
+}

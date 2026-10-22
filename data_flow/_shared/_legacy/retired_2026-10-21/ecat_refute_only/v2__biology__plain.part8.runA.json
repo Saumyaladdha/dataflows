@@ -1,0 +1,108 @@
+{
+  "group": "v2__biology__plain.part8",
+  "ratings": [
+    {
+      "question_id": "2015_A#q091",
+      "question_type": "plain_mcq",
+      "format": "pick_cause_or_effect",
+      "content_shape": "process",
+      "concept": "Tubular secretion: the tubule cells pump $\\mathrm{H^+}$ into the filtrate, which is what makes urine acidic",
+      "cognitive_demand": "explanatory_reasoning",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "wrong_site_or_stage", "option": "2", "route": "Puts the sodium-hydrogen exchange in the peritubular capillaries. It works across the tubule wall, sending $\\mathrm{H^+}$ into the filtrate."},
+        {"label": "true_but_out_of_scope", "option": "4", "route": "Names a real exchange that moves no acid. Sodium is swapped for potassium in the distal tubule, and neither ion acidifies the urine."}
+      ],
+      "reason": "This question requires one of four rival causes of a granted fact to be chosen, demonstrated by the stem \"Human urine is usually acidic because:\".",
+      "note": "Option 3 is left untagged: plasma proteins are not filtered in any quantity, so \"Excreted plasma proteins are acidic\" rests on an event that does not happen at all, which is a flat contradiction rather than a named mis-step."
+    },
+    {
+      "question_id": "2015_A#q092",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "practical_procedure",
+      "concept": "Avena curvature test: the standard bioassay for auxin, read off a decapitated coleoptile's bend",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": [],
+      "traps": [
+        {"label": "true_but_out_of_scope", "option": "3", "route": "Names a growing technique, not an assay. Hydroponics is soil-less culture for studying mineral requirements."},
+        {"label": "true_but_out_of_scope", "option": "4", "route": "Names an instrument from another chapter. A potometer measures the rate of transpiration."}
+      ],
+      "reason": "This question requires one named bench procedure to be recalled, demonstrated by the stem \"Auxin can be bioassayed by :\".",
+      "note": "Option 1 is left untagged. Lettuce hypocotyl elongation is a plant-hormone bioassay, but the input gives no basis for naming which hormone it assays, and a trap whose route cannot name the member it belongs to is not written down."
+    },
+    {
+      "question_id": "2015_A#q093",
+      "question_type": "plain_mcq",
+      "format": "pick_correct_statement",
+      "content_shape": "process",
+      "concept": "Events at ovulation: oestrogen peaks, the LH surge follows, the Graafian follicle matures and the secondary oocyte is released",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {"label": "true_statement_trap", "option": "1", "route": "Reads past the \"not\". The LH surge is what triggers ovulation."},
+        {"label": "true_statement_trap", "option": "3", "route": "Reads past the \"not\". The Graafian follicle is fully grown just before the egg leaves it."},
+        {"label": "true_statement_trap", "option": "4", "route": "Reads past the \"not\". Releasing the secondary oocyte is what ovulation is."}
+      ],
+      "reason": "This question requires each listed event to be tested against ovulation, demonstrated by the stem \"Which of the following events is not associated with ovulation in human female?\"",
+      "note": "The key turns on the direction of one hormone: estradiol rises to a peak before the LH surge rather than falling, so option 2 is the event that does not belong."
+    },
+    {
+      "question_id": "2015_A#q094",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "organism_characteristic",
+      "concept": "Porifera: a canal system lined with flagellated collar cells, which filter the feeding current",
+      "cognitive_demand": "recall",
+      "solution_structure": "single_step",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Food-filtering flagellated cells lining internal cavities belong to sponges alone, so that one feature settles it and the meshwork and indirect development need not be used.",
+      "traps": [
+        {"label": "other_one_fact", "option": "1", "route": "Takes a single-celled group. Protozoans are one cell, so there is no meshwork of cells to line a cavity."},
+        {"label": "other_one_fact", "option": "2", "route": "Takes the other simple aquatic group. Coelenterates have one central cavity with stinging cells, not a canal system."},
+        {"label": "other_one_fact", "option": "4", "route": "Takes a group with the wrong feeding apparatus. Molluscs rasp with a radula under a mantle."}
+      ],
+      "reason": "This question requires one phylum to be named from its diagnostic features, demonstrated by the stem \"internal cavities lined with food filtering flagellated cells\".",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q095",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "example_list",
+      "concept": "Hormones and blood sugar: insulin, glucagon and cortisol all act on it, while aldosterone handles $\\mathrm{Na^+}$ and $\\mathrm{K^+}$",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": [],
+      "traps": [
+        {"label": "true_statement_trap", "option": "1", "route": "Reads past the \"not\". Glucagon raises blood glucose."},
+        {"label": "true_statement_trap", "option": "2", "route": "Reads past the \"not\". Cortisone is a glucocorticoid and promotes gluconeogenesis."},
+        {"label": "true_statement_trap", "option": "4", "route": "Reads past the \"not\". Insulin lowers blood glucose."}
+      ],
+      "reason": "This question requires each hormone to be checked against one metabolic role, demonstrated by the stem \"Which one of the following hormones is not involved in sugar metabolism?\"",
+      "note": ""
+    },
+    {
+      "question_id": "2015_A#q096",
+      "question_type": "plain_mcq",
+      "format": "name_or_identify",
+      "content_shape": "disease_cause",
+      "concept": "Disease agents by kind: babesiosis is protozoan, blastomycosis fungal, syphilis bacterial, influenza viral",
+      "cognitive_demand": "recall",
+      "solution_structure": "several_independent_checks",
+      "strategy_available": ["elimination"],
+      "strategy_evidence": "Blastomycosis is fungal, syphilis bacterial and influenza viral, so the three familiar diseases strike out options 1 to 3 and leave option 4 without babesiosis having to be known.",
+      "traps": [
+        {"label": "other_one_fact", "option": "1", "route": "Takes a fungal disease. Blastomycosis is caused by the fungus $Blastomyces$."},
+        {"label": "other_one_fact", "option": "2", "route": "Takes a bacterial disease. Syphilis is caused by the bacterium $Treponema$."},
+        {"label": "other_one_fact", "option": "3", "route": "Takes a viral disease. Influenza is caused by a virus."}
+      ],
+      "reason": "This question requires each disease to be matched to the kind of agent causing it, demonstrated by the stem \"Which of the following diseases is caused by a protozoan?\"",
+      "note": ""
+    }
+  ],
+  "group_note": "All six are printed as one question with four short text options, so all six are plain_mcq, and every one is retrieval of a taught fact rather than a built answer, so all six are recall. Solution structure splits them on one rule: where the stem's criterion must be tested against every option the label is several_independent_checks (q093, q095 and q096, the three screening tasks), and where the stem's description points at one answer it is single_step (q091, q092, q094). q091 is the only member whose options are rival causes of a granted fact, which is why it alone carries pick_cause_or_effect and explanatory_reasoning. The two negated tasks, q093 and q095, carry true_statement_trap on all three wrong options, because a negated task gives every wrong option the same device; q096 is negation-free yet also screens four items, so its wrong options carry other_one_fact instead. Elimination is recorded only where a shortcut can be shown: the collar cells in q094 and the three familiar agents in q096. q092 keeps one option untagged rather than guessing which hormone its bioassay belongs to."
+}

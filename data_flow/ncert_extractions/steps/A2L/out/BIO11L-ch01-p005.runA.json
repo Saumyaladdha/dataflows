@@ -1,0 +1,81 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.5,
+    "text_block": [0.0976, 0.1364, 0.6876, 0.9059],
+    "fill": 0.97,
+    "columns": [
+      {"id": "full", "x0": 0.0976, "x1": 0.6876}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0817],
+     "column": "full", "size_rel": 1.0, "align": "left", "indent": 0.0,
+     "space_before": 0.0, "fill": "#e0ebb6", "text_color": null},
+
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0817, 1.0, 0.0950],
+     "column": "full", "size_rel": 1.0, "align": "left", "indent": 0.0,
+     "space_before": 0.0, "fill": "#d1d2d4", "text_color": null},
+
+    {"n": null, "role": "running_header", "bbox": [0.1371, 0.0836, 0.2765, 0.0932],
+     "column": "full", "size_rel": 1.02, "align": "left", "indent": 0.0388,
+     "space_before": 0.0018, "fill": "#d1d2d4", "text_color": "#221f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": null, "role": "page_number", "bbox": [0.8141, 0.0652, 0.8706, 0.0950],
+     "column": "full", "size_rel": 1.07, "align": "center", "indent": 0.7159,
+     "space_before": 0.0652, "fill": "#ffffff", "text_color": "#221f1f",
+     "face": "serif-bold", "font": "serif-bold"},
+
+    {"n": 1, "role": "list", "bbox": [0.1376, 0.1364, 0.6865, 0.1846],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0394,
+     "space_before": 0.0413, "fill": null, "text_color": "#221f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": 2, "role": "paragraph", "bbox": [0.0982, 0.1974, 0.6882, 0.2447],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0294,
+     "space_before": 0.0129, "fill": null, "text_color": "#221f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": 3, "role": "paragraph", "bbox": [0.0982, 0.2498, 0.6865, 0.5941],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0300,
+     "space_before": 0.0051, "fill": null, "text_color": "#221f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.0982, 0.5996, 0.6865, 0.6786],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0300,
+     "space_before": 0.0055, "fill": null, "text_color": "#221f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.0988, 0.6869, 0.6859, 0.7167],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0300,
+     "space_before": 0.0083, "fill": null, "text_color": "#221f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": 6, "role": "paragraph", "bbox": [0.0976, 0.7218, 0.6871, 0.8219],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0288,
+     "space_before": 0.0051, "fill": null, "text_color": "#221f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": 7, "role": "paragraph", "bbox": [0.0982, 0.8269, 0.6859, 0.9091],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0300,
+     "space_before": 0.0051, "fill": null, "text_color": "#221f1f",
+     "face": "serif", "font": "serif"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.2188, 0.3095, 0.8482, 0.8099],
+     "column": "full", "size_rel": 1.0, "align": null, "indent": null,
+     "space_before": null, "fill": null, "text_color": "#e8e8e8"},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9578, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "align": "left", "indent": 0.0,
+     "space_before": 0.0487, "fill": "#cadf7f", "text_color": null},
+
+    {"n": null, "role": "running_header", "bbox": [0.4765, 0.9559, 0.5235, 0.9633],
+     "column": "full", "size_rel": 0.78, "align": "center", "indent": 0.3789,
+     "space_before": 0.0468, "fill": "#cadf7f", "text_color": "#000000",
+     "face": "sans", "font": "sans"}
+  ],
+  "note": "Ordinary body page, single full-width text column, no figures, tables, headings or boxes. Measured on the 1700x2178 px render (PNG metadata says 200 dpi, so 1 px = 0.36 pt; all bboxes are page fractions, not pixels). KEY MEASURE: the body column is 0.0976-0.6876, i.e. only the left two-thirds of the sheet; the outer (right) margin is a blank 0.31 of page width with nothing in it but the watermark. The green header band, grey strip, folio tab and green foot band all sit on PAGE coordinates, not on the text column, so the folio tab (0.814-0.871) and the centred foot line (centre x=0.500, exactly page centre, not column centre 0.393) fall well right of the text. body_text_size_px = 20.5 is the cap-top-to-baseline height of ordinary body prose (e.g. line at y 582-602 px), measured on four separate lines (20-21 px each). Baseline-to-baseline leading is a uniform 38 px (13.68 pt) across all 44 lines on the page. FIRST-LINE INDENTS: measured per paragraph as 50, 51, 51, 51, 49, 51 px from the column left edge (0.0294, 0.0300, 0.0300, 0.0300, 0.0288, 0.0300). They are NOT per-paragraph design variation - the +/-1 px spread is the left side-bearing of the differing first capital (N, S, H, H, T, H); the printed indent is one uniform ~50 px (18 pt, 0.0294 of page width). The reported values are the raw measurements as asked. SPACE BEFORE: reported per the brief's definition (this element's ink top minus the previous element's ink bottom), which is glyph-dependent. The design-true figure is cleaner: baseline deltas are 38-39 px everywhere EXCEPT before block n=2, where it is 55 px - so blocks 3-7 carry NO extra lead at all (they are set solid on the 38 px grid and are distinguished only by the first-line indent), and the single real paragraph gap on this page is the +17 px (0.0078 of page height) that follows the numbered list item. BLOCK MATCHING: all seven A2 blocks matched with high confidence by line count and ragged last-line width - n=1 list, 3 lines ending 'Mangifera indica.'; n=2, 3 lines; n=3, 20 lines; n=4, 5 lines; n=5, 2 lines; n=6, 6 lines; n=7, 5 lines, the last line full-measure because the paragraph runs on to the next page. No nulls were needed. HEADER: the top of the page is two distinct bands, both reported as page_header_band - an upper green band #e0ebb6 (0 to 0.0817) and a lower grey strip #d1d2d4 (0.0817 to 0.0950) that carries the running head. The running head 'The Living World' is serif SMALL CAPS: its full caps measure 21 px (ratio 1.02, the value reported as size_rel, since that is the nominal type size) while the small caps measure 15 px (ratio 0.73). PAGE NUMBER: reported bbox is the white rounded tab itself (fill #ffffff), which starts inside the green band at y 0.0652 and runs down to the foot of the grey strip; the bold serif digit '5' inside it occupies [0.8276, 0.0840, 0.8376, 0.0941] and is 22 px tall (ratio 1.07). Its 'indent' is the tab's inset from the column left, which is large because the tab is placed against the page, not the column. FOOT: the green foot band #cadf7f is a solid band from 0.9578 full-bleed to the bottom edge, not a thin rule - 'footer_rule' is the nearest allowed role. The '2024-25' edition line is a black sans line centred on the page, straddling the band's top edge (ink 0.9559-0.9633 vs band top 0.9578); it is a running FOOT, reported as running_header because the allowed-value list has no footer-text role. WATERMARK: the diagonal grey '(c) NCERT not to be republished' is reported as decorative_image at its measured diagonal bounding box, flat grey #e8e8e8; it is a background overlay and not in the vertical flow, so its align/indent/space_before are null rather than invented. FILL: text_block is the measured content rectangle (top of the first line to the baseline of the last); fill 0.97 is the content depth measured against the full available depth down to the foot-band clearance, which would take roughly one more 38 px line. The page is set solid - there is no blank region anywhere inside the block. OMITTED: a 2 px sliver of darker green (164,172,133) at the very top-right corner (x 1660-1699, y 0-1) is a render artefact of the band edge, not a page element. size_pt is not reported: no headings or captions appear on this page, and the brief's instruction is that size_rel is the trusted number. All fills were sampled from flat interiors well away from edges and glyphs."
+}
