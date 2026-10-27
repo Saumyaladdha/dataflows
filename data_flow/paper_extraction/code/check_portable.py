@@ -36,10 +36,10 @@ OUTSIDE = re.compile(r"(~/Downloads|/Users/[a-z]+/Downloads|Saumya_NEET_work)")
 
 def main():
     problems, allowed = [], []
-    for name in sorted(os.listdir(rc.pp("scripts"))):
+    for name in sorted(os.listdir(rc.code_path())):
         if not name.endswith(".py") or name == os.path.basename(__file__):
             continue                      # this file names the paths it hunts for
-        with open(rc.pp("scripts", name), encoding="utf-8") as fh:
+        with open(rc.code_path(name), encoding="utf-8") as fh:
             for number, line in enumerate(fh, 1):
                 if not OUTSIDE.search(line):
                     continue
@@ -57,16 +57,16 @@ def main():
     import glob
     import json
     missing = []
-    for path in sorted(glob.glob(rc.pp("papers_v2", "papers", "*.json"))):
+    for path in sorted(glob.glob(rc.pp(*rc.corpus(), "papers", "*.json"))):
         with open(path, encoding="utf-8") as fh:
             rel = json.load(fh)["meta"]["source_pdf"]
-        if not os.path.exists(rc.pp("inputs", "papers_v2_sources", rel)):
+        if not os.path.exists(rc.source_dir(rel)):
             missing.append(rel)
 
     print("portability check")
     print("  source booklets inside the repo: %d of %d"
-          % (len(glob.glob(rc.pp("papers_v2", "papers", "*.json"))) - len(missing),
-             len(glob.glob(rc.pp("papers_v2", "papers", "*.json")))))
+          % (len(glob.glob(rc.pp(*rc.corpus(), "papers", "*.json"))) - len(missing),
+             len(glob.glob(rc.pp(*rc.corpus(), "papers", "*.json")))))
     for rel in missing:
         print("    MISSING  %s" % rel)
     print("  references to the original tree, allowed: %d" % len(allowed))

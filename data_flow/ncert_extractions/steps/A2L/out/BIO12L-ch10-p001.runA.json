@@ -1,0 +1,247 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 20.0,
+  "page_kind": "chapter_opener",
+  "text_block": [
+   0.0703,
+   0.4495,
+   0.902,
+   0.912
+  ],
+  "fill": 0.97,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.0703,
+    "x1": 0.3551
+   },
+   {
+    "id": "right",
+    "x0": 0.404,
+    "x1": 0.902
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0,
+    0,
+    1.0,
+    0.0375
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "chapter_banner",
+   "bbox": [
+    0,
+    0.0389,
+    1.0,
+    0.3833
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d3ead3"
+  },
+  {
+   "n": null,
+   "role": "qr_code",
+   "bbox": [
+    0.414,
+    0.135,
+    0.563,
+    0.245
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.581,
+    0.079,
+    0.889,
+    0.261
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": 1,
+   "role": "chapter_title",
+   "bbox": [
+    0.067,
+    0.2125,
+    0.333,
+    0.24
+   ],
+   "column": "full",
+   "size_rel": 2.85,
+   "align": "left",
+   "font": "sans-light",
+   "text_color": "#231f20"
+  },
+  {
+   "n": 2,
+   "role": "chapter_title",
+   "bbox": [
+    0.067,
+    0.2838,
+    0.722,
+    0.3597
+   ],
+   "column": "full",
+   "size_rel": 3.2,
+   "align": "left",
+   "font": "sans-light",
+   "text_color": "#231f20",
+   "space_before": 0.0438
+  },
+  {
+   "n": null,
+   "role": "rule_bar",
+   "bbox": [
+    0,
+    0.3935,
+    1.0,
+    0.4343
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d",
+   "space_before": 0.0338
+  },
+  {
+   "n": null,
+   "role": "contents_panel",
+   "bbox": [
+    0.0703,
+    0.4343,
+    0.3551,
+    0.7185
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif-italic",
+   "fill": "#fee5ca",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.1032,
+    0.7259,
+    0.3222,
+    0.7329
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "fill": "#dbdcde"
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.404,
+    0.4796,
+    0.902,
+    0.637
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0453
+  },
+  {
+   "n": 4,
+   "role": "list",
+   "bbox": [
+    0.417,
+    0.6417,
+    0.9,
+    0.7449
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "indent": 0.013,
+   "space_before": 0.0047
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.405,
+    0.75,
+    0.9,
+    0.7991
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0051
+  },
+  {
+   "n": 6,
+   "role": "section_heading",
+   "bbox": [
+    0.4082,
+    0.8167,
+    0.9,
+    0.8468
+   ],
+   "column": "right",
+   "size_rel": 1.3,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00ae4c",
+   "space_before": 0.0176
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.405,
+    0.863,
+    0.9,
+    0.894
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0162
+  },
+  {
+   "n": 8,
+   "role": "list",
+   "bbox": [
+    0.428,
+    0.8991,
+    0.748,
+    0.912
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.024,
+   "space_before": 0.0051
+  }
+ ],
+ "note": "Chapter-opener page, two columns below the orange rule bar: a left contents panel (#fee5ca, four italic section entries 10.1-10.4, one element; A2 has no block for it so n:null) and the opening prose in the right column. Above it a full-width pale green banner (#d3ead3) with a dark green top strip (#4c7436 for x 0-0.778, brown #735921 for x 0.778-1.0) reported as decorative_image, a QR code (12083CH12), and a tilted cotton-boll photograph on a dark green square reported as decorative_image (no A2 block). Block 1 'CHAPTER 10' and block 2 the chapter name are both chapter_title. A short grey bar (#dbdcde) sits under the contents panel. Section heading 10.1 is green bold small caps (#00ae4c). body_text_size_px is the cap-to-baseline height of the right-column prose. No printed page number on this page. The 'Reprint 2026-27' stamp at the page foot (y~0.974-0.984) is not the folio and is deliberately left out; the diagonal NCERT 'not to be republished' watermark is also left out. size_pt omitted: the render DPI of the page image is not stated in the input, so only size_rel is reported. space_before is measured from the previous element in the same (or full) column; for block 3 it is the gap below the rule bar."
+}

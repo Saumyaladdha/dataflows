@@ -1,0 +1,52 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 19.0,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.134, 0.873, 0.885],
+    "fill": 0.97,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686},
+      {"id": "left", "x0": 0.098, "x1": 0.480},
+      {"id": "right", "x0": 0.500, "x1": 0.873}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#e1ebb6", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.098, 0.084, 0.223, 0.095],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "fill": "#d1d3d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.828, 0.082, 0.852, 0.096],
+     "column": "right", "size_rel": 1.2, "align": "right", "font": "serif-bold", "fill": "#ffffff", "space_before": 0.0},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.134, 0.686, 0.188],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.039},
+    {"n": 2, "role": "section_heading", "bbox": [0.098, 0.219, 0.249, 0.234],
+     "column": "left", "size_rel": 1.2, "align": "left", "font": "serif-bold",
+     "text_color": "#00a3e0", "space_before": 0.031},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.246, 0.480, 0.548],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.012},
+    {"n": 4, "role": "figure", "bbox": [0.506, 0.208, 0.873, 0.510],
+     "column": "right", "size_rel": 1.0, "space_before": 0.020},
+    {"n": 5, "role": "figure_caption", "bbox": [0.500, 0.516, 0.858, 0.559],
+     "column": "right", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.006},
+    {"n": 6, "role": "section_heading", "bbox": [0.098, 0.580, 0.313, 0.595],
+     "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold",
+     "text_color": "#00a3e0", "space_before": 0.021},
+    {"n": 7, "role": "paragraph", "bbox": [0.098, 0.609, 0.686, 0.678],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.014},
+    {"n": 8, "role": "section_heading", "bbox": [0.098, 0.695, 0.275, 0.710],
+     "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold",
+     "text_color": "#00a3e0", "space_before": 0.017},
+    {"n": 9, "role": "paragraph", "bbox": [0.098, 0.721, 0.686, 0.791],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.011},
+    {"n": 10, "role": "major_heading", "bbox": [0.098, 0.816, 0.407, 0.832],
+     "column": "full", "size_rel": 1.3, "align": "left", "font": "serif-bold",
+     "text_color": "#00a3e0", "space_before": 0.025},
+    {"n": 11, "role": "paragraph", "bbox": [0.098, 0.850, 0.686, 0.885],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.018},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cfe08a", "space_before": 0.071}
+  ],
+  "note": "Recto body page (page_kind added as a page field). Body measure is a single full column x 0.098-0.686 (wide right margin), except for section 4.1.4 where the text narrows to a LEFT column (0.098-0.480) and Figure 4.3 (three coelom diagrams) with its caption sits in a RIGHT column (0.500-0.873) extending into the margin. Header: pale-green band (#e1ebb6) over a thin grey bar (#d1d3d4); running header 'Animal Kingdom' (small caps) left, page number '39' in a white tab at right. Footer is the full-width green band with '2024-25', reported as footer_rule. Watermark ignored. size_pt omitted: DPI not given."
+}

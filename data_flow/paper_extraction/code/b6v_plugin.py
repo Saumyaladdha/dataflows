@@ -31,7 +31,7 @@ import runner_core as rc
 ListLine = collections.namedtuple(
     "ListLine", ["item_id", "agent", "input_path", "output_path", "run_label"])
 
-CORPUS = ("papers_v2",)
+CORPUS = rc.corpus()
 B3V_OUT = ("steps", "B3V", "out")
 WORK = ("steps", "B6V", "work")
 OUT = ("steps", "B6V", "out")
@@ -87,8 +87,12 @@ class B6VPlugin:
         for item_id, (paper_id, question, read) in self._questions(filters).items():
             if os.path.exists(self._out_path(item_id)):
                 continue
+            # The geometric crop is a fallback ONLY where the image read says there IS a figure. On
+            # 2017 Code-A it handed the solver of q58, q67 and q81 a drawing from a neighbouring
+            # question, because B3V had found no figure and the geometric pass had guessed one.
             figure = (question.get("agent_figure_images")
-                      or question.get("figure_images") or [None])[0]
+                      or (question.get("figure_images") if read.get("has_figure") else None)
+                      or [None])[0]
             # EXACTLY the fields b6-blind-solver's own Input block names, and nothing else. Adding a
             # field here is how a key leaks to a solver that must not see one.
             payload = {

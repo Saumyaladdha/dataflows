@@ -1,0 +1,38 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.138, 0.886, 0.898],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.687}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0815],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.097, 0.0815, 0.225, 0.095],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.826, 0.083, 0.854, 0.095],
+     "column": "full", "size_rel": 1.1, "align": "right", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": 1, "role": "figure", "bbox": [0.103, 0.138, 0.886, 0.363],
+     "column": "full", "size_rel": 1.0, "space_before": 0.043},
+    {"n": null, "role": "figure_caption", "bbox": [0.200, 0.381, 0.770, 0.394],
+     "column": "full", "size_rel": 0.95, "align": "center", "font": "serif", "space_before": 0.018},
+    {"n": 2, "role": "section_heading", "bbox": [0.098, 0.4165, 0.338, 0.431],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-italic", "text_color": "#808285", "space_before": 0.0225},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.440, 0.687, 0.6025],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.009},
+    {"n": 4, "role": "paragraph", "bbox": [0.098, 0.611, 0.687, 0.681],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0085},
+    {"n": 5, "role": "section_heading", "bbox": [0.098, 0.693, 0.310, 0.7075],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-italic", "text_color": "#808285", "space_before": 0.012},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.716, 0.687, 0.8975],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0085},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.955, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary recto body page, single column (prose measure 0.098-0.687; the wide right margin is empty here). Figure 4.22 (four reptiles with (a)-(d) sublabels) spans wider than the prose measure, to x=0.886, so text_block x1 is taken from the figure. The header is a pale green band (#e0ebb6) over a grey strip (#d1d2d4) carrying the running head 'Animal Kingdom'; the folio '49' sits in a white tab at right. The figure caption 'Figure 4.22 Reptiles...' has no A2 block, so n is null. The foot is a thick light-green band (#cadf7f) carrying the '2024-25' print-year mark, reported as footer_rule. Diagonal 'NCERT not to be republished' watermark ignored. Section headings 4.2.11.5/4.2.11.6 are grey bold-italic at about body size; text_color is approximate. size_pt omitted (DPI not given in input)."
+}

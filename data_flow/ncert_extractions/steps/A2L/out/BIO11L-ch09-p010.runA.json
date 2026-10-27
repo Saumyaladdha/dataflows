@@ -1,0 +1,52 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 18.5,
+    "text_block": [0.098, 0.134, 0.686, 0.893],
+    "fill": 1.0,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.082, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.083, 0.258, 0.094],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif",
+     "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.815, 0.065, 0.870, 0.095],
+     "column": "full", "size_rel": 1.2, "align": "center", "font": "serif-bold",
+     "fill": "#ffffff", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.134, 0.686, 0.345],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.039},
+    {"n": 2, "role": "section_heading", "bbox": [0.098, 0.362, 0.379, 0.376],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold",
+     "text_color": "#00a0e3", "space_before": 0.017},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.390, 0.686, 0.528],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.014},
+    {"n": 4, "role": "equation", "bbox": [0.098, 0.540, 0.686, 0.573],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif",
+     "fill": "#fffac1", "space_before": 0.012},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.581, 0.686, 0.646],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.008},
+    {"n": 6, "role": "equation", "bbox": [0.098, 0.653, 0.686, 0.699],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif",
+     "fill": "#fffac1", "space_before": 0.007},
+    {"n": 7, "role": "paragraph", "bbox": [0.098, 0.705, 0.686, 0.826],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.006},
+    {"n": 8, "role": "equation", "bbox": [0.098, 0.833, 0.686, 0.893],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif",
+     "fill": "#fffac1", "space_before": 0.007},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary body page (recto, folio 113 in a white tab at right; running head 'Biomolecules' in small caps at left on the grey strip). Single full-width text column 0.098-0.686; the right margin is empty. Header is a light-green band over a thin grey strip, reported as two page_header_band elements. The three equations (Ba(OH)2 reaction, rate = dP/dt, carbonic anhydrase reaction) each sit in a pale-yellow tinted box spanning the text measure. Footer is the green band carrying the '2024-25' imprint. Diagonal 'not to be republished' watermark ignored. size_pt omitted because page DPI is not given."
+}

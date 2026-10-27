@@ -1,0 +1,173 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2182,
+  "body_text_size_px": 23.0,
+  "text_block": [
+   0.125,
+   0.133,
+   0.902,
+   0.906
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.125,
+    "x1": 0.465
+   },
+   {
+    "id": "right",
+    "x0": 0.49,
+    "x1": 0.902
+   }
+  ],
+  "page_kind": "body"
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.083
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.083,
+    1.0,
+    0.097
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.838,
+    0.085,
+    0.9,
+    0.097
+   ],
+   "column": "full",
+   "size_rel": 0.85,
+   "align": "right",
+   "font": "serif",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.128,
+    0.067,
+    0.184,
+    0.097
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "center",
+   "fill": "#ffffff",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.125,
+    0.133,
+    0.465,
+    0.578
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "space_before": 0.036
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.164,
+    0.592,
+    0.441,
+    0.606
+   ],
+   "column": "left",
+   "size_rel": 0.9,
+   "align": "center",
+   "font": "serif",
+   "space_before": 0.014
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.49,
+    0.136,
+    0.902,
+    0.561
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.039
+  },
+  {
+   "n": 3,
+   "role": "section_heading",
+   "bbox": [
+    0.49,
+    0.578,
+    0.898,
+    0.612
+   ],
+   "column": "right",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.017
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.313,
+    0.623,
+    0.902,
+    0.906
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.011
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.957,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Verso body page (folio 232 in white tab at left, running head 'BIOLOGY' at right). Upper part is two columns: Figure 18.1 (labelled neuron) on the left extending into the outer margin, with paragraph n=2 and subsection heading 18.3.1 (n=3, cyan bold) on the right. Below the figure, paragraph n=4 runs at the normal verso body measure 0.313-0.902 and is marked column 'full' (the body column). The caption 'Figure 18.1 Structure of a neuron' has no A2 block so it carries n=null. Foot band '2024-25' is a reprint stamp, not a page number. size_pt omitted: page DPI not given in the input."
+}

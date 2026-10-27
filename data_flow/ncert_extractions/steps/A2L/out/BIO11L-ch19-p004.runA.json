@@ -1,0 +1,219 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2178,
+  "body_text_size_px": 19.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.127,
+   0.134,
+   0.902,
+   0.902
+  ],
+  "fill": 0.98,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.127,
+    "x1": 0.442
+   },
+   {
+    "id": "right",
+    "x0": 0.463,
+    "x1": 0.902
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.08
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.08,
+    1.0,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.128,
+    0.064,
+    0.184,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "center",
+   "font": "serif-bold",
+   "fill": "#ffffff",
+   "text_color": "#231f20"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.839,
+    0.083,
+    0.899,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "right",
+   "font": "serif",
+   "text_color": "#231f20"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.463,
+    0.134,
+    0.902,
+    0.314
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": 2,
+   "role": "figure",
+   "bbox": [
+    0.128,
+    0.267,
+    0.442,
+    0.82
+   ],
+   "column": "left",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.127,
+    0.831,
+    0.442,
+    0.902
+   ],
+   "column": "left",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "space_before": 0.011
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.463,
+    0.318,
+    0.902,
+    0.386
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "indent": 0.029,
+   "space_before": 0.004
+  },
+  {
+   "n": 4,
+   "role": "section_heading",
+   "bbox": [
+    0.463,
+    0.407,
+    0.727,
+    0.424
+   ],
+   "column": "right",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.021
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.463,
+    0.435,
+    0.902,
+    0.574
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.011
+  },
+  {
+   "n": 6,
+   "role": "section_heading",
+   "bbox": [
+    0.463,
+    0.595,
+    0.7,
+    0.611
+   ],
+   "column": "right",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.021
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.463,
+    0.623,
+    0.902,
+    0.896
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.012
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Ordinary verso body page, folio 242 in the white tab top-left; running head 'BIOLOGY' top right. Header light green band #e0ebb6 over grey strip #d1d2d4 (both page_header_band). Two columns throughout: Figure 19.3 (n=2, panels (a) and (b) stacked, one element) with its caption (no A2 block, n=null) in the LEFT column; all prose and headings 19.2.3 / 19.2.4 in the RIGHT column. Paragraph n=1 continues from the previous page; n=3 has a first-line indent (indent is that first-line inset as a fraction of page width). Bottom green strip #cadf7f with '2024-25' stamp is footer_rule, not a page number. Watermark ignored. size_pt omitted (DPI not given)."
+}

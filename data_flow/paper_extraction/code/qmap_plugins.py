@@ -30,14 +30,14 @@ import runner_core as rc
 ListLine = collections.namedtuple(
     "ListLine", ["item_id", "agent", "input_path", "output_path", "run_label"])
 
-CORPUS = ("papers_v2",)
-INDEX = ("papers_v2", "mappings", "chapter_index.json")
+CORPUS = rc.corpus()
+INDEX = rc.mappings() + ("chapter_index.json",)
 B3V_OUT = ("steps", "B3V", "out")
 
 _INDEX_CACHE = {}
 
 
-ADDITIONS = ("papers_v2", "mappings", "taxonomy_additions.json")
+ADDITIONS = rc.mappings() + ("taxonomy_additions.json",)
 
 
 def chapter_index():
@@ -124,6 +124,16 @@ def _read_out(step, item_id):
         return None
     return None if "error" in data else data
 
+
+
+def _image_path(relative):
+    """A corpus image as a path from the PIPELINE ROOT, the base every agent resolves against.
+
+    The record stores `crops/2017_A/q055.png`, relative to the corpus folder. Passed through as-is,
+    the agent looked for it under the root, found nothing, and decided from the stem alone -- five
+    QSUBJ agents on 2017 Code-A reported the image missing. B3V and E7V already convert; these did not.
+    """
+    return os.path.relpath(rc.pp(*CORPUS, relative), rc.pp()) if relative else None
 
 class _QBase:
     """Shared walking of the corpus. Each subclass decides which questions it owns."""
@@ -269,7 +279,7 @@ class QSUBJPlugin(_QBase):
                 "position_guess": {"subject": question.get("subject"),
                                    "branch": question.get("branch"),
                                    "how": question.get("subject_from")},
-                "question_image": question.get("question_image"),
+                "question_image": _image_path(question.get("question_image")),
             })
             lines.append(self._line(item_id, self._write_input(item_id, payload)))
         return lines
@@ -362,7 +372,7 @@ class QCHAPPlugin(_QBase):
                 # list the agent saw rather than a second copy that could drift from it.
                 "chapters": [{"chapter_code": c["chapter_code"], "chapter": c["chapter"],
                               "topics": [t["topic"] for t in c["topics"]]} for c in chapters],
-                "question_image": question.get("question_image"),
+                "question_image": _image_path(question.get("question_image")),
             })
             lines.append(self._line(item_id, self._write_input(item_id, payload)))
         return lines
@@ -450,7 +460,7 @@ class QTOPICPlugin(_QBase):
                             "existing_questions": t.get("questions")} for t in chapter["topics"]],
                 "note_from_runner": ("the chapter was picked with %s confidence"
                                      % chosen.get("confidence")) if chosen.get("confidence") else "",
-                "question_image": question.get("question_image"),
+                "question_image": _image_path(question.get("question_image")),
             })
             lines.append(self._line(item_id, self._write_input(item_id, payload)))
         return lines

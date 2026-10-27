@@ -1,0 +1,163 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 15.5,
+  "text_block": [
+   0.067,
+   0.108,
+   0.89,
+   0.91
+  ],
+  "fill": 0.97,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.067,
+    "x1": 0.7
+   },
+   {
+    "id": "right",
+    "x0": 0.505,
+    "x1": 0.89
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    0.793,
+    0.04
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.8,
+    0.0,
+    1.0,
+    0.1
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.074,
+    0.076,
+    0.405,
+    0.088
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "left",
+   "font": "sans",
+   "text_color": "#6d6e71",
+   "space_before": 0.0
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.108,
+    0.7,
+    0.14
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.02
+  },
+  {
+   "n": 2,
+   "role": "list",
+   "bbox": [
+    0.078,
+    0.145,
+    0.7,
+    0.91
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "indent": 0.011,
+   "space_before": 0.005
+  },
+  {
+   "n": 3,
+   "role": "figure",
+   "bbox": [
+    0.543,
+    0.428,
+    0.872,
+    0.64
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "space_before": 0.0
+  },
+  {
+   "n": 4,
+   "role": "figure_caption",
+   "bbox": [
+    0.506,
+    0.652,
+    0.89,
+    0.777
+   ],
+   "column": "right",
+   "size_rel": 0.9,
+   "align": "justify",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.012
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.837,
+    0.786,
+    1.0,
+    0.827
+   ],
+   "column": "full",
+   "size_rel": 1.4,
+   "align": "left",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff",
+   "space_before": 0.009
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.837,
+    0.83,
+    1.0,
+    0.836
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d",
+   "space_before": 0.003
+  }
+ ],
+ "note": "Recto body page, single full text column x 0.067-0.700. List items (i)-(iii) are one element (n=2); item (iii) narrows to x~0.45 between y~0.43 and 0.78 to wrap around Figure 9.4 (pBR322 diagram) and its tinted caption box, which sit in a right zone extending into the outer margin to x 0.89, so they are marked column 'right'. Item labels hang at x~0.078, item text at x~0.12. body_text_size_px measured on list prose (cap height ~15.5px at 1580x2160). size_pt omitted: page DPI not given. The 'Reprint 2026-27' stamp at y~0.975 is not the folio and is left out; the folio is the printed number in the orange tab at the outer margin. page_kind: ordinary body page (not an opener)."
+}

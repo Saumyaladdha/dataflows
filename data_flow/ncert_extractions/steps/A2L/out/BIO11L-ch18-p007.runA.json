@@ -1,0 +1,202 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2182,
+  "body_text_size_px": 20.0,
+  "text_block": [
+   0.312,
+   0.137,
+   0.902,
+   0.9093
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.312,
+    "x1": 0.902
+   }
+  ],
+  "page_kind": "ordinary"
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.0834
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0839,
+    1.0,
+    0.0962
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.143,
+    0.0862,
+    0.178,
+    0.0958
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "center",
+   "font": "serif-bold",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.838,
+    0.0862,
+    0.899,
+    0.0958
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "right",
+   "font": "serif",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": 1,
+   "role": "section_heading",
+   "bbox": [
+    0.315,
+    0.137,
+    0.492,
+    0.148
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.0408
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.314,
+    0.1636,
+    0.902,
+    0.6123
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0156
+  },
+  {
+   "n": 3,
+   "role": "section_heading",
+   "bbox": [
+    0.315,
+    0.6334,
+    0.485,
+    0.6444
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.0211
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.314,
+    0.6563,
+    0.902,
+    0.7227
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0119
+  },
+  {
+   "n": 5,
+   "role": "section_heading",
+   "bbox": [
+    0.315,
+    0.742,
+    0.495,
+    0.753
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.0193
+  },
+  {
+   "n": 6,
+   "role": "paragraph",
+   "bbox": [
+    0.314,
+    0.7649,
+    0.902,
+    0.8593
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0119
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.314,
+    0.8621,
+    0.902,
+    0.9093
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0028
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.9583,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Verso body page, single full column (x 0.312-0.902), text only, filled to the foot. Three cyan bold sub-section headings 18.4.1/18.4.2/18.4.3. Paragraph n7 has a first-line indent (~0.027); n7 is set with slightly wider letter-spacing. Header: light-green band #e0ebb6 (y 0-0.083) over a grey strip #d1d2d4 (y 0.084-0.096), both reported as page_header_band; the folio sits in a white tab notched into the green band. The thick yellow-green band at the foot (#cadf7f, y 0.958-1.0) is reported as footer_rule; the '2024-25' reprint stamp printed on it is NOT the page number and is not reported as an element. The diagonal 'NCERT not to be republished' watermark is ignored. body_text_size_px is cap-to-baseline height of body serif (line pitch ~39px). size_pt omitted: DPI not given. page_kind: ordinary body page."
+}

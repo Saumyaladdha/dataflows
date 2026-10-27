@@ -1,0 +1,29 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 22,
+    "text_block": [0.184, 0.139, 0.902, 0.898],
+    "fill": 0.97,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.184, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.080], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.080, 0.186, 0.095], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": null, "role": "running_header", "bbox": [0.838, 0.081, 0.900, 0.094], "column": "full", "size_rel": 0.9, "align": "right", "font": "serif", "fill": "#d1d2d4"},
+    {"n": 1, "role": "equation", "bbox": [0.315, 0.139, 0.902, 0.216], "column": "full", "size_rel": 1.0, "align": "center", "font": "serif", "fill": "#fffac1", "space_before": 0.044},
+    {"n": 2, "role": "paragraph", "bbox": [0.317, 0.222, 0.902, 0.256], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.006},
+    {"n": 3, "role": "equation", "bbox": [0.315, 0.264, 0.902, 0.360], "column": "full", "size_rel": 1.0, "align": "center", "font": "serif", "fill": "#fffac1", "space_before": 0.008},
+    {"n": 4, "role": "paragraph", "bbox": [0.317, 0.370, 0.902, 0.405], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.010},
+    {"n": 5, "role": "paragraph", "bbox": [0.317, 0.408, 0.902, 0.459], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 6, "role": "major_heading", "bbox": [0.484, 0.510, 0.573, 0.525], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "text_color": "#00a0dc", "space_before": 0.051},
+    {"n": null, "role": "decorative_image", "bbox": [0.320, 0.580, 0.717, 0.900], "column": "full", "size_rel": 1.0, "fill": "#fffbd5"},
+    {"n": 7, "role": "paragraph", "bbox": [0.184, 0.560, 0.843, 0.610], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.035},
+    {"n": 8, "role": "paragraph", "bbox": [0.184, 0.614, 0.843, 0.898], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary verso body page (folio 164), single column. Upper prose and the two yellow equation panels sit in the inset measure 0.317-0.902 (left margin empty); the Summary below uses a narrower centred measure 0.184-0.843 with a large pale-yellow decorative circle printed behind it (reported as decorative_image, n null). Block 8 continues onto the next page. Foot green strip reported as footer_rule; year imprint in it not reported. page_kind added as an extra page field."
+}

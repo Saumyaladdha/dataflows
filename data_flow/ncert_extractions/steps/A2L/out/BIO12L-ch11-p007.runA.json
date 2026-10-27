@@ -1,0 +1,35 @@
+{
+  "page": {
+    "width_px": 1580,
+    "height_px": 2160,
+    "body_text_size_px": 17.5,
+    "text_block": [0.097, 0.112, 0.933, 0.907],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.301, "x1": 0.933},
+      {"id": "left", "x0": 0.097, "x1": 0.473},
+      {"id": "right", "x0": 0.494, "x1": 0.933}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.0, 0.195, 0.097], "column": "full", "size_rel": 1.0, "fill": "#745421", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.209, 0.0, 1.0, 0.038], "column": "full", "size_rel": 1.0, "fill": "#4c7436", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.868, 0.075, 0.932, 0.086], "column": "full", "size_rel": 0.8, "align": "right", "font": "sans", "text_color": "#555555", "space_before": 0.037},
+    {"n": 1, "role": "paragraph", "bbox": [0.301, 0.112, 0.933, 0.229], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.026},
+    {"n": 2, "role": "list", "bbox": [0.322, 0.234, 0.933, 0.403], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.021, "space_before": 0.005},
+    {"n": 3, "role": "equation", "bbox": [0.427, 0.41, 0.59, 0.46], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "indent": 0.126, "space_before": 0.007},
+    {"n": 4, "role": "figure", "bbox": [0.102, 0.468, 0.47, 0.672], "column": "left", "size_rel": 1.0, "fill": "#fffbd5", "space_before": 0.008},
+    {"n": 5, "role": "figure_caption", "bbox": [0.097, 0.678, 0.473, 0.781], "column": "left", "size_rel": 0.95, "align": "justify", "font": "serif", "fill": "#fef1e2", "space_before": 0.006},
+    {"n": 6, "role": "paragraph", "bbox": [0.494, 0.468, 0.933, 0.539], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.008},
+    {"n": 7, "role": "paragraph", "bbox": [0.494, 0.543, 0.933, 0.641], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 8, "role": "paragraph", "bbox": [0.494, 0.649, 0.933, 0.753], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.008},
+    {"n": 9, "role": "equation", "bbox": [0.553, 0.757, 0.636, 0.773], "column": "right", "size_rel": 1.0, "align": "left", "font": "serif", "indent": 0.059, "space_before": 0.004},
+    {"n": 10, "role": "paragraph", "bbox": [0.502, 0.775, 0.558, 0.788], "column": "right", "size_rel": 1.0, "align": "left", "font": "serif", "indent": 0.008, "space_before": 0.002},
+    {"n": 11, "role": "list", "bbox": [0.553, 0.795, 0.933, 0.873], "column": "right", "size_rel": 1.0, "align": "left", "font": "serif", "indent": 0.059, "space_before": 0.007},
+    {"n": 12, "role": "paragraph", "bbox": [0.352, 0.876, 0.933, 0.907], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.051, "space_before": 0.003},
+    {"n": null, "role": "page_number", "bbox": [0.0, 0.785, 0.163, 0.821], "column": "full", "size_rel": 1.3, "align": "center", "font": "sans", "fill": "#f7931d", "text_color": "#ffffff"},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.826, 0.163, 0.832], "column": "full", "size_rel": 1.0, "fill": "#f7931d"}
+  ],
+  "note": "Verso body page (page_kind ordinary). Mid-page split: Figure 11.3 and its caption sit in a left column (0.097-0.473) with paragraphs n6-n11 running beside them in a right column (0.494-0.933); n1-n3 and n12 are in the normal full text column (0.301-0.933). Brown/orange leaf corner decoration at top-left reported as decorative_image (fill sampled from its brown part; orange stripe is #f4951f). Figure panel fill is the pale yellow background; the plot area inside is grey #dbdcde. The orange folio tab '194' is the page_number and the thin orange line under it is reported as footer_rule. The 'Reprint 2026-27' stamp at the foot is not reported as page_number. size_pt not given (DPI not stated). Diagonal NCERT watermark ignored."
+}

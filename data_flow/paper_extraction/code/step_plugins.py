@@ -38,8 +38,39 @@ try:
 except ImportError:  # pragma: no cover - non-POSIX fallback
     _HAS_FCNTL = False
 
+import importlib
+
 import runner_core as rc
-import pair_passages  # C1 reuses its pure Jaccard/Hungarian matching functions (word_trigrams,
+
+
+class _InAnotherPipeline:
+    """Stands in for a module that belongs to a SIBLING pipeline and is not in this folder.
+
+    This file is shared across the three pipelines, and four of its imports live elsewhere:
+    `pair_passages` in ncert_extractions/code, `fetch_passages`, `build_groups` and `qca_plugin` in
+    ncert_to_paper_maps/code. Imported unconditionally, the first missing one stopped this module
+    loading at all -- so `run_step.py B3V --list` died on an NCERT passage-pairing import before it
+    could list a single paper question. Now only the step that actually USES one fails, and it says
+    where the module lives instead of raising a bare ModuleNotFoundError.
+    """
+
+    def __init__(self, name, where):
+        self._name, self._where = name, where
+
+    def __getattr__(self, attr):
+        raise SystemExit("%s.py is not part of paper_extraction -- it lives in %s/code. Run the step "
+                         "that needs %s.%s from that pipeline." % (self._name, self._where,
+                                                                  self._name, attr))
+
+
+def _sibling(name, where):
+    try:
+        return importlib.import_module(name)
+    except ImportError:
+        return _InAnotherPipeline(name, where)
+
+
+pair_passages = _sibling("pair_passages", "ncert_extractions")  # C1 reuses its pure Jaccard/Hungarian matching functions (word_trigrams,
                         # jaccard, _solve_assignment) for cross-booklet-code shortlisting -- see
                         # C1Plugin. Safe to share despite pair_passages.py's own `from scripts.lib
                         # import ...` imports resolving to separate module objects than this
@@ -48,7 +79,7 @@ import pair_passages  # C1 reuses its pure Jaccard/Hungarian matching functions 
                         # ones that touch lib_io/lib_flags, so the duplicate-module-instance risk
                         # that would matter for monkeypatched tests (see tests/test_run_step.py)
                         # never actually applies here.
-import fetch_passages  # D3 (step_plugins.D3Plugin) calls fetch_passages.fetch_for_item() directly,
+fetch_passages = _sibling("fetch_passages", "ncert_to_paper_maps")  # D3 (step_plugins.D3Plugin) calls fetch_passages.fetch_for_item() directly,
                         # in-process, for its own D2-retry re-fetch (spec 12/D3 On failure) rather
                         # than shelling out to `--auto` a second time mid-check(). Same dual-import
                         # -path quirk as pair_passages above (fetch_passages.py's own `from
@@ -58,7 +89,7 @@ import fetch_passages  # D3 (step_plugins.D3Plugin) calls fetch_passages.fetch_f
                         # the two module instances) -- both names resolve to the exact same
                         # PROJECT_ROOT and therefore the exact same files on disk, so two separate
                         # module objects reading/writing those files is equivalent to one.
-import build_groups  # D10 (step_plugins.D10Plugin) asks it which subtopics have D9-resolved work
+build_groups = _sibling("build_groups", "ncert_to_paper_maps")  # D10 (step_plugins.D10Plugin) asks it which subtopics have D9-resolved work
                       # (subtopics_with_work()) so the runner and the script can never disagree
                       # about what exists; the actual group building is still a `--auto`
                       # SUBPROCESS call, per scripts/CONVENTIONS.md. Same dual-import-path quirk
@@ -74,8 +105,10 @@ import codebook_version  # spec 13.0's codebook_version: ONE hash formula in the
 import qmap_plugins  # QSUBJ/QCHAP/QTOPIC: the question-mapping chain
 import b6v_plugin  # B6V's plugin: solve one v2 question with no key
 import b3v_plugin  # B3V's plugin: read one v2 question from its image
+import b3s_plugin  # B3S's plugin: read one v2 question's printed worked solution from its image
+import figure_plugins  # FIGC / FIGP: chemistry SMILES cards and physics figure specs, checked by code
 import e7v_plugin  # E7V's plugin: band one v2 question by the work it takes
-import qca_plugin  # QCA's plugin: the concept and approach of a physics/phys-chem question
+qca_plugin = _sibling("qca_plugin", "ncert_to_paper_maps")  # QCA: concept and approach
 import b3f_plugin  # B3F's plugin: one item per figure crop of the v2 paper corpus
 import ecat_plugin  # ECAT's plugin: grouped category rating over pre-built packets
 import describe_tags  # E6's SCRIPT half (spec 13/E6): the five descriptive fields outright, and
@@ -353,7 +386,7 @@ class S0Plugin:
         return "S0 is a script-only step (scripts/intake_check.py). Nothing to list; run `run_step.py S0 --auto`."
 
     def auto(self, filters):
-        script = rc.pp("scripts", "intake_check.py")
+        script = rc.code_path("intake_check.py")
         if not os.path.exists(script):
             print(f"S0 --auto: {script} does not exist yet (owned by a parallel build pass). "
                   "Nothing to run.", file=sys.stderr)
@@ -2004,7 +2037,7 @@ class A6Plugin:
         return sorted(set(ids_))
 
     def auto(self, filters):
-        script = rc.pp("scripts", "pair_passages.py")
+        script = rc.code_path("pair_passages.py")
         if not os.path.exists(script):
             print(f"A6 --auto: {script} does not exist yet (owned by a parallel build pass, "
                   "see scripts/CONVENTIONS.md). Nothing to run.", file=sys.stderr)
@@ -2102,7 +2135,7 @@ class A7Plugin:
         return sorted(ids_)
 
     def auto(self, filters):
-        script = rc.pp("scripts", "diff_pairs.py")
+        script = rc.code_path("diff_pairs.py")
         if not os.path.exists(script):
             print(f"A7 --auto: {script} does not exist yet (owned by a parallel build pass, "
                   "see scripts/CONVENTIONS.md). Nothing to run.", file=sys.stderr)
@@ -2252,7 +2285,7 @@ class A9Plugin:
         return sorted(ids_)
 
     def auto(self, filters):
-        script = rc.pp("scripts", "write_change_log.py")
+        script = rc.code_path("write_change_log.py")
         if not os.path.exists(script):
             print(f"A9 --auto: {script} does not exist yet (owned by a parallel build pass, "
                   "see scripts/CONVENTIONS.md). Nothing to run.", file=sys.stderr)
@@ -6602,7 +6635,7 @@ class D3Plugin:
                 "(spec 12/D3 On failure); none pending right now.")
 
     def auto(self, filters):
-        script = rc.pp("scripts", "fetch_passages.py")
+        script = rc.code_path("fetch_passages.py")
         if not os.path.exists(script):
             print(f"D3 --auto: {script} does not exist. Nothing to run.", file=sys.stderr)
             return
@@ -8330,7 +8363,7 @@ class D10Plugin:
                 if rc.item_passes_filters(s, filters)]
 
     def auto(self, filters):
-        script = rc.pp("scripts", "build_groups.py")
+        script = rc.code_path("build_groups.py")
         if not os.path.exists(script):
             print(f"D10 --auto: {script} does not exist. Nothing to run.", file=sys.stderr)
             return
@@ -9178,7 +9211,7 @@ class E0Plugin:
         exists -- both of which are the honest state of this bank today, not a script failure, so
         they are reported rather than flagged (E0's only flag code is E0_FINDINGS_READY, and
         inventing a sample-size flag would be inventing a flag)."""
-        script = rc.pp("scripts", "e0_category_sheet.py")
+        script = rc.code_path("e0_category_sheet.py")
         if not os.path.exists(script):
             print(f"E0 --auto: {script} does not exist. Nothing to run.", file=sys.stderr)
             return
@@ -9506,7 +9539,7 @@ class E2Plugin:
         retired label that the check and the schema would both have rejected."""
         import importlib
         import sys as _sys
-        checks_dir = rc.pp("scripts", "checks")
+        checks_dir = rc.code_path("checks")
         if checks_dir not in _sys.path:
             _sys.path.insert(0, checks_dir)
         return importlib.import_module("E2").NEGATIVE_FORMATS[0]
@@ -10696,7 +10729,7 @@ class F1Plugin:
                 "run. Nothing to list; run `run_step.py F1 --auto`.")
 
     def auto(self, filters):
-        script = rc.pp("scripts", "build_review_pack.py")
+        script = rc.code_path("build_review_pack.py")
         if not os.path.exists(script):
             print(f"F1 --auto: {script} does not exist. Nothing to run.", file=sys.stderr)
             return
@@ -10920,7 +10953,7 @@ class F4Plugin:
                 "typed.")
 
     def auto(self, filters):
-        script = rc.pp("scripts", "compute_counts.py")
+        script = rc.code_path("compute_counts.py")
         if not os.path.exists(script):
             print(f"F4 --auto: {script} does not exist. Nothing to run.", file=sys.stderr)
             return
@@ -11006,7 +11039,7 @@ class F5Plugin:
                 "override.")
 
     def auto(self, filters):
-        script = rc.pp("scripts", "export_tables.py")
+        script = rc.code_path("export_tables.py")
         if not os.path.exists(script):
             print(f"F5 --auto: {script} does not exist. Nothing to run.", file=sys.stderr)
             return
@@ -11109,7 +11142,7 @@ class F6Plugin:
         return rc.pp("steps", self.step, "out", f"{self.item_id}.json")
 
     def auto(self, filters):
-        script = rc.pp("scripts", "score_gold.py")
+        script = rc.code_path("score_gold.py")
         if not os.path.exists(script):
             print(f"F6 --auto: {script} does not exist. Nothing to run.", file=sys.stderr)
             return
@@ -11185,6 +11218,13 @@ def get_plugins():
             # B3V reads a v2 question from its IMAGE, the way Stage A reads an NCERT page. Separate
             # from B3 because its items come from papers_v2/, not from papers/records/.
             "B3V": b3v_plugin.B3VPlugin(),
+            # B3S reads the publisher's printed worked solution from its own crop, the way B3V reads
+            # the question: the solution's text layer is a cross-check, never the record.
+            "B3S": b3s_plugin.B3SPlugin(),
+            # The figure redraws: an agent writes a CARD (SMILES / a primitive spec), code checks
+            # it, a renderer draws it -- beside the exact vector copy of the printed figure.
+            "FIGC": figure_plugins.FIGCPlugin(),
+            "FIGP": figure_plugins.FIGPPlugin(),
             # E7V is the difficulty JUDGEMENT per question (SPEC E7), distinct from the
             # E7 script that bands the v1 sheet from ECAT columns -- different items.
             "E7V": e7v_plugin.E7VPlugin(),
@@ -11196,10 +11236,12 @@ def get_plugins():
             "QTOPIC": qmap_plugins.QTOPICPlugin(),
             # QCA records the CONCEPT and APPROACH instead of an NCERT quotation, for the two
             # subjects whose answers are values rather than sentences -- see qca_plugin.py.
-            "QCA": qca_plugin.QCAPlugin(),
             "F1": F1Plugin(), "F2": F2Plugin(), "F3": F3Plugin(), "F4": F4Plugin(),
             "F5": F5Plugin(), "F6": F6Plugin(),
         }
+        # QCA's plugin lives in ncert_to_paper_maps; registered only where it is importable.
+        if not isinstance(qca_plugin, _InAnotherPipeline):
+            _PLUGINS["QCA"] = qca_plugin.QCAPlugin()
     return _PLUGINS
 
 

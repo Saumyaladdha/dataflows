@@ -639,3 +639,129 @@ The next source will differ again. What makes the flow survive it:
    worst performance bug in the first version.
 10. **A long run reports which booklet it is on.** The first version printed nothing until a booklet
     finished, so a stall was indistinguishable from slow progress and cost two debugging rounds.
+
+## 8. Printed solutions, CDN images and the `data/` export (2026-10-26)
+
+### 8.1 Where the sources live
+
+`source_papers/NEET_Papers/<year>/[Set_<code>/]<booklet>.pdf`, git-ignored (third-party papers).
+`rc.source_dir()` also honours the two older homes, `source_pdfs/papers_v2_sources/` and
+`inputs/papers_v2_sources/`; `rc.corpus()` resolves `papers/` (current) or `papers_v2/` (older
+checkout). Never hard-code either name: a glob over a missing folder reports zero work, silently.
+
+### 8.2 The 2019-2021 solution gap is the booklets, not the regex
+
+Measured with the extractor on the booklets it picks, nothing written:
+
+| booklet | questions | printed answer found | solution marker | lines after the answer, no marker |
+|---|---|---|---|---|
+| 2019 P1 | 174 | 0 | 0 | 0 |
+| 2020 F1 | 178 | 0 | 38 | 0 |
+| 2021 O1 | 200 | 200 | 100 | 0 |
+
+Read on the page: **2019 P1** prints bare questions and a one-page answer-key grid at the end, no
+working anywhere. **2020 F1** prints neither answer nor working in its Biology half (q1-90); only
+the Physics half carries `Solution` lines. **2021 O1** q101-200 are Vedantu-formatted (`Options:`,
+then `Answer: (d)`) and stop at the answer line. So `SOLUTION_START` misses nothing in the corpus
+booklets, and widening it would only add risk. The one place unmarked working exists is 2021's
+subject-wise "with Solutions" files (35-41 of 50 questions each), which are not corpus booklets.
+`text_layer_draft.unmarked_lines_after_answer` carries this count per question so the check can be
+repeated on any new source.
+
+### 8.3 What was added
+
+| piece | where |
+|---|---|
+| `solution_lines` kept, marker stripped (on `solution_inline` the `Solution: (4)` line is both markers) | `read_text_draft()` |
+| question crop stops at the printed `Answer`/`Sol.` line; solution crop cut from there to the next question, page/column continuations stitched | `extract()`, `cut_point()` |
+| `b3s-solution-reader` (B3S): brief, schema, check, plugin, steps.yaml; printed answer withheld from its input; flags B3S_SOLUTION_CLIPPED / B3S_CONCLUDES_UNCLEAR / B3S_CONTRADICTS_PRINTED_ANSWER | `agents/`, `schemas/B3S.json`, `code/checks/B3S.py`, `code/b3s_plugin.py` |
+| B6 `steps` (optional; old outputs split from `working`, never re-run) | `agents/b6-blind-solver.md`, `schemas/B6.json` |
+| CDN upload of every crop, links carried across a re-extract by sha256 | `code/upload_paper_assets.py`, `code/cdn_login.py`, `code/lib/cdn.py` |
+| `--data`: `data/<year>/<paper_code>/questions.json` + `question_paper.html`, byte-identical on re-run | `export_paper_v2.py` |
+
+### 8.4 Two behaviour changes worth knowing
+
+- **A re-extract clears the booklet's generated files** (JSON, crops, solutions, figures, exports) so
+  every run is fresh, but **keeps agent answers** unless `--clear-agent-reads` is passed.
+- **A booklet with no readable code is refused.** In the full Drive tree, 2021's code-less files all
+  became `2021_NA` and overwrote one another.
+
+## 9. Exact and redrawn figures, step-wise solutions, the LaTeX gate, one-command runs (2026-10-26)
+
+### 9.1 Every figure has an EXACT copy, lifted from the PDF
+
+`code/vector_figures.py`. These booklets are vector PDFs, so a figure is not redrawn to look like the
+print. It is lifted out of it:
+
+- the page is copied;
+- every RASTER image is stripped (the watermark and the page background are images; the drawing is not);
+- the publisher's `Answer (N)`/`Sol.` marker words are removed;
+- everything outside the figure's box is deleted;
+- the region is written as SVG, with text as the publisher's own glyph outlines.
+
+Measured on 2017 Code-A: 42 figures, median 18 KB, no watermark. Degenerate zero-length paths
+(`M0 0V0`, round caps) are stripped, because a browser draws them as dots. The SVG is declared at the
+crop's size (dpi/72), not in points. A sliced-scan page has no vector art and keeps its PNG.
+
+### 9.2 ...and a REDRAW from a checked card, beside it
+
+The AI never draws: it writes a card, code checks it, and a renderer draws it (ncert_extractions
+`docs/FIGURE_RENDERING_PLAN.md`).
+
+| step | item | card | check | renderer |
+|---|---|---|---|---|
+| FIGC | a chemistry question | SMILES + name per drawn species, `orient`, `abbreviate` | RDKit parses; **OPSIN rebuilds the name** and the InChIKey must match | `lib/chem_cards.py` (RDKit, monochrome, CH3/NO2 as printed) |
+| FIGP | a physics figure | primitives in maths coordinates + `angles_claimed` + `netlist` | renders; every claimed angle recomputed (1.5 deg); a circuit's netlist matched against its drawn wires | `lib/physics_figure.py` (pilot + capacitor, battery, inductor, switch, spring) |
+
+`code/render_figure_cards.py` draws only cards that pass. A failed card is recorded with its reason.
+`tools/` holds a portable Java 21 runtime and `opsin-cli-2.8.0` (git-ignored). Without them the name
+check records `not_run`, never a pass.
+
+Three renderer defaults changed from the pilot after the 2017_A review:
+
+- `curve` is OPEN by default (before this, all 19 curves came out as closed blobs);
+- `block` is plain unless `hatch` is set;
+- hatching is clipped to the block.
+
+### 9.3 Solutions: each figure at its step
+
+B3S now returns `figures: [{bbox, after_step, kind}]`, one entry for every drawing in the solution.
+
+- `cut_agent_figures.py` cuts them, and now undoes the stitcher's 10 px gap and horizontal centring
+  exactly (`to_page()`).
+- The export shows each figure under its step, with the whole printed block as a folded reference.
+- In the JSON, `publisher_solution_figures[]` holds each figure's PNG, exact SVG and drawing, with
+  their CDN links.
+
+### 9.4 LaTeX: a census that is also a gate
+
+`code/checks/latex_census.py` renders every field the page shows. It fails on:
+
+- any unknown command;
+- raw LaTeX left visible;
+- an unpaired `$`;
+- unbalanced braces.
+
+`export_paper_v2.py --data` refuses to write while the census fails (`--allow-latex-gaps` overrides).
+
+2017_A's first census found 6 unknown commands (57 uses: `\dfrac`, `\varepsilon`, `\textit`, `\ge`,
+`\substack`, `\ddot`) and 15 raw leaks. All were fixed in `lib/texhtml.py`, which now also renders
+`\ce{}`, stacked `\overset`/`\underset`, `\\` line breaks, and LaTeX commands written in prose
+outside `$`.
+
+### 9.5 One command
+
+`.claude/workflows/neet-paper-pipeline.js` runs a booklet end to end, in this order:
+
+1. extract;
+2. B3V, then B3S;
+3. figures and their vector copies;
+4. B6V, QSUBJ, FIGC and FIGP together;
+5. QCHAP→QTOPIC, beside E7V;
+6. taxonomy gaps (`requeue_taxonomy_gaps.py` re-asks exactly the questions whose topic was minted);
+7. cards;
+8. CDN upload;
+9. export through the LaTeX gate.
+
+Every check is run, and failing items are retried once. `run_paper_pipeline.py` prints the same order
+for a run by hand.

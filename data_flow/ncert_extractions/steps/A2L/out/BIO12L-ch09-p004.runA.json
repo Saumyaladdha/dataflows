@@ -1,0 +1,191 @@
+{
+ "page": {
+  "page_kind": "body_page",
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 20,
+  "text_block": [
+   0.3,
+   0.1097,
+   0.9316,
+   0.9079
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.3,
+    "x1": 0.9316
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.193,
+    0.0981
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#745421"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.212,
+    0.0,
+    1.0,
+    0.0394
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.8652,
+    0.0787,
+    0.9266,
+    0.0861
+   ],
+   "column": "full",
+   "size_rel": 0.85,
+   "align": "right",
+   "font": "sans",
+   "text_color": "#6d6e71",
+   "space_before": 0.0394
+  },
+  {
+   "n": 1,
+   "role": "list",
+   "bbox": [
+    0.343,
+    0.1097,
+    0.9316,
+    0.2319
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#231f20",
+   "indent": 0.043,
+   "space_before": 0.0236
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.3,
+    0.2375,
+    0.9316,
+    0.2681
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#231f20",
+   "space_before": 0.0056
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.3,
+    0.2741,
+    0.9316,
+    0.4875
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#231f20",
+   "space_before": 0.006
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.3,
+    0.4931,
+    0.9316,
+    0.7431
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#231f20",
+   "space_before": 0.0056
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.3,
+    0.7491,
+    0.9316,
+    0.9079
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#231f20",
+   "space_before": 0.006
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.7866,
+    0.162,
+    0.8264
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0987,
+    0.7972,
+    0.1361,
+    0.8097
+   ],
+   "column": "full",
+   "size_rel": 1.4,
+   "align": "right",
+   "font": "sans",
+   "text_color": "#ffffff",
+   "fill": "#f7931d"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.8301,
+    0.162,
+    0.8356
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d",
+   "space_before": 0.0037
+  }
+ ],
+ "note": "Ordinary verso body page, single full column (x 0.300-0.932); folio 164 printed white on an orange tab (#f7931d) in the LEFT margin at y~0.787-0.826 (bold sans; the tab itself is a decorative_image with that fill), with a thin orange strip below it (y 0.830-0.836, x 0-0.162) reported as footer_rule. Top: dark-green page_header_band (#4c7436) from x 0.212 to the right edge, y 0-0.039; top-left corner decoration (brown block #745421 with an orange vertical strip, green leaf and small dancing-figure logo) is one decorative_image. Running header 'BIOLOGY' right-aligned, grey sans caps, y~0.079-0.086. Blocks: n=1 is the list continuation - the tail of item (i) (lines indented to x~0.384) plus item (ii) whose label sits at x~0.343, reported as one list element with indent 0.043 (measured to the '(ii)' label); n=2-n=5 are justified serif paragraphs with first-line indent; n=5 runs to the foot of the text block and continues on the next page. Bold runs (recombinant DNA, gene cloning, gene transfer, origin of replication, cloning, plasmid) and italic (Salmonella typhimurium, Bioprocess engineering bold-italic) are inline. body_text_size_px = cap height of 'L' in 'Let us' (20px). The 'Reprint 2026-27' stamp (y~0.974) is not the folio and is left out; diagonal 'not to be republished' watermark ignored. size_pt not given (DPI not stated)."
+}

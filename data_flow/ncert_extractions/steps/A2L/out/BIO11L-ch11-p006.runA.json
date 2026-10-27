@@ -1,0 +1,27 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "page_kind": "ordinary",
+    "body_text_size_px": 20.0,
+    "text_block": [0.18, 0.1347, 0.902, 0.9095],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.314, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0805], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_number", "bbox": [0.129, 0.064, 0.182, 0.0933], "column": "full", "size_rel": 1.05, "align": "center", "font": "sans", "fill": "#ffffff"},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.0805, 0.899, 0.0933], "column": "full", "size_rel": 0.95, "align": "right", "font": "serif", "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.314, 0.1347, 0.902, 0.1816], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0414},
+    {"n": 2, "role": "section_heading", "bbox": [0.316, 0.2056, 0.785, 0.2171], "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.024},
+    {"n": 3, "role": "paragraph", "bbox": [0.314, 0.2326, 0.902, 0.3113], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0155},
+    {"n": 4, "role": "paragraph", "bbox": [0.314, 0.3159, 0.902, 0.411], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0046},
+    {"n": 5, "role": "paragraph", "bbox": [0.314, 0.4152, 0.902, 0.6276], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0042},
+    {"n": 6, "role": "figure", "bbox": [0.18, 0.6317, 0.859, 0.8687], "column": "full", "size_rel": 1.0, "space_before": 0.0041},
+    {"n": 7, "role": "figure_caption", "bbox": [0.185, 0.8842, 0.849, 0.9095], "column": "full", "size_rel": 0.95, "align": "justify", "font": "serif", "text_color": "#6d6e71", "space_before": 0.0155},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9577, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary verso body page: single text column x 0.314-0.902 with the wide margin on the LEFT. Header: pale green band #e0ebb6 to y 0.0805, grey strip #d1d2d4 (y 0.0805-0.0933) with the small-caps running header at the right; page number in a white tab at the left. Section heading 11.3 is blue #00adef bold small caps. Figure 11.2 (chloroplast diagram with right-side leader labels) and its grey caption extend left of the text column into the margin, x 0.18-0.859, so text_block is widened to 0.18 to cover them. Caption: bold 'Figure 11.2' label then grey text with hanging indent. Foot: green band #cadf7f (reported as footer_rule) with the year label '2024-25' centred, not listed as it has no allowed role. Watermark ignored. size_pt omitted (render DPI not given). page_kind is an extra field."
+}

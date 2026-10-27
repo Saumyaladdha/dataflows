@@ -1,0 +1,40 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 20.0,
+    "text_block": [0.316, 0.130, 0.905, 0.881],
+    "fill": 0.94,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.316, "x1": 0.905}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.065, 0.185, 0.096],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "fill": "#ffffff",
+     "text_color": "#231f20", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.083, 0.900, 0.095],
+     "column": "full", "size_rel": 0.9, "align": "right", "font": "serif", "fill": "#d1d2d4",
+     "text_color": "#231f20", "space_before": 0.0},
+    {"n": 1, "role": "major_heading", "bbox": [0.318, 0.130, 0.770, 0.164],
+     "column": "full", "size_rel": 1.2, "align": "left", "font": "sans",
+     "text_color": "#00aeef", "space_before": 0.035},
+    {"n": 2, "role": "paragraph", "bbox": [0.316, 0.184, 0.905, 0.342],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.020},
+    {"n": 3, "role": "paragraph", "bbox": [0.316, 0.345, 0.905, 0.555],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 4, "role": "paragraph", "bbox": [0.316, 0.559, 0.905, 0.734],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 5, "role": "major_heading", "bbox": [0.318, 0.760, 0.520, 0.775],
+     "column": "full", "size_rel": 1.2, "align": "left", "font": "sans",
+     "text_color": "#00aeef", "space_before": 0.026},
+    {"n": 6, "role": "paragraph", "bbox": [0.316, 0.794, 0.905, 0.881],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.019},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.075}
+  ],
+  "note": "Ordinary single-column verso page (folio 172 at left in a white tab cut into the header band, running head 'Biology' at right). Text column is inset to x 0.316-0.905 with an empty left margin. Header band #e0ebb6 with grey strip #d1d2d4 (y~0.083-0.095). Two numbered major headings (13.2, 13.3) in cyan small caps, number set apart from title. Footer band #cadf7f carries '2024-25'. Diagonal NCERT watermark ignored. size_pt omitted because the page DPI is not given."
+}

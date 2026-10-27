@@ -22,7 +22,7 @@ import runner_core as rc
 ListLine = collections.namedtuple(
     "ListLine", ["item_id", "agent", "input_path", "output_path", "run_label"])
 
-CORPUS = ("papers_v2",)
+CORPUS = rc.corpus()
 WORK = ("steps", "B3F", "work")
 OUT = ("steps", "B3F", "out")
 

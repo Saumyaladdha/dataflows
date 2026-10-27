@@ -105,6 +105,7 @@ text (or a whole run of consecutive lines, for a stamp the agent split across li
 precisely the defect the check exists to catch and never fires on prose usage.
 """
 import difflib
+import os
 import re
 
 from lib.text_normalise import normalise_quote
@@ -252,7 +253,46 @@ def _defers_to_a2s(blocks):
     return any(b.get("needs_special") or not (b.get("text") or "").strip() for b in blocks)
 
 
-def _text_layer_segments(blocks, text_layer, stamps):
+#: A2 renders the page at this resolution, so a block's `bbox` is in these pixels.
+_A2_DPI = 200
+
+
+def _deferred_words(blocks, input_data, context):
+    """Prose words the PDF prints inside the boxes of blocks deferred to A2S, as a Counter.
+
+    Needs the chapter PDF: the work input's `pdf`, else the register lookup A2S itself uses
+    to crop those boxes. Returns None when it cannot be measured -- the check then behaves
+    exactly as before."""
+    boxes = [[v * 72.0 / _A2_DPI for v in b["bbox"]] for b in blocks
+             if b.get("needs_special") and len(b.get("bbox") or []) == 4]
+    if not boxes:
+        return None
+    try:
+        import pymupdf
+        path = input_data.get("pdf")
+        root = context.get("project_root") or ""
+        if path and not os.path.isabs(path):
+            path = os.path.join(root, path)
+        if not path or not os.path.exists(path):
+            from step_plugins import A2Plugin
+            path = A2Plugin._chapter_pdf_abspath(input_data.get("book_id"),
+                                                 int(input_data.get("chapter_num")))
+        if not path:
+            return None
+        with pymupdf.open(path) as doc:
+            words = doc[int(input_data["page"]) - 1].get_text("words")
+    except Exception:                                         # noqa: BLE001
+        return None
+    from collections import Counter
+    inside = []
+    for w in words:
+        cx, cy = (w[0] + w[2]) / 2, (w[1] + w[3]) / 2
+        if any(b[0] <= cx <= b[2] and b[1] <= cy <= b[3] for b in boxes):
+            inside.append(w[4])
+    return Counter(_prose_words(" ".join(inside)))
+
+
+def _text_layer_segments(blocks, text_layer, stamps, deferred_words=None):
     """The limbs of check (3). Returns a list of human-readable failure strings."""
     lines = _layer_lines(text_layer, stamps)
     layer_words = _prose_words("\n".join(lines))
@@ -359,8 +399,17 @@ def _text_layer_segments(blocks, text_layer, stamps):
     # (see the stamps check below), so furniture cannot be both discounted here and kept there.
     if stamps:
         want = want - Counter(_prose_words(" ".join(str(s) for s in stamps)))
+    # Discount, the same way, the words printed INSIDE the boxes the agent handed to A2S. They
+    # are A2S's to transcribe and A2S's own check covers them; counting them here failed the
+    # page for doing exactly what the brief asks. BIO11L-ch04-p015 is Table 4.2 plus three short
+    # paragraphs: the table is 63% of the page's words, the read was right, and recall came out
+    # 37.4% -- so the page never reached ncert/blocks, A2S never saw the table, and the chapter
+    # printed it rebuilt from the column-wise text layer. Only words whose position the PDF puts
+    # inside a declared box are removed, so nothing outside one can be explained away.
+    if deferred_words:
+        want = want - deferred_words
 
-    recall = sum((have & want).values()) / max(1, sum(want.values()))
+    recall =sum((have & want).values()) / max(1, sum(want.values()))
     recall_min = RECALL_MIN_DEFERRED if deferred else RECALL_MIN_STRICT
     if recall < recall_min:
         # Report enough digits to show the shortfall is real. At one decimal place a recall of
@@ -489,7 +538,8 @@ def check(data, context):
 
     text_layer = (input_data.get("text_layer") or "").strip()
     if text_layer:
-        segments.extend(_text_layer_segments(blocks, text_layer, stamps))
+        segments.extend(_text_layer_segments(blocks, text_layer, stamps,
+                                             _deferred_words(blocks, input_data, context)))
 
     segments.extend(_header_footer_segments(blocks, stamps))
 

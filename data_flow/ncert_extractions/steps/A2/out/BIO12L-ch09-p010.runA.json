@@ -1,45 +1,57 @@
 {
-  "blocks": [
-    {
-      "n": 1,
-      "kind": "heading",
-      "text": "9.3.2 Cutting of DNA at Specific Locations",
-      "continues_from_previous": false
-    },
-    {
-      "n": 2,
-      "kind": "paragraph",
-      "text": "Restriction enzyme digestions are performed by incubating purified DNA molecules with the restriction enzyme, at the optimal conditions for that specific enzyme. Agarose gel electrophoresis is employed to check the progression of a restriction enzyme digestion. DNA is a negatively charged molecule, hence it moves towards the positive electrode (anode) (Figure 9.3).  The process is repeated with the vector DNA also."
-    },
-    {
-      "n": 3,
-      "kind": "paragraph",
-      "text": "The joining of DNA involves several processes. After having cut the source DNA as well as the vector DNA with a specific restriction enzyme, the cut out ‘gene of interest’ from the source DNA and the cut vector with space are mixed and ligase is added. This results in the preparation of recombinant DNA."
-    },
-    {
-      "n": 4,
-      "kind": "heading",
-      "text": "9.3.3 Amplification of Gene of Interest using PCR"
-    },
-    {
-      "n": 5,
-      "kind": "paragraph",
-      "text": "PCR stands for Polymerase Chain Reaction. In this reaction, multiple copies of the gene (or DNA) of interest is synthesised in vitro using two"
-    },
-    {
-      "n": 6,
-      "kind": "figure",
-      "needs_special": true,
-      "bbox": [158, 884, 1492, 1971],
-      "text": ""
-    }
-  ],
-  "first_block_continues_from_previous": false,
-  "last_block_continues_on_next": true,
-  "running_header_footer_removed": [
-    "BIOLOGY",
-    "172",
-    "Reprint 2026-27"
-  ],
-  "note": "text_layer empty; transcribed from the page image. previous_page_last_block was null, so continuation judged from the page I read just before (p009), which ended with the completed sentence '...collection of fine threads in the suspension (Figure 9.5).'; this page opens with the new heading 9.3.2, so nothing continues from it. Block 6 is Figure 9.6 (the PCR cycle diagram with all its in-figure labels) plus its caption, left for the special transcriber; it occupies the whole lower half of the page and is therefore the last block positionally. The page's final prose (block 5) ends mid-sentence at 'using two', so the page's text does continue on the next page — that is what last_block_continues_on_next records here; the figure itself is complete on this page."
+ "blocks": [
+  {
+   "n": 1,
+   "kind": "paragraph",
+   "text": "gene gets ‘inactivated due to insertion’ of alien DNA, and helps in selection of recombinants.",
+   "continues_from_previous": true,
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 2,
+   "kind": "paragraph",
+   "text": "Selection of recombinants due to inactivation of antibiotics is a cumbersome procedure because it requires simultaneous plating on two plates having different antibiotics. Therefore, alternative selectable markers have been developed which differentiate recombinants from non-recombinants on the basis of their ability to produce colour in the presence of a chromogenic substrate. In this, a recombinant DNA is inserted within the coding sequence of an enzyme, β-galactosidase.  This results into inactivation of the gene for synthesis of this enzyme, which is referred to as insertional inactivation. The presence of a chromogenic substrate gives blue coloured colonies if the plasmid in the bacteria does not have an insert. Presence of insert results into insertional inactivation of the β-galactosidase gene and the colonies do not produce any colour, these are identified as recombinant colonies.",
+   "bold_terms": [
+    "insertional inactivation"
+   ],
+   "italic_terms": []
+  },
+  {
+   "n": 3,
+   "kind": "paragraph",
+   "text": "(iv) Vectors for cloning genes in plants and animals : You may be surprised to know that we have learnt the lesson of transferring genes into plants and animals from bacteria and viruses which have known this for ages – how to deliver genes to transform eukaryotic cells and force them to do what the bacteria or viruses want. For example, Agrobacterium tumifaciens, a pathogen of several dicot plants is able to deliver a piece of DNA known as ‘T-DNA’ to transform normal plant cells into a tumor and direct these tumor cells to produce the chemicals required by the pathogen. Similarly, retroviruses in animals have the ability to transform normal cells into cancerous cells. A better understanding of the art of delivering genes by pathogens in their eukaryotic hosts has generated knowledge to transform these tools of pathogens into useful vectors for delivering genes of interest to humans. The tumor inducing (Ti) plasmid of Agrobacterium tumifaciens has now been modified into a cloning vector which is no more pathogenic to the plants but is still able to use the mechanisms to deliver genes of our interest into a variety of plants. Similarly, retroviruses have also been disarmed and are now used to deliver desirable genes into animal cells. So, once a gene or a DNA fragment has been ligated into a suitable vector it is transferred into a bacterial, plant or animal host (where it multiplies).",
+   "bold_terms": [
+    "Vectors for cloning genes in plants and animals :",
+    "tumor",
+    "cancerous"
+   ],
+   "italic_terms": [
+    "Agrobacterium tumifaciens"
+   ]
+  },
+  {
+   "n": 4,
+   "kind": "heading",
+   "text": "9.2.3 Competent Host (For Transformation with Recombinant DNA)"
+  },
+  {
+   "n": 5,
+   "kind": "paragraph",
+   "text": "Since DNA is a hydrophilic molecule, it cannot pass through cell membranes. Why? In order to force bacteria to take up the plasmid, the bacterial cells must first be made ‘competent’ to take up DNA. This is done by treating them with a specific concentration of a divalent cation, such as calcium, which increases the efficiency with which DNA enters",
+   "continues_on_next": true,
+   "bold_terms": [],
+   "italic_terms": [
+    "Why"
+   ]
+  }
+ ],
+ "first_block_continues_from_previous": true,
+ "last_block_continues_on_next": true,
+ "running_header_footer_removed": [
+  "BIOLOGY",
+  "170",
+  "Reprint 2026-27"
+ ],
+ "note": "Block 3 lead-in 'Vectors for cloning genes in plants and animals :' is set bold italic on the page; recorded in bold_terms only (bold OR italic rule)."
 }

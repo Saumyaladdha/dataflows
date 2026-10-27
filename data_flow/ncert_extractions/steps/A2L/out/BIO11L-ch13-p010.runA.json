@@ -1,0 +1,30 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 21,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.136, 0.686, 0.894],
+    "fill": 0.99,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.0, 0.082, 1.0, 0.095], "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.815, 0.065, 0.871, 0.095], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.136, 0.686, 0.220], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.041, "indent": 0.029},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.2255, 0.686, 0.342], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.005, "indent": 0.029},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.350, 0.686, 0.416], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.008, "indent": 0.029},
+    {"n": 4, "role": "paragraph", "bbox": [0.098, 0.4216, 0.686, 0.470], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.006, "indent": 0.029},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.4748, 0.686, 0.502], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.005, "indent": 0.029},
+    {"n": 6, "role": "section_heading", "bbox": [0.099, 0.522, 0.683, 0.540], "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.020},
+    {"n": 7, "role": "section_heading", "bbox": [0.100, 0.551, 0.239, 0.563], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-italic", "text_color": "#6d6e71", "space_before": 0.011},
+    {"n": 8, "role": "paragraph", "bbox": [0.098, 0.5775, 0.686, 0.734], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.014},
+    {"n": 9, "role": "paragraph", "bbox": [0.098, 0.7379, 0.686, 0.802], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004, "indent": 0.029},
+    {"n": 10, "role": "paragraph", "bbox": [0.098, 0.8093, 0.686, 0.894], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007, "indent": 0.029},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 0.8, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary recto body page (folio 175, header text at left, folio tab at right). Single text column 0.098-0.686; the right margin 0.69-0.90 is empty on this page. Header is a pale green band (#e0ebb6) over a grey strip (#d1d2d4) carrying the running head. The bottom element is a solid green footer band (#cadf7f, y 0.956-1.0) carrying the year imprint; reported as footer_rule since it is the page-foot band. Block 6 is the cyan numbered subsection heading (#00adef); block 7 is the grey italic sub-subheading. Block 8 follows a heading and has no first-line indent. A diagonal grey watermark crosses the page and is not reported. size_pt omitted because page DPI is not known; size_rel is the measured value. body_text_size_px is cap-to-baseline height of body prose."
+}

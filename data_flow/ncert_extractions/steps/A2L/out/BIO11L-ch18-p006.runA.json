@@ -1,0 +1,183 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2182,
+  "body_text_size_px": 20.0,
+  "text_block": [
+   0.098,
+   0.1379,
+   0.745,
+   0.901
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.098,
+    "x1": 0.685
+   }
+  ],
+  "page_kind": "ordinary"
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.0834
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0839,
+    1.0,
+    0.0962
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.138,
+    0.0852,
+    0.406,
+    0.0958
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.827,
+    0.0852,
+    0.861,
+    0.0958
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "center",
+   "font": "serif-bold",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.1379,
+    0.685,
+    0.2401
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0417
+  },
+  {
+   "n": 2,
+   "role": "major_heading",
+   "bbox": [
+    0.099,
+    0.2676,
+    0.402,
+    0.2791
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.0275
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.3029,
+    0.685,
+    0.4225
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0238
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.428,
+    0.685,
+    0.5298
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0055
+  },
+  {
+   "n": 5,
+   "role": "figure",
+   "bbox": [
+    0.145,
+    0.5788,
+    0.745,
+    0.8671
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.049
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.184,
+    0.8896,
+    0.703,
+    0.901
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "center",
+   "font": "serif",
+   "space_before": 0.0225
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.9583,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Recto body page, single full column (x 0.098-0.685; wide blank right margin). Block n1 continues the paragraph from the previous page (no indent). '18.4 CENTRAL NEURAL SYSTEM' is a numbered main section heading set in cyan bold small caps, reported as major_heading. Figure 18.4 (brain sagittal section with labels) spans x 0.145-0.745, extending slightly beyond the text column on the right. Caption is not an A2 block, so n null. Paragraph n4 has a first-line indent (~0.029). Header: light-green band #e0ebb6 (y 0-0.083) over a grey strip #d1d2d4 (y 0.084-0.096), both reported as page_header_band; the folio sits in a white tab notched into the green band. The thick yellow-green band at the foot (#cadf7f, y 0.958-1.0) is reported as footer_rule; the '2024-25' reprint stamp printed on it is NOT the page number and is not reported as an element. The diagonal 'NCERT not to be republished' watermark is ignored. body_text_size_px is cap-to-baseline height of body serif (line pitch ~39px). size_pt omitted: DPI not given. page_kind: ordinary body page."
+}

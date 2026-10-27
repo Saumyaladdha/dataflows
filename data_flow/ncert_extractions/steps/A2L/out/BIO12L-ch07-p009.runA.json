@@ -1,0 +1,212 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 21,
+  "text_block": [
+   0.0665,
+   0.109,
+   0.7,
+   0.919
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.0665,
+    "x1": 0.7
+   },
+   {
+    "id": "left",
+    "x0": 0.0665,
+    "x1": 0.3544
+   },
+   {
+    "id": "right",
+    "x0": 0.3814,
+    "x1": 0.9057
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    0.79,
+    0.0389
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.803,
+    0.0,
+    1.0,
+    0.098
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.0665,
+    0.0785,
+    0.2715,
+    0.0859
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "left",
+   "font": "sans",
+   "text_color": "#6d6e71"
+  },
+  {
+   "n": 1,
+   "role": "list",
+   "bbox": [
+    0.0665,
+    0.1095,
+    0.7,
+    0.2095
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "indent": 0.009,
+   "space_before": 0.0236
+  },
+  {
+   "n": 2,
+   "role": "section_heading",
+   "bbox": [
+    0.0665,
+    0.2318,
+    0.3443,
+    0.2461
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#6d6e71",
+   "space_before": 0.0223
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.0665,
+    0.2588,
+    0.7,
+    0.3764
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0127
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.0665,
+    0.3851,
+    0.3544,
+    0.5059
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "indent": 0.031,
+   "space_before": 0.0087
+  },
+  {
+   "n": 5,
+   "role": "figure",
+   "bbox": [
+    0.3814,
+    0.3775,
+    0.9057,
+    0.6725
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "fill": "#d4d4d5",
+   "space_before": 0.0011
+  },
+  {
+   "n": 6,
+   "role": "figure_caption",
+   "bbox": [
+    0.449,
+    0.6845,
+    0.8455,
+    0.7055
+   ],
+   "column": "right",
+   "size_rel": 0.95,
+   "align": "center",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.012
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.0665,
+    0.511,
+    0.7,
+    0.9194
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "indent": 0.031,
+   "space_before": 0.0051
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.8392,
+    0.7861,
+    1.0,
+    0.8269
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "left",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.8392,
+    0.8301,
+    1.0,
+    0.8361
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary recto body page (page_kind: ordinary). Single full-measure column 0.0665-0.700; between y~0.378 and ~0.722 the text narrows to a left column (0.0665-0.354) while Figure 7.4 (grey rounded panel with drop shadow) and its peach-tinted caption sit in a right column (0.381-0.906) that runs past the text measure into the outer margin. Block 4 lies wholly in the left column. Block 7 starts in the narrow left column (12 lines, y 0.511-0.722) and continues at full measure from y~0.727 to the foot; it is tagged column full with its union bbox, which overlaps the figure's y-range on the left side only. Reading order lists block 4, then the figure and caption, then block 7 (block 7's space_before is to block 4). Block 1 is the tail of list item (iii) plus item (iv) with a hanging '(iv)' label at x~0.076 and turnover lines at x~0.110; indent is the label's inset from the column. Headings 7.2.x are grey bold serif. Folio '135' is white sans in the orange tab at the right edge, with a thin orange bar beneath it (tagged footer_rule). Figure fill is the panel's flat interior grey. The 'Reprint 2026-27' stamp at the page foot (y~0.974-0.984) is not the folio and is left out; the printed folio is the number in the orange tab. body_text_size_px is the ascender-to-baseline height of a body line without descenders (21px; line pitch ~39px). size_pt omitted: page DPI is not given in the input. space_before is measured to the previous content element in reading order (furniture skipped). text_block is the book's standard body block for this side of the spread (depth 0.109-0.919, measured on full pages of this chapter); fill is relative to it."
+}

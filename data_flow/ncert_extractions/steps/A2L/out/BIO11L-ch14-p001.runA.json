@@ -1,0 +1,120 @@
+{
+  "page": {
+    "width_px": 1682,
+    "height_px": 2190,
+    "body_text_size_px": 16.5,
+    "page_kind": "unit_opener",
+    "text_block": [
+      0.1,
+      0.526,
+      0.884,
+      0.866
+    ],
+    "fill": 0.9,
+    "columns": [
+      {
+        "id": "left",
+        "x0": 0.1,
+        "x1": 0.315
+      },
+      {
+        "id": "right",
+        "x0": 0.337,
+        "x1": 0.884
+      }
+    ]
+  },
+  "elements": [
+    {
+      "n": null,
+      "role": "decorative_image",
+      "bbox": [
+        0.515,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "fill": "#cfe08a",
+      "space_before": 0.0
+    },
+    {
+      "n": null,
+      "role": "decorative_image",
+      "bbox": [
+        0.37,
+        0.105,
+        0.645,
+        0.37
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "space_before": 0.105
+    },
+    {
+      "n": null,
+      "role": "chapter_title",
+      "bbox": [
+        0.325,
+        0.39,
+        0.488,
+        0.432
+      ],
+      "column": "full",
+      "size_rel": 4.0,
+      "align": "left",
+      "font": "sans-light",
+      "text_color": "#231f20",
+      "space_before": 0.02
+    },
+    {
+      "n": null,
+      "role": "major_heading",
+      "bbox": [
+        0.328,
+        0.463,
+        0.594,
+        0.482
+      ],
+      "column": "full",
+      "size_rel": 2.0,
+      "align": "left",
+      "font": "sans",
+      "text_color": "#231f20",
+      "space_before": 0.031
+    },
+    {
+      "n": null,
+      "role": "contents_panel",
+      "bbox": [
+        0.1,
+        0.526,
+        0.315,
+        0.866
+      ],
+      "column": "left",
+      "size_rel": 1.0,
+      "align": "left",
+      "font": "serif",
+      "text_color": "#231f20",
+      "space_before": 0.044
+    },
+    {
+      "n": 1,
+      "role": "paragraph",
+      "bbox": [
+        0.337,
+        0.526,
+        0.884,
+        0.802
+      ],
+      "column": "right",
+      "size_rel": 1.0,
+      "align": "justify",
+      "font": "serif",
+      "space_before": 0.044
+    }
+  ],
+  "note": "Unit 5 opener (Human Physiology), not a chapter opener. Two-column lower half: left rail lists Chapters 14-19 (one contents_panel element, bold 'Chapter N' + regular title lines, no fill), right column holds the unit's introductory prose (n=1). Large light-green slanted panel (#cfe08a) covers the right half of the page as decoration; brain illustration is a decorative_image. 'UNIT 5' and 'HUMAN PHYSIOLOGY' are not A2 blocks (n=null); roles chapter_title/major_heading used as nearest allowed. The footer '2024-25' is an edition stamp, reported as page_number for lack of a better role; the page prints no folio. body_text_size_px measured on the right-column prose. UNIT 5 cap height measures ~4.2-4.5x body; size_rel set to 4.0, the checker ceiling. size_pt omitted (DPI not given)."
+}

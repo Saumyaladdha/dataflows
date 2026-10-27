@@ -1,0 +1,25 @@
+{
+  "page": {
+    "width_px": 1580,
+    "height_px": 2160,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.299, 0.075, 0.933, 0.900],
+    "fill": 0.97,
+    "columns": [
+      {"id": "full", "x0": 0.299, "x1": 0.933}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.208, 0.0, 1.0, 0.037], "column": "full", "size_rel": 1.0, "fill": "#4c7436"},
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.0, 0.195, 0.096], "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "running_header", "bbox": [0.869, 0.075, 0.933, 0.084], "column": "full", "size_rel": 0.85, "align": "right", "font": "sans", "space_before": 0.038},
+    {"n": 1, "role": "paragraph", "bbox": [0.299, 0.108, 0.933, 0.218], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.024},
+    {"n": 2, "role": "box", "bbox": [0.294, 0.231, 0.938, 0.753], "column": "full", "size_rel": 0.95, "align": "justify", "font": "serif", "fill": "#fff6db", "space_before": 0.013},
+    {"n": 3, "role": "major_heading", "bbox": [0.491, 0.772, 0.745, 0.804], "column": "full", "size_rel": 3.0, "align": "center", "font": "sans-light", "text_color": "#f7931d", "space_before": 0.019},
+    {"n": 4, "role": "list", "bbox": [0.309, 0.832, 0.934, 0.900], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "indent": 0.010, "space_before": 0.028},
+    {"n": null, "role": "page_number", "bbox": [0.0, 0.784, 0.163, 0.820], "column": "full", "size_rel": 1.3, "align": "right", "font": "sans", "fill": "#f7931d", "text_color": "#ffffff"},
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.825, 0.163, 0.834], "column": "full", "size_rel": 1.0, "fill": "#f7931d"}
+  ],
+  "note": "Ordinary verso body page, single full column shifted right (text column 0.299-0.933). The SUMMARY box (n2) has a pale yellow fill with a thin yellow double border; its type is slightly smaller than body prose. EXERCISES (n3) is a large orange sans-light heading, reported as major_heading. Question 1 list (n4) starts at y 0.832 with sub-parts (a)(b) further indented. Folio 214 is the orange left-edge tab; the thin orange line beneath it is decorative_image. Reprint stamp not tagged. No size_pt given (DPI not stated)."
+}

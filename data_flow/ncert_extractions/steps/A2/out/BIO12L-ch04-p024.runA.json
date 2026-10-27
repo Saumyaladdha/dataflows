@@ -2,56 +2,39 @@
   "blocks": [
     {
       "n": 1,
-      "kind": "figure",
-      "needs_special": true,
-      "bbox": [
-        328,
-        211,
-        1486,
-        743
-      ],
-      "text": ""
+      "kind": "paragraph",
+      "text": "the gene has a 50 per cent chance of being colour blind. The mother is not herself colour blind because the gene is recessive. That means that its effect is suppressed by her matching dominant normal gene. A daughter will not normally be colour blind, unless her mother is a carrier and her father is colour blind.",
+      "continues_from_previous": true
     },
     {
       "n": 2,
-      "kind": "figure",
-      "needs_special": true,
-      "bbox": [
-        164,
-        766,
-        714,
-        1673
-      ],
-      "text": ""
+      "kind": "paragraph",
+      "text": "Haemophilia : This sex linked recessive disease, which shows its transmission from unaffected carrier female to some of the male progeny has been widely studied. In this disease, a single protein that is a part of the cascade of proteins involved in the clotting of blood is affected. Due to this, in an affected individual a simple cut will result in non-stop bleeding. The heterozygous female (carrier) for haemophilia may transmit the disease to sons. The possibility of a female becoming a haemophilic is extremely rare because mother of such a female has to be at least carrier and the father should be haemophilic (unviable in the later stage of life). The family pedigree of Queen Victoria shows a number of haemophilic descendents as she was a carrier of the disease."
     },
     {
       "n": 3,
       "kind": "paragraph",
-      "text": "individual may lack one of any one pair of chromosomes. These situations are known as trisomy or monosomy of a chromosome, respectively. Such a situation leads to very serious consequences in the individual. Down’s syndrome, Turner’s syndrome, Klinefelter’s syndrome are common examples of chromosomal disorders.",
-      "continues_from_previous": true
+      "text": "Sickle-cell anaemia : This is an autosome linked recessive trait that can be transmitted from parents to the offspring when both the partners are carrier for the gene (or heterozygous). The disease is controlled by a single pair of allele, HbA and HbS. Out of the three possible genotypes only homozygous individuals for HbS (HbSHbS) show the diseased phenotype. Heterozygous (HbAHbS) individuals appear apparently unaffected but they are carrier of the disease as there is 50 per cent probability of transmission of the mutant gene to the progeny, thus exhibiting sickle-cell trait (Figure 4.15). The defect is caused by the substitution of Glutamic acid"
     },
     {
       "n": 4,
-      "kind": "paragraph",
-      "text": "Down’s Syndrome : The cause of this genetic disorder is the presence of an additional copy of the chromosome number 21 (trisomy of 21). This disorder was first described by Langdon Down (1866). The affected individual is short statured with small round head, furrowed tongue and partially open mouth (Figure 4.16). Palm is broad with characteristic palm crease. Physical, psychomotor and mental development is retarded."
-    },
-    {
-      "n": 5,
-      "kind": "paragraph",
-      "text": "Klinefelter’s Syndrome : This genetic disorder is also caused due to the presence of an additional copy of X-chromosome resulting into a karyotype of 47, XXY. Such an individual has overall masculine development, however, the feminine development (development of breast, i.e., Gynaecomastia) is also expressed (Figure 4.17 a). Such individuals are sterile."
-    },
-    {
-      "n": 6,
-      "kind": "paragraph",
-      "text": "Turner’s Syndrome : Such a disorder is caused due to the absence of one of the X chromosomes, i.e., 45 with X0, Such females are sterile as ovaries are rudimentary besides other features including lack of other secondary sexual characters (Figure 4.17 b)."
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        173,
+        1184,
+        1486,
+        1907
+      ],
+      "text": ""
     }
   ],
   "first_block_continues_from_previous": true,
-  "last_block_continues_on_next": false,
+  "last_block_continues_on_next": true,
   "running_header_footer_removed": [
     "BIOLOGY",
-    "76",
+    "74",
     "Reprint 2026-27"
   ],
-  "note": "No text layer (image-only chapter, as expected); all text read from the page image. Reading order: full-width Figure 4.16 with caption at top, then left-column Figure 4.17 with caption, then the right-column running text, whose final paragraph (Turner's Syndrome) runs full width at the bottom. The page's running text starts mid-topic with 'individual may lack one of any one pair of chromosomes.', so first_block_continues_from_previous is true even though block 1 is a full-width figure; the continuation is marked on block 3, the first text block. previous_page_last_block was null, so continuation was judged from the page itself. Figure 4.16 and 4.17 captions are left inside their figure bboxes for the special transcriber."
+  "note": "Image-only page as expected for this chapter; text_layer empty, so all text read from the image. In block 3 the printed allele symbols use superscripts (Hb with superscript A, Hb with superscript S); plain-text transcription renders them as HbA, HbS, HbSHbS and HbAHbS with the superscript level lost. The last block on the page is Figure 4.15 (complete, including its caption), but the page's running text ends mid-sentence at \"substitution of Glutamic acid\", so last_block_continues_on_next is set true for the text flow."
 }

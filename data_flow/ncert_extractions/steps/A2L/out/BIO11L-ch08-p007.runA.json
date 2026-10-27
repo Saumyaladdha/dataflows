@@ -1,0 +1,30 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 23,
+    "text_block": [0.098, 0.133, 0.686, 0.893],
+    "fill": 0.97,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.08], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.08, 1.0, 0.093], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.081, 0.316, 0.093], "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.826, 0.081, 0.851, 0.094], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.133, 0.686, 0.219], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.04},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.223, 0.686, 0.308], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.03, "space_before": 0.004},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.313, 0.686, 0.398], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.03, "space_before": 0.005},
+    {"n": 4, "role": "section_heading", "bbox": [0.098, 0.418, 0.492, 0.433], "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.02},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.444, 0.686, 0.565], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.011},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.57, 0.686, 0.655], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.03, "space_before": 0.005},
+    {"n": 7, "role": "major_heading", "bbox": [0.098, 0.682, 0.33, 0.697], "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.027},
+    {"n": 8, "role": "paragraph", "bbox": [0.098, 0.718, 0.686, 0.82], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.021},
+    {"n": 9, "role": "paragraph", "bbox": [0.098, 0.825, 0.686, 0.893], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.03, "space_before": 0.005},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.063}
+  ],
+  "note": "Ordinary body page (recto), single full column 0.098-0.686, text only. Top band light green #e0ebb6 over grey strip #d1d2d4 carrying running header 'Cell: The Unit of Life' and folio 91 in a white tab at right. Block 4 (8.4.2, bold title case) is a subsection heading; block 7 (8.5, bold small caps) is a numbered section heading, reported as major_heading to distinguish it; both blue #00adef (colour sampled on the p005 heading, same style). Indents are first-line indents. Footer green band #cadf7f with '2024-25' stamp. Diagonal NCERT watermark ignored. size_pt not given (DPI not stated)."
+}

@@ -1,0 +1,50 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 20.0,
+    "text_block": [0.127, 0.133, 0.905, 0.905],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.316, "x1": 0.905},
+      {"id": "left", "x0": 0.127, "x1": 0.517},
+      {"id": "right", "x0": 0.534, "x1": 0.905}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.065, 0.185, 0.096],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "fill": "#ffffff",
+     "text_color": "#231f20", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.083, 0.900, 0.095],
+     "column": "full", "size_rel": 0.9, "align": "right", "font": "serif", "fill": "#d1d2d4",
+     "text_color": "#231f20", "space_before": 0.0},
+    {"n": 1, "role": "paragraph", "bbox": [0.316, 0.133, 0.905, 0.250],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.038},
+    {"n": 2, "role": "major_heading", "bbox": [0.318, 0.273, 0.647, 0.288],
+     "column": "full", "size_rel": 1.2, "align": "left", "font": "sans",
+     "text_color": "#00aeef", "space_before": 0.023},
+    {"n": 3, "role": "section_heading", "bbox": [0.318, 0.302, 0.551, 0.317],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "sans",
+     "text_color": "#00aeef", "space_before": 0.014},
+    {"n": 4, "role": "paragraph", "bbox": [0.316, 0.329, 0.905, 0.445],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.012},
+    {"n": 5, "role": "paragraph", "bbox": [0.316, 0.448, 0.905, 0.631],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 6, "role": "section_heading", "bbox": [0.318, 0.650, 0.834, 0.665],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "sans",
+     "text_color": "#00aeef", "space_before": 0.019},
+    {"n": 7, "role": "figure", "bbox": [0.137, 0.703, 0.517, 0.833],
+     "column": "left", "size_rel": 1.0, "space_before": 0.038},
+    {"n": null, "role": "figure_caption", "bbox": [0.127, 0.848, 0.499, 0.905],
+     "column": "left", "size_rel": 0.9, "align": "justify", "font": "serif", "space_before": 0.015},
+    {"n": 8, "role": "paragraph", "bbox": [0.534, 0.676, 0.905, 0.898],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.011}
+    ,
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.051}
+  ],
+  "note": "Verso body page (folio 174 in a white tab at left, running head 'Biology' at right). Upper part is a single column x 0.316-0.905. Below heading 13.4.2 the page splits: Figure 13.10 (coleoptile panels a-d, panel d on a light-blue tint) and its caption sit in a LEFT column that extends into the left margin (x 0.127-0.517), with paragraph n=8 running beside it in a RIGHT column (x 0.534-0.905). Paragraph 8 starts above the figure top (y 0.676 vs 0.703); listed after the figure/caption to follow A2 block order. The Figure 13.10 caption has no A2 block so n is null. Header band #e0ebb6 with grey strip #d1d2d4; footer band #cadf7f carries '2024-25'. Diagonal NCERT watermark ignored. size_pt omitted because the page DPI is not given."
+}

@@ -32,12 +32,17 @@ import html
 import json
 import os
 import sys
+import urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import runner_core as rc  # noqa: E402
+from lib import cdn  # noqa: E402
 from lib import texhtml  # noqa: E402
+from lib import sibling_text  # noqa: E402
+import record_v3  # noqa: E402
+import paper_md  # noqa: E402
 
-CORPUS = ("papers_v2",)
+CORPUS = rc.corpus()
 #: Where B3V writes the agent's read of each question. When one exists it REPLACES the text draft in
 #: every export, because the draft is a cross-check and the agent's read of the image is the record.
 B3V_OUT = ("steps", "B3V", "out")
@@ -46,6 +51,15 @@ B6V_OUT = ("steps", "B6V", "out")
 QSUBJ_OUT = ("steps", "QSUBJ", "out")
 QCHAP_OUT = ("steps", "QCHAP", "out")
 QTOPIC_OUT = ("steps", "QTOPIC", "out")
+#: b3s-solution-reader's read of the publisher's printed worked solution.
+B3S_OUT = ("steps", "B3S", "out")
+#: b3f-figure-transcriber's caption and labels for one figure crop.
+B3F_OUT = ("steps", "B3F", "out")
+#: The committed deliverable: data/<year>/<paper_code>/{questions.json, question_paper.html,
+#: question_paper.md}.
+DATA = ("data",)
+#: questions.json's own schema tag. Bumped only when a field changes meaning.
+RECORD_SCHEMA = record_v3.SCHEMA
 
 
 def _mapping(out_dir, paper_id, qno):
@@ -131,7 +145,7 @@ def taxonomy_gap(paper_id, qno):
     return ""
 
 
-STREAMS = ("papers_v2", "mappings", "chapter_streams.json")
+STREAMS = rc.mappings() + ("chapter_streams.json",)
 _STREAMS = {}
 
 
@@ -221,7 +235,7 @@ def verdict(official, solved):
     """
     if not (official and solved):
         return "unchecked"
-    if official == solved:
+    if solved in accepted(official):
         return "agree"
     if solved == "unsure":
         return "solve was unsure"
@@ -262,11 +276,175 @@ def reading(paper_id, question):
     """
     draft = question["text_layer_draft"]
     read = agent_read(paper_id, question["qno"])
+    answer = printed_answer(draft)
     if read:
-        return ("agent", read.get("stem_en") or "", read.get("options_en") or {},
-                draft.get("official_answer"))
-    return ("draft", draft.get("stem") or "", draft.get("options") or {},
-            draft.get("official_answer"))
+        source, stem, options = "agent", read.get("stem_en") or "", read.get("options_en") or {}
+    else:
+        source, stem, options = "draft", draft.get("stem") or "", draft.get("options") or {}
+    opening = restored_opening(question)
+    if opening and not stem.startswith(opening["text"]):
+        stem = opening["text"] + " " + stem
+    return (source, stem, options, answer)
+
+
+def restored_opening(question):
+    """The opening words this booklet lost, read from the same exam's other booklet codes, or None.
+
+    Only for a question the extractor split off with NO printed number (split_unnumbered): that is
+    the sign its first line fell off the page, as 2017 Code-A q130 did. The words come verbatim from
+    the siblings' text layers (lib/sibling_text.py), and the record says which siblings."""
+    if question.get("number_printed", True) or not question.get("source_pdf"):
+        return None
+    pdf = os.path.join(rc.source_dir(), question["source_pdf"])
+    if not os.path.exists(pdf):
+        return None
+    return sibling_text.restored_opening(pdf, (question.get("text_layer_draft") or {}).get("stem"))
+
+
+#: A printed solution that says the question has no correct option as printed (2017_A q3: "No
+#: option is correct", then it answers a corrected reading of the question).
+NO_OPTION_CORRECT = re.compile(
+    r"\bno (?:option|answer|choice) is (?:correct|right)\b"
+    r"|\bnone of the (?:options|answers|choices|given options) (?:is|are) correct\b", re.I)
+
+
+def _booklet(pdf_name):
+    m = re.search(r"Code_([A-Z0-9]+)", pdf_name or "")
+    return "Code %s" % m.group(1) if m else pdf_name
+
+
+def record_flags(question, publisher, ai, solution_steps):
+    """What a reader must know before trusting this question, as [{code, text}].
+
+    Each flag is decided from the record itself, never from a reviewer's memory, so the same
+    defect in another booklet is flagged the same way. The JSON carries them in `flags`; the review
+    page shows them on the card."""
+    flags = []
+    if not question.get("number_printed", True):
+        opening = restored_opening(question)
+        if opening:
+            where = ", ".join("%s q%d" % (_booklet(s["pdf"]), s["qno"]) for s in opening["sources"])
+            flags.append({"code": "opening_restored",
+                          "text": "The booklet lost this question's number and first line. The "
+                                  "opening \"%s\" is restored word for word from %s (same exam)."
+                                  % (opening["text"], where)})
+        else:
+            flags.append({"code": "opening_missing",
+                          "text": "The booklet lost this question's number and first line, and no "
+                                  "other booklet code of this exam prints it; the stem starts "
+                                  "mid-sentence."})
+    said = next((s for s in solution_steps or [] if NO_OPTION_CORRECT.search(s)), None)
+    if said:
+        flags.append({"code": "publisher_no_option_correct",
+                      "text": "The printed solution says \"%s\": the question has no correct option "
+                              "as printed, and the printed answer comes from a corrected reading."
+                              % said.strip()})
+    if publisher and ai and ai not in accepted(publisher):
+        flags.append({"code": "answers_differ",
+                      "text": "The independent solve chose (%s); the booklet prints (%s)."
+                              % (ai, publisher)})
+    return flags
+
+
+#: How several accepted options are joined into one answer string: `1 & 2`.
+ACCEPTED_JOIN = " & "
+
+
+def printed_answer(draft):
+    """The booklet's printed answer: one option, or every accepted option joined by ` & `.
+
+    2017 Code-A prints `Answer (1 & 2)* Both answers are correct.` for q18. Read as a single option it
+    was `None`, so the page said "no printed answer found" about a question that prints one.
+    """
+    if draft.get("official_answer"):
+        return draft["official_answer"]
+    accepted = draft.get("official_answers") or []
+    return ACCEPTED_JOIN.join(accepted) if accepted else None
+
+
+def accepted(answer):
+    """The set of options a printed answer accepts: `"1 & 2"` -> {"1", "2"}."""
+    return set((answer or "").split(ACCEPTED_JOIN)) - {""}
+
+
+def image_src(q, image, out_path, counts):
+    """The `src` for one of this question's images: its CDN URL, else the local file.
+
+    Every image is meant to be a CDN link (code/upload_paper_assets.py). The local fallback keeps a page
+    readable before the upload has run, and each fallback is COUNTED so the export says how many
+    images would break the moment the page leaves this machine.
+    """
+    url = cdn.url_for(q, image)
+    if url:
+        counts["images_cdn"] += 1
+        # the file's fingerprint rides on the link: a drawing re-uploaded under its old name
+        # (2017_A's chemistry, redrawn on the booklet's geometry) is not served stale from a cache
+        sha = cdn.sha_for(q, image)
+        return "%s?v=%s" % (url, sha[:12]) if sha else url
+    counts["images_local"] += 1
+    return os.path.relpath(os.path.join(rc.pp(*CORPUS), image), os.path.dirname(out_path))
+
+
+def image_attrs(q, image, out_path, counts):
+    """`src`/`data-local`/`onerror` for one image: the CDN URL first, the local file as fallback.
+
+    The handover's rule: the page must work online AND from a clean clone. A clean clone has no
+    `papers/` (it is git-ignored), so the CDN URL is the src; a machine with no network has the
+    local file, so it is carried as `data-local` and swapped in only if the URL fails to load. The
+    swap is an inline attribute, not a script file -- nothing is fetched to make it work.
+    """
+    # THE EXACT VECTOR COPY WINS. vector_figures.py lifts every cut figure out of the PDF as SVG --
+    # the publisher's own paths and glyphs, no watermark -- and records it as this PNG's twin.
+    svg = (q.get("vector") or {}).get(image)
+    if svg and (cdn.url_for(q, svg) or os.path.exists(os.path.join(rc.pp(*CORPUS), svg))):
+        counts["images_vector"] += 1
+        image = svg
+    src = image_src(q, image, out_path, counts)
+    local = os.path.relpath(os.path.join(rc.pp(*CORPUS), image), os.path.dirname(out_path))
+    if src == local:
+        return 'src="%s"' % html.escape(local.replace("\\", "/"))
+    return ('src="%s" data-local="%s" onerror="if(this.dataset.local&amp;&amp;'
+            'this.getAttribute(\'src\')!==this.dataset.local){this.src=this.dataset.local}"'
+            % (html.escape(src), html.escape(local.replace("\\", "/"))))
+
+
+def drawn_html(q, image, out_path, counts):
+    """The pipeline's own drawing of one figure, as a panel under the printed copy -- or nothing.
+
+    Shown BESIDE the exact copy, never instead of it: a card can be self-consistent and still not be
+    the printed figure, and only a reader comparing the two catches that (FIGURE_RENDERING_PLAN 3.6).
+    A card that failed its check is said so in red, so a missing drawing is never mistaken for a
+    figure that needed none.
+    """
+    entry = (q.get("drawn") or {}).get(image)
+    if not entry:
+        return ""
+    source = ("on the booklet's own geometry, every structure checked atom for atom against its SMILES"
+              if entry.get("layout") == "booklet" and entry.get("source") == "smiles" else
+              "on the booklet's own geometry, its figure spec checked against it (labels and lines)"
+              if entry.get("layout") == "booklet" else
+              "from SMILES (RDKit)" if entry.get("source") == "smiles" else "from a figure spec")
+    if entry.get("status") == "failed_check":
+        counts["drawn_failed"] += 1
+        return ('<p class="flag">drawing withheld: its card failed the check -- %s</p>'
+                % html.escape(entry.get("message") or ""))
+    if entry.get("status") != "drawn" or not entry.get("svg"):
+        return ""
+    counts["drawn_shown"] += 1
+    facts = ""
+    if entry.get("source") == "smiles":
+        species = (entry.get("card") or {}).get("species") or []
+        facts = " &middot; ".join(
+            "%s%s <code>%s</code>%s" % (
+                html.escape(sp.get("label") or ""), " " if sp.get("label") else "",
+                html.escape(sp.get("formula") or ""),
+                {"match": " name&nbsp;✓", "mismatch": ' <b class="bad">name&nbsp;✗</b>'}.get(
+                    sp.get("name_check"), ""))
+            for sp in species)
+    return ('<details class="drawn" open><summary>drawn by the pipeline %s%s</summary>'
+            '<img %s alt="drawing of %s" loading="lazy"></details>'
+            % (source, (" &middot; " + facts) if facts else "",
+               image_attrs(q, entry["svg"], out_path, counts), html.escape(entry["figure_id"])))
 
 
 def load(paper_id=None):
@@ -296,7 +474,7 @@ def write_csv(papers, out_path):
               "solved_confidence", "answer_starred", "n_options",
               "n_figures", "figure_roles", "figure_source", "figure_folder", "figure_files",
               "text_layer_reliable", "needs_image_read", "read_from", "question_image",
-              "source_pdf"]
+              "question_image_url", "figure_urls", "source_pdf"]
     rows = 0
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w", newline="", encoding="utf-8") as fh:
@@ -348,7 +526,12 @@ def write_csv(papers, out_path):
                     "text_layer_reliable": ("yes" if q.get("text_layer_reliable", True) else "no"),
                     "needs_image_read": ("yes" if q.get("needs_image_read") else ""),
                     "read_from": source,
-                    "question_image": q["question_image"], "source_pdf": q["source_pdf"],
+                    "question_image": q["question_image"],
+                    "question_image_url": cdn.url_for(q, q["question_image"]) or "",
+                    "figure_urls": "; ".join(
+                        cdn.url_for(q, f) or "" for f in (q.get("agent_figure_images")
+                                                          or q.get("figure_images") or [])),
+                    "source_pdf": q["source_pdf"],
                 })
                 rows += 1
     return rows
@@ -382,8 +565,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 PART_CSS = """
 .opts.pics li{margin:.4em 0}
-.optimg{max-width:min(100%,22em);height:auto;display:block;
+.optimg{max-width:min(100%,22em);height:auto;display:block;background:#fff;
  border:1px solid color-mix(in srgb,currentColor 12%,transparent);border-radius:4px}
+.opttext{margin:.25em 0 .1em}
 .labelrow{margin:.12em 0}
 .concept{font-style:italic}
 .axis{display:inline-block;font-family:ui-monospace,monospace;font-weight:700;\n padding:0 .3em;border-radius:3px;border:1px solid currentColor;margin-right:.35em;\n font-size:.92em;letter-spacing:0}\n.classify th .means{display:block;text-transform:none;letter-spacing:0;font-weight:400;\n opacity:.6;font-size:.95em;max-width:14em;white-space:normal}
@@ -467,6 +651,8 @@ figure img{max-width:100%;height:auto;border:1px solid var(--rule);border-radius
 figcaption{font-size:11px;color:var(--ink2);margin-top:4px;letter-spacing:.03em}
 .flag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:99px;
  background:var(--warn-bg);color:var(--warn);border:1px solid var(--warn);margin-left:6px}
+.warnline{font-size:12.5px;background:var(--warn-bg);color:var(--warn);border-left:3px solid
+ var(--warn);padding:6px 10px;margin:0 0 10px;border-radius:4px}
 .meta{font-size:11px;color:var(--ink2);margin-top:10px;border-top:1px dashed var(--rule);
  padding-top:7px}
 a{color:var(--accent)}
@@ -476,6 +662,7 @@ a{color:var(--accent)}
 .side{min-width:0}
 .sidelabel{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--ink2);
  border-bottom:1px solid var(--rule);padding-bottom:4px;margin-bottom:9px}
+.sidelabel.solshot{margin-top:14px}
 img.shot{max-width:100%;height:auto;border:1px solid var(--rule);border-radius:4px;background:#fff;
  display:block}
 .missing{font-size:12px;color:var(--warn);margin:0}
@@ -749,7 +936,7 @@ def match_table_html(parsed):
                body, '<p>%s</p>' % texhtml.to_html(tail) if tail else ""))
 
 
-GLOSSARY = ("papers_v2", "mappings", "label_glossary.json")
+GLOSSARY = rc.mappings() + ("label_glossary.json",)
 E7V_OUT = ("steps", "E7V", "out")
 ECAT_OUT = ("steps", "ECAT", "out")
 #: Ratings moved out of the live directory so their trap routes could be rewritten.
@@ -907,6 +1094,438 @@ def categories_of(paper_id, qno):
     return None, ""
 
 
+def _posix(path):
+    """A stored relative path with forward slashes. The extractor joins paths with os.path.join, so
+    on Windows the records hold backslashes; the deliverable must read the same on every OS, or two
+    machines exporting the same data produce different bytes."""
+    return path.replace("\\", "/") if isinstance(path, str) else path
+
+
+def publisher_solution(paper_id, qno):
+    """b3s-solution-reader's read of the printed worked solution, or None if B3S has not run."""
+    return _mapping(B3S_OUT, paper_id, qno)
+
+
+def solve_record(paper_id, qno):
+    """b6-blind-solver's whole output for this question, or None."""
+    return _mapping(B6V_OUT, paper_id, qno)
+
+
+#: Where a solver's one-string `working` is split into steps: after a sentence or clause end that is
+#: followed by the start of the next move. Used ONLY for outputs written before B6 had `steps` --
+#: the handover's rule is that those solves are split, not re-run.
+STEP_BREAK = re.compile(r"(?<=[.;])\s+(?=[A-Z$\\(\[])|\n+")
+
+
+def ai_steps(solve):
+    """The AI's reasoning as steps: B6's own `steps` where it wrote them, else its `working` split
+    on sentence boundaries, else its one-line `reason`."""
+    if not solve:
+        return []
+    if solve.get("steps"):
+        return [step for step in solve["steps"] if step.strip()]
+    working = (solve.get("working") or "").strip()
+    if working:
+        return [part.strip() for part in STEP_BREAK.split(working) if part.strip()]
+    reason = (solve.get("reason") or "").strip()
+    return [reason] if reason else []
+
+
+def verdict_self(publisher_answer, concludes):
+    """Does the booklet's printed answer agree with its OWN worked solution?
+
+    A defect class nothing else catches: a booklet printing `Answer (3)` above a solution that works
+    out to 1. Found only by reading the working, which is what B3S's `concludes` records.
+    """
+    if not publisher_answer or not concludes:
+        return "unchecked"
+    if concludes == "unclear":
+        return "unclear"
+    return "agree" if concludes in accepted(publisher_answer) else "publisher_contradicts_itself"
+
+
+def verdict_code(publisher_answer, ai_answer):
+    """verdict() in the record's closed vocabulary: agree / differs / ai_unsure / unchecked."""
+    if not (publisher_answer and ai_answer):
+        return "unchecked"
+    if ai_answer == "unsure":
+        return "ai_unsure"
+    return "agree" if ai_answer in accepted(publisher_answer) else "differs"
+
+
+def solutions_html(paper_id, q, options, answer, solved, confidence, out_path, counts):
+    """The publisher's printed solution and our independent one, each in its own labelled block.
+
+    Read from B3S where it has run. Where it has not, the TEXT-LAYER lines are shown and labelled as a
+    draft, never as the solution -- a worked solution is fractions and exponents, the very content the
+    text layer cannot represent. A question with no printed solution says so rather than showing an
+    empty block, because "none printed" and "not read yet" are opposites (SPEC Rule 19).
+    """
+    out = []
+    draft_lines = (q.get("text_layer_draft") or {}).get("solution_lines") or []
+    read = publisher_solution(paper_id, q["qno"])
+    image = q.get("solution_image")
+    head = ('<div class="solhead">The publisher\'s solution<span>printed answer (%s)</span></div>'
+            % html.escape(answer or "none"))
+    body = []
+    if read and "error" not in read:
+        counts["publisher_solution_read"] += 1
+        steps = read.get("solution_stepwise") or []
+        body.append(steps_with_figures(q, steps, out_path, counts))
+        concludes = read.get("concludes")
+        self_check = verdict_self(answer, concludes)
+        body.append('<p class="concl">&rarr; the working concludes: <b>%s</b></p>'
+                    % html.escape("option %s" % concludes if concludes in "1234" and concludes
+                                  else (concludes or "?")))
+        if self_check == "publisher_contradicts_itself":
+            counts["publisher_contradicts_itself"] += 1
+            body.append('<p class="flag">THE BOOKLET CONTRADICTS ITSELF: it prints Answer (%s) but '
+                        'its own working arrives at option %s</p>'
+                        % (html.escape(answer or "?"), html.escape(concludes)))
+        if read.get("complete") is False:
+            counts["solution_clipped"] += 1
+            body.append('<p class="flag">solution crop is clipped: %s</p>'
+                        % texhtml.to_html(read.get("note") or "the working continues past the crop"))
+    elif draft_lines:
+        counts["publisher_solution_draft"] += 1
+        body.append('<p class="draftlabel">text-layer draft &mdash; not the record, awaiting '
+                    'b3s-solution-reader</p><div class="draftsol">%s</div>'
+                    % "<br>".join(texhtml.to_html(line) for line in draft_lines))
+    elif not image:
+        counts["no_solution_printed"] += 1
+        body.append('<p class="missing">no worked solution is printed for this question</p>')
+    else:
+        body.append('<p class="missing">solution not read yet (B3S)</p>')
+    if image and (cdn.url_for(q, image) or os.path.exists(rc.pp(*CORPUS, image))):
+        # The whole printed block is a REFERENCE, folded away. The reader's solution is the steps
+        # above with each drawing at the step that uses it; showing the full crop underneath them
+        # repeated the solution as one long picture below the answer.
+        body.append('<details class="solsrc"><summary>printed solution, as in the booklet</summary>'
+                    '<figure class="solimg"><img %s alt="printed solution of question %d" '
+                    'loading="lazy"></figure></details>'
+                    % (image_attrs(q, image, out_path, counts), q["qno"]))
+    out.append('<div class="sol pub">%s%s</div>' % (head, "".join(body)))
+
+    solve = solve_record(paper_id, q["qno"])
+    head = ('<div class="solhead">Solved independently (answer withheld)<span>AI: %s%s</span></div>'
+            % (html.escape(solved or "not solved yet"),
+               (" &middot; " + html.escape(confidence)) if confidence else ""))
+    steps = ai_steps(solve)
+    if steps:
+        body = '<ol class="steps">%s</ol>' % "".join("<li>%s</li>" % texhtml.to_html(step)
+                                                      for step in steps)
+    else:
+        body = '<p class="missing">not solved yet (B6V)</p>'
+    out.append('<div class="sol ai">%s%s</div>' % (head, body))
+    return "".join(out)
+
+
+def steps_with_figures(q, steps, out_path, counts):
+    """The printed steps as a numbered list, each solution figure drawn right after its step.
+
+    `after_step` comes from b3s-solution-reader (0 = before the first step). A figure is shown as
+    its exact vector copy where vector_figures.py made one, else its PNG.
+    """
+    by_step = collections.defaultdict(list)
+    for figure in q.get("solution_figures") or []:
+        by_step[min(int(figure.get("after_step") or 0), len(steps))].append(figure)
+
+    def figure_html(figure):
+        counts["solution_step_figures"] += 1
+        return ('<figure class="stepfig"><img %s alt="figure in the solution of question %d" '
+                'loading="lazy">%s</figure>'
+                % (image_attrs(q, figure["image"], out_path, counts), q["qno"],
+                   drawn_html(q, figure["image"], out_path, counts)))
+    lead = "".join(figure_html(f) for f in by_step.get(0, []))
+    items = "".join("<li>%s%s</li>" % (texhtml.to_html(step),
+                                       "".join(figure_html(f) for f in by_step.get(n, [])))
+                    for n, step in enumerate(steps, 1))
+    return '%s<ol class="steps">%s</ol>' % (lead, items)
+
+
+def _status(done, unsure=False):
+    return "unsure" if unsure else ("done" if done else "not_run")
+
+
+#: Which step is owed for each status field, so `pending` names the work rather than the gap.
+PENDING_STEP = {"question": "B3V", "publisher_solution": "B3S", "ai_solution": "B6V",
+                "subject": "QSUBJ", "chapter": "QCHAP", "subtopic": "QTOPIC",
+                "difficulty": "E7V", "figures": "B3V"}
+
+
+def question_record(paper_id, meta, q):
+    """One question in the handover's section-11 shape, from the SAME helpers the HTML uses.
+
+    Every field is present on every record. A field nobody has judged is null with its `status`
+    saying `not_run`, never omitted: an absent field and an empty one look identical to a consumer
+    and mean opposite things (SPEC Rule 19).
+    """
+    qno = q["qno"]
+    draft = q.get("text_layer_draft") or {}
+    source, stem, options, publisher = reading(paper_id, q)
+    read = agent_read(paper_id, qno) or {}
+    solve = solve_record(paper_id, qno) or {}
+    sol = publisher_solution(paper_id, qno) or {}
+    if "error" in sol:
+        sol = {}
+    subject, branch, subject_from = confirmed_subject(paper_id, q)
+    qsubj = _mapping(QSUBJ_OUT, paper_id, qno) or {}
+    qchap = _mapping(QCHAP_OUT, paper_id, qno) or {}
+    qtopic = _mapping(QTOPIC_OUT, paper_id, qno) or {}
+    codes, chap_names, topic_ids, topic_names, chap_conf = chapter_topic(paper_id, qno)
+    stream, branch = stream_and_branch(subject, branch, codes, chap_names)
+    band, steps_count, band_steps, band_why, band_hard = difficulty_of(paper_id, qno)
+    ai = solve.get("answer")
+    concludes = sol.get("concludes")
+
+    vector = q.get("vector") or {}   # PNG path -> its exact vector twin
+    figures = []
+    for n, figure in enumerate(q.get("figures") or [], 1):
+        local = figure.get("image")
+        # B3F's item for this crop is `<paper>#q###_<role>_<n>` (b3f_plugin.py), so its output file
+        # is found by the same name; its caption and labels are what the figure carries as text.
+        b3f = None
+        path = rc.pp(*B3F_OUT, "%s__q%03d_%s_%d.runA.json" % (paper_id, qno, figure.get("role"), n))
+        if os.path.exists(path):
+            try:
+                with open(path, encoding="utf-8") as fh:
+                    b3f = json.load(fh)
+            except ValueError:
+                b3f = None
+        figures.append({
+            "role": figure.get("role"), "kinds": figure.get("kinds") or [],
+            "page": figure.get("page", 0) + 1 if figure.get("page") is not None else None,
+            "crop_bbox": figure.get("crop_bbox"), "target_box_in_crop": figure.get("target_box_in_crop"),
+            "local": _posix(local), "cdn_url": cdn.url_for(q, local) if local else None,
+            "sha256": cdn.sha_for(q, local) if local else None,
+            "svg": _posix(vector.get(local)) if local else None,
+            "svg_cdn_url": cdn.url_for(q, vector.get(local)) if local and vector.get(local) else None,
+            "caption": (b3f or {}).get("caption") or "", "labels": (b3f or {}).get("labels") or [],
+            # A geometric crop is a guess from clustered vector paths; the agent READ the question.
+            # Where the read found no figure, or cut its own, this crop is not the question's figure
+            # -- on 2017 Code-A, B3F found q058's "stem figure" was the previous question's options
+            # and q081's "option panels" a solution diagram. Kept for audit, never presented as real.
+            "superseded_by_agent": bool(read) and (not read.get("has_figure")
+                                                   or bool(q.get("agent_figure_images"))),
+        })
+
+    def image_record(path):
+        """One image as the record carries it: the PNG and its exact vector twin, both linked."""
+        svg = vector.get(path)
+        drawn = (q.get("drawn") or {}).get(path)
+        record = {"local": _posix(path), "cdn_url": cdn.url_for(q, path),
+                  "sha256": cdn.sha_for(q, path),
+                  "svg": _posix(svg), "svg_cdn_url": cdn.url_for(q, svg) if svg else None,
+                  "drawn": None}
+        if drawn:
+            # The pipeline's own drawing: the checked card it was drawn from (SMILES with formula,
+            # InChIKey and name-check result, or the physics spec), and the drawing's own links.
+            record["drawn"] = {
+                "source": drawn.get("source"), "status": drawn.get("status"),
+                "svg": _posix(drawn.get("svg")),
+                "svg_cdn_url": cdn.url_for(q, drawn["svg"]) if drawn.get("svg") else None,
+                "card": drawn.get("card") if drawn.get("source") == "smiles" else None,
+                "spec": drawn.get("spec") if drawn.get("source") == "spec" else None,
+                "message": drawn.get("message")}
+        return record
+
+    agent_figures = [image_record(p) for p in q.get("agent_figure_images") or []]
+    option_images = {k: image_record(p)
+                     for k, p in sorted((q.get("agent_option_images") or {}).items())}
+    # The solution's drawings, each at the step that uses it -- before these the JSON's solution held
+    # text only, and its pictures existed nowhere but inside one whole-block crop.
+    solution_figures = [dict(image_record(f["image"]), after_step=f.get("after_step", 0),
+                             kind=f.get("kind") or None)
+                        for f in q.get("solution_figures") or []]
+
+    subject_settled = "printed heading" in (subject_from or "") or bool(qsubj)
+    chapter_unsure = qchap.get("chapter_codes") == ["unsure"]
+    topic_unsure = qtopic.get("topic_ids") == ["unsure"]
+    if read:
+        figure_status = ("none" if not read.get("has_figure")
+                         else ("done" if q.get("agent_figure_images") else "unsure"))
+    else:
+        figure_status = "not_run"
+    status = {
+        "question": _status(source == "agent"),
+        "publisher_solution": ("none" if not q.get("solution_image") else _status(bool(sol))),
+        "ai_solution": _status(bool(solve)),
+        "subject": _status(subject_settled, qsubj.get("subject") == "unsure"),
+        "chapter": _status(bool(qchap), chapter_unsure),
+        "subtopic": _status(bool(qtopic), topic_unsure),
+        "difficulty": _status(bool(band), band == "unsure"),
+        "figures": figure_status,
+        "categories": "excluded",
+    }
+    pending = [PENDING_STEP[k] for k, v in status.items() if v == "not_run" and k in PENDING_STEP]
+    pending = sorted(set(pending), key=pending.index)
+
+    def option_text(key):
+        return options.get(key) if key and key in options else None
+
+    return {
+        "question_id": "%s__q%03d" % (paper_id, qno),
+        "paper_code": paper_id, "year": q.get("year"), "booklet_code": q.get("booklet_code"),
+        "qno": qno,
+        "flags": record_flags(q, publisher, ai, sol.get("solution_stepwise") or []),
+        "restored_opening": restored_opening(q),
+
+        "question_text": stem, "options": options,
+        "statements": read.get("statements") or [], "list_i": read.get("list_i") or [],
+        "list_ii": read.get("list_ii") or [],
+        "structure": read.get("structure") if read else None,
+        "negative_words_seen": read.get("negative_words_seen") or [],
+
+        "publisher_answer": draft.get("official_answer"),
+        "publisher_answer_text": option_text(draft.get("official_answer")),
+        "publisher_answer_starred": bool(draft.get("answer_starred")),
+        # Every option the booklet accepts. One entry normally; two where it prints `Answer (1 & 2)*`
+        # -- then `publisher_answer` is null, because a single field cannot hold both.
+        "publisher_answers_accepted": draft.get("official_answers") or ([publisher] if publisher else []),
+        "publisher_answer_line": draft.get("answer_line"),
+        "publisher_solution_stepwise": sol.get("solution_stepwise") or [],
+        "publisher_solution_draft": draft.get("solution_lines") or [],
+        "publisher_concludes": concludes,
+        "publisher_solution_complete": sol.get("complete") if sol else None,
+        "publisher_solution_figures": solution_figures,
+        "solution_image": _posix(q.get("solution_image")),
+        "solution_image_cdn": cdn.url_for(q, q.get("solution_image")) if q.get("solution_image") else None,
+
+        "ai_answer": ai, "ai_answer_text": option_text(ai),
+        "ai_solution_stepwise": ai_steps(solve),
+        "ai_why": solve.get("reason"), "ai_confidence": solve.get("confidence"),
+
+        "verdict_answer": verdict_code(publisher, ai),
+        "verdict_self": verdict_self(publisher, concludes),
+
+        "subject": subject, "subject_from": subject_from,
+        "subject_why": qsubj.get("why"), "subject_confidence": qsubj.get("confidence"),
+        "agrees_with_position": qsubj.get("agrees_with_position"),
+        "stream": stream or None, "branch": branch or None,
+
+        "chapter_code": codes[0] if codes else None,
+        "chapter_name": chap_names[0] if chap_names else None,
+        "chapter_why": qchap.get("why"), "chapter_confidence": chap_conf or None,
+
+        "subtopic_1_id": topic_ids[0] if topic_ids else None,
+        "subtopic_1_name": topic_names[0] if topic_names else None,
+        "subtopic_1_why": qtopic.get("why") if topic_ids else None,
+        "subtopic_2_id": topic_ids[1] if len(topic_ids) > 1 else None,
+        "subtopic_2_name": topic_names[1] if len(topic_names) > 1 else None,
+        # QTOPIC writes ONE `why` for its pick; it is not copied onto the second subtopic, because a
+        # reason the agent gave for the first is not a reason it gave for the second.
+        "subtopic_2_why": None,
+        "taxonomy_gap": taxonomy_gap(paper_id, qno),
+
+        "difficulty_level": band or None, "difficulty_steps": steps_count or None,
+        "difficulty_step_list": band_steps, "difficulty_why": band_why or None,
+        "what_makes_it_hard": band_hard or None,
+
+        "figures": figures, "agent_figures": agent_figures, "option_images": option_images,
+
+        "source_pdf": _posix(q.get("source_pdf")), "page": q.get("page"),
+        "question_image": _posix(q.get("question_image")),
+        "question_image_cdn": cdn.url_for(q, q.get("question_image")) if q.get("question_image") else None,
+        "read_from": source, "read_note": read.get("note") if read else None,
+        "text_layer_reliable": q.get("text_layer_reliable", True),
+        "needs_image_read": bool(q.get("needs_image_read")),
+        "is_key_grid_row": is_key_grid(stem),
+
+        "status": status, "pending": pending,
+    }
+
+
+#: Booklet facts carried into questions.json. `extracted_at` is deliberately NOT one of them: the
+#: deliverable must be byte-identical across re-exports, and a date changes it on every new day.
+META_FIELDS = ("year", "booklet_code", "booklet_code_from", "family", "layout", "pages",
+               "chars_per_page", "option_style", "dpi", "source_pdf", "sha256_16")
+
+
+def booklet_document(paper):
+    """questions.json for one booklet: meta, roll-up counts, every question record (v3 shape).
+
+    question_record() still computes every value -- it is the one place each field is decided --
+    and record_v3.build() groups those values into the v3 record (record_v3.py says why)."""
+    meta = paper["meta"]
+    paper_id = "%s_%s" % (meta["year"], meta["booklet_code"] or "NA")
+    flats = [question_record(paper_id, meta, q) for q in paper["questions"]]
+    records = [record_v3.build(q, flat, agent_read(paper_id, q["qno"]) or {})
+               for q, flat in zip(paper["questions"], flats)]
+    counts = collections.OrderedDict([("questions", len(records))])
+    for field in ("question", "publisher_solution", "ai_solution", "subject", "chapter",
+                  "subtopic", "difficulty", "figures"):
+        tally = collections.Counter(r["status"][field] for r in records)
+        counts[field] = dict(sorted(tally.items()))
+    counts["verdict_answer"] = dict(sorted(collections.Counter(
+        r["answer"]["verdict"] for r in records).items()))
+    counts["verdict_self"] = dict(sorted(collections.Counter(
+        r["solution"]["agrees_with_answer"] for r in records).items()))
+    assets = [a for r in records for a in record_v3.assets_in(r)]
+    counts["images"] = len(assets)
+    counts["images_without_cdn"] = sum(1 for a in assets if not a.get("cdn_url"))
+    counts["drawn_figures"] = sum(
+        1 for r in records for f in (r["question"]["figures"] + r["solution"]["figures"]
+                                     + [o["figure"] for o in r["question"]["options"] if o["figure"]])
+        if (f.get("drawn") or {}).get("status") == "drawn")
+    counts["number_not_printed"] = [r["qno"] for r in records if not r["question"]["number_printed"]]
+    counts["flagged"] = {code: [r["qno"] for r in records if any(f["code"] == code for f in r["flags"])]
+                         for code in sorted({f["code"] for r in records for f in r["flags"]})}
+    return collections.OrderedDict([
+        ("schema", RECORD_SCHEMA), ("paper_code", paper_id),
+        ("meta", {k: _posix(meta.get(k)) for k in META_FIELDS}),
+        ("render_css", record_v3.RENDER_CSS),
+        ("counts", counts), ("questions", records)])
+
+
+def _write_json(path, obj):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    text = json.dumps(obj, ensure_ascii=False, indent=1) + "\n"
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write(text)
+
+
+def write_data(paper):
+    """data/<year>/<paper_code>/questions.json + question_paper.html + question_paper.md, fresh
+    every run.
+
+    The booklet's folder is cleared first, so nothing from an earlier export survives beside the new
+    one, and both files are written with no timestamp and fixed ordering -- running the export twice
+    leaves `git status` clean.
+    """
+    import shutil
+    meta = paper["meta"]
+    paper_id = "%s_%s" % (meta["year"], meta["booklet_code"] or "NA")
+    folder = rc.pp(*DATA, str(meta["year"]), paper_id)
+    if os.path.isdir(folder):
+        shutil.rmtree(folder)
+    document = booklet_document(paper)
+    _write_json(os.path.join(folder, "questions.json"), document)
+    counts = write_html(paper, os.path.join(folder, "question_paper.html"))
+    # the third deliverable, from the same records as the JSON (code/paper_md.py)
+    paper_md.write(document, os.path.join(folder, "question_paper.md"))
+    return folder, document, counts
+
+
+#: An option read as "[structure (1) - see figure]": a pointer to a drawing, not printed words
+#: (the same test record_v3 applies to the JSON's option text).
+OPTION_PLACEHOLDER = re.compile(r"\s*\[[^\]]*(structure|figure|image)[^\]]*\]\s*", re.I)
+
+
+def option_structures(q):
+    """{option key: [(name, svg path)]} -- the structures a checked FIGC card drew for each option
+    inside a shared figure (2017_A q052 prints all four options in one panel)."""
+    out = collections.defaultdict(list)
+    for entry in (q.get("drawn") or {}).values():
+        if entry.get("source") != "smiles" or entry.get("status") != "drawn":
+            continue
+        singles = entry.get("species_svgs") or []
+        for n, sp in enumerate((entry.get("card") or {}).get("species") or []):
+            m = record_v3.OPTION_LABEL.match(sp.get("label") or "")
+            if m and n < len(singles) and singles[n]:
+                out[m.group(1)].append((sp.get("name") or "", singles[n]))
+    return out
+
+
 def picture_options(options):
     """True when EVERY present option is a picture placeholder rather than real text."""
     values = [(v or "").strip() for v in options.values() if (v or "").strip()]
@@ -961,7 +1580,9 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
         flags.append("answer printed with * (NTA later altered this question)")
         counts["starred"] += 1
     counts["questions"] += 1
-    counts["figures"] += len(q["figures"])
+    # The figures the card SHOWS: the agent's cuts where it made them, else the geometric crops.
+    # Counting only the geometric ones said "6 figures" on a page showing 15 figure questions.
+    counts["figures"] += len(q.get("agent_figure_images") or []) or len(q["figures"])
 
     crop = q.get("question_image")
     crop_abs = rc.pp(*CORPUS, crop) if crop else None
@@ -978,23 +1599,39 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
     # `subject_from` is shown, not just the subject: a subject read off a printed heading and
     # one guessed from the question number are not the same claim, and 2 of 10 booklets in this
     # corpus print their sections in a NON-standard order, so the guess is wrong there.
-    parts = ['<div class="q"><div class="qhead">%s<span class="qno">Q%d</span>'
-             '<span class="subj" title="%s">%s</span>%s</div>'
-             % (paper_chip, q["qno"], html.escape(subj_how), html.escape(subject_label),
-                "".join('<span class="flag">%s</span>' % html.escape(f) for f in flags)),
+    # The record's flags (record_flags) as full sentences, above everything else: a restored
+    # opening or a question the publisher itself calls broken must be seen before the question is
+    # read. `answers_differ` is left to the answers table, which already marks it.
+    sol = publisher_solution(paper_id, q["qno"]) or {}
+    warnings = [f["text"] for f in record_flags(q, answer, solved,
+                                                 [] if "error" in sol else
+                                                 sol.get("solution_stepwise") or [])
+                if f["code"] != "answers_differ"]
+    parts = ['<div class="q" id="q%03d"><div class="qhead">%s<span class="qno">Q%d</span>'
+             '<span class="subj" title="%s">%s</span>%s</div>%s'
+             % (q["qno"], paper_chip, q["qno"], html.escape(subj_how), html.escape(subject_label),
+                "".join('<span class="flag">%s</span>' % html.escape(f) for f in flags),
+                "".join('<div class="warnline">⚠ %s</div>' % html.escape(w) for w in warnings)),
              classification_html(subj, stream, br, chap_names, topic_names, chap_conf,
                                  taxonomy_gap(paper_id, q["qno"]),
                                  *mapping_reasons(paper_id, q["qno"]))]
     parts.append('<div class="pair">')
-    # LEFT: what the booklet printed
-    if crop_abs and os.path.exists(crop_abs):
-        rel = os.path.relpath(crop_abs, os.path.dirname(out_path))
-        parts.append('<div class="side"><div class="sidelabel">printed in the booklet</div>'
-                     '<img class="shot" src="%s" alt="printed question %d" loading="lazy">'
-                     '</div>' % (html.escape(rel), q["qno"]))
+    # LEFT: what the booklet printed -- the question, and under it the publisher's printed
+    # solution, so the whole printed record of the question reads top to bottom in one column.
+    left = ['<div class="side"><div class="sidelabel">printed in the booklet</div>']
+    if crop and (cdn.url_for(q, crop) or os.path.exists(crop_abs)):
+        left.append('<img class="shot" %s alt="printed question %d" loading="lazy">'
+                    % (image_attrs(q, crop, out_path, counts), q["qno"]))
     else:
-        parts.append('<div class="side"><div class="sidelabel">printed in the booklet</div>'
-                     '<p class="missing">no crop was cut for this question</p></div>')
+        left.append('<p class="missing">no crop was cut for this question</p>')
+    sol_crop = q.get("solution_image")
+    if sol_crop and (cdn.url_for(q, sol_crop) or os.path.exists(rc.pp(*CORPUS, sol_crop))):
+        left.append('<div class="sidelabel solshot">publisher&rsquo;s solution, as printed</div>'
+                    '<img class="shot" %s alt="printed solution %d" loading="lazy">'
+                    % (image_attrs(q, sol_crop, out_path, counts), q["qno"]))
+        counts["solution_shots_shown"] += 1
+    left.append("</div>")
+    parts.append("".join(left))
     # RIGHT: what we extracted
     parts.append('<div class="side"><div class="sidelabel">%s</div>'
                  % ("READ FROM THE IMAGE by b3-question-reader" if source == "agent"
@@ -1004,23 +1641,23 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
     # under-count. Built here, before the stem, because a stem with lettered parts needs them.
     figure_html = []
     for image in (q.get("agent_figure_images") or []):
-        rel = os.path.relpath(os.path.join(rc.pp(*CORPUS), image), os.path.dirname(out_path))
+        attrs = image_attrs(q, image, out_path, counts)
         figure_html.append(
-            '<img src="%s" alt="figure for question %d" loading="lazy">'
-            '<figcaption>figure reported by the agent &middot; <code>papers_v2/%s</code>'
-            '</figcaption>' % (html.escape(rel), q["qno"], html.escape(image)))
+            '<img %s alt="figure for question %d" loading="lazy">'
+            '<figcaption>printed figure (exact vector copy) &middot; <code>%s</code>'
+            '</figcaption>%s' % (attrs, q["qno"], html.escape(_posix(image)),
+                                 drawn_html(q, image, out_path, counts)))
     if not figure_html:
         for figure in q["figures"]:
             image = figure.get("image")
             if not image:
                 continue
-            rel = os.path.relpath(os.path.join(rc.pp(*CORPUS), image),
-                                  os.path.dirname(out_path))
+            attrs = image_attrs(q, image, out_path, counts)
             figure_html.append(
-                '<img src="%s" alt="%s figure for question %d" loading="lazy">'
-                '<figcaption>%s, found by geometry &middot; <code>papers_v2/%s</code>'
-                '</figcaption>' % (html.escape(rel), figure["role"], q["qno"],
-                                   figure["role"], html.escape(image)))
+                '<img %s alt="%s figure for question %d" loading="lazy">'
+                '<figcaption>%s, found by geometry &middot; <code>%s</code>'
+                '</figcaption>' % (attrs, figure["role"], q["qno"],
+                                   figure["role"], html.escape(_posix(image))))
     read_now = agent_read(paper_id, q["qno"])
     # GEOMETRIC FIGURES THE AGENT'S READ HAS SUPERSEDED. Where the agent read the question from
     # the image and says it has no figure, and every option came back as real text, a crop the
@@ -1035,6 +1672,8 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
     tables, stem_shown = "", stem_text
     if read_now:
         tables = lists_html(read_now, figure_html)
+        if read_now.get("list_i"):
+            counts["match_list_rebuilt"] += 1
     else:
         parsed = parse_match_lists(stem_text)
         if parsed:
@@ -1087,20 +1726,45 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
         for key in "1234":
             if key not in options:
                 continue
-            cls = ' class="key"' if answer == key else ""
+            cls = ' class="key"' if key in accepted(answer) else ""
             image = option_images.get(key)
             if image:
-                rel = os.path.relpath(os.path.join(rc.pp(*CORPUS), image),
-                                      os.path.dirname(out_path))
-                cell = ('<img class="optimg" src="%s" alt="option %s of question %d" '
-                        'loading="lazy">' % (html.escape(rel), key, q["qno"]))
+                attrs = image_attrs(q, image, out_path, counts)
+                # The option's printed WORDS stay with its drawing: 2017_A q080 prints a structure
+                # AND "and cine substitution reaction" -- half of what each option claims.
+                words = options.get(key) or ""
+                words = "" if PICTURE_OPTION.match(words.strip()) else words
+                cell = ('<img class="optimg" %s alt="option %s of question %d" '
+                        'loading="lazy">%s%s' % (attrs, key, q["qno"],
+                                                 drawn_html(q, image, out_path, counts),
+                                                 '<div class="opttext">%s</div>'
+                                                 % texhtml.to_html(words) if words.strip() else ""))
             else:
                 cell = texhtml.to_html(options[key]) or "<em>(blank)</em>"
             items.append("<li%s>%s</li>" % (cls, cell))
         parts.append('<ol class="opts pics">%s</ol>' % "".join(items))
         counts["option_crops_shown"] += 1
+        if option_images:
+            counts["picture_options"] += 1
         # The whole-group strip is redundant once every option is cut out of it.
         figure_html = [f for f in figure_html if "q%03d.png" % q["qno"] not in f]
+    elif options and option_structures(q) and all(
+            OPTION_PLACEHOLDER.fullmatch(v or "") for v in options.values()):
+        # Each option's own structure, cut from the drawing checked against its SMILES, with its
+        # name -- not "(1) [structure (1) - see figure]" four times.
+        drawn_opts = option_structures(q)
+        items = []
+        for key in "1234":
+            if key not in options:
+                continue
+            cls = ' class="key"' if key in accepted(answer) else ""
+            cell = "".join('<img class="optimg" %s alt="option %s of question %d" loading="lazy">'
+                           '<div class="opttext">%s</div>'
+                           % (image_attrs(q, svg, out_path, counts), key, q["qno"], html.escape(name))
+                           for name, svg in drawn_opts.get(key, [])) or texhtml.to_html(options[key])
+            items.append("<li%s>%s</li>" % (cls, cell))
+        parts.append('<ol class="opts pics">%s</ol>' % "".join(items))
+        counts["picture_options"] += 1
     elif options and picture_options(options):
         # The options ARE the picture. The figure above already shows all four panels with their
         # printed numbers, so repeating "(1) [structure diagram]" four times adds nothing.
@@ -1115,7 +1779,7 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
         for key in "1234":
             if key not in options:
                 continue
-            cls = ' class="key"' if answer == key else ""
+            cls = ' class="key"' if key in accepted(answer) else ""
             items.append("<li%s>%s</li>"
                          % (cls, texhtml.to_html(options[key]) or "<em>(blank)</em>"))
         parts.append("<ol class=\"opts\">%s</ol>" % "".join(items))
@@ -1126,6 +1790,8 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
     # publisher's answer nor any key. Agreement is evidence; a disagreement is a question worth
     # a person's time, so it is highlighted rather than reconciled. The official NTA key is
     # recorded in the CSV but not shown -- see verdict() for the measurement behind that.
+    parts.append(solutions_html(paper_id, q, options, answer, solved, confidence, out_path,
+                                counts))
     bad = "differs" in stand or stand == "solve was unsure"
     parts.append(
         '<table class="answers %s"><tr><th>printed in the booklet</th>'
@@ -1209,21 +1875,25 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
         if cards:
             parts.append('<div class="cats">%s</div>' % "".join(cards))
     if why and bad:
-        parts.append('<p class="why">solver reasoning: %s</p>' % html.escape(str(why)[:300]))
+        parts.append('<p class="why">solver reasoning: %s</p>' % texhtml.to_html(str(why)))
 
     src = q.get("source_pdf") or ""
     # Resolved INSIDE the repo. This link used to point into the owner's Downloads folder, which
     # made it dead for every other reader and printed that folder's structure to anyone who opened
     # the page. The shareable builds strip it; it now resolves for anyone who has the repo.
-    src_abs = os.path.join(rc.pp("inputs", "papers_v2_sources"), src) if src else ""
-    if src_abs and not os.path.exists(src_abs):
-        src_abs = ""
+    # RELATIVE to the page, like every local image src: an absolute file://C:\Users\... link
+    # opened only on the machine that built the page.
+    src_abs = os.path.join(rc.source_dir(), src) if src else ""
+    src_href = ""
+    if src_abs and os.path.exists(src_abs):
+        src_href = urllib.parse.quote(_posix(os.path.relpath(src_abs, os.path.dirname(
+            os.path.abspath(out_path)))))
     parts.append(
         '<div class="meta">page %d &middot; printed answer %s'
         '%s%s</div>'
         % (q["page"], html.escape(answer or "none"),
-           ' &middot; <a href="file://%s#page=%d">open source PDF at this page</a>'
-           % (html.escape(src_abs), q["page"]) if src_abs else "",
+           ' &middot; <a href="%s#page=%d">open source PDF at this page</a>'
+           % (html.escape(src_href), q["page"]) if src_href else "",
            ' &middot; <code>%s</code>' % html.escape(os.path.basename(src)) if src else ""))
     parts.append("</div></div>")      # close .side (extracted) and .pair
     parts.append("</div>")            # close .q
@@ -1248,6 +1918,7 @@ def write_html(paper, out_path):
         ("answer starred", counts["starred"]),
         ("OCR text", counts["ocr_text"]),
         ("read from the image", counts["read_by_agent"]),
+        ("images NOT yet on the CDN", counts["images_local"]),
         ("still only a text draft", counts["read_from_draft"]),
         ("stems split into lettered parts", counts["stem_with_parts"]),
         ("match-lists rebuilt as tables", counts["match_list_rebuilt"]),
@@ -1264,14 +1935,15 @@ def write_html(paper, out_path):
     ]
     head = (
         "<title>NEET %s Code %s &middot; extraction v2</title>"
-        "<style>%s</style>" % (meta["year"], meta["booklet_code"] or "NA", CSS))
+        "<style>%s%s</style>" % (meta["year"], meta["booklet_code"] or "NA", CSS, SOLUTION_CSS))
     page = (
         '%s<div class="wrap"><h1>NEET (UG) %s &middot; Code %s</h1>'
         '<div class="sub">extraction v2 from <code>%s</code> &middot; family <b>%s</b> &middot; '
         '%d pages &middot; %d chars/page &middot; rendered at %d dpi<br>'
         'Flags are shown, not hidden: this page exists to find extraction faults, so a short option '
-        'list or a missing answer is marked rather than tidied away. The text shown is the '
-        '<b>text-layer draft</b> &mdash; B3 reads the question image and is the record. '
+        'list or a missing answer is marked rather than tidied away. Text labelled <b>read from '
+        'the image</b> is b3-question-reader&rsquo;s read and is the record; anything still on the '
+        '<b>text-layer draft</b> says so on its card. '
         'Each question shows the crop cut straight from the booklet on the LEFT and what was '
         'extracted on the RIGHT, so the two can be read against each other line by line.</div>'
         '<div class="stats">%s</div>%s</div>'
@@ -1280,9 +1952,28 @@ def write_html(paper, out_path):
            "".join('<div class="stat"><b>%d</b><span>%s</span></div>' % (v, k) for k, v in stats),
            "".join(body)))
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    with open(out_path, "w", encoding="utf-8") as fh:
+    with open(out_path, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(page)
     return counts
+
+
+#: The two solution blocks. Tokens only from the page's own palette (`--rule`, `--ink2`), so they
+#: follow its light and dark themes; nothing is loaded from outside the file.
+SOLUTION_CSS = (
+    ".sol{margin:12px 0;padding:10px 12px;border:1px solid var(--rule);border-radius:6px}"
+    ".sol.pub{border-left:4px solid #b7791f}.sol.ai{border-left:4px solid #2b6cb0}"
+    ".solhead{font-weight:600;font-size:13px;display:flex;justify-content:space-between;"
+    "gap:8px;margin-bottom:6px}.solhead span{font-weight:400;color:var(--ink2)}"
+    ".steps{margin:4px 0 4px 20px;padding:0}.steps li{margin:3px 0}"
+    ".concl{margin:6px 0 0}.draftlabel{font-size:12px;color:#b7791f;margin:2px 0}"
+    ".drawn{margin:4px 0 8px;font-size:12px;color:var(--ink2)}.drawn summary{cursor:pointer}"
+    ".drawn img{display:block;max-width:min(100%,30em);height:auto;background:#fff;margin-top:4px;"
+    "border:1px dashed var(--rule);border-radius:4px;padding:4px}.drawn .bad{color:#c02a2a}"
+    ".stepfig{margin:6px 0 8px}.stepfig img{max-width:min(100%,30em);height:auto;background:#fff;"
+    "border:1px solid var(--rule);border-radius:4px;padding:4px}"
+    ".solsrc{margin-top:8px;font-size:12px;color:var(--ink2)}.solsrc summary{cursor:pointer}"
+    ".draftsol{font-size:13px;color:var(--ink2)}.solimg img{max-width:100%;height:auto;"
+    "border:1px solid var(--rule);border-radius:4px;background:#fff}")
 
 
 def write_index(summaries, out_path):
@@ -1313,15 +2004,32 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--csv", action="store_true")
     ap.add_argument("--html", action="store_true")
+    ap.add_argument("--json", action="store_true",
+                    help="exports/json/questions_v2_all.json: every record, section-11 shape")
+    ap.add_argument("--data", action="store_true",
+                    help="data/<year>/<paper_code>/questions.json + question_paper.html")
+    ap.add_argument("--allow-latex-gaps", action="store_true",
+                    help="write data/ even when the LaTeX census finds unrenderable text")
     ap.add_argument("--paper-id")
     args = ap.parse_args()
-    if not (args.csv or args.html):
-        ap.error("pass --csv and/or --html")
+    if not (args.csv or args.html or args.json or args.data):
+        ap.error("pass --csv, --html, --json and/or --data")
 
     papers = load(args.paper_id)
     if not papers:
-        print("no v2 papers found -- run scripts/extract_paper_v2.py --apply first")
+        print("no v2 papers found -- run code/extract_paper_v2.py --apply first")
         return 1
+
+    # FRESH OUTPUT. A full export replaces what it writes -- the CSV folder, the HTML folder, or both
+    # -- rather than writing over it, so a booklet dropped from the corpus does not leave its old page
+    # and CSV behind looking current. A one-booklet export replaces only that booklet's files.
+    if not args.paper_id:
+        import shutil
+        for wanted, name in ((args.csv, "csv"), (args.html, "html")):
+            folder = rc.pp(*CORPUS, "exports", name)
+            if wanted and os.path.isdir(folder):
+                shutil.rmtree(folder)
+                print("cleared %s (previous export)" % os.path.relpath(folder, rc.pp()))
 
     if args.csv:
         for paper in papers:
@@ -1334,13 +2042,48 @@ def main():
         rows = write_csv(papers, out)
         print("csv   %-52s %d rows (all booklets)" % (os.path.relpath(out, rc.pp()), rows))
 
+    if args.json:
+        records = []
+        for paper in papers:
+            records += booklet_document(paper)["questions"]
+        out = rc.pp(*CORPUS, "exports", "json", "questions_v2_all.json")
+        _write_json(out, {"schema": RECORD_SCHEMA, "questions": records})
+        print("json  %-52s %d records" % (os.path.relpath(out, rc.pp()), len(records)))
+
+    if args.data:
+        # THE LATEX GATE. A command the renderer does not know prints red, and on 2017 Code-A `\ge`
+        # shipped that way inside a printed solution because nothing stopped it. The deliverable is
+        # not written while any field would render a gap; --allow-latex-gaps writes it anyway, for a
+        # draft that is knowingly incomplete.
+        sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "checks"))
+        import latex_census
+        blocked = False
+        for paper in papers:
+            pid = "%s_%s" % (paper["meta"]["year"], paper["meta"]["booklet_code"] or "NA")
+            unknown, raw, examples = latex_census.census(pid)
+            if unknown or raw:
+                blocked = True
+                print("LATEX GATE  %s: %d unknown command(s), %d raw leak(s) -- e.g. %s"
+                      % (pid, sum(unknown.values()), sum(raw.values()),
+                         examples[next(iter(unknown or raw))]))
+        if blocked and not args.allow_latex_gaps:
+            print("data/ NOT written. Fix lib/texhtml.py (run code/checks/latex_census.py "
+                  "--paper-id <id> for the full list) or pass --allow-latex-gaps.")
+            return 1
+        for paper in papers:
+            folder, document, counts = write_data(paper)
+            print("data  %-52s %d questions, %d image(s) without a CDN link"
+                  % (os.path.relpath(folder, rc.pp()), len(document["questions"]),
+                     document["counts"]["images_without_cdn"]))
+
     if args.html:
-        summaries = []
+        summaries, local_only = [], 0
         for paper in papers:
             meta = paper["meta"]
             paper_id = "%s_%s" % (meta["year"], meta["booklet_code"] or "NA")
             out = rc.pp(*CORPUS, "exports", "html", "%s.html" % paper_id)
             counts = write_html(paper, out)
+            local_only += counts["images_local"]
             summaries.append({"paper_id": paper_id, "href": "%s.html" % paper_id,
                               "questions": counts["questions"], "figures": counts["figures"],
                               "no_answer": counts["no_answer"],
@@ -1354,6 +2097,9 @@ def main():
         write_index(summaries, index)
         print("html  %-52s index of %d booklet(s)"
               % (os.path.relpath(index, rc.pp()), len(summaries)))
+        if local_only:
+            print("WARNING  %d image(s) on these pages are LOCAL paths, not CDN links -- run "
+                  "code/upload_paper_assets.py, then export again" % local_only)
     return 0
 
 

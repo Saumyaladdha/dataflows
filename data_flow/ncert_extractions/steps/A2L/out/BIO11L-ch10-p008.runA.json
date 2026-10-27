@@ -1,0 +1,40 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2171,
+    "page_kind": "ordinary",
+    "body_text_size_px": 20.0,
+    "text_block": [0.097, 0.132, 0.875, 0.910],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.097, "x1": 0.875}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.078],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.137, 0.078, 0.37, 0.092],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.827, 0.079, 0.863, 0.093],
+     "column": "full", "size_rel": 1.2, "align": "center", "font": "serif-bold", "space_before": 0.0},
+    {"n": 1, "role": "figure", "bbox": [0.097, 0.132, 0.875, 0.408],
+     "column": "full", "size_rel": 1.0, "space_before": 0.04},
+    {"n": null, "role": "figure_caption", "bbox": [0.361, 0.422, 0.608, 0.436],
+     "column": "full", "size_rel": 0.95, "align": "center", "font": "serif", "space_before": 0.014},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.465, 0.687, 0.499],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.029},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.510, 0.687, 0.636],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.011},
+    {"n": 4, "role": "section_heading", "bbox": [0.099, 0.654, 0.274, 0.669],
+     "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00a0e0", "space_before": 0.018},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.681, 0.687, 0.770],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.012},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.778, 0.687, 0.831],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.008},
+    {"n": 7, "role": "paragraph", "bbox": [0.098, 0.839, 0.687, 0.910],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.008},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.048}
+  ],
+  "note": "Ordinary single-column recto body page. Figure 10.3 (Stages of Meiosis I) spans the full printed width on a light-blue gradient panel (fill omitted because it is a gradient, not flat); its stage labels are part of the artwork. The caption 'Figure 10.3 Stages of Meiosis I' (grey text) has no A2 block, so it is given n null. Prose column below the figure is the normal measure x 0.098-0.687. Pale green header band with grey strip (#d1d2d4) holding running header at left and folio 127 on a white tab at right. Bottom element is the full-width green foot band (reported as footer_rule) with the '2024-25' imprint. Diagonal watermark ignored. body_text_size_px approximate; size_pt omitted because page DPI is not given."
+}

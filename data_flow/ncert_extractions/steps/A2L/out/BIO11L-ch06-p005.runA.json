@@ -1,0 +1,36 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 19.0,
+    "text_block": [0.098, 0.135, 0.839, 0.909],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.685}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.083],
+     "column": "full", "size_rel": 1.0, "fill": "#e2ebb8"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.083, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d3d4"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.083, 0.370, 0.095],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif",
+     "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.815, 0.065, 0.870, 0.095],
+     "column": "full", "size_rel": 1.2, "align": "center", "font": "sans",
+     "fill": "#ffffff", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.135, 0.685, 0.294],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.040},
+    {"n": 2, "role": "figure", "bbox": [0.118, 0.295, 0.839, 0.883],
+     "column": "full", "size_rel": 1.0, "space_before": 0.001},
+    {"n": null, "role": "figure_caption", "bbox": [0.298, 0.894, 0.673, 0.909],
+     "column": "full", "size_rel": 0.9, "align": "center", "font": "serif",
+     "space_before": 0.011},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.957, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cfe08a"}
+  ],
+  "note": "Ordinary body page (recto, folio 75 in a white tab at right; running head 'Anatomy of Flowering Plants' at left). Single text column 0.098-0.685; Figure 6.4 (T.S. of stem: dicot (a) as circle plus wedge detail, monocot (b) as circle plus sector detail, all labelled) is very large and extends right beyond the text measure to x 0.839, so it is marked full. The figure's top edge abuts and slightly clips the descenders of the paragraph's last line ('grains and the layer is also referred to as the starch sheath. Pericycle is') in the page image. Caption is centred under the figure and has no A2 block, so n is null. Header is a light-green band over a thin grey strip, reported as two page_header_band elements. Footer is the green band with the '2024-25' imprint. Watermark ignored. size_pt omitted because page DPI is not given."
+}

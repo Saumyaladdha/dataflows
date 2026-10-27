@@ -86,6 +86,8 @@ def build(design_key, books, max_chapters=3, dpi=DPI):
             except SystemExit:
                 continue
             doc = pymupdf.open(layout["source_pdf"])
+            import pdf_watermark
+            pdf_watermark.strip(doc)          # furniture art never carries the watermark
             for pi, page in enumerate(layout["pages"]):
                 # The OPENER is skipped: its artwork is chapter-specific, not book furniture.
                 if pi == 0:

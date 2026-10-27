@@ -1,0 +1,172 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2182,
+  "body_text_size_px": 19.5,
+  "text_block": [
+   0.187,
+   0.136,
+   0.902,
+   0.905
+  ],
+  "fill": 0.98,
+  "page_kind": "ordinary",
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.314,
+    "x1": 0.902
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.0815
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0815,
+    1.0,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.128,
+    0.065,
+    0.185,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "center",
+   "font": "serif-bold",
+   "text_color": "#221f1f",
+   "fill": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.839,
+    0.084,
+    0.9,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "right",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.198,
+    0.136,
+    0.854,
+    0.6265
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.041
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.187,
+    0.634,
+    0.845,
+    0.661
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "size_pt": 10.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0075
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.314,
+    0.675,
+    0.902,
+    0.7875
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.014
+  },
+  {
+   "n": 3,
+   "role": "section_heading",
+   "bbox": [
+    0.315,
+    0.811,
+    0.829,
+    0.826
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "size_pt": 12.5,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.0235
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.314,
+    0.8415,
+    0.902,
+    0.905
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0155
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Verso body page, single full text column 0.314-0.902 with an empty left margin; Figure 16.5 (two-tone green panel, cortex #cfe4ad / medulla #d1e287) extends left into the margin at 0.198-0.854 and its caption at 0.187-0.845. Caption 'Figure 16.5 ...' has no A2 block so n is null. Bottom green band = footer_rule; '2024-25' stamp not reported. size_pt derived from assumed ~150 dpi render; size_rel is trusted."
+}

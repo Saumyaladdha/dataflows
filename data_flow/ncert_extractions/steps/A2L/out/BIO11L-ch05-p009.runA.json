@@ -1,0 +1,31 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 21.5,
+    "text_block": [0.098, 0.131, 0.870, 0.898],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.078], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.078, 1.0, 0.092], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.080, 0.402, 0.092], "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.062, 0.870, 0.092], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "fill": "#ffffff"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.131, 0.686, 0.352], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.039, "indent": 0.030},
+    {"n": 2, "role": "section_heading", "bbox": [0.098, 0.370, 0.351, 0.386], "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold", "space_before": 0.018},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.397, 0.686, 0.428], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.011},
+    {"n": 4, "role": "section_heading", "bbox": [0.098, 0.443, 0.230, 0.458], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-italic", "space_before": 0.015},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.466, 0.686, 0.531], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.008},
+    {"n": 6, "role": "section_heading", "bbox": [0.098, 0.546, 0.245, 0.560], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-italic", "space_before": 0.015},
+    {"n": 7, "role": "paragraph", "bbox": [0.098, 0.572, 0.686, 0.658], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.012},
+    {"n": 8, "role": "paragraph", "bbox": [0.098, 0.670, 0.686, 0.720], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.012},
+    {"n": 9, "role": "figure", "bbox": [0.102, 0.732, 0.870, 0.873], "column": "full", "size_rel": 1.0, "space_before": 0.012},
+    {"n": 10, "role": "figure_caption", "bbox": [0.379, 0.883, 0.614, 0.898], "column": "full", "size_rel": 0.95, "align": "center", "font": "serif", "space_before": 0.010},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary recto body page, single text column (0.098-0.686); the Figure 5.10 artwork extends wider than the text measure to x=0.870. Header is a pale green band (#e0ebb6) over a grey strip (#d1d2d4) carrying the small-caps running head on the left and a white tab with the folio 63 on the right; both bands reported as page_header_band. Foot is a solid green band (#cadf7f) reported as footer_rule; its centred '2024-25' imprint is not reported separately. Section heading 5.5.1 is cyan bold; 5.5.1.1/5.5.1.2 are grey bold-italic. Paragraph n=8 runs onto the next page. A diagonal 'not to be republished' watermark crosses the page and is not an element. size_pt omitted because DPI is not stated; page_kind added as the brief requests though it is not in the output schema."
+}

@@ -1,0 +1,40 @@
+{
+  "page": {
+    "page_kind": "chapter_opener",
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20,
+    "text_block": [0.101, 0.324, 0.872, 0.894],
+    "fill": 0.99,
+    "columns": [
+      {"id": "left", "x0": 0.101, "x1": 0.262},
+      {"id": "right", "x0": 0.283, "x1": 0.872}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.0, 0.0, 1.0, 0.43],
+     "column": "full", "size_rel": 1.0, "fill": "#cee187"},
+    {"n": null, "role": "qr_code", "bbox": [0.734, 0.109, 0.873, 0.219],
+     "column": "full", "size_rel": 1.0, "fill": "#ffffff"},
+    {"n": 1, "role": "chapter_title", "bbox": [0.322, 0.324, 0.515, 0.349],
+     "column": "right", "size_rel": 2.7, "align": "left", "font": "serif-bold",
+     "text_color": "#0070b8", "space_before": 0.105},
+    {"n": 2, "role": "chapter_title", "bbox": [0.322, 0.374, 0.684, 0.399],
+     "column": "right", "size_rel": 2.7, "align": "left", "font": "serif-bold",
+     "text_color": "#0070b8", "space_before": 0.025},
+    {"n": null, "role": "contents_panel", "bbox": [0.101, 0.452, 0.256, 0.723],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "text_color": "#00a8e8", "space_before": 0.053},
+    {"n": 3, "role": "paragraph", "bbox": [0.283, 0.453, 0.872, 0.499],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.054},
+    {"n": 4, "role": "paragraph", "bbox": [0.283, 0.506, 0.872, 0.627],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007},
+    {"n": 5, "role": "paragraph", "bbox": [0.283, 0.631, 0.872, 0.698],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 6, "role": "paragraph", "bbox": [0.283, 0.703, 0.872, 0.894],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.005},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.957, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Chapter-opening page, two columns: a narrow left column holding the section-contents panel (12.1-12.7, cyan italic #00a8e8 on bare paper, no panel fill) and a wider right column with the opening prose. The chapter label 'Chapter 12' and title 'Respiration in Plants' are set in large blue small caps (#0070b8) aligned with the right column's left edge; they are given column 'right' because they start at the prose column's x. The banner is a vertical GRADIENT, not a flat fill: #cee187 at the top fading through #e4eebc (y 0.20) to white by y~0.43; the reported fill is the flat top interior. No rule_bar, no page header band and no printed page number on this page. QR code sits on a white square at upper right. Footer is the broad green band #cadf7f with the '2024-25' imprint, reported as footer_rule. Diagonal watermark not reported. size_rel for the titles measured on capital/digit height (~54px vs 20px body cap height); size_pt omitted because DPI not given."
+}

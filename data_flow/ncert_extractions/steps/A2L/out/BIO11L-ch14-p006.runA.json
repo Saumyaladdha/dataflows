@@ -1,0 +1,210 @@
+{
+ "page": {
+  "width_px": 1682,
+  "height_px": 2190,
+  "page_kind": "ordinary",
+  "body_text_size_px": 20.5,
+  "text_block": [
+   0.13,
+   0.136,
+   0.913,
+   0.896
+  ],
+  "fill": 0.98,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.13,
+    "x1": 0.52
+   },
+   {
+    "id": "right",
+    "x0": 0.538,
+    "x1": 0.913
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.0836
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0836,
+    1.0,
+    0.0963
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.144,
+    0.083,
+    0.18,
+    0.0965
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "center",
+   "font": "sans",
+   "text_color": "#231f20",
+   "fill": "#ffffff",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.847,
+    0.0855,
+    0.909,
+    0.0958
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "right",
+   "font": "serif",
+   "text_color": "#231f20",
+   "fill": "#d1d2d4",
+   "space_before": 0.0
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.13,
+    0.1411,
+    0.519,
+    0.706
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "space_before": 0.0448
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.131,
+    0.7288,
+    0.513,
+    0.7543
+   ],
+   "column": "left",
+   "size_rel": 0.9,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0228
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.538,
+    0.1361,
+    0.913,
+    0.5753
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0398
+  },
+  {
+   "n": 3,
+   "role": "section_heading",
+   "bbox": [
+    0.541,
+    0.5968,
+    0.883,
+    0.6292
+   ],
+   "column": "right",
+   "size_rel": 1.1,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.0215
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.538,
+    0.6475,
+    0.913,
+    0.7342
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0183
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.537,
+    0.7447,
+    0.913,
+    0.8096
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0105
+  },
+  {
+   "n": 6,
+   "role": "paragraph",
+   "bbox": [
+    0.537,
+    0.8228,
+    0.913,
+    0.8858
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0132
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.9548,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f",
+   "space_before": 0.0
+  }
+ ],
+ "note": "Verso page set as two columns: Figure 14.2 (a) and (b) stacked in a LEFT column (x 0.130-0.519, extending into the inner/left margin) with its caption below it, and the prose in a RIGHT column (x 0.538-0.913). The figure caption has no A2 block of its own, so it is n:null (it may be carried inside block 1's figure). Block 2 continues the sentence from the previous page. Subsection heading 14.2.1 is bold serif cyan #00adef wrapping to two lines with a hanging indent. Blocks 4-6 open with bold run-in terms (5 and 6 letter-spaced). Reading order: left-column figure (as in A2's block order) then right-column text; right-column space_before for block 2 is measured from the header strip. The footer is a solid green band (#cadf7f, y 0.955-1.0) carrying the print-year mark 2024-25 centred; it is reported as footer_rule (no closer role exists) and the year mark itself is omitted as it has no allowed role. Header: pale-green band (#e0ebb6) over a grey strip (#d1d2d4) that carries the running header, with a white tab holding the folio. size_pt omitted: page DPI is not given in the input. body_text_size_px is the ascender-to-baseline height of a body line in the image's native pixels."
+}

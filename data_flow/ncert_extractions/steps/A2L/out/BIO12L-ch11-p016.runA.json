@@ -1,0 +1,110 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 19.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.07,
+   0.106,
+   0.713,
+   0.86
+  ],
+  "fill": 0.92,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.07,
+    "x1": 0.713
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    0.791,
+    0.0385
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.795,
+    0.0,
+    1.0,
+    0.098
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#745421"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.068,
+    0.0755,
+    0.293,
+    0.085
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "left",
+   "font": "sans",
+   "text_color": "#58595b"
+  },
+  {
+   "n": 1,
+   "role": "box",
+   "bbox": [
+    0.07,
+    0.1055,
+    0.713,
+    0.86
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "fill": "#fff6db",
+   "space_before": 0.02
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.716,
+    0.536,
+    0.771,
+    0.857
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.839,
+    0.785,
+    1.0,
+    0.835
+   ],
+   "column": "full",
+   "size_rel": 1.4,
+   "align": "center",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  }
+ ],
+ "note": "Ordinary recto page. Whole content is the SUMMARY box (block 1): cream fill #fff6db inside a thin yellow double border (#ffe369), centred bold heading 'SUMMARY' (~1.3x body) followed by five justified paragraphs; reported as one box element since A2 gave it as one block. A column of yellow-orange leaf ornaments (#fdc448) runs down the box's right edge at y 0.536-0.857 (decorative_image). Top-right corner furniture (brown/orange block, leaf, logo) is one decorative_image. Folio 203 is the orange tab at right with a rule beneath. 'Reprint 2026-27' stamp not reported. size_pt omitted (DPI not given)."
+}

@@ -1,0 +1,206 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2178,
+  "body_text_size_px": 20.5,
+  "text_block": [
+   0.163,
+   0.135,
+   0.803,
+   0.904
+  ],
+  "fill": 0.86,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.156,
+    "x1": 0.813
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.08
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.08,
+    1.0,
+    0.0935
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.138,
+    0.082,
+    0.346,
+    0.092
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "text_color": "#231f20"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.827,
+    0.082,
+    0.862,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.05,
+   "align": "center",
+   "font": "sans",
+   "fill": "#ffffff",
+   "text_color": "#231f20"
+  },
+  {
+   "n": 1,
+   "role": "list",
+   "bbox": [
+    0.171,
+    0.135,
+    0.789,
+    0.2365
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.015,
+   "space_before": 0.0415
+  },
+  {
+   "n": 2,
+   "role": "list",
+   "bbox": [
+    0.171,
+    0.2461,
+    0.451,
+    0.3118
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.015,
+   "space_before": 0.0096
+  },
+  {
+   "n": 3,
+   "role": "list",
+   "bbox": [
+    0.171,
+    0.3214,
+    0.568,
+    0.4279
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.015,
+   "space_before": 0.0096
+  },
+  {
+   "n": 4,
+   "role": "list",
+   "bbox": [
+    0.171,
+    0.4376,
+    0.803,
+    0.4674
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.015,
+   "space_before": 0.0097
+  },
+  {
+   "n": 5,
+   "role": "list",
+   "bbox": [
+    0.171,
+    0.477,
+    0.773,
+    0.4894
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.015,
+   "space_before": 0.0096
+  },
+  {
+   "n": 6,
+   "role": "list",
+   "bbox": [
+    0.171,
+    0.4986,
+    0.551,
+    0.6336
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.015,
+   "space_before": 0.0092
+  },
+  {
+   "n": 7,
+   "role": "list",
+   "bbox": [
+    0.163,
+    0.6442,
+    0.803,
+    0.7952
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.007,
+   "space_before": 0.0106
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Recto page (folio 229), exercises continued: seven numbered questions (blocks 1-7 = Q4-Q10, A2 kind 'question'), reported as role 'list' because the allowed roles have no 'question'. Column declared on the summary/exercise measure 0.156-0.813 (same measure as the summary on p011), not the body measure. Question numbers hang at ~0.171 (Q10's two-digit number at 0.163); sub-parts (a)-(f) are indented to ~0.196, about 0.025 further in than the question number -- they are inside each question's block, so not separate elements. Q6 (block 3) contains a two-column match table (bold 'Column I' at ~0.20, 'Column II' at ~0.43) inside its block. Content ends at ~0.795, so the page is only ~0.86 full. '2024-25' stamp not a page_number. size_pt omitted: DPI not given. Watermark ignored."
+}

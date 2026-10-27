@@ -89,7 +89,7 @@ def extract_text_in_box(pdf_path, page_num, bbox, dpi=DEFAULT_DPI, unit="px"):
         return ""
 
 
-def crop_boxes(pdf_path, jobs, dpi=DEFAULT_DPI, unit="px"):
+def crop_boxes(pdf_path, jobs, dpi=DEFAULT_DPI, unit="px", hide_xrefs=()):
     """Render MANY crops out of one PDF with a single open. Returns the list of paths written.
 
     `jobs` is an iterable of (page_num, bbox, out_path), page numbers 1-indexed, exactly as
@@ -107,6 +107,19 @@ def crop_boxes(pdf_path, jobs, dpi=DEFAULT_DPI, unit="px"):
     """
     written, skipped = [], []
     with _open(pdf_path) as doc:
+        # PAGE FURNITURE IS BLANKED BEFORE ANYTHING IS RENDERED. `hide_xrefs` are the images the
+        # caller measured as repeating on most pages (extract_paper_v2.document_furniture): the
+        # coaching watermark, a logo, a page-sized background. Every crop used to carry the pink
+        # wash -- 2017 Code-A q008's circuit crop had it across its lower half. Blanked by XREF in
+        # this in-memory copy only (the source file is never written), so a real raster figure,
+        # which is never repeated across pages, is untouched even where the watermark covers it.
+        hidden = set()
+        for xref in hide_xrefs or ():
+            for page in doc:
+                if any(item[0] == xref for item in page.get_images(full=True)):
+                    page.delete_image(xref)
+                    hidden.add(xref)
+                    break
         for page_num, bbox, out_path in jobs:
             if not out_path:
                 raise ValueError("out_path is required")

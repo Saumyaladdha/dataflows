@@ -1,0 +1,87 @@
+{
+  "page": {
+    "width_px": 1682,
+    "height_px": 2190,
+    "body_text_size_px": 17.5,
+    "page_kind": "unit_opener",
+    "text_block": [
+      0.131,
+      0.386,
+      0.914,
+      0.669
+    ],
+    "fill": 0.35,
+    "columns": [
+      {
+        "id": "left",
+        "x0": 0.131,
+        "x1": 0.401
+      },
+      {
+        "id": "right",
+        "x0": 0.43,
+        "x1": 0.914
+      }
+    ]
+  },
+  "elements": [
+    {
+      "n": null,
+      "role": "decorative_image",
+      "bbox": [
+        0.0,
+        0.57,
+        1.0,
+        1.0
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "fill": "#d2e38f",
+      "space_before": 0.57
+    },
+    {
+      "n": 1,
+      "role": "figure",
+      "bbox": [
+        0.131,
+        0.386,
+        0.401,
+        0.638
+      ],
+      "column": "left",
+      "size_rel": 1.0,
+      "space_before": 0.386
+    },
+    {
+      "n": null,
+      "role": "figure_caption",
+      "bbox": [
+        0.207,
+        0.641,
+        0.32,
+        0.669
+      ],
+      "column": "left",
+      "size_rel": 1.0,
+      "align": "center",
+      "font": "serif-bold",
+      "space_before": 0.003
+    },
+    {
+      "n": 2,
+      "role": "paragraph",
+      "bbox": [
+        0.43,
+        0.468,
+        0.914,
+        0.573
+      ],
+      "column": "right",
+      "size_rel": 1.0,
+      "align": "justify",
+      "font": "serif",
+      "space_before": 0.468
+    }
+  ],
+  "note": "Verso of the unit opener: a biography page with no header band, running head or folio, so page_kind given as unit_opener. Portrait of Alfonso Corti (n=1) in a left column with a centred caption 'Alfonso Corti (1822 - 1888)' beneath (not an A2 block, n=null; name bold, dates regular); the biography paragraph (n=2) sits in a right column, vertically centred against the portrait. Top half of the page is blank; a white-to-green vertical gradient fills the lower half (fill sampled near the bottom, #d2e38f). fill=0.35 is the content depth relative to a normal body text block (~0.10-0.92). '2024-25' is an edition stamp reported as page_number. size_pt omitted (DPI not given)."
+}

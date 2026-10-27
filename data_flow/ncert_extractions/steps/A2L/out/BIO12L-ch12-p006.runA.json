@@ -1,0 +1,171 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 20.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.299,
+   0.11,
+   0.933,
+   0.909
+  ],
+  "fill": 0.98,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.299,
+    "x1": 0.933
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.21,
+    0.0,
+    1.0,
+    0.0375
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.195,
+    0.096
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.869,
+    0.075,
+    0.933,
+    0.084
+   ],
+   "column": "full",
+   "size_rel": 0.75,
+   "align": "right",
+   "font": "sans"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.11,
+    0.933,
+    0.231
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.026,
+   "indent": 0.031
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.237,
+    0.933,
+    0.375
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.006,
+   "indent": 0.031
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.381,
+    0.933,
+    0.484
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.006,
+   "indent": 0.031
+  },
+  {
+   "n": 4,
+   "role": "figure",
+   "bbox": [
+    0.189,
+    0.506,
+    0.931,
+    0.876
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.022,
+   "fill": "#fffbd5"
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.222,
+    0.8875,
+    0.892,
+    0.909
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "center",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.0115
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0,
+    0.784,
+    0.163,
+    0.819
+   ],
+   "column": "full",
+   "size_rel": 1.4,
+   "align": "right",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.8275,
+    0.163,
+    0.834
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary verso body page, single full column (0.299-0.933). Figure 12.2 (trophic levels diagram, pale yellow panel) overhangs the column into the left margin (x0 0.189). Block 4 matched to that figure; its caption 'Figure 12.2 ...' has no separate A2 block, so the caption element has n null (A2 likely folded it into block 4). body_text_size_px measured as cap-to-baseline height of body prose (~20px at 2160px page height). size_pt omitted: page DPI not given. The 'Reprint 2026-27' stamp at the foot is not reported (not a page_number). The orange folio tab is the page_number; the thin orange line under it is the footer_rule. Diagonal NCERT watermark ignored."
+}

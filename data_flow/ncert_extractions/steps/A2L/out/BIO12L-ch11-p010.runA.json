@@ -1,0 +1,26 @@
+{
+  "page": {
+    "width_px": 1580,
+    "height_px": 2160,
+    "body_text_size_px": 17.5,
+    "text_block": [0.067, 0.109, 0.70, 0.906],
+    "fill": 0.99,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.067, "x1": 0.70}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 0.791, 0.038], "column": "full", "size_rel": 1.0, "fill": "#4c7436", "space_before": 0.0},
+    {"n": null, "role": "decorative_image", "bbox": [0.80, 0.0, 1.0, 0.097], "column": "full", "size_rel": 1.0, "fill": "#745421", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.068, 0.075, 0.293, 0.085], "column": "full", "size_rel": 0.8, "align": "left", "font": "sans", "text_color": "#555555", "space_before": 0.037},
+    {"n": 1, "role": "table_caption", "bbox": [0.195, 0.109, 0.569, 0.124], "column": "full", "size_rel": 1.05, "align": "center", "font": "serif-bold", "space_before": 0.024},
+    {"n": 2, "role": "table", "bbox": [0.067, 0.129, 0.70, 0.318], "column": "full", "size_rel": 0.95, "align": "center", "font": "serif", "fill": "#fedab4", "space_before": 0.005},
+    {"n": 3, "role": "paragraph", "bbox": [0.067, 0.333, 0.70, 0.492], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.015},
+    {"n": 4, "role": "list", "bbox": [0.087, 0.500, 0.70, 0.663], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.020, "space_before": 0.008},
+    {"n": 5, "role": "paragraph", "bbox": [0.12, 0.667, 0.70, 0.906], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.053, "space_before": 0.004},
+    {"n": null, "role": "page_number", "bbox": [0.84, 0.785, 1.0, 0.822], "column": "full", "size_rel": 1.3, "align": "center", "font": "sans", "fill": "#f7931d", "text_color": "#ffffff"},
+    {"n": null, "role": "footer_rule", "bbox": [0.84, 0.827, 1.0, 0.833], "column": "full", "size_rel": 1.0, "fill": "#f7931d"}
+  ],
+  "note": "Recto body page (page_kind ordinary), single full column 0.067-0.70 with empty right margin. Table 11.1 is set on a uniform peach fill (#fedab4, header row and body rows the same) with white cell rules and an orange outer border; column 3 entries are italic. n5 continues the (i) Predation item, so it is inset with the list text. Brown/orange leaf corner decoration top-right reported as decorative_image. The orange folio tab '197' is the page_number; thin orange line under it is footer_rule. 'Reprint 2026-27' stamp not reported as page_number. size_pt not given (DPI not stated). Diagonal NCERT watermark ignored."
+}

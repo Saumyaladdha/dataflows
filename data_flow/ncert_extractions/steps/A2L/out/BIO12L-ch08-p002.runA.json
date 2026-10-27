@@ -1,0 +1,44 @@
+{
+  "page": {
+    "width_px": 1580,
+    "height_px": 2160,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.099, 0.107, 0.943, 0.909],
+    "fill": 0.95,
+    "columns": [
+      {"id": "left", "x0": 0.099, "x1": 0.40},
+      {"id": "right", "x0": 0.489, "x1": 0.943}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.0, 0.19, 0.0935],
+     "column": "full", "size_rel": 1.0, "fill": "#745421", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.2095, 0.0, 1.0, 0.0384],
+     "column": "full", "size_rel": 1.0, "fill": "#4c7436", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.8639, 0.0769, 0.9323, 0.0856],
+     "column": "right", "size_rel": 0.95, "align": "right", "font": "sans",
+     "text_color": "#6d6e71", "space_before": 0.0385},
+    {"n": 1, "role": "figure", "bbox": [0.1025, 0.1074, 0.38, 0.4731],
+     "column": "left", "size_rel": 1.0, "space_before": 0.0218},
+    {"n": 2, "role": "figure_caption", "bbox": [0.0994, 0.4912, 0.3981, 0.5736],
+     "column": "left", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "fill": "#fef1e2", "space_before": 0.0181},
+    {"n": 3, "role": "figure", "bbox": [0.489, 0.1075, 0.932, 0.4925],
+     "column": "right", "size_rel": 1.0, "space_before": 0.0219},
+    {"n": 4, "role": "figure_caption", "bbox": [0.4905, 0.5009, 0.931, 0.5796],
+     "column": "right", "size_rel": 0.9, "align": "justify", "font": "serif",
+     "fill": "#fef1e2", "space_before": 0.0084},
+    {"n": 5, "role": "figure", "bbox": [0.167, 0.614, 0.943, 0.849],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0344},
+    {"n": 6, "role": "figure_caption", "bbox": [0.2424, 0.8718, 0.7905, 0.9088],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif",
+     "fill": "#fef1e2", "space_before": 0.0228},
+    {"n": null, "role": "page_number", "bbox": [0.0, 0.7847, 0.162, 0.8255],
+     "column": "full", "size_rel": 1.3, "align": "right", "font": "sans",
+     "fill": "#f7931d", "text_color": "#ffffff"},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.8287, 0.162, 0.8347],
+     "column": "full", "size_rel": 1.0, "fill": "#f7931d"}
+  ],
+  "note": "Ordinary verso body page (folio 150) carrying only figures. body_text_size_px taken from the same chapter's body prose (cap height ~20 px at this render), because this page has no body prose. Top: dark green page_header_band #4c7436 (x>=0.2095, y 0-0.0384), with a brown #745421 block, an orange #f3921e strip and the leaf/figure logo at top left reported as one decorative_image. Running header 'BIOLOGY' at top right. Upper half is two columns: Figure 8.1 (a, b, c stacked) with its caption box on the left, Figure 8.2 (a, b side by side above c) with its caption box on the right; Figure 8.3 (a, b) and its caption run across the full width below. Caption panels are cream #fef1e2. The page number '150' is white on an orange #f7931d tab at the left margin (y 0.785-0.826) with a thin orange rule under it reported as footer_rule. The 'Reprint 2026-27' stamp at the foot (y~0.974) is not the folio and is left out. size_pt omitted (DPI not given); size_rel is the measured value. Figure bboxes include their (a)/(b)/(c) labels and leader-line labels."
+}

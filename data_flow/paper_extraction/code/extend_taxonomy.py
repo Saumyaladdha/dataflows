@@ -39,8 +39,8 @@ import re
 
 import runner_core as rc
 
-INDEX = ("papers_v2", "mappings", "chapter_index.json")
-OUT = ("papers_v2", "mappings", "taxonomy_additions.json")
+INDEX = rc.mappings() + ("chapter_index.json",)
+OUT = rc.mappings() + ("taxonomy_additions.json",)
 
 SUBJECT_PREFIX = {"physics": "PHY", "chemistry": "CHE", "biology": "BIO"}
 #: Words that carry no identity in a chapter title, so the code is built from the words that do.
@@ -159,7 +159,7 @@ def main():
     # page can never disagree about which subject a question is.
     subject_by_item = {}
     import csv
-    for path in glob.glob(rc.pp("papers_v2", "exports", "csv", "*.csv")):
+    for path in glob.glob(rc.pp(*rc.corpus(), "exports", "csv", "*.csv")):
         if "questions_v2" in os.path.basename(path):
             continue
         with open(path, encoding="utf-8") as fh:
@@ -167,7 +167,41 @@ def main():
                 item = "%s#q%03d" % (row["paper_id"], int(row["qno"]))
                 subject_by_item[item] = (row["subject"] or "").lower()
 
-    chapters, topics = collect(lambda item: subject_by_item.get(item, ""))
+    def subject_of(item):
+        """The CSV's subject, else QSUBJ's confirmed subject, else the booklet's own -- so a run
+        with no CSV export on disk does not file every proposal under an empty subject."""
+        if subject_by_item.get(item):
+            return subject_by_item[item]
+        paper_id, qno = item.split("#q")
+        path = rc.pp("steps", "QSUBJ", "out", "%s__q%s.runA.json" % (paper_id, qno))
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as fh:
+                confirmed = json.load(fh).get("subject") or ""
+            if confirmed and confirmed != "unsure":
+                return confirmed.lower()
+        paper = rc.pp(*rc.corpus(), "papers", "%s.json" % paper_id)
+        if os.path.exists(paper):
+            with open(paper, encoding="utf-8") as fh:
+                for question in json.load(fh)["questions"]:
+                    if "%03d" % question["qno"] == qno:
+                        return (question.get("subject") or "").lower()
+        return ""
+
+    chapters, topics = collect(subject_of)
+
+    # THE FILE IS EXTENDED, NEVER REBUILT. It holds additions minted from agent proposals that may
+    # live in another checkout -- the owner's copy carried 15 chapters and 64 topics, and a rebuild
+    # from this checkout's steps/ alone wiped all of them to 0. So the existing rows are loaded first,
+    # their codes are reserved before anything new is minted, and every new proposal is folded in.
+    previous = {}
+    if os.path.exists(rc.pp(*OUT)):
+        with open(rc.pp(*OUT), encoding="utf-8") as fh:
+            previous = json.load(fh)
+    kept_chapters = list(previous.get("chapters") or [])
+    kept_topics = list(previous.get("topics_in_existing_chapters") or [])
+    for chapter in kept_chapters:
+        if chapter.get("chapter_code"):
+            taken.add(chapter["chapter_code"])
 
     def merge(counter, key_at):
         """Fold proposals whose canonical form agrees, keeping the longest spelling as the label.
@@ -224,25 +258,61 @@ def main():
                                                            slug(chapter["chapter"])),
              "topic": "Unspecified Topic", "added_locally": True}]
 
+    def fold(rows, row, key):
+        """Add `row`, or merge its askers into the row already there. True when it is new."""
+        for old in rows:
+            if key(old) == key(row):
+                old["asked_for_by"] = sorted(set(old.get("asked_for_by") or [])
+                                             | set(row["asked_for_by"]))
+                old["question_count"] = len(old["asked_for_by"])
+                return False
+        rows.append(row)
+        return True
+
+    chapter_key = lambda r: (r["subject"], canonical(r["chapter"]))  # noqa: E731
+    topic_key = lambda r: (r["subject"], canonical(r["chapter"]), canonical(r["topic"]))  # noqa: E731
+    added_chapters = [c for c in added_chapters if fold(kept_chapters, c, chapter_key)]
+    # A topic wanted inside a LOCALLY ADDED chapter goes into that chapter's own `topics` list --
+    # those chapters are not in the scan, so there is no scan chapter to append it to. Measured on
+    # 2017 Code-A: 8 of 9 gaps (Water Potential, Nitrogen Fixation, Air Pollution ...) sat in such
+    # chapters, and the first version of this merge dropped all 8 without a word.
+    into_local, new_topics = [], []
+    for topic in added_topics:
+        home = next((c for c in kept_chapters if c["subject"] == topic["subject"]
+                     and canonical(c["chapter"]) == canonical(topic["chapter"])), None)
+        if home is None:
+            new_topics.append(topic)
+            continue
+        own = home.setdefault("topics", [])
+        match = next((t for t in own if canonical(t["topic"]) == canonical(topic["topic"])), None)
+        if match is None:
+            own.append({"topic_id": topic["topic_id"], "topic": topic["topic"], "added_locally": True,
+                        "asked_for_by": topic["asked_for_by"],
+                        "question_count": topic["question_count"]})
+            into_local.append(topic)
+        else:
+            match["asked_for_by"] = sorted(set(match.get("asked_for_by") or [])
+                                           | set(topic["asked_for_by"]))
+            match["question_count"] = len(match["asked_for_by"])
+    added_topics = [t for t in new_topics if fold(kept_topics, t, topic_key)] + into_local
+
     payload = {
         "source": "agent proposals in steps/QCHAP/out and steps/QTOPIC/out",
-        "merged_on_top_of": "papers_v2/mappings/chapter_index.json",
+        "merged_on_top_of": "chapter_index.json",
         "warning": ("These rows are LOCAL. They are not in ExamChapterTopicMappings. If the upstream "
                     "table later adds its own version of one, the codes will differ and the local "
                     "row must be retired rather than kept alongside."),
-        "chapters": added_chapters,
-        "topics_in_existing_chapters": [t for t in added_topics
-                                        if not any(c["chapter"].lower() == t["chapter"].lower()
-                                                   for c in added_chapters)],
+        "chapters": kept_chapters,
+        "topics_in_existing_chapters": kept_topics,
     }
 
     print("chapters to add: %d" % len(added_chapters))
     for c in added_chapters:
         print("  %-9s %-14s %-48s wanted by %d" % (c["subject"], c["chapter_code"],
                                                   c["chapter"], c["question_count"]))
-    print("topics to add inside existing chapters: %d"
-          % len(payload["topics_in_existing_chapters"]))
-    for t in payload["topics_in_existing_chapters"]:
+    print("topics to add inside existing chapters: %d  (file then holds %d chapters, %d topics)"
+          % (len(added_topics), len(kept_chapters), len(kept_topics)))
+    for t in added_topics:
         print("  %-30s <- %-44s wanted by %d" % (t["chapter"][:30], t["topic"][:44],
                                                  t["question_count"]))
     for line in skipped:

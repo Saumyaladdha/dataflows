@@ -1,53 +1,94 @@
 {
-  "blocks": [
-    {
-      "n": 1,
-      "kind": "list",
-      "text": "Where\tN = Population density at time t\nr = Intrinsic rate of natural increase\nK = Carrying capacity",
-      "continues_from_previous": false
-    },
-    {
-      "n": 2,
-      "kind": "paragraph",
-      "text": "Since resources for growth for most animal populations are finite and become limiting sooner or later, the logistic growth model is considered a more realistic one."
-    },
-    {
-      "n": 3,
-      "kind": "paragraph",
-      "text": "Gather from Government Census data the population figures for India for the last 100 years, plot them and check which growth pattern is evident."
-    },
-    {
-      "n": 4,
-      "kind": "heading",
-      "text": "11.1.3 Life History Variation"
-    },
-    {
-      "n": 5,
-      "kind": "paragraph",
-      "text": "Populations evolve to maximise their reproductive  fitness, also called Darwinian fitness (high r value), in the habitat in which they live.  Under a particular set of selection pressures, organisms evolve towards the most efficient reproductive strategy. Some organisms breed only once in their lifetime (Pacific salmon fish, bamboo) while others breed many times during their lifetime (most birds and mammals). Some produce a large number of small-sized offspring (Oysters, pelagic fishes) while others produce a small number of large-sized offspring (birds, mammals).  So, which is desirable for maximising fitness?  Ecologists suggest that life history traits of organisms have evolved in relation to the constraints imposed by the abiotic and biotic components of the habitat in which they live. Evolution of life history traits in different species is currently an important area of research being conducted by ecologists."
-    },
-    {
-      "n": 6,
-      "kind": "heading",
-      "text": "11.1.4 Population Interactions"
-    },
-    {
-      "n": 7,
-      "kind": "paragraph",
-      "text": "Can you think of any natural habitat on earth that is inhabited just by a single species?  There is no such habitat and such a situation is even inconceivable.  For any species, the minimal requirement is one more species on which it can feed.  Even a plant species, which makes its own food, cannot survive alone; it needs soil microbes to break down the organic matter in soil and return the inorganic nutrients for absorption. And then, how will the plant manage pollination without an animal agent?  It is obvious that in nature, animals, plants and microbes do not and cannot live in isolation but interact in various ways to form a biological community.  Even in minimal communities, many interactive linkages exist, although all may not be readily apparent."
-    },
-    {
-      "n": 8,
-      "kind": "paragraph",
-      "text": "Interspecific interactions arise from the interaction of populations of two different species. They could be beneficial, detrimental or neutral (neither harm nor benefit) to one of the species or both. Assigning a ‘+’ sign for beneficial interaction, ‘-’ sign for detrimental and 0 for neutral interaction, let us look at all the possible outcomes of interspecific interactions (Table11.1)."
-    }
-  ],
-  "first_block_continues_from_previous": false,
-  "last_block_continues_on_next": false,
-  "running_header_footer_removed": [
-    "BIOLOGY",
-    "196",
-    "Reprint 2026-27"
-  ],
-  "note": "Page 6 ended with the logistic display equation; this page opens with the equation's 'Where' symbol list, which is a fresh block rather than a mid-sentence continuation, so first_block_continues_from_previous is false. Page ends on a complete sentence."
+ "blocks": [
+  {
+   "n": 1,
+   "kind": "paragraph",
+   "text": "Growth Models : Does the growth of a population with time show any specific and predictable pattern? We have been concerned about unbridled human population growth and problems created by it in our country and it is therefore natural for us to be curious if different animal populations in nature behave the same way or show some restraints on growth. Perhaps we can learn a lesson or two from nature on how to control population growth.",
+   "continues_from_previous": false
+  },
+  {
+   "n": 2,
+   "kind": "list",
+   "text": "(i) Exponential growth: Resource (food and space) availability is obviously essential for the unimpeded growth of a population. Ideally, when resources in the habitat are unlimited, each species has the ability to realise fully its innate potential to grow in number, as Darwin observed while developing his theory of natural selection. Then the population grows in an exponential or geometric fashion. If in a population of size N, the birth rates (not total number but per capita births) are represented as b and death rates (again, per capita death rates) as d, then the increase or decrease in N during a unit time period  t  (dN/dt) will be"
+  },
+  {
+   "n": 3,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    670,
+    890,
+    1015,
+    995
+   ],
+   "text": ""
+  },
+  {
+   "n": 4,
+   "kind": "figure",
+   "needs_special": true,
+   "bbox": [
+    160,
+    1013,
+    760,
+    1435
+   ],
+   "text": ""
+  },
+  {
+   "n": 5,
+   "kind": "paragraph",
+   "text": "Figure 11.3 Population growth curve\na when responses are not limiting the growth, plot is exponential,\nb when responses are limiting the growth, plot is logistic,\nK is carrying capacity"
+  },
+  {
+   "n": 6,
+   "kind": "paragraph",
+   "text": "The r in this equation is called the ‘intrinsic rate of natural increase’ and is a very important parameter chosen for assessing impacts of any biotic or abiotic factor on population growth."
+  },
+  {
+   "n": 7,
+   "kind": "paragraph",
+   "text": "To give you some idea about the magnitude of r values, for the Norway rat the r is 0.015, and for the flour beetle it is 0.12.  In 1981, the r value for human population in India was 0.0205.  Find out what the current r value is.  For calculating it, you need to know the birth rates and death rates."
+  },
+  {
+   "n": 8,
+   "kind": "paragraph",
+   "text": "The above equation describes the exponential or geometric growth pattern of a population (Figure 11.3) and results in a J-shaped curve when we plot N in relation to time. If you are familiar with basic calculus, you can derive the integral form of the exponential growth equation as"
+  },
+  {
+   "n": 9,
+   "kind": "equation",
+   "needs_special": true,
+   "bbox": [
+    870,
+    1630,
+    1030,
+    1672
+   ],
+   "text": ""
+  },
+  {
+   "n": 10,
+   "kind": "paragraph",
+   "text": "where"
+  },
+  {
+   "n": 11,
+   "kind": "list",
+   "text": "Nt = Population density after time t\nNo = Population density at time zero\nr = intrinsic rate of natural increase\ne = the base of natural logarithms (2.71828)"
+  },
+  {
+   "n": 12,
+   "kind": "paragraph",
+   "text": "Any species growing exponentially under unlimited resource conditions can reach enormous population densities in a short time."
+  }
+ ],
+ "first_block_continues_from_previous": false,
+ "last_block_continues_on_next": false,
+ "running_header_footer_removed": [
+  "BIOLOGY",
+  "194",
+  "Reprint 2026-27"
+ ],
+ "note": "Page 4 ended on a complete sentence and this page opens the new 'Growth Models' run-in heading paragraph, so no continuation in. Page ends on a complete sentence. Three-line display equation block (dN/dt = (b – d) × N / Let (b–d) = r, then / dN/dt = rN) and the integral-form equation marked needs_special; Figure 11.3 graph marked needs_special with its caption kept as text. Left column figure placed before the right-column prose per left-column-first ordering."
 }

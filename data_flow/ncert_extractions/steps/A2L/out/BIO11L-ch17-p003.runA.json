@@ -1,0 +1,26 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 18.0,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.097, 0.686, 0.905],
+    "fill": 1.0,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.080], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.080, 1.0, 0.094], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.081, 0.346, 0.094], "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.815, 0.064, 0.870, 0.094], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.097, 0.686, 0.199], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.029, "space_before": 0.003},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.202, 0.686, 0.292], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.029, "space_before": 0.003},
+    {"n": 3, "role": "figure", "bbox": [0.211, 0.330, 0.745, 0.640], "column": "full", "size_rel": 1.0, "space_before": 0.038},
+    {"n": null, "role": "figure_caption", "bbox": [0.156, 0.647, 0.814, 0.675], "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.007},
+    {"n": 4, "role": "paragraph", "bbox": [0.098, 0.705, 0.686, 0.905], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.030},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary recto body page, single column at the left (empty right margin x 0.69-1.0). Header: pale green top band (#e0ebb6) over a grey strip (#d1d2d4), both page_header_band; running head 'LOCOMOTION AND MOVEMENT' (small caps) at left, folio '219' in a white rounded tab at right. Figure 17.1 (muscle cross-section with labels) extends right past the text column into the margin, so its bbox includes its labels. The caption 'Figure 17.1 Diagrammatic cross sectional view...' has no A2 block of its own on this page, so n is null. Block 4 continues the sentence broken before the figure. Page foot is a solid green band (#cadf7f) reported as footer_rule; the '2024-25' reprint stamp is not a page number and is not reported. Watermark ignored. size_pt not given (DPI not stated). page_kind is an extra field."
+}

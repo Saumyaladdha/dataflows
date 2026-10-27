@@ -1,0 +1,30 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "page_kind": "ordinary",
+    "body_text_size_px": 20.0,
+    "text_block": [0.098, 0.1347, 0.686, 0.909],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0805], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.0805, 0.393, 0.0933], "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.815, 0.064, 0.868, 0.0933], "column": "full", "size_rel": 1.05, "align": "center", "font": "sans", "fill": "#ffffff"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.1347, 0.685, 0.2336], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0414},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.2382, 0.686, 0.3715], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0046},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.3761, 0.685, 0.4579], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0046},
+    {"n": 4, "role": "equation", "bbox": [0.098, 0.4676, 0.685, 0.4979], "column": "full", "size_rel": 1.0, "align": "center", "font": "serif", "fill": "#fffac1", "space_before": 0.0097},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.5099, 0.685, 0.5398], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.012},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.5439, 0.685, 0.6432], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0041},
+    {"n": 7, "role": "equation", "bbox": [0.098, 0.6515, 0.685, 0.6841], "column": "full", "size_rel": 1.0, "align": "center", "font": "serif", "fill": "#fffac1", "space_before": 0.0083},
+    {"n": 8, "role": "paragraph", "bbox": [0.098, 0.6952, 0.685, 0.8285], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0111},
+    {"n": 9, "role": "equation", "bbox": [0.098, 0.8391, 0.685, 0.8694], "column": "full", "size_rel": 1.0, "align": "center", "font": "serif", "fill": "#fffac1", "space_before": 0.0106},
+    {"n": 10, "role": "paragraph", "bbox": [0.098, 0.8791, 0.685, 0.909], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0097},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9577, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary recto body page, single full column at x 0.098-0.686 with an empty right margin. Header: pale green band #e0ebb6 to y 0.0805, then a grey strip #d1d2d4 (y 0.0805-0.0933) carrying the small-caps running header on the left; the page number sits in a white tab cut into the band at the right. The three equations are each set centred in a pale yellow #fffac1 box spanning the column. Foot: a green band #cadf7f (reported as footer_rule, the closest role) carrying the year label '2024-25' centred at y 0.955-0.963, which has no allowed role and is not listed as an element. A diagonal light-grey watermark crosses the page and is ignored. body_text_size_px is the measured cap-to-baseline height of a body line (line pitch about 37px). size_pt omitted because the render DPI is not given. page_kind is an extra field."
+}

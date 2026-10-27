@@ -1,0 +1,38 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20,
+    "text_block": [0.187, 0.135, 0.842, 0.903],
+    "fill": 0.47,
+    "columns": [
+      {"id": "full", "x0": 0.187, "x1": 0.842}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.080],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.080, 1.0, 0.094],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.144, 0.081, 0.178, 0.093],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.081, 0.900, 0.093],
+     "column": "full", "size_rel": 0.9, "align": "right", "font": "serif", "text_color": "#231f20"},
+    {"n": 1, "role": "list", "bbox": [0.187, 0.135, 0.842, 0.166],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.041},
+    {"n": 2, "role": "list", "bbox": [0.187, 0.175, 0.842, 0.223],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.009},
+    {"n": 3, "role": "list", "bbox": [0.187, 0.233, 0.842, 0.262],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.010},
+    {"n": 4, "role": "list", "bbox": [0.187, 0.272, 0.842, 0.320],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.010},
+    {"n": 5, "role": "list", "bbox": [0.187, 0.330, 0.842, 0.417],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.010},
+    {"n": 6, "role": "list", "bbox": [0.187, 0.427, 0.842, 0.497],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "space_before": 0.010},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.957, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary verso body page, single full column; content ends just under half way down the text block (fill 0.47), rest of the page blank. Header: pale green band #e0ebb6 over grey strip #d1d2d4; page number in a white rounded tab at the LEFT (tab x 0.128-0.184), small-caps running header 'Biology' at the right. Footer is the broad green band #cadf7f with the '2024-25' imprint, reported as footer_rule. Exercise questions 4-9 reported as role 'list' (no 'question' role exists). Numbers hang at x 0.187; question text and the (a)/(b)/(c) sub-parts of questions 8 and 9 start at x~0.217, i.e. indent ~0.030 page width from the column edge; the sub-parts are inside their question's element. Diagonal watermark not reported. size_pt omitted: DPI not given."
+}

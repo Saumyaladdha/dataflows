@@ -1,0 +1,31 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 21,
+    "page_kind": "ordinary",
+    "text_block": [0.125, 0.131, 0.902, 0.897],
+    "fill": 0.99,
+    "columns": [
+      {"id": "full", "x0": 0.313, "x1": 0.902},
+      {"id": "left", "x0": 0.125, "x1": 0.512},
+      {"id": "right", "x0": 0.530, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.065, 0.185, 0.095], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": null, "role": "running_header", "bbox": [0.0, 0.082, 1.0, 0.095], "column": "full", "size_rel": 0.9, "align": "right", "font": "serif", "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": 1, "role": "figure", "bbox": [0.138, 0.131, 0.512, 0.364], "column": "left", "size_rel": 1.0, "space_before": 0.036},
+    {"n": null, "role": "figure_caption", "bbox": [0.125, 0.369, 0.507, 0.443], "column": "left", "size_rel": 0.95, "align": "left", "font": "serif", "space_before": 0.005},
+    {"n": 2, "role": "paragraph", "bbox": [0.530, 0.134, 0.902, 0.271], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.039, "indent": 0.029},
+    {"n": 3, "role": "section_heading", "bbox": [0.531, 0.284, 0.721, 0.297], "column": "right", "size_rel": 1.0, "align": "left", "font": "serif-italic", "text_color": "#6d6e71", "space_before": 0.013},
+    {"n": 4, "role": "paragraph", "bbox": [0.313, 0.311, 0.902, 0.582], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.014},
+    {"n": 5, "role": "paragraph", "bbox": [0.313, 0.590, 0.902, 0.642], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.008, "indent": 0.030},
+    {"n": 6, "role": "paragraph", "bbox": [0.313, 0.649, 0.902, 0.720], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007, "indent": 0.030},
+    {"n": 7, "role": "section_heading", "bbox": [0.315, 0.735, 0.491, 0.750], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-italic", "text_color": "#6d6e71", "space_before": 0.015},
+    {"n": 8, "role": "paragraph", "bbox": [0.313, 0.762, 0.902, 0.897], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.012},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 0.8, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary verso body page (folio 176 tab at left, running head at right). Main measure is 0.313-0.902 ('full'); Figure 13.11 (two plants plus enlarged apical bud) intrudes from the left margin into the measure, x 0.138-0.512, with its caption below it (0.125-0.507), and text wraps beside it in a narrow 'right' column 0.530-0.902 down to y~0.462. Block 2 and heading block 3 sit wholly in that narrow column. Block 4 starts in the narrow column (y 0.311-0.462) and continues at full measure from y~0.464; its bbox is the union, so its upper-left part overlaps the figure caption region. The caption has no A2 block (n null); A2's figure block n=1 is matched to the artwork. Grey italic sub-subheadings (#6d6e71) for 13.4.3.2 and 13.4.3.3. Footer is a solid green band (#cadf7f) with the year imprint. Watermark not reported. size_pt omitted because page DPI is not known."
+}

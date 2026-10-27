@@ -1,0 +1,215 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2178,
+  "body_text_size_px": 20.5,
+  "text_block": [
+   0.098,
+   0.133,
+   0.871,
+   0.904
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.098,
+    "x1": 0.47
+   },
+   {
+    "id": "right",
+    "x0": 0.47,
+    "x1": 0.871
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.08
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.08,
+    1.0,
+    0.0935
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.138,
+    0.082,
+    0.346,
+    0.092
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "text_color": "#231f20"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.827,
+    0.082,
+    0.862,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.05,
+   "align": "center",
+   "font": "sans",
+   "fill": "#ffffff",
+   "text_color": "#231f20"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.1345,
+    0.47,
+    0.1657
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.041
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.1708,
+    0.47,
+    0.4949
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0051
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.5037,
+    0.47,
+    0.831
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0088
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.8365,
+    0.47,
+    0.9036
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0055
+  },
+  {
+   "n": 5,
+   "role": "figure",
+   "bbox": [
+    0.495,
+    0.1331,
+    0.871,
+    0.4504
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "space_before": 0.0396
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.495,
+    0.4715,
+    0.871,
+    0.483
+   ],
+   "column": "right",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "space_before": 0.0211
+  },
+  {
+   "n": 6,
+   "role": "figure",
+   "bbox": [
+    0.469,
+    0.5941,
+    0.867,
+    0.8581
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "space_before": 0.1111
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.574,
+    0.8728,
+    0.817,
+    0.8843
+   ],
+   "column": "right",
+   "size_rel": 0.95,
+   "align": "center",
+   "font": "serif",
+   "space_before": 0.0147
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Recto body page (folio 225). Two columns: running prose in a narrow LEFT column (0.098-0.470) continuing from the previous page (blocks 1-4), figures stacked in the RIGHT column. Block 5 = Figure 17.7 (vertebral column), block 6 = Figure 17.8 (rib cage); their captions are not A2 blocks so they carry n:null (caption label 'Figure 17.x' is bold). From y~0.56 down the left column's right edge steps in to ~0.453 where the rib-cage figure's left labels ('True ribs', 'False ribs', 'Floating ribs') intrude; bboxes give the outer extent. body_text_size_px is the ascender-to-baseline height of body lines (~21px; 20.5 used). Header: light green band #e0ebb6 over a grey strip #d1d2d4 carrying the small-caps running head at left and the bold folio on a white rounded tab at right. The '2024-25' reprint stamp on the green footer band is not reported as page_number. text_block depth 0.133-0.904 measured on this full page. size_pt omitted: page DPI not given in the input. Watermark 'NCERT not to be republished' ignored."
+}

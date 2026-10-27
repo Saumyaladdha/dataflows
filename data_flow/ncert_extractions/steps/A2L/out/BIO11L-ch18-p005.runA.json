@@ -1,0 +1,168 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2182,
+  "body_text_size_px": 20.0,
+  "text_block": [
+   0.282,
+   0.137,
+   0.902,
+   0.9015
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.312,
+    "x1": 0.902
+   }
+  ],
+  "page_kind": "ordinary"
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.0834
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0839,
+    1.0,
+    0.0962
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.143,
+    0.0862,
+    0.178,
+    0.0958
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "center",
+   "font": "serif-bold",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.838,
+    0.0862,
+    0.899,
+    0.0958
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "right",
+   "font": "serif",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": 1,
+   "role": "section_heading",
+   "bbox": [
+    0.315,
+    0.137,
+    0.66,
+    0.1512
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.0408
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.312,
+    0.1641,
+    0.902,
+    0.3731
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0129
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.312,
+    0.3776,
+    0.902,
+    0.5335
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0045
+  },
+  {
+   "n": 4,
+   "role": "figure",
+   "bbox": [
+    0.282,
+    0.5706,
+    0.809,
+    0.8726
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.0371
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.284,
+    0.89,
+    0.745,
+    0.9015
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "left",
+   "font": "serif",
+   "space_before": 0.0174
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.9583,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Verso body page, single full column (x 0.312-0.902; wide blank left margin). Figure 18.3 is a boxed diagram with labels to its right, starting left of the text column at x 0.282. Caption 'Figure 18.3 ...' is not an A2 block, so n null. Paragraph n3 opens with a first-line indent (~0.028). Header: light-green band #e0ebb6 (y 0-0.083) over a grey strip #d1d2d4 (y 0.084-0.096), both reported as page_header_band; the folio sits in a white tab notched into the green band. The thick yellow-green band at the foot (#cadf7f, y 0.958-1.0) is reported as footer_rule; the '2024-25' reprint stamp printed on it is NOT the page number and is not reported as an element. The diagonal 'NCERT not to be republished' watermark is ignored. body_text_size_px is cap-to-baseline height of body serif (line pitch ~39px). size_pt omitted: DPI not given. page_kind: ordinary body page."
+}

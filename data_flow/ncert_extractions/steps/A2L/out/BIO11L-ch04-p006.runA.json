@@ -1,0 +1,32 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 20.0,
+    "text_block": [0.127, 0.132, 0.902, 0.904],
+    "fill": 0.97,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "left", "x0": 0.127, "x1": 0.360},
+      {"id": "full", "x0": 0.397, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.082, 1.0, 0.095], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.142, 0.083, 0.166, 0.095], "column": "left", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.083, 0.900, 0.095], "column": "full", "size_rel": 0.9, "align": "right", "font": "serif", "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": 1, "role": "figure", "bbox": [0.127, 0.134, 0.360, 0.448], "column": "left", "size_rel": 1.0, "space_before": 0.039},
+    {"n": null, "role": "figure_caption", "bbox": [0.127, 0.452, 0.341, 0.495], "column": "left", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.004},
+    {"n": 2, "role": "section_heading", "bbox": [0.397, 0.132, 0.698, 0.149], "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.037},
+    {"n": 3, "role": "paragraph", "bbox": [0.397, 0.159, 0.902, 0.311], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.010},
+    {"n": 4, "role": "paragraph", "bbox": [0.397, 0.318, 0.747, 0.333], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "space_before": 0.007},
+    {"n": 5, "role": "section_heading", "bbox": [0.397, 0.357, 0.736, 0.374], "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.024},
+    {"n": 6, "role": "paragraph", "bbox": [0.397, 0.383, 0.902, 0.570], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.009},
+    {"n": 7, "role": "paragraph", "bbox": [0.397, 0.576, 0.834, 0.593], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "space_before": 0.006},
+    {"n": 8, "role": "figure", "bbox": [0.331, 0.627, 0.773, 0.883], "column": "full", "size_rel": 1.0, "space_before": 0.034},
+    {"n": null, "role": "figure_caption", "bbox": [0.331, 0.889, 0.884, 0.904], "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.006},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary body page (verso, folio 42). Two columns: a left margin column (0.127-0.360) holding Figure 4.8 and its caption, and the main text measure (id 'full', 0.397-0.902) holding sections 4.2.3 and 4.2.4. Figure 4.9 (n8) sits below the prose and extends left of the text measure into the margin, so it is marked full. The captions of Figure 4.8 and Figure 4.9 are visible on the page but have no A2 block in the input, so both are given n null. Header: light green band (#e0ebb6) over a grey strip (#d1d2d4) carrying the folio on a white tab at left and the running head 'Biology' at right. Footer is a green band (#cadf7f) with the '2024-25' print-year mark, not reported separately. Section headings sampled #00adef (lighter than the #0073bd heading on p005). Diagonal watermark not reported. size_pt omitted because the rendering DPI is not given."
+}

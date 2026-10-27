@@ -1,0 +1,127 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 20.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.079,
+   0.108,
+   0.7,
+   0.91
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.12,
+    "x1": 0.7
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    0.791,
+    0.038
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.805,
+    0.0,
+    1.0,
+    0.097
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.068,
+    0.075,
+    0.293,
+    0.086
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "left",
+   "font": "sans",
+   "text_color": "#555555"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.12,
+    0.108,
+    0.7,
+    0.592
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.022
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.12,
+    0.596,
+    0.7,
+    0.873
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.004
+  },
+  {
+   "n": 3,
+   "role": "list",
+   "bbox": [
+    0.079,
+    0.875,
+    0.7,
+    0.91
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.002,
+   "indent": 0.0
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.839,
+    0.785,
+    1.0,
+    0.835
+   ],
+   "column": "full",
+   "size_rel": 1.3,
+   "align": "center",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  }
+ ],
+ "note": "Recto page, folio 199 in orange tab at right margin. Block 3 is list item (iii) Parasitism with its marker hanging at x~0.079; continues onto next page. Single full-width text column; body_text_size_px is the cap height of body prose (~20px at 1580x2160). The 'Reprint 2026-27' stamp at the page foot is not a page_number and is not reported. page_header_band and the orange folio tab fills sampled from flat interiors. size_pt omitted because page DPI is not given in the input."
+}

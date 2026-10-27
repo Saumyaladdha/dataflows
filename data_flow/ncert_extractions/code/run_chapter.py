@@ -12,7 +12,8 @@ This is the single entry point. It runs, in order:
     3  cut_figures           figure and table crops                    [script]
     4  build_chapter_json    the tree -> chapter.json  (THE TRUTH)     [script]
     5  to_markdown           chapter.md                                [script]
-    6  render_from_tree      chapter.html                              [script]
+    6  (chapter.html no longer built -- deliverables are exact.html, json, md)
+    6b render_exact          chapter-exact.html (the printed-book view) [script]
     7  export_rows           DynamoDB rows -> data/dynamodb/           [script]
     8  upload_assets         CDN urls, only with --upload              [script, needs token]
 
@@ -66,6 +67,10 @@ def main():
     ap.add_argument("--chapter", type=int)
     ap.add_argument("--lang", default="EN")
     ap.add_argument("--upload", action="store_true", help="push crops to the CDN")
+    ap.add_argument("--no-cdn", action="store_true",
+                    help="leave local figures/ paths (skip the CDN publish step)")
+    ap.add_argument("--no-compare", action="store_true",
+                    help="skip the page-by-page render-vs-PDF comparison (qa/compare/<id>/)")
     ap.add_argument("--require-agent", action="store_true",
                     help="fail if any page lacks an a2-page-reader read")
     ap.add_argument("--allow-unmeasured", action="store_true")
@@ -85,8 +90,21 @@ def main():
             f"--allow-unmeasured to build it on the provisional design, knowing the layout "
             f"is a draft.")
 
+    # TIME EVERY STEP, so a slow build says where the time went (BIO12L ch01 once ran 45 min
+    # on a cache miss nobody could see).
+    import time
+    t_all = t0 = time.time()
+    timings = []
+
+    def lap(name):
+        nonlocal t0
+        now = time.time()
+        timings.append((name, now - t0))
+        t0 = now
+
     # ---- 1-5 ---------------------------------------------------------------------------
     cdir, doc, n_figs = bcj.write_chapter(book_id, num, use_agent=True, lang=a.lang)
+    lap("build")
     join = doc.get("text_join") or {}
     n_pages = join.get("pages", len(doc["pages"]))
     n_agent = join.get("pages_with_agent", 0)
@@ -115,22 +133,47 @@ def main():
     if r.returncode:
         print("  rows      FAILED:", (r.stderr or "").strip()[:300])
 
-    # ---- 7 html: the proof the rows are enough -------------------------------------------------------------------------
+    lap("rows")
+    # ---- 7 chapter.html is NOT built. The owner decided (2026-10-24) that the deliverables are
+    # chapter-exact.html, chapter.json and chapter.md only; `render_from_tree` stays as a library
+    # (render_exact uses its fonts and fit factor) but writes no page of its own.
+    # ---- 7b exact html: THE DELIVERABLE that looks like the printed book -------------------
+    # It was a separate command (`render_exact.py`), so a chapter built here came out without
+    # it -- or with a stale copy from before its last rebuild. It reads only chapter.json, so it
+    # runs after every build, from the same tree the reflowed page and the rows came from.
     try:
-        import render_from_tree
-        html_path = render_from_tree.write(doc, cdir)
-        print(f"  html      {os.path.relpath(html_path, ROOT)}")
+        import render_exact
+        exact_path = render_exact.write(doc, cdir)
+        print(f"  exact     {os.path.relpath(exact_path, ROOT)}")
     except Exception as e:                                    # noqa: BLE001
-        print(f"  html      SKIPPED ({type(e).__name__}: {e})")
+        print(f"  exact     FAILED ({type(e).__name__}: {e})")
 
-    # ---- 8 cdn --------------------------------------------------------------------------
-    if a.upload:
-        import upload_assets
-        done, skipped, failed = upload_assets.chapter_assets(cdir)
-        print(f"  cdn       {done} uploaded, {skipped} unchanged, {failed} failed")
+    lap("exact.html")
+    # ---- 8 cdn: every build of a published chapter ENDS with CDN links ------------------
+    # The deliverables carry CDN links only (`cdn_publish.py`). Publishing used to be a
+    # separate command, so any rebuild -- by anyone -- silently put `figures/...` paths back
+    # into chapter.json, chapter.md and both HTML files: BIO11L ch01 lost all 7 links that
+    # way minutes after being published. A chapter that has been published (it has a link
+    # map) is therefore re-published here on every build: unchanged crops are re-linked from
+    # the map with no network call, changed ones are uploaded (needs ARIVIHAN_TOKEN).
+    has_map = os.path.exists(os.path.join(cdir, "figures", "_cdn_map.json"))
+    if (a.upload or has_map or os.environ.get("ARIVIHAN_TOKEN")) and not a.no_cdn:
+        import cdn_publish
+        try:
+            _, st = cdn_publish.publish(cid)
+            left = {k: len(v) for k, v in cdn_publish.local_refs(cdir).items() if v}
+            print(f"  cdn       {st['uploaded']} uploaded, {st['reused']} re-linked from map, "
+                  f"{st['already']} already linked, {len(st['failed'])} failed; "
+                  f"local paths left: {left or 'none'}")
+            for f in st["failed"]:
+                print(f"            FAILED {f}")
+        except Exception as e:                                # noqa: BLE001
+            print(f"  cdn       FAILED ({type(e).__name__}: {e}) -- files keep local paths")
     else:
-        print("  cdn       skipped (pass --upload with ARIVIHAN_TOKEN set)")
+        print("  cdn       skipped (never published: run with ARIVIHAN_TOKEN set, or "
+              "code/cdn_publish.py)")
 
+    lap("cdn")
     # ---- 9 CHECK: every defect we have already shipped once ----------------------------
     try:
         import check_chapter
@@ -145,6 +188,26 @@ def main():
     except ImportError:
         pass
 
+    lap("check")
+
+    # ---- 10 COMPARE: the exact render beside the book, every page (`compare_render.py`) ---
+    # The owner reviews every page against the PDF; this puts the pairs and the worst pages in
+    # front of whoever runs the build, instead of a hand-made script after it.
+    if not a.no_compare:
+        try:
+            import compare_render
+            rows, out_dir = compare_render.compare(cid)
+            look = [r for r in rows if r[1] > 12 or r[2] > 6]
+            print(f"  compare   {len(rows)} pages -> {os.path.relpath(out_dir, ROOT)}; "
+                  f"look at: {', '.join(f'p{p:02d}' for p, _d, _c in look) or 'none flagged'}")
+        except SystemExit as e:
+            print(f"  compare   skipped ({e})")
+        except Exception as e:                                # noqa: BLE001
+            print(f"  compare   FAILED ({type(e).__name__}: {e})")
+        lap("compare")
+
+    print("  time      " + ", ".join(f"{n} {t:.0f}s" for n, t in timings)
+          + f"; total {time.time() - t_all:.0f}s")
     print(f"\ndone: {os.path.relpath(cdir, ROOT)}")
 
 

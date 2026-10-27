@@ -51,6 +51,56 @@ def pp(*parts):
     return lib_io.project_path(*parts)
 
 
+def code_path(*parts):
+    """A path inside the folder this code lives in.
+
+    The folder was `scripts/` and is now `code/`. Every call site that spelled `pp("scripts", ...)`
+    resolved to a directory that no longer exists, so `--check` could not load a single check module
+    and `run_paper_pipeline.py` could not start its first step. Resolving from this file's own
+    location means a rename never breaks it again."""
+    return os.path.join(_SCRIPTS_DIR, *parts)
+
+
+def corpus():
+    """The v2 corpus folder, as path parts: `papers/` since the tree was re-filed into data_flow/,
+    `papers_v2/` in a checkout from before that.
+
+    The scripts were written against `papers_v2/` and the re-file renamed it. Hard-coding either
+    name breaks the other checkout SILENTLY: a glob over a folder that does not exist returns no
+    booklets, and every step reports zero work as though there were none to do. So the name that
+    exists wins, and a fresh checkout with neither gets the current one."""
+    if os.path.isdir(pp("papers_v2")) and not os.path.isdir(pp("papers", "papers")):
+        return ("papers_v2",)
+    return ("papers",)
+
+
+def mappings():
+    """The taxonomy folder, as path parts: chapter_index.json, chapter_streams.json,
+    taxonomy_additions.json, label_glossary.json and the raw ExamChapterTopicMappings scan.
+
+    The owner keeps it at `chapter_subtopics_mappings/` (2026-10-26); older checkouts had it inside
+    the corpus as `<corpus>/mappings/`. The one that exists wins -- QCHAP and QTOPIC choose from the
+    CLOSED list in it, so a path that resolves to nothing would leave them with no list at all."""
+    if os.path.isdir(pp("chapter_subtopics_mappings")):
+        return ("chapter_subtopics_mappings",)
+    return corpus() + ("mappings",)
+
+
+def source_dir(*parts):
+    """The in-repo copy of the source booklets, holding `NEET_Papers/<year>/<booklet>.pdf`.
+
+    `source_papers/` is where the owner keeps them (2026-10-26). The two older homes are still
+    honoured -- `source_pdfs/papers_v2_sources/` from the re-file into data_flow/ and
+    `inputs/papers_v2_sources/` from before it -- so a checkout using either keeps working. The
+    tree under each is the same, which is why a record's `source_pdf` (`NEET_Papers/2015/...`)
+    resolves in all three. Same rule as `corpus()`: the one that exists wins."""
+    for root in (("source_papers",), ("source_pdfs", "papers_v2_sources"),
+                 ("inputs", "papers_v2_sources")):
+        if os.path.isdir(pp(*root)):
+            return pp(*root, *parts)
+    return pp("source_papers", *parts)
+
+
 def ensure_dir(path):
     os.makedirs(path, exist_ok=True)
 
@@ -147,7 +197,7 @@ _CHECK_MODULE_CACHE = {}
 def load_check_module(step):
     if step in _CHECK_MODULE_CACHE:
         return _CHECK_MODULE_CACHE[step]
-    path = pp("scripts", "checks", f"{step}.py")
+    path = code_path("checks", f"{step}.py")
     spec = importlib.util.spec_from_file_location(f"pyq_checks_{step}", path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)

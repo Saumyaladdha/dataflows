@@ -1,0 +1,52 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 18.5,
+    "text_block": [0.313, 0.134, 0.902, 0.908],
+    "fill": 1.0,
+    "columns": [
+      {"id": "full", "x0": 0.313, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.082, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.065, 0.185, 0.095],
+     "column": "full", "size_rel": 1.2, "align": "center", "font": "serif-bold",
+     "fill": "#ffffff", "text_color": "#231f20"},
+    {"n": null, "role": "running_header", "bbox": [0.838, 0.083, 0.901, 0.095],
+     "column": "full", "size_rel": 1.0, "align": "right", "font": "serif",
+     "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.313, 0.134, 0.902, 0.237],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.039},
+    {"n": 2, "role": "paragraph", "bbox": [0.313, 0.241, 0.902, 0.309],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.004},
+    {"n": 3, "role": "equation", "bbox": [0.313, 0.319, 0.902, 0.369],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif",
+     "fill": "#fffac1", "space_before": 0.010},
+    {"n": 4, "role": "paragraph", "bbox": [0.313, 0.373, 0.902, 0.524],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.004},
+    {"n": 5, "role": "section_heading", "bbox": [0.313, 0.549, 0.902, 0.583],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold",
+     "text_color": "#00a0e3", "space_before": 0.025},
+    {"n": 6, "role": "paragraph", "bbox": [0.313, 0.594, 0.902, 0.698],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.011},
+    {"n": 7, "role": "equation", "bbox": [0.313, 0.705, 0.902, 0.731],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif",
+     "fill": "#fffac1", "space_before": 0.007},
+    {"n": 8, "role": "paragraph", "bbox": [0.313, 0.733, 0.902, 0.908],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.002},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary body page (verso, folio 114 in a white tab at left; running head 'Biology' in small caps at right on the grey strip). Single full-width text column 0.313-0.902; the left margin is empty. Header is a light-green band over a thin grey strip, reported as two page_header_band elements. Both equations (glucose to pyruvic acid pair; S -> P) sit in pale-yellow tinted boxes across the measure. Section heading 9.8.2 wraps to two lines with a hanging indent. Paragraphs 1, 2 and 8 open with a first-line indent. Last paragraph continues onto the next page. Footer is the green band carrying the '2024-25' imprint. Watermark ignored. size_pt omitted because page DPI is not given."
+}

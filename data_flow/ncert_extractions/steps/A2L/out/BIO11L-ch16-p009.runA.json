@@ -1,0 +1,188 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2182,
+  "body_text_size_px": 21.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.098,
+   0.134,
+   0.686,
+   0.9
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.098,
+    "x1": 0.686
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.082
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.137,
+    0.083,
+    0.467,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "left",
+   "font": "serif",
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.815,
+    0.065,
+    0.871,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "center",
+   "font": "serif-bold",
+   "fill": "#ffffff"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.134,
+    0.686,
+    0.345
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.039
+  },
+  {
+   "n": 2,
+   "role": "section_heading",
+   "bbox": [
+    0.098,
+    0.366,
+    0.52,
+    0.383
+   ],
+   "column": "full",
+   "size_rel": 1.25,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.021
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.397,
+    0.686,
+    0.429
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.014
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.433,
+    0.686,
+    0.519
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.004
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.522,
+    0.686,
+    0.698
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.003
+  },
+  {
+   "n": 6,
+   "role": "section_heading",
+   "bbox": [
+    0.098,
+    0.726,
+    0.525,
+    0.742
+   ],
+   "column": "full",
+   "size_rel": 1.25,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.028
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.76,
+    0.686,
+    0.9
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.018
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Recto page 213, single full column; text runs to the foot of the text block. Section headings 16.7 and 16.8 are cyan bold small caps with the number at the column edge. Paragraphs 4 and 5 start with a first-line indent. Ordinary body page (page_kind=ordinary): light-green header band (#e0ebb6) with a grey strip (#d1d2d4) carrying the running header, and the folio printed in a white tab breaking into the band. The '2024-25' reprint stamp in the green foot band (#cadf7f, reported as footer_rule) is not the page number and is not reported as an element. The diagonal 'NCERT not to be republished' watermark is not reported. size_pt omitted: page DPI is not given in the input, so only size_rel is reported. body_text_size_px is the cap-to-baseline height of body prose at the image's 1700x2182 size; space_before on the first content element is measured from the bottom of the header strip."
+}

@@ -1,0 +1,75 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "Examples: Sycon (Scypha), Spongilla (Fresh water sponge) and Euspongia (Bath sponge).",
+      "continues_from_previous": false,
+      "bold_terms": [],
+      "italic_terms": ["Sycon", "Spongilla", "Euspongia"]
+    },
+    {
+      "n": 2,
+      "kind": "heading",
+      "text": "4.2.2 Phylum – Coelenterata (Cnidaria)"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "They are aquatic, mostly marine, sessile or free-swimming, radially symmetrical animals (Figure 4.6). The name cnidaria is derived from the",
+      "bold_terms": [],
+      "italic_terms": []
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [327, 578, 1232, 1210],
+      "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "figure_caption",
+      "text": "Figure 4.6 Examples of  Coelenterata indicating outline of their body form :\n(a) Aurelia (Medusa) (b) Adamsia (Polyp)",
+      "bold_terms": [],
+      "italic_terms": ["Aurelia", "Adamsia"]
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "cnidoblasts or cnidocytes (which contain the stinging capsules or nematocysts) present on the tentacles and the body. Cnidoblasts are used for anchorage, defense and for the capture of prey (Figure 4.7). Cnidarians exhibit tissue level of organisation and are diploblastic. They have a central gastro-vascular cavity with a single opening, mouth on hypostome. Digestion is extracellular and intracellular. Some of the cnidarians, e.g., corals have a skeleton composed of calcium carbonate. Cnidarians exhibit two basic body forms called polyp and medusa (Figure 4.6). The former is a sessile and cylindrical form like Hydra, Adamsia, etc. whereas, the latter is umbrella-shaped and free-swimming like Aurelia or jelly fish. Those cnidarians which exist in both forms exhibit alternation of generation (Metagenesis), i.e., polyps produce medusae asexually and medusae form the polyps sexually (e.g., Obelia).",
+      "bold_terms": ["hypostome", "corals", "polyp", "medusa"],
+      "italic_terms": ["Adamsia", "Aurelia", "Obelia"]
+    },
+    {
+      "n": 7,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [1221, 1341, 1406, 1684],
+      "text": ""
+    },
+    {
+      "n": 8,
+      "kind": "figure_caption",
+      "text": "Figure 4.7 Diagrammatic view of Cnidoblast",
+      "bold_terms": [],
+      "italic_terms": []
+    },
+    {
+      "n": 9,
+      "kind": "paragraph",
+      "text": "Examples: Physalia (Portuguese man-of-war), Adamsia (Sea anemone), Pennatula (Sea-pen), Gorgonia (Sea-fan) and Meandrina (Brain coral).",
+      "continues_on_next": false,
+      "bold_terms": [],
+      "italic_terms": ["Physalia", "Adamsia", "Pennatula", "Gorgonia", "Meandrina"]
+    }
+  ],
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "ANIMAL KINGDOM",
+    "41",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block was null although page is 5 (not 1); first block judged a fresh 'Examples:' line, not mid-sentence, so continuation set false from the image alone. Blocks 3 and 6 are one printed paragraph interrupted by Figure 4.6 (block 3 ends mid-sentence 'derived from the', block 6 resumes 'cnidoblasts or cnidocytes'); split to keep reading order. Figure captions use kind 'figure_caption' per added rule 3 although the Allowed values list omits it. Figure panel labels '(a)'/'(b)' left inside figure 4.6 bbox. 'Hydra' in block 6 is printed roman (not italic) on the page and is kept so."
+}

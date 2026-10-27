@@ -1,0 +1,35 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 19.6,
+    "text_block": [0.156, 0.120, 0.815, 0.906],
+    "fill": 0.80,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.156, "x1": 0.815}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.137, 0.082, 0.258, 0.095], "column": "full", "size_rel": 0.85, "align": "left", "font": "serif", "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.065, 0.870, 0.095], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": null, "role": "decorative_image", "bbox": [0.36, 0.12, 0.61, 0.33], "column": "full", "size_rel": 1.0, "fill": "#fffbd5", "space_before": 0.025},
+    {"n": 1, "role": "paragraph", "bbox": [0.156, 0.120, 0.815, 0.260], "column": "full", "size_rel": 0.95, "align": "justify", "font": "serif", "space_before": 0.025},
+    {"n": 2, "role": "paragraph", "bbox": [0.156, 0.263, 0.815, 0.357], "column": "full", "size_rel": 0.95, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 3, "role": "major_heading", "bbox": [0.436, 0.389, 0.533, 0.402], "column": "full", "size_rel": 1.2, "align": "center", "font": "serif-bold", "space_before": 0.032},
+    {"n": 4, "role": "list", "bbox": [0.165, 0.424, 0.815, 0.438], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.022},
+    {"n": 5, "role": "list", "bbox": [0.165, 0.445, 0.815, 0.459], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007},
+    {"n": 6, "role": "list", "bbox": [0.165, 0.466, 0.815, 0.510], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007},
+    {"n": 7, "role": "list", "bbox": [0.165, 0.517, 0.815, 0.546], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007},
+    {"n": 8, "role": "list", "bbox": [0.165, 0.552, 0.815, 0.566], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.006},
+    {"n": 9, "role": "list", "bbox": [0.165, 0.573, 0.815, 0.602], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007},
+    {"n": 10, "role": "list", "bbox": [0.165, 0.608, 0.815, 0.622], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.006},
+    {"n": 11, "role": "list", "bbox": [0.165, 0.629, 0.815, 0.643], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007},
+    {"n": 12, "role": "list", "bbox": [0.165, 0.649, 0.815, 0.678], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.006},
+    {"n": 13, "role": "list", "bbox": [0.156, 0.685, 0.815, 0.730], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007},
+    {"n": 14, "role": "list", "bbox": [0.156, 0.735, 0.815, 0.750], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.005},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary single-column recto body page (folio 119). n 1-2 are the continuation of the chapter Summary from the previous page (set slightly tighter, size_rel 0.95), with a pale-yellow decorative disc (#fffbd5, bbox approximate) behind them. 'EXERCISES' (n 3) is a centred cyan small-caps heading. Exercise questions n 4-14 are numbered items with hanging indent: number at x~0.165 (0.156 for 10 and 11), text from x~0.195. Content ends at y~0.750; text_block depth uses the standard body-page foot (~0.906, as on neighbouring pages) so fill 0.80 reflects that the page ends short. Header: light-green band (#e0ebb6) over grey strip (#d1d2d4) with running header 'BIOMOLECULES'; folio in white tab at right. Footer green band (#cadf7f) with '2024-25' stamp not reported separately. Watermark ignored. size_pt omitted because page DPI is not given."
+}

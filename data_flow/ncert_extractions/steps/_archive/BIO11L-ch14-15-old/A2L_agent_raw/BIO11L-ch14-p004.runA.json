@@ -1,0 +1,171 @@
+{
+ "page": {
+  "width_px": 1682,
+  "height_px": 2190,
+  "body_text_size_px": 20.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.239,
+   0.135,
+   0.912,
+   0.898
+  ],
+  "fill": 0.96,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.317,
+    "x1": 0.912
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.083
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e1ebb5",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.083,
+    1.0,
+    0.096
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d3d4",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.13,
+    0.067,
+    0.187,
+    0.096
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "center",
+   "font": "serif-bold",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.847,
+    0.086,
+    0.91,
+    0.096
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "right",
+   "font": "serif",
+   "space_before": 0.0
+  },
+  {
+   "n": 1,
+   "role": "section_heading",
+   "bbox": [
+    0.317,
+    0.135,
+    0.685,
+    0.151
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00aeef",
+   "space_before": 0.039
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.317,
+    0.163,
+    0.912,
+    0.514
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.012
+  },
+  {
+   "n": 3,
+   "role": "figure",
+   "bbox": [
+    0.258,
+    0.542,
+    0.896,
+    0.856
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.028
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.239,
+    0.869,
+    0.896,
+    0.898
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.013
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.953,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cfe08a",
+   "space_before": 0.055
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.475,
+    0.955,
+    0.525,
+    0.964
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "center",
+   "font": "sans",
+   "space_before": 0.0
+  }
+ ],
+ "note": "Verso body page. Header: pale-green band (#e1ebb5) over a grey strip (#d1d3d4), folio '184' in a white tab at left, running head 'BIOLOGY' (small caps) at right. Single body column x 0.317-0.912 with a wide empty left margin. Figure 14.1 (n=3) and its caption (not a separate A2 block, n=null; 'Figure 14.1' bold, rest regular) hang left into the margin (figure from x 0.258, caption from x 0.239). Bottom band (y 0.953-1.0, #cfe08a) reported as footer_rule; the '2024-25' edition stamp on it is reported as a second page_number element. size_pt omitted (DPI not given)."
+}

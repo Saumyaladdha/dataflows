@@ -1,0 +1,31 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 20.0,
+    "text_block": [0.128, 0.132, 0.902, 0.904],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "left", "x0": 0.128, "x1": 0.517},
+      {"id": "right", "x0": 0.530, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.082, 1.0, 0.095], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.142, 0.083, 0.166, 0.095], "column": "left", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.083, 0.900, 0.095], "column": "right", "size_rel": 0.9, "align": "right", "font": "serif", "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": 1, "role": "figure", "bbox": [0.128, 0.155, 0.517, 0.458], "column": "left", "size_rel": 1.0, "space_before": 0.060},
+    {"n": null, "role": "figure_caption", "bbox": [0.166, 0.482, 0.470, 0.525], "column": "left", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.024},
+    {"n": 2, "role": "figure", "bbox": [0.175, 0.575, 0.493, 0.868], "column": "left", "size_rel": 1.0, "space_before": 0.050},
+    {"n": null, "role": "figure_caption", "bbox": [0.166, 0.875, 0.451, 0.904], "column": "left", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.007},
+    {"n": 3, "role": "section_heading", "bbox": [0.530, 0.132, 0.828, 0.149], "column": "right", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.037},
+    {"n": 4, "role": "paragraph", "bbox": [0.530, 0.156, 0.902, 0.475], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007},
+    {"n": 5, "role": "list", "bbox": [0.530, 0.478, 0.902, 0.595], "column": "right", "size_rel": 1.0, "align": "left", "font": "serif", "space_before": 0.003},
+    {"n": 6, "role": "section_heading", "bbox": [0.530, 0.607, 0.791, 0.624], "column": "right", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.012},
+    {"n": 7, "role": "paragraph", "bbox": [0.530, 0.631, 0.902, 0.903], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary body page (verso, folio 44) set in two columns: the left column (0.128-0.517) carries Figure 4.12 (four arthropods, n1) and Figure 4.13 (Pila and Octopus, n2) with their captions; the right column (0.530-0.902) carries all prose of sections 4.2.7 and 4.2.8. Reading order follows the prose column after the figures as A2 listed them. The captions of Figures 4.12 and 4.13 have no A2 block in the input, so both are n null. Block n5 (Examples list: economically important insects, vectors, gregarious pest, living fossil) is set flush-left with no indent. Header: light green band (#e0ebb6) over a grey strip (#d1d2d4) with the folio on a white tab at left and the running head 'Biology' at right. Footer is a green band (#cadf7f) with the '2024-25' print-year mark, not reported separately. Headings sampled #00adef. Diagonal watermark not reported. size_pt omitted because the rendering DPI is not given."
+}

@@ -3,45 +3,74 @@
     {
       "n": 1,
       "kind": "heading",
-      "text": "Table 4.3: A Comparison between the Behaviour of Chromosomes and Genes"
+      "text": "4.3.1 Law of Independent Assortment"
     },
     {
       "n": 2,
-      "kind": "table",
-      "needs_special": true,
-      "bbox": [
-        480,
-        310,
-        1478,
-        690
-      ],
-      "text": ""
+      "kind": "paragraph",
+      "text": "In the dihybrid cross (Figure 4.7), the phenotypes round,yellow; wrinkled, yellow; round, green  and wrinkled, green appeared in the ratio 9:3:3:1. Such a ratio was observed for several pairs of characters that Mendel studied."
     },
     {
       "n": 3,
       "kind": "paragraph",
-      "text": "During Anaphase of meiosis I, the two chromosome pairs can align at the metaphase plate independently of each other (Figure 4.9). To understand this, compare the chromosomes of four different colour in the left and right columns. In the left column (Possibility I) orange and green is segregating together. But in the right hand column (Possibility II) the orange chromosome is segregating with the red chromosomes.",
-      "continues_from_previous": false
+      "text": "The ratio of 9:3:3:1 can be derived as a combination series of 3 yellow: 1 green, with 3 round : 1 wrinkled. This derivation can be written as follows:"
     },
     {
       "n": 4,
-      "kind": "figure",
+      "kind": "equation",
       "needs_special": true,
       "bbox": [
-        512,
-        975,
-        1465,
-        1980
+        477,
+        562,
+        1486,
+        622
       ],
       "text": ""
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Based upon such observations on dihybrid crosses (crosses between plants differing in two traits) Mendel proposed a second set of generalisations that we call Mendel's Law of Independent Assortment. The law states that 'when two pairs of traits are combined in a hybrid, segregation of one pair of characters is independent of the other pair of characters'."
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "The Punnett square can be effectively used to understand the independent segregation of the two pairs of genes during meiosis and the production of eggs and pollen in the F1 RrYy plant. Consider the segregation of one pair of genes R and r. Fifty per cent of the gametes have the gene R and the other 50 per cent have r. Now besides each gamete having either R or r, it should also have the allele Y or y.  The important thing to remember here is that segregation of 50 per cent R and 50 per cent r is independent from the segregation of 50 per cent Y and 50 per cent y. Therefore, 50 per cent of the r bearing gametes has Y and the other 50 per cent has y. Similarly, 50 per cent of the R bearing gametes has Y and the other 50 per cent has y. Thus there are four genotypes of gametes (four types of pollen and four types of eggs). The four types are RY, Ry, rY and ry each with a frequency of 25 per cent or 1/4th of the total gametes produced. When you write down the four types of eggs and pollen on the two sides of a Punnett square it is very easy to derive the composition of the zygotes  that give rise to the F2 plants  (Figure 4.7). Although there are 16 squares how many different types of genotypes and phenotypes are formed? Note them down in the format given."
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "Can you, using the Punnett square data work out the genotypic ratio at the F2 stage and fill in the format given? Is the genotypic ratio also 9:3:3:1?"
+    },
+    {
+      "n": 8,
+      "kind": "table",
+      "needs_special": true,
+      "bbox": [
+        477,
+        1716,
+        1488,
+        1792
+      ],
+      "text": ""
+    },
+    {
+      "n": 9,
+      "kind": "heading",
+      "text": "4.3.2 Chromosomal Theory of Inheritance"
+    },
+    {
+      "n": 10,
+      "kind": "paragraph",
+      "text": "Mendel published his work on inheritance of characters in 1865 but for several reasons, it remained unrecognised till 1900. Firstly,"
     }
   ],
   "first_block_continues_from_previous": false,
-  "last_block_continues_on_next": false,
+  "last_block_continues_on_next": true,
   "running_header_footer_removed": [
     "BIOLOGY",
-    "66",
+    "64",
     "Reprint 2026-27"
   ],
-  "note": "Chapter is image-only (text_layer empty, as expected); text read directly from the page image. Block 2 is the body of Table 4.3, whose last row is an in-table question (\"Can you tell which of these columns A or B represent the chromosome and which represents the gene? How did you decide?\") - left for the special transcriber. Block 4 is Figure 4.9 including the \"Possibility I\"/\"Possibility II\" column labels, panel labels and the caption \"Figure 4.9 Independent assortment of chromosomes\". previous_page_last_block was null; continuation judged from the page itself - the page opens with a new table caption and ends with a completed figure caption followed by blank space."
+  "note": "text_layer is empty (image-only chapter, expected); all text transcribed from the page image. Page opens with the heading 4.3.1, so it does not continue mid-block from the previous page (previous_page_last_block was null). Block 4 is the derivation line '(3 Round : 1 Wrinkled) (3 Yellow : 1 Green) = ...' marked as an equation for the special transcriber. Block 8 is the blank 3-column answer table (S.No. / Genotypes found in F2 / Their expected Phenotypes) with one empty row. Subscripts in F1/F2 and the superscript in 1/4th are rendered as plain inline characters."
 }

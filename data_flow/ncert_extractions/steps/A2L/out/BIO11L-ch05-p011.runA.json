@@ -1,0 +1,31 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 21.5,
+    "text_block": [0.098, 0.129, 0.870, 0.903],
+    "fill": 0.99,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "left", "x0": 0.098, "x1": 0.630},
+      {"id": "right", "x0": 0.637, "x1": 0.870}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.078], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.078, 1.0, 0.092], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.080, 0.402, 0.092], "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.062, 0.870, 0.092], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "fill": "#ffffff"},
+    {"n": 1, "role": "section_heading", "bbox": [0.098, 0.133, 0.281, 0.146], "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-italic", "space_before": 0.041},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.159, 0.630, 0.352], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.013},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.364, 0.630, 0.645], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.012},
+    {"n": 4, "role": "figure", "bbox": [0.688, 0.129, 0.827, 0.792], "column": "right", "size_rel": 1.0},
+    {"n": 5, "role": "figure_caption", "bbox": [0.640, 0.808, 0.869, 0.903], "column": "right", "size_rel": 0.95, "align": "left", "font": "serif", "space_before": 0.016},
+    {"n": 6, "role": "major_heading", "bbox": [0.098, 0.672, 0.251, 0.687], "column": "left", "size_rel": 1.2, "align": "left", "font": "serif-bold", "space_before": 0.027},
+    {"n": 7, "role": "paragraph", "bbox": [0.098, 0.707, 0.630, 0.775], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.020},
+    {"n": 8, "role": "paragraph", "bbox": [0.098, 0.779, 0.630, 0.848], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004, "indent": 0.030},
+    {"n": 9, "role": "paragraph", "bbox": [0.098, 0.850, 0.630, 0.900], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.002, "indent": 0.030},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary recto body page set in two side-by-side columns: the body prose occupies a narrowed left column (0.098-0.630) and Figure 5.12 (five stacked placentation diagrams (a)-(e) with their labels) plus its multi-line caption occupy a right rail (0.637-0.870) running the full height of the text block. The figure is listed after the paragraph that cites it (Figure 5.12) in reading order. Header: pale green band (#e0ebb6) over grey strip (#d1d2d4) with running head left and white folio tab (65) right. Foot: green band (#cadf7f) as footer_rule; '2024-25' imprint not reported separately. 5.6 THE FRUIT is a cyan bold small-caps major heading; 5.5.1.4 is grey bold-italic. Paragraphs n=8 and n=9 have first-line indents; n=9 continues on the next page. Watermark ignored. size_pt omitted (DPI not stated)."
+}

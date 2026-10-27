@@ -1,0 +1,201 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 19.5,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.067,
+   0.107,
+   0.701,
+   0.906
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.067,
+    "x1": 0.701
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    0.791,
+    0.039
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.8,
+    0.0,
+    1.0,
+    0.098
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.068,
+    0.075,
+    0.353,
+    0.086
+   ],
+   "column": "full",
+   "size_rel": 0.75,
+   "align": "left",
+   "font": "sans",
+   "text_color": "#6d6e71"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.107,
+    0.701,
+    0.157
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.021
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.161,
+    0.701,
+    0.336
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.002
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.341,
+    0.701,
+    0.427
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.002
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.431,
+    0.701,
+    0.499
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.002
+  },
+  {
+   "n": 5,
+   "role": "major_heading",
+   "bbox": [
+    0.068,
+    0.516,
+    0.363,
+    0.533
+   ],
+   "column": "full",
+   "size_rel": 1.35,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00a651",
+   "space_before": 0.017
+  },
+  {
+   "n": 6,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.545,
+    0.701,
+    0.649
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.01
+  },
+  {
+   "n": 7,
+   "role": "list",
+   "bbox": [
+    0.087,
+    0.653,
+    0.701,
+    0.906
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "indent": 0.02,
+   "space_before": 0.002
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.84,
+    0.786,
+    1.0,
+    0.826
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "center",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.84,
+    0.832,
+    1.0,
+    0.838
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary recto body page, single full column; text fills the block. Block 7 is the list of items (i) and (ii) with roman markers at x~0.087 and hanging-indented text from x~0.120; reported as one list element. The 'Reprint 2026-27' stamp at the page foot is not the folio and is left out; the printed folio is the page_number element on the orange tab. size_pt omitted: page DPI is not given, so only size_rel is reported."
+}

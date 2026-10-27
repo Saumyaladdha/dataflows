@@ -28,7 +28,6 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
 import build_chapter_json as bcj          # noqa: E402
-import render_from_tree                   # noqa: E402
 import render_exact                       # noqa: E402
 
 
@@ -38,7 +37,7 @@ def rerender(path):
     cdir = os.path.dirname(path)
     with open(os.path.join(cdir, "chapter.md"), "w", encoding="utf-8") as fh:
         fh.write(bcj.to_markdown(doc))
-    render_from_tree.write(doc, cdir)
+    # chapter.html is not a deliverable (2026-10-24); only the exact render is written.
     render_exact.write(doc, cdir)
     return doc
 
@@ -64,7 +63,7 @@ def main():
                     yield from walk(n["children"])
         figs = [n for n in walk(doc["tree"]) if n["kind"] in ("figure", "table")]
         cdn = [n for n in figs if (n.get("image") or "").startswith("http")]
-        print(f"{cid}: chapter.md + chapter.html + chapter-exact.html rewritten "
+        print(f"{cid}: chapter.md + chapter-exact.html rewritten "
               f"({len(cdn)}/{len(figs)} figures on CDN)")
 
 

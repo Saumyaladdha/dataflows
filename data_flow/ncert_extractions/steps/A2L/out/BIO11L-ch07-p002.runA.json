@@ -1,0 +1,32 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 19.0,
+    "text_block": [0.131, 0.131, 0.902, 0.908],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.314, "x1": 0.902},
+      {"id": "left", "x0": 0.131, "x1": 0.460},
+      {"id": "right", "x0": 0.498, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.078], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.078, 1.0, 0.092], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.142, 0.079, 0.167, 0.092], "column": "full", "size_rel": 1.1, "align": "left", "font": "serif-bold"},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.080, 0.900, 0.093], "column": "full", "size_rel": 0.9, "align": "right", "font": "serif"},
+    {"n": 1, "role": "paragraph", "bbox": [0.314, 0.131, 0.902, 0.351], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.038},
+    {"n": 2, "role": "section_heading", "bbox": [0.314, 0.372, 0.424, 0.388], "column": "full", "size_rel": 1.3, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.021},
+    {"n": 3, "role": "paragraph", "bbox": [0.314, 0.401, 0.902, 0.449], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.013},
+    {"n": 4, "role": "paragraph", "bbox": [0.314, 0.452, 0.902, 0.623], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003, "indent": 0.029},
+    {"n": 5, "role": "section_heading", "bbox": [0.314, 0.640, 0.497, 0.656], "column": "full", "size_rel": 1.3, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.017},
+    {"n": 6, "role": "paragraph", "bbox": [0.314, 0.667, 0.902, 0.785], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.011},
+    {"n": 8, "role": "figure", "bbox": [0.131, 0.720, 0.460, 0.883], "column": "left", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.145, 0.887, 0.434, 0.903], "column": "left", "size_rel": 0.95, "align": "left", "font": "serif", "space_before": 0.004},
+    {"n": 7, "role": "paragraph", "bbox": [0.498, 0.789, 0.902, 0.908], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004, "indent": 0.029},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.954, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Verso body page, single text column x 0.314-0.902 with an empty inner margin on the left. From y~0.70 the text wraps: block 6's first two lines run full measure, then it and block 7 narrow to a right column (0.498-0.902) while Figure 7.1 (block 8) and its caption sit in a left column (0.131-0.460) that pushes into the margin. Header is a light-green band (#e0ebb6) over a grey strip (#d1d2d4); folio 80 sits on a white tab at left, running head 'BIOLOGY' in small caps at right. Foot is a solid green band (#cadf7f) carrying '2024-25', reported as footer_rule. Figure caption 'Figure 7.1 External features of frog' has no A2 block, so n null. Headings are blue #00adef (sampled from glyph pixels). size_pt omitted: page DPI not known. Diagonal 'not to be republished' watermark ignored."
+}

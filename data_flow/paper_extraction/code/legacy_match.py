@@ -74,7 +74,17 @@ if _SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, _SCRIPTS_DIR)
 
 import runner_core as rc  # noqa: E402
-import verify_sources as vs  # noqa: E402
+try:
+    import verify_sources as vs  # noqa: E402
+except ImportError:
+    # verify_sources.py lives in _shared/code, not here. Only the legacy-SHEET matching below needs
+    # it; `assert_no_legacy`, which step_plugins calls on every E-stage input, does not. A hard
+    # import stopped step_plugins loading at all, so no paper step could even be listed.
+    class _VerifySourcesElsewhere:
+        def __getattr__(self, attr):
+            raise SystemExit("verify_sources.py is not part of paper_extraction -- it lives in "
+                             "_shared/code. Legacy-sheet matching (vs.%s) cannot run here." % attr)
+    vs = _VerifySourcesElsewhere()
 from lib import records as lib_records  # noqa: E402
 
 #: Spec Section 13's three legacy fields. Never an input to any agent.

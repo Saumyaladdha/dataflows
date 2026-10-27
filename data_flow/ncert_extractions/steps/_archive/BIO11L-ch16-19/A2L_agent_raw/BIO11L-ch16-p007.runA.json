@@ -1,0 +1,140 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2182,
+  "body_text_size_px": 19.5,
+  "text_block": [
+   0.098,
+   0.1325,
+   0.862,
+   0.905
+  ],
+  "fill": 0.98,
+  "page_kind": "ordinary",
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.098,
+    "x1": 0.686
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.0815
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0815,
+    1.0,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.138,
+    0.083,
+    0.467,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.814,
+    0.065,
+    0.87,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "center",
+   "font": "serif-bold",
+   "text_color": "#221f1f",
+   "fill": "#ffffff"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.1325,
+    0.686,
+    0.345
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0375
+  },
+  {
+   "n": 2,
+   "role": "figure",
+   "bbox": [
+    0.114,
+    0.3635,
+    0.862,
+    0.87
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.0185
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.167,
+    0.8785,
+    0.814,
+    0.905
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "size_pt": 10.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0085
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Recto body page, single full text column 0.098-0.686; Figure 16.6 is wider than the text measure (0.114-0.862) and extends into the right margin. Caption 'Figure 16.6 ...' has no A2 block so n is null. Paragraph n=1 continues from the previous page (no first-line indent). Bottom green band = footer_rule; '2024-25' stamp not reported. size_pt derived from assumed ~150 dpi render; size_rel is trusted."
+}

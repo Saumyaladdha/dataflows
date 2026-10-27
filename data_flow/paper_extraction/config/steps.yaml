@@ -678,6 +678,85 @@ B3V:
     correct.
   codebook_file: null
 
+B3S:
+  stage: "B"
+  name: "Read the printed worked solution from its image (v2 corpus)"
+  item: "question"
+  agent: "b3s-solution-reader"
+  runs: 1
+  needs: "B3V"
+  input_fields: [paper_id, qno, solution_image, solution_lines_draft, question_text, statements, list_i, list_ii, options]
+  output_schema: schemas/B3S.json
+  check: code/checks/B3S.py
+  fallback: [retry]
+  flags:
+    B3S_SOLUTION_CLIPPED: normal
+    B3S_CONCLUDES_UNCLEAR: low
+    B3S_CONTRADICTS_PRINTED_ANSWER: high
+  safe_default: >-
+    THE PUBLISHER'S SOLUTION, READ FROM ITS IMAGE. The booklets print a worked solution under most
+    questions and the extractor used to discard every line of it. `solution_lines_draft` is the text
+    layer's version and is a CROSS-CHECK only, for the reason B3V exists: a worked solution is made of
+    fractions, radicals and exponents, which the text layer cannot represent.
+    The agent COPIES; it does not solve. A wrong publisher step is copied as printed and noted.
+    `concludes` is what the WORKING arrives at, and the printed answer is deliberately withheld from the
+    input so the working is not read toward it. Where `concludes` differs from the printed Answer (N),
+    that is B3S_CONTRADICTS_PRINTED_ANSWER (high) -- a finding about the booklet, never a check failure.
+    A crop cut off at an edge is `complete: false` (B3S_SOLUTION_CLIPPED), because a half-solution read
+    as whole is the failure nothing downstream can detect.
+    ONLY QUESTIONS B3V HAS READ ARE OFFERED: the question text handed over is the image read, not the
+    draft. ON FAILURE: retry once with the check message. Still failing -> keep as provisional and flag.
+    THIS OUTPUT NEVER REACHES b6-blind-solver (SPEC Rule 10): the publisher's working names the answer.
+  codebook_file: null
+
+FIGC:
+  stage: "B"
+  name: "Read a chemistry question's drawn structures into SMILES cards (v2 corpus)"
+  item: "question"
+  agent: "figc-structure-reader"
+  runs: 1
+  needs: "B3S"
+  input_fields: [paper_id, qno, subject, question_text, options, figures]
+  output_schema: schemas/FIGC.json
+  check: code/checks/FIGC.py
+  fallback: [retry]
+  flags:
+    FIGC_NAME_MISMATCH: high
+    FIGC_UNSURE: low
+  safe_default: >-
+    THE AI NEVER DRAWS. For every figure cut for a CHEMISTRY question (its figure, its option
+    drawings, the drawings inside its printed solution) the agent writes a card: each species'
+    SMILES and its name. Code checks the card -- RDKit parses every SMILES, OPSIN rebuilds every name
+    and the two must give the same InChIKey (a mismatch is sent back word for word) -- and
+    render_figure_cards.py draws it with RDKit, monochrome and oriented as the booklet prints. The
+    exact vector copy of the printed figure stays beside the drawing: a card can be self-consistent
+    and still not be the printed molecule, and only a reader comparing the two catches that.
+    Orbital diagrams, graphs and apparatus are `not_a_structure`, a real answer.
+  codebook_file: null
+
+FIGP:
+  stage: "B"
+  name: "Redraw one physics figure as a checked spec of primitives (v2 corpus)"
+  item: "figure"
+  agent: "figp-figure-redrawer"
+  runs: 1
+  needs: "B3S"
+  input_fields: [paper_id, qno, figure_id, role, image, question_text, options]
+  output_schema: schemas/FIGP.json
+  check: code/checks/FIGP.py
+  fallback: [retry]
+  flags:
+    FIGP_OUT_OF_SCOPE: low
+  safe_default: >-
+    ONE PHYSICS FIGURE, AS A SPEC. The agent writes primitives in mathematical coordinates (y up) --
+    lines, arcs, labels, resistors, capacitors, batteries, inductors, switches, blocks -- and
+    code/lib/physics_figure.py draws them. Physics has no OPSIN, so the check is the figure's own
+    assertions: every labelled angle is claimed and recomputed from the coordinates (within 1.5
+    degrees), and a circuit's declared netlist must match the connectivity its drawn wires make. A
+    pictorial figure (a person, an apparatus photograph, a shaded solid) is out of scope with the
+    reason recorded; its exact vector copy is what the page shows.
+  codebook_file: null
+
 B4:
   stage: "B"
   name: "Read it a second way"

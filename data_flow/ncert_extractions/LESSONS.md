@@ -382,3 +382,323 @@ measured for the book's own setting wraps to three lines and spills over whateve
 beneath it — absolute positioning gives a block no room to push its neighbours away, so it
 simply overlaps them. Box height and printed line count are both measured, so the size that
 fits is arithmetic: `(box_height / line_count) / leading`.
+
+## 12 · The exact render, compared page by page with the book (BIO11L ch01-03)
+
+Every item below was found by setting `chapter-exact.html` beside the PDF page and was fixed in
+the code, so it applies to every chapter built after it. `run_chapter.py` now writes
+`chapter-exact.html` on every build; it used to be a separate command, so a rebuilt chapter
+could carry a stale exact page or none.
+
+| what shipped | why | rule now |
+|---|---|---|
+| Every title blue serif; the unit opener is near-black AvantGarde | colour and face were chosen by node KIND in the stylesheet | `ink`, `print_font`, `print_size_pt` are measured per node and win (`_typography`) |
+| `UNIT 1` wrapped, its `1` printed on the subtitle; chapter titles over the first paragraph | the size was fitted from box height; a substitute font wraps a one-line title | measured size; one printed line stays one line; book's own line breaks (`line_starts`, matched on letters so small caps work) |
+| Paragraphs a line long, last line over the next block | Georgia fallback is wider; the clone font's space is 3.36pt, the book's justified gap 2.64pt | embed TeX Gyre Bonum/Adventor (glyph widths measured equal to Bookman Light); `word-spacing:-0.7pt`; `_FIT_JS` tightens a block to its measured `lines x pitch` |
+| Unit opener page bare white | every full-page ground image was excluded | a ground is cut when it is not a flat tone, by xref, at its unclipped bleed rect, de-duplicated |
+| Figure and table captions missing from the page | only the artwork box was placed | `caption_box` kept on the node and drawn; table caption set above its grid |
+| Exercises ran over the imprint | question nodes lost the block's size and pitch | questions inherit `_TYPO_KEYS`; inline sub-parts stay on one line (`parts_inline`) |
+| Table 2.1 printed twice, cells over the grid | the extractor's table region stopped early; 23 cells stayed loose nodes | with an A2S grid, loose cells inside the table area are absorbed (`_absorb_table_cells`) |
+| Numbered list run together, rule 4 missing from the next page | 4 items, 2 boxes: all drawn in the first | items distributed over the boxes by measured lines, one hanging-numbered row each |
+| Prions and Lichens paragraphs dropped | one text-layer block, three A2 paragraphs; the join kept the first | split on measured line boxes (`_claim_followers`); the reverse case merges (`_claim_absorbed`) |
+| Figures 2.1, 2.3, 2.6 printed as bare labels, no artwork | one black path at the watermark's rect touches every drawing; clustering fused the page into one blob, then dropped it | skip watermark-sized paths; only prose (>42 chars) can veto a cluster; one caption takes its whole row/grid of clusters |
+| Figure 3.2's vector thalli lost beside its scanned mosses | the caption was already 'used' by the image | a drawing touching an image figure grows it -- unless that would overlap another panel, then it is its own panel |
+| A label spanning two panels (`(d) (c)`) merged three figures | label absorption grew one box across its neighbours | a label may not make its figure overlap another |
+| Caption and paragraph text printed twice, once inside the crop | crops are renders of a region and reached into neighbouring text | `_trim_figures_from_text` pulls the box clear of any remaining text by the crop pad |
+| Paragraph set around a figure ran over its caption | a block was flowed as one rectangle | every printed line placed at its measured box (`line_geom`); flow only where a line cannot be matched |
+| Exercise 7 lost its arrows (`Species -> Order -> ...`); the Summary kept text-layer text | the layer lists the Summary paragraph before its heading; in-order alignment left both blocks unmatched, and the book DRAWS the arrows | unmatched blocks are re-paired by content, any order (`_pair_out_of_order`) |
+| The line holding `20<sup>th</sup>` printed over the next line | a browser grows a line box to fit a superscript | `sup,sub{line-height:0}` |
+| `categories/` printed as `categories` + `/ranks` | the line-start rule pulled any punctuation onto the next line | only opening brackets and quotes move to the next line |
+| **Text cut off**: a line stretched with half its words, the next run off the sheet | a line's start matched a repeated word (`pteridophytes`) earlier in the paragraph | the occurrence nearest the expected position wins, and every placed line must hold the letters the book printed there, else the block flows; a line that still overflows is tightened, never clipped |
+| Exercises run off the right edge | a node with no measured `line_count` was treated as one line and forbidden to wrap | `nowrap` only for a MEASURED single line |
+| Figure 3.1 caption read `(a) ... Figure 3.1 Algae :` | lines grouped by a 3pt baseline bucket, and a row straddled its edge | rows grouped by vertical overlap (`_line_rows`) |
+| Figure 3.5 caption began `(b) (a)` | panel labels share the caption's text block | leading label-only rows are split off and join their panels |
+| Figure 3.3 panel (a) had no label | the `(a)` is drawn as vector outlines, not text | small drawn marks next to a figure join it (`_absorb_drawn_marks`) |
+| Caption and table-cell genus names upright | only caption text kept; A2S cells are plain strings | `caption_marks`, `cell_italics` |
+| Match table run-on, then printed twice | A2S had the table but no element was matched to it; then the merged cells became its caption | `_table_from_cells`; merged cell text is cleared |
+| `N2-fixing` without its subscript | the `2` is its own line object, measured against itself | sub/superscripts judged against their printed ROW |
+| Figure 2.5's three pictures shipped as ONE crop and one CDN link | a figure was one image whatever it printed | lettered panels measured from the PDF (`_find_panels`): one crop, one JSON entry, one HTML image, one MD line and one CDN link each; split only when >=2 letters, each claims a picture, labels included and no overlap -- otherwise the figure stays whole |
+| (i)/(ii)/(iii) steps printed as one run-on paragraph | a list with ONE measured box was drawn as one joined body | every list item is its own row with a hanging marker (`1.`, `(i)`, `(a)`) |
+| Agent steps found no PDF, every check failed | the runner still read `inputs/ncert/` and `scripts/checks/` after the split | `iter_ncert_files` also walks `source_pdfs/`; checks load from `code/checks/` |
+| `Class -- Cyclostomata` printed five times | fake bold: the PDF draws the text 5x, offset <0.4pt | overprinted copies collapse to one bold line (`_drop_overprint`) |
+| `...Urochordata or Tunicata...` swallowed into Table 4.1 | the table grew down to any block within 26pt | a block reaching past the table's column band, not starting at its left edge, is not a row |
+
+**Rule.** A render is checked against the page image, not against its own data. Every row
+here passed `check_chapter.py`.
+
+## 13 · BIO11L ch02 audited against the PDF, all three deliverables (2026-10-23)
+
+An external audit of `chapter.md` found two defects; comparing the PDF, the JSON, the Markdown
+and the printed exact render page by page found sixteen. Text was word-for-word right and
+italics were complete -- every defect was structure, typing or placement.
+
+| what shipped | why | rule now |
+|---|---|---|
+| Table 2.1's Animalia column printed again under the table (MD) and over the grid (HTML) | `_absorb_table_cells` ran once; the column sat past the table box's FIRST right edge | absorb to a fixpoint -- each pass widens the box |
+| The QR code a captionless "figure": drawn twice, top of the MD, filed under viruses | the embedded image became a figure as well as `qr code` furniture | a captionless figure on a furniture box is dropped (`_drop_furniture_figures`) |
+| `Figure 2.5 Fungi: (a) Mucor`, then `- (b) Aspergillus (c) Agaricus` inside 2.3.2's paragraph | the caption's 2nd line opens with `(b)`, so it was typed a list | a label-led block on the caption's last line is caption (`_absorb_caption_tails`); the stitcher steps over it |
+| Sentences cut by Figures 2.3 and 2.6 (`legume` / figure / `roots, etc.`) | the figure sat between the halves in reading order | stitching steps over figures and captions |
+| `The three-domain system...` a side `box` | side-note test was left edge + smaller size; a recto's measure starts at x 0.10 | a rail note is also narrow (< 0.40 of the sheet) |
+| `2.6 VIRUSES, VIROIDS, PRIONS AND LICHENS` in capitals | the small-caps detector rejected the comma in `IRUSES,` | punctuation allowed inside small-caps spans |
+| `CHAPTER 2` missing, title in capitals | A2's title block replaced the layer's true-case two-line element | `_restore_title_lines`: one node per measured line, layer's case |
+| Figure 2.4 one combined crop and CDN link | images (b) and (c) overlap by 2pt; clustering fused them | one embedded image per printed letter seeds its own panel |
+| Lettered figures linked twice (combined `image` + panels) | the whole-figure crop stayed on the node | a figure with >= 2 panels is carried by its panels only |
+| Half-letters down Figure 2.4's left edge | crops are page renders; the pad reached the justified prose edge | crops are pulled clear of prose lines outside the figure |
+| Panel (b) carried the top of panel (c) | sibling-stop only fired for non-overlapping panels | overlapping neighbours part at the middle of the overlap |
+| `karyogamy` plain in list item (ii) | layer runs covered item (i) only, A2 listed no bold terms | list items take bold/italic from PDF spans inside the list's box |
+| Page 12 continuation reflowed one line long, over the next paragraph | only single-page paragraphs got `line_geom` | `frag_line_geom`: each page-break fragment placed at its own measured lines |
+| Table 2.1 drawn 50mm short of the book | rows at minimum height | a tinted grid takes its measured depth |
+| `(Figure 2.5a)*, Rhizopus*` | the italic run began with `, ` | comma and semicolon stripped from an emphasis run's start |
+| 48 passages all holding the same text, node ids that do not exist | ch02's A3/A4 used the block-number join | A3/A4 re-run on the finished tree (`structure_inputs.py`) |
+| Figure 2.1's four bacteria (Cocci, Bacilli, Spirilla, Vibrio) one crop and one link | no `(a)` letters, so the lettered panel search gave up | `_named_panels_from_pdf`: drawings named beneath on one baseline become panels (`key` a,b,c names the file) |
+| The green foot strip missing on all 13 sheets | design key is `footer_bar`; the renderer read `footer_band`/`foot_band`, ordinary pages only | `footer_bar` drawn on ordinary and chapter-opener pages |
+
+**CDN.** The upload API names a file `<stem>_<ddmmyyyy>.png`, so a same-day re-upload of a
+changed crop reuses its URL, and CloudFront keeps serving the copy it cached first (query
+strings are ignored). Verify each URL's bytes against `image_sha256` after a re-upload.
+A changed crop the map already knows now goes up as `<stem>-<sha8>.png` (`cdn_publish.link`),
+so it gets a URL that has never been cached.
+
+## 14 · BIO11L ch03: every lettered figure split into its own CDN links (2026-10-23)
+
+Figures 3.1-3.3 shipped as one combined image each; 3.4 and 3.5 were already split. Each
+failed a different way, and each fix is general:
+
+| what shipped | why | rule now |
+|---|---|---|
+| Figure 3.2's crop printed two lines of body text above it | `apply_agent_figures` took the WATERMARK image into the figure's box | the watermark is never one of a figure's pictures |
+| Figure 3.2 whole (4 letters, 4 pictures) | the label `Antheridial branch` joined the nearest LETTER, (b), so (b) reached into (d) | a leftover piece joins the picture it lies against, or a letter if one is nearer |
+| Figure 3.3 whole | `(d)` 224pt below the Equisetum was scored "beneath" it and took (b)'s picture | "just beneath" means within 40pt (also splits ch04 Figure 4.19) |
+| Figure 3.3 whole | its `(a)` is drawn as paths: 3 text letters, 4 pictures | one absent letter of a..last + one unclaimed picture-sized piece = that panel |
+| Figure 3.3 (a) cut without its letter | the drawn `(a)` is 9pt; clusters under 12pt were dropped | panel clustering keeps clusters down to 6pt |
+| Figure 3.1 whole | ONE scanned picture, letters painted into the pixels | `_panels_from_raster`: split the picture's ink, take it only if the drawings fall into exactly the caption's rows (2,3,2); each panel is cut from the picture with only its own pixels (RGBA), since neighbouring boxes overlap |
+| `reach *a* height`, chlorophyll's `a` plain | a short fragment matched the first free-standing `a` | a fragment of <= 3 chars is placed by the two words printed before it |
+| `gemma cell in Marchantia` plain | A2's block of exercises 1-4 kept only exercise 1's layer runs | absorbed layer blocks bring their runs |
+| `*Chara (*Figure 3.1a)` in the MD | the book sets the `(` italic; `*` cannot close after `(` | MD emphasis is trimmed off spaces and brackets; JSON marks unchanged |
+
+## 15 · BIO12L ch01: built from a printed copy, rebuilt from the official PDF (2026-10-23)
+
+The first build used `Chapter_1 (2).pdf`, a **"Microsoft: Print To PDF" re-print**: A4, every
+page flattened to pictures, **0 characters of text** on all 23 pages. Everything the pipeline
+measures came back empty, so it guessed: a near-full-page picture of each printed page was
+filed as "header art" and drawn under the live text (every line printed twice), one page-19
+crop was pasted on five pages, 46 of 55 figures were page slices, title and folios were blank.
+**Rule: a chapter is built only from the official NCERT file** (`ncert.nic.in/textbook/pdf/
+lebo1NN.pdf`; PageMaker -> Ghostscript, real fonts, text on every page). Check `get_text()` is
+non-empty before running anything.
+
+The existing A2/A2S reads were kept: the print had placed each book page 1:1 at the sheet's
+top-left (registration 0.82-0.97 on all 23 pages, offset 0), so their boxes hold, and only the
+page numbers shift by 2 (the official file opens with the Unit VI opener and the Panchanan
+Maheshwari page). Originals are in `steps/_archive/BIO12L-ch01-a4print/`; A2L was not carried
+over (it existed only to supply guessed geometry for a text-less PDF).
+
+| what shipped / blocked | why | rule now |
+|---|---|---|
+| Build never finished | p014 is 1.83 M vector paths (281 MB stream), 4 min per `get_drawings`, read 6x | `visible_drawings` reads each page once; a page over 8 MB of compressed content is read as a 4pt ink grid from `get_bboxlog` |
+| Figure 1.8 unnumbered | caption is 197 chars ending in `.`, typed prose | a caption is also what is SET as one: bold label run, below body size |
+| Figure 1.2's caption cut after line 1 | line 2 is wider than line 1, refused, absorbed as a figure label | a continuation starts under the caption; its width is free |
+| Figures 1.14, 1.15 each three overlapping crops, labels printed twice | A2 boxed each panel; the caption followed the run | a figure-block run + one caption naming as many letters = one figure, A2's boxes kept as panel hints |
+| Figure 1.14 (a) missing | the fragment holding it ran off the page and was dropped as loose; the rebuild took images only | a dropped loose fragment's vector ink inside A2's box is kept |
+| Figure 1.15 one group | the watermark there is 0.8400x wide; the limit was 0.84 | watermark width up to 0.86 |
+| Figure 1.9 (b) held (b) and (c) | `(c)` 4pt under the box; a clipped prose line `(ii)` joined a panel | letters looked for 14pt below; label lines read unclipped, >= 60% inside |
+| Any short split | -- | a split giving fewer panels than the caption names is refused |
+| Summary/exercise ornament shipped as figures | narrow strip A2 never boxed | an unboxed figure < 0.12 of the page wide is `ornament` furniture, drawn as page art |
+| `CAPTION_IN_PROSE` on `Figure 1.2a shows ...` | the check took a sentence for a caption | a caption label followed by a verb is prose |
+
+The relaxed caption join also completed five truncated Class 11 captions (Figures 2.5, 4.8,
+4.10, 4.14, 5.12); ch04 and ch05 were rebuilt and re-published. ch03 rebuilt identical.
+Still one image each (no safe split found): 1.2, 1.7, 1.8, 1.11, 1.13.
+
+## 16 · BIO12L ch01 against the book, page by page: colour, decoration, type (2026-10-23)
+
+The owner compared the exact render with the PDF and asked for it to match exactly -- colours
+included -- and for every fix to reach the JSON and Markdown too. What differed, and why:
+
+| what shipped | why | rule now |
+|---|---|---|
+| Whole page 21.6pt right, 3.2pt down; edge art at x +0.038 | a crop offset onto the 612x784 Class 11 sheet, while the sheet drawn is the PDF page's own size | a page of another size is its own sheet: offset 0 |
+| Opener: title lines on green boxes, no full green panel, no orange band, no peach contents box; no summary box or caption tints anywhere | the book's panels are VECTOR shapes; only images were cut as art and the design drew Class 11 bands | `pages[].decor`: measured panels/bands/boxes/rules (fill, stroke, width, radius) with the PDF's paint order `z`; art carries `z` too; the render draws both in that order and skips the design's bands, tab and foot bar on a measured page |
+| Leaf motif showing on the opener | the green panel is painted OVER the header picture; order was lost | decor and art drawn in `z` order |
+| Contents rail one run of blue 8.6pt text | Class 11's CSS | `contents_rail[].items` (number, title), `indent_pt`, `style` (face, size, colour) measured; MD one bullet per entry |
+| Running head large serif | fixed CSS | `pages[].header_style` and `folio` measured; drawn in that face, size and colour |
+| `1.2.1 Stamen, ...` missing | it opens its page at y 0.108, read as the running head | a numbered bold line at the top is a heading |
+| `1.1 FLOWER - A FASCINATING ...` lost its small caps | the en dash in a span failed the small-caps test | dashes allowed in small-caps spans |
+| Figure 1.8 / 1.5 captions printed twice | A2's box takes in the caption; the crop is a render of the box | a figure is cut back at a caption it sits on (overlapping > half the caption's width) |
+| Figure 1.5 labels cut to `les`, `cus` | the labels are outlined glyphs left of A2's box | a figure grows over small drawn shapes within 6pt, repeatedly (a leader line brings its label); never a shape inside another figure |
+| Bold on the wrong `Autogamy` | fake bold drawn as 4 copies of the word plus the whole line; one copy survived | a copy of a line's START at its origin is the same ink: dropped, the line's first characters bold |
+| Italic activity prompts upright | multi-line italic runs over 120 chars were never placed | formatted runs up to 800 chars are placed |
+| Opener contents box missing from decor | its rounded corners are 8 curve segments | a rounded box (<= 8 curves, <= 16 segments) is decor |
+
+Class 11 ch03-ch05 were rebuilt after each change: figures, boxes, panels and italics unchanged.
+
+## 17 · BIO12L ch03 (Reproductive Health): first build, checked against the book (2026-10-24)
+
+Built from the official PDF (10 pages, PageMaker -> Ghostscript, 568.8 x 777.6 pt). The October
+A2 reads matched the file page for page (99-100% word coverage) and passed today's A2 check. The
+five pages whose reads predate today's brief (opener, figure pages, summary, exercises) were
+re-read; the replaced reads are in `steps/_archive/BIO12L-ch03-old/`.
+
+| what shipped | why | rule now |
+|---|---|---|
+| The IUD paragraph (p044, runs on to p045) missing from JSON, MD and page | one layer block held two A2 paragraphs; Figure 3.2 and its caption sat between them in A2's order, so `_claim_followers`' chain broke | an unclaimed paragraph goes to the nearest EARLIER matched block holding its opening words |
+| `BIOLOGY` a content box on the Exercises page | the layer filed the running head and the 30pt `EXERCISES` as one block | `_split_head_from_title`: a small first row in the head zone is its own block |
+| `CHAPTER 3\nREPRODUCTIVE HEALTH` one node | layer has two title elements; A2 one heading; the join merged them | `_restore_title_lines` also restores several title elements, in the printed case |
+| Figure 3.4 (b) before (a) | the tubectomy drawing starts higher; reading order is top-then-left | `_order_lettered_siblings`: adjacent same-numbered figures in caption-letter order |
+| `**Figure 3.1(a**)`, `**(IUDs**)` | trailing `)` trimmed off every mark | a bracket the mark itself opens is kept (`runs_to_body_marks`) |
+| PAGE_OVERFLOW on p046 (needed 65%) | the 45-line side note in the rail was summed into the text column | a measured side-rail node is out of the flow (`fit_factor`) |
+| 12 exercises stacked into the top of p050 | every question carried all 16 boxes of the list | `_distribute_question_boxes`; the questions group spreads over its measured depth; sub-part labels hang |
+| `4 45` folio tab on p045 | Figure 3.4 (b)'s rectangle covers the tab corner; the tab decor was dropped and the crop drawn over it | decor touching the trim is never "inside a figure" (d0); edge decor over a figure draws above it |
+| A figure growing over the folio tab | -- | shapes touching the padded page-number box are never grown over |
+
+Still open: the contents box's grey under-bar and the orange double rule under the exercises
+are not in `decor`; the 3.1 heading's second line is not hung; trailing `?` of an italic
+question is set upright (by the trim rule).
+
+## 17 · Build speed and the built-in page check (2026-10-24)
+
+| what was slow / manual | why | now |
+|---|---|---|
+| BIO12L ch01 build ran 45 min | the drawing cache was keyed by the path as WRITTEN; the figure join opened `source_pdfs/...`, the extractor `source_pdfs\...`, so p014's 1.8 M paths were re-read in a Python loop | cache key is the normalised absolute path; the coarse grid is vectorised (p014: 51s once) |
+| every rebuild re-walked every page's drawings | no persistence | `cache/drawings/<pdf sha256>/pNNNN.vK.pkl.z` -- slim, compressed, keyed by file CONTENT; extract 177s -> 75s on a rebuild. Bump `_DRAW_CACHE_VERSION` when the reader changes |
+| nobody could see where a build's time went | no timings | `run_chapter.py` prints `time  build Ns, rows, exact.html, cdn, check, compare; total` |
+| page-by-page review was a hand-made script after every build | -- | `code/compare_render.py <ID>` (run by `run_chapter.py`; `--no-compare` skips): book page beside render, `qa/compare/<ID>/pNN.png` + `contact.png`, pages listed worst first by blurred grey difference and colliding lines |
+| chapter.html built every time | not a deliverable | dropped (owner, 2026-10-24); deliverables are chapter-exact.html, chapter.json, chapter.md |
+
+`apply_agent_figures` spent ~95s of 157s with PyMuPDF rebuilding a page's text page for every
+figure and panel; words, text dict and image list are now read once per page (`_page_read`).
+BIO12L ch01 end to end: 832s -> 423s (build 711s -> 334s), output identical.
+
+## 19 · BIO12L ch02 (Human Reproduction) against the book, all three deliverables (2026-10-24)
+
+The October A2/A2S reads were kept: every read matched its own page of the official file
+(reprint 2026-27), recall 0.92-0.99 against the text layer, the misses being figure labels.
+A3/A4 were re-run on the finished tree (10 sections, 13 subtopics).
+
+| what shipped | why | rule now |
+|---|---|---|
+| Exercises 2-21 inside question 1's part (k); no Exercises section at all (also BIO12L ch01) | Class 12 sets `EXERCISES` in the title face, so it was a `chapter_title` and questions were only split under `exercises`; and an item run `(f)..(k)` could only continue with `(l)` | a `chapter_title` naming an unnumbered section, once a section has opened, is that heading; list items split on two levels -- a number continues the numbers, `(a)`/`(i)` opens parts |
+| p040's `(f)-(k)` loose paragraphs; q1's `(a)-(e)` left in its body | the next page's list opened on a part with no question open; `_split_parts` skips a question that has parts | leading parts join the last question (its own body split first); each carries `page_file` + `region`, and the render draws them on that page |
+| Question 1 wrapped a word a line, off the sheet | printed at its first box, `1. Fill in the blanks:` (0.18 wide) | a question prints in the union of its boxes on its page |
+| Contents rail: 18 bullets, run together in the render | each number is on its own line (`2.1\nThe Male ...`) | `_rail_items` takes a bare number line; MD writes one bullet per entry from `items` |
+| Tree and MD opened on a captionless picture, `CHAPTER 2` after it | A2 listed the opener art first; it was a figure node | chapter titles go before opener art; a captionless unnumbered opener figure with a crop is `pages[].art` (`opener art`, its own `z`) |
+| `SUMMARY` printed twice; its three paragraphs one | A2 reads the boxed summary as one block, heading included; the join absorbed the layer's three paragraph blocks | the heading word is cut from the first child; absorbed layer blocks that each open on an 8-30pt indent are split back (`_split_absorbed_paragraphs`) |
+| `Bo<sup>th</sup>` for `14<sup>th</sup>` | the `th` run follows `14` with no space, so no context words; the boundary search took `Both` | a short fragment glued to a word is placed after that word |
+| `Immediately after implantation ... differentiates` lost from all three files | three short body-type lines beside Figure 2.12 were absorbed as its labels | body-size text continuing a paragraph's measure (same left edge, <= 20pt below) is never a label |
+| Two peach shapes and their keylines over Figure 2.10 | painted, then covered by the picture; clip-aware reading cannot see that | `_fill_shows`: a filled panel whose colour shows on < 1/50 of its box at 36 dpi is dropped, with any outline of the same rect |
+| Rounded Class 11 folio tab, no caption tint on p034/p036 | 29/26 MB pages are read coarse, so `page_decor` returns nothing | trim-touching decor borrowed from the nearest measured page of the same side; caption tint from the measured tint/caption padding |
+| Running head bold on versos (BIO11L ch02, reported by e0) | style taken from the first run -- the folio | `header_style` from the first run with a letter |
+
+Figure 2.9's crop (p034) started 0.022 of the page low: on a coarse page `vector_figures` drops
+every 4pt strip inside the head zone, which took the graph's top rows. Fixed in
+`apply_agent_figures` (`coarse_tops_extended`): on a coarse page only, a figure box stopping
+> 10pt under A2's top extends to the coarse ink inside A2's box, never above it.
+
+## 20 · BIO12L ch04 (Principles of Inheritance and Variation): first build, checked against the book (2026-10-24)
+
+Official `lebo104.pdf` (28 pages: Unit VII opener, the Watson/Crick page, then the chapter at
+p003). The October A2/A2S reads were made from a chapter-only file: every read matched the
+official page two later (word precision 1.00) and its figure boxes registered exactly (p003 opener
+art at [287,58,533,210] pt, read [287,59,536,211]), so they were renumbered +2 and kept; all 26
+pass today's A2 check, misses being running heads only. Originals: `steps/_archive/BIO12L-ch04-old/`.
+p001/p002 stay on the text layer, as in ch01. A3 was re-run on the finished tree.
+
+| what shipped | why | rule now |
+|---|---|---|
+| Table 4.1 an empty peach box: no caption, no rows (JSON, MD, page) | its caption opens p005 at y 0.108 and was typed the running head; then Figure 4.2, 14pt away, took the rows as labels | a Table/Figure caption is never the running head; `_TABLE_RE` also takes Class 12's `Table 4.1:`; `_mark_tables` runs BEFORE `_absorb_figure_labels` |
+| Tables 4.2 and 4.3 cut after two rows, the rest loose text over the grid | the watermark (furniture) and the margin folio `61` sort among the rows and ended the table | furniture, and a folio/running head outside the table's column band, are stepped over; the table stops at a LONG (> 60 chars) block whose MAIN size is larger than its rows' (Table 4.3's 10.5pt prose under 9.5pt rows; BIO11L Table 9.2's 10.5pt `PO4 3-` row stays), judged inside the column band only, and at a `*` footnote |
+| Every table caption lost its 2nd line (`Mendel in Pea`, `in Human Population`, `and Genes`) | `_join_caption_lines` knew only `Figure` captions | Table captions too -- continued by a BOLD line only, so a header row never joins |
+| Table 4.2's cells `I^A` printed literally everywhere | A2S writes scripts with `^`/`_` | `join_agent_special.cell_scripts`: plain cell text + `table_grid.cell_marks`; MD writes `I<sup>A</sup>`, the render sets it, italic when the layer's italic fragments hold the letters |
+| `4.2.2.1 Incomplete Dominance` missing | italic, 12pt, at y 0.107: the top-of-page rule wanted bold | a numbered top line set bold OR italic, larger than body, is a heading; any 4+-level numbered line set italic/bold/larger is a heading (also BIO11L ch04 `4.2.11.3 Class -- Osteichthyes`, swallowed by Figure 4.20) |
+| Both Figure 4.13s (honey bee p021, pedigree symbols p022) a third of their artwork | vector drawings with OUTLINED labels, inside a paragraph that wraps round them: the paragraph's block box vetoed the clusters | a figure measured at < 60% of A2's box is re-measured from its own ink inside A2's box (`own_ink`: paths, never one crossing a text line, never furniture or another figure's), held inside A2's box |
+| Figure 4.1's column heads and Figure 4.3's parental tier cut off | drawings wholly in the head zone (top 13%) are skipped; the extension existed for coarse pages only | every page: a box stopping > 10pt under A2's top extends up to its own ink inside A2's box |
+| Figures 4.1 / 4.11 boxes from x 0 | the Class 12 folio tab (trim-touching) clustered with them | `vector_figures` drops trim-touching paths -- not on a coarse page, whose grid strips run to the trim (BIO12L ch01 Figure 1.11) |
+| The binomial and 9:3:3:1 lines printed twice (DUPLICATE_CONTENT) | equation gathering took only blocks <= 42 chars; longer ones were rebuilt from spans beside the original | a block >= 95% inside A2's figure/equation box whose words A2 never read as text is that box's (also Figure 4.9's `Possibility I ...` column heads) |
+| `<sup>A</sup> daughter`; `both A and B types` superscript; `HbSHb<sup>S</sup>` | a glued script fragment (`Hb`+`A`, `I`+`A`) not found on its word fell through to any free-standing letter | a glued fragment is placed on its word or not at all; the search looks back over the word when the previous formatted run ended on it (`quiescent stage (G`+`0`); a run ending in its own space (`1 ` of `F1 plants`) has nothing glued after it; never on a range already placed (`G11`) |
+| `Note: The strength of linkage ...` a loose paragraph under Figure 4.11 | 4.7pt under the caption; the join allowed 4pt | a caption's `Note:` line joins up to 8pt below |
+| (i)/(ii)/(iii) lists set at ~8pt | `.li` rows carry a 1.2mm gap, so 3 rows overran their box and the fit script shrank them | rows at the measured pitch (box depth / printed lines) |
+| beta printed like `6` | Bonum's beta is a curled form; NCERT sets Greek in a Times face | a Greek-only `@font-face` (local Times) ahead of Bonum |
+| No Summary section; its six paragraphs one 3,300-character paragraph over two pages | A2 reads the box as one block, `SUMMARY` included; the join absorbed the layer's heading with the paragraphs, and the centred heading failed the indent test that splits them back | a section heading the agent block opens with keeps its own element (read before the block); its words leave the agent text |
+| `Here can you tell ... yellow/green ...?` upright | the layer's italic run breaks the line after `yellow/`; the agent writes `yellow/green` | `_find_flex`: the space after a word ending `/` or `-` is optional |
+| Table 4.3's note row squeezed into column A, the grid running onto the next paragraph | A2S gives it as `[text, ""]` | render: a row with text in its first cell only spans the table (centred when sentence-long) |
+
+**Class 11 regression (built into a scratch folder OUTSIDE `data/` -- a `data/regress_*` copy
+was picked up by `export_rows`' `data/*_ncert` glob and briefly overwrote live rows; peer -36
+fixed `load_docs`).** BIO11L ch01-10 and BIO12L ch01-03 rebuilt into scratch and diffed against
+the live JSON. Changes from these rules: BIO11L Figure 5.8 (cyme) was shipped HALF-cropped and is
+now whole; Figure 5.15's top restored; ch10 G0/G1/G2 subscripts unchanged; BIO12L ch01 `3<sup>0</sup>
+minutes` (a wrong superscript) now `30`; BIO12L Figure 2.10's sperm tails restored. Class 11
+deliverables were NOT republished.
+
+## 21 · BIO12L ch05 (Molecular Basis of Inheritance): first build, checked against the book (2026-10-25)
+
+Built from the official file (`Chapter_5.pdf`, 31 pages, PageMaker -> Ghostscript, 568.8 x 777.6 pt,
+the chapter at p001 -- no unit opener). The October A2/A2S reads matched it page for page (word
+precision 1.00 on all 31); four pages were re-read under today's brief (p004 figure boxes, p019
+continuation flag, p029 caption read as a figure, p031 exercises typed `list`) and A2S re-run for
+their special blocks. Originals: `steps/_archive/BIO12L-ch05-old/`. A3 re-run on the finished tree.
+
+| what shipped | why | rule now |
+|---|---|---|
+| Table 5.1 (the genetic code) a one-line box: 17-row A2S grid squeezed over the list below | the grid is vector art with OUTLINED glyphs -- no text layer -- so only the caption was measured | `apply_agent_figures`: a table covering < 40% of A2's box with no layer text under its caption takes the drawn ink in and touching A2's box (`grid_drawn`); the render prints the crop under the live caption (`caption_box`); JSON/MD keep A2S's grid |
+| Griffith's `S strain -> Inject into mice` diagram at 0.8 of the book's size | the crop is the box + ~4pt pad, fitted INTO the box with `object-fit:contain` | `cut_figures` records `crop_bbox_pt`; the node carries `image_bbox`; the render places the picture at the crop's own rect |
+| Central dogma diagram cut to `DNA` and its loop; `Central dogma` missing from JSON/MD | A2's box 35pt low (re-read); the label was filed in another cluster's `absorbed_labels` | printed words inside A2's box that no text block holds join the figure; an unnumbered A2S caption printed inside the art becomes the caption (`caption_in_art`, no caption box) |
+| `capping`/`tailing` bold at `called as capping and tailing` as well as `In capping` | `_list_marks_from_pdf` marked the first unmarked occurrence however many the book bolds; the join placed long runs at the first copy after the cursor | list marks only while the box prints more styled copies than the items carry, placed by the preceding word; `_take_runs` places any run by its context words, and drops it if no copy is even preceded by the right word |
+| `the process of splicing` bold (plain in the book) | a layer block carried another block's runs | same context rule |
+| `initiator` (codon) plain; list's last two lines outside its box | the layer block ran the list's tail into the next prompt (`also act as initiator codon. (vi) ... If following ...`), the margin folio having ended the list's own blocks | `_split_leading_tails`: a layer block is cut at a measured line opening with an agent block's first words, before alignment |
+| `Compare the structure of purines ...` (italic prompt, p082) missing from all three files | same: item (v)'s end and the prompt in one layer block, absorbed whole by the list | same rule |
+| HGP goals (iii)-(vi) inside item (ii) | the book misprints `(iiii)`; it was no successor of `(ii)` | `_ROMAN_MISPRINT`: `iiii` sequences as iii; label kept as printed |
+| Exercises one unsplit run, off the sheet | old read typed questions `list`; `1 Group ...` has no full stop | re-read (`question` blocks); the next expected number may lack its stop |
+| Rail: `The Search for Genetic` (no number) + `5.2 Material`; `5.4` + `Replication` | the number's layer block took the title's turnover line | `_merge_split_rail`: an unnumbered entry on a numbered entry's row opens its title |
+| `15NH4Cl`, `15N`, `14N`, `4.6 x 10^6` flat | a digit fragment had to end its word (meant for `th` in `the`); the glued word `x10` did not match the agent's `x 10`; absorbed blocks' runs were joined with no space (`normal14NH`) | digits may touch a letter (never another digit); glued words match symbol spacing and super/subscript digits; a space run between absorbed blocks |
+| Red `B`/`BI`/`BIG` (RAM HAS BRE DCA P) black and partly not bold | a run glued to letters after it was refused; marks had no colour | a run may be glued AFTER (`B` + `RE`); marks carry `color` when a run's ink is neither the block's nor near-black; the render sets it; MD keeps plain bold (colour-only splits rejoined) |
+| `... 3 x 10^6 base pairs. DNA fingerprinting ...` printed twice (p105) | `_norm` dropped `6` from `10^6`, so the next layer block's opening `6 base pairs` was never claimed | `_norm` folds super/subscript digits to ASCII |
+| Three paragraphs shrunk by the fit script (p090, p095, p105) | `_line_geom` counted the layer's Symbol-font arrow `a-grave` and A2's `10^6` digits as letters | those are not letters to the line match; a row that is only a script's digits is dropped |
+| `5.8.1 The Lac operon` upright | headings carried no marks | `title_marks` (italic only); render and MD set them |
+| List item (ii) on p095 not hung | a one-item list fragment was set as plain text | a list body opening on a marker is set as hanging rows |
+
+Still open: exercise sub-lines (Q1's second line, Q3/Q4's sequences) run inline -- the question
+body is joined; Q1 prints `1.` where the book prints `1`; the `RAM  HAS  RED  CAP` letter-spacing
+is single spaces.
+
+## 22 · BIO11L ch14 (Breathing) and ch15 (Body Fluids): first build (2026-10-26)
+
+Built from the official files (`Chapter_14.pdf`, `Chapter_15.pdf`, 12 pages each, PageMaker ->
+Ghostscript; ch14 opens with the Unit 5 opener and the Corti biography). The October A2 reads
+matched the text layer word for word (precision 1.00 on all 24 pages) and were kept; five pages
+were re-read under today's brief as `retry1`: the unit opener (ch14 p001, chapter list not listed
+as furniture), both chapter openers (title listed as the running head) and both Exercises pages
+(`list` -> one `question` per exercise). The old A2S read of ch15's exercise "table" was archived
+(`steps/_archive/BIO11L-ch14-15-old/`). A2L run fresh on all 24 pages; A3 run on the tree (46 and
+54 passages, none dangling).
+
+| what shipped | why | rule now |
+|---|---|---|
+| A lone `–` paragraph after the HCO3 paragraph (ch14 p190), in all three files | the layer set the minus of `forms HCO3- and H+` on its own line; the agent's paragraph already holds it, and the leftover became a `box` node | `_drop_layer_duplicates`: a text-layer para/box with no letter or digit is dropped (no other chapter had one) |
+| A2L reported the `2024-25` foot stamp as a second `page_number` (ch14 p001-p004) | the brief has no role for it; `pages[].folio` takes the FIRST page_number element | stripped from those outputs (raw copies archived); tell A2L agents the stamp is not the folio |
+
+Still open: Table 14.1 and Table 15.1 render as a plain, shallow grid with the caption inside the
+peach box (each chapter's only table, so `_inherit_table_fill` has nothing to inherit, though the
+node's own `fill` is the peach); Figure 14.2 ships whole -- its `(a)`/`(b)` are vector paths with
+no layer letters, so no panel split; the colon after a bold run-in term (`Residual Volume (RV):`)
+is plain where the book sets it bold.
+
+## 23 · BIO11L ch16-19: first build (2026-10-26)
+
+Official files (12, 13, 9, 14 pages). October A2/A2S reads kept where they matched the text layer
+(precision 1.00 everywhere); openers and Exercises pages re-read as `retry1` (ch17 p012, ch18 p008
+and ch16 p001 hit the content filter once and passed on retry, built from the text layer by a
+script). ch19 p014, the blank NOTE page, re-read with no blocks. A2L fresh on 48 pages; A3 on the
+tree. ch15 rebuilt and republished with the same fixes.
+
+| what shipped | why | rule now |
+|---|---|---|
+| ch19 p251 exercise sub-rows printed over the questions; ch16/ch17 blank-line rows twice | a question whose stem is short keyed its 60-letter alignment key into `(a) ...`, matching no layer block; a `_______.` line stopped `_claim_absorbed`; `T₄` (agent) vs `T4` (layer) never matched | `_align` keys a numbered multi-line block by its first line when its full key matches nothing; claims probe without spaces and step over blank lines |
+| Match tables: empty header row, `**Column I Column II**` under the table (MD), loose line (HTML) | the agent reads the header as ONE line; renderers wanted two parts | a single `Column I Column II` part splits into the two header cells (MD and exact HTML) |
+| `Match **Column I** with **Column II**` bold in the stem (ch15, ch17) | agent `bold_terms` filled their first plain occurrence; the layer's bold run `Column I Column II` held both | a term inside a run the layer carried in that style is not filled |
+| ch16 `(d) Uricotelism` and `(d) ADH` one row | the book prints `(d)` twice; `(d)` is no successor of `(d)` | a letter label repeated at a line start opens a new row |
+| `Note` chapter-title inside Exercises (ch19) | the layer's `NOTE` survived on a page the agent found empty | on an empty agent page, layer text the agent listed as furniture is dropped |
+| `**in nature**`, `**animals**` bold (ch16 p205); also ch12 p160 `(ETS) (Figure 12.4) and it is` | `_drop_overlap_copies` flagged the whole trimmed line bold | the remainder is bold only in the copy's own face (ch12 not rebuilt) |
+
+Still open: Fig 16.4 crop cuts `Proximal convoluted tubule`; Figs 17.2, 19.3, 19.4 ship unsplit;
+exercise sub-parts run inline where the book sets columns (ch19 Q3/Q5); the ch14/15 table tint.

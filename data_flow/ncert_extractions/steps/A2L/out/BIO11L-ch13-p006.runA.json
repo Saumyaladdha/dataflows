@@ -1,0 +1,39 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 20.0,
+    "text_block": [0.095, 0.123, 0.684, 0.897],
+    "fill": 0.95,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.095, "x1": 0.684}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.083, 0.388, 0.095],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "fill": "#d1d2d4",
+     "text_color": "#231f20", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.815, 0.066, 0.871, 0.096],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "fill": "#ffffff",
+     "text_color": "#231f20", "space_before": 0.0},
+    {"n": 1, "role": "figure", "bbox": [0.237, 0.123, 0.738, 0.380],
+     "column": "full", "size_rel": 1.0, "space_before": 0.027},
+    {"n": null, "role": "figure_caption", "bbox": [0.167, 0.395, 0.809, 0.436],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif", "space_before": 0.015},
+    {"n": 2, "role": "paragraph", "bbox": [0.095, 0.453, 0.684, 0.596],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.017},
+    {"n": 3, "role": "section_heading", "bbox": [0.096, 0.615, 0.406, 0.630],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "sans",
+     "text_color": "#00aeef", "space_before": 0.019},
+    {"n": 4, "role": "paragraph", "bbox": [0.095, 0.643, 0.684, 0.823],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.013},
+    {"n": 5, "role": "paragraph", "bbox": [0.095, 0.828, 0.684, 0.897],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.005},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.059}
+  ],
+  "note": "Ordinary single-column body page (recto, folio 171 at right in a white tab cut into the header band). Header band is light green #e0ebb6 with a grey strip #d1d2d4 (y~0.083-0.095) carrying the running header. Figure 13.7 (two leaves A/B) is centred above its caption; the caption has no A2 block so n is null. Heading 13.1.5 is bold sans in cyan. Footer band #cadf7f carries the year '2024-25'. Diagonal NCERT watermark ignored. size_pt omitted because the page DPI is not given."
+}

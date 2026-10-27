@@ -1,0 +1,37 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 19.0,
+    "text_block": [0.098, 0.135, 0.686, 0.850],
+    "fill": 0.95,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0815],
+     "column": "full", "size_rel": 1.0, "fill": "#e1ebb4"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0815, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d3d4"},
+    {"n": null, "role": "running_header", "bbox": [0.098, 0.083, 0.223, 0.095],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif",
+     "text_color": "#231f20", "fill": "#d1d3d4"},
+    {"n": null, "role": "page_number", "bbox": [0.828, 0.083, 0.852, 0.096],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans",
+     "text_color": "#231f20", "fill": "#ffffff"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.135, 0.686, 0.249],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.040},
+    {"n": 2, "role": "major_heading", "bbox": [0.358, 0.306, 0.455, 0.320],
+     "column": "full", "size_rel": 1.2, "align": "center", "font": "serif-bold",
+     "text_color": "#00aeef", "space_before": 0.057},
+    {"n": 3, "role": "list", "bbox": [0.103, 0.355, 0.686, 0.850],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.035},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cddf85"}
+  ],
+  "note": "Ordinary recto body page, single full column at x 0.098-0.686 (wide right margin unused). Header is a pale green band (y 0-0.082) over a grey strip (y 0.082-0.095) that carries the small-caps running header 'Animal Kingdom' on the left and a white tab with page number 53 on the right; both strips reported as page_header_band. The foot is a solid green band (y 0.956-1.0) holding the '2024-25' year imprint, reported as footer_rule; the imprint text itself is not reported as a separate element. Exercise list (n=3) is one element covering questions 1-13; option lines '(a)...(d)' under Q8 and Q13 are indented about 0.039 page width from the question numbers. The diagonal '(c) NCERT not to be republished' watermark is omitted as non-layout. text_block is the measured content extent (first line top to last baseline); fill is judged against the book's usual body depth (to about y 0.89). size_rel/size_pt: size_pt not given since DPI is not stated."
+}

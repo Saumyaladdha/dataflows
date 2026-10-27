@@ -1,0 +1,222 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 20.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.3,
+   0.109,
+   0.932,
+   0.909
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.3,
+    "x1": 0.932
+   },
+   {
+    "id": "left",
+    "x0": 0.11,
+    "x1": 0.523
+   },
+   {
+    "id": "right",
+    "x0": 0.611,
+    "x1": 0.932
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.211,
+    0.0,
+    1.0,
+    0.0403
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.117,
+    0.094
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#745421"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.051,
+    0.04,
+    0.195,
+    0.099
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.865,
+    0.0792,
+    0.927,
+    0.0866
+   ],
+   "column": "full",
+   "size_rel": 0.78,
+   "align": "right",
+   "font": "sans",
+   "text_color": "#6d6e71"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.3,
+    0.1097,
+    0.932,
+    0.1556
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.3,
+    0.1639,
+    0.932,
+    0.3579
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0083
+  },
+  {
+   "n": 3,
+   "role": "figure",
+   "bbox": [
+    0.14,
+    0.3961,
+    0.501,
+    0.5318
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "space_before": 0.0382
+  },
+  {
+   "n": 4,
+   "role": "figure_caption",
+   "bbox": [
+    0.11,
+    0.5639,
+    0.523,
+    0.6417
+   ],
+   "column": "left",
+   "size_rel": 0.92,
+   "align": "left",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "text_color": "#221f1f",
+   "space_before": 0.0321
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.611,
+    0.3634,
+    0.932,
+    0.6667
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0055
+  },
+  {
+   "n": 6,
+   "role": "section_heading",
+   "bbox": [
+    0.301,
+    0.6856,
+    0.532,
+    0.7005
+   ],
+   "column": "full",
+   "size_rel": 1.12,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#6d6e71",
+   "space_before": 0.0189
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.3,
+    0.713,
+    0.932,
+    0.9042
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0125
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0,
+    0.7866,
+    0.163,
+    0.8269
+   ],
+   "column": "full",
+   "size_rel": 1.5,
+   "align": "right",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.8301,
+    0.163,
+    0.8361
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary verso body page. Mostly the single full column 0.300-0.932, but between y~0.36 and 0.67 the page splits: Figure 9.3 (gel diagram) and its peach-panel caption (#fef1e2) sit in a LEFT region (x 0.110-0.523, reaching into the left margin) while paragraph 5 runs narrow in a RIGHT column (x 0.611-0.932) beside them. space_before for figure 3 and paragraph 5 is measured from paragraph 2; for heading 6 from paragraph 5. Paragraph 2 opens with a bold run-in head ('Separation and isolation of DNA fragments :'), not a separate heading. 9.2.2 is a grey section_heading. Folio 168 orange box in left margin with thin orange footer_rule beneath. The 'Reprint 2026-27' stamp at y~0.974-0.984 is not the folio and is deliberately left out. size_pt omitted: DPI unknown. Elements listed in A2 block order (figure, caption, then the right-column paragraph)."
+}

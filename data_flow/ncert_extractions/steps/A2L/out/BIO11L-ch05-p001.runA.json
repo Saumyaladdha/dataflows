@@ -1,0 +1,36 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 16.5,
+    "page_kind": "unit_opener",
+    "text_block": [0.097, 0.359, 0.875, 0.818],
+    "fill": 0.86,
+    "columns": [
+      {"id": "left", "x0": 0.097, "x1": 0.31},
+      {"id": "right", "x0": 0.326, "x1": 0.875}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.513, 0.0, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cee283", "space_before": 0.0},
+    {"n": null, "role": "decorative_image", "bbox": [0.425, 0.087, 0.608, 0.335],
+     "column": "full", "size_rel": 1.0, "space_before": 0.087},
+    {"n": null, "role": "chapter_title", "bbox": [0.325, 0.359, 0.481, 0.40],
+     "column": "right", "size_rel": 4.0, "align": "left", "font": "sans-light",
+     "text_color": "#231f20", "space_before": 0.024},
+    {"n": null, "role": "major_heading", "bbox": [0.325, 0.438, 0.671, 0.48],
+     "column": "right", "size_rel": 2.0, "align": "left", "font": "sans-light",
+     "text_color": "#231f20", "space_before": 0.038},
+    {"n": null, "role": "contents_panel", "bbox": [0.097, 0.525, 0.31, 0.691],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif",
+     "space_before": 0.045},
+    {"n": 1, "role": "paragraph", "bbox": [0.326, 0.529, 0.875, 0.818],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.049},
+    {"n": null, "role": "page_number", "bbox": [0.477, 0.955, 0.525, 0.964],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans",
+     "space_before": 0.137}
+  ],
+  "note": "Unit opener (Unit 2), not a chapter opener: no banner, rule bar, header band or running head. A light-green slanted panel (#cee283, sampled in its flat interior) covers the right of the page from x~0.51 at the top to the right edge; it is reported as a decorative_image with its bounding box. Leaf photograph and its reflection are one decorative_image. 'UNIT 2' (chapter_title role, closest allowed) and 'STRUCTURAL ORGANISATION IN PLANTS AND ANIMALS' (major_heading) are not among A2's blocks, so n is null. Contents panel is the left-column list of Chapters 5, 6, 7 (bold 'Chapter N' lines with regular titles), one element, on bare paper. The footer '2024-25' is the edition-year line, not a folio; labelled page_number as the nearest allowed role. The diagonal 'not to be republished' watermark is ignored. body_text_size_px measured on the right-column prose (cap height, original 1700px image). size_pt omitted because the page DPI is not known. UNIT 2 measures about 5.2x body cap height; size_rel is reported as 4.0, the maximum the A2L check accepts, so it is understated."
+}

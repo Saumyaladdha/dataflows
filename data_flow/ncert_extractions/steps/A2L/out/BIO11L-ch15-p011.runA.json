@@ -1,0 +1,222 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2175,
+  "body_text_size_px": 19.5,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.098,
+   0.134,
+   0.815,
+   0.894
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.098,
+    "x1": 0.815
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.0933
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.137,
+    0.081,
+    0.365,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "text_color": "#231f20",
+   "fill": "#d1d2d4",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.827,
+    0.081,
+    0.863,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "center",
+   "font": "serif-bold",
+   "text_color": "#231f20",
+   "fill": "#ffffff",
+   "space_before": 0.0
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.1343,
+    0.686,
+    0.1637
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.041
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.1752,
+    0.686,
+    0.2345
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0115
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.2492,
+    0.687,
+    0.3251
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0147
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.3398,
+    0.687,
+    0.4354
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0147
+  },
+  {
+   "n": 5,
+   "role": "section_heading",
+   "bbox": [
+    0.415,
+    0.4676,
+    0.498,
+    0.4791
+   ],
+   "column": "full",
+   "size_rel": 1.28,
+   "align": "center",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.0322
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.207,
+    0.531,
+    0.638,
+    0.867
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#fffbd5",
+   "space_before": 0.0
+  },
+  {
+   "n": 6,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.4984,
+    0.815,
+    0.5448
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0193
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.5485,
+    0.815,
+    0.6772
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0037
+  },
+  {
+   "n": 8,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.6809,
+    0.815,
+    0.8933
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0037
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.957,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f",
+   "space_before": 0.0
+  }
+ ],
+ "note": "Ordinary recto page, single column. Blocks 1-4 use the normal body measure 0.098-0.686; the SUMMARY (heading block 5 centred, cyan #00adef) and its paragraphs 6-8 are set on a WIDER measure 0.098-0.815. A pale-yellow soft circular tint (#fffbd5, decorative_image, n null) sits behind the summary text at roughly [0.207,0.531,0.638,0.867]. Blocks 2-4 open with bold run-in lead-ins; extra space (~0.011) separates them. Watermark ('© NCERT not to be republished') ignored. The grey strip at y 0.0805-0.0933 (#d1d2d4) inside the light-green header band carries the running header; the white tab (#ffffff) carries the folio. The '2024-25' imprint on the footer band (centre, y~0.955) has no allowed role and is not listed. size_pt omitted: page DPI not known, size_rel is the measured ratio. body_text_size_px is ascender-to-baseline of a body line (~19.5px at 1700px width)."
+}

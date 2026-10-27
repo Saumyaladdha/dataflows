@@ -1,0 +1,221 @@
+{
+ "page": {
+  "page_kind": "biography_page",
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 21,
+  "text_block": [
+   0.1095,
+   0.2468,
+   0.9316,
+   0.6375
+  ],
+  "fill": 0.85,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.1095,
+    "x1": 0.2886
+   },
+   {
+    "id": "right",
+    "x0": 0.3,
+    "x1": 0.9316
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.1398,
+    1.0,
+    0.1722
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.1731,
+    1.0,
+    0.1931
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#93c83f",
+   "space_before": 0.0009
+  },
+  {
+   "n": null,
+   "role": "box",
+   "bbox": [
+    0.0,
+    0.1935,
+    1.0,
+    0.6685
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#fcface",
+   "space_before": 0.0005
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.213,
+    1.0,
+    0.6435
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#fbf59a"
+  },
+  {
+   "n": null,
+   "role": "figure",
+   "bbox": [
+    0.1095,
+    0.3056,
+    0.2886,
+    0.5019
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "space_before": 0.112
+  },
+  {
+   "n": 1,
+   "role": "figure_caption",
+   "bbox": [
+    0.1481,
+    0.5139,
+    0.2513,
+    0.5394
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "center",
+   "font": "sans",
+   "text_color": "#231f20",
+   "fill": "#fcface",
+   "space_before": 0.012
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.3,
+    0.2468,
+    0.9316,
+    0.3134
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "sans",
+   "text_color": "#231f20",
+   "fill": "#fcface",
+   "space_before": 0.0532
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.3,
+    0.319,
+    0.9316,
+    0.4394
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "sans",
+   "text_color": "#231f20",
+   "fill": "#fcface",
+   "space_before": 0.0056
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.3,
+    0.4454,
+    0.9316,
+    0.6375
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "sans",
+   "text_color": "#231f20",
+   "fill": "#fcface",
+   "space_before": 0.006
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.6699,
+    1.0,
+    0.6898
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#93c83f",
+   "space_before": 0.0014
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.6912,
+    1.0,
+    0.7236
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436",
+   "space_before": 0.0014
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.7241,
+    1.0,
+    0.7843
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#049a9b",
+   "space_before": 0.0005
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.7861,
+    1.0,
+    0.8167
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7941d",
+   "space_before": 0.0019
+  }
+ ],
+ "note": "Unit biography page (Herbert Boyer), not an ordinary body page and not a chapter opener: no running header, no header band, no printed folio. Whole content sits on a full-width pale-yellow panel (#fcface, y 0.194-0.669) framed by plain stripes (dark green #4c7436, light green #93c83f above; light green, dark green, teal #049a9b, orange #f7941d below), reported as decorative_image with their fills (not rule_bar, which is reserved for the chapter-opener divider). A brighter yellow (#fbf59a) wedge/triangle decoration behind the prose (plus a thin strip at left, y~0.409-0.431) is reported as one decorative_image with an approximate box. Two columns: left = black-and-white portrait photograph (figure, n null - A2 has no block for the photo) with its caption 'HERBERT BOYER (1936 )' in small caps centred beneath (block n=1); right = three justified sans paragraphs (n=2 lines 1-4 unindented, n=3 and n=4 with first-line indent ~0.03 page width). body_text_size_px = cap height of 'H' in 'Herbert' (21px). 'E. coli' in n=3 is italic. The 'Reprint 2026-27' stamp at the foot (y~0.974) is not a folio and is left out; diagonal 'not to be republished' watermark ignored. size_pt not given (DPI not stated)."
+}

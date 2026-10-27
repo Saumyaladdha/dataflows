@@ -1,0 +1,27 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 22,
+    "text_block": [0.097, 0.132, 0.861, 0.900],
+    "fill": 0.88,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.097, "x1": 0.861}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.080], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.081, 0.301, 0.094], "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.825, 0.080, 0.864, 0.095], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": 1, "role": "figure", "bbox": [0.110, 0.132, 0.861, 0.584], "column": "full", "size_rel": 1.0, "fill": "#fffbd5", "space_before": 0.038},
+    {"n": null, "role": "figure_caption", "bbox": [0.147, 0.598, 0.822, 0.628], "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif", "space_before": 0.014},
+    {"n": 2, "role": "section_heading", "bbox": [0.099, 0.648, 0.383, 0.665], "column": "full", "size_rel": 1.2, "align": "left", "font": "sans", "text_color": "#00a0dc", "space_before": 0.020},
+    {"n": 3, "role": "paragraph", "bbox": [0.097, 0.683, 0.687, 0.753], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.018},
+    {"n": 4, "role": "equation", "bbox": [0.242, 0.756, 0.544, 0.806], "column": "full", "size_rel": 1.0, "align": "center", "font": "serif", "fill": "#fffac1", "space_before": 0.003},
+    {"n": 5, "role": "paragraph", "bbox": [0.097, 0.812, 0.687, 0.850], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.006},
+    {"n": 6, "role": "paragraph", "bbox": [0.097, 0.851, 0.687, 0.900], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.001},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary body page (recto, folio 163), single full column. Body prose measure is 0.097-0.687; figure 12.6 is a full-width flow chart on a pale yellow panel. The figure caption is not among A2's blocks so it carries n null. Block 2 heading has a blue small-caps face; font given as sans is approximate. The foot band is a broad green strip (reported as footer_rule) with a small year imprint in it, not reported separately. page_kind added as an extra page field."
+}

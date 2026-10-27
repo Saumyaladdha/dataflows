@@ -1,0 +1,217 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 21,
+  "text_block": [
+   0.0665,
+   0.109,
+   0.7,
+   0.919
+  ],
+  "fill": 0.995,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.0665,
+    "x1": 0.7
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    0.79,
+    0.0389
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.803,
+    0.0,
+    1.0,
+    0.098
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.0665,
+    0.0785,
+    0.2715,
+    0.0859
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "left",
+   "font": "sans",
+   "text_color": "#6d6e71"
+  },
+  {
+   "n": 1,
+   "role": "section_heading",
+   "bbox": [
+    0.0684,
+    0.1081,
+    0.2228,
+    0.1202
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#6d6e71",
+   "space_before": 0.0222
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.0665,
+    0.1352,
+    0.7,
+    0.237
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.015
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.0665,
+    0.2426,
+    0.7,
+    0.5056
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "indent": 0.031,
+   "space_before": 0.0056
+  },
+  {
+   "n": 4,
+   "role": "section_heading",
+   "bbox": [
+    0.0684,
+    0.5245,
+    0.2994,
+    0.5389
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#6d6e71",
+   "space_before": 0.0189
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.0665,
+    0.5519,
+    0.7,
+    0.7079
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.013
+  },
+  {
+   "n": 6,
+   "role": "section_heading",
+   "bbox": [
+    0.0684,
+    0.7269,
+    0.4418,
+    0.7412
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#6d6e71",
+   "space_before": 0.019
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.0665,
+    0.7537,
+    0.7,
+    0.856
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0125
+  },
+  {
+   "n": 8,
+   "role": "paragraph",
+   "bbox": [
+    0.0665,
+    0.8648,
+    0.7,
+    0.9139
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0088
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.8392,
+    0.7861,
+    1.0,
+    0.8269
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "left",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.8392,
+    0.8301,
+    1.0,
+    0.8361
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary recto body page (page_kind: ordinary), single full column 0.0665-0.700. Three grey bold serif subsection headings (7.2.5, 7.2.6, 7.2.7). Block 3 has a first-line indent; block 8 opens with a bold run-in 'Lymphoid organs:' with no indent, after a slightly larger gap than a normal paragraph break. Folio '137' in the orange tab at the right edge with a thin orange bar beneath. The 'Reprint 2026-27' stamp at the page foot (y~0.974-0.984) is not the folio and is left out; the printed folio is the number in the orange tab. body_text_size_px is the ascender-to-baseline height of a body line without descenders (21px; line pitch ~39px). size_pt omitted: page DPI is not given in the input. space_before is measured to the previous content element in reading order (furniture skipped). text_block is the book's standard body block for this side of the spread (depth 0.109-0.919, measured on full pages of this chapter); fill is relative to it."
+}

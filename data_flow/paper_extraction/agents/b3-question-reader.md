@@ -43,6 +43,11 @@ You receive one JSON file at the input path in your instruction. It contains:
   the question needs is inside the picture you are reading. Set `has_figure: true` and give
   `figure_bbox` so the crop step can cut it for `b3f-figure-transcriber`, which copies its caption
   and labels. Do NOT transcribe the figure's labels yourself and do NOT describe the drawing.
+- **Options that are drawings get `option_boxes`.** When an option IS a structure, circuit or graph
+  (with or without text after it), give one box per option: `"option_boxes": {"1": [x0,y0,x1,y1],
+  "2": [...], ...}` in pixels of the crop, each around that option's drawing only. `figure_bbox`
+  is then the STEM's own figure, or null if only the options are drawn. A box written in `note`
+  is never cut — 2017_A q080's four option structures were lost that way.
 - **The placeholder rules below are LEGACY.** `"(Image option — will be added soon)"` and blank
   option renders came from the old web scrape, where the source had dropped the picture. A v2
   booklet does not do this. If you meet a placeholder on a v2 paper, that is a geometry or source

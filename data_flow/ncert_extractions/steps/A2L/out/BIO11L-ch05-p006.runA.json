@@ -1,0 +1,31 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 21.0,
+    "page_kind": "ordinary",
+    "text_block": [0.127, 0.131, 0.902, 0.905],
+    "fill": 0.99,
+    "columns": [
+      {"id": "left", "x0": 0.127, "x1": 0.466},
+      {"id": "right", "x0": 0.490, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0786], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.062, 0.184, 0.0915], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "fill": "#ffffff", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.838, 0.0786, 0.899, 0.0915], "column": "full", "size_rel": 0.95, "align": "right", "font": "serif", "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 1, "role": "figure", "bbox": [0.127, 0.135, 0.453, 0.573], "column": "left", "size_rel": 1.0, "space_before": 0.043},
+    {"n": 2, "role": "figure_caption", "bbox": [0.127, 0.582, 0.410, 0.640], "column": "left", "size_rel": 0.95, "align": "left", "font": "serif", "space_before": 0.009},
+    {"n": 3, "role": "figure", "bbox": [0.128, 0.647, 0.466, 0.855], "column": "left", "size_rel": 1.0, "space_before": 0.007},
+    {"n": 4, "role": "figure_caption", "bbox": [0.127, 0.861, 0.453, 0.905], "column": "left", "size_rel": 0.95, "align": "left", "font": "serif", "space_before": 0.006},
+    {"n": 5, "role": "paragraph", "bbox": [0.490, 0.131, 0.902, 0.470], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.040},
+    {"n": 6, "role": "section_heading", "bbox": [0.490, 0.487, 0.657, 0.504], "column": "right", "size_rel": 1.3, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.017},
+    {"n": 7, "role": "paragraph", "bbox": [0.490, 0.515, 0.902, 0.673], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.011},
+    {"n": 8, "role": "section_heading", "bbox": [0.490, 0.690, 0.728, 0.707], "column": "right", "size_rel": 1.3, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.017},
+    {"n": 9, "role": "paragraph", "bbox": [0.490, 0.720, 0.902, 0.864], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.013},
+    {"n": 10, "role": "paragraph", "bbox": [0.490, 0.869, 0.902, 0.903], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.005},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9554, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary verso body page, two columns: the left column (0.127-0.466) holds Figure 5.4 (three leaf photos a/b/c with labels) and Figure 5.5 (neem and silk cotton) each with a left-aligned caption beneath; the right column (0.490-0.902) holds the prose with headings 5.3.1 and 5.3.2. Elements listed left column first, matching A2's block order. Header: pale green band #e0ebb6 above grey strip #d1d2d4 carrying the running head 'Biology' at the right; page number 60 on a white tab at the left. Headings cyan #00adef. Paragraphs 5 and 10 open with a first-line indent; paragraph 10 continues onto the next page. Bottom band #cadf7f (with '2024-25' imprint) reported as footer_rule; watermark not reported. size_pt omitted because the page DPI is not given."
+}

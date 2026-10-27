@@ -1,0 +1,50 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 19.5,
+    "page_kind": "chapter_opener",
+    "text_block": [0.098, 0.449, 0.872, 0.895],
+    "fill": 0.98,
+    "columns": [
+      {"id": "left", "x0": 0.098, "x1": 0.262},
+      {"id": "right", "x0": 0.283, "x1": 0.872}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.0, 0.0, 1.0, 0.43],
+     "column": "full", "size_rel": 1.0, "fill": "#cfe28a", "space_before": 0.0},
+    {"n": null, "role": "qr_code", "bbox": [0.734, 0.108, 0.874, 0.217],
+     "column": "full", "size_rel": 1.0, "space_before": 0.108},
+    {"n": null, "role": "major_heading", "bbox": [0.322, 0.32, 0.488, 0.35],
+     "column": "right", "size_rel": 3.0, "align": "left", "font": "serif-bold",
+     "text_color": "#0b74b9", "space_before": 0.103},
+    {"n": 1, "role": "chapter_title", "bbox": [0.322, 0.37, 0.873, 0.40],
+     "column": "right", "size_rel": 2.9, "align": "left", "font": "serif-bold",
+     "text_color": "#0b74b9", "space_before": 0.02},
+    {"n": null, "role": "contents_panel", "bbox": [0.098, 0.449, 0.262, 0.773],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "text_color": "#29abe2", "space_before": 0.049},
+    {"n": 2, "role": "paragraph", "bbox": [0.283, 0.449, 0.872, 0.52],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.049},
+    {"n": 3, "role": "paragraph", "bbox": [0.283, 0.525, 0.872, 0.673],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "indent": 0.03, "space_before": 0.005},
+    {"n": 4, "role": "paragraph", "bbox": [0.283, 0.678, 0.872, 0.749],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "indent": 0.03, "space_before": 0.005},
+    {"n": 5, "role": "section_heading", "bbox": [0.283, 0.785, 0.435, 0.80],
+     "column": "right", "size_rel": 1.2, "align": "left", "font": "serif-bold",
+     "text_color": "#29abe2", "space_before": 0.036},
+    {"n": 6, "role": "paragraph", "bbox": [0.283, 0.822, 0.872, 0.895],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.022},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cfe28a", "space_before": 0.061},
+    {"n": null, "role": "page_number", "bbox": [0.477, 0.955, 0.525, 0.964],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans",
+     "space_before": 0.0}
+  ],
+  "note": "Chapter opener. Top banner is a light-green gradient (flat interior at the top sampled #cfe28a) fading to white by y~0.43; there is no separate rule_bar. QR code (11080CH05) top right. 'CHAPTER 5' label is not among A2's blocks (n null, reported as major_heading); block 1 matched to the title line 'MORPHOLOGY OF FLOWERING PLANTS', both blue small-caps serif bold. Left column holds the italic cyan contents list 5.1-5.9 as one contents_panel element on bare paper. Paragraphs 3 and 4 have first-line indents (indent refers to the first line). Section heading '5.1 THE ROOT' in cyan bold small caps. A thick light-green band runs across the page foot (y~0.956-1.0), reported as footer_rule with fill; the '2024-25' edition-year line sits on it and is labelled page_number as nearest allowed role. A thin green vertical line runs down the left page edge between banner and foot band (frame decor, not reported separately). Diagonal watermark ignored. body_text_size_px measured on right-column prose. size_pt omitted because page DPI is not known."
+}

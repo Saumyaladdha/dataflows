@@ -1,0 +1,36 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.128, 0.775, 0.909],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.080],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.137, 0.080, 0.395, 0.094],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "fill": "#d1d2d4",
+     "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.064, 0.870, 0.094],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "sans", "fill": "#ffffff"},
+    {"n": 1, "role": "figure", "bbox": [0.152, 0.128, 0.775, 0.506],
+     "column": "full", "size_rel": 1.0, "space_before": 0.034},
+    {"n": 2, "role": "figure_caption", "bbox": [0.285, 0.513, 0.686, 0.526],
+     "column": "full", "size_rel": 0.95, "align": "right", "font": "serif", "space_before": 0.007},
+    {"n": 3, "role": "list", "bbox": [0.098, 0.544, 0.686, 0.765],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.029,
+     "space_before": 0.018},
+    {"n": 4, "role": "paragraph", "bbox": [0.098, 0.774, 0.686, 0.843],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.009},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.845, 0.686, 0.909],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.002},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.049}
+  ],
+  "note": "Ordinary recto body page, single text column 0.098-0.686. Figure 11.7 (raster diagram on a faint off-white backing) is wide, spanning x 0.152-0.775 and extending into the right margin beyond the text measure; caption n=2 is set right-aligned ending at the text column's right edge. List n=3 holds both items (b) and (c) as one element (A2 lists only one list block); items use a hanging indent, label at the column edge, text inset ~0.029. Paragraphs n=4 and n=5 have first-line indents ~0.029. Header: pale green band #e0ebb6 over grey strip #d1d2d4 with small-caps running head; folio in white rounded tab at right. Foot band #cadf7f with '2024-25' reported as footer_rule. text_block x1 widened to the figure's right edge. size_pt omitted: DPI not given. Diagonal watermark ignored."
+}

@@ -1,0 +1,28 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20.0,
+    "page_kind": "chapter_opener",
+    "text_block": [0.099, 0.449, 0.872, 0.903],
+    "fill": 1.0,
+    "columns": [
+      {"id": "left", "x0": 0.099, "x1": 0.262},
+      {"id": "right", "x0": 0.283, "x1": 0.872}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.0, 0.0, 1.0, 0.42], "column": "full", "size_rel": 1.0, "fill": "#d1e28c", "space_before": 0.0},
+    {"n": null, "role": "qr_code", "bbox": [0.734, 0.109, 0.872, 0.219], "column": "full", "size_rel": 1.0, "space_before": 0.109},
+    {"n": 1, "role": "chapter_title", "bbox": [0.32, 0.322, 0.517, 0.353], "column": "full", "size_rel": 3.0, "align": "left", "font": "serif-bold", "text_color": "#0073bd", "space_before": 0.103},
+    {"n": 2, "role": "chapter_title", "bbox": [0.32, 0.372, 0.809, 0.403], "column": "full", "size_rel": 2.7, "align": "left", "font": "serif-bold", "text_color": "#0073bd", "space_before": 0.019},
+    {"n": null, "role": "contents_panel", "bbox": [0.099, 0.449, 0.262, 0.718], "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-italic", "text_color": "#00adef", "space_before": 0.046},
+    {"n": 3, "role": "paragraph", "bbox": [0.283, 0.45, 0.872, 0.714], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.047},
+    {"n": 4, "role": "section_heading", "bbox": [0.285, 0.741, 0.415, 0.756], "column": "right", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.027},
+    {"n": 5, "role": "paragraph", "bbox": [0.283, 0.776, 0.872, 0.808], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.02},
+    {"n": 6, "role": "section_heading", "bbox": [0.285, 0.826, 0.437, 0.842], "column": "right", "size_rel": 1.15, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.018},
+    {"n": 7, "role": "paragraph", "bbox": [0.283, 0.852, 0.872, 0.903], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.01},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.055}
+  ],
+  "note": "Two-column chapter-opening page. The banner is a vertical gradient from green (#d1e28c sampled at the flat top interior) fading to near-white by y~0.42; fill reports the top colour. The contents panel (six italic cyan section entries, no tinted fill) is one element in the left column; it has no A2 block so n is null. body_text_size_px is the cap height of the opening prose (line pitch ~39px). text_block covers the two-column body area below the title; the chapter label and title sit above it at y 0.322-0.403. The bottom green band is reported as footer_rule though it is a full-height strip rather than a thin rule; the small '2024-25' print-year text centred on it is omitted (not a page number). No size_pt given: the page DPI is not known."
+}

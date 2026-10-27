@@ -1,0 +1,832 @@
+{
+ "source": "docs/question_categories/RULEBOOK.md",
+ "axes": {
+  "E1": {
+   "name": "Question type",
+   "means": "the shape on the page"
+  },
+  "E2": {
+   "name": "Format",
+   "means": "what the ANSWER must contain"
+  },
+  "E3": {
+   "name": "Content shape",
+   "means": "what is being tested, plus the actual concept"
+  },
+  "E4": {
+   "name": "Thinking",
+   "means": "three separate questions, not one"
+  },
+  "E5": {
+   "name": "Trap",
+   "means": "one option, one mistake, or nothing"
+  }
+ },
+ "labels": {
+  "plain_mcq": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "a question and four answers, no lettered items, no lists, no scheme",
+   "requires": "anything with A/B/C or I/II"
+  },
+  "match_the_lists": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "two labelled lists to pair, answer is a pairing code",
+   "requires": "a single list to order"
+  },
+  "arrange_in_order": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "items to sequence, answer is an order",
+   "requires": "a pairing"
+  },
+  "assertion_reason": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "labelled Assertion and Reason, options about truth and explanation",
+   "requires": "two statements NOT labelled A/R"
+  },
+  "statement_i_ii": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "exactly two statements, labelled I/II or Statement I/II",
+   "requires": "three or more"
+  },
+  "list_of_statements": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "three or more lettered statements, answer selects a subset",
+   "requires": "exactly two"
+  },
+  "figure_to_read": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "the question cannot be answered without reading a figure",
+   "requires": "a figure that only decorates"
+  },
+  "diagram_labelled": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "a figure with labels, the answer names one",
+   "requires": "a figure read for a value"
+  },
+  "graph_options": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "the four OPTIONS are graphs",
+   "requires": "a graph in the stem"
+  },
+  "structure_options": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "the four OPTIONS are structures / reactions",
+   "requires": "a structure in the stem"
+  },
+  "reaction_options": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "the four OPTIONS are structures / reactions",
+   "requires": "a structure in the stem"
+  },
+  "reaction_scheme": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "a multi-arrow scheme in the stem",
+   "requires": "one reaction"
+  },
+  "multi_part_respectively": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "several blanks answered together (\"respectively\")",
+   "requires": "one blank"
+  },
+  "fill_in_blank": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "a printed blank in the stem",
+   "requires": "an implicit gap"
+  },
+  "statement_options": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "no statement block is printed: the stem is only an instruction or a trailing \"because\", and each option is itself a full statement to be judged",
+   "requires": "a printed block of lettered statements"
+  },
+  "pair_options": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "each option is a pair, group or set of same-kind items accepted or rejected whole — half an option right scores zero",
+   "requires": "two printed lists to pair"
+  },
+  "list_of_structures": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "a lettered list whose items are drawn structures or figures, to be judged or counted",
+   "requires": "the four OPTIONS being structures"
+  },
+  "experiment_based": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "overlay — a setup or observation is supplied and must be interpreted before anything else can start",
+   "requires": "a procedure merely mentioned"
+  },
+  "table_based": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "overlay — a table of features or measurements in the stem must be read across rows or columns",
+   "requires": "a list of statements"
+  },
+  "new_type": {
+   "axis": "E1",
+   "axis_name": "Question type — the shape on the page",
+   "means": "escape hatch — none of the above fits the printed shape",
+   "requires": "forcing a near fit"
+  },
+  "name_or_identify": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a name, term, colour, organism, scientist",
+   "requires": null
+  },
+  "recall_value": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a specific stored value, held in memory rather than computed — PS II's absorption maximum, 680 nm",
+   "requires": null
+  },
+  "calculate_value": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a number the student computes from the stem's numbers",
+   "requires": null
+  },
+  "count_qualifying_items": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a count: how many of the listed species are aromatic, how many statements are correct, how many organisms show a stated feature",
+   "requires": null
+  },
+  "derive_expression": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a symbolic expression",
+   "requires": null
+  },
+  "pick_ratio": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a ratio, as a ratio",
+   "requires": null
+  },
+  "pick_direction": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a direction or sense — the direction of a magnetic field, a force, or an angular acceleration (eastward, clockwise, into the page)",
+   "requires": null
+  },
+  "pick_order": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "an ordering of items",
+   "requires": null
+  },
+  "pick_match_code": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a pairing code (A-II, B-IV, …)",
+   "requires": null
+  },
+  "pick_correct_combination": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a subset of lettered statements",
+   "requires": null
+  },
+  "judge_assertion_reason": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "one of the four A/R verdicts",
+   "requires": null
+  },
+  "judge_two_statements": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "one of the four Statement I/II verdicts",
+   "requires": null
+  },
+  "predict_product": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a chemical product, intermediate, starting material or the reagent set that effects a conversion",
+   "requires": null
+  },
+  "pick_graph_or_label": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a graph, or a bare label read off a figure",
+   "requires": null
+  },
+  "pick_correct_statement": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a whole claim graded as correct — a sentence, a balanced equation, a described process — or the incorrect one when the stem is negated",
+   "requires": null
+  },
+  "pick_both_parts": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "two or more independent answers that must ALL hold at once: magnitude and direction, two numbers, a pair or triple of names. Half right scores nothing",
+   "requires": null
+  },
+  "pick_cause_or_effect": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "one side of a causal link — a rival cause of a granted fact (\"is due to\"), or a rival outcome of a stated change (\"on increasing X, Y will\")",
+   "requires": null
+  },
+  "identify_structure_or_compound": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "a chemical species, where the options are drawn structures compared against each other and no reaction is printed",
+   "requires": null
+  },
+  "new_format": {
+   "axis": "E2",
+   "axis_name": "Format — what the ANSWER must contain",
+   "means": "escape hatch — none of the above fits; write what you saw in the flag",
+   "requires": "Tie-break:** read only the four options. If they are temperatures, the label is `calculate_value` or `recall_value` — never `pick_ratio`, however much ratio work the solution needs. `recall_value` vs `calculate_value`: is the value stored, or computed from the stem's numbers? `count_qualifying_items` vs `calculate_value`: counting was previously folded into `calculate_value` as \"a small integer produced by counting\", which hid a distinct task — nothing is computed, every listed item is adjudicated and the integer is the tally. `Q-000105` (how many species obey Hückel's rule, options 4 / 6 / 2 / 5) is the clear case. `pick_correct_statement` vs `pick_correct_combination`: are the statements printed as a lettered block the options then select from? Block → `pick_correct_combination`. Each option a standalone claim → `pick_correct_statement`. `pick_cause_or_effect` vs `pick_direction`: `pick_direction` is a spatial or rotational sense (eastward, clockwise, into the page). A quantity moving up or down **as a consequence** of a stated change is `pick_cause_or_effect`. `identify_structure_or_compound` vs `predict_product`: is a reaction printed? Reaction printed → `predict_product`. Four structures ranked on a criterion → `identify_structure_or_compound`. `pick_both_parts` vs E1 `multi_part_respectively`: these sit on different axes and usually co-occur. E1 records that the stem asked for several things; E2 records that the answer must get them all right together."
+  },
+  "formula_or_law": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "a stated relation, law or rule applied, rearranged or chained — including a proportionality where constants cancel, a dimensional formula, and a limiting or boundary condition (critical angle, resonance, terminal velocity)",
+   "requires": "a stored number"
+  },
+  "example_list": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "a taught list or table of named items each tied to a trait, role, effect or partner; membership or the pairing IS the fact, and nothing about how it works rebuilds it",
+   "requires": "assigning items to classes by a criterion"
+  },
+  "process": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "a process or pathway and how it runs: the ordered steps, which stage does what, the causal link that makes the outcome happen, or the overall summary equation",
+   "requires": "a property of a structure"
+  },
+  "definition_term": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "what a term or quantity means, including holding two neighbouring terms apart; the strict reading of the definition decides it",
+   "requires": "explaining why a thing behaves as it does"
+  },
+  "classification_hierarchy": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "a scheme filing named entities into classes, groups, kingdoms or types, including the criterion that decides which box something sits in",
+   "requires": "a plain association"
+  },
+  "diagram": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "the material is a picture: a figure, circuit, map or apparatus sketch whose topology or geometry is the content, or a memorised labelled diagram — including where a named part sits inside a larger structure",
+   "requires": "a plot with axes"
+  },
+  "structure_chemical": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "the structure and bonding of a named species: geometry, electron counts (octet, VSEPR, MO filling, π electrons), oxidation states, or a structure rebuilt from memory",
+   "requires": "the transformation it undergoes"
+  },
+  "trend": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "behaviour across a series, or a comparison between named cases: which is larger, which way a quantity moves, where the series breaks",
+   "requires": "one value"
+  },
+  "practical_procedure": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "a named experiment, bench or field procedure, instrument or device: its setup, materials, what is in a named reagent, what an observation means, what each part is for",
+   "requires": "the law the instrument happens to exploit"
+  },
+  "reaction": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "what a specific reagent or condition does to a specific substrate — the transformation, its product, its reagent, or how far an oxidation is pushed",
+   "requires": "why it goes that way"
+  },
+  "nomenclature_rule": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "a naming, notation or sign convention that is agreed rather than derived: IUPAC and coordination names, a resistor colour code, what \"first excited state\" counts from, Cartesian signs, a pedigree symbol",
+   "requires": "a definition with physical content"
+  },
+  "value_or_data": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "a magnitude, count, wavelength, percentage or tabulated figure that exists only as a printed number in the source and is never supplied by the question",
+   "requires": "a number computed from the stem"
+  },
+  "reaction_mechanism": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "why a reaction goes the way it does: intermediate stability, attack geometry, rearrangement, the positional reach of a substituent effect",
+   "requires": "which reagent does what"
+  },
+  "disease_cause": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "the link between a disorder, its causal agent and its sign or symptom, entered from any of the three corners",
+   "requires": "a general example list"
+  },
+  "graph": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "a plot with axes is the material: a curve shape, a slope, an intercept, or which of four plots is consistent with a relation",
+   "requires": "a spatial arrangement"
+  },
+  "scientist_history": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "who did it, when, or which body issued it — an attribution or a date with no subject reasoning to fall back on",
+   "requires": "the content of their work"
+  },
+  "current_affairs": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "a time-bound fact that appears in no NCERT edition: a recent event, a current office-holder, a figure that changes year to year",
+   "requires": "a dated event the textbook itself records"
+  },
+  "life_cycle": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "which generation is which across a life cycle and what depends on what: haploid vs diploid stages, alternation of generations, which stage is dominant or free-living",
+   "requires": "any other staged sequence"
+  },
+  "structure_function": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "a biological structure tied to the function it performs — guard-cell wall thickening and stomatal movement",
+   "requires": "a structure merely named or located"
+  },
+  "structure_property": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "a chemical property that FOLLOWS from structure: acidity, stability, solubility, reactivity",
+   "requires": "the structure or electron count itself"
+  },
+  "experimental_observation": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "what is actually seen at the bench: flame colours, precipitates, colour changes, fluorescence",
+   "requires": "the apparatus or the protocol"
+  },
+  "organism_characteristic": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "the diagnostic features of a plant group, animal group or microorganism",
+   "requires": "filing that organism into a taxon"
+  },
+  "new_shape": {
+   "axis": "E3",
+   "axis_name": "Content shape — what is being tested, plus the actual concept",
+   "means": "escape hatch — none of the above fits; record it and flag it",
+   "requires": "forcing a near fit"
+  },
+  "recall": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "one stored fact decides it",
+   "requires": "a rule applied to a case"
+  },
+  "concept_discrimination": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "choosing between two neighbouring concepts",
+   "requires": "recalling one"
+  },
+  "application": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "a stated rule, criterion or convention applied to this case. The rule must be known first — application is not knowledge-free",
+   "requires": "recall of the rule itself"
+  },
+  "explanatory_reasoning": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "the live decision is whether one thing accounts for another",
+   "requires": "checking two facts"
+  },
+  "calculation": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "arriving at a number or expression by computing",
+   "requires": "reading one off"
+  },
+  "representation_translation": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "moving between two representations of the same thing: an equation to a graph, a chemical name to its structure, a circuit to its equivalent",
+   "requires": "reading one representation"
+  },
+  "condition_based_reasoning": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "a rule applied under a stated condition that changes the outcome — the specified temperature, medium, reagent, or \"battery disconnected\"",
+   "requires": "applying a rule with no condition attached"
+  },
+  "dimensional_reasoning": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "the relationship is derived or settled BY dimensions",
+   "requires": "using dimensions to check an answer reached another way"
+  },
+  "single_step": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "one step, however much knowledge it needs",
+   "requires": null
+  },
+  "multi_step_dependent": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "step 2 needs step 1's result. Four independent match-checks are NOT four steps",
+   "requires": null
+  },
+  "several_independent_checks": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "each item verified separately, verdicts combined",
+   "requires": "4c. `strategy_available` (zero or more, optional)** `elimination`, `estimation`, `symmetry`, `dimensional_check`, `unit_sanity`. **`elimination` requires a demonstrated shortcut:** name the one pair or fact and the options it strikes out — \"fibrous → skull bones appears only in option 2\". A recall question CAN offer elimination; that is no longer a contradiction, because recall is now a demand and elimination a strategy. **`dimensional_reasoning` (4a) vs `dimensional_check` (4c):** the same tool in two roles. If the question can only be answered by comparing dimensions, it is the demand. If dimensions merely confirm an answer the student reached by substituting into a relation, it is the strategy. **`condition_based_reasoning` vs `application`:** both apply a rule. The condition label is for the case where a stated condition is what the question turns on — remove the phrase \"battery disconnected\" or \"in acidic medium\" and a different option becomes correct. Its matching trap is `condition_ignored`. **4d. `new_demand`** — the escape hatch this axis was missing. If none of the five demands describes what the question makes the student do, record `new_demand` with a description and a flag. E1, E2, E3 and E5 each had one; E4 did not, so an unfamiliar demand had nowhere to go but the nearest fit. **Retired"
+  },
+  "direct_fact": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "recall",
+   "requires": null
+  },
+  "check_each_statement": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "several_independent_checks",
+   "requires": null
+  },
+  "multi_step": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "multi_step_dependent",
+   "requires": null
+  },
+  "numerical": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "calculation",
+   "requires": null
+  },
+  "diagram_graph": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "E1 figure_to_read — it described the printing, not the thinking",
+   "requires": null
+  },
+  "confusing_options": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "concept_discrimination",
+   "requires": null
+  },
+  "exception_based": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "E5 ignores_exception — it describes a distractor",
+   "requires": null
+  },
+  "changed_word": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "E5 single_word_substitution — it describes a distractor",
+   "requires": null
+  },
+  "sequence_based": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "application + E2 pick_order — \"the answer is an order\" is an answer form, not a kind of thinking",
+   "requires": null
+  },
+  "ratio_based": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "calculation + strategy_available: estimation — the cancelling of constants is a strategy, not a demand",
+   "requires": null
+  },
+  "explanation_based": {
+   "axis": "E4",
+   "axis_name": "Thinking — three separate questions, not one",
+   "means": "explanatory_reasoning — renamed only",
+   "requires": "The last three were retired in `scripts/build_category_sheet_v2.py` and never written down here, so for a while the rulebook could not account for 59 tags that the corpus carried. See Rule 21."
+  },
+  "calculation_slip": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "a specific wrong operation yields a printed option",
+   "requires": "the operation and the option"
+  },
+  "wrong_exponent": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "a power or order-of-magnitude error yields it",
+   "requires": "the exponent and the option"
+  },
+  "inverted_ratio": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the reciprocal of the right answer is printed",
+   "requires": "the option"
+  },
+  "reversed_order": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the exact reverse of the right order is printed",
+   "requires": "the option"
+  },
+  "wrong_pairing": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "one pair in a match code is swapped",
+   "requires": "which pair, which option"
+  },
+  "partial_combination": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "a subset that is true but incomplete",
+   "requires": "which statement is omitted"
+  },
+  "half_true": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "an option with two claims, one right",
+   "requires": "the claim that fails"
+  },
+  "semantic_reversal": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the relationship is reversed in words",
+   "requires": "the reversed words"
+  },
+  "unit_or_conversion": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "a missing or wrong conversion yields it",
+   "requires": "the conversion and the option"
+  },
+  "intermediate_value": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "a correct intermediate result is printed as an option",
+   "requires": "which step it is"
+  },
+  "look_alike_term": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "a term resembling the right one",
+   "requires": "both terms"
+  },
+  "true_statement_trap": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option is true but fails the task's polarity (NOT/EXCEPT)",
+   "requires": "the polarity"
+  },
+  "other_one_fact": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "a fact about a different member of the same family — another hormone, another organelle, another syndrome",
+   "requires": "which member, and which option"
+  },
+  "neighbouring_fact": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "a fact about an adjacent concept, disorder or event, where the families differ rather than the members",
+   "requires": "which adjacent thing"
+  },
+  "ignores_exception": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option is correct for the general rule, and this question is the exception to it",
+   "requires": "the rule and the exception"
+  },
+  "scientist_swap": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the work is attributed to the wrong person",
+   "requires": "both names"
+  },
+  "copied_from_stem": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option repeats a phrase from the stem without answering the question",
+   "requires": "the repeated phrase"
+  },
+  "old_ncert_fact": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option was true in an earlier NCERT edition and the text has since changed",
+   "requires": "the change-log entry (Stage A), not an opinion"
+  },
+  "single_word_substitution": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "a long, fluent, almost entirely correct statement with one noun, adjective or negation swapped, so the surrounding truth vouches for the error",
+   "requires": "the swapped word"
+  },
+  "sign_reversed_magnitude_right": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the magnitude and the method are right and one sign, right-hand rule or inequality is inverted",
+   "requires": "the sign, and that the magnitude matches"
+  },
+  "wrong_power_of_dependence": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "linear where it should be squared, squared where it should be rooted, or a root dropped",
+   "requires": "the two powers"
+  },
+  "neighbouring_question_answer": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option is a real, published, remembered result that answers a DIFFERENT question the stem superficially resembles",
+   "requires": "the other question it answers"
+  },
+  "sequence_endpoint_or_adjacency": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "an ordering that gets the ends right and fails on one interior adjacency, or reproduces the printed list order",
+   "requires": "which adjacency, or that it is the printed order"
+  },
+  "parallel_order_decoy": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the straight positional mapping A-I, B-II, C-III, D-IV is offered as an option",
+   "requires": "that the mapping is positional"
+  },
+  "true_but_out_of_scope": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option is correct subject matter that answers a different question than the stem asked; it fails on relevance, not on truth",
+   "requires": "what the stem actually asked"
+  },
+  "overclaiming_quantifier": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option is wrong ONLY because of an \"only\", \"all\", \"always\" or \"invariably\"",
+   "requires": "the quantifier **and** the counter-example that falsifies it"
+  },
+  "fabricated_term": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "a term that does not exist is offered and reads as plausible chapter vocabulary",
+   "requires": "that the term appears nowhere in the source"
+  },
+  "format_reflex_option": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option is the reflex pick for the printed FORMAT rather than for the content — \"both true but R is not the explanation\", or \"both true and R explains A\"",
+   "requires": "the format, and why the content does not support the reflex"
+  },
+  "no_elimination_route": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "all four options are real terms from the same paragraph, so no securely-known fact strikes any of them out",
+   "requires": "that all four are source terms of the same kind"
+  },
+  "complementary_grid": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the options are laid out as two magnitudes crossed with two signs, or two values crossed with two units, so no single error is self-evident",
+   "requires": "the two axes of the grid"
+  },
+  "condition_ignored": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option is what you get by dropping a stated condition — \"battery disconnected\", \"in acidic medium\", the specified temperature range",
+   "requires": "the condition, and that the option is right without it"
+  },
+  "wrong_quantity": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option answers for a neighbouring PHYSICAL quantity: diameter for radius, moment of inertia for radius of gyration",
+   "requires": "both quantities"
+  },
+  "wrong_site_or_stage": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option moves a biological event to the wrong place or the wrong time",
+   "requires": "the real site or stage, and the offered one"
+  },
+  "omitted_contribution": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "one force, field contribution, circuit element or term is left out of an otherwise correct sum",
+   "requires": "the omitted term and the option it yields"
+  },
+  "false_explanatory_link": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "both statements are true and the Reason is assumed to explain the Assertion because they share a topic, not because the link holds",
+   "requires": "the two true statements, and why the link fails"
+  },
+  "no_derivation_route": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "no arithmetic or factual route reaches this option at all; it widens the spread or completes a grid",
+   "requires": "that no route exists — demonstrated, not asserted. **This is a property of the arithmetic, never a claim about what students would pick"
+  },
+  "new_trap": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "a device none of the above describes",
+   "requires": "a full description; this is the axis's unsure form"
+  },
+  "source_damage_artifact": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the option set as WE STORED IT misleads for reasons the paper never intended: lost digits, placeholder images, duplicated options, debris",
+   "requires": "review_status: source_incomplete`, and a repair task. **Never** a trap tag"
+  },
+  "arguable_key": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "at least one wrong option is defensible on a reasonable reading, and the key rests on a textbook convention rather than on the subject",
+   "requires": "a review flag. The tag follows the printed key (§7); the flag records the doubt"
+  },
+  "obviously_wrong": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "no_derivation_route or source_damage_artifact",
+   "requires": "\"no student would be drawn to it\" is a claim about students that inspection cannot support. But \"no arithmetic or factual route reaches this option\" IS inspectable, and a large share of the old tags were in fact our own extraction damage. The device was real; only its justification was not."
+  },
+  "extreme_word": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "overclaiming_quantifier",
+   "requires": "the original was retired for treating \"only\" in a combination answer as an absolute-word trap. Reinstated with the counter-example required as evidence, so the quantifier alone is not enough."
+  },
+  "sign_or_direction": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "sign_reversed_magnitude_right, inverted_ratio, reversed_order or semantic_reversal",
+   "requires": "it was used for four unrelated things. The replacement must name WHAT reversed, so old tags are re-judged rather than renamed — but the tight case (all the work right, one sign wrong) is a real device and is now its own label."
+  },
+  "number_near_miss": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "calculation_slip, wrong_exponent or intermediate_value",
+   "requires": "used where no numeric device was shown — in one case on a question with no numerical options at all. The only retirement with no inspectable form behind it."
+  },
+  "wrong_order": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "reversed_order",
+   "requires": "renamed only; same meaning"
+  },
+  "unit_conversion_slip": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "unit_or_conversion",
+   "requires": "renamed only"
+  },
+  "task_polarity": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "direct, not, except, increasing, decreasing, maximum, minimum, respectively",
+   "requires": "Materially changes what must be answered. Record NOT **in the task** only — not \"does not\" inside a biological premise, and not the NOT in standard A/R option wording."
+  },
+  "review_status": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "verified, provisional, source_incomplete",
+   "requires": "verified` = stem, options, figure and key all present and checked against a printed paper. `source_incomplete` = something is missing; E4/E5 stay empty."
+  },
+  "concept": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "free text, specific",
+   "requires": "see §3"
+  },
+  "key_checked_against": {
+   "axis": "E5",
+   "axis_name": "Trap — one option, one mistake, or nothing",
+   "means": "the source file, or none",
+   "requires": "a tag is only as good as the question under it"
+  },
+  "elimination": {
+   "axis": "E4",
+   "axis_name": "Thinking",
+   "means": "name the one pair or fact and the options it",
+   "requires": null,
+   "from": "prose"
+  }
+ }
+}

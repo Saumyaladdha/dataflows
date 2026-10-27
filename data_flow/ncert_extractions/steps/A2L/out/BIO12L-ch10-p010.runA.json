@@ -1,0 +1,215 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 19.5,
+  "text_block": [
+   0.2994,
+   0.1097,
+   0.9316,
+   0.9019
+  ],
+  "fill": 0.99,
+  "page_kind": "ordinary",
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.2994,
+    "x1": 0.9316
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.2108,
+    0.0,
+    1.0,
+    0.039
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.19,
+    0.0977
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.869,
+    0.076,
+    0.933,
+    0.086
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "right",
+   "font": "sans",
+   "space_before": 0.0
+  },
+  {
+   "n": 1,
+   "role": "section_heading",
+   "bbox": [
+    0.5563,
+    0.1278,
+    0.6778,
+    0.1394
+   ],
+   "column": "full",
+   "size_rel": 1.28,
+   "align": "center",
+   "font": "serif-bold",
+   "fill": "#fff6db",
+   "text_color": "#262626",
+   "space_before": 0.0418
+  },
+  {
+   "n": 2,
+   "role": "box",
+   "bbox": [
+    0.2994,
+    0.1097,
+    0.9304,
+    0.6884
+   ],
+   "column": "full",
+   "size_rel": 0.97,
+   "align": "justify",
+   "font": "serif",
+   "fill": "#fff6db",
+   "space_before": 0.0237
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.2373,
+    0.3792,
+    0.2873,
+    0.6829
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": 3,
+   "role": "section_heading",
+   "bbox": [
+    0.489,
+    0.7125,
+    0.744,
+    0.7415
+   ],
+   "column": "full",
+   "size_rel": 3.2,
+   "align": "center",
+   "font": "sans-light",
+   "text_color": "#f7931d",
+   "space_before": 0.0241
+  },
+  {
+   "n": 4,
+   "role": "list",
+   "bbox": [
+    0.3095,
+    0.775,
+    0.9316,
+    0.8023
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0335
+  },
+  {
+   "n": 5,
+   "role": "list",
+   "bbox": [
+    0.3095,
+    0.8088,
+    0.9316,
+    0.8213
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "space_before": 0.0065
+  },
+  {
+   "n": 6,
+   "role": "list",
+   "bbox": [
+    0.3095,
+    0.8264,
+    0.9316,
+    0.8542
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0051
+  },
+  {
+   "n": 7,
+   "role": "list",
+   "bbox": [
+    0.3095,
+    0.8574,
+    0.9316,
+    0.9019
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0032
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0,
+    0.7856,
+    0.1633,
+    0.8259
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "center",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.8292,
+    0.1633,
+    0.8352
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary verso page, single full column (x 0.299-0.932) set far right of the sheet; the left margin holds the folio tab and a vertical orange leaf-chain ornament (decorative_image at x 0.237-0.287, #f9b31d). SUMMARY panel: cream fill #fff6db with a thin yellow double border, bbox is the outer border; the 'SUMMARY' heading (n=1) sits inside the panel's top, so its bbox lies within the box (n=2) bbox -- the heading is listed first in reading order, and box.space_before is measured from the running header to the panel's top edge. Summary prose is slightly smaller than exercise text (~0.97). 'EXERCISES' is a large orange sans-light heading (#f7931d) centred on the column. Exercise questions 1-4 are role list (no question role in the allowed set); numbers hang at the column edge with text at x~0.342 (hanging indent, so no indent field). Question 4's option (a) (x 0.343, indented under the question text) prints at the foot of this page and is inside the n=7 bbox; options (b)-(d) continue on p011. Folio 186 is white on the orange tab at left with a thin orange bar beneath (footer_rule). body_text_size_px measured on descender-less exercise lines. size_pt omitted: the image DPI is not given in the input, so only size_rel (measured ratio) is reported. The 'Reprint 2026-27' stamp at y~0.974 is not the folio and is deliberately left out of elements; the printed folio is the number in the orange tab. text_block is the rectangle this page's type actually occupies; page.fill is that depth as a fraction of the full type area seen on the full page p010 (y 0.110-0.902)."
+}

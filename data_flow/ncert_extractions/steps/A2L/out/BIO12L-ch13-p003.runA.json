@@ -1,0 +1,154 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 20.0,
+  "text_block": [
+   0.301,
+   0.108,
+   0.933,
+   0.913
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.301,
+    "x1": 0.933
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.209,
+    0.0,
+    1.0,
+    0.038
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.195,
+    0.098
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#745421"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.869,
+    0.076,
+    0.933,
+    0.085
+   ],
+   "column": "full",
+   "size_rel": 0.75,
+   "align": "right",
+   "font": "sans",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.301,
+    0.108,
+    0.933,
+    0.299
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.023
+  },
+  {
+   "n": 2,
+   "role": "figure",
+   "bbox": [
+    0.311,
+    0.31,
+    0.916,
+    0.737
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#fee5ca",
+   "space_before": 0.011
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.287,
+    0.745,
+    0.935,
+    0.778
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "justify",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.008
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.304,
+    0.79,
+    0.933,
+    0.913
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.012
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0,
+    0.785,
+    0.163,
+    0.825
+   ],
+   "column": "full",
+   "size_rel": 1.5,
+   "align": "right",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.828,
+    0.163,
+    0.834
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "page_kind: ordinary (verso). Single full column on the right of the sheet; green header band top-right, brown/orange corner block with logo top-left (decorative_image). Figure 13.1 (block 2) is a rounded peach panel of three pie charts. The 'Figure 13.1' caption has no A2 block on this page, so n: null. Folio '218' is the orange tab at left. 'Reprint 2026-27' foot stamp is not a page_number and is omitted. size_pt omitted: page DPI not given."
+}

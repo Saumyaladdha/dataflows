@@ -1,0 +1,32 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 21.0,
+    "text_block": [0.098, 0.133, 0.873, 0.905],
+    "fill": 0.99,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.687},
+      {"id": "left", "x0": 0.098, "x1": 0.493},
+      {"id": "right", "x0": 0.512, "x1": 0.873}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.081], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.137, 0.081, 0.394, 0.094], "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.064, 0.870, 0.094], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": 1, "role": "section_heading", "bbox": [0.098, 0.133, 0.512, 0.149], "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.039},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.169, 0.687, 0.313], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.020},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.316, 0.687, 0.443], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 4, "role": "paragraph", "bbox": [0.098, 0.446, 0.687, 0.479], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.483, 0.687, 0.553], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif-italic", "space_before": 0.004},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.557, 0.493, 0.646], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 7, "role": "section_heading", "bbox": [0.098, 0.667, 0.267, 0.683], "column": "left", "size_rel": 1.1, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.021},
+    {"n": 8, "role": "paragraph", "bbox": [0.098, 0.693, 0.493, 0.905], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.010},
+    {"n": 9, "role": "figure", "bbox": [0.512, 0.607, 0.873, 0.850], "column": "right", "size_rel": 1.0},
+    {"n": 10, "role": "figure_caption", "bbox": [0.514, 0.875, 0.873, 0.904], "column": "right", "size_rel": 0.95, "align": "left", "font": "serif", "text_color": "#6d6e71", "space_before": 0.025},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.957, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.052}
+  ],
+  "note": "Ordinary recto page. Upper part (blocks 1-5) is a single full column 0.098-0.687. From block 6 down the measure narrows to a left column (0.098-0.493) and Figure 11.10 (line graph, vector artwork) with its caption sits to its right (0.512-0.873), extending into the outer margin; the prose wraps beside the figure. Block 5 is an italic quoted statement of the law. Headings cyan (#00adef) bold; 11.10 heading in small caps. Caption is grey (#6d6e71) with bold 'Figure 11.10' label and a hanging second line. Header band #e0ebb6, grey strip #d1d2d4, footer band #cadf7f (with '2024-25', not reported). Watermark ignored. size_pt omitted: DPI not given."
+}

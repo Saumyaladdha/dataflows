@@ -36,7 +36,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import runner_core as rc  # noqa: E402
 from lib import pdf as lib_pdf  # noqa: E402
 
-CORPUS = ("papers_v2",)
+CORPUS = rc.corpus()
 B3V_OUT = ("steps", "B3V", "out")
 
 
@@ -62,6 +62,18 @@ MIN_BOX_PX = 4.0
 #: q50, whose solution figure starts at y=515 while `Sol.` sits at y=529.5. The slack keeps that
 #: case on the solution side of the line.
 SOLUTION_SLACK_PX = 45.0
+#: An agent's box is an estimate made by eye, and it errs TIGHT: 2017 Code-A q11 lost the `T2` label
+#: at its right edge and q55 cut `NO2` to `NC`. Growing every box this far outward (clipped to the
+#: page by crop_boxes) keeps the labels a figure is printed with, as Stage A's grown crops do.
+FIGURE_PAD_PX = 16.0
+
+
+def within(box, part_box):
+    """`box` clipped to the question part it was measured in. The padding must never reach past the
+    question's own crop, which stops at the printed answer line: unclipped, 2017 Code-A q55's padded
+    figure pulled in "Answer (4)" -- an answer shown to b6-blind-solver inside its figure."""
+    return [max(box[0], part_box[0]), max(box[1], part_box[1]),
+            min(box[2], part_box[2]), min(box[3], part_box[3])]
 
 
 #: The publisher's answer line. `Answer (N)` and `Sol.` both appear; whichever comes FIRST on the
@@ -86,8 +98,28 @@ def anchor(parts, box_top):
         height = candidate["bbox"][3] - candidate["bbox"][1]
         if box_top < offset_y + height or candidate is parts[-1]:
             return candidate, offset_y
-        offset_y += height
+        offset_y += height + STITCH_GAP_PX
     return part, offset_y
+
+
+#: The white gap extract_paper_v2.stitch_vertical() leaves between stitched parts. anchor() once
+#: ignored it, so a box on a second part landed 10px too low for each break above it.
+STITCH_GAP_PX = 10
+
+
+def to_page(parts, box):
+    """(part, page_box) -- a box measured in a STITCHED crop, moved onto the page it was cut from.
+
+    Exact for multi-part crops: the stitcher puts a 10px gap between parts AND centres each part on
+    the width of the widest, so a narrower part sits shifted right in the stitched image. Both shifts
+    are undone here; the old arithmetic undid neither.
+    """
+    part, offset_y = anchor(parts, box[1])
+    widest = max(p["bbox"][2] - p["bbox"][0] for p in parts)
+    shift_x = (int(round(widest)) - int(round(part["bbox"][2] - part["bbox"][0]))) // 2
+    dx = part["bbox"][0] - shift_x
+    dy = part["bbox"][1] - offset_y
+    return part, [box[0] + dx, box[1] + dy, box[2] + dx, box[3] + dy]
 
 
 def solution_tops(pdf_path, dpi):
@@ -113,13 +145,14 @@ def solution_tops(pdf_path, dpi):
                 for line in block.get("lines", []):
                     text = "".join(span["text"] for span in line.get("spans", []))
                     if SOLUTION_LINE.match(text):
-                        tops.setdefault(index, []).append(line["bbox"][1] * scale)
+                        x0, y0, x1, _y1 = line["bbox"]
+                        tops.setdefault(index, []).append((y0 * scale, x0 * scale, x1 * scale))
     for index in tops:
         tops[index].sort()
     return tops
 
 
-def solution_after(tops, page_index, question_top):
+def solution_after(tops, page_index, question_top, columns=None):
     """The first `Answer`/`Sol.` line BELOW where this question starts, or None.
 
     Per-question, not per-page, and the difference is not cosmetic. A page carries several
@@ -127,8 +160,16 @@ def solution_after(tops, page_index, question_top):
     takes the FIRST question's solution, and then every figure belonging to a later question on that
     page sits below it and is wrongly rejected -- measured at 27 of 35 on 2015_A before this was
     split out, against 8 after.
+
+    And per COLUMN. `columns` is the question part's [x0, x1]; an answer line counts only if its
+    midpoint falls inside it. On a two-column page the OTHER column's answer lines sit at every
+    height, so 2017 Code-A q4, q11, q55 and q61 -- real question figures well inside their own
+    crops -- were rejected as "below the Answer line" because of an answer printed in the
+    neighbouring column.
     """
-    for y in tops.get(page_index, []):
+    for y, x0, x1 in tops.get(page_index, []):
+        if columns is not None and not columns[0] <= (x0 + x1) / 2.0 <= columns[1]:
+            continue
         if y >= question_top:
             return y
     return None
@@ -220,9 +261,9 @@ def main():
         if not parts:
             counts["no_part_to_anchor_to"] += 1
             continue
-        part, offset_y = anchor(parts, bbox[1])
-        ox, oy = part["bbox"][0], part["bbox"][1] - offset_y
-        page_box = [bbox[0] + ox, bbox[1] + oy, bbox[2] + ox, bbox[3] + oy]
+        part, raw_box = to_page(parts, bbox)
+        page_box = within([raw_box[0] - FIGURE_PAD_PX, raw_box[1] - FIGURE_PAD_PX,
+                           raw_box[2] + FIGURE_PAD_PX, raw_box[3] + FIGURE_PAD_PX], part["bbox"])
         # IS THIS THE QUESTION'S FIGURE, OR THE SOLUTION'S? Measured, not assumed. A box whose top
         # sits at or below the `Answer`/`Sol.` line on the same page belongs to the worked solution,
         # and presenting it as the question's figure shows a reader the answer's own working.
@@ -234,11 +275,13 @@ def main():
         # next answer line.
         solution_part = None
         for index, candidate in enumerate(parts):
-            if solution_after(solution_y, candidate["page"], candidate["bbox"][1]) is not None:
+            if solution_after(solution_y, candidate["page"], candidate["bbox"][1],
+                              (candidate["bbox"][0], candidate["bbox"][2])) is not None:
                 solution_part = index
                 break
         here = parts.index(part)
-        cut = solution_after(solution_y, part["page"], part["bbox"][1])
+        cut = solution_after(solution_y, part["page"], part["bbox"][1],
+                             (part["bbox"][0], part["bbox"][2]))
         if solution_part is not None and here > solution_part:
             counts["solution_figure_rejected"] += 1
             question["agent_figure_images"] = []
@@ -256,24 +299,28 @@ def main():
         rel = os.path.join("figures_agent", args.paper_id, "q%03d.png" % question["qno"])
         jobs.append((part["page"] + 1, page_box, os.path.join(rc.pp(*CORPUS), rel)))
         question["agent_figure_images"] = [rel]
+        # The PAGE box is recorded beside the picture, so vector_figures.py lifts exactly the same
+        # region out of the PDF as vector art. Without it the vector copy would need its own guess.
+        question["agent_figure_boxes"] = [{"page": part["page"], "bbox": page_box}]
         counts["cut"] += 1
 
         # PER-OPTION CROPS, where the options are themselves drawings. One box around all four gives
         # a tall strip and four `[structure diagram]` lines, and the reader has to count down the
         # strip to find option 3. Cut separately, each drawing prints beside its own number.
         boxes = read.get("option_boxes") or {}
-        cut_options = {}
+        cut_options, option_boxes = {}, {}
         for key in sorted(boxes):
             box = boxes[key]
             if len(box) != 4 or box[2] - box[0] < MIN_BOX_PX or box[3] - box[1] < MIN_BOX_PX:
                 continue
             # EACH OPTION GETS ITS OWN ANCHOR. See anchor(): a four-option panel can straddle the
             # page break, and the figure's offset is only right for the options on the figure's page.
-            option_part, option_offset = anchor(parts, box[1])
-            opx = option_part["bbox"][0]
-            opy = option_part["bbox"][1] - option_offset
-            option_page = [box[0] + opx, box[1] + opy, box[2] + opx, box[3] + opy]
-            option_cut = solution_after(solution_y, option_part["page"], option_part["bbox"][1])
+            option_part, raw_option = to_page(parts, box)
+            option_page = within([raw_option[0] - FIGURE_PAD_PX, raw_option[1] - FIGURE_PAD_PX,
+                                  raw_option[2] + FIGURE_PAD_PX, raw_option[3] + FIGURE_PAD_PX],
+                                 option_part["bbox"])
+            option_cut = solution_after(solution_y, option_part["page"], option_part["bbox"][1],
+                                        (option_part["bbox"][0], option_part["bbox"][2]))
             if option_cut is not None and option_page[1] >= option_cut - SOLUTION_SLACK_PX:
                 continue                     # below the answer line: the solution's own drawing
             option_rel = os.path.join("figures_agent", args.paper_id,
@@ -281,9 +328,43 @@ def main():
             jobs.append((option_part["page"] + 1, option_page,
                          os.path.join(rc.pp(*CORPUS), option_rel)))
             cut_options[key] = option_rel
+            option_boxes[key] = {"page": option_part["page"], "bbox": option_page}
         if cut_options:
             question["agent_option_images"] = cut_options
+            question["agent_option_boxes"] = option_boxes
             counts["option_crops"] += len(cut_options)
+
+    # THE SOLUTION'S OWN FIGURES, each at the step it belongs to. b3s-solution-reader boxes every
+    # drawing in the printed working against the SOLUTION crop, with `after_step`; each is cut from
+    # the page the same way a question figure is, and recorded so the export can show it under its
+    # step instead of dumping the whole printed block below the answer.
+    for question in paper["questions"]:
+        question["solution_figures"] = []
+        sol_path = rc.pp("steps", "B3S", "out", "%s__q%03d.runA.json" % (args.paper_id, question["qno"]))
+        parts = question.get("solution_parts") or []
+        if not parts or not os.path.exists(sol_path):
+            continue
+        with open(sol_path, encoding="utf-8") as fh:
+            sol = json.load(fh)
+        figures = sol.get("figures")
+        if figures is None and sol.get("figure_bbox"):
+            figures = [{"bbox": sol["figure_bbox"], "after_step": 0}]   # written before `figures`
+        for n, figure in enumerate(figures or [], 1):
+            box = figure.get("bbox") or []
+            if len(box) != 4 or box[2] - box[0] < MIN_BOX_PX or box[3] - box[1] < MIN_BOX_PX:
+                counts["solution_figure_degenerate"] += 1
+                continue
+            sol_part, raw_sol = to_page(parts, box)
+            sol_page = within([raw_sol[0] - FIGURE_PAD_PX, raw_sol[1] - FIGURE_PAD_PX,
+                               raw_sol[2] + FIGURE_PAD_PX, raw_sol[3] + FIGURE_PAD_PX],
+                              sol_part["bbox"])
+            rel = os.path.join("figures_agent", args.paper_id,
+                               "q%03d_sol_%d.png" % (question["qno"], n))
+            jobs.append((sol_part["page"] + 1, sol_page, os.path.join(rc.pp(*CORPUS), rel)))
+            question["solution_figures"].append({
+                "image": rel, "after_step": int(figure.get("after_step") or 0),
+                "kind": figure.get("kind") or "", "page": sol_part["page"], "bbox": sol_page})
+            counts["solution_figures"] += 1
 
     print("%s: %d question(s) read by the agent, %d unread" % (args.paper_id, counts["read"],
                                                                counts["unread"]))
@@ -291,6 +372,8 @@ def main():
     print("   with a usable bbox     : %d  -> cut" % counts["cut"])
     if counts["option_crops"]:
         print("   per-option crops       : %d" % counts["option_crops"])
+    if counts["solution_figures"]:
+        print("   solution figures       : %d  (each placed at its step)" % counts["solution_figures"])
     if counts["solution_figure_rejected"]:
         print("   was the SOLUTION's figure : %d  -> rejected, not the question's"
               % counts["solution_figure_rejected"])
@@ -310,7 +393,11 @@ def main():
     if jobs:
         for job in jobs:
             os.makedirs(os.path.dirname(job[2]), exist_ok=True)
-        lib_pdf.crop_boxes(source, jobs, dpi=paper["meta"]["dpi"], unit="px")
+        import pymupdf
+        import extract_paper_v2 as extractor
+        with pymupdf.open(source) as doc:
+            furniture = extractor.document_furniture(doc)   # watermark and logos: never in a crop
+        lib_pdf.crop_boxes(source, jobs, dpi=paper["meta"]["dpi"], unit="px", hide_xrefs=furniture)
         print("cut %d figure crop(s) into papers_v2/figures_agent/%s/" % (len(jobs), args.paper_id))
     with open(paper_path, "w", encoding="utf-8") as fh:
         json.dump(paper, fh, ensure_ascii=False, indent=1)

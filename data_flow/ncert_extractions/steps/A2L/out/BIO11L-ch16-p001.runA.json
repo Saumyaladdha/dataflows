@@ -1,0 +1,38 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 20.0,
+    "page_kind": "chapter_opener",
+    "text_block": [0.101, 0.474, 0.872, 0.903],
+    "fill": 0.97,
+    "columns": [
+      {"id": "left", "x0": 0.101, "x1": 0.272},
+      {"id": "right", "x0": 0.283, "x1": 0.872}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.0, 0.0, 1.0, 0.43],
+     "column": "full", "size_rel": 1.0, "fill": "#cee187"},
+    {"n": null, "role": "qr_code", "bbox": [0.734, 0.111, 0.873, 0.219],
+     "column": "full", "size_rel": 1.0, "space_before": 0.111},
+    {"n": 1, "role": "chapter_title", "bbox": [0.321, 0.324, 0.517, 0.352],
+     "column": "right", "size_rel": 2.9, "align": "left", "font": "serif-bold",
+     "text_color": "#0073bd", "space_before": 0.105},
+    {"n": 2, "role": "chapter_title", "bbox": [0.321, 0.374, 0.745, 0.440],
+     "column": "right", "size_rel": 2.8, "align": "left", "font": "serif-bold",
+     "text_color": "#0073bd", "space_before": 0.022},
+    {"n": null, "role": "contents_panel", "bbox": [0.101, 0.475, 0.272, 0.843],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "text_color": "#009dd9", "space_before": 0.034},
+    {"n": 3, "role": "paragraph", "bbox": [0.283, 0.474, 0.872, 0.641],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.034},
+    {"n": 4, "role": "paragraph", "bbox": [0.283, 0.649, 0.872, 0.903],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "text_color": "#221f1f", "space_before": 0.008},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.053}
+  ],
+  "note": "Chapter-opening page, two columns: left contents panel (8 section entries 16.1-16.8, cyan italic on bare paper, one element) beside the right-column opening prose. The banner is a vertical gradient, not a flat fill: #cee187 at the top fading to white by y~0.43; fill reports the top colour. 'CHAPTER 16' (n=1) and the two-line title (n=2) are set in blue small caps aligned to the right column's left edge (x~0.321, slightly inset from the prose at 0.283). The bottom element is a solid green band (y 0.956-1.0) carrying the '2024-25' reprint stamp, reported as footer_rule; there is no printed folio and no running header on this page. The faint grey diagonal 'not to be republished (c) NCERT' watermark across the prose is not reported. size_pt omitted: page DPI is not given in the input."
+}

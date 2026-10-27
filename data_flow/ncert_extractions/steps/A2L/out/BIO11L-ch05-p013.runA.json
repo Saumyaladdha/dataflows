@@ -1,0 +1,31 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 21.5,
+    "text_block": [0.101, 0.119, 0.873, 0.900],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.101, "x1": 0.688},
+      {"id": "left", "x0": 0.101, "x1": 0.562},
+      {"id": "right", "x0": 0.581, "x1": 0.873}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.078], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.078, 1.0, 0.092], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.080, 0.402, 0.092], "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.062, 0.870, 0.092], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "fill": "#ffffff"},
+    {"n": 1, "role": "figure", "bbox": [0.181, 0.119, 0.784, 0.370], "column": "full", "size_rel": 1.0, "space_before": 0.027},
+    {"n": 2, "role": "figure_caption", "bbox": [0.282, 0.392, 0.686, 0.405], "column": "full", "size_rel": 0.95, "align": "center", "font": "serif", "space_before": 0.022},
+    {"n": 3, "role": "paragraph", "bbox": [0.101, 0.439, 0.688, 0.585], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.034},
+    {"n": 4, "role": "major_heading", "bbox": [0.101, 0.610, 0.557, 0.644], "column": "left", "size_rel": 1.2, "align": "left", "font": "serif-bold", "space_before": 0.025},
+    {"n": 5, "role": "paragraph", "bbox": [0.101, 0.663, 0.562, 0.898], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.019},
+    {"n": 6, "role": "figure", "bbox": [0.587, 0.584, 0.873, 0.813], "column": "right", "size_rel": 1.0},
+    {"n": 7, "role": "equation", "bbox": [0.649, 0.834, 0.795, 0.859], "column": "right", "size_rel": 1.0, "align": "center", "font": "serif", "space_before": 0.021},
+    {"n": 8, "role": "figure_caption", "bbox": [0.581, 0.873, 0.846, 0.900], "column": "right", "size_rel": 0.95, "align": "left", "font": "serif", "space_before": 0.014},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary recto body page. Upper half is single-column: Figure 5.15 (n=1, two seed diagrams with labels, wider than the text measure) and its centred caption, then paragraph n=3 across the full measure 0.101-0.688 (continued from the previous page). Lower half splits into two columns: heading 5.8 (cyan small-caps, two lines, major_heading) and paragraph n=5 in a narrowed left column 0.101-0.562, with Figure 5.16 floral diagram (n=6), the floral formula (n=7, equation) and its two-line caption (n=8) stacked in a right column 0.581-0.873; the full-width column id 'full' is declared for the upper half. Header: pale green band (#e0ebb6) over grey strip (#d1d2d4), running head left, white folio tab (67) right. Foot green band (#cadf7f) as footer_rule; '2024-25' imprint not reported separately. Paragraph n=5 continues onto the next page. Watermark ignored. size_pt omitted (DPI not stated)."
+}

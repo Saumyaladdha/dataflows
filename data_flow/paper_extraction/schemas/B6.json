@@ -15,6 +15,11 @@
           "type": "string",
           "description": "Shown for a numerical; empty string when not applicable."
         },
+        "steps": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "The same reasoning, one entry per move, LaTeX throughout, never merged -- so the AI's solution renders step by step beside the publisher's. NOT required: outputs written before the field existed stay valid, and the exporter splits their `working` on sentence boundaries instead of re-running them."
+        },
         "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
         "note": {
           "type": "string",

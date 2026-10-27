@@ -34,6 +34,8 @@ You receive one JSON file at the input path in your instruction. It contains:
 - Choose exactly one option, or "unsure".
 - If two options look correct or none does, still pick your best, set confidence low, and say so in `note` (this helps find faulty questions).
 - If a value looks impossible (e.g. a 40 Ω result for an option list in single digits), say so in `note`.
+- NEET is set from the NCERT Class 11 and 12 textbooks. Where a question asks which technique, method or term is suitable, used or correct, answer as those textbooks teach it, not by current clinical or research practice. If practice would pick a different option, say so in `note`.
+- `steps`: your reasoning again, **one step per move**, in order, LaTeX throughout (`$R' = \frac{\rho (2l)}{A/2} = 4R$`). Do not merge two moves into one step. For a recall question one step is enough. `working` stays as before.
 
 ## Allowed values
 - answer: "1", "2", "3", "4", unsure
@@ -47,6 +49,11 @@ Write exactly one JSON object to the output path in your instruction, in this sh
   "answer": "3",
   "reason": "Volume constant: R is proportional to l squared, so 4 x 2^2 = 16 ohm.",
   "working": "R' = rho(2l)/(A/2) = 4R = 16",
+  "steps": [
+    "Stretching keeps the volume constant, so doubling $l$ halves $A$.",
+    "$R' = \\frac{\\rho (2l)}{A/2} = 4\\frac{\\rho l}{A} = 4R$.",
+    "$4R = 4 \\times 4\\,\\Omega = 16\\,\\Omega$, which is option $3$."
+  ],
   "confidence": "high",
   "note": ""
 }

@@ -1,0 +1,29 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 19.0,
+    "text_block": [0.314, 0.131, 0.902, 0.893],
+    "fill": 0.86,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.314, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.078], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.078, 1.0, 0.092], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.142, 0.079, 0.167, 0.092], "column": "full", "size_rel": 1.1, "align": "left", "font": "serif-bold"},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.080, 0.900, 0.093], "column": "full", "size_rel": 0.9, "align": "right", "font": "serif"},
+    {"n": 1, "role": "paragraph", "bbox": [0.314, 0.131, 0.902, 0.177], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.038},
+    {"n": 2, "role": "paragraph", "bbox": [0.314, 0.179, 0.902, 0.289], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.002, "indent": 0.029},
+    {"n": 3, "role": "paragraph", "bbox": [0.314, 0.291, 0.902, 0.353], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.002, "indent": 0.029},
+    {"n": 4, "role": "major_heading", "bbox": [0.564, 0.388, 0.652, 0.401], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.035},
+    {"n": 5, "role": "paragraph", "bbox": [0.314, 0.429, 0.902, 0.539], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.028},
+    {"n": 6, "role": "paragraph", "bbox": [0.314, 0.541, 0.902, 0.783], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.002, "indent": 0.029},
+    {"n": 7, "role": "major_heading", "bbox": [0.559, 0.817, 0.657, 0.830], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.034},
+    {"n": 8, "role": "list", "bbox": [0.324, 0.857, 0.729, 0.893], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "space_before": 0.027, "indent": 0.010},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.954, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Verso body page, single text column x 0.314-0.902 with an empty inner margin on the left. Three closing prose paragraphs, then the centred small-caps blue 'SUMMARY' heading (block 4) with generous space above and below, two summary paragraphs, then the centred 'EXERCISES' heading (block 7) and a two-item numbered exercise list (block 8) slightly indented from the column edge. Page ends early: content stops at y~0.893 with white space below, fill ~0.86 of the usual text block depth. Headings reported as major_heading; colour #00adef assumed equal to the section-heading blue sampled on p002/p003 (same visible hue). Header: light-green band #e0ebb6 over grey strip #d1d2d4; folio 84 on a white tab at left, running head 'BIOLOGY' at right. Foot: solid green band #cadf7f carrying '2024-25', reported as footer_rule. size_pt omitted: DPI not known. Watermark ignored."
+}

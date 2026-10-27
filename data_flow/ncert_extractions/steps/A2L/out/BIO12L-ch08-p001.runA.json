@@ -1,0 +1,44 @@
+{
+  "page": {
+    "width_px": 1580,
+    "height_px": 2160,
+    "body_text_size_px": 20.0,
+    "page_kind": "chapter_opener",
+    "text_block": [0.071, 0.433, 0.901, 0.905],
+    "fill": 0.86,
+    "columns": [
+      {"id": "left", "x0": 0.071, "x1": 0.356},
+      {"id": "right", "x0": 0.404, "x1": 0.901}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.0, 0.0, 1.0, 0.3815],
+     "column": "full", "size_rel": 1.0, "fill": "#d3ead3", "space_before": 0.0},
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.0, 1.0, 0.0366],
+     "column": "full", "size_rel": 1.0, "fill": "#4c7436", "space_before": 0.0},
+    {"n": null, "role": "qr_code", "bbox": [0.465, 0.12, 0.614, 0.23],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "decorative_image", "bbox": [0.638, 0.08, 0.899, 0.245],
+     "column": "full", "size_rel": 1.0},
+    {"n": 1, "role": "chapter_title", "bbox": [0.0696, 0.212, 0.3051, 0.2375],
+     "column": "full", "size_rel": 2.75, "align": "left", "font": "sans-light",
+     "space_before": 0.0},
+    {"n": 2, "role": "chapter_title", "bbox": [0.0715, 0.2838, 0.8506, 0.3134],
+     "column": "full", "size_rel": 3.2, "align": "left", "font": "sans-light",
+     "space_before": 0.0463},
+    {"n": null, "role": "rule_bar", "bbox": [0.0, 0.3912, 1.0, 0.4324],
+     "column": "full", "size_rel": 1.0, "fill": "#f7931d", "space_before": 0.0097},
+    {"n": null, "role": "contents_panel", "bbox": [0.071, 0.4329, 0.356, 0.7231],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "fill": "#fee5ca", "space_before": 0.0005},
+    {"n": null, "role": "decorative_image", "bbox": [0.104, 0.7463, 0.323, 0.7542],
+     "column": "left", "size_rel": 1.0, "fill": "#dbdcde", "space_before": 0.0232},
+    {"n": 3, "role": "paragraph", "bbox": [0.4044, 0.4931, 0.9006, 0.8218],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0602},
+    {"n": 4, "role": "paragraph", "bbox": [0.4044, 0.8319, 0.9006, 0.9046],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "indent": 0.031, "space_before": 0.0101}
+  ],
+  "note": "Two-column chapter-opening page (page_kind chapter_opener). body_text_size_px measured as the cap-to-baseline height of the opening prose in the right column (line pitch about 43 px). Banner is light green #d3ead3 from the top edge to y=0.3815, with a dark green strip #4c7436 across its top (y 0-0.0366; its right end x>=0.78 is brown #735921) reported as a decorative_image. The photograph of a sewage treatment tank on a green square at top right is a decorative_image. The contents panel's six section lines (8.1-8.6) are one element; it has no A2 block, so n is null. A short grey bar #dbdcde under the panel is a decorative_image. The 'Reprint 2026-27' stamp at the page foot (y~0.974-0.984) is not a folio and is left out; this opening page prints no page number. size_pt omitted because the page's DPI is not given in the input; size_rel is the measured value. Fill colours sampled from flat interiors."
+}

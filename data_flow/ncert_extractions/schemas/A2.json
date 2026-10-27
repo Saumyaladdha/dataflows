@@ -46,7 +46,7 @@
         "n": { "type": "integer", "minimum": 1, "description": "1-based reading order on this page." },
         "kind": {
           "type": "string",
-          "enum": ["paragraph", "heading", "table", "figure", "box", "equation", "list"]
+          "enum": ["paragraph", "heading", "table", "figure", "box", "equation", "list", "figure_caption", "question"]
         },
         "text": {
           "type": "string",

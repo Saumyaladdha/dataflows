@@ -1,0 +1,30 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "page_kind": "ordinary",
+    "body_text_size_px": 20.0,
+    "text_block": [0.098, 0.1352, 0.871, 0.8943],
+    "fill": 0.97,
+    "columns": [
+      {"id": "left", "x0": 0.098, "x1": 0.481},
+      {"id": "right", "x0": 0.511, "x1": 0.871}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0805], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.0805, 0.393, 0.0933], "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.815, 0.064, 0.868, 0.0933], "column": "full", "size_rel": 1.05, "align": "center", "font": "sans", "fill": "#ffffff"},
+    {"n": 1, "role": "section_heading", "bbox": [0.101, 0.1352, 0.479, 0.166], "column": "left", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.0419},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.1899, 0.481, 0.4267], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0239},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.4313, 0.481, 0.5784], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0046},
+    {"n": 4, "role": "paragraph", "bbox": [0.098, 0.5862, 0.481, 0.6676], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif-italic", "space_before": 0.0078},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.6726, 0.481, 0.892], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.005},
+    {"n": 6, "role": "figure", "bbox": [0.521, 0.1903, 0.871, 0.7416], "column": "right", "size_rel": 1.0, "fill": "#fffbd5", "space_before": 0.097},
+    {"n": 7, "role": "figure_caption", "bbox": [0.511, 0.766, 0.868, 0.8041], "column": "right", "size_rel": 0.95, "align": "justify", "font": "serif", "space_before": 0.0244},
+    {"n": 8, "role": "figure_caption", "bbox": [0.511, 0.8097, 0.868, 0.8363], "column": "right", "size_rel": 0.95, "align": "justify", "font": "serif", "space_before": 0.0056},
+    {"n": 9, "role": "figure_caption", "bbox": [0.511, 0.8386, 0.868, 0.8943], "column": "right", "size_rel": 0.95, "align": "justify", "font": "serif", "space_before": 0.0023},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9577, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Recto body page set in TWO columns: prose in a left column x 0.098-0.481 and Figure 11.3 (three stacked graphs a/b/c) with its three captions in a right column x 0.511-0.871. The section heading 11.4 (blue #00adef bold small caps, two lines with hanging indent) sits in the left column only. The figure is one element: a pale yellow panel #fffbd5 holding three graph plots with grey-blue plot areas #d3e1e1, top aligned with the first prose line. Captions 11.3a/b/c are stacked under it, each with a bold label and hanging indent, in dark text. Paragraph n=4 is entirely italic; others are roman with italic or bold runs. Header band #e0ebb6, grey running-header strip #d1d2d4, page number in white tab at right; foot band #cadf7f (reported as footer_rule) carries the '2024-25' year label, not listed as it has no allowed role. Watermark ignored. size_pt omitted (render DPI not given). page_kind is an extra field."
+}

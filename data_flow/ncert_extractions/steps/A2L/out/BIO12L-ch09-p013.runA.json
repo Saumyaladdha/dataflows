@@ -1,0 +1,204 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 19.5,
+  "text_block": [
+   0.067,
+   0.1093,
+   0.701,
+   0.9028
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.067,
+    "x1": 0.701
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    0.791,
+    0.039
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.8,
+    0.0,
+    1.0,
+    0.098
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.075,
+    0.0778,
+    0.404,
+    0.0852
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "left",
+   "font": "sans",
+   "text_color": "#6d6e71"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.1093,
+    0.701,
+    0.2954
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": 2,
+   "role": "section_heading",
+   "bbox": [
+    0.067,
+    0.3135,
+    0.634,
+    0.3458
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#6d6e71",
+   "space_before": 0.0181
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.3579,
+    0.701,
+    0.5231
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.0121
+  },
+  {
+   "n": 4,
+   "role": "section_heading",
+   "bbox": [
+    0.067,
+    0.5458,
+    0.524,
+    0.5602
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#6d6e71",
+   "space_before": 0.0227
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.5722,
+    0.701,
+    0.688
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.012
+  },
+  {
+   "n": 6,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.6963,
+    0.701,
+    0.85
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.0083
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.8551,
+    0.701,
+    0.9028
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.0051
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.838,
+    0.7866,
+    0.999,
+    0.8264
+   ],
+   "column": "full",
+   "size_rel": 1.25,
+   "align": "left",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.838,
+    0.8301,
+    0.999,
+    0.8356
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary recto body page (page_kind: ordinary), single full-width text column (x 0.067-0.701); the right margin (x>0.72) is empty apart from the orange folio tab. Green page_header_band (#4c7436) runs across the top-left (x 0-0.791) with the brown/orange corner block plus leaf-and-figure ornament at top right (decorative_image). Running header 'BIOTECHNOLOGY : PRINCIPLES AND PROCESSES' in grey sans caps. body_text_size_px is the cap-to-baseline height of the body serif prose (line pitch ~38px). Headings 9.3.4 (two lines, title hanging under itself after the number) and 9.3.5 are grey (#6d6e71) bold serif. Paragraphs n6 and n7 open with a first-line indent of ~0.031 page width (not a block indent, so no `indent` field). Text fills the block to its last baseline (fill 1.0); n7 continues on the next page. Folio tab: orange #f7931d rectangle at x 0.838-0.999 with white '173', and a thin orange rule just below it (footer_rule). The 'Reprint 2026-27' stamp at the page foot (y~0.974-0.982) is not the folio and is deliberately left out; the printed page number is the white numeral in the orange tab. size_pt omitted: the page's physical DPI is not given, so only size_rel (the trusted ratio) is reported."
+}

@@ -85,6 +85,20 @@ def runs_to_body_marks(runs):
     """
     body, marks = [], []
     pos = 0
+    # COLOURED TYPE. BIO12L ch05 p097 prints the inserted `B`, `BI`, `BIG` of `RAM HAS BRE DCA P`
+    # in red inside black bold. A formatted run whose ink is neither the block's own (by
+    # characters -- a blue caption's marks carry no colour) nor near-black carries `color`.
+    inks = {}
+    for r in runs or []:
+        if r.get("color"):
+            inks[r["color"]] = inks.get(r["color"], 0) + len((r.get("t") or "").strip())
+    block_ink = max(inks, key=inks.get) if inks else None
+
+    def _own_colour(c):
+        if not c or c == block_ink or not re.fullmatch(r"#[0-9a-fA-F]{6}", c):
+            return None
+        r_, g_, b_ = (int(c[i:i + 2], 16) for i in (1, 3, 5))
+        return c.lower() if (r_ * 299 + g_ * 587 + b_ * 114) / 1000 > 60 else None
     for r in runs or []:
         t = r.get("t", "")
         if not t:
@@ -93,12 +107,34 @@ def runs_to_body_marks(runs):
         flags = {k: True for k in ("b", "i", "sc") if r.get(k)}
         if r.get("script"):
             flags[r["script"]] = True          # sup / sub are marks too
+        if flags and _own_colour(r.get("color")):
+            flags["color"] = _own_colour(r.get("color"))
         if flags:
             start, end = pos, pos + len(t)
             # Pull the mark in off surrounding whitespace and punctuation.
-            while start < end and t[start - pos] in _TRIM_HEAD:
+            # ...but a bracket the mark itself OPENS is kept: the book bolds `Intra Uterine
+            # Devices (IUDs)` and `Figure 3.1(a)` whole (BIO12L ch03 p044), and trimming the `)`
+            # left `**(IUDs**)` in the Markdown and an unbalanced mark in the JSON.
+            # A mark that is WHOLLY one bracket pair, `(Psilotum)`, still loses both brackets:
+            # the Markdown sets `(*Psilotum*)`, as it always has (BIO11L ch03).
+            def _pairs(s):
+                return s.count("(") + s.count("[") - s.count(")") - s.count("]")
+            while start < end and t[start - pos] in " \t\n":
                 start += 1
-            while end > start and t[end - pos - 1] in _TRIM_TAIL:
+            while end > start and t[end - pos - 1] in " \t\n":
+                end -= 1
+            seg = t[start - pos:end - pos]
+            whole = (len(seg) > 2 and seg[0] in "([" and seg[-1] in ")]"
+                     and _pairs(seg[1:-1]) == 0)
+            while start < end and t[start - pos] in _TRIM_HEAD and (whole or not (
+                    t[start - pos] in "([" and _pairs(t[start - pos:end - pos]) <= 0)):
+                start += 1
+            # ...and an italic question keeps its `?`: the book sets `... behind the procedure?`
+            # (BIO12L ch06 p004) wholly in Bookman-LightItalic, `?` included, and trimming it set
+            # the `?` upright in all three deliverables.
+            while end > start and t[end - pos - 1] in _TRIM_TAIL and (whole or not (
+                    t[end - pos - 1] in ")]" and _pairs(t[start - pos:end - pos]) >= 0)) and not (
+                    t[end - pos - 1] in "?!" and flags.get("i") and not flags.get("b")):
                 end -= 1
             if end > start:
                 marks.append({"from": start, "to": end, **flags})
@@ -117,13 +153,25 @@ def runs_to_body_marks(runs):
     for m in marks:
         if merged:
             prev = merged[-1]
-            same = all(prev.get(k) == m.get(k) for k in ("b", "i", "sc", "sup", "sub"))
+            same = all(prev.get(k) == m.get(k) for k in ("b", "i", "sc", "sup", "sub", "color"))
             gap = text[prev["to"]:m["from"]]
             if same and len(gap) <= 2 and not gap.strip(" .,'-’"):
                 prev["to"] = m["to"]
                 continue
         merged.append(dict(m))
     return text, merged
+
+
+# A hyphen that ENDS A PRINTED LINE: the agent's text keeps the book's line break, `four-\nchambered`.
+# Only the newline is cut -- a hyphen and a SPACE is mid-line and printed so (`followed by MTP-
+# this is ...`, BIO12L ch03 p046, was welded to `MTP-this` when spaces were cut too).
+# `pre-\nand post-natal` keeps its break.
+_LINE_END_HYPHEN = re.compile(r"(?<=[A-Za-z])-\n(?=[a-z])(?!(?:and|or|to|as|nor)\b)")
+
+
+def line_end_hyphen_cuts(text):
+    """Offsets of the spaces to delete after line-end hyphens in `text`, ascending."""
+    return [m.start() + 1 for m in _LINE_END_HYPHEN.finditer(text or "")]
 
 
 _SENT_END = re.compile(r"(?<=[.!?’”])\s+(?=[A-Z‘“(])")
@@ -149,16 +197,55 @@ def split_sentences(body):
 
 
 def to_body_md(body, marks):
-    """`**bold**` and `*italic*`, ready to hand to a model."""
+    """`**bold**`, `*italic*` and `<sup>`/`<sub>`, ready to hand to a model.
+
+    Superscript and subscript are inline HTML, which CommonMark passes through. Dropping them
+    made the Markdown say `20th` where the book, the JSON marks and the exact render all print
+    `20<sup>th</sup>` -- and `10-2` for `10⁻²` is a different number, not a style.
+    """
+    # A PRINTED ASTERISK OPENING THE BODY IS TEXT: Table 4.2's footnote `*Echinodermata exhibits
+    # radial or bilateral symmetry ...` (BIO11L ch04 p047). Unescaped, Markdown reads it as the
+    # start of italics; escaped, it prints the star the book prints.
+    def lit(i, s):
+        return "\\" + s if i == 0 and s.startswith("*") else s
     if not marks:
-        return body
+        return lit(0, body)
+    # Markdown has no colour: marks the JSON keeps apart only by `color` (a red `B` inside black
+    # bold) are one emphasis here, or `**B****RE DCA P**` breaks the bold.
+    joined = []
+    for m in sorted(({k: v for k, v in m.items() if k != "color"} for m in marks),
+                    key=lambda x: x["from"]):
+        if joined and all(joined[-1].get(k) == m.get(k) for k in ("b", "i", "sc", "sup", "sub")) \
+                and not body[joined[-1]["to"]:m["from"]].strip() \
+                and m["from"] - joined[-1]["to"] <= 1:
+            joined[-1]["to"] = max(joined[-1]["to"], m["to"])
+            continue
+        joined.append(dict(m))
+    marks = joined
     edits = []
     for m in marks:
+        a, b = m["from"], m["to"]
+        if m.get("b") or m.get("i"):
+            # `*` and `**` only work hugging a word. The book sets the `(` after *Chara* italic
+            # across a line break (BIO11L ch03 p004), and `*Chara (*Figure 3.1a)` printed its
+            # asterisks. Spaces, an opening bracket at the end and closing punctuation at the
+            # start stay outside the markers; the JSON marks keep exactly what the book prints.
+            while a < b and body[a] in " \t\n)]},.;:":
+                a += 1
+            while b > a and body[b - 1] in " \t\n([{":
+                b -= 1
+            if a == b:
+                continue
+        m = {**m, "from": a, "to": b}
         open_, close = "", ""
         if m.get("b"):
             open_ += "**"; close = "**" + close
         if m.get("i"):
             open_ += "*"; close = "*" + close
+        if m.get("sup"):
+            open_ += "<sup>"; close = "</sup>" + close
+        if m.get("sub"):
+            open_ += "<sub>"; close = "</sub>" + close
         if not open_:
             continue
         edits.append((m["from"], m["to"], open_, close))
@@ -166,10 +253,10 @@ def to_body_md(body, marks):
     for a, b, open_, close in sorted(edits):
         if a < pos:
             continue
-        out.append(body[pos:a]); out.append(open_)
-        out.append(body[a:b]); out.append(close)
+        out.append(lit(pos, body[pos:a])); out.append(open_)
+        out.append(lit(a, body[a:b])); out.append(close)
         pos = b
-    out.append(body[pos:])
+    out.append(lit(pos, body[pos:]))
     return "".join(out)
 
 

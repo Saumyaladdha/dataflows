@@ -1,0 +1,31 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 21.0,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.133, 0.873, 0.903],
+    "fill": 0.97,
+    "columns": [
+      {"id": "left", "x0": 0.098, "x1": 0.483},
+      {"id": "right", "x0": 0.502, "x1": 0.873},
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0786], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.137, 0.0786, 0.402, 0.0915], "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.815, 0.062, 0.871, 0.0915], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "fill": "#ffffff", "text_color": "#221f1f"},
+    {"n": 1, "role": "section_heading", "bbox": [0.098, 0.133, 0.375, 0.150], "column": "full", "size_rel": 1.3, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.041},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.160, 0.483, 0.498], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.010},
+    {"n": 3, "role": "figure", "bbox": [0.502, 0.170, 0.873, 0.415], "column": "right", "size_rel": 1.0, "space_before": 0.020},
+    {"n": 4, "role": "figure_caption", "bbox": [0.531, 0.426, 0.832, 0.440], "column": "right", "size_rel": 0.95, "align": "center", "font": "serif", "space_before": 0.011},
+    {"n": 5, "role": "major_heading", "bbox": [0.098, 0.524, 0.248, 0.539], "column": "full", "size_rel": 1.35, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.026},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.560, 0.686, 0.685], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.021},
+    {"n": 7, "role": "paragraph", "bbox": [0.098, 0.690, 0.686, 0.759], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.005},
+    {"n": 8, "role": "major_heading", "bbox": [0.098, 0.781, 0.243, 0.797], "column": "full", "size_rel": 1.35, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.022},
+    {"n": 9, "role": "paragraph", "bbox": [0.098, 0.816, 0.686, 0.903], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.019},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9554, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary recto body page. Top half is two-column: section 5.1.1 prose in a left column (0.098-0.483) with Figure 5.3 and its caption in a right column (0.502-0.873); below the figure the prose (5.2, 5.3) runs in a single full-width measure 0.098-0.686, leaving the outer margin empty. Header: pale green band #e0ebb6 (y 0-0.079) above a grey strip #d1d2d4 (y 0.079-0.092) carrying the running head 'Morphology of Flowering Plants' in small caps; page number 59 sits on a white tab at the right. Section headings are cyan #00adef. The bottom band (#cadf7f, y 0.955-1.0) is the page-foot band carrying the '2024-25' imprint and is reported as footer_rule; the imprint and diagonal 'not to be republished' watermark are not reported as elements. Para 7 has a first-line indent. size_pt omitted because the page DPI is not given."
+}

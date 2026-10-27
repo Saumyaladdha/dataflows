@@ -1,55 +1,67 @@
 {
-  "blocks": [
-    {
-      "n": 1,
-      "kind": "paragraph",
-      "text": "the bacterium through pores in its cell wall. Recombinant DNA can then be forced into such cells by incubating the cells with recombinant DNA on ice, followed by placing them briefly at 42⁰C (heat shock), and then putting them back on ice. This enables the bacteria to take up the recombinant DNA.",
-      "continues_from_previous": true
-    },
-    {
-      "n": 2,
-      "kind": "paragraph",
-      "text": "This is not the only way to introduce alien DNA into host cells. In a method known as micro-injection, recombinant DNA is directly injected into the nucleus of an animal cell. In another method, suitable for plants, cells are bombarded with high velocity micro-particles of gold or tungsten coated with DNA in a method known as biolistics or gene gun. And the last method uses ‘disarmed pathogen’ vectors, which when allowed to infect the cell, transfer the recombinant DNA into the host."
-    },
-    {
-      "n": 3,
-      "kind": "paragraph",
-      "text": "Now that we have learnt about the tools for constructing recombinant DNA, let us discuss the processes facilitating recombinant DNA technology."
-    },
-    {
-      "n": 4,
-      "kind": "figure",
-      "needs_special": true,
-      "bbox": [1047, 837, 1427, 1691],
-      "text": ""
-    },
-    {
-      "n": 5,
-      "kind": "heading",
-      "text": "9.3 PROCESSES OF RECOMBINANT DNA TECHNOLOGY"
-    },
-    {
-      "n": 6,
-      "kind": "paragraph",
-      "text": "Recombinant DNA technology involves several steps in specific sequence such as isolation of DNA, fragmentation of DNA by restriction endonucleases, isolation of a desired DNA fragment, ligation of the DNA fragment into a vector, transferring the recombinant DNA into the host, culturing the host cells in a medium at large scale and extraction of the desired product. Let us examine each of these steps in some details."
-    },
-    {
-      "n": 7,
-      "kind": "heading",
-      "text": "9.3.1 Isolation of the Genetic Material (DNA)"
-    },
-    {
-      "n": 8,
-      "kind": "paragraph",
-      "text": "Recall that nucleic acid is the genetic material of all organisms without exception. In majority of organisms this is deoxyribonucleic acid or DNA. In order to cut the DNA with restriction enzymes, it needs to be in pure form, free from other macro-molecules. Since the DNA is enclosed within the membranes, we have to break the cell open to release DNA along with other macromolecules such as RNA, proteins, polysaccharides and also lipids. This can be achieved by treating the bacterial cells/plant or animal tissue with enzymes such as lysozyme (bacteria), cellulase (plant cells), chitinase (fungus). You know that genes are located on long molecules of DNA interwined with proteins such as histones. The RNA can be removed by treatment with ribonuclease whereas proteins can be removed by treatment with protease. Other molecules can be removed by appropriate treatments and purified DNA ultimately precipitates out after the addition of chilled ethanol. This can be seen as collection of fine threads in the suspension (Figure 9.5)."
-    }
-  ],
-  "first_block_continues_from_previous": true,
-  "last_block_continues_on_next": false,
-  "running_header_footer_removed": [
-    "BIOTECHNOLOGY : PRINCIPLES AND PROCESSES",
-    "171",
-    "Reprint 2026-27"
-  ],
-  "note": "text_layer empty; transcribed from the page image. previous_page_last_block was null, so continuation judged from the page I read just before (p008), which ended mid-sentence at '...the efficiency with which DNA enters'; this page opens 'the bacterium through pores in its cell wall.', so the first block continues from it. Block 4 is Figure 9.5 (two photographs plus caption) set in the right column beside the 9.3 / 9.3.1 text; it is placed at the vertical level where it begins. The left-column text under 9.3.1 is one continuous paragraph that widens to full measure below the figure. Page ends with the completed sentence '...suspension (Figure 9.5).'"
+ "blocks": [
+  {
+   "n": 1,
+   "kind": "paragraph",
+   "text": "The following are the features that are required to facilitate cloning into a vector.",
+   "continues_from_previous": false,
+   "bold_terms": [],
+   "italic_terms": []
+  },
+  {
+   "n": 2,
+   "kind": "list",
+   "text": "(i) Origin of replication (ori) : This is a sequence from where replication starts and any piece of DNA when linked to this sequence can be made to replicate within the host cells. This sequence is also responsible for controlling the copy number of the linked DNA. So, if one wants to recover many copies of the target DNA it should be cloned in a vector whose origin support high copy number.\n(ii) Selectable marker : In addition to ‘ori’, the vector requires a selectable marker, which helps in identifying and eliminating non-transformants and selectively permitting the growth of the transformants. Transformation is a procedure through which a piece of DNA is introduced in a host bacterium (you will study the process in subsequent section). Normally, the genes encoding resistance to antibiotics such as ampicillin, chloramphenicol, tetracycline or kanamycin, etc., are considered useful selectable markers for E. coli. The normal E. coli cells do not carry resistance against any of these antibiotics.\n(iii) Cloning sites: In order to link the alien DNA, the vector needs to have very few, preferably single, recognition sites for the commonly used restriction enzymes. Presence of more than one recognition sites within the vector will generate several fragments, which will complicate the gene cloning (Figure 9.4). The ligation of alien DNA is carried out at a restriction site present in one of the two antibiotic resistance genes. For example, you can ligate a foreign DNA at the BamH I site of tetracycline resistance gene in the vector pBR322. The recombinant plasmids will lose tetracycline resistance due to insertion of foreign DNA but can still be selected out from non-recombinant ones by plating the transformants on ampicillin containing medium. The transformants growing on ampicillin containing medium are then transferred on a medium containing tetracycline. The recombinants will grow in ampicillin containing medium but not on that containing tetracycline. But, non-recombinants will grow on the medium containing both the antibiotics. In this case, one antibiotic resistance gene helps in selecting the transformants, whereas the other antibiotic resistance",
+   "continues_on_next": true,
+   "bold_terms": [
+    "Origin of replication (ori)",
+    "Selectable marker",
+    "Transformation",
+    "Cloning sites",
+    "recognition sites",
+    "antibiotic resistance"
+   ],
+   "italic_terms": [
+    "E. coli"
+   ]
+  },
+  {
+   "n": 3,
+   "kind": "figure",
+   "needs_special": true,
+   "bbox": [
+    853,
+    923,
+    1382,
+    1393
+   ],
+   "text": ""
+  },
+  {
+   "n": 4,
+   "kind": "figure_caption",
+   "text": "Figure 9.4 E. coli cloning vector pBR322 showing restriction sites (Hind III, EcoR I, BamH I, Sal I, Pvu II, Pst I, Cla I), ori and antibiotic resistance genes (ampᴿ and tetᴿ). rop codes for the proteins involved in the replication of the plasmid.",
+   "bold_terms": [
+    "Figure 9.4"
+   ],
+   "italic_terms": [
+    "E. coli",
+    "Hind",
+    "Eco",
+    "Bam",
+    "Sa",
+    "Pvu",
+    "Pst",
+    "Cla"
+   ]
+  }
+ ],
+ "first_block_continues_from_previous": false,
+ "last_block_continues_on_next": true,
+ "running_header_footer_removed": [
+  "BIOTECHNOLOGY : PRINCIPLES AND PROCESSES",
+  "169",
+  "Reprint 2026-27"
+ ],
+ "note": "List item (iii) continues on the next page. Figure 9.4 (pBR322 map) deferred to special transcriber; bbox in original 1580x2160 pixels. Caption superscript R in ampR/tetR written as ᴿ per image. Item labels Origin of replication (ori), Selectable marker, Cloning sites print bold italic; recorded as bold."
 }

@@ -1,0 +1,217 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 19.5,
+    "text_block": [
+      0.098,
+      0.1325,
+      0.686,
+      0.905
+    ],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {
+        "id": "full",
+        "x0": 0.098,
+        "x1": 0.686
+      }
+    ]
+  },
+  "elements": [
+    {
+      "n": null,
+      "role": "page_header_band",
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        0.0815
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "fill": "#e0ebb6"
+    },
+    {
+      "n": null,
+      "role": "page_header_band",
+      "bbox": [
+        0.0,
+        0.0815,
+        1.0,
+        0.095
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "fill": "#d1d2d4"
+    },
+    {
+      "n": null,
+      "role": "running_header",
+      "bbox": [
+        0.138,
+        0.083,
+        0.467,
+        0.095
+      ],
+      "column": "full",
+      "size_rel": 0.95,
+      "align": "left",
+      "font": "serif",
+      "text_color": "#221f1f",
+      "fill": "#d1d2d4"
+    },
+    {
+      "n": null,
+      "role": "page_number",
+      "bbox": [
+        0.814,
+        0.065,
+        0.87,
+        0.095
+      ],
+      "column": "full",
+      "size_rel": 1.15,
+      "align": "center",
+      "font": "serif-bold",
+      "text_color": "#221f1f",
+      "fill": "#ffffff"
+    },
+    {
+      "n": 1,
+      "role": "paragraph",
+      "bbox": [
+        0.098,
+        0.1325,
+        0.686,
+        0.181
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "align": "justify",
+      "font": "serif",
+      "space_before": 0.0375
+    },
+    {
+      "n": 2,
+      "role": "paragraph",
+      "bbox": [
+        0.098,
+        0.185,
+        0.686,
+        0.3015
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "align": "justify",
+      "font": "serif",
+      "space_before": 0.004
+    },
+    {
+      "n": 3,
+      "role": "paragraph",
+      "bbox": [
+        0.098,
+        0.305,
+        0.686,
+        0.456
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "align": "justify",
+      "font": "serif",
+      "space_before": 0.0035
+    },
+    {
+      "n": 4,
+      "role": "paragraph",
+      "bbox": [
+        0.098,
+        0.459,
+        0.686,
+        0.525
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "align": "justify",
+      "font": "serif",
+      "space_before": 0.003
+    },
+    {
+      "n": 5,
+      "role": "section_heading",
+      "bbox": [
+        0.099,
+        0.549,
+        0.412,
+        0.565
+      ],
+      "column": "full",
+      "size_rel": 1.2,
+      "align": "left",
+      "font": "serif-bold",
+      "text_color": "#00adef",
+      "space_before": 0.024
+    },
+    {
+      "n": 6,
+      "role": "paragraph",
+      "bbox": [
+        0.098,
+        0.58,
+        0.686,
+        0.6975
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "align": "justify",
+      "font": "serif",
+      "space_before": 0.015
+    },
+    {
+      "n": 7,
+      "role": "paragraph",
+      "bbox": [
+        0.098,
+        0.701,
+        0.686,
+        0.835
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "align": "justify",
+      "font": "serif",
+      "space_before": 0.0035
+    },
+    {
+      "n": 8,
+      "role": "paragraph",
+      "bbox": [
+        0.098,
+        0.838,
+        0.686,
+        0.905
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "align": "justify",
+      "font": "serif",
+      "space_before": 0.003
+    },
+    {
+      "n": null,
+      "role": "footer_rule",
+      "bbox": [
+        0.0,
+        0.956,
+        1.0,
+        1.0
+      ],
+      "column": "full",
+      "size_rel": 1.0,
+      "fill": "#cadf7f"
+    }
+  ],
+  "note": "Recto body page, single full column 0.098-0.686 (right margin empty). body_text_size_px measured on prose cap-to-baseline. Top light-green band and grey header strip both reported as page_header_band; bottom green band reported as footer_rule. The '2024-25' reprint stamp in the foot band is not reported (not a page number). size_pt values derived from an assumed ~150 dpi render (2182px tall page) - size_rel is the trusted value. All 8 A2 blocks matched by position; paragraph first-line indents are not reported as element indent."
+}

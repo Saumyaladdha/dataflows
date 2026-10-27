@@ -147,7 +147,12 @@ _CHECK_MODULE_CACHE = {}
 def load_check_module(step):
     if step in _CHECK_MODULE_CACHE:
         return _CHECK_MODULE_CACHE[step]
-    path = pp("scripts", "checks", f"{step}.py")
+    # The package was renamed `scripts/` -> `code/` in the workflow split (SPEC section 19); a
+    # check that cannot be found failed EVERY item with FileNotFoundError, which the fallback
+    # chain then treated as a bad agent answer and sent back for a retry.
+    path = pp("code", "checks", f"{step}.py")
+    if not os.path.exists(path):
+        path = pp("scripts", "checks", f"{step}.py")
     spec = importlib.util.spec_from_file_location(f"pyq_checks_{step}", path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -392,6 +397,7 @@ def iter_ncert_files():
     """Yield every PDF under inputs/ncert/{latest,older,lab_manuals}/, sorted, as
     (relpath_from_inputs_ncert, absolute_path)."""
     root = pp("inputs", "ncert")
+    seen = set()
     for edition_dir in ("latest", "older", "lab_manuals"):
         base = os.path.join(root, edition_dir)
         if not os.path.isdir(base):
@@ -402,7 +408,32 @@ def iter_ncert_files():
                 if fn.lower().endswith(".pdf"):
                     abspath = os.path.join(dirpath, fn)
                     relpath = os.path.relpath(abspath, root)
+                    seen.add(relpath.replace(os.sep, "/"))
                     yield relpath, abspath
+    # THE LAYOUT AFTER THE WORKFLOW SPLIT. The build reads `source_pdfs/{new,old}/class_NN/
+    # <subject>/`, the README tells a new clone to put its PDFs there, and `inputs/ncert/` no
+    # longer exists -- so every agent step's `--list` found no PDF at all and printed "No books
+    # registered yet", while the build itself worked. Each file is yielded under the relpath
+    # it would have had in `inputs/ncert/`, so item ids, the register and every agent output
+    # already on disk keep matching. `inputs/` still wins where both exist.
+    src = pp("source_pdfs")
+    for ed_src, ed_in in (("new", "latest"), ("old", "older")):
+        base = os.path.join(src, ed_src)
+        if not os.path.isdir(base):
+            continue
+        for dirpath, dirnames, filenames in os.walk(base):
+            dirnames.sort()
+            parts = os.path.relpath(dirpath, base).replace(os.sep, "/").split("/")
+            m = re.fullmatch(r"class_(\d+)", parts[0]) if parts else None
+            if not m or len(parts) < 2:
+                continue
+            for fn in sorted(filenames):
+                if not fn.lower().endswith(".pdf"):
+                    continue
+                rel = "/".join([ed_in, "Class_%dth" % int(m.group(1)),
+                                parts[1].capitalize()] + parts[2:] + [fn])
+                if rel not in seen:
+                    yield rel.replace("/", os.sep), os.path.join(dirpath, fn)
 
 
 # ---------------------------------------------------------------------------

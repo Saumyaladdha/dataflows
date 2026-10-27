@@ -55,7 +55,21 @@ def fonts():
         _face("NcertBody", "texgyrebonum-italic.otf", 400, "italic"),
         _face("NcertBody", "texgyrebonum-bolditalic.otf", 700, "italic"),
         _face("NcertDisplay", "texgyreadventor-regular.otf", 400, "normal"),
+        _greek_faces(),
     ])
+
+
+def _greek_faces():
+    """GREEK IN THE BOOK'S FACE. NCERT sets alpha/beta in a Times-style TrueType face or Symbol,
+    upright; Bonum's own beta is a curled form that reads as `6` (BIO12L ch04 p025: `a and 6
+    chains`). Declared after the Bonum faces, for the Greek block only, so it wins there and
+    nowhere else; with no Times on the viewer's machine the text falls back to Bonum as before."""
+    src = ('local("Times New Roman"),local("TimesNewRomanPSMT"),local("Times"),'
+           'local("Liberation Serif"),local("Nimbus Roman")')
+    return "".join(
+        f"@font-face{{font-family:'NcertBody';src:{src};font-weight:{w};font-style:{s};"
+        f"unicode-range:U+0370-03FF;}}"
+        for w, s in ((400, "normal"), (700, "normal"), (400, "italic"), (700, "italic")))
 
 
 def marked_html(body, marks):
@@ -760,6 +774,14 @@ def fit_factor(nodes, d, top_pt, foot_pt):
             if bx and bx0.get("src") in ("measured", "a2l-agent") and bx[2] > bx[0]:
                 continue
             used += (bx[3] - bx[1]) * d.trim_pt[1] if bx else 60.0
+            continue
+        # A NOTE IN THE SIDE RAIL is out of the text flow too. BIO12L ch03 p046 prints the MTP
+        # Act (45 lines) in the left rail beside the prose; summed into the column it "needed"
+        # 65% and failed PAGE_OVERFLOW on a page that fits as printed.
+        bx0 = (n.get("boxes") or [{}])[0]
+        if (n.get("column") == "side" and bx0.get("src") in ("measured", "a2l-agent")
+                and (bx0.get("bbox") or [0, 0, 0, 0])[2] - (bx0.get("bbox") or [0, 0, 0, 0])[0]
+                < 0.35):
             continue
         lines = n.get("line_count")
         pitch = n.get("line_pitch_pt") or d.body_pt * d.leading

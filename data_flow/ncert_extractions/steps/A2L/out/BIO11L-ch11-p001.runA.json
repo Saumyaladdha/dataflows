@@ -1,0 +1,36 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20.5,
+    "page_kind": "unit_opener",
+    "text_block": [0.097, 0.554, 0.872, 0.783],
+    "fill": 0.95,
+    "columns": [
+      {"id": "left", "x0": 0.097, "x1": 0.300},
+      {"id": "right", "x0": 0.323, "x1": 0.872}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.52, 0.0, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cde084"},
+    {"n": null, "role": "decorative_image", "bbox": [0.318, 0.173, 0.721, 0.40],
+     "column": "full", "size_rel": 1.0, "space_before": 0.173},
+    {"n": null, "role": "chapter_title", "bbox": [0.325, 0.447, 0.485, 0.485],
+     "column": "right", "size_rel": 4.0, "align": "left", "font": "sans-light",
+     "text_color": "#201818", "space_before": 0.047},
+    {"n": null, "role": "major_heading", "bbox": [0.325, 0.508, 0.567, 0.524],
+     "column": "right", "size_rel": 1.6, "align": "left", "font": "sans-light",
+     "text_color": "#201818", "space_before": 0.023},
+    {"n": null, "role": "contents_panel", "bbox": [0.097, 0.554, 0.297, 0.706],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif",
+     "text_color": "#201818", "space_before": 0.030},
+    {"n": 1, "role": "paragraph", "bbox": [0.323, 0.554, 0.872, 0.783],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.030},
+    {"n": null, "role": "page_number", "bbox": [0.476, 0.955, 0.525, 0.965],
+     "column": "full", "size_rel": 0.85, "align": "center", "font": "sans",
+     "space_before": 0.172}
+  ],
+  "note": "Unit opener (Unit 4 Plant Physiology), recto, two columns: a narrow left rail listing Chapters 11-13 (one contents_panel element, chapter labels bold, titles regular serif, bare paper) beside the unit's opening prose in the right column. A large slanted light-green panel (#cde084, flat interior) covers the right of the page from x~0.52 at the top widening to x~0.73 at the foot; its bbox is the bounding rectangle. The stomata artwork at the top is uncaptioned unit-opener art with a faded mirror reflection below it (included in its bbox to y~0.40), reported as decorative_image. 'UNIT 4' and 'PLANT PHYSIOLOGY' are not A2 blocks (n null); they sit at the right column's left edge. UNIT 4 cap height measured ~83px vs body cap 20-21px (ratio ~4.0-4.1), reported as 4.0. The only footer text is the '2024-25' edition stamp, labelled page_number for lack of a closer role; no folio number is printed. The diagonal 'not to be republished' watermark is ignored. size_pt omitted because the render DPI is not given."
+}

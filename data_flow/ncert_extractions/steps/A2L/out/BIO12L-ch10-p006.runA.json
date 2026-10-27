@@ -1,0 +1,225 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 19.5,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.099,
+   0.107,
+   0.934,
+   0.904
+  ],
+  "fill": 0.98,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.099,
+    "x1": 0.424
+   },
+   {
+    "id": "right",
+    "x0": 0.441,
+    "x1": 0.934
+   },
+   {
+    "id": "full",
+    "x0": 0.301,
+    "x1": 0.934
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.209,
+    0.0,
+    1.0,
+    0.039
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.2,
+    0.098
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.869,
+    0.075,
+    0.933,
+    0.086
+   ],
+   "column": "full",
+   "size_rel": 0.75,
+   "align": "right",
+   "font": "sans",
+   "text_color": "#6d6e71"
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.099,
+    0.108,
+    0.398,
+    0.292
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "space_before": 0.022
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.099,
+    0.295,
+    0.424,
+    0.357
+   ],
+   "column": "left",
+   "size_rel": 0.9,
+   "align": "left",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.003
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.441,
+    0.107,
+    0.934,
+    0.352
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.021
+  },
+  {
+   "n": 3,
+   "role": "section_heading",
+   "bbox": [
+    0.302,
+    0.37,
+    0.528,
+    0.386
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#6d6e71",
+   "space_before": 0.013
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.301,
+    0.398,
+    0.934,
+    0.538
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.012
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.301,
+    0.54,
+    0.934,
+    0.808
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.002
+  },
+  {
+   "n": 6,
+   "role": "section_heading",
+   "bbox": [
+    0.302,
+    0.825,
+    0.596,
+    0.842
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#6d6e71",
+   "space_before": 0.017
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.301,
+    0.851,
+    0.934,
+    0.904
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.009
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0,
+    0.786,
+    0.163,
+    0.826
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "center",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.832,
+    0.163,
+    0.838
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary verso body page. The body text column is 'full' (x 0.301-0.934, left margin carries the folio tab). At the top the page splits in two: Figure 10.3 with its tinted caption panel in a 'left' column (0.099-0.424) reaching into the margin, and block 2's prose in a narrower 'right' column (0.441-0.934) beside it; below y=0.36 the text returns to the full body column. A2 lists no caption block, so the caption element has n=null. The 'Reprint 2026-27' stamp at the page foot is not the folio and is left out; the printed folio is the page_number element on the orange tab. size_pt omitted: page DPI is not given, so only size_rel is reported."
+}

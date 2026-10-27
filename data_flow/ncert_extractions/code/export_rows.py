@@ -257,9 +257,13 @@ def style_row(design_key, book_ids):
 
 
 def load_docs():
+    # ONLY THE DELIVERABLE FOLDERS. `*_ncert` also matched scratch builds such as
+    # `regress_new_ncert`, which sort after `new_ncert`: their copy of a chapter was exported
+    # last and replaced the live rows -- BIO11L ch04's rows went out with 22 local `figures/`
+    # paths and no CDN link.
     docs = []
-    for p in sorted(glob.glob(os.path.join(ROOT, "data", "*_ncert", "class_*", "*", "*",
-                                           "chapter.json"))):
+    for p in sorted(p for ed in ("new", "old") for p in glob.glob(os.path.join(
+            ROOT, "data", f"{ed}_ncert", "class_*", "*", "*", "chapter.json"))):
         with open(p, encoding="utf-8") as fh:
             docs.append((p, json.load(fh)))
     return docs

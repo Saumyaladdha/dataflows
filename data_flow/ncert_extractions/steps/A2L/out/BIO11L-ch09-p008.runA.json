@@ -1,0 +1,26 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 18.5,
+    "text_block": [0.098, 0.134, 0.687, 0.905],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "left", "x0": 0.098, "x1": 0.687}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.095], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.082, 0.258, 0.095], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.815, 0.065, 0.870, 0.095], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "fill": "#ffffff", "space_before": 0.0},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.134, 0.687, 0.255], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.029, "space_before": 0.039},
+    {"n": 2, "role": "section_heading", "bbox": [0.098, 0.283, 0.286, 0.298], "column": "left", "size_rel": 1.3, "align": "left", "font": "sans", "text_color": "#00a0e0", "space_before": 0.028},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.317, 0.687, 0.456], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.019},
+    {"n": 4, "role": "paragraph", "bbox": [0.098, 0.459, 0.687, 0.616], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.029, "space_before": 0.003},
+    {"n": 5, "role": "section_heading", "bbox": [0.098, 0.644, 0.352, 0.658], "column": "left", "size_rel": 1.3, "align": "left", "font": "sans", "text_color": "#00a0e0", "space_before": 0.028},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.677, 0.687, 0.905], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.019},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.051}
+  ],
+  "note": "Ordinary recto body page (folio 111), all prose in a single text column (0.098-0.687) with an empty right margin; no figures or tables. Header band pale green #e0ebb6 with grey strip (#d1d2d4) carrying running header 'Biomolecules'; page number on a white tab at right. Foot band #cadf7f carrying '2024-25', reported as footer_rule. Paragraph 1 opens with a first-line indent (continuation of the polysaccharide discussion). Watermark not reported. size_pt omitted because the page DPI is not stated in the input; heading text colour approximate."
+}

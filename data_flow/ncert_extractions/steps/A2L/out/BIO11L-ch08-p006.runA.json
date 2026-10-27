@@ -1,0 +1,30 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 23,
+    "text_block": [0.128, 0.133, 0.902, 0.904],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "left", "x0": 0.128, "x1": 0.506},
+      {"id": "right", "x0": 0.314, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.08], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.08, 1.0, 0.093], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.142, 0.081, 0.165, 0.094], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "text_color": "#231f20"},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.082, 0.9, 0.093], "column": "full", "size_rel": 0.95, "align": "right", "font": "serif", "text_color": "#231f20"},
+    {"n": 1, "role": "figure", "bbox": [0.128, 0.133, 0.506, 0.385], "column": "left", "size_rel": 1.0, "space_before": 0.04},
+    {"n": 2, "role": "figure_caption", "bbox": [0.128, 0.405, 0.495, 0.447], "column": "left", "size_rel": 0.9, "align": "justify", "font": "serif", "text_color": "#6d6e71", "space_before": 0.02},
+    {"n": 3, "role": "paragraph", "bbox": [0.314, 0.133, 0.902, 0.504], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.04},
+    {"n": 4, "role": "section_heading", "bbox": [0.314, 0.523, 0.738, 0.538], "column": "right", "size_rel": 1.15, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.019},
+    {"n": 5, "role": "paragraph", "bbox": [0.314, 0.549, 0.902, 0.706], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.011},
+    {"n": 6, "role": "paragraph", "bbox": [0.314, 0.71, 0.902, 0.796], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.03, "space_before": 0.004},
+    {"n": 7, "role": "paragraph", "bbox": [0.314, 0.799, 0.902, 0.85], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.03, "space_before": 0.003},
+    {"n": 8, "role": "paragraph", "bbox": [0.314, 0.853, 0.902, 0.904], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.03, "space_before": 0.003},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.052}
+  ],
+  "note": "Ordinary body page (verso): folio 90 in a white tab at left of the grey strip #d1d2d4, running header 'Biology' at right; light green top band #e0ebb6. Figure 8.2 and its side caption sit at upper left (0.128-0.506) and paragraph 3 wraps beside them: its first 19 lines run in a narrow measure x 0.52-0.902, then its last two lines and everything below return to the full body measure 0.314-0.902. Paragraph 3's bbox is the union of both parts. Columns 'left' and 'right' therefore overlap horizontally; the body column is 'right'. Indents on paragraphs 6-8 are first-line indents. Footer green band #cadf7f carries the '2024-25' stamp. Diagonal NCERT watermark ignored. size_pt not given (DPI not stated)."
+}

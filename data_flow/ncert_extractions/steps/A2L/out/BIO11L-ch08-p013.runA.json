@@ -1,0 +1,45 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.099, 0.133, 0.687, 0.903],
+    "fill": 1.0,
+    "columns": [
+      {"id": "full", "x0": 0.099, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.080],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.080, 1.0, 0.093],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.082, 0.316, 0.093],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif",
+     "fill": "#d1d2d4", "text_color": "#231f20", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.826, 0.081, 0.851, 0.093],
+     "column": "full", "size_rel": 1.2, "align": "center", "font": "sans",
+     "fill": "#ffffff", "text_color": "#231f20", "space_before": 0.0},
+    {"n": 1, "role": "figure", "bbox": [0.138, 0.1327, 0.654, 0.3609],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0397},
+    {"n": 2, "role": "figure_caption", "bbox": [0.148, 0.3733, 0.634, 0.3843],
+     "column": "full", "size_rel": 0.9, "align": "center", "font": "serif",
+     "text_color": "#6d6e71", "space_before": 0.0124},
+    {"n": 3, "role": "paragraph", "bbox": [0.099, 0.4027, 0.687, 0.6469],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0184},
+    {"n": 4, "role": "section_heading", "bbox": [0.099, 0.6667, 0.244, 0.6772],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold",
+     "text_color": "#00adef", "space_before": 0.0198},
+    {"n": 5, "role": "paragraph", "bbox": [0.099, 0.6938, 0.685, 0.7773],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0166},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.7828, 0.686, 0.9027],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0055},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.053}
+  ],
+  "note": "Ordinary recto body page (folio 97), single full text column 0.099-0.686 with a wide empty right margin. Page opens with Figure 8.7 (mitochondrion artwork with labels Outer membrane, Inner membrane, Inter-membrane space, Matrix, Crista) at the head of the text block, its caption centred beneath in grey #6d6e71 with bold 'Figure 8.7' label; the body paragraph n3 (continuing from the previous page) follows. 8.5.5 Plastids is a bold cyan (#00adef) section heading ~1.15x body. Header: pale green band #e0ebb6 over grey strip #d1d2d4 with small-caps running header at left and folio '97' in a white tab at right. Foot: thick green band #cadf7f (reported as footer_rule) carrying the year stamp '2024-25'. body_text_size_px is cap-to-baseline of a body line without descenders (~20px). n6 continues onto the next page. Watermark ignored. size_pt omitted: page DPI not given. Heading colour sampled on p012/p009 style (same #00adef cyan) — not separately sampled on this page."
+}

@@ -1,0 +1,195 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 20.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.099,
+   0.11,
+   0.933,
+   0.909
+  ],
+  "fill": 0.98,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.299,
+    "x1": 0.933
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.21,
+    0.0,
+    1.0,
+    0.0375
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.195,
+    0.096
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.869,
+    0.075,
+    0.933,
+    0.084
+   ],
+   "column": "full",
+   "size_rel": 0.75,
+   "align": "right",
+   "font": "sans"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.11,
+    0.933,
+    0.214
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.026
+  },
+  {
+   "n": 2,
+   "role": "figure",
+   "bbox": [
+    0.184,
+    0.238,
+    0.848,
+    0.434
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.024
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.099,
+    0.4485,
+    0.932,
+    0.4825
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "justify",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.0145
+  },
+  {
+   "n": 3,
+   "role": "figure",
+   "bbox": [
+    0.237,
+    0.5025,
+    0.863,
+    0.701
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.02
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.099,
+    0.719,
+    0.932,
+    0.742
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "center",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.018
+  },
+  {
+   "n": 4,
+   "role": "figure",
+   "bbox": [
+    0.396,
+    0.7785,
+    0.703,
+    0.8415
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.0365
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.099,
+    0.8635,
+    0.932,
+    0.909
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "justify",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.022
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0,
+    0.784,
+    0.163,
+    0.819
+   ],
+   "column": "full",
+   "size_rel": 1.4,
+   "align": "right",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.8275,
+    0.163,
+    0.834
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary verso body page, single full column (prose at 0.299-0.933); figures and their caption bands extend left into the margin (captions from x0 0.099), so text_block x0 is 0.099. Blocks 2, 3, 4 (figures) matched in reading order to Figure 12.4 (a) pyramid of numbers, (b) pyramid of biomass, (c) inverted pyramid of biomass. Captions have no separate A2 blocks, so caption elements are n null. Block 1 has no first-line indent (continues from previous page). body_text_size_px measured as cap-to-baseline height of body prose (~20px at 2160px page height). size_pt omitted: page DPI not given. The 'Reprint 2026-27' stamp at the foot is not reported (not a page_number). The orange folio tab is the page_number; the thin orange line under it is the footer_rule. Diagonal NCERT watermark ignored."
+}

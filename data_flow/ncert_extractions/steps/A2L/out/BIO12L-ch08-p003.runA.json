@@ -1,0 +1,46 @@
+{
+  "page": {
+    "width_px": 1580,
+    "height_px": 2160,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.0671, 0.1111, 0.7013, 0.9042],
+    "fill": 0.99,
+    "columns": [
+      {"id": "full", "x0": 0.0671, "x1": 0.7013}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 0.7911, 0.0384],
+     "column": "full", "size_rel": 1.0, "fill": "#4c7436", "space_before": 0.0},
+    {"n": null, "role": "decorative_image", "bbox": [0.805, 0.0, 1.0, 0.0935],
+     "column": "full", "size_rel": 1.0, "fill": "#745421", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.0684, 0.0764, 0.2994, 0.0847],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "sans",
+     "text_color": "#6d6e71", "space_before": 0.038},
+    {"n": 1, "role": "paragraph", "bbox": [0.0677, 0.1111, 0.7013, 0.2019],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "indent": 0.037, "space_before": 0.0264},
+    {"n": 2, "role": "section_heading", "bbox": [0.0684, 0.2208, 0.4949, 0.2333],
+     "column": "full", "size_rel": 1.3, "align": "left", "font": "serif-bold",
+     "text_color": "#00ad4b", "space_before": 0.0189},
+    {"n": 3, "role": "paragraph", "bbox": [0.0671, 0.2509, 0.7013, 0.4579],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0176},
+    {"n": 4, "role": "paragraph", "bbox": [0.0671, 0.4644, 0.7006, 0.788],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "indent": 0.0303, "space_before": 0.0065},
+    {"n": 5, "role": "section_heading", "bbox": [0.0684, 0.8032, 0.5095, 0.8157],
+     "column": "full", "size_rel": 1.3, "align": "left", "font": "serif-bold",
+     "text_color": "#00ad4b", "space_before": 0.0152},
+    {"n": 6, "role": "paragraph", "bbox": [0.0671, 0.8333, 0.6994, 0.9042],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0176},
+    {"n": null, "role": "page_number", "bbox": [0.8399, 0.7852, 1.0, 0.8255],
+     "column": "full", "size_rel": 1.3, "align": "left", "font": "sans",
+     "fill": "#f7931d", "text_color": "#ffffff"},
+    {"n": null, "role": "footer_rule", "bbox": [0.8399, 0.8287, 1.0, 0.8347],
+     "column": "full", "size_rel": 1.0, "fill": "#f7931d"}
+  ],
+  "note": "Ordinary recto body page (folio 151). Single text column x 0.067-0.701 with a wide empty outer margin on the right. body_text_size_px is the cap-to-baseline height of body prose (line pitch ~42 px). Dark green page_header_band #4c7436 spans x 0-0.791 at the top; the brown #745421 block, orange strip and leaf/figure logo at top right are one decorative_image. Running header 'MICROBES IN HUMAN WELFARE' in grey sans caps at top left. Section headings 8.1 and 8.2 are green #00ad4b bold small caps. Paragraphs 1 and 4 have a first-line indent; the paragraph after each heading does not. The page number '151' is white on an orange #f7931d tab at the right margin with a thin orange rule below it (footer_rule). The 'Reprint 2026-27' stamp at the foot (y~0.974) is not the folio and is left out. size_pt omitted (DPI not given); size_rel is measured."
+}

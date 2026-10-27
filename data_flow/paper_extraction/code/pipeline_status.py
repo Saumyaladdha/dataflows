@@ -49,12 +49,12 @@ def _files(*parts):
 
 def _papers():
     return sorted(os.path.basename(p)[:-5]
-                  for p in glob.glob(rc.pp("papers_v2", "papers", "*.json")))
+                  for p in glob.glob(rc.pp(*rc.corpus(), "papers", "*.json")))
 
 
 def _questions_total():
     n = 0
-    for path in glob.glob(rc.pp("papers_v2", "papers", "*.json")):
+    for path in glob.glob(rc.pp(*rc.corpus(), "papers", "*.json")):
         with open(path, encoding="utf-8") as fh:
             n += len(json.load(fh)["questions"])
     return n
@@ -63,7 +63,7 @@ def _questions_total():
 def _csv_rows(column=None, value=None):
     """Rows across every exported paper CSV, optionally filtered."""
     n = 0
-    for path in glob.glob(rc.pp("papers_v2", "exports", "csv", "*.csv")):
+    for path in glob.glob(rc.pp(*rc.corpus(), "exports", "csv", "*.csv")):
         if "questions_v2" in os.path.basename(path):
             continue
         with open(path, encoding="utf-8") as fh:
@@ -75,7 +75,7 @@ def _csv_rows(column=None, value=None):
 
 def _mapped(column):
     n = 0
-    for path in glob.glob(rc.pp("papers_v2", "exports", "csv", "*.csv")):
+    for path in glob.glob(rc.pp(*rc.corpus(), "exports", "csv", "*.csv")):
         if "questions_v2" in os.path.basename(path):
             continue
         with open(path, encoding="utf-8") as fh:
@@ -88,7 +88,7 @@ def _mapped(column):
 def _evidence_scope():
     """Questions whose evidence is a QUOTE, i.e. not physics or physical chemistry."""
     n = 0
-    for path in glob.glob(rc.pp("papers_v2", "exports", "csv", "*.csv")):
+    for path in glob.glob(rc.pp(*rc.corpus(), "exports", "csv", "*.csv")):
         if "questions_v2" in os.path.basename(path):
             continue
         with open(path, encoding="utf-8") as fh:
@@ -165,7 +165,7 @@ STAGES = [
           lambda: _qca_scope(), "questions",
           "A numerical's answer is a VALUE and NCERT prints SENTENCES."),
     Stage("EXPORT", "Paper pages and CSVs written", ["B3V"],
-          lambda: _files("papers_v2", "exports", "html", "2*.html"), lambda: len(_papers()),
+          lambda: _files(*rc.corpus(), "exports", "html", "2*.html"), lambda: len(_papers()),
           "booklets", "scripts/export_paper_v2.py --html --all"),
     Stage("MAP", "NCERT evidence map built", ["D4V", "QCA", "EXPORT"],
           lambda: 1 if os.path.exists(rc.pp("ncert_book_mapping", "ncert_paper_map.html")) else 0,
@@ -186,7 +186,7 @@ def _passage_lines():
 def _qca_scope():
     """Physics + physical chemistry questions, plus the solving questions of other branches."""
     n = 0
-    for path in glob.glob(rc.pp("papers_v2", "exports", "csv", "*.csv")):
+    for path in glob.glob(rc.pp(*rc.corpus(), "exports", "csv", "*.csv")):
         if "questions_v2" in os.path.basename(path):
             continue
         with open(path, encoding="utf-8") as fh:

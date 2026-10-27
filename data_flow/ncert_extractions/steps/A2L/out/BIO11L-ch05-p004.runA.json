@@ -1,0 +1,45 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 19.5,
+    "page_kind": "ordinary",
+    "text_block": [0.131, 0.133, 0.902, 0.886],
+    "fill": 0.95,
+    "columns": [
+      {"id": "left", "x0": 0.131, "x1": 0.547},
+      {"id": "right", "x0": 0.568, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.077],
+     "column": "full", "size_rel": 1.0, "fill": "#e1ecb3", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.077, 1.0, 0.092],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d3d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.141, 0.078, 0.17, 0.092],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans",
+     "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.081, 0.9, 0.092],
+     "column": "full", "size_rel": 0.9, "align": "right", "font": "serif",
+     "space_before": 0.0},
+    {"n": 1, "role": "paragraph", "bbox": [0.568, 0.14, 0.902, 0.473],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.048},
+    {"n": 2, "role": "figure", "bbox": [0.186, 0.133, 0.547, 0.501],
+     "column": "left", "size_rel": 1.0, "space_before": 0.041},
+    {"n": 3, "role": "figure_caption", "bbox": [0.216, 0.52, 0.51, 0.533],
+     "column": "left", "size_rel": 0.95, "align": "left", "font": "serif",
+     "space_before": 0.019},
+    {"n": 4, "role": "figure", "bbox": [0.131, 0.575, 0.902, 0.833],
+     "column": "full", "size_rel": 1.0, "space_before": 0.042},
+    {"n": 5, "role": "figure_caption", "bbox": [0.232, 0.873, 0.797, 0.886],
+     "column": "full", "size_rel": 0.95, "align": "center", "font": "serif",
+     "space_before": 0.04},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cfe28a", "space_before": 0.07},
+    {"n": null, "role": "page_number", "bbox": [0.477, 0.955, 0.525, 0.964],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans",
+     "space_before": 0.0}
+  ],
+  "note": "Ordinary verso body page (folio 58). Header: a pale-green band (#e1ecb3) over a thin grey strip (#d1d3d4), with a white tab at left carrying the bold folio '58' and the small-caps running head 'BIOLOGY' at right. Upper half is two columns: Figure 5.1 (labelled line drawing of a mustard plant, vector artwork with labels) plus its caption in the left column, continuing prose (block 1) in the right column. Figure 5.2 (three panels a, b, c with labels) spans the full measure, caption centred below. Figure 5.2 box includes the (a)(b)(c) panel letters. Figure captions: 'Figure 5.x' in bold, remainder regular serif. Light-green band at the page foot reported as footer_rule with fill; the '2024-25' edition-year line on it is labelled page_number only as nearest allowed role (the real folio is '58' at top). Diagonal watermark ignored. body_text_size_px measured on right-column prose. size_pt omitted because page DPI is not known."
+}

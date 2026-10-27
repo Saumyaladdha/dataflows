@@ -1,0 +1,203 @@
+{
+ "page": {
+  "width_px": 1682,
+  "height_px": 2190,
+  "body_text_size_px": 17.5,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.099,
+   0.135,
+   0.862,
+   0.906
+  ],
+  "fill": 0.98,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.099,
+    "x1": 0.862
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.083
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.139,
+    0.084,
+    0.414,
+    0.096
+   ],
+   "column": "full",
+   "size_rel": 0.85,
+   "align": "left",
+   "font": "serif",
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.825,
+    0.067,
+    0.88,
+    0.098
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "center",
+   "font": "serif-bold",
+   "fill": "#ffffff"
+  },
+  {
+   "n": 1,
+   "role": "major_heading",
+   "bbox": [
+    0.099,
+    0.135,
+    0.366,
+    0.153
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00aeef",
+   "space_before": 0.0
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.099,
+    0.168,
+    0.694,
+    0.256
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.015
+  },
+  {
+   "n": 3,
+   "role": "section_heading",
+   "bbox": [
+    0.099,
+    0.27,
+    0.394,
+    0.288
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00aeef",
+   "space_before": 0.014
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.099,
+    0.297,
+    0.694,
+    0.775
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.009
+  },
+  {
+   "n": 5,
+   "role": "figure",
+   "bbox": [
+    0.495,
+    0.44,
+    0.862,
+    0.73
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#fffbd5",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.523,
+    0.742,
+    0.845,
+    0.757
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "center",
+   "font": "serif",
+   "space_before": 0.012
+  },
+  {
+   "n": 6,
+   "role": "section_heading",
+   "bbox": [
+    0.099,
+    0.791,
+    0.49,
+    0.809
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00aeef",
+   "space_before": 0.034
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.099,
+    0.817,
+    0.694,
+    0.906
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.008
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.954,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Ordinary recto body page, single full column (body measure 0.099-0.694). Paragraph n=4 wraps: its lower ~19 lines narrow to 0.099-0.466 while Figure 14.5 (n=5, graph with pale-yellow grid #fffbd5) sits to its right extending into the right margin to 0.862; the paragraph bbox is given at full measure. The caption 'Figure 14.5 Oxygen dissociation curve' has no A2 block, so its n is null. Header: green band #e0ebb6 over a grey strip #d1d2d4 carrying the running head; folio 189 in a white tab at right. Foot band #cadf7f carries '2024-25'. n=1 is an all-caps (small-caps) major heading; n=3 and n=6 are subsection headings, all cyan. body_text_size_px measured as cap height of body prose. size_pt omitted (DPI not known). Diagonal NCERT watermark ignored."
+}

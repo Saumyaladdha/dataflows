@@ -1,0 +1,62 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "paragraph",
+      "text": "two of which (natality and immigration) contribute to an increase in population density and two (mortality and emigration) to a decrease.",
+      "continues_from_previous": true
+    },
+    {
+      "n": 2,
+      "kind": "list",
+      "text": "(i)\tNatality refers to the number of births during a given period in the population that are added to the initial density.\n(ii)\tMortality is the number of deaths in the population during a given period.\n(iii)\tImmigration is the number of individuals of the same species that have come into the habitat from elsewhere during the time period under consideration.\n(iv)\tEmigration is the number of individuals of the population who left the habitat and gone elsewhere during the time period under consideration."
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        103,
+        719,
+        1419,
+        1465
+      ],
+      "text": ""
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Figure 11.2"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "So, if N is the population density at time t, then its density at time t +1 is"
+    },
+    {
+      "n": 6,
+      "kind": "equation",
+      "needs_special": true,
+      "bbox": [
+        411,
+        1615,
+        807,
+        1660
+      ],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "You can see from the above equation (Fig. 11.2) that population density will increase if the number of births plus the number of immigrants (B + I) is more than the number of deaths plus the number of emigrants (D + E).  Under normal conditions, births and deaths are the most important factors influencing population density, the other two factors assuming importance only under special conditions.  For instance, if a new habitat is just being colonised, immigration may contribute more significantly to population growth than birth rates."
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
+  "running_header_footer_removed": [
+    "ORGANISMS AND POPULATIONS",
+    "193",
+    "Reprint 2026-27"
+  ],
+  "note": "Page 3 ended mid-sentence at 'four basic processes,' and this page opens 'two of which (natality and immigration)...', so the first block continues. Display equation N(t+1) = Nt + [(B + I) – (D + E)] marked needs_special. Page ends on a complete sentence."
+}

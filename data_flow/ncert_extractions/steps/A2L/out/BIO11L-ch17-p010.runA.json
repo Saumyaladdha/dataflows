@@ -1,0 +1,231 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2178,
+  "body_text_size_px": 20.5,
+  "text_block": [
+   0.128,
+   0.1286,
+   0.903,
+   0.904
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.128,
+    "x1": 0.499
+   },
+   {
+    "id": "right",
+    "x0": 0.529,
+    "x1": 0.903
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.08
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.08,
+    1.0,
+    0.0935
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.142,
+    0.083,
+    0.178,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.05,
+   "align": "center",
+   "font": "sans",
+   "fill": "#ffffff",
+   "text_color": "#231f20"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.838,
+    0.083,
+    0.9,
+    0.092
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "right",
+   "font": "serif",
+   "text_color": "#231f20"
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.221,
+    0.1313,
+    0.414,
+    0.4807
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "space_before": 0.0378
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.138,
+    0.4945,
+    0.499,
+    0.5197
+   ],
+   "column": "left",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "space_before": 0.0138
+  },
+  {
+   "n": 2,
+   "role": "figure",
+   "bbox": [
+    0.165,
+    0.5436,
+    0.461,
+    0.8586
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "space_before": 0.0239
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.128,
+    0.877,
+    0.499,
+    0.9022
+   ],
+   "column": "left",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "space_before": 0.0184
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.529,
+    0.1286,
+    0.903,
+    0.3076
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0351
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.529,
+    0.3136,
+    0.903,
+    0.6405
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.006
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.529,
+    0.646,
+    0.903,
+    0.7883
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0055
+  },
+  {
+   "n": 6,
+   "role": "section_heading",
+   "bbox": [
+    0.53,
+    0.8168,
+    0.659,
+    0.8278
+   ],
+   "column": "right",
+   "size_rel": 1.2,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00acee",
+   "space_before": 0.0285
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.529,
+    0.8526,
+    0.903,
+    0.9022
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0248
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Verso body page (folio 226). Two columns: LEFT column holds Figure 17.9 (block 1, pectoral girdle and arm) and Figure 17.10 (block 2, pelvic girdle and leg), each with its caption below (captions are not A2 blocks, n:null; the 'Figure 17.x' label is bold). RIGHT column holds running prose (blocks 3-5), the cyan small-caps section heading '17.4 JOINTS' (block 6, #00acee) and the start of the next paragraph (block 7). Folio sits on the white tab at the LEFT; running head 'BIOLOGY' at the right of the grey strip. The '2024-25' stamp on the footer band is not a page_number. body_text_size_px ~20.5 (ascender-to-baseline). size_pt omitted: DPI not given. Watermark ignored."
+}

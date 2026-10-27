@@ -1,0 +1,94 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2178,
+  "body_text_size_px": 20,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.127,
+   0.127,
+   0.902,
+   0.163
+  ],
+  "fill": 0.05,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.127,
+    "x1": 0.902
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.08
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.08,
+    1.0,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": 1,
+   "role": "section_heading",
+   "bbox": [
+    0.48,
+    0.127,
+    0.549,
+    0.145
+   ],
+   "column": "full",
+   "size_rel": 1.8,
+   "space_before": 0.034,
+   "align": "center",
+   "font": "serif-bold",
+   "text_color": "#00adef"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.127,
+    0.155,
+    0.902,
+    0.163
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.01,
+   "fill": "#231f20"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "The book's blank 'NOTE' page after the chapter: pale-green top band and grey strip with NO running head text and NO folio tab (so no page_number element), a centred cyan small-caps 'NOTE' heading, and under it a double rule (thin line over a thick black bar) across x 0.127-0.902, reported as decorative_image. No further ruled lines are visible in this render; the rest of the page is empty paper. Both the green band and the grey strip are reported as page_header_band (the grey strip carries no text here). There is no body prose on this page, so body_text_size_px is the chapter's body cap height measured on p009 (20px), and text_block covers only the heading and rule. size_pt omitted: the page DPI is not given in the input (1700px wide suggests ~200dpi but that is not confirmed), so only size_rel is reported. body_text_size_px is the cap height of body prose in the original 1700x2178 image. The '2024-25' reprint stamp in the foot band is not the folio and is not reported as page_number. The diagonal '(c) NCERT not to be republished' watermark is not reported as an element."
+}

@@ -28,7 +28,7 @@ import os
 
 import runner_core as rc
 
-OUT = ("papers_v2", "mappings", "taxonomy_gaps.json")
+OUT = rc.mappings() + ("taxonomy_gaps.json",)
 
 
 def _outputs(step):

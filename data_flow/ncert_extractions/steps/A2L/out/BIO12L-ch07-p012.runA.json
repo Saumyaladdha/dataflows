@@ -1,0 +1,226 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 21,
+  "text_block": [
+   0.2996,
+   0.109,
+   0.9344,
+   0.919
+  ],
+  "fill": 0.985,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.2996,
+    "x1": 0.9344
+   },
+   {
+    "id": "left",
+    "x0": 0.1,
+    "x1": 0.3725
+   },
+   {
+    "id": "right",
+    "x0": 0.3946,
+    "x1": 0.9344
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.2101,
+    0.0,
+    1.0,
+    0.0389
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.195,
+    0.098
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.8686,
+    0.0794,
+    0.9306,
+    0.0869
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "right",
+   "font": "sans",
+   "text_color": "#6d6e71"
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.1,
+    0.108,
+    0.357,
+    0.369
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "space_before": 0.0211
+  },
+  {
+   "n": 2,
+   "role": "figure_caption",
+   "bbox": [
+    0.1114,
+    0.385,
+    0.3725,
+    0.44
+   ],
+   "column": "left",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.016
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.3946,
+    0.1095,
+    0.9344,
+    0.2308
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0226
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.2996,
+    0.2359,
+    0.9344,
+    0.5188
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "indent": 0.031,
+   "space_before": 0.0051
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.2996,
+    0.5419,
+    0.9344,
+    0.6086
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "indent": 0.031,
+   "space_before": 0.0231
+  },
+  {
+   "n": 6,
+   "role": "major_heading",
+   "bbox": [
+    0.3003,
+    0.629,
+    0.4154,
+    0.6416
+   ],
+   "column": "full",
+   "size_rel": 1.3,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00ae4c",
+   "space_before": 0.0204
+  },
+  {
+   "n": 7,
+   "role": "paragraph",
+   "bbox": [
+    0.2996,
+    0.6586,
+    0.9344,
+    0.7614
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.017
+  },
+  {
+   "n": 8,
+   "role": "paragraph",
+   "bbox": [
+    0.2996,
+    0.7669,
+    0.9344,
+    0.9058
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "indent": 0.031,
+   "space_before": 0.0055
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0,
+    0.7861,
+    0.162,
+    0.8269
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "right",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.8301,
+    0.162,
+    0.8361
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary verso body page (page_kind: ordinary). The top part (y~0.108-0.447) is two columns: Figure 7.5 (line drawing of the body with labels Lymph nodes / Thymus / Lymphatic vessels) and its peach-tinted caption box ('Figure 7.5' bold at left, description in three lines to its right) in a LEFT column 0.100-0.373 that extends into the outer margin, with text in a RIGHT column 0.395-0.934. Block 3 lies wholly in the right column (its space_before is to the running header, as it starts at the top). Block 4 starts in the right column (12 lines, y 0.236-0.447, first-line indent) and continues at full measure 0.300-0.934 from y~0.452; it is tagged full with its union bbox, which overlaps the caption box's x-range only where the caption sits beside it. From y~0.452 down the page is one full column. '7.3 AIDS' is a green bold major (section) heading, larger than the grey 7.2.x subheadings. Blocks 5 and 8 have first-line indents. Folio '138' in the orange tab at the left edge with a thin orange bar beneath. The 'Reprint 2026-27' stamp at the page foot (y~0.974-0.984) is not the folio and is left out; the printed folio is the number in the orange tab. body_text_size_px is the ascender-to-baseline height of a body line without descenders (21px; line pitch ~39px). size_pt omitted: page DPI is not given in the input. space_before is measured to the previous content element in reading order (furniture skipped). text_block is the book's standard body block for this side of the spread (depth 0.109-0.919, measured on full pages of this chapter); fill is relative to it."
+}

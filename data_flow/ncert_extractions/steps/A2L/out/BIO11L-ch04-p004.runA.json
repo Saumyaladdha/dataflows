@@ -1,0 +1,43 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 19.0,
+    "page_kind": "ordinary",
+    "text_block": [0.127, 0.136, 0.902, 0.908],
+    "fill": 1.0,
+    "columns": [
+      {"id": "full", "x0": 0.127, "x1": 0.902},
+      {"id": "left", "x0": 0.127, "x1": 0.496},
+      {"id": "right", "x0": 0.510, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#e1ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.142, 0.082, 0.167, 0.096],
+     "column": "left", "size_rel": 1.2, "align": "left", "font": "serif-bold", "fill": "#ffffff", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.840, 0.084, 0.900, 0.095],
+     "column": "right", "size_rel": 1.0, "align": "right", "font": "serif", "fill": "#d1d3d4", "space_before": 0.0},
+    {"n": 1, "role": "figure", "bbox": [0.142, 0.136, 0.883, 0.431],
+     "column": "full", "size_rel": 1.0, "fill": "#fbf5a4", "space_before": 0.040},
+    {"n": 2, "role": "paragraph", "bbox": [0.142, 0.440, 0.700, 0.453],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.009},
+    {"n": 3, "role": "figure_caption", "bbox": [0.142, 0.458, 0.891, 0.472],
+     "column": "full", "size_rel": 0.9, "align": "justify", "font": "serif", "space_before": 0.005},
+    {"n": 4, "role": "figure", "bbox": [0.128, 0.545, 0.496, 0.865],
+     "column": "left", "size_rel": 1.0, "space_before": 0.073},
+    {"n": 5, "role": "figure_caption", "bbox": [0.127, 0.875, 0.492, 0.904],
+     "column": "left", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.010},
+    {"n": 6, "role": "paragraph", "bbox": [0.510, 0.481, 0.902, 0.513],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.009},
+    {"n": 7, "role": "section_heading", "bbox": [0.510, 0.525, 0.764, 0.541],
+     "column": "right", "size_rel": 1.2, "align": "left", "font": "serif-bold",
+     "text_color": "#00a3e0", "space_before": 0.012},
+    {"n": 8, "role": "paragraph", "bbox": [0.510, 0.550, 0.902, 0.908],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.009},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cfe08a", "space_before": 0.048}
+  ],
+  "note": "Verso body page (page_kind added as a page field). Figure 4.4 is a full-width classification chart on a pale-yellow panel (#fbf5a4, sampled from its flat interior), followed by its asterisk footnote (block 2, smaller type) and the full-width caption. Below that the page splits: Figure 4.5 (three sponge drawings) with caption in the LEFT column, prose (blocks 6-8) in the RIGHT column; block 6 has a first-line indent. Header: pale-green band (#e1ebb6) over a thin grey bar (#d1d3d4); page number '40' in a white tab at left, running header 'Biology' at right. Footer is the full-width green band with '2024-25', reported as footer_rule. Watermark ignored. size_pt omitted: DPI not given."
+}

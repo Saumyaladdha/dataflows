@@ -78,8 +78,7 @@ from lib import pdf as lib_pdf  # noqa: E402
 #: `NEET_Papers/2015/NEET_2015_Code_A_official.pdf` that resolved on exactly one machine. The ten
 #: booklets this corpus is built from are 25 MB in total, so they are simply kept here, and the
 #: external tree is a fallback for re-extracting a booklet that has not been brought in yet.
-SOURCE_ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                           "inputs", "papers_v2_sources", "NEET_Papers")
+SOURCE_ROOT = rc.source_dir("NEET_Papers")
 #: Where the originals came from. Only consulted when a file is absent from SOURCE_ROOT.
 EXTERNAL_ROOT = os.path.expanduser("~/Downloads/Saumya_NEET_work/NEW/NEET_Papers")
 
@@ -93,11 +92,11 @@ def resolve_source(relative):
     if os.path.exists(outside):
         return outside
     raise FileNotFoundError(
-        "%s is in neither inputs/papers_v2_sources/ nor %s. Copy the booklet into the repo -- the "
+        "%s is in neither source_papers/ nor %s. Copy the booklet into the repo -- the "
         "pipeline must not depend on one machine's Downloads folder." % (relative, EXTERNAL_ROOT))
 #: The v2 corpus lives beside the old one, never on top of it. `papers/` stays as the reference the
 #: new numbers are compared against; nothing here reads or writes it.
-OUT = ("papers_v2",)
+OUT = rc.corpus()
 DPI = lib_pdf.DEFAULT_DPI          # 200; bboxes below are pixels at this dpi
 
 FAMILIES = [
@@ -112,6 +111,32 @@ Q_ALONE = re.compile(r"^\s*(\d{1,3})\s*[.)]\s*$")
 #: than a pattern that was too strict. The lookahead for a capital or a bracket is what keeps a
 #: decimal out: `1.5` does not match because `5` is a digit, while `108.The` and `19. The` both do.
 Q_INLINE = re.compile(r"^\s*(\d{1,3})\s*[.)]\s*(?=[A-Z(\[])")
+#: A question number printed with NO full stop. 2017 Code-A prints question 51 as a bare `51`, a
+#: typesetting slip, and the question vanished into q50 -- its working became q50's solution lines.
+#: A bare number is otherwise everywhere in shredded maths ("1", "9", "2" on their own rows), so it
+#: is accepted ONLY as the exact next expected question number at its column's left edge -- see
+#: analyse().
+Q_BARE = re.compile(r"^\s*(\d{1,3})\s*$")
+#: How far right of its column's leftmost line a bare number may sit and still be a question number.
+#: Question numbers are flush with the column edge (2017 Code-A: q51 and q131 both at x0=315); a
+#: stray digit from a fraction or a figure label sits indented under its text.
+BARE_NUMBER_EDGE_PT = 3.0
+#: The running page number, `- 15 -`, at the START of a line.
+PAGE_NUMBER = re.compile(r"^\s*-\s*\d{1,3}\s*-")
+#: A footer line's wording: Aakash's office address, or any publisher's web address.
+FOOTER_TEXT = re.compile(r"Aakash|Corporate Office|www\.[a-z0-9-]+\.[a-z]{2,}", re.I)
+#: A page number printed on its own in the footer band, as Vedantu does (`2`, `15`).
+BARE_PAGE_NUMBER = re.compile(r"^\s*\d{1,3}\s*$")
+#: ...and only this far down the page. See page_furniture().
+BARE_PAGE_NUMBER_BAND = 0.95
+#: ANY printed answer line, including one naming several options -- `Answer (1 & 2)* Both answers
+#: are correct.` (2017 Code-A q18), `Answer (1 & 4)` (q50). ANSWER above reads one option and missed
+#: these, so the question crop ran past the answer (E7V, which must never see an answer, reads that
+#: crop) and the answer line was glued onto option 4's text.
+ANSWER_LINE = re.compile(r"^\s*(?:Answer(?:\s*Key)?|Ans|Solution)\s*[:.]?\s*\(([^)]*)\)(\*?)", re.I)
+#: ...and what its brackets must hold to count: two or more option labels and nothing else, so
+#: `Solution : (Given ...)` is never read as an answer line.
+MULTI_OPTION = re.compile(r"^\s*[1-4a-dA-D](?:\s*(?:&|,|and|or)\s*[1-4a-dA-D])+\s*$", re.I)
 #: Option markers, by STYLE. The publishers disagree, and the disagreement is not cosmetic:
 #:
 #:   digits  Aakash              (1) (2) (3) (4)
@@ -146,7 +171,9 @@ ANSWER = [re.compile(p, re.I) for p in (
     r"^\s*Answer\s*Key\s*:\s*\(([1-4a-dA-D])(\*?)\)",
     r"^\s*Solution\s*:\s*\(([1-4a-dA-D])(\*?)\)",
     r"^\s*Ans\s*[.:]\s*\(([1-4a-dA-D])(\*?)\)")]
-SOLUTION_START = re.compile(r"^\s*(?:Sol\s*[.:]|Solution\s*[.:]|Hide\s+solution)", re.I)
+#: `Sol` may carry no stop at all: 2017 Code-A q008 prints a bare "Sol" beside its circuit, and
+#: requiring "Sol." or "Sol:" lost that whole solution. A whole word, so "Solve"/"Solid" never match.
+SOLUTION_START = re.compile(r"^\s*(?:Sol\b\s*[.:]?|Solution\s*[.:]|Hide\s+solution)", re.I)
 INSTRUCTIONS = re.compile(r"Important Instructions|GENERAL INSTRUCTION|Do not open this Test Booklet", re.I)
 CODE_IN_HEADER = re.compile(r"\(Code[-\s_]*([A-Z]{1,2}\d?|\d{2})[-\s_]*\)", re.I)
 #: Fallback when the booklet does not print its code in a running header -- 2019's paper prints only
@@ -357,13 +384,31 @@ def page_furniture(page, furniture_xrefs=frozenset()):
         for line in block.get("lines", []):
             text = "".join(s.get("text", "") for s in line.get("spans", []))
             y0, y1 = line["bbox"][1], line["bbox"][3]
-            if y1 < height * 0.18 and (re.search(r"-\s*\d{1,3}\s*-", text) or
+            # The page number is matched at the START of the line (`- 15 -`), never anywhere in it.
+            # Searched anywhere, a chemical name near the top of a page matched: 2017 Code-A page 15
+            # carries "Y-But-2-enal", whose `-2-` was read as a page number, so the header cut went
+            # to y=129.7 and took q59's number -- and the question with it -- out of the page.
+            if y1 < height * 0.18 and (PAGE_NUMBER.match(text) or
                                        re.search(r"NEET\s*\(UG\)", text)):
                 header_y = max(header_y, y1 + 2.0)
                 removed.append(text.strip())
-            if y0 > height * 0.90 and re.search(r"-\s*\d{1,3}\s*-|Aakash|Corporate Office", text):
+            # The footer, by any publisher's wording. Vedantu prints `www.vedantu.com` and a bare
+            # page number on one row at y=769 (2017 Code-A); matched only on Aakash's wording, that
+            # row and the rule under it were cut into every crop that crosses a page break.
+            # A bare number counts only in the bottom 5%: Vedantu's page number sits at y=769 of 792
+            # (97%), while chemistry subscripts printed on their own row reach y=716 (90%) -- on
+            # 2017 Code-A page 15 a 10% band took five of them for page numbers and cut the page.
+            if y0 > height * 0.90 and (PAGE_NUMBER.match(text) or FOOTER_TEXT.search(text)
+                                       or (BARE_PAGE_NUMBER.match(text)
+                                           and y0 > height * BARE_PAGE_NUMBER_BAND)):
                 footer_y = min(footer_y, y0 - 2.0)
                 removed.append(text.strip())
+    # A REPEATED image in the top band is the running header's artwork. Vedantu's booklets print a
+    # logo there (2017 Code-A: xref 2264 at y 7-44 on every page, content from y 47.7) and no header
+    # TEXT at all, so the text test above never fired and every page-break crop opened with the logo.
+    for xref, rect in image_rects(page):
+        if xref in furniture_xrefs and rect.y1 < height * 0.18:
+            header_y = max(header_y, rect.y1 + 2.0)
     logos = []
     for xref, rect in image_rects(page):
         if (xref in furniture_xrefs or rect.get_area() <= LOGO_MAX_AREA_PT
@@ -736,18 +781,29 @@ def read_text_draft(lines, option_style="digits"):
     """
     stem, options, answer, starred = [], {}, None, False
     current, solution_at, answer_at = None, None, None
+    answers, answer_line = [], None
     for position, line in enumerate(lines):
         text = line["text"].strip()
         if not text:
             continue
         if solution_at is None and SOLUTION_START.match(text):
             solution_at = position
-        if answer is None:
+        if answer is None and answer_at is None:
             hit = next((p.match(text) for p in ANSWER if p.match(text)), None)
             if hit:
                 answer = OPTION_KEY.get(hit.group(1), hit.group(1))
                 starred, current = bool(hit.group(2)), None
-                answer_at = position
+                answer_at, answers, answer_line = position, [answer], text
+                continue
+            # SEVERAL options accepted (`Answer (1 & 2)*`): the answer line all the same. The single
+            # `official_answer` stays None -- it cannot hold two -- and every accepted option is kept
+            # in `official_answers`, with the printed line verbatim in `answer_line`.
+            several = ANSWER_LINE.match(text)
+            if several and MULTI_OPTION.match(several.group(1)):
+                answers = sorted({OPTION_KEY[c] for c in re.findall(r"[1-4a-dA-D]",
+                                                                      several.group(1))})
+                starred, current = bool(several.group(2)), None
+                answer_at, answer_line = position, text
                 continue
         if solution_at is not None:
             continue
@@ -766,7 +822,55 @@ def read_text_draft(lines, option_style="digits"):
     draft = re.sub(r"\s+", " ", " ".join(stem)).strip()
     return {"stem": re.sub(r"^\d{1,3}\s*[.)]\s*", "", draft), "options": options,
             "official_answer": answer, "answer_starred": starred,
-            "solution_at": solution_at, "answer_at": answer_at}
+            "official_answers": answers, "answer_line": answer_line,
+            "solution_at": solution_at, "answer_at": answer_at,
+            "solution_lines": solution_lines(lines, solution_at),
+            "unmarked_lines_after_answer": unmarked_after_answer(lines, answer_at, solution_at)}
+
+
+def solution_lines(lines, solution_at):
+    """The publisher's worked solution as printed lines, from its marker to the question's end.
+
+    A DRAFT, exactly as the stem draft is: a worked solution is nothing but fractions, radicals and
+    exponents, the content a text layer cannot represent, so `b3s-solution-reader` reads the
+    solution crop and this is its cross-check. Kept rather than discarded because until now every
+    line of it was thrown away at `if solution_at is not None: continue` while the booklets print a
+    solution under most questions.
+
+    The marker is stripped from the first line, and on the `solution_inline` family that line is
+    BOTH markers -- 2019-2021 print `Solution: (4) <working>` where SOLUTION_START and ANSWER match
+    the same line and `solution_at == answer_at` -- so the `(4)` is stripped too and the working
+    starts ON that line, not after it.
+    """
+    if solution_at is None:
+        return []
+    out = []
+    for position in range(solution_at, len(lines)):
+        text = lines[position]["text"].strip()
+        if position == solution_at:
+            marker = SOLUTION_START.match(text)
+            if marker:
+                text = text[marker.end():]
+            # The marker's own punctuation (`Sol. :`, `Solution: (4) -`) is stripped from the FRONT
+            # only: the solution's last character is content -- a full stop, a closing bracket.
+            text = re.sub(r"^\s*\(\s*[1-4a-dA-D]\s*\*?\s*\)", "", text).lstrip(" :.-\t").rstrip()
+        if text:
+            out.append(text)
+    return out
+
+
+def unmarked_after_answer(lines, answer_at, solution_at):
+    """How many lines follow the printed answer with NO solution marker in between.
+
+    A MEASUREMENT, not a solution. 2019 reports 0 solutions of 174 and 2020 38 of 178: either those
+    booklets print no working, or they print it under a wording SOLUTION_START does not match. The
+    two look identical in the solution count and need opposite fixes. This count tells them apart
+    without guessing -- a booklet with many unmarked lines after its answers has working the marker
+    misses -- so the regex can be widened from evidence, not from a hunch.
+    """
+    if answer_at is None or solution_at is not None:
+        return 0
+    return sum(1 for line in lines[answer_at + 1:] if line["text"].strip())
 
 
 def two_column_share(doc, sample=16):
@@ -837,15 +941,42 @@ def analyse(doc):
     for index, page in enumerate(pages):
         if INSTRUCTIONS.search("".join(l["text"] for l in page["lines"][:12])):
             continue
+        # A column's QUESTION-NUMBER edge, measured from the numbers that are printed properly. Not
+        # the column's leftmost line: on 2017 Code-A page 13 a line straddling the gutter put the
+        # right column's leftmost x0 at 273 while every question number there sits at 315.
+        edges = {}
         for line in page["lines"]:
+            if Q_ALONE.match(line["text"]) or Q_INLINE.match(line["text"]):
+                edges[line["column"]] = min(edges.get(line["column"], line["x0"]), line["x0"])
+        for line in page["lines"]:
+            top = line["y0"]
             match = Q_ALONE.match(line["text"]) or Q_INLINE.match(line["text"])
             if not match:
+                # See Q_BARE: the exact next number, flush with its column's number edge, or nothing.
+                bare = Q_BARE.match(line["text"])
+                expected = (max(seen) + 1) if seen else 1
+                edge = edges.get(line["column"])
+                if (bare and int(bare.group(1)) == expected and edge is not None
+                        and line["x0"] <= edge + BARE_NUMBER_EDGE_PT):
+                    match = bare
+            if not match:
                 continue
+            # The question starts at the top of the number's ROW, not at the number: q51's first
+            # stem line sits 1pt ABOVE its bare `51`, and starting at the number gave that line to
+            # q50. The same holds for a PRINTED `3.` -- on 2017 Code-A, q003's, q028's and q077's
+            # first stem lines sit above their numbers, so each went into the previous question's
+            # solution draft, and q056's `56.` glyph tops were cut into q055's solution crop.
+            height = line["y1"] - line["y0"]
+            for other in page["lines"]:
+                overlap = min(other["y1"], line["y1"]) - max(other["y0"], line["y0"])
+                if (other["column"] == line["column"] and height > 0
+                        and overlap >= ROW_OVERLAP_SHARE * min(height, other["y1"] - other["y0"])):
+                    top = min(top, other["y0"])
             number = int(match.group(1))
             if not 1 <= number <= 200 or number in seen:
                 continue
             seen.add(number)
-            starts.append((index, line["column"], line["y0"], number))
+            starts.append((index, line["column"], top, number))
 
     spans = []
     for position, (index, column, y0, number) in enumerate(starts):
@@ -857,6 +988,44 @@ def analyse(doc):
         spans.append({"qno": number, "page": index, "column": column, "y0": y0,
                       "end_page": end_index, "end_column": end_column, "y1": end_y})
     return pages, spans
+
+
+def split_unnumbered(pages, spans):
+    """Give a question whose NUMBER was never printed its own span.
+
+    MEASURED, NOT GUESSED: 2017 Code-A prints no `130.` -- the stem's first line, number and all, is
+    missing from the booklet, and the rest of q130 ("protein with 333 amino acids ... how many
+    codons will be altered?", its options, `Answer (3)` and its solution) opens the next column. With
+    no number to start a span, all of it was read as part of q129's solution, and the paper had 179
+    questions. A span cannot hold two printed answers, so a second `Answer (N)` IS the evidence of a
+    second question. It starts at the first column or page break after the first answer -- where a
+    question with a lost first line resumes -- and is numbered one after the span's own, only when
+    that number is free. Without a break to start it at, the span is left whole and reported.
+    """
+    taken = {span["qno"] for span in spans}
+    out = []
+    for span in spans:
+        lines = span_lines(pages, span)
+        answers = [i for i, line in enumerate(lines) if ANSWER_LINE.match(line["text"])]
+        if len(answers) < 2 or span["qno"] + 1 in taken:
+            out.append(span)
+            continue
+        start = next((i for i in range(answers[0] + 1, answers[1] + 1)
+                      if (lines[i]["page"], lines[i]["column"])
+                      != (lines[i - 1]["page"], lines[i - 1]["column"])), None)
+        if start is None:
+            print("q%d: two printed answers in one span and no column break between them -- "
+                  "left whole, check the booklet" % span["qno"])
+            out.append(span)
+            continue
+        first = lines[start]
+        out.append(dict(span, end_page=first["page"], end_column=first["column"], y1=first["y0"]))
+        out.append(dict(span, qno=span["qno"] + 1, page=first["page"], column=first["column"],
+                        y0=first["y0"], number_printed=False))
+        taken.add(span["qno"] + 1)
+        print("q%d: its number is not printed; split from q%d at page %d %s column"
+              % (span["qno"] + 1, span["qno"], first["page"] + 1, first["column"]))
+    return out
 
 
 def _order_key(page_index, column, y):
@@ -884,7 +1053,7 @@ def span_lines(pages, span):
     return out
 
 
-def question_parts(pages, span):
+def question_parts(pages, span, clamp_above=True):
     """B2-shaped `parts`: one box per (page, column) the question occupies, in image pixels.
 
     A two-column question has two parts -- the foot of the left column and the head of the right --
@@ -915,8 +1084,19 @@ def question_parts(pages, span):
                 bottom = span["y1"]
             if bottom - top < 4.0:
                 continue
-            # pad, but never past this page's own furniture
-            top = max(page["header_y"], top - CROP_PAD_TOP_PT)
+            # pad, but never past this page's own furniture -- and never into the PREVIOUS
+            # question. The top pad exists for marks that sit above the first line (a numerator, an
+            # overbar), and it reached the line above as well: 143 of 2017 Code-A's 180 question
+            # crops opened with a sliced sliver of the previous question's last line. Stopped just
+            # below the nearest text line wholly above this one in the same column.
+            above = [l["y1"] for l in page["lines"]
+                     if l["column"] == column and l["y1"] <= top + 0.5 and l["y0"] < top - 0.5]
+            floor = (max(above) + 1.0) if above else page["header_y"]
+            if clamp_above and top > floor:
+                top = max(page["header_y"], floor, top - CROP_PAD_TOP_PT)
+            else:
+                # a SOLUTION span starts pre-padded at its `Answer (N)` line, which must stay in
+                top = max(page["header_y"], top - CROP_PAD_TOP_PT)
             bottom = min(page["footer_y"], bottom + CROP_PAD_BOTTOM_PT)
             parts.append({"column": column, "page": index,
                           "bbox": [_px(x0), _px(top), _px(x1), _px(bottom)]})
@@ -1011,7 +1191,96 @@ def stitch_vertical(pieces, out_path):
     return out_path
 
 
-def extract(path, write=False, out_root=None, render_pages=False):
+#: Everything one booklet's SCRIPTS produce, by where it lands. A fresh extraction clears it first.
+BOOKLET_DIRS = ("crops", "figures", "figures_agent", "solutions", "pages")
+#: Agent steps whose items are `<paper_id>__q...`. NOT cleared by default: an agent read costs a
+#: dispatch and re-extracting does not change the question it read -- the handover's own rule is
+#: that the 358 existing solves must not be re-run for cosmetics. Cleared only with
+#: `--clear-agent-reads`, for when the crops themselves changed enough to invalidate the reads.
+BOOKLET_STEPS = ("B3V", "B3S", "B3F", "B6V", "QSUBJ", "QCHAP", "QTOPIC", "E7V")
+#: ECAT packets mix questions from several booklets, so they cannot be cleared per booklet. They are
+#: cleared whole: a packet carrying an old read of one question is stale for every question in it.
+CORPUS_STEPS = ("ECAT",)
+
+
+def clear_previous(out_root, paper_id, agent_reads=False):
+    """Delete what an earlier run's scripts produced for this booklet, so this run's output is fresh.
+
+    The owner's rule: whatever runs produces FRESH data -- JSON, crops, exports -- and the previous
+    data is removed rather than left beside it. Re-cut crops beside an old JSON is a booklet
+    assembled from two runs that no file says were mixed. Agent answers are removed only when
+    `agent_reads` is set (see BOOKLET_STEPS). Returns the number of paths removed.
+    """
+    import shutil
+    removed = []
+    for name in BOOKLET_DIRS:
+        removed.append(os.path.join(out_root, name, paper_id))
+    removed += [os.path.join(out_root, "papers", "%s.json" % paper_id),
+                os.path.join(out_root, "exports", "csv", "%s.csv" % paper_id),
+                os.path.join(out_root, "exports", "html", "%s.html" % paper_id)]
+    for step in (BOOKLET_STEPS if agent_reads else ()):
+        for kind in ("work", "out"):
+            removed += glob.glob(rc.pp("steps", step, kind, "%s__*" % paper_id))
+    for step in (CORPUS_STEPS if agent_reads else ()):
+        for kind in ("work", "out"):
+            removed += glob.glob(rc.pp("steps", step, kind, "*"))
+    count = 0
+    for target in removed:
+        if os.path.isdir(target):
+            shutil.rmtree(target)
+            count += 1
+        elif os.path.exists(target):
+            os.remove(target)
+            count += 1
+    return count
+
+
+def previous_cdn(out_root, paper_id):
+    """{relative image path: {"url", "sha256"}} from this booklet's previous JSON, before it is cleared.
+
+    THE FRESH JSON MUST NOT COST A RE-UPLOAD. Clearing the old record also clears every CDN link on
+    it, and re-uploading bytes the CDN already holds puts a second copy there under a new URL --
+    the NCERT side measured exactly this before it carried URLs forward by SHA. So the links are
+    read here and re-attached after the new crops are cut, ONLY where the new file's sha256 matches:
+    a crop whose pixels changed gets no link and is uploaded fresh by upload_paper_assets.py.
+    """
+    path = os.path.join(out_root, "papers", "%s.json" % paper_id)
+    links = {}
+    if not os.path.exists(path):
+        return links
+    try:
+        with open(path, encoding="utf-8") as fh:
+            old = json.load(fh)
+    except ValueError:
+        return links
+    for question in old.get("questions") or []:
+        for rel, entry in (question.get("cdn") or {}).items():
+            if entry.get("url") and entry.get("sha256"):
+                links[rel] = entry
+    return links
+
+
+def cut_point(lines, draft):
+    """(page, column, y0) of the line that ENDS the question: the printed `Answer (N)` or the
+    solution marker, whichever comes first in reading order. None when neither is printed.
+
+    The same anchor question_figures() uses, for the same measured reason: `Answer (N)` always
+    precedes the solution, while a solution's drawing can start above its own `Sol.` label.
+    """
+    best = None
+    for key in ("answer_at", "solution_at"):
+        position = draft.get(key)
+        if position is None or position >= len(lines):
+            continue
+        line = lines[position]
+        here = (line["page"], line["column"], line["y0"])
+        if best is None or _order_key(*here) < _order_key(*best):
+            best = here
+    return best
+
+
+def extract(path, write=False, out_root=None, render_pages=False, keep_previous=False,
+            clear_agent_reads=False):
     import pymupdf
     doc = pymupdf.open(path)
     family, cpp = detect_family(doc)
@@ -1028,7 +1297,7 @@ def extract(path, write=False, out_root=None, render_pages=False):
         "year": int(year.group(1)) if year else None,
         "dpi": DPI, "bbox_unit": "px",
         "extracted_at": datetime.datetime.now().strftime("%Y-%m-%d"),
-        "extractor": "scripts/extract_paper_v2.py",
+        "extractor": "code/extract_paper_v2.py",
     }
     # Two-column booklets are now PARSED, not refused -- columns() measures the gutter and
     # question_parts() emits one box per (page, column). The share is still recorded, because a
@@ -1041,6 +1310,7 @@ def extract(path, write=False, out_root=None, render_pages=False):
         return meta, [], []
 
     pages, spans = analyse(doc)
+    spans = split_unnumbered(pages, spans)
     option_style, style_scores = detect_option_style(pages, spans)
     meta["option_style"] = option_style
     meta["option_style_scores"] = style_scores
@@ -1051,7 +1321,27 @@ def extract(path, write=False, out_root=None, render_pages=False):
         lines = span_lines(pages, span)
         draft = best_draft(lines, option_style)
         figures = question_figures(pages, span, lines, draft)
-        parts = question_parts(pages, span)
+        # THE QUESTION CROP STOPS AT THE PRINTED ANSWER. It used to run to the next question, so it
+        # carried `Answer (N)` and the whole worked solution -- and E7V, which must never see an
+        # answer, is handed this crop. Clipped at the answer line (less the bottom pad, so the pad
+        # does not pull the top of `Answer` back in), the crop is the question and nothing after.
+        cut = cut_point(lines, draft)
+        question_span = span
+        solution_span = None
+        if cut:
+            question_span = dict(span, end_page=cut[0], end_column=cut[1],
+                                 y1=cut[2] - CROP_PAD_BOTTOM_PT)
+            if draft.get("solution_at") is not None:
+                # ...and the SOLUTION crop starts exactly there, at the answer line's top (the top
+                # pad is pre-subtracted the same way), and runs to where the question span ends:
+                # the next question's first line, across a page or column break if it does.
+                # Its END is the next question's first line, less the bottom pad: padding past that
+                # line pulled the top half of the next question's stem into the crop (seen on the
+                # first synthetic test), and a solution crop must hold nothing of the next question.
+                solution_span = dict(span, page=cut[0], column=cut[1], y0=cut[2] + CROP_PAD_TOP_PT,
+                                     y1=span["y1"] - CROP_PAD_BOTTOM_PT)
+        parts = question_parts(pages, question_span)
+        solution = question_parts(pages, solution_span, clamp_above=False) if solution_span else []
         touched = {p["page"] for p in parts} or {span["page"]}
         text_reliable = all(pages[i].get("text_reliable", True) for i in touched)
 
@@ -1096,7 +1386,17 @@ def extract(path, write=False, out_root=None, render_pages=False):
             "fraction_bars": bars,
             "figures": figures,
             "figure_images": [],
+            # The publisher's worked solution as an IMAGE -- b3s-solution-reader reads this, and
+            # `text_layer_draft.solution_lines` is only its cross-check. One box per (page, column)
+            # it occupies, stitched in reading order, so a solution that runs onto the next page is
+            # never read as whole when only its first half was cut.
+            "solution_image": (os.path.join("solutions", paper_id, "q%03d.png" % span["qno"])
+                               if solution else None),
+            "solution_parts": solution,
             "source_pdf": meta["source_pdf"],
+            # False only for a question split out by split_unnumbered(): its number -- and the
+            # stem line it sat on -- is missing from the booklet itself.
+            "number_printed": span.get("number_printed", True),
         }
         for part in parts:
             b2_pages[part["page"]].append({"qno": span["qno"],
@@ -1106,31 +1406,44 @@ def extract(path, write=False, out_root=None, render_pages=False):
                                            and part is not parts[-1]})
         questions.append(record)
 
+    carried = previous_cdn(out_root, paper_id) if write else {}
+    if write and not keep_previous:
+        cleared = clear_previous(out_root, paper_id, agent_reads=clear_agent_reads)
+        if cleared:
+            print("      %s: removed %d path(s) from the previous run" % (paper_id, cleared),
+                  file=sys.stderr)
+
     if write:
         # Every crop of this booklet in ONE pass over ONE open document. Per-crop opening of a
         # 70-to-85-page PDF does not scale: three years of every code is ~13,000 crops, and the
         # per-crop version was still inside its first booklet after three minutes at full CPU.
         jobs, stitch = [], []
+
+        def queue(parts, rel):
+            """Queue one stitched image cut from `parts`, written to `rel` under the corpus."""
+            out = os.path.join(out_root, rel)
+            os.makedirs(os.path.dirname(out), exist_ok=True)
+            if len(parts) == 1:
+                jobs.append((parts[0]["page"] + 1, parts[0]["bbox"], out))
+                return
+            # A QUESTION THAT SPANS A PAGE OR COLUMN BREAK NEEDS ALL ITS PARTS. Cropping only the
+            # first cuts the question off mid-way: 2015 Code-A q138 runs from the foot of page 36
+            # onto page 37, and the first-part-only crop ended after option (1), so the agent could
+            # not see options 2-4 and they came back blank. 55 of that booklet's 177 questions span
+            # more than one part, which is the single largest source of blank options in the
+            # corpus. A solution is cut by the same rule, for the same reason.
+            pieces = []
+            for n, part in enumerate(parts):
+                piece = out.replace(".png", ".part%d.png" % n)
+                jobs.append((part["page"] + 1, part["bbox"], piece))
+                pieces.append(piece)
+            stitch.append((out, pieces))
+
         for record in questions:
-            parts = record["parts"]
-            if parts:
-                out = os.path.join(out_root, record["question_image"])
-                os.makedirs(os.path.dirname(out), exist_ok=True)
-                if len(parts) == 1:
-                    jobs.append((parts[0]["page"] + 1, parts[0]["bbox"], out))
-                else:
-                    # A QUESTION THAT SPANS A PAGE OR COLUMN BREAK NEEDS ALL ITS PARTS. Cropping only
-                    # the first cuts the question off mid-way: 2015 Code-A q138 runs from the foot of
-                    # page 36 onto page 37, and the first-part-only crop ended after option (1), so
-                    # the agent could not see options 2-4 and they came back blank. 55 of that
-                    # booklet's 177 questions span more than one part, which is the single largest
-                    # source of blank options in the corpus.
-                    pieces = []
-                    for n, part in enumerate(parts):
-                        piece = out.replace(".png", ".part%d.png" % n)
-                        jobs.append((part["page"] + 1, part["bbox"], piece))
-                        pieces.append(piece)
-                    stitch.append((out, pieces))
+            if record["parts"]:
+                queue(record["parts"], record["question_image"])
+            if record["solution_parts"]:
+                queue(record["solution_parts"], record["solution_image"])
             for n, figure in enumerate(record["figures"], 1):
                 rel = os.path.join("figures", paper_id,
                                    "q%03d_%s_%d.png" % (record["qno"], figure["role"], n))
@@ -1140,9 +1453,24 @@ def extract(path, write=False, out_root=None, render_pages=False):
                 figure["image"] = rel
                 record["figure_images"].append(rel)
         if jobs:
-            lib_pdf.crop_boxes(path, jobs, dpi=DPI, unit="px")
+            # ...with the booklet's repeated images (watermark, logo) blanked: a screenshot that
+            # reaches the JSON or the page carries the publisher's print and nothing else.
+            lib_pdf.crop_boxes(path, jobs, dpi=DPI, unit="px",
+                               hide_xrefs=document_furniture(doc))
         for out, pieces in stitch:
             stitch_vertical(pieces, out)
+        if carried:
+            from lib import cdn
+            for record in questions:
+                links = {}
+                for rel in cdn.image_paths(record):
+                    entry = carried.get(rel)
+                    local = os.path.join(out_root, rel)
+                    if entry and os.path.exists(local) and cdn.sha256(local) == entry["sha256"]:
+                        links[rel] = entry
+                if links:
+                    record["cdn"] = links
+                    cdn.write_url_fields(record)
         if render_pages:
             for index in sorted({p["page"] for q in questions for p in q["parts"]}):
                 out = os.path.join(out_root, "pages", paper_id, "p%03d.png" % (index + 1))
@@ -1226,7 +1554,19 @@ def pick_booklets(paths):
             continue
         if family in ("scanned", "ocr_scan"):
             continue
-        year = re.search(r"/(20\d\d)/", path)
+        if not code:
+            # A BOOKLET WITH NO READABLE CODE IS REFUSED, not filed under `<year>_NA`. Measured on the
+            # full Drive tree: 2021 holds Download_Now.pdf and four subject-wise "with Solutions"
+            # files, none printing a code in a header or a filename. All five became paper id
+            # `2021_NA` and overwrote one another's JSON and crops, the last one silently winning.
+            # A booklet that cannot be told apart from its neighbours cannot be audited, so it is
+            # reported and skipped -- the same rule as a scan.
+            print("   skipped, no booklet code in header or filename: %s"
+                  % os.path.relpath(path, os.path.dirname(SOURCE_ROOT)), file=sys.stderr)
+            continue
+        # Either separator: on Windows the glob returns backslashes, and a `/`-only pattern made every
+        # year "?" -- so 2022's Code-Q1 and 2024's Code-Q1 shared one key and one of them was dropped.
+        year = re.search(r"[\\/](20\d\d)[\\/]", path)
         key = (year.group(1) if year else "?", code or os.path.basename(path))
         if key not in best or cpp > best[key][0]:
             best[key] = (cpp, path)
@@ -1243,6 +1583,12 @@ def main():
     ap.add_argument("--render-pages", action="store_true",
                     help="also render full page images (B1 page_images); large, off by default")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--clear-agent-reads", action="store_true",
+                    help="also delete this booklet's agent answers (B3V, B3S, B6V, ...) -- only "
+                         "when the crops changed enough that the reads describe other pictures")
+    ap.add_argument("--keep-previous", action="store_true",
+                    help="do NOT clear the booklet's earlier crops, JSON, exports and agent reads "
+                         "first (default: every run starts fresh)")
     args = ap.parse_args()
 
     if args.probe:
@@ -1274,7 +1620,9 @@ def main():
         print("   [%d/%d] %s %s  %s" % (n, len(best), key[0], key[1], os.path.basename(path)),
               file=sys.stderr)
         meta, questions, b2 = extract(path, write=args.apply, out_root=out_root,
-                                      render_pages=args.render_pages)
+                                      render_pages=args.render_pages,
+                                      keep_previous=args.keep_previous,
+                                      clear_agent_reads=args.clear_agent_reads)
         four = sum(1 for q in questions if len(q["text_layer_draft"]["options"]) == 4)
         answers = sum(1 for q in questions if q["text_layer_draft"]["official_answer"])
         figs = sum(len(q["figures"]) for q in questions)

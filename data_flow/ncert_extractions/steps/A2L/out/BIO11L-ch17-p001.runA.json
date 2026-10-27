@@ -1,0 +1,27 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 18.0,
+    "page_kind": "chapter_opener",
+    "text_block": [0.099, 0.448, 0.872, 0.905],
+    "fill": 0.98,
+    "columns": [
+      {"id": "left", "x0": 0.099, "x1": 0.264},
+      {"id": "right", "x0": 0.284, "x1": 0.872}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.0, 0.0, 1.0, 0.43], "column": "full", "size_rel": 1.0, "fill": "#e2edbb"},
+    {"n": null, "role": "qr_code", "bbox": [0.733, 0.109, 0.873, 0.218], "column": "full", "size_rel": 1.0, "fill": "#ffffff"},
+    {"n": 1, "role": "chapter_title", "bbox": [0.320, 0.322, 0.518, 0.353], "column": "full", "size_rel": 3.2, "align": "left", "font": "serif-bold", "text_color": "#0073bd", "space_before": 0.213},
+    {"n": 2, "role": "chapter_title", "bbox": [0.320, 0.372, 0.778, 0.401], "column": "full", "size_rel": 3.2, "align": "left", "font": "serif-bold", "text_color": "#0073bd", "space_before": 0.019},
+    {"n": null, "role": "contents_panel", "bbox": [0.099, 0.448, 0.264, 0.638], "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-italic", "text_color": "#00adef", "space_before": 0.047},
+    {"n": 3, "role": "paragraph", "bbox": [0.284, 0.448, 0.872, 0.739], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f", "space_before": 0.047},
+    {"n": 4, "role": "paragraph", "bbox": [0.284, 0.745, 0.872, 0.812], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f", "space_before": 0.006, "indent": 0.029},
+    {"n": 5, "role": "section_heading", "bbox": [0.284, 0.841, 0.543, 0.855], "column": "right", "size_rel": 1.15, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.029},
+    {"n": 6, "role": "paragraph", "bbox": [0.284, 0.875, 0.872, 0.905], "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "text_color": "#221f1f", "space_before": 0.020},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Chapter opener: two columns, contents panel (cyan italic text, no tinted fill) on the left beside the opening prose on the right. The banner is a vertical gradient from #cee186 at the top to near-white #fafcf3 by y~0.42; fill reports its mid-tone. No rule_bar between banner and body on this page. The 'CHAPTER 17' label and the title are both set in blue small caps (#0073bd); font 'serif-bold' is the nearest allowed value. The contents panel is one element, not five (A2 gave it no block, so n is null). The page foot is a solid green band (#cadf7f) reported as footer_rule; the '2024-25' reprint stamp on it is not a page number and is not reported. No printed folio on this page. The 'NCERT not to be republished' watermark is ignored. body_text_size_px is approximate cap height of body prose; size_pt not given (DPI not stated). page_kind is an extra field."
+}

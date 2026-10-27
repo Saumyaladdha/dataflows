@@ -42,7 +42,7 @@ warnings.filterwarnings("ignore")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import runner_core as rc  # noqa: E402
 
-CORPUS = ("papers_v2",)
+CORPUS = rc.corpus()
 
 #: A section heading is a short line that is ONLY the subject's name. The length cap is what keeps
 #: "PHYSICS" apart from a stem that happens to contain the word physics.

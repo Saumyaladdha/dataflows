@@ -1,0 +1,43 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.313, 0.133, 0.902, 0.885],
+    "fill": 0.96,
+    "columns": [
+      {"id": "full", "x0": 0.313, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.080],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.064, 0.184, 0.094],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "sans", "fill": "#ffffff"},
+    {"n": null, "role": "running_header", "bbox": [0.838, 0.080, 0.900, 0.094],
+     "column": "full", "size_rel": 0.9, "align": "right", "font": "serif", "fill": "#d1d2d4",
+     "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.520, 0.133, 0.902, 0.343],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.039},
+    {"n": 2, "role": "figure", "bbox": [0.134, 0.150, 0.467, 0.383],
+     "column": "full", "size_rel": 1.0, "space_before": 0.056},
+    {"n": 3, "role": "figure_caption", "bbox": [0.148, 0.397, 0.479, 0.410],
+     "column": "full", "size_rel": 0.95, "align": "center", "font": "serif", "space_before": 0.014},
+    {"n": 4, "role": "paragraph", "bbox": [0.313, 0.346, 0.902, 0.558],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 5, "role": "section_heading", "bbox": [0.315, 0.575, 0.659, 0.592],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold",
+     "text_color": "#00adef", "space_before": 0.017},
+    {"n": 6, "role": "paragraph", "bbox": [0.313, 0.605, 0.902, 0.750],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.013},
+    {"n": 7, "role": "paragraph", "bbox": [0.313, 0.754, 0.902, 0.823],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 8, "role": "list", "bbox": [0.313, 0.830, 0.902, 0.885],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.029,
+     "space_before": 0.007},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.073}
+  ],
+  "note": "Ordinary verso body page, single text column 0.313-0.902 (wide left margin). Figure 11.6 and its caption sit in the left margin area (x 0.134-0.479) beside the text; paragraph n=1 and the first part of paragraph n=4 run at a narrowed measure (x~0.520-0.902) beside the figure, after which n=4 returns to full measure from y~0.43. Figure and caption therefore marked column full with measured boxes. Folio in white rounded tab at left over the grey strip (#d1d2d4); running head 'Biology' small caps at right; pale green top band #e0ebb6; green foot band #cadf7f with '2024-25' reported as footer_rule. List n=8 item (a) has a hanging indent: label at column edge, continuation lines inset ~0.029. Paragraphs n=4 and n=7 have first-line indents ~0.029. Heading colour #00adef sampled. size_pt omitted: DPI not given. Diagonal watermark ignored."
+}

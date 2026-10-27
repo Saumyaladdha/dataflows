@@ -1,0 +1,180 @@
+{
+ "page": {
+  "width_px": 1682,
+  "height_px": 2190,
+  "body_text_size_px": 20.0,
+  "page_kind": "chapter_opener",
+  "text_block": [
+   0.1,
+   0.437,
+   0.882,
+   0.909
+  ],
+  "fill": 0.98,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.1,
+    "x1": 0.26
+   },
+   {
+    "id": "right",
+    "x0": 0.287,
+    "x1": 0.882
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "chapter_banner",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.43
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cfe08a",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "qr_code",
+   "bbox": [
+    0.741,
+    0.112,
+    0.882,
+    0.221
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.112
+  },
+  {
+   "n": 1,
+   "role": "chapter_title",
+   "bbox": [
+    0.325,
+    0.312,
+    0.523,
+    0.342
+   ],
+   "column": "full",
+   "size_rel": 3.0,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#0072bc",
+   "space_before": 0.091
+  },
+  {
+   "n": 2,
+   "role": "chapter_title",
+   "bbox": [
+    0.325,
+    0.362,
+    0.882,
+    0.391
+   ],
+   "column": "full",
+   "size_rel": 2.3,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#0072bc",
+   "space_before": 0.02
+  },
+  {
+   "n": null,
+   "role": "contents_panel",
+   "bbox": [
+    0.1,
+    0.437,
+    0.26,
+    0.703
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif-italic",
+   "text_color": "#00aeef",
+   "space_before": 0.046
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.287,
+    0.437,
+    0.882,
+    0.648
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.046
+  },
+  {
+   "n": 4,
+   "role": "section_heading",
+   "bbox": [
+    0.289,
+    0.674,
+    0.556,
+    0.689
+   ],
+   "column": "right",
+   "size_rel": 1.1,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00aeef",
+   "space_before": 0.026
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.287,
+    0.705,
+    0.882,
+    0.909
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.016
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.953,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cfe08a",
+   "space_before": 0.044
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.475,
+    0.955,
+    0.525,
+    0.964
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "center",
+   "font": "sans",
+   "space_before": 0.0
+  }
+ ],
+ "note": "Chapter 14 opener. Banner is a light-green (#cfe08a, sampled at the flat top) gradient fading to white by y~0.43; QR code top-right. 'CHAPTER 14' (n=1) and the title (n=2) in blue small caps. No orange rule_bar on this page. Left rail: contents panel of sections 14.1-14.6 in cyan italic on bare paper (no fill); right column: opening prose (n=3), heading 14.1 (n=4), prose (n=5). The bottom band (y 0.953-1.0, #cfe08a) is reported as footer_rule though it is a full band, not a thin rule; '2024-25' edition stamp sits on it, reported as page_number (page prints no folio). size_pt omitted (DPI not given)."
+}

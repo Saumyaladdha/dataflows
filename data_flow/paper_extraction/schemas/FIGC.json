@@ -1,0 +1,288 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/FIGC.json",
+  "title": "FIGC agent output (figc-structure-reader)",
+  "description": "One chemistry question's drawn structures, as SMILES cards. The agent reads; code checks every SMILES (RDKit) and rebuilds every name (OPSIN); the renderer draws. One card per figure the input lists.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "figures",
+        "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "figures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "figure_id",
+              "kind",
+              "text",
+              "species",
+              "confidence",
+              "note"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "figure_id": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "structures",
+                  "reaction",
+                  "not_a_structure"
+                ]
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The whole figure written out in one line for a reader who cannot see it: printed labels kept, each species by its name, arrows as → with the reagent over an arrow in [ ], letters standing for unknowns kept as printed, formulas in $\\ce{...}$. For not_a_structure: what the figure shows."
+              },
+              "species": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "label",
+                    "smiles",
+                    "name"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "description": "The label printed beside the drawing: (1), (2), A, I, or empty."
+                    },
+                    "smiles": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "IUPAC or common name, for the OPSIN name check; empty only for an ion/radical OPSIN cannot read."
+                    },
+                    "orient": {
+                      "type": "object",
+                      "required": [
+                        "atom",
+                        "deg"
+                      ],
+                      "additionalProperties": false,
+                      "properties": {
+                        "atom": {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        "deg": {
+                          "type": "number"
+                        },
+                        "right": {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        "left": {
+                          "type": "integer",
+                          "minimum": 1
+                        }
+                      }
+                    },
+                    "abbreviate": {
+                      "type": "boolean"
+                    },
+                    "explicit_h": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "description": "Map numbers of atoms whose H the booklet draws explicitly."
+                    },
+                    "annotations": {
+                      "type": "array",
+                      "description": "What is printed ON the structure besides atoms, anchored to map-numbered atoms.",
+                      "items": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "required": [
+                              "kind",
+                              "atoms",
+                              "text"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                              "kind": {
+                                "const": "angle"
+                              },
+                              "atoms": {
+                                "type": "array",
+                                "items": {
+                                  "type": "integer"
+                                },
+                                "minItems": 3,
+                                "maxItems": 3
+                              },
+                              "text": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          {
+                            "type": "object",
+                            "required": [
+                              "kind",
+                              "atom",
+                              "text"
+                            ],
+                            "additionalProperties": false,
+                            "properties": {
+                              "kind": {
+                                "const": "note"
+                              },
+                              "atom": {
+                                "type": "integer"
+                              },
+                              "text": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "scheme": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "required": [
+                          "species"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                          "species": {
+                            "type": "integer",
+                            "minimum": 1
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "required": [
+                          "text"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                          "text": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "required": [
+                          "plus"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                          "plus": {
+                            "const": true
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "required": [
+                          "arrow"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                          "arrow": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "above": {
+                                "type": "string"
+                              },
+                              "below": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "minItems": 1
+                },
+                "description": "A reaction or scheme as printed, one row per arrow path."
+              },
+              "reaction_smiles": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "certain",
+                  "probable",
+                  "unsure"
+                ]
+              },
+              "note": {
+                "type": "string"
+              },
+              "excluded_text": {
+                "type": "array",
+                "description": "Printed text inside the figure's box that the drawing deliberately does not show, each with why (a stem line straying into the box, a mechanism's curved-arrow letters).",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "text",
+                    "why"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "why": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": [
+        "error"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "error": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

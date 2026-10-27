@@ -1,0 +1,27 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 23,
+    "text_block": [0.098, 0.116, 0.869, 0.904],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.08], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.08, 1.0, 0.093], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.081, 0.316, 0.093], "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.826, 0.081, 0.851, 0.094], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "text_color": "#231f20"},
+    {"n": 1, "role": "figure", "bbox": [0.098, 0.116, 0.869, 0.563], "column": "full", "size_rel": 1.0, "space_before": 0.022},
+    {"n": 2, "role": "figure_caption", "bbox": [0.258, 0.578, 0.708, 0.591], "column": "full", "size_rel": 0.9, "align": "center", "font": "serif", "text_color": "#6d6e71", "space_before": 0.015},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.609, 0.686, 0.711], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.018},
+    {"n": 4, "role": "section_heading", "bbox": [0.098, 0.734, 0.34, 0.749], "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.023},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.765, 0.686, 0.869], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.016},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.872, 0.686, 0.904], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "indent": 0.03, "space_before": 0.003},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.052}
+  ],
+  "note": "Ordinary body page (recto), single full column; body prose measure 0.098-0.686 while Figure 8.1 spans wider (0.098-0.869). Top band is two strips: light green #e0ebb6 then a grey strip #d1d2d4 carrying the running header 'Cell: The Unit of Life' and the folio 89 in a white tab at right. Footer is a solid green band #cadf7f with the year stamp '2024-25' (not reported separately). A diagonal 'NCERT not to be republished' watermark overlays the page and is ignored. Paragraph 6's indent is its first-line indent. Heading 4 is blue bold small caps. size_pt not given (DPI not stated)."
+}

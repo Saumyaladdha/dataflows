@@ -3,38 +3,58 @@
     {
       "n": 1,
       "kind": "paragraph",
-      "text": "The following are the features that are required to facilitate cloning into a vector.",
-      "continues_from_previous": false
+      "text": "reading is kept the same. For example, the following sequences reads the same on the two strands in 5′ → 3′ direction. This is also true if read in the 3′ → 5′ direction.",
+      "continues_from_previous": true,
+      "bold_terms": [],
+      "italic_terms": []
     },
     {
       "n": 2,
-      "kind": "list",
-      "text": "(i) Origin of replication (ori) : This is a sequence from where replication starts and any piece of DNA when linked to this sequence can be made to replicate within the host cells. This sequence is also responsible for controlling the copy number of the linked DNA. So, if one wants to recover many copies of the target DNA it should be cloned in a vector whose origin support high copy number."
-    },
-    {
-      "n": 3,
-      "kind": "list",
-      "text": "(ii) Selectable marker : In addition to ‘ori’, the vector requires a selectable marker, which helps in identifying and eliminating non-transformants and selectively permitting the growth of the transformants.  Transformation is a procedure through which a piece of DNA is introduced in a host bacterium (you will study the process in subsequent section). Normally, the genes encoding resistance to antibiotics such as ampicillin, chloramphenicol, tetracycline or kanamycin, etc., are considered useful selectable markers for E. coli. The normal E. coli cells do not carry resistance against any of these antibiotics."
-    },
-    {
-      "n": 4,
-      "kind": "figure",
+      "kind": "equation",
       "needs_special": true,
-      "bbox": [796, 924, 1416, 1685],
+      "bbox": [454, 346, 810, 421],
       "text": ""
     },
     {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "Restriction enzymes cut the strand of DNA a little away from the centre of the palindrome sites, but between the same two bases on the opposite strands. This leaves single stranded portions at the ends. There are overhanging stretches called sticky ends on each strand (Figure 9.1). These are named so because they form hydrogen bonds with their complementary cut counterparts. This stickiness of the ends facilitates the action of the enzyme DNA ligase.",
+      "bold_terms": [],
+      "italic_terms": []
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "Restriction endonucleases are used in genetic engineering to form ‘recombinant’ molecules of DNA, which are composed of DNA from different sources/genomes.",
+      "bold_terms": [],
+      "italic_terms": []
+    },
+    {
       "n": 5,
-      "kind": "list",
-      "text": "(iii) Cloning sites: In order to link the alien DNA, the vector needs to have very few, preferably single, recognition sites for the commonly used restriction enzymes. Presence of more than one recognition sites within the vector will generate several fragments, which will complicate the gene cloning (Figure 9.4). The ligation of alien DNA is carried out at a restriction site present in one of the two antibiotic resistance genes. For example, you can ligate a foreign DNA at the BamH I site of tetracycline resistance gene in the vector pBR322. The recombinant plasmids will lose tetracycline resistance due to insertion of foreign DNA but can still be selected out from non-recombinant ones by plating the transformants on ampicillin containing medium. The transformants growing on ampicillin containing medium are then transferred on a medium containing tetracycline. The recombinants will grow in ampicillin containing medium but not on that containing tetracycline. But, non-recombinants will grow on the medium containing both the antibiotics. In this case, one antibiotic resistance gene helps in selecting the transformants, whereas the other antibiotic resistance"
+      "kind": "paragraph",
+      "text": "When cut by the same restriction enzyme, the resultant DNA fragments have the same kind of ‘sticky-ends’ and, these can be joined together (end-to-end) using DNA ligases (Figure 9.2).",
+      "bold_terms": [],
+      "italic_terms": []
+    },
+    {
+      "n": 6,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [173, 934, 1112, 1885],
+      "text": ""
+    },
+    {
+      "n": 7,
+      "kind": "figure_caption",
+      "text": "Figure 9.2 Diagrammatic representation of recombinant DNA technology"
     }
   ],
-  "first_block_continues_from_previous": false,
-  "last_block_continues_on_next": true,
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": false,
   "running_header_footer_removed": [
     "BIOTECHNOLOGY : PRINCIPLES AND PROCESSES",
-    "169",
+    "167",
     "Reprint 2026-27"
   ],
-  "note": "text_layer empty; transcribed from the page image. previous_page_last_block was null, so continuation judged from the page I read just before (p006), which ended with the completed sentence '...selection of recombinants from non-recombinants.'; this page opens a new paragraph, so nothing continues from it. Item (iii) is set in a narrow left column beside Figure 9.4 and then runs full width below the figure; it is kept as one block and placed after the figure so that the page's trailing prose is the last block. Figure 9.4 (block 4) includes the pBR322 diagram, its site labels and its caption. The page's last line ends mid-sentence at 'the other antibiotic resistance', so it continues on the next page."
+  "note": "Text layer renders the arrow as 'à' and primes as plain apostrophes; transcribed from the image as 5′ → 3′. Displayed palindrome sequence (5′—GAATTC—3′ / 3′—CTTAAG—5′) deferred as needs_special. Figure 9.2 label text left to the figure transcriber."
 }

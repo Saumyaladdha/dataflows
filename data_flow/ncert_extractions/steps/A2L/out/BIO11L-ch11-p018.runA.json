@@ -1,0 +1,22 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 21.0,
+    "text_block": [0.128, 0.132, 0.903, 0.849],
+    "fill": 0.92,
+    "columns": [
+      {"id": "full", "x0": 0.128, "x1": 0.903}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.081], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.064, 0.185, 0.094], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": null, "role": "running_header", "bbox": [0.838, 0.081, 0.900, 0.094], "column": "full", "size_rel": 0.95, "align": "right", "font": "serif", "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": 1, "role": "table_caption", "bbox": [0.196, 0.132, 0.843, 0.163], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-bold", "space_before": 0.038},
+    {"n": 2, "role": "table", "bbox": [0.128, 0.171, 0.903, 0.849], "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "fill": "#fedab4", "space_before": 0.008},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.957, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.108}
+  ],
+  "note": "Ordinary verso page: page number in white tab at left, running head 'Biology' at right on the grey strip (#d1d2d4) under the pale green header band (#e0ebb6). Page holds only Table 11.1: caption (block 1, A2 kind figure_caption, reported here as table_caption since it captions a table) with a hanging second line, and a 4-column table (block 2) on a peach fill (#fedab4) with white rules and an orange outer border; header row is the same fill, bold. Table spans 0.128-0.903, wider than the usual verso text column (0.314-0.902). Page ends at y 0.849, leaving the lower part empty. Footer green band (#cadf7f) with '2024-25' not reported separately. Watermark ignored. size_pt omitted: DPI not given."
+}

@@ -505,7 +505,9 @@ def page_side(printed_folio, page_index):
 # carry an image block at 65.7,192.3 -> 530.6,657.1 (0.76 x 0.59 of the sheet); BIO12L ch3
 # carries the same thing at 45.7,191.1 -> 507.5,652.9. Emitting it as a figure pastes
 # "(c) NCERT not to be republished" into the middle of the chapter as if it were artwork.
-_WATERMARK_W_FRAC = (0.70, 0.84)
+# 0.86, not 0.84: BIO12L ch01 p021 sets it 0.8400x wide (36,201 -> 500,664 on a 568.8pt
+# page) and it went unrecognised by a hair, fusing every panel of Figure 1.15 into one.
+_WATERMARK_W_FRAC = (0.70, 0.86)
 _WATERMARK_H_FRAC = (0.52, 0.66)
 _WATERMARK_CX_FRAC = (0.42, 0.58)
 _WATERMARK_CY_FRAC = (0.47, 0.60)
@@ -530,7 +532,14 @@ def is_page_ground(bbox_frac):
     reproduces the whole page inside itself.
     """
     x0, y0, x1, y1 = bbox_frac
-    return (x1 - x0) > 0.97 and (y1 - y0) > 0.97
+    if (x1 - x0) > 0.97 and (y1 - y0) > 0.97:
+        return True
+    # A FULL-BLEED BAND AT THE FOOT is ground too. BIO11L ch01 p002 (the Ernst Mayr page)
+    # fades to green from y 444pt to the trim as one full-width image. Typed as a figure it
+    # merged with the portrait into one page-sized "figure", which then swallowed the
+    # portrait's caption as a figure label -- the caption vanished from the page, and the
+    # band was never drawn. No NCERT figure runs edge to edge and off the foot of the sheet.
+    return (x1 - x0) > 0.97 and y1 > 0.99 and y0 > 0.3
 
 
 def is_header_art(bbox_frac, design):

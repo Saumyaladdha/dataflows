@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/FIGP.json",
+  "title": "FIGP agent output (figp-figure-redrawer)",
+  "description": "One physics figure as a spec of primitives in mathematical coordinates (y up), drawn by code/lib/physics_figure.py. The agent reads; code renders the spec, recomputes every claimed angle, and checks a circuit's netlist against the wires as drawn.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "spec",
+        "out_of_scope",
+        "unreadable",
+        "note"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "spec": {
+          "type": "object",
+          "required": [
+            "width",
+            "height",
+            "draw"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "width": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "height": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "pad": {
+              "type": "number"
+            },
+            "scale": {
+              "type": "number"
+            },
+            "draw": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "kind"
+                ]
+              }
+            },
+            "angles_claimed": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "degrees",
+                  "vertex",
+                  "ray_to",
+                  "measured_from"
+                ],
+                "properties": {
+                  "degrees": {
+                    "type": "number"
+                  },
+                  "vertex": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  "ray_to": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  "measured_from": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                }
+              }
+            },
+            "netlist": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "between"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "between": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                }
+              }
+            }
+          }
+        },
+        "out_of_scope": {
+          "type": "boolean"
+        },
+        "unreadable": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "note": {
+          "type": "string"
+        },
+        "excluded_text": {
+          "type": "array",
+          "description": "Printed text inside the figure's box that the drawing deliberately does not show, each with why (a stem line straying into the box, a mechanism's curved-arrow letters).",
+          "items": {
+            "type": "object",
+            "required": [
+              "text",
+              "why"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "why": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": [
+        "error"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "error": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

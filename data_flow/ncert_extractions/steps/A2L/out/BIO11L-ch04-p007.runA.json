@@ -1,0 +1,32 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 20.0,
+    "text_block": [0.098, 0.130, 0.873, 0.905],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "left", "x0": 0.098, "x1": 0.480},
+      {"id": "right", "x0": 0.520, "x1": 0.873}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.082, 1.0, 0.095], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "running_header", "bbox": [0.098, 0.083, 0.224, 0.095], "column": "left", "size_rel": 0.9, "align": "left", "font": "serif", "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.828, 0.083, 0.852, 0.095], "column": "right", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff", "space_before": 0.0},
+    {"n": 1, "role": "section_heading", "bbox": [0.098, 0.132, 0.427, 0.149], "column": "left", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.037},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.160, 0.480, 0.424], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.011},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.431, 0.480, 0.465], "column": "left", "size_rel": 1.0, "align": "left", "font": "serif", "space_before": 0.007},
+    {"n": 4, "role": "section_heading", "bbox": [0.098, 0.481, 0.359, 0.498], "column": "left", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.016},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.508, 0.480, 0.861], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.010},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.872, 0.480, 0.905], "column": "left", "size_rel": 1.0, "align": "left", "font": "serif", "space_before": 0.011},
+    {"n": 7, "role": "figure", "bbox": [0.587, 0.130, 0.786, 0.413], "column": "right", "size_rel": 1.0, "space_before": 0.035},
+    {"n": null, "role": "figure_caption", "bbox": [0.595, 0.420, 0.822, 0.463], "column": "right", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.007},
+    {"n": 8, "role": "figure", "bbox": [0.565, 0.457, 0.793, 0.870], "column": "right", "size_rel": 1.0, "space_before": 0.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.520, 0.875, 0.873, 0.903], "column": "right", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.005},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary body page (recto, folio 43) set in two columns: the left column (0.098-0.480) carries all prose of sections 4.2.5 and 4.2.6; the right column (0.520-0.873) carries Figure 4.10 (roundworm, n7) and Figure 4.11 (Nereis and Hirudinaria, n8) with their captions. The top of Figure 4.11's Nereis antennae slightly overlaps the bottom of the Figure 4.10 caption box, hence space_before 0. The captions of Figures 4.10 and 4.11 have no A2 block in the input, so both are n null. Header: light green band (#e0ebb6) over a grey strip (#d1d2d4) with the running head 'Animal Kingdom' at left and the folio on a white tab at right. Footer is a green band (#cadf7f) with the '2024-25' print-year mark, not reported separately. Headings sampled #00adef. Diagonal watermark not reported. size_pt omitted because the rendering DPI is not given."
+}

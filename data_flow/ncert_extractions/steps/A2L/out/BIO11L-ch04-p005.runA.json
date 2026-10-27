@@ -1,0 +1,31 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 20.0,
+    "text_block": [0.098, 0.134, 0.867, 0.898],
+    "fill": 0.97,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686},
+      {"id": "right", "x0": 0.695, "x1": 0.870}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.082, 1.0, 0.095], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "running_header", "bbox": [0.098, 0.083, 0.224, 0.095], "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.828, 0.083, 0.852, 0.095], "column": "right", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff", "space_before": 0.0},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.134, 0.686, 0.167], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.039},
+    {"n": 2, "role": "section_heading", "bbox": [0.098, 0.184, 0.499, 0.199], "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#0073bd", "space_before": 0.017},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.211, 0.686, 0.244], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.012},
+    {"n": 4, "role": "figure", "bbox": [0.199, 0.267, 0.722, 0.553], "column": "full", "size_rel": 1.0, "space_before": 0.023},
+    {"n": 5, "role": "figure_caption", "bbox": [0.160, 0.562, 0.814, 0.590], "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.009},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.616, 0.686, 0.853], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.026},
+    {"n": 7, "role": "figure", "bbox": [0.738, 0.616, 0.828, 0.773], "column": "right", "size_rel": 1.0, "space_before": 0.026},
+    {"n": 8, "role": "figure_caption", "bbox": [0.695, 0.784, 0.867, 0.826], "column": "right", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.011},
+    {"n": 9, "role": "paragraph", "bbox": [0.098, 0.862, 0.686, 0.898], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "space_before": 0.009},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary body page (recto, folio 41). Two columns: the main text measure (id 'full', 0.098-0.686) and a right margin column (0.695-0.870) holding Figure 4.7 and its caption beside paragraph n6. Figure 4.6 (n4) and its caption (n5) are wider than the text measure and overrun into the margin, so are marked full. The top header is two bands: a light green band (#e0ebb6) and a grey strip (#d1d2d4) carrying the running head 'Animal Kingdom' and the folio, which sits on a white tab. Footer is a full-width green band (#cadf7f) carrying the '2024-25' print-year mark, which is not reported separately. The diagonal '(c) NCERT not to be republished' watermark is not reported. size_pt omitted because the rendering DPI is not given. body_text_size_px measured on the paragraph prose."
+}

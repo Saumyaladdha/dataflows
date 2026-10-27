@@ -1,0 +1,30 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.132, 0.687, 0.898],
+    "fill": 0.99,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.687}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.081], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.081, 1.0, 0.094], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.081, 0.365, 0.094], "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.064, 0.87, 0.094], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff", "space_before": 0.0},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.132, 0.687, 0.183], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.038},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.186, 0.687, 0.291], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 3, "role": "section_heading", "bbox": [0.098, 0.309, 0.32, 0.325], "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.018},
+    {"n": 4, "role": "paragraph", "bbox": [0.098, 0.335, 0.687, 0.403], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.01},
+    {"n": 5, "role": "section_heading", "bbox": [0.099, 0.416, 0.305, 0.432], "column": "full", "size_rel": 1.05, "align": "left", "font": "serif-italic", "text_color": "#6d6e71", "space_before": 0.013},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.439, 0.687, 0.614], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.007},
+    {"n": null, "role": "table_caption", "bbox": [0.17, 0.627, 0.605, 0.643], "column": "full", "size_rel": 0.95, "align": "center", "font": "serif-bold", "space_before": 0.013},
+    {"n": 7, "role": "table", "bbox": [0.117, 0.646, 0.669, 0.798], "column": "full", "size_rel": 1.0, "fill": "#fee3c7", "space_before": 0.003},
+    {"n": 8, "role": "paragraph", "bbox": [0.098, 0.811, 0.687, 0.898], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.013},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.06}
+  ],
+  "note": "Single-column recto body page; text column 0.098-0.687 (mirror of the verso). Header furniture: pale green band (#e0ebb6) over grey strip (#d1d2d4), running head 'Body Fluids and Circulation' (small caps) at left, white page-number tab '195' at right. Heading n5 '15.1.3.1 ABO grouping' is grey bold italic (#6d6e71). Table 15.1 has an orange border; its body cells are #fee3c7 and its header row slightly deeper #fedab4. The 'Table 15.1 ...' caption has no A2 block, so n is null. Paragraphs n2 and n8 have first-line indents only. The bottom green band is reported as footer_rule; the '2024-25' print-year text is omitted. No size_pt given: page DPI unknown."
+}

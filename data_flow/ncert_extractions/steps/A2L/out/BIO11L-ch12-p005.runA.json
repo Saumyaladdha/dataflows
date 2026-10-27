@@ -1,0 +1,51 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.143, 0.870, 0.894],
+    "fill": 0.99,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686},
+      {"id": "left", "x0": 0.098, "x1": 0.473},
+      {"id": "right", "x0": 0.493, "x1": 0.870}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0795],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0805, 1.0, 0.0929],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "running_header", "bbox": [0.1376, 0.0818, 0.301, 0.092],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": null, "role": "page_number", "bbox": [0.828, 0.0828, 0.862, 0.092],
+     "column": "full", "size_rel": 1.1, "align": "right", "font": "serif-bold",
+     "fill": "#ffffff", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.0976, 0.143, 0.6853, 0.2676],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0501},
+    {"n": 2, "role": "section_heading", "bbox": [0.1006, 0.2892, 0.2994, 0.3007],
+     "column": "full", "size_rel": 1.3, "align": "left", "font": "serif-bold",
+     "text_color": "#00adef", "space_before": 0.0216},
+    {"n": 3, "role": "paragraph", "bbox": [0.0982, 0.3255, 0.6853, 0.5048],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0248},
+    {"n": 4, "role": "paragraph", "bbox": [0.0982, 0.5108, 0.4729, 0.8345],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.006},
+    {"n": 5, "role": "figure", "bbox": [0.4929, 0.5071, 0.87, 0.8216],
+     "column": "right", "size_rel": 1.0, "fill": "#fffbd5",
+     "space_before": 0.0023},
+    {"n": null, "role": "figure_caption", "bbox": [0.5053, 0.8354, 0.8394, 0.8607],
+     "column": "right", "size_rel": 0.95, "align": "left", "font": "serif",
+     "space_before": 0.0138},
+    {"n": 6, "role": "paragraph", "bbox": [0.0982, 0.8441, 0.4729, 0.8938],
+     "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0096},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9577, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Recto body page with a mixed layout: the top half (blocks 1-3, incl. the cyan section heading 12.3) runs in the single full measure x 0.098-0.686; from y~0.507 the measure narrows to a left column (x 0.098-0.473) carrying blocks 4 and 6 while Figure 12.2 sits in a right column (x 0.493-0.870) on a flat pale yellow panel (#fffbd5) that extends into the outer margin, with its two-line caption 'Figure 12.2 Major pathways of anaerobic respiration' beneath (hanging indent after the label). The figure caption has no A2 block, so n: null. Block 4 contains a bold-italic question inside the same block. Header: pale green band (#e0ebb6) over grey strip (#d1d2d4), running header at left, folio at right in a white tab; foot: yellow-green band (#cadf7f) with centred year imprint, reported as footer_rule. Diagonal watermark not reported. size_pt omitted because render DPI is not known."
+}

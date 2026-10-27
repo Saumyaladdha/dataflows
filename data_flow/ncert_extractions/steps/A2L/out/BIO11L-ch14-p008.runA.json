@@ -1,0 +1,177 @@
+{
+ "page": {
+  "width_px": 1682,
+  "height_px": 2190,
+  "page_kind": "ordinary",
+  "body_text_size_px": 20.5,
+  "text_block": [
+   0.128,
+   0.14,
+   0.913,
+   0.896
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.128,
+    "x1": 0.546
+   },
+   {
+    "id": "right",
+    "x0": 0.564,
+    "x1": 0.913
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.0836
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0836,
+    1.0,
+    0.0963
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.144,
+    0.083,
+    0.18,
+    0.0965
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "center",
+   "font": "sans",
+   "text_color": "#231f20",
+   "fill": "#ffffff",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.847,
+    0.0855,
+    0.909,
+    0.0958
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "right",
+   "font": "serif",
+   "text_color": "#231f20",
+   "fill": "#d1d2d4",
+   "space_before": 0.0
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.215,
+    0.1397,
+    0.819,
+    0.5151
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.0434
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.187,
+    0.5256,
+    0.854,
+    0.5516
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0105
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.317,
+    0.5667,
+    0.913,
+    0.8959
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0151
+  },
+  {
+   "n": 3,
+   "role": "figure",
+   "bbox": [
+    0.128,
+    0.6553,
+    0.546,
+    0.833
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "space_before": 0.0204
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.146,
+    0.845,
+    0.525,
+    0.889
+   ],
+   "column": "left",
+   "size_rel": 0.9,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.012
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.9548,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f",
+   "space_before": 0.0
+  }
+ ],
+ "note": "Verso body page. Figure 14.3 is centred across the page (x 0.215-0.819) with its two-line caption below. Block 2 starts full-measure at x 0.317-0.913 for four lines, then runs around Figure 14.4: from y~0.637 its lines narrow to the RIGHT column (x 0.564-0.913) while Figure 14.4 and its caption occupy a LEFT column (x 0.128-0.546, extending into the inner margin). Block 2 is therefore marked column full (its bbox covers both the full-width lines and the narrowed run-around lines); its space_before is measured from the Figure 14.3 caption. Block 3's space_before is measured from the last full-width line of block 2 (y~0.633). Neither figure caption has an A2 block, so both are n:null. The footer is a solid green band (#cadf7f, y 0.955-1.0) carrying the print-year mark 2024-25 centred; it is reported as footer_rule (no closer role exists) and the year mark itself is omitted as it has no allowed role. Header: pale-green band (#e0ebb6) over a grey strip (#d1d2d4) that carries the running header, with a white tab holding the folio. size_pt omitted: page DPI is not given in the input. body_text_size_px is the ascender-to-baseline height of a body line in the image's native pixels."
+}

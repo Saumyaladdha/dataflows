@@ -1,0 +1,40 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "page_kind": "ordinary",
+    "body_text_size_px": 19.0,
+    "text_block": [0.098, 0.132, 0.818, 0.906],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.081],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.082, 0.389, 0.095],
+     "column": "full", "size_rel": 0.95, "align": "left", "font": "serif",
+     "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.066, 0.870, 0.095],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans",
+     "fill": "#ffffff", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.132, 0.686, 0.269],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.037},
+    {"n": 2, "role": "section_heading", "bbox": [0.098, 0.286, 0.322, 0.302],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold",
+     "text_color": "#00adef", "space_before": 0.017},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.312, 0.686, 0.363],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.010},
+    {"n": 4, "role": "figure", "bbox": [0.183, 0.405, 0.777, 0.838],
+     "column": "full", "size_rel": 1.0, "space_before": 0.042},
+    {"n": null, "role": "figure_caption", "bbox": [0.151, 0.862, 0.818, 0.906],
+     "column": "full", "size_rel": 0.95, "align": "justify", "font": "serif",
+     "space_before": 0.024},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary body page (recto, folio 169), single full column; prose measure 0.098-0.686 with an empty right margin. Figure 13.4 (raster artwork, panels a/b/c) is centred lower on the page and, with its hanging caption, extends right of the prose measure to x=0.818. The caption has no A2 block of its own, so it is n=null. Pale green header band, grey #d1d2d4 strip with small-caps running head, folio in a white tab at right. Footer is a broad green band with '2024-25' imprint, reported as footer_rule. Watermark ignored. Block 1 continues from the previous page. No size_pt: DPI not stated."
+}

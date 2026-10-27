@@ -1,0 +1,47 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.132, 0.135, 0.903, 0.900],
+    "fill": 0.99,
+    "columns": [
+      {"id": "left", "x0": 0.132, "x1": 0.511},
+      {"id": "right", "x0": 0.520, "x1": 0.903}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0795],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0805, 1.0, 0.0929],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.142, 0.0823, 0.178, 0.092],
+     "column": "full", "size_rel": 1.1, "align": "left", "font": "serif-bold",
+     "fill": "#ffffff", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.838, 0.0823, 0.899, 0.092],
+     "column": "full", "size_rel": 1.0, "align": "right", "font": "serif",
+     "fill": "#d1d2d4", "text_color": "#221f1f"},
+    {"n": 2, "role": "paragraph", "bbox": [0.5206, 0.1347, 0.9029, 0.4336],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0418},
+    {"n": 1, "role": "figure", "bbox": [0.1318, 0.1991, 0.5106, 0.7379],
+     "column": "left", "size_rel": 1.0, "fill": "#cce7d4",
+     "space_before": 0.1062},
+    {"n": null, "role": "figure_caption", "bbox": [0.1888, 0.7508, 0.4424, 0.7623],
+     "column": "left", "size_rel": 0.95, "align": "center", "font": "serif",
+     "space_before": 0.0129},
+    {"n": 3, "role": "paragraph", "bbox": [0.5206, 0.4391, 0.9029, 0.5048],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0055},
+    {"n": 4, "role": "paragraph", "bbox": [0.5188, 0.5103, 0.9029, 0.8446],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.0055},
+    {"n": 5, "role": "paragraph", "bbox": [0.52, 0.8506, 0.9029, 0.9002],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.006},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.9577, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary left-hand (verso) body page laid out in two columns: the left column (x 0.132-0.511) holds Figure 12.1, a tall glycolysis flow diagram drawn on a flat pale green panel (#cce7d4, y 0.199-0.738), with its caption 'Figure 12.1 Steps of glycolysis' centred beneath; the right column (x 0.520-0.903) carries all the prose top to bottom. Header is the pale green band (#e0ebb6) over the grey strip (#d1d2d4); on this verso the folio sits at LEFT in a white rounded tab and the running header 'Biology' at right. Foot is the solid yellow-green band (#cadf7f) with the centred year imprint, reported as footer_rule. The figure caption has no A2 block on this page, so it is n: null. Block 4 ends with a bold-italic question sentence inside the same block. Diagonal watermark not reported. size_pt omitted because render DPI is not known."
+}

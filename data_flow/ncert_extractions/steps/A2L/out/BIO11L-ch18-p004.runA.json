@@ -1,0 +1,152 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2182,
+  "body_text_size_px": 23.0,
+  "text_block": [
+   0.098,
+   0.15,
+   0.686,
+   0.906
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.098,
+    "x1": 0.686
+   }
+  ],
+  "page_kind": "body"
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.083
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.083,
+    1.0,
+    0.097
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.137,
+    0.085,
+    0.406,
+    0.096
+   ],
+   "column": "full",
+   "size_rel": 0.85,
+   "align": "left",
+   "font": "serif",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.815,
+    0.067,
+    0.871,
+    0.097
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "center",
+   "fill": "#ffffff",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.165,
+    0.15,
+    0.698,
+    0.392
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.053
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.124,
+    0.403,
+    0.782,
+    0.43
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "left",
+   "font": "serif",
+   "space_before": 0.011
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.447,
+    0.686,
+    0.493
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.017
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.5,
+    0.686,
+    0.906
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.007
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.957,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Recto body page, single column 0.098-0.686 (folio 233 in white tab at right, small-caps running head at left). Figure 18.2 (two axon diagrams with red depolarised zones) sits at the top; its caption 'Figure 18.2 Diagrammatic representation ...' has no A2 block (n=null) and overhangs the body measure to x~0.782 with a hanging indent. Paragraph n=2 continues from the previous page (no first-line indent). Foot band '2024-25' is a reprint stamp, not a page number. size_pt omitted: page DPI not given in the input."
+}

@@ -1,0 +1,35 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 19.5,
+    "page_kind": "unit_opener",
+    "text_block": [0.129, 0.376, 0.904, 0.688],
+    "fill": 0.97,
+    "columns": [
+      {"id": "left", "x0": 0.129, "x1": 0.416},
+      {"id": "right", "x0": 0.424, "x1": 0.904}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.57, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cee187"},
+    {"n": 1, "role": "figure", "bbox": [0.129, 0.39, 0.416, 0.666],
+     "column": "left", "size_rel": 1.0, "space_before": 0.39},
+    {"n": 2, "role": "figure_caption", "bbox": [0.216, 0.672, 0.327, 0.686],
+     "column": "left", "size_rel": 1.0, "align": "center", "font": "serif-bold",
+     "text_color": "#201818", "space_before": 0.006},
+    {"n": 3, "role": "paragraph", "bbox": [0.424, 0.376, 0.904, 0.438],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif"},
+    {"n": 4, "role": "paragraph", "bbox": [0.424, 0.442, 0.904, 0.620],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.004},
+    {"n": 5, "role": "paragraph", "bbox": [0.424, 0.625, 0.904, 0.688],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.004},
+    {"n": null, "role": "page_number", "bbox": [0.476, 0.955, 0.525, 0.965],
+     "column": "full", "size_rel": 0.85, "align": "center", "font": "sans",
+     "space_before": 0.267}
+  ],
+  "note": "Verso of the Unit 4 opener: a biography panel of Melvin Calvin with no header band, running head or folio. Two columns: the black-and-white portrait (n=1) with its bold centred caption 'Melvin Calvin' (n=2) in the left column, and three justified serif paragraphs (n=3-5) in the right column; n=4 and n=5 open with a first-line indent of ~0.029 page width (not a left inset, so no indent field). The top ~37% of the page is blank paper. A vertical background gradient runs from white at y~0.57 to light green at the foot; fill #cee187 is sampled from the flat bottom interior (mid-gradient at y~0.85 reads #dce9a9). '2024-25' at the foot is the edition stamp, labelled page_number for lack of a closer role. Watermark ignored. size_pt omitted because the render DPI is not given; page_kind given as unit_opener because this page belongs to the unit-opener spread."
+}

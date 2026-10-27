@@ -1,0 +1,27 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 21.0,
+    "page_kind": "ordinary",
+    "text_block": [0.314, 0.133, 0.901, 0.907],
+    "fill": 1.0,
+    "columns": [
+      {"id": "full", "x0": 0.314, "x1": 0.901}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.082, 1.0, 0.095], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.066, 0.185, 0.095], "column": "full", "size_rel": 1.2, "align": "center", "font": "serif-bold", "text_color": "#231f20", "fill": "#ffffff", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.838, 0.084, 0.900, 0.095], "column": "full", "size_rel": 1.0, "align": "right", "font": "serif", "text_color": "#231f20", "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": 1, "role": "paragraph", "bbox": [0.314, 0.133, 0.901, 0.183], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.038},
+    {"n": 2, "role": "paragraph", "bbox": [0.314, 0.187, 0.901, 0.307], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 3, "role": "equation", "bbox": [0.334, 0.330, 0.882, 0.410], "column": "full", "size_rel": 1.0, "align": "center", "font": "serif", "fill": "#fffacb", "space_before": 0.023},
+    {"n": 4, "role": "box", "bbox": [0.334, 0.410, 0.882, 0.444], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "fill": "#fffacb", "space_before": 0.0},
+    {"n": 5, "role": "paragraph", "bbox": [0.314, 0.450, 0.901, 0.750], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.006},
+    {"n": 6, "role": "paragraph", "bbox": [0.314, 0.752, 0.901, 0.907], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.002},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.049}
+  ],
+  "note": "Verso body page (folio 106): single text column 0.314-0.901 with an empty left margin. Block 1 continues a paragraph from the previous page (no first-line indent). One pale-yellow panel (#fffacb, x 0.334-0.882, y 0.330-0.444) holds both the amino-acid ionisation equation (block 3) and the line 'B is called zwitterionic form.' (block 4, A2 kind box); the panel is split at y~0.410 between the two elements so they tile it without overlapping - a renderer should draw them as one continuous panel. Header: light-green band #e0ebb6 over grey strip #d1d2d4, folio in a white tab at left, running head 'BIOLOGY' at right. Foot band #cadf7f with centred '2024-25' print year (not reported; no role fits). Watermark ignored. size_pt omitted because page DPI is not given."
+}

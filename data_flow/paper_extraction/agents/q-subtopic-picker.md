@@ -54,8 +54,15 @@ Pick the topic this question tests. One, or two when the question compares or co
 - A question that spans the whole chapter evenly — a mixed numerical, a definition round-up — takes
   the topic its ANSWER sits in, not the broadest one.
 
+- **A missing topic is NAMED, in `proposed_topic`.** Whenever you answer `["unsure"]`, or choose the
+  `Unspecified Topic` placeholder, put the topic this question needs in `proposed_topic`, written as
+  it should appear in the taxonomy (e.g. `"Water Potential"`, `"Air Pollution"`). Never invent a
+  `topic_id` -- the name goes in `proposed_topic` and a script adds it to the taxonomy. A gap named
+  only in prose in `note` cannot be collected, so it never gets fixed.
+
 ## Allowed values
 - `topic_ids`: one or two `topic_id` values from the list, or `["unsure"]`
+- `proposed_topic`: the missing topic's name; required with `["unsure"]` or the `Unspecified Topic` row, otherwise omit it
 - `confidence`: high, medium, low
 
 ## Output
@@ -69,3 +76,15 @@ Pick the topic this question tests. One, or two when the question compares or co
 }
 ```
 - `why` is one sentence naming the fact the correct answer depends on.
+
+When the chapter has no topic for it:
+```json
+{
+  "topic_ids": ["unsure"],
+  "topic_names": [],
+  "proposed_topic": "Water Potential",
+  "why": "The answer depends on water potential of a solution, which this chapter's topic list does not include.",
+  "confidence": "high",
+  "note": "Transport in Plants lists only 'Transpiration and Stomatal Opening and Closing'."
+}
+```

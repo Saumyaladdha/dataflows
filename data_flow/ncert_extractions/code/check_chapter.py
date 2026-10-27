@@ -117,7 +117,8 @@ def check(doc, chapter_dir):
         fail("FIGURE_OVERDETECT",
              f"{len(figs)} figure nodes across {n_pages} pages -- more than 4 a page is "
              f"scan fragments, not artwork")
-    noimg = [n for n in figs if not (n.get("image") or n.get("image_local"))]
+    noimg = [n for n in figs if not (n.get("image") or n.get("image_local") or any(
+        q.get("image") or q.get("image_local") for q in n.get("panels") or []))]
     if noimg:
         warn("FIGURE_NO_IMAGE",
              f"{len(noimg)} of {len(figs)} figures have no cropped image "
@@ -226,7 +227,8 @@ def check(doc, chapter_dir):
              f"as ordinary paragraphs, which also corrupts the prose around them")
 
     # 11 ── ONE SHEET PER PAGE OF THE SOURCE ---------------------------------------------
-    html = os.path.join(chapter_dir, "chapter.html")
+    # The page-faithful render is the deliverable (chapter.html retired 2026-10-24).
+    html = os.path.join(chapter_dir, "chapter-exact.html")
     if os.path.exists(html) and pages:
         with open(html, encoding="utf-8") as fh:
             h = fh.read()
@@ -235,19 +237,30 @@ def check(doc, chapter_dir):
             fail("SHEET_COUNT",
                  f"the render has {sheets} sheets for a {len(pages)}-page source -- a missing "
                  f"sheet renumbers every folio after it")
-        openers = len(re.findall(r'class="sheet opener', h))
+
+    # The per-page fit is measured from chapter.json by the reflow renderer, IN MEMORY: its
+    # chapter.html is no longer written (retired 2026-10-24), but what it measures -- how much
+    # a page's content needs against the room the page gives -- is still the warning that a
+    # block was assigned to the wrong page, and that warning protects the exact render too.
+    try:
+        import render_from_tree
+        h_fit = render_from_tree.render(doc)
+    except Exception:                                     # noqa: BLE001
+        h_fit = ""
+    if h_fit:
+        openers = len(re.findall(r'class="sheet opener', h_fit))
         if openers > 1:
             fail("ALL_OPENERS",
-                 f"{openers} of {sheets} sheets use the chapter-OPENER design -- only the "
+                 f"{openers} of {len(pages)} sheets use the chapter-OPENER design -- only the "
                  f"chapter's first page opens a chapter")
 
     # 12 ── NO PAGE MAY OVERFLOW ITS SHEET -----------------------------------------------
     # The sheet is a fixed height with `overflow:hidden`, so content that does not fit is not
     # pushed onto the next page -- it DISAPPEARS, mid-sentence, under the footer bar. That is
     # invisible to every other check here, and it is what a reader notices first.
-    if os.path.exists(html):
+    if h_fit:
         tight = [(m.group(1), float(m.group(2)))
-                 for m in re.finditer(r'id="p([^"]+)"[^>]*--fit:([0-9.]+)', h)]
+                 for m in re.finditer(r'id="p([^"]+)"[^>]*--fit:([0-9.]+)', h_fit)]
         bad = [(p_, f) for p_, f in tight if f < 0.72]
         if bad:
             fail("PAGE_OVERFLOW",
@@ -279,7 +292,11 @@ def check(doc, chapter_dir):
         b = (n.get("body") or "")
         if n["kind"] in ("para", "box") and re.match(r"^\s*(?:Figure|Fig\.|Table)\s*\d", b):
             m = re.match(r"^\s*(?:Figure|Fig\.|Table)\s*[\d.]+\s*(.{0,400})", b, re.S)
-            if m and len(m.group(1)) > 160:
+            # A paragraph may open by MENTIONING a figure: `Figure 1.2a shows the two parts of a
+            # typical stamen ...` (BIO12L ch01 p005) is the book's own sentence, not a caption.
+            mentions = re.match(r"^[a-z]?\s*(?:shows|depicts|indicates|illustrates|gives|"
+                                r"represents|is|are)\b", m.group(1) if m else "")
+            if m and len(m.group(1)) > 160 and not mentions:
                 fail("CAPTION_IN_PROSE",
                      f"a caption and the paragraph after it are one node: "
                      f"{b[:90]!r}... -- this changes what the text says, not just how it looks")

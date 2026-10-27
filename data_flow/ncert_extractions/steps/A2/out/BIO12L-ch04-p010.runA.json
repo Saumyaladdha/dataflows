@@ -2,47 +2,49 @@
   "blocks": [
     {
       "n": 1,
-      "kind": "paragraph",
-      "text": "Do you realise that the example of ABO blood grouping also provides a good example of multiple alleles? Here you  can see that there are more than two, i.e.,  three alleles, governing the same character. Since in an individual only two alleles can be present, multiple alleles can be found only when population studies are made.",
-      "continues_from_previous": false
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        146,
+        222,
+        786,
+        1703
+      ],
+      "text": ""
     },
     {
       "n": 2,
-      "kind": "paragraph",
-      "text": "Occasionally, a single gene product may produce more than one effect. For example, starch synthesis in pea seeds is controlled by one gene. It has two alleles (B and b). Starch is synthesised effectively by BB homozygotes and therefore, large starch grains are produced. In contrast, bb homozygotes have lesser efficiency in starch synthesis and produce smaller starch grains. After maturation of the seeds, BB seeds are round and the bb seeds are wrinkled. Heterozygotes produce round seeds, and so B seems to be the dominant allele. But, the starch grains produced are of intermediate size in Bb seeds. So if starch grain size is considered as the phenotype, then from this angle, the alleles show incomplete dominance."
+      "kind": "heading",
+      "text": "4.2.2.1 Incomplete Dominance"
     },
     {
       "n": 3,
       "kind": "paragraph",
-      "text": "Therefore, dominance is not an autonomous feature of a gene or the product that it has information for. It depends as much on the gene product and the production of a particular phenotype from this product as it does on the particular phenotype that we choose to examine, in case more than one phenotype is influenced by the same gene."
+      "text": "When experiments on peas were repeated using other traits in other plants, it was found that sometimes the F1 had a phenotype that did not resemble either of the two parents and was in between the two.  The inheritance of flower colour in the dog flower (snapdragon or Antirrhinum sp.) is a good example to understand incomplete dominance. In a cross between true-breeding red-flowered (RR) and true-breeding white-flowered plants (rr),  the F1 (Rr) was pink (Figure 4.6).  When the F1 was self-pollinated the F2 resulted in the following ratio 1 (RR) Red : 2 (Rr) Pink : 1 (rr) White. Here the genotype ratios were exactly as we would expect in any mendelian monohybrid cross, but the phenotype ratios had changed from the 3:1 dominant : recessive ratio. What happened was that R was not completely dominant over r and this  made it possible to distinguish Rr as pink from RR (red)  and rr (white) .",
+      "continues_from_previous": false
     },
     {
       "n": 4,
-      "kind": "heading",
-      "text": "4.3 INHERITANCE OF TWO GENES"
+      "kind": "paragraph",
+      "text": "Explanation of the concept of dominance: What exactly is dominance? Why are some alleles dominant and some recessive? To tackle these questions, we must understand what a gene does. Every gene, as you know by now, contains the information to express a particular trait. In a diploid organism, there are two copies of each gene, i.e., as a pair of alleles. Now, these two alleles need not always be identical, as in a heterozygote. One of them may be different due to some changes that it has undergone (about which you will read further on, and in the next chapter) which modifies the information that particular allele contains."
     },
     {
       "n": 5,
       "kind": "paragraph",
-      "text": "Mendel also worked with and crossed pea plants that differed in two characters, as is seen in the cross between a pea plant that has seeds with yellow colour and round shape and one that had seeds of green colour and wrinkled shape (Figure 4.7). Mendel found that the seeds resulting from the crossing of the parents, had yellow coloured and round shaped seeds. Here can you tell which of the characters in the pairs yellow/green colour and round/wrinkled shape was dominant?"
+      "text": "Let's take an example of a gene that contains the information for producing an enzyme. Now there are two copies of this gene, the two allelic forms. Let us assume (as is more common) that the normal allele produces the normal enzyme that is needed for the transformation of a substrate S. Theoretically, the modified allele could be responsible for production of –"
     },
     {
       "n": 6,
-      "kind": "paragraph",
-      "text": "Thus, yellow colour was dominant over green and round shape dominant over wrinkled. These results were identical to those that he got when he made separate monohybrid crosses between yellow and  green seeded plants and between round and wrinkled seeded plants."
-    },
-    {
-      "n": 7,
-      "kind": "paragraph",
-      "text": "Let us use the genotypic symbols Y for dominant yellow seed colour and y for recessive green seed colour, R for round shaped seeds and r  for wrinkled seed shape. The genotype of the parents can then be written as RRYY and  rryy. The cross between the two plants can be written down as in Figure 4.7 showing the genotypes of the parent plants. The gametes RY and ry unite on fertilisation to produce the F1 hybrid RrYy. When Mendel self hybridised  the F1 plants he found that 3/4th of F2 plants had yellow seeds and 1/4th had green. The yellow and green colour segregated in a 3:1 ratio. Round and wrinkled seed shape also segregated in a 3:1 ratio; just like in a monohybrid cross."
+      "kind": "list",
+      "text": "(i)  the normal/less efficient enzyme, or\n(ii)  a non-functional enzyme, or\n(iii)  no enzyme at all"
     }
   ],
   "first_block_continues_from_previous": false,
   "last_block_continues_on_next": false,
   "running_header_footer_removed": [
     "BIOLOGY",
-    "62",
+    "60",
     "Reprint 2026-27"
   ],
-  "note": "text_layer was empty (expected for this image-only chapter); all text transcribed from the page image. Bold and italic emphasis in the source is not representable in plain text and has been copied as plain characters (e.g. 'multiple alleles', allele symbols B/b/Y/y/R/r, and the italic question in block 5). Subscripts and superscripts flattened: 'F1'/'F2' are printed as F with subscript 1/2, and '3/4th'/'1/4th' have superscript 'th'. Figure 4.7 is referenced in the text but does not appear on this page; the lower third of the page is blank. The input's previous_page_last_block was null even though this is page 10, so continuation was judged from the page itself: the first block opens with an indented complete sentence and the last block ends with a full stop."
+  "note": "text_layer was empty (image-only chapter, as expected); all text read from the page image. previous_page_last_block was null even though this is page 8, so the continuation judgement for block 1 was made from the page image alone: the left column opens with Figure 4.6 and the right column opens with the heading 4.2.2.1, so nothing on this page starts mid-sentence. Subscripts in the original (F with subscript 1, F with subscript 2) are transcribed inline as F1 and F2. Bold emphasis on allele symbols (RR, Rr, rr, R, r) and on the run-in phrase 'Explanation of the concept of dominance' is not representable in plain text and has been dropped; wording and spacing are otherwise as printed. Figure 4.6 (cross diagram, snapdragon photograph and its caption) is a single figure block marked needs_special; its caption text was left for the special transcriber. A diagonal '(C) NCERT not to be republished' watermark overlies the page but is not page content."
 }

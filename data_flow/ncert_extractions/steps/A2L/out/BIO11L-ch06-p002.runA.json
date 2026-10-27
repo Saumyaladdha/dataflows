@@ -1,0 +1,45 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 19.0,
+    "text_block": [0.314, 0.132, 0.902, 0.890],
+    "fill": 0.95,
+    "columns": [
+      {"id": "full", "x0": 0.314, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.083],
+     "column": "full", "size_rel": 1.0, "fill": "#e2ebb8"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.083, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d3d4"},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.065, 0.185, 0.095],
+     "column": "full", "size_rel": 1.2, "align": "center", "font": "sans",
+     "fill": "#ffffff", "text_color": "#231f20"},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.084, 0.900, 0.096],
+     "column": "full", "size_rel": 1.0, "align": "right", "font": "serif",
+     "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.314, 0.132, 0.902, 0.416],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.036},
+    {"n": 2, "role": "figure", "bbox": [0.127, 0.434, 0.896, 0.566],
+     "column": "full", "size_rel": 1.0, "space_before": 0.018},
+    {"n": null, "role": "figure_caption", "bbox": [0.184, 0.580, 0.834, 0.608],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif",
+     "space_before": 0.014},
+    {"n": 3, "role": "paragraph", "bbox": [0.314, 0.620, 0.902, 0.745],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.012},
+    {"n": 4, "role": "section_heading", "bbox": [0.314, 0.762, 0.670, 0.779],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold",
+     "text_color": "#00a0e3", "space_before": 0.017},
+    {"n": 5, "role": "paragraph", "bbox": [0.314, 0.789, 0.902, 0.890],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.010},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.957, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cfe08a"}
+  ],
+  "note": "Ordinary body page (verso, folio 72 at left). Single text column inset at x 0.314-0.902 with an empty left margin; Figure 6.1 (two stomata diagrams with labels) extends left into that margin (0.127-0.896) and is marked full. The header is a light-green band over a thin grey strip, reported as two page_header_band elements; the folio sits in a white tab. Figure 6.1 caption has no A2 block so n is null. The footer is a solid green band carrying the '2024-25' imprint, reported as footer_rule. A diagonal 'NCERT not to be republished' watermark is ignored. size_pt omitted because page DPI is not given."
+}

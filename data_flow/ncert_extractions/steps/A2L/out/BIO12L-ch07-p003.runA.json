@@ -1,0 +1,207 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 18.5,
+  "page_kind": "chapter_opener",
+  "text_block": [
+   0.0684,
+   0.449,
+   0.9009,
+   0.894
+  ],
+  "fill": 0.95,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.0684,
+    "x1": 0.3541
+   },
+   {
+    "id": "right",
+    "x0": 0.4053,
+    "x1": 0.9009
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.7813,
+    0.036
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.7813,
+    0.0,
+    1.0,
+    0.036
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#735921",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "chapter_banner",
+   "bbox": [
+    0.0,
+    0.036,
+    1.0,
+    0.381
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d3ead3",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "qr_code",
+   "bbox": [
+    0.4327,
+    0.1315,
+    0.5824,
+    0.2415
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.6063,
+    0.0725,
+    0.9228,
+    0.274
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.0
+  },
+  {
+   "n": 1,
+   "role": "chapter_title",
+   "bbox": [
+    0.0684,
+    0.21,
+    0.3076,
+    0.239
+   ],
+   "column": "full",
+   "size_rel": 3.2,
+   "align": "left",
+   "font": "sans-light",
+   "text_color": "#262626",
+   "fill": "#d3ead3",
+   "space_before": 0.0
+  },
+  {
+   "n": 2,
+   "role": "chapter_title",
+   "bbox": [
+    0.0684,
+    0.2825,
+    0.81,
+    0.315
+   ],
+   "column": "full",
+   "size_rel": 3.6,
+   "align": "left",
+   "font": "sans-light",
+   "text_color": "#262626",
+   "fill": "#d3ead3",
+   "space_before": 0.0435
+  },
+  {
+   "n": null,
+   "role": "rule_bar",
+   "bbox": [
+    0.0,
+    0.391,
+    1.0,
+    0.4325
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d",
+   "space_before": 0.076
+  },
+  {
+   "n": null,
+   "role": "contents_panel",
+   "bbox": [
+    0.0684,
+    0.4325,
+    0.3541,
+    0.716
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif-italic",
+   "fill": "#fee5ca",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.1012,
+    0.7235,
+    0.3213,
+    0.731
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "fill": "#dbdcde",
+   "space_before": 0.0075
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.4053,
+    0.484,
+    0.9009,
+    0.769
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0
+  },
+  {
+   "n": 4,
+   "role": "list",
+   "bbox": [
+    0.4087,
+    0.773,
+    0.9009,
+    0.894
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.0137,
+   "space_before": 0.004
+  }
+ ],
+ "note": "Chapter opener. Banner (#d3ead3) under a top strip (dark green left, brown right), holding 'CHAPTER 7' (A2 block 1) and 'HUMAN HEALTH AND DISEASE' (A2 block 2), the QR code, and the tilted antibody-structure artwork on a dark-green square (decorative_image: chapter-cover art, no A2 block). Orange rule_bar full width below the banner. Two columns beneath: the left contents_panel (#fee5ca, serif italic, sections 7.1-7.5; n=null as A2 has no block for it) with a grey shadow bar below it; the right column holds the opening paragraph (block 3) and the (i)-(iii) list (block 4), whose markers are inset from the column. No printed folio or running header; the 'Reprint 2026-27' stamp is not reported. Both title lines use role chapter_title. size_pt omitted: page DPI not given."
+}

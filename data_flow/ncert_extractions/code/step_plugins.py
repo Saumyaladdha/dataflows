@@ -670,6 +670,8 @@ class A2Plugin:
             "image": _relpath(png_path),
             "text_layer": lib_pdf.extract_text_layer(abspath, page_num),
             "previous_page_last_block": prev_block,
+            # For the check, which measures what the PDF prints inside boxes deferred to A2S.
+            "pdf": _relpath(abspath),
         }
 
     def _post_assembly(self, item_id, run_label, data, status):

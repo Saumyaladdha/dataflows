@@ -1,0 +1,31 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 19.0,
+    "text_block": [0.320, 0.136, 0.902, 0.364],
+    "fill": 0.30,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.320, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0815],
+     "column": "full", "size_rel": 1.0, "fill": "#e1ebb4"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0815, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d3d4"},
+    {"n": null, "role": "page_number", "bbox": [0.142, 0.083, 0.166, 0.096],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans",
+     "text_color": "#231f20", "fill": "#ffffff"},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.083, 0.900, 0.096],
+     "column": "full", "size_rel": 0.9, "align": "right", "font": "serif",
+     "text_color": "#231f20", "fill": "#d1d3d4"},
+    {"n": 1, "role": "list", "bbox": [0.320, 0.136, 0.902, 0.364],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.041},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cddf85"}
+  ],
+  "note": "Ordinary verso body page, single full column at x 0.320-0.902 (wide left margin unused). Header is a pale green band (y 0-0.082) over a grey strip (y 0.082-0.095) with a white tab holding page number 54 on the left and small-caps running header 'Biology' on the right; both strips reported as page_header_band. Foot is a solid green band (y 0.956-1.0) with the '2024-25' imprint, reported as footer_rule. Block n=1 is the exercise list Q14-Q15: Q14 is a two-column match table, items (a)-(h) indented about 0.036 page width (x~0.356) with the roman-numeral column at x~0.52-0.55 and its entries from x~0.564. Page ends early: content stops at y 0.364, so fill 0.30 is judged against the book's usual body depth (to about y 0.89); text_block is the measured content extent. Watermark omitted. size_pt not given since DPI is not stated."
+}

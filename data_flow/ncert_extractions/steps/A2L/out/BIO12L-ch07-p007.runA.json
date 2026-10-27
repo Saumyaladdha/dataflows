@@ -1,0 +1,237 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 20.0,
+  "page_kind": "body",
+  "text_block": [
+   0.067,
+   0.109,
+   0.701,
+   0.913
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.067,
+    "x1": 0.545
+   },
+   {
+    "id": "right",
+    "x0": 0.569,
+    "x1": 0.902
+   },
+   {
+    "id": "full",
+    "x0": 0.067,
+    "x1": 0.701
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    0.791,
+    0.039
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.8,
+    0.0,
+    1.0,
+    0.099
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.066,
+    0.078,
+    0.271,
+    0.086
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "left",
+   "font": "sans",
+   "text_color": "#58595b"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.109,
+    0.545,
+    0.158
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.023
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.163,
+    0.545,
+    0.338
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.005
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.343,
+    0.545,
+    0.483
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.005
+  },
+  {
+   "n": 5,
+   "role": "figure",
+   "bbox": [
+    0.584,
+    0.112,
+    0.892,
+    0.445
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "space_before": 0.026
+  },
+  {
+   "n": 6,
+   "role": "figure_caption",
+   "bbox": [
+    0.569,
+    0.451,
+    0.901,
+    0.514
+   ],
+   "column": "right",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.006
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.487,
+    0.545,
+    0.732
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.004
+  },
+  {
+   "n": 7,
+   "role": "figure",
+   "bbox": [
+    0.477,
+    0.537,
+    0.887,
+    0.681
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "space_before": 0.023
+  },
+  {
+   "n": 8,
+   "role": "figure_caption",
+   "bbox": [
+    0.479,
+    0.688,
+    0.902,
+    0.718
+   ],
+   "column": "right",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.007
+  },
+  {
+   "n": 9,
+   "role": "paragraph",
+   "bbox": [
+    0.067,
+    0.738,
+    0.701,
+    0.913
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.006
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.839,
+    0.786,
+    1.0,
+    0.827
+   ],
+   "column": "full",
+   "size_rel": 1.5,
+   "align": "left",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.839,
+    0.83,
+    1.0,
+    0.836
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary recto body page (folio 133). Upper part is two-column: prose blocks 1-4 in a narrowed left column (x 0.067-0.545) with Figure 7.2 (elephantiasis drawing) and its caption box in a right column that overhangs the right margin to ~0.90. From y~0.54 the left text narrows further to ~0.453 to wrap around Figure 7.3 (ringworm photo), which starts at x 0.477; it and its caption are assigned to the right column though they extend left of its x0. Block 9 (hygiene paragraph) returns to the full 0.067-0.701 measure below the figures. Captions sit on pale-orange tint #fef1e2; in caption 7.2 the bold 'Figure 7.2' label sits in its own sub-column with the caption text beside it. space_before on right-column elements is measured from the previous right-column element. Header/footer furniture as on other recto pages. The 'Reprint 2026-27' stamp at the page foot (y~0.974-0.982) is not the folio and is deliberately left out. size_pt omitted because the page DPI is not given; size_rel is the measured value. Diagonal watermark ignored."
+}

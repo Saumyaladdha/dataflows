@@ -1,0 +1,184 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 20.0,
+  "page_kind": "chapter_opener",
+  "text_block": [
+   0.068,
+   0.435,
+   0.901,
+   0.868
+  ],
+  "fill": 0.86,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.068,
+    "x1": 0.355
+   },
+   {
+    "id": "right",
+    "x0": 0.405,
+    "x1": 0.901
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.039
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "chapter_banner",
+   "bbox": [
+    0.0,
+    0.039,
+    1.0,
+    0.384
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d3ead3",
+   "space_before": 0.0
+  },
+  {
+   "n": 1,
+   "role": "chapter_title",
+   "bbox": [
+    0.068,
+    0.21,
+    0.333,
+    0.24
+   ],
+   "column": "full",
+   "size_rel": 3.0,
+   "align": "left",
+   "font": "sans-light",
+   "text_color": "#231f20"
+  },
+  {
+   "n": 2,
+   "role": "chapter_title",
+   "bbox": [
+    0.068,
+    0.282,
+    0.366,
+    0.315
+   ],
+   "column": "full",
+   "size_rel": 3.6,
+   "align": "left",
+   "font": "sans-light",
+   "text_color": "#231f20",
+   "space_before": 0.042
+  },
+  {
+   "n": null,
+   "role": "qr_code",
+   "bbox": [
+    0.459,
+    0.135,
+    0.609,
+    0.245
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#ffffff"
+  },
+  {
+   "n": 3,
+   "role": "figure",
+   "bbox": [
+    0.64,
+    0.089,
+    0.908,
+    0.264
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "rule_bar",
+   "bbox": [
+    0.0,
+    0.394,
+    1.0,
+    0.435
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d",
+   "space_before": 0.13
+  },
+  {
+   "n": null,
+   "role": "contents_panel",
+   "bbox": [
+    0.068,
+    0.435,
+    0.355,
+    0.72
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif-italic",
+   "fill": "#fee5ca"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.103,
+    0.726,
+    0.321,
+    0.734
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "fill": "#dcdddf"
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.405,
+    0.479,
+    0.901,
+    0.735
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.405,
+    0.739,
+    0.901,
+    0.868
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.004
+  }
+ ],
+ "note": "Chapter-opening page, two columns below the orange rule bar: contents panel (5 section entries, one element) in the left column, opening prose in the right. Top strip is dark green #4c7436 with a brown #735921 tab at the right end (x>0.78); reported as page_header_band. Block 3 (figure) matched to the tilted decomposition-cycle thumbnail beside the QR code. The grey bar under the contents panel is decorative. The 'Reprint 2026-27' stamp at the foot is not a page number and is omitted; this page prints no folio. size_pt omitted (no DPI given)."
+}

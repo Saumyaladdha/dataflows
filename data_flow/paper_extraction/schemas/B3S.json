@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schemas/B3S.json",
+  "title": "B3S agent output (b3s-solution-reader)",
+  "description": "The publisher's printed worked solution, transcribed step by step from its IMAGE. The twin of B3/B3V for the solution block: the text layer (solution_lines_draft) is a cross-check, never the record. The agent COPIES the publisher's reasoning; it does not solve.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["solution_stepwise", "concludes", "has_figure", "figure_bbox", "complete", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "solution_stepwise": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "One entry per PRINTED step, in printed order, all maths in LaTeX. Never merged, never invented."
+        },
+        "concludes": {
+          "type": "string",
+          "enum": ["1", "2", "3", "4", "unclear"],
+          "description": "The option the WORKING arrives at -- which may differ from the printed Answer (N). 'unclear' when it does not clearly land on one."
+        },
+        "has_figure": { "type": "boolean" },
+        "figure_bbox": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "array", "items": { "type": "number" }, "minItems": 4, "maxItems": 4 }
+          ],
+          "description": "Box of a solution figure inside the solution image, in its pixels. Not transcribed here."
+        },
+        "figures": {
+          "type": "array",
+          "description": "EVERY drawing in the solution image, in printed order: its box in the solution image's pixels and the step it belongs after (0 = before the first step). One entry per drawing -- a solution with three free-body diagrams has three. `has_figure`/`figure_bbox` stay for outputs written before this field existed.",
+          "items": {
+            "type": "object",
+            "required": ["bbox", "after_step"],
+            "additionalProperties": false,
+            "properties": {
+              "bbox": { "type": "array", "items": { "type": "number" }, "minItems": 4, "maxItems": 4 },
+              "after_step": { "type": "integer", "minimum": 0 },
+              "kind": { "type": "string", "enum": ["structure", "reaction_scheme", "circuit", "diagram", "graph", "table", "other"] }
+            }
+          }
+        },
+        "complete": {
+          "type": "boolean",
+          "description": "false when the crop is cut off at an edge, so the solution visibly continues beyond it."
+        },
+        "note": { "type": "string" }
+      }
+    },
+    {
+      "type": "object",
+      "required": ["error"],
+      "additionalProperties": false,
+      "properties": { "error": { "type": "string" } },
+      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+    }
+  ]
+}

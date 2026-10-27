@@ -1,0 +1,30 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 21.0,
+    "text_block": [0.098, 0.132, 0.687, 0.903],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.687}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.081], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.137, 0.081, 0.394, 0.094], "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.064, 0.870, 0.094], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.132, 0.687, 0.199], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.038},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.202, 0.687, 0.250], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 3, "role": "section_heading", "bbox": [0.098, 0.274, 0.336, 0.289], "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.024},
+    {"n": 4, "role": "paragraph", "bbox": [0.098, 0.303, 0.687, 0.401], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.014},
+    {"n": 5, "role": "equation", "bbox": [0.098, 0.404, 0.687, 0.433], "column": "full", "size_rel": 1.0, "align": "center", "font": "serif", "fill": "#fffac1", "space_before": 0.003},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.439, 0.687, 0.556], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.006},
+    {"n": 7, "role": "paragraph", "bbox": [0.098, 0.560, 0.687, 0.694], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 8, "role": "paragraph", "bbox": [0.098, 0.698, 0.687, 0.798], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 9, "role": "paragraph", "bbox": [0.098, 0.801, 0.687, 0.849], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 10, "role": "paragraph", "bbox": [0.098, 0.853, 0.687, 0.903], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif-italic", "space_before": 0.004},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.957, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.054}
+  ],
+  "note": "Ordinary recto body page, single full column (text 0.098-0.687). Top: pale green header band (#e0ebb6) over a grey strip (#d1d2d4) carrying the small-caps running head on the left; page number sits in a white tab at right. Footer is a solid green band (#cadf7f) at y 0.957-1.0 carrying the '2024-25' print-year mark, not reported separately. Equation (block 5) is set on a pale yellow panel (#fffac1) spanning the column. Block 10 is entirely italic. Section heading 11.9 is cyan (#00adef) bold small caps. Diagonal 'NCERT not to be republished' watermark ignored. size_pt omitted: page DPI not given (image is ~200 DPI by inference only). Colours sampled from flat interiors with PIL."
+}

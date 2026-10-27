@@ -1,0 +1,192 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 20.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.1,
+   0.1065,
+   0.933,
+   0.914
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.299,
+    "x1": 0.933
+   },
+   {
+    "id": "left",
+    "x0": 0.1,
+    "x1": 0.636
+   },
+   {
+    "id": "right",
+    "x0": 0.657,
+    "x1": 0.933
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.21,
+    0.0,
+    1.0,
+    0.038
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.197,
+    0.0975
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.863,
+    0.0755,
+    0.933,
+    0.086
+   ],
+   "column": "full",
+   "size_rel": 0.85,
+   "align": "right",
+   "font": "sans",
+   "text_color": "#6d6e71"
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.1,
+    0.1065,
+    0.636,
+    0.4525
+   ],
+   "column": "left",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.206,
+    0.451,
+    0.52,
+    0.47
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "center",
+   "font": "serif",
+   "fill": "#fef1e2"
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.1102,
+    0.932,
+    0.5806
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.024
+  },
+  {
+   "n": 3,
+   "role": "major_heading",
+   "bbox": [
+    0.299,
+    0.599,
+    0.711,
+    0.6155
+   ],
+   "column": "full",
+   "size_rel": 1.3,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00a447",
+   "space_before": 0.0184
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.6306,
+    0.932,
+    0.7486
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.015
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.7565,
+    0.932,
+    0.9139
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0079
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0,
+    0.785,
+    0.163,
+    0.82
+   ],
+   "column": "full",
+   "size_rel": 1.3,
+   "align": "center",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.8275,
+    0.163,
+    0.834
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Verso body page. Figure 8.8 (labelled biogas-plant diagram, block 1) occupies the top-left, hanging into the outer margin (x from 0.100), with caption 'Figure 8.8 A typical biogas plant' on a pale tint at its foot (no A2 block, n null). Block 2 (continuation from previous page) runs in a narrow right column (x 0.657-0.932) beside the figure for 21 lines, then its last five lines ('due to the efforts of ...') widen to the full body measure 0.299-0.932 below the figure; its bbox therefore spans 0.299-0.932 though it is assigned column right. Block 5 runs on to the next page. The 'Reprint 2026-27' stamp at the page foot (y~0.974-0.982) is not the folio and is left out; the folio is the printed number in the orange tab at the outer margin. Colours sampled from flat interiors. size_pt omitted (page DPI not known)."
+}

@@ -1,0 +1,900 @@
+{
+ "source": "steps/QSTREAM/out/all.runA.json + added.runA.json",
+ "notes": [
+  {
+   "steps/QSTREAM/out/all.runA.json": "59 chapters classified: 27 chemistry (physical 9, inorganic 8, organic 10) and 32 biology (botany 13, zoology 11, both 8). TWO CHEMISTRY ROWS ARE NOT CHAPTERS and should be fixed upstream rather than trusted here: both have chapter_code null and sample_topics ['Unspecified Topic'] — 'SodiumSulphate' is a compound name, not a syllabus chapter (it has no NEET chapter to sit in; 'inorganic' is given only because the substance is inorganic, confidence low), and 'p block' is a lowercase free-text duplicate of the real chapter 'The p-Block Elements' (CHENEETENGPBB) and should almost certainly be merged into it. Any count built on these two rows will double-count p-block. Other things a reviewer should know: (1) 'Basic Concepts of Chemistry' is the real cross-stream chapter — its laws of chemical combination are general/inorganic in flavour but it is taught and examined as physical chemistry (mole concept, stoichiometry, concentration), so physical was chosen on the taught-under rule; (2) 'Redox Reactions' (physical, as the lead-in to Electrochemistry) and 'Principles Related to Practical Chemistry' (inorganic, since its topics are all salt/cation/anion analysis) are the two chemistry calls where a different coaching sequence could legitimately place the chapter in the other stream — both marked medium. (3) Eight biology chapters are 'both' and each names its usual printed section in 'why': Cell: The Unit of Life, Cell Cycle and Cell Division, Biomolecules, Molecular Basis of Inheritance, Biotechnology: Principles and Processes, Biotechnology and Its Applications (all usually printed under Botany) and Evolution and Principles of Inheritance and Variation (usually printed under Zoology). Biomolecules and Principles of Inheritance and Variation are the weakest of these (medium): Biomolecules is content-neutral chemistry of life that many splits file straight into Botany, and Principles of Inheritance runs Mendelian pea genetics alongside human pedigrees and chromosomal disorders. If the downstream consumer cannot accept 'both', the sensible single-branch fallback is the usual-printed-section named in each 'why'. (4) Ecology (Organisms and Populations, Ecosystem, Biodiversity and Conservation), Biological Classification, Microbes in Human Welfare and The Living World are assigned to botany per the stated rule and the NEET section print, even though their content is not strictly plant-only. (5) One sample_topics array for 'Microbes in Human Welfare' contains an empty-string topic — harmless here, but it indicates blank topic rows in the source."
+  },
+  {
+   "steps/QSTREAM/out/added.runA.json": "Counts: 16 chapters. Chemistry 9 — physical 3 (The Solid State, States of Matter, Surface Chemistry), inorganic 4 (The s-Block Elements, Hydrogen, General Principles and Processes of Isolation of Elements, Environmental Chemistry), organic 2 (Polymers, Chemistry in Everyday Life). Biology 5 — botany 3 (Transport in Plants, Mineral Nutrition, Environmental Issues), zoology 1 (Digestion and Absorption), both 1 (Strategies for Enhancement in Food Production). Physics 2 — no stream, no branch. Rows are in the input file's order, not alphabetical, so they diff line-for-line against added.runA.input.json. (1) PHYSICS: both physics rows carry subject, why and confidence but NEITHER 'stream' NOR 'branch', because the physical/inorganic/organic split is a chemistry teaching split and botany/zoology is a NEET biology section split; physics is taught and printed as one undivided paper, so any value would be invented. Consumers must read an absent stream/branch on a physics row as 'this subject has no such split', not as 'unclassified' — papers_v2/mappings/chapter_streams.json indexes by chapter_code with the stream/branch key inline, so after a rebuild these two codes will appear there with no such key. (2) THE BRIEF AND THE INPUT DISAGREE, TWICE, and the input won. The brief named 'Reproduction in Organisms' as a biology chapter needing a judgement, but it is NOT in added.runA.input.json, so no row exists for it; papers_v2/mappings/taxonomy_gaps.json shows it was asked for by 2015_A q134 and never minted (that question also carries a key-vs-solution contradiction), so it is still a gap. If it is minted later it needs a row of its own: the likely answer is botany, since NEET prints Reproduction in Organisms under Botany ahead of Sexual Reproduction in Flowering Plants, although its asexual-reproduction content spans plants, animals and protists — do not take that as a classified row. Conversely the brief treated 'Kinetic Theory of Gases' as the only physics chapter, but the input also contains 'Magnetism and Matter' (PHYNEETENGMAG, 2016_X q150); it is included and given the same no-stream-no-branch treatment, because leaving it out would be the blank-stream bug this step exists to prevent. The 16 input rows are an exact match for the 16 chapters in papers_v2/mappings/taxonomy_additions.json. (3) JUDGEMENT CALLS: Environmental Issues to botany on the Ecology-unit print rule (high); Strategies for Enhancement in Food Production to 'both' (medium) with Zoology named as the usual single-section print and the single-branch fallback; Environmental Chemistry to inorganic (medium) with organic as the defensible alternative; General Principles and Processes of Isolation of Elements to inorganic despite its Ellingham-diagram thermodynamics; Mineral Nutrition to botany despite nitrogen-fixing bacteria; The Solid State to physical despite its ionic-compound examples. One caution on 'both': config/allowed_values.yaml lists branch Biology as botany/zoology only (no 'both') and lists the chemistry streams under the key 'branch' rather than 'stream', so a strict validation against that file would reject this row and the 8 'both' rows already in all.runA.json; scripts/export_paper_v2.py, the actual consumer, deliberately preserves 'both' and reads 'stream' for chemistry, so the mismatch is in the vocabulary file, not in this output. (4) EMPTY TOPIC LISTS: six of the 16 chapters carried only 'Unspecified Topic' — Surface Chemistry, Chemistry in Everyday Life, Hydrogen, Environmental Chemistry, Magnetism and Matter, Kinetic Theory of Gases. For five of them the actual questions the chapter was minted for (via taxonomy_additions.json 'asked_for_by' into papers_v2/exports/questions_v2_all.csv) supplied real evidence, quoted in each 'why'. Environmental Chemistry is the exception: its one question did not extract a readable stem, so it is classified from the chapter name alone. (5) CODE HAZARD: CHENEETENGHYD2 = Hydrogen (inorganic here) versus CHENEETENGHYD = Hydrocarbons (organic in all.runA.json). Any join that truncates, fuzzy-matches or strips the trailing digit will stream Hydrogen as organic. (6) None of the 16 chapter_codes collides with the 59 rows in all.runA.json and no chapter name repeats one, so the two files can be concatenated. Unlike all.runA.json, every row here is a real syllabus chapter with a non-null code — none of the 'SodiumSulphate' / 'p block' free-text junk. (7) CONTEXT A REVIEWER WILL WANT: the 14 chemistry and biology chapters here are exactly the chapters dropped from the NCERT/NEET syllabus in the 2023 rationalisation (Class XI: Transport in Plants, Mineral Nutrition, Digestion and Absorption, States of Matter, Hydrogen, the s-Block, Environmental Chemistry; Class XII: Environmental Issues, Strategies for Enhancement in Food Production, The Solid State, Surface Chemistry, metallurgy, Polymers, Chemistry in Everyday Life), with the two physics chapters trimmed in the same round. That is why the current product taxonomy has no home for them, and it means these stream/branch values follow the PRE-2023 Botany/Zoology print and the pre-2023 coaching module order — correct for classifying old papers, which is what this bank holds."
+  }
+ ],
+ "by_chapter_code": {
+  "BIONEETENGAFP": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant internal anatomy — meristematic/permanent tissue, tissue systems, dicot vs monocot root/stem/leaf; printed in the Botany section.",
+   "confidence": "high"
+  },
+  "BIONEETENGAKK": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Animal phyla classification (Annelida, Arthropoda, Chordata, vertebrate classes) — core Zoology.",
+   "confidence": "high"
+  },
+  "BIONEETENGBCC": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Ecology unit; NEET prints the whole Ecology unit (Organisms & Populations, Ecosystem, Biodiversity) under Botany.",
+   "confidence": "high"
+  },
+  "BIONEETENGBCS": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Five-kingdom system with topics weighted to Monera, Protista and Fungi (Ascomycetes, Basidiomycetes, slime moulds); taught with Plant Diversity in the Botany section.",
+   "confidence": "high"
+  },
+  "BIONEETENGBML": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Chemistry of life — metabolites, proteins, nucleic acids, enzyme kinetics — is organism-independent and is revised by both sections; it is usually printed under Botany (it sits in the Cell Structure and Function unit).",
+   "confidence": "medium"
+  },
+  "BIONEETENGBAA": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Bt cotton, pest-resistant plants and RNAi are plant-side; insulin, gene therapy and molecular diagnosis are animal/human-side. Usually printed under Botany, but questions are set from both halves.",
+   "confidence": "high"
+  },
+  "BIONEETENGBPP": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "rDNA tools (vectors, PCR, restriction enzymes, bioreactors) are taught to both sections, with cloning vectors for plants and animals covered side by side; usually printed under Botany.",
+   "confidence": "high"
+  },
+  "BIONEETENGBFC": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human physiology — blood, blood groups, cardiac cycle, ECG, circulatory disorders.",
+   "confidence": "high"
+  },
+  "BIONEETENGBEG": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human respiratory physiology — respiratory system, breathing mechanism, gas transport, respiratory volumes.",
+   "confidence": "high"
+  },
+  "BIONEETENGCCD": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Mitosis and meiosis are common ground — plant cytokinesis (cell plate) and animal cell division are both examined, and it feeds plant reproduction and gametogenesis alike. Usually printed under Botany with the Cell unit.",
+   "confidence": "high"
+  },
+  "BIONEETENGCUL": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Cell biology proper — organelles, membranes, nucleus — covers plant and animal cells together (cell wall vs centrosome). Usually printed under Botany.",
+   "confidence": "high"
+  },
+  "BIONEETENGCCI": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human endocrine system — hypothalamus, pituitary, thyroid, adrenal, pancreas, gonads and hormone action.",
+   "confidence": "high"
+  },
+  "BIONEETENGECO": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Ecology unit — energy flow, food chains, decomposition, ecological pyramids; printed under Botany.",
+   "confidence": "high"
+  },
+  "BIONEETENGEVL": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Evidence, Hardy-Weinberg and adaptive radiation are taught to both sections; usually printed under Zoology (it sits with Origin of Life and human evolution), but population genetics is revised with Botany's genetics block too.",
+   "confidence": "high"
+  },
+  "BIONEETENGEPE": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human excretory physiology — nephron, urine formation, counter-current mechanism, kidney disorders.",
+   "confidence": "high"
+  },
+  "BIONEETENGHHD": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human pathogens, immunity, AIDS, cancer and drug abuse — explicitly a Zoology chapter.",
+   "confidence": "high"
+  },
+  "BIONEETENGHRR": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human reproductive anatomy, gametogenesis, menstrual cycle, fertilisation and embryonic development.",
+   "confidence": "high"
+  },
+  "BIONEETENGLMM": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human skeleton, joints, muscle contraction and contractile proteins.",
+   "confidence": "high"
+  },
+  "BIONEETENGMHW": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Microbiology — fermentation, antibiotics, biofertilisers, biocontrol, sewage treatment; printed under Botany with Biological Classification and the Biotechnology unit.",
+   "confidence": "high"
+  },
+  "BIONEETENGMBI": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "DNA structure, replication, transcription, translation and regulation are organism-independent and set for both sections (Human Genome Project and DNA fingerprinting on the animal side, lac operon and Griffith/Hershey-Chase on the other). Usually printed under Botany.",
+   "confidence": "high"
+  },
+  "BIONEETENGMFP": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "External plant morphology — flower parts, androecium, gynoecium, families (Solanaceae, Fabaceae, Liliaceae).",
+   "confidence": "high"
+  },
+  "BIONEETENGNCC": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human neural system — neuron, nerve impulse, synapse, brain regions, reflex arc.",
+   "confidence": "high"
+  },
+  "BIONEETENGOPP": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Ecology unit — abiotic factors, adaptations, population growth and interactions; printed under Botany.",
+   "confidence": "high"
+  },
+  "BIONEETENGPHP": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant physiology — pigments, light reaction, C3/C4 cycles, photorespiration.",
+   "confidence": "high"
+  },
+  "BIONEETENGPGD": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant physiology — growth phases, differentiation, plant growth regulators (auxin, gibberellin, ABA, ethylene).",
+   "confidence": "high"
+  },
+  "BIONEETENGPKK": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant diversity — algae, bryophytes, pteridophytes, gymnosperms, angiosperms.",
+   "confidence": "high"
+  },
+  "BIONEETENGPIV": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Mendelian genetics is worked on pea plants while linkage, sex determination, pedigrees and human genetic/chromosomal disorders are animal-side; both sections set questions on it. Usually printed under Zoology in the Botany/Zoology split, paired with Evolution.",
+   "confidence": "medium"
+  },
+  "BIONEETENGRHE": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human reproductive health — contraception, MTP, ART, STIs, population control.",
+   "confidence": "high"
+  },
+  "BIONEETENGRPP": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant physiology — glycolysis, TCA cycle, ETS, fermentation, respiratory quotient; printed under Botany even though the pathways are universal.",
+   "confidence": "high"
+  },
+  "BIONEETENGSRF": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant reproduction — microsporogenesis, megasporogenesis, pollination, double fertilisation, seed and fruit.",
+   "confidence": "high"
+  },
+  "BIONEETENGSOA": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Animal tissues (epithelial, connective, muscular, neural) plus frog and cockroach morphology/anatomy.",
+   "confidence": "high"
+  },
+  "BIONEETENGLWW": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Taxonomy, taxonomic categories, binomial nomenclature and taxonomic aids; printed as the opening Botany chapter alongside Biological Classification and Plant Kingdom.",
+   "confidence": "high"
+  },
+  "CHENEETENGAPE": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Functional-group chapter — preparation and reactions of alcohols, phenols and ethers (Williamson synthesis).",
+   "confidence": "high"
+  },
+  "CHENEETENGAKC": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Carbonyl functional-group chapter — nucleophilic addition, alpha-hydrogen reactions, named reactions, Tollens/Fehling.",
+   "confidence": "high"
+  },
+  "CHENEETENGAMN": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Nitrogen functional-group chapter — basicity, preparation, diazonium salts and coupling reactions.",
+   "confidence": "high"
+  },
+  "CHENEETENGBCC": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "The genuine straddler: laws of chemical combination read as inorganic/general chemistry, but the chapter is TAUGHT under physical chemistry because its examinable core is the mole concept, atomic/molar mass, stoichiometry and concentration — the quantitative toolkit every physical chapter reuses.",
+   "confidence": "medium"
+  },
+  "CHENEETENGPOC": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Purification (chromatography, differential extraction) and qualitative/quantitative analysis of organic compounds — the opening chapter of the organic course.",
+   "confidence": "high"
+  },
+  "CHENEETENGBML": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Carbohydrates, proteins, nucleic acids and enzymes as organic structures and reactions (glucose/fructose reactions, named tests); taught at the end of the organic course.",
+   "confidence": "high"
+  },
+  "CHENEETENGCBM": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Bonding theories — VSEPR, hybridisation, MOT, bond parameters — are taught in the inorganic course as the basis for the blocks and coordination compounds.",
+   "confidence": "high"
+  },
+  "CHENEETENGCQL": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Equilibrium constants, Le Chatelier, homogeneous/heterogeneous equilibria — physical chemistry.",
+   "confidence": "high"
+  },
+  "CHENEETENGCKT": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Rate laws, order, half-life, Arrhenius equation, collision theory — physical chemistry.",
+   "confidence": "high"
+  },
+  "CHENEETENGCEP": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Periodic classification and periodic trends, block characteristics — the entry chapter of inorganic chemistry.",
+   "confidence": "high"
+  },
+  "CHENEETENGCCP": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Werner's theory, nomenclature, VBT/CFT, isomerism and colour of complexes — inorganic chemistry.",
+   "confidence": "high"
+  },
+  "CHENEETENGELC": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Cell potential, Nernst, conductance, Kohlrausch law, electrolysis — physical chemistry.",
+   "confidence": "high"
+  },
+  "CHENEETENGGOC": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Electronic effects (inductive, resonance, hyperconjugation), aromaticity, electrophiles/nucleophiles, stereochemical nomenclature — the general organic toolkit.",
+   "confidence": "high"
+  },
+  "CHENEETENGHHH": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Functional-group chapter — SN1/SN2, elimination, haloarene reactivity, polyhalogen compounds.",
+   "confidence": "high"
+  },
+  "CHENEETENGHYD": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Alkanes, alkenes, alkynes and benzene — preparation, properties and isomerism.",
+   "confidence": "high"
+  },
+  "CHENEETENGNOM": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Naming and classification of organic compounds, functional groups, cyclic/bicyclo/spiro systems — general organic chemistry.",
+   "confidence": "high"
+  },
+  "CHENEETENGIQL": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Acid-base theories, pH, Ka/Kb, buffers, common ion effect, solubility product, salt hydrolysis — the ionic half of the physical Equilibrium chapter.",
+   "confidence": "high"
+  },
+  "CHENEETENGISO": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Structural and stereoisomerism (geometrical, optical, tautomerism, metamerism) — general organic chemistry.",
+   "confidence": "high"
+  },
+  "CHENEETENGPTC": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Sample topics are entirely inorganic qualitative analysis — salt analysis, group analysis, cation/anion tests, flame and borax-bead tests; taught with the inorganic course. The titration topic also touches physical/volumetric work, so the chapter is not purely one stream.",
+   "confidence": "medium"
+  },
+  "CHENEETENGRRR": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Taught in the physical course as the lead-in to Electrochemistry — oxidation numbers, balancing by ion-electron method, redox titrations with KMnO4/K2Cr2O7. Some coaching sequences place it with inorganic, hence medium confidence.",
+   "confidence": "medium"
+  },
+  "CHENEETENGSLT": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Concentration terms, Raoult's law, ideal/non-ideal solutions, colligative properties — physical chemistry.",
+   "confidence": "high"
+  },
+  "CHENEETENGSAA": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Atomic models, Bohr, dual nature, quantum numbers, orbital filling — physical chemistry.",
+   "confidence": "high"
+  },
+  "CHENEETENGDFB": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Transition and inner-transition elements — configurations, oxidation states, magnetic/colour properties, lanthanoids, KMnO4 and K2Cr2O7.",
+   "confidence": "high"
+  },
+  "CHENEETENGPBB": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Groups 13-18 — group trends, anomalous behaviour, hydrides, oxides, oxyacids and allotropes.",
+   "confidence": "high"
+  },
+  "CHENEETENGTHR": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Enthalpy, entropy, Gibbs energy, heat capacity, laws of thermodynamics — physical chemistry.",
+   "confidence": "high"
+  },
+  "CHENEETENGSBE": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Sample topic 'Carbonates and Bicarbonates of Alkali and Alkaline Earth Metals' is group 1 / group 2 descriptive chemistry — periodic trends, oxides, hydroxides, carbonates, the anomalous behaviour of Li and Be; taught in the inorganic block next to the p-Block (CHENEETENGPBB, already inorganic in all.runA.json).",
+   "confidence": "high"
+  },
+  "BIONEETENGTRA": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant Physiology unit; samples are water absorption by roots / root pressure and ascent of sap by transpiration pull and cohesion-tension. Plant-only mechanisms, printed in the Botany section with Respiration in Plants and Photosynthesis in Higher Plants.",
+   "confidence": "high"
+  },
+  "BIONEETENGENV": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Judgement call. The content (water pollution and eutrophication, air pollution and acid rain, biomagnification, global warming) is organism-neutral rather than plant-specific, but the chapter is the tail of the Ecology unit, and NEET prints the whole Ecology unit under Botany — the same rule already applied in all.runA.json to Organisms and Populations, Ecosystem and Biodiversity and Conservation. Usually printed under: Botany. Not 'both', because the Zoology section does not carry it.",
+   "confidence": "high"
+  },
+  "BIONEETENGDIG": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human physiology — samples are dentition and types of teeth, and digestive secretions and their enzymes; alimentary canal, gastric/pancreatic/bile secretion, absorption and digestive disorders. Printed in the Zoology section with Breathing and Exchange of Gases and Body Fluids and Circulation.",
+   "confidence": "high"
+  },
+  "BIONEETENGSEFP": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Judgement call, and genuinely two-sided. The animal half — the sample topic 'Animal Breeding: Inbreeding and Outbreeding', plus dairy and poultry management, fisheries, apiculture and MOET — is Zoology; the plant half — plant breeding for disease and pest resistance (Himgiri wheat, Pusa varieties), biofortification, tissue culture, micropropagation and single cell protein — is Botany, and NEET sets questions from both halves. Usually printed under: Zoology, because the animal-husbandry half carries the greater share of the questions; that is the single-branch fallback if the consumer cannot accept 'both'. 'both' is used here because the plant-breeding half is independently examined, not to avoid the call.",
+   "confidence": "medium"
+  },
+  "CHENEETENGSTA": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Sample topic 'Deviation of Real Gases from Ideal Behaviour' — gas laws, the ideal gas equation, compressibility factor, van der Waals constants, critical phenomena and liquefaction. A numerical/derivation chapter taught as physical chemistry; it mentions no element group.",
+   "confidence": "high"
+  },
+  "BIONEETENGMIN": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant Physiology unit — macro and micronutrients, hydroponics, deficiency symptoms, nutrient uptake. The sample topic 'Biological Nitrogen Fixation' involves bacteria (Rhizobium, nitrogenase, leg-haemoglobin), but it is examined as plant nutrition and printed under Botany; the bacterial detail does not move it to Zoology or make it 'both'.",
+   "confidence": "high"
+  },
+  "CHENEETENGGPPI": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Metallurgy. Sample topic 'Extraction of Copper' is a named-ore process; the chapter is concentration of ores, roasting and calcination, smelting, flux and slag, and refining. Its thermodynamic reasoning (Ellingham diagram, free-energy criterion) is borrowed from physical chemistry, but the chapter is taught and examined in the inorganic block with the s- and p-Block elements, so the taught-under rule puts it in inorganic.",
+   "confidence": "high"
+  },
+  "CHENEETENGSOL": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Samples 'Packing Efficiency in Cubic Unit Cells' and 'Imperfections in Solids: Point Defects' — crystal lattices, unit cells, coordination number, density calculations, Schottky and Frenkel defects, and magnetic/electrical properties. Taught as the opening physical chemistry chapter of Class XII; the ionic compounds it names are examples, not descriptive inorganic content.",
+   "confidence": "high"
+  },
+  "CHENEETENGSUR": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Topic list was empty (only 'Unspecified Topic'), so this is from the chapter name plus the two questions the chapter was minted for: zeta potential and the stability of colloidal particles (2020_F1 q137) and the Tyndall effect (2021_O1 q061). Both are colloid chemistry; with adsorption isotherms, physisorption vs chemisorption, catalysis and emulsions, that is physical chemistry.",
+   "confidence": "high"
+  },
+  "CHENEETENGCEL": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Topic list was empty (only 'Unspecified Topic'), so this is from the chapter name plus the two questions it was minted for: cationic detergents / cetyl trimethyl ammonium bromide (2020_F1 q146) and analgesics — aspirin, paracetamol, morphine (2021_O1 q074). Drugs, drug-target classes, soaps and detergents are all organic molecules and the chapter is taught at the end of the organic sequence.",
+   "confidence": "high"
+  },
+  "CHENEETENGHYD2": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Topic list was empty (only 'Unspecified Topic'), so this is from the chapter name: position of hydrogen in the periodic table, isotopes, preparation and properties of dihydrogen, ionic/covalent/interstitial hydrides, water, heavy water and hydrogen peroxide — taught in the inorganic block before the s-Block. One of its two questions (2021_O1 q072) asks which particle tritium emits, which reads as nuclear rather than inorganic, so the stream rests on the chapter's syllabus placement, not on that question. Note the code: CHENEETENGHYD2 is Hydrogen, while CHENEETENGHYD is Hydrocarbons (organic).",
+   "confidence": "high"
+  },
+  "CHENEETENGPOL": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Sample topic 'Condensation Polymerisation: Nylons and Polyesters' — addition vs condensation polymerisation, free-radical mechanism, monomer identification, copolymers and biodegradable polymers. All of it is organic reaction chemistry built on monomer functional groups.",
+   "confidence": "high"
+  },
+  "PHYNEETENGMAG": {
+   "subject": "physics",
+   "why": "Physics has no stream/branch split in this taxonomy, so neither field is set — see 'note'. Topic list was empty (only 'Unspecified Topic'); the one question it was minted for (2016_X q150) asks for what magnetic susceptibility is negative, i.e. diamagnetism, which is physics content and not a chemistry stream question.",
+   "confidence": "high"
+  },
+  "PHYNEETENGKTG": {
+   "subject": "physics",
+   "why": "Physics has no stream/branch split in this taxonomy, so neither field is set — see 'note'. Topic list was empty (only 'Unspecified Topic'); the one question it was minted for (2020_F1 q108) asks the average thermal energy of a monatomic gas (3/2 kT), which is physics kinetic theory. It is deliberately NOT given the chemistry stream 'physical' — that value belongs to chemistry chapters only, and setting it here would make a physics chapter look like a chemistry one.",
+   "confidence": "high"
+  },
+  "CHENEETENGENV": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Topic list was empty (only 'Unspecified Topic') and the single question it was minted for (2021_O1 q086) is a match-the-list whose stem did not extract, so this is from the chapter name alone and is the weakest chemistry call here. Atmospheric pollution, tropospheric and stratospheric chemistry, ozone depletion, acid rain, water pollution and green chemistry are descriptive and non-mechanistic, and the chapter is taught at the end of the Class XI inorganic sequence after Hydrogen, the s-Block and the p-Block — hence inorganic. The defensible alternative is organic (photochemical smog runs on hydrocarbons, PAN and aldehydes, and green chemistry on organic synthesis); marked medium for that reason.",
+   "confidence": "medium"
+  }
+ },
+ "by_chapter_name": {
+  "anatomy of flowering plants": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant internal anatomy — meristematic/permanent tissue, tissue systems, dicot vs monocot root/stem/leaf; printed in the Botany section.",
+   "confidence": "high"
+  },
+  "animal kingdom": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Animal phyla classification (Annelida, Arthropoda, Chordata, vertebrate classes) — core Zoology.",
+   "confidence": "high"
+  },
+  "biodiversity and conservation": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Ecology unit; NEET prints the whole Ecology unit (Organisms & Populations, Ecosystem, Biodiversity) under Botany.",
+   "confidence": "high"
+  },
+  "biological classification": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Five-kingdom system with topics weighted to Monera, Protista and Fungi (Ascomycetes, Basidiomycetes, slime moulds); taught with Plant Diversity in the Botany section.",
+   "confidence": "high"
+  },
+  "biomolecules": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Carbohydrates, proteins, nucleic acids and enzymes as organic structures and reactions (glucose/fructose reactions, named tests); taught at the end of the organic course.",
+   "confidence": "high"
+  },
+  "biotechnology and its applications": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Bt cotton, pest-resistant plants and RNAi are plant-side; insulin, gene therapy and molecular diagnosis are animal/human-side. Usually printed under Botany, but questions are set from both halves.",
+   "confidence": "high"
+  },
+  "biotechnology: principles and processes": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "rDNA tools (vectors, PCR, restriction enzymes, bioreactors) are taught to both sections, with cloning vectors for plants and animals covered side by side; usually printed under Botany.",
+   "confidence": "high"
+  },
+  "body fluids and circulation": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human physiology — blood, blood groups, cardiac cycle, ECG, circulatory disorders.",
+   "confidence": "high"
+  },
+  "breathing and exchange of gases": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human respiratory physiology — respiratory system, breathing mechanism, gas transport, respiratory volumes.",
+   "confidence": "high"
+  },
+  "cell cycle and cell division": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Mitosis and meiosis are common ground — plant cytokinesis (cell plate) and animal cell division are both examined, and it feeds plant reproduction and gametogenesis alike. Usually printed under Botany with the Cell unit.",
+   "confidence": "high"
+  },
+  "cell: the unit of life": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Cell biology proper — organelles, membranes, nucleus — covers plant and animal cells together (cell wall vs centrosome). Usually printed under Botany.",
+   "confidence": "high"
+  },
+  "chemical coordination and integration": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human endocrine system — hypothalamus, pituitary, thyroid, adrenal, pancreas, gonads and hormone action.",
+   "confidence": "high"
+  },
+  "ecosystem": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Ecology unit — energy flow, food chains, decomposition, ecological pyramids; printed under Botany.",
+   "confidence": "high"
+  },
+  "evolution": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Evidence, Hardy-Weinberg and adaptive radiation are taught to both sections; usually printed under Zoology (it sits with Origin of Life and human evolution), but population genetics is revised with Botany's genetics block too.",
+   "confidence": "high"
+  },
+  "excretory products and their elimination": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human excretory physiology — nephron, urine formation, counter-current mechanism, kidney disorders.",
+   "confidence": "high"
+  },
+  "human health and disease": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human pathogens, immunity, AIDS, cancer and drug abuse — explicitly a Zoology chapter.",
+   "confidence": "high"
+  },
+  "human reproduction": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human reproductive anatomy, gametogenesis, menstrual cycle, fertilisation and embryonic development.",
+   "confidence": "high"
+  },
+  "locomotion and movement": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human skeleton, joints, muscle contraction and contractile proteins.",
+   "confidence": "high"
+  },
+  "microbes in human welfare": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Microbiology — fermentation, antibiotics, biofertilisers, biocontrol, sewage treatment; printed under Botany with Biological Classification and the Biotechnology unit.",
+   "confidence": "high"
+  },
+  "molecular basis of inheritance": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "DNA structure, replication, transcription, translation and regulation are organism-independent and set for both sections (Human Genome Project and DNA fingerprinting on the animal side, lac operon and Griffith/Hershey-Chase on the other). Usually printed under Botany.",
+   "confidence": "high"
+  },
+  "morphology of flowering plants": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "External plant morphology — flower parts, androecium, gynoecium, families (Solanaceae, Fabaceae, Liliaceae).",
+   "confidence": "high"
+  },
+  "neural control and coordination": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human neural system — neuron, nerve impulse, synapse, brain regions, reflex arc.",
+   "confidence": "high"
+  },
+  "organisms and populations": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Ecology unit — abiotic factors, adaptations, population growth and interactions; printed under Botany.",
+   "confidence": "high"
+  },
+  "photosynthesis in higher plants": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant physiology — pigments, light reaction, C3/C4 cycles, photorespiration.",
+   "confidence": "high"
+  },
+  "plant growth and development": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant physiology — growth phases, differentiation, plant growth regulators (auxin, gibberellin, ABA, ethylene).",
+   "confidence": "high"
+  },
+  "plant kingdom": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant diversity — algae, bryophytes, pteridophytes, gymnosperms, angiosperms.",
+   "confidence": "high"
+  },
+  "principles of inheritance and variation": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Mendelian genetics is worked on pea plants while linkage, sex determination, pedigrees and human genetic/chromosomal disorders are animal-side; both sections set questions on it. Usually printed under Zoology in the Botany/Zoology split, paired with Evolution.",
+   "confidence": "medium"
+  },
+  "reproductive health": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human reproductive health — contraception, MTP, ART, STIs, population control.",
+   "confidence": "high"
+  },
+  "respiration in plants": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant physiology — glycolysis, TCA cycle, ETS, fermentation, respiratory quotient; printed under Botany even though the pathways are universal.",
+   "confidence": "high"
+  },
+  "sexual reproduction in flowering plants": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant reproduction — microsporogenesis, megasporogenesis, pollination, double fertilisation, seed and fruit.",
+   "confidence": "high"
+  },
+  "structural organisation in animals": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Animal tissues (epithelial, connective, muscular, neural) plus frog and cockroach morphology/anatomy.",
+   "confidence": "high"
+  },
+  "the living world": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Taxonomy, taxonomic categories, binomial nomenclature and taxonomic aids; printed as the opening Botany chapter alongside Biological Classification and Plant Kingdom.",
+   "confidence": "high"
+  },
+  "alcohols, phenols and ethers": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Functional-group chapter — preparation and reactions of alcohols, phenols and ethers (Williamson synthesis).",
+   "confidence": "high"
+  },
+  "aldehydes, ketones, and carboxylic acids": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Carbonyl functional-group chapter — nucleophilic addition, alpha-hydrogen reactions, named reactions, Tollens/Fehling.",
+   "confidence": "high"
+  },
+  "amines": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Nitrogen functional-group chapter — basicity, preparation, diazonium salts and coupling reactions.",
+   "confidence": "high"
+  },
+  "basic concepts of chemistry": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "The genuine straddler: laws of chemical combination read as inorganic/general chemistry, but the chapter is TAUGHT under physical chemistry because its examinable core is the mole concept, atomic/molar mass, stoichiometry and concentration — the quantitative toolkit every physical chapter reuses.",
+   "confidence": "medium"
+  },
+  "basic principles and techniques of organic compounds": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Purification (chromatography, differential extraction) and qualitative/quantitative analysis of organic compounds — the opening chapter of the organic course.",
+   "confidence": "high"
+  },
+  "chemical bonding and molecular structure": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Bonding theories — VSEPR, hybridisation, MOT, bond parameters — are taught in the inorganic course as the basis for the blocks and coordination compounds.",
+   "confidence": "high"
+  },
+  "chemical equilibrium": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Equilibrium constants, Le Chatelier, homogeneous/heterogeneous equilibria — physical chemistry.",
+   "confidence": "high"
+  },
+  "chemical kinetics": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Rate laws, order, half-life, Arrhenius equation, collision theory — physical chemistry.",
+   "confidence": "high"
+  },
+  "classification of elements and periodicity in properties": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Periodic classification and periodic trends, block characteristics — the entry chapter of inorganic chemistry.",
+   "confidence": "high"
+  },
+  "coordination compounds – practice": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Werner's theory, nomenclature, VBT/CFT, isomerism and colour of complexes — inorganic chemistry.",
+   "confidence": "high"
+  },
+  "electrochemistry": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Cell potential, Nernst, conductance, Kohlrausch law, electrolysis — physical chemistry.",
+   "confidence": "high"
+  },
+  "general organic chemistry": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Electronic effects (inductive, resonance, hyperconjugation), aromaticity, electrophiles/nucleophiles, stereochemical nomenclature — the general organic toolkit.",
+   "confidence": "high"
+  },
+  "haloalkanes and haloarenes": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Functional-group chapter — SN1/SN2, elimination, haloarene reactivity, polyhalogen compounds.",
+   "confidence": "high"
+  },
+  "hydrocarbons": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Alkanes, alkenes, alkynes and benzene — preparation, properties and isomerism.",
+   "confidence": "high"
+  },
+  "iupac nomenclature of organic chemistry": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Naming and classification of organic compounds, functional groups, cyclic/bicyclo/spiro systems — general organic chemistry.",
+   "confidence": "high"
+  },
+  "ionic equilibrium": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Acid-base theories, pH, Ka/Kb, buffers, common ion effect, solubility product, salt hydrolysis — the ionic half of the physical Equilibrium chapter.",
+   "confidence": "high"
+  },
+  "isomerism in organic compounds": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Structural and stereoisomerism (geometrical, optical, tautomerism, metamerism) — general organic chemistry.",
+   "confidence": "high"
+  },
+  "principles related to practical chemistry": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Sample topics are entirely inorganic qualitative analysis — salt analysis, group analysis, cation/anion tests, flame and borax-bead tests; taught with the inorganic course. The titration topic also touches physical/volumetric work, so the chapter is not purely one stream.",
+   "confidence": "medium"
+  },
+  "redox reactions": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Taught in the physical course as the lead-in to Electrochemistry — oxidation numbers, balancing by ion-electron method, redox titrations with KMnO4/K2Cr2O7. Some coaching sequences place it with inorganic, hence medium confidence.",
+   "confidence": "medium"
+  },
+  "sodiumsulphate": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Not a syllabus chapter — a single compound name with chapter_code null and only 'Unspecified Topic'. Sodium sulphate is an s-block salt, so inorganic is the only stream it could belong to, but there is no chapter here to classify; flagged in note.",
+   "confidence": "low"
+  },
+  "solutions": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Concentration terms, Raoult's law, ideal/non-ideal solutions, colligative properties — physical chemistry.",
+   "confidence": "high"
+  },
+  "structure of atom": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Atomic models, Bohr, dual nature, quantum numbers, orbital filling — physical chemistry.",
+   "confidence": "high"
+  },
+  "the d- and f-block elements – practice": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Transition and inner-transition elements — configurations, oxidation states, magnetic/colour properties, lanthanoids, KMnO4 and K2Cr2O7.",
+   "confidence": "high"
+  },
+  "the p–block elements": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Groups 13-18 — group trends, anomalous behaviour, hydrides, oxides, oxyacids and allotropes.",
+   "confidence": "high"
+  },
+  "thermodynamics": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Enthalpy, entropy, Gibbs energy, heat capacity, laws of thermodynamics — physical chemistry.",
+   "confidence": "high"
+  },
+  "p block": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Unusable row: chapter_code null, lowercase free-text name and only 'Unspecified Topic'. The name points at the existing p-Block chapter (CHENEETENGPBB), so inorganic is safe, but this looks like a duplicate/dirty row rather than a distinct chapter; flagged in note.",
+   "confidence": "low"
+  },
+  "the s-block elements": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Sample topic 'Carbonates and Bicarbonates of Alkali and Alkaline Earth Metals' is group 1 / group 2 descriptive chemistry — periodic trends, oxides, hydroxides, carbonates, the anomalous behaviour of Li and Be; taught in the inorganic block next to the p-Block (CHENEETENGPBB, already inorganic in all.runA.json).",
+   "confidence": "high"
+  },
+  "transport in plants": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant Physiology unit; samples are water absorption by roots / root pressure and ascent of sap by transpiration pull and cohesion-tension. Plant-only mechanisms, printed in the Botany section with Respiration in Plants and Photosynthesis in Higher Plants.",
+   "confidence": "high"
+  },
+  "environmental issues": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Judgement call. The content (water pollution and eutrophication, air pollution and acid rain, biomagnification, global warming) is organism-neutral rather than plant-specific, but the chapter is the tail of the Ecology unit, and NEET prints the whole Ecology unit under Botany — the same rule already applied in all.runA.json to Organisms and Populations, Ecosystem and Biodiversity and Conservation. Usually printed under: Botany. Not 'both', because the Zoology section does not carry it.",
+   "confidence": "high"
+  },
+  "digestion and absorption": {
+   "subject": "biology",
+   "branch": "zoology",
+   "why": "Human physiology — samples are dentition and types of teeth, and digestive secretions and their enzymes; alimentary canal, gastric/pancreatic/bile secretion, absorption and digestive disorders. Printed in the Zoology section with Breathing and Exchange of Gases and Body Fluids and Circulation.",
+   "confidence": "high"
+  },
+  "strategies for enhancement in food production": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Judgement call, and genuinely two-sided. The animal half — the sample topic 'Animal Breeding: Inbreeding and Outbreeding', plus dairy and poultry management, fisheries, apiculture and MOET — is Zoology; the plant half — plant breeding for disease and pest resistance (Himgiri wheat, Pusa varieties), biofortification, tissue culture, micropropagation and single cell protein — is Botany, and NEET sets questions from both halves. Usually printed under: Zoology, because the animal-husbandry half carries the greater share of the questions; that is the single-branch fallback if the consumer cannot accept 'both'. 'both' is used here because the plant-breeding half is independently examined, not to avoid the call.",
+   "confidence": "medium"
+  },
+  "states of matter": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Sample topic 'Deviation of Real Gases from Ideal Behaviour' — gas laws, the ideal gas equation, compressibility factor, van der Waals constants, critical phenomena and liquefaction. A numerical/derivation chapter taught as physical chemistry; it mentions no element group.",
+   "confidence": "high"
+  },
+  "mineral nutrition": {
+   "subject": "biology",
+   "branch": "botany",
+   "why": "Plant Physiology unit — macro and micronutrients, hydroponics, deficiency symptoms, nutrient uptake. The sample topic 'Biological Nitrogen Fixation' involves bacteria (Rhizobium, nitrogenase, leg-haemoglobin), but it is examined as plant nutrition and printed under Botany; the bacterial detail does not move it to Zoology or make it 'both'.",
+   "confidence": "high"
+  },
+  "general principles and processes of isolation of elements": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Metallurgy. Sample topic 'Extraction of Copper' is a named-ore process; the chapter is concentration of ores, roasting and calcination, smelting, flux and slag, and refining. Its thermodynamic reasoning (Ellingham diagram, free-energy criterion) is borrowed from physical chemistry, but the chapter is taught and examined in the inorganic block with the s- and p-Block elements, so the taught-under rule puts it in inorganic.",
+   "confidence": "high"
+  },
+  "the solid state": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Samples 'Packing Efficiency in Cubic Unit Cells' and 'Imperfections in Solids: Point Defects' — crystal lattices, unit cells, coordination number, density calculations, Schottky and Frenkel defects, and magnetic/electrical properties. Taught as the opening physical chemistry chapter of Class XII; the ionic compounds it names are examples, not descriptive inorganic content.",
+   "confidence": "high"
+  },
+  "surface chemistry": {
+   "subject": "chemistry",
+   "stream": "physical",
+   "why": "Topic list was empty (only 'Unspecified Topic'), so this is from the chapter name plus the two questions the chapter was minted for: zeta potential and the stability of colloidal particles (2020_F1 q137) and the Tyndall effect (2021_O1 q061). Both are colloid chemistry; with adsorption isotherms, physisorption vs chemisorption, catalysis and emulsions, that is physical chemistry.",
+   "confidence": "high"
+  },
+  "chemistry in everyday life": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Topic list was empty (only 'Unspecified Topic'), so this is from the chapter name plus the two questions it was minted for: cationic detergents / cetyl trimethyl ammonium bromide (2020_F1 q146) and analgesics — aspirin, paracetamol, morphine (2021_O1 q074). Drugs, drug-target classes, soaps and detergents are all organic molecules and the chapter is taught at the end of the organic sequence.",
+   "confidence": "high"
+  },
+  "hydrogen": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Topic list was empty (only 'Unspecified Topic'), so this is from the chapter name: position of hydrogen in the periodic table, isotopes, preparation and properties of dihydrogen, ionic/covalent/interstitial hydrides, water, heavy water and hydrogen peroxide — taught in the inorganic block before the s-Block. One of its two questions (2021_O1 q072) asks which particle tritium emits, which reads as nuclear rather than inorganic, so the stream rests on the chapter's syllabus placement, not on that question. Note the code: CHENEETENGHYD2 is Hydrogen, while CHENEETENGHYD is Hydrocarbons (organic).",
+   "confidence": "high"
+  },
+  "polymers": {
+   "subject": "chemistry",
+   "stream": "organic",
+   "why": "Sample topic 'Condensation Polymerisation: Nylons and Polyesters' — addition vs condensation polymerisation, free-radical mechanism, monomer identification, copolymers and biodegradable polymers. All of it is organic reaction chemistry built on monomer functional groups.",
+   "confidence": "high"
+  },
+  "magnetism and matter": {
+   "subject": "physics",
+   "why": "Physics has no stream/branch split in this taxonomy, so neither field is set — see 'note'. Topic list was empty (only 'Unspecified Topic'); the one question it was minted for (2016_X q150) asks for what magnetic susceptibility is negative, i.e. diamagnetism, which is physics content and not a chemistry stream question.",
+   "confidence": "high"
+  },
+  "kinetic theory of gases": {
+   "subject": "physics",
+   "why": "Physics has no stream/branch split in this taxonomy, so neither field is set — see 'note'. Topic list was empty (only 'Unspecified Topic'); the one question it was minted for (2020_F1 q108) asks the average thermal energy of a monatomic gas (3/2 kT), which is physics kinetic theory. It is deliberately NOT given the chemistry stream 'physical' — that value belongs to chemistry chapters only, and setting it here would make a physics chapter look like a chemistry one.",
+   "confidence": "high"
+  },
+  "environmental chemistry": {
+   "subject": "chemistry",
+   "stream": "inorganic",
+   "why": "Topic list was empty (only 'Unspecified Topic') and the single question it was minted for (2021_O1 q086) is a match-the-list whose stem did not extract, so this is from the chapter name alone and is the weakest chemistry call here. Atmospheric pollution, tropospheric and stratospheric chemistry, ozone depletion, acid rain, water pollution and green chemistry are descriptive and non-mechanistic, and the chapter is taught at the end of the Class XI inorganic sequence after Hydrogen, the s-Block and the p-Block — hence inorganic. The defensible alternative is organic (photochemical smog runs on hydrocarbons, PAN and aldehydes, and green chemistry on organic synthesis); marked medium for that reason.",
+   "confidence": "medium"
+  },
+  "reproduction in organisms": {
+   "subject": "biology",
+   "branch": "both",
+   "why": "Covers asexual and sexual reproduction in plants AND animals -- NCERT's Class 12 opening chapter, printed under Botany but examined from both sides. 2015_A q134 pairs an alga, a yeast and two angiosperms in one question, which is why `both` is the honest value rather than botany.",
+   "confidence": "medium",
+   "added_locally": true
+  }
+ }
+}

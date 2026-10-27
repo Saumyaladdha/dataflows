@@ -1,0 +1,28 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 21,
+    "page_kind": "ordinary",
+    "text_block": [0.316, 0.135, 0.904, 0.888],
+    "fill": 0.99,
+    "columns": [
+      {"id": "full", "x0": 0.316, "x1": 0.904}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.065, 0.185, 0.095], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": null, "role": "running_header", "bbox": [0.0, 0.082, 1.0, 0.095], "column": "full", "size_rel": 0.9, "align": "right", "font": "serif", "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": 1, "role": "paragraph", "bbox": [0.316, 0.135, 0.904, 0.204], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.040},
+    {"n": 2, "role": "paragraph", "bbox": [0.316, 0.2126, 0.904, 0.279], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.009, "indent": 0.029},
+    {"n": 3, "role": "paragraph", "bbox": [0.316, 0.2841, 0.904, 0.333], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.005, "indent": 0.029},
+    {"n": 4, "role": "paragraph", "bbox": [0.316, 0.3373, 0.904, 0.440], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004, "indent": 0.029},
+    {"n": 5, "role": "paragraph", "bbox": [0.316, 0.4445, 0.904, 0.476], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.005, "indent": 0.029},
+    {"n": 6, "role": "major_heading", "bbox": [0.565, 0.519, 0.656, 0.534], "column": "full", "size_rel": 1.2, "align": "center", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.043},
+    {"n": null, "role": "decorative_image", "bbox": [0.411, 0.581, 0.812, 0.877], "column": "full", "size_rel": 1.0, "fill": "#fffbd5"},
+    {"n": 7, "role": "paragraph", "bbox": [0.316, 0.572, 0.904, 0.888], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.038},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 0.8, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary verso body page (folio 178 tab at left, running head at right). Single text column 0.316-0.904; left margin 0.10-0.31 empty. Block 1 continues a paragraph from the previous page (no indent). Block 6 'SUMMARY' is a centred cyan (#00adef) small-caps bold heading with generous space above and below. Behind the summary paragraph (block 7) is a large pale yellow circular tint (#fffbd5, x 0.411-0.812, y 0.581-0.877) reported as decorative_image; the summary text runs over it on otherwise bare paper. Footer is a solid green band (#cadf7f) with the year imprint, reported as footer_rule. Watermark not reported. size_pt omitted because page DPI is not known."
+}

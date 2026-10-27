@@ -1,0 +1,36 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2171,
+    "page_kind": "ordinary",
+    "body_text_size_px": 20.0,
+    "text_block": [0.314, 0.131, 0.903, 0.906],
+    "fill": 0.97,
+    "columns": [
+      {"id": "full", "x0": 0.314, "x1": 0.903}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.078],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.142, 0.079, 0.179, 0.093],
+     "column": "full", "size_rel": 1.2, "align": "center", "font": "serif-bold", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.838, 0.079, 0.900, 0.092],
+     "column": "full", "size_rel": 1.0, "align": "right", "font": "serif", "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": 1, "role": "section_heading", "bbox": [0.315, 0.131, 0.484, 0.146],
+     "column": "full", "size_rel": 1.2, "align": "left", "font": "serif-bold", "text_color": "#00a0e0", "space_before": 0.038},
+    {"n": 2, "role": "paragraph", "bbox": [0.314, 0.158, 0.903, 0.226],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.012},
+    {"n": 3, "role": "paragraph", "bbox": [0.314, 0.229, 0.903, 0.638],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003, "indent": 0.03},
+    {"n": 4, "role": "paragraph", "bbox": [0.314, 0.641, 0.903, 0.745],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003, "indent": 0.03},
+    {"n": 5, "role": "paragraph", "bbox": [0.314, 0.749, 0.903, 0.853],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004, "indent": 0.03},
+    {"n": 6, "role": "paragraph", "bbox": [0.314, 0.856, 0.903, 0.906],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.052}
+  ],
+  "note": "Ordinary single-column verso body page; the text column sits right of centre (x 0.314-0.903) leaving a wide empty left margin. Pale green header band with a grey strip (#d1d2d4) carrying the folio 126 on a white tab at left and running header 'Biology' at right. body_text_size_px measured as cap height of body prose (approx.). Blocks 3, 4 and 5 are first-line-indented continuation paragraphs of Prophase I; blocks 2 and 6 start flush with a bold run-in label. The bottom element is a full-width green foot band (reported as footer_rule) carrying the '2024-25' imprint, not a content block. Diagonal watermark ignored. size_pt omitted because page DPI is not given."
+}

@@ -1,0 +1,159 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2178,
+  "body_text_size_px": 19.0,
+  "page_kind": "chapter_opener",
+  "text_block": [
+   0.099,
+   0.495,
+   0.872,
+   0.89
+  ],
+  "fill": 0.95,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.099,
+    "x1": 0.264
+   },
+   {
+    "id": "right",
+    "x0": 0.283,
+    "x1": 0.872
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "chapter_banner",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.42
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d0e289"
+  },
+  {
+   "n": null,
+   "role": "qr_code",
+   "bbox": [
+    0.097,
+    0.109,
+    0.237,
+    0.218
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": 1,
+   "role": "chapter_title",
+   "bbox": [
+    0.32,
+    0.32,
+    0.519,
+    0.352
+   ],
+   "column": "full",
+   "size_rel": 3.0,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#0073bd"
+  },
+  {
+   "n": 2,
+   "role": "chapter_title",
+   "bbox": [
+    0.319,
+    0.37,
+    0.715,
+    0.448
+   ],
+   "column": "full",
+   "size_rel": 2.8,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#0073bd",
+   "space_before": 0.018
+  },
+  {
+   "n": null,
+   "role": "contents_panel",
+   "bbox": [
+    0.099,
+    0.495,
+    0.264,
+    0.749
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif-italic",
+   "text_color": "#00adef"
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.283,
+    0.496,
+    0.872,
+    0.636
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": 4,
+   "role": "section_heading",
+   "bbox": [
+    0.285,
+    0.661,
+    0.68,
+    0.678
+   ],
+   "column": "right",
+   "size_rel": 1.2,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.025
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.283,
+    0.697,
+    0.872,
+    0.89
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.019
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Chapter-opening page (page_kind: chapter_opener), no printed folio. Two columns: narrow LEFT contents panel (four section entries 19.1-19.4, cyan italic, no tinted fill, one element) beside the opening prose in the RIGHT column. chapter_banner is a vertical gradient from yellow-green #d0e289 at the top fading to white by y~0.42; fill is sampled at the flat top interior. The 'CHAPTER 19' label (n=1) and the title (n=2) are set in blue small caps (serif-bold is the nearest allowed font). The bottom green strip (#cadf7f, y~0.956-1.0) carrying the '2024-25' reprint stamp is reported as footer_rule; the stamp is not a page number and is not reported. A diagonal 'not to be republished' watermark crosses the page and is ignored. body_text_size_px is the cap height of the opening prose in px of the 1700x2178 image; size_rel values are visual ratios. size_pt omitted: page DPI is not given. space_before is measured against the previous element in the same column."
+}

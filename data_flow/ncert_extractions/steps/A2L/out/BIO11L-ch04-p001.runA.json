@@ -1,0 +1,41 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 19.0,
+    "page_kind": "chapter_opener",
+    "text_block": [0.096, 0.450, 0.872, 0.900],
+    "fill": 1.0,
+    "columns": [
+      {"id": "left", "x0": 0.096, "x1": 0.260},
+      {"id": "right", "x0": 0.283, "x1": 0.872}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.0, 0.0, 1.0, 0.430],
+     "column": "full", "size_rel": 1.0, "fill": "#d2e38b", "space_before": 0.0},
+    {"n": null, "role": "qr_code", "bbox": [0.734, 0.111, 0.873, 0.219],
+     "column": "full", "size_rel": 1.0, "space_before": 0.111},
+    {"n": null, "role": "chapter_title", "bbox": [0.320, 0.320, 0.596, 0.403],
+     "column": "full", "size_rel": 2.6, "align": "left", "font": "serif-bold",
+     "text_color": "#0b6fb5", "space_before": 0.101},
+    {"n": null, "role": "contents_panel", "bbox": [0.096, 0.450, 0.258, 0.530],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "text_color": "#00a3e0", "space_before": 0.047},
+    {"n": 1, "role": "paragraph", "bbox": [0.283, 0.450, 0.872, 0.535],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.047},
+    {"n": 2, "role": "major_heading", "bbox": [0.283, 0.560, 0.567, 0.576],
+     "column": "right", "size_rel": 1.3, "align": "left", "font": "serif-bold",
+     "text_color": "#00a3e0", "space_before": 0.025},
+    {"n": 3, "role": "paragraph", "bbox": [0.283, 0.595, 0.872, 0.681],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.019},
+    {"n": 4, "role": "section_heading", "bbox": [0.283, 0.698, 0.580, 0.714],
+     "column": "right", "size_rel": 1.2, "align": "left", "font": "serif-bold",
+     "text_color": "#00a3e0", "space_before": 0.017},
+    {"n": 5, "role": "paragraph", "bbox": [0.283, 0.724, 0.872, 0.900],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.010},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cfe08a", "space_before": 0.056}
+  ],
+  "note": "Chapter-opening page (page_kind added as a page field since the schema shows none). Two columns: left contents panel (4.1, 4.2 in cyan italic, no tinted fill) beside right-column opening prose and sections 4.1 / 4.1.1. Banner is a light-green gradient fading to white by y~0.43; fill sampled near its top interior. Chapter title ('Chapter 4 / Animal Kingdom', blue small caps) has no A2 block, so n null. The footer is a full-width green band (not a thin rule) carrying the year stamp '2024-25'; reported as footer_rule. Diagonal '(c) NCERT not to be republished' watermark ignored. No page number printed. size_pt omitted: DPI not given."
+}

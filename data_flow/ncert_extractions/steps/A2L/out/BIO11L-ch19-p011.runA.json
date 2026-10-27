@@ -1,0 +1,156 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2178,
+  "body_text_size_px": 20,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.098,
+   0.112,
+   0.82,
+   0.897
+  ],
+  "fill": 0.98,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.098,
+    "x1": 0.82
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.08
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.08,
+    1.0,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.138,
+    0.081,
+    0.442,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "fill": "#d1d2d4",
+   "text_color": "#231f20"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.815,
+    0.064,
+    0.871,
+    0.094
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "center",
+   "font": "sans",
+   "fill": "#ffffff",
+   "text_color": "#231f20"
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.098,
+    0.112,
+    0.82,
+    0.557
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.019,
+   "fill": "#fffacb"
+  },
+  {
+   "n": 2,
+   "role": "figure_caption",
+   "bbox": [
+    0.108,
+    0.578,
+    0.737,
+    0.606
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "space_before": 0.021,
+   "align": "left",
+   "font": "serif"
+  },
+  {
+   "n": 3,
+   "role": "section_heading",
+   "bbox": [
+    0.442,
+    0.695,
+    0.529,
+    0.71
+   ],
+   "column": "full",
+   "size_rel": 1.3,
+   "space_before": 0.089,
+   "align": "center",
+   "font": "serif-bold",
+   "text_color": "#00adef"
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.157,
+    0.738,
+    0.814,
+    0.897
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.028,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Recto page. Figure 19.5 part (b): bordered pale-yellow panel x 0.098-0.820, y 0.112-0.535; bbox includes the '(b)' sub-label below it (to y 0.557). Caption 'Figure 19.5 ...' (bold label, hanging second line) below. 'SUMMARY' is a centred cyan small-caps heading; the summary prose is set on a narrower measure, x 0.157-0.814. Header: pale-green band, grey strip with running head, white folio tab '249'. All 4 blocks matched by position. size_pt omitted: the page DPI is not given in the input (1700px wide suggests ~200dpi but that is not confirmed), so only size_rel is reported. body_text_size_px is the cap height of body prose in the original 1700x2178 image. The '2024-25' reprint stamp in the foot band is not the folio and is not reported as page_number. The diagonal '(c) NCERT not to be republished' watermark is not reported as an element."
+}

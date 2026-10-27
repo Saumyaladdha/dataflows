@@ -1,0 +1,28 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 21.0,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.133, 0.872, 0.898],
+    "fill": 0.97,
+    "columns": [
+      {"id": "left", "x0": 0.098, "x1": 0.480},
+      {"id": "right", "x0": 0.497, "x1": 0.872}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.082, 1.0, 0.095], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.137, 0.083, 0.258, 0.095], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "text_color": "#231f20", "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.066, 0.871, 0.095], "column": "full", "size_rel": 1.2, "align": "center", "font": "serif-bold", "text_color": "#231f20", "fill": "#ffffff", "space_before": 0.0},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.133, 0.686, 0.775], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.038},
+    {"n": null, "role": "table_caption", "bbox": [0.500, 0.133, 0.868, 0.163], "column": "right", "size_rel": 1.0, "font": "serif-bold", "space_before": 0.038},
+    {"n": 2, "role": "table", "bbox": [0.498, 0.168, 0.872, 0.380], "column": "right", "size_rel": 0.95, "font": "serif", "fill": "#fedab4", "space_before": 0.005},
+    {"n": null, "role": "table_caption", "bbox": [0.503, 0.480, 0.866, 0.510], "column": "right", "size_rel": 1.0, "font": "serif-bold", "space_before": 0.100},
+    {"n": 3, "role": "table", "bbox": [0.498, 0.512, 0.872, 0.681], "column": "right", "size_rel": 0.95, "font": "serif", "fill": "#fedab4", "space_before": 0.002},
+    {"n": 4, "role": "paragraph", "bbox": [0.098, 0.783, 0.686, 0.898], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.008},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.058}
+  ],
+  "note": "Recto body page (folio 105). Body measure is 0.098-0.686; the two tables are set out into the right margin (0.497-0.872), and block 1's prose runs in a narrow left column (0.098-0.480) beside them down to y~0.69, then widens to the full 0.098-0.686 measure for its last five lines (its bbox covers both parts; column given as 'left' for the part beside the tables). Block 4 follows in the 0.098-0.686 measure. Table captions 'Table 9.1'/'Table 9.2' are reported as separate table_caption elements with n=null because A2's table blocks 2 and 3 have empty text_head and the caption may be contained in them; tables 2 and 3 matched by order (9.1 above 9.2). Header: light-green band #e0ebb6 over a grey strip #d1d2d4 carrying the running head 'BIOMOLECULES' (left) and the folio in a white tab (right). Foot: green band #cadf7f carrying the centred '2024-25' print year (not reported as an element; no role fits). Diagonal 'NCERT not to be republished' watermark ignored. body_text_size_px measured as ascender-to-baseline of one body line (~21px at line pitch ~39px). size_pt omitted because page DPI is not given."
+}

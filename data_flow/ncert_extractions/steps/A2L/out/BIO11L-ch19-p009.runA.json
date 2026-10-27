@@ -1,0 +1,221 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2178,
+  "body_text_size_px": 20,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.098,
+   0.129,
+   0.686,
+   0.903
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.098,
+    "x1": 0.686
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.08
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.08,
+    1.0,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.138,
+    0.081,
+    0.442,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "fill": "#d1d2d4",
+   "text_color": "#231f20"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.815,
+    0.064,
+    0.871,
+    0.094
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "center",
+   "font": "sans",
+   "fill": "#ffffff",
+   "text_color": "#231f20"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.129,
+    0.686,
+    0.179
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.035,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.185,
+    0.686,
+    0.235
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.006,
+   "indent": 0.029,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": 3,
+   "role": "section_heading",
+   "bbox": [
+    0.098,
+    0.263,
+    0.686,
+    0.279
+   ],
+   "column": "full",
+   "size_rel": 1.3,
+   "space_before": 0.028,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef"
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.298,
+    0.686,
+    0.422
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.019,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.428,
+    0.686,
+    0.46
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.006,
+   "indent": 0.029,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": 6,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.465,
+    0.686,
+    0.663
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.005,
+   "indent": 0.029,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": 7,
+   "role": "section_heading",
+   "bbox": [
+    0.098,
+    0.686,
+    0.473,
+    0.703
+   ],
+   "column": "full",
+   "size_rel": 1.3,
+   "space_before": 0.023,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef"
+  },
+  {
+   "n": 8,
+   "role": "paragraph",
+   "bbox": [
+    0.098,
+    0.717,
+    0.686,
+    0.903
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.014,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Recto body page, single full column (x 0.098-0.686) with a wide empty outer margin on the right. Header: pale-green band (page_header_band) over a grey strip (second page_header_band) carrying the running head 'CHEMICAL COORDINATION AND INTEGRATION', white folio tab '247' at top right. Section headings 19.3 and 19.4 set in cyan bold small caps. indent on paragraphs 2, 5, 6 is their first-line indent only. All 8 blocks matched by position. size_pt omitted: the page DPI is not given in the input (1700px wide suggests ~200dpi but that is not confirmed), so only size_rel is reported. body_text_size_px is the cap height of body prose in the original 1700x2178 image. The '2024-25' reprint stamp in the foot band is not the folio and is not reported as page_number. The diagonal '(c) NCERT not to be republished' watermark is not reported as an element."
+}

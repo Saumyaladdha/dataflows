@@ -1,0 +1,46 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 19.0,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.133, 0.686, 0.904],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0915],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0775, 1.0, 0.0915],
+     "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.080, 0.402, 0.092],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif"},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.062, 0.870, 0.0915],
+     "column": "full", "size_rel": 1.2, "align": "center", "font": "sans", "fill": "#ffffff",
+     "text_color": "#231f20"},
+    {"n": 1, "role": "section_heading", "bbox": [0.098, 0.133, 0.260, 0.146],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-bold", "space_before": 0.042},
+    {"n": 2, "role": "list", "bbox": [0.098, 0.156, 0.686, 0.325],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "space_before": 0.010},
+    {"n": 3, "role": "equation", "bbox": [0.098, 0.330, 0.398, 0.354],
+     "column": "full", "size_rel": 1.0, "align": "left", "space_before": 0.005},
+    {"n": 4, "role": "section_heading", "bbox": [0.098, 0.361, 0.295, 0.374],
+     "column": "full", "size_rel": 1.0, "align": "left", "font": "serif-bold", "space_before": 0.007},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.387, 0.686, 0.440],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.013},
+    {"n": 6, "role": "major_heading", "bbox": [0.363, 0.500, 0.451, 0.514],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "text_color": "#00adef",
+     "space_before": 0.060},
+    {"n": null, "role": "decorative_image", "bbox": [0.185, 0.560, 0.615, 0.870],
+     "column": "full", "size_rel": 1.0, "fill": "#fffbd5"},
+    {"n": 7, "role": "paragraph", "bbox": [0.098, 0.549, 0.686, 0.778],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.035},
+    {"n": 8, "role": "paragraph", "bbox": [0.098, 0.782, 0.686, 0.904],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary recto body page (folio 69), single full column at x 0.098-0.686 (text sits left; right margin empty). Header: pale green band #e0ebb6 above a grey strip #d1d2d4 (y 0.0775-0.0915) with running head 'Morphology of Flowering Plants' (small caps) at left and the folio in a white tab at right. Foot: full-width green band #cadf7f (y 0.956-1.0) with the '2024-25' imprint, reported as footer_rule since it is the page-foot band. 'SUMMARY' is a centred cyan small-caps heading. A large pale-yellow circular tint #fffbd5 sits behind the summary prose (approximate bbox, reported as decorative_image; edges are soft so the box is estimated). Block 8 is first-line indented. Diagonal NCERT watermark ignored. size_pt not given (DPI not stated)."
+}

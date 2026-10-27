@@ -1,0 +1,139 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 20.0,
+  "page_kind": "body",
+  "text_block": [
+   0.299,
+   0.107,
+   0.934,
+   0.913
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.299,
+    "x1": 0.934
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.21,
+    0.0,
+    1.0,
+    0.039
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.193,
+    0.099
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.869,
+    0.079,
+    0.93,
+    0.087
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "right",
+   "font": "sans",
+   "text_color": "#58595b"
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.096,
+    0.107,
+    0.935,
+    0.782
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#fde7e6",
+   "space_before": 0.02
+  },
+  {
+   "n": 2,
+   "role": "figure_caption",
+   "bbox": [
+    0.322,
+    0.794,
+    0.755,
+    0.8125
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "center",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.012
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.829,
+    0.934,
+    0.913
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0165
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0,
+    0.786,
+    0.162,
+    0.827
+   ],
+   "column": "full",
+   "size_rel": 1.5,
+   "align": "right",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.83,
+    0.162,
+    0.836
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary verso body page (folio 132). Figure 7.1 (Plasmodium life cycle) is a large diagram on a flat pale-pink panel (#fde7e6) spanning x 0.096-0.935, wider than the 0.299-0.934 text measure (it overhangs into the left margin); its many labels are part of the figure, not separate elements. Caption sits on a pale-orange tint (#fef1e2) under the figure, 'Figure 7.1' in bold. Paragraph block 3 (Entamoeba) runs to the foot. Top-left corner furniture reported as one decorative_image; green page_header_band on the right; running header 'BIOLOGY' at right. Orange folio box with white '132' at left is page_number; thin orange rule beneath is footer_rule. The 'Reprint 2026-27' stamp at the page foot (y~0.974-0.982) is not the folio and is deliberately left out. size_pt omitted because the page DPI is not given; size_rel is the measured value. Diagonal watermark ignored."
+}

@@ -1,0 +1,34 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.131, 0.873, 0.905],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.687}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.0815],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.097, 0.0815, 0.225, 0.095],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.826, 0.083, 0.854, 0.095],
+     "column": "full", "size_rel": 1.1, "align": "right", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.131, 0.687, 0.211],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.036},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.2185, 0.687, 0.2975],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0075},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.300, 0.687, 0.331],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.0025},
+    {"n": null, "role": "table_caption", "bbox": [0.190, 0.346, 0.775, 0.359],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif-bold", "space_before": 0.015},
+    {"n": 4, "role": "table", "bbox": [0.098, 0.3685, 0.873, 0.905],
+     "column": "full", "size_rel": 0.95, "align": "left", "font": "serif", "fill": "#fedab4", "space_before": 0.0095},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.955, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary recto body page, single column (prose measure 0.098-0.687). Paragraph n3 ('The salient distinguishing features...') has a first-line indent of about 0.03 of page width. Table 4.2 is wider than the prose measure (to x=0.873), so text_block x1 comes from the table; every cell is on a light-orange fill (#fedab4) with white cell rules and an orange outer border; the header row is bold. The caption 'Table 4.2 Salient Features of Different Phyla in the Animal Kingdom' has no A2 block, so n is null. Pale green header band (#e0ebb6) over grey running-head strip (#d1d2d4, 'Animal Kingdom'); folio '51' in a white tab at right. Foot is a thick light-green band (#cadf7f) with the '2024-25' mark, reported as footer_rule. Watermark ignored. size_pt omitted (DPI not given)."
+}

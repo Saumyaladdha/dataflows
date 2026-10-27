@@ -1,0 +1,24 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 18.0,
+    "page_kind": "ordinary",
+    "text_block": [0.314, 0.134, 0.901, 0.898],
+    "fill": 1.0,
+    "columns": [
+      {"id": "full", "x0": 0.314, "x1": 0.901}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.080], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.080, 1.0, 0.094], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.064, 0.184, 0.094], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff", "text_color": "#221f1f"},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.082, 0.900, 0.094], "column": "full", "size_rel": 0.9, "align": "right", "font": "serif", "text_color": "#221f1f"},
+    {"n": 1, "role": "paragraph", "bbox": [0.314, 0.134, 0.901, 0.406], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.040},
+    {"n": 2, "role": "figure", "bbox": [0.210, 0.426, 0.836, 0.860], "column": "full", "size_rel": 1.0, "space_before": 0.020},
+    {"n": null, "role": "figure_caption", "bbox": [0.194, 0.870, 0.854, 0.898], "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "space_before": 0.010},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary verso body page, single column set to the right (wide empty left margin). Header: pale green top band (#e0ebb6) over grey strip (#d1d2d4), both page_header_band; folio '220' in a white rounded tab at left, running head 'BIOLOGY' at right. Block 1 continues the paragraph from the previous page (no first-line indent). Figure 17.2 is two stacked panels, (a) a micrograph and (b) a labelled sarcomere diagram, reported as one figure box including the (a)/(b) labels; it extends left of the text column. The caption 'Figure 17.2 Diagrammatic representation...' has no A2 block, so n is null. Page foot is a solid green band (#cadf7f) reported as footer_rule; the '2024-25' reprint stamp is not a page number and is not reported. Watermark ignored. size_pt not given (DPI not stated). page_kind is an extra field."
+}

@@ -1,0 +1,127 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2178,
+  "body_text_size_px": 20,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.184,
+   0.135,
+   0.847,
+   0.903
+  ],
+  "fill": 0.88,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.184,
+    "x1": 0.847
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.08
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.08,
+    1.0,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.839,
+    0.081,
+    0.9,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "right",
+   "font": "serif",
+   "fill": "#d1d2d4",
+   "text_color": "#231f20"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.128,
+    0.064,
+    0.185,
+    0.094
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "center",
+   "font": "sans",
+   "fill": "#ffffff",
+   "text_color": "#231f20"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.184,
+    0.135,
+    0.847,
+    0.614
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.042,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.184,
+    0.618,
+    0.847,
+    0.811
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.004,
+   "indent": 0.029,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Verso page continuing the Summary from p011 on its narrower summary measure (x 0.184-0.847). Two paragraphs, matched by position. A large pale-yellow circular tint sits behind the middle of the text (roughly x 0.30-0.73, y 0.29-0.70); it appears to be a background decoration/print artefact, not a panel belonging to either block, so no fill is set on the paragraphs. Header: pale-green band, grey strip with running head 'BIOLOGY', white folio tab '250'. Text ends at y 0.811. size_pt omitted: the page DPI is not given in the input (1700px wide suggests ~200dpi but that is not confirmed), so only size_rel is reported. body_text_size_px is the cap height of body prose in the original 1700x2178 image. The '2024-25' reprint stamp in the foot band is not the folio and is not reported as page_number. The diagonal '(c) NCERT not to be republished' watermark is not reported as an element."
+}

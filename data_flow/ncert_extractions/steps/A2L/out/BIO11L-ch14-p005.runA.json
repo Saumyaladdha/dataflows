@@ -1,0 +1,194 @@
+{
+ "page": {
+  "width_px": 1682,
+  "height_px": 2190,
+  "page_kind": "ordinary",
+  "body_text_size_px": 20.5,
+  "text_block": [
+   0.099,
+   0.136,
+   0.694,
+   0.896
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.099,
+    "x1": 0.694
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.0836
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0836,
+    1.0,
+    0.0963
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.139,
+    0.0845,
+    0.414,
+    0.0958
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "left",
+   "font": "serif",
+   "text_color": "#231f20",
+   "fill": "#d1d2d4",
+   "space_before": 0.0
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.836,
+    0.083,
+    0.872,
+    0.0965
+   ],
+   "column": "full",
+   "size_rel": 1.1,
+   "align": "center",
+   "font": "sans",
+   "text_color": "#231f20",
+   "fill": "#ffffff",
+   "space_before": 0.0
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.099,
+    0.1361,
+    0.694,
+    0.2735
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0398
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.099,
+    0.2785,
+    0.694,
+    0.4155
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.005
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.139,
+    0.432,
+    0.466,
+    0.4447
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "space_before": 0.0165,
+   "indent": 0.04
+  },
+  {
+   "n": 4,
+   "role": "list",
+   "bbox": [
+    0.139,
+    0.4548,
+    0.694,
+    0.5995
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0101,
+   "indent": 0.04
+  },
+  {
+   "n": 5,
+   "role": "section_heading",
+   "bbox": [
+    0.102,
+    0.6342,
+    0.414,
+    0.6457
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "left",
+   "font": "sans",
+   "text_color": "#00adef",
+   "space_before": 0.0347
+  },
+  {
+   "n": 6,
+   "role": "paragraph",
+   "bbox": [
+    0.099,
+    0.6699,
+    0.694,
+    0.8959
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0242
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.9548,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f",
+   "space_before": 0.0
+  }
+ ],
+ "note": "Recto body page, single full column (measure x 0.099-0.694; wide blank outer margin on the right). Block 3 (lead-in sentence) and block 4 (list (i)-(v)) are inset ~0.04 of page width; list labels sit at x~0.139 with hanging turnover lines at ~0.175. Section heading 14.2 is bold small-caps in cyan #00adef. Page text runs to the bottom of the text block (continues on next page). The footer is a solid green band (#cadf7f, y 0.955-1.0) carrying the print-year mark 2024-25 centred; it is reported as footer_rule (no closer role exists) and the year mark itself is omitted as it has no allowed role. Header: pale-green band (#e0ebb6) over a grey strip (#d1d2d4) that carries the running header, with a white tab holding the folio. size_pt omitted: page DPI is not given in the input. body_text_size_px is the ascender-to-baseline height of a body line in the image's native pixels."
+}

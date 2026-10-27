@@ -152,7 +152,12 @@ def chapter_assets(chapter_dir, dry_run=False, dpi=300):
     folder = (f"ncert/{_slug(doc.get('reprint')) or 'unknown'}/{doc['book_id']}/"
               f"ch{doc['chapter']['number']:02d}")
     done = skipped = failed = 0
-    for node in _nodes(doc["tree"]):
+    # A figure's lettered panels are pictures of their own and are uploaded like the figure.
+    targets = []
+    for n in _nodes(doc["tree"]):
+        targets.append(n)
+        targets.extend(n.get("panels") or [])
+    for node in targets:
         local = node.get("image_local")
         if not local:
             continue

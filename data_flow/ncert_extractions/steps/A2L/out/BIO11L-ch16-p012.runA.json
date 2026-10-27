@@ -1,0 +1,161 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2182,
+  "body_text_size_px": 21.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.182,
+   0.134,
+   0.845,
+   0.9
+  ],
+  "fill": 0.41,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.182,
+    "x1": 0.845
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.082
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.128,
+    0.065,
+    0.185,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "center",
+   "font": "serif-bold",
+   "fill": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.838,
+    0.083,
+    0.9,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "right",
+   "font": "serif",
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": 1,
+   "role": "list",
+   "bbox": [
+    0.187,
+    0.135,
+    0.567,
+    0.149
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.012,
+   "space_before": 0.04
+  },
+  {
+   "n": 2,
+   "role": "list",
+   "bbox": [
+    0.187,
+    0.156,
+    0.845,
+    0.189
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.012,
+   "space_before": 0.007
+  },
+  {
+   "n": 3,
+   "role": "list",
+   "bbox": [
+    0.187,
+    0.196,
+    0.843,
+    0.21
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.005,
+   "space_before": 0.007
+  },
+  {
+   "n": 4,
+   "role": "list",
+   "bbox": [
+    0.187,
+    0.218,
+    0.843,
+    0.303
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.005,
+   "space_before": 0.008
+  },
+  {
+   "n": 5,
+   "role": "list",
+   "bbox": [
+    0.187,
+    0.312,
+    0.845,
+    0.445
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "left",
+   "font": "serif",
+   "indent": 0.005,
+   "space_before": 0.009
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Verso page 216, last page of the chapter: exercises 8-12 (blocks 1-5) on the exercise measure 0.182-0.845, ending at y~0.445, so the page is well under half full (fill 0.41 of the standard text block depth 0.134-0.900); the rest is blank. Questions are reported as role list (no 'question' role in the allowed values). Two-digit numbers 10-12 start slightly left of single-digit 8-9 (numbers right-aligned), hence the smaller indent on blocks 3-5; sub-parts (a)-(d) of Q11 and Q12 hang about 0.034 further in within their question's element. Ordinary body page (page_kind=ordinary): light-green header band (#e0ebb6) with a grey strip (#d1d2d4) carrying the running header, and the folio printed in a white tab breaking into the band. The '2024-25' reprint stamp in the green foot band (#cadf7f, reported as footer_rule) is not the page number and is not reported as an element. The diagonal 'NCERT not to be republished' watermark is not reported. size_pt omitted: page DPI is not given in the input, so only size_rel is reported. body_text_size_px is the cap-to-baseline height of body prose at the image's 1700x2182 size; space_before on the first content element is measured from the bottom of the header strip."
+}

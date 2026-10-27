@@ -1,0 +1,46 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "page_kind": "ordinary",
+    "body_text_size_px": 19.0,
+    "text_block": [0.098, 0.136, 0.854, 0.905],
+    "fill": 0.98,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.081],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.082, 0.389, 0.095],
+     "column": "full", "size_rel": 0.95, "align": "left", "font": "serif",
+     "fill": "#d1d2d4", "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.066, 0.870, 0.095],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans",
+     "fill": "#ffffff", "text_color": "#231f20"},
+    {"n": 1, "role": "figure", "bbox": [0.119, 0.136, 0.854, 0.480],
+     "column": "full", "size_rel": 1.0, "space_before": 0.041},
+    {"n": null, "role": "figure_caption", "bbox": [0.247, 0.481, 0.725, 0.494],
+     "column": "full", "size_rel": 0.95, "align": "center", "font": "serif",
+     "space_before": 0.001},
+    {"n": 2, "role": "section_heading", "bbox": [0.098, 0.520, 0.244, 0.535],
+     "column": "full", "size_rel": 1.25, "align": "left", "font": "sans",
+     "text_color": "#00adef", "space_before": 0.026},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.554, 0.686, 0.673],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.019},
+    {"n": 4, "role": "section_heading", "bbox": [0.098, 0.690, 0.602, 0.706],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold",
+     "text_color": "#00adef", "space_before": 0.017},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.716, 0.686, 0.870],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.010},
+    {"n": 6, "role": "paragraph", "bbox": [0.098, 0.871, 0.686, 0.905],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.001, "indent": 0.029},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary body page (recto, folio 167), single full column; body measure is 0.098-0.686 with a wide empty right margin, and Figure 13.1 overhangs into that margin to x=0.854. Pale green header band at top, grey #d1d2d4 strip carrying the small-caps running head, folio in a white tab at right. The footer is a broad green band (with the '2024-25' imprint) rather than a thin rule; reported as footer_rule. The Figure 13.1 caption has no A2 block of its own (presumably included in block 1), so it is listed with n=null. Diagonal 'not to be republished' watermark ignored. body_text_size_px measured on block 3 prose. No size_pt given: DPI not stated in input. Block 6 continues onto the next page."
+}

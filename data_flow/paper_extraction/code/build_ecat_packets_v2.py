@@ -38,7 +38,7 @@ import os
 
 import runner_core as rc
 
-CORPUS = ("papers_v2",)
+CORPUS = rc.corpus()
 B3V_OUT = ("steps", "B3V", "out")
 WORK = ("steps", "ECAT", "work")
 #: Rule 0.7's limit: more than six and the agent cannot hold the group in view while judging it.

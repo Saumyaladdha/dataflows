@@ -76,6 +76,8 @@ def crop_chapter(cdir, doc):
     a2l_boxes = a2l_figure_boxes(
         f"{doc['book_id']}-ch{doc['chapter']['number']:02d}")
     pdf = pymupdf.open(src)
+    import pdf_watermark
+    pdf_watermark.strip(pdf)                  # crops never carry `© NCERT not to be republished`
     figs_dir = os.path.join(cdir, "figures")
     os.makedirs(figs_dir, exist_ok=True)
     made = 0
@@ -123,6 +125,10 @@ def crop_chapter(cdir, doc):
                 # box meant the renderer placed the full taxonomic-hierarchy flowchart into
                 # a 1.2%-tall caption slot -- `object-fit:contain` then shrank it to a
                 # yellow sliver. The crop and the node must agree on where the figure is.
+                # The box being replaced is usually the CAPTION's, and a renderer that
+                # places the caption needs it -- keep it rather than lose it to the artwork.
+                if (n.get("caption") or "").strip() and n.get("boxes"):
+                    n.setdefault("caption_box", {**n["boxes"][0], "page_file": pf})
                 n["boxes"] = [{**box, "page_file": pf}] + [
                     b for b in (n.get("boxes") or [])[1:]]
                 n["figure_box_source"] = "a2l-agent"
@@ -152,15 +158,42 @@ def crop_chapter(cdir, doc):
     # A2L read the page image and measured the portrait at [0.127, 0.383, 0.394, 0.636] with
     # its caption as a separate box. That measurement is the only record that the photograph
     # exists, so a node is created from it rather than the artwork being lost.
-    existing = {(b.get("page_file"), round(b["bbox"][1], 2))
-                for n in walk(doc["tree"]) if n.get("kind") in ("figure", "table")
-                for b in (n.get("boxes") or []) if b.get("bbox")}
+    # "Already in the tree" is decided by OVERLAP on the same page, not by an exact
+    # (page_file, rounded top) key. A box usually names its page by printed folio only
+    # (`page: 8`, no `page_file`), so the exact key never matched and BIO11L ch01 grew a second
+    # Figure 1.1 and a picture of Table 1.1 beside the real ones -- unnumbered, uncaptioned,
+    # appended after the Exercises, and drawn on top of the originals.
+    folio_to_pf = {q.get("printed"): q.get("page_file") for q in (doc.get("pages") or [])
+                   if q.get("printed") is not None}
+    existing = []
+    for n in walk(doc["tree"]):
+        if n.get("kind") not in ("figure", "table"):
+            continue
+        for b in (n.get("boxes") or []) + ([n["caption_box"]] if n.get("caption_box") else []):
+            if not b.get("bbox"):
+                continue
+            bpf = b.get("page_file") or folio_to_pf.get(b.get("page")) or n.get("page_file")
+            existing.append((n["kind"], bpf, b["bbox"]))
+
+    def _covered(kind, pf, bb):
+        for k, epf, eb in existing:
+            if k != kind or epf != pf:
+                continue
+            ix = min(bb[2], eb[2]) - max(bb[0], eb[0])
+            iy = min(bb[3], eb[3]) - max(bb[1], eb[1])
+            if ix > 0 and iy > 0:
+                small = min((bb[2] - bb[0]) * (bb[3] - bb[1]), (eb[2] - eb[0]) * (eb[3] - eb[1]))
+                if small > 0 and ix * iy >= 0.5 * small:
+                    return True
+        return False
+
     pdf2 = pymupdf.open(src)
+    pdf_watermark.strip(pdf2)
     for pf, cands in a2l_boxes.items():
         if pf not in pages:
             continue
         for role, bb, fill in cands:
-            if (pf, round(bb[1], 2)) in existing:
+            if _covered(role, pf, bb):
                 continue
             page = pdf2[pages[pf]]
             w, h = page.rect.width, page.rect.height

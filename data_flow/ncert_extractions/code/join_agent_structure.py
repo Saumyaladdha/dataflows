@@ -102,12 +102,128 @@ def _walk(nodes):
             yield from _walk(n["children"])
 
 
+TREE_RUN = "tree"
+
+
+def _tree_inputs(chapter, steps_dir="steps"):
+    return sorted(glob.glob(os.path.join(steps_dir, "A3", "work",
+                                         f"{chapter}-s*.{TREE_RUN}.input.json")))
+
+
+def tree_passages(doc, chapter, steps_dir="steps"):
+    """Passages from A3 `tree` runs, whose inputs were built from the finished chapter.json
+    (`structure_inputs.py`). Each block is matched back to a node by its FINGERPRINT, so a
+    rebuild that renumbers ids cannot detach a passage."""
+    import structure_inputs as si
+    by_fp = {}
+    for n in _walk(doc["tree"]):
+        by_fp.setdefault(si.fingerprint(n), []).append(n)
+    out, k = [], 0
+    for ipath in _tree_inputs(chapter, steps_dir):
+        m = re.search(r"-s(\d+)\.", os.path.basename(ipath))
+        opath = os.path.join(steps_dir, "A3", "out",
+                             os.path.basename(ipath).replace(".input.json", ".json"))
+        if not (m and os.path.exists(opath)):
+            continue
+        with open(ipath, encoding="utf-8") as fh:
+            inp = json.load(fh)
+        with open(opath, encoding="utf-8") as fh:
+            res = json.load(fh)
+        fps = inp.get("_fingerprints") or {}
+        for grp in res.get("passages") or []:
+            members = []
+            for b in grp:
+                cand = by_fp.get(fps.get(str(b)), [])
+                hit = next((c for c in cand if c not in members), None)
+                if hit is not None:
+                    members.append(hit)
+            if not members:
+                continue
+            k += 1
+            files = []
+            for n in members:
+                for f in n.get("page_files") or [n.get("page_file")]:
+                    if f and f not in files:
+                        files.append(f)
+            out.append({
+                "passage_id": f"{doc['book_id']}-CH{doc['chapter']['number']:02d}-P{k:02d}",
+                "section": int(m.group(1)), "section_heading": inp.get("section_heading"),
+                "blocks": list(grp), "node_ids": [n["id"] for n in members],
+                "kinds": [n.get("kind") for n in members],
+                "page_files": files,
+                "pages": sorted({p for n in members for p in (n.get("pages") or [])}),
+                "text": " ".join(_passage_text(n) for n in members).strip(),
+                "note": res.get("note") or "", "source": "a3-agent",
+                "_members": members})
+    return out
+
+
+def _passage_text(n):
+    """A node's text as its passage carries it. A TABLE CARRIES ITS ROWS: its passage held only
+    the caption (`TABLE 2.1 Characteristics of the Five Kingdoms`, BIO11L ch02 P03), so a search
+    or a PYQ match over passages never saw a single cell. Rows follow the caption one per line,
+    cells joined ` | ` as in the node's `body`. (`node_text` stays caption-only: it is also the
+    fingerprint that matches agent passages back to nodes.)"""
+    import structure_inputs as si
+    t = si.node_text(n)
+    if n.get("kind") == "table" and (n.get("body") or "").strip():
+        t = f"{t}\n{n['body'].strip()}".strip()
+    return t
+
+
+def apply_tree_structure(doc, chapter, steps_dir="steps"):
+    """Passages and subtopics for a chapter whose A3/A4 ran on the finished tree. Returns
+    None when there are no such runs (the chapter keeps whatever it had)."""
+    if not _tree_inputs(chapter, steps_dir):
+        return None
+    for n in _walk(doc["tree"]):
+        for k in ("passage_id", "agent_subtopic_n", "agent_subtopic_name"):
+            n.pop(k, None)
+    passages = tree_passages(doc, chapter, steps_dir)
+    for p in passages:
+        for n in p.pop("_members"):
+            n["passage_id"] = p["passage_id"]
+    doc["passages"] = passages
+    stats = {"passages": len(passages), "passage_nodes": sum(len(p["node_ids"]) for p in passages),
+             "subtopics": 0, "subtopic_links": 0, "source": "tree"}
+    key = f"{doc['book']}-CH{doc['chapter']['number']:02d}"
+    sub_path = os.path.join(steps_dir, "A4", "out", f"{key}.{TREE_RUN}.json")
+    by_pid = {p["passage_id"]: p for p in passages}
+    by_id = {n["id"]: n for n in _walk(doc["tree"])}
+    subs = []
+    if os.path.exists(sub_path):
+        with open(sub_path, encoding="utf-8") as fh:
+            for st in (json.load(fh) or {}).get("subtopics") or []:
+                pids = [p for p in st.get("passages") or [] if p in by_pid]
+                node_ids = [i for p in pids for i in by_pid[p]["node_ids"]]
+                subs.append({"n": st.get("n"), "name": st.get("name") or "", "passages": pids,
+                             "node_ids": node_ids, "from_heading": st.get("from_heading"),
+                             "source": "a4-agent"})
+                for nid in node_ids:
+                    if nid in by_id:
+                        by_id[nid]["agent_subtopic_n"] = st.get("n")
+                        by_id[nid]["agent_subtopic_name"] = st.get("name")
+    doc["subtopics"] = subs
+    stats["subtopics"] = len(subs)
+    stats["subtopic_links"] = sum(len(s["node_ids"]) for s in subs)
+    doc["structure_join"] = stats
+    return stats
+
+
 def apply_agent_structure(doc, layout, chapter, steps_dir="steps"):
     """Attach passages and subtopics to `doc` (the chapter tree), in place."""
     book_base = doc["book"]
     chn = doc["chapter"]["number"]
     stats = {"passages": 0, "passage_nodes": 0, "subtopics": 0, "subtopic_links": 0,
              "a3_found": False, "a4_found": False}
+    # A chapter with A3 runs on the FINISHED tree is joined at the very end of the build
+    # (`apply_tree_structure`), after ids are final. The block-number join below reads A3's
+    # per-section numbers as per-page `a2_block_n`, which is what scrambled BIO11L ch01's
+    # passages; it must not also run.
+    if _tree_inputs(chapter, steps_dir):
+        doc["passages"], doc["subtopics"] = [], []
+        doc["structure_join"] = {**stats, "deferred_to": "tree"}
+        return doc["structure_join"]
 
     # --- A3: group the tree's nodes into passages --------------------------------------
     groups = a3_passages(chapter, steps_dir)

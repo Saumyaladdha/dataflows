@@ -1,0 +1,47 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20.0,
+    "page_kind": "chapter_opener",
+    "text_block": [0.099, 0.424, 0.872, 0.908],
+    "fill": 0.98,
+    "columns": [
+      {"id": "left", "x0": 0.099, "x1": 0.278},
+      {"id": "right", "x0": 0.285, "x1": 0.872}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.0, 0.0, 1.0, 0.42],
+     "column": "full", "size_rel": 1.0, "fill": "#d1e28c"},
+    {"n": null, "role": "qr_code", "bbox": [0.734, 0.109, 0.873, 0.219],
+     "column": "full", "size_rel": 1.0, "fill": "#ffffff", "space_before": 0.109},
+    {"n": 1, "role": "chapter_title", "bbox": [0.320, 0.310, 0.515, 0.337],
+     "column": "right", "size_rel": 2.95, "align": "left", "font": "serif-bold",
+     "text_color": "#0070b8", "space_before": 0.091},
+    {"n": 2, "role": "chapter_title", "bbox": [0.320, 0.361, 0.872, 0.387],
+     "column": "right", "size_rel": 2.85, "align": "left", "font": "serif-bold",
+     "text_color": "#0070b8", "space_before": 0.024},
+    {"n": null, "role": "contents_panel", "bbox": [0.099, 0.424, 0.275, 0.873],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif-italic",
+     "text_color": "#00a8e8", "space_before": 0.037},
+    {"n": 3, "role": "paragraph", "bbox": [0.285, 0.424, 0.872, 0.710],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.037},
+    {"n": 4, "role": "section_heading", "bbox": [0.285, 0.726, 0.548, 0.738],
+     "column": "right", "size_rel": 1.25, "align": "left", "font": "serif-bold",
+     "text_color": "#00a8e8", "space_before": 0.016},
+    {"n": 5, "role": "paragraph", "bbox": [0.285, 0.756, 0.872, 0.806],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.018},
+    {"n": 6, "role": "paragraph", "bbox": [0.285, 0.826, 0.872, 0.908],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.004},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.957, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.049},
+    {"n": null, "role": "page_number", "bbox": [0.476, 0.955, 0.525, 0.965],
+     "column": "full", "size_rel": 0.85, "align": "center", "font": "sans",
+     "fill": "#cadf7f"}
+  ],
+  "note": "Chapter 11 opening page. Banner is a vertical gradient from light green at the top (#d1e28c sampled at y~0.05) fading to white by y~0.42, with no rule_bar printed. QR code (code 11080CH13) on a white tile at top right. Both title lines (n=1 'CHAPTER 11', n=2 the chapter name) are blue #0070b8 bold serif set in caps+small caps; size_rel is from the large initial capitals (59px and 57px vs body cap 20px). Two-column body: a left rail listing sections 11.1-11.10 in cyan (#00a8e8) italic on bare paper (one contents_panel element), and the opening prose, the 11.1 heading and two paragraphs in the right column; n=6 opens with a first-line indent of ~0.029 page width. The page foot is a solid light-green band (#cadf7f), reported as footer_rule though it is a thick band rather than a thin rule; the '2024-25' edition stamp sits on it and is labelled page_number for lack of a closer role (no folio printed). Watermark ignored. size_pt omitted because the render DPI is not given."
+}

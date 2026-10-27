@@ -1,0 +1,27 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 19.6,
+    "text_block": [0.185, 0.134, 0.902, 0.910],
+    "fill": 0.98,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.314, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.082], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.065, 0.185, 0.095], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.082, 0.900, 0.095], "column": "full", "size_rel": 0.85, "align": "right", "font": "serif", "fill": "#d1d2d4"},
+    {"n": 1, "role": "paragraph", "bbox": [0.314, 0.134, 0.902, 0.186], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.039},
+    {"n": 2, "role": "paragraph", "bbox": [0.314, 0.190, 0.902, 0.279], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 3, "role": "paragraph", "bbox": [0.314, 0.283, 0.902, 0.390], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 4, "role": "paragraph", "bbox": [0.314, 0.394, 0.902, 0.464], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 5, "role": "paragraph", "bbox": [0.314, 0.467, 0.902, 0.519], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 6, "role": "major_heading", "bbox": [0.485, 0.557, 0.573, 0.571], "column": "full", "size_rel": 1.2, "align": "center", "font": "serif-bold", "space_before": 0.038},
+    {"n": null, "role": "decorative_image", "bbox": [0.33, 0.60, 0.67, 0.86], "column": "full", "size_rel": 1.0, "fill": "#fffbd5", "space_before": 0.029},
+    {"n": 7, "role": "box", "bbox": [0.185, 0.605, 0.843, 0.910], "column": "full", "size_rel": 0.95, "align": "justify", "font": "serif", "space_before": 0.034}
+  ],
+  "note": "Ordinary single-column verso body page (folio 118). Body prose (n 1-5) is set in the column 0.314-0.902 with an empty left margin; the Summary box text (n 7) is set on a different, wider-left measure 0.185-0.843 with no box border, so text_block spans 0.185-0.902. 'SUMMARY' (n 6) is a centred cyan small-caps heading. A large pale-yellow disc (#fffbd5) sits behind the summary text as decoration (reported as decorative_image, bbox approximate). Header: light-green band (#e0ebb6) over grey strip (#d1d2d4) with running header 'BIOLOGY' at right; folio in a white tab at left. Footer green band (#cadf7f) with '2024-25' stamp not reported separately. Watermark ignored. size_pt omitted because page DPI is not given."
+}

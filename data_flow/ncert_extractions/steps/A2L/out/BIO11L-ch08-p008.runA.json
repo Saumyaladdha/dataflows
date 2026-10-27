@@ -1,0 +1,23 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 23,
+    "text_block": [0.204, 0.131, 0.819, 0.903],
+    "fill": 0.97,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.204, "x1": 0.819}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.08], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.08, 1.0, 0.093], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.142, 0.081, 0.165, 0.094], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "text_color": "#231f20"},
+    {"n": null, "role": "running_header", "bbox": [0.839, 0.082, 0.9, 0.093], "column": "full", "size_rel": 0.95, "align": "right", "font": "serif", "text_color": "#231f20"},
+    {"n": 1, "role": "figure", "bbox": [0.204, 0.131, 0.819, 0.881], "column": "full", "size_rel": 1.0, "space_before": 0.038},
+    {"n": 2, "role": "figure_caption", "bbox": [0.281, 0.889, 0.745, 0.903], "column": "full", "size_rel": 0.9, "align": "center", "font": "serif", "text_color": "#6d6e71", "space_before": 0.008},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.053}
+  ],
+  "note": "Ordinary body page (verso), entirely Figure 8.3 (plant cell (a) above, animal cell (b) below, with labels) plus its centred caption; no body prose, so body_text_size_px is taken from the same-style body text on the neighbouring pages and the label text inside the figure is part of the figure. Folio 92 in a white tab at left of the grey strip #d1d2d4, running header 'Biology' at right; light green top band #e0ebb6. Footer green band #cadf7f with '2024-25' stamp. Diagonal NCERT watermark ignored. size_pt not given (DPI not stated)."
+}

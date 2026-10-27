@@ -1,0 +1,28 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.313, 0.132, 0.902, 0.901],
+    "fill": 1.0,
+    "columns": [
+      {"id": "full", "x0": 0.313, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.081], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.081, 1.0, 0.094], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.128, 0.064, 0.186, 0.094], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.838, 0.082, 0.9, 0.094], "column": "full", "size_rel": 0.9, "align": "right", "font": "serif", "space_before": 0.0},
+    {"n": 1, "role": "paragraph", "bbox": [0.313, 0.132, 0.902, 0.255], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.038},
+    {"n": 2, "role": "section_heading", "bbox": [0.315, 0.272, 0.575, 0.289], "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold", "text_color": "#00adef", "space_before": 0.017},
+    {"n": 3, "role": "paragraph", "bbox": [0.313, 0.3, 0.902, 0.333], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.011},
+    {"n": 4, "role": "paragraph", "bbox": [0.313, 0.335, 0.902, 0.51], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.002},
+    {"n": 5, "role": "paragraph", "bbox": [0.313, 0.514, 0.902, 0.725], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.004},
+    {"n": 6, "role": "figure", "bbox": [0.141, 0.75, 0.891, 0.871], "column": "full", "size_rel": 1.0, "fill": "#fffbd5", "space_before": 0.025},
+    {"n": null, "role": "figure_caption", "bbox": [0.235, 0.886, 0.792, 0.901], "column": "full", "size_rel": 0.95, "align": "center", "font": "serif", "space_before": 0.015},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.057}
+  ],
+  "note": "Single-column verso body page; text column 0.313-0.902. Header furniture: pale green band (#e0ebb6) over a grey strip (#d1d2d4), white page-number tab '194' at the left, running head 'Biology' (small caps) at the right. Paragraphs n4 and n5 have a first-line indent only (no left inset), so no indent field. Figure 15.1 is a pill-shaped panel (#fffbd5 interior) wider than the text column, extending left to x~0.141. The caption 'Figure 15.1 ...' has no A2 block, so n is null. The bottom green band is reported as footer_rule; the '2024-25' print-year text on it is omitted. No size_pt given: page DPI unknown."
+}

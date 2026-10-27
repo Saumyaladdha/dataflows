@@ -1,0 +1,46 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 20.0,
+    "page_kind": "ordinary",
+    "text_block": [0.098, 0.133, 0.686, 0.898],
+    "fill": 0.97,
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.080],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.137, 0.080, 0.395, 0.094],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "fill": "#d1d2d4",
+     "text_color": "#231f20"},
+    {"n": null, "role": "page_number", "bbox": [0.814, 0.064, 0.870, 0.094],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "sans", "fill": "#ffffff"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.133, 0.686, 0.523],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.039},
+    {"n": 2, "role": "figure", "bbox": [0.489, 0.148, 0.873, 0.400],
+     "column": "full", "size_rel": 1.0, "space_before": 0.054},
+    {"n": 3, "role": "figure_caption", "bbox": [0.523, 0.423, 0.832, 0.438],
+     "column": "full", "size_rel": 0.95, "align": "center", "font": "serif", "space_before": 0.023},
+    {"n": 4, "role": "section_heading", "bbox": [0.098, 0.541, 0.360, 0.558],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold",
+     "text_color": "#00adef", "space_before": 0.018},
+    {"n": 5, "role": "paragraph", "bbox": [0.098, 0.568, 0.686, 0.691],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.010},
+    {"n": 6, "role": "equation", "bbox": [0.098, 0.698, 0.686, 0.726],
+     "column": "full", "size_rel": 1.0, "align": "center", "font": "serif", "fill": "#fffac1",
+     "space_before": 0.007},
+    {"n": 7, "role": "paragraph", "bbox": [0.098, 0.734, 0.686, 0.803],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.008},
+    {"n": 8, "role": "section_heading", "bbox": [0.098, 0.820, 0.640, 0.838],
+     "column": "full", "size_rel": 1.15, "align": "left", "font": "serif-bold",
+     "text_color": "#00adef", "space_before": 0.017},
+    {"n": 9, "role": "paragraph", "bbox": [0.098, 0.847, 0.686, 0.898],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.009},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.060}
+  ],
+  "note": "Ordinary recto body page, single text column 0.098-0.686; the wide right margin is used by Figure 11.5, which sits beside the first 17 lines of paragraph n=1 (the paragraph runs narrow, to x~0.472, beside the figure, then full measure below it). Figure and caption are therefore marked column full with their measured boxes. Top furniture: pale green band (#e0ebb6) over a grey strip (#d1d2d4, y 0.080-0.094) carrying the small-caps running head; the folio sits in a white rounded tab at the right. Foot: solid green band #cadf7f carrying the year '2024-25' (reported as footer_rule). Equation n=6 sits on a pale yellow tinted strip #fffac1 spanning the text measure. Paragraph n=7 has a first-line indent of ~0.029 page width (not reported as indent since it is first-line only). Heading colour #00adef sampled from glyph interiors. body_text_size_px is approximate cap height in original 1700px-wide pixels. size_pt omitted: page DPI not given. A diagonal 'not to be republished' watermark crosses the page and is ignored."
+}

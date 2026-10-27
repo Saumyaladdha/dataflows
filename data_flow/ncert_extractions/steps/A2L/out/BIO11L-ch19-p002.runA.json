@@ -1,0 +1,188 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2178,
+  "body_text_size_px": 19.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.128,
+   0.133,
+   0.902,
+   0.88
+  ],
+  "fill": 0.97,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.128,
+    "x1": 0.545
+   },
+   {
+    "id": "right",
+    "x0": 0.564,
+    "x1": 0.902
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.08
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.08,
+    1.0,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.128,
+    0.064,
+    0.184,
+    0.095
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "center",
+   "font": "serif-bold",
+   "fill": "#ffffff",
+   "text_color": "#231f20"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.839,
+    0.083,
+    0.899,
+    0.093
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "right",
+   "font": "serif",
+   "text_color": "#231f20"
+  },
+  {
+   "n": 1,
+   "role": "figure",
+   "bbox": [
+    0.128,
+    0.149,
+    0.545,
+    0.55
+   ],
+   "column": "left",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.168,
+    0.572,
+    0.498,
+    0.585
+   ],
+   "column": "left",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "space_before": 0.022
+  },
+  {
+   "n": 2,
+   "role": "section_heading",
+   "bbox": [
+    0.566,
+    0.133,
+    0.887,
+    0.148
+   ],
+   "column": "right",
+   "size_rel": 1.2,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef"
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.564,
+    0.169,
+    0.902,
+    0.441
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.021
+  },
+  {
+   "n": 4,
+   "role": "section_heading",
+   "bbox": [
+    0.566,
+    0.46,
+    0.849,
+    0.476
+   ],
+   "column": "right",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.019
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.315,
+    0.488,
+    0.902,
+    0.88
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.012
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.956,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Ordinary verso body page, folio 240 in the white tab top-left; running head 'BIOLOGY' at top right. Header is a light green band (#e0ebb6) over a grey strip (#d1d2d4), both reported as page_header_band. Figure 19.1 (n=1) occupies the LEFT column with its caption below it (caption has no A2 block, n=null). Section 19.2 heading and paragraph run in the RIGHT column. Paragraph n=5 starts in the right column beside the figure (x 0.564-0.902, y 0.488-0.671) and then widens below the figure to x 0.315-0.902 (y 0.676-0.880); its bbox is the union and its column is given as right because it begins there. Bottom green strip #cadf7f with the '2024-25' stamp is footer_rule; the stamp is not the page number. Watermark ignored. size_pt omitted (DPI not given)."
+}

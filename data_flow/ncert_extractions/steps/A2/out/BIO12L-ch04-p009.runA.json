@@ -2,39 +2,53 @@
   "blocks": [
     {
       "n": 1,
-      "kind": "paragraph",
-      "text": "In the first case, the modified allele is equivalent to the unmodified allele, i.e., it will produce the same phenotype/trait, i.e., result in the transformation of substrate S. Such equivalent allele pairs are very common. But, if the allele produces a non-functional enzyme or no enzyme, the phenotype may be effected. The phenotype/trait will only be dependent on the functioning of the unmodified allele. The unmodified (functioning) allele, which represents the original phenotype is the dominant allele and the modified allele is generally the recessive allele. Hence, in the example above the recessive trait is seen due to non-functional enzyme or because no enzyme is produced.",
-      "continues_from_previous": false
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [
+        117,
+        225,
+        1465,
+        955
+      ],
+      "text": ""
     },
     {
       "n": 2,
-      "kind": "heading",
-      "text": "4.2.2.2 Co-dominance"
+      "kind": "paragraph",
+      "text": "Based on his observations on monohybrid crosses Mendel proposed two general rules to consolidate his understanding of inheritance in monohybrid crosses. Today these rules are called the Principles or Laws of Inheritance: the First Law or Law of Dominance and the Second Law or Law of Segregation."
     },
     {
       "n": 3,
-      "kind": "paragraph",
-      "text": "Till now we were discussing crosses where the F₁ resembled either of the two parents (dominance) or was in-between (incomplete dominance). But, in the case of co-dominance the F₁ generation resembles both parents. A good example is different types of red blood cells that determine ABO blood grouping in human beings. ABO blood groups are controlled by the gene I. The plasma membrane of the red blood cells has sugar polymers that protrude from its surface and the kind of sugar is controlled by the gene. The gene (I) has three alleles Iᴬ, Iᴮ and i. The alleles Iᴬ and Iᴮ produce a slightly different form of the sugar while allele i does not produce any sugar. Because humans are diploid organisms, each person possesses any two of the three I gene alleles. Iᴬ and Iᴮ are completely dominant over i, in other words when Iᴬ and i are present only Iᴬ expresses (because i does not produce any sugar), and when Iᴮ and i are present Iᴮ expresses. But when Iᴬ and Iᴮ are present together they both express their own types of sugars: this is because of co-dominance. Hence red blood cells have both A and B types of sugars. Since there are three different alleles, there are six different combinations of these three alleles that are possible, and therefore, a total of six different genotypes of the human ABO blood types (Table 4.2). How many phenotypes are possible?"
+      "kind": "heading",
+      "text": "4.2.1 Law of Dominance"
     },
     {
       "n": 4,
-      "kind": "table",
-      "needs_special": true,
-      "bbox": [
-        170,
-        1437,
-        1072,
-        1998
-      ],
-      "text": ""
+      "kind": "list",
+      "text": "(i) Characters are controlled by discrete units called factors.\n(ii) Factors occur in pairs.\n(iii) In a dissimilar pair of factors one member of the pair dominates (dominant) the other (recessive)."
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "The law of dominance is used to explain the expression of only one of the parental characters in a monohybrid cross in the F1 and the expression of both in the F2. It also explains the proportion of 3:1 obtained at the F2."
+    },
+    {
+      "n": 6,
+      "kind": "heading",
+      "text": "4.2.2 Law of Segregation"
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "This law is based on the fact that the alleles do not show any blending and that both the characters are recovered as such in the F2 generation though one of these is not seen at the F1 stage. Though the parents contain two alleles during gamete formation, the factors or alleles of a pair segregate from each other such that a gamete receives only one of the two factors. Of course, a homozygous parent produces all gametes that are similar while a heterozygous one produces two kinds of gametes each having one allele with equal proportion."
     }
   ],
   "first_block_continues_from_previous": false,
   "last_block_continues_on_next": false,
   "running_header_footer_removed": [
     "PRINCIPLES OF INHERITANCE AND VARIATION",
-    "61",
+    "59",
     "Reprint 2026-27"
   ],
-  "note": "text_layer is empty (image-only chapter); all text transcribed directly from the page image. Subscript/superscript characters rendered with Unicode (F₁, Iᴬ, Iᴮ) to preserve the printed form. Block 4 covers the Table 4.2 caption together with the table body. The page carries a diagonal '© NCERT not to be republished' watermark across the text; it is not included as a block. previous_page_last_block was null in the input, so continuation from page 8 was judged from the page itself: block 1 begins an indented, complete sentence, so it is marked as not continuing."
+  "note": "text_layer is empty (image-only chapter), so all text was read directly from the page image. previous_page_last_block was null even though this is page 7, so the continuation judgement for block 1 was made from the page itself: the page opens with the complete Figure 4.5 and its caption, and the first text block begins a new sentence, so it is not treated as a continuation. Subscripts in F1 and F2 are printed as subscript numerals in the image and are transcribed here as plain 'F1' and 'F2'. Figure 4.5 (a test cross diagram with Result/Interpretation labels and the caption 'Figure 4.5 Diagrammatic representation of a test cross') is marked needs_special with a bounding box in original image pixels (image is 1654x2339)."
 }

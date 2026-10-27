@@ -1,0 +1,169 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 22.0,
+  "text_block": [
+   0.068,
+   0.109,
+   0.695,
+   0.811
+  ],
+  "fill": 0.89,
+  "page_kind": "ordinary",
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.068,
+    "x1": 0.695
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    0.79,
+    0.039
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.807,
+    0.0,
+    1.0,
+    0.0977
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.068,
+    0.076,
+    0.353,
+    0.086
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "left",
+   "font": "sans",
+   "space_before": 0.0
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.068,
+    0.1093,
+    0.695,
+    0.4509
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0233
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.068,
+    0.4556,
+    0.695,
+    0.5231
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0047
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.068,
+    0.5273,
+    0.695,
+    0.6458
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0042
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.068,
+    0.6532,
+    0.695,
+    0.7389
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0074
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.068,
+    0.744,
+    0.695,
+    0.8111
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.0051
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.8399,
+    0.7856,
+    0.9994,
+    0.8259
+   ],
+   "column": "full",
+   "size_rel": 1.2,
+   "align": "center",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.8399,
+    0.8292,
+    0.9994,
+    0.8352
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary recto body page, single full column (x 0.068-0.695). Green page_header_band across the top left of the page, with the orange/brown corner block and the figure-with-leaf emblem at top right reported as one decorative_image. Running header 'BIOTECHNOLOGY AND ITS APPLICATIONS' in grey caps. Five body paragraphs, each with a ~0.031 first-line indent (not a left inset, so no indent field); 'Biopiracy' is bold run-in inside paragraph 2. Folio 185 is white on an orange tab at right with a thin orange bar beneath it (reported as footer_rule). body_text_size_px measured as cap/ascender-to-baseline of descender-less body lines (22px). size_pt omitted: the image DPI is not given in the input, so only size_rel (measured ratio) is reported. The 'Reprint 2026-27' stamp at y~0.974 is not the folio and is deliberately left out of elements; the printed folio is the number in the orange tab. text_block is the rectangle this page's type actually occupies; page.fill is that depth as a fraction of the full type area seen on the full page p010 (y 0.110-0.902)."
+}

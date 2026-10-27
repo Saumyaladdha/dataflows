@@ -1,0 +1,38 @@
+{
+  "page": {
+    "page_kind": "unit_opener",
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "text_block": [0.098, 0.521, 0.874, 0.903],
+    "fill": 0.97,
+    "columns": [
+      {"id": "left", "x0": 0.098, "x1": 0.300},
+      {"id": "right", "x0": 0.323, "x1": 0.874}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.48, 0.0, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cde084"},
+    {"n": null, "role": "figure", "bbox": [0.300, 0.068, 0.622, 0.291],
+     "column": "full", "size_rel": 1.0, "space_before": 0.068},
+    {"n": null, "role": "decorative_image", "bbox": [0.333, 0.296, 0.620, 0.380],
+     "column": "full", "size_rel": 1.0, "space_before": 0.005},
+    {"n": null, "role": "chapter_title", "bbox": [0.323, 0.400, 0.484, 0.443],
+     "column": "right", "size_rel": 4.0, "align": "left", "font": "sans-light",
+     "text_color": "#231f20", "space_before": 0.020},
+    {"n": null, "role": "major_heading", "bbox": [0.323, 0.457, 0.737, 0.476],
+     "column": "right", "size_rel": 1.8, "align": "left", "font": "sans-light",
+     "text_color": "#231f20", "space_before": 0.014},
+    {"n": null, "role": "contents_panel", "bbox": [0.098, 0.521, 0.260, 0.660],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif",
+     "space_before": 0.045},
+    {"n": 1, "role": "paragraph", "bbox": [0.323, 0.521, 0.874, 0.903],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.045},
+    {"n": null, "role": "page_number", "bbox": [0.476, 0.954, 0.525, 0.966],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans",
+     "space_before": 0.051}
+  ],
+  "note": "Unit opener (Unit 3, Cell: Structure and Functions), not a chapter opener. Two columns: a left rail with the unit's chapter list (Chapter 8/9/10 with titles; bold chapter labels, regular titles) and a right column with the opening prose (block n=1). The large lime-green diagonal panel occupying the right half of the sheet is page decoration, reported as decorative_image with its sampled flat fill; its true shape is a slanted polygon, bbox is its bounding rectangle. The cell-cycle diagram at top is unit-opener artwork with no A2 block (n null); its faded mirror reflection below is decorative_image. 'UNIT 3' (small-caps sans light) and the subtitle line have no A2 block, so n is null; subtitle reported as major_heading. The bottom '2024-25' imprint is reported as page_number (it is the edition stamp in the folio position; no printed page number). Diagonal 'not to be republished' watermark ignored. size_pt omitted because the render DPI is not given. Measured cap heights: body 20px, UNIT 3 title ~83px (true ratio ~4.15); size_rel reported as 4.0, the checker's maximum allowed ratio, so the title is slightly larger than 4.0 in print."
+}

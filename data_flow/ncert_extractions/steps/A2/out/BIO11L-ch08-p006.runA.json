@@ -1,0 +1,66 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "needs_special": true,
+      "bbox": [240, 283, 862, 845],
+      "text": ""
+    },
+    {
+      "n": 2,
+      "kind": "figure_caption",
+      "text": "Figure 8.2 Diagram showing comparison of eukaryotic cell with other organisms"
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "prokaryotes have a cell wall surrounding the cell membrane except in mycoplasma. The fluid matrix filling the cell is the cytoplasm. There is no well-defined nucleus. The genetic material is basically naked, not enveloped by a nuclear membrane. In addition to the genomic DNA (the single chromosome/circular DNA), many bacteria have small circular DNA outside the genomic DNA. These smaller DNA are called plasmids. The plasmid DNA confers certain unique phenotypic characters to such bacteria. One such character is resistance to antibiotics. In higher classes you will learn that this plasmid DNA is used to monitor bacterial transformation with foreign DNA. Nuclear membrane is found in eukaryotes. No organelles, like the ones in eukaryotes, are found in prokaryotic cells except for ribosomes. Prokaryotes have something unique in the form of inclusions. A specialised differentiated form of cell membrane called mesosome is the characteristic of prokaryotes. They are essentially infoldings of cell membrane.",
+      "continues_from_previous": true,
+      "bold_terms": [],
+      "italic_terms": []
+    },
+    {
+      "n": 4,
+      "kind": "heading",
+      "text": "8.4.1 Cell Envelope and its Modifications"
+    },
+    {
+      "n": 5,
+      "kind": "paragraph",
+      "text": "Most prokaryotic cells, particularly the bacterial cells, have a chemically complex cell envelope. The cell envelope consists of a tightly bound three layered structure i.e., the outermost glycocalyx followed by the cell wall and then the plasma membrane. Although each layer of the envelope performs distinct function, they act together as a single protective unit. Bacteria can be classified into two groups on the basis of the differences in the cell envelopes and the manner in which they respond to the staining procedure developed by Gram viz., those that take up the gram stain are Gram positive and the others that do not are called Gram negative bacteria.",
+      "bold_terms": ["Gram positive", "Gram negative"],
+      "italic_terms": []
+    },
+    {
+      "n": 6,
+      "kind": "paragraph",
+      "text": "Glycocalyx differs in composition and thickness among different bacteria. It could be a loose sheath called the slime layer in some, while in others it may be thick and tough, called the capsule. The cell wall determines the shape of the cell and provides a strong structural support to prevent the bacterium from bursting or collapsing.",
+      "bold_terms": ["slime layer", "capsule", "cell wall"],
+      "italic_terms": []
+    },
+    {
+      "n": 7,
+      "kind": "paragraph",
+      "text": "The plasma membrane is selectively permeable in nature and interacts with the outside world. This membrane is similar structurally to that of the eukaryotes.",
+      "bold_terms": [],
+      "italic_terms": []
+    },
+    {
+      "n": 8,
+      "kind": "paragraph",
+      "text": "A special membranous structure is the mesosome which is formed by the extensions of plasma membrane into the cell. These extensions are in the form of vesicles, tubules and lamellae. They help in cell wall",
+      "continues_on_next": true,
+      "bold_terms": ["mesosome", "form of vesicles, tubules and lamellae"],
+      "italic_terms": []
+    }
+  ],
+  "first_block_continues_from_previous": true,
+  "last_block_continues_on_next": true,
+  "running_header_footer_removed": [
+    "90",
+    "BIOLOGY",
+    "2024-25"
+  ],
+  "note": "previous_page_last_block is null although page is 6; the page's first prose block begins mid-sentence in lowercase ('prokaryotes have a cell wall...'), so it is flagged as continuing from the previous page. Reading order: Figure 8.2 (with its labels containing µm sizes, deferred to special) sits top-left beside the opening paragraph; the first text block (n=3) is the one that continues. Caption given as kind figure_caption per brief rule 3."
+}

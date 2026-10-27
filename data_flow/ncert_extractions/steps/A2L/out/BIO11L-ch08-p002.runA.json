@@ -1,0 +1,30 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 20.0,
+    "text_block": [0.127, 0.378, 0.902, 0.698],
+    "fill": 0.92,
+    "columns": [
+      {"id": "left", "x0": 0.127, "x1": 0.373},
+      {"id": "right", "x0": 0.402, "x1": 0.902}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.55, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cee184"},
+    {"n": 1, "role": "figure", "bbox": [0.127, 0.378, 0.373, 0.665],
+     "column": "left", "size_rel": 1.0, "space_before": 0.378},
+    {"n": 2, "role": "figure_caption", "bbox": [0.163, 0.670, 0.333, 0.698],
+     "column": "left", "size_rel": 1.0, "align": "center", "font": "serif-bold",
+     "space_before": 0.005},
+    {"n": 3, "role": "paragraph", "bbox": [0.402, 0.393, 0.902, 0.680],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.015},
+    {"n": null, "role": "page_number", "bbox": [0.476, 0.954, 0.525, 0.966],
+     "column": "full", "size_rel": 0.8, "align": "center", "font": "sans",
+     "space_before": 0.256}
+  ],
+  "note": "Unit-opener verso: a biographical page (G.N. Ramachandran) with no running header band. Two columns: portrait photograph (n=1) with its centred caption (n=2; name line bold, dates line regular) in the left column, biography prose (n=3) in the right column beside it. The upper 38% of the page is blank paper. A vertical white-to-lime gradient fills the lower page from about y=0.55 down; reported as decorative_image with the flat colour sampled near the page foot (#cee184). space_before of the paragraph is measured from the photograph's top. '2024-25' edition stamp in the folio position reported as page_number; no printed page number. Diagonal watermark ignored. page_kind given as 'ordinary' since it is neither a unit nor chapter opener, though it belongs to the unit-opener spread. size_pt omitted because render DPI is not given."
+}

@@ -1,10 +1,10 @@
-# THE LIVING WORLD 
+# The Living World 
 
 *Biology · Class 11 · new NCERT · chapter 1 · reprint 2024-25*
 
 *Printed pages 4–9*
 
-Unit 1
+## Unit 1
 
 DIVERSITY IN THE LIVING WORLD
 
@@ -18,15 +18,22 @@ Biology is the science of life forms and living processes. The living world comp
 
 **Chapter 4** Animal Kingdom
 
-Born on 5 July 1904, in Kempten, Germany, ERNST MAYR, the Harvard University evolutionary biologist who has been called ‘The Darwin of the 20th century’, was one of the 100 greatest scientists of all time. Mayr joined Harvard’s Faculty of Arts and Sciences in 1953 and retired in 1975, assuming the title *Alexander Agassiz Professor of Zoology Emeritus*. Throughout his nearly 80-year career, his research spanned ornithology, taxonomy, zoogeography, evolution, systematics, and the history and philosophy of biology. He almost single-handedly made the origin of species diversity the central question of evolutionary biology that it is today. He also pioneered the currently accepted definition of a biological species. Mayr was awarded the three prizes widely regarded as the *triple crown* of biology: the *Balzan Prize* in 1983, the *International Prize for Biology* in 1994, and the *Crafoord Prize* in 1999. Mayr died at the age of 100 in the year 2004.
+![Ernst Mayr (1904 – 2004)](https://d30lmobgrc5gb8.cloudfront.net/general/26102026/ncert/2024-25/BIO11L/ch01/i002_fig01-8f0657ec_26102026.png)
 
-CHAPTER 1
+**Ernst Mayr** (1904 – 2004)
 
-THE LIVING WORLD
+Born on 5 July 1904, in Kempten, Germany, ERNST MAYR, the Harvard University evolutionary biologist who has been called ‘The Darwin of the 20<sup>th</sup> century’, was one of the 100 greatest scientists of all time. Mayr joined Harvard’s Faculty of Arts and Sciences in 1953 and retired in 1975, assuming the title *Alexander Agassiz Professor of Zoology Emeritus*. Throughout his nearly 80-year career, his research spanned ornithology, taxonomy, zoogeography, evolution, systematics, and the history and philosophy of biology. He almost single-handedly made the origin of species diversity the central question of evolutionary biology that it is today. He also pioneered the currently accepted definition of a biological species. Mayr was awarded the three prizes widely regarded as the *triple crown* of biology: the *Balzan Prize* in 1983, the *International Prize for Biology* in 1994, and the *Crafoord Prize* in 1999. Mayr died at the age of 100 in the year 2004.
+
+## **Chapter 1**
+
+## **The Living World**
+
+- *1.1 Diversity in the Living World*
+- *1.2 Taxonomic Categories*
 
 How wonderful is the living world ! The wide range of living types is amazing. The extraordinary habitats in which we find living organisms, be it cold mountains, deciduous forests, oceans, fresh water lakes, deserts or hot springs, leave us speechless. The beauty of a galloping horse, of the migrating birds, the valley of flowers or the attacking shark evokes awe and a deep sense of wonder. The ecological conflict and cooperation among members of a population and among populations of a community or even the molecular traffic inside a cell make us deeply reflect on – what indeed is life? This question has two implicit questions within it. The first is a technical one and seeks answer to what living is as opposed to the non-living, and the second is a philosophical one, and seeks answer to what the purpose of life is. As scientists, we shall not attempt answering the second question. We will try to reflect on – what is living?
 
-## 1.1 DIVERSITY IN THE LIVING WORLD
+## 1.1 Diversity in the Living World
 
 If you look around you will see a large variety of living organisms, be it potted plants, insects, birds, your pets or other animals and plants. There are also several organisms that you cannot see with your naked eye but they are all around you. If you were to increase the area that you make observations in, the range and variety of organisms that you see would increase. Obviously, if you were to visit a dense forest, you would probably see a much greater number and kinds of living organisms in it. Each different kind of plant, animal or organism that you see, represents a species. The number of species that are known and described range between 1.7-1.8 million. This refers to **biodiversity** or the number and types of organisms present on earth. We should remember here that as we explore new areas, and even old ones, new organisms are continuously being identified.
 
@@ -41,6 +48,7 @@ Biologists follow universally accepted principles to provide scientific names to
 1. Biological names are generally in Latin and written in italics. They are Latinised or derived from Latin irrespective of their origin.
 2. The first word in a biological name represents the genus while the second component denotes the specific epithet.
 3. Both the words in a biological name, when handwritten, are separately underlined, or printed in italics to indicate their Latin origin.
+
 4. The first word denoting the genus starts with a capital letter while the specific epithet starts with a small letter. It can be illustrated with the example of *Mangifera indica*.
 
 Name of the author appears after the specific epithet, i.e., at the end of the biological name and is written in an abbreviated form, e.g., *Mangifera indica* Linn. It indicates that this species was first described by Linnaeus.
@@ -55,7 +63,7 @@ Taxonomy is not something new. Human beings have always been interested in knowi
 
 Human beings were, since long, not only interested in knowing more about different kinds of organisms and their diversities, but also the relationships among them. This branch of study was referred to as **systematics**. The word systematics is derived from the Latin word ‘systema’ which means systematic arrangement of organisms. Linnaeus used *Systema Naturae* as the title of his publication. The scope of systematics was later enlarged to include identification, nomenclature and classification. Systematics takes into account evolutionary relationships between organisms.
 
-## 1.2 TAXONOMIC CATEGORIES
+## 1.2 Taxonomic Categories
 
 Classification is not a single step process but involves hierarchy of steps in which each step represents a rank or category. Since the category is a part of overall taxonomic arrangement, it is called the **taxonomic category** and all categories together constitute the **taxonomic hierarchy**. Each category, referred to as a unit of classification, in fact, represents a rank and is commonly termed as **taxon** (pl.: taxa).
 
@@ -65,7 +73,7 @@ Taxonomical studies of all known organisms have led to the development of common
 
 ### 1.2.1 Species
 
-Taxonomic studies consider a group of individual organisms with fundamental similarities as a **species**. One should be able to distinguish one species from the other closely related species based on the distinct morphological differences. Let us consider *Mangifera indica*, Solanum tuberosum (potato) and *Panthera leo* (lion). All the three names, indica, tuberosum and *leo*, represent the specific epithets, while the first words *Mangifera, Solanum* and *Panthera* are genera and represents another higher level of taxon or category. Each genus may have one or more than one specific epithets representing different organisms, but having morphological similarities. For example, *Panthera* has another specific epithet called *tigris* and *Solanum* includes species like *nigrum* and *melongena*. Human beings belong to the species *sapiens* which is grouped in the genus *Homo*. The scientific name thus, for human being, is written as *Homo sapiens*.
+Taxonomic studies consider a group of individual organisms with fundamental similarities as a **species**. One should be able to distinguish one species from the other closely related species based on the distinct morphological differences. Let us consider *Mangifera indica, Solanum tuberosum* (potato) and *Panthera leo* (lion). All the three names, *indica, tuberosum* and *leo*, represent the specific epithets, while the first words *Mangifera, Solanum* and *Panthera* are genera and represents another higher level of taxon or category. Each genus may have one or more than one specific epithets representing different organisms, but having morphological similarities. For example, *Panthera* has another specific epithet called *tigris* and *Solanum* includes species like *nigrum* and *melongena*. Human beings belong to the species *sapiens* which is grouped in the genus *Homo*. The scientific name thus, for human being, is written as *Homo sapiens*.
 
 ### 1.2.2 Genus
 
@@ -93,11 +101,11 @@ All animals belonging to various phyla are assigned to the highest category call
 
 The taxonomic categories from species to kingdom have been shown in ascending order starting with species in Figure 1.1. These are broad categories. However, taxonomists have also developed sub-categories in this hierarchy to facilitate more sound and scientific placement of various taxa.
 
+![Figure 1.1 Taxonomic categories showing hierarchial arrangement in ascending order](https://d30lmobgrc5gb8.cloudfront.net/general/23102026/ncert/2024-25/BIO11L/ch01/p008_fig01_23102026.png)
+
+**Figure 1.1** Taxonomic categories showing hierarchial arrangement in ascending order
+
 Look at the hierarchy in Figure 1.1. Can you recall the basis of arrangement? Say, for example, as we go higher from species to kingdom, the number of common characteristics goes on decreasing. Lower the taxa, more are the characteristics that the members within the taxon share. Higher the category, greater is the difficulty of determining the relationship to other taxa at the same level. Hence, the problem of classification becomes more complex.
-
-![Figure 1.1 Taxonomic categoriesshowinghierarchial arrangement in ascending order](https://d30lmobgrc5gb8.cloudfront.net/general/22102026/ncert/2024-25/BIO11L/ch01/008_vec01_22102026.png)
-
-*Figure 1.1 Taxonomic categoriesshowinghierarchial arrangement in ascending order*
 
 Table 1.1 indicates the taxonomic categories to which some common organisms like housefly, man, mango and wheat belong.
 
@@ -105,14 +113,14 @@ Table 1.1 indicates the taxonomic categories to which some common organisms like
 
 | Common Name | Biological Name | Genus | Family | Order | Class | Phylum/ Division |
 | --- | --- | --- | --- | --- | --- | --- |
-| Man | Homo sapiens | Homo | Hominidae | Primata | Mammalia | Chordata |
-| Housefly | Musca domestica | Musca | Muscidae | Diptera | Insecta | Arthropoda |
-| Mango | Mangifera indica | Mangifera | Anacardiaceae | Sapindales | Dicotyledonae | Angiospermae |
-| Wheat | Triticum aestivum | Triticum | Poaceae | Poales | Monocotyledonae | Angiospermae |
+| Man | *Homo sapiens* | *Homo* | Hominidae | Primata | Mammalia | Chordata |
+| Housefly | *Musca* *domestica* | *Musca* | Muscidae | Diptera | Insecta | Arthropoda |
+| Mango | *Mangifera* *indica* | *Mangifera* | Anacardiaceae | Sapindales | Dicotyledonae | Angiospermae |
+| Wheat | *Triticum* *aestivum* | *Triticum* | Poaceae | Poales | Monocotyledonae | Angiospermae |
 
 ## Summary
 
-The living world is rich in variety. Millions of plants and animals have been identified and described but a large number still remains unknown. The very range of organisms in terms of size, colour, habitat, physiological and morphological features make us seek the defining characteristics of living organisms. In order to facilitate the study of kinds and diversity of organisms, biologists have evolved certain rules and principles for identification, nomenclature and classification of organisms. The branch of knowledge dealing with these aspects is referred to as taxonomy. The taxonomic studies of various species of plants and animals are useful in agriculture, forestry, industry and in general for knowing our bio-resources and their diversity. The basics of taxonomy like identification, naming and classification of organisms are universally evolved under international codes. Based on the resemblances and distinct differences, each organism is identified and assigned a correct scientific/biological name comprising two words as per the binomial system of nomenclature. An organism represents/occupies a place or position in the system of classification. There are many categories/ ranks and are generally referred to as taxonomic categories or taxa. All the categories constitute a taxonomic hierarchy.
+The living world is rich in variety. Millions of plants and animals have been identified and described but a large number still remains unknown. The very range of organisms in terms of size, colour, habitat, physiological and morphological features make us seek the defining characteristics of living organisms. In order to facilitate the study of kinds and diversity of organisms, biologists have evolved certain rules and principles for identification, nomenclature and classification of organisms. The branch of knowledge dealing with these aspects is referred to as taxonomy. The taxonomic studies of various species of plants and animals are useful in agriculture, forestry, industry and in general for knowing our bio-resources and their diversity. The basics of taxonomy like identification, naming and classification of organisms are universally evolved under international codes. Based on the resemblances and distinct differences, each organism is identified and assigned a correct scientific/biological name comprising two words as per the binomial system of nomenclature. An organism represents/occupies a place or position in the system of classification. There are many categories/ranks and are generally referred to as taxonomic categories or taxa. All the categories constitute a taxonomic hierarchy.
 
 ## Exercises
 
@@ -124,26 +132,26 @@ The living world is rich in variety. Millions of plants and animals have been id
 
 4. What do we learn from identification of individuals and populations?
 
-5. Given below is the scientific name of Mango. Identify the correctly written name. Mangifera Indica Mangifera indica
+5. Given below is the scientific name of Mango. Identify the correctly written name.
+
+   *Mangifera Indica*
+
+   *Mangifera indica*
 
 6. Define a taxon. Give some examples of taxa at different hierarchical levels.
 
 7. Can you identify the correct sequence of taxonomical categories?
-   (a) Species Order Phylum Kingdom
-   (b) Genus Species Order Kingdom
-   (c) Species Genus Order Phylum
+
+   (a) Species → Order → Phylum → Kingdom
+
+   (b) Genus → Species → Order → Kingdom
+
+   (c) Species → Genus → Order → Phylum
 
 8. Try to collect all the currently accepted meanings for the word ‘species’. Discuss with your teacher the meaning of species in case of higher plants and animals on one hand, and bacteria on the other hand.
 
 9. Define and understand the following terms:
-   (i) Phylum
-   (ii) Class
-   (iii) Family
-   (iv) Order
-   (v) Genus
+
+   (i) Phylum  (ii) Class  (iii) Family  (iv) Order  (v) Genus
 
 10. Illustrate the taxonomical hierarchy with suitable examples of a plant and an animal.
-
-![](https://d30lmobgrc5gb8.cloudfront.net/general/22102026/ncert/2024-25/BIO11L/ch01/002_a2l02_22102026.png)
-
-![](https://d30lmobgrc5gb8.cloudfront.net/general/22102026/ncert/2024-25/BIO11L/ch01/008_a2l03_22102026.png)

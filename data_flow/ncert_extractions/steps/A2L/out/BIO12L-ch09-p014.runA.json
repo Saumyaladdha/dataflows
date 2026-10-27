@@ -1,0 +1,223 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 19.5,
+  "text_block": [
+   0.299,
+   0.1093,
+   0.932,
+   0.913
+  ],
+  "fill": 1.0,
+  "columns": [
+   {
+    "id": "left",
+    "x0": 0.0,
+    "x1": 0.28
+   },
+   {
+    "id": "right",
+    "x0": 0.299,
+    "x1": 0.932
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.212,
+    0.0,
+    1.0,
+    0.039
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.198,
+    0.098
+   ],
+   "column": "full",
+   "size_rel": 1.0
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.865,
+    0.0787,
+    0.927,
+    0.0861
+   ],
+   "column": "right",
+   "size_rel": 0.8,
+   "align": "right",
+   "font": "sans",
+   "text_color": "#6d6e71"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.1093,
+    0.932,
+    0.1398
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.1454,
+    0.932,
+    0.3019
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.0056
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.3074,
+    0.932,
+    0.3375
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.0055
+  },
+  {
+   "n": 4,
+   "role": "figure",
+   "bbox": [
+    0.112,
+    0.356,
+    0.915,
+    0.6144
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.0185
+  },
+  {
+   "n": 5,
+   "role": "figure_caption",
+   "bbox": [
+    0.099,
+    0.6325,
+    0.932,
+    0.6655
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "justify",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "text_color": "#221f1f",
+   "space_before": 0.0181
+  },
+  {
+   "n": 6,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.6958,
+    0.932,
+    0.8347
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.0303
+  },
+  {
+   "n": 7,
+   "role": "section_heading",
+   "bbox": [
+    0.299,
+    0.8542,
+    0.619,
+    0.8685
+   ],
+   "column": "right",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#6d6e71",
+   "space_before": 0.0195
+  },
+  {
+   "n": 8,
+   "role": "paragraph",
+   "bbox": [
+    0.299,
+    0.8815,
+    0.932,
+    0.913
+   ],
+   "column": "right",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.013
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0,
+    0.7866,
+    0.162,
+    0.8264
+   ],
+   "column": "left",
+   "size_rel": 1.25,
+   "align": "right",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.8301,
+    0.162,
+    0.8356
+   ],
+   "column": "left",
+   "size_rel": 1.0,
+   "fill": "#f7931d"
+  }
+ ],
+ "note": "Ordinary verso body page (page_kind: ordinary). Body prose runs in the right-hand text column (x 0.299-0.932); the left margin rail (x 0-0.28) holds only the orange folio tab '174' and its rule, so it is declared as column 'left'. Figure 9.7 (two rounded cream panels (a) and (b) with sub-labels '(a)','(b)' below, x 0.112-0.915) and its caption band (pale peach fill #fef1e2, x 0.099-0.932) both extend out into the left margin, so they are 'full'. Green page_header_band across the top-right (x 0.212-1.0) with brown/orange corner block and leaf-figure ornament at top left (decorative_image). Running header 'BIOLOGY' in grey sans at the right. Paragraphs n2, n3 and n6 open with a first-line indent of ~0.031 page width. Heading 9.3.6 is grey bold serif. Caption label 'Figure 9.7' is bold, rest regular, second line hanging-indented. n8 continues onto the next page; fill 1.0. The 'Reprint 2026-27' stamp at the page foot (y~0.974-0.982) is not the folio and is deliberately left out; the printed page number is the white numeral in the orange tab. size_pt omitted: the page's physical DPI is not given, so only size_rel (the trusted ratio) is reported."
+}

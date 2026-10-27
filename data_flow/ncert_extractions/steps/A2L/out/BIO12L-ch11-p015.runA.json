@@ -1,0 +1,141 @@
+{
+ "page": {
+  "width_px": 1580,
+  "height_px": 2160,
+  "body_text_size_px": 19.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.099,
+   0.108,
+   0.934,
+   0.818
+  ],
+  "fill": 0.87,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.099,
+    "x1": 0.934
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.209,
+    0.0,
+    1.0,
+    0.0385
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#4c7436"
+  },
+  {
+   "n": null,
+   "role": "decorative_image",
+   "bbox": [
+    0.0,
+    0.0,
+    0.205,
+    0.098
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#745421"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.868,
+    0.076,
+    0.933,
+    0.086
+   ],
+   "column": "full",
+   "size_rel": 0.8,
+   "align": "right",
+   "font": "sans",
+   "text_color": "#58595b"
+  },
+  {
+   "n": 1,
+   "role": "paragraph",
+   "bbox": [
+    0.353,
+    0.108,
+    0.934,
+    0.488
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.022
+  },
+  {
+   "n": 2,
+   "role": "figure",
+   "bbox": [
+    0.099,
+    0.43,
+    0.433,
+    0.694
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.005
+  },
+  {
+   "n": 3,
+   "role": "figure_caption",
+   "bbox": [
+    0.099,
+    0.7,
+    0.433,
+    0.736
+   ],
+   "column": "full",
+   "size_rel": 0.95,
+   "align": "left",
+   "font": "serif",
+   "fill": "#fef1e2",
+   "space_before": 0.006
+  },
+  {
+   "n": 4,
+   "role": "paragraph",
+   "bbox": [
+    0.301,
+    0.497,
+    0.934,
+    0.818
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "space_before": 0.004
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.0,
+    0.785,
+    0.163,
+    0.835
+   ],
+   "column": "full",
+   "size_rel": 1.4,
+   "align": "center",
+   "font": "sans",
+   "fill": "#f7931d",
+   "text_color": "#ffffff"
+  }
+ ],
+ "note": "Ordinary verso body page, single full column. Paragraph 1 starts at x=0.353 and from y~0.43 is indented to x~0.457 to wrap round Figure 11.5 at left; paragraph 4 wraps beside the figure (x0~0.457) then returns to x0~0.301 below the caption, so both paragraph bboxes are the union of their wrapped regions. Caption sits on a cream panel (#fef1e2). Top-left corner furniture (brown/orange block with leaf and figure logo) reported as one decorative_image. Folio 202 is the orange tab with a thin orange rule beneath it. The 'Reprint 2026-27' stamp at the foot is not a page_number and is not reported. text_block depth is to the last line actually printed; fill 0.87 is relative to the nominal body depth (~0.92) since the page ends short. size_pt omitted (DPI not given)."
+}

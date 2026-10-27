@@ -2,54 +2,47 @@
   "blocks": [
     {
       "n": 1,
-      "kind": "paragraph",
-      "text": "genotype t. As a result of random fertilisation, the resultant zygotes can be of the genotypes TT, Tt or tt.",
-      "continues_from_previous": true
-    },
-    {
-      "n": 2,
-      "kind": "paragraph",
-      "text": "From the Punnett square it is easily seen that 1/4th of the random fertilisations lead to TT, 1/2 lead to Tt and 1/4th to tt. Though the F1 have a genotype of Tt, but the phenotypic  character seen is 'tall'. At F2, 3/4th of the plants are tall, where some of them are TT while others are Tt. Externally it is not possible to distinguish between  the plants with the genotypes TT and Tt. Hence, within the genopytic pair Tt only one character 'T' tall is expressed. Hence the character T or 'tall' is said to dominate over the other allele t or 'dwarf' character. It is thus due to this dominance of one character over the other that all the F1 are tall (though the genotype is Tt) and in the F2 3/4th of the plants are tall (though genotypically 1/2 are Tt and only 1/4th are TT).  This leads to a phenotypic ratio of 3/4th tall : (1/4 TT + 1/2 Tt) and 1/4th tt, i.e., a 3:1 ratio,  but a genotypic ratio of 1:2:1."
-    },
-    {
-      "n": 3,
-      "kind": "paragraph",
-      "text": "The 1/4 : 1/2 : 1/4 ratio of TT: Tt: tt is mathematically condensable to the form of the binomial expression (ax +by)2, that has the gametes bearing genes T or t in equal frequency of ½. The expression is expanded as given below :"
-    },
-    {
-      "n": 4,
-      "kind": "equation",
+      "kind": "figure",
       "needs_special": true,
       "bbox": [
-        470,
-        993,
-        1486,
-        1040
+        176,
+        216,
+        965,
+        1330
       ],
       "text": ""
     },
     {
+      "n": 2,
+      "kind": "paragraph",
+      "text": "Based on these observations, Mendel proposed that something was being stably passed down, unchanged, from parent to offspring through the gametes, over successive generations. He called these things as ‘factors’. Now we call them as genes. Genes, therefore, are the units of inheritance. They contain the information that is required to express a particular trait in an organism. Genes which code for a pair of contrasting traits are known as alleles, i.e., they are slightly different forms of the same gene.",
+      "continues_from_previous": false
+    },
+    {
+      "n": 3,
+      "kind": "paragraph",
+      "text": "If we use  alphabetical symbols for each gene, then the capital letter is used for the trait expressed at the F1 stage and the small alphabet for the other trait. For example, in case of the character of height, T is used for the Tall trait and t for the ‘dwarf’, and T and t are alleles of each other. Hence, in plants the pair of alleles for height would be TT, Tt or tt. Mendel also proposed that in a true breeding, tall or dwarf pea variety the allelic pair of genes for height are identical or homozygous, TT and tt, respectively. TT and tt are called the genotype of the plant while the descriptive terms tall and dwarf are the phenotype. What then would be the phenotype of a plant that had a genotype Tt?",
+      "continues_from_previous": false
+    },
+    {
+      "n": 4,
+      "kind": "paragraph",
+      "text": "As Mendel found the phenotype of the F1 heterozygote Tt to be exactly like the TT parent in appearance, he proposed that in a pair of dissimilar factors, one dominates the other (as in the F1 ) and hence is called the dominant factor while the other factor is recessive . In this case T (for tallness) is dominant over t (for dwarfness), that is recessive. He observed identical behaviour for all the other characters/trait-pairs that he studied.",
+      "continues_from_previous": false
+    },
+    {
       "n": 5,
       "kind": "paragraph",
-      "text": "Mendel self-pollinated the F2 plants and found that dwarf F2 plants continued to generate dwarf plants in F3 and F4 generations. He concluded that the genotype of the dwarfs was homozygous – tt. What do you think he would have got had he self-pollinated a tall F2 plant?"
-    },
-    {
-      "n": 6,
-      "kind": "paragraph",
-      "text": "From the preceeding paragraphs it is clear that though the genotypic ratios can be calculated using mathematical probability, by simply looking at the phenotype of a dominant trait, it  is not possible to know the genotypic composition. That is, for example, whether a tall plant from F1 or F2 has TT or Tt composition, cannot be predicted. Therefore, to determine the genotype of a tall plant at F2, Mendel crossed the tall plant from F2 with a dwarf plant. This he called a test cross. In a typical test cross an organism (pea plants here) showing a dominant phenotype (and whose genotype is to be determined) is crossed with the recessive parent instead of self-crossing. The progenies of such a cross can easily be analysed to predict the genotype of the test organism. Figure 4.5 shows the results of typical test cross where violet colour flower (V) is dominant over white colour flower (v)."
-    },
-    {
-      "n": 7,
-      "kind": "box",
-      "text": "Using Punnett square, try to find out the nature of offspring of a test cross.\n\nWhat ratio did you get?\n\nUsing the genotypes of this cross, can you give a general definition for a test cross?"
+      "text": "It is convenient (and logical) to use the capital and lower case of an alphabetical symbol to remember this concept of dominance and recessiveness. (Do not use T for tall and d for dwarf because you will find it difficult to remember whether T and d are alleles of the same gene/character or not). Alleles can be similar as in the case of homozygotes TT and tt or can be dissimilar as in the case of the heterozygote Tt. Since",
+      "continues_from_previous": false
     }
   ],
-  "first_block_continues_from_previous": true,
-  "last_block_continues_on_next": false,
+  "first_block_continues_from_previous": false,
+  "last_block_continues_on_next": true,
   "running_header_footer_removed": [
     "BIOLOGY",
-    "58",
+    "56",
     "Reprint 2026-27"
   ],
-  "note": "No text layer (image-only chapter, as expected); all text transcribed from the page image. previous_page_last_block was null, but the page clearly opens mid-sentence ('genotype t. As a result of ...'), so first_block_continues_from_previous is set true on the evidence of the page itself. Subscripts (F1, F2, F3, F4) and superscripts (1/4th, (ax +by)2) are rendered as plain inline characters; bold/italic styling is not preserved. Block 4 is the displayed binomial expansion, marked for the special transcriber; its bbox is in original image pixels (1654x2339). Block 7 is the italicised in-text activity question set, kept as one box block."
+  "note": "text_layer is empty, as expected for this image-only chapter; all text read directly from the page image. Block 1 is Figure 4.3 (monohybrid cross diagram) together with its caption 'Figure 4.3 Diagrammatic representation of monohybrid cross' and its in-figure labels (Parental, Tall, Dwarf, F1 generation, Selfing, F2 generation) - left for the special transcriber, bbox in original 1654x2339 pixel coordinates. The right-hand column paragraph beginning 'If we use alphabetical symbols' runs on into the full-width text below the figure; it is kept as one block (n=3). F1 and F2 appear as subscripts in print and are written here as 'F1' and 'F2'. previous_page_last_block was null even though this is page 4, so the continuation judgement for the first block rests on the page image alone; the page opens with a figure and the first text sentence starts cleanly, so first_block_continues_from_previous is false."
 }

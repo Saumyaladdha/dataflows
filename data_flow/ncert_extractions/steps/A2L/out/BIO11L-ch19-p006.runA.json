@@ -1,0 +1,188 @@
+{
+ "page": {
+  "width_px": 1700,
+  "height_px": 2178,
+  "body_text_size_px": 20.0,
+  "page_kind": "ordinary",
+  "text_block": [
+   0.314,
+   0.1341,
+   0.902,
+   0.8953
+  ],
+  "fill": 0.99,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.314,
+    "x1": 0.902
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0,
+    1.0,
+    0.0795
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#e0ebb6"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.0,
+    0.0803,
+    1.0,
+    0.0928
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#d1d2d4"
+  },
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.143,
+    0.083,
+    0.177,
+    0.092
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "center",
+   "font": "serif-bold",
+   "fill": "#ffffff",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.839,
+    0.083,
+    0.899,
+    0.092
+   ],
+   "column": "full",
+   "size_rel": 0.85,
+   "align": "right",
+   "font": "serif",
+   "text_color": "#221f1f"
+  },
+  {
+   "n": 1,
+   "role": "section_heading",
+   "bbox": [
+    0.316,
+    0.1341,
+    0.553,
+    0.1465
+   ],
+   "column": "full",
+   "size_rel": 1.15,
+   "align": "left",
+   "font": "serif-bold",
+   "text_color": "#00adef",
+   "space_before": 0.0413
+  },
+  {
+   "n": 2,
+   "role": "paragraph",
+   "bbox": [
+    0.314,
+    0.1616,
+    0.902,
+    0.2319
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.0151
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.314,
+    0.2383,
+    0.902,
+    0.286
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.0064
+  },
+  {
+   "n": 4,
+   "role": "figure",
+   "bbox": [
+    0.291,
+    0.3182,
+    0.831,
+    0.6437
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.0322
+  },
+  {
+   "n": null,
+   "role": "figure_caption",
+   "bbox": [
+    0.186,
+    0.6726,
+    0.901,
+    0.7025
+   ],
+   "column": "full",
+   "size_rel": 0.9,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.0289
+  },
+  {
+   "n": 5,
+   "role": "paragraph",
+   "bbox": [
+    0.314,
+    0.7296,
+    0.902,
+    0.8953
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "align": "justify",
+   "font": "serif",
+   "text_color": "#221f1f",
+   "space_before": 0.0271
+  },
+  {
+   "n": null,
+   "role": "footer_rule",
+   "bbox": [
+    0.0,
+    0.9564,
+    1.0,
+    1.0
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#cadf7f"
+  }
+ ],
+ "note": "Ordinary verso body page, folio 244, single full column x 0.314-0.902 (wide empty left margin). Figure 19.4 (two-panel drawing (a) adrenal gland on kidney, (b) section; bbox includes its labels and (a)/(b) sub-labels) matched to A2 figure block n=4. Its caption 'Figure 19.4 Diagrammatic representation of ...' is not an A2 block, so n=null; it hangs out into the left margin (x0 0.186) with 'Figure 19.4' in bold and the second line indented to ~0.295. Paragraph n=5 runs on to the next page. Header: pale green band #e0ebb6 (y 0-0.0795) over a grey strip #d1d2d4 (y 0.080-0.093), both reported as page_header_band; folio sits on a white tab rising into the green band. Foot: solid green band #cadf7f (y 0.956-1.0) reported as footer_rule; the '2024-25' reprint stamp printed on it is not the folio and is not reported as an element. Diagonal grey 'NCERT not to be republished' watermark ignored. body_text_size_px is an estimated cap-to-baseline height (~20px; ascender-to-baseline ~21px, full line ink ~28px, line pitch ~40px). size_pt omitted: DPI not given. Section headings are cyan #00adef bold serif. Fill colours sampled from flat interiors."
+}

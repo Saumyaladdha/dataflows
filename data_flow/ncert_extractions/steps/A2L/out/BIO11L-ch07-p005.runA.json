@@ -1,0 +1,32 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2178,
+    "body_text_size_px": 19.0,
+    "text_block": [0.098, 0.131, 0.878, 0.903],
+    "fill": 1.0,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.687},
+      {"id": "left", "x0": 0.098, "x1": 0.484},
+      {"id": "right", "x0": 0.498, "x1": 0.878}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.078], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.078, 1.0, 0.092], "column": "full", "size_rel": 1.0, "fill": "#d1d2d4", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.080, 0.416, 0.091], "column": "full", "size_rel": 0.9, "align": "left", "font": "serif"},
+    {"n": null, "role": "page_number", "bbox": [0.826, 0.079, 0.850, 0.092], "column": "full", "size_rel": 1.1, "align": "right", "font": "serif-bold"},
+    {"n": 1, "role": "paragraph", "bbox": [0.098, 0.131, 0.687, 0.193], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.039},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.195, 0.687, 0.578], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.002, "indent": 0.029},
+    {"n": 3, "role": "paragraph", "bbox": [0.098, 0.580, 0.484, 0.770], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.002, "indent": 0.029},
+    {"n": 4, "role": "paragraph", "bbox": [0.098, 0.772, 0.484, 0.900], "column": "left", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.002, "indent": 0.029},
+    {"n": 5, "role": "figure", "bbox": [0.498, 0.227, 0.871, 0.495], "column": "right", "size_rel": 1.0},
+    {"n": null, "role": "figure_caption", "bbox": [0.529, 0.514, 0.825, 0.529], "column": "right", "size_rel": 0.95, "align": "center", "font": "serif", "space_before": 0.019},
+    {"n": 6, "role": "figure", "bbox": [0.503, 0.550, 0.878, 0.878], "column": "right", "size_rel": 1.0, "space_before": 0.021},
+    {"n": null, "role": "figure_caption", "bbox": [0.537, 0.887, 0.851, 0.903], "column": "right", "size_rel": 0.95, "align": "center", "font": "serif", "space_before": 0.009}
+    ,
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.954, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Recto body page. Block 1 and the first two lines of block 2 run the full measure (0.098-0.687); from y~0.233 the text narrows to a left column (0.098-0.484) and Figures 7.3 (block 5, male reproductive system) and 7.4 (block 6, female reproductive system) are stacked in a right column (0.498-0.878) that extends into the outer margin. Block 2 is column full because it starts full width and then wraps. The captions 'Figure 7.3 Male reproductive system' and 'Figure 7.4 Female reproductive system' have no A2 blocks, so n null. Header: light-green band #e0ebb6 over grey strip #d1d2d4; running head 'STRUCTURAL ORGANISATION IN ANIMALS' at left, folio 83 on a white tab at right. Foot: solid green band #cadf7f carrying '2024-25', reported as footer_rule. size_pt omitted: DPI not known. Watermark ignored."
+}

@@ -1,0 +1,24 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2175,
+    "body_text_size_px": 22,
+    "text_block": [0.155, 0.132, 0.809, 0.728],
+    "fill": 0.62,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.155, "x1": 0.809}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.080], "column": "full", "size_rel": 1.0, "fill": "#e0ebb6"},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.081, 0.301, 0.094], "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "fill": "#d1d2d4"},
+    {"n": null, "role": "page_number", "bbox": [0.825, 0.080, 0.864, 0.095], "column": "full", "size_rel": 1.1, "align": "center", "font": "serif-bold", "fill": "#ffffff"},
+    {"n": 1, "role": "paragraph", "bbox": [0.155, 0.132, 0.809, 0.219], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.038},
+    {"n": 2, "role": "paragraph", "bbox": [0.155, 0.222, 0.809, 0.273], "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.003},
+    {"n": 3, "role": "major_heading", "bbox": [0.450, 0.322, 0.544, 0.338], "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "text_color": "#00a0dc", "space_before": 0.049},
+    {"n": 4, "role": "list", "bbox": [0.155, 0.372, 0.809, 0.728], "column": "full", "size_rel": 1.0, "align": "left", "font": "serif", "space_before": 0.034},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.958, 1.0, 1.0], "column": "full", "size_rel": 1.0, "fill": "#cadf7f"}
+  ],
+  "note": "Ordinary recto body page (folio 165), single column, last page of the chapter. Two continuation paragraphs of the Summary, then the centred blue EXERCISES heading and twelve numbered questions as one list element; sub-parts (a)(b)(c) under questions 1 and 7 are indented about 0.038 of page width beyond the question text, which itself starts about 0.039 in from the column edge. The page ends at about 0.73, leaving the lower quarter empty. Foot green strip reported as footer_rule. page_kind added as an extra page field."
+}

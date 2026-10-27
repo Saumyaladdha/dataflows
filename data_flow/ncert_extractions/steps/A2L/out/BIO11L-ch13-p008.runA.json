@@ -1,0 +1,36 @@
+{
+  "page": {
+    "width_px": 1700,
+    "height_px": 2182,
+    "body_text_size_px": 20.0,
+    "text_block": [0.098, 0.134, 0.849, 0.904],
+    "fill": 0.97,
+    "page_kind": "ordinary",
+    "columns": [
+      {"id": "full", "x0": 0.098, "x1": 0.686}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 1.0, 0.095],
+     "column": "full", "size_rel": 1.0, "fill": "#e0ebb6", "space_before": 0.0},
+    {"n": null, "role": "running_header", "bbox": [0.138, 0.083, 0.388, 0.095],
+     "column": "full", "size_rel": 0.9, "align": "left", "font": "serif", "fill": "#d1d2d4",
+     "text_color": "#231f20", "space_before": 0.0},
+    {"n": null, "role": "page_number", "bbox": [0.815, 0.066, 0.871, 0.096],
+     "column": "full", "size_rel": 1.1, "align": "center", "font": "sans", "fill": "#ffffff",
+     "text_color": "#231f20", "space_before": 0.0},
+    {"n": 1, "role": "figure", "bbox": [0.121, 0.134, 0.849, 0.358],
+     "column": "full", "size_rel": 1.0, "space_before": 0.038},
+    {"n": null, "role": "figure_caption", "bbox": [0.217, 0.369, 0.751, 0.382],
+     "column": "full", "size_rel": 0.9, "align": "center", "font": "serif", "space_before": 0.011},
+    {"n": 2, "role": "paragraph", "bbox": [0.098, 0.400, 0.686, 0.535],
+     "column": "full", "size_rel": 1.0, "align": "justify", "font": "serif", "space_before": 0.018},
+    {"n": 3, "role": "figure", "bbox": [0.218, 0.550, 0.801, 0.875],
+     "column": "full", "size_rel": 1.0, "space_before": 0.015},
+    {"n": null, "role": "figure_caption", "bbox": [0.260, 0.890, 0.730, 0.904],
+     "column": "full", "size_rel": 0.9, "align": "center", "font": "serif", "space_before": 0.015},
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.956, 1.0, 1.0],
+     "column": "full", "size_rel": 1.0, "fill": "#cadf7f", "space_before": 0.052}
+  ],
+  "note": "Ordinary single-column recto page (folio 173 in a white tab at right of the header band). Body prose column is x 0.098-0.686; Figure 13.8 (flow diagram in a magenta outline box, no fill) extends past it to x 0.849, and Figure 13.9 (four leaf drawings, panels (a) and (b), including in-figure labels) sits centred below the paragraph. The two figure captions have no A2 blocks so n is null. Header band #e0ebb6 with grey strip #d1d2d4; footer band #cadf7f carries '2024-25'. Diagonal NCERT watermark ignored. size_pt omitted because the page DPI is not given."
+}
