@@ -29,6 +29,7 @@ Answer this question. Give the option number and one line of reason. For a numer
 ## Input
 You receive one JSON file at the input path in your instruction. It contains:
 - `stem_en`, `statements`, `list_i`, `list_ii`, `options_en`, `figure_image` (if any)
+- `option_images` (if any): `{option number: image path}` for options printed as drawings (graphs, structures). Look at each one; an empty `options_en` entry with an image is that drawing.
 
 ## Rules for this step
 - Choose exactly one option, or "unsure".

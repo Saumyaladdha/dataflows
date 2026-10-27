@@ -214,6 +214,47 @@ def main():
         return 1
     solution_y = solution_tops(source, paper["meta"]["dpi"])
     jobs = []
+
+    def cut_option_crops(question, read):
+        """PER-OPTION CROPS, where the options are themselves drawings. One box around all four
+        gives a tall strip and four `[structure diagram]` lines, and the reader has to count down
+        the strip to find option 3. Cut separately, each drawing prints beside its own number.
+
+        Independent of the stem's own figure: 2018_AA q007 (four graphs), q064 (four carbocations)
+        and q068 have option drawings and NO stem figure, and with the cut nested under the stem
+        figure's box their options were never cut -- the blind solver then saw four empty options."""
+        question.pop("agent_option_images", None)
+        question.pop("agent_option_boxes", None)
+        parts = question["parts"] or []
+        boxes = read.get("option_boxes") or {}
+        if not parts or not boxes:
+            return
+        cut_options, option_boxes = {}, {}
+        for key in sorted(boxes):
+            box = boxes[key]
+            if len(box) != 4 or box[2] - box[0] < MIN_BOX_PX or box[3] - box[1] < MIN_BOX_PX:
+                continue
+            # EACH OPTION GETS ITS OWN ANCHOR. See anchor(): a four-option panel can straddle the
+            # page break, and the figure's offset is only right for the options on the figure's page.
+            option_part, raw_option = to_page(parts, box)
+            option_page = within([raw_option[0] - FIGURE_PAD_PX, raw_option[1] - FIGURE_PAD_PX,
+                                  raw_option[2] + FIGURE_PAD_PX, raw_option[3] + FIGURE_PAD_PX],
+                                 option_part["bbox"])
+            option_cut = solution_after(solution_y, option_part["page"], option_part["bbox"][1],
+                                        (option_part["bbox"][0], option_part["bbox"][2]))
+            if option_cut is not None and option_page[1] >= option_cut - SOLUTION_SLACK_PX:
+                continue                     # below the answer line: the solution's own drawing
+            option_rel = os.path.join("figures_agent", args.paper_id,
+                                      "q%03d_option_%s.png" % (question["qno"], key))
+            jobs.append((option_part["page"] + 1, option_page,
+                         os.path.join(rc.pp(*CORPUS), option_rel)))
+            cut_options[key] = option_rel
+            option_boxes[key] = {"page": option_part["page"], "bbox": option_page}
+        if cut_options:
+            question["agent_option_images"] = cut_options
+            question["agent_option_boxes"] = option_boxes
+            counts["option_crops"] += len(cut_options)
+
     for question in paper["questions"]:
         read = reads.get(question["qno"])
         if read is None:
@@ -224,6 +265,7 @@ def main():
         bbox = read.get("figure_bbox")
         if not read.get("has_figure"):
             question["agent_figure_images"] = []
+            cut_option_crops(question, read)
             continue
         counts["agent_says_figure"] += 1
         if bbox and len(bbox) == 4:
@@ -241,6 +283,7 @@ def main():
                 question["agent_figure_note"] = (
                     "agent reported a figure but its box measures %gx%g px, too small to cut; "
                     "the question crop still holds the picture" % (width, height))
+                cut_option_crops(question, read)
                 continue
         if not bbox or len(bbox) != 4:
             # The agent saw a figure and could not box it. Recorded, not guessed: the question crop
@@ -248,6 +291,7 @@ def main():
             counts["figure_without_a_box"] += 1
             question["agent_figure_images"] = []
             question["agent_figure_note"] = "agent reported a figure with no usable bbox"
+            cut_option_crops(question, read)
             continue
         # The box is in the QUESTION CROP's pixel space. The crop was cut from the page at a known
         # offset, so the box has to be moved back onto the page before it can be re-cut.
@@ -304,35 +348,7 @@ def main():
         question["agent_figure_boxes"] = [{"page": part["page"], "bbox": page_box}]
         counts["cut"] += 1
 
-        # PER-OPTION CROPS, where the options are themselves drawings. One box around all four gives
-        # a tall strip and four `[structure diagram]` lines, and the reader has to count down the
-        # strip to find option 3. Cut separately, each drawing prints beside its own number.
-        boxes = read.get("option_boxes") or {}
-        cut_options, option_boxes = {}, {}
-        for key in sorted(boxes):
-            box = boxes[key]
-            if len(box) != 4 or box[2] - box[0] < MIN_BOX_PX or box[3] - box[1] < MIN_BOX_PX:
-                continue
-            # EACH OPTION GETS ITS OWN ANCHOR. See anchor(): a four-option panel can straddle the
-            # page break, and the figure's offset is only right for the options on the figure's page.
-            option_part, raw_option = to_page(parts, box)
-            option_page = within([raw_option[0] - FIGURE_PAD_PX, raw_option[1] - FIGURE_PAD_PX,
-                                  raw_option[2] + FIGURE_PAD_PX, raw_option[3] + FIGURE_PAD_PX],
-                                 option_part["bbox"])
-            option_cut = solution_after(solution_y, option_part["page"], option_part["bbox"][1],
-                                        (option_part["bbox"][0], option_part["bbox"][2]))
-            if option_cut is not None and option_page[1] >= option_cut - SOLUTION_SLACK_PX:
-                continue                     # below the answer line: the solution's own drawing
-            option_rel = os.path.join("figures_agent", args.paper_id,
-                                      "q%03d_option_%s.png" % (question["qno"], key))
-            jobs.append((option_part["page"] + 1, option_page,
-                         os.path.join(rc.pp(*CORPUS), option_rel)))
-            cut_options[key] = option_rel
-            option_boxes[key] = {"page": option_part["page"], "bbox": option_page}
-        if cut_options:
-            question["agent_option_images"] = cut_options
-            question["agent_option_boxes"] = option_boxes
-            counts["option_crops"] += len(cut_options)
+        cut_option_crops(question, read)
 
     # THE SOLUTION'S OWN FIGURES, each at the step it belongs to. b3s-solution-reader boxes every
     # drawing in the printed working against the SOLUTION crop, with `after_step`; each is cut from

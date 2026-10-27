@@ -1,122 +1,95 @@
 {
  "source": "steps/QCHAP/out and steps/QTOPIC/out",
- "chapters_wanted": [],
+ "chapters_wanted": [
+  {
+   "chapter": "unnamed: Taxonomy gap: expected chapter 'Reproduction in Organisms' (old NCERT Class 12 Ch 1, juvenile/reproductive/sen",
+   "questions": [
+    "2018_AA#q107"
+   ],
+   "question_count": 1,
+   "notes": [
+    "Taxonomy gap: expected chapter 'Reproduction in Organisms' (old NCERT Class 12 Ch 1, juvenile/reproductive/senescent phases; bamboo flowers once in 50-100 years) is not in the chapter list. Nearest listed chapters (Sexual Reproduction in Flowering Plants, Plant Growth and Development) do not cover this fact, so not forced."
+   ]
+  },
+  {
+   "chapter": "unnamed: Taxonomy gap: expected chapter 'Reproduction in Organisms' (asexual reproduction / vegetative propagation; off",
+   "questions": [
+    "2018_AA#q108"
+   ],
+   "question_count": 1,
+   "notes": [
+    "Taxonomy gap: expected chapter 'Reproduction in Organisms' (asexual reproduction / vegetative propagation; offsets as vegetative propagules produced by mitosis) is missing from the Biology botany chapter list. Nearest listed chapters (Cell Cycle and Cell Division - Significance of Mitosis; Sexual Reproduction in Flowering Plants) do not cover vegetative propagation, so no chapter was forced."
+   ]
+  }
+ ],
  "topics_wanted": [
   {
-   "topic": "Doppler Effect",
-   "in_chapters": [
-    "Waves"
-   ],
-   "questions": [
-    "2017_A#q020"
-   ],
-   "question_count": 1,
-   "notes": [
-    "Waves lists no Doppler Effect topic; 'Intensity, Pitch and Frequency of Sound Waves' covers frequency of sound generally, not apparent frequency from relative motion."
-   ]
-  },
-  {
-   "topic": "Antiseptics and Disinfectants",
-   "in_chapters": [
-    "Chemistry in Everyday Life"
-   ],
-   "questions": [
-    "2017_A#q049"
-   ],
-   "question_count": 1,
-   "notes": [
-    "Chemistry in Everyday Life lists only 'Analgesics'; the question tests antiseptics, so the chapter's topic list is missing an Antiseptics and Disinfectants topic."
-   ]
-  },
-  {
-   "topic": "Imperfections in Solids (Point Defects)",
-   "in_chapters": [
-    "The Solid State"
-   ],
-   "questions": [
-    "2017_A#q050"
-   ],
-   "question_count": 1,
-   "notes": [
-    "The Solid State lists only 'Density and Edge Length Calculations for Cubic Unit Cells' and 'Radius Ratio Rule and Coordination Number in Ionic Solids'; all four options test point defects and solid properties. correct_answer is null in the input; option 4 is the incorrect statement from the image."
-   ]
-  },
-  {
-   "topic": "Air Pollution",
-   "in_chapters": [
-    "Environmental Chemistry"
-   ],
-   "questions": [
-    "2017_A#q071"
-   ],
-   "question_count": 1,
-   "notes": [
-    "Environmental Chemistry lists only the 'Unspecified Topic' placeholder; this question needs an 'Air Pollution' topic (gaseous pollutants: oxides of carbon)."
-   ]
-  },
-  {
-   "topic": "Alkali Metals: Properties and Trends",
+   "topic": "Alkaline Earth Metals: Properties and Trends",
    "in_chapters": [
     "The s-Block Elements"
    ],
    "questions": [
-    "2017_A#q085"
+    "2018_AA#q058",
+    "2018_AA#q080"
    ],
-   "question_count": 1,
+   "question_count": 2,
    "notes": [
-    "The s-Block Elements lists only 'Biological Importance of Sodium, Potassium, Magnesium and Calcium'; the question needs a topic on alkali metal properties and trends (hydration enthalpy / hydrated ionic radius). Chapter choice itself looks correct."
+    "The s-Block Elements lists only 'Biological Importance of Sodium, Potassium, Magnesium and Calcium' and 'Alkali Metals: Properties and Trends'; there is no group 2 (alkaline earth metals) topic. The chapter choice itself is correct.",
+    "The s-Block Elements lists only 'Biological Importance of Sodium, Potassium, Magnesium and Calcium' and 'Alkali Metals: Properties and Trends'; Be, Ca and Ba are alkaline earth metals, not alkali metals. The chapter choice itself is correct."
    ]
   },
   {
-   "topic": "Nitrogen Fixation",
+   "topic": "Real Gases and van der Waals Equation",
    "in_chapters": [
-    "Mineral Nutrition"
+    "States of Matter"
    ],
    "questions": [
-    "2017_A#q093"
+    "2018_AA#q076",
+    "2018_AA#q086"
    ],
-   "question_count": 1,
+   "question_count": 2,
    "notes": [
-    "Mineral Nutrition lists only 'Essential Mineral Elements: Macronutrients and Micronutrients'; the chapter needs a nitrogen fixation / nitrogen metabolism topic."
+    "States of Matter lists only 'Graham's Law of Diffusion and Effusion', which does not fit this question about van der Waals constant 'a' and ease of liquefaction.",
+    "States of Matter lists only 'Graham's Law of Diffusion and Effusion'; the chapter choice itself is correct."
    ]
   },
   {
-   "topic": "Air Pollution and Its Control",
+   "topic": "Thermodynamic Principles of Metallurgy",
    "in_chapters": [
-    "Environmental Issues"
+    "General Principles and Processes of Isolation of Elements"
    ],
    "questions": [
-    "2017_A#q153"
+    "2018_AA#q048"
    ],
    "question_count": 1,
    "notes": [
-    "Environmental Issues lists only Soil Erosion/Desertification, Ozone Depletion, and Deforestation; it has no Air Pollution topic."
+    "The chapter General Principles and Processes of Isolation of Elements lists only 'Refining of Metals'; Ellingham diagram / reduction of oxides belongs to a missing thermodynamic principles of metallurgy topic."
    ]
   },
   {
-   "topic": "Animal Breeding",
+   "topic": "Classification of Polymers Based on Structure",
    "in_chapters": [
-    "Strategies for Enhancement in Food Production"
+    "Polymers"
    ],
    "questions": [
-    "2017_A#q155"
+    "2018_AA#q054"
    ],
    "question_count": 1,
    "notes": [
-    "Strategies for Enhancement in Food Production lists only the 'Unspecified Topic' placeholder; the question needs an Animal Breeding topic (inbreeding, outbreeding, cross-breeding, interspecific hybridisation)."
+    "Polymers chapter lists only 'Natural Rubber (cis-1,4-Polyisoprene) and Vulcanisation'; the chapter choice is correct but its topic list lacks polymer classification by structure (linear, branched, cross-linked)."
    ]
   },
   {
-   "topic": "Water Potential",
+   "topic": "Coagulation of Colloids and Hardy-Schulze Rule",
    "in_chapters": [
-    "Transport in Plants"
+    "Surface Chemistry"
    ],
    "questions": [
-    "2017_A#q177"
+    "2018_AA#q075"
    ],
    "question_count": 1,
    "notes": [
-    "Transport in Plants lists only 'Transpiration and Stomatal Opening and Closing'; this question needs a Water Potential topic."
+    "Surface Chemistry lists only 'Thermodynamics of Adsorption' and 'Classification of Colloids by Dispersed Phase and Dispersion Medium'; neither covers coagulation of colloids."
    ]
   }
  ]

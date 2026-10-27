@@ -34,7 +34,10 @@ from rdkit import Chem
 #: Elements a printed structure label is made of. Deliberately short: "X", "Y", "Z" and "A" are the
 #: booklet's unknowns, never atoms, so they must not parse as labels.
 ELEMENTS = {"H", "B", "C", "N", "O", "F", "Si", "P", "S", "Cl", "Br", "I", "Na", "K", "Li", "Mg",
-            "Al", "Sn", "Se", "Ag", "Cu", "Zn", "Hg"}
+            "Al", "Sn", "Se", "Ag", "Cu", "Zn", "Hg",
+            # metals of the coordination and d-block figures (2018_AA q073's Ni(CO)4)
+            "Fe", "Co", "Ni", "Cr", "Mn", "Pt", "Pd", "Au", "Pb", "Ti", "Ca", "Ba", "Sr", "Be",
+            "Cd", "Ge", "As", "Sb", "Bi", "Xe"}
 TOKEN = re.compile(r"([A-Z][a-z]?)(\d*)")
 LABEL = re.compile(r"^(?:[A-Z][a-z]?\d*)+$")
 DASHES = "–—−-"
@@ -573,6 +576,8 @@ class Label:
         self.bbox = (min(xs0), min(ys0), max(xs1), max(ys1))
         self.tokens = []                  # (element, count, x0, x1)
         self.charge = ""
+        self.wild = False                 # a letter for a group, matched to a SMILES [*]
+        self.hidden = collections.Counter()   # atoms inside brackets: the (CH3)2 of CH(CH3)2
 
     @property
     def heavy(self):
@@ -580,11 +585,14 @@ class Label:
         for el, n, _x0, _x1 in self.tokens:
             if el != "H":
                 out[el] += n
+        for el, n in self.hidden.items():
+            if el != "H":
+                out[el] += n
         return out
 
     @property
     def hydrogens(self):
-        return sum(n for el, n, _x0, _x1 in self.tokens if el == "H")
+        return sum(n for el, n, _x0, _x1 in self.tokens if el == "H") + self.hidden.get("H", 0)
 
     def anchor(self, x):
         """The element a bond arriving at horizontal position x attaches to."""
@@ -596,6 +604,38 @@ class Label:
         if pick[0] == "H":
             pick = min(heavy, key=lambda t: min(abs(pick[2] - t[3]), abs(pick[3] - t[2])))
         return pick[0]
+
+
+def _bracketed(text):
+    """([(element, count)] outside brackets, Counter of atoms inside) for "CH(CH3)2", or None."""
+    top, hidden, stack = [], collections.Counter(), []
+    i = 0
+    while i < len(text):
+        ch = text[i]
+        if ch == "(":
+            stack.append(collections.Counter())
+            i += 1
+        elif ch == ")":
+            if not stack:
+                return None
+            group = stack.pop()
+            m = re.match(r"\d*", text[i + 1:])
+            mult = int(m.group(0)) if m.group(0) else 1
+            i += 1 + len(m.group(0))
+            target = stack[-1] if stack else hidden
+            for el, n in group.items():
+                target[el] += n * mult
+        else:
+            m = re.match(r"([A-Z][a-z]?)(\d*)", text[i:])
+            if not m:
+                return None
+            el, n = m.group(1), int(m.group(2)) if m.group(2) else 1
+            if stack:
+                stack[-1][el] += n
+            else:
+                top.append((el, n))
+            i += len(m.group(0))
+    return None if stack else (top, hidden)
 
 
 def _attach_scripts(glyphs):
@@ -693,6 +733,10 @@ def _labels_and_dash_bonds(glyphs):
             mains = [g for g in part if g.script is None]
             k = 0
             for el, digits in TOKEN.findall(text):
+                if k + len(el) > len(mains):
+                    # a LETTER set as a subscript (a physics label such as V_A): not a formula
+                    lab.tokens = []
+                    break
                 gl = []
                 for _ in el:
                     gl.append(mains[k])
@@ -700,6 +744,43 @@ def _labels_and_dash_bonds(glyphs):
                 x0, x1 = gl[0].bbox[0], gl[-1].bbox[2]
                 lab.tokens.append((el, int(digits) if digits else 1, x0, x1))
                 # subscripts belong to scripts, not mains, so k does not advance over digits
+        elif "(" in text and re.fullmatch(r"(?:[A-Z][a-z]?\d*|\(|\)\d*)+", text)                 and _bracketed(text) is not None:
+            # A CONDENSED GROUP WITH BRACKETS: CH(CH3)2, C(CH3)3. The atoms outside the brackets
+            # are where a bond can arrive (tokens, with their x-range); those inside only count.
+            top, hidden = _bracketed(text)
+            mains = [g for g in part if g.script is None]
+            letters = [(i, g) for i, g in enumerate(mains)]
+            depth, k, ok = 0, 0, True
+            main_text = "".join(g.c for g in mains)
+            i = 0
+            while i < len(main_text):
+                ch = main_text[i]
+                if ch == "(":
+                    depth += 1
+                    i += 1
+                    continue
+                if ch == ")":
+                    depth -= 1
+                    i += 1
+                    continue
+                m = re.match(r"[A-Z][a-z]?", main_text[i:])
+                if not m:
+                    i += 1
+                    continue
+                if depth == 0 and k < len(top):
+                    el, n = top[k]
+                    lab.tokens.append((el, n, mains[i].bbox[0], mains[i + len(m.group(0)) - 1].bbox[2]))
+                    k += 1
+                i += len(m.group(0))
+            lab.hidden = hidden
+            if not all(el in ELEMENTS for el, _n in top) or not all(el in ELEMENTS for el in hidden):
+                lab.tokens = []
+        elif re.fullmatch(r"[A-Z]", text) and text not in ELEMENTS:
+            # A LETTER STANDING FOR A GROUP ("Y" on 2018_AA q064's arenium ions): the wildcard
+            # [*] of a SMILES. Only ever an atom when a bond reaches it (see `molecular` below).
+            g = [g for g in part if g.script is None][0]
+            lab.tokens = [("*", 1, g.bbox[0], g.bbox[2])]
+            lab.wild = True
         else:
             lab.tokens = []
         built.append(lab)
@@ -746,6 +827,10 @@ def read(page, rect_pt, keep_words=()):
     tr.subpaths = [sp for sp in tr.subpaths
                    if max(sp.bbox[2] - sp.bbox[0], sp.bbox[3] - sp.bbox[1]) > 0.05]
     tr.body_font = _body_font(page)
+    # Every character printed in and just around the box, unfiltered: what a label check can
+    # fall back on when a label is set on a slope or runs past the box edge (2018_AA q026, q035).
+    near = (tr.rect[0] - 12, tr.rect[1] - 12, tr.rect[2] + 12, tr.rect[3] + 12)
+    tr.nearby_text = "".join(g.c for g in _glyphs(page, near))
     glyphs = [g for g in _glyphs(page, tr.rect) if _inside(g.bbox, tr.rect, slack=0.5)]
     # The question's own words (its body font) are not the figure -- except the option and part
     # labels a figure is laid out by: 2017_A q052 sets "(1)".."(4)" beside its structures in it.
@@ -755,6 +840,13 @@ def read(page, rect_pt, keep_words=()):
         if OPTION_LABEL.match("".join(g.c for g in word)) or                 "".join(g.c for g in word) in set(keep_words):
             keep |= {id(g) for g in word}
     tr.glyphs = [g for g in glyphs if (g.font, round(g.size, 1)) != tr.body_font or id(g) in keep]
+    # A SUBSCRIPT JUST OUTSIDE A TIGHT BOX belongs to its letter inside it: 2018_AA q068's option
+    # box ends between "CH" and its "3", and the label read CH -- one H where the print has three.
+    edge = (tr.rect[0] - 4, tr.rect[1] - 4, tr.rect[2] + 4, tr.rect[3] + 4)
+    outside = [g for g in _glyphs(page, edge) if not _inside(g.bbox, tr.rect, slack=0.5)]
+    _attach_scripts(tr.glyphs + outside)
+    inside_ids = {id(g) for g in tr.glyphs}
+    tr.glyphs += [g for g in outside if g.script and g.host is not None and id(g.host) in inside_ids]
     _attach_scripts(tr.glyphs)
     # A full stop or comma standing alone belongs to the sentence the box clipped ("1." of the
     # solution's numbering, the stem's last stop), not to the figure.
@@ -920,11 +1012,14 @@ def read(page, rect_pt, keep_words=()):
         core = [n for n in comp if G.nodes[n]["kind"] != "h_leaf"]
         drawn = any(d.get("drawn") for _u, _v, d in sub.edges(data=True))
         has_ring = bool(nx.cycle_basis(sub))
-        has_label = any(G.nodes[n]["kind"] == "label" for n in core)
+        has_label = any(G.nodes[n]["kind"] == "label" and not G.nodes[n]["label"].wild
+                        for n in core)
         if not core:
             continue
         tr.components.append({"nodes": set(comp), "core": core, "drawn": drawn,
-                              "molecular": drawn and (has_ring or has_label),
+                              # one label on one loose line (a reagent beside an arrow's tail,
+                              # 2018_AA q066's NaOH) is not a drawn molecule
+                              "molecular": drawn and (has_ring or (has_label and len(core) > 2)),
                               "bonded": sub.number_of_edges() > 0})
     # reading order: top-to-bottom rows, left to right
     def key(c):
@@ -939,6 +1034,10 @@ def read(page, rect_pt, keep_words=()):
 # matching a SMILES to a printed molecule
 # ------------------------------------------------------------------------------------------------
 
+#: Counter-ions a booklet writes INTO a label: "ONa", "COONa", "SO3K".
+COUNTER_IONS = {"Li", "Na", "K", "Rb", "Cs"}
+
+
 def _mol_graph(mol):
     M = nx.Graph()
     for atom in mol.GetAtoms():
@@ -946,6 +1045,15 @@ def _mol_graph(mol):
     for bond in mol.GetBonds():
         order = 0 if bond.GetIsAromatic() else int(round(bond.GetBondTypeAsDouble()))
         M.add_edge(bond.GetBeginAtomIdx(), bond.GetEndAtomIdx(), order=order)
+    # A SALT: the SMILES has Na+ as its own ion, the print writes it into the label (2018_AA
+    # q066's "ONa", q068's "COONa"). Each lone alkali cation is joined to an anionic atom, so
+    # the label's atoms are one group.
+    cations = [a.GetIdx() for a in mol.GetAtoms()
+               if a.GetSymbol() in COUNTER_IONS and a.GetDegree() == 0 and a.GetFormalCharge() > 0]
+    anions = [a.GetIdx() for a in mol.GetAtoms()
+              if a.GetSymbol() in ("O", "N", "S") and a.GetFormalCharge() < 0]
+    for c, a in zip(cations, anions):
+        M.add_edge(a, c, order=1)
     return M
 
 

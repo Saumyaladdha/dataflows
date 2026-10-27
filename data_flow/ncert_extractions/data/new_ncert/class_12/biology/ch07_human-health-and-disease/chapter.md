@@ -16,7 +16,7 @@ The School of Cytogenetics and Radiation Research established at the Indian Agri
 
 Swaminathan initiated collaboration with Norman Borlaug, which culminated in the ‘Green Revolution’ through introduction of Mexican varieties of wheat in India. This was highly recognised and appreciated. He is also the initiator of ‘Lab-to-Land’, food security and several other environmental programmes. He has been honoured with Padma Bhushan and several other prestigious awards, medals and fellowships by institutions of excellence.
 
-![](figures/i002_fig01.png)
+![](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/i002_fig01_27102026.png)
 
 ## CHAPTER 7
 
@@ -52,15 +52,15 @@ Some of the human diseases are caused by protozoans too. You might have heard ab
 
 Let us take a glance at the life cycle of *Plasmodium* (Figure 7.1). *Plasmodium* enters the human body as sporozoites (infectious form) through the bite of infected female *Anopheles* mosquito. The parasites initially multiply within the liver cells and then attack the red blood cells (RBCs) resulting in their rupture. The rupture of RBCs is associated with release of a toxic substance, haemozoin, which is responsible for the chill and high fever recurring every three to four days. When a female *Anopheles* mosquito bites an infected person, these parasites enter the mosquito’s body and undergo further development. The parasites multiply within them to form sporozoites that are stored in their salivary glands. When these mosquitoes bite a human, the sporozoites are introduced into his/her body, thereby initiating the events mentioned above. It is interesting to note that the malarial parasite requires two hosts – human and mosquitoes – to complete its life cycle (Figure 7.1); the female *Anopheles* mosquito is the vector (transmitting agent) too.
 
-![Figure 7.1 Stages in the life cycle of Plasmodium](figures/p132_fig01.png)
+![Figure 7.1 Stages in the life cycle of Plasmodium](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/p132_fig01_27102026.png)
 
 **Figure 7.1** Stages in the life cycle of *Plasmodium*
 
 *Entamoeba histolytica* is a protozoan parasite in the large intestine of human which causes **amoebiasis (amoebic dysentery)**. Symptoms of this disease include constipation, abdominal pain and cramps, stools with excess mucous and blood clots. Houseflies act as mechanical carriers and serve to transmit the parasite from faeces of infected person to food and food products, thereby contaminating them. Drinking water and food contaminated by the faecal matter are the main source of infection.
 
-![Figure 7.2](figures/p133_fig01.png)
+![Figure 7.2 Diagram showing inflammation in one of the lower limbs due to elephantiasis](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/p133_fig01_27102026.png)
 
-**Figure 7.2**
+**Figure 7.2** Diagram showing inflammation in one of the lower limbs due to elephantiasis
 
 *Ascaris*, the common round worm and *Wuchereria*, the filarial worm, are some of the helminths which are known to be pathogenic to man. *Ascaris*, an intestinal parasite causes **ascariasis**. Symptoms of these disease include internal bleeding, muscular pain, fever, anemia and blockage of the intestinal passage. The eggs of the parasite are excreted along with the faeces of infected persons which contaminate soil, water, plants, etc. A healthy person acquires this infection through contaminated water, vegetables, fruits, etc.
 
@@ -68,7 +68,7 @@ Let us take a glance at the life cycle of *Plasmodium* (Figure 7.1). *Plasmodium
 
 Many fungi belonging to the genera *Microsporum, Trichophyton* and *Epidermophyton* are responsible for **ringworms** which is one of the most common infectious diseases in man. Appearance of dry, scaly lesions on various parts of the body such as skin, nails and scalp (Figure 7.3) are the main symptoms of the disease. These lesions are accompanied by intense itching. Heat and moisture help these fungi to grow, which makes them thrive in skin folds such as those in the groin or between the toes. Ringworms are generally acquired from soil or by using towels, clothes or even the comb of infected individuals.
 
-![Figure 7.3 Diagram showing ringworm affected area of the skin](figures/p133_fig02.png)
+![Figure 7.3 Diagram showing ringworm affected area of the skin](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/p133_fig02_27102026.png)
 
 **Figure 7.3** Diagram showing ringworm affected area of the skin
 
@@ -97,7 +97,7 @@ Innate immunity is non-specific type of defence, that is present at the time of 
 
 Acquired immunity, on the other hand is pathogen specific. It is characterised by memory. This means when our body encounters a pathogen for the first time it produces a response called **primary response** which is of low intensity. Subsequent encounter with the same pathogen elicits a highly intensified secondary or anamnestic response. This is ascribed to the fact that our body appears to have memory of the first encounter.
 
-![Figure 7.4 Structure of an antibody molecule](figures/p135_fig01.png)
+![Figure 7.4 Structure of an antibody molecule](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/p135_fig01_27102026.png)
 
 **Figure 7.4** Structure of an antibody molecule
 
@@ -131,7 +131,7 @@ The human immune system consists of lymphoid organs, tissues, cells and soluble 
 
 **Lymphoid organs**: These are the organs where origin and/or maturation and proliferation of lymphocytes occur. The primary lymphoid organs are **bone marrow** and **thymus** where immature lymphocytes differentiate into antigen-sensitive lymphocytes. After maturation the lymphocytes migrate to secondary lymphoid organs like spleen, lymph nodes, tonsils, Peyer’s patches of small intestine and appendix. The secondary lymphoid organs provide the sites for interaction of lymphocytes with the antigen, which then proliferate to become effector cells. The location of various lymphoid organs in the human body is shown in Figure 7.5.
 
-![Figure 7.5 Diagrammatic representation of Lymph nodes](figures/p138_fig01.png)
+![Figure 7.5 Diagrammatic representation of Lymph nodes](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/p138_fig01_27102026.png)
 
 **Figure 7.5** Diagrammatic representation of Lymph nodes
 
@@ -145,7 +145,7 @@ The word AIDS stands for **Acquired Immuno Deficiency Syndrome**. This means def
 
 AIDS is caused by the Human Immuno deficiency Virus (HIV), a member of a group of viruses called **retrovirus**, which have an envelope enclosing the RNA genome (Figure 7.6). Transmission of HIV-infection generally occurs by (a) sexual contact with infected person, (b) by transfusion of contaminated blood and blood products, (c) by sharing infected needles as in the case of intravenous drug abusers and (d) from infected mother to her child through placenta. So, people who are at high risk of getting this infection includes - individuals who have multiple sexual partners, drug addicts who take drugs intravenously, individuals who require repeated blood transfusions and children born to an HIV infected mother. *Do you know–when do people need repeated blood transfusion? Find out and make a list of such conditions*. It is important to note that HIV/AIDS is not spread by mere touch or physical contact; it spreads only through body fluids. It is, hence, imperative, for the physical and psychological well-being, that the HIV/AIDS infected persons are not isolated from family and society. There is always a time-lag between the infection and appearance of AIDS symptoms. This period may vary from a few months to many years (usually 5-10 years).
 
-![Figure 7.6 Replication of retrovirus](figures/p139_fig01.png)
+![Figure 7.6 Replication of retrovirus](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/p139_fig01_27102026.png)
 
 **Figure 7.6** Replication of retrovirus
 
@@ -177,25 +177,25 @@ The drugs, which are commonly abused are opioids, cannabinoids and coca alkaloid
 
 **Opioids** are the drugs, which bind to specific opioid receptors present in our central nervous system and gastrointestinal tract. Heroin (Figure 7.7), commonly called *smack* is chemically diacetylmorphine which is a white, odourless, bitter crystalline compound. This is obtained by acetylation of morphine (Figure 7.7), which is extracted from the latex of poppy plant *Papaver somniferum* (Figure 7.8). Generally taken by snorting and injection, heroin is a depressant and slows down body functions.
 
-![Figure 7.8 Opium poppy](figures/p142_fig01.png)
-
-**Figure 7.8** Opium poppy
-
-![Figure 7.7 Chemical structure of Morphine](figures/p142_fig02.png)
+![Figure 7.7 Chemical structure of Morphine](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/p142_fig02_27102026.png)
 
 **Figure 7.7** Chemical structure of Morphine
 
+![Figure 7.8 Opium poppy](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/p142_fig01_27102026.png)
+
+**Figure 7.8** Opium poppy
+
 **Cannabinoids** are a group of chemicals (Figure 7.9), which interact with cannabinoid receptors present principally in the brain. Natural cannabinoids are obtained from the inflorescences of the plant *Cannabis sativa* (Figure 7.10). The flower tops, leaves and the resin of cannabis plant are used in various combinations to produce marijuana, hashish, charas and ganja. Generally taken by inhalation and oral ingestion, these are known for their effects on cardiovascular system of the body.
 
-![Figure 7.10 Leaves of Cannabis sativa](figures/p143_fig01.png)
-
-**Figure 7.10** Leaves of *Cannabis sativa*
-
-![Figure 7.9 Skeletal structure of cannabinoid molecule](figures/p143_fig02.png)
+![Figure 7.9 Skeletal structure of cannabinoid molecule](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/p143_fig02_27102026.png)
 
 **Figure 7.9** Skeletal structure of cannabinoid molecule
 
-![Figure 7.11 Flowering branch of Datura](figures/p143_fig03.png)
+![Figure 7.10 Leaves of Cannabis sativa](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/p143_fig01_27102026.png)
+
+**Figure 7.10** Leaves of *Cannabis sativa*
+
+![Figure 7.11 Flowering branch of Datura](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/p143_fig03_27102026.png)
 
 **Figure 7.11** Flowering branch of *Datura*
 
@@ -308,4 +308,4 @@ afforded by vaccination and immunisation. Among other diseases, AIDS and cancer 
 
 17. In your view what motivates youngsters to take to alcohol or drugs and how can this be avoided?
 
-![](figures/002_a2l01.png)
+![](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch07/002_a2l01_27102026.png)

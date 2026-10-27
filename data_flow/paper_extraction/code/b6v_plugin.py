@@ -103,6 +103,10 @@ class B6VPlugin:
                 "options_en": read.get("options_en") or {},
                 "figure_image": (os.path.relpath(rc.pp(*CORPUS, figure), rc.pp())
                                  if figure else None),
+                # An option that IS a drawing (four graphs, four structures) reaches the solver as
+                # its own picture -- without it 2018_AA q007 and q064 were four empty options.
+                "option_images": {k: os.path.relpath(rc.pp(*CORPUS, v), rc.pp())
+                                  for k, v in sorted((question.get("agent_option_images") or {}).items())},
             }
             path = self._input_path(item_id)
             os.makedirs(os.path.dirname(path), exist_ok=True)

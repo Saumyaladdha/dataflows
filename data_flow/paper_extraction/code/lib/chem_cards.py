@@ -104,8 +104,25 @@ def name_check(name, smiles):
     ok_b, b = species_facts(smiles)
     if not (ok_a and ok_b) or not a.get("inchikey") or not b.get("inchikey"):
         return "unparsed", "could not compare"
-    return ("match" if a["inchikey"] == b["inchikey"] else "mismatch",
-            "name gives %s, SMILES gives %s" % (a["canonical"], b["canonical"]))
+    if a["inchikey"] == b["inchikey"]:
+        return "match", "name gives %s, SMILES gives %s" % (a["canonical"], b["canonical"])
+    # A METAL COMPLEX written two ways -- Ni(CO)4 as Ni=C=O or as Ni-C#O+ -- has one skeleton and
+    # differs only in InChI's charge layer once the metal is disconnected. Same compound; only
+    # for complexes, since phenol and phenoxide share a skeleton too and are not the same thing.
+    if (a["inchikey"][:14] == b["inchikey"][:14] and _has_metal(smiles)):
+        return "match", "same skeleton as the name (metal complex, charges drawn differently)"
+    return "mismatch", "name gives %s, SMILES gives %s" % (a["canonical"], b["canonical"])
+
+
+#: Metals whose complexes a booklet draws with dative bonds (and SMILES with charges).
+_METALS = {"Fe", "Co", "Ni", "Cr", "Mn", "Pt", "Pd", "Cu", "Zn", "Ag", "Au", "Ti", "V", "Mo", "W",
+           "Ru", "Rh", "Os", "Ir", "Cd", "Hg"}
+
+
+def _has_metal(smiles):
+    from rdkit import Chem
+    mol = Chem.MolFromSmiles(smiles or "")
+    return bool(mol) and any(a.GetSymbol() in _METALS for a in mol.GetAtoms())
 
 
 def _options(draw_module, drawer):

@@ -124,10 +124,24 @@ def _pairs(spec, trace):
     pairs, missing = [], []
     for text, spots in labelled.items():
         found = printed.get(text) or (bare.get(_bare(text)) if _bare(text) else None)
-        if not found:
-            missing.append(text)
-        elif len(spots) == 1 and len(found) == 1:
-            pairs.append((spots[0], found[0]))
+        if found:
+            if len(spots) == 1 and len(found) == 1:
+                pairs.append((spots[0], found[0]))
+            continue
+        # NOT MISSING, only not an anchor: a sign with no letters ("-", which 2018_AA q036 prints
+        # as an unmapped glyph), a piece of a printed phrase the spec drew in parts ("Bcos30°" of
+        # q026's "IlB cos 30°"), or any label at all where the figure's lettering is drawn as
+        # outlines and the page has no text in it (q001's V, O, T, A, B).
+        if not _bare(text) or not trace.glyphs:
+            continue
+        if any(text in p or (_bare(text) and _bare(text) in _bare(p)) for p in printed):
+            continue
+        # ...or its letters are all printed in and around the figure, in whatever order or
+        # direction (a label set along a slope, or half outside the box)
+        if not collections.Counter(_bare(text)) - collections.Counter(
+                _bare(getattr(trace, "nearby_text", ""))):
+            continue
+        missing.append(text)
     return pairs, missing, printed, labelled
 
 

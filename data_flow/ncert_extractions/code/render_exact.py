@@ -1051,7 +1051,12 @@ def render(doc, chapter_dir):
                                   f'<span class="tex" data-tex="{esc(tex)}">'
                                   f'{marked(body, marks)}</span></div>')
                     continue
-                geom = n.get("line_geom") if body == (n.get("body") or "") else None
+                # A list in one box prints its items joined by newlines (`_join_items`), its body
+                # by spaces -- same length, same offsets -- so the measured lines still apply.
+                # Compared strictly, BIO12L ch07 p147's list was reflowed and ran over the Summary.
+                geom = (n.get("line_geom")
+                        if body.replace("\n", " ") == (n.get("body") or "").replace("\n", " ")
+                        else None)
                 ends = True
                 # a page-break fragment carries its own lines (`frag_line_geom`)
                 if not geom and n.get("frag_line_geom"):
