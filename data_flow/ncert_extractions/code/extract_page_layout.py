@@ -566,7 +566,7 @@ def classify(text, runs, bbox, page_w, page_h, body_size,
     # categories to which some common organisms belong.` is running prose, and typing it as a
     # caption turned a paragraph into a figure node with no picture. A caption is short and is
     # not a sentence -- it does not end in a full stop and does not run past a line or two.
-    m_cap = re.match(r"^(Figure|Fig\.|TABLE|Table)\s*\d+\.\d+(.*)$", text, re.S)
+    m_cap = re.match(r"^(FIGURE|Figure|Fig\.|TABLE|Table)\s*\d+\.\d+(.*)$", text, re.S)
     if m_cap:
         tail = m_cap.group(2).strip()
         # Long is not prose: Figure 3.1's caption lists every alga it shows (BIO11L ch03 p025,
@@ -578,7 +578,7 @@ def classify(text, runs, bbox, page_w, page_h, body_size,
         # ...unless it is SET as a caption: its label a bold run of its own, the text below body
         # size. Figure 1.8's caption (BIO12L ch01 p010) is 197 characters ending in a full stop,
         # `Figure 1.8` in Bookman-Demi at 9.5pt over 10.5pt prose, and was typed a paragraph.
-        label = re.match(r"^(Figure|Fig\.|TABLE|Table)\s*\d+\.\d+", text).group(0)
+        label = re.match(r"^(FIGURE|Figure|Fig\.|TABLE|Table)\s*\d+\.\d+", text).group(0)
         set_as_caption = (runs and runs[0].get("b") and runs[0]["t"].strip().startswith(label)
                           and size < body_size * 0.97)
         if set_as_caption or not looks_like_prose:
@@ -1302,7 +1302,12 @@ def _drop_overprint(blocks, tol=1.0):
     return out
 
 
-_CAPTION_START = re.compile(r"^\s*(?:Figure|Fig\.|TABLE|Table)\s*\d")
+# NCERT CLASS 12 PHYSICS SETS ITS CAPTION LABEL IN CAPS -- `FIGURE 1.2 Electroscopes:`
+# -- where Biology and Class 11 Physics print `Figure 1.2` / `Fig. 1.1`. Spelling only the
+# mixed-case forms meant not one of PHY12L ch01's 35 cut figures was recognised as having
+# a caption: the chapter held ONE figure node and the captions stayed in the tree as
+# ordinary paragraphs, cutting the prose they were left inside.
+_CAPTION_START = re.compile(r"^\s*(?:FIGURE|Figure|Fig\.|TABLE|Table)\s*\d")
 
 
 def _join_caption_lines(elements, gap_pt=4.0):
@@ -1627,7 +1632,7 @@ def _prepare_text_blocks(blocks):
         while lead < len(rows) and _LABEL_ROW.match(texts[lead] or "x"):
             lead += 1
         rest = [l for r in rows[lead:] for l in r]
-        if lead and (lead == len(rows) or re.match(r"^\s*(Figure|Fig\.)\s*\d", texts[lead])):
+        if lead and (lead == len(rows) or re.match(r"^\s*(FIGURE|Figure|Fig\.)\s*\d", texts[lead])):
             for r in rows[:lead]:
                 for ln in r:
                     out.append({**b, "lines": [ln], "bbox": tuple(ln["bbox"])})
@@ -1876,7 +1881,7 @@ def extract(book_id, chapter_num):
         # that caption. Everything else waits for A2L, whose whole job is to say what a reader
         # sees as a figure -- a judgement, not an inference from path geometry.
         _caps = [e for e in elements if e["role"] == "figure_caption"
-                 and re.match(r"^\s*(Figure|Fig\.)", e.get("text") or "")]
+                 and re.match(r"^\s*(FIGURE|Figure|Fig\.)", e.get("text") or "")]
         _unclaimed = max(0, len(_caps) - len(_img))
         if _unclaimed <= 0:
             _vec = []

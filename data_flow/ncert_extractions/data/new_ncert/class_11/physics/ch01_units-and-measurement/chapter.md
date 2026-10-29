@@ -4,24 +4,19 @@
 
 *Printed pages 2–12*
 
-- *1.1 Introduction*
-- *1.2 The international system of units*
-- *1.3 Significant figures*
-- *1.4 Dimensions of physical quantities*
-- *1.5 Dimensional formulae and dimensional equations*
-- *1.6 Dimensional analysis and its applications*
-- *Summary*
-- *Exercises*
-
-## Chapter One
+**Chapter One**
 
 ## 1.1 INTRODUCTION
 
 Measurement of any physical quantity involves comparison with a certain basic, arbitrarily chosen, internationally accepted reference standard called **unit**. The result of a measurement of a physical quantity is expressed by a number (or numerical measure) accompanied by a unit. Although the number of physical quantities appears to be very large, we need only a limited number of units for expressing all the physical quantities, since they are inter-related with one another. The units for the fundamental or base quantities are called **fundamental** or **base units**. The units of all other physical quantities can be expressed as combinations of the base units. Such units obtained for the derived quantities are called **derived units**. A complete set of these units, both the base units and derived units, is known as the **system of units**.
 
+## 1.1 Introduction 1.2 The international system of units 1.3 Significant figures 1.4 Dimensions of physical quantities 1.5 Dimensional formulae and dimensional equations 1.6 Dimensional analysis and its applications
+
+Summary Exercises
+
 ## 1.2 THE INTERNATIONAL SYSTEM OF UNITS
 
-In earlier time scientists of different countries were using different systems of units for measurement. Three such systems, the CGS, the FPS (or British) system and the MKS system were in use extensively till recently.
+### 
 
 The base units for length, mass and time in these systems were as follows :
 
@@ -41,6 +36,16 @@ In SI, there are seven base units as given in Table 1.1. Besides the seven base 
 
 | Base quantity | Name | Symbol | Definition |
 | --- | --- | --- | --- |
+| Length | metre | m | The metre, symbol m, is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum c to be 299792458 when expressed in the unit m s⁻¹, where the second is defined in terms of the caesium frequency Δνcs. |
+| Mass | kilogram | kg | The kilogram, symbol kg, is the SI unit of mass. It is defined by taking the fixed numerical value of the Planck constant h to be 6.62607015 10⁻³⁴ when expressed in the unit J s, which is equal to kg m² s⁻¹, where the metre and the second are defined in terms of c and Δνcs. |
+| Time | second | s | The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency Δνcs, the unperturbed ground-state hyperfine transition frequency of the caesium-133 atom, to be 9192631770 when expressed in the unit Hz, which is equal to s⁻¹. |
+| Electric | ampere | A | The ampere, symbol A, is the SI unit of electric current. It is defined by taking the fixed numerical value of the elementary charge e to be 1.602176634 10⁻¹⁹ when expressed in the unit C, which is equal to A s, where the second is defined in terms of Δνcs. |
+| Thermo dynamic Temperature | kelvin | K | The kelvin, symbol K, is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant k to be 1.380649 10⁻²³ when expressed in the unit J K⁻¹, which is equal to kg m² s⁻² k⁻¹, where the kilogram, metre and second are defined in terms of h, c and Δνcs. |
+| Amount of substance | mole | mol | The mole, symbol mol, is the SI unit of amount of substance. One mole contains exactly 6.02214076 10²³ elementary entities. This number is the fixed numerical value of the Avogadro constant, N<sub>A</sub>, when expressed in the unit mol⁻¹ and is called the Avogadro number. The amount of substance, symbol n, of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles. |
+| Luminous intensity | candela | cd | The candela, symbol cd, is the SI unit of luminous intensity in given direction. It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540 10¹² Hz, K<sub>c</sub>d, to be 683 when expressed in the unit lm W⁻¹, which is equal to cd sr W⁻¹, or cd sr kg⁻¹m⁻²s³, where the kilogram, metre and second are defined in terms of h, c and Δνcs. |
+
+| Base quantity | Name | Symbol | Definition |
+| --- | --- | --- | --- |
 | Length | metre | m | The metre, symbol m, is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum c to be 299792458 when expressed in the unit m s⁻¹, where the second is defined in terms of the caesium frequency ∆ν*cs*. |
 | Mass | kilogram | kg | The kilogram, symbol kg, is the SI unit of mass. It is defined by taking the fixed numerical value of the Planck constant h to be 6.62607015 × 10⁻³⁴ when expressed in the unit J s, which is equal to kg m² s⁻¹, where the metre and the second are defined in terms of c and ∆ν*cs*. |
 | Time | second | s | The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency ∆ν*cs*, the unperturbed ground-state hyperfine transition frequency of the caesium-133 atom, to be 9192631770 when expressed in the unit Hz, which is equal to s⁻¹. |
@@ -49,32 +54,23 @@ In SI, there are seven base units as given in Table 1.1. Besides the seven base 
 | Amount of substance | mole | mol | The mole, symbol mol, is the SI unit of amount of substance. One mole contains exactly 6.02214076 × 10²³ elementary entities. This number is the fixed numerical value of the Avogadro constant, NA, when expressed in the unit mol⁻¹ and is called the Avogadro number. The amount of substance, symbol n, of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles. |
 | Luminous intensity | candela | cd | The candela, symbol cd, is the SI unit of luminous intensity in given direction. It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540 × 10¹² Hz, Kcd, to be 683 when expressed in the unit lm W⁻¹, which is equal to cd sr W⁻¹, or cd sr kg⁻¹m⁻²s³, where the kilogram, metre and second are defined in terms of h, c and ∆ν*cs*. |
 
+Mass kilogram kg The kilogram, symbol kg, is the SI unit of mass. It is defined by taking the fixed numerical value of the Planck constant *h* to be 6.62607015×10<sup>–34</sup> when expressed in the unit J s, which is equal to kg m<sup>2</sup> s<sup>–1</sup>, where the metre and <sup>the second are defined in terms of</sup> *<sup>c</sup>* <sup>and</sup> ∆ν*<sup>cs</sup>*.
+
+Time second s The second, symbol s, is the SI unit of time. It is defined by taking the fixed <sup>numerical value of the caesium frequency</sup> ∆ν*<sup>cs</sup>*<sup>, the unperturbed ground</sup>state hyperfine transition frequency of the caesium-133 atom, to be 9192631770 when expressed in the unit Hz, which is equal to s<sup>–1</sup>.
+
+Electric ampere A The ampere, symbol A, is the SI unit of electric current. It is defined by taking the fixed numerical value of the elementary charge *e* to be 1.602176634×10<sup>–19</sup> when expressed in the unit *C*, which is equal to A s, <sup>where the second is defined in terms of</sup> ∆ν*<sup>cs</sup>*.
+
+Thermo kelvin K The kelvin, symbol K, is the SI unit of thermodynamic temperature. dynamic It is defined by taking the fixed numerical value of the Boltzmann constant Temperature k to be 1.380649×10<sup>–23</sup> when expressed in the unit J K<sup>–1</sup>, which is equal to kg m<sup>2</sup> s<sup>–2</sup> k<sup>–1</sup>, where the kilogram, metre and second are defined in terms of *<sup>h, c</sup>* <sup>and</sup> ∆ν*<sup>cs</sup>*.
+
+Amount of mole mol The mole, symbol mol, is the SI unit of amount of substance. One mole substance contains exactly 6.02214076×10<sup>23</sup> elementary entities. This number is the fixed numerical value of the Avogadro constant, *N<sub>A</sub>*, when expressed in the unit mol<sup>–1</sup> and is called the Avogadro number. The amount of substance, symbol *n*, of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles.
+
+Luminous candela cd The candela, symbol cd, is the SI unit of luminous intensity in given direction. intensity It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540×10<sup>12</sup> Hz, K<sub>cd</sub>, to be 683 when expressed in the unit lm W<sup>–1</sup>, which is equal to cd sr W<sup>–1</sup>, or cd sr kg<sup>–1</sup>m<sup>–2</sup>s<sup>3</sup>, where the <sup>kilogram, metre and second are defined in terms of</sup> *<sup>h, c</sup>* <sup>and</sup> ∆ν*<sup>cs</sup>*.
+
 \* *The values mentioned here need not be remembered or asked in a test. They are given here only to indicate the extent of accuracy to which they are measured. With progress in technology, the measuring techniques get improved leading to measurements with greater precision. The definitions of base units are revised to keep up with this progress*.
 
 **Table 1.2 Some units retained for general use (Though outside SI)**
 
-| Name | Symbol | Value in SI Unit |
-| --- | --- | --- |
-| minute | min | 60 s |
-| hour | h | 60 min = 3600 s |
-| day | d | 24 h = 86400 s |
-| year | y | 365.25 d = 3.156 × 10⁷ s |
-| degree | ° | 1° = (π/ 180) rad |
-| litre | L | I dm³ = 10⁻³ m³ |
-| tonne | t | 10³ kg |
-| carat | c | 200 mg |
-| bar | bar | 0.1 MPa = 10⁵ Pa |
-| curie | Ci | 3.7 × 10¹⁰ s⁻¹ |
-| roentgen | R | 2.58 × 10⁻⁴ C/kg |
-| quintal | q | 100 kg |
-| barn | b | 100 fm² = 10⁻²⁸ m² |
-| are | a | 1 dam² = 10² m² |
-| hectare | ha | 1 hm² = 10⁴ m² |
-| standard atmospheric pressure | atm | 101325 Pa = 1.013 × 10⁵ Pa |
-
 Note that when mole is used, the elementary entities must be specified. These entities may be atoms, molecules, ions, electrons, other particles or specified groups of such particles.
-
-As discussed above, every measurement involves errors. Thus, the result of measurement should be reported in a way that indicates the precision of measurement. Normally, the reported result of measurement is a number that includes all digits in the number that are known reliably plus the first digit that is uncertain. The reliable digits plus the first uncertain digit are known as **significant digits** or **significant figures**. If we say the period of oscillation of a simple pendulum is 1.62 s, the digits 1 and 6 are reliable and certain, while the digit 2 is uncertain. Thus, the measured value has three significant figures. The length of an object reported after measurement to be 287.5 cm has four significant figures, the digits 2, 8, 7 are certain while the digit 5 is uncertain. Clearly, reporting the result of measurement that includes more digits than the significant digits is superfluous and also misleading since it would give a wrong idea about the precision of measurement.
 
 We employ units for some physical quantities that can be derived from the seven base units (Appendix A 6). Some derived units in terms of the SI base units are given in (Appendix A 6.1). Some SI derived units are given special names (Appendix A 6.2 ) and some derived SI units make use of these units with special names and the seven base units (Appendix A 6.3). These are given in Appendix A 6.2 and A 6.3 for your ready reference. Other units retained for general use are given in Table 1.2.
 
@@ -83,6 +79,8 @@ The rules for determining the number of significant figures can be understood fr
 Common SI prefixes and symbols for multiples and sub-multiples are given in Appendix A2. General guidelines for using symbols for physical quantities, chemical elements and nuclides are given in Appendix A7 and those for SI units and some other units are given in Appendix A8 for your guidance and ready reference.
 
 ## 1.3 SIGNIFICANT FIGURES
+
+As discussed above, every measurement involves errors. Thus, the result of measurement should be reported in a way that indicates the precision of measurement. Normally, the reported result of measurement is a number that includes all digits in the number that are known reliably plus the first digit that is uncertain. The reliable digits plus the first uncertain digit are known as **significant digits** or **significant figures**. If we say the period of oscillation of a simple pendulum is 1.62 s, the digits 1 and 6 are reliable and certain, while the digit 2 is uncertain. Thus, the measured value has three significant figures. The length of an object reported after measurement to be 287.5 cm has four significant figures, the digits 2, 8, 7 are certain while the digit 5 is uncertain. Clearly, reporting the result of measurement that includes more digits than the significant digits is superfluous and also misleading since it would give a wrong idea about the precision of measurement.
 
 - (1) For example, the length 2.308 cm has four significant figures. But in different units, the same value can be written as 0.02308 m or 23.08 mm or 23080 µm.
 
@@ -123,8 +121,6 @@ Since the last number has trailing zero(s) in a number with no decimal, we would
 
 (6) The multiplying or dividing factors which are neither rounded numbers nor numbers representing measured values are exact and have infinite number of significant digits. For example in r = d/2 or s = 2πr, the factor 2 is an exact number and it can be written as 2.0, 2.00
 
-example in *r* = *d*  or s = 2π*r*, the factor 2 is an 2
-
 For example, the sum of the numbers 436.32 g, 227.2 g and 0.301 g by mere arithmetic addition, is 663.821 g. But the least precise measurement (227.2 g) is correct to only one decimal place. The final result should, therefore, be rounded off to 663.8 g.
 
 *T* = *t* , *n* is *n* or 2.0000 as required. Similarly, in T = t/n , n is an exact number.
@@ -133,7 +129,7 @@ Similarly, the difference in length can be expressed as :
 
 ### 1.3.1 Rules for Arithmetic Operations with Significant Figures
 
-0.307 m – 0.304 m = 0.003 m = 3 ×10–3 m.
+0.307 m - 0.304 m = 0.003 m = 3 × 10⁻³ m.
 
 Note that we should not use the *rule* (1) applicable for multiplication and division and write 664 g as the result in the example of **addition** and 3.00 × 10⁻³ m in the example of **subtraction**. They do not convey the precision of measurement properly. For addition and subtraction, the rule is in terms of decimal places.
 
@@ -147,9 +143,7 @@ The result of computation with approximate numbers, which contain more than one 
 
 Thus, in the example above, density should be reported to *three* significant figures.
 
-4.237g = <sub>3</sub> = 1.69 g cm Density
-
-<sup>-3</sup> 2.51 cm 
+Density = 4.237g/(2.51 cm³) = 1.69 g cm⁻³
 
 In any involved or complex multi-step calculation, you should retain, in intermediate steps, one digit more than the significant digits and round off to proper significant figures at the end of the calculation. Similarly, a number known to be within many significant figures, such as in 1.99792458 × 10⁸ m/s for the speed of light in vacuum, is rounded off to an approximate value 3 × 10⁸ m/s , which is often employed in computations. Finally, remember that exact numbers that appear in formulae like 2 π in *T* = 2π√(L/g), have a large (infinite) number
 
@@ -177,7 +171,7 @@ Then, the error of the product of two (or more) experimental values, using the c
 
 This leads us to quote the final result as
 
-*l b* = 164 + 3 cm<sup>2</sup>
+l b = 164 ± 3 cm²
 
 Here 3 cm² is the uncertainty or error in the estimation of area of rectangular sheet.
 
@@ -213,7 +207,7 @@ Finally, remember that **intermediate results in a multi-step computation should
 
 (1) If the length and breadth of a thin rectangular sheet are measured, using a metre scale as 16.2 cm and, 10.1 cm respectively, there are three significant figures in each measurement. It means that the length *l* may be written as
 
-*l* = 16.2 ± 0.1 cm
+l = 16.2 ± 0.1 cm
 
 The dimensions of force are [M] [L]/[T]² = [M L T⁻²]. Thus, the force has one dimension in mass, one dimension in length, and –2 dimensions in time. The dimensions in all other base quantities are zero. otherwise rounding errors can build up. For example, the reciprocal of 9.58, calculated (after rounding off) to the same number of significant figures (three) is 0.104, but the reciprocal of 0.104 calculated to three significant figures is 9.62. However, if we had written 1/9.58 = 0.1044 and then taken the reciprocal to three significant figures, we would have retrieved the original value of 9.58.
 
@@ -249,7 +243,7 @@ Dimensions are customarily used as a preliminary test of the consistency of an e
 
 Now we can test the dimensional consistency or homogeneity of the equation
 
-( ) *x* = *x0* + *v t0* + 1/2 *a t*<sup>2</sup>
+x = x₀ + v₀ t + (1/2) a t²
 
 for the distance *x* travelled by a particle or body in time *t* which starts from the position *x*₀ with an initial velocity *v*₀ at time *t* = 0 and has uniform acceleration *a* along the direction of motion.
 
@@ -281,7 +275,7 @@ The dimensions of LHS and RHS are the same and hence the equation is dimensional
 
 **Answer** The dependence of time period *T* on the quantities *l, g* and *m* as a product may be written as :
 
-*T = k l**<sup>x</sup>* *g**<sup>y</sup>* *m**<sup>z</sup>*
+*T = k l<sup>x</sup>* *g<sup>y</sup>* *m<sup>z</sup>*
 
 where k is dimensionless constant and *x, y* and *z* are the exponents.
 
@@ -293,9 +287,9 @@ On equating the dimensions on both sides, we have
 
 **Answer** Every correct formula or equation must have the same dimensions on both sides of the equation. Also, only quantities with the same physical dimensions can be added or subtracted. The dimensions of the quantity on the right side are [M² L³ T⁻³] for (a); [M L² T⁻²] for (b) and (d); [M L T⁻²] for (c). The quantity on the right side of (e) has no proper dimensions since two quantities of different dimensions have been added. Since the kinetic energy *K* has the dimensions of [M L² T⁻²], formulas (a), (c) and (e) are ruled out. Note that dimensional arguments cannot tell which of the two, (b) or (d), is the correct formula. For this, one must turn to the actual definition of kinetic energy (see Chapter 5). The correct formula for kinetic energy is given by (b).
 
-*x + y* = 0; –2*y* = 1; and *z* = 0
+x + y = 0; -2y = 1; and z = 0
 
-So that *x* = 1 ,*y* = – 1 ,*z* = 0 2 2
+So that x = 1/2, y = -1/2, z = 0
 
 Then, *T* = *k l*<sup>½</sup> *g*<sup>–½</sup>
 
@@ -331,7 +325,7 @@ A number of exercises at the end of this chapter will help you develop skill in 
 
 **Note : In stating numerical answers, take care of significant figures**.
 
-1.1. Fill in the blanks
+**1.1** Fill in the blanks
 
    (a) The volume of a cube of side 1 cm is equal to .....m³
 
@@ -341,7 +335,7 @@ A number of exercises at the end of this chapter will help you develop skill in 
 
    (d) The relative density of lead is 11.3. Its density is ....g cm⁻³ or ....kg m⁻³.
 
-1.2. Fill in the blanks by suitable conversion of units
+**1.2** Fill in the blanks by suitable conversion of units
 
    (a) 1 kg m² s⁻² = ....g cm² s⁻²
 
@@ -351,9 +345,9 @@ A number of exercises at the end of this chapter will help you develop skill in 
 
    (d) G = 6.67 × 10⁻¹¹ N m² (kg)⁻² = .... (cm)³ s⁻² g⁻¹.
 
-1.3. A calorie is a unit of heat (energy in transit) and it equals about 4.2 J where 1J = 1 kg m² s⁻². Suppose we employ a system of units in which the unit of mass equals α kg, the unit of length equals β m, the unit of time is γ s. Show that a calorie has a magnitude 4.2 α⁻¹ β⁻² γ² in terms of the new units.
-
-1.4. Explain this statement clearly : “To call a dimensional quantity ‘large’ or ‘small’ is meaningless without specifying a standard for comparison”. In view of this, reframe the following statements wherever necessary :
+**1.3** A calorie is a unit of heat (energy in transit) and it equals about 4.2 J where 1J = 1 kg m² s⁻². Suppose we employ a system of units in which the unit of mass equals α kg, the unit of length equals β m, the unit of time is γ s. Show that a calorie has a magnitude 4.2 α⁻¹ β⁻² γ² in terms of the new units.
+1.4 Explain this statement clearly :
+“To call a dimensional quantity ‘large’ or ‘small’ is meaningless without specifying a standard for comparison”. In view of this, reframe the following statements wherever necessary :
 
    (a) atoms are very small objects
 
@@ -366,30 +360,19 @@ A number of exercises at the end of this chapter will help you develop skill in 
    (e) a proton is much more massive than an electron
 
    (f) the speed of sound is much smaller than the speed of light.
+1.5 A new unit of length is chosen such that the speed of light in vacuum is unity. What is the distance between the Sun and the Earth in terms of the new unit if light takes 8 min and 20 s to cover this distance ?
+1.6 Which of the following is the most precise device for measuring length : (a) a vernier callipers with 20 divisions on the sliding scale (b) a screw gauge of pitch 1 mm and 100 divisions on the circular scale (c) an optical instrument that can measure length to within a wavelength of light ?
+1.7 A student measures the thickness of a human hair by looking at it through a microscope of magnification 100. He makes 20 observations and finds that the average width of the hair in the field of view of the microscope is 3.5 mm. What is the estimate on the thickness of hair ?
 
-1.5. A new unit of length is chosen such that the speed of light in vacuum is unity. What is the distance between the Sun and the Earth in terms of the new unit if light takes 8 min and 20 s to cover this distance ?
-
-1.6. Which of the following is the most precise device for measuring length :
-
-   (a) a vernier callipers with 20 divisions on the sliding scale
-
-   (b) a screw gauge of pitch 1 mm and 100 divisions on the circular scale
-
-   (c) an optical instrument that can measure length to within a wavelength of light ?
-
-1.7. A student measures the thickness of a human hair by looking at it through a microscope of magnification 100. He makes 20 observations and finds that the average width of the hair in the field of view of the microscope is 3.5 mm. What is the estimate on the thickness of hair ?
-
-1.8. Answer the following :
+**1.8** Answer the following :
 
    (a) You are given a thread and a metre scale. How will you estimate the diameter of the thread ?
 
    (b) A screw gauge has a pitch of 1.0 mm and 200 divisions on the circular scale. Do you think it is possible to increase the accuracy of the screw gauge arbitrarily by increasing the number of divisions on the circular scale ?
 
-   (c) The mean diameter of a thin brass rod is to be measured by vernier callipers. Why is a set of 100 measurements of the diameter expected to yield a more reliable estimate than a set of 5 measurements only ?
+   (c) The mean diameter of a thin brass rod is to be measured by vernier callipers. Why is a set of 100 measurements of the diameter expected to yield a more reliable estimate than a set of 5 measurements only ? 1.9 The photograph of a house occupies an area of 1.75 cm² on a 35 mm slide. The slide is projected on to a screen, and the area of the house on the screen is 1.55 m². What is the linear magnification of the projector-screen arrangement.
 
-1.9. The photograph of a house occupies an area of 1.75 cm² on a 35 mm slide. The slide is projected on to a screen, and the area of the house on the screen is 1.55 m². What is the linear magnification of the projector-screen arrangement.
-
-1.10. State the number of significant figures in the following :
+**1.10** State the number of significant figures in the following :
 
    (a) 0.007 m²
 
@@ -403,24 +386,20 @@ A number of exercises at the end of this chapter will help you develop skill in 
 
    (f) 0.0006032 m²
 
-1.11. The length, breadth and thickness of a rectangular sheet of metal are 4.234 m, 1.005 m, and 2.01 cm respectively. Give the area and volume of the sheet to correct significant figures.
+### 1.11 The length, breadth and thickness of a rectangular sheet of metal are 4.234 m, 1.005 m, and 2.01 cm respectively. Give the area and volume of the sheet to correct significant figures.
 
-1.12. The mass of a box measured by a grocer’s balance is 2.30 kg. Two gold pieces of masses 20.15 g and 20.17 g are added to the box. What is
+### 1.12 The mass of a box measured by a grocer’s balance is 2.30 kg. Two gold pieces of masses 20.15 g and 20.17 g are added to the box. What is (a) the total mass of the box, (b) the difference in the masses of the pieces to correct significant figures ?
 
-   (a) the total mass of the box,
-
-   (b) the difference in the masses of the pieces to correct significant figures ?
-
-1.13. A famous relation in physics relates ‘moving mass’ *m* to the ‘rest mass’ mₒ of a particle in terms of its speed *v* and the speed of light, *c*. (This relation first arose as a consequence of special relativity due to Albert Einstein). A boy recalls the relation almost correctly but forgets where to put the constant c. He writes :
+### 1.13 A famous relation in physics relates ‘moving mass’ *m* to the ‘rest mass’ mₒ of a particle in terms of its speed *v* and the speed of light, *c*. (This relation first arose as a consequence of special relativity due to Albert Einstein). A boy recalls the relation almost correctly but forgets where to put the constant c. He writes :
 
 *m* = *<sup>0</sup>* − *<sup>m</sup>*  ( )  <sup>2 1/2</sup> . *1 v*
 
 Guess where to put the missing *c*.
 
-1.14. The unit of length convenient on the atomic scale is known as an angstrom and is denoted by Å: 1 Å = 10⁻¹⁰ m. The size of a hydrogen atom is about 0.5 Å. What is the total atomic volume in m³ of a mole of hydrogen atoms ?
+### 1.14 The unit of length convenient on the atomic scale is known as an angstrom and is denoted by Å: 1 Å = 10⁻¹⁰ m. The size of a hydrogen atom is about 0.5 Å. What is the total atomic volume in m³ of a mole of hydrogen atoms ?
 
-1.15. One mole of an ideal gas at standard temperature and pressure occupies 22.4 L (molar volume). What is the ratio of molar volume to the atomic volume of a mole of hydrogen ? (Take the size of hydrogen molecule to be about 1 Å). Why is this ratio so large ?
+### 1.15 One mole of an ideal gas at standard temperature and pressure occupies 22.4 L (molar volume). What is the ratio of molar volume to the atomic volume of a mole of hydrogen ? (Take the size of hydrogen molecule to be about 1 Å). Why is this ratio so large ?
 
-1.16. Explain this common observation clearly : If you look out of the window of a fast moving train, the nearby trees, houses etc. seem to move rapidly in a direction opposite to the train’s motion, but the distant objects (hill tops, the Moon, the stars etc.) seem to be stationary. (In fact, since you are aware that you are moving, these distant objects seem to move with you).
+### 1.16 Explain this common observation clearly : If you look out of the window of a fast moving train, the nearby trees, houses etc. seem to move rapidly in a direction opposite to the train’s motion, but the distant objects (hill tops, the Moon, the stars etc.) seem to be stationary. (In fact, since you are aware that you are moving, these distant objects seem to move with you).
 
-1.17. The Sun is a hot plasma (ionized matter) with its inner core at a temperature exceeding 10⁷ K, and its outer surface at a temperature of about 6000 K. At these high temperatures, no substance remains in a solid or liquid phase. In what range do you expect the mass density of the Sun to be, in the range of densities of solids and liquids or gases ? Check if your guess is correct from the following data : mass of the Sun = 2.0 ×10³⁰ kg, radius of the Sun = 7.0 × 10⁸ m.
+### 1.17 The Sun is a hot plasma (ionized matter) with its inner core at a temperature exceeding 10⁷ K, and its outer surface at a temperature of about 6000 K. At these high temperatures, no substance remains in a solid or liquid phase. In what range do you expect the mass density of the Sun to be, in the range of densities of solids and liquids or gases ? Check if your guess is correct from the following data : mass of the Sun = 2.0 ×10³⁰ kg, radius of the Sun = 7.0 × 10⁸ m.

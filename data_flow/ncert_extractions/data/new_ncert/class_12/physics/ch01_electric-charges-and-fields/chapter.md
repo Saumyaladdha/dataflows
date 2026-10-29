@@ -4,8 +4,6 @@
 
 *Printed pages 2–44*
 
-## Chapter One
-
 ## 1.1 Introduction
 
 All of us have the experience of seeing a spark or hearing a crackle when we take off our synthetic clothes or sweater, particularly in dry weather. Have you ever tried to find any explanation for this phenomenon? Another common example of electric discharge is the lightning that we see in the sky during thunderstorms. We also experience a sensation of an electric shock either while opening the door of a car or holding the iron bar of a bus after sliding from our seat. The reason for these experiences is discharge of electric charges through our body, which were accumulated due to rubbing of insulating surfaces. You might have also heard that this is due to generation of static electricity. This is precisely the topic we are going to discuss in this and the next chapter. Static means anything that does not move or change with time. *Electrostatics deals with the study of forces, fields and potentials arising from static charges*.
@@ -184,7 +182,7 @@ Thus, Coulomb’s law agrees with the Newton’s third law.
 
 - Coulomb’s law [Eq. (1.3)] gives the force between two charges *q*<sub>1</sub> and *q*<sub>2</sub> in vacuum. If the charges are placed in matter or the intervening space has matter, the situation gets complicated due to the presence of charged constituents of matter. We shall consider electrostatics in matter in the next chapter.
 
-**Example 1.3** Coulomb’s law for electrostatic force between two point charges and Newton’s law for gravitational force between two stationary point masses, both have inverse-square dependence on the distance between the charges and masses respectively. (a) Compare the strength of these forces by determining the ratio of their magnitudes (i) for an electron and a proton and (ii) for two protons. (b) Estimate the accelerations of electron and proton due to the electrical force of their mutual attraction when they are 1 Å (= 10<sup>-10</sup> m) apart? (*m**<sub>p</sub>* = 1.67 × 10<sup>–27</sup> kg, *m**<sub>e</sub>* = 9.11 × 10<sup>–31</sup> kg)
+**Example 1.3** Coulomb’s law for electrostatic force between two point charges and Newton’s law for gravitational force between two stationary point masses, both have inverse-square dependence on the distance between the charges and masses respectively. (a) Compare the strength of these forces by determining the ratio of their magnitudes (i) for an electron and a proton and (ii) for two protons. (b) Estimate the accelerations of electron and proton due to the electrical force of their mutual attraction when they are 1 Å (= 10<sup>-10</sup> m) apart? (*m<sub>p</sub>* = 1.67 × 10<sup>–27</sup> kg, *m<sub>e</sub>* = 9.11 × 10<sup>–31</sup> kg)
 
 ### Solution
 
@@ -200,7 +198,7 @@ where the negative sign indicates that the force is attractive. The correspondin
 
 *r* 
 
-where *m**<sub>p</sub>* and *m**<sub>e</sub>* are the masses of a proton and an electron respectively.
+where *m<sub>p</sub>* and *m<sub>e</sub>* are the masses of a proton and an electron respectively.
 
 2 2.4 10 4 <sub>0</sub> *F* = *e* = × *F* πε*Gm m*  39 *e G p e*
 
@@ -262,7 +260,7 @@ Thus the electrostatic force on A, due to B, remains unaltered.
 
 **FIGURE 1.5** A system of (a) three charges (b) multiple charges.
 
-The mutual electric force between two charges is given by Coulomb’s law. How to calculate the force on a charge where there are not one but several charges around? Consider a system of *n* stationary charges *q*<sub>1</sub>, *q*<sub>2</sub>, *q*<sub>3</sub>, ..., *q**<sub>n</sub>* in vacuum. What is the force on *q*<sub>1</sub> due to *q*<sub>2</sub>, *q*<sub>3</sub>, ..., *q**<sub>n</sub>*? Coulomb’s law is not enough to answer this question. Recall that forces of mechanical origin add according to the parallelogram law of addition. Is the same true for forces of electrostatic origin?
+The mutual electric force between two charges is given by Coulomb’s law. How to calculate the force on a charge where there are not one but several charges around? Consider a system of *n* stationary charges *q*<sub>1</sub>, *q*<sub>2</sub>, *q*<sub>3</sub>, ..., *q<sub>n</sub>* in vacuum. What is the force on *q*<sub>1</sub> due to *q*<sub>2</sub>, *q*<sub>3</sub>, ..., *q<sub>n</sub>*? Coulomb’s law is not enough to answer this question. Recall that forces of mechanical origin add according to the parallelogram law of addition. Is the same true for forces of electrostatic origin?
 
 Experimentally, it is verified that *force on any charge due to a number of other charges is the vector sum of all the forces on that charge due to the other charges, taken one at a time. The individual forces are unaffected due to the presence of other charges*. This is termed as the *principle of superposition*.
 
@@ -286,9 +284,9 @@ Thus the total force **F**<sub>1</sub> on *q*<sub>1</sub> due to the two charges
 
 The above calculation of force can be generalised to a system of charges more than three, as shown in Fig. 1.5(b).
 
-The principle of superposition says that in a system of charges *q*<sub>1</sub>, *q*<sub>2</sub>, ..., *q**<sub>n</sub>*, the force on *q*<sub>1</sub> due to *q*<sub>2</sub> is the same as given by Coulomb’s law, i.e., it is unaffected by the presence of the other charges *q*<sub>3</sub>, *q*<sub>4</sub>, ..., *q**<sub>n</sub>*. The total force **F**<sub>1</sub> on the charge *q*<sub>1</sub>, due to all other charges, is then given by the vector sum of the forces **F**<sub>12</sub>, **F**<sub>13</sub>, ..., **F**<sub>1</sub>*<sub>n</sub>*: i.e.,
+The principle of superposition says that in a system of charges *q*<sub>1</sub>, *q*<sub>2</sub>, ..., *q<sub>n</sub>*, the force on *q*<sub>1</sub> due to *q*<sub>2</sub> is the same as given by Coulomb’s law, i.e., it is unaffected by the presence of the other charges *q*<sub>3</sub>, *q*<sub>4</sub>, ..., *q<sub>n</sub>*. The total force **F**<sub>1</sub> on the charge *q*<sub>1</sub>, due to all other charges, is then given by the vector sum of the forces **F**<sub>12</sub>, **F**<sub>13</sub>, ..., **F**<sub>1</sub>*<sub>n</sub>*: i.e.,
 
- **F**1 = **F**12 + **F**13 + ...+ **F**1n = 1 **r** + **r** 4 <sub>0</sub> *qqqqr* ... *q q* ˆ   ˆ ˆ + + 1213212 12 1 *n*   <sub>2 1</sub>**<sup>r</sup>** 1 2 13 13 π*εrrnn* *<sup>q</sup>* <sub>=</sub><sup>∑</sup>*<sub>r</sub>**<sup>q</sup>* = 1 4π*ε*<sub>0 2 1</sub><sup>2</sup> ˆ**r**<sup>1</sup> (1.5) *i i i*
+ **F**1 = **F**12 + **F**13 + ...+ **F**1n = 1 **r** + **r** 4 <sub>0</sub> *qqqqr* ... *q q* ˆ   ˆ ˆ + + 1213212 12 1 *n*   <sub>2 1</sub>**<sup>r</sup>** 1 2 13 13 π*εrrnn* *<sup>q</sup>* <sub>=</sub><sup>∑</sup>*<sub>r</sub><sup>q</sup>* = 1 4π*ε*<sub>0 2 1</sub><sup>2</sup> ˆ**r**<sup>1</sup> (1.5) *i i i*
 
 *i* 
 
@@ -324,7 +322,7 @@ Force **F**1 on *Q* due to charge *q* at A = 3402πε Qq l along AO
 
 *Qq l*
 
-The resultant of forces **F****<sub>2</sub>** and **F****<sub>3</sub>** is 
+The resultant of forces **F<sub>2</sub>** and **F<sub>3</sub>** is 
 
   along OA, by the
 
@@ -362,7 +360,7 @@ The force of attraction or repulsion for each pair of charges has the same magni
 
 *q* 4 π *ε l*0 <sup>2</sup>
 
-The total force **F**<sub>2</sub> on charge *q* at B is thus **F****<sub>2</sub>** = *F* <sup>ˆ</sup>**r** <sub>2</sub>, where <sup>ˆ</sup>**r** <sub>2</sub> is a unit vector along AC. EXAMPLE 1.6 Similarly the total force on charge –*q* at C is **F**<sub>3</sub> = 3 *F* ˆ**n** , where ˆ**n** is the unit vector along the direction bisecting the ÐBCA. It is interesting to see that the sum of the forces on the three charges is zero, i.e., **F**<sub>1</sub> + **F**<sub>2</sub> + **F**<sub>3</sub> = 0 The result is not at all surprising. It follows straight from the fact that Coulomb’s law is consistent with Newton’s third law. The proof is left to you as an exercise.
+The total force **F**<sub>2</sub> on charge *q* at B is thus **F<sub>2</sub>** = *F* <sup>ˆ</sup>**r** <sub>2</sub>, where <sup>ˆ</sup>**r** <sub>2</sub> is a unit vector along AC. EXAMPLE 1.6 Similarly the total force on charge –*q* at C is **F**<sub>3</sub> = 3 *F* ˆ**n** , where ˆ**n** is the unit vector along the direction bisecting the ÐBCA. It is interesting to see that the sum of the forces on the three charges is zero, i.e., **F**<sub>1</sub> + **F**<sub>2</sub> + **F**<sub>3</sub> = 0 The result is not at all surprising. It follows straight from the fact that Coulomb’s law is consistent with Newton’s third law. The proof is left to you as an exercise.
 
 ## Physics
 
@@ -408,7 +406,7 @@ A practical way to get around the problem (of keeping *Q* undisturbed in the pre
 
 ### 1.7.1 Electric field due to a system of charges
 
-Consider a system of charges *q*<sub>1</sub>, *q*<sub>2</sub>, ..., q*<sub>n</sub>* with position vectors **r**<sub>1</sub>, **r**<sub>2</sub>, ..., **r***<sub>n</sub>* relative to some origin O. Like the electric field at a point in space due to a single charge, electric field at a point in space due to the system of charges is defined to be the force experienced by a unit test charge placed at that point, without disturbing the original positions of charges *q*<sub>1</sub>, *q*<sub>2</sub>, ..., *q**<sub>n</sub>*. We can use Coulomb’s law and the superposition principle to determine this field at a point P denoted by position vector **r**.
+Consider a system of charges *q*<sub>1</sub>, *q*<sub>2</sub>, ..., q*<sub>n</sub>* with position vectors **r**<sub>1</sub>, **r**<sub>2</sub>, ..., **r***<sub>n</sub>* relative to some origin O. Like the electric field at a point in space due to a single charge, electric field at a point in space due to the system of charges is defined to be the force experienced by a unit test charge placed at that point, without disturbing the original positions of charges *q*<sub>1</sub>, *q*<sub>2</sub>, ..., *q<sub>n</sub>*. We can use Coulomb’s law and the superposition principle to determine this field at a point P denoted by position vector **r**.
 
 ## Physics
 
@@ -426,7 +424,7 @@ In the same manner, electric field **E**<sub>2</sub> at **r** due to *q*<sub>2</
 
 1 π*ε* <sup>2</sup> *q r* P ˆ**r**2P **E**<sup>2</sup> = 4022
 
-where 2P ˆ**r** is a unit vector in the direction from *q*<sub>2</sub> to P and *r*<sub>2P</sub> is the distance between *q**<sub>2</sub>* and P. Similar expressions hold good for fields **E**<sub>3</sub>, **E**<sub>4</sub>, ..., **E***<sub>n</sub>* due to charges *q*<sub>3</sub>, *q*<sub>4</sub>, ..., *q**<sub>n</sub>*.
+where 2P ˆ**r** is a unit vector in the direction from *q*<sub>2</sub> to P and *r*<sub>2P</sub> is the distance between *q<sub>2</sub>* and P. Similar expressions hold good for fields **E**<sub>3</sub>, **E**<sub>4</sub>, ..., **E***<sub>n</sub>* due to charges *q*<sub>3</sub>, *q*<sub>4</sub>, ..., *q<sub>n</sub>*.
 
 By the superposition principle, the electric field **E** at **r** due to the system of charges is (as shown in Fig. 1.9)
 
@@ -458,11 +456,11 @@ The true physical significance of the concept of electric field, however, emerge
 
 **Solution** In Fig. 1.10(a) the field is upward, so the negatively charged electron experiences a downward force of magnitude *eE* where *E* is the magnitude of the electric field. The acceleration of the electron is
 
-*a**<sub>e</sub>* = *eE*/*m**<sub>e</sub>* 
+*a<sub>e</sub>* = *eE*/*m<sub>e</sub>* 
 
 ae  =  eE/me where m is the m
 
-where *m**<sub>e</sub>* is the mass of the electron.
+where *m<sub>e</sub>* is the mass of the electron.
 
 Starting from rest, the time required by the electron to fall through a distance *h* is given by
 
@@ -478,7 +476,7 @@ In Fig. 1.10 (b), the field is downward, and the positively charged proton exper
 
 ap  =  eE/mp
 
-where *m**<sub>p</sub>* is the mass of the proton; *m**<sub>p</sub>* = 1.67 × 10<sup>–27</sup> kg. The time of fall for the proton is *<sub>p</sub>* 2 2 *<sup>p</sup>* 1 3 10<sup>–7</sup>s *t* = *h* = *h m* = . × *a e E p* Thus, the heavier particle (proton) takes a greater time to fall through the same distance. This is in basic contrast to the situation of ‘free fall under gravity’ where the time of fall is independent of the mass of the body. Note that in this example we have ignored the acceleration due to gravity in calculating the time of fall. To see if this is justified, let us calculate the acceleration of the proton in the given electric field:
+where *m<sub>p</sub>* is the mass of the proton; *m<sub>p</sub>* = 1.67 × 10<sup>–27</sup> kg. The time of fall for the proton is *<sub>p</sub>* 2 2 *<sup>p</sup>* 1 3 10<sup>–7</sup>s *t* = *h* = *h m* = . × *a e E p* Thus, the heavier particle (proton) takes a greater time to fall through the same distance. This is in basic contrast to the situation of ‘free fall under gravity’ where the time of fall is independent of the mass of the body. Note that in this example we have ignored the acceleration due to gravity in calculating the time of fall. To see if this is justified, let us calculate the acceleration of the proton in the given electric field:
 
 ## Physics
 
@@ -775,7 +773,7 @@ This brings us to a common observation in frictional electricity. A comb run thr
 
 ## 1.12 Continuous Charge Distribution
 
-We have so far dealt with charge configurations involving discrete charges *q*<sub>1</sub>, *q*<sub>2</sub>, ..., *q**<sub>n</sub>*. One reason why we restricted to discrete charges is that the mathematical treatment is simpler and does not involve calculus. For many purposes, however, it is impractical to work in terms of discrete charges and we need to work with continuous charge distributions. For example, on the surface of a charged conductor, it is impractical to specify the charge distribution in terms of the locations of the microscopic charged constituents. It is more feasible to consider an area element D*S* (Fig. 1.21) on the surface of the conductor (which is very small on the macroscopic scale but big enough to include a very large number of electrons) and specify the charge D*Q* on that element. We then define a *surface charge density* s at the area element by σ= ∆∆*S* (1.23) *Q*
+We have so far dealt with charge configurations involving discrete charges *q*<sub>1</sub>, *q*<sub>2</sub>, ..., *q<sub>n</sub>*. One reason why we restricted to discrete charges is that the mathematical treatment is simpler and does not involve calculus. For many purposes, however, it is impractical to work in terms of discrete charges and we need to work with continuous charge distributions. For example, on the surface of a charged conductor, it is impractical to specify the charge distribution in terms of the locations of the microscopic charged constituents. It is more feasible to consider an area element D*S* (Fig. 1.21) on the surface of the conductor (which is very small on the macroscopic scale but big enough to include a very large number of electrons) and specify the charge D*Q* on that element. We then define a *surface charge density* s at the area element by σ= ∆∆*S* (1.23) *Q*
 
 ![FIGURE 1.21 Definition of linear, surface and volume charge densities. In each case, the element (Dl, DS, DV) chosen is small on the macroscopic scale but contains a very large number of microscopic constituents.](figures/p028_fig01.png)
 
@@ -871,7 +869,7 @@ The great significance of Gauss’s law Eq. (1.31), is that it is true in genera
 - (v) Gauss’s law is often useful towards a much easier calculation of the electrostatic field *when the system has some symmetry*. This is facilitated by the choice of a suitable Gaussian surface.
 - (vi) Finally, Gauss’s law is based on the inverse square dependence on distance contained in the Coulomb’s law. Any violation of Gauss’s law will indicate departure from the inverse square law.
 
-**Example 1.10** The electric field components in Fig. 1.24 are *E**<sub>x</sub>* = a*x*<sup>1/2</sup>, *E**<sub>y</sub>* = *E**<sub>z</sub>* = 0, in which a = 800 N/C m<sup>1/2</sup>. Calculate (a) the flux through the cube, and (b) the charge within the cube. Assume that *a* = 0.1 m.
+**Example 1.10** The electric field components in Fig. 1.24 are *E<sub>x</sub>* = a*x*<sup>1/2</sup>, *E<sub>y</sub>* = *E<sub>z</sub>* = 0, in which a = 800 N/C m<sup>1/2</sup>. Calculate (a) the flux through the cube, and (b) the charge within the cube. Assume that *a* = 0.1 m.
 
 ![Solution](figures/p031_fig01.png)
 
@@ -891,7 +889,7 @@ The magnitude of ER = a x1/2 = a (2a)
 
  **Example 1.10**
 
-f*<sub>L</sub>*= **E***<sub>L</sub>*.D**S** = ∆*S* **E***<sub>L</sub>* ⋅ **n**ˆ *<sub>L</sub>* =*E**<sub>L</sub>* D*S* cosq = –*E**<sub>L</sub>* D*S*, since q = 180°  = –*E**<sub>L</sub>**a*<sup>2</sup>
+f*<sub>L</sub>*= **E***<sub>L</sub>*.D**S** = ∆*S* **E***<sub>L</sub>* ⋅ **n**ˆ *<sub>L</sub>* =*E<sub>L</sub>* D*S* cosq = –*E<sub>L</sub>* D*S*, since q = 180°  = –*E<sub>L</sub>a*<sup>2</sup>
 
 fR= ER.DS = ER DS cosq  = ER DS,   since q = 0° = ERa2 
 
@@ -901,7 +899,7 @@ Net flux through the cube
 
 ## Physics
 
-= f*<sub>R</sub>* *+* f*<sub>L</sub>* = *E**<sub>R</sub>**a*<sup>2</sup> – *E**<sub>L</sub>**a*<sup>2</sup> = *a*<sup>2</sup> (*E**<sub>R</sub>* – *E**<sub>L</sub>*) = a*a*<sup>2</sup> [(2*a*)<sup>1/2</sup> – *a*<sup>1/2</sup>] <sup>= a</sup>*<sup>a</sup>*<sup>5/2</sup> ( <sup>2 – 1</sup>) <sup>= 800 (0.1)5/2</sup> ( <sup>2 – 1</sup>) = 1.05 N m<sup>2</sup> C<sup>–1</sup>
+= f*<sub>R</sub>* *+* f*<sub>L</sub>* = *E<sub>R</sub>a*<sup>2</sup> – *E<sub>L</sub>a*<sup>2</sup> = *a*<sup>2</sup> (*E<sub>R</sub>* – *E<sub>L</sub>*) = a*a*<sup>2</sup> [(2*a*)<sup>1/2</sup> – *a*<sup>1/2</sup>] <sup>= a</sup>*<sup>a</sup>*<sup>5/2</sup> ( <sup>2 – 1</sup>) <sup>= 800 (0.1)5/2</sup> ( <sup>2 – 1</sup>) = 1.05 N m<sup>2</sup> C<sup>–1</sup>
 
  **Example 1.10 Example 1.11**
 
@@ -1168,7 +1166,7 @@ where n̂ is a unit vector normal to the plane, outward on either side.
 
 **E** = 0 (*r*  < *R*) 
 
-where *r* is the distance of the point from the centre of the shell and *R* the radius of the shell. *q* is the total charge of the shell: *q* = 4p*R**<sup>2</sup>*s. The electric field outside the shell is as though the total charge is concentrated at the centre. The same result is true for a solid sphere of uniform volume charge density. The field is zero at all points inside the shell.
+where *r* is the distance of the point from the centre of the shell and *R* the radius of the shell. *q* is the total charge of the shell: *q* = 4p*R<sup>2</sup>*s. The electric field outside the shell is as though the total charge is concentrated at the centre. The same result is true for a solid sphere of uniform volume charge density. The field is zero at all points inside the shell.
 
 **Physical quantity Symbol Dimensions Unit Remarks**
 
@@ -1212,35 +1210,36 @@ volume r [L<sup>–3</sup> TA] C m<sup>–3</sup> Charge/volume
 
 ## Exercises
 
-1.1. What is the force between two small charged spheres having charges of 2 × 10–7C and 3 × 10–7C placed 30 cm apart in air?
-
-1.2. The electrostatic force on a small sphere of charge 0.4 mC due to another small sphere of charge –0.8 mC in air is 0.2 N.
+**1.1** What is the force between two small charged spheres having charges of 2 × 10–7C and 3 × 10–7C placed 30 cm apart in air?
+1.2 The electrostatic force on a small sphere of charge 0.4 mC due to another small sphere of charge –0.8 mC in air is 0.2 N.
 
    (a) What is the distance between the two spheres?
 
    (b) What is the force on the second sphere due to the first?
 
-1.3. Check that the ratio ke2/G memp is dimensionless. Look up a Table of Physical Constants and determine the value of this ratio. What does the ratio signify?
+**1.3** Check that the ratio ke2/G memp is dimensionless. Look up a Table of Physical Constants and determine the value of this ratio. What does the ratio signify?
+1.4
 
-1.4. (a) Explain the meaning of the statement ‘electric charge of a body is quantised’. (b) Why can one ignore quantisation of electric charge when dealing with macroscopic i.e., large scale charges?
+   (a) Explain the meaning of the statement ‘electric charge of a body is quantised’.
 
-1.5. When a glass rod is rubbed with a silk cloth, charges appear on both. A similar phenomenon is observed with many other pairs of bodies. Explain how this observation is consistent with the law of conservation of charge.
+   (b) Why can one ignore quantisation of electric charge when dealing with macroscopic i.e., large scale charges?
 
-1.6. Four point charges qA = 2 mC, qB = –5 mC, qC = 2 mC, and qD = –5 mC are located at the corners of a square ABCD of side 10 cm. What is the force on a charge of 1 mC placed at the centre of the square?
+is quantised’. (b) Why can one ignore quantisation of electric charge when dealing
 
-1.7. (a) An electrostatic field line is a continuous curve. That is, a field line cannot have sudden breaks. Why not? (b) Explain why two field lines never cross each other at any point?
+**1.5** When a glass rod is rubbed with a silk cloth, charges appear on both. A similar phenomenon is observed with many other pairs of bodies. Explain how this observation is consistent with the law of conservation of charge.
 
-1.8. Two point charges qA = 3 mC and qB = –3 mC are located 20 cm apart in vacuum.
+**1.6** Four point charges *q*<sub>A</sub> = 2 mC, *q*<sub>B</sub> = –5 mC, *q*<sub>C</sub> = 2 mC, and *q*<sub>D</sub> = –5 mC are located at the corners of a square ABCD of side 10 cm. What is the force on a charge of 1 mC placed at the centre of the square?
+
+**1.7** (a) An electrostatic field line is a continuous curve. That is, a field line cannot have sudden breaks. Why not?
+(b) Explain why two field lines never cross each other at any point?
+
+**1.8** Two point charges qA = 3 mC and qB = –3 mC are located 20 cm apart in vacuum.
 
    (a) What is the electric field at the midpoint O of the line AB joining the two charges?
 
    (b) If a negative test charge of magnitude 1.5 × 10–9 C is placed at this point, what is the force experienced by the test charge?
 
-1.9. A system has two charges qA = 2.5 × 10–7 C and qB = –2.5 × 10–7 C located at points A: (0, 0, –15 cm) and B: (0,0, +15 cm), respectively. What are the total charge and electric dipole moment of the system?
-
-1.10. An electric dipole with dipole moment 4 × 10–9 C m is aligned at 30° with the direction of a uniform electric field of magnitude 5 × 104 NC–1. Calculate the magnitude of the torque acting on the dipole.
-
-1.11. A polythene piece rubbed with wool is found to have a negative charge of 3 × 10–7 C.
+**1.9** A system has two charges qA = 2.5 × 10–7 C and qB = –2.5 × 10–7 C located at points A: (0, 0, –15 cm) and B: (0,0, +15 cm), respectively. What are the total charge and electric dipole moment of the system? 1.10 An electric dipole with dipole moment 4 × 10–9 C m is aligned at 30° with the direction of a uniform electric field of magnitude 5 × 104 NC–1. Calculate the magnitude of the torque acting on the dipole. 1.11 A polythene piece rubbed with wool is found to have a negative charge of 3 × 10–7 C.
 
    (a) Estimate the number of electrons transferred (from which to which?)
 
@@ -1248,9 +1247,10 @@ volume r [L<sup>–3</sup> TA] C m<sup>–3</sup> Charge/volume
 
 which?) (b) Is there a transfer of mass from wool to polythene? **1.12** (a) Two insulated charged copper spheres A and B have their centres
 
-1.12. (a) Two insulated charged copper spheres A and B have their centres separated by a distance of 50 cm. What is the mutual force of electrostatic repulsion if the charge on each is 6.5 × 10–7 C? The radii of A and B are negligible compared to the distance of separation. (b) What is the force of repulsion if each sphere is charged double the above amount, and the distance between them is halved?
+**1.12** (a) Two insulated charged copper spheres A and B have their centres separated by a distance of 50 cm. What is the mutual force of electrostatic repulsion if the charge on each is 6.5 × 10<sup>–7</sup> C? The radii of A and B are negligible compared to the distance of separation.
+(b) What is the force of repulsion if each sphere is charged double the above amount, and the distance between them is halved?
 
-1.13. Figure 1.30 shows tracks of three charged particles in a uniform electrostatic field. Give the signs of the three charges. Which particle has the highest charge to mass ratio?
+**1.13** Figure 1.30 shows tracks of three charged particles in a uniform electrostatic field. Give the signs of the three charges. Which particle has the highest charge to mass ratio?
 
 ## Electric Charges
 
@@ -1260,30 +1260,28 @@ which?) (b) Is there a transfer of mass from wool to polythene? **1.12** (a) Two
 
 **FIGURE 1.30**
 
-1.14. Consider a uniform electric field E = 3 × 103 î N/C.
+**1.14** Consider a uniform electric field E = 3 × 103 î N/C.
 
    (a) What is the flux of this field through a square of 10 cm on a side whose plane is parallel to the yz plane?
 
    (b) What is the flux through the same square if the normal to its plane makes a 60° angle with the x-axis?
-
-1.15. What is the net flux of the uniform electric field of Exercise 1.14 through a cube of side 20 cm oriented so that its faces are parallel to the coordinate planes?
-
-1.16. Careful measurement of the electric field at the surface of a black box indicates that the net outward flux through the surface of the box is 8.0 × 103 Nm2/C.
-
-   (a) What is the net charge inside the box?
-
-   (b) If the net outward flux through the surface of the box were zero, could you conclude that there were no charges inside the box? Why or Why not?
+1.15 What is the net flux of the uniform electric field of Exercise 1.14 through a cube of side 20 cm oriented so that its faces are parallel to the coordinate planes?
+1.16 Careful measurement of the electric field at the surface of a black box indicates that the net outward flux through the surface of the box is 8.0 × 103 Nm2/C. (a) What is the net charge inside the box? (b) If the net outward flux through the surface of the box were zero, could you conclude that there were no charges inside the box? Why or Why not?
 
 ![FIGURE 1.31](figures/p043_fig02.png)
 
 **FIGURE 1.31**
 
-- **1.18** A point charge of 2.0 µC is at the centre of a cubic Gaussian surface 9.0 cm on edge. What is the net electric flux through the surface?
-- **1.19** A point charge causes an electric flux of –1.0 × 10<sup>3</sup> Nm<sup>2</sup>/C to pass through a spherical Gaussian surface of 10.0 cm radius centred on the charge. (a) If the radius of the Gaussian surface were doubled, how much flux would pass through the surface? (b) What is the value of the point charge?
-- **1.20** A conducting sphere of radius 10 cm has an unknown charge. If the electric field 20 cm from the centre of the sphere is 1.5 × 10<sup>3</sup> N/C and points radially inward, what is the net charge on the sphere?
+### 1.18 A point charge of 2.0 µC is at the centre of a cubic Gaussian surface 9.0 cm on edge. What is the net electric flux through the surface?
+
+### 1.19 A point charge causes an electric flux of –1.0 × 103 Nm2/C to pass through a spherical Gaussian surface of 10.0 cm radius centred on the charge. (a) If the radius of the Gaussian surface were doubled, how much flux would pass through the surface? (b) What is the value of the point charge?
+
+### 1.20 A conducting sphere of radius 10 cm has an unknown charge. If the electric field 20 cm from the centre of the sphere is 1.5 × 103 N/C and points radially inward, what is the net charge on the sphere?
 
 ## Physics
 
-- **1.21** A uniformly charged conducting sphere of 2.4 m diameter has a surface charge density of 80.0 µC/m2. (a) Find the charge on the sphere. (b) What is the total electric flux leaving the surface of the sphere?
-- **1.22** An infinite line charge produces a field of 9 × 10<sup>4</sup> N/C at a distance of 2 cm. Calculate the linear charge density.
-- **1.23** Two large, thin metal plates are parallel and close to each other. On their inner faces, the plates have surface charge densities of opposite signs and of magnitude 17.0 × 10<sup>–22</sup> C/m<sup>2</sup>. What is **E**: (a) in the outer region of the first plate, (b) in the outer region of the second plate, and (c) between the plates?
+### 1.21 A uniformly charged conducting sphere of 2.4 m diameter has a surface charge density of 80.0 µC/m2. (a) Find the charge on the sphere. (b) What is the total electric flux leaving the surface of the sphere?
+
+### 1.22 An infinite line charge produces a field of 9 × 104 N/C at a distance of 2 cm. Calculate the linear charge density.
+
+### 1.23 Two large, thin metal plates are parallel and close to each other. On their inner faces, the plates have surface charge densities of opposite signs and of magnitude 17.0 × 10–22 C/m2. What is E: (a) in the outer region of the first plate, (b) in the outer region of the second plate, and (c) between the plates?
