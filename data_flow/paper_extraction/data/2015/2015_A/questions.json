@@ -56,9 +56,9 @@
    "unchecked": 2,
    "unclear": 13
   },
-  "images": 502,
+  "images": 416,
   "images_without_cdn": 0,
-  "drawn_figures": 52,
+  "drawn_figures": 0,
   "number_not_printed": [],
   "flagged": {
    "answers_differ": [
@@ -80,7 +80,7 @@
    "flags": [],
    "question": {
     "full_text": "2,3-Dimethyl-2-butene can be prepared by heating which of the following compounds with a strong acid?\n(1) $\\mathrm{(CH_3)_2C=CH-CH_2-CH_3}$\n(2) $\\mathrm{(CH_3)_2CH-CH_2-CH=CH_2}$\n(3) 3,4-dimethylpent-1-ene [SMILES: C=CC(C)C(C)C] $\\mathrm{(CH_3)_2CH-CH(CH_3)-CH=CH_2}$\n(4) $\\mathrm{(CH_3)_3C-CH=CH_2}$",
-    "html": "<div class=\"q-stem\">2,3-Dimethyl-2-butene can be prepared by heating which of the following compounds with a strong acid?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"math\"><span class=\"up\">(CH<sub>3</sub>)<sub>2</sub>C=CH-CH<sub>2</sub>-CH<sub>3</sub></span></span></li><li><span class=\"key\">(2)</span><span class=\"math\"><span class=\"up\">(CH<sub>3</sub>)<sub>2</sub>CH-CH<sub>2</sub>-CH=CH<sub>2</sub></span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q001_option_3_s1_17edb7c3_29102026.svg?v=17edb7c3a206\" alt=\"3,4-dimethylpent-1-ene\"><span class=\"name\">3,4-dimethylpent-1-ene</span></span> <span class=\"math\"><span class=\"up\">(CH<sub>3</sub>)<sub>2</sub>CH-CH(CH<sub>3</sub>)-CH=CH<sub>2</sub></span></span></li><li><span class=\"key\">(4)</span><span class=\"math\"><span class=\"up\">(CH<sub>3</sub>)<sub>3</sub>C-CH=CH<sub>2</sub></span></span></li></ol>",
+    "html": "<div class=\"q-stem\">2,3-Dimethyl-2-butene can be prepared by heating which of the following compounds with a strong acid?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"math\"><span class=\"up\">(CH<sub>3</sub>)<sub>2</sub>C=CH-CH<sub>2</sub>-CH<sub>3</sub></span></span></li><li><span class=\"key\">(2)</span><span class=\"math\"><span class=\"up\">(CH<sub>3</sub>)<sub>2</sub>CH-CH<sub>2</sub>-CH=CH<sub>2</sub></span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"\" alt=\"3,4-dimethylpent-1-ene\"><span class=\"name\">3,4-dimethylpent-1-ene</span></span> <span class=\"math\"><span class=\"up\">(CH<sub>3</sub>)<sub>2</sub>CH-CH(CH<sub>3</sub>)-CH=CH<sub>2</sub></span></span></li><li><span class=\"key\">(4)</span><span class=\"math\"><span class=\"up\">(CH<sub>3</sub>)<sub>3</sub>C-CH=CH<sub>2</sub></span></span></li></ol>",
     "stem": "2,3-Dimethyl-2-butene can be prepared by heating which of the following compounds with a strong acid?",
     "format": "plain",
     "statements": [],
@@ -113,12 +113,7 @@
         "inchikey": "WFHXQNMTMDKVJG-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q001_option_3_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q001_option_3_s1_17edb7c3_29102026.svg",
-         "sha256": "17edb7c3a206fafd1f26eac7d4b54ff4e3f95d9bd23946f83bcbd9a539d0dc25",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -135,22 +130,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q001_option_3.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q001_option_3_17edb7c3_29102026.svg",
-         "sha256": "17edb7c3a206fafd1f26eac7d4b54ff4e3f95d9bd23946f83bcbd9a539d0dc25",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -162,12 +152,7 @@
           "inchikey": "WFHXQNMTMDKVJG-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q001_option_3_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q001_option_3_s1_17edb7c3_29102026.svg",
-           "sha256": "17edb7c3a206fafd1f26eac7d4b54ff4e3f95d9bd23946f83bcbd9a539d0dc25",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -236,22 +221,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "4 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q001_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q001_solution_1_8d4bbd0b_28102026.svg",
-        "sha256": "8d4bbd0b4d677a0100260ba9f0732c37b131e67e2813f2548c0c331ddff9a5d7",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "reaction",
        "reaction_smiles": "CC(C)(C)C=C>[H+]>CC(C)=C(C)C",
        "species": [
@@ -869,22 +849,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "2 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q004_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q004_solution_1_4ab97476_28102026.svg",
-        "sha256": "4ab974769b9db82da6656d23a3d5b0ce5d73a9891c0d9fb2859339149956aa13",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -956,22 +931,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q004_solution_2.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q004_solution_2_b0b74a57_28102026.svg",
-        "sha256": "b0b74a57223aa5ffd209e133dd88cb191571d5d0d713035e6f3f337fc707560a",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -983,12 +953,7 @@
          "inchikey": "GETQZCLCWQTVFV-UHFFFAOYSA-N",
          "name_check": "match",
          "shown_as": null,
-         "image": {
-          "path": "figures_drawn/2015_A/q004_solution_2_s1.svg",
-          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q004_solution_2_s1_b0b74a57_28102026.svg",
-          "sha256": "b0b74a57223aa5ffd209e133dd88cb191571d5d0d713035e6f3f337fc707560a",
-          "type": "image/svg+xml"
-         }
+         "image": null
         }
        ],
        "scheme": null,
@@ -1653,22 +1618,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "3 match, 1 unparsed",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q008_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q008_solution_1_db245e53_28102026.svg",
-        "sha256": "db245e53df2a28608e55fb288e0eccd5ab3c67f0d563a6a95934a95c549700c7",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "reaction",
        "reaction_smiles": "O=C1CCCCCN1.O>>NCCCCCC(=O)O",
        "species": [
@@ -2114,22 +2074,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q010_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q010_solution_1_4e7d8bc5_28102026.svg",
-        "sha256": "4e7d8bc54e0accb93d089e94f12e9b0e8b65c02e6cd38b29854373385adf5a2a",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -2141,12 +2096,7 @@
          "inchikey": "ACVYVLVWPXVTIT-UHFFFAOYSA-N",
          "name_check": "match",
          "shown_as": null,
-         "image": {
-          "path": "figures_drawn/2015_A/q010_solution_1_s1.svg",
-          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q010_solution_1_s1_4e7d8bc5_28102026.svg",
-          "sha256": "4e7d8bc54e0accb93d089e94f12e9b0e8b65c02e6cd38b29854373385adf5a2a",
-          "type": "image/svg+xml"
-         }
+         "image": null
         }
        ],
        "scheme": null,
@@ -2684,22 +2634,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "2 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q013_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_1_371977a9_29102026.svg",
-        "sha256": "371977a9d234036bb722daa9c0d46cd81e7e50eb77bae8433208a6ae4c4d84c2",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -2766,22 +2711,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q013_solution_2.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_2_16d105c4_29102026.svg",
-        "sha256": "16d105c4e021f2141cbd2ec020910f4d6d0670544151534ea7234971a3d78b15",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -2793,12 +2733,7 @@
          "inchikey": "RPSSQXXJRBEGEE-UHFFFAOYSA-N",
          "name_check": "match",
          "shown_as": null,
-         "image": {
-          "path": "figures_drawn/2015_A/q013_solution_2_s1.svg",
-          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_2_s1_16d105c4_29102026.svg",
-          "sha256": "16d105c4e021f2141cbd2ec020910f4d6d0670544151534ea7234971a3d78b15",
-          "type": "image/svg+xml"
-         }
+         "image": null
         }
        ],
        "scheme": null,
@@ -2832,22 +2767,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 unparsed",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q013_solution_3.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_3_e989d02f_29102026.svg",
-        "sha256": "e989d02fe140f1c482f616a737c0c2ec07c8b30cf935a4832949e62d1f8c5944",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -2859,12 +2789,7 @@
          "inchikey": "VHWKDFQUJRCZDZ-UHFFFAOYSA-N",
          "name_check": "unparsed",
          "shown_as": null,
-         "image": {
-          "path": "figures_drawn/2015_A/q013_solution_3_s1.svg",
-          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_3_s1_e989d02f_29102026.svg",
-          "sha256": "e989d02fe140f1c482f616a737c0c2ec07c8b30cf935a4832949e62d1f8c5944",
-          "type": "image/svg+xml"
-         }
+         "image": null
         }
        ],
        "scheme": null,
@@ -2898,22 +2823,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q013_solution_4.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_4_26a06232_29102026.svg",
-        "sha256": "26a06232853373f1e9b64a981b55253827828f254460583beabc62b8ab2ec64c",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -2925,12 +2845,7 @@
          "inchikey": "FDNAPBUWERUEDA-UHFFFAOYSA-N",
          "name_check": "match",
          "shown_as": null,
-         "image": {
-          "path": "figures_drawn/2015_A/q013_solution_4_s1.svg",
-          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_4_s1_26a06232_29102026.svg",
-          "sha256": "26a06232853373f1e9b64a981b55253827828f254460583beabc62b8ab2ec64c",
-          "type": "image/svg+xml"
-         }
+         "image": null
         }
        ],
        "scheme": null,
@@ -2969,22 +2884,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q013_solution_5.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_5_b0e076b6_29102026.svg",
-        "sha256": "b0e076b6cb2aca5ae1da5adb06327e87c242d9cb2847de8f5a17a87ea6c8e770",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -2996,12 +2906,7 @@
          "inchikey": "MJNHIYILRDOOTC-UHFFFAOYSA-N",
          "name_check": "match",
          "shown_as": null,
-         "image": {
-          "path": "figures_drawn/2015_A/q013_solution_5_s1.svg",
-          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_5_s1_b0e076b6_29102026.svg",
-          "sha256": "b0e076b6cb2aca5ae1da5adb06327e87c242d9cb2847de8f5a17a87ea6c8e770",
-          "type": "image/svg+xml"
-         }
+         "image": null
         }
        ],
        "scheme": null,
@@ -3123,7 +3028,7 @@
    "flags": [],
    "question": {
     "full_text": "In the reaction with $\\mathrm{HCl}$, an alkene reacts in accordance with the Markovnikov’s rule, to give a product 1-chloro-1-methylcyclohexane. The possible reaction alkene is:\n(1) methylenecyclohexane [SMILES: C=C1CCCCC1]\n(2) 1-methylcyclohexene [SMILES: CC1=CCCCC1]\n(3) methylenecyclohexane [SMILES: C=C1CCCCC1]; 1-methylcyclohexene [SMILES: CC1=CCCCC1] and\n(4) 3-methylcyclohexene [SMILES: CC1C=CCCC1]",
-    "html": "<div class=\"q-stem\">In the reaction with <span class=\"math\"><span class=\"up\">HCl</span></span>, an alkene reacts in accordance with the Markovnikov’s rule, to give a product 1-chloro-1-methylcyclohexane. The possible reaction alkene is:</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_1_s1_017c41b7_28102026.svg?v=017c41b77c6a\" alt=\"methylenecyclohexane\"><span class=\"name\">methylenecyclohexane</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_2_s1_8acf082d_28102026.svg?v=8acf082d8be3\" alt=\"1-methylcyclohexene\"><span class=\"name\">1-methylcyclohexene</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"\" alt=\"methylenecyclohexane\"><span class=\"name\">methylenecyclohexane</span></span><span class=\"chem\"><img src=\"\" alt=\"1-methylcyclohexene\"><span class=\"name\">1-methylcyclohexene</span></span> and</li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_4_s1_322edad4_28102026.svg?v=322edad4addd\" alt=\"3-methylcyclohexene\"><span class=\"name\">3-methylcyclohexene</span></span></li></ol>",
+    "html": "<div class=\"q-stem\">In the reaction with <span class=\"math\"><span class=\"up\">HCl</span></span>, an alkene reacts in accordance with the Markovnikov’s rule, to give a product 1-chloro-1-methylcyclohexane. The possible reaction alkene is:</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"\" alt=\"methylenecyclohexane\"><span class=\"name\">methylenecyclohexane</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"\" alt=\"1-methylcyclohexene\"><span class=\"name\">1-methylcyclohexene</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"\" alt=\"methylenecyclohexane\"><span class=\"name\">methylenecyclohexane</span></span><span class=\"chem\"><img src=\"\" alt=\"1-methylcyclohexene\"><span class=\"name\">1-methylcyclohexene</span></span> and</li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"\" alt=\"3-methylcyclohexene\"><span class=\"name\">3-methylcyclohexene</span></span></li></ol>",
     "stem": "In the reaction with $\\mathrm{HCl}$, an alkene reacts in accordance with the Markovnikov’s rule, to give a product 1-chloro-1-methylcyclohexane. The possible reaction alkene is:",
     "format": "plain",
     "statements": [],
@@ -3144,12 +3049,7 @@
         "inchikey": "YULMNMJFAZWLLN-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q014_option_1_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_1_s1_017c41b7_28102026.svg",
-         "sha256": "017c41b77c6a69caebd7d95ea923b94fd8631cb09bae5f6eae98c36ae0e1e2ec",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -3166,22 +3066,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q014_option_1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_1_017c41b7_28102026.svg",
-         "sha256": "017c41b77c6a69caebd7d95ea923b94fd8631cb09bae5f6eae98c36ae0e1e2ec",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -3193,12 +3088,7 @@
           "inchikey": "YULMNMJFAZWLLN-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q014_option_1_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_1_s1_017c41b7_28102026.svg",
-           "sha256": "017c41b77c6a69caebd7d95ea923b94fd8631cb09bae5f6eae98c36ae0e1e2ec",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -3233,12 +3123,7 @@
         "inchikey": "CTMHWPIWNRWQEG-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q014_option_2_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_2_s1_8acf082d_28102026.svg",
-         "sha256": "8acf082d8be33baa25d70ca49ad9ff6e3d04b53f3fa49e4d026ffed8a47c165a",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -3255,22 +3140,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q014_option_2.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_2_8acf082d_28102026.svg",
-         "sha256": "8acf082d8be33baa25d70ca49ad9ff6e3d04b53f3fa49e4d026ffed8a47c165a",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -3282,12 +3162,7 @@
           "inchikey": "CTMHWPIWNRWQEG-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q014_option_2_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_2_s1_8acf082d_28102026.svg",
-           "sha256": "8acf082d8be33baa25d70ca49ad9ff6e3d04b53f3fa49e4d026ffed8a47c165a",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -3349,22 +3224,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "2 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q014_option_3.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_3_b7ec82d0_28102026.svg",
-         "sha256": "b7ec82d0e8feac4334e564b67f6cfe56ed602604a44a5e8ed87c82fa08939f75",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -3436,12 +3306,7 @@
         "inchikey": "UZPWKTCMUADILM-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q014_option_4_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_4_s1_322edad4_28102026.svg",
-         "sha256": "322edad4addd4db831b48aceaf0d3016ff50517e6501530c8b558f1f564fa95b",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -3458,22 +3323,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q014_option_4.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_4_322edad4_28102026.svg",
-         "sha256": "322edad4addd4db831b48aceaf0d3016ff50517e6501530c8b558f1f564fa95b",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -3485,12 +3345,7 @@
           "inchikey": "UZPWKTCMUADILM-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q014_option_4_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_4_s1_322edad4_28102026.svg",
-           "sha256": "322edad4addd4db831b48aceaf0d3016ff50517e6501530c8b558f1f564fa95b",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -3556,22 +3411,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "2 match, 1 unparsed",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q014_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_solution_1_feb78a54_28102026.svg",
-        "sha256": "feb78a5478b1c6e63069a5901d817fc2ec2518f5e363e5c523ab55b9f319f577",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "reaction",
        "reaction_smiles": "C=C1CCCCC1>[H+].[Cl-]>CC1(Cl)CCCCC1",
        "species": [
@@ -4039,22 +3889,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "5 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q016_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q016_solution_1_d973985f_28102026.svg",
-        "sha256": "d973985f7b6070c8e3e85c8dae5416bf69a0685d017fcec8f040c14460c12ffe",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "reaction",
        "reaction_smiles": "Oc1ccccc1.ClC(Cl)Cl.[Na+].[OH-]>>O=Cc1ccccc1O.O=Cc1ccc(O)cc1",
        "species": [
@@ -4524,22 +4369,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q018_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q018_solution_1_eaf6d68a_28102026.svg",
-        "sha256": "eaf6d68af7882f3f5fd4119246347cb23b4c53dfc357ae2f43a61af7f574cf20",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -4551,12 +4391,7 @@
          "inchikey": "CBENFWSGALASAD-UHFFFAOYSA-N",
          "name_check": "match",
          "shown_as": null,
-         "image": {
-          "path": "figures_drawn/2015_A/q018_solution_1_s1.svg",
-          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q018_solution_1_s1_eaf6d68a_28102026.svg",
-          "sha256": "eaf6d68af7882f3f5fd4119246347cb23b4c53dfc357ae2f43a61af7f574cf20",
-          "type": "image/svg+xml"
-         }
+         "image": null
         }
        ],
        "scheme": null,
@@ -6335,22 +6170,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "2 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q029_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q029_solution_1_0db9812a_28102026.svg",
-        "sha256": "0db9812a1bd732e1cbbccf0622ae2c70f3eca6d7b6d01776a22c2cfc3cf11d38",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -6511,22 +6341,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "3 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q030_question.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q030_question_687d04cb_29102026.svg",
-        "sha256": "687d04cb16f9c58ad1067b282bfc0b3066712e33610fc496bed136e485f60a59",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "reaction",
        "reaction_smiles": "Nc1ccccc1.ClC(=O)c1ccccc1>[Na+].[OH-]>O=C(Nc1ccccc1)c1ccccc1",
        "species": [
@@ -7127,7 +6952,7 @@
    "flags": [],
    "question": {
     "full_text": "Which one of the following esters gets hydrolyzed most easily under alkaline conditions?\n(1) phenyl acetate [SMILES: CC(=O)Oc1ccccc1]\n(2) 4-chlorophenyl acetate [SMILES: CC(=O)Oc1ccc(Cl)cc1]\n(3) 4-nitrophenyl acetate [SMILES: CC(=O)Oc1ccc([N+](=O)[O-])cc1]\n(4) 4-methoxyphenyl acetate [SMILES: COc1ccc(OC(C)=O)cc1]",
-    "html": "<div class=\"q-stem\">Which one of the following esters gets hydrolyzed most easily under alkaline conditions?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_1_s1_c74dc01d_28102026.svg?v=c74dc01dc520\" alt=\"phenyl acetate\"><span class=\"name\">phenyl acetate</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_2_s1_a5680402_28102026.svg?v=a56804028684\" alt=\"4-chlorophenyl acetate\"><span class=\"name\">4-chlorophenyl acetate</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_3_s1_60f8d034_28102026.svg?v=60f8d034621b\" alt=\"4-nitrophenyl acetate\"><span class=\"name\">4-nitrophenyl acetate</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_4_s1_89da9da8_28102026.svg?v=89da9da8b8e8\" alt=\"4-methoxyphenyl acetate\"><span class=\"name\">4-methoxyphenyl acetate</span></span></li></ol>",
+    "html": "<div class=\"q-stem\">Which one of the following esters gets hydrolyzed most easily under alkaline conditions?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"\" alt=\"phenyl acetate\"><span class=\"name\">phenyl acetate</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"\" alt=\"4-chlorophenyl acetate\"><span class=\"name\">4-chlorophenyl acetate</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"\" alt=\"4-nitrophenyl acetate\"><span class=\"name\">4-nitrophenyl acetate</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"\" alt=\"4-methoxyphenyl acetate\"><span class=\"name\">4-methoxyphenyl acetate</span></span></li></ol>",
     "stem": "Which one of the following esters gets hydrolyzed most easily under alkaline conditions?",
     "format": "plain",
     "statements": [],
@@ -7148,12 +6973,7 @@
         "inchikey": "IPBVNPXQWQGGJP-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q033_option_1_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_1_s1_c74dc01d_28102026.svg",
-         "sha256": "c74dc01dc52026e16aff5db2c461ec3a7743b2a31b456c07709e8e0fd6cfad73",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -7170,22 +6990,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q033_option_1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_1_c74dc01d_28102026.svg",
-         "sha256": "c74dc01dc52026e16aff5db2c461ec3a7743b2a31b456c07709e8e0fd6cfad73",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -7197,12 +7012,7 @@
           "inchikey": "IPBVNPXQWQGGJP-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q033_option_1_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_1_s1_c74dc01d_28102026.svg",
-           "sha256": "c74dc01dc52026e16aff5db2c461ec3a7743b2a31b456c07709e8e0fd6cfad73",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -7234,12 +7044,7 @@
         "inchikey": "KEUPLGRNURQXAR-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q033_option_2_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_2_s1_a5680402_28102026.svg",
-         "sha256": "a568040286848fc5f6ec58bf797d2ee0905ef3eb6c43276191226726d8d7ece5",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -7256,22 +7061,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q033_option_2.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_2_a5680402_28102026.svg",
-         "sha256": "a568040286848fc5f6ec58bf797d2ee0905ef3eb6c43276191226726d8d7ece5",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -7283,12 +7083,7 @@
           "inchikey": "KEUPLGRNURQXAR-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q033_option_2_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_2_s1_a5680402_28102026.svg",
-           "sha256": "a568040286848fc5f6ec58bf797d2ee0905ef3eb6c43276191226726d8d7ece5",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -7320,12 +7115,7 @@
         "inchikey": "QAUUDNIGJSLPSX-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q033_option_3_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_3_s1_60f8d034_28102026.svg",
-         "sha256": "60f8d034621b686019d1f6ebbf4a280ce59ff58ddbbfbfc83b40ce604d35c5da",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -7342,22 +7132,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q033_option_3.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_3_60f8d034_28102026.svg",
-         "sha256": "60f8d034621b686019d1f6ebbf4a280ce59ff58ddbbfbfc83b40ce604d35c5da",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -7369,12 +7154,7 @@
           "inchikey": "QAUUDNIGJSLPSX-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q033_option_3_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_3_s1_60f8d034_28102026.svg",
-           "sha256": "60f8d034621b686019d1f6ebbf4a280ce59ff58ddbbfbfc83b40ce604d35c5da",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -7406,12 +7186,7 @@
         "inchikey": "YAPCNXGBNRDBIW-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q033_option_4_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_4_s1_89da9da8_28102026.svg",
-         "sha256": "89da9da8b8e8fbe56b13d70d84badeadd43fb89a458bcdf7fec2e933946d9fbd",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -7428,22 +7203,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q033_option_4.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_4_89da9da8_28102026.svg",
-         "sha256": "89da9da8b8e8fbe56b13d70d84badeadd43fb89a458bcdf7fec2e933946d9fbd",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -7455,12 +7225,7 @@
           "inchikey": "YAPCNXGBNRDBIW-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q033_option_4_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_4_s1_89da9da8_28102026.svg",
-           "sha256": "89da9da8b8e8fbe56b13d70d84badeadd43fb89a458bcdf7fec2e933946d9fbd",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -8823,22 +8588,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "2 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q040_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q040_solution_1_32ec54c8_28102026.svg",
-        "sha256": "32ec54c84ef0993e47def15b5ab48e21f7aab2b1238bd1948a938d2c7c7fd6b0",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "reaction",
        "reaction_smiles": "c1ccccc1>O=[V](=O)O[V](=O)=O>O=C1OC(=O)C=C1",
        "species": [
@@ -8990,7 +8750,7 @@
    ],
    "question": {
     "full_text": "Which of the following is not the product of dehydration of [structure] ?\n[Figure: 2-cyclohexylbutan-2-ol]\n[Structures: 2-cyclohexylbutan-2-ol [SMILES: CCC(C)(O)C1CCCCC1]]\n(1) 2-cyclohexylbut-2-ene [SMILES: CC=C(C)C1CCCCC1]\n(2) butan-2-ylidenecyclohexane [SMILES: CCC(C)=C1CCCCC1]\n(3) 2-cyclohexylbut-1-ene [SMILES: C=C(CC)C1CCCCC1]\n(4) 1-(butan-2-yl)cyclohex-1-ene [SMILES: CCC(C)C1=CCCCC1]",
-    "html": "<div class=\"q-stem\">Which of the following is not the product of dehydration of [structure] ?</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q041_3e805f16_28102026.png?v=3e805f164d00\" alt=\"2-cyclohexylbutan-2-ol\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_1_s1_9f678492_28102026.svg?v=9f678492e30a\" alt=\"2-cyclohexylbut-2-ene\"><span class=\"name\">2-cyclohexylbut-2-ene</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_2_s1_362d94c8_28102026.svg?v=362d94c813bb\" alt=\"butan-2-ylidenecyclohexane\"><span class=\"name\">butan-2-ylidenecyclohexane</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_3_s1_d02dd8ee_28102026.svg?v=d02dd8ee45b0\" alt=\"2-cyclohexylbut-1-ene\"><span class=\"name\">2-cyclohexylbut-1-ene</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_4_s1_a2832e0e_28102026.svg?v=a2832e0ea4dc\" alt=\"1-(butan-2-yl)cyclohex-1-ene\"><span class=\"name\">1-(butan-2-yl)cyclohex-1-ene</span></span></li></ol>",
+    "html": "<div class=\"q-stem\">Which of the following is not the product of dehydration of [structure] ?</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q041_3e805f16_28102026.png?v=3e805f164d00\" alt=\"2-cyclohexylbutan-2-ol\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"\" alt=\"2-cyclohexylbut-2-ene\"><span class=\"name\">2-cyclohexylbut-2-ene</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"\" alt=\"butan-2-ylidenecyclohexane\"><span class=\"name\">butan-2-ylidenecyclohexane</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"\" alt=\"2-cyclohexylbut-1-ene\"><span class=\"name\">2-cyclohexylbut-1-ene</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"\" alt=\"1-(butan-2-yl)cyclohex-1-ene\"><span class=\"name\">1-(butan-2-yl)cyclohex-1-ene</span></span></li></ol>",
     "stem": "Which of the following is not the product of dehydration of [structure] ?",
     "format": "plain",
     "statements": [],
@@ -9011,22 +8771,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q041_question.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_question_fcf65c76_28102026.svg",
-        "sha256": "fcf65c76c036bee809c05ceb3f534ad7076e1f56c82c44dbbff34fbbe71616ea",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -9038,12 +8793,7 @@
          "inchikey": "ICWUMBNYENCDOM-UHFFFAOYSA-N",
          "name_check": "match",
          "shown_as": null,
-         "image": {
-          "path": "figures_drawn/2015_A/q041_question_s1.svg",
-          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_question_s1_fcf65c76_28102026.svg",
-          "sha256": "fcf65c76c036bee809c05ceb3f534ad7076e1f56c82c44dbbff34fbbe71616ea",
-          "type": "image/svg+xml"
-         }
+         "image": null
         }
        ],
        "scheme": null,
@@ -9072,12 +8822,7 @@
       "inchikey": "ICWUMBNYENCDOM-UHFFFAOYSA-N",
       "name_check": "match",
       "shown_as": null,
-      "image": {
-       "path": "figures_drawn/2015_A/q041_question_s1.svg",
-       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_question_s1_fcf65c76_28102026.svg",
-       "sha256": "fcf65c76c036bee809c05ceb3f534ad7076e1f56c82c44dbbff34fbbe71616ea",
-       "type": "image/svg+xml"
-      }
+      "image": null
      }
     ],
     "options": [
@@ -9093,12 +8838,7 @@
         "inchikey": "SOKZJAMQPSJUPA-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q041_option_1_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_1_s1_9f678492_28102026.svg",
-         "sha256": "9f678492e30ad40f80ba5046f8158aabd979c251350bc6ad9f95ebb241939a02",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -9115,22 +8855,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q041_option_1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_1_9f678492_28102026.svg",
-         "sha256": "9f678492e30ad40f80ba5046f8158aabd979c251350bc6ad9f95ebb241939a02",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -9142,12 +8877,7 @@
           "inchikey": "SOKZJAMQPSJUPA-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q041_option_1_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_1_s1_9f678492_28102026.svg",
-           "sha256": "9f678492e30ad40f80ba5046f8158aabd979c251350bc6ad9f95ebb241939a02",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -9179,12 +8909,7 @@
         "inchikey": "BGQPPOVXAXQTIA-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q041_option_2_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_2_s1_362d94c8_28102026.svg",
-         "sha256": "362d94c813bb20a6d7bbc6c54b493e5f14c61699acd5e6cd431c2daa6ae79688",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -9201,22 +8926,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q041_option_2.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_2_362d94c8_28102026.svg",
-         "sha256": "362d94c813bb20a6d7bbc6c54b493e5f14c61699acd5e6cd431c2daa6ae79688",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -9228,12 +8948,7 @@
           "inchikey": "BGQPPOVXAXQTIA-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q041_option_2_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_2_s1_362d94c8_28102026.svg",
-           "sha256": "362d94c813bb20a6d7bbc6c54b493e5f14c61699acd5e6cd431c2daa6ae79688",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -9265,12 +8980,7 @@
         "inchikey": "IHTZVHVTPAAFJQ-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q041_option_3_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_3_s1_d02dd8ee_28102026.svg",
-         "sha256": "d02dd8ee45b00d84fd6ffebab4891a2b34c4f6f45226be95fbc82207183da048",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -9287,22 +8997,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q041_option_3.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_3_d02dd8ee_28102026.svg",
-         "sha256": "d02dd8ee45b00d84fd6ffebab4891a2b34c4f6f45226be95fbc82207183da048",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -9314,12 +9019,7 @@
           "inchikey": "IHTZVHVTPAAFJQ-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q041_option_3_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_3_s1_d02dd8ee_28102026.svg",
-           "sha256": "d02dd8ee45b00d84fd6ffebab4891a2b34c4f6f45226be95fbc82207183da048",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -9351,12 +9051,7 @@
         "inchikey": "IOERJMOJJLOARF-UHFFFAOYSA-N",
         "name_check": "match",
         "shown_as": null,
-        "image": {
-         "path": "figures_drawn/2015_A/q041_option_4_s1.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_4_s1_a2832e0e_28102026.svg",
-         "sha256": "a2832e0ea4dc73d2b9b70850fecf4e89b13900390c0e3773eba8a92b52c3cd20",
-         "type": "image/svg+xml"
-        }
+        "image": null
        }
       ],
       "figure": {
@@ -9373,22 +9068,17 @@
        },
        "drawn": {
         "method": "smiles",
-        "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-        "layout": "traced",
-        "status": "drawn",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_on_print",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 match",
-         "print_match": "picture-printed figure: the print itself, traced",
-         "printed_text": "pass"
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_on_print"
         },
-        "image": {
-         "path": "figures_drawn/2015_A/q041_option_4.svg",
-         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_4_a2832e0e_28102026.svg",
-         "sha256": "a2832e0ea4dc73d2b9b70850fecf4e89b13900390c0e3773eba8a92b52c3cd20",
-         "type": "image/svg+xml"
-        },
-        "message": null,
+        "image": null,
+        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -9400,12 +9090,7 @@
           "inchikey": "IOERJMOJJLOARF-UHFFFAOYSA-N",
           "name_check": "match",
           "shown_as": null,
-          "image": {
-           "path": "figures_drawn/2015_A/q041_option_4_s1.svg",
-           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_4_s1_a2832e0e_28102026.svg",
-           "sha256": "a2832e0ea4dc73d2b9b70850fecf4e89b13900390c0e3773eba8a92b52c3cd20",
-           "type": "image/svg+xml"
-          }
+          "image": null
          }
         ],
         "scheme": null,
@@ -9472,22 +9157,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "4 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q041_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_solution_1_7168a2b2_28102026.svg",
-        "sha256": "7168a2b2a021ef8d97c11842ade30c78b27c81c615dc6abcee4e9a44ac5bb2d4",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "reaction",
        "reaction_smiles": "CCC(C)(O)C1CCCCC1>>CCC(C)=C1CCCCC1.C=C(CC)C1CCCCC1.CC=C(C)C1CCCCC1",
        "species": [
@@ -9768,22 +9448,17 @@
       },
       "drawn": {
        "method": "smiles",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 match",
-        "print_match": "picture-printed figure: the print itself, traced",
-        "printed_text": "pass"
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q042_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q042_solution_1_950bd461_28102026.svg",
-        "sha256": "950bd46164ab8a5cb0d55f71629c4e36f21b7ef2d21e799e0123794e4c8d5728",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -9795,12 +9470,7 @@
          "inchikey": "MVPPADPHJFYWMZ-UHFFFAOYSA-N",
          "name_check": "match",
          "shown_as": null,
-         "image": {
-          "path": "figures_drawn/2015_A/q042_solution_1_s1.svg",
-          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q042_solution_1_s1_950bd461_28102026.svg",
-          "sha256": "950bd46164ab8a5cb0d55f71629c4e36f21b7ef2d21e799e0123794e4c8d5728",
-          "type": "image/svg+xml"
-         }
+         "image": null
         }
        ],
        "scheme": null,
@@ -24582,23 +24252,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q138_question.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q138_question_cbe0c589_28102026.svg",
-        "sha256": "cbe0c5896e1c250871eb549ebfc65210eeb60baafc4ced0821d38f669e4ace08",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "A circular coil abcd above the straight path XY of an electron",
         "width": 412,
@@ -24800,23 +24465,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q138_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q138_solution_1_beaf8b5a_28102026.svg",
-        "sha256": "beaf8b5a81d24ca735eb21effb586244134d195be90d249bf386388d64e2247e",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "An electron e⁻ passing along a straight line below a circular coil",
         "width": 570,
@@ -25268,23 +24928,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q140_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q140_solution_1_3a347ce0_28102026.svg",
-        "sha256": "3a347ce0bbe4710e089e737d79634c1a0d362cd1b477f4c8322c76fd63bc4189",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Brass and steel wires of length l and area A hanging from the same roof",
         "width": 440,
@@ -26259,23 +25914,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "1 claimed, all within 1.5 deg",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q144_question.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q144_question_c66ccee4_28102026.svg",
-        "sha256": "c66ccee41eefd9712b66d050cdd5b786fcb33adaa4433da014011ff37a8da2fa",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Source S moving with velocity V_S at 60 degrees to the line from S to observer O",
         "width": 372,
@@ -26463,23 +26113,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "1 claimed, all within 1.5 deg",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q144_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q144_solution_1_110175f7_28102026.svg",
-        "sha256": "110175f74799c07d7f2cd7dc8b1a3638edd0530095aba6a3a06b8132d045f26e",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Source S velocity 19.4 at 60 degrees to the line S-O, with its component 19.4 cos60° = 9.7 along S-O",
         "width": 480,
@@ -26980,23 +26625,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "2 claimed, all within 1.5 deg",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q146_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q146_solution_1_231bb922_28102026.svg",
-        "sha256": "231bb922c8402e6a32690eca57fd5e417d6d66e6ae21d3346e92331cbf59af05",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Rectangular coil (seen as an ellipse) whose plane makes 30 degrees with field B; magnetic moment M at 60 degrees to B",
         "width": 410,
@@ -27777,23 +27417,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q150_question.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q150_question_7ee3f532_28102026.svg",
-        "sha256": "7ee3f5327d6be02830ab3b417c93d2575ecfc64ce2a626cf0243d0cbe5d177ad",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "A diode D in series with a 100 ohm resistor R and a 3.5 V cell",
         "width": 320,
@@ -28707,23 +28342,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "1 claimed, all within 1.5 deg",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q154_question.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q154_question_b5de6a96_28102026.svg",
-        "sha256": "b5de6a966710fbcfa9f91cd0b03a910857bd63a9b9b5a36445bb807d406aa277",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Rod of length L with masses m1 and m2 at its ends, rotating about a perpendicular axis through P",
         "width": 342,
@@ -29191,23 +28821,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q155_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q155_solution_1_d678e8a4_28102026.svg",
-        "sha256": "d678e8a488706acfdbd734dba3b1199c9d2432529b6fa89482f15fb1b21073ba",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Single slit with edge A, midpoint M and edge B, rays from A and B meeting at P on the screen",
         "width": 340,
@@ -29989,23 +29614,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q159_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q159_solution_1_b98bb533_28102026.svg",
-        "sha256": "b98bb533e5f24493e2c50579adf87b8e220aebe8f658f32856428107ee087fc2",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Two wires of conductivities σ1 and σ2, each of length ℓ and cross-section A, joined in series",
         "width": 540,
@@ -30660,23 +30280,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q162_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q162_solution_1_1da9acc0_28102026.svg",
-        "sha256": "1da9acc07c4d28d49b0de827de0c42097d4ebbd16dfac186d4d79d13baa32051",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Series R-C circuit with an AC source",
         "width": 360,
@@ -31004,23 +30619,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "1 claimed, all within 1.5 deg",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q163_question.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q163_question_2ffd6ad5_28102026.svg",
-        "sha256": "2ffd6ad5348a78e1aa218f86125a701c19c75673ae2f1ff1c1008e94de36624b",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "A box on a plank inclined at angle theta to the horizontal, with its weight mg and direction of sliding",
         "width": 360,
@@ -31583,23 +31193,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q165_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q165_solution_1_67108ea7_28102026.svg",
-        "sha256": "67108ea78e5b6a0c401c83ffa15cc7346d7b4c8129754b5f700a2b4b32f7ea50",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Refrigerator: heat q2 taken from cold reservoir TC, work input, heat q1 rejected to hot reservoir TH",
         "width": 115,
@@ -31935,23 +31540,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q166_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q166_solution_1_b78904c1_28102026.svg",
-        "sha256": "b78904c114dea71ff232ea5922e5fec23f657ecf550946fe7017431aebc298f8",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "P-V diagram: adiabatic, isothermal and isobaric compressions to half volume",
         "width": 412,
@@ -32309,23 +31909,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q167_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q167_solution_1_55a78e7a_28102026.svg",
-        "sha256": "55a78e7a0122202efd83083f9b65fe050850550bb1dc02c180c6a8ee7ca08d79",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "A ball M falling from height h onto the ground, shown at the top and just above the ground",
         "width": 232,
@@ -32622,23 +32217,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "1 claimed, all within 1.5 deg",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q168_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q168_solution_1_6fa1e9c4_28102026.svg",
-        "sha256": "6fa1e9c4b4578b8fd47ebfe7d9c87a311415b5239d31b393423a9a2b01269a6d",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Block M moving at V hits block M at rest; afterwards the two blocks move off at 90 degrees, one at V/3",
         "width": 652,
@@ -33984,23 +33574,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q175_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q175_solution_1_d61a5362_28102026.svg",
-        "sha256": "d61a53624c74daf48cb4610d73aa2dab08c7ae15ff35480df49b579174ab0b79",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Ammeter (coil S of 480 ohm with a 20 ohm shunt) in series with a 40.8 ohm resistor and a 30 v battery",
         "width": 460,
@@ -34601,23 +34186,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q177_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q177_solution_1_da2079cf_28102026.svg",
-        "sha256": "da2079cf60ed297f9afc2976d239542a5e9720c64be026e110817254bda337b7",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Objective lens with a line L drawn on it and the eye-piece a distance d = f0 + fe away",
         "width": 517,
@@ -35233,23 +34813,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "3 claimed, all within 1.5 deg",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q180_question.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q180_question_63333c81_28102026.svg",
-        "sha256": "63333c817b942c852e2e363c6a46ad96183d58842a1a044a38cbd4c4a1f9e7f0",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "Blue, green and red rays incident normally on face AB of a right-angled prism ABC with 45 degree angle at C",
         "width": 430,
@@ -35553,23 +35128,18 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "the printed picture traced to vector lines (code/lib/raster_trace.py)",
-       "layout": "traced",
-       "status": "drawn",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": null,
+       "status": "not_on_print",
        "checks": {
-        "renders": "pass",
-        "print_match": "picture-printed figure: the print itself, traced",
+        "renders": "not_on_print",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "2 claimed, all within 1.5 deg",
         "netlist": "not a circuit",
-        "printed_text": "pass"
+        "printed_text": "not_on_print"
        },
-       "image": {
-        "path": "figures_drawn/2015_A/q180_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q180_solution_1_563afc2c_28102026.svg",
-        "sha256": "563afc2c1d64815f8dbd32843a3a7a9961802b60f7f5c3e11bc3f182554a634c",
-        "type": "image/svg+xml"
-       },
-       "message": null,
+       "image": null,
+       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
        "spec": {
         "title": "A horizontal ray incident at i = 45° on the hypotenuse face of a right-angled 45° prism",
         "width": 450,

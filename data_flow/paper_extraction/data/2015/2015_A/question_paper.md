@@ -1,6 +1,6 @@
 # NEET (UG) 2015 · Code A
 
-180 questions · source `NEET_Papers/2015/NEET_2015_Code_A_official.pdf` · every image a CDN link (0 without one) · 52 figures redrawn
+180 questions · source `NEET_Papers/2015/NEET_2015_Code_A_official.pdf` · every image a CDN link (0 without one) · 0 figures redrawn
 
 Generated from `questions.json` (schema `neet-pyq/question-record/v3`) by `code/paper_md.py`; edit the pipeline, not this file.
 
@@ -12,7 +12,7 @@ Chemistry · organic · Hydrocarbons
 
 - (1) $\mathrm{(CH_3)_2C=CH-CH_2-CH_3}$
 - (2) $\mathrm{(CH_3)_2CH-CH_2-CH=CH_2}$
-- (3) 3,4-dimethylpent-1-ene `C=CC(C)C(C)C` ![3,4-dimethylpent-1-ene](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q001_option_3_s1_17edb7c3_29102026.svg?v=17edb7c3a206) — $\mathrm{(CH_3)_2CH-CH(CH_3)-CH=CH_2}$
+- (3) 3,4-dimethylpent-1-ene `C=CC(C)C(C)C` — $\mathrm{(CH_3)_2CH-CH(CH_3)-CH=CH_2}$
 - **(4)** $\mathrm{(CH_3)_3C-CH=CH_2}$
 
 **Answer** — booklet: (4) · independent solve: (4) · agree
@@ -22,9 +22,6 @@ Chemistry · organic · Hydrocarbons
 ![printed figure: 3,3-dimethylbut-1-ene →(H⁺) 3,3-dimethylbutan-2-ylium; 3,3-dimethylbutan-2-ylium →(−C̄H₃) 2,3-dimethylbutan-2-ylium; 2,3-dimethylbutan-2-ylium →(−H⁺) 2,3-dimethylbut-2-ene (2,3-Dimethyl-2-butene)](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q001_sol_1_11031cdb_28102026.png?v=11031cdb123a)
 
 *3,3-dimethylbut-1-ene →[H⁺] 3,3-dimethylbutan-2-ylium; 3,3-dimethylbutan-2-ylium →[−C̄H₃] 2,3-dimethylbutan-2-ylium; 2,3-dimethylbutan-2-ylium →[−H⁺] 2,3-dimethylbut-2-ene (2,3-Dimethyl-2-butene)*
-
-![drawn: 3,3-dimethylbut-1-ene →(H⁺) 3,3-dimethylbutan-2-ylium; 3,3-dimethylbutan-2-ylium →(−C̄H₃) 2,3-dimethylbutan-2-ylium; 2,3-dimethylbutan-2-ylium →(−H⁺) 2,3-dimethylbut-2-ene (2,3-Dimethyl-2-butene)](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q001_solution_1_8d4bbd0b_28102026.svg?v=8d4bbd0b4d67)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
 
 
 **Solved independently** (answer withheld)
@@ -134,17 +131,11 @@ The number of structural isomers possible from the molecular formula $\mathrm{C_
 
 *$\ce{C3H9N}$: propan-1-amine ($\ce{CH3-CH2-CH2-NH2}$); propan-2-amine ($\ce{CH3-CH(NH2)-CH3}$) — 1° amine*
 
-![drawn: $\ce{C3H9N}$: propan-1-amine ($\ce{CH3-CH2-CH2-NH2}$); propan-2-amine ($\ce{CH3-CH(NH2)-CH3}$) — 1° amine](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q004_solution_1_4ab97476_28102026.svg?v=4ab974769b9d)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
-
 1. $\mathrm{CH_3-CH_2-NH-CH_3}$ $\}$ $2^{\circ}$ amine
 
 ![printed figure: N,N-dimethylmethanamine ($\ce{(CH3)3N}$) — 3° amine](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q004_sol_2_bddced13_28102026.png?v=bddced134af9)
 
 *N,N-dimethylmethanamine ($\ce{(CH3)3N}$) — 3° amine*
-
-![drawn: N,N-dimethylmethanamine ($\ce{(CH3)3N}$) — 3° amine](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q004_solution_2_b0b74a57_28102026.svg?v=b0b74a57223a)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
 
 
 **Solved independently** (answer withheld)
@@ -296,9 +287,6 @@ Caprolactum is used for the manufacture of:
 
 *Caprolactum: caprolactam with H–OH (water) drawn across the N–C=O bond, dashed line marking the cleavage → nH[ 6-aminohexanoic acid ]z; ↓ Nylon-6: [–NH–(CH₂)₅–CO–]n*
 
-![drawn: Caprolactum: caprolactam with H–OH (water) drawn across the N–C=O bond, dashed line marking the cleavage → nH( 6-aminohexanoic acid )z; ↓ Nylon-6: (–NH–(CH₂)₅–CO–)n](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q008_solution_1_db245e53_28102026.svg?v=db245e53df2a)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
-
 
 **Solved independently** (answer withheld)
 
@@ -376,9 +364,6 @@ Strong reducing behaviour of $\mathrm{H_3PO_2}$ is due to:
 ![printed figure: phosphinic acid ($\ce{H3PO2}$): P bonded to =O, -OH and two H](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q010_sol_1_0fe7fa66_28102026.png?v=0fe7fa663dc2)
 
 *phosphinic acid ($\ce{H3PO2}$): P bonded to =O, -OH and two H*
-
-![drawn: phosphinic acid ($\ce{H3PO2}$): P bonded to =O, -OH and two H](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q010_solution_1_4e7d8bc5_28102026.svg?v=4e7d8bc54e0a)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
 
 3. Presence of one $-\mathrm{OH}$ group and two $\mathrm{P-H}$ bonds.
 
@@ -505,26 +490,17 @@ In which of the following pairs, both the species are not isostructural?
 
 *ammonia, $\ce{NH3}$ (pyramidal, one lone pair on N); phosphine, $\ce{PH3}$ (pyramidal, one lone pair on P)*
 
-![drawn: ammonia, $\ce{NH3}$ (pyramidal, one lone pair on N); phosphine, $\ce{PH3}$ (pyramidal, one lone pair on P)](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_1_371977a9_29102026.svg?v=371977a9d234)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
-
 3. ii. Structures of $\mathrm{XeF_4}$ is square planar.
 
 ![printed figure: xenon tetrafluoride, $\ce{XeF4}$, with two lone pairs on Xe (square planar), sp3 d2 hybridisation](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_agent/q013_sol_2_599ae8fd_29102026.png?v=599ae8fdf6a8)
 
 *xenon tetrafluoride, $\ce{XeF4}$, with two lone pairs on Xe (square planar), sp3 d2 hybridisation*
 
-![drawn: xenon tetrafluoride, $\ce{XeF4}$, with two lone pairs on Xe (square planar), sp3 d2 hybridisation](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_2_16d105c4_29102026.svg?v=16d105c4e021)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
-
 4. Structure of $\mathrm{XeO_4}$ is tetrahedral
 
 ![printed figure: xenon tetroxide, $\ce{XeO4}$, sp3 hybridisation](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_agent/q013_sol_3_0b72ab21_29102026.png?v=0b72ab2125a7)
 
 *xenon tetroxide, $\ce{XeO4}$, sp3 hybridisation*
-
-![drawn: xenon tetroxide, $\ce{XeO4}$, sp3 hybridisation](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_3_e989d02f_29102026.svg?v=e989d02fe140)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
 
 5. So $\mathrm{XeF_4}$ and $\mathrm{XeO_4}$ are not isostructural.
 6. iii. Structure of $\mathrm{SiCl_4}$ is tetrahedral.
@@ -533,17 +509,11 @@ In which of the following pairs, both the species are not isostructural?
 
 *silicon tetrachloride, $\ce{SiCl4}$, sp3 hybridisation*
 
-![drawn: silicon tetrachloride, $\ce{SiCl4}$, sp3 hybridisation](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_4_26a06232_29102026.svg?v=26a062328533)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
-
 7. Structure of $\mathrm{PCl_4^+}$ is tetrahedral.
 
 ![printed figure: tetrachlorophosphonium ion, $\ce{PCl4+}$, sp3 hybridisation](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_agent/q013_sol_5_92cc9d30_29102026.png?v=92cc9d30360c)
 
 *tetrachlorophosphonium ion, $\ce{PCl4+}$, sp3 hybridisation*
-
-![drawn: tetrachlorophosphonium ion, $\ce{PCl4+}$, sp3 hybridisation](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q013_solution_5_b0e076b6_29102026.svg?v=b0e076b6cb2a)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
 
 
 **Solved independently** (answer withheld)
@@ -573,10 +543,10 @@ Chemistry · organic · Hydrocarbons
 
 In the reaction with $\mathrm{HCl}$, an alkene reacts in accordance with the Markovnikov’s rule, to give a product 1-chloro-1-methylcyclohexane. The possible reaction alkene is:
 
-- (1) methylenecyclohexane `C=C1CCCCC1` ![methylenecyclohexane](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_1_s1_017c41b7_28102026.svg?v=017c41b77c6a)
-- (2) 1-methylcyclohexene `CC1=CCCCC1` ![1-methylcyclohexene](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_2_s1_8acf082d_28102026.svg?v=8acf082d8be3)
+- (1) methylenecyclohexane `C=C1CCCCC1`
+- (2) 1-methylcyclohexene `CC1=CCCCC1`
 - **(3)** methylenecyclohexane `C=C1CCCCC1`; 1-methylcyclohexene `CC1=CCCCC1` — and
-- (4) 3-methylcyclohexene `CC1C=CCCC1` ![3-methylcyclohexene](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_option_4_s1_322edad4_28102026.svg?v=322edad4addd)
+- (4) 3-methylcyclohexene `CC1C=CCCC1`
 
 **Answer** — booklet: (3) · independent solve: (3) · agree
 
@@ -585,9 +555,6 @@ In the reaction with $\mathrm{HCl}$, an alkene reacts in accordance with the Mar
 ![printed figure: methylenecyclohexane →(H⁺) 1-methylcyclohexyl cation →(Cl⁻) 1-chloro-1-methylcyclohexane](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q014_sol_1_b9958495_28102026.png?v=b9958495f59a)
 
 *methylenecyclohexane →[H⁺] 1-methylcyclohexyl cation →[Cl⁻] 1-chloro-1-methylcyclohexane*
-
-![drawn: methylenecyclohexane →(H⁺) 1-methylcyclohexyl cation →(Cl⁻) 1-chloro-1-methylcyclohexane](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q014_solution_1_feb78a54_28102026.svg?v=feb78a5478b1)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
 
 
 **Solved independently** (answer withheld)
@@ -687,9 +654,6 @@ Reaction of phenol with chloroform in presence of dilute sodium hydroxide finall
 
 *phenol + $\ce{CHCl3}$ + $\ce{NaOH}$ → 2-hydroxybenzaldehyde > 4-hydroxybenzaldehyde*
 
-![drawn: phenol + $\ce{CHCl3}$ + $\ce{NaOH}$ → 2-hydroxybenzaldehyde > 4-hydroxybenzaldehyde](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q016_solution_1_d973985f_28102026.svg?v=d973985f7b60)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
-
 
 **Solved independently** (answer withheld)
 
@@ -771,9 +735,6 @@ Which of the statements given below is incorrect?
 ![printed figure: ozone ($\ce{O3}$), bent: central O carrying a lone pair, a coordinate bond (arrow) to the left O and a double bond to the right O](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q018_sol_1_6d8f89ab_28102026.png?v=6d8f89ab9889)
 
 *ozone ($\ce{O3}$), bent: central O carrying a lone pair, a coordinate bond (arrow) to the left O and a double bond to the right O*
-
-![drawn: ozone ($\ce{O3}$), bent: central O carrying a lone pair, a coordinate bond (arrow) to the left O and a double bond to the right O](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q018_solution_1_eaf6d68a_28102026.svg?v=eaf6d68af788)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
 
 
 **Solved independently** (answer withheld)
@@ -1187,9 +1148,6 @@ Two possible stereo-structures of $\mathrm{CH_3CHOH \cdot COOH}$, which are opti
 
 *Fischer projections on either side of a mirror: (2R)-2-hydroxypropanoic acid (COOH top, CH3 bottom, H left, OH right) | mirror | (2S)-2-hydroxypropanoic acid (COOH top, CH3 bottom, HO left, H right)*
 
-![drawn: Fischer projections on either side of a mirror: (2R)-2-hydroxypropanoic acid (COOH top, CH3 bottom, H left, OH right) | mirror | (2S)-2-hydroxypropanoic acid (COOH top, CH3 bottom, HO left, H right)](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q029_solution_1_0db9812a_28102026.svg?v=0db9812a1bd7)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
-
 1. Both are enantiomers.
 
 **Solved independently** (answer withheld)
@@ -1219,9 +1177,6 @@ The following reaction is known by the name:
 ![printed figure: aniline + benzoyl chloride →(NaOH) N-phenylbenzamide](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_agent/q030_02e88f3b_29102026.png?v=02e88f3b3782)
 
 *aniline + benzoyl chloride →[NaOH] N-phenylbenzamide*
-
-![drawn: aniline + benzoyl chloride →(NaOH) N-phenylbenzamide](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2015/2015_A/figures_drawn/q030_question_687d04cb_29102026.svg?v=687d04cb16f9)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
 
 Structures: aniline `Nc1ccccc1`; benzoyl chloride `O=C(Cl)c1ccccc1`; N-phenylbenzamide `O=C(Nc1ccccc1)c1ccccc1`
 
@@ -1334,10 +1289,10 @@ Chemistry · organic · Aldehydes, Ketones, and Carboxylic Acids
 
 Which one of the following esters gets hydrolyzed most easily under alkaline conditions?
 
-- (1) phenyl acetate `CC(=O)Oc1ccccc1` ![phenyl acetate](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_1_s1_c74dc01d_28102026.svg?v=c74dc01dc520)
-- (2) 4-chlorophenyl acetate `CC(=O)Oc1ccc(Cl)cc1` ![4-chlorophenyl acetate](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_2_s1_a5680402_28102026.svg?v=a56804028684)
-- **(3)** 4-nitrophenyl acetate `CC(=O)Oc1ccc([N+](=O)[O-])cc1` ![4-nitrophenyl acetate](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_3_s1_60f8d034_28102026.svg?v=60f8d034621b)
-- (4) 4-methoxyphenyl acetate `COc1ccc(OC(C)=O)cc1` ![4-methoxyphenyl acetate](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q033_option_4_s1_89da9da8_28102026.svg?v=89da9da8b8e8)
+- (1) phenyl acetate `CC(=O)Oc1ccccc1`
+- (2) 4-chlorophenyl acetate `CC(=O)Oc1ccc(Cl)cc1`
+- **(3)** 4-nitrophenyl acetate `CC(=O)Oc1ccc([N+](=O)[O-])cc1`
+- (4) 4-methoxyphenyl acetate `COc1ccc(OC(C)=O)cc1`
 
 **Answer** — booklet: (3) · independent solve: (3) · agree
 
@@ -1633,9 +1588,6 @@ The oxidation of benzene by $\mathrm{V_2O_5}$ in the presence of air produces:
 
 *benzene →[Air / $\ce{V2O5}$] maleic anhydride*
 
-![drawn: benzene →(Air / $\ce{V2O5}$) maleic anhydride](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q040_solution_1_32ec54c8_28102026.svg?v=32ec54c84ef0)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
-
 
 **Solved independently** (answer withheld)
 
@@ -1665,15 +1617,12 @@ Which of the following is not the product of dehydration of [structure] ?
 
 *2-cyclohexylbutan-2-ol*
 
-![drawn: 2-cyclohexylbutan-2-ol](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_question_fcf65c76_28102026.svg?v=fcf65c76c036)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
+Structures: 2-cyclohexylbutan-2-ol `CCC(C)(O)C1CCCCC1`
 
-Structures: 2-cyclohexylbutan-2-ol `CCC(C)(O)C1CCCCC1` ![2-cyclohexylbutan-2-ol](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_question_s1_fcf65c76_28102026.svg?v=fcf65c76c036)
-
-- (1) 2-cyclohexylbut-2-ene `CC=C(C)C1CCCCC1` ![2-cyclohexylbut-2-ene](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_1_s1_9f678492_28102026.svg?v=9f678492e30a)
-- (2) butan-2-ylidenecyclohexane `CCC(C)=C1CCCCC1` ![butan-2-ylidenecyclohexane](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_2_s1_362d94c8_28102026.svg?v=362d94c813bb)
-- (3) 2-cyclohexylbut-1-ene `C=C(CC)C1CCCCC1` ![2-cyclohexylbut-1-ene](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_3_s1_d02dd8ee_28102026.svg?v=d02dd8ee45b0)
-- **(4)** 1-(butan-2-yl)cyclohex-1-ene `CCC(C)C1=CCCCC1` ![1-(butan-2-yl)cyclohex-1-ene](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_option_4_s1_a2832e0e_28102026.svg?v=a2832e0ea4dc)
+- (1) 2-cyclohexylbut-2-ene `CC=C(C)C1CCCCC1`
+- (2) butan-2-ylidenecyclohexane `CCC(C)=C1CCCCC1`
+- (3) 2-cyclohexylbut-1-ene `C=C(CC)C1CCCCC1`
+- **(4)** 1-(butan-2-yl)cyclohex-1-ene `CCC(C)C1=CCCCC1`
 
 **Answer** — booklet: (4) · independent solve: (3) · differs
 
@@ -1682,9 +1631,6 @@ Structures: 2-cyclohexylbutan-2-ol `CCC(C)(O)C1CCCCC1` ![2-cyclohexylbutan-2-ol]
 ![printed figure: 2-cyclohexylbutan-2-ol →(Δ, -$\ce{H2O}$) butan-2-ylidenecyclohexane + 2-cyclohexylbut-1-ene + 2-cyclohexylbut-2-ene](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q041_sol_1_ffcd149d_28102026.png?v=ffcd149d9fef)
 
 *2-cyclohexylbutan-2-ol →[Δ, -$\ce{H2O}$] butan-2-ylidenecyclohexane + 2-cyclohexylbut-1-ene + 2-cyclohexylbut-2-ene*
-
-![drawn: 2-cyclohexylbutan-2-ol →(Δ, -$\ce{H2O}$) butan-2-ylidenecyclohexane + 2-cyclohexylbut-1-ene + 2-cyclohexylbut-2-ene](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q041_solution_1_7168a2b2_28102026.svg?v=7168a2b2a021)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
 
 1. Intermediate carbocation (more stable). No rearangement in $\mathrm{C^{+}}$ takes place.
 
@@ -1727,9 +1673,6 @@ Method by which Aniline cannot be prepared is:
 ![printed figure: chlorobenzene, with lone pairs drawn on Cl and a curved arrow from a Cl lone pair to the ring bond (resonance)](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q042_sol_1_26f9aac9_28102026.png?v=26f9aac90ae6)
 
 *chlorobenzene, with lone pairs drawn on Cl and a curved arrow from a Cl lone pair to the ring bond (resonance)*
-
-![drawn: chlorobenzene, with lone pairs drawn on Cl and a curved arrow from a Cl lone pair to the ring bond (resonance)](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q042_solution_1_950bd461_28102026.svg?v=950bd46164ab)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its SMILES*
 
 1. Due to resonance $\mathrm{C-Cl}$ bond acquires double bond character.
 
@@ -5030,9 +4973,6 @@ An electron moves on a straight line path XY as shown. The abcd is a coil adjace
 
 *A circular coil abcd above the straight path XY of an electron*
 
-![drawn: A circular coil abcd above the straight path XY of an electron](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q138_question_cbe0c589_28102026.svg?v=cbe0c5896e1c)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
-
 - (1) No current induced
 - (2) abcd
 - (3) adcb
@@ -5045,9 +4985,6 @@ An electron moves on a straight line path XY as shown. The abcd is a coil adjace
 ![printed figure: An electron e⁻ passing along a straight line below a circular coil](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q138_sol_1_b3acab72_28102026.png?v=b3acab729688)
 
 *An electron e⁻ passing along a straight line below a circular coil*
-
-![drawn: An electron e⁻ passing along a straight line below a circular coil](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q138_solution_1_beaf8b5a_28102026.svg?v=beaf8b5a81d2)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
 
 1. When $e^{-}$ comes closer the induced current will be anticlockwise
 2. When $e^{-}$ comes farther induced current will be clockwise.
@@ -5126,9 +5063,6 @@ The Young’s modulus of steel is twice that of brass. Two wires of same length 
 ![printed figure: Brass and steel wires of length l and area A hanging from the same roof](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q140_sol_1_def0c676_28102026.png?v=def0c676acc8)
 
 *Brass and steel wires of length l and area A hanging from the same roof*
-
-![drawn: Brass and steel wires of length l and area A hanging from the same roof](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q140_solution_1_3a347ce0_28102026.svg?v=3a347ce0bbe4)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
 
 1. $\mathrm{Y} = \frac{\mathrm{W}}{\mathrm{A}} \cdot \frac{\ell}{\Delta\ell}$
 2. So $\Delta\ell = \frac{\mathrm{W}\ell}{\mathrm{AY}}$
@@ -5281,9 +5215,6 @@ A source of sound S emitting waves of frequency $100\,\mathrm{Hz}$ and an observ
 
 *Source S moving with velocity V_S at 60 degrees to the line from S to observer O*
 
-![drawn: Source S moving with velocity V_S at 60 degrees to the line from S to observer O](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q144_question_c66ccee4_28102026.svg?v=c66ccee41eef)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
-
 - (1) $97\,\mathrm{Hz}$
 - (2) $100\,\mathrm{Hz}$
 - **(3)** $103\,\mathrm{Hz}$
@@ -5296,9 +5227,6 @@ A source of sound S emitting waves of frequency $100\,\mathrm{Hz}$ and an observ
 ![printed figure: Source S velocity 19.4 at 60 degrees to the line S-O, with its component 19.4 cos60° = 9.7 along S-O](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q144_sol_1_168f2c8d_28102026.png?v=168f2c8d4791)
 
 *Source S velocity 19.4 at 60 degrees to the line S-O, with its component 19.4 cos60° = 9.7 along S-O*
-
-![drawn: Source S velocity 19.4 at 60 degrees to the line S-O, with its component 19.4 cos60° = 9.7 along S-O](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q144_solution_1_110175f7_28102026.svg?v=110175f74799)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
 
 1. $19.4\cos 60^{\circ} = 9.7$
 2. $t^{1} = f_{0}\left(\frac{v - v}{v - v_{s}}\right)$
@@ -5383,9 +5311,6 @@ A rectangular coil of length $0.12\,\mathrm{m}$ and width $0.1\,\mathrm{m}$ havi
 ![printed figure: Rectangular coil (seen as an ellipse) whose plane makes 30 degrees with field B; magnetic moment M at 60 degrees to B](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q146_sol_1_1610ba69_28102026.png?v=1610ba6994cd)
 
 *Rectangular coil (seen as an ellipse) whose plane makes 30 degrees with field B; magnetic moment M at 60 degrees to B*
-
-![drawn: Rectangular coil (seen as an ellipse) whose plane makes 30 degrees with field B; magnetic moment M at 60 degrees to B](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q146_solution_1_231bb922_28102026.svg?v=231bb922c840)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
 
 1. $\vec{\tau} = \vec{M} \times \bar{B} = MB\sin 60^{\circ}$
 2. $= Ni\,AB\sin 60^{\circ}$
@@ -5530,9 +5455,6 @@ In the given figure, a diode D is connected to an external resistance $R = 100\,
 ![printed figure: A diode D in series with a 100 ohm resistor R and a 3.5 V cell](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q150_492d5187_28102026.png?v=492d51876825)
 
 *A diode D in series with a 100 ohm resistor R and a 3.5 V cell*
-
-![drawn: A diode D in series with a 100 ohm resistor R and a 3.5 V cell](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q150_question_7ee3f532_28102026.svg?v=7ee3f5327d6b)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
 
 - (1) $35\,\mathrm{mA}$
 - **(2)** $30\,\mathrm{mA}$
@@ -5697,9 +5619,6 @@ Point masses $\mathrm{m_1}$ and $\mathrm{m_2}$ are placed at the opposite ends o
 
 *Rod of length L with masses m1 and m2 at its ends, rotating about a perpendicular axis through P*
 
-![drawn: Rod of length L with masses m1 and m2 at its ends, rotating about a perpendicular axis through P](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q154_question_b5de6a96_28102026.svg?v=b5de6a966710)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
-
 - **(1)** $\mathrm{x} = \frac{\mathrm{m_2 L}}{\mathrm{m_1 + m_2}}$
 - (2) $\mathrm{x} = \frac{\mathrm{m_1 L}}{\mathrm{m_! + m_2}}$
 - (3) $\mathrm{x} = \frac{\mathrm{m_1}}{\mathrm{m_2}}\mathrm{L}$
@@ -5754,9 +5673,6 @@ At the first minimum adjacent to the central maximum of a single-slit diffractio
 ![printed figure: Single slit with edge A, midpoint M and edge B, rays from A and B meeting at P on the screen](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q155_sol_1_1e398762_28102026.png?v=1e398762183e)
 
 *Single slit with edge A, midpoint M and edge B, rays from A and B meeting at P on the screen*
-
-![drawn: Single slit with edge A, midpoint M and edge B, rays from A and B meeting at P on the screen](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q155_solution_1_d678e8a4_28102026.svg?v=d678e8a48870)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
 
 3. $\mathrm{AP} - \mathrm{MP} = \frac{\lambda}{2}$
 4. So phase difference $= \frac{2\pi}{\lambda} \times \frac{\lambda}{2} = \pi$
@@ -5913,9 +5829,6 @@ Two metal wires of identical dimensions are connected in series. If $v_1$ and $v
 
 *Two wires of conductivities σ1 and σ2, each of length ℓ and cross-section A, joined in series*
 
-![drawn: Two wires of conductivities σ1 and σ2, each of length ℓ and cross-section A, joined in series](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q159_solution_1_b98bb533_28102026.svg?v=b98bb533e5f2)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
-
 1. $R_{ec} = \frac{\ell}{\sigma_1 A} + \frac{\ell}{\sigma_1 A} = \frac{\ell_{eq}}{\sigma_{eq} A_{eq}}$
 2. $\frac{2\ell}{\sigma_{eq} A} = \frac{\ell}{A}\left(\frac{\sigma_1 + \sigma_2}{\sigma_1 \sigma_2}\right)$
 3. $\sigma_{eq} = \frac{2\sigma_1 \sigma_2}{\sigma_1 \sigma_2}$
@@ -6041,9 +5954,6 @@ A series R-C circuit is connected to an alternating voltage source. Consider two
 
 *Series R-C circuit with an AC source*
 
-![drawn: Series R-C circuit with an AC source](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q162_solution_1_1da9acc0_28102026.svg?v=1da9acc07c4d)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
-
 1. $i = \frac{v}{\sqrt{R^{2} + \left(\frac{1}{c\omega}\right)^{2}}}$
 2. $V_{C} = \frac{v}{\sqrt{R^{2} + \left(\frac{1}{c\omega}\right)^{2}}} \times \left(\frac{1}{c\omega}\right)$
 3. $V_{C} = \frac{V}{\sqrt{(Rc\omega)^{2} + 1}}$
@@ -6080,9 +5990,6 @@ A plank with a box on it at one end is gradually raised about the other end. As 
 ![printed figure: A box on a plank inclined at angle theta to the horizontal, with its weight mg and direction of sliding](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q163_4e9a5cc7_28102026.png?v=4e9a5cc76a47)
 
 *A box on a plank inclined at angle theta to the horizontal, with its weight mg and direction of sliding*
-
-![drawn: A box on a plank inclined at angle theta to the horizontal, with its weight mg and direction of sliding](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q163_question_2ffd6ad5_28102026.svg?v=2ffd6ad5348a)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
 
 - (1) $0.4$ and $0.3$
 - (2) $0.6$ and $0.6$
@@ -6178,9 +6085,6 @@ The coefficient of performance of a refrigerator is 5. If the temperature inside
 
 *Refrigerator: heat q2 taken from cold reservoir TC, work input, heat q1 rejected to hot reservoir TH*
 
-![drawn: Refrigerator: heat q2 taken from cold reservoir TC, work input, heat q1 rejected to hot reservoir TH](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q165_solution_1_67108ea7_28102026.svg?v=67108ea78e5b)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
-
 1. $\mathrm{cop} = \frac{q_1}{w} = \frac{q_2}{q_1 - q_2} = \frac{T_c}{T_H - T_C} = 5$
 2. $T_C = 5T_H - 5T_c$
 3. $6T_c = 5T_H$
@@ -6225,9 +6129,6 @@ An ideal gas is compressed to half its initial volume by means of several proces
 
 *P-V diagram: adiabatic, isothermal and isobaric compressions to half volume*
 
-![drawn: P-V diagram: adiabatic, isothermal and isobaric compressions to half volume](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q166_solution_1_b78904c1_28102026.svg?v=b78904c114de)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
-
 1. Since area under the curve is max for adiabatic process so work done on the gas will be max for adiabatic process.
 
 **Solved independently** (answer withheld)
@@ -6269,9 +6170,6 @@ A ball is thrown vertically downwards from a height of $20\,\mathrm{m}$ with an 
 ![printed figure: A ball M falling from height h onto the ground, shown at the top and just above the ground](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q167_sol_1_19a21f98_28102026.png?v=19a21f98ff28)
 
 *A ball M falling from height h onto the ground, shown at the top and just above the ground*
-
-![drawn: A ball M falling from height h onto the ground, shown at the top and just above the ground](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q167_solution_1_55a78e7a_28102026.svg?v=55a78e7a0122)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
 
 1. $\frac{KE_{f}}{KE_{i}} = \frac{1}{2}$
 2. $\frac{V_{f}}{V_{i}} = \frac{1}{\sqrt{2}}$
@@ -6315,9 +6213,6 @@ On a frictionless surfaces, a block of mass $M$ moving at speed $v$ collides ela
 ![printed figure: Block M moving at V hits block M at rest; afterwards the two blocks move off at 90 degrees, one at V/3](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q168_sol_1_f193c480_28102026.png?v=f193c4804034)
 
 *Block M moving at V hits block M at rest; afterwards the two blocks move off at 90 degrees, one at V/3*
-
-![drawn: Block M moving at V hits block M at rest; afterwards the two blocks move off at 90 degrees, one at V/3](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q168_solution_1_6fa1e9c4_28102026.svg?v=6fa1e9c4b457)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
 
 1. $\vec{P_i} = \vec{P_f}$
 2. $\Rightarrow |P_i| = |P_f| \Rightarrow \sqrt{\left(m\frac{V}{3}\right)^{2} + (mV_2)^{2}}$
@@ -6592,9 +6487,6 @@ A circuit contains an ammeter, a battery of $30\,\mathrm{v}$ and a resistance $4
 
 *Ammeter (coil S of 480 ohm with a 20 ohm shunt) in series with a 40.8 ohm resistor and a 30 v battery*
 
-![drawn: Ammeter (coil S of 480 ohm with a 20 ohm shunt) in series with a 40.8 ohm resistor and a 30 v battery](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q175_solution_1_d61a5362_28102026.svg?v=d61a53624c74)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
-
 1. Resistance of ammeter $= \frac{480 \times 20}{480 + 20} = 19.2\,\Omega$
 2. $i = \frac{30}{40.8 + 19.2} = 0.5\,\mathrm{A}$
 
@@ -6669,9 +6561,6 @@ In an astronomical telescope in normal adjustment a straight black line of the l
 ![printed figure: Objective lens with a line L drawn on it and the eye-piece a distance d = f0 + fe away](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q177_sol_1_10bb1aa0_28102026.png?v=10bb1aa0cc88)
 
 *Objective lens with a line L drawn on it and the eye-piece a distance d = f0 + fe away*
-
-![drawn: Objective lens with a line L drawn on it and the eye-piece a distance d = f0 + fe away](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q177_solution_1_da2079cf_28102026.svg?v=da2079cf60ed)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
 
 1. Magnification by eyepiece
 2. $m = \frac{f}{f+u}$
@@ -6785,9 +6674,6 @@ A beam of light consisting of red, green and blue colours is incident on a right
 
 *Blue, green and red rays incident normally on face AB of a right-angled prism ABC with 45 degree angle at C*
 
-![drawn: Blue, green and red rays incident normally on face AB of a right-angled prism ABC with 45 degree angle at C](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q180_question_63333c81_28102026.svg?v=63333c817b94)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
-
 - **(1)** Separate the red colour part from the green and blue colours
 - (2) Separate the blue colour part from the red and green colours
 - (3) Separate all the three colours from one another
@@ -6800,9 +6686,6 @@ A beam of light consisting of red, green and blue colours is incident on a right
 ![printed figure: A horizontal ray incident at i = 45° on the hypotenuse face of a right-angled 45° prism](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_agent/q180_sol_1_7d1a96ea_28102026.png?v=7d1a96eaeee3)
 
 *A horizontal ray incident at i = 45° on the hypotenuse face of a right-angled 45° prism*
-
-![drawn: A horizontal ray incident at i = 45° on the hypotenuse face of a right-angled 45° prism](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/figures_drawn/q180_solution_1_563afc2c_28102026.svg?v=563afc2c1d64)  
-*drawn on the booklet's geometry (traced from the printed picture), checked against its figure spec*
 
 1. For TIR $I > I_{c}$ so $\mathrm{Sin}\ i > \sin I_{c}$
 2. $\mathrm{Sin}\ 45^{\circ} > \frac{1}{\mu} \Rightarrow \mu\sqrt{2} \Rightarrow \mu = 1.414$

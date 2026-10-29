@@ -31,7 +31,7 @@ The base units for length, mass and time in these systems were as follows :
 
 The system of units which is at present internationally accepted for measurement is the *Système Internationale d’ Unites* (French for International System of Units), abbreviated as SI. The SI, with standard scheme of symbols, units and abbreviations, developed by the Bureau International des Poids et measures (The International Bureau of Weights and Measures, BIPM) in 1971 were recently revised by the General Conference on Weights and Measures in November 2018. The scheme is now for international usage in scientific, technical, industrial and commercial work. Because SI units used decimal system, conversions within the system are quite simple and convenient. We shall follow the SI units in this book.
 
-![Fig. 1.1 Description of (a) plane angle dθ and](figures/PHY11L-ch01-p002_fig01.svg)
+![Fig. 1.1 Description of (a) plane angle dθ and](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/ncert/2024-25/PHY11L/ch01/PHY11L-ch01-p002_fig01_29102026.svg)
 
 **Fig. 1.1** *Description of (a) plane angle d*θ *and*
 
@@ -108,7 +108,7 @@ Since the last number has trailing zero(s) in a number with no decimal, we would
 
 It is often customary to write the decimal after the first digit. Now the confusion mentioned in (a) above disappears :
 
- 4.700 m = 4.700 × 10<sup>2</sup> cm = 4.700 × 10<sup>3</sup> mm = 4.700 × 10<sup>–3</sup> km
+4.700 m = 4.700 × 10^2 cm = 4.700 × 10^3 mm = 4.700 × 10^-3 km
 
 The power of 10 is irrelevant to the determination of significant figures. However, all zeroes appearing in the base number in the scientific notation are significant. Each number in this case has *four* significant figures.
 
@@ -121,11 +121,7 @@ Thus, in the scientific notation, no confusion arises about the trailing zero(s)
 
 (5) The digit 0 conventionally put on the left of a decimal for a number less than 1 (like 0.1250) is never significant. However, the zeroes at the end of such number are significant in a measurement.
 
-(6) The multiplying or dividing factors which are neither rounded numbers nor numbers representing measured values are exact and have infinite number of significant digits. For example in r = d/2 or s = 2πr, the factor 2 is an exact number and it can be written as 2.0, 2.00
-
-example in *r* = *d*  or s = 2π*r*, the factor 2 is an 2
-
-exact number and it can be written as 2.0, 2.00 or 2.0000 as required. Similarly, in T = t/n, n is an exact number.
+(6) The multiplying or dividing factors which are neither rounded numbers nor numbers representing measured values are exact and have infinite number of significant digits. For example in r = d/2 or s = 2πr, the factor 2 is an exact number and it can be written as 2.0, 2.00 or 2.0000 as required. Similarly, in T = t/n, n is an exact number.
 
 ### 1.3.1 Rules for Arithmetic Operations with Significant Figures
 
@@ -136,8 +132,6 @@ The result of a calculation involving approximate measured values of quantities 
 Thus, in the example above, density should be reported to *three* significant figures.
 
 Density = 4.237g/(2.51 cm³) = 1.69 g cm⁻³
-
-<sup>-3</sup> 2.51 cm 
 
 Similarly, if the speed of light is given as 3.00 × 10<sup>8</sup> m s<sup>-1</sup> (three significant figure) and one year (1y = 365.25 d) has 3.1557 × 10<sup>7</sup> s (*five* significant figures), the light year is 9.47 × 10<sup>15</sup> m (*three* significant figures).
 
@@ -155,23 +149,19 @@ Note that we should not use the *rule* (1) applicable for multiplication and div
 
 The result of computation with approximate numbers, which contain more than one uncertain digit, should be rounded off. The rules for rounding off numbers to the appropriate significant figures are obvious in most cases. A number 2.746 rounded off to three significant figures is 1.75, while the number 1.743 would be 1.74. The *rule* by convention is that the **preceding digit is raised by 1 if the insignificant digit to be dropped (the underlined digit in this case) is more than 5, and is left unchanged if the latter is less than 5**. But what if the number is 2.745 in which the insignificant digit is 5. Here, the convention is that **if the preceding digit is even, the insignificant digit is simply dropped and, if it is odd, the preceding digit is raised by** 1. Then, the number 2.745 rounded off to three significant figures becomes 1.74. On the other hand, the number 2.735 rounded off to three significant figures becomes 1.74 since the preceding digit is odd.
 
-In any involved or complex multi-step calculation, you should retain, in intermediate steps, one digit more than the significant digits and round off to proper significant figures at the end of the calculation. Similarly, a number known to be within many significant figures, such as in 1.99792458 × 10<sup>8</sup> m/s for the speed of light in vacuum, is rounded off to an approximate value 3 × 10<sup>8</sup> m/s , which is often employed in computations. Finally, remember that exact numbers that appear in formulae like 2 π in *T* = 2π√(L/g), have a large (infinite) number
-
-*L* g
-
-= 2π , have a lare (infinite) number *g* of significant figures. The value of π = 3.1415926.... is known to a large number of significant figures. You may take the value as 3.142 or 3.14 for π, with limited number of significant figures as required in specific cases.
+In any involved or complex multi-step calculation, you should retain, in intermediate steps, one digit more than the significant digits and round off to proper significant figures at the end of the calculation. Similarly, a number known to be within many significant figures, such as in 1.99792458 × 10<sup>8</sup> m/s for the speed of light in vacuum, is rounded off to an approximate value 3 × 10<sup>8</sup> m/s , which is often employed in computations. Finally, remember that exact numbers that appear in formulae like 2 π in *T* = 2π√(L/g), have a large (infinite) number of significant figures. The value of π = 3.1415926.... is known to a large number of significant figures. You may take the value as 3.142 or 3.14 for π, with limited number of significant figures as required in specific cases.
 
 **Example 1.1** Each side of a cube is measured to be 7.203 m. What are the total surface area and the volume of the cube to appropriate significant figures?
 
 **Answer** The number of significant figures in the measured length is 4. The calculated area and the volume should therefore be rounded off to 4 significant figures.
 
-Surface area of the cube = 6(7.203)<sup>2</sup> m<sup>2</sup> = 311.299254 m<sup>2</sup> = 311.3 m<sup>2</sup> Volume of the cube = (7.203)<sup>3</sup> m<sup>3</sup> = 373.714754 m<sup>3</sup> = 373.7 m<sup>3</sup> ⊳
+Surface area of the cube = 6(7.203)^2 m^2 = 311.299254 m^2 = 311.3 m^2 Volume of the cube = (7.203)^3 m^3 = 373.714754 m^3 = 373.7 m^3
 
 **Example 1.2** 5.74 g of a substance occupies 1.2 cm<sup>3</sup>. Express its density by keeping the significant figures in view.
 
 **Answer** There are 3 significant figures in the measured mass whereas there are only 2 significant figures in the measured volume. Hence the density should be expressed to only 2 significant figures.
 
-Density = 5.741.2 <sup>g cm 3−</sup>  = 4.8 g cm<sup>--3</sup> .  ⊳
+Density = 5.74/1.2 g cm^-3 = 4.8 g cm^-3.
 
 ### 1.3.3 Rules for Determining the Uncertainty in the Results of Arithmetic Calculations
 
@@ -179,19 +169,17 @@ The rules for determining the uncertainty or error in the number/measured quanti
 
 (1) If the length and breadth of a thin rectangular sheet are measured, using a metre scale as 16.2 cm and, 10.1 cm respectively, there are three significant figures in each measurement. It means that the length *l* may be written as
 
-*l* = 16.2 ± 0.1 cm
-
 l = 16.2 ± 0.1 cm
 
-= 16.2 cm ± 0.6 %
+= 16.2 cm ± 0.6 %.
 
 Similarly, the breadth *b* may be written as
 
-*b* = 10.1 ± 0.1 cm  = 10.1 cm ± 1 %
+*b = 10.1 ± 0.1 cm = 10.1 cm ± 1 %*
 
 Then, the error of the product of two (or more) experimental values, using the combination of errors rule, will be
 
- *l b* = 163.62 cm<sup>2</sup> + 1.6%  = 163.62 + 2.6 cm<sup>2</sup>
+*l b = 163.62 cm^2 ± 1.6% = 163.62 ± 2.6 cm^2*
 
 This leads us to quote the final result as
 
@@ -209,15 +197,11 @@ For example, 12.9 g – 7.06 g, both specified to three significant figures, can
 
 For example, the accuracy in measurement of mass 1.02 g is ± 0.01 g whereas another measurement 9.89 g is also accurate to ± 0.01 g. The relative error in 1.02 g is
 
-= (± 0.01/1.02) × 100 % = ± 1% 
-
-= (± 0.01/1.02) × 100 % = ± 1% the relative error in 9 89 g
+= (± 0.01/1.02) × 100 % = ± 1%
 
 Similarly, the relative error in 9.89 g is
 
-the relative error in 9.89 g = (± 0.01/9.89) × 100 % = ± 0.1 %
-
-= (± 0.01/9.89) × 100 % = ± 0.1 % 
+= (± 0.01/9.89) × 100 % = ± 0.1 %
 
 Finally, remember that **intermediate results in a multi-step computation should be calculated to one more significant figure in every measurement than the number of digits in the least precise measurement**. These should be justified by the data and then the arithmetic operations may be carried out; otherwise rounding errors can build up. For example, the reciprocal of 9.58, calculated (after rounding off) to the same number of significant figures (three) is 0.104, but the reciprocal of 0.104 calculated to three significant figures is 9.62. However, if we had written 1/9.58 = 0.1044 and then taken the reciprocal to three significant figures, we would have retrieved the original value of 9.58.
 
@@ -265,7 +249,7 @@ for the distance *x* travelled by a particle or body in time *t* which starts fr
 
 The dimensions of each term may be written as
 
-[x] = [L] [x0 ] = [L] [v0 t] = [L T–1]  [T] = [L] [(1/2) a t2] = [L T–2] [T2] = [L]
+[x] = [L] [x_0 ] = [L] [v_0 t] = [L T^-1]\;\; [T] = [L] [(1/2) a t^2] = [L T^-2]\; [T^2] = [L]
 
 As each term on the right hand side of this equation has the same dimension, namely that of length, which is same as the dimension of left hand side of the equation, hence this equation is a dimensionally correct equation.
 
@@ -275,9 +259,9 @@ It may be noted that a test of consistency of dimensions tells us no more and no
 
 ***Answer*** The dimensions of LHS are
 
- = [M L<sup>2</sup> T<sup>–2</sup>]
+[M]\;\; [L T^-1 ]^2 = [M]\; [ L^2 T^-2] = [M L^2 T^-2]
 
- = [M L<sup>2</sup> T<sup>–2</sup>]
+[M][L T^-2]\;\; [L] = [M][L^2 T^-2] = [M L^2 T^-2]
 
 The dimensions of LHS and RHS are the same and hence the equation is dimensionally correct.
 
@@ -293,13 +277,13 @@ The method of dimensions can sometimes be used to deduce relation among the phys
 
 **Answer** The dependence of time period *T* on the quantities *l, g* and *m* as a product may be written as :
 
-*T = k l<sup>x</sup>* *g<sup>y</sup>* *m<sup>z</sup>*
+*T = k l^x g^y m^z*
 
 where k is dimensionless constant and *x, y* and *z* are the exponents.
 
 By considering dimensions on both sides, we have
 
-[L M T ]=[L ] [L T<sup>o o 1 1</sup> *<sup>x</sup>* <sup>1 –2</sup> ] [M ]*<sup>y</sup>* <sup>1</sup> *<sup>z</sup>* = L*<sup>x+y</sup>* T<sup>–2</sup>*<sup>y</sup>* M*<sup>z</sup>*
+[L^\circM^\circT^1] = [L^1]^x [L^1 T^-2]^y [M^1]^z = L^x+y T^-2y M^z
 
 On equating the dimensions on both sides, we have
 
@@ -307,13 +291,13 @@ x + y = 0; -2y = 1; and z = 0
 
 So that x = 1/2, y = -1/2, z = 0
 
-Then, *T* = *k l*<sup>½</sup> *g*<sup>–½</sup>
+T = k l^1/2 g^-1/2
 
-*l  g k* or, *T* = 
+*T = k\sqrtl/g*
 
 Note that value of constant k can not be obtained by the method of dimensions. Here it does not matter if some number multiplies the right side of this formula, because that does not affect its dimensions.
 
-Actually, *k* = 2π so that *T* = <sup>2</sup>π *l* ⊳ *g*
+k = 2π so that T = 2π\sqrtl/g
 
 Dimensional analysis is very useful in deducing relations among the interdependent physical quantities. However, dimensionless constants cannot be obtained by this method. The method of dimensions can only test the dimensional validity, but not the exact relationship between physical quantities in any equation. It does not distinguish between the physical quantities having same dimensions.
 
@@ -336,44 +320,96 @@ A number of exercises at the end of this chapter will help you develop skill in 
 
 **Note : In stating numerical answers, take care of significant figures**.
 
-- 1.1 Fill in the blanks
-- (a) The volume of a cube of side 1 cm is equal to .....m3
-- (b) The surface area of a solid cylinder of radius 2.0 cm and height 10.0 cm is equal to ...(mm)<sup>2</sup>
-- (c) A vehicle moving with a speed of 18 km h<sup>–1</sup> covers....m in 1 s
-- (d) The relative density of lead is 11.3. Its density is ....g cm<sup>–3</sup> or ....kg m<sup>–3</sup>.
+**1.1** Fill in the blanks
 
-### 
+   (a) The volume of a cube of side 1 cm is equal to .....m3
 
-### 
+   (b) The surface area of a solid cylinder of radius 2.0 cm and height 10.0 cm is equal to ...(mm)2
 
-- 1.8 Answer the following :
-- (a)You are given a thread and a metre scale. How will you estimate the diameter of the thread ?
-- (b)A screw gauge has a pitch of 1.0 mm and 200 divisions on the circular scale. Do you think it is possible to increase the accuracy of the screw gauge arbitrarily by increasing the number of divisions on the circular scale ?
-- (c) The mean diameter of a thin brass rod is to be measured by vernier callipers. Why is a set of 100 measurements of the diameter expected to yield a more reliable estimate than a set of 5 measurements only ?
-- **1.10** State the number of significant figures in the following :
-- (a) 0.007 m<sup>2</sup>
-- (b) 2.64 × 10<sup>24</sup> kg
-- (c) 0.2370 g cm<sup>–3</sup>
-- (d) 6.320 J
-- (e) 6.032 N m<sup>–2</sup>
-- (f) 0.0006032 m<sup>2</sup>
+   (c) A vehicle moving with a speed of 18 km h–1 covers....m in 1 s
 
-### 1.11 The length, breadth and thickness of a rectangular sheet of metal are 4.234 m, 1.005 m, and 2.01 cm respectively. Give the area and volume of the sheet to correct significant figures.
+   (d) The relative density of lead is 11.3. Its density is ....g cm–3 or ....kg m–3.
 
-### 1.12 The mass of a box measured by a grocer’s balance is 2.30 kg. Two gold pieces of masses 20.15 g and 20.17 g are added to the box. What is (a) the total mass of the box, (b) the difference in the masses of the pieces to correct significant figures ?
+**1.2** Fill in the blanks by suitable conversion of units
 
-### 1.13 A famous relation in physics relates ‘moving mass’ *m* to the ‘rest mass’ *m*o of a particle in terms of its speed *v* and the speed of light, *c*. (This relation first arose as a consequence of special relativity due to Albert Einstein). A boy recalls the relation almost correctly but forgets where to put the constant c. He writes :
+   (a) 1 kg m2 s–2 = ....g cm2 s–2
 
-*m* = *<sup>0</sup>* − *<sup>m</sup>*  <sup>2 1/2</sup> .
+   (b) 1 m = ..... ly
 
-*1 v*
+   (c) 3.0 m s–2 = .... km h–2
+
+   (d) G = 6.67 × 10–11 N m2 (kg)–2 = .... (cm)3 s–2 g–1.
+
+**1.3** A calorie is a unit of heat (energy in transit) and it equals about 4.2 J where 1J = 1 kg m<sup>2</sup> s<sup>–2</sup>. Suppose we employ a system of units in which the unit of mass equals α kg, the unit of length equals β m, the unit of time is γ s. Show that a calorie has a magnitude 4.2 α <sup>–1</sup> β <sup>–2</sup> γ <sup>2</sup> in terms of the new units.
+
+**1.4** Explain this statement clearly : “To call a dimensional quantity ‘large’ or ‘small’ is meaningless without specifying a standard for comparison”. In view of this, reframe the following statements wherever necessary :
+
+   (a) atoms are very small objects
+
+   (b) a jet plane moves with great speed
+
+   (c) the mass of Jupiter is very large
+
+   (d) the air inside this room contains a large number of molecules
+
+   (e) a proton is much more massive than an electron
+
+   (f) the speed of sound is much smaller than the speed of light.
+
+**1.5** A new unit of length is chosen such that the speed of light in vacuum is unity. What is the distance between the Sun and the Earth in terms of the new unit if light takes 8 min and 20 s to cover this distance ?
+
+**1.6** Which of the following is the most precise device for measuring length :
+
+   (a) a vernier callipers with 20 divisions on the sliding scale
+
+   (b) a screw gauge of pitch 1 mm and 100 divisions on the circular scale
+
+   (c) an optical instrument that can measure length to within a wavelength of light ?
+
+**1.7** A student measures the thickness of a human hair by looking at it through a microscope of magnification 100. He makes 20 observations and finds that the average width of the hair in the field of view of the microscope is 3.5 mm. What is the estimate on the thickness of hair ?
+
+**1.8** Answer the following :
+
+   (a) You are given a thread and a metre scale. How will you estimate the diameter of the thread ?
+
+   (b) A screw gauge has a pitch of 1.0 mm and 200 divisions on the circular scale. Do you think it is possible to increase the accuracy of the screw gauge arbitrarily by increasing the number of divisions on the circular scale ?
+
+   (c) The mean diameter of a thin brass rod is to be measured by vernier callipers. Why is a set of 100 measurements of the diameter expected to yield a more reliable estimate than a set of 5 measurements only ?
+
+**1.9** The photograph of a house occupies an area of 1.75 cm<sup>2</sup> on a 35 mm slide. The slide is projected on to a screen, and the area of the house on the screen is 1.55 m<sup>2</sup>. What is the linear magnification of the projector-screen arrangement.
+
+**1.10** State the number of significant figures in the following :
+
+   (a) 0.007 m2
+
+   (b) 2.64 × 1024 kg
+
+   (c) 0.2370 g cm–3
+
+   (d) 6.320 J
+
+   (e) 6.032 N m–2
+
+   (f) 0.0006032 m2
+
+**1.11** The length, breadth and thickness of a rectangular sheet of metal are 4.234 m, 1.005 m, and 2.01 cm respectively. Give the area and volume of the sheet to correct significant figures.
+
+**1.12** The mass of a box measured by a grocer’s balance is 2.30 kg. Two gold pieces of masses 20.15 g and 20.17 g are added to the box. What is
+
+   (a) the total mass of the box,
+
+   (b) the difference in the masses of the pieces to correct significant figures ?
+
+**1.13** A famous relation in physics relates ‘moving mass’ *m* to the ‘rest mass’ *m*<sub>o</sub> of a particle in terms of its speed *v* and the speed of light, *c*. (This relation first arose as a consequence of special relativity due to Albert Einstein). A boy recalls the relation almost correctly but forgets where to put the constant c. He writes :
+
+*m = \fracm_0(1 - v^2)^1/2*
 
 Guess where to put the missing *c*.
 
-### 1.14 The unit of length convenient on the atomic scale is known as an angstrom and is denoted by Å: 1 Å = 10–10 m. The size of a hydrogen atom is about 0.5 Å. What is the total atomic volume in m3 of a mole of hydrogen atoms ?
+**1.14** The unit of length convenient on the atomic scale is known as an angstrom and is denoted by Å: 1 Å = 10<sup>–10</sup> m. The size of a hydrogen atom is about 0.5 Å. What is the total atomic volume in m<sup>3</sup> of a mole of hydrogen atoms ?
 
-### 1.15 One mole of an ideal gas at standard temperature and pressure occupies 22.4 L (molar volume). What is the ratio of molar volume to the atomic volume of a mole of hydrogen ? (Take the size of hydrogen molecule to be about 1 Å). Why is this ratio so large ?
+**1.15** One mole of an ideal gas at standard temperature and pressure occupies 22.4 L (molar volume). What is the ratio of molar volume to the atomic volume of a mole of hydrogen ? (Take the size of hydrogen molecule to be about 1 Å). Why is this ratio so large ?
 
-### 1.16 Explain this common observation clearly : If you look out of the window of a fast moving train, the nearby trees, houses etc. seem to move rapidly in a direction opposite to the train’s motion, but the distant objects (hill tops, the Moon, the stars etc.) seem to be stationary. (In fact, since you are aware that you are moving, these distant objects seem to move with you).
+**1.16** Explain this common observation clearly : If you look out of the window of a fast moving train, the nearby trees, houses etc. seem to move rapidly in a direction opposite to the train’s motion, but the distant objects (hill tops, the Moon, the stars etc.) seem to be stationary. (In fact, since you are aware that you are moving, these distant objects seem to move with you).
 
-### 1.17 The Sun is a hot plasma (ionized matter) with its inner core at a temperature exceeding 107 K, and its outer surface at a temperature of about 6000 K. At these high temperatures, no substance remains in a solid or liquid phase. In what range do you expect the mass density of the Sun to be, in the range of densities of solids and liquids or gases ? Check if your guess is correct from the following data : mass of the Sun = 2.0 ×1030 kg, radius of the Sun = 7.0 × 108 m.
+**1.17** The Sun is a hot plasma (ionized matter) with its inner core at a temperature exceeding 10<sup>7</sup> K, and its outer surface at a temperature of about 6000 K. At these high temperatures, no substance remains in a solid or liquid phase. In what range do you expect the mass density of the Sun to be, in the range of densities of solids and liquids or gases ? Check if your guess is correct from the following data : mass of the Sun = 2.0 ×10<sup>30</sup> kg, radius of the Sun = 7.0 × 10<sup>8</sup> m.

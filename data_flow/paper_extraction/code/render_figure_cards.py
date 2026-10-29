@@ -37,7 +37,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "checks"))
 import runner_core as rc  # noqa: E402
 import figure_plugins  # noqa: E402
-from lib import chem_cards, physics_figure, print_trace, raster_trace  # noqa: E402
+from lib import chem_cards, physics_figure, print_trace  # noqa: E402
 import FIGC as figc_check  # noqa: E402
 import FIGP as figp_check  # noqa: E402
 
@@ -184,12 +184,16 @@ def main():
                             entry["print_match"] = [{"shown_as": r["shown_as"]} for r in results]
                             counts["chem_on_print"] += 1
                         elif png not in (question.get("vector") or {}):
-                            # A PICTURE-PRINTED FIGURE (2016): the booklet's own figure traced to
-                            # vector lines, so the panel looks like the print as on 2017/2018; the
-                            # card above has already passed its SMILES check.
-                            svg = raster_trace.trace_svg(rc.pp(*CORPUS, png))
-                            entry["layout"] = "traced"
-                            counts["chem_traced"] += 1
+                            # A PICTURE-PRINTED FIGURE (2015, 2016, 2020): no drawing. Potrace
+                            # outlines of a scanned picture tore its letters apart -- 2015_A q008's
+                            # "Nylon-6" came out "Nylon-ti", q144's "60°" and "O" as blobs -- and
+                            # the user wants a drawing only where it can be made on the booklet's
+                            # own geometry and checked against its SMILES. The SMILES stays in the
+                            # card; the printed copy is the figure.
+                            entry.update(status="not_on_print", message=NOT_ON_PRINT)
+                            counts["chem_not_on_print"] += 1
+                            drawn[png] = entry
+                            continue
                         else:
                             svg = chem_figure(card)
                             entry["layout"] = "rdkit"
@@ -260,20 +264,10 @@ def main():
                     counts["phys_failed"] += 1
                     drawn[png] = entry
                     continue
-                elif png not in (question.get("vector") or {}):
-                    # a picture-printed figure (2016): the booklet's own figure traced to vector
-                    # lines -- never the spec renderer's layout, which floated 2016_A q034's gates
-                    # off their wires and shrank q010's labels
-                    traced_svg = raster_trace.trace_svg(rc.pp(*CORPUS, png))
-                    if not traced_svg:
-                        entry.update(status="not_on_print", message=NOT_ON_PRINT)
-                        counts["phys_not_on_print"] += 1
-                        drawn[png] = entry
-                        continue
-                    write(rel, traced_svg)
-                    entry["layout"] = "traced"
-                    counts["phys_traced"] += 1
                 else:
+                    # a picture-printed figure: no drawing (see the chemistry branch above) --
+                    # never the spec renderer's layout either, which floated 2016_A q034's gates
+                    # off their wires and shrank q010's labels
                     entry.update(status="not_on_print", message=NOT_ON_PRINT)
                     counts["phys_not_on_print"] += 1
                     drawn[png] = entry

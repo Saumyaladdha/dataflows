@@ -261,7 +261,7 @@ Physics · Current Electricity
 
 A battery consists of a variable number 'n' of identical cells (having internal resistance 'r' each) which are connected in series. The terminals of the battery are short-circuited and the current I is measured. Which of the graphs shows the correct relationship between I and n?
 
-- (1) ![printed figure: Graph of current I against number of cells n: a curve rising from the origin and levelling off](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q007_option_1_d4754d02_27102026.svg?v=d4754d025ec5) *Graph of current I against number of cells n: a curve rising from the origin and levelling off* ![drawn: Graph of current I against number of cells n: a curve rising from the origin and levelling off](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_drawn/q007_option_1_d223e263_27102026.svg?v=d223e2639003)  
+- (1) ![printed figure: Graph of current I against number of cells n: a curve rising from the origin and levelling off](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q007_option_1_2ab49792_29102026.svg?v=2ab497920ec3) *Graph of current I against number of cells n: a curve rising from the origin and levelling off* ![drawn: Graph of current I against number of cells n: a curve rising from the origin and levelling off](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_drawn/q007_option_1_d223e263_27102026.svg?v=d223e2639003)  
 *drawn on the booklet's geometry, checked against its figure spec*
 - (2) ![printed figure: Graph of current I against number of cells n: a straight line rising from the origin O](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q007_option_2_c5684c58_27102026.svg?v=c5684c58da0b) *Graph of current I against number of cells n: a straight line rising from the origin O* ![drawn: Graph of current I against number of cells n: a straight line rising from the origin O](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_drawn/q007_option_2_6628d62c_27102026.svg?v=6628d62c7912)  
 *drawn on the booklet's geometry, checked against its figure spec*
@@ -278,7 +278,7 @@ A battery consists of a variable number 'n' of identical cells (having internal 
 2. So, $I$ is independent of $n$ and $I$ is constant.
 3. $\therefore$
 
-![printed figure: Graph of I against n: a horizontal line, I independent of n](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q007_sol_1_e85fbc1b_27102026.svg?v=e85fbc1b2bbf)
+![printed figure: Graph of I against n: a horizontal line, I independent of n](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q007_sol_1_a71c69a4_29102026.svg?v=a71c69a488c5)
 
 *Graph of I against n: a horizontal line, I independent of n*
 
@@ -322,7 +322,7 @@ Unpolarised light is incident from air on a plane surface of a material of refra
 
 1. When reflected light rays and refracted rays are perpendicular, reflected light is polarised with electric field vector perpendicular to the plane of incidence.
 
-![printed figure: Brewster angle: reflected and refracted rays perpendicular](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q008_sol_1_53bf8532_27102026.svg?v=53bf8532c9e8)
+![printed figure: Brewster angle: reflected and refracted rays perpendicular](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q008_sol_1_232d21dc_29102026.svg?v=232d21dcb174)
 
 *Brewster angle: reflected and refracted rays perpendicular*
 
@@ -481,7 +481,7 @@ An electron of mass $m$ with an initial velocity $\vec{V} = V_0\hat{i}$ $(V_0 > 
 1. Initial de-Broglie wavelength
 2. $\lambda_0 = \frac{h}{mV_0}$ $\quad ...(i)$
 
-![printed figure: Electron moving with velocity V0 in field E0 pointing left; force F on it points left](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q012_sol_1_5bc5575e_27102026.svg?v=5bc5575e824a)
+![printed figure: Electron moving with velocity V0 in field E0 pointing left; force F on it points left](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q012_sol_1_933ad969_29102026.svg?v=933ad969be33)
 
 *Electron moving with velocity V0 in field E0 pointing left; force F on it points left*
 
@@ -607,7 +607,7 @@ Physics · Semiconductor Electronics
 
 In the circuit shown in the figure, the input voltage $V_i$ is $20\,\mathrm{V}$, $V_{BE} = 0$ and $V_{CE} = 0$. The values of $I_B$, $I_C$ and $\beta$ are given by
 
-![printed figure: Common-emitter transistor: input Vi through base resistor RB (500 kΩ), collector resistor RC (4 kΩ) to 20 V, emitter grounded](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q015_ddc3db52_27102026.svg?v=ddc3db52436d)
+![printed figure: Common-emitter transistor: input Vi through base resistor RB (500 kΩ), collector resistor RC (4 kΩ) to 20 V, emitter grounded](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q015_8d02cb5e_29102026.svg?v=8d02cb5edb1f)
 
 *Common-emitter transistor: input Vi through base resistor RB (500 kΩ), collector resistor RC (4 kΩ) to 20 V, emitter grounded*
 
@@ -627,7 +627,7 @@ In the circuit shown in the figure, the input voltage $V_i$ is $20\,\mathrm{V}$,
 2. $V_{CE} = 0$
 3. $V_{b} = 0$
 
-![printed figure: Common-emitter npn transistor: V_i through R_B = 500 kOhm to the base, R_C = 4 kOhm from 20 V to the collector, emitter grounded](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q015_sol_1_7a5af6f6_27102026.svg?v=7a5af6f6bb49)
+![printed figure: Common-emitter npn transistor: V_i through R_B = 500 kOhm to the base, R_C = 4 kOhm from 20 V to the collector, emitter grounded](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q015_sol_1_2210e85e_29102026.svg?v=2210e85e70f8)
 
 *Common-emitter npn transistor: V_i through R_B = 500 kOhm to the base, R_C = 4 kOhm from 20 V to the collector, emitter grounded*
 
@@ -702,7 +702,7 @@ Physics · Semiconductor Electronics
 
 In the combination of the following gates the output Y can be written in terms of inputs A and B as
 
-![printed figure: Logic circuit: A and B feed two AND gates (each with one inverted input) whose outputs go to an OR gate giving Y](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q017_c6faf8ef_27102026.svg?v=c6faf8ef2032)
+![printed figure: Logic circuit: A and B feed two AND gates (each with one inverted input) whose outputs go to an OR gate giving Y](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q017_9515fd85_29102026.svg?v=9515fd85a98b)
 
 *Logic circuit: A and B feed two AND gates (each with one inverted input) whose outputs go to an OR gate giving Y*
 
@@ -800,7 +800,7 @@ The refractive index of the material of a prism is $\sqrt{2}$ and the angle of t
 
 1. For retracing its path, light ray should be normally incident on silvered face.
 
-![printed figure: Prism of angle 30 degrees with a silvered face: the ray refracted at M meets the silvered face normally and retraces its path](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q019_sol_1_2c17f158_27102026.svg?v=2c17f158e20d)
+![printed figure: Prism of angle 30 degrees with a silvered face: the ray refracted at M meets the silvered face normally and retraces its path](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q019_sol_1_bd94df5d_29102026.svg?v=bd94df5d9ad4)
 
 *Prism of angle 30 degrees with a silvered face: the ray refracted at M meets the silvered face normally and retraces its path*
 
@@ -1477,7 +1477,7 @@ Physics · Laws of Motion
 
 A block of mass $m$ is placed on a smooth inclined wedge ABC of inclination $\theta$ as shown in the figure. The wedge is given an acceleration 'a' towards the right. The relation between $a$ and $\theta$ for the block to remain stationary on the wedge is
 
-![printed figure: Block m on a smooth hatched wedge ABC of inclination θ, wedge accelerated a to the right](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q035_39b1c73f_27102026.svg?v=39b1c73f60ee)
+![printed figure: Block m on a smooth hatched wedge ABC of inclination θ, wedge accelerated a to the right](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q035_fcea1f77_29102026.svg?v=fcea1f779456)
 
 *Block m on a smooth hatched wedge ABC of inclination θ, wedge accelerated a to the right*
 
@@ -1493,7 +1493,7 @@ A block of mass $m$ is placed on a smooth inclined wedge ABC of inclination $\th
 
 **Publisher's solution**
 
-![printed figure: Free-body diagram of the block on the accelerating wedge: N, mg, pseudo force ma and the components of N](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q035_sol_1_1b579958_27102026.svg?v=1b57995820a1)
+![printed figure: Free-body diagram of the block on the accelerating wedge: N, mg, pseudo force ma and the components of N](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q035_sol_1_e1ef0f86_29102026.svg?v=e1ef0f8620f9)
 
 *Free-body diagram of the block on the accelerating wedge: N, mg, pseudo force ma and the components of N*
 
@@ -1674,7 +1674,7 @@ The kinetic energies of a planet in an elliptical orbit about the Sun, at positi
 
 **Publisher's solution**
 
-![printed figure: Elliptical orbit with major axis AC, Sun S, SB perpendicular to AC, velocities V_A and V_C](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q039_sol_1_d1eb8a6b_27102026.svg?v=d1eb8a6bfaae)
+![printed figure: Elliptical orbit with major axis AC, Sun S, SB perpendicular to AC, velocities V_A and V_C](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q039_sol_1_ee8dfc60_29102026.svg?v=ee8dfc60b528)
 
 *Elliptical orbit with major axis AC, Sun S, SB perpendicular to AC, velocities V_A and V_C*
 
@@ -1879,7 +1879,7 @@ Two wires are made of the same material and have the same volume. The first wire
 
 1. Wire 1 :
 
-![printed figure: The second wire (area A, length 3l) pulled to the right by force F](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q044_sol_1_aee35de1_27102026.svg?v=aee35de1bd7e)
+![printed figure: The second wire (area A, length 3l) pulled to the right by force F](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q044_sol_1_2569e317_29102026.svg?v=2569e3174125)
 
 *The second wire (area A, length 3l) pulled to the right by force F*
 
@@ -1888,7 +1888,7 @@ Two wires are made of the same material and have the same volume. The first wire
 
 2. Wire 2 :
 
-![printed figure: Second wire drawn as a cylinder of area 3A and length l, pulled by force F' at its right end](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q044_sol_2_4fa3a802_27102026.svg?v=4fa3a8020c19)
+![printed figure: Second wire drawn as a cylinder of area 3A and length l, pulled by force F' at its right end](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q044_sol_2_ca934070_29102026.svg?v=ca934070f5d8)
 
 *Second wire drawn as a cylinder of area 3A and length l, pulled by force F' at its right end*
 
@@ -2163,7 +2163,7 @@ In the structure of $\mathrm{ClF_3}$, the number of lone pair of electrons on ce
 
 1. The structure of $\mathrm{ClF_3}$ is
 
-![printed figure: Lewis/VSEPR diagram of chlorine trifluoride ($\ce{ClF3}$): central Cl single-bonded to three F atoms (one left, one up, one down), two lone-pair orbital lobes (each with paired arrows) drawn on Cl to the right, and three lone pairs drawn as dots on each F](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q051_sol_1_5aae783f_27102026.svg?v=5aae783f2a8f)
+![printed figure: Lewis/VSEPR diagram of chlorine trifluoride ($\ce{ClF3}$): central Cl single-bonded to three F atoms (one left, one up, one down), two lone-pair orbital lobes (each with paired arrows) drawn on Cl to the right, and three lone pairs drawn as dots on each F](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q051_sol_1_860a4abd_29102026.svg?v=860a4abd2bb7)
 
 *Lewis/VSEPR diagram of chlorine trifluoride ($\ce{ClF3}$): central Cl single-bonded to three F atoms (one left, one up, one down), two lone-pair orbital lobes (each with paired arrows) drawn on Cl to the right, and three lone pairs drawn as dots on each F*
 
@@ -2193,7 +2193,7 @@ Chemistry · organic · Alcohols, Phenols and Ethers
 
 Identify the major products P, Q and R in the following sequence of reactions:
 
-![printed figure: benzene + $\ce{CH3CH2CH2Cl}$ →(Anhydrous $\ce{AlCl3}$); P →((i) $\ce{O2}$, (ii) $\ce{H3O+}$/Δ) Q + R](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q052_cab5e3a9_27102026.svg?v=cab5e3a9171c)
+![printed figure: benzene + $\ce{CH3CH2CH2Cl}$ →(Anhydrous $\ce{AlCl3}$); P →((i) $\ce{O2}$, (ii) $\ce{H3O+}$/Δ) Q + R](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q052_d04c63e7_29102026.svg?v=d04c63e71887)
 
 *benzene + $\ce{CH3CH2CH2Cl}$ →[Anhydrous $\ce{AlCl3}$]; P →[(i) $\ce{O2}$, (ii) $\ce{H3O+}$/Δ] Q + R*
 
@@ -2214,7 +2214,7 @@ Structures: benzene `c1ccccc1`; 1-chloropropane `CCCCl`
 
 1. Now,
 
-![printed figure: benzene →($\ce{CH3-CH^+-CH3}$) (propan-2-yl)benzene (P); (P) →($\ce{O2}$) 2-phenylpropan-2-yl hydroperoxide; 2-phenylpropan-2-yl hydroperoxide →($\ce{H+/H2O}$, Hydroperoxide Rearrangement) propan-2-one (R) + phenol (Q)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q052_sol_2_c60b44e6_27102026.svg?v=c60b44e619dc)
+![printed figure: benzene →($\ce{CH3-CH^+-CH3}$) (propan-2-yl)benzene (P); (P) →($\ce{O2}$) 2-phenylpropan-2-yl hydroperoxide; 2-phenylpropan-2-yl hydroperoxide →($\ce{H+/H2O}$, Hydroperoxide Rearrangement) propan-2-one (R) + phenol (Q)](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q052_sol_2_aecf54be_29102026.svg?v=aecf54be798a)
 
 *benzene →[$\ce{CH3-CH^+-CH3}$] (propan-2-yl)benzene (P); (P) →[$\ce{O2}$] 2-phenylpropan-2-yl hydroperoxide; 2-phenylpropan-2-yl hydroperoxide →[$\ce{H+/H2O}$, Hydroperoxide Rearrangement] propan-2-one (R) + phenol (Q)*
 
@@ -2561,7 +2561,7 @@ The product 'C' is
 
 **Publisher's solution**
 
-![printed figure: toluene ($\ce{C7H8}$) →(3Cl₂, Δ) (trichloromethyl)benzene (A) →(Br₂, Fe) 1-bromo-3-(trichloromethyl)benzene (B); (B) →(Zn, HCl) 1-bromo-3-methylbenzene (C)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q061_sol_1_6cfe8e0d_27102026.svg?v=6cfe8e0de043)
+![printed figure: toluene ($\ce{C7H8}$) →(3Cl₂, Δ) (trichloromethyl)benzene (A) →(Br₂, Fe) 1-bromo-3-(trichloromethyl)benzene (B); (B) →(Zn, HCl) 1-bromo-3-methylbenzene (C)](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q061_sol_1_9181475b_29102026.svg?v=9181475bc614)
 
 *toluene ($\ce{C7H8}$) →[3Cl₂, Δ] (trichloromethyl)benzene (A) →[Br₂, Fe] 1-bromo-3-(trichloromethyl)benzene (B); (B) →[Zn, HCl] 1-bromo-3-methylbenzene (C)*
 
@@ -2606,7 +2606,7 @@ Hydrocarbon (A) reacts with bromine by substitution to form an alkyl bromide whi
 
 **Publisher's solution**
 
-![printed figure: methane (A) →(Br₂/hν) bromomethane; bromomethane →(Na/dry ether, Wurtz reaction) ethane](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q062_sol_1_f7174433_27102026.svg?v=f71744338e2e)
+![printed figure: methane (A) →(Br₂/hν) bromomethane; bromomethane →(Na/dry ether, Wurtz reaction) ethane](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q062_sol_1_a86efe20_29102026.svg?v=a86efe202b77)
 
 *methane (A) →[Br₂/hν] bromomethane; bromomethane →[Na/dry ether, Wurtz reaction] ethane*
 
@@ -2757,7 +2757,7 @@ In the reaction
 
 The electrophile involved is
 
-![printed figure: phenol + $\ce{CHCl3}$ + $\ce{NaOH}$ → sodium 2-formylphenolate ($\ce{O^-Na^+}$ with CHO ortho)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q066_f8566447_27102026.svg?v=f8566447d6c1)
+![printed figure: phenol + $\ce{CHCl3}$ + $\ce{NaOH}$ → sodium 2-formylphenolate ($\ce{O^-Na^+}$ with CHO ortho)](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q066_e678da23_29102026.svg?v=e678da23b205)
 
 *phenol + $\ce{CHCl3}$ + $\ce{NaOH}$ → sodium 2-formylphenolate ($\ce{O^-Na^+}$ with CHO ortho)*
 
@@ -2854,7 +2854,7 @@ A and Y are respectively
 2. This on reaction with $\mathrm{I_2}$ and $\mathrm{NaOH}$ form iodoform and sodium benzoate.
 3. $\mathrm{2NaOH + I_2 \rightarrow NaOI + NaI + H_2O}$
 
-![printed figure: 1-phenylethanol (A) →(NaOI) acetophenone; acetophenone →($\ce{I2}$, NaOH) sodium benzoate + iodoform $\ce{CHI3}$ (yellow ppt)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q068_sol_1_e877f55a_27102026.svg?v=e877f55a9d29)
+![printed figure: 1-phenylethanol (A) →(NaOI) acetophenone; acetophenone →($\ce{I2}$, NaOH) sodium benzoate + iodoform $\ce{CHI3}$ (yellow ppt)](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q068_sol_1_313efc16_29102026.svg?v=313efc16abad)
 
 *1-phenylethanol (A) →[NaOI] acetophenone; acetophenone →[$\ce{I2}$, NaOH] sodium benzoate + iodoform $\ce{CHI3}$ (yellow ppt)*
 
@@ -3031,12 +3031,12 @@ The type of isomerism shown by the complex $\mathrm{[CoCl_2(en)_2]}$ is
 
 1. In $\mathrm{[CoCl_2(en)_2]}$, Coordination number of $\mathrm{Co}$ is $6$ and this compound has octahedral geometry.
 
-![printed figure: octahedral geometry diagram of $\ce{(CoCl2(en)2)}$ with the two Cl ligands axial (above and below Co) and the two en ligands spanning the equatorial plane on opposite sides: Trans-form (optically inactive)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q072_sol_1_01106095_27102026.svg?v=011060956f2b)
+![printed figure: octahedral geometry diagram of $\ce{(CoCl2(en)2)}$ with the two Cl ligands axial (above and below Co) and the two en ligands spanning the equatorial plane on opposite sides: Trans-form (optically inactive)](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q072_sol_1_0af07a18_29102026.svg?v=0af07a18bcc6)
 
 *octahedral geometry diagram of $\ce{[CoCl2(en)2]}$ with the two Cl ligands axial (above and below Co) and the two en ligands spanning the equatorial plane on opposite sides: Trans-form (optically inactive)*
 
 
-![printed figure: octahedral geometry diagram of $\ce{(CoCl2(en)2)}$ with one Cl axial and one Cl equatorial (adjacent, cis) and the two en ligands spanning the remaining positions: cis-form (optically active)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q072_sol_2_2042ef26_27102026.svg?v=2042ef2667c9)
+![printed figure: octahedral geometry diagram of $\ce{(CoCl2(en)2)}$ with one Cl axial and one Cl equatorial (adjacent, cis) and the two en ligands spanning the remaining positions: cis-form (optically active)](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q072_sol_2_0c3f0784_29102026.svg?v=0c3f07849dfa)
 
 *octahedral geometry diagram of $\ce{[CoCl2(en)2]}$ with one Cl axial and one Cl equatorial (adjacent, cis) and the two en ligands spanning the remaining positions: cis-form (optically active)*
 
@@ -3083,7 +3083,7 @@ The geometry and magnetic behaviour of the complex $\mathrm{[Ni(CO)_4]}$ are
 
 4. For, four '$\mathrm{CO}$'-ligands hybridisation would be $sp^{3}$ and thus the complex would be diamagnetic and of tetrahedral geometry.
 
-![printed figure: tetracarbonylnickel, Ni bonded to four CO at the corners of a tetrahedron (dotted edges)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q073_sol_2_540513ae_27102026.svg?v=540513ae45b1)
+![printed figure: tetracarbonylnickel, Ni bonded to four CO at the corners of a tetrahedron (dotted edges)](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q073_sol_2_743eea1c_29102026.svg?v=743eea1cb7f6)
 
 *tetracarbonylnickel, Ni bonded to four CO at the corners of a tetrahedron (dotted edges)*
 
@@ -3451,7 +3451,7 @@ $\mathrm{MnO_4^{-}}$ \quad $\mathrm{C_2O_4^{2-}}$ \quad $\mathrm{H^{+}}$
 
 **Publisher's solution**
 
-![printed figure: Reduction (bracket from $\ce{MnO4^-}$ to $\ce{Mn^2+}$); $\ce{MnO4^-}$ (Mn +7) + $\ce{C2O4^2-}$ (C +3) + $\ce{H+}$ → $\ce{Mn^2+}$ + $\ce{CO2}$ (C +4) + $\ce{H2O}$; Oxidation (bracket from $\ce{C2O4^2-}$ to $\ce{CO2}$)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2018/2018_AA/figures_agent/q082_sol_1_04923819_27102026.svg?v=04923819b572)
+![printed figure: Reduction (bracket from $\ce{MnO4^-}$ to $\ce{Mn^2+}$); $\ce{MnO4^-}$ (Mn +7) + $\ce{C2O4^2-}$ (C +3) + $\ce{H+}$ → $\ce{Mn^2+}$ + $\ce{CO2}$ (C +4) + $\ce{H2O}$; Oxidation (bracket from $\ce{C2O4^2-}$ to $\ce{CO2}$)](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2018/2018_AA/figures_agent/q082_sol_1_9fd13b67_29102026.svg?v=9fd13b675d25)
 
 *Reduction (bracket from $\ce{MnO4^-}$ to $\ce{Mn^2+}$); $\ce{MnO4^-}$ (Mn +7) + $\ce{C2O4^2-}$ (C +3) + $\ce{H+}$ → $\ce{Mn^2+}$ + $\ce{CO2}$ (C +4) + $\ce{H2O}$; Oxidation (bracket from $\ce{C2O4^2-}$ to $\ce{CO2}$)*
 

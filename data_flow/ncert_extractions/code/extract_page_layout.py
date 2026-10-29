@@ -2603,6 +2603,10 @@ def _mark_tables(elements, page_w, page_h, nocolon=False):
                            else "figure_caption")
             continue
         cap["role"] = "table"
+        if nocolon:
+            # The caption's own line, kept: the render prints a physics table from its crop
+            # UNDER the live caption, and without the line it fell back to the typeset grid.
+            cap["caption_bbox_pt"] = list(cap["bbox_pt"])
         cap["bbox_pt"] = box
         _f = [m.get("fill") for m in members if m.get("fill")]
         if _f:
@@ -2661,6 +2665,10 @@ def _apply_chapter_offset(pages):
                                round((e["bbox_pt"][1] + dy) / sh, 4),
                                round((e["bbox_pt"][2] + dx) / sw, 4),
                                round((e["bbox_pt"][3] + dy) / sh, 4)]
+            if e.get("caption_bbox_pt"):        # a physics table's own caption line
+                c = e["caption_bbox_pt"]
+                e["caption_bbox_sheet"] = [round((c[0] + dx) / sw, 4), round((c[1] + dy) / sh, 4),
+                                           round((c[2] + dx) / sw, 4), round((c[3] + dy) / sh, 4)]
 
 
 def main():

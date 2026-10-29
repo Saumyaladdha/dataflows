@@ -446,19 +446,28 @@ def drawn_html(q, image, out_path, counts):
         # printed under every figure and option it buried the question. question_card keeps the
         # first of these per card.
         return WITHHELD_NOTE
+    facts = ""
+    if entry.get("source") == "smiles":
+        # EVERY STRUCTURE'S SMILES ON THE CARD, beside its formula and name check. User,
+        # 2026-10-29: "cant you add smiles for each images?" -- the SMILES were only in the JSON,
+        # and on a picture-printed figure (no drawing) the card showed nothing of them at all.
+        species = (entry.get("card") or {}).get("species") or []
+        facts = " &middot; ".join(
+            "%s%s<code>%s</code>%s%s" % (
+                html.escape(sp.get("label") or ""), " " if sp.get("label") else "",
+                # the JSON's own SMILES (atom maps removed): q010's raw O=[PH2:1]O must not differ
+                html.escape(record_v3.clean_smiles(sp.get("smiles")) or ""),
+                " %s" % html.escape(sp.get("formula")) if sp.get("formula") else "",
+                {"match": " name&nbsp;✓", "mismatch": ' <b class="bad">name&nbsp;✗</b>'}.get(
+                    sp.get("name_check"), ""))
+            for sp in species if sp.get("smiles"))
+    if entry.get("status") == "not_on_print" and facts:
+        counts["smiles_shown_without_drawing"] += 1
+        return ('<p class="smiles">SMILES (printed as a picture, so not redrawn) &middot; %s</p>'
+                % facts)
     if entry.get("status") != "drawn" or not entry.get("svg"):
         return ""
     counts["drawn_shown"] += 1
-    facts = ""
-    if entry.get("source") == "smiles":
-        species = (entry.get("card") or {}).get("species") or []
-        facts = " &middot; ".join(
-            "%s%s <code>%s</code>%s" % (
-                html.escape(sp.get("label") or ""), " " if sp.get("label") else "",
-                html.escape(sp.get("formula") or ""),
-                {"match": " name&nbsp;✓", "mismatch": ' <b class="bad">name&nbsp;✗</b>'}.get(
-                    sp.get("name_check"), ""))
-            for sp in species)
     return ('<details class="drawn" open><summary>drawn by the pipeline %s%s</summary>'
             '<img %s alt="drawing of %s" loading="lazy"></details>'
             % (source, (" &middot; " + facts) if facts else "",
@@ -667,6 +676,8 @@ figure{margin:12px 0;padding:0}
 figure img{max-width:100%;height:auto;border:1px solid var(--rule);border-radius:4px;
  background:#fff;display:block}
 figcaption{font-size:11px;color:var(--ink2);margin-top:4px;letter-spacing:.03em}
+.smiles{font-size:11.5px;color:var(--ink2);margin:4px 0 0;line-height:1.5;overflow-wrap:anywhere}
+.smiles code{color:var(--ink)}
 .flag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:99px;
  background:var(--warn-bg);color:var(--warn);border:1px solid var(--warn);margin-left:6px}
 .warnline{font-size:12.5px;background:var(--warn-bg);color:var(--warn);border-left:3px solid
@@ -1192,18 +1203,27 @@ def solutions_html(paper_id, q, options, answer, solved, confidence, out_path, c
         body.append(steps_with_figures(q, steps, out_path, counts))
         concludes = read.get("concludes")
         self_check = verdict_self(answer, concludes)
-        body.append('<p class="concl">&rarr; the working concludes: <b>%s</b></p>'
-                    % html.escape("option %s" % concludes if concludes in "1234" and concludes
-                                  else (concludes or "?")))
+        # a solution printed as a drawing alone (2017_A q052's aldol scheme) has no text steps but
+        # IS worked; only a read with neither is the bare answer line
+        worked = bool(steps or q.get("solution_figures"))
+        if worked:
+            body.append('<p class="concl">&rarr; the working concludes: <b>%s</b></p>'
+                        % html.escape("option %s" % concludes if concludes in "1234" and concludes
+                                      else (concludes or "?")))
         if self_check == "publisher_contradicts_itself":
             counts["publisher_contradicts_itself"] += 1
             body.append('<p class="flag">THE BOOKLET CONTRADICTS ITSELF: it prints Answer (%s) but '
                         'its own working arrives at option %s</p>'
                         % (html.escape(answer or "?"), html.escape(concludes)))
-        if read.get("complete") is False:
+        # ONE SHORT LINE, as for a withheld drawing. The reader's own note (2015_A, 2020_F1: a
+        # paragraph about orange box borders and an empty draft) is for whoever fixes the crop and
+        # stays in steps/B3S/out; on the card it buried the solution.
+        if not worked:
+            body.append('<p class="missing">only the answer line is printed, with no worked steps'
+                        '</p>')
+        elif read.get("complete") is False:
             counts["solution_clipped"] += 1
-            body.append('<p class="flag">solution crop is clipped: %s</p>'
-                        % texhtml.to_html(read.get("note") or "the working continues past the crop"))
+            body.append('<p class="flag">the printed working may continue past this crop</p>')
     elif draft_lines:
         counts["publisher_solution_draft"] += 1
         body.append('<p class="draftlabel">text-layer draft &mdash; not the record, awaiting '

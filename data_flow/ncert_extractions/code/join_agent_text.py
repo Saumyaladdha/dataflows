@@ -285,10 +285,18 @@ def apply_agent_text(layout, chapter, steps_dir="steps"):
 
         if _split_leading_tails(blocks, els, page):
             els = [e for e in page["elements_in_reading_order"] if e["role"] in _TEXT_ROLES]
+        if new_rules and _split_at_equations(a2.get("blocks") or [], page):
+            els = [e for e in page["elements_in_reading_order"] if e["role"] in _TEXT_ROLES]
         pairs = _align([b.get("text", "") for b in blocks], [e.get("text", "") for e in els])
         followers = _claim_followers(pairs, blocks, els)
         claimed = {ai for tail in followers.values() for ai in tail}
         absorbed = _claim_absorbed(pairs, blocks, els)
+        if new_rules:
+            # An equation's own line is never absorbed into prose: A2S's LaTeX lands on it
+            # (PHY11L ch01 p006 lost both relative-error equations into the sentence above).
+            eq_boxes = _special_boxes(a2.get("blocks") or [])  # equations carry no text
+            absorbed = {bj: [j for j in js if not _in_equation(els[j].get("bbox_pt"), eq_boxes)]
+                        for bj, js in absorbed.items()}
         matched_pdf, inserts, dropped, heads_before = set(), [], [], []
         for ai, bj in pairs:
             if ai is None or bj is None:
@@ -336,6 +344,10 @@ def apply_agent_text(layout, chapter, steps_dir="steps"):
                 _take_runs(el, src)
                 _take_agent_block(els[j], dict(blk, text=tail_text, continues_from_previous=True))
                 els[j]["continues_from_previous"] = True
+                # Tied to its OWN host: "the paragraph before it" joined p005's right-column
+                # `decimal place. The final result ...` to the paragraph overleaf instead.
+                el["col_key"] = el.get("col_key") or f"{pi}-{bj}"
+                els[j]["col_cont_of"] = el["col_key"]
                 matched_pdf.add(j)
                 stats["column_continuations"] = stats.get("column_continuations", 0) + 1
             if absorbed.get(bj):
@@ -392,6 +404,9 @@ def apply_agent_text(layout, chapter, steps_dir="steps"):
             inserts.append((el, parts))
             stats["blocks_split_from_layer"] = stats.get("blocks_split_from_layer", 0) + len(parts)
             stats["blocks_replaced"] += len(parts)
+        if new_rules:
+            _rescue_inline_math_pairs(blocks, els, pairs, claimed, matched_pdf, dropped, stats,
+                                      a2.get("blocks") or [])
         for j, e in enumerate(els):
             if j not in matched_pdf:
                 e["text_source"] = "pdf-text-layer"
@@ -575,6 +590,147 @@ def _split_absorbed_paragraphs(el, group, page):
         if k:
             parts.append(tgt)
     return parts
+
+
+def _special_boxes(blocks):
+    """A2's deferred equations (`needs_special`), their pixel boxes (200 dpi) as points."""
+    return [[v * 72.0 / 200.0 for v in b["bbox"]] for b in blocks
+            if b.get("needs_special") and (b.get("kind") or "") == "equation"
+            and len(b.get("bbox") or []) == 4]
+
+
+def _in_equation(bb, boxes):
+    """Most of `bb`'s height inside an equation box it overlaps across."""
+    if not bb:
+        return False
+    h = max(bb[3] - bb[1], 1e-6)
+    return any(min(bb[2], s[2]) - max(bb[0], s[0]) > 0
+               and min(bb[3], s[3]) - max(bb[1], s[1]) >= 0.6 * h for s in boxes)
+
+
+def _split_at_equations(blocks, page):
+    """Cut a layer block at the equations A2 deferred (`needs_special`), before alignment.
+
+    PHY11L ch01 p006 prints `= (± 0.01/1.02) × 100 %`, `Similarly, the relative error in 9.89 g
+    is` and `= (± 0.01/9.89) × 100 %` as ONE layer block. A2 read the sentence and deferred both
+    equations, so the sentence took the whole block: the 1.02 g equation had no line left to
+    land on and the 9.89 g one landed on the sentence, replacing it. The block's lines that lie
+    in an equation's box become elements of their own -- the place A2S's LaTeX lands -- and the
+    rest stays prose. Returns True when the page changed."""
+    special = [[v * 72.0 / 200.0 for v in b["bbox"]] for b in blocks
+               if b.get("needs_special") and len(b.get("bbox") or []) == 4]
+    if not special:
+        return False
+
+    def in_eq(lb):
+        # most of the line's height inside the box: `Similarly, ... 9.89 g is` sits with its
+        # centre exactly on the 9.89 g equation's top edge
+        cx, h = (lb[0] + lb[2]) / 2, max(lb[3] - lb[1], 1e-6)
+        return any(s[0] - 4 <= cx <= s[2] + 4
+                   and (min(lb[3], s[3]) - max(lb[1], s[1])) >= 0.6 * h for s in special)
+    changed, out = False, []
+    for e in page["elements_in_reading_order"]:
+        lines = sorted(e.get("line_boxes_pt") or [], key=lambda ln: ln["bbox_pt"][1])
+        flags = [in_eq(ln["bbox_pt"]) for ln in lines]
+        if e.get("role") not in _TEXT_ROLES or len(lines) < 2 or all(flags) or not any(flags):
+            out.append(e)
+            continue
+        groups = []
+        for ln, f in zip(lines, flags):
+            if groups and groups[-1][0] == f:
+                groups[-1][1].append(ln)
+            else:
+                groups.append((f, [ln]))
+        text, pieces, at = e.get("text") or "", [], 0
+        for f, g in groups:
+            piece = " ".join((ln.get("text") or "").strip() for ln in g).strip()
+            k = text.find(piece, at)
+            if not piece or k < 0:
+                pieces = None
+                break
+            pieces.append((f, g, k, k + len(piece), piece))
+            at = k + len(piece)
+        if not pieces:
+            out.append(e)
+            continue
+        for f, g, a, z, piece in pieces:
+            part = {**e, "text": piece, "runs": _slice_runs(e.get("runs"), a, z) or [],
+                    "split_at_equation": f}
+            _set_union_geometry(part, [{"bbox_pt": ln["bbox_pt"]} for ln in g], page)
+            part["line_count"] = len(g)
+            part["line_boxes_pt"] = list(g)
+            out.append(part)
+        changed = True
+    page["elements_in_reading_order"] = out
+    return changed
+
+
+def _words(text):
+    return re.findall(r"\w+", (text or "").lower())
+
+
+def _rescue_inline_math_pairs(blocks, els, pairs, claimed, matched_pdf, dropped, stats,
+                              all_blocks=()):
+    """Pair what the alignment missed around INLINE MATHS (physics, after `_align`).
+
+    A sentence carrying `T = t/n` or `2π√(L/g)` reaches the layer with the fraction scattered,
+    so the alignment left A2's `or 2.0000 as required. Similarly, in T = t/n ...` (PHY11L ch01
+    p005) and `of significant figures. The value of π ...` (p006) unpaired, and their layer twins
+    printed instead -- across both columns, glued to scraps like `= 2π , have a lare (infinite)
+    number g`. (1) An unpaired agent block takes the unpaired layer block holding most of its
+    words. (2) A short unpaired layer block whose words are nearly all in an agent block set
+    right beside it is that block's scrap, and leaves the page."""
+    done = {ai for ai, bj in pairs if ai is not None and bj is not None} | set(claimed)
+    free = [j for j in range(len(els)) if j not in matched_pdf
+            and not any(els[j] is d for d in dropped)]
+    for ai, blk in enumerate(blocks):
+        if ai in done or (blk.get("kind") or "").lower() not in ("paragraph", "list", "box"):
+            continue
+        aw = set(_words(blk.get("text")))
+        if len(aw) < 4:
+            continue
+        best = max(((len(aw & set(_words(els[j].get("text")))) / len(aw), j) for j in free),
+                   default=(0, None))
+        if best[0] >= 0.6:
+            _take_agent_block(els[best[1]], blk)
+            matched_pdf.add(best[1])
+            free.remove(best[1])
+            stats["inline_math_rescued"] = stats.get("inline_math_rescued", 0) + 1
+    # A layer block where A2 deferred an EQUATION (`needs_special`, pixel box at 200 dpi) is that
+    # equation's own line, the place A2S's LaTeX lands: dropped as a scrap, p006's `= (±0.01/1.02)
+    # × 100 %` had nowhere to go and the 9.89 g equation took over the sentence above it.
+    # (`blocks` holds only blocks with text; a deferred equation has none, so `all_blocks`)
+    special = [[v * 72.0 / 200.0 for v in b["bbox"]] for b in all_blocks
+               if b.get("needs_special") and len(b.get("bbox") or []) == 4]
+
+    def in_special(bb):
+        return bb and any(min(bb[2], s[2]) - max(bb[0], s[0]) > 0
+                          and min(bb[3], s[3]) - max(bb[1], s[1]) > 0 for s in special)
+    for j in list(free):
+        e = els[j]
+        ew = _words(e.get("text"))
+        if (not 2 <= len(ew) <= 14 or e.get("role") == "section_heading"
+                or in_special(e.get("bbox_pt"))):
+            continue
+        eb = e.get("bbox_pt")
+        for k in matched_pdf:
+            o = els[k]
+            ob = o.get("bbox_pt")
+            if not eb or not ob or o.get("text_source") != "a2-agent":
+                continue
+            # within a few lines (p004's scrap sits 34pt under its paragraph, past the line of
+            # inline maths the layer printed between them); INSIDE the paragraph's own box a
+            # broken word (`lar e` for `large`) is allowed for
+            near = (min(eb[2], ob[2]) - max(eb[0], ob[0]) > 0
+                    and max(eb[1] - ob[3], ob[1] - eb[3]) < 40)
+            inside = (eb[0] >= ob[0] - 2 and eb[2] <= ob[2] + 2
+                      and eb[1] >= ob[1] - 2 and eb[3] <= ob[3] + 2)
+            ow = set(_words(o.get("text")))
+            if near and sum(w in ow for w in ew) >= (0.6 if inside else 0.8) * len(ew):
+                dropped.append(e)
+                matched_pdf.add(j)
+                stats["inline_math_scraps"] = stats.get("inline_math_scraps", 0) + 1
+                break
 
 
 def _column_continuation_cut(host, member, agent_text):

@@ -739,7 +739,26 @@ Second pass, after the user's review (page 1 rail, Table 1.1 overprint, Table 1.
 | exercises 1.3-1.7, 1.9 missing, 1.8+1.10 one block, numbers black `1.3.` | `C.k` numbers typed as headings; `collapse_lists` merged the questions | past `EXERCISES`, blocks split at every `C.k` row and typed paragraphs; `C.k` items become questions with their own boxes and marks; number bold in the accent, no stop (HTML and MD) |
 | no cyan rule under the running head; folio 13pt black | the rule is a 4pt FILLED bar; the split-off folio had no runs | a long thin filled bar at the head is a rule; the folio takes the head's run (unmeasured books only) |
 
-Still open on PHY11L ch01 (physics render, PHY11 not in MEASURED_KEYS): Table 1.1 grid set over
+**Every rule above applies only to books not in MEASURED_KEYS** (`new_rules` in
+`extract_page_layout.extract`, `apply_agent_text`; `a2l_join`; physics-subject checks in the
+render). Run over all 32 biology chapters (old vs new extraction, `bio_regress.py` pattern) the
+ungated rules changed 19 approved Class 11 pages: no-colon table captions (`Table 1.1 Organisms
+...`), full-height opener art typed ground, two-column order. Gated, biology content is identical.
+
+Third pass, inline maths (PHY11L ch01 p004-p006):
+
+| what was wrong | why | rule now |
+|---|---|---|
+| p005's first line across both columns; `= 2π , have a lare (infinite) number g` glued to p006's paragraph | layer scraps of inline maths stayed text-layer paragraphs and page-break stitching joined the next page to the scrap | `_rescue_inline_math_pairs`: an unpaired short layer block whose words are in an adjacent A2 paragraph (inside its box: 60%, within 40pt: 80%) is dropped; never one in an equation's box |
+| a paragraph's lines set wrongly when A2 text holds words the rows lack | `_line_geom` offsets slide | physics: `_rows_hold` -- measured lines only when the rows print the fragment's words, else it flows in its box |
+| both relative-error equations lost (p006) | the safeguards read `blocks`, which drops A2's text-less equation blocks; equations then fell back onto prose | equation boxes come from A2's full block list; an equation never takes A2 prose, prefers a bare line, and is set in A2's box under the sentence it overlaps |
+| text-layer scraps of display equations (`-3`, `2.51 cm`, `1 v`) | MathType reaches the layer in pieces | `_drop_equation_twins` (physics): a short text-layer paragraph inside a transcribed equation's box is dropped |
+
+Still open on PHY11L ch01 (physics render, PHY11 not in MEASURED_KEYS): `l = 16.2 ± 0.1 cm` set
+below the column (A2 measured its box at y 0.96; pre-existing); inline `T = t/n` set flat; the
+9.89 g equation node keeps a leftover body label beside its LaTeX.
+
+Earlier list (first pass), for the record: Table 1.1 grid set over
 its text-layer copy (p02); a paragraph crossing columns or pages laid full-width at the page top
 (p08, p09 Example 1.5); A2S equations drop lead-in words ("Then,", "or,", "Actually,"); the
 relative-error lines (p06) drawn beside their typeset twins; equations inside Example boxes (1.3)

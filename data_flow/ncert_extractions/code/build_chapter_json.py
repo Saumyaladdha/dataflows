@@ -278,6 +278,12 @@ def collect_blocks(pages, two_col=False):
                                          (e.get("bbox_sheet") or e["bbox"])[0]))
         if two_col:                    # physics only: measured books keep down-the-page order
             elements = _two_column_order(elements)
+            # a column continuation follows ITS host (`join_agent_text`, `col_cont_of`)
+            for m in [e for e in elements if e.get("col_cont_of")]:
+                host = next((e for e in elements if e.get("col_key") == m["col_cont_of"]), None)
+                if host is not None:
+                    elements.remove(m)
+                    elements.insert(elements.index(host) + 1, m)
         for e in elements:
             if e["role"] in ct._FURNITURE:
                 continue
@@ -661,6 +667,10 @@ def node_from(block, book_base, chapter_num, path):
                 node["cell_italics"] = el["cell_italics"]
         # A table the book DRAWS (`join_agent_text.apply_agent_figures`): its crop is the
         # printed grid, and its caption keeps the box it was measured at.
+        if el.get("caption_bbox_sheet") and not el.get("grid_drawn"):
+            # a physics table's caption line (`_mark_tables`): the crop prints under it
+            node["caption_box"] = {"page": el.get("page"), "src": "measured",
+                                   "bbox": [round(v, 4) for v in el["caption_bbox_sheet"]]}
         if el.get("grid_drawn"):
             node["grid_drawn"] = True
             if el.get("caption_bbox_sheet"):
@@ -1024,7 +1034,19 @@ def _line_geom(rows, body):
     return out
 
 
-def _apply_line_geom(tree):
+def _rows_hold(rows, text):
+    """Whether the measured rows print the words of `text` (physics guard for `_line_geom`).
+
+    Inline maths is missing from the layer's rows (`T = t/n` prints its fraction on lines of its
+    own), so A2's sentence holds words the rows do not: its line offsets slid and PHY11L ch01
+    p005's two-line `or 2.0000 as required. Similarly, in T = t/n, n is an exact number.` was set
+    as one line running across both columns. Such a piece flows in its box instead."""
+    have = set(re.findall(r"[A-Za-z]{2,}", " ".join(str(r.get("text") or "") for r in rows or [])))
+    want = re.findall(r"[A-Za-z]{2,}", text or "")
+    return not want or sum(w in have for w in want) >= 0.97 * len(want)
+
+
+def _apply_line_geom(tree, physics=False):
     """Turn each node's measured `_print_rows` into `line_geom` against its FINAL body.
 
     Run after every pass that edits text (`_clean_text` adds a sentence space, `_despace`
@@ -1043,6 +1065,8 @@ def _apply_line_geom(tree):
         if (rows and n.get("kind") in ("para", "box", "list") and len(n.get("boxes") or []) == 1
                 and not n.get("char_ranges")):
             geom = _line_geom(rows, n.get("body") or "")
+            if geom and physics and not _rows_hold(rows, n.get("body") or ""):
+                geom = None
             if geom:
                 n["line_geom"] = geom
         # A PARAGRAPH ACROSS A PAGE BREAK, placed line by line on BOTH pages. Only its first
@@ -1053,7 +1077,9 @@ def _apply_line_geom(tree):
         rngs = n.get("char_ranges") or []
         if frows and len(frows) == len(rngs) == len(n.get("boxes") or []):
             body = n.get("body") or ""
-            fg = [(_line_geom(fr, body[r["from"]:min(r["to"], len(body))]) if fr else None)
+            fg = [(_line_geom(fr, body[r["from"]:min(r["to"], len(body))])
+                   if fr and (not physics or _rows_hold(fr, body[r["from"]:min(r["to"], len(body))]))
+                   else None)
                   for fr, r in zip(frows, rngs)]
             # A FRAGMENT OF ONE PRINTED LINE is that line, at its measured box. `the following
             # key events:` opens BIO11L ch10 p124; with no geometry (one row is not enough for
@@ -4634,7 +4660,7 @@ def write_chapter(book_id, chapter_num, use_agent=True, lang="EN"):
     _borrow_furniture_decor(doc)
     _absorb_table_cells(doc["tree"])
     _inherit_table_fill(doc["tree"])
-    _apply_line_geom(doc["tree"])
+    _apply_line_geom(doc["tree"], physics=doc.get("subject") == "physics")
     _apply_line_geom(doc.get("unit_tree") or [])
     _assign_paths(doc["tree"], doc["book"], doc["chapter"]["number"])
 
