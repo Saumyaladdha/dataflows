@@ -315,7 +315,7 @@ Figure shows a circuit contains three identical resistors with resistance $R = 9
 
 1. At $t = 0$, no current flows through $R_1$ and $R_3$
 
-![printed figure: A cell of emf ε in one loop with the resistor R2, current i along the top wire](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q008_sol_2_3a28083f_27102026.svg?v=3a28083fe0ea)
+![printed figure: A cell of emf ε in one loop with the resistor R2, current i along the top wire](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q008_sol_2_83b7c3c4_29102026.svg?v=83b7c3c4232d)
 
 *A cell of emf ε in one loop with the resistor R2, current i along the top wire*
 
@@ -1029,7 +1029,7 @@ Physics · Semiconductor Electronics
 
 The given electrical network is equivalent to
 
-![printed figure: NOR gate on A and B, then a NOR gate with both inputs joined, then a NOT gate giving Y](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q024_c1b40270_27102026.svg?v=c1b40270e3d0)
+![printed figure: NOR gate on A and B, then a NOR gate with both inputs joined, then a NOT gate giving Y](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q024_981ca707_29102026.svg?v=981ca7075a3b)
 
 *NOR gate on A and B, then a NOR gate with both inputs joined, then a NOT gate giving Y*
 
@@ -1525,7 +1525,7 @@ Physics · Laws of Motion
 
 Two blocks $A$ and $B$ of masses $3m$ and $m$ respectively are connected by a massless and inextensible string. The whole system is suspended by a massless spring as shown in figure. The magnitudes of acceleration of $A$ and $B$ immediately after the string is cut, are respectively
 
-![printed figure: Blocks A (3m) and B (m) joined by a string, hung from a ceiling by a spring](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q036_3f937a3b_27102026.svg?v=3f937a3b74a2)
+![printed figure: Blocks A (3m) and B (m) joined by a string, hung from a ceiling by a spring](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q036_f587aa54_29102026.svg?v=f587aa548aa2)
 
 *Blocks A (3m) and B (m) joined by a string, hung from a ceiling by a spring*
 
@@ -1832,7 +1832,7 @@ A beam of light from a source $L$ is incident normally on a plane mirror fixed a
 
 1. When mirror is rotated by $\theta$ angle reflected ray will be rotated by $2\theta$.
 
-![printed figure: Incident and reflected rays at angle 2θ from the mirror, spot displacement y at distance x](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q042_sol_1_e99ea964_27102026.svg?v=e99ea9647c2f)
+![printed figure: Incident and reflected rays at angle 2θ from the mirror, spot displacement y at distance x](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q042_sol_1_d358c1c3_29102026.svg?v=d358c1c3ac26)
 
 *Incident and reflected rays at angle 2θ from the mirror, spot displacement y at distance x*
 
@@ -2235,7 +2235,7 @@ Options as printed:
 
 **Publisher's solution**
 
-![printed figure: I. cyclohexanone + cyclohexanone →((i) $\ce{OH-}$, (ii) Δ) 2-cyclohexylidenecyclohexan-1-one](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q052_sol_1_6da50707_27102026.svg?v=6da50707af2e)
+![printed figure: I. cyclohexanone + cyclohexanone →((i) $\ce{OH-}$, (ii) Δ) 2-cyclohexylidenecyclohexan-1-one](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q052_sol_1_e5a78c70_29102026.svg?v=e5a78c70a5d1)
 
 *I. cyclohexanone + cyclohexanone →[(i) $\ce{OH-}$, (ii) Δ] 2-cyclohexylidenecyclohexan-1-one*
 
@@ -2276,7 +2276,7 @@ The species, having bond angles of $120^\circ$ is
 
 **Publisher's solution**
 
-![printed figure: boron trichloride ($\ce{BCl3}$), trigonal planar, with the Cl-B-Cl bond angle marked 120°](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q053_sol_1_f2a28722_27102026.svg?v=f2a287225a02)
+![printed figure: boron trichloride ($\ce{BCl3}$), trigonal planar, with the Cl-B-Cl bond angle marked 120°](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q053_sol_1_89421f7c_29102026.svg?v=89421f7c76d6)
 
 *boron trichloride ($\ce{BCl3}$), trigonal planar, with the Cl-B-Cl bond angle marked 120°*
 
@@ -2583,7 +2583,7 @@ $\mathrm{A} \xrightarrow{-\mathrm{OH},\,\Delta} \mathrm{Y}$
 $\mathrm{A} \xrightarrow{\mathrm{NH_2-NH-\overset{\displaystyle O}{\overset{\|}{C}}-NH_2}} \mathrm{Z}$
 Identify A, X, Y and Z
 
-![printed figure: X ($\ce{C2H6O}$) →(Cu / 573 K) A; A →($\ce{(Ag(NH3)2)+}$, –OH, Δ) Silver mirror observed; A →(–OH, Δ) Y; A →(hydrazinecarboxamide ($\ce{NH2-NH-C(=O)-NH2}$)) Z](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q061_dac76e89_27102026.svg?v=dac76e893a0c)
+![printed figure: X ($\ce{C2H6O}$) →(Cu / 573 K) A; A →($\ce{(Ag(NH3)2)+}$, –OH, Δ) Silver mirror observed; A →(–OH, Δ) Y; A →(hydrazinecarboxamide ($\ce{NH2-NH-C(=O)-NH2}$)) Z](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q061_a8755655_29102026.svg?v=a8755655dceb)
 
 *X ($\ce{C2H6O}$) →[Cu / 573 K] A; A →[$\ce{[Ag(NH3)2]+}$, –OH, Δ] Silver mirror observed; A →[–OH, Δ] Y; A →[hydrazinecarboxamide ($\ce{NH2-NH-C(=O)-NH2}$)] Z*
 
@@ -2712,7 +2712,7 @@ Chemistry · organic · Amines
 
 The correct increasing order of basic strength for the following compounds is
 
-![printed figure: (I) aniline; (II) 4-nitroaniline; (III) 4-methylaniline](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q064_d7744f6f_27102026.svg?v=d7744f6f91ce)
+![printed figure: (I) aniline; (II) 4-nitroaniline; (III) 4-methylaniline](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q064_eb608e4e_29102026.svg?v=eb608e4e7026)
 
 *(I) aniline; (II) 4-nitroaniline; (III) 4-methylaniline*
 
@@ -2733,7 +2733,7 @@ Structures: aniline `Nc1ccccc1` ![aniline](https://d30lmobgrc5gb8.cloudfront.net
 1. $-\mathrm{NO_2}$ has strong $-R$ effect and $-\mathrm{CH_3}$ shows $+R$ effect.
 2. $\therefore$ Order of basic strength is
 
-![printed figure: 4-nitroaniline < aniline < 4-methylaniline](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q064_sol_1_d035daf0_27102026.svg?v=d035daf07d99)
+![printed figure: 4-nitroaniline < aniline < 4-methylaniline](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q064_sol_1_889b4354_29102026.svg?v=889b4354c62d)
 
 *4-nitroaniline < aniline < 4-methylaniline*
 
@@ -2775,14 +2775,14 @@ In which pair of ions both the species contain S – S bond?
 
 **Publisher's solution**
 
-![printed figure: tetrathionate $\ce{(S4O6)^{2-}}$](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q065_sol_1_6755a2e7_27102026.svg?v=6755a2e7367e)
+![printed figure: tetrathionate $\ce{(S4O6)^{2-}}$](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q065_sol_1_a2e0d8cd_29102026.svg?v=a2e0d8cdf2bf)
 
 *tetrathionate $\ce{[S4O6]^{2-}}$*
 
 ![drawn: tetrathionate $\ce{(S4O6)^{2-}}$](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_drawn/q065_solution_1_37385f29_27102026.svg?v=37385f291e1e)  
 *drawn on the booklet's geometry, checked against its SMILES*
 
-![printed figure: thiosulfate $\ce{(S2O3)^{2-}}$](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q065_sol_2_3cf770be_27102026.svg?v=3cf770be598a)
+![printed figure: thiosulfate $\ce{(S2O3)^{2-}}$](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q065_sol_2_b52ef43a_29102026.svg?v=b52ef43a6334)
 
 *thiosulfate $\ce{[S2O3]^{2-}}$*
 
@@ -3338,7 +3338,7 @@ Chemistry · organic · Haloalkanes and Haloarenes
 
 Identify A and predict the type of reaction
 
-![printed figure: 1-bromo-3-methoxybenzene →($\ce{NaNH2}$) A](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q080_ec401efe_27102026.svg?v=ec401efe7cb4)
+![printed figure: 1-bromo-3-methoxybenzene →($\ce{NaNH2}$) A](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q080_4d1640a1_29102026.svg?v=4d1640a13be3)
 
 *1-bromo-3-methoxybenzene →[$\ce{NaNH2}$] A*
 
@@ -3529,7 +3529,7 @@ Pick out the correct statement with respect $\mathrm{[Mn(CN)_6]^{3-}}$ :
 4. This gives $t_{2g}^{4}e_{g}^{0}$
 5. $\therefore$ $\mathrm{Mn(III)} = [\mathrm{Ar}]$
 
-![printed figure: orbital-box diagram of Mn: 3d boxes with one paired and two unpaired electrons and two empty 3d boxes, empty 4s box and three empty 4p boxes; the two empty 3d, the 4s and the 4p boxes are enclosed in a dotted box labelled $d^2sp^3$; Coordination number of Mn = 6](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q084_sol_1_3f42d071_27102026.svg?v=3f42d071e0bd)
+![printed figure: orbital-box diagram of Mn: 3d boxes with one paired and two unpaired electrons and two empty 3d boxes, empty 4s box and three empty 4p boxes; the two empty 3d, the 4s and the 4p boxes are enclosed in a dotted box labelled $d^2sp^3$; Coordination number of Mn = 6](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q084_sol_1_5e431c3b_29102026.svg?v=5e431c3bf524)
 
 *orbital-box diagram of Mn: 3d boxes with one paired and two unpaired electrons and two empty 3d boxes, empty 4s box and three empty 4p boxes; the two empty 3d, the 4s and the 4p boxes are enclosed in a dotted box labelled $d^2sp^3$; Coordination number of Mn = 6*
 
@@ -3537,7 +3537,7 @@ Pick out the correct statement with respect $\mathrm{[Mn(CN)_6]^{3-}}$ :
 7. $\therefore$ Structure = octahedral
 8. $\mathrm{[Mn(CN)_6]^{3-}} =$
 
-![printed figure: orbital-box diagram: (Ar) then 3d boxes with one paired and two unpaired electrons, then two 3d boxes, one 4s box and three 4p boxes each filled with a crossed (ligand) electron pair, enclosed in a dotted box labelled $d^2sp^3$](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/neet_papers/2017/2017_A/figures_agent/q084_sol_2_36cfb5d3_27102026.svg?v=36cfb5d34ad1)
+![printed figure: orbital-box diagram: (Ar) then 3d boxes with one paired and two unpaired electrons, then two 3d boxes, one 4s box and three 4p boxes each filled with a crossed (ligand) electron pair, enclosed in a dotted box labelled $d^2sp^3$](https://d30lmobgrc5gb8.cloudfront.net/general/29102026/neet_papers/2017/2017_A/figures_agent/q084_sol_2_b484c37a_29102026.svg?v=b484c37afece)
 
 *orbital-box diagram: [Ar] then 3d boxes with one paired and two unpaired electrons, then two 3d boxes, one 4s box and three 4p boxes each filled with a crossed (ligand) electron pair, enclosed in a dotted box labelled $d^2sp^3$*
 

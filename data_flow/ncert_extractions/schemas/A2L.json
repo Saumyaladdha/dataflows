@@ -21,6 +21,9 @@
               "exclusiveMinimum": 0,
               "description": "Cap-to-baseline height of ONE line of ordinary body prose on this page, in pixels. Every size_rel elsewhere is measured against this, so it is the page's unit of type."
             },
+            "text_block": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "number", "minimum": 0, "maximum": 1 }, "description": "[x0, y0, x1, y1] fractions: the rectangle the body type occupies. The brief asks for it; the schema forbade it, so every good read was rejected (2026-10-28)." },
+            "fill": { "type": "number", "minimum": 0, "maximum": 1.5, "description": "Fraction of the text block the content covers." },
+            "page_kind": { "type": "string", "description": "Unit opener, chapter opener or ordinary page." },
             "columns": {
               "type": "array",
               "minItems": 1,
@@ -94,14 +97,18 @@
                 "type": ["string", "null"],
                 "pattern": "^(#[0-9a-fA-F]{6}|)$",
                 "description": "Colour of the element's text as a #rrggbb hex read from the image; null when it has no text."
-              }
+              },
+              "space_before": { "type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "Gap above this element, as a fraction of page height." },
+              "indent": { "type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "Left inset from the column, as a fraction of page width." },
+              "size_pt": { "type": ["number", "null"], "exclusiveMinimum": 0, "description": "Printed type size in points, for headings and captions." }
             }
           }
         },
         "note": {
           "type": "string",
           "description": "Required. What you measured, anything you could not, and any element whose role was ambiguous."
-        }
+        },
+        "page_kind": { "type": "string", "description": "Accepted here as well as under `page`: agents read the brief's '`page_kind` matters' as a top-level field." }
       }
     },
     {

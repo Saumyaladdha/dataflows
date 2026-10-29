@@ -1,0 +1,53 @@
+{
+  "page": {
+    "page_kind": "chapter_opener",
+    "width_px": 1826,
+    "height_px": 2159,
+    "body_text_size_px": 19,
+    "text_block": [0.112, 0.075, 0.834, 0.896],
+    "fill": 0.98,
+    "columns": [
+      {"id": "left", "x0": 0.112, "x1": 0.365},
+      {"id": "right", "x0": 0.392, "x1": 0.834}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.4, 0.128, 0.545, 0.142],
+     "column": "full", "size_rel": 1.6, "align": "center", "font": "serif-bold",
+     "text_color": "#231f1f", "space_before": 0.053},
+    {"n": null, "role": "qr_code", "bbox": [0.734, 0.075, 0.833, 0.17],
+     "column": "full", "size_rel": 1.0},
+    {"n": null, "role": "rule_bar", "bbox": [0.112, 0.185, 0.834, 0.206],
+     "column": "full", "size_rel": 1.0, "fill": "#00aeef", "space_before": 0.015},
+    {"n": 1, "role": "chapter_title", "bbox": [0.308, 0.221, 0.637, 0.239],
+     "column": "full", "size_rel": 2.0, "align": "center", "font": "serif-bold",
+     "text_color": "#231f1f", "space_before": 0.015},
+    {"n": null, "role": "rule_bar", "bbox": [0.112, 0.257, 0.834, 0.278],
+     "column": "full", "size_rel": 1.0, "fill": "#00aeef", "space_before": 0.018},
+    {"n": null, "role": "contents_panel", "bbox": [0.112, 0.329, 0.365, 0.896],
+     "column": "left", "size_rel": 1.0, "align": "left", "font": "serif",
+     "fill": "#c6eafb", "text_color": "#00aeef", "space_before": 0.05},
+    {"n": 2, "role": "section_heading", "bbox": [0.392, 0.331, 0.55, 0.339],
+     "column": "right", "size_rel": 1.0, "align": "left", "font": "serif-bold",
+     "text_color": "#00aeef", "space_before": 0.052},
+    {"n": 3, "role": "paragraph", "bbox": [0.392, 0.35, 0.834, 0.561],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.011},
+    {"n": 4, "role": "section_heading", "bbox": [0.392, 0.576, 0.743, 0.585],
+     "column": "right", "size_rel": 1.0, "align": "left", "font": "serif-bold",
+     "text_color": "#00aeef", "space_before": 0.015},
+    {"n": 5, "role": "paragraph", "bbox": [0.392, 0.591, 0.834, 0.647],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.006},
+    {"n": 6, "role": "paragraph", "bbox": [0.392, 0.65, 0.834, 0.674],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.003},
+    {"n": 7, "role": "list", "bbox": [0.392, 0.68, 0.834, 0.766],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.006},
+    {"n": 8, "role": "paragraph", "bbox": [0.392, 0.769, 0.834, 0.896],
+     "column": "right", "size_rel": 1.0, "align": "justify", "font": "serif",
+     "space_before": 0.003}
+  ],
+  "note": "Chapter-opener page, two columns below the title: a bordered light-blue contents panel (fill #c6eafb, cyan #00aeef entries 1.1-1.6, Summary, Exercises; one element) in the left column and the opening prose on the right. The centred 'CHAPTER ONE' small-caps line is not an A2 block, reported as chapter_banner with n null (no fill, bare paper). The title sits between two cyan gradient rule_bars: the upper one is darkest (#00aeef) at the LEFT and fades to white at the right, the lower one is darkest (#00aeef) at the RIGHT and fades to white at the left; fill is the dark-end colour. QR code (with caption 11086CH02) top right. body_text_size_px measured as cap-to-baseline on the right-column prose. Section headings 1.1/1.2 are bold, number in black and title in cyan small caps. Paragraph n8 runs to the foot of the right column and continues on the next page. The '2024-25' stamp at the foot is not a page number and is omitted; the diagonal 'not to be republished' watermark is omitted. size_pt omitted because the page DPI is not given."
+}

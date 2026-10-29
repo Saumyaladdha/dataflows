@@ -35,9 +35,7 @@ To understand the ethos of an aquatic ecosystem let us take a small pond as an e
 
 A constant input of solar energy is the basic requirement for any ecosystem to function and sustain. **Primary production** is defined as the amount of biomass or organic matter produced per unit area over a time period by plants during photosynthesis. It is expressed in terms of weight (gm<sup>–2</sup>) or energy (kcal m<sup>–2</sup>). The rate of biomass production is called **productivity**. It is expressed in terms of gm<sup>–2</sup> yr <sup>–1</sup> or (kcal m<sup>–2</sup>) yr<sup>–1</sup> to compare the productivity of different ecosystems. It can be divided into gross primary productivity (GPP) and net primary productivity (NPP). **Gross primary productivity** of an ecosystem is the rate of production of organic matter during photosynthesis. A considerable amount of GPP is utilised by plants in respiration. Gross primary productivity minus respiration losses (R), is the **net primary productivity** (NPP).
 
-GPP - R = NPP
-
-GPP – R = NPP 
+GPP – R = NPP
 
 Net primary productivity is the available biomass for the consumption to heterotrophs (herbiviores and decomposers). **Secondary productivity** is defined as the rate of formation of new organic matter by consumers.
 
@@ -51,7 +49,7 @@ You may have heard of the earthworm being referred to as the farmer’s ‘frien
 
 It is important to note that all the above steps in decomposition operate simultaneously on the detritus (Figure 12.1). Humification and mineralisation occur during decomposition in the soil. **Humification** leads to accumulation of a dark coloured amorphous substance called **humus** that is highly resistant to microbial action and undergoes decomposition at an extremely slow rate. Being colloidal in nature it serves as a reservoir of nutrients. The humus is further degraded by some microbes and release of inorganic nutrients occur by the process known as **mineralisation**.
 
-![Figure 12.1 Diagrammatic representation of decomposition cycle in a terrestrial ecosystem](figures/p208_fig01.png)
+![Figure 12.1 Diagrammatic representation of decomposition cycle in a terrestrial ecosystem](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch12/p208_fig01_27102026.png)
 
 **Figure 12.1** Diagrammatic representation of decomposition cycle in a terrestrial ecosystem
 
@@ -71,7 +69,7 @@ All animals depend on plants (directly or indirectly) for their food needs. They
 
 The consumers that feed on these herbivores are carnivores, or more correctly **primary carnivores** (though secondary consumers). Those animals that depend on the primary carnivores for food are labelled **secondary carnivores**. A simple grazing food chain (GFC) is depicted below:
 
-![](figures/p209_fig01.png)
+![](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch12/p209_fig01_27102026.png)
 
 The **detritus food chain** (DFC) begins with dead organic matter. It is made up of **decomposers** which are heterotrophic organisms, mainly fungi and bacteria. They meet their energy and nutrient requirements by degrading dead organic matter or detritus. These are also known as **saprotrophs** (*sapro*: to decompose). Decomposers secrete digestive enzymes that breakdown dead and waste materials into simple, inorganic materials, which are subsequently absorbed by them.
 
@@ -79,7 +77,7 @@ In an aquatic ecosystem, GFC is the major conduit for energy flow. As against th
 
 Organisms occupy a place in the natural surroundings or in a community according to their feeding relationship with other organisms. Based on the source of their nutrition or food, organisms occupy a specific place in the food chain that is known as their **trophic level**. Producers belong to the first trophic level, herbivores (primary consumer) to the second and carnivores (secondary consumer) to the third (Figure 12.2).
 
-![Figure 12.2 Diagrammatic representation of trophic levels in an ecosystem](figures/p210_fig01.png)
+![Figure 12.2 Diagrammatic representation of trophic levels in an ecosystem](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch12/p210_fig01_27102026.png)
 
 **Figure 12.2** Diagrammatic representation of trophic levels in an ecosystem
 
@@ -89,7 +87,7 @@ Each trophic level has a certain mass of living material at a particular time ca
 
 The number of trophic levels in the grazing food chain is restricted as the transfer of energy follows 10 per cent law – only 10 per cent of the energy is transferred to each trophic level from the lower trophic level. In nature, it is possible to have so many levels – producer, herbivore, primary carnivore, secondary carnivore in the grazing food chain (Figure 12.3) . *Do you think there is any such limitation in a detritus food chain?*
 
-![Figure 12.3 Energy flow through different trophic levels](figures/p211_fig01.png)
+![Figure 12.3 Energy flow through different trophic levels](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch12/p211_fig01_27102026.png)
 
 **Figure 12.3** Energy flow through different trophic levels
 
@@ -97,19 +95,19 @@ The number of trophic levels in the grazing food chain is restricted as the tran
 
 You must be familiar with the shape of a pyramid. The base of a pyramid is broad and it narrows towards the apex. One gets a similar shape, whether you express the food or energy relationship between organisms at different trophic levels. This, relationship is expressed in terms of number, biomass or energy. The base of each pyramid represents the producers or the first trophic level while the apex represents tertiary or top level consumer. The three types of ecological pyramids that are usually studied are (a) pyramid of number; (b) pyramid of biomass and (c) pyramid of energy. For detail (see Figure 12.4 a, b, c and d).
 
-![Figure 12.4 (a) Pyramid of numbers in a grassland ecosystem. Only three top-carnivores are supported in an ecosystem based on production of nearly 6 millions plants](figures/p212_fig01.png)
+![Figure 12.4 (a) Pyramid of numbers in a grassland ecosystem. Only three top-carnivores are supported in an ecosystem based on production of nearly 6 millions plants](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch12/p212_fig01_27102026.png)
 
 **Figure 12.4 (a)** Pyramid of numbers in a grassland ecosystem. Only three top-carnivores are supported in an ecosystem based on production of nearly 6 millions plants
 
-![Figure 12.4 (b) Pyramid of biomass shows a sharp decrease in biomass at higher trophic levels](figures/p212_fig02.png)
+![Figure 12.4 (b) Pyramid of biomass shows a sharp decrease in biomass at higher trophic levels](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch12/p212_fig02_27102026.png)
 
 **Figure 12.4 (b)** Pyramid of biomass shows a sharp decrease in biomass at higher trophic levels
 
-![Figure 12.4 (c) Inverted pyramid of biomass-small standing crop of phytoplankton supports large standing crop of zooplankton](figures/p212_fig03.png)
+![Figure 12.4 (c) Inverted pyramid of biomass-small standing crop of phytoplankton supports large standing crop of zooplankton](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch12/p212_fig03_27102026.png)
 
 **Figure 12.4 (c)** Inverted pyramid of biomass-small standing crop of phytoplankton supports large standing crop of zooplankton
 
-![Figure 12.4 (d) An ideal pyramid of energy. Observe that primary producers convert only 1% of the energy in the sunlight available to them into NPP](figures/p213_fig01.png)
+![Figure 12.4 (d) An ideal pyramid of energy. Observe that primary producers convert only 1% of the energy in the sunlight available to them into NPP](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch12/p213_fig01_27102026.png)
 
 **Figure 12.4** (d) An ideal pyramid of energy. Observe that primary producers convert only 1% of the energy in the sunlight available to them into NPP
 

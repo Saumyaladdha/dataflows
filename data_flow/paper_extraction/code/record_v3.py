@@ -37,9 +37,36 @@ SCHEMA = "neet-pyq/question-record/v3"
 
 CONTENT_TYPES = {".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg"}
 RENDERERS = {"smiles": "RDKit (code/lib/chem_cards.py)", "spec": "code/lib/physics_figure.py",
-             "booklet": "booklet geometry (code/lib/print_trace.py)"}
+             "booklet": "booklet geometry (code/lib/print_trace.py)",
+             "traced": "the printed picture traced to vector lines (code/lib/raster_trace.py)"}
 METHODS = {"smiles": "smiles", "spec": "physics_spec"}
 OPTION_LABEL = re.compile(r"^\(?\s*([1-4])\s*\)?$")
+
+#: The reader's description of a drawn structure inside an option ("[structure: benzene ring with
+#: $\mathrm{OH}$]") -- words about a picture, not words printed in the booklet.
+DRAWING_NOTE = re.compile(r"\[\s*(?:chemical\s+)?(?:structure|figure|image|diagram|drawing)\b[^\]]*\]",
+                          re.I)
+
+
+def option_words(text, species_count, has_picture):
+    """An option's PRINTED words, once its picture or structures carry the drawing.
+
+    2018_AA q052 option (1) was read as "[structure: benzene ring with CH(CH3)2], [structure:
+    benzene ring with OH], CH3CH(OH)CH3" and printed beside the very image of those three products.
+    The bracketed notes go; what is left stays when it is printed next to the drawing (q068's "and
+    I2"), and goes when the option's structures already account for it: two notes plus one listed
+    formula against three species means the formula is the third structure in the picture.
+    Without a picture or structures, the note is the only account of the option and is kept.
+    """
+    text = text or ""
+    if not (has_picture or species_count) or not DRAWING_NOTE.search(text):
+        return text
+    notes = len(DRAWING_NOTE.findall(text))
+    rest = [p.strip() for p in DRAWING_NOTE.split(text)]
+    rest = ", ".join(p.strip(" ,;") for p in rest if p.strip(" ,;"))
+    if species_count and notes + len([p for p in rest.split(",") if p.strip()]) == species_count:
+        return ""
+    return rest
 
 #: The stylesheet every `html` field assumes, carried once in the document's meta.
 RENDER_CSS = texhtml.CSS + """
@@ -108,7 +135,9 @@ def _checks(entry):
             ("name_check", ", ".join("%d %s" % (n, k) for k, n in sorted(tally.items())) or "n/a"),
             ("print_match", ("%d structure(s) match the printed drawing atom for atom, %d printed "
                              "as a formula" % (shown["structure"], shown["text"]))
-             if entry.get("layout") == "booklet" else "not a vector figure: drawn by RDKit"),
+             if entry.get("layout") == "booklet" else
+             "picture-printed figure: the print itself, traced" if entry.get("layout") == "traced"
+             else "not a vector figure: drawn by RDKit"),
             ("printed_text", "pass" if entry.get("status") == "drawn" else entry.get("status"))])
     spec = entry.get("spec") or {}
     match = entry.get("print_match") or {}
@@ -118,7 +147,9 @@ def _checks(entry):
                          "%d%% of the printed lines covered"
                          % (match.get("labels", 0), 100 * match.get("precision", 0),
                             100 * match.get("recall", 0)))
-         if entry.get("layout") == "booklet" else "not a vector figure: drawn from the spec"),
+         if entry.get("layout") == "booklet" else
+         "picture-printed figure: the print itself, traced" if entry.get("layout") == "traced"
+         else "not a vector figure: drawn from the spec"),
         ("angles", "%d claimed, all within 1.5 deg" % len(spec.get("angles_claimed") or [])
          if spec.get("angles_claimed") else "none claimed"),
         ("netlist", "matches the drawn wires" if spec.get("netlist") else "not a circuit"),
@@ -132,7 +163,7 @@ def drawn_record(q, entry):
     layout = entry.get("layout")
     out = collections.OrderedDict([
         ("method", METHODS.get(source, source)),
-        ("renderer", RENDERERS.get("booklet" if layout == "booklet" else source)),
+        ("renderer", RENDERERS.get(layout if layout in ("booklet", "traced") else source)),
         ("layout", layout),
         ("status", entry.get("status")), ("checks", _checks(entry)),
         ("image", asset(q, entry.get("svg"))), ("message", entry.get("message"))])
@@ -248,6 +279,7 @@ def build(q, flat, read):
         text = flat["options"][key] or ""
         if re.fullmatch(r"\s*\[[^\]]*(structure|figure|image)[^\]]*\]\s*", text, re.I):
             text = ""                                   # a placeholder, not printed text
+        text = option_words(text, len(option_chem.get(key, [])), key in option_figures)
         options.append(collections.OrderedDict([
             ("key", key), ("text", text), ("chemistry", option_chem.get(key, [])),
             ("figure", option_figures.get(key))]))

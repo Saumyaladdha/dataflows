@@ -54,7 +54,7 @@ Some of the applications of biotechnology in agriculture that you will study in 
 
 Specific Bt toxin genes were isolated from *Bacillus thuringiensis* and incorporated into the several crop plants such as cotton (Figure 10.1). The choice of genes depends upon the crop and the targeted pest, as most Bt toxins are insect-group specific. The toxin is coded by a gene *cryIAc* named **cry**. There are a number of them, for example, the proteins encoded by the genes *cryIAc* and *cryIIAb* control the cotton bollworms, that of *cryIAb* controls corn borer.
 
-![Figure 10.1 Cotton boll: (a) destroyed by bollworms; (b) a fully mature cotton boll](figures/p180_fig01.png)
+![Figure 10.1 Cotton boll: (a) destroyed by bollworms; (b) a fully mature cotton boll](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch10/p180_fig01_27102026.png)
 
 **Figure 10.1** Cotton boll: (a) destroyed by bollworms; (b) a fully mature cotton boll
 
@@ -62,7 +62,7 @@ Specific Bt toxin genes were isolated from *Bacillus thuringiensis* and incorpor
 
 Using *Agrobacterium* vectors, nematode-specific genes were introduced into the host plant (Figure 10.2). The introduction of DNA was such that it produced both sense and anti-sense RNA in the host cells. These two RNA’s being complementary to each other formed a double stranded (dsRNA) that initiated RNAi and thus, silenced the specific mRNA of the nematode. The consequence was that the parasite could not survive in a transgenic host expressing specific interfering RNA. The transgenic plant therefore got itself protected from the parasite (Figure 10.2).
 
-![Figure 10.2 Host plant-generated dsRNA triggers protection against nematode infestation: (a) Roots of a typical control plants; (b) transgenic plant roots 5 days after deliberate infection of nematode but protected through novel mechanism.](figures/p181_fig01.png)
+![Figure 10.2 Host plant-generated dsRNA triggers protection against nematode infestation: (a) Roots of a typical control plants; (b) transgenic plant roots 5 days after deliberate infection of nematode but protected through novel mechanism.](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch10/p181_fig01_27102026.png)
 
 **Figure 10.2** Host plant-generated dsRNA triggers protection against nematode infestation: (a) Roots of a typical control plants; (b) transgenic plant roots 5 days after deliberate infection of nematode but protected through novel mechanism.
 
@@ -78,7 +78,7 @@ Management of adult-onset diabetes is possible by taking insulin at regular time
 
 Insulin used for diabetes was earlier extracted from pancreas of slaughtered cattle and pigs. Insulin from an animal source, though caused some patients to develop allergy or other types of reactions to the foreign protein. Insulin consists of two short polypeptide chains: chain A and chain B, that are linked together by disulphide bridges (Figure 10.3).
 
-![Figure 10.3 Maturation of pro-insulin into insulin (simplified)](figures/p182_fig01.png)
+![Figure 10.3 Maturation of pro-insulin into insulin (simplified)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch10/p182_fig01_27102026.png)
 
 **Figure 10.3** Maturation of pro-insulin into insulin (simplified)
 

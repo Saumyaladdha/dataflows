@@ -97,7 +97,13 @@ phase('Prepare')
 const prep = []
 if (PDF) prep.push(`python code/extract_paper_v2.py --paper "${PDF}" --apply`)
 prep.push(`python code/assign_subject.py --paper-id ${PAPER} --apply`)
-await runner('extract + subject', prep, 'Prepare')
+prep.push(`test -f papers/papers/${PAPER}.json && echo PAPER_FILE_FOUND || echo PAPER_FILE_MISSING`)
+const prepped = await runner('extract + subject', prep, 'Prepare')
+// Every later step lists its items from papers/papers/<paper>.json; without it they all "pass" on
+// zero items (2025_46: an image-only booklet the extractor refused ran green end to end).
+if (!/PAPER_FILE_FOUND/.test(prepped.stdout)) {
+  throw new Error(`extraction wrote no papers/papers/${PAPER}.json -- check the extractor output (a scanned / image-only booklet is refused):\n${prepped.stdout.slice(-1500)}`)
+}
 
 phase('Read')
 report.push(await step('B3V', 'Read'))

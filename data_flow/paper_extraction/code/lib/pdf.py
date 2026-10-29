@@ -89,7 +89,29 @@ def extract_text_in_box(pdf_path, page_num, bbox, dpi=DEFAULT_DPI, unit="px"):
         return ""
 
 
-def crop_boxes(pdf_path, jobs, dpi=DEFAULT_DPI, unit="px", hide_xrefs=()):
+def blank_marks(page, marks):
+    """Remove repeated VECTOR furniture from one in-memory page: `marks` = [(rect, fill), ...] as
+    extract_paper_v2.document_vector_marks() measured them. Removed only when every drawing wholly
+    inside the mark's box is the mark itself (that fill), so real line art there is never touched.
+    Returns how many were removed."""
+    import pymupdf
+    removed = 0
+    for rect, fill in marks:
+        box = pymupdf.Rect(rect) + (-0.5, -0.5, 0.5, 0.5)
+        inside = [d for d in page.get_drawings() if box.contains(d["rect"])]
+        if not inside or any(tuple(round(c, 2) for c in (d.get("fill") or ())) != fill
+                             for d in inside):
+            continue
+        page.add_redact_annot(box, fill=False)
+        removed += 1
+    if removed:
+        page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE,
+                              graphics=pymupdf.PDF_REDACT_LINE_ART_REMOVE_IF_COVERED,
+                              text=pymupdf.PDF_REDACT_TEXT_NONE)
+    return removed
+
+
+def crop_boxes(pdf_path, jobs, dpi=DEFAULT_DPI, unit="px", hide_xrefs=(), hide_marks=None):
     """Render MANY crops out of one PDF with a single open. Returns the list of paths written.
 
     `jobs` is an iterable of (page_num, bbox, out_path), page numbers 1-indexed, exactly as
@@ -120,6 +142,10 @@ def crop_boxes(pdf_path, jobs, dpi=DEFAULT_DPI, unit="px", hide_xrefs=()):
                     page.delete_image(xref)
                     hidden.add(xref)
                     break
+        # ...and the publisher's VECTOR marks, {page index: [(rect, fill)]}: 2019 Code-P1 prints a
+        # pale-grey "ed)" at one spot on four pages, and q078's option crop carried it
+        for index, marks in (hide_marks or {}).items():
+            blank_marks(doc[index], marks)
         for page_num, bbox, out_path in jobs:
             if not out_path:
                 raise ValueError("out_path is required")

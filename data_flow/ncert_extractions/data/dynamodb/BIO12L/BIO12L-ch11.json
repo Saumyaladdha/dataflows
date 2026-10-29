@@ -353,7 +353,8 @@
    }
   ],
   "caption": "RAMDEO MISRA (1908-1998)",
-  "image_local": "figures/i002_fig01.png",
+  "image": "https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/i002_fig01_27102026.png",
+  "image_sha256": "6b9012314940fedc38052b02bd6c39ab2b63f7cdb773c56fabd53b5606a7f1e1",
   "source": "text_layer",
   "qa": "auto",
   "list_key": "BIO12#EN#figure"
@@ -1107,7 +1108,8 @@
    }
   ],
   "caption": "Figure 11.1 Representation of age pyramids for human population",
-  "image_local": "figures/p192_fig01.png",
+  "image": "https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/p192_fig01_27102026.png",
+  "image_sha256": "4a2164660b908d39b746223c8f52a976f790f0bb198936606ad8b5a9438113b7",
   "source": "text_layer",
   "qa": "auto",
   "list_key": "BIO12#EN#figure"
@@ -1566,7 +1568,8 @@
    }
   ],
   "caption": "Figure 11.2",
-  "image_local": "figures/p193_fig01.png",
+  "image": "https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/p193_fig01_27102026.png",
+  "image_sha256": "81f53c3fb2bbc5a0480719c4c1d30fbff79f2139acd5a71c3b9217a76f1c20d0",
   "source": "text_layer",
   "qa": "auto",
   "list_key": "BIO12#EN#figure"
@@ -2043,7 +2046,8 @@
    }
   ],
   "caption": "Figure 11.3 Population growth curve\na when responses are not limiting the growth, plot is exponential,\nb when responses are limiting the growth, plot is logistic,\nK is carrying capacity",
-  "image_local": "figures/p194_fig01.png",
+  "image": "https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/p194_fig01_27102026.png",
+  "image_sha256": "c74d9a5248f57526f9ba05cce296d42053c468d53dc7f6f71673d0c060090bef",
   "source": "text_layer",
   "qa": "auto",
   "list_key": "BIO12#EN#figure"
@@ -2251,7 +2255,24 @@
   "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶10",
   "para_no": 10,
   "body": "Nt = N0 ert",
-  "body_md": "Nt = N0 ert",
+  "body_md": "N<sub>t</sub> = N<sub>0</sub> e<sup>rt</sup>",
+  "marks": [
+   {
+    "from": 1,
+    "to": 2,
+    "sub": true
+   },
+   {
+    "from": 6,
+    "to": 7,
+    "sub": true
+   },
+   {
+    "from": 9,
+    "to": 11,
+    "sup": true
+   }
+  ],
   "sentences": [
    {
     "n": 1,
@@ -2280,6 +2301,56 @@
  },
  {
   "PK": "CH#BIO12-11#EN",
+  "SK": "N#013.002.014w",
+  "id": "p_jRPJeP",
+  "kind": "para",
+  "book": "BIO12",
+  "book_id": "BIO12L",
+  "grade": 12,
+  "subject": "biology",
+  "edition": "latest",
+  "lang": "EN",
+  "reprint": "2026-27",
+  "chapter_no": 11,
+  "chapter_title": "ORGANISMS AND POPULATIONS",
+  "topic_no": "11.1",
+  "topic_title": "Populations",
+  "topic_id": "s_TcFf0m",
+  "subtopic_no": "11.1.2",
+  "subtopic_title": "Population Growth",
+  "subtopic_id": "s_OLhx7A",
+  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶11",
+  "para_no": 11,
+  "body": "where",
+  "body_md": "where",
+  "sentences": [
+   {
+    "n": 1,
+    "from": 0,
+    "to": 5
+   }
+  ],
+  "pages": [
+   194
+  ],
+  "boxes": [
+   {
+    "page": 194,
+    "src": "measured",
+    "bbox": [
+     0.494,
+     0.7762,
+     0.5573,
+     0.7897
+    ],
+    "page_file": "007"
+   }
+  ],
+  "source": "text_layer",
+  "qa": "auto"
+ },
+ {
+  "PK": "CH#BIO12-11#EN",
   "SK": "N#013.002.015",
   "id": "l_kLG6S6",
   "kind": "list",
@@ -2299,12 +2370,17 @@
   "subtopic_title": "Population Growth",
   "subtopic_id": "s_OLhx7A",
   "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth",
-  "body": "Nt = Population density after time t No = Population density at time zero r = intrinsic rate of natural increase e = the base of natural logarithms (2.71828)",
-  "body_md": "N<sub>t</sub> = Population density after time t No = Population density at time zero r = intrinsic rate of natural increase e = the base of natural logarithms (2.71828)",
+  "body": "Nt = Population density after time t N0 = Population density at time zero r = intrinsic rate of natural increase e = the base of natural logarithms (2.71828)",
+  "body_md": "N<sub>t</sub> = Population density after time t N<sub>0</sub> = Population density at time zero r = intrinsic rate of natural increase e = the base of natural logarithms (2.71828)",
   "marks": [
    {
     "from": 1,
     "to": 2,
+    "sub": true
+   },
+   {
+    "from": 38,
+    "to": 39,
     "sub": true
    }
   ],
@@ -2345,9 +2421,15 @@
     "number": null
    },
    {
-    "body": "No = Population density at time zero",
-    "marks": [],
-    "body_md": "No = Population density at time zero",
+    "body": "N0 = Population density at time zero",
+    "marks": [
+     {
+      "from": 1,
+      "to": 2,
+      "sub": true
+     }
+    ],
+    "body_md": "N<sub>0</sub> = Population density at time zero",
     "sentences": [
      {
       "n": 1,
@@ -2408,8 +2490,8 @@
   "subtopic_no": "11.1.2",
   "subtopic_title": "Population Growth",
   "subtopic_id": "s_OLhx7A",
-  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶11",
-  "para_no": 11,
+  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶12",
+  "para_no": 12,
   "body": "Any species growing exponentially under unlimited resource conditions can reach enormous population densities in a short time.",
   "body_md": "Any species growing exponentially under unlimited resource conditions can reach enormous population densities in a short time.",
   "sentences": [
@@ -2459,8 +2541,8 @@
   "subtopic_no": "11.1.2",
   "subtopic_title": "Population Growth",
   "subtopic_id": "s_OLhx7A",
-  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶12",
-  "para_no": 12,
+  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶13",
+  "para_no": 13,
   "body": "Darwin showed how even a slow growing animal like elephant could reach enormous numbers in the absence of checks. The following is an anecdote popularly narrated to demonstrate dramatically how fast a huge population could build up when growing exponentially.",
   "body_md": "Darwin showed how even a slow growing animal like elephant could reach enormous numbers in the absence of checks. The following is an anecdote popularly narrated to demonstrate dramatically how fast a huge population could build up when growing exponentially.",
   "sentences": [
@@ -2515,8 +2597,8 @@
   "subtopic_no": "11.1.2",
   "subtopic_title": "Population Growth",
   "subtopic_id": "s_OLhx7A",
-  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶13",
-  "para_no": 13,
+  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶14",
+  "para_no": 14,
   "body": "The king and the minister sat for a chess game. The king, confident of winning the game, was ready to accept any bet proposed by the minister. The minister humbly said that if he won, he wanted only some wheat grains, the quantity of which is to be calculated by placing on the chess board one grain in Square 1, then two in Square 2, then four in Square 3, and eight in Square 4, and so on, doubling each time the previous quantity of wheat on the next square until all the 64 squares were filled. The king accepted the seemingly silly bet and started the game, but unluckily for him, the minister won. The king felt that fulfilling the minister’s bet was so easy. He started with a single grain on the first square and proceeded to fill the other squares following minister’s suggested procedure, but by the time he covered half the chess board, the king realised to his dismay that all the wheat produced in his entire kingdom pooled together would still be inadequate to cover all the 64 squares. Now think of a tiny Paramecium starting with just one individual and through binary fission, doubling in numbers every day, and imagine what a mind-boggling population size it would reach in 64 days. (provided food and space remain unlimited)",
   "body_md": "The king and the minister sat for a chess game. The king, confident of winning the game, was ready to accept any bet proposed by the minister. The minister humbly said that if he won, he wanted only some wheat grains, the quantity of which is to be calculated by placing on the chess board one grain in Square 1, then two in Square 2, then four in Square 3, and eight in Square 4, and so on, doubling each time the previous quantity of wheat on the next square until all the 64 squares were filled. The king accepted the seemingly silly bet and started the game, but unluckily for him, the minister won. The king felt that fulfilling the minister’s bet was so easy. He started with a single grain on the first square and proceeded to fill the other squares following minister’s suggested procedure, but by the time he covered half the chess board, the king realised to his dismay that all the wheat produced in his entire kingdom pooled together would still be inadequate to cover all the 64 squares. Now think of a tiny Paramecium starting with just one individual and through binary fission, doubling in numbers every day, and imagine what a mind-boggling population size it would reach in 64 days. (provided food and space remain unlimited)",
   "sentences": [
@@ -2709,8 +2791,8 @@
   "subtopic_no": "11.1.2",
   "subtopic_title": "Population Growth",
   "subtopic_id": "s_OLhx7A",
-  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶14",
-  "para_no": 14,
+  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶15",
+  "para_no": 15,
   "body": "A population growing in a habitat with limited resources show initially a lag phase, followed by phases of acceleration and deceleration and finally an asymptote, when the population density reaches the carrying capacity. A plot of N in relation to time (t) results in a sigmoid curve. This type of population growth is called Verhulst-Pearl Logistic Growth (Figure 11.3) and is described by the following equation:",
   "body_md": "A population growing in a habitat with limited resources show initially a lag phase, followed by phases of acceleration and deceleration and finally an asymptote, when the population density reaches the carrying capacity. A plot of N in relation to time (t) results in a sigmoid curve. This type of population growth is called *Verhulst-Pearl Logistic Growth* (Figure 11.3) and is described by the following equation:",
   "marks": [
@@ -2777,8 +2859,8 @@
   "subtopic_no": "11.1.2",
   "subtopic_title": "Population Growth",
   "subtopic_id": "s_OLhx7A",
-  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶15",
-  "para_no": 15,
+  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶16",
+  "para_no": 16,
   "body": "dN/dt = rN((K - N)/K)",
   "body_md": "dN/dt = rN((K - N)/K)",
   "sentences": [
@@ -2911,8 +2993,8 @@
   "subtopic_no": "11.1.2",
   "subtopic_title": "Population Growth",
   "subtopic_id": "s_OLhx7A",
-  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶16",
-  "para_no": 16,
+  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶17",
+  "para_no": 17,
   "body": "Since resources for growth for most animal populations are finite and become limiting sooner or later, the logistic growth model is considered a more realistic one.",
   "body_md": "Since resources for growth for most animal populations are finite and become limiting sooner or later, the logistic growth model is considered a more realistic one.",
   "sentences": [
@@ -2962,8 +3044,8 @@
   "subtopic_no": "11.1.2",
   "subtopic_title": "Population Growth",
   "subtopic_id": "s_OLhx7A",
-  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶17",
-  "para_no": 17,
+  "address": "Bio 12 › Ch 11 › 11.1 Populations › 11.1.2 Population Growth › ¶18",
+  "para_no": 18,
   "body": "Gather from Government Census data the population figures for India for the last 100 years, plot them and check which growth pattern is evident.",
   "body_md": "*Gather from Government Census data the population figures for India for the last 100 years, plot them and check which growth pattern is evident*.",
   "marks": [
@@ -3355,7 +3437,8 @@
   ],
   "caption": "Table 11.1 : Population Interactions",
   "table_text": "Species A | Species B | Name of Interaction\n+ | + | Mutualism\n– | – | Competition\n+ | – | Predation\n+ | – | Parasitism\n+ | 0 | Commensalism\n– | 0 | Amensalism",
-  "image_local": "figures/p197_table01.png",
+  "image": "https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/p197_table01_27102026.png",
+  "image_sha256": "d6036270842ed4fb9a26066298df99aaf229ddc85317943d3ef9c7b21d736669",
   "source": "text_layer",
   "qa": "auto",
   "list_key": "BIO12#EN#table"
@@ -5032,7 +5115,8 @@
    }
   ],
   "caption": "Figure 11.5 Showing bee-a pollinator on orchid flower",
-  "image_local": "figures/p202_fig01.png",
+  "image": "https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/p202_fig01_27102026.png",
+  "image_sha256": "a8980ffc8a189e07824b02f77fd31cccdfab8ffc41092e624bf86f71fb94d396",
   "source": "text_layer",
   "qa": "auto",
   "list_key": "BIO12#EN#figure"
@@ -6603,7 +6687,7 @@
    204
   ],
   "counts": {
-   "para": 51,
+   "para": 52,
    "figure": 6,
    "chapter_title": 2,
    "section": 5,
@@ -6615,8 +6699,8 @@
   },
   "design_key": "BIO12",
   "sheet_pt": [
-   612.0,
-   784.0
+   568.8,
+   777.6
   ],
   "source_pdf": "source_pdfs\\new\\class_12\\biology\\Chapter_11.pdf",
   "ncert_file": null,

@@ -69,6 +69,38 @@ def _is_blank(path):
         return max(ImageStat.Stat(im).stddev) < GROUND_MIN_STDDEV
 
 
+def _is_page_raster(path, rect, prose):
+    """True when a page-sized picture is a RASTER OF THE PAGE ITSELF, text included.
+
+    The Class 11 Physics PDF (Bullzip print of the PageMaker file) places a 2480x3508 picture of
+    the whole printed page -- every line of prose in it -- under the live text on every page.
+    Its box (x 0.04-0.96) is too narrow for a page ground, so it was cut as `header art` and
+    drawn under the text: every line of PHY11L-ch01 printed twice, slightly out of register.
+    Biology's page pictures hold only the page's decoration. So a picture is a page raster when
+    it is INKED where the text layer's prose lines are: sampled at each prose line's box, most
+    lines are darker than the picture's own paper."""
+    if not prose or not rect:
+        return False
+    from PIL import Image, ImageStat
+    with Image.open(path) as im:
+        im = im.convert("L")
+        w, h = im.size
+        rx0, ry0, rx1, ry1 = rect
+        if rx1 <= rx0 or ry1 <= ry0:
+            return False
+        sx, sy = w / (rx1 - rx0), h / (ry1 - ry0)
+        paper = max(ImageStat.Stat(im.resize((64, 64))).extrema[0][1], 1)
+        inked = 0
+        sample = prose[:: max(1, len(prose) // 40)]
+        for x0, y0, x1, y1 in sample:
+            box = (int((x0 - rx0) * sx), int((y0 - ry0) * sy), int((x1 - rx0) * sx), int((y1 - ry0) * sy))
+            if box[0] < 0 or box[1] < 0 or box[2] > w or box[3] > h or box[2] <= box[0] or box[3] <= box[1]:
+                continue
+            if ImageStat.Stat(im.crop(box)).mean[0] < paper * 0.85:
+                inked += 1
+        return inked >= 0.6 * len(sample)
+
+
 def _extract_embedded(doc, page, el, out_path, tol=3.0):
     """Write the page's own embedded image for this element, or return False.
 
@@ -293,6 +325,9 @@ def cut(pdf_path, layout, out_dir, dpi=DPI):
             suffix = "" if seen[kind] == 1 else f"{seen[kind]}"
             name = f"{stem}_{kind}{suffix}.png"
             rect = _extract_embedded(doc, p, el, os.path.join(out_dir, name))
+            if isinstance(rect, tuple) and _is_page_raster(os.path.join(out_dir, name), rect, prose):
+                os.remove(os.path.join(out_dir, name))
+                continue
             if rect or _save(el, name, 0.0):
                 el["furniture_file"] = name
                 written.append(name)
@@ -317,7 +352,7 @@ def cut(pdf_path, layout, out_dir, dpi=DPI):
                 digest = hashlib.sha256(fh.read()).hexdigest()
             # Two full-page grounds share the page's box, so both can match the same image:
             # measured on BIO11L ch01 p001, both pulled xref 66. One picture is drawn once.
-            if _is_blank(path) or digest in cut_grounds:
+            if _is_blank(path) or digest in cut_grounds or _is_page_raster(path, rect, prose):
                 os.remove(path)
                 continue
             cut_grounds[digest] = name

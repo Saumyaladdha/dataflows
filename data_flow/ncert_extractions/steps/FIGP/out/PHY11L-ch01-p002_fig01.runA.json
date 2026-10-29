@@ -1,0 +1,416 @@
+{
+ "spec": {
+  "title": "(a) Plane angle dθ at O subtending arc ds at radius r; (b) solid angle dΩ at O subtending area dA at radius r",
+  "width": 375,
+  "height": 442,
+  "draw": [
+   {
+    "kind": "line",
+    "from": [
+     33,
+     302.5
+    ],
+    "to": [
+     305,
+     302.5
+    ]
+   },
+   {
+    "kind": "line",
+    "from": [
+     33,
+     302.5
+    ],
+    "to": [
+     274,
+     432
+    ]
+   },
+   {
+    "kind": "curve",
+    "points": [
+     [
+      274,
+      432
+     ],
+     [
+      289,
+      426
+     ],
+     [
+      299,
+      418
+     ],
+     [
+      306,
+      410
+     ],
+     [
+      311,
+      402
+     ],
+     [
+      315,
+      394
+     ],
+     [
+      318,
+      386
+     ],
+     [
+      320,
+      378
+     ],
+     [
+      322,
+      366
+     ],
+     [
+      323,
+      354
+     ],
+     [
+      323,
+      346
+     ],
+     [
+      322,
+      338
+     ],
+     [
+      320,
+      330
+     ],
+     [
+      317,
+      322
+     ],
+     [
+      313,
+      314
+     ],
+     [
+      307,
+      306
+     ],
+     [
+      303,
+      302.5
+     ]
+    ]
+   },
+   {
+    "kind": "angle",
+    "vertex": [
+     33,
+     302.5
+    ],
+    "r": 41,
+    "from_deg": 0,
+    "to_deg": 28.3
+   },
+   {
+    "kind": "label",
+    "text": "(a)",
+    "at": [
+     173,
+     252
+    ]
+   },
+   {
+    "kind": "line",
+    "from": [
+     34,
+     158
+    ],
+    "to": [
+     298,
+     268
+    ]
+   },
+   {
+    "kind": "line",
+    "from": [
+     34,
+     158
+    ],
+    "to": [
+     297,
+     159
+    ]
+   },
+   {
+    "kind": "line",
+    "from": [
+     34,
+     158
+    ],
+    "to": [
+     362,
+     136
+    ],
+    "dashed": true
+   },
+   {
+    "kind": "line",
+    "from": [
+     34,
+     158
+    ],
+    "to": [
+     310,
+     63
+    ]
+   },
+   {
+    "kind": "curve",
+    "points": [
+     [
+      298,
+      268
+     ],
+     [
+      299,
+      258
+     ],
+     [
+      300,
+      250
+     ],
+     [
+      303,
+      242
+     ],
+     [
+      305,
+      226
+     ],
+     [
+      306,
+      214
+     ],
+     [
+      305,
+      202
+     ],
+     [
+      304,
+      192
+     ],
+     [
+      302,
+      182
+     ],
+     [
+      300,
+      174
+     ],
+     [
+      298,
+      166
+     ],
+     [
+      297,
+      159
+     ]
+    ]
+   },
+   {
+    "kind": "curve",
+    "points": [
+     [
+      297,
+      159
+     ],
+     [
+      300,
+      150
+     ],
+     [
+      303,
+      142
+     ],
+     [
+      305,
+      134
+     ],
+     [
+      306,
+      130
+     ],
+     [
+      307,
+      122
+     ],
+     [
+      308,
+      114
+     ],
+     [
+      309,
+      106
+     ],
+     [
+      310,
+      94
+     ],
+     [
+      310,
+      78
+     ],
+     [
+      310,
+      63
+     ]
+    ]
+   },
+   {
+    "kind": "curve",
+    "points": [
+     [
+      298,
+      268
+     ],
+     [
+      305,
+      258
+     ],
+     [
+      311,
+      250
+     ],
+     [
+      317,
+      242
+     ],
+     [
+      323,
+      234
+     ],
+     [
+      328,
+      226
+     ],
+     [
+      333,
+      218
+     ],
+     [
+      337,
+      210
+     ],
+     [
+      341,
+      202
+     ],
+     [
+      345,
+      194
+     ],
+     [
+      348,
+      186
+     ],
+     [
+      351,
+      178
+     ],
+     [
+      354,
+      170
+     ],
+     [
+      356,
+      162
+     ],
+     [
+      358,
+      154
+     ],
+     [
+      360,
+      146
+     ],
+     [
+      362,
+      138
+     ],
+     [
+      362,
+      134
+     ],
+     [
+      360,
+      130
+     ],
+     [
+      356,
+      122
+     ],
+     [
+      352,
+      114
+     ],
+     [
+      347,
+      106
+     ],
+     [
+      342,
+      98
+     ],
+     [
+      336,
+      90
+     ],
+     [
+      329,
+      82
+     ],
+     [
+      321,
+      74
+     ],
+     [
+      311,
+      64
+     ]
+    ]
+   },
+   {
+    "kind": "polygon",
+    "points": [
+     [
+      116,
+      192
+     ],
+     [
+      131,
+      158.5
+     ],
+     [
+      109,
+      133
+     ],
+     [
+      98,
+      153
+     ]
+    ]
+   },
+   {
+    "kind": "label",
+    "text": "(b)",
+    "at": [
+     177,
+     20
+    ]
+   }
+  ],
+  "angles_claimed": []
+ },
+ "out_of_scope": false,
+ "unreadable": [],
+ "excluded_text": [],
+ "note": "The checker reports the PDF text layer has only (a) and (b); the labels O, r, ds, dθ, dΩ, dA and the two formulas (dθ = ds/r radian, dΩ = dA/r² steradian) are visible in the printed image but are rejected as 'labels the print does not have' (likely outlined glyphs in the vector drawing), so they are not drawn as labels. Angle dθ is symbolic (no degree value), so none is claimed; its arc follows the printed ray at 28.3 deg."
+}

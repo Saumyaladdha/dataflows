@@ -348,6 +348,19 @@ def _cover(a, b):
     return ix * iy / area
 
 
+def _flatten_latex(tex):
+    """`= (\\pm 0.01/9.89) \\times 100 \\% \\\\ = \\pm 0.1 \\%` -> `= (± 0.01/9.89) × 100 % = ± 0.1 %`."""
+    t = tex or ""
+    for a, b in (("\\pm", "±"), ("\\times", "×"), ("\\%", "%"), ("\\\\", " "), ("\\,", " "),
+                 ("\\ ", " "), ("\\cdot", "·"), ("\\pi", "π"), ("&", "")):
+        t = t.replace(a, b)
+    t = re.sub(r"\\frac\{([^{}]*)\}\{([^{}]*)\}", r"\1/\2", t)
+    t = re.sub(r"\\(?:text|mathrm|mathbf|left|right)\b", "", t)
+    t = re.sub(r"\\begin\{[a-z*]+\}|\\end\{[a-z*]+\}", "", t)
+    t = re.sub(r"[{}]", "", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
 def apply_agent_special(layout, chapter, steps_dir="steps"):
     """Merge A2S transcriptions into `layout`, in place. Returns counts."""
     stats = {"files": 0, "tables": 0, "equations": 0, "figures": 0, "unmatched": 0}
@@ -390,6 +403,18 @@ def apply_agent_special(layout, chapter, steps_dir="steps"):
                 pool = [e for e in page["elements_in_reading_order"]
                         if id(e) not in claimed and e.get("bbox_pt")
                         and (e["role"] == want or (kind == "table" and e["role"] == "figure"))]
+                # AN EQUATION NEVER TAKES A2's PROSE. PHY11L ch01 p006's 9.89 g equation covered
+                # the sentence `Similarly, the relative error in 9.89 g is` best and replaced it;
+                # its own line was the layer's `= (± 0.01/9.89) ...`. (Unmeasured books only.)
+                import book_design
+                if kind == "equation" and not book_design.is_measured(chapter.split("-ch")[0]):
+                    pool = [e for e in pool if e.get("text_source") != "a2-agent"]
+                    # ...nor a gathered copy that still holds prose (`the relative error in
+                    # 9.89 g = ...`): the equation's own line has no words of four letters
+                    bare = [e for e in pool
+                            if len(re.findall(r"[A-Za-z]{4,}", e.get("text") or "")) < 2]
+                    if any(_cover(e["bbox_pt"], box) >= 0.3 for e in bare):
+                        pool = bare
                 scored = sorted(((_cover(e["bbox_pt"], box), k) for k, e in enumerate(pool)),
                                 reverse=True)
                 target = pool[scored[0][1]] if scored and scored[0][0] >= 0.3 else None
@@ -402,6 +427,32 @@ def apply_agent_special(layout, chapter, steps_dir="steps"):
             stats["unmatched"] += 1
             continue
         claimed.add(id(target))
+        # AN EQUATION SITS IN ITS OWN BOX. A gathered copy carrying prose (`the relative error in
+        # 9.89 g = ...`, PHY11L ch01 p006) spans the sentence above it, and the typeset equation
+        # was drawn over that sentence. It takes A2's measured equation box. (Unmeasured books.)
+        import book_design
+        if (kind == "equation" and not book_design.is_measured(chapter.split("-ch")[0])
+                and len(re.findall(r"[A-Za-z]{4,}", target.get("text") or "")) >= 2):
+            eb = _a2_block_box(chapter, page_no, block_n, steps_dir)
+            # A2's box is an estimate: it started 5pt inside the sentence above it. The equation
+            # begins under any A2 prose line it overlaps from above.
+            for o in page["elements_in_reading_order"] if eb else []:
+                ob = o.get("bbox_pt")
+                if (o is not target and ob and o.get("text_source") == "a2-agent"
+                        and min(ob[2], eb[2]) - max(ob[0], eb[0]) > 0
+                        and ob[1] < eb[1] < ob[3] < eb[3]):
+                    h = eb[3] - eb[1]
+                    eb = [eb[0], ob[3] + 1.0, eb[2], ob[3] + 1.0 + h]
+            if eb and page.get("page_width_pt"):
+                pw, ph = page["page_width_pt"], page["page_height_pt"]
+                sw, sh = page.get("sheet_pt") or (pw, ph)
+                dx, dy = page.get("sheet_offset_pt") or (0.0, 0.0)
+                target["bbox_pt"] = list(eb)
+                target["bbox"] = [round(eb[0] / pw, 4), round(eb[1] / ph, 4),
+                                  round(eb[2] / pw, 4), round(eb[3] / ph, 4)]
+                target["bbox_sheet"] = [round((eb[0] + dx) / sw, 4), round((eb[1] + dy) / sh, 4),
+                                        round((eb[2] + dx) / sw, 4), round((eb[3] + dy) / sh, 4)]
+                target.pop("line_boxes_pt", None)
 
         if kind == "table":
             header = sp.get("header") or []
@@ -469,6 +520,14 @@ def apply_agent_special(layout, chapter, steps_dir="steps"):
                 # sign gone, every subscript on the line and the superior-ovary underline lost.
                 target["text"] = "".join(r["t"] for r in shown)
                 target["runs"] = shown
+                target["text_source"] = "a2s-agent"
+            elif not book_design.is_measured(chapter.split("-ch")[0]):
+                # Multi-line LaTeX (`\\`) gives no runs, and the node kept whatever text it had
+                # -- `the relative error in 9.89 g` for the 9.89 g equation (PHY11L ch01 p006).
+                # Its text is the equation, flattened.
+                flat = _flatten_latex(sp["latex"])
+                target["text"] = flat
+                target["runs"] = [dict((target.get("runs") or [{}])[0], t=flat)]
                 target["text_source"] = "a2s-agent"
             stats["equations"] += 1
         elif kind == "figure":

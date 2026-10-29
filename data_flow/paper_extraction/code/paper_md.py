@@ -23,9 +23,10 @@ def _drawn(fig):
     drawn = fig.get("drawn") or {}
     if drawn.get("status") != "drawn" or not drawn.get("image"):
         return ""
-    how = ("drawn on the booklet's geometry, checked against its %s"
-           % ("SMILES" if drawn.get("method") == "smiles" else "figure spec")
-           if drawn.get("layout") == "booklet" else "drawn by %s" % drawn.get("renderer"))
+    how = ("drawn on the booklet's geometry%s, checked against its %s"
+           % (" (traced from the printed picture)" if drawn.get("layout") == "traced" else "",
+              "SMILES" if drawn.get("method") == "smiles" else "figure spec")
+           if drawn.get("layout") in ("booklet", "traced") else "drawn by %s" % drawn.get("renderer"))
     return "%s  \n*%s*" % (_img(drawn["image"], "drawn: %s" % (fig.get("text") or fig["id"])), how)
 
 

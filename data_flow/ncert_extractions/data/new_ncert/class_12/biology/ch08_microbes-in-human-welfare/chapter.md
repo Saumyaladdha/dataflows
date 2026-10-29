@@ -17,17 +17,15 @@ Besides macroscopic plants and animals, microbes are the major components of bio
 
 Microbes like bacteria and many fungi can be grown on nutritive media to form colonies (Figure 8.3), that can be seen with the naked eyes. Such cultures are useful in studies on micro-organisms.
 
-![](figures/p150_fig01.png)
-
-![Figure 8.2 Viruses: (a) A bacteriophage; (b) Adenovirus which causes respiratory infections; (c) Rod-shaped Tobacco Mosaic Virus (TMV). Magnified about 1,00,000–1,50,000X](figures/p150_fig02.png)
-
-**Figure 8.2** Viruses: (a) A bacteriophage; (b) Adenovirus which causes respiratory infections; (c) Rod-shaped Tobacco Mosaic Virus (TMV). Magnified about 1,00,000–1,50,000X
-
-![Figure 8.1 Bacteria: (a) Rod-shaped, magnified 1500X; (b) Spherical shaped, magnified1500X; (c) A rod-shaped bacterium showing flagella, magnified 50,000X](figures/p150_fig03.png)
+![Figure 8.1 Bacteria: (a) Rod-shaped, magnified 1500X; (b) Spherical shaped, magnified1500X; (c) A rod-shaped bacterium showing flagella, magnified 50,000X](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch08/p150_fig01_27102026.png)
 
 **Figure 8.1** Bacteria: (a) Rod-shaped, magnified 1500X; (b) Spherical shaped, magnified1500X; (c) A rod-shaped bacterium showing flagella, magnified 50,000X
 
-![Figure 8.3 (a) Colonies of bacteria growing in a petri dish; (b) Fungal colony growing in a petri dish](figures/p150_fig04.png)
+![Figure 8.2 Viruses: (a) A bacteriophage; (b) Adenovirus which causes respiratory infections; (c) Rod-shaped Tobacco Mosaic Virus (TMV). Magnified about 1,00,000–1,50,000X](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch08/p150_fig02_27102026.png)
+
+**Figure 8.2** Viruses: (a) A bacteriophage; (b) Adenovirus which causes respiratory infections; (c) Rod-shaped Tobacco Mosaic Virus (TMV). Magnified about 1,00,000–1,50,000X
+
+![Figure 8.3 (a) Colonies of bacteria growing in a petri dish; (b) Fungal colony growing in a petri dish](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch08/p150_fig04_27102026.png)
 
 **Figure 8.3** (a) Colonies of bacteria growing in a petri dish; (b) Fungal colony growing in a petri dish
 
@@ -37,13 +35,13 @@ In chapter 7, you have read that microbes cause a large number of diseases in hu
 
 You would be surprised to know that we use microbes or products derived from them everyday. A common example is the production of curd from milk. Micro-organisms such as *Lactobacillus* and others commonly called **lactic acid bacteria (LAB)** grow in milk and convert it to curd. During growth, the LAB produce acids that coagulate and partially digest the milk proteins. A small amount of curd added to the fresh milk as inoculum or starter contain millions of LAB, which at suitable temperatures multiply, thus converting milk to curd, which also improves its nutritional quality by increasing vitamin B<sub>12</sub>. In our stomach too, the LAB play very beneficial role in checking disease-causing microbes.
 
-The dough, which is used for making foods such as *dosa* and *idli* is also fermented by bacteria. The puffed-up appearance of dough is due to the production of CO<sub>2</sub> gas. *Can you tell which metabolic pathway is taking place resulting in the formation of CO**<sub>2</sub>**? Where do you think the bacteria for these fermentations come from?* Similarly the dough, which is used for making bread, is fermented using baker’s yeast (*Saccharomyces cerevisiae*). A number of traditional drinks and foods are also made by fermentation by the microbes. ‘Toddy’, a traditional drink of some parts of southern India is made by fermenting sap from palms. Microbes are also used to ferment fish, soyabean and bamboo-shoots to make foods. Cheese, is one of the oldest food items in which microbes were used. Different varieties of cheese are known by their characteristic texture, flavour and taste, the specificity coming from the microbes used. For example, the large holes in ‘Swiss cheese’ are due to production of a large amount of CO<sub>2</sub> by a bacterium named *Propionibacterium sharmanii*. The ‘Roquefort cheese’ are ripened by growing a specific fungi on them, which gives them a particular flavour.
+The dough, which is used for making foods such as *dosa* and *idli* is also fermented by bacteria. The puffed-up appearance of dough is due to the production of CO<sub>2</sub> gas. *Can you tell which metabolic pathway is taking place resulting in the formation of CO<sub>2</sub>? Where do you think the bacteria for these fermentations come from?* Similarly the dough, which is used for making bread, is fermented using baker’s yeast (*Saccharomyces cerevisiae*). A number of traditional drinks and foods are also made by fermentation by the microbes. ‘Toddy’, a traditional drink of some parts of southern India is made by fermenting sap from palms. Microbes are also used to ferment fish, soyabean and bamboo-shoots to make foods. Cheese, is one of the oldest food items in which microbes were used. Different varieties of cheese are known by their characteristic texture, flavour and taste, the specificity coming from the microbes used. For example, the large holes in ‘Swiss cheese’ are due to production of a large amount of CO<sub>2</sub> by a bacterium named *Propionibacterium sharmanii*. The ‘Roquefort cheese’ are ripened by growing a specific fungi on them, which gives them a particular flavour.
 
 ## 8.2 Microbes in Industrial Products
 
 Even in industry, microbes are used to synthesise a number of products valuable to human beings. Beverages and antibiotics are some examples. Production on an industrial scale, requires growing microbes in very large vessels called **fermentors** (Figure 8.4).
 
-![Figure 8.4 Fermentors](figures/p152_fig01.png)
+![Figure 8.4 Fermentors](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch08/p152_fig01_27102026.png)
 
 **Figure 8.4** Fermentors
 
@@ -51,7 +49,7 @@ Even in industry, microbes are used to synthesise a number of products valuable 
 
 Microbes especially yeasts have been used from time immemorial for the production of beverages like wine, beer, whisky, brandy or rum. For this purpose the same yeast *Saccharomyces cerevisiae* used for bread-making and commonly called brewer’s yeast, is used for fermenting malted cereals and fruit juices, to produce ethanol. *Do you recollect the metabolic reactions, which result in the production of ethanol by yeast?* Depending on the type of the raw material used for fermentation and the type of processing (with or without distillation) different types of alcoholic drinks are obtained. Wine and beer are produced without distillation whereas whisky, brandy and rum are produced by distillation of the fermented broth. The photograph of a fermentation plant is shown in Figure 8.5.
 
-![Figure 8.5 Fermentation Plant](figures/p152_fig02.png)
+![Figure 8.5 Fermentation Plant](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch08/p152_fig02_27102026.png)
 
 **Figure 8.5** Fermentation Plant
 
@@ -75,7 +73,7 @@ Another bioactive molecule, cyclosporin A, that is used as an immunosuppressive 
 
 We know that large quantities of waste water are generated everyday in cities and towns. A major component of this waste water is human excreta. This municipal waste-water is also called sewage. It contains large amounts of organic matter and microbes. Many of which are pathogenic. Have you ever wondered where this huge quantity of sewage or urban waste water is disposed off daily? This cannot be discharged into natural water bodies like rivers and streams directly – you can understand why. Before disposal, hence, sewage is treated in sewage treatment plants (STPs) to make it less polluting. Treatment of waste water is done by the heterotrophic microbes naturally present in the sewage. This treatment is carried out in two stages:
 
-![Figure 8.6 Secondary treatment](figures/p154_fig01.png)
+![Figure 8.6 Secondary treatment](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch08/p154_fig01_27102026.png)
 
 **Figure 8.6** Secondary treatment
 
@@ -87,7 +85,7 @@ Once the BOD of sewage or waste water is reduced significantly, the effluent is 
 
 The effluent from the secondary treatment plant is generally released into natural water bodies like rivers and streams. An aerial view of such a plant is shown in Figure 8.7.
 
-![Figure 8.7 An aerial view of a sewage plant](figures/p155_fig01.png)
+![Figure 8.7 An aerial view of a sewage plant](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch08/p155_fig01_27102026.png)
 
 **Figure 8.7** An aerial view of a sewage plant
 
@@ -103,7 +101,7 @@ Biogas is a mixture of gases (containing predominantly methane) produced by the 
 
 The biogas plant consists of a concrete tank (10-15 feet deep) in which bio-wastes are collected and a slurry of dung is fed. A floating cover is placed over the slurry, which keeps on rising as the gas is produced in the tank due to the microbial activity. The biogas plant has an outlet, which is connected to a pipe to supply biogas to nearby houses. The spent slurry is removed through another outlet and may be used as fertiliser. Cattle dung is available in large quantities in rural areas where cattle are used for a variety of purposes. So biogas plants are more often built in rural areas. The biogas thus produced is used for cooking and lighting. The picture of a biogas plant is shown in Figure 8.8. The technology of biogas production was developed in India mainly due to the efforts of Indian Agricultural Research Institute (IARI) and Khadi and Village Industries Commission (KVIC). If your school is situated in a village or near a village, it would be very interesting to enquire if there are any biogas plants nearby. Visit the biogas plant and learn more about it from the people who are actually managing it.
 
-![Figure 8.8 A typical biogas plant](figures/p156_fig01.png)
+![Figure 8.8 A typical biogas plant](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch08/p156_fig01_27102026.png)
 
 **Figure 8.8** A typical biogas plant
 

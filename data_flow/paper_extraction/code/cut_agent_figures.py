@@ -68,6 +68,108 @@ SOLUTION_SLACK_PX = 45.0
 FIGURE_PAD_PX = 16.0
 
 
+#: A text line counts as PROSE (and is trimmed off a figure crop's edge) when it has at least this
+#: many words. Labels set beside a drawing -- `T2`, `NO2`, `+6 V` -- are one or two words, and the
+#: padding above exists to keep exactly those, so they are never trimmed.
+PROSE_LINE_WORDS = 3
+_PAGE_WORDS = {}
+
+
+def _prose_lines(source, page, dpi):
+    """[(x0, y0, x1, y1)] of every prose line on a page, in crop pixels, measured from its WORDS.
+    The line bbox itself is not used: a maths glyph can stretch it -- 2020_F1 page 51's stem line
+    reports 310px tall."""
+    key = (source, page)
+    if key not in _PAGE_WORDS:
+        import pymupdf
+        scale = dpi / 72.0
+        lines = collections.defaultdict(list)
+        with pymupdf.open(source) as doc:
+            for x0, y0, x1, y1, word, block, line, _n in doc[page].get_text("words"):
+                lines[(block, line)].append((x0 * scale, y0 * scale, x1 * scale, y1 * scale, word))
+        prose = []
+        for ws in lines.values():
+            if len(ws) < PROSE_LINE_WORDS:
+                continue
+            # ...and it must READ as prose: two ordinary words of three letters or more. A reagent
+            # line under an arrow -- 2018_AA q052's "(ii) H3O+ / Δ" -- has three PDF words and none
+            # of them is English; trimming it cut the reagent off the scheme.
+            if sum(1 for w in ws if re.fullmatch(r"[A-Za-z]{3,}", w[4].strip(".,;:?!()'\""))) < 2:
+                continue
+            # The line's height comes from its ordinary words only. A maths glyph's box can be many
+            # times taller: q112's `(ρ)` reaches 300px down into the graph below it, and trimming to
+            # that cut the top off the option-1 graph.
+            heights = sorted(w[3] - w[1] for w in ws)
+            normal = [w for w in ws if w[3] - w[1] <= 1.5 * heights[len(heights) // 2]]
+            prose.append((min(w[0] for w in ws), min(w[1] for w in normal),
+                          max(w[2] for w in ws), max(w[3] for w in normal)))
+        _PAGE_WORDS[key] = prose
+    return _PAGE_WORDS[key]
+
+
+def clear_of_prose(box, raw, source, page, dpi):
+    """`box` (the padded crop) with its top and bottom pulled off any prose line that lies mostly
+    OUTSIDE the agent's own box `raw`. 2020_F1 q103's resistor crop carried the bottom half of its
+    stem line "The color code of a resistance is given below", and q112 option 1 a slice of the
+    stem above the graph: the agent's box ended a few pixels into the line and the padding took in
+    the rest. Never trims a crop below half the agent's height."""
+    top, bottom = box[1], box[3]
+    for x0, y0, x1, y1 in _prose_lines(source, page, dpi):
+        if x1 <= box[0] or x0 >= box[2] or y1 <= top or y0 >= bottom:
+            continue
+        inside = max(0.0, min(y1, raw[3]) - max(y0, raw[1]))
+        if inside >= 0.5 * (y1 - y0):
+            continue                      # mostly inside the agent's box: part of the figure
+        if (y0 + y1) / 2 < (raw[1] + raw[3]) / 2:
+            top = max(top, y1 + 1)
+        else:
+            bottom = min(bottom, y0 - 1)
+    # ...and off any line of three or more words that the agent's box does not touch at all and the
+    # PADDING slices through. 2015_A q001's option-3 crop carried the top of option 4's
+    # "(CH3)3C − CH = CH2": not prose, so the rule above kept it, but a line cut part-way is never
+    # part of a figure. A label (one or two words) and any line the agent's own box reaches -- 2018_AA
+    # q052's "(ii) H3O+ / Δ" under its arrow -- are left alone.
+    for x0, y0, x1, y1, words in _word_lines(source, page, dpi):
+        if words < PROSE_LINE_WORDS or x1 <= box[0] or x0 >= box[2] or y1 <= y0:
+            continue
+        if min(y1, raw[3]) > max(y0, raw[1]):
+            continue                      # the agent's own box reaches it
+        inside = max(0.0, min(y1, bottom) - max(y0, top))
+        if not 0.0 < inside < (y1 - y0):
+            continue                      # wholly in or wholly out: not sliced
+        if y1 <= raw[1]:
+            top = max(top, y1 + 1)
+        elif y0 >= raw[3]:
+            bottom = min(bottom, y0 - 1)
+    if bottom - top < 0.5 * (raw[3] - raw[1]):
+        return box
+    return [box[0], top, box[2], bottom]
+
+
+_PAGE_LINES = {}
+
+
+def _word_lines(source, page, dpi):
+    """[(x0, y0, x1, y1, words)] of EVERY text line on a page, in crop pixels; the height comes from
+    the line's ordinary-height words, as in _prose_lines."""
+    key = (source, page)
+    if key not in _PAGE_LINES:
+        import pymupdf
+        scale = dpi / 72.0
+        lines = collections.defaultdict(list)
+        with pymupdf.open(source) as doc:
+            for x0, y0, x1, y1, _word, block, line, _n in doc[page].get_text("words"):
+                lines[(block, line)].append((x0 * scale, y0 * scale, x1 * scale, y1 * scale))
+        out = []
+        for ws in lines.values():
+            heights = sorted(w[3] - w[1] for w in ws)
+            normal = [w for w in ws if w[3] - w[1] <= 1.5 * heights[len(heights) // 2]]
+            out.append((min(w[0] for w in ws), min(w[1] for w in normal),
+                        max(w[2] for w in ws), max(w[3] for w in normal), len(ws)))
+        _PAGE_LINES[key] = out
+    return _PAGE_LINES[key]
+
+
 def within(box, part_box):
     """`box` clipped to the question part it was measured in. The padding must never reach past the
     question's own crop, which stops at the printed answer line: unclipped, 2017 Code-A q55's padded
@@ -81,8 +183,8 @@ def within(box, part_box):
 SOLUTION_LINE = re.compile(r"^\s*(Answer\s*[:(]|Sol\b|Solution\s*[:(])", re.I)
 
 
-def anchor(parts, box_top):
-    """(part, offset_y) for the stitched part a crop-space y falls in.
+def anchor(parts, box_top, box_bottom=None):
+    """(part, offset_y) for the stitched part a crop-space box falls in.
 
     A question crop can be STITCHED from two parts -- 55 of 2015_A's 177 questions span a page break.
     Part 1 is only the top of that image, so a y below its height belongs to part 2 on the NEXT
@@ -92,14 +194,23 @@ def anchor(parts, box_top):
     prints options 1-2 on page 15 and options 3-4 on page 16; re-using the figure's page-15 offset
     for all four pushed options 3 and 4 several hundred pixels past the bottom of page 15, where
     they intersected nothing and were dropped -- while the counter still claimed four crops.
+
+    Given the box's bottom too, a box that STRADDLES a break goes to the part holding most of it, not
+    the part its top edge is in. 2020 Code-F1 q112's option-4 graph was boxed from 3px above the
+    break; anchored by its top, it was cut as the 19px blank strip left at the foot of page 51.
     """
     part, offset_y = parts[0], 0.0
+    best, best_overlap = None, -1.0
     for candidate in parts:
         height = candidate["bbox"][3] - candidate["bbox"][1]
-        if box_top < offset_y + height or candidate is parts[-1]:
+        if box_bottom is not None:
+            overlap = min(box_bottom, offset_y + height) - max(box_top, offset_y)
+            if overlap > best_overlap:
+                best, best_overlap = (candidate, offset_y), overlap
+        elif box_top < offset_y + height or candidate is parts[-1]:
             return candidate, offset_y
         offset_y += height + STITCH_GAP_PX
-    return part, offset_y
+    return best or (part, offset_y)
 
 
 #: The white gap extract_paper_v2.stitch_vertical() leaves between stitched parts. anchor() once
@@ -114,7 +225,7 @@ def to_page(parts, box):
     the width of the widest, so a narrower part sits shifted right in the stitched image. Both shifts
     are undone here; the old arithmetic undid neither.
     """
-    part, offset_y = anchor(parts, box[1])
+    part, offset_y = anchor(parts, box[1], box[3])
     widest = max(p["bbox"][2] - p["bbox"][0] for p in parts)
     shift_x = (int(round(widest)) - int(round(part["bbox"][2] - part["bbox"][0]))) // 2
     dx = part["bbox"][0] - shift_x
@@ -240,6 +351,8 @@ def main():
             option_page = within([raw_option[0] - FIGURE_PAD_PX, raw_option[1] - FIGURE_PAD_PX,
                                   raw_option[2] + FIGURE_PAD_PX, raw_option[3] + FIGURE_PAD_PX],
                                  option_part["bbox"])
+            option_page = clear_of_prose(option_page, raw_option, source, option_part["page"],
+                                         paper["meta"]["dpi"])
             option_cut = solution_after(solution_y, option_part["page"], option_part["bbox"][1],
                                         (option_part["bbox"][0], option_part["bbox"][2]))
             if option_cut is not None and option_page[1] >= option_cut - SOLUTION_SLACK_PX:
@@ -308,6 +421,7 @@ def main():
         part, raw_box = to_page(parts, bbox)
         page_box = within([raw_box[0] - FIGURE_PAD_PX, raw_box[1] - FIGURE_PAD_PX,
                            raw_box[2] + FIGURE_PAD_PX, raw_box[3] + FIGURE_PAD_PX], part["bbox"])
+        page_box = clear_of_prose(page_box, raw_box, source, part["page"], paper["meta"]["dpi"])
         # IS THIS THE QUESTION'S FIGURE, OR THE SOLUTION'S? Measured, not assumed. A box whose top
         # sits at or below the `Answer`/`Sol.` line on the same page belongs to the worked solution,
         # and presenting it as the question's figure shows a reader the answer's own working.
@@ -374,6 +488,8 @@ def main():
             sol_page = within([raw_sol[0] - FIGURE_PAD_PX, raw_sol[1] - FIGURE_PAD_PX,
                                raw_sol[2] + FIGURE_PAD_PX, raw_sol[3] + FIGURE_PAD_PX],
                               sol_part["bbox"])
+            sol_page = clear_of_prose(sol_page, raw_sol, source, sol_part["page"],
+                                      paper["meta"]["dpi"])
             rel = os.path.join("figures_agent", args.paper_id,
                                "q%03d_sol_%d.png" % (question["qno"], n))
             jobs.append((sol_part["page"] + 1, sol_page, os.path.join(rc.pp(*CORPUS), rel)))
@@ -413,7 +529,9 @@ def main():
         import extract_paper_v2 as extractor
         with pymupdf.open(source) as doc:
             furniture = extractor.document_furniture(doc)   # watermark and logos: never in a crop
-        lib_pdf.crop_boxes(source, jobs, dpi=paper["meta"]["dpi"], unit="px", hide_xrefs=furniture)
+            marks = extractor.document_vector_marks(doc)     # ...nor its pieces drawn as vectors
+        lib_pdf.crop_boxes(source, jobs, dpi=paper["meta"]["dpi"], unit="px", hide_xrefs=furniture,
+                           hide_marks=marks)
         print("cut %d figure crop(s) into papers_v2/figures_agent/%s/" % (len(jobs), args.paper_id))
     with open(paper_path, "w", encoding="utf-8") as fh:
         json.dump(paper, fh, ensure_ascii=False, indent=1)

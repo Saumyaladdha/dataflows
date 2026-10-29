@@ -12,7 +12,7 @@ Ever since the days of Rene Descartes, the French philosopher, mathematician and
 
 Herbert Boyer was born in 1936 and brought up in a corner of western Pennsylvania where railroads and mines were the destiny of most young men. He completed graduate work at the University of Pittsburgh, in 1963, followed by three years of post-graduate studies at Yale.
 
-![HERBERT BOYER (1936 )](figures/i002_fig01.png)
+![HERBERT BOYER (1936 )](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch09/i002_fig01_27102026.png)
 
 HERBERT BOYER (1936 )
 
@@ -71,13 +71,13 @@ Restriction enzymes belong to a larger class of enzymes called **nucleases**. Th
 
 Each restriction endonuclease functions by ‘inspecting’ the length of a DNA sequence. Once it finds its specific recognition sequence, it will bind to the DNA and cut each of the two strands of the double helix at specific points in their sugar-phosphate backbones (Figure 9.1). Each restriction endonuclease recognises a specific **palindromic nucleotide sequences** in the DNA.
 
-![Figure 9.1 Steps in formation of recombinant DNA by action of restriction endonuclease enzyme - EcoRI](figures/p166_fig01.png)
+![Figure 9.1 Steps in formation of recombinant DNA by action of restriction endonuclease enzyme - EcoRI](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch09/p166_fig01_27102026.png)
 
 **Figure 9.1** Steps in formation of recombinant DNA by action of restriction endonuclease enzyme - EcoRI
 
 Do you know what palindromes are? These are groups of letters that form the same words when read both forward and backward, e.g., “MALAYALAM”. As against a word-palindrome where the same word is read in both directions, the palindrome in DNA is a sequence of base pairs that reads same on the two strands when orientation of reading is kept the same. For example, the following sequences reads the same on the two strands in 5′ → 3′ direction. This is also true if read in the 3′ → 5′ direction.
 
-5*<sup>'</sup>* —— GAATTC —— 3*<sup>'</sup>* 3*<sup>'</sup>* —— CTTAAG —— 5*<sup>'</sup>*
+5′ —— GAATTC —— 3′ 3′ —— CTTAAG —— 5′
 
 Restriction enzymes cut the strand of DNA a little away from the centre of the palindrome sites, but between the same two bases on the opposite strands. This leaves single stranded portions at the ends. There are overhanging stretches called sticky ends on each strand (Figure 9.1). These are named so because they form hydrogen bonds with their complementary cut counterparts. This stickiness of the ends facilitates the action of the enzyme DNA ligase.
 
@@ -85,7 +85,7 @@ Restriction endonucleases are used in genetic engineering to form ‘recombinant
 
 When cut by the same restriction enzyme, the resultant DNA fragments have the same kind of ‘sticky-ends’ and, these can be joined together (end-to-end) using DNA ligases (Figure 9.2).
 
-![Figure 9.2 Diagrammatic representation of recombinant DNA technology](figures/p167_fig01.png)
+![Figure 9.2 Diagrammatic representation of recombinant DNA technology](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch09/p167_fig01_27102026.png)
 
 **Figure 9.2** Diagrammatic representation of recombinant DNA technology
 
@@ -95,7 +95,7 @@ You may have realised that normally, unless one cuts the vector and the source D
 
 The separated DNA fragments can be visualised only after staining the DNA with a compound known as ethidium bromide followed by exposure to UV radiation (you cannot see pure DNA fragments in the visible light and without staining). You can see bright orange coloured bands of DNA in a ethidium bromide stained gel exposed to UV light (Figure 9.3). The separated bands of DNA are cut out from the agarose gel and extracted from the gel piece. This step is known as elution. The DNA fragments purified in this way are used in constructing recombinant DNA by joining them with cloning vectors.
 
-![Figure 9.3 A typical agarose gel electrophoresis showing migration of undigested (lane 1) and digested set of DNA fragments (lane 2 to 4)](figures/p168_fig01.png)
+![Figure 9.3 A typical agarose gel electrophoresis showing migration of undigested (lane 1) and digested set of DNA fragments (lane 2 to 4)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch09/p168_fig01_27102026.png)
 
 **Figure 9.3** A typical agarose gel electrophoresis showing migration of undigested (lane 1) and digested set of DNA fragments (lane 2 to 4)
 
@@ -107,9 +107,9 @@ The following are the features that are required to facilitate cloning into a ve
 
 - (i) ***Origin of replication (ori)*** : This is a sequence from where replication starts and any piece of DNA when linked to this sequence can be made to replicate within the host cells. This sequence is also responsible for controlling the copy number of the linked DNA. So, if one wants to recover many copies of the target DNA it should be cloned in a vector whose origin support high copy number.
 - (ii) ***Selectable marker*** : In addition to ‘ori’, the vector requires a selectable marker, which helps in identifying and eliminating non-transformants and selectively permitting the growth of the transformants. **Transformation** is a procedure through which a piece of DNA is introduced in a host bacterium (you will study the process in subsequent section). Normally, the genes encoding resistance to antibiotics such as ampicillin, chloramphenicol, tetracycline or kanamycin, etc., are considered useful selectable markers for *E. coli*. The normal *E. coli* cells do not carry resistance against any of these antibiotics.
-- (iii) ***Cloning sites***: In order to link the alien DNA, the vector needs to have very few, preferably single, **recognition sites** for the commonly used restriction enzymes. Presence of more than one recognition sites within the vector will generate several fragments, which will complicate the gene cloning (**Figure 9.4**). The ligation of alien DNA is carried out at a restriction site present in one of the two **antibiotic resistance** genes. For example, you can ligate a foreign DNA at the BamH I site of tetracycline resistance gene in the vector pBR322. The recombinant plasmids will lose tetracycline resistance due to insertion of foreign DNA but can still be selected out from non-recombinant ones by plating the transformants on ampicillin containing medium. The transformants growing on ampicillin containing medium are then transferred on a medium containing tetracycline. The recombinants will grow in ampicillin containing medium but not on that containing tetracycline. But, non-recombinants will grow on the medium containing both the antibiotics. In this case, one antibiotic resistance gene helps in selecting the transformants, whereas the other antibiotic resistance
+- (iii) ***Cloning sites***: In order to link the alien DNA, the vector needs to have very few, preferably single, **recognition sites** for the commonly used restriction enzymes. Presence of more than one recognition sites within the vector will generate several fragments, which will complicate the gene cloning (Figure 9.4). The ligation of alien DNA is carried out at a restriction site present in one of the two **antibiotic resistance** genes. For example, you can ligate a foreign DNA at the BamH I site of tetracycline resistance gene in the vector pBR322. The recombinant plasmids will lose tetracycline resistance due to insertion of foreign DNA but can still be selected out from non-recombinant ones by plating the transformants on ampicillin containing medium. The transformants growing on ampicillin containing medium are then transferred on a medium containing tetracycline. The recombinants will grow in ampicillin containing medium but not on that containing tetracycline. But, non-recombinants will grow on the medium containing both the antibiotics. In this case, one antibiotic resistance gene helps in selecting the transformants, whereas the other antibiotic resistance
 
-![Figure 9.4 E. coli cloning vector pBR322 showing restriction sites (Hind III, EcoR I, BamH I, Sal I, Pvu II, Pst I, Cla I), ori and antibiotic resistance genes (ampᴿ and tetᴿ). rop codes for the proteins involved in the replication of the plasmid.](figures/p169_fig01.png)
+![Figure 9.4 E. coli cloning vector pBR322 showing restriction sites (Hind III, EcoR I, BamH I, Sal I, Pvu II, Pst I, Cla I), ori and antibiotic resistance genes (ampᴿ and tetᴿ). rop codes for the proteins involved in the replication of the plasmid.](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch09/p169_fig01_27102026.png)
 
 **Figure 9.4** *E. coli* cloning vector pBR322 showing restriction sites (*Hind* III, *Eco*R I, *Bam*H I, *Sa*l I, *Pvu* II, *Pst* I, *Cla* I), ori and antibiotic resistance genes (ampᴿ and tetᴿ). rop codes for the proteins involved in the replication of the plasmid.
 
@@ -135,7 +135,7 @@ Recombinant DNA technology involves several steps in specific sequence such as i
 
 Recall that nucleic acid is the genetic material of all organisms without exception. In majority of organisms this is deoxyribonucleic acid or DNA. In order to cut the DNA with restriction enzymes, it needs to be in pure form, free from other macro-molecules. Since the DNA is enclosed within the membranes, we have to break the cell open to release DNA along with other macromolecules such as RNA, proteins, polysaccharides and also lipids. This can be achieved by treating the bacterial cells/plant or animal tissue with enzymes such as **lysozyme** (bacteria), **cellulase** (plant cells), **chitinase** (fungus). You know that genes are located on long molecules of DNA interwined with proteins such as histones. The RNA can be removed by treatment with ribonuclease whereas proteins can be removed by treatment with protease. Other molecules can be removed by appropriate treatments and purified DNA ultimately precipitates out after the addition of chilled ethanol. This can be seen as collection of fine threads in the suspension (Figure 9.5).
 
-![Figure 9.5 DNA that separates out can be removed by spooling](figures/p171_fig01.png)
+![Figure 9.5 DNA that separates out can be removed by spooling](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch09/p171_fig01_27102026.png)
 
 **Figure 9.5** DNA that separates out can be removed by spooling
 
@@ -149,7 +149,7 @@ The joining of DNA involves several processes. After having cut the source DNA a
 
 PCR stands for **Polymerase Chain Reaction**. In this reaction, multiple copies of the gene (or DNA) of interest is synthesised *in vitro* using two sets of primers (small chemically synthesised oligonucleotides that are complementary to the regions of DNA) and the enzyme DNA polymerase. The enzyme extends the primers using the nucleotides provided in the reaction and the genomic DNA as template. If the process of replication of DNA is repeated many times, the segment of DNA can be amplified to approximately billion times, i.e., 1 billion copies are made. Such repeated amplification is achieved by the use of a thermostable DNA polymerase (isolated from a bacterium, *Thermus aquaticus*), which remain active during the high temperature induced denaturation of double stranded DNA. The amplified fragment if desired can now be used to ligate with a vector for further cloning (Figure 9.6).
 
-![Figure 9.6 Polymerase chain reaction (PCR) : Each cycle has three steps: (i) Denaturation; (ii) Primer annealing; and (iii) Extension of primers](figures/p172_fig01.png)
+![Figure 9.6 Polymerase chain reaction (PCR) : Each cycle has three steps: (i) Denaturation; (ii) Primer annealing; and (iii) Extension of primers](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch09/p172_fig01_27102026.png)
 
 **Figure 9.6** Polymerase chain reaction (PCR) : Each cycle has three steps: (i) Denaturation; (ii) Primer annealing; and (iii) Extension of primers
 
@@ -169,9 +169,9 @@ Small volume cultures cannot yield appreciable quantities of products. To produc
 
 The most commonly used bioreactors are of stirring type, which are shown in Figure 9.7.
 
-![Figure 9.7 (a)](figures/p174_fig01a.png)
+![Figure 9.7 (a)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch09/p174_fig01a_27102026.png)
 
-![Figure 9.7 (b)](figures/p174_fig01b.png)
+![Figure 9.7 (b)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch09/p174_fig01b_27102026.png)
 
 **Figure 9.7** (a) Simple stirred-tank bioreactor; (b) Sparged stirred-tank bioreactor through which sterile air bubbles are sparged
 

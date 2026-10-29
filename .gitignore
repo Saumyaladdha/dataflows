@@ -68,3 +68,7 @@ data_flow/ncert_extractions/qa/compare/
 **/figures/Documents/
 # Stray NCERT chapter PDFs dropped next to outputs (copyright NCERT, see source_pdfs/ above)
 data_flow/ncert_extractions/data/new_ncert/**/*.pdf
+
+# JVM crash dumps (may contain environment variables)
+hs_err_pid*.log
+replay_pid*.log
