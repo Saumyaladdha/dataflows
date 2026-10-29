@@ -293,6 +293,24 @@ _FIT_JS = """<script>
 # LaTeX that plain text cannot set: fractions, words above/below a formula, labelled arrows.
 _TEX_NEEDED = re.compile(r"\\(?:frac|dfrac|overset|underset|stackrel|xrightarrow|xleftarrow|"
                          r"xrightleftharpoons|sqrt|longrightarrow|longleftarrow|quad|qquad)\b")
+def _physics_display(tex):
+    """A physics display equation as KaTeX sets it like the book.
+
+    Physics typesets EVERY display equation -- `_TEX_NEEDED` waits for a fraction or an arrow,
+    and PHY11L-ch01's working (`l b = 163.62 cm² ± 1.6%` over `= 163.62 ± 2.6 cm²`, the
+    six-line surface-area/volume block) has neither, so it fell back to the text layer and its
+    lines ran together. Lines written with `\\\\` are aligned on their `=` as printed: the
+    continuation lines start with `=` under the first line's `=`."""
+    if "\\\\" not in tex or "\\begin{" in tex:
+        return tex
+    rows = []
+    for row in tex.split("\\\\"):
+        row = row.strip()
+        i = row.find("=")
+        rows.append(row if i < 0 else row[:i] + "&" + row[i:])
+    return "\\begin{aligned}" + " \\\\ ".join(rows) + "\\end{aligned}"
+
+
 _KATEX = "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/"
 _KATEX_HEAD = (f'<link rel="stylesheet" href="{_KATEX}katex.min.css">'
                f'<script src="{_KATEX}katex.min.js"></script>')
@@ -671,16 +689,21 @@ def render(doc, chapter_dir):
             # in the rail's measured face, size and colour.
             size = st.get("size") or 10.0
             ind = r.get("indent_pt")
+
+            def num(it):
+                # PHY11 sets the number bold over a light title (`num_b`, extract_page_layout).
+                t = esc(it.get("num") or "")
+                return f"<b>{t}</b>" if t and r.get("num_b") else t
             if ind:
                 rows = "".join(
                     f'<div class="ri" style="padding-left:{ind:.1f}pt;text-indent:-{ind:.1f}pt">'
-                    f'<span class="rn" style="width:{ind:.1f}pt">{esc(it.get("num") or "")}</span>'
+                    f'<span class="rn" style="width:{ind:.1f}pt">{num(it)}</span>'
                     f'{esc(it["title"])}</div>' for it in r["items"])
             else:
                 # No measured indent (Class 11 sets each entry as one line, `2.1 Kingdom
                 # Monera`): number and title inline, one space apart, as printed.
                 rows = "".join(
-                    f'<div class="ri">{esc(" ".join(x for x in (it.get("num"), it["title"]) if x))}'
+                    f'<div class="ri">{" ".join(x for x in (num(it), esc(it["title"])) if x)}'
                     f'</div>' for it in r["items"])
             return (f'<div class="blk railx" style="left:{r["bbox"][0] * W:.2f}mm;'
                     f'top:{r["bbox"][1] * H - size * 0.25 * PT_MM:.2f}mm;'
@@ -823,7 +846,10 @@ def render(doc, chapter_dir):
             # A lettered figure is carried by its panels alone -- no combined image to fall back on.
             if kind == "figure" and (n.get("image") or n.get("image_local") or any(
                     q.get("image") or q.get("image_local") for q in n.get("panels") or [])):
-                src = n.get("image") or n.get("image_local")
+                # A figure we drew ourselves and checked against the print (step FIGP) is shown
+                # in place of its crop; it is drawn on the page's own geometry, so it sits in
+                # the crop's box exactly (build_chapter_json._attach_drawn_figures).
+                src = n.get("image_drawn") or n.get("image") or n.get("image_local")
                 h_mm = (bb[3] - bb[1]) * H
                 panels = [q for q in n.get("panels") or []
                           if (q.get("image") or q.get("image_local")) and q.get("bbox")]
@@ -862,8 +888,11 @@ def render(doc, chapter_dir):
             # The caption is live text at its own box; the crop is shown from under it.
             cb = (n.get("caption_box") or {}).get("bbox")
             ib = n.get("image_bbox") or bb
-            if kind == "table" and n.get("grid_drawn") and cb and (
-                    n.get("image") or n.get("image_local")):
+            # PHYSICS TABLES TOO: Table 1.1 is set over cyan header bars and grey cell fills in
+            # two header rows; typeset from its grid it lost all three (PHY11L ch01 p002). The
+            # crop is the book's table; the grid stays the data in the JSON and the Markdown.
+            if kind == "table" and (n.get("grid_drawn") or doc.get("subject") == "physics") \
+                    and cb and (n.get("image") or n.get("image_local")):
                 top = max(cb[3], ib[1])
                 blocks.append(
                     f'<div class="blk fig" style="left:{ib[0] * W:.2f}mm;top:{top * H:.2f}mm;'
@@ -948,6 +977,10 @@ def render(doc, chapter_dir):
                    "exercises": "h"}.get(kind, "p")
             num = (n.get("number") or "").strip() if kind == "question" else ""
             lead = f'<span class="qn">{esc(num)}.</span> ' if num else ""
+            if num and "." in num:
+                # Physics prints `1.3` -- chapter.question, bold, in the book's accent, no stop.
+                lead = (f'<span class="qn" style="font-weight:700;color:'
+                        f'{getattr(d, "accent", None) or "#00aeef"}">{esc(num)}</span> ')
             # A QUESTION'S SUB-PARTS ARE ITS CONTENT, not decoration.
             # Moving them into `parts` made the Markdown correct and silently emptied this
             # render: question 7 lost all three sequences to compare and question 9 lost all
@@ -1013,7 +1046,10 @@ def render(doc, chapter_dir):
                 if lead and n.get("hang_pt"):
                     h = float(n["hang_pt"]) * PT_MM
                     gs += f";padding-left:{h:.2f}mm;text-indent:-{h:.2f}mm"
-                    lead = f'<span class="qn" style="width:{h:.2f}mm">{esc(num)}.</span>'
+                    lead = (f'<span class="qn" style="width:{h:.2f}mm;font-weight:700;color:'
+                            f'{getattr(d, "accent", None) or "#00aeef"}">{esc(num)}</span>'
+                            if "." in num else
+                            f'<span class="qn" style="width:{h:.2f}mm">{esc(num)}.</span>')
                 inner.append(f'<div class="grp {cls}" style="{gs}">{lead}'
                              f'{marked(body, marks)}{subs}</div>')
             else:
@@ -1038,14 +1074,19 @@ def render(doc, chapter_dir):
                 # equilibrium lost its layout (BIO11L ch09 p113). The flat text stays inside the
                 # span as the fallback when KaTeX cannot load.
                 tex = n.get("latex") or ""
+                physics = doc.get("subject") == "physics"
                 # NCERT sets chemistry and enzyme schemes upright (`E + S   ES ⟶ EP`); a formula
                 # that names no face of its own is set in roman, and a fraction keeps its italics.
-                if tex and "\\frac" not in tex and not re.search(r"\\(?:text|mathrm|mathbf)", tex):
+                # Physics sets its quantities in ITALIC (l b, T, g), so it keeps the math face.
+                if (tex and not physics and "\\frac" not in tex
+                        and not re.search(r"\\(?:text|mathrm|mathbf)", tex)):
                     tex = "\\mathrm{" + tex + "}"
+                if tex and physics:
+                    tex = _physics_display(tex)
                 # At the book's size: a displayed fraction, and names under a formula set as text
                 # (`carbon dioxide` under CO₂ prints at body size, not KaTeX's script size).
                 tex = "\\displaystyle " + tex.replace("\\underset{", "\\underset{\\textstyle ")
-                if kind == "para" and _TEX_NEEDED.search(tex):
+                if kind == "para" and (_TEX_NEEDED.search(tex) or (physics and n.get("latex"))):
                     uses_tex[0] = True
                     blocks.append(f'<div class="blk {cls} eqtex"{fit} style="{style}">'
                                   f'<span class="tex" data-tex="{esc(tex)}">'

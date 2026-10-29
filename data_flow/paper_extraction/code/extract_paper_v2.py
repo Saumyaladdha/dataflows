@@ -110,13 +110,40 @@ Q_ALONE = re.compile(r"^\s*(\d{1,3})\s*[.)]\s*$")
 #: its 200 questions -- a whole block, 108 and 111-135, which looked like a source defect rather
 #: than a pattern that was too strict. The lookahead for a capital or a bracket is what keeps a
 #: decimal out: `1.5` does not match because `5` is a digit, while `108.The` and `19. The` both do.
-Q_INLINE = re.compile(r"^\s*(\d{1,3})\s*[.)]\s*(?=[A-Z(\[])")
+#: A Greek letter opens a stem too -- 2019 Code-P1 prints `31. α-particle consists of :` with the
+#: alpha in the Symbol font (U+F061, private use) -- and requiring a capital lost q31 into q30,
+#: whose options it then overwrote. Neither range holds a digit, so a decimal still cannot match.
+Q_INLINE = re.compile(r"^\s*(\d{1,3})\s*[.)]\s*(?=[A-Z(\[Ͱ-Ͽ-])")
+#: A stem that opens in LOWER case. 2020 Code-F1 prints `158. on electrolysis of dil. Sulphuric
+#: acid...` and `175. which of the following oxoacid...`, and both questions vanished into q157 and
+#: q174. A numbered line opening in lower case is also how a solution's own list reads ("2. the
+#: ..."), so like Q_BARE it is accepted ONLY as the exact next expected question number at its
+#: column's number edge -- see analyse().
+Q_INLINE_LOWER = re.compile(r"^\s*(\d{1,3})\s*[.)]\s*(?=[a-z])")
+#: A stem that opens with a DIGIT. 2015 Code-A prints `25. 20.0 g of a magnesium carbonate...` and
+#: `161. 4.0 g of a gas...`; q25 vanished into q24's solution and q161 was split off by the answer
+#: count at the wrong line (all four 2015 codes, 11 questions). The space after the stop is REQUIRED,
+#: so a decimal (`12.5 g`) never matches, and like Q_INLINE_LOWER it is accepted ONLY as the exact
+#: next expected question number at its column's number edge -- see analyse().
+Q_INLINE_DIGIT = re.compile(r"^\s*(\d{1,3})\s*[.)]\s+(?=\d)")
 #: A question number printed with NO full stop. 2017 Code-A prints question 51 as a bare `51`, a
 #: typesetting slip, and the question vanished into q50 -- its working became q50's solution lines.
 #: A bare number is otherwise everywhere in shredded maths ("1", "9", "2" on their own rows), so it
 #: is accepted ONLY as the exact next expected question number at its column's left edge -- see
 #: analyse().
 Q_BARE = re.compile(r"^\s*(\d{1,3})\s*$")
+#: The most a printed question number may run ahead of the last one seen: a few questions can lose
+#: their numbers (2017 Code-A q130), never ten in a row.
+MAX_NUMBER_JUMP = 10
+#: How far right of its column's number edge a printed `N.` may start. Real numbers on one page sit
+#: up to 21pt apart (2020 Code-F1 p59: 93.3 vs 72.0; 2016 Code-X p56: 46.3 vs 28.3); the stray
+#: "2)" of 2016 Code-A q001's working sat 98pt in. Measured on 2015 A-D, 2016 A/X, 2017 A/B,
+#: 2018 AA/EE, 2019 P1 and 2020 F1: only 2016 A's q001/q002 spans change.
+NUMBER_EDGE_SLACK_PT = 40.0
+#: How many rows above a question number the figure it is printed beside may start.
+FIGURE_START_MAX_ROWS = 6.0
+#: How many rows above its `Solution:` label a solution set beside the label may begin.
+SOLUTION_ROWS_ABOVE = 3.0
 #: How far right of its column's leftmost line a bare number may sit and still be a question number.
 #: Question numbers are flush with the column edge (2017 Code-A: q51 and q131 both at x0=315); a
 #: stray digit from a fraction or a figure label sits indented under its text.
@@ -171,6 +198,25 @@ ANSWER = [re.compile(p, re.I) for p in (
     r"^\s*Answer\s*Key\s*:\s*\(([1-4a-dA-D])(\*?)\)",
     r"^\s*Solution\s*:\s*\(([1-4a-dA-D])(\*?)\)",
     r"^\s*Ans\s*[.:]\s*\(([1-4a-dA-D])(\*?)\)")]
+#: An answer key printed as ONE TABLE at the end of the booklet instead of under each question:
+#: 2019 Code-P1 closes with `CODE: P1 – Answer Key: 1. (3) 2. (3) ... 72. (1,2) ... 180. (4)`.
+#: Unfenced, its first row was glued onto q180's option 4 and crop, and its `31. (1)` row -- read
+#: as a question number -- became a q31 of 150 key entries.
+KEY_TABLE_START = re.compile(r"\bAnswer\s*Key\s*:", re.I)
+KEY_ENTRY = re.compile(r"(\d{1,3})\s*\.\s*\(\s*([1-4a-dA-D](?:\s*[,&]\s*[1-4a-dA-D])*)"
+                       r"\s*(\*?)\s*\)(\*?)")
+#: ...and it is that table only when entries 1 to this follow the heading. 2019 sets each entry as
+#: its own text fragment, so the heading's line alone carries none.
+KEY_TABLE_MIN_ENTRIES = 5
+#: An answer label printed alone, its option set apart on the same row: `Ans.` ... `(4)`.
+ANS_ALONE = re.compile(r"^\s*(?:Ans|Answer)\s*[.:]?\s*$", re.I)
+#: ...its value may carry words after it ("(1) or bonus", Code-Y q070) or be the bonus mark itself
+#: ("(Bonus)", q161); only a value on the label's own row is ever joined, never an option line.
+ANS_VALUE = re.compile(r"^\s*\(\s*(?:[1-4a-dA-D](?:\s*[,&]\s*[1-4a-dA-D])*|Bonus|Dropped|Deleted)"
+                       r"\s*\*?\s*\)", re.I)
+#: A question NTA DROPPED, printed where its answer would be: `Solution: (Bonus)` (2016 Code-A).
+BONUS_LINE = re.compile(r"^\s*(?:Answer(?:\s*Key)?|Ans|Solution)\s*[:.]?\s*\(\s*(?:Bonus|Dropped|Deleted)"
+                        r"\s*\)", re.I)
 #: `Sol` may carry no stop at all: 2017 Code-A q008 prints a bare "Sol" beside its circuit, and
 #: requiring "Sol." or "Sol:" lost that whole solution. A whole word, so "Solve"/"Solid" never match.
 SOLUTION_START = re.compile(r"^\s*(?:Sol\b\s*[.:]?|Solution\s*[.:]|Hide\s+solution)", re.I)
@@ -199,6 +245,10 @@ def booklet_code(doc_head_text, path):
 MIN_FIG_HEIGHT_PT = 40.0
 MIN_FIG_WIDTH_PT = 40.0
 MIN_FIG_PATHS = 8
+#: How far above a figure's ink a text line may end and still be that figure's label (`+6 V`).
+FIGURE_LABEL_GAP_PT = 4.0
+#: ...and how far beside it: an atom label sits further off its bond than a label off a wire.
+SIDE_LABEL_GAP_PT = 10.0
 LOGO_MAX_AREA_PT = 2600.0
 #: An image that repeats on at least this share of a booklet's pages is page furniture -- a
 #: watermark, a logo, a banner -- never a figure. Measured, not assumed: in NEET 2024 Code-Q2 the
@@ -277,6 +327,40 @@ CROP_PAD_BOTTOM_PT = 4.0
 #: never fires on real content. The page is still read for TEXT; only its figure geometry is skipped,
 #: and the skip is reported rather than silent.
 MAX_PATHS_PER_PAGE = 4000
+
+
+#: A pale VECTOR mark printed identically (same box, same path count, same fill) on at least this
+#: many pages is the publisher's furniture, never a figure: no diagram repeats at one spot.
+VECTOR_MARK_MIN_PAGES = 3
+
+
+def document_vector_marks(doc):
+    """{page index: [(rect, fill)]} of the booklet's repeated pale vector marks.
+
+    document_furniture() finds the watermark when it is an IMAGE. 2019 Code-P1 also draws a
+    pale-grey fragment ("ed)") as vector paths at (403, 347) on pages 10, 13, 18 and 19 -- below
+    the image rule's every-page share, and invisible to it -- and q078's option crop carried it."""
+    # same shape and fill first, then the same spot within a point: the mark sits 0.11pt further
+    # right on some of those pages, so an exact or rounded position key splits it
+    shapes = collections.defaultdict(list)
+    for index in range(len(doc)):
+        for drawing in doc[index].get_drawings():
+            fill = drawing.get("fill")
+            if not fill or not all(0.6 <= c <= 0.97 for c in fill):
+                continue
+            rect = drawing["rect"]
+            fill = tuple(round(c, 2) for c in fill)
+            shapes[(len(drawing["items"]), fill, round(rect.width), round(rect.height))].append(
+                (index, tuple(rect)))
+    marks = collections.defaultdict(list)
+    for (_n, fill, _w, _h), hits in shapes.items():
+        for _index, (x0, y0, _x1, _y1) in hits:
+            here = [(i, r) for i, r in hits if abs(r[0] - x0) <= 1.0 and abs(r[1] - y0) <= 1.0]
+            if len({i for i, _r in here}) >= VECTOR_MARK_MIN_PAGES:
+                for i, r in here:
+                    if (r, fill) not in marks[i]:
+                        marks[i].append((r, fill))
+    return dict(marks)
 
 
 def _sha(path):
@@ -408,7 +492,26 @@ def page_furniture(page, furniture_xrefs=frozenset()):
     # TEXT at all, so the text test above never fired and every page-break crop opened with the logo.
     for xref, rect in image_rects(page):
         if xref in furniture_xrefs and rect.y1 < height * 0.18:
-            header_y = max(header_y, rect.y1 + 2.0)
+            cut = rect.y1 + 2.0
+            # ...unless a QUESTION starts beside the logo: 2016 Code-Y prints "23." at y=52 on the
+            # left while its logo runs to y=65 on the right, and a cut under the logo dropped q023,
+            # q025 and six more. Only a question number counts -- beside the logo also sit 2015
+            # Code-C's "Chemistry" heading and 2018 Code-AA's "(UG) - 2018 (Code-AA)" running head.
+            # The logo itself is blanked from every crop by xref.
+            for block in page.get_text("dict")["blocks"]:
+                for line in block.get("lines", []) if block.get("type") == 0 else []:
+                    x0, y0, x1, _y1 = line["bbox"]
+                    text = "".join(s.get("text", "") for s in line.get("spans", [])).strip()
+                    if not text or y0 <= header_y or y0 >= cut:
+                        continue
+                    # ...or an answer / solution marker, which no running head ever is (Code-Y
+                    # p16 opens "Ans. (3)" beside the logo, q049's answer)
+                    if (rect.y0 < y0 < rect.y1 and (x1 <= rect.x0 or x0 >= rect.x1)
+                            and (Q_ALONE.match(text) or Q_INLINE.match(text)
+                                 or ANS_ALONE.match(text) or ANSWER_LINE.match(text)
+                                 or SOLUTION_START.match(text))):
+                        cut = min(cut, y0 - 0.5)
+            header_y = max(header_y, cut)
     logos = []
     for xref, rect in image_rects(page):
         if (xref in furniture_xrefs or rect.get_area() <= LOGO_MAX_AREA_PT
@@ -517,6 +620,24 @@ def fragment_gutter(fragments, page_width, bin_pt=10.0):
     return (at + 0.5) * bin_pt
 
 
+#: Legacy Devanagari faces: their text layer is Latin-coded Hindi ("ijh{kkFkhZ izladj.k").
+HINDI_FONTS = re.compile(r"Narad|Kruti|DevLys|Chanakya|Shusha|Agra|Kundli|Mangal", re.I)
+DEVANAGARI = re.compile(r"[ऀ-ॿ]")
+
+
+def is_hindi(spans):
+    """True when most of a line's letters are Hindi: set in a Devanagari face, or Unicode
+    Devanagari. A BILINGUAL booklet (2016 Code-Y) prints every question, its options and its
+    solution again in Hindi; that copy is not the English record and must not reach it."""
+    hindi = total = 0
+    for span in spans:
+        n = sum(1 for ch in span.get("text", "") if not ch.isspace())
+        total += n
+        if HINDI_FONTS.search(span.get("font", "")) or DEVANAGARI.search(span.get("text", "")):
+            hindi += n
+    return total > 0 and hindi * 2 > total
+
+
 def text_lines(page, header_y, footer_y):
     """The page's text, as PDF lines, with two targeted repairs.
 
@@ -574,7 +695,8 @@ def text_lines(page, header_y, footer_y):
                 previous = span["bbox"][2]
             composed = "".join(parts).strip()
             if composed:
-                raw.append({"y0": y0, "y1": y1, "x0": x0, "x1": x1, "text": composed})
+                raw.append({"y0": y0, "y1": y1, "x0": x0, "x1": x1, "text": composed,
+                            "hindi": is_hindi(spans)})
 
     # NO ROW RECONSTRUCTION. Two versions of it were tried and both made the draft worse than the
     # PDF's own line structure -- full rebuild from spans cost 2024 Code-Q2 113 of its 200 option
@@ -673,6 +795,41 @@ def merge_bands(rects, gap=6.0):
             kinds, current, members = {kind}, pymupdf.Rect(rect), 1
     bands.append((kinds, current, members))
     return bands
+
+
+def grow_band(rect, rects, lines):
+    """A figure grown over the labels and small marks set on its edge, chained: 2019 Code-P1 q017
+    prints `A` and `B` 2.6pt above its circuit and the double arrows over them 0.6pt above those --
+    12pt from the drawing, past merge_bands()'s gap, so the arrows were dropped as too small to be a
+    figure and the crop cut them off. A text line counts only when it lies within the figure's
+    width (a label, not the stem line above), and only `rects`/`lines` of the figure's own column
+    should be passed."""
+    import pymupdf
+    rect = pymupdf.Rect(rect)
+    changed = True
+    while changed:
+        changed = False
+        labels = [l for l in lines if not (Q_ALONE.match(l["text"]) or Q_INLINE.match(l["text"]))]
+        # a label beside the drawing, within its height and set off its side by no more than the
+        # side gap (q039's `LED (Y)`, 3.3pt right of the circuit; q065's `Cl`, 8.9pt past its bond)
+        for l in labels:
+            right = l["x1"] > rect.x1 and rect.x0 < l["x0"] <= rect.x1 + SIDE_LABEL_GAP_PT
+            left = l["x0"] < rect.x0 and rect.x0 - SIDE_LABEL_GAP_PT <= l["x1"] < rect.x1
+            if l["y0"] >= rect.y0 - 0.5 and l["y1"] <= rect.y1 + 0.5 and (right or left):
+                rect |= pymupdf.Rect(l["x0"], l["y0"], l["x1"], l["y1"])
+                changed = True
+        boxes = [r for _k, r in rects]
+        boxes += [pymupdf.Rect(l["x0"], l["y0"], l["x1"], l["y1"]) for l in labels
+                  if l["x0"] >= rect.x0 - GROW_PT and l["x1"] <= rect.x1 + GROW_PT]
+        for box in boxes:
+            if box.x1 <= rect.x0 or box.x0 >= rect.x1 or rect.contains(box):
+                continue
+            near = (rect.y0 - FIGURE_LABEL_GAP_PT <= box.y1 <= rect.y0 + 0.5
+                    or rect.y1 - 0.5 <= box.y0 <= rect.y1 + FIGURE_LABEL_GAP_PT)
+            if near and box.x0 >= rect.x0 - GROW_PT and box.x1 <= rect.x1 + GROW_PT:
+                rect |= box
+                changed = True
+    return rect
 
 
 def is_figure(kinds, rect, members, lines, page_area=None):
@@ -781,13 +938,42 @@ def read_text_draft(lines, option_style="digits"):
     """
     stem, options, answer, starred = [], {}, None, False
     current, solution_at, answer_at = None, None, None
-    answers, answer_line = [], None
+    answers, answer_line, bonus, hindi_at = [], None, False, None
+    # "Ans." and its "(4)" set apart on one row (2016 Code-Y) are ONE answer line
+    texts, joined = {}, set()
     for position, line in enumerate(lines):
+        if position in joined:
+            continue
         text = line["text"].strip()
+        nxt = lines[position + 1] if position + 1 < len(lines) else None
+        if (ANS_ALONE.match(text) and nxt is not None and ANS_VALUE.match(nxt["text"].strip())
+                and min(line["y1"], nxt["y1"]) - max(line["y0"], nxt["y0"]) > 0):
+            # written the standard way, "Ans. (1)", whatever the label's own punctuation ("Ans",
+            # Code-Y q077), so the answer patterns read it
+            text = "Ans. %s" % nxt["text"].strip()
+            joined.add(position + 1)
+        texts[position] = text
+    for position, line in enumerate(lines):
+        if position in joined:
+            continue
+        text = texts[position]
         if not text:
+            continue
+        # THE HINDI COPY of a bilingual booklet is not the record: where it starts, the English
+        # question has ended (cut_point() stops the crop there), and its lines are never parsed
+        if line.get("hindi"):
+            if hindi_at is None and answer_at is None and solution_at is None:
+                hindi_at = position
             continue
         if solution_at is None and SOLUTION_START.match(text):
             solution_at = position
+        if answer is None and answer_at is None and not answers and BONUS_LINE.match(text):
+            # A QUESTION NTA DROPPED: `Solution: (Bonus)` (2016 Code-A q071) is its answer line --
+            # the question ends here -- and the record says so rather than "no printed answer"
+            answer_at, answer_line, bonus, current = position, text, True, None
+            if SOLUTION_START.match(text) and solution_at is None:
+                solution_at = position
+            continue
         if answer is None and answer_at is None:
             hit = next((p.match(text) for p in ANSWER if p.match(text)), None)
             if hit:
@@ -822,7 +1008,8 @@ def read_text_draft(lines, option_style="digits"):
     draft = re.sub(r"\s+", " ", " ".join(stem)).strip()
     return {"stem": re.sub(r"^\d{1,3}\s*[.)]\s*", "", draft), "options": options,
             "official_answer": answer, "answer_starred": starred,
-            "official_answers": answers, "answer_line": answer_line,
+            "official_answers": answers, "answer_line": answer_line, "answer_bonus": bonus,
+            "hindi_at": hindi_at,
             "solution_at": solution_at, "answer_at": answer_at,
             "solution_lines": solution_lines(lines, solution_at),
             "unmarked_lines_after_answer": unmarked_after_answer(lines, answer_at, solution_at)}
@@ -846,6 +1033,8 @@ def solution_lines(lines, solution_at):
         return []
     out = []
     for position in range(solution_at, len(lines)):
+        if lines[position].get("hindi"):
+            break                     # the solution's Hindi translation follows the English one
         text = lines[position]["text"].strip()
         if position == solution_at:
             marker = SOLUTION_START.match(text)
@@ -894,6 +1083,39 @@ def two_column_share(doc, sample=16):
     return hits / float(pages)
 
 
+def answer_key_table(pages):
+    """((page, column, y0) where the booklet's closing answer-key table starts, {qno: entry}), or
+    (None, {}) when the booklet prints its answers under each question instead.
+
+    An entry is {"answers": [option, ...], "starred": bool, "line": "72. (1,2)"} -- several options
+    where the key accepts several, as `72. (1,2)` does.
+    """
+    for index, page in enumerate(pages):
+        for line in page["lines"]:
+            heading = KEY_TABLE_START.search(line["text"])
+            # `Answer Key: (3)` is ONE question's answer (the solution_inline family), not a table
+            if not heading or re.match(r"\s*\(", line["text"][heading.end():]):
+                continue
+            at = (index, line["column"], line["y0"])
+            text = [line["text"][heading.end():]]
+            for later in range(index, len(pages)):
+                for other in pages[later]["lines"]:
+                    if _order_key(later, other["column"], other["y0"]) > _order_key(*at):
+                        text.append(other["text"])
+            key = {}
+            for hit in KEY_ENTRY.finditer(" ".join(text)):
+                qno = int(hit.group(1))
+                if qno in key:
+                    continue
+                key[qno] = {"answers": sorted({OPTION_KEY[c] for c in
+                                               re.findall(r"[1-4a-dA-D]", hit.group(2))}),
+                            "starred": bool(hit.group(3) or hit.group(4)),
+                            "line": re.sub(r"\s+", " ", hit.group(0))}
+            if all(n in key for n in range(1, KEY_TABLE_MIN_ENTRIES + 1)):
+                return at, key
+    return None, {}
+
+
 def analyse(doc):
     """Per page: lines, figure bands and furniture. Per question: its span across pages."""
     furniture_xrefs = document_furniture(doc)
@@ -917,8 +1139,22 @@ def analyse(doc):
         lines.sort(key=lambda l: (COLUMN_RANK[l["column"]], round(l["y0"], 1), l["x0"]))
         rects, skipped = ink(page, header_y, footer_y, logos, furniture_xrefs)
         page_area = page.rect.width * page.rect.height
-        bands = [(k, r, m) for k, r, m in merge_bands(rects)
-                 if is_figure(k, r, m, lines, page_area)]
+        # PER COLUMN on a two-column page: merged by height across the page, a drawing in one column
+        # glued onto a drawing in the other (2019 Code-P1 page 6: one "figure" from x 108 to 404,
+        # half of q045's option graphs and half of the left column), and the OTHER column's text
+        # covered every diagram's height, so is_figure() read them as inline maths -- q039's circuit
+        # was never found. A band carries the column it was found in.
+        if split:
+            bands = []
+            for column in ("left", "right"):
+                mine = [(k, r) for k, r in rects
+                        if ("left" if (r.x0 + r.x1) / 2.0 < split[0] else "right") == column]
+                text = [l for l in lines if l["column"] == column]
+                bands += [(k, grow_band(r, mine, text), m, column)
+                          for k, r, m in merge_bands(mine) if is_figure(k, r, m, text, page_area)]
+        else:
+            bands = [(k, r, m, "full") for k, r, m in merge_bands(rects)
+                     if is_figure(k, r, m, lines, page_area)]
         if skipped > 0:
             print("      page %d: %d vector paths exceeds MAX_PATHS_PER_PAGE -- figure geometry "
                   "skipped for this page, text still read" % (index + 1, skipped), file=sys.stderr)
@@ -937,7 +1173,9 @@ def analyse(doc):
                       "text_reliable": skipped >= 0,
                       "columns": split, "width": page.rect.width, "height": page.rect.height})
 
-    starts, seen = [], set()
+    # Nothing at or after a closing answer-key table is a question, and the last question ends at it.
+    key_at, _key = answer_key_table(pages)
+    starts, seen, last_edges = [], set(), {}
     for index, page in enumerate(pages):
         if INSTRUCTIONS.search("".join(l["text"] for l in page["lines"][:12])):
             continue
@@ -948,18 +1186,34 @@ def analyse(doc):
         for line in page["lines"]:
             if Q_ALONE.match(line["text"]) or Q_INLINE.match(line["text"]):
                 edges[line["column"]] = min(edges.get(line["column"], line["x0"]), line["x0"])
+        # A page whose only question number is one of those guarded ones measures no edge of its
+        # own -- 2020 Code-F1 page 85 holds q158 alone -- so it takes the last page's, which is the
+        # same column on the same grid (x0=60.9 on every F1 page).
+        for column, x0 in last_edges.items():
+            edges.setdefault(column, x0)
+        last_edges = edges
         for line in page["lines"]:
             top = line["y0"]
             match = Q_ALONE.match(line["text"]) or Q_INLINE.match(line["text"])
+            # ...printed AT the column's number edge, like every question number: 2016 Code-A's
+            # "(R/2)" in q001's solution set its "2)" as a line of its own mid-page, which read as
+            # question 2 and left the real "2." to be skipped as a repeat
+            edge = edges.get(line["column"])
+            if match and edge is not None and line["x0"] > edge + NUMBER_EDGE_SLACK_PT:
+                match = None
             if not match:
-                # See Q_BARE: the exact next number, flush with its column's number edge, or nothing.
-                bare = Q_BARE.match(line["text"])
+                # See Q_BARE and Q_INLINE_LOWER: the exact next number, flush with its column's
+                # number edge, or nothing.
+                bare = (Q_BARE.match(line["text"]) or Q_INLINE_LOWER.match(line["text"])
+                        or Q_INLINE_DIGIT.match(line["text"]))
                 expected = (max(seen) + 1) if seen else 1
                 edge = edges.get(line["column"])
                 if (bare and int(bare.group(1)) == expected and edge is not None
                         and line["x0"] <= edge + BARE_NUMBER_EDGE_PT):
                     match = bare
             if not match:
+                continue
+            if key_at and _order_key(index, line["column"], line["y0"]) >= _order_key(*key_at):
                 continue
             # The question starts at the top of the number's ROW, not at the number: q51's first
             # stem line sits 1pt ABOVE its bare `51`, and starting at the number gave that line to
@@ -972,8 +1226,37 @@ def analyse(doc):
                 if (other["column"] == line["column"] and height > 0
                         and overlap >= ROW_OVERLAP_SHARE * min(height, other["y1"] - other["y0"])):
                     top = min(top, other["y0"])
+            # ...and at the top of a FIGURE its number is printed beside. 2019 Code-P1 sets `39.`
+            # level with the middle of q039's circuit, so the circuit's upper half and its `+6 V`
+            # label went to q038's crop and text. A band in this column that the number's row cuts
+            # through starts the question, with any label printed just above it -- only when the
+            # number's line sits wholly LEFT of the figure, as `39.` does. 2020 Code-F1's
+            # "117.A 40 uF capacitor..." runs under the foot of q116's solution photo, and taking
+            # that as q117's figure cut q116's solution short. And only a few rows up: on 2016
+            # Code-Y's single-column page 2 one band ran from q003's Hindi table to past "4.",
+            # 244pt above it, and q004 started inside q003. "39." sits 22pt below its circuit's top.
+            # Two-column pages only: there a band is measured per column and grown over its own
+            # labels; a single-column page merges every drawing down the page into one band (2016
+            # Code-Y page 4: q007's solution and q008's two tables), so a number "beside" it is
+            # coincidence -- q008 took q007's "Ans."/"Sol." that way.
+            row = max(line["y1"] - line["y0"], 1.0)
+            for _k, rect, _m, band_column in page["bands"]:
+                if (band_column == line["column"] and band_column != "full"
+                        and rect.y0 < top < rect.y1
+                        and line["x1"] <= rect.x0 + 2.0
+                        and top - rect.y0 <= FIGURE_START_MAX_ROWS * row):
+                    top = rect.y0
+                    for other in page["lines"]:
+                        if (other["column"] == line["column"] and other["y0"] < top
+                                and other["y1"] >= top - FIGURE_LABEL_GAP_PT
+                                and other["x1"] > rect.x0 and other["x0"] < rect.x1):
+                            top = other["y0"]
             number = int(match.group(1))
-            if not 1 <= number <= 200 or number in seen:
+            # ...and never a LEAP: questions run in order, so a number far past the last one seen is
+            # arithmetic in a worked solution (2016 Code-A page 12's "192)" of "0.96 (80/192)"
+            # became a question 192 and took the end of q019 with it)
+            if (not 1 <= number <= 200 or number in seen
+                    or number > (max(seen) if seen else 0) + MAX_NUMBER_JUMP):
                 continue
             seen.add(number)
             starts.append((index, line["column"], top, number))
@@ -983,6 +1266,8 @@ def analyse(doc):
         if position + 1 < len(starts):
             nxt = starts[position + 1]
             end_index, end_column, end_y = nxt[0], nxt[1], nxt[2]
+        elif key_at:
+            end_index, end_column, end_y = key_at
         else:
             end_index, end_column, end_y = len(pages) - 1, "right", pages[-1]["height"]
         spans.append({"qno": number, "page": index, "column": column, "y0": y0,
@@ -1050,6 +1335,24 @@ def span_lines(pages, span):
                 continue
             out.append(dict(line, page=index))
     out.sort(key=lambda l: _order_key(l["page"], l["column"], l["y0"]))
+    # LEFT TO RIGHT WITHIN A ROW. Sorted on y alone, a label whose text starts a hair higher comes
+    # after it: 2016 Code-Y sets "Ans." at x=73 and its "(1)" at x=107 0.1pt higher, so "(1)" read
+    # as an empty option 1 and the answer was lost; "12." followed its own stem; "Sol." followed
+    # its working. Neighbours sharing a row (tops within half a line, mostly overlapping) are put
+    # in x order.
+    for i in range(1, len(out)):
+        j = i
+        while j > 0:
+            a, b = out[j - 1], out[j]
+            if (a["page"], a["column"]) != (b["page"], b["column"]):
+                break
+            short = min(a["y1"] - a["y0"], b["y1"] - b["y0"])
+            overlap = min(a["y1"], b["y1"]) - max(a["y0"], b["y0"])
+            if not (short > 0 and overlap >= 0.6 * short and abs(a["y0"] - b["y0"]) < 0.5 * short
+                    and b["x0"] < a["x0"] - 2.0):
+                break
+            out[j - 1], out[j] = b, a
+            j -= 1
     return out
 
 
@@ -1110,37 +1413,47 @@ def question_figures(pages, span, lines, draft):
     question's figure is the easiest error to make here.
     """
     import pymupdf
-    option_tops = [l["y0"] for l in lines if OPTION.match(l["text"].strip())]
+    # Compared as reading POSITIONS (page, column, height), never as bare heights: on a two-column
+    # page a figure in the right column sits at the same height as left-column questions, and 2019
+    # Code-P1's q017 circuit was handed to q011 and q012 as their option panels.
+    option_tops = [_order_key(l["page"], l["column"], l["y0"])
+                   for l in lines if OPTION.match(l["text"].strip())]
     first_option = min(option_tops) if option_tops else None
+    begin = _order_key(span["page"], span["column"], span["y0"])
+    finish = _order_key(span["end_page"], span["end_column"], span["y1"])
     # Where the QUESTION stops and the worked solution begins. `Answer (N)` is the anchor, not
     # `Sol.`: the answer line always precedes the solution, and a solution's own diagram routinely
     # starts a few points ABOVE the `Sol.` label because the drawing sits beside it -- measured on
     # 2024 Code-Q2 q50, whose solution figure begins at y=515 while `Sol.` sits at y=529.5. Anchored
     # on `Sol.` with a top-edge test, that figure was emitted as the question's own option panel.
-    cut_page = cut_y = None
+    cut = None
+    # NOT at the Hindi copy (`hindi_at`): a bilingual booklet prints chemistry and physics options
+    # ONCE, after both stems (2016 Code-Y q161), so cutting there lost them. The question crop
+    # shows what is printed, both languages; B3 transcribes the English and the draft skips Hindi.
     for key in ("answer_at", "solution_at"):
         position = draft.get(key)
         if position is not None and position < len(lines):
-            page_index, y = lines[position]["page"], lines[position]["y0"]
-            if cut_page is None or (page_index, y) < (cut_page, cut_y):
-                cut_page, cut_y = page_index, y
+            line = lines[position]
+            here = _order_key(line["page"], line["column"], line["y0"])
+            if cut is None or here < cut:
+                cut = here
 
     found = []
     for index in range(span["page"], span["end_page"] + 1):
         page = pages[index]
-        for kinds, rect, _members in page["bands"]:
-            if index == span["page"] and rect.y1 <= span["y0"]:
+        for kinds, rect, _members, column in page["bands"]:
+            if _order_key(index, column, rect.y1) <= begin:
                 continue
-            if index == span["end_page"] and rect.y0 >= span["y1"]:
+            if _order_key(index, column, rect.y0) >= finish:
                 continue
             # A band that straddles the cut is assigned by where MOST of it lies, so a drawing that
             # starts just above the `Answer` line but belongs to the solution is still excluded.
             midpoint = (rect.y0 + rect.y1) / 2.0
-            if cut_page is not None and (index > cut_page
-                                         or (index == cut_page and midpoint >= cut_y)):
+            if cut is not None and _order_key(index, column, midpoint) >= cut:
                 continue
             if first_option is not None and index == span["page"]:
-                role = "stem_figure" if rect.y1 <= first_option else "option_panels"
+                role = ("stem_figure" if _order_key(index, column, rect.y1) <= first_option
+                        else "option_panels")
             else:
                 role = "stem_figure"
             grown = pymupdf.Rect(max(rect.x0 - GROW_PT, 0), max(rect.y0 - GROW_PT, page["header_y"]),
@@ -1267,7 +1580,10 @@ def cut_point(lines, draft):
     The same anchor question_figures() uses, for the same measured reason: `Answer (N)` always
     precedes the solution, while a solution's drawing can start above its own `Sol.` label.
     """
-    best = None
+    best, marker = None, None
+    # NOT at the Hindi copy (`hindi_at`): a bilingual booklet prints chemistry and physics options
+    # ONCE, after both stems (2016 Code-Y q161), so cutting there lost them. The question crop
+    # shows what is printed, both languages; B3 transcribes the English and the draft skips Hindi.
     for key in ("answer_at", "solution_at"):
         position = draft.get(key)
         if position is None or position >= len(lines):
@@ -1275,7 +1591,40 @@ def cut_point(lines, draft):
         line = lines[position]
         here = (line["page"], line["column"], line["y0"])
         if best is None or _order_key(*here) < _order_key(*best):
-            best = here
+            best, marker = here, position
+    if best is None:
+        return None
+    # ...only where ONE line is both the answer and the solution marker ("Solution: (2)", the
+    # Vedantu layout that sets working beside it). Under a lone "Answer (4)" (Aakash, 2017-2018),
+    # rows right of the label are the options' drawings -- 2017_A q055's lower NO2 labels.
+    if draft.get("answer_at") is None or draft.get("answer_at") != draft.get("solution_at"):
+        return best
+    # A SOLUTION SET BESIDE ITS MARKER can start above it: 2016 Code-A q071 prints its equation
+    # "CaC2 + N2 -> CaCN2 + C" to the right of "Solution: (Bonus)", its first row a line higher,
+    # and the crop showed that working under option (4). Lines just above the marker that start
+    # right of the marker's own text belong to the solution; option text starts at the left.
+    # Judged by whole ROWS: options set two to a row ("(3) X   (4) Y") put "(4) Y" right of an
+    # `Answer (2)` label too, but its row also holds "(3) X" at the left, so it is never taken.
+    label = lines[marker]
+    height = max(label["y1"] - label["y0"], 1.0)
+    # every line starting above the label, wherever it falls in reading order: on the label's own
+    # row, x order puts the label first (span_lines), yet working beside it can start a hair higher
+    above = [l for n, l in enumerate(lines) if n != marker
+             if (l["page"], l["column"]) == (label["page"], label["column"])
+             and l["y0"] < label["y0"]
+             and label["y0"] - l["y0"] <= SOLUTION_ROWS_ABOVE * height]
+    rows = []
+    for line in sorted(above, key=lambda l: -l["y0"]):
+        for row in rows:
+            if min(row[0]["y1"], line["y1"]) - max(row[0]["y0"], line["y0"]) > 0:
+                row.append(line)
+                break
+        else:
+            rows.append([line])
+    for row in rows:                                   # nearest the label first
+        if any(l["x0"] < label["x1"] - 1 for l in row):
+            break
+        best = (best[0], best[1], min(best[2], min(l["y0"] for l in row)))
     return best
 
 
@@ -1316,17 +1665,31 @@ def extract(path, write=False, out_root=None, render_pages=False, keep_previous=
     meta["option_style_scores"] = style_scores
     paper_id = "%s_%s" % (meta["year"], meta["booklet_code"] or "NA")
     questions, b2_pages = [], collections.defaultdict(list)
+    _key_at, key_table = answer_key_table(pages)
+    meta["answer_key_table"] = len(key_table)
 
     for span in spans:
         lines = span_lines(pages, span)
         draft = best_draft(lines, option_style)
+        entry = key_table.get(span["qno"])
+        if entry and draft.get("official_answer") is None and not draft.get("official_answers"):
+            # The same fields an `Answer (N)` under the question fills; `answer_at` stays None, as
+            # nothing of the key is inside this question's lines or crop.
+            draft["official_answer"] = entry["answers"][0] if len(entry["answers"]) == 1 else None
+            draft["official_answers"] = entry["answers"]
+            draft["answer_starred"] = entry["starred"]
+            draft["answer_line"] = "Answer Key: " + entry["line"]
+            draft["answer_from"] = "answer_key_table"
         figures = question_figures(pages, span, lines, draft)
         # THE QUESTION CROP STOPS AT THE PRINTED ANSWER. It used to run to the next question, so it
         # carried `Answer (N)` and the whole worked solution -- and E7V, which must never see an
         # answer, is handed this crop. Clipped at the answer line (less the bottom pad, so the pad
         # does not pull the top of `Answer` back in), the crop is the question and nothing after.
         cut = cut_point(lines, draft)
-        question_span = span
+        # With no answer printed under it (2019 Code-P1 keeps its key in a table at the end), the
+        # crop runs to the next question -- less the bottom pad, or every crop ends on a sliver of
+        # the next question's first line, as all 180 of that booklet's first crops did.
+        question_span = dict(span, y1=span["y1"] - CROP_PAD_BOTTOM_PT)
         solution_span = None
         if cut:
             question_span = dict(span, end_page=cut[0], end_column=cut[1],
@@ -1338,8 +1701,18 @@ def extract(path, write=False, out_root=None, render_pages=False, keep_previous=
                 # Its END is the next question's first line, less the bottom pad: padding past that
                 # line pulled the top half of the next question's stem into the crop (seen on the
                 # first synthetic test), and a solution crop must hold nothing of the next question.
-                solution_span = dict(span, page=cut[0], column=cut[1], y0=cut[2] + CROP_PAD_TOP_PT,
+                # A BILINGUAL booklet's question ends at its Hindi copy, before the answer: the
+                # solution still starts at its own marker, and ends where ITS Hindi copy begins.
+                start = cut_point(lines, dict(draft, hindi_at=None)) or cut
+                solution_span = dict(span, page=start[0], column=start[1],
+                                     y0=start[2] + CROP_PAD_TOP_PT,
                                      y1=span["y1"] - CROP_PAD_BOTTOM_PT)
+                marker = min(p for p in (draft.get("answer_at"), draft.get("solution_at"))
+                             if p is not None)
+                later = next((l for l in lines[marker + 1:] if l.get("hindi")), None)
+                if later is not None:
+                    solution_span.update(end_page=later["page"], end_column=later["column"],
+                                         y1=later["y0"] - CROP_PAD_BOTTOM_PT)
         parts = question_parts(pages, question_span)
         solution = question_parts(pages, solution_span, clamp_above=False) if solution_span else []
         touched = {p["page"] for p in parts} or {span["page"]}
@@ -1456,7 +1829,8 @@ def extract(path, write=False, out_root=None, render_pages=False, keep_previous=
             # ...with the booklet's repeated images (watermark, logo) blanked: a screenshot that
             # reaches the JSON or the page carries the publisher's print and nothing else.
             lib_pdf.crop_boxes(path, jobs, dpi=DPI, unit="px",
-                               hide_xrefs=document_furniture(doc))
+                               hide_xrefs=document_furniture(doc),
+                               hide_marks=document_vector_marks(doc))
         for out, pieces in stitch:
             stitch_vertical(pieces, out)
         if carried:

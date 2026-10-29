@@ -439,6 +439,18 @@ def is_measured(book_id):
     return (subject, klass) in MEASURED_KEYS
 
 
+def a2l_join(book_id):
+    """Whether the build takes A2L's measured layout for this book.
+
+    Not for Physics. Its PDFs carry a full text layer whose boxes, fills and rules are exact,
+    and A2L's estimates made the build worse: an `n: null` continuation in the other column
+    became a page-wide box (the same text twice), Table 1.1 was boxed over its own text, the
+    running head lost its rule and the folio its type, and two uncaptioned table crops were cut
+    from A2L's boxes (PHY11L ch01, 2026-10-28; every defect gone with the join off)."""
+    subject, _klass, _ = parse_book_id(book_id)
+    return subject != "PHY"
+
+
 # --------------------------------------------------------------------------------------------
 # NORMALISING A CROPPED SCAN ONTO THE CANONICAL SHEET
 # --------------------------------------------------------------------------------------------
@@ -540,6 +552,18 @@ def is_page_ground(bbox_frac):
     # portrait's caption as a figure label -- the caption vanished from the page, and the
     # band was never drawn. No NCERT figure runs edge to edge and off the foot of the sheet.
     return (x1 - x0) > 0.97 and y1 > 0.99 and y0 > 0.3
+
+
+def is_tall_ground(bbox_frac):
+    """AS TALL AS THE SHEET IS GROUND, however wide (books not yet measured only).
+
+    The Class 11 Physics PDF places its page picture at x 0.04-0.96 from above the head to below
+    the foot. Failing `is_page_ground`'s width test it was typed `header art` (it starts at y 0),
+    cut by RENDERING the region -- a picture of the whole page, text and all -- and drawn under
+    the live text: PHY11L-ch01 printed every line twice (2026-10-28). Biology's openers have
+    full-height header art of the same shape, approved as drawn, so this is not applied there."""
+    x0, y0, x1, y1 = bbox_frac
+    return (y1 - y0) > 0.97 and (x1 - x0) > 0.85
 
 
 def is_header_art(bbox_frac, design):

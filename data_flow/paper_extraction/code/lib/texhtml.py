@@ -35,6 +35,8 @@ SYMBOLS = {
     "prime": "′", "angle": "∠", "perp": "⊥", "parallel": "∥", "therefore": "∴",
     "because": "∵", "sum": "∑", "int": "∫", "partial": "∂", "nabla": "∇",
     "hbar": "ℏ", "ell": "ℓ", "AA": "Å", "ohm": "Ω", "Omega_sym": "Ω",
+    # Dotless i and j under a unit-vector hat: 2015 Code-A q156 `\hat{\imath}`, `\hat{\jmath}`.
+    "imath": "ı", "jmath": "ȷ",
     # Measured from the corpus by a census of every `\\cmd` these papers actually emit, rather
     # than guessed: longrightarrow and ominus are the reaction arrow and the standard-state circle
     # that chemistry stems use constantly.
@@ -215,8 +217,7 @@ def _render(tex):
                 body, i = _group(tex, i)
                 if index:
                     out.append('<sup class="rootidx">%s</sup>' % _render(index))
-                out.append('<span class="rad">√</span><span class="sqrt">%s</span>'
-                           % _render(body))
+                out.append(radical(_render(body)))
             elif name in ACCENTS:
                 body, i = _group(tex, i)
                 out.append(accent(name, body))
@@ -230,6 +231,12 @@ def _render(tex):
             elif name == "boxed":
                 body, i = _group(tex, i)
                 out.append('<span class="boxed">%s</span>' % _render(body))
+            elif name == "begin":
+                env, i = _group(tex, i)
+                body, i = _environment_body(tex, i, env)
+                out.append(_environment(env, body))
+            elif name in ("end", "hline"):
+                continue                      # consumed by `begin`; a stray one has no content
             elif name in ("left", "right", "big", "Big", "bigg", "Bigg", "bigl", "bigr", "Bigl",
                           "Bigr", "displaystyle", "textstyle", "scriptstyle", "limits",
                           "nolimits", "middle", "nonumber"):
@@ -269,6 +276,114 @@ def _render(tex):
             out.append(html.escape(char))
             i += 1
     return "".join(out)
+
+
+def _environment_body(tex, i, env):
+    r"""(body, index after `\end{env}`), nesting-aware for the same environment."""
+    depth, j = 1, i
+    opener, closer = r"\begin{%s}" % env, r"\end{%s}" % env
+    while j < len(tex):
+        if tex.startswith(opener, j):
+            depth += 1
+            j += len(opener)
+        elif tex.startswith(closer, j):
+            depth -= 1
+            if depth == 0:
+                return tex[i:j], j + len(closer)
+            j += len(closer)
+        else:
+            j += 1
+    return tex[i:], len(tex)
+
+
+def _split_top(body, sep):
+    """Split at `sep` outside braces and outside nested environments."""
+    parts, depth, start, j = [], 0, 0, 0
+    while j < len(body):
+        if body.startswith(r"\begin{", j):
+            depth += 1
+        elif body.startswith(r"\end{", j):
+            depth -= 1
+        ch = body[j]
+        if ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+        elif depth == 0 and body.startswith(sep, j):
+            parts.append(body[start:j])
+            j += len(sep)
+            start = j
+            continue
+        j += 1
+    parts.append(body[start:])
+    return parts
+
+
+#: matrix environments and the delimiters they draw
+MATRICES = {"matrix": "", "smallmatrix": "", "pmatrix": "p", "bmatrix": "b", "Bmatrix": "B",
+            "vmatrix": "v", "Vmatrix": "V"}
+
+
+def _environment(env, body):
+    r"""A LaTeX environment as an HTML table: a determinant (`vmatrix`, 2018_AA q036's torque), a
+    matrix, an `array` with its column rules and `\hline` (q049's table of atomic radii), `cases`,
+    `aligned`. Before this every one of them printed `\begin` in red."""
+    env = env.strip().rstrip("*")
+    spec = ""
+    if env == "array":
+        spec, rest = _group(body.lstrip(), 0)
+        body = body.lstrip()[rest:]
+    rows = [r for r in _split_top(body, "\\\\")]
+    if rows and not rows[-1].strip():
+        rows = rows[:-1]
+    aligns = [c for c in spec if c in "lcr"]
+    bars = []                                   # vertical rule before each column (and after last)
+    count = 0
+    for c in spec:
+        if c == "|":
+            bars.append(count)
+        elif c in "lcr":
+            count += 1
+    html_rows = []
+    rule_next = False
+    for row in rows:
+        text = row.strip()
+        top = False
+        while text.startswith(r"\hline"):
+            top, text = True, text[len(r"\hline"):].strip()
+        if not text:
+            rule_next = rule_next or top
+            continue
+        bottom = False
+        while text.endswith(r"\hline"):
+            bottom, text = True, text[:-len(r"\hline")].strip()
+        cells = _split_top(text, "&")
+        tds = []
+        for k, cell in enumerate(cells):
+            style = []
+            align = {"l": "left", "c": "center", "r": "right"}.get(aligns[k] if k < len(aligns) else "c")
+            if env in ("cases", "aligned", "align", "split", "gathered"):
+                align = "left"
+            style.append("text-align:%s" % align)
+            if k in bars:
+                style.append("border-left:1px solid currentColor")
+            if k + 1 == len(cells) and len(cells) in bars:
+                style.append("border-right:1px solid currentColor")
+            if top or rule_next:
+                style.append("border-top:1px solid currentColor")
+            if bottom:
+                style.append("border-bottom:1px solid currentColor")
+            tds.append('<td style="%s">%s</td>' % (";".join(style), _render(cell.strip())))
+        rule_next = False
+        html_rows.append("<tr>%s</tr>" % "".join(tds))
+    if rule_next and html_rows:
+        html_rows[-1] = html_rows[-1].replace('<td style="', '<td style="border-bottom:1px solid currentColor;')
+    table = '<table class="tex-table">%s</table>' % "".join(html_rows)
+    if env in MATRICES:
+        return '<span class="mat mat-%s">%s</span>' % (MATRICES[env] or "n", table)
+    if env == "cases":
+        return '<span class="mat mat-c">%s</span>' % table
+    return '<span class="mat mat-n">%s</span>' % table
 
 
 _CE_TOKEN = re.compile(r"<=>|<->|->|<-|\^\{[^}]*\}|\^[0-9]*[+-]|[A-Z][a-z]?|\d+|\s+|.")
@@ -344,6 +459,9 @@ def greek_in_relation(text, line_breaks=False):
     return _GREEK_LOWER.sub(lambda m: _GREEK_WORDS[m.group(0).lower()], out)
 
 _PROSE_ROOT = re.compile(r"\b(?:root|sqrt)\s*(?:\(([^()]{1,40})\)|([A-Za-z0-9]{1,6})\b)")
+#: Two-letter English words that can follow "root" in prose and must never go under a radical.
+_SHORT_WORDS = ("to", "of", "in", "on", "at", "is", "it", "as", "be", "by", "or", "an", "so", "if",
+                "no", "up", "we", "do")
 #: A physics symbol with an index: `v0`, `m1`, `t2`, `C1`. One letter then one or two digits, with a
 #: word boundary either side, so `10 with 14` and `Nylon-6` are untouched.
 _PROSE_INDEX = re.compile(r"\b([A-Za-z])([0-9]{1,2})\b")
@@ -369,7 +487,15 @@ def _ascii_maths_in_prose(escaped):
         inner = match.group(1) if match.group(1) is not None else match.group(2)
         if match.group(1) is None and inner.lower() in _NUMBER_WORDS:
             return match.group(0)            # "root two" is prose, not a radical
-        return '<span class="rad">√</span><span class="sqrt">%s</span>' % inner
+        # The bare "root X" (not "sqrt X") is prose unless X is a number or a 1-2 letter symbol
+        # set off by a space: biology writes "root hairs", "root cap", "from root to leaf", and
+        # physics "root mean square" -- 2020_F1 q045 rendered as "from √to leaf".
+        if match.group(1) is None and match.group(0).lower().startswith("root"):
+            spaced = match.group(0)[4:5].isspace()
+            if not spaced or not (any(c.isdigit() for c in inner)
+                                  or (len(inner) <= 2 and inner.lower() not in _SHORT_WORDS)):
+                return match.group(0)
+        return radical(inner)
 
     out = _PROSE_ROOT.sub(root, escaped)
     out = _PROSE_FRACTION.sub(
@@ -483,6 +609,17 @@ def to_html(text, line_breaks=True):
     return rendered.replace("\n", "<br>") if line_breaks else rendered.replace("\n", " ")
 
 
+def radical(inner_html):
+    """sqrt{...} as a box: the bar is the top edge of the contents and the hook stretches with them.
+
+    The old form -- a `√` glyph beside an inline span with a top border -- drew the bar at the
+    LINE's text height, so a fraction under it (2016_A q010's sqrt{M2 g L / M1}) rose through the
+    bar and the bar struck out its numerator. A box sizes to its tallest child, so it cannot.
+    """
+    return ('<span class="sqrtw"><span class="rad"></span><span class="sqrt">%s</span></span>'
+            % inner_html)
+
+
 CSS = """
 .math{white-space:nowrap}
 .math .up{font-style:normal}
@@ -491,8 +628,13 @@ CSS = """
 .frac .num{display:block;border-bottom:1.2px solid currentColor;padding:0 .28em .1em}
 .frac .den{display:block;padding:.1em .28em 0}
 .frac sub{vertical-align:-.18em}.frac sup{vertical-align:.36em}
-.rad{font-size:1.04em;margin-left:.04em}
-.sqrt{border-top:1.1px solid currentColor;padding:.04em .02em 0 .04em;white-space:nowrap}
+.sqrtw{display:inline-flex;align-items:stretch;vertical-align:baseline;margin:0 .06em;
+ white-space:nowrap}
+.sqrtw .rad{flex:none;width:.6em;background:currentColor;
+ -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 40' preserveAspectRatio='none'%3E%3Cpath d='M0.5 25 L3 23 L6 39.4 L10 0.3' fill='none' stroke='black' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") 0 0/100% 100% no-repeat;
+ mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 40' preserveAspectRatio='none'%3E%3Cpath d='M0.5 25 L3 23 L6 39.4 L10 0.3' fill='none' stroke='black' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") 0 0/100% 100% no-repeat}
+.sqrtw .sqrt{align-self:baseline;border-top:1.1px solid currentColor;padding:.12em .1em 0 .06em;
+ white-space:nowrap}
 .acc{position:relative;display:inline-block;line-height:1;padding-top:.18em}
 .acc-m{position:absolute;left:0;right:0;top:-.38em;text-align:center;font-size:.62em;
  line-height:1;font-style:normal}
@@ -520,4 +662,14 @@ sup.tex,sub.tex{font-size:.72em;line-height:0}
 .stack{display:inline-flex;flex-direction:column;align-items:center;line-height:1.1}
 .boxed{border:1px solid currentColor;padding:0 .2em}
 .tex-unknown{color:#b33;font-family:ui-monospace,monospace;font-size:.85em}
+.mat{display:inline-block;vertical-align:middle;margin:0 .2em}
+.mat .tex-table{border-collapse:collapse}
+.mat td{padding:.12em .45em;line-height:1.25}
+.mat-v .tex-table{border-left:1.3px solid currentColor;border-right:1.3px solid currentColor}
+.mat-V .tex-table{border-left:3px double currentColor;border-right:3px double currentColor}
+.mat-b .tex-table,.mat-B .tex-table,.mat-p .tex-table{border:1.3px solid currentColor;
+ border-top-color:transparent;border-bottom-color:transparent}
+.mat-b .tex-table{border-image:linear-gradient(currentColor,currentColor) 1}
+.mat-p .tex-table{border-radius:.6em}
+.mat-c .tex-table{border-left:1.3px solid currentColor;border-radius:.5em 0 0 .5em}
 """

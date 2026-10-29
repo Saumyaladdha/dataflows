@@ -222,6 +222,28 @@ def to_body_md(body, marks):
             continue
         joined.append(dict(m))
     marks = joined
+    # A SCRIPT INSIDE AN EMPHASIS RUN NESTS IN ONE SPAN. The italic prompt `... formation of CO₂?
+    # Where ...` (BIO12L ch08 p151) is three touching marks -- italic, italic+sub, italic -- and
+    # written one by one their markers met: `CO**<sub>2</sub>**?`, which reads as bold. Touching
+    # marks with the same bold/italic, at least one a script, become one emphasis span whose
+    # text carries the `<sub>`/`<sup>` inside it.
+    groups = []
+    for m in marks:
+        g = groups[-1] if groups else None
+        if (g and (m.get("b") or m.get("i")) and m["from"] == g[-1]["to"]
+                and all(bool(g[0].get(k)) == bool(m.get(k)) for k in ("b", "i"))):
+            g.append(m)
+        else:
+            groups.append([m])
+    nested = []                                  # (from, to, b, i, members) of merged spans
+    marks = []
+    for g in groups:
+        if len(g) > 1 and any(x.get("sup") or x.get("sub") for x in g):
+            nested.append(g)
+            marks.append({"from": g[0]["from"], "to": g[-1]["to"], "b": g[0].get("b"),
+                          "i": g[0].get("i"), "_members": g})
+        else:
+            marks.extend(g)
     edits = []
     for m in marks:
         a, b = m["from"], m["to"]
@@ -248,13 +270,26 @@ def to_body_md(body, marks):
             open_ += "<sub>"; close = "</sub>" + close
         if not open_:
             continue
-        edits.append((m["from"], m["to"], open_, close))
+        inner = None
+        if m.get("_members"):
+            parts, at = [], m["from"]
+            for x in m["_members"]:
+                xa, xb = max(x["from"], m["from"]), min(x["to"], m["to"])
+                if xb <= xa:
+                    continue
+                parts.append(body[at:xa])
+                tag = "sup" if x.get("sup") else "sub" if x.get("sub") else None
+                parts.append(f"<{tag}>{body[xa:xb]}</{tag}>" if tag else body[xa:xb])
+                at = xb
+            parts.append(body[at:m["to"]])
+            inner = "".join(parts)
+        edits.append((m["from"], m["to"], open_, close, inner))
     out, pos = [], 0
-    for a, b, open_, close in sorted(edits):
+    for a, b, open_, close, inner in sorted(edits, key=lambda e: (e[0], e[1])):
         if a < pos:
             continue
         out.append(lit(pos, body[pos:a])); out.append(open_)
-        out.append(lit(a, body[a:b])); out.append(close)
+        out.append(lit(a, body[a:b] if inner is None else inner)); out.append(close)
         pos = b
     out.append(lit(pos, body[pos:]))
     return "".join(out)

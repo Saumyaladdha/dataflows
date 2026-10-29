@@ -702,3 +702,47 @@ tree. ch15 rebuilt and republished with the same fixes.
 
 Still open: Fig 16.4 crop cuts `Proximal convoluted tubule`; Figs 17.2, 19.3, 19.4 ship unsplit;
 exercise sub-parts run inline where the book sets columns (ch19 Q3/Q5); the ch14/15 table tint.
+
+## 24 · PHY11L ch01 (Units and Measurement): first physics chapter, and the step driver (2026-10-28)
+
+The user supplied the official PDF (Bullzip print of the PageMaker file, full text layer) and a
+build made elsewhere (zip, `__MACOSX`) that had run **A2 only**: layout 0/12 pages, A2S 2 tables /
+0 equations, no A3/A4. Every display equation on pp. 5-11 came out as text-layer fragments. The
+cause was not the renderer: the agent steps after A2 could not be listed for a new chapter.
+
+| what was wrong | why | rule now |
+|---|---|---|
+| `run_step.py A2/A2S/A3 --list` print "none", A2L crashes | they need A2 work inputs, `ncert/blocks/<BOOK>.jsonl` and A2 statuses that nothing rebuilds | `code/chapter_steps.py prepare/list/check/status <STEP> <CID>` -- chapter-scoped, rebuilds what each step needs from the PDF, reuses the plugins and checks |
+| every good A2L read "blocked" | `schemas/A2L.json` forbade `text_block`, `fill`, `page_kind`, `space_before`, `indent`, `size_pt`, all required by the brief | schema matches the brief (457/460 stored reads now pass; the 3 left use the forbidden `face`) |
+| A2L's block-number test never ran under the runner | the runner passes `input_data`, the check read `blocks` | checks/A2L.py reads `input_data.blocks` too |
+| A2 p007 heading matched 0% | declaring the running head `UNITS AND MEASUREMENT` dropped the layer's lone `AND` line | only a folio number or a part of a two-part stamp is a stamp variant; stopwords never (one stored read changed verdict: BIO11L-ch11-p003, already resolved) |
+| every PHY11L line printed twice | the page picture (x 0.04-0.96, full height) failed `is_page_ground`'s width test, became `header art`, was cut by RENDERING the region and drawn under the live text | as tall as the sheet and > 0.85 wide is ground; a page picture inked where the prose lines are is a page raster and is never cut (`cut_figures._is_page_raster`; 46 biology page pictures unaffected) |
+| physics working (`l b = ... ± 1.6%` / `= ...`) printed from the text layer | `_TEX_NEEDED` typesets only fractions/roots/arrows | physics typesets every display equation, keeps italics, aligns `\` rows on `=` (`_physics_display`); biology/chemistry unchanged |
+| our drawn figures had no NCERT path | FIGP lived only in paper_extraction | NCERT FIGP: `agents/figp-figure-redrawer.md` (NCERT copy), `code/figp_bridge.py` runs paper_extraction's `physics_figure`/`figure_text`/`print_trace`/`spec_trace` in its own process (both packages are `lib`); a passing drawing is `image_drawn` (+ `image_drawn_spec`, `image_drawn_layout`), shown in exact HTML and MD, CDN-published as SVG |
+
+Agents writing JSON through a Bash heredoc lose `\` (LaTeX becomes tab/form-feed and the A2S
+check still passes) -- every dispatch now says "Write tool, never a heredoc".
+
+Saved workflow `.claude/workflows/ncert-chapter-pipeline.js` (args `{chapter_id, pdf?}`) runs the
+whole chain with one retry per step. Not yet run end to end itself -- PHY11L ch01 was dispatched by
+hand through the same `chapter_steps.py` lines.
+
+Second pass, after the user's review (page 1 rail, Table 1.1 overprint, Table 1.2 empty):
+
+| what was wrong | why | rule now |
+|---|---|---|
+| A2L made physics worse (page-wide boxes, Table 1.1 over its own text, no head rule, two stray table crops) | the text layer is exact; A2L's estimates replaced it | `book_design.a2l_join()` is False for PHY: no A2L join, no A2L-box crops, no A2L agents |
+| contents rail one section titled "Introduction 1.2 The ... 1.3 ..." | rails were recognised only as `side_note` (design geometry) | a left block of `n.m` entries on page 1 is the rail; numbers in their own column are paired by height; `Summary`/`Exercises` own entries; titles light, number bold (`num_b`) |
+| `In earlier time scientists ...` missing (p001) | the layer filed heading + paragraph as one block | `_split_heading_from_body`: bold/coloured `n.m` rows split from plain rows below |
+| Table 1.1 rows loose paragraphs, Table 1.2 empty | captions without a colon (`Table 1.1 SI ...`) never matched; a drawn table had no node | `_is_table_caption_nocolon`; a caption-only physics table stays `table` and the join grows it over the drawn ink even when A2's box starts below the caption; physics tables print from their crop, grid kept in JSON/MD |
+| columns interleaved; a paragraph's other-column half joined the wrong paragraph; `As discussed above` before its heading | `collect_blocks` sorted down the page | `_two_column_order`: a page with 2+ narrow text blocks in each half is read left column then right, band by band; an absorbed block in the other column keeps its own box (`_column_continuation_cut`, `continues_from_previous`) |
+| exercises 1.3-1.7, 1.9 missing, 1.8+1.10 one block, numbers black `1.3.` | `C.k` numbers typed as headings; `collapse_lists` merged the questions | past `EXERCISES`, blocks split at every `C.k` row and typed paragraphs; `C.k` items become questions with their own boxes and marks; number bold in the accent, no stop (HTML and MD) |
+| no cyan rule under the running head; folio 13pt black | the rule is a 4pt FILLED bar; the split-off folio had no runs | a long thin filled bar at the head is a rule; the folio takes the head's run (unmeasured books only) |
+
+Still open on PHY11L ch01 (physics render, PHY11 not in MEASURED_KEYS): Table 1.1 grid set over
+its text-layer copy (p02); a paragraph crossing columns or pages laid full-width at the page top
+(p08, p09 Example 1.5); A2S equations drop lead-in words ("Then,", "or,", "Actually,"); the
+relative-error lines (p06) drawn beside their typeset twins; equations inside Example boxes (1.3)
+never deferred to A2S; running head without the 6pt cyan rule, folio black and bold; ◀ end
+marker shown as `⊳`; exercises 1.11-1.17 typed as headings; PAGE_OVERFLOW on 6 pages. Not
+CDN-published.

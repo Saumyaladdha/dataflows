@@ -177,17 +177,28 @@ def _numbers(s):
 def _stamp_variants(stamps):
     """A running stamp and its whitespace-separated parts. NCERT headers are composites like
     '275 Amines' or 'Chemistry 274', and the layer splits them onto separate lines, so both the
-    whole stamp and each part must be recognisable as a running-stamp line."""
+    whole stamp and each part must be recognisable as a running-stamp line.
+
+    Only a folio number, or a part of a two-part stamp, becomes a variant of its own. A longer
+    running head is a chapter title, and its small words occur on their own layer lines in the
+    body: declaring 'UNITS AND MEASUREMENT' (PHY11L-ch01 p007) dropped the lone 'AND' line of the
+    heading '1.5 DIMENSIONAL FORMULAE AND DIMENSIONAL EQUATIONS', which then matched 0% of the
+    layer whatever the agent wrote."""
     out = set()
     for stamp in stamps or []:
         s = normalise_quote(stamp or "").strip()
         if not s:
             continue
         out.add(s)
-        for part in s.split(" "):
-            if part:
+        parts = [p for p in s.split(" ") if p]
+        for part in parts:
+            if part.isdigit() or (len(parts) <= 2 and part.lower() not in _STAMP_STOPWORDS):
                 out.add(part)
     return out
+
+
+#: Words never treated as a running stamp on their own line (see _stamp_variants).
+_STAMP_STOPWORDS = {"and", "of", "the", "in", "to", "a", "an", "for", "with", "on", "its"}
 
 
 def _layer_lines(text_layer, stamps):

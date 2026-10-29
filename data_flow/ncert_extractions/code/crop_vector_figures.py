@@ -52,6 +52,9 @@ def a2l_figure_boxes(book_chapter):
     page image. That measurement is the only record of where the diagram is.
     """
     out = {}
+    import book_design
+    if not book_design.a2l_join(book_chapter.split("-ch")[0]):
+        return out                     # this book does not take A2L's layout (book_design)
     for f in sorted(glob.glob(os.path.join(ROOT, "steps", "A2L", "out",
                                            f"{book_chapter}-p*.json"))):
         pf = os.path.basename(f).split("-p")[-1].split(".")[0]

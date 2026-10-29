@@ -54,7 +54,7 @@ what is on top stays on top, same proportions.
 | `spring` | `from`, `to` | `coils`, `amp` |
 | `meter` | `centre`, `r`, `text` | — (G, A, V in a circle) |
 | `cell` | `centre` | `plates`, `horizontal` |
-| `gate` | `at` | `gate` (`and`/`or`), `w`, `h` |
+| `gate` | `at` | `gate` (`and`/`or`), `w`, `h` — `at` is the midpoint of the gate's LEFT (input) edge, not its centre: inputs land on x = at.x, the output leaves at x = at.x + w (2016_A q034 gave the centre and both gates floated off their wires) |
 | `terminal` | `centre` | `r` (small open circle on a lead) |
 | `block` | `centre`, `w`, `h` | `deg`, `hatch` (hatched box — a block, a slab, a wall) |
 

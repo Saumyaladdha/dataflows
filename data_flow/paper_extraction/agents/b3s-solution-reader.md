@@ -43,6 +43,7 @@ You receive one JSON file at the input path in your instruction. It contains:
 
 ## Allowed values
 - concludes: "1", "2", "3", "4", "unclear"
+- figures[].kind: exactly one of `structure`, `reaction_scheme`, `circuit`, `diagram`, `graph`, `table`, `other` — spelled as here, with the underscore. "reaction scheme" and "scheme" are rejected (2016_X q005, q007, q013, q014, q024, q035 all failed on that).
 
 ## Output
 Write exactly one JSON object to the output path in your instruction, in this shape:

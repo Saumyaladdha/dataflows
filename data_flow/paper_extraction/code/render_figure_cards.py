@@ -9,8 +9,10 @@ WHERE THE BOOKLET'S FIGURE IS A VECTOR DRAWING (every 2017_A chemistry figure), 
 THAT GEOMETRY (lib/print_trace.py): the FIGC check has already laid every SMILES on a printed
 molecule atom for atom, so the structures are drawn where and how the booklet drew them -- ring
 circles, the aldehyde's H on the left, OCH3 written out -- with the arrows, curved mechanism arrows,
-"<" signs and conditions around them. RDKit's own layout is the fallback for a scanned figure only:
-it is what made q089's aldehyde come out mirrored and q064's rings lose their circles.
+"<" signs and conditions around them. Where there is no such geometry (a figure printed as a
+picture, 2016), a CHEMISTRY card is drawn by RDKit from its checked SMILES (the user's choice,
+2026-10-28: correct structures below the printed copy), while a PHYSICS spec is not drawn at all --
+the spec renderer's own layout floated 2016_A q034's gates off their wires.
 A card is drawn only if it passes its step's check right now -- a card that fails is recorded with
 the reason and NOT drawn, because an unchecked drawing is exactly the valid-looking wrong picture the
 split exists to prevent.
@@ -35,7 +37,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "checks"))
 import runner_core as rc  # noqa: E402
 import figure_plugins  # noqa: E402
-from lib import chem_cards, physics_figure, print_trace  # noqa: E402
+from lib import chem_cards, physics_figure, print_trace, raster_trace  # noqa: E402
 import FIGC as figc_check  # noqa: E402
 import FIGP as figp_check  # noqa: E402
 
@@ -87,7 +89,7 @@ def compose(cells, per_row):
 def species_drawing(species):
     return chem_cards.species_svg(species["smiles"], species.get("orient"),
                                   species.get("abbreviate", True), species.get("explicit_h"),
-                                  species.get("annotations"))
+                                  species.get("annotations"), species.get("name"))
 
 
 def chem_figure(card):
@@ -106,16 +108,30 @@ def chem_figure(card):
     return compose(cells, per_row)
 
 
+#: Why a checked physics spec has no drawing: there is no printed geometry to draw it on.
+NOT_ON_PRINT = ("not drawn: the booklet prints this figure as a picture, so there is no printed "
+                "geometry to draw it on or check it against; the printed copy is the figure")
+
+
 def traced(paper, card, figure):
     """(trace, per-species results) when this card's figure is drawn on the booklet's geometry."""
     if card.get("kind") == "not_a_structure" or not figure:
         return None
     trace = figure_plugins.trace_of(paper["meta"]["source_pdf"], paper["meta"]["dpi"],
                                     figure.get("page"), figure.get("bbox"))
-    if trace is None or not print_trace.usable(trace):
+    if trace is None:
         return None
-    results, problems = print_trace.assign(trace, card.get("species") or [])
-    return None if problems else (trace, results)
+    species = card.get("species") or []
+    results, problems = print_trace.assign(trace, species)
+    if print_trace.usable(trace):
+        return None if problems else (trace, results)
+    # A FIGURE OF FORMULAS, no drawn bonds (2018_AA q062's CH4 -> CH3Br -> CH3-CH3, q082's
+    # MnO4- redox): drawn on the print when every species is found there, as its formula or
+    # as a small drawn molecule (q062's CH3-CH3).
+    # RDKit's structures of the same species read as a different figure.
+    if species and not problems and trace.glyphs:
+        return trace, results
+    return None
 
 
 def main():
@@ -167,6 +183,13 @@ def main():
                             entry["layout"] = "booklet"
                             entry["print_match"] = [{"shown_as": r["shown_as"]} for r in results]
                             counts["chem_on_print"] += 1
+                        elif png not in (question.get("vector") or {}):
+                            # A PICTURE-PRINTED FIGURE (2016): the booklet's own figure traced to
+                            # vector lines, so the panel looks like the print as on 2017/2018; the
+                            # card above has already passed its SMILES check.
+                            svg = raster_trace.trace_svg(rc.pp(*CORPUS, png))
+                            entry["layout"] = "traced"
+                            counts["chem_traced"] += 1
                         else:
                             svg = chem_figure(card)
                             entry["layout"] = "rdkit"
@@ -183,7 +206,11 @@ def main():
                             one = None
                             if on_print and results[n - 1]["shown_as"] == "structure":
                                 one = print_trace.component_svg(trace, results[n - 1]["component"])
-                            if one is None:
+                            elif entry.get("layout") == "traced":
+                                # one structure in the figure: the traced figure IS that structure;
+                                # several cannot be told apart in a picture, so none gets its own
+                                one = svg if len(card.get("species") or []) == 1 else None
+                            if one is None and entry.get("layout") != "traced":
                                 one = species_drawing(species)
                             one_rel = os.path.join("figures_drawn", args.paper_id, "q%03d_%s_s%d.svg"
                                                    % (question["qno"], card["figure_id"], n))
@@ -226,14 +253,42 @@ def main():
                                             "precision": round(found["precision"], 2),
                                             "recall": round(found["recall"], 2)}
                     counts["phys_on_print"] += 1
+                elif trace is not None:
+                    # the print is vector and the spec does not lie on it: a wrong drawing
+                    entry.update(status="failed_check", message="; ".join(map(str, wrong))
+                                 if isinstance(wrong, (list, tuple)) else str(wrong))
+                    counts["phys_failed"] += 1
+                    drawn[png] = entry
+                    continue
+                elif png not in (question.get("vector") or {}):
+                    # a picture-printed figure (2016): the booklet's own figure traced to vector
+                    # lines -- never the spec renderer's layout, which floated 2016_A q034's gates
+                    # off their wires and shrank q010's labels
+                    traced_svg = raster_trace.trace_svg(rc.pp(*CORPUS, png))
+                    if not traced_svg:
+                        entry.update(status="not_on_print", message=NOT_ON_PRINT)
+                        counts["phys_not_on_print"] += 1
+                        drawn[png] = entry
+                        continue
+                    write(rel, traced_svg)
+                    entry["layout"] = "traced"
+                    counts["phys_traced"] += 1
                 else:
-                    write(rel, physics_figure.render(output["spec"]))
-                    entry["layout"] = "spec"
+                    entry.update(status="not_on_print", message=NOT_ON_PRINT)
+                    counts["phys_not_on_print"] += 1
+                    drawn[png] = entry
+                    continue
                 entry.update(status="drawn", svg=rel)
                 counts["phys_drawn"] += 1
             drawn[png] = entry
         question["drawn"] = drawn
 
+    if counts["chem_traced"] or counts["phys_traced"]:
+        print("%s: printed as a picture, traced from the print: chemistry %d, physics %d"
+              % (args.paper_id, counts["chem_traced"], counts["phys_traced"]))
+    if counts["chem_not_on_print"] or counts["phys_not_on_print"]:
+        print("%s: printed as a picture, so not drawn: chemistry %d, physics %d"
+              % (args.paper_id, counts["chem_not_on_print"], counts["phys_not_on_print"]))
     print("%s: chemistry drawn %d (%d on the booklet's geometry), not a structure %d, FAILED check %d"
           " | physics drawn %d (%d on the booklet's geometry), out of scope %d, FAILED check %d"
           % (args.paper_id, counts["chem_drawn"], counts["chem_on_print"], counts["chem_not_structure"],

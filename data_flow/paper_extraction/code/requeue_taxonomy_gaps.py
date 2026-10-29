@@ -7,8 +7,9 @@
 The gap loop is: QTOPIC answers `unsure` and names the topic in `proposed_topic` (or picks the
 `Unspecified Topic` placeholder and names it); collect_taxonomy_gaps.py and extend_taxonomy.py mint
 the topic as a local addition; and the question has to be asked AGAIN, now that its chapter's list
-holds the topic it wanted. This script does that last part: it removes exactly those QTOPIC outputs
-whose proposed topic is now in the chapter's list, so `run_step.py QTOPIC --list` offers them again.
+holds the topic it wanted. This script does that last part: it moves exactly those QTOPIC outputs
+whose proposed topic is now in the chapter's list to steps/QTOPIC/superseded/, so
+`run_step.py QTOPIC --list` offers them again.
 Done by hand on 2017 Code-A (9 questions); a script, so the next booklet does not depend on memory.
 An answer whose wanted topic is still absent is left alone -- removing it would only re-ask a
 question the taxonomy still cannot answer.
@@ -56,7 +57,12 @@ def main():
         if any(extend_taxonomy.canonical(wanted) in topics_by_chapter.get(code, set()) for code in codes):
             requeued.append((item, wanted))
             if args.apply:
-                os.remove(path)
+                # KEPT, not deleted: an agent's answer is evidence (the topic it asked for), and
+                # steps/<STEP>/superseded/ is where every replaced answer goes
+                keep = rc.pp("steps", "QTOPIC", "superseded")
+                os.makedirs(keep, exist_ok=True)
+                os.replace(path, os.path.join(keep, os.path.basename(path).replace(
+                    ".runA.json", ".runA.before_taxonomy.json")))
     for item, wanted in requeued:
         print("  re-queue %-16s now offered: %s" % (item, wanted))
     print("%d QTOPIC answer(s) %s" % (len(requeued), "re-queued" if args.apply else "would be re-queued"))

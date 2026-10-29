@@ -221,7 +221,45 @@ def _bullet_columns(page):
         e.pop("line_pitch_pt", None)
 
 
-def collect_blocks(pages):
+def _two_column_order(elements):
+    """A page set in TWO TEXT COLUMNS is read down the left column, then down the right.
+
+    Down-the-page order (below) interleaved the columns of every Physics page: PHY11L ch01 p003
+    read `Note that ...` (left, y 0.39), `the first uncertain digit ...` (right, y 0.39), `We
+    employ ...` (left) -- so a paragraph's other-column half joined the wrong paragraph, the
+    passages were scrambled and `As discussed above` landed before its own heading 1.3. Only a
+    page with at least two narrow text blocks in EACH half is two-column; a biology page (one
+    measure, a side rail) never is. Full-width elements (a table, a footnote) cut the page into
+    bands, and each band is read left column, then right column."""
+    def box(e):
+        return e.get("bbox_sheet") or e["bbox"]
+
+    def side(e):
+        x0, _y0, x1, _y1 = box(e)
+        if x1 - x0 > 0.55:
+            return "full"
+        return "left" if x1 <= 0.52 else ("right" if x0 >= 0.46 else "full")
+
+    texty = [e for e in elements if e["role"] in ("paragraph", "list", "section_heading")]
+    if (sum(side(e) == "left" for e in texty) < 2 or sum(side(e) == "right" for e in texty) < 2):
+        return elements
+    out, band = [], []
+
+    def flush():
+        band.sort(key=lambda e: (side(e) == "right", box(e)[1], box(e)[0]))
+        out.extend(band)
+        band.clear()
+    for e in elements:                       # already sorted down the page
+        if e["role"] not in ct._FURNITURE and side(e) == "full":
+            flush()
+            out.append(e)
+        else:
+            band.append(e)
+    flush()
+    return out
+
+
+def collect_blocks(pages, two_col=False):
     """Every content element of the chapter, in reading order, with its page attached.
 
     READING ORDER IS DOWN THE PAGE, not column-by-column. `elements_in_reading_order` groups
@@ -238,6 +276,8 @@ def collect_blocks(pages):
         elements = sorted(p["elements_in_reading_order"],
                           key=lambda e: ((e.get("bbox_sheet") or e["bbox"])[1],
                                          (e.get("bbox_sheet") or e["bbox"])[0]))
+        if two_col:                    # physics only: measured books keep down-the-page order
+            elements = _two_column_order(elements)
         for e in elements:
             if e["role"] in ct._FURNITURE:
                 continue
@@ -1338,6 +1378,70 @@ def _split_exercise_questions(root, book_base, chapter_num):
         out = []
         for n in nodes:
             body = n.get("body") or ""
+            # PHYSICS NUMBERS ITS EXERCISES `1.1` ... `1.17` (chapter.question), one block each
+            # (`extract_page_layout._split_numbered_exercises`). The question keeps the printed
+            # number and everything the node measured; its marks move with the text.
+            phys = re.match(r"^\s*(%d\.\d{1,2})\s+(.*\S)\s*$" % chapter_num, body, re.S)
+            num_re = re.compile(r"^\s*(%d\.\d{1,2})\s+(.*\S)\s*$" % chapter_num, re.S)
+            if phys and n["kind"] == "list" and n.get("items"):
+                # A run of exercises collapsed into one list (`collapse_lists`): a question at
+                # every item that opens with `C.k`, its (a), (b) ... items joining it.
+                own = (n.get("boxes") if len(n.get("boxes") or []) == len(n["items"]) else None)
+                # ...or one box per QUESTION: each exercise was cut as its own block
+                # (`_split_numbered_exercises`), so p011's 11 boxes are its 11 exercises.
+                heads = [k for k, it in enumerate(n["items"])
+                         if num_re.match((it.get("body") or "").strip())]
+                per_q = (n.get("boxes") if not own and len(n.get("boxes") or []) == len(heads)
+                         else None)
+                cur = None
+                for k_it, it in enumerate(n["items"]):
+                    raw_t = it.get("body") or ""
+                    t = raw_t.strip()
+                    lead_ws = len(raw_t) - len(raw_t.lstrip())
+                    m = num_re.match(t)
+                    # the item's marks (m², s⁻², italic α) move with its text
+                    cut = m.start(2) if m else 0
+                    it_marks = [dict(mk, **{"from": mk["from"] - lead_ws - cut,
+                                            "to": mk["to"] - lead_ws - cut})
+                                for mk in it.get("marks") or [] if mk["from"] - lead_ws >= cut]
+                    if not m and cur is not None:
+                        off = len(cur["body"]) + 1
+                        cur["marks"] += [dict(mk, **{"from": mk["from"] + off, "to": mk["to"] + off})
+                                         for mk in it_marks]
+                    if m or cur is None:
+                        cur = {"kind": "question", "number": m.group(1) if m else None,
+                               "body": m.group(2) if m else t,
+                               "pages": n.get("pages"), "page_file": n.get("page_file"),
+                               "boxes": ([own[k_it]] if own else
+                                         [per_q[heads.index(k_it)]] if per_q and k_it in heads
+                                         else n.get("boxes")),
+                               "belongs": n.get("belongs"), "source": n.get("source"),
+                               "qa": n.get("qa", "auto"), "marks": it_marks,
+                               "id": ct.stable_id("question", book_base, chapter_num,
+                                                  f"{n.get('path', 'x')}.{k_it}"),
+                               **_typography_of(n)}
+                        out.append(cur)
+                    else:
+                        cur["body"] = cur["body"] + "\n" + t
+                        if own:
+                            cur["boxes"] = cur["boxes"] + [own[k_it]]
+                for q in out:
+                    if q.get("kind") == "question" and "body_md" not in q:
+                        q["body_md"] = ct.to_body_md(q["body"], q["marks"])
+                        q["sentences"] = ct.split_sentences(q["body"])
+                continue
+            if phys and n["kind"] in ("para", "box", "list"):
+                at = phys.start(2)
+                q = {k: v for k, v in n.items() if k not in ("items", "line_geom")}
+                q.update(kind="question", number=phys.group(1), body=phys.group(2),
+                         marks=[dict(mk, **{"from": mk["from"] - at, "to": mk["to"] - at})
+                                for mk in n.get("marks") or [] if mk["from"] >= at],
+                         id=ct.stable_id("question", book_base, chapter_num,
+                                         f"{n.get('path', 'x')}.{phys.group(1)}"))
+                q["body_md"] = ct.to_body_md(q["body"], q["marks"])
+                q["sentences"] = ct.split_sentences(q["body"])
+                out.append(q)
+                continue
             # ONE BLOCK CAN BE EXACTLY ONE QUESTION.
             #
             # The text layer can return each exercise as its own block, and the paths below only
@@ -2751,7 +2855,9 @@ def build(book_id, chapter_num, use_agent=True, lang="EN"):
         join_stats["cross_column"] = split_stats
         # The layout join runs AFTER the text join, because it matches numbered elements on
         # `a2_block_n` -- which the text join is what writes.
-        layout_stats = join_agent_layout.apply_agent_layout(layout, chapter, steps_dir=steps)
+        layout_stats = (join_agent_layout.apply_agent_layout(layout, chapter, steps_dir=steps)
+                        if design_lib.a2l_join(book_id) else
+                        {"pages": len(layout["pages"]), "skipped": "a2l_join off for this book"})
         # A2S last: it needs `a2_block_n`, which the text join writes, and it overrides the
         # geometry-derived table grid with the agent's transcription where one exists.
         special_stats = join_agent_special.apply_agent_special(layout, chapter, steps_dir=steps)
@@ -2796,7 +2902,8 @@ def build(book_id, chapter_num, use_agent=True, lang="EN"):
                     break
             if title:
                 break
-    blocks = collapse_lists(stitch_across_pages(collect_blocks(chapter_pages)))
+    blocks = collapse_lists(stitch_across_pages(collect_blocks(
+        chapter_pages, two_col=not design_lib.is_measured(book_id))))
     tree = build_tree(blocks, book_base, chapter_num)
     _titles_before_opener_art(tree)
     _strip_repeated_heading(tree)
@@ -2908,9 +3015,12 @@ def build(book_id, chapter_num, use_agent=True, lang="EN"):
                  # peach box, not Class 11's blue 8.6pt).
                  "items": _rail_items(e.get("text", "")),
                  "indent_pt": _rail_indent(e),
-                 "style": _run_style(e)}
+                 "style": _run_style(e),
+                 # the entry's NUMBER weight when it differs from its title's (PHY11: bold `1.1`)
+                 **({"num_b": e["num_b"]} if e.get("num_b") is not None else {})}
                 for e in p["elements_in_reading_order"]
-                if e["role"] == "contents_entry"]) or None,
+                if e["role"] == "contents_entry"],
+                keep_closers=not design_lib.is_measured(book_id)) or None,
             # THE BOOK'S OWN DECORATION AND TYPE, measured off the page (see
             # `extract_page_layout.page_decor`): panels, bands, boxes, tints and rules in paint
             # order, and the running head's and folio's face, size and colour.
@@ -3199,7 +3309,7 @@ def _rail_items(text):
     return out
 
 
-def _merge_split_rail(entries):
+def _merge_split_rail(entries, keep_closers=False):
     """Rejoin a rail entry the text layer cut in two: number + last title line, and the rest.
 
     BIO12L ch05's rail came back as `The Search for Genetic` (no number) and `5.2 Material`,
@@ -3242,6 +3352,11 @@ def _merge_split_rail(entries):
         k = out.index(e)
         host = out[k - 1] if k else None
         if not host or len(host.get("items") or []) != 1 or not host["items"][0].get("num"):
+            continue
+        # The rail's closing `Summary` / `Exercises` lines are entries of their own, not the
+        # last section's turnover (PHY11L ch01: `1.6 ... applications Summary Exercises`).
+        if keep_closers and re.fullmatch(r"(?:Summary|Exercises|Points to Ponder|Appendix)(?:\s+\S.*)?",
+                                         (its[0].get("title") or "").strip()):
             continue
         hb, eb = host["bbox"], e["bbox"]
         line = max(eb[3] - eb[1], 0.012)
@@ -3493,7 +3608,8 @@ def to_markdown(doc):
                         out.append("| " + " | ".join(r) + " |")
                     out.append("")
             elif k in ("figure", "table"):
-                src = n.get("image") or n.get("image_local")
+                # Our checked drawing where there is one (`_attach_drawn_figures`), else the crop.
+                src = n.get("image_drawn") or n.get("image") or n.get("image_local")
                 cap = (n.get("caption") or "").strip()
                 panels = [q for q in n.get("panels") or [] if q.get("image") or q.get("image_local")]
                 if panels:
@@ -3519,7 +3635,9 @@ def to_markdown(doc):
                 # can cite and no reader can match to the book.
                 num = (n.get("number") or "").strip()
                 body = n.get("body_md") or n.get("body", "")
-                out.append(f"{num}. {body}" if num else body)
+                # `1.3` (Physics, chapter.question) prints bold with no stop, as the book does.
+                out.append((f"**{num}** {body}" if "." in num else f"{num}. {body}")
+                           if num else body)
                 # Sub-parts as the book sets them. One printed line (`parts_inline`, e.g. the
                 # (i)-(v) terms) stays one line; otherwise each part is its own paragraph inside
                 # the list item -- consecutive indented lines with no blank between them are
@@ -4173,6 +4291,95 @@ def slugify(s):
     return s or "chapter"
 
 
+def _drop_equation_twins(doc):
+    """A text-layer scrap inside an equation A2S transcribed is that equation, printed again.
+
+    MathType equations reach the text layer as scattered pieces -- `-3` and `2.51 cm` beside
+    `Density = 4.237g/2.51 cm^3`, `m = 0 − m 2 1/2 .` and `1 v` under exercise 1.13 (PHY11L
+    ch01) -- and each piece the text join could not pair stayed a paragraph of its own, drawn
+    over the typeset equation and listed as prose in the JSON and the Markdown. A short
+    text-layer paragraph lying mostly inside (or within a line of) a transcribed equation's box
+    is dropped. Physics only: its display maths is all transcribed (A2S)."""
+    if doc.get("subject") != "physics":
+        return 0
+    eq = {}
+
+    def boxes(n):
+        return [(b.get("page_file"), b["bbox"]) for b in n.get("boxes") or [] if b.get("bbox")]
+
+    def walk(ns):
+        for n in ns or []:
+            if n.get("latex"):
+                for pf, bb in boxes(n):
+                    eq.setdefault(pf, []).append(bb)
+            walk(n.get("children"))
+    walk(doc["tree"])
+
+    def inside(pf, bb):
+        a = max((bb[2] - bb[0]) * (bb[3] - bb[1]), 1e-9)
+        g = 0.012                                      # about a line of slack
+        for e in eq.get(pf, []):
+            ix = min(bb[2], e[2] + g) - max(bb[0], e[0] - g)
+            iy = min(bb[3], e[3] + g) - max(bb[1], e[1] - g)
+            if ix > 0 and iy > 0 and ix * iy >= 0.5 * a:
+                return True
+        return False
+    dropped = [0]
+
+    def prune(ns):
+        keep = []
+        for n in ns:
+            body = (n.get("body") or "").strip()
+            if (n.get("kind") == "para" and n.get("source") == "text_layer" and not n.get("latex")
+                    and len(body) < 60 and not n.get("children") and boxes(n)
+                    and all(inside(pf, bb) for pf, bb in boxes(n))):
+                dropped[0] += 1
+                continue
+            if n.get("children"):
+                n["children"] = prune(n["children"])
+            keep.append(n)
+        return keep
+    doc["tree"] = prune(doc["tree"])
+    return dropped[0]
+
+
+def _attach_drawn_figures(doc, cdir, cid):
+    """A figure we drew ourselves (step FIGP) replaces its crop in what the reader sees.
+
+    The agent writes a spec, code checks it against the PDF's own vector drawing and draws it
+    (`chapter_steps.py check FIGP` -> steps/FIGP/drawn/<item>.svg). Only a drawing whose check
+    PASSED is attached: `image_drawn` is the SVG (a CDN link after publishing), and the JSON keeps
+    the crop beside it (`image_local`/`image`) and the checked spec (`image_drawn_spec`). The
+    exact HTML and the Markdown show the drawing; a figure without a passing drawing keeps its
+    crop. Same field names as the PHY11L-ch01 build shared by the team (2026-10-28)."""
+    import shutil
+    figures = []
+
+    def rec(ns):
+        for x in ns or []:
+            if x.get("kind") == "figure":
+                figures.append(x)
+            rec(x.get("children"))
+    rec(doc["tree"])
+    for n in figures:
+        if not n.get("image_local"):
+            continue
+        item = f"{cid}-{os.path.splitext(os.path.basename(n['image_local']))[0]}"
+        st_path = os.path.join(ROOT, "steps", "FIGP", "status", f"{item}.json")
+        if not os.path.exists(st_path):
+            continue
+        with open(st_path, encoding="utf-8") as fh:
+            st = json.load(fh)
+        svg = st.get("svg")
+        if st.get("status") != "pass" or not svg or not os.path.exists(os.path.join(ROOT, svg)):
+            continue
+        name = f"{item}.svg"
+        shutil.copyfile(os.path.join(ROOT, svg), os.path.join(cdir, "figures", name))
+        n["image_drawn"] = f"figures/{name}"
+        n["image_drawn_spec"] = f"steps/FIGP/out/{item}.{st.get('run') or 'runA'}.json"
+        n["image_drawn_layout"] = st.get("layout")
+
+
 def write_chapter(book_id, chapter_num, use_agent=True, lang="EN"):
     """Build one chapter and write chapter.json, chapter.md and figures/ into its folder."""
     doc, layout = build(book_id, chapter_num, use_agent=use_agent, lang=lang)
@@ -4393,6 +4600,8 @@ def write_chapter(book_id, chapter_num, use_agent=True, lang="EN"):
                     abs(s["bbox"][0] - r["bbox"][0]) < 0.004 for s in _rail if s.get("indent_pt")):
                 r["indent_pt"] = max(set(_ind), key=_ind.count)
     _opener_figures_to_art(doc, layout)
+    _attach_drawn_figures(doc, cdir, f"{book_id}-ch{chapter_num:02d}")
+    doc.setdefault("text_join", {})["equation_scraps_dropped"] = _drop_equation_twins(doc)
 
     _split_exercise_questions(doc["tree"], doc["book"], doc["chapter"]["number"])
     _walk(doc["tree"], _drop_item_lines)

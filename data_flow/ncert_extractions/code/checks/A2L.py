@@ -98,6 +98,11 @@ def check(data, context):
     # position, which is worse than an honest null, so this is checked rather than trusted.
     known_ns = set()
     blocks = (context or {}).get("blocks") if isinstance(context, dict) else None
+    # The runner (`resolve_single_run_items`) hands the agent's input as `input_data`, not as
+    # `blocks` -- so under the runner this test silently never ran (found on BIO11L ch11-13,
+    # 2026-10-25). Read the blocks from there too.
+    if blocks is None and isinstance(context, dict) and isinstance(context.get("input_data"), dict):
+        blocks = context["input_data"].get("blocks")
     if isinstance(blocks, list):
         known_ns = {b.get("n") for b in blocks if isinstance(b, dict)}
 

@@ -1,0 +1,121 @@
+{
+ "PK": "STYLE#PHY11",
+ "SK": "V1",
+ "kind": "style",
+ "name": "NCERT Physics, Class XI",
+ "applies_to": [
+  "PHY11L"
+ ],
+ "measured": false,
+ "page": {
+  "trim_mm": [
+   215.9,
+   276.58
+  ],
+  "inner_margin_mm": 21.17,
+  "measure_mm": 127.0,
+  "text_top_mm": 33.87,
+  "text_foot_mm": 251.88,
+  "mirrors": true
+ },
+ "type": {
+  "body_pt": 10.5,
+  "leading": 1.27,
+  "ink": "#231f20",
+  "font_body": "\"Bookman Old Style\", Bookman, \"TeX Gyre Bonum\", Georgia, serif",
+  "font_display": "\"Century Gothic\", \"TeX Gyre Adventor\", \"URW Gothic\", Avenir, sans-serif"
+ },
+ "header": {
+  "band": null,
+  "strip": null,
+  "corner": null,
+  "motif": null
+ },
+ "folio": {
+  "style": "plain",
+  "fill": null,
+  "ink": "#00acd2",
+  "w_pt": 30.0,
+  "h_pt": 14.0,
+  "y0_pt": 56.0,
+  "x_recto_pt": 520.0,
+  "x_verso_pt": 60.0,
+  "font": "body",
+  "size_pt": 10.0,
+  "weight": 400,
+  "radius_pt": 0.0,
+  "radius_corners": null,
+  "align": "inner",
+  "pad_pt": 0.0
+ },
+ "running_head": {
+  "y_pt": 56.0,
+  "size_pt": 9.0,
+  "smallcaps": false,
+  "ink": "#00acd2",
+  "font": "body",
+  "verso": "subject",
+  "recto": "chapter_title",
+  "inset_pt": 60.0,
+  "rule": "#00b0d6",
+  "rule_h_pt": 6.0
+ },
+ "footer": {
+  "bar": null,
+  "imprint": {
+   "y_pt": 752.0,
+   "size_pt": 9.0,
+   "font": "sans",
+   "ink": "#000000"
+  }
+ },
+ "opener": {
+  "kind": "centred-bars",
+  "bars": {
+   "fill": "#00abd0",
+   "h_pt": 16.0,
+   "gradient": true
+  }
+ },
+ "kinds": {
+  "para": {
+   "size_rel": 1.0,
+   "align": "justify",
+   "color": "#231f20"
+  },
+  "section": {
+   "size_rel": 1.0,
+   "color": "#00aad5",
+   "variant": "small-caps",
+   "weight": 700,
+   "align": "left"
+  },
+  "list": {
+   "size_rel": 1.0,
+   "align": "left"
+  },
+  "figure": {
+   "render": "image"
+  },
+  "table": {
+   "render": "image"
+  },
+  "box": {
+   "size_rel": 0.95,
+   "align": "left"
+  },
+  "summary": {
+   "size_rel": 1.0,
+   "color": "#00aad5"
+  },
+  "exercises": {
+   "size_rel": 1.0,
+   "color": "#00aad5"
+  }
+ },
+ "furniture_assets": "assets/furniture/PHY11/",
+ "imprint_by_edition": {
+  "O": "2022-23",
+  "L": "2024-25"
+ }
+}

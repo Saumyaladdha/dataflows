@@ -58,14 +58,19 @@ def species_facts(smiles):
     return True, facts
 
 
-def reaction_ok(reaction_smiles):
+def reaction_ok(reaction_smiles, product_may_be_blank=False):
+    """`product_may_be_blank`: the card draws the reaction from its `scheme`, so a product that is
+    the question's blank ("phthalic acid + NH3 --strong heating--> ?", 2019_P1 q078) is left out of
+    the SMILES rather than invented. Reactants are always required."""
     _chem, rxn, _desc, _draw = _rdkit()
     try:
         reaction = rxn.ReactionFromSmarts(reaction_smiles, useSmiles=True)
     except Exception as exc:                                    # noqa: BLE001
         return False, "reaction SMILES does not parse: %s" % exc
-    if reaction.GetNumReactantTemplates() == 0 or reaction.GetNumProductTemplates() == 0:
-        return False, "reaction SMILES has no reactants or no products"
+    if reaction.GetNumReactantTemplates() == 0:
+        return False, "reaction SMILES has no reactants"
+    if reaction.GetNumProductTemplates() == 0 and not product_may_be_blank:
+        return False, "reaction SMILES has no products"
     return True, "ok"
 
 
@@ -109,7 +114,7 @@ def name_check(name, smiles):
     # A METAL COMPLEX written two ways -- Ni(CO)4 as Ni=C=O or as Ni-C#O+ -- has one skeleton and
     # differs only in InChI's charge layer once the metal is disconnected. Same compound; only
     # for complexes, since phenol and phenoxide share a skeleton too and are not the same thing.
-    if (a["inchikey"][:14] == b["inchikey"][:14] and _has_metal(smiles)):
+    if _has_metal(smiles) and _skeleton(rebuilt) and _skeleton(rebuilt) == _skeleton(smiles):
         return "match", "same skeleton as the name (metal complex, charges drawn differently)"
     return "mismatch", "name gives %s, SMILES gives %s" % (a["canonical"], b["canonical"])
 
@@ -117,6 +122,16 @@ def name_check(name, smiles):
 #: Metals whose complexes a booklet draws with dative bonds (and SMILES with charges).
 _METALS = {"Fe", "Co", "Ni", "Cr", "Mn", "Pt", "Pd", "Cu", "Zn", "Ag", "Au", "Ti", "V", "Mo", "W",
            "Ru", "Rh", "Os", "Ir", "Cd", "Hg"}
+
+
+def _skeleton(smiles):
+    """The standard InChI without its charge and protonation layers (the key hashes them in)."""
+    from rdkit import Chem
+    mol = Chem.MolFromSmiles(smiles or "")
+    if mol is None:
+        return None
+    inchi = Chem.MolToInchi(mol) or ""
+    return "/".join(part for part in inchi.split("/") if not part.startswith(("q", "p")))
 
 
 def _has_metal(smiles):
@@ -215,7 +230,7 @@ def _abbreviate(mol):
         return mol
 
 
-def species_svg(smiles, orient=None, abbreviate=True, explicit_h=None, annotations=None):
+def species_svg(smiles, orient=None, abbreviate=True, explicit_h=None, annotations=None, name=None):
     """An SVG drawing of one SMILES: monochrome, fixed bond length, the canvas sized to the molecule.
 
     A FLEXIBLE canvas (-1, -1) with the scale set from the bond length, as the team guide's renderer
@@ -232,6 +247,13 @@ def species_svg(smiles, orient=None, abbreviate=True, explicit_h=None, annotatio
     mol = _prepare(smiles, orient, explicit_h)
     if mol is None:
         return None
+    # A WILDCARD IS THE BOOKLET'S "R": 2016_A q054's R-CH2-CO-CH2-R and q056's amino acids print R
+    # where the card writes [*], and RDKit's "*" read as a different structure. A polymer's chain
+    # ends (q057's cis-polyisoprene) keep "*", the usual mark for a repeat unit's open bonds.
+    if "poly" not in (name or "").lower():
+        for atom in mol.GetAtoms():
+            if atom.GetAtomicNum() == 0 and not atom.HasProp("atomLabel"):
+                atom.SetProp("atomLabel", "R")
     annotations = annotations or []
     for item in annotations:
         if item.get("kind") == "note":
@@ -375,7 +397,7 @@ def scheme_svg(card):
                     continue
                 sp = species[n]
                 svg = species_svg(sp["smiles"], sp.get("orient"), sp.get("abbreviate", True),
-                                  sp.get("explicit_h"), sp.get("annotations"))
+                                  sp.get("explicit_h"), sp.get("annotations"), sp.get("name"))
                 w, h = _size(svg)
                 label = sp.get("label") or ""
                 cells.append(("species", max(w, _text_width(label, 13)), h + (18 if label else 0),
@@ -487,9 +509,13 @@ def check_card(card):
             problems.append("%s: not_a_structure must carry no SMILES" % card.get("figure_id"))
         return problems
     if kind == "reaction":
-        ok, message = reaction_ok(card.get("reaction_smiles") or "")
-        if not ok:
-            problems.append("%s: %s" % (card.get("figure_id"), message))
+        # The brief keeps `reaction_smiles` only "where every species is known"; a reaction with an
+        # unknown is drawn from its `scheme` alone (2019_P1 q047's "A", q078's blank product).
+        if card.get("reaction_smiles") or not card.get("scheme"):
+            ok, message = reaction_ok(card.get("reaction_smiles") or "",
+                                      product_may_be_blank=bool(card.get("scheme")))
+            if not ok:
+                problems.append("%s: %s" % (card.get("figure_id"), message))
     if kind == "structures" and not species:
         problems.append("%s: kind is structures but no species are given" % card.get("figure_id"))
     for n, item in enumerate(species, 1):

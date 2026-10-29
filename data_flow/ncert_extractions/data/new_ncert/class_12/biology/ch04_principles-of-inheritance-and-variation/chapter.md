@@ -67,7 +67,7 @@ Mendel conducted such artificial pollination/cross pollination experiments using
 
 ## 4.2 Inheritance of One Gene
 
-Let us take the example of one such hybridisation experiment carried out by Mendel where he crossed tall and dwarf pea plants to study the inheritance of one gene (Figure 4.2). He collected the seeds produced as a result of this cross and grew them to generate plants of the first hybrid generation. This generation is also called the **Filial****<sub>1</sub>** **progeny** or the **F****<sub>1</sub>**. Mendel observed that all the F<sub>1</sub> progeny plants were tall, like one of its parents; none were dwarf (Figure 4.3). He made similar observations for the other pairs of traits – he found that the F<sub>1</sub> always resembled either one of the parents, and that the trait of the other parent was not seen in them.
+Let us take the example of one such hybridisation experiment carried out by Mendel where he crossed tall and dwarf pea plants to study the inheritance of one gene (Figure 4.2). He collected the seeds produced as a result of this cross and grew them to generate plants of the first hybrid generation. This generation is also called the **Filial<sub>1</sub>** **progeny** or the **F<sub>1</sub>**. Mendel observed that all the F<sub>1</sub> progeny plants were tall, like one of its parents; none were dwarf (Figure 4.3). He made similar observations for the other pairs of traits – he found that the F<sub>1</sub> always resembled either one of the parents, and that the trait of the other parent was not seen in them.
 
 ![Figure 4.2 Steps in making a cross in pea](https://d30lmobgrc5gb8.cloudfront.net/general/26102026/ncert/2026-27/BIO12L/ch04/p055_fig01-7a57328b_26102026.png)
 

@@ -14,7 +14,7 @@ Diversity is not only a characteristic of living organisms but also of content i
 
 Ramdeo Misra is revered as the Father of Ecology in India. Born on 26 August 1908, Ramdeo Misra obtained Ph.D in Ecology (1937) under Prof. W. H. Pearsall, FRS, from Leeds University in UK. He established teaching and research in ecology at the Department of Botany of the Banaras Hindu University, Varanasi. His research laid the foundations for understanding of tropical communities and their succession, environmental responses of plant populations and productivity and nutrient cycling in tropical forest and grassland ecosystems. Misra formulated the first postgraduate course in ecology in India. Over 50 scholars obtained Ph. D degree under his supervision and moved on to other universities and research institutes to initiate ecology teaching and research across the country.
 
-![RAMDEO MISRA (1908-1998)](figures/i002_fig01.png)
+![RAMDEO MISRA (1908-1998)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/i002_fig01_27102026.png)
 
 RAMDEO MISRA (1908-1998)
 
@@ -42,7 +42,7 @@ Another attribute characteristic of a population is *sex ratio*. An individual i
 
 A population at any given time is composed of individuals of different ages. If the age distribution (per cent individuals of a given age or age group) is plotted for the population, the resulting structure is called an age pyramid (Figure 11.1). For human population, the age pyramids generally show age distribution of males and females in a diagram. The shape of the pyramids reflects the growth status of the population - (a) whether it is growing, (b) stable or (c) declining.
 
-![Figure 11.1 Representation of age pyramids for human population](figures/p192_fig01.png)
+![Figure 11.1 Representation of age pyramids for human population](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/p192_fig01_27102026.png)
 
 **Figure 11.1** Representation of age pyramids for human population
 
@@ -57,7 +57,7 @@ The size of a population for any species is not a static parameter. It keeps cha
 - (iii) ***Immigration*** is the number of individuals of the same species that have come into the habitat from elsewhere during the time period under consideration.
 - (iv) ***Emigration*** is the number of individuals of the population who left the habitat and gone elsewhere during the time period under consideration.
 
-![Figure 11.2](figures/p193_fig01.png)
+![Figure 11.2](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/p193_fig01_27102026.png)
 
 **Figure 11.2**
 
@@ -76,7 +76,7 @@ dN/dt = (b – d) × N Let (b–d) = r, then dN/dt = rN
 ![Figure 11.3 Population growth curve
 a when responses are not limiting the growth, plot is exponential,
 b when responses are limiting the growth, plot is logistic,
-K is carrying capacity](figures/p194_fig01.png)
+K is carrying capacity](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/p194_fig01_27102026.png)
 
 **Figure 11.3** Population growth curve
 **a** when responses are not limiting the growth, plot is exponential,
@@ -89,10 +89,12 @@ To give you some idea about the magnitude of r values, for the Norway rat the r 
 
 The above equation describes the exponential or geometric growth pattern of a population (Figure 11.3) and results in a J-shaped curve when we plot N in relation to time. If you are familiar with basic calculus, you can derive the integral form of the exponential growth equation as
 
-Nt = N0 ert
+N<sub>t</sub> = N<sub>0</sub> e<sup>rt</sup>
+
+where
 
 - N<sub>t</sub> = Population density after time t
-- No = Population density at time zero
+- N<sub>0</sub> = Population density at time zero
 - r = intrinsic rate of natural increase
 - e = the base of natural logarithms (2.71828)
 
@@ -165,9 +167,9 @@ In contrast, *endoparasites* are those that live inside the host body at differe
 
 - (*iv*) ***Commensalism***: This is the interaction in which one species benefits and the other is neither harmed nor benefited. An orchid growing as an *epiphyte* on a mango branch, and barnacles growing on the back of a whale benefit while neither the mango tree nor the whale derives any apparent benefit. The cattle egret and grazing cattle in close association, a sight you are most likely to catch if you live in farmed rural areas, is a classic example of commensalism. The egrets always forage close to where the cattle are grazing because the cattle, as they move, stir up and flush out insects from the vegetation that otherwise might be difficult for the egrets to find and catch. Another example of commensalism is the interaction between sea anemone that has stinging tentacles and the clown fish that lives among them. The fish gets protection from predators which stay away from the stinging tentacles. The anemone does not appear to derive any benefit by hosting the clown fish.
 
-![Figure 11.4 (a)](figures/p201_fig01a.png)
+![Figure 11.4 (a)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/p201_fig01a_27102026.png)
 
-![Figure 11.4 (b)](figures/p201_fig01b.png)
+![Figure 11.4 (b)](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/p201_fig01b_27102026.png)
 
 **Figure 11.4** Mutual relationship between fig tree and wasp: (a) Fig flower is pollinated by wasp; (b) Wasp laying eggs in a fig fruit
 
@@ -175,7 +177,7 @@ In contrast, *endoparasites* are those that live inside the host body at differe
 
 The most spectacular and evolutionarily fascinating examples of mutualism are found in plant-animal relationships. Plants need the help of animals for pollinating their flowers and dispersing their seeds. Animals obviously have to be paid ‘fees’ for the services that plants expect from them. Plants offer rewards or fees in the form of pollen and nectar for pollinators and juicy and nutritious fruits for seed dispersers. But the mutually beneficial system should also be safeguarded against ‘cheaters’, for example, animals that try to steal nectar without aiding in pollination. Now you can see why plant-animal interactions often involve *co-evolution* of the mutualists, that is, the evolutions of the flower and its pollinator species are tightly linked with one another. In many species of fig trees, there is a tight one-to-one relationship with the pollinator species of wasp (Figure 11.4). It means that a given fig species can be pollinated only by its ‘partner’ wasp species and no other species. The female wasp uses the fruit not only as an oviposition (egg-laying) site but uses the developing seeds within the fruit for nourishing its larvae. The wasp pollinates the fig inflorescence while searching for suitable egg-laying sites. In return for the favour of pollination the fig offers the wasp some of its developing seeds, as food for the developing wasp larvae.
 
-![Figure 11.5 Showing bee-a pollinator on orchid flower](figures/p202_fig01.png)
+![Figure 11.5 Showing bee-a pollinator on orchid flower](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch11/p202_fig01_27102026.png)
 
 **Figure 11.5** Showing bee-a pollinator on orchid flower
 

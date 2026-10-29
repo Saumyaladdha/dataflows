@@ -147,6 +147,13 @@ def publish(cid, dry_run=False):
                 q["image_sha256"] = cmap.get(os.path.basename(q["image_local"]), {}).get(
                     "sha256", q.get("image_sha256"))
                 del q["image_local"]
+        # A figure we drew ourselves (step FIGP) is its own file with its own link.
+        if n.get("image_drawn") and not n["image_drawn"].startswith("http"):
+            local = n["image_drawn"]
+            url = link(local, None, None)
+            if url and not dry_run:
+                n["image_drawn"] = url
+                n["image_drawn_sha256"] = cmap.get(os.path.basename(local), {}).get("sha256")
         if not n.get("image_local"):
             continue
         url = link(n["image_local"], n.get("image"), n.get("image_sha256"))

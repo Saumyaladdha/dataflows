@@ -197,6 +197,9 @@ def apply_agent_text(layout, chapter, steps_dir="steps"):
     """
     stats = {"pages": 0, "pages_with_agent": 0, "blocks_replaced": 0,
              "blocks_unmatched_agent": 0, "blocks_kept_pdf": 0, "pages_missing": []}
+    import book_design
+    # column continuations are a physics rule; measured (biology) books keep their join
+    new_rules = not book_design.is_measured(chapter.split("-ch")[0])
     for pi, page in enumerate(layout["pages"], 1):
         stats["pages"] += 1
         path = best_a2_path(chapter, pi, steps_dir)
@@ -317,6 +320,24 @@ def apply_agent_text(layout, chapter, steps_dir="steps"):
                     matched_pdf.add(j)
                     heads_before.append((els[j], el))
                     _take_runs(el, src)
+            # A PARAGRAPH THAT CROSSES INTO THE OTHER COLUMN is two printed pieces, like one that
+            # crosses a page. Absorbed, the element took the union of both columns' boxes and was
+            # drawn full-width over the page (PHY11L ch01 p003 `As discussed above ... digits
+            # plus` | `the first uncertain digit ...`, p005, p008). The piece in the other column
+            # keeps its own box and takes the agent's words from its own first words on, marked
+            # as continuing -- the build joins the two into one node with a box per piece.
+            for j in list(absorbed.get(bj) or []) if new_rules else []:
+                cut = _column_continuation_cut(src, els[j], el.get("text") or "")
+                if cut is None:
+                    continue
+                absorbed[bj].remove(j)
+                tail_text = el["text"][cut:].strip()
+                el["text"] = el["text"][:cut].rstrip()
+                _take_runs(el, src)
+                _take_agent_block(els[j], dict(blk, text=tail_text, continues_from_previous=True))
+                els[j]["continues_from_previous"] = True
+                matched_pdf.add(j)
+                stats["column_continuations"] = stats.get("column_continuations", 0) + 1
             if absorbed.get(bj):
                 # SEVERAL LAYER BLOCKS, ONE AGENT BLOCK -- the agent's text already holds them,
                 # so they leave the page and the element takes their measured boxes.
@@ -554,6 +575,27 @@ def _split_absorbed_paragraphs(el, group, page):
         if k:
             parts.append(tgt)
     return parts
+
+
+def _column_continuation_cut(host, member, agent_text):
+    """Where in the agent's text `member` -- an absorbed layer block in ANOTHER column -- begins,
+    or None. Another column: the two boxes barely overlap across. The cut is found by the
+    member's own opening words (layer text), so the agent's words are divided exactly where the
+    printed column breaks."""
+    hb, mb = host.get("bbox_pt"), member.get("bbox_pt")
+    if not hb or not mb:
+        return None
+    overlap = min(hb[2], mb[2]) - max(hb[0], mb[0])
+    if overlap > 0.3 * min(hb[2] - hb[0], mb[2] - mb[0]):
+        return None
+    words = re.findall(r"[A-Za-z0-9]+", member.get("text") or "")[:6]
+    if len(words) < 3:
+        return None
+    pat = r"\b" + r"\W+".join(re.escape(w) for w in words)
+    m = re.search(pat, agent_text)
+    if not m or m.start() < 20:
+        return None
+    return m.start()
 
 
 def _set_union_geometry(el, members, page):
@@ -2165,8 +2207,17 @@ def apply_agent_figures(layout, chapter, steps_dir="steps", pdf_path=None):
                 continue
             raw = [v * k for v in b["bbox"]]
             area = [raw[0] - 4, raw[1] - 4, raw[2] + 4, raw[3] + 4]
+            import book_design as _bd_caption
+            caption_above_ok = not _bd_caption.is_measured(chapter.split("-ch")[0])
+            # ...or a CAPTION-SIZED table just above A2's box: A2 boxes the grid, not its title,
+            # so Table 1.2's caption (PHY11L ch01 p003) ended 5pt above the box and the drawn
+            # table under it was never grown.
             tbl = next((e for i, e in enumerate(els) if i not in gone and e["role"] == "table"
-                        and _centre_in(e["bbox_pt"], area)), None)
+                        and (_centre_in(e["bbox_pt"], area)
+                             or (caption_above_ok
+                                 and 0 <= area[1] - e["bbox_pt"][3] <= 16
+                                 and min(e["bbox_pt"][2], area[2]) - max(e["bbox_pt"][0], area[0]) > 0))),
+                       None)
             if tbl is None or tbl.get("grid_drawn"):
                 continue
             tb = tbl["bbox_pt"]

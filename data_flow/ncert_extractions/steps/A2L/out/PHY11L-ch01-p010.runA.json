@@ -1,0 +1,146 @@
+{
+ "page": {
+  "page_kind": "ordinary",
+  "width_px": 1826,
+  "height_px": 2159,
+  "body_text_size_px": 17,
+  "text_block": [
+   0.226,
+   0.096,
+   0.83,
+   0.93
+  ],
+  "fill": 0.97,
+  "columns": [
+   {
+    "id": "full",
+    "x0": 0.226,
+    "x1": 0.83
+   }
+  ]
+ },
+ "elements": [
+  {
+   "n": null,
+   "role": "page_number",
+   "bbox": [
+    0.169,
+    0.066,
+    0.182,
+    0.073
+   ],
+   "column": "full",
+   "size_rel": 0.88,
+   "align": "left",
+   "font": "serif",
+   "text_color": "#00adef"
+  },
+  {
+   "n": null,
+   "role": "running_header",
+   "bbox": [
+    0.831,
+    0.066,
+    0.887,
+    0.073
+   ],
+   "column": "full",
+   "size_rel": 0.88,
+   "align": "right",
+   "font": "serif",
+   "text_color": "#00adef"
+  },
+  {
+   "n": null,
+   "role": "page_header_band",
+   "bbox": [
+    0.167,
+    0.075,
+    0.887,
+    0.08
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "fill": "#00adef",
+   "space_before": 0.002
+  },
+  {
+   "n": 1,
+   "role": "box",
+   "bbox": [
+    0.204,
+    0.096,
+    0.85,
+    0.661
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.016,
+   "align": "justify",
+   "font": "serif",
+   "fill": "#c6eafb"
+  },
+  {
+   "n": 2,
+   "role": "section_heading",
+   "bbox": [
+    0.503,
+    0.71,
+    0.588,
+    0.717
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.048,
+   "align": "center",
+   "font": "serif-bold",
+   "text_color": "#00adef"
+  },
+  {
+   "n": 3,
+   "role": "paragraph",
+   "bbox": [
+    0.226,
+    0.736,
+    0.719,
+    0.748
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.019,
+   "align": "left",
+   "font": "serif-bold"
+  },
+  {
+   "n": 4,
+   "role": "list",
+   "bbox": [
+    0.227,
+    0.751,
+    0.828,
+    0.831
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.003,
+   "align": "justify",
+   "font": "serif"
+  },
+  {
+   "n": 5,
+   "role": "list",
+   "bbox": [
+    0.227,
+    0.839,
+    0.594,
+    0.908
+   ],
+   "column": "full",
+   "size_rel": 1.0,
+   "space_before": 0.008,
+   "align": "left",
+   "font": "serif"
+  }
+ ],
+ "note": "Verso body page, single full column. Folio '10' top-left and running head 'PHYSICS' top-right in cyan #00adef above a cyan header band (#00adef, y~0.075-0.080). Summary is one light-blue panel (#c6eafb flat interior, wider than the text measure at x 0.204-0.850) holding the cyan SUMMARY heading and 11 numbered points; reported as one box element n=1. Exercise numbers 1.1/1.2 are cyan bold; sub-parts (a)-(d) are indented ~0.036 under each question within the list elements. body_text_size_px is cap height of body prose (17px). The '2024-25' stamp at the page foot is not a folio and is not reported. text_block depth taken as y 0.096-0.930 (deepest body line on this spread, p011). size_pt omitted (DPI not known). Faint diagonal NCERT watermark ignored."
+}

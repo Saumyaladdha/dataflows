@@ -139,6 +139,68 @@ def _subpaths(drawing):
     return out
 
 
+def _point_in(p, polygon):
+    """Ray casting: is p inside the polygon?"""
+    x, y = p
+    inside = False
+    n = len(polygon)
+    for k in range(n):
+        x1, y1 = polygon[k]
+        x2, y2 = polygon[(k + 1) % n]
+        if (y1 > y) != (y2 > y):
+            if x < (x2 - x1) * (y - y1) / (y2 - y1) + x1:
+                inside = not inside
+    return inside
+
+
+def _clip_segment(a, b, polygon):
+    """The pieces of segment a-b that lie inside the polygon."""
+    ts = [0.0, 1.0]
+    dx, dy = b[0] - a[0], b[1] - a[1]
+    n = len(polygon)
+    for k in range(n):
+        p, q = polygon[k], polygon[(k + 1) % n]
+        ex, ey = q[0] - p[0], q[1] - p[1]
+        den = dx * ey - dy * ex
+        if abs(den) < 1e-12:
+            continue
+        t = ((p[0] - a[0]) * ey - (p[1] - a[1]) * ex) / den
+        u = ((p[0] - a[0]) * dy - (p[1] - a[1]) * dx) / den
+        if 0 < t < 1 and 0 <= u <= 1:
+            ts.append(t)
+    ts.sort()
+    out = []
+    for t0, t1 in zip(ts, ts[1:]):
+        if t1 - t0 < 1e-9:
+            continue
+        mid = (a[0] + dx * (t0 + t1) / 2, a[1] + dy * (t0 + t1) / 2)
+        if _point_in(mid, polygon):
+            out.append(((a[0] + dx * t0, a[1] + dy * t0), (a[0] + dx * t1, a[1] + dy * t1)))
+    return out
+
+
+def _clipped(drawing, polygons):
+    """A stroked drawing with its straight pieces cut to every clip polygon (curves kept)."""
+    items = []
+    for item in drawing["items"]:
+        if item[0] != "l":
+            items.append(item)
+            continue
+        pieces = [(_pt(item[1]), _pt(item[2]))]
+        for polygon in polygons:
+            pieces = [piece for a, b in pieces for piece in _clip_segment(a, b, polygon)]
+        for a, b in pieces:
+            items.append(("l", fitz_point(a), fitz_point(b)))
+    if not items:
+        return None
+    return dict(drawing, items=items, closePath=False)
+
+
+def fitz_point(p):
+    import pymupdf
+    return pymupdf.Point(p[0], p[1])
+
+
 def _inside(box, rect, slack=1.5):
     return (box[0] >= rect[0] - slack and box[1] >= rect[1] - slack and
             box[2] <= rect[2] + slack and box[3] <= rect[3] + slack)
@@ -149,11 +211,12 @@ def _is_white(color):
 
 
 class Glyph:
-    __slots__ = ("c", "bbox", "origin", "size", "font", "color", "bold", "script", "host")
+    __slots__ = ("c", "bbox", "origin", "size", "font", "color", "bold", "script", "host", "angle")
 
-    def __init__(self, c, bbox, origin, size, font, color, bold):
+    def __init__(self, c, bbox, origin, size, font, color, bold, angle=0.0):
         self.c, self.bbox, self.origin, self.size = c, bbox, origin, size
         self.font, self.color, self.bold = font, color, bold
+        self.angle = angle          # degrees: text set along a slope (2018_AA q026's mg sin 30°)
         self.script = None          # "sub" | "sup" for a small character set beside a big one
         self.host = None
 
@@ -197,10 +260,64 @@ def _glyphs(page, rect):
                     if "Symbol" in font and len(c) == 1 and 0xF000 <= ord(c) <= 0xF0FF:
                         c = SYMBOL.get(chr(ord(c) - 0xF000), chr(ord(c) - 0xF000))
                     color = span.get("color", 0)
+                    direction = line.get("dir") or (1.0, 0.0)
                     out.append(Glyph(c, box, tuple(ch["origin"]), span["size"], font,
                                      "#%06x" % color, bool(span.get("flags", 0) & 16)
-                                     or "Bold" in font))
+                                     or "Bold" in font,
+                                     math.degrees(math.atan2(direction[1], direction[0]))))
     return out
+
+
+#: A face is bold when its strokes are at least this wide, as a fraction of the type size: midway
+#: between Arial Regular (0.088 em, the StemV the booklets declare for it) and Arial Bold (~0.15).
+BOLD_STEM_EM = 0.115
+#: Glyphs measured per font: enough for a stable median, few enough to stay cheap.
+BOLD_SAMPLE = 12
+_BOLD = {}
+
+
+def _stem_em(page, glyph, zoom=12.0):
+    """Stroke width of one printed glyph over its type size, from the ink itself."""
+    import numpy as np
+    import pymupdf
+    from scipy import ndimage
+    rect = pymupdf.Rect(glyph.bbox)
+    if rect.is_empty or rect.width < 1 or glyph.size <= 0:
+        return None
+    pix = page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), clip=rect, alpha=False,
+                          colorspace=pymupdf.csGRAY)
+    img = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.width)
+    ink = img < 110                       # dark ink only: the pale watermark behind stays out
+    if ink.sum() < 20:
+        return None
+    depth = ndimage.distance_transform_edt(ink)
+    ridge = (depth == ndimage.maximum_filter(depth, size=3)) & (depth > 1)
+    if not ridge.any():
+        return None
+    return 2 * float(np.median(depth[ridge])) / zoom / glyph.size
+
+
+def _measure_bold(page, glyphs):
+    """Mark the glyphs of a bold face bold, measured from the ink where the PDF does not say.
+
+    2019 Code-P1 letters every figure in bold sans, but its fonts are subset Type 1 conversions
+    named "TT7695o00" with no weight anywhere -- no flag, no /FontWeight, no name -- so every label
+    was drawn regular beside a bold print. The stroke width settles it: 0.13-0.16 em there, 0.09
+    for its regular Symbol glyphs."""
+    by_font = collections.defaultdict(list)
+    for g in glyphs:
+        if g.c.isalnum() and not g.bold:
+            by_font[g.font].append(g)
+    for font, members in by_font.items():
+        key = (id(page.parent), page.number, font)
+        if key not in _BOLD:
+            widths = [w for w in (_stem_em(page, g) for g in members[:BOLD_SAMPLE]) if w]
+            widths.sort()
+            _BOLD[key] = bool(widths) and widths[len(widths) // 2] >= BOLD_STEM_EM
+        if _BOLD[key]:
+            for g in glyphs:
+                if g.font == font:
+                    g.bold = True
 
 
 def _body_font(page):
@@ -710,6 +827,15 @@ def _labels_and_dash_bonds(glyphs):
         # split on dashes inside a word: "H-NH2"
         parts, cur = [], []
         for g in word:
+            if g.c.isspace():
+                continue                  # 2019_P1 q065 sets N2 as "N", " ", "2"
+            # a "+" ON the line is the reaction's plus, not a charge (charges are raised):
+            # 2019_P1 q065 sets "Cl + N2" tight enough that "Cl+" came out as one word
+            if g.c == "+" and g.script is None:
+                if cur:
+                    parts.append(cur)
+                cur = []
+                continue
             if g.c in DASHES and g.script is None:
                 if cur:
                     parts.append(cur)
@@ -723,11 +849,24 @@ def _labels_and_dash_bonds(glyphs):
     built = []
     for part in labels:
         text = "".join(g.c for g in part if g.script != "sup")
+        # CHLORINE TYPED WITH A CAPITAL I: 2019 Code-P1 sets every Cl as "CI" (identical in its
+        # sans face), which parsed as carbon + iodine, so no chlorinated ring could match. Read as
+        # Cl unless a count follows ("CI4" is carbon tetraiodide); the drawing still re-emits the
+        # printed glyphs, so the page shows exactly what the booklet prints.
+        text = re.sub(r"CI(?![0-9a-z])", "Cl", text)
         charge = "".join(g.c for g in part if g.script == "sup")
         lab = Label(text, part)
         lab.charge = charge
         if text in DASHES or text.strip() in DASHES:
             lab.tokens = None             # a dash
+        elif text in ABBREVIATIONS:
+            # A GROUP WRITTEN AS ITS SHORT NAME: 2019_P1 q069 prints phenol as "Ph-O-H". The bond
+            # arrives at the group's first carbon; the rest of the group only counts, as the
+            # bracketed atoms of CH(CH3)2 do.
+            mains = [g for g in part if g.script is None]
+            attach, hidden = ABBREVIATIONS[text]
+            lab.tokens = [(attach[0], attach[1], mains[0].bbox[0], mains[-1].bbox[2])]
+            lab.hidden = collections.Counter(hidden)
         elif LABEL.match(text) and all(t[0] in ELEMENTS for t in TOKEN.findall(text)):
             # token x-ranges from the glyphs that spell each token
             mains = [g for g in part if g.script is None]
@@ -811,9 +950,25 @@ def read(page, rect_pt, keep_words=()):
     spec's labels, which a booklet may letter in its text face."""
     tr = Trace()
     tr.rect = tuple(rect_pt)
-    for drawing in page.get_drawings():
+    clips = []                            # (level, polygon) of the clip paths in force
+    for drawing in page.get_drawings(extended=True):
+        kind, level = drawing.get("type"), drawing.get("level", 0)
+        clips = [c for c in clips if c[0] < level]
+        if kind == "clip":
+            polygon = [p for sp in _subpaths(dict(drawing, type="f")) for p in sp.points]
+            if len(polygon) >= 3:
+                clips.append((level, polygon))
+            continue
+        if kind == "group" or kind is None:
+            continue
         if drawing.get("type") == "f" and _is_white(drawing.get("fill")):
             continue
+        if drawing.get("type") == "s" and clips:
+            # A STROKE CUT BY A CLIP PATH: 2018_AA q035's wedge hatching is long parallel lines
+            # the PDF clips to the wedge. Drawn without the clip they ran across the whole figure.
+            drawing = _clipped(drawing, [c[1] for c in clips])
+            if drawing is None:
+                continue
         for sp in _subpaths(drawing):
             if not sp.points:
                 continue
@@ -871,6 +1026,7 @@ def read(page, rect_pt, keep_words=()):
                 return False
         return True
     tr.glyphs = [g for g in tr.glyphs if not (g.c in ".,:;" and alone(g))]
+    _measure_bold(page, tr.glyphs)
     # ...and a speck of ink standing alone is the same full stop drawn as a path
     def speck(sp):
         b = sp.bbox
@@ -920,6 +1076,30 @@ def read(page, rect_pt, keep_words=()):
     for s in raw:
         if s.length > 1.6 * tr.L:
             arrow_paths |= s.subpaths
+    # ...or a line ending in an OPEN head: two short strokes from its tip, folded back on either
+    # side at under 60 degrees. 2019_P1 q055's reaction arrow is shorter than 1.6 bonds and its head
+    # is a chevron, not a filled triangle, so the shaft was read as a bond to the CH3 before it.
+    # Bonds never meet like that: at an atom they spread about 120 degrees apart.
+    wings_of = [h for h in raw if h.length < 0.5 * tr.L]
+    for s in raw:
+        for tip, tail in ((s.a, s.b), (s.b, s.a)):
+            back = (tail[0] - tip[0], tail[1] - tip[1])
+            sides = {}
+            for h in wings_of:
+                if h is s or h.length * 2 > s.length:
+                    continue
+                for near, far in ((h.a, h.b), (h.b, h.a)):
+                    if _dist(near, tip) > 2 * tr.w:
+                        continue
+                    v = (far[0] - near[0], far[1] - near[1])
+                    n1, n2 = math.hypot(*v), math.hypot(*back)
+                    if n1 and n2 and (v[0] * back[0] + v[1] * back[1]) / (n1 * n2) > 0.5:
+                        cross = back[0] * v[1] - back[1] * v[0]
+                        sides.setdefault(cross > 0, h)
+            if len(sides) == 2:
+                arrow_paths |= s.subpaths
+                for h in sides.values():
+                    arrow_paths |= h.subpaths
     # ...or a line that runs into an arrowhead, however short (q080's second arrow is a bond
     # long); or the straight lead-in of a curved arrow, which runs on into the curve
     raw = [s for s in raw if not (s.subpaths & arrow_paths) and not into_head(s)
@@ -1036,6 +1216,14 @@ def read(page, rect_pt, keep_words=()):
 
 #: Counter-ions a booklet writes INTO a label: "ONa", "COONa", "SO3K".
 COUNTER_IONS = {"Li", "Na", "K", "Rb", "Cs"}
+#: Groups printed by their short name: the attaching atom (element, count) and every other atom of
+#: the group, hydrogens included (Ph = C6H5: the ipso carbon, then C5H5).
+ABBREVIATIONS = {
+    "Ph": (("C", 1), {"C": 5, "H": 5}),
+    "Me": (("C", 1), {"H": 3}),
+    "Et": (("C", 1), {"C": 1, "H": 5}),
+}
+HALIDE_IONS = {"F", "Cl", "Br", "I"}
 
 
 def _mol_graph(mol):
@@ -1054,6 +1242,14 @@ def _mol_graph(mol):
               if a.GetSymbol() in ("O", "N", "S") and a.GetFormalCharge() < 0]
     for c, a in zip(cations, anions):
         M.add_edge(a, c, order=1)
+    # ...and the other way round: a lone halide written into its cation's label, as the "N2Cl" of
+    # benzenediazonium chloride (2019_P1 q065), joins the cationic atom
+    halides = [a.GetIdx() for a in mol.GetAtoms()
+               if a.GetSymbol() in HALIDE_IONS and a.GetDegree() == 0 and a.GetFormalCharge() < 0]
+    centres = [a.GetIdx() for a in mol.GetAtoms()
+               if a.GetSymbol() in ("N", "P", "S", "O") and a.GetFormalCharge() > 0]
+    for h, c in zip(halides, centres):
+        M.add_edge(c, h, order=1)
     return M
 
 
@@ -1253,9 +1449,11 @@ def svg(trace, keep_subpaths=None, keep_glyphs=None, box=None, scale=2.0, pad=3.
         if g.c.isspace():
             continue
         style = styles.get(g.font) or {}
-        parts.append('<text x="%.2f" y="%.2f" font-family="%s" '
+        turn = ('' if abs(g.angle) < 0.5 else ' transform="rotate(%.1f %.2f %.2f)"'
+                % (g.angle, g.origin[0] - x0, g.origin[1] - y0))
+        parts.append('<text x="%.2f" y="%.2f"%s font-family="%s" '
                      'font-size="%.2f"%s%s fill="%s">%s</text>'
-                     % (g.origin[0] - x0, g.origin[1] - y0,
+                     % (g.origin[0] - x0, g.origin[1] - y0, turn,
                         "'Times New Roman', Times, serif" if style.get("serif")
                         else "Arial, Helvetica, sans-serif", g.size * 0.98,
                         ' font-weight="bold"' if g.bold else "",

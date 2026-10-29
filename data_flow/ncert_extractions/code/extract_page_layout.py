@@ -758,7 +758,7 @@ def _fill_shows(page, rect, fill, cache):
     return not tot or hit >= tot / 50
 
 
-def page_decor(page, figure_boxes, ruled_boxes=()):
+def page_decor(page, figure_boxes, ruled_boxes=(), head_bar=False):
     """The page's decoration as the PDF draws it: [{z, kind, bbox_pt, fill, stroke, width,
     opacity, radius}], in paint order (`z` is MuPDF's sequence number, the same order the page
     is painted in).
@@ -801,6 +801,11 @@ def page_decor(page, figure_boxes, ruled_boxes=()):
         bleeds = r.x0 <= 1 or r.y0 <= 1 or r.x1 >= pw - 1 or r.y1 >= ph - 1
         panel = (w >= 20 and h >= 6 and w * h >= 300) or (bleeds and w >= 20 and h >= 2)
         rule = stroke and ((w >= 40 and h < 3) or (h >= 40 and w < 3))
+        # THE RUNNING HEAD'S RULE IS A FILLED BAR. PHY11 closes its running head with a 474 x 4pt
+        # cyan bar under it: too thin for a panel, not stroked, so it was dropped and no page drew
+        # it (PHY11L ch01, 2026-10-28). A long, thin filled bar at the head of the page is a rule.
+        if head_bar and fill and not stroke and h < 6 and w >= 0.5 * pw and r.y1 < 0.12 * ph:
+            rule = True
         if d.get("hairline"):
             panel, rule = False, max(w, h) >= 40
             # a table's grid and a figure's own lines are in their crops, not page decoration
@@ -1127,10 +1132,10 @@ def merge_image_blocks(boxes, page_w, page_h, gap_pt=5.0, min_pt=10.0):
     return merged
 
 
-def classify_image(bbox, page_w, page_h, design):
+def classify_image(bbox, page_w, page_h, design, tall_ground=False):
     """`figure` or `page_furniture` for a non-text block -- see note 6 in the module docstring."""
     frac = (bbox[0] / page_w, bbox[1] / page_h, bbox[2] / page_w, bbox[3] / page_h)
-    if design_lib.is_page_ground(frac):
+    if design_lib.is_page_ground(frac) or (tall_ground and design_lib.is_tall_ground(frac)):
         return "page_furniture", "page ground"
     if design_lib.is_watermark(frac):
         return "page_furniture", "watermark"
@@ -1430,6 +1435,74 @@ def _split_head_from_title(blocks, page_h):
     return out
 
 
+def _split_heading_from_body(blocks):
+    """A numbered heading is its own block, even when the text layer files the prose under it.
+
+    PHY11L ch01 p001 returns `1.2 THE INTERNATIONAL SYSTEM OF UNITS` (cyan Bookman-Demi) and the
+    paragraph `In earlier time scientists ...` (black Bookman-Light) as ONE block; it typed as a
+    section heading and the paragraph became a heading's body, missing from the page. The leading
+    rows that open with `n.m` and are set bold or in colour are split from the plain rows below.
+    """
+    def styled(row):
+        spans = [s for ln in row for s in ln["spans"] if s["text"].strip()]
+        return bool(spans) and all((s.get("flags", 0) & 16) or "Demi" in s.get("font", "")
+                                   or "Bold" in s.get("font", "")
+                                   or (s.get("color", 0) not in (0, 0x231F20)) for s in spans)
+
+    out = []
+    for b in blocks:
+        if b.get("type") != 0 or len(b.get("lines") or []) < 2:
+            out.append(b)
+            continue
+        rows = _line_rows(b["lines"])
+        first = " ".join(s["text"] for ln in rows[0] for s in ln["spans"]).strip()
+        k = 0
+        while k < len(rows) and styled(rows[k]):
+            k += 1
+        if 0 < k < len(rows) and re.match(r"^\d+(\.\d+)+\s+\S", first):
+            for part in (rows[:k], rows[k:]):
+                lines = [ln for r in part for ln in r]
+                bx = [ln["bbox"] for ln in lines]
+                out.append({**b, "lines": lines,
+                            "bbox": (min(x[0] for x in bx), min(x[1] for x in bx),
+                                     max(x[2] for x in bx), max(x[3] for x in bx))})
+            continue
+        out.append(b)
+    return out
+
+
+def _split_numbered_exercises(blocks, chapter_num):
+    """Each exercise `C.k` is its own block (Physics numbers its exercises `1.1` ... `1.17`).
+
+    The layer returned exercises 1.3-1.7 as ONE block and 1.8 with 1.10 as another, and as a
+    `n.m` line set bold they typed as section headings: five questions vanished into one
+    heading's title and three printed as one paragraph (PHY11L ch01 p011). A block is cut at
+    every row that opens with this chapter's `C.k` number, and the pieces are marked so the
+    classifier types them as the questions they are."""
+    num_re = re.compile(r"^\s*%d\.\d{1,2}\s" % chapter_num)
+    out = []
+    for b in blocks:
+        if b.get("type") != 0 or not b.get("lines"):
+            out.append(b)
+            continue
+        rows = _line_rows(b["lines"])
+        starts = [k for k, r in enumerate(rows)
+                  if num_re.match(" ".join(s["text"] for ln in r for s in ln["spans"]) + " ")]
+        if not starts:
+            out.append(b)
+            continue
+        cuts = ([0] if starts[0] else []) + starts + [len(rows)]
+        for a, z in zip(cuts, cuts[1:]):
+            lines = [ln for r in rows[a:z] for ln in r]
+            if not lines:
+                continue
+            bx = [ln["bbox"] for ln in lines]
+            out.append({**b, "lines": lines, "_exercise": a in starts,
+                        "bbox": (min(x[0] for x in bx), min(x[1] for x in bx),
+                                 max(x[2] for x in bx), max(x[3] for x in bx))})
+    return out
+
+
 def _trim_line_start(ln, k):
     """Cut the first `k` characters off a text line, span by span (text and `chars` alike)."""
     for s in ln.get("spans") or []:
@@ -1568,6 +1641,11 @@ def extract(book_id, chapter_num):
         design = None
     doc = pymupdf.open(path)
     pages = []
+    in_exercises = False
+    # THE PHYSICS RULES (2026-10-28) APPLY ONLY TO BOOKS NOT YET MEASURED. Run over every
+    # biology chapter they changed 19 approved Class 11 pages (tables, opener grounds, order);
+    # the measured books keep exactly the behaviour they were approved with.
+    new_rules = not design_lib.is_measured(book_id)
     for pi, page in enumerate(doc):
         pw, ph = page.rect.width, page.rect.height
         raw = page.get_text("dict")
@@ -1583,6 +1661,15 @@ def extract(book_id, chapter_num):
 
         elements, fragments = [], []
         raw["blocks"] = _split_head_from_title(_prepare_text_blocks(raw["blocks"]), ph)
+        if new_rules:
+            raw["blocks"] = _split_heading_from_body(raw["blocks"])
+        # PAST THE EXERCISES HEADING, `1.3 A calorie is ...` is a question, not a heading.
+        if new_rules and not in_exercises:
+            in_exercises = any(re.fullmatch(r"\s*EXERCISES\s*", " ".join(
+                s["text"] for ln in b.get("lines", []) for s in ln["spans"]))
+                for b in raw["blocks"] if b.get("type") == 0)
+        if in_exercises:
+            raw["blocks"] = _split_numbered_exercises(raw["blocks"], chapter_num)
         for b in raw["blocks"]:
             # A MIRRORED IMAGE COMES BACK WITH x1 < x0. The Class 12 header strip is drawn
             # flipped on recto pages, so its bbox is (38.4, 0.0, 0.0, 76.9) -- a negative width.
@@ -1592,7 +1679,7 @@ def extract(book_id, chapter_num):
             b["bbox"] = (min(b["bbox"][0], b["bbox"][2]), min(b["bbox"][1], b["bbox"][3]),
                          max(b["bbox"][0], b["bbox"][2]), max(b["bbox"][1], b["bbox"][3]))
             if b["type"] != 0:
-                role, why = classify_image(b["bbox"], pw, ph, design)
+                role, why = classify_image(b["bbox"], pw, ph, design, tall_ground=new_rules)
                 if role == "page_furniture":
                     elements.append({"role": role, "bbox_pt": [round(v, 1) for v in b["bbox"]],
                                      "_x0": b["bbox"][0], "_x1": b["bbox"][2],
@@ -1650,6 +1737,9 @@ def extract(book_id, chapter_num):
                                  or sp.get("text", "")).strip()],
                   "runs": runs, "text": text}
             el["role"] = classify(text, runs, b["bbox"], pw, ph, body_size)
+            if b.get("_exercise") and el["role"] == "section_heading":
+                el["role"] = "paragraph"           # an exercise `C.k`, not a heading
+                el["exercise_number"] = text.split()[0]
             if dehy:
                 el["dehyphenated"] = dehy
             elements.append(el)
@@ -1830,8 +1920,15 @@ def extract(book_id, chapter_num):
                 num_box, head_box = [x0, y0, x0 + num_w, y1], [x0 + num_w, y0, x1, y1]
             else:
                 num_box, head_box = [x1 - num_w, y0, x1, y1], [x0, y0, x1 - num_w, y1]
+            # The folio in the head's OWN type: with no runs it printed in the renderer's
+            # default 13pt black, where PHY11 sets its cyan 8pt Bookman (PHY11L ch01).
+            fol_run = next((r for r in el.get("runs") or [] if str(folio) in (r.get("t") or "")),
+                           (el.get("runs") or [None])[0])
+            if design_lib.is_measured(book_id):
+                fol_run = None                 # measured books keep their approved folio
             split_out.append({"role": "page_number", "bbox_pt": num_box,
-                              "_x0": num_box[0], "_x1": num_box[2], "runs": [],
+                              "_x0": num_box[0], "_x1": num_box[2],
+                              "runs": [dict(fol_run, t=str(folio))] if fol_run else [],
                               "text": str(folio), "printed_page_number": folio})
             split_out.append({"role": "running_header", "bbox_pt": head_box,
                               "_x0": head_box[0], "_x1": head_box[2],
@@ -1841,7 +1938,7 @@ def extract(book_id, chapter_num):
         # TABLES BEFORE FIGURE LABELS. Table 4.1's seven rows (BIO12L ch04 p005) sit 14pt left of
         # Figure 4.2 and were absorbed as its labels, so the table grew from its caption into
         # nothing and the rows left the chapter. A table claims its rows first.
-        elements = _mark_tables(elements, pw, ph)
+        elements = _mark_tables(elements, pw, ph, nocolon=new_rules)
         elements = _absorb_figure_labels(elements, pw, ph, body_size=body_size)
         _absorb_drawn_marks(page, elements, pw, ph)
 
@@ -1853,9 +1950,39 @@ def extract(book_id, chapter_num):
         # arrangement could not be rebuilt. Measured on BIO11L ch3 p001 (3.1 Algae .. 3.5
         # Angiosperms) and BIO12L ch3 p001 (3.1 .. 3.5).
         if pi == 0:
+            # A RAIL IS RECOGNISED BY WHAT IT SAYS, not only by the design's rail geometry. A book
+            # with no measured rail (PHY11: a bordered panel at x 0.12-0.34 beside the body) types
+            # its list `heading` -- bold cyan `1.1` -- and the whole list became one section node
+            # titled "Introduction 1.2 The international system of units 1.3 ...", with its
+            # `Summary / Exercises` lines a box (PHY11L-ch01, 2026-10-28).
+            def _is_rail(el):
+                if el["role"] == "side_note":
+                    return True
+                return new_rules and (el["role"] in ("heading", "section_heading", "paragraph", "box")
+                        and el["bbox_pt"][2] < 0.45 * pw
+                        and len(re.findall(r"(?:^|\s)\d+\.\d+\s+[A-Za-z]", el.get("text") or "")) >= 2)
+
+            rail_x1 = max([el["bbox_pt"][2] for el in elements if _is_rail(el)
+                           and re.match(r"^\d+\.\d+\s+\S", el["text"])] or [0.0])
             contents_out = []
             for el in elements:
-                if el["role"] != "side_note" or not re.match(r"^\d+\.\d+\s+\S", el["text"]):
+                # The rail's closing `Summary / Exercises` lines, set in the same band.
+                if (rail_x1 and el["bbox_pt"][2] <= rail_x1 + 2
+                        and re.fullmatch(r"(?:Summary|Exercises|Points to Ponder|Appendix)"
+                                         r"(?:\s+(?:Summary|Exercises|Points to Ponder|Appendix))*",
+                                         el["text"].strip())):
+                    parts = [(b, t.strip()) for b, t in el.get("_lines") or [] if t and t.strip()]
+                    if len(parts) < 2:
+                        el["role"] = "contents_entry"
+                        contents_out.append(el)
+                        continue
+                    for b, t in parts:          # one entry per printed line
+                        box = [round(v, 1) for v in b]
+                        contents_out.append({
+                            "role": "contents_entry", "bbox_pt": box, "_x0": box[0], "_x1": box[2],
+                            "runs": [dict(el["runs"][0], t=t)] if el.get("runs") else [], "text": t})
+                    continue
+                if not _is_rail(el) or not re.match(r"^\d+\.\d+\s+\S", el["text"]):
                     contents_out.append(el)
                     continue
                 # ONE BLOCK IS NOT ONE ENTRY. The Class 12 opener's contents list comes back as
@@ -1866,7 +1993,18 @@ def extract(book_id, chapter_num):
                 # the lines carry their own boxes, so each entry gets its real position rather
                 # than a share of the block's.
                 entries, cur = [], None
-                for lbox, ltext in el.get("_lines") or []:
+                lines = el.get("_lines") or []
+                # NUMBERS IN A COLUMN OF THEIR OWN. PHY11's rail prints `1.1`..`1.6` as separate
+                # text lines left of the titles, so in layer order each number was paired with
+                # the title line AFTER it ("1.2 units Significant figures"). Order the lines by
+                # height, a title line at the same height as a number joining that number.
+                if el["role"] != "side_note":
+                    nums = [(b, t) for b, t in lines if re.fullmatch(r"\d+\.\d+", (t or "").strip())]
+                    if nums:
+                        rest = [(b, t) for b, t in lines if (b, t) not in nums]
+                        lines = sorted(nums + rest, key=lambda bt: (round((bt[0][1] + bt[0][3]) / 2 / 3),
+                                                                    bt[0][0]))
+                for lbox, ltext in lines:
                     if not ltext:
                         continue
                     if re.match(r"^\d+\.\d+(\s|$)", ltext) or cur is None:
@@ -1882,14 +2020,25 @@ def extract(book_id, chapter_num):
                     el["role"] = "contents_entry"
                     contents_out.append(el)
                     continue
+                # A rail recognised by its text (not a `side_note`) sets its numbers bold and its
+                # titles light (PHY11: Bookman-Demi `1.1`, Bookman-Light `Introduction`); the
+                # entry takes the TITLE's type and records the number's weight on its own.
+                base, num_b = (el["runs"][0] if el["runs"] else None), None
+                if el["role"] != "side_note" and el["runs"]:
+                    titles = [r for r in el["runs"] if not re.fullmatch(r"[\d.\s]*", r.get("t") or "")]
+                    nums = [r for r in el["runs"] if re.fullmatch(r"\s*\d+\.\d+\s*", r.get("t") or "")]
+                    if titles:
+                        base = max(titles, key=lambda r: len(r.get("t") or ""))
+                    if nums:
+                        num_b = bool(nums[0].get("b"))
                 for ent in entries:
                     box = [round(v, 1) for v in ent["box"]]
                     contents_out.append({
                         "role": "contents_entry", "bbox_pt": box,
                         "_x0": box[0], "_x1": box[2],
-                        "runs": [dict(el["runs"][0], t=" ".join(ent["parts"]))]
-                        if el["runs"] else [],
+                        "runs": [dict(base, t=" ".join(ent["parts"]))] if base else [],
                         "text": " ".join(ent["parts"]),
+                        **({"num_b": num_b} if num_b is not None else {}),
                     })
             elements = contents_out
 
@@ -1966,7 +2115,7 @@ def extract(book_id, chapter_num):
         decor = None if heavy else page_decor(
             page, [e["bbox_pt"] for e in elements if e["role"] == "figure"],
             [e["bbox_pt"] for e in elements if e["role"] in ("figure", "table")
-             and e.get("bbox_pt")])
+             and e.get("bbox_pt")], head_bar=new_rules)
         if not heavy:
             _stamp_image_z(page, elements)
         pages.append({
@@ -2285,7 +2434,18 @@ def _cell_grid(members, page_w, page_h):
             "col_x_pt": [round(x, 1) for x in col_x]}
 
 
-def _mark_tables(elements, page_w, page_h):
+def _is_table_caption_nocolon(el):
+    """Physics prints `Table 1.1 SI Base Quantities and Units*` -- no colon, so `_TABLE_RE`
+    (`TABLE n.m` or `Table n.m:`) never matched, the caption typed as a figure caption, Table 1.1's
+    rows stayed loose paragraphs and Table 1.2 (drawn, no text layer) had no node for its A2S
+    grid (PHY11L-ch01, 2026-10-28). A caption, not a sentence: typed a caption, the title opens
+    with a capital, short, and not ending in a full stop -- `Table 1.1 indicates the ...` is prose."""
+    t = (el.get("text") or "").strip()
+    return (el.get("role") == "figure_caption" and len(t) < 140 and not t.endswith(".")
+            and bool(re.match(r"^Table\s*\d+\.\d+\s+[A-Z(]", t)))
+
+
+def _mark_tables(elements, page_w, page_h, nocolon=False):
     """A printed TABLE becomes ONE element carrying its CELL GRID.
 
     An earlier version cropped the table as an image and stopped there, on the grounds that the
@@ -2298,7 +2458,8 @@ def _mark_tables(elements, page_w, page_h):
     inside the table's own column band, stopping at the next heading or a gap wider than two
     lines.
     """
-    idx = [i for i, e in enumerate(elements) if _TABLE_RE.match(e.get("text") or "")]
+    idx = [i for i, e in enumerate(elements) if _TABLE_RE.match(e.get("text") or "")
+           or (nocolon and _is_table_caption_nocolon(e))]
     if not idx:
         return elements
     # THE ROWS ARE FOUND BY GEOMETRY, NOT BY LIST ORDER.
@@ -2435,7 +2596,11 @@ def _mark_tables(elements, page_w, page_h):
         # NO ROWS UNDER IT: the grid was read elsewhere (an A2S table under the caption), so
         # the caption stays a caption and joins that table, rather than becoming an empty one.
         if not members:
-            cap["role"] = "figure_caption"
+            # A DRAWN TABLE (PHY11L ch01 Table 1.2: rules, tints and outlined glyphs, no text
+            # layer) has no rows to grow over. Kept a caption-sized `table`, the join grows it
+            # over the drawn ink in A2's table box (`grid_drawn`) and A2S gives it its grid.
+            cap["role"] = ("table" if nocolon and _is_table_caption_nocolon(cap)
+                           else "figure_caption")
             continue
         cap["role"] = "table"
         cap["bbox_pt"] = box

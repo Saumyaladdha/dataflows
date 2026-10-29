@@ -72,6 +72,11 @@ def _creds():
     return token, user
 
 
+#: A drawn figure (step FIGP) is an SVG; sent as image/png the CDN would serve it as a broken PNG.
+_CONTENT_TYPES = {".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg",
+                  ".jpeg": "image/jpeg"}
+
+
 def _multipart(path):
     boundary = uuid.uuid4().hex
     name = os.path.basename(path)
@@ -80,7 +85,8 @@ def _multipart(path):
     body = b"".join([
         f"--{boundary}\r\n".encode(),
         f'Content-Disposition: form-data; name="files"; filename="{name}"\r\n'.encode(),
-        b"Content-Type: image/png\r\n\r\n", data, b"\r\n",
+        f"Content-Type: {_CONTENT_TYPES.get(os.path.splitext(name)[1].lower(), 'image/png')}"
+        f"\r\n\r\n".encode(), data, b"\r\n",
         f"--{boundary}--\r\n".encode(),
     ])
     return body, f"multipart/form-data; boundary={boundary}"

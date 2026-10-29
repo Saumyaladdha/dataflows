@@ -26,7 +26,8 @@ WHAT IT READS: the PAGE boxes cut_agent_figures.py records beside every figure i
 `agent_figure_boxes`, `agent_option_boxes` and `solution_figures[].bbox` -- so the vector copy is
 exactly the region of the PNG beside it. WHAT IT WRITES: `<image>.svg` next to each `<image>.png`,
 and `question["vector"] = {png path: svg path}`. A page that is a sliced scan has no vector art, so
-its figures keep the PNG and are reported, never silently.
+its figures keep the PNG and are reported, never silently; so does a figure printed as a raster
+picture (2016_A), whose image step 1 would strip, leaving an empty or partial SVG.
 """
 
 import argparse
@@ -39,6 +40,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import runner_core as rc  # noqa: E402
+from lib import pdf as lib_pdf  # noqa: E402
 
 CORPUS = rc.corpus()
 #: A stroked path that goes nowhere: `M x y` followed by a zero move (`V0`, `H0`, `L x y` to itself
@@ -47,6 +49,17 @@ ZERO_LENGTH = re.compile(r'<path [^>]*\sd="M0 0[VH]0"\s*/>')
 #: A line that opens with the publisher's answer or solution marker...
 MARKER_LINE = re.compile(r"^\s*(Answer|Ans\b|Sol\b|Solution)", re.I)
 #: ...and the spans of it that ARE the marker: the word, the `(2)` / `(1 & 2)*` after it, a colon.
+#: An image placed on this many pages is the publisher's furniture (the watermark), not a figure.
+RASTER_MARK_MIN_PAGES = 3
+#: A raster picture with at least this share of its area inside a figure box, covering at least
+#: RASTER_BOX_SHARE of the box, IS the printed figure.
+RASTER_INSIDE = 0.5
+RASTER_BOX_SHARE = 0.1
+#: Something an SVG body draws, outside its <defs>.
+INK = re.compile(r"<(path|use|image|text)\b")
+#: A rendered pixel darker than this (0-255 grey) is ink; an SVG needs this many of them.
+INK_LEVEL = 200
+INK_MIN_PIXELS = 20
 MARKER_WORD = re.compile(r"^\s*(Answer(\s*Key)?|Ans\.?|Sol\.?|Solution|:|\.|"
                          r"\(\s*[1-4a-dA-D](\s*(&|,|and)\s*[1-4a-dA-D])*\s*\)\*?)\s*$", re.I)
 
@@ -79,8 +92,56 @@ def _scale_root(svg, factor):
                                                         m.group(5)), svg, count=1)
 
 
-def figure_svg(pymupdf, source, page_index, box_px, dpi):
-    """The vector drawing inside `box_px` on one page, as SVG text, rasters and surroundings removed."""
+def furniture_images(source):
+    """xrefs of the images that recur on RASTER_MARK_MIN_PAGES or more pages: the watermark."""
+    pages = collections.Counter()
+    for page in source:
+        pages.update({info["xref"] for info in page.get_image_info(xrefs=True) if info.get("xref")})
+    return {xref for xref, n in pages.items() if n >= RASTER_MARK_MIN_PAGES}
+
+
+def raster_figure(pymupdf, page, box_px, dpi, furniture):
+    """True when the printed figure in `box_px` is a raster PICTURE, not vector art.
+
+    2016_A prints every diagram as an embedded image. Step 1 below strips images (to drop the
+    watermark), so the "vector copy" of such a figure kept only the clip paths -- an empty white
+    box on the card (q010, q063) -- or a frame and the stem words around it (2020_F1 q103). The
+    PNG beside it is the true copy, so the figure keeps that.
+    """
+    box = pymupdf.Rect([v * 72.0 / dpi for v in box_px])
+    for info in page.get_image_info(xrefs=True):
+        if info.get("xref") in furniture:
+            continue
+        image = pymupdf.Rect(info["bbox"])
+        inside = (image & box).get_area()
+        if (image.get_area() and inside / image.get_area() >= RASTER_INSIDE
+                and inside >= RASTER_BOX_SHARE * box.get_area()):
+            return True
+    return False
+
+
+def has_ink(pymupdf, svg):
+    """False for an SVG that draws nothing visible, judged by RENDERED pixels.
+
+    Counting elements is not enough: 2020_F1 q116's solution SVGs hold paths whose clip and
+    transform leave every pixel white. So an SVG with drawing elements is also rendered, and
+    needs at least INK_MIN_PIXELS pixels darker than INK_LEVEL to count as a figure.
+    """
+    if not INK.search(re.sub(r"<defs>.*?</defs>", "", svg, flags=re.S)):
+        return False
+    doc = pymupdf.open(stream=svg.encode("utf-8"), filetype="svg")
+    try:
+        pix = doc[0].get_pixmap(colorspace=pymupdf.csGRAY, alpha=False)
+    finally:
+        doc.close()
+    return sum(1 for value in pix.samples if value < INK_LEVEL) >= INK_MIN_PIXELS
+
+
+def figure_svg(pymupdf, source, page_index, box_px, dpi, marks=()):
+    """The vector drawing inside `box_px` on one page, as SVG text, rasters and surroundings removed.
+
+    `marks`: the page's repeated vector furniture (extract_paper_v2.document_vector_marks), which
+    goes the way the raster watermark does."""
     box = pymupdf.Rect([v * 72.0 / dpi for v in box_px])
     scratch = pymupdf.open()
     scratch.insert_pdf(source, from_page=page_index, to_page=page_index)
@@ -91,6 +152,7 @@ def figure_svg(pymupdf, source, page_index, box_px, dpi):
     page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_REMOVE,
                           graphics=pymupdf.PDF_REDACT_LINE_ART_NONE,
                           text=pymupdf.PDF_REDACT_TEXT_NONE)
+    lib_pdf.blank_marks(page, marks)
     # 2. the publisher's own markers go: `Answer (2)` above a solution figure and the `Sol.` beside
     #    it are never part of a drawing, but a box generous enough to keep a figure's labels reaches
     #    them -- 2017_A q17 kept "...swer (2)", q36 kept the "l." of "Sol.", and the lone full stops
@@ -152,6 +214,8 @@ def main():
     source_path = os.path.join(os.path.dirname(extractor.SOURCE_ROOT), paper["meta"]["source_pdf"])
     source = pymupdf.open(source_path)
     dpi = paper["meta"]["dpi"]
+    marks = extractor.document_vector_marks(source)
+    furniture = furniture_images(source)
 
     counts, sizes = collections.Counter(), []
     for question in paper["questions"]:
@@ -161,9 +225,17 @@ def main():
                 counts["scan_page_kept_png"] += 1     # a sliced scan has no vector art to lift
                 continue
             svg_rel = image[:-4] + ".svg" if image.endswith(".png") else image + ".svg"
+            path = rc.pp(*CORPUS, svg_rel)
+            svg = None
+            if not raster_figure(pymupdf, source[page_index], box, dpi, furniture):
+                svg = figure_svg(pymupdf, source, page_index, box, dpi, marks.get(page_index, ()))
+            if svg is None or not has_ink(pymupdf, svg):
+                # the PNG is the copy; an SVG left by an earlier run would still be shown, so it goes
+                counts["raster_kept_png" if svg is None else "empty_svg_kept_png"] += 1
+                if args.apply and os.path.exists(path):
+                    os.remove(path)
+                continue
             if args.apply:
-                svg = figure_svg(pymupdf, source, page_index, box, dpi)
-                path = rc.pp(*CORPUS, svg_rel)
                 os.makedirs(os.path.dirname(path), exist_ok=True)
                 with open(path, "w", encoding="utf-8", newline="\n") as fh:
                     fh.write(svg)
@@ -177,6 +249,10 @@ def main():
     if sizes:
         sizes.sort()
         print("   svg size: median %d bytes, largest %d bytes" % (sizes[len(sizes) // 2], sizes[-1]))
+    if counts["raster_kept_png"]:
+        print("   printed as a raster picture, PNG kept: %d" % counts["raster_kept_png"])
+    if counts["empty_svg_kept_png"]:
+        print("   vector lift drew nothing, PNG kept: %d" % counts["empty_svg_kept_png"])
     if counts["scan_page_kept_png"]:
         print("   on a sliced-scan page, PNG kept: %d" % counts["scan_page_kept_png"])
     if args.dry_run:

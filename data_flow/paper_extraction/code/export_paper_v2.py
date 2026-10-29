@@ -333,6 +333,11 @@ def record_flags(question, publisher, ai, solution_steps):
                           "text": "The booklet lost this question's number and first line, and no "
                                   "other booklet code of this exam prints it; the stem starts "
                                   "mid-sentence."})
+    if (question.get("text_layer_draft") or {}).get("answer_bonus"):
+        flags.append({"code": "bonus",
+                      "text": "The booklet prints \"%s\": NTA dropped this question and gave every "
+                              "candidate its marks, so it has no keyed answer."
+                              % (question["text_layer_draft"].get("answer_line") or "Bonus").strip()})
     said = next((s for s in solution_steps or [] if NO_OPTION_CORRECT.search(s)), None)
     if said:
         flags.append({"code": "publisher_no_option_correct",
@@ -408,6 +413,10 @@ def image_attrs(q, image, out_path, counts):
             % (html.escape(src), html.escape(local.replace("\\", "/"))))
 
 
+WITHHELD_NOTE = ('<p class="flag">our drawing is withheld: it did not pass the check against the '
+                 'print (reason in questions.json)</p>')
+
+
 def drawn_html(q, image, out_path, counts):
     """The pipeline's own drawing of one figure, as a panel under the printed copy -- or nothing.
 
@@ -423,11 +432,20 @@ def drawn_html(q, image, out_path, counts):
               if entry.get("layout") == "booklet" and entry.get("source") == "smiles" else
               "on the booklet's own geometry, its figure spec checked against it (labels and lines)"
               if entry.get("layout") == "booklet" else
+              # a picture-printed figure traced from the booklet's own picture (render_figure_cards);
+              # labelled as RDKit or a spec drawing, it claimed a layout the card does not show
+              "traced from the booklet's printed picture, its SMILES checked"
+              if entry.get("layout") == "traced" and entry.get("source") == "smiles" else
+              "traced from the booklet's printed picture"
+              if entry.get("layout") == "traced" else
               "from SMILES (RDKit)" if entry.get("source") == "smiles" else "from a figure spec")
     if entry.get("status") == "failed_check":
         counts["drawn_failed"] += 1
-        return ('<p class="flag">drawing withheld: its card failed the check -- %s</p>'
-                % html.escape(entry.get("message") or ""))
+        # ONE SHORT LINE. The check's full report (2018_AA q052: ten clauses about the solution's
+        # structures) is for whoever fixes the card and stays in questions.json as drawn.message;
+        # printed under every figure and option it buried the question. question_card keeps the
+        # first of these per card.
+        return WITHHELD_NOTE
     if entry.get("status") != "drawn" or not entry.get("svg"):
         return ""
     counts["drawn_shown"] += 1
@@ -603,7 +621,7 @@ PART_CSS = """
 .part{display:flex;gap:.55em;align-items:flex-start;margin:.45em 0}
 .partlet{font-weight:600;min-width:1.1em;opacity:.75}
 .partbody{flex:1;min-width:0}
-figure.part{margin:0 0 .3em 0}
+figure.part{display:block;margin:0 0 .3em 0}
 figure.part img{max-width:100%;height:auto}
 """
 
@@ -1305,8 +1323,11 @@ def question_record(paper_id, meta, q):
             # Where the read found no figure, or cut its own, this crop is not the question's figure
             # -- on 2017 Code-A, B3F found q058's "stem figure" was the previous question's options
             # and q081's "option panels" a solution diagram. Kept for audit, never presented as real.
+            # ...and where the agent cut the OPTIONS' drawings: 2018_AA q068's geometric
+            # "option panels" was a mis-cut strip of one option plus the next question's text.
             "superseded_by_agent": bool(read) and (not read.get("has_figure")
-                                                   or bool(q.get("agent_figure_images"))),
+                                                   or bool(q.get("agent_figure_images"))
+                                                   or bool(q.get("agent_option_images"))),
         })
 
     def image_record(path):
@@ -1644,10 +1665,17 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
         attrs = image_attrs(q, image, out_path, counts)
         figure_html.append(
             '<img %s alt="figure for question %d" loading="lazy">'
-            '<figcaption>printed figure (exact vector copy) &middot; <code>%s</code>'
-            '</figcaption>%s' % (attrs, q["qno"], html.escape(_posix(image)),
+            '<figcaption>printed figure (%s) &middot; <code>%s</code>'
+            '</figcaption>%s' % (attrs, q["qno"],
+                                 # a raster-printed figure (2016_A) has no vector twin: its PNG is the copy
+                                 "exact vector copy" if (q.get("vector") or {}).get(image)
+                                 else "cut from the booklet",
+                                 html.escape(_posix(image)),
                                  drawn_html(q, image, out_path, counts)))
-    if not figure_html:
+    # ...and the agent's per-option crops win too, as `superseded_by_agent` already says in the
+    # JSON: 2019_P1 q065 showed its options 3 and 4 a second time as geometric "option panels",
+    # the second cut off before its "CH2Cl + H2O".
+    if not figure_html and not q.get("agent_option_images"):
         for figure in q["figures"]:
             image = figure.get("image")
             if not image:
@@ -1734,6 +1762,9 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
                 # AND "and cine substitution reaction" -- half of what each option claims.
                 words = options.get(key) or ""
                 words = "" if PICTURE_OPTION.match(words.strip()) else words
+                # ...but not the reader's "[structure: ...]" notes about the drawing (2018_AA q052)
+                card = ((q.get("drawn") or {}).get(image) or {}).get("card") or {}
+                words = record_v3.option_words(words, len(card.get("species") or []), True)
                 cell = ('<img class="optimg" %s alt="option %s of question %d" '
                         'loading="lazy">%s%s' % (attrs, key, q["qno"],
                                                  drawn_html(q, image, out_path, counts),
@@ -1897,7 +1928,13 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
            ' &middot; <code>%s</code>' % html.escape(os.path.basename(src)) if src else ""))
     parts.append("</div></div>")      # close .side (extracted) and .pair
     parts.append("</div>")            # close .q
-    return "".join(parts)
+    card = "".join(parts)
+    # one card is checked as a whole, so a failed check withholds every drawing on it: say it once
+    at = card.find(WITHHELD_NOTE)
+    if at >= 0:
+        end = at + len(WITHHELD_NOTE)
+        card = card[:end] + card[end:].replace(WITHHELD_NOTE, "")
+    return card
 
 
 def write_html(paper, out_path):

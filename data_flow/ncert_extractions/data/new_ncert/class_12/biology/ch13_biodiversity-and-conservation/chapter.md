@@ -27,7 +27,7 @@ Since there are published records of all the species discovered and named, we kn
 
 Let us look at some interesting aspects about earth’s biodiversity based on the currently available species inventories. More than 70 per cent of all the species recorded are animals, while plants (including algae, fungi, bryophytes, gymnosperms and angiosperms) comprise no more than 22 per cent of the total. Among animals, insects are the most species-rich taxonomic group, making up more than 70 per cent of the total. That means, out of every 10 animals on this planet, 7 are insects. Again, how do we explain this enormous diversification of insects? The number of fungi species in the world is more than the combined total of the species of fishes, amphibians, reptiles and mammals. In Figure 13.1, biodiversity is depicted showing species number of major taxa.
 
-![Figure 13.1 Representing global biodiversity: proportionate number of species of major taxa of plants, invertebrates and vertebrates](figures/p218_fig01.png)
+![Figure 13.1 Representing global biodiversity: proportionate number of species of major taxa of plants, invertebrates and vertebrates](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch13/p218_fig01_27102026.png)
 
 **Figure 13.1** Representing global biodiversity: proportionate number of species of major taxa of plants, invertebrates and vertebrates
 
@@ -43,11 +43,9 @@ Although India has only 2.4 per cent of the world’s land area, its share of th
 
 - (ii) ***Species-Area relationships***: During his pioneering and extensive explorations in the wilderness of South American jungles, the great German naturalist and geographer Alexander von Humboldt observed that within a region species richness increased with increasing explored area, but only up to a limit. In fact, the relation between species richness and area for a wide variety of taxa (angiosperm plants, birds, bats, freshwater fishes) turns out to be a rectangular hyperbola (Figure13.2). On a logarithmic scale, the relationship is a straight line described by the equation
 
-![Figure 13.2 Showing species area relationship. Note that on log scale the relationship becomes linear](figures/p220_fig01.png)
+![Figure 13.2 Showing species area relationship. Note that on log scale the relationship becomes linear](https://d30lmobgrc5gb8.cloudfront.net/general/27102026/ncert/2026-27/BIO12L/ch13/p220_fig01_27102026.png)
 
 **Figure 13.2** Showing species area relationship. Note that on log scale the relationship becomes linear
-
-log S = log C + Z log A 
 
 log S =  log C + Z log A
 
