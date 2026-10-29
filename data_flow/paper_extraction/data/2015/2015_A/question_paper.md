@@ -12,7 +12,7 @@ Chemistry · organic · Hydrocarbons
 
 - (1) $\mathrm{(CH_3)_2C=CH-CH_2-CH_3}$
 - (2) $\mathrm{(CH_3)_2CH-CH_2-CH=CH_2}$
-- (3) 3,4-dimethylpent-1-ene `C=CC(C)C(C)C` — $\mathrm{(CH_3)_2CH-CH(CH_3)-CH=CH_2}$
+- (3) $\mathrm{(CH_3)_2CH-CH(CH_3)-CH=CH_2}$
 - **(4)** $\mathrm{(CH_3)_3C-CH=CH_2}$
 
 **Answer** — booklet: (4) · independent solve: (4) · agree

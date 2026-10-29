@@ -68,6 +68,30 @@ def option_words(text, species_count, has_picture):
         return ""
     return rest
 
+
+def formula_picture_option(text, species, drawn_status, others_plain):
+    """True when an option's picture is a structure its printed words already spell out in full.
+
+    2015_A q001 option (3): the booklet prints "(CH3)2CH-CH(CH3)-CH=CH2" as a picture (the CH3
+    branch hangs below the line) among three options printed as text. The reader wrote the whole
+    formula out and a picture-printed figure is not redrawn, so the option showed its crop, a SMILES
+    line and the same formula again -- unlike the other three. User, 2026-10-29: "make it consistent
+    options". Such an option is shown as text like its neighbours; its crop and SMILES stay in the
+    record. 2018_AA q090's orbital boxes are not a structure, so they stay a picture.
+    """
+    text = (text or "").strip()
+    return bool(text and species and others_plain and drawn_status == "not_on_print"
+                and not DRAWING_NOTE.search(text)
+                and not re.fullmatch(r"\[[^\]]*(structure|figure|image)[^\]]*\]", text, re.I))
+
+
+def options_shown_as_text(options):
+    """The keys of v3 `options` whose picture is shown as their text (formula_picture_option)."""
+    return {o["key"] for o in options
+            if o["figure"] and formula_picture_option(
+                o["text"], o["chemistry"], (o["figure"].get("drawn") or {}).get("status"),
+                all(not p["figure"] for p in options if p is not o))}
+
 #: The stylesheet every `html` field assumes, carried once in the document's meta.
 RENDER_CSS = texhtml.CSS + """
 .q-stem,.s-step{line-height:1.6}
@@ -303,9 +327,12 @@ def build(q, flat, read):
                                             for i in flat["list_i"]))
         lines.append("List-II: " + "; ".join("(%s) %s" % (i.get("label"), i.get("text"))
                                              for i in flat["list_ii"]))
+    as_text = options_shown_as_text(options)
     for opt in options:
         parts = [opt["text"]] if opt["text"] else []
-        if opt["chemistry"]:
+        if opt["key"] in as_text:
+            pass
+        elif opt["chemistry"]:
             parts.insert(0, _chem_text(opt["chemistry"]))
         if opt["figure"] and opt["figure"]["text"] and not opt["chemistry"]:
             parts.insert(0, "[Figure: %s]" % opt["figure"]["text"])
@@ -337,9 +364,11 @@ def build(q, flat, read):
     opts = []
     for opt in options:
         body = []
-        if opt["figure"] and not opt["chemistry"]:
+        if opt["key"] in as_text:
+            pass
+        elif opt["figure"] and not opt["chemistry"]:
             body.append(_img(opt["figure"], "option %s" % opt["key"]))
-        if opt["chemistry"]:
+        elif opt["chemistry"]:
             body.append(_chem_html(opt["chemistry"]))
         if opt["text"]:
             body.append(texhtml.to_html(opt["text"]))

@@ -532,6 +532,34 @@ def coverage_profile(lines, page_width, bin_pt=10.0):
     return cover, bin_pt
 
 
+def number_columns(lines, page_width):
+    """columns()' answer read off the QUESTION NUMBERS, for a page whose profile found no gutter.
+
+    2017 Code-S (Vedantu) page 3 prints q11-15 at x0=41 and q16-21 at x0=303, but a line crossing
+    the middle fills the valley, so columns() saw one column; read top to bottom the two columns
+    interleaved and q16-21 were dropped. Two tight stacks of numbers, the right one continuing the
+    left one's numbering, is two columns -- an option grid never numbers on like that."""
+    numbered = []
+    for line in lines:
+        match = Q_ALONE.match(line["text"]) or Q_INLINE.match(line["text"])
+        if match:
+            numbered.append((line["x0"], line["y0"], int(match.group(1))))
+    left = sorted((y, n, x) for x, y, n in numbered if x < page_width * 0.3)
+    right = sorted((y, n, x) for x, y, n in numbered if page_width * 0.4 < x < page_width * 0.7)
+    if len(left) < 2 or len(right) < 2:
+        return None
+    if max(r[2] for r in right) - min(r[2] for r in right) > 12 or \
+            max(l[2] for l in left) - min(l[2] for l in left) > 12:
+        return None
+    left_n, right_n = [n for _y, n, _x in left], [n for _y, n, _x in right]
+    if left_n != list(range(left_n[0], left_n[0] + len(left_n))) or \
+            right_n != list(range(left_n[-1] + 1, left_n[-1] + 1 + len(right_n))):
+        return None
+    gutter = min(r[2] for r in right) - 2.0
+    return (gutter, (min(l["x0"] for l in lines), gutter),
+            (min(r[2] for r in right), max(l["x1"] for l in lines)))
+
+
 def columns(lines, page_width):
     """(gutter_x, left_bounds, right_bounds) for a two-column page, or None for one column.
 
@@ -1128,11 +1156,21 @@ def analyse(doc):
         # not interleaved by y, which is what sorting by y alone would do and which would splice two
         # unrelated questions together. A line belongs to the column its MIDPOINT falls in, so a
         # wide figure caption does not jump columns.
-        split = columns(lines, page.rect.width)
+        split = columns(lines, page.rect.width) or number_columns(lines, page.rect.width)
         if split:
             gutter = split[0]
             for line in lines:
                 line["column"] = ("left" if (line["x0"] + line["x1"]) / 2.0 < gutter else "right")
+                # ...except a QUESTION NUMBER hung out into the gutter. 2017 Code-S (Vedantu) sets
+                # the right column's `5.` at x0=296 with its stem at 317 and the gutter measured at
+                # 315, so by midpoint every right-column number went LEFT, landed between q1-q4 in
+                # reading order and was dropped: 60 of 180 questions, in runs (5-10, 16-21, ...).
+                # A number line starting nearer the right column's text than the left's is right.
+                (lx0, _lx1), (rx0, _rx1) = split[1], split[2]
+                if (line["column"] == "left" and abs(line["x0"] - rx0) < abs(line["x0"] - lx0)
+                        and (Q_ALONE.match(line["text"]) or Q_INLINE.match(line["text"])
+                             or Q_BARE.match(line["text"]))):
+                    line["column"] = "right"
         else:
             for line in lines:
                 line["column"] = "full"
