@@ -134,6 +134,21 @@ class Design:
 # from is named on each block so a future change can be checked rather than argued about.
 # ================================================================================================
 
+# THE CLASS 11 PHYSICS SHEET. Measured on every page of
+# source_pdfs/new/class_11/physics/Chapter_1.pdf (657.35 x 777.07pt) and on the first page of
+# Chapters 10-14 (657.0 x 777.4 to 781.6pt) -- 231.9 x 274.1mm. That is a WIDER and slightly
+# shorter page than Biology's 612 x 784pt (215.9 x 276.6mm), and it is not a crop of it: the
+# measure is 474pt against Biology's 360pt. Physics is a different physical book and carries
+# its own trim rather than being normalised onto Biology's.
+PHY11_TRIM_PT = (657.3, 777.1)
+
+# THE CLASS 12 PHYSICS SHEET. Measured on every page of
+# source_pdfs/new/class_12/physics/Chapter_1.pdf: 612.0 x 777.6pt. The same WIDTH as Biology
+# (612) on a slightly shorter page (777.6 against 784), and nothing like Class 11 Physics'
+# 657.3 x 777.1 -- the two Physics books are not one design. Chapters 10-14 of this book scan
+# at 567.0 x 766.8, the same page trimmed, which `normalise_page` puts back on this sheet.
+PHY12_TRIM_PT = (612.0, 777.6)
+
 _BIO_COMMON = dict(
     trim_pt=CANONICAL_TRIM_PT,
     # Measured identical in every Biology chapter sampled, both classes, both editions:
@@ -295,6 +310,173 @@ _DESIGNS = {
         heading_size_rel=1.33,
         imprint_by_edition={"O": "2022-23", "L": "Reprint 2026-27"},
     ),
+    # --------------------------------------------------------------------------------------
+    # CLASS 11 PHYSICS -- "the cyan two-column book".
+    # Measured on source_pdfs/new/class_11/physics/Chapter_1.pdf (Units and Measurement), all
+    # twelve pages, with page.get_drawings() for the furniture and the text layer's own spans
+    # for the block and the type. Every number is a measurement, named where it was taken.
+    #
+    # THESE PAGES ARE SCANS WITH A TEXT LAYER OVER THEM, not born-digital like Biology: each
+    # page carries a 2480x3508 A4 raster of the printed page (bbox 26.5,-38.9 -> 630.8,815.9),
+    # the standing watermark (90.1,190.9 -> 551.6,652.4) and, on the opener, the QR. The raster
+    # is PAGE GROUND and must never be drawn -- see `is_page_ground`, which had to learn this
+    # shape: typed as header art it was pasted under the text and every line rendered twice.
+    # --------------------------------------------------------------------------------------
+    ("PHY", "11"): dict(
+        _BIO_COMMON,
+        name="NCERT Physics, Class XI",
+        trim_pt=PHY11_TRIM_PT,
+        # Measured on all 12 pages: odd (recto) x 73.7 -> 547.7, even (verso) x 109.7 -> 583.7,
+        # measure 474.0pt on both, confirmed by the cyan rule drawn exactly 474.0pt wide on
+        # every page. Inner margin 73.7, outer 109.6 (657.3 - 73.7 - 474.0).
+        inner_margin_pt=73.7,
+        measure_pt=474.0,
+        # TWO EQUAL COLUMNS, measured off the #d4effc example boxes, which are set to exactly
+        # one column: 226.4pt, leaving a 21.2pt gutter (474.0 - 2 x 226.4 = 21.2).
+        body_columns=2,
+        column_pt=226.4,
+        gutter_pt=21.2,
+        text_top_pt=74.4,
+        text_foot_pt=722.8,
+        # Bookman-Light 10.0pt is the modal body span (26,540 characters against 8,581 at
+        # 9.0pt). Leading measured off 504 consecutive baselines: 12.00pt, i.e. 1.200.
+        body_pt=10.0,
+        leading=1.200,
+        # Running head y 50.7 -> 58.8, 8.0pt Bookman, ink #00aeef, on all 11 numbered pages:
+        # the folio at the OUTER end, the subject (verso) or chapter title (recto) at the
+        # inner, closed by a 4pt cyan rule at y 58.5 across the full measure.
+        running_head=dict(y_pt=50.7, size_pt=8.0, smallcaps=False, ink="#00aeef",
+                          font="body", verso="subject", recto="chapter_title",
+                          inset_pt=73.7, rule="#00aeef", rule_h_pt=4.0, rule_y_pt=58.5),
+        folio=dict(style="plain", fill=None, ink="#00aeef", w_pt=26.0, h_pt=8.1,
+                   y0_pt=50.7, x_recto_pt=521.4, x_verso_pt=109.7, font="body",
+                   size_pt=8.0, weight=400, radius_pt=0.0, radius_corners=None,
+                   align="outer", pad_pt=0.0),
+        header_band=None, header_strip=None, header_corner=None, header_motif=None,
+        footer_bar=None,
+        # Centred at the foot: measured x 314.0 -> 343.4 (the sheet's centre is 328.65),
+        # y 754.5 -> 765.2, 8.0pt Arial, black, on every page.
+        imprint=dict(y_pt=754.5, size_pt=8.0, font="sans", ink="#000000"),
+        opener=dict(
+            kind="centred-bars",
+            # THE TWO GRADIENT BARS THE TITLE SITS BETWEEN. Measured on p001 by masking the
+            # accent cyan in a 150dpi render: both run the full measure (x 73.7 -> 547.7) and
+            # are 16.8pt deep; the upper sits at y 143.5, the lower at y 199.7, with the title
+            # centred between them. They MIRROR: the upper is solid at the inner edge and fades
+            # out towards the outer, the lower fades in towards the outer. They are painted into
+            # the page scan, not drawn as vector, so nothing in the PDF's drawings carries them
+            # and the opener rendered with no bars at all until they were taken from here.
+            bars=dict(fill="#00aeef", h_pt=16.8, gradient=True,
+                      x0_pt=73.7, x1_pt=547.7, top_y_pt=143.5, bottom_y_pt=199.7),
+            # QR measured bbox 472.7,48.3 -> 557.7,133.2 (85 x 85pt, head of the outer margin).
+            qr=dict(x_recto_pt=472.7, x_verso_pt=99.6, y_pt=48.3, size_pt=85.0),
+            # Contents panel measured #c7eafb, bbox 74.2,255.9 -> 239.9,696.6, 1pt dark border.
+            contents=dict(x_pt=74.2, y_pt=255.9, width_pt=165.7, size_pt=10.0,
+                          ink="#00aeef", italic=False, pitch_pt=20.0, panel_fill="#c7eafb",
+                          panel_border="#231f20", panel_y1_pt=696.6),
+            body_x_pt=320.8, body_top_pt=255.9,
+        ),
+        # One cyan does all the work: the rule, the running head, the folio, the x.y headings,
+        # the example-box text and the opener bars all measure #00aeef. Section headings are set
+        # at the body's own 10.0pt, so there is no step up in size -- measured, not chosen.
+        accent="#00aeef",
+        heading_ink="#00aeef",
+        heading_size_rel=1.0,
+        box_fill="#d4effc",
+        panel_fill="#c7eafb",
+        table_fill="#d1d3d4",
+        table_header_fill="#00aeef",
+        example_marker=dict(open="\u25ba", close="\u25c4", ink="#00aeef", size_pt=10.0),
+        imprint_by_edition={"O": "2022-23", "L": "2024-25"},
+    ),
+
+    # --------------------------------------------------------------------------------------
+    # CLASS 12 PHYSICS -- "the cyan band and grey tab book".
+    # Measured on source_pdfs/new/class_12/physics/Chapter_1.pdf (Electric Charges and Fields),
+    # all 44 pages, with page.get_drawings() for the furniture and the text layer for the grid.
+    #
+    # A SINGLE COLUMN WITH A MARGINAL RAIL, not Class 11 Physics' two equal columns: figures and
+    # their captions sit in the wide outer margin and the prose runs in one measure beside them.
+    # The grid is Biology's -- inner margin 60.0, measure 360.0, mirrored with the spread -- on
+    # a 612 x 777.6pt sheet. These pages are scans with a text layer over them, like Class 11
+    # Physics: a 2480x3508 raster at (3.6,-38.9)->(608.3,816.5) is PAGE GROUND and is never
+    # drawn, and the standing watermark sits at (67.3,191.1)->(529.1,652.9).
+    # --------------------------------------------------------------------------------------
+    ("PHY", "12"): dict(
+        _BIO_COMMON,
+        name="NCERT Physics, Class XII",
+        trim_pt=PHY12_TRIM_PT,
+        inner_margin_pt=60.0,
+        measure_pt=360.0,
+        body_columns=1,
+        # Body block measured over all 44 pages with the head band and the folio filtered out.
+        text_top_pt=100.1,
+        text_foot_pt=739.7,
+        # Bookman-Light 10.5pt is the modal body span (20,671 characters against 7,644 at
+        # 9.5pt, which is the captions and the rail). Leading measured off 726 consecutive
+        # baselines in 10.5pt blocks: 12.72pt, i.e. 1.211.
+        body_pt=10.5,
+        leading=1.211,
+        # --- the head: a pale band closed by two cyan rules, with a grey tab on it -----------
+        # #c7eafb x 6.6 -> 612.0, y -13.0 -> 48.2 (it bleeds off the head and both edges);
+        # #42c8f4 x 95.0 -> 612.0 at y 35.9, then #00aeef full width at y 44.9, both 3.7 deep.
+        header_band=dict(fill="#c7eafb", y0_pt=0.0, y1_pt=48.2),
+        header_rules=[dict(fill="#42c8f4", y0_pt=35.9, y1_pt=39.6, x0_pt=95.0),
+                      dict(fill="#00aeef", y0_pt=44.9, y1_pt=48.6, x0_pt=0.0)],
+        # The running head sits in a GREY TAB hanging off the head band, on the OUTER edge:
+        # #d1d3d4 x 78.0 -> 276.0, y -13.0 -> 93.4 on a verso. The verso prints the SUBJECT
+        # ("Physics") in it; the recto prints the CHAPTER TITLE in Century Gothic 15pt #231f20
+        # at x 375.8, y 54.3 (measured on p005, "Electric Charges").
+        header_strip=None, header_corner=None, header_motif=None, footer_bar=None,
+        running_head=dict(y_pt=54.3, size_pt=15.0, smallcaps=False, ink="#231f20",
+                          font="display", verso="subject", recto="chapter_title",
+                          inset_pt=78.0, tab_fill="#d1d3d4",
+                          tab=dict(x_verso_pt=78.0, x_recto_pt=336.0, w_pt=198.0,
+                                   y0_pt=0.0, y1_pt=93.4)),
+        # --- the folio: a pale blue tab at the FOOT, in the outer corner --------------------
+        # #c7eafb 36.0 x 17.3 at y 713.9, x 78.0 on a verso; mirrored to 498.0 on a recto
+        # (612.0 - 78.0 - 36.0).
+        folio=dict(style="tab", fill="#c7eafb", ink="#231f20", w_pt=36.0, h_pt=17.3,
+                   y0_pt=713.9, x_recto_pt=498.0, x_verso_pt=78.0,
+                   radius_pt=0.0, radius_corners=None, font="body", size_pt=10.5,
+                   weight=700, align="outer", pad_pt=0.0),
+        # Arial 8pt black, centred on the sheet: measured x 277.3, y 754.8 on every page.
+        imprint=dict(y_pt=754.8, size_pt=8.0, font="sans", ink="#000000"),
+        # --- the chapter opener --------------------------------------------------------------
+        # A solid cyan band to y 90, then a pale hero panel, then a cyan stripe: measured
+        # #00aeef -21.7 -> 391.8, #6dcff6 104.1 -> 376.0 and #c7eafb 90.1 -> 367.1, painted in
+        # that order so the eye sees cyan / pale / #6dcff6 / #00aeef down the page. The title is
+        # set LEFT in Century Gothic, not centred as Class 11 Physics sets it, and two 19pt
+        # squares (#7d7e81 at 505.3,328.1 and #00aeef at 515.3,337.1) sit at the panel's foot.
+        opener=dict(
+            kind="band-hero",
+            hero=dict(fill="#c7eafb", y0_pt=90.1, y1_pt=367.1,
+                      band_fill="#00aeef", band_y1_pt=90.1,
+                      stripe_fill="#6dcff6", stripe_y0_pt=367.1, stripe_y1_pt=376.0,
+                      rule_fill="#00aeef", rule_y0_pt=376.0, rule_y1_pt=391.8),
+            squares=[dict(fill="#7d7e81", x_pt=505.3, y_pt=328.1, size_pt=19.0),
+                     dict(fill="#00aeef", x_pt=515.3, y_pt=337.1, size_pt=19.0)],
+            # QR measured bbox 449.0,48.1 -> 534.0,133.0 (85 x 85pt), in a white box.
+            qr=dict(x_recto_pt=449.0, x_verso_pt=78.0, y_pt=48.1, size_pt=85.0),
+            title=dict(x_pt=85.0, y_pt=150.0, chapter_size_pt=22.0, title_size_pt=38.0,
+                       ink="#231f20", smallcaps=False, font="display", weight=400,
+                       line_gap_pt=44.0),
+            body_top_pt=420.0,
+        ),
+        # --- colour ---------------------------------------------------------------------------
+        # TWO heading inks, both measured: an x.y section heading is GREY #6d6f71 at 16.0pt
+        # Bookman-Demi (14 of them), an x.y.z sub-heading is CYAN #00aeef at 12.0pt (10 of
+        # them). Rendering both in one colour is the single most visible way to get this book
+        # wrong. 16.0 / 10.5 = 1.524.
+        accent="#00aeef",
+        heading_ink="#6d6f71",
+        heading_size_rel=1.524,
+        subheading_ink="#00aeef",
+        subheading_size_rel=1.143,
+        box_fill="#c7eafb",
+        panel_fill="#c7eafb",
+        imprint_by_edition={"O": "2022-23", "L": "Reprint 2026-27"},
+    ),
 }
 
 # --------------------------------------------------------------------------------------------
@@ -359,50 +541,13 @@ _PROVISIONAL = {
         body_columns=1,
         imprint_by_edition={"O": "2022-23", "L": "Reprint 2026-27"},
     ),
-    ("PHY", "11"): dict(
-        _BIO_COMMON, name="NCERT Physics, Class XI",
-        text_top_pt=96.0, text_foot_pt=714.0,
-        header_band=None, header_strip=None, header_corner=None, header_motif=None,
-        footer_bar=None,
-        folio=dict(style="plain", fill=None, ink="#00acd2", w_pt=30.0, h_pt=14.0,
-                   y0_pt=56.0, x_recto_pt=520.0, x_verso_pt=60.0, font="body",
-                   size_pt=10.0, weight=400, radius_pt=0.0, radius_corners=None,
-                   align="inner", pad_pt=0.0),
-        # The running head is closed by a 6pt cyan rule across the full measure, with the
-        # chapter title at one end and the subject at the other.
-        running_head=dict(y_pt=56.0, size_pt=9.0, smallcaps=False, ink="#00acd2",
-                          font="body", verso="subject", recto="chapter_title",
-                          inset_pt=60.0, rule="#00b0d6", rule_h_pt=6.0),
-        imprint=dict(y_pt=752.0, size_pt=9.0, font="sans", ink="#000000"),
-        opener=dict(kind="centred-bars",
-                    bars=dict(fill="#00abd0", h_pt=16.0, gradient=True)),
-        accent="#00aad5", heading_ink="#00aad5", heading_size_rel=1.0,
-        body_columns=2,
-        imprint_by_edition={"O": "2022-23", "L": "2024-25"},
-    ),
-    ("PHY", "12"): dict(
-        _BIO_COMMON, name="NCERT Physics, Class XII",
-        text_top_pt=96.0, text_foot_pt=714.0,
-        header_band=dict(fill="#c6eafb", y0_pt=0.0, y1_pt=34.0),
-        header_strip=None, header_corner=None, header_motif=None, footer_bar=None,
-        folio=dict(style="plain", fill="#c6eafb", ink="#231f20", w_pt=36.0, h_pt=18.0,
-                   y0_pt=716.0, x_recto_pt=560.0, x_verso_pt=16.0, font="display",
-                   size_pt=11.0, weight=700, radius_pt=0.0, radius_corners=None,
-                   align="inner", pad_pt=0.0),
-        running_head=dict(y_pt=10.0, size_pt=9.0, smallcaps=True, ink="#3c3c3c",
-                          font="display", verso="subject", recto="chapter_title",
-                          inset_pt=98.0, tab_fill="#f3efe7"),
-        imprint=dict(y_pt=752.0, size_pt=9.0, font="sans", ink="#000000"),
-        opener=None, accent="#00adef", heading_ink="#6d6e71", heading_size_rel=1.2,
-        body_columns=1,
-        imprint_by_edition={"O": "2022-23", "L": "2024-25"},
-    ),
+
 }
 for _k, _v in list(_PROVISIONAL.items()):
     _DESIGNS.setdefault(_k, _v)
 
 # Only these two have been measured page by page against their own source PDFs.
-MEASURED_KEYS = {("BIO", "11"), ("BIO", "12")}
+MEASURED_KEYS = {("BIO", "11"), ("BIO", "12"), ("PHY", "11"), ("PHY", "12")}
 
 
 def parse_book_id(book_id):
@@ -539,7 +684,17 @@ def is_page_ground(bbox_frac):
     # merged with the portrait into one page-sized "figure", which then swallowed the
     # portrait's caption as a figure label -- the caption vanished from the page, and the
     # band was never drawn. No NCERT figure runs edge to edge and off the foot of the sheet.
-    return (x1 - x0) > 0.97 and y1 > 0.99 and y0 > 0.3
+    if (x1 - x0) > 0.97 and y1 > 0.99 and y0 > 0.3:
+        return True
+    # A SCAN GROUND THAT BLEEDS OFF BOTH HEAD AND FOOT. The Physics books are scans with a text
+    # layer laid over them: an A4 raster (2480x3508) is placed on the wider 657.3 x 777.1pt
+    # physics sheet, so it spans only 0.92 of the width and misses the 0.97 test above -- but it
+    # runs off BOTH the head and the foot (measured y -0.050 -> 1.050 on PHY11L ch01, identical
+    # on all 12 pages). Falling through to `is_header_art` (flush with the head, wider than
+    # 0.90) it was typed as header furniture and pasted under the text, so every line of every
+    # physics page rendered twice -- the whole page as a bitmap, with our own text on top of it.
+    # No figure bleeds off the head AND the foot of the sheet.
+    return y0 <= 0.005 and y1 >= 0.995 and (x1 - x0) > 0.80
 
 
 def is_header_art(bbox_frac, design):

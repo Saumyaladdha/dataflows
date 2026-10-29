@@ -1,0 +1,80 @@
+{
+  "page_kind": "ordinary",
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1654,
+    "height_px": 2339,
+    "dpi": 200,
+    "body_text_size_px": 21.0,
+    "text_block": [0.065, 0.102, 0.671, 0.849],
+    "fill": 0.99,
+    "columns": [
+      {"id": "full", "x0": 0.065, "x1": 0.671},
+      {"id": "right", "x0": 0.802, "x1": 0.957}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0, 0.758, 0.038],
+     "column": "full", "size_rel": 1.0, "indent": 0.0, "space_before": 0.0,
+     "fill": "#4a7435"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.772, 0.0, 0.957, 0.091],
+     "column": "right", "size_rel": 1.0, "indent": 0.0, "space_before": 0.0,
+     "fill": "#725420"},
+
+    {"n": null, "role": "running_header", "bbox": [0.065, 0.071, 0.378, 0.078],
+     "column": "full", "size_rel": 0.76, "size_pt": 8.0, "align": "left",
+     "indent": 0.0, "space_before": 0.033,
+     "fill": null, "text_color": "#6b6b6c", "font": "sans", "face": "sans"},
+
+    {"n": 1, "role": "paragraph", "bbox": [0.065, 0.102, 0.670, 0.326],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "indent": 0.0, "space_before": 0.024,
+     "fill": null, "text_color": "#1f1f1f", "font": "serif", "face": "serif"},
+
+    {"n": 2, "role": "paragraph", "bbox": [0.065, 0.331, 0.670, 0.484],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "indent": 0.0, "space_before": 0.005,
+     "fill": null, "text_color": "#1f1f1f", "font": "serif", "face": "serif"},
+
+    {"n": 3, "role": "section_heading", "bbox": [0.068, 0.504, 0.239, 0.514],
+     "column": "full", "size_rel": 1.05, "size_pt": 11.8, "align": "left",
+     "indent": 0.0, "space_before": 0.020,
+     "fill": null, "text_color": "#6b6b6c", "font": "serif-bold", "face": "serif-bold"},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.065, 0.530, 0.669, 0.595],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "indent": 0.0, "space_before": 0.016,
+     "fill": null, "text_color": "#1f1f1f", "font": "serif", "face": "serif"},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.065, 0.601, 0.671, 0.700],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "indent": 0.0, "space_before": 0.006,
+     "fill": null, "text_color": "#1f1f1f", "font": "serif", "face": "serif"},
+
+    {"n": 6, "role": "paragraph", "bbox": [0.065, 0.710, 0.670, 0.739],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "indent": 0.0, "space_before": 0.009,
+     "fill": null, "text_color": "#1f1f1f", "font": "serif", "face": "serif"},
+
+    {"n": 7, "role": "list", "bbox": [0.066, 0.749, 0.671, 0.849],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "indent": 0.045, "space_before": 0.009,
+     "fill": null, "text_color": "#1f1f1f", "font": "serif", "face": "serif"},
+
+    {"n": null, "role": "page_number", "bbox": [0.804, 0.726, 0.957, 0.765],
+     "column": "right", "size_rel": 1.38, "size_pt": 14.5, "align": "left",
+     "indent": 0.0, "space_before": 0.636,
+     "fill": "#f8931f", "text_color": "#ffffff", "font": "sans", "face": "sans"},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.802, 0.767, 0.957, 0.773],
+     "column": "right", "size_rel": 1.0, "indent": 0.0, "space_before": 0.002,
+     "fill": "#f8931f"},
+
+    {"n": null, "role": "running_header", "bbox": [0.432, 0.901, 0.527, 0.910],
+     "column": "full", "size_rel": 0.76, "size_pt": 8.0, "align": "center",
+     "indent": 0.0, "space_before": 0.053,
+     "fill": null, "text_color": "#111111", "font": "sans", "face": "sans"}
+  ],
+  "note": "PURE A4 SCAN, 1654x2339 px at 200 dpi (595.32 x 841.92 pt), zero text layer; every number here is measured off the raster. page_kind is reported both at top level and inside page (the brief names the field but does not show it in the schema); the parent asked for 'face' while the brief's schema says 'font', so both keys are written with the same value. ORDINARY BODY PAGE, SINGLE TEXT COLUMN: the measure runs x 0.065-0.671 (px 108-1109, i.e. 39pt left margin, 360pt measure) with an unusually wide outer (right) margin; the second declared column 'right' (0.802-0.957) is NOT a text column, it is the outer-margin rail that carries only the folio badge, the orange rule under it and the top-right corner device - nothing should be flowed into it. The brief's rationale section mentions a 'side' column value for margin furniture but 'side' is not in the allowed list, so margin furniture is marked 'right'; place it at its measured bbox, do not flow it. BODY METRICS: body_text_size_px 21.0 is the cap-to-baseline height ('L' of 'Let us', px y240-260), confirmed on five separate lines; x-height 15 px; ascender-to-descender 28 px; line pitch 41.2 px (= 14.8 pt). size_pt values are DERIVED, not measured: px -> pt at 72/200, then divided by an assumed cap-height/em of about 0.70 (serif) / 0.72 (sans). Derived body size is about 10.8 pt on 14.8 pt. size_rel is the measured ratio and is the number to trust. HEADING: '1.2.3 Pollination' is grey #6b6b6c bold slab serif; its cap height is 22 px against the body's 21, so size_rel is 1.05 by the brief's cap-to-baseline rule, but it is set in a DIFFERENT face with a larger x-height (17 px vs the body's 15), so it reads noticeably larger than 1.05 suggests - by x-height the ratio is 1.13 and by estimated em about 1.09. FIRST-LINE INDENTS (not expressible in the per-element 'indent' field, which records the element's own left edge): blocks n=1, n=2 and n=5 begin with a first-line indent of 0.030 (px 157-159 vs the column edge at 108); blocks n=4 and n=6 are flush left, n=4 because it follows the heading. LIST n=7 HANGING INDENT: the marker '(i)' hangs out at x 0.066 (px 109-129) while the item's text block runs x 0.111-0.671 (px 183-1109) on every line including the first; indent 0.045 is that hang (75 px). 'Autogamy' is set bold italic, the rest of the item is ordinary body serif at size_rel 1.0. NO FIGURE, TABLE, EQUATION OR BOX APPEARS ON THIS PAGE, so no artwork/caption pair had to be measured; the only figure references are textual ('Figure 1.8b', 'Figure 1.9a') pointing at artwork printed elsewhere. All seven A2 blocks were matched to a position with high confidence by reading order and first-line content; no n is a guess and none was left null. FURNITURE: the green band is #4a7435 sampled flat at px (40,600), spanning px x 0-1253 y 1-87 - it bleeds off the left edge and stops short of the corner device, and carries no text of its own. The top-right corner device (px x 1277-1582, y 1-211) is one decorative assembly, not a figure: a brown panel #725420 (reported as its fill), a vertical orange strip #f7941c at px x 1397-1427, a green leaf #99c93f and a grey line-art sprout glyph at px x 1277-1340. The folio badge is a solid #f8931f panel (px 1329-1582 x 1699-1788) with the white numerals '11' set toward its left at px x 1366-1397, y 1723-1751 (digit height 29 px); its bbox is the PANEL, which is what gets drawn. The orange bar below it (px 1327-1582, y 1794-1808, same #f8931f) is reported as footer_rule because that is the chapter's orange rule element, but note it is NOT across the page foot on this page - it sits in the outer margin directly under the folio badge. The line 'Reprint 2026-27' at the page foot is reported as a second running_header because the allowed role list has no footer-text role; it is a foot-of-page reprint stamp in black sans, centred at px x 714-870 (centre 0.479, very slightly left of the sheet centre 0.5), baseline px 2123. SPACE_BEFORE for the two margin-rail items is measured within that rail, not from the preceding body element: page_number 0.636 is the gap down from the bottom of the corner device, and the running_header at the top (0.033) is measured down from the green band rather than from the corner device beside it, which would give a negative number. TEXT BLOCK AND FILL: on a scan with no text layer the design's frame cannot be observed independently of the content, so text_block is the measured extent of the body type - first line top px 239 to last line bottom px 1984 - and fill 0.99 records that the page runs essentially full: the last line is a mid-sentence break ('...the anthers and the stigma should') that continues on the next page, so NCERT set type to the bottom of the frame here. A diagonal grey 'NCERT / Not to be republished' watermark overprints the page (its darkest pixel is about #dcdcdc, extent roughly px x 400-1380, y 670-1010); it is a reprint-proofing overlay, not a printed layout element, so it is deliberately NOT reported as an element - do not draw it."
+}

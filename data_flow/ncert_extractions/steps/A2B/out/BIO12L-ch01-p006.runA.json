@@ -1,0 +1,31 @@
+{
+  "blocks": [
+    {
+      "n": 1,
+      "bold_terms": []
+    },
+    {
+      "n": 3,
+      "bold_terms": []
+    },
+    {
+      "n": 4,
+      "bold_terms": []
+    },
+    {
+      "n": 6,
+      "bold_terms": [
+        "monocarpellary",
+        "multicarpellary",
+        "syncarpous",
+        "apocarpous",
+        "the stigma, style and ovary",
+        "stigma",
+        "ovary",
+        "ovarian cavity (locule)",
+        "The placenta"
+      ]
+    }
+  ],
+  "note": "All bold prose on this page is in n=6 (section 1.2.2 on the pistil); n=1 and n=4 are plain roman throughout - no bold anywhere, including 'pollen banks' and 'seed banks' in n=4. In n=6 the enclosing parentheses are plain, so only the word inside is listed for monocarpellary/multicarpellary/syncarpous/apocarpous; for 'ovarian cavity (locule)' the parentheses ARE inside the bold run. 'ovary.' is printed with a bold full stop but trailing punctuation is excluded, so it is listed as 'ovary'. Note the deliberate overlap: 'the stigma, style and ovary' is one bold run (the leading 'the' is bold), and 'stigma' ('The stigma serves as a landing platform') and 'ovary' ('the pistil is the ovary.') are each bold AGAIN as separate standalone runs later in the same block - a naive first-match substring replace for 'stigma'/'ovary' would land inside the earlier phrase, so match them after it. 'The placenta' is bold including the capitalised 'The'. 'gynoecium', 'style', 'pistil' and the Figure 1.7a/b/c cross-references are plain. Two things outside bold: (a) n=3 is in fact the Figure 1.6 caption (A2 classified it 'paragraph'), where 'Figure  1.6' is set in bold as the structural caption label while 'Pollen  products' is plain - left out of bold_terms because caption/heading typography is not a key term, but recorded here; (b) I saw no italic prose in any of these four blocks for step A2I - in particular 'Rosaceae, Leguminoseae and Solanaceae' in n=4 are plain roman, not italic. The only italic type on the page ('A natural food from honey bees') is printed inside the Figure 1.6 product photo, not in any text block."
+}

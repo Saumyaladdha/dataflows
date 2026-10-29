@@ -758,7 +758,12 @@ def fit_factor(nodes, d, top_pt, foot_pt):
     below 0.72, which is the honest response: a page needing that much shrink is a page whose
     content was assigned wrongly, and hiding it does not fix it.
     """
-    avail = foot_pt - top_pt
+    # A TWO-COLUMN BOOK GIVES THE TEXT TWICE THE COLUMN LENGTH. Class 11 Physics sets two
+    # 226.4pt columns in a 474pt measure, so a page holds 2 x (foot - top) of running text.
+    # Summed against ONE column's height every physics page read as over-full: page 8 of ch01
+    # "needed" 70% and FAILED PAGE_OVERFLOW while the printed page is comfortably set.
+    cols = max(1, int(getattr(d, "body_columns", 1) or 1))
+    avail = (foot_pt - top_pt) * cols
     if avail <= 0:
         return 1.0
     used = 0.0
@@ -778,10 +783,41 @@ def fit_factor(nodes, d, top_pt, foot_pt):
         # A NOTE IN THE SIDE RAIL is out of the text flow too. BIO12L ch03 p046 prints the MTP
         # Act (45 lines) in the left rail beside the prose; summed into the column it "needed"
         # 65% and failed PAGE_OVERFLOW on a page that fits as printed.
+        # ...but ONLY where a narrow block really is a rail. The column finder names the first
+        # column "side" on a two-column page, and a Physics body column is 0.346 of the sheet --
+        # inside this test. Applied there it dropped every left-column paragraph out of the sum,
+        # so the fit was computed from half the page. A book whose BODY is multi-column has no
+        # side rail to exempt.
         bx0 = (n.get("boxes") or [{}])[0]
-        if (n.get("column") == "side" and bx0.get("src") in ("measured", "a2l-agent")
-                and (bx0.get("bbox") or [0, 0, 0, 0])[2] - (bx0.get("bbox") or [0, 0, 0, 0])[0]
-                < 0.35):
+        # ...AND THE RAIL IS KNOWN BY ITS GEOMETRY, NOT BY ITS LABEL. `column` is a heuristic
+        # and gets it wrong: on PHY12L ch01 p007 the Coulomb biography is 0.189 of the sheet
+        # wide and 32 lines deep -- unmistakably the margin -- but carries `column: body`, so
+        # 368pt of rail went into a 639pt column and the page "needed" 56%. Seven pages failed
+        # PAGE_OVERFLOW that way. A book HAS a rail when its measure plus both inner margins
+        # leaves room for one (Biology and Class 12 Physics do, at 132pt; Class 11 Physics'
+        # two-column page does not), and in such a book anything much narrower than the measure
+        # is set in that rail, out of the text flow.
+        has_rail = (d.trim_pt[0] - d.measure_pt - 2 * d.inner_margin_pt) > 60.0
+        bw = ((bx0.get("bbox") or [0, 0, 0, 0])[2] - (bx0.get("bbox") or [0, 0, 0, 0])[0])
+        if (cols == 1 and has_rail and bx0.get("src") in ("measured", "a2l-agent")
+                and bw < 0.35):
+            continue
+        # A MEASURED BLOCK'S HEIGHT IS THE HEIGHT IT PRINTED AT.
+        #
+        # `line_count x pitch` is a good estimate for prose and a wild one for a DISPLAY
+        # EQUATION: a stacked fraction hands back a line box per numerator, denominator and
+        # exponent, so PHY12L ch01 p026 -- a worked-example page of them -- counted fourteen
+        # and sixteen "lines" for equations that occupy about 30pt each, and claimed 1423pt of
+        # content on a 639pt page. Where the box was measured off the book, use it: that is
+        # exactly what the exact renderer places the block at.
+        # Single-column books only. In a TWO-column book a paragraph that straddles the column
+        # break keeps ONE union box, which spans almost the whole page height -- using that as
+        # its height put a Class 11 Physics page back over the limit the moment this helped
+        # Class 12. There, the line count is the honest measure.
+        bb = bx0.get("bbox")
+        if (cols == 1 and bb and bx0.get("src") in ("measured", "a2l-agent")
+                and bb[3] > bb[1] and len(n.get("boxes") or []) == 1):
+            used += (bb[3] - bb[1]) * d.trim_pt[1] + 2.0
             continue
         lines = n.get("line_count")
         pitch = n.get("line_pitch_pt") or d.body_pt * d.leading

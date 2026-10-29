@@ -1,0 +1,219 @@
+{
+ "question_id": "Q-000377",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2022,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:63"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A): In a particular point defect, an ionic solid is electrically neutral, even if few of its cations are missing from its unit cells. Reason (R): In an ionic solid, Frenkel defect arises due to dislocation of cation from its lattice site to interstitial site, maintaining overall electrical neutrality. In the light of the above statements, choose the most appropriate answer from th e options given below:",
+ "statements": [
+  {
+   "label": "A",
+   "text": "In a particular point defect, an ionic solid is electrically neutral, even if few of its cations are missing from its unit cells."
+  },
+  {
+   "label": "R",
+   "text": "In an ionic solid, Frenkel defect arises due to dislocation of cation from its lattice site to interstitial site, maintaining overall electrical neutrality."
+  }
+ ],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
+  "2": "Both (A) and (R) are correct but (R) is not the correct explanation of (A)",
+  "3": "(A) is correct but (R) is not correct",
+  "4": "(A) is not correct but (R) is correct"
+ },
+ "structure": "assertion_reason",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "63\nThe Solid State\nGiven below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason\n(R). Assertion (A): In a particular point defect, an ionic solid is electrically neutral, even if few of its\ncations are missing from its unit cells. Reason (R): In an ionic solid, Frenkel defect arises due to\ndislocation of cation from its lattice site to interstitial site, maintaining overall electrical neutrality. In the\nlight of the above statements, choose the most appropriate answer from th e options given below:\n(1)\nBoth (A) and (R) are correct and (R) is\nthe correct explanation of (A)\n(2)\nBoth (A) and (R) are correct but (R) is\nnot the correct explanation of (A)\n(3)\n(A) is correct but (R) is not correct\n(4)\n(A) is not correct but (R) is correct\n",
+ "b4_script_options": {
+  "1": "Both (A) and (R) are correct and (R) is\nthe correct explanation of (A)",
+  "2": "Both (A) and (R) are correct but (R) is\nnot the correct explanation of (A)",
+  "3": "(A) is correct but (R) is not correct",
+  "4": "(A) is not correct but (R) is correct"
+ },
+ "official_answer": "2",
+ "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+ "status": "normal",
+ "subject": "Chemistry",
+ "branch": "physical",
+ "b6_answer": "1",
+ "b6_reason": "In the Frenkel defect the cation leaves its lattice site for an interstitial site, so cations are absent from those unit cell sites while the solid stays electrically neutral; R therefore explains A.",
+ "b6_working": "",
+ "b6_confidence": "medium",
+ "b6_note": "Assertion is loosely worded: if 'cations missing from its unit cells' is read as cations actually absent from the solid, it describes the Schottky defect, and then R (true on its own) would not explain A, making option 2 defensible. Chose option 1 because 'missing from its unit cells' plus 'maintaining overall electrical neutrality' matches the Frenkel reading.",
+ "b6_agrees_with_key": false,
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

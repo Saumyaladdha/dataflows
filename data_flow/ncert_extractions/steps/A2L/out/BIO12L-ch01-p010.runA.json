@@ -1,0 +1,79 @@
+{
+  "page_kind": "ordinary",
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1654,
+    "height_px": 2339,
+    "body_text_size_px": 21.5,
+    "text_block": [0.0955, 0.0992, 0.8942, 0.8367],
+    "fill": 0.96,
+    "columns": [
+      {"id": "left", "x0": 0.0955, "x1": 0.4565},
+      {"id": "right", "x0": 0.4692, "x1": 0.8942}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.2013, 0.0000, 0.9571, 0.0355],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435", "space_before": 0.0},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.0000, 0.0000, 0.1856, 0.0906],
+     "column": "full", "size_rel": 1.0, "fill": "#725420", "space_before": 0.0},
+
+    {"n": null, "role": "running_header", "bbox": [0.8331, 0.0714, 0.8924, 0.0782],
+     "column": "full", "size_rel": 0.74, "size_pt": 8.1, "align": "right",
+     "font": "sans", "face": "sans", "text_color": "#717072", "space_before": 0.0359},
+
+    {"n": 1, "role": "figure", "bbox": [0.1149, 0.0992, 0.4395, 0.7503],
+     "column": "left", "size_rel": 1.0, "align": "center", "space_before": 0.0086},
+
+    {"n": null, "role": "figure", "bbox": [0.1838, 0.0992, 0.3706, 0.2702],
+     "column": "left", "size_rel": 1.0, "align": "center", "fill": "#050a0d",
+     "space_before": 0.0086},
+
+    {"n": null, "role": "figure", "bbox": [0.1596, 0.2860, 0.3815, 0.4532],
+     "column": "left", "size_rel": 1.0, "align": "center", "space_before": 0.0158},
+
+    {"n": null, "role": "figure", "bbox": [0.1149, 0.4647, 0.4395, 0.7503],
+     "column": "left", "size_rel": 1.0, "align": "center", "space_before": 0.0115},
+
+    {"n": 2, "role": "figure_caption", "bbox": [0.0955, 0.7931, 0.4565, 0.8367],
+     "column": "left", "size_rel": 0.88, "size_pt": 9.8, "align": "left",
+     "font": "serif", "face": "serif", "fill": "#fdf1e1", "text_color": "#2f2722",
+     "indent": 0.0, "space_before": 0.0428},
+
+    {"n": 3, "role": "paragraph", "bbox": [0.5145, 0.1022, 0.8942, 0.4335],
+     "column": "right", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "text_color": "#282828",
+     "indent": 0.0453, "space_before": 0.0239},
+
+    {"n": 4, "role": "list", "bbox": [0.4698, 0.4425, 0.8942, 0.5609],
+     "column": "right", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "text_color": "#282828",
+     "indent": 0.0, "space_before": 0.0090},
+
+    {"n": 5, "role": "list", "bbox": [0.4698, 0.5703, 0.8924, 0.6533],
+     "column": "right", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "text_color": "#282828",
+     "indent": 0.0, "space_before": 0.0094},
+
+    {"n": 6, "role": "paragraph", "bbox": [0.4680, 0.6631, 0.8930, 0.7854],
+     "column": "right", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "text_color": "#282828",
+     "indent": 0.0, "space_before": 0.0098},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.190, 0.285, 0.850, 0.760],
+     "column": "full", "size_rel": 1.0},
+
+    {"n": null, "role": "page_number", "bbox": [0.0000, 0.7268, 0.1554, 0.7644],
+     "column": "full", "size_rel": 1.35, "size_pt": 14.6, "align": "right",
+     "font": "sans", "face": "sans", "fill": "#f8931f", "text_color": "#ffffff"},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.0000, 0.7679, 0.1554, 0.7730],
+     "column": "full", "size_rel": 1.0, "fill": "#f8931f", "space_before": 0.0034},
+
+    {"n": null, "role": "running_header", "bbox": [0.4316, 0.9012, 0.5266, 0.9098],
+     "column": "full", "size_rel": 0.74, "size_pt": 8.1, "align": "center",
+     "font": "sans", "face": "sans", "text_color": "#2b2b2b", "space_before": 0.0646}
+  ],
+  "note": "PURE A4 SCAN, zero text layer: every number here is measured off the 1654x2339 px render (= 595.32x841.92pt at exactly 200 dpi) with PIL/numpy. page_kind is reported twice (top level and inside page) so either consumer shape finds it; the page is an ordinary body page (folio 12, verso), not an opener. NO QR CODE ON THIS PAGE - the previous build's qr_code claim is wrong. The only dark square region is Figure 1.9 panel (a), which I cropped and inspected: it is a colour PHOTOGRAPH of two sweet-pea flowers (white petals, magenta wings, green stem) on a flat black ground sampled at #050a0d, artwork extent [0.1838, 0.0992, 0.3706, 0.2501]. Nothing on this sheet has finder patterns or module structure. FIGURE 1.9 STRUCTURE: three vertically stacked panels in the LEFT column sharing ONE tinted caption box below all three. Reported as a group box (n=1) plus three panel boxes (n=null) plus a SEPARATE caption box (n=2), as instructed. Each panel bbox INCLUDES that panel's own (a)/(b)/(c) letter, because the letter is the panel's identifier and a crop that drops it loses the panel's label; artwork-only extents are (a) [0.1838, 0.0992, 0.3706, 0.2501] photo, (b) [0.1596, 0.2860, 0.3815, 0.4348] photo, (c) [0.1149, 0.4647, 0.4395, 0.7251] labelled line drawing with leader lines to 'Chasmogamous flower' and 'Cleistogamous flowers'. The letter labels sit at (a) [0.2624, 0.2608, 0.2793, 0.2702], (b) [0.2624, 0.4438, 0.2793, 0.4532], (c) [0.2666, 0.7396, 0.2836, 0.7503]. Panels (b) and (c) carry no flat fill (photographic ground / white paper) so fill is omitted on them. The three panels are CENTRED on the left column (column centre x=0.276, panel centres 0.277/0.270/0.277), so align=center is given and indent is deliberately omitted on them - their left insets (0.088 / 0.064 / 0.019) are a consequence of centring, not a paragraph indent, and a renderer must not apply both. body_text_size_px=21.5 is the cap-to-baseline height measured on right-column body prose (line 1 top y239 to baseline y261 = 22px; line 2 top y281 to baseline y302 = 21px); baseline-to-baseline leading is 41.8px (15.05pt). size_rel is the measured ratio and is the trusted number. size_pt is DERIVED, not measured: cap_px / 200 dpi * 72 divided by an assumed cap-height/em ratio (0.70 serif, 0.715 sans); on that derivation body prose is about 11.1pt. Treat every size_pt as approximate. SPACE_BEFORE is measured against the previous element IN THE SAME COLUMN, because reading order here crosses columns (left figure column listed before right prose column, per the brief) and a cross-column gap would be meaningless or negative. Right-column elements measure from the running header / the preceding right-column block; left-column elements from the corner device / the preceding panel. HANGING INDENT in the right column: the column measure starts at x0=0.4692, but list markers '(ii)' and '(iii)' hang there while their body text sets at 0.5145. Block 3 has no marker of its own and sits wholly at the 0.5145 body level - it is the run-on of item (i) Autogamy carried over from the previous page - so it carries indent 0.0453 while blocks 4 and 5 carry indent 0.0 with the hang noted here. Block 6 ('Agents of Pollination :') returns to the full measure at 0.4680; its opening words are a BOLD RUN-IN lead, not a separate heading, so no section_heading element is reported - there is no standalone heading on this page. The caption box likewise hangs: 'Figure 1.9' starts at x=0.1004 and the three (a)/(b)/(c) continuation lines indent to x=0.2025. 'Reprint 2026-27' at the foot is a running FOOT line; the allowed role list has no running_footer, so running_header is used for it - do not read that as a page-top element, its bbox is at y=0.90. The watermark element is the diagonal '(C) NCERT / not to be republished' stamp; its bbox [0.190, 0.285, 0.850, 0.760] is APPROXIMATE - it is a rotated overlay whose axis-aligned box over-covers, and part of its stroke runs through panel (c) where it cannot be separated from the artwork. It is tagged decorative_image so a consumer can drop it. SCAN REGISTRATION: there is no printed content right of x=1582px, i.e. the right 72px (4.3% of image width) is blank scanner margin, and the 'Reprint' foot line centres on x=792px rather than the image centre 827px - so the printed sheet sits about 35px LEFT of the image centre. All fractions above are of the IMAGE as given (width_px/height_px let a reader convert); no shift correction has been applied. The page-number tab and the footer rule both bleed off the LEFT trim edge to x=0.0, which is by design on this spread. page.fill=0.96 is the fraction of text-block scanlines (y 0.0992-0.8367) carrying content in either column (1648 of 1725 rows); the page is near-full, with the right column ending at y=0.785 and the left column running on to the caption box at y=0.837. Palette recovered: header band #4a7435, corner device brown #725420 with its orange vertical bar #f7921e at [0.0961, 0.0000, 0.1106, 0.0667] and a green-leaf/black-sprout logo at [0.1088, 0.0257, 0.1856, 0.0906] (reported as one decorative_image since the three parts form a single corner mark), page-number tab and footer rule both #f8931f, caption box #fdf1e1. On this verso the coloured header band is set to the RIGHT with the corner device at the left, consistent with the brief's recto/verso alternation. Block matching is unambiguous by position: n=1 figure group, n=2 caption, n=3/4/5/6 the four right-column text blocks top to bottom; no null-n guesses were needed and no A2 block was left unplaced."
+}

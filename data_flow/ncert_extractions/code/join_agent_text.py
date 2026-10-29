@@ -283,9 +283,12 @@ def apply_agent_text(layout, chapter, steps_dir="steps"):
         if _split_leading_tails(blocks, els, page):
             els = [e for e in page["elements_in_reading_order"] if e["role"] in _TEXT_ROLES]
         pairs = _align([b.get("text", "") for b in blocks], [e.get("text", "") for e in els])
-        followers = _claim_followers(pairs, blocks, els)
-        claimed = {ai for tail in followers.values() for ai in tail}
+        # ABSORBED FIRST: `_claim_followers` needs to know which layer elements a host has
+        # swallowed, because the agent blocks it must rescue are the ones whose text lives in
+        # those elements and nowhere else.
         absorbed = _claim_absorbed(pairs, blocks, els)
+        followers = _claim_followers(pairs, blocks, els, absorbed)
+        claimed = {ai for tail in followers.values() for ai in tail}
         matched_pdf, inserts, dropped, heads_before = set(), [], [], []
         for ai, bj in pairs:
             if ai is None or bj is None:
@@ -402,6 +405,55 @@ def apply_agent_text(layout, chapter, steps_dir="steps"):
                          and min(e["bbox_pt"][3], q["bbox_pt"][3])
                          - max(e["bbox_pt"][1], q["bbox_pt"][1])
                          > 0.5 * (e["bbox_pt"][3] - e["bbox_pt"][1]) for q in eqs)]
+        # ...AND A LEFTOVER NEED NOT SAY IT EXACTLY TO BE THE SAME TEXT TWICE.
+        #
+        # The rule above wants the leftover's words to equal the equation's. The layer does not
+        # cut that cleanly: measured on PHY11L ch01 p006 it kept `ve error in 1.02 g is = (±
+        # 0.01/1.02) × 100 % = ± 1% t` -- the tail of one printed line, the agent's whole line,
+        # and the head of the next, starting mid-word -- sitting directly on top of the agent's
+        # own `= (± 0.01/1.02) × 100 % = ± 1%`. Both were drawn, so the page printed that line
+        # twice, overlapping, in the middle of a column. Two more did the same on the 9.89 g
+        # line below it.
+        #
+        # So a leftover is also a twin when it OVERLAPS an agent-backed element on both axes and
+        # four fifths of its words are already in that element's text. Containment is what keeps
+        # this safe: a layer block holding something the agent genuinely missed shares few words
+        # with its neighbour and is kept, and a block of three words or fewer is never judged.
+        def _covered(a, b):
+            aw = _norm(a).split()
+            if len(aw) < 4:
+                return False
+            bw = set(_norm(b).split())
+            return sum(1 for w in aw if w in bw) >= 0.8 * len(aw)
+
+        def _on_top(a, b):
+            ax0, ay0, ax1, ay1 = a
+            bx0, by0, bx1, by1 = b
+            vy = min(ay1, by1) - max(ay0, by0)
+            vx = min(ax1, bx1) - max(ax0, bx0)
+            # ANY vertical overlap counts towards the union. A ragged leftover straddles the
+            # agent's lines, overlapping each by only a line or two, so demanding half its own
+            # height of every block excluded the very lines it was duplicating. It still has to
+            # share most of the column with them, and the 80% word test below is what actually
+            # decides -- this only gathers the candidates.
+            return vy > 0 and vx > 0.3 * max(1e-6, ax1 - ax0)
+
+        agentful = [e for e in order if e.get("a2_block_n") is not None
+                    and e.get("bbox_pt") and (e.get("text") or "").strip()]
+        # Against the UNION of everything it sits on, not one block at a time. The layer's
+        # leftover runs ACROSS the agent's lines -- the tail of one, the whole of the next, the
+        # head of a third -- so it is never 80% of any single one of them, and judged one at a
+        # time it survived and kept printing over them.
+        extra = []
+        for e in order:
+            if (e.get("text_source") != "pdf-text-layer" or e.get("a2_block_n") is not None
+                    or not e.get("bbox_pt") or not (e.get("text") or "").strip()
+                    or any(e is t for t in twins)):
+                continue
+            on = [q for q in agentful if _on_top(e["bbox_pt"], q["bbox_pt"])]
+            if on and _covered(e["text"], " ".join(q.get("text") or "" for q in on)):
+                extra.append(e)
+        twins = twins + extra
         if twins:
             page["elements_in_reading_order"] = [e for e in order
                                                  if not any(e is t for t in twins)]
@@ -569,11 +621,35 @@ def _set_union_geometry(el, members, page):
     el["bbox_sheet"] = [round((x0 + dx) / sw, 4), round((y0 + dy) / sh, 4),
                         round((x1 + dx) / sw, 4), round((y1 + dy) / sh, 4)]
     el["line_count"] = sum(m.get("line_count") or 0 for m in members) or el.get("line_count")
-    el["line_boxes_pt"] = sorted((ln for m in members for ln in (m.get("line_boxes_pt") or [])),
-                                 key=lambda ln: ln["bbox_pt"][3])
+    # THE LINES GO IN PRINTED READING ORDER, WHICH IN A TWO-COLUMN BOOK IS NOT TOP-TO-BOTTOM.
+    #
+    # Sorted by y alone, a paragraph running from the foot of the left column into the head of
+    # the right comes back with the two columns INTERLEAVED -- the right column's first line
+    # (high on the page) sorts above the left column's last. `_line_geom` then cannot match the
+    # agent's text against the rows, returns nothing, and the paragraph falls back to being
+    # placed as one block at its union bbox, whose top is the RIGHT column's top. Measured on
+    # PHY11L ch01 p003: "As discussed above, every measurement involves errors..." was painted
+    # from y 303 down the LEFT column, straight over "Note that when mole is used...".
+    #
+    # Ordering column by column (each column top to bottom) is the order the book prints and the
+    # order the agent transcribed, so the rows line up with the text and every line is placed at
+    # its own measured box. A one-column page has a single column here and is unaffected.
+    mid = page["page_width_pt"] / 2.0
+    def _col(ln):
+        b = ln["bbox_pt"]
+        return 0 if (b[0] + b[2]) / 2.0 < mid else 1
+    all_lines = [ln for m in members for ln in (m.get("line_boxes_pt") or [])]
+    el["line_boxes_pt"] = sorted(all_lines, key=lambda ln: (_col(ln), ln["bbox_pt"][3],
+                                                            ln["bbox_pt"][0]))
+    # ...and SAY SO, because `_print_rows` re-sorts by y and would undo this. It also groups
+    # lines into printed rows by vertical overlap, which across a column break would fuse the
+    # left column's line with whatever the right column prints level with it. Only a block that
+    # really does straddle the columns is marked.
+    if len({_col(ln) for ln in all_lines}) > 1:
+        el["multi_column_block"] = True
 
 
-def _claim_followers(pairs, blocks, els):
+def _claim_followers(pairs, blocks, els, absorbed=None):
     """{layer index: [agent indices]} -- agent blocks the alignment left unmatched that sit
     INSIDE the layer block their predecessor matched.
 
@@ -606,13 +682,37 @@ def _claim_followers(pairs, blocks, els):
     # nearest EARLIER matched layer block whose text holds its opening words.
     taken = {a for tail in followers.values() for a in tail}
     matched = [(ai, bj) for ai, bj in pairs if ai is not None and bj is not None]
+    #
+    # AND THE HOST MAY HAVE SWALLOWED THE ELEMENT THE BLOCK'S TEXT IS IN.
+    #
+    # Measured on PHY11L ch01 p011, which prints exercises 1.3-1.13. The text layer returns them
+    # as four ragged blocks that do not line up with the questions at all, so the alignment
+    # matched 1.3, 1.8 and 1.11 and left the other eight unmatched. Two things then lost them:
+    # an unmatched LAYER element between two unmatched agent blocks resets `host` above, which
+    # dropped 1.6 and 1.7; and 1.8's element ABSORBED the layer elements holding 1.9 and 1.10,
+    # so the agent's text for 1.8 replaced them and 1.9 and 1.10 were dropped with nowhere left
+    # to match. Six of eleven exercises left the chapter -- question 1.9 disappeared entirely
+    # and the top half of the printed page came out blank.
+    #
+    # A block is still claimed only when its opening words are found in the host's own text OR
+    # in an element absorbed into that host, so a block the agent saw and the layer never had is
+    # still reported unmatched. `question` is admitted here because an exercise IS a question
+    # block; excluding the kind is what left the rescue unable to help the one page that needed
+    # it most.
+    pools = {}
+    for _a, _h in matched:
+        pool = _norm(els[_h].get("text"))
+        for _k in (absorbed or {}).get(_h, []):
+            pool += " " + _norm(els[_k].get("text"))
+        pools[_h] = pool
     for ai, bj in pairs:
         if ai is None or bj is not None or ai in taken:
             continue
-        if (blocks[ai].get("kind") or "paragraph").lower() not in ("paragraph", "list", "box"):
+        if (blocks[ai].get("kind") or "paragraph").lower() not in (
+                "paragraph", "list", "box", "question"):
             continue
         probe = _norm(blocks[ai].get("text"))[:25]
-        hosts = [h for a, h in matched if a < ai and probe and probe in _norm(els[h].get("text"))]
+        hosts = [h for a, h in matched if a < ai and probe and probe in pools.get(h, "")]
         if hosts:
             followers.setdefault(hosts[-1], []).append(ai)
             followers[hosts[-1]].sort()
@@ -1633,6 +1733,22 @@ def repair_cross_column_blocks(layout):
             for g in groups[1:]:
                 piece = " ".join((ln.get("text") or "").strip() for ln in g)
                 at = text.find(piece)
+                # A CUT MUST FALL ON A WORD BOUNDARY, at both ends.
+                #
+                # `find` is happy to match inside a word, and once the element carries the
+                # AGENT's text rather than the layer's, the layer's own line often starts
+                # mid-word. Measured on PHY11L ch01 p006: the layer's line `ve error in 1.02 g
+                # is` matched inside the agent's `...the relati|ve error in 1.02 g is...`, so
+                # the paragraph was cut there and the piece re-placed as its own block -- the
+                # line printed twice, overlapping, with `relati` left behind. A cut that lands
+                # inside a word is not a column boundary; the block is left whole instead.
+                if piece and at > 0 and (text[at - 1].isalnum() and piece[:1].isalnum()):
+                    at = -1
+                if piece and at >= 0:
+                    _end = at + len(piece)
+                    if (_end < len(text) and text[_end:_end + 1].isalnum()
+                            and piece[-1:].isalnum()):
+                        at = -1
                 if not piece or at < 0:
                     cut = None
                     break

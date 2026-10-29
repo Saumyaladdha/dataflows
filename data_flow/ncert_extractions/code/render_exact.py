@@ -53,6 +53,40 @@ def esc(s):
     return html_mod.escape(s or "", quote=True)
 
 
+def is_tint(c):
+    """True if this measured fill is a TINT a table can sit on, not ink and not bare paper.
+
+    `_sample_fills` records the largest filled rect CONTAINING an element, and on a scanned book
+    that is sometimes the standing watermark: BIO11L ch01's two tables both come back
+    `table_fill: #000000`. Painted as the ground it would set the table solid black -- so a fill
+    is used only when it reads as a tint, and anything darker falls back to the stylesheet's
+    default. Measured tints in this corpus: #d1d3d4 and #e6e7e8 (physics tables), #00aeef (the
+    physics header bar), #fef1e1 / #fdd9b0 (the biology peach).
+    """
+    c = (c or "").strip().lower()
+    if not re.fullmatch(r"#[0-9a-f]{6}", c):
+        return False
+    r, g, b = int(c[1:3], 16), int(c[3:5], 16), int(c[5:7], 16)
+    lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255.0
+    return 0.30 <= lum <= 0.985
+
+
+def fig_src(n):
+    """What this render DRAWS for a figure node, in priority order.
+
+    `image` is the CDN url and `image_local` the crop cut from the page; both are the BOOK'S
+    OWN artwork, which on a scanned book (every Physics page is a scan) is a raster of a raster.
+    `image_drawn` is our own redraw of the same figure from a checked spec of primitives
+    (`figp-figure-redrawer` writes the spec, `render_figure.py` draws it), so it is vector, has
+    no page wash or watermark, and carries the labels as real text.
+
+    The owner's rule: the CDN link is kept in `chapter.json` for reference and the REDRAW is
+    what the chapter renders; a figure we cannot draw falls back to the CDN image, then to the
+    local crop. So the redraw wins here and only here -- nothing about the data changes.
+    """
+    return n.get("image_drawn") or n.get("image") or n.get("image_local")
+
+
 _SUB_CH, _SUP_CH = "₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎", "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾"
 _PLAIN = "0123456789+-=()"
 _SUB_RUN = re.compile("[" + _SUB_CH + "]+")
@@ -670,7 +704,14 @@ def render(doc, chapter_dir):
             # As printed: each entry its own number, the title hung at the measured indent,
             # in the rail's measured face, size and colour.
             size = st.get("size") or 10.0
-            ind = r.get("indent_pt")
+            # THE TITLE HANGS, EVEN WHEN THE INDENT COULD NOT BE MEASURED. `_rail_indent` needs
+            # the entry's own line boxes, and an entry the opener splitter rebuilt carries none,
+            # so every Physics entry fell to the inline path: number and title run together on
+            # one line, which then wrapped inside the narrow rail and printed over the entry
+            # below it. Measured on PHY11L ch01 p001 the number sits at x 78.2 and the title at
+            # x 103.7 -- 25.5pt, almost exactly the 2.55em this falls back to.
+            ind = r.get("indent_pt") or (size * 2.55 if any(
+                (it.get("num") or "").strip() for it in r["items"]) else None)
             if ind:
                 rows = "".join(
                     f'<div class="ri" style="padding-left:{ind:.1f}pt;text-indent:-{ind:.1f}pt">'
@@ -682,11 +723,25 @@ def render(doc, chapter_dir):
                 rows = "".join(
                     f'<div class="ri">{esc(" ".join(x for x in (it.get("num"), it["title"]) if x))}'
                     f'</div>' for it in r["items"])
+            # AS WIDE AS THE PANEL, not as wide as this entry's own words. Each entry's box
+            # is the union of the lines it happens to have, so `1.1 Introduction` was sized to
+            # `Introduction` -- and the longer titles, given a column narrower than the book's,
+            # wrapped to a second line and printed over the entry below. The rail's measured
+            # width is the column the book actually sets them in.
+            _cw = ((getattr(d, "opener", None) or {}) or {}).get("contents") or {}
+            _w = (r["bbox"][2] - r["bbox"][0]) * W + 2
+            if _cw.get("width_pt"):
+                _w = max(_w, _cw["width_pt"] * PT_MM - 3.0)
             return (f'<div class="blk railx" style="left:{r["bbox"][0] * W:.2f}mm;'
                     f'top:{r["bbox"][1] * H - size * 0.25 * PT_MM:.2f}mm;'
-                    f'width:{(r["bbox"][2] - r["bbox"][0]) * W + 2:.2f}mm;font-size:{size}pt;'
+                    f'width:{_w:.2f}mm;font-size:{size}pt;'
                     f'line-height:{size * 1.4:.2f}pt;color:{st.get("color") or "#231f20"}'
-                    f'{_face(st.get("font"))}">{rows}</div>')
+                    # NOT the measured face. `style` is the entry's FIRST run -- the bold
+                    # numeral -- so taking its font set the whole rail in Bookman-Demi. The
+                    # book sets only the number in the demi face and the title in the body
+                    # face, and the demi titles were wide enough to wrap a line further than
+                    # the book does, which is what pushed 1.5 over 1.6.
+                    f'">{rows}</div>')
         rail = "".join(_rail(r) for r in (p.get("contents_rail") or []))
 
         blocks = []
@@ -810,7 +865,23 @@ def render(doc, chapter_dir):
             fill = n.get("layout_fill") or n.get("fill")
             if isinstance(fill, str) and re.fullmatch(r"#[0-9a-fA-F]{6}", fill or ""):
                 r_, g_, b_ = (int(fill[i:i + 2], 16) for i in (1, 3, 5))
-                if (r_ * 299 + g_ * 587 + b_ * 114) / 1000 >= 160:
+                # ...AND NEVER A GROUND THE PAGE ALREADY PAINTS. `fill` is the largest filled
+                # rect CONTAINING the element, which on a chapter opener is the hero panel --
+                # already drawn full width as page decor. Painted again behind the block it
+                # shows as a coloured rectangle around the type, exactly the size of the text
+                # box: PHY12L ch01 p001 drew a #6dcff6 slab behind `Chapter One` and the title.
+                # A tint only belongs to a block that is the ONLY thing standing on it.
+                covered = False
+                for dc in (p.get("decor") or []):
+                    if (dc.get("fill") or "").lower() != fill.lower():
+                        continue
+                    db = dc.get("bbox") or []
+                    nb = bb if isinstance(bb, (list, tuple)) and len(bb) == 4 else None
+                    if len(db) == 4 and nb and db[0] <= nb[0] + 0.01 and db[2] >= nb[2] - 0.01 \
+                            and db[1] <= nb[1] + 0.01 and db[3] >= nb[3] - 0.01:
+                        covered = True
+                        break
+                if (r_ * 299 + g_ * 587 + b_ * 114) / 1000 >= 160 and not covered:
                     style += f';background:{fill}'
             # A paragraph's first-line indent, as measured on the page -- applied only to the
             # fragment that starts the paragraph, never to a page-break continuation.
@@ -821,12 +892,12 @@ def render(doc, chapter_dir):
                 style += f';text-align:{n["align"]}'
 
             # A lettered figure is carried by its panels alone -- no combined image to fall back on.
-            if kind == "figure" and (n.get("image") or n.get("image_local") or any(
-                    q.get("image") or q.get("image_local") for q in n.get("panels") or [])):
-                src = n.get("image") or n.get("image_local")
+            if kind == "figure" and (fig_src(n) or any(
+                    fig_src(q) for q in n.get("panels") or [])):
+                src = fig_src(n)
                 h_mm = (bb[3] - bb[1]) * H
                 panels = [q for q in n.get("panels") or []
-                          if (q.get("image") or q.get("image_local")) and q.get("bbox")]
+                          if fig_src(q) and q.get("bbox")]
                 if panels:
                     # Each panel at its OWN measured box, from its own file -- the page shows
                     # exactly what the book prints, and every picture is separately addressable.
@@ -837,7 +908,7 @@ def render(doc, chapter_dir):
                             f'<figure class="blk fig" style="left:{qb[0] * W:.2f}mm;'
                             f'top:{qb[1] * H:.2f}mm;width:{(qb[2] - qb[0]) * W:.2f}mm;'
                             f'height:{(qb[3] - qb[1]) * H:.2f}mm">'
-                            f'<img src="{esc(q.get("image") or q["image_local"])}" '
+                            f'<img src="{esc(fig_src(q))}" '
                             f'alt="{esc(num + " " + q["label"])}"></figure>')
                 else:
                     # At the CROP's rect when it is known: the crop is the box plus a pad, and
@@ -863,12 +934,12 @@ def render(doc, chapter_dir):
             cb = (n.get("caption_box") or {}).get("bbox")
             ib = n.get("image_bbox") or bb
             if kind == "table" and n.get("grid_drawn") and cb and (
-                    n.get("image") or n.get("image_local")):
+                    fig_src(n)):
                 top = max(cb[3], ib[1])
                 blocks.append(
                     f'<div class="blk fig" style="left:{ib[0] * W:.2f}mm;top:{top * H:.2f}mm;'
                     f'width:{(ib[2] - ib[0]) * W:.2f}mm;height:{(ib[3] - top) * H:.2f}mm;'
-                    f'overflow:hidden"><img src="{esc(n.get("image") or n["image_local"])}" '
+                    f'overflow:hidden"><img src="{esc(fig_src(n))}" '
                     f'alt="{esc(n.get("caption") or "")}" style="position:absolute;left:0;'
                     f'top:{(ib[1] - top) * H:.2f}mm;width:100%;height:{(ib[3] - ib[1]) * H:.2f}mm;'
                     f'object-fit:fill"></div>')
@@ -907,6 +978,21 @@ def render(doc, chapter_dir):
                 # THE CELLS IN THE SIZE THE BOOK PRINTED THEM. The stylesheet's 9pt set BIO11L
                 # ch11 p145's `In | Out` table (10.5pt in the book) visibly small, and as a plain
                 # grid at `width:auto` it huddled in the left of its own tinted box.
+                # THE BOOK'S OWN TINT, NOT BIOLOGY'S. The fills above are the Class 11
+                # Biology peach, hard-coded; Physics prints its tables on grey #d1d3d4 under a
+                # cyan #00aeef header bar, both measured by `_sample_fills` and carried on the
+                # node. Rendered with the constants, every physics table came out peach -- the
+                # one thing about the page a reader checks first. The constants stay as the
+                # default for a table whose fill was never measured.
+                if tinted:
+                    tf = n.get("table_fill") if is_tint(n.get("table_fill")) else None
+                    hf = (n.get("table_header_fill")
+                          if is_tint(n.get("table_header_fill")) else None)
+                    if tf:
+                        ts.append(f"--tfill:{tf}")
+                        ts.append(f"--tline:{hf or tf}")
+                    if hf:
+                        ts.append(f"--thfill:{hf}")
                 if n.get("print_size_pt"):
                     ts.append(f"font-size:{float(n['print_size_pt']):.2f}pt")
                 if not tinted and n.get("fill") and str(n["fill"]).lower() not in (
@@ -1194,6 +1280,24 @@ def render(doc, chapter_dir):
                          f'height:{fol.get("h_pt", 36) * PT_MM:.2f}mm;'
                          f'background:{fol.get("fill", "#fff")};'
                          f'color:{fol.get("ink", "#231f20")}">{p["printed"]}</div>')
+        # THE OPENER'S TWO GRADIENT BARS. Class 11 Physics sets the chapter title between them
+        # and they are the page's whole identity -- but they are painted into the page SCAN,
+        # so `page_decor` (which reads the PDF's vector drawings) never saw them and the opener
+        # came out as a bare centred title. Drawn here from the measured design instead. They
+        # mirror: the upper solid at the inner edge fading outward, the lower the other way.
+        _op = getattr(d, "opener", None) or {}
+        _bars = (_op or {}).get("bars") if isinstance(_op, dict) else None
+        if _bars and kind_p == "chapter_opener" and _bars.get("top_y_pt") is not None:
+            bx0 = _bars.get("x0_pt", 0.0) * PT_MM
+            bw = (_bars.get("x1_pt", 0.0) - _bars.get("x0_pt", 0.0)) * PT_MM
+            bh = _bars.get("h_pt", 16.0) * PT_MM
+            _ink = _bars.get("fill", "#00aeef")
+            for _y, _dir in ((_bars["top_y_pt"], "right"), (_bars["bottom_y_pt"], "left")):
+                _g = (f"linear-gradient(to {_dir}, {_ink} 0%, {_ink} 22%, #ffffff 100%)"
+                      if _bars.get("gradient") else _ink)
+                furn += (f'<div class="furn band" style="left:{bx0:.2f}mm;'
+                         f'top:{_y * PT_MM:.2f}mm;width:{bw:.2f}mm;height:{bh:.2f}mm;'
+                         f'background:{_g}"></div>')
         # THE GREEN FOOT BAR, on the opener as on every ordinary page. The design records it as
         # `footer_bar` (fill and top edge; it bleeds off the foot) and this looked only for
         # `footer_band` / `foot_band`, so no page ever drew it (BIO11L ch02: all 13 sheets).
@@ -1271,6 +1375,11 @@ sup,sub{{line-height:0}}
 .furn.folio{{z-index:3;display:flex;align-items:center;justify-content:center;
             font-weight:700;font-size:13pt;border-radius:2mm 2mm 0 0}}
 .furn.imprint{{z-index:2;text-align:center;font-size:8pt;color:#333}}
+/* THE RAIL'S NUMBER IS BOLD; ITS TITLE IS NOT. `style` is read off the entry's FIRST run,
+   which is the bold numeral, so the whole entry inherited Bookman-Demi and every title in the
+   contents printed bold -- wider than the book sets it, which is half of why they wrapped. */
+.blk.railx{{font-weight:400}}
+.blk.railx .rn{{font-weight:700;display:inline-block}}
 /* A question's sub-parts: their own lines, indented past the number. */
 .qn{{font-weight:400}}
 .qsub{{margin:.6mm 0 0 7mm;text-align:left}}
@@ -1318,11 +1427,11 @@ table.grid.plain th,table.grid.plain td{{border:none;background:none;padding:.4m
 table.grid.plain{{width:auto}} .tcap{{font-weight:700;font-size:9.5pt;text-align:center;margin:0 0 2.2mm}}
 /* The caption prints on the page, above the tinted table -- not on the table's ground. */
 .tbl .tcap{{background:#fff;margin:0;padding:0 0 2.2mm}}
-table.grid th,table.grid td{{border:.4pt solid #f0c89a;padding:.5mm 1.2mm;
+table.grid th,table.grid td{{border:.4pt solid var(--tline,#f0c89a);padding:.5mm 1.2mm;
                             text-align:left;vertical-align:top}}
-table.grid th{{font-weight:700;background:#fdd9b0}}
+table.grid th{{font-weight:700;background:var(--thfill,#fdd9b0)}}
 table.grid td.nw{{white-space:nowrap}}
-table.grid td{{background:#fef1e1}}
+table.grid td{{background:var(--tfill,#fef1e1)}}
 .bar{{position:sticky;top:0;z-index:9;background:#111;color:#eee;font:12px ui-monospace,
       monospace;padding:7px 12px;display:flex;gap:10px;flex-wrap:wrap}}
 .tag{{background:#2a2a2a;padding:2px 7px;border-radius:3px}}

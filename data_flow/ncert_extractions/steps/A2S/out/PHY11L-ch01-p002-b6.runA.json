@@ -1,0 +1,55 @@
+{
+  "kind": "table",
+  "header": [
+    "Base quantity",
+    "Name",
+    "Symbol",
+    "Definition"
+  ],
+  "rows": [
+    [
+      "Length",
+      "metre",
+      "m",
+      "The metre, symbol m, is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum c to be 299792458 when expressed in the unit m s⁻¹, where the second is defined in terms of the caesium frequency ∆νcs."
+    ],
+    [
+      "Mass",
+      "kilogram",
+      "kg",
+      "The kilogram, symbol kg, is the SI unit of mass. It is defined by taking the fixed numerical value of the Planck constant h to be 6.62607015 × 10⁻³⁴ when expressed in the unit J s, which is equal to kg m² s⁻¹, where the metre and the second are defined in terms of c and ∆νcs."
+    ],
+    [
+      "Time",
+      "second",
+      "s",
+      "The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency ∆νcs, the unperturbed ground-state hyperfine transition frequency of the caesium-133 atom, to be 9192631770 when expressed in the unit Hz, which is equal to s⁻¹."
+    ],
+    [
+      "Electric",
+      "ampere",
+      "A",
+      "The ampere, symbol A, is the SI unit of electric current. It is defined by taking the fixed numerical value of the elementary charge e to be 1.602176634 × 10⁻¹⁹ when expressed in the unit C, which is equal to A s, where the second is defined in terms of ∆νcs."
+    ],
+    [
+      "Thermo dynamic Temperature",
+      "kelvin",
+      "K",
+      "The kelvin, symbol K, is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant k to be 1.380649 × 10⁻²³ when expressed in the unit J K⁻¹, which is equal to kg m² s⁻² k⁻¹, where the kilogram, metre and second are defined in terms of h, c and ∆νcs."
+    ],
+    [
+      "Amount of substance",
+      "mole",
+      "mol",
+      "The mole, symbol mol, is the SI unit of amount of substance. One mole contains exactly 6.02214076 × 10²³ elementary entities. This number is the fixed numerical value of the Avogadro constant, NA, when expressed in the unit mol⁻¹ and is called the Avogadro number. The amount of substance, symbol n, of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles."
+    ],
+    [
+      "Luminous intensity",
+      "candela",
+      "cd",
+      "The candela, symbol cd, is the SI unit of luminous intensity in given direction. It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540 × 10¹² Hz, Kcd, to be 683 when expressed in the unit lm W⁻¹, which is equal to cd sr W⁻¹, or cd sr kg⁻¹m⁻²s³, where the kilogram, metre and second are defined in terms of h, c and ∆νcs."
+    ]
+  ],
+  "repeated_header": false,
+  "note": "Caption printed above the table: \"Table 1.1 SI Base Quantities and Units*\". The printed header is two-level: \"Base quantity\" spans both header rows, and \"SI Units\" spans the three columns \"Name\", \"Symbol\", \"Definition\"; `header` flattens this to the four printed columns. The table has exactly 4 columns and 7 data rows; each Definition is one cell of continuous prose. Multiplication signs: the × glyph does not appear in the rasterised crop (a blank gap sits between the mantissa and the power of ten at every occurrence, e.g. \"6.62607015  10⁻³⁴\"), but the supplied text layer carries × at each of those gaps, so × is restored in all five places. All superscripts were read from the image. Printed as-is and not corrected: the Electric-current row's base-quantity cell contains only the word \"Electric\" (no second line; the text layer agrees), the Thermodynamic-temperature cell is set on three lines as \"Thermo\" / \"dynamic\" / \"Temperature\" and is joined here with single spaces, and the kelvin definition ends \"kg m² s⁻² k⁻¹\" with a lowercase k. Subscripts cannot be represented in plain text: \"NA\" is printed as italic N with subscript A, and \"Kcd\" as K with subscript cd. Excluded as outside target_box_in_crop: the text \"dimensionless quantities.\" and \"(b) solid angle dΩ.\" above the caption, and the footnote \"* The values mentioned here need not be remembered or asked in a test...\" below the table."
+}

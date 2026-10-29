@@ -1,0 +1,70 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1654,
+    "height_px": 2339,
+    "body_text_size_px": 20.5,
+    "text_block": [0.284, 0.101, 0.894, 0.843],
+    "fill": 1.0,
+    "columns": [
+      {"id": "full", "x0": 0.287, "x1": 0.894}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.201, 0.000, 0.957, 0.036],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0, "fill": "#4a7435"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.000, 0.000, 0.114, 0.089],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0, "fill": "#725420"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.036, 0.036, 0.205, 0.090],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0},
+
+    {"n": null, "role": "running_header", "bbox": [0.833, 0.071, 0.892, 0.078],
+     "column": "full", "size_rel": 0.83, "size_pt": 8.5, "align": "right",
+     "space_before": 0.035, "font": "sans", "text_color": "#6c6c6c"},
+
+    {"n": 1, "role": "paragraph", "bbox": [0.287, 0.101, 0.893, 0.179],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "space_before": 0.024, "font": "serif", "text_color": "#1a1a1a"},
+
+    {"n": 2, "role": "paragraph", "bbox": [0.287, 0.183, 0.894, 0.261],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "space_before": 0.005, "font": "serif", "text_color": "#1a1a1a"},
+
+    {"n": 3, "role": "paragraph", "bbox": [0.287, 0.266, 0.894, 0.422],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "space_before": 0.005, "font": "serif", "text_color": "#1a1a1a"},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.284, 0.430, 0.893, 0.540],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "space_before": 0.008, "font": "serif-italic", "text_color": "#1a1a1a"},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.287, 0.545, 0.893, 0.671],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "space_before": 0.005, "font": "serif-italic", "text_color": "#1a1a1a"},
+
+    {"n": 6, "role": "section_heading", "bbox": [0.290, 0.690, 0.636, 0.702],
+     "column": "full", "size_rel": 1.32, "size_pt": 13.9, "align": "left",
+     "space_before": 0.019, "font": "serif-bold", "text_color": "#15ac52"},
+
+    {"n": 7, "role": "paragraph", "bbox": [0.287, 0.717, 0.893, 0.846],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "space_before": 0.016, "font": "serif", "text_color": "#1a1a1a"},
+
+    {"n": null, "role": "page_number", "bbox": [0.000, 0.726, 0.155, 0.765],
+     "column": "full", "size_rel": 1.46, "size_pt": 15.0, "align": "right",
+     "space_before": 0.636, "font": "sans", "fill": "#f8931f", "text_color": "#ffffff"},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.000, 0.767, 0.155, 0.773],
+     "column": "full", "size_rel": 1.0, "space_before": 0.003, "fill": "#f8931f"},
+
+    {"n": null, "role": "running_header", "bbox": [0.431, 0.901, 0.526, 0.910],
+     "column": "full", "size_rel": 0.76, "size_pt": 7.8, "align": "center",
+     "space_before": 0.056, "font": "sans", "text_color": "#141414"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.192, 0.293, 0.832, 0.749],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0, "text_color": "#e6e6e6"}
+  ],
+  "note": "ORDINARY BODY PAGE (verso), pure A4 scan, 1654x2339 px = 595.32x841.92pt at exactly 200 dpi (1654/595.32*72 = 200.06), so every px figure below converts at 1pt = 2.7778px. SINGLE TEXT COLUMN: one measure, x 475-1478px = 0.287-0.894 = 361pt wide; there is no second text column on this page. OVERFLOW EVIDENCE (the numbers asked for): line pitch measured over all 43 consecutive body-line pairs is 38.5px = 13.86pt (every gap is 37-40px, mean 38.5, no drift; the italic passages n=4 and n=5 use the same 38.5px pitch as the upright prose). body_text_size_px 20.5 is cap/ascender-top to baseline, measured on four separate lines (y429, y506, y1159, y1678) which gave 20.5/20.5/20.5/21.5; x-height is 13.5px. TEXT BLOCK DEPTH: first line top y=237px (85.3pt from head trim), last baseline y=1972px (709.9pt), last descender y=1978px (712.1pt) -> depth top-of-first-line to last-baseline = 1735px = 624.6pt. The page carries 43 body lines + 1 section heading = 44 set lines occupying 44.52 pitches (the heading block costs about 2.5 pitches more than a plain line). 44.52 x 13.86pt = 617pt, which fits the 624.6pt block. CONTENT GENUINELY FITS with room to spare: the last line's descenders end 130px = 46.8pt above the 'Reprint' stamp and 361px = 130pt above the bottom trim, i.e. one further 13.86pt line would still have cleared the stamp. Nothing on this sheet overflows. If our render overflows, the cause is leading or measure, not content volume: at the real 361pt measure and 13.86pt leading NCERT fits 45 line-slots in 625pt; any renderer using more than ~13.9pt leading (e.g. 16pt -> 45 x 16 = 720pt) will run off the sheet. page.fill is 1.0 because the content runs continuously from the first line of the block to the last and breaks mid-sentence onto the next page - no vertical whitespace is left unused inside the measured block. FIRST-LINE INDENT: blocks n=2, n=3, n=4 and n=5 each begin with a 51px = 0.031 of page width = 18.4pt first-line indent (measured x0 526/526/524/527 against a 475 margin); n=1 (continued from the previous page) and n=7 (first paragraph after the heading) are flush. This is a FIRST-LINE indent, not a block inset, so no element carries the `indent` field - no element's left edge is inset from the column. There is NO extra space between consecutive paragraphs: n=1->n=2, n=2->n=3, n=3->n=4 and n=4->n=5 all sit at exactly the normal 38-39px pitch, so paragraph separation on this page is carried entirely by the first-line indent. The only real vertical breaks are around the heading (last italic line top 1543 -> heading top 1615 = 72px, heading -> first body line top 1678 = 63px, i.e. 3.5 pitches spent where 1 would be). MARGIN FURNITURE: the corner ornament (brown panel #725420 with an orange edge bar #f7921e, both bleeding off the left trim at x=0), the orange page-number tab and the orange rule under it all sit in the OUTER (left) margin, entirely outside the 0.287-0.894 text column. They must be placed at their measured bbox and must NOT be flowed into the body column; this step's allowed `column` vocabulary has no `side` value, so they are marked `full` here - treat the bbox as authoritative, not the column id. The second decorative_image is the NCERT leaf-and-figure logo drawn over the bottom of the brown panel (x 60-339px, y 84-211px); its bbox therefore overlaps the corner panel's. BLOCK MATCHING is confident for all seven: line counts match the text_heads exactly (n=1 five lines, n=2 five, n=3 ten, n=4 seven, n=5 eight, n=6 the one heading line, n=7 eight). ROLE CAVEAT: the 'Reprint 2026-27' line at the page foot is a running FOOT line, not a head; `running_header` is the only allowed role for a running line, so it is used with align center - but note the line is centred at x=0.479 of the sheet, about 35px = 13pt LEFT of the sheet centre (0.500) and far left of the text-column centre (0.590), so it is centred on the original pre-trim page, not on this A4 frame. Everything else on the page is squarely placed, with no skew: body left edge is 475px at both the first line (y237) and the last (y1951), and the header band's top and bottom rows are level. WATERMARK: the last decorative_image is the faint grey diagonal reprint watermark running lower-left to upper-right across the body text (median grey level 230, ~#e6e6e6); it carries no subject content and can be dropped. It is reported because it is really printed and overlaps n=3 through n=7. SIZE_PT values are DERIVED, not measured directly: size_rel is the measured ratio and is the trusted number. size_pt = (cap-height px / 200 dpi * 72) / cap-ratio, taking 0.70 for the serif faces and 0.72 for the sans; this puts body text at 10.5pt on 13.86pt leading, which is consistent across every heading on the page. The section heading is set in small caps - its full caps ('A', 'P' and the figures '1.5') measure 27px cap-to-baseline while the small caps ('and', and the lowercase-position letters) measure 19px; size_rel 1.32 is taken from the full caps. FOLIO MISMATCH: the printed page number on this sheet is 22, while the item_id is BIO12L-ch01-p020 - a sheet-index vs printed-folio offset of 2, reported here as an observation only. No figure, table, equation or box appears on this page. All fills were sampled from flat interiors well away from edges and glyphs and came back as single modal values: header band #4a7435 (45000px sampled, mode = median), corner panel #725420, orange bar #f7921e, page tab and footer rule #f8931f. Body text colour #1a1a1a is the darkest core of the scanned ink (edge-contaminated median is #363636); being a scan it never reaches pure black."
+}

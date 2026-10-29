@@ -809,17 +809,38 @@ def _print_rows(el):
         return None
     sx = (sh[2] - sh[0]) / (pt[2] - pt[0])
     sy = (sh[3] - sh[1]) / (pt[3] - pt[1])
+    # A BLOCK THAT STRADDLES A COLUMN BREAK IS NOT READ TOP TO BOTTOM. `join_agent_text` marks
+    # one when a single agent paragraph absorbed measured blocks in two different columns, and
+    # hands the lines over already in printed reading order -- left column top to bottom, then
+    # right. Sorting by y here would interleave the two again, and the vertical-overlap grouping
+    # below would fuse a left-column line with whatever the right column prints level with it.
+    # Both together are why PHY11L ch01 p003's "As discussed above, every measurement involves
+    # errors..." could not be matched line by line and was painted as one block over the
+    # paragraph above it. Grouped WITHIN a column, the rows match the text and each line is
+    # placed where the book printed it.
+    mid_x = (pt[0] + pt[2]) / 2.0
+    multi_col = bool(el.get("multi_column_block"))
+
+    def _col_of(ln):
+        b = ln["bbox_pt"]
+        return 0 if (b[0] + b[2]) / 2.0 < mid_x else 1
+
     rows = []                                   # grouped by vertical overlap, as the extractor
-    for ln in sorted(lines, key=lambda l: (l["bbox_pt"][1] + l["bbox_pt"][3]) / 2):
+    ordered = (lines if multi_col
+               else sorted(lines, key=lambda l: (l["bbox_pt"][1] + l["bbox_pt"][3]) / 2))
+    for ln in ordered:
         y0, y1 = ln["bbox_pt"][1], ln["bbox_pt"][3]
+        c = _col_of(ln) if multi_col else 0
         for r in rows:
+            if r.get("col", 0) != c:
+                continue
             if min(y1, r["y1"]) - max(y0, r["y0"]) >= 0.5 * min(y1 - y0, r["y1"] - r["y0"]):
                 r["lines"].append(ln)
                 r["y0"], r["y1"] = min(r["y0"], y0), max(r["y1"], y1)
                 break
         else:
-            rows.append({"y0": y0, "y1": y1, "lines": [ln]})
-    rows.sort(key=lambda r: r["y0"])
+            rows.append({"y0": y0, "y1": y1, "lines": [ln], "col": c})
+    rows.sort(key=lambda r: (r.get("col", 0), r["y0"]))
     out = []
     for k, r in enumerate(rows):
         parts = []
@@ -1257,6 +1278,22 @@ _Q_LINE = re.compile(r"(?:^|\n)\s*(\d{1,2})\.\s+")
 _Q_SPLIT = re.compile(r"(?:(?<=^)|(?<=[.?!]\s))\s*(\d{1,2})\.\s+(?=[A-Z(])")
 
 
+# NCERT PHYSICS NUMBERS AN EXERCISE `1.3` -- the chapter, a dot, the question, and NO full stop
+# after it -- where Biology prints `3.`. Both patterns above are the Biology form only, so on
+# PHY11L ch01 p011 nothing split: eleven exercises stayed fused inside three paragraphs, none
+# carried a number, and `chapter.json` held no `question` node at all for a page the book sets
+# as eleven numbered items. The chapter's OWN number is required before the dot and a capital
+# or bracket after it, so the `1.75 cm` in question 1.9 and the `1.0 mm` in 1.8 cannot open a
+# question. `(?!\d)` keeps `1.13` whole instead of reading it as question 1 followed by `3`.
+def _q_line_re(cn):
+    return re.compile(r"(?:^|\n)\s*%d\.(\d{1,2})(?!\d)\s+(?=[A-Z(\u201c\"])" % cn)
+
+
+def _q_split_re(cn):
+    return re.compile(r"(?:(?<=^)|(?<=[.?!]\s))\s*%d\.(\d{1,2})(?!\d)\s+(?=[A-Z(\u201c\"])"
+                      % cn)
+
+
 _TYPO_KEYS = ("ink", "print_font", "print_size_pt", "line_pitch_pt", "print_lines")
 
 
@@ -1337,6 +1374,22 @@ def _split_exercise_questions(root, book_base, chapter_num):
         _q_seen[0] = 0
         out = []
         for n in nodes:
+            # INSIDE `Exercises`, A NUMBERED LINE IS A QUESTION, NOT A SECTION.
+            #
+            # The heading classifier cannot tell `1.2 SIGNIFICANT FIGURES` from
+            # `1.2 Fill in the blanks by suitable conversion of units :` -- both are short and
+            # both open with a bold `1.2`. Measured on PHY11L ch01: exercise 1.2 came through as
+            # a `section`, so it carried no number, and because the counter never saw it the
+            # whole run 1.3-1.13 that follows was then rejected for not continuing from 2. A
+            # section node's text is its `title`; as a question it becomes the body.
+            if n.get("kind") == "section" and not (n.get("children") or []):
+                _t = ((n.get("body") or "").strip() or (n.get("title") or "").strip())
+                if re.match(r"^(?:%d\.)?\d{1,2}[.\s]\s*\S" % chapter_num, _t):
+                    n = dict(n)
+                    n.update({"kind": "para", "body": _t,
+                              "body_md": n.get("body_md") or _t,
+                              "sentences": ct.split_sentences(_t)})
+                    n.pop("title", None)
             body = n.get("body") or ""
             # ONE BLOCK CAN BE EXACTLY ONE QUESTION.
             #
@@ -1349,13 +1402,27 @@ def _split_exercise_questions(root, book_base, chapter_num):
             # one whole question; its marks are re-based onto the question's own text.
             # The full stop may be missing on the NEXT expected number only: BIO12L ch05 prints
             # `1 Group the following ...`, and question 1 stayed a paragraph.
-            one = (re.match(r"^\s*(\d{1,2})\.\s+(.*\S)\s*$", body, re.S)
-                   or re.match(r"^\s*(%d)\s+([A-Z].*\S)\s*$" % (_q_seen[0] + 1), body, re.S))
+            one = re.match(r"^\s*(\d{1,2})\.\s+(.*\S)\s*$", body, re.S)
+            # ...IN EITHER NUMBERING STYLE. Physics prints `1.1 Fill in the blanks` -- chapter,
+            # dot, question, no full stop -- which the Biology pattern cannot match, so PHY11L
+            # ch01's exercises 1.1 and 1.2 (page 10) were never recognised as questions. That
+            # left `_q_seen` at 0, and the run 1.3-1.13 on page 11 was then rejected below for
+            # not starting at 1 -- so the whole Exercises section had no question node at all.
+            one_pref = None
+            if not one:
+                one_pref = re.match(r"^\s*%d\.(\d{1,2})(?!\d)\s+(.*\S)\s*$" % chapter_num,
+                                    body, re.S)
+                one = one_pref
+            if not one:
+                one = re.match(r"^\s*(%d)\s+([A-Z].*\S)\s*$" % (_q_seen[0] + 1), body, re.S)
+            _nxt = (int(one.group(1)) + 1) if one else 0
             if (one and n["kind"] in ("para", "box", "list")
                     and int(one.group(1)) in (1, _q_seen[0] + 1)
-                    and not re.search(r"(?<![\d.])%d\.\s+" % (int(one.group(1)) + 1),
-                                      one.group(2))):
+                    and not re.search(r"(?<![\d.])(?:%d\.%d(?!\d)|%d\.)\s+"
+                                      % (chapter_num, _nxt, _nxt), one.group(2))):
                 num, text, at = one.group(1), one.group(2), one.start(2)
+                if one_pref:
+                    num = f"{chapter_num}.{one.group(1)}"
                 marks = [dict(mk, **{"from": mk["from"] - at, "to": mk["to"] - at})
                          for mk in n.get("marks") or []
                          if mk["from"] >= at and mk["to"] <= at + len(text)]
@@ -1369,7 +1436,7 @@ def _split_exercise_questions(root, book_base, chapter_num):
                             "belongs": n.get("belongs"),
                             "source": n.get("source"), "qa": n.get("qa", "auto"),
                             **_typography_of(n)})
-                _q_seen[0] = int(num)
+                _q_seen[0] = int(one.group(1))
                 continue
             # The run of questions can arrive typed as a `box` or a `list` as well as a
             # `para` -- what matters is that it is a block of text inside `Exercises`, not
@@ -1446,8 +1513,15 @@ def _split_exercise_questions(root, book_base, chapter_num):
             if not body and n.get("items"):
                 body = " ".join(i.get("body", "") for i in n["items"])
             parts = _Q_LINE.split(body)
+            q_prefixed = False
             if len(parts) < 5:
                 parts = _Q_SPLIT.split(body)
+            if len(parts) < 5:                       # ...then this chapter's `C.N` form
+                alt = _q_line_re(chapter_num).split(body)
+                if len(alt) < 5:
+                    alt = _q_split_re(chapter_num).split(body)
+                if len(alt) >= 5:
+                    parts, q_prefixed = alt, True
             # SCAN FOR THE NEXT EXPECTED NUMBER, rather than for "a number at a boundary".
             #
             # Both regexes above need a sentence boundary before the numeral, and three of
@@ -1471,7 +1545,9 @@ def _split_exercise_questions(root, book_base, chapter_num):
             found = (len(parts) - 1) // 2
             scan, pos, want_n = [], 0, first
             while True:
-                m = re.compile(r"(?<![\d.])" + str(want_n) + r"\.\s+").search(body, pos)
+                m = re.compile(
+                    r"(?<![\d.])(?:%d\.(?=%d(?!\d))%d(?!\d)|%d\.)\s+"
+                    % (chapter_num, want_n, want_n, want_n)).search(body, pos)
                 if not m:
                     break
                 scan.append((want_n, m.start(), m.end()))
@@ -1517,7 +1593,10 @@ def _split_exercise_questions(root, book_base, chapter_num):
                 num, text = parts[i], parts[i + 1].strip()
                 if not text:
                     continue
-                out.append({"kind": "question", "number": num, "body": text,
+                # The PRINTED label. `_q_seen` still counts in plain integers, so the
+                # consecutive-run guard above is unchanged for either numbering style.
+                label = f"{chapter_num}.{num}" if q_prefixed else num
+                out.append({"kind": "question", "number": label, "body": text,
                             "body_md": text, "marks": [],
                             "sentences": ct.split_sentences(text),
                             "pages": n.get("pages"), "boxes": n.get("boxes"),
@@ -2360,7 +2439,8 @@ def _order_lettered_siblings(tree):
     and each captioned with a single letter is reordered.
     """
     def letter(n):
-        m = re.match(r"^\s*(?:Figure|Fig\.)\s*\d+\.\d+\.?\s*\(([a-z])\)", n.get("caption") or "")
+        m = re.match(r"^\s*(?:FIGURE|Figure|Fig\.)\s*\d+\.\d+\.?\s*\(([a-z])\)",
+                     n.get("caption") or "")
         return m.group(1) if m else None
 
     def fix(nodes):
@@ -2726,9 +2806,15 @@ def chapter_title_of(pages):
     for p in pages:
         titles = [e["text"].strip() for e in p["elements_in_reading_order"]
                   if e["role"] == "chapter_title"]
+        # `Chapter One` IS NOT THE CHAPTER'S TITLE. The skip below spelled only the numeral
+        # form, so once the opener's chapter line was split onto its own element (Class 12
+        # Physics prints `Chapter One` over `ELECTRIC CHARGES AND FIELDS`) it was taken as the
+        # title: the chapter was named "Chapter One" and written to a folder of that name.
+        _word = (r"(?:\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|"
+                 r"thirteen|fourteen|fifteen|sixteen)")
         for t in titles:
-            if not re.match(r"^\s*chapter\s+\d+\s*$", t, re.I):
-                return re.sub(r"(?i)^chapter\s*\d+\s*", "", t).strip()
+            if not re.match(r"(?i)^\s*chapter\s+" + _word + r"\s*$", t):
+                return re.sub(r"(?i)^chapter\s*" + _word + r"\s*", "", t).strip()
     return ""
 
 
@@ -3196,7 +3282,20 @@ def _rail_items(text):
             out[-1]["title"] = (out[-1]["title"] + " " + ln.strip()).strip()
         elif ln.strip():
             out.append({"num": None, "title": ln.strip()})
-    return out
+    # `Summary` AND `Exercises` ARE THEIR OWN ENTRIES. NCERT lists them in the rail under the
+    # numbered sections, with no number of their own. Arriving on the same line as the last
+    # numbered entry -- the layer runs them together -- they were appended to its title, so the
+    # Physics opener printed `1.6 Dimensional analysis and its applications Summary Exercises`
+    # as one contents line. Split off the tail instead; they are entries, not part of 1.6.
+    tail = re.compile(r"\s+(?=(?:Summary|Exercises|Appendices|Points to Ponder)\b)")
+    final = []
+    for it in out:
+        pieces = tail.split(it.get("title") or "")
+        final.append({**it, "title": pieces[0].strip()})
+        for extra in pieces[1:]:
+            if extra.strip():
+                final.append({"num": None, "title": extra.strip()})
+    return final
 
 
 def _merge_split_rail(entries):
@@ -3314,10 +3413,10 @@ def _merge_split_captions(tree):
                 same_page = (n.get("page_file") or "") == (prev.get("page_file") or "")
                 cap = (n.get("caption") or "").strip()
                 prev_cap = (prev.get("caption") or "").strip()
-                starts_own = re.match(r"^(?:Figure|Fig\.|Table)\s*\d", cap)
+                starts_own = re.match(r"^(?:FIGURE|Figure|Fig\.|Table)\s*\d", cap)
                 if (prev.get("kind") == "figure" and same_page and cap and prev_cap
                         and not starts_own
-                        and re.match(r"^(?:Figure|Fig\.|Table)\s*\d", prev_cap)):
+                        and re.match(r"^(?:FIGURE|Figure|Fig\.|Table)\s*\d", prev_cap)):
                     # Two spaces when either half is letter-spaced: that is the word gap
                     # `_despace` keeps, so the seam does not fuse two words.
                     joiner = ("" if prev_cap.endswith("-") else
@@ -3493,7 +3592,11 @@ def to_markdown(doc):
                         out.append("| " + " | ".join(r) + " |")
                     out.append("")
             elif k in ("figure", "table"):
-                src = n.get("image") or n.get("image_local")
+                # THE REDRAW IS WHAT A RENDER SHOWS, here as in `render_exact.fig_src`:
+                # `image_drawn` is our own vector drawing of the figure from a checked FIGP
+                # spec, `image` the CDN url kept in the JSON for reference, `image_local` the
+                # crop. A figure with no spec simply has no redraw and falls back as before.
+                src = n.get("image_drawn") or n.get("image") or n.get("image_local")
                 cap = (n.get("caption") or "").strip()
                 panels = [q for q in n.get("panels") or [] if q.get("image") or q.get("image_local")]
                 if panels:
@@ -3501,7 +3604,8 @@ def to_markdown(doc):
                     # (b)` is its own picture with its own link -- not three in one crop.
                     num = f"Figure {n['number']}" if n.get("number") else "Figure"
                     for q in panels:
-                        out.append(f"![{num} {q['label']}]({q.get('image') or q['image_local']})")
+                        out.append(f"![{num} {q['label']}]"
+                                   f"({q.get('image_drawn') or q.get('image') or q['image_local']})")
                         out.append("")
                 elif src:
                     # An uncaptioned picture says what it shows (`alt`, e.g. BIO11L ch04 p047's
@@ -3641,7 +3745,13 @@ def _md_cell(text, italics):
 #
 # This runs LAST, after every pass that creates or moves a node, so nothing can out-step it.
 
-_CAPTION_LABEL = re.compile(r"^((?:Figure|Fig\.|TABLE|Table)\s*\d+(?:\.\d+)*)")
+# NCERT CLASS 12 PHYSICS SETS ITS CAPTION LABEL IN CAPS -- `FIGURE 1.2 Electroscopes:`
+# -- where Biology and Class 11 Physics print `Figure 1.2` / `Fig. 1.1`. Every caption
+# pattern here spelled only the mixed-case forms, so not one of PHY12L ch01's 34 cut
+# figures was recognised as having a caption: the chapter held ONE figure node, the
+# captions stayed in the tree as ordinary paragraphs, and the prose around them was cut
+# by the caption that had been left inside it.
+_CAPTION_LABEL = re.compile(r"^((?:FIGURE|Figure|Fig\.|TABLE|Table)\s*\d+(?:\.\d+)*)")
 
 
 def _box_px(bb, rect):

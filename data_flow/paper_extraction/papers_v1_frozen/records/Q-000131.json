@@ -1,0 +1,219 @@
+{
+ "question_id": "Q-000131",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  }
+ },
+ "exam": "NEET",
+ "year": 2022,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:20"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "Given below are two statements Statement I : Biot -Savart’s law gives us the expression for the magnetic field strength of an infinitesimal current element $(\\mathrm{Idl})$ of a current carrying conductor only. Statement II : Biot-Savart’s law is analogous to Coulomb’s inverse square law of charge $q$, with the f ormer being related to the field produced by a scalar source, $\\mathrm{Idl}$ while the latter being produced by a vector source, $q$. In light of above statements choose the most appropriate answer from the options given below",
+ "statements": [
+  {
+   "label": "I",
+   "text": "Biot -Savart’s law gives us the expression for the magnetic field strength of an infinitesimal current element $(\\mathrm{Idl})$ of a current carrying conductor only."
+  },
+  {
+   "label": "II",
+   "text": "Biot-Savart’s law is analogous to Coulomb’s inverse square law of charge $q$, with the f ormer being related to the field produced by a scalar source, $\\mathrm{Idl}$ while the latter being produced by a vector source, $q$."
+  }
+ ],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "Both Statement I and Statement II are correct",
+  "2": "Both Statement I and Statement II are incorrect",
+  "3": "Statement I is correct and Statement II is incorrect",
+  "4": "Statement I is incorrect and Statement II is correct"
+ },
+ "structure": "statement_i_ii",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "20\nGiven below are two statements Statement I : Biot -Savart’s law gives us the expression for the\nmagnetic field strength of an infinitesimal current element (Idl) of a current carrying conductor only.\nStatement II : Biot-Savart’s law is analogous to Coulomb’s inverse square law of charge q, with the f\normer being related to the field produced by a scalar source, Idl while the latter being produced by a\nvector source, q. In light of above statements choose the most appropriate answer from the options\ngiven below\n(1)\nBoth Statement I and Statement II are\ncorrect\n(2)\nBoth Statement I and Statement II are\nincorrect\n(3)\nStatement I is correct and Statement\nII is incorrect\n(4)\nStatement I is incorrect and Statement II\nis correct\nMoving Charges and Magnetism\n",
+ "b4_script_options": {
+  "1": "Both Statement I and Statement II are\ncorrect",
+  "2": "Both Statement I and Statement II are\nincorrect",
+  "3": "Statement I is correct and Statement\nII is incorrect",
+  "4": "Statement I is incorrect and Statement II\nis correct\nMoving Charges and Magnetism"
+ },
+ "official_answer": "3",
+ "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+ "status": "normal",
+ "subject": "Physics",
+ "branch": null,
+ "b6_answer": "3",
+ "b6_reason": "Statement I is right - Biot-Savart's law gives dB for an infinitesimal element Idl only - but Statement II reverses the analogy: the electrostatic source q is the scalar and the current element Idl is the vector source.",
+ "b6_working": "Biot-Savart: dB = (mu0/4pi) I (dl x r_hat)/r^2, written only for an infinitesimal element, the total field needing integration - so Statement I stands. The valid analogy with Coulomb's inverse-square law is that the electric field comes from a SCALAR source (charge q) while the magnetic field comes from a VECTOR source (Idl). Statement II swaps these, so it is incorrect.",
+ "b6_confidence": "high",
+ "b6_note": "Minor extraction artefact: 'f ormer' has a stray space in both the stem and statement II; meaning is unaffected.",
+ "b6_agrees_with_key": true,
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "1",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

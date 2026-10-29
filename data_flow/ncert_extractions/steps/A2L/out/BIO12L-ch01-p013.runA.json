@@ -1,0 +1,55 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1654,
+    "height_px": 2339,
+    "body_text_size_px": 20.5,
+    "text_block": [0.0653, 0.1013, 0.6699, 0.8437],
+    "fill": 0.95,
+    "columns": [
+      {"id": "full", "x0": 0.0653, "x1": 0.6699}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0004, 0.7582, 0.0368],
+     "column": "full", "size_rel": 1.0, "indent": 0.0, "space_before": 0.0004,
+     "fill": "#4a7435"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.7721, 0.0004, 0.9571, 0.0906],
+     "column": "full", "size_rel": 1.0, "indent": 0.0, "space_before": 0.0004,
+     "fill": null},
+
+    {"n": null, "role": "running_header", "bbox": [0.0653, 0.071, 0.3785, 0.0782],
+     "column": "full", "size_rel": 0.83, "align": "left", "indent": 0.0,
+     "space_before": 0.0342, "fill": null, "text_color": "#717072", "font": "sans"},
+
+    {"n": 1, "role": "paragraph", "bbox": [0.0653, 0.1013, 0.6681, 0.1633],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.0231, "fill": null, "text_color": "#333333", "font": "serif"},
+
+    {"n": 2, "role": "box", "bbox": [0.0623, 0.1676, 0.6699, 0.3779],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0314,
+     "space_before": 0.0043, "fill": null, "text_color": "#333333", "font": "serif-italic"},
+
+    {"n": 3, "role": "paragraph", "bbox": [0.0641, 0.3968, 0.6705, 0.7212],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.0188, "fill": null, "text_color": "#333333", "font": "serif"},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.0653, 0.7362, 0.6687, 0.8469],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.015, "fill": null, "text_color": "#333333", "font": "serif"},
+
+    {"n": null, "role": "page_number", "bbox": [0.8035, 0.7264, 0.9571, 0.7649],
+     "column": "full", "size_rel": 1.41, "align": "left", "indent": 0.023,
+     "space_before": 0.6357, "fill": "#f8931f", "text_color": "#ffffff", "font": "sans"},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.8035, 0.767, 0.9571, 0.7734],
+     "column": "full", "size_rel": 1.0, "indent": 0.0, "space_before": 0.0021,
+     "fill": "#f8931f"},
+
+    {"n": null, "role": "running_header", "bbox": [0.4311, 0.9012, 0.5266, 0.9102],
+     "column": "full", "size_rel": 0.78, "align": "center", "indent": 0.0,
+     "space_before": 0.0543, "fill": null, "text_color": "#313131", "font": "sans"}
+  ],
+  "note": "PURE SCAN, no text layer; every number here is measured off the 1654x2339 px image (PNG dpi 200, so 1 px = 0.36 pt; no size_pt reported, pt can be derived as px*0.36). PAGE KIND: ordinary body page (recto - folio and decorative mark sit in the OUTER/right margin; header band is flush to the left edge). COLUMNS: one text column only, x 0.0653-0.6699 (108-1108 px); the right third of the sheet is bare outer margin carrying only furniture. BODY SIZE: body_text_size_px 20.5 = cap/ascender top to baseline on ordinary prose lines (e.g. line at y 1083-1104 px); line pitch is a uniform 38.5-39.0 px (0.0165 of page height) across ALL four text blocks, including the italic block. ITALIC ACTIVITY (n=2): measured the SAME type size as body prose (italic cap height 20 px vs body 20.5 px -> size_rel 1.0); it is large in EXTENT (13 lines, 0.21 of page height), not in type size. It is set off ONLY by a different italic serif face and a first-line indent of 0.0314 (52 px) - there is NO printed rule, border or tint behind it, so fill is null; role 'box' follows A2's block kind and the fact that it is a discrete set-off activity. Its indent 0.0314 is a FIRST-LINE indent: lines 2-13 are flush left at x 0.0653 (the 0.0623 left edge of its bbox is italic overhang on one line). SPACING: measured, block 2 gets NO extra space before it (gap 0.0043 = the normal 10-11 px interline gap); the extra space falls AFTER it - 0.0188 (44 px, about one extra half-line) before block 3, and 0.015 (35 px) before block 4. BOLD RUN-INS: 'Outbreeding Devices :' (block 3, first line) and 'Pollen-pistil Interaction :' (block 4, first line) are bold serif run-in labels INLINE at the head of their paragraphs, at the same type size as the body (bold cap height 20 px); they are not separate heading elements and are not reported as such - they are part of elements n=3 and n=4. FILL: 0.95 = (sum of the four text blocks' heights, 1655 px) / (text_block height, 1737 px); the two inter-paragraph gaps are the only slack. The page is typographically FULL - body type runs from the top to the bottom of the measured text block and the last line breaks mid-sentence. FURNITURE: the top-right decorative mark is one composite (black human-figure glyph x 0.772-0.81, orange vertical bar #f8931f at x approx 0.845-0.863, brown block #725420 at x approx 0.863-0.957, green leaf #99c93f) reported as a single decorative_image. The folio panel is a solid orange block with '15' reversed out in white sans, the digits inset 0.023 (38 px) from the panel's left edge (that is what 'indent' means on that element). The last element is the running FOOT 'Reprint 2026-27' - there is no 'footer_text' role in the allowed list, so it is reported as running_header; it is centred on the sheet (centre x 0.479 vs page centre 0.5, i.e. about 35 px left of true centre on this scan), NOT on the text column. MARGIN FURNITURE AND 'column': allowed column values are full/left/right only, so the folio panel, footer rule and top-right mark are marked 'full' even though they sit outside the text column at x 0.80-0.96 and 0.77-0.96 - place them from their measured bbox, not by flowing them. space_before for the folio panel (0.6357) is measured from the bottom of the decorative mark, the previous thing in that same right-margin rail. WATERMARK: a large pale-grey diagonal '(c) NCERT not to be republished' watermark crosses the page (lighter than 200 grey, excluded from all ink measurements at threshold 140); it is not a layout element and is not reported. No figure, table, caption, equation, list or QR code on this page."
+}

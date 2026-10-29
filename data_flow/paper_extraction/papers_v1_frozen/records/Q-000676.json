@@ -1,0 +1,190 @@
+{
+ "question_id": "Q-000676",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "figure_path": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_url": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_row": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_match_confidence": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_urls_unused": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "subject": "derived from printed position"
+ },
+ "exam": "NEET",
+ "year": 2023,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "E2:83"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E2/neet_2023_code-E2.pdf",
+ "trust": "unsure",
+ "stem_en": "Identify the product in the following reaction:\n[Reaction scheme: benzene diazonium chloride reacts with (i) Cu2Br2/HBr, (ii) Mg/dry ether, (iii) H2O to give Product]\nOptions show: (1) p-bromophenol, (2) phenol, (3) benzene, (4) phenylmagnesium bromide",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "phenol",
+  "2": "benzene",
+  "3": "phenylmagnesium bromide",
+  "4": "p-bromophenol"
+ },
+ "structure": "plain",
+ "has_figure": true,
+ "negative_words": [],
+ "figure_path": "papers/figures/Q-000676.png",
+ "figure_source_url": "https://cdn.mathpix.com/snip/images/MHadufvdaFHP3tNXXXIhXVd5PPPLNpHMKcxIwc4BGh8.original.fullsize.png",
+ "figure_source_row": "NEET-UG_pyq_2023.xlsx#83",
+ "figure_match_confidence": "high",
+ "figure_source_urls_unused": [
+  "https://cdn.mathpix.com/snip/images/8huxv3KsxOil9BFVPUX2_7GXtIDxw2kJeOxrND0_qIg.original.fullsize.png"
+ ],
+ "official_answer": "2",
+ "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf via E2",
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for E2: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key",
+    "official_answer filled from the key grid(s) for E2; all of them select the same option text after each code's option order is mapped onto this row, so the answer is corroborated across codes rather than taken from one grid",
+    "subject set to Chemistry from the printed position (question 83 of code E2); NEET's sections are 1-50 Physics, 51-100 Chemistry, 101-200 Biology and the codes reshuffle only within a section. This mapping agrees with every row in the bank that already carries a subject (617 of 617) and was not used where one was present"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_complete",
+   "notes": [
+    "the figure this bank already publishes was CONFIRMED by the B9S agent as this question's figure, whole and clean: a benzene ring bearing an N2+Cl- group with a reaction arrow carrying the reagents (i) Cu2Br2/HBr, (ii) Mg/dry ether, (iii) H2O pointing to the word Product. It came from a wording match against another question bank and had never been checked"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_complete",
+   "notes": [
+    "the figure this bank already publishes was CONFIRMED by the B9S agent as this question's figure, whole and clean: a benzene ring bearing an N2+Cl- group with a reaction arrow carrying the reagents (i) Cu2Br2/HBr, (ii) Mg/dry ether, (iii) H2O pointing to the word Product. It came from a wording match against another question bank and had never been checked"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_complete",
+   "notes": [
+    "the figure this bank already publishes was CONFIRMED by the B9S agent as this question's figure, whole and clean: a benzene ring bearing an N2+Cl- group with a reaction arrow carrying the reagents (i) Cu2Br2/HBr, (ii) Mg/dry ether, (iii) H2O pointing to the word Product. It came from a wording match against another question bank and had never been checked"
+   ]
+  }
+ ],
+ "subject": "Chemistry",
+ "option_order_by_code": {
+  "E2": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ },
+ "figure_verified": true
+}

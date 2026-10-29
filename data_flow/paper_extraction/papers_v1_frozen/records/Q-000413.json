@@ -1,0 +1,244 @@
+{
+ "question_id": "Q-000413",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2022,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:198"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "Match List-I with List-II with respect to methods of Contraception and their respective actions.",
+ "statements": [],
+ "list_i": [
+  {
+   "label": "(a)",
+   "text": "Diaphragms"
+  },
+  {
+   "label": "(b)",
+   "text": "Contraceptive Pills"
+  },
+  {
+   "label": "(c)",
+   "text": "Intra Uterine Devices"
+  },
+  {
+   "label": "(d)",
+   "text": "Lactational Amenorrhea"
+  }
+ ],
+ "list_ii": [
+  {
+   "label": "(i)",
+   "text": "They cover the cervix blocking the entry of sperms"
+  },
+  {
+   "label": "(ii)",
+   "text": "Inhibit ovulation and Implantation"
+  },
+  {
+   "label": "(iii)",
+   "text": "Increase phagocytosis of sperm within Uterus"
+  },
+  {
+   "label": "(iv)",
+   "text": "Absence of Menstrual cycle and ovulation following parturition"
+  }
+ ],
+ "options_en": {
+  "1": ")a (- ) iv(, )b (- ) i(, )c (- ) iii(, )d (- ) ii(",
+  "2": ")a (- ) iv(, )b (- ) i(, )c (- ) ii(, )d (- ) iii(",
+  "3": ")a (- ) ii(, )b (- ) iv(, )c (- ) i(, )d (- ) iii(",
+  "4": ")a (- ) iii(, )b (- ) ii(, )c (- ) i(, )d (- ) iv("
+ },
+ "structure": "match",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "198\nMatch List-I with List-II with respect to methods of Contraception and their respective actions.\nList-I\nList-II\n(a) Diaphragms\n(i) They cover the cervix blocking the entry of sperms\n(b) Contraceptive Pills\n(ii) Inhibit ovulation and Implantation\n(c) Intra Uterine Devices\n(iii) Increase phagocytosis of sperm within Uterus\n(d) Lactational Amenorrhea\n(iv) Absence of Menstrual cycle and ovulation following parturition\n(1)\n)a (- ) iv(, )b (- ) i(, )c (- ) iii(, )d (- ) ii(\n(2)\n)a (- ) iv(, )b (- ) i(, )c (- ) ii(, )d (- ) iii(\n(3)\n)a (- ) ii(, )b (- ) iv(, )c (- ) i(, )d (- ) iii(\n(4)\n)a (- ) iii(, )b (- ) ii(, )c (- ) i(, )d (- ) iv(\nHuman Reproduction\n",
+ "b4_script_options": {
+  "1": ")a (- ) iv(, )b (- ) i(, )c (- ) iii(, )d (- ) ii(",
+  "2": ")a (- ) iv(, )b (- ) i(, )c (- ) ii(, )d (- ) iii(",
+  "3": ")a (- ) ii(, )b (- ) iv(, )c (- ) i(, )d (- ) iii(",
+  "4": ")a (- ) iii(, )b (- ) ii(, )c (- ) i(, )d (- ) iv(\nHuman Reproduction"
+ },
+ "official_answer": "2",
+ "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+ "status": "normal",
+ "subject": "Biology",
+ "branch": "zoology",
+ "b6_answer": "unsure",
+ "b6_reason": "The correct mapping is (a) Diaphragms - (i) cover the cervix, (b) Pills - (ii) inhibit ovulation and implantation, (c) IUDs - (iii) increase phagocytosis of sperm, (d) Lactational amenorrhea - (iv) absence of cycle after parturition, and no option as rendered carries that mapping.",
+ "b6_working": "Option 1 = a-iv, b-i, c-iii, d-ii; Option 2 = a-iv, b-i, c-ii, d-iii; Option 3 = a-ii, b-iv, c-i, d-iii; Option 4 = a-iii, b-ii, c-i, d-iv. Correct is a-i, b-ii, c-iii, d-iv, absent from all four; option 4 is nearest, matching on b and d with a and c interchanged.",
+ "b6_confidence": "low",
+ "b6_note": "Options arrived damaged: parentheses are mirrored, e.g. ')a (- ) iii(' for '(a)-(iii)', so the pairing as parsed is unreliable. If the (i)/(iii) assignment in the option text was corrupted, option 4 would be the intended key, but that is a repair guess, not a solve. Needs a human to re-read the original option text.",
+ "b6_agrees_with_key": false,
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

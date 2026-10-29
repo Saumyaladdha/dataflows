@@ -1,0 +1,218 @@
+{
+ "question_id": "Q-000512",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  }
+ },
+ "exam": "NEET",
+ "year": 2024,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:90"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "Consider the following reaction in a sealed vessel at equilibrium with concentrations of $\\mathrm{N2}$ = $3.0 \\times 10\\text{–}3$ M, $\\mathrm{O2}$ = $4.2 \\times 10\\text{–}3$ M and $\\mathrm{NO}$ = $2.8 \\times 10\\text{–}3$ M. $2\\mathrm{NO(g)}$ ? $\\mathrm{N2(g)}$ + $\\mathrm{O2(g)}$ If $0.1\\,\\mathrm{mol\\,L}$ $\\text{–}1$ of NO (g) is taken in a closed vessel, what will be degree of dissociation ( $\\alpha$) of NO (g) at equilibrium?",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "$0.00889$",
+  "2": "$0.0889$",
+  "3": "$0.8889$",
+  "4": "$0.717$"
+ },
+ "structure": "plain",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "90\nConsider the following reaction in a sealed vessel at equilibrium with concentrations of N2 = 3.0 × 10–\n3 M, O2 = 4.2 × 10–3 M and NO = 2.8 × 10–3 M. 2NO(g) ? N2(g) + O2(g) If 0.1 mol L –1 of NO (g) is\ntaken in a closed vessel, what will be degree of dissociation ( α) of NO (g) at equilibrium?\n(1)\n0.00889\n(2)\n0.0889\n(3)\n0.8889\n(4)\n0.717\nEquilibrium\n",
+ "b4_script_options": {
+  "1": "0.00889",
+  "2": "0.0889",
+  "3": "0.8889",
+  "4": "0.717\nEquilibrium"
+ },
+ "official_answer": "4",
+ "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+ "status": "normal",
+ "subject": "Chemistry",
+ "branch": "physical",
+ "b6_answer": "4",
+ "b6_reason": "K from the given equilibrium concentrations is 1.607; solving it for 0.1 M NO gives alpha = 0.717.",
+ "b6_working": "K = [N2][O2]/[NO]^2 = (3.0e-3 x 4.2e-3)/(2.8e-3)^2 = 1.26e-5/7.84e-6 = 1.6071. Start 0.1 M NO: at equilibrium NO = 0.1(1-a), N2 = O2 = 0.05a. K = (0.05a)^2/[0.1(1-a)]^2 = [0.5a/(1-a)]^2 = 1.6071. So 0.5a/(1-a) = 1.2677 -> 0.5a = 1.2677 - 1.2677a -> a = 1.2677/1.7677 = 0.717.",
+ "b6_confidence": "high",
+ "b6_note": "Exponents in the stem are rendered as '10-3' / 'mol L -1' with text dashes rather than superscripts, but the intended powers are unambiguous from the magnitudes.",
+ "b6_agrees_with_key": true,
+ "repairs": [
+  {
+   "date": "2026-10-15",
+   "by": "scripts/repair_paper_records.py",
+   "kind": "mechanical",
+   "notes": [
+    "paper_codes normalised to the short form ['Q1:90'] -- the long form splits one booklet across two values in any join"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

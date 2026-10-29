@@ -1,0 +1,71 @@
+{
+  "page": {
+    "page_kind": "body",
+    "width_px": 1654,
+    "height_px": 2339,
+    "body_text_size_px": 21.6,
+    "text_block": [0.0949, 0.1077, 0.8936, 0.8444],
+    "fill": 0.93,
+    "columns": [
+      {"id": "left", "x0": 0.0000, "x1": 0.1560},
+      {"id": "right", "x0": 0.2872, "x1": 0.8936}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.2013, 0.0009, 0.9571, 0.0363],
+     "column": "full", "size_rel": 1.0, "fill": "#4b7335", "space_before": 0.0009},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.0006, 0.0009, 0.0943, 0.0864],
+     "column": "left", "size_rel": 1.0, "fill": "#745421", "space_before": 0.0009},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.0949, 0.0009, 0.1112, 0.0663],
+     "column": "left", "size_rel": 1.0, "fill": "#f5911f", "space_before": 0.0009},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.0544, 0.0363, 0.1844, 0.0906],
+     "column": "left", "size_rel": 1.0, "space_before": 0.0},
+
+    {"n": null, "role": "running_header", "bbox": [0.8331, 0.0714, 0.8924, 0.0787],
+     "column": "right", "size_rel": 0.79, "size_pt": 8.6, "align": "right",
+     "face": "sans", "font": "sans", "text_color": "#6c6e72", "space_before": 0.0351},
+
+    {"n": 1, "role": "figure", "bbox": [0.1040, 0.1077, 0.8809, 0.5720],
+     "column": "full", "size_rel": 1.0, "align": "center", "space_before": 0.0171},
+
+    {"n": null, "role": "figure", "bbox": [0.1076, 0.1077, 0.8809, 0.2813],
+     "column": "full", "size_rel": 1.0, "align": "center", "space_before": 0.0171},
+
+    {"n": null, "role": "figure", "bbox": [0.1040, 0.2899, 0.5308, 0.5267],
+     "column": "full", "size_rel": 1.0, "align": "left", "space_before": 0.0086},
+
+    {"n": null, "role": "figure", "bbox": [0.6082, 0.2993, 0.8809, 0.5720],
+     "column": "right", "size_rel": 1.0, "align": "right", "space_before": 0.0180},
+
+    {"n": null, "role": "figure_caption", "bbox": [0.0949, 0.5823, 0.8930, 0.6434],
+     "column": "full", "size_rel": 0.93, "size_pt": 10.3, "align": "justify",
+     "indent": 0.0079, "face": "serif", "font": "serif",
+     "fill": "#fef2e2", "text_color": "#231f20", "space_before": 0.0103},
+
+    {"n": 2, "role": "paragraph", "bbox": [0.2872, 0.6789, 0.8936, 0.7414],
+     "column": "right", "size_rel": 1.0, "size_pt": 11.1, "align": "justify",
+     "indent": 0.0, "face": "serif", "font": "serif",
+     "text_color": "#231f20", "space_before": 0.0355},
+
+    {"n": 3, "role": "paragraph", "bbox": [0.2872, 0.7490, 0.8936, 0.8444],
+     "column": "right", "size_rel": 1.0, "size_pt": 11.1, "align": "justify",
+     "indent": 0.0, "face": "serif", "font": "serif",
+     "text_color": "#231f20", "space_before": 0.0076},
+
+    {"n": null, "role": "page_number", "bbox": [0.0000, 0.7268, 0.1560, 0.7640],
+     "column": "left", "size_rel": 1.39, "size_pt": 15.0, "indent": 0.1094,
+     "face": "sans", "font": "sans", "fill": "#f7921c", "text_color": "#fcf7ef",
+     "space_before": 0.6362},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.0000, 0.7670, 0.1554, 0.7726],
+     "column": "left", "size_rel": 1.0, "fill": "#f7921c", "space_before": 0.0030},
+
+    {"n": null, "role": "running_header", "bbox": [0.4311, 0.9008, 0.5266, 0.9098],
+     "column": "full", "size_rel": 0.79, "size_pt": 8.6, "align": "center",
+     "face": "sans", "font": "sans", "text_color": "#0c0c0c", "space_before": 0.0564}
+  ],
+  "note": "page_kind = body (an ordinary body page, not a unit opener or chapter opener); it is a VERSO page (folio 10) so the coloured furniture sits on the LEFT/outer edge. Image is 1654x2339 px = A4 595.32x841.92pt at exactly 200 dpi, so 1 px = 0.36 pt; every size_pt below is DERIVED from that dpi and is secondary -- size_rel is the measured ratio and is the number to trust. COLUMNS: this page is NOT a single full-width measure. The body prose occupies x 0.2872-0.8936 only; the figure and its caption run much wider (0.0949-0.8930), and the wide outer-left margin x 0.000-0.156 is a rail carrying only the orange folio tab and the orange foot rule (both bleed off the trimmed left edge at x=0). I therefore declared left = the margin rail and right = the body measure, and marked the figure, its caption and the header band 'full'. body_text_size_px = 21.6 = mean cap-top-to-baseline over all ten body lines (individual lines measured 21-22 px; x-height 14-15 px; leading 39 px = 0.0167 of page height). FIGURE 1.8: A2 gave one figure block (n=1); the page prints one figure group with ONE shared caption, so n=1 carries the whole group box [0.1040, 0.1077, 0.8809, 0.5720]. The three entries that follow it are SUB-PANELS OF THAT SAME GROUP, given with n:null so a consumer that crops per panel can use them -- they are NOT four separate figures and must not be drawn in addition to the group box. Panel (a), the three ovule sections (megaspore mother cell / dyad / tetrad) with their '(a)' label, is [0.1076, 0.1077, 0.8809, 0.2813]; inside it the three drawings sit at x 0.1076-0.3210, 0.3960-0.6076 and 0.6838-0.8809, all starting at y 0.1077, and the '(a)' label is at [0.4395, 0.2715, 0.4559, 0.2813]. Panel (b), the 2-, 4- and 8-nucleate stages plus the labelled mature embryo sac, is [0.1040, 0.2899, 0.5308, 0.5267]; its '(b)' label is at [0.2739, 0.5165, 0.2914, 0.5267]. Panel (c), the diagrammatic mature embryo sac, is [0.6082, 0.2993, 0.8809, 0.5720]; its '(c)' label is at [0.6717, 0.5622, 0.6874, 0.5720]. Panel (b)'s leader lines fuse its third oval with the labelled sac, so I could not split that pair reliably and did not guess a boundary. Figure label type (Micropylar end, Nucellus, Antipodals etc.) measures 19-20 px cap-to-baseline, i.e. size_rel ~0.90, serif; it is part of the artwork and is not listed as separate elements. CAPTION: the peach panel is [0.0949, 0.5823, 0.8930, 0.6434], flat interior sampled at several points as #fef2e2. Its three text lines sit at y 0.5956-0.6071, 0.6092-0.6204 and 0.6229-0.6340 and are set with a HANGING INDENT: the bold 'Figure 1.8' label starts at x 0.1028, and the caption text column runs x 0.2037-0.8869, so runover lines are indented 0.1009 of page width relative to the label. The 'indent' 0.0079 reported on the element is the text's inset from the panel's own left edge. BODY: paragraph n=2 is four lines (last line short, ending x 0.6699); paragraph n=3 is six lines (last line short, ending x 0.7703); both justified, serif, text colour #231f20 (core-glyph mean 35,32,33). The gap between the two paragraphs is 0.0076 of page height, against a 0.0167 line leading -- i.e. NCERT sets no extra blank line between them, only a small extra lead. FOLIO: the orange tab is [0.0000, 0.7268, 0.1560, 0.7640] fill #f7921c, and the white digits '10' occupy [0.1094, 0.7362, 0.1312, 0.7490] -- right-of-centre inside the tab, not centred, which is why I gave indent 0.1094 and omitted align rather than guess. Cap height of the digits is 30 px. The thin orange foot rule below it is a separate element at [0.0000, 0.7670, 0.1554, 0.7726], same fill. The last element, 'Reprint 2026-27' at [0.4311, 0.9008, 0.5266, 0.9098], is the reprint stamp line at the FOOT of the page, not a running head -- 'running_header' is the nearest allowed role; it is sans-serif, near-black, and its centre (0.4789) falls about 0.015 of page width left of the text block's centre (0.4943). space_before convention: measured from this element's top to the bottom of the nearest printed element directly above it in the same rail/column, as a fraction of page height; for the top-of-page furniture it is measured from the sheet edge, and for the folio tab (0.6362) it is the literal gap down the empty left rail from the leaf emblem, which is not a typographic space. page.fill 0.93 = the share of the text block's depth (0.1077-0.8444) actually covered by content bands; the page is printed to full depth, the 0.07 shortfall being only the inter-element gaps. NOT REPORTED AS ELEMENTS: a pale grey diagonal watermark reading '(C) NCERT' / 'not to be republished' is printed across the whole sheet (roughly x 0.25-0.75, y 0.24-0.70); it is an overlay, not layout, so I deliberately left it out rather than have a renderer draw it. The tonal figure artwork is pale green (#dfeec0-ish) with red/pink nuclei; I did not report a 'fill' for the figure because it is artwork, not a tinted panel. Confidence: block n matching is unambiguous -- A2's only three blocks are the figure (n=1) and the two body paragraphs, which match by position and by text_head ('of the nucellus...' = first body paragraph, 'Female gametophyte :' = second). The caption carries n:null because A2 did not block it."
+}

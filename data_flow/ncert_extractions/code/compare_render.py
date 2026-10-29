@@ -116,8 +116,10 @@ def compare(cid, pages=None, dpi=60, out_dir=None):
     cdir = cdn_publish.chapter_dir(cid)
     with open(os.path.join(cdir, "chapter.json"), encoding="utf-8") as fh:
         doc = json.load(fh)
-    src = doc.get("source_pdf") or ""
-    pdf = src if os.path.isabs(src) else os.path.join(ROOT, src)
+    # `source_pdf` is recorded with the separator of whichever OS built the chapter;
+    # normalise before resolving so a Windows-built chapter compares on posix too.
+    src = (doc.get("source_pdf") or "").replace("\\", "/")
+    pdf = src if os.path.isabs(src) else os.path.join(ROOT, *src.split("/"))
     out_dir = out_dir or os.path.join(ROOT, "qa", "compare", cid)
     os.makedirs(out_dir, exist_ok=True)
     tmp = os.path.join(tempfile.mkdtemp(prefix="cmp_"), "render.pdf")

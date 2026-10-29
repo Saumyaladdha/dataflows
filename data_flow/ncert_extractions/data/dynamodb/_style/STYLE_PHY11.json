@@ -1,0 +1,146 @@
+{
+ "PK": "STYLE#PHY11",
+ "SK": "V1",
+ "kind": "style",
+ "name": "NCERT Physics, Class XI",
+ "applies_to": [
+  "PHY11L"
+ ],
+ "measured": true,
+ "page": {
+  "trim_mm": [
+   231.88,
+   274.14
+  ],
+  "inner_margin_mm": 26.0,
+  "measure_mm": 167.22,
+  "text_top_mm": 26.25,
+  "text_foot_mm": 254.99,
+  "mirrors": true
+ },
+ "type": {
+  "body_pt": 10.0,
+  "leading": 1.2,
+  "ink": "#231f20",
+  "font_body": "\"Bookman Old Style\", Bookman, \"TeX Gyre Bonum\", Georgia, serif",
+  "font_display": "\"Century Gothic\", \"TeX Gyre Adventor\", \"URW Gothic\", Avenir, sans-serif"
+ },
+ "header": {
+  "band": null,
+  "strip": null,
+  "corner": null,
+  "motif": null
+ },
+ "folio": {
+  "style": "plain",
+  "fill": null,
+  "ink": "#00aeef",
+  "w_pt": 26.0,
+  "h_pt": 8.1,
+  "y0_pt": 50.7,
+  "x_recto_pt": 521.4,
+  "x_verso_pt": 109.7,
+  "font": "body",
+  "size_pt": 8.0,
+  "weight": 400,
+  "radius_pt": 0.0,
+  "radius_corners": null,
+  "align": "outer",
+  "pad_pt": 0.0
+ },
+ "running_head": {
+  "y_pt": 50.7,
+  "size_pt": 8.0,
+  "smallcaps": false,
+  "ink": "#00aeef",
+  "font": "body",
+  "verso": "subject",
+  "recto": "chapter_title",
+  "inset_pt": 73.7,
+  "rule": "#00aeef",
+  "rule_h_pt": 4.0,
+  "rule_y_pt": 58.5
+ },
+ "footer": {
+  "bar": null,
+  "imprint": {
+   "y_pt": 754.5,
+   "size_pt": 8.0,
+   "font": "sans",
+   "ink": "#000000"
+  }
+ },
+ "opener": {
+  "kind": "centred-bars",
+  "bars": {
+   "fill": "#00aeef",
+   "h_pt": 16.8,
+   "gradient": true,
+   "x0_pt": 73.7,
+   "x1_pt": 547.7,
+   "top_y_pt": 143.5,
+   "bottom_y_pt": 199.7
+  },
+  "qr": {
+   "x_recto_pt": 472.7,
+   "x_verso_pt": 99.6,
+   "y_pt": 48.3,
+   "size_pt": 85.0
+  },
+  "contents": {
+   "x_pt": 74.2,
+   "y_pt": 255.9,
+   "width_pt": 165.7,
+   "size_pt": 10.0,
+   "ink": "#00aeef",
+   "italic": false,
+   "pitch_pt": 20.0,
+   "panel_fill": "#c7eafb",
+   "panel_border": "#231f20",
+   "panel_y1_pt": 696.6
+  },
+  "body_x_pt": 320.8,
+  "body_top_pt": 255.9
+ },
+ "kinds": {
+  "para": {
+   "size_rel": 1.0,
+   "align": "justify",
+   "color": "#231f20"
+  },
+  "section": {
+   "size_rel": 1.0,
+   "color": "#00aeef",
+   "variant": "small-caps",
+   "weight": 700,
+   "align": "left"
+  },
+  "list": {
+   "size_rel": 1.0,
+   "align": "left"
+  },
+  "figure": {
+   "render": "image"
+  },
+  "table": {
+   "render": "image"
+  },
+  "box": {
+   "size_rel": 0.95,
+   "align": "left"
+  },
+  "summary": {
+   "size_rel": 1.0,
+   "color": "#00aeef"
+  },
+  "exercises": {
+   "size_rel": 1.0,
+   "color": "#00aeef"
+  }
+ },
+ "furniture_assets": "assets/furniture/PHY11/",
+ "imprint_by_edition": {
+  "O": "2022-23",
+  "L": "2024-25"
+ }
+}

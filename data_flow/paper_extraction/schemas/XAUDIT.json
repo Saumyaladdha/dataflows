@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "XAUDIT — x-brief-auditor output",
+  "description": "Findings from auditing one step's BRIEF against the outputs it produced. Every finding names the instruction that failed, a real output that demonstrates it, the cause, and the exact replacement text. The shape is enforced here; the rules a schema cannot express (evidence must be real, replacement text must be specific, findings must be ordered) are enforced by code/checks/XAUDIT.py.",
+  "type": "object",
+  "oneOf": [
+    {
+      "required": ["error"],
+      "properties": {
+        "error": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    {
+      "required": ["step", "findings", "working"],
+      "additionalProperties": false,
+      "properties": {
+        "step": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The step code audited, e.g. ECAT. Must equal the input's `step`."
+        },
+        "findings": {
+          "type": "array",
+          "description": "One entry per instruction that failed, ordered by outputs_affected, descending. May be empty — finding nothing is a valid answer and is better than inventing one.",
+          "items": {
+            "type": "object",
+            "required": ["id", "cause", "fix_in", "instruction_quoted", "evidence", "replacement_text", "outputs_affected"],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^F[0-9]+$",
+                "description": "F1, F2, … in the same order as the array."
+              },
+              "cause": {
+                "type": "string",
+                "enum": [
+                  "promised_input_absent",
+                  "missing_boundary",
+                  "unverifiable_instruction",
+                  "implicit_exception",
+                  "contradiction",
+                  "no_escape_hatch",
+                  "wrong_owner",
+                  "instruction_was_correct"
+                ],
+                "description": "instruction_was_correct is a real verdict: the instruction was right, clear and checkable, and the fault lies with the agent or the source."
+              },
+              "fix_in": {
+                "type": "string",
+                "enum": ["brief", "packet_builder", "codebook", "schema", "check"],
+                "description": "If a script could detect the failure, this is `check` — never `brief`. A prompt rule nobody enforces is a wish."
+              },
+              "instruction_quoted": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The failing passage, copied from the brief character for character. Where the failure is an ABSENT instruction, quote the nearest passage that should have carried it and set instruction_absent true."
+              },
+              "instruction_absent": {
+                "type": "boolean",
+                "description": "True when the finding is that no instruction covers this at all; instruction_quoted then holds the passage where it belongs."
+              },
+              "evidence": {
+                "type": "array",
+                "minItems": 1,
+                "description": "Real outputs that demonstrate the failure. An imagined example is not evidence.",
+                "items": {
+                  "type": "object",
+                  "required": ["item_id", "field", "value", "why_it_shows_the_failure"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "item_id": {"type": "string", "minLength": 1},
+                    "field": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "Dotted path into the output, e.g. traps[0].label"
+                    },
+                    "value": {
+                      "description": "The value actually produced, copied exactly."
+                    },
+                    "why_it_shows_the_failure": {"type": "string", "minLength": 20}
+                  }
+                }
+              },
+              "replacement_text": {
+                "type": "string",
+                "minLength": 20,
+                "description": "The words that go in the file — not a description of a change. For a deletion, say so and quote what is removed."
+              },
+              "outputs_affected": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "How many outputs the fix would change. Counted, never estimated. This is the ranking key."
+              },
+              "note": {"type": "string"}
+            }
+          }
+        },
+        "working": {
+          "type": "array",
+          "description": "Instructions checked and found sound. Not politeness: it stops the next person rewriting a constraint that was holding the output together, and it records what was actually looked at.",
+          "items": {
+            "type": "object",
+            "required": ["instruction_quoted", "evidence"],
+            "additionalProperties": false,
+            "properties": {
+              "instruction_quoted": {"type": "string", "minLength": 1},
+              "evidence": {"type": "string", "minLength": 5}
+            }
+          }
+        },
+        "note": {"type": "string"}
+      }
+    }
+  ]
+}

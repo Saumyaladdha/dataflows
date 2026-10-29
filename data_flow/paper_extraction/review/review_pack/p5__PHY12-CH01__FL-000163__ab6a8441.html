@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FL-000163 · A2_JOIN_ADJUDICATED</title>
+<style>
+:root { --fg:#14171a; --bg:#fff; --muted:#5b6670; --line:#d8dee3; --hi:#fff3bf;
+        --hi-line:#e0b400; --blocker:#b3261e; --high:#c75300; --normal:#2b6cb0; --low:#5b6670; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+.wrap { max-width:62rem; margin:0 auto; padding:1.5rem 1.25rem 4rem; }
+h1 { font-size:1.4rem; margin:0 0 .25rem; }
+h2 { font-size:1.05rem; margin:2rem 0 .5rem; border-bottom:1px solid var(--line);
+     padding-bottom:.3rem; }
+a { color:#1a5fb4; }
+.meta { color:var(--muted); font-size:.85rem; margin-bottom:1.25rem; }
+.badge { display:inline-block; padding:.1rem .45rem; border-radius:.5rem; font-size:.75rem;
+         font-weight:600; color:#fff; vertical-align:.08em; }
+.badge.blocker{background:var(--blocker)} .badge.high{background:var(--high)}
+.badge.normal{background:var(--normal)} .badge.low{background:var(--low)}
+.card { border:1px solid var(--line); border-radius:.5rem; padding:.9rem 1rem; margin:0 0 1rem; }
+.card h3 { margin:0 0 .5rem; font-size:1rem; }
+.value { background:var(--hi); border:1px solid var(--hi-line); border-radius:.4rem;
+         padding:.7rem .85rem; }
+pre { margin:0; white-space:pre-wrap; word-break:break-word; font:13px/1.5 ui-monospace,
+      SFMono-Regular,Menlo,monospace; }
+table { border-collapse:collapse; width:100%; font-size:.86rem; }
+th,td { border:1px solid var(--line); padding:.35rem .5rem; text-align:left;
+        vertical-align:top; }
+th { background:#f4f6f8; }
+.scroll { overflow-x:auto; }
+label { display:block; font-weight:600; font-size:.85rem; margin:.7rem 0 .2rem; }
+select,input[type=text],textarea { width:100%; font:inherit; padding:.4rem .5rem;
+  border:1px solid var(--line); border-radius:.35rem; background:#fff; color:var(--fg); }
+textarea { font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace; }
+button { font:inherit; font-weight:600; padding:.45rem .9rem; border:1px solid var(--line);
+         border-radius:.35rem; background:#f4f6f8; color:var(--fg); cursor:pointer; }
+.row { display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; margin-top:.7rem; }
+.hint { color:var(--muted); font-size:.82rem; }
+.nav { display:flex; justify-content:space-between; gap:1rem; margin-bottom:1rem;
+       font-size:.86rem; }
+.hidden-note { border-left:3px solid var(--hi-line); background:#fffbe6; padding:.6rem .8rem;
+               font-size:.88rem; }
+</style></head><body><div class="wrap">
+<div class='nav'><div><a href="p5__PHY11-CH08__FL-000096__c70f9c0a.html">&larr; previous</a></div><div><a href='index.html'>index</a></div><div><a href="p5__PHY12-CH01__FL-000166__d1052dfa.html">next &rarr;</a></div></div>
+<h1>A2_JOIN_ADJUDICATED <span class="badge normal">normal</span></h1>
+<p class="meta">
+  priority 5 · normal ·
+  step A2 ·
+  item <code>PHY12L-ch01-p019|PHY12L-ch01-p020</code> ·
+  chapter PHY12-CH01 ·
+  FL-000163 ·
+  reviewer: faculty of that subject (spec 14/F2) ·
+  pack run 2026-10-12T15:23:27+05:30
+</p>
+
+<h2>What is being asked</h2>
+<div class="card"><p>Page 19&#39;s last_block_continues_on_next=False but page 20&#39;s first_block_continues_from_previous=True -- two independent page reads disagree about this page break; needs adjudication.</p></div>
+
+<h2>The value in question · field <code>passage_cuts</code></h2>
+<div class="value"><pre>{
+  &quot;page_a&quot;: 19,
+  &quot;last_a&quot;: false,
+  &quot;page_b&quot;: 20,
+  &quot;first_b&quot;: true
+}</pre></div>
+
+<h2>What editing this re-runs</h2>
+<div class="card"><p>cascade key `passage_cuts` → chapter: A4, A5, A6, A7, A8, A9; questions in chapter: D3, D4, D5, D6, D7, D8, D9, D10, D11, E3, E4, E5, F4</p>
+<p class="hint">From <code>config/cascade.yaml</code> (spec Section 15). Exact pairs:
+<code>python3 scripts/cascade.py --field passage_cuts --item PHY12L-ch01-p019|PHY12L-ch01-p020 --plan</code></p></div>
+
+<h2>Evidence</h2>
+<div class='scroll'><table><tbody><tr><td><a href='../../steps/A2/out/PHY12L-ch01-p019.runA.json'>steps/A2/out/PHY12L-ch01-p019.runA.json</a><pre style='margin-top:.5rem'>{
+  &quot;blocks&quot;: [
+    {
+      &quot;n&quot;: 1,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;The electric field vector E1B at B due to the positive charge q1 points towards the left and has a magnitude&quot;,
+      &quot;continues_from_previous&quot;: true
+    },
+    {
+      &quot;n&quot;: 2,
+      &quot;kind&quot;: &quot;equation&quot;,
+      &quot;needs_special&quot;: true,
+      &quot;bbox&quot;: [
+        205,
+        378,
+        864,
+        448
+      ],
+      &quot;text&quot;: &quot;&quot;
+    },
+    {
+      &quot;n&quot;: 3,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;The electric field vector E2B at B due to the negative charge q2 points towards the right and has a magnitude&quot;
+    },
+    {
+      &quot;n&quot;: 4,
+      &quot;kind&quot;: &quot;equation&quot;,
+      &quot;needs_special&quot;: true,
+      &quot;bbox&quot;: [
+        205,
+        540,
+        864,
+        610
+      ],
+      &quot;text&quot;: &quot;&quot;
+    },
+    {
+      &quot;n&quot;: 5,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;The magnitude of the total electric field at B is\nEB = E1B –  E2B = 3.2 × 104 N C–1\nEB is directed towards the left.\nThe magnitude of each electric field vector at point C, due to charge q1 and q2 is&quot;
+    },
+    {
+      &quot;n&quot;: 6,
+      &quot;kind&quot;: &quot;equation&quot;,
+      &quot;needs_special&quot;: true,
+      &quot;bbox&quot;: [
+        265,
+        799,
+        972,
+        864
+      ],
+      &quot;text&quot;: &quot;&quot;
+    },
+    {
+      &quot;n&quot;: 7,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;The directions in which these two vectors point are indicated in Fig. 1.11. The resultant of these two vectors is&quot;
+    },
+    {
+      &quot;n&quot;: 8,
+      &quot;kind&quot;: &quot;equation&quot;,
+      &quot;needs_special&quot;: true,
+      &quot;bbox&quot;: [
+        211,
+        967,
+        972,
+        1031
+      ],
+      &quot;text&quot;: &quot;&quot;
+    },
+    {
+      &quot;n&quot;: 9,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;EC points towards the right.&quot;
+    },
+    {
+      &quot;n&quot;: 10,
+      &quot;kind&quot;: &quot;heading&quot;,
+      &quot;text&quot;: &quot;1.8  ELECTRIC FIELD LINES&quot;
+    },
+    {
+      &quot;n&quot;: 11,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;We have studied electric field in the last section. It is a vector quantity and can be represented as we represent vectors. Let us try to represent E due to a point charge pictorially. Let the point charge be placed at the origin. Draw vectors pointing along the direction of the electric field with their lengths proportional to the strength of the field at each point. Since the magnitude of electric field at a point decreases inversely as the square of the distance of that point from the charge, the vector gets shorter as one goes away from the origin, always pointing radially outward. Figure 1.12 shows such a picture.  In this figure, each arrow indicates the electric field, i.e., the force acting on a unit positive charge, placed at the tail of that arrow.  Connect the arrows pointing in one direction and the resulting figure represents a field line. We thus get many field lines, all pointing outwards from the point charge. Have we lost the information about the strength or magnitude of the field now, because it was contained in the length of the arrow? No. Now the magnitude of the field is represented by the density of field lines. E is strong near the charge, so the density of field lines is more near the charge and the lines are closer. Away from the charge, the field gets weaker and the density of field lines is less, resulting in well-separated lines.&quot;
+    },
+    {
+      &quot;n&quot;: 12,
+      &quot;kind&quot;: &quot;figure&quot;,
+      &quot;needs_special&quot;: true,
+      &quot;bbox&quot;: [
+        972,
+        1339,
+        1496,
+        1935
+      ],
+      &quot;text&quot;: &quot;&quot;
+    },
+    {
+      &quot;n&quot;: 13,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;Another person may draw more lines. But the number of lines is not important. In fact, an infinite number of lines can be drawn in any region.&quot;
+    }
+  ],
+  &quot;first_block_continues_from_previous&quot;: true,
+  &quot;last_block_continues_on_next&quot;: false,
+  &quot;running_header_footer_removed&quot;: [
+    &quot;Electric Charges and Fields&quot;,
+    &quot;19&quot;,
+    &quot;Reprint 2026-27&quot;
+  ],
+  &quot;note&quot;: &quot;Blocks 1-9 are the contents of the grey shaded worked-example box that begins on the previous page and ends on this page; its vertical margin tab label &#39;EXAMPLE 1.8&#39; was removed. 
+… (truncated)</pre></td></tr><tr><td><a href='../../steps/A2/out/PHY12L-ch01-p020.runA.json'>steps/A2/out/PHY12L-ch01-p020.runA.json</a><pre style='margin-top:.5rem'>{
+  &quot;blocks&quot;: [
+    {
+      &quot;n&quot;: 1,
+      &quot;kind&quot;: &quot;figure&quot;,
+      &quot;needs_special&quot;: true,
+      &quot;bbox&quot;: [211, 270, 680, 859],
+      &quot;text&quot;: &quot;&quot;
+    },
+    {
+      &quot;n&quot;: 2,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;It is the relative density of lines in different regions which is important.&quot;,
+      &quot;continues_from_previous&quot;: true
+    },
+    {
+      &quot;n&quot;: 3,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;We draw the figure on the plane of paper, i.e., in two-dimensions but we live in three-dimensions. So if one wishes to estimate the density of field lines, one has to consider the number of lines per unit cross-sectional area, perpendicular to the lines.  Since the electric field decreases as the square of the distance from a point charge and the area enclosing the charge increases as the square of the distance, the number of field lines crossing the enclosing area remains constant, whatever may be the distance of the area from the charge.&quot;
+    },
+    {
+      &quot;n&quot;: 4,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;We started by saying that the field lines carry information about the direction of electric field at different points in space. Having drawn a certain set of field lines, the relative density (i.e., closeness) of the field lines at different points indicates the relative strength of electric field at those points. The field lines crowd where the field is strong and are spaced apart where it is weak. Figure 1.13 shows a set of field lines. We can imagine two equal and small elements of area placed at points R and S normal to the field lines there. The number of field lines in our picture cutting the area elements is proportional to the magnitude of field at these points. The picture shows that the field at R is stronger than at S.&quot;
+    },
+    {
+      &quot;n&quot;: 5,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;To understand the dependence of the field lines on the area, or rather the solid angle subtended by an area element, let us try to relate the area with the solid angle, a generalisation of angle to three dimensions. Recall how a (plane) angle is defined in two-dimensions. Let a small transverse line element Dl be placed at a distance r from a point O. Then the angle subtended by Dl  at O can be approximated as Dq = Dl/r. Likewise, in three-dimensions the solid angle* subtended by a small perpendicular plane area DS, at a distance r, can be written as DW = DS/r2. We know that in a given solid angle the number of radial field lines is the same. In Fig. 1.13, for two points P1 and P2 at distances r1 and r2 from the charge, the element of area subtending the solid angle DW is \n2\n1r DW at P1 and an element of area \n2\n2r DW at P2, respectively. The number of lines (say n) cutting these area elements are the same. The number of field lines, cutting unit area element is therefore n/(\n2\n1r DW) at P1 and n/(\n2\n2r DW) at P2, respectively. Since n and DW are common, the strength of the field clearly has a 1/r 2 dependence.&quot;
+    },
+    {
+      &quot;n&quot;: 6,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;The picture of field lines was invented by Faraday to develop an intuitive non-mathematical way of visualising electric fields around charged configurations. Faraday called them lines of force. This term is somewhat misleading, especially in case of magnetic fields. The more appropriate term is field lines (electric or magnetic) that we have adopted in this book.&quot;
+    },
+    {
+      &quot;n&quot;: 7,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;Electric field lines are thus a way of pictorially mapping the electric field around a configuration of charges. An electric field line is, in general,&quot;
+    },
+    {
+      &quot;n&quot;: 8,
+      &quot;kind&quot;: &quot;paragraph&quot;,
+      &quot;text&quot;: &quot;*\nSolid angle is a measure of a cone. Consider the intersection of the given cone with a sphere of radius R. The solid angle DW of the cone is defined to be equal to DS/R\n2, where DS is the area on the sphere cut out by the cone.&quot;
+    }
+  ],
+  &quot;first_block_continues_from_previous&quot;: true,
+  &quot;last_block_continu
+… (truncated)</pre></td></tr></tbody></table></div>
+
+
+<h2>Legacy values</h2>
+<p class='hint'>No legacy values recorded for this item. (Spec 2.2: the legacy tags are not usable as truth — they are shown only as a cross-check when they exist.)</p>
+
+
+<h2>Decision</h2>
+<div class="card">
+  <p class="hint">This writes one row of <code>review/decisions.csv</code> (spec 6.5). Columns:
+  <code>flag_id_or_item, field, decision, corrected_value_json, reviewer, comment, decided_at</code>.</p>
+  <input type="hidden" id="f_target" value="FL-000163">
+  <input type="hidden" id="f_field" value="passage_cuts">
+  <label for="f_decision">decision</label>
+  <select id="f_decision"><option value='approve'>approve</option><option value='correct'>correct</option><option value='edit'>edit</option><option value='block'>block</option></select>
+  <label for="f_value">corrected_value_json <span class="hint">— leave as-is to approve the
+    value below; replace it with the corrected value (valid JSON) to correct or edit</span></label>
+  <textarea id="f_value" rows="4">{&quot;page_a&quot;: 19, &quot;last_a&quot;: false, &quot;page_b&quot;: 20, &quot;first_b&quot;: true}</textarea>
+  <label for="f_reviewer">reviewer</label>
+  <input type="text" id="f_reviewer" placeholder="your name">
+  <label for="f_comment">comment</label>
+  <input type="text" id="f_comment" placeholder="why">
+  <label for="f_decided_at">decided_at</label>
+  <input type="text" id="f_decided_at">
+  <label for="f_row">the decisions.csv row this makes</label>
+  <textarea id="f_row" rows="3" readonly></textarea>
+  <div class="row">
+    <button type="button" onclick="saveDecision()">Save in this browser</button>
+    <button type="button" onclick="copyRow()">Copy row</button>
+    <span class="hint" id="f_saved"></span>
+  </div>
+  <p class="hint">The pack is plain files with no server behind it, so nothing here can write to
+  disk by itself. Save decisions here and collect them all from <a href="index.html">index.html</a>,
+  or copy a row and paste it straight into <code>review/decisions.csv</code>. Then run
+  <code>python3 scripts/apply_review.py --apply</code>.</p>
+</div>
+
+<script>
+const KEY = 'pyq_decisions_v1';
+function store() { try { return window.localStorage; } catch (e) { return null; } }
+function allDecisions() {
+  const s = store(); if (!s) return {};
+  try { return JSON.parse(s.getItem(KEY) || '{}'); } catch (e) { return {}; }
+}
+function csvField(v) {
+  v = (v === null || v === undefined) ? '' : String(v);
+  return /[",\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+}
+function buildRow() {
+  const g = id => (document.getElementById(id) || {}).value || '';
+  return [g('f_target'), g('f_field'), g('f_decision'), g('f_value'), g('f_reviewer'),
+          g('f_comment'), g('f_decided_at')].map(csvField).join(',');
+}
+function refresh() {
+  const out = document.getElementById('f_row');
+  if (out) out.value = buildRow();
+}
+function saveDecision() {
+  refresh();
+  const s = store();
+  if (s) {
+    const all = allDecisions();
+    all[document.getElementById('f_target').value] = buildRow();
+    try { s.setItem(KEY, JSON.stringify(all)); } catch (e) {}
+  }
+  const n = document.getElementById('f_saved');
+  if (n) n.textContent = s ? 'Saved in this browser. Collect every saved decision from index.html.'
+                           : 'This browser blocks local storage — use "Copy row" and paste into review/decisions.csv.';
+}
+function copyRow() {
+  refresh();
+  const t = document.getElementById('f_row');
+  t.select();
+  try { document.execCommand('copy'); } catch (e) {}
+  if (navigator.clipboard) { navigator.clipboard.writeText(t.value).catch(() => {}); }
+  const n = document.getElementById('f_saved');
+  if (n) n.textContent = 'Row copied. Paste it as a new line in review/decisions.csv.';
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const d = document.getElementById('f_decided_at');
+  if (d && !d.value) d.value = new Date().toISOString().slice(0, 10);
+  ['f_decision', 'f_value', 'f_reviewer', 'f_comment', 'f_decided_at'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', refresh);
+  });
+  refresh();
+});
+</script>
+</div></body></html>

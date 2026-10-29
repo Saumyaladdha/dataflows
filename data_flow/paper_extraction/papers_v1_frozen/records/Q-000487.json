@@ -1,0 +1,438 @@
+{
+ "question_id": "Q-000487",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_path": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_url": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_row": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_match_confidence": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2024,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:42"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "Choose the correct circuit which can achieve the bridge balance.",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "(Image option — will be added soon) (1)",
+  "2": "(Image option — will be added soon) (2)",
+  "3": "(Image option — will be added soon) (3)",
+  "4": "(Image option — will be added soon) (4)"
+ },
+ "structure": "plain",
+ "has_figure": true,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "42\nChoose the correct circuit which can achieve the bridge balance.\n(1)\n(Image option — will be added soon)\n(1)\n(2)\n(Image option — will be added soon) (2)\n(3)\n(Image option — will be added soon) (3)\n(4)\n(Image option — will be added soon) (4)\nCurrent Electricity\n",
+ "b4_script_options": {},
+ "official_answer": "1",
+ "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+ "status": "normal",
+ "subject": "Physics",
+ "branch": null,
+ "b6_answer": null,
+ "b6_agrees_with_key": null,
+ "figure_path": "papers/figures/Q-000487.png",
+ "figure_source_url": "https://cdn.mathpix.com/snip/images/zID8URtfhL0Ey_wvt8wTZrF4DyEYvjNreAnEBvge7j4.original.fullsize.png",
+ "figure_source_row": "NEET-UG_pyq_2024.xlsx#40",
+ "figure_match_confidence": "high",
+ "repairs": [
+  {
+   "date": "2026-10-15",
+   "by": "scripts/repair_paper_records.py",
+   "kind": "mechanical",
+   "notes": [
+    "paper_codes normalised to the short form ['Q1:42'] -- the long form splits one booklet across two values in any join"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (the last line of the stem (\"bridge balance.\") across the top of the image, and a large circular publisher's watermark overlaying panels (2) and (3)), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm resistors with a galvanometer G across one diagonal, a device marked D in the right arm and a cell E with key K along the bottom rail, the four panels differing in where the 15 ohm and 5 ohm arms and the G and D branches are connected"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a large faint grey circular publisher's watermark bearing a letter W across the left of panels (2) and (3), and the page's vertical column rule down the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: four numbered Wheatstone-bridge circuits (1) to (4), each a diamond of 10 ohm, 10 ohm, 15 ohm and 5 ohm arms with a galvanometer G across one diagonal, a meter marked D beside the 5 ohm arm, and a cell E with key K in the bottom loop, the panels differing only in where G and the 5 ohm/D branch are connected"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ },
+ "figure_verified": false
+}

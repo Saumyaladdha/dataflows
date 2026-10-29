@@ -1,0 +1,218 @@
+{
+ "question_id": "Q-000447",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  }
+ },
+ "exam": "NEET",
+ "year": 2024,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:150"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "Which of the following statement is correct regarding the process of replication in E.coli?",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "The DNA dependent DNA polymerase catalyses polymerization in one direction that is $3' \\to 5'$",
+  "2": "The DNA dependent RNA polymerase catalyses polymerization in one direction, that is $5' \\to 3'$",
+  "3": "The DNA dependent DNA polymerase catalyses polymerization in $5' \\to 3'$ as well as $3' \\to 5'$ direction",
+  "4": "The DNA dependent DNA polymerase catalyses polymerization in $5' \\to 3'$ direction"
+ },
+ "structure": "plain",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "150\nWhich of the following statement is correct regarding the process of replication in E.coli?\n(1)\nThe DNA dependent DNA polymerase\ncatalyses polymerization in one direction\nthat is 3’ → 5’\n(2)\nThe DNA dependent RNA polymerase\ncatalyses polymerization in one direction,\nthat is 5’ → 3’\n(3)\nThe DNA dependent DNA polymerase\ncatalyses polymerization in 5’ → 3’ as\nwell as 3’ → 5’ direction\n(4)\nThe DNA dependent DNA\npolymerase catalyses polymerization\nin 5’ → 3’ direction\nMolecular Basis of Inheritance\n",
+ "b4_script_options": {
+  "1": "The DNA dependent DNA polymerase\ncatalyses polymerization in one direction\nthat is 3’ → 5’",
+  "2": "The DNA dependent RNA polymerase\ncatalyses polymerization in one direction,\nthat is 5’ → 3’",
+  "3": "The DNA dependent DNA polymerase\ncatalyses polymerization in 5’ → 3’ as\nwell as 3’ → 5’ direction",
+  "4": "The DNA dependent DNA\npolymerase catalyses polymerization\nin 5’ → 3’ direction\nMolecular Basis of Inheritance"
+ },
+ "official_answer": "4",
+ "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+ "status": "normal",
+ "subject": "Biology",
+ "branch": "botany",
+ "b6_answer": "4",
+ "b6_reason": "DNA dependent DNA polymerase, the replicating enzyme in E. coli, adds nucleotides only in the 5' to 3' direction, which is why the lagging strand is made discontinuously.",
+ "b6_working": "",
+ "b6_confidence": "medium",
+ "b6_note": "Option 2 is also a factually true sentence on its own, since DNA dependent RNA polymerase likewise works only 5' to 3'. It is excluded because the question asks about replication rather than transcription, so option 4 is the statement that belongs to the process named. Confidence set to medium for that overlap.",
+ "b6_agrees_with_key": true,
+ "repairs": [
+  {
+   "date": "2026-10-15",
+   "by": "scripts/repair_paper_records.py",
+   "kind": "mechanical",
+   "notes": [
+    "paper_codes normalised to the short form ['Q1:150'] -- the long form splits one booklet across two values in any join"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "1",
+   "4": "1"
+  }
+ }
+}
