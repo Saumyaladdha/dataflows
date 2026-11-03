@@ -1,0 +1,308 @@
+{
+ "question_id": "Q-000264",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "figure_path": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_url": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_row": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_match_confidence": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2024,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:119"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "Identify the type of flowers based on the position of calyx, corolla and androecium with respect to the ovary from the given figures (a) and (b)",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "(a) Epigynous; (b) Hypogynous",
+  "2": "(a) Hypogynous; (b) Epigynous",
+  "3": "(a) Perigynous; (b) Epigynous",
+  "4": "(a) Perigynous; (b) Perigynous"
+ },
+ "structure": "plain",
+ "has_figure": true,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "119\nIdentify the type of flowers based on the position of calyx, corolla and androecium with respect to\nthe ovary from the given figures (a) and (b)\n(1)\n(a) Epigynous; (b) Hypogynous\n(2)\n(a) Hypogynous; (b) Epigynous\n(3)\n(a) Perigynous; (b) Epigynous\n(4)\n(a) Perigynous; (b) Perigynous\nMorphology of Flowering Plants\n",
+ "b4_script_options": {
+  "1": "(a) Epigynous; (b) Hypogynous",
+  "2": "(a) Hypogynous; (b) Epigynous",
+  "3": "(a) Perigynous; (b) Epigynous",
+  "4": "(a) Perigynous; (b) Perigynous\nMorphology of Flowering Plants"
+ },
+ "figure_path": "papers/figures/Q-000264.png",
+ "figure_source_url": "https://cdn.mathpix.com/snip/images/7Ncz-aIar9nzI58b6WbHDEj_sReinWklj-tO_7jg_Do.original.fullsize.png",
+ "figure_source_row": "NEET-UG_pyq_2024.xlsx#117",
+ "figure_match_confidence": "high",
+ "official_answer": "4",
+ "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+ "status": "normal",
+ "subject": "Biology",
+ "branch": "botany",
+ "b6_answer": null,
+ "b6_agrees_with_key": null,
+ "repairs": [
+  {
+   "date": "2026-10-15",
+   "by": "scripts/repair_paper_records.py",
+   "kind": "mechanical",
+   "notes": [
+    "paper_codes normalised to the short form ['Q1:119'] -- the long form splits one booklet across two values in any join"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 16 (booklet code T3, question 116), matched to this record at score 0.929; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 16 (booklet code T3, question 116), matched to this record at score 0.929; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 16 (booklet code T3, question 116), matched to this record at score 0.929; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 16 (booklet code T3, question 116), matched to this record at score 0.929; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 16 (booklet code T3, question 116), matched to this record at score 0.929; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a clipped row of text across the top (the bottom of the lines of prose printed above the figure), the top of an option line across the bottom reading \"(a) Peri...gynous; (b) Epi...gynous\", and a faint grey watermark/show-through arc at the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: two longitudinal sections of flowers labelled (a) and (b), each showing the ovary with the calyx, corolla and androecium attached at different levels relative to it"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a clipped row of text across the top (the bottom of the lines of prose printed above the figure), the top of an option line across the bottom reading \"(a) Peri...gynous; (b) Epi...gynous\", and a faint grey watermark/show-through arc at the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: two longitudinal sections of flowers labelled (a) and (b), each showing the ovary with the calyx, corolla and androecium attached at different levels relative to it"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a clipped row of text across the top (the bottom of the lines of prose printed above the figure), the top of an option line across the bottom reading \"(a) Peri...gynous; (b) Epi...gynous\", and a faint grey watermark/show-through arc at the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: two longitudinal sections of flowers labelled (a) and (b), each showing the ovary with the calyx, corolla and androecium attached at different levels relative to it"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a clipped row of text across the top (the bottom of the lines of prose printed above the figure), the top of an option line across the bottom reading \"(a) Peri...gynous; (b) Epi...gynous\", and a faint grey watermark/show-through arc at the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: two longitudinal sections of flowers labelled (a) and (b), each showing the ovary with the calyx, corolla and androecium attached at different levels relative to it"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a clipped row of text across the top (the bottom of the lines of prose printed above the figure), the top of an option line across the bottom reading \"(a) Peri...gynous; (b) Epi...gynous\", and a faint grey watermark/show-through arc at the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: two longitudinal sections of flowers labelled (a) and (b), each showing the ovary with the calyx, corolla and androecium attached at different levels relative to it"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a clipped row of text across the top (the bottom of the lines of prose printed above the figure), the top of an option line across the bottom reading \"(a) Peri...gynous; (b) Epi...gynous\", and a faint grey watermark/show-through arc at the right edge), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: two longitudinal sections of flowers labelled (a) and (b), each showing the ovary with the calyx, corolla and androecium attached at different levels relative to it"
+   ]
+  }
+ ],
+ "figure_path_source": "papers/figures/2024/source_T3/Q-000264.png",
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ },
+ "figure_verified": false
+}

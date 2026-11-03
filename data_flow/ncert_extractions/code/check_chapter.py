@@ -33,6 +33,8 @@ try:
 except ImportError:
     pymupdf = None
 
+import book_design as design_lib
+
 
 def _walk(nodes):
     for n in nodes:
@@ -205,12 +207,26 @@ def check(doc, chapter_dir):
     # The A4 scans are a different SHAPE, not a crop: 0.707 aspect against 0.781. Forcing the
     # canonical 612x784 trim on them makes every sheet wider and shorter than the book, and
     # then no coordinate can line up however good the stylesheet is.
+    # A MEASURED BOOK IS JUDGED AGAINST ITS OWN SHEET, not Biology's. Class 11 Physics is a
+    # genuinely different trim -- 657.3 x 777.1pt (aspect 0.846) against 612 x 784 (0.781),
+    # measured across six of its chapters -- and its design records that trim. Comparing it to
+    # the Biology sheet reported a book whose design HAS been measured as one that had not.
     for p in pages[:1]:
         sp, asp = p.get("sheet_pt"), p.get("sheet_aspect")
-        if sp and asp and abs(asp - 612.0 / 784.0) > 0.02:
+        if not (sp and asp):
+            continue
+        bid = doc.get("book_id") or ""
+        try:
+            want = (design_lib.design_for(bid).trim_pt if design_lib.is_measured(bid)
+                    else design_lib.CANONICAL_TRIM_PT)
+        except Exception:
+            want = design_lib.CANONICAL_TRIM_PT
+        want_asp = want[0] / want[1]
+        if abs(asp - want_asp) > 0.02:
             warn("SHEET_NOT_CANONICAL",
-                 f"this book's page is {sp[0]}x{sp[1]}pt (aspect {asp}), not the canonical "
-                 f"612x784 (0.781) -- the design must be measured for it, not inherited")
+                 f"this book's page is {sp[0]}x{sp[1]}pt (aspect {asp}), not the design's "
+                 f"{want[0]:.0f}x{want[1]:.0f} ({want_asp:.3f}) -- the design must be "
+                 f"measured for it, not inherited")
 
     # 10 ── ONE CROP MAY NOT BE FIVE DIFFERENT FIGURES -----------------------------------
     used = collections.Counter(n.get("image_local") for n in nodes

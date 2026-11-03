@@ -1,0 +1,62 @@
+{
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1654,
+    "height_px": 2339,
+    "body_text_size_px": 21.1,
+    "text_block": [0.065, 0.102, 0.674, 0.840],
+    "fill": 0.97,
+    "columns": [
+      {"id": "full", "x0": 0.065, "x1": 0.674}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.000, 0.000, 0.756, 0.035],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435", "space_before": 0.000},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.773, 0.000, 0.957, 0.091],
+     "column": "full", "size_rel": 1.0, "fill": "#725420", "space_before": 0.000},
+
+    {"n": null, "role": "running_header", "bbox": [0.065, 0.071, 0.378, 0.078],
+     "column": "full", "size_rel": 0.76, "size_pt": 8.0, "align": "left", "font": "sans",
+     "text_color": "#6a6a6a", "space_before": 0.036},
+
+    {"n": 1, "role": "paragraph", "bbox": [0.065, 0.102, 0.674, 0.230],
+     "column": "full", "size_rel": 1.0, "size_pt": 10.8, "align": "justify", "font": "serif",
+     "text_color": "#212121", "space_before": 0.024},
+
+    {"n": 2, "role": "paragraph", "bbox": [0.065, 0.235, 0.672, 0.461],
+     "column": "full", "size_rel": 1.0, "size_pt": 10.8, "align": "justify", "font": "serif",
+     "text_color": "#212121", "indent": 0.030, "space_before": 0.005},
+
+    {"n": 3, "role": "box", "bbox": [0.065, 0.484, 0.681, 0.840],
+     "column": "full", "size_rel": 0.90, "size_pt": 9.8, "align": "justify", "font": "serif",
+     "fill": "#fcf6dc", "text_color": "#292119", "space_before": 0.023},
+
+    {"n": null, "role": "major_heading", "bbox": [0.315, 0.504, 0.432, 0.514],
+     "column": "full", "size_rel": 1.18, "size_pt": 12.9, "align": "center", "font": "serif-bold",
+     "fill": "#fcf6dc", "text_color": "#211b19", "space_before": 0.015},
+
+    {"n": null, "role": "paragraph", "bbox": [0.085, 0.535, 0.662, 0.831],
+     "column": "full", "size_rel": 0.90, "size_pt": 9.8, "align": "justify", "font": "serif",
+     "fill": "#fcf6dc", "text_color": "#292119", "indent": 0.030, "space_before": 0.021},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.694, 0.546, 0.742, 0.842],
+     "column": "full", "size_rel": 1.0, "fill": "#fcb316", "space_before": 0.062},
+
+    {"n": null, "role": "page_number", "bbox": [0.804, 0.727, 0.957, 0.764],
+     "column": "full", "size_rel": 1.33, "size_pt": 14.0, "align": "left", "font": "sans",
+     "fill": "#f8931f", "text_color": "#ffffff", "indent": 0.020, "space_before": 0.636},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.804, 0.767, 0.957, 0.773],
+     "column": "full", "size_rel": 1.0, "fill": "#f8931f", "space_before": 0.003},
+
+    {"n": null, "role": "running_header", "bbox": [0.432, 0.901, 0.527, 0.910],
+     "column": "full", "size_rel": 0.76, "size_pt": 8.0, "align": "center", "font": "sans",
+     "text_color": "#111111", "space_before": 0.128},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.197, 0.288, 0.832, 0.739],
+     "column": "full", "size_rel": 1.0, "text_color": "#e5e5e5", "space_before": 0.000}
+  ],
+  "note": "PURE A4 SCAN, no text layer: every number below is measured off the image with PIL/numpy (../.venv/bin/python). Image 1654x2339 px for a 595.32x841.92pt page = exactly 200.0 dpi, so 1 px = 0.36 pt.  PAGE KIND: ordinary body page (recto, folio 23) - green header band across the top, running head, two body paragraphs, then the start of the SUMMARY panel. No chapter/unit opener furniture, no scientific figure, no table, no equation on this sheet.  COLUMNS: one measure only. Body type runs x=107..1114 px = 0.065..0.674 (1007 px = 362 pt). The outer (right) margin 0.68..0.96 carries NO flowing text - only the folio block, the top-right corner motif and the Summary's leaf motif, which is why they are all reported column 'full' (the page has a single column; their exact bboxes place them).  SHEET: the book page sits flush to the left edge of the scan (header band bleeds from x=0) and its right edge is x~1582 px = 0.957; the remaining 4.3% at the right is blank scanner paper. The footer line is centred on 0..1582, which confirms that trim.  BODY METRICS (the overflow question): body_text_size_px = 21.1 (cap-top to baseline, mean of 19 lines; x-height 14.2 px). Body LINE PITCH = 38.95 px = 0.01665 of page height = 14.02 pt - measured over 21 intervals from y=239 to y=1057, dead regular. Summary panel text is smaller and tighter: cap-to-baseline 19.1 px (size_rel 0.90) and PITCH 31.76 px = 0.01358 of page height = 11.43 pt, measured over 21 intervals from y=1252 to y=1919. A renderer that sets the panel at body pitch will overrun by ~23%.  TEXT BLOCK: [0.065, 0.102, 0.674, 0.840] = x 107..1114 px, y 239..1964 px (= 86.0 pt to 707.0 pt from the top of the 841.92 pt sheet; left margin 38.5 pt, measure 362 pt). y0 is the cap-top of the first body line; y1 is the clipped BOTTOM EDGE of the Summary panel, which is the real bottom of the live area - NCERT set exactly as many summary lines as fit and cut the panel there (last baseline y=1938 = 0.829, +21 px bottom padding, and one more line would have needed y=1975 > 1964). Strictly 'baseline of the last line' would be 0.829; 0.840 is reported because it is the depth limit that stops overflow. The Summary panel's outer rule reaches x=0.681 and its leaf motif x=0.742, both OUTSIDE the text measure - allow for them when clipping. fill=0.97: of the 1725 px block, 1670 px are covered (body 239..1077, panel 1132..1964, single 55 px gap).  SUMMARY PANEL (block n=3) measured in full: outer box x 107..1126, y 1132..1964 px. Flat interior fill sampled at five points well away from rules and glyphs = #fcf6dc (252,246,220). Border is a THIN DOUBLE YELLOW RULE, ~#e5dd4c: outer rules at x=107-109 / x=1124-1126 / y=1132-1133, inner rules at x=117-119 / x=1115-1116 / y=1141-1142, i.e. ~9 px between the two lines. NO BOTTOM RULE - the panel is cut by the page foot and continues on p022. Internal padding from the inner rule: left 22 px (0.013 W), right 21 px (0.013 W), top to heading cap 36 px, top to first body line 110 px, bottom 21 px (0.009 H).  SUMMARY HEADING: 'SUMMARY' x 521..714, y 1178..1202 px, cap-to-baseline 25 px, size_rel 1.18, bold serif, near-black warm ink #211b19, and genuinely CENTRED - its mid-x 617.5 vs the panel's inner mid-x 616.5.  LEAF MOTIF: the gold element at x 1147..1227, y 1278..1968 px is a vertical chain of stylised leaves, flat colour #fcb316 - pure decoration attached to the panel's right edge, NOT a scientific figure and carrying no caption or label. It sits OUTSIDE the panel's right border (gap 1126->1147 = 21 px) and is clipped by the page foot like the panel.  TOP-RIGHT CORNER MOTIF: one composite decorative block, x 1278..1582, y 1..211 px - brown rectangle #725420 with a narrow orange left strip #f39425 at x 1400..1426 y 1..156, a black stick-figure human, and a green leaf #93c540 at x 1347..1491 y 127..207. Reported as one decorative_image; fill given is the brown field.  FOLIO: orange block #f8931f x 1330..1582 y 1700..1787 with white '23' (digits x 1363..1401, y 1723..1750, height 28 px) set toward the block's left; a detached thin orange rule of the same colour sits below it at y 1795..1807 and is reported separately as footer_rule per the brief's three-distinct-bands rule.  ROLE COMPROMISE: 'Reprint 2026-27' (x 714..870, y 2108..2127, sans, #111111, centred on the trimmed page) is a running FOOT line, not a header. The allowed role list has no running-footer value, so it is reported as running_header - a consumer must place it at y 0.901, not at the top.  WATERMARK: the pale grey diagonal overprint ('(c) NCERT ... not to be republished' plus the NCERT roundel) is reported as the last decorative_image so a consumer can drop it. Its bbox [0.197, 0.288, 0.832, 0.739] is APPROXIMATE (+/- ~0.02): it is a ~#e5e5e5 overlay and cannot be segmented cleanly where it crosses dark body type. It is not part of the book's designed layout.  BLOCK MATCHING: n=1 -> first paragraph (a continuation from p020, so it starts flush left with no first-line indent; it contains a bold run 'polyembryony' and a long italic Activity run from 'Take out some seeds...' to '...called clones?' spanning y 356..538 - inline runs, reported as one element because A2 blocked it as one). n=2 -> second paragraph, first-line indent 50 px = 0.030 W. n=3 -> the Summary box as a whole; the major_heading and the inner paragraph are SUB-PARTS of n=3 and carry n:null so no text is rendered twice. Inter-paragraph space is zero on this page: n=2 begins exactly one line pitch after n=1 (space_before 0.005 is just the descender gap).  SPACE_BEFORE CONVENTION: gap between the element's top and the bottom of the nearest element directly above it in the same flow. Explicit references used: running_header from the header band; n=1 from the running header; n=2 from n=1; n=3 from n=2; major_heading from the panel's INNER top rule (y=1142); inner paragraph from the heading baseline; leaf motif from the panel's top edge (y=1132); page_number from the corner motif (y=212), the previous element in the outer margin, hence the large 0.636; footer_rule from the folio block; foot line from the footer rule; the band, the corner motif and the watermark have nothing above them (0.000).  SIZE_PT IS DERIVED, SIZE_REL IS MEASURED: size_pt = measured cap-height px x 0.36 pt/px divided by an assumed cap-height/em of 0.70 (serif) or 0.72 (sans). dpi is exact here but the cap/em ratio is an assumption, so trust size_rel. Measured cap heights: body 21.1, summary body 19.1, SUMMARY heading 25, running head 16, foot line 16, folio digits 28 px.  NOT MEASURABLE: the panel's double-rule colour is given only in this note (#e5dd4c) because a 2 px scanned rule is partly antialiased and no flat interior exists; the running head's ink reads #6a6a6a at its darkest core, which may be a grey the scanner lightened rather than a designed grey. No figure, figure_caption, table, equation, list, marginal_note or qr_code appears on this page."
+}

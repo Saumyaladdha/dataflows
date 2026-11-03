@@ -1,0 +1,308 @@
+{
+ "question_id": "Q-000307",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_path": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_url": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_row": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_match_confidence": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2024,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:181"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-Q1/neet_2024_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "The following diagram showing restriction sites in E. coli cloning vector pBR322. Find the role of ' X' and 'Y' genes :",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "The gene 'X' is responsible for resistance to antibiotics and 'Y' for protein involved in the replication of Plasmid.",
+  "2": "The gene 'X' is responsible for controlling the copy number of the linked DNA and 'Y' for protein involved in the replication of Plasmid.",
+  "3": "The gene 'X' is for protein involved in replication of Plasmid and 'Y' for resistance to antibiotics.",
+  "4": "Gene 'X' is responsible for recognitions sites and 'Y' is responsible for antibiotic resistance."
+ },
+ "structure": "plain",
+ "has_figure": true,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "181\nThe following diagram showing restriction sites in E. coli cloning vector pBR322. Find the role of ‘ X’\nand ‘Y’ genes :\n(1)\nThe gene ‘X’ is responsible for\nresistance to antibiotics and ‘Y’ for\nprotein involved in the replication of\nPlasmid.\n(2)\nThe gene ‘X’ is responsible for\ncontrolling the copy number of the\nlinked DNA and ‘Y’ for protein\ninvolved in the replication of Plasmid.\n(3)\nThe gene ‘X’ is for protein involved in\nreplication of Plasmid and ‘Y’ for\nresistance to antibiotics.\n(4)\nGene ’X’ is responsible for recognitions\nsites and ‘Y’ is responsible for antibiotic\nresistance.\nBiotechnology: Principles and Processes\n",
+ "b4_script_options": {
+  "1": "The gene ‘X’ is responsible for\nresistance to antibiotics and ‘Y’ for\nprotein involved in the replication of\nPlasmid.",
+  "2": "The gene ‘X’ is responsible for\ncontrolling the copy number of the\nlinked DNA and ‘Y’ for protein\ninvolved in the replication of Plasmid.",
+  "3": "The gene ‘X’ is for protein involved in\nreplication of Plasmid and ‘Y’ for\nresistance to antibiotics.",
+  "4": "Gene ’X’ is responsible for recognitions\nsites and ‘Y’ is responsible for antibiotic\nresistance.\nBiotechnology: Principles and Processes"
+ },
+ "figure_path": "papers/figures/Q-000307.png",
+ "figure_source_url": "https://cdn.mathpix.com/snip/images/cGw9JVP89UjO1Vu82deR7ZloS3Nbv0JTUI54bxJWlU8.original.fullsize.png",
+ "figure_source_row": "NEET-UG_pyq_2024.xlsx#171",
+ "figure_match_confidence": "high",
+ "official_answer": "2",
+ "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+ "status": "normal",
+ "subject": "Biology",
+ "branch": "zoology",
+ "b6_answer": null,
+ "b6_agrees_with_key": null,
+ "repairs": [
+  {
+   "date": "2026-10-15",
+   "by": "scripts/repair_paper_records.py",
+   "kind": "mechanical",
+   "notes": [
+    "paper_codes normalised to the short form ['Q1:181'] -- the long form splits one booklet across two values in any join"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 23 (booklet code T3, question 170), matched to this record at score 0.962; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 23 (booklet code T3, question 170), matched to this record at score 0.962; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 23 (booklet code T3, question 170), matched to this record at score 0.962; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 23 (booklet code T3, question 170), matched to this record at score 0.962; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/paper_source_match.py",
+   "kind": "figure_cut_from_source",
+   "notes": [
+    "figure cut from 2024.pdf page 23 (booklet code T3, question 170), matched to this record at score 0.962; replaces a cdn.mathpix.com URL matched by wording against a different question bank, which SPEC.md Section 4 forbids"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a faint grey publisher watermark across the right-hand side of the image, and thin slivers of the printed text lines above and below the figure clipped in at the top and bottom edges), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: a circular map of the E. coli cloning vector pBR322 with restriction sites EcoR I, Cla I, Hind III, BamH I, Sal I, Pvu II, Pst and Pvu I marked around the ring, and two shaded gene regions labelled X and Y"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a faint grey publisher watermark across the right-hand side of the image, and thin slivers of the printed text lines above and below the figure clipped in at the top and bottom edges), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: a circular map of the E. coli cloning vector pBR322 with restriction sites EcoR I, Cla I, Hind III, BamH I, Sal I, Pvu II, Pst and Pvu I marked around the ring, and two shaded gene regions labelled X and Y"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a faint grey publisher watermark across the right-hand side of the image, and thin slivers of the printed text lines above and below the figure clipped in at the top and bottom edges), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: a circular map of the E. coli cloning vector pBR322 with restriction sites EcoR I, Cla I, Hind III, BamH I, Sal I, Pvu II, Pst and Pvu I marked around the ring, and two shaded gene regions labelled X and Y"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a faint grey publisher watermark across the right-hand side of the image, and thin slivers of the printed text lines above and below the figure clipped in at the top and bottom edges), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: a circular map of the E. coli cloning vector pBR322 with restriction sites EcoR I, Cla I, Hind III, BamH I, Sal I, Pvu II, Pst and Pvu I marked around the ring, and two shaded gene regions labelled X and Y"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a faint grey publisher watermark across the right-hand side of the image, and thin slivers of the printed text lines above and below the figure clipped in at the top and bottom edges), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: a circular map of the E. coli cloning vector pBR322 with restriction sites EcoR I, Cla I, Hind III, BamH I, Sal I, Pvu II, Pst and Pvu I marked around the ring, and two shaded gene regions labelled X and Y"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_belongs_with_junk",
+   "notes": [
+    "the B9S agent found this candidate is belongs with junk (a faint grey publisher watermark across the right-hand side of the image, and thin slivers of the printed text lines above and below the figure clipped in at the top and bottom edges), so it is not published: a figure missing part of itself, or carrying another question's text, answers the question wrongly in a way a reader cannot detect, while a gap is at least reviewable. Agent saw: a circular map of the E. coli cloning vector pBR322 with restriction sites EcoR I, Cla I, Hind III, BamH I, Sal I, Pvu II, Pst and Pvu I marked around the ring, and two shaded gene regions labelled X and Y"
+   ]
+  }
+ ],
+ "figure_path_source": "papers/figures/2024/source_T3/Q-000307.png",
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ },
+ "figure_verified": false
+}

@@ -1,0 +1,67 @@
+{
+  "page": {
+    "page_kind": "ordinary_page",
+    "width_px": 1654,
+    "height_px": 2339,
+    "body_text_size_px": 21.0,
+    "text_block": [0.289, 0.1018, 0.8942, 0.8461],
+    "fill": 0.95,
+    "columns": [
+      {"id": "full",  "x0": 0.289,  "x1": 0.8942},
+      {"id": "left",  "x0": 0.0955, "x1": 0.581},
+      {"id": "right", "x0": 0.6016, "x1": 0.8942}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.0, 0.2104, 0.0906],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0, "fill": "#745421"},
+
+    {"n": null, "role": "page_header_band", "bbox": [0.2007, 0.0, 0.9571, 0.0363],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0, "fill": "#4b7335"},
+
+    {"n": null, "role": "running_header", "bbox": [0.8331, 0.0714, 0.8924, 0.0787],
+     "column": "full", "size_rel": 0.79, "align": "right", "space_before": 0.0351,
+     "font": "sans", "text_color": "#6e6f73"},
+
+    {"n": 1, "role": "figure", "bbox": [0.0955, 0.1022, 0.581, 0.6721],
+     "column": "left", "size_rel": 1.0, "space_before": 0.0116},
+
+    {"n": null, "role": "figure", "bbox": [0.0955, 0.1022, 0.581, 0.3715],
+     "column": "left", "size_rel": 1.0, "space_before": 0.0116, "fill": "#d2eefb"},
+
+    {"n": null, "role": "figure", "bbox": [0.1306, 0.3814, 0.4855, 0.6721],
+     "column": "left", "size_rel": 1.0, "space_before": 0.0099},
+
+    {"n": 2, "role": "figure_caption", "bbox": [0.0949, 0.6806, 0.52, 0.714],
+     "column": "left", "size_rel": 0.86, "size_pt": 9.3, "align": "left",
+     "space_before": 0.0085, "fill": "#fef2e2", "font": "serif", "text_color": "#242021"},
+
+    {"n": 3, "role": "paragraph", "bbox": [0.6016, 0.1018, 0.8942, 0.3467],
+     "column": "right", "size_rel": 1.0, "align": "justify", "space_before": 0.0231,
+     "font": "serif", "text_color": "#252122"},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.6016, 0.3514, 0.8942, 0.4104],
+     "column": "right", "size_rel": 1.0, "align": "justify", "space_before": 0.0047,
+     "font": "serif", "text_color": "#252122"},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.289, 0.4181, 0.8942, 0.7764],
+     "column": "full", "size_rel": 1.0, "align": "justify", "space_before": 0.0077,
+     "font": "serif", "text_color": "#252122"},
+
+    {"n": 6, "role": "paragraph", "bbox": [0.289, 0.7841, 0.8942, 0.8461],
+     "column": "full", "size_rel": 1.0, "align": "justify", "space_before": 0.0077,
+     "font": "serif", "text_color": "#252122"},
+
+    {"n": null, "role": "page_number", "bbox": [0.0, 0.7268, 0.156, 0.7726],
+     "column": "full", "size_rel": 1.33, "align": "right", "space_before": 0.0128,
+     "font": "sans", "fill": "#f7921c", "text_color": "#ffffff"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.1953, 0.2954, 0.8307, 0.7473],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0, "text_color": "#e6e6e6"},
+
+    {"n": null, "role": "running_header", "bbox": [0.4317, 0.9008, 0.5266, 0.9081],
+     "column": "full", "size_rel": 0.71, "align": "center", "space_before": 0.0547,
+     "font": "serif", "text_color": "#0d0d0d"}
+  ],
+  "note": "PURE SCAN, zero text layer: every number here is measured off the 1654x2339 px render (PNG metadata says 200 dpi, i.e. the full 595.32x841.92pt A4 page) with PIL/numpy. The trimmed book sheet does not fill the A4 canvas - printed content stops at x=0.9571 (green band right edge) and y=0.9081 (foot line), so the right ~4% and bottom ~9% of the image are blank canvas, not page margin. All bboxes are fractions of the IMAGE, as required. PAGE SHAPE. This is an ordinary body page of the 'Sexual Reproduction in Flowering Plants' chapter, verso side: brown corner block + orange strip + leaf/figure logo top-left, green header band top-right, BIOLOGY running head flush right, orange folio tab bearing '14' in the OUTER (left) margin, 'Reprint 2026-27' centred at the foot. THREE MEASURES, not two. The body type measure is x 0.2890-0.8942 (the 'full' column); NCERT lets the figure hang left out of it into the wide outer margin as far as x 0.0955, which is why I list a 'left' column at 0.0955-0.5810 that starts OUTSIDE text_block. Beside the figure the body text is squeezed into x 0.6016-0.8942 (the 'right' column). text_block is the body-TYPE rectangle as the brief defines it, so its left edge is 0.2890; the figure legitimately sits left of it. Its y1 0.8461 is the ink bottom of the last line - the last BASELINE is 0.8426. FIGURE 1.11. Reported as THREE boxes per the runner's request and they OVERLAP: the n=1 element [0.0955,0.1022,0.5810,0.6721] is the GROUP box for the whole figure, and the two n:null figure elements after it are its sub-panels - panel (a) the Vallisneria line drawing on a pale blue gradient wash [0.0955,0.1022,0.5810,0.3715] and panel (b) the bee photograph [0.1306,0.3814,0.4855,0.6721]. A consumer must render EITHER the group OR the two panels, never both, or the artwork is drawn twice. Each panel bbox includes its own '(a)'/'(b)' label: '(a)' at [0.3295,0.3621,0.3470,0.3715], '(b)' at [0.2987,0.6627,0.3162,0.6721], both centred on x 0.338. Artwork-only boxes, excluding those labels, are panel (a) [0.0955,0.1022,0.5810,0.3450] and panel (b) [0.1306,0.3814,0.4855,0.6520]. Panel (a)'s fill #d2eefb is a GRADIENT, not flat - sampled #d2eefb at y 0.11, #e2f4fb at y 0.21, #f6fbfe at y 0.30, fading to white by y 0.3226, below which only the drawing's roots continue to y 0.3450. Panel (b) is a photograph with a solid black ground (#000000) and is given no fill, since that is image content, not a tint panel. BLOCK n=5 WRAPS THE FIGURE and is the one element whose single bbox is a compromise. Its ink runs in the narrow right column at x 0.6016-0.8942 from y 0.4181 down to y 0.7298, then continues at FULL measure x 0.2890-0.8942 from y 0.7345 to y 0.7764 (the wrap point is y 0.7320, just below the caption box). I gave it column 'full' and the bounding box of all its ink; a renderer that fills that box straight will overprint the figure and caption, so it must honour the two sub-boxes [0.6016,0.4181,0.8942,0.7298] and [0.2890,0.7345,0.8942,0.7764]. I did not split it into two elements because that would have put n=5 on two rows. TYPE. body_text_size_px 21.0 is cap-top-to-baseline, measured on right-column lines at y 433-453 px and y 1095-1115 px (both read 21 px). Baseline pitch is a uniform 39 px (0.01667 of page height) everywhere on the page, right column and full measure alike. NCERT adds NO extra lead between paragraphs here - the only paragraph marker is a first-line indent of 0.0302 of page width (0.6016 -> 0.6324 in the right column, 0.2890 -> 0.3192 at full measure), which is why space_before between n=3/n=4/n=5/n=6 is only 0.0047-0.0077. I did not put that first-line indent in the `indent` field because the brief defines `indent` as the element's LEFT EDGE being inset from its column, and none of these blocks is block-indented; the value is recorded here instead. The caption's tint box starts at the left column edge and insets its text by 0.0085 as internal padding, and its second line hangs to 0.2056 to align under the '(a)' of line one - again internal, so no `indent` reported. size_pt 9.3 on the caption is DERIVED, not read: 18 px cap height at 200 dpi = 6.48 pt cap, divided by an assumed 0.70 cap/em. On the same derivation body type is about 10.8 pt. size_rel is the trusted number; I report size_pt nowhere else. space_before is measured as this element's top minus the bottom of the nearest element above it that OVERLAPS IT HORIZONTALLY, so n=3 measures against the running head rather than the figure. The two elements at the very top of the page sit side by side and get 0.0. WATERMARK. The last decorative_image is the diagonal grey 'not to be republished / NCERT' overlay, colour #e6e6e6, measured after a 7x7 erosion to strip anti-aliased text edges. It is not page content and should be dropped. CORNER ORNAMENT. Reported as one decorative_image because it is one visual unit, but it is built from four pieces: brown block [0.0006,0.0009,0.0943,0.0864] #745421, orange strip [0.0949,0.0009,0.1119,0.0603] #f3951f, green leaf [0.0556,0.0,0.1294,0.0894], and a black stylised-figure glyph [0.1427,0.0021,0.2104,0.0906]. Its `fill` is the brown block's colour. FOLIO. The orange tab is two pieces: the '14' box [0.0,0.7268,0.1560,0.7640] and a separate underbar [0.0,0.7670,0.1554,0.7726], both #f7921c and both bleeding off the left trim edge; the reported bbox is their union and the white digits sit at [0.1100,0.7367,0.1318,0.7486]. ROLES I HAD TO BEND. 'Reprint 2026-27' is a running FOOT, not a head, but running_header is the only allowed role for a running line, and it is centred on the trimmed sheet (centre x 0.479), not on the text block (centre x 0.592). page.fill 0.95 is the measured union of the four content regions (figure group, caption, right-column prose, full-measure prose) over the text_block rectangle; nothing on this page is short or stranded. All six A2 blocks matched by position with confidence and no nulls: n=1 figure group, n=2 caption, n=3/4/5/6 the four prose paragraphs top to bottom. n=6 is cut off mid-sentence at the page foot and continues on p013."
+}

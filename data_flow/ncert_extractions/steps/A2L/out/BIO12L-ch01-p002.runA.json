@@ -1,0 +1,71 @@
+{
+  "page_kind": "ordinary",
+  "page": {
+    "page_kind": "ordinary",
+    "width_px": 1654,
+    "height_px": 2339,
+    "dpi": 200,
+    "body_text_size_px": 20.5,
+    "text_block": [0.2866, 0.0992, 0.8936, 0.8362],
+    "fill": 0.88,
+    "columns": [
+      {"id": "full", "x0": 0.2866, "x1": 0.8936},
+      {"id": "left", "x0": 0.0, "x1": 0.1554}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.2013, 0.0004, 0.9565, 0.0355],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435", "space_before": 0.0004},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.0004, 0.1844, 0.0902],
+     "column": "left", "size_rel": 1.0, "fill": "#725420", "space_before": 0.0004},
+
+    {"n": null, "role": "running_header", "bbox": [0.8331, 0.0710, 0.8918, 0.0778],
+     "column": "full", "size_rel": 0.78, "size_pt": 8.0, "align": "right",
+     "font": "sans", "face": "sans", "text_color": "#696969", "fill": null,
+     "space_before": 0.0351},
+
+    {"n": 1, "role": "figure", "bbox": [0.2769, 0.0992, 0.8567, 0.4519],
+     "column": "full", "size_rel": 1.0, "align": "center", "fill": null,
+     "space_before": 0.0214},
+
+    {"n": null, "role": "figure_caption", "bbox": [0.3362, 0.4827, 0.8476, 0.5015],
+     "column": "full", "size_rel": 0.88, "size_pt": 9.3, "align": "center",
+     "font": "serif", "face": "serif", "text_color": "#302723", "fill": "#fdf1e3",
+     "indent": 0.0496, "space_before": 0.0308},
+
+    {"n": 2, "role": "box", "bbox": [0.2878, 0.5199, 0.8930, 0.5639],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "font": "serif-italic", "face": "serif-italic", "text_color": "#272727",
+     "fill": null, "space_before": 0.0184},
+
+    {"n": 3, "role": "paragraph", "bbox": [0.2866, 0.5695, 0.8918, 0.6477],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "text_color": "#272727", "fill": null,
+     "indent": 0.0302, "space_before": 0.0056},
+
+    {"n": 4, "role": "section_heading", "bbox": [0.2902, 0.6670, 0.7842, 0.6781],
+     "column": "full", "size_rel": 1.27, "size_pt": 13.4, "align": "left",
+     "font": "serif-bold", "face": "serif-bold", "text_color": "#15ae52",
+     "fill": null, "space_before": 0.0192},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.2866, 0.6943, 0.8936, 0.8392],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "font": "serif", "face": "serif", "text_color": "#272727", "fill": null,
+     "indent": 0.0, "space_before": 0.0162},
+
+    {"n": null, "role": "page_number", "bbox": [0.0, 0.7268, 0.1554, 0.7640],
+     "column": "left", "size_rel": 1.41, "size_pt": 14.9, "align": "right",
+     "font": "serif-bold", "face": "serif-bold", "text_color": "#ffffff",
+     "fill": "#f8931f", "space_before": 0.6366},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.0, 0.7674, 0.1548, 0.7726],
+     "column": "left", "size_rel": 1.0, "fill": "#f8931f", "space_before": 0.0034},
+
+    {"n": null, "role": "running_header", "bbox": [0.4317, 0.9012, 0.5260, 0.9098],
+     "column": "full", "size_rel": 0.78, "size_pt": 8.0, "align": "center",
+     "font": "sans", "face": "sans", "text_color": "#0b0b0b", "fill": null,
+     "space_before": 0.0620}
+  ],
+  "note": "PURE A4 SCAN, no text layer: every number here is measured off the 1654x2339 px image (200 dpi exactly, since 1654/(595.32/72)=200.05 and 2339/(841.92/72)=200.03). Ordinary verso body page, folio 4. ONE body column only (x 0.2866-0.8936, i.e. 474-1478 px); the left strip x 0-0.1554 is a margin rail that carries only the orange folio block and the orange footer rule, no prose - it is reported as column 'left' because the allowed column values are full/left/right and the folio must not flow into the body column. body_text_size_px = 20.5 is the cap-to-baseline height of ordinary body prose, measured over 14 lines of blocks n3 and n5 (ascender/cap lines 20-21 px, x-height-only lines 14-15 px); every size_rel is that ratio. size_pt is DERIVED, not read: px*72/200 gives cap height in pt, divided by an assumed cap-height/em of 0.70 for the serif faces and 0.72 for the sans - size_rel is the measured, trustworthy number. FIGURE 1.1 and its caption are deliberately kept as two elements: the flower diagram including its leader-line labels (Stigma/Anther/Petal/Style/Filament/Sepal/Ovary) occupies 458-1417 x 232-1057 px, then 72 px of white, then the caption sits in its OWN cream-tinted panel 556-1402 x 1129-1173 px (fill #fdf1e3, sampled at 1133,600 well inside the panel) - the caption never merges into the prose below, which starts 43 px lower at y 1216. A2 lists no separate caption block, so the caption carries n:null and n=1 is put on the figure itself. Block n=2 (kind 'box') is the run-over tail of an activity box begun on the previous page: on THIS page it prints as justified serif-italic on bare white - I scanned rows 1100-2200 for any horizontal rule longer than 120 px and found none, and the background under it samples pure #ffffff, so it has no visible border or tint here and fill is null. Paragraph n3 has a 0.0302 first-line indent (first line starts at x 524 vs column left 474); paragraph n5 has NO first-line indent (its first line starts at 475) - indent 0.0 is measured, not a default. The heading n4 is green small-caps serif-bold; #15ae52 is the mean of 5106 pixels passing G>R+70 and G>B+70, the most saturated core reads #01b94b, so the true ink is a bright NCERT green in that range. Body ink #272727 and box ink #272727 are the mean of stroke-interior pixels (luminance<60); the running head 'BIOLOGY' is a neutral grey - its darkest pixels plateau flat at 102-106 across all three channels, so #696969 despite looking bluish when the scan is downsampled. The bottom line 'Reprint 2026-27' (714-870 x 2108-2128 px, sans, near-black) is a running FOOT; the role vocabulary has no footer-text role, so it is given role 'running_header' - a consumer must distinguish the two running_header entries by y (0.071 = 'BIOLOGY' head, 0.901 = reprint foot). Its measured centre (x 792 px) sits 35 px left of the sheet centre (827 px); align is reported as center and the bbox carries the real offset. The top-left corner furniture (brown block #725420 + orange vertical stripe #f6911d + green leaf + black stylised-figure glyph, 0-305 x 1-211 px) is one decorative_image; its fill is the dominant brown panel, it is a composite of four colours. The green header band #4a7435 bleeds off the right and top trim (rows start at y=1, x ends at 1582 px = 0.9565 - row 0 is blank white, probably scan edge, so the band almost certainly bleeds to trim in the real book). The folio block #f8931f and the footer rule #f8931f are the same orange and both bleed off the LEFT trim (x starts at 0). space_before is the gap from this element's top to the bottom of the nearest preceding element that overlaps it horizontally, as a fraction of page height; for the two top-of-page furniture items with nothing above them it is the gap from the sheet top, and for the folio block it is measured down the left rail from the decorative corner (hence the large 0.6366) because nothing else prints in that rail. text_block is the measured printed extent: body-column width, from the top of the figure's first label (y 232) to the baseline of the last body line (y 1956). page.fill 0.88 is the fraction of that block's DEPTH covered by element boxes (1521 of 1725 rows); the remaining 12 percent is inter-element white. Measured ink-row coverage inside the same block is 0.776 if a consumer wants the stricter number. The page runs essentially full depth - only 0.062 of page height of white separates the last baseline from the running foot. A pale diagonal watermark reading 'NCERT not to be republished' crosses the whole sheet; it was excluded from every measurement by requiring either luminance<170 or saturation>35, since the watermark is pale and near-neutral, but it does sit under the figure and the lower paragraphs and would be picked up by a naive threshold."
+}

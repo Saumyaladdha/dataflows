@@ -1,0 +1,218 @@
+{
+ "question_id": "Q-000068",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2023,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "E1:29",
+  "E2:4"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+ "trust": "unsure",
+ "stem_en": "In a series LCR circuit, the inductance L is $10\\,\\mathrm{mH}$, capacitance C is $1\\,\\mu\\mathrm{F}$ and resistance R is $100\\,\\Omega$. The frequency at which resonance occurs is :",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "$15.9\\,\\mathrm{rad/s}$",
+  "2": "$15.9\\,\\mathrm{kHz}$",
+  "3": "$59\\,\\mathrm{rad/s}$",
+  "4": "$59\\,\\mathrm{kHz}$"
+ },
+ "structure": "plain",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "29\nIn a series LCR circuit, the inductance L is 10 mH, capacitance C is 1 μF and resistance R is 100 Ω. The\nfrequency at which resonance occurs is :\n(1)\n15.9 rad/s\n(2)\n15.9 kHz\n(3)\n59 rad/s\n(4)\n59 kHz\n\n0\n​\n2π\n​\nLC\n1\nf\n​ =\n0\n​ ≈\n2π\n​\n10×10\n×1×10\n−3\n−6\n1\n1591.5 Hz ≈1.59 kHz\n",
+ "b4_script_options": {
+  "1": "15.9 rad/s",
+  "2": "15.9 kHz",
+  "3": "59 rad/s",
+  "4": "59 kHz\n\n0\n​\n2π\n​\nLC\n1\nf\n​ =\n0\n​ ≈\n2π\n​\n10×10\n×1×10\n−3\n−6\n1\n1591.5 Hz ≈1.59 kHz"
+ },
+ "official_answer": "4",
+ "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+ "status": "normal",
+ "subject": "Physics",
+ "branch": null,
+ "b6_answer": "2",
+ "b6_reason": "Resonant frequency f = 1/(2*pi*sqrt(LC)); mantissa matches option 2 (159) but computed magnitude is 1.59 kHz, a factor of 10 below the listed 15.9 kHz.",
+ "b6_working": "f = 1/(2*pi*sqrt(LC)) = 1/(2*pi*sqrt(0.010 H * 1e-6 F)) = 1/(2*pi*1e-4) = 1591.5 Hz = 1.5915 kHz",
+ "b6_confidence": "low",
+ "b6_note": "My calculation gives 1.59 kHz, which does not exactly match any option; option 2 (15.9 kHz) is a factor of 10 higher but shares the same mantissa (159), suggesting a likely scaling error in the options. Picking option 2 as best guess; flag for review as the numbers do not cleanly fit the option list.",
+ "b6_agrees_with_key": false,
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "paper_codes now lists every code this question was printed in (E1, E2); each code's own option order is recorded in option_order_by_code",
+    "option_order_by_code recorded for E1, E2: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "E1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  },
+  "E2": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

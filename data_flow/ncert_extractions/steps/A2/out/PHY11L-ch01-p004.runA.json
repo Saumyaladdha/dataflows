@@ -14,7 +14,17 @@
     {
       "n": 3,
       "kind": "list",
-      "text": "• All the non-zero digits are significant.\n• All the zeros between two non-zero digits are significant, no matter where the decimal point is, if at all.\n• If the number is less than 1, the zero(s) on the right of decimal point but to the left of the first non-zero digit are not significant. [In 0.00 2308, the underlined zeroes are not significant].\n• The terminal or trailing zero(s) in a number without a decimal point are not significant.\n[Thus 123 m = 12300 cm = 123000 mm has three significant figures, the trailing zero(s) being not significant.] However, you can also see the next observation.\n• The trailing zero(s) in a number with a decimal point are significant.\n[The numbers 3.500 or 0.06900 have four significant figures each.]"
+      "text": "• All the non-zero digits are significant.\n• All the zeros between two non-zero digits are significant, no matter where the decimal point is, if at all.\n• If the number is less than 1, the zero(s) on the right of decimal point but to the left of the first non-zero digit are not significant. [In 0.00 2308, the underlined zeroes are not significant].\n• The terminal or trailing zero(s) in a number without a decimal point are not significant.\n[Thus 123 m = 12300 cm = 123000 mm has three significant figures, the trailing zero(s) being not significant.] However, you can also see the next observation.\n• The trailing zero(s) in a number with a decimal point are significant.\n[The numbers 3.500 or 0.06900 have four significant figures each.]",
+      "bold_terms": [
+        "All the non-zero digits are significant",
+        "All the zeros between two non-zero digits are significant, no matter where the decimal point is, if at all",
+        "If the number is less than 1, the zero(s) on the right of decimal point but to the left of the first non-zero digit are not significant",
+        "The terminal or trailing zero(s) in a number without a decimal point are not significant",
+        "The trailing zero(s) in a number with a decimal point are significant"
+      ],
+      "italic_terms": [
+        "three"
+      ]
     },
     {
       "n": 4,
@@ -26,22 +36,29 @@
       "kind": "equation",
       "needs_special": true,
       "bbox": [
-        295,
-        1405,
+        292,
+        1398,
         935,
-        1445
+        1446
       ],
       "text": ""
     },
     {
       "n": 6,
       "kind": "paragraph",
-      "text": "Since the last number has trailing zero(s) in a number with no decimal, we would conclude erroneously from observation (1) above that the number has two significant figures, while in fact, it has four significant figures and a mere change of units cannot change the number of significant figures."
+      "text": "Since the last number has trailing zero(s) in a number with no decimal, we would conclude erroneously from observation (1) above that the number has two significant figures, while in fact, it has four significant figures and a mere change of units cannot change the number of significant figures.",
+      "italic_terms": [
+        "two"
+      ]
     },
     {
       "n": 7,
       "kind": "paragraph",
-      "text": "(3) To remove such ambiguities in determining the number of significant figures, the best way is to report every measurement in scientific notation (in the power of 10). In this notation, every number is expressed as a × 10b, where a is a number between 1 and 10, and b is any positive or negative exponent (or power) of 10. In order to get an approximate idea of the number, we may round off the number a to 1 (for a ≤5) and to 10 (for 5<a ≤10). Then the number can be expressed approximately as 10b in which the exponent (or power) b of 10 is called order of magnitude of the physical quantity. When only an estimate is required, the quantity is of the order of 10b. For example, the diameter of the earth (1.28×107m) is of the order of 107m with the order of magnitude 7. The diameter of hydrogen atom (1.06 ×10–10m) is of the order of 10–10m, with the order of magnitude –10. Thus, the diameter of the earth is 17 orders of magnitude larger than the hydrogen atom."
+      "text": "(3) To remove such ambiguities in determining the number of significant figures, the best way is to report every measurement in scientific notation (in the power of 10). In this notation, every number is expressed as a × 10ᵇ, where a is a number between 1 and 10, and b is any positive or negative exponent (or power) of 10. In order to get an approximate idea of the number, we may round off the number a to 1 (for a ≤5) and to 10 (for 5<a ≤10). Then the number can be expressed approximately as 10ᵇ in which the exponent (or power) b of 10 is called order of magnitude of the physical quantity. When only an estimate is required, the quantity is of the order of 10ᵇ. For example, the diameter of the earth (1.28×10⁷m) is of the order of 10⁷m with the order of magnitude 7. The diameter of hydrogen atom (1.06 ×10⁻¹⁰m) is of the order of 10⁻¹⁰m, with the order of magnitude –10. Thus, the diameter of the earth is 17 orders of magnitude larger than the hydrogen atom.",
+      "bold_terms": [
+        "To remove such ambiguities in determining the number of significant figures, the best way is to report every measurement in scientific notation (in the power of 10)",
+        "order of magnitude"
+      ]
     },
     {
       "n": 8,
@@ -53,17 +70,20 @@
       "kind": "equation",
       "needs_special": true,
       "bbox": [
-        990,
-        810,
-        1545,
-        870
+        1040,
+        812,
+        1555,
+        890
       ],
       "text": ""
     },
     {
       "n": 10,
       "kind": "paragraph",
-      "text": "The power of 10 is irrelevant to the determination of significant figures. However, all zeroes appearing in the base number in the scientific notation are significant. Each number in this case has four significant figures."
+      "text": "The power of 10 is irrelevant to the determination of significant figures. However, all zeroes appearing in the base number in the scientific notation are significant. Each number in this case has four significant figures.",
+      "italic_terms": [
+        "four"
+      ]
     },
     {
       "n": 11,
@@ -78,7 +98,11 @@
     {
       "n": 13,
       "kind": "list",
-      "text": "• For a number greater than 1, without any decimal, the trailing zero(s) are not significant.\n• For a number with a decimal, the trailing zero(s) are significant."
+      "text": "• For a number greater than 1, without any decimal, the trailing zero(s) are not significant.\n• For a number with a decimal, the trailing zero(s) are significant.",
+      "bold_terms": [
+        "For a number greater than 1, without any decimal, the trailing zero(s) are not significant",
+        "For a number with a decimal, the trailing zero(s) are significant"
+      ]
     },
     {
       "n": 14,
@@ -88,7 +112,8 @@
     {
       "n": 15,
       "kind": "paragraph",
-      "text": "(6) The multiplying or dividing factors which are neither rounded numbers nor numbers representing measured values are exact and have infinite number of significant digits. For example in r = d/2 or s = 2πr, the factor 2 is an exact number and it can be written as 2.0, 2.00"
+      "text": "(6) The multiplying or dividing factors which are neither rounded numbers nor numbers representing measured values are exact and have infinite number of significant digits. For example in r = d/2 or s = 2πr, the factor 2 is an exact number and it can be written as 2.0, 2.00",
+      "continues_on_next": true
     }
   ],
   "first_block_continues_from_previous": false,
@@ -98,5 +123,5 @@
     "PHYSICS",
     "2024-25"
   ],
-  "note": "Judged first_block_continues_from_previous from page 3, which I read myself in this batch (previous_page_last_block was null): page 3 ends at a full stop ('...namely four.') and this page opens a new sentence. Blocks 5 and 9 are the two displayed equation lines, left for the special transcriber with bounding boxes. Block 7 runs across the column break (left column ends 'any positive or', right column continues 'negative exponent (or power) of 10'). In block 15 the inline stacked fraction d over 2 is garbled in the text layer ('2 d r ='), so it is written linearly as 'r = d/2' from the image; the rest of the page's text layer matches the image."
+  "note": "Two-column page, read left column fully then right column. previous_page_last_block was null; judged from the page itself — it opens a complete new sentence ('This shows that the location of decimal point is...'), so first_block_continues_from_previous is false. Block 7 is one paragraph that straddles the column break: item (3) begins at the foot of the left column and runs on at the top of the right column ('negative exponent (or power) of 10...'). The page ends mid-sentence at '...it can be written as 2.0, 2.00', so last_block_continues_on_next is true. Two display equations are deferred to A2S with bounding boxes: n=5 (4.700 m = 470.0 cm = 4700 mm = 0.004700 km) and n=9 (the two-line centred scientific-notation display). Superscripts were read from the image, not the text layer, which flattens them: 10ᵇ, 1.28×10⁷m, 10⁷m, 1.06 ×10⁻¹⁰m, 10⁻¹⁰m. In n=15 the inline built-up fraction (r = d over 2) is linearised as 'r = d/2', the corpus's usual inline form; the text layer scrambles it to the tokens '2 / d / r ='. In n=3 the page underlines the zeroes in '0.00 2308' (printed with that gap) to show which are not significant; underlining cannot be represented in block text, so the characters are copied as printed. Italic single-letter scalars (a, b, r, d) and the bold rule statements' trailing full stops are excluded from italic_terms/bold_terms per the brief."
 }

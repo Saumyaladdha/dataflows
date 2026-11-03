@@ -1,0 +1,210 @@
+{
+ "question_id": "Q-000251",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2024,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:1"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2024/code-S3/neet_2024_code-S3.pdf",
+ "trust": "official",
+ "stem_en": "A logic circuit provides the output Y as per the following truth table : 0 0 10 10 10 1110 A B Y The expression for the output Y is :",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": ".AB A+",
+  "2": ".A B A+",
+  "3": "B",
+  "4": "B"
+ },
+ "structure": "table",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "1\nA logic circuit provides the output Y as per the following truth table : 0 0 1 0 1 0 1 0 1 1 1 0 A B Y The\nexpression for the output Y is :\n(1)\n.AB A+\n(2)\n.A B A+\n(3)\nB\n(4)\nB\nSemiconductor Electronics\n",
+ "b4_script_options": {
+  "1": ".AB A+",
+  "2": ".A B A+",
+  "3": "B",
+  "4": "B\nSemiconductor Electronics"
+ },
+ "official_answer": "3",
+ "answer_source": "inputs/keys/NEET_answers-key_2024-neet.pdf",
+ "status": "normal",
+ "subject": "Physics",
+ "branch": null,
+ "b6_answer": "unsure",
+ "b6_reason": "Options arrived too damaged to choose: options 3 and 4 are both printed as the bare letter 'B' (overbars lost), and options 1 and 2 are scrambled fragments.",
+ "b6_working": "Reading the inline table as rows (A,B,Y) = (0,0,1), (0,1,0), (1,0,1), (1,1,0) gives Y = 1 exactly when B = 0, i.e. Y = NOT B, independent of A. That should match an option 'B bar', but options 3 and 4 are identical as supplied ('B' and 'B'), so no single option can be identified.",
+ "b6_confidence": "low",
+ "b6_note": "Upstream extraction damage: the truth table is flattened into the stem as a bare digit string ('0 0 1 0 1 0 1 0 1 1 1 0 A B Y') with the A/B/Y header trailing, and overline/complement notation is stripped from all four options (1: '.AB A+', 2: '.A B A+', 3: 'B', 4: 'B'). Derived logic is Y = NOT B, but the option list cannot be mapped. Needs re-extraction.",
+ "b6_agrees_with_key": false,
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "1",
+   "3": "3",
+   "4": "3"
+  }
+ }
+}

@@ -1,0 +1,297 @@
+{
+ "question_id": "Q-000204",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_path": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_url": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_source_row": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "figure_match_confidence": {
+   "step": "B9",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2023,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "E1:97",
+  "E2:89"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+ "trust": "unsure",
+ "stem_en": "Which amongst the following will be most readily dehydrated under acidic conditions?",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "Structure with $\\mathrm{NO_2}$, $\\mathrm{OH}$, and $\\mathrm{CH_3}$ groups on adjacent carbons",
+  "2": "Structure with two $\\mathrm{OH}$ groups and a $\\mathrm{CH_3}$ group on adjacent carbons",
+  "3": "Structure with $\\mathrm{NO_2}$, $\\mathrm{H}$, $\\mathrm{OH}$, and $\\mathrm{OH}$ groups on adjacent carbons",
+  "4": "Structure with $\\mathrm{NO_2}$ and $\\mathrm{OH}$ groups on adjacent carbons in a chain"
+ },
+ "structure": "plain",
+ "has_figure": true,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "97\nOrganic Chemistry is not in the list. The question seems to be more related to chemistry than botany. However, fr…\nWhich amongst the following will be most readily dehydrated under acidic conditions?\n(1)\nStructure with NO₂, OH, and CH₃ groups\non adjacent carbons\n(2)\nStructure with two OH groups and a\nCH₃ group on adjacent carbons\n(3)\nStructure with NO₂, H, OH, and OH\ngroups on adjacent carbons\n(4)\nStructure with NO₂ and OH groups on\nadjacent carbons in a chain\n",
+ "b4_script_options": {
+  "1": "Structure with NO₂, OH, and CH₃ groups\non adjacent carbons",
+  "2": "Structure with two OH groups and a\nCH₃ group on adjacent carbons",
+  "3": "Structure with NO₂, H, OH, and OH\ngroups on adjacent carbons",
+  "4": "Structure with NO₂ and OH groups on\nadjacent carbons in a chain"
+ },
+ "official_answer": "2",
+ "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+ "status": "normal",
+ "subject": "Chemistry",
+ "branch": "organic",
+ "b6_answer": null,
+ "b6_agrees_with_key": null,
+ "figure_path": "papers/figures/Q-000204.png",
+ "figure_source_url": "https://cdn.mathpix.com/snip/images/ameaH4GZkVA1OfvOUdmJ0DhiAlkOsYF7Mvg8z9xTgXk.original.fullsize.png",
+ "figure_source_row": "NEET-UG_pyq_2023.xlsx#99",
+ "figure_match_confidence": "high",
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "paper_codes now lists every code this question was printed in (E1, E2); each code's own option order is recorded in option_order_by_code",
+    "option_order_by_code recorded for E1, E2: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_panel_order_differs",
+   "notes": [
+    "the four panels belong to this question but are printed in a different order from this record's options: {'a': '4', 'b': '1', 'c': '2', 'd': '3'}. The figure is NOT published as it stands -- the mapping must be applied first, otherwise the keyed answer selects the wrong picture. Agent saw: four labelled skeletal structures (a)-(d) of substituted alkane chains bearing NO2, OH, H and CH3 groups, offered as the four options"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_panel_order_differs",
+   "notes": [
+    "the four panels belong to this question but are printed in a different order from this record's options: {'a': '4', 'b': '1', 'c': '2', 'd': '3'}. The figure is NOT published as it stands -- the mapping must be applied first, otherwise the keyed answer selects the wrong picture. Agent saw: four labelled skeletal structures (a)-(d) of substituted alkane chains bearing NO2, OH, H and CH3 groups, offered as the four options"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_panel_order_differs",
+   "notes": [
+    "the four panels belong to this question but are printed in a different order from this record's options: {'a': '4', 'b': '1', 'c': '2', 'd': '3'}. The figure is NOT published as it stands -- the mapping must be applied first, otherwise the keyed answer selects the wrong picture. Agent saw: four labelled skeletal structures (a)-(d) of substituted alkane chains bearing NO2, OH, H and CH3 groups, offered as the four options"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_panel_order_differs",
+   "notes": [
+    "the four panels belong to this question but are printed in a different order from this record's options: {'a': '4', 'b': '1', 'c': '2', 'd': '3'}. The figure is NOT published as it stands -- the mapping must be applied first, otherwise the keyed answer selects the wrong picture. Agent saw: four labelled skeletal structures (a)-(d) of substituted alkane chains bearing NO2, OH, H and CH3 groups, offered as the four options"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_panel_order_differs",
+   "notes": [
+    "the four panels belong to this question but are printed in a different order from this record's options: {'a': '4', 'b': '1', 'c': '2', 'd': '3'}. The figure is NOT published as it stands -- the mapping must be applied first, otherwise the keyed answer selects the wrong picture. Agent saw: four labelled skeletal structures (a)-(d) of substituted alkane chains bearing NO2, OH, H and CH3 groups, offered as the four options"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_panel_order_differs",
+   "notes": [
+    "the four panels belong to this question but are printed in a different order from this record's options: {'a': '4', 'b': '1', 'c': '2', 'd': '3'}. The figure is NOT published as it stands -- the mapping must be applied first, otherwise the keyed answer selects the wrong picture. Agent saw: four labelled skeletal structures (a)-(d) of substituted alkane chains bearing NO2, OH, H and CH3 groups, offered as the four options"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_panel_order_differs",
+   "notes": [
+    "the four panels belong to this question but are printed in a different order from this record's options: {'a': '4', 'b': '1', 'c': '2', 'd': '3'}. The figure is NOT published as it stands -- the mapping must be applied first, otherwise the keyed answer selects the wrong picture. Agent saw: four labelled skeletal structures (a)-(d) of substituted alkane chains bearing NO2, OH, H and CH3 groups, offered as the four options"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_panel_order_differs",
+   "notes": [
+    "the four panels belong to this question but are printed in a different order from this record's options: {'a': '4', 'b': '1', 'c': '2', 'd': '3'}. The figure is NOT published as it stands -- the mapping must be applied first, otherwise the keyed answer selects the wrong picture. Agent saw: four labelled skeletal structures (a)-(d) of substituted alkane chains bearing NO2, OH, H and CH3 groups, offered as the four options"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "step B9S (b9s-source-figure-confirmer)",
+   "kind": "figure_verdict_panel_order_differs",
+   "notes": [
+    "the four panels belong to this question but are printed in a different order from this record's options: {'a': '4', 'b': '1', 'c': '2', 'd': '3'}. The figure is NOT published as it stands -- the mapping must be applied first, otherwise the keyed answer selects the wrong picture. Agent saw: four labelled skeletal structures (a)-(d) of substituted alkane chains bearing NO2, OH, H and CH3 groups, offered as the four options"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "E1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  },
+  "E2": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ },
+ "option_panel_map": {
+  "a": "4",
+  "b": "1",
+  "c": "2",
+  "d": "3"
+ },
+ "figure_verified": false
+}

@@ -63,7 +63,13 @@ def chapter_dir(cid):
     subject, klass, edition = design_lib.parse_book_id(book_id)
     base = os.path.join(ROOT, "data", "new_ncert" if edition == "L" else "old_ncert",
                         f"class_{klass}", bcj.SUBJECT_WORD[subject])
-    hits = [d for d in os.listdir(base) if d.startswith(f"ch{num:02d}_")] if os.path.isdir(base) else []
+    # FOLDERS ONLY. A chapter's deliverables live in a DIRECTORY; anything else beside it with
+    # the same prefix -- an exported `ch01_units-and-measurement.zip`, an editor's backup -- is
+    # not a candidate, and counting it made the resolver report two chapters and refuse to
+    # build the one that was really there.
+    hits = [d for d in os.listdir(base)
+            if d.startswith(f"ch{num:02d}_") and os.path.isdir(os.path.join(base, d))] \
+        if os.path.isdir(base) else []
     if len(hits) != 1:
         raise SystemExit(f"{cid}: expected one ch{num:02d}_* folder under {base}, found {hits}")
     return os.path.join(base, hits[0])

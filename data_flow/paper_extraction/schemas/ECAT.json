@@ -1,268 +1,258 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "schemas/ECAT.json",
-  "title": "ECAT agent output (e-category-rater) -- ONE GROUP of similar questions, 1 run",
-  "description": "ITEM GRANULARITY: the item is a GROUP of up to six questions sharing a subject and an E1 question type, not one question. That is deliberate and is the correction for v1's central defect -- v1 was tagged in paper order, and so gave one match-list question `check_each_statement` and another `elimination` with no stated reason for the difference. Rule 0.7 of docs/question_categories/RULEBOOK.md requires similar questions to be judged against each other, which is only possible if the agent sees them together. Hence `ratings` is an array and `group_note` is required: the note is where the agent records how the group was kept consistent and why any member differs, which is the thing v1 had no way to say. Packets are built by scripts/build_ecat_packets.py (580 questions -> 45 subject x type groups -> 120 packets). Every enum here is config/allowed_values.yaml v0.3, generated from the rulebook by scripts/build_allowed_values.py, so a label the rulebook defines is emittable and one it retired is not.",
-  "oneOf": [
-    {
-      "type": "object",
-      "required": [
-        "group",
-        "ratings",
-        "group_note"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "group": {
-          "type": "string",
-          "minLength": 1,
-          "description": "Copied verbatim from the input's `group`. Checked, because a mismatch means the output was written against a different packet."
-        },
-        "ratings": {
-          "type": "array",
-          "minItems": 1,
-          "items": {
-            "type": "object",
-            "required": [
-              "question_id",
-              "concept",
-              "cognitive_demand",
-              "solution_structure",
-              "traps",
-              "reason"
-            ],
-            "additionalProperties": false,
-            "properties": {
-              "question_id": {
-                "type": "string",
-                "pattern": "^(Q-[0-9]{6}|[0-9]{4}_[A-Za-z0-9]+#q[0-9]{3})$",
-                "description": "Must be one of the question_ids the packet supplied, and each supplied id must appear exactly once. Enforced in scripts/checks/ECAT.py: a group judged 'together' that silently drops a member has not been judged together. TWO ID SHAPES ARE VALID: `Q-000123` for the v1 sheet, and `2015_A#q041` for the papers_v2 corpus, whose packets are built by scripts/build_ecat_packets_v2.py. The v2 ids are NOT translated into Q-ids: a synthetic id in the v1 shape would join wrongly to the v1 sheet, and the two corpora are reported separately on purpose."
-              },
-              "concept": {
-                "type": "string",
-                "description": "The specific thing tested, in a form a student could revise: 'Critical angle from relative speeds', not 'formula_or_law'. The rulebook's section 3 calls this the single most useful field on the sheet, because a student cannot revise a broad content_shape. May be \"\" only as the stated unsure form, with the reason in `note`."
-              },
-              "cognitive_demand": {
-                "type": "string",
-                "enum": [
-                  "application",
-                  "calculation",
-                  "concept_discrimination",
-                  "condition_based_reasoning",
-                  "dimensional_reasoning",
-                  "explanatory_reasoning",
-                  "new_demand",
-                  "recall",
-                  "representation_translation",
-                  ""
-                ],
-                "description": "config/allowed_values.yaml `cognitive_demand`, v0.3 (rulebook section 4a), plus \"\" as the unsure form. `new_demand` is the escape hatch and REQUIRES a description in `note` -- it is the correct answer when none of the eight fits, and using it is how the vocabulary gets revised instead of quietly stretched. Note that `application` no longer means 'a student who memorised nothing can still reach the answer' -- that v1 definition was untenable, since applying a rule requires knowing the rule."
-              },
-              "solution_structure": {
-                "type": "string",
-                "enum": [
-                  "multi_step_dependent",
-                  "several_independent_checks",
-                  "single_step",
-                  ""
-                ],
-                "description": "config/allowed_values.yaml `solution_structure`, v0.3 (rulebook section 4b), plus \"\" as the unsure form. FOUR INDEPENDENT MATCH-CHECKS ARE NOT FOUR DEPENDENT STEPS: `multi_step_dependent` requires step 2 to need step 1's RESULT. This is the distinction v1's single `multi_step` label could not express."
-              },
-              "strategy_available": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "enum": [
-                    "dimensional_check",
-                    "elimination",
-                    "estimation",
-                    "symmetry",
-                    "unit_sanity"
-                  ]
-                },
-                "description": "Zero or more, from config/allowed_values.yaml `strategy_available`, v0.3 (rulebook section 4c). A recall question CAN offer elimination -- that is no longer a contradiction, because recall is a demand and elimination a strategy, which v1 had on one axis as siblings."
-              },
-              "strategy_evidence": {
-                "type": "string",
-                "description": "REQUIRED (non-empty) when `strategy_available` contains `elimination`: name the one pair or fact and the options it strikes out -- 'fibrous -> skull bones appears only in option 2'. Enforced in scripts/checks/ECAT.py. No evidence, no label."
-              },
-              "traps": {
-                "type": "array",
-                "description": "One entry per wrong option that carries a device. MAY BE EMPTY, and MUST be empty when `review_status` is `source_incomplete` -- rulebook rule 5. A trap inferred from a question whose figure or option is missing is a guess dressed as a finding, and scripts/checks/ECAT.py fails it.",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "label",
-                    "option",
-                    "route"
-                  ],
-                  "additionalProperties": false,
-                  "properties": {
-                    "label": {
-                      "type": "string",
-                      "description": "config/allowed_values.yaml `trap`, v0.3 -- 37 values, generated from rulebook section 5. The enum is NOT repeated here: scripts/checks/ECAT.py reads allowed_values.yaml directly, so the trap list cannot drift between the rulebook, the config and this schema the way it did between v0.2 and v1."
-                    },
-                    "option": {
-                      "type": "string",
-                      "pattern": "^[1-4]$",
-                      "description": "The ONE option this device lands on. Must not be the official answer: there is no trap on the answer."
-                    },
-                    "route": {
-                      "type": "string",
-                      "minLength": 1,
-                      "description": "The mistake that leads there -- 'uses 1/2 LI instead of 1/2 LI^2'. Rulebook rule 4: a trap tag that cannot name the option and the route is not actionable and must be omitted instead."
-                    }
-                  }
-                }
-              },
-              "verdicts": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "enum": [
-                    "arguable_key",
-                    "source_damage_artifact"
-                  ]
-                },
-                "description": "config/allowed_values.yaml `trap_verdict`, v0.3 (rulebook section 5a). These are NOT traps and are kept in a separate field so they cannot be counted as examiner design. `source_damage_artifact` is our own extraction damage and was the commonest device the per-subject analyses recorded; `arguable_key` is a review flag and never overturns the printed key."
-              },
-              "reason": {
-                "type": "string",
-                "minLength": 1,
-                "description": "The rulebook's fixed shape: 'This question requires ___, demonstrated by ___.' The second blank QUOTES the stem or an option. A reason about students is not a reason -- we hold no response data, so 'a common error' and 'no student would pick this' are unsupportable (SPEC Rule 22). scripts/checks/ECAT.py rejects those phrasings."
-              },
-              "note": {
-                "type": "string",
-                "description": "Universal rule 7, and where the unsure forms put their reason. Optional."
-              },
-              "question_type": {
-                "type": "string",
-                "enum": [
-                  "arrange_in_order",
-                  "assertion_reason",
-                  "diagram_labelled",
-                  "experiment_based",
-                  "figure_to_read",
-                  "fill_in_blank",
-                  "graph_options",
-                  "list_of_statements",
-                  "list_of_structures",
-                  "match_the_lists",
-                  "multi_part_respectively",
-                  "new_type",
-                  "pair_options",
-                  "plain_mcq",
-                  "reaction_options",
-                  "reaction_scheme",
-                  "statement_i_ii",
-                  "statement_options",
-                  "structure_options",
-                  "table_based"
-                ],
-                "description": "E1 -- the shape on the page, decided FROM LAYOUT ALONE: nothing about difficulty or method. Added 2026-10-21 for the papers_v2 corpus. In v1 this was filled by the separate E1 step, so ECAT had no field for it and a rater working this corpus could only record its reading in prose -- which is a label the product cannot show. `new_type` is the escape for a shape the list does not cover; name what you saw in `reason`."
-              },
-              "secondary_type": {
-                "type": "string",
-                "enum": [
-                  "arrange_in_order",
-                  "assertion_reason",
-                  "diagram_labelled",
-                  "experiment_based",
-                  "figure_to_read",
-                  "fill_in_blank",
-                  "graph_options",
-                  "list_of_statements",
-                  "list_of_structures",
-                  "match_the_lists",
-                  "multi_part_respectively",
-                  "new_type",
-                  "pair_options",
-                  "plain_mcq",
-                  "reaction_options",
-                  "reaction_scheme",
-                  "statement_i_ii",
-                  "statement_options",
-                  "structure_options",
-                  "table_based"
-                ],
-                "description": "E1's second shape, where a question genuinely has two. Optional."
-              },
-              "format": {
-                "type": "string",
-                "enum": [
-                  "calculate_value",
-                  "count_qualifying_items",
-                  "derive_expression",
-                  "identify_structure_or_compound",
-                  "judge_assertion_reason",
-                  "judge_two_statements",
-                  "name_or_identify",
-                  "new_format",
-                  "pick_both_parts",
-                  "pick_cause_or_effect",
-                  "pick_correct_combination",
-                  "pick_correct_statement",
-                  "pick_direction",
-                  "pick_graph_or_label",
-                  "pick_match_code",
-                  "pick_order",
-                  "pick_ratio",
-                  "predict_product",
-                  "recall_value"
-                ],
-                "description": "E2 -- what the ANSWER must contain, decided FROM THE OPTIONS ALONE and never from how the answer is obtained. A question that involves a ratio can still ask for a temperature. `new_format` is the escape."
-              },
-              "content_shape": {
-                "type": "string",
-                "enum": [
-                  "classification_hierarchy",
-                  "current_affairs",
-                  "definition_term",
-                  "diagram",
-                  "disease_cause",
-                  "example_list",
-                  "experimental_observation",
-                  "formula_or_law",
-                  "graph",
-                  "life_cycle",
-                  "new_shape",
-                  "nomenclature_rule",
-                  "organism_characteristic",
-                  "practical_procedure",
-                  "process",
-                  "reaction",
-                  "reaction_mechanism",
-                  "scientist_history",
-                  "structure_chemical",
-                  "structure_function",
-                  "structure_property",
-                  "trend",
-                  "value_or_data"
-                ],
-                "description": "E3 -- the broad kind of NCERT material the question is built on. Paired with `concept`, which names the actual concept: the broad label alone is not revisable. `new_shape` is the escape."
-              }
-            }
-          }
-        },
-        "group_note": {
-          "type": "string",
-          "minLength": 1,
-          "description": "How the group was kept consistent, and why any member differs: 'All four are recall of tabulated associations; Q-000052 differs in having a one-pair shortcut, which is why it alone carries elimination.' REQUIRED, because this field is the whole reason the item is a group. An empty note means the questions were judged one at a time, which is the v1 failure this step exists to prevent."
-        }
-      }
+ "$schema": "http://json-schema.org/draft-07/schema#",
+ "$id": "schemas/ECAT.json",
+ "title": "ECAT agent output (e-category-rater) -- ONE GROUP of similar questions, 1 run",
+ "description": "THREE FIELDS, NOT FIVE, AND ONE TRAP PER QUESTION. Measured on 2017_A's 178 ratings, the v1 axes were not independent: `recall` drew `other_one_fact` 60 times, `neighbouring_fact` 52, `wrong_site_or_stage` 26 and `look_alike_term` 17 -- four names for one idea -- while `calculation` drew `calculation_slip`, which is that demand having failed. The trap IS the thinking, failed, so they are one field; `format` and `content_shape` collapse the same way into `asks`. v1 wrote 2.9 traps a question, a rationale per distractor rather than a finding about the question; there is now exactly one. `solution_structure` is gone because E7 difficulty already prints the step count. Every retired label maps forward through `category_retired`, and the nine values named from v1's 15 `new_trap` cases are in the list. THE ENUMS HERE ARE COPIED FROM config/allowed_values.yaml AND MUST BE REGENERATED WHENEVER IT CHANGES. They drifted once already: the vocabulary was renamed in the YAML (`ncert_fact`->`fact_line`, `calculation_error`->`arithmetic_slip`, `wrong_site_or_stage`->`right_fact_wrong_place`) and this file kept the old spellings, so the brief, the YAML and the schema disagreed and a rater following the brief wrote output this file would reject. That is the same 'four files each hold their own copy' drift the v0.2/v1/v2 trap-list problem came from. Run code/sync_ecat_schema.py after any vocabulary change.",
+ "oneOf": [
+  {
+   "type": "object",
+   "required": [
+    "group",
+    "ratings"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "group": {
+     "type": "string",
+     "minLength": 1
     },
-    {
+    "group_note": {
+     "type": "string"
+    },
+    "ratings": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
       "type": "object",
       "required": [
-        "error"
+       "question_id",
+       "qtype",
+       "asks",
+       "concept",
+       "trap",
+       "reason"
       ],
       "additionalProperties": false,
       "properties": {
-        "error": {
-          "type": "string"
+       "question_id": {
+        "type": "string",
+        "pattern": "^(Q-[0-9]{6}|[0-9]{4}_[A-Za-z0-9]+(?:#|__)q[0-9]{3})$"
+       },
+       "qtype": {
+        "type": "string",
+        "enum": [
+         "mcq",
+         "statements",
+         "assertion_reason",
+         "match_columns",
+         "two_part",
+         "new_type"
+        ],
+        "description": "What it LOOKS like. mcq | match | statements | assertion_reason | order | pair (options are pairs judged whole) | two_part (\"respectively\")."
+       },
+       "qtype_proposed": {
+        "type": "object",
+        "required": [
+         "name",
+         "why"
+        ],
+        "additionalProperties": false,
+        "description": "REQUIRED whenever a `new_*` value is used. The vocabulary is open on purpose -- it was built from real questions and real questions keep arriving that it cannot say. But a bare `new_trap` is a hole: 15 of them appeared on 2017_A and the mechanism survived only because raters happened to write it in prose. Name what you met and say why no existing value fits, and `code/promote_new_values.py` can lift it into allowed_values.yaml when it recurs.",
+        "properties": {
+         "name": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{3,40}$",
+          "description": "snake_case, in the style of the existing values."
+         },
+         "why": {
+          "type": "string",
+          "minLength": 20,
+          "description": "What this is, and which existing value you ruled out and why."
+         }
         }
-      },
-      "description": "Universal rule 8: if the input file is missing or broken, the agent writes only {\"error\": \"...\"}."
+       },
+       "asks": {
+        "type": "string",
+        "enum": [
+         "fact_line",
+         "reason_line",
+         "compare",
+         "order",
+         "read_diagram",
+         "calculate",
+         "relation",
+         "apply_rule",
+         "reaction",
+         "experiment",
+         "new_asks"
+        ],
+        "description": "Where it is asked from and what it wants. ncert_fact=what/who/where; ncert_reason=why; compare=a difference or the right pairing; order=sequence or trend; diagram=read a figure or graph; calculate=get a number; relation=how much it changes; apply_rule=known rule on a new case; reaction=product or reagent; experiment=procedure or data."
+       },
+       "asks_proposed": {
+        "type": "object",
+        "required": [
+         "name",
+         "why"
+        ],
+        "additionalProperties": false,
+        "description": "REQUIRED whenever a `new_*` value is used. The vocabulary is open on purpose -- it was built from real questions and real questions keep arriving that it cannot say. But a bare `new_trap` is a hole: 15 of them appeared on 2017_A and the mechanism survived only because raters happened to write it in prose. Name what you met and say why no existing value fits, and `code/promote_new_values.py` can lift it into allowed_values.yaml when it recurs.",
+        "properties": {
+         "name": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{3,40}$",
+          "description": "snake_case, in the style of the existing values."
+         },
+         "why": {
+          "type": "string",
+          "minLength": 20,
+          "description": "What this is, and which existing value you ruled out and why."
+         }
+        }
+       },
+       "concept": {
+        "type": "string",
+        "minLength": 10,
+        "description": "The concept the question turns on, in your own words. One sentence."
+       },
+       "trap": {
+        "type": "object",
+        "required": [
+         "label",
+         "route"
+        ],
+        "additionalProperties": false,
+        "description": "ONE trap for the question, not one per option.",
+        "properties": {
+         "label": {
+          "$ref": "#/$defs/trap_label"
+         },
+         "option": {
+          "type": [
+           "string",
+           "null"
+          ],
+          "pattern": "^[1-4]$",
+          "description": "The option it lands on, where one dominates. null for no_trap or a set-level device."
+         },
+         "route": {
+          "type": "string",
+          "minLength": 15,
+          "description": "What a student does to land there. Name the half-remembered rule or the dropped step -- never how many students do it."
+         },
+         "proposed": {
+          "type": "object",
+          "required": [
+           "name",
+           "why"
+          ],
+          "additionalProperties": false,
+          "description": "REQUIRED whenever a `new_*` value is used. The vocabulary is open on purpose -- it was built from real questions and real questions keep arriving that it cannot say. But a bare `new_trap` is a hole: 15 of them appeared on 2017_A and the mechanism survived only because raters happened to write it in prose. Name what you met and say why no existing value fits, and `code/promote_new_values.py` can lift it into allowed_values.yaml when it recurs.",
+          "properties": {
+           "name": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{3,40}$",
+            "description": "snake_case, in the style of the existing values."
+           },
+           "why": {
+            "type": "string",
+            "minLength": 20,
+            "description": "What this is, and which existing value you ruled out and why."
+           }
+          }
+         }
+        }
+       },
+       "reason": {
+        "type": "string",
+        "minLength": 15
+       },
+       "note": {
+        "type": "string"
+       },
+       "verdict": {
+        "type": "string",
+        "enum": [
+         "source_damage_artifact",
+         "arguable_key",
+         "ok"
+        ]
+       },
+       "also": {
+        "type": "array",
+        "maxItems": 2,
+        "description": "OPTIONAL. A SECOND real misconception, where one exists and is worth teaching. Not one per option -- most questions have none, and an empty list is the normal answer. Use this instead of describing a second device in `note`: `note` is for remarks about the record, not for traps.",
+        "items": {
+         "type": "object",
+         "required": [
+          "label",
+          "option",
+          "route"
+         ],
+         "additionalProperties": false,
+         "properties": {
+          "label": {
+           "$ref": "#/$defs/trap_label"
+          },
+          "option": {
+           "type": "string",
+           "description": "must differ from trap.option and must not be the key"
+          },
+          "route": {
+           "type": "string",
+           "minLength": 20
+          }
+         }
+        }
+       },
+       "flags": {
+        "type": "array",
+        "maxItems": 3,
+        "description": "Why this card must be LEFT OUT of every count. A flagged card stays on the page -- the reader still sees the judgement -- but a pattern built on a misprinted stem, a disputed key or a deleted topic is a pattern about the fault, not about students.",
+        "items": {
+         "enum": [
+          "question_fault",
+          "disputed_key",
+          "out_of_syllabus",
+          "check_figure"
+         ]
+        }
+       },
+       "flag_why": {
+        "type": "string",
+        "description": "One line: what the flag is about."
+       }
+      }
+     }
     }
-  ]
+   }
+  },
+  {
+   "type": "object",
+   "required": [
+    "error"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "error": {
+     "type": "string"
+    }
+   }
+  }
+ ],
+ "$defs": {
+  "trap_label": {
+   "enum": [
+    "nearby_fact",
+    "condition_missed",
+    "reversed",
+    "half_right",
+    "arithmetic_slip",
+    "formula_misused",
+    "answers_other_question",
+    "no_trap",
+    "wrong_site_attacked",
+    "new_trap"
+   ]
+  }
+ }
 }

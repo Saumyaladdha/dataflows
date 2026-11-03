@@ -1,0 +1,219 @@
+{
+ "question_id": "Q-000207",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "flagged"
+  }
+ },
+ "exam": "NEET",
+ "year": 2022,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "Q1:175"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2022/code-Q1/neet_2022_code-Q1.pdf",
+ "trust": "unsure",
+ "stem_en": "Given below are two statements: Statement I : The release of sperms into the seminiferous tubules is called spermiation. Statement II : Spermiogenesis is the process of formation of sperms from spermatogonia. In the light of the above statements, choose the most appropriate answer from the options given below :",
+ "statements": [
+  {
+   "label": "I",
+   "text": "The release of sperms into the seminiferous tubules is called spermiation."
+  },
+  {
+   "label": "II",
+   "text": "Spermiogenesis is the process of formation of sperms from spermatogonia."
+  }
+ ],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "Both Statement I and Statement II are correct",
+  "2": "Both Statement I and Statement II are incorrect",
+  "3": "Statement I is correct but Statement II is incorrect",
+  "4": "Statement I is incorrect but Statement II is correct"
+ },
+ "structure": "statement_i_ii",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "175\nGiven below are two statements: Statement I : The release of sperms into the seminiferous tubules is\ncalled spermiation. Statement II : Spermiogenesis is the process of formation of sperms from\nspermatogonia. In the light of the above statements, choose the most appropriate answer from the\noptions given below :\n(1)\nBoth Statement I and Statement II are\ncorrect\n(2)\nBoth Statement I and Statement II are\nincorrect\n(3)\nStatement I is correct but Statement\nII is incorrect\n(4)\nStatement I is incorrect but Statement II\nis correct\nHuman Reproduction\n",
+ "b4_script_options": {
+  "1": "Both Statement I and Statement II are\ncorrect",
+  "2": "Both Statement I and Statement II are\nincorrect",
+  "3": "Statement I is correct but Statement\nII is incorrect",
+  "4": "Statement I is incorrect but Statement II\nis correct\nHuman Reproduction"
+ },
+ "official_answer": "3",
+ "answer_source": "inputs/keys/NEET_answers-key_2022-neet.pdf",
+ "status": "normal",
+ "subject": "Biology",
+ "branch": "zoology",
+ "b6_answer": "2",
+ "b6_reason": "Spermiation is the release of sperms FROM the seminiferous tubules, and spermiogenesis is spermatid-to-sperm transformation (not spermatogonia-to-sperm), so both statements are incorrect.",
+ "b6_working": "",
+ "b6_confidence": "medium",
+ "b6_note": "Statement II is clearly wrong (spermatogenesis, not spermiogenesis, starts from spermatogonia). Statement I is the ambiguous one: the standard textbook line says sperms are released 'from the seminiferous tubules', so 'into' is wrong, but some physiology sources define spermiation as release into the tubule lumen. If Statement I is read as correct the intended key would be option 3; flagging for human check.",
+ "b6_agrees_with_key": false,
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "option_order_by_code recorded for Q1: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "Q1": {
+   "1": "1",
+   "2": "1",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

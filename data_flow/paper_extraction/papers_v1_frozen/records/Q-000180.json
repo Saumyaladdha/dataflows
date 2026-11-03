@@ -1,0 +1,239 @@
+{
+ "question_id": "Q-000180",
+ "field_sources": {
+  "exam": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "year": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "sitting": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "paper_codes": {
+   "step": "C1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "source_file": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "trust": {
+   "step": "B1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "question_id": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "stem_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "statements": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_i": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "list_ii": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "options_en": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "structure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "has_figure": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "negative_words": {
+   "step": "B3",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b4_text_layer_sanitized": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "b4_script_options": {
+   "step": "B4",
+   "prompt_version": "v1",
+   "status": "flagged"
+  },
+  "official_answer": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "answer_source": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "status": {
+   "step": "B5",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "subject": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "branch": {
+   "step": "B7",
+   "prompt_version": "v2",
+   "status": "pass"
+  },
+  "b6_answer": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_reason": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_working": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_confidence": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_note": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "b6_agrees_with_key": {
+   "step": "B6",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "option_map": {
+   "step": "C1",
+   "prompt_version": "v1",
+   "status": "pass"
+  },
+  "merged_from": {
+   "step": "C1",
+   "prompt_version": "v1",
+   "status": "pass"
+  }
+ },
+ "exam": "NEET",
+ "year": 2023,
+ "sitting": "MAIN",
+ "paper_codes": [
+  "E1:37",
+  "E2:39"
+ ],
+ "source_file": "/Users/saumyaladdha/Downloads/Saumya_NEET_work/all_neet_sets_and_ans_key/2023/code-E1/neet_2023_code-E1.pdf",
+ "trust": "unsure",
+ "stem_en": "The net impedance of circuit (as shown in figure) will be: Circuit with $\\frac{50}{\\pi}\\,\\text{mH}$ inductor, $\\frac{10}{\\pi}\\,\\mu\\text{F}$ capacitor, $10\\,\\Omega$ resistor, connected to $220\\,\\text{V}$, $50\\,\\text{Hz}$ AC source.",
+ "statements": [],
+ "list_i": [],
+ "list_ii": [],
+ "options_en": {
+  "1": "$10\\sqrt{2}\\,\\Omega$",
+  "2": "$15\\,\\Omega$",
+  "3": "$5\\sqrt{5}\\,\\Omega$",
+  "4": "$25\\,\\Omega$"
+ },
+ "structure": "plain",
+ "has_figure": false,
+ "negative_words": [],
+ "b4_text_layer_sanitized": "37\nThe net impedance of circuit (as shown in figure) will be: Circuit with 50/π mH inductor, 10/π μF\ncapacitor, 10 Ω resistor, connected to 220 V, 50 Hz AC source.\n(1)\n10√2 Ω\n(2)\n15 Ω\n(3)\n5√5 Ω\n(4)\n25 Ω\n\n2\nL\nC 2\nX\n​ =\nL\nωL\nX\n​ =\nC\n​\nωC\n1\nX\n​ =\nL\n2π ⋅50 ⋅\n​ =\nπ\n50\n5000 mH = 5 Ω\nX\n​ =\nC\n​ =\n2π⋅50⋅\n​⋅10\nπ\n10\n−6\n1\n318.31 Ω\nZ =\n​ =\n10 + (5 −318.31)\n2\n2\n​ =\n100 + 313.312\n​ =\n100 + 98164.16\n​ ≈\n98264.16\n5\n​ Ω\n5\n",
+ "b4_script_options": {
+  "1": "10√2 Ω",
+  "2": "15 Ω",
+  "3": "5√5 Ω",
+  "4": "25 Ω\n\n2\nL\nC 2\nX\n​ =\nL\nωL\nX\n​ =\nC\n​\nωC\n1\nX\n​ =\nL\n2π ⋅50 ⋅\n​ =\nπ\n50\n5000 mH = 5 Ω\nX\n​ =\nC\n​ =\n2π⋅50⋅\n​⋅10\nπ\n10\n−6\n1\n318.31 Ω\nZ =\n​ =\n10 + (5 −318.31)\n2\n2\n​ =\n100 + 313.312\n​ =\n100 + 98164.16\n​ ≈\n98264.16\n5\n​ Ω\n5"
+ },
+ "official_answer": "3",
+ "answer_source": "inputs/keys/NEET_answers-key_2023-neet.pdf",
+ "status": "normal",
+ "subject": "Physics",
+ "branch": null,
+ "b6_answer": "3",
+ "b6_reason": "X_L = 2*pi*50*(50/pi)e-3 = 5 Ohm (clean). Treating R in series with the parallel L-C combination (C's reactance works out to 1000 Ohm, so it carries negligible current and barely loads the L branch), net impedance reduces to about sqrt(R^2+X_L^2) = sqrt(10^2+5^2) = 5*sqrt(5) Ohm, matching option 3 almost exactly.",
+ "b6_working": "X_L = wL = 2*pi*50*(50/pi)*1e-3 = 5 Ohm. X_C = 1/(wC) = 1/(2*pi*50*(10/pi)*1e-6) = 1000 Ohm (literal value, very large). A plain series R-L-C gives Z = sqrt(R^2+(X_L-X_C)^2) ~= 995 Ohm, which is not among the options, so the figure's topology is not a simple series string of all three. Assuming L and C are in parallel with each other and that pair is in series with R (a common layout for this style of figure), the LC-parallel impedance is j*X_L*X_C/(X_C-X_L) = j*5000/995 ~= j5.03, giving |Z| = sqrt(10^2+5.03^2) ~= 11.19 Ohm, essentially 5*sqrt(5) = 11.18 Ohm.",
+ "b6_confidence": "medium",
+ "b6_note": "Stem text has no wiring diagram, only component values, so the exact topology is inferred. A literal full series R-L-C gives ~995 Ohm, impossible against these options, so I assumed L parallel C in series with R (C's reactance is so large it barely draws current), which lands almost exactly on option 3. If the real figure wires R, L, C differently, this pick could be wrong -- flagging for the topology to be confirmed against the image.",
+ "b6_agrees_with_key": true,
+ "option_map": {
+  "Q-000537": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ },
+ "merged_from": [
+  "Q-000537"
+ ],
+ "repairs": [
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "merge_reset",
+   "notes": [
+    "every change made by a previous run of this script was reverted before re-running it: the first merge keyed Assertion-Reason questions on their boilerplate stem and their four standard options alone, which are identical across every such question in the paper, and so merged unrelated questions together. paper_codes was restored to the single code this record's source_file names; every other code on it had been added by that merge"
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "by": "scripts/merge_paper_codes.py",
+   "kind": "cross_code_merge",
+   "notes": [
+    "paper_codes now lists every code this question was printed in (E1, E2); each code's own option order is recorded in option_order_by_code",
+    "option_order_by_code recorded for E1, E2: each code's printed option numbers mapped onto this row's order, so one official answer can be checked against every code's key"
+   ]
+  }
+ ],
+ "option_order_by_code": {
+  "E1": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  },
+  "E2": {
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4"
+  }
+ }
+}

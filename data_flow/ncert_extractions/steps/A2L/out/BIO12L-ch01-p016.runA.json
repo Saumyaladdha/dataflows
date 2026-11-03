@@ -1,0 +1,78 @@
+{
+  "page_kind": "body_page",
+  "page": {
+    "page_kind": "body_page",
+    "width_px": 1654,
+    "height_px": 2339,
+    "body_text_size_px": 21.0,
+    "text_block": [0.286, 0.1022, 0.893, 0.8414],
+    "fill": 0.99,
+    "columns": [
+      {"id": "full", "x0": 0.286, "x1": 0.893}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.2013, 0.0, 0.9571, 0.0359],
+     "column": "full", "size_rel": 1.0, "indent": 0.0, "space_before": 0.0,
+     "fill": "#4a7435"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.0, 0.0, 0.2056, 0.0906],
+     "column": "full", "size_rel": 1.0, "indent": 0.0, "space_before": 0.0,
+     "fill": "#725420"},
+
+    {"n": null, "role": "running_header", "bbox": [0.8331, 0.071, 0.8924, 0.0782],
+     "column": "full", "size_rel": 0.81, "size_pt": 8.5, "align": "right",
+     "indent": 0.0, "space_before": 0.0351,
+     "font": "sans", "face": "sans", "text_color": "#6f6f6f", "fill": null},
+
+    {"n": 1, "role": "section_heading", "bbox": [0.2902, 0.1022, 0.558, 0.1137],
+     "column": "full", "size_rel": 1.29, "size_pt": 13.9, "align": "left",
+     "indent": 0.0, "space_before": 0.0239,
+     "font": "serif-bold", "face": "serif-bold", "text_color": "#0bae4b", "fill": null},
+
+    {"n": 2, "role": "paragraph", "bbox": [0.286, 0.13, 0.893, 0.3254],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "indent": 0.0, "space_before": 0.0162,
+     "font": "serif", "face": "serif", "text_color": "#212121", "fill": null},
+
+    {"n": 3, "role": "figure", "bbox": [0.1282, 0.3463, 0.8906, 0.6174],
+     "column": "full", "size_rel": 1.0, "align": "center",
+     "indent": 0.0, "space_before": 0.0214, "fill": null},
+
+    {"n": 4, "role": "figure_caption", "bbox": [0.0949, 0.6379, 0.8924, 0.6708],
+     "column": "full", "size_rel": 0.9, "size_pt": 9.8, "align": "justify",
+     "indent": 0.0, "space_before": 0.021,
+     "font": "serif", "face": "serif", "text_color": "#29211d", "fill": "#fdf1e1"},
+
+    {"n": 5, "role": "section_heading", "bbox": [0.2902, 0.6999, 0.8114, 0.7114],
+     "column": "full", "size_rel": 1.29, "size_pt": 13.9, "align": "left",
+     "indent": 0.0, "space_before": 0.0295,
+     "font": "serif-bold", "face": "serif-bold", "text_color": "#0bae4b", "fill": null},
+
+    {"n": null, "role": "page_number", "bbox": [0.0, 0.7268, 0.156, 0.7726],
+     "column": "full", "size_rel": 1.38, "size_pt": 14.5, "align": "right",
+     "indent": 0.0, "space_before": 0.0564,
+     "font": "sans", "face": "sans", "text_color": "#ffffff", "fill": "#f8931f"},
+
+    {"n": 6, "role": "paragraph", "bbox": [0.2872, 0.7268, 0.8906, 0.7726],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "indent": 0.0, "space_before": 0.0158,
+     "font": "serif", "face": "serif", "text_color": "#212121", "fill": null},
+
+    {"n": 7, "role": "section_heading", "bbox": [0.2896, 0.7905, 0.4643, 0.8038],
+     "column": "full", "size_rel": 1.14, "size_pt": 12.3, "align": "left",
+     "indent": 0.0, "space_before": 0.0184,
+     "font": "serif-bold", "face": "serif-bold", "text_color": "#6e6d72", "fill": null},
+
+    {"n": 8, "role": "paragraph", "bbox": [0.2872, 0.8324, 0.8906, 0.8448],
+     "column": "full", "size_rel": 1.0, "align": "justify",
+     "indent": 0.0, "space_before": 0.0291,
+     "font": "serif", "face": "serif", "text_color": "#212121", "fill": null},
+
+    {"n": null, "role": "running_header", "bbox": [0.4311, 0.9008, 0.5266, 0.9102],
+     "column": "full", "size_rel": 0.76, "size_pt": 8.0, "align": "center",
+     "indent": 0.0, "space_before": 0.0564,
+     "font": "sans", "face": "sans", "text_color": "#101010", "fill": null}
+  ],
+  "note": "Ordinary verso body page of a PURE A4 SCAN (no text layer); every number here is measured off the image with PIL/numpy. Image 1654x2339 px, PNG dpi tag 200 (A4 595.32x841.92pt). SINGLE COLUMN: the body measure runs x 473-1477 px = 0.2860-0.8930 (361pt wide), so every element is column 'full'. FOUR elements deliberately BLEED LEFT of that measure into the 0.000-0.286 margin and their bboxes record the true extent: the top-left decorative device (0.000-0.2056), the figure artwork (starts 0.1282), the figure caption band (starts 0.0949) and the folio tab (starts 0.000, bleeds off the sheet edge). Those are bleeds, not indents, so indent is 0.0 on them; no element on this page is inset from the column, and no paragraph takes a first-line indent (line 1 of each paragraph is flush with the rest). body_text_size_px = 21.0, measured cap-to-baseline on the 'A' of 'After' (body line 1, y 304-325) and confirmed on the 'F' of 'Following' in block 6 (y 1701-1722). FIGURE AND CAPTION MEASURED SEPARATELY AND NEVER MERGED WITH PROSE: block 3 artwork is y 810-1443 px (0.3463-0.6174) x 212-1472 px, which includes the callout labels, leader lines and the '(a)'/'(b)' part labels on its last row (y 1419-1442); block 4 caption sits on its own cream tinted band, y 1492-1568 px (0.6379-0.6708) x 157-1475 px, a 49px (0.021 of page) clear gap below the artwork. The caption's reported bbox is the TINT BAND, which is slightly larger than its type (text y 1501-1557, x 166-1461); the caption sets a hanging indent, line 1 starting at x 0.1004 and line 2 at x 0.2074. BOTH HEADING INKS MEASURED, NOT ASSUMED: MAIN section headings 1.3 and 1.4 are serif-bold small caps in GREEN #0bae4b (modal stroke colour over 3558 and 6568 green pixels respectively), size_rel 1.29; the SUBSECTION heading 1.4.1 is serif-bold in GREY #6e6d72 (modal over 2298 pixels), size_rel 1.14 - a visibly smaller and differently-coloured rank, not a second main heading. Body prose ink is #212121. Fills sampled from flat interiors well away from edges and glyphs: header band #4a7435 (67100 px at that exact value), caption band #fdf1e1 (23850 px), folio tab and its rule #f8931f (16067 px), decorative block #725420 (21422 px). PAGE FURNITURE A2 never blocked, all n:null - the green header band (0.2013-0.9571 wide, y 0-0.0359, flush to the top edge, no text of its own), the top-left brown/orange/leaf device (brown block x 0-0.0949 with an orange riser x 0.0949-0.1112 running to y 0.0671, plus the green leaf and human-figure glyph out to x 0.2056), the grey sans running head 'BIOLOGY' set right, the orange folio tab carrying a white '18' (tab block y 0.7268-0.7645 plus a detached thin orange rule y 0.7674-0.7726; both reported as ONE page_number element, and the rule is part of the folio furniture, not a footer_rule at the page foot), and the centred sans 'Reprint 2026-27' line at the foot. That last line is a running FOOT; the allowed role list has no running_footer, so it is reported as running_header - treat it as a foot line, not a head. Its centre is x 792 px (0.479), slightly left of the page centre (827 px) and nowhere near the body-measure centre, so 'center' describes its look rather than a measured centring axis. NO footer_rule and no rule_bar are printed on this page. space_before convention: gap from the bottom of the previous element IN THE SAME BODY FLOW, as a fraction of page height; margin furniture is skipped when computing it, so paragraph 6's 0.0158 is measured from heading 1.4 and not from the folio tab that shares its top edge. For the furniture itself: the running head's 0.0351 is measured from the bottom of the green band directly above it, and the folio tab's 0.0564 from the bottom of the caption band, the nearest thing above it. The two elements at y 0.0 overlap vertically and get 0.0. text_block is the rectangle the body type occupies: x = the body measure, top = 0.1022 (top of the first printed line, heading 1.3), bottom = 0.8414 (baseline of the last printed line; its descenders reach 0.8448). It deliberately EXCLUDES the running head, the foot line and the leftward bleeds. In points at 200 dpi that is 170.2pt to 531.6pt across and 86pt to 708.5pt down. page.fill 0.99: the page is set FULL, not short - content runs the entire depth of the type area and the only slack is the 0.057-of-page (48pt, about 2.3 body lines) foot margin between the last body line and the Reprint line, which is this book's normal bottom margin. A renderer must not treat this page as having spare depth. size_pt values are DERIVED, not directly read: cap-to-baseline px / 0.70 for the serif faces and / 0.72 for the sans faces to recover an em, then / 2.778 px-per-pt at the known 200 dpi. They are consistent with NCERT's setting (body about 10.8pt, main heading 13.9pt, subsection 12.3pt, caption 9.8pt) but size_rel is the measured and trusted number. The output carries both 'font' (the brief's schema key, values from its allowed list) and 'face' (the key the runner asked for) with identical values on every element that has type; both are OMITTED on the two elements that carry no type of their own (page_header_band, decorative_image), as are align and text_color, per the step's omit-rather-than-guess rule. All eight A2 blocks matched to a position with confidence; no n is a guess and none was left null. A diagonal grey '(c) NCERT / not to be republished' watermark covers the sheet at luminance about 228; every bbox here was taken at a threshold of 215 so the watermark is excluded from all measurements."
+}

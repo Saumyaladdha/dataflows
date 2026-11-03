@@ -141,6 +141,25 @@ def main():
     # It was a separate command (`render_exact.py`), so a chapter built here came out without
     # it -- or with a stale copy from before its last rebuild. It reads only chapter.json, so it
     # runs after every build, from the same tree the reflowed page and the rows came from.
+    # ---- 7a the figures WE draw ----------------------------------------------------------
+    # A chapter whose figures have FIGP specs draws them from the spec and hangs the SVG on the
+    # node as `image_drawn`; `render_exact.fig_src` prefers it over the CDN url and the crop.
+    # This runs INSIDE the build because the build rewrites chapter.json -- run by hand
+    # afterwards, the redraw survived exactly until the next rebuild silently dropped it.
+    try:
+        import join_drawn_figures
+        n_drawn = join_drawn_figures.join(cid)
+        if n_drawn:
+            with open(os.path.join(cdir, "chapter.json"), encoding="utf-8") as _fh:
+                doc = json.load(_fh)
+            # chapter.md was written inside `write_chapter`, BEFORE the redraw existed, so it
+            # still linked the crop. Re-written from the updated tree, both deliverables point
+            # at the same drawing.
+            with open(os.path.join(cdir, "chapter.md"), "w", encoding="utf-8") as _fh:
+                _fh.write(bcj.to_markdown(doc))
+            print(f"  drawn     {n_drawn} figure(s) redrawn from a FIGP spec")
+    except Exception as e:                                    # noqa: BLE001
+        print(f"  drawn     FAILED ({type(e).__name__}: {e})")
     try:
         import render_exact
         exact_path = render_exact.write(doc, cdir)

@@ -494,7 +494,8 @@ def is_imprint(text):
     return bool(_IMPRINT_RE.match((text or "").strip()))
 
 
-def classify(text, runs, bbox, page_w, page_h, body_size):
+def classify(text, runs, bbox, page_w, page_h, body_size,
+             foot_y_pt=None, head_y_pt=None):
     """What the element IS on the printed page."""
     size = max((r["size"] for r in runs), default=0)
     x0f, y0f = bbox[0] / page_w, bbox[1] / page_h
@@ -522,7 +523,17 @@ def classify(text, runs, bbox, page_w, page_h, body_size):
     # by` opens BIO12L ch04 p005 at y 0.108 -- the Class 12 sheet's head sits higher -- and was
     # filed as the head, so the table had no caption to grow from and vanished from all three
     # deliverables, its rows with it.
-    if (y0f < 0.11 or y0f > 0.92) and len(text) < 60 and not _TABLE_RE.match(text) \
+    # THE FOOT BAND IS WHERE THE BOOK'S TEXT BLOCK ENDS, not a fixed fraction of the sheet.
+    #
+    # `y0f > 0.92` is the Biology foot (its block ends at 729 of 784 = 0.930). Class 12 Physics
+    # sets its block to 739.7 of 777.6 = 0.951, so the last two lines of every page fell inside
+    # the "foot" band: fragments of a displayed equation printed there were typed
+    # `running_header`, `split_head_line` read a folio out of one, and PHY12L ch01 p011 and p023
+    # took the `1` of 1/4pe0 and the `4` of 4pe0 as their page numbers instead of the 11 and 23
+    # the book prints. Two pages then claimed to be page 4 and one sheet was built from both.
+    foot_f = (foot_y_pt / page_h) if foot_y_pt else 0.92
+    head_f = (head_y_pt / page_h) if head_y_pt else 0.11
+    if (y0f < head_f or y0f > foot_f) and len(text) < 60 and not _TABLE_RE.match(text) \
             and not re.match(r"(?i)^fig(ure|\.)\s*\d+\.\d+", text.strip()):
         if size <= body_size * 1.2:
             return "running_header"
@@ -555,7 +566,7 @@ def classify(text, runs, bbox, page_w, page_h, body_size):
     # categories to which some common organisms belong.` is running prose, and typing it as a
     # caption turned a paragraph into a figure node with no picture. A caption is short and is
     # not a sentence -- it does not end in a full stop and does not run past a line or two.
-    m_cap = re.match(r"^(Figure|Fig\.|TABLE|Table)\s*\d+\.\d+(.*)$", text, re.S)
+    m_cap = re.match(r"^(FIGURE|Figure|Fig\.|TABLE|Table)\s*\d+\.\d+(.*)$", text, re.S)
     if m_cap:
         tail = m_cap.group(2).strip()
         # Long is not prose: Figure 3.1's caption lists every alga it shows (BIO11L ch03 p025,
@@ -567,7 +578,7 @@ def classify(text, runs, bbox, page_w, page_h, body_size):
         # ...unless it is SET as a caption: its label a bold run of its own, the text below body
         # size. Figure 1.8's caption (BIO12L ch01 p010) is 197 characters ending in a full stop,
         # `Figure 1.8` in Bookman-Demi at 9.5pt over 10.5pt prose, and was typed a paragraph.
-        label = re.match(r"^(Figure|Fig\.|TABLE|Table)\s*\d+\.\d+", text).group(0)
+        label = re.match(r"^(FIGURE|Figure|Fig\.|TABLE|Table)\s*\d+\.\d+", text).group(0)
         set_as_caption = (runs and runs[0].get("b") and runs[0]["t"].strip().startswith(label)
                           and size < body_size * 0.97)
         if set_as_caption or not looks_like_prose:
@@ -1291,7 +1302,12 @@ def _drop_overprint(blocks, tol=1.0):
     return out
 
 
-_CAPTION_START = re.compile(r"^\s*(?:Figure|Fig\.|TABLE|Table)\s*\d")
+# NCERT CLASS 12 PHYSICS SETS ITS CAPTION LABEL IN CAPS -- `FIGURE 1.2 Electroscopes:`
+# -- where Biology and Class 11 Physics print `Figure 1.2` / `Fig. 1.1`. Spelling only the
+# mixed-case forms meant not one of PHY12L ch01's 35 cut figures was recognised as having
+# a caption: the chapter held ONE figure node and the captions stayed in the tree as
+# ordinary paragraphs, cutting the prose they were left inside.
+_CAPTION_START = re.compile(r"^\s*(?:FIGURE|Figure|Fig\.|TABLE|Table)\s*\d")
 
 
 def _join_caption_lines(elements, gap_pt=4.0):
@@ -1616,7 +1632,7 @@ def _prepare_text_blocks(blocks):
         while lead < len(rows) and _LABEL_ROW.match(texts[lead] or "x"):
             lead += 1
         rest = [l for r in rows[lead:] for l in r]
-        if lead and (lead == len(rows) or re.match(r"^\s*(Figure|Fig\.)\s*\d", texts[lead])):
+        if lead and (lead == len(rows) or re.match(r"^\s*(FIGURE|Figure|Fig\.)\s*\d", texts[lead])):
             for r in rows[:lead]:
                 for ln in r:
                     out.append({**b, "lines": [ln], "bbox": tuple(ln["bbox"])})
@@ -1736,7 +1752,9 @@ def extract(book_id, chapter_num):
                              if ("".join(c["c"] for c in sp.get("chars") or ())
                                  or sp.get("text", "")).strip()],
                   "runs": runs, "text": text}
-            el["role"] = classify(text, runs, b["bbox"], pw, ph, body_size)
+            el["role"] = classify(text, runs, b["bbox"], pw, ph, body_size,
+                                  foot_y_pt=getattr(design, "text_foot_pt", None),
+                                  head_y_pt=getattr(design, "text_top_pt", None))
             if b.get("_exercise") and el["role"] == "section_heading":
                 el["role"] = "paragraph"           # an exercise `C.k`, not a heading
                 el["exercise_number"] = text.split()[0]
@@ -1863,7 +1881,7 @@ def extract(book_id, chapter_num):
         # that caption. Everything else waits for A2L, whose whole job is to say what a reader
         # sees as a figure -- a judgement, not an inference from path geometry.
         _caps = [e for e in elements if e["role"] == "figure_caption"
-                 and re.match(r"^\s*(Figure|Fig\.)", e.get("text") or "")]
+                 and re.match(r"^\s*(FIGURE|Figure|Fig\.)", e.get("text") or "")]
         _unclaimed = max(0, len(_caps) - len(_img))
         if _unclaimed <= 0:
             _vec = []
@@ -2043,12 +2061,33 @@ def extract(book_id, chapter_num):
             elements = contents_out
 
         if printed_folio is None:
-            for el in elements:
-                if el["role"] == "page_number" and el["text"].strip().isdigit():
-                    printed_folio = int(el["text"].strip())
-                    x_mid = (el["bbox_pt"][0] + el["bbox_pt"][2]) / 2.0
-                    folio_at = "start" if x_mid < pw / 2 else "end"
-                    break
+            cands = [el for el in elements
+                     if el["role"] == "page_number" and el["text"].strip().isdigit()]
+            # THE FOLIO IS THE DIGITS WHERE THE BOOK PRINTS THE FOLIO. `page_number` is given
+            # to any 1-3 digit element in the outer fifth of the sheet, and the FIRST in reading
+            # order was taken -- which on a page whose foot carries a displayed equation is the
+            # wrong one. The design measured where the folio is printed; a candidate inside that
+            # box wins. Only used to CHOOSE, so a page offering one candidate is unaffected.
+            fol = getattr(design, "folio", None) if design is not None else None
+            if fol and len(cands) > 1 and fol.get("y0_pt") is not None:
+                fy0, fh = fol["y0_pt"], (fol.get("h_pt") or 20.0)
+                fw = fol.get("w_pt") or 40.0
+                fxs = [fol.get("x_recto_pt"), fol.get("x_verso_pt")]
+
+                def _in_folio_box(el):
+                    b = el["bbox_pt"]
+                    if not (fy0 - 10.0 <= b[1] <= fy0 + fh + 10.0):
+                        return False
+                    return any(x is not None and x - 14.0 <= b[0] <= x + fw + 14.0 for x in fxs)
+
+                boxed = [el for el in cands if _in_folio_box(el)]
+                if boxed:
+                    cands = boxed
+            for el in cands:
+                printed_folio = int(el["text"].strip())
+                x_mid = (el["bbox_pt"][0] + el["bbox_pt"][2]) / 2.0
+                folio_at = "start" if x_mid < pw / 2 else "end"
+                break
 
         side = ("verso" if folio_at == "start" else "recto") if folio_at else \
             design_lib.page_side(printed_folio, pi + 1)

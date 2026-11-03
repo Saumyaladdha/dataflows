@@ -1,0 +1,51 @@
+{
+  "spec": {
+    "title": "(a) plane angle dθ at O subtending arc ds on radius r; (b) solid angle dΩ at O subtending area dA on radius r",
+    "width": 375,
+    "height": 442,
+    "draw": [
+      {"kind": "line", "from": [36, 302], "to": [305, 302]},
+      {"kind": "line", "from": [36, 302], "to": [274, 432]},
+      {"kind": "curve", "points": [[274, 431], [282, 429], [290, 425], [296, 421], [302, 415], [308, 408], [313, 398], [318, 385], [322, 367], [324, 353], [322, 339], [319, 324], [316, 318], [312, 311], [308, 306], [305, 302]]},
+      {"kind": "angle", "vertex": [36, 302], "r": 38, "from_deg": 0, "to_deg": 28.6},
+      {"kind": "label", "text": "O", "at": [20, 301], "size": 20},
+      {"kind": "label", "text": "r", "italic": true, "at": [142, 382], "size": 19},
+      {"kind": "label", "text": "ds", "italic": true, "at": [346, 380], "size": 19},
+      {"kind": "label", "text": "dθ", "italic": true, "at": [93, 314], "size": 19},
+      {"kind": "label", "text": "dθ", "italic": true, "at": [104, 280], "size": 19},
+      {"kind": "label", "text": "=", "at": [130, 278], "size": 19},
+      {"kind": "label", "text": "ds", "italic": true, "at": [156, 280], "size": 19},
+      {"kind": "label", "text": "/", "at": [174, 278], "size": 19},
+      {"kind": "label", "text": "r", "italic": true, "at": [187, 278], "size": 19},
+      {"kind": "label", "text": "radian", "at": [233, 280], "size": 19},
+      {"kind": "label", "text": "(a)", "at": [174, 251], "size": 25},
+
+      {"kind": "line", "from": [34, 158], "to": [295, 269]},
+      {"kind": "line", "from": [34, 158], "to": [309, 63]},
+      {"kind": "line", "from": [34, 158], "to": [296, 158]},
+      {"kind": "line", "from": [34, 158], "to": [362, 135], "dashed": true},
+      {"kind": "curve", "points": [[295, 269], [299, 255], [302, 245], [305, 232], [307, 214], [306, 197], [303, 184], [300, 172], [297, 162], [296, 159], [300, 150], [303, 141], [305, 134], [307, 125], [309, 110], [311, 92], [312, 74], [310, 63]]},
+      {"kind": "curve", "points": [[295, 269], [301, 262], [307, 255], [313, 247], [319, 239], [325, 230], [331, 222], [337, 212], [343, 199], [348, 187], [352, 175], [356, 163], [359, 152], [362, 138], [363, 135], [362, 132], [359, 126], [355, 119], [350, 110], [345, 102], [340, 96], [334, 88], [328, 81], [322, 75], [316, 70], [310, 63]]},
+      {"kind": "polygon", "points": [[116, 191], [132, 157], [110, 132], [98, 154]]},
+      {"kind": "label", "text": "O", "at": [19, 159], "size": 20},
+      {"kind": "label", "text": "r", "italic": true, "at": [118, 211], "size": 19},
+      {"kind": "label", "text": "dΩ", "italic": true, "at": [144, 180], "size": 19},
+      {"kind": "label", "text": "dA", "italic": true, "at": [328, 185], "size": 19},
+      {"kind": "label", "text": "dΩ", "italic": true, "at": [76, 49], "size": 19},
+      {"kind": "label", "text": "=", "at": [106, 47], "size": 19},
+      {"kind": "label", "text": "dA", "italic": true, "at": [132, 49], "size": 19},
+      {"kind": "label", "text": "/", "at": [154, 48], "size": 19},
+      {"kind": "label", "text": "r", "sup": "2", "italic": true, "at": [166, 47], "size": 19},
+      {"kind": "label", "text": "steradian", "at": [232, 49], "size": 19},
+      {"kind": "label", "text": "(b)", "at": [177, 19], "size": 25}
+    ],
+    "angles_claimed": [
+      {"degrees": 28.6, "vertex": [36, 302], "ray_to": [274, 432], "measured_from": [305, 302]}
+    ],
+    "netlist": []
+  },
+  "out_of_scope": false,
+  "unreadable": [],
+  "excluded_text": [],
+  "note": "The page is a scan, so printed_text carried only \"(a) (b)\"; every other label (O, r, ds, dθ, dA, dΩ and both equation lines) was read off the pixels and drawn. Coordinates were traced from the scan at its own pixel scale (375 x 442, y flipped to point upward), so the two parts keep their printed proportions and placement: (a) the plane-angle wedge on top with its arc bulging right, (b) the solid-angle cone below with the small rhombus at the vertex marking dΩ, the solid near generator from O, the dashed axis running to the far edge of the patch, and the two arcs bounding dA. Each equation line is drawn as its separate symbols so that the roman and italic faces match the print (d upright, θ/s/Ω/A/r italic; \"radian\" and \"steradian\" roman). The angle at O in (a) is labelled dθ with no numeric value printed; the claimed 28.6° is the angle my own coordinates make, recorded so the arc mark can be checked, not a value the book states."
+}

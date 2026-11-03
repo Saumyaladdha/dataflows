@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FL-000122 · S0_MISSING_INPUT</title>
+<style>
+:root { --fg:#14171a; --bg:#fff; --muted:#5b6670; --line:#d8dee3; --hi:#fff3bf;
+        --hi-line:#e0b400; --blocker:#b3261e; --high:#c75300; --normal:#2b6cb0; --low:#5b6670; }
+* { box-sizing:border-box; }
+body { margin:0; font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       color:var(--fg); background:var(--bg); }
+.wrap { max-width:62rem; margin:0 auto; padding:1.5rem 1.25rem 4rem; }
+h1 { font-size:1.4rem; margin:0 0 .25rem; }
+h2 { font-size:1.05rem; margin:2rem 0 .5rem; border-bottom:1px solid var(--line);
+     padding-bottom:.3rem; }
+a { color:#1a5fb4; }
+.meta { color:var(--muted); font-size:.85rem; margin-bottom:1.25rem; }
+.badge { display:inline-block; padding:.1rem .45rem; border-radius:.5rem; font-size:.75rem;
+         font-weight:600; color:#fff; vertical-align:.08em; }
+.badge.blocker{background:var(--blocker)} .badge.high{background:var(--high)}
+.badge.normal{background:var(--normal)} .badge.low{background:var(--low)}
+.card { border:1px solid var(--line); border-radius:.5rem; padding:.9rem 1rem; margin:0 0 1rem; }
+.card h3 { margin:0 0 .5rem; font-size:1rem; }
+.value { background:var(--hi); border:1px solid var(--hi-line); border-radius:.4rem;
+         padding:.7rem .85rem; }
+pre { margin:0; white-space:pre-wrap; word-break:break-word; font:13px/1.5 ui-monospace,
+      SFMono-Regular,Menlo,monospace; }
+table { border-collapse:collapse; width:100%; font-size:.86rem; }
+th,td { border:1px solid var(--line); padding:.35rem .5rem; text-align:left;
+        vertical-align:top; }
+th { background:#f4f6f8; }
+.scroll { overflow-x:auto; }
+label { display:block; font-weight:600; font-size:.85rem; margin:.7rem 0 .2rem; }
+select,input[type=text],textarea { width:100%; font:inherit; padding:.4rem .5rem;
+  border:1px solid var(--line); border-radius:.35rem; background:#fff; color:var(--fg); }
+textarea { font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace; }
+button { font:inherit; font-weight:600; padding:.45rem .9rem; border:1px solid var(--line);
+         border-radius:.35rem; background:#f4f6f8; color:var(--fg); cursor:pointer; }
+.row { display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; margin-top:.7rem; }
+.hint { color:var(--muted); font-size:.82rem; }
+.nav { display:flex; justify-content:space-between; gap:1rem; margin-bottom:1rem;
+       font-size:.86rem; }
+.hidden-note { border-left:3px solid var(--hi-line); background:#fffbe6; padding:.6rem .8rem;
+               font-size:.88rem; }
+</style></head><body><div class="wrap">
+<div class='nav'><div><a href="p1___no_chapter__FL-000121__d00cfa4b.html">&larr; previous</a></div><div><a href='index.html'>index</a></div><div><a href="p1___no_chapter__FL-000123__d8f2d0b9.html">next &rarr;</a></div></div>
+<h1>S0_MISSING_INPUT <span class="badge blocker">blocker</span></h1>
+<p class="meta">
+  priority 1 · blocker ·
+  step S0 ·
+  item <code>paper-2016-MAIN</code> ·
+  chapter (none) ·
+  FL-000122 ·
+  reviewer: faculty of that subject (spec 14/F2) ·
+  pack run 2026-10-12T15:23:27+05:30
+</p>
+
+<h2>What is being asked</h2>
+<div class="card"><p>4 paper file(s) exist for 2016 but which sitting each belongs to (MAIN/PH2) could not be confirmed from the filename alone: inputs/papers/neet_2016_code-A_P_W.pdf, inputs/papers/neet_2016_code-B_Q_X.pdf, inputs/papers/neet_2016_code-C_R_Y.pdf, inputs/papers/neet_2016_code-D_S_Z.pdf</p></div>
+
+<h2>The value in question · field <code>paper_register</code></h2>
+<div class="value"><pre>(no provisional value — nothing to approve as-is; this item needs a corrected value or a block)</pre></div>
+
+<h2>What editing this re-runs</h2>
+<div class="card"><p>cascade key `paper_register` → paper: B5, B6, B7, B8, C1, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, E1, E2, E3, E4, E5, E6, F4</p>
+<p class="hint">From <code>config/cascade.yaml</code> (spec Section 15). Exact pairs:
+<code>python3 scripts/cascade.py --field paper_register --item paper-2016-MAIN --plan</code></p></div>
+
+<h2>Evidence</h2>
+<p class='hint'>The flag itself recorded no evidence paths; these are this step's own output files for the item, found by the pack.</p><div class='scroll'><table><tbody><tr><td><a href='../../steps/S0/out/paper-2016-MAIN.json'>steps/S0/out/paper-2016-MAIN.json</a><pre style='margin-top:.5rem'>{
+  &quot;item_type&quot;: &quot;paper&quot;,
+  &quot;subject&quot;: null,
+  &quot;class&quot;: null,
+  &quot;edition&quot;: null,
+  &quot;year&quot;: 2016,
+  &quot;sitting&quot;: &quot;MAIN&quot;,
+  &quot;booklet_code&quot;: null,
+  &quot;file&quot;: null,
+  &quot;in_scope&quot;: true,
+  &quot;status&quot;: &quot;missing&quot;,
+  &quot;note&quot;: &quot;4 paper file(s) exist for 2016 but which sitting each belongs to (MAIN/PH2) could not be confirmed from the filename alone: inputs/papers/neet_2016_code-A_P_W.pdf, inputs/papers/neet_2016_code-B_Q_X.pdf, inputs/papers/neet_2016_code-C_R_Y.pdf, inputs/papers/neet_2016_code-D_S_Z.pdf&quot;
+}</pre></td></tr></tbody></table></div>
+
+
+<h2>Legacy values</h2>
+<p class='hint'>No legacy values recorded for this item. (Spec 2.2: the legacy tags are not usable as truth — they are shown only as a cross-check when they exist.)</p>
+
+
+<h2>Decision</h2>
+<div class="card">
+  <p class="hint">This writes one row of <code>review/decisions.csv</code> (spec 6.5). Columns:
+  <code>flag_id_or_item, field, decision, corrected_value_json, reviewer, comment, decided_at</code>.</p>
+  <input type="hidden" id="f_target" value="FL-000122">
+  <input type="hidden" id="f_field" value="paper_register">
+  <label for="f_decision">decision</label>
+  <select id="f_decision"><option value='approve'>approve</option><option value='correct'>correct</option><option value='edit'>edit</option><option value='block'>block</option></select>
+  <label for="f_value">corrected_value_json <span class="hint">— leave as-is to approve the
+    value below; replace it with the corrected value (valid JSON) to correct or edit</span></label>
+  <textarea id="f_value" rows="4"></textarea>
+  <label for="f_reviewer">reviewer</label>
+  <input type="text" id="f_reviewer" placeholder="your name">
+  <label for="f_comment">comment</label>
+  <input type="text" id="f_comment" placeholder="why">
+  <label for="f_decided_at">decided_at</label>
+  <input type="text" id="f_decided_at">
+  <label for="f_row">the decisions.csv row this makes</label>
+  <textarea id="f_row" rows="3" readonly></textarea>
+  <div class="row">
+    <button type="button" onclick="saveDecision()">Save in this browser</button>
+    <button type="button" onclick="copyRow()">Copy row</button>
+    <span class="hint" id="f_saved"></span>
+  </div>
+  <p class="hint">The pack is plain files with no server behind it, so nothing here can write to
+  disk by itself. Save decisions here and collect them all from <a href="index.html">index.html</a>,
+  or copy a row and paste it straight into <code>review/decisions.csv</code>. Then run
+  <code>python3 scripts/apply_review.py --apply</code>.</p>
+</div>
+
+<script>
+const KEY = 'pyq_decisions_v1';
+function store() { try { return window.localStorage; } catch (e) { return null; } }
+function allDecisions() {
+  const s = store(); if (!s) return {};
+  try { return JSON.parse(s.getItem(KEY) || '{}'); } catch (e) { return {}; }
+}
+function csvField(v) {
+  v = (v === null || v === undefined) ? '' : String(v);
+  return /[",\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+}
+function buildRow() {
+  const g = id => (document.getElementById(id) || {}).value || '';
+  return [g('f_target'), g('f_field'), g('f_decision'), g('f_value'), g('f_reviewer'),
+          g('f_comment'), g('f_decided_at')].map(csvField).join(',');
+}
+function refresh() {
+  const out = document.getElementById('f_row');
+  if (out) out.value = buildRow();
+}
+function saveDecision() {
+  refresh();
+  const s = store();
+  if (s) {
+    const all = allDecisions();
+    all[document.getElementById('f_target').value] = buildRow();
+    try { s.setItem(KEY, JSON.stringify(all)); } catch (e) {}
+  }
+  const n = document.getElementById('f_saved');
+  if (n) n.textContent = s ? 'Saved in this browser. Collect every saved decision from index.html.'
+                           : 'This browser blocks local storage — use "Copy row" and paste into review/decisions.csv.';
+}
+function copyRow() {
+  refresh();
+  const t = document.getElementById('f_row');
+  t.select();
+  try { document.execCommand('copy'); } catch (e) {}
+  if (navigator.clipboard) { navigator.clipboard.writeText(t.value).catch(() => {}); }
+  const n = document.getElementById('f_saved');
+  if (n) n.textContent = 'Row copied. Paste it as a new line in review/decisions.csv.';
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const d = document.getElementById('f_decided_at');
+  if (d && !d.value) d.value = new Date().toISOString().slice(0, 10);
+  ['f_decision', 'f_value', 'f_reviewer', 'f_comment', 'f_decided_at'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', refresh);
+  });
+  refresh();
+});
+</script>
+</div></body></html>

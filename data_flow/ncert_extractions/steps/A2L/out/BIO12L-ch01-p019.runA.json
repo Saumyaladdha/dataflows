@@ -1,0 +1,57 @@
+{
+  "page": {
+    "width_px": 1654,
+    "height_px": 2339,
+    "page_kind": "body",
+    "body_text_size_px": 22.0,
+    "text_block": [0.051, 0.084, 0.849, 0.856],
+    "fill": 0.92,
+    "columns": [
+      {"id": "full", "x0": 0.052, "x1": 0.657}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "page_header_band", "bbox": [0.001, 0.000, 0.742, 0.049],
+     "column": "full", "size_rel": 1.0, "space_before": 0.000, "fill": "#4b7335"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.757, 0.000, 0.929, 0.103],
+     "column": "full", "size_rel": 1.0, "space_before": 0.000},
+
+    {"n": null, "role": "running_header", "bbox": [0.051, 0.084, 0.364, 0.091],
+     "column": "full", "size_rel": 0.73, "size_pt": 8.2, "align": "left", "indent": 0.0,
+     "space_before": 0.036, "text_color": "#6b6c6f", "font": "sans"},
+
+    {"n": 1, "role": "figure", "bbox": [0.102, 0.113, 0.849, 0.448],
+     "column": "full", "size_rel": 1.0, "indent": 0.050, "space_before": 0.022},
+
+    {"n": 2, "role": "figure", "bbox": [0.051, 0.479, 0.834, 0.678],
+     "column": "full", "size_rel": 1.0, "indent": 0.0, "space_before": 0.032},
+
+    {"n": 3, "role": "figure_caption", "bbox": [0.111, 0.690, 0.788, 0.709],
+     "column": "full", "size_rel": 0.87, "size_pt": 9.5, "align": "center", "indent": 0.059,
+     "space_before": 0.013, "fill": "#fef2e2", "text_color": "#211d1f", "font": "serif"},
+
+    {"n": 4, "role": "paragraph", "bbox": [0.052, 0.727, 0.657, 0.786],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.0,
+     "space_before": 0.018, "text_color": "#211d1f", "font": "serif"},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.052, 0.794, 0.657, 0.856],
+     "column": "full", "size_rel": 1.0, "align": "justify", "indent": 0.031,
+     "space_before": 0.008, "text_color": "#211d1f", "font": "serif"},
+
+    {"n": null, "role": "page_number", "bbox": [0.790, 0.740, 0.929, 0.777],
+     "column": "full", "size_rel": 1.27, "align": "left", "space_before": 0.637,
+     "fill": "#f7921c", "text_color": "#ffffff", "font": "sans"},
+
+    {"n": null, "role": "footer_rule", "bbox": [0.790, 0.779, 0.929, 0.785],
+     "column": "full", "size_rel": 1.0, "space_before": 0.003, "fill": "#f7921c"},
+
+    {"n": null, "role": "running_header", "bbox": [0.417, 0.926, 0.512, 0.935],
+     "column": "full", "size_rel": 0.77, "size_pt": 8.7, "align": "center",
+     "space_before": 0.071, "text_color": "#050505", "font": "serif"},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.178, 0.300, 0.826, 0.762],
+     "column": "full", "size_rel": 1.0, "space_before": 0.0}
+  ],
+  "note": "Ordinary BODY page (not a unit or chapter opener), recto. Pure scan, 1654x2339 px = A4 595.32x841.92pt at 200 dpi exactly; no text layer, so every number here is measured off the raster. SINGLE column. The running prose measure is narrow - every justified line runs x=86..1086 px (0.052..0.657) - while the page keeps a wide OUTER (right) margin that holds the folio and into which both halves of Figure 1.15 and the caption band deliberately overhang (figure (a) reaches x=0.849, the caption band x=0.788, the folio x=0.929). The `full` column is therefore reported as the PROSE measure 0.052..0.657; figures, the caption band and the folio are placed from their measured bbox, not from the column. page.text_block is the full content rectangle including that overhang. CAPTION / NEXT-PARAGRAPH SEPARATION (the known defect on this page): element n=3 is the figure caption and it is ONE single printed line that ENDS at the word 'strawberry'. It sits on a cream tint band #fef2e2 spanning x 184..1303 px, y 1615..1658 px, is centred, is inset 0.059 from the column left, and is set 0.87x body size. Element n=4 is a SEPARATE body paragraph: no tint behind it (bare paper), full body size 1.0, justified, flush to the column left at x=86 px, and its first ink row is y=1700 px - a clear 42 px (0.018 of page height) of blank paper below the bottom of the caption band at y=1658, and 58 px below the caption's last ink row at y=1648. Four distinct measured discriminators (fill, size, left edge, white gap) separate them; they are not one block and must never be merged. n=4 also has NO first-line indent (it continues from the previous page), whereas n=5 does. body_text_size_px = 22.0 = cap-to-baseline of the body prose ('S' of 'Seeds', y 1856..1877); body x-height 16 px, line pitch 39.3 px. Caption cap height 19 px ('S' of 'Structure') -> size_rel 0.87; its 'Figure 1.15' lead-in is serif-bold at cap 18 px while the rest is regular serif. indent on n=5 (0.031 = 51 px) is a FIRST-LINE indent only - lines 2-4 are flush at x=86; do not indent the whole block. Figure 1.15 prints as two stacked panels, (a) labelled at y 1024..1046 px and (b) at y 1561..1584 px; I matched A2's two untitled figure blocks to them by document order alone (n=1 = upper panel (a), n=2 = lower panel (b)) because both blocks have empty text_head and there is nothing else to match on. Panel (a) itself is two artwork rows (y 264..562 and y 625..1046) with a 62 px gutter; I report it as one element to match the one block. space_before is the gap above an element measured from the bottom of the previous element in reading order; for the two items that sit outside the text flow in the outer margin the gap is measured in their own lane instead - the folio's 0.637 is measured down from the bottom of the top-right ornament, which is the only thing above it in that lane. The last element is the reprint WATERMARK: the grey diagonal '(c) NCERT not to be republished' overlay running lower-left to upper-right across the middle of the sheet; it is page furniture carrying no subject content and a consumer should drop it. It is faint (grey ~#b4b4b4, low contrast), so its bbox is the extent of its solid strokes and the faintest stroke ends may lie a few px outside it - the only approximate box on this page. The thin orange bar under the folio is reported as footer_rule per the brief's y~0.78 definition even though it reads visually as part of the folio block; both sample #f7921c. 'Reprint 2026-27' at the page foot is reported with role running_header because the allowed role list has no footer-text value - it is the printed FOOT line, centred at x=0.464, not a header. page.fill 0.92 = content depth (y 0.084 top of running head to 0.856 last baseline) over the depth available between the header band and that foot line; the page is nearly full. align is omitted on both figures: the artwork is placed, not text-aligned (panel (a) centres on x=0.475, panel (b) on x=0.442), so reporting an alignment would be a guess. No fill reported for the two decorative_image elements: they are composites on bare paper (top-right ornament = brown #745421 block + orange #f6931d strip + green leaf and figure motif), not an element sitting on a single tinted panel. size_pt is given only on the caption and the two running lines and is DERIVED, not measured: cap_height_px / 200 dpi * 72 / 0.70 em, i.e. body prose works out to about 11.3 pt. size_rel is the measured, trusted number."
+}

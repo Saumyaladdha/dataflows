@@ -80,7 +80,18 @@ def _options_are_single_pairs(rec):
 
 
 _COMBO_RE = re.compile(r"\b(?:only|and)\b", re.IGNORECASE)
-_LETTER_LIST_RE = re.compile(r"\b[A-E]\b(?:\s*(?:,|and|&)\s*\b[A-E]\b)+")
+#: Combination options name several lettered items. TWO SPELLINGS, and the second cannot be had
+#: by lowercasing the first: NEET letters its statements `A`-`E` in some papers and `(a)`-`(d)` in
+#: others, and a bare lowercase `a` is the English article -- "and a metre scale" would match.
+#: The parenthesised form is unambiguous, so lowercase is accepted only inside brackets.
+#: Measured on 2017_A: every statements question (q098, q137, q152) prints `(a), (c) and (d)` and
+#: so matched nothing, fell through to rule 16's default and was typed `plain_mcq` instead of
+#: `list_of_statements`.
+_LETTER_LIST_RE = re.compile(
+    r"\b[A-E]\b(?:\s*(?:,|and|&)\s*\b[A-E]\b)+"
+    r"|\([A-Ea-e]\)(?:\s*(?:,|and|&)\s*\([A-Ea-e]\))+")
+#: A single lettered item, for the "Only (d)" / "Only B" options that sit beside the lists above.
+_LETTER_ONE_RE = re.compile(r"\([A-Ea-e]\)|\b[A-E]\b")
 
 
 def _options_are_combinations(rec):
@@ -89,7 +100,7 @@ def _options_are_combinations(rec):
     if not opts:
         return False
     hits = sum(1 for o in opts if _LETTER_LIST_RE.search(o) or
-               (_COMBO_RE.search(o) and re.search(r"\b[A-E]\b", o)))
+               (_COMBO_RE.search(o) and _LETTER_ONE_RE.search(o)))
     return hits >= max(2, len(opts) - 1)
 
 

@@ -4,7 +4,9 @@
       "n": 1,
       "kind": "paragraph",
       "text": "quantities can be added or subtracted which have the same dimensions.  A thorough understanding of dimensional analysis helps us in deducing certain relations among different physical quantities and checking the derivation, accuracy and dimensional consistency or homogeneity of various mathematical expressions.  When magnitudes of two or more physical quantities are multiplied, their units should be treated in the same manner as ordinary algebraic symbols. We can cancel identical units in the numerator and denominator.  The same is true for dimensions of a physical quantity.  Similarly, physical quantities represented by symbols on both sides of a mathematical equation must have the same dimensions.",
-      "continues_from_previous": true
+      "continues_from_previous": true,
+      "bold_terms": [],
+      "italic_terms": []
     },
     {
       "n": 2,
@@ -14,91 +16,118 @@
     {
       "n": 3,
       "kind": "paragraph",
-      "text": "The magnitudes of physical quantities may be added together or subtracted from one another only if they have the same dimensions.  In other words, we can add or subtract similar physical quantities. Thus, velocity cannot be added to force, or an electric current cannot be subtracted from the thermodynamic temperature. This simple principle called the principle of homogeneity of dimensions in an equation is extremely useful in checking the correctness of an equation.  If the dimensions of all the terms are not same, the equation is wrong.  Hence, if we derive an expression for the length (or distance) of an object, regardless of the symbols appearing in the original mathematical relation, when all the individual dimensions are simplified, the remaining dimension must be that of length.  Similarly, if we derive an equation of speed, the dimensions on both the sides of equation, when simplified, must be of length/time, or [L T–1]."
+      "text": "The magnitudes of physical quantities may be added together or subtracted from one another only if they have the same dimensions.  In other words, we can add or subtract similar physical quantities. Thus, velocity cannot be added to force, or an electric current cannot be subtracted from the thermodynamic temperature. This simple principle called the principle of homogeneity of dimensions in an equation is extremely useful in checking the correctness of an equation.  If the dimensions of all the terms are not same, the equation is wrong.  Hence, if we derive an expression for the length (or distance) of an object, regardless of the symbols appearing in the original mathematical relation, when all the individual dimensions are simplified, the remaining dimension must be that of length.  Similarly, if we derive an equation of speed, the dimensions on both the sides of equation, when simplified, must be of length/time, or [L T⁻¹].",
+      "bold_terms": [
+        "the principle of homogeneity of dimensions"
+      ],
+      "italic_terms": []
     },
     {
       "n": 4,
       "kind": "paragraph",
-      "text": "Dimensions are customarily used as a preliminary test of the consistency of an equation, when there is some doubt about the correctness of the equation. However, the dimensional consistency does not guarantee correct equations. It is uncertain to the extent of dimensionless quantities or functions. The arguments of special functions, such as the trigonometric, logarithmic and exponential functions must be dimensionless. A pure number, ratio of similar physical quantities, such as angle as the ratio (length/length), refractive index as the ratio (speed of light in vacuum/speed of light in medium) etc., has no dimensions."
+      "text": "Dimensions are customarily used as a preliminary test of the consistency of an equation, when there is some doubt about the correctness of the equation. However, the dimensional consistency does not guarantee correct equations. It is uncertain to the extent of dimensionless quantities or functions. The arguments of special functions, such as the trigonometric, logarithmic and exponential functions must be dimensionless. A pure number, ratio of similar physical quantities, such as angle as the ratio (length/length), refractive index as the ratio (speed of light in vacuum/speed of light in medium) etc., has no dimensions.",
+      "bold_terms": [],
+      "italic_terms": []
     },
     {
       "n": 5,
       "kind": "paragraph",
-      "text": "Now we can test the dimensional consistency or homogeneity of the equation"
+      "text": "Now we can test the dimensional consistency or homogeneity of the equation",
+      "bold_terms": [],
+      "italic_terms": []
     },
     {
       "n": 6,
       "kind": "equation",
       "needs_special": true,
       "bbox": [
-        1080,
-        420,
-        1425,
-        462
+        1030,
+        405,
+        1500,
+        475
       ],
       "text": ""
     },
     {
       "n": 7,
       "kind": "paragraph",
-      "text": "for the distance x travelled by a particle or body in time t which starts from the position x0 with an initial velocity v0 at time t = 0 and has uniform acceleration a along the direction of motion."
+      "text": "for the distance x travelled by a particle or body in time t which starts from the position x₀ with an initial velocity v₀ at time t = 0 and has uniform acceleration a along the direction of motion.",
+      "bold_terms": [],
+      "italic_terms": []
     },
     {
       "n": 8,
       "kind": "paragraph",
-      "text": "The dimensions of each term may be written as"
+      "text": "The dimensions of each term may be written as",
+      "bold_terms": [],
+      "italic_terms": []
     },
     {
       "n": 9,
       "kind": "equation",
       "needs_special": true,
       "bbox": [
-        1010,
-        635,
-        1360,
-        830
+        1000,
+        630,
+        1530,
+        840
       ],
       "text": ""
     },
     {
       "n": 10,
       "kind": "paragraph",
-      "text": "As each term on the right hand side of this equation has the same dimension, namely that of length, which is same as the dimension of left hand side of the equation, hence this equation is a dimensionally correct equation."
+      "text": "As each term on the right hand side of this equation has the same dimension, namely that of length, which is same as the dimension of left hand side of the equation, hence this equation is a dimensionally correct equation.",
+      "bold_terms": [],
+      "italic_terms": []
     },
     {
       "n": 11,
       "kind": "paragraph",
-      "text": "It may be noted that a test of consistency of dimensions tells us no more and no less than a test of consistency of units, but has the advantage that we need not commit ourselves to a particular choice of units, and we need not worry about conversions among multiples and sub-multiples of the units.  It may be borne in mind that if an equation fails this consistency test, it is proved wrong, but if it passes, it is not proved right.  Thus, a dimensionally correct equation need not be actually an exact (correct) equation, but a dimensionally wrong (incorrect) or inconsistent equation must be wrong."
+      "text": "It may be noted that a test of consistency of dimensions tells us no more and no less than a test of consistency of units, but has the advantage that we need not commit ourselves to a particular choice of units, and we need not worry about conversions among multiples and sub-multiples of the units.  It may be borne in mind that if an equation fails this consistency test, it is proved wrong, but if it passes, it is not proved right.  Thus, a dimensionally correct equation need not be actually an exact (correct) equation, but a dimensionally wrong (incorrect) or inconsistent equation must be wrong.",
+      "bold_terms": [
+        "if an equation fails this consistency test, it is proved wrong, but if it passes, it is not proved right.  Thus, a dimensionally correct equation need not be actually an exact (correct) equation, but a dimensionally wrong (incorrect) or inconsistent equation must be wrong"
+      ],
+      "italic_terms": []
     },
     {
       "n": 12,
       "kind": "box",
-      "text": "Example 1.3 Let us consider an equation\n(1/2) m v2 = m g h\nwhere m is the mass of the body, v its velocity, g  is the acceleration due to gravity and h is the height.  Check whether this equation is dimensionally correct."
+      "text": "Example 1.3  Let us consider an equation\n(1/2) m v² = m g h\nwhere m is the mass of the body, v its velocity, g  is the acceleration due to gravity and h is the height.  Check whether this equation is dimensionally correct.",
+      "bold_terms": [
+        "Example 1.3"
+      ],
+      "italic_terms": []
     },
     {
       "n": 13,
       "kind": "paragraph",
-      "text": "Answer  The dimensions of LHS are"
+      "text": "Answer  The dimensions of LHS are",
+      "bold_terms": [
+        "Answer"
+      ],
+      "italic_terms": []
     },
     {
       "n": 14,
       "kind": "equation",
       "needs_special": true,
       "bbox": [
-        1075,
-        1880,
-        1455,
-        1950
+        1020,
+        1820,
+        1500,
+        1920
       ],
       "text": ""
     }
   ],
   "first_block_continues_from_previous": true,
-  "last_block_continues_on_next": false,
+  "last_block_continues_on_next": true,
   "running_header_footer_removed": [
     "8",
     "PHYSICS",
-    "2024-25"
+    "2024-25",
+    "⊳"
   ],
-  "note": "Judged first_block_continues_from_previous from page 7, which I read myself in this batch (previous_page_last_block was null): page 7 ends mid-sentence with 'as only those physical' and this page opens 'quantities can be added or subtracted'. Blocks 6, 9 and 14 are display equations left for the special transcriber with bounding boxes. Block 4 runs across the column break. Block 12 is the tinted Example 1.3 box, kept as one box block as the step requires; the stacked fraction in its display line is garbled in the text layer ('1 2 m v m g h 2 =') and is written linearly as '(1/2) m v2 = m g h' from the image. The page ends mid-worked-answer for Example 1.3 - only the LHS dimensions are given and page 9 opens with 'The dimensions of RHS are' - but the final equation block itself is complete ('= [M L2 T-2]'), so last_block_continues_on_next is false. Text layer otherwise matches the image."
+  "note": "Two-column page; transcribed left column fully, then right column. previous_page_last_block was null even though this is page 8, but the page opens mid-sentence ('quantities can be added or subtracted which have the same dimensions.'), so first_block_continues_from_previous is true on the evidence of the page itself. Three display equations are deferred to A2S with bboxes: n=6 (x = x₀ + v₀ t + (1/2) a t²), n=9 (the [x]/[x₀]/[v₀ t]/[(1/2) a t²] dimension list) and n=14 (the Answer's LHS dimensions, which run on to the next page). The tinted Example 1.3 box is kept whole as one 'box' block per the brief; its one display equation is short and fully legible, so it is written inline as '(1/2) m v² = m g h' (the same inline form NCERT itself uses in the body text) rather than splitting the box into three blocks. The text layer flattens the exponents and the subscripts ('L T–1', 'x0', 'v0', 't2'); the image's real characters have been written instead ([L T⁻¹], x₀, v₀, v²). The '⊳' glyph listed as removed is the decorative triangle marker printed at the head of the Example box, not text."
 }

@@ -1,0 +1,78 @@
+{
+  "page_kind": "chapter_opener",
+  "page": {
+    "page_kind": "chapter_opener",
+    "width_px": 1654,
+    "height_px": 2339,
+    "dpi": 200,
+    "body_text_size_px": 21.5,
+    "body_leading_px": 39.0,
+    "text_block": [0.0671, 0.4023, 0.867, 0.841],
+    "fill": 0.69,
+    "columns": [
+      {"id": "left", "x0": 0.0659, "x1": 0.3392},
+      {"id": "right", "x0": 0.3876, "x1": 0.8658}
+    ]
+  },
+  "elements": [
+    {"n": null, "role": "chapter_banner", "bbox": [0.0, 0.0, 0.9571, 0.3544],
+     "column": "full", "size_rel": 1.0, "fill": "#d4ecd6", "space_before": 0.0},
+
+    {"n": null, "role": "page_header_band", "bbox": [0.0, 0.0004, 0.7455, 0.0342],
+     "column": "full", "size_rel": 1.0, "fill": "#4a7435", "space_before": 0.0},
+
+    {"n": null, "role": "page_header_band", "bbox": [0.7479, 0.0004, 0.9571, 0.0351],
+     "column": "full", "size_rel": 1.0, "fill": "#745a21", "space_before": 0.0},
+
+    {"n": 1, "role": "chapter_title", "bbox": [0.0677, 0.195, 0.2866, 0.2185],
+     "column": "full", "size_rel": 2.56, "size_pt": 27.5, "align": "left", "indent": 0.0,
+     "font": "sans-light", "face": "sans-light", "fill": "#d4ecd6", "text_color": "#1e1e1b",
+     "space_before": 0.1612},
+
+    {"n": 2, "role": "chapter_title", "bbox": [0.0671, 0.2655, 0.7038, 0.3356],
+     "column": "full", "size_rel": 2.98, "size_pt": 32.0, "align": "left", "indent": 0.0,
+     "font": "sans-light", "face": "sans-light", "fill": "#d4ecd6", "text_color": "#1e1e1b",
+     "space_before": 0.0475},
+
+    {"n": null, "role": "qr_code", "bbox": [0.5085, 0.1184, 0.6518, 0.2202],
+     "column": "full", "size_rel": 1.0, "fill": "#ffffff", "space_before": 0.0847},
+
+    {"n": 3, "role": "decorative_image", "bbox": [0.6693, 0.0808, 0.8688, 0.2599],
+     "column": "full", "size_rel": 1.0, "space_before": 0.047},
+
+    {"n": null, "role": "rule_bar", "bbox": [0.0, 0.3625, 0.9571, 0.4015],
+     "column": "full", "size_rel": 1.0, "fill": "#f8931f", "space_before": 0.0086},
+
+    {"n": 4, "role": "contents_panel", "bbox": [0.0659, 0.4023, 0.3392, 0.6644],
+     "column": "left", "size_rel": 0.93, "size_pt": 10.3, "align": "left", "indent": 0.0115,
+     "font": "serif-italic", "face": "serif-italic", "fill": "#ffe4cc", "text_color": "#2a1e14",
+     "space_before": 0.0013},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.0973, 0.6704, 0.3071, 0.6776],
+     "column": "left", "size_rel": 1.0, "fill": "#dadee1", "space_before": 0.0064},
+
+    {"n": 5, "role": "paragraph", "bbox": [0.3876, 0.4515, 0.8658, 0.6631],
+     "column": "right", "size_rel": 1.0, "size_pt": 11.0, "align": "justify", "indent": 0.0,
+     "font": "serif", "face": "serif", "fill": null, "text_color": "#1e1e1e",
+     "space_before": 0.0505},
+
+    {"n": 6, "role": "section_heading", "bbox": [0.3912, 0.6819, 0.7866, 0.7135],
+     "column": "right", "size_rel": 1.21, "size_pt": 13.4, "align": "left", "indent": 0.0,
+     "font": "serif-bold", "face": "serif-bold", "fill": null, "text_color": "#09ae49",
+     "space_before": 0.0192},
+
+    {"n": 7, "role": "paragraph", "bbox": [0.3876, 0.7294, 0.8658, 0.841],
+     "column": "right", "size_rel": 1.0, "size_pt": 11.0, "align": "justify", "indent": 0.0,
+     "font": "serif", "face": "serif", "fill": null, "text_color": "#1e1e1e",
+     "space_before": 0.0162},
+
+    {"n": null, "role": "page_number", "bbox": [0.4311, 0.9008, 0.5272, 0.9102],
+     "column": "full", "size_rel": 0.74, "size_pt": 8.2, "align": "center", "indent": 0.0,
+     "font": "serif", "face": "serif", "fill": null, "text_color": "#111111",
+     "space_before": 0.0603},
+
+    {"n": null, "role": "decorative_image", "bbox": [0.13, 0.252, 0.845, 0.761],
+     "column": "full", "size_rel": 1.0, "fill": null}
+  ],
+  "note": "Chapter-opening page of a pure A4 scan (1654x2339 px = 595.32x841.92 pt at 200.04 dpi; 2.7784 px/pt). All geometry below was measured from the image with PIL/numpy, not inferred. PAGE EXTENT: the printed sheet bleeds off the left and top edges of the image but stops 71 px short of the right edge (all bands end at x=1582 px, i.e. 0.9571) and ~210 px short of the foot; the blank strip at the right is image padding, not a margin. All fractions are of the full 1654x2339 image as required. COLUMNS: two. Left = the peach section-contents panel, x 109-561 px (0.0659-0.3392). Right = the opening prose, x 641-1432 px (0.3876-0.8658), justified flush both sides on every full line. Gutter = 81 px (29 pt). The banner, the orange rule bar and the folio are full-width. BODY SIZE: body_text_size_px = 21.5, measured cap/ascender-top to baseline on three separate prose lines (y 1056->1077, 1133->1155, 1706->1727 px); baseline-to-baseline leading is a constant 39 px (14.0 pt). TEXT BLOCK: x 111-1434 px, y 941-1966 px -- left edge from the chapter title and the contents-panel edge, right edge from the justified prose right margin (which coincides with the photograph's right edge at 1434-1436 px), top from the first line of content under the rule bar, bottom from the last printed baseline of block 7. CAVEAT: the sheet's nominal live-area BOTTOM cannot be measured from an opener, because the type stops early and nothing else is printed between y=1967 and the 'Reprint 2026-27' line at y 2107-2128; I have reported the last measured baseline rather than guess a deeper block. FILL: 0.69 = measured content area (contents panel 449x613 + grey dash 347x17 + prose 791x495 + heading 791x74 + prose 791x261 px) divided by the text-block area (1324x1026 px). It is below 1.0 chiefly because the left column stops at y=0.664 while the right runs to 0.841, and because of the 81 px gutter; the right column itself runs essentially full with no slack. ROLES: the two coloured strips across the very top (dark green #4a7435 x 0-1232, olive #745a21 x 1237-1582, both y 1-79/81 px) print on THIS opener as the top edge of the chapter banner -- they are labelled page_header_band because that is the only allowed role for a coloured strip across the top of a page, but a renderer must not treat them as an ordinary body page's running header band; they carry no text and sit inside the chapter_banner box. The single rule_bar is the orange #f8931f divider between banner and contents panel (y 848-938 px); the short pale grey #dadee1 dash under the contents panel (x 161-507, y 1568-1584 px) is reported as decorative_image so that the chapter's rule_bar colour stays unambiguous. The last decorative_image is the diagonal '(c) NCERT / not to be republished' copyright watermark printed over both the banner and the body; its bbox is APPROXIMATE to about +/-20 px because its pale tint cannot be separated cleanly from body-text antialiasing. BLOCK MATCHING: n1 = 'CHAPTER 1', n2 = the two-line title, n3 = the chapter-opening photograph (A2 blocked it as a figure; on the page it is uncaptioned and unnumbered chapter artwork, so role is decorative_image), n4 = the five-entry contents panel reported as ONE element (its nine printed lines are not nine elements), n5 = the opening prose, n6 = the green small-caps section heading, n7 = the prose under it. The QR code, the two header strips, the rule bar, the grey dash, the folio line and the watermark are n: null because A2 never blocked them. DETAIL a renderer needs: inside the contents panel the section numbers sit at x=128 px and the titles at x=201 px, a hanging indent of 0.044 of page width, with 39 px leading inside an entry and 55-56 px between entries. The section heading's runover line ('ANGIOSPERMS') is indented to x=724 px, 0.050 of page width in from the column edge, so it hangs under the title and not under the '1.1'. The heading mixes two sizes: large caps 26 px cap-height (size_rel 1.21, the value reported) and small caps 18 px (size_rel 0.84). The folio slot prints 'Reprint 2026-27' centred at x=792 px -- there is NO printed page number on this opener; role page_number marks the slot. SIZE_PT is DERIVED, not measured directly: it is the measured cap-to-baseline height converted at 200.04 dpi and divided by an assumed cap-height ratio of 0.70 em (0.72 for the sans title face). size_rel is the measured ratio and is the number to trust. space_before is the gap in page-height fractions from the bottom of the element above in the same flow; for the QR code and the photograph, which sit out of flow in the banner, it is measured from the bottom of the top header strips. The watermark overlay has no space_before. Nothing on the page was left unmeasured."
+}
