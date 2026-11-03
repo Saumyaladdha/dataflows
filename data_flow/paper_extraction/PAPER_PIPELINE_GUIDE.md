@@ -1,14 +1,58 @@
-# Running the agent steps through the API
+# What changed, and how to run it
 
-Take a pull first. Everything described here is in the repo.
+Everything here is in the repo. Take a pull first.
 
 ```bash
 git pull origin main
 ```
 
+Three things changed: a paper was built end to end, the agent steps can now run through the API
+instead of as Claude Code subagents, and the category steps are frozen. Each is below.
+
 ---
 
-## Why this exists
+## 1 · NEET 2026 Code-11, built end to end
+
+180 questions, every step complete.
+
+| step | state |
+|---|---|
+| extract · read from image · subject · chapter · subtopic · solutions · blind solve · difficulty | **180 / 180 each** |
+| figures cut | 22 clean |
+| figures redrawn | 28 published |
+| CDN | 472 links, none missing |
+| category cards | 180 — **frozen, see §3** |
+
+Output in `data/2026/2026_11/` — `questions.json`, `question_paper.html`, `question_paper.md`.
+
+### What reading the image rather than the text layer bought
+
+**72 of 180 questions differ materially** from the PDF's own text layer. The worst cases:
+
+- **q017** — the draft had options 1 and 2 **swapped**, so the printed answer pointed at the wrong
+  option. Reading the image fixed it.
+- **q035** — all four stacked fractions collapsed, leaving options 1 and 3 **empty** and spilling
+  their numerators into the stem. The four differ only by the exponent of L and π.
+- **q118** — all four floral-formula options came back blank; the only thing separating option 2
+  from option 1 is an arc over `C(5)A5`. `\overparen` had to be added to the renderer, or the
+  question has no single answer.
+
+### Faults found by checking, not by any agent
+
+- **23 figure crops contained the booklet's printed `Answer (4)` line.** The blind solve opens
+  those crops to read picture options, so on those questions it was not blind and its agreement
+  with the key meant nothing. Quarantined; `code/quarantine_leaky_figures.py` finds them.
+- **The figure cut reached the drawing but not the labels printed beside it.** A five-plot question
+  shipped with `A.`, `C.`, `E.` sliced off — on a question whose whole task is naming the right
+  lettered plot. The cut now grows along the page's own marks.
+- **Two defects in the paper itself:** q058 prints `Answer (3 or 4)`, and q043 prints `Answer (2*)`
+  with the publisher conceding *"although it should be second principal focus."*
+- **q085 and q090 cannot be solved** — both say "the following reactions" and no figure was
+  captured. Recorded as `unsure`, not guessed.
+
+---
+
+## 2 · Running the agent steps through the API
 
 Every agent in `agents/` declares `tools: Read, Write` and nothing else. Measured across all 30:
 not one searches the repo, runs a script, or reacts to what it finds. Each is a pure function —
@@ -50,7 +94,7 @@ questions represent 180. Run `--limit 20` and read the output before trusting a 
 
 ---
 
-## What has been set up
+### What has been set up
 
 ### 1 · `.env` at the repo root
 
@@ -105,7 +149,7 @@ both the subagent and the API run pick it up.
 
 ---
 
-## Which steps this is for
+### Which steps this is for
 
 | step | agent | per paper |
 |---|---|---|
@@ -125,7 +169,7 @@ biophysics question can.
 
 ---
 
-## Do NOT run the category steps
+## 3 · Do NOT run the category steps
 
 **`ECAT` and `E1`–`E5` must not be run right now.** Skip them even if a step listing shows them as
 pending. Nothing else in the pipeline depends on them, so skipping costs nothing.
@@ -161,7 +205,7 @@ listing being complete, not the step being ready.
 
 ---
 
-## Running a whole paper
+## 4 · Running a whole paper
 
 Order matters. Each step reads what the one before it produced.
 
@@ -201,7 +245,7 @@ cost the run.
 
 ---
 
-## What the runner does not do
+### What the runner does not do
 
 It writes files. It does not check them. Its last line says so:
 
@@ -230,7 +274,7 @@ the orchestrator's job, and it stays with the orchestrator.
 
 ---
 
-## After each step
+### After each step
 
 | after | check | a failure means |
 |---|---|---|
@@ -243,7 +287,7 @@ the orchestrator's job, and it stays with the orchestrator.
 
 ---
 
-## Cost per paper
+## 5 · Cost per paper
 
 Measured, not guessed: the token counts below come from the real input files, the real briefs,
 the real crop dimensions, and one real API call used to calibrate the estimate.
