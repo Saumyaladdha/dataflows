@@ -20,6 +20,11 @@ def check(output, item=None, record=None, root=".", **_kwargs):
                        "every step in this chain narrows the next one's choices")
     if len(str(output.get("why")).split()) < 4:
         return False, "`why` is not a sentence: name the fact the correct answer depends on"
+    # The brief requires `why_second` with two ids, but nothing enforced it: 2023_F1 shipped 13
+    # second subtopics with no reason (four-file audit, 2026-11-03).
+    if len(output.get("topic_ids") or []) > 1 and len(str(output.get("why_second") or "").split()) < 4:
+        return False, ("`why_second` is missing: two topic_ids need one sentence on why the SECOND "
+                       "topic is a genuine second home; `why` argues only for the first")
     return True, "ok"
 
 

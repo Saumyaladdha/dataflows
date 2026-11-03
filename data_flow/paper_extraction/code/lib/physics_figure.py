@@ -43,6 +43,7 @@ its place; a coil, a ray and an arrow do not need it.
 """
 
 import argparse
+import html
 import json
 import math
 import os
@@ -73,6 +74,12 @@ class Canvas:
         self.body = []
         self.used_heads = set()
         self.washes = set()
+        # The smallest label this canvas draws: 3.5% of its longer side or 6% of its shorter one. A
+        # spec's 15 px on a 710 px canvas (2021_O1 q016), or 10 px axis letters on 2022_Q1 q002's
+        # graph, are shown shrunk to a page column and read as specks beside the printed copy,
+        # whose letters are about that share of the figure.
+        self.min_label = max(13, round(max(0.035 * max(width, height),
+                                           0.06 * min(width, height)) * scale))
 
     # -- coordinates -----------------------------------------------------------------------
     def x(self, value):
@@ -214,8 +221,11 @@ class Canvas:
         NCERT fills a conducting body with a pale tone that fades across it. A flat colour reads as
         a solid object and a white fill loses the body altogether, so the wash is its own thing.
         """
-        if fill in ("none", None):
+        if fill in ("none", None, False):
             return "none"
+        if fill is True:
+            # `"fill": true` (2022_Q1 q021) means a solid body in the ink colour
+            return INK["ink"]
         if fill.startswith("wash"):
             key = fill.split(":", 1)[1] if ":" in fill else "accent"
             self.washes.add(key)
@@ -268,7 +278,7 @@ class Canvas:
         return text, sup, sub
 
     def label(self, text, at, anchor="middle", size=15, colour="ink", style="sans",
-              baseline="middle", italic=False, sub=None, sup=None):
+              baseline="middle", italic=False, sub=None, sup=None, tail=None, deg=None):
         """Text, optionally with a subscript or superscript.
 
         `sub` exists because the alternative is two labels at hand-chosen coordinates, and that is
@@ -284,23 +294,51 @@ class Canvas:
             text, lifted_sup, lifted_sub = self._split_scripts(text)
             sup = lifted_sup or None
             sub = lifted_sub or None
-        # The script is its OWN <text>, placed at an explicit x/y after the base's estimated
-        # width -- not a <tspan dy>, which some renderers draw on top of the base letter (2017_A
-        # q037's I0..I3 and q011's T1, K2 came out as one glyph over another).
-        base_w = 0.56 * size * len(text)
-        x0 = self.x(at[0]) - (base_w if anchor == "end" else base_w / 2 if anchor == "middle" else 0)
-        y0 = self.y(at[1])
+        # ONE <text>, the scripts as tspans in the same text flow: the engine measures the base, so
+        # nothing is estimated. The old layout put each script in its own <text> after a guessed
+        # width (0.56 * size per char), which opened gaps in every label that was not Arial-wide
+        # (2021_O1: "(Q₁   -x)", "10  5", "I 1"). Each script tspan carries its own dy and the
+        # next run undoes it, so the base letter never moves.
+        size = max(size, self.min_label)
         common = 'font-family="%s" fill="%s"%s' % (family, INK[colour],
                                                    ' font-style="italic"' if italic else "")
-        self.body.append('<text x="%s" y="%s" text-anchor="start" dominant-baseline="%s" '
-                         'font-size="%s" %s>%s</text>'
-                         % (round(x0, 2), y0, baseline, size, common, text))
-        script, dy = (sub, size * 0.3) if sub is not None else (sup, -size * 0.45)
-        if script is not None:
-            self.body.append('<text x="%s" y="%s" text-anchor="start" dominant-baseline="%s" '
-                             'font-size="%s" %s>%s</text>'
-                             % (round(x0 + base_w + size * 0.04, 2), round(y0 + dy, 2), baseline,
-                                round(size * 0.62, 1), common, script))
+        runs = self._runs(text)
+        if sub is not None:
+            runs.append(("sub", sub))
+        if sup is not None:
+            runs.append(("sup", sup))
+        if tail:
+            runs.extend(self._runs(tail))
+        shift = {"base": 0, "sub": size * 0.3, "sup": -size * 0.45}
+        parts, level = [], "base"
+        for kind, chunk in runs:
+            dy = round(shift[kind] - shift[level], 2)
+            attrs = (' dy="%s"' % dy if dy else "") + (
+                ' font-size="%s"' % round(size * 0.62, 1) if kind != "base" else "")
+            parts.append("<tspan%s>%s</tspan>" % (attrs, html.escape(chunk, quote=False)))
+            level = kind
+        svg_anchor = {"start": "start", "middle": "middle", "end": "end"}.get(anchor, "middle")
+        # `deg` turns the label counter-clockwise in the spec's y-up frame (2022_Q1 q033's vertical
+        # axis title "displacement"); SVG's y-down frame turns the other way, hence the minus.
+        turn = (' transform="rotate(%s %s %s)"' % (-deg, self.x(at[0]), self.y(at[1]))
+                if deg else "")
+        self.body.append('<text x="%s" y="%s" text-anchor="%s" dominant-baseline="%s" '
+                         'font-size="%s" %s%s>%s</text>'
+                         % (self.x(at[0]), self.y(at[1]), svg_anchor, baseline, size, common,
+                            turn, "".join(parts)))
+
+    def _runs(self, text):
+        """[(base|sub|sup, text)] for a label, lifting EVERY precomposed script character -- in the
+        middle as well as at the end, now that one text flow keeps the rest of the label in place."""
+        runs = []
+        for ch in text:
+            kind, plain = (("sup", self.SUPERS[ch]) if ch in self.SUPERS else
+                           ("sub", self.SUBS[ch]) if ch in self.SUBS else ("base", ch))
+            if runs and runs[-1][0] == kind:
+                runs[-1] = (kind, runs[-1][1] + plain)
+            else:
+                runs.append((kind, plain))
+        return runs
 
     # -- circuit components ----------------------------------------------------------------
     # A SCHEMATIC NEEDS SYMBOLS, NOT JUST SHAPES. A Wheatstone bridge is four resistors, a cell and
@@ -626,9 +664,31 @@ TWO_TERMINAL = ("resistor", "capacitor", "battery", "inductor", "switch", "diode
 META_KEYS = ("id",)
 
 
+def _join_split_labels(draw):
+    """Rejoin a label the spec wrote in pieces around a script: `(Q` sub `1` then `-x)` a few px
+    to the right (2021_O1 q016). Drawn apart, the pieces sit wherever the agent guessed and the
+    gap shows; joined, they are one text flow centred between the two anchors."""
+    out = []
+    for item in draw:
+        prev = out[-1] if out else None
+        if (prev and item.get("kind") == "label" and prev.get("kind") == "label"
+                and "at" in item and "at" in prev and ("sub" in prev or "sup" in prev)
+                and "tail" not in prev and "sub" not in item and "sup" not in item
+                and abs(item["at"][1] - prev["at"][1]) <= 4
+                and 0 < item["at"][0] - prev["at"][0] <= 4 * prev.get("size", 15)
+                and item.get("size", 15) == prev.get("size", 15)
+                and item.get("anchor", "middle") == prev.get("anchor", "middle") == "middle"):
+            joined = dict(prev, tail=item["text"])
+            joined["at"] = [(prev["at"][0] + item["at"][0]) / 2, prev["at"][1]]
+            out[-1] = joined
+            continue
+        out.append(item)
+    return out
+
+
 def render(spec):
     canvas = Canvas(spec["width"], spec["height"], spec.get("pad", 14), spec.get("scale", 1.0))
-    for item in spec["draw"]:
+    for item in _join_split_labels(spec["draw"]):
         kind = item.get("kind")
         if kind not in PRIMITIVES:
             raise ValueError("unknown primitive %r; the renderer draws %s"

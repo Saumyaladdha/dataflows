@@ -31,7 +31,7 @@ import subprocess
 #: Groups the NEET booklets print as text on a structure (see _abbreviate).
 PRINTED_ABBREVIATIONS = {"NO2", "COOH", "CO2H", "CN", "SO3H", "CF3", "CCl3"}
 #: Fixed bond length in px, and the canvas each species is drawn on before cropping to the drawing.
-BOND_PX = 22
+BOND_PX = 28
 CANVAS = (360, 260)
 
 
@@ -180,8 +180,8 @@ def _options(draw_module, drawer):
     options.flagCloseContactsDist = -1
     options.clearBackground = False
     options.padding = 0.06
-    options.minFontSize = 11
-    options.maxFontSize = 15
+    options.minFontSize = 13
+    options.maxFontSize = 18
     # The booklets write a terminal methyl as CH3; RDKit draws it as a bare line end, which reads
     # as a different (skeletal) notation from the printed page.
     options.explicitMethyl = True
@@ -262,6 +262,55 @@ def _abbreviate(mol):
         return mol
 
 
+#: Electron-poor centres a bridging or dative bond is written onto. SMILES can only say "Cl gives a
+#: lone pair to Be" as Cl+ and Be2-, and RDKit draws those charges; the booklet draws a plain bridge.
+_ACCEPTORS = {"Be", "B", "Al", "Ga", "Mg", "Sn", "Si"} | _METALS
+
+
+def _hide_dative_charges(mol):
+    """Draw the bookkeeping charges of a dative bond as plain symbols (2021_O1 q-BeCl2 chains came
+    out "Cl+ ... Be2-"). Only when the molecule has a NEGATIVE acceptor bonded to a POSITIVE donor:
+    a nitro group's N+/O- or an ion's charge is real notation and is left alone. The stored SMILES is
+    untouched -- this is a label on the drawing only."""
+    pairs = [(a, n) for a in mol.GetAtoms() if a.GetSymbol() in _ACCEPTORS and a.GetFormalCharge() < 0
+             for n in a.GetNeighbors() if n.GetFormalCharge() > 0]
+    for atom in {x.GetIdx(): x for pair in pairs for x in pair}.values():
+        if not atom.HasProp("atomLabel"):
+            atom.SetProp("atomLabel", atom.GetSymbol())
+
+
+def needs_3d(smiles):
+    """True when a structure's point is its 3-D shape, which a flat drawing gets wrong:
+      - an atom with five or more neighbours (PCl5, SF6, BrF5 -- 2021_O1 q067), or
+      - a carbon-free molecule whose p-block centre (groups 13-18) carries more bonds than its
+        lowest valence: SF4 drawn as a square, XeF2 as bent, ClF3, B2H6's bridges (2022_Q1 q060,
+        q061). BF3 is NOT caught -- valence 3 is B's normal one and its flat triangle is right."""
+    from rdkit import Chem
+    mol = mol_from_smiles(smiles)
+    if not mol:
+        return False
+    if any(a.GetDegree() >= 5 for a in mol.GetAtoms()):
+        return True
+    # a bridging hydrogen (B2H6's 3-centre bonds) has no honest flat drawing
+    if any(a.GetAtomicNum() == 1 and a.GetDegree() >= 2 for a in mol.GetAtoms()):
+        return True
+    if any(a.GetSymbol() == "C" for a in mol.GetAtoms()):
+        return False
+    table = Chem.GetPeriodicTable()
+    for a in mol.GetAtoms():
+        if a.GetSymbol() in ("Xe", "Kr", "Rn"):
+            return True
+        n = a.GetAtomicNum()
+        group_13_18 = n in (5, 13, 31, 49) or n in range(7, 11) or n in range(15, 19) \
+            or n in range(33, 37) or n in range(51, 55)
+        valences = [v for v in table.GetValenceList(n) if v >= 0]
+        lowest = min(valences) if valences else None
+        if group_13_18 and lowest is not None and lowest > 0 and \
+                a.GetTotalValence() > lowest and a.GetFormalCharge() == 0:
+            return True
+    return False
+
+
 def species_svg(smiles, orient=None, abbreviate=True, explicit_h=None, annotations=None, name=None):
     """An SVG drawing of one SMILES: monochrome, fixed bond length, the canvas sized to the molecule.
 
@@ -286,6 +335,7 @@ def species_svg(smiles, orient=None, abbreviate=True, explicit_h=None, annotatio
         for atom in mol.GetAtoms():
             if atom.GetAtomicNum() == 0 and not atom.HasProp("atomLabel"):
                 atom.SetProp("atomLabel", "R")
+    _hide_dative_charges(mol)
     annotations = annotations or []
     for item in annotations:
         if item.get("kind") == "note":
@@ -420,9 +470,24 @@ def scheme_svg(card):
     rows_out, width, y = [], 0.0, 0.0
     gap = 10.0
     font = "font-family='Arial,Helvetica,sans-serif'"
+    # A word the card writes both as a species' label and as a text item is printed ONCE, under the
+    # species: 2021_O1 q083 drew "(Major)" twice, q088 "(a)"; 2022_Q1 q084 wrote "Cyanohydrin" as the
+    # product's label AND as a second-row text, which then sat under the reactant.
+    shown = {i["species"] for row in card.get("scheme") or [] for i in row if "species" in i}
+    drawn_labels = {(species[n - 1].get("label") or "").strip() for n in shown
+                    if 0 < n <= len(species)} - {""}
+    # WHICH ARROW IS AN EQUILIBRIUM. 2022_Q1 q084 prints "⇌"; the card's one-line `text` says so
+    # but the arrow item did not, and it was drawn "→". An arrow's own `equilibrium: true` wins;
+    # otherwise the n-th arrow takes the n-th of "→"/"⇌" in `text`, when the counts agree.
+    marks = re.findall("[→⇌]", card.get("text") or "")
+    arrows = [i for r in card.get("scheme") or [] for i in r if "arrow" in i]
+    equilibrium = {id(a): bool((a["arrow"] or {}).get("equilibrium")) or
+                   (len(marks) == len(arrows) and marks[n] == "⇌") for n, a in enumerate(arrows)}
     for row in card.get("scheme") or []:
         cells = []
         for item in row:
+            if "text" in item and item["text"].strip() in drawn_labels:
+                continue
             if "species" in item:
                 n = item["species"] - 1
                 if not 0 <= n < len(species):
@@ -439,10 +504,14 @@ def scheme_svg(card):
             elif item.get("plus"):
                 cells.append(("text", 16.0, SCHEME_FONT + 6, "+"))
             elif "arrow" in item:
-                above = (item["arrow"] or {}).get("above") or ""
-                below = (item["arrow"] or {}).get("below") or ""
-                length = max(56.0, _text_width(above, 12) + 16, _text_width(below, 12) + 16)
-                cells.append(("arrow", length, 2 * (SCHEME_FONT + 8), (above, below)))
+                # A condition printed on two lines (2022_Q1 q094 "(i) LiAlH4, H2O" over
+                # "(ii) NaNO2 + HCl") stays two lines, stacked away from the arrow, not run together.
+                above = [t for t in ((item["arrow"] or {}).get("above") or "").split("\n") if t.strip()]
+                below = [t for t in ((item["arrow"] or {}).get("below") or "").split("\n") if t.strip()]
+                length = max([56.0] + [_text_width(t, 12) + 16 for t in above + below])
+                lines = max(len(above), len(below), 1)
+                cells.append(("arrow", length, 2 * (SCHEME_FONT + 8) + 28 * (lines - 1),
+                              (above, below, equilibrium.get(id(item)))))
         if not cells:
             continue
         row_h = max(c[2] for c in cells)
@@ -461,19 +530,26 @@ def scheme_svg(card):
                 parts.append("<text x='%.1f' y='%.1f' %s font-size='%d' dominant-baseline='middle'>"
                              "%s</text>" % (x + 2, mid, font, SCHEME_FONT, _escape(payload)))
             else:
-                above, below = payload
-                parts.append("<line x1='%.1f' y1='%.1f' x2='%.1f' y2='%.1f' stroke='#000' "
-                             "stroke-width='1.4'/><path d='M %.1f %.1f L %.1f %.1f L %.1f %.1f Z' "
-                             "fill='#000'/>" % (x + 2, mid, x + w - 8, mid, x + w - 2, mid,
-                                                x + w - 10, mid - 4, x + w - 10, mid + 4))
-                if above:
+                above, below, reversible = payload
+                if reversible:
+                    # two half-headed arrows, the printed "⇌"
+                    parts.append("<path d='M %.1f %.1f L %.1f %.1f L %.1f %.1f M %.1f %.1f L %.1f %.1f "
+                                 "L %.1f %.1f' stroke='#000' stroke-width='1.4' fill='none'/>"
+                                 % (x + 2, mid - 3, x + w - 2, mid - 3, x + w - 10, mid - 8,
+                                    x + w - 2, mid + 3, x + 2, mid + 3, x + 10, mid + 8))
+                else:
+                    parts.append("<line x1='%.1f' y1='%.1f' x2='%.1f' y2='%.1f' stroke='#000' "
+                                 "stroke-width='1.4'/><path d='M %.1f %.1f L %.1f %.1f L %.1f %.1f Z' "
+                                 "fill='#000'/>" % (x + 2, mid, x + w - 8, mid, x + w - 2, mid,
+                                                    x + w - 10, mid - 4, x + w - 10, mid + 4))
+                for n, line in enumerate(reversed(above)):
                     parts.append("<text x='%.1f' y='%.1f' %s font-size='12' text-anchor='middle'>"
-                                 "%s</text>" % (x + w / 2, mid - 6, font, _escape(above)))
-                if below:
+                                 "%s</text>" % (x + w / 2, mid - 6 - 14 * n, font, _escape(line)))
+                for n, line in enumerate(below):
                     # an explicit baseline, not `hanging`, which some renderers ignore and then
                     # set the text ON the arrow
                     parts.append("<text x='%.1f' y='%.1f' %s font-size='12' text-anchor='middle'>"
-                                 "%s</text>" % (x + w / 2, mid + 17, font, _escape(below)))
+                                 "%s</text>" % (x + w / 2, mid + 17 + 14 * n, font, _escape(line)))
             x += w + gap
         rows_out.append("".join(parts))
         width = max(width, x - gap)

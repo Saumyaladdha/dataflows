@@ -351,6 +351,20 @@ def main():
             option_page = within([raw_option[0] - FIGURE_PAD_PX, raw_option[1] - FIGURE_PAD_PX,
                                   raw_option[2] + FIGURE_PAD_PX, raw_option[3] + FIGURE_PAD_PX],
                                  option_part["bbox"])
+            # THE PADDING STOPS AT THE NEXT OPTION. 2023_F1 q053 stacks graphs 5 px apart: option
+            # 1's crop took the top of option 3's "V1" and option 3's took option 1's "1/V" axis
+            # label (four-file audit, 2026-11-03). Never past the agent's own box, only its padding.
+            for other_key, other in boxes.items():
+                if other_key == key or len(other) != 4:
+                    continue
+                other_part, raw_other = to_page(parts, other)
+                if other_part["page"] != option_part["page"] or \
+                        raw_other[2] <= raw_option[0] or raw_other[0] >= raw_option[2]:
+                    continue
+                if raw_other[1] >= raw_option[3]:
+                    option_page[3] = min(option_page[3], max(raw_option[3], raw_other[1] - 1))
+                elif raw_other[3] <= raw_option[1]:
+                    option_page[1] = max(option_page[1], min(raw_option[1], raw_other[3] + 1))
             option_page = clear_of_prose(option_page, raw_option, source, option_part["page"],
                                          paper["meta"]["dpi"])
             option_cut = solution_after(solution_y, option_part["page"], option_part["bbox"][1],

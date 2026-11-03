@@ -37,6 +37,9 @@ SYMBOLS = {
     "hbar": "ℏ", "ell": "ℓ", "AA": "Å", "ohm": "Ω", "Omega_sym": "Ω",
     # Dotless i and j under a unit-vector hat: 2015 Code-A q156 `\hat{\imath}`, `\hat{\jmath}`.
     "imath": "ı", "jmath": "ȷ",
+    # Floral formula, 2021 Code-O1 q141: `\overset{\frown}{C_{(5)} A_{5}}` is the arc that marks
+    # epipetalous stamens. `\smile` is its partner.
+    "frown": "⌢", "smile": "⌣",
     # Measured from the corpus by a census of every `\\cmd` these papers actually emit, rather
     # than guessed: longrightarrow and ominus are the reaction arrow and the standard-state circle
     # that chemistry stems use constantly.
@@ -239,7 +242,10 @@ def _render(tex):
                 continue                      # consumed by `begin`; a stray one has no content
             elif name in ("left", "right", "big", "Big", "bigg", "Bigg", "bigl", "bigr", "Bigl",
                           "Bigr", "displaystyle", "textstyle", "scriptstyle", "limits",
-                          "nolimits", "middle", "nonumber"):
+                          "nolimits", "middle", "nonumber",
+                          # font-size switches, 2023 Code-F1 q079 `\overset{\overset{\large Cl}{|}}{C}`
+                          "tiny", "scriptsize", "footnotesize", "small", "normalsize", "large",
+                          "Large", "LARGE", "huge", "Huge"):
                 continue                      # sizing hints carry no content
             elif name in FUNCTIONS:
                 out.append('<span class="up">%s</span>' % name)

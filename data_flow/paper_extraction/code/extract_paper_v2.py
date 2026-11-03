@@ -967,6 +967,7 @@ def read_text_draft(lines, option_style="digits"):
     stem, options, answer, starred = [], {}, None, False
     current, solution_at, answer_at = None, None, None
     answers, answer_line, bonus, hindi_at = [], None, False, None
+    no_valid_option = False
     # "Ans." and its "(4)" set apart on one row (2016 Code-Y) are ONE answer line
     texts, joined = {}, set()
     for position, line in enumerate(lines):
@@ -1019,6 +1020,13 @@ def read_text_draft(lines, option_style="digits"):
                 starred, current = bool(several.group(2)), None
                 answer_at, answer_line = position, text
                 continue
+            # NO OPTION IS CORRECT AS PRINTED: `Answer (NA)` (2022 Code-Q1 q093, q128). The question
+            # ends here like any answer line; the record says the publisher keyed NO option, which is
+            # different from "no printed answer" (a parse gap) and from a bonus (NTA's decision).
+            if several and several.group(1).strip().upper().replace(".", "") in ("NA", "N/A"):
+                no_valid_option, current = True, None
+                answer_at, answer_line = position, text
+                continue
         if solution_at is not None:
             continue
         if OPTIONS_LABEL.match(text):
@@ -1037,6 +1045,7 @@ def read_text_draft(lines, option_style="digits"):
     return {"stem": re.sub(r"^\d{1,3}\s*[.)]\s*", "", draft), "options": options,
             "official_answer": answer, "answer_starred": starred,
             "official_answers": answers, "answer_line": answer_line, "answer_bonus": bonus,
+            "answer_no_valid_option": no_valid_option,
             "hindi_at": hindi_at,
             "solution_at": solution_at, "answer_at": answer_at,
             "solution_lines": solution_lines(lines, solution_at),
@@ -1166,8 +1175,13 @@ def analyse(doc):
                 # 315, so by midpoint every right-column number went LEFT, landed between q1-q4 in
                 # reading order and was dropped: 60 of 180 questions, in runs (5-10, 16-21, ...).
                 # A number line starting nearer the right column's text than the left's is right.
+                # ...and only a number hung INTO THE GUTTER, within the edge slack of the right
+                # column: 2026 Code-70 q022's formula left a "10 )" fragment at x0=233 (right column
+                # 340), which this moved right and which then set the right column's number edge,
+                # so q023-q025's real `23.` `24.` `25.` at 312 were rejected as off the edge.
                 (lx0, _lx1), (rx0, _rx1) = split[1], split[2]
                 if (line["column"] == "left" and abs(line["x0"] - rx0) < abs(line["x0"] - lx0)
+                        and rx0 - line["x0"] <= NUMBER_EDGE_SLACK_PT
                         and (Q_ALONE.match(line["text"]) or Q_INLINE.match(line["text"])
                              or Q_BARE.match(line["text"]))):
                     line["column"] = "right"

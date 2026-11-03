@@ -265,7 +265,53 @@ def agent_read(paper_id, qno):
         return None
     with open(path, encoding="utf-8") as fh:
         data = json.load(fh)
-    return None if "error" in data else data
+    if "error" in data:
+        return None
+    return mend_parentheses(data)
+
+
+#: A label printed with its brackets turned round: `)a)`, `(iii(`, `)Biological functions(`.
+REVERSED_PAREN = re.compile(r"\)[a-dA-D]\)|\([ivxIVX]{1,4}\(|\)[A-Za-z][^()\n]{0,40}\(")
+PAREN_PAIR = re.compile(r"([()])([^()\n]{1,40}?)([()])")
+
+
+def _mend(text):
+    if not isinstance(text, str) or not REVERSED_PAREN.search(text):
+        return text
+    return PAREN_PAIR.sub(lambda m: m.group(0) if (m.group(1), m.group(3)) == ("(", ")")
+                          else "(%s)" % m.group(2), text)
+
+
+def mend_parentheses(read):
+    """Turn printed-backwards brackets the right way round, for display, and SAY SO.
+
+    2022 Code-Q1 q190, q197, q198 print every match option as `)a) - (iii(, )b) - (ii(` and the list
+    headings as `)Biological Molecules(` -- a typesetting fault in the booklet itself (B3 copied it
+    faithfully). Read like that a student cannot tell which pair is meant. The printed form is kept
+    in `printed_reversed` so nothing is lost, and record_flags() reports the repair."""
+    fields = [("stem_en", None)] + [("options_en", k) for k in (read.get("options_en") or {})]
+    printed, changed = {}, False
+    for name, key in fields:
+        value = read.get(name) if key is None else read[name][key]
+        fixed = _mend(value)
+        if fixed != value:
+            changed = True
+            printed[name if key is None else "%s.%s" % (name, key)] = value
+            if key is None:
+                read[name] = fixed
+            else:
+                read[name][key] = fixed
+    for name in ("list_i", "list_ii", "statements"):
+        for row in read.get(name) or []:
+            if isinstance(row, dict):
+                for k in ("label", "text"):
+                    fixed = _mend(row.get(k))
+                    if fixed != row.get(k):
+                        changed = True
+                        row[k] = fixed
+    if changed:
+        read["printed_reversed"] = printed
+    return read
 
 
 def reading(paper_id, question):
@@ -303,9 +349,39 @@ def restored_opening(question):
 
 #: A printed solution that says the question has no correct option as printed (2017_A q3: "No
 #: option is correct", then it answers a corrected reading of the question).
+#: The independent solve saying its result is not among the printed options ("No option shows
+#: sqrt3 : sqrt5", "which no option shows", "no option fully fits").
+SOLVE_NO_EXACT_OPTION = re.compile(
+    r"\bno option (?:shows|equals|gives|lists|matches|fully fits|is exactly)\b[^.;]*"
+    r"|\bwhich no option (?:shows|gives|lists)\b"
+    r"|\bnone of the (?:four )?options (?:shows|equals|matches)(?: exactly)?\b", re.I)
+
 NO_OPTION_CORRECT = re.compile(
     r"\bno (?:option|answer|choice) is (?:correct|right)\b"
-    r"|\bnone of the (?:options|answers|choices|given options) (?:is|are) correct\b", re.I)
+    r"|\bnone of the (?:options|answers|choices|given options) (?:is|are) correct\b"
+    # 2022 Code-Q1 q180 "None of the options are matching with the language of the question";
+    # q128 "none of the options with such combination is given"
+    r"|\bnone of the (?:options|given options) (?:is|are) matching\b"
+    r"|\bnone of the options with\b.{0,40}\bis given\b", re.I)
+
+
+def source_status(draft, solution_steps, concludes):
+    """What the BOOKLET ITSELF says about its own key, or None when it says nothing odd.
+
+      publisher_no_valid_option     it prints `Answer (NA)`: no option is correct as printed
+      publisher_contradicts_itself  it keys an option, but its own solution says no option fits
+                                    (2022 Q1 q180) or works out to a different one (2021 O1 q032)
+
+    A question in either state must never be reported as `agree`, even when our solve lands on the
+    keyed option: two answers matching is not a check when the source has disowned its key."""
+    if draft.get("answer_no_valid_option"):
+        return "publisher_no_valid_option"
+    publisher = printed_answer(draft)
+    if publisher and any(NO_OPTION_CORRECT.search(s) for s in solution_steps or []):
+        return "publisher_contradicts_itself"
+    if verdict_self(publisher, concludes) == "publisher_contradicts_itself":
+        return "publisher_contradicts_itself"
+    return None
 
 
 def _booklet(pdf_name):
@@ -313,7 +389,7 @@ def _booklet(pdf_name):
     return "Code %s" % m.group(1) if m else pdf_name
 
 
-def record_flags(question, publisher, ai, solution_steps):
+def record_flags(question, publisher, ai, solution_steps, concludes=None):
     """What a reader must know before trusting this question, as [{code, text}].
 
     Each flag is decided from the record itself, never from a reviewer's memory, so the same
@@ -333,6 +409,11 @@ def record_flags(question, publisher, ai, solution_steps):
                           "text": "The booklet lost this question's number and first line, and no "
                                   "other booklet code of this exam prints it; the stem starts "
                                   "mid-sentence."})
+    if (question.get("text_layer_draft") or {}).get("answer_no_valid_option"):
+        flags.append({"code": "publisher_no_valid_option",
+                      "text": "The booklet prints \"%s\": none of the four options is correct as "
+                              "printed, so there is no keyed answer to check a solve against."
+                              % (question["text_layer_draft"].get("answer_line") or "Answer (NA)")})
     if (question.get("text_layer_draft") or {}).get("answer_bonus"):
         flags.append({"code": "bonus",
                       "text": "The booklet prints \"%s\": NTA dropped this question and gave every "
@@ -344,6 +425,31 @@ def record_flags(question, publisher, ai, solution_steps):
                       "text": "The printed solution says \"%s\": the question has no correct option "
                               "as printed, and the printed answer comes from a corrected reading."
                               % said.strip()})
+    # THE BOOKLET AGAINST ITSELF, kept apart from answers_differ: 2021_O1 q032 prints "Answer: (c)"
+    # above a solution whose reasoning concludes (a). The printed answer stays as printed; this says
+    # the source contradicts itself, which is a different defect from our solver disagreeing.
+    if verdict_self(publisher, concludes) == "publisher_contradicts_itself":
+        flags.append({"code": "publisher_contradicts_itself",
+                      "text": "The booklet prints answer (%s), but its own printed solution works out "
+                              "to (%s). The printed answer is kept as printed; treat the key as "
+                              "unconfirmed for this question." % (publisher, concludes)})
+    read = agent_read(question.get("paper_id"), question["qno"]) if question.get("paper_id") else None
+    if read and read.get("printed_reversed"):
+        flags.append({"code": "printed_parentheses_reversed",
+                      "text": "The booklet prints this question's brackets backwards (for example "
+                              "\")a) - (iii(\"); they are shown the right way round here. The printed "
+                              "form is unchanged in the source crop."})
+    # THE SOLVE AGAINST THE OPTIONS: 2023_F1 q001 works out sqrt3 : sqrt5, the paper (NTA's own
+    # print too) offers 3 : 5, and the record said `agree` with no warning (four-file audit,
+    # 2026-11-03). The pick stays a best fit; this says no printed option is exactly right.
+    solve = solve_record(question.get("paper_id"), question["qno"]) if question.get("paper_id") else None
+    solve_text = " ".join([(solve or {}).get("note") or ""] + [str(s) for s in (solve or {}).get("steps") or []])
+    said = SOLVE_NO_EXACT_OPTION.search(solve_text)
+    if said:
+        flags.append({"code": "solve_no_exact_option",
+                      "text": "The independent solve found no printed option exactly right (\"%s\"); "
+                              "its pick (%s) is the closest fit, so treat this question as possibly "
+                              "misprinted." % (said.group(0), ai or "none")})
     if publisher and ai and ai not in accepted(publisher):
         flags.append({"code": "answers_differ",
                       "text": "The independent solve chose (%s); the booklet prints (%s)."
@@ -406,11 +512,34 @@ def image_attrs(q, image, out_path, counts):
         image = svg
     src = image_src(q, image, out_path, counts)
     local = os.path.relpath(os.path.join(rc.pp(*CORPUS), image), os.path.dirname(out_path))
+    if BUNDLE_DIR and os.path.dirname(os.path.abspath(out_path)) == BUNDLE_DIR:
+        local = bundle_asset(image)
     if src == local:
         return 'src="%s"' % html.escape(local.replace("\\", "/"))
     return ('src="%s" data-local="%s" onerror="if(this.dataset.local&amp;&amp;'
             'this.getAttribute(\'src\')!==this.dataset.local){this.src=this.dataset.local}"'
             % (html.escape(src), html.escape(local.replace("\\", "/"))))
+
+
+#: Set by write_data(): the deliverable folder whose page carries its own copy of every image.
+BUNDLE_DIR = None
+
+
+def bundle_asset(image):
+    """Copy one image into <deliverable>/assets/ and return its path relative to the page.
+
+    THE PAGE MUST OPEN WITH NO NETWORK (2021_O1 audit: 561 images were CDN-only, and the local
+    fallback pointed into papers/, which a copied-out deliverable folder does not have). The CDN URL
+    stays the src; this copy is the `data-local` the img swaps to when the URL fails, so the folder
+    alone -- html + assets/ -- is a complete offline package."""
+    import shutil
+    rel = os.path.normpath(image)
+    source = os.path.join(rc.pp(*CORPUS), rel)
+    target = os.path.join(BUNDLE_DIR, "assets", rel)
+    if os.path.exists(source) and not os.path.exists(target):
+        os.makedirs(os.path.dirname(target), exist_ok=True)
+        shutil.copy2(source, target)
+    return ("assets/" + rel).replace("\\", "/")
 
 
 WITHHELD_NOTE = ('<p class="flag">our drawing is withheld: it did not pass the check against the '
@@ -621,7 +750,7 @@ PART_CSS = """
 .classify th{text-align:left;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
  opacity:.55;padding:.1em 1.1em .1em 0;white-space:nowrap;vertical-align:top;font-size:.88em}
 .classify td{padding:.1em 0;vertical-align:top}
-.classify tr.unset td{opacity:.6;font-style:italic}\n.classify tr.reason th{opacity:.38}\n.classify tr.reason td{opacity:.8;max-width:54em;font-size:.97em}
+.classify tr.unset td,.classify tr.na td{opacity:.6;font-style:italic}\n.classify tr.reason th{opacity:.38}\n.classify tr.reason td{opacity:.8;max-width:54em;font-size:.97em}
 .chip.gap{border-style:dashed;opacity:.85}
 .stmts,.match{border-collapse:collapse;margin:.6em 0;width:100%;font-size:.95em}
 .stmts td,.match td{border:1px solid currentColor;padding:.26em .5em;vertical-align:top}
@@ -830,11 +959,11 @@ def mapping_reasons(paper_id, qno):
     """
     chapter = _mapping(QCHAP_OUT, paper_id, qno) or {}
     topic = _mapping(QTOPIC_OUT, paper_id, qno) or {}
-    return (chapter.get("why") or "", topic.get("why") or "")
+    return (chapter.get("why") or "", topic.get("why") or "", topic.get("why_second") or "")
 
 
 def classification_html(subject, stream, branch, chap_names, topic_names, confidence, gap,
-                        chapter_why="", topic_why=""):
+                        chapter_why="", topic_why="", topic_why_second=""):
     """The question's classification, with every field LABELLED.
 
     This replaced a row of bare chips. Chips look tidy and are useless to the person who has to
@@ -857,10 +986,18 @@ def classification_html(subject, stream, branch, chap_names, topic_names, confid
                     % (css, html.escape(label), html.escape(value), extra))
 
     add("subject", subject or "not assigned")
-    if (subject or "").lower() == "chemistry":
-        add("stream", stream or "not assigned (chapter unmapped)")
-    if (subject or "").lower() == "biology":
-        add("branch", branch or "not assigned (chapter unmapped)")
+    # STREAM AND BRANCH ON EVERY CARD. They used to appear only for the subject that has them, so a
+    # Physics card had no stream row at all -- and a reviewer could not tell "not applicable" from
+    # "dropped by the renderer" (2021_O1 audit: 150 of 200 cards). Three states, said in words.
+    lower = (subject or "").lower()
+    if lower == "chemistry":
+        add("stream", stream or "not assigned (chapter unmapped)", "" if stream else "unset")
+    else:
+        add("stream", "not applicable (%s has no streams)" % (subject or "this subject"), "na")
+    if lower == "biology":
+        add("branch", branch or "not assigned (chapter unmapped)", "" if branch else "unset")
+    else:
+        add("branch", "not applicable (%s has no branches)" % (subject or "this subject"), "na")
     if chap_names:
         add("chapter", "; ".join(chap_names),
             extra=(' <span class="conf">%s confidence</span>' % html.escape(confidence)
@@ -874,10 +1011,18 @@ def classification_html(subject, stream, branch, chap_names, topic_names, confid
         add("chapter", gap or "not mapped yet", "unset")
     for index, name in enumerate(topic_names or [], start=1):
         add("subtopic %d" % index, name)
+    # Two subtopics are allowed, so the second is always named: "not assigned" is a real answer
+    # (one home is the usual case), and an absent row reads as a renderer that dropped it.
+    if len(topic_names or []) == 1:
+        add("subtopic 2", "not assigned (one subtopic chosen)", "na")
     # One reason after both ids: QTOPIC gives a single `why` for its choice, and repeating it under
     # each id would imply each was argued for separately.
     if topic_why:
-        add("why this subtopic", topic_why, "reason")
+        add("why subtopic 1" if len(topic_names or []) > 1 else "why this subtopic", topic_why,
+            "reason")
+    if len(topic_names or []) > 1:
+        add("why subtopic 2", topic_why_second or "not given by the agent",
+            "reason" if topic_why_second else "unset")
     if not topic_names:
         add("subtopic", "not mapped yet" if chap_names else "blocked: needs a chapter first",
             "unset")
@@ -1408,7 +1553,8 @@ def question_record(paper_id, meta, q):
         "question_id": "%s__q%03d" % (paper_id, qno),
         "paper_code": paper_id, "year": q.get("year"), "booklet_code": q.get("booklet_code"),
         "qno": qno,
-        "flags": record_flags(q, publisher, ai, sol.get("solution_stepwise") or []),
+        "flags": record_flags(q, publisher, ai, sol.get("solution_stepwise") or [],
+                              sol.get("concludes")),
         "restored_opening": restored_opening(q),
 
         "question_text": stem, "options": options,
@@ -1436,7 +1582,8 @@ def question_record(paper_id, meta, q):
         "ai_solution_stepwise": ai_steps(solve),
         "ai_why": solve.get("reason"), "ai_confidence": solve.get("confidence"),
 
-        "verdict_answer": verdict_code(publisher, ai),
+        "verdict_answer": (source_status(draft, sol.get("solution_stepwise") or [], concludes)
+                           or verdict_code(publisher, ai)),
         "verdict_self": verdict_self(publisher, concludes),
 
         "subject": subject, "subject_from": subject_from,
@@ -1453,9 +1600,10 @@ def question_record(paper_id, meta, q):
         "subtopic_1_why": qtopic.get("why") if topic_ids else None,
         "subtopic_2_id": topic_ids[1] if len(topic_ids) > 1 else None,
         "subtopic_2_name": topic_names[1] if len(topic_names) > 1 else None,
-        # QTOPIC writes ONE `why` for its pick; it is not copied onto the second subtopic, because a
-        # reason the agent gave for the first is not a reason it gave for the second.
-        "subtopic_2_why": None,
+        # QTOPIC's `why` argues for the first pick and is never copied onto the second: a reason the
+        # agent gave for the first is not a reason it gave for the second. `why_second` is the
+        # agent's own reason for the second (added after the 2022_Q1 audit), else null.
+        "subtopic_2_why": (qtopic.get("why_second") if len(topic_ids) > 1 else None),
         "taxonomy_gap": taxonomy_gap(paper_id, qno),
 
         "difficulty_level": band or None, "difficulty_steps": steps_count or None,
@@ -1541,7 +1689,12 @@ def write_data(paper):
         shutil.rmtree(folder)
     document = booklet_document(paper)
     _write_json(os.path.join(folder, "questions.json"), document)
-    counts = write_html(paper, os.path.join(folder, "question_paper.html"))
+    global BUNDLE_DIR
+    BUNDLE_DIR = os.path.abspath(folder)
+    try:
+        counts = write_html(paper, os.path.join(folder, "question_paper.html"))
+    finally:
+        BUNDLE_DIR = None
     # the third deliverable, from the same records as the JSON (code/paper_md.py)
     paper_md.write(document, os.path.join(folder, "question_paper.md"))
     return folder, document, counts
@@ -1594,7 +1747,14 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
     source, stem_text, options, answer = reading(paper_id, q)
     solved, confidence, why = solved_answer(paper_id, q["qno"])
     stand = verdict(answer, solved)
-    counts[("verdict_" + stand.lower().replace(" ", "_"))] += 1
+    sol_for_status = publisher_solution(paper_id, q["qno"]) or {}
+    status = source_status(draft, [] if "error" in sol_for_status else
+                           sol_for_status.get("solution_stepwise") or [],
+                           None if "error" in sol_for_status else sol_for_status.get("concludes"))
+    if status:
+        counts["source_" + status] += 1
+    else:
+        counts[("verdict_" + stand.lower().replace(" ", "_"))] += 1
     counts["read_by_agent" if source == "agent" else "read_from_draft"] += 1
     flags = []
     if source == "draft" and q.get("needs_image_read"):
@@ -1607,10 +1767,12 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
         counts["short_options"] += 1
     if not answer:
         flags.append("no printed answer found")
+        # counted HERE, for every question: it used to be counted only inside the key-grid branch
+        # below, so 2022 Q1's two `Answer (NA)` questions showed "0 no printed answer"
+        counts["no_answer"] += 1
     if is_key_grid(stem_text):
         flags.append("NOT A QUESTION: this is a row of the booklet's printed answer-key grid")
         counts["key_grid_rows"] += 1
-        counts["no_answer"] += 1
     if not stem_text:
         flags.append("empty stem")
         counts["empty_stem"] += 1
@@ -1646,7 +1808,8 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
     sol = publisher_solution(paper_id, q["qno"]) or {}
     warnings = [f["text"] for f in record_flags(q, answer, solved,
                                                  [] if "error" in sol else
-                                                 sol.get("solution_stepwise") or [])
+                                                 sol.get("solution_stepwise") or [],
+                                                 None if "error" in sol else sol.get("concludes"))
                 if f["code"] != "answers_differ"]
     parts = ['<div class="q" id="q%03d"><div class="qhead">%s<span class="qno">Q%d</span>'
              '<span class="subj" title="%s">%s</span>%s</div>%s'
@@ -1998,6 +2161,10 @@ def write_html(paper, out_path):
         ("answers all agree", counts["verdict_all_agree"] + counts["verdict_agree"]),
         ("answer disagreements", counts["verdict_solved_differs_from_official"]
          + counts["verdict_solved_differs_from_booklet"]),
+        ("solve unsure", counts["verdict_solve_was_unsure"]),
+        ("answers unchecked", counts["verdict_unchecked"]),
+        ("booklet keys no valid option", counts["source_publisher_no_valid_option"]),
+        ("booklet contradicts its own key", counts["source_publisher_contradicts_itself"]),
     ]
     head = (
         "<title>NEET %s Code %s &middot; extraction v2</title>"

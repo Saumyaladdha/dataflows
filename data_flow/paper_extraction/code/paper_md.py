@@ -7,6 +7,8 @@ a restored opening, a drawing on the booklet's geometry, a flag -- is in the Mar
 Markdown with `$...$` LaTeX, as the records hold it (GitHub, Obsidian and most viewers render it).
 Every image is its CDN link with the file's fingerprint, like the HTML.
 """
+import re
+
 import record_v3
 
 
@@ -63,7 +65,13 @@ def question_md(r):
     if q["chemistry"]:
         lines += ["Structures: %s" % _chem(q["chemistry"]), ""]
     for s in q["statements"]:
-        lines.append("- %s%s" % ("**(%s)** " % s["label"] if s.get("label") else "", s.get("text") or ""))
+        # The label is printed as-is and plain: it already carries its brackets ("(a)", "A."), and
+        # bold is how this file marks the KEYED option -- a bold "((a))" read as an answer choice
+        # (2022 Q1 audit: q091, q102, ... 11 questions).
+        label = (s.get("label") or "").strip()
+        if label and not re.match(r"^[\(\[]", label) and not label.endswith((".", ")", ":")):
+            label = "(%s)" % label
+        lines.append("- %s%s" % (label + " " if label else "", s.get("text") or ""))
     if q["statements"]:
         lines.append("")
     if q["list_i"]:

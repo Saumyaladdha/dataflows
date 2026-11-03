@@ -487,6 +487,11 @@ class QTOPICPlugin(_QBase):
                 return ("topic_id(s) %s are not in this chapter's list -- a topic from elsewhere "
                         "means the CHAPTER choice was wrong, which belongs in `note`"
                         % ", ".join(outside))
+        # The brief requires `why_second` with two ids; 2023_F1 shipped 13 second subtopics with no
+        # reason because nothing enforced it (four-file audit, 2026-11-03).
+        if len(ids) > 1 and len(str(data.get("why_second") or "").split()) < 4:
+            return ("`why_second` is missing: two topic_ids need one sentence on why the SECOND "
+                    "topic is a genuine second home for this question; `why` argues only for the first")
         tally["mapped"] += 1
         names = [n.lower() for n in (data.get("topic_names") or [])]
         if any("unspecified" in n for n in names):

@@ -63,6 +63,9 @@ Pick the topic this question tests. One, or two when the question compares or co
 ## Allowed values
 - `topic_ids`: one or two `topic_id` values from the list, or `["unsure"]`
 - `proposed_topic`: the missing topic's name; required with `["unsure"]` or the `Unspecified Topic` row, otherwise omit it
+- `why_second`: required when `topic_ids` holds TWO ids -- one sentence on why the SECOND topic is a
+  genuine second home for this question. `why` argues for the first; a reason for the first is not a
+  reason for the second. Omit it with one id.
 - `confidence`: high, medium, low
 
 ## Output

@@ -138,6 +138,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--paper-id", required=True)
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--draw-pictures", action="store_true",
+                    help="also draw figures the booklet prints as a picture: chemistry with RDKit "
+                         "from the checked SMILES, physics with the spec renderer")
     args = ap.parse_args()
     paper_path = rc.pp(*CORPUS, "papers", "%s.json" % args.paper_id)
     with open(paper_path, encoding="utf-8") as fh:
@@ -183,6 +186,21 @@ def main():
                             entry["layout"] = "booklet"
                             entry["print_match"] = [{"shown_as": r["shown_as"]} for r in results]
                             counts["chem_on_print"] += 1
+                        elif args.draw_pictures and any(chem_cards.needs_3d(s.get("smiles"))
+                                                        for s in card.get("species") or []):
+                            # a 3-D shape (PCl5, SF6, BrF5) flattened by RDKit reads as the wrong
+                            # geometry -- exactly what such a question asks about. Printed copy only.
+                            entry.update(status="not_drawn_3d", message="not drawn: a 2-D drawing "
+                                         "would misstate this structure's 3-D shape; the printed "
+                                         "copy is the figure")
+                            counts["chem_not_drawn_3d"] += 1
+                            drawn[png] = entry
+                            continue
+                        elif args.draw_pictures:
+                            # --draw-pictures: RDKit from the checked SMILES, shown beside the
+                            # printed copy (never instead of it).
+                            svg = chem_figure(card)
+                            entry["layout"] = "rdkit"
                         elif png not in (question.get("vector") or {}):
                             # A PICTURE-PRINTED FIGURE (2015, 2016, 2020): no drawing. Potrace
                             # outlines of a scanned picture tore its letters apart -- 2015_A q008's
@@ -247,6 +265,13 @@ def main():
                 # checked against (lib/spec_trace.py): 2017_A q016's isotherms, open chevrons and
                 # roman numerals as printed, not the renderer's approximation of them.
                 trace, wrong = figure_plugins.physics_trace(paper, figures[figure_id], output["spec"])
+                if trace is not None and not wrong and args.draw_pictures:
+                    # a trace that lost printed text (2022_Q1 q001's table kept the exponents and
+                    # dropped every "10", recall 0.78) is drawn from the spec instead
+                    from lib import spec_trace
+                    found = spec_trace.agreement(output["spec"], trace)
+                    if (found.get("recall") or 0) < 0.9:
+                        trace = None
                 if trace is not None and not wrong:
                     from lib import spec_trace
                     found = spec_trace.agreement(output["spec"], trace)
@@ -264,6 +289,18 @@ def main():
                     counts["phys_failed"] += 1
                     drawn[png] = entry
                     continue
+                elif args.draw_pictures:
+                    # --draw-pictures: the spec renderer's own layout, from a spec that passed
+                    # check_spec; beside the printed copy, never instead of it.
+                    svg = physics_figure.render(output["spec"])
+                    if not svg:
+                        entry.update(status="failed_check", message="spec renderer drew nothing")
+                        counts["phys_failed"] += 1
+                        drawn[png] = entry
+                        continue
+                    write(rel, svg)
+                    entry["layout"] = "spec"
+                    counts["phys_spec"] += 1
                 else:
                     # a picture-printed figure: no drawing (see the chemistry branch above) --
                     # never the spec renderer's layout either, which floated 2016_A q034's gates

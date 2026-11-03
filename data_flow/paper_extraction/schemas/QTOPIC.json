@@ -47,6 +47,11 @@
         "proposed_topic": {
           "type": "string",
           "description": "The topic you wanted and could not find, named as it should appear in the taxonomy (for example \"Transport in Plants\", or \"Doppler Effect\"). Fill this WHENEVER you answer unsure, pick \"Unspecified Topic\", or settle for a near neighbour you are not happy with. It is how a gap becomes a fix: scripts/collect_taxonomy_gaps.py gathers these into one list with the questions that wanted each, so a missing topic is added once rather than worked around for ever."
+        },
+        "why_second": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Required in practice whenever topic_ids holds TWO ids: why the SECOND subtopic is a genuine second home for this question, in one sentence. `why` argues for the first; a reason for the first is not a reason for the second (2022_Q1 audit: 17 second subtopics had none). Optional in the schema so outputs written before it existed stay valid."
         }
       }
     },

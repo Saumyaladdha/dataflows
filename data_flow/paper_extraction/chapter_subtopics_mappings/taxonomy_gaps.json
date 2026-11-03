@@ -1,29 +1,57 @@
 {
  "source": "steps/QCHAP/out and steps/QTOPIC/out",
- "chapters_wanted": [
-  {
-   "chapter": "unnamed: Input subject is 'Physics' but the question is about proteins (ovalbumin, thrombin/fibrinogen, denaturation, i",
-   "questions": [
-    "2017_B#q039"
-   ],
-   "question_count": 1,
-   "notes": [
-    "Input subject is 'Physics' but the question is about proteins (ovalbumin, thrombin/fibrinogen, denaturation, insulin), a Chemistry 'Biomolecules' topic (could also be Biology 'Biomolecules'). No chapter in the given Physics list fits; the subject label looks wrong. Expected chapter: Biomolecules (Chemistry)."
-   ]
-  }
- ],
+ "chapters_wanted": [],
  "topics_wanted": [
   {
-   "topic": "Lipids",
+   "topic": "Homogeneous and Heterogeneous Catalysis",
    "in_chapters": [
-    "Biomolecules"
+    "Surface Chemistry"
    ],
    "questions": [
-    "2017_B#q047"
+    "2023_F1#q052"
    ],
    "question_count": 1,
    "notes": [
-    "Biomolecules topics cover carbohydrates, proteins, enzymes, nucleic acids and vitamins only; no lipid or polymeric-vs-non-polymeric biomolecules topic exists. The question may also fit Biology 'Biomolecules' (Class 11), where lipids as non-polymeric biomolecules are taught."
+    "Surface Chemistry topic list covers only adsorption thermodynamics and colloids; no catalysis topic exists. Chapter choice itself (Surface Chemistry) is appropriate for catalysis."
+   ]
+  },
+  {
+   "topic": "Intermolecular Forces",
+   "in_chapters": [
+    "States of Matter"
+   ],
+   "questions": [
+    "2023_F1#q074"
+   ],
+   "question_count": 1,
+   "notes": [
+    "States of Matter lists only Graham's Law, Real Gases/van der Waals, Dalton's Law and Gas Laws; none covers types of intermolecular forces."
+   ]
+  },
+  {
+   "topic": "Tranquilizers",
+   "in_chapters": [
+    "Chemistry in Everyday Life"
+   ],
+   "questions": [
+    "2023_F1#q077"
+   ],
+   "question_count": 1,
+   "notes": [
+    "Chemistry in Everyday Life lists only Analgesics, Antiseptics and Disinfectants, Antibiotics, and Cleansing Agents - Soaps and Detergents; tranquilizers (drugs acting on the nervous system) are missing."
+   ]
+  },
+  {
+   "topic": "Water Pollution",
+   "in_chapters": [
+    "Environmental Chemistry"
+   ],
+   "questions": [
+    "2023_F1#q097"
+   ],
+   "question_count": 1,
+   "notes": [
+    "Environmental Chemistry lists only 'Unspecified Topic' and 'Air Pollution'; eutrophication belongs under Water Pollution."
    ]
   }
  ]

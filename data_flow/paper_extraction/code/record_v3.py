@@ -262,6 +262,15 @@ def _chem_text(species):
     return "; ".join("%s [SMILES: %s]" % (s["name"] or "structure", s["smiles"]) for s in species)
 
 
+def _field_status(value, subject, owner):
+    """Why `stream`/`branch` holds what it holds: `assigned`, `not_applicable` (the subject has no
+    such field -- Physics has no stream) or `unassigned` (it applies, but the chapter is unmapped).
+    A bare null cannot tell those apart (2022_Q1 audit: 150 null streams, 100 null branches)."""
+    if value:
+        return "assigned"
+    return "unassigned" if (subject or "").lower() == owner else "not_applicable"
+
+
 def build(q, flat, read):
     """The v3 record for one question, from the v2 record `flat` (whose helpers stay the single
     source of every value) and the paper JSON entry `q` (figures, drawings, CDN links)."""
@@ -446,7 +455,10 @@ def build(q, flat, read):
         ("classification", collections.OrderedDict([
             ("subject", flat["subject"]), ("subject_from", flat["subject_from"]),
             ("subject_why", flat["subject_why"]), ("subject_confidence", flat["subject_confidence"]),
-            ("stream", flat["stream"]), ("branch", flat["branch"]),
+            ("stream", flat["stream"]),
+            ("stream_status", _field_status(flat["stream"], flat["subject"], "chemistry")),
+            ("branch", flat["branch"]),
+            ("branch_status", _field_status(flat["branch"], flat["subject"], "biology")),
             ("chapter", collections.OrderedDict([
                 ("code", flat["chapter_code"]), ("name", flat["chapter_name"]),
                 ("why", flat["chapter_why"]), ("confidence", flat["chapter_confidence"])])),
