@@ -1,31 +1,29 @@
 {
  "source": "steps/QCHAP/out and steps/QTOPIC/out",
- "chapters_wanted": [],
+ "chapters_wanted": [
+  {
+   "chapter": "unnamed: Input subject is 'Physics' but the question is about proteins (ovalbumin, thrombin/fibrinogen, denaturation, i",
+   "questions": [
+    "2017_B#q039"
+   ],
+   "question_count": 1,
+   "notes": [
+    "Input subject is 'Physics' but the question is about proteins (ovalbumin, thrombin/fibrinogen, denaturation, insulin), a Chemistry 'Biomolecules' topic (could also be Biology 'Biomolecules'). No chapter in the given Physics list fits; the subject label looks wrong. Expected chapter: Biomolecules (Chemistry)."
+   ]
+  }
+ ],
  "topics_wanted": [
   {
-   "topic": "Condensation Polymers: Polyamides (Nylon-6 and Nylon-6,6)",
+   "topic": "Lipids",
    "in_chapters": [
-    "Polymers"
+    "Biomolecules"
    ],
    "questions": [
-    "2015_A#q008"
+    "2017_B#q047"
    ],
    "question_count": 1,
    "notes": [
-    "Polymers lists only Natural Rubber and Vulcanisation, Classification Based on Structure, and Biodegradable Polymers; no topic for polymerisation types or commercially important polymers (Nylon-6, Nylon-6,6, Terylene, Teflon). Chapter choice is correct."
-   ]
-  },
-  {
-   "topic": "Skeletal System and Its Functions",
-   "in_chapters": [
-    "Locomotion and Movement"
-   ],
-   "questions": [
-    "2015_A#q086"
-   ],
-   "question_count": 1,
-   "notes": [
-    "The chapter's skeleton topics are only 'Axial Skeleton' and 'Appendicular Skeleton', and both cover specific bones, not the functions of the skeletal system as a whole. If no new topic is added, 'Axial Skeleton' is the closest fallback, since the NCERT section 'Skeletal System' introduction comes just before it."
+    "Biomolecules topics cover carbohydrates, proteins, enzymes, nucleic acids and vitamins only; no lipid or polymeric-vs-non-polymeric biomolecules topic exists. The question may also fit Biology 'Biomolecules' (Class 11), where lipids as non-polymeric biomolecules are taught."
    ]
   }
  ]

@@ -1765,6 +1765,15 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
     # cutter, and on 20 of 2015_A's questions it appeared as a paragraph explaining the absence
     # of something a reader was never going to miss. It stays on the record in the JSON.
     option_images = q.get("agent_option_images") or {}
+    # ...except an option whose picture only repeats the formula its words spell out: shown as
+    # text like the options around it (record_v3.formula_picture_option, 2015_A q001).
+    drawings = q.get("drawn") or {}
+    option_images = {k: p for k, p in option_images.items()
+                     if not record_v3.formula_picture_option(
+                         (options or {}).get(k),
+                         ((drawings.get(p) or {}).get("card") or {}).get("species"),
+                         (drawings.get(p) or {}).get("status"),
+                         all(o not in option_images for o in (options or {}) if o != k))}
     if options and option_images:
         # EACH PICTURE OPTION BESIDE ITS OWN NUMBER. The alternative -- one tall strip of four
         # drawings above four `[structure diagram]` lines -- makes the reader count down the

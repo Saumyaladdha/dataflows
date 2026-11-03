@@ -43,10 +43,42 @@ def _rdkit():
     return Chem, rdChemReactions, rdMolDescriptors, rdMolDraw2D
 
 
+#: The highest valence the booklets draw on an expanded-octet atom. RDKit refuses a halogen above
+#: valence 1 unless its neighbours are all more electronegative, so Br3O8's chain
+#: O=Br(=O)(=O)-Br(=O)(=O)-Br(=O)(=O)=O (2019_P1 q048) did not parse; the reader fell back to
+#: charge-separated single bonds, and the print's double bonds rightly rejected those.
+EXPANDED_OCTET = {"Cl": 7, "Br": 7, "I": 7, "S": 6, "Se": 6, "Te": 6, "P": 5, "As": 5, "Xe": 8}
+
+
+def mol_from_smiles(smiles):
+    """RDKit's molecule for a SMILES, or None. A valence RDKit refuses is accepted only on an
+    EXPANDED_OCTET atom within its limit; every other chemistry problem still fails the SMILES."""
+    Chem = _rdkit()[0]
+    mol = Chem.MolFromSmiles(smiles or "")
+    if mol is not None or not smiles:
+        return mol
+    raw = Chem.MolFromSmiles(smiles, sanitize=False)
+    if raw is None:
+        return None
+    for problem in Chem.DetectChemistryProblems(raw):
+        if problem.GetType() != "AtomValenceException":
+            return None
+        atom = raw.GetAtomWithIdx(problem.GetAtomIdx())
+        valence = sum(b.GetBondTypeAsDouble() for b in atom.GetBonds()) + atom.GetNumExplicitHs()
+        if valence > EXPANDED_OCTET.get(atom.GetSymbol(), 0):
+            return None
+    try:
+        Chem.SanitizeMol(raw, Chem.SANITIZE_ALL ^ Chem.SANITIZE_PROPERTIES)
+    except Exception:                                           # noqa: BLE001
+        return None
+    raw.UpdatePropertyCache(strict=False)
+    return raw
+
+
 def species_facts(smiles):
     """(ok, facts|message) for one SMILES: canonical form, formula, InChIKey where it can be made."""
     Chem, _rxn, desc, _draw = _rdkit()
-    mol = Chem.MolFromSmiles(smiles)
+    mol = mol_from_smiles(smiles)
     if mol is None:
         return False, "SMILES does not parse: %s" % smiles
     facts = {"canonical": Chem.MolToSmiles(mol), "formula": desc.CalcMolFormula(mol),
@@ -127,7 +159,7 @@ _METALS = {"Fe", "Co", "Ni", "Cr", "Mn", "Pt", "Pd", "Cu", "Zn", "Ag", "Au", "Ti
 def _skeleton(smiles):
     """The standard InChI without its charge and protonation layers (the key hashes them in)."""
     from rdkit import Chem
-    mol = Chem.MolFromSmiles(smiles or "")
+    mol = mol_from_smiles(smiles)
     if mol is None:
         return None
     inchi = Chem.MolToInchi(mol) or ""
@@ -136,7 +168,7 @@ def _skeleton(smiles):
 
 def _has_metal(smiles):
     from rdkit import Chem
-    mol = Chem.MolFromSmiles(smiles or "")
+    mol = mol_from_smiles(smiles)
     return bool(mol) and any(a.GetSymbol() in _METALS for a in mol.GetAtoms())
 
 
@@ -168,7 +200,7 @@ def _prepare(smiles, orient=None, explicit_h=None):
     Chem, _rxn, _desc, _draw = _rdkit()
     from rdkit.Chem import rdDepictor
     from rdkit.Geometry import Point3D
-    mol = Chem.MolFromSmiles(smiles)
+    mol = mol_from_smiles(smiles)
     if mol is None:
         return None
     handles = {}

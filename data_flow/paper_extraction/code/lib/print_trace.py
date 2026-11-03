@@ -31,6 +31,8 @@ import networkx as nx
 from networkx.algorithms import isomorphism
 from rdkit import Chem
 
+from lib import chem_cards
+
 #: Elements a printed structure label is made of. Deliberately short: "X", "Y", "Z" and "A" are the
 #: booklet's unknowns, never atoms, so they must not parse as labels.
 ELEMENTS = {"H", "B", "C", "N", "O", "F", "Si", "P", "S", "Cl", "Br", "I", "Na", "K", "Li", "Mg",
@@ -41,6 +43,8 @@ ELEMENTS = {"H", "B", "C", "N", "O", "F", "Si", "P", "S", "Cl", "Br", "I", "Na",
 TOKEN = re.compile(r"([A-Z][a-z]?)(\d*)")
 LABEL = re.compile(r"^(?:[A-Z][a-z]?\d*)+$")
 DASHES = "–—−-"
+#: A bond a typeset formula writes as a character, by its order: "O = Br – Br" (2019_P1 q048)
+TYPED_BONDS = dict({c: 1 for c in DASHES}, **{"=": 2, "≡": 3})
 #: "(1)", "(iv)", "(B)": the labels a figure of options or parts is laid out by
 OPTION_LABEL = re.compile(r"^\((?:[1-9]|[ivxIVX]{1,4}|[a-dA-D])\)$")
 CHARGES = "+–−-⊕⊖"
@@ -836,7 +840,7 @@ def _labels_and_dash_bonds(glyphs):
                     parts.append(cur)
                 cur = []
                 continue
-            if g.c in DASHES and g.script is None:
+            if g.c in TYPED_BONDS and g.script is None:
                 if cur:
                     parts.append(cur)
                 parts.append([g])
@@ -857,8 +861,8 @@ def _labels_and_dash_bonds(glyphs):
         charge = "".join(g.c for g in part if g.script == "sup")
         lab = Label(text, part)
         lab.charge = charge
-        if text in DASHES or text.strip() in DASHES:
-            lab.tokens = None             # a dash
+        if text.strip() in TYPED_BONDS:
+            lab.tokens = None             # a dash (or a typed "=")
         elif text in ABBREVIATIONS:
             # A GROUP WRITTEN AS ITS SHORT NAME: 2019_P1 q069 prints phenol as "Ph-O-H". The bond
             # arrives at the group's first carbon; the rest of the group only counts, as the
@@ -935,7 +939,7 @@ def _labels_and_dash_bonds(glyphs):
                  and -1.0 <= c.bbox[0] - d.bbox[2] < 1.2 * size]
         if left and right:
             dash_bonds.append((max(left, key=lambda c: c.bbox[2]), min(right, key=lambda c: c.bbox[0]),
-                               1 if d.text in DASHES else 2))
+                               TYPED_BONDS[d.text.strip()]))
     return chem, dash_bonds, built
 
 
@@ -1262,10 +1266,11 @@ def _label_anchor(data):
 
 def match(trace, component, smiles):
     """{atom index -> printed node} when the SMILES IS this printed molecule, else (None, why)."""
-    mol = Chem.MolFromSmiles(smiles)
+    mol = chem_cards.mol_from_smiles(smiles)
     if mol is None:
         return None, "SMILES does not parse"
-    mol = Chem.RemoveHs(mol)
+    # an expanded-octet molecule (chem_cards.mol_from_smiles) fails RDKit's re-sanitize
+    mol = Chem.RemoveHs(mol, sanitize=Chem.MolFromSmiles(smiles) is not None)
     G = trace.graph
     P = G.subgraph(component["core"]).copy()
     for node in P.nodes:
@@ -1362,7 +1367,7 @@ def assign(trace, species_list):
             results.append({"component": found[0], "mapping": found[1], "shown_as": "structure"})
             continue
         # written as a formula ("+ CH3I", "NH2-"): a lone label with the same atoms
-        mol = Chem.MolFromSmiles(smiles)
+        mol = chem_cards.mol_from_smiles(smiles)
         written = None
         if mol is not None:
             mol = Chem.AddHs(mol)

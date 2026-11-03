@@ -74,9 +74,12 @@ def question_md(r):
             lines.append("| %s | %s | %s | %s |" % (_cell(x.get("label")), _cell(x.get("text")),
                                                    _cell(y.get("label")), _cell(y.get("text"))))
         lines.append("")
+    as_text = record_v3.options_shown_as_text(q["options"])
     for opt in q["options"]:
         parts = []
-        if opt["chemistry"]:
+        if opt["key"] in as_text:
+            pass
+        elif opt["chemistry"]:
             parts.append(_chem(opt["chemistry"]))
         elif opt.get("figure"):
             parts.append(_figure(opt["figure"]).replace("\n\n", " "))
