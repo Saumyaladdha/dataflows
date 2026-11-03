@@ -597,6 +597,9 @@ PART_CSS = """
 .opttext{margin:.25em 0 .1em}
 .labelrow{margin:.12em 0}
 .concept{font-style:italic}
+.livewhy{color:var(--ink2);margin-top:3px;line-height:1.45}
+.longexec{color:#8a1c1c;font-weight:600}
+.overparen{border-top:1.4px solid currentColor;border-radius:50% 50% 0 0/100% 100% 0 0;padding:0 .22em;display:inline-block;line-height:1.15}
 .axis{display:inline-block;font-family:ui-monospace,monospace;font-weight:700;\n padding:0 .3em;border-radius:3px;border:1px solid currentColor;margin-right:.35em;\n font-size:.92em;letter-spacing:0}\n.classify th .means{display:block;text-transform:none;letter-spacing:0;font-weight:400;\n opacity:.6;font-size:.95em;max-width:14em;white-space:normal}
 .label{font-family:ui-monospace,monospace;font-size:.92em;font-weight:600}
 .means{display:block;opacity:.72;font-size:.95em;line-height:1.35}
@@ -1087,6 +1090,24 @@ def axis_card(axis, fallback, body, wide=False):
                html.escape(entry.get("means") or ""), body))
 
 
+def _live_row(raw):
+    """The live-option count, which options those are, and why -- when the rater gave them."""
+    n = (raw or {}).get("live_options")
+    if not n:
+        return ""
+    keys = ", ".join(str(k) for k in (raw.get("live_option_keys") or []))
+    bits = "<b>%s of 4</b>" % html.escape(str(n))
+    if keys:
+        bits += ' &middot; option%s %s' % ("" if len(raw.get("live_option_keys") or []) == 1
+                                           else "s", html.escape(keys))
+    if raw.get("long_to_execute"):
+        bits += ' &middot; <span class="longexec">long to execute</span>'
+    why = raw.get("why_live") or ""
+    if why:
+        bits += '<div class="livewhy">%s</div>' % texhtml.greek_in_relation(why)
+    return '<tr><th>confusing options</th><td>%s</td></tr>' % bits
+
+
 def difficulty_of(paper_id, qno):
     """(band, steps_to_solve, steps, why, what_makes_it_hard) from E7V, or empties."""
     data = _mapping(E7V_OUT, paper_id, qno) or {}
@@ -1094,7 +1115,7 @@ def difficulty_of(paper_id, qno):
         return ("", 0, [], "", "")
     return (data.get("difficulty") or "", data.get("steps_to_solve") or 0,
             data.get("steps") or [], data.get("why") or "",
-            data.get("what_makes_it_hard") or "")
+            data.get("what_makes_it_hard") or "", data)
 
 
 def categories_of(paper_id, qno):
@@ -1288,7 +1309,7 @@ def _status(done, unsure=False):
 #: Which step is owed for each status field, so `pending` names the work rather than the gap.
 PENDING_STEP = {"question": "B3V", "publisher_solution": "B3S", "ai_solution": "B6V",
                 "subject": "QSUBJ", "chapter": "QCHAP", "subtopic": "QTOPIC",
-                "difficulty": "E7V", "figures": "B3V"}
+                "difficulty": "E7V", "figures": "B3V", "categories": "ECAT"}
 
 
 def question_record(paper_id, meta, q):
@@ -1312,7 +1333,7 @@ def question_record(paper_id, meta, q):
     qtopic = _mapping(QTOPIC_OUT, paper_id, qno) or {}
     codes, chap_names, topic_ids, topic_names, chap_conf = chapter_topic(paper_id, qno)
     stream, branch = stream_and_branch(subject, branch, codes, chap_names)
-    band, steps_count, band_steps, band_why, band_hard = difficulty_of(paper_id, qno)
+    band, steps_count, band_steps, band_why, band_hard, band_raw = difficulty_of(paper_id, qno)
     ai = solve.get("answer")
     concludes = sol.get("concludes")
 
@@ -1396,7 +1417,12 @@ def question_record(paper_id, meta, q):
         "subtopic": _status(bool(qtopic), topic_unsure),
         "difficulty": _status(bool(band), band == "unsure"),
         "figures": figure_status,
-        "categories": "excluded",
+        # NOT HARDCODED ANY MORE. `categories` read "excluded" on every question of every
+        # paper, including ones that had been rated -- so a reader could not tell a paper ECAT
+        # had never run on from one it had, and `pending` never asked for the work. It is now
+        # the same three-state answer as every other field: done when this question has an
+        # ECAT rating, not_run when it has none.
+        "categories": _status(bool(categories_of(paper_id, q["qno"])[0])),
     }
     pending = [PENDING_STEP[k] for k, v in status.items() if v == "not_run" and k in PENDING_STEP]
     pending = sorted(set(pending), key=pending.index)
@@ -1862,17 +1888,22 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
            html.escape(solved or "not solved yet"),
            (' <span class="conf">%s</span>' % html.escape(confidence)) if confidence else "",
            html.escape(stand)))
-    band, steps_count, steps, band_why, band_hard = difficulty_of(paper_id, q["qno"])
+    band, steps_count, steps, band_why, band_hard, band_raw = difficulty_of(paper_id, q["qno"])
     if band:
         counts["difficulty_" + band] += 1
         parts.append(
             '<table class="classify"><tr><th>difficulty</th><td><b>%s</b>%s</td></tr>'
-            '<tr><th>steps</th><td>%s</td></tr>%s%s</table>'
+            '<tr><th>steps</th><td>%s</td></tr>%s%s%s</table>'
             % (html.escape(band),
                ' &middot; %d step%s' % (steps_count, "" if steps_count == 1 else "s")
                if steps_count else "",
                texhtml.greek_in_relation(" \u2192 ".join(steps)) or "<i>none listed</i>",
-               '<tr><th>why</th><td>%s</td></tr>'
+               # THE OPTIONS SPINE. A band used to be the step count and nothing else -- 180 of
+               # 180 matched it exactly and only 2 questions in a paper came out hard. How many
+               # options a candidate would really consider is the other half, and it has to be
+               # on the page or the band cannot be argued with.
+               _live_row(band_raw),
+               '<tr><th>why it is tricky</th><td>%s</td></tr>'
                % texhtml.greek_in_relation(band_why) if band_why else "",
                # The schema field is `what_makes_it_hard`, but it is NOT a claim that the
                # question is hard: SPEC E7 defines it as the factor OTHER than step count -- a
@@ -1889,51 +1920,20 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
     rating, _group_note = categories_of(paper_id, q["qno"])
     if rating:
         counts["categorised"] += 1
-        cards = []
-        for axis, fallback, fields in (
-                ("E1", "Question type", ("question_type", "secondary_type")),
-                ("E2", "Format", ("format",)),
-                ("E3", "Content shape", ("content_shape", "concept")),
-                ("E4", "Thinking", ("cognitive_demand", "solution_structure",
-                                    "strategy_available")),
-        ):
-            # NOT `body`: that name holds the whole page's accumulator in this function, and
-            # reusing it here silently rebound it, so only the LAST question survived -- the
-            # file came out with one question in it instead of 177.
-            shown = []
-            for field in fields:
-                value = rating.get(field)
-                if not value:
-                    continue
-                render = free_text_html if field == "concept" else label_html
-                for one in (value if isinstance(value, list) else [value]):
-                    shown.append(render(one))
-            if shown:
-                cards.append(axis_card(axis, fallback, "".join(shown)))
-        # E5 is its own shape: a trap is {label, option, route}, because rulebook rule 5 says
-        # every trap names the option AND the route or there is no tag. The option is shown as
-        # its own marker so a reader can line the trap up against the printed options above.
-        traps = rating.get("traps") or []
-        if traps:
-            cards.append(axis_card("E5", "Trap", "".join(
-                label_html(t.get("label") if isinstance(t, dict) else t,
-                           t.get("route") if isinstance(t, dict) else "")
-                .replace('<div class="labelrow">',
-                         '<div class="labelrow"><span class="opt">option %s</span>'
-                         % html.escape(str(t.get("option"))) if isinstance(t, dict) else
-                         '<div class="labelrow">')
-                for t in traps)))
-        elif rating.get("note"):
-            cards.append(axis_card("E5", "Trap",
-                                   '<div class="labelrow"><span class="means">no option '
-                                   'carries a nameable device \u2014 an empty list is a real '
-                                   'answer, not an omission</span></div>'))
-        # `reason` is deliberately NOT shown, for the same reason `group_note` is not: it
-        # argues the rating rules, not the question. Each axis already carries its definition
-        # and each trap its own route, which is what a reader checking one question needs. The
-        # field stays in the JSON for whoever audits the labelling itself.
-        if cards:
-            parts.append('<div class="cats">%s</div>' % "".join(cards))
+    # THE E1-E4 AXIS CARDS ARE GONE, and this is not an omission.
+    #
+    # They rendered the five-axis sheet -- `question_type`, `format`, `content_shape`,
+    # `cognitive_demand`, `solution_structure`, `strategy_available` -- which was merged into
+    # three fields (`qtype`, `asks`, `trap`) because the axes were not independent. The card
+    # that replaces them is written by `join_ecat_into_export.py` and carries all of it plus
+    # the NCERT line and the flags.
+    #
+    # Leaving the loop in did active harm rather than nothing: E3's field list was
+    # `("content_shape", "concept")`, and `concept` is a LIVE v3 field, so every v3 rating
+    # lit up a card headed "Content shape" -- a retired axis name over a current value. It
+    # showed on 2026_11, whose page is exported fresh, and not on 2017_A, whose page is built
+    # by the joiner, so the same data described itself two different ways on two pages.
+
     if why and bad:
         parts.append('<p class="why">solver reasoning: %s</p>' % texhtml.to_html(str(why)))
 

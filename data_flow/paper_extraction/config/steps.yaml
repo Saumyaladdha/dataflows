@@ -11,7 +11,7 @@ S0:
   # (it lists fields an AGENT call may see; there is no agent call here).
   input_fields: []
   output_schema: schemas/S0.json
-  check: scripts/checks/S0.py
+  check: code/checks/S0.py
   # No agent → no retry/second-opinion/adjudicator chain. intake_check.py either finds the
   # item (status pass) or it does not (status blocked, flag raised); there is no judgement
   # to retry or adjudicate.
@@ -34,7 +34,7 @@ A1:
   # Matches the a1-book-registrar "Input" block (Appendix B) exactly.
   input_fields: [file, folder_edition_hint, page_images, text_layer]
   output_schema: schemas/A1.json
-  check: scripts/checks/A1.py
+  check: code/checks/A1.py
   # On failure (9/A1): retry once. No second opinion or adjudicator for this step — a
   # failed check resolves to a field-level default (see safe_default), not an adjudicated
   # value.
@@ -62,7 +62,7 @@ A2:
   # book is read, not just A1's single representative chapter.
   input_fields: [book_id, chapter_num, page, image, text_layer, previous_page_last_block]
   output_schema: schemas/A2.json
-  check: scripts/checks/A2.py
+  check: code/checks/A2.py
   # On failure (9/A2): retry once. A continuation (first/last block) disagreement goes to
   # the adjudicator with both page images. A text-layer mismatch is resolved deterministically
   # by the script (keep the text layer) — not by an adjudicator. An unreadable page blocks
@@ -87,7 +87,7 @@ A2S:
   # Matches the a2-special-transcriber "Input" block (Appendix B) exactly.
   input_fields: [kind, image, text_layer, table_continues_from_previous]
   output_schema: schemas/A2S.json
-  check: scripts/checks/A2S.py
+  check: code/checks/A2S.py
   # On failure (9/A2S): retry once; then keep the crop with empty text. No second opinion,
   # no adjudicator for this step.
   fallback: [retry]
@@ -111,7 +111,7 @@ A2C:
   - caption
   - labels
   output_schema: schemas/A2C.json
-  check: scripts/checks/A2C.py
+  check: code/checks/A2C.py
   fallback:
   - retry
   flags:
@@ -304,7 +304,7 @@ A2R:
   - original_image
   - rendered_image
   output_schema: schemas/A2R.json
-  check: scripts/checks/A2R.py
+  check: code/checks/A2R.py
   fallback:
   - retry
   flags:
@@ -330,7 +330,7 @@ A3:
   # page_start/page_end on the passage records it writes; it isn't something the agent acts on.
   input_fields: [book_id, chapter, section_heading, blocks]
   output_schema: schemas/A3.json
-  check: scripts/checks/A3.py
+  check: code/checks/A3.py
   # On failure (9/A3): retry once; then the safe default "one passage per block". No
   # second opinion, no adjudicator for this step.
   fallback: [retry]
@@ -355,7 +355,7 @@ A4:
   # Matches the a4-subtopic-writer "Input" block (Appendix B) exactly.
   input_fields: [chapter, chapter_title, headings, passages]
   output_schema: schemas/A4.json
-  check: scripts/checks/A4.py
+  check: code/checks/A4.py
   # On failure (9/A4): retry once for a run that fails its own checks; run A and run B are
   # the step's built-in second opinion (runs: 2); the script merges them by heading/passage
   # overlap, and a disagreement (or match rate < 70%) goes to the adjudicator.
@@ -384,7 +384,7 @@ A5:
   # agent is called only for older passages the script's heading match doesn't decide.
   input_fields: [passage, subtopics]
   output_schema: schemas/A5.json
-  check: scripts/checks/A5.py
+  check: code/checks/A5.py
   # On failure (9/A5): unsure -> adjudicator -> still unsure -> "none" + flag. No retry or
   # second opinion named for this step.
   fallback: [adjudicator]
@@ -406,7 +406,7 @@ A6:
   # other chapters.
   input_fields: [chapter_id, old_passage, new_passage, similarity]
   output_schema: schemas/A6.json
-  check: scripts/checks/A6.py
+  check: code/checks/A6.py
   # On failure (9/A6): weak-and-unsure keeps the candidate as a pair. No retry, no second
   # opinion — the adjudicator is the only non-script link, and only for weak pairs.
   fallback: [adjudicator]
@@ -425,7 +425,7 @@ A7:
   # Pure SCRIPT step (diff_pairs.py); no agent is ever called, so no input_fields apply.
   input_fields: []
   output_schema: schemas/A7.json
-  check: scripts/checks/A7.py
+  check: code/checks/A7.py
   # Section 9/A7 has no "On failure" text at all, no Checks line and no flag code appears
   # for A7 in the Section 16 catalogue. A word-level diff after normalise_quote is
   # deterministic — there is nothing to retry, adjudicate or default.
@@ -444,7 +444,7 @@ A8:
   # Matches the a8-change-judge "Input" block (Appendix B) exactly.
   input_fields: [old_passage, new_passage, diff]
   output_schema: schemas/A8.json
-  check: scripts/checks/A8.py
+  check: code/checks/A8.py
   # On failure (9/A8): the step's built-in second opinion is run A/run B (runs: 2); the
   # check is "runs A and B agree on change_type"; disagreement goes straight to the
   # adjudicator (no retry step is named in the A8 text).
@@ -470,7 +470,7 @@ A9:
   # apply.
   input_fields: []
   output_schema: schemas/A9.json
-  check: scripts/checks/A9.py
+  check: code/checks/A9.py
   # Section 9/A9 names no "On failure" text and no flag code appears for A9 in the Section
   # 16 catalogue. Writing one row per non-identical A8 result (and one deleted_topics row
   # per removed passage) is deterministic given A8's already-resolved output.
@@ -491,7 +491,7 @@ B1:
   # text layer; the manifest row.
   input_fields: [file, manifest_row, page_images, text_layer]
   output_schema: schemas/B1.json
-  check: scripts/checks/B1.py
+  check: code/checks/B1.py
   # On failure (10/B1): disagreement with the manifest is resolved deterministically by the
   # SCRIPT using the cover text (printed evidence beats the typed manifest) — no retry, second
   # opinion or adjudicator is named in the B1 step text, unlike A1's explicit "retry once".
@@ -530,7 +530,7 @@ B2:
   # Matches the b2-boundary-finder "Input" block exactly.
   input_fields: [paper_id, page, image, layout, previous_page]
   output_schema: schemas/B2.json
-  check: scripts/checks/B2.py
+  check: code/checks/B2.py
   # On failure (10/B2): retry; a boundary disagreement goes to the adjudicator with both page
   # images -> B2_BOUNDARY_ADJUDICATED. A missing question number blocks with no safe default —
   # per the agent file's explicit rule, a numbering gap (confirmed real: 2023 paper missing Q58
@@ -566,7 +566,7 @@ B3:
   # DISCREPANCY note below; the agent file (refined today) is followed as authoritative.
   input_fields: [question_image, paper_id, qno]
   output_schema: schemas/B3.json
-  check: scripts/checks/B3.py
+  check: code/checks/B3.py
   # On failure (10/B3): retry. Fewer than four options -> one re-run of B2 for this question
   # (likely a bad join), not a generic adjudicator. Duplicated options continue "as read",
   # flagged high (B4 decides). Still broken after both -> blocked, no safe default.
@@ -615,7 +615,7 @@ B3F:
   needs: "B3"
   input_fields: [paper_id, qno, role, image, target_box_in_crop, text_layer]
   output_schema: schemas/B3F.json
-  check: scripts/checks/B3F.py
+  check: code/checks/B3F.py
   fallback: [retry]
   flags:
     B3F_FIGURE_CLIPPED: normal
@@ -652,7 +652,7 @@ B3V:
   needs: "B1"
   input_fields: [paper_id, qno, question_image, text_layer_draft, text_layer_reliable, needs_image_read, needs_image_read_why, figure_images, source_pdf, page]
   output_schema: schemas/B3.json
-  check: scripts/checks/B3.py
+  check: code/checks/B3.py
   fallback: [retry]
   flags:
     B3V_DIFFERS_FROM_DRAFT: low
@@ -770,7 +770,7 @@ B4:
   # + latex_normalise), no agent call at all.
   input_fields: [question_image, paper_id, qno]
   output_schema: schemas/B4.json
-  check: scripts/checks/B4.py
+  check: code/checks/B4.py
   # On failure (10/B4): a field-by-field mismatch between the text-layer/B3 reading and B4's
   # independent reading goes straight to the adjudicator (image + both readings, differing spans
   # highlighted); no separate retry step is named — the SCRIPT-vs-AGENT or B3-vs-B4 pair is
@@ -806,7 +806,7 @@ B5:
   # real key 7%-48% of the time by subject).
   input_fields: [key_image, text_layer, booklet_code_expected]
   output_schema: schemas/B5.json
-  check: scripts/checks/B5.py
+  check: code/checks/B5.py
   # On failure (10/B5): a missing row blocks (no safe default — a question's answer source must
   # never be silently assumed). A disagreement between the agent's key copy and the key's own
   # text layer goes to the adjudicator with the key image. No retry is named for this step.
@@ -850,7 +850,7 @@ B6:
   # directly.
   input_fields: [stem_en, statements, list_i, list_ii, options_en, figure_image]
   output_schema: schemas/B6.json
-  check: scripts/checks/B6.py
+  check: code/checks/B6.py
   # "Why no retry" (10/B6, verbatim): "a retry only argues with itself; the disagreement is the
   # signal." No second opinion or adjudicator either — a single blind run, full stop. Disagreement
   # with the official key is itself the useful output (B6_DISAGREES_WITH_KEY), not a failure to
@@ -895,7 +895,7 @@ B6V:
   needs: "B3V"
   input_fields: [stem_en, statements, list_i, list_ii, options_en, figure_image]
   output_schema: schemas/B6.json
-  check: scripts/checks/B6.py
+  check: code/checks/B6.py
   fallback: [retry]
   flags:
     B6V_DISAGREES_WITH_BOOKLET: normal
@@ -931,7 +931,7 @@ QSUBJ:
   needs: "B3V"
   input_fields: [paper_id, qno, stem_en, statements, list_i, list_ii, options_en, correct_answer, position_guess, question_image]
   output_schema: schemas/QSUBJ.json
-  check: scripts/checks/QSUBJ.py
+  check: code/checks/QSUBJ.py
   fallback: [retry]
   flags:
     QSUBJ_DISAGREES_WITH_POSITION: normal
@@ -963,7 +963,7 @@ QCHAP:
   needs: "QSUBJ"
   input_fields: [paper_id, qno, stem_en, statements, list_i, list_ii, options_en, correct_answer, subject, branch, chapters, question_image]
   output_schema: schemas/QCHAP.json
-  check: scripts/checks/QCHAP.py
+  check: code/checks/QCHAP.py
   fallback: [retry]
   flags:
     QCHAP_UNSURE: normal
@@ -995,7 +995,7 @@ QTOPIC:
   needs: "QCHAP"
   input_fields: [paper_id, qno, stem_en, statements, list_i, list_ii, options_en, correct_answer, subject, branch, chapter, topics, note_from_runner, question_image]
   output_schema: schemas/QTOPIC.json
-  check: scripts/checks/QTOPIC.py
+  check: code/checks/QTOPIC.py
   fallback: [retry]
   flags:
     QTOPIC_UNSURE: low
@@ -1027,7 +1027,7 @@ B7:
   # agent call for those; the agent is called only for Chemistry questions.
   input_fields: [stem_en, options_en, statements]
   output_schema: schemas/B7.json
-  check: scripts/checks/B7.py
+  check: code/checks/B7.py
   # On failure (10/B7): unsure -> adjudicator -> still unsure -> SCRIPT picks the branch whose
   # NCERT chapters contain the most of the question's key terms (search_index.keyword_rank).
   fallback: [adjudicator]
@@ -1052,7 +1052,7 @@ B8:
   # options), status + key row, notice_text, latest_passages (up to 15).
   input_fields: [stem_en, statements, list_i, list_ii, options_en, status, key_row, notice_text, latest_passages]
   output_schema: schemas/B8.json
-  check: scripts/checks/B8.py
+  check: code/checks/B8.py
   # Only runs for a question whose status (set by B5 from the real key) is bonus, dropped or
   # multiple_accepted — never from a paper's own claims (agent file, "Context confirmed..."
   # paragraph). Section 10/B8 names no retry/second-opinion/adjudicator chain at all for a
@@ -1142,7 +1142,7 @@ B9:
   # its image markdown stripped). No sheet judgement column appears anywhere in it.
   input_fields: [question, candidates]
   output_schema: schemas/B9.json
-  check: scripts/checks/B9.py
+  check: code/checks/B9.py
   # On failure: retry once (spec 5.5's standard chain — a malformed output is a formatting
   # failure, which a retry really can fix). There is deliberately NO adjudicator: a second
   # opinion on "which picture goes with this question" would be arguing from the same evidence,
@@ -1233,7 +1233,7 @@ B9S:
   input_fields: [question_id, stem_en, options_en, figure_file, option_block_file, source_pdf,
                  source_page, source_booklet_code, our_booklet_code, match_score, why_needed]
   output_schema: schemas/B9S.json
-  check: scripts/checks/B9S.py
+  check: code/checks/B9S.py
   # On failure: retry once, and no adjudicator, for B9's reason — a second agent would be judging
   # the same picture from the same evidence, and the safe default here already refuses the figure.
   fallback: [retry]
@@ -1325,7 +1325,7 @@ C1:
   # statements/lists/options after SCRIPT normalisation (latex_normalise + text_normalise).
   input_fields: [a, b]
   output_schema: schemas/C1.json
-  check: scripts/checks/C1.py
+  check: code/checks/C1.py
   # On failure (11/C1's own "On failure" line) -- a bespoke multi-stage chain, not the generic
   # retry-once shape (spec 5.5): not_exact -> SCRIPT re-dispatches B3 (and B4, when B4 used its
   # own agent branch; a no-op re-run of B4's SCRIPT branch otherwise, since it is a deterministic
@@ -1367,7 +1367,7 @@ D1:
   # frequently 'unsure' itself, confirmed real on Q-000015).
   input_fields: [question, correct_answer, chapters]
   output_schema: schemas/D1.json
-  check: scripts/checks/D1.py
+  check: code/checks/D1.py
   # On failure (12/D1): disagreement or unsure -> adjudicator -> D1_ADJUDICATED (normal).
   # Adjudicator unsure -> run A's choice if any valid, else search_index.rank's top-ranked chapter,
   # D1_GUESS (high). No retry is named for this step (same shape as A8: the 2 runs ARE the retry).
@@ -1401,7 +1401,7 @@ D2:
   # subtopics had no passages").
   input_fields: [question, correct_answer, subtopics, note_from_runner]
   output_schema: schemas/D2.json
-  check: scripts/checks/D2.py
+  check: code/checks/D2.py
   # On failure (12/D2): identical shape to D1, one level down.
   fallback: [second_opinion, adjudicator]
   flags:
@@ -1434,7 +1434,7 @@ D3:
   # make (its own D2-retry escape hatch) reuses D2's own input_fields exactly (see D2 entry above).
   input_fields: []
   output_schema: schemas/D3.json
-  check: scripts/checks/D3.py
+  check: code/checks/D3.py
   # On failure (12/D3, verbatim): "zero latest passages -> re-run D2 once with note 'previous
   # subtopics had no passages'; still zero -> blocked, D3_NO_PASSAGES (blocker)." Free-text
   # fallback entry (not the generic retry-once shape), same precedent as B3's own
@@ -1469,7 +1469,7 @@ D4:
   # exist in this build, confirmed; see the report).
   input_fields: [question, answer_to_support, passages, codebook]
   output_schema: schemas/D4.json
-  check: scripts/checks/D4.py
+  check: code/checks/D4.py
   # On failure (12/D4, verbatim): "quote not found -> retry with 'Quote N not found in passage P;
   # copy exactly'; still not found -> drop it, downgrade supports_answer, D4_QUOTE_NOT_FOUND
   # (high). partly -> D4_PARTLY (normal). not_at_all -> D4_NO_SUPPORT (normal). beyond_ncert_method
@@ -1510,7 +1510,7 @@ D5:
   # list: A6-paired partners plus unpaired older passages that may be deleted content, id + text).
   input_fields: [question, answer_to_support, latest_evidence, older_passages]
   output_schema: schemas/D5.json
-  check: scripts/checks/D5.py
+  check: code/checks/D5.py
   # On failure (12/D5, verbatim): "retry; drop, D5_QUOTE_NOT_FOUND (normal)." Driven by the
   # generic retry-once resolver (step_plugins.resolve_single_run_items); step_plugins.D5Plugin's
   # own _post_assembly then re-verifies EVERY older line independently against the older book on
@@ -1560,7 +1560,7 @@ D6:
   # produce it, and D7 runs after D6.
   input_fields: [syllabus_status, allowed_note_types, latest_evidence, older_evidence, lab_manual_evidence, change_log_entries]
   output_schema: schemas/D6.json
-  check: scripts/checks/D6.py
+  check: code/checks/D6.py
   # THE RULE LADDER IS LOAD-BEARING AND ITS ORDER IS THE RULE. step_plugins.D6Plugin._decide_status
   # walks spec 12/D6's rules 0, 1, 2, 3, 3b, 4 in that literal order, first match wins, and stops:
   #   0.  D4 link_type in {rule_used, rules_chained, concept_applied} with >= 1 VERIFIED rule
@@ -1624,7 +1624,7 @@ D7:
   # from. Matches d7-latest-answer-checker.md's Input block exactly.
   input_fields: [question, options, official_answer, latest_evidence, older_evidence, change_log_entries]
   output_schema: schemas/D7.json
-  check: scripts/checks/D7.py
+  check: code/checks/D7.py
   # RUN GATE (12/D7, verbatim): "Runs for: every question whose D4/D5 passages have a change-log
   # entry, and every question whose older line differs from its latest line. Others -> `skipped`
   # with `latest_answer = official answer`." Both limbs implemented in
@@ -1683,7 +1683,7 @@ D8:
   # a different taught answer would be a real mismatch, not a formatting detail.
   input_fields: [question, answer_taught, subtopic, evidence]
   output_schema: schemas/D8.json
-  check: scripts/checks/D8.py
+  check: code/checks/D8.py
   # Spec 12/D8 names only "low confidence -> D8_LOW_CONFIDENCE (low)" and no Checks list, so the
   # retry here covers the Style rules scripts/checks/D8.py can honestly verify (that file's own
   # docstring lists exactly which Style rules are NOT mechanically checkable and why -- notably
@@ -1718,7 +1718,7 @@ D9:
   # share the subtopic name").
   input_fields: [this, others]
   output_schema: schemas/D9.json
-  check: scripts/checks/D9.py
+  check: code/checks/D9.py
   #
   # *** REAL SPEC QUESTION FOR THE OWNER, IMPLEMENTED AS WRITTEN. *** Spec 12/D9's Reads line
   # scopes the candidate table to questions in the same subtopic "from **other years**". That
@@ -1759,7 +1759,7 @@ D10:
   # d2_subtopic_ids.
   input_fields: []
   output_schema: schemas/D10.json
-  check: scripts/checks/D10.py
+  check: code/checks/D10.py
   # Invoked `python3 scripts/build_groups.py --subtopic-id <SUBTOPIC_ID>` (scripts/CONVENTIONS.md's
   # own escape hatch for a step whose item is not a chapter -- D10's item is a SUBTOPIC; the table
   # in that file is updated to match). Writes steps/D10/out/<SUBTOPIC_ID>.json. Idempotence (spec
@@ -1799,7 +1799,7 @@ D11:
   # codebase computed codebook_version anywhere; that is now done, for D11.
   input_fields: [members, codebook]
   output_schema: schemas/D11.json
-  check: scripts/checks/D11.py
+  check: code/checks/D11.py
   # On failure (12/D11, verbatim): "disagreement -> adjudicator -> D11_ADJUDICATED (normal)."
   # Two runs plus adjudicator, following D1/D2/A4's real dispatch shape. "Runs agree" is compared
   # on the WHOLE PARTITION -- which groups exist, which members are in them, WHAT LABEL each
@@ -1838,7 +1838,7 @@ E0:
   - evidence
   - subject
   output_schema: schemas/E0.json
-  check: scripts/checks/E0.py
+  check: code/checks/E0.py
   fallback: []
   flags:
     E0_FINDINGS_READY: normal
@@ -1857,7 +1857,7 @@ ECAT:
   - codebook
   - questions
   output_schema: schemas/ECAT.json
-  check: scripts/checks/ECAT.py
+  check: code/checks/ECAT.py
   fallback:
   - retry
   flags:
@@ -1881,7 +1881,7 @@ ECAT:
     unfamiliar label is `new_demand` or `new_trap` WITH a description, never the nearest fit:
     forcing a near fit is what makes a vocabulary look complete while hiding what did not fit, and
     every axis has an escape hatch for this reason (SPEC Rule 24).'
-  codebook_file: docs/question_categories/RULEBOOK.md
+  codebook_file: ../_shared/docs/question_categories/RULEBOOK.md
 
 E1:
   stage: E
@@ -1895,7 +1895,7 @@ E1:
   - codebook
   - allowed
   output_schema: schemas/E1.json
-  check: scripts/checks/E1.py
+  check: code/checks/E1.py
   fallback:
   - retry
   flags:
@@ -1919,7 +1919,7 @@ E2:
   - codebook
   - allowed
   output_schema: schemas/E2.json
-  check: scripts/checks/E2.py
+  check: code/checks/E2.py
   fallback:
   - retry
   - adjudicator
@@ -1946,7 +1946,7 @@ E3:
   - codebook
   - allowed
   output_schema: schemas/E3.json
-  check: scripts/checks/E3.py
+  check: code/checks/E3.py
   fallback:
   - retry
   flags:
@@ -1972,7 +1972,7 @@ E4:
   - codebook
   - codebook_version
   output_schema: schemas/E4.json
-  check: scripts/checks/E4.py
+  check: code/checks/E4.py
   fallback:
   - adjudicator
   flags:
@@ -2001,7 +2001,7 @@ E5:
   - codebook
   - allowed
   output_schema: schemas/E5.json
-  check: scripts/checks/E5.py
+  check: code/checks/E5.py
   fallback:
   - adjudicator
   flags:
@@ -2029,7 +2029,7 @@ E6:
   - has_figure
   - codebook
   output_schema: schemas/E6.json
-  check: scripts/checks/E6.py
+  check: code/checks/E6.py
   fallback:
   - retry
   flags:
@@ -2087,7 +2087,7 @@ E7:
   - E5_traps
   - review_status
   output_schema: schemas/E7.json
-  check: scripts/checks/E7.py
+  check: code/checks/E7.py
   fallback: []
   flags:
     E7_NOT_SCORABLE: low
@@ -2119,7 +2119,7 @@ F1:
   needs: E5, E6, D11
   input_fields: []
   output_schema: schemas/F1.json
-  check: scripts/checks/F1.py
+  check: code/checks/F1.py
   fallback: []
   flags: {}
   safe_default: null
@@ -2134,7 +2134,7 @@ F2:
   needs: F1
   input_fields: []
   output_schema: schemas/F2.json
-  check: scripts/checks/F2.py
+  check: code/checks/F2.py
   fallback: []
   flags: {}
   safe_default: null
@@ -2149,7 +2149,7 @@ F3:
   needs: F2
   input_fields: []
   output_schema: schemas/F3.json
-  check: scripts/checks/F3.py
+  check: code/checks/F3.py
   fallback: []
   flags: {}
   safe_default: null
@@ -2164,7 +2164,7 @@ F4:
   needs: F3
   input_fields: []
   output_schema: schemas/F4.json
-  check: scripts/checks/F4.py
+  check: code/checks/F4.py
   fallback: []
   flags: {}
   safe_default: null
@@ -2179,7 +2179,7 @@ F5:
   needs: F4
   input_fields: []
   output_schema: schemas/F5.json
-  check: scripts/checks/F5.py
+  check: code/checks/F5.py
   fallback: []
   flags: {}
   safe_default: null
@@ -2194,7 +2194,7 @@ F6:
   needs: F3
   input_fields: []
   output_schema: schemas/F6.json
-  check: scripts/checks/F6.py
+  check: code/checks/F6.py
   fallback: []
   flags: {}
   safe_default: null

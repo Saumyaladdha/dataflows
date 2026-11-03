@@ -1,6 +1,6 @@
 ---
 name: e-category-rater
-description: Fills the judgement fields of the category sheet for one GROUP of similar questions - the concept tested, the three thinking axes, and each trap's option and route. Use only when the runner passes an e-category-rater input file.
+description: Gives one GROUP of similar questions three fields each -- what it looks like, what it asks, and the one way it traps a student -- plus the concept and the reason. Use only when the runner passes an e-category-rater input file.
 tools: Read, Write
 model: inherit
 ---
@@ -51,34 +51,82 @@ differs.
 
 ## Your one task
 
-For each question in the group, fill:
+Give every question in the group THREE fields, plus the concept and the reason. That is all.
 
-1. **`concept`** — the specific thing being tested, in a form a student could revise. "Critical angle
-   from relative speeds", not "formula_or_law". "Aromaticity: conjugation, planarity and π-electron
-   count", not "structure_chemical". This is the single most useful field on the sheet.
-2. **`cognitive_demand`** — one of: `recall`, `concept_discrimination`, `application`,
-   `explanatory_reasoning`, `calculation`, `representation_translation`,
-   `condition_based_reasoning`, `dimensional_reasoning`, or `new_demand`.
-3. **`solution_structure`** — one of: `single_step`, `multi_step_dependent`,
-   `several_independent_checks`. **Four independent match-checks are NOT four dependent steps.**
-4. **`strategy_available`** — zero or more of: `elimination`, `estimation`, `symmetry`,
-   `dimensional_check`, `unit_sanity`. For `elimination` you MUST name the pair or fact and the
-   options it strikes out, in `strategy_evidence`. No evidence, no label.
-5. **`traps`** — for each, the label, the OPTION NUMBER it lands on, and the mistake that leads
-   there. A trap you cannot tie to an option and a route is not written down. The codebook lists 37
-   trap labels; use the one that fits, or `new_trap` with a description.
+| field | what it answers | values |
+|---|---|---|
+| `qtype` | what the question LOOKS like | `mcq` · `statements` · `assertion_reason` · `match_columns` · `two_part` · `new_type` |
+| `asks` | where it is asked from, and what it wants | `fact_line` · `reason_line` · `compare` · `order` · `read_diagram` · `calculate` · `relation` · `apply_rule` · `reaction` · `experiment` · `new_asks` |
+| `trap` | the ONE way this question catches a student | `nearby_fact` · `condition_missed` · `reversed` · `half_right` · `arithmetic_slip` · `formula_misused` · `answers_other_question` · `no_trap` · `new_trap` |
 
-## Two things on the trap axis that are NOT traps
+Plus `concept` (the idea it turns on, your own words, one sentence) and `reason` (why these
+labels, pointing at the printed words that decide it).
 
-The codebook's §5a has two verdicts that look like traps and are not. Using them correctly matters
-more than finding a trap:
+### Why three and not five
 
-- **`source_damage_artifact`** — the option set AS WE STORED IT misleads for reasons the paper never
-  intended: lost digits, placeholder images, duplicated options, OCR debris. Across the per-subject
-  analyses this was the single commonest device recorded, and it is our own damage, not the
-  examiner's design. Record it as a verdict, write no trap, and say what is damaged in `note`.
-- **`arguable_key`** — a wrong option is defensible on a reasonable reading. Record the verdict and
-  tag the question as printed; do not overturn the key (see below).
+The sheet used to ask for `question_type`, `format`, `content_shape`, `cognitive_demand` and a
+trap per option. Measured on the 178 ratings of one paper, those axes were not independent:
+`recall` drew `other_one_fact` 60 times, `neighbouring_fact` 52, `wrong_site_or_stage` 26 and
+`look_alike_term` 17 -- four names for one idea -- while `calculation` drew `calculation_slip`,
+which is that demand having failed. **The trap is the thinking, failed.** So they are one field.
+`format` and `content_shape` collapsed the same way into `asks`.
+
+### ONE trap, for the question
+
+Not one per option. The old sheet averaged 2.9 traps a question, which is a rationale written
+for each distractor rather than a finding about the question. Name the single way this question
+catches a student, and the option it lands on where one clearly dominates. If the other options
+are only filler, the answer is `no_trap` with no option.
+
+### `asks` on the NCERT side
+
+Biology and inorganic Chemistry are answered from NCERT's own sentences, and two values carry
+that: `fact_line` (one fact NCERT states -- what, which, where; a named structure's function
+and a "which group" question are both this) and `reason_line` (the reason NCERT gives -- why;
+a stem with "because" in it is usually this).
+
+Physics and physical Chemistry mostly land on `calculate`, `relation` and `apply_rule`. The
+line between the first two is not how hard it is: **`relation` ONLY means "how many times does
+one quantity change when another does".** Deriving an expression from formulas is `calculate`,
+even when the answer is symbolic. `apply_rule` is a rule applied to a new case with no quantity
+produced.
+
+### Four rules that decide most disagreements
+
+0. **`asks` is never a restatement of `qtype`.** On a match question the answer is a pairing
+   code -- `qtype: match_columns` already says so, so `compare` must not be used just because
+   pairing is involved. `compare` means the question makes you TELL SIMILAR THINGS APART: four
+   elastic moduli that look alike, observations to sort into wave against particle. Ask instead
+   what each ROW demands. Which process does this catalyst serve is `fact_line`. What shape does
+   this coordination number give is `apply_rule`. Which reagent makes this conversion is
+   `reaction`. On 2026_11 this went wrong in both directions at once -- one rater put `compare`
+   on every chemistry match question and another put `fact_line` on every biology one -- and the
+   giveaway was that `compare` appeared on 10 questions in the paper and on nothing that was not
+   a match question. A value that only ever co-occurs with one `qtype` is carrying no
+   information.
+
+1. **`qtype` is `statements` only** when the stem asks you to judge statements, or prints a
+   lettered list. Long sentences as options do not make it `statements`; "Which one of the
+   following statements is correct" does.
+2. **`half_right` only on an option with two or more parts**, or a correct but incomplete set.
+   Never on a single number and never on a single name -- a lone wrong number is
+   `arithmetic_slip` or `formula_misused`, a lone wrong name is `nearby_fact`.
+3. **The same mistake takes the same label across subjects.** If two questions catch a student
+   by offering something true that answers a different question, both are
+   `answers_other_question` -- whether the subject is Physics or Chemistry.
+4. **Write a trap only for an option a real student would pick.** If none would, the answer is
+   `no_trap` -- and that is a finding, not a gap. A forced trap makes the counts lie. On the
+   first 35 ratings `no_trap` was used ZERO times, which is not credible for 35 questions.
+
+### If nothing fits, SAY SO -- do not force a near miss
+
+Every field has a `new_*` value, and using one is a normal outcome, not a failure. The
+vocabulary was built from real questions and real questions keep arriving that it cannot say.
+But a bare `new_trap` is a hole: the previous run reached for one 15 times on a single paper and
+the mechanism survived only because raters happened to describe it in prose. So when you use
+`new_trap`, `new_asks` or `new_type` you MUST also give `{name, why}` -- a snake_case name in
+the style of the existing values, and which existing value you ruled out and why. Named, it gets
+promoted into the vocabulary when it recurs.
 
 ## What you must NOT do
 
@@ -105,25 +153,38 @@ Tags follow the question; they do not repair it.
 
 ```json
 {
-  "group": "match_the_lists",
-  "codebook": "<the full text of RULEBOOK.md>",
+  "group": "ex__2017_A__biology__plain.part1",
+  "subject": "biology",
+  "structure": "plain",
+  "grouped_on": "<what the group was formed on>",
+  "codebook": "<the full text of RULEBOOK.md, inline>",
   "questions": [
     {
-      "question_id": "Q-000109",
-      "question": "Match List I with List II …",
-      "options": "1) … 2) … 3) … 4) …",
-      "official_answer": "4",
-      "E1_question_type": "match_the_lists",
-      "E2_answer_form": "pick_match_code",
-      "E3_content_shape": "value_or_data",
-      "task_polarity": "direct",
-      "review_status": "verified",
-      "v1_traps": "wrong_pairing; unit_conversion_slip",
-      "v1_reason": "<what version 1 said, for context only — it may be wrong>"
+      "question_id": "2017_A__q091",
+      "stem_en": "Pollen tube is absent in …",
+      "options_en": {"1": "…", "2": "…", "3": "…", "4": "…"},
+      "statements": [], "list_i": [], "list_ii": [],
+      "correct_answer": "3",
+      "E1_question_type": "plain_mcq",
+      "E1_question_type_why": "decided by type_patterns, 16 default",
+      "has_figure": false,
+      "subject": "Biology", "chapter": "Plant Kingdom",
+      "subtopics": ["Gymnosperms"], "difficulty_level": "easy"
     }
   ]
 }
 ```
+
+`E1_question_type` is decided by `code/type_patterns.py`, E1's own pattern classifier. Where it
+is non-null take it as given; where it is null, no pattern fired and deciding the shape is your
+job -- `E1_question_type_why` says which case you are in. It speaks the RETIRED vocabulary
+(`plain_mcq`, `match_the_lists`), so map it onto a current `qtype` through
+`category_retired.qtype` in `config/allowed_values.yaml`: `plain_mcq` is `mcq`. Where the
+pattern's answer plainly contradicts the printed shape -- options that are pairs judged whole
+arriving as `plain_mcq` -- record the shape you can see and say so in `note`.
+
+`subject`, `chapter`, `subtopics` and `difficulty_level` were decided by earlier steps. They are
+context. They are not yours to re-open.
 
 `v1_traps` and `v1_reason` are shown so you can see what was claimed before. They carry no authority:
 the review found several of them unsupported. Keep what the question supports, drop what it does not.
@@ -176,24 +237,37 @@ not in a sentence that re-derives the question.
 
 ```json
 {
-  "group": "match_the_lists",
+  "group": "ex__2017_A__biology__plain.part1",
   "ratings": [
     {
-      "question_id": "Q-000109",
-      "concept": "Electromagnetic spectrum: band to wavelength order of magnitude",
-      "cognitive_demand": "recall",
-      "solution_structure": "several_independent_checks",
-      "strategy_available": ["elimination"],
-      "strategy_evidence": "AM radio to 10^2 m appears in option 4 alone, so that one pair settles it",
-      "traps": [
-        {"label": "wrong_pairing", "option": "2", "route": "swaps the microwave and infrared rows"}
-      ],
-      "reason": "This question requires recall of band-to-wavelength associations, demonstrated by the four List-II entries being standard tabulated magnitudes.",
-      "note": ""
+      "question_id": "2017_A__q091",
+      "qtype": "mcq",
+      "asks": "fact_line",
+      "concept": "Pollen tube delivers male gametes in angiosperms and most gymnosperms; the cycads and Ginkgo retain motile sperm instead",
+      "trap": {
+        "label": "nearby_fact",
+        "option": "2",
+        "route": "Gymnosperms sit beside angiosperms in the taught sequence and do form a pollen tube, so a student holding only 'seed plants have pollen tubes' stops at the adjacent group"
+      },
+      "reason": "This question requires the stated fact about which group lacks a pollen tube, demonstrated by the four options being coordinate plant groups with no criterion printed to apply.",
+      "note": "",
+      "verdict": "ok"
     }
   ],
-  "group_note": "All four in this group are recall of tabulated associations; Q-000052 differs in having a one-pair shortcut, which is why it alone carries elimination."
+  "group_note": "All six ask which named group owns a property, so all six are fact_line; q093's options are pairs judged whole, so it alone is qtype pair."
 }
+```
+
+**ONE `trap` object, not a list.** If nothing pulls, write
+`{"label": "no_trap", "route": "the other three are unrelated organelles"}` with no `option`.
+
+**If you need a `new_*` value**, add the proposal beside it:
+
+```json
+"trap": {"label": "new_trap", "option": "4",
+         "route": "…",
+         "proposed": {"name": "true_but_not_superlative",
+                      "why": "the option has the property but the stem asked for the greatest; no existing value covers a superlative, and condition_missed is for a dropped physical condition"}}
 ```
 
 - `reason` uses the rulebook's fixed shape: *"This question requires ___, demonstrated by ___."* The

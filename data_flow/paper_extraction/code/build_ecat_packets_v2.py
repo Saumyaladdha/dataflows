@@ -36,7 +36,45 @@ import glob
 import json
 import os
 
+import yaml
+
 import runner_core as rc
+import type_patterns
+
+
+def _e1_for(question, read):
+    """E1 `question_type` for this question, decided by SCRIPT, plus why.
+
+    THE BRIEF PROMISES THIS FIELD AND THE PACKET NEVER SENT IT.
+    `e-category-rater`'s brief opens "the question type has already been worked out for you."
+    In the v2 corpus it had not been -- this builder sent `structure` (the page's shape) and
+    nothing else -- so the agent filled the gap with a guess, which is the root cause the ECAT
+    audit names first. It cannot simply be copied from an earlier step here, because in v2 no
+    earlier step assigns it; but it does not need an agent either. `type_patterns.classify` IS
+    E1's primary classifier (spec 13/E1: the agent runs ONLY when no pattern decides), so the
+    packet can carry a real answer for most questions and an explicit `null` for the rest.
+
+    `type_patterns` still speaks the v1 vocabulary, so its answer is put through
+    `allowed_values.category_retired.question_type` -- `single_statement` is `plain_mcq` now.
+    An unmapped answer is returned as-is rather than silently dropped.
+
+    Returns (label_or_None, why). `None` means NO PATTERN FIRED and the agent must decide it
+    from layout itself -- which is a different instruction from "it has been worked out", and
+    the packet says which of the two applies.
+    """
+    rec = dict(read or {})
+    rec.setdefault("options", (read or {}).get("options_en") or {})
+    try:
+        hit = type_patterns.classify(rec)
+    except Exception as exc:                               # reported, never guessed around
+        return None, "the pattern classifier errored (%s); decide E1 from the layout" % type(exc).__name__
+    if not hit:
+        return None, "no E1 pattern fired; decide question_type from the layout yourself"
+    label, rule = (hit if isinstance(hit, (list, tuple)) else (hit, "unnamed rule"))
+    allowed = yaml.safe_load(
+        open(rc.pp("config", "allowed_values.yaml"), encoding="utf-8"))
+    renames = (allowed.get("category_retired") or {}).get("question_type") or {}
+    return renames.get(label, label), "decided by type_patterns, %s" % rule
 
 CORPUS = rc.corpus()
 B3V_OUT = ("steps", "B3V", "out")
@@ -132,11 +170,14 @@ def main():
             "group": name,
             "subject": subject,
             "grouped_on": ("`structure` as read from the page by b3-question-reader -- the nearest "
-                           "measured stand-in for E1, which this step is what assigns. Say so in "
+                           "measured stand-in for E1. Each question also carries `E1_question_type` where a "
+                           "pattern decided it, and null where none did -- read `E1_question_type_why`. Say so in "
                            "group_note if a member does not belong with the rest."),
             "structure": structure,
             "questions": [{
                 "question_id": item_id,
+                "E1_question_type": _e1_for(question, read)[0],
+                "E1_question_type_why": _e1_for(question, read)[1],
                 "stem_en": read.get("stem_en"),
                 "statements": read.get("statements") or [],
                 "list_i": read.get("list_i") or [],

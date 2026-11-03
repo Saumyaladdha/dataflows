@@ -170,6 +170,77 @@ def _word_lines(source, page, dpi):
     return _PAGE_LINES[key]
 
 
+_INK_CACHE = {}
+
+
+def _page_ink(source, page, dpi):
+    """[(x0, y0, x1, y1)] in CROP PIXELS for every mark the page prints -- text and drawings."""
+    key = (source, page, dpi)
+    if key in _INK_CACHE:
+        return _INK_CACHE[key]
+    import pymupdf
+    doc = pymupdf.open(source)
+    pg = doc[page - 1]
+    k = dpi / 72.0
+    spans = []
+    for block in pg.get_text("dict").get("blocks") or []:
+        for line in block.get("lines") or []:
+            for span in line.get("spans") or []:
+                x0, y0, x1, y1 = span["bbox"]
+                spans.append((x0 * k, y0 * k, x1 * k, y1 * k))
+    for d in pg.get_drawings():
+        x0, y0, x1, y1 = d["rect"]
+        spans.append((x0 * k, y0 * k, x1 * k, y1 * k))
+    _INK_CACHE[key] = spans
+    return spans
+
+
+def grow_to_ink(box, part_box, source, page, dpi, gap_px=30.0, max_px=240.0):
+    """Extend `box` sideways over marks that continue the figure, stopping at a real gap.
+
+    WHY A FIXED PAD IS NOT ENOUGH. FIGURE_PAD_PX is 16, tuned on labels sitting a few pixels off
+    a drawing -- `T2` lost at 2017 Code-A q11's right edge, `NO2` clipped to `NC` at q55. It
+    cannot reach a LABEL COLUMN. On 2026_11 q015 the five plots are lettered A. to E. in a column
+    118 px left of the agent's box, so a 16 px pad recovered 16 of those 118 and the crop went
+    out with its option letters sliced off -- on a question whose entire task is saying WHICH
+    lettered plot is correct.
+
+    The page's own marks are the evidence, not a bigger number. The box grows outward only while
+    marks keep appearing in its vertical band, stops after `gap_px` of clear paper, and never
+    travels more than `max_px`. A label printed beside the figure is reached; the next column of
+    body text, separated by a printed gutter, is not.
+    """
+    try:
+        marks = _page_ink(source, page, dpi)
+    except Exception:                      # reported by an unchanged box, never guessed around
+        return box
+    y0, y1 = box[1], box[3]
+    band = [m for m in marks if m[3] > y0 and m[1] < y1]
+    if not band:
+        return box
+
+    def walk(edge, direction):
+        """Step outward from `edge`, hopping to each next mark while the gap stays small."""
+        pos = edge
+        for _ in range(12):                                  # a label column, not a whole page
+            if direction < 0:
+                near = [m for m in band if m[2] <= pos and pos - m[2] <= gap_px]
+                if not near:
+                    break
+                pos = min(m[0] for m in near)
+            else:
+                near = [m for m in band if m[0] >= pos and m[0] - pos <= gap_px]
+                if not near:
+                    break
+                pos = max(m[2] for m in near)
+            if abs(pos - edge) > max_px:
+                break
+        return pos
+
+    grown = [min(box[0], walk(box[0], -1)), box[1], max(box[2], walk(box[2], 1)), box[3]]
+    return within(grown, part_box)
+
+
 def within(box, part_box):
     """`box` clipped to the question part it was measured in. The padding must never reach past the
     question's own crop, which stops at the printed answer line: unclipped, 2017 Code-A q55's padded
@@ -421,6 +492,9 @@ def main():
         part, raw_box = to_page(parts, bbox)
         page_box = within([raw_box[0] - FIGURE_PAD_PX, raw_box[1] - FIGURE_PAD_PX,
                            raw_box[2] + FIGURE_PAD_PX, raw_box[3] + FIGURE_PAD_PX], part["bbox"])
+        # Then reach whatever the figure is LABELLED with. The fixed pad above handles a mark a
+        # few pixels off the drawing; this handles a column of option letters printed beside it.
+        page_box = grow_to_ink(page_box, part["bbox"], source, part["page"], paper["meta"]["dpi"])
         page_box = clear_of_prose(page_box, raw_box, source, part["page"], paper["meta"]["dpi"])
         # IS THIS THE QUESTION'S FIGURE, OR THE SOLUTION'S? Measured, not assumed. A box whose top
         # sits at or below the `Answer`/`Sol.` line on the same page belongs to the worked solution,

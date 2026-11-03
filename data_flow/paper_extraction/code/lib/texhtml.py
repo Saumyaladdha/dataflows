@@ -225,6 +225,13 @@ def _render(tex):
                 body, i = _group(tex, i)
                 tag = "u" if name == "underline" else "span"
                 out.append("<%s>%s</%s>" % (tag, _render(body), tag))
+            elif name in ("overparen", "widearc", "overarc"):
+                # AN ARC THAT CARRIES MEANING, NOT DECORATION. In a floral formula the arc
+                # over C(5)A5 is what says the stamens are epipetalous, and in 2026_11 q118 it
+                # is the ONLY thing separating option 2 from option 1 and option 4 from 3.
+                # Dropped, the question stops having a single answer -- so it is drawn.
+                body, i = _group(tex, i)
+                out.append('<span class="overparen">%s</span>' % _render(body))
             elif name in ("cancel", "bcancel", "xcancel", "sout"):
                 body, i = _group(tex, i)
                 out.append("<s>%s</s>" % _render(body))
@@ -569,7 +576,7 @@ def _prose(chunk):
         known = (name in SYMBOLS or name in TEXT_STYLES or name in ACCENTS or name in FUNCTIONS
                  or name in ("frac", "dfrac", "tfrac", "cfrac", "sqrt", "ce", "substack",
                              "overset", "underset", "xrightarrow", "xleftarrow", "underline",
-                             "boxed", "cancel"))
+                             "overparen", "widearc", "overarc", "boxed", "cancel"))
         if not known:
             continue
         out.append(_scripts_in_prose(html.escape(chunk[last:match.start()])))
