@@ -1,0 +1,135 @@
+{
+ "_about": "Errors in the SOURCE booklet itself, found by a person auditing PDF + JSON + HTML + MD together. The printed text and printed answer stay exactly as printed; export_paper_v2.record_flags() shows each entry as a flag on the question. Add an entry only with the evidence written in `text`.",
+ "2024_S1__q157": [
+  {
+   "code": "publisher_answer_wrong",
+   "text": "The booklet prints answer (3), but option (3) calls muscle (c) smooth, while its own printed solution says figure (c) is cardiac muscle, found only in the heart. Option (4) is the only option whose three pairs are all correct, so (4) is the correct answer; the printed key is kept as printed. Four-file audit, 2026-11-04."
+  }
+ ],
+ "2026_70__q001": [
+  {
+   "code": "source_typo",
+   "text": "The paper prints the electron's mass as \"1/(4πε₀) = 9 × 10⁻³¹ kg\": the label 1/(4πε₀) is misplaced and the value is the mass of the electron (m = 9 × 10⁻³¹ kg). Kept as printed. Four-file audit, 2026-11-04."
+  }
+ ],
+ "2024_S1__q191": [
+  {
+   "code": "source_typo",
+   "text": "The booklet prints \"choose the mis appropriate answer\" (read: most appropriate) and \"as compared chloroplast\" (read: as compared to chloroplast). The wording is kept as printed. Four-file audit, 2026-11-04."
+  }
+ ],
+ "2022_R4__q001": [
+  {
+   "code": "source_typo",
+   "text": "The booklet prints \"Answer (1*)\", and its own printed solution says: \"* Language of question is wrongly framed. The values of stopping potentials should be interchanged.\" As printed, the two stopping potentials are swapped; the starred answer is the one the publisher gets after swapping them back. The same question is 2022_Q1 q017."
+  }
+ ],
+ "2022_S1__q020": [
+  {
+   "code": "source_typo",
+   "text": "The booklet prints \"Answer (2*)\", and its own printed solution says: \"* Language of question is wrongly framed. The values of stopping potentials should be interchanged.\" As printed, the two stopping potentials are swapped; the starred answer is the one the publisher gets after swapping them back. The same question is 2022_Q1 q017."
+  }
+ ],
+ "2023_H1__q001": [
+  {
+   "code": "source_typo",
+   "text": "The booklet prints \"Answer (3*)\" for the radius-of-gyration ratio (solid sphere : hollow sphere). The publisher's own solution (2023_E5 q032) says \"* None of the option is correct (correct answer is sqrt(3/5))\". The true ratio is sqrt(3):sqrt(5); the starred option (3), 3:5, is its square, so the square roots were lost from the printed options. Same question as 2023_F1 q001."
+  }
+ ],
+ "2023_E5__q032": [
+  {
+   "code": "source_typo",
+   "text": "The booklet prints \"Answer (1*)\" for the radius-of-gyration ratio (solid sphere : hollow sphere). The publisher's own solution (2023_E5 q032) says \"* None of the option is correct (correct answer is sqrt(3/5))\". The true ratio is sqrt(3):sqrt(5); the starred option (1), 3:5, is its square, so the square roots were lost from the printed options. Same question as 2023_F1 q001."
+  }
+ ],
+ "2023_E5__q068": [
+  {
+   "code": "publisher_answer_wrong",
+   "text": "The booklet keys (2) \"Both A and R are true and R is NOT the correct explanation of A\", but Reason R says helium has HIGH solubility in O2, and the publisher's own printed solution (2023_E5 q068) says helium is used \"because of its very low solubility in blood\", which makes R false. By the publisher's own reasoning the answer is \"A is true but R is false\". The printed key is kept as printed. Same question as 2023_F1 q064."
+  }
+ ],
+ "2023_H1__q065": [
+  {
+   "code": "publisher_answer_wrong",
+   "text": "The booklet keys (4) \"Both A and R are true and R is NOT the correct explanation of A\", but Reason R says helium has HIGH solubility in O2, and the publisher's own printed solution (2023_E5 q068) says helium is used \"because of its very low solubility in blood\", which makes R false. By the publisher's own reasoning the answer is \"A is true but R is false\". The printed key is kept as printed. Same question as 2023_F1 q064."
+  }
+ ],
+ "2024_Q3__q198": [
+  {
+   "code": "source_typo",
+   "text": "The booklet prints the SAME question twice: q198 and q199 both read \"Statement I: Mitochondria and chloroplasts both double membranes bound organelles. Statement II: Inner membrane of mitochondria is relatively less permeable, as compared chloroplast.\" with identical options, but q198 is keyed (2) and q199 (3). q199's key matches 2024_S1 q191 (\"Statement I is correct but Statement II is incorrect\"), so q199 is the real question and q198 is a misprint: the question that belonged at q198 was not printed, and its key (2) cannot be checked against anything printed. Treat q198 as unusable."
+  }
+ ],
+ "2024_Q3__q199": [
+  {
+   "code": "source_typo",
+   "text": "The booklet prints this question twice (as q198 and q199) with identical text and options but different keys: q198 (2), q199 (3). It also prints \"choose the mis appropriate answer\" (read: most appropriate) and \"as compared chloroplast\" (read: as compared to chloroplast). q199's key (3) matches 2024_S1 q191, so this is the real question; see the note on q198."
+  }
+ ],
+ "2024_Q3__q143": [
+  {
+   "code": "question_ambiguous",
+   "text": "The question asks for the GPP (Gross Primary Productivity) of the THIRD trophic level, but primary productivity is defined only for producers (the first level). Read as \"energy reaching level 3\" with the 10% rule, 100x gives 10x at level 2 and x at level 3 (option 2); the booklet keys 10x (option 3), reading it as what level 3 takes in from level 2. Two independent audits came to opposite answers, so the wording, not the solver, is the problem. Same question as 2024_S1 q147."
+  }
+ ],
+ "2024_Q3__q011": [
+  {
+   "code": "question_ambiguous",
+   "text": "Statement II (atoms emit their characteristic spectrum) is near-verbatim NCERT Class 12 \"Atoms\", which makes both statements true (option 1); read strictly, an atom emits its characteristic spectrum only when excited, which makes Statement II false and gives the booklet's key (3). Two blind solves chose 1 (one noting 3 as the strict reading) and an audit backed 3, so the wording, not the solver, decides it. Same question as 2024_S1 q020."
+  }
+ ],
+ "2024_T3__q131": [
+  {
+   "code": "question_ambiguous",
+   "text": "Statement II is false (the protoxin is activated by the ALKALINE pH of the insect gut, not acidic). Statement I says Bt toxins are \"coded by a gene cry IAc\": the toxins are coded by several cry genes (cryIAc and cryIIAb against cotton bollworms, cryIAb against corn borer), so read strictly it is false and gives option 4; the booklet keys (1), reading it as true. The blind solve chose 4. Same question and same key as 2024_S1 q125 and 2024_Q3 q108."
+  }
+ ],
+ "2024_T3__q146": [
+  {
+   "code": "question_ambiguous",
+   "text": "The question asks for the GPP (Gross Primary Productivity) of the THIRD trophic level, but primary productivity is defined only for producers (the first level). Read as \"energy reaching level 3\" with the 10% rule, 100x gives 10x at level 2 and x at level 3 (option 4); the booklet keys 10x (option 1), reading it as what level 3 takes in from level 2. Same question as 2024_S1 q147 and 2024_Q3 q143."
+  }
+ ],
+ "2024_T3__q200": [
+  {
+   "code": "question_ambiguous",
+   "text": "The booklet prints \"choose the mis appropriate answer\" (read: most appropriate) and \"as compared chloroplast\" (read: as compared to chloroplast). Statement II is the disputed one: the booklet keys (1), Statement II incorrect; the blind solve chose (3), both correct (the inner mitochondrial membrane is the less permeable one). Same question and same key as 2024_S1 q191 and 2024_Q3 q199."
+  }
+ ],
+ "2025_47__q100": [
+  {
+   "code": "question_ambiguous",
+   "text": "A is NCERT verbatim. NCERT says the tapetum nourishes the developing POLLEN GRAINS; R says it nourishes the developing MICROSPORE MOTHER CELLS. The key (4, A true but R false) reads R as false on that word; the blind solve took R as a loose restatement of NCERT and chose (2). The publisher's own solution explains A with R's idea (\"increases the efficiency of nourishing the developing pollen grains\"), so the key rests only on that one word."
+  }
+ ],
+ "2025_47__q113": [
+  {
+   "code": "question_ambiguous",
+   "text": "Both A and R are true (NCERT, Golgi apparatus). Whether R (cis-to-trans flow of vesicles) is the correct explanation of A (packaging and delivery) is a judgement call: the key says no (3), the blind solve said yes (2). The publisher's solution gives no reason beyond saying it does not explain A."
+  }
+ ],
+ "2025_47__q122": [
+  {
+   "code": "question_ambiguous",
+   "text": "Statement I (fig is a \"non-vegetarian\" fruit) is a popular claim, not science, so it is incorrect. Statement II describes fig-wasp mutualism as in NCERT, but says the fig FRUIT gets pollinated; the publisher marks it incorrect on that word (the inflorescence/flower is pollinated) and keys (3), both incorrect. The blind solve read II as the NCERT mutualism example and chose (1)."
+  }
+ ],
+ "2024_T3__q102": [
+  {
+   "code": "question_ambiguous",
+   "text": "The question describes ex-situ conservation (threatened species taken out of their natural habitat and protected in a special setting), but no option says \"ex-situ conservation\". The booklet keys \"Biodiversity conservation\" as the umbrella term, and its own solution names ex-situ conservation \"a type of biodiversity conservation\". The keyed option is defensible only as the broad category; the precise answer is missing from the options. Same question as 2024_Q3 q110 and 2024_S1 q118."
+  }
+ ],
+ "2024_Q3__q110": [
+  {
+   "code": "question_ambiguous",
+   "text": "The question describes ex-situ conservation (threatened species taken out of their natural habitat and protected in a special setting), but no option says \"ex-situ conservation\". The booklet keys \"Biodiversity conservation\" as the umbrella term, and its own solution names ex-situ conservation \"a type of biodiversity conservation\". The keyed option is defensible only as the broad category; the precise answer is missing from the options. Same question as 2024_T3 q102 and 2024_S1 q118."
+  }
+ ],
+ "2024_S1__q118": [
+  {
+   "code": "question_ambiguous",
+   "text": "The question describes ex-situ conservation (threatened species taken out of their natural habitat and protected in a special setting), but no option says \"ex-situ conservation\". The booklet keys \"Biodiversity conservation\" as the umbrella term, and its own solution names ex-situ conservation \"a type of biodiversity conservation\". The keyed option is defensible only as the broad category; the precise answer is missing from the options. Same question as 2024_Q3 q110 and 2024_S1 q118."
+  }
+ ]
+}
