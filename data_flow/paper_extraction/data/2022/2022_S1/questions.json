@@ -53,9 +53,9 @@
    "unchecked": 2,
    "unclear": 4
   },
-  "images": 442,
+  "images": 515,
   "images_without_cdn": 0,
-  "drawn_figures": 1,
+  "drawn_figures": 34,
   "number_not_printed": [],
   "flagged": {
    "answers_differ": [
@@ -208,20 +208,20 @@
       },
       "drawn": {
        "method": "physics_spec",
-       "renderer": "booklet geometry (code/lib/print_trace.py)",
-       "layout": "booklet",
+       "renderer": "code/lib/physics_figure.py",
+       "layout": "spec",
        "status": "drawn",
        "checks": {
         "renders": "pass",
-        "print_match": "all 14 label(s) printed; 97% of the spec's lines on the printed ones, 78% of the printed lines covered",
+        "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
         "printed_text": "pass"
        },
        "image": {
         "path": "figures_drawn/2022_S1/q001_solution_1.svg",
-        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_drawn/q001_solution_1_aae62f8c_04112026.svg",
-        "sha256": "aae62f8cce989bbbca81c75d651077ff85d302c3d6911050389f4f5216653d81",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q001_solution_1_519e5739_14112026.svg",
+        "sha256": "519e57396872cff042400493700118b12dc1fdac7ebf488321b10e07078d4f81",
         "type": "image/svg+xml"
        },
        "message": null,
@@ -684,17 +684,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2022_S1/q002_solution_1.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q002_solution_1_fe400020_14112026.svg",
+        "sha256": "fe400020d92df61450a597cca5a75cb3369d29aef05d768110e121569b442503",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Square loop of side 1 m with a dot at its centre and a double-headed dimension arrow marking the side length",
         "width": 240,
@@ -2222,17 +2227,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2022_S1/q010_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q010_question_ea29dfcb_14112026.svg",
+        "sha256": "ea29dfcbf20f0e7df0d3f4759271efa82756e1a13c1fb6f5c9d01ca855c74ad9",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "P-V diagram: four processes 1, 2, 3, 4 from the same initial state",
         "width": 300,
@@ -6140,17 +6150,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "2 claimed, all within 1.5 deg",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2022_S1/q030_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q030_question_6e3e3d4b_14112026.svg",
+        "sha256": "6e3e3d4b7dfcd4cda36fd11b078c48ec7b9d12ac39506a92ab411827c60a1c04",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Displacement–time graph with two straight lines at 30° and 45° from the origin",
         "width": 300,
@@ -6514,17 +6529,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2022_S1/q031_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q031_question_d4160963_14112026.svg",
+        "sha256": "d4160963bad9ba9cdb76a3508c982ae7d575cea15a92a44b6833ff79c09b71e4",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Three circuits (a), (b), (c): each a loop with two p-n junction boxes on the top wire and a cell on the bottom wire",
         "width": 430,
@@ -7530,17 +7550,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2022_S1/q033_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q033_question_d32e781a_14112026.svg",
+        "sha256": "d32e781a833be2f820574e60c41375820fa166bd7c18a12e2140fc1ad18807a9",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "v-t graph with four curves A (straight line), B (rising, saturating), C and D (falling curves)",
         "width": 270,
@@ -8099,17 +8124,22 @@
        "drawn": {
         "method": "physics_spec",
         "renderer": "code/lib/physics_figure.py",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "spec",
+        "status": "drawn",
         "checks": {
-         "renders": "not_on_print",
+         "renders": "pass",
          "print_match": "not a vector figure: drawn from the spec",
          "angles": "none claimed",
          "netlist": "not a circuit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2022_S1/q035_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q035_option_1_9d516c0d_14112026.svg",
+         "sha256": "9d516c0ddbc03d5134ae8f76d1071103ef1d8b4ad8b648d67f1abfdf2fd0b6bb",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "spec": {
          "title": "Graph of de Broglie wavelength λ versus momentum p: curve starting low and flat near the origin, rising steeply (nearly vertical) at large p",
          "width": 300,
@@ -8246,17 +8276,22 @@
        "drawn": {
         "method": "physics_spec",
         "renderer": "code/lib/physics_figure.py",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "spec",
+        "status": "drawn",
         "checks": {
-         "renders": "not_on_print",
+         "renders": "pass",
          "print_match": "not a vector figure: drawn from the spec",
          "angles": "none claimed",
          "netlist": "not a circuit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2022_S1/q035_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q035_option_2_ef1b0baa_14112026.svg",
+         "sha256": "ef1b0baa85f055267db867af3287b17007643ece83abb05649d22a36ce0105dc",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "spec": {
          "title": "de Broglie wavelength λ falling hyperbolically with momentum p",
          "width": 300,
@@ -8379,17 +8414,22 @@
        "drawn": {
         "method": "physics_spec",
         "renderer": "code/lib/physics_figure.py",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "spec",
+        "status": "drawn",
         "checks": {
-         "renders": "not_on_print",
+         "renders": "pass",
          "print_match": "not a vector figure: drawn from the spec",
          "angles": "none claimed",
          "netlist": "not a circuit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2022_S1/q035_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q035_option_3_f9900c42_14112026.svg",
+         "sha256": "f9900c428e1271e28fff288faeb9bfac94d13b28d3c8ef9f49e4ebe398d60724",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "spec": {
          "title": "Graph of de Broglie wavelength λ rising linearly with momentum p",
          "width": 300,
@@ -8478,17 +8518,22 @@
        "drawn": {
         "method": "physics_spec",
         "renderer": "code/lib/physics_figure.py",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "spec",
+        "status": "drawn",
         "checks": {
-         "renders": "not_on_print",
+         "renders": "pass",
          "print_match": "not a vector figure: drawn from the spec",
          "angles": "none claimed",
          "netlist": "not a circuit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2022_S1/q035_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q035_option_4_a5473884_14112026.svg",
+         "sha256": "a5473884a1308b6721a9f0bcd52df9766c593ead135d653c6b8ea98425c9a772",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "spec": {
          "title": "Straight line of negative slope: de Broglie wavelength versus momentum",
          "width": 300,
@@ -8964,17 +9009,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2022_S1/q037_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q037_question_b37fce40_14112026.svg",
+        "sha256": "b37fce40672d3c39e25b4cb471fa918c0ab452026f235b9055acbb9a71be8603",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "spec_name": "dipole on a line of length L",
         "title": "Charges −q and +q at the ends of a segment of length L",
@@ -9696,17 +9746,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2022_S1/q040_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q040_question_f3f4a185_14112026.svg",
+        "sha256": "f3f4a18544190fe1130d66c9de413e96d18d57bb7c2d3b0156da045ea658a063",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Wheatstone bridge drawn as a diamond: arms P, X, Q, Y with galvanometer G across the vertical diagonal and cell E in the outer bottom branch",
         "width": 340,
@@ -10822,17 +10877,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2022_S1/q044_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q044_question_c1ca7444_14112026.svg",
+        "sha256": "c1ca74442ca95b4e78b86083cc5916e91089ecf147a6f5c3d576ccdf38b0bd1f",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "(a) capacitor C charged by 100 V battery B; (b) same capacitor connected across a second capacitor C",
         "width": 440,
@@ -12122,17 +12182,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2022_S1/q048_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q048_question_70f18a71_14112026.svg",
+        "sha256": "70f18a71df8189c065f6bdf54bb6597579f3219f6733612a617d0b82d771adb7",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Two NAND gates feeding an AND gate; input A also passes through a NOT gate, input B is common",
         "width": 480,
@@ -14199,8 +14264,8 @@
    "qno": 58,
    "flags": [],
    "question": {
-    "full_text": "The given graph is a representation of kinetics of a reaction.\n\nThe y and x axes for zero and first order reactions, respectively are\n(1) zero order ($y$ = rate and $x$ = concentration), first order ($y = t_{1/2}$ and $x$ = concentration)\n(2) zero order ($y$ = rate and $x$ = concentration), first order ($y$ = rate and $x = t_{1/2}$)\n(3) zero order ($y$ = concentration and $x$ = time), first order ($y = t_{1/2}$ and $x$ = concentration)\n(4) zero order ($y$ = concentration and $x$ = time), first order ($y$ = rate constant and $x$ = concentration)",
-    "html": "<div class=\"q-stem\">The given graph is a representation of kinetics of a reaction.<br><br>The y and x axes for zero and first order reactions, respectively are</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q058_a7cb0eb8_04112026.png?v=a7cb0eb8e39d\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span>zero order (<span class=\"math\">y</span> = rate and <span class=\"math\">x</span> = concentration), first order (<span class=\"math\">y = t<sub>1/2</sub></span> and <span class=\"math\">x</span> = concentration)</li><li><span class=\"key\">(2)</span>zero order (<span class=\"math\">y</span> = rate and <span class=\"math\">x</span> = concentration), first order (<span class=\"math\">y</span> = rate and <span class=\"math\">x = t<sub>1/2</sub></span>)</li><li><span class=\"key\">(3)</span>zero order (<span class=\"math\">y</span> = concentration and <span class=\"math\">x</span> = time), first order (<span class=\"math\">y = t<sub>1/2</sub></span> and <span class=\"math\">x</span> = concentration)</li><li><span class=\"key\">(4)</span>zero order (<span class=\"math\">y</span> = concentration and <span class=\"math\">x</span> = time), first order (<span class=\"math\">y</span> = rate constant and <span class=\"math\">x</span> = concentration)</li></ol>",
+    "full_text": "The given graph is a representation of kinetics of a reaction.\n\nThe y and x axes for zero and first order reactions, respectively are\n[Figure: graph of y against x at constant temperature T: a horizontal straight line parallel to the x-axis]\n(1) zero order ($y$ = rate and $x$ = concentration), first order ($y = t_{1/2}$ and $x$ = concentration)\n(2) zero order ($y$ = rate and $x$ = concentration), first order ($y$ = rate and $x = t_{1/2}$)\n(3) zero order ($y$ = concentration and $x$ = time), first order ($y = t_{1/2}$ and $x$ = concentration)\n(4) zero order ($y$ = concentration and $x$ = time), first order ($y$ = rate constant and $x$ = concentration)",
+    "html": "<div class=\"q-stem\">The given graph is a representation of kinetics of a reaction.<br><br>The y and x axes for zero and first order reactions, respectively are</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q058_a7cb0eb8_04112026.png?v=a7cb0eb8e39d\" alt=\"graph of y against x at constant temperature T: a horizontal straight line parallel to the x-axis\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span>zero order (<span class=\"math\">y</span> = rate and <span class=\"math\">x</span> = concentration), first order (<span class=\"math\">y = t<sub>1/2</sub></span> and <span class=\"math\">x</span> = concentration)</li><li><span class=\"key\">(2)</span>zero order (<span class=\"math\">y</span> = rate and <span class=\"math\">x</span> = concentration), first order (<span class=\"math\">y</span> = rate and <span class=\"math\">x = t<sub>1/2</sub></span>)</li><li><span class=\"key\">(3)</span>zero order (<span class=\"math\">y</span> = concentration and <span class=\"math\">x</span> = time), first order (<span class=\"math\">y = t<sub>1/2</sub></span> and <span class=\"math\">x</span> = concentration)</li><li><span class=\"key\">(4)</span>zero order (<span class=\"math\">y</span> = concentration and <span class=\"math\">x</span> = time), first order (<span class=\"math\">y</span> = rate constant and <span class=\"math\">x</span> = concentration)</li></ol>",
     "stem": "The given graph is a representation of kinetics of a reaction.\n\nThe y and x axes for zero and first order reactions, respectively are",
     "format": "plain",
     "statements": [],
@@ -14209,7 +14274,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "graph of y against x at constant temperature T: a horizontal straight line parallel to the x-axis",
       "printed": {
        "png": {
         "path": "figures_agent/2022_S1/q058.png",
@@ -14219,7 +14284,28 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": null,
+       "status": "not_a_structure",
+       "checks": {
+        "smiles_parse": "n/a",
+        "name_check": "n/a",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "not_a_structure"
+       },
+       "image": null,
+       "message": null,
+       "kind": "not_a_structure",
+       "reaction_smiles": null,
+       "species": [],
+       "scheme": null,
+       "draw_hints": [],
+       "excluded_text": [],
+       "confidence": "certain",
+       "note": "Graph, not a chemical structure: axes labelled y (vertical) and x (horizontal), a horizontal line at constant y, caption 'Constant temperature T'. printed_text in input is empty, but the crop shows the labels 'Constant temperature T', 'y', 'x'."
+      },
       "shows": "question"
      }
     ],
@@ -14816,8 +14902,8 @@
    "qno": 61,
    "flags": [],
    "question": {
-    "full_text": "Which of the following sequence of reactions is suitable to synthesize chlorobenzene?\n(1) $\\mathrm{HCl}$\n(2) $\\mathrm{HCl}$, Heating\n(3) Benzene, $\\mathrm{Cl_2}$, anhydrous $\\mathrm{FeCl_3}$\n(4) Phenol, $\\mathrm{NaNO_2}$, $\\mathrm{HCl}$, $\\mathrm{CuCl}$",
-    "html": "<div class=\"q-stem\">Which of the following sequence of reactions is suitable to synthesize chlorobenzene?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q061_option_1_beb9220e_04112026.png?v=beb9220e49df\" alt=\"option 1\" loading=\"lazy\"> <span class=\"math\"><span class=\"up\">HCl</span></span></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q061_option_2_f3082291_04112026.png?v=f3082291c405\" alt=\"option 2\" loading=\"lazy\"> <span class=\"math\"><span class=\"up\">HCl</span></span>, Heating</li><li><span class=\"key\">(3)</span>Benzene, <span class=\"math\"><span class=\"up\">Cl<sub>2</sub></span></span>, anhydrous <span class=\"math\"><span class=\"up\">FeCl<sub>3</sub></span></span></li><li><span class=\"key\">(4)</span>Phenol, <span class=\"math\"><span class=\"up\">NaNO<sub>2</sub></span></span>, <span class=\"math\"><span class=\"up\">HCl</span></span>, <span class=\"math\"><span class=\"up\">CuCl</span></span></li></ol>",
+    "full_text": "Which of the following sequence of reactions is suitable to synthesize chlorobenzene?\n(1) benzene [SMILES: c1ccccc1] $\\mathrm{HCl}$\n(2) aniline [SMILES: Nc1ccccc1] $\\mathrm{HCl}$, Heating\n(3) Benzene, $\\mathrm{Cl_2}$, anhydrous $\\mathrm{FeCl_3}$\n(4) Phenol, $\\mathrm{NaNO_2}$, $\\mathrm{HCl}$, $\\mathrm{CuCl}$",
+    "html": "<div class=\"q-stem\">Which of the following sequence of reactions is suitable to synthesize chlorobenzene?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q061_option_1_s1_dbf27a87_14112026.svg?v=dbf27a872e50\" alt=\"benzene\"><span class=\"name\">benzene</span></span> <span class=\"math\"><span class=\"up\">HCl</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q061_option_2_s1_09f32278_14112026.svg?v=09f322787904\" alt=\"aniline\"><span class=\"name\">aniline</span></span> <span class=\"math\"><span class=\"up\">HCl</span></span>, Heating</li><li><span class=\"key\">(3)</span>Benzene, <span class=\"math\"><span class=\"up\">Cl<sub>2</sub></span></span>, anhydrous <span class=\"math\"><span class=\"up\">FeCl<sub>3</sub></span></span></li><li><span class=\"key\">(4)</span>Phenol, <span class=\"math\"><span class=\"up\">NaNO<sub>2</sub></span></span>, <span class=\"math\"><span class=\"up\">HCl</span></span>, <span class=\"math\"><span class=\"up\">CuCl</span></span></li></ol>",
     "stem": "Which of the following sequence of reactions is suitable to synthesize chlorobenzene?",
     "format": "plain",
     "statements": [],
@@ -14829,10 +14915,26 @@
      {
       "key": "1",
       "text": "$\\mathrm{HCl}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "benzene",
+        "smiles": "c1ccccc1",
+        "formula": "C6H6",
+        "inchikey": "UHOVQNZJYSORNB-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q061_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q061_option_1_s1_dbf27a87_14112026.svg",
+         "sha256": "dbf27a872e50c03969759588fda3f84b5eb7f5919836647930fe5a4b7c5c1366",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "benzene",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q061_option_1.png",
@@ -14842,17 +14944,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q061_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q061_option_1_bc582876_14112026.svg",
+         "sha256": "bc58287680324090d838c53acf81cf972cef0ea253364fab079e7c3df4019360",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "benzene",
+          "smiles": "c1ccccc1",
+          "formula": "C6H6",
+          "inchikey": "UHOVQNZJYSORNB-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q061_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q061_option_1_s1_dbf27a87_14112026.svg",
+           "sha256": "dbf27a872e50c03969759588fda3f84b5eb7f5919836647930fe5a4b7c5c1366",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "c1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Kekule benzene ring drawn as option (1); the ', H' cut at the crop edge is the start of the option text 'HCl', not part of the drawing."
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "$\\mathrm{HCl}$, Heating",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "aniline",
+        "smiles": "Nc1ccccc1",
+        "formula": "C6H7N",
+        "inchikey": "PAYRUJLWNCNPSJ-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q061_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q061_option_2_s1_09f32278_14112026.svg",
+         "sha256": "09f322787904a16bb670d196b70c12bb4c526ab3f7a88b57552fb2d9a03e6905",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "aniline",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q061_option_2.png",
@@ -14862,7 +15030,60 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q061_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q061_option_2_b34944c7_14112026.svg",
+         "sha256": "b34944c7cab3212511f72611c3ebe84bc5645da63494f095ff336440fa3538cd",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "aniline",
+          "smiles": "Nc1ccccc1",
+          "formula": "C6H7N",
+          "inchikey": "PAYRUJLWNCNPSJ-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q061_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q061_option_2_s1_09f32278_14112026.svg",
+           "sha256": "09f322787904a16bb670d196b70c12bb4c526ab3f7a88b57552fb2d9a03e6905",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "[NH2:1]c1ccccc1",
+          "orient": {
+           "atom": 1,
+           "deg": 30
+          },
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Benzene ring with NH2 at the upper-right vertex, drawn as option (2); the ', H' cut at the crop edge is the start of the option text 'HCl, Heating', not part of the drawing."
+       },
        "shows": "option"
       }
      },
@@ -17438,7 +17659,7 @@
    "qno": 75,
    "flags": [],
    "question": {
-    "full_text": "Which of the following p-V curve represents maximum work done?\n(1) \n(2) \n(3) \n(4) ",
+    "full_text": "Which of the following p-V curve represents maximum work done?\n(1) [Figure: p-V graph labelled Isothermal: a single vertical line at constant V (p on the vertical axis, V on the horizontal axis)]\n(2) [Figure: p-V graph labelled Isothermal: a horizontal segment at high p, then a curve falling steeply to lower p at a smaller final V, closed down to the V axis by a vertical line (p on the vertical axis, V on the horizontal axis)]\n(3) [Figure: p-V graph labelled Isothermal: a closed elliptical cycle tilted downward from left to right, with arrows showing the direction around the loop (p on the vertical axis, V on the horizontal axis)]\n(4) [Figure: p-V graph labelled Isothermal: a horizontal segment at high p, then a curve falling gradually over a wide range of V to a lower p, closed down to the V axis by a vertical line (p on the vertical axis, V on the horizontal axis)]",
     "html": "<div class=\"q-stem\">Which of the following p-V curve represents maximum work done?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_1_68f7f51b_04112026.png?v=68f7f51b6194\" alt=\"option 1\" loading=\"lazy\"></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_2_b85def2c_04112026.png?v=b85def2c3fe1\" alt=\"option 2\" loading=\"lazy\"></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_3_5a020e39_04112026.png?v=5a020e39c380\" alt=\"option 3\" loading=\"lazy\"></li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_4_994caacf_04112026.png?v=994caacfec62\" alt=\"option 4\" loading=\"lazy\"></li></ol>",
     "stem": "Which of the following p-V curve represents maximum work done?",
     "format": "plain",
@@ -17454,7 +17675,7 @@
       "chemistry": [],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "p-V graph labelled Isothermal: a single vertical line at constant V (p on the vertical axis, V on the horizontal axis)",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q075_option_1.png",
@@ -17464,7 +17685,28 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_a_structure",
+        "checks": {
+         "smiles_parse": "n/a",
+         "name_check": "n/a",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_a_structure"
+        },
+        "image": null,
+        "message": null,
+        "kind": "not_a_structure",
+        "reaction_smiles": null,
+        "species": [],
+        "scheme": null,
+        "draw_hints": [],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "p-V curve graph, not a chemical structure. Label 'Isothermal' is cut at the crop edge."
+       },
        "shows": "option"
       }
      },
@@ -17474,7 +17716,7 @@
       "chemistry": [],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "p-V graph labelled Isothermal: a horizontal segment at high p, then a curve falling steeply to lower p at a smaller final V, closed down to the V axis by a vertical line (p on the vertical axis, V on the horizontal axis)",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q075_option_2.png",
@@ -17484,7 +17726,28 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_a_structure",
+        "checks": {
+         "smiles_parse": "n/a",
+         "name_check": "n/a",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_a_structure"
+        },
+        "image": null,
+        "message": null,
+        "kind": "not_a_structure",
+        "reaction_smiles": null,
+        "species": [],
+        "scheme": null,
+        "draw_hints": [],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "p-V curve graph, not a chemical structure."
+       },
        "shows": "option"
       }
      },
@@ -17494,7 +17757,7 @@
       "chemistry": [],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "p-V graph labelled Isothermal: a closed elliptical cycle tilted downward from left to right, with arrows showing the direction around the loop (p on the vertical axis, V on the horizontal axis)",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q075_option_3.png",
@@ -17504,7 +17767,28 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_a_structure",
+        "checks": {
+         "smiles_parse": "n/a",
+         "name_check": "n/a",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_a_structure"
+        },
+        "image": null,
+        "message": null,
+        "kind": "not_a_structure",
+        "reaction_smiles": null,
+        "species": [],
+        "scheme": null,
+        "draw_hints": [],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "p-V curve graph, not a chemical structure. Label 'Isothermal' is cut at the crop edge."
+       },
        "shows": "option"
       }
      },
@@ -17514,7 +17798,7 @@
       "chemistry": [],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "p-V graph labelled Isothermal: a horizontal segment at high p, then a curve falling gradually over a wide range of V to a lower p, closed down to the V axis by a vertical line (p on the vertical axis, V on the horizontal axis)",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q075_option_4.png",
@@ -17524,7 +17808,28 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_a_structure",
+        "checks": {
+         "smiles_parse": "n/a",
+         "name_check": "n/a",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_a_structure"
+        },
+        "image": null,
+        "message": null,
+        "kind": "not_a_structure",
+        "reaction_smiles": null,
+        "species": [],
+        "scheme": null,
+        "draw_hints": [],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "p-V curve graph, not a chemical structure."
+       },
        "shows": "option"
       }
      }
@@ -18068,8 +18373,8 @@
    "qno": 78,
    "flags": [],
    "question": {
-    "full_text": "The Kjeldahl's method for the estimation of nitrogen can be used to estimate the amount of nitrogen in which one of the following compounds?\n(1) (structure diagram — see option_boxes)\n(2) (structure diagram — see option_boxes)\n(3) (structure diagram — see option_boxes)\n(4) (structure diagram — see option_boxes)",
-    "html": "<div class=\"q-stem\">The Kjeldahl&#x27;s method for the estimation of nitrogen can be used to estimate the amount of nitrogen in which one of the following compounds?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q078_option_1_898d91cb_04112026.png?v=898d91cb52ea\" alt=\"option 1\" loading=\"lazy\"> (structure diagram — see option_boxes)</li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q078_option_2_4b26bb63_04112026.png?v=4b26bb63c1ce\" alt=\"option 2\" loading=\"lazy\"> (structure diagram — see option_boxes)</li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q078_option_3_af7edf43_04112026.png?v=af7edf437348\" alt=\"option 3\" loading=\"lazy\"> (structure diagram — see option_boxes)</li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q078_option_4_a83d381a_04112026.png?v=a83d381a36a4\" alt=\"option 4\" loading=\"lazy\"> (structure diagram — see option_boxes)</li></ol>",
+    "full_text": "The Kjeldahl's method for the estimation of nitrogen can be used to estimate the amount of nitrogen in which one of the following compounds?\n(1) aniline [SMILES: Nc1ccccc1] (structure diagram — see option_boxes)\n(2) azobenzene [SMILES: c1ccc(N=Nc2ccccc2)cc1] (structure diagram — see option_boxes)\n(3) nitrobenzene [SMILES: O=[N+]([O-])c1ccccc1] (structure diagram — see option_boxes)\n(4) pyridine [SMILES: c1ccncc1] (structure diagram — see option_boxes)",
+    "html": "<div class=\"q-stem\">The Kjeldahl&#x27;s method for the estimation of nitrogen can be used to estimate the amount of nitrogen in which one of the following compounds?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_1_s1_3051b9a1_14112026.svg?v=3051b9a1f0bc\" alt=\"aniline\"><span class=\"name\">aniline</span></span> (structure diagram — see option_boxes)</li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_2_s1_c6c0919e_14112026.svg?v=c6c0919ef009\" alt=\"azobenzene\"><span class=\"name\">azobenzene</span></span> (structure diagram — see option_boxes)</li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_3_s1_017308e0_14112026.svg?v=017308e0a06d\" alt=\"nitrobenzene\"><span class=\"name\">nitrobenzene</span></span> (structure diagram — see option_boxes)</li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_4_s1_c143af42_14112026.svg?v=c143af42db5a\" alt=\"pyridine\"><span class=\"name\">pyridine</span></span> (structure diagram — see option_boxes)</li></ol>",
     "stem": "The Kjeldahl's method for the estimation of nitrogen can be used to estimate the amount of nitrogen in which one of the following compounds?",
     "format": "plain",
     "statements": [],
@@ -18081,10 +18386,26 @@
      {
       "key": "1",
       "text": "(structure diagram — see option_boxes)",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "aniline",
+        "smiles": "Nc1ccccc1",
+        "formula": "C6H7N",
+        "inchikey": "PAYRUJLWNCNPSJ-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q078_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_1_s1_3051b9a1_14112026.svg",
+         "sha256": "3051b9a1f0bc824c5b63c8571b98e4860171ad984cae77f0f80e3a58687f6fbe",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "aniline",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q078_option_1.png",
@@ -18094,17 +18415,86 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q078_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_1_ecc5fd9b_14112026.svg",
+         "sha256": "ecc5fd9b19488bb700248414174462bdb2d97ac6933a146a7728fef0c2b3ac1f",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "aniline",
+          "smiles": "Nc1ccccc1",
+          "formula": "C6H7N",
+          "inchikey": "PAYRUJLWNCNPSJ-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q078_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_1_s1_3051b9a1_14112026.svg",
+           "sha256": "3051b9a1f0bc824c5b63c8571b98e4860171ad984cae77f0f80e3a58687f6fbe",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "[NH2:1]c1ccccc1",
+          "orient": {
+           "atom": 1,
+           "deg": 90
+          },
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "(structure diagram — see option_boxes)",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "azobenzene",
+        "smiles": "c1ccc(N=Nc2ccccc2)cc1",
+        "formula": "C12H10N2",
+        "inchikey": "DMLAVOWQYNRWNQ-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q078_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_2_s1_c6c0919e_14112026.svg",
+         "sha256": "c6c0919ef0099bf7c7f10a1bd0006375bfd18dcc071eb93d5cc5e6f648481849",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "azobenzene",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q078_option_2.png",
@@ -18114,17 +18504,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q078_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_2_4a1d82cd_14112026.svg",
+         "sha256": "4a1d82cdf58c2bae5ff63f98829d0502115ce23ee12f0d2c9085499f4362fc7c",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "azobenzene",
+          "smiles": "c1ccc(N=Nc2ccccc2)cc1",
+          "formula": "C12H10N2",
+          "inchikey": "DMLAVOWQYNRWNQ-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q078_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_2_s1_c6c0919e_14112026.svg",
+           "sha256": "c6c0919ef0099bf7c7f10a1bd0006375bfd18dcc071eb93d5cc5e6f648481849",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "c1ccc(cc1)N=Nc1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Drawn flat; no cis/trans stereochemistry assigned."
+       },
        "shows": "option"
       }
      },
      {
       "key": "3",
       "text": "(structure diagram — see option_boxes)",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "nitrobenzene",
+        "smiles": "O=[N+]([O-])c1ccccc1",
+        "formula": "C6H5NO2",
+        "inchikey": "LQNUZADURLCDLV-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q078_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_3_s1_017308e0_14112026.svg",
+         "sha256": "017308e0a06d89c408f9782c33ecc6d94658242568e84ef65febf9080b0bef62",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "nitrobenzene",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q078_option_3.png",
@@ -18134,17 +18590,86 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q078_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_3_c6b5e702_14112026.svg",
+         "sha256": "c6b5e702e97b8d1de64a1ef075b6a7a31ee06f058154c7f36051d1719365a34c",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "nitrobenzene",
+          "smiles": "O=[N+]([O-])c1ccccc1",
+          "formula": "C6H5NO2",
+          "inchikey": "LQNUZADURLCDLV-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q078_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_3_s1_017308e0_14112026.svg",
+           "sha256": "017308e0a06d89c408f9782c33ecc6d94658242568e84ef65febf9080b0bef62",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "[O-][N+:1](=O)c1ccccc1",
+          "orient": {
+           "atom": 1,
+           "deg": 90
+          },
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "NO2 printed condensed above the ring."
+       },
        "shows": "option"
       }
      },
      {
       "key": "4",
       "text": "(structure diagram — see option_boxes)",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "pyridine",
+        "smiles": "c1ccncc1",
+        "formula": "C5H5N",
+        "inchikey": "JUJWROOIHBZHMG-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q078_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_4_s1_c143af42_14112026.svg",
+         "sha256": "c143af42db5a09ff8f80e7ebccae35b49e487692f411142cc5ae3e63650d44b4",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "pyridine",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q078_option_4.png",
@@ -18154,7 +18679,60 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q078_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_4_0924279f_14112026.svg",
+         "sha256": "0924279f2b7fef3378ab868a23964d3b0d12f25ccbfc3ba756fe2fec828085df",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "pyridine",
+          "smiles": "c1ccncc1",
+          "formula": "C5H5N",
+          "inchikey": "JUJWROOIHBZHMG-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q078_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_4_s1_c143af42_14112026.svg",
+           "sha256": "c143af42db5a09ff8f80e7ebccae35b49e487692f411142cc5ae3e63650d44b4",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "[n:1]1ccccc1",
+          "orient": {
+           "atom": 1,
+           "deg": 270
+          },
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Ring N drawn at the bottom of the ring."
+       },
        "shows": "option"
       }
      }
@@ -19343,8 +19921,8 @@
    "qno": 85,
    "flags": [],
    "question": {
-    "full_text": "Which compound amongst the following is **not** an aromatic compound?\n(1) \n(2) \n(3) \n(4) ",
-    "html": "<div class=\"q-stem\">Which compound amongst the following is **not** an aromatic compound?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q085_option_1_7e902f0b_04112026.png?v=7e902f0be002\" alt=\"option 1\" loading=\"lazy\"></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q085_option_2_aef15206_04112026.png?v=aef15206082e\" alt=\"option 2\" loading=\"lazy\"></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q085_option_3_1f603c47_04112026.png?v=1f603c47618e\" alt=\"option 3\" loading=\"lazy\"></li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q085_option_4_57f17e5a_04112026.png?v=57f17e5af6cf\" alt=\"option 4\" loading=\"lazy\"></li></ol>",
+    "full_text": "Which compound amongst the following is **not** an aromatic compound?\n(1) cyclopropenylium [SMILES: c1c[cH+]1]\n(2) cyclohepta-1,3,5-triene [SMILES: C1=CC=CCC=C1]\n(3) cyclopentadienide [SMILES: c1cc[cH-]c1]\n(4) cycloheptatrienylium [SMILES: c1ccc[cH+]cc1]",
+    "html": "<div class=\"q-stem\">Which compound amongst the following is **not** an aromatic compound?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_1_s1_47339bdc_14112026.svg?v=47339bdcfc46\" alt=\"cyclopropenylium\"><span class=\"name\">cyclopropenylium</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_2_s1_5b78ad9c_14112026.svg?v=5b78ad9cdbf9\" alt=\"cyclohepta-1,3,5-triene\"><span class=\"name\">cyclohepta-1,3,5-triene</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_3_s1_efed86b3_14112026.svg?v=efed86b3462c\" alt=\"cyclopentadienide\"><span class=\"name\">cyclopentadienide</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_4_s1_bdb28c9c_14112026.svg?v=bdb28c9c98fc\" alt=\"cycloheptatrienylium\"><span class=\"name\">cycloheptatrienylium</span></span></li></ol>",
     "stem": "Which compound amongst the following is **not** an aromatic compound?",
     "format": "plain",
     "statements": [],
@@ -19356,10 +19934,26 @@
      {
       "key": "1",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "cyclopropenylium",
+        "smiles": "c1c[cH+]1",
+        "formula": "C3H3+",
+        "inchikey": "IPKCFGQXHZKYLH-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q085_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_1_s1_47339bdc_14112026.svg",
+         "sha256": "47339bdcfc465e9cae496f9752e8e4654570f13609f1d5be02aa22fe2d2a6b48",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "cyclopropenyl cation",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q085_option_1.png",
@@ -19369,17 +19963,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q085_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_1_f984a6cb_14112026.svg",
+         "sha256": "f984a6cb250069afe5172826e7e546a79af06acb0f42cac9a7195076484f5d75",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "cyclopropenylium",
+          "smiles": "c1c[cH+]1",
+          "formula": "C3H3+",
+          "inchikey": "IPKCFGQXHZKYLH-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q085_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_1_s1_47339bdc_14112026.svg",
+           "sha256": "47339bdcfc465e9cae496f9752e8e4654570f13609f1d5be02aa22fe2d2a6b48",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "C1=C[CH+]1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Three-membered ring with one C=C (top) and a positive charge on the lower carbon."
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "cyclohepta-1,3,5-triene",
+        "smiles": "C1=CC=CCC=C1",
+        "formula": "C7H8",
+        "inchikey": "CHVJITGCYZJHLR-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q085_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_2_s1_5b78ad9c_14112026.svg",
+         "sha256": "5b78ad9cdbf96bbf99bd958eb91792398582f1f6c053deaca0c247ab2a6a607d",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "cyclohepta-1,3,5-triene",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q085_option_2.png",
@@ -19389,17 +20049,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q085_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_2_2b5a28ab_14112026.svg",
+         "sha256": "2b5a28ab4356bdf3e60406b3d0ddb97b507a7153dccb290a2cc09a83cce9de7d",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "cyclohepta-1,3,5-triene",
+          "smiles": "C1=CC=CCC=C1",
+          "formula": "C7H8",
+          "inchikey": "CHVJITGCYZJHLR-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q085_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_2_s1_5b78ad9c_14112026.svg",
+           "sha256": "5b78ad9cdbf96bbf99bd958eb91792398582f1f6c053deaca0c247ab2a6a607d",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "C1=CC=CCC=C1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Seven-membered ring with three C=C and one sp3 CH2 at the bottom."
+       },
        "shows": "option"
       }
      },
      {
       "key": "3",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "cyclopentadienide",
+        "smiles": "c1cc[cH-]c1",
+        "formula": "C5H5-",
+        "inchikey": "SINKOGOPEQSHQD-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q085_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_3_s1_efed86b3_14112026.svg",
+         "sha256": "efed86b3462ca799bdcc01461ba0c33a583e2c7759d16b6076f642330a84f19a",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "cyclopentadienyl anion",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q085_option_3.png",
@@ -19409,17 +20135,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q085_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_3_8408cdc1_14112026.svg",
+         "sha256": "8408cdc133688eeef87983c201c19854c0a7788bfc493a9e8ea833d7584f081a",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "cyclopentadienide",
+          "smiles": "c1cc[cH-]c1",
+          "formula": "C5H5-",
+          "inchikey": "SINKOGOPEQSHQD-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q085_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_3_s1_efed86b3_14112026.svg",
+           "sha256": "efed86b3462ca799bdcc01461ba0c33a583e2c7759d16b6076f642330a84f19a",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "C1=CC=C[CH-]1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Five-membered ring with two C=C and a negative charge on the bottom carbon. A stray ')' at the left edge of the crop is from the neighbouring option label, not part of the figure."
+       },
        "shows": "option"
       }
      },
      {
       "key": "4",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "(4)",
+        "name": "cycloheptatrienylium",
+        "smiles": "c1ccc[cH+]cc1",
+        "formula": "C7H7+",
+        "inchikey": "OJOSABWCUVCSTQ-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q085_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_4_s1_bdb28c9c_14112026.svg",
+         "sha256": "bdb28c9c98fc71fe08432e1e8062260144a04fc33de7c71a4529adc208bc3b5d",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "(4) tropylium (cycloheptatrienyl) cation",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q085_option_4.png",
@@ -19429,7 +20221,57 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q085_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_4_deb8e803_14112026.svg",
+         "sha256": "deb8e80312b81d0cfbf59f430e215db8473881eebb971f0ced75181dfcdb6286",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "(4)",
+          "name": "cycloheptatrienylium",
+          "smiles": "c1ccc[cH+]cc1",
+          "formula": "C7H7+",
+          "inchikey": "OJOSABWCUVCSTQ-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q085_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_4_s1_bdb28c9c_14112026.svg",
+           "sha256": "bdb28c9c98fc71fe08432e1e8062260144a04fc33de7c71a4529adc208bc3b5d",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "C1=CC=CC=C[CH+]1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Seven-membered ring with three C=C drawn and a positive charge on one carbon (lower right)."
+       },
        "shows": "option"
       }
      }
@@ -19957,8 +20799,8 @@
    "qno": 88,
    "flags": [],
    "question": {
-    "full_text": "The correct IUPAC name of the following compound is\n(1) 1-bromo-4-methyl-5-chlorohexan-3-ol\n(2) 6-bromo-4-methyl-2-chlorohexan-4-ol\n(3) 1-bromo-5-chloro-4-methylhexan-3-ol\n(4) 6-bromo-2-chloro-4-methylhexan-4-ol",
-    "html": "<div class=\"q-stem\">The correct IUPAC name of the following compound is</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q088_ba91ee99_04112026.png?v=ba91ee99d908\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span>1-bromo-4-methyl-5-chlorohexan-3-ol</li><li><span class=\"key\">(2)</span>6-bromo-4-methyl-2-chlorohexan-4-ol</li><li><span class=\"key\">(3)</span>1-bromo-5-chloro-4-methylhexan-3-ol</li><li><span class=\"key\">(4)</span>6-bromo-2-chloro-4-methylhexan-4-ol</li></ol>",
+    "full_text": "The correct IUPAC name of the following compound is\n[Figure: 1-bromo-5-chloro-4-methylhexan-3-ol ($\\ce{CH3CH(Cl)CH(CH3)CH(OH)CH2CH2Br}$)]\n[Structures: 1-bromo-5-chloro-4-methylhexan-3-ol [SMILES: CC(Cl)C(C)C(O)CCBr]]\n(1) 1-bromo-4-methyl-5-chlorohexan-3-ol\n(2) 6-bromo-4-methyl-2-chlorohexan-4-ol\n(3) 1-bromo-5-chloro-4-methylhexan-3-ol\n(4) 6-bromo-2-chloro-4-methylhexan-4-ol",
+    "html": "<div class=\"q-stem\">The correct IUPAC name of the following compound is</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q088_ba91ee99_04112026.png?v=ba91ee99d908\" alt=\"1-bromo-5-chloro-4-methylhexan-3-ol ($\\ce{CH3CH(Cl)CH(CH3)CH(OH)CH2CH2Br}$)\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span>1-bromo-4-methyl-5-chlorohexan-3-ol</li><li><span class=\"key\">(2)</span>6-bromo-4-methyl-2-chlorohexan-4-ol</li><li><span class=\"key\">(3)</span>1-bromo-5-chloro-4-methylhexan-3-ol</li><li><span class=\"key\">(4)</span>6-bromo-2-chloro-4-methylhexan-4-ol</li></ol>",
     "stem": "The correct IUPAC name of the following compound is",
     "format": "plain",
     "statements": [],
@@ -19967,7 +20809,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "1-bromo-5-chloro-4-methylhexan-3-ol ($\\ce{CH3CH(Cl)CH(CH3)CH(OH)CH2CH2Br}$)",
       "printed": {
        "png": {
         "path": "figures_agent/2022_S1/q088.png",
@@ -19977,11 +20819,77 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": "rdkit",
+       "status": "drawn",
+       "checks": {
+        "smiles_parse": "pass",
+        "name_check": "1 not_run",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "pass"
+       },
+       "image": {
+        "path": "figures_drawn/2022_S1/q088_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q088_question_373d9359_14112026.svg",
+        "sha256": "373d93597a9e2522c6e579111368863d67c4b77aea4adcc015ef3114a755d35e",
+        "type": "image/svg+xml"
+       },
+       "message": null,
+       "kind": "structures",
+       "reaction_smiles": null,
+       "species": [
+        {
+         "label": "",
+         "name": "1-bromo-5-chloro-4-methylhexan-3-ol",
+         "smiles": "CC(Cl)C(C)C(O)CCBr",
+         "formula": "C7H14BrClO",
+         "inchikey": "YXACBWWJNXVFEU-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2022_S1/q088_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q088_question_s1_b0fc92e9_14112026.svg",
+          "sha256": "b0fc92e9b0c8c747ba99b755652fa514f78a5e4d36dc77e5b68860f722d45883",
+          "type": "image/svg+xml"
+         }
+        }
+       ],
+       "scheme": null,
+       "draw_hints": [
+        {
+         "smiles": "CC(Cl)C(C)C(O)CCBr",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        }
+       ],
+       "excluded_text": [],
+       "confidence": "certain",
+       "note": "Skeletal (zig-zag) drawing: Cl on C5 and OH on C3 drawn above the chain, CH3 on C4 drawn below, Br at chain end. No stereochemistry drawn. Partial option text at the bottom edge of the crop is not part of the figure."
+      },
       "shows": "question"
      }
     ],
-    "chemistry": [],
+    "chemistry": [
+     {
+      "label": "",
+      "name": "1-bromo-5-chloro-4-methylhexan-3-ol",
+      "smiles": "CC(Cl)C(C)C(O)CCBr",
+      "formula": "C7H14BrClO",
+      "inchikey": "YXACBWWJNXVFEU-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2022_S1/q088_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q088_question_s1_b0fc92e9_14112026.svg",
+       "sha256": "b0fc92e9b0c8c747ba99b755652fa514f78a5e4d36dc77e5b68860f722d45883",
+       "type": "image/svg+xml"
+      }
+     }
+    ],
     "options": [
      {
       "key": "1",
@@ -20370,8 +21278,8 @@
    "qno": 90,
    "flags": [],
    "question": {
-    "full_text": "Which one of the following is not formed when acetone reacts with 2-pentanone in the presence of dilute NaOH followed by heating?\n(1) \n(2) \n(3) \n(4) ",
-    "html": "<div class=\"q-stem\">Which one of the following is not formed when acetone reacts with 2-pentanone in the presence of dilute NaOH followed by heating?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q090_option_1_2f236fd9_04112026.png?v=2f236fd90956\" alt=\"option 1\" loading=\"lazy\"></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q090_option_2_070111f9_04112026.png?v=070111f983c9\" alt=\"option 2\" loading=\"lazy\"></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q090_option_3_1bb97735_04112026.png?v=1bb97735dbfa\" alt=\"option 3\" loading=\"lazy\"></li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q090_option_4_27207278_04112026.png?v=272072784ebc\" alt=\"option 4\" loading=\"lazy\"></li></ol>",
+    "full_text": "Which one of the following is not formed when acetone reacts with 2-pentanone in the presence of dilute NaOH followed by heating?\n(1) (E)-4-methylhept-3-en-2-one [SMILES: CCC/C(C)=C/C(C)=O]\n(2) 3-ethyl-4-methylpent-3-en-2-one [SMILES: CCC(C(C)=O)=C(C)C]\n(3) 4-methylpent-3-en-2-one [SMILES: CC(=O)C=C(C)C]\n(4) 5-ethyl-4-methylhept-4-en-3-one [SMILES: CCC(=O)C(C)=C(CC)CC]",
+    "html": "<div class=\"q-stem\">Which one of the following is not formed when acetone reacts with 2-pentanone in the presence of dilute NaOH followed by heating?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_1_s1_cb45c8ef_14112026.svg?v=cb45c8efc96c\" alt=\"(E)-4-methylhept-3-en-2-one\"><span class=\"name\">(E)-4-methylhept-3-en-2-one</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_2_s1_80af8406_14112026.svg?v=80af8406643a\" alt=\"3-ethyl-4-methylpent-3-en-2-one\"><span class=\"name\">3-ethyl-4-methylpent-3-en-2-one</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_3_s1_15fe930f_14112026.svg?v=15fe930f4a06\" alt=\"4-methylpent-3-en-2-one\"><span class=\"name\">4-methylpent-3-en-2-one</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_4_s1_1bfa134b_14112026.svg?v=1bfa134bd650\" alt=\"5-ethyl-4-methylhept-4-en-3-one\"><span class=\"name\">5-ethyl-4-methylhept-4-en-3-one</span></span></li></ol>",
     "stem": "Which one of the following is not formed when acetone reacts with 2-pentanone in the presence of dilute NaOH followed by heating?",
     "format": "plain",
     "statements": [],
@@ -20383,10 +21291,26 @@
      {
       "key": "1",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "(E)-4-methylhept-3-en-2-one",
+        "smiles": "CCC/C(C)=C/C(C)=O",
+        "formula": "C8H14O",
+        "inchikey": "URFGREAPSNSHAH-VOTSOKGWSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q090_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_1_s1_cb45c8ef_14112026.svg",
+         "sha256": "cb45c8efc96c6d59df9b232b76b5f81adc7c98cb5dc7a414bdeab4140db691bb",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "(E)-4-methylhept-3-en-2-one",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q090_option_1.png",
@@ -20396,17 +21320,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q090_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_1_963667c1_14112026.svg",
+         "sha256": "963667c1d48fe384f9a654b14c25e66a605923d167e71886e11c8b23b9ec0327",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "(E)-4-methylhept-3-en-2-one",
+          "smiles": "CCC/C(C)=C/C(C)=O",
+          "formula": "C8H14O",
+          "inchikey": "URFGREAPSNSHAH-VOTSOKGWSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q090_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_1_s1_cb45c8ef_14112026.svg",
+           "sha256": "cb45c8efc96c6d59df9b232b76b5f81adc7c98cb5dc7a414bdeab4140db691bb",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CCC/C(C)=C/C(C)=O",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Skeletal drawing: propyl chain and acetyl group drawn trans across the C3=C4 double bond (E)."
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "3-ethyl-4-methylpent-3-en-2-one",
+        "smiles": "CCC(C(C)=O)=C(C)C",
+        "formula": "C8H14O",
+        "inchikey": "QXKSCXSNUNKWJA-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q090_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_2_s1_80af8406_14112026.svg",
+         "sha256": "80af8406643a63c3d1546051a4407a8193bb2fd5d888acf5c115f81971ed8024",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "3-ethyl-4-methylpent-3-en-2-one",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q090_option_2.png",
@@ -20416,17 +21406,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q090_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_2_63443f23_14112026.svg",
+         "sha256": "63443f23333e90dcd933763834b13c7c7edf7a8ffebd089486528c0ee8df47b2",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "3-ethyl-4-methylpent-3-en-2-one",
+          "smiles": "CCC(C(C)=O)=C(C)C",
+          "formula": "C8H14O",
+          "inchikey": "QXKSCXSNUNKWJA-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q090_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_2_s1_80af8406_14112026.svg",
+           "sha256": "80af8406643a63c3d1546051a4407a8193bb2fd5d888acf5c115f81971ed8024",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CCC(=C(C)C)C(C)=O",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      },
      {
       "key": "3",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "4-methylpent-3-en-2-one",
+        "smiles": "CC(=O)C=C(C)C",
+        "formula": "C6H10O",
+        "inchikey": "SHOJXDKTYKFBRD-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q090_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_3_s1_15fe930f_14112026.svg",
+         "sha256": "15fe930f4a064374b8972c2a2bb52b1b596dd26bcdfaea7007a72415899dbb8a",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "4-methylpent-3-en-2-one",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q090_option_3.png",
@@ -20436,17 +21492,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q090_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_3_de1ee9e3_14112026.svg",
+         "sha256": "de1ee9e362571e01bca1622dfc1ca13a7bd4e76118df916f2257cc69d0b944c1",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "4-methylpent-3-en-2-one",
+          "smiles": "CC(=O)C=C(C)C",
+          "formula": "C6H10O",
+          "inchikey": "SHOJXDKTYKFBRD-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q090_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_3_s1_15fe930f_14112026.svg",
+           "sha256": "15fe930f4a064374b8972c2a2bb52b1b596dd26bcdfaea7007a72415899dbb8a",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC(=O)C=C(C)C",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      },
      {
       "key": "4",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "5-ethyl-4-methylhept-4-en-3-one",
+        "smiles": "CCC(=O)C(C)=C(CC)CC",
+        "formula": "C10H18O",
+        "inchikey": "IDPSLUYWEQFHAM-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q090_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_4_s1_1bfa134b_14112026.svg",
+         "sha256": "1bfa134bd650c95debe3820a320be883822bf9c2ae5f2db9e0ec5742e3e45e24",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "5-ethyl-4-methylhept-4-en-3-one",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q090_option_4.png",
@@ -20456,7 +21578,57 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q090_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_4_e12f3915_14112026.svg",
+         "sha256": "e12f39153510b31f79211c2c377e7806d572797c161813db9288cf0b6a24902c",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "5-ethyl-4-methylhept-4-en-3-one",
+          "smiles": "CCC(=O)C(C)=C(CC)CC",
+          "formula": "C10H18O",
+          "inchikey": "IDPSLUYWEQFHAM-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q090_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_4_s1_1bfa134b_14112026.svg",
+           "sha256": "1bfa134bd650c95debe3820a320be883822bf9c2ae5f2db9e0ec5742e3e45e24",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CCC(=O)C(C)=C(CC)CC",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      }
@@ -22026,8 +23198,8 @@
    "qno": 98,
    "flags": [],
    "question": {
-    "full_text": "The product formed from the following reaction sequence is\n(1) \n(2) \n(3) \n(4) ",
-    "html": "<div class=\"q-stem\">The product formed from the following reaction sequence is</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_7854b602_04112026.png?v=7854b602d94a\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_option_1_ca48bf67_04112026.png?v=ca48bf67f0f6\" alt=\"option 1\" loading=\"lazy\"></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_option_2_9d2aae77_04112026.png?v=9d2aae77a450\" alt=\"option 2\" loading=\"lazy\"></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_option_3_a486f6ab_04112026.png?v=a486f6abf2ba\" alt=\"option 3\" loading=\"lazy\"></li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_option_4_cb381a95_04112026.png?v=cb381a950d3f\" alt=\"option 4\" loading=\"lazy\"></li></ol>",
+    "full_text": "The product formed from the following reaction sequence is\n[Figure: benzonitrile →[(i) LiAlH₄, H₂O; (ii) NaNO₂ + HCl; (iii) H₂O] ?]\n[Structures: benzonitrile [SMILES: N#Cc1ccccc1]]\n(1) benzyl chloride [SMILES: ClCc1ccccc1]\n(2) benzyl alcohol [SMILES: OCc1ccccc1]\n(3) benzamide [SMILES: NC(=O)c1ccccc1]\n(4) phenylmethanediazonium chloride [SMILES: N#[N+]Cc1ccccc1.[Cl-]]",
+    "html": "<div class=\"q-stem\">The product formed from the following reaction sequence is</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_7854b602_04112026.png?v=7854b602d94a\" alt=\"benzonitrile →[(i) LiAlH₄, H₂O; (ii) NaNO₂ + HCl; (iii) H₂O] ?\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_1_s1_d91fbed0_14112026.svg?v=d91fbed0f992\" alt=\"benzyl chloride\"><span class=\"name\">benzyl chloride</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_2_s1_76b1501e_14112026.svg?v=76b1501e4315\" alt=\"benzyl alcohol\"><span class=\"name\">benzyl alcohol</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_3_s1_2caebd61_14112026.svg?v=2caebd61a953\" alt=\"benzamide\"><span class=\"name\">benzamide</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_4_s1_91c64fcc_14112026.svg?v=91c64fccaff9\" alt=\"phenylmethanediazonium chloride\"><span class=\"name\">phenylmethanediazonium chloride</span></span></li></ol>",
     "stem": "The product formed from the following reaction sequence is",
     "format": "plain",
     "statements": [],
@@ -22036,7 +23208,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "benzonitrile →[(i) LiAlH₄, H₂O; (ii) NaNO₂ + HCl; (iii) H₂O] ?",
       "printed": {
        "png": {
         "path": "figures_agent/2022_S1/q098.png",
@@ -22046,19 +23218,113 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": "rdkit",
+       "status": "drawn",
+       "checks": {
+        "smiles_parse": "pass",
+        "name_check": "1 not_run",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "pass"
+       },
+       "image": {
+        "path": "figures_drawn/2022_S1/q098_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_question_9422f0ae_14112026.svg",
+        "sha256": "9422f0ae9ed54af977cd25c8f3f4fa598ecaae1880063428391578ea1bbce2cc",
+        "type": "image/svg+xml"
+       },
+       "message": null,
+       "kind": "reaction",
+       "reaction_smiles": null,
+       "species": [
+        {
+         "label": "",
+         "name": "benzonitrile",
+         "smiles": "N#Cc1ccccc1",
+         "formula": "C7H5N",
+         "inchikey": "JFDZBHWFFUWGJE-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2022_S1/q098_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_question_s1_a95268da_14112026.svg",
+          "sha256": "a95268da86c151012778e208777786794acd0f6daee6e41fa1d4d0b7db626d5e",
+          "type": "image/svg+xml"
+         }
+        }
+       ],
+       "scheme": [
+        [
+         {
+          "species": 1
+         },
+         {
+          "arrow": {
+           "above": "(i) LiAlH₄, H₂O\n(ii) NaNO₂ + HCl",
+           "below": "(iii) H₂O"
+          }
+         }
+        ]
+       ],
+       "draw_hints": [
+        {
+         "smiles": "N#Cc1ccccc1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        }
+       ],
+       "excluded_text": [],
+       "confidence": "certain",
+       "note": "Product not drawn; the arrow points to the options. Conditions (i) and (ii) are printed above the arrow, (iii) below it. No reaction_smiles since the product is not printed."
+      },
       "shows": "question"
      }
     ],
-    "chemistry": [],
+    "chemistry": [
+     {
+      "label": "",
+      "name": "benzonitrile",
+      "smiles": "N#Cc1ccccc1",
+      "formula": "C7H5N",
+      "inchikey": "JFDZBHWFFUWGJE-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2022_S1/q098_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_question_s1_a95268da_14112026.svg",
+       "sha256": "a95268da86c151012778e208777786794acd0f6daee6e41fa1d4d0b7db626d5e",
+       "type": "image/svg+xml"
+      }
+     }
+    ],
     "options": [
      {
       "key": "1",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "benzyl chloride",
+        "smiles": "ClCc1ccccc1",
+        "formula": "C7H7Cl",
+        "inchikey": "KCXMKQUNVWSEMD-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q098_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_1_s1_d91fbed0_14112026.svg",
+         "sha256": "d91fbed0f992a8f541e3c7effcae54ca2e89da5604267e837a6c8abbd5e1a40c",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "(1) benzyl chloride",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q098_option_1.png",
@@ -22068,17 +23334,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q098_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_1_217d7908_14112026.svg",
+         "sha256": "217d79086781727cb91c542753d2a629cd8cb8b7ff18fce4e7d0d2cb131b4795",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "benzyl chloride",
+          "smiles": "ClCc1ccccc1",
+          "formula": "C7H7Cl",
+          "inchikey": "KCXMKQUNVWSEMD-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q098_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_1_s1_d91fbed0_14112026.svg",
+           "sha256": "d91fbed0f992a8f541e3c7effcae54ca2e89da5604267e837a6c8abbd5e1a40c",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "ClCc1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "A fragment of the option label is cut at the left edge of the crop."
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "benzyl alcohol",
+        "smiles": "OCc1ccccc1",
+        "formula": "C7H8O",
+        "inchikey": "WVDDGKGOMKODPV-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q098_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_2_s1_76b1501e_14112026.svg",
+         "sha256": "76b1501e4315ef20491fa4f49662a47abbc0a8a7914f2c06b93a5693356c32ec",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "(2) benzyl alcohol",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q098_option_2.png",
@@ -22088,17 +23420,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q098_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_2_f5c3c4ba_14112026.svg",
+         "sha256": "f5c3c4baa2566266dc4d7a850b8b1386435a7a8338dec49080bdbfa29f609457",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "benzyl alcohol",
+          "smiles": "OCc1ccccc1",
+          "formula": "C7H8O",
+          "inchikey": "WVDDGKGOMKODPV-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q098_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_2_s1_76b1501e_14112026.svg",
+           "sha256": "76b1501e4315ef20491fa4f49662a47abbc0a8a7914f2c06b93a5693356c32ec",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "OCc1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      },
      {
       "key": "3",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "benzamide",
+        "smiles": "NC(=O)c1ccccc1",
+        "formula": "C7H7NO",
+        "inchikey": "KXDAEFPNCMNJSK-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q098_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_3_s1_2caebd61_14112026.svg",
+         "sha256": "2caebd61a953b3c33daddd77fecfdd047fe6797f19943ed22cd7cc00e487b4db",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "(3) benzamide",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q098_option_3.png",
@@ -22108,17 +23506,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q098_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_3_14165bc0_14112026.svg",
+         "sha256": "14165bc018e5c86822a6e76116bbf037be36205f97d98733d72a9a7b605a5fb8",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "benzamide",
+          "smiles": "NC(=O)c1ccccc1",
+          "formula": "C7H7NO",
+          "inchikey": "KXDAEFPNCMNJSK-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q098_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_3_s1_2caebd61_14112026.svg",
+           "sha256": "2caebd61a953b3c33daddd77fecfdd047fe6797f19943ed22cd7cc00e487b4db",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "NC(=O)c1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "A fragment of the option label is cut at the left edge of the crop."
+       },
        "shows": "option"
       }
      },
      {
       "key": "4",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "phenylmethanediazonium chloride",
+        "smiles": "N#[N+]Cc1ccccc1.[Cl-]",
+        "formula": "C7H7ClN2",
+        "inchikey": "JZBRYGBDIVHLPE-UHFFFAOYSA-M",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2022_S1/q098_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_4_s1_91c64fcc_14112026.svg",
+         "sha256": "91c64fccaff9267fb95bcd42ca8f3bae810dcf72d3b1d668193865945e8c1019",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "(4) phenylmethanediazonium chloride",
        "printed": {
         "png": {
          "path": "figures_agent/2022_S1/q098_option_4.png",
@@ -22128,7 +23592,57 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2022_S1/q098_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_4_cb52faab_14112026.svg",
+         "sha256": "cb52faab53571b3d014385e54cf96b1d7f7066bf0e69a6e393b2ae59ce1e74d6",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "phenylmethanediazonium chloride",
+          "smiles": "N#[N+]Cc1ccccc1.[Cl-]",
+          "formula": "C7H7ClN2",
+          "inchikey": "JZBRYGBDIVHLPE-UHFFFAOYSA-M",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2022_S1/q098_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_4_s1_91c64fcc_14112026.svg",
+           "sha256": "91c64fccaff9267fb95bcd42ca8f3bae810dcf72d3b1d668193865945e8c1019",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "N#[N+]Cc1ccccc1.[Cl-]",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Printed as CH2–N2(+) Cl(-) with charges drawn in circles."
+       },
        "shows": "option"
       }
      }

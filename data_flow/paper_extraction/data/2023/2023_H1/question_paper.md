@@ -1,6 +1,6 @@
 # NEET (UG) 2023 · Code H1
 
-200 questions · source `NEET_Papers/2023/Set_H1/NEET_2023_Question_Paper_H1.pdf` · every image a CDN link (0 without one) · 0 figures redrawn
+200 questions · source `NEET_Papers/2023/Set_H1/NEET_2023_Question_Paper_H1.pdf` · every image a CDN link (0 without one) · 47 figures redrawn
 
 Generated from `questions.json` (schema `neet-pyq/question-record/v3`) by `code/paper_md.py`; edit the pipeline, not this file.
 
@@ -127,6 +127,9 @@ The equivalent capacitance of the system shown in the following circuit is
 
 *A 3 uF capacitor in series with two 3 uF capacitors in parallel, between A and B*
 
+![drawn: A 3 uF capacitor in series with two 3 uF capacitors in parallel, between A and B](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q005_question_9f1468e4_14112026.svg?v=9f1468e4bc87)  
+*drawn by code/lib/physics_figure.py*
+
 - (1) $6\,\mu\mathrm{F}$
 - (2) $9\,\mu\mathrm{F}$
 - **(3)** $2\,\mu\mathrm{F}$
@@ -241,6 +244,9 @@ If the galvanometer $G$ does not show any deflection in the circuit shown, the v
 ![printed figure: Two cells (10 V and 2 V), a 400 ohm resistor, a resistor R and a galvanometer G](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q009_f618d1f9_04112026.png?v=f618d1f9f0e1)
 
 *Two cells (10 V and 2 V), a 400 ohm resistor, a resistor R and a galvanometer G*
+
+![drawn: Two cells (10 V and 2 V), a 400 ohm resistor, a resistor R and a galvanometer G](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q009_question_741658b2_14112026.svg?v=741658b2e5be)  
+*drawn by code/lib/physics_figure.py*
 
 - **(1)** $100\,\Omega$
 - (2) $400\,\Omega$
@@ -938,6 +944,9 @@ The magnitude and direction of the current in the following circuit is
 
 *Rectangular loop ABCD: 2 ohm, 10 V cell, junction E, 5 V cell, 1 ohm along AB; 7 ohm along DC*
 
+![drawn: Rectangular loop ABCD: 2 ohm, 10 V cell, junction E, 5 V cell, 1 ohm along AB; 7 ohm along DC](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q034_question_638a2a13_14112026.svg?v=638a2a1369b5)  
+*drawn by code/lib/physics_figure.py*
+
 - (1) $\frac{5}{9}\,\mathrm{A}$ from $A$ to $B$ through $E$
 - (2) $1.5\,\mathrm{A}$ from $B$ to $A$ through $E$
 - (3) $0.2\,\mathrm{A}$ from $B$ to $A$ through $E$
@@ -1052,6 +1061,9 @@ The $x$-$t$ graph of a particle performing simple harmonic motion is shown in th
 ![printed figure: x-t graph of SHM: x = sin(pi t/4), amplitude 1 m, period 8 s](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q038_2f84e543_04112026.png?v=2f84e5433c66)
 
 *x-t graph of SHM: x = sin(pi t/4), amplitude 1 m, period 8 s*
+
+![drawn: x-t graph of SHM: x = sin(pi t/4), amplitude 1 m, period 8 s](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q038_question_fc47024c_14112026.svg?v=fc47024c0e58)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) $\frac{\pi^2}{16}\,\mathrm{m\,s^{-2}}$
 - **(2)** $-\frac{\pi^2}{16}\,\mathrm{m\,s^{-2}}$
@@ -1168,6 +1180,9 @@ An electric dipole is placed as shown in the figure. The electric potential (in 
 
 *Dipole -q and +q 6 cm apart on an axis, point P on the axis 5 cm from the centre 0*
 
+![drawn: Dipole -q and +q 6 cm apart on an axis, point P on the axis 5 cm from the centre 0](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q042_question_ab1dd733_14112026.svg?v=ab1dd733bed5)  
+*drawn by code/lib/physics_figure.py*
+
 - (1) $\left(\frac{8}{5}\right)qK$
 - (2) $\left(\frac{8}{3}\right)qK$
 - **(3)** $\left(\frac{3}{8}\right)qK$
@@ -1200,6 +1215,9 @@ The net impedance of circuit (as shown in figure) will be
 ![printed figure: Series LCR circuit with an AC source 220 V, 50 Hz](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q043_56ad3da6_04112026.png?v=56ad3da67735)
 
 *Series LCR circuit with an AC source 220 V, 50 Hz*
+
+![drawn: Series LCR circuit with an AC source 220 V, 50 Hz](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q043_question_11e87ea5_14112026.svg?v=11e87ea59d3b)  
+*drawn by code/lib/physics_figure.py*
 
 - **(1)** $5\sqrt{5}\,\Omega$
 - (2) $25\,\Omega$
@@ -1234,6 +1252,9 @@ For the following logic circuit, the truth table is
 
 *Inputs A and B each through a NOT gate into a NAND gate giving Y*
 
+![drawn: Inputs A and B each through a NOT gate into a NAND gate giving Y](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q044_question_92848e56_14112026.svg?v=92848e5632bb)  
+*drawn by code/lib/physics_figure.py*
+
 - (1) $\begin{array}{ccc} A & B & Y \\ 0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{array}$
 - (2) $\begin{array}{ccc} A & B & Y \\ 0 & 0 & 0 \\ 0 & 1 & 0 \\ 1 & 0 & 0 \\ 1 & 1 & 1 \end{array}$
 - (3) $\begin{array}{ccc} A & B & Y \\ 0 & 0 & 1 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{array}$
@@ -1264,6 +1285,9 @@ In the figure shown here, what is the equivalent focal length of the combination
 ![printed figure: A thin biconvex lens of index n1 embedded in a medium of index n2, R1 = R2 = 20 cm](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q045_6b935cdd_04112026.png?v=6b935cdd8440)
 
 *A thin biconvex lens of index n1 embedded in a medium of index n2, R1 = R2 = 20 cm*
+
+![drawn: A thin biconvex lens of index n1 embedded in a medium of index n2, R1 = R2 = 20 cm](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q045_question_cbf0dcaf_14112026.svg?v=cbf0dcaf2315)  
+*drawn by code/lib/physics_figure.py*
 
 - **(1)** $-100\,\mathrm{cm}$
 - (2) $-50\,\mathrm{cm}$
@@ -1384,6 +1408,9 @@ A very long conducting wire is bent in a semi-circular shape from $A$ to $B$ as 
 
 *Long wire with a semicircular bend of radius R from A to B around point P*
 
+![drawn: Long wire with a semicircular bend of radius R from A to B around point P](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q049_question_358650cc_14112026.svg?v=358650cc558b)  
+*drawn by code/lib/physics_figure.py*
+
 - **(1)** $\frac{\mu_0 i}{4R}\left[1-\frac{2}{\pi}\right]$ pointed away from page
 - (2) $\frac{\mu_0 i}{4R}\left[1-\frac{2}{\pi}\right]$ pointed into the page
 - (3) $\frac{\mu_0 i}{4R}$ pointed into the page
@@ -1497,7 +1524,14 @@ Chemistry · organic · Haloalkanes and Haloarenes
 
 The given compound [figure] is an example of ______.
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q053_10b9fa98_04112026.png?v=10b9fa98b5c5)
+![printed figure: benzene ring bearing $\ce{CH=CH-CH(X)-CH2CH3}$ (1-phenyl-3-X-pent-1-ene)](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q053_10b9fa98_04112026.png?v=10b9fa98b5c5)
+
+*benzene ring bearing $\ce{CH=CH-CH(X)-CH2CH3}$ (1-phenyl-3-X-pent-1-ene)*
+
+![drawn: benzene ring bearing $\ce{CH=CH-CH(X)-CH2CH3}$ (1-phenyl-3-X-pent-1-ene)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q053_question_897e1e29_14112026.svg?v=897e1e29159e)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: (3-halopent-1-en-1-yl)benzene `*C(C=Cc1ccccc1)CC` ![(3-halopent-1-en-1-yl)benzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q053_question_s1_1cb7667a_14112026.svg?v=1cb7667ac823)
 
 - **(1)** Allylic halide
 - (2) Vinylic halide
@@ -1783,12 +1817,19 @@ Chemistry · organic · Aldehydes, Ketones, and Carboxylic Acids
 
 Complete the following reaction [C] is ________
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_26a175a6_04112026.png?v=26a175a631d7)
+![printed figure: (A) cyclohexanone →(HCN) (B) 1-hydroxycyclohexane-1-carbonitrile →(conc. $\ce{H2SO4}$, Δ) (C)](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_26a175a6_04112026.png?v=26a175a631d7)
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_option_1_41d1f423_04112026.png?v=41d1f423ca3f) — $\mathrm{CHO}$
-- **(2)** ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_option_2_b3c6db94_04112026.png?v=b3c6db94f94c) — $\mathrm{COOH}$
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_option_3_2bfec110_04112026.png?v=2bfec1108580) — $\mathrm{OH}$
-- (4) ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_option_4_66c32455_04112026.png?v=66c32455e088) — $\mathrm{COOH}$
+*[A] cyclohexanone →[HCN] [B] 1-hydroxycyclohexane-1-carbonitrile →[conc. $\ce{H2SO4}$, Δ] [C]*
+
+![drawn: (A) cyclohexanone →(HCN) (B) 1-hydroxycyclohexane-1-carbonitrile →(conc. $\ce{H2SO4}$, Δ) (C)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_question_9799ed66_14112026.svg?v=9799ed66a4ee)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: cyclohexanone `O=C1CCCCC1` ![cyclohexanone](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_question_s1_ecae2398_14112026.svg?v=ecae2398c700); 1-hydroxycyclohexane-1-carbonitrile `N#CC1(O)CCCCC1` ![1-hydroxycyclohexane-1-carbonitrile](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_question_s2_21d03bff_14112026.svg?v=21d03bffc4d3)
+
+- (1) cyclohex-1-ene-1-carbaldehyde `O=CC1=CCCCC1` ![cyclohex-1-ene-1-carbaldehyde](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_1_s1_47f14bf7_14112026.svg?v=47f14bf77a4c) — $\mathrm{CHO}$
+- **(2)** cyclohex-1-ene-1-carboxylic acid `O=C(O)C1=CCCCC1` ![cyclohex-1-ene-1-carboxylic acid](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_2_s1_9e69062a_14112026.svg?v=9e69062a7631) — $\mathrm{COOH}$
+- (3) cyclohexanol `OC1CCCCC1` ![cyclohexanol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_3_s1_b130dcca_14112026.svg?v=b130dccaeb49) — $\mathrm{OH}$
+- (4) cyclohexanecarboxylic acid `O=C(O)C1CCCCC1` ![cyclohexanecarboxylic acid](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_4_s1_5fc26872_14112026.svg?v=5fc268722cd9) — $\mathrm{COOH}$
 
 **Answer** — booklet: (2) · independent solve: (2) · agree
 
@@ -1877,12 +1918,19 @@ Chemistry · organic · Amines
 
 Identify the product in the following reaction:
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_f1bce453_04112026.png?v=f1bce453488d)
+![printed figure: benzenediazonium chloride →((i) $\ce{Cu2Br2/HBr}$ (ii) Mg/dry ether (iii) $\ce{H2O}$) Product](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_f1bce453_04112026.png?v=f1bce453488d)
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_option_1_3fb9ae42_04112026.png?v=3fb9ae42856a)
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_option_2_03682065_04112026.png?v=03682065124e)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_option_3_2f90fd07_04112026.png?v=2f90fd070111)
-- **(4)** ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_option_4_3e44683b_04112026.png?v=3e44683b2267)
+*benzenediazonium chloride →[(i) $\ce{Cu2Br2/HBr}$ (ii) Mg/dry ether (iii) $\ce{H2O}$] Product*
+
+![drawn: benzenediazonium chloride →((i) $\ce{Cu2Br2/HBr}$ (ii) Mg/dry ether (iii) $\ce{H2O}$) Product](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_question_1dabe2c4_14112026.svg?v=1dabe2c43a8b)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: benzenediazonium chloride `N#[N+]c1ccccc1.[Cl-]` ![benzenediazonium chloride](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_question_s1_746dd923_14112026.svg?v=746dd923bd81)
+
+- (1) phenylmagnesium bromide `[Br][Mg][c]1ccccc1` ![phenylmagnesium bromide](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_1_s1_c9815f06_14112026.svg?v=c9815f069863)
+- (2) 4-bromophenol `Oc1ccc(Br)cc1` ![4-bromophenol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_2_s1_fbd34b5b_14112026.svg?v=fbd34b5b0836)
+- (3) phenol `Oc1ccccc1` ![phenol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_3_s1_b51d9a3a_14112026.svg?v=b51d9a3a6eec)
+- **(4)** benzene `c1ccccc1` ![benzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_4_s1_dbf27a87_14112026.svg?v=dbf27a872e50)
 
 **Answer** — booklet: (4) · independent solve: (4) · agree
 
@@ -1909,11 +1957,18 @@ Consider the following reaction and identify the product (P).
 $\mathrm{CH_3-CH(CH_3)-CH(OH)-CH_3} \xrightarrow{\mathrm{HBr}}$ Product (P)
 3-Methylbutan-2-ol
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q067_a4fe6355_04112026.png?v=a4fe6355ca66)
+![printed figure: 3-methylbutan-2-ol (3-Methylbutan-2-ol) →(HBr) Product (P)](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q067_a4fe6355_04112026.png?v=a4fe6355ca66)
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q067_option_1_4d9ecc02_04112026.png?v=4d9ecc02e04f) — $\mathrm{CH_3-CH(CH_3)-CH(Br)-CH_3}$
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q067_option_2_60b617a5_04112026.png?v=60b617a5493a) — $\mathrm{CH_3-C(CH_3)_2-CH_2Br}$
-- **(3)** ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q067_option_3_b9229a8b_04112026.png?v=b9229a8b8bd6) — $\mathrm{CH_3-C(Br)(CH_3)-CH_2-CH_3}$
+*3-methylbutan-2-ol (3-Methylbutan-2-ol) →[HBr] Product (P)*
+
+![drawn: 3-methylbutan-2-ol (3-Methylbutan-2-ol) →(HBr) Product (P)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_question_9d99b870_14112026.svg?v=9d99b870921e)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: 3-methylbutan-2-ol `CC(C)C(C)O` ![3-methylbutan-2-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_question_s1_ca11da3c_14112026.svg?v=ca11da3c56c5)
+
+- (1) 2-bromo-3-methylbutane `CC(C)C(C)Br` ![2-bromo-3-methylbutane](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_1_s1_18faa9fe_14112026.svg?v=18faa9fe6ac0) — $\mathrm{CH_3-CH(CH_3)-CH(Br)-CH_3}$
+- (2) 1-bromo-2,2-dimethylpropane `CC(C)(C)CBr` ![1-bromo-2,2-dimethylpropane](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_2_s1_7ca1318b_14112026.svg?v=7ca1318b3106) — $\mathrm{CH_3-C(CH_3)_2-CH_2Br}$
+- **(3)** 2-bromo-2-methylbutane `CCC(C)(C)Br` ![2-bromo-2-methylbutane](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_3_s1_c5380da6_14112026.svg?v=c5380da663c8) — $\mathrm{CH_3-C(Br)(CH_3)-CH_2-CH_3}$
 - (4) $\mathrm{CH_3CH=CH-CH_3}$
 
 **Answer** — booklet: (3) · independent solve: (3) · agree
@@ -1939,12 +1994,19 @@ Chemistry · organic · Aldehydes, Ketones, and Carboxylic Acids
 
 Identify product (A) in the following reaction:
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_76f33e59_04112026.png?v=76f33e59a7e4)
+![printed figure: 1-(3-(3-acetylphenyl)cyclohexyl)ethan-1-one →(Zn–Hg / conc. HCl) (A) + $\ce{2H2O}$](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_76f33e59_04112026.png?v=76f33e59a7e4)
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_option_1_45b66089_04112026.png?v=45b66089ae25)
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_option_2_36ff0a36_04112026.png?v=36ff0a36b5f6)
-- **(3)** ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_option_3_cdd50691_04112026.png?v=cdd5069114fd)
-- (4) ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_option_4_be9d0dc3_04112026.png?v=be9d0dc32c76)
+*1-[3-(3-acetylphenyl)cyclohexyl]ethan-1-one →[Zn–Hg / conc. HCl] (A) + $\ce{2H2O}$*
+
+![drawn: 1-(3-(3-acetylphenyl)cyclohexyl)ethan-1-one →(Zn–Hg / conc. HCl) (A) + $\ce{2H2O}$](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_question_5a86a14d_14112026.svg?v=5a86a14d5c1b)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: 1-[3-(3-acetylphenyl)cyclohexyl]ethan-1-one `CC(=O)c1cccc(C2CCCC(C(C)=O)C2)c1` ![1-(3-(3-acetylphenyl)cyclohexyl)ethan-1-one](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_question_s1_b0bcb60f_14112026.svg?v=b0bcb60f4403); water `O` ![water](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_question_s2_795507b0_14112026.svg?v=795507b0c355)
+
+- (1) (3-(3-(hydroxymethyl)phenyl)cyclohexyl)methanol `OCc1cccc(C2CCCC(CO)C2)c1` ![(3-(3-(hydroxymethyl)phenyl)cyclohexyl)methanol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_1_s1_2c5d719a_14112026.svg?v=2c5d719a19e2)
+- (2) 1-methyl-3-(3-methylcyclohexyl)benzene `Cc1cccc(C2CCCC(C)C2)c1` ![1-methyl-3-(3-methylcyclohexyl)benzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_2_s1_1c1a93da_14112026.svg?v=1c1a93da0fd1)
+- **(3)** 1-ethyl-3-(3-ethylcyclohexyl)benzene `CCc1cccc(C2CCCC(CC)C2)c1` ![1-ethyl-3-(3-ethylcyclohexyl)benzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_3_s1_04d2848e_14112026.svg?v=04d2848ee871)
+- (4) 1-(3-(3-(1-hydroxyethyl)phenyl)cyclohexyl)ethan-1-ol `CC(O)c1cccc(C2CCCC(C(C)O)C2)c1` ![1-(3-(3-(1-hydroxyethyl)phenyl)cyclohexyl)ethan-1-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_4_s1_c64f9ecf_14112026.svg?v=c64f9ecf1ada)
 
 **Answer** — booklet: (3) · independent solve: (3) · agree
 
@@ -2298,10 +2360,10 @@ Chemistry · physical · States of Matter
 
 Which amongst the following options are correct graphical representation of Boyle’s law?
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_1_18501f11_04112026.png?v=18501f1165b7) — [graph]
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_2_bf04ac54_04112026.png?v=bf04ac540f5d) — [graph]
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_3_b7d4de04_04112026.png?v=b7d4de04238b) — [graph]
-- **(4)** ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_4_fbfea634_04112026.png?v=fbfea6348773) — [graph]
+- (1) ![printed figure: graph of P (y-axis) against 1/V (x-axis) showing three curves falling towards the right, labelled T₁ (lowest), T₂, T₃ (highest), with T₃ > T₂ > T₁](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_1_18501f11_04112026.png?v=18501f1165b7) *graph of P (y-axis) against 1/V (x-axis) showing three curves falling towards the right, labelled T₁ (lowest), T₂, T₃ (highest), with T₃ > T₂ > T₁* — [graph]
+- (2) ![printed figure: graph of P (y-axis) against T (x-axis) showing three straight lines from the origin, labelled V₁ (steepest), V₂, V₃ (least steep), with V₁ < V₂ < V₃](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_2_bf04ac54_04112026.png?v=bf04ac540f5d) *graph of P (y-axis) against T (x-axis) showing three straight lines from the origin, labelled V₁ (steepest), V₂, V₃ (least steep), with V₁ < V₂ < V₃* — [graph]
+- (3) ![printed figure: graph of P (y-axis) against V (x-axis) showing three hyperbolic curves, labelled T₁ (top), T₂ (middle), T₃ (bottom), with T₃ > T₂ > T₁](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_3_b7d4de04_04112026.png?v=b7d4de04238b) *graph of P (y-axis) against V (x-axis) showing three hyperbolic curves, labelled T₁ (top), T₂ (middle), T₃ (bottom), with T₃ > T₂ > T₁* — [graph]
+- **(4)** ![printed figure: graph of P (y-axis) against 1/V (x-axis) showing three straight lines from the origin, labelled T₃ (steepest), T₂, T₁ (least steep), with T₃ > T₂ > T₁](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_4_fbfea634_04112026.png?v=fbfea6348773) *graph of P (y-axis) against 1/V (x-axis) showing three straight lines from the origin, labelled T₃ (steepest), T₂, T₁ (least steep), with T₃ > T₂ > T₁* — [graph]
 
 **Answer** — booklet: (4) · independent solve: (4) · agree
 
@@ -2574,12 +2636,19 @@ Chemistry · organic · Aldehydes, Ketones, and Carboxylic Acids
 
 Identify the major product obtained in the following reaction: [figure] $+\,2\left[\mathrm{Ag(NH_3)_2}\right]^{+}\,+\,3\,{}^{-}\mathrm{OH}\xrightarrow{\Delta}$ major product
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_4f60714d_04112026.png?v=4f60714df2fa)
+![printed figure: 2-acetylbenzaldehyde + 2$\ce{(Ag(NH3)2)+}$ +](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_4f60714d_04112026.png?v=4f60714df2fa)
 
-- **(1)** ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_option_1_054f26d9_04112026.png?v=054f26d9f1f5)
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_option_2_3cf3e09c_04112026.png?v=3cf3e09c4b28)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_option_3_241dbf73_04112026.png?v=241dbf7306d6)
-- (4) ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_option_4_feb66f92_04112026.png?v=feb66f9258fd)
+*2-acetylbenzaldehyde + 2$\ce{[Ag(NH3)2]+}$ +*
+
+![drawn: 2-acetylbenzaldehyde + 2$\ce{(Ag(NH3)2)+}$ +](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_question_b9e1ddd9_14112026.svg?v=b9e1ddd9c85e)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: 2-acetylbenzaldehyde `CC(=O)c1ccccc1C=O` ![2-acetylbenzaldehyde](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_question_s1_a0144de1_14112026.svg?v=a0144de11df3); diamminesilver(I) `[NH3]->[Ag+]<-[NH3]` ![diamminesilver(I)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_question_s2_919f617f_14112026.svg?v=919f617f4899)
+
+- **(1)** 2-acetylbenzoate `CC(=O)c1ccccc1C(=O)[O-]` ![2-acetylbenzoate](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_1_s1_b2b6129c_14112026.svg?v=b2b6129c94a6)
+- (2) 2-(1-hydroxyethyl)benzoate `CC(O)c1ccccc1C(=O)[O-]` ![2-(1-hydroxyethyl)benzoate](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_2_s1_ad108def_14112026.svg?v=ad108def0c1a)
+- (3) 1-[2-(hydroxymethyl)phenyl]ethanol `CC(O)c1ccccc1CO` ![1-(2-(hydroxymethyl)phenyl)ethanol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_3_s1_94ca89a2_14112026.svg?v=94ca89a2ada8)
+- (4) 1-[2-(hydroxymethyl)phenyl]ethanone `CC(=O)c1ccccc1CO` ![1-(2-(hydroxymethyl)phenyl)ethanone](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_4_s1_7d7073d0_14112026.svg?v=7d7073d0e417)
 
 **Answer** — booklet: (1) · independent solve: (1) · agree
 
@@ -2606,7 +2675,14 @@ Consider the following compounds/species:
 [Figure: structures i–vii]
 The number of compounds/species which obey Huckel’s rule is ______.
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q090_29faaee2_04112026.png?v=29faaee2cdb2)
+![printed figure: i. naphthalene; ii. cyclopentadienyl anion; iii. cyclobutadiene; iv. cyclopropenyl anion; v. cyclopropenyl cation; vi. cyclooctatetraene; vii. anthracene](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q090_29faaee2_04112026.png?v=29faaee2cdb2)
+
+*i. naphthalene; ii. cyclopentadienyl anion; iii. cyclobutadiene; iv. cyclopropenyl anion; v. cyclopropenyl cation; vi. cyclooctatetraene; vii. anthracene*
+
+![drawn: i. naphthalene; ii. cyclopentadienyl anion; iii. cyclobutadiene; iv. cyclopropenyl anion; v. cyclopropenyl cation; vi. cyclooctatetraene; vii. anthracene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_c3eeaa6a_14112026.svg?v=c3eeaa6ab7cc)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: naphthalene `c1ccc2ccccc2c1` ![naphthalene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s1_1c4ddda0_14112026.svg?v=1c4ddda09622); cyclopenta-2,4-dien-1-ide `c1cc[cH-]c1` ![cyclopenta-2,4-dien-1-ide](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s2_8e072b02_14112026.svg?v=8e072b023b03); cyclobuta-1,3-diene `C1=CC=C1` ![cyclobuta-1,3-diene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s3_68eaa57e_14112026.svg?v=68eaa57ee7c4); cycloprop-2-en-1-ide `C1=C[CH-]1` ![cycloprop-2-en-1-ide](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s4_4f2e6856_14112026.svg?v=4f2e68568a3d); cycloprop-2-en-1-ylium `c1c[cH+]1` ![cycloprop-2-en-1-ylium](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s5_2a7002fa_14112026.svg?v=2a7002fa2056); cycloocta-1,3,5,7-tetraene `C1=CC=CC=CC=C1` ![cycloocta-1,3,5,7-tetraene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s6_05a705c0_14112026.svg?v=05a705c03822); anthracene `c1ccc2cc3ccccc3cc2c1` ![anthracene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s7_d63f99db_14112026.svg?v=d63f99db8ebd)
 
 - (1) $2$
 - (2) $5$
@@ -2805,12 +2881,19 @@ Chemistry · organic · Alcohols, Phenols and Ethers
 
 Consider the following reaction : $\mathrm{C_6H_5{-}CH_2{-}O{-}C_6H_5} \xrightarrow[\Delta]{\mathrm{HI}} \mathrm{A + B}$ Identify products A and B.
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_d1e22c5b_04112026.png?v=d1e22c5b2bb0)
+![printed figure: benzyl phenyl ether →(HI, Δ) A + B](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_d1e22c5b_04112026.png?v=d1e22c5b2bb0)
 
-- **(1)** ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_option_1_a1e7cbd1_04112026.png?v=a1e7cbd18542) — A = $\mathrm{C_6H_5{-}CH_2I}$ and B = $\mathrm{C_6H_5{-}OH}$
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_option_2_1c375bd1_04112026.png?v=1c375bd19e51) — A = $\mathrm{C_6H_5{-}CH_3}$ and B = $\mathrm{C_6H_5{-}I}$
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_option_3_97fbfd89_04112026.png?v=97fbfd890092) — A = $\mathrm{C_6H_5{-}CH_3}$ and B = $\mathrm{C_6H_5{-}OH}$
-- (4) ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_option_4_fe4ecffb_04112026.png?v=fe4ecffbc99c) — A = $\mathrm{C_6H_5{-}CH_2OH}$ and B = $\mathrm{C_6H_5{-}I}$
+*benzyl phenyl ether →[HI, Δ] A + B*
+
+![drawn: benzyl phenyl ether →(HI, Δ) A + B](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_question_31e1793b_14112026.svg?v=31e1793b1d75)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: benzyl phenyl ether `c1ccc(COc2ccccc2)cc1` ![benzyl phenyl ether](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_question_s1_ddf58708_14112026.svg?v=ddf587088e3e)
+
+- **(1)** benzyl iodide `ICc1ccccc1` ![benzyl iodide](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_1_s1_c8defd7a_14112026.svg?v=c8defd7a0f2d); phenol `Oc1ccccc1` ![phenol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_1_s2_26093786_14112026.svg?v=26093786dda8) — A = $\mathrm{C_6H_5{-}CH_2I}$ and B = $\mathrm{C_6H_5{-}OH}$
+- (2) toluene `Cc1ccccc1` ![toluene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_2_s1_b4bc3ebf_14112026.svg?v=b4bc3ebff656); iodobenzene `Ic1ccccc1` ![iodobenzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_2_s2_1d87e391_14112026.svg?v=1d87e3910938) — A = $\mathrm{C_6H_5{-}CH_3}$ and B = $\mathrm{C_6H_5{-}I}$
+- (3) toluene `Cc1ccccc1` ![toluene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_3_s1_b4bc3ebf_14112026.svg?v=b4bc3ebff656); phenol `Oc1ccccc1` ![phenol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_3_s2_26093786_14112026.svg?v=26093786dda8) — A = $\mathrm{C_6H_5{-}CH_3}$ and B = $\mathrm{C_6H_5{-}OH}$
+- (4) benzyl alcohol `OCc1ccccc1` ![benzyl alcohol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_4_s1_76b1501e_14112026.svg?v=76b1501e4315); iodobenzene `Ic1ccccc1` ![iodobenzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_4_s2_1d87e391_14112026.svg?v=1d87e3910938) — A = $\mathrm{C_6H_5{-}CH_2OH}$ and B = $\mathrm{C_6H_5{-}I}$
 
 **Answer** — booklet: (1) · independent solve: (1) · agree
 
@@ -2836,10 +2919,10 @@ Chemistry · organic · Alcohols, Phenols and Ethers
 
 Which amongst the following will be most readily dehydrated under acidic conditions?
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q098_option_1_2d4f0de2_04112026.png?v=2d4f0de2b062)
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q098_option_2_a7a26893_04112026.png?v=a7a268930852)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q098_option_3_db954a5a_04112026.png?v=db954a5a5300)
-- **(4)** ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q098_option_4_98dd3391_04112026.png?v=98dd33911424)
+- (1) 3-nitrobutane-1,2-diol `CC(C(O)CO)[N+](=O)[O-]` ![3-nitrobutane-1,2-diol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_1_s1_0c486a98_14112026.svg?v=0c486a9853f8)
+- (2) 5-nitrohexan-2-ol `CC(O)CCC(C)[N+](=O)[O-]` ![5-nitrohexan-2-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_2_s1_01d96399_14112026.svg?v=01d96399b884)
+- (3) 4-nitropentan-2-ol `CC(O)CC(C)[N+](=O)[O-]` ![4-nitropentan-2-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_3_s1_82acc902_14112026.svg?v=82acc902dc27)
+- **(4)** pentane-2,4-diol `CC(O)CC(C)O` ![pentane-2,4-diol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_4_s1_c43e7c26_14112026.svg?v=c43e7c26414c)
 
 **Answer** — booklet: (4) · independent solve: (1) · differs
 
@@ -2865,12 +2948,19 @@ Chemistry · organic · Haloalkanes and Haloarenes
 
 Identify the final product [D] obtained in the following sequence of reactions.
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q099_4ae88a58_04112026.png?v=4ae88a5809ab)
+![printed figure: acetaldehyde ($\ce{CH3CHO}$) →(i) LiAlH4, ii) H3O+) (A) →(H2SO4, Δ) (B) →(HBr) (C) →(bromobenzene above the arrow; Na/dry ether below) (D)](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q099_4ae88a58_04112026.png?v=4ae88a5809ab)
+
+*acetaldehyde ($\ce{CH3CHO}$) →[i) LiAlH4, ii) H3O+] [A] →[H2SO4, Δ] [B] →[HBr] [C] →[bromobenzene above the arrow; Na/dry ether below] [D]*
+
+![drawn: acetaldehyde ($\ce{CH3CHO}$) →(i) LiAlH4, ii) H3O+) (A) →(H2SO4, Δ) (B) →(HBr) (C) →(bromobenzene above the arrow; Na/dry ether below) (D)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_question_3e1d40a9_14112026.svg?v=3e1d40a9eedd)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: acetaldehyde `CC=O` ![acetaldehyde](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_question_s1_a8431fe0_14112026.svg?v=a8431fe0cfe9); bromobenzene `Brc1ccccc1` ![bromobenzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_question_s2_61d2ed9e_14112026.svg?v=61d2ed9ebe04)
 
 - (1) $\mathrm{C_4H_{10}}$
 - (2) $\mathrm{HC\equiv C^{\ominus}Na^{+}}$
-- **(3)** ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q099_option_3_fae2facc_04112026.png?v=fae2facc1151)
-- (4) ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q099_option_4_d44684e3_04112026.png?v=d44684e3576a)
+- **(3)** ethylbenzene `CCc1ccccc1` ![ethylbenzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_option_3_s1_c3cd0ee9_14112026.svg?v=c3cd0ee97328)
+- (4) biphenyl `c1ccc(-c2ccccc2)cc1` ![biphenyl](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_option_4_s1_96946bcf_14112026.svg?v=96946bcfe353)
 
 **Answer** — booklet: (3) · independent solve: (3) · agree
 

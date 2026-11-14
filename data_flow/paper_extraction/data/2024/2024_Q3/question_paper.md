@@ -1,6 +1,6 @@
 # NEET (UG) 2024 · Code Q3
 
-200 questions · source `NEET_Papers/2024/Set_Q3/NEET_2024_Question_Paper_Q3.pdf` · every image a CDN link (0 without one) · 1 figures redrawn
+200 questions · source `NEET_Papers/2024/Set_Q3/NEET_2024_Question_Paper_Q3.pdf` · every image a CDN link (0 without one) · 53 figures redrawn
 
 Generated from `questions.json` (schema `neet-pyq/question-record/v3`) by `code/paper_md.py`; edit the pipeline, not this file.
 
@@ -104,6 +104,9 @@ The terminal voltage of the battery, whose emf is $10\,\mathrm{V}$ and internal 
 
 *A 10 V cell with internal resistance 1 Ω (dashed box) driving current through an external 4 Ω resistor*
 
+![drawn: A 10 V cell with internal resistance 1 Ω (dashed box) driving current through an external 4 Ω resistor](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q004_question_fce34508_14112026.svg?v=fce3450820ef)  
+*drawn by code/lib/physics_figure.py*
+
 - (1) $4\,\mathrm{V}$
 - (2) $6\,\mathrm{V}$
 - **(3)** $8\,\mathrm{V}$
@@ -135,6 +138,9 @@ In a uniform magnetic field of $0.049\,\mathrm{T}$, a magnetic needle performs 2
 ![printed figure: A magnetic needle hung by a thread from a ceiling in a uniform horizontal field B](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q005_73225d39_12112026.png?v=73225d3927c4)
 
 *A magnetic needle hung by a thread from a ceiling in a uniform horizontal field B*
+
+![drawn: A magnetic needle hung by a thread from a ceiling in a uniform horizontal field B](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q005_question_d0faec80_14112026.svg?v=d0faec80b487)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) $5\pi^{2}$
 - (2) $128\pi^{2}$
@@ -198,6 +204,9 @@ A horizontal force $10\,\mathrm{N}$ is applied to a block $A$ as shown in figure
 ![printed figure: Horizontal force F = 10 N pushing block A (2 kg) against block B (3 kg) on a frictionless floor](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q007_5d5b7cf0_12112026.png?v=5d5b7cf085ce)
 
 *Horizontal force F = 10 N pushing block A (2 kg) against block B (3 kg) on a frictionless floor*
+
+![drawn: Horizontal force F = 10 N pushing block A (2 kg) against block B (3 kg) on a frictionless floor](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q007_question_1f5d3f00_14112026.svg?v=1f5d3f00c2cd)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) Zero
 - (2) $4\,\mathrm{N}$
@@ -281,10 +290,14 @@ Physics · Modern Physics
 
 The graph which shows the variation of $\left(\frac{1}{\lambda^2}\right)$ and its kinetic energy, $E$ is (where $\lambda$ is de Broglie wavelength of a free particle):
 
-- (1) ![printed figure: 1/lambda^2 against E: a curve rising from O, concave upward](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q010_option_1_3a588cb5_12112026.png?v=3a588cb5c55d) *1/lambda^2 against E: a curve rising from O, concave upward*
-- (2) ![printed figure: Graph of 1/lambda^2 against E: a curve falling steeply then flattening (hyperbola-like)](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q010_option_2_39d16ee1_12112026.png?v=39d16ee10bab) *Graph of 1/lambda^2 against E: a curve falling steeply then flattening (hyperbola-like)*
-- (3) ![printed figure: Graph of 1/lambda^2 against E: a curve rising from the origin and flattening (concave down)](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q010_option_3_33e12b4b_12112026.png?v=33e12b4b8f87) *Graph of 1/lambda^2 against E: a curve rising from the origin and flattening (concave down)*
-- **(4)** ![printed figure: Straight line through the origin: 1/lambda^2 against E](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q010_option_4_b26bef4a_12112026.png?v=b26bef4a0a46) *Straight line through the origin: 1/lambda^2 against E*
+- (1) ![printed figure: 1/lambda^2 against E: a curve rising from O, concave upward](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q010_option_1_3a588cb5_12112026.png?v=3a588cb5c55d) *1/lambda^2 against E: a curve rising from O, concave upward* ![drawn: 1/lambda^2 against E: a curve rising from O, concave upward](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q010_option_1_e4b7179d_14112026.svg?v=e4b7179d9a9a)  
+*drawn by code/lib/physics_figure.py*
+- (2) ![printed figure: Graph of 1/lambda^2 against E: a curve falling steeply then flattening (hyperbola-like)](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q010_option_2_39d16ee1_12112026.png?v=39d16ee10bab) *Graph of 1/lambda^2 against E: a curve falling steeply then flattening (hyperbola-like)* ![drawn: Graph of 1/lambda^2 against E: a curve falling steeply then flattening (hyperbola-like)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q010_option_2_6582c27d_14112026.svg?v=6582c27dd60b)  
+*drawn by code/lib/physics_figure.py*
+- (3) ![printed figure: Graph of 1/lambda^2 against E: a curve rising from the origin and flattening (concave down)](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q010_option_3_33e12b4b_12112026.png?v=33e12b4b8f87) *Graph of 1/lambda^2 against E: a curve rising from the origin and flattening (concave down)* ![drawn: Graph of 1/lambda^2 against E: a curve rising from the origin and flattening (concave down)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q010_option_3_7fd45dec_14112026.svg?v=7fd45dec3078)  
+*drawn by code/lib/physics_figure.py*
+- **(4)** ![printed figure: Straight line through the origin: 1/lambda^2 against E](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q010_option_4_b26bef4a_12112026.png?v=b26bef4a0a46) *Straight line through the origin: 1/lambda^2 against E* ![drawn: Straight line through the origin: 1/lambda^2 against E](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q010_option_4_639371a3_14112026.svg?v=639371a3ba23)  
+*drawn by code/lib/physics_figure.py*
 
 **Answer** — booklet: (4) · independent solve: (4) · agree
 
@@ -374,6 +387,9 @@ Consider the following statements A and B and identify the correct answer:
 
 *V-I axes with four quadrants labelled (I) to (IV)*
 
+![drawn: V-I axes with four quadrants labelled (I) to (IV)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q013_question_e01ab55d_14112026.svg?v=e01ab55df709)  
+*drawn by code/lib/physics_figure.py*
+
 - (A) For a solar-cell, the I-V characteristics lies in the IV quadrant of the given graph.
 - (B) In a reverse biased $pn$ junction diode, the current measured in ($\mu\mathrm{A}$), is due to majority charge carriers.
 
@@ -408,6 +424,9 @@ A thermodynamic system is taken through the cycle $abcda$. The work done by the 
 
 *P-V cycle abcda: rectangle between 100 kPa and 300 kPa, 100 cm3 and 400 cm3*
 
+![drawn: P-V cycle abcda: rectangle between 100 kPa and 300 kPa, 100 cm3 and 400 cm3](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q014_question_e6bd464a_14112026.svg?v=e6bd464a80e5)  
+*drawn by code/lib/physics_figure.py*
+
 - **(1)** Zero
 - (2) $30\,\mathrm{J}$
 - (3) $-90\,\mathrm{J}$
@@ -438,6 +457,9 @@ A thin spherical shell is charged by some source. The potential difference betwe
 ![printed figure: Charged thin spherical shell of radius R with centre C and point P on the shell](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q015_eee62460_12112026.png?v=eee6246037bd)
 
 *Charged thin spherical shell of radius R with centre C and point P on the shell*
+
+![drawn: Charged thin spherical shell of radius R with centre C and point P on the shell](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q015_question_0ada7dfa_14112026.svg?v=0ada7dfa934c)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) $3 \times 10^{5}$
 - (2) $1 \times 10^{5}$
@@ -588,6 +610,9 @@ A light ray enters through a right angled prism at point $P$ with the angle of i
 
 *A ray enters right-angled prism ABC at P on face AB at 30 degrees incidence, travels parallel to base BC and emerges along face AC*
 
+![drawn: A ray enters right-angled prism ABC at P on face AB at 30 degrees incidence, travels parallel to base BC and emerges along face AC](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q020_question_06c11cce_14112026.svg?v=06c11cce604c)  
+*drawn by code/lib/physics_figure.py*
+
 - (1) $\frac{\sqrt{5}}{4}$
 - **(2)** $\frac{\sqrt{5}}{2}$
 - (3) $\frac{\sqrt{3}}{4}$
@@ -621,6 +646,9 @@ In the following circuit, the equivalent capacitance between terminal $A$ and te
 ![printed figure: Five 2 uF capacitors in a bridge between terminals A and B](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q021_5fef7751_12112026.png?v=5fef7751f76f)
 
 *Five 2 uF capacitors in a bridge between terminals A and B*
+
+![drawn: Five 2 uF capacitors in a bridge between terminals A and B](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q021_question_2d40dc38_14112026.svg?v=2d40dc382485)  
+*drawn by code/lib/physics_figure.py*
 
 - **(1)** $2\,\mu\mathrm{F}$
 - (2) $1\,\mu\mathrm{F}$
@@ -709,6 +737,9 @@ In the above diagram, a strong bar magnet is moving towards solenoid-2 from sole
 ![printed figure: A bar magnet N-S moving with velocity v from solenoid-1 (ends A, B) towards solenoid-2 (ends C, D)](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q024_18c9ec63_12112026.png?v=18c9ec63b274)
 
 *A bar magnet N-S moving with velocity v from solenoid-1 (ends A, B) towards solenoid-2 (ends C, D)*
+
+![drawn: A bar magnet N-S moving with velocity v from solenoid-1 (ends A, B) towards solenoid-2 (ends C, D)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q024_question_104012a5_14112026.svg?v=104012a50985)  
+*drawn by code/lib/physics_figure.py*
 
 - **(1)** $AB$ and $DC$
 - (2) $BA$ and $CD$
@@ -983,6 +1014,9 @@ The output ($Y$) of the given logic gate is similar to the output of an/a
 
 *NAND gate with tied inputs A and NOR gate with tied inputs B feeding a NOR gate with output Y*
 
+![drawn: NAND gate with tied inputs A and NOR gate with tied inputs B feeding a NOR gate with output Y](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q033_question_b457e0bd_14112026.svg?v=b457e0bd5d59)  
+*drawn by code/lib/physics_figure.py*
+
 - (1) NAND gate
 - (2) NOR gate
 - (3) OR gate
@@ -1046,6 +1080,9 @@ A wheel of a bullock cart is rolling on a level road as shown in the figure belo
 ![printed figure: A spoked wheel rolling on a level road with velocity v; P at the top, Q at the bottom](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q035_ebab2566_12112026.png?v=ebab256681b3)
 
 *A spoked wheel rolling on a level road with velocity v; P at the top, Q at the bottom*
+
+![drawn: A spoked wheel rolling on a level road with velocity v; P at the top, Q at the bottom](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q035_question_551f9358_14112026.svg?v=551f93582f35)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) Point $P$ moves slower than point $Q$
 - **(2)** Point $P$ moves faster than point $Q$
@@ -1186,6 +1223,9 @@ The following graph represents the T-V curves of an ideal gas (where $T$ is the 
 
 *T-V curves of an ideal gas at pressures P1, P2, P3 with dotted Charles's law lines*
 
+![drawn: T-V curves of an ideal gas at pressures P1, P2, P3 with dotted Charles's law lines](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q040_question_221d860d_14112026.svg?v=221d860d3542)  
+*drawn by code/lib/physics_figure.py*
+
 - (1) $P_3 > P_2 > P_1$
 - (2) $P_1 > P_3 > P_2$
 - (3) $P_2 > P_1 > P_3$
@@ -1218,10 +1258,17 @@ The velocity $(v)$ – time $(t)$ plot of the motion of a body is shown below: T
 
 *Velocity-time graph: trapezoid (rise, constant, fall)*
 
-- (1) ![printed figure: Acceleration-time graph: a raised trapezoidal pulse above the t-axis](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q041_option_1_b85ca383_12112026.png?v=b85ca383c4d2) *Acceleration-time graph: a raised trapezoidal pulse above the t-axis*
-- (2) ![printed figure: Acceleration-time graph: zero, then rising linearly, then constant](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q041_option_2_d0cb8fe0_12112026.png?v=d0cb8fe01e74) *Acceleration-time graph: zero, then rising linearly, then constant*
-- **(3)** ![printed figure: Acceleration-time graph: a positive rectangular pulse followed by a negative rectangular pulse](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q041_option_3_75ca86f7_12112026.png?v=75ca86f78dd2) *Acceleration-time graph: a positive rectangular pulse followed by a negative rectangular pulse*
-- (4) ![printed figure: Option 4: a-t graph, zero, then a negative rectangular pulse, then a rising straight line](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q041_option_4_1f6a456c_12112026.png?v=1f6a456c3eeb) *Option 4: a-t graph, zero, then a negative rectangular pulse, then a rising straight line*
+![drawn: Velocity-time graph: trapezoid (rise, constant, fall)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q041_question_a7efad6b_14112026.svg?v=a7efad6b6186)  
+*drawn by code/lib/physics_figure.py*
+
+- (1) ![printed figure: Acceleration-time graph: a raised trapezoidal pulse above the t-axis](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q041_option_1_b85ca383_12112026.png?v=b85ca383c4d2) *Acceleration-time graph: a raised trapezoidal pulse above the t-axis* ![drawn: Acceleration-time graph: a raised trapezoidal pulse above the t-axis](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q041_option_1_d8a340ff_14112026.svg?v=d8a340ffa959)  
+*drawn by code/lib/physics_figure.py*
+- (2) ![printed figure: Acceleration-time graph: zero, then rising linearly, then constant](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q041_option_2_d0cb8fe0_12112026.png?v=d0cb8fe01e74) *Acceleration-time graph: zero, then rising linearly, then constant* ![drawn: Acceleration-time graph: zero, then rising linearly, then constant](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q041_option_2_3b40d710_14112026.svg?v=3b40d71055bd)  
+*drawn by code/lib/physics_figure.py*
+- **(3)** ![printed figure: Acceleration-time graph: a positive rectangular pulse followed by a negative rectangular pulse](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q041_option_3_75ca86f7_12112026.png?v=75ca86f78dd2) *Acceleration-time graph: a positive rectangular pulse followed by a negative rectangular pulse* ![drawn: Acceleration-time graph: a positive rectangular pulse followed by a negative rectangular pulse](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q041_option_3_883865b0_14112026.svg?v=883865b0dfd3)  
+*drawn by code/lib/physics_figure.py*
+- (4) ![printed figure: Option 4: a-t graph, zero, then a negative rectangular pulse, then a rising straight line](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q041_option_4_1f6a456c_12112026.png?v=1f6a456c3eeb) *Option 4: a-t graph, zero, then a negative rectangular pulse, then a rising straight line* ![drawn: Option 4: a-t graph, zero, then a negative rectangular pulse, then a rising straight line](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q041_option_4_6c247a11_14112026.svg?v=6c247a11bf02)  
+*drawn by code/lib/physics_figure.py*
 
 **Answer** — booklet: (3) · independent solve: (3) · agree
 
@@ -1246,12 +1293,18 @@ The velocity $(v)$ – time $(t)$ plot of the motion of a body is shown below: T
 
 Physics · Current Electricity
 
+> ⚠ With the printed arm values (10, 10, 15 and 5 ohm) no circuit balances for an ideal diode. The booklet keys (1) and its own solution balances it only by giving the forward-biased diode a "dynamic resistance" R_D = 10 ohm (10/15 = 10/(5 + R_D)), a value the question never states. Another reading takes a reverse-biased diode as an open arm. The key is the same question's key in every 2024 booklet code.
+
 Choose the correct circuit which can achieve the bridge balance.
 
-- **(1)** ![printed figure: Wheatstone bridge: 10 ohm, 10 ohm, 15 ohm, 5 ohm with diode D, galvanometer G, cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q042_option_1_0c9238f6_12112026.png?v=0c9238f65e34) *Wheatstone bridge: 10 ohm, 10 ohm, 15 ohm, 5 ohm with diode D, galvanometer G, cell E and key K* — [circuit diagram]
-- (2) ![printed figure: Wheatstone bridge with 10 ohm, 10 ohm, 15 ohm and diode plus 5 ohm arms, galvanometer G, cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q042_option_2_64882aa7_12112026.png?v=64882aa7c5ed) *Wheatstone bridge with 10 ohm, 10 ohm, 15 ohm and diode plus 5 ohm arms, galvanometer G, cell E and key K* — [circuit diagram]
-- (3) ![printed figure: Bridge with 10 Ω, 10 Ω, 15 Ω arms, galvanometer G, and a diode D in parallel with 5 Ω; cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q042_option_3_671a2be5_12112026.png?v=671a2be520b7) *Bridge with 10 Ω, 10 Ω, 15 Ω arms, galvanometer G, and a diode D in parallel with 5 Ω; cell E and key K* — [circuit diagram]
-- (4) ![printed figure: Wheatstone bridge with 10 ohm, 10 ohm, 15 ohm, 5 ohm, galvanometer G across the middle, diode D in the lower-right arm, cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q042_option_4_17bd4e10_12112026.png?v=17bd4e1088f0) *Wheatstone bridge with 10 ohm, 10 ohm, 15 ohm, 5 ohm, galvanometer G across the middle, diode D in the lower-right arm, cell E and key K* — [circuit diagram]
+- **(1)** ![printed figure: Wheatstone bridge: 10 ohm, 10 ohm, 15 ohm, 5 ohm with diode D, galvanometer G, cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q042_option_1_0c9238f6_12112026.png?v=0c9238f65e34) *Wheatstone bridge: 10 ohm, 10 ohm, 15 ohm, 5 ohm with diode D, galvanometer G, cell E and key K* ![drawn: Wheatstone bridge: 10 ohm, 10 ohm, 15 ohm, 5 ohm with diode D, galvanometer G, cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q042_option_1_7698f31d_14112026.svg?v=7698f31d0c0f)  
+*drawn by code/lib/physics_figure.py* — [circuit diagram]
+- (2) ![printed figure: Wheatstone bridge with 10 ohm, 10 ohm, 15 ohm and diode plus 5 ohm arms, galvanometer G, cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q042_option_2_64882aa7_12112026.png?v=64882aa7c5ed) *Wheatstone bridge with 10 ohm, 10 ohm, 15 ohm and diode plus 5 ohm arms, galvanometer G, cell E and key K* ![drawn: Wheatstone bridge with 10 ohm, 10 ohm, 15 ohm and diode plus 5 ohm arms, galvanometer G, cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q042_option_2_142c6096_14112026.svg?v=142c60969b3f)  
+*drawn by code/lib/physics_figure.py* — [circuit diagram]
+- (3) ![printed figure: Bridge with 10 Ω, 10 Ω, 15 Ω arms, galvanometer G, and a diode D in parallel with 5 Ω; cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q042_option_3_671a2be5_12112026.png?v=671a2be520b7) *Bridge with 10 Ω, 10 Ω, 15 Ω arms, galvanometer G, and a diode D in parallel with 5 Ω; cell E and key K* ![drawn: Bridge with 10 Ω, 10 Ω, 15 Ω arms, galvanometer G, and a diode D in parallel with 5 Ω; cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q042_option_3_b4e6684f_14112026.svg?v=b4e6684f3aa2)  
+*drawn by code/lib/physics_figure.py* — [circuit diagram]
+- (4) ![printed figure: Wheatstone bridge with 10 ohm, 10 ohm, 15 ohm, 5 ohm, galvanometer G across the middle, diode D in the lower-right arm, cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q042_option_4_17bd4e10_12112026.png?v=17bd4e1088f0) *Wheatstone bridge with 10 ohm, 10 ohm, 15 ohm, 5 ohm, galvanometer G across the middle, diode D in the lower-right arm, cell E and key K* ![drawn: Wheatstone bridge with 10 ohm, 10 ohm, 15 ohm, 5 ohm, galvanometer G across the middle, diode D in the lower-right arm, cell E and key K](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q042_option_4_93be500c_14112026.svg?v=93be500cb56e)  
+*drawn by code/lib/physics_figure.py* — [circuit diagram]
 
 **Answer** — booklet: (1) · independent solve: (1) · agree
 
@@ -1374,6 +1427,9 @@ A $10\,\mu\mathrm{F}$ capacitor is connected to a $210\,\mathrm{V}$, $50\,\mathr
 ![printed figure: A 10 uF capacitor C connected across a 210 V, 50 Hz AC source in one loop](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q046_5f32f509_12112026.png?v=5f32f5091d09)
 
 *A 10 uF capacitor C connected across a 210 V, 50 Hz AC source in one loop*
+
+![drawn: A 10 uF capacitor C connected across a 210 V, 50 Hz AC source in one loop](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q046_question_8e37b3fe_14112026.svg?v=8e37b3fe07fa)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) $0.58\,\mathrm{A}$
 - **(2)** $0.93\,\mathrm{A}$
@@ -1618,9 +1674,9 @@ Chemistry · inorganic · Chemical Bonding and Molecular Structure
 
 Intramolecular hydrogen bonding is present in
 
-- **(1)** ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q054_option_1_e527063e_12112026.png?v=e527063e5024)
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q054_option_2_e9227cf7_12112026.png?v=e9227cf7ee4e)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q054_option_3_8a720e85_12112026.png?v=8a720e85f1c9)
+- **(1)** 2-nitrophenol `O=[N+]([O-])c1ccccc1O` ![2-nitrophenol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q054_option_1_s1_af8d6416_14112026.svg?v=af8d641635dd)
+- (2) 4-nitrophenol `O=[N+]([O-])c1ccc(O)cc1` ![4-nitrophenol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q054_option_2_s1_061f32a8_14112026.svg?v=061f32a8ba54)
+- (3) 3-nitrophenol `O=[N+]([O-])c1cccc(O)c1` ![3-nitrophenol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q054_option_3_s1_683e3fc0_14112026.svg?v=683e3fc063ee)
 - (4) $\mathrm{HF}$
 
 **Answer** — booklet: (1) · independent solve: (1) · agree
@@ -1676,10 +1732,10 @@ Chemistry · organic · Haloalkanes and Haloarenes
 
 The compound that will undergo $\mathrm{S_N1}$ reaction with the fastest rate is
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q056_option_1_e91380fa_12112026.png?v=e91380fa72d4)
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q056_option_2_a76350ee_12112026.png?v=a76350eedd94)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q056_option_3_70b1b1ee_12112026.png?v=70b1b1ee80a0)
-- **(4)** ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q056_option_4_7cb4e37c_12112026.png?v=7cb4e37c3a73)
+- (1) (bromomethyl)cyclohexane `BrCC1CCCCC1` ![(bromomethyl)cyclohexane](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q056_option_1_s1_3db34c76_14112026.svg?v=3db34c76f38e)
+- (2) bromocyclohexane `BrC1CCCCC1` ![bromocyclohexane](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q056_option_2_s1_35c4a4b9_14112026.svg?v=35c4a4b9cb53)
+- (3) bromobenzene `Brc1ccccc1` ![bromobenzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q056_option_3_s1_61d2ed9e_14112026.svg?v=61d2ed9ebe04)
+- **(4)** (1-bromoethyl)benzene `CC(Br)c1ccccc1` ![(1-bromoethyl)benzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q056_option_4_s1_ef3a803b_14112026.svg?v=ef3a803b5361)
 
 **Answer** — booklet: (4) · independent solve: (4) · agree
 
@@ -1707,9 +1763,9 @@ Chemistry · organic · Alcohols, Phenols and Ethers
 Which one of the following alcohols reacts instantaneously with Lucas reagent?
 
 - (1) $\mathrm{CH_3-CH_2-CH_2-CH_2OH}$
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q057_option_2_f3ad8574_12112026.png?v=f3ad85744235) — $\mathrm{CH_3-CH_2-CH(CH_3)-OH}$
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q057_option_3_3f7c8c77_12112026.png?v=3f7c8c772e16) — $\mathrm{CH_3-CH(CH_3)-CH_2OH}$
-- **(4)** ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q057_option_4_04044412_12112026.png?v=040444127e2a) — $\mathrm{CH_3-C(CH_3)_2-OH}$
+- (2) butan-2-ol `CCC(C)O` ![butan-2-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q057_option_2_s1_246d1e4e_14112026.svg?v=246d1e4e3f48) — $\mathrm{CH_3-CH_2-CH(CH_3)-OH}$
+- (3) 2-methylpropan-1-ol `CC(C)CO` ![2-methylpropan-1-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q057_option_3_s1_44b6a2e7_14112026.svg?v=44b6a2e7f8a5) — $\mathrm{CH_3-CH(CH_3)-CH_2OH}$
+- **(4)** 2-methylpropan-2-ol `CC(C)(C)O` ![2-methylpropan-2-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q057_option_4_s1_51170735_14112026.svg?v=51170735efa7) — $\mathrm{CH_3-C(CH_3)_2-OH}$
 
 **Answer** — booklet: (4) · independent solve: (4) · agree
 
@@ -1790,10 +1846,10 @@ Chemistry · organic · General Organic Chemistry
 
 The most stable carbocation among the following is :
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q060_option_1_a720c571_12112026.png?v=a720c5719921)
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q060_option_2_c2e2feb2_12112026.png?v=c2e2feb2f8f4)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q060_option_3_073829ab_12112026.png?v=073829abb401)
-- **(4)** ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q060_option_4_5c3dec6d_12112026.png?v=5c3dec6db4ec)
+- (1) 2-methylpentan-3-ylium `CC[CH+]C(C)C` ![2-methylpentan-3-ylium](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q060_option_1_s1_8a3210fb_14112026.svg?v=8a3210fb1a2a)
+- (2) 4-methylpentan-2-ylium `C[CH+]CC(C)C` ![4-methylpentan-2-ylium](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q060_option_2_s1_34ac5544_14112026.svg?v=34ac5544f031)
+- (3) cyclopentylmethylium `[CH2+]C1CCCC1` ![cyclopentylmethylium](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q060_option_3_s1_8adbcb30_14112026.svg?v=8adbcb30ef6b)
+- **(4)** 1-methylcyclohexylium `C[C+]1CCCCC1` ![1-methylcyclohexylium](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q060_option_4_s1_6a144549_14112026.svg?v=6a1445496db4)
 
 **Answer** — booklet: (4) · independent solve: (4) · agree
 
@@ -2014,10 +2070,10 @@ Chemistry · physical · Chemical Kinetics
 
 Which plot of $\ln k$ vs $\frac{1}{T}$ is consistent with Arrhenius equation?
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q067_option_1_ed20add2_12112026.png?v=ed20add23ba6) — [graph: $\ln k$ vs $\frac{1}{T}$]
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q067_option_2_654c2f16_12112026.png?v=654c2f168e87) — [graph: $\ln k$ vs $\frac{1}{T}$]
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q067_option_3_8a56b608_12112026.png?v=8a56b6088716) — [graph: $\ln k$ vs $\frac{1}{T}$]
-- **(4)** ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q067_option_4_04b7d768_12112026.png?v=04b7d7683446) — [graph: $\ln k$ vs $\frac{1}{T}$]
+- (1) ![printed figure: graph of ln k (y-axis) vs 1/T (x-axis): a straight line with positive slope, starting slightly below the x-axis near the origin and rising to the upper right](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q067_option_1_ed20add2_12112026.png?v=ed20add23ba6) *graph of ln k (y-axis) vs 1/T (x-axis): a straight line with positive slope, starting slightly below the x-axis near the origin and rising to the upper right* — [graph: $\ln k$ vs $\frac{1}{T}$]
+- (2) ![printed figure: graph of ln k (y-axis) vs 1/T (x-axis): a straight line with positive slope and a positive y-intercept, rising to the upper right](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q067_option_2_654c2f16_12112026.png?v=654c2f168e87) *graph of ln k (y-axis) vs 1/T (x-axis): a straight line with positive slope and a positive y-intercept, rising to the upper right* — [graph: $\ln k$ vs $\frac{1}{T}$]
+- (3) ![printed figure: graph of ln k (y-axis) vs 1/T (x-axis): a straight line with positive slope passing through the origin](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q067_option_3_8a56b608_12112026.png?v=8a56b6088716) *graph of ln k (y-axis) vs 1/T (x-axis): a straight line with positive slope passing through the origin* — [graph: $\ln k$ vs $\frac{1}{T}$]
+- **(4)** ![printed figure: graph of ln k (y-axis) vs 1/T (x-axis): a straight line with negative slope, starting at a positive y-intercept and falling to meet the x-axis](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q067_option_4_04b7d768_12112026.png?v=04b7d7683446) *graph of ln k (y-axis) vs 1/T (x-axis): a straight line with negative slope, starting at a positive y-intercept and falling to meet the x-axis* — [graph: $\ln k$ vs $\frac{1}{T}$]
 
 **Answer** — booklet: (4) · independent solve: (4) · agree
 
@@ -2322,7 +2378,14 @@ Chemistry · organic · Aldehydes, Ketones, and Carboxylic Acids
 
 Identify the correct reagents that would bring about the following transformation.
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q077_6cd2374c_12112026.png?v=6cd2374c4149)
+![printed figure: allylcyclohexane → 3-cyclohexylpropanal](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q077_6cd2374c_12112026.png?v=6cd2374c4149)
+
+*allylcyclohexane → 3-cyclohexylpropanal*
+
+![drawn: allylcyclohexane → 3-cyclohexylpropanal](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q077_question_4ad0072e_14112026.svg?v=4ad0072e529b)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: allylcyclohexane `C=CCC1CCCCC1` ![allylcyclohexane](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q077_question_s1_19da39bf_14112026.svg?v=19da39bfbc83); 3-cyclohexylpropanal `O=CCCC1CCCCC1` ![3-cyclohexylpropanal](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q077_question_s2_d5fc3230_14112026.svg?v=d5fc32301153)
 
 - (1) (i) $\mathrm{H_2O/H^+}$ (ii) $\mathrm{CrO_3}$
 - **(2)** (i) $\mathrm{BH_3}$ (ii) $\mathrm{H_2O_2/\overset{\ominus}{O}H}$ (iii) PCC
@@ -2530,7 +2593,14 @@ Chemistry · organic · Aldehydes, Ketones, and Carboxylic Acids
 
 Match List I with List II. Choose the correct answer from the options given below:
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q084_3ecb5ac6_12112026.svg?v=3ecb5ac65c8c)
+![printed figure: A. cyclohexylidenecyclohexane → 2 cyclohexanone; B. benzene → benzophenone; C. cyclohexanol → cyclohexanone; D. ethylbenzene → potassium benzoate; I. benzoyl chloride/Anhyd. $\ce{AlCl3}$; II. $\ce{CrO3}$; III. $\ce{KMnO4}$/KOH, Δ; IV. (i) $\ce{O3}$](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q084_3ecb5ac6_12112026.svg?v=3ecb5ac65c8c)
+
+*A. cyclohexylidenecyclohexane → 2 cyclohexanone; B. benzene → benzophenone; C. cyclohexanol → cyclohexanone; D. ethylbenzene → potassium benzoate; I. benzoyl chloride/Anhyd. $\ce{AlCl3}$; II. $\ce{CrO3}$; III. $\ce{KMnO4}$/KOH, Δ; IV. (i) $\ce{O3}$*
+
+![drawn: A. cyclohexylidenecyclohexane → 2 cyclohexanone; B. benzene → benzophenone; C. cyclohexanol → cyclohexanone; D. ethylbenzene → potassium benzoate; I. benzoyl chloride/Anhyd. $\ce{AlCl3}$; II. $\ce{CrO3}$; III. $\ce{KMnO4}$/KOH, Δ; IV. (i) $\ce{O3}$](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q084_question_76036843_14112026.svg?v=760368434dc9)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: cyclohexylidenecyclohexane `C1CCC(=C2CCCCC2)CC1` ![cyclohexylidenecyclohexane](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q084_question_s1_957a6cb4_14112026.svg?v=957a6cb425a6); cyclohexanone `O=C1CCCCC1` ![cyclohexanone](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q084_question_s2_ecae2398_14112026.svg?v=ecae2398c700); benzene `c1ccccc1` ![benzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q084_question_s3_dbf27a87_14112026.svg?v=dbf27a872e50); benzophenone `O=C(c1ccccc1)c1ccccc1` ![benzophenone](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q084_question_s4_4a6ed161_14112026.svg?v=4a6ed161623c); cyclohexanol `OC1CCCCC1` ![cyclohexanol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q084_question_s5_b130dcca_14112026.svg?v=b130dccaeb49); cyclohexanone `O=C1CCCCC1` ![cyclohexanone](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q084_question_s6_ecae2398_14112026.svg?v=ecae2398c700); ethylbenzene `CCc1ccccc1` ![ethylbenzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q084_question_s7_c3cd0ee9_14112026.svg?v=c3cd0ee97328); potassium benzoate `O=C([O][K])c1ccccc1` ![potassium benzoate](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q084_question_s8_7b68beea_14112026.svg?v=7b68beea7498); benzoyl chloride `O=C(Cl)c1ccccc1` ![benzoyl chloride](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q084_question_s9_56febcfe_14112026.svg?v=56febcfef378)
 
 | List-I | | List-II | |
 |---|---|---|---|
@@ -2683,12 +2753,19 @@ Chemistry · organic · Hydrocarbons
 
 For the given reaction: [reaction figure: cyclohexyl-CH=CH-cyclohexyl $\xrightarrow{\mathrm{KMnO_4/H^+}}$ 'P' (major product)] 'P' is
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q089_d9dcc97a_12112026.png?v=d9dcc97a2365)
+![printed figure: 1,2-dicyclohexylethene →($\ce{KMnO4/H+}$) 'P' (major product)](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q089_d9dcc97a_12112026.png?v=d9dcc97a2365)
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q089_option_1_ca493a73_12112026.png?v=ca493a731d6c) — $\mathrm{C_6H_{11}{-}CHO}$ (structure: cyclohexane ring attached to CHO)
-- **(2)** ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q089_option_2_a03964f5_12112026.png?v=a03964f56d05) — $\mathrm{C_6H_{11}{-}COOH}$ (structure: cyclohexane ring attached to COOH)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q089_option_3_0847e25e_12112026.png?v=0847e25ec09d) — $\mathrm{C_6H_{11}{-}CH(OH){-}CH(OH){-}C_6H_{11}}$ (structure)
-- (4) ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q089_option_4_dc19e8e9_12112026.png?v=dc19e8e94e81) — $\mathrm{C_6H_{11}{-}CO{-}CO{-}C_6H_{11}}$ (structure)
+*1,2-dicyclohexylethene →[$\ce{KMnO4/H+}$] 'P' (major product)*
+
+![drawn: 1,2-dicyclohexylethene →($\ce{KMnO4/H+}$) 'P' (major product)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q089_question_d670de2f_14112026.svg?v=d670de2f74e0)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: 1,2-dicyclohexylethene `C(=CC1CCCCC1)C1CCCCC1` ![1,2-dicyclohexylethene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q089_question_s1_69169cd1_14112026.svg?v=69169cd1c645)
+
+- (1) cyclohexanecarbaldehyde `O=CC1CCCCC1` ![cyclohexanecarbaldehyde](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q089_option_1_s1_79f04f91_14112026.svg?v=79f04f918b83) — $\mathrm{C_6H_{11}{-}CHO}$ (structure: cyclohexane ring attached to CHO)
+- **(2)** cyclohexanecarboxylic acid `O=C(O)C1CCCCC1` ![cyclohexanecarboxylic acid](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q089_option_2_s1_5fc26872_14112026.svg?v=5fc268722cd9) — $\mathrm{C_6H_{11}{-}COOH}$ (structure: cyclohexane ring attached to COOH)
+- (3) 1,2-dicyclohexylethane-1,2-diol `OC(C1CCCCC1)C(O)C1CCCCC1` ![1,2-dicyclohexylethane-1,2-diol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q089_option_3_s1_63689f37_14112026.svg?v=63689f374fd9) — $\mathrm{C_6H_{11}{-}CH(OH){-}CH(OH){-}C_6H_{11}}$ (structure)
+- (4) 1,2-dicyclohexylethane-1,2-dione `O=C(C(=O)C1CCCCC1)C1CCCCC1` ![1,2-dicyclohexylethane-1,2-dione](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q089_option_4_s1_a3dbbe83_14112026.svg?v=a3dbbe83efdc) — $\mathrm{C_6H_{11}{-}CO{-}CO{-}C_6H_{11}}$ (structure)
 
 **Answer** — booklet: (2) · independent solve: (2) · agree
 
@@ -2796,12 +2873,19 @@ Chemistry · organic · Haloalkanes and Haloarenes
 
 Major products A and B formed in the following reaction sequence, are
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q093_7ca149f5_12112026.png?v=7ca149f5b200)
+![printed figure: 2-methylcyclohexan-1-ol →($\ce{PBr3}$) A (major) →(alc. KOH, Δ) B (major)](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q093_7ca149f5_12112026.png?v=7ca149f5b200)
 
-- **(1)** ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q093_option_1_b23df781_12112026.png?v=b23df781a76a) — A =, B =
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q093_option_2_e1288f1f_12112026.png?v=e1288f1fa184) — A =, B =
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q093_option_3_f99a29a0_12112026.png?v=f99a29a0c4ef) — A =, B =
-- (4) ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2024/2024_Q3/figures_agent/q093_option_4_2a995676_12112026.png?v=2a995676f20c) — A =, B =
+*2-methylcyclohexan-1-ol →[$\ce{PBr3}$] A (major) →[alc. KOH, Δ] B (major)*
+
+![drawn: 2-methylcyclohexan-1-ol →($\ce{PBr3}$) A (major) →(alc. KOH, Δ) B (major)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q093_question_b3ba0357_14112026.svg?v=b3ba0357421f)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: 2-methylcyclohexan-1-ol `CC1CCCCC1O` ![2-methylcyclohexan-1-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q093_question_s1_79eed43b_14112026.svg?v=79eed43b0c22)
+
+- **(1)** 1-bromo-2-methylcyclohexane `CC1CCCCC1Br` ![1-bromo-2-methylcyclohexane](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q093_option_1_s1_2d1efb40_14112026.svg?v=2d1efb40eae4); 1-methylcyclohex-1-ene `CC1=CCCCC1` ![1-methylcyclohex-1-ene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q093_option_1_s2_ba57c26b_14112026.svg?v=ba57c26b570b) — A =, B =
+- (2) 1-bromo-2-methylcyclohexane `CC1CCCCC1Br` ![1-bromo-2-methylcyclohexane](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q093_option_2_s1_2d1efb40_14112026.svg?v=2d1efb40eae4); 4-methylcyclohex-1-ene `CC1CC=CCC1` ![4-methylcyclohex-1-ene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q093_option_2_s2_5d2336c6_14112026.svg?v=5d2336c68684) — A =, B =
+- (3) 2-bromo-6-methylcyclohexan-1-ol `CC1CCCC(Br)C1O` ![2-bromo-6-methylcyclohexan-1-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q093_option_3_s1_bbec4cde_14112026.svg?v=bbec4cde35ec); 6-methylcyclohex-2-en-1-ol `CC1CCC=CC1O` ![6-methylcyclohex-2-en-1-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q093_option_3_s2_844b7d62_14112026.svg?v=844b7d628c94) — A =, B =
+- (4) 2-bromo-6-methylcyclohexan-1-ol `CC1CCCC(Br)C1O` ![2-bromo-6-methylcyclohexan-1-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q093_option_4_s1_bbec4cde_14112026.svg?v=bbec4cde35ec); 2-methylcyclohexan-1-one `CC1CCCCC1=O` ![2-methylcyclohexan-1-one](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2024/2024_Q3/figures_drawn/q093_option_4_s2_7eaab55c_14112026.svg?v=7eaab55cfa65) — A =, B =
 
 **Answer** — booklet: (1) · independent solve: (1) · agree
 

@@ -1,6 +1,6 @@
 # NEET (UG) 2025 · Code 47
 
-180 questions · source `NEET_Papers/2025/Set_Code_47/Answers-and-Solutions_NEET-2025_Code-47-PCB.pdf` · every image a CDN link (0 without one) · 1 figures redrawn
+180 questions · source `NEET_Papers/2025/Set_Code_47/Answers-and-Solutions_NEET-2025_Code-47-PCB.pdf` · every image a CDN link (0 without one) · 36 figures redrawn
 
 Generated from `questions.json` (schema `neet-pyq/question-record/v3`) by `code/paper_md.py`; edit the pipeline, not this file.
 
@@ -13,6 +13,9 @@ The current passing through the battery in the given circuit, is:
 ![printed figure: Resistor network ABCDEF with a 5 V battery and series resistors on the outer loop](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q001_77044c03_12112026.png?v=77044c035c03)
 
 *Resistor network ABCDEF with a 5 V battery and series resistors on the outer loop*
+
+![drawn: Resistor network ABCDEF with a 5 V battery and series resistors on the outer loop](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q001_question_5a2c4c31_13112026.svg?v=5a2c4c31d1ce)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) $1.5\,\mathrm{A}$
 - (2) $2.0\,\mathrm{A}$
@@ -255,6 +258,9 @@ A constant voltage of $50\,\mathrm{V}$ is maintained between the points $A$ and 
 ![printed figure: Bridge of 1, 2, 3, 4 ohm resistors with branch CD, fed by 50 V between A and B](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q007_5be5ea60_12112026.png?v=5be5ea6088ec)
 
 *Bridge of 1, 2, 3, 4 ohm resistors with branch CD, fed by 50 V between A and B*
+
+![drawn: Bridge of 1, 2, 3, 4 ohm resistors with branch CD, fed by 50 V between A and B](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q007_question_927b0649_13112026.svg?v=927b0649fff4)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) $3.0\,\mathrm{A}$
 - (2) $1.5\,\mathrm{A}$
@@ -512,6 +518,9 @@ The output ($Y$) of the given logic implementation is similar to the output of a
 
 *A NOR gate (inputs A, B) and a NAND gate (inputs B, A) feeding an AND gate with output Y*
 
+![drawn: A NOR gate (inputs A, B) and a NAND gate (inputs B, A) feeding an AND gate with output Y](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q013_question_72a1d5c8_13112026.svg?v=72a1d5c83770)  
+*drawn by code/lib/physics_figure.py*
+
 - **(1)** NOR
 - (2) AND
 - (3) NAND
@@ -683,6 +692,9 @@ Which of the following options represent the variation of photoelectric current 
 
 *Four graphs A-D of photoelectric current against intensity or frequency of light*
 
+![drawn: Four graphs A-D of photoelectric current against intensity or frequency of light](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q017_question_381014df_13112026.svg?v=381014df75d2)  
+*drawn by code/lib/physics_figure.py*
+
 - (A) [graph]
 - (B) [graph]
 - (C) [graph]
@@ -772,6 +784,9 @@ A bob of heavy mass $m$ is suspended by a light string of length $l$. The bob is
 
 *Bob m on a string of length l about O, given horizontal velocity v0 at the bottom; string slackens at P at angle theta above the horizontal*
 
+![drawn: Bob m on a string of length l about O, given horizontal velocity v0 at the bottom; string slackens at P at angle theta above the horizontal](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q019_question_02ca18f6_13112026.svg?v=02ca18f68b37)  
+*drawn by code/lib/physics_figure.py*
+
 - **(1)** $\left(\dfrac{\sin\theta}{2+3\sin\theta}\right)^{\frac{1}{2}}$
 - (2) $(\sin\theta)^{\frac{1}{2}}$
 - (3) $\left(\dfrac{1}{2+3\sin\theta}\right)^{\frac{1}{2}}$
@@ -822,6 +837,9 @@ A full wave rectifier circuit with diodes ($D_1$) and ($D_2$) is shown in the fi
 ![printed figure: Centre-tap full wave rectifier with diodes D1, D2 and load RL](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q020_92677bd1_12112026.png?v=92677bd15a79)
 
 *Centre-tap full wave rectifier with diodes D1, D2 and load RL*
+
+![drawn: Centre-tap full wave rectifier with diodes D1, D2 and load RL](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q020_question_c3f01f3e_13112026.svg?v=c3f01f3e8a3a)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) $D_1$ and $D_2$ both are reverse biased
 - (2) $D_1$ is forward biased, $D_2$ is reverse biased
@@ -1426,6 +1444,9 @@ $AB$ is a part of an electrical circuit (see figure). The potential difference �
 
 *Circuit segment AB: inductor 1 H, cell 5 V and resistor 2 ohm in series, current i from A*
 
+![drawn: Circuit segment AB: inductor 1 H, cell 5 V and resistor 2 ohm in series, current i from A](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q034_question_a37b9fd7_13112026.svg?v=a37b9fd76cde)  
+*drawn by code/lib/physics_figure.py*
+
 - **(1)** $10\,\mathrm{volt}$
 - (2) $5\,\mathrm{volt}$
 - (3) $6\,\mathrm{volt}$
@@ -1465,10 +1486,14 @@ Physics · Oscillations
 
 In an oscillating spring mass system, a spring is connected to a box filled with sand. As the box oscillates, sand leaks slowly out of the box vertically so that the average frequency $\omega(t)$ and average amplitude $A(t)$ of the system change with time $t$. Which one of the following options schematically depicts these changes correctly?
 
-- (1) ![printed figure: Option (1): omega(t) and A(t) both decrease with time t](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q035_option_1_16673fdf_12112026.png?v=16673fdfb3ce) *Option (1): omega(t) and A(t) both decrease with time t*
-- (2) ![printed figure: Option (2): omega(t) rises and levels off, A(t) stays constant](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q035_option_2_2ac0b42f_12112026.png?v=2ac0b42f84b5) *Option (2): omega(t) rises and levels off, A(t) stays constant*
-- **(3)** ![printed figure: Option (3): omega(t) rises and levels off; A(t) falls and levels off](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q035_option_3_428bbe72_12112026.png?v=428bbe72dc95) *Option (3): omega(t) rises and levels off; A(t) falls and levels off*
-- (4) ![printed figure: Option 4: omega(t) and A(t) both rise with t and level off](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q035_option_4_a964753a_12112026.png?v=a964753ab40e) *Option 4: omega(t) and A(t) both rise with t and level off*
+- (1) ![printed figure: Option (1): omega(t) and A(t) both decrease with time t](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q035_option_1_16673fdf_12112026.png?v=16673fdfb3ce) *Option (1): omega(t) and A(t) both decrease with time t* ![drawn: Option (1): omega(t) and A(t) both decrease with time t](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q035_option_1_2f7f480e_13112026.svg?v=2f7f480e4400)  
+*drawn by code/lib/physics_figure.py*
+- (2) ![printed figure: Option (2): omega(t) rises and levels off, A(t) stays constant](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q035_option_2_2ac0b42f_12112026.png?v=2ac0b42f84b5) *Option (2): omega(t) rises and levels off, A(t) stays constant* ![drawn: Option (2): omega(t) rises and levels off, A(t) stays constant](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q035_option_2_47aeb735_13112026.svg?v=47aeb73581ea)  
+*drawn by code/lib/physics_figure.py*
+- **(3)** ![printed figure: Option (3): omega(t) rises and levels off; A(t) falls and levels off](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q035_option_3_428bbe72_12112026.png?v=428bbe72dc95) *Option (3): omega(t) rises and levels off; A(t) falls and levels off* ![drawn: Option (3): omega(t) rises and levels off; A(t) falls and levels off](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q035_option_3_afd0dec8_13112026.svg?v=afd0dec80899)  
+*drawn by code/lib/physics_figure.py*
+- (4) ![printed figure: Option 4: omega(t) and A(t) both rise with t and level off](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q035_option_4_a964753a_12112026.png?v=a964753ab40e) *Option 4: omega(t) and A(t) both rise with t and level off* ![drawn: Option 4: omega(t) and A(t) both rise with t and level off](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q035_option_4_3d5a2255_13112026.svg?v=3d5a2255c3d8)  
+*drawn by code/lib/physics_figure.py*
 
 **Answer** — booklet: (3) · independent solve: (3) · agree
 
@@ -1608,6 +1633,9 @@ Consider a water tank shown in the figure. It has one wall at $x = L$ and can be
 ![printed figure: Liquid surface y(x) in a tank rising to meet the wall at x = L at angle θ0 with the horizontal](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q038_7955217d_12112026.png?v=7955217dc2dd)
 
 *Liquid surface y(x) in a tank rising to meet the wall at x = L at angle θ0 with the horizontal*
+
+![drawn: Liquid surface y(x) in a tank rising to meet the wall at x = L at angle θ0 with the horizontal](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q038_question_2ced9a13_13112026.svg?v=2ced9a13f518)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) $\frac{dy}{dx} = \sqrt{\frac{\rho g}{S}}\,x$
 - (2) $\frac{d^2y}{dx^2} = \frac{\rho g}{S}\,x$
@@ -1820,6 +1848,9 @@ Three identical heat conducting rods are connected in series as shown in the fig
 
 *Three equal rods 2K, K, 2K in series between walls at 3T and T, junctions T1 and T2*
 
+![drawn: Three equal rods 2K, K, 2K in series between walls at 3T and T, junctions T1 and T2](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q043_question_b3b63a88_13112026.svg?v=b3b63a880c2d)  
+*drawn by code/lib/physics_figure.py*
+
 - (1) $\frac{5}{4}$
 - (2) $\frac{3}{2}$
 - (3) $\frac{4}{3}$
@@ -1919,6 +1950,9 @@ A sphere of radius $R$ is cut from a larger solid sphere of radius $2R$ as shown
 ![printed figure: A solid sphere of radius 2R with a sphere of radius R cut out, touching its rim on the X-axis](https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q045_9e735597_12112026.png?v=9e7355975ad2)
 
 *A solid sphere of radius 2R with a sphere of radius R cut out, touching its rim on the X-axis*
+
+![drawn: A solid sphere of radius 2R with a sphere of radius R cut out, touching its rim on the X-axis](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q045_question_793b1a60_13112026.svg?v=793b1a607924)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) $\frac{7}{64}$
 - (2) $\frac{7}{8}$
@@ -2232,12 +2266,15 @@ The major product of the following reaction is
 
 *4-oxo-4-phenylbutanenitrile →[(i) $\ce{CH3MgBr}$ (excess); (ii) $\ce{H3O+}$]*
 
-Structures: 4-oxo-4-phenylbutanenitrile `N#CCCC(=O)c1ccccc1`
+![drawn: 4-oxo-4-phenylbutanenitrile →((i) $\ce{CH3MgBr}$ (excess); (ii) $\ce{H3O+}$)](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_question_9b66f803_13112026.svg?v=9b66f803f925)  
+*drawn by RDKit (code/lib/chem_cards.py)*
 
-- (1) 1-phenylpentane-1,4-dione `CC(=O)CCC(=O)c1ccccc1`
-- (2) 4-hydroxy-4-phenylpentanenitrile `CC(O)(CCC#N)c1ccccc1`
-- **(3)** 5-hydroxy-5-phenylhexan-2-one `CC(=O)CCC(C)(O)c1ccccc1`
-- (4) 2-methyl-5-phenylhexane-2,5-diol `CC(C)(O)CCC(C)(O)c1ccccc1`
+Structures: 4-oxo-4-phenylbutanenitrile `N#CCCC(=O)c1ccccc1` ![4-oxo-4-phenylbutanenitrile](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_question_s1_a1080a66_13112026.svg?v=a1080a6621d2)
+
+- (1) 1-phenylpentane-1,4-dione `CC(=O)CCC(=O)c1ccccc1` ![1-phenylpentane-1,4-dione](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_1_s1_a63fd430_13112026.svg?v=a63fd43043aa)
+- (2) 4-hydroxy-4-phenylpentanenitrile `CC(O)(CCC#N)c1ccccc1` ![4-hydroxy-4-phenylpentanenitrile](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_2_s1_8c97e108_13112026.svg?v=8c97e1082509)
+- **(3)** 5-hydroxy-5-phenylhexan-2-one `CC(=O)CCC(C)(O)c1ccccc1` ![5-hydroxy-5-phenylhexan-2-one](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_3_s1_ee402273_13112026.svg?v=ee402273f967)
+- (4) 2-methyl-5-phenylhexane-2,5-diol `CC(C)(O)CCC(C)(O)c1ccccc1` ![2-methyl-5-phenylhexane-2,5-diol](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_4_s1_aa1f17be_13112026.svg?v=aa1f17be1c1d)
 
 **Answer** — booklet: (3) · independent solve: (3) · agree
 
@@ -2362,7 +2399,10 @@ Among the given compounds I-III, the correct order of bond dissociation energy o
 
 *I benzene (C-H marked *); II ethynylbenzene (terminal alkyne C-H marked *); III cyclopropene (sp3 CH2 C-H marked *)*
 
-Structures: benzene `c1ccccc1`; ethynylbenzene `C#Cc1ccccc1`; cyclopropene `C1=CC1`
+![drawn: I benzene (C-H marked *); II ethynylbenzene (terminal alkyne C-H marked *); III cyclopropene (sp3 CH2 C-H marked *)](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q055_question_20b5352a_13112026.svg?v=20b5352a1805)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: benzene `c1ccccc1` ![benzene](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q055_question_s1_897e45fa_13112026.svg?v=897e45faf5ac); ethynylbenzene `C#Cc1ccccc1` ![ethynylbenzene](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q055_question_s2_c94c96e8_13112026.svg?v=c94c96e80223); cyclopropene `C1=CC1` ![cyclopropene](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q055_question_s3_543bf18d_13112026.svg?v=543bf18da187)
 
 - (1) $\mathrm{II > III > I}$
 - **(2)** $\mathrm{II > I > III}$
@@ -2534,10 +2574,10 @@ Chemistry · organic · Hydrocarbons
 
 Which one of the following reactions does NOT give benzene as the product?
 
-- **(1)** benzenediazonium chloride `N#[N+]c1ccccc1.[Cl-]` — $\mathrm{C_6H_5{-}\overset{\oplus}{N}{\equiv}N\,\overset{\ominus}{Cl}} \xrightarrow[\text{warm}]{\mathrm{H_2O}}$
-- (2) sodium benzoate `O=C([O][Na])c1ccccc1` — $\mathrm{C_6H_5{-}\overset{O}{\overset{\|}{C}}{-}ONa} \xrightarrow[\Delta]{\text{sodalime}}$
-- (3) hexane `CCCCCC` — n-hexane $\xrightarrow[773\,\mathrm{K},\ 10-20\,\mathrm{atm}]{\mathrm{Mo_2O_3}}$
-- (4) ethyne `C#C` — $\mathrm{H{-}C{\equiv}C{-}H} \xrightarrow[\text{at } 873\,\mathrm{K}]{\text{red hot Iron Tube}}$
+- **(1)** benzenediazonium chloride `N#[N+]c1ccccc1.[Cl-]` ![benzenediazonium chloride](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_1_s1_4b8392d3_13112026.svg?v=4b8392d3967f) — $\mathrm{C_6H_5{-}\overset{\oplus}{N}{\equiv}N\,\overset{\ominus}{Cl}} \xrightarrow[\text{warm}]{\mathrm{H_2O}}$
+- (2) sodium benzoate `O=C([O][Na])c1ccccc1` ![sodium benzoate](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_2_s1_7598f968_13112026.svg?v=7598f96857ae) — $\mathrm{C_6H_5{-}\overset{O}{\overset{\|}{C}}{-}ONa} \xrightarrow[\Delta]{\text{sodalime}}$
+- (3) hexane `CCCCCC` ![hexane](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_3_s1_186f7c1a_13112026.svg?v=186f7c1a376e) — n-hexane $\xrightarrow[773\,\mathrm{K},\ 10-20\,\mathrm{atm}]{\mathrm{Mo_2O_3}}$
+- (4) ethyne `C#C` ![ethyne](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_4_s1_978eec55_13112026.svg?v=978eec557075) — $\mathrm{H{-}C{\equiv}C{-}H} \xrightarrow[\text{at } 873\,\mathrm{K}]{\text{red hot Iron Tube}}$
 
 **Answer** — booklet: (1) · independent solve: (1) · agree
 
@@ -2623,10 +2663,10 @@ Chemistry · organic · Hydrocarbons
 
 Which one of the following compounds does not decolourize bromine water?
 
-- (1) aniline `Nc1ccccc1` — $-\mathrm{NH_2}$
-- **(2)** cyclohexane `C1CCCCC1`
-- (3) phenol `Oc1ccccc1` — $-\mathrm{OH}$
-- (4) styrene `C=Cc1ccccc1` — $-\mathrm{CH=CH_2}$
+- (1) aniline `Nc1ccccc1` ![aniline](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_1_s1_683d14ef_13112026.svg?v=683d14ef9e7b) — $-\mathrm{NH_2}$
+- **(2)** cyclohexane `C1CCCCC1` ![cyclohexane](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_2_s1_ef6bcaee_13112026.svg?v=ef6bcaeed89d)
+- (3) phenol `Oc1ccccc1` ![phenol](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_3_s1_7acdbee5_13112026.svg?v=7acdbee57e06) — $-\mathrm{OH}$
+- (4) styrene `C=Cc1ccccc1` ![styrene](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_4_s1_3df9db29_13112026.svg?v=3df9db29da10) — $-\mathrm{CH=CH_2}$
 
 **Answer** — booklet: (2) · independent solve: (2) · agree
 
@@ -3173,7 +3213,10 @@ Identify the suitable reagent for the following conversion.
 
 *methyl benzoate → benzaldehyde*
 
-Structures: methyl benzoate `COC(=O)c1ccccc1`; benzaldehyde `O=Cc1ccccc1`
+![drawn: methyl benzoate → benzaldehyde](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q073_question_edf7640e_13112026.svg?v=edf7640e0348)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: methyl benzoate `COC(=O)c1ccccc1` ![methyl benzoate](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q073_question_s1_a63011b1_13112026.svg?v=a63011b13482); benzaldehyde `O=Cc1ccccc1` ![benzaldehyde](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q073_question_s2_34066c30_13112026.svg?v=34066c303fa0)
 
 - (1) $\mathrm{H_2/Pd\text{-}BaSO_4}$
 - (2) (i) $\mathrm{LiAlH_4}$, (ii) $\mathrm{H^+/H_2O}$
@@ -3341,7 +3384,10 @@ How many products (including stereoisomers) are expected from monochlorination o
 
 *2-methylbutane, $\ce{(CH3)2CH-CH2-CH3}$*
 
-Structures: 2-methylbutane `CCC(C)C`
+![drawn: 2-methylbutane, $\ce{(CH3)2CH-CH2-CH3}$](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q077_question_f853015b_13112026.svg?v=f853015b5baf)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: 2-methylbutane `CCC(C)C` ![2-methylbutane](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q077_question_s1_511df345_13112026.svg?v=511df3459137)
 
 - **(1)** $6$
 - (2) $2$
@@ -3741,12 +3787,15 @@ Predict the major product ‘P’ in the following sequence of reactions-
 
 *1-methylcyclopentene →[(i) HBr, benzoyl peroxide (ii) KCN (iii) Na (Hg)/C₂H₅OH] P (Major)*
 
-Structures: 1-methylcyclopentene `CC1=CCCC1`
+![drawn: 1-methylcyclopentene →((i) HBr, benzoyl peroxide (ii) KCN (iii) Na (Hg)/C₂H₅OH) P (Major)](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_question_d5af3461_13112026.svg?v=d5af346193df)  
+*drawn by RDKit (code/lib/chem_cards.py)*
 
-- (1) 1-isocyano-1-methylcyclopentane `[C-]#[N+]C1(C)CCCC1`
-- **(2)** (2-methylcyclopentyl)methanamine `CC1CCCC1CN`
-- (3) (1-methylcyclopentyl)methanamine `CC1(CN)CCCC1`
-- (4) 1-isocyano-2-methylcyclopentane `[C-]#[N+]C1CCCC1C`
+Structures: 1-methylcyclopentene `CC1=CCCC1` ![1-methylcyclopentene](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_question_s1_45b15073_13112026.svg?v=45b15073c151)
+
+- (1) 1-isocyano-1-methylcyclopentane `[C-]#[N+]C1(C)CCCC1` ![1-isocyano-1-methylcyclopentane](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_1_s1_04f33e2f_13112026.svg?v=04f33e2f8cdf)
+- **(2)** (2-methylcyclopentyl)methanamine `CC1CCCC1CN` ![(2-methylcyclopentyl)methanamine](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_2_s1_ab2a6c66_13112026.svg?v=ab2a6c66d3cf)
+- (3) (1-methylcyclopentyl)methanamine `CC1(CN)CCCC1` ![(1-methylcyclopentyl)methanamine](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_3_s1_edea0e4c_13112026.svg?v=edea0e4c050d)
+- (4) 1-isocyano-2-methylcyclopentane `[C-]#[N+]C1CCCC1C` ![1-isocyano-2-methylcyclopentane](https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_4_s1_9a48159f_13112026.svg?v=9a48159fb854)
 
 **Answer** — booklet: (2) · independent solve: (2) · agree
 

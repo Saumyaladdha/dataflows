@@ -1799,6 +1799,8 @@ Physics · Current Electricity
 
 > ⚠ The independent solve found no printed option exactly right ("No option gives $S = 15\,\Omega$, and options 1 and 3 are electrically equivalent, so no single option can be chosen"); its pick (unsure) is the closest fit, so treat this question as possibly misprinted.
 
+> ⚠ Diode in a Wheatstone bridge: the booklet keys option (2), balancing 10/15 = 10/(5 + R_D) with the diode's dynamic resistance R_D = 10 ohm, as its printed solution says. An ideal-diode reading (R_D = 0 or open) balances no option exactly, which is why the blind solve stays unsure. Same question as 2024_Q2 q046, 2024_Q3 q042, 2024_Q4 q043, 2024_Q5 q036, 2024_Q6 q045 and 2024_T3 q039.
+
 > ⚠ The independent solve chose (unsure); the booklet prints (2).
 
 Choose the correct circuit which can achieve the bridge balance.
@@ -5642,6 +5644,8 @@ Publisher's solution, as printed:
 
 Biology · botany · Biotechnology and Its Applications
 
+> ⚠ Statement II is false (the Bt protoxin is activated by the ALKALINE pH of the insect gut, not acidic). Statement I says Bt toxins are "coded by a gene cry IAc": several cry genes code them (cryIAc, cryIIAb, cryIAb), so read strictly it is false and gives option (3), which the blind solve chose; the booklet keys option (4), reading cry IAc as an example. Same question as 2024_Q3 q108, 2024_T3 q131, 2024_Q2 q102, 2024_Q4 q133.
+
 > ⚠ The independent solve chose (3); the booklet prints (4).
 
 Given below are two statements:
@@ -6520,6 +6524,8 @@ Publisher's solution, as printed:
 ## Q147
 
 Biology · botany · Ecosystem
+
+> ⚠ The question asks for the GPP of the THIRD trophic level, but primary productivity is defined for producers. Read as energy reaching level 3 with the 10% rule, 100x gives x (option 3, the blind solve's pick); the booklet keys 10x (option 4), taking NPP of level 2 as the GPP of level 3. Two audits disagree. Same question as 2024_Q3 q143, 2024_T3 q146, 2024_Q2 q141, 2024_Q4 q138.
 
 > ⚠ The independent solve chose (3); the booklet prints (4).
 

@@ -50,9 +50,9 @@
   "verdict_self": {
    "unchecked": 200
   },
-  "images": 255,
+  "images": 406,
   "images_without_cdn": 0,
-  "drawn_figures": 0,
+  "drawn_figures": 47,
   "number_not_printed": [],
   "flagged": {
    "answers_differ": [
@@ -697,17 +697,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2023_H1/q005_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q005_question_9f1468e4_14112026.svg",
+        "sha256": "9f1468e4bc8713f7c7a601e181198f9cefbfc4f66e00417aa964c0fdc212e372",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "A 3 uF capacitor in series with two 3 uF capacitors in parallel, between A and B",
         "width": 310,
@@ -1614,17 +1619,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2023_H1/q009_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q009_question_741658b2_14112026.svg",
+        "sha256": "741658b2e5be90541fff066fc543296afcbc48b65a73ae8376ce68f6ae62016d",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Two cells (10 V and 2 V), a 400 ohm resistor, a resistor R and a galvanometer G",
         "width": 800,
@@ -5861,17 +5871,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2023_H1/q034_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q034_question_638a2a13_14112026.svg",
+        "sha256": "638a2a1369b52040e3af58dcd5f85ce3968aeacb73750e369c6598a91ec785fd",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Rectangular loop ABCD: 2 ohm, 10 V cell, junction E, 5 V cell, 1 ohm along AB; 7 ohm along DC",
         "width": 460,
@@ -6845,17 +6860,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2023_H1/q038_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q038_question_fc47024c_14112026.svg",
+        "sha256": "fc47024c0e58ac8a7b9eb7148217c7b1b6880e542c5cdc33747d82265832cd4a",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "x-t graph of SHM: x = sin(pi t/4), amplitude 1 m, period 8 s",
         "width": 520,
@@ -7718,17 +7738,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2023_H1/q042_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q042_question_ab1dd733_14112026.svg",
+        "sha256": "ab1dd733bed5cc5650838a53849d22a098284fb64a0ae286f5c9c5abf18c0dbf",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Dipole -q and +q 6 cm apart on an axis, point P on the axis 5 cm from the centre 0",
         "width": 580,
@@ -8046,17 +8071,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2023_H1/q043_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q043_question_11e87ea5_14112026.svg",
+        "sha256": "11e87ea59d3b5c5f9432d24a9ac67e67310f8b6e72d13a8066a0b5d202247d6b",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Series LCR circuit with an AC source 220 V, 50 Hz",
         "width": 400,
@@ -8530,17 +8560,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2023_H1/q044_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q044_question_92848e56_14112026.svg",
+        "sha256": "92848e5632bb82c52e90f7e0fb99b41e6a5c7421eb7575ea98e1898e1c269014",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Inputs A and B each through a NOT gate into a NAND gate giving Y",
         "width": 400,
@@ -8938,17 +8973,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2023_H1/q045_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q045_question_cbf0dcaf_14112026.svg",
+        "sha256": "cbf0dcaf2315ff6dbe9a16c094e846bbf87fd19e352b908213894aa7d842944c",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "A thin biconvex lens of index n1 embedded in a medium of index n2, R1 = R2 = 20 cm",
         "width": 612,
@@ -10105,17 +10145,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2023_H1/q049_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q049_question_358650cc_14112026.svg",
+        "sha256": "358650cc558bc22e1ab2152aa685c5c0c2bc99a5c6051c88e892e2d3d5d53994",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Long wire with a semicircular bend of radius R from A to B around point P",
         "width": 392,
@@ -10964,8 +11009,8 @@
    "qno": 53,
    "flags": [],
    "question": {
-    "full_text": "The given compound [figure] is an example of ______.\n(1) Allylic halide\n(2) Vinylic halide\n(3) Benzylic halide\n(4) Aryl halide",
-    "html": "<div class=\"q-stem\">The given compound [figure] is an example of ______.</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q053_10b9fa98_04112026.png?v=10b9fa98b5c5\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span>Allylic halide</li><li><span class=\"key\">(2)</span>Vinylic halide</li><li><span class=\"key\">(3)</span>Benzylic halide</li><li><span class=\"key\">(4)</span>Aryl halide</li></ol>",
+    "full_text": "The given compound [figure] is an example of ______.\n[Figure: benzene ring bearing $\\ce{CH=CH-CH(X)-CH2CH3}$ (1-phenyl-3-X-pent-1-ene)]\n[Structures: (3-halopent-1-en-1-yl)benzene [SMILES: *C(C=Cc1ccccc1)CC]]\n(1) Allylic halide\n(2) Vinylic halide\n(3) Benzylic halide\n(4) Aryl halide",
+    "html": "<div class=\"q-stem\">The given compound [figure] is an example of ______.</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q053_10b9fa98_04112026.png?v=10b9fa98b5c5\" alt=\"benzene ring bearing $\\ce{CH=CH-CH(X)-CH2CH3}$ (1-phenyl-3-X-pent-1-ene)\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span>Allylic halide</li><li><span class=\"key\">(2)</span>Vinylic halide</li><li><span class=\"key\">(3)</span>Benzylic halide</li><li><span class=\"key\">(4)</span>Aryl halide</li></ol>",
     "stem": "The given compound [figure] is an example of ______.",
     "format": "plain",
     "statements": [],
@@ -10974,7 +11019,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "benzene ring bearing $\\ce{CH=CH-CH(X)-CH2CH3}$ (1-phenyl-3-X-pent-1-ene)",
       "printed": {
        "png": {
         "path": "figures_agent/2023_H1/q053.png",
@@ -10984,11 +11029,80 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": "rdkit",
+       "status": "drawn",
+       "checks": {
+        "smiles_parse": "pass",
+        "name_check": "1 not_run",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "pass"
+       },
+       "image": {
+        "path": "figures_drawn/2023_H1/q053_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q053_question_897e1e29_14112026.svg",
+        "sha256": "897e1e29159ee6cb114d759dee1e076b586981bd03ba1ccf8db6d3ff5a39da27",
+        "type": "image/svg+xml"
+       },
+       "message": null,
+       "kind": "structures",
+       "reaction_smiles": null,
+       "species": [
+        {
+         "label": "",
+         "name": "(3-halopent-1-en-1-yl)benzene",
+         "smiles": "*C(C=Cc1ccccc1)CC",
+         "formula": "C11H13*",
+         "inchikey": null,
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q053_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q053_question_s1_1cb7667a_14112026.svg",
+          "sha256": "1cb7667ac823f75a1ce552a76f2b6fbb8e0eddf9488f685839c533b05de3c9b4",
+          "type": "image/svg+xml"
+         }
+        }
+       ],
+       "scheme": null,
+       "draw_hints": [
+        {
+         "smiles": "c1ccc(cc1)[CH:1]=CC([*])CC",
+         "orient": {
+          "atom": 1,
+          "deg": 90
+         },
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        }
+       ],
+       "excluded_text": [],
+       "confidence": "certain",
+       "note": "X is a placeholder for a halogen atom, written as wildcard [*]; the name uses 'halo' for X, so OPSIN may not rebuild it. Benzene ring drawn as hexagon with inscribed circle; side chain CH=CH-CH(X)-CH2CH3 printed in condensed form above the ring. No stereochemistry drawn (flat CH=CH)."
+      },
       "shows": "question"
      }
     ],
-    "chemistry": [],
+    "chemistry": [
+     {
+      "label": "",
+      "name": "(3-halopent-1-en-1-yl)benzene",
+      "smiles": "*C(C=Cc1ccccc1)CC",
+      "formula": "C11H13*",
+      "inchikey": null,
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q053_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q053_question_s1_1cb7667a_14112026.svg",
+       "sha256": "1cb7667ac823f75a1ce552a76f2b6fbb8e0eddf9488f685839c533b05de3c9b4",
+       "type": "image/svg+xml"
+      }
+     }
+    ],
     "options": [
      {
       "key": "1",
@@ -12475,8 +12589,8 @@
    "qno": 63,
    "flags": [],
    "question": {
-    "full_text": "Complete the following reaction [C] is ________\n(1) $\\mathrm{CHO}$\n(2) $\\mathrm{COOH}$\n(3) $\\mathrm{OH}$\n(4) $\\mathrm{COOH}$",
-    "html": "<div class=\"q-stem\">Complete the following reaction [C] is ________</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_26a175a6_04112026.png?v=26a175a631d7\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_option_1_41d1f423_04112026.png?v=41d1f423ca3f\" alt=\"option 1\" loading=\"lazy\"> <span class=\"math\"><span class=\"up\">CHO</span></span></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_option_2_b3c6db94_04112026.png?v=b3c6db94f94c\" alt=\"option 2\" loading=\"lazy\"> <span class=\"math\"><span class=\"up\">COOH</span></span></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_option_3_2bfec110_04112026.png?v=2bfec1108580\" alt=\"option 3\" loading=\"lazy\"> <span class=\"math\"><span class=\"up\">OH</span></span></li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_option_4_66c32455_04112026.png?v=66c32455e088\" alt=\"option 4\" loading=\"lazy\"> <span class=\"math\"><span class=\"up\">COOH</span></span></li></ol>",
+    "full_text": "Complete the following reaction [C] is ________\n[Figure: [A] cyclohexanone →[HCN] [B] 1-hydroxycyclohexane-1-carbonitrile →[conc. $\\ce{H2SO4}$, Δ] [C]]\n[Structures: cyclohexanone [SMILES: O=C1CCCCC1]; 1-hydroxycyclohexane-1-carbonitrile [SMILES: N#CC1(O)CCCCC1]]\n(1) cyclohex-1-ene-1-carbaldehyde [SMILES: O=CC1=CCCCC1] $\\mathrm{CHO}$\n(2) cyclohex-1-ene-1-carboxylic acid [SMILES: O=C(O)C1=CCCCC1] $\\mathrm{COOH}$\n(3) cyclohexanol [SMILES: OC1CCCCC1] $\\mathrm{OH}$\n(4) cyclohexanecarboxylic acid [SMILES: O=C(O)C1CCCCC1] $\\mathrm{COOH}$",
+    "html": "<div class=\"q-stem\">Complete the following reaction [C] is ________</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q063_26a175a6_04112026.png?v=26a175a631d7\" alt=\"[A] cyclohexanone →[HCN] [B] 1-hydroxycyclohexane-1-carbonitrile →[conc. $\\ce{H2SO4}$, Δ] [C]\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_1_s1_47f14bf7_14112026.svg?v=47f14bf77a4c\" alt=\"cyclohex-1-ene-1-carbaldehyde\"><span class=\"name\">cyclohex-1-ene-1-carbaldehyde</span></span> <span class=\"math\"><span class=\"up\">CHO</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_2_s1_9e69062a_14112026.svg?v=9e69062a7631\" alt=\"cyclohex-1-ene-1-carboxylic acid\"><span class=\"name\">cyclohex-1-ene-1-carboxylic acid</span></span> <span class=\"math\"><span class=\"up\">COOH</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_3_s1_b130dcca_14112026.svg?v=b130dccaeb49\" alt=\"cyclohexanol\"><span class=\"name\">cyclohexanol</span></span> <span class=\"math\"><span class=\"up\">OH</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_4_s1_5fc26872_14112026.svg?v=5fc268722cd9\" alt=\"cyclohexanecarboxylic acid\"><span class=\"name\">cyclohexanecarboxylic acid</span></span> <span class=\"math\"><span class=\"up\">COOH</span></span></li></ol>",
     "stem": "Complete the following reaction [C] is ________",
     "format": "plain",
     "statements": [],
@@ -12485,7 +12599,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "[A] cyclohexanone →[HCN] [B] 1-hydroxycyclohexane-1-carbonitrile →[conc. $\\ce{H2SO4}$, Δ] [C]",
       "printed": {
        "png": {
         "path": "figures_agent/2023_H1/q063.png",
@@ -12495,19 +12609,164 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": "rdkit",
+       "status": "drawn",
+       "checks": {
+        "smiles_parse": "pass",
+        "name_check": "2 not_run",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "pass"
+       },
+       "image": {
+        "path": "figures_drawn/2023_H1/q063_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_question_9799ed66_14112026.svg",
+        "sha256": "9799ed66a4ee0fee45173803a7861bc3c33ba94334e288fa06e63ad042e685ce",
+        "type": "image/svg+xml"
+       },
+       "message": null,
+       "kind": "reaction",
+       "reaction_smiles": "O=C1CCCCC1>C#N>N#CC1(O)CCCCC1",
+       "species": [
+        {
+         "label": "[A]",
+         "name": "cyclohexanone",
+         "smiles": "O=C1CCCCC1",
+         "formula": "C6H10O",
+         "inchikey": "JHIVVAPYMSGYDF-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q063_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_question_s1_ecae2398_14112026.svg",
+          "sha256": "ecae2398c700be6d43a2fed53f513dc6f441b6dd3ece85c5f9fc5f010fa2e16c",
+          "type": "image/svg+xml"
+         }
+        },
+        {
+         "label": "[B]",
+         "name": "1-hydroxycyclohexane-1-carbonitrile",
+         "smiles": "N#CC1(O)CCCCC1",
+         "formula": "C7H11NO",
+         "inchikey": "ZDBRPNZOTCHLSP-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q063_question_s2.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_question_s2_21d03bff_14112026.svg",
+          "sha256": "21d03bffc4d3fc7cdfe414f5e416b0428d6287f079ab9b1dc0c66e83147eb990",
+          "type": "image/svg+xml"
+         }
+        }
+       ],
+       "scheme": [
+        [
+         {
+          "species": 1
+         },
+         {
+          "arrow": {
+           "above": "HCN",
+           "below": ""
+          }
+         },
+         {
+          "species": 2
+         }
+        ],
+        [
+         {
+          "arrow": {
+           "above": "conc. H₂SO₄",
+           "below": "Δ"
+          }
+         },
+         {
+          "text": "[C]"
+         }
+        ]
+       ],
+       "draw_hints": [
+        {
+         "smiles": "O=C1CCCCC1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        },
+        {
+         "smiles": "N#CC1(O)CCCCC1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        }
+       ],
+       "excluded_text": [],
+       "confidence": "certain",
+       "note": "HCN over the first arrow; second arrow (conc. H2SO4 over, Δ under) continues from [B] on a second line and leads to the unknown [C]. Labels [A] and [B] printed under the structures."
+      },
       "shows": "question"
      }
     ],
-    "chemistry": [],
+    "chemistry": [
+     {
+      "label": "[A]",
+      "name": "cyclohexanone",
+      "smiles": "O=C1CCCCC1",
+      "formula": "C6H10O",
+      "inchikey": "JHIVVAPYMSGYDF-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q063_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_question_s1_ecae2398_14112026.svg",
+       "sha256": "ecae2398c700be6d43a2fed53f513dc6f441b6dd3ece85c5f9fc5f010fa2e16c",
+       "type": "image/svg+xml"
+      }
+     },
+     {
+      "label": "[B]",
+      "name": "1-hydroxycyclohexane-1-carbonitrile",
+      "smiles": "N#CC1(O)CCCCC1",
+      "formula": "C7H11NO",
+      "inchikey": "ZDBRPNZOTCHLSP-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q063_question_s2.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_question_s2_21d03bff_14112026.svg",
+       "sha256": "21d03bffc4d3fc7cdfe414f5e416b0428d6287f079ab9b1dc0c66e83147eb990",
+       "type": "image/svg+xml"
+      }
+     }
+    ],
     "options": [
      {
       "key": "1",
       "text": "$\\mathrm{CHO}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "cyclohex-1-ene-1-carbaldehyde",
+        "smiles": "O=CC1=CCCCC1",
+        "formula": "C7H10O",
+        "inchikey": "OANSOJSBHVENEI-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q063_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_1_s1_47f14bf7_14112026.svg",
+         "sha256": "47f14bf77a4c1d75e1113d40c9afb0cb700f0685336a323fd854aa9730a8234c",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "cyclohex-1-ene-1-carbaldehyde",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q063_option_1.png",
@@ -12517,17 +12776,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q063_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_1_2bf1a4e0_14112026.svg",
+         "sha256": "2bf1a4e08a43c0083e1268252f43ba77c710b53d7be6d9e6514ae9ea6b94c877",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "cyclohex-1-ene-1-carbaldehyde",
+          "smiles": "O=CC1=CCCCC1",
+          "formula": "C7H10O",
+          "inchikey": "OANSOJSBHVENEI-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q063_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_1_s1_47f14bf7_14112026.svg",
+           "sha256": "47f14bf77a4c1d75e1113d40c9afb0cb700f0685336a323fd854aa9730a8234c",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "O=CC1=CCCCC1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "CHO written condensed on the ring C=C carbon."
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "$\\mathrm{COOH}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "cyclohex-1-ene-1-carboxylic acid",
+        "smiles": "O=C(O)C1=CCCCC1",
+        "formula": "C7H10O2",
+        "inchikey": "NMEZJSDUZQOPFE-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q063_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_2_s1_9e69062a_14112026.svg",
+         "sha256": "9e69062a763166e2d8093e9e19e12691bf4353bb3ed49cd52411a5b7d2f0901e",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "cyclohex-1-ene-1-carboxylic acid",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q063_option_2.png",
@@ -12537,17 +12862,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q063_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_2_c71cf70c_14112026.svg",
+         "sha256": "c71cf70cec231b4b0545397abba11b3a4e539c0109256cf205a2e14298c0efb1",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "cyclohex-1-ene-1-carboxylic acid",
+          "smiles": "O=C(O)C1=CCCCC1",
+          "formula": "C7H10O2",
+          "inchikey": "NMEZJSDUZQOPFE-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q063_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_2_s1_9e69062a_14112026.svg",
+           "sha256": "9e69062a763166e2d8093e9e19e12691bf4353bb3ed49cd52411a5b7d2f0901e",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "OC(=O)C1=CCCCC1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "COOH written condensed on the ring C=C carbon."
+       },
        "shows": "option"
       }
      },
      {
       "key": "3",
       "text": "$\\mathrm{OH}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "cyclohexanol",
+        "smiles": "OC1CCCCC1",
+        "formula": "C6H12O",
+        "inchikey": "HPXRVTGHNJAIIH-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q063_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_3_s1_b130dcca_14112026.svg",
+         "sha256": "b130dccaeb49b15f652c2e6c95942d6ceab449f43398ec09f0dbd7ebe65f777b",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "cyclohexanol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q063_option_3.png",
@@ -12557,17 +12948,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q063_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_3_ced83455_14112026.svg",
+         "sha256": "ced834559b3e2ef79442e1d824cc646bc23a3001d4a03ca5981eeccc173e3831",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "cyclohexanol",
+          "smiles": "OC1CCCCC1",
+          "formula": "C6H12O",
+          "inchikey": "HPXRVTGHNJAIIH-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q063_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_3_s1_b130dcca_14112026.svg",
+           "sha256": "b130dccaeb49b15f652c2e6c95942d6ceab449f43398ec09f0dbd7ebe65f777b",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "OC1CCCCC1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      },
      {
       "key": "4",
       "text": "$\\mathrm{COOH}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "cyclohexanecarboxylic acid",
+        "smiles": "O=C(O)C1CCCCC1",
+        "formula": "C7H12O2",
+        "inchikey": "NZNMSOFKMUBTKW-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q063_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_4_s1_5fc26872_14112026.svg",
+         "sha256": "5fc268722cd97f860771ac5857c16c7b92b4f70434e12631b56e76d595f1d9d9",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "cyclohexanecarboxylic acid",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q063_option_4.png",
@@ -12577,7 +13034,57 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q063_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_4_371159b3_14112026.svg",
+         "sha256": "371159b3d9fdb731615209f074d6860558881bcf2245ebdcf61fe7868bb1de20",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "cyclohexanecarboxylic acid",
+          "smiles": "O=C(O)C1CCCCC1",
+          "formula": "C7H12O2",
+          "inchikey": "NZNMSOFKMUBTKW-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q063_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q063_option_4_s1_5fc26872_14112026.svg",
+           "sha256": "5fc268722cd97f860771ac5857c16c7b92b4f70434e12631b56e76d595f1d9d9",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "OC(=O)C1CCCCC1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "COOH written condensed."
+       },
        "shows": "option"
       }
      }
@@ -13016,8 +13523,8 @@
    "qno": 66,
    "flags": [],
    "question": {
-    "full_text": "Identify the product in the following reaction:\n(1) \n(2) \n(3) \n(4) ",
-    "html": "<div class=\"q-stem\">Identify the product in the following reaction:</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_f1bce453_04112026.png?v=f1bce453488d\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_option_1_3fb9ae42_04112026.png?v=3fb9ae42856a\" alt=\"option 1\" loading=\"lazy\"></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_option_2_03682065_04112026.png?v=03682065124e\" alt=\"option 2\" loading=\"lazy\"></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_option_3_2f90fd07_04112026.png?v=2f90fd070111\" alt=\"option 3\" loading=\"lazy\"></li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_option_4_3e44683b_04112026.png?v=3e44683b2267\" alt=\"option 4\" loading=\"lazy\"></li></ol>",
+    "full_text": "Identify the product in the following reaction:\n[Figure: benzenediazonium chloride →[(i) $\\ce{Cu2Br2/HBr}$ (ii) Mg/dry ether (iii) $\\ce{H2O}$] Product]\n[Structures: benzenediazonium chloride [SMILES: N#[N+]c1ccccc1.[Cl-]]]\n(1) phenylmagnesium bromide [SMILES: [Br][Mg][c]1ccccc1]\n(2) 4-bromophenol [SMILES: Oc1ccc(Br)cc1]\n(3) phenol [SMILES: Oc1ccccc1]\n(4) benzene [SMILES: c1ccccc1]",
+    "html": "<div class=\"q-stem\">Identify the product in the following reaction:</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q066_f1bce453_04112026.png?v=f1bce453488d\" alt=\"benzenediazonium chloride →[(i) $\\ce{Cu2Br2/HBr}$ (ii) Mg/dry ether (iii) $\\ce{H2O}$] Product\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_1_s1_c9815f06_14112026.svg?v=c9815f069863\" alt=\"phenylmagnesium bromide\"><span class=\"name\">phenylmagnesium bromide</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_2_s1_fbd34b5b_14112026.svg?v=fbd34b5b0836\" alt=\"4-bromophenol\"><span class=\"name\">4-bromophenol</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_3_s1_b51d9a3a_14112026.svg?v=b51d9a3a6eec\" alt=\"phenol\"><span class=\"name\">phenol</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_4_s1_dbf27a87_14112026.svg?v=dbf27a872e50\" alt=\"benzene\"><span class=\"name\">benzene</span></span></li></ol>",
     "stem": "Identify the product in the following reaction:",
     "format": "plain",
     "statements": [],
@@ -13026,7 +13533,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "benzenediazonium chloride →[(i) $\\ce{Cu2Br2/HBr}$ (ii) Mg/dry ether (iii) $\\ce{H2O}$] Product",
       "printed": {
        "png": {
         "path": "figures_agent/2023_H1/q066.png",
@@ -13036,19 +13543,119 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": "rdkit",
+       "status": "drawn",
+       "checks": {
+        "smiles_parse": "pass",
+        "name_check": "1 not_run",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "pass"
+       },
+       "image": {
+        "path": "figures_drawn/2023_H1/q066_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_question_1dabe2c4_14112026.svg",
+        "sha256": "1dabe2c43a8b99b9df61f1807e2faa62ab010fd775f28016e8bfb4e1bb322e0c",
+        "type": "image/svg+xml"
+       },
+       "message": null,
+       "kind": "reaction",
+       "reaction_smiles": null,
+       "species": [
+        {
+         "label": "",
+         "name": "benzenediazonium chloride",
+         "smiles": "N#[N+]c1ccccc1.[Cl-]",
+         "formula": "C6H5ClN2",
+         "inchikey": "CLRSZXHOSMKUIB-UHFFFAOYSA-M",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q066_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_question_s1_746dd923_14112026.svg",
+          "sha256": "746dd923bd814c88b3061da2f8687443b0084874222040a31752e3f6166c1878",
+          "type": "image/svg+xml"
+         }
+        }
+       ],
+       "scheme": [
+        [
+         {
+          "species": 1
+         },
+         {
+          "arrow": {
+           "above": "(i) Cu₂Br₂/HBr\n(ii) Mg/dry ether",
+           "below": "(iii) H₂O"
+          }
+         },
+         {
+          "text": "Product"
+         }
+        ]
+       ],
+       "draw_hints": [
+        {
+         "smiles": "[Cl-].N#[N+:1]c1ccccc1",
+         "orient": {
+          "atom": 1,
+          "deg": 90
+         },
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        }
+       ],
+       "excluded_text": [],
+       "confidence": "certain",
+       "note": "Reactant printed as benzene ring with N₂⁺Cl⁻ on top. Reagents (i) and (ii) printed above the arrow, (iii) below it; the product is printed only as the word 'Product', so no reaction_smiles is given."
+      },
       "shows": "question"
      }
     ],
-    "chemistry": [],
+    "chemistry": [
+     {
+      "label": "",
+      "name": "benzenediazonium chloride",
+      "smiles": "N#[N+]c1ccccc1.[Cl-]",
+      "formula": "C6H5ClN2",
+      "inchikey": "CLRSZXHOSMKUIB-UHFFFAOYSA-M",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q066_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_question_s1_746dd923_14112026.svg",
+       "sha256": "746dd923bd814c88b3061da2f8687443b0084874222040a31752e3f6166c1878",
+       "type": "image/svg+xml"
+      }
+     }
+    ],
     "options": [
      {
       "key": "1",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "phenylmagnesium bromide",
+        "smiles": "[Br][Mg][c]1ccccc1",
+        "formula": "C6H5BrMg",
+        "inchikey": "ANRQGKOBLBYXFM-UHFFFAOYSA-M",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q066_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_1_s1_c9815f06_14112026.svg",
+         "sha256": "c9815f069863c1518dbe3cebc027c9d97fc419b2000a39413e440ed738b4f465",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "phenylmagnesium bromide",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q066_option_1.png",
@@ -13058,17 +13665,86 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q066_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_1_fda2c52d_14112026.svg",
+         "sha256": "fda2c52de26e85a28bea36dcd1ae13f3103f4bd23ba0877a2973c5b607de8c77",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "phenylmagnesium bromide",
+          "smiles": "[Br][Mg][c]1ccccc1",
+          "formula": "C6H5BrMg",
+          "inchikey": "ANRQGKOBLBYXFM-UHFFFAOYSA-M",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q066_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_1_s1_c9815f06_14112026.svg",
+           "sha256": "c9815f069863c1518dbe3cebc027c9d97fc419b2000a39413e440ed738b4f465",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "Br[Mg:1]c1ccccc1",
+          "orient": {
+           "atom": 1,
+           "deg": 90
+          },
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "MgBr printed above the benzene ring."
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "4-bromophenol",
+        "smiles": "Oc1ccc(Br)cc1",
+        "formula": "C6H5BrO",
+        "inchikey": "GZFGOTFRPZRKDS-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q066_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_2_s1_fbd34b5b_14112026.svg",
+         "sha256": "fbd34b5b0836ea91a0e080720302b27307d98bf02ab3526da6dbb61cc34fbaf2",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "4-bromophenol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q066_option_2.png",
@@ -13078,17 +13754,86 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q066_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_2_6417db69_14112026.svg",
+         "sha256": "6417db693f0d6f12668a73465b9565327955d896b0d2199669813b8398edde62",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "4-bromophenol",
+          "smiles": "Oc1ccc(Br)cc1",
+          "formula": "C6H5BrO",
+          "inchikey": "GZFGOTFRPZRKDS-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q066_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_2_s1_fbd34b5b_14112026.svg",
+           "sha256": "fbd34b5b0836ea91a0e080720302b27307d98bf02ab3526da6dbb61cc34fbaf2",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "[OH:1]c1ccc(Br)cc1",
+          "orient": {
+           "atom": 1,
+           "deg": 90
+          },
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "OH printed on top, Br at the bottom (para)."
+       },
        "shows": "option"
       }
      },
      {
       "key": "3",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "phenol",
+        "smiles": "Oc1ccccc1",
+        "formula": "C6H6O",
+        "inchikey": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q066_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_3_s1_b51d9a3a_14112026.svg",
+         "sha256": "b51d9a3a6eec324b634dc0036f22b12741b787a80b6f040d3c3ac3f1dfae199e",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "phenol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q066_option_3.png",
@@ -13098,17 +13843,86 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q066_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_3_f4a512cb_14112026.svg",
+         "sha256": "f4a512cbc80ff5b690ac0a83c83e82181b8f3e4495c38ce36cda7d61627f104d",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "phenol",
+          "smiles": "Oc1ccccc1",
+          "formula": "C6H6O",
+          "inchikey": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q066_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_3_s1_b51d9a3a_14112026.svg",
+           "sha256": "b51d9a3a6eec324b634dc0036f22b12741b787a80b6f040d3c3ac3f1dfae199e",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "[OH:1]c1ccccc1",
+          "orient": {
+           "atom": 1,
+           "deg": 90
+          },
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "OH printed above the benzene ring."
+       },
        "shows": "option"
       }
      },
      {
       "key": "4",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "benzene",
+        "smiles": "c1ccccc1",
+        "formula": "C6H6",
+        "inchikey": "UHOVQNZJYSORNB-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q066_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_4_s1_dbf27a87_14112026.svg",
+         "sha256": "dbf27a872e50c03969759588fda3f84b5eb7f5919836647930fe5a4b7c5c1366",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "benzene",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q066_option_4.png",
@@ -13118,7 +13932,57 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q066_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_4_bc582876_14112026.svg",
+         "sha256": "bc58287680324090d838c53acf81cf972cef0ea253364fab079e7c3df4019360",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "benzene",
+          "smiles": "c1ccccc1",
+          "formula": "C6H6",
+          "inchikey": "UHOVQNZJYSORNB-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q066_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q066_option_4_s1_dbf27a87_14112026.svg",
+           "sha256": "dbf27a872e50c03969759588fda3f84b5eb7f5919836647930fe5a4b7c5c1366",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "c1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      }
@@ -13236,8 +14100,8 @@
    "qno": 67,
    "flags": [],
    "question": {
-    "full_text": "Consider the following reaction and identify the product (P).\n$\\mathrm{CH_3-CH(CH_3)-CH(OH)-CH_3} \\xrightarrow{\\mathrm{HBr}}$ Product (P)\n3-Methylbutan-2-ol\n(1) $\\mathrm{CH_3-CH(CH_3)-CH(Br)-CH_3}$\n(2) $\\mathrm{CH_3-C(CH_3)_2-CH_2Br}$\n(3) $\\mathrm{CH_3-C(Br)(CH_3)-CH_2-CH_3}$\n(4) $\\mathrm{CH_3CH=CH-CH_3}$",
-    "html": "<div class=\"q-stem\">Consider the following reaction and identify the product (P).<br><span class=\"math\"><span class=\"up\">CH<sub>3</sub>-CH(CH<sub>3</sub>)-CH(OH)-CH<sub>3</sub></span> <span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">HBr</span></span><span class=\"xa-l\"></span><span class=\"xa-b\">&nbsp;</span></span></span> Product (P)<br>3-Methylbutan-2-ol</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q067_a4fe6355_04112026.png?v=a4fe6355ca66\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q067_option_1_4d9ecc02_04112026.png?v=4d9ecc02e04f\" alt=\"option 1\" loading=\"lazy\"> <span class=\"math\"><span class=\"up\">CH<sub>3</sub>-CH(CH<sub>3</sub>)-CH(Br)-CH<sub>3</sub></span></span></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q067_option_2_60b617a5_04112026.png?v=60b617a5493a\" alt=\"option 2\" loading=\"lazy\"> <span class=\"math\"><span class=\"up\">CH<sub>3</sub>-C(CH<sub>3</sub>)<sub>2</sub>-CH<sub>2</sub>Br</span></span></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q067_option_3_b9229a8b_04112026.png?v=b9229a8b8bd6\" alt=\"option 3\" loading=\"lazy\"> <span class=\"math\"><span class=\"up\">CH<sub>3</sub>-C(Br)(CH<sub>3</sub>)-CH<sub>2</sub>-CH<sub>3</sub></span></span></li><li><span class=\"key\">(4)</span><span class=\"math\"><span class=\"up\">CH<sub>3</sub>CH=CH-CH<sub>3</sub></span></span></li></ol>",
+    "full_text": "Consider the following reaction and identify the product (P).\n$\\mathrm{CH_3-CH(CH_3)-CH(OH)-CH_3} \\xrightarrow{\\mathrm{HBr}}$ Product (P)\n3-Methylbutan-2-ol\n[Figure: 3-methylbutan-2-ol (3-Methylbutan-2-ol) →[HBr] Product (P)]\n[Structures: 3-methylbutan-2-ol [SMILES: CC(C)C(C)O]]\n(1) 2-bromo-3-methylbutane [SMILES: CC(C)C(C)Br] $\\mathrm{CH_3-CH(CH_3)-CH(Br)-CH_3}$\n(2) 1-bromo-2,2-dimethylpropane [SMILES: CC(C)(C)CBr] $\\mathrm{CH_3-C(CH_3)_2-CH_2Br}$\n(3) 2-bromo-2-methylbutane [SMILES: CCC(C)(C)Br] $\\mathrm{CH_3-C(Br)(CH_3)-CH_2-CH_3}$\n(4) $\\mathrm{CH_3CH=CH-CH_3}$",
+    "html": "<div class=\"q-stem\">Consider the following reaction and identify the product (P).<br><span class=\"math\"><span class=\"up\">CH<sub>3</sub>-CH(CH<sub>3</sub>)-CH(OH)-CH<sub>3</sub></span> <span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">HBr</span></span><span class=\"xa-l\"></span><span class=\"xa-b\">&nbsp;</span></span></span> Product (P)<br>3-Methylbutan-2-ol</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q067_a4fe6355_04112026.png?v=a4fe6355ca66\" alt=\"3-methylbutan-2-ol (3-Methylbutan-2-ol) →[HBr] Product (P)\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_1_s1_18faa9fe_14112026.svg?v=18faa9fe6ac0\" alt=\"2-bromo-3-methylbutane\"><span class=\"name\">2-bromo-3-methylbutane</span></span> <span class=\"math\"><span class=\"up\">CH<sub>3</sub>-CH(CH<sub>3</sub>)-CH(Br)-CH<sub>3</sub></span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_2_s1_7ca1318b_14112026.svg?v=7ca1318b3106\" alt=\"1-bromo-2,2-dimethylpropane\"><span class=\"name\">1-bromo-2,2-dimethylpropane</span></span> <span class=\"math\"><span class=\"up\">CH<sub>3</sub>-C(CH<sub>3</sub>)<sub>2</sub>-CH<sub>2</sub>Br</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_3_s1_c5380da6_14112026.svg?v=c5380da663c8\" alt=\"2-bromo-2-methylbutane\"><span class=\"name\">2-bromo-2-methylbutane</span></span> <span class=\"math\"><span class=\"up\">CH<sub>3</sub>-C(Br)(CH<sub>3</sub>)-CH<sub>2</sub>-CH<sub>3</sub></span></span></li><li><span class=\"key\">(4)</span><span class=\"math\"><span class=\"up\">CH<sub>3</sub>CH=CH-CH<sub>3</sub></span></span></li></ol>",
     "stem": "Consider the following reaction and identify the product (P).\n$\\mathrm{CH_3-CH(CH_3)-CH(OH)-CH_3} \\xrightarrow{\\mathrm{HBr}}$ Product (P)\n3-Methylbutan-2-ol",
     "format": "plain",
     "statements": [],
@@ -13246,7 +14110,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "3-methylbutan-2-ol (3-Methylbutan-2-ol) →[HBr] Product (P)",
       "printed": {
        "png": {
         "path": "figures_agent/2023_H1/q067.png",
@@ -13256,19 +14120,116 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": "rdkit",
+       "status": "drawn",
+       "checks": {
+        "smiles_parse": "pass",
+        "name_check": "1 not_run",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "pass"
+       },
+       "image": {
+        "path": "figures_drawn/2023_H1/q067_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_question_9d99b870_14112026.svg",
+        "sha256": "9d99b870921eb4e2667a8576ea3dc1c1231b0d49fcc2708f7eea7d63e9ffea38",
+        "type": "image/svg+xml"
+       },
+       "message": null,
+       "kind": "reaction",
+       "reaction_smiles": null,
+       "species": [
+        {
+         "label": "3-Methylbutan-2-ol",
+         "name": "3-methylbutan-2-ol",
+         "smiles": "CC(C)C(C)O",
+         "formula": "C5H12O",
+         "inchikey": "MXLMTQWGSQIYOW-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q067_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_question_s1_ca11da3c_14112026.svg",
+          "sha256": "ca11da3c56c5e2a1bf183d28c5e7b4dda0ca8d2a42befbd4b4ed5a215ca7b333",
+          "type": "image/svg+xml"
+         }
+        }
+       ],
+       "scheme": [
+        [
+         {
+          "species": 1
+         },
+         {
+          "arrow": {
+           "above": "HBr",
+           "below": ""
+          }
+         },
+         {
+          "text": "Product (P)"
+         }
+        ]
+       ],
+       "draw_hints": [
+        {
+         "smiles": "CC(C)C(O)C",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        }
+       ],
+       "excluded_text": [],
+       "confidence": "certain",
+       "note": "HBr written over the arrow; product is unknown (P), printed as text only, so no reaction_smiles. Name '3-Methylbutan-2-ol' printed below the reactant is used as its label."
+      },
       "shows": "question"
      }
     ],
-    "chemistry": [],
+    "chemistry": [
+     {
+      "label": "3-Methylbutan-2-ol",
+      "name": "3-methylbutan-2-ol",
+      "smiles": "CC(C)C(C)O",
+      "formula": "C5H12O",
+      "inchikey": "MXLMTQWGSQIYOW-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q067_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_question_s1_ca11da3c_14112026.svg",
+       "sha256": "ca11da3c56c5e2a1bf183d28c5e7b4dda0ca8d2a42befbd4b4ed5a215ca7b333",
+       "type": "image/svg+xml"
+      }
+     }
+    ],
     "options": [
      {
       "key": "1",
       "text": "$\\mathrm{CH_3-CH(CH_3)-CH(Br)-CH_3}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "2-bromo-3-methylbutane",
+        "smiles": "CC(C)C(C)Br",
+        "formula": "C5H11Br",
+        "inchikey": "BLGVDCMNIAOLHA-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q067_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_1_s1_18faa9fe_14112026.svg",
+         "sha256": "18faa9fe6ac068e6fba7eda9e1eb5947f328f9d7153a56d90c779e38a894219d",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "2-bromo-3-methylbutane",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q067_option_1.png",
@@ -13278,17 +14239,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q067_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_1_d52d1a82_14112026.svg",
+         "sha256": "d52d1a82eaa3be55b3a2003734e0878c989457caeba59612003ce81bf696b30b",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "2-bromo-3-methylbutane",
+          "smiles": "CC(C)C(C)Br",
+          "formula": "C5H11Br",
+          "inchikey": "BLGVDCMNIAOLHA-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q067_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_1_s1_18faa9fe_14112026.svg",
+           "sha256": "18faa9fe6ac068e6fba7eda9e1eb5947f328f9d7153a56d90c779e38a894219d",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC(C)C(Br)C",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "$\\mathrm{CH_3-C(CH_3)_2-CH_2Br}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "1-bromo-2,2-dimethylpropane",
+        "smiles": "CC(C)(C)CBr",
+        "formula": "C5H11Br",
+        "inchikey": "CQWYAXCOVZKLHY-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q067_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_2_s1_7ca1318b_14112026.svg",
+         "sha256": "7ca1318b310602f3e0ea643c4a2a58a461d86a9c4d5c9ae19fdb17f4ae03a0bf",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "1-bromo-2,2-dimethylpropane",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q067_option_2.png",
@@ -13298,17 +14325,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q067_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_2_d4cc76c8_14112026.svg",
+         "sha256": "d4cc76c8636d9c31463d65e8ff2b190d61ba202576ebe9e6503ad1572a651356",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "1-bromo-2,2-dimethylpropane",
+          "smiles": "CC(C)(C)CBr",
+          "formula": "C5H11Br",
+          "inchikey": "CQWYAXCOVZKLHY-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q067_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_2_s1_7ca1318b_14112026.svg",
+           "sha256": "7ca1318b310602f3e0ea643c4a2a58a461d86a9c4d5c9ae19fdb17f4ae03a0bf",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC(C)(C)CBr",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      },
      {
       "key": "3",
       "text": "$\\mathrm{CH_3-C(Br)(CH_3)-CH_2-CH_3}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "2-bromo-2-methylbutane",
+        "smiles": "CCC(C)(C)Br",
+        "formula": "C5H11Br",
+        "inchikey": "JOUWCKCVTDSMHF-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q067_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_3_s1_c5380da6_14112026.svg",
+         "sha256": "c5380da663c8feb46af9ab86284538e2d1a3dee62a148c7b68701528ba3c8a2d",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "2-bromo-2-methylbutane",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q067_option_3.png",
@@ -13318,7 +14411,57 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q067_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_3_403a36af_14112026.svg",
+         "sha256": "403a36afca7dde18b0969b13b6fd921abe4eed7170a10720400d031cd16dd994",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "2-bromo-2-methylbutane",
+          "smiles": "CCC(C)(C)Br",
+          "formula": "C5H11Br",
+          "inchikey": "JOUWCKCVTDSMHF-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q067_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q067_option_3_s1_c5380da6_14112026.svg",
+           "sha256": "c5380da663c8feb46af9ab86284538e2d1a3dee62a148c7b68701528ba3c8a2d",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC(C)(Br)CC",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      },
@@ -13443,8 +14586,8 @@
    "qno": 68,
    "flags": [],
    "question": {
-    "full_text": "Identify product (A) in the following reaction:\n(1) \n(2) \n(3) \n(4) ",
-    "html": "<div class=\"q-stem\">Identify product (A) in the following reaction:</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_76f33e59_04112026.png?v=76f33e59a7e4\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_option_1_45b66089_04112026.png?v=45b66089ae25\" alt=\"option 1\" loading=\"lazy\"></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_option_2_36ff0a36_04112026.png?v=36ff0a36b5f6\" alt=\"option 2\" loading=\"lazy\"></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_option_3_cdd50691_04112026.png?v=cdd5069114fd\" alt=\"option 3\" loading=\"lazy\"></li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_option_4_be9d0dc3_04112026.png?v=be9d0dc32c76\" alt=\"option 4\" loading=\"lazy\"></li></ol>",
+    "full_text": "Identify product (A) in the following reaction:\n[Figure: 1-[3-(3-acetylphenyl)cyclohexyl]ethan-1-one →[Zn–Hg / conc. HCl] (A) + $\\ce{2H2O}$]\n[Structures: 1-[3-(3-acetylphenyl)cyclohexyl]ethan-1-one [SMILES: CC(=O)c1cccc(C2CCCC(C(C)=O)C2)c1]; water [SMILES: O]]\n(1) (3-(3-(hydroxymethyl)phenyl)cyclohexyl)methanol [SMILES: OCc1cccc(C2CCCC(CO)C2)c1]\n(2) 1-methyl-3-(3-methylcyclohexyl)benzene [SMILES: Cc1cccc(C2CCCC(C)C2)c1]\n(3) 1-ethyl-3-(3-ethylcyclohexyl)benzene [SMILES: CCc1cccc(C2CCCC(CC)C2)c1]\n(4) 1-(3-(3-(1-hydroxyethyl)phenyl)cyclohexyl)ethan-1-ol [SMILES: CC(O)c1cccc(C2CCCC(C(C)O)C2)c1]",
+    "html": "<div class=\"q-stem\">Identify product (A) in the following reaction:</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q068_76f33e59_04112026.png?v=76f33e59a7e4\" alt=\"1-[3-(3-acetylphenyl)cyclohexyl]ethan-1-one →[Zn–Hg / conc. HCl] (A) + $\\ce{2H2O}$\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_1_s1_2c5d719a_14112026.svg?v=2c5d719a19e2\" alt=\"(3-(3-(hydroxymethyl)phenyl)cyclohexyl)methanol\"><span class=\"name\">(3-(3-(hydroxymethyl)phenyl)cyclohexyl)methanol</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_2_s1_1c1a93da_14112026.svg?v=1c1a93da0fd1\" alt=\"1-methyl-3-(3-methylcyclohexyl)benzene\"><span class=\"name\">1-methyl-3-(3-methylcyclohexyl)benzene</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_3_s1_04d2848e_14112026.svg?v=04d2848ee871\" alt=\"1-ethyl-3-(3-ethylcyclohexyl)benzene\"><span class=\"name\">1-ethyl-3-(3-ethylcyclohexyl)benzene</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_4_s1_c64f9ecf_14112026.svg?v=c64f9ecf1ada\" alt=\"1-(3-(3-(1-hydroxyethyl)phenyl)cyclohexyl)ethan-1-ol\"><span class=\"name\">1-(3-(3-(1-hydroxyethyl)phenyl)cyclohexyl)ethan-1-ol</span></span></li></ol>",
     "stem": "Identify product (A) in the following reaction:",
     "format": "plain",
     "statements": [],
@@ -13453,7 +14596,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "1-[3-(3-acetylphenyl)cyclohexyl]ethan-1-one →[Zn–Hg / conc. HCl] (A) + $\\ce{2H2O}$",
       "printed": {
        "png": {
         "path": "figures_agent/2023_H1/q068.png",
@@ -13463,19 +14606,162 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": "rdkit",
+       "status": "drawn",
+       "checks": {
+        "smiles_parse": "pass",
+        "name_check": "2 not_run",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "pass"
+       },
+       "image": {
+        "path": "figures_drawn/2023_H1/q068_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_question_5a86a14d_14112026.svg",
+        "sha256": "5a86a14d5c1b4fc26768481d4589d7942f7056bc1c1ca8d1234387c569918fbe",
+        "type": "image/svg+xml"
+       },
+       "message": null,
+       "kind": "reaction",
+       "reaction_smiles": null,
+       "species": [
+        {
+         "label": "",
+         "name": "1-[3-(3-acetylphenyl)cyclohexyl]ethan-1-one",
+         "smiles": "CC(=O)c1cccc(C2CCCC(C(C)=O)C2)c1",
+         "formula": "C16H20O2",
+         "inchikey": "BJBARUWCSLEAAI-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q068_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_question_s1_b0bcb60f_14112026.svg",
+          "sha256": "b0bcb60f44038a48c32dd50df585a51d9ad3203251bba8e1102c0fb76ac6726b",
+          "type": "image/svg+xml"
+         }
+        },
+        {
+         "label": "",
+         "name": "water",
+         "smiles": "O",
+         "formula": "H2O",
+         "inchikey": "XLYOFNOQVPJJNP-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q068_question_s2.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_question_s2_795507b0_14112026.svg",
+          "sha256": "795507b0c3554722a75eed2e7e7834bbea011559b7a900a4d6dc2b53fef74f44",
+          "type": "image/svg+xml"
+         }
+        }
+       ],
+       "scheme": [
+        [
+         {
+          "species": 1
+         },
+         {
+          "arrow": {
+           "above": "Zn–Hg",
+           "below": "conc. HCl"
+          }
+         },
+         {
+          "text": "(A)"
+         },
+         {
+          "plus": true
+         },
+         {
+          "text": "2"
+         },
+         {
+          "species": 2
+         }
+        ]
+       ],
+       "draw_hints": [
+        {
+         "smiles": "CC(=O)C1CCCC(C1)c1cccc(C(C)=O)c1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        },
+        {
+         "smiles": "O",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        }
+       ],
+       "excluded_text": [],
+       "confidence": "certain",
+       "note": "Clemmensen reduction scheme; product (A) is an unknown letter, so no reaction_smiles. Water printed as the formula 2H2O after the plus sign."
+      },
       "shows": "question"
      }
     ],
-    "chemistry": [],
+    "chemistry": [
+     {
+      "label": "",
+      "name": "1-[3-(3-acetylphenyl)cyclohexyl]ethan-1-one",
+      "smiles": "CC(=O)c1cccc(C2CCCC(C(C)=O)C2)c1",
+      "formula": "C16H20O2",
+      "inchikey": "BJBARUWCSLEAAI-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q068_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_question_s1_b0bcb60f_14112026.svg",
+       "sha256": "b0bcb60f44038a48c32dd50df585a51d9ad3203251bba8e1102c0fb76ac6726b",
+       "type": "image/svg+xml"
+      }
+     },
+     {
+      "label": "",
+      "name": "water",
+      "smiles": "O",
+      "formula": "H2O",
+      "inchikey": "XLYOFNOQVPJJNP-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q068_question_s2.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_question_s2_795507b0_14112026.svg",
+       "sha256": "795507b0c3554722a75eed2e7e7834bbea011559b7a900a4d6dc2b53fef74f44",
+       "type": "image/svg+xml"
+      }
+     }
+    ],
     "options": [
      {
       "key": "1",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "(3-(3-(hydroxymethyl)phenyl)cyclohexyl)methanol",
+        "smiles": "OCc1cccc(C2CCCC(CO)C2)c1",
+        "formula": "C14H20O2",
+        "inchikey": "OMGMOMBYVZYIGV-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q068_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_1_s1_2c5d719a_14112026.svg",
+         "sha256": "2c5d719a19e238fab33a15acfe0bbb9a1879c79292c1eb4c292d60969d3c91ee",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "(3-(3-(hydroxymethyl)phenyl)cyclohexyl)methanol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q068_option_1.png",
@@ -13485,17 +14771,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q068_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_1_21d3cc8e_14112026.svg",
+         "sha256": "21d3cc8e00004cf51c60223b440a91608e2627c95270a53e64f76909801a67f1",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "(3-(3-(hydroxymethyl)phenyl)cyclohexyl)methanol",
+          "smiles": "OCc1cccc(C2CCCC(CO)C2)c1",
+          "formula": "C14H20O2",
+          "inchikey": "OMGMOMBYVZYIGV-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q068_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_1_s1_2c5d719a_14112026.svg",
+           "sha256": "2c5d719a19e238fab33a15acfe0bbb9a1879c79292c1eb4c292d60969d3c91ee",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "OCC1CCCC(C1)c1cccc(CO)c1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Both CH2OH groups printed as condensed text; on the cyclohexane the OH is drawn above the CH2 with a vertical bond."
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "1-methyl-3-(3-methylcyclohexyl)benzene",
+        "smiles": "Cc1cccc(C2CCCC(C)C2)c1",
+        "formula": "C14H20",
+        "inchikey": "JPRNBFRPHPRPEV-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q068_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_2_s1_1c1a93da_14112026.svg",
+         "sha256": "1c1a93da0fd16d78cfbad054aa21b492b170594f09ee0679a8a5a6626d2cc583",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "1-methyl-3-(3-methylcyclohexyl)benzene",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q068_option_2.png",
@@ -13505,17 +14857,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q068_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_2_007285a9_14112026.svg",
+         "sha256": "007285a912b64f1eb161731cb46d9bfc66f76165d5dc0914622f6c2270d80704",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "1-methyl-3-(3-methylcyclohexyl)benzene",
+          "smiles": "Cc1cccc(C2CCCC(C)C2)c1",
+          "formula": "C14H20",
+          "inchikey": "JPRNBFRPHPRPEV-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q068_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_2_s1_1c1a93da_14112026.svg",
+           "sha256": "1c1a93da0fd16d78cfbad054aa21b492b170594f09ee0679a8a5a6626d2cc583",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC1CCCC(C1)c1cccc(C)c1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      },
      {
       "key": "3",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "1-ethyl-3-(3-ethylcyclohexyl)benzene",
+        "smiles": "CCc1cccc(C2CCCC(CC)C2)c1",
+        "formula": "C16H24",
+        "inchikey": "VCJIADXUPQREQU-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q068_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_3_s1_04d2848e_14112026.svg",
+         "sha256": "04d2848ee871440175001aea9728e8a4e2d849cef0767f5084b4d98cfe8fca4a",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "1-ethyl-3-(3-ethylcyclohexyl)benzene",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q068_option_3.png",
@@ -13525,17 +14943,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q068_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_3_61aa7034_14112026.svg",
+         "sha256": "61aa7034e69eb755cd69fbf3310a512237d2c90fb618d2df6502d6cbba374fc1",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "1-ethyl-3-(3-ethylcyclohexyl)benzene",
+          "smiles": "CCc1cccc(C2CCCC(CC)C2)c1",
+          "formula": "C16H24",
+          "inchikey": "VCJIADXUPQREQU-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q068_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_3_s1_04d2848e_14112026.svg",
+           "sha256": "04d2848ee871440175001aea9728e8a4e2d849cef0767f5084b4d98cfe8fca4a",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CCC1CCCC(C1)c1cccc(CC)c1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Ethyl groups drawn as skeletal lines."
+       },
        "shows": "option"
       }
      },
      {
       "key": "4",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "1-(3-(3-(1-hydroxyethyl)phenyl)cyclohexyl)ethan-1-ol",
+        "smiles": "CC(O)c1cccc(C2CCCC(C(C)O)C2)c1",
+        "formula": "C16H24O2",
+        "inchikey": "BKXJJQDBMHKQNY-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q068_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_4_s1_c64f9ecf_14112026.svg",
+         "sha256": "c64f9ecf1ada3a7adc680fff93ceab366b07c00f7dd374c5f118d771b17fce55",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "1-{3-[3-(1-hydroxyethyl)phenyl]cyclohexyl}ethan-1-ol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q068_option_4.png",
@@ -13545,7 +15029,57 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q068_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_4_80a7c7e7_14112026.svg",
+         "sha256": "80a7c7e706be739fc814c547577d1e05be8e0e6aa246529f4af9f78c0defb925",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "1-(3-(3-(1-hydroxyethyl)phenyl)cyclohexyl)ethan-1-ol",
+          "smiles": "CC(O)c1cccc(C2CCCC(C(C)O)C2)c1",
+          "formula": "C16H24O2",
+          "inchikey": "BKXJJQDBMHKQNY-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q068_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q068_option_4_s1_c64f9ecf_14112026.svg",
+           "sha256": "c64f9ecf1ada3a7adc680fff93ceab366b07c00f7dd374c5f118d771b17fce55",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC(O)C1CCCC(C1)c1cccc(C(C)O)c1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Flat drawing, no stereochemistry shown."
+       },
        "shows": "option"
       }
      }
@@ -15369,7 +16903,7 @@
    "qno": 80,
    "flags": [],
    "question": {
-    "full_text": "Which amongst the following options are correct graphical representation of Boyle’s law?\n(1) [graph]\n(2) [graph]\n(3) [graph]\n(4) [graph]",
+    "full_text": "Which amongst the following options are correct graphical representation of Boyle’s law?\n(1) [Figure: graph of P (y-axis) against 1/V (x-axis) showing three curves falling towards the right, labelled T₁ (lowest), T₂, T₃ (highest), with T₃ > T₂ > T₁] [graph]\n(2) [Figure: graph of P (y-axis) against T (x-axis) showing three straight lines from the origin, labelled V₁ (steepest), V₂, V₃ (least steep), with V₁ < V₂ < V₃] [graph]\n(3) [Figure: graph of P (y-axis) against V (x-axis) showing three hyperbolic curves, labelled T₁ (top), T₂ (middle), T₃ (bottom), with T₃ > T₂ > T₁] [graph]\n(4) [Figure: graph of P (y-axis) against 1/V (x-axis) showing three straight lines from the origin, labelled T₃ (steepest), T₂, T₁ (least steep), with T₃ > T₂ > T₁] [graph]",
     "html": "<div class=\"q-stem\">Which amongst the following options are correct graphical representation of Boyle’s law?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_1_18501f11_04112026.png?v=18501f1165b7\" alt=\"option 1\" loading=\"lazy\"> [graph]</li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_2_bf04ac54_04112026.png?v=bf04ac540f5d\" alt=\"option 2\" loading=\"lazy\"> [graph]</li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_3_b7d4de04_04112026.png?v=b7d4de04238b\" alt=\"option 3\" loading=\"lazy\"> [graph]</li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q080_option_4_fbfea634_04112026.png?v=fbfea6348773\" alt=\"option 4\" loading=\"lazy\"> [graph]</li></ol>",
     "stem": "Which amongst the following options are correct graphical representation of Boyle’s law?",
     "format": "plain",
@@ -15385,7 +16919,7 @@
       "chemistry": [],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "graph of P (y-axis) against 1/V (x-axis) showing three curves falling towards the right, labelled T₁ (lowest), T₂, T₃ (highest), with T₃ > T₂ > T₁",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q080_option_1.png",
@@ -15395,7 +16929,28 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_a_structure",
+        "checks": {
+         "smiles_parse": "n/a",
+         "name_check": "n/a",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_a_structure"
+        },
+        "image": null,
+        "message": null,
+        "kind": "not_a_structure",
+        "reaction_smiles": null,
+        "species": [],
+        "scheme": null,
+        "draw_hints": [],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Graph, not a chemical structure. Curves are hyperbola-like (decreasing, concave up) on P vs 1/V axes; labels T3 top, T2 middle, T1 bottom; printed relation T3 > T2 > T1. A partial ')' of the option number is visible at the left edge of the crop."
+       },
        "shows": "option"
       }
      },
@@ -15405,7 +16960,7 @@
       "chemistry": [],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "graph of P (y-axis) against T (x-axis) showing three straight lines from the origin, labelled V₁ (steepest), V₂, V₃ (least steep), with V₁ < V₂ < V₃",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q080_option_2.png",
@@ -15415,7 +16970,28 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_a_structure",
+        "checks": {
+         "smiles_parse": "n/a",
+         "name_check": "n/a",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_a_structure"
+        },
+        "image": null,
+        "message": null,
+        "kind": "not_a_structure",
+        "reaction_smiles": null,
+        "species": [],
+        "scheme": null,
+        "draw_hints": [],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Graph, not a chemical structure. Straight lines through the origin on P vs T axes (isochores); printed relation V1 < V2 < V3. A partial ')' of the option number is visible at the left edge of the crop."
+       },
        "shows": "option"
       }
      },
@@ -15425,7 +17001,7 @@
       "chemistry": [],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "graph of P (y-axis) against V (x-axis) showing three hyperbolic curves, labelled T₁ (top), T₂ (middle), T₃ (bottom), with T₃ > T₂ > T₁",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q080_option_3.png",
@@ -15435,7 +17011,28 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_a_structure",
+        "checks": {
+         "smiles_parse": "n/a",
+         "name_check": "n/a",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_a_structure"
+        },
+        "image": null,
+        "message": null,
+        "kind": "not_a_structure",
+        "reaction_smiles": null,
+        "species": [],
+        "scheme": null,
+        "draw_hints": [],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Graph, not a chemical structure. Isotherm curves on P vs V axes; top curve labelled T1, bottom labelled T3; printed relation T3 > T2 > T1. A partial ')' of the option number is visible at the left edge of the crop."
+       },
        "shows": "option"
       }
      },
@@ -15445,7 +17042,7 @@
       "chemistry": [],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "graph of P (y-axis) against 1/V (x-axis) showing three straight lines from the origin, labelled T₃ (steepest), T₂, T₁ (least steep), with T₃ > T₂ > T₁",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q080_option_4.png",
@@ -15455,7 +17052,28 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": null,
+        "status": "not_a_structure",
+        "checks": {
+         "smiles_parse": "n/a",
+         "name_check": "n/a",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "not_a_structure"
+        },
+        "image": null,
+        "message": null,
+        "kind": "not_a_structure",
+        "reaction_smiles": null,
+        "species": [],
+        "scheme": null,
+        "draw_hints": [],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Graph, not a chemical structure. Straight lines through the origin on P vs 1/V axes; printed relation T3 > T2 > T1. A partial ')' of the option number is visible at the left edge of the crop."
+       },
        "shows": "option"
       }
      }
@@ -16830,8 +18448,8 @@
    "qno": 89,
    "flags": [],
    "question": {
-    "full_text": "Identify the major product obtained in the following reaction: [figure] $+\\,2\\left[\\mathrm{Ag(NH_3)_2}\\right]^{+}\\,+\\,3\\,{}^{-}\\mathrm{OH}\\xrightarrow{\\Delta}$ major product\n(1) \n(2) \n(3) \n(4) ",
-    "html": "<div class=\"q-stem\">Identify the major product obtained in the following reaction: [figure] <span class=\"math\">+&thinsp;2[<span class=\"up\">Ag(NH<sub>3</sub>)<sub>2</sub></span>]<sup>+</sup>&thinsp;+&thinsp;3&thinsp;<sup>-</sup><span class=\"up\">OH</span><span class=\"xarr xa-right\"><span class=\"xa-t\">Δ</span><span class=\"xa-l\"></span><span class=\"xa-b\">&nbsp;</span></span></span> major product</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_4f60714d_04112026.png?v=4f60714df2fa\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_option_1_054f26d9_04112026.png?v=054f26d9f1f5\" alt=\"option 1\" loading=\"lazy\"></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_option_2_3cf3e09c_04112026.png?v=3cf3e09c4b28\" alt=\"option 2\" loading=\"lazy\"></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_option_3_241dbf73_04112026.png?v=241dbf7306d6\" alt=\"option 3\" loading=\"lazy\"></li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_option_4_feb66f92_04112026.png?v=feb66f9258fd\" alt=\"option 4\" loading=\"lazy\"></li></ol>",
+    "full_text": "Identify the major product obtained in the following reaction: [figure] $+\\,2\\left[\\mathrm{Ag(NH_3)_2}\\right]^{+}\\,+\\,3\\,{}^{-}\\mathrm{OH}\\xrightarrow{\\Delta}$ major product\n[Figure: 2-acetylbenzaldehyde + 2$\\ce{[Ag(NH3)2]+}$ +]\n[Structures: 2-acetylbenzaldehyde [SMILES: CC(=O)c1ccccc1C=O]; diamminesilver(I) [SMILES: [NH3]->[Ag+]<-[NH3]]]\n(1) 2-acetylbenzoate [SMILES: CC(=O)c1ccccc1C(=O)[O-]]\n(2) 2-(1-hydroxyethyl)benzoate [SMILES: CC(O)c1ccccc1C(=O)[O-]]\n(3) 1-[2-(hydroxymethyl)phenyl]ethanol [SMILES: CC(O)c1ccccc1CO]\n(4) 1-[2-(hydroxymethyl)phenyl]ethanone [SMILES: CC(=O)c1ccccc1CO]",
+    "html": "<div class=\"q-stem\">Identify the major product obtained in the following reaction: [figure] <span class=\"math\">+&thinsp;2[<span class=\"up\">Ag(NH<sub>3</sub>)<sub>2</sub></span>]<sup>+</sup>&thinsp;+&thinsp;3&thinsp;<sup>-</sup><span class=\"up\">OH</span><span class=\"xarr xa-right\"><span class=\"xa-t\">Δ</span><span class=\"xa-l\"></span><span class=\"xa-b\">&nbsp;</span></span></span> major product</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q089_4f60714d_04112026.png?v=4f60714df2fa\" alt=\"2-acetylbenzaldehyde + 2$\\ce{[Ag(NH3)2]+}$ +\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_1_s1_b2b6129c_14112026.svg?v=b2b6129c94a6\" alt=\"2-acetylbenzoate\"><span class=\"name\">2-acetylbenzoate</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_2_s1_ad108def_14112026.svg?v=ad108def0c1a\" alt=\"2-(1-hydroxyethyl)benzoate\"><span class=\"name\">2-(1-hydroxyethyl)benzoate</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_3_s1_94ca89a2_14112026.svg?v=94ca89a2ada8\" alt=\"1-[2-(hydroxymethyl)phenyl]ethanol\"><span class=\"name\">1-[2-(hydroxymethyl)phenyl]ethanol</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_4_s1_7d7073d0_14112026.svg?v=7d7073d0e417\" alt=\"1-[2-(hydroxymethyl)phenyl]ethanone\"><span class=\"name\">1-[2-(hydroxymethyl)phenyl]ethanone</span></span></li></ol>",
     "stem": "Identify the major product obtained in the following reaction: [figure] $+\\,2\\left[\\mathrm{Ag(NH_3)_2}\\right]^{+}\\,+\\,3\\,{}^{-}\\mathrm{OH}\\xrightarrow{\\Delta}$ major product",
     "format": "plain",
     "statements": [],
@@ -16840,7 +18458,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "2-acetylbenzaldehyde + 2$\\ce{[Ag(NH3)2]+}$ +",
       "printed": {
        "png": {
         "path": "figures_agent/2023_H1/q089.png",
@@ -16850,19 +18468,140 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": "rdkit",
+       "status": "drawn",
+       "checks": {
+        "smiles_parse": "pass",
+        "name_check": "2 not_run",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "pass"
+       },
+       "image": {
+        "path": "figures_drawn/2023_H1/q089_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_question_b9e1ddd9_14112026.svg",
+        "sha256": "b9e1ddd9c85ead41aaaa1cc8539f8107421dff301620469d3946241afeeaa857",
+        "type": "image/svg+xml"
+       },
+       "message": null,
+       "kind": "structures",
+       "reaction_smiles": null,
+       "species": [
+        {
+         "label": "",
+         "name": "2-acetylbenzaldehyde",
+         "smiles": "CC(=O)c1ccccc1C=O",
+         "formula": "C9H8O2",
+         "inchikey": "VDEAMZDXUCYOQJ-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q089_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_question_s1_a0144de1_14112026.svg",
+          "sha256": "a0144de11df3e22353990cd53b82e2d33f63500279af3e111a8953f959a840ba",
+          "type": "image/svg+xml"
+         }
+        },
+        {
+         "label": "",
+         "name": "diamminesilver(I)",
+         "smiles": "[NH3]->[Ag+]<-[NH3]",
+         "formula": "H6AgN2+",
+         "inchikey": "",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q089_question_s2.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_question_s2_919f617f_14112026.svg",
+          "sha256": "919f617f4899fcbfc9c5b6e7249d8a690ba8b01dbf13112771a3a7845a9784b4",
+          "type": "image/svg+xml"
+         }
+        }
+       ],
+       "scheme": null,
+       "draw_hints": [
+        {
+         "smiles": "CC(=O)c1ccccc1[CH:1]=O",
+         "orient": null,
+         "explicit_h": [
+          1
+         ],
+         "annotations": null,
+         "abbreviate": true
+        },
+        {
+         "smiles": "[NH3]->[Ag+]<-[NH3]",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        }
+       ],
+       "excluded_text": [],
+       "confidence": "certain",
+       "note": "Aldehyde H drawn explicitly on the CHO carbon. The reagent 2[Ag(NH3)2]+ is printed as a formula after the structure, followed by a trailing '+'; the rest of the equation (3 OH-, arrow with delta, major product) is in the question text, outside the crop. No arrow in this crop."
+      },
       "shows": "question"
      }
     ],
-    "chemistry": [],
+    "chemistry": [
+     {
+      "label": "",
+      "name": "2-acetylbenzaldehyde",
+      "smiles": "CC(=O)c1ccccc1C=O",
+      "formula": "C9H8O2",
+      "inchikey": "VDEAMZDXUCYOQJ-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q089_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_question_s1_a0144de1_14112026.svg",
+       "sha256": "a0144de11df3e22353990cd53b82e2d33f63500279af3e111a8953f959a840ba",
+       "type": "image/svg+xml"
+      }
+     },
+     {
+      "label": "",
+      "name": "diamminesilver(I)",
+      "smiles": "[NH3]->[Ag+]<-[NH3]",
+      "formula": "H6AgN2+",
+      "inchikey": "",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q089_question_s2.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_question_s2_919f617f_14112026.svg",
+       "sha256": "919f617f4899fcbfc9c5b6e7249d8a690ba8b01dbf13112771a3a7845a9784b4",
+       "type": "image/svg+xml"
+      }
+     }
+    ],
     "options": [
      {
       "key": "1",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "2-acetylbenzoate",
+        "smiles": "CC(=O)c1ccccc1C(=O)[O-]",
+        "formula": "C9H7O3-",
+        "inchikey": "QDAWXRKTSATEOP-UHFFFAOYSA-M",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q089_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_1_s1_b2b6129c_14112026.svg",
+         "sha256": "b2b6129c94a610ba2998a4bc01eae430911fac52686233be61dae592ab640d80",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "2-acetylbenzoate",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q089_option_1.png",
@@ -16872,17 +18611,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q089_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_1_0e1ba57e_14112026.svg",
+         "sha256": "0e1ba57e437ebe624f7d26eec3adce2aa7ca9f8fc31dcda53166b3232a794baf",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "2-acetylbenzoate",
+          "smiles": "CC(=O)c1ccccc1C(=O)[O-]",
+          "formula": "C9H7O3-",
+          "inchikey": "QDAWXRKTSATEOP-UHFFFAOYSA-M",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q089_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_1_s1_b2b6129c_14112026.svg",
+           "sha256": "b2b6129c94a610ba2998a4bc01eae430911fac52686233be61dae592ab640d80",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC(=O)c1ccccc1C(=O)[O-]",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "COO- printed condensed."
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "2-(1-hydroxyethyl)benzoate",
+        "smiles": "CC(O)c1ccccc1C(=O)[O-]",
+        "formula": "C9H9O3-",
+        "inchikey": "GPBOXVCIWMHAJH-UHFFFAOYSA-M",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q089_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_2_s1_ad108def_14112026.svg",
+         "sha256": "ad108def0c1a4aaadd793f8601831a7e5c89216957a3b4513f9ad4677d4abe6f",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "2-(1-hydroxyethyl)benzoate",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q089_option_2.png",
@@ -16892,17 +18697,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q089_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_2_41dfdbdf_14112026.svg",
+         "sha256": "41dfdbdf2971ed79964f543ae4abe15ae69052979c9c8cb003159f1a2ee72f3c",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "2-(1-hydroxyethyl)benzoate",
+          "smiles": "CC(O)c1ccccc1C(=O)[O-]",
+          "formula": "C9H9O3-",
+          "inchikey": "GPBOXVCIWMHAJH-UHFFFAOYSA-M",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q089_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_2_s1_ad108def_14112026.svg",
+           "sha256": "ad108def0c1a4aaadd793f8601831a7e5c89216957a3b4513f9ad4677d4abe6f",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC(O)c1ccccc1C(=O)[O-]",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "probable",
+        "note": "A small speck appears beside the OH label; read as a scan artefact, not a charge. COO- printed condensed. Flat drawing, no stereochemistry."
+       },
        "shows": "option"
       }
      },
      {
       "key": "3",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "1-[2-(hydroxymethyl)phenyl]ethanol",
+        "smiles": "CC(O)c1ccccc1CO",
+        "formula": "C9H12O2",
+        "inchikey": "XVKYPJPUAOOGBQ-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q089_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_3_s1_94ca89a2_14112026.svg",
+         "sha256": "94ca89a2ada89d814df5f262e0b8b5b12109105ada1cf028fd00d2e5e95e8bd1",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "1-[2-(hydroxymethyl)phenyl]ethanol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q089_option_3.png",
@@ -16912,17 +18783,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q089_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_3_ba1a6e47_14112026.svg",
+         "sha256": "ba1a6e47b8c81eca14ceb150a247a4d30e01491c8c18868925f8810bb676d153",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "1-[2-(hydroxymethyl)phenyl]ethanol",
+          "smiles": "CC(O)c1ccccc1CO",
+          "formula": "C9H12O2",
+          "inchikey": "XVKYPJPUAOOGBQ-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q089_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_3_s1_94ca89a2_14112026.svg",
+           "sha256": "94ca89a2ada89d814df5f262e0b8b5b12109105ada1cf028fd00d2e5e95e8bd1",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC(O)c1ccccc1CO",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Flat drawing, no stereochemistry."
+       },
        "shows": "option"
       }
      },
      {
       "key": "4",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "1-[2-(hydroxymethyl)phenyl]ethanone",
+        "smiles": "CC(=O)c1ccccc1CO",
+        "formula": "C9H10O2",
+        "inchikey": "MHLDWFDANJFARL-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q089_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_4_s1_7d7073d0_14112026.svg",
+         "sha256": "7d7073d0e41772d4f6a3bcd0422a03e4b592a60c45a3f81d933d4c688aac92c0",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "1-[2-(hydroxymethyl)phenyl]ethanone",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q089_option_4.png",
@@ -16932,7 +18869,57 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q089_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_4_37591dc4_14112026.svg",
+         "sha256": "37591dc4453cba1c41b18086b11e7fd1e989013751ffdce84cb1e9f42dc75be3",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "1-[2-(hydroxymethyl)phenyl]ethanone",
+          "smiles": "CC(=O)c1ccccc1CO",
+          "formula": "C9H10O2",
+          "inchikey": "MHLDWFDANJFARL-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q089_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q089_option_4_s1_7d7073d0_14112026.svg",
+           "sha256": "7d7073d0e41772d4f6a3bcd0422a03e4b592a60c45a3f81d933d4c688aac92c0",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC(=O)c1ccccc1CO",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      }
@@ -17049,8 +19036,8 @@
    "qno": 90,
    "flags": [],
    "question": {
-    "full_text": "Consider the following compounds/species:\n[Figure: structures i–vii]\nThe number of compounds/species which obey Huckel’s rule is ______.\n(1) $2$\n(2) $5$\n(3) $4$\n(4) $6$",
-    "html": "<div class=\"q-stem\">Consider the following compounds/species:<br>[Figure: structures i–vii]<br>The number of compounds/species which obey Huckel’s rule is ______.</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q090_29faaee2_04112026.png?v=29faaee2cdb2\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"math\">2</span></li><li><span class=\"key\">(2)</span><span class=\"math\">5</span></li><li><span class=\"key\">(3)</span><span class=\"math\">4</span></li><li><span class=\"key\">(4)</span><span class=\"math\">6</span></li></ol>",
+    "full_text": "Consider the following compounds/species:\n[Figure: structures i–vii]\nThe number of compounds/species which obey Huckel’s rule is ______.\n[Figure: i. naphthalene; ii. cyclopentadienyl anion; iii. cyclobutadiene; iv. cyclopropenyl anion; v. cyclopropenyl cation; vi. cyclooctatetraene; vii. anthracene]\n[Structures: naphthalene [SMILES: c1ccc2ccccc2c1]; cyclopenta-2,4-dien-1-ide [SMILES: c1cc[cH-]c1]; cyclobuta-1,3-diene [SMILES: C1=CC=C1]; cycloprop-2-en-1-ide [SMILES: C1=C[CH-]1]; cycloprop-2-en-1-ylium [SMILES: c1c[cH+]1]; cycloocta-1,3,5,7-tetraene [SMILES: C1=CC=CC=CC=C1]; anthracene [SMILES: c1ccc2cc3ccccc3cc2c1]]\n(1) $2$\n(2) $5$\n(3) $4$\n(4) $6$",
+    "html": "<div class=\"q-stem\">Consider the following compounds/species:<br>[Figure: structures i–vii]<br>The number of compounds/species which obey Huckel’s rule is ______.</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q090_29faaee2_04112026.png?v=29faaee2cdb2\" alt=\"i. naphthalene; ii. cyclopentadienyl anion; iii. cyclobutadiene; iv. cyclopropenyl anion; v. cyclopropenyl cation; vi. cyclooctatetraene; vii. anthracene\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"math\">2</span></li><li><span class=\"key\">(2)</span><span class=\"math\">5</span></li><li><span class=\"key\">(3)</span><span class=\"math\">4</span></li><li><span class=\"key\">(4)</span><span class=\"math\">6</span></li></ol>",
     "stem": "Consider the following compounds/species:\n[Figure: structures i–vii]\nThe number of compounds/species which obey Huckel’s rule is ______.",
     "format": "plain",
     "statements": [],
@@ -17059,7 +19046,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "i. naphthalene; ii. cyclopentadienyl anion; iii. cyclobutadiene; iv. cyclopropenyl anion; v. cyclopropenyl cation; vi. cyclooctatetraene; vii. anthracene",
       "printed": {
        "png": {
         "path": "figures_agent/2023_H1/q090.png",
@@ -17069,11 +19056,299 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": "rdkit",
+       "status": "drawn",
+       "checks": {
+        "smiles_parse": "pass",
+        "name_check": "7 not_run",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "pass"
+       },
+       "image": {
+        "path": "figures_drawn/2023_H1/q090_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_c3eeaa6a_14112026.svg",
+        "sha256": "c3eeaa6ab7cc2f7cbcb758b6218bccccc1cdda7459462f34fc900ee354fa843a",
+        "type": "image/svg+xml"
+       },
+       "message": null,
+       "kind": "structures",
+       "reaction_smiles": null,
+       "species": [
+        {
+         "label": "i.",
+         "name": "naphthalene",
+         "smiles": "c1ccc2ccccc2c1",
+         "formula": "C10H8",
+         "inchikey": "UFWIBTONFRDIAS-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q090_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s1_1c4ddda0_14112026.svg",
+          "sha256": "1c4ddda09622a5f8fee06690cbfe92cc3c29483f6b69ef112966c8b75ec4803a",
+          "type": "image/svg+xml"
+         }
+        },
+        {
+         "label": "ii.",
+         "name": "cyclopenta-2,4-dien-1-ide",
+         "smiles": "c1cc[cH-]c1",
+         "formula": "C5H5-",
+         "inchikey": "SINKOGOPEQSHQD-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q090_question_s2.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s2_8e072b02_14112026.svg",
+          "sha256": "8e072b023b03797f25e4fed623ae7f5f6be8a3d35bd8fae4d243925d5d766f7a",
+          "type": "image/svg+xml"
+         }
+        },
+        {
+         "label": "iii.",
+         "name": "cyclobuta-1,3-diene",
+         "smiles": "C1=CC=C1",
+         "formula": "C4H4",
+         "inchikey": "HWEQKSVYKBUIIK-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q090_question_s3.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s3_68eaa57e_14112026.svg",
+          "sha256": "68eaa57ee7c459669bc3a54e560da3f818f42f6e0392ef64592476fdabf546df",
+          "type": "image/svg+xml"
+         }
+        },
+        {
+         "label": "iv.",
+         "name": "cycloprop-2-en-1-ide",
+         "smiles": "C1=C[CH-]1",
+         "formula": "C3H3-",
+         "inchikey": "IBTMQWIWZUYLHW-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q090_question_s4.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s4_4f2e6856_14112026.svg",
+          "sha256": "4f2e68568a3d2aa0fc972883c660a2f9cb2967258e33f4deab2b61b78749b6d5",
+          "type": "image/svg+xml"
+         }
+        },
+        {
+         "label": "v.",
+         "name": "cycloprop-2-en-1-ylium",
+         "smiles": "c1c[cH+]1",
+         "formula": "C3H3+",
+         "inchikey": "IPKCFGQXHZKYLH-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q090_question_s5.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s5_2a7002fa_14112026.svg",
+          "sha256": "2a7002fa2056e3c13f3281b865bb84fecc194f87d357844ef848ebea111c33ac",
+          "type": "image/svg+xml"
+         }
+        },
+        {
+         "label": "vi.",
+         "name": "cycloocta-1,3,5,7-tetraene",
+         "smiles": "C1=CC=CC=CC=C1",
+         "formula": "C8H8",
+         "inchikey": "KDUIUFJBNGTBMD-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q090_question_s6.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s6_05a705c0_14112026.svg",
+          "sha256": "05a705c03822af42c5044ea57662addccbf0da9793d52f54339558caed1caef6",
+          "type": "image/svg+xml"
+         }
+        },
+        {
+         "label": "vii.",
+         "name": "anthracene",
+         "smiles": "c1ccc2cc3ccccc3cc2c1",
+         "formula": "C14H10",
+         "inchikey": "MWPLVEDNUUSJAV-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q090_question_s7.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s7_d63f99db_14112026.svg",
+          "sha256": "d63f99db8ebd6e8509739e3356379d7a5a3bdfc930986a2917d7d7cd9b38e5dd",
+          "type": "image/svg+xml"
+         }
+        }
+       ],
+       "scheme": null,
+       "draw_hints": [
+        {
+         "smiles": "C1=CC=C2C=CC=CC2=C1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        },
+        {
+         "smiles": "[CH-]1C=CC=C1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        },
+        {
+         "smiles": "C1=CC=C1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        },
+        {
+         "smiles": "[CH-]1C=C1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        },
+        {
+         "smiles": "[CH+]1C=C1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        },
+        {
+         "smiles": "C1=CC=CC=CC=C1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        },
+        {
+         "smiles": "C1=CC=C2C=C3C=CC=CC3=CC2=C1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        }
+       ],
+       "excluded_text": [],
+       "confidence": "certain",
+       "note": "Seven separate structures labelled i.-vii., drawn in Kekule form. ii. and iv. carry a lone pair and a negative charge on the sp3 carbon; v. carries a positive charge on the apex carbon. Printed labels i.-vii. are used as species labels."
+      },
       "shows": "question"
      }
     ],
-    "chemistry": [],
+    "chemistry": [
+     {
+      "label": "i.",
+      "name": "naphthalene",
+      "smiles": "c1ccc2ccccc2c1",
+      "formula": "C10H8",
+      "inchikey": "UFWIBTONFRDIAS-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q090_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s1_1c4ddda0_14112026.svg",
+       "sha256": "1c4ddda09622a5f8fee06690cbfe92cc3c29483f6b69ef112966c8b75ec4803a",
+       "type": "image/svg+xml"
+      }
+     },
+     {
+      "label": "ii.",
+      "name": "cyclopenta-2,4-dien-1-ide",
+      "smiles": "c1cc[cH-]c1",
+      "formula": "C5H5-",
+      "inchikey": "SINKOGOPEQSHQD-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q090_question_s2.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s2_8e072b02_14112026.svg",
+       "sha256": "8e072b023b03797f25e4fed623ae7f5f6be8a3d35bd8fae4d243925d5d766f7a",
+       "type": "image/svg+xml"
+      }
+     },
+     {
+      "label": "iii.",
+      "name": "cyclobuta-1,3-diene",
+      "smiles": "C1=CC=C1",
+      "formula": "C4H4",
+      "inchikey": "HWEQKSVYKBUIIK-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q090_question_s3.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s3_68eaa57e_14112026.svg",
+       "sha256": "68eaa57ee7c459669bc3a54e560da3f818f42f6e0392ef64592476fdabf546df",
+       "type": "image/svg+xml"
+      }
+     },
+     {
+      "label": "iv.",
+      "name": "cycloprop-2-en-1-ide",
+      "smiles": "C1=C[CH-]1",
+      "formula": "C3H3-",
+      "inchikey": "IBTMQWIWZUYLHW-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q090_question_s4.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s4_4f2e6856_14112026.svg",
+       "sha256": "4f2e68568a3d2aa0fc972883c660a2f9cb2967258e33f4deab2b61b78749b6d5",
+       "type": "image/svg+xml"
+      }
+     },
+     {
+      "label": "v.",
+      "name": "cycloprop-2-en-1-ylium",
+      "smiles": "c1c[cH+]1",
+      "formula": "C3H3+",
+      "inchikey": "IPKCFGQXHZKYLH-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q090_question_s5.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s5_2a7002fa_14112026.svg",
+       "sha256": "2a7002fa2056e3c13f3281b865bb84fecc194f87d357844ef848ebea111c33ac",
+       "type": "image/svg+xml"
+      }
+     },
+     {
+      "label": "vi.",
+      "name": "cycloocta-1,3,5,7-tetraene",
+      "smiles": "C1=CC=CC=CC=C1",
+      "formula": "C8H8",
+      "inchikey": "KDUIUFJBNGTBMD-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q090_question_s6.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s6_05a705c0_14112026.svg",
+       "sha256": "05a705c03822af42c5044ea57662addccbf0da9793d52f54339558caed1caef6",
+       "type": "image/svg+xml"
+      }
+     },
+     {
+      "label": "vii.",
+      "name": "anthracene",
+      "smiles": "c1ccc2cc3ccccc3cc2c1",
+      "formula": "C14H10",
+      "inchikey": "MWPLVEDNUUSJAV-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q090_question_s7.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q090_question_s7_d63f99db_14112026.svg",
+       "sha256": "d63f99db8ebd6e8509739e3356379d7a5a3bdfc930986a2917d7d7cd9b38e5dd",
+       "type": "image/svg+xml"
+      }
+     }
+    ],
     "options": [
      {
       "key": "1",
@@ -18106,8 +20381,8 @@
    "qno": 97,
    "flags": [],
    "question": {
-    "full_text": "Consider the following reaction : $\\mathrm{C_6H_5{-}CH_2{-}O{-}C_6H_5} \\xrightarrow[\\Delta]{\\mathrm{HI}} \\mathrm{A + B}$ Identify products A and B.\n(1) A = $\\mathrm{C_6H_5{-}CH_2I}$ and B = $\\mathrm{C_6H_5{-}OH}$\n(2) A = $\\mathrm{C_6H_5{-}CH_3}$ and B = $\\mathrm{C_6H_5{-}I}$\n(3) A = $\\mathrm{C_6H_5{-}CH_3}$ and B = $\\mathrm{C_6H_5{-}OH}$\n(4) A = $\\mathrm{C_6H_5{-}CH_2OH}$ and B = $\\mathrm{C_6H_5{-}I}$",
-    "html": "<div class=\"q-stem\">Consider the following reaction : <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-CH<sub>2</sub>-O-C<sub>6</sub>H<sub>5</sub></span> <span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">HI</span></span><span class=\"xa-l\"></span><span class=\"xa-b\">Δ</span></span> <span class=\"up\">A + B</span></span> Identify products A and B.</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_d1e22c5b_04112026.png?v=d1e22c5b2bb0\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_option_1_a1e7cbd1_04112026.png?v=a1e7cbd18542\" alt=\"option 1\" loading=\"lazy\"> A = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-CH<sub>2</sub>I</span></span> and B = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-OH</span></span></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_option_2_1c375bd1_04112026.png?v=1c375bd19e51\" alt=\"option 2\" loading=\"lazy\"> A = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-CH<sub>3</sub></span></span> and B = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-I</span></span></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_option_3_97fbfd89_04112026.png?v=97fbfd890092\" alt=\"option 3\" loading=\"lazy\"> A = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-CH<sub>3</sub></span></span> and B = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-OH</span></span></li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_option_4_fe4ecffb_04112026.png?v=fe4ecffbc99c\" alt=\"option 4\" loading=\"lazy\"> A = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-CH<sub>2</sub>OH</span></span> and B = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-I</span></span></li></ol>",
+    "full_text": "Consider the following reaction : $\\mathrm{C_6H_5{-}CH_2{-}O{-}C_6H_5} \\xrightarrow[\\Delta]{\\mathrm{HI}} \\mathrm{A + B}$ Identify products A and B.\n[Figure: benzyl phenyl ether →[HI, Δ] A + B]\n[Structures: benzyl phenyl ether [SMILES: c1ccc(COc2ccccc2)cc1]]\n(1) benzyl iodide [SMILES: ICc1ccccc1]; phenol [SMILES: Oc1ccccc1] A = $\\mathrm{C_6H_5{-}CH_2I}$ and B = $\\mathrm{C_6H_5{-}OH}$\n(2) toluene [SMILES: Cc1ccccc1]; iodobenzene [SMILES: Ic1ccccc1] A = $\\mathrm{C_6H_5{-}CH_3}$ and B = $\\mathrm{C_6H_5{-}I}$\n(3) toluene [SMILES: Cc1ccccc1]; phenol [SMILES: Oc1ccccc1] A = $\\mathrm{C_6H_5{-}CH_3}$ and B = $\\mathrm{C_6H_5{-}OH}$\n(4) benzyl alcohol [SMILES: OCc1ccccc1]; iodobenzene [SMILES: Ic1ccccc1] A = $\\mathrm{C_6H_5{-}CH_2OH}$ and B = $\\mathrm{C_6H_5{-}I}$",
+    "html": "<div class=\"q-stem\">Consider the following reaction : <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-CH<sub>2</sub>-O-C<sub>6</sub>H<sub>5</sub></span> <span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">HI</span></span><span class=\"xa-l\"></span><span class=\"xa-b\">Δ</span></span> <span class=\"up\">A + B</span></span> Identify products A and B.</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q097_d1e22c5b_04112026.png?v=d1e22c5b2bb0\" alt=\"benzyl phenyl ether →[HI, Δ] A + B\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_1_s1_c8defd7a_14112026.svg?v=c8defd7a0f2d\" alt=\"benzyl iodide\"><span class=\"name\">benzyl iodide</span></span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_1_s2_26093786_14112026.svg?v=26093786dda8\" alt=\"phenol\"><span class=\"name\">phenol</span></span> A = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-CH<sub>2</sub>I</span></span> and B = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-OH</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_2_s1_b4bc3ebf_14112026.svg?v=b4bc3ebff656\" alt=\"toluene\"><span class=\"name\">toluene</span></span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_2_s2_1d87e391_14112026.svg?v=1d87e3910938\" alt=\"iodobenzene\"><span class=\"name\">iodobenzene</span></span> A = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-CH<sub>3</sub></span></span> and B = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-I</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_3_s1_b4bc3ebf_14112026.svg?v=b4bc3ebff656\" alt=\"toluene\"><span class=\"name\">toluene</span></span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_3_s2_26093786_14112026.svg?v=26093786dda8\" alt=\"phenol\"><span class=\"name\">phenol</span></span> A = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-CH<sub>3</sub></span></span> and B = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-OH</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_4_s1_76b1501e_14112026.svg?v=76b1501e4315\" alt=\"benzyl alcohol\"><span class=\"name\">benzyl alcohol</span></span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_4_s2_1d87e391_14112026.svg?v=1d87e3910938\" alt=\"iodobenzene\"><span class=\"name\">iodobenzene</span></span> A = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-CH<sub>2</sub>OH</span></span> and B = <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-I</span></span></li></ol>",
     "stem": "Consider the following reaction : $\\mathrm{C_6H_5{-}CH_2{-}O{-}C_6H_5} \\xrightarrow[\\Delta]{\\mathrm{HI}} \\mathrm{A + B}$ Identify products A and B.",
     "format": "plain",
     "statements": [],
@@ -18116,7 +20391,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "benzyl phenyl ether →[HI, Δ] A + B",
       "printed": {
        "png": {
         "path": "figures_agent/2023_H1/q097.png",
@@ -18126,19 +20401,137 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": "rdkit",
+       "status": "drawn",
+       "checks": {
+        "smiles_parse": "pass",
+        "name_check": "1 not_run",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "pass"
+       },
+       "image": {
+        "path": "figures_drawn/2023_H1/q097_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_question_31e1793b_14112026.svg",
+        "sha256": "31e1793b1d757ad81e90b2852797697d93e975ff20ac1bba26fd1d6a92d8bb02",
+        "type": "image/svg+xml"
+       },
+       "message": null,
+       "kind": "reaction",
+       "reaction_smiles": null,
+       "species": [
+        {
+         "label": "",
+         "name": "benzyl phenyl ether",
+         "smiles": "c1ccc(COc2ccccc2)cc1",
+         "formula": "C13H12O",
+         "inchikey": "BOTNYLSAWDQNEX-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q097_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_question_s1_ddf58708_14112026.svg",
+          "sha256": "ddf587088e3ef0b2671923089473f4c17db23580ec50df82a116b0b8782f4cc4",
+          "type": "image/svg+xml"
+         }
+        }
+       ],
+       "scheme": [
+        [
+         {
+          "species": 1
+         },
+         {
+          "arrow": {
+           "above": "HI",
+           "below": "Δ"
+          }
+         },
+         {
+          "text": "A"
+         },
+         {
+          "plus": true
+         },
+         {
+          "text": "B"
+         }
+        ]
+       ],
+       "draw_hints": [
+        {
+         "smiles": "c1ccc(cc1)COc1ccccc1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        }
+       ],
+       "excluded_text": [],
+       "confidence": "certain",
+       "note": "HI printed above the arrow, Δ below. Products are the unknown letters A and B, so no reaction_smiles is given."
+      },
       "shows": "question"
      }
     ],
-    "chemistry": [],
+    "chemistry": [
+     {
+      "label": "",
+      "name": "benzyl phenyl ether",
+      "smiles": "c1ccc(COc2ccccc2)cc1",
+      "formula": "C13H12O",
+      "inchikey": "BOTNYLSAWDQNEX-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q097_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_question_s1_ddf58708_14112026.svg",
+       "sha256": "ddf587088e3ef0b2671923089473f4c17db23580ec50df82a116b0b8782f4cc4",
+       "type": "image/svg+xml"
+      }
+     }
+    ],
     "options": [
      {
       "key": "1",
       "text": "A = $\\mathrm{C_6H_5{-}CH_2I}$ and B = $\\mathrm{C_6H_5{-}OH}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "A",
+        "name": "benzyl iodide",
+        "smiles": "ICc1ccccc1",
+        "formula": "C7H7I",
+        "inchikey": "XJTQJERLRPWUGL-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_1_s1_c8defd7a_14112026.svg",
+         "sha256": "c8defd7a0f2deb2200d993a9cfab2f1c72045d7d9ff92ee8b4b5997d7fd33769",
+         "type": "image/svg+xml"
+        }
+       },
+       {
+        "label": "B",
+        "name": "phenol",
+        "smiles": "Oc1ccccc1",
+        "formula": "C6H6O",
+        "inchikey": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_1_s2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_1_s2_26093786_14112026.svg",
+         "sha256": "26093786dda8862bfa93f4f6c8b45271efe038e95068365659b3dfd34f7a4cd7",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "A = benzyl iodide and B = phenol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q097_option_1.png",
@@ -18148,17 +20541,120 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "2 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_1_628941ec_14112026.svg",
+         "sha256": "628941ec4cac28b0ef9aafc2e2aad16c6ddc8d45759ec0db5eb928bc1e375bb6",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "A",
+          "name": "benzyl iodide",
+          "smiles": "ICc1ccccc1",
+          "formula": "C7H7I",
+          "inchikey": "XJTQJERLRPWUGL-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q097_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_1_s1_c8defd7a_14112026.svg",
+           "sha256": "c8defd7a0f2deb2200d993a9cfab2f1c72045d7d9ff92ee8b4b5997d7fd33769",
+           "type": "image/svg+xml"
+          }
+         },
+         {
+          "label": "B",
+          "name": "phenol",
+          "smiles": "Oc1ccccc1",
+          "formula": "C6H6O",
+          "inchikey": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q097_option_1_s2.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_1_s2_26093786_14112026.svg",
+           "sha256": "26093786dda8862bfa93f4f6c8b45271efe038e95068365659b3dfd34f7a4cd7",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "ICc1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         },
+         {
+          "smiles": "Oc1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Printed as 'A = ... and B = ...'."
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "A = $\\mathrm{C_6H_5{-}CH_3}$ and B = $\\mathrm{C_6H_5{-}I}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "A",
+        "name": "toluene",
+        "smiles": "Cc1ccccc1",
+        "formula": "C7H8",
+        "inchikey": "YXFVVABEGXRONW-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_2_s1_b4bc3ebf_14112026.svg",
+         "sha256": "b4bc3ebff6563e92069a6c077464710d2a8e406220dbdc99c8be84b29da63b13",
+         "type": "image/svg+xml"
+        }
+       },
+       {
+        "label": "B",
+        "name": "iodobenzene",
+        "smiles": "Ic1ccccc1",
+        "formula": "C6H5I",
+        "inchikey": "SNHMUERNLJLMHN-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_2_s2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_2_s2_1d87e391_14112026.svg",
+         "sha256": "1d87e3910938c6d74ba03090ebbfe7f9b276246ec58c300cf271f3a7a7d7008f",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "A = toluene and B = iodobenzene",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q097_option_2.png",
@@ -18168,17 +20664,120 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "2 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_2_01c57b0f_14112026.svg",
+         "sha256": "01c57b0fa99d2b47703db7ede057e21203902390bf67759d73b2831295861cf1",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "A",
+          "name": "toluene",
+          "smiles": "Cc1ccccc1",
+          "formula": "C7H8",
+          "inchikey": "YXFVVABEGXRONW-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q097_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_2_s1_b4bc3ebf_14112026.svg",
+           "sha256": "b4bc3ebff6563e92069a6c077464710d2a8e406220dbdc99c8be84b29da63b13",
+           "type": "image/svg+xml"
+          }
+         },
+         {
+          "label": "B",
+          "name": "iodobenzene",
+          "smiles": "Ic1ccccc1",
+          "formula": "C6H5I",
+          "inchikey": "SNHMUERNLJLMHN-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q097_option_2_s2.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_2_s2_1d87e391_14112026.svg",
+           "sha256": "1d87e3910938c6d74ba03090ebbfe7f9b276246ec58c300cf271f3a7a7d7008f",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "Cc1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         },
+         {
+          "smiles": "Ic1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Printed as 'A = ... and B = ...'."
+       },
        "shows": "option"
       }
      },
      {
       "key": "3",
       "text": "A = $\\mathrm{C_6H_5{-}CH_3}$ and B = $\\mathrm{C_6H_5{-}OH}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "A",
+        "name": "toluene",
+        "smiles": "Cc1ccccc1",
+        "formula": "C7H8",
+        "inchikey": "YXFVVABEGXRONW-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_3_s1_b4bc3ebf_14112026.svg",
+         "sha256": "b4bc3ebff6563e92069a6c077464710d2a8e406220dbdc99c8be84b29da63b13",
+         "type": "image/svg+xml"
+        }
+       },
+       {
+        "label": "B",
+        "name": "phenol",
+        "smiles": "Oc1ccccc1",
+        "formula": "C6H6O",
+        "inchikey": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_3_s2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_3_s2_26093786_14112026.svg",
+         "sha256": "26093786dda8862bfa93f4f6c8b45271efe038e95068365659b3dfd34f7a4cd7",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "A = toluene and B = phenol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q097_option_3.png",
@@ -18188,17 +20787,120 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "2 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_3_6efe38ae_14112026.svg",
+         "sha256": "6efe38ae94d9f4a48f3feca744f3a12d5da5c6386a4de27747db25105060387b",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "A",
+          "name": "toluene",
+          "smiles": "Cc1ccccc1",
+          "formula": "C7H8",
+          "inchikey": "YXFVVABEGXRONW-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q097_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_3_s1_b4bc3ebf_14112026.svg",
+           "sha256": "b4bc3ebff6563e92069a6c077464710d2a8e406220dbdc99c8be84b29da63b13",
+           "type": "image/svg+xml"
+          }
+         },
+         {
+          "label": "B",
+          "name": "phenol",
+          "smiles": "Oc1ccccc1",
+          "formula": "C6H6O",
+          "inchikey": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q097_option_3_s2.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_3_s2_26093786_14112026.svg",
+           "sha256": "26093786dda8862bfa93f4f6c8b45271efe038e95068365659b3dfd34f7a4cd7",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "Cc1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         },
+         {
+          "smiles": "Oc1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Printed as 'A = ... and B = ...'; a stray dot is printed after CH3."
+       },
        "shows": "option"
       }
      },
      {
       "key": "4",
       "text": "A = $\\mathrm{C_6H_5{-}CH_2OH}$ and B = $\\mathrm{C_6H_5{-}I}$",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "A",
+        "name": "benzyl alcohol",
+        "smiles": "OCc1ccccc1",
+        "formula": "C7H8O",
+        "inchikey": "WVDDGKGOMKODPV-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_4_s1_76b1501e_14112026.svg",
+         "sha256": "76b1501e4315ef20491fa4f49662a47abbc0a8a7914f2c06b93a5693356c32ec",
+         "type": "image/svg+xml"
+        }
+       },
+       {
+        "label": "B",
+        "name": "iodobenzene",
+        "smiles": "Ic1ccccc1",
+        "formula": "C6H5I",
+        "inchikey": "SNHMUERNLJLMHN-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_4_s2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_4_s2_1d87e391_14112026.svg",
+         "sha256": "1d87e3910938c6d74ba03090ebbfe7f9b276246ec58c300cf271f3a7a7d7008f",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "A = benzyl alcohol and B = iodobenzene",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q097_option_4.png",
@@ -18208,7 +20910,79 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "2 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q097_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_4_694d0bb0_14112026.svg",
+         "sha256": "694d0bb03e7a005648343a239dbb95d1ffd38128ba17e4d4f0b94c6debeb8da9",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "A",
+          "name": "benzyl alcohol",
+          "smiles": "OCc1ccccc1",
+          "formula": "C7H8O",
+          "inchikey": "WVDDGKGOMKODPV-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q097_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_4_s1_76b1501e_14112026.svg",
+           "sha256": "76b1501e4315ef20491fa4f49662a47abbc0a8a7914f2c06b93a5693356c32ec",
+           "type": "image/svg+xml"
+          }
+         },
+         {
+          "label": "B",
+          "name": "iodobenzene",
+          "smiles": "Ic1ccccc1",
+          "formula": "C6H5I",
+          "inchikey": "SNHMUERNLJLMHN-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q097_option_4_s2.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q097_option_4_s2_1d87e391_14112026.svg",
+           "sha256": "1d87e3910938c6d74ba03090ebbfe7f9b276246ec58c300cf271f3a7a7d7008f",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "OCc1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         },
+         {
+          "smiles": "Ic1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Printed as 'A = ... and B = ...'."
+       },
        "shows": "option"
       }
      }
@@ -18329,8 +21103,8 @@
     }
    ],
    "question": {
-    "full_text": "Which amongst the following will be most readily dehydrated under acidic conditions?\n(1) \n(2) \n(3) \n(4) ",
-    "html": "<div class=\"q-stem\">Which amongst the following will be most readily dehydrated under acidic conditions?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q098_option_1_2d4f0de2_04112026.png?v=2d4f0de2b062\" alt=\"option 1\" loading=\"lazy\"></li><li><span class=\"key\">(2)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q098_option_2_a7a26893_04112026.png?v=a7a268930852\" alt=\"option 2\" loading=\"lazy\"></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q098_option_3_db954a5a_04112026.png?v=db954a5a5300\" alt=\"option 3\" loading=\"lazy\"></li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q098_option_4_98dd3391_04112026.png?v=98dd33911424\" alt=\"option 4\" loading=\"lazy\"></li></ol>",
+    "full_text": "Which amongst the following will be most readily dehydrated under acidic conditions?\n(1) 3-nitrobutane-1,2-diol [SMILES: CC(C(O)CO)[N+](=O)[O-]]\n(2) 5-nitrohexan-2-ol [SMILES: CC(O)CCC(C)[N+](=O)[O-]]\n(3) 4-nitropentan-2-ol [SMILES: CC(O)CC(C)[N+](=O)[O-]]\n(4) pentane-2,4-diol [SMILES: CC(O)CC(C)O]",
+    "html": "<div class=\"q-stem\">Which amongst the following will be most readily dehydrated under acidic conditions?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_1_s1_0c486a98_14112026.svg?v=0c486a9853f8\" alt=\"3-nitrobutane-1,2-diol\"><span class=\"name\">3-nitrobutane-1,2-diol</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_2_s1_01d96399_14112026.svg?v=01d96399b884\" alt=\"5-nitrohexan-2-ol\"><span class=\"name\">5-nitrohexan-2-ol</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_3_s1_82acc902_14112026.svg?v=82acc902dc27\" alt=\"4-nitropentan-2-ol\"><span class=\"name\">4-nitropentan-2-ol</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_4_s1_c43e7c26_14112026.svg?v=c43e7c26414c\" alt=\"pentane-2,4-diol\"><span class=\"name\">pentane-2,4-diol</span></span></li></ol>",
     "stem": "Which amongst the following will be most readily dehydrated under acidic conditions?",
     "format": "plain",
     "statements": [],
@@ -18342,10 +21116,26 @@
      {
       "key": "1",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "3-nitrobutane-1,2-diol",
+        "smiles": "CC(C(O)CO)[N+](=O)[O-]",
+        "formula": "C4H9NO4",
+        "inchikey": "WXXUHVCKWPGKAT-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q098_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_1_s1_0c486a98_14112026.svg",
+         "sha256": "0c486a9853f819555aad52fad6d7c39132a5319c2c4608b25206c64466f0023a",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_1",
-       "text": null,
+       "text": "(1) 3-nitrobutane-1,2-diol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q098_option_1.png",
@@ -18355,17 +21145,85 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q098_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_1_3d912064_14112026.svg",
+         "sha256": "3d91206433d90c6af1c68f81f801a5434e0c9bf6ede3b9d95d46e295699cb9e1",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "3-nitrobutane-1,2-diol",
+          "smiles": "CC(C(O)CO)[N+](=O)[O-]",
+          "formula": "C4H9NO4",
+          "inchikey": "WXXUHVCKWPGKAT-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q098_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_1_s1_0c486a98_14112026.svg",
+           "sha256": "0c486a9853f819555aad52fad6d7c39132a5319c2c4608b25206c64466f0023a",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC([N+](=O)[O-])[CH:1](O)CO",
+          "orient": null,
+          "explicit_h": [
+           1
+          ],
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Skeletal drawing; NO2 on C3, H drawn explicitly on C2 (the CH(OH) carbon), OH on C2 and on terminal CH2."
+       },
        "shows": "option"
       }
      },
      {
       "key": "2",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "5-nitrohexan-2-ol",
+        "smiles": "CC(O)CCC(C)[N+](=O)[O-]",
+        "formula": "C6H13NO3",
+        "inchikey": "OQOFJKJLWUZWHF-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q098_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_2_s1_01d96399_14112026.svg",
+         "sha256": "01d96399b88484ca8de24f18756ced637deb9829bcaf305afbc0d0542ae8f092",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_2",
-       "text": null,
+       "text": "(2) 5-nitrohexan-2-ol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q098_option_2.png",
@@ -18375,17 +21233,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q098_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_2_662d9f29_14112026.svg",
+         "sha256": "662d9f29ea0c82c622f8557ac782bbef7f1d03b3b14aef40f9d75d3f828ad93c",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "5-nitrohexan-2-ol",
+          "smiles": "CC(O)CCC(C)[N+](=O)[O-]",
+          "formula": "C6H13NO3",
+          "inchikey": "OQOFJKJLWUZWHF-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q098_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_2_s1_01d96399_14112026.svg",
+           "sha256": "01d96399b88484ca8de24f18756ced637deb9829bcaf305afbc0d0542ae8f092",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC(CCC(C)O)[N+](=O)[O-]",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Skeletal drawing; NO2 on one end CH, OH on the other end CH."
+       },
        "shows": "option"
       }
      },
      {
       "key": "3",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "4-nitropentan-2-ol",
+        "smiles": "CC(O)CC(C)[N+](=O)[O-]",
+        "formula": "C5H11NO3",
+        "inchikey": "IJBLMICZBMQJBZ-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q098_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_3_s1_82acc902_14112026.svg",
+         "sha256": "82acc902dc27fb1d30f8b76b26321a0b50f2c1c3b0c800bbeaa5b2bdf89385a1",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "(3) 4-nitropentan-2-ol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q098_option_3.png",
@@ -18395,17 +21319,85 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q098_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_3_c32d63ce_14112026.svg",
+         "sha256": "c32d63ce4d96e26f0f8091ecddc20842a0c1dee13bcf973ef7469382dd04e1a6",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "4-nitropentan-2-ol",
+          "smiles": "CC(O)CC(C)[N+](=O)[O-]",
+          "formula": "C5H11NO3",
+          "inchikey": "IJBLMICZBMQJBZ-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q098_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_3_s1_82acc902_14112026.svg",
+           "sha256": "82acc902dc27fb1d30f8b76b26321a0b50f2c1c3b0c800bbeaa5b2bdf89385a1",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CC([N+](=O)[O-])C[CH:1](O)C",
+          "orient": null,
+          "explicit_h": [
+           1
+          ],
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Skeletal drawing; CH3 written out at the right end and H drawn explicitly on the CH(OH) carbon."
+       },
        "shows": "option"
       }
      },
      {
       "key": "4",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "pentane-2,4-diol",
+        "smiles": "CC(O)CC(C)O",
+        "formula": "C5H12O2",
+        "inchikey": "GTCCGKPBSJZVRZ-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q098_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_4_s1_c43e7c26_14112026.svg",
+         "sha256": "c43e7c26414ca48134b2b07175a846996fe8c49e760c9c34dbfe1447c7e9d4b1",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "(4) pentane-2,4-diol",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q098_option_4.png",
@@ -18415,7 +21407,59 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q098_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_4_71d539f9_14112026.svg",
+         "sha256": "71d539f96c391b56a55a18c025051187dc190ea238395668090e9c5e1367c148",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "pentane-2,4-diol",
+          "smiles": "CC(O)CC(C)O",
+          "formula": "C5H12O2",
+          "inchikey": "GTCCGKPBSJZVRZ-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q098_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q098_option_4_s1_c43e7c26_14112026.svg",
+           "sha256": "c43e7c26414ca48134b2b07175a846996fe8c49e760c9c34dbfe1447c7e9d4b1",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "C[CH:1](O)CC(C)O",
+          "orient": null,
+          "explicit_h": [
+           1
+          ],
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": "Skeletal drawing; H3C written out at the left end and H drawn explicitly on the left CH(OH) carbon."
+       },
        "shows": "option"
       }
      }
@@ -18534,8 +21578,8 @@
    "qno": 99,
    "flags": [],
    "question": {
-    "full_text": "Identify the final product [D] obtained in the following sequence of reactions.\n(1) $\\mathrm{C_4H_{10}}$\n(2) $\\mathrm{HC\\equiv C^{\\ominus}Na^{+}}$\n(3) \n(4) ",
-    "html": "<div class=\"q-stem\">Identify the final product [D] obtained in the following sequence of reactions.</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q099_4ae88a58_04112026.png?v=4ae88a5809ab\" alt=\"figure\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"math\"><span class=\"up\">C<sub>4</sub>H<sub>10</sub></span></span></li><li><span class=\"key\">(2)</span><span class=\"math\"><span class=\"up\">HC≡ C<sup>⊖</sup>Na<sup>+</sup></span></span></li><li><span class=\"key\">(3)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q099_option_3_fae2facc_04112026.png?v=fae2facc1151\" alt=\"option 3\" loading=\"lazy\"></li><li><span class=\"key\">(4)</span><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q099_option_4_d44684e3_04112026.png?v=d44684e3576a\" alt=\"option 4\" loading=\"lazy\"></li></ol>",
+    "full_text": "Identify the final product [D] obtained in the following sequence of reactions.\n[Figure: acetaldehyde ($\\ce{CH3CHO}$) →[i) LiAlH4, ii) H3O+] [A] →[H2SO4, Δ] [B] →[HBr] [C] →[bromobenzene above the arrow; Na/dry ether below] [D]]\n[Structures: acetaldehyde [SMILES: CC=O]; bromobenzene [SMILES: Brc1ccccc1]]\n(1) $\\mathrm{C_4H_{10}}$\n(2) $\\mathrm{HC\\equiv C^{\\ominus}Na^{+}}$\n(3) ethylbenzene [SMILES: CCc1ccccc1]\n(4) biphenyl [SMILES: c1ccc(-c2ccccc2)cc1]",
+    "html": "<div class=\"q-stem\">Identify the final product [D] obtained in the following sequence of reactions.</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2023/2023_H1/figures_agent/q099_4ae88a58_04112026.png?v=4ae88a5809ab\" alt=\"acetaldehyde ($\\ce{CH3CHO}$) →[i) LiAlH4, ii) H3O+] [A] →[H2SO4, Δ] [B] →[HBr] [C] →[bromobenzene above the arrow; Na/dry ether below] [D]\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"math\"><span class=\"up\">C<sub>4</sub>H<sub>10</sub></span></span></li><li><span class=\"key\">(2)</span><span class=\"math\"><span class=\"up\">HC≡ C<sup>⊖</sup>Na<sup>+</sup></span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_option_3_s1_c3cd0ee9_14112026.svg?v=c3cd0ee97328\" alt=\"ethylbenzene\"><span class=\"name\">ethylbenzene</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_option_4_s1_96946bcf_14112026.svg?v=96946bcfe353\" alt=\"biphenyl\"><span class=\"name\">biphenyl</span></span></li></ol>",
     "stem": "Identify the final product [D] obtained in the following sequence of reactions.",
     "format": "plain",
     "statements": [],
@@ -18544,7 +21588,7 @@
     "figures": [
      {
       "id": "question",
-      "text": null,
+      "text": "acetaldehyde ($\\ce{CH3CHO}$) →[i) LiAlH4, ii) H3O+] [A] →[H2SO4, Δ] [B] →[HBr] [C] →[bromobenzene above the arrow; Na/dry ether below] [D]",
       "printed": {
        "png": {
         "path": "figures_agent/2023_H1/q099.png",
@@ -18554,11 +21598,166 @@
        },
        "svg": null
       },
-      "drawn": null,
+      "drawn": {
+       "method": "smiles",
+       "renderer": "RDKit (code/lib/chem_cards.py)",
+       "layout": "rdkit",
+       "status": "drawn",
+       "checks": {
+        "smiles_parse": "pass",
+        "name_check": "2 not_run",
+        "print_match": "not a vector figure: drawn by RDKit",
+        "printed_text": "pass"
+       },
+       "image": {
+        "path": "figures_drawn/2023_H1/q099_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_question_3e1d40a9_14112026.svg",
+        "sha256": "3e1d40a9eedd111187a7857022a0a1eecde56f66c72a42ffbe4a43e1679a34b3",
+        "type": "image/svg+xml"
+       },
+       "message": null,
+       "kind": "reaction",
+       "reaction_smiles": null,
+       "species": [
+        {
+         "label": "",
+         "name": "acetaldehyde",
+         "smiles": "CC=O",
+         "formula": "C2H4O",
+         "inchikey": "IKHGUXGNUITLKF-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q099_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_question_s1_a8431fe0_14112026.svg",
+          "sha256": "a8431fe0cfe97560b6c9dc774d17b9266784ae76837dba4503bbd5614b73e25f",
+          "type": "image/svg+xml"
+         }
+        },
+        {
+         "label": "",
+         "name": "bromobenzene",
+         "smiles": "Brc1ccccc1",
+         "formula": "C6H5Br",
+         "inchikey": "QARVLSVVCXYDNA-UHFFFAOYSA-N",
+         "name_check": "not_run",
+         "shown_as": null,
+         "image": {
+          "path": "figures_drawn/2023_H1/q099_question_s2.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_question_s2_61d2ed9e_14112026.svg",
+          "sha256": "61d2ed9ebe0454d5a7a04b53a226f29154670b769471fa7080bd6ea274fcbcd2",
+          "type": "image/svg+xml"
+         }
+        }
+       ],
+       "scheme": [
+        [
+         {
+          "species": 1
+         },
+         {
+          "arrow": {
+           "above": "i) LiAlH₄",
+           "below": "ii) H₃O⁺"
+          }
+         },
+         {
+          "text": "[A]"
+         },
+         {
+          "arrow": {
+           "above": "H₂SO₄",
+           "below": "Δ"
+          }
+         },
+         {
+          "text": "[B]"
+         }
+        ],
+        [
+         {
+          "arrow": {
+           "above": "HBr",
+           "below": ""
+          }
+         },
+         {
+          "text": "[C]"
+         },
+         {
+          "species": 2
+         },
+         {
+          "arrow": {
+           "above": "",
+           "below": "Na/dry ether"
+          }
+         },
+         {
+          "text": "[D]"
+         }
+        ]
+       ],
+       "draw_hints": [
+        {
+         "smiles": "CC=O",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        },
+        {
+         "smiles": "Brc1ccccc1",
+         "orient": null,
+         "explicit_h": null,
+         "annotations": null,
+         "abbreviate": true
+        }
+       ],
+       "excluded_text": [
+        {
+         "text": "LiAIH",
+         "why": "text-layer spelling of LiAlH₄ (capital I read for lowercase l); it is drawn as 'i) LiAlH₄' above the first arrow"
+        }
+       ],
+       "confidence": "certain",
+       "note": "Acetaldehyde is printed as the condensed formula CH3CHO. Bromobenzene is drawn as a structure directly ABOVE the last arrow (as a reagent with [C]); Na/dry ether is printed below that arrow. [A], [B], [C], [D] are unknowns; no reaction_smiles given because they are not printed. printed_text 'LiAIH' is the OCR of LiAlH4 on the first arrow."
+      },
       "shows": "question"
      }
     ],
-    "chemistry": [],
+    "chemistry": [
+     {
+      "label": "",
+      "name": "acetaldehyde",
+      "smiles": "CC=O",
+      "formula": "C2H4O",
+      "inchikey": "IKHGUXGNUITLKF-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q099_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_question_s1_a8431fe0_14112026.svg",
+       "sha256": "a8431fe0cfe97560b6c9dc774d17b9266784ae76837dba4503bbd5614b73e25f",
+       "type": "image/svg+xml"
+      }
+     },
+     {
+      "label": "",
+      "name": "bromobenzene",
+      "smiles": "Brc1ccccc1",
+      "formula": "C6H5Br",
+      "inchikey": "QARVLSVVCXYDNA-UHFFFAOYSA-N",
+      "name_check": "not_run",
+      "shown_as": null,
+      "image": {
+       "path": "figures_drawn/2023_H1/q099_question_s2.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_question_s2_61d2ed9e_14112026.svg",
+       "sha256": "61d2ed9ebe0454d5a7a04b53a226f29154670b769471fa7080bd6ea274fcbcd2",
+       "type": "image/svg+xml"
+      }
+     }
+    ],
     "options": [
      {
       "key": "1",
@@ -18575,10 +21774,26 @@
      {
       "key": "3",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "ethylbenzene",
+        "smiles": "CCc1ccccc1",
+        "formula": "C8H10",
+        "inchikey": "YNQLUTRBYVCPMQ-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q099_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_option_3_s1_c3cd0ee9_14112026.svg",
+         "sha256": "c3cd0ee973282ce0ce857b9706afd27e6e544392ea17fdf644c2ae23b5c8a9b3",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_3",
-       "text": null,
+       "text": "ethylbenzene",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q099_option_3.png",
@@ -18588,17 +21803,83 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q099_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_option_3_47a16723_14112026.svg",
+         "sha256": "47a16723d64acef0aec8ac8cbc4527a54859c8c1c3d83e357ba8384a8a0e17b5",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "ethylbenzene",
+          "smiles": "CCc1ccccc1",
+          "formula": "C8H10",
+          "inchikey": "YNQLUTRBYVCPMQ-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q099_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_option_3_s1_c3cd0ee9_14112026.svg",
+           "sha256": "c3cd0ee973282ce0ce857b9706afd27e6e544392ea17fdf644c2ae23b5c8a9b3",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "CCc1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      },
      {
       "key": "4",
       "text": "",
-      "chemistry": [],
+      "chemistry": [
+       {
+        "label": "",
+        "name": "biphenyl",
+        "smiles": "c1ccc(-c2ccccc2)cc1",
+        "formula": "C12H10",
+        "inchikey": "ZUOUZKKEUPVFJK-UHFFFAOYSA-N",
+        "name_check": "not_run",
+        "shown_as": null,
+        "image": {
+         "path": "figures_drawn/2023_H1/q099_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_option_4_s1_96946bcf_14112026.svg",
+         "sha256": "96946bcfe353f411956a0a0b8eb5a862bed1a45ef670bd50b59150b8ad92fbd5",
+         "type": "image/svg+xml"
+        }
+       }
+      ],
       "figure": {
        "id": "option_4",
-       "text": null,
+       "text": "biphenyl",
        "printed": {
         "png": {
          "path": "figures_agent/2023_H1/q099_option_4.png",
@@ -18608,7 +21889,57 @@
         },
         "svg": null
        },
-       "drawn": null,
+       "drawn": {
+        "method": "smiles",
+        "renderer": "RDKit (code/lib/chem_cards.py)",
+        "layout": "rdkit",
+        "status": "drawn",
+        "checks": {
+         "smiles_parse": "pass",
+         "name_check": "1 not_run",
+         "print_match": "not a vector figure: drawn by RDKit",
+         "printed_text": "pass"
+        },
+        "image": {
+         "path": "figures_drawn/2023_H1/q099_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_option_4_6c62ee4a_14112026.svg",
+         "sha256": "6c62ee4a681ebcd895ae4aab92b643b829ae296acd34938f2b789a908d5edbd2",
+         "type": "image/svg+xml"
+        },
+        "message": null,
+        "kind": "structures",
+        "reaction_smiles": null,
+        "species": [
+         {
+          "label": "",
+          "name": "biphenyl",
+          "smiles": "c1ccc(-c2ccccc2)cc1",
+          "formula": "C12H10",
+          "inchikey": "ZUOUZKKEUPVFJK-UHFFFAOYSA-N",
+          "name_check": "not_run",
+          "shown_as": null,
+          "image": {
+           "path": "figures_drawn/2023_H1/q099_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2023/2023_H1/figures_drawn/q099_option_4_s1_96946bcf_14112026.svg",
+           "sha256": "96946bcfe353f411956a0a0b8eb5a862bed1a45ef670bd50b59150b8ad92fbd5",
+           "type": "image/svg+xml"
+          }
+         }
+        ],
+        "scheme": null,
+        "draw_hints": [
+         {
+          "smiles": "c1ccc(cc1)-c1ccccc1",
+          "orient": null,
+          "explicit_h": null,
+          "annotations": null,
+          "abbreviate": true
+         }
+        ],
+        "excluded_text": [],
+        "confidence": "certain",
+        "note": ""
+       },
        "shows": "option"
       }
      }

@@ -3476,6 +3476,8 @@ Which of the following statements related to pituitary gland are correct? Choose
 
 Biology · botany · Photosynthesis in Higher Plants
 
+> ⚠ Photorespiration statements: (a) and (b) are false as printed and (c), (d) are true, which gives option (1), the blind solve's pick; the NTA key printed (3). The key needs checking against NTA's final answer key; the four-file audit backed option (1).
+
 > ⚠ The independent solve chose (1); the booklet prints (3).
 
 Which of the following statements regarding photorespiration are correct ? Choose the correct answer from the options given below :

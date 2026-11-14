@@ -1,6 +1,6 @@
 # NEET (UG) 2022 · Code S1
 
-200 questions · source `NEET_Papers/2022/Set_S1/Download_Now.pdf` · every image a CDN link (0 without one) · 1 figures redrawn
+200 questions · source `NEET_Papers/2022/Set_S1/Download_Now.pdf` · every image a CDN link (0 without one) · 34 figures redrawn
 
 Generated from `questions.json` (schema `neet-pyq/question-record/v3`) by `code/paper_md.py`; edit the pipeline, not this file.
 
@@ -32,8 +32,8 @@ Choose the correct answer from the options given below
 
 *Two-column table listing electromagnetic waves and their wavelengths*
 
-![drawn: Two-column table listing electromagnetic waves and their wavelengths](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_drawn/q001_solution_1_aae62f8c_04112026.svg?v=aae62f8cce98)  
-*drawn on the booklet's geometry, checked against its figure spec*
+![drawn: Two-column table listing electromagnetic waves and their wavelengths](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q001_solution_1_519e5739_14112026.svg?v=519e57396872)  
+*drawn by code/lib/physics_figure.py*
 
 1. (a) - (ii)
 2. (b) - (iii)
@@ -78,6 +78,9 @@ A square loop of side $1\,\mathrm{m}$ and resistance $1\,\Omega$ is placed in a 
 ![printed figure: Square loop of side 1 m with a dot at its centre and a double-headed dimension arrow marking the side length](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q002_sol_1_49701084_04112026.png?v=497010846a91)
 
 *Square loop of side 1 m with a dot at its centre and a double-headed dimension arrow marking the side length*
+
+![drawn: Square loop of side 1 m with a dot at its centre and a double-headed dimension arrow marking the side length](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q002_solution_1_fe400020_14112026.svg?v=fe400020d92d)  
+*drawn by code/lib/physics_figure.py*
 
 1. Magnetic flux $(\phi_B) = \vec{B}\cdot\vec{A}$
 2. $\vec{B}$ and $\vec{A}$ are in same direction, therefore
@@ -384,6 +387,9 @@ An ideal gas undergoes four different processes from the same initial state as s
 ![printed figure: P-V diagram: four processes 1, 2, 3, 4 from the same initial state](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q010_39ffef32_04112026.png?v=39ffef32c212)
 
 *P-V diagram: four processes 1, 2, 3, 4 from the same initial state*
+
+![drawn: P-V diagram: four processes 1, 2, 3, 4 from the same initial state](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q010_question_ea29dfcb_14112026.svg?v=ea29dfcbf20f)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) 3
 - (2) 4
@@ -1167,6 +1173,9 @@ The displacement-time graphs of two moving particles make angles of $30^\circ$ a
 
 *Displacement–time graph with two straight lines at 30° and 45° from the origin*
 
+![drawn: Displacement–time graph with two straight lines at 30° and 45° from the origin](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q030_question_6e3e3d4b_14112026.svg?v=6e3e3d4b7dfc)  
+*drawn by code/lib/physics_figure.py*
+
 - (1) $1 : 2$
 - **(2)** $1 : \sqrt{3}$
 - (3) $\sqrt{3} : 1$
@@ -1206,6 +1215,9 @@ In the given circuits (a), (b) and (c), the potential drop across the two $p$-$n
 ![printed figure: Three circuits (a), (b), (c): each a loop with two p-n junction boxes on the top wire and a cell on the bottom wire](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q031_2ebd9cd1_04112026.png?v=2ebd9cd1cdc8)
 
 *Three circuits (a), (b), (c): each a loop with two p-n junction boxes on the top wire and a cell on the bottom wire*
+
+![drawn: Three circuits (a), (b), (c): each a loop with two p-n junction boxes on the top wire and a cell on the bottom wire](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q031_question_d4160963_14112026.svg?v=d4160963bad9)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) Circuit (c) only
 - **(2)** Both circuits (a) and (c)
@@ -1291,6 +1303,9 @@ A spherical ball is dropped in a long column of a highly viscous liquid. The cur
 
 *v-t graph with four curves A (straight line), B (rising, saturating), C and D (falling curves)*
 
+![drawn: v-t graph with four curves A (straight line), B (rising, saturating), C and D (falling curves)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q033_question_d32e781a_14112026.svg?v=d32e781a833b)  
+*drawn by code/lib/physics_figure.py*
+
 - (1) C
 - (2) D
 - (3) A
@@ -1366,10 +1381,14 @@ Physics · Modern Physics
 
 The graph which shows the variation of the de Broglie wavelength ($\lambda$) of a particle and its associated momentum ($p$) is
 
-- (1) ![printed figure: Graph of de Broglie wavelength λ versus momentum p: curve starting low and flat near the origin, rising steeply (nearly vertical) at large p](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q035_option_1_c0f6be16_04112026.png?v=c0f6be163c52) *Graph of de Broglie wavelength λ versus momentum p: curve starting low and flat near the origin, rising steeply (nearly vertical) at large p*
-- **(2)** ![printed figure: de Broglie wavelength λ falling hyperbolically with momentum p](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q035_option_2_563f6f9b_04112026.png?v=563f6f9b6a3e) *de Broglie wavelength λ falling hyperbolically with momentum p*
-- (3) ![printed figure: Graph of de Broglie wavelength λ rising linearly with momentum p](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q035_option_3_6f047671_04112026.png?v=6f0476714634) *Graph of de Broglie wavelength λ rising linearly with momentum p*
-- (4) ![printed figure: Straight line of negative slope: de Broglie wavelength versus momentum](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q035_option_4_e842839d_04112026.png?v=e842839dae37) *Straight line of negative slope: de Broglie wavelength versus momentum*
+- (1) ![printed figure: Graph of de Broglie wavelength λ versus momentum p: curve starting low and flat near the origin, rising steeply (nearly vertical) at large p](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q035_option_1_c0f6be16_04112026.png?v=c0f6be163c52) *Graph of de Broglie wavelength λ versus momentum p: curve starting low and flat near the origin, rising steeply (nearly vertical) at large p* ![drawn: Graph of de Broglie wavelength λ versus momentum p: curve starting low and flat near the origin, rising steeply (nearly vertical) at large p](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q035_option_1_9d516c0d_14112026.svg?v=9d516c0ddbc0)  
+*drawn by code/lib/physics_figure.py*
+- **(2)** ![printed figure: de Broglie wavelength λ falling hyperbolically with momentum p](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q035_option_2_563f6f9b_04112026.png?v=563f6f9b6a3e) *de Broglie wavelength λ falling hyperbolically with momentum p* ![drawn: de Broglie wavelength λ falling hyperbolically with momentum p](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q035_option_2_ef1b0baa_14112026.svg?v=ef1b0baa85f0)  
+*drawn by code/lib/physics_figure.py*
+- (3) ![printed figure: Graph of de Broglie wavelength λ rising linearly with momentum p](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q035_option_3_6f047671_04112026.png?v=6f0476714634) *Graph of de Broglie wavelength λ rising linearly with momentum p* ![drawn: Graph of de Broglie wavelength λ rising linearly with momentum p](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q035_option_3_f9900c42_14112026.svg?v=f9900c428e12)  
+*drawn by code/lib/physics_figure.py*
+- (4) ![printed figure: Straight line of negative slope: de Broglie wavelength versus momentum](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q035_option_4_e842839d_04112026.png?v=e842839dae37) *Straight line of negative slope: de Broglie wavelength versus momentum* ![drawn: Straight line of negative slope: de Broglie wavelength versus momentum](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q035_option_4_a5473884_14112026.svg?v=a5473884a130)  
+*drawn by code/lib/physics_figure.py*
 
 **Answer** — booklet: (2) · independent solve: (2) · agree
 
@@ -1448,6 +1467,9 @@ The magnitude of electric field intensity at a distance $R(R \gg L)$ varies as:
 ![printed figure: Charges −q and +q at the ends of a segment of length L](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q037_aefa4f4b_04112026.png?v=aefa4f4bc4b5)
 
 *Charges −q and +q at the ends of a segment of length L*
+
+![drawn: Charges −q and +q at the ends of a segment of length L](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q037_question_b37fce40_14112026.svg?v=b37fce40672d)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) $\dfrac{1}{R^4}$
 - (2) $\dfrac{1}{R^6}$
@@ -1572,6 +1594,9 @@ A wheatstone bridge is used to determine the value of unknown resistance $X$ by 
 ![printed figure: Wheatstone bridge drawn as a diamond: arms P, X, Q, Y with galvanometer G across the vertical diagonal and cell E in the outer bottom branch](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q040_11e415c8_04112026.png?v=11e415c8d357)
 
 *Wheatstone bridge drawn as a diamond: arms P, X, Q, Y with galvanometer G across the vertical diagonal and cell E in the outer bottom branch*
+
+![drawn: Wheatstone bridge drawn as a diamond: arms P, X, Q, Y with galvanometer G across the vertical diagonal and cell E in the outer bottom branch](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q040_question_f3f4a185_14112026.svg?v=f3f4a1854419)  
+*drawn by code/lib/physics_figure.py*
 
 - (1) Should be very large and unequal
 - (2) Do not play any significant role
@@ -1734,6 +1759,9 @@ A capacitor of capacitance $C = 900\,\mathrm{pF}$ is charged fully by $100\,\mat
 ![printed figure: (a) capacitor C charged by 100 V battery B; (b) same capacitor connected across a second capacitor C](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q044_17ef8bb9_04112026.png?v=17ef8bb9833e)
 
 *(a) capacitor C charged by 100 V battery B; (b) same capacitor connected across a second capacitor C*
+
+![drawn: (a) capacitor C charged by 100 V battery B; (b) same capacitor connected across a second capacitor C](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q044_question_c1ca7444_14112026.svg?v=c1ca74442ca9)  
+*drawn by code/lib/physics_figure.py*
 
 - **(1)** $2.25 \times 10^{-6}\,\mathrm{J}$
 - (2) $1.5 \times 10^{-6}\,\mathrm{J}$
@@ -1904,6 +1932,9 @@ The truth table for the given logic circuit is
 ![printed figure: Two NAND gates feeding an AND gate; input A also passes through a NOT gate, input B is common](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q048_637cd963_04112026.png?v=637cd963da10)
 
 *Two NAND gates feeding an AND gate; input A also passes through a NOT gate, input B is common*
+
+![drawn: Two NAND gates feeding an AND gate; input A also passes through a NOT gate, input B is common](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q048_question_70f18a71_14112026.svg?v=70f18a71df81)  
+*drawn by code/lib/physics_figure.py*
 
 - **(1)** $\begin{array}{cc|c} A & B & C \\ \hline 0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{array}$
 - (2) $\begin{array}{cc|c} A & B & C \\ \hline 0 & 0 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 0 \\ 1 & 1 & 1 \end{array}$
@@ -2308,7 +2339,9 @@ The given graph is a representation of kinetics of a reaction.
 
 The y and x axes for zero and first order reactions, respectively are
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q058_a7cb0eb8_04112026.png?v=a7cb0eb8e39d)
+![printed figure: graph of y against x at constant temperature T: a horizontal straight line parallel to the x-axis](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q058_a7cb0eb8_04112026.png?v=a7cb0eb8e39d)
+
+*graph of y against x at constant temperature T: a horizontal straight line parallel to the x-axis*
 
 - **(1)** zero order ($y$ = rate and $x$ = concentration), first order ($y = t_{1/2}$ and $x$ = concentration)
 - (2) zero order ($y$ = rate and $x$ = concentration), first order ($y$ = rate and $x = t_{1/2}$)
@@ -2449,8 +2482,8 @@ Chemistry · organic · Haloalkanes and Haloarenes
 
 Which of the following sequence of reactions is suitable to synthesize chlorobenzene?
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q061_option_1_beb9220e_04112026.png?v=beb9220e49df) — $\mathrm{HCl}$
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q061_option_2_f3082291_04112026.png?v=f3082291c405) — $\mathrm{HCl}$, Heating
+- (1) benzene `c1ccccc1` ![benzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q061_option_1_s1_dbf27a87_14112026.svg?v=dbf27a872e50) — $\mathrm{HCl}$
+- (2) aniline `Nc1ccccc1` ![aniline](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q061_option_2_s1_09f32278_14112026.svg?v=09f322787904) — $\mathrm{HCl}$, Heating
 - **(3)** Benzene, $\mathrm{Cl_2}$, anhydrous $\mathrm{FeCl_3}$
 - (4) Phenol, $\mathrm{NaNO_2}$, $\mathrm{HCl}$, $\mathrm{CuCl}$
 
@@ -3032,10 +3065,10 @@ Chemistry · physical · Thermodynamics
 
 Which of the following p-V curve represents maximum work done?
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_1_68f7f51b_04112026.png?v=68f7f51b6194)
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_2_b85def2c_04112026.png?v=b85def2c3fe1)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_3_5a020e39_04112026.png?v=5a020e39c380)
-- **(4)** ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_4_994caacf_04112026.png?v=994caacfec62)
+- (1) ![printed figure: p-V graph labelled Isothermal: a single vertical line at constant V (p on the vertical axis, V on the horizontal axis)](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_1_68f7f51b_04112026.png?v=68f7f51b6194) *p-V graph labelled Isothermal: a single vertical line at constant V (p on the vertical axis, V on the horizontal axis)*
+- (2) ![printed figure: p-V graph labelled Isothermal: a horizontal segment at high p, then a curve falling steeply to lower p at a smaller final V, closed down to the V axis by a vertical line (p on the vertical axis, V on the horizontal axis)](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_2_b85def2c_04112026.png?v=b85def2c3fe1) *p-V graph labelled Isothermal: a horizontal segment at high p, then a curve falling steeply to lower p at a smaller final V, closed down to the V axis by a vertical line (p on the vertical axis, V on the horizontal axis)*
+- (3) ![printed figure: p-V graph labelled Isothermal: a closed elliptical cycle tilted downward from left to right, with arrows showing the direction around the loop (p on the vertical axis, V on the horizontal axis)](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_3_5a020e39_04112026.png?v=5a020e39c380) *p-V graph labelled Isothermal: a closed elliptical cycle tilted downward from left to right, with arrows showing the direction around the loop (p on the vertical axis, V on the horizontal axis)*
+- **(4)** ![printed figure: p-V graph labelled Isothermal: a horizontal segment at high p, then a curve falling gradually over a wide range of V to a lower p, closed down to the V axis by a vertical line (p on the vertical axis, V on the horizontal axis)](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q075_option_4_994caacf_04112026.png?v=994caacfec62) *p-V graph labelled Isothermal: a horizontal segment at high p, then a curve falling gradually over a wide range of V to a lower p, closed down to the V axis by a vertical line (p on the vertical axis, V on the horizontal axis)*
 
 **Answer** — booklet: (4) · independent solve: (4) · agree
 
@@ -3152,10 +3185,10 @@ Chemistry · organic · Basic Principles and Techniques of Organic Compounds
 
 The Kjeldahl's method for the estimation of nitrogen can be used to estimate the amount of nitrogen in which one of the following compounds?
 
-- **(1)** ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q078_option_1_898d91cb_04112026.png?v=898d91cb52ea) — (structure diagram — see option_boxes)
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q078_option_2_4b26bb63_04112026.png?v=4b26bb63c1ce) — (structure diagram — see option_boxes)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q078_option_3_af7edf43_04112026.png?v=af7edf437348) — (structure diagram — see option_boxes)
-- (4) ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q078_option_4_a83d381a_04112026.png?v=a83d381a36a4) — (structure diagram — see option_boxes)
+- **(1)** aniline `Nc1ccccc1` ![aniline](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_1_s1_3051b9a1_14112026.svg?v=3051b9a1f0bc) — (structure diagram — see option_boxes)
+- (2) azobenzene `c1ccc(N=Nc2ccccc2)cc1` ![azobenzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_2_s1_c6c0919e_14112026.svg?v=c6c0919ef009) — (structure diagram — see option_boxes)
+- (3) nitrobenzene `O=[N+]([O-])c1ccccc1` ![nitrobenzene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_3_s1_017308e0_14112026.svg?v=017308e0a06d) — (structure diagram — see option_boxes)
+- (4) pyridine `c1ccncc1` ![pyridine](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q078_option_4_s1_c143af42_14112026.svg?v=c143af42db5a) — (structure diagram — see option_boxes)
 
 **Answer** — booklet: (1) · independent solve: (1) · agree
 
@@ -3439,10 +3472,10 @@ Chemistry · organic · General Organic Chemistry
 
 Which compound amongst the following is **not** an aromatic compound?
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q085_option_1_7e902f0b_04112026.png?v=7e902f0be002)
-- **(2)** ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q085_option_2_aef15206_04112026.png?v=aef15206082e)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q085_option_3_1f603c47_04112026.png?v=1f603c47618e)
-- (4) ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q085_option_4_57f17e5a_04112026.png?v=57f17e5af6cf)
+- (1) cyclopropenylium `c1c[cH+]1` ![cyclopropenylium](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_1_s1_47339bdc_14112026.svg?v=47339bdcfc46)
+- **(2)** cyclohepta-1,3,5-triene `C1=CC=CCC=C1` ![cyclohepta-1,3,5-triene](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_2_s1_5b78ad9c_14112026.svg?v=5b78ad9cdbf9)
+- (3) cyclopentadienide `c1cc[cH-]c1` ![cyclopentadienide](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_3_s1_efed86b3_14112026.svg?v=efed86b3462c)
+- (4) cycloheptatrienylium `c1ccc[cH+]cc1` ![cycloheptatrienylium](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q085_option_4_s1_bdb28c9c_14112026.svg?v=bdb28c9c98fc)
 
 **Answer** — booklet: (2) · independent solve: (2) · agree
 
@@ -3559,7 +3592,14 @@ Chemistry · organic · IUPAC Nomenclature of Organic Chemistry
 
 The correct IUPAC name of the following compound is
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q088_ba91ee99_04112026.png?v=ba91ee99d908)
+![printed figure: 1-bromo-5-chloro-4-methylhexan-3-ol ($\ce{CH3CH(Cl)CH(CH3)CH(OH)CH2CH2Br}$)](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q088_ba91ee99_04112026.png?v=ba91ee99d908)
+
+*1-bromo-5-chloro-4-methylhexan-3-ol ($\ce{CH3CH(Cl)CH(CH3)CH(OH)CH2CH2Br}$)*
+
+![drawn: 1-bromo-5-chloro-4-methylhexan-3-ol ($\ce{CH3CH(Cl)CH(CH3)CH(OH)CH2CH2Br}$)](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q088_question_373d9359_14112026.svg?v=373d93597a9e)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: 1-bromo-5-chloro-4-methylhexan-3-ol `CC(Cl)C(C)C(O)CCBr` ![1-bromo-5-chloro-4-methylhexan-3-ol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q088_question_s1_b0fc92e9_14112026.svg?v=b0fc92e9b0c8)
 
 - (1) 1-bromo-4-methyl-5-chlorohexan-3-ol
 - (2) 6-bromo-4-methyl-2-chlorohexan-4-ol
@@ -3640,10 +3680,10 @@ Chemistry · organic · Aldehydes, Ketones, and Carboxylic Acids
 
 Which one of the following is not formed when acetone reacts with 2-pentanone in the presence of dilute NaOH followed by heating?
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q090_option_1_2f236fd9_04112026.png?v=2f236fd90956)
-- (2) ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q090_option_2_070111f9_04112026.png?v=070111f983c9)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q090_option_3_1bb97735_04112026.png?v=1bb97735dbfa)
-- **(4)** ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q090_option_4_27207278_04112026.png?v=272072784ebc)
+- (1) (E)-4-methylhept-3-en-2-one `CCC/C(C)=C/C(C)=O` ![(E)-4-methylhept-3-en-2-one](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_1_s1_cb45c8ef_14112026.svg?v=cb45c8efc96c)
+- (2) 3-ethyl-4-methylpent-3-en-2-one `CCC(C(C)=O)=C(C)C` ![3-ethyl-4-methylpent-3-en-2-one](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_2_s1_80af8406_14112026.svg?v=80af8406643a)
+- (3) 4-methylpent-3-en-2-one `CC(=O)C=C(C)C` ![4-methylpent-3-en-2-one](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_3_s1_15fe930f_14112026.svg?v=15fe930f4a06)
+- **(4)** 5-ethyl-4-methylhept-4-en-3-one `CCC(=O)C(C)=C(CC)CC` ![5-ethyl-4-methylhept-4-en-3-one](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q090_option_4_s1_1bfa134b_14112026.svg?v=1bfa134bd650)
 
 **Answer** — booklet: (4) · independent solve: (4) · agree
 
@@ -3979,12 +4019,19 @@ Chemistry · organic · Amines
 
 The product formed from the following reaction sequence is
 
-![printed figure: question](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_7854b602_04112026.png?v=7854b602d94a)
+![printed figure: benzonitrile →((i) LiAlH₄, H₂O; (ii) NaNO₂ + HCl; (iii) H₂O) ?](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_7854b602_04112026.png?v=7854b602d94a)
 
-- (1) ![printed figure: option_1](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_option_1_ca48bf67_04112026.png?v=ca48bf67f0f6)
-- **(2)** ![printed figure: option_2](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_option_2_9d2aae77_04112026.png?v=9d2aae77a450)
-- (3) ![printed figure: option_3](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_option_3_a486f6ab_04112026.png?v=a486f6abf2ba)
-- (4) ![printed figure: option_4](https://d30lmobgrc5gb8.cloudfront.net/general/04112026/neet_papers/2022/2022_S1/figures_agent/q098_option_4_cb381a95_04112026.png?v=cb381a950d3f)
+*benzonitrile →[(i) LiAlH₄, H₂O; (ii) NaNO₂ + HCl; (iii) H₂O] ?*
+
+![drawn: benzonitrile →((i) LiAlH₄, H₂O; (ii) NaNO₂ + HCl; (iii) H₂O) ?](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_question_9422f0ae_14112026.svg?v=9422f0ae9ed5)  
+*drawn by RDKit (code/lib/chem_cards.py)*
+
+Structures: benzonitrile `N#Cc1ccccc1` ![benzonitrile](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_question_s1_a95268da_14112026.svg?v=a95268da86c1)
+
+- (1) benzyl chloride `ClCc1ccccc1` ![benzyl chloride](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_1_s1_d91fbed0_14112026.svg?v=d91fbed0f992)
+- **(2)** benzyl alcohol `OCc1ccccc1` ![benzyl alcohol](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_2_s1_76b1501e_14112026.svg?v=76b1501e4315)
+- (3) benzamide `NC(=O)c1ccccc1` ![benzamide](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_3_s1_2caebd61_14112026.svg?v=2caebd61a953)
+- (4) phenylmethanediazonium chloride `N#[N+]Cc1ccccc1.[Cl-]` ![phenylmethanediazonium chloride](https://d30lmobgrc5gb8.cloudfront.net/general/14112026/neet_papers/2022/2022_S1/figures_drawn/q098_option_4_s1_91c64fcc_14112026.svg?v=91c64fccaff9)
 
 **Answer** — booklet: (2) · independent solve: (2) · agree
 

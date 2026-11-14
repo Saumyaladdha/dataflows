@@ -53,9 +53,9 @@
    "agree": 171,
    "unclear": 9
   },
-  "images": 415,
+  "images": 498,
   "images_without_cdn": 0,
-  "drawn_figures": 1,
+  "drawn_figures": 36,
   "number_not_printed": [],
   "flagged": {
    "answers_differ": [
@@ -102,17 +102,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q001_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q001_question_5a2c4c31_13112026.svg",
+        "sha256": "5a2c4c31d1ceaef06ce6568e68947b3aed378f2b5b106068a43b237ab4df1f19",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Resistor network ABCDEF with a 5 V battery and series resistors on the outer loop",
         "width": 520,
@@ -1918,17 +1923,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q007_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q007_question_927b0649_13112026.svg",
+        "sha256": "927b0649fff4854fdf476f80fc1348f409b7108d4a7fcaefb52f434c6aa91f63",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Bridge of 1, 2, 3, 4 ohm resistors with branch CD, fed by 50 V between A and B",
         "width": 460,
@@ -3641,17 +3651,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q013_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q013_question_72a1d5c8_13112026.svg",
+        "sha256": "72a1d5c83770ab4166a400066595f84455631943a8903aa9e2c49f6caaa7a6f4",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "A NOR gate (inputs A, B) and a NAND gate (inputs B, A) feeding an AND gate with output Y",
         "width": 450,
@@ -4746,17 +4761,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q017_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q017_question_381014df_13112026.svg",
+        "sha256": "381014df75d2bb7ec2be66bd20d8b4132fa7bcedd61e409b55d45a270b195544",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Four graphs A-D of photoelectric current against intensity or frequency of light",
         "width": 1132,
@@ -5514,17 +5534,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "1 claimed, all within 1.5 deg",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q019_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q019_question_02ca18f6_13112026.svg",
+        "sha256": "02ca18f68b37bd21aeebb241a7dbc0993bd7f9140a52e723f9be0e8b5436c690",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Bob m on a string of length l about O, given horizontal velocity v0 at the bottom; string slackens at P at angle theta above the horizontal",
         "width": 260,
@@ -6079,17 +6104,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q020_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q020_question_c3f01f3e_13112026.svg",
+        "sha256": "c3f01f3e8a3abc757ce718fc81e714599f87ba31f25608d773d3f62fd2a9e5b0",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Centre-tap full wave rectifier with diodes D1, D2 and load RL",
         "width": 540,
@@ -9490,17 +9520,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "matches the drawn wires",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q034_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q034_question_a37b9fd7_13112026.svg",
+        "sha256": "a37b9fd76cdefd820581faec885bacd47796f7f54b67f80b582fdcc696a768c5",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Circuit segment AB: inductor 1 H, cell 5 V and resistor 2 ohm in series, current i from A",
         "width": 800,
@@ -9949,17 +9984,22 @@
        "drawn": {
         "method": "physics_spec",
         "renderer": "code/lib/physics_figure.py",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "spec",
+        "status": "drawn",
         "checks": {
-         "renders": "not_on_print",
+         "renders": "pass",
          "print_match": "not a vector figure: drawn from the spec",
          "angles": "none claimed",
          "netlist": "not a circuit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q035_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q035_option_1_2f7f480e_13112026.svg",
+         "sha256": "2f7f480e4400d51ef72a13fcac01e23a2ebbcabf610c8766b1c9557c9cbfa8e2",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "spec": {
          "title": "Option (1): omega(t) and A(t) both decrease with time t",
          "width": 360,
@@ -10134,17 +10174,22 @@
        "drawn": {
         "method": "physics_spec",
         "renderer": "code/lib/physics_figure.py",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "spec",
+        "status": "drawn",
         "checks": {
-         "renders": "not_on_print",
+         "renders": "pass",
          "print_match": "not a vector figure: drawn from the spec",
          "angles": "none claimed",
          "netlist": "not a circuit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q035_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q035_option_2_47aeb735_13112026.svg",
+         "sha256": "47aeb73581eaae413760327a7caee58022d34f8e5288754dbb723f5c28aad759",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "spec": {
          "title": "Option (2): omega(t) rises and levels off, A(t) stays constant",
          "width": 372,
@@ -10298,17 +10343,22 @@
        "drawn": {
         "method": "physics_spec",
         "renderer": "code/lib/physics_figure.py",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "spec",
+        "status": "drawn",
         "checks": {
-         "renders": "not_on_print",
+         "renders": "pass",
          "print_match": "not a vector figure: drawn from the spec",
          "angles": "none claimed",
          "netlist": "not a circuit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q035_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q035_option_3_afd0dec8_13112026.svg",
+         "sha256": "afd0dec80899bd2b80068989042f32ffddd59cada823b9423a55179a3a90baf4",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "spec": {
          "title": "Option (3): omega(t) rises and levels off; A(t) falls and levels off",
          "width": 370,
@@ -10475,17 +10525,22 @@
        "drawn": {
         "method": "physics_spec",
         "renderer": "code/lib/physics_figure.py",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "spec",
+        "status": "drawn",
         "checks": {
-         "renders": "not_on_print",
+         "renders": "pass",
          "print_match": "not a vector figure: drawn from the spec",
          "angles": "none claimed",
          "netlist": "not a circuit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q035_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q035_option_4_3d5a2255_13112026.svg",
+         "sha256": "3d5a2255c3d8cab3db1e7b487d8f62bc4814c857eb78faba30ebcdb3b34fd131",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "spec": {
          "title": "Option 4: omega(t) and A(t) both rise with t and level off",
          "width": 372,
@@ -11356,17 +11411,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "1 claimed, all within 1.5 deg",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q038_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q038_question_2ced9a13_13112026.svg",
+        "sha256": "2ced9a13f518c906cce94f5a4546bf53d36ca7c9986ae196e3f54ab0fcf02563",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Liquid surface y(x) in a tank rising to meet the wall at x = L at angle θ0 with the horizontal",
         "width": 460,
@@ -12630,17 +12690,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q043_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q043_question_b3b63a88_13112026.svg",
+        "sha256": "b3b63a880c2d7d7d1417b721cbe99403c71d463e2450437ed1e1f0d8e3fe9d40",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "Three equal rods 2K, K, 2K in series between walls at 3T and T, junctions T1 and T2",
         "width": 450,
@@ -13479,17 +13544,22 @@
       "drawn": {
        "method": "physics_spec",
        "renderer": "code/lib/physics_figure.py",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "spec",
+       "status": "drawn",
        "checks": {
-        "renders": "not_on_print",
+        "renders": "pass",
         "print_match": "not a vector figure: drawn from the spec",
         "angles": "none claimed",
         "netlist": "not a circuit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q045_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q045_question_793b1a60_13112026.svg",
+        "sha256": "793b1a607924b5f58781f0760df2945d4a54a2b027f76ae26535aff12951e6a3",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "spec": {
         "title": "A solid sphere of radius 2R with a sphere of radius R cut out, touching its rim on the X-axis",
         "width": 460,
@@ -15516,7 +15586,7 @@
    "flags": [],
    "question": {
     "full_text": "The major product of the following reaction is\n[Figure: 4-oxo-4-phenylbutanenitrile →[(i) $\\ce{CH3MgBr}$ (excess); (ii) $\\ce{H3O+}$]]\n[Structures: 4-oxo-4-phenylbutanenitrile [SMILES: N#CCCC(=O)c1ccccc1]]\n(1) 1-phenylpentane-1,4-dione [SMILES: CC(=O)CCC(=O)c1ccccc1]\n(2) 4-hydroxy-4-phenylpentanenitrile [SMILES: CC(O)(CCC#N)c1ccccc1]\n(3) 5-hydroxy-5-phenylhexan-2-one [SMILES: CC(=O)CCC(C)(O)c1ccccc1]\n(4) 2-methyl-5-phenylhexane-2,5-diol [SMILES: CC(C)(O)CCC(C)(O)c1ccccc1]",
-    "html": "<div class=\"q-stem\">The major product of the following reaction is</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q052_959acc9f_12112026.png?v=959acc9ff395\" alt=\"4-oxo-4-phenylbutanenitrile →[(i) $\\ce{CH3MgBr}$ (excess); (ii) $\\ce{H3O+}$]\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"\" alt=\"1-phenylpentane-1,4-dione\"><span class=\"name\">1-phenylpentane-1,4-dione</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"\" alt=\"4-hydroxy-4-phenylpentanenitrile\"><span class=\"name\">4-hydroxy-4-phenylpentanenitrile</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"\" alt=\"5-hydroxy-5-phenylhexan-2-one\"><span class=\"name\">5-hydroxy-5-phenylhexan-2-one</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"\" alt=\"2-methyl-5-phenylhexane-2,5-diol\"><span class=\"name\">2-methyl-5-phenylhexane-2,5-diol</span></span></li></ol>",
+    "html": "<div class=\"q-stem\">The major product of the following reaction is</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q052_959acc9f_12112026.png?v=959acc9ff395\" alt=\"4-oxo-4-phenylbutanenitrile →[(i) $\\ce{CH3MgBr}$ (excess); (ii) $\\ce{H3O+}$]\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_1_s1_a63fd430_13112026.svg?v=a63fd43043aa\" alt=\"1-phenylpentane-1,4-dione\"><span class=\"name\">1-phenylpentane-1,4-dione</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_2_s1_8c97e108_13112026.svg?v=8c97e1082509\" alt=\"4-hydroxy-4-phenylpentanenitrile\"><span class=\"name\">4-hydroxy-4-phenylpentanenitrile</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_3_s1_ee402273_13112026.svg?v=ee402273f967\" alt=\"5-hydroxy-5-phenylhexan-2-one\"><span class=\"name\">5-hydroxy-5-phenylhexan-2-one</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_4_s1_aa1f17be_13112026.svg?v=aa1f17be1c1d\" alt=\"2-methyl-5-phenylhexane-2,5-diol\"><span class=\"name\">2-methyl-5-phenylhexane-2,5-diol</span></span></li></ol>",
     "stem": "The major product of the following reaction is",
     "format": "plain",
     "statements": [],
@@ -15538,16 +15608,21 @@
       "drawn": {
        "method": "smiles",
        "renderer": "RDKit (code/lib/chem_cards.py)",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "rdkit",
+       "status": "drawn",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 not_run",
         "print_match": "not a vector figure: drawn by RDKit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q052_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_question_9b66f803_13112026.svg",
+        "sha256": "9b66f803f9251fcef6068e9c12637cf766e59169f45e3be1138df9a2dee3fe06",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "kind": "reaction",
        "reaction_smiles": null,
        "species": [
@@ -15559,7 +15634,12 @@
          "inchikey": "OSPRTYTUQJCKFF-UHFFFAOYSA-N",
          "name_check": "not_run",
          "shown_as": null,
-         "image": null
+         "image": {
+          "path": "figures_drawn/2025_47/q052_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_question_s1_a1080a66_13112026.svg",
+          "sha256": "a1080a6621d267704bb4adb90c7f7672b1f785edd8ea4e04b6c66debf91ef97b",
+          "type": "image/svg+xml"
+         }
         }
        ],
        "scheme": [
@@ -15600,7 +15680,12 @@
       "inchikey": "OSPRTYTUQJCKFF-UHFFFAOYSA-N",
       "name_check": "not_run",
       "shown_as": null,
-      "image": null
+      "image": {
+       "path": "figures_drawn/2025_47/q052_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_question_s1_a1080a66_13112026.svg",
+       "sha256": "a1080a6621d267704bb4adb90c7f7672b1f785edd8ea4e04b6c66debf91ef97b",
+       "type": "image/svg+xml"
+      }
      }
     ],
     "options": [
@@ -15616,7 +15701,12 @@
         "inchikey": "RBLXWIPBPPVLPU-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q052_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_1_s1_a63fd430_13112026.svg",
+         "sha256": "a63fd43043aaa205a1f319017ba554e85507bdfd35ac020d94237c354a58bf2b",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -15634,16 +15724,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q052_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_1_b3504fc1_13112026.svg",
+         "sha256": "b3504fc101c090a340bcd88c04597cd525a75d3eb04f8b81271cf39246f8883f",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -15655,7 +15750,12 @@
           "inchikey": "RBLXWIPBPPVLPU-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q052_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_1_s1_a63fd430_13112026.svg",
+           "sha256": "a63fd43043aaa205a1f319017ba554e85507bdfd35ac020d94237c354a58bf2b",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
@@ -15687,7 +15787,12 @@
         "inchikey": "IWCZXCPRRYTZQA-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q052_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_2_s1_8c97e108_13112026.svg",
+         "sha256": "8c97e108250988ca9f31a57f41407ee04487da5933e66977bdba53ba0db488f7",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -15705,16 +15810,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q052_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_2_1db07f17_13112026.svg",
+         "sha256": "1db07f17c29ebf581bb21a3d6f58ce34c84137971578af71d60f6d9b9cbf8f8a",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -15726,7 +15836,12 @@
           "inchikey": "IWCZXCPRRYTZQA-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q052_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_2_s1_8c97e108_13112026.svg",
+           "sha256": "8c97e108250988ca9f31a57f41407ee04487da5933e66977bdba53ba0db488f7",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
@@ -15758,7 +15873,12 @@
         "inchikey": "KALYVRQBPIMGAP-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q052_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_3_s1_ee402273_13112026.svg",
+         "sha256": "ee402273f967ca534e634f2846f15386da0c949a6accd895084619cf88bae3cf",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -15776,16 +15896,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q052_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_3_98046aea_13112026.svg",
+         "sha256": "98046aea2fb156d99bcba741223e6844dc90db88cb8ca5d4ca159b282a860621",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -15797,7 +15922,12 @@
           "inchikey": "KALYVRQBPIMGAP-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q052_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_3_s1_ee402273_13112026.svg",
+           "sha256": "ee402273f967ca534e634f2846f15386da0c949a6accd895084619cf88bae3cf",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
@@ -15829,7 +15959,12 @@
         "inchikey": "GVVZLJVZLDEPTM-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q052_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_4_s1_aa1f17be_13112026.svg",
+         "sha256": "aa1f17be1c1d5917f80c9ce003d369035e3e70c74328d8f730e79d5713056e0a",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -15847,16 +15982,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q052_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_4_a531cf58_13112026.svg",
+         "sha256": "a531cf5855097f7060556329cbbfcd286b4c50c3cf466139e89f85eace560486",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -15868,7 +16008,12 @@
           "inchikey": "GVVZLJVZLDEPTM-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q052_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q052_option_4_s1_aa1f17be_13112026.svg",
+           "sha256": "aa1f17be1c1d5917f80c9ce003d369035e3e70c74328d8f730e79d5713056e0a",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
@@ -16484,16 +16629,21 @@
       "drawn": {
        "method": "smiles",
        "renderer": "RDKit (code/lib/chem_cards.py)",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "rdkit",
+       "status": "drawn",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "3 not_run",
         "print_match": "not a vector figure: drawn by RDKit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q055_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q055_question_20b5352a_13112026.svg",
+        "sha256": "20b5352a1805e4fa0d3b2b2b6efe9d4a8bfee175cd86c2c08d8e34569d631c1d",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -16505,7 +16655,12 @@
          "inchikey": "UHOVQNZJYSORNB-UHFFFAOYSA-N",
          "name_check": "not_run",
          "shown_as": null,
-         "image": null
+         "image": {
+          "path": "figures_drawn/2025_47/q055_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q055_question_s1_897e45fa_13112026.svg",
+          "sha256": "897e45faf5ac3a1ebd436737b2019765c11423a9faf5f7f7c33f0f95f9c4cac1",
+          "type": "image/svg+xml"
+         }
         },
         {
          "label": "II",
@@ -16515,7 +16670,12 @@
          "inchikey": "UEXCJVNBTNXOEH-UHFFFAOYSA-N",
          "name_check": "not_run",
          "shown_as": null,
-         "image": null
+         "image": {
+          "path": "figures_drawn/2025_47/q055_question_s2.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q055_question_s2_c94c96e8_13112026.svg",
+          "sha256": "c94c96e80223d05805f7d9619ce9cffc5aab85a921132855cbbbdc35046989ea",
+          "type": "image/svg+xml"
+         }
         },
         {
          "label": "III",
@@ -16525,7 +16685,12 @@
          "inchikey": "OOXWYYGXTJLWHA-UHFFFAOYSA-N",
          "name_check": "not_run",
          "shown_as": null,
-         "image": null
+         "image": {
+          "path": "figures_drawn/2025_47/q055_question_s3.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q055_question_s3_543bf18d_13112026.svg",
+          "sha256": "543bf18da187d5ab9469740e8531aee6a9df6149d2e8f824b70df3d8f7845598",
+          "type": "image/svg+xml"
+         }
         }
        ],
        "scheme": null,
@@ -16595,7 +16760,12 @@
       "inchikey": "UHOVQNZJYSORNB-UHFFFAOYSA-N",
       "name_check": "not_run",
       "shown_as": null,
-      "image": null
+      "image": {
+       "path": "figures_drawn/2025_47/q055_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q055_question_s1_897e45fa_13112026.svg",
+       "sha256": "897e45faf5ac3a1ebd436737b2019765c11423a9faf5f7f7c33f0f95f9c4cac1",
+       "type": "image/svg+xml"
+      }
      },
      {
       "label": "II",
@@ -16605,7 +16775,12 @@
       "inchikey": "UEXCJVNBTNXOEH-UHFFFAOYSA-N",
       "name_check": "not_run",
       "shown_as": null,
-      "image": null
+      "image": {
+       "path": "figures_drawn/2025_47/q055_question_s2.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q055_question_s2_c94c96e8_13112026.svg",
+       "sha256": "c94c96e80223d05805f7d9619ce9cffc5aab85a921132855cbbbdc35046989ea",
+       "type": "image/svg+xml"
+      }
      },
      {
       "label": "III",
@@ -16615,7 +16790,12 @@
       "inchikey": "OOXWYYGXTJLWHA-UHFFFAOYSA-N",
       "name_check": "not_run",
       "shown_as": null,
-      "image": null
+      "image": {
+       "path": "figures_drawn/2025_47/q055_question_s3.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q055_question_s3_543bf18d_13112026.svg",
+       "sha256": "543bf18da187d5ab9469740e8531aee6a9df6149d2e8f824b70df3d8f7845598",
+       "type": "image/svg+xml"
+      }
      }
     ],
     "options": [
@@ -17385,7 +17565,7 @@
    "flags": [],
    "question": {
     "full_text": "Which one of the following reactions does NOT give benzene as the product?\n(1) benzenediazonium chloride [SMILES: N#[N+]c1ccccc1.[Cl-]] $\\mathrm{C_6H_5{-}\\overset{\\oplus}{N}{\\equiv}N\\,\\overset{\\ominus}{Cl}} \\xrightarrow[\\text{warm}]{\\mathrm{H_2O}}$\n(2) sodium benzoate [SMILES: O=C([O][Na])c1ccccc1] $\\mathrm{C_6H_5{-}\\overset{O}{\\overset{\\|}{C}}{-}ONa} \\xrightarrow[\\Delta]{\\text{sodalime}}$\n(3) hexane [SMILES: CCCCCC] n-hexane $\\xrightarrow[773\\,\\mathrm{K},\\ 10-20\\,\\mathrm{atm}]{\\mathrm{Mo_2O_3}}$\n(4) ethyne [SMILES: C#C] $\\mathrm{H{-}C{\\equiv}C{-}H} \\xrightarrow[\\text{at } 873\\,\\mathrm{K}]{\\text{red hot Iron Tube}}$",
-    "html": "<div class=\"q-stem\">Which one of the following reactions does NOT give benzene as the product?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"\" alt=\"benzenediazonium chloride\"><span class=\"name\">benzenediazonium chloride</span></span> <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-<span class=\"ovs ovs-over\"><span class=\"ovs-l\">⊕</span><span class=\"ovs-b\">N</span></span>≡N&thinsp;<span class=\"ovs ovs-over\"><span class=\"ovs-l\">⊖</span><span class=\"ovs-b\">Cl</span></span></span> <span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">H<sub>2</sub>O</span></span><span class=\"xa-l\"></span><span class=\"xa-b\"><span class=\"up\">warm</span></span></span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"\" alt=\"sodium benzoate\"><span class=\"name\">sodium benzoate</span></span> <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-<span class=\"ovs ovs-over\"><span class=\"ovs-l\">O</span><span class=\"ovs-b\"><span class=\"ovs ovs-over\"><span class=\"ovs-l\">|</span><span class=\"ovs-b\">C</span></span></span></span>-ONa</span> <span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">sodalime</span></span><span class=\"xa-l\"></span><span class=\"xa-b\">Δ</span></span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"\" alt=\"hexane\"><span class=\"name\">hexane</span></span> n-hexane <span class=\"math\"><span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">Mo<sub>2</sub>O<sub>3</sub></span></span><span class=\"xa-l\"></span><span class=\"xa-b\">773&thinsp;<span class=\"up\">K</span>,&nbsp;10-20&thinsp;<span class=\"up\">atm</span></span></span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"\" alt=\"ethyne\"><span class=\"name\">ethyne</span></span> <span class=\"math\"><span class=\"up\">H-C≡C-H</span> <span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">red hot Iron Tube</span></span><span class=\"xa-l\"></span><span class=\"xa-b\"><span class=\"up\">at </span> 873&thinsp;<span class=\"up\">K</span></span></span></span></li></ol>",
+    "html": "<div class=\"q-stem\">Which one of the following reactions does NOT give benzene as the product?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_1_s1_4b8392d3_13112026.svg?v=4b8392d3967f\" alt=\"benzenediazonium chloride\"><span class=\"name\">benzenediazonium chloride</span></span> <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-<span class=\"ovs ovs-over\"><span class=\"ovs-l\">⊕</span><span class=\"ovs-b\">N</span></span>≡N&thinsp;<span class=\"ovs ovs-over\"><span class=\"ovs-l\">⊖</span><span class=\"ovs-b\">Cl</span></span></span> <span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">H<sub>2</sub>O</span></span><span class=\"xa-l\"></span><span class=\"xa-b\"><span class=\"up\">warm</span></span></span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_2_s1_7598f968_13112026.svg?v=7598f96857ae\" alt=\"sodium benzoate\"><span class=\"name\">sodium benzoate</span></span> <span class=\"math\"><span class=\"up\">C<sub>6</sub>H<sub>5</sub>-<span class=\"ovs ovs-over\"><span class=\"ovs-l\">O</span><span class=\"ovs-b\"><span class=\"ovs ovs-over\"><span class=\"ovs-l\">|</span><span class=\"ovs-b\">C</span></span></span></span>-ONa</span> <span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">sodalime</span></span><span class=\"xa-l\"></span><span class=\"xa-b\">Δ</span></span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_3_s1_186f7c1a_13112026.svg?v=186f7c1a376e\" alt=\"hexane\"><span class=\"name\">hexane</span></span> n-hexane <span class=\"math\"><span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">Mo<sub>2</sub>O<sub>3</sub></span></span><span class=\"xa-l\"></span><span class=\"xa-b\">773&thinsp;<span class=\"up\">K</span>,&nbsp;10-20&thinsp;<span class=\"up\">atm</span></span></span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_4_s1_978eec55_13112026.svg?v=978eec557075\" alt=\"ethyne\"><span class=\"name\">ethyne</span></span> <span class=\"math\"><span class=\"up\">H-C≡C-H</span> <span class=\"xarr xa-right\"><span class=\"xa-t\"><span class=\"up\">red hot Iron Tube</span></span><span class=\"xa-l\"></span><span class=\"xa-b\"><span class=\"up\">at </span> 873&thinsp;<span class=\"up\">K</span></span></span></span></li></ol>",
     "stem": "Which one of the following reactions does NOT give benzene as the product?",
     "format": "plain",
     "statements": [],
@@ -17406,7 +17586,12 @@
         "inchikey": "CLRSZXHOSMKUIB-UHFFFAOYSA-M",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q059_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_1_s1_4b8392d3_13112026.svg",
+         "sha256": "4b8392d3967f9a4c5f360f2c9855a801fe28889ecefc4538234eec428af9a681",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -17424,16 +17609,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q059_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_1_a1b32bb5_13112026.svg",
+         "sha256": "a1b32bb5064e3aa875a05a62172a99512a583551f020cedd4175670003e46f9d",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "reaction",
         "reaction_smiles": "N#[N+]c1ccccc1.[Cl-]>O>",
         "species": [
@@ -17445,7 +17635,12 @@
           "inchikey": "CLRSZXHOSMKUIB-UHFFFAOYSA-M",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q059_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_1_s1_4b8392d3_13112026.svg",
+           "sha256": "4b8392d3967f9a4c5f360f2c9855a801fe28889ecefc4538234eec428af9a681",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": [
@@ -17489,7 +17684,12 @@
         "inchikey": "WXMKPNITSTVMEF-UHFFFAOYSA-M",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q059_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_2_s1_7598f968_13112026.svg",
+         "sha256": "7598f96857ae90dba4fd7e464fbe894b4000e1f3df950f102e505cfc68472160",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -17507,16 +17707,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q059_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_2_6e25a314_13112026.svg",
+         "sha256": "6e25a31457971acbca4d8cac14742774eb253513df7ccbf56086d6b4697b70d3",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "reaction",
         "reaction_smiles": "O=C(O[Na])c1ccccc1>>",
         "species": [
@@ -17528,7 +17733,12 @@
           "inchikey": "WXMKPNITSTVMEF-UHFFFAOYSA-M",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q059_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_2_s1_7598f968_13112026.svg",
+           "sha256": "7598f96857ae90dba4fd7e464fbe894b4000e1f3df950f102e505cfc68472160",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": [
@@ -17572,7 +17782,12 @@
         "inchikey": "VLKZOEOYAKHREP-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q059_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_3_s1_186f7c1a_13112026.svg",
+         "sha256": "186f7c1a376eac37aafc73427e3fc0d1e1d1b6c725591f4fa12e616565bb9e67",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -17590,16 +17805,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q059_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_3_111afa60_13112026.svg",
+         "sha256": "111afa60acc185ca23d290fd5be921dfeaa8570ba0e0e63ce4b9c587758cd7a8",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "reaction",
         "reaction_smiles": "CCCCCC>>",
         "species": [
@@ -17611,7 +17831,12 @@
           "inchikey": "VLKZOEOYAKHREP-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q059_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_3_s1_186f7c1a_13112026.svg",
+           "sha256": "186f7c1a376eac37aafc73427e3fc0d1e1d1b6c725591f4fa12e616565bb9e67",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": [
@@ -17655,7 +17880,12 @@
         "inchikey": "HSFWRNGVRCDJHI-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q059_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_4_s1_978eec55_13112026.svg",
+         "sha256": "978eec55707520ae780202714a5da9654eb57d6dbcdb1f7d7c2a43c67994e2b4",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -17673,16 +17903,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q059_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_4_28b03d8b_13112026.svg",
+         "sha256": "28b03d8b9495026682f25e118b22059fb5f78f8c776dcbead18ed0e779cde29b",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "reaction",
         "reaction_smiles": "C#C>>",
         "species": [
@@ -17694,7 +17929,12 @@
           "inchikey": "HSFWRNGVRCDJHI-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q059_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q059_option_4_s1_978eec55_13112026.svg",
+           "sha256": "978eec55707520ae780202714a5da9654eb57d6dbcdb1f7d7c2a43c67994e2b4",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": [
@@ -18083,7 +18323,7 @@
    "flags": [],
    "question": {
     "full_text": "Which one of the following compounds does not decolourize bromine water?\n(1) aniline [SMILES: Nc1ccccc1] $-\\mathrm{NH_2}$\n(2) cyclohexane [SMILES: C1CCCCC1]\n(3) phenol [SMILES: Oc1ccccc1] $-\\mathrm{OH}$\n(4) styrene [SMILES: C=Cc1ccccc1] $-\\mathrm{CH=CH_2}$",
-    "html": "<div class=\"q-stem\">Which one of the following compounds does not decolourize bromine water?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"\" alt=\"aniline\"><span class=\"name\">aniline</span></span> <span class=\"math\">-<span class=\"up\">NH<sub>2</sub></span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"\" alt=\"cyclohexane\"><span class=\"name\">cyclohexane</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"\" alt=\"phenol\"><span class=\"name\">phenol</span></span> <span class=\"math\">-<span class=\"up\">OH</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"\" alt=\"styrene\"><span class=\"name\">styrene</span></span> <span class=\"math\">-<span class=\"up\">CH=CH<sub>2</sub></span></span></li></ol>",
+    "html": "<div class=\"q-stem\">Which one of the following compounds does not decolourize bromine water?</div><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_1_s1_683d14ef_13112026.svg?v=683d14ef9e7b\" alt=\"aniline\"><span class=\"name\">aniline</span></span> <span class=\"math\">-<span class=\"up\">NH<sub>2</sub></span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_2_s1_ef6bcaee_13112026.svg?v=ef6bcaeed89d\" alt=\"cyclohexane\"><span class=\"name\">cyclohexane</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_3_s1_7acdbee5_13112026.svg?v=7acdbee57e06\" alt=\"phenol\"><span class=\"name\">phenol</span></span> <span class=\"math\">-<span class=\"up\">OH</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_4_s1_3df9db29_13112026.svg?v=3df9db29da10\" alt=\"styrene\"><span class=\"name\">styrene</span></span> <span class=\"math\">-<span class=\"up\">CH=CH<sub>2</sub></span></span></li></ol>",
     "stem": "Which one of the following compounds does not decolourize bromine water?",
     "format": "plain",
     "statements": [],
@@ -18104,7 +18344,12 @@
         "inchikey": "PAYRUJLWNCNPSJ-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q061_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_1_s1_683d14ef_13112026.svg",
+         "sha256": "683d14ef9e7b23d55fb23f086d57cfb2712445d67b71f6e93e2886e89f53408d",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -18122,16 +18367,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q061_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_1_47bcf013_13112026.svg",
+         "sha256": "47bcf013ccedbe732aee8188191276efb484018f6e51433f8688e3eda46c8d92",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -18143,7 +18393,12 @@
           "inchikey": "PAYRUJLWNCNPSJ-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q061_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_1_s1_683d14ef_13112026.svg",
+           "sha256": "683d14ef9e7b23d55fb23f086d57cfb2712445d67b71f6e93e2886e89f53408d",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
@@ -18178,7 +18433,12 @@
         "inchikey": "XDTMQSROBMDMFD-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q061_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_2_s1_ef6bcaee_13112026.svg",
+         "sha256": "ef6bcaeed89db40438e1703d29f4559a93f2bddc49c8481d9304873a7bc61c21",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -18196,16 +18456,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q061_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_2_d4b438f5_13112026.svg",
+         "sha256": "d4b438f5cf520dbff3e065d59e713e263051d18e51418b3205f7cbdfd8aaac15",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -18217,7 +18482,12 @@
           "inchikey": "XDTMQSROBMDMFD-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q061_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_2_s1_ef6bcaee_13112026.svg",
+           "sha256": "ef6bcaeed89db40438e1703d29f4559a93f2bddc49c8481d9304873a7bc61c21",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
@@ -18249,7 +18519,12 @@
         "inchikey": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q061_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_3_s1_7acdbee5_13112026.svg",
+         "sha256": "7acdbee57e06b43e6530de61f93781da71b967e5a3797c8f908c0a7da8eb2bf6",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -18267,16 +18542,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q061_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_3_e22551bf_13112026.svg",
+         "sha256": "e22551bfbe60bcd9a337f7b52b182d5869ca6871751b048cc31a4079b4eef710",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -18288,7 +18568,12 @@
           "inchikey": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q061_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_3_s1_7acdbee5_13112026.svg",
+           "sha256": "7acdbee57e06b43e6530de61f93781da71b967e5a3797c8f908c0a7da8eb2bf6",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
@@ -18323,7 +18608,12 @@
         "inchikey": "PPBRXRYQALVLMV-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q061_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_4_s1_3df9db29_13112026.svg",
+         "sha256": "3df9db29da1085e243fd1141f4f00ba61cdf6d3d904844f522937135183dc80c",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -18341,16 +18631,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q061_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_4_1441aa60_13112026.svg",
+         "sha256": "1441aa6013f47f2ea86a27499624cc7094accf343f8677b86acd04a9f4292da0",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -18362,7 +18657,12 @@
           "inchikey": "PPBRXRYQALVLMV-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q061_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q061_option_4_s1_3df9db29_13112026.svg",
+           "sha256": "3df9db29da1085e243fd1141f4f00ba61cdf6d3d904844f522937135183dc80c",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
@@ -20896,16 +21196,21 @@
       "drawn": {
        "method": "smiles",
        "renderer": "RDKit (code/lib/chem_cards.py)",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "rdkit",
+       "status": "drawn",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "2 not_run",
         "print_match": "not a vector figure: drawn by RDKit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q073_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q073_question_edf7640e_13112026.svg",
+        "sha256": "edf7640e0348ae5e2c43d1d0672e868512baa69ca215a982265880c54a14f1c1",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "kind": "reaction",
        "reaction_smiles": "COC(=O)c1ccccc1>>O=Cc1ccccc1",
        "species": [
@@ -20917,7 +21222,12 @@
          "inchikey": "QPJVMBTYPHYUOC-UHFFFAOYSA-N",
          "name_check": "not_run",
          "shown_as": null,
-         "image": null
+         "image": {
+          "path": "figures_drawn/2025_47/q073_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q073_question_s1_a63011b1_13112026.svg",
+          "sha256": "a63011b134828089c304c6e564311f7a8059099c9e8caa429fb0d6bf8c0c2dd0",
+          "type": "image/svg+xml"
+         }
         },
         {
          "label": "",
@@ -20927,7 +21237,12 @@
          "inchikey": "HUMNYLRZRPPJDN-UHFFFAOYSA-N",
          "name_check": "not_run",
          "shown_as": null,
-         "image": null
+         "image": {
+          "path": "figures_drawn/2025_47/q073_question_s2.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q073_question_s2_34066c30_13112026.svg",
+          "sha256": "34066c303fa0f724188ddb85c90a1b00db103ca970ecba23b31446e35bd5f836",
+          "type": "image/svg+xml"
+         }
         }
        ],
        "scheme": [
@@ -20978,7 +21293,12 @@
       "inchikey": "QPJVMBTYPHYUOC-UHFFFAOYSA-N",
       "name_check": "not_run",
       "shown_as": null,
-      "image": null
+      "image": {
+       "path": "figures_drawn/2025_47/q073_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q073_question_s1_a63011b1_13112026.svg",
+       "sha256": "a63011b134828089c304c6e564311f7a8059099c9e8caa429fb0d6bf8c0c2dd0",
+       "type": "image/svg+xml"
+      }
      },
      {
       "label": "",
@@ -20988,7 +21308,12 @@
       "inchikey": "HUMNYLRZRPPJDN-UHFFFAOYSA-N",
       "name_check": "not_run",
       "shown_as": null,
-      "image": null
+      "image": {
+       "path": "figures_drawn/2025_47/q073_question_s2.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q073_question_s2_34066c30_13112026.svg",
+       "sha256": "34066c303fa0f724188ddb85c90a1b00db103ca970ecba23b31446e35bd5f836",
+       "type": "image/svg+xml"
+      }
      }
     ],
     "options": [
@@ -21874,16 +22199,21 @@
       "drawn": {
        "method": "smiles",
        "renderer": "RDKit (code/lib/chem_cards.py)",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "rdkit",
+       "status": "drawn",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 not_run",
         "print_match": "not a vector figure: drawn by RDKit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q077_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q077_question_f853015b_13112026.svg",
+        "sha256": "f853015b5baf62ce752b997c8e02840c52baacb30b9f49f4da4b54ab5e33a5ee",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "kind": "structures",
        "reaction_smiles": null,
        "species": [
@@ -21895,7 +22225,12 @@
          "inchikey": "QWTDNUCVQCZILF-UHFFFAOYSA-N",
          "name_check": "not_run",
          "shown_as": null,
-         "image": null
+         "image": {
+          "path": "figures_drawn/2025_47/q077_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q077_question_s1_511df345_13112026.svg",
+          "sha256": "511df345913738e8067854a2ac80489a45ee8f8e81005e0d602e6877e80d8b8d",
+          "type": "image/svg+xml"
+         }
         }
        ],
        "scheme": null,
@@ -21924,7 +22259,12 @@
       "inchikey": "QWTDNUCVQCZILF-UHFFFAOYSA-N",
       "name_check": "not_run",
       "shown_as": null,
-      "image": null
+      "image": {
+       "path": "figures_drawn/2025_47/q077_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q077_question_s1_511df345_13112026.svg",
+       "sha256": "511df345913738e8067854a2ac80489a45ee8f8e81005e0d602e6877e80d8b8d",
+       "type": "image/svg+xml"
+      }
      }
     ],
     "options": [
@@ -23747,7 +24087,7 @@
    "flags": [],
    "question": {
     "full_text": "Predict the major product ‘P’ in the following sequence of reactions-\n[Figure: 1-methylcyclopentene →[(i) HBr, benzoyl peroxide (ii) KCN (iii) Na (Hg)/C₂H₅OH] P (Major)]\n[Structures: 1-methylcyclopentene [SMILES: CC1=CCCC1]]\n(1) 1-isocyano-1-methylcyclopentane [SMILES: [C-]#[N+]C1(C)CCCC1]\n(2) (2-methylcyclopentyl)methanamine [SMILES: CC1CCCC1CN]\n(3) (1-methylcyclopentyl)methanamine [SMILES: CC1(CN)CCCC1]\n(4) 1-isocyano-2-methylcyclopentane [SMILES: [C-]#[N+]C1CCCC1C]",
-    "html": "<div class=\"q-stem\">Predict the major product ‘P’ in the following sequence of reactions-</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q086_6d12625d_12112026.png?v=6d12625d0ebc\" alt=\"1-methylcyclopentene →[(i) HBr, benzoyl peroxide (ii) KCN (iii) Na (Hg)/C₂H₅OH] P (Major)\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"\" alt=\"1-isocyano-1-methylcyclopentane\"><span class=\"name\">1-isocyano-1-methylcyclopentane</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"\" alt=\"(2-methylcyclopentyl)methanamine\"><span class=\"name\">(2-methylcyclopentyl)methanamine</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"\" alt=\"(1-methylcyclopentyl)methanamine\"><span class=\"name\">(1-methylcyclopentyl)methanamine</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"\" alt=\"1-isocyano-2-methylcyclopentane\"><span class=\"name\">1-isocyano-2-methylcyclopentane</span></span></li></ol>",
+    "html": "<div class=\"q-stem\">Predict the major product ‘P’ in the following sequence of reactions-</div><figure class=\"q-fig\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/12112026/neet_papers/2025/2025_47/figures_agent/q086_6d12625d_12112026.png?v=6d12625d0ebc\" alt=\"1-methylcyclopentene →[(i) HBr, benzoyl peroxide (ii) KCN (iii) Na (Hg)/C₂H₅OH] P (Major)\" loading=\"lazy\"></figure><ol class=\"q-options\"><li><span class=\"key\">(1)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_1_s1_04f33e2f_13112026.svg?v=04f33e2f8cdf\" alt=\"1-isocyano-1-methylcyclopentane\"><span class=\"name\">1-isocyano-1-methylcyclopentane</span></span></li><li><span class=\"key\">(2)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_2_s1_ab2a6c66_13112026.svg?v=ab2a6c66d3cf\" alt=\"(2-methylcyclopentyl)methanamine\"><span class=\"name\">(2-methylcyclopentyl)methanamine</span></span></li><li><span class=\"key\">(3)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_3_s1_edea0e4c_13112026.svg?v=edea0e4c050d\" alt=\"(1-methylcyclopentyl)methanamine\"><span class=\"name\">(1-methylcyclopentyl)methanamine</span></span></li><li><span class=\"key\">(4)</span><span class=\"chem\"><img src=\"https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_4_s1_9a48159f_13112026.svg?v=9a48159fb854\" alt=\"1-isocyano-2-methylcyclopentane\"><span class=\"name\">1-isocyano-2-methylcyclopentane</span></span></li></ol>",
     "stem": "Predict the major product ‘P’ in the following sequence of reactions-",
     "format": "plain",
     "statements": [],
@@ -23769,16 +24109,21 @@
       "drawn": {
        "method": "smiles",
        "renderer": "RDKit (code/lib/chem_cards.py)",
-       "layout": null,
-       "status": "not_on_print",
+       "layout": "rdkit",
+       "status": "drawn",
        "checks": {
         "smiles_parse": "pass",
         "name_check": "1 not_run",
         "print_match": "not a vector figure: drawn by RDKit",
-        "printed_text": "not_on_print"
+        "printed_text": "pass"
        },
-       "image": null,
-       "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+       "image": {
+        "path": "figures_drawn/2025_47/q086_question.svg",
+        "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_question_d5af3461_13112026.svg",
+        "sha256": "d5af346193dfda590ae460723cff42705c4f279584009c0597295066475213fb",
+        "type": "image/svg+xml"
+       },
+       "message": null,
        "kind": "reaction",
        "reaction_smiles": null,
        "species": [
@@ -23790,7 +24135,12 @@
          "inchikey": "ATQUFXWBVZUTKO-UHFFFAOYSA-N",
          "name_check": "not_run",
          "shown_as": null,
-         "image": null
+         "image": {
+          "path": "figures_drawn/2025_47/q086_question_s1.svg",
+          "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_question_s1_45b15073_13112026.svg",
+          "sha256": "45b15073c151d9230256ef28fe83c51d455eda56610dfcdeb93ca6053bd736dd",
+          "type": "image/svg+xml"
+         }
         }
        ],
        "scheme": [
@@ -23839,7 +24189,12 @@
       "inchikey": "ATQUFXWBVZUTKO-UHFFFAOYSA-N",
       "name_check": "not_run",
       "shown_as": null,
-      "image": null
+      "image": {
+       "path": "figures_drawn/2025_47/q086_question_s1.svg",
+       "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_question_s1_45b15073_13112026.svg",
+       "sha256": "45b15073c151d9230256ef28fe83c51d455eda56610dfcdeb93ca6053bd736dd",
+       "type": "image/svg+xml"
+      }
      }
     ],
     "options": [
@@ -23855,7 +24210,12 @@
         "inchikey": "YXRFEAGVUZNDAO-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q086_option_1_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_1_s1_04f33e2f_13112026.svg",
+         "sha256": "04f33e2f8cdf7cf734b70b838aab8f788148130d2c02e0736fda78fe2c097737",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -23873,16 +24233,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q086_option_1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_1_03bb7f14_13112026.svg",
+         "sha256": "03bb7f143d00ee8d6c3d853c70ee3a5c45f2cedcc97b0833d7f1fd2e33fb0e29",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -23894,7 +24259,12 @@
           "inchikey": "YXRFEAGVUZNDAO-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q086_option_1_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_1_s1_04f33e2f_13112026.svg",
+           "sha256": "04f33e2f8cdf7cf734b70b838aab8f788148130d2c02e0736fda78fe2c097737",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
@@ -23926,7 +24296,12 @@
         "inchikey": "AXJPIFGJTJJDJR-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q086_option_2_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_2_s1_ab2a6c66_13112026.svg",
+         "sha256": "ab2a6c66d3cf4dc763fccebe8ca2f5cdb0e99ed330ecba2d838ab149826619ed",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -23944,16 +24319,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q086_option_2.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_2_eed98034_13112026.svg",
+         "sha256": "eed9803479cb6f151864bf0133007b6d6a36f9e65e54c2544a4fc2dc05a96f99",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -23965,7 +24345,12 @@
           "inchikey": "AXJPIFGJTJJDJR-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q086_option_2_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_2_s1_ab2a6c66_13112026.svg",
+           "sha256": "ab2a6c66d3cf4dc763fccebe8ca2f5cdb0e99ed330ecba2d838ab149826619ed",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
@@ -23997,7 +24382,12 @@
         "inchikey": "GCMLGSALHMDQFS-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q086_option_3_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_3_s1_edea0e4c_13112026.svg",
+         "sha256": "edea0e4c050d73fb063d5e50c2b62abe7e166170a6f125d4eca36ec5e5c29920",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -24015,16 +24405,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q086_option_3.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_3_1fc2f42a_13112026.svg",
+         "sha256": "1fc2f42ada14961d06c657382b9ceaee63dd5aecd0ad9a650ca490060c9d840a",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -24036,7 +24431,12 @@
           "inchikey": "GCMLGSALHMDQFS-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q086_option_3_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_3_s1_edea0e4c_13112026.svg",
+           "sha256": "edea0e4c050d73fb063d5e50c2b62abe7e166170a6f125d4eca36ec5e5c29920",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
@@ -24068,7 +24468,12 @@
         "inchikey": "ACOFJHBORVEDCZ-UHFFFAOYSA-N",
         "name_check": "not_run",
         "shown_as": null,
-        "image": null
+        "image": {
+         "path": "figures_drawn/2025_47/q086_option_4_s1.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_4_s1_9a48159f_13112026.svg",
+         "sha256": "9a48159fb8540a48a627ddecdbb245641d54c8c41c7a4d05acd0197a97f0e360",
+         "type": "image/svg+xml"
+        }
        }
       ],
       "figure": {
@@ -24086,16 +24491,21 @@
        "drawn": {
         "method": "smiles",
         "renderer": "RDKit (code/lib/chem_cards.py)",
-        "layout": null,
-        "status": "not_on_print",
+        "layout": "rdkit",
+        "status": "drawn",
         "checks": {
          "smiles_parse": "pass",
          "name_check": "1 not_run",
          "print_match": "not a vector figure: drawn by RDKit",
-         "printed_text": "not_on_print"
+         "printed_text": "pass"
         },
-        "image": null,
-        "message": "not drawn: the booklet prints this figure as a picture, so there is no printed geometry to draw it on or check it against; the printed copy is the figure",
+        "image": {
+         "path": "figures_drawn/2025_47/q086_option_4.svg",
+         "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_4_d5fbb4bf_13112026.svg",
+         "sha256": "d5fbb4bfd5c2bafd8be20e0482003a3a834f1448aa7a5cabf88fa2d7b8193db3",
+         "type": "image/svg+xml"
+        },
+        "message": null,
         "kind": "structures",
         "reaction_smiles": null,
         "species": [
@@ -24107,7 +24517,12 @@
           "inchikey": "ACOFJHBORVEDCZ-UHFFFAOYSA-N",
           "name_check": "not_run",
           "shown_as": null,
-          "image": null
+          "image": {
+           "path": "figures_drawn/2025_47/q086_option_4_s1.svg",
+           "cdn_url": "https://d30lmobgrc5gb8.cloudfront.net/general/13112026/neet_papers/2025/2025_47/figures_drawn/q086_option_4_s1_9a48159f_13112026.svg",
+           "sha256": "9a48159fb8540a48a627ddecdbb245641d54c8c41c7a4d05acd0197a97f0e360",
+           "type": "image/svg+xml"
+          }
          }
         ],
         "scheme": null,
