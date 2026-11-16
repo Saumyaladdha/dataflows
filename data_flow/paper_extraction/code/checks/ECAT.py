@@ -41,7 +41,13 @@ BEHAVIOUR = [re.compile(p, re.I) for p in (
     r"\ba\s+common\s+(?:error|mistake|trap|choice)\b",
     r"\bno\s+student\b",
     r"\b(?:very\s+)?tempting\b",
-    r"\bthe\s+majority\b",
+    # "the majority" ALONE IS NOT A HEADCOUNT. It is a semiconductor term (majority carriers) and
+    # an ordinary quantifier in biology (cortical nephrons, the majority, have short loops), and
+    # as a bare pattern it rejected three correct routes before it caught a single real claim.
+    # What the rule is actually about is a claim that most PEOPLE do something, so the pattern
+    # now needs either a word for the people or a verb of choosing.
+    r"\bthe\s+majority\s+(?:of\s+(?:students|candidates|them|test[\s-]?takers)"
+    r"|(?:pick|choose|select|mark|go\s+for|fall\s+for)s?)\b",
 )]
 
 
@@ -120,10 +126,19 @@ def check(output, item=None, record=None, root=".", **_kwargs):
         if label not in traps_allowed:
             problems.append("%s: trap %r is not in allowed_values.trap_v2" % (where, label))
 
-        # (2) no trap on the key
+        # (2) no trap on the key -- and "the key" is EVERY ACCEPTED OPTION, not just the first.
+        # A paper that awards two options prints both in `accepted_answers` while
+        # `correct_answer` holds only one of them. Reading the single field made this file
+        # contradict itself: rule 2 forbade covering an awarded option and rule 8 then demanded
+        # coverage of that same option, so six ratings across four papers failed for doing
+        # exactly what the rulebook asks ("where it holds more than one option, rule 3 must
+        # clear EVERY accepted option"). The agents were right; the check was reading one field.
         key = str(q.get("correct_answer") or "")
-        if opt and key and str(opt) == key:
-            problems.append("%s: the trap sits on option %s, which is the official answer"
+        accepted = {str(a) for a in (q.get("accepted_answers") or []) if a}
+        if key:
+            accepted.add(key)
+        if opt and str(opt) in accepted:
+            problems.append("%s: the trap sits on option %s, which is an official answer"
                             % (where, opt))
         if label == "no_trap" and opt:
             problems.append("%s: `no_trap` must not name an option" % where)
@@ -133,7 +148,69 @@ def check(output, item=None, record=None, root=".", **_kwargs):
             problems.append("%s: the record is source_incomplete, so the trap %r is inferred "
                             "from damage" % (where, label))
 
-        # (5) no claims about students
+        # (6) A REAL TRAP IS CARRIED AT THE DEPTH THE REVIEWED ARTIFACTS USE. The label and a
+        #     single route sentence were never the teaching -- the 60 questions the subject
+        #     experts signed off name who falls, why the option feels right, and the student's
+        #     own steps with the breaking one marked. A tag without those is a classification,
+        #     and a classification is what the SMEs asked us to stop shipping.
+        others = r.get("other_options") or []
+        if label != "no_trap":
+            for field in ("who", "feels"):
+                if not (trap.get(field) or "").strip():
+                    problems.append("%s: the trap names no `%s`" % (where, field))
+            if not (trap.get("ways") or []):
+                problems.append("%s: the trap walks no route -- give the student's steps with "
+                                "the breaking one marked `bad`" % where)
+
+        # (7) EVERY BAD STEP CARRIES ITS FIX, and every route breaks somewhere. A route whose
+        #     steps are all `ok` has described a correct solution, not a trap.
+        for holder, tag in [(trap, "trap")] + [(o, "option %s" % o.get("option")) for o in others]:
+            for way in (holder.get("ways") or []):
+                marks = [s.get("mark") for s in (way.get("steps") or [])]
+                if "bad" not in marks:
+                    problems.append("%s: %s has a route with no `bad` step -- it never breaks"
+                                    % (where, tag))
+                for step in (way.get("steps") or []):
+                    if step.get("mark") == "bad" and not (step.get("fix") or "").strip():
+                        problems.append("%s: %s has a `bad` step with no `fix`" % (where, tag))
+
+        # (8) EVERY WRONG OPTION IS ACCOUNTED FOR. The artifacts explain all of them; a page that
+        #     explains one and leaves two blank is the gap the SMEs read as missing work. A
+        #     `filler` is a finding, but rule 5.3 of the shared rules requires it be proved.
+        # A DISPUTED KEY SUSPENDS THE COVERAGE RULE, and only when the rater says so out loud.
+        # Four ratings across two papers hit the contradiction this resolves: the stored key was
+        # contradicted by the paper's own printed answer line (2021_O1 q170 stores "1" while the
+        # line reads "Answer: (a) or (d)") or by the source the question is built on (2018_NN
+        # q110 ferrous/ferric, q120 pachytene/diplotene, q175 alpha/beta 1->6). In each the rater
+        # left the possibly-awarded option unassigned -- which is what rule 2 demands -- and rule
+        # 8 then failed them for it. Forcing coverage there would put a trap on an option that
+        # may be an answer, so the exception is allowed; it costs nothing, because it only opens
+        # when `verdict` is `arguable_key` or `disputed_key` is flagged, both of which a reviewer
+        # sees. An uncovered option with no such declaration still fails.
+        disputed = (r.get("verdict") == "arguable_key"
+                    or "disputed_key" in (r.get("flags") or []))
+        if label != "no_trap" and accepted and not disputed \
+                and q.get("review_status") != "source_incomplete":
+            wrong = {str(n) for n in "1234"} - accepted
+            covered = ({str(opt)} if opt else set()) | {str(o.get("option")) for o in others}
+            missing = sorted(wrong - covered)
+            if missing:
+                problems.append("%s: wrong option(s) %s carry no trap and no filler finding"
+                                % (where, ", ".join(missing)))
+        for o in others:
+            if o.get("role") == "filler" and not (o.get("proof") or "").strip():
+                problems.append("%s: option %s is called filler with no `proof` of what was "
+                                "checked" % (where, o.get("option")))
+            if o.get("role") == "trap" and not (o.get("ways") or []):
+                problems.append("%s: option %s is called a trap but walks no route"
+                                % (where, o.get("option")))
+            if str(o.get("option")) in accepted:
+                problems.append("%s: option %s is an official answer and cannot be a trap or a "
+                                "filler" % (where, o.get("option")))
+
+        # (5) no claims about students -- over every field a reader sees, not only the two the
+        #     first cut of this rule covered. 150 of 179 routes on 2026_11 opened with a
+        #     headcount, so the surface this scans is the surface that drifts.
         for field in ("reason", "note"):
             text = r.get(field) or ""
             for pat in BEHAVIOUR:
@@ -141,11 +218,26 @@ def check(output, item=None, record=None, root=".", **_kwargs):
                     problems.append("%s: `%s` claims what students do (%r) -- say what the "
                                     "ROUTE is instead" % (where, field, pat.pattern))
                     break
-        for pat in BEHAVIOUR:
-            if pat.search(trap.get("route") or ""):
-                problems.append("%s: the trap route claims what students do (%r)"
-                                % (where, pat.pattern))
-                break
+        prose = [("trap route", trap.get("route")), ("trap who", trap.get("who")),
+                 ("trap feels", trap.get("feels"))]
+        for holder, tag in [(trap, "trap")] + [(o, "option %s" % o.get("option")) for o in others]:
+            if holder is not trap:
+                prose += [("%s who" % tag, holder.get("who")),
+                          ("%s feels" % tag, holder.get("feels")),
+                          ("%s proof" % tag, holder.get("proof"))]
+            for way in (holder.get("ways") or []):
+                prose.append(("%s way name" % tag, way.get("name")))
+                for step in (way.get("steps") or []):
+                    prose.append(("%s step" % tag, step.get("text")))
+                    prose.append(("%s fix" % tag, step.get("fix")))
+        for tag, text in prose:
+            if not text:
+                continue
+            for pat in BEHAVIOUR:
+                if pat.search(text):
+                    problems.append("%s: the %s claims what students do (%r)"
+                                    % (where, tag, pat.pattern))
+                    break
 
     if problems:
         return False, "; ".join(problems[:6])

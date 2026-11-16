@@ -63,6 +63,24 @@ PACKET_SIZE = 6
 PREFIX = "ex"          # never collides with the v1 or `v2__` packet names
 
 
+def _option_text(o):
+    """An option's text -- and for a DRAWN option, its figure description instead.
+
+    A graph option carries `text: ""` and its content in `figure.text` ("Graph of
+    1/lambda^2 against E: a straight line through the origin O"). Passing the empty string
+    told the rater the options were blank, and 8 questions of 2024_S1 came back `no_trap`
+    with a route saying the options "were never captured" -- while the descriptions sat one
+    key away in the same record. The reviewer independently flagged 9 of them as "options
+    (picture) extract nahi hue". Nothing was missing from the extraction; the packet dropped
+    it. Prefix the description so the rater is never told a drawing is prose.
+    """
+    txt = str(o.get("text") or "").strip()
+    if txt:
+        return txt
+    fig = (o.get("figure") or {}).get("text")
+    return "[drawn option] %s" % str(fig).strip() if str(fig or "").strip() else ""
+
+
 def _renames():
     allowed = yaml.safe_load(open(rc.pp("config", "allowed_values.yaml"), encoding="utf-8"))
     return (allowed.get("category_retired") or {}).get("question_type") or {}
@@ -70,7 +88,7 @@ def _renames():
 
 def _e1_for(q, renames):
     """(label or None, why) -- E1 decided by script, in the current vocabulary."""
-    opts = {o.get("key"): o.get("text") for o in (q.get("options") or [])}
+    opts = {o.get("key"): _option_text(o) for o in (q.get("options") or [])}
     rec = {
         # Rule 8 (`statements` + combination options -> list_of_statements) tests `structure`,
         # which b3-question-reader records and the export calls `format`. Not passing it meant
@@ -155,7 +173,7 @@ def build(paper_id, apply_=False):
                 "statements": q.get("statements") or [],
                 "list_i": q.get("list_i") or [],
                 "list_ii": q.get("list_ii") or [],
-                "options_en": {o.get("key"): o.get("text") for o in (q.get("options") or [])},
+                "options_en": {o.get("key"): _option_text(o) for o in (q.get("options") or [])},
                 # A PAPER THAT AWARDED TWO OPTIONS STILL HAS A KEY. `publisher` holds one
                 # option and is null when the booklet printed "Answer (1 & 4)", so sending it
                 # alone told the rater the key was missing -- and a missing key reads as a

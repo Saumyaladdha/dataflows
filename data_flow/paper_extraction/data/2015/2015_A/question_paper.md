@@ -43,6 +43,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Reaction outcome** (`reaction`) — what a reaction gives, or the reagent it needs
+- **Concept:** Acid-catalysed alkene isomerisation: protonate, let a 1,2-methyl shift build the most stable carbocation, then lose a proton - so the starting material must already carry the product's carbon skeleton
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 1  
+  A student holding 'strong acid moves the double bond to the more substituted carbon' sees option 1 already carrying an internal, branched $\mathrm{C=C}$ and takes it as one nudge away from the tetrasubstituted target. Moving the double bond inside 2-methyl-2-pentene cannot build the 2,3-dimethylbutane skeleton the product needs.
+- **Why:** This question requires the starting material a named reagent converts to a named product, demonstrated by 'can be prepared by heating which of the following compounds with a strong acid'.
+- **Note:** Option 3 as printed is $\mathrm{C_7H_{14}}$ and so is not an isomer of the $\mathrm{C_6H_{12}}$ product; tagged as printed, and the key (4) is unaffected by it.
+<!--/ecat-->
+
 ## Q2
 
 Chemistry · inorganic · The D- and F-Block Elements – Practice
@@ -79,6 +91,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Writing a lanthanoid configuration: 6s fills before 4f and 5d, and gadolinium promotes exactly one 4f electron to 5d so that 4f stays half-filled
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 2  
+  A student who stores the gadolinium exception as 'some 4f electrons move across into 5d' splits the eight electrons left after $\mathrm{6s^2}$ as $\mathrm{4f^6 5d^2}$, and so throws away the half-filled $\mathrm{4f^7}$ that is the only thing the exception buys.
+- **Why:** This question requires the filling order and the half-filled-shell exception applied to a given atomic number, demonstrated by 'Its atomic number is 64' standing in the stem while all four options already total 64 electrons.
+- **Note:** All four options total 64 electrons, so counting electrons strikes none of them out; only the orbital order and the half-filled exception decide between them.
+<!--/ecat-->
+
 ## Q3
 
 Chemistry · inorganic · Classification of Elements and Periodicity in Properties
@@ -111,6 +135,18 @@ Publisher's solution, as printed:
 ![printed solution 3](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q003_2adf2a56_28102026.png?v=2adf2a56c210)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated reason** (`reason_line`) — a reason NCERT gives: why it happens
+- **Concept:** Why the second electron gain is endothermic: the incoming electron has to be forced onto an ion that is already negative, and that repulsion costs more than the noble-gas configuration returns
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 4  
+  A student who has the mechanism right - the incoming electron is crowded by the charge already there - reaches for 'smaller size' as the way to say crowded, but $\mathrm{O^-}$ is larger than O, so the option states the size order upside down.
+- **Why:** This question requires the reason behind two enthalpies the stem has already supplied, demonstrated by the stem ending 'It is due to the fact that,'.
+- **Note:** E1's pattern read this as the retired `statement_options`. No lettered statement block is printed and the stem is a trailing 'due to the fact that', so under the rule that full-sentence options alone do not make a question `statements`, the qtype recorded is `mcq`.
+<!--/ecat-->
 
 ## Q4
 
@@ -158,6 +194,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Counting structural isomers of $\mathrm{C_3H_9N}$: walk the nitrogen through every position it can take - two primary amines, one secondary, one tertiary
+- **Trap:** **Arithmetic slip** (`arithmetic_slip`) — the number or the unit is wrong, or a step was stopped short — option 2  
+  Three is what the tally gives when one structure is dropped, and two different drops both land on it: counting one amine per class misses the second primary isomer, and drawing the two propylamines plus trimethylamine misses the secondary amine.
+- **Why:** This question requires a count the student generates by enumerating every structure the formula allows, demonstrated by the options being the bare integers 2, 3, 4 and 5 with nothing supplied but 'the molecular formula $\mathrm{C_3H_9N}$'.
+- **Note:** `calculate` is recorded for a tally the student produces by enumeration rather than by arithmetic on printed numbers; no value on the `asks` axis is specific to enumeration, and `apply_rule` was ruled out because a quantity is produced.
+<!--/ecat-->
+
 ## Q5
 
 Chemistry · physical · Chemical Equilibrium
@@ -197,6 +245,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** The equilibrium constant follows the balanced equation it was written for: multiply the equation by $n$ and $K$ is raised to the power $n$, so halving the equation gives $K^{1/2}$
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 4  
+  A student carries the scaling habit of $\Delta H$ - halve the equation, halve the quantity - across to the equilibrium constant and writes $\frac{1}{2}K$. The coefficients are exponents in the mass-action expression, so halving them takes a square root rather than a half.
+- **Why:** This question requires the constant of a rescaled equation, got from the mass-action expression, demonstrated by the options being powers and multiples of $K$ for '$\frac{1}{2}N_2(g) + \frac{1}{2}O_2(g) \rightleftharpoons NO(g)$'.
+- **Note:** `relation` was ruled out: it is reserved for how many times one quantity changes when another does, and the answer here is a power of $K$ derived from the two mass-action expressions, which the axis sends to `calculate` even though the result is symbolic.
+<!--/ecat-->
+
 ## Q6
 
 Chemistry · physical · Ionic Equilibrium
@@ -233,6 +293,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Two answers** (`two_part`) — the answer has two halves, usually joined by 'respectively'
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** An acidic buffer needs a weak acid together with the salt of that same acid; a strong acid is completely ionised, so it and its salt hold no reserve to buffer with
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 4  
+  Acetic acid with sodium acetate is the acidic buffer the chapter is built around, so a student reading the stem as 'which pair IS an acidic buffer' lands on the pair they can name. It is a genuine acidic buffer, which is exactly what disqualifies it from a stem carrying 'not'.
+- **Why:** This question requires the buffer criterion applied to four acid-and-salt pairs, demonstrated by the one failing pair being '$\mathrm{HClO_4}$ and $\mathrm{NaClO_4}$', whose acid is strong.
+- **Note:** E1's pattern returned `plain_mcq`, but each option is a pair of solutions accepted or rejected whole, which is the rulebook's §1 `pair_options` shape; `two_part` is the nearest value on the current qtype axis and is recorded in place of `mcq`. The stem's task carries 'not'.
+<!--/ecat-->
+
 ## Q7
 
 Chemistry · physical · Electrochemistry
@@ -267,6 +339,17 @@ Publisher's solution, as printed:
 ![printed solution 7](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q007_c1c82526_28102026.png?v=c1c825267099)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Comparison** (`compare`) — the difference between two things, or the correct pairing
+- **Concept:** Conductivity of a solution is set by how many ions the solute actually furnishes: a strong electrolyte dissociates almost completely, a weak one only partly, a non-electrolyte not at all
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  Acetic acid is the acid NCERT prints beside HCl when it contrasts weak electrolytes with strong ones, so a student who knows acids conduct reaches for the acid they have just seen conducting. Acetic acid ionises only slightly, so it supplies far fewer ions than HCl, which dissociates almost completely.
+- **Why:** This question requires the four solutes to be sorted by how completely they ionise in water, demonstrated by the superlative 'best conductor of electric current' standing over a sugar, a weak base, a weak acid and a strong acid.
+<!--/ecat-->
 
 ## Q8
 
@@ -303,6 +386,18 @@ Publisher's solution, as printed:
 ![printed solution 8](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q008_98eb6a8f_28102026.png?v=98eb6a8ff20a)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Caprolactam ring-opens and polymerises on its own to give Nylon-6, whereas Nylon-6,6 is built from two monomers, hexamethylenediamine and adipic acid
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 2  
+  Caprolactam is held in memory as 'the nylon monomer', and the two nylon names differ only by a repeated 6, so the whole answer rests on a digit. Nylon-6,6 needs two different monomers; caprolactam alone gives Nylon-6.
+- **Why:** This question requires the stated monomer-to-polymer pairing, demonstrated by the stem 'Caprolactum is used for the manufacture of' naming one monomer while the four options name four polymers.
+- **Note:** The stem prints 'Caprolactum'; copied as printed, the compound being caprolactam.
+<!--/ecat-->
 
 ## Q9
 
@@ -342,6 +437,18 @@ Publisher's solution, as printed:
 ![printed solution 9](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q009_6a666393_28102026.png?v=6a66639315b3)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Comparison** (`compare`) — the difference between two things, or the correct pairing
+- **Concept:** Thermal stability of a carbonate rises with cation size: a small, strongly polarising cation pulls at the carbonate ion and weakens it, so that carbonate gives up $\mathrm{CO_2}$ at the lowest temperature
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  $\mathrm{CaCO_3 \to CaO + CO_2}$ is the carbonate decomposition the chapter actually writes an equation for, so a student who knows alkaline-earth carbonates decompose reaches for the one printed decomposing. Inside group 2 stability rises with cation size, so the smaller, more polarising $\mathrm{Mg^{2+}}$ makes $\mathrm{MgCO_3}$ go first.
+- **Why:** This question requires the cation-size trend in carbonate thermal stability to be read across two groups, demonstrated by 'releases $\mathrm{CO_2}$ most easily' standing over two alkaline-earth and two alkali carbonates.
+- **Note:** The stored solution line is truncated at 'Thermal stability order', so the key's own reasoning is only partly held; stem, options and key are complete and the tagging does not rest on that line.
+<!--/ecat-->
 
 ## Q10
 
@@ -383,6 +490,18 @@ Publisher's solution, as printed:
 ![printed solution 10](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q010_0966546c_28102026.png?v=0966546c1269)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated reason** (`reason_line`) — a reason NCERT gives: why it happens
+- **Concept:** In the oxyacids of phosphorus the $-\mathrm{OH}$ hydrogens are the acidic ones and the P–H hydrogens are the reducing ones, so more P–H bonds means a stronger reducing agent
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  P–H bonds are the right handle on reducing behaviour, but 'two $-\mathrm{OH}$ and one P–H' are the counts for $\mathrm{H_3PO_3}$, the oxyacid printed in the row next to $\mathrm{H_3PO_2}$. $\mathrm{H_3PO_2}$ has one $-\mathrm{OH}$ and two P–H bonds, which is why it reduces more strongly than $\mathrm{H_3PO_3}$.
+- **Why:** This question requires the reason the source gives for a granted property, demonstrated by the stem 'Strong reducing behaviour of $\mathrm{H_3PO_2}$ is due to' with four rival causes as options.
+- **Note:** E1's pattern called this statement_options, a retired value; under the qtype rule that long sentences as options do not make a question 'statements', and with no lettered block printed, the shape is recorded as mcq. Options 2 and 3 print 'p – H bond' with a lowercase p, read here as P–H.
+<!--/ecat-->
 
 ## Q11
 
@@ -430,6 +549,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Sequence** (`order`) — a sequence to put in the right order, or a trend to arrange
+- **Concept:** Stability of $\mathrm{O_2}$ and its ions follows molecular-orbital bond order, and every electron added to the antibonding $\pi^*$ orbitals cuts the bond order by a half
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 4  
+  Bond order runs 2.5, 2.0, 1.5, 1.0 from $\mathrm{O_2^{+}}$ to $\mathrm{O_2^{2-}}$, and this option is that same list written the other way round — which is where a student lands by ranking the species by charge, or by writing the sequence as an increasing one.
+- **Why:** This question requires the four species to be ranked by molecular-orbital bond order, demonstrated by 'Decreasing order of stability' with four complete sequences as options.
+- **Note:** E1's pattern called this arrange_in_order, a retired value with no counterpart on the current qtype axis; the printed shape is a plain four-option MCQ whose answers are sequences, so the ordering is carried by asks: order. The stored solution line is truncated at 'Given species'.
+<!--/ecat-->
+
 ## Q12
 
 Chemistry · physical · Basic Concepts of Chemistry
@@ -467,6 +598,17 @@ Publisher's solution, as printed:
 ![printed solution 12](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q012_c97247c2_28102026.png?v=c97247c27b33)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Number of molecules equals moles times Avogadro's number, so amounts stated in grams, moles and molecules must all be converted to one currency before they can be compared
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 1  
+  18 is water's molar mass, so this option is the one the chapter's worked line is about: $18\,\mathrm{g}$ of water is one mole, $6.02\times10^{23}$ molecules. That answers 'which of these is one mole', not 'which is maximum' — 18 moles holds $1.08\times10^{25}$ molecules, eighteen times more.
+- **Why:** This question requires the four stated amounts to be converted into molecule counts before they are compared, demonstrated by options printing 18 in three different units — '$18\,\text{gram}$', '$18\,\text{moles}$', '18 molecules'.
+<!--/ecat-->
 
 ## Q13
 
@@ -537,6 +679,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Two answers** (`two_part`) — the answer has two halves, usually joined by 'respectively'
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Isostructural means the same VSEPR shape: count bond pairs and lone pairs on the central atom, not bond angles
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 1  
+  $\mathrm{NH_3}$ and $\mathrm{PH_3}$ are the pair the textbook contrasts for bond angle, $107^\circ$ against about $94^\circ$, so that stored contrast is read as 'these two differ'; the angles do differ, but both molecules are trigonal pyramidal, which is what isostructural asks about.
+- **Why:** This question requires VSEPR applied to each printed species to get its shape, demonstrated by 'both the species are not isostructural' set against $\mathrm{XeF_4}, \mathrm{XeO_4}$, whose shapes part only once the two lone pairs on $\mathrm{XeF_4}$ are counted.
+- **Note:** The pattern returned plain_mcq, but each option is a pair of species accepted or rejected whole, so the shape on the page is a pair option. The retired E1 value pair_options has no direct successor among the six current qtype values, and two_part is the nearest, since the answer must hold of both members together. Flagging the mapping rather than flattening it to mcq.
+<!--/ecat-->
+
 ## Q14
 
 Chemistry · organic · Hydrocarbons
@@ -576,6 +730,18 @@ Publisher's solution, as printed:
 ![printed solution 14](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q014_c7664c06_28102026.png?v=c7664c062ce6)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Reaction outcome** (`reaction`) — what a reaction gives, or the reagent it needs
+- **Concept:** Markovnikov addition puts the chlorine on the more substituted carbon, so the alkene must carry its double bond at the ring carbon that already bears the methyl group
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  Options 1, 2 and 4 arrived as empty strings and option 3 carries only the word 'and', so the four structure drawings are not in this packet and no distractor can be read, let alone a route to one.
+- **Why:** This question requires Markovnikov's rule run backwards from a printed product to the alkene that gives it, demonstrated by 'to give a product 1-chloro-1-methylcyclohexane. The possible reaction alkene is'.
+- **Note:** Source incomplete: the option set is four structure images that did not survive extraction, and option 3, the printed key, retains only the connecting word 'and', which suggests two structures were offered together. The stem and key are intact and are tagged as printed. A reviewer holding the paper should check whether both the ring alkene and the exocyclic alkene appear in option 3, since Markovnikov addition of $\mathrm{HCl}$ to either gives the same tertiary chloride; that is the mechanism to confirm, not a finding from this record.
+<!--/ecat-->
 
 ## Q15
 
@@ -633,6 +799,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Permanganate consumed per mole is set by the total electrons the salt can give up: the $\mathrm{Fe^{2+}}$ plus any oxidisable anion
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 4  
+  $\mathrm{FeSO_3}$ differs from the key $\mathrm{FeSO_4}$ by one oxygen, so 'sulphate is a spectator in a permanganate titration' gets carried across to sulphite; sulphite is itself oxidised to sulphate, which makes $\mathrm{FeSO_3}$ 3 electrons per mole against 1 for $\mathrm{FeSO_4}$.
+- **Why:** This question requires the electron count per mole worked out for each salt, demonstrated by 'same moles of which of the following compounds will require the least amount of acidified $\mathrm{KMnO_4}$' printed against three oxidisable anions and one that is not.
+- **Note:** look_alike_term chosen over nearby_fact by the swap test named in 5.1: replace $\mathrm{FeSO_3}$ with an anion that does not resemble sulphate and nothing pulls, so the one-oxygen likeness is carrying the student, not table position. asks is calculate rather than compare because the decision rests on a number produced per option, 1, 3, 5 and 3 electrons, even though the answer form is a formula.
+<!--/ecat-->
+
 ## Q16
 
 Chemistry · organic · Alcohols, Phenols and Ethers
@@ -672,6 +850,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Reaction outcome** (`reaction`) — what a reaction gives, or the reagent it needs
+- **Concept:** Reimer-Tiemann: dichlorocarbene installs $-\mathrm{CHCl_2}$ ortho to the phenolic $\mathrm{OH}$, and the alkali then hydrolyses it to $-\mathrm{CHO}$
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 1  
+  $-\mathrm{CHCl_2}$ is the group the dichlorocarbene really does install, so running the mechanism to the carbene attack and stopping there reports it; the stem asks what is present 'finally', and the alkali already in the flask hydrolyses $-\mathrm{CHCl_2}$ to $-\mathrm{CHO}$.
+- **Why:** This question requires the product of a named reagent pair acting on phenol, demonstrated by 'chloroform in presence of dilute sodium hydroxide finally introduces which one of the following functional group'.
+<!--/ecat-->
+
 ## Q17
 
 Chemistry · physical · The Solid State
@@ -707,6 +896,18 @@ Publisher's solution, as printed:
 ![printed solution 17](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q017_a01e7df0_28102026.png?v=a01e7df03b9b)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** A body-centred cubic cell packs 68% of its volume, so the empty space is the complement, 32%
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  26% is the vacant space on the ccp and hcp line of the same packing-efficiency table, one row from bcc, so reaching into that table and landing on the 74% entry returns $100-74=26$ in place of $100-68=32$.
+- **Why:** This question requires NCERT's stored packing efficiency for the body-centred cell, demonstrated by 'the vacant space in bcc lattice unit cell is' with no edge length, radius or sphere count supplied to compute from.
+- **Note:** asks is fact_line rather than calculate because the stem supplies no numbers at all; the single step past the stored value is its complement, and the printed answer line, 'Packing efficiency in bcc lattice = 68%', is that stored value.
+<!--/ecat-->
 
 ## Q18
 
@@ -757,6 +958,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Statements** (`statements`) — lettered statements, the answer is which combination is right
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** In a binary compound the more electronegative element takes the -ide name, so $\mathrm{OF_2}$ is oxygen difluoride, a fluoride of oxygen and not an oxide of fluorine
+- **Trap:** **Arithmetic slip** (`arithmetic_slip`) — the number or the unit is wrong, or a step was stopped short — option 1  
+  Totalling the valence electrons of $\mathrm{O_2N^-}$ while leaving out the electron the negative charge brings gives 17 against 18 for $\mathrm{ONF}$, so the isoelectronic claim comes out false and gets marked as the incorrect statement.
+- **Why:** This question requires each printed claim judged against the line NCERT states, demonstrated by '$\mathrm{OF_2}$ is an oxide of fluorine' being the one that inverts the naming rule, fluorine being the more electronegative of the two.
+- **Note:** qtype is statements because the stem itself says 'which of the statements given below is incorrect', which is the test in rule 1, and the pattern's statement_options agrees. The task is negated, so the three wrong options are all true claims; the trap is placed on the one whose check has a nameable failing step rather than spread across all three, since a polarity flip alone selects no single option.
+<!--/ecat-->
+
 ## Q19
 
 Chemistry · inorganic · Coordination Compounds – Practice
@@ -793,6 +1006,18 @@ Publisher's solution, as printed:
 ![printed solution 19](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q019_74b7a6d3_28102026.png?v=74b7a6d38e95)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Naming a complex anion: ligands first with the -ido ending, then the metal's Latin stem with -ate, with the oxidation state in brackets
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 4  
+  The -ito ending is a real ligand suffix - nitrito, sulfito - so a student who knows the modern ligand name ends in that kind of cluster but not which letter reaches for 'cyanito'. The ligand $\mathrm{CN^-}$ is named cyanido, so only option 2 spells it as the convention does.
+- **Why:** This question requires the IUPAC rules for naming a complex anion run over a printed formula, demonstrated by the stem supplying only '$\mathrm{[Fe(CN)_6]^{3-}}$' while the options differ one rule-element at a time - the count prefix, the ligand suffix, and whether the metal is written 'iron' or 'ferrate'.
+- **Note:** Ruled out old_ncert_answer: the older textbook form 'hexacyanoferrate(III)' is not printed among the options, so there is no altered line with the book's own answer sitting as a distractor. Applied the §5.1 swap test on option 4 - replace 'cyanito' with an unlike word and the pull dies, so likeness is doing the work, not position.
+<!--/ecat-->
 
 ## Q20
 
@@ -832,6 +1057,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** The mole is a counting unit: Avogadro's number fixes how many particles a mole holds and so fixes molar mass, while a ratio of amounts is a pure number and does not move with it
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  Avogadro's number is introduced in the same passage as the gram-scale definition - it is the count of atoms in 12 g of carbon-12 - so a student holding that pairing concludes that moving the count must move the gram. The gram is fixed independently of any count; what moves is the mass of one mole of carbon, from 12 g to 0.012 g.
+- **Why:** This question requires the definition of the mole applied to a hypothetical change in a constant, demonstrated by the stem's '$\mathrm{N_A}$ ... changed from $6.022\times10^{23}$ to $6.022\times10^{20}$' and four options naming different things the change might touch.
+- **Note:** E1's pattern read the four options as full statements, but they are noun phrases completing the stem 'this would change:', not claims to be graded, so the printed shape is a plain MCQ. Applied the §5.1 swap test on option 3: 'the definition of mass in units of grams' is not a name resembling 'the mass of one mole of carbon' - it is the line printed beside it in the definition of the mole, so position carries the student and the label is nearby_fact.
+<!--/ecat-->
+
 ## Q21
 
 Chemistry · organic · General Organic Chemistry
@@ -867,6 +1104,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Statements** (`statements`) — lettered statements, the answer is which combination is right
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** A nucleophile is an electron-rich species that donates an electron pair, which makes it a Lewis base and never a Lewis acid
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 2  
+  'Nucleophiles are not electron seeking' is the only option whose own wording is negative, so a student tracking one negation reads it as the statement that clashes with the stem. Nucleophiles really are not electron-seeking - that describes electrophiles - so this statement is true, and ticking it answers 'which statement is correct' instead of the question asked.
+- **Why:** This question requires the stated definition of a nucleophile as an electron-rich electron-pair donor, demonstrated by 'Nucleophile is a Lewis acid' being the one option that contradicts it while the other three restate it.
+- **Note:** E1's statement_options maps onto qtype statements here because the stem itself says 'Which of the following statements is not correct', which is the test in the brief's rule 1. The trap turns on the negated task rather than on chemistry: option 2 is a true statement.
+<!--/ecat-->
+
 ## Q22
 
 Chemistry · physical · States of Matter
@@ -901,6 +1150,18 @@ Publisher's solution, as printed:
 ![printed solution 22](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q022_741d355b_28102026.png?v=741d355b94f3)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Real gases approach ideal behaviour where intermolecular attraction and molecular volume stop mattering - high temperature and low pressure
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 4  
+  The sentence carried out of this chapter is that real gases deviate most at low temperature and high pressure, and option 4 prints exactly that pair. The stem asks for the corner where the gas obeys the law, which is the opposite end of the same sentence.
+- **Why:** This question requires the stated condition under which a real gas behaves ideally, demonstrated by the stem offering no property of carbon monoxide to work from - 'a gas such as carbon monoxide' - while the options are the four corners of high or low temperature crossed with high or low pressure.
+- **Note:** E1's pattern read the options as full statements; they are temperature-pressure condition pairs, so the printed shape is a plain MCQ. Options 1 and 2 each keep one of the two conditions, so half_right would describe two options at once rather than naming the single catch; option 4 prints the remembered deviation condition whole, which is why reversed is the question's trap.
+<!--/ecat-->
 
 ## Q23
 
@@ -940,6 +1201,18 @@ Publisher's solution, as printed:
 ![printed solution 23](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q023_46f5c9db_28102026.png?v=46f5c9db8463)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Valence bond theory for four-coordinate Ni(II): a strong-field ligand pairs the $d^8$ electrons, frees a $3d$ orbital and gives square planar $dsp^2$ instead of tetrahedral $sp^3$
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 4  
+  Four ligands around Ni(II) is the picture of $\mathrm{[NiCl_4]^{2-}}$, which is tetrahedral $sp^3$, so a student who reads the coordination number and stops carries that result across. $\mathrm{CN^-}$ is strong-field: it pairs the $d^8$ electrons, frees a $3d$ orbital, and the hybridisation is $dsp^2$.
+- **Why:** This question requires valence bond theory applied to a named complex, demonstrated by the stem supplying 'Atomic number of Ni = $28$' so that the $d^8$ count and the four $\mathrm{CN^-}$ ligands together decide the hybridisation.
+- **Note:** condition_missed rather than new_trap, per the §5.1 reading that it covers a remembered result used past the point its own condition holds: 'four-coordinate Ni(II) is tetrahedral $sp^3$' holds for weak-field ligands, and the printed ligand $\mathrm{CN^-}$ is where it breaks.
+<!--/ecat-->
 
 ## Q24
 
@@ -981,6 +1254,18 @@ Publisher's solution, as printed:
 ![printed solution 24](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q024_267dc9d1_28102026.png?v=267dc9d1e245)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Scaling a molar enthalpy of combustion by the amount actually formed, and keeping the negative sign an exothermic change carries
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 4  
+  The stem asks for the heat RELEASED, and heat given out is naturally written as a positive amount, so a student with the magnitude $315$ kJ right signs it $+$. Released heat is an exothermic enthalpy change, and the stem's own datum is printed as $-393.5$ kJ/mol.
+- **Why:** This question requires a per-mole enthalpy scaled by the amount formed, demonstrated by the stem giving '$-393.5$ kJ/mol' and asking for the heat on forming '$35.2$ g of $\mathrm{CO_2}$'.
+- **Note:** The exact value is $-314.8$ kJ and the key prints $-315$ kJ; the rounding is the paper's own and does not bear on the tagging.
+<!--/ecat-->
 
 ## Q25
 
@@ -1026,6 +1311,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Percentage purity by stoichiometry: convert the weighed product back to the reactant through the balanced equation, then divide by the sample mass
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 1  
+  Reading the 8.0 g of MgO left in the dish as the part of the sample that was never carbonate makes the 12 g that vanished look like the carbonate, and $12/20$ prints as 60. The oxide came from the carbonate: $8.0/40 = 0.2$ mol of MgO means $0.2 \times 84 = 16.8$ g of MgCO$_3$, so 84.
+- **Why:** This question requires a number computed from the stem's masses through the balanced decomposition, demonstrated by 'What will be the percentage purity of magnesium carbonate in the sample?' with the atomic weight of Mg supplied and all four options bare numbers.
+<!--/ecat-->
+
 ## Q26
 
 Chemistry · physical · Basic Concepts of Chemistry
@@ -1063,6 +1359,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Mole fraction from molality: 1 mol of solute sits in 1000 g of water, which is 55.5 mol, and the solute's own mole belongs in the total
+- **Trap:** **Arithmetic slip** (`arithmetic_slip`) — the number or the unit is wrong, or a step was stopped short — option 3  
+  The setup $1/(1 + 55.5)$ is right and the reciprocal of 56.5 is taken one decimal place out, printing 0.177 — exactly ten times the answer. One solute mole among 55.5 water moles is one part in about 56, so the figure has to begin 0.01.
+- **Why:** This question requires a number computed from the stem's concentration, demonstrated by 'the mole fraction of the solute in a $1.00\,\mathrm{m}$ aqueous solution' with four numerical options.
+- **Note:** The one conceptual slip this calculation invites — leaving the solute's own mole out of the total, $1/55.5 = 0.0180$ — is not printed and rounds onto the key, so the three wrong options are the key scaled by 2, 10 and 100.
+<!--/ecat-->
+
 ## Q27
 
 Chemistry · physical · The Solid State
@@ -1096,6 +1404,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Statements** (`statements`) — lettered statements, the answer is which combination is right
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** A Frenkel defect moves an ion into an interstitial hole, so the density is unchanged; a Schottky defect removes cation-anion pairs, so the density falls
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 4  
+  The density drop is the fact printed in the same breath as the two defect names, so a student who holds 'a point defect lowers the density' without holding which defect loses mass attaches it to Frenkel. In a Frenkel defect nothing leaves the crystal.
+- **Why:** This question requires the fact the textbook states about each defect, demonstrated by 'The correct statement regarding defects in crystalline solids is' with each option a finished claim about one defect's nature, examples or density effect.
+- **Note:** E1 read this as statement_options, which is the retired vocabulary; no lettered block is printed, but the stem asks for the correct statement, so qtype is statements. On the nearby_fact against look_alike_term test: substituting two unlike words for Frenkel and Schottky leaves the pull intact, because the two defects' density facts are printed side by side, so position is doing the work.
+<!--/ecat-->
+
 ## Q28
 
 Chemistry · inorganic · The p–Block Elements
@@ -1128,6 +1448,18 @@ Publisher's solution, as printed:
 ![printed solution 28](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q028_bc3af8b7_28102026.png?v=bc3af8b7d813)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Sequence** (`order`) — a sequence to put in the right order, or a trend to arrange
+- **Concept:** Inert pair effect: down group 13 the s electrons are held back, so the +1 state becomes more stable from Al to Tl while the +3 state becomes less so
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 1  
+  The +3 state's stability really does fall down the group, so a student holding one group-13 trend applies it to +1 and writes the increasing sequence the other way round, with Tl lowest and Al highest.
+- **Why:** This question requires an ordering of named elements by one trend, demonstrated by 'the stability of $+1$ oxidation state among Al, Ga, In and TI increases in the sequence' with four full sequences as options.
+- **Note:** E1 read this as arrange_in_order, which is the retired vocabulary and has no current qtype; the printed shape is a stem with four sequences as options, so qtype is mcq and the ordering is carried by asks order. The printed solution line reads 'Stability of +1 oxidation state due to inert pair effect TI < In < Ga < Al', which is the reverse of keyed option 4 and matches option 1 as written; the key itself is the one the inert pair effect gives, so the question is tagged as keyed and the solution line's direction is flagged here for repair, not re-judged.
+<!--/ecat-->
 
 ## Q29
 
@@ -1168,6 +1500,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** One stereocentre gives exactly two non-superimposable mirror images, which are enantiomers; diastereomers need a second stereocentre and a meso form is optically inactive
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  Diastereomers is the other branch of the split the textbook prints when it divides stereoisomers, and diastereomers are optically active too, so the stem's 'which are optically active' strikes nothing out. What decides it is the single stereocentre, which can only give a mirror-image pair.
+- **Why:** This question requires the rule 'one stereocentre gives a mirror-image pair' applied to the printed compound, demonstrated by the stem naming '$\mathrm{CH_3CHOH \cdot COOH}$' and asking what 'two possible stereo-structures ... which are optically active' are called, a clause diastereomers also satisfy.
+- **Note:** The stem writes lactic acid as $\mathrm{CH_3CHOH \cdot COOH}$; the dot separates the groups rather than marking a hydrate, and the molecule has one stereocentre. On the nearby_fact against look_alike_term test: enantiomers and diastereomers do not resemble each other as words, and replacing them with unlike words leaves the pull intact because they are the two branches of one printed classification, so position decides it.
+<!--/ecat-->
+
 ## Q30
 
 Chemistry · organic · Amines
@@ -1206,6 +1550,18 @@ Publisher's solution, as printed:
 ![printed solution 30](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q030_a76cc5c8_28102026.png?v=a76cc5c8e561)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Reaction outcome** (`reaction`) — what a reaction gives, or the reagent it needs
+- **Concept:** Benzoylation of an amine by benzoyl chloride in aqueous alkali is the Schotten-Baumann reaction, the alkali taking up the HCl released
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  Acylation of aniline is taught through acetyl chloride making acetanilide, the example printed beside benzoylation, so a student who recognises 'acid chloride plus aniline gives an amide' names the acetyl case. The acyl group here is benzoyl, and benzoylation in alkali carries its own name.
+- **Why:** This question requires naming the transformation a printed reagent effects on a printed substrate, demonstrated by the scheme 'aniline + benzoyl chloride, NaOH over the arrow, N-phenylbenzamide' and four reaction names as options.
+- **Note:** The stem is 'The following reaction is known by the name:' and the scheme arrived with the packet, both as the printed figure and as its text, so the reaction was readable and a trap could be tagged; this is not the bare-figure case. Option 2 is printed 'Schotten-Baumen', a misspelling of Schotten-Baumann, and the key is that option.
+<!--/ecat-->
 
 ## Q31
 
@@ -1247,6 +1603,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Coordination number counts donor atoms, not ligands, so two en and one oxalate give six; the metal's oxidation state then follows from balancing the single chloride outside the sphere.
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 4  
+  Two bidentate en and one bidentate oxalate give six donor atoms, and 6 is printed as an option, so the work stops at the coordination number the stem names first and the $+3$ is never added.
+- **Why:** This question requires counting donor atoms and balancing charge to produce one number, demonstrated by the stem asking for 'the sum of coordination number and oxidation number of metal M' in '$\mathrm{[M(en)_2(C_2O_4)]Cl}$'.
+<!--/ecat-->
+
 ## Q32
 
 Chemistry · organic · Aldehydes, Ketones, and Carboxylic Acids
@@ -1282,6 +1649,18 @@ Publisher's solution, as printed:
 ![printed solution 32](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q032_e538dba0_28102026.png?v=e538dba0bbf0)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Reaction outcome** (`reaction`) — what a reaction gives, or the reagent it needs
+- **Concept:** Ammonia derivatives such as hydrazine add across the carbonyl and then lose water to give a C=N product, while the other carbonyl nucleophiles stop at the addition product.
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 1  
+  Hydrocyanic acid is the model nucleophilic addition of the carbonyl chapter, so matching on 'nucleophilic addition' and dropping the stem's 'followed by elimination of water' lands here; the cyanohydrin keeps its OH and loses no water.
+- **Why:** This question requires naming the reagent that effects a stated transformation, demonstrated by 'nucleophilic addition followed by elimination of water. The reagent is:'.
+- **Note:** Trap label decided by the rulebook's printed-in-the-stem test: what option 1 drops, 'followed by elimination of water', is printed in the stem, so condition_missed rather than nearby_fact, even though HCN also stands beside the ammonia derivatives in the same section.
+<!--/ecat-->
 
 ## Q33
 
@@ -1320,6 +1699,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** An electron-withdrawing group makes the ester's carbonyl carbon more electrophilic, so alkaline hydrolysis is fastest for the most strongly withdrawing substituent.
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  All four entries in options_en arrived as empty strings, so the four ester structures the comparison turns on are not in this record; the printed solution line names only the deciding rule, that a strong electron-withdrawing group such as nitro raises reactivity, and says nothing about what the other three structures carry, so no option can be named and no route can be checked.
+- **Why:** This question requires applying the substituent-effect rule to rank the printed esters, demonstrated by 'gets hydrolyzed most easily under alkaline conditions' with the solution line 'EWG (Electron withdrawing group) increases reactivity towards nucleophilic substitution reaction'.
+- **Note:** Record damaged: options_en holds four empty strings where the paper prints four ester structures, so the option set as stored cannot support a trap. qtype and asks are read from the stem and the printed solution line, both of which are intact; qtype is recorded as mcq because the current vocabulary has no value for 'the four options are drawn structures', and the printed shape is four esters. A reviewer holding the paper should check whether the keyed structure differs from the others by substituent identity, which would make the trap nearby_fact over a weaker withdrawing group, or only by substituent position, which would make it wrong_site_attacked.
+<!--/ecat-->
+
 ## Q34
 
 Chemistry · organic · Haloalkanes and Haloarenes
@@ -1355,6 +1746,18 @@ Publisher's solution, as printed:
 ![printed solution 34](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q034_4b4e2311_28102026.png?v=4b4e23114e28)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** The SN1 carbocation is planar, but the departing halide still shields the face it left, so the product is nearly racemic with inversion slightly ahead of retention.
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 3  
+  The rule as taught is 'the SN1 intermediate is planar, so both faces are attacked equally and the product racemises', and option 3 is that rule read as exact; the condition it needs, a free cation with both faces clear, fails while the departed halide is still shielding the front face.
+- **Why:** This question requires applying the geometry of the planar SN1 intermediate to a stereocentre, demonstrated by the options setting '$100\%$ racemization' against 'Inversion more than retention leading to partial racemization'.
+- **Note:** Option 3 is defensible on the simplified textbook wording that an SN1 product is a racemic mixture; the printed solution reads 'racemic mixture with slight predominance of that isomer which corresponds to inversion', and the tag follows the printed key.
+<!--/ecat-->
 
 ## Q35
 
@@ -1394,6 +1797,18 @@ Publisher's solution, as printed:
 ![printed solution 35](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q035_0e30fa03_28102026.png?v=0e30fa035a07)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** A rate constant whose unit carries no concentration marks a zero-order reaction, so the product formed is $k t$ and does not depend on how much A is present.
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 4  
+  Reading the rate law as rate $= k[\mathrm{A}]$ pulls the printed $5\,\mathrm{M}$ into the arithmetic: $0.6 \times 10^{-3} \times 5 \times 1200 = 3.60\,\mathrm{M}$, which is option 4.
+- **Why:** This question requires computing a product concentration from a rate constant and an elapsed time, demonstrated by 'the rate constant ... is $0.6 \times 10^{-3}$ mole per second' and 'concentration of B after 20 minutes'.
+- **Note:** The stem prints the rate constant's unit as 'mole per second'; the zero-order arithmetic the printed key follows reads it as mol L$^{-1}$ s$^{-1}$. Tagged as printed.
+<!--/ecat-->
 
 ## Q36
 
@@ -1435,6 +1850,18 @@ Publisher's solution, as printed:
 ![printed solution 36](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q036_397b69cb_28102026.png?v=397b69cbd30a)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Mixing a strong base with a strong acid: subtract the moles, halve the result for the doubled volume, and the leftover hydroxide sets the pH.
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 1  
+  The rule 'a strong acid and a strong base neutralise to a neutral solution' is keyed to the words 'equal volumes', and option 1 is that rule's answer; equal volumes are not equal moles here, because the base is ten times the acid in concentration.
+- **Why:** This question requires computing the pH of the excess left after neutralisation, demonstrated by 'equal volumes of $0.1\,\mathrm{m}$ $\mathrm{NaOH}$ and $0.01\,\mathrm{M}$ $\mathrm{HCl}$ are mixed'.
+- **Note:** The stem prints the base as '0.1 m' in lower case against '0.01 M' for the acid; the key's 12.65 follows from reading both as molar, giving a $0.045\,\mathrm{M}$ hydroxide excess and pOH $1.35$, and the question is tagged as printed.
+<!--/ecat-->
 
 ## Q37
 
@@ -1487,6 +1914,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Stereoisomer count of an octahedral $\mathrm{M(AA)_2X_2}$ complex: a cis and a trans form, and only the cis form is chiral
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 3  
+  The rule carried for an octahedral $\mathrm{M(AA)_2X_2}$ complex is 'cis and trans', so the two geometrical forms are counted and handed in as the total. $2$ is the right count of geometrical isomers, but the stem asks for all possible isomers, and cis-$\mathrm{[Co(en)_2Cl_2]^+}$ is chiral and exists as two enantiomers.
+- **Why:** This question requires the rules of octahedral stereoisomerism applied to a named complex and the resulting forms tallied, demonstrated by 'Number of possible isomers for the complex $\mathrm{[Co(en)_2Cl_2]Cl}$ will be'.
+- **Note:** asks is apply_rule rather than calculate: the stem prints no quantity and nothing is computed, the isomerism rules are applied to this complex and the forms counted. half_right was ruled out by the rule that it never sits on a lone number, and formula_misused was ruled out because the cis/trans rule is remembered correctly, only answered for the narrower category.
+<!--/ecat-->
+
 ## Q38
 
 Chemistry · inorganic · Chemical Bonding and Molecular Structure
@@ -1520,6 +1959,18 @@ Publisher's solution, as printed:
 ![printed solution 38](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q038_6a5dffd1_28102026.png?v=6a5dffd17051)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated reason** (`reason_line`) — a reason NCERT gives: why it happens
+- **Concept:** Hydrogen bonding between HF molecules, not bond strength or bond polarity, is what lifts its boiling point above the other hydrogen halides
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  The textbook sentence that explains hydrogen bonding names the high electronegativity of F, O and N as its condition, so the clause printed inside the explanation gets handed in as the explanation. Electronegativity is why HF hydrogen bonds at all, but on its own it is a bond-polarity claim, and the stem's own order $\mathrm{HI} > \mathrm{HBr} > \mathrm{HCl}$ shows polarity does not set these boiling points.
+- **Why:** This question requires the reason given for HF's place in the series, demonstrated by 'What explains the higher boiling point of hydrogen fluoride?'.
+- **Note:** The pattern classifier called this statement_options because each option is a full sentence; no lettered statement block is printed and the stem asks for an explanation, so the current qtype is mcq. Swap test applied for the trap axis: 'strong hydrogen bonding' and 'electronegativity of fluorine' share no term and do not resemble each other, so likeness is not the pull and look_alike_term is out; what makes the wrong one reachable is that it is printed inside the sentence that states the right one, which is nearby_fact.
+<!--/ecat-->
 
 ## Q39
 
@@ -1569,6 +2020,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Mass percent to moles for the volume actually taken, then $1\!:\!1$ stoichiometry to the mass of AgCl precipitated
+- **Trap:** **Arithmetic slip** (`arithmetic_slip`) — the number or the unit is wrong, or a step was stopped short — option 2  
+  The percentages are read straight off as $16.9\,\mathrm{g}$ and $5.8\,\mathrm{g}$, which are the masses in $100\,\mathrm{mL}$, while only $50\,\mathrm{mL}$ of each is mixed. That puts in $0.1\,\mathrm{mol}$ of each instead of $0.05\,\mathrm{mol}$, and $0.1 \times 143.5 = 14.35 \approx 14\,\mathrm{g}$ is printed.
+- **Why:** This question requires a number worked from the stem's own figures, demonstrated by '$50\,\mathrm{mL}$ of $16.9\%$ solution of $\mathrm{AgNO_3}$' with the four options printed in grams.
+<!--/ecat-->
+
 ## Q40
 
 Chemistry · organic · Hydrocarbons
@@ -1604,6 +2066,18 @@ Publisher's solution, as printed:
 ![printed solution 40](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q040_5cd545ec_28102026.png?v=5cd545ec4355)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Reaction outcome** (`reaction`) — what a reaction gives, or the reagent it needs
+- **Concept:** Catalytic air oxidation of benzene over $\mathrm{V_2O_5}$ cuts the ring down to maleic anhydride, unlike side-chain oxidation which leaves the ring intact
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  Benzoic acid is the oxidation product printed alongside this one in the oxidation of benzene and its homologues, so a student reaching for 'the oxidation product of an aromatic hydrocarbon' takes the neighbour. That route oxidises a side chain, which benzene does not have, and air over $\mathrm{V_2O_5}$ attacks the ring itself.
+- **Why:** This question requires the product a named reagent and condition give with a named substrate, demonstrated by 'The oxidation of benzene by $\mathrm{V_2O_5}$ in the presence of air produces'.
+- **Note:** Swap test applied for the trap axis: 'benzoic acid' and 'maleic anhydride' share no element of name, so the pull is not resemblance but the neighbouring oxidation printed in the same discussion, which is nearby_fact. Option 3 does share the word anhydride, but it is the weaker pull and sits in other_options, since the trap axis carries one label for the question.
+<!--/ecat-->
 
 ## Q41
 
@@ -1655,6 +2129,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Reaction outcome** (`reaction`) — what a reaction gives, or the reagent it needs
+- **Concept:** Acid-catalysed dehydration of a tertiary alcohol runs through a carbocation, so several alkenes are possible and the task is to find the one it cannot give
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  all four options are stored as empty strings and the stem carries the literal placeholder '[structure]', so there is no option text and no confirmed substrate drawing for a route to be checked against
+- **Why:** This question requires the set of alkenes a named dehydration can yield, demonstrated by 'Which of the following is not the product of dehydration of [structure] ?'.
+- **Note:** Source is incomplete as we hold it: options 1 to 4 are empty strings, the stem prints '[structure]' instead of the reactant, and the figure record says the crop is cut on the right and bottom with confidence 'unsure', the substrate being recovered as 2-cyclohexylbutan-2-ol from the solution's own full drawing rather than from this figure. No trap is written, because a mechanism inferred from absent options would be a guess. A reviewer holding the printed options should check whether the distractor set plays the more substituted Saytzeff alkene against a ring-expansion or exocyclic alkene, which is where this substrate's trap would sit.
+<!--/ecat-->
+
 ## Q42
 
 Chemistry · organic · Amines
@@ -1692,6 +2178,18 @@ Publisher's solution, as printed:
 ![printed solution 42](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q042_555fda20_28102026.png?v=555fda207316)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Reaction outcome** (`reaction`) — what a reaction gives, or the reagent it needs
+- **Concept:** Gabriel phthalimide synthesis makes only aliphatic primary amines, because aryl halides such as chlorobenzene do not undergo nucleophilic substitution
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 3  
+  The Gabriel route is carried as 'potassium phthalimide plus a halide, then hydrolysis, gives a primary amine', and option 2 prints exactly that shape, so it is accepted as workable. That leaves the student rejecting the one route the chapter's list of preparations does not print, acid hydrolysis of phenylisocyanide, which in fact gives aniline and formic acid.
+- **Why:** This question requires knowing which printed reagent route fails to effect a conversion, demonstrated by 'Method by which Aniline cannot be prepared is' set against option 2's 'Potassium salt of phthalimide treated with chlorobenzene'.
+- **Note:** The pattern classifier called this statement_options because each option is a full sentence; no lettered statement block is printed and the options are methods rather than claims to be graded, so the current qtype is mcq. The negated task sits in the stem's 'cannot', which is why the trap lands on a route that does work.
+<!--/ecat-->
 
 ## Q43
 
@@ -1737,6 +2235,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Statements** (`statements`) — lettered statements, the answer is which combination is right
+- **Asks:** **Reaction outcome** (`reaction`) — what a reaction gives, or the reagent it needs
+- **Concept:** An alcohol plus HCl needs anhydrous $ZnCl_2$ when the alcohol is primary or secondary, while a tertiary alcohol goes with HCl alone through its stable carbocation
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 2  
+  The Lucas test is carried as 'primary alcohols give no reaction with HCl and $ZnCl_2$', so row I is struck out and the two surviving true rows III and IV are picked. That no-reaction result belongs to the cold turbidity test, not to a preparation, where $CH_3CH_2OH$ with HCl and anhydrous $ZnCl_2$ on heating does give $CH_3CH_2Cl$.
+- **Why:** This question requires deciding, row by row, whether the printed reagent effects the conversion of that alcohol to its halide, demonstrated by rows i and ii carrying the same substrate and differing only in 'Anhyd.ZnCl_2' over the arrow, so the catalyst and not the substrate decides the verdict.
+- **Note:** E1_question_type reads plain_mcq, but the printed shape is a lettered block of four reactions (i-iv) that the options select a subset of, so the shape recorded here is statements; the items are written equations rather than drawn structures. On the trap label, half_right also reaches option 2 as a true-but-incomplete set, and condition_missed was chosen because it names the chemistry that drops row I -- the Lucas test's cold no-turbidity result used in a preparation question; on a subset-selection question every wrong set is incomplete or over-complete, so the set shape carries less information than the rule misapplied. answer_line_as_printed is truncated mid-sentence after 'more stable' (carbocation), but it names I, III and IV, which agrees with the printed key 3; the key is not re-opened here.
+<!--/ecat-->
+
 ## Q44
 
 Chemistry · physical · Structure of Atom
@@ -1772,6 +2282,18 @@ Publisher's solution, as printed:
 ![printed solution 44](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q044_3bf63f9e_28102026.png?v=3bf63f9eb8f0)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Sequence** (`order`) — a sequence to put in the right order, or a trend to arrange
+- **Concept:** In a multi-electron atom orbital energy follows $(n+l)$, with the lower $n$ breaking a tie, so 4s lies below 3d
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 1  
+  The shell picture says a higher principal number costs more energy, so every n=3 orbital is placed below 4s and the list reads 3s 3p 3d 4s. That ordering holds for a one-electron atom; the stem prints titanium at $Z = 22$, where screening drops 4s ($n+l=4$) below 3d ($n+l=5$).
+- **Why:** This question requires orbital energies to be ordered by $(n+l)$ in a many-electron atom rather than by shell number, demonstrated by the stem fixing the atom as titanium "(At. No. $Z = 22$)" while the four options differ only in where "4s" sits among the n=3 orbitals.
+- **Note:** E1 returned the retired label arrange_in_order; the printed shape is a question with four answers and no lettered items or lists, so qtype is mcq and the ordering answer form is carried by asks: order.
+<!--/ecat-->
 
 ## Q45
 
@@ -1811,6 +2333,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Reaction outcome** (`reaction`) — what a reaction gives, or the reagent it needs
+- **Concept:** Self-reduction in copper extraction: the partly roasted charge reduces its own cuprous oxide in the converter, so no carbon or CO is added and sulphur leaves as $SO_2$
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 4  
+  Carbon monoxide is the reductant the chapter drills on iron oxide in the blast furnace, so "an oxide is reduced by CO" is carried straight onto $Cu_2O$. The stem's words "from its sulphide ore" are what rule it out, because the roasted charge reduces itself and no external reductant is added.
+- **Why:** This question requires the named step of copper metallurgy in which cuprous oxide is reduced with no reductant added from outside, demonstrated by the stem's "from its sulphide ore" and the answer line "Solution: (2) Self reduction".
+- **Note:** Key doubt, tagged as printed per codebook §7. The printed solution line reads "Self reduction", i.e. $2Cu_2O + Cu_2S \rightarrow 6Cu + SO_2$, in which copper(I) sulphide is the reducing agent and sulphur dioxide is the product, yet the stored key is (2) sulphur dioxide. Option 1 is defensible on that reading, so verdict is arguable_key and a reviewer should check the printed paper's option order. The tags above follow the key as stored and do not repair it.
+<!--/ecat-->
+
 ## Q46
 
 Biology · botany · Transport in Plants
@@ -1843,6 +2377,17 @@ Publisher's solution, as printed:
 ![printed solution 46](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q046_498cb9f6_28102026.png?v=498cb9f6d721)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated reason** (`reason_line`) — a reason NCERT gives: why it happens
+- **Concept:** Root pressure is built by root cells actively pumping ions into the xylem, and the proton exchange that drives that pumping is what leaves the sap acidic
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 4  
+  The chapter's line that water absorption is largely passive, dragged in by transpiration pull, is printed as the partner term of the key, so a student answering 'how does water get in' instead of 'what makes the sap acidic' lands on passive absorption. Passive uptake moves no ions against a gradient, so it can neither raise pressure in the xylem nor release H+ into the sap.
+- **Why:** This question requires the cause the book gives for a stated property of root pressure, demonstrated by the stem 'Root pressure is usually acidic because' and by every option naming a mechanism rather than a structure.
+<!--/ecat-->
 
 ## Q47
 
@@ -1877,6 +2422,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Statements** (`statements`) — lettered statements, the answer is which combination is right
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Mucor, a phycomycete, reproduces asexually by non-motile aplanospores; the biflagellate zoospore belongs to the water-mould members of that same class
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 4  
+  The one ploidy number a student carries for endosperm is the angiosperm 3n of triple fusion, printed a few pages from the gymnosperms, so 'Haploid endosperm' reads as the error in a question hunting for a wrong statement. Gymnosperms have no double fertilisation at all, and their endosperm is the haploid female gametophyte, so the statement stands.
+- **Why:** This question requires four separate textbook lines to be graded for truth, demonstrated by the stem 'Which one is a wrong statement?' with each option a standalone claim such as 'Mucor has biflagellate zoospores'. Applied the resemblance test on the trap: swapping the two plant-group names for unlike words leaves the pull intact, because what carries the student is the endosperm ploidy printed for the adjacent group, so nearby_fact rather than look_alike_term.
+- **Note:** E1 recorded statement_options; no lettered block is printed and the stem asks for a statement to be judged, so the current qtype is statements.
+<!--/ecat-->
+
 ## Q48
 
 Biology · both · Cell: The Unit of Life
@@ -1909,6 +2466,17 @@ Publisher's solution, as printed:
 ![printed solution 48](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q048_4269bdad_28102026.png?v=4269bdadc45a)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** A prokaryotic cell has no nuclear envelope, its DNA lying naked in the nucleoid, while the mesosome is an infolding of its own plasma membrane
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 4  
+  Mesosome sits among the -some names a student files as eukaryotic organelles, beside lysosome and peroxisome, so a student who cannot place the word takes it for the structure the negated stem is hunting. The mesosome is introduced in the prokaryotic-cell section itself, as an infolding of the bacterial plasma membrane carrying respiratory enzymes.
+- **Why:** This question requires the one structure the book states prokaryotes do not have, demonstrated by the stem 'not found in prokaryotic cells' with three of the four options being parts the book lists for a bacterial cell. Applied the swap test on the trap: rename 'Mesosome' as 'plasma-membrane infolding' and the pull dies, so the likeness among the -some names is doing the work.
+<!--/ecat-->
 
 ## Q49
 
@@ -1943,6 +2511,17 @@ Publisher's solution, as printed:
 ![printed solution 49](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q049_db32e2ec_28102026.png?v=db32e2ec851a)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Complete double circulation keeps the pulmonary and systemic circuits apart, which needs a fully divided heart; of these four animals only the mammal has one
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 2  
+  The frog is the animal the chapter uses to introduce double circulation, so a student matching the stem's two pathways to that remembered phrase stops at the frog and drops the word 'separate'. The frog's single ventricle mixes oxygenated and deoxygenated blood, which is why its double circulation is called incomplete.
+- **Why:** This question requires the animal group the book states has complete double circulation, demonstrated by the stem's 'two separate circulatory pathways' set against four named animals from four classes.
+<!--/ecat-->
 
 ## Q50
 
@@ -1982,6 +2561,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Trophic level is fixed by what an animal eats; with no light and so no producers at depth, the printed key reads deep-sea animals as flesh-eaters and places them at the second consumer level
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  Nothing photosynthesises at depth and the organic matter arrives as dead material sinking from the lit layers, so a student reasoning from the detritus food chain printed beside the grazing food chain picks the detritivore. The printed key grades these animals by what they take alive, other animals, which places them one level above the primary consumers.
+- **Why:** This question requires the trophic-level classification applied to a habitat with no producers in it, demonstrated by the stem 'Most animals that live in deep oceanic waters are' with the four options being levels of one scheme and no printed line naming the deep ocean.
+- **Note:** The key stands only on the reading that deep-sea animals eat other animals. Option 1 is defensible on a different reading, since the deep-sea food web is fed by detritus sinking from the lit layers, and no textbook line settles the deep ocean by name. Tagged as printed, with the doubt recorded here rather than acted on.
+<!--/ecat-->
+
 ## Q51
 
 Biology · botany · Organisms and Populations
@@ -2014,6 +2605,17 @@ Publisher's solution, as printed:
 ![printed solution 51](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q051_6865aaa9_28102026.png?v=6865aaa9bff2)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** A biotic community is all the populations of different species sharing a habitat and interacting; add the physical surroundings and it becomes an ecosystem
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 4  
+  Functional interaction is the phrase the chapter attaches to the ecosystem, where biotic and abiotic components act on each other, so a student matching on that phrase takes the next level up in the printed list of levels of organisation. The stem names only individuals of different species, with no soil, water or climate in it, and that absence is the line between community and ecosystem.
+- **Why:** This question requires the term the book ties to a printed definition, demonstrated by the stem's 'individuals of different species living in the same habitat and having functional interactions' set against four named levels of organisation. Applied the resemblance test on the trap: 'biotic community' and 'ecosystem' share no wordform, so what carries a student is their adjacency in the printed list of levels, hence nearby_fact.
+<!--/ecat-->
 
 ## Q52
 
@@ -2048,6 +2650,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Two answers** (`two_part`) — the answer has two halves, usually joined by 'respectively'
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The water-splitting step of photosynthesis is run by manganese and chlorine; magnesium's job is the chlorophyll ring, not photolysis
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 1  
+  Chlorine is correctly held as one of the two elements needed to split water, and magnesium is the element tied to photosynthesis through the centre of the chlorophyll molecule, so the pair reads as half-confirmed and gets ticked. Magnesium holds the chlorophyll ring together and takes no part in photolysis; the element beside chlorine is manganese.
+- **Why:** This question requires the stated pair of elements that run the photolysis of water, demonstrated by the stem's 'Which one of the following pairs of elements is involved in this reaction?' over four element pairs with no criterion printed to apply.
+- **Note:** E1 read this as plain_mcq; the printed shape is four pairs of elements accepted or rejected whole, so two_part is recorded, as the brief directs for pair options arriving as plain_mcq.
+<!--/ecat-->
+
 ## Q53
 
 Biology · botany · Morphology of Flowering Plants
@@ -2080,6 +2694,18 @@ Publisher's solution, as printed:
 ![printed solution 53](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q053_4037c2ce_28102026.png?v=4037c2ce6bc8)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Axile placentation puts the ovules on a central axis of a septate, multilocular ovary - lemon and tomato - while a septum-free one-chambered ovary with a central column is free central
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  Free central placentation also carries its ovules on a central axis and is printed in the same short list as axile, so a student who kept the phrase 'ovules on the central axis' and not the septum test reaches for Dianthus. In free central placentation the septa have broken down and the ovary is one-chambered, which is exactly what axile placentation must have.
+- **Why:** This question requires the named example the source prints for one placentation type, demonstrated by the bare stem 'Axile placentation is present in :' with four plant names and no feature printed to reason from.
+- **Note:** Applied the swap test on the nearby_fact / look_alike_term pair: Dianthus and Lemon do not resemble each other as words, and replacing them with two unlike names leaves the pull intact because it comes from both types sharing a central axis in the printed list. So position, not likeness, carries the student.
+<!--/ecat-->
 
 ## Q54
 
@@ -2118,6 +2744,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Two answers** (`two_part`) — the answer has two halves, usually joined by 'respectively'
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** A nutrient cycle is gaseous or sedimentary according to where its reservoir lies: the atmosphere for carbon and nitrogen, the Earth's crust for sulphur and phosphorus
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 1  
+  Carbon is met as litter, humus, coal and limestone in the ground and sulphur is met as a gas in acid rain, so a student who sorts by where the element has been seen rather than by its reservoir swaps the two headings wholesale. The reservoir decides the type: atmosphere for carbon and nitrogen, crust for sulphur and phosphorus.
+- **Why:** This question requires the stated membership of the two nutrient-cycle types, demonstrated by the stem asking which option has 'both pairs' correct over the heading 'Gaseous nutrient cycle - Carbon and Nitrogen' and its partner.
+- **Note:** E1 read this as statement_options; each option is in fact two labelled pairings accepted or rejected together, which the stem's 'both pairs' makes explicit, so two_part is recorded. Options 3 and 4 are each half right, but option 1 is the clean inversion of both headings, which is the device the trap names.
+<!--/ecat-->
+
 ## Q55
 
 Biology · zoology · Neural Control and Coordination
@@ -2150,6 +2788,18 @@ Publisher's solution, as printed:
 ![printed solution 55](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q055_edd5b7ec_28102026.png?v=edd5b7ecd02a)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The fovea is the cone-packed pit of the retina where acuity is highest; rods dominate the rest of the retina and the optic nerve leaves at the blind spot
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  Rods far outnumber cones across the retina, and that count is printed in the same paragraph as the macula, so a student carrying the retina-wide figure applies it to the fovea. The fovea is the one place the ratio flips: the pit is densely packed with cones and holds no rods at all.
+- **Why:** This question requires the stated composition of one named retinal site, demonstrated by the option 'High density of cones occur, but has no rods' completing the stem's clause about the fovea.
+- **Note:** Applied the swap test on nearby_fact against look_alike_term: 'rods' and 'cones' do not resemble each other as words, and the pull survives because the retina-wide rod majority is printed beside the line on the macula, so position does the work. E1 read the question as statement_options; the stem is a completion and the options are clauses, not statements to be judged, so mcq is recorded under the rule that long option sentences alone do not make a statements question.
+<!--/ecat-->
 
 ## Q56
 
@@ -2184,6 +2834,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Statements** (`statements`) — lettered statements, the answer is which combination is right
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The ascomycete examples as the book prints them: yeast unicellular and fermenting, Penicillium a septate mould giving antibiotics, Neurospora the genetics workhorse, morels and truffles edible delicacies
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  Unicellular is the cellular word this paragraph prints, and it is printed for yeast one line from Penicillium, so a student hunting for the false claim strikes at 'Penicillium is multicellular' and stops. Penicillium is described as a mould with a branched septate mycelium, so both halves of that option hold and the false statement is the one calling morels and truffles poisonous.
+- **Why:** This question requires each printed claim about a named ascomycete to be graded against the source line, demonstrated by the stem 'Choose the wrong statement:' standing over four whole statements.
+- **Note:** Task polarity is negated ('wrong statement'), and the fact that actually decides the question is that morels and truffles are edible delicacies rather than poisonous. Two of the three wrong options are fillers because all three are the book's own ascomycete examples repeated without alteration; the only one carrying a reachable route is the cellular claim about Penicillium.
+<!--/ecat-->
+
 ## Q57
 
 Biology · both · Cell: The Unit of Life
@@ -2217,6 +2879,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Ribosomes are the cell structure with no bounding membrane; mesosomes, vacuoles and lysosomes are all enclosed by membrane
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 1  
+  The remembered rule is that prokaryotic cells lack membrane-bound organelles, and the mesosome is the one bacterial structure in the list, so the rule is applied straight to it. The rule is about separate organelles, and a mesosome is an infolding of the plasma membrane itself, so it is membrane-bound and the answer is ribosomes.
+- **Why:** This question requires the stated fact that one of these structures has no bounding membrane, demonstrated by the stem 'Which of the following are not membrane-bound?' over four named cell structures.
+- **Note:** Task polarity is negated (NOT). The key is as printed and the fact is stated in the source; nothing in this record is damaged.
+<!--/ecat-->
+
 ## Q58
 
 Biology · botany · Organisms and Populations
@@ -2249,6 +2923,18 @@ Publisher's solution, as printed:
 ![printed solution 58](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q058_3c0bb708_28102026.png?v=3c0bb70811e4)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Interspecific interactions are scored by the sign of the effect on each partner, and competition is the only pairing printed as minus for both
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 3  
+  Predation is the interaction whose harm is stated outright, since the prey is eaten, so a student who checks one side of the row stops there. Predation is scored plus for the predator and minus for the prey, so it answers the looser question of which interaction harms a partner, not which harms both.
+- **Why:** This question requires the sign pair NCERT states for each interspecific interaction, demonstrated by the stem asking in which interaction both partners are adversely affected while the four options are the named interaction types themselves.
+- **Note:** On the trap label: half_right was ruled out because brief rule 2 bars it on a lone name, and nearby_fact was ruled out because the pull is not the adjacency of the table rows but the stem's word both being under-read, which leaves predation true for the question the student answered.
+<!--/ecat-->
 
 ## Q59
 
@@ -2291,6 +2977,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** X-linked recessive inheritance over two generations: an affected father gives his single X to every daughter, so each carrier daughter passes colour blindness to half her sons
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 4  
+  Working the cross one generation gives a clean set of children, with no colour blind son and no colour blind daughter, and Nil is the right answer to that cross. The stem asks about the grandson, and every daughter is a carrier whose sons are affected half the time, which gives $0.5$.
+- **Why:** This question requires a probability computed from a two-generation X-linked cross, demonstrated by the stem supplying both parents' phenotypes and the absence of family history and then asking for the probability of their grandson being colour blind.
+- **Note:** Tagged as printed. The key $0.5$ follows the line through the carrier daughter; the stem does not say whether the grandson descends from the son or the daughter, and on the unconditional reading the figure is $0.25$, which is option 1, so the verdict records an arguable key rather than re-judging it.
+<!--/ecat-->
+
 ## Q60
 
 Biology · zoology · Human Reproduction
@@ -2325,6 +3023,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Ectopic pregnancy is defined by the place of implantation: the embryo settles anywhere other than the uterine wall
+- **Trap:** **Wrong site attacked** (`wrong_site_attacked`) — the reagent is right but it attacks the other site, atom or bond than the one the question turns on — option 4  
+  This option opens with the key's own word, implantation, so a student who recalls only that ectopic pregnancy is an implantation that has gone wrong keeps the site they were taught, the uterus, and puts the fault into the embryo instead. The term is positional: what is out of place is the site, not the embryo.
+- **Why:** This question requires the definition NCERT states for a named term, demonstrated by the key reading implantation of embryo at site other than uterus while the stem asks only what ectopic pregnancies are referred to as.
+- **Note:** The pattern returned statement_options because each option is a full sentence; brief rule 1 keeps that at qtype mcq, since the stem asks for a definition and does not ask any statement to be judged.
+<!--/ecat-->
+
 ## Q61
 
 Biology · both · Cell: The Unit of Life
@@ -2357,6 +3067,18 @@ Publisher's solution, as printed:
 ![printed solution 61](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q061_2c85f60b_28102026.png?v=2c85f60b01d5)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Membrane-bound organelles against the non-membranous structures of the cell: ribosomes and chromosomes carry no membrane of their own
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 2  
+  Nuclei and mitochondria are the textbook membrane-bound organelles, so two of the three names check out and the option reads as correct before the third is weighed. The ribosome sitting between them has no membrane, and the set is scored whole.
+- **Why:** This question requires the stated division NCERT makes between membrane-bound and non-membranous organelles, demonstrated by the stem reading cellular organelles with membranes are while three of the four options carry ribosomes.
+- **Note:** The pattern returned statement_options; the printed shape is in fact four sets of three organelle names accepted or rejected whole, which the codebook's E1 axis calls pair_options and the current six-value qtype list has no slot for, so the question is recorded as mcq and the all-or-nothing scoring is recorded here.
+<!--/ecat-->
 
 ## Q62
 
@@ -2391,6 +3113,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Mycoplasma is the organism taught as having no cell wall at all, while cyanobacteria, fungi and mosses each build one
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  Nostoc is the one other prokaryote in the list, and the covering the chapter names for it is a gelatinous sheath rather than a wall, so a student files the sheath in the place where the wall should be. The sheath lies outside a wall Nostoc still has, and Mycoplasma is the organism printed as wall-less.
+- **Why:** This question requires the one organism NCERT states to lack a cell wall, demonstrated by the stem reading cell wall is absent in while the four options are named organisms from four different groups. Swap test: Nostoc and Mycoplasma do not resemble each other as words, so likeness is not the pull and position in the prokaryote passage carries the student, which makes it nearby_fact rather than look_alike_term.
+<!--/ecat-->
+
 ## Q63
 
 Biology · both · Principles of Inheritance and Variation
@@ -2423,6 +3156,18 @@ Publisher's solution, as printed:
 ![printed solution 63](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q063_a9756486_28102026.png?v=a97564866c19)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Who named what in the chromosomal theory story: Morgan coined the term linkage from his Drosophila crosses
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  Sutton is already the person in this chapter credited with naming something, since he united chromosome behaviour with Mendel's principles and called it the chromosomal theory of inheritance, so a stem asking who coined a term points at him first. Linkage comes from Morgan's Drosophila work, in the section that follows Sutton and Boveri.
+- **Why:** This question requires the attribution NCERT states for a coined term, demonstrated by the stem reading the term linkage was coined by while all four options are workers named in the same chapter. Swap test: Sutton and Morgan do not resemble each other as words, so the pull is the chromosomal theory paragraph sitting immediately before Morgan's linkage experiments, which makes it nearby_fact rather than look_alike_term.
+- **Note:** Option 4 is printed G. Mende, which looks like G. Mendel with a letter lost in transcription. It does not affect the key or the answerability of the question, and option 4 carries no route either way, but it is worth a repair check against the printed paper.
+<!--/ecat-->
 
 ## Q64
 
@@ -2458,6 +3203,18 @@ Publisher's solution, as printed:
 ![printed solution 64](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q064_25c88533_28102026.png?v=25c88533d014)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Each class of biomolecule has its own linkage: phosphodiester between nucleotides, ester in fats, glycosidic between sugars, peptide between amino acids
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 2  
+  The linkage in a diglyceride is called the ester bond and the word asked for carries 'ester' inside it, so a student keying bond names by the word lands on fats. A diglyceride holds no phosphate, and its ester joins glycerol to a fatty acid, not two halves of a phosphate.
+- **Why:** This question requires the stated linkage that belongs to each class of biomolecule, demonstrated by 'does have a phosphodiester bond' being asked of four options that each merely name a monomer-in-polymer pair, with no criterion printed from which the bond could be worked out. Swap test applied: replace the glyceride's ester with a bond name unlike 'phosphodiester' and the pull dies, so the likeness of the names is doing the work.
+- **Note:** The E1 pattern says statement_options, but the four options are noun phrases of the form 'X in Y', not statements to be judged, so the shape recorded is mcq. The keyed option reads 'Nucleic acids in a nucleotide', which inverts the containment the other three options use; the linkage meant is nucleotides inside a nucleic acid. Tagged as printed, not re-judged.
+<!--/ecat-->
 
 ## Q65
 
@@ -2495,6 +3252,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The deciduous (milk) set reads 2102 in each half jaw, so premolars arrive only with the permanent teeth
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 4  
+  The milk set is carried as 'the back teeth are fewer', and premolar is molar with a prefix on it, so the remembered gap can settle on either name. The deciduous formula keeps two molars in each half jaw and puts its zero in the premolar place.
+- **Why:** This question requires the stated composition of the deciduous dental set, demonstrated by 'differs from permanent dentition in not having one of the following type of teeth' being answered by naming one of four tooth types with nothing else printed to reason from. Swap test applied: premolar and molar are one prefix apart, so likeness carries the pull and the §5.1 tie-break gives it to look_alike_term even though NCERT also prints the two side by side in the dental formula.
+<!--/ecat-->
+
 ## Q66
 
 Biology · both · Cell: The Unit of Life
@@ -2527,6 +3295,18 @@ Publisher's solution, as printed:
 ![printed solution 66](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q066_86080366_28102026.png?v=86080366fd15)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Protoplast: what the term denotes about a plant cell, namely which layer is absent while the membrane and contents stay intact
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  Checked the four stored options against the stem and the subtopic: option 1 reads 'Without division' and option 4 reads 'Undergoing division', so the keyed option and a distractor are the same axis negated, and no option prints the wall-less reading that the subtopic 'Cell Membrane And Cell Wall' points at. Any route written over this option set would be a route to our own damage, so none was written.
+- **Why:** This question requires the stated meaning of the term protoplast, demonstrated by the bare stem 'A protoplast is a cell:' with each option completing the definition and no criterion printed to apply. No trap is recorded because the stored option set is not the paper's.
+- **Note:** The option set as stored looks damaged: option 1 ('Without division') is keyed as the definition of a protoplast while option 4 ('Undergoing division') negates the same axis, and the chapter subtopic is Cell Membrane And Cell Wall, which no option mentions. Needs checking against a printed paper before any trap is tagged. The key is left exactly as printed.
+<!--/ecat-->
 
 ## Q67
 
@@ -2562,6 +3342,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The diatom (chrysophyte) wall is a two-piece silica frustule whose halves fit together like a soap-box
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 4  
+  Dinoflagellates are the protist NCERT describes as walled with stiff cellulose plates, printed in the paragraph beside the diatoms, so a student holding 'the protist with a wall made of pieces' reaches for them. Those plates lie over the outer surface; two shells that fit together are the diatom frustule.
+- **Why:** This question requires the stated diagnostic wall of one protist group, demonstrated by 'two thin overlapping shells which fit together' being set against four coordinate group names. Swap test applied: chrysophytes and dinoflagellates share no shape as words, so nothing resembles anything here and the trap survives the swap, which makes position in the printed section the carrier.
+<!--/ecat-->
+
 ## Q68
 
 Biology · both · Biotechnology: Principles and Processes
@@ -2594,6 +3385,18 @@ Publisher's solution, as printed:
 ![printed solution 68](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q068_aafdc966_28102026.png?v=aafdc9666949)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The DNA molecule into which a gene of interest is inserted so a host will replicate it is the cloning vector
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  The vector is defined as the DNA that carries the gene of interest into the host, so a student who holds the function and answers in the words of that defining sentence picks the descriptive word printed beside the term. 'Carrier' names the job; the name the stem asks for is vector.
+- **Why:** This question requires the chapter's agreed name for the DNA that takes a gene into a host, demonstrated by 'is called:' closing a stem that has already described what the molecule does. Swap test applied: carrier and vector share no letters or shape, so no resemblance is at work; what reaches the student is the word printed inside the definition itself, which is position.
+- **Note:** The trap option 'Carrier' is the plain-English description printed inside the definition of a vector rather than an adjacent fact in the strict sense; nearby_fact is the closest of the twelve §5.1 values. If this device recurs, a value such as plain_description_for_term would name it more exactly.
+<!--/ecat-->
 
 ## Q69
 
@@ -2630,6 +3433,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Pollen is shed two-celled; the generative cell divides to give two male gametes, so the mature male gametophyte is two sperms plus the vegetative tube cell
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 3  
+  Pollen is shed at the two-celled stage, one vegetative cell and one generative cell, so a student who counts at that printed stage gets one of each. The generative cell then divides, and the mature male gametophyte delivers two sperms, not one.
+- **Why:** This question requires the stated cell content of the mature male gametophyte, demonstrated by four options that differ only in how many sperms and how many vegetative cells are named, so the answer is a remembered count rather than anything derived.
+<!--/ecat-->
+
 ## Q70
 
 Biology · botany · Sexual Reproduction in Flowering Plants
@@ -2663,6 +3477,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** In a coconut the liquid is free-nuclear endosperm and the white kernel around it is the cellular endosperm of the same seed
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  Perisperm, the persistent nucellus, is the other leftover tissue named on the same post-fertilisation pages, so a student who remembers that some seeds keep nucellar tissue files the coconut's liquid there instead of under endosperm.
+- **Why:** This question requires the stated fact about what the coconut's liquid is, demonstrated by the stem 'Coconut water from a tender coconut is:' with four coordinate seed tissues as options and no criterion printed to apply.
+<!--/ecat-->
+
 ## Q71
 
 Biology · botany · Biodiversity and Conservation
@@ -2695,6 +3520,17 @@ Publisher's solution, as printed:
 ![printed solution 71](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q071_fbdce15d_28102026.png?v=fbdce15d6dd5)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Endemic means a species whose whole range is one region - a statement about range, not about abundance, origin or community role
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  Alien is the other term in this chapter that defines a species by where it is and is not found, so a student holding endemic and alien as the pair about distribution picks the one whose definition mentions somewhere else, which is the opposite case.
+- **Why:** This question requires the stated meaning of one term, demonstrated by 'is termed as:' followed by four distribution and status words from the same chapter. Swap test applied: endemic and alien do not resemble each other as words, so the pull sits on their being printed in the same chapter, which is nearby_fact rather than look_alike_term.
+<!--/ecat-->
 
 ## Q72
 
@@ -2730,6 +3566,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Metagenesis is the alternation of an asexual polyp generation with a sexual medusa generation in cnidarians, not a change of form inside one life
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 4  
+  Metamorphosis is the meta- word in the same chapter for a change of form, so a student who reads metagenesis as another spelling of it takes the drastic post-embryonic change of form, which is the frog-and-insect fact rather than the polyp-and-medusa one.
+- **Why:** This question requires the stated definition of one term, demonstrated by 'Metagenesis refers to:' with option 4 printing the definition of metamorphosis. Swap test applied: replace metagenesis and metamorphosis with two unlike words and the pull on option 4 disappears, so the likeness is doing the work.
+- **Note:** E1 called this statement_options because each option is a full sentence; under the current qtype vocabulary long sentences as options do not make it statements, and the stem does not ask for statements to be judged, so it is recorded as mcq.
+<!--/ecat-->
+
 ## Q73
 
 Biology · zoology · Digestion and Absorption
@@ -2764,6 +3612,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Which enzymes belong to succus entericus and which to pancreatic juice: nucleosidases are intestinal, nucleases are pancreatic
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 4  
+  Nuclease and nucleosidase differ by a few letters and both act on nucleic-acid material, so a student who remembers that one of the pair is pancreatic and the other intestinal but not which way round ticks nucleosidase as the missing one.
+- **Why:** This question requires the stated membership of one secretion's enzyme list, demonstrated by 'not present in succus entericus' with nucleases and nucleosidase both printed as options. Swap test applied: the two nucleo- names both resemble each other and sit in facing lists, and where both hold the likeness wins, so look_alike_term.
+- **Note:** The stem as stored reads 'The enzymes that is not present in succus entericus is:' - a number-agreement slip in the wording that does not change what is asked; the key (3) is tagged as printed.
+<!--/ecat-->
+
 ## Q74
 
 Biology · botany · Environmental Issues
@@ -2797,6 +3657,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated reason** (`reason_line`) — a reason NCERT gives: why it happens
+- **Concept:** Eutrophication kills fish through oxygen depletion: decomposition of the dense bloom strips the dissolved oxygen from the water
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  The bloom's visible effect is a mat of algae over the surface, so a student who remembers that the mat cuts off sunlight to the water below carries that same consequence through to the fish, when what the fish lose is the dissolved oxygen consumed by decomposition.
+- **Why:** This question requires the cause the chapter gives for fish deaths in a eutrophic water body, demonstrated by 'leading to killing of fishes is mainly due to non-availability of'.
+- **Note:** answers_other_question was ruled out for option 3: light shortage is a consequence printed in the same bloom passage as oxygen depletion rather than the answer to a different question the stem resembles, so position is what carries the student and the label is nearby_fact.
+<!--/ecat-->
+
 ## Q75
 
 Biology · zoology · Structural Organisation in Animals
@@ -2829,6 +3701,18 @@ Publisher's solution, as printed:
 ![printed solution 75](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q075_4f212adc_28102026.png?v=4f212adc536b)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The three cell junctions of epithelia and what each does: tight junctions seal, adhering junctions cement, gap junctions connect the cytoplasm of adjoining cells
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  The three junctions are printed in one run - tight, adhering, gap - and this option is the tight-junction line word for word, so a student who can produce all three functions but has not fixed each to its name takes the sealing one.
+- **Why:** This question requires the stated function of one named structure, demonstrated by 'The function of the gap junction is to :' with option 1 printing the tight-junction function and option 2 the adhering-junction function.
+- **Note:** E1 called this statement_options because each option is a full sentence; the stem does not ask for statements to be judged, so under the current qtype vocabulary it is mcq.
+<!--/ecat-->
 
 ## Q76
 
@@ -2865,6 +3749,18 @@ Match the following list of microbes and their importance:
 ![printed question 76](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/crops/q076_2a007a3b_28102026.png?v=2a007a3b03ad)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **Match the columns** (`match_columns`) — two labelled lists to pair, the answer is a pairing code
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Each industrially used microbe is tied to one named product: yeast to ethanol, Monascus to statins, Trichoderma to cyclosporin A, Propionibacterium to Swiss cheese
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  The two drug rows, (i) immunosuppressive agents and (iv) blood-cholesterol lowering agents, belong to one subtopic and are carried together as 'the two fungi that give drugs', so a student holding the pair without the names attached assigns them in printed order and reads (b)-(i), (c)-(iv).
+- **Why:** This question requires the microbe-to-product pairings the chapter states, demonstrated by '(c) Trichoderma polysporum' being settled only by the stored fact that it yields '(i) Production of immunosuppressive agents', with no criterion printed from which the pairing could be worked out.
+- **Note:** The packet carries correct_answer: null, accepted_answers empty and no answer line, so no key could be followed; the labels are derived from the printed lists, where (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii) is the only option consistent with the stated pairings. A reviewer should confirm the printed key before this trap is published. 'Sacharomyces cerevisiae' is spelt with one 'c' in list I as supplied; copied as printed, not corrected.
+<!--/ecat-->
 
 ## Q77
 
@@ -2912,6 +3808,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Statements** (`statements`) — lettered statements, the answer is which combination is right
+- **Asks:** **Sequence** (`order`) — a sequence to put in the right order, or a trend to arrange
+- **Concept:** Prophase I runs zygotene to pachytene to diplotene to diakinesis, so homologues pair before they exchange segments, the chiasmata terminalise next, and the nucleolus is gone only in the last sub-stage
+- **Trap:** **Wrong site attacked** (`wrong_site_attacked`) — the reagent is right but it attacks the other site, atom or bond than the one the question turns on — option 2  
+  In mitotic prophase the nucleolus goes as soon as the chromosomes condense, and a student carrying that picture into prophase I slots the nucleolus in before the chiasmata terminalise, giving (b), (a), (d), (c).
+- **Why:** This question requires the four prophase I events to be put in their taught sub-stage sequence, demonstrated by the stem 'Arrange the following events of meiosis in correct sequence' and by four options that differ only in the order of the same lettered items (a) to (d).
+- **Note:** E1's pattern returned 'arrange_in_order', a retired value with no counterpart on the current qtype axis; the printed shape is a lettered list (a)-(d) above the options, which rule 1 makes 'statements', and the ordering demand is carried by asks: order rather than by qtype. Item (c) is printed 'Terminalisation of chaismata'; read as chiasmata and tagged as printed. Key (3) checks out against the sub-stage order zygotene, pachytene, diplotene, diakinesis.
+<!--/ecat-->
+
 ## Q78
 
 Biology · both · Biotechnology: Principles and Processes
@@ -2944,6 +3852,17 @@ Publisher's solution, as printed:
 ![printed solution 78](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q078_25d97b48_28102026.png?v=25d97b48ff9f)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Restriction endonucleases recognise a palindromic sequence and cut DNA inside it, while ligase is the enzyme that seals cut ends
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  Ligases are printed in the same tools-of-recombinant-DNA list as restriction enzymes, so a student who stores 'the enzymes that act on DNA ends' as one item takes the sealing enzyme for the cutting one.
+- **Why:** This question requires the stated identity of the enzyme that cuts DNA at a sequence, demonstrated by 'The cutting of DNA at specific locations became possible with the discovery of' with four named tools of the same chapter as options.
+<!--/ecat-->
 
 ## Q79
 
@@ -2978,6 +3897,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Leghaemoglobin in the root nodule scavenges free oxygen so the oxygen-sensitive nitrogenase can keep fixing nitrogen
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  Cytochrome is the other haem protein a student has met in connection with oxygen, so 'a protein that keeps oxygen off an enzyme' retrieves it; cytochromes hand electrons TO oxygen in respiration and remove none of it from the nodule.
+- **Why:** This question requires the named molecule the text states does the protecting, demonstrated by 'inactivation of nitrogenase by oxygen poisoning prevented by' with four pigment and protein names as options.
+<!--/ecat-->
+
 ## Q80
 
 Biology · zoology · Human Health and Disease
@@ -3010,6 +3940,18 @@ Publisher's solution, as printed:
 ![printed solution 80](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q080_8a8e850d_28102026.png?v=8a8e850d62e0)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Graft rejection is a cell-mediated response: T lymphocytes read the donor tissue as non-self
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  Humoral and cell-mediated are printed as a pair in one sentence of the acquired-immunity section, so a student who holds the pair but has not attached transplants to either takes the first-named arm; circulating antibodies are not what rejects a kidney.
+- **Why:** This question requires the named arm of immunity the text states is responsible, demonstrated by 'Grafted kidney may be rejected in a patient due to' with four named types of immune response, not explanations, as options.
+- **Note:** The stem's 'due to' was weighed for reason_line and set aside: all four options are names of immune responses rather than explanatory clauses, so what is retrieved is the printed name in the rejection line.
+<!--/ecat-->
 
 ## Q81
 
@@ -3044,6 +3986,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The cockroach is uricotelic: its cells release nitrogen into the haemolymph as potassium urate, which the Malpighian tubules then remove
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  The excretion chapter prints aquatic insects in the ammonotelic line, so a student retrieving 'insect' from that list arrives at ammonia; the cockroach is terrestrial and uricotelic, and the form handed to the haemolymph is potassium urate.
+- **Why:** This question requires the stated form in which the cockroach's cells release nitrogen, demonstrated by 'discharge their nitrogenous waste in the haemolymph mainly in the Form of' with four named compounds as options.
+- **Note:** Stem carries 'Form' capitalised mid-sentence as printed in our record; tagged as printed.
+<!--/ecat-->
+
 ## Q82
 
 Biology · botany · Sexual Reproduction in Flowering Plants
@@ -3076,6 +4030,17 @@ Publisher's solution, as printed:
 ![printed solution 82](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q082_d00ce762_28102026.png?v=d00ce7622a36)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The filiform apparatus is a wall thickening at the micropylar tip of the two synergids that guides the pollen tube into the embryo sac
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  The filiform apparatus is printed in the same sentence as the pollen tube's entry, so a student who stores the apparatus by that one association pulls the pollen-side cell out of the sentence; the thickening sits in the synergid wall, not in the pollen grain.
+- **Why:** This question requires the stated owner of a named structure, demonstrated by 'Filiform apparatus is characteristic feature of' with four named cells as options and no criterion printed to apply.
+<!--/ecat-->
 
 ## Q83
 
@@ -3110,6 +4075,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Acid rain is the sulphuric and nitric acid formed when $SO_2$ and $NO_2$ dissolve in atmospheric water
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 3  
+  An oxide of sulphur is the first thing checked for in an acid-rain option and $SO_3$ passes that check, so the pair is accepted without CO being tested; CO dissolves to no acid, and the pair printed for acid rain is $SO_2$ with $NO_2$.
+- **Why:** This question requires the stated pair of gases named as the cause of acid rain, demonstrated by the key option reading '$\mathrm{SO_2}$ and $\mathrm{NO_2}$', each option printing two species to be accepted together.
+- **Note:** Each option prints two chemical species accepted or rejected whole, the shape the retired E1 vocabulary called pair_options; the pattern classifier recorded plain_mcq. The stem still asks one question with one slot, so qtype is recorded as mcq and the compound option is what the half_right trap rests on.
+<!--/ecat-->
+
 ## Q84
 
 Biology · botany · Sexual Reproduction in Flowering Plants
@@ -3143,6 +4120,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** In a cereal grain the single cotyledon is the scutellum, while coleoptile and coleorrhiza are only the sheaths covering the plumule and the radicle
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  The named parts of the wheat grain are printed together in one paragraph, and coleoptile is the one recalled first, so a student holding 'the cereal grain has a coleoptile' puts that name on the cotyledon itself; the coleoptile only sheaths the plumule.
+- **Why:** This question requires the name given to the single cotyledon of a cereal grain, demonstrated by the stem 'one large, shield-shaped cotyledon known as' with four options that are all named parts of that same grain embryo.
+- **Note:** Option 4 is printed 'Scatellum' in our record where the term is scutellum; the key is unambiguous, so the question is tagged as printed and the spelling is flagged for repair rather than re-judged. Applied the 5.1 swap test to the trap: coleoptile does not resemble scutellum, and the pull survives the swap because the three names are printed in one paragraph on the grain, so nearby_fact and not look_alike_term.
+<!--/ecat-->
+
 ## Q85
 
 Biology · botany · Morphology of Flowering Plants
@@ -3175,6 +4164,18 @@ Publisher's solution, as printed:
 ![printed solution 85](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q085_d32c6b4c_28102026.png?v=d32c6b4c90a6)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Ovary position: a hypogynous flower has a superior ovary, an epigynous flower an inferior one
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 4  
+  Three is the exact length of the printed hypogynous example list, china rose, mustard and brinjal, so a student who counts the plants the book itself names as hypogynous answers that question and leaves potato, onion and tulip uncounted.
+- **Why:** This question requires each named plant's ovary position as the morphology chapter states it, demonstrated by 'how many plants have superior ovary?' asked over eight named plants with bare counts as the options.
+- **Note:** half_right was ruled out on option 4 under the single-number rule: a bare count is not an option of two or more parts. compare was ruled out for asks because the options are counts, not the ovary-position terms, so nothing in the printed answer set asks the student to hold two similar terms apart; the work is eight separate lookups of a stated fact, tallied.
+<!--/ecat-->
 
 ## Q86
 
@@ -3212,6 +4213,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The skeleton supports, protects, gives locomotion, stores minerals and houses the marrow that makes blood cells; body heat comes from muscle
+- **Trap:** **Wrong site attacked** (`wrong_site_attacked`) — the reagent is right but it attacks the other site, atom or bond than the one the question turns on — option 2  
+  Red-cell formation is learnt inside the blood chapter, so a student who places haematopoiesis in the circulatory system rather than in bone denies it to the skeleton and marks it as the function that does not belong. Erythrocytes are made in the marrow, which is why it is a skeletal function.
+- **Why:** This question requires the list of functions the chapter assigns the skeletal system, demonstrated by the negated stem 'is not a function of the skeletal system' set over three options that are functions it does perform.
+- **Note:** Of the retired per-option names, both true_statement_trap and wrong_site_or_stage touch option 2. wrong_site_attacked is the live family chosen because the pull is specifically about where erythrocytes are produced; failing the NOT polarity is common to all three wrong options and so distinguishes nothing.
+<!--/ecat-->
+
 ## Q87
 
 Biology · both · Biotechnology and Its Applications
@@ -3245,6 +4258,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Golden rice carries inserted genes for beta-carotene, the provitamin-A precursor, to address vitamin A deficiency
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  Checked each wrong option for a route from the stem: vitamin B and vitamin C are tied to no engineered crop in the chapter, omega 3 is a fatty acid rather than a vitamin, and both the name 'Golden rice' and the carotenoid the inserted gene makes point the same single way.
+- **Why:** This question requires the stated purpose of the gene put into Golden rice, demonstrated by 'the incorporated gene is meant for biosynthesis of' with four nutrients offered as options.
+- **Note:** no_trap is recorded here as a finding, not a gap: two unrelated vitamins and one fatty acid sit beside the answer with no taught route reaching any of them, so this question discriminates on recall of a single line and nothing else.
+<!--/ecat-->
+
 ## Q88
 
 Biology · both · Cell: The Unit of Life
@@ -3277,6 +4302,18 @@ Publisher's solution, as printed:
 ![printed solution 88](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q088_fd2d903c_28102026.png?v=fd2d903c3fa2)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** In cyanobacteria the pigment-bearing membrane extensions, the chromatophores, carry out photosynthesis, while mesosomes are the infoldings serving respiration and secretion
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  The prokaryotic membrane extensions are introduced as a pair in consecutive sentences, mesosome for respiration and secretion and chromatophore for pigment, so a student who holds the paragraph but not which name takes which function carries respiration across to the chromatophore.
+- **Why:** This question requires the function assigned to chromatophores, demonstrated by the bare stem 'Chromatophores take part in' with four single-word functions as options.
+- **Note:** Applied the 5.1 swap test: mesosome and chromatophore do not resemble each other, and replacing them with two unlike words leaves the pull intact because the two are printed one sentence apart, so the trap is nearby_fact and not look_alike_term.
+<!--/ecat-->
 
 ## Q89
 
@@ -3315,6 +4352,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Statements** (`statements`) — lettered statements, the answer is which combination is right
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Who did what in early virology: Ivanowski on the tobacco mosaic agent, Beijerinck's contagium vivum fluidum, Stanley's crystallised virus, Diener's viroids
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 4  
+  Ivanowski and Beijerinck are credited in consecutive sentences of the same account, so a student who holds both names but not their order reads 'contagium vivum fluidum' as Ivanowski's phrase and marks the Beijerinck statement as the wrong one.
+- **Why:** This question requires the attribution of each virology landmark to its worker, demonstrated by the option 'The viroids were discovered by D.J. Ivanowski' set against three correctly attributed claims.
+- **Note:** Applied the 5.1 swap test to the two names: Ivanowski and Beijerinck do not resemble each other, and the pull survives their replacement by unlike words because the paragraph prints them in sequence, so nearby_fact. The retired scientist_swap device falls in this family. E1's pattern read the shape as statement_options; under the live qtype vocabulary the stem 'Select the wrong statement' with four full claims as options makes it statements.
+<!--/ecat-->
+
 ## Q90
 
 Biology · both · Principles of Inheritance and Variation
@@ -3347,6 +4396,18 @@ Publisher's solution, as printed:
 ![printed solution 90](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q090_7daecb27_28102026.png?v=7daecb27871d)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Pleiotropy: one gene whose single product shows up in several unrelated traits at once
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 4  
+  A student who stores pleiotropy and polygeny as one pair of non-Mendelian oddities keeps both relations but not which name carries which direction, and option 4 prints the arrow the other way round. 'Controls a trait only in combination with another gene' is many genes to one trait, which is complementary gene action, while pleiotropy is one gene to many traits.
+- **Why:** This question requires the stored definition of a pleiotropic gene, demonstrated by the key reading 'Controls multiple traits in an individual' with no data or criterion printed to work on.
+- **Note:** E1 recorded statement_options, a value of the retired vocabulary. No statement block is printed and the stem does not ask for statements to be judged, so on the current axis the shape is mcq. nearby_fact was ruled out on the trap because option 4 mirrors the definition with its two sides exchanged, which position alone would not produce.
+<!--/ecat-->
 
 ## Q91
 
@@ -3381,6 +4442,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated reason** (`reason_line`) — a reason NCERT gives: why it happens
+- **Concept:** Urine is acidified because the tubule actively secretes H+ into the filtrate
+- **Trap:** **Wrong site attacked** (`wrong_site_attacked`) — the reagent is right but it attacks the other site, atom or bond than the one the question turns on — option 2  
+  The sodium-for-hydrogen exchange named in the option is a real tubular transport step, so a student who remembers that an antiporter trades Na+ in for H+ out accepts the sentence whole. That exchange works across the tubular wall into the filtrate, not 'in peritubular capillaries', where no urine is being formed.
+- **Why:** This question requires the cause the textbook gives for urine's acidity, demonstrated by the stem 'Human urine is usually acidic because:' and four options each offering a rival mechanism.
+- **Note:** E1 recorded statement_options, a retired value; the stem is a trailing 'because' with full-sentence options, which under brief rule 1 is still mcq. half_right was available because option 2 has a mechanism part and a location part, but wrong_site_attacked names which part fails and so was preferred.
+<!--/ecat-->
+
 ## Q92
 
 Biology · botany · Plant Growth and Development
@@ -3413,6 +4486,18 @@ Publisher's solution, as printed:
 ![printed solution 92](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q092_ee9e9a2f_28102026.png?v=ee9e9a2fd478)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Auxin's standard bioassay is the curvature of the Avena coleoptile
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  Auxin is taught as the hormone of cell elongation, so the option whose words are 'hypocotyl elongation' matches the effect a student has stored under auxin. Lettuce hypocotyl elongation is the assay listed for another growth hormone; the one printed for auxin is the bending of the Avena coleoptile.
+- **Why:** This question requires the named test the textbook ties to auxin, demonstrated by the stem 'Auxin can be bioassayed by :' with no setup, reading or observation printed to interpret.
+- **Note:** asks: experiment was ruled out because nothing is supplied to interpret; the answer is the assay's name as printed. Trap label settled by the swap test: 'lettuce hypocotyl elongation' and 'Avena coleoptile curvature' do not resemble each other, so replacing them with unlike words leaves the pull standing, and it is their being two entries in one taught list of bioassays that carries the student.
+<!--/ecat-->
 
 ## Q93
 
@@ -3449,6 +4534,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** At mid-cycle the estrogen peak drives the LH surge, which ruptures the mature Graafian follicle and releases the secondary oocyte
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 1  
+  The LH surge is the event printed as inducing ovulation, so it is the first thing retrieved when the stem's topic is ovulation, and reading the stem as 'which event is associated' puts it first. It is true of ovulation, which is exactly why it cannot answer a stem asking for the event not associated.
+- **Why:** This question requires which printed events accompany ovulation, demonstrated by the stem asking for the event 'not associated with ovulation' while three options name events the cycle's account places at mid-cycle.
+<!--/ecat-->
+
 ## Q94
 
 Biology · zoology · Animal Kingdom
@@ -3484,6 +4580,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Porifera: a canal system lined with flagellated choanocytes that filter food, with larval indirect development
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  Coelenterata is the phylum taught immediately beside Porifera and shares two of the three printed features, a central internal cavity and an indirect development through a larva, so a student checking the stem against the adjacent phylum finds nothing that contradicts it. What a coelenterate does not have is the food-filtering flagellated lining, which is the poriferan choanocyte.
+- **Why:** This question requires the diagnostic features printed for one phylum, demonstrated by 'internal cavities lined with food filtering flagellated cells', which is the choanocyte-lined canal system named for only one of the four groups.
+- **Note:** Trap label settled by the swap test: Porifera and Coelenterata do not resemble each other as words, so unlike names would leave the pull intact; it is the adjacency of the two phyla and their two shared features that carries the student, hence nearby_fact and not look_alike_term.
+<!--/ecat-->
+
 ## Q95
 
 Biology · zoology · Chemical Coordination and Integration
@@ -3517,6 +4625,18 @@ Publisher's solution, as printed:
 ![printed solution 95](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q095_f92e05e3_28102026.png?v=f92e05e39d83)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Glucocorticoids raise blood glucose through gluconeogenesis, while the mineralocorticoid aldosterone handles Na+, K+ and water
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  Cortisone is the corticoid stored as the anti-inflammatory and anti-stress hormone, so the role a student holds for it is immune suppression and it reads as the hormone with no sugar business. The same printed paragraph also gives glucocorticoids gluconeogenesis, so the hormone outside sugar metabolism is the mineralocorticoid aldosterone.
+- **Why:** This question requires which of the two adrenal cortical hormones acts on sugar, demonstrated by the options placing 'Cortisone' and 'Aldosterone' beside the two pancreatic sugar hormones under a stem asking which is 'not involved in sugar metabolism'.
+- **Note:** Trap label settled by the swap test: cortisone and aldosterone are not alike as words, so the pull survives unlike names and comes from both being printed in the same adrenal cortex paragraph.
+<!--/ecat-->
 
 ## Q96
 
@@ -3552,6 +4672,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Each named infectious disease belongs to one class of agent, and protozoan diseases have to be held apart from the fungal, bacterial and viral ones
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 1  
+  Blastomycosis and Babesiosis are both unfamiliar names ending in -osis, so a student working the suffix habit learnt from amoebiasis and trypanosomiasis reads the word shape as 'protozoan infection'; the 'myco' sitting inside the word is the part that says fungus.
+- **Why:** This question requires the stated class of agent behind a named disease, demonstrated by 'Which of the following diseases is caused by a protozoan?' with four bare disease names and no criterion printed to apply. Applied the likeness test to option 1: replace Blastomycosis with an unlike name such as Typhoid and the pull dies, because it is the shared -osis shape that reaches it, so look_alike_term rather than nearby_fact.
+- **Note:** Babesiosis is not a disease named in NCERT; the question is tagged as printed.
+<!--/ecat-->
+
 ## Q97
 
 Biology · both · Strategies for Enhancement in Food Production
@@ -3585,6 +4717,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated reason** (`reason_line`) — a reason NCERT gives: why it happens
+- **Concept:** Inbreeding raises homozygosity and fixes lines; outbreeding is brought in to restore the vigour that inbreeding depression has cost
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 1  
+  'Exposes harmful recessive genes that are eliminated by selection' is the benefit the source states for inbreeding, so a student who recalls the benefit sentence without checking which programme it belongs to takes it; it answers why inbreeding is practised, not why outbreeding is.
+- **Why:** This question requires the reason the source gives for a practice, demonstrated by the stem 'Outbreeding is an important strategy of animal husbandry because it :' with each option offering a rival purpose.
+- **Note:** E1 read this as statement_options; no lettered statement block is printed and the stem does not ask statements to be judged, so qtype is mcq. All three wrong options are benefits the source states for inbreeding.
+<!--/ecat-->
+
 ## Q98
 
 Biology · zoology · Reproductive Health
@@ -3617,6 +4761,18 @@ Publisher's solution, as printed:
 ![printed solution 98](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q098_a5857d99_28102026.png?v=a5857d992c43)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** GIFT transfers gametes into the fallopian tube, and the acronym spells out that site - gamete intra fallopian transfer
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 1  
+  Options 1 and 3 both end 'fallopian transfer', so the live decision is 'internal' against 'intra', and 'internal' reads as the ordinary English expansion of the I while still spelling GIFT.
+- **Why:** This question requires the full form the source prints for a named technique, demonstrated by 'The full form of this technique is:' with four expansions that all fit the letters G-I-F-T.
+- **Note:** E1 read this as statement_options; the options are acronym expansions, not statements to be judged, so qtype is mcq.
+<!--/ecat-->
 
 ## Q99
 
@@ -3653,6 +4809,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Cyclostomata are the jawless fishes; the lamprey breeds in fresh water and passes through an ammocoetes larva, while the hagfishes stay marine
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  Petromyzon and Myxine are printed together in one sentence as the examples of Cyclostomata, so a student who stored 'the jawless fish examples' as a pair and not the fresh-water breeding and the ammocoetes larva takes the other half of that pair.
+- **Why:** This question requires the named organism that stated facts belong to, demonstrated by 'lays eggs in fresh water and whose ammocoetes larvae after metamorphosis return to the ocean' with four genus names as the options. Applied the likeness test to Petromyzon against Myxine: the two names resemble each other in nothing, and the pull survives because they sit in one printed example line, so nearby_fact.
+<!--/ecat-->
+
 ## Q100
 
 Biology · both · Cell: The Unit of Life
@@ -3685,6 +4852,17 @@ Publisher's solution, as printed:
 ![printed solution 100](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q100_00335526_28102026.png?v=00335526b417)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Fimbriae are the short bristles by which a bacterium sticks to a surface or a host tissue; holdfasts and rhizoids do that job in algae and mosses, and a mesosome is an internal membrane infolding
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 1  
+  The holdfast is the structure the plant chapters supply for sticking to rocks, so the stem's words 'attach to rocks' land straight on it; it answers what anchors a brown alga, which is not what the stem asked about bacteria.
+- **Why:** This question requires the named structure a stated function belongs to, demonstrated by 'help some bacteria to attach to rocks and/or host tissues' with attachment structures from three different groups offered against it.
+<!--/ecat-->
 
 ## Q101
 
@@ -3720,6 +4898,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Antibodies are the globulin fraction of the plasma proteins; albumins hold osmotic balance and fibrinogen clots the blood
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  Albumin is the other serum protein in the same printed sentence on plasma proteins and the most abundant one, so a student who recalls the three names without fixing which role went with which reaches for it.
+- **Why:** This question requires the stated role of one plasma protein fraction, demonstrated by three of the four options being plasma fractions and the stem asking where a 'major deficiency of antibodies' would be confirmed. Applied the likeness test to globulins against albumins: replace both with unlike terms and the pull stands, because what carries the student is the two sitting in one printed sentence on plasma proteins, so nearby_fact.
+- **Note:** Option 2 is printed as 'Fibrinogin in plasma'; tagged as printed.
+<!--/ecat-->
+
 ## Q102
 
 Biology · zoology · Human Reproduction
@@ -3752,6 +4942,17 @@ Publisher's solution, as printed:
 ![printed solution 102](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q102_bc0dece8_28102026.png?v=bc0dece8ad06)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Meiosis in the human oocyte stops twice: meiosis-I finishes at ovulation, and meiosis-II only when a sperm enters the secondary oocyte
+- **Trap:** **Wrong site attacked** (`wrong_site_attacked`) — the reagent is right but it attacks the other site, atom or bond than the one the question turns on — option 2  
+  Puberty is the stage the oogenesis account attaches the restart of meiosis to, since the primary oocyte lies arrested until then, and a student carries that same stage over to the completion of meiosis-II, which happens only at fertilisation.
+- **Why:** This question requires the stated timing of the second meiotic division in the human oocyte, demonstrated by the stem asking when meiosis-II 'is not completed until' while all four options are life-history stages rather than cell events. The trap is tagged wrong_site_attacked, not nearby_fact, because the option keeps the asked event and only moves it to an earlier stage.
+<!--/ecat-->
 
 ## Q103
 
@@ -3787,6 +4988,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The zona pellucida is a non-cellular glycoprotein coat laid down around the oocyte, while granulosa, theca and ovarian stroma are all layers of cells
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 4  
+  'Stroma' is the word a student meets first as the chloroplast's fluid matrix, so when the stem asks which layer has no cells, the option whose very name means matrix is the one they reach for.
+- **Why:** This question requires the stated composition of one named follicular layer, demonstrated by 'Which of the following layers in an antral follicle is acellular?' listing four layers and asking only which one lacks cells. 'Stroma' is tagged look_alike_term on the swap test: the pull is the identical word's other sense, the acellular chloroplast stroma, so rename the ovarian layer and the pull dies.
+<!--/ecat-->
+
 ## Q104
 
 Biology · both · Principles of Inheritance and Variation
@@ -3819,6 +5031,17 @@ Publisher's solution, as printed:
 ![printed solution 104](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q104_9a6b086a_28102026.png?v=9a6b086ad572)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Mendel's seven contrasting pea characters: pod shape and stem length are on the list, pod length is not
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 1  
+  'Pod length' reads like a member of the seven because 'pod shape' and 'stem length' both are, so a student looks elsewhere for the odd one out and lands on flower position, which is a character Mendel did study and therefore answers 'which traits did he use'.
+- **Why:** This question requires membership of a printed list of characters, demonstrated by 'Mendel did not use:' set against 'Pod length', which splices his 'pod shape' and 'stem length' characters into a term the list never carries.
+<!--/ecat-->
 
 ## Q105
 
@@ -3853,6 +5076,17 @@ Publisher's solution, as printed:
 ![printed solution 105](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q105_7ded5c50_28102026.png?v=7ded5c508f84)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Parthenocarpy is fruit set without fertilisation, so the fruit is seedless, and banana is the named example
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  Apple is the one fruit this chapter singles out, but it is singled out as a false fruit, and that sentence sits beside the parthenocarpy line, so a student holding 'apple is the special fruit here' brings it to the wrong question.
+- **Why:** This question requires one named example of a stated condition, demonstrated by 'Which one of the following fruits is parthenocarpic?' with 'Apple', the same paragraph's false-fruit example, standing among the options. Apple is tagged nearby_fact on the swap test: apple and banana resemble each other in no way, so position in the paragraph is what carries the student, and the pull survives any renaming.
+<!--/ecat-->
 
 ## Q106
 
@@ -3889,6 +5123,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Comparison** (`compare`) — the difference between two things, or the correct pairing
+- **Concept:** Sporogenesis is the meiotic step in both sexes: microspores are formed in the anther and megaspores in the ovule, but the division itself is meiosis in each case
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 2  
+  Microsporogenesis is named first in the stem and the anther is the site drilled hardest for it, so a student answers for that half of the stem and stops; the option is false of megasporogenesis, which runs inside the ovule.
+- **Why:** This question requires holding two neighbouring processes apart before a shared property can be chosen, demonstrated by 'Occur in ovule' and 'Occur in anther' each being true of exactly one of the two processes the stem names together, so only 'Involve meiosis' survives for both.
+- **Note:** Option 3 is copied as printed, including the typographical slip in 'Form gametes without furthers divisions'. This is the one member of the group whose stem names two processes at once, which is why its asks differs from the group.
+<!--/ecat-->
+
 ## Q107
 
 Biology · both · Principles of Inheritance and Variation
@@ -3921,6 +5167,18 @@ Publisher's solution, as printed:
 ![printed solution 107](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q107_d43d49ce_28102026.png?v=d43d49ce2e21)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Codominance: both alleles of a gene are expressed in the heterozygote, so neither one masks the other
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 4  
+  Codominance is carried in memory as 'neither allele is dominant over the other', and a student holding only that negative restates it as each allele being recessive to the other, which inverts the relation: both alleles are expressed, not both masked.
+- **Why:** This question requires the stated definition of one genetic term, demonstrated by 'Both alleles independently expressed in the heterozygote' set against 'One allele dominant on the other'. Option 4 is tagged reversed rather than look_alike_term because it keeps the symmetry of the definition and inverts its direction, turning both expressed into both masked.
+- **Note:** The pattern classifier called this statement_options; the printed shape is a stem completion, 'A gene showing codominance has:', whose options are predicates finishing the sentence rather than standalone statements put up for judgement, so it is recorded as mcq with the rest of the group.
+<!--/ecat-->
 
 ## Q108
 
@@ -3956,6 +5214,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Chitin is a polymer of the amino sugar N-acetyl glucosamine, not of plain glucosamine
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 3  
+  Chitin is carried as 'a polymer of an amino sugar', and D-glucosamine is the amino sugar whose name sits inside the right answer, so the shorter name reads as the monomer. The acetyl group belongs to the monomer; the deacetylated polymer is chitosan, not chitin.
+- **Why:** This question requires the stated monomer of chitin, demonstrated by the stem 'formed by the polymerisation of :' with four named sugar candidates and no criterion printed to apply.
+<!--/ecat-->
+
 ## Q109
 
 Biology · botany · Biological Classification
@@ -3989,6 +5258,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Deuteromycetes are the imperfect fungi, known only in asexual or vegetative stages, and many are litter decomposers in mineral cycling
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  The line printed beside the imperfect fungi says that once their sexual forms were discovered they were moved into the class they rightly belong to, and Ascomycetes is that destination, so the reclassified home is read as the answer to 'belong to'. The stem asks for the class these fungi sit in while only asexual stages are known, which is Deuteromycetes.
+- **Why:** This question requires the stated class of the imperfect fungi, demonstrated by the stem reproducing the printed line almost word for word -- 'decomposers of litter and help in mineral cycling' -- with four class names as options.
+<!--/ecat-->
+
 ## Q110
 
 Biology · both · Evolution
@@ -4021,6 +5301,18 @@ Publisher's solution, as printed:
 ![printed solution 110](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q110_5549e3c2_28102026.png?v=5549e3c26be8)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **Two answers** (`two_part`) — the answer has two halves, usually joined by 'respectively'
+- **Asks:** **Comparison** (`compare`) — the difference between two things, or the correct pairing
+- **Concept:** Same function from different ancestry is analogy, produced by convergent evolution; shared ancestry put to different uses is homology, produced by divergence
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 1  
+  Two wings doing the same job with no shared ancestry is correctly read as convergent evolution, and 'homologous' is then carried over as the word for any structures that match in function, which this option keeps beside the right second half. Homology needs shared ancestry and structure -- a bird's wing is a bony forelimb, an insect's a fold of cuticle -- so only the evolution half of the option holds.
+- **Why:** This question requires holding homology against analogy and divergence against convergence, demonstrated by the options being crossings of those two pairs -- 'Homologous structures and represent convergent evolution' against 'Analogous structures and represent convergent evolution' -- so each half has to be decided separately.
+- **Note:** E1 pattern returned the retired value statement_options on 15 full-statement options. The printed shape is four options each coupling a structure verdict with an evolution verdict, accepted or rejected whole, so I recorded qtype two_part; there is no printed block of statements to judge, which rules out statements.
+<!--/ecat-->
 
 ## Q111
 
@@ -4056,6 +5348,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** A unisexual flower bears either stamens or carpels, and the cucurbits are the taught example of it
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  Checked each of the other three against the flower description that covers it: the Fabaceae account covering pea prints the flower as bisexual and zygomorphic, the Liliaceae account covering onion prints it as bisexual and actinomorphic, and china rose is the standard hypogynous example drawn with both stamens and stigma, so no printed line offers unisexuality to any of the three, and the stem prints no criterion to apply instead.
+- **Why:** This question requires the stated fact of which named plant bears unisexual flowers, demonstrated by the stem 'Flower are unisexual in:' followed by four coordinate crop plants with no criterion printed to apply.
+- **Note:** Three fillers, so I looked again before recording no_trap: the discrimination here rests entirely on knowing the cucurbits are monoecious, and all three wrong plants are printed as bisexual in their own family or flower descriptions, which leaves no route to walk. The stem reads 'Flower are unisexual in:' in our record, which is a grammatical slip for 'Flowers'; it does not change what is asked, and I tagged the question as printed.
+<!--/ecat-->
+
 ## Q112
 
 Biology · botany · Environmental Issues
@@ -4088,6 +5392,18 @@ Publisher's solution, as printed:
 ![printed solution 112](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q112_8d021246_28102026.png?v=8d021246b1a0)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Biomagnification: a non-degradable toxicant rises in concentration as it is passed up the trophic levels
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  'Successive trophic levels' is the phrase the ecosystem material attaches to the movement of matter along the food chain, so a student holding that association answers with the cycling term for a stem that is actually about concentration rising. Biogeochemical cycling is matter returning between the biotic and abiotic pools, which says nothing about a toxicant becoming more concentrated at each level.
+- **Why:** This question requires the printed term for a stated phenomenon, demonstrated by the stem 'Increase in concentration of the toxicant at successive trophic levels is known as :' with four coordinate 'bio-' terms as options.
+- **Note:** Applied the swap test on the chosen label: replace 'Biogeochemical cycling' with an unlike phrase of the same meaning, such as 'nutrient cycling', and the pull survives, because it is the stem's own words 'successive trophic levels' doing the work, not any resemblance to the word biomagnification. So nearby_fact, not look_alike_term.
+<!--/ecat-->
 
 ## Q113
 
@@ -4122,6 +5438,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** The anterior (ventral) horn of the spinal cord holds the cell bodies of the somatic motor neurons; the posterior horn is where sensory fibres come in
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 2  
+  A student who holds the pair 'one horn is sensory, the other is motor' without which horn is which attaches the sensory half to the anterior horn, and the stem's 'would result in loss of' accepts either half equally. The sensory fibres enter at the posterior horn through the dorsal root; the anterior horn holds the motor cell bodies whose axons leave by the ventral root.
+- **Why:** This question requires the dorsal-sensory, ventral-motor rule applied to a printed lesion, demonstrated by the stem 'Destruction of the anterior horn cells of the spinal cord would result in loss of :-' asking for the consequence rather than for the name of a part.
+- **Note:** Ruled out wrong_site_attacked for the chosen trap: the lesion site is printed in the stem and the student does not move it, so what inverts is which horn is credited with which traffic, which is reversed.
+<!--/ecat-->
+
 ## Q114
 
 Biology · botany · Transport in Plants
@@ -4155,6 +5483,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** A free-floating aquatic plant takes in water over its whole body surface, so the root is not the absorbing organ it is in a land plant
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  Checked each remaining option against the stem: wheat, sunflower and pea are all land crops whose roots are the absorbing organ, the stem prints no root feature that would single one of them out, and the chapter states nothing beside the floating-aquatic fact that would carry a student to any one of the three; the whole question turns on recognising Pistia as the floater
+- **Why:** This question requires the stated fact about which named plant does not depend on its roots for water, demonstrated by the stem printing no criterion at all and the four options being four plant names, 'Wheat', 'Sunflower', 'Pistia' and 'Pea'.
+- **Note:** The three wrong options are same-kind terrestrial crops; recorded as no_trap under 5.1 rather than forcing a route onto one of them.
+<!--/ecat-->
+
 ## Q115
 
 Biology · both · Cell: The Unit of Life
@@ -4186,6 +5526,18 @@ Match the columns and identify the correct option:
 ![printed question 115](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/crops/q115_0f7611ef_28102026.png?v=0f7611efb7f7)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **Match the columns** (`match_columns`) — two labelled lists to pair, the answer is a pairing code
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Each organelle's internal compartment has its own name and its own home: thylakoids in the chloroplast stroma, cristae in the mitochondrion, cisternae in the Golgi, chromatin as condensed DNA
+- **Trap:** **look alike term** (`look_alike_term`) — two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP — option 4  
+  Cristae and cisternae differ by two letters and are printed one under the other as (b) and (c), so a student who stores both as 'stacked membrane compartments' and keeps them apart by the word alone reads the pair the other way round and takes (b)-(i), (c)-(iv).
+- **Why:** This question requires the stated description of each named organelle part, demonstrated by '(iv) Infoldings in mitochondria' naming its own organelle, so each row is settled by the printed definition rather than by sorting the four terms against one another.
+- **Note:** The packet carries correct_answer: null and no answer line, so no key could be followed; the labels are derived from the printed lists, where (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii) is the only option consistent with the descriptions as printed. The options list only List II labels, in (a) to (d) order, without repeating the List I labels; read that way throughout.
+<!--/ecat-->
 
 ## Q116
 
@@ -4223,6 +5575,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Sequence** (`order`) — a sequence to put in the right order, or a trend to arrange
+- **Concept:** The nesting of genetic material: a genome is the full set of chromosomes, a chromosome carries many genes, and a gene is a stretch of nucleotides
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 3  
+  A student with the top of the hierarchy right reads 'nucleotide' as the long nucleotide chain, puts it above the gene, and so breaks only the last adjacency of an otherwise correct order
+- **Why:** This question requires the taught nesting of genetic material to be put in size order, demonstrated by the stem asking for 'the correct order of organisation of genetic material from largest to smallest' with four options that differ only in sequence.
+- **Note:** E1_question_type is 'arrange_in_order', a retired value; the printed shape is one question with four single answers, so qtype is mcq and the ordering is carried by asks.
+<!--/ecat-->
+
 ## Q117
 
 Biology · zoology · Chemical Coordination and Integration
@@ -4255,6 +5619,17 @@ Publisher's solution, as printed:
 ![printed solution 117](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q117_82b73955_28102026.png?v=82b739559458)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The posterior pituitary stores and releases hormones made in the hypothalamus, so ADH is not synthesised by the gland that secretes it
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  'Synthesised elsewhere' sends a student hunting for the pituitary hormone with the odd source, and MSH is the one the chapter files under a different lobe, the pars intermedia, so the oddity printed beside the right fact is taken for it
+- **Why:** This question requires the stated fact that the hormone stored in the posterior pituitary is made in the hypothalamus, demonstrated by the stem 'though synthesis elsewhere, is stored and released by the master gland'. Swap test applied for the trap: 'melanocyte stimulating hormone' and 'antidiuretic hormone' do not resemble each other, so position in the pituitary lobe list is doing the work, which is nearby_fact.
+<!--/ecat-->
 
 ## Q118
 
@@ -4302,6 +5677,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Statements** (`statements`) — lettered statements, the answer is which combination is right
+- **Asks:** **Sequence** (`order`) — a sequence to put in the right order, or a trend to arrange
+- **Concept:** In a woody dicot stem each cambium lays its products on a fixed side: the cork cambium throws phellem outwards and secondary cortex inwards, the vascular cambium throws secondary phloem outwards and wood inwards
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 1  
+  Working outward from the vascular cambium gives phloem outside wood, and cork is known to be outermost, so secondary cortex is dropped into the one slot left over, behind the phloem; that yields (d), (c), (a), (b), which keeps both ends right and fails only on the middle adjacency.
+- **Why:** This question requires the outer-to-inner sequence of the tissues the two cambia deposit in a woody dicot stem, demonstrated by the stem asking for 'the correct order of the components with reference to their arrangement from outer side to inner side' over a lettered block of four tissue names that the options only permute.
+- **Note:** E1 read this as arrange_in_order, and the six-value qtype axis carries no ordering shape; the printed shape is a lettered block (a) to (d) above four options, so rule 1 ('prints a lettered list') puts qtype at statements while asks: order carries the sequencing, which is the information arrange_in_order held. The items are tissue names to sequence, not claims to judge, so a reviewer may want an ordered_list value on the qtype axis. Trap label chosen through the rulebook 5.0 route: the device is the retired sequence_endpoint_or_adjacency (ends right, one interior adjacency wrong), reversed excludes 'one swapped pair inside a longer order' by its own wording, so the live family is half_right on a multi-part option, two of whose four positions fail.
+<!--/ecat-->
+
 ## Q119
 
 Biology · zoology · Locomotion and Movement
@@ -4334,6 +5721,18 @@ Publisher's solution, as printed:
 ![printed solution 119](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q119_2aa2b326_28102026.png?v=2aa2b3262764)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Joints are classed by what holds the bones together, and the fibrous joints - the flat sutures of the skull - permit no movement at all
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  Fibrous and cartilaginous sit as the two stiff entries in one printed three-way list, so a student who holds the list but not which entry carries 'no movement' takes the neighbouring one
+- **Why:** This question requires the stated fact that one class of joint allows no movement, demonstrated by the stem 'would allow no movement' set against four named joint classes. Swap test applied: 'fibrous' and 'cartilaginous' are not alike as words, so the shared printed list is doing the work, which is nearby_fact.
+- **Note:** Option 1, ball and socket, is a kind of the joint named in option 4, synovial, so those two options overlap; tagged as printed without re-judging the key.
+<!--/ecat-->
 
 ## Q120
 
@@ -4368,6 +5767,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Comparison** (`compare`) — the difference between two things, or the correct pairing
+- **Concept:** Chargaff's equivalence of A to T and G to C is a property of the two-stranded DNA molecule, not of nucleic acids in general
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 2  
+  A student holding 'RNA is single-stranded' carries the pairing rule past the case it was learnt on and strikes out complementary base pairing, but RNA pairs with the DNA template as it is transcribed and with itself in the folded tRNA
+- **Why:** This question requires DNA-only properties to be held apart from properties shared by both nucleic acids, demonstrated by the stem 'not applicable to RNA' with three of the four options true of RNA as well.
+- **Note:** condition_missed rather than nearby_fact here: the pull on option 2 is a remembered rule, that pairing needs two strands, used past the point it holds, not the position of a name in a list.
+<!--/ecat-->
+
 ## Q121
 
 Biology · zoology · Body Fluids and Circulation
@@ -4401,6 +5812,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Both heart sounds are made by valves closing - the AV valves at the start of ventricular systole, the semilunar valves at its end
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  The AV valves and the semilunar valves are named in one printed line as the two sources of the heart sounds, so a student who holds 'the sounds come from valves' but not which pair goes with which reaches for the pair printed beside the right one
+- **Why:** This question requires the stated fact that the second heart sound accompanies semilunar valve closure, demonstrated by the stem 'The second sound is heard when:' and the keyed option 'Semilunar valves close down after the blood flows into vessels from ventricles'. Swap test applied for the trap: 'AV valves' and 'semilunar valves' are not alike as words, so the shared printed line is doing the work, which is nearby_fact.
+- **Note:** E1_question_type is 'statement_options'; under the current qtype vocabulary long sentences as options do not make a question 'statements', and no lettered statement block is printed, so qtype is mcq.
+<!--/ecat-->
+
 ## Q122
 
 Biology · botany · Ecosystem
@@ -4433,6 +5856,18 @@ Publisher's solution, as printed:
 ![printed solution 122](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q122_48895fde_28102026.png?v=48895fde099c)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Succession is a gradual, directional and predictable change in species composition that ends in the climax community; the pioneer community is only the first stage
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  The sentence is the printed line about the climax community with one name exchanged, so a student who recognises the clause 'in near equilibrium with the environment' signs off on the whole option without checking which community that name belongs to
+- **Why:** This question requires the stated definition of ecological succession, demonstrated by option 2's 'gradual and predictable change in species composition occurs in a given area'. On the trap I applied the swap test: replace 'pioneer' with an unlike word and the pull survives, because what carries it is pioneer and climax being printed in the same passage, so the label is nearby_fact and not look_alike_term.
+- **Note:** The pattern classifier returned statement_options because every option is a full sentence. The printed stem, 'During ecological succession:', neither asks for statements to be judged nor prints a lettered block, so under the brief's rule 1 the qtype recorded is mcq.
+<!--/ecat-->
 
 ## Q123
 
@@ -4474,6 +5909,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Figure reading** (`read_diagram`) — read a figure, graph or drawn structure and answer from it
+- **Concept:** In a pedigree, affected children born to unaffected parents fix the trait as recessive, and the sexes of the affected individuals decide autosomal against X-linked
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  the answer is decided by the printed pedigree drawing and the figure was not supplied to this step, so which option the drawing pulls toward cannot be checked
+- **Why:** This question requires reading the printed pedigree for the pattern of affected individuals, demonstrated by the stem's 'In the following human pedigree, the filled symbols represent the affected individuals.'
+- **Note:** The stem names a figure and the four options are modes of inheritance, so the drawing alone decides between them; the image at figures_agent/2015_A/q123.png was not available to this step. The paper is intact, so this is not source damage. A reviewer holding the figure should check option 3, X-linked recessive, as the rival reading of any recessive pedigree: it is ruled out when an affected daughter has an unaffected father, or when affected individuals of both sexes appear in similar numbers. The same reviewer should check that an affected child with two unaffected parents is present, which is what excludes options 1 and 2.
+<!--/ecat-->
+
 ## Q124
 
 Biology · both · Cell: The Unit of Life
@@ -4508,6 +5955,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Balbiani rings are puffed, decondensed bands of a polytene chromosome, and puffing marks active transcription, so the ring is a site of RNA and protein synthesis
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  A student who retains only that Balbiani rings lie on a chromosome answers from what a chromosome is built out of, and names the making of nucleotides instead of what the puffed band is doing
+- **Why:** This question requires the stated activity of a chromosomal puff, demonstrated by the stem's 'Balbiani rings are sites of'. I applied the swap test on the trap: replace 'nucleotide' with an unlike word and the pull still stands, because the word 'nucleotide' is not like 'RNA' and what carries the student is nucleotides being printed as the chromosome's own units in the same chapter, so the label is nearby_fact.
+<!--/ecat-->
+
 ## Q125
 
 Biology · zoology · Breathing and Exchange of Gases
@@ -4540,6 +5998,17 @@ Publisher's solution, as printed:
 ![printed solution 125](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q125_0f1b036c_28102026.png?v=0f1b036c832d)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Emphysema is destruction of the alveolar walls, so the gas-exchange surface itself is lost, whereas asthma narrows the bronchi and bronchioles
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  Asthma is the other respiratory disorder printed in the same section and is the one a student can state from memory, so 'alveolar surface area involved in gas exchange is drastically reduced' gets read as the breathlessness asthma produces
+- **Why:** This question requires the stated line that names the disorder in which the alveolar walls are damaged, demonstrated by the stem's 'alveolar surface area involved in gas exchange is drastically reduced due to damage in the alveolar walls'. Swap test on the trap: 'asthma' and 'emphysema' are not like each other as words, and the pull survives the swap because the two disorders share one printed section, so the label is nearby_fact.
+<!--/ecat-->
 
 ## Q126
 
@@ -4574,6 +6043,17 @@ Publisher's solution, as printed:
 ![printed solution 126](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q126_d38d3b04_28102026.png?v=d38d3b04e1cd)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Lichens are algal-fungal symbionts that cannot grow where sulphur dioxide is present, so their absence marks polluted air
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 4  
+  Lichens are printed as an association of algae and fungi, so a student who answers from that definition hands the credit to one named partner and writes algae where the question asks for the lichen
+- **Why:** This question requires the stated fact about which organism indicates sulphur dioxide pollution, demonstrated by the stem's 'most suitable indicator of SO2 pollution in the environment'. Swap test on the trap: 'algae' and 'lichens' are unlike words, and the pull survives the swap because algae are printed inside the definition of a lichen, so position is doing the work and the label is nearby_fact.
+<!--/ecat-->
 
 ## Q127
 
@@ -4612,6 +6092,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated reason** (`reason_line`) — a reason NCERT gives: why it happens
+- **Concept:** Satellite DNA is non-coding repetitive DNA whose repeat number varies from person to person and is inherited, which is why it can fingerprint an individual
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 4  
+  The opening clause 'does not code for proteins' is correct, and a student who verifies that clause accepts the second clause riding behind it without testing whether satellite DNA is the same in everyone
+- **Why:** This question requires the reason given for satellite DNA's importance rather than any fact about it, demonstrated by the stem's 'Satellite DNA is important because it'. The trap option carries two clauses, 'does not code for proteins' and 'is same in all members of the population', the first true and the second false, which is what half_right names.
+- **Note:** The pattern classifier returned statement_options because each option is a full sentence. Under the brief's rule 1 the qtype is mcq: no lettered block is printed and the stem does not ask for statements to be judged, it asks for a reason with a trailing 'because it'.
+<!--/ecat-->
+
 ## Q128
 
 Biology · both · Evolution
@@ -4644,6 +6136,18 @@ Publisher's solution, as printed:
 ![printed solution 128](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q128_046068db_28102026.png?v=046068db29e1)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Industrial melanism is the textbook field case of natural selection: soot blackens the trunks and changes which already-existing moth colour survives, without creating the variation
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  Neo-Darwinism is the Evolution chapter's updated restatement of Darwin's mechanism, printed a few pages from natural selection, so a student who has filed the moth case under 'Darwin' reaches for the more complete-sounding label in the same section; the observation itself is differential survival of light and dark forms, which is natural selection, while Neo-Darwinism names the whole selection-plus-genetics synthesis.
+- **Why:** This question requires the stated fact about which evolutionary mechanism a named observation illustrates, demonstrated by the stem's 'Industrial melanism is an example of' with four coordinate mechanism names as options.
+- **Note:** Swap test applied for the trap axis: replacing 'Neo Darwinism' with an unlike term keeps the pull, because what carries the student is that the Darwinism section sits beside natural selection in the same chapter, not any resemblance between the two names, so nearby_fact rather than look_alike_term. The context field records the subtopic as 'Industrial Evolution', which reads like a slip for industrial melanism; left as supplied, since earlier steps own it.
+<!--/ecat-->
 
 ## Q129
 
@@ -4679,6 +6183,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated reason** (`reason_line`) — a reason NCERT gives: why it happens
+- **Concept:** Cohesion between water molecules gives the xylem column its tensile strength, so the column holds together under tension instead of parting
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 4  
+  Lignin is the one strength fact printed for xylem, so the stem's word 'break' pulls a student towards the thickened wall; a lignified wall is why the vessel does not collapse inward under tension, and the stem asks what holds the water itself together.
+- **Why:** This question requires the reason given for an unbroken water column in tall trees, demonstrated by the stem's 'does not break under its weight because of'.
+<!--/ecat-->
+
 ## Q130
 
 Biology · both · Biotechnology: Principles and Processes
@@ -4712,6 +6227,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** t-DNA rides in on the Ti plasmid of Agrobacterium tumefaciens, so plant transformation begins with infection by that bacterium
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 3  
+  Heat shock is the gene-transfer step printed a page away, where calcium-treated bacterial cells are made competent, so it is what a student reaches for when asked how DNA gets into a cell; that protocol moves plasmid DNA into bacteria, while t-DNA enters a plant only through Agrobacterium infection.
+- **Why:** This question requires the stated fact about which agent carries t-DNA into a plant, demonstrated by the stem's 'The introduction of t-DNA into plants involves'.
+- **Note:** E1's pattern classifier called this statement_options on the strength of long sentences in the options. The stem is not an instruction to judge statements and no lettered block is printed, so the shape recorded is mcq.
+<!--/ecat-->
+
 ## Q131
 
 Biology · botany · Biological Classification
@@ -4744,6 +6271,18 @@ Publisher's solution, as printed:
 ![printed solution 131](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q131_edc52d3a_28102026.png?v=edc52d3a7e05)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **Statements** (`statements`) — lettered statements, the answer is which combination is right
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Monerans are prokaryotes: their genetic material lies free in the cytoplasm with no membrane around it, which is the line the four-way check turns on
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  Checked each of the other three claims against the Biological Classification chapter and each is a stated line there - the absence of a cell wall is the printed diagnostic of Animalia, Protista are printed as holding both photosynthetic and heterotrophic forms, and mushrooms are named among edible fungi - so no route makes any one of them read as the false statement. The question's device is the negated task word, which lands on no single option.
+- **Why:** This question requires judging four printed kingdom claims against the source and naming the false one, demonstrated by the stem 'Pick up the wrong statement'.
+- **Note:** The only difficulty this question creates is the negated task word 'wrong'; a misread polarity does not land on one option, and the live twelve-value trap axis holds no polarity value, so the finding is no_trap rather than new_trap. E1 called the shape statement_options; the stem instructs judging statements, so it is recorded as qtype statements. Three fillers are recorded after re-checking each claim individually, which is what the group note explains.
+<!--/ecat-->
 
 ## Q132
 
@@ -4779,6 +6318,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Photosynthesis is split by compartment: the light reactions run in the thylakoid membranes, the light-independent carbon fixation runs in the stroma
+- **Trap:** **Wrong site attacked** (`wrong_site_attacked`) — the reagent is right but it attacks the other site, atom or bond than the one the question turns on — option 2  
+  A student holding the single line 'photosynthesis happens in the thylakoids' keeps both phases in that compartment and picks the lumen; the thylakoid is where light is absorbed, water split and the proton gradient built, while the carbon-fixing phase is placed in the stromal matrix.
+- **Why:** This question requires the stated location of one phase of photosynthesis, demonstrated by the stem's 'the light-independent reactions take place at'.
+<!--/ecat-->
+
 ## Q133
 
 Biology · zoology · Human Health and Disease
@@ -4812,6 +6362,17 @@ Publisher's solution, as printed:
 ![printed solution 133](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q133_a099f75a_28102026.png?v=a099f75a16d5)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** IgA is the class secreted into colostrum and milk, which is how the mother's antibodies reach the newborn's gut
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 1  
+  IgG is carried as the most abundant immunoglobulin and as the one class that crosses the placenta to the foetus, so a student holding the mother-to-child transfer fact reaches for it; both of those statements are true, and both answer a different question from the one printed, which is about milk.
+- **Why:** This question requires the stated fact about which antibody class predominates in a named secretion, demonstrated by the stem's 'constitute the largest percentage in human milk'.
+<!--/ecat-->
 
 ## Q134
 
@@ -4853,6 +6414,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Two answers** (`two_part`) — the answer has two halves, usually joined by 'respectively'
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** Each mode of asexual reproduction carries the organism the textbook names for it: rhizome and offset for vegetative propagation in plants, binary fission for unicellular forms, conidia for fungi
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  Fragmentation is the mode carried for multicellular algae, so a student who has binary fission filed under Amoeba and Paramecium reads the one unicellular mode in the list as the misfit and stops there, while the printed key rejects option 4.
+- **Why:** This question requires the taught pairing of each asexual mode with the organism named for it, demonstrated by the header "Mode of eproduction | Example" over options such as "Conidia | Penicillium" that stand or fall whole.
+- **Note:** The stem reads "Mode of eproduction" - a dropped letter in our record, not a content problem. E1's pattern returned plain_mcq, but the printed shape is a two-column header above four mode-example pairs each accepted or rejected whole, so qtype is recorded as two_part and not mcq. Key doubt, recorded and not re-judged: on the standard printed pairings option 4 (offset, water hyacinth) reads as correctly matched, while option 2 pairs a mode printed for unicellular organisms with a multicellular brown alga, so option 2 is defensible as the mismatch. Tagged as printed with verdict arguable_key so the key can be checked against the printed paper.
+<!--/ecat-->
+
 ## Q135
 
 Biology · botany · Environmental Issues
@@ -4885,6 +6458,18 @@ Publisher's solution, as printed:
 ![printed solution 135](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q135_cfd919b4_28102026.png?v=cfd919b4f2f7)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Stated fact** (`fact_line`) — a fact NCERT states: what, who or where
+- **Concept:** The climate convention's Conference of Parties meets once a year and each session is identified by its host city and year; the 2012 session sat at Doha
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 2  
+  The roadmap the 2012 talks were carrying out is the one named after Durban, so a student who holds 'Durban' as the label for this round of negotiations puts the 2012 meeting there; Durban hosted the 2011 session and Doha the 2012 one
+- **Why:** This question requires the stored host city of one named year's climate conference, demonstrated by the stem fixing it as 'in the year 2012' while all four options are real Conference of Parties venues from neighbouring years.
+- **Note:** The names Warsaw, Durban, Doha and Lima do not resemble one another at all, so the swap test for look_alike_term fails: replace them with four unlike words and the trap survives, because what carries a student to a wrong option is that each is the venue printed beside the right one in the same run of annual sessions. That is position doing the work, so nearby_fact. Content remark for a reviewer: the 2012 Doha session appears in no NCERT edition, unlike the 1992 Earth Summit and the Kyoto Protocol that the Environmental Issues chapter does record, so the printed asks still sits on one stated fact but that fact is not an NCERT line. E1's plain_mcq matches the shape on the page.
+<!--/ecat-->
 
 ## Q136
 
@@ -4924,6 +6509,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** The longest wavelength of a hydrogen series is its smallest energy jump -- $n=2\to1$ for Lyman, $n=3\to2$ for Balmer -- and the wavelength is the reciprocal of what the Rydberg formula returns
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 4  
+  The Rydberg formula hands over $1/\lambda$, so dividing $3R/4$ by $5R/36$ and writing the result down gives $27/5$ -- the ratio of the wave numbers, which is the Lyman-to-Balmer wavelength ratio turned upside down.
+- **Why:** This question requires two series wavelengths computed from the Rydberg formula and then divided, demonstrated by 'the ratio of the longest wavelength in the Lyman series to the longest wavelength in the Balmer series' over four options that are bare numerical ratios.
+<!--/ecat-->
+
 ## Q137
 
 Physics · Electromagnetic Waves
@@ -4962,6 +6558,18 @@ Publisher's solution, as printed:
 ![printed solution 137](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q137_18bc3814_28102026.png?v=18bc381490ad)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Photon energy places radiation on the electromagnetic spectrum: a few eV is visible and ultraviolet, tens of keV is X-ray, and MeV is $\gamma$
+- **Trap:** **Neighbouring fact** (`nearby_fact`) — a true fact about a neighbouring thing is offered instead — option 1  
+  $\gamma$-rays are the band printed next to X-rays at the energetic end of the spectrum, so reading $15\,\mathrm{keV}$ as simply 'very large' takes the last band in the row; $\gamma$ photons run to MeV, some hundred times higher.
+- **Why:** This question requires the photon energy-wavelength relation applied to a stated energy in order to place it in a named band, demonstrated by 'the energy of the em waves is of the order of $15\,\mathrm{keV}$' against four options that are band names and not quantities.
+- **Note:** `asks` is `apply_rule` rather than `calculate` because the answer the options demand is a band name, not a number, even though a conversion is done on the way.
+<!--/ecat-->
 
 ## Q138
 
@@ -5009,6 +6617,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Lenz's law for a charge passing a coil: the flux it links grows on the way in and falls on the way out, so the induced current runs one way and then the other
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 2  
+  Lenz's law applied to the approach alone yields one definite sense of circulation, and a student holding that answer stops; each lettered option is the correct single sense for one half of the passage, while the stem asks what the current does across the whole passage.
+- **Why:** This question requires Lenz's law applied to the flux of a charge that first approaches and then recedes, demonstrated by option 4, 'the current will reverse its direction as the electron goes past the coil', which only the two-phase reading reaches.
+- **Note:** `half_right` was considered for option 2 and ruled out under §5.1: the option is a single direction, not a claim of two or more parts, and it is a complete answer to a narrower question -- the sense while the electron approaches -- which is what `answers_other_question` names. Separately, the packet's figure spec places the coil below the path (circle centre y=152, path y=67) while the figure title says the coil is above it, so which of 'abcd' and 'adcb' is the approach-phase sense cannot be settled from this record; both routes are written without assigning a phase to a lettering, and a reviewer holding the booklet can fix which is which. `asks` is `apply_rule` rather than `read_diagram` because the figure only supplies the geometry and no value or label has to be read off it to reach the key.
+<!--/ecat-->
+
 ## Q139
 
 Physics · Mechanical Properties of Fluids
@@ -5044,6 +6664,17 @@ Publisher's solution, as printed:
 ![printed solution 139](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q139_e6cc26c4_28102026.png?v=e6cc26c46410)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Equation of continuity: the volume per second down the tube equals the volume per second through all $n$ holes together, so it is the areas that add, not the radii
+- **Trap:** **Arithmetic slip** (`arithmetic_slip`) — the number or the unit is wrong, or a step was stopped short — option 2  
+  Totalling the hole radii before squaring makes the combined opening $\pi(nr)^2 = \pi n^2 r^2$, and continuity then returns $\frac{VR^2}{n^2r^2}$ -- the right relation with $n$ squared alongside $r$.
+- **Why:** This question requires the continuity equation rearranged into a symbolic speed, demonstrated by 'if the speed of the liquid in the tube is $V$, the speed of the ejection of the liquid through the holes is' with options that are expressions in $V$, $R$, $n$ and $r$.
+<!--/ecat-->
 
 ## Q140
 
@@ -5088,6 +6719,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Proportionality** (`relation`) — how much one quantity changes when another does
+- **Concept:** Hooke's law as $Y = \frac{FL}{A\,\Delta l}$: with length and area fixed and the stretch made equal, the load a wire needs goes up in step with its Young's modulus
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 2  
+  'Steel is twice as stiff' reads as 'steel needs half the load', and the ratio is written $1:2$; but it is $\Delta l = \frac{FL}{AY}$ held equal, which makes $F$ proportional to $Y$, so the steel wire takes twice the weight.
+- **Why:** This question requires the factor by which the load must change when the modulus is doubled at fixed stretch, demonstrated by 'the Young's modulus of steel is twice that of brass' together with 'same length and of same area of cross section' and options that are bare ratios.
+- **Note:** Option 4 prints $4 : 2$, which is the same ratio as the key's $2 : 1$, so a student choosing it has the right physics and the option set is defective. The tag follows the printed key as §7 requires and the doubt is flagged, not resolved: a reviewer should check option 4 against the booklet, since a stored '4 : 2' may be a damaged printing. `asks` is `relation` rather than `calculate` because the stem supplies no magnitudes and the answer is the factor one quantity changes by when another is doubled.
+<!--/ecat-->
+
 ## Q141
 
 Physics · Current Electricity
@@ -5124,6 +6767,17 @@ Publisher's solution, as printed:
 ![printed solution 141](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q141_dd0311fd_28102026.png?v=dd0311fd1add)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** A potentiometer reads an unknown emf off the potential gradient of its wire, and that gradient comes from the driver current $E_0/(r+r_1)$ flowing through the wire's own resistance $r$
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 4  
+  $E = \frac{E_0l}{L}$ is the potentiometer result as it is usually memorised, and it holds only when the whole driver emf falls across the wire; this stem puts $r_1$ in series, so only $\frac{E_0r}{r+r_1}$ ever reaches the wire.
+- **Why:** This question requires the driver current and the wire's potential gradient chained into an expression for the balanced emf, demonstrated by 'connected in series with a battery of e.m.f. $E_0$ and a resistance $r_1$' and options built from $E_0$, $r$, $r_1$, $l$ and $L$.
+<!--/ecat-->
 
 ## Q142
 
@@ -5162,6 +6816,17 @@ Publisher's solution, as printed:
 ![printed solution 142](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q142_3cadb7d1_28102026.png?v=3cadb7d1df8c)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Maximum acceleration $\omega^2A$ and maximum speed $\omega A$ both carry the amplitude, so their ratio gives $\omega$ and the period is $2\pi/\omega$
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 3  
+  $\alpha/\beta$ is exactly the $\omega$ that falls out of dividing $\omega^2A$ by $\omega A$, so a student who eliminates the amplitude and reads the line they have just written stops at the angular frequency instead of converting it with $T=2\pi/\omega$.
+- **Why:** This question requires two maximum-value relations to be combined so the amplitude cancels and the result converted into a period, demonstrated by the stem supplying only that 'its maximum acceleration is $\alpha$ and maximum velocity is $\beta$' and asking for 'its time period of vibration'.
+<!--/ecat-->
 
 ## Q143
 
@@ -5204,6 +6869,17 @@ Publisher's solution, as printed:
 ![printed solution 143](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q143_0e960800_28102026.png?v=0e9608007c9d)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Both vectors are unit vectors at angles $\omega t$ and $\omega t/2$, so their dot product is $\cos(\omega t/2)$ and orthogonality needs that half-angle to reach $90^\circ$
+- **Trap:** **Arithmetic slip** (`arithmetic_slip`) — the number or the unit is wrong, or a step was stopped short — option 3  
+  The dot product collapses to $\cos(\omega t/2)$, and a student who carries the angle as $\omega t$ instead of $\omega t/2$ solves $\omega t=\pi/2$ and reads off $t=\pi/2\omega$, which is printed.
+- **Why:** This question requires the dot product of two unit vectors to be reduced to a cosine of their angle difference and set to zero, demonstrated by the stem asking for 'the value of t at which they are orthogonal to each other'.
+<!--/ecat-->
 
 ## Q144
 
@@ -5253,6 +6929,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Only the component of the source's velocity along the source–observer line shifts the pitch, so the Doppler formula takes $19.4\cos 60^\circ$ and not $19.4$
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 4  
+  $f'=fv/(v-v_s)$ holds for a source moving straight along the line to the observer, and feeding it the full $19.4\,\mathrm{m\,s^{-1}}$ gives $100\times330/310.6=106\,\mathrm{Hz}$, which is printed.
+- **Why:** This question requires the source velocity to be resolved along the source–observer line before the Doppler relation is applied, demonstrated by the stem placing the motion 'at an angle of $60^{\circ}$ with the source observer line'.
+- **Note:** The figure arrived as a drawable spec, not as an unreadable image: the arrow runs from S at (38,54) to (116.5,189.97) with the $60^\circ$ marked against the line to O at (328,54), so its component along SO points toward O. That is a closing source and supports the printed key, $330/320.3\times100=103\,\mathrm{Hz}$. The stem states the angle in words as well, so nothing had to be read off the picture.
+<!--/ecat-->
+
 ## Q145
 
 Physics · Rotational Motion
@@ -5292,6 +6980,18 @@ Publisher's solution, as printed:
 ![printed solution 145](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q145_a5ef81cf_28102026.png?v=a5ef81cf1be7)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** A rolling wheel turns at $v/r$, and the average braking torque is the moment of inertia times the angular speed lost per second
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  I ran the stem's four numbers through the routes that go wrong and none reproduces a printed distractor: skipping the km h$^{-1}$ conversion gives $\tau=3\times(54/0.45)/15=24$, using $0.45$ as a diameter gives $13.3$, multiplying by $r$ instead of dividing gives $1.35$, working in rev s$^{-1}$ gives $1.06$ and leaving $r$ out altogether gives $3.0$ — while the printed wrong options are $2.86$, $8.58$ and $10.86$.
+- **Why:** This question requires the road speed to be converted into an angular speed and then multiplied, through $\tau=I\alpha$, by the given moment of inertia, demonstrated by the stem printing 'the radius of its wheels is $0.45\,\mathrm{m}$' alongside 'brought to rest in $15\,\mathrm{s}$'.
+- **Note:** The key reproduces: $\tau=3\times(15/0.45)/15=6.67$, matching the printed $6.66$. Option 4 sits $0.06$ above the $10.8$ that the drop-the-conversion route yields; that gap is why it is recorded as filler rather than a trap, and a reviewer with the printed booklet could check whether the option reads $10.8$ there. The tag follows the question as stored.
+<!--/ecat-->
 
 ## Q146
 
@@ -5337,6 +7037,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Torque on a current loop is set by the angle between the loop's normal and the field, so a plane tilted $30^\circ$ from B puts the normal at $60^\circ$ and $\tau=NIAB\cos30^\circ$
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 1  
+  $NIAB=50\times2\times0.012\times0.2=0.24$, and dropping the printed $30^\circ$ straight into $\tau=NIAB\sin\theta$ gives $0.24\sin30^\circ=0.12\,\mathrm{Nm}$, which is printed.
+- **Why:** This question requires the inclination of the coil's plane to be turned into the angle at the normal before $\tau=NIAB\sin\theta$ is used, demonstrated by the stem specifying that 'the plane of the coil is inclined at an angle of $30^{\circ}$ with the direction of the field'.
+- **Note:** The printed key $0.20\,\mathrm{Nm}$ is $NIAB\cos30^\circ=0.208$. The stem's phrase 'the torque required to keep coil in stable equilibrium' is loosely worded — what is computed is the magnetic torque that an applied torque must balance — but the key matches the standard reading, so the question is tagged as printed.
+<!--/ecat-->
+
 ## Q147
 
 Physics · Capacitance
@@ -5374,6 +7086,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Each plate sits in the field of the other plate alone, half the field between them, so $F=\tfrac12QE=CV^2/2d$ — equivalently the stored energy per unit separation
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 4  
+  Multiplying the plate charge by the field between the plates, $F=QE=(CV)(V/d)=CV^2/d$, lands exactly on this option; the field a plate actually sits in is only the other plate's half of that, so the route doubles the force.
+- **Why:** This question requires the attraction between the plates to be written from the stored energy or the half-field and then re-expressed in the given symbols, demonstrated by the four options being combinations of 'capacity C', 'distance of separation between plates is d' and 'potential difference V'.
+<!--/ecat-->
+
 ## Q148
 
 Physics · Thermodynamics
@@ -5410,6 +7133,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Proportionality** (`relation`) — how much one quantity changes when another does
+- **Concept:** At one temperature the ideal gas law reads $M = \rho RT/P$, so molar mass follows density divided by pressure and both given factors must be used
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 1  
+  A student who reduces $P = \rho RT/M$ to $P \propto 1/M$ settles the answer from the pressure line alone and reports the reciprocal pressure ratio $\frac{1}{2}$, leaving the printed 1.5 unused.
+- **Why:** This question requires the ideal gas relation used as a factor comparison, demonstrated by the stem supplying no absolute quantity at all -- only 'the pressure of a being twice that of B' and 'the density of A is found to be 1.5 times the density if B' -- and the four options being pure ratios.
+- **Note:** Stem typos as printed: 'gas a' for A, 'the density if B' for 'of B'. Neither changes the demand. Key 3 checks out: $M_A/M_B = 1.5/2 = 3/4$.
+<!--/ecat-->
+
 ## Q149
 
 Physics · Gravitation
@@ -5445,6 +7180,18 @@ Publisher's solution, as printed:
 ![printed solution 149](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q149_776ccda3_28102026.png?v=776ccda3b89e)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Gravity is a central force, so in any orbit the acceleration points at the earth's centre, while $\vec L$ and the total energy stay fixed and the speed does not
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 2  
+  The magnitude half of this option is exactly the equal-areas result a student can confirm, and the ellipse visibly keeps turning, so the direction half is granted without being checked.
+- **Why:** This question requires standard orbital rules applied to the elliptical case with no quantity produced, demonstrated by option 1, 'The acceleration of S is always directed towards the centre of the earth', being settled purely by gravity being a central force.
+- **Note:** E1's pattern reports statement_options because the four options are full statements. Recorded as mcq: the stem ends at 'Then,' with no instruction to judge statements and no lettered block, and long sentences as options do not by themselves make the shape statements. A reviewer preferring E1's reading would read statements here; q152, whose stem does ask which statement is wrong, is tagged statements. Option 4 as printed reads 'remains constant is magnitude' for 'in magnitude'.
+<!--/ecat-->
 
 ## Q150
 
@@ -5486,6 +7233,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** A forward-biased diode holds its barrier potential, so the resistor sees the emf minus $0.5\,\mathrm{V}$ and $I = (\varepsilon - V_b)/R$
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 1  
+  Treating the conducting diode as a plain closed switch puts the whole $3.5\,\mathrm{V}$ across the $100\,\Omega$ and gives $3.5/100 = 35\,\mathrm{mA}$, so the printed $0.5\,\mathrm{V}$ never enters the arithmetic.
+- **Why:** This question requires a current computed from the stem's own numbers, demonstrated by 'the barrier potential developed across the diode is 0.5 V' having to be taken off the 3.5 V emf before dividing by $R = 100\,\Omega$.
+- **Note:** The figure is supplied (printed PNG plus a spec whose netlist puts D, R and the cell in one series loop), and every value needed is printed in the stem, so the figure only fixes the topology and the question is not in the figure-missing case of the rulebook's 5.0. Key 2 checks out: $3.0/100 = 30\,\mathrm{mA}$.
+<!--/ecat-->
+
 ## Q151
 
 Physics · Gravitation
@@ -5524,6 +7283,18 @@ Publisher's solution, as printed:
 ![printed solution 151](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q151_1f95b422_28102026.png?v=1f95b4223ad4)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Orbital speed at height $h$ is $v = \sqrt{gR_e^2/(R_e+h)}$ -- the surface value of $g$ carried out to the orbital radius
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  Checked each distractor against the substitutions this stem supports: the two shortcut errors it invites, $\sqrt{gR_e} = 7.91\,\mathrm{km\,s^{-1}}$ (dropping $h$) and $\sqrt{g(R_e+h)} = 8.06\,\mathrm{km\,s^{-1}}$ (using surface $g$ at the orbital radius), both land nearer the key $7.76$ than any distractor, and no arrangement of $9.8$, $6.38\times10^{6}$ and $0.25\times10^{6}$ in the orbital-speed relation produces $6.67$, $8.56$ or $9.13\,\mathrm{km\,s^{-1}}$.
+- **Why:** This question requires a number computed from the stem's numbers, demonstrated by "earth's radius is $6.38 \times 10^{6}$ m and $g = 9.8$ ms$^{-2}$" being supplied for substitution into one relation.
+- **Note:** Key 2 checks out: $v = \sqrt{9.8 \times (6.38\times10^{6})^2 / 6.63\times10^{6}} = 7.76\,\mathrm{km\,s^{-1}}$. Three fillers is the finding here rather than a gap: each was reached by working the substitutions and naming the radius each option would imply, and the paper's distractors are a numeric spread that the standard shortcut errors do not reach. This is the one member of the group with no trap.
+<!--/ecat-->
 
 ## Q152
 
@@ -5569,6 +7340,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Statements** (`statements`) — lettered statements, the answer is which combination is right
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Reading uniform circular motion off $\vec R(t) = A\sin\omega t\,\hat i + A\cos\omega t\,\hat j$: the speed is $\omega A$, so the $2\pi$ in $\omega$ has to be carried, not just the amplitude
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 3  
+  $|\vec a| = v^2/R$ is the centripetal result printed in the chapter and it is true of this motion, so a student who confirms it and takes the task to be 'pick the correct statement' marks it -- but the stem asks which statement is wrong.
+- **Why:** This question requires each printed property to be tested against the rules of uniform circular motion read off the given $\vec R(t)$, demonstrated by 'Which one of the following statements is wrong for the motion of particle?' with the answer a statement rather than a value.
+- **Note:** Rulebook 5.0 directs a retired 5.2 name to its 5.1 family: this is the device 5.2 called true_statement_trap -- a true option picked against a negated task -- whose 5.1 family is answers_other_question, since the option answers 'which is correct'. Option 4, the key, reads '8 meter/second', which is exactly $\omega A$ with $\omega$ taken as 2 rad/s instead of $2\pi$; that slip makes the key look true and so pushes a student onto one of the three true statements, which is the mechanism recorded above. Option 1 as printed reads 'Patch' for 'Path'. Key 4 checks out: $|\vec v| = 8\pi \approx 25$ m/s.
+<!--/ecat-->
+
 ## Q153
 
 Physics · Waves
@@ -5608,6 +7391,18 @@ Publisher's solution, as printed:
 ![printed solution 153](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q153_5414c614_28102026.png?v=5414c614e957)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Consecutive resonances of a string fixed at both ends differ by the fundamental, so the gap between neighbouring resonant frequencies is itself the lowest frequency
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  The option set as stored is not the one the paper printed: options 1 and 4 both read $105\,\mathrm{Hz}$, so one slot is a duplicate and one printed option is lost, and the stem's task clause is missing too -- it runs 'There are no other resonant frequency for this string is:', with the words that named the quantity asked for gone. No trap mechanism can be read off an option set with a duplicated entry.
+- **Why:** This question requires the fundamental obtained from the gap between two consecutive resonances, demonstrated by 'resonant frequencies of 420 Hz and 315 Hz' with nothing in between, giving $420 - 315 = 105\,\mathrm{Hz}$.
+- **Note:** Source damage, not a device of the paper: options 1 and 4 are both '$105\,\mathrm{Hz}$', and the stem has lost the clause between 'There are no other resonant frequency' and 'for this string is:' (the printed question names the lowest resonant frequency). Tagged as printed and the key left alone, but as stored the key cannot distinguish option 1 from option 4, so this needs a repair against the printed paper before any trap is written. The separation 75.0 cm is not needed for the answer. difficulty_level arrives as 'unsure' from the earlier step.
+<!--/ecat-->
 
 ## Q154
 
@@ -5652,6 +7447,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Spinning a body up costs $\frac{1}{2}I\omega_0^2$, so the least work goes with the least moment of inertia, which is the axis through the centre of mass.
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 2  
+  The minimising axis passes through the centre of mass, and writing that position as $x = \frac{m_1 L}{m_1+m_2}$ puts the near mass on top, so the lever ratio comes out as $x:(L-x) = m_1:m_2$ instead of $m_2:m_1$.
+- **Why:** This question requires minimising $I = m_1x^2 + m_2(L-x)^2$ and reporting the minimising position as an expression, demonstrated by the stem's 'the position of point P on this rod through which the axis should pass so that the work required to set the rod rotating with angular velocity $\omega_0$ is minimum' with four algebraic options.
+- **Note:** Option 2 prints its denominator as $m_! + m_2$; the subscript glyph is a typing artifact for $m_1$ and the option reads unambiguously as $\frac{m_1 L}{m_1+m_2}$, so the trap is written on that reading. The figure is a picture in the booklet and labels only $x$, $(L-x)$, $P$ and $\omega_0$, all of which the stem already states, so nothing in the answer turns on reading it.
+<!--/ecat-->
+
 ## Q155
 
 Physics · Wave Optics
@@ -5695,6 +7502,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** At the first single-slit minimum the slit divides into two halves that cancel wavelet by wavelet, so the edge and the midpoint are half a wavelength out of step.
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 3  
+  Carrying the first minimum as $a\sin\theta = \lambda/2$ makes the edge-to-midpoint path difference $\lambda/4$, and $\frac{2\pi}{\lambda}\cdot\frac{\lambda}{4}$ comes out as $\pi/2$.
+- **Why:** This question requires converting the edge-to-midpoint path difference at the first minimum into a phase difference, demonstrated by the stem asking for 'the phase difference between the Huygen's wavelet from the edge of the slit and the wavelet from the midpoint of the slit' with the four options printed in radians.
+<!--/ecat-->
+
 ## Q156
 
 Physics · Rotational Motion
@@ -5732,6 +7550,18 @@ Publisher's solution, as printed:
 ![printed solution 156](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q156_037d6db0_28102026.png?v=037d6db03e44)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Angular momentum about the origin stays constant only while the torque about it vanishes, which needs $\vec r \times \vec F = 0$, that is the force parallel to the position vector.
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  option 1 is stored as a bare minus sign with its number lost, so the option set did not reach this step whole and any route named for the missing value would be invented
+- **Why:** This question requires solving $\vec r \times \vec F = 0$ for the unknown component, demonstrated by the stem's 'the value of $\alpha$ for which angular momentum about origin is conserved is'.
+- **Note:** Option 1 reads only '$-$', a minus sign whose digits are missing, so no trap is written (rulebook section 5 rule 5) and the verdict is source_damage_artifact. The key is consistent with the question as printed: $\vec r \parallel \vec F$ needs $2/\alpha = -6/3 = -12/6 = -2$, giving $\alpha = -1$, which is option 2. A reviewer holding the paper should recover option 1's value and then check the one mechanism I could not confirm from an incomplete set: option 3, $+2$, is exactly what the parallel condition yields if the sign of the $-6/3$ ratio is dropped.
+<!--/ecat-->
 
 ## Q157
 
@@ -5773,6 +7603,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Two bodies moving at constant velocity collide only if their relative velocity points along the line joining them, so the relative displacement and the relative velocity share one direction.
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  options 1 and 4 are stored as the same expression, $\vec r_1 \times \vec v_1 = \vec r_2 \times \vec v_2$, so one of the four options is not what the paper printed and a route named for it would be a guess
+- **Why:** This question requires applying the collision condition to two constant-velocity particles, demonstrated by the stem's 'the condition for particles A and B for their collision is' and options that are vector relations rather than values.
+- **Note:** Options 1 and 4 are identical in our record, both $\vec r_1 \times \vec v_1 = \vec r_2 \times \vec v_2$; section 5a names duplicated options as source damage, so no trap is written and the verdict is source_damage_artifact. The key still follows from the question as printed: $\vec r_1 + \vec v_1 t = \vec r_2 + \vec v_2 t$ gives $\vec r_1 - \vec r_2 = (\vec v_2 - \vec v_1)t$, so the two unit vectors are equal and option 2 holds. A reviewer should recover what option 4 actually reads before any trap is written; the dot-product option 3 is where I would expect the pull to sit, a student substituting the scalar product for the vector one.
+<!--/ecat-->
+
 ## Q158
 
 Physics · Modern Physics
@@ -5809,6 +7651,18 @@ Publisher's solution, as printed:
 ![printed solution 158](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q158_2d58933b_28102026.png?v=2d58933b80d4)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Comparison** (`compare`) — the difference between two things, or the correct pairing
+- **Concept:** A decay from rest shares out equal and opposite momenta, so with $K = p^2/2m$ the lighter fragment ends up holding the larger kinetic energy.
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 1  
+  Reading $K = \frac{1}{2}mv^2$ as 'more mass, more energy' turns the shared momentum into the opposite verdict and credits the heavy thorium with the larger kinetic energy, which $K = p^2/2m$ gives to the helium.
+- **Why:** This question requires holding the shared momentum apart from the kinetic energy it implies for two unequal masses, demonstrated by the four options running the same comparison over 'kinetic energy' twice and 'momentum' twice.
+- **Note:** E1 called this statement_options from the full-sentence options; under brief rule 1 long sentences as options do not make the shape statements, and the stem prints no lettered block and no instruction to judge statements, so qtype is recorded as mcq. Option 3 prints 'then' for 'than'.
+<!--/ecat-->
 
 ## Q159
 
@@ -5851,6 +7705,18 @@ Publisher's solution, as printed:
 ![printed solution 159](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q159_c2bf4516_28102026.png?v=c2bf4516f715)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Resistances add in series, so for two wires of equal length the resistivities average and the conductivity, being the reciprocal, comes out as the harmonic mean $\frac{2\sigma_1\sigma_2}{\sigma_1+\sigma_2}$.
+- **Trap:** **Arithmetic slip** (`arithmetic_slip`) — the number or the unit is wrong, or a step was stopped short — option 1  
+  Writing $\frac{1}{\sigma} = \frac{1}{\sigma_1}+\frac{1}{\sigma_2}$ drops the factor 2 that the doubled length puts on the left-hand side, and yields $\frac{\sigma_1\sigma_2}{\sigma_1+\sigma_2}$, exactly half the key.
+- **Why:** This question requires deriving the effective conductivity of two equal-dimension wires in series, demonstrated by the stem's 'the effective conductivity if the combination is' with four algebraic combinations of $\sigma_1$ and $\sigma_2$ as options.
+- **Note:** The stem names the conductivities '$v_1$ and $v_2$' while the options use $\sigma_1$ and $\sigma_2$; the glyph substituted for $\sigma$ is a typing artifact and the correspondence is unambiguous, so the question is tagged as read. The stem also prints 'if the combination' for 'of the combination'.
+<!--/ecat-->
 
 ## Q160
 
@@ -5895,6 +7761,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Photoelectrons leave with kinetic energies anywhere from zero up to $h\nu-\phi$, so their de Broglie wavelength has a floor and no ceiling
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 3  
+  The wavelength is computed from the maximum kinetic energy and then read as a ceiling, because maximum energy feels like a maximum answer. The fastest electron carries the SHORTEST wavelength, so the computed value is the floor and the answer set is $\lambda \geq 2.8 \times 10^{-9}\,\mathrm{m}$.
+- **Why:** This question requires the maximum photoelectron energy to be computed and then the side of that wavelength on which the answer set lies to be fixed, demonstrated by two options carrying the same magnitude $2.8 \times 10^{-9}\,\mathrm{m}$ and differing only in $<$ against $\geq$.
+- **Note:** Arithmetic check on the printed numbers: $1240/500 = 2.48\,\mathrm{eV}$, minus $2.258\,\mathrm{eV}$ leaves $0.222\,\mathrm{eV}$, and $1.227/\sqrt{0.222} = 2.6\,\mathrm{nm}$, not $2.8\,\mathrm{nm}$; the printed $2.8\,\mathrm{nm}$ follows from a work function of about $2.28\,\mathrm{eV}$, so the stem may have gained a digit. Tagged as printed, and the inequality direction that decides the key is unaffected either way.
+<!--/ecat-->
+
 ## Q161
 
 Physics · Waves
@@ -5931,6 +7809,18 @@ Publisher's solution, as printed:
 ![printed solution 161](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q161_2e29dc47_28102026.png?v=2e29dc47499c)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** The speed of sound in a gas measures $\gamma$, and $\gamma = C_p/C_v$ turns the given $C_v$ into $C_p$
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 4  
+  With $C_p = \gamma C_v$ in hand, the only missing number is $\gamma$, and the stored value $1.4$ is reached for instead of measured, giving exactly $1.4 \times 5.0 = 7.0$. That value belongs to a diatomic gas, and the stem's own speed of sound fixes $\gamma = v^2 M / RT = 1.6$ here.
+- **Why:** This question requires the speed of sound to be converted into $\gamma$ before $C_p = \gamma C_v$ can be used, demonstrated by the stem supplying 'the speed of sound in this gas at NTP is $952\,\mathrm{ms^{-1}}$' alongside $C_v$ and $R$.
+- **Note:** The printed data are not self-consistent for an ideal gas: $C_v = 5.0$ is below $\frac{3}{2}R$, and the keyed $C_p - C_v = 8.0 - 5.0 = 3.0$ is not $R = 8.3$, so Mayer's relation cannot be the intended route. Tagged as printed; the trap does not depend on this.
+<!--/ecat-->
 
 ## Q162
 
@@ -5981,6 +7871,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** A dielectric raises $C$, which lowers $X_C = 1/(\omega C)$, so in a series R-C circuit the current rises and the capacitor's share of the source voltage falls
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 2  
+  Mica raises $C$, so $X_C$ falls, the impedance falls and the current rises; a student who reads $V = i X_C$ and follows only the rising current puts the bigger capacitor voltage on the mica case, when $X_C$ has fallen faster and $V$ drops.
+- **Why:** This question requires the reactance relation $X_C = 1/(\omega C)$ applied to a changed dielectric with no quantity produced, demonstrated by the stem's two situations 'When capacitor is air filled' and 'When capacitor is mica filled' and by options that are nothing but inequalities such as '$V_a > V_b$'.
+- **Note:** Shape: the record prints a two-item lettered block (i, ii) while the options carry subscripts a and b, so the mapping rests on the printed order (a = air filled, b = mica filled). The two lettered items are the experimental situations being compared, not claims graded for truth and not a pairing, so qtype is mcq rather than statements; E1's plain_mcq (default, no pattern fired) is consistent with the printed shape. The i/ii against a/b relabelling is a storage inconsistency, not a loss of content - no stem value, option or figure is missing - so the record is tagged as printed rather than as source damage. Key agrees with the physics as printed: larger $C$ gives smaller $X_C$ and a smaller capacitor voltage, so $V_a > V_b$. Option 4's inequality is also an inverted direction ($i_a < i_b$ in fact), so the paper prints two reversals; the single trap finding is placed on option 2 because it is the exact inverse of the keyed inequality and so sits on the same quantity the stem keys on.
+<!--/ecat-->
+
 ## Q163
 
 Physics · Laws of Motion
@@ -6029,6 +7931,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** The angle at which sliding begins gives $\mu_s = \tan\theta$, while the acceleration measured during the slide gives $\mu_k$
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 2  
+  The first number is got correctly from the slipping angle, $\mu_s = \tan 30^{\circ} = 0.6$, and the second is then produced without touching the slide data at all. The slide is accelerated, $a = 2s/t^2 = 0.5\,\mathrm{ms^{-2}}$, so $\mu_k = (g\sin\theta - a)/(g\cos\theta) = 0.5$ and only the first half of this pair holds.
+- **Why:** This question requires two coefficients computed from two separate measurements, demonstrated by the stem giving both the angle at which 'the box starts to slip' and the '$4.0\,\mathrm{m}$ down the plank in $4.0\,\mathrm{s}$' slide.
+- **Note:** The figure shows only the plank, the box and $mg$; every number needed is in the text, so the figure illustrates rather than decides.
+<!--/ecat-->
+
 ## Q164
 
 Physics · Laws of Motion
@@ -6065,6 +7979,18 @@ Publisher's solution, as printed:
 ![printed solution 164](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q164_39ddcff4_28102026.png?v=39ddcff4ed3b)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Proportionality** (`relation`) — how much one quantity changes when another does
+- **Concept:** At equal centripetal force $mv^2/r$, speed scales as $\sqrt{Fr/m}$, so the mass and radius ratios fix the speed ratio
+- **Trap:** **Arithmetic slip** (`arithmetic_slip`) — the number or the unit is wrong, or a step was stopped short — option 4  
+  The two forces are equated correctly and the algebra ends at $v_l^2 = 4v_h^2$, which is then reported as the answer. The question asks how many times one SPEED is of the other, so the square root is still owed and $n = 2$.
+- **Why:** This question requires how many times one speed is of the other at a fixed centripetal force, demonstrated by the stem's 'the tangential speed of lighter stone is $n$ times that of the ... heavier stone' and options that are bare factors 1, 2, 3, 4.
+- **Note:** The stem prints the lighter mass as '$ma$', evidently $m$; the mass ratio $m : 2m$ is clear from the rest of the sentence and the tagging does not turn on it.
+<!--/ecat-->
 
 ## Q165
 
@@ -6110,6 +8036,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** A refrigerator's ideal coefficient of performance is $T_{\mathrm{cold}}/(T_{\mathrm{hot}} - T_{\mathrm{cold}})$, with both temperatures in kelvin
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 3  
+  One coefficient-of-performance ratio is stored without which temperature sits on top, and the hot one is chosen because the stem talks about rejecting heat, giving $T_h/(T_h - T_c) = 5$ and $T_h = 316\,\mathrm{K} = 43^{\circ}\mathrm{C}$. A refrigerator is rated on the heat pulled from the cold space, $T_c/(T_h - T_c) = 5$, which gives $T_h = 304\,\mathrm{K} = 31^{\circ}\mathrm{C}$.
+- **Why:** This question requires the refrigerator's coefficient of performance to be inverted for the hot-reservoir temperature in kelvin, demonstrated by the stem giving 'the coefficient of performance of a refrigerator is 5' and 'the temperature inside freezer is $-20^{\circ}\mathrm{C}$' and asking for the surrounding temperature.
+- **Note:** The options are a $10^{\circ}$ ladder, so the two misplaced-formula routes land near $41^{\circ}$ and $21^{\circ}$ rather than exactly on them; the arithmetic of each route is given in full so a reviewer can check the fit. The stem's 'to which is rejects heat' is a typo carried from the source.
+<!--/ecat-->
+
 ## Q166
 
 Physics · Thermodynamics
@@ -6151,6 +8089,17 @@ Publisher's solution, as printed:
 ![printed solution 166](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q166_607e4994_28102026.png?v=607e49947215)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Comparison** (`compare`) — the difference between two things, or the correct pairing
+- **Concept:** On a $P$-$V$ diagram the adiabat is steeper than the isotherm, so compressing a gas along it costs the most work
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 1  
+  The remembered ranking is 'isothermal work beats adiabatic work', which holds for EXPANSION, where the isotherm lies above the adiabat. Flip the process to a compression and the ranking flips with it: $0.80\,nRT$ of work goes in adiabatically against $0.69\,nRT$ isothermally.
+- **Why:** This question requires four named processes to be ranked by the area under their $P$-$V$ curves for one and the same volume change, demonstrated by the stem asking 'which of the process results in the maximum work done on the gas' with four bare process names as options.
+<!--/ecat-->
 
 ## Q167
 
@@ -6195,6 +8144,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Mechanical energy conservation across a lossy bounce: the ball arrives with $\frac{1}{2}mv_0^2+mgh$, keeps half of it, and that half must equal $mgh$ to climb back to 20 m
+- **Trap:** **Answers another question** (`answers_other_question`) — true, and about this topic, but it answers something else — option 4  
+  $28\,\mathrm{ms^{-1}}$ is the true speed the ball arrives at the ground with, $\sqrt{v_0^2+2gh}=\sqrt{800}=28.3$, so a student working backwards from the rebound reaches a printed number one step before the one asked for.
+- **Why:** This question requires an energy balance taken across a collision that keeps half the energy, demonstrated by "loses 50 percent of its energy in collision and rebounds to the same height" with four speeds as the options.
+<!--/ecat-->
+
 ## Q168
 
 Physics · Work, Energy and Power
@@ -6237,6 +8197,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** An elastic collision conserves kinetic energy, so for two equal masses the outgoing speeds obey $v^2=v_1^2+v_2^2$
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 1  
+  A student who carries "equal masses share the speed" substitutes $\frac{v}{2}$ where the stem prints $\frac{v}{3}$, and the energy equation then returns $\sqrt{v^2-\frac{v^2}{4}}=\frac{\sqrt{3}}{2}v$.
+- **Why:** This question requires kinetic energy conservation applied to two equal masses, demonstrated by "collides elastically with another block of same mass" together with the printed outgoing speed $\frac{v}{3}$.
+<!--/ecat-->
+
 ## Q169
 
 Physics · Electrostatics
@@ -6278,6 +8249,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** The electric field is minus the gradient of the potential: one partial derivative per component, each evaluated at the given point
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  Every single-slip value this potential can yield was carried through: dropping the $-y$ term gives $-(6\hat{i}+6\hat{j}+2\hat{k})$, flipping that term's sign gives $-(6\hat{i}+7\hat{j}+2\hat{k})$, and reading $z=1$ instead of $0$ also gives $-(6\hat{i}+7\hat{j}+2\hat{k})$. Neither appears among the options, and none of the three wrong options is reached by a single operation on $6xy-y+2yz$.
+- **Why:** This question requires three partial derivatives of a printed potential evaluated at one point, demonstrated by "$V(x, y, z) = 6xy - y + 2yz$" and "the electric field (in N/C) at point $(1, 1, 0)$".
+- **Note:** The three wrong options are a numeric spread rather than routes: each reproduces at most one component of $-(6\hat{i}+5\hat{j}+2\hat{k})$, and the two values the natural slips actually produce, $(6,6,2)$ and $(6,7,2)$, are not printed. Three fillers is recorded here as the finding after that enumeration, not as unfinished work.
+<!--/ecat-->
+
 ## Q170
 
 Physics · Wave Optics
@@ -6316,6 +8299,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Slit width sets intensity and intensity sets amplitude, so the fringe contrast is $\left(\frac{a_1+a_2}{a_1-a_2}\right)^2$
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 1  
+  $\frac{4}{9}$ is $\frac{I_{\mathrm{min}}}{I_{\mathrm{max}}}$: a student who builds the quotient with the difference of amplitudes on top gets $\frac{16}{36}=\frac{4}{9}$ and finds it printed.
+- **Why:** This question requires the width-to-intensity-to-amplitude chain fed into the fringe-contrast formula, demonstrated by "widths in the ratio $1:25$" and the asked "$\frac{I_{\mathrm{max}}}{I_{\mathrm{min}}}$".
+<!--/ecat-->
+
 ## Q171
 
 Physics · Work, Energy and Power
@@ -6352,6 +8346,18 @@ Publisher's solution, as printed:
 ![printed solution 171](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q171_6c93263b_28102026.png?v=6c93263b4c11)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** A pump's power is pressure times volume flow rate, with the pressure read off a mercury column as $\rho g h$
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  Each slip in this question's unit chain was carried through to a number: leaving $h$ in millimetres gives $1700$ W, reading the flow as 5 litres per second gives $102$ W, dropping $g$ gives $0.17$ W, and using $g=9.8$ gives $1.67$ W. None of $1.50$, $2.35$ or $3.0$ is any of these, so no wrong option sits on a route through the work this question asks for.
+- **Why:** This question requires a pressure built from a mercury column multiplied by a volume flow rate, demonstrated by "at a pressure of $150\,\mathrm{mm}$ of mercury" with "$5$ litres of blood through the arteries per minute" and watts in the options.
+- **Note:** The work in this question is the mm-to-m, litre-to-m³ and minute-to-second chain, and no distractor sits on a slip in that chain; the three wrong options are a numeric spread around $1.70$ W. Three fillers is recorded as the finding after enumerating the chain, not for want of looking.
+<!--/ecat-->
 
 ## Q172
 
@@ -6391,6 +8397,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Proportionality** (`relation`) — how much one quantity changes when another does
+- **Concept:** At a fixed orbit radius in a given magnetic field the kinetic energy goes as $\frac{q^2}{m}$, and for an alpha particle both the squared charge and the mass rise fourfold and cancel
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 2  
+  Holding $r=\frac{\sqrt{2mK}}{qB}$ fixed while remembering only that the alpha carries twice the charge turns the relation into $K\propto q^2$, which gives $4$ MeV; the $\frac{1}{m}$ sitting in the same formula, and changing by the same factor of four, is left out.
+- **Why:** This question requires how kinetic energy scales with charge and mass when the orbit radius is held fixed, demonstrated by "the radius of circular orbits for both the particles is equal" with the proton's energy given as $1\,\mathrm{MeV}$.
+<!--/ecat-->
+
 ## Q173
 
 Physics · Semiconductor Electronics
@@ -6425,6 +8442,17 @@ Publisher's solution, as printed:
 ![printed solution 173](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q173_e8fe54a1_28102026.png?v=e8fe54a147cc)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** A common-emitter amplifier multiplies the input amplitude by its voltage gain and turns the signal through $180^\circ$
+- **Trap:** **Partly correct** (`half_right`) — one part of the option is right and one part is wrong — option 2  
+  The gain relation $V_o = A_vV_i$ settles the amplitude at once, $2\times150 = 300$, and the phase is then copied across from the input unchanged because the stem never mentions phase.
+- **Why:** This question requires the voltage-gain relation and the common-emitter phase inversion to be applied to a given input, demonstrated by the stem's 'voltage gain of 150' with '$V_i = 2\cos(15t+\frac{\pi}{3})$' and options that differ in amplitude and in phase.
+<!--/ecat-->
 
 ## Q174
 
@@ -6468,6 +8496,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **Two answers** (`two_part`) — the answer has two halves, usually joined by 'respectively'
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Fixing the exponents in a product of quantities by matching the dimensions of mass, length and time on the two sides
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 4  
+  Critical velocity is recalled as falling with radius and with density, and viscosity is then put underneath as well on the sense that a thicker liquid flows more slowly, giving $\eta^{-1}\rho^{-1}r^{-1}$.
+- **Why:** This question requires the exponents of a product of quantities to be fixed by dimensional matching, demonstrated by the stem's 'dimensions of critical velocity $v_c$ ... are expressed as $[\eta^{x}\rho^{y}r^{z}]$' with options that are triples of $\pm1$.
+- **Note:** E1 returned the retired label `multi_part_respectively`; recorded as `two_part` because each option is a triple of exponents accepted or rejected whole, which is the nearest current shape.
+<!--/ecat-->
+
 ## Q175
 
 Physics · Current Electricity
@@ -6508,6 +8548,18 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** A shunted ammeter's own resistance is its coil and shunt in parallel, and the instrument reads the whole current passing through it
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 3  
+  The line current $0.5\,\mathrm{A}$ is reached correctly and then halved, on the view that the coil and the shunt take one half each and that the needle follows the coil.
+- **Why:** This question requires the ammeter's coil and shunt to be combined in parallel and then added in series before Ohm's law is applied, demonstrated by the stem's 'coil of resistance $480$ ohm and a shunt of $20$ ohm' together with 'all connected in series'.
+- **Note:** The parallel step is weakly discriminated: treating the shunted ammeter as its $20\,\Omega$ shunt alone gives $\frac{30}{60.8} = 0.49\,\mathrm{A}$, which still lands on the printed key. Two of the four options also sit above the circuit's maximum possible current of $0.74\,\mathrm{A}$.
+<!--/ecat-->
+
 ## Q176
 
 Physics · Mechanical Properties of Fluids
@@ -6542,6 +8594,18 @@ Publisher's solution, as printed:
 ![printed solution 176](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q176_8b190695_28102026.png?v=8b19069556f7)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Capillary rise is limited by the curvature the meniscus must have; a tube shorter than the rise flattens its meniscus instead of overflowing
+- **Trap:** **Condition dropped** (`condition_missed`) — drop the condition the stem states and the option becomes true — option 2  
+  The rise formula $h = \frac{2T\cos\theta}{r\rho g}$ is held as a height the water must arrive at, so with the tube ending below $h$ the surplus has to go somewhere and spills over the rim.
+- **Why:** This question requires the capillary-rise relation to be applied in a case where its own condition fails, demonstrated by the stem's 'if the length of capillary tube above the surface of water is made less than $h$'.
+- **Note:** E1 returned `statement_options`; recorded as `mcq` because no lettered statement block is printed and the stem does not ask statements to be judged — the options are simply long sentences.
+<!--/ecat-->
 
 ## Q177
 
@@ -6588,6 +8652,17 @@ Publisher's solution, as printed:
 
 ---
 
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** In normal adjustment the telescope's magnification $f_o/f_e$ is also the ratio by which the eyepiece shrinks a mark drawn on the objective
+- **Trap:** **Formula misused** (`formula_misused`) — the right formula with a wrong power, a dropped term or the wrong quantity — option 2  
+  The eyepiece's object distance is taken as $f_o$ rather than the full separation $f_o+f_e$, and the lens equation then returns $\frac{I}{L} = \frac{f_e}{f_o-f_e}$, that is $\frac{f_o}{f_e} = \frac{L}{I}+1$.
+- **Why:** This question requires the eyepiece's linear magnification of a mark on the objective to be identified with the telescope's magnification, demonstrated by 'a straight black line of the length $L$ is drawn on inside part of objective lens' and 'the eye-piece forms a real image of this line'.
+<!--/ecat-->
+
 ## Q178
 
 Physics · Thermal Properties of Matter
@@ -6623,6 +8698,18 @@ Publisher's solution, as printed:
 ![printed solution 178](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q178_2db9863d_28102026.png?v=2db9863d8571)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** A fractional change in density is the volume expansion read backwards: $\left|\frac{\Delta\rho}{\rho}\right| = \gamma\,\Delta T$
+- **Trap:** **No trap** (`no_trap`) — nothing pulls; the other options are only filler  
+  The three wrong options are a $0.005$ ladder around the answer rather than the output of any route: using the linear coefficient $\frac{\gamma}{3}$ gives $0.0067$, the exact form $\frac{\gamma\Delta T}{1+\gamma\Delta T}$ gives $0.0196$ which rounds onto the key itself, and reading the $40^\circ\mathrm{C}$ rise as an absolute $313\,\mathrm{K}$ gives $0.157$ — none of the three is printed.
+- **Why:** This question requires one substitution into the volume-expansion relation, demonstrated by the stem supplying 'coefficient of volume expansion ... $5\times10^{-4}\,\mathrm{K^{-1}}$' and 'a rise of $40^{\circ}\mathrm{C}$' and asking for 'the fractional change in the density'.
+- **Note:** The options are separated only by steps of $0.005$ on a ladder through the answer. The nearest real wrong route, confusing the volume coefficient with the linear one, gives $0.0067$; $0.010$ is the closest printed value to that but is not what that route produces, so I have not tagged it as a trap.
+<!--/ecat-->
 
 ## Q179
 
@@ -6663,6 +8750,18 @@ Publisher's solution, as printed:
 ![printed solution 179](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q179_a568f343_28102026.png?v=a568f3432461)
 
 ---
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Calculation** (`calculate`) — put numbers in and get a number out
+- **Concept:** Einstein's photoelectric equation: halving the wavelength doubles the photon energy while the work function stays fixed, so the two kinetic-energy equations solve for $\phi$
+- **Trap:** **Arithmetic slip** (`arithmetic_slip`) — the number or the unit is wrong, or a step was stopped short — option 1  
+  Gathering the work-function terms in $\frac{2hc}{\lambda}-\phi=3\left(\frac{hc}{\lambda}-\phi\right)$ as $3\phi=\frac{hc}{\lambda}$ instead of $2\phi=\frac{hc}{\lambda}$ carries the stem's factor 3 straight into the answer and gives $\frac{hc}{3\lambda}$.
+- **Why:** This question requires Einstein's photoelectric equation written for both wavelengths with the kinetic energy eliminated between them, demonstrated by the stem supplying only a ratio, "the maximum kinetic energy of the emitted photoelectrons in the second case is 3 times that in the first case", and by all four options being expressions in $\frac{hc}{\lambda}$ rather than numbers.
+- **Note:** The printed key (2) matches the algebra: $2\phi=\frac{hc}{\lambda}$, so $\phi=\frac{hc}{2\lambda}$. No option is left without a route, so no filler is recorded.
+<!--/ecat-->
 
 ## Q180
 
@@ -6710,4 +8809,16 @@ A beam of light consisting of red, green and blue colours is incident on a right
 Publisher's solution, as printed:
 
 ![printed solution 180](https://d30lmobgrc5gb8.cloudfront.net/general/28102026/neet_papers/2015/2015_A/solutions/q180_b71819f3_28102026.png?v=b71819f34281)
+
+<!--ecat-->
+#### Categories
+
+- **Type:** **MCQ** (`mcq`) — a question and four answers, nothing lettered or listed
+- **Asks:** **Rule applied** (`apply_rule`) — a rule you already know, used on a case you have not seen
+- **Concept:** Total internal reflection at a 45 degree hypotenuse: a colour gets out only if its critical angle exceeds 45 degrees, that is only if $n<\sqrt{2}=1.414$
+- **Trap:** **Reversed** (`reversed`) — the right thing stated backwards: direction, order or ratio — option 2  
+  Carrying the index-to-critical-angle link the wrong way round, so that the largest $n$ is taken to give the largest critical angle, makes blue the colour that passes out of the hypotenuse; $\sin C=\frac{1}{n}$ gives blue the smallest critical angle, $42.9^\circ$, so blue is in fact the one reflected.
+- **Why:** This question requires the critical-angle condition applied to each colour at the 45 degree hypotenuse, demonstrated by the stem printing three indices, "1.39, 1.44 and 1.47 respectively", and by the options sorting the colours into groups instead of naming any deviation or quantity.
+- **Note:** The pattern classifier returned statement_options for this question. The stem "The prism will:" prints no statement block and no lettered list, and the long outcome sentences in the options are one event's possible results rather than claims to be graded, so the shape recorded here is mcq. The 45 degree incidence is not in the words of the stem; it comes from the figure, which the packet supplies as a printed PNG and as a spec with the right angle at B, 45 degrees at C and the three rays normal to AB, so the question is complete enough to tag.
+<!--/ecat-->
 

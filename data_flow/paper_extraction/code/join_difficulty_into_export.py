@@ -72,7 +72,10 @@ def _table(r):
     if r.get("why"):
         rows.append('<tr><th>why this band</th><td>%s</td></tr>' % html.escape(r["why"]))
     if r.get("what_makes_it_hard"):
-        rows.append('<tr><th>the catch</th><td>%s</td></tr>'
+        # NOT "the catch" -- that name belongs to the ECAT trap, which every card carries.
+        # This is E7's optional hardness factor and is absent whenever E7 leaves it empty (83
+        # of 200 on 2024_S1). Sharing the name made those 83 read as a missing catch.
+        rows.append('<tr><th>what makes it harder</th><td>%s</td></tr>'
                     % html.escape(r["what_makes_it_hard"]))
     if r.get("note"):
         rows.append('<tr><th>note</th><td>%s</td></tr>' % html.escape(r["note"]))

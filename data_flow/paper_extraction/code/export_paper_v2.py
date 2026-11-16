@@ -237,9 +237,14 @@ def verdict(official, solved):
         return "unchecked"
     if solved in accepted(official):
         return "agree"
+    # THE WORDING SAYS WHAT THE READER SHOULD DO, not just what happened. A teacher reviewing
+    # 2024_S1 asked for a disagreement to read "Needs verification", and named five questions:
+    # q040, q125, q147, q157, q191. Those are EXACTLY the five this function does not return
+    # "agree" for -- 195 agree, 4 differ, 1 unsure, no misses and no false positives. The
+    # finding was already right; only the instruction to the reader was missing.
     if solved == "unsure":
-        return "solve was unsure"
-    return "solved differs from official"
+        return "NEEDS VERIFICATION \u2014 the independent solve was unsure"
+    return "NEEDS VERIFICATION \u2014 solved differs from official"
 
 
 def solved_answer(paper_id, qno):
@@ -860,10 +865,20 @@ def classification_html(subject, stream, branch, chap_names, topic_names, confid
                     % (css, html.escape(label), html.escape(value), extra))
 
     add("subject", subject or "not assigned")
-    if (subject or "").lower() == "chemistry":
-        add("stream", stream or "not assigned (chapter unmapped)")
-    if (subject or "").lower() == "biology":
-        add("branch", branch or "not assigned (chapter unmapped)")
+
+    # ONE FIELD, NOT TWO. `stream` and `branch` were separate columns, and measuring them
+    # settles the question: across 200 questions of 2024_S1 they are never both filled.
+    # Biology fills `branch` (botany 50, zoology 50) and leaves `stream` empty; Chemistry
+    # fills `stream` (physical 19, organic 15, inorganic 16) and leaves `branch` empty;
+    # Physics fills neither. Two names for one mutually exclusive fact, plus 300 rows of
+    # "not applicable" noise on a 200-question paper -- which is what the reviewer meant by
+    # "duplicate ya confusing classification remove karein".
+    #
+    # Physics gets NO ROW AT ALL rather than an empty one: physics has no standard division,
+    # so the honest page says nothing instead of saying "not applicable" fifty times.
+    division = (branch or stream or "").strip()
+    if (subject or "").lower() in ("biology", "chemistry"):
+        add("branch", division.title() or "not assigned (chapter unmapped)")
     if chap_names:
         add("chapter", "; ".join(chap_names),
             extra=(' <span class="conf">%s confidence</span>' % html.escape(confidence)
@@ -1915,7 +1930,15 @@ def question_card(paper_id, q, out_path, counts=None, show_paper=False):
                # No gloss here. It read "the factor besides step count: a trap, an unstated
                # assumption, a conversion" under all 90 of these -- a drafting instruction to
                # the rater, repeated at the reader. The row label already says what it holds.
-               '<tr><th>the catch</th><td>%s</td></tr>'
+               #
+               # AND THE LABEL IS NO LONGER "the catch". That name belongs to the ECAT trap --
+               # the thing that actually catches a student -- which every card carries. This
+               # row is E7's OPTIONAL hardness factor, so it is absent whenever E7 leaves the
+               # field empty: 83 of 200 on 2024_S1. A reviewer looking for "the catch" found
+               # this row missing on exactly those 83 and recorded the catch as missing from
+               # the report, while the real catch sat lower down the same card under a
+               # different word. Two fields cannot share one name; this is the one that moves.
+               '<tr><th>what makes it harder</th><td>%s</td></tr>'
                % html.escape(band_hard) if band_hard else ""))
     rating, _group_note = categories_of(paper_id, q["qno"])
     if rating:
@@ -2000,7 +2023,7 @@ def write_html(paper, out_path):
          + counts["verdict_solved_differs_from_booklet"]),
     ]
     head = (
-        "<title>NEET %s Code %s &middot; extraction v2</title>"
+        "<!doctype html><meta charset=utf-8><title>NEET %s Code %s &middot; extraction v2</title>"
         "<style>%s%s</style>" % (meta["year"], meta["booklet_code"] or "NA", CSS, SOLUTION_CSS))
     page = (
         '%s<div class="wrap"><h1>NEET (UG) %s &middot; Code %s</h1>'
@@ -2050,7 +2073,7 @@ def write_index(summaries, out_path):
            s["no_answer"], s["short_options"], s["starred"], s["ocr_text"], s["by_agent"])
         for s in summaries)
     page = (
-        "<title>NEET extraction v2 &middot; index</title><style>%s"
+        "<!doctype html><meta charset=utf-8><title>NEET extraction v2 &middot; index</title><style>%s"
         "table{border-collapse:collapse;width:100%%;font-size:14px}"
         "th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule);"
         "font-variant-numeric:tabular-nums}th{font-size:11px;text-transform:uppercase;"
@@ -2187,6 +2210,6 @@ def page_shell(title, body, extra_css="", lede="", force_light=False):
                 "--ink2:#555;--rule:#d8d8d2}\n"
                 "@media (prefers-color-scheme:dark){:root:not([data-theme=light]){"
                 "--paper:#fff;--card:#fff;--ink:#141414;--ink2:#555;--rule:#d8d8d2}}\n")
-    return ('<title>%s</title><style>%s</style><div class="wrap">%s%s</div>'
+    return ('<!doctype html><meta charset=utf-8><title>%s</title><style>%s</style><div class="wrap">%s%s</div>'
             % (html.escape(title), css,
                '<div class="sub">%s</div>' % lede if lede else "", body))

@@ -294,9 +294,124 @@ E3 and E5 each had one; E4 did not, so an unfamiliar demand had nowhere to go bu
 The last three were retired in `scripts/build_category_sheet_v2.py` and never written down here, so
 for a while the rulebook could not account for 59 tags that the corpus carried. See Rule 21.
 
-## 5. E5 · Trap — one option, one mistake, or nothing
+## 5. Trap
 
 Every tag states the option and the route. If neither can be named, there is no tag.
+
+### 5.0 WHICH TRAP LIST IS LIVE — read this before tagging
+
+Two lists live in this section and a rater who reads the wrong one produces values the schema
+rejects. This file is shipped to the rater as the `codebook`, which **overrides** the short
+definitions in the brief, so the precedence has to be stated here rather than assumed.
+
+| list | status | used by |
+|---|---|---|
+| **§5.1 ECAT trap axis — 12 values** | **LIVE** | `e-category-rater`, `config/allowed_values.yaml` `trap_v2`, `schemas/ECAT.json` |
+| §5.2 E5 per-option trap — 46 values | RETIRED | the E5 step, which rated one trap per wrong option |
+
+The 46 were cut to 12 for the reason §5b records: measured on one paper, four of them —
+`other_one_fact` 60 times, `neighbouring_fact` 52, `wrong_site_or_stage` 26, `look_alike_term` 17
+— were four names for one idea. **Do not use a §5.2 value.** If a §5.2 name describes what you
+see, find its §5.1 family; if none does, use `new_trap` with a proposal.
+
+**`trap` is always one object and is never empty.** When nothing pulls, or when the record is too
+damaged to tell what pulls, write `{"label": "no_trap", "route": "<what you checked>"}` with no
+`option`, and for a damaged record add `"verdict": "source_damage_artifact"` beside it. An empty
+label is not the unsure form on this axis — `no_trap` already says it — and a rating with no
+`trap` key, or with an invented key such as `traps` or `_shape_note`, fails the whole packet.
+
+**When the FIGURE decides and the packet did not carry it** — bare-letter options (`D/A/B/C`), a
+stem that says "the given figure", and an image you cannot open — you are in a third case, and it
+is neither of the two above. The paper is intact, so this is **not** `source_damage_artifact`:
+recording our own reach as damage to the source is how a reading limit turns into a false finding
+about the question. Write `{"label": "no_trap", "route": "the options are bare letters and the
+figure was not supplied to this step"}`, leave `other_options` empty, and put the mechanism a
+reviewer holding the figure should check into `note`. Saying which trap you would expect, and
+that you could not confirm it, is worth more than a label nobody can audit.
+
+### 5.1 The live trap axis — ONE per question
+
+| label | means | not |
+|---|---|---|
+| `nearby_fact` | the fact NCERT prints BESIDE the right one; position carries the student | a name that merely resembles the right one — that is `look_alike_term` |
+| `look_alike_term` | two terms RESEMBLE each other and the resemblance is the pull: maturation / meristematic, lyase / ligase, GPP / NPP | a wrong name reached by position rather than by likeness |
+| `old_ncert_answer` | the paper altered one value in an NCERT example or line, and NCERT's own answer is printed as a distractor | an option that merely sounds dated. Name BOTH numbers or it is not this |
+| `condition_missed` | a rule applied where its stated condition does not hold | a rule misremembered — that is `formula_misused` |
+| `reversed` | the relation, order or direction is inverted | one swapped pair inside a longer order |
+| `half_right` | an option of two or more parts, one of which fails; or a true but incomplete set | a lone wrong number or a lone wrong name |
+| `arithmetic_slip` | a named operation — a dropped factor, a power, a unit — yields a printed option | a wrong formula, which is `formula_misused` |
+| `formula_misused` | the wrong relation is applied, or the right one misremembered | the right relation with a slip in it |
+| `answers_other_question` | the option is TRUE but answers something the stem did not ask | the same question answered from an older book — that is `old_ncert_answer` |
+| `wrong_site_attacked` | the right change made at the wrong position, stage or site | a different change altogether |
+| `no_trap` | no wrong option has a route a prepared student walks. A finding, not a gap | an excuse for not looking |
+| `new_trap` | none of the above. REQUIRES `proposed: {name, why}` | a shortcut past deciding |
+
+**`nearby_fact` against `look_alike_term`, the commonest disagreement on this axis:** swap the two
+names for two unlike words. If the trap dies, the likeness was doing the work — `look_alike_term`.
+If it survives, position was — `nearby_fact`. When both hold, the likeness wins. Say which test
+you applied.
+
+### 5.1b The depth a trap is carried at
+
+The label is the filter. The teaching is everything under it, and a tag without it is a
+classification — which is what the subject experts asked us to stop shipping. Every trap carries:
+
+- **`who`** — the preparation that leads here ("a student who has worked NCERT Exercise 1.5").
+  Never a count, a share, or "most". This project holds no response data (rule 0.3).
+- **`feels`** — what about the stem or the option makes it look like the answer.
+- **`ways[]`** — the student's own steps. Each step is `ok` while they are still right and `bad`
+  on the step that breaks. A route with no `bad` step has described a correct solution.
+- **`fix`** — on every `bad` step, the one thing that would have kept them right.
+
+`ways` is a list of ROUTES, and each route holds its own `steps`. It is not a flat list of steps.
+The key names are exactly these — `ways`, `steps`, `mark`, `text`, `fix`, and `name` only when an
+option has more than one route. Any other spelling is rejected by the schema:
+
+```json
+"ways": [
+  {"name": "the taught sequence",
+   "steps": [
+     {"mark": "ok",  "text": "Seed plants deliver gametes through a pollen tube."},
+     {"mark": "bad", "text": "So gymnosperms, the other seed plants, must lack it here.",
+      "fix": "NCERT names Cycas and Ginkgo as the exceptions that keep motile sperm."}
+   ]}
+]
+```
+
+`route` stays, alongside `ways`. It is the one-sentence summary a reader sees first; `ways` is the
+same journey in steps. Both are required on a real trap.
+
+**Every wrong option is accounted for**, not only the one the trap sits on. The others go in
+`other_options`, a sibling of `trap` at the rating level — never nested inside it. Each entry
+names its `option` and its `role`, and `role` is exactly `trap` or `filler`:
+
+- **`role: "trap"`** — a real route reaches it. Carries `who`, `feels` and `ways`.
+- **`role: "filler"`** — no route reaches it. Carries `proof`: what was checked. *"A student who
+  does not know may tick any option"* is not a proof; it is the generic trap this rulebook
+  forbids.
+
+The key is `role`, not `kind` or `type`. The whole shape, with nothing omitted:
+
+```json
+"trap": {
+  "label": "nearby_fact",
+  "option": "2",
+  "route": "one sentence: what a student does to land here",
+  "who": "the preparation that leads here",
+  "feels": "what makes it look like the answer",
+  "ways": [{"steps": [{"mark": "ok", "text": "..."},
+                      {"mark": "bad", "text": "...", "fix": "..."}]}]
+},
+"other_options": [
+  {"option": "3", "role": "trap",
+   "who": "...", "feels": "...",
+   "ways": [{"steps": [{"mark": "bad", "text": "...", "fix": "..."}]}]},
+  {"option": "4", "role": "filler",
+   "proof": "what was checked before concluding no route reaches it"}
+]
+```
+
+### 5.2 RETIRED — the E5 per-option vocabulary
 
 | label | means | required evidence |
 |---|---|---|

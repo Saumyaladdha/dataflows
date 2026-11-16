@@ -144,6 +144,18 @@ class Canvas:
             return
         n = len(pts)
         d = ["M %s %s" % (self.x(pts[0][0]), self.y(pts[0][1]))]
+        # TENSION 0 MEANS STRAIGHT, NOT CRASH. The Catmull-Rom control points divide by
+        # `6 * tension`, so a spec asking for tension 0 raised ZeroDivisionError and lost the
+        # whole figure. Zero tension has an obvious reading -- no curvature, join the points
+        # directly -- and it is what a zig-zag chain (a fatty-acid tail) actually wants.
+        if tension <= 0:
+            d += ["L %s %s" % (self.x(p[0]), self.y(p[1])) for p in pts[1:]]
+            if closed:
+                d.append("Z")
+            self.body.append('<path d="%s" stroke="%s" stroke-width="%s" fill="%s"%s/>'
+                             % (" ".join(d), INK[colour], width, self._fill(fill),
+                                ' stroke-dasharray="4 5"' if dashed else ""))
+            return
         last = n if closed else n - 1
         for i in range(last):
             p0 = pts[(i - 1) % n] if closed else pts[max(i - 1, 0)]

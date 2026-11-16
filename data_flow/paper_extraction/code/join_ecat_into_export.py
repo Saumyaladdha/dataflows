@@ -138,6 +138,88 @@ def ratings_for(paper_id):
     return found
 
 
+# A `no_trap` LABEL MEANS TWO DIFFERENT THINGS AND THEY MUST NOT PRINT THE SAME WORDS.
+# On 2024_S1, 27 questions were labelled `no_trap`: 17 because every named slip really does
+# land off the printed list -- the paper is clean -- and 8 because the options are GRAPHS whose
+# `text` arrived empty, so the rater never saw an option to judge. Each of those 8 does carry a
+# figure description per option (`options[].figure.text`, "Graph of 1/lambda^2 against E: a
+# straight line through the origin O"), so the content existed and the packet simply did not
+# pass it. Printing "No specific catch" over that would state a finding about a question whose
+# options were never read, which is the one claim the record must not make.
+_NOT_READ = re.compile(r"empty string|never captured|no option image|not (?:supplied|captured"
+                       r"|extracted)|were never|no image", re.I)
+
+
+def _no_trap_lead(trap):
+    """The explicit line a `no_trap` question prints instead of saying nothing."""
+    if str(trap.get("label") or "") != "no_trap":
+        return None
+    if _NOT_READ.search(str(trap.get("route") or "")):
+        return ("<b>Not established.</b> The options were not readable at this step, so no "
+                "catch could be judged \u2014 this is not a finding that the question has none.")
+    return "<b>No specific catch.</b> Every named slip on this question lands off the printed options."
+
+
+def _option_block(holder, role, label_chip=None, lead=None):
+    """ONE OPTION, AS ONE BLOCK -- its header, then who / why / the student's steps.
+
+    These used to be table rows, which is why the card became hard to read: `Who falls` and
+    `What they do` appeared three and four times down a single column with nothing marking
+    where one option stopped and the next began, so a teacher scanning for the main trap had
+    to count headings. Each option is now a bordered block headed by its own option number and
+    role, which is the shape the reviewed artifacts use and the reason they can be skimmed.
+    """
+    # THE HEADER IS WHAT A REVIEWER SEARCHES FOR, so it carries the reviewer's word, not ours.
+    # The 2024_S1 review recorded "the catch is not in the report" on 83 of 200 questions and
+    # "analysis of option N is not in the report (No route to it)" on 144. Both were reading
+    # these headers: every card DID carry its trap, under "The trap", and every filler DID
+    # carry a reason, under a header that announces absence. The data was never missing -- the
+    # labels were. "Why it is wrong" also stops a filler reading as a gap: the paragraph under
+    # it is the reason the option fails, which is exactly what the header now promises.
+    kinds = {"main": ("The catch", "main"),
+             "trap": ("Also pulls", "also"),
+             "filler": ("Why it is wrong", "filler")}
+    title, cls = kinds.get(role, ("Option", "also"))
+    opt = holder.get("option")
+    head = ['<span class="ecat-ohead">%s</span>' % html.escape(title)]
+    if opt:
+        head.append('<span class="ecat-opt">option %s</span>' % html.escape(str(opt)))
+    if label_chip:
+        head.append(label_chip)
+    body = []
+    # A LEAD LINE EXISTS SO "NOTHING HERE" CAN BE SAID OUT LOUD. A question whose trap is
+    # `no_trap` used to render its header and then its route, and a reader scanning for the
+    # catch saw neither the word "none" nor a reason -- which is why 83 reviews recorded the
+    # catch as missing. Silence is the one thing this block must never render.
+    if lead:
+        body.append('<p class="ecat-lead">%s</p>' % lead)
+    if holder.get("route"):
+        body.append('<p class="ecat-route">%s</p>' % texhtml.to_html(str(holder["route"])))
+    if holder.get("proof"):
+        body.append('<p class="ecat-proof">%s</p>' % texhtml.to_html(str(holder["proof"])))
+    for key, lab in (("who", "Who falls"), ("feels", "Why it feels right")):
+        if holder.get(key):
+            body.append('<p class="ecat-fld"><span class="ecat-fldlab">%s</span>%s</p>'
+                        % (lab, texhtml.to_html(str(holder[key]))))
+    for way in (holder.get("ways") or []):
+        steps = []
+        for step in (way.get("steps") or []):
+            mark = "bad" if step.get("mark") == "bad" else "ok"
+            fix = ('<span class="ecat-fix">%s</span>' % texhtml.to_html(str(step["fix"]))
+                   if step.get("fix") else "")
+            steps.append('<li class="ecat-step-%s"><span class="ecat-mark">%s</span>%s%s</li>'
+                         % (mark, mark, texhtml.to_html(str(step.get("text", ""))), fix))
+        if not steps:
+            continue
+        if way.get("name"):
+            body.append('<div class="ecat-wayname">%s</div>' % html.escape(str(way["name"])))
+        body.append('<ol class="ecat-steps">%s</ol>' % "".join(steps))
+    if not body:
+        return ""
+    return ('<div class="ecat-opt-block ecat-%s"><div class="ecat-obar">%s</div>%s</div>'
+            % (cls, "".join(head), "".join(body)))
+
+
 def _card_html(rating, note):
     """One `<div class="ecat">` -- the three fields, the trap, the NCERT line, the reasoning."""
     rows = []
@@ -168,20 +250,24 @@ def _card_html(rating, note):
         rows.append('<tr><th>%s</th><td class="%s">%s</td></tr>'
                     % (html.escape(label), cls, body))
 
+    # THE OPTIONS, AS BLOCKS BELOW THE TABLE. The three fields above describe the question; what
+    # follows describes its options, and mixing the two in one column was what made the card hard
+    # to read. `blocks` is rendered after `</table>`.
+    blocks = []
     t = rating.get("trap") or {}
     if t.get("label"):
-        opt = t.get("option")
-        rows.append(
-            '<tr><th>Where students go wrong</th><td class="ecat-label-cell">%s%s<div class="ecat-route">%s</div>'
-            '</td></tr>'
-            % (_chip(str(t["label"])),
-               '<span class="ecat-opt">option %s</span>' % html.escape(str(opt)) if opt else "",
-               texhtml.to_html(str(t.get("route", "")))))
+        blocks.append(_option_block(t, "main", _chip(str(t["label"])),
+                                    lead=_no_trap_lead(t)))
         prop = t.get("proposed") or {}
         if prop.get("name"):
             rows.append('<tr><th>Proposed</th><td class="ecat-text">'
                         '<span class="ecat-slug">%s</span>%s</td></tr>'
                         % (html.escape(prop["name"]), html.escape(prop.get("why", ""))))
+
+    # EVERY OTHER WRONG OPTION. One trap is the question's finding; the rest still have to be
+    # accounted for, or the page shows a teacher one explained option and two blanks.
+    for other in (rating.get("other_options") or []):
+        blocks.append(_option_block(other, other.get("role") or "trap"))
 
     # A SECOND REAL MISCONCEPTION, where one exists. Never one per option: most questions have
     # none. Before this field existed these were written into `note`, where they read as a
@@ -230,10 +316,12 @@ def _card_html(rating, note):
     if rating.get("note"):
         rows.append('<tr><th>Note</th><td class="ecat-text">%s</td></tr>'
                     % texhtml.to_html(rating["note"]))
-    if not rows:
+    if not rows and not blocks:
         return ""
+    opts = ('<div class="ecat-opts"><div class="ecat-h2">What catches a student</div>%s</div>'
+            % "".join(blocks)) if blocks else ""
     return ('<div class="ecat"><div class="ecat-h">Categories</div>'
-            '<table class="ecat-t">%s</table></div>' % "".join(rows))
+            '<table class="ecat-t">%s</table>%s</div>' % ("".join(rows), opts))
 
 
 def _card_md(rating, note):
@@ -303,13 +391,58 @@ CSS = """
  font-size:12px;background:#e8f0ea;color:#1f4f3a;padding:1px 6px;border-radius:3px;margin:0 3px 2px 0}
 .ecat-label-cell{color:#3a4a43;line-height:1.5}
 .ecat-text{color:#3a4a43;line-height:1.5}
+/* ONE BLOCK PER OPTION. The card's top table answers "what is this question"; everything below
+   answers "what catches a student", and until they were separated a reader had to count repeated
+   row headings to tell the main trap from the two options under it. The left stripe carries the
+   role so the three kinds are told apart before any text is read. */
+.ecat-opts{margin-top:12px;padding-top:10px;border-top:1px solid #e4eae5}
+.ecat-h2{font-weight:700;color:#2f6f4f;font-size:11px;letter-spacing:.07em;text-transform:uppercase;
+ margin-bottom:8px}
+.ecat-opt-block{border:1px solid #e4eae5;border-left:3px solid #cfd8d2;border-radius:5px;
+ background:#fff;padding:9px 12px;margin:0 0 8px}
+.ecat-opt-block:last-child{margin-bottom:0}
+.ecat-main{border-left-color:#c2410c;background:#fffaf7}
+.ecat-also{border-left-color:#b08968}
+.ecat-filler{border-left-color:#c3cbc6;background:#fafbfa}
+.ecat-obar{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:6px}
+/* The label's gloss is a sentence, not a chip. Left in the header row it pushed the option
+   number and the label apart; given its own line it reads as the definition it is. */
+.ecat-obar .ecat-gloss{flex-basis:100%;margin-left:0;margin-top:2px}
+.ecat-lead{margin:4px 0 6px;color:#1f2937;line-height:1.5}
+.ecat-filler .ecat-lead,.ecat-main .ecat-lead{color:#1f2937}
+.ecat-ohead{font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+ color:#6a7a72}
+.ecat-main .ecat-ohead{color:#c2410c}
+.ecat-fld{margin:0 0 6px;line-height:1.5;color:#263330}
+.ecat-fldlab{display:inline-block;min-width:118px;padding-right:10px;color:#52635c;font-size:11px;font-weight:700;
+ text-transform:uppercase;letter-spacing:.04em;vertical-align:1px}
+.ecat-proof{margin:0 0 6px;color:#394741;line-height:1.5;font-size:13px}
+/* THE STUDENT'S OWN STEPS. The one thing the subject experts read before anything else, so the
+   step that breaks has to be findable without reading the ones above it: the marks are the only
+   colour in the card besides the label, and the fix sits under its own step rather than at the
+   end, where a reader has to carry the error in their head to use it. */
+.ecat-wayname{color:#6a7a72;font-size:12px;margin:6px 0 4px}
+.ecat-steps{margin:0;padding-left:0;list-style:none;counter-reset:ecatstep}
+/* EVERY STEP IS READ, SO EVERY STEP IS DARK. `ok` had no colour of its own and inherited the
+   card's muted grey, which put the student's correct reasoning a shade away from invisible while
+   the step that breaks sat dark beside it. The marks carry the ok/bad difference; the text does
+   not need to fade to say it. */
+.ecat-steps li{margin:0 0 6px;padding-left:2px;line-height:1.5;color:#263330;font-size:13px}
+.ecat-mark{display:inline-block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+ font-size:10px;text-transform:uppercase;letter-spacing:.06em;padding:1px 5px;border-radius:3px;
+ margin-right:7px;vertical-align:1px}
+.ecat-step-ok .ecat-mark{background:#e3f0e7;color:#2f6f4f}
+.ecat-step-bad .ecat-mark{background:#fbe9df;color:#a24a1c}
+.ecat-step-bad{color:#263330}
+.ecat-fix{display:block;margin:4px 0 0 38px;color:#1d5236;font-size:13px;line-height:1.5}
+.ecat-fix:before{content:"fix: ";font-weight:650}
 .ecat-gloss{color:#6a7a72;font-size:12px;margin-left:8px}
 /* The option used to be a bare <b>, which inherited the page's muted body colour and came out
    paler than the gloss beside it -- the one piece of the trap row a reader actually looks for. */
 .ecat-opt{display:inline-block;margin-left:8px;padding:1px 7px;border-radius:3px;
  background:#8c2f2f;color:#fff;font-weight:700;font-size:11px;letter-spacing:.03em;
  text-transform:uppercase;vertical-align:1px}
-.ecat-route{color:#4a5a52;margin-top:3px;line-height:1.45}
+.ecat-route{color:#2d3b35;margin-top:3px;line-height:1.5}
 .ecat-quote{display:block;color:#33443c;font-style:italic;line-height:1.5;
  border-left:2px solid #c3d6c9;padding-left:9px}
 .ecat-cite{display:block;color:#7c8a83;font-size:11px;margin-top:3px;padding-left:11px;

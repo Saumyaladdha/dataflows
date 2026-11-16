@@ -57,7 +57,7 @@ Give every question in the group THREE fields, plus the concept and the reason. 
 |---|---|---|
 | `qtype` | what the question LOOKS like | `mcq` · `statements` · `assertion_reason` · `match_columns` · `two_part` · `new_type` |
 | `asks` | where it is asked from, and what it wants | `fact_line` · `reason_line` · `compare` · `order` · `read_diagram` · `calculate` · `relation` · `apply_rule` · `reaction` · `experiment` · `new_asks` |
-| `trap` | the ONE way this question catches a student | `nearby_fact` · `condition_missed` · `reversed` · `half_right` · `arithmetic_slip` · `formula_misused` · `answers_other_question` · `no_trap` · `new_trap` |
+| `trap` | the ONE way this question catches a student | `nearby_fact` · `look_alike_term` · `old_ncert_answer` · `condition_missed` · `reversed` · `half_right` · `arithmetic_slip` · `formula_misused` · `answers_other_question` · `wrong_site_attacked` · `no_trap` · `new_trap` |
 
 Plus `concept` (the idea it turns on, your own words, one sentence) and `reason` (why these
 labels, pointing at the printed words that decide it).
@@ -110,7 +110,32 @@ produced.
    following statements is correct" does.
 2. **`half_right` only on an option with two or more parts**, or a correct but incomplete set.
    Never on a single number and never on a single name -- a lone wrong number is
-   `arithmetic_slip` or `formula_misused`, a lone wrong name is `nearby_fact`.
+   `arithmetic_slip` or `formula_misused`, a lone wrong name is `nearby_fact` or
+   `look_alike_term` by rule 5.
+
+5. **`look_alike_term` against `nearby_fact`: ask WHY the wrong name was reachable.** Both land on
+   a wrong name, and the difference is what carried the student there.
+   - `look_alike_term` -- the two names RESEMBLE EACH OTHER, and the resemblance is the pull:
+     maturation against meristematic, lyase against ligase, GPP against NPP, monocondylic against
+     dicondylic, dpi-ppi against dpi-dpi. Swap the pair for two unlike words and the trap dies.
+   - `nearby_fact` -- the names are not alike at all; the wrong one is reachable because NCERT
+     PRINTS IT BESIDE the right one: ampicillin for tetracycline, the bollworm gene pair for the
+     corn-borer gene, the step before or after the one asked. Swap the pair for two unlike words
+     and the trap survives, because position is doing the work.
+
+   When both are true, the resemblance wins: a look-alike printed next to its twin is
+   `look_alike_term`. Say in `reason` which test you applied. This pair is the commonest
+   disagreement on this axis, and §5.2 of the shared rules names both as separate trap sources.
+
+6. **`old_ncert_answer` needs a CHANGED NUMBER OR LINE, not an old-sounding option.** Use it only
+   when the paper has taken an NCERT example, exercise or line and altered one value, so that the
+   answer NCERT prints is sitting in the options as a distractor. Name both numbers in the route --
+   what NCERT prints and what this paper prints. If you cannot name both, it is not this trap.
+   A worked case: NCERT Exercise 1.5 sets light's travel time to 8 min 20 s, answer 500; a paper
+   printing 6 min 40 s has answer 400 and keeps 500 as an option. That is `old_ncert_answer`, and
+   it is NOT `answers_other_question` -- 500 answers the SAME question, asked of a different
+   number. `answers_other_question` is for an option that answers a DIFFERENT question, such as
+   printing the speed of light when the question asked for a distance.
 3. **The same mistake takes the same label across subjects.** If two questions catch a student
    by offering something true that answers a different question, both are
    `answers_other_question` -- whether the subject is Physics or Chemistry.
@@ -215,6 +240,21 @@ Both corrected versions answer the question the label raises: *why would anyone 
 first names the over-simplified rule, the second names the adjacent mechanism — which is exactly
 what `neighbouring_fact` means, demonstrated rather than asserted.
 
+### NEVER OPEN WITH A HEADCOUNT
+
+The single commonest fault in the last run: **150 of 179 routes on 2026_11 opened with
+"Most students pick option 2."** That is a claim about how many students do something, and this
+project holds no response data, so it cannot be known. `code/checks/ECAT.py` rejects it.
+
+Name the option in the field that is for it -- `trap.option` -- and open the route with the PULL.
+
+> ✗ "Most students pick option 2. 500 is the number you carry for sunlight."
+> ✓ "500 is the number carried for sunlight: NCERT's own exercise prints 8 min 20 s, and this
+>   paper prints 6 min 40 s, so the remembered answer is one of the options."
+
+The same bar applies to *tempting*, *a common error*, *no student would*, *obviously*, and to
+*many / some / few students*. A route describes the ROUTE.
+
 ### The shape
 
 One sentence for the pull, one for what it yields or why it fails. Then stop.
@@ -247,8 +287,28 @@ not in a sentence that re-derives the question.
       "trap": {
         "label": "nearby_fact",
         "option": "2",
-        "route": "Gymnosperms sit beside angiosperms in the taught sequence and do form a pollen tube, so a student holding only 'seed plants have pollen tubes' stops at the adjacent group"
+        "route": "Gymnosperms sit beside angiosperms in the taught sequence and do form a pollen tube, so a student holding only 'seed plants have pollen tubes' stops at the adjacent group",
+        "who": "a student who has learnt that seed plants form a pollen tube and has not met the two genera that keep motile sperm",
+        "feels": "gymnosperms are the group printed next to angiosperms, and the rule as remembered covers both",
+        "ways": [
+          {"name": "the taught sequence",
+           "steps": [
+             {"mark": "ok", "text": "Seed plants deliver gametes through a pollen tube."},
+             {"mark": "bad", "text": "So gymnosperms, the other seed plants, must lack it here.",
+              "fix": "NCERT names Cycas and Ginkgo as the exceptions that keep motile sperm."}
+           ]}
+        ]
       },
+      "other_options": [
+        {"option": "3", "role": "trap",
+         "who": "a student who reads 'pollen' as belonging only to flowering plants",
+         "feels": "the name of the group carries no pollen in it",
+         "ways": [{"steps": [
+           {"mark": "bad", "text": "No pollen is named for this group, so no pollen tube.",
+            "fix": "The question asks where the tube is absent, which the printed group does not decide."}]}]},
+        {"option": "4", "role": "filler",
+         "proof": "checked each remembered property of this group against the stem; none of them bears on a pollen tube, and no printed word connects it"}
+      ],
       "reason": "This question requires the stated fact about which group lacks a pollen tube, demonstrated by the four options being coordinate plant groups with no criterion printed to apply.",
       "note": "",
       "verdict": "ok"
@@ -260,6 +320,42 @@ not in a sentence that re-derives the question.
 
 **ONE `trap` object, not a list.** If nothing pulls, write
 `{"label": "no_trap", "route": "the other three are unrelated organelles"}` with no `option`.
+
+## The depth every trap is carried at
+
+A label and one sentence is a classification. The 60 questions the subject experts reviewed and
+signed off carry four things for every wrong option, and that is what a teacher reads off the
+page. Your trap carries the same four.
+
+| field | what it answers | the bar |
+|---|---|---|
+| `who` | WHO falls | the preparation that leads here: "a student who has worked NCERT Exercise 1.5". Never a number, a share, or "most" |
+| `feels` | WHY IT FEELS RIGHT | what about the stem or the option makes it look like the answer |
+| `ways[]` | the student's OWN STEPS | each step marked `ok` while they are still right, and `bad` on the step that breaks |
+| `fix` | what would have saved them | required on every `bad` step; one thing, not a lecture |
+
+A route with no `bad` step has described a correct solution, not a trap. A `bad` step with no
+`fix` tells a student they are wrong and not how to stop being wrong. Both are rejected.
+
+Give a `ways` entry a `name` only when the option has more than one path to it — two genuinely
+different routes (a remembered answer, and a general fact) are two entries, not one with "or" in
+it.
+
+## EVERY WRONG OPTION, NOT JUST THE TRAP
+
+The question still has ONE trap -- that finding stands, and `trap` is it. But a page that explains
+one option and leaves the other two blank is exactly the gap the experts read as unfinished work.
+So the remaining wrong options go in `other_options`, each with a role:
+
+- **`trap`** -- a real route reaches it. Give `who`, `feels` and `ways`, same bar as above.
+- **`filler`** -- no route reaches it. This is a FINDING, not a gap, and it needs `proof`: what you
+  actually checked before concluding nothing leads there. *"A student who does not know may tick
+  any option"* is not a proof -- it is the generic trap the shared rules forbid (§5.3), and it is
+  the single comment the experts pushed back on hardest.
+
+Do not put the official answer in `other_options`. Do not pad: three fillers on one question means
+look again, because a paper that attracts nobody to three of its four options is not a paper that
+discriminates.
 
 **If you need a `new_*` value**, add the proposal beside it:
 
@@ -274,4 +370,12 @@ not in a sentence that re-derives the question.
   second blank quotes the stem or an option. A reason about students is not a reason.
 - `group_note` is where you record how the group was kept consistent, and why any member differs.
   This is what version 1 had no way of saying.
-- `traps` may be an empty list. For `source_incomplete` questions it MUST be.
+- **There is no `traps` list and `trap` is never empty or missing.** The field is one object, always
+  present. When nothing pulls, or when the record is too damaged to tell, it is
+  `{"label": "no_trap", "route": "<what you checked>"}` with no `option` — and for a damaged record
+  add `"verdict": "source_damage_artifact"` beside it. Never `{"label": ""}`, never `{}`, never a
+  rating with no `trap` key: all three are rejected by the schema, and an empty label is not the
+  "unsure" form on this axis because `no_trap` already says it.
+- **No key outside the listed ones.** `additionalProperties` is false everywhere, so an extra field
+  invented to carry a remark — `_shape_note`, `traps`, `comment` — fails the whole packet. Remarks
+  go in `note`.
